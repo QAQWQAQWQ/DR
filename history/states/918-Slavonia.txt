@@ -1,0 +1,25 @@
+state=
+{
+	id=918
+	name="STATE_918"
+	manpower = 258659
+	
+	state_category = town
+
+	history=
+	{
+		owner = DMT
+                                add_core_of = AOX
+		buildings = {
+			infrastructure = 1 #was: 5
+			industrial_complex = 1
+		}
+
+	}
+
+	provinces={
+		3627 9595 6647 11577 11580
+	}
+
+	local_supplies=0.0 
+}

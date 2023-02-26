@@ -1,0 +1,125 @@
+﻿capital = 16
+
+oob = "FRW_1920"
+set_research_slots = 3
+set_stability = 0.5
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	CAS1 = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	fuel_silos = 1
+	
+	basic_train = 1
+}
+create_faction = Second_International
+add_to_faction = BHL
+set_convoys = 300
+
+country_event = { id = FRW.1 days = 10 }
+country_event = { id = FRW.5 days = 120 }
+country_event = { id = FRW.17 days = 35 }
+
+set_politics = {
+	ruling_party = democratic_socialism
+	last_election = "1921.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	communism = 20
+	radical_socialist = 10
+	Anarchopedia = 15
+	democratic_socialism = 30
+	national_populist = 25
+}
+
+add_ideas = {
+FRW_Chaotic_socialism
+FRW_The_shame_of_Alsace_Lorraine
+FRW_African_Royal_Families_in_exile
+
+
+#law
+atheism
+Affirmative_action
+Local_police
+Weak_investments
+State_media
+Trade_union_neutrality
+Basic_industrialization 
+secondary_school
+Staterun_economy
+	}
+
+
+
+recruit_character = FRW_Jean_Jaures
+recruit_character = FRW_LudovicOscar_Frossard
+recruit_character = FRW_Leon_Blum
+recruit_character = FRW_emile_Armand
+recruit_character = FRW_Georges_Clemenceau
+recruit_character = FRW_Georges_Valois
+recruit_character = FRW_Marcel_Cachin
+recruit_character = FRW_Aristide_Briand
+recruit_character = FRW_Georges_Sorel
+recruit_character = FRW_Edouard_de_Castelnau
+recruit_character = FRW_Alexandre_Jacob
+recruit_character = FRW_Joffre
+recruit_character = FRW_Marie_Eugene_Debeney
+recruit_character = FRW_Georges_Catroux
+recruit_character = FRW_Maurice_Sarrell
+recruit_character = FRW_Charles_Delestraint
+recruit_character = FRW_Vincent_Auriol
+recruit_character = FRW_Marcel_Deat
+recruit_character = FRW_Benoit_Frachon
+recruit_character = FRW_Andre_Le_Troquer
+recruit_character = FRW_Jean_Laurent
+recruit_character = FRW_Maurice_Thorez
+recruit_character = FRW_Fernand_Loriot
+recruit_character = FRW_Boris_Souvarine
+recruit_character = FRW_Edouard_Daladier
+recruit_character = FRW_Paul_Faure
+recruit_character = FRW_Marx_Dormoy
+recruit_character = FRW_Felix_Gouin
+recruit_character = FRW_Louis_Dubreuil
+recruit_character = FRW_Monmousseau
+recruit_character = FRW_Paul_Maistre
+recruit_character = FRW_Berthelot_Metz
+recruit_character = FRW_Maurice_Pelle_Prague
+
+
+
+recruit_character = FRW_Charles_de_Gaulle
+recruit_character = FRW_Jacques_Doriot
+FRW_Jacques_Doriot = { set_nationality = NNN }
+FRW_Charles_de_Gaulle = { set_nationality = NNN }
+
+add_ai_strategy = {
+	type = alliance
+	id = "FRW"
+	value = 100
+}
+FRW= {
+	type = alliance
+	id = "BHL"
+	value = 100
+}
+
+

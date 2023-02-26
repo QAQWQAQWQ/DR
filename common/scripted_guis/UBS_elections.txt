@@ -1,0 +1,14 @@
+scripted_gui = {
+
+	UBS_elections_ui = {
+		context_type = decision_category
+		window_name = "UBS_elections_ui_window"
+
+		properties={
+			Slider = {
+                image = "[GetDP]"
+                frame = Slider_frame
+		}
+	}
+}
+}

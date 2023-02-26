@@ -1,0 +1,2305 @@
+focus_tree = {
+	id = FRW
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRW
+		}
+	}
+	default = no
+	focus = {
+		id = FRW_election
+		icon = GFX_Commune_de_Paris
+		cost = 6.00
+		x = 23
+		y = 0
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = FRW_Industrial_Revolution
+		icon = GFX_goal_generic_air_production
+		cost = 6.00
+		x = 67
+		y = 0
+			completion_reward = {
+				16 = {
+					add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_ARMY_reform
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 5.00
+		x = 50
+		y = 0
+			completion_reward = {
+					add_command_power = 50
+				}
+
+	}
+	focus = {
+		id = FRW_Second_International
+		icon = GFX_Second_InternationaL
+		cost = 6.00
+		x = 5
+		y = 0
+		completion_reward = {
+			hidden_effect = {
+			news_event = { id = FRW.2 days = 15}
+		}
+			custom_effect_tooltip = FRW_Second_International_T
+}
+
+	}
+	focus = {
+		id = FRW_Export_the_revolution
+		icon = GFX_Export_the_revolution
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Second_International
+		}
+		x = 3
+		y = 1
+			completion_reward = {
+				custom_effect_tooltip = FRW_Export_the_revolution_T
+				}
+
+	}
+	focus = {
+		id = FRW_Intervention_Magyarorszag
+		icon = GFX_Intervention_Magyarorszag
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Export_the_revolution
+		}
+		x = 1
+		y = 2
+			completion_reward = {
+					unlock_decision_tooltip = Export_the_revolution_XYL
+					XYL = {
+							country_event = {
+									id = XYL.X
+									days = 5
+								}
+						}
+				}
+			available = {
+				XYL= {has_war_with = AOX}
+				country_exists = XYL
+				}
+
+	}
+	focus = {
+		id = FRW_Italy
+		icon = GFX_Italy
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Export_the_revolution
+		}
+		available = {
+			country_exists = ITC
+			}
+		x = 2
+		y = 3
+			completion_reward = {
+					unlock_decision_tooltip = Export_the_revolution_ITC
+					hidden_effect = {
+							ITC = {
+									country_event = {
+											id = ITC.X
+											days = 5
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_Germany
+		icon = GFX_Germany
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Export_the_revolution
+		}
+		available = {
+			country_exists = KPD
+			}
+		x = 7
+		y = 2
+			completion_reward = {
+					unlock_decision_tooltip = Export_the_revolution_KPD
+					hidden_effect = {
+							DDE = {
+									country_event = {
+											id = DDE.X
+											days = 5
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_Contact_iww
+		icon = GFX_Contact_iww
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Export_the_revolution
+		}
+		x = 4
+		y = 3
+		completion_reward = {
+			custom_effect_tooltip = IWW_power_T
+	}
+}
+	focus = {
+		id = FRW_Intervention_Russia
+		icon = GFX_Intervention_Russia
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Export_the_revolution
+		}
+		x = 3
+		y = 2
+			completion_reward = {
+				unlock_decision_tooltip = Export_the_revolution_SUE
+					SUE = {
+						country_event = {
+									id = SUE.X
+									days = 5
+								}
+						}
+				}
+			available = {
+				SUE= {has_war_with = SHW}
+				country_exists = SUE
+				}
+
+	}
+	focus = {
+		id = FRW_Latin_America
+		icon = GFX_Latin_America
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Contact_iww
+		}
+		x = 4
+		y = 4
+		completion_reward = {
+			custom_effect_tooltip = Latin_America_power_T
+	}
+	}
+	focus = {
+		id = FRW_Asia
+		icon = GFX_Asia
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Export_the_revolution
+		}
+		available = {
+			country_exists = CPC
+			}
+		x = 6
+		y = 3
+			completion_reward = {
+				unlock_decision_tooltip = Export_the_revolution_CPC
+				unlock_decision_tooltip = Export_the_revolution_JPC
+					hidden_effect = {
+							CPC = {
+									country_event = {
+											id = CPC.X
+											days = 5
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_Marx_Institute
+		icon = GFX_Marx_Institute
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Second_International
+		}
+		x = 9
+		y = 1
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = FRW_International_Institute
+		icon = GFX_International_Institute
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Marx_Institute
+		}
+		x = 9
+		y = 2
+			completion_reward = {
+					add_ideas = FRW_science
+				}
+
+	}
+	focus = {
+		id = FRW_National_Trade_Union
+		icon = GFX_Syndicals
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_election
+		}
+		mutually_exclusive = {
+			focus = FRW_Orthodox_Marxism
+			focus = FRW_Conciliatory_faction
+		}
+		x = 15
+		y = 1
+			completion_reward = {
+					add_popularity = {
+							ideology = Syndicalism
+							popularity = 0.15
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_Eternal_revolution
+		icon = GFX_Eternal_revolution
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_National_Trade_Union
+		}
+		mutually_exclusive = {
+			focus = FRW_revenge
+		}
+		x = 12
+		y = 2
+			completion_reward = {
+					retire_country_leader = yes
+					set_politics = {
+							ruling_party = Syndicalism
+						}
+					add_popularity = {
+							ideology = Syndicalism
+							popularity = 0.25
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_Centralized_management
+		icon = GFX_Centralized_management
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Eternal_revolution
+		}
+		x = 9
+		y = 3
+			completion_reward = {
+            add_political_power = 100
+}
+
+	}
+	focus = {
+		id = FRW_Social_class
+		icon = GFX_Social_class
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Eternal_revolution
+		}
+		x = 12
+		y = 3
+			completion_reward = {
+add_political_power = 100
+}
+
+	}
+	focus = {
+		id = FRW_People_Council
+		icon = GFX_People_Council
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Social_class
+		}
+		x = 11
+		y = 4
+			completion_reward = {
+				hidden_effect = {
+					set_temp_variable = { masses_popularity = masses_popularity }
+					add_to_variable = { masses_popularity = 5 }
+					add_to_variable = { masses_popularity = masses_popularity 
+				}
+				}
+				custom_effect_tooltip = Masses_T
+				}
+
+	}
+	focus = {
+		id = FRW_women
+		icon = GFX_women
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Social_class
+		}
+		x = 13
+		y = 4
+			completion_reward = {
+					add_ideas = FRW_woman_1
+				}
+
+	}
+	focus = {
+		id = FRW_All_are_equal
+		icon = GFX_All_are_equal
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_women
+		}
+		x = 13
+		y = 5
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = FRW_woman_1
+							add_idea = FRW_woman_2
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_revenge
+		icon = GFX_FRW_revenge
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_National_Trade_Union
+		}
+		mutually_exclusive = {
+			focus = FRW_Eternal_revolution
+		}
+		x = 18
+		y = 2
+			completion_reward = {
+					retire_country_leader = yes
+					set_politics = {
+							ruling_party = Left_populism
+						}
+					add_popularity = {
+							ideology = Left_populism
+							popularity = 0.35
+						}
+					add_ideas = { FRW_Anti_German }
+				}
+
+	}
+	focus = {
+		id = FRW_Nationalization
+		icon = GFX_Nationalization
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Eternal_revolution
+			focus = FRW_revenge
+		}
+		x = 15
+		y = 3
+			completion_reward = {
+					add_ideas = FRW_Nationalization
+				}
+
+	}
+	focus = {
+		id = FRW_Emphasison_the_state
+		icon = GFX_Emphasison_the_state
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_revenge
+		}
+		x = 17
+		y = 3
+			completion_reward = {
+					add_war_support = 0.05
+				}
+
+	}
+	focus = {
+		id = FRW_National_self_confidence
+		icon = GFX_National_self_confidence
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_revenge
+		}
+		x = 19
+		y = 3
+			completion_reward = {
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = FRW_worker_first
+		icon = GFX_worker
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Emphasison_the_state
+		}
+		prerequisite = {
+			focus = FRW_National_self_confidence
+		}
+		x = 16
+		y = 4
+			completion_reward = {
+					add_political_power = 50
+					swap_ideas = {
+						remove_idea = Trade_union_neutrality
+						add_idea = Local_trade_unions
+					}
+				}
+
+	}
+	focus = {
+		id = FRW_Ensure_loyalty
+		icon = GFX_Ensure_loyalty
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Emphasison_the_state
+		}
+		prerequisite = {
+			focus = FRW_National_self_confidence
+		}
+		x = 18
+		y = 4
+			completion_reward = {
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = FRW_Totalitarian_society
+		icon = GFX_Totalitarian_society
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Emphasison_the_state
+		}
+		prerequisite = {
+			focus = FRW_National_self_confidence
+		}
+		x = 20
+		y = 4
+			completion_reward = {
+					add_political_power = 100
+					create_intelligence_agency = yes
+				}
+
+	}
+	focus = {
+		id = FRW_Revolutionary_nationalism
+		icon = GFX_Revolutionary_nationalism
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_worker_first
+		}
+		prerequisite = {
+			focus = FRW_Ensure_loyalty
+		}
+		prerequisite = {
+			focus = FRW_Totalitarian_society
+		}
+		x = 18
+		y = 5
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = WWS
+						}
+					add_popularity = {
+							ideology = Left_populism
+							popularity = 0.55
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_Supreme_Chairman
+		icon = GFX_Supreme_Chairman
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Revolutionary_nationalism
+		}
+		x = 16
+		y = 6
+			completion_reward = {
+					country_event = FRW.9
+				}
+
+	}
+	focus = {
+		id = FRW_Work_with_anarchists
+		icon = GFX_Work_with_anarchists
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Revolutionary_nationalism
+		}
+		x = 20
+		y = 6
+		completion_reward = {
+			unlock_decision_tooltip = Destructive_movemen
+		}
+		
+	}
+	focus = {
+		id = FRW_The_Jewish_question
+		icon = GFX_The_Jewish_question
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Supreme_Chairman
+		}
+		prerequisite = {
+			focus = FRW_Work_with_anarchists
+		}
+		x = 18
+		y = 7
+			completion_reward = {
+					country_event = {
+							id = FRW.6
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_Revolutionary_Legion
+		icon = GFX_Revolutionary_Legion
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Supreme_Chairman
+		}
+		prerequisite = {
+			focus = FRW_Work_with_anarchists
+		}
+		x = 15
+		y = 7
+			completion_reward = {
+					add_ideas = FRW_Revolutionary_Legion
+				}
+
+	}
+	focus = {
+		id = FRW_Jacobin_cleaning
+		icon = GFX_Jacobin_cleaning
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Supreme_Chairman
+		}
+		prerequisite = {
+			focus = FRW_Work_with_anarchists
+		}
+		x = 21
+		y = 7
+		completion_reward = {
+			hidden_effect = {
+				set_temp_variable = { assets_popularity = assets_popularity }
+				subtract_from_temp_variable = { assets_popularity = -15 }
+				add_to_variable = { assets_popularity = assets_popularity }
+				set_temp_variable = { masses_popularity = masses_popularity }
+				subtract_from_temp_variable = { masses_popularity = -15 }
+				add_to_variable = { masses_popularity = masses_popularity }
+			}
+			custom_effect_tooltip = Masses1_T
+			custom_effect_tooltip = assets1_T
+			swap_ideas = {
+				remove_idea = Local_police
+				add_idea = State_control
+			}
+		}
+
+	}
+	focus = {
+		id = FRW_Workers_empire
+		icon = GFX_Workers_empire
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Revolutionary_Legion
+		}
+		prerequisite = {
+			focus = FRW_Jacobin_cleaning
+		}
+		x = 18
+		y = 8
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = Local_trade_unions
+					add_idea = State_trade_unions
+				}
+				}
+
+	}
+	focus = {
+		id = FRW_Orthodox_Marxism
+		icon = GFX_Orthodox_Marxism
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_election
+		}
+		mutually_exclusive = {
+			focus = FRW_National_Trade_Union
+			focus = FRW_Conciliatory_faction
+		}
+		x = 27
+		y = 1
+			completion_reward = {
+				add_political_power = 50
+				}
+
+	}
+	focus = {
+		id = FRW_Second_Revolution
+		icon = GFX_Second_Revolution
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Orthodox_Marxism
+		}
+		x = 27
+		y = 2
+			completion_reward = {
+					add_political_power = 50
+					country_event = {
+							days = 2
+							id = FRW.8
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_Leninism
+		icon = GFX_Lenin
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Second_Revolution
+		}
+		x = 23
+		y = 3
+		mutually_exclusive = {
+			focus = FRW_Revolutionary_blood
+   }
+			completion_reward = {
+					retire_country_leader = yes
+					set_politics = {
+							ruling_party = Leninism
+						}
+					add_popularity = {
+							ideology = Leninism
+							popularity = 0.35
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_Revolutionary_blood
+		icon = GFX_Revolutionary_blood
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Second_Revolution
+		}
+		x = 25
+		y = 3
+        mutually_exclusive = {
+	     focus = FRW_Leninism
+}
+completion_reward = {
+	retire_country_leader = yes
+	set_politics = {
+			ruling_party = communism
+		}
+	add_popularity = {
+			ideology = communism
+			popularity = 0.35
+		}
+}
+	}
+	focus = {
+		id = FRW_criticism
+		icon = GFX_goal_generic_occupy_states_coastal
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Leninism
+			focus = FRW_Revolutionary_blood
+		}
+		x = 22
+		y = 4
+			completion_reward = {
+					country_event = FRW.14
+				}
+
+	}
+	focus = {
+		id = FRW_Against_egalitarianism
+		icon = GFX_goal_generic_political_pressure
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Revolutionary_blood
+			focus = FRW_Leninism
+		}
+		x = 24
+		y = 4
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = FRW_People_Vanguard
+		icon = GFX_People_Vanguard
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Revolutionary_blood
+			focus = FRW_Leninism
+		}
+		x = 26
+		y = 4
+			completion_reward = {
+					add_ideas = FRW_People_Vanguard
+				}
+
+	}
+	focus = {
+		id = FRW_Radical_revolution
+		icon = GFX_goal_generic_major_war
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Second_Revolution
+		}
+		x = 30
+		y = 3
+			completion_reward = {
+					add_political_power = 100
+				}
+
+	}
+	focus = {
+		id = FRW_Democratic_dictatorship
+		icon = GFX_goal_generic_national_unity
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Radical_revolution
+		}
+		x = 29
+		y = 4
+		completion_reward = {
+			hidden_effect = {
+				set_temp_variable = { masses_popularity = masses_popularity }
+				add_to_variable = { masses_popularity = 10 }
+				add_to_variable = { masses_popularity = masses_popularity }
+			}
+			add_political_power = 30
+			custom_effect_tooltip = Democratic_Dictatorship_T
+	}
+	}
+	focus = {
+		id = FRW_Improve_the_social_system
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Democratic_dictatorship
+		}
+		x = 29
+		y = 5
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Weak_investments
+				add_idea = Underlying_investment
+			}
+			}
+	}
+	focus = {
+		id = FRW_Clean_up_bureaucracy
+		icon = GFX_goal_generic_military_sphere
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Radical_revolution
+		}
+		x = 31
+		y = 4
+		completion_reward = {
+			custom_effect_tooltip = Clean_Bureaucracy_T
+	}
+	}
+	focus = {
+		id = FRW_corrupt
+		icon = GFX_goal_generic_major_war
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Clean_up_bureaucracy
+		}
+		x = 31
+		y = 5
+		completion_reward = {
+			custom_effect_tooltip = Corrupt_T
+	}
+	}
+	focus = {
+		id = FRW_Enlarge_local_councils
+		icon = GFX_goal_generic_alliance
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Improve_the_social_system
+		}
+		prerequisite = {
+			focus = FRW_corrupt
+		}
+		x = 30
+		y = 6
+		completion_reward = {
+			custom_effect_tooltip = Local_Councils_T
+	}
+	}
+	focus = {
+		id = FRW_Conciliatory_faction
+		icon = GFX_Conciliatory_faction
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_election
+		}
+		mutually_exclusive = {
+			focus = FRW_National_Trade_Union
+			focus = FRW_Orthodox_Marxism
+		}
+		x = 34
+		y = 1
+			completion_reward = {
+					add_political_power = 50
+					add_popularity = {
+							ideology = social_democrat
+							popularity = 0.15
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_Acceptance
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Conciliatory_faction
+		}
+		x = 32
+		y = 2
+		completion_reward = {
+			custom_effect_tooltip = Masses_T
+			custom_effect_tooltip = assets_T
+			hidden_effect = {
+				set_temp_variable = { masses_popularity = masses_popularity }
+			    add_to_variable = { masses_popularity = 5 }
+			    add_to_variable = { masses_popularity = masses_popularity }
+				set_temp_variable = { assets_popularity = assets_popularity }
+				add_to_variable = { assets_popularity = 15 }
+				add_to_variable = { assets_popularity = assets_popularity }
+			}
+			add_political_power = 30
+			swap_ideas = {
+				remove_idea = State_media
+				add_idea = Freedom_press
+			}
+		}
+	}
+	focus = {
+		id = FRW_homosexual
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Conciliatory_faction
+		}
+		x = 34
+		y = 2
+		completion_reward = {
+			country_event = {
+					days = 1
+					id = FRW.15
+				}
+		}
+	}
+	focus = {
+		id = FRW_Left_Opposition
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Conciliatory_faction
+		}
+		x = 36
+		y = 2
+		completion_reward = {
+			add_political_power = -50
+			custom_effect_tooltip = Left_Opposition_T
+		}
+	}
+	focus = {
+		id = FRW_People_democracy
+		icon = GFX_freely
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Acceptance
+		}
+		prerequisite = {
+			focus = FRW_Left_Opposition
+		}
+		x = 34
+		y = 3
+		completion_reward = {
+			add_political_power = 100
+		}
+}
+	focus = {
+		id = FRW_humanism
+		icon = GFX_goal_generic_occupy_states_coastal
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_People_democracy
+		}
+		x = 33
+		y = 4
+		completion_reward = {
+			add_stability = 0.1
+	}
+}
+	focus = {
+		id = FRW_Curb_revenge
+		icon = GFX_goal_anti_comintern_pact
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_People_democracy
+		}
+		x = 35
+		y = 4
+        completion_reward = {
+			add_stability = 0.1
+			add_war_support = -0.1
+		}
+	}
+	focus = {
+		id = FRW_Parliamentary_revolution
+		icon = GFX_goal_generic_army_doctrines
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_humanism
+		}
+		prerequisite = {
+			focus = FRW_Curb_revenge
+		}
+		x = 34
+		y = 5
+        completion_reward ={
+			 custom_effect_tooltip = FRW_14_tt 
+			}
+	}
+	focus = {
+		id = FRW_Strict_labor_laws
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Parliamentary_revolution
+		}
+		x = 32
+		y = 6
+		completion_reward ={
+			country_event = {
+				days = 1
+				id = FRW.16
+			}
+		   }
+	}
+	focus = {
+		id = FRW_Democratic_reforms
+		icon = GFX_goal_generic_major_alliance
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Parliamentary_revolution
+		}
+		x = 36
+		y = 6
+		completion_reward ={
+			hidden_effect = {
+				set_temp_variable = { masses_popularity = masses_popularity }
+				add_to_variable = { masses_popularity = 10 }
+				add_to_variable = { masses_popularity = masses_popularity }
+			}
+			custom_effect_tooltip = Democratic_Dictatorship_T
+		   }
+	}
+
+	focus = {
+		id = FRW_Beacon_Democracy
+		icon = GFX_goal_generic_occupy_states_coastal
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Strict_labor_laws	
+		}
+		prerequisite = {
+			focus = FRW_Democratic_reforms	
+		}
+		x = 34
+		y = 8
+		completion_reward = {
+			add_stability = 0.25
+			add_war_support = -0.25
+		}
+	}
+	focus = {
+		id = FRW_Death_Millerland
+		icon = GFX_goal_generic_CAS
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Conciliatory_faction
+		}
+		x = 40
+		y = 2
+			completion_reward = {
+					retire_country_leader = yes
+					set_politics = {
+							ruling_party = social_democrat
+						}
+					add_popularity = {
+							ideology = social_democrat
+							popularity = 0.25
+						}
+				}
+			available = {
+					has_country_flag = Millerland_dead
+				}
+	}
+	focus = {
+		id = FRW_Market_reform
+		icon = GFX_goal_generic_consumer_goods
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Death_Millerland
+		}
+		mutually_exclusive = {
+			focus = FRW_Maintain_the_status_quo
+		}
+		x = 38
+		y = 3
+		completion_reward = {
+			add_political_power = 50
+	}
+}
+	focus = {
+		id = FRW_State_owned_companies
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Market_reform
+		}
+		x = 37
+		y = 4
+			completion_reward = {
+					add_ideas = FRW_Nationalization
+				}
+
+	}
+	focus = {
+		id = FRW_Trade_unions1
+		icon = GFX_goal_generic_army_doctrines
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Market_reform
+		}
+		x = 39
+		y = 4
+		completion_reward = {
+			add_political_power = 30
+			swap_ideas = {
+				remove_idea = Trade_union_neutrality
+				add_idea = Local_trade_unions
+			}
+		}
+	}
+	focus = {
+		id = FRW_Adhere_commune_system
+		icon = GFX_goal_generic_build_tank
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_State_owned_companies
+		}
+		prerequisite = {
+			focus = FRW_Trade_unions1
+		}
+		x = 38
+		y = 5
+		completion_reward = {
+			add_political_power = 50
+			custom_effect_tooltip = Adhere_Commune_System_T
+	}
+	}
+	focus = {
+		id = FRW_Maintain_the_status_quo
+		icon = GFX_goal_generic_consumer_goods
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Death_Millerland
+		}
+		mutually_exclusive = {
+			focus = FRW_Market_reform
+		}
+		x = 41
+		y = 3
+
+	}
+	focus = {
+		id = FRW_Bloom_New_Deal
+		icon = GFX_goal_anschluss
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Maintain_the_status_quo
+		}
+		x = 41
+		y = 4
+
+	}
+	focus = {
+		id = FRW_cripple_Trade_unions
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Bloom_New_Deal
+		}
+		x = 41
+		y = 5
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Trade_union_neutrality
+				add_idea = Deflection_employer
+			}
+			}
+	}
+	focus = {
+		id = FRW_Private_enterprises
+		icon = GFX_goal_generic_air_production
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_cripple_Trade_unions
+		}
+		x = 40
+		y = 6
+		completion_reward = {
+			custom_effect_tooltip = Private_Enterprises_T
+	}
+	}
+	focus = {
+		id = FRW_Promote_education
+		icon = GFX_goal_generic_consumer_goods
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_cripple_Trade_unions
+		}
+		x = 42
+		y = 6
+		completion_reward = {
+			add_political_power = 30
+			swap_ideas = {
+				remove_idea = secondary_school
+				add_idea = university_level
+			}
+		}
+	}
+	focus = {
+		id = FRW_Healthy_competition
+		icon = GFX_goal_generic_construction
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Private_enterprises
+		}
+		prerequisite = {
+			focus = FRW_Promote_education
+		}
+		x = 41
+		y = 7
+
+	}
+	focus = {
+		id = FRW_Military_reform
+		icon = GFX_goal_demand_sudetenland
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_ARMY_reform
+		}
+		x = 47
+		y = 1
+			completion_reward = {
+					army_experience = 10
+				}
+
+	}
+	focus = {
+		id = FRW_Military_Academy
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Military_reform
+		}
+		x = 44
+		y = 2
+			completion_reward = {
+					add_doctrine_cost_reduction = {
+							name = FRW_Military_Academy
+							cost_reduction = 0.5
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_Headquarters
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Military_Academy
+		}
+		x = 43
+		y = 3
+			completion_reward = {
+					army_experience = 10
+					add_command_power = 60
+				}
+
+	}
+	focus = {
+		id = FRW_checkmate
+		icon = GFX_goal_generic_alliance
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Military_Academy
+		}
+		x = 45
+		y = 3
+			completion_reward = {
+					show_unit_leaders_tooltip = FRW_Jacques_Doriot
+					show_unit_leaders_tooltip = FRW_Charles_de_Gaulle
+					hidden_effect = {
+							FRW_Jacques_Doriot = {
+									set_nationality = FRW
+								}
+							FRW_Charles_de_Gaulle = {
+									set_nationality = FRW
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_support
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Military_reform
+		}
+		x = 46
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = FRW_motorization
+							bonus = 1
+							uses = 1
+							category = motorized_equipment
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_motorization
+		icon = GFX_goal_generic_army_motorized
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_support
+		}
+		x = 47
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = FRW_motorization
+							bonus = 1
+							uses = 1
+							category = motorized_equipment
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_equip
+		icon = GFX_goal_generic_army_artillery2
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_ARMY_reform
+		}
+		x = 51
+		y = 1
+			completion_reward = {
+					add_tech_bonus = {
+							name = motorized_equipment
+							bonus = 1
+							ahead_reduction = 1
+							uses = 1
+							category = motorized_equipment
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_ARMY
+		icon = GFX_goal_generic_position_armies
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_equip
+		}
+		x = 48
+		y = 2
+			completion_reward = {
+					army_experience = 50
+				}
+
+	}
+	focus = {
+		id = FRW_Tank_assembly_line
+		icon = GFX_goal_generic_army_tanks
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_ARMY
+		}
+		x = 46
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = cat_light_armor
+							bonus = 1
+							uses = 1
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_the_assembly_line
+		icon = GFX_goal_generic_army_artillery
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_ARMY
+		}
+		x = 48
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_weapons
+							bonus = 1
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_artillery
+		icon = GFX_goal_generic_army_artillery2
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_ARMY
+		}
+		x = 50
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = artillery
+							bonus = 1
+							uses = 1
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_naval_vessels
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_equip
+		}
+		x = 51
+		y = 2
+			completion_reward = {
+					navy_experience = 20
+				}
+
+	}
+	focus = {
+		id = FRW_Modern_Navy
+		icon = GFX_goal_generic_navy_battleship
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_naval_vessels
+		}
+		x = 51
+		y = 3
+			completion_reward = {
+					navy_experience = 50
+				}
+
+	}
+	focus = {
+		id = FRW_Nearshore_Navy
+		icon = GFX_goal_generic_navy_submarine
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Modern_Navy
+		}
+		x = 52
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = ss_tech
+							bonus = 1
+							uses = 1
+							category = ss_tech
+						}
+					add_tech_bonus = {
+							name = dd_tech
+							bonus = 1
+							uses = 1
+							category = dd_tech
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_Ocean_Navy
+		icon = GFX_goal_generic_navy_carrier
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Nearshore_Navy
+		}
+		x = 52
+		y = 5
+			completion_reward = {
+					add_tech_bonus = {
+							name = ca_tech
+							bonus = 1
+							uses = 1
+							category = ca_tech
+						}
+					add_tech_bonus = {
+							name = bc_tech
+							bonus = 1
+							uses = 1
+							category = bc_tech
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_air_force
+		icon = GFX_goal_generic_air_fighter
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_equip
+		}
+		x = 54
+		y = 2
+			completion_reward = {
+					air_experience = 50
+				}
+
+	}
+	focus = {
+		id = FRW_Lightweight_aircraft
+		icon = GFX_goal_generic_air_fighter
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_air_force
+		}
+		x = 53
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = light_fighter
+							bonus = 1
+							uses = 1
+							category = light_fighter
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_bomber
+		icon = GFX_goal_generic_air_bomber
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_air_force
+		}
+		x = 55
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = cat_strategic_bomber
+							bonus = 1
+							uses = 1
+							category = cat_strategic_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_fortress
+		icon = GFX_goal_generic_fortify_city
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_ARMY_reform
+		}
+		x = 57
+		y = 1
+			completion_reward = {
+					27 = {
+							add_building_construction = {
+									type = bunker
+									province = 698
+									level = 1
+								}
+							add_building_construction = {
+									type = bunker
+									province = 6698
+									level = 1
+								}
+						}
+					779 = {
+							add_building_construction = {
+									type = bunker
+									province = 11516
+									level = 1
+								}
+							add_building_construction = {
+									type = bunker
+									province = 521
+									level = 1
+								}
+						}
+					785 = {
+							add_building_construction = {
+									type = bunker
+									province = 5291
+									level = 1
+								}
+							add_building_construction = {
+									type = bunker
+									province = 3560
+									level = 1
+								}
+							add_building_construction = {
+									type = bunker
+									province = 11642
+									level = 1
+								}
+							add_building_construction = {
+									type = bunker
+									province = 3546
+									level = 1
+								}
+							add_building_construction = {
+									type = bunker
+									province = 6545
+									level = 1
+								}
+							add_building_construction = {
+									type = bunker
+									province = 11488
+									level = 1
+								}
+						}
+				}
+			available = {
+					controls_state = 27
+					controls_state = 779
+					controls_state = 785
+				}
+
+	}
+	focus = {
+		id = FRW_Extend_fortress
+		icon = GFX_goal_generic_defence
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_fortress
+		}
+		x = 56
+		y = 2
+			completion_reward = {
+					785 = {
+							add_building_construction = {
+									type = bunker
+									province = 9472
+									level = 2
+								}
+						}
+					18 = {
+							add_building_construction = {
+									type = bunker
+									province = 5291
+									level = 2
+								}
+							add_building_construction = {
+									type = bunker
+									province = 3560
+									level = 2
+								}
+						}
+					17 = {
+							add_building_construction = {
+									type = bunker
+									province = 3536
+									level = 2
+								}
+							add_building_construction = {
+									type = bunker
+									province = 11548
+									level = 2
+								}
+						}
+				}
+			available = {
+					controls_state = 785
+					controls_state = 17
+					controls_state = 18
+				}
+
+	}
+	focus = {
+		id = FRW_Coast
+		icon = GFX_goal_generic_construct_military
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_fortress
+		}
+		x = 58
+		y = 2
+			completion_reward = {
+					29 = {
+							add_building_construction = {
+									type = coastal_bunker
+									province = 575
+									level = 2
+								}
+						}
+					15 = {
+							add_building_construction = {
+									type = coastal_bunker
+									province = 9434
+									level = 2
+								}
+							add_building_construction = {
+									type = coastal_bunker
+									province = 485
+									level = 2
+								}
+							add_building_construction = {
+									type = coastal_bunker
+									province = 6449
+									level = 2
+								}
+						}
+					21 = {
+							add_building_construction = {
+									type = coastal_bunker
+									province = 11834
+									level = 2
+								}
+							add_building_construction = {
+									type = coastal_bunker
+									province = 911
+									level = 2
+								}
+							add_building_construction = {
+									type = coastal_bunker
+									province = 9909
+									level = 2
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_Defensive
+		icon = GFX_goal_rhineland
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Extend_fortress
+		}
+		prerequisite = {
+			focus = FRW_Coast
+		}
+		x = 57
+		y = 3
+			completion_reward = {
+					16 = {
+							add_building_construction = {
+									type = bunker
+									level = 5
+									instant_build = yes
+									province = {
+											all_provinces = yes
+											limit_to_border = yes
+										}
+								}
+						}
+				}
+			available = {
+					has_war_with = WWS
+				}
+
+	}
+	focus = {
+		id = FRW_Nantes
+		icon = GFX_goal_generic_construction
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Industrial_Revolution
+		}
+		x = 61
+		y = 1
+			completion_reward = {
+				30 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_Collaborative_research
+		icon = GFX_goal_generic_alliance
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Nantes
+		}
+		x = 60
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = radar_tech
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_Attract_investment
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Nantes
+		}
+		x = 62
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = support_tech
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_Marseille
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Industrial_Revolution
+		}
+		x = 64
+		y = 1
+			completion_reward = {
+				21 = {
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_seaport
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Marseille
+		}
+		x = 64
+		y = 2
+			completion_reward = {
+				21 = {
+					add_building_construction = {
+					type = naval_base
+					level = 1
+					instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_Lyons
+		icon = GFX_goal_generic_air_production
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Industrial_Revolution
+		}
+		x = 68
+		y = 1
+			completion_reward = {
+				20 = {
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_Electronics_research
+		icon = GFX_goal_generic_production2
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Lyons
+		}
+		x = 67
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = electronics
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_Industrial_research
+		icon = GFX_focus_research
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Lyons
+		}
+		x = 69
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = construction_tech
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_Toulouse
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Industrial_Revolution
+		}
+		x = 72
+		y = 1
+			completion_reward = {
+				31 = {
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_university
+		icon = GFX_focus_rocketry
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Toulouse
+		}
+		x = 71
+		y = 2
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = FRW_mechanization
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_seaport
+		}
+		prerequisite = {
+			focus = FRW_Electronics_research
+		}
+		prerequisite = {
+			focus = FRW_Industrial_research
+		}
+		prerequisite = {
+			focus = FRW_Attract_investment
+		}
+		prerequisite = {
+			focus = FRW_Collaborative_research
+		}
+		prerequisite = {
+			focus = FRW_university
+		}
+		x = 67
+		y = 3
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = Basic_industrialization
+							add_idea = Mature_industrialization
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_Strengthening_trade_unions
+		icon = GFX_goal_generic_attack_allies
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_trade_union
+		}
+		x = 22
+		y = 6
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = FRW_Trade_union
+							add_idea = FRW_Trade_union2
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_people
+		icon = GFX_goal_generic_alliance
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_internationalism
+		}
+		x = 24
+		y = 8
+			completion_reward = {
+					add_war_support = 0.25
+				}
+
+	}
+	focus = {
+		id = FRW_trade_union
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_criticism
+		}
+		x = 22
+		y = 5
+			completion_reward = {
+					add_ideas = FRW_Trade_union
+				}
+
+	}
+	focus = {
+		id = FRW_Revolutionary_parliament
+		icon = GFX_goal_demand_sudetenland
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_criticism
+			focus = FRW_People_Vanguard
+		}
+		x = 24
+		y = 5
+			completion_reward = {
+					add_political_power = 30
+					swap_ideas = {
+						remove_idea = Trade_union_neutrality
+						add_idea = Local_trade_unions
+					}
+				}
+
+	}
+	focus = {
+		id = FRW_Class_warfare
+		icon = GFX_goal_generic_demand_territory
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Revolutionary_parliament
+		}
+		x = 24
+		y = 6
+		completion_reward = {
+			add_political_power = 30
+			swap_ideas = {
+				remove_idea = Local_trade_unions
+				add_idea = State_trade_unions
+			}
+		}
+	}
+	focus = {
+		id = FRW_Reactionaries
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_People_Vanguard
+		}
+		x = 26
+		y = 5
+			completion_reward = {
+					create_intelligence_agency = yes
+				}
+
+	}
+	focus = {
+		id = FRW_proletariat
+		icon = GFX_goal_generic_national_unity
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Reactionaries
+		}
+		x = 26
+		y = 6
+			completion_reward = {
+					add_political_power = 50
+				}
+
+	}
+	focus = {
+		id = FRW_French_Marxism
+		icon = GFX_French_Marxism
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Party
+		}
+		x = 11
+		y = 7
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = FRW_authority_1
+							add_idea = FRW_authority_2
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_planned_economy
+		icon = GFX_planned_economy
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Centralized_management
+		}
+		x = 9
+		y = 4
+			completion_reward = {
+					add_ideas = FRW_Syndicals
+				}
+
+	}
+	focus = {
+		id = FRW_patriotism
+		icon = GFX_patriotism
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_planned_economy
+		}
+		x = 9
+		y = 5
+			completion_reward = {
+					add_ideas = FRW_patriotism
+				}
+
+	}
+	focus = {
+		id = FRW_Long_live_the_commune
+		icon = GFX_Long_live_the_commune
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_French_Marxism
+		}
+		x = 11
+		y = 8
+			completion_reward = {
+					add_war_support = 0.2
+				}
+
+	}
+	focus = {
+		id = FRW_People_Voice
+		icon = GFX_People_Voice
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_People_Council
+		}
+		x = 11
+		y = 5
+			completion_reward = {
+					add_ideas = FRW_People_Voice
+				}
+
+	}
+	focus = {
+		id = FRW_Aeronautical_studies
+		icon = GFX_goal_generic_air_fighter2
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Toulouse
+		}
+		x = 73
+		y = 2
+			completion_reward = {
+				31 = { 
+				add_building_construction = {
+				type = Air_base
+				level = 1
+				instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_Paris
+		icon = GFX_goal_generic_air_doctrine
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_mechanization
+		}
+		x = 67
+		y = 4
+			completion_reward = {
+					build_railway = {
+							level = 2
+							build_only_on_allied = no
+							controller_priority = {
+									base = 2
+									modifier = {
+											tag = FRW
+											add = 2
+										}
+								}
+							fallback = yes
+							start_state = 31
+							target_state = 16
+						}
+					build_railway = {
+							level = 2
+							build_only_on_allied = no
+							controller_priority = {
+									base = 2
+									modifier = {
+											tag = FRW
+											add = 2
+										}
+								}
+							fallback = yes
+							start_state = 23
+							target_state = 16
+						}
+					build_railway = {
+							level = 2
+							build_only_on_allied = no
+							controller_priority = {
+									base = 2
+									modifier = {
+											tag = FRW
+											add = 2
+										}
+								}
+							fallback = yes
+							start_state = 735
+							target_state = 16
+						}
+				}
+
+	}
+	focus = {
+		id = FRW_Party
+		icon = GFX_Party
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_People_Voice
+		}
+		prerequisite = {
+			focus = FRW_All_are_equal
+		}
+		prerequisite = {
+			focus = FRW_patriotism
+		}
+		x = 11
+		y = 6
+			completion_reward = {
+					add_political_power = 100
+					add_ideas = FRW_authority_1
+				}
+
+	}
+	focus = {
+		id = FRW_internationalism
+		icon = GFX_goal_generic_radar
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_proletariat
+		}
+		prerequisite = {
+			focus = FRW_Strengthening_trade_unions
+		}
+		x = 24
+		y = 7
+			completion_reward = {
+					add_ideas = FRW_internationalism
+				}
+
+	}
+	focus = {
+		id = FRW_3_year_plan
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_Enlarge_local_councils
+		}
+		x = 30
+		y = 7
+        completion_reward ={
+			add_ideas = FRW_Three_Year
+		}
+	}
+	focus = {
+		id = FRW_Incense_reform
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 6.00
+		prerequisite = {
+			focus = FRW_3_year_plan
+		}
+		x = 30
+		y = 8
+			completion_reward = {
+					add_ideas = FRW_Incense_reform
+				}
+
+	}
+}

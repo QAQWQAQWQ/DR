@@ -1,0 +1,37 @@
+guiTypes = {
+containerWindowType = {
+	name = "grain_ui_window"
+	position = { x= 710 y = 3}
+	clipping = no
+	# size = { width=50 height=24 }
+	Orientation = UPPER_LEFT
+	
+	background = {
+		name = "bg"
+		spriteType = "GFX_generic_box_96"
+	}
+
+	iconType = {
+		name ="grain_icon"
+		spriteType = "GFX_grain_icon"
+		position = { x= 2 y = 1 }
+		Orientation = "UPPER_LEFT"
+		pdx_tooltip = "grain_value_TOOLTIP"
+		pdx_tooltip_delayed = "grain_value_TT_TOOLTIP"
+	}		
+	
+	
+	instantTextBoxType = {
+		name ="grain_value"
+		position = { x= 20 y = 3 }
+		font = "hoi_18mbs"
+		text = "NUM_OF_grain"
+		format = right
+		maxWidth = 75
+		maxHeight = 24
+		fixedsize = yes
+		pdx_tooltip = "grain_value_TOOLTIP"
+		pdx_tooltip_delayed = "grain_value_TT_TOOLTIP"
+	}#NUM_OF_grain
+}
+}

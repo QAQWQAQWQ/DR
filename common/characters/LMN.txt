@@ -1,0 +1,30 @@
+characters={
+	LMN_Carol_II={
+		name=LMN_Carol_II
+		portraits={
+			civilian={
+				large="gfx/leaders/LMN/Portrait_Carol_II.tga"
+			}
+		}
+		country_leader={
+			ideology=royalists
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	LMN_Ferdinand_I={
+		name=LMN_Ferdinand_I
+		portraits={
+			civilian={
+				large="gfx/leaders/LMN/Portrait_Ferdinand_I.tga"
+			}
+		}
+		country_leader={
+			ideology=royalists
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}			
+	}

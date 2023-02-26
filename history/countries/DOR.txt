@@ -1,0 +1,82 @@
+﻿capital = 52
+
+oob = "DOR_1920"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	fuel_silos = 1
+}
+
+recruit_character = DOR_Ludwig_III
+recruit_character = DOR_Rupprecht
+recruit_character = DOR_ebert
+recruit_character = DOR_Hermannmueller
+recruit_character = DOR_Philipp_Scheidemann
+recruit_character = DOR_Max_von_Baden
+recruit_character = DOR_Karl_Eduard_Wilhelm_Groener
+recruit_character = DOR_Otto_Karl_Geßler
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+
+		#electronics
+		
+		
+		
+		
+		
+
+		#industry
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+set_politics = {
+	ruling_party = monarchy
+	last_election = "1918.11.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+add_ideas = {
+#law
+Private_economy
+		completely_illiterate
+		low_industrialization
+		Freedom_belief
+		Autonomous_police
+		Weak_investments
+		Patriarchy_supreme
+		Control_media
+		Deflection_employer
+
+Deutscher_Bund
+Deutscher_Zollverein
+}
+set_popularities = {
+	monarchy = 80
+	national_populist = 10
+	neutrality = 5
+	communism = 5
+}

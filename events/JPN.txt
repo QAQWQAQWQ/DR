@@ -1,0 +1,88 @@
+﻿###########################
+# JPN Events
+###########################
+
+add_namespace = JPN
+country_event = {
+	id = JPN.1
+	title = JPN.1.t
+	desc = JPN.1.d
+	picture = GFX_illness
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.1.a
+		hidden_effect={
+			
+			news_event = { id = JPN.2 days = 30}
+			news_event = { id = JPN.3 days = 30}
+	}
+	}
+}
+news_event = {
+	id = JPN.2
+	title = JPN.2.t
+	desc = JPN.2.d
+	picture = GFX_Emperor_Meiji
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+			name = JPN.2.a
+			custom_effect_tooltip = JPN_2_tt
+		}		
+}
+news_event = {####hidden
+	id = JPN.3
+	title = JPN.2.t
+	desc = JPN.2.d
+	picture = GFX_Emperor_Meiji
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	option = {
+			name = JPN.2.a
+			kill_country_leader = yes
+			set_political_party = {
+				ideology = monarchy
+				popularity = 60
+			}
+			set_political_party = {
+				ideology = democratic
+				popularity = 20
+			}
+			set_political_party = {
+				ideology = Anarchopedia
+				popularity = 20
+			}
+			set_political_party = {
+				ideology = communism
+				popularity = 20
+			}
+		clr_global_flag = JPN_Emperor_Meiji
+		set_global_flag = JPN_Emperor_Taisho
+		set_country_flag = Emperor_Meiji
+		custom_effect_tooltip = JPN_2_tt
+		country_event = {id=JPN.4 days=1}
+		}		
+}
+country_event = {
+	id = JPN.4
+	title = JPN.4.t
+	desc = JPN.4.d
+	#picture = GFX_Emperor_Meiji
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+			name = JPN.4.a
+			retire_character = JPN_Nogi_Maresuke
+		}		
+}

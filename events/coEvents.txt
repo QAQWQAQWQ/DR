@@ -1,0 +1,45 @@
+﻿###########################
+# WorldNews Events
+###########################
+
+add_namespace = WorldNews
+add_namespace = Worldcountry
+
+
+country_event = {
+	id = WorldNews.1
+	title = WorldNews.1.t
+	desc = WorldNews.1.d
+	picture = GFX_JS
+	is_triggered_only = yes
+	option = {
+		name = WorldNews.1.a
+		country_event = {id = WorldNews.2 }
+	
+}
+}
+
+
+country_event = {
+	id = WorldNews.2
+	title = WorldNews.2.t
+	desc = WorldNews.2.d
+	picture = GFX_JS
+	is_triggered_only = yes
+	option = {
+		name = WorldNews.2.a
+	}
+}
+
+country_event = {
+	id = Worldcountry.1
+	title = Worldcountry.1.t
+	desc = Worldcountry.1.d
+	picture = GFX_JS
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = Worldcountry.1.a
+        add_ideas=London_stock_market_crash
+	}
+}

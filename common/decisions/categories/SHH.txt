@@ -1,0 +1,11 @@
+DR_Shanghai_worker = {
+	icon = DR_Shanghai_worker
+	scripted_gui = DR_Shanghai_worker_ui
+	#picture = GFX_decisions_UBS_elections
+
+	priority = 9
+
+	allowed = {
+		tag = CPC
+	}
+}

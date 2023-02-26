@@ -1,0 +1,102 @@
+﻿capital = 107
+
+oob = "SIW_1920"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	fuel_silos = 1
+}
+
+recruit_character = SIW_Nicola_Uzun
+recruit_character = SIW_Milenko_Radomar_Vesnic
+recruit_character = SIW_Mihailo_Rasic
+recruit_character = SIW_Aleksandar_Obrenovic
+recruit_character = SIW_Peter_I
+recruit_character = SIW_Krsta_Smiljanic
+recruit_character = SIW_Arsenije_Karaaoraevic_Arsen
+recruit_character = SIW_Alexander_I
+recruit_character = SIW_Stojan_protic
+recruit_character = SIW_Milos_Vasic_slika
+recruit_character = SIW_Vojvoda_Petar_Bojovic
+recruit_character = SIW_Ljubomir_Davidović
+recruit_character = SIW_Dragutin_Dimitrijević
+recruit_character = SIW_Dragisa_Lapcevic
+recruit_character = SIW_NikolaPasic
+recruit_character = SIW_PetarZivkovic
+recruit_character = SIW_Dragutin_Dimitrijevic
+recruit_character = SIW_Woja_Marinkowitsch
+recruit_character = SIW_Filip_Filipovic
+
+
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+
+		#electronics
+		
+		
+		
+		
+		
+
+		#industry
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+add_ideas={
+		#law
+		Private_economy
+		completely_illiterate
+		low_industrialization
+		Freedom_belief
+		Autonomous_police
+		Weak_investments
+		Patriarchy_supreme
+		Control_media
+		Deflection_employer
+
+		SIW_Stojan_protic_H
+        SIW_Stojan_protic_P
+        SIW_Woja_Marinkowitsch_P
+SIW_Dragutin_Dimitrijevic_P
+SIW_Ljubomir_Davidovic_P
+SIW_Milenko_Radomar_Vesnic_P
+}
+set_country_flag =SIW_Aleksandar_Obrenovic_1
+
+set_politics = {
+	ruling_party = monarchy
+	last_election = "1918.11.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 5
+	national_populist = 10
+	monarchy = 80
+	communism = 5
+}

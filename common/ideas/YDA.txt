@@ -1,0 +1,11 @@
+ideas = {
+        country = {
+		YDA_kingdoms_land = {
+			picture = kingdoms_land
+			modifier = {
+				global_building_slots_factor = -0.1
+				mobilization_speed = -0.2
+			}
+        }
+		}
+}

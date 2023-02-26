@@ -1,0 +1,101 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1920.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "FRW"
+		default = yes
+		
+		"FRW"={
+			history = "FRW_GATHERING_STORM_DESC"
+			ideology = democratic_socialism
+			ideas = {
+				FRW_The_shame_of_Alsace_Lorraine
+                FRW_African_Royal_Families_in_exile
+			}
+			focuses = {
+				FRW_election
+		        FRW_Second_International
+		        FRW_National_Trade_Union
+			}
+		}
+"ENL"={
+	history = "ENL_GATHERING_STORM_DESC"
+	
+	ideology = democratic
+	ideas = {
+		
+	}
+	focuses = {
+		
+	}
+}
+"WWS"={
+	history = "WWS_GATHERING_STORM_DESC"
+	
+	ideology = monarchy
+	ideas = {
+	}
+	focuses = {
+	}
+}
+"ITE"={
+	history = "ITE_GATHERING_STORM_DESC"
+	
+	ideology = monarchy
+	ideas = {
+	}
+	focuses = {
+	}
+}
+"AOX"={
+	history = "AOX_GATHERING_STORM_DESC"
+	
+	ideology = Dual_monarchy
+	ideas = {
+	}
+	focuses = {
+	}
+}
+"SHW"={
+	history = "SHW_GATHERING_STORM_DESC"
+	
+	ideology = monarchy
+	ideas = {
+	}
+	focuses = {
+	}
+}
+"SBY"={
+	history = "SBY_GATHERING_STORM_DESC"
+	
+	ideology = monarchy
+	ideas = {
+	}
+	focuses = {
+	}
+}
+"TEQ"={
+	history = "TEQ_GATHERING_STORM_DESC"
+	
+	ideology = monarchy
+	ideas = {
+	}
+	focuses = {
+	}
+}
+
+
+
+"JPN"={
+	history = "UBS_GATHERING_STORM_DESC"
+	minor = yes
+	ideology = monarchy
+	
+}
+
+}
+
+}
+

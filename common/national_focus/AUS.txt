@@ -1,0 +1,884 @@
+focus_tree = {
+	id = AUS
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AOX
+		}
+	}
+	default = no
+	focus = {
+		id = AUS_0
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+		x = 13
+		y = 0
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_ger_1
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_0
+		}
+		mutually_exclusive = {
+			focus = AUS_ger_2
+		}
+		mutually_exclusive = {
+			focus = AUS_ger_3
+		}
+		x = 2
+		y = 1
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_ger_2
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_0
+		}
+		mutually_exclusive = {
+			focus = AUS_ger_1
+		}
+		mutually_exclusive = {
+			focus = AUS_ger_3
+		}
+		x = 6
+		y = 1
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_ger_3
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_0
+		}
+		mutually_exclusive = {
+			focus = AUS_ger_1
+		}
+		mutually_exclusive = {
+			focus = AUS_ger_2
+		}
+		x = 10
+		y = 1
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_ger_4
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_ger_2
+			focus = AUS_ger_3
+		}
+		x = 8
+		y = 2
+		completion_reward = {
+			add_political_power = 200
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_ger_8
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_ger_4
+		}
+		mutually_exclusive = {
+		}
+		x = 7
+		y = 3
+		completion_reward = {
+      		add_to_variable = { var = DHD.aus_support value = 10 }  
+      		add_to_variable = { var = DOL.aus_support value = 10 }  
+      		add_to_variable = { var = DON.aus_support value = 10 }  
+      		add_to_variable = { var = LSB.aus_support value = 10 }  
+			gercon_upd_pbv_var = yes
+			gercon_clamp_vars = yes
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_ger_9
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_ger_4
+		}
+		x = 9
+		y = 3
+		completion_reward = {
+      		add_to_variable = { var = DOR.aus_support value = 20 }  
+      		add_to_variable = { var = DOB.aus_support value = 20 }  
+      		add_to_variable = { var = DOF.aus_support value = 20 }  
+			gercon_upd_pbv_var = yes
+			gercon_clamp_vars = yes
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_ger_10
+		icon = GFX_goal_unkown
+		cost = 5.00
+		mutually_exclusive = {
+			focus = AUS_ger_13
+		}
+		prerequisite = {
+			focus = AUS_ger_8
+		}
+		prerequisite = {
+			focus = AUS_ger_9
+		}
+		x = 8
+		y = 4
+		completion_reward = {
+			add_political_power = -80
+			DOH = {
+          		random_owned_state = {	
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+          		random_owned_state = {	
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+          		random_owned_state = {	
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			add_to_variable = { var = DOH.aus_support value = 15 } 
+			add_to_variable = { var = DOH.pre_support value = -15 }  
+			gercon_upd_pbv_var = yes
+			gercon_clamp_vars = yes
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_ger_15
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_ger_10
+		}
+		mutually_exclusive = {
+		}
+		x = 8
+		y = 5
+		completion_reward = {
+		}
+		available = {
+			has_completed_focus = AUS_ger_2
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_ger_5
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_ger_2
+			focus = AUS_ger_1
+		}
+		x = 4
+		y = 2
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_ger_11
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_ger_5
+		}
+		x = 5
+		y = 3
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_ger_12
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_ger_5
+		}
+		mutually_exclusive = {
+		}
+		x = 3
+		y = 3
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_ger_13
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_ger_11
+		}
+		prerequisite = {
+			focus = AUS_ger_12
+		}
+		mutually_exclusive = {
+			focus = AUS_ger_10
+		}
+		x = 4
+		y = 4
+		completion_reward = {
+			every_country = {
+                limit = {
+                    OR = {
+                        tag = AOX
+                        tag = WWS
+                        tag = AGC
+                        tag = LSB
+                        tag = DHD
+                        tag = DON
+                        tag = DOF
+                        tag = DOB
+                        tag = DOR
+                        tag = BXM
+                        tag = DOL
+                        tag = DOH
+                        tag = DOA
+                        tag = DOM
+                        tag = DOS
+                    }
+                }
+                set_variable = {
+                    var = ger_con_cangetsupport
+                    value = 0
+                }
+				if = {
+					limit = {
+           				check_variable = { aus_support > pre_support }
+					}
+					set_variable = {
+						var = aus_support
+						value = 100
+					}
+					set_variable = {
+						var = pre_support
+						value = 0
+					}
+				}
+				if = {
+					limit = {
+           				check_variable = { aus_support < pre_support }
+					}
+					set_variable = {
+						var = aus_support
+						value = 0
+					}
+					set_variable = {
+						var = pre_support
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+           				check_variable = { aus_support = pre_support }
+					}
+					THIS = {	
+						country_event = { id = austria.1 }
+					}
+				}
+			}
+			gercon_upd_pbv_var = yes
+			gercon_clamp_vars = yes
+		}
+		available = {
+			has_completed_focus = AUS_ger_2
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_ger_14
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_ger_13
+		}
+		mutually_exclusive = {
+		}
+		x = 4
+		y = 5
+		completion_reward = {
+			every_country = {
+                limit = {
+                    OR = {
+                        tag = AOX
+                        tag = WWS
+                        tag = AGC
+                        tag = LSB
+                        tag = DHD
+                        tag = DON
+                        tag = DOF
+                        tag = DOB
+                        tag = DOR
+                        tag = BXM
+                        tag = DOL
+                        tag = DOH
+                        tag = DOA
+                        tag = DOM
+                        tag = DOS
+                    }
+                }
+				if = {
+					limit = {
+           				check_variable = { aus_support > pre_support }
+					}
+					THIS = {	
+						country_event = { id = austria.2 }
+					}
+				}
+				if = {
+					limit = {
+           				check_variable = { aus_support < pre_support }
+					}
+					THIS = {	
+						country_event = { id = austria.3 }
+					}
+				}
+			}
+		}
+		available = {
+			has_completed_focus = AUS_ger_2
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_ger_6
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_ger_1
+		}
+		x = 1
+		y = 2
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_ger_16
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_ger_6
+		}
+		x = 1
+		y = 3
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_ger_17
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_ger_16
+		}
+		x = 1
+		y = 4
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_ger_18
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_ger_17
+		}
+		prerequisite = {
+			focus = AUS_ger_12
+		}
+		x = 2
+		y = 5
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_ger_7
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_ger_3
+		}
+		x = 11
+		y = 2
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_ger_19
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_ger_7
+		}
+		x = 12
+		y = 4
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_ger_20
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_ger_7
+		}
+		x = 11
+		y = 3
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_ger_21
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_ger_7
+		}
+		x = 10
+		y = 4
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_ger_22
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_ger_19
+			focus = AUS_ger_20
+			focus = AUS_ger_21
+		}
+		x = 11
+		y = 5
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_bir_1
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_0
+		}
+		mutually_exclusive = {
+			focus = AUS_bir_2
+		}
+		x = 16
+		y = 1
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_bir_2
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_0
+		}
+		mutually_exclusive = {
+			focus = AUS_bir_1
+		}
+		x = 20
+		y = 1
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_bir_3
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_bir_1
+			focus = AUS_bir_2
+		}
+		mutually_exclusive = {
+			focus = AUS_bir_7
+		}
+		x = 18
+		y = 2
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_bir_4
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_bir_3
+		}
+		mutually_exclusive = {
+		}
+		x = 17
+		y = 3
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_bir_5
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_bir_3
+		}
+		mutually_exclusive = {
+		}
+		x = 19
+		y = 3
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_bir_6
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_bir_4
+		}
+		prerequisite = {
+			focus = AUS_bir_5
+		}
+		mutually_exclusive = {
+		}
+		x = 18
+		y = 4
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_bir_7
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_bir_2
+		}
+		mutually_exclusive = {
+			focus = AUS_bir_3
+		}
+		x = 22
+		y = 2
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_bir_9
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_bir_7
+		}
+		mutually_exclusive = {
+		}
+		x = 21
+		y = 3
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_bir_10
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_bir_7
+		}
+		mutually_exclusive = {
+		}
+		x = 23
+		y = 3
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_bir_11
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_bir_9
+		}
+		prerequisite = {
+			focus = AUS_bir_10
+		}
+		mutually_exclusive = {
+		}
+		x = 22
+		y = 4
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_bir_8
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_bir_2
+		}
+		mutually_exclusive = {
+		}
+		x = 20
+		y = 4
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_bir_12
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_bir_1
+		}
+		mutually_exclusive = {
+		}
+		x = 14
+		y = 2
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_bir_13
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_bir_12
+		}
+		mutually_exclusive = {
+		}
+		x = 14
+		y = 3
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_bir_14
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_bir_12
+		}
+		mutually_exclusive = {
+		}
+		x = 16
+		y = 4
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_bir_15
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_bir_13
+		}
+		mutually_exclusive = {
+		}
+		x = 14
+		y = 4
+		completion_reward = {
+		}
+		available = {
+
+		}
+		bypass = {
+		}
+	}
+}

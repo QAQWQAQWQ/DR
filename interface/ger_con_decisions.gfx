@@ -1,0 +1,63 @@
+spriteTypes = {	
+	progressBarType = {
+		name = "GFX_ger_con_power_balance"
+		# textureFile1 = "gfx/interface/bop/bop_bar_orange_light.dds"
+		# textureFile2 = "gfx/interface/bop/bop_bar_blue_light.dds"
+		size = { x = 350 y = 16 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+		color = { 0.72 0.53 0.04 1}
+		colortwo = { 0.0 0.19 0.33 1}
+		steps = 200
+	}
+	spriteType = {
+		name = "GFX_ger_con_bg"
+		texturefile = "gfx/interface/goals/ger_con/ger_con_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_ger_con_che"
+		texturefile = "gfx/interface/goals/ger_con/ger_con_cheek.dds"
+	}
+	spriteType = {
+		name = "GFX_ger_con_bop_empty"
+		texturefile = "gfx/interface/goals/ger_con/ger_con_power_bop_empty.dds"
+	}
+	spriteType = {
+		name = "GFX_pre_side"
+		texturefile = "gfx/interface/goals/ger_con/pre_side.png"
+	}
+	spriteType = {
+		name = "GFX_aus_side"
+		texturefile = "gfx/interface/goals/ger_con/aus_side.png"
+	}
+	spriteType = {
+		name = "GFX_ger_con_bav"
+		texturefile = "gfx/interface/GUI/ger_con_bav.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ger_con_wur"
+		texturefile = "gfx/interface/GUI/ger_con_wur.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ger_con_pre"
+		texturefile = "gfx/interface/GUI/ger_con_pre.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ger_con_bad"
+		texturefile = "gfx/interface/GUI/ger_con_bad.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ger_con_sax"
+		texturefile = "gfx/interface/GUI/ger_con_sax.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ger_con_han"
+		texturefile = "gfx/interface/GUI/ger_con_han.dds"
+		legacy_lazy_load = no
+	}
+}

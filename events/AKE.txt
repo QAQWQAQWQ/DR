@@ -1,0 +1,49 @@
+﻿###########################
+# AKE Events
+###########################
+
+add_namespace = AKE
+news_event = {
+	id = AKE.1
+	title = AKE.1.t
+	desc = AKE.1.d
+	#picture = 
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = AKE.1.a
+		hidden_effect = {
+			AKE= { 
+			transfer_state = 402
+			add_state_core = 402
+			transfer_state = 407
+			add_state_core = 407
+			transfer_state = 406
+			add_state_core = 406
+			transfer_state = 404
+			add_state_core = 404
+			transfer_state = 881
+			add_state_core = 881
+			transfer_state = 589
+			add_state_core = 589
+			transfer_state = 586
+			add_state_core = 586
+			transfer_state = 732
+			add_state_core = 732
+			transfer_state = 652
+			add_state_core = 652
+			transfer_state = 582
+			add_state_core = 582
+			transfer_state = 583
+			add_state_core = 583
+			transfer_state = 590
+			add_state_core = 590
+			transfer_state = 882
+			add_state_core = 882
+			transfer_state = 588
+			add_state_core = 588
+	    }
+		}
+	}
+	}
+	

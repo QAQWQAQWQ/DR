@@ -1,0 +1,52 @@
+characters={
+	YDN_Victor_Napoleon={
+		name=YDN_Victor_Napoleon
+		portraits={
+			civilian={
+				large="gfx/leaders/YDN/portrait_Victor_Napoleon.tga"
+			}
+		}
+		country_leader={
+			ideology=royalists
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	YDN_Hendrikus_Colijn={
+		name=YDN_Hendrikus_Colijn
+		portraits={
+			civilian={
+				large="gfx/leaders/YDN/portrait_Hendrikus_Colijn.tga"
+			}
+		}
+		country_leader={
+			ideology=authoritarian_type
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	YDN_Charles_Beerenbrouck={
+		name=YDN_Charles_Beerenbrouck
+		portraits={
+			civilian={
+				large="gfx/leaders/YDN/portrait_Charles_Beerenbrouck.tga"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	YDN_Limburg_Stirum={
+		name=YDN_Limburg_Stirum
+		portraits={
+			civilian={
+				large="gfx/leaders/YDN/portrait_Limburg_Stirum.tga"
+			}
+		}
+	}		
+	}

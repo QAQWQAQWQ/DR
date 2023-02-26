@@ -1,0 +1,72 @@
+characters={
+	PBL_Alexander_Aleksandrovich_Miller={
+		name=PBL_Alexander_Aleksandrovich_Miller
+		portraits={
+			civilian={
+				large="gfx/leaders/PBL/Portrait_Alexander_Aleksandrovich_Miller.tga"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	PBL_Wincenty_Witos={
+		name=PBL_Wincenty_Witos
+		portraits={
+			civilian={
+				large="gfx/leaders/PBL/portrait_Wincenty_Witos.tga"
+			}
+		}
+		country_leader={
+			ideology=authoritarian_type
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	PBL_Zdzislaw_Lubomirski={
+		name=PBL_Zdzislaw_Lubomirski
+		portraits={
+			civilian={
+				large="gfx/leaders/PBL/portrait_Zdzislaw_Lubomirski.tga"
+			}
+		}
+		country_leader={
+			ideology=royalists
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	PBL_Dzerzhinsky={
+		name=PBL_Dzerzhinsky
+		portraits={
+			civilian={
+				large="gfx/leaders/PBL/portrait_Dzerzhinsky.tga"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	PBL_PiIsudski={
+		name=PBL_PiIsudski
+		portraits={
+			civilian={
+				large="gfx/leaders/PBL/Portrait_PiIsudski.tga"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	}

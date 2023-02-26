@@ -1,0 +1,85 @@
+﻿capital = 608
+
+oob = "ZHX_1920"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	fuel_silos = 1
+}
+
+recruit_character = ZHX_Fen_GuoZhang
+recruit_character = ZHX_Fen_YuXiang
+recruit_character = ZHX_WuPeiFu
+recruit_character = ZHX_Kong_XiangXi 
+recruit_character = ZHX_WangZhangYuan
+recruit_character = ZHX_Li_HongYuan
+recruit_character = ZHX_CaoRuLin
+recruit_character = ZHX_Zhang_Zongxiang
+recruit_character = ZHX_LuZongyu
+recruit_character = ZHX_CaoKung
+recruit_character = ZHX_JingYunPeng
+recruit_character = ZHX_ChenWenYun
+recruit_character = ZHX_LiangQiCao
+recruit_character = ZHX_PengSouXing
+recruit_character = ZHX_SunYue
+
+
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+
+		#electronics
+		
+		
+		
+		
+		
+
+		#industry
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	create_faction = BeiPing
+	add_to_faction = SXS
+    add_to_faction = SUC
+	
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1918.11.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+add_ideas = {
+	ZHX_TAOTC
+	Agricultural_economy
+	completely_illiterate
+	Smallholder_economy
+}
+set_popularities = {
+	democratic = 5
+	national_populist = 1
+	neutrality = 89
+	communism = 5
+}

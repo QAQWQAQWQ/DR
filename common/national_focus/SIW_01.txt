@@ -1,0 +1,2229 @@
+focus_tree = {
+	id = SIW_1
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SIW
+		}
+	}
+	default = no
+	focus = {
+		id = Nation_progress_and_freedom
+		icon = GFX_goal_Nation_progress_and_freedom
+		cost = 5.00
+		mutually_exclusive = {
+			focus = Red_flags_flying
+		}
+		#available = {
+		#	SIW_Peter_I={is_country_leader = yes}
+			
+		#}
+		x = 21
+		y = 0
+completion_reward = {
+	add_ideas = Traditional_conservatism
+    add_ideas = Freedom_press
+}
+	}
+	focus = {
+		id = Red_flags_flying
+		icon = GFX_goal_Red_flags_flying
+		cost = 5.00
+		mutually_exclusive = {
+			focus = Nation_progress_and_freedom
+		}
+		available = {
+			
+		}
+		x = 31
+		y = 0
+completion_reward = {
+	
+add_popularity = {
+	ideology = social_democrat
+	popularity = 0.3
+}
+hidden_effect = {
+	add_popularity = {
+	ideology = monarchy
+    popularity = -0.3
+}
+}
+add_ideas = SIW_Dragisa_Lapcevic_H
+
+
+}
+	}
+	focus = {
+		id = Greater_Serbia
+		icon = GFX_Yugoslav_dream
+		cost = 5.00
+		x = 22
+		y = 9
+		 allow_branch={
+			has_country_flag = Greater_Serbia
+		 }
+completion_reward = {
+	add_war_support = 0.15
+	add_political_power = 150
+}
+	}
+	focus = {
+		id = Rectify_banking_sector
+		icon = GFX_Rectify_banking_sector_goal
+		cost = 5.00
+		x = 47
+		y = 0
+completion_reward={
+	add_political_power = 100
+}
+	}
+	focus = {
+		id = Yugoslav_dream
+		icon = GFX_Yugoslav_dream
+		cost = 5.00
+		x = 22
+		y = 13
+		prerequisite = {
+			focus = Great_Serbian_recollections
+		}
+		completion_reward = {
+			736={add_claim_by = SIW}
+			853={add_claim_by = SIW}
+			852={add_claim_by = SIW}
+			109={add_claim_by = SIW}
+			163={add_claim_by = SIW}
+			804={add_claim_by = SIW}
+			764={add_claim_by = SIW}
+			82={add_claim_by = SIW}
+			44={add_claim_by = SIW}
+			805={add_claim_by = SIW}
+		}
+	}
+	focus = {
+		id = Borrowing_broad
+		icon = GFX_Borrowing_broad_goal
+		cost = 5.00
+		x = 44
+		y = 5
+prerequisite = {
+			focus = Restructuring_banks
+		}
+		completion_reward = {
+			ENL={
+				country_event={id=SIW.22}
+			}
+			WWS={
+				country_event={id=SIW.22}
+			}
+			ITE={
+				country_event={id=SIW.22}
+			}
+			TEQ={
+				country_event={id=SIW.22}
+			}
+		}
+	}
+	focus = {
+		id = Lessons_from_the_Balkan_wars
+		icon = GFX_Lessons_from_the_Balkan_wars_goal
+		cost = 5.00
+		x = 68
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = Creation_Serbian_Air_Force
+		icon = GFX_Creation_Serbian_Air_Force_goal
+		cost = 5.00
+		x = 62
+		y = 8
+completion_reward = {
+	air_experience = 50
+}
+	}
+	focus = {
+		id = From_Kotor
+		icon = GFX_From_Kotor_goal
+		cost = 5.00
+		available = {                           
+               controls_state = 105                  
+          }
+		x = 73
+		y = 8
+completion_reward = {
+	navy_experience = 50
+}
+	}
+	focus = {
+		id = Yugoslavism
+		icon = GFX_Greater_Serbia
+		cost = 5.00
+		x = 35
+		y = 9
+		 allow_branch={ 
+		 	has_country_flag = Greater_Yugoslavism
+		 }
+		completion_reward = {
+			add_war_support = 0.1
+			add_political_power = 180
+		}
+	}
+	focus = {
+		id = Coordination_innovation
+		icon = GFX_goal_Coordination_innovation
+		cost = 5.00
+		prerequisite = {
+			focus = Nation_progress_and_freedom
+		}
+		x = 21
+		y = 1
+completion_reward = {
+	add_political_power = 120
+}
+	}
+	focus = {
+		id = Sword_slashing_fox
+		icon = GFX_goal_Sword_slashing_fox
+		cost = 5.00
+		prerequisite = {
+			focus = Coordination_innovation
+		}
+		x = 19
+		y = 2
+completion_reward = {
+	custom_effect_tooltip = Enable_new_advisor1
+	custom_effect_tooltip = Sword_slashing_fox1
+	hidden_effect = {
+		country_event = {id=SIW.24 days=3}
+	}
+}
+	}
+	focus = {
+		id = Defend_authority_parliamentary_democracy
+		icon = GFX_goal_Defend_authority_parliamentary_democracy
+		cost = 5.00
+		prerequisite = {
+			focus = Sword_slashing_fox
+		}
+		x = 18
+		y = 3
+completion_reward = {
+	country_event = {id=SIW.6}
+}
+	}
+	focus = {
+		id = Listen_the_progressive_voices_military
+		icon = GFX_goal_Listen_the_progressive_voices_military
+		cost = 5.00
+		prerequisite = {
+			focus = Defend_authority_parliamentary_democracy
+		}
+		x = 17
+		y = 4
+completion_reward = {
+	add_dynamic_modifier = {
+		modifier = voice_progress
+	}
+}
+	}
+	focus = {
+		id = The_gospel_the_national_bourgeoisie
+		icon = GFX_goal_The_gospel_the_national_bourgeoisie
+		cost = 5.00
+		prerequisite = {
+			focus = Coordination_innovation
+		}
+		x = 21
+		y = 2
+completion_reward = {
+	hidden_effect = {
+		set_temp_variable = { assets_popularity = assets_popularity }
+		add_to_variable = { assets_popularity = 5 }
+		add_to_variable = { assets_popularity = assets_popularity }
+	}
+	custom_effect_tooltip = assets2_T
+}
+	}
+	focus = {
+		id = Strike_trusts
+		icon = GFX_goal_Strike_trusts
+		cost = 5.00
+		prerequisite = {
+			focus = Sword_slashing_fox
+		}
+		prerequisite = {
+			focus = The_gospel_the_national_bourgeoisie
+		}
+		x = 20
+		y = 3
+completion_reward = {
+	set_temp_variable = { masses_popularity = masses_popularity }
+	add_to_variable = { masses_popularity = 5 }
+	add_to_variable = { masses_popularity = masses_popularity } 
+
+	set_temp_variable = { assets_popularity = assets_popularity }
+	add_to_variable = { assets_popularity = 3 }
+	add_to_variable = { assets_popularity = assets_popularity }      
+
+	set_temp_variable = { noble_popularity = noble_popularity }
+	subtract_from_temp_variable = { noble_popularity = 3 }
+	add_to_variable = { noble_popularity = noble_popularity }
+
+	set_temp_variable = { elite_popularity = elite_popularity }
+	subtract_from_temp_variable = { elite_popularity = 5 }
+	add_to_variable = { elite_popularity = elite_popularity }
+	
+			custom_effect_tooltip = Masses_T
+			custom_effect_tooltip = elite1_T
+			custom_effect_tooltip = noble1_T
+			custom_effect_tooltip = assets3_T
+}
+	}
+	focus = {
+		id = Mending_class_rifts
+		icon = GFX_goal_Mending_class_rifts
+		cost = 5.00
+		prerequisite = {
+			focus = Defend_authority_parliamentary_democracy
+		}
+		prerequisite = {
+			focus = Strike_trusts
+		}
+		x = 19
+		y = 4
+completion_reward = {
+	country_event = {id=SIW.10}
+}
+	}
+	focus = {
+		id = Support_existence_civil_society
+		icon = GFX_goal_Support_existence_civil_society
+		cost = 5.00
+		prerequisite = {
+			focus = The_gospel_the_national_bourgeoisie
+		}
+		x = 21
+		y = 4
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = Popular_political_parties
+			}
+			hidden_effect = {
+				set_temp_variable = { masses_popularity = masses_popularity }
+				add_to_variable = { masses_popularity = 5 }
+				add_to_variable = { masses_popularity = masses_popularity 
+			}
+			}
+			custom_effect_tooltip = Masses_T
+			}
+	}
+	focus = {
+		id = Harmony_virtue
+		icon = GFX_goal_Harmony_virtue
+		cost = 5.00
+		prerequisite = {
+			focus = Mending_class_rifts
+		}
+		prerequisite = {
+			focus = Support_existence_civil_society
+		}
+		x = 20
+		y = 5
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = Autonomous_Community_Slovenia
+		icon = GFX_Autonomous_Community_Slovenia
+		cost = 5.00
+		prerequisite = {
+			focus = Yugoslav_dream
+		}
+		available = {
+			102={is_controlled_by = ROOT}
+		}
+		x = 19
+		y = 14
+completion_reward = {
+	 102={add_core_of = ROOT}
+}
+	}
+	focus = {
+		id = Bulgarian_Autonomous_Community
+		icon = GFX_Bulgarian_Autonomous_Community
+		cost = 5.00
+		prerequisite = {
+			focus = Yugoslav_dream
+		}
+		x = 22
+		y = 14
+		available = {
+			48={is_controlled_by = ROOT}
+		}
+		completion_reward = {
+			48={add_core_of = ROOT}
+		}
+	}
+	focus = {
+		id = Croatian_Autonomous_Community
+		icon = GFX_Croatian_Autonomous_Community
+		cost = 5.00
+		prerequisite = {
+			focus = Yugoslav_dream
+		}
+		x = 25
+		y = 14
+		available = {
+			109={is_controlled_by = ROOT}
+		}
+		completion_reward = {
+			109={add_core_of = ROOT}
+		}
+	}
+	focus = {
+		id = March_Rijeka
+		icon = GFX_March_Rijeka
+		cost = 5.00
+		prerequisite = {
+			focus = Autonomous_Community_Slovenia
+			focus = Bulgarian_Autonomous_Community
+			focus = Croatian_Autonomous_Community
+		}
+		x = 20
+		y = 15
+completion_reward = {
+	917={add_claim_by = SIW}
+}
+	}
+	focus = {
+		id = Serbian_National_Pioneer_Regiment
+		icon = GFX_goal_Serbian_National_Pioneer_Regiment
+		cost = 5.00
+		prerequisite = {
+			focus = Coordination_innovation
+		}
+		x = 23
+		y = 2
+completion_reward = {
+	add_dynamic_modifier = {
+		modifier = Vanguard_Regiment
+	}
+}
+	}
+	focus = {
+		id = Democracy_countryside
+		icon = GFX_goal_Democracy_countryside
+		cost = 5.00
+		prerequisite = {
+			focus = Serbian_National_Pioneer_Regiment
+		}
+		x = 22
+		y = 3
+completion_reward = {
+	add_popularity = {
+		ideology = democratic
+		popularity = 0.1
+	}
+	country_event = {id=SIW.7}
+}
+	}
+	focus = {
+		id = New_Democratic_Politics
+		icon = GFX_goal_New_Democratic_Politics
+		cost = 5.00
+		prerequisite = {
+			focus = Red_flags_flying
+		}
+		x = 31
+		y = 1
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = Support_Serbian_General_Trade_Union
+		icon = GFX_goal_Support_Serbian_General_Trade_Union
+		cost = 5.00
+		
+		prerequisite = {
+			focus = Coordination_innovation
+			focus = New_Democratic_Politics
+		}
+		x = 26
+		y = 2
+completion_reward = {
+		add_ideas = SIW_Serbian_General_Trade_Union
+	
+			hidden_effect = {
+				set_temp_variable = { masses_popularity = masses_popularity }
+				add_to_variable = { masses_popularity = 5 }
+				add_to_variable = { masses_popularity = masses_popularity 
+			}
+			}
+			custom_effect_tooltip = Masses_T
+}
+	}
+	focus = {
+		id = Land_value_added_tax
+		icon = GFX_goal_Land_value_added_tax
+		cost = 5.00
+		prerequisite = {
+			focus = Support_Serbian_General_Trade_Union
+		}
+		x = 24
+		y = 3
+completion_reward = {
+	add_ideas = SIW_Land_value_added_tax
+}
+	}
+	focus = {
+		id = Serbian_Agricultural_Guild
+		icon = GFX_goal_Serbian_Agricultural_Guild
+		cost = 5.00
+		prerequisite = {
+			focus = Democracy_countryside
+		}
+		prerequisite = {
+			focus = Land_value_added_tax
+		}
+		x = 23
+		y = 4
+completion_reward = {
+	country_event = {id=SIW.9}
+	108 = {
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+			}
+	}
+}
+	}
+	focus = {
+		id = party_nation_party_people
+		icon = GFX_goal_party_nation_party_people
+		cost = 5.00
+		prerequisite = {
+			focus = Support_existence_civil_society
+		}
+		prerequisite = {
+			focus = Serbian_Agricultural_Guild
+		}
+		x = 22
+		y = 5
+completion_reward = {
+	add_war_support = 0.05
+	set_party_name = { 
+		ideology = monarchy 
+		long_name = SIW_monarchy_party2_long 
+		name = SIW_monarchy_party2
+	}
+}
+	}
+	focus = {
+		id = Serbia_the_land_free
+		icon = GFX_goal_Serbia_the_land_free
+		cost = 5.00
+		prerequisite = {
+			focus = Harmony_virtue
+		}
+		prerequisite = {
+			focus = party_nation_party_people
+		}
+		x = 21
+		y = 6
+completion_reward = {
+	
+		add_trait = {
+		character = SIW_Peter_I
+		trait = highly_respected_king
+	}
+		
+	add_political_power = 200
+}
+	}
+	focus = {
+		id = Promote_democracy_construction
+		icon = GFX_goal_Promote_democracy_construction
+		cost = 5.00
+		prerequisite = {
+			focus = Support_Serbian_General_Trade_Union
+		}
+		x = 26
+		y = 3
+completion_reward = {
+	swap_ideas = {
+		remove_idea = SIW_Serbian_General_Trade_Union
+		add_idea = SIW_Serbian_General_Trade_Union1
+	}
+}
+	}
+	focus = {
+		id = Gender_equality
+		icon = GFX_goal_Gender_equality
+		cost = 5.00
+		prerequisite = {
+			focus = Promote_democracy_construction
+		}
+		x = 26
+		y = 4
+completion_reward = {
+	add_ideas = Affirmative_action
+}
+	}
+	focus = {
+		id = Consistent_principle_proportional_representation
+		icon = GFX_goal_Consistent_principle_proportional_representation
+		cost = 5.00
+		prerequisite = {
+			focus = Gender_equality
+		}
+		mutually_exclusive = {
+			focus = Shift_majority_representation
+		}
+		x = 25
+		y = 5
+completion_reward = {
+	add_political_power = 100
+	add_dynamic_modifier = {
+		modifier = Proportional_representation
+	}
+}
+	}
+	focus = {
+		id = Shift_majority_representation
+		icon = GFX_goal_Shift_majority_representation
+		cost = 5.00
+		prerequisite = {
+			focus = Gender_equality
+		}
+		mutually_exclusive = {
+			focus = Consistent_principle_proportional_representation
+		}
+		x = 27
+		y = 5
+		completion_reward = {
+			add_political_power = 100
+			add_dynamic_modifier = {
+				modifier = Majority_representation
+			}
+		}
+	}
+	focus = {
+		id = Watchman_Balkan_democracy
+		icon = GFX_goal_Watchman_Balkan_democracy
+		cost = 5.00
+		prerequisite = {
+			focus = Consistent_principle_proportional_representation
+			focus = Shift_majority_representation
+		}
+		x = 26
+		y = 6
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+	focus = {
+		id = Progressive_taxation
+		icon = GFX_goal_Progressive_taxation
+		cost = 5.00
+		prerequisite = {
+			focus = Support_Serbian_General_Trade_Union
+		}
+		x = 28
+		y = 3
+completion_reward = {
+	add_dynamic_modifier = {
+		modifier = Progressive_taxation1
+	}
+}
+	}
+	focus = {
+		id = Serbia_workers_peasants_one_heart
+		icon = GFX_goal_Serbia_workers_peasants_one_heart
+		cost = 5.00
+		prerequisite = {
+			focus = New_Democratic_Politics
+		}
+		x = 29
+		y = 2
+completion_reward = {
+	107 = {
+		add_building_construction = {
+			type = industrial_complex
+			level = 2
+			instant_build = yes
+			}
+	}
+}
+	}
+	focus = {
+		id = Declare_war_vampires_countryside
+		icon = GFX_Declare_war_vampires_countryside
+		cost = 5.00
+		prerequisite = {
+			focus = Serbia_workers_peasants_one_heart
+		}
+		x = 30
+		y = 3
+completion_reward = {
+	country_event = {id=SIW.11}
+}
+	}
+	focus = {
+		id = Crush_trust
+		icon = GFX_goal_Strike_trusts
+		cost = 5.00
+		prerequisite = {
+			focus = Progressive_taxation
+		}
+		prerequisite = {
+			focus = Declare_war_vampires_countryside
+		}
+		x = 29
+		y = 4
+		completion_reward = {
+			set_temp_variable = { masses_popularity = masses_popularity }
+			add_to_variable = { masses_popularity = 5 }
+			add_to_variable = { masses_popularity = masses_popularity } 
+		
+			set_temp_variable = { assets_popularity = assets_popularity }
+			add_to_variable = { assets_popularity = 3 }
+			add_to_variable = { assets_popularity = assets_popularity }      
+			
+					custom_effect_tooltip = Masses_T
+					custom_effect_tooltip = assets3_T
+		}
+	}
+	focus = {
+		id = Towards_collective_economy
+		icon = GFX_Towards_collective_economy
+		cost = 5.00
+		prerequisite = {
+			focus = New_Democratic_Politics
+		}
+		x = 31
+		y = 2
+completion_reward = {
+	add_ideas = SIW_Collective
+}
+	}
+	focus = {
+		id = Reforging_bourgeoi_progressiveness
+		icon = GFX_goal_Reforging_bourgeoi_progressiveness
+		cost = 5.00
+		prerequisite = {
+			focus = New_Democratic_Politics
+		}
+		x = 33
+		y = 2
+completion_reward = {
+	country_event = {id=SIW.14}
+}
+	}
+	focus = {
+		id = Class_cooperation_under_trade_unionism
+		icon = GFX_Class_cooperation_under_trade_unionism
+		cost = 5.00
+		prerequisite = {
+			focus = Towards_collective_economy
+		}
+		prerequisite = {
+			focus = Reforging_bourgeoi_progressiveness
+		}
+		x = 32
+		y = 3
+completion_reward = {
+	swap_ideas = {
+		remove_idea = SIW_Collective
+		add_idea = SIW_Collective1
+	}
+}
+	}
+	focus = {
+		id = Freedom_public_association
+		icon = GFX_Freedom_public_association
+		cost = 5.00
+		prerequisite = {
+			focus = Class_cooperation_under_trade_unionism
+		}
+		prerequisite = {
+			focus = Declare_war_vampires_countryside
+		}
+		x = 31
+		y = 4
+		completion_reward = {
+			add_ideas = Freedom_press
+			add_dynamic_modifier = {
+				modifier = Popular_political_parties
+			}
+			hidden_effect = {
+				set_temp_variable = { masses_popularity = masses_popularity }
+				add_to_variable = { masses_popularity = 5 }
+				add_to_variable = { masses_popularity = masses_popularity 
+			}
+			}
+			custom_effect_tooltip = Masses_T
+			}
+	}
+	focus = {
+		id = generation_stands
+		icon = GFX_generation_stands
+		cost = 5.00
+		prerequisite = {
+			focus = Crush_trust
+		}
+		prerequisite = {
+			focus = Freedom_public_association
+		}
+		x = 29
+		y = 5
+completion_reward = {
+	add_ideas = Equality
+}
+	}
+	focus = {
+		id = Procuratorates_under_supervision_masses
+		icon = GFX_Procuratorates_under_supervision_masses
+		cost = 5.00
+		prerequisite = {
+			focus = Reforging_bourgeoi_progressiveness
+		}
+		x = 34
+		y = 3
+completion_reward = {
+	country_event = {id=SIW.13}
+}
+	}
+	focus = {
+		id = Labor_marches
+		icon = GFX_Labor_marches
+		cost = 5.00
+		prerequisite = {
+			focus = Class_cooperation_under_trade_unionism
+		}
+		prerequisite = {
+			focus = Procuratorates_under_supervision_masses
+		}
+		x = 33
+		y = 4
+completion_reward = {
+		add_ideas = SIW_Collective2
+}
+	}
+	focus = {
+		id = full_fledged_economic_struggle
+		icon = GFX_full_fledged_economic_struggle
+		cost = 5.00
+		prerequisite = {
+			focus = Freedom_public_association
+		}
+		prerequisite = {
+			focus = Labor_marches
+		}
+		available = {
+			has_completed_focus = socialist_labor_bill
+		}
+		x = 33
+		y = 5
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SIW_Collective3
+				add_idea = SIW_Collective4
+			}
+		}
+
+	}
+	focus = {
+		id = Enlargement_Popular_Front
+		icon = GFX_Enlargement_Popular_Front
+		cost = 5.00
+		prerequisite = {
+			focus = Procuratorates_under_supervision_masses
+		}
+		x = 35
+		y = 4
+completion_reward = {
+	country_event = {id=SIW.15}
+}
+	}
+	focus = {
+		id = Chihua_Motherland_Army
+		icon = GFX_Chihua_Motherland_Army
+		cost = 5.00
+		prerequisite = {
+			focus = Enlargement_Popular_Front
+		}
+		x = 35
+		y = 5
+		completion_reward = {
+			custom_effect_tooltip=Chihua_Motherland_Army1
+		}
+	}
+	focus = {
+		id = Recapture_Kosovo1
+		icon = GFX_Recapture_Kosovo
+		cost = 5.00
+		prerequisite = {
+			focus = Yugoslavism
+		}
+		x = 35
+		y = 10
+		completion_reward = {
+			802={add_core_of = SIW}
+		}
+	}
+	focus = {
+		id = Down_Bulgaria
+		icon = GFX_Down_Bulgaria
+		cost = 5.00
+		prerequisite = {
+			focus = Recapture_Kosovo1
+		}
+		x = 35
+		y = 11
+completion_reward = {
+	create_wargoal = {
+		type = liberate_wargoal
+		target = BOJ
+	}
+}
+	}
+	focus = {
+		id = Negotiations_Hungary1
+		icon = GFX_Negotiations_Hungary
+		cost = 5.00
+		prerequisite = {
+			focus = Yugoslavism
+		}
+		x = 39
+		y = 10
+		completion_reward={
+			country_event={id=SIW.17}
+		}
+	}
+	focus = {
+		id = Integration_Serbs_north
+		icon = GFX_Integration_Serbs_north
+		cost = 5.00
+		prerequisite = {
+			focus = Negotiations_Hungary1
+		}
+		x = 39
+		y = 11
+completion_reward = {
+	764={add_claim_by = SIW}
+	82={add_claim_by = SIW}
+}
+	}
+	focus = {
+		id = Federal_Republic_Yugoslavia
+		icon = GFX_Federal_Republic_Yugoslavia
+		cost = 5.00
+		prerequisite = {
+			focus = Down_Bulgaria
+		}
+		prerequisite = {
+			focus = Integration_Serbs_north
+		}
+		mutually_exclusive = {
+			focus = United_States_Yugoslavia
+		}
+		x = 37
+		y = 12
+		completion_reward = {
+			set_cosmetic_tag = SIW_Federal
+		}
+	}
+	focus = {
+		id = Responding_economic_crisis
+		icon = GFX_London_stock_market_crash_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Rectify_banking_sector
+		}
+		available = {
+			has_idea = London_stock_market_crash
+		}
+		x = 47
+		y = 2
+completion_reward={
+	country_event = {id=SIW.18}
+}
+	}
+	focus = {
+		id = Restructuring_banks
+		icon = GFX_Restructuring_banks_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Responding_economic_crisis
+		}
+		x = 44
+		y = 4
+completion_reward = {
+	add_political_power = 100
+}
+	}
+	focus = {
+		id = Loans_farmers
+		icon = GFX_Loans_farmers_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Rectify_banking_sector
+		}
+		x = 45
+		y = 1
+completion_reward = {
+	hidden_effect = {
+		set_temp_variable = { masses_popularity = masses_popularity }
+		add_to_variable = { masses_popularity = 5 }
+		add_to_variable = { masses_popularity = masses_popularity 
+	}
+	}
+	custom_effect_tooltip = Masses_T
+}
+	}
+	focus = {
+		id = SIW01_land_reform
+		icon = GFX_SIW01_land_reform_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Loans_farmers
+		}
+		x = 45
+		y = 2
+		completion_reward = {
+			add_stability=0.1
+		}
+	}
+	focus = {
+		id = Integrating_smallholder_farmers
+		icon = GFX_Integrating_smallholder_farmers_goal
+		cost = 5.00
+		prerequisite = {
+			focus = SIW01_land_reform
+		}
+		x = 42
+		y = 3
+completion_reward = {
+	add_political_power = 100
+}
+	}
+	focus = {
+		id = Mechanized_industry
+		icon = GFX_Mechanized_industry_goal
+		cost = 5.00
+		prerequisite = {
+			focus = SIW01_land_reform
+		}
+		x = 45
+		y = 3
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = Unified_sales_organization
+		icon = GFX_Unified_sales_organization_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Integrating_smallholder_farmers
+		}
+		prerequisite = {
+			focus = Mechanized_industry
+		}
+		x = 42
+		y = 4
+completion_reward = {
+	swap_ideas = {
+		remove_idea = Weak_investments
+		add_idea = Underlying_investment
+	}
+}
+	}
+	focus = {
+		id = Rural_electrification
+		icon = GFX_Rural_electrification_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Unified_sales_organization
+		}
+		available = {
+			802={
+				is_controlled_by=SIW
+		}
+	}
+		x = 38
+		y = 5
+		completion_reward = {
+			802 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+							}
+					}
+			}
+	}
+	focus = {
+		id = Suspend_stock_market
+		icon = GFX_Suspend_stock_market_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Responding_economic_crisis
+		}
+		x = 47
+		y = 4
+		completion_reward={
+			country_event = {id=SIW.20}
+		}
+	}
+	focus = {
+		id = Severely_punish_speculators
+		icon = GFX_Severely_punish_speculators_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Suspend_stock_market
+		}
+		x = 47
+		y = 5
+completion_reward = {
+	country_event = {id=SIW.21}
+}
+	}
+	focus = {
+		id = Help_local_businesses
+		icon = GFX_Help_local_businesses_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Rectify_banking_sector
+		}
+		x = 49
+		y = 1
+completion_reward = {
+	add_dynamic_modifier = {
+		modifier = Helping_local_industries
+	}
+}
+	}
+	focus = {
+		id = Addressing_unemployed
+		icon = GFX_Addressing_unemployed_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Help_local_businesses
+		}
+		x = 49
+		y = 2
+completion_reward = {
+	country_event = {id=SIW.19}
+}
+	}
+	focus = {
+		id = Cash_work
+		icon = GFX_Cash_work_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Addressing_unemployed
+		}
+		available = {
+			has_completed_focus = Suspend_stock_market
+			has_idea = London_stock_market_crash
+		}
+		x = 49
+		y = 3
+completion_reward = {
+	swap_ideas = {
+		remove_idea = London_stock_market_crash
+		add_idea = London_stock_market_crash_1
+	}
+}
+	}
+	focus = {
+		id = Domestic_resource_development
+		icon = GFX_Domestic_resource_development_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Responding_economic_crisis
+		}
+		x = 50
+		y = 4
+completion_reward={
+	add_resource = {
+		type = steel
+		amount = 25
+		state = 108
+	}
+}
+	}
+	focus = {
+		id = Nationalized_foreign_enterprises
+		icon = GFX_Nationalized_foreign_enterprises_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Domestic_resource_development
+		}
+		x = 50
+		y = 5
+completion_reward = {
+	add_ideas = SIW_Nationalized_foreign_enterprises
+}
+	}
+	focus = {
+		id = Unemployment_benefits
+		icon = GFX_Unemployment_benefits_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Addressing_unemployed
+		}
+		available = {
+			has_completed_focus = Cash_work
+		}
+		x = 52
+		y = 3
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = London_stock_market_crash_1
+				add_idea = London_stock_market_crash_2
+			}
+		}
+	}
+	focus = {
+		id = The_economy_picking_up
+		icon = GFX_The_economy_picking_up_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Unemployment_benefits
+		}
+		available = {
+			has_completed_focus = Suspend_stock_market
+		}
+		prerequisite = {
+			focus = Cash_work
+		}
+		x = 52
+		y = 4
+completion_reward = {
+	custom_effect_tooltip = economy_picking_up1
+}
+	}
+	focus = {
+		id = State_Council_Modernized_Industry
+		icon = GFX_State_Council_Modernized_Industry_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Borrowing_broad
+		}
+		prerequisite = {
+			focus = Nationalized_foreign_enterprises
+		}
+		prerequisite = {
+			focus = Unified_sales_organization
+		}
+		prerequisite = {
+			focus = The_economy_picking_up
+		}
+		x = 47
+		y = 6
+completion_reward = {
+	swap_ideas = {
+		remove_idea = SIW_Nationalized_foreign_enterprises
+		add_idea = SIW_State_Council_Modernized_Industry
+	}
+}
+	}
+	focus = {
+		id = Modern_city
+		icon = GFX_Modern_city_goal
+		cost = 5.00
+		prerequisite = {
+			focus = State_Council_Modernized_Industry
+		}
+		x = 44
+		y = 7
+completion_reward = {
+	add_political_power = 100
+	add_stability = 0.1
+}
+	}
+	focus = {
+		id = Port_Kotor
+		icon = GFX_Port_Kotor_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Trade_foreign_countries
+		}
+		available = {
+			105={is_controlled_by = ROOT}
+		}
+		x = 48
+		y = 8
+		completion_reward = {
+			105 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+							}
+					}
+			}
+	}
+	focus = {
+		id = Renovated_Belgrade
+		icon = GFX_Renovated_Belgrade_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Modern_city
+		}
+		available = {
+			107={
+				is_controlled_by=SIW
+		}
+		}
+		x = 44
+		y = 8
+		completion_reward = {
+			107={
+				set_state_category = metropolis
+				add_extra_state_shared_building_slots = 3}
+		}
+	}
+	focus = {
+		id = Renovated_Podgorica
+		icon = GFX_Renovated_Podgorica_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Modern_city
+		}
+		available = {
+			105={
+				
+				is_controlled_by=SIW
+		}
+	}
+		x = 50
+		y = 8
+completion_reward = {
+	105={
+		set_state_category = large_town
+		add_extra_state_shared_building_slots = 3
+	}
+}
+	}
+	focus = {
+		id = State_railway_company
+		icon = GFX_State_railway_company_goal
+		cost = 5.00
+		prerequisite = {
+			focus = The_economy_picking_up
+		}
+		x = 52
+		y = 5
+completion_reward = {
+	add_ideas = SIW_State_railway_company
+}
+	}
+	focus = {
+		id = Refurbishment_old_railways
+		icon = GFX_Refurbishment_old_railways_goal
+		cost = 5.00
+		prerequisite = {
+			focus = State_railway_company
+		}
+		x = 50
+		y = 7
+		completion_reward = {
+			build_railway = {
+				level = 1
+				build_only_on_allied = yes
+				controller_priority = {
+					base = 1
+					modifier = {
+						tag = SIW
+						add = 2
+					}
+				}
+				fallback = yes
+				path = { 50 10 20 30 40 100 }
+				start_state = 107
+				target_state = 802
+			}
+		}
+
+	}
+	focus = {
+		id = Find_aircraft_suppliers
+		icon = GFX_goal_generic_territory_or_war
+		cost = 5.00
+		prerequisite = {
+			focus = Creation_Serbian_Air_Force
+		}
+		x = 59
+		y = 9
+		completion_reward={
+		show_ideas_tooltip = Air_Serbia
+	}
+}
+	focus = {
+		id = SIW01_Buy_fighter
+		icon = GFX_goal_generic_air_fighter
+		cost = 5.00
+		prerequisite = {
+			focus = Find_aircraft_suppliers
+		}
+		x = 58
+		y = 10
+		completion_reward={
+			add_equipment_to_stockpile = {
+			type = fighter_equipment
+			amount = 50
+		}}
+	}
+	focus = {
+		id = SIW01_Buy_bombers
+		icon = GFX_goal_generic_army_doctrines
+		cost = 5.00
+		prerequisite = {
+			focus = Find_aircraft_suppliers
+		}
+		x = 60
+		y = 10
+		completion_reward={
+			add_equipment_to_stockpile = {
+			type = tac_bomber_equipment
+			amount = 50
+		}}
+	}
+	focus = {
+		id = Focus_vocational_education
+		icon = GFX_Focus_vocational_education_goal
+		cost = 5.00
+		prerequisite = {
+			focus = The_economy_picking_up
+		}
+		available = {
+			has_completed_focus = Rural_literacy_programmes
+		}
+		x = 54
+		y = 5
+completion_reward = {
+	swap_ideas = {
+		remove_idea = elementary_school
+		add_idea = secondary_school
+	}
+}
+	}
+	focus = {
+		id = University_Belgrade
+		icon = GFX_University_Belgrade_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Focus_vocational_education
+		}
+		x = 54
+		y = 6
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = secondary_school
+				add_idea = university_level
+			}
+		}
+	}
+	focus = {
+		id = Valjevo_Airport
+		icon = GFX_goal_generic_fortify_city
+		cost = 5.00
+		prerequisite = {
+			focus = Creation_Serbian_Air_Force
+		}
+		x = 62
+		y = 9
+		completion_reward = {
+			108={add_building_construction = {
+			type = air_base
+			level = 1
+			instant_build = yes
+						}}
+			
+		}
+		
+	}
+	focus = {
+		id = Establishment_the_aviation_industry
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 5.00
+		prerequisite = {
+			focus = Valjevo_Airport
+		}
+		x = 62
+		y = 10
+		completion_reward = {
+			802={add_building_construction = {
+			type = air_base
+			level = 2
+			instant_build = yes
+						}}
+			
+		}
+	}
+	focus = {
+		id = Modern_radio
+		icon = GFX_Modern_radio_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Lessons_from_the_Balkan_wars
+		}
+		x = 64
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = electronics
+			}
+		}
+	}
+	focus = {
+		id = Development_military_industry
+		icon = GFX_Development_military_industry_goal
+		cost = 5.00
+		prerequisite = {
+			focus = The_economy_picking_up
+		}
+		x = 56
+		y = 5
+		completion_reward = {
+			802 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+							}
+					}
+			}
+	}
+	focus = {
+		id = Foreign_consultant
+		icon = GFX_Foreign_consultant_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Lessons_from_the_Balkan_wars
+		}
+		x = 68
+		y = 2
+completion_reward = {
+	    add_ideas = SIW_Foreign_consultant
+}
+	}
+	focus = {
+		id = Assemble_officers_Motherland
+		icon = GFX_Assemble_officers_Motherland_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Foreign_consultant
+		}
+		x = 66
+		y = 3
+ completion_reward = {
+	army_experience = 20
+	custom_effect_tooltip = Assemble_officers_Motherland1
+}
+	}
+	focus = {
+		id = Militia_training
+		icon = GFX_Militia_training_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Foreign_consultant
+		}
+		x = 70
+		y = 3
+		completion_reward = {
+			army_experience = 20 
+			add_manpower=2000
+		}
+	}
+	focus = {
+		id = Belgrade_Military_Academy
+		icon = GFX_Belgrade_Military_Academy_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Assemble_officers_Motherland
+		}
+		prerequisite = {
+			focus = Foreign_consultant
+		}
+		prerequisite = {
+			focus = Militia_training
+		}
+		x = 68
+		y = 4
+completion_reward = {
+	army_experience = 100 
+}
+	}
+	focus = {
+		id = Mountain_troops
+		icon = GFX_Mountain_troops_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Belgrade_Military_Academy
+		}
+		x = 65
+		y = 5
+		completion_reward = {
+			108={create_unit = {
+				division = "name = \"塞尔维亚山地旅\" division_template = \"山地部队\" start_experience_factor = 0.8"
+				owner = SIW
+				prioritize_location = 3922}}
+				
+			
+		}
+	}
+	focus = {
+		id = New_artillery
+		icon = GFX_New_artillery_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Belgrade_Military_Academy
+		}
+		x = 68
+		y = 6
+completion_reward = {
+	add_tech_bonus = {
+		bonus = 1
+		uses = 1
+		category = artillery
+	}
+}
+	}
+	focus = {
+		id = Dock_construction
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5.00
+		prerequisite = {
+			focus = From_Kotor
+		}
+		x = 70
+		y = 9
+		completion_reward = {
+			105 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+							}
+					}
+			}
+	}
+	focus = {
+		id = Funding_Navy_Department
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 5.00
+		prerequisite = {
+			focus = Dock_construction
+		}
+		x = 70
+		y = 10
+completion_reward = {
+	add_tech_bonus = {
+		bonus = 1
+		uses = 1
+		category = naval_equipment
+	}
+}
+	}
+	focus = {
+		id = Update_tactical_thinking
+		icon = GFX_Update_tactical_thinking_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Belgrade_Military_Academy
+		}
+		x = 71
+		y = 5
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = Mechanized_warfare
+		icon = GFX_Mechanized_warfare_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Update_tactical_thinking
+		}
+		x = 71
+		y = 6
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 1
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = New_trucks
+		icon = GFX_New_trucks_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Lessons_from_the_Balkan_wars
+		}
+		x = 72
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+	}
+	focus = {
+		id = Development_light_ships
+		icon = GFX_goal_generic_navy_submarine
+		cost = 5.00
+		prerequisite = {
+			focus = From_Kotor
+		}
+		x = 73
+		y = 9
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cl_tech
+			}
+		}
+	}
+	focus = {
+		id = Procurement_heavy_ships
+		icon = GFX_goal_generic_navy_carrier
+		cost = 5.00
+		prerequisite = {
+			focus = From_Kotor
+		}
+		x = 77
+		y = 9
+		completion_reward = {
+			add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = ca_tech
+		}
+		}
+		
+	}
+	focus = {
+		id = Naval_exercises
+		icon = GFX_goal_continuous_naval_production
+		cost = 5.00
+		prerequisite = {
+			focus = Development_light_ships
+			focus = Procurement_heavy_ships
+		}
+		x = 75
+		y = 10
+completion_reward = {
+	navy_experience = 50
+}
+	}
+	focus = {
+		id = Sail_on_Adriatic_Sea
+		icon = GFX_goal_generic_navy_battleship
+		cost = 5.00
+		prerequisite = {
+			focus = Funding_Navy_Department
+			focus = Naval_exercises
+		}
+		x = 73
+		y = 11
+		completion_reward = {
+			navy_experience = 100
+		}
+	}
+	focus = {
+		id = socialist_labor_bill
+		icon = GFX_socialist_labor_bill
+		cost = 5.00
+		prerequisite = {
+			focus = Crush_trust
+		}
+		prerequisite = {
+			focus = Freedom_public_association
+		}
+		prerequisite = {
+			focus = Labor_marches
+		}
+		x = 31
+		y = 5
+completion_reward = {
+	swap_ideas = {
+		remove_idea = SIW_Collective1
+		add_idea = SIW_Collective3
+	}
+	add_idea = Deflection_workers
+}
+	}
+	focus = {
+		id = Evolution_revolution
+		icon = GFX_Evolution_revolution
+		cost = 5.00
+		prerequisite = {
+			focus = generation_stands
+		}
+		prerequisite = {
+			focus = socialist_labor_bill
+		}
+		prerequisite = {
+			focus = full_fledged_economic_struggle
+		}
+		x = 31
+		y = 6
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+	focus = {
+		id = Serbia_forward
+		icon = GFX_goal_Serbia_forward
+		cost = 5.00
+		prerequisite = {
+			focus = Watchman_Balkan_democracy
+		}
+		prerequisite = {
+			focus = Evolution_revolution
+			focus = Serbia_the_land_free
+		}
+		available={
+			has_global_flag=AOX_DIE
+		}
+		x = 26
+		y = 7
+completion_reward = {
+	country_event = {id=SIW.5}
+}
+	}
+	focus = {
+		id = Advance_Bosnia
+		icon = GFX_Advance_Bosnia
+		cost = 5.00
+		prerequisite = {
+			focus = Greater_Serbia
+		}
+		x = 18
+		y = 10
+completion_reward = {
+	104={
+		add_claim_by = SIW
+	}
+	
+}
+	}
+	focus = {
+		id = Recapture_Kosovo
+		icon = GFX_Recapture_Kosovo
+		cost = 5.00
+		prerequisite = {
+			focus = Greater_Serbia
+		}
+		x = 22
+		y = 10
+completion_reward = {
+	802={add_core_of = SIW}
+}
+	}
+	focus = {
+		id = Ask_Vojvodina
+		icon = GFX_Ask_Vojvodina
+		cost = 5.00
+		prerequisite = {
+			focus = Greater_Serbia
+		}
+		x = 26
+		y = 10
+completion_reward = {
+	45={add_claim_by=SIW}
+}
+	}
+	focus = {
+		id = Macedoni_returns
+		icon = GFX_Macedoni_returns
+		cost = 5.00
+		prerequisite = {
+			focus = Recapture_Kosovo
+		}
+		x = 22
+		y = 11
+		completion_reward = {
+			106={add_claim_by = SIW}
+		}
+	}
+	focus = {
+		id = Condemn_Dalmatia
+		icon = GFX_Condemn_Dalmatia
+		cost = 5.00
+		prerequisite = {
+			focus = Advance_Bosnia
+		}
+		x = 18
+		y = 11
+completion_reward = {
+	103={add_claim_by = SIW}
+}
+	}
+	focus = {
+		id = Negotiations_Hungary
+		icon = GFX_Negotiations_Hungary
+		cost = 5.00
+		prerequisite = {
+			focus = Ask_Vojvodina
+		}
+		x = 26
+		y = 11
+		completion_reward={
+			country_event={id=SIW.17}
+		}
+	}
+	focus = {
+		id = Great_Serbian_recollections
+		icon = GFX_Great_Serbian_recollections
+		cost = 5.00
+		prerequisite = {
+			focus = Condemn_Dalmatia
+			focus = Macedoni_returns
+			focus = Negotiations_Hungary
+		}
+		x = 22
+		y = 12
+completion_reward = {
+	country_event = {id=SIW.16}
+}
+	}
+	focus = {
+		id = Rectify_Macedonia
+		icon = GFX_Rectify_Macedonia
+		cost = 5.00
+		prerequisite = {
+			focus = Autonomous_Community_Slovenia
+			focus = Bulgarian_Autonomous_Community
+			focus = Croatian_Autonomous_Community
+		}
+		x = 24
+		y = 15
+		completion_reward = {
+			106={add_core_of= SIW}
+		}
+	}
+	focus = {
+		id = Brave_people_great_country
+		icon = GFX_United_States_Yugoslavia
+		cost = 5.00
+		prerequisite = {
+			focus = March_Rijeka
+		}
+		prerequisite = {
+			focus = Rectify_Macedonia
+		}
+		x = 22
+		y = 16
+completion_reward={
+	add_ideas= SIW_Brave_people_great_country
+	}
+	}
+	focus = {
+		id = Trade_foreign_countries
+		icon = GFX_Trade_foreign_countries_goal
+		cost = 5.00
+		prerequisite = {
+			focus = State_Council_Modernized_Industry
+		}
+		x = 47
+		y = 7
+completion_reward = {
+	create_import = {
+		resource = steel
+		amount = 10
+		exporter = WWS
+	}
+	create_import = {
+		resource = tungsten
+		amount = 10
+		exporter = ENL
+	}
+	create_import = {
+		resource = aluminium
+		amount = 10
+		exporter = ITE
+	}
+	
+}
+	}
+	focus = {
+		id = A_new_township
+		icon = GFX_A_new_township_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Rural_electrification
+		}
+		x = 38
+		y = 6
+		completion_reward = {
+			802={add_extra_state_shared_building_slots = 2}
+		}
+	}
+	focus = {
+		id = Subsidize_farmers
+		icon = GFX_Subsidize_farmers_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Unified_sales_organization
+		}
+		x = 42
+		y = 5
+completion_reward = {
+	add_stability = 0.05
+	add_political_power = 50
+}
+	}
+	focus = {
+		id = Regularization_medical_care
+		icon = GFX_Regularization_medical_care_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Subsidize_farmers
+		}
+		x = 40
+		y = 6
+completion_reward={
+	swap_ideas = {
+		remove_idea = Underlying_investment
+		add_idea = Medium_investment
+	}
+}
+	}
+	focus = {
+		id = Popularize_tractors
+		icon = GFX_Popularize_tractors_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Subsidize_farmers
+		}
+		x = 44
+		y = 6
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = Rural_literacy_programmes
+		icon = GFX_Rural_literacy_programmes_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Subsidize_farmers
+		}
+		x = 42
+		y = 6
+completion_reward = {
+	swap_ideas = {
+		remove_idea = completely_illiterate
+		add_idea = elementary_school
+	}
+}
+	}
+	focus = {
+		id = Purchase_merchant_ships
+		icon = GFX_Purchase_merchant_ships_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Trade_foreign_countries
+		}
+		prerequisite = {
+			focus = Port_Kotor
+		}
+		x = 47
+		y = 9
+completion_reward={
+	add_equipment_to_stockpile = {
+    type = convoy
+    amount = 50
+}}
+	}
+	focus = {
+		id = Connecting_big_cities
+		icon = GFX_Connecting_big_cities_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Purchase_merchant_ships
+		}
+		prerequisite = {
+			focus = Renovated_Belgrade
+		}
+		prerequisite = {
+			focus = Renovated_Podgorica
+		}
+		prerequisite = {
+			focus = Refurbishment_old_railways
+		}
+		x = 47
+		y = 10
+completion_reward = {
+	build_railway = {
+		level = 3
+		build_only_on_allied = yes
+		controller_priority = {
+			base = 1
+			modifier = {
+				tag = SIW
+				add = 1
+			}
+		}
+		fallback = yes
+		path = { 50 10 20 30 40 100 }
+		start_state = 107
+		target_state = 105
+	}
+	
+}
+	}
+	focus = {
+		id = Zastava_Company
+		icon = GFX_Zastava_Company_goal
+		cost = 5.00
+		prerequisite = {
+			focus = Development_military_industry
+		}
+		x = 56
+		y = 7
+		completion_reward = {
+			show_ideas_tooltip = Zastava
+			}
+	}
+	focus = {
+		id = Opening_aviation_schools
+		icon = GFX_goal_generic_air_fighter
+		cost = 5.00
+		prerequisite = {
+			focus = Creation_Serbian_Air_Force
+		}
+		x = 66
+		y = 9
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = Strive_local_air_superiority
+		icon = GFX_focus_hol_war_on_pacifism
+		cost = 5.00
+		prerequisite = {
+			focus = Opening_aviation_schools
+		}
+		x = 66
+		y = 10
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+	focus = {
+		id = For_Motherland_freedom_and_honor
+		icon = GFX_focus_generic_armored_air_support
+		cost = 5.00
+		prerequisite = {
+			focus = Establishment_the_aviation_industry
+		}
+		prerequisite = {
+			focus = Strive_local_air_superiority
+		}
+		x = 64
+		y = 11
+completion_reward = {
+	air_experience = 100
+}
+	}
+	focus = {
+		id = Liberation_Bosnia
+		icon = GFX_Advance_Bosnia
+		cost = 5.00
+		prerequisite = {
+			focus = Yugoslavism
+		}
+		x = 31
+		y = 10
+completion_reward = {
+	104={add_claim_by = SIW}
+	804={add_claim_by = SIW}
+}
+	}
+	focus = {
+		id = March_northwest
+		icon = GFX_Condemn_Dalmatia
+		cost = 5.00
+		prerequisite = {
+			focus = Liberation_Bosnia
+		}
+		x = 31
+		y = 11
+completion_reward = {
+	        736={add_claim_by = SIW}
+			853={add_claim_by = SIW}
+			852={add_claim_by = SIW}
+			109={add_claim_by = SIW}
+			163={add_claim_by = SIW}
+			103={add_claim_by = SIW}
+			44={add_claim_by = SIW}
+			805={add_claim_by = SIW}
+}
+	}
+	focus = {
+		id = United_States_Yugoslavia
+		icon = GFX_United_States_Yugoslavia
+		cost = 5.00
+		prerequisite = {
+			focus = March_northwest
+		}
+		prerequisite = {
+			focus = Down_Bulgaria
+		}
+		mutually_exclusive = {
+			focus = Federal_Republic_Yugoslavia
+		}
+		x = 33
+		y = 12
+completion_reward = {
+	set_cosmetic_tag = SIW_United_Yugoslavia
+}
+	}
+}

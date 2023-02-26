@@ -1,0 +1,145 @@
+gercon_clamp_vars = {
+	var:gercon_nat = {
+        clamp_variable = {
+            var = aus_support
+            min = 0
+            max = 100
+        }
+        clamp_variable = {
+            var = pre_support
+            min = 0
+            max = 100
+        }
+        clamp_variable = {
+            var = ger_support
+            min = 0
+            max = 100
+        }
+        clamp_variable = {
+            var = ger_power_balance_value_var
+            min = 0
+            max = 200
+        }
+    }
+}
+gercon_upd_pbv_var = {
+    set_variable = {
+        AGC.aus_support = 20
+    }
+    set_variable = {
+        AGC.pre_support = 20
+    }
+    every_country = {
+        limit = {
+            OR = {
+                tag = LSB
+                tag = DHD
+                tag = DON
+                tag = DOF
+                tag = DOB
+                tag = DOR
+                tag = BXM
+                tag = DOL
+                tag = DOH
+                tag = DOA
+                tag = DOM
+                tag = DOS
+            }
+        }
+		if = {
+			limit = {
+           		check_variable = { aus_support > pre_support }
+			}
+			add_to_variable = {
+				var = AGC.aus_support
+				value = 5
+			}
+		}
+		if = {
+			limit = {
+           		check_variable = { aus_support < pre_support }
+			}
+			add_to_variable = {
+				var = AGC.pre_support
+				value = 5
+			}
+		}
+    }
+	if = {
+		limit = {
+       		check_variable = { DOR.aus_support > DOR.pre_support }	
+    	}
+	    add_to_variable = {
+			var = AGC.aus_support
+			value = 10
+		}
+	}
+	if = {
+		limit = {
+      		check_variable = { DOR.aus_support < DOR.pre_support }
+		}
+		add_to_variable = {
+			var = AGC.pre_support
+			value = 10
+		}
+	}
+	if = {
+		limit = {
+       		check_variable = { DOH.aus_support > DOH.pre_support }	
+    	}
+	    add_to_variable = {
+			var = AGC.aus_support
+			value = 5
+		}
+	}
+	if = {
+		limit = {
+      		check_variable = { DOH.aus_support < DOH.pre_support }
+		}
+		add_to_variable = {
+			var = AGC.pre_support
+			value = 5
+		}
+	}
+	if = {
+		limit = {
+       		check_variable = { DOS.aus_support > DOS.pre_support }	
+    	}
+	    add_to_variable = {
+			var = AGC.aus_support
+			value = 5
+		}
+	}
+	if = {
+		limit = {
+      		check_variable = { DOS.aus_support < DOS.pre_support }
+		}
+		add_to_variable = {
+			var = AGC.pre_support
+			value = 5
+		}
+	}
+	set_variable = {
+		ger_power_balance_value_var = 100
+	}
+	var:gercon_nat = {
+        clamp_variable = {
+            var = aus_support
+            min = 0
+            max = 100
+        }
+        clamp_variable = {
+            var = pre_support
+            min = 0
+            max = 100
+        }
+		add_to_variable = {
+			var = ROOT.ger_power_balance_value_var 
+			value = aus_support
+		}
+		subtract_from_variable = {
+			var = ROOT.ger_power_balance_value_var 
+			value = pre_support
+		}
+	}
+}

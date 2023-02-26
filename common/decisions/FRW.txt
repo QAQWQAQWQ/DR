@@ -1,0 +1,405 @@
+FRW_Destructive_movement = {
+	Destructive_movemen = {
+	icon = generic_ignite_civil_war
+	visible = {
+	}
+	available = {
+
+	}
+	days_re_enable = 30
+	days_remove = 60
+	cost = 35
+	allowed = {
+		tag = FRW
+	}
+	target_trigger = {
+		FROM = {
+			original_tag = WWS
+		}
+	}
+	complete_effect = { 
+		FROM = { 
+			 random_owned_state = { 
+				damage_building = {
+					type = infrastructure
+					damage = 2
+				}
+			 } 
+		 }
+		}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+	
+}
+Destructive_railway = {
+	icon = generic_ignite_civil_war
+	visible = {
+	}
+	
+	available = {
+
+	}
+	days_re_enable = 30
+	days_remove = 60
+	cost = 35
+	allowed = {
+		tag = FRW
+	}
+	target_trigger = {
+		FROM = {
+			original_tag = WWS
+		}
+	}
+	complete_effect = { 
+		FROM = { 
+			 random_owned_state = { 
+				damage_building = {
+					type = rail_way
+					damage = 2
+				}
+			 } 
+		 }
+		}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+	
+}
+Destructive_arms_factory = {
+	icon = generic_ignite_civil_war
+	visible = {
+	}
+	
+	available = {
+
+	}
+	days_re_enable = 30
+	days_remove = 60
+	cost = 35
+	allowed = {
+		tag = FRW
+	}
+	target_trigger = {
+		FROM = {
+			original_tag = WWS
+		}
+	}
+	complete_effect = { 
+		FROM = { 
+			 random_owned_state = { 
+				damage_building = {
+					type = arms_factory
+					damage = 2
+				}
+			 } 
+		 }
+		}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+	
+}
+Destructive_industrial_complex = {
+	icon = generic_ignite_civil_war
+	visible = {
+	}
+	
+	available = {
+
+	}
+	days_re_enable = 30
+	days_remove = 60
+	cost = 35
+	allowed = {
+		tag = FRW
+	}
+	target_trigger = {
+		FROM = {
+			original_tag = WWS
+		}
+	}
+	complete_effect = { 
+		FROM = { 
+			 random_owned_state = { 
+				damage_building = {
+					type = industrial_complex
+					damage = 2
+				}
+			 } 
+		 }
+		}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+	
+}
+}
+FRW_Export_the_revolution = {
+
+	Export_the_revolution_XYL = {
+	icon = generic_construction
+	visible = {
+	}
+	available = {
+		has_completed_focus = FRW_Intervention_Magyarorszag
+		country_exists = XYL
+	}
+	days_re_enable = 30
+	days_remove = 60
+	cost = 35
+	allowed = {
+		tag = FRW
+	}
+	target_trigger = {
+		FROM = {
+			original_tag = XYL
+		}
+	}
+	complete_effect = { 
+		FROM = { 
+			 random_owned_state = { 
+				add_building_construction = { 
+					type = arms_factory 
+					level = 3 
+					instant_build = yes 
+				}
+				add_building_construction = { 
+					type = industrial_complex
+					level = 3 
+					instant_build = yes 
+				}
+			 } 
+		 }
+		}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+	
+}
+Export_the_revolution_ITC = {
+	icon = generic_construction
+	visible = {
+	}
+	available = {
+		has_completed_focus = FRW_Italy
+		country_exists = ITC
+	}
+	days_re_enable = 30
+	days_remove = 60
+	cost = 35
+	allowed = {
+		tag = FRW
+	}
+	target_trigger = {
+		FROM = {
+			original_tag = ITC
+		}
+	}
+	complete_effect = { 
+		FROM = { 
+			 random_owned_state = { 
+				add_building_construction = { 
+					type = arms_factory 
+					level = 3 
+					instant_build = yes 
+				}
+				add_building_construction = { 
+					type = industrial_complex
+					level = 3 
+					instant_build = yes 
+				}
+			 } 
+		 }
+		}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+}
+Export_the_revolution_KPD = {
+	icon = generic_construction
+	visible = {
+	}
+	available = {
+		has_completed_focus = FRW_Germany
+		country_exists = KPD
+	}
+	days_re_enable = 30
+	days_remove = 60
+	cost = 35
+	allowed = {
+		tag = FRW
+	}
+	target_trigger = {
+		FROM = {
+			original_tag = KPD
+		}
+	}
+	complete_effect = { 
+		FROM = { 
+			 random_owned_state = { 
+				add_building_construction = { 
+					type = arms_factory 
+					level = 3 
+					instant_build = yes 
+				}
+				add_building_construction = { 
+					type = industrial_complex
+					level = 3 
+					instant_build = yes 
+				}
+			 } 
+		 }
+		}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+}
+Export_the_revolution_CPC = {
+	icon = generic_construction
+	visible = {
+	}
+	available = {
+		has_completed_focus = FRW_Asia
+		country_exists = CPC
+	}
+	days_re_enable = 30
+	days_remove = 60
+	cost = 35
+	allowed = {
+		tag = FRW
+	}
+	target_trigger = {
+		FROM = {
+			original_tag = CPC
+		}
+	}
+	complete_effect = { 
+		FROM = { 
+			 random_owned_state = { 
+				add_building_construction = { 
+					type = arms_factory 
+					level = 3 
+					instant_build = yes 
+				}
+				add_building_construction = { 
+					type = industrial_complex
+					level = 3 
+					instant_build = yes 
+				}
+			 } 
+		 }
+		}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+}
+Export_the_revolution_JPC = {
+	icon = generic_construction
+	visible = {
+	}
+	available = {
+		has_completed_focus = FRW_Asia
+		country_exists = JPC
+	}
+	days_re_enable = 30
+	days_remove = 60
+	cost = 35
+	allowed = {
+		tag = FRW
+	}
+	target_trigger = {
+		FROM = {
+			original_tag = JPC
+		}
+	}
+	complete_effect = { 
+		FROM = { 
+			 random_owned_state = { 
+				add_building_construction = { 
+					type = arms_factory 
+					level = 3 
+					instant_build = yes 
+				}
+				add_building_construction = { 
+					type = industrial_complex
+					level = 3 
+					instant_build = yes 
+				}
+			 } 
+		 }
+		}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+}
+Export_the_revolution_SUE = {
+	icon = generic_construction
+	visible = {
+	}
+	available = {
+		has_completed_focus = FRW_Intervention_Russia
+		country_exists = SUE
+	}
+	days_re_enable = 30
+	days_remove = 60
+	cost = 35
+	allowed = {
+		tag = FRW
+	}
+	target_trigger = {
+		FROM = {
+			original_tag = SUE
+		}
+	}
+	complete_effect = { 
+		FROM = { 
+			 random_owned_state = { 
+				add_building_construction = { 
+					type = arms_factory 
+					level = 3 
+					instant_build = yes 
+				}
+				add_building_construction = { 
+					type = industrial_complex
+					level = 3 
+					instant_build = yes 
+				}
+			 } 
+		 }
+		}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+}
+}

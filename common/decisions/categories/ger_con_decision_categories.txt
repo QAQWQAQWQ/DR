@@ -1,0 +1,52 @@
+ger_con_decisions = {
+	scripted_gui = ger_con_decisons_ui
+	priority = 9
+	icon = generic_research
+	visible = {
+		check_variable = { global.ger_con_end = 0 }
+		OR = {
+			original_tag = AOX
+			original_tag = WWS
+			original_tag = AGC
+			original_tag = LSB
+			original_tag = DHD
+			original_tag = DON
+			original_tag = DOF
+			original_tag = DOB
+			original_tag = DOR
+			original_tag = BXM
+			original_tag = DOL
+			original_tag = DOH
+			original_tag = DOA
+			original_tag = DOM
+			original_tag = DOS
+		}
+	} 
+	visible_when_empty = yes
+}
+ger_con_bop = {
+	priority = 10
+	icon = generic_research
+	visible = {
+		OR = {
+			original_tag = AOX
+			original_tag = WWS
+			original_tag = AGC
+			original_tag = LSB
+			original_tag = DHD
+			original_tag = DON
+			original_tag = DOF
+			original_tag = DOB
+			original_tag = DOR
+			original_tag = BXM
+			original_tag = DOL
+			original_tag = DOH
+			original_tag = DOA
+			original_tag = DOM
+			original_tag = DOS
+		}
+	} 
+	visible_when_empty = no
+}
+
+

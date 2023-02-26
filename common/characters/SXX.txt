@@ -1,0 +1,32 @@
+characters={
+	SXX_FengYuXiang={
+		name=SXX_FengYuXiang
+		portraits={
+			civilian={
+				large="gfx/leaders/SXX/portrait_FengYuXiang.tga"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SXX_PangBingXun={
+		name=SXX_PangBingXun
+		portraits={
+			civilian={
+				large="gfx/leaders/SXX/portrait_PangBingXun.tga"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}	
+	}

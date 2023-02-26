@@ -1,0 +1,14 @@
+scripted_gui = {
+
+	DR_Shanghai_worker_ui = {
+		context_type = decision_category
+		window_name = "DR_Shanghai_worker_window"
+
+		properties={
+			Shanghai_MAP = {
+                image = "[GetShanghaiworker]"
+                frame = Shanghai_MAP_frame
+		}
+	}
+}
+}

@@ -1,0 +1,27 @@
+﻿###########################
+# FER Events
+###########################
+
+add_namespace = FER
+news_event = {
+	id = FER.1
+	title = FER.1.t
+	desc = FER.1.d
+	picture = GFX_Far_Eastern_Republics
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = FER.1.a
+		hidden_effect = {
+			FER= { 
+			transfer_state = 408
+			add_state_core = 408
+			transfer_state = 409
+			add_state_core = 409
+			transfer_state = 657
+			add_state_core = 657
+	    }
+		}
+	}
+	}
+	

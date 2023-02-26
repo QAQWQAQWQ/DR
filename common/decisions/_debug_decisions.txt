@@ -1,0 +1,108 @@
+debug_decisions = {
+
+	election_debug1 = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_politics = {
+				ruling_party = democratic
+			}
+		}
+	}
+	election_debug2 = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_politics = {
+				ruling_party = authoritarian
+			}
+		}
+	}
+	election_debug3 = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_politics = {
+				ruling_party = social_democrat
+			}
+		}
+	}
+	election_debug4 = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_politics = {
+				ruling_party = Reform_socialism
+			}
+		}
+	}
+	election_debug5 = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_politics = {
+				ruling_party = national_populist
+			}
+		}
+	}
+}

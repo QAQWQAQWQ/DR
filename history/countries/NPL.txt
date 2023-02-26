@@ -1,0 +1,74 @@
+﻿capital = 459
+
+oob = "NPL_1920"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	fuel_silos = 1
+}
+
+recruit_character = NPL_Napoleon_IV
+recruit_character = NPL_Petain
+recruit_character = NPL_FuXi
+recruit_character = NPL_Maxime_Weygand
+
+
+
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+
+		#electronics
+		
+		
+		
+		
+		
+
+		#industry
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+set_politics = {
+	ruling_party = monarchy
+	last_election = "1918.11.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+create_faction = Bonaparte_dynasty
+	add_to_faction = RDN
+    add_to_faction = HEL
+    puppet = HEL
+	puppet = RDN
+add_ideas={
+NPL_Declining_trend
+}
+set_popularities = {
+	democratic = 5
+	national_populist = 1
+	monarchy = 89
+	communism = 5
+}

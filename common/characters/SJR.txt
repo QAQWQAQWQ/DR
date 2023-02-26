@@ -1,0 +1,160 @@
+characters={
+	SJR_Song_JiaoRen={
+		name=SJR_Song_JiaoRen
+		portraits={
+			civilian={
+				large="gfx/leaders/SJR/portrait_Song_JiaoRen.tga"
+			}
+		}
+		country_leader={
+			ideology=social_democrat_type
+			desc=SJR_Song_JiaoRen_DESC
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SJR_LiaoZhongKai={
+		name=SJR_LiaoZhongKai
+		portraits={
+			civilian={
+				large="gfx/leaders/SJR/portrait_LiaoZhongKai.tga"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SJR_ZhangZhiZhong={
+		name=SJR_ZhangZhiZhong
+		portraits={
+			army={
+				large="gfx/leaders/SJR/portrait_ZhangZhiZhong.tga"
+				small="gfx/interface/ideas/portrait_ZhangZhiZhong.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	SJR_JiangBaiLi={
+		name=SJR_JiangBaiLi
+		portraits={
+			army={
+				small="GFX_idea_JiangBaiLi"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = SJR_JiangBaiLi
+			ledger = army
+			allowed = {
+				original_tag = SJR
+			}
+			traits = {
+				military_theorist
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	SJR_SunKe={
+		name=SJR_SunKe
+		portraits={
+			army={
+				small="GFX_idea_SunKe"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SJR_SunKe
+			allowed = {
+				original_tag = SJR
+			}
+			traits = {
+				resolute_social_democrat
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SJR_SongQingLing={
+		name=SJR_SongQingLing
+		portraits={
+			army={
+				small="GFX_idea_SongQingLing"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SJR_SongQingLing
+			allowed = {
+				original_tag = SJR
+			}
+			traits = {
+				first_lady
+				womens_rights_activist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	SJR_ZhangXiaoHuang={
+		name=SJR_ZhangXiaoHuang
+		portraits={
+			army={
+				small="GFX_idea_ZhangXiaoHuang"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SJR_ZhangXiaoHuang
+			allowed = {
+				original_tag = SJR
+			}
+			traits = {
+				financial_expert
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SJR_TanYouRen={
+		name=SJR_TanYouRen
+		portraits={
+			army={
+				small="GFX_idea_TanYouRen"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SJR_TanYouRen
+			allowed = {
+				original_tag = SJR
+			}
+			traits = {
+				smooth_talking_charmer
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 0.500
+			}
+		}
+	}
+}

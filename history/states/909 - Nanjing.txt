@@ -1,0 +1,30 @@
+
+state = {
+	id = 909
+	name = "STATE_909"
+	manpower = 1834851
+	
+	state_category = large_city
+
+	history = {
+		owner = ZHX
+            buildings = {
+			infrastructure = 3 
+			11913 = {
+				bunker = 1
+			}
+           }
+		victory_points = {
+			11913 20 
+		}
+		victory_points = {
+			10076 3
+		}
+	}
+
+	provinces = {
+		11913 996 11982 7120 1089 10076 4091 10034 12052 
+	}
+
+	local_supplies = 6.0 
+}

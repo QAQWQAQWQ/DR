@@ -1,0 +1,72 @@
+﻿capital = 229
+
+oob = "SUE_1920"
+
+recruit_character = SUE_Lenin
+recruit_character = SUE_Yakov_Sverdlov
+recruit_character = SUE_Stalin
+recruit_character = SUE_Trotsky
+recruit_character = SUE_Frunze
+recruit_character = SUE_Zhiloba
+recruit_character = SUE_Yegorov
+recruit_character = SUE_Budyonny
+recruit_character = SUE_Blucher
+recruit_character = SUE_Voroshilov
+recruit_character = SUE_Muravyov
+recruit_character = SUE_Iona_Emmanuilovich_Yakir
+recruit_character = SUE_Vasily_Ivanovich_Chapayev
+recruit_character = SUE_Sergey_Kamenev
+recruit_character = SUE_Ijeronim_Ubolevich
+recruit_character = SUE_Ivan_Belov
+	set_political_power = 200
+	add_command_power = 10
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+
+		#electronics
+		
+		
+		
+		
+		
+
+		#industry
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+set_politics = {
+	ruling_party = Bolshevik
+	last_election = "1919.11.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+country_event = { days = 1 id = SUE.1 } 
+add_ideas= {
+#law
+	extensive_conscription
+	low_industrialization 
+    secondary_school
+    Staterun_economy
+}
+set_popularities = {
+	Bolshevik = 100
+}

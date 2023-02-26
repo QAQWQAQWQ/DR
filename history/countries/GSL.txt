@@ -1,0 +1,74 @@
+﻿capital = 912
+
+oob = "GSL_1920"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	fuel_silos = 1
+}
+
+
+recruit_character = FTX_YanYuTing
+recruit_character = FTX_Zhang_Zongchang
+recruit_character = FTX_Chupufu
+recruit_character = FTX_Nieka
+recruit_character = FTX_XuYuanQuan
+recruit_character = FTX_BiSuCheng
+recruit_character = FTX_Chenguorui
+recruit_character = FTX_HeFu
+recruit_character = FTX_Mark_leniko
+recruit_character = FTX_Kostrov
+recruit_character = FTX_YangYuTing2
+
+
+
+
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+
+		#electronics
+		
+		
+		
+		
+		
+
+		#industry
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+set_politics = {
+	ruling_party = national_populist
+	last_election = "1918.11.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+set_popularities = {
+	national_populist = 100
+}
+add_ideas={
+#law
+}

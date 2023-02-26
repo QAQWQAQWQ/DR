@@ -1,0 +1,16 @@
+defined_text = {
+	name = NUM_OF_grain
+	text = {
+		trigger = {
+			check_variable = {resource_imported@grain > 0 }
+			check_variable = {resource@grain > resource_imported@grain }
+		}
+		localization_key = "[?resource@grain|0Y]"
+	}
+	text = {
+		trigger = {
+			always=yes
+		}
+		localization_key = "[?resource@grain|0+]"
+	}
+}

@@ -1,0 +1,675 @@
+SHW_Imperial_Russian_Army = {
+	SHW_Education_army = {
+	  icon = generic_ignite_civil_war
+	  visible = {
+	  }
+	  
+	  available = {
+	  
+	  }
+	  days_remove = 50
+	  cost = 35
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  complete_effect = {
+			set_temp_variable = { SHW_Loyalty = SHW_Loyalty }
+			add_to_variable = { SHW_Loyalty = 5 }
+		  }
+		  }
+	SHW_Curb_liberals = {
+	  icon = generic_ignite_civil_war
+	  visible = {
+	  }
+	  
+	  available = {
+	  
+	  }
+	  days_remove = 55
+	  cost = 35
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  complete_effect = {
+			set_temp_variable = { SHW_Loyalty = SHW_Loyalty }
+			add_to_variable = { SHW_Loyalty = 5 }
+		  }
+		  }
+	SHW_Promotion_loyal_officers = {
+	  icon = generic_ignite_civil_war
+	  visible = {
+	  }
+	  
+	  available = {
+	  
+	  }
+	  days_remove = 60
+	  cost = 35
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = no
+		  ai_will_do = {
+		  factor = 11
+		  }
+		  complete_effect = {
+			set_temp_variable = { SHW_Loyalty = SHW_Loyalty }
+			add_to_variable = { SHW_Loyalty = 5 }
+		  }
+		  }	  
+	  }
+###征粮
+SHW_Food_requisition_operations = {
+	Requisition_grain_Tambov = {
+	  icon = GFX_decision_grain
+	  highlight_states = {
+		highlight_state_targets = {
+			state = 257
+		}
+	}
+	visible = {
+		controls_state = 537
+	}
+	  available = {
+		controls_state = 537
+	  }
+	  days_remove = 30
+	  cost = 35
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  complete_effect = {
+			add_stability = -0.01
+			257={
+				add_resource = {
+					type = grain
+					amount = 10
+				}	
+			}
+		  }
+		  }
+	Requisition_grain_Rzhev = {
+	  icon = GFX_decision_grain
+	  highlight_states = {
+		highlight_state_targets = {
+			state = 246
+		}
+	}
+	  visible = {
+		controls_state = 246
+	  }
+	  
+	  available = {
+		controls_state = 246
+	  }
+	  days_remove = 30
+	  cost = 35
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  complete_effect = {
+			add_stability = -0.01
+			246={
+				add_resource = {
+					type = grain
+					amount = 10
+				}	
+			}
+		  }
+		  }
+Requisition_grain_Luga = {
+	  icon = GFX_decision_grain
+	  highlight_states = {
+		highlight_state_targets = {
+			state = 208
+		}
+	}
+	  visible = {
+		controls_state = 208
+	  }
+	  
+	  available = {
+		controls_state = 208
+	  }
+	  days_remove = 30
+	  cost = 35
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  complete_effect = {
+			add_stability = -0.01
+			208={
+				add_resource = {
+					type = grain
+					amount = 10
+				}	
+			}
+		  }
+		  }
+Requisition_grain_Samui = {
+	  icon = GFX_decision_grain
+	  highlight_states = {
+		highlight_state_targets = {
+			state = 225
+		}
+	}
+	  visible = {
+		controls_state = 225
+	  }
+	  
+	  available = {
+		controls_state = 225
+	  }
+	  days_remove = 30
+	  cost = 35
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  complete_effect = {
+			add_stability = -0.01
+			225={
+				add_resource = {
+					type = grain
+					amount = 10
+				}	
+			}
+		  }
+		  }
+Requisition_grain_Mellerovo = {
+	  icon = GFX_decision_grain
+	  highlight_states = {
+		highlight_state_targets = {
+			state = 245
+		}
+	}
+	  visible = {
+		controls_state = 245
+	  }
+	  
+	  available = {
+		controls_state = 245
+	  }
+	  days_remove = 30
+	  cost = 35
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  complete_effect = {
+			add_stability = -0.01
+			245={
+				add_resource = {
+					type = grain
+					amount = 10
+				}	
+			}
+		  }
+		  }
+Requisition_grain_Ryazan = {
+	  icon = GFX_decision_grain
+	  highlight_states = {
+		highlight_state_targets = {
+			state = 254
+		}
+	}
+	  visible = {
+		controls_state = 254
+	  }
+	  
+	  available = {
+		controls_state = 254
+	  }
+	  days_remove = 30
+	  cost = 35
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  complete_effect = {
+			add_stability = -0.01
+			254={
+				add_resource = {
+					type = grain
+					amount = 10
+				}	
+			}
+		  }
+		  }
+Requisition_grain_Minsk = {
+	  icon = GFX_decision_grain
+	  highlight_states = {
+		highlight_state_targets = {
+			state = 206
+		}
+	}
+	  visible = {
+		controls_state = 206
+	  }
+	  
+	  available = {
+		controls_state = 206
+	  }
+	  days_remove = 30
+	  cost = 35
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  complete_effect = {
+			add_stability = -0.01
+			206={
+				add_resource = {
+					type = grain
+					amount = 10
+				}	
+			}
+		  }
+		  }
+Requisition_grain_Poltava = {
+	  icon = GFX_decision_grain
+	  highlight_states = {
+		highlight_state_targets = {
+			state = 259
+		}
+	}
+	  visible = {
+		controls_state = 259
+	  }
+	  
+	  available = {
+		controls_state = 259
+	  }
+	  days_remove = 30
+	  cost = 35
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  complete_effect = {
+			add_stability = -0.01
+			259={
+				add_resource = {
+					type = grain
+					amount = 10
+				}	
+			}
+		  }
+		  }
+Requisition_grain_Stavropol = {
+	  icon = GFX_decision_grain
+	  highlight_states = {
+		highlight_state_targets = {
+			state = 235
+		}
+	}
+	  visible = {
+		controls_state = 235
+	  }
+	  
+	  available = {
+		controls_state = 235
+	  }
+	  days_remove = 30
+	  cost = 35
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  complete_effect = {
+			add_stability = -0.01
+			235={
+				add_resource = {
+					type = grain
+					amount = 10
+				}	
+			}
+		  }
+		  }
+Requisition_grain_Kaluga = {
+	  icon = GFX_decision_grain
+	  highlight_states = {
+		highlight_state_targets = {
+			state = 205
+		}
+	}
+	  visible = {
+		controls_state = 205
+	  }
+	  
+	  available = {
+		controls_state = 205
+	  }
+	  days_remove = 30
+	  cost = 35
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  complete_effect = {
+			add_stability = -0.01
+			205={
+				add_resource = {
+					type = grain
+					amount = 10
+				}	
+			}
+		  }
+		  }
+Requisition_grain_Belgorod = {
+	  icon = GFX_decision_grain
+	  highlight_states = {
+		highlight_state_targets = {
+			state = 240
+		}
+	}
+	  visible = {
+		controls_state = 240
+	  }
+	  
+	  available = {
+		controls_state = 240
+	  }
+	  days_remove = 30
+	  cost = 35
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  complete_effect = {
+			add_stability = -0.01
+			240={
+				add_resource = {
+					type = grain
+					amount = 10
+				}	
+			}
+		  }
+		  }
+Requisition_grain_Saratov = {
+	  icon = GFX_decision_grain
+	  highlight_states = {
+		highlight_state_targets = {
+			state = 239
+		}
+	}
+	  visible = {
+		controls_state = 239
+	  }
+	  
+	  available = {
+		controls_state = 239
+	  }
+	  days_remove = 30
+	  cost = 35
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  complete_effect = {
+			add_stability = -0.01
+			239={
+				add_resource = {
+					type = grain
+					amount = 10
+				}	
+			}
+		  }
+		  }
+Requisition_grain_Vinnitsa = {
+	  icon = GFX_decision_grain
+	  highlight_states = {
+		highlight_state_targets = {
+			state = 198
+		}
+	}
+	  visible = {
+		controls_state = 198
+	  }
+	  
+	  available = {
+		controls_state = 198
+	  }
+	  days_remove = 30
+	  cost = 35
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  complete_effect = {
+			add_stability = -0.01
+			198={
+				add_resource = {
+					type = grain
+					amount = 10
+				}	
+			}
+		  }
+		  }
+Requisition_grain_Vitebsk = {
+	  icon = GFX_decision_grain
+	  highlight_states = {
+		highlight_state_targets = {
+			state = 207
+		}
+	}
+	  visible = {
+		controls_state = 207
+	  }
+	  
+	  available = {
+		controls_state = 207
+	  }
+	  days_remove = 30
+	  cost = 35
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  complete_effect = {
+			add_stability = -0.01
+			207={
+				add_resource = {
+					type = grain
+					amount = 10
+				}	
+			}
+		  }
+		  }
+Requisition_grain_Bobruisk = {
+	  icon = GFX_decision_grain
+	  highlight_states = {
+		highlight_state_targets = {
+			state = 204
+		}
+	}
+	  visible = {
+		controls_state = 204
+	  }
+	  
+	  available = {
+		controls_state = 204
+	  }
+	  days_remove = 30
+	  cost = 35
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  complete_effect = {
+			add_stability = -0.01
+			204={
+				add_resource = {
+					type = grain
+					amount = 10
+				}	
+			}
+		  }
+		  }
+Requisition_grain_Gomel = {
+	  icon = GFX_decision_grain
+	  highlight_states = {
+		highlight_state_targets = {
+			state = 241
+		}
+	}
+	  visible = {
+		controls_state = 241
+	  }
+	  
+	  available = {
+		controls_state = 241
+	  }
+	  days_remove = 30
+	  cost = 35
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  complete_effect = {
+			add_stability = -0.01
+			241={
+				add_resource = {
+					type = grain
+					amount = 10
+				}	
+			}
+		  }
+		  }
+Requisition_grain_Novgorod = {
+	  icon = GFX_decision_grain
+	  highlight_states = {
+		highlight_state_targets = {
+			state = 263
+		}
+	}
+	  visible = {
+		controls_state = 263
+	  }
+	  
+	  available = {
+		controls_state = 263
+	  }
+	  days_remove = 30
+	  cost = 35
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  complete_effect = {
+			add_stability = -0.01
+			263={
+				add_resource = {
+					type = grain
+					amount = 10
+				}	
+			}
+		  }
+		  }
+		}
+########杜马
+SHW_DUMA = {
+	SHW_DUMA1 = {
+	  icon = generic_ignite_civil_war
+	  visible = {
+	  }
+	  
+	  available = {
+	  
+	  }
+	  days_remove = 50
+	  cost = 35
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  complete_effect = {
+		  }
+		  }
+		}

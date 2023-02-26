@@ -1,0 +1,39 @@
+characters={
+	FEL_Svinhufvud={
+		name=FEL_Svinhufvud
+		portraits={
+			civilian={
+				large="gfx/leaders/FEL/Portrait_Svinhufvud.tga"
+			}
+		}
+		
+	}
+	FEL_Kaarlo_Juho_Stahlberg={
+		name=FEL_Kaarlo_Juho_Stahlberg
+		portraits={
+			civilian={
+				large="gfx/leaders/FEL/Portrait_Kaarlo_Juho_Stahlberg.tga"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	FEL_Nikolai_Vissarionovich_Nekrasov={
+		name=FEL_Nikolai_Vissarionovich_Nekrasov
+		portraits={
+			civilian={
+				large="gfx/leaders/FEL/Portrait_Nikolai_Vissarionovich_Nekrasov.tga"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

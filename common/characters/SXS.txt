@@ -1,0 +1,32 @@
+characters={
+	SXS_Yang_XiShang={
+		name=SXS_Yang_XiShang
+		portraits={
+			civilian={
+				large="gfx/leaders/SXS/portrait_Yang_XiShang.tga"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SXS_XuYongCan={
+		name=SXS_XuYongCan
+		portraits={
+			army={
+				large="gfx/leaders/SXS/portrait_XuYongCan.tga"
+			}
+		}
+		corps_commander={
+			traits={ skilled_staffer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+		}
+	}		
+	}

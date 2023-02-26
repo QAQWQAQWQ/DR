@@ -1,0 +1,70 @@
+﻿capital = 596
+
+oob = "CPC_1920"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+recruit_character = CPC_HZGH
+recruit_character = CPC_LiDaZhao
+recruit_character = CPC_ChenDuXiu
+recruit_character = CPC_LiuShiFu
+recruit_character = CPC_DengYingDa
+recruit_character = CPC_Wu-Hao
+recruit_character = CPC_YeTing 
+recruit_character = CPC_FangZhiMing
+recruit_character = CPC_DongBiWu
+recruit_character = CPC_Nikolsky
+
+	add_political_power = 1198
+	add_command_power = 100
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+
+		#electronics
+		
+		
+		
+		
+
+		#industry
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+set_global_flag = CPC_HZGH
+set_politics = {
+	ruling_party = communism
+	last_election = "1919.11.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+add_ideas = {
+	CPC_LuZaiHeFan
+#law
+Agricultural_economy
+completely_illiterate
+Staterun_economy
+closed_economy
+}
+set_popularities = {
+	communism = 100
+}

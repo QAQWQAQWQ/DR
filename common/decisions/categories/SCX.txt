@@ -1,0 +1,16 @@
+SCX_Internal_power_struggle_in_Sichuan = {
+	icon = infiltration
+	
+	picture = GFX_decisions_SCX_civil_war_decision
+
+	priority = 8
+	allowed = {
+		tag = SCX
+	}
+
+	visible = {
+				
+	}
+}
+
+

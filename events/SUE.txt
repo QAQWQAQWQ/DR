@@ -1,0 +1,38 @@
+﻿###########################
+# SUE Events
+###########################
+
+add_namespace = SUE
+
+country_event = {
+	id = SUE.X
+	title = SUE.X.t
+	desc = SUE.X.d
+	picture = GFX_train
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		load_oob = "SUE_1920"
+		name = SUE.X.a
+		send_equipment = { target = SUE type = infantry_equipment amount = 3500 }
+		}
+	}
+country_event = {
+	id = SUE.1
+	title = SUE.1.t
+	desc = SUE.1.d
+	picture = GFX_train
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		load_oob = "SUE_1920"
+		add_ideas = FRW_People_Vanguard
+		name = SUE.1.a
+		}
+	}

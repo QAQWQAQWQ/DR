@@ -1,0 +1,18 @@
+scripted_gui = {
+
+	SHW_Imperial_Russian_Army_ui = {
+		context_type = decision_category
+		window_name = "SHW_Imperial_Russian_Army_ui_window"
+
+		properties={
+			SHW_Imperial_Russian_Army_needle = {
+				frame = SHW_Imperial_Russian_Army_paranoiameter
+			}
+	} 
+}
+SHW_DUMA_ui = {
+	context_type = decision_category
+	window_name = "SHW_DUMA_window"
+
+}
+}

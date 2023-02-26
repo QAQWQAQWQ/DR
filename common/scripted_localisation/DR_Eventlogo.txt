@@ -1,0 +1,29 @@
+defined_text = { 
+	name = GetNewsHeadline
+	text = {
+		localization_key = NOnewspaper 
+trigger = {
+	original_tag =UBS
+}
+}
+	text = {
+		 localization_key = Getevent_logo 
+trigger = {
+	original_tag =ENL
+}
+}
+ text = {
+		 localization_key = Getevent_Petersburg_newspaper
+trigger = {
+	original_tag =SHW
+	
+}
+}
+text = {
+	localization_key = DaMing
+trigger = {
+original_tag =DIM
+
+}
+}
+}

@@ -1,0 +1,189 @@
+scripted_gui = {
+
+	ger_con_decisons_ui = {
+		context_type = decision_category
+		window_name = "ger_con_decisons_ui_window"
+		effects = {
+			ger_con_aox_click = {
+				ROOT = {
+					set_variable = {
+						gercon_nat = AOX
+					}
+					gercon_upd_pbv_var = yes
+				}
+			}
+			ger_con_wws_click = {
+				ROOT = {
+					set_variable = {
+						gercon_nat = WWS
+					}
+					gercon_upd_pbv_var = yes
+				}
+			}
+			ger_con_agc_click = {
+				ROOT = {
+					set_variable = {
+						gercon_nat = AGC
+					}
+					gercon_upd_pbv_var = yes
+				}
+			}
+			ger_con_lsb_click = {
+				ROOT = {
+					set_variable = {
+						gercon_nat = LSB
+					}
+					gercon_upd_pbv_var = yes
+				}
+			}
+			ger_con_dhd_click = {
+				ROOT = {
+					set_variable = {
+						gercon_nat = DHD
+					}
+					gercon_upd_pbv_var = yes
+				}
+			}
+			ger_con_don_click = {
+				ROOT = {
+					set_variable = {
+						gercon_nat = DON
+					}
+					gercon_upd_pbv_var = yes
+				}
+			}
+			ger_con_dof_click = {
+				ROOT = {
+					set_variable = {
+						gercon_nat = DOF
+					}
+					gercon_upd_pbv_var = yes
+				}
+			}
+			ger_con_dob_click = {
+				ROOT = {
+					set_variable = {
+						gercon_nat = DOB
+					}
+					gercon_upd_pbv_var = yes
+				}
+			}
+			ger_con_dor_click = {
+				ROOT = {
+					set_variable = {
+						gercon_nat = DOR
+					}
+					gercon_upd_pbv_var = yes
+				}
+			}
+			ger_con_bxm_click = {
+				ROOT = {
+					set_variable = {
+						gercon_nat = BXM
+					}
+					gercon_upd_pbv_var = yes
+				}
+			}
+			ger_con_dol_click = {
+				ROOT = {
+					set_variable = {
+						gercon_nat = DOL
+					}
+					gercon_upd_pbv_var = yes
+				}
+			}
+			ger_con_doh_click = {
+				ROOT = {
+					set_variable = {
+						gercon_nat = DOH
+					}
+					gercon_upd_pbv_var = yes
+				}
+			}
+			ger_con_doa_click = {
+				ROOT = {
+					set_variable = {
+						gercon_nat = DOA
+					}
+					gercon_upd_pbv_var = yes
+				}
+			}
+			ger_con_dom_click = {
+				ROOT = {
+					set_variable = {
+						gercon_nat = DOM
+					}
+					gercon_upd_pbv_var = yes
+				}
+			}
+			ger_con_dos_click = {
+				ROOT = {
+					set_variable = {
+						gercon_nat = DOS
+					}
+					gercon_upd_pbv_var = yes
+				}
+			}
+		}
+		properties={
+			ger_power_balance_value = {
+				frame = ger_power_balance_value_var
+			}
+			ger_power_balance_frame = {
+				frame = ger_power_balance_frame
+			}
+			aus_power_icon = {
+				frame = aus_power_icon
+			}
+			pre_power_icon = {
+				frame = pre_power_icon
+			}
+
+			ger_con_aox = {
+				image = [AOX.GetFlag]
+			}
+			ger_con_wws = {
+				image = [WWS.GetFlag]
+			}
+			ger_con_agc = {
+				image = [AGC.GetFlag]
+			}
+			ger_con_lsb = {
+				image = [LSB.GetFlag]
+			}
+			ger_con_dhd = {
+				image = [DHD.GetFlag]
+			}
+			ger_con_don = {
+				image = [DON.GetFlag]
+			}
+			ger_con_dof = {
+				image = [DOF.GetFlag]
+			}
+			ger_con_dob = {
+				image = [DOB.GetFlag]
+			}
+			ger_con_dor = {
+				image = [DOR.GetFlag]
+			}
+			ger_con_bxm = {
+				image = [BXM.GetFlag]
+			}
+			ger_con_dol = {
+				image = [DOL.GetFlag]
+			}
+			ger_con_doh = {
+				image = [DOH.GetFlag]
+			}
+			ger_con_doa = {
+				image = [DOA.GetFlag]
+			}
+			ger_con_dom = {
+				image = [DOM.GetFlag]
+			}
+			ger_con_dos = {
+				image = [DOS.GetFlag]
+			}
+		} 
+	}
+}

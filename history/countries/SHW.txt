@@ -1,0 +1,113 @@
+﻿capital = 195
+
+oob = "SHW_1920"
+set_naval_oob = "SHW_1920_naval_mtg"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	fuel_silos = 1
+}
+
+recruit_character = SHW_Pavel_Milyukov
+recruit_character = SHW_NicholasII
+recruit_character = SHW_Kerensky
+recruit_character = SHW_Kolchak
+recruit_character = SHW_Nikolayevich_Wrangel
+recruit_character = SHW_LavrKornilov
+recruit_character = SHW_Viktor_Chernov
+recruit_character = SHW_Vladimir_Samsonov
+recruit_character = SHW_Yakov_Grigorievich_Zhilinsky
+recruit_character = SHW_Yuri_Danilov
+recruit_character = SHW_aleksey_brusilov
+recruit_character = SHW_Alexei_Kuropatkin
+recruit_character = SHW_Alexei_Eft
+recruit_character = SHW_Nikolai_Romanov
+recruit_character = SHW_Nikolai_Ruzsky
+recruit_character = SHW_Paul_Lenningkamp
+recruit_character = SHW_Denikin
+recruit_character = SHW_Yudenich
+recruit_character = SHW_Pyotr_Alexeyevich_Kropotkin
+recruit_character = SHW_Dmitry_Grigoryevich_Shcherbachev
+recruit_character = SHW_Krasnov
+recruit_character = SHW_Martov
+recruit_character = SHW_Tseretori
+recruit_character = SHW_Alexander_Konovalov
+recruit_character = SHW_Alexander_Guchkov
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+
+		#electronics
+		
+		
+		
+		
+		
+
+		#industry
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+set_politics = {
+	ruling_party = monarchy
+	last_election = "1918.11.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+puppet = FEL
+puppet = AFH
+puppet = PBL
+news_event = { id = SHW.1 days = 425 }
+set_popularities = {
+	national_populist = 6
+	monarchy = 59
+	Reform_socialism = 13
+	social_democrat = 5
+	democratic = 6
+	authoritarian = 11
+}
+set_variable = { SHW_Loyalty = 100 }
+clamp_variable = {
+	var = SHW_Loyalty
+	min = 0
+	max = 100
+}
+
+add_ideas={
+SHW_Corrupt_army
+SHW_Backward_railways
+SHW_Russian_serfs
+SHW_Stolypin_legacy
+#law
+Deflection_employer
+Control_media
+Patriarchy_supreme
+Weak_investments
+Private_economy
+State_control
+low_industrialization
+completely_illiterate
+}

@@ -1,0 +1,19 @@
+ideas = {
+        country = {
+		AOX_Hungarian_independence_movement = {
+			picture = Hungarian_independence_movement
+			modifier = {
+				stability_weekly  = -0.03
+				party_popularity_stability_factor = -0.1
+			}
+        }
+		}
+		country = {
+			AOX_Part_Habsburgs = {
+				picture = Part_Habsburgs
+				modifier = {
+					custom_modifier_tooltip = Part_Habsburgs1
+				}
+			}
+			}
+}

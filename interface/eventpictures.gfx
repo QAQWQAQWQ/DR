@@ -1,0 +1,335 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Brother_Eris_Wall"
+		texturefile = "gfx/event/WWS/Brother_Eris_Wall.dds"
+	}
+	spriteType = {
+		name = "GFX_WilhelmII"
+		texturefile = "gfx/event/WWS/WilhelmII.dds"
+	}
+	spriteType = {
+		name = "GFX_Parade"
+		texturefile = "gfx/event/WWS/Parade.dds"
+	}
+	spriteType = {
+		name = "GFX_Assassination"
+		texturefile = "gfx/event/SIW/Assassination.dds"
+	}
+	spriteType = {
+		name = "GFX_Far_Eastern_Republics"
+		texturefile = "gfx/event/FER/Far_Eastern_Republics.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_Independence_Ukraine"
+		texturefile = "gfx/event/UKR/Independence_Ukraine.tga"
+	}
+	spriteType = {
+		name = "GFX_Poland_independent"
+		texturefile = "gfx/event/PBL/Poland_independent.tga"
+	}
+	spriteType = {
+		name = "GFX_Finland_Independence"
+		texturefile = "gfx/event/FEL/Finland_Independence.tga"
+	}
+	spriteType = {
+		name = "GFX_DAMINGGONG"
+		texturefile = "gfx/event/DIM/DAMINGGONG.tga"
+	}
+	spriteType = {
+		name = "GFX_LEF"
+		texturefile = "gfx/event/UBS/LEF.tga"
+	}
+	spriteType = {
+		name = "GFX_Shanghai_workers_QY"
+		texturefile = "gfx/event/SHH/Shanghai_workers_QY.dds"
+	}
+	spriteType = {
+		name = "GFX_DP_1"
+		texturefile = "gfx/event/UBS/DP_1.tga"
+	}
+	spriteType = {
+		name = "GFX_GOP_1"
+		texturefile = "gfx/event/UBS/GOP_1.tga"
+	}
+	spriteType = {
+		name = "GFX_PUyi"
+		texturefile = "gfx/event/FTX/PUyi.tga"
+	}
+	spriteType = {
+		name = "GFX_Shanghai_workers_revolted"
+		texturefile = "gfx/event/SHH/Shanghai_workers_revolted.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_Matterwan_town"
+		texturefile = "gfx/event/UBS/Matterwan_town.dds"
+	}
+	spriteType = {
+		name = "GFX_The_Zhiwan_War"
+		texturefile = "gfx/event/ZHX/The_Zhiwan_War.tga"
+	}
+	spriteType = {
+		name = "GFX_LJC"
+		texturefile = "gfx/event/FRW/LJC.tga"
+	}
+	spriteType = {
+		name = "GFX_Suez_Canal_Crisis"
+		texturefile = "gfx/event/TEQ/Suez_Canal_Crisis.tga"
+	}
+	spriteType = {
+		name = "GFX_Student_movement"
+		texturefile = "gfx/event/ZHX/Student_movement.tga"
+	}
+	spriteType = {
+		name = "GFX_Kropotkin_funeral"
+		texturefile = "gfx/event/SHW/Kropotkin_funeral.tga"
+	}
+	spriteType = {
+		name = "GFX_suppress"
+		texturefile = "gfx/event/ZHX/suppress.tga"
+	}
+	spriteType = {
+		name = "GFX_dissolution"
+		texturefile = "gfx/event/ZHX/dissolution.tga"
+	}
+	spriteType = {
+		name = "GFX_LiDaZhao"
+		texturefile = "gfx/event/CPC/LiDaZhao.tga"
+	}
+	spriteType = {
+		name = "GFX_ChenDuXiu"
+		texturefile = "gfx/event/CPC/ChenDuXiu.tga"
+	}
+	spriteType = {
+		name = "GFX_Famine_in_Russia"
+		texturefile = "gfx/event/SHW/Famine_in_Russia.tga"
+	}
+	spriteType = {
+		name = "GFX_Olympic_Games"
+		texturefile = "gfx/event/NEWS/Olympic_Games.tga"
+	}
+	spriteType = {
+		name = "GFX_JS"
+		texturefile = "gfx/event/JS/JS.dds"
+	}
+	spriteType = {
+		name = "GFX_Fengtian_Civil_War"
+		texturefile = "gfx/event/FTX/Fengtian_Civil_War.tga"
+	}
+	spriteType = {
+		name = "GFX_London_stock_market_crash"
+		texturefile = "gfx/event/ENL/London_stock_market_crash.tga"
+	}
+	spriteType = {
+		name = "GFX_Hungarian_uprising"
+		texturefile = "gfx/event/AOX/Hungarian_uprising.tga"
+	}
+	spriteType = {
+		name = "GFX_aox_die"
+		texturefile = "gfx/event/AOX/aox_die.tga"
+	}
+	spriteType = {
+		name = "GFX_drought"
+		texturefile = "gfx/event/SCX/drought.tga"
+	}
+	spriteType = {
+		name = "GFX_GOV"
+		texturefile = "gfx/event/CPC/GOV.dds"
+	}
+	spriteType = {
+		name = "GFX_meeting"
+		texturefile = "gfx/event/CPC/meeting.DDS"
+	}
+	spriteType = {
+		name = "GFX_Georgian_uprising"
+		texturefile = "gfx/event/SHW/Georgian_uprising.DDS"
+	}
+	spriteType = {
+		name = "GFX_LENIN"
+		texturefile = "gfx/event/FRW/LENIN.DDS"
+	}
+	spriteType = {
+		name = "GFX_Second_International"
+		texturefile = "gfx/event/FRW/Second_International.tga"
+	}
+	spriteType = {
+		name = "GFX_China"
+		texturefile = "gfx/event/FRW/China.tga"
+	}
+	spriteType = {
+		name = "GFX_ENS"
+		texturefile = "gfx/event/FRW/ENS.dds"
+	}
+	spriteType = {
+		name = "GFX_Yhudim"
+		texturefile = "gfx/event/FRW/Yhudim.dds"
+	}
+	spriteType = {
+		name = "GFX_French_parade"
+		texturefile = "gfx/event/FRW/French_parade.dds"
+	}
+	spriteType = {
+		name = "GFX_assassinate"
+		texturefile = "gfx/event/FRW/assassinate.dds"
+	}
+	spriteType = {
+		name = "GFX_Georges_Valois"
+		texturefile = "gfx/event/FRW/Georges_Valois.dds"
+	}
+	spriteType = {
+		name = "GFX_train"
+		texturefile = "gfx/event/JS/train.dds"
+	}
+	spriteType = {
+		name = "GFX_Emperor_Meiji"
+		texturefile = "gfx/event/JPN/Emperor_Meiji.dds"
+	}
+	spriteType = {
+		name = "GFX_illness"
+		texturefile = "gfx/event/JPN/illness.dds"
+	}
+	spriteType = {
+		name = "GFX_Black_confrontation"
+		texturefile = "gfx/event/BLF/Black_confrontation.dds"
+	}
+	spriteType = {
+		name = "GFX_Lincheng_train_case"
+		texturefile = "gfx/event/HAQ/Lincheng_train_case.dds"
+	}
+	spriteType = {
+		name = "GFX_Lincheng_train_case2"
+		texturefile = "gfx/event/HAQ/Lincheng_train_case2.dds"
+	}
+	spriteType = {
+		name = "GFX_Lincheng_train_case3"
+		texturefile = "gfx/event/HAQ/Lincheng_train_case3.dds"
+	}
+	spriteType = {
+		name = "GFX_Lincheng_train_case4"
+		texturefile = "gfx/event/HAQ/Lincheng_train_case4.dds"
+	}
+	spriteType = {
+		name = "GFX_Lincheng_train_case5"
+		texturefile = "gfx/event/HAQ/Lincheng_train_case5.dds"
+	}
+	spriteType = {
+		name = "GFX_Lincheng_train_case6"
+		texturefile = "gfx/event/HAQ/Lincheng_train_case6.dds"
+	}
+	spriteType = {
+		name = "GFX_Lincheng_train_case7"
+		texturefile = "gfx/event/HAQ/Lincheng_train_case7.dds"
+	}
+	spriteType = {
+		name = "GFX_ENL_Olympic_Games"
+		texturefile = "gfx/event/NEWS/ENL_Olympic_Games.tga"
+	}
+	spriteType = {
+		name = "GFX_White_Stadium"
+		texturefile = "gfx/event/ENL/White_Stadium.dds"
+	}
+	spriteType = {
+		name = "GFX_British_police"
+		texturefile = "gfx/event/ENL/British_police.dds"
+	}
+	spriteType = {
+		name = "GFX_Ireland"
+		texturefile = "gfx/event/ENL/Ireland.dds"
+	}
+	spriteType = {
+		name = "GFX_YDN_strike"
+		texturefile = "gfx/event/YDN/strike.dds"
+	}
+	spriteType = {
+		name = "GFX_YDN_strike2"
+		texturefile = "gfx/event/YDN/strike2.dds"
+	}
+	spriteType = {
+		name = "GFX_Provincial_elections"
+		texturefile = "gfx/event/WUP/Provincial_elections.dds"
+	}
+	spriteType = {
+		name = "GFX_VonEnchen_entered_Mongolia"
+		texturefile = "gfx/event/MEG/VonEnchen_entered_Mongolia.tga"
+	}
+	spriteType = {
+		name = "GFX_VonEnchen"
+		texturefile = "gfx/event/MEG/VonEnchen.tga"
+	}
+	spriteType = {
+		name = "GFX_Mongolian"
+		texturefile = "gfx/event/MEG/Mongolian.tga"
+	}
+	spriteType = {
+		name = "GFX_Ireland"
+		texturefile = "gfx/event/ENL/Ireland.dds"
+	}
+	spriteType = {
+		name = "GFX_White_Stadium"
+		texturefile = "gfx/event/ENL/White_Stadium.dds"
+	}
+	spriteType = {
+		name = "GFX_Stock_Exchange"
+		texturefile = "gfx/event/ENL/Stock_Exchange.dds"
+	}
+	spriteType = {
+		name = "GFX_WWI"
+		texturefile = "gfx/event/NEWS/WWI.tga"
+	}
+	spriteType = {
+		name = "GFX_Anglo_French_war"
+		texturefile = "gfx/event/NEWS/Anglo_French_war.tga"
+	}
+	spriteType = {
+		name = "GFX_Battle_Germany"
+		texturefile = "gfx/event/NEWS/Battle_Germany.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_death_penalty"
+		texturefile = "gfx/event/UBS/death_penalty.dds"
+	}
+	spriteType = {
+		name = "GFX_Diplomatic_corps"
+		texturefile = "gfx/event/UBS/Diplomatic_corps.dds"
+	}
+	spriteType = {
+		name = "GFX_arrested_communists"
+		texturefile = "gfx/event/UBS/arrested_communists.tga"
+	}
+	spriteType = {
+		name = "GFX_BOOK"
+		texturefile = "gfx/event/ZHX/BOOK.tga"
+	}
+	spriteType = {
+		name = "GFX_Spanish_Flu"
+		texturefile = "gfx/event/SBY/Spanish_Flu.tga"
+	}
+	spriteType = {
+		name = "GFX_Balkan_League"
+		texturefile = "gfx/event/NEWS/Balkan_League.tga"
+	}
+	spriteType = {
+		name = "GFX_fall_of_berlin"
+		texturefile = "gfx/event/occupied/fall_of_berlin.tga"
+	}
+	spriteType = {
+		name = "GFX_fall_of_Paris"
+		texturefile = "gfx/event/occupied/fall_of_Paris.tga"
+	}
+	spriteType = {
+		name = "GFX_fall_of_Beijing"
+		texturefile = "gfx/event/occupied/fall_of_Beijing.tga"
+	}
+	spriteType = {
+		name = "GFX_fall_of_Washington"
+		texturefile = "gfx/event/occupied/fall_of_Washington.tga"
+	}
+	spriteType = {
+		name = "GFX_FUM"
+		texturefile = "gfx/event/ITE/FUM.tga"
+	}
+	
+	
+}

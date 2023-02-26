@@ -1,0 +1,23 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_NO_newspaper"
+		texturefile = "gfx/interface/event_logo/NO_newspaper.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_DaMing"
+		texturefile = "gfx/interface/event_logo/DaMing.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+			name = "GFX_Getevent_logo"
+			texturefile = "gfx/interface/event_logo/The_times.dds"
+			legacy_lazy_load = no
+		}
+	spriteType = {
+			name = "GFX_Getevent_Petersburg_newspaper"
+			texturefile = "gfx/interface/event_logo/Getevent_Petersburg_newspaper.dds"
+			legacy_lazy_load = no
+		}
+		
+	}

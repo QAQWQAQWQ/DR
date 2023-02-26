@@ -1,0 +1,25 @@
+﻿###########################
+# BLF Events
+###########################
+
+add_namespace = BLF
+
+news_event = {
+	id = BLF.1
+	title = BLF.1.t
+	desc = BLF.1.d
+	picture = GFX_Black_confrontation
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = BLF.1.a
+		BLF = {
+				transfer_state = 371
+				transfer_state = 370
+			}
+			}
+	}

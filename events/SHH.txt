@@ -1,0 +1,123 @@
+﻿
+ SHH Events
+
+
+add_namespace = SHH
+add_namespace = QY
+country_event = {
+	id = QY.1
+	title = QY.1.t
+	desc = QY.1.d
+	picture = GFX_Shanghai_workers_QY
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate={
+		set_country_flag=DR_Shanghai1
+}
+	
+	option = {
+		name = QY.1.a
+		country_event={id=QY.2 days=3}
+	    }
+	}
+country_event = {
+	id = QY.2
+	title = QY.2.t
+	desc = QY.2.d
+	picture = GFX_Shanghai_workers_QY
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate={
+		clr_country_flag=DR_Shanghai1
+		set_country_flag=DR_Shanghai2
+}
+	option = {
+		name = QY.2.a
+		country_event={id=QY.3 days=3}
+		
+	    }
+	}
+country_event = {
+	id = QY.3
+	title = QY.3.t
+	desc = QY.3.d
+	picture = GFX_Shanghai_workers_QY
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate={
+		clr_country_flag=DR_Shanghai2
+		set_country_flag=DR_Shanghai_3
+}
+	option = {
+		name = QY.3.a
+		country_event={id=QY.4 days=3}
+		
+	    }
+	}
+country_event = {
+	id = QY.4
+	title = QY.4.t
+	desc = QY.4.d
+	picture = GFX_Shanghai_workers_QY
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate={
+		clr_country_flag=DR_Shanghai_3
+		set_country_flag=DR_Shanghai_4
+}
+	option = {
+		name = QY.4.a
+		country_event={id=QY.5 days=3}
+		
+	    }
+	}
+country_event = {
+	id = QY.5
+	title = QY.5.t
+	desc = QY.5.d
+	picture = GFX_Shanghai_workers_QY
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate={
+		clr_country_flag=DR_Shanghai_4
+		set_country_flag=DR_Shanghai_5
+}
+	option = {
+		name = QY.5.a
+		country_event={id=QY.6 days=3}
+		
+	    }
+	}
+country_event = {
+	id = QY.6
+	title = QY.6.t
+	desc = QY.6.d
+	picture = GFX_Shanghai_workers_QY
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate={
+		clr_country_flag=DR_Shanghai_5
+		set_country_flag=DR_Shanghai6
+}
+	option = {
+		name = QY.6.a
+		country_event={id=SHH.1 days=2}
+		
+	    }
+	}
+news_event = {
+	id = SHH.1
+	title = SHH.1.t
+	desc = SHH.1.d
+	picture = GFX_Shanghai_workers_revolted
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+        play_song= Shanghai_workers_revolted
+	}
+	option = {
+		name = SHH.1.a
+		SHH={transfer_state = 613}
+		
+	    }
+	}

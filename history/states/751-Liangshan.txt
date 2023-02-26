@@ -1,0 +1,22 @@
+state={
+	id=751
+	name="STATE_751"
+	provinces={
+		 2067 10841 12141 12819 5072 12841 11972
+	}
+	manpower=300000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	history={
+		owner = SCX
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			12141 3
+		}
+	}
+
+	local_supplies=1.0 
+}

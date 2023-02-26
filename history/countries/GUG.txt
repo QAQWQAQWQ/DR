@@ -1,0 +1,71 @@
+﻿capital = 592
+
+oob = "GUG_1920"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+	basic_light_tank = 1
+}
+
+recruit_character = GUG_HuHanMing
+recruit_character = GUG_BaiChongXi
+recruit_character = GUG_ChenJiongMing
+recruit_character = GUG_ZhangFaKui
+recruit_character = GUG_DengYingDa
+recruit_character = GUG_XuChongZhi
+recruit_character = GUG_CaiTingKai
+recruit_character = GUG_ChenJiTang
+recruit_character = GUG_LuRongTing
+recruit_character = GUG_LuYuGuang
+recruit_character = GUG_LiZongRen
+recruit_character = GUG_DengZhongYuan
+recruit_character = GUG_LiJiShen
+recruit_character = GUG_ChenMingshu
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+
+		#electronics
+		
+		
+		
+		
+		
+
+		#industry
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1918.11.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 5
+	national_populist = 30
+	neutrality = 60
+	communism = 5
+}

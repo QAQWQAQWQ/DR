@@ -1,0 +1,92 @@
+@PARANOIA_PARANOIAMETER_MAIN_X = 190
+@PARANOIA_PARANOIAMETER_MAIN_Y = 70
+@PARANOIA_PARANOIAMETER_BG_X = 25 #Needs to be -25 relative to MAIN
+@PARANOIA_PARANOIAMETER_BG_Y = -3 #Needs to be -73 relative to MAIN
+@PARANOIA_TEXT_X = 50 #Needs to be -145(overlapping sword) / -130(evading sword) / -140(bottom) relative to MAIN
+@PARANOIA_TEXT_Y = 180 #Needs to be +80(overlapping sword) / +110(bottom) relative to MAIN
+@PHOTO_1_X = 25
+@PHOTO_1_Y = 105
+@PHOTO_2_X = 330
+@PHOTO_2_Y = 22
+@PHOTO_3_X = 440
+@PHOTO_3_Y = 3
+@PHOTO_4_X = 363
+@PHOTO_4_Y = 115
+@PHOTO_5_X = 75
+@PHOTO_5_Y = 5
+guiTypes = {
+
+	containerWindowType = {
+		name = "WWS_Little_Deutsches_Project_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 100% }
+		
+		iconType = {
+			name ="WWS_Bavaria"
+			spriteType = "GFX_WWS_Bavaria"
+			position = { x=60	 y=-155 }
+			size = { width = 100% height= 100% }
+		}
+		iconType = {
+			name ="WWS_Wurttemberg"
+			spriteType = "GFX_WWS_Wurttemberg"
+			position = { x=42	 y=-94 }
+			size = { width = 100% height= 100% }
+		}
+		iconType = {
+			name ="WWS_Baden"
+			spriteType = "GFX_WWS_Baden"
+			position = { x=19	 y=-103 }
+			size = { width = 100% height= 100% }
+		}
+		iconType = {
+			name ="WWS_Nassau"
+			spriteType = "GFX_WWS_Nassau"
+			position = { x=15	 y=-168 }
+			size = { width = 100% height= 100% }
+		}
+		iconType = {
+			name ="WWS_Hesse"
+			spriteType = "GFX_WWS_Hesse"
+			position = { x=9	 y=-222 }
+			size = { width = 100% height= 100% }
+		}
+		iconType = {
+			name ="WWS_Westphalia"
+			spriteType = "GFX_WWS_Westphalia"
+			position = { x=36	 y=-240 }
+			size = { width = 100% height= 100% }
+		}
+		iconType = {
+			name ="WWS_Saxony"
+			spriteType = "GFX_WWS_Saxony"
+			position = { x=85	 y=-195 }
+			size = { width = 100% height= 100% }
+		}
+		iconType = {
+			name ="WWS_Prussia"
+			spriteType = "GFX_WWS_Prussia"
+			position = { x=118	 y=-350 }
+			size = { width = 100% height= 100% }
+		}
+		iconType = {
+			name ="WWS_Mecklenburg"
+			spriteType = "GFX_WWS_Mecklenburg"
+			position = { x=102	 y=-283 }
+			size = { width = 100% height= 100% }
+		}
+		iconType = {
+			name ="WWS_Hanover"
+			spriteType = "GFX_WWS_Hanover"
+			position = { x=20	 y=-294 }
+			size = { width = 100% height= 100% }
+		}
+		iconType = {
+			name ="WWS_Oldenburg"
+			spriteType = "GFX_WWS_Oldenburg"
+			position = { x=43	 y=-286 }
+			size = { width = 100% height= 100% }
+		}
+	}
+}
+			

@@ -1,0 +1,1031 @@
+focus_tree = {
+	id = CPC
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CPC
+		}
+	}
+	default = no
+	focus = {
+		id = CPC_Revolutionary_fire
+		icon = GFX_Fire
+		cost = 8.00
+		x = 16
+		y = 0
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_political_power = 50
+					country_event = CPC.6
+				}
+
+	}
+	focus = {
+		id = CPC_Kuomintang_communist_cooperation
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 5.00
+		x = 32
+		y = 1
+		available = {
+			has_completed_focus = CPC_Negotiate_with_the_Kuomintang
+}
+		completion_reward = {
+				add_political_power = 150
+			}
+	}
+	focus = {
+		id = CPC_Voice_from_France
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 3.00
+		prerequisite = {
+			focus = CPC_Revolutionary_fire
+		}
+		x = 3
+		y = 1
+		completion_reward = {
+			country_event = CPC.4
+		}
+	}
+	focus = {
+		id = CPC_Friendly_agreements
+		icon = GFX_goal_generic_national_unity
+		cost = 4.00
+		prerequisite = {
+			focus = CPC_Voice_from_France
+		}
+		x = 2
+		y = 2
+			completion_reward = {
+					add_opinion_modifier = {
+							target = FRW
+							modifier = communists_in_government
+						}
+				}
+				
+	}
+	focus = {
+		id = CPC_French_aid
+		icon = GFX_goal_generic_army_artillery
+		cost = 4.00
+		prerequisite = {
+			focus = CPC_Voice_from_France
+		}
+		x = 4
+		y = 2
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = 1000
+							producer = FRW
+						}
+					add_equipment_to_stockpile = {
+							type = artillery_equipment_1
+							amount = 50
+							producer = FRW
+						}
+					add_equipment_to_stockpile = {
+							type = support_equipment_1
+							amount = 100
+							producer = FRW
+						}
+				}
+
+	}
+	focus = {
+		id = CPC_Abolish_unequal_treaties
+		icon = GFX_goal_generic_cavalry
+		cost = 4.00
+		prerequisite = {
+			focus = CPC_Friendly_agreements
+		}
+		prerequisite = {
+			focus = CPC_French_aid
+		}
+		x = 3
+		y = 3
+			completion_reward = {
+					add_political_power = 100
+				}
+
+	}
+	focus = {
+		id = CPC_the_Communist_parties
+		icon = GFX_goal_anschluss
+		cost = 4.00
+		prerequisite = {
+			focus = CPC_Abolish_unequal_treaties
+		}
+		available = {
+			NOT = {
+					country_exists = SHH
+				}
+			NOT = {
+					country_exists = QIX
+				}
+			NOT = {
+					country_exists = SUC
+				}
+		}
+		completion_reward = {
+			set_major = yes
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = CPC_party_newspaper
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 5.00
+		prerequisite = {
+			focus = CPC_Revolutionary_fire
+		}
+		completion_reward = {
+		add_ideas = CPC_party_newspaper
+	}
+		x = 8
+		y = 1
+			ai_will_do = {
+					factor = 1
+				}
+
+	}
+	focus = {
+		id = CPC_Improve_educational_quality
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 7.00
+		prerequisite = {
+			focus = CPC_party_newspaper
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = completely_illiterate
+				add_idea = elementary_school
+			}
+		}
+		x = 6
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+
+	}
+	focus = {
+		id = CPC_Win_over_the_masses
+		icon = GFX_goal_generic_major_alliance
+		cost = 6.00
+		prerequisite = {
+			focus = CPC_party_newspaper
+		}
+		x = 9
+		y = 2
+		completion_reward = {
+			add_manpower = 10000
+			add_war_support = 0.1
+		}
+			ai_will_do = {
+					factor = 1
+				}
+
+	}
+	focus = {
+		id = CPC_Revolutionary_propaganda
+		icon = GFX_goal_generic_national_unity
+		cost = 5.00
+		prerequisite = {
+			focus = CPC_Win_over_the_masses
+		}
+		prerequisite = {
+			focus = CPC_Improve_educational_quality
+		}
+		x = 7
+		y = 3
+		completion_reward = {
+		add_war_support = 0.1
+	}
+	}
+	focus = {
+		id = CPC_progressive_warlords
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 4.00
+		prerequisite = {
+			focus = CPC_Revolutionary_propaganda
+		}
+		completion_reward = {
+			add_opinion_modifier = {
+					target = LXS
+					modifier = progressive_thinking
+				}
+			add_opinion_modifier = {
+					target = CEX
+					modifier = progressive_thinking
+				}
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = CPC_Negotiate_with_the_Kuomintang
+		icon = GFX_goal_generic_air_doctrine
+		cost = 3.00
+		prerequisite = {
+			focus = CPC_Revolutionary_propaganda
+		}
+		completion_reward = {
+			add_opinion_modifier = {
+					target = SJR
+					modifier = Kuomintang
+				}
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = CPC_Line_dispute
+		icon = GFX_goal_generic_demand_territory
+		cost = 5.00
+		prerequisite = {
+			focus = CPC_Revolutionary_fire
+		}
+		x = 16
+		y = 1
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_political_power = 50
+					country_event = CPC.5	
+				}
+
+	}
+	focus = {
+		id = CPC_Anarchism
+		icon = GFX_goal_generic_secret_weapon
+		cost = 6.00
+		prerequisite = {
+			focus = CPC_Line_dispute
+		}
+		mutually_exclusive = {
+			focus = CPC_Marxism
+		}
+		x = 11
+		y = 2
+			ai_will_do = {
+					factor = 0.2
+				}
+			completion_reward = {
+					remove_ideas = CPC_LuZaiHeFan
+					add_political_power = 100
+					news_event = {
+							id = CPC.3
+						}
+					set_politics = {
+							ruling_party = Anarchopedia
+						}
+				}
+
+	}
+	focus = {
+		id = CPC_Cancel_bank
+		icon = GFX_goal_generic_military_deal
+		cost = 6.00
+		prerequisite = {
+			focus = CPC_Anarchism
+		}
+		x = 10
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+
+	}
+	focus = {
+		id = CPC_Assassinate_reactionaries
+		icon = GFX_goal_generic_territory_or_war
+		cost = 6.00
+		prerequisite = {
+			focus = CPC_Anarchism
+		}
+		completion_reward = {
+			add_stability = 0.02
+		}
+		x = 12
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+
+	}
+	focus = {
+		id = CPC_equalitarianism
+		icon = GFX_goal_generic_cavalry
+		cost = 4.00
+		prerequisite = {
+			focus = CPC_Cancel_bank
+		}
+		prerequisite = {
+			focus = CPC_Assassinate_reactionaries
+		}
+		x = 11
+		y = 4
+
+	}
+	focus = {
+		id = CPC_Marxism
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 6.00
+		prerequisite = {
+			focus = CPC_Line_dispute
+		}
+		mutually_exclusive = {
+			focus = CPC_Anarchism
+			focus = CPC_Left_nationalism
+		}
+		x = 16
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_political_power = 100
+					remove_ideas = CPC_LuZaiHeFan
+					news_event = {
+							id = CPC.1
+						}
+				}
+
+	}
+	focus = {
+		id = CPC_entral_Soviet_Area
+		icon = GFX_goal_generic_build_tank
+		cost = 6.00
+		prerequisite = {
+			focus = CPC_Marxism
+		}
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.05
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = CPC_own_efforts
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5.00
+		prerequisite = {
+			focus = CPC_entral_Soviet_Area
+		}
+		mutually_exclusive = {
+			focus = CPC_Follow_France
+		}
+		completion_reward = {
+			activate_advisor = CPC_DongBiWu_political_advisor
+		}
+
+		x = 15
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+
+	}
+	focus = {
+		id = CPC_Follow_France
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 4.00
+		prerequisite = {
+			focus = CPC_entral_Soviet_Area
+		}
+		mutually_exclusive = {
+			focus = CPC_own_efforts
+		}
+		completion_reward = {
+			activate_advisor = CPC_Nikolsky_political_advisor
+		}
+		x = 17
+		y = 4
+			ai_will_do = {
+					factor = 0.2
+				}
+
+	}
+	focus = {
+		id = CPC_Left_nationalism
+		icon = GFX_goal_generic_national_unity
+		cost = 6.00
+		prerequisite = {
+			focus = CPC_Line_dispute
+		}
+		mutually_exclusive = {
+			focus = CPC_Marxism
+		}
+		x = 21
+		y = 2
+			ai_will_do = {
+					factor = 0.5
+				}
+			completion_reward = {
+					remove_ideas = CPC_LuZaiHeFan
+					add_political_power = 100
+					news_event = {
+							id = CPC.2
+						}
+					set_politics = {
+							ruling_party = Left_nationalism
+						}
+				}
+
+	}
+	focus = {
+		id = CPC_Check_the_rich
+		icon = GFX_goal_generic_oil_refinery
+		cost = 7.00
+		prerequisite = {
+			focus = CPC_Left_nationalism
+		}
+		x = 21
+		y = 3
+
+	}
+	focus = {
+		id = CPC_Distribute_farmland
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 6.00
+		prerequisite = {
+			focus = CPC_Check_the_rich
+		}
+		x = 21
+		y = 4
+
+	}
+	focus = {
+		id = CPC_Blind_activism
+		icon = GFX_goal_generic_CAS
+		cost = 5.00
+		prerequisite = {
+			focus = CPC_equalitarianism
+			focus = CPC_own_efforts
+			focus = CPC_Follow_France
+			focus = CPC_Distribute_farmland
+		}
+		available = {
+			has_completed_focus = CPC_Improve_educational_quality
+        }
+		completion_reward = {
+		swap_ideas = {
+			remove_idea = elementary_school
+			add_idea = secondary_school
+		}
+	}
+		x = 14
+		y = 6
+
+	}
+	focus = {
+		id = CPC_Military_discipline
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5.00
+		prerequisite = {
+			focus = CPC_equalitarianism
+			focus = CPC_own_efforts
+			focus = CPC_Follow_France
+			focus = CPC_Distribute_farmland
+		}
+		x = 18
+		y = 6
+
+	}
+	focus = {
+		id = CPC_Hangzhou_Development
+		icon = GFX_goal_generic_propaganda
+		cost = 7.00
+		prerequisite = {
+			focus = CPC_Blind_activism
+		}
+		prerequisite = {
+			focus = CPC_Military_discipline
+		}
+		x = 16
+		y = 7
+			completion_reward = {
+				random_owned_state = {
+							state = 596
+				add_building_construction = {
+						    type = arms_factory
+							level = 2
+							instant_build = yes
+							}
+						}
+				}
+
+	}
+	focus = {
+		id = CPC_Opium_prohibited
+		icon = GFX_goal_generic_demand_territory
+		cost = 4.00
+		prerequisite = {
+			focus = CPC_Revolutionary_fire
+		}
+		mutually_exclusive = {
+			focus = CPC_Partial_opium_allowed
+		}
+		x = 23
+		y = 1
+			completion_reward = {
+					add_ideas = CPC_Ban_on_crows
+				}
+
+	}
+	focus = {
+		id = CPC_Partial_opium_allowed
+		icon = GFX_goal_generic_military_deal
+		cost = 4.00
+		prerequisite = {
+			focus = CPC_Revolutionary_fire
+		}
+		mutually_exclusive = {
+			focus = CPC_Opium_prohibited
+		}
+		x = 26
+		y = 1
+			completion_reward = {
+					add_stability = -0.15
+				}
+
+	}
+	focus = {
+		id = CPC_Military_agreement
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5.00
+		prerequisite = {
+			focus = CPC_Kuomintang_communist_cooperation
+		}
+		completion_reward = {
+			add_equipment_production = {
+				equipment = {
+					type = infantry_equipment_1
+				}
+				requested_factories = 1
+				progress = 0.95
+				amount = 1
+			}
+		}
+		x = 28
+		y = 2
+
+	}
+	focus = {
+		id = CPC_Military_Academy
+		icon = GFX_goal_generic_construct_military
+		cost = 4.00
+		prerequisite = {
+			focus = CPC_Military_agreement
+		}
+		x = 26
+		y = 3
+			completion_reward = {
+					add_command_power = 100
+				}
+
+	}
+	focus = {
+		id = CPC_Infantry_Guidelines
+		icon = GFX_goal_generic_military_sphere
+		cost = 4.00
+		prerequisite = {
+			focus = CPC_Military_Academy
+		}
+		x = 23
+		y = 4
+			completion_reward = {
+					army_experience = 20
+				}
+
+	}
+	focus = {
+		id = CPC_Tactical_training
+		icon = GFX_goal_generic_army_artillery2
+		cost = 4.00
+		prerequisite = {
+			focus = CPC_Military_Academy
+		}
+		x = 25
+		y = 4
+			completion_reward = {
+					add_doctrine_cost_reduction = {
+							name = CPC_Tactical_training
+							cost_reduction = 0.3
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = CPC_Professional_instructor
+		icon = GFX_goal_generic_CAS
+		cost = 4.00
+		prerequisite = {
+			focus = CPC_Military_Academy
+		}
+		x = 27
+		y = 4
+			completion_reward = {
+					army_experience = 20
+					air_experience = 20
+					navy_experience = 20
+				}
+
+	}
+	focus = {
+		id = CPC_Imported_weapons
+		icon = GFX_goal_generic_improve_relations
+		cost = 4.00
+		prerequisite = {
+			focus = CPC_Military_Academy
+		}
+		x = 29
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = CPC_Imported_weapons
+							bonus = 0.5
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = CPC_People_Army
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 4.00
+		prerequisite = {
+			focus = CPC_Infantry_Guidelines
+		}
+		prerequisite = {
+			focus = CPC_Tactical_training
+		}
+		prerequisite = {
+			focus = CPC_Professional_instructor
+		}
+		prerequisite = {
+			focus = CPC_Imported_weapons
+		}
+		x = 26
+		y = 5
+
+	}
+	focus = {
+		id = CPC_Collaborate_and_move_forward
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 4.00
+		prerequisite = {
+			focus = CPC_Kuomintang_communist_cooperation
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+		x = 32
+		y = 2
+
+	}
+	focus = {
+		id = CPC_Economic_agreement
+		icon = GFX_goal_generic_army_motorized
+		cost = 4.00
+		prerequisite = {
+			focus = CPC_Kuomintang_communist_cooperation
+		}
+		x = 36
+		y = 2
+			completion_reward = {
+					swap_ideas = {
+						remove_idea = Agricultural_economy
+						add_idea = low_industrialization
+					}
+				}
+
+	}
+	focus = {
+		id = CPC_National_Protection_Army
+		icon = GFX_goal_generic_national_unity
+		cost = 6.00
+		prerequisite = {
+			focus = CPC_Military_agreement
+		}
+		prerequisite = {
+			focus = CPC_Collaborate_and_move_forward
+		}
+		prerequisite = {
+			focus = CPC_Economic_agreement
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = CPC_Against_warlords
+		icon = GFX_goal_generic_army_doctrines
+		cost = 5.00
+		prerequisite = {
+			focus = CPC_National_Protection_Army
+		}
+		x = 32
+		y = 4
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = 5000
+							producer = CPC
+						}
+				}
+			available = {
+					num_of_factories > 6
+				}
+
+	}
+	focus = {
+		id = CPC_consult_Shanghai_uprising
+		icon = GFX_goal_generic_demand_territory
+		cost = 6.00
+		prerequisite = {
+			focus = CPC_Against_warlords
+		}
+		x = 30
+		y = 5
+			completion_reward = {
+					add_threat = 5
+					declare_war_on = {
+							target = SHH
+							type = annex_everything
+						}
+				}
+
+	}
+	focus = {
+		id = CPC_Crusade_against_Qi_Xieyuan
+		icon = GFX_goal_generic_major_war
+		cost = 6.00
+		prerequisite = {
+			focus = CPC_Against_warlords
+		}
+		x = 32
+		y = 5
+			completion_reward = {
+					add_threat = 5
+					declare_war_on = {
+							target = QIX
+							type = annex_everything
+						}
+				}
+
+	}
+	focus = {
+		id = CPC_Crusade_against_sun_Chuanfang
+		icon = GFX_goal_generic_military_sphere
+		cost = 6.00
+		prerequisite = {
+			focus = CPC_Against_warlords
+		}
+		x = 34
+		y = 5
+			completion_reward = {
+					add_threat = 5
+					declare_war_on = {
+							target = SUC
+							type = annex_everything
+						}
+				}
+
+	}
+	focus = {
+		id = CPC_South_China
+		icon = GFX_goal_generic_construct_civilian
+		cost = 6.00
+		prerequisite = {
+			focus = CPC_consult_Shanghai_uprising
+		}
+		prerequisite = {
+			focus = CPC_Crusade_against_Qi_Xieyuan
+		}
+		prerequisite = {
+			focus = CPC_Crusade_against_sun_Chuanfang
+		}
+		x = 32
+		y = 6
+			completion_reward = {
+					add_political_power = 100
+					add_state_core = 613
+					add_state_core = 835
+					add_state_core = 598
+					add_state_core = 606
+					add_state_core = 749
+					add_state_core = 600
+					add_state_core = 595
+				}
+			available = {
+					NOT = {
+							country_exists = SHH
+						}
+					NOT = {
+							country_exists = QIX
+						}
+					NOT = {
+							country_exists = SUC
+						}
+				}
+
+	}
+	focus = {
+		id = CPC_Congress
+		icon = GFX_goal_generic_alliance
+		cost = 4.00
+		prerequisite = {
+			focus = CPC_South_China
+		}
+		x = 32
+		y = 7
+
+	}
+	focus = {
+		id = CPC_Agricultural_production
+		icon = GFX_goal_generic_construct_civilian
+		cost = 4.00
+		prerequisite = {
+			focus = CPC_Economic_agreement
+		}
+		completion_reward = {
+			random_owned_state = {
+						state = 596
+			            add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+						}
+					}
+			}
+		x = 38
+		y = 3
+
+	}
+	focus = {
+		id = CPC_Smallholder_economy
+		icon = GFX_goal_generic_consumer_goods
+		cost = 4.00
+		prerequisite = {
+			focus = CPC_Agricultural_production
+		}
+		completion_reward = {
+				swap_ideas = {
+					remove_idea = closed_economy
+					add_idea = limited_exports
+				}
+			}
+		x = 35
+		y = 4
+
+	}
+	focus = {
+		id = CPC_shipyard
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 4.00
+		prerequisite = {
+			focus = CPC_Smallholder_economy
+		}
+		completion_reward = {
+			random_owned_state = {
+						state = 596
+			            add_building_construction = {
+						type = naval_base
+						level = 1
+						instant_build = yes
+						}
+					}
+			}
+		x = 36
+		y = 5
+
+	}
+	focus = {
+		id = CPC_Ningbo_factory
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 4.00
+		prerequisite = {
+			focus = CPC_Agricultural_production
+		}
+		completion_reward = {
+			random_owned_state = {
+						state = 596
+			            add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+						}
+					}
+					
+			}
+		x = 41
+		y = 4
+
+	}
+	focus = {
+		id = CPC_arsenal
+		icon = GFX_goal_generic_army_tanks
+		cost = 4.00
+		prerequisite = {
+			focus = CPC_Ningbo_factory
+		}
+		prerequisite = {
+			focus = CPC_Smallholder_economy
+		}
+		completion_reward = {
+		random_owned_state = {
+			state = 596
+			add_building_construction = {
+			type = arms_factory
+			level = 2
+			instant_build = yes
+			}
+		}
+		}
+		x = 38
+		y = 5
+
+	}
+	focus = {
+		id = CPC_Build_airport
+		icon = GFX_goal_generic_build_airforce
+		cost = 4.00
+		prerequisite = {
+			focus = CPC_Ningbo_factory
+		}
+		completion_reward = {
+			random_owned_state = {
+						state = 596
+			            add_building_construction = {
+						type = Air_base
+						level = 1
+						instant_build = yes
+						}
+					}
+			}
+		x = 40
+		y = 5
+
+	}
+	focus = {
+		id = CPC_Solidarity_workers
+		icon = GFX_goal_generic_defence
+		cost = 6.00
+		prerequisite = {
+			focus = CPC_Hangzhou_Development
+		}
+		x = 16
+		y = 8
+
+	}
+	focus = {
+		id = CPC_Armed_workers
+		icon = GFX_goal_generic_small_arms
+		cost = 6.00
+		prerequisite = {
+			focus = CPC_Solidarity_workers
+		}
+		x = 14
+		y = 9
+
+	}
+	focus = {
+		id = CPC_Learn_from_experience
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 4.00
+		prerequisite = {
+			focus = CPC_Solidarity_workers
+		}
+		x = 18
+		y = 9
+
+	}
+	focus = {
+		id = CPC_Organize_worker_riots
+		icon = GFX_goal_generic_cavalry
+		cost = 3.00
+		prerequisite = {
+			focus = CPC_Armed_workers
+		}
+		prerequisite = {
+			focus = CPC_Learn_from_experience
+		}
+		x = 16
+		y = 10
+
+	}
+}

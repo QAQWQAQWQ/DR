@@ -1,0 +1,75 @@
+add_namespace = austria
+country_event = {
+	id = austria.1
+	title = austria.1.t
+	desc = austria.1.d
+	picture = GFX_report_event_001
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.1.a
+		ai_chance = { factor = 50 }
+		set_variable = {
+			var = aus_support
+			value = 100
+		}
+		set_variable = {
+			var = pre_support
+			value = 0
+		}
+	}
+	option = {
+		name = austria.1.b
+		ai_chance = { factor = 50 }
+		set_variable = {
+			var = aus_support
+			value = 0
+		}
+		set_variable = {
+			var = pre_support
+			value = 100
+		}
+	}
+	option = {
+		name = austria.1.c
+		ai_chance = { factor = 5 }
+		every_owned_state = {
+			add_core_of = AOX
+		}
+		every_owned_state = {
+			add_core_of = WWS
+		}
+		AOX = {declare_war_on = { target = ROOT type = annex_everything }}
+		WWS = {declare_war_on = { target = ROOT type = annex_everything }}
+	}
+}
+country_event = {
+	id = austria.2
+	title = austria.2.t
+	desc = austria.2.d
+	picture = GFX_report_event_001
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.2.a
+		every_owned_state = {
+			add_core_of = AOX
+		}
+		AOX = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+}
+country_event = {
+	id = austria.3
+	title = austria.3.t
+	desc = austria.3.d
+	picture = GFX_report_event_001
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.3.a
+		every_owned_state = {
+			add_core_of = WWS
+		}
+		WWS = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+}

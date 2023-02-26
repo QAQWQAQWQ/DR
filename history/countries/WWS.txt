@@ -1,0 +1,100 @@
+﻿capital = 64
+
+oob = "WWS_1920"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	fuel_silos = 1
+}
+
+recruit_character = WWS_WilliamII
+recruit_character = WWS_Falkenhayn
+recruit_character = WWS_Max_Hoffmann
+recruit_character = WWS_Gregor_Strasser
+recruit_character = WWS_August_von_Mackensen
+recruit_character = WWS_Hindenburg
+recruit_character = WWS_Feng_Almin
+recruit_character = WWS_Alexander_Feng_Crook
+recruit_character = WWS_Wilhelm_von_PreuBen
+recruit_character = WWS_Ludwig_von_Moltke
+recruit_character = WWS_von_Below
+recruit_character = WWS_von_Bottmer
+recruit_character = WWS_Hermann_von_Eichhorn
+recruit_character = WWS_von_AlbertHart
+recruit_character = WWS_Ludendorff
+recruit_character = WWS_Albert_Grzesinski
+recruit_character = WWS_Wolfgang_Kapp
+recruit_character = WWS_eduard_bernstein
+recruit_character = WWS_Gustav_Stresemann
+recruit_character = WWS_Wilhelm_Carl_Josef_Cuno
+recruit_character = WWS_Andreas_Hermes
+
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+
+		#electronics
+		
+		
+		
+		
+		
+
+		#industry
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+puppet =DSX
+puppet =DSD
+puppet =DSN
+puppet =DAS
+country_event = {id=WWS.7 days=110 }
+set_politics = {
+	ruling_party = monarchy
+	last_election = "1918.11.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+add_ideas = {
+	
+#law
+Private_economy
+		completely_illiterate
+		low_industrialization
+		Freedom_belief
+		Autonomous_police
+		Weak_investments
+		Patriarchy_supreme
+		Control_media
+		Deflection_employer
+
+Deutscher_Bund
+Deutscher_Zollverein
+}
+set_popularities = {
+	democratic = 15
+	monarchy = 65
+                social_democrat=20
+}

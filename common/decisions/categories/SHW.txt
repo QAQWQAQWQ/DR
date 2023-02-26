@@ -1,0 +1,30 @@
+SHW_Imperial_Russian_Army = {
+	#icon = SHW_Imperial_Russian_Army
+	scripted_gui = SHW_Imperial_Russian_Army_ui
+
+	priority = 9
+
+	allowed = {
+		tag = SHW 
+	} 
+} 
+SHW_Food_requisition_operations = {
+	#icon = SHW_Imperial_Russian_Army
+	picture = GFX_decisions_Food_requisition_operations
+	priority = 8
+ 
+	allowed = {
+		tag = SHW    
+	}       
+}  
+SHW_DUMA = {
+	#icon = SHW_Imperial_Russian_Army                 
+	#picture = GFX_decisions_Food_requisition_operations
+	scripted_gui =SHW_DUMA_ui          
+
+	priority = 17               
+
+	allowed = {
+		tag = SHW
+	} 
+}                              

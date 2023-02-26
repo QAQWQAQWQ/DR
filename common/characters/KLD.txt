@@ -1,0 +1,30 @@
+characters={
+	KLD_Stjepan_Radic={
+		name=KLD_Stjepan_Radic
+		portraits={
+			civilian={
+				large="gfx/leaders/KLD/Portrait_Stjepan_Radic.tga"
+			}
+		}
+		country_leader={
+			ideology=Agrarian_socialism_type
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+    KLD_Ivan_Palecek={
+		name=KLD_Ivan_Palecek
+		portraits={
+			civilian={
+				large="gfx/leaders/KLD/Portrait_Ivan_Palecek.tga"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

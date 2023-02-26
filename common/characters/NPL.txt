@@ -1,0 +1,84 @@
+characters={
+	NPL_Napoleon_IV={
+		name=NPL_Napoleon_IV
+		portraits={
+			civilian={
+				large="gfx/leaders/NPL/Portrait_Napoleon_IV.tga"
+			}
+		}
+		country_leader={
+			ideology=royalists
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	NPL_Petain={
+		name=NPL_Petain
+		portraits={
+			army={
+				large="gfx/leaders/NPL/Portrait_Petain.tga"
+				small="gfx/interface/ideas/Portrait_Petain.dds"
+			}
+		}
+		corps_commander={
+			traits={ expert_delegator }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	NPL_FuXi={
+		name=NPL_FuXi
+		portraits={
+			army={
+				large="gfx/leaders/NPL/Portrait_FuXi.tga"
+				small="gfx/interface/ideas/Portrait_FuXi.dds"
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=2
+		}
+}
+NPL_Maxime_Weygand={
+	name=NPL_Maxime_Weygand
+	portraits={
+		army={
+			large="gfx/leaders/NPL/Portrait_Maxime_Weygand.tga"
+			small="gfx/interface/ideas/Portrait_Maxime_Weygand.dds"
+		}
+	}
+	corps_commander={
+		traits={  }
+		skill=2
+		attack_skill=2
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=2
+	}
+}
+NPL_Maurice_Gamelin={
+	name=NPL_Maurice_Gamelin
+	portraits={
+		army={
+			large="gfx/leaders/NPL/Portrait_Maurice_Gamelin.tga"
+			small="gfx/interface/ideas/Portrait_Maurice_Gamelin.dds"
+		}
+	}
+	corps_commander={
+		traits={  }
+		skill=2
+		attack_skill=2
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=2
+	}
+}		
+	}

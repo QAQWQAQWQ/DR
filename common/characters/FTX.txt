@@ -1,0 +1,346 @@
+characters={
+
+FTX_Zhang_Zuolin={
+		name=FTX_Zhang_Zuolin
+		portraits={
+			civilian={
+				large="gfx/leaders/FTX/Portrait_Zhang_Zuolin.tga"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	FTX_Zhang_XueLiang={
+		name=FTX_Zhang_XueLiang
+		portraits={
+			civilian={
+				large="gfx/leaders/FTX/Portrait_Zhang_XueLiang.tga"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	FTX_puyi={
+		name=FTX_puyi
+		portraits={
+			civilian={
+				large="gfx/leaders/FTX/Portrait_puyi.tga"
+			}
+		}
+		country_leader={
+			ideology=royalists
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	FTX_XieWenDong={
+		name=FTX_XieWenDong
+		portraits={
+			army={
+				large="gfx/leaders/FTX/portrait_XieWenDong.tga"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}	
+    FTX_Zhang_Zongchang={
+		name=FTX_Zhang_Zongchang
+		portraits={
+			army={
+				large="gfx/leaders/FTX/portrait_Zhang_Zongchang.tga"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+		}
+	}	
+	FTX_WangFuLing={
+		name=FTX_WangFuLing
+		portraits={
+			army={
+				large="gfx/leaders/FTX/portrait_WangFuLing.tga"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	FTX_Chupufu={
+		name=FTX_Chupufu
+		portraits={
+			army={
+				large="gfx/leaders/FTX/portrait_Chupufu.tga"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	FTX_Nieka={
+		name=FTX_Nieka
+		portraits={
+			army={
+				large="gfx/leaders/FTX/portrait_Nieka.tga"
+			}
+		}
+		corps_commander={
+			traits={ career_officer harsh_leader}
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+		}
+	}
+	FTX_XuYuanQuan={
+		name=FTX_XuYuanQuan
+		portraits={
+			army={
+				large="gfx/leaders/FTX/portrait_XuYuanQuan.tga"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	FTX_BiSuCheng={
+		name=FTX_BiSuCheng
+		portraits={
+			army={
+				large="gfx/leaders/FTX/portrait_BiSuCheng.tga"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	FTX_Chenguorui={
+		name=FTX_Chenguorui
+		portraits={
+			army={
+				large="gfx/leaders/FTX/portrait_Chenguorui.tga"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	FTX_FuZuoYi={
+		name=FTX_FuZuoYi
+		portraits={
+			army={
+				large="gfx/leaders/FTX/portrait_FuZuoYi.tga"
+			}
+		}
+		corps_commander={
+			traits={ defensive_doctrine}
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	FTX_HeFu={
+		name=FTX_HeFu
+		portraits={
+			army={
+				large="gfx/leaders/FTX/portrait_HeFu.tga"
+			}
+		}
+		corps_commander={
+			traits={ career_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	FTX_Mark_leniko={
+		name=FTX_Mark_leniko
+		portraits={
+			army={
+				large="gfx/leaders/FTX/portrait_Mark leniko.tga"
+			}
+		}
+		corps_commander={
+			traits={ career_officer harsh_leader }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	FTX_Kostrov={
+		name=FTX_Kostrov
+		portraits={
+			army={
+				large="gfx/leaders/FTX/portrait_Kostrov.tga"
+			}
+		}
+		corps_commander={
+			traits={ career_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	FTX_YangYuTing={
+		name=FTX_YangYuTing
+		portraits={
+			army={
+				large="gfx/leaders/FTX/portrait_YangYuTing.tga"
+			}
+		}
+		corps_commander={
+			traits={ career_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	FTX_WuJunSheng={
+		name=FTX_WuJunSheng
+		portraits={
+			army={
+				large="gfx/leaders/FTX/portrait_WuJunSheng.tga"
+			}
+		}
+		field_marshal={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	FTX_MaZhangShang={
+		name=FTX_MaZhangShang
+		portraits={
+			army={
+				large="gfx/leaders/FTX/portrait_MaZhangShang.tga"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	FTX_ZhuQingLang={
+		name=FTX_ZhuQingLang
+		portraits={
+			army={
+				large="gfx/leaders/FTX/Portrait_ZhuQingLang.tga"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	FTX_GuoSongLing={
+		name=FTX_GuoSongLing
+		portraits={
+			army={
+				large="gfx/leaders/FTX/portrait_GuoSongLing.tga"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	FTX_ZhangJingHui={
+		name=FTX_ZhangJingHui
+		portraits={
+			army={
+				small="GFX_idea_ZhangJingHui"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FTX_ZhangJingHui
+			allowed = {
+				original_tag = FTX
+			}
+			traits = {
+				backroom_backstabber
+			}
+			cost = 5
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	}

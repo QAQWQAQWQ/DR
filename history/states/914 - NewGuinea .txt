@@ -1,0 +1,32 @@
+state=
+{
+	id=914
+	name="STATE_914"
+	manpower = 20373
+	state_category = town
+	
+	
+	history=
+	{
+		owner = DAS
+		add_core_of = DAS
+		victory_points = {
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+                                12237 = {
+				naval_base = 2
+
+			}
+		}
+                                victory_points = {
+			12237 3 
+		}
+	}
+	provinces={
+		10423 11004 12240 2129 11018 10954 12428 1389 4393 5135 7614 12154 12193 7365 10251 12237 4418 12931 12400
+	}
+                buildings_max_level_factor=1
+	local_supplies=3.0 
+}

@@ -1,0 +1,33 @@
+state=
+{
+	id=915
+	name="STATE_915"
+	manpower = 658659
+	
+	state_category = town
+
+	history=
+	{
+		owner = ENL
+		buildings = {
+			infrastructure = 2 #was: 5
+			industrial_complex = 1
+			12049 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			12049 5
+		}
+		victory_points = {
+			4073 3
+		}
+
+	}
+
+	provinces={
+		4073 12049
+	}
+
+	local_supplies=0.0 
+}

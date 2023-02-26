@@ -1,0 +1,26 @@
+
+state={
+	id=446
+	name="STATE_446" # Suez
+	manpower = 131732
+	state_category = wasteland
+
+	history={
+		owner = TEQ
+		buildings = {
+			infrastructure = 3
+		}
+		
+		
+		add_core_of = TEQ
+
+	}
+
+	provinces={
+		9947
+	}
+
+	buildings_max_level_factor=1.000
+	
+	local_supplies=0.000
+}

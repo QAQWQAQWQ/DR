@@ -1,0 +1,41 @@
+scripted_gui = {
+
+	WWS_Little_Deutsches_Project_ui = {
+		context_type = decision_category
+		window_name = "WWS_Little_Deutsches_Project_ui_window"
+
+		properties={
+			WWS_Bavaria = {
+				frame = WWS_Bavaria
+			}
+			WWS_Wurttemberg = {
+				frame = WWS_Wurttemberg
+			}
+			WWS_Baden = {
+				frame = WWS_Baden
+			}
+			WWS_Nassau = {
+				frame = WWS_Nassau
+			} 
+			WWS_Hesse = {
+				frame = WWS_Hesse
+			}
+			WWS_Westphalia = {
+				frame = WWS_Westphalia
+			}
+			WWS_Saxony = {
+				frame = WWS_Saxony
+			}
+			WWS_Mecklenburg = {
+				frame = WWS_Mecklenburg
+			}
+			WWS_Hanover = {
+				frame = WWS_Hanover
+			}
+			WWS_Oldenburg = {
+				frame = WWS_Oldenburg
+			}
+			
+	} 
+}
+}

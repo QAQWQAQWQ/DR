@@ -1,0 +1,25 @@
+﻿###########################
+# USR Events
+###########################
+
+add_namespace = USR
+news_event = {
+	id = USR.1
+	title = USR.1.t
+	desc = USR.1.d
+	picture = GFX_Far_Eastern_Republics
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = USR.1.a
+		hidden_effect = {
+			USR= { 
+			transfer_state = 221
+			add_state_core = 221
+			transfer_state = 228
+			add_state_core = 228
+	    }
+		}
+	}
+	}
+	

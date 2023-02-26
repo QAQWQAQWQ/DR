@@ -1,0 +1,18 @@
+Arms_procurement = {
+	icon = generic_construction
+	
+	picture = GFX_decisions_Arms_procurement
+
+	priority = 6
+	
+	visible ={
+		has_completed_focus = HES_Arms_procurement
+	}
+	allowed = {
+			TAG = HES
+	}
+	
+		
+}
+
+

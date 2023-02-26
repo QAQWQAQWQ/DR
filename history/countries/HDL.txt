@@ -1,0 +1,32 @@
+﻿capital = 427
+
+oob = "HDL_1920"
+
+# Starting tech
+set_technology = {
+}
+
+recruit_character = HDL_Osman_Ali_Khan_Asaf_Jah_VII
+
+	set_technology = {
+
+		#electronics
+		
+
+		#industry
+		
+	}
+
+set_politics = {
+	ruling_party = monarchy
+	last_election = "1918.11.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 5
+	national_populist = 1
+	monarchy = 89
+	communism = 5
+}

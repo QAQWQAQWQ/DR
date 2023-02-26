@@ -1,0 +1,90 @@
+Montenegrin_War = {
+	
+	The_end_of_Montenegro = {
+		icon = generic_ignite_civil_war
+		cost = 0
+		available = {          
+controls_state = 105                
+          }
+activation = {                          
+               has_war_with = HES                   
+          }
+		days_remove = 35
+		fixed_random_seed = no
+		fire_only_once = yes
+		days_mission_timeout = 30
+		is_good = yes
+          timeout_effect = { 
+			add_political_power = -300 
+			add_stability = -0.35                   
+            hidden_effect = {
+				country_event = SIW.4
+			}              
+          }
+		ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+				add_political_power = 150
+			}
+		}
+	}
+IMRO = {
+	Key_members_wanted = {
+			icon = generic_ignite_civil_war
+			cost = 20
+			days_remove = 35
+			fixed_random_seed = no
+			fire_only_once = yes
+			is_good = no
+			timeout_effect = { 
+				add_stability = -0.1      
+			  }
+			ai_will_do = {
+				factor = 1
+				}
+				complete_effect = {
+					add_political_power = 10
+					add_stability = 0.03
+				}
+			}
+	Form_patrols = {
+			icon = generic_ignite_civil_war
+			cost = 20
+			
+			days_remove = 35
+			fixed_random_seed = no
+			fire_only_once = no
+			is_good = no
+			timeout_effect = { 
+				add_stability = -0.1      
+			  }
+			ai_will_do = {
+				factor = 1
+				}
+				complete_effect = {
+					add_political_power = 10
+					add_stability = -0.02
+				}
+			}
+	Fatherland_Guard = {
+			icon = generic_ignite_civil_war
+			cost = 20
+			days_remove = 150
+			fixed_random_seed = no
+			fire_only_once = no
+			is_good = yes
+			visible={ has_completed_focus = Assemble_officers_Motherland}
+			ai_will_do = {
+				factor = 1
+			}
+			complete_effect = {
+				107={create_unit = {
+					division = "name = \"祖国军卫队\" division_template = \"步兵旅\" start_experience_factor = 1"
+					owner = SIW
+					prioritize_location = 11586
+					}}
+			
+				}
+			}
+		}

@@ -1,0 +1,21 @@
+﻿###########################
+# SCX Events
+###########################
+
+add_namespace = SCX
+
+news_event = {
+	id = SCX.1
+	title = SCX.1.t
+	desc = SCX.1.d
+	picture = GFX_drought
+	is_triggered_only = yes
+	major = no
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = SCX.1.a
+			}
+	}

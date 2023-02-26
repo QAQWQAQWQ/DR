@@ -1,0 +1,21 @@
+ideas = {
+                            country = {
+		SCX_SiChuanNeiZhang = {
+
+			allowed = {
+				always = No
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = SiChuan
+
+			modifier = {
+				consumer_goods_factor = 0.10
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+			}
+                                       }
+		}
+}

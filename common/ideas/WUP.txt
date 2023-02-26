@@ -1,0 +1,20 @@
+ideas = {
+country = {
+		WUP_Buddhism = {
+			picture = Buddhism
+			modifier = {
+                                     industrial_capacity_factory = -0.02
+                                     line_change_production_efficiency_factor = -0.04
+                                     consumer_goods_factor = 0.03
+                                     research_speed_factor = -0.05
+                                     local_factories = -0.05
+                                     stability_factor = 0.05
+                                       }
+		}
+    WUP_Tension_movement = {
+			picture = Tension_movement
+			modifier = {
+}
+		}
+}
+}

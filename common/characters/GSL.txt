@@ -1,0 +1,32 @@
+characters={
+	FTX_YanYuTing={
+		name=FTX_YangYuTing
+		portraits={
+			army={
+				large="gfx/leaders/FTX/portrait_YangYuTing.tga"
+			}
+		}
+		country_leader={
+			ideology=national_populist_type
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	FTX_YangYuTing2={
+		name=FTX_YangYuTing2
+		portraits={
+			army={
+				large="gfx/leaders/FTX/portrait_YangYuTing.tga"
+			}
+		}
+		corps_commander={
+			traits={ career_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	}

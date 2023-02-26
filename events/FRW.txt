@@ -1,0 +1,311 @@
+﻿###########################
+# FRW Events
+###########################
+
+add_namespace = FRW
+
+country_event = {
+	id = FRW.1
+	title = FRW.1.t
+	desc = FRW.1.d
+	picture = GFX_LENIN
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = FRW.1.a
+	    }
+	}
+news_event = {
+		id = FRW.2
+		title = FRW.2.t
+		desc = FRW.2.d
+		picture = GFX_Second_International
+		is_triggered_only = yes
+		fire_only_once = yes
+		option = {
+			name = FRW.2.a
+			complete_national_focus = FRW_Second_International 
+			hidden_effect = {
+			country_event = { id = FRW.3 days = 15 }
+		}
+			}
+		}
+country_event = {
+			id = FRW.3
+			title = FRW.3.t
+			desc = FRW.3.d
+			picture = GFX_China
+			is_triggered_only = yes
+			fire_only_once = yes
+			trigger = {
+				
+				}
+			option = {
+				name = FRW.3.a
+				}
+				option = {
+					name = FRW.3.b
+					}
+			}
+country_event = {
+				id = FRW.4
+				title = FRW.4.t
+				desc = FRW.4.d
+				picture = GFX_ENS
+				is_triggered_only = yes
+				fire_only_once = yes
+				trigger = {
+					
+					}
+				option = {
+					name = FRW.4.a
+					set_country_flag = Anarchism
+					}
+				option = {
+						name = FRW.4.b
+						}
+				}
+country_event = {
+		id = FRW.5
+		title = FRW.5.t
+		desc = FRW.5.d
+		picture = GFX_assassinate
+		is_triggered_only = yes
+		fire_only_once = yes
+		trigger = {
+						}
+		option = {
+		name = FRW.5.a
+		set_country_flag = Millerland_dead
+		}
+	}
+country_event = {
+		id = FRW.6
+		title = FRW.6.t
+		desc = FRW.6.d
+		picture = GFX_Yhudim
+		is_triggered_only = yes
+		fire_only_once = yes
+		trigger = {
+			}
+		option = {
+		name = FRW.6.a
+		country_event = { id = FRW.7 days = 10 }
+			}
+		option = {
+		name = FRW.6.b
+		}
+		}
+country_event = {
+		id = FRW.7
+		title = FRW.7.t
+		desc = FRW.7.d
+		picture = GFX_French_parade
+		is_triggered_only = yes
+		fire_only_once = yes
+		trigger = {
+		}
+		option = {
+		name = FRW.7.a
+			}
+		option = {
+		name = FRW.7.b
+		}
+		}
+country_event = {
+		id = FRW.8
+		title = FRW.8.t
+		desc = FRW.8.d
+		picture = GFX_French_parade
+		is_triggered_only = yes
+		fire_only_once = yes
+		trigger = {
+			}
+		option = {
+		name = FRW.8.a
+			}
+	}
+country_event = {
+		id = FRW.9
+		title = FRW.9.t
+		desc = FRW.9.d
+		picture = GFX_Georges_Valois
+		is_triggered_only = yes
+		fire_only_once = yes
+		trigger = {
+			}
+		option = {
+		name = FRW.9.a
+			}
+	}
+country_event = {
+		id = FRW.10
+		title = FRW.10.t
+		desc = FRW.10.d
+		picture = GFX_Georges_Valois
+		is_triggered_only = yes
+		fire_only_once = yes
+		trigger = {
+			Anarchopedia > 0.25
+			}
+		option = {
+		name = FRW.10.a
+			}
+		option = {
+			name = FRW.10.b
+			country_event = { id = FRW.11 days = 10 }
+			}
+	}
+country_event = {
+		id = FRW.11
+		title = FRW.11.t
+		desc = FRW.11.d
+		picture = GFX_Georges_Valois
+		is_triggered_only = yes
+		fire_only_once = yes
+		trigger = {
+			}
+		option = {
+		    name = FRW.11.a
+			}
+		option = {
+			name = FRW.11.b
+			country_event = { id = FRW.12 days = 10 }
+			}
+	}
+country_event = {
+		id = FRW.12
+		title = FRW.12.t
+		desc = FRW.12.d
+		picture = GFX_Georges_Valois
+		is_triggered_only = yes
+		fire_only_once = yes
+		trigger = {
+			}
+		option = {
+		    name = FRW.12.a
+			}
+		option = {
+			name = FRW.12.b
+			country_event = { id = FRW.13 days = 12 }
+			add_popularity = {
+				ideology = Anarchopedia
+				popularity = 0.15
+			}
+		    }
+}
+country_event = {
+		id = FRW.13
+		title = FRW.13.t
+		desc = FRW.13.d
+		picture = GFX_Georges_Valois
+		is_triggered_only = yes
+		fire_only_once = yes
+		trigger = {
+			}
+		option = {
+		    name = FRW.13.a
+			add_popularity = {
+				ideology = Anarchopedia
+				popularity = 0.55
+			}
+			}
+}
+country_event = {
+	id = FRW.14
+	title = FRW.14.t
+	desc = FRW.14.d
+	picture = GFX_Georges_Valois
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.14.a
+		custom_effect_tooltip = FRW_14_tt
+		}
+}	
+country_event = {
+	id = FRW.15
+	title = FRW.15.t
+	desc = FRW.15.d
+	picture = GFX_Georges_Valois
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.15.a
+        add_political_power = -20
+		add_stability = 0.05
+		}
+	option = {
+		name = FRW.15.b
+		add_stability = -0.05
+			}	
+}
+country_event = {
+	id = FRW.16
+	title = FRW.16.t
+	desc = FRW.16.d
+	picture = GFX_Georges_Valois
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.16.a
+        add_political_power = -50
+		add_stability = 0.05
+		}
+	option = {
+		name = FRW.16.b
+			}
+	option = {
+	    name = FRW.16.c
+		add_political_power = 100
+		add_stability = -0.15
+		custom_effect_tooltip = FRW_16_c_tt
+		}			
+}
+country_event = {
+	id = FRW.17
+	title = FRW.17.t
+	desc = FRW.17.d
+	picture = GFX_LJC
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.17.a
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.03
+		}
+		}
+	option = {
+		name = FRW.17.b
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.03
+		}
+			}
+	option = {
+	    name = FRW.17.c
+		add_popularity = {
+			ideology = communism
+			popularity = 0.03
+		}
+		}
+	option = {
+	    name = FRW.17.D
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.03
+		}
+		}				
+}

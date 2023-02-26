@@ -1,0 +1,134 @@
+on_actions = {
+	on_startup= {
+		effect = {
+		    every_country = {
+                limit = {
+                    OR = {
+                        tag = AOX
+                        tag = WWS
+                        tag = AGC
+                        tag = LSB
+                        tag = DHD
+                        tag = DON
+                        tag = DOF
+                        tag = DOB
+                        tag = DOR
+                        tag = BXM
+                        tag = DOL
+                        tag = DOH
+                        tag = DOA
+                        tag = DOM
+                        tag = DOS
+                    }
+                }
+				# set_power_balance = {
+				# 	id = ger_con_balance
+                #    left_side = ger_aus_side
+                #    right_side = ger_pre_side
+				#	set_default = yes
+				# }
+                set_variable = {
+                    global.ger_con_end = 0
+                }
+                set_variable = {
+                    ger_con_cangetsupport = 1
+                }
+                set_variable = {
+                    gercon_nat = AGC
+                }
+                set_variable = {
+                    var = aus_support
+                    value = 0
+                }
+                set_variable = {
+                    var = pre_support
+                    value = 0
+                }
+                set_variable = {
+                    var = ger_support
+                    value = 0
+                }
+                gercon_upd_pbv_var = yes
+                gercon_clamp_vars = yes
+            }
+            AOX = {
+                set_variable = {
+                    var = ger_con_cangetsupport
+                    value = 0
+                }
+                set_variable = {
+                    var = aus_support
+                    value = 100
+                }
+            }
+            WWS = {
+                set_variable = {
+                    var = ger_con_cangetsupport
+                    value = 0
+                }
+                set_variable = {
+                    var = pre_support
+                    value = 100
+                }
+            }
+            AGC = {
+                set_variable = {
+                    var = ger_con_cangetsupport
+                    value = 0
+                }
+            }
+            BXM = {
+                set_variable = {
+                    var = ger_con_cangetsupport
+                    value = 0
+                }
+                set_variable = {
+                    var = aus_support
+                    value = 100
+                }
+            }
+            DOM = {
+                set_variable = {
+                    var = pre_support
+                    value = 60
+                }
+            }
+            DOS = {
+                set_variable = {
+                    var = aus_support
+                    value = 60
+                }
+            }
+            DOR = {
+                set_variable = {
+                    var = aus_support
+                    value = 30
+                }
+            }
+            DOF = {
+                set_variable = {
+                    var = aus_support
+                    value = 40
+                }
+            }
+            DOB = {
+                set_variable = {
+                    var = pre_support
+                    value = 10
+                }
+            }
+            DOA = {
+                set_variable = {
+                    var = pre_support
+                    value = 20
+                }
+            }
+            DOH = {
+                set_variable = {
+                    var = pre_support
+                    value = 10
+                }
+            }
+        }            
+    }
+}

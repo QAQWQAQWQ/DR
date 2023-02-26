@@ -1,0 +1,17 @@
+characters={
+	MXG_Alvaro_Obregon={
+		name=MXG_Alvaro_Obregon
+		portraits={
+			civilian={
+				large="gfx/leaders/MXG/Portrait_Alvaro_Obregón.tga"
+			}
+		}
+		country_leader={
+			ideology=Agrarian_socialism_type
+			desc = MXG_Alvaro_Obregon_desc
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

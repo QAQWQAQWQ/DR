@@ -1,0 +1,17 @@
+characters={
+	ITC_Antonio_Gramsci={
+		name=ITC_Antonio_Gramsci
+		portraits={
+			civilian={
+				large="gfx/leaders/ITC/portrait_Antonio_Gramsci.tga"
+			}
+		}
+		country_leader={
+			ideology=marxism
+            desc=ITC_Antonio_Gramsci_DESC
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
+	}

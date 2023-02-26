@@ -1,0 +1,39 @@
+characters={
+	ASI_Zewditu={
+		name=ASI_Zewditu
+		portraits={
+			civilian={
+				large="gfx/leaders/ASI/portrait_Zewditu.tga"
+			}
+		}
+		country_leader={
+			ideology=royalists
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ASI_Haile_Selassie_I={
+		name=ASI_Haile_Selassie_I
+		portraits={
+			civilian={
+				large="gfx/leaders/ASI/portrait_Haile_Selassie_I.tga"
+				small="GFX_idea_Haile_Selassie_I"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = ASI_Haile_Selassie_I_H
+			allowed = {
+				original_tag = ASI
+			}
+			traits = {
+				head_of_government
+				crown_regent
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}		
+	}

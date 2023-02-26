@@ -1,0 +1,261 @@
+﻿###########################
+# News.1 Events
+###########################
+
+add_namespace = NewEvents
+add_namespace = event
+add_namespace = WorldNews
+news_event = {
+	id = NewEvents.1
+	title = NewEvents.1.t
+	desc = NewEvents.1.d
+
+	picture = GFX_ENL_Olympic_Games
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+			name = NewEvents.1.a
+			hidden_effect ={
+				ENL={ country_event = { id= ENL.6 days = 20}}
+			}
+		}		
+}
+
+news_event = {
+	id = WorldNews.4
+	title = WorldNews.4.t
+	desc = WorldNews.4.d
+
+	picture = GFX_Balkan_League
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+			name = WorldNews.4.a
+			BOJ = { create_faction = Balkan_League}
+			BOJ = { add_to_faction = SIW }
+			BOJ = { add_to_faction = YED }
+			BOJ = { add_to_faction = HES }
+			BOJ = { add_to_faction = ALB }
+		}		
+}
+
+country_event = {
+	id = event.1
+	title = event.1.t
+	desc = event.1.d
+    hidden = yes
+
+	trigger = {
+		WWS = {
+			OR = {
+				has_war_with = FRW
+			}
+		}
+	}
+	fire_only_once = yes
+
+	immediate ={ news_event = { id= WorldNews.3}}
+
+	option = {
+			name = event.1.a
+		}
+}
+
+
+news_event = {
+	id = WorldNews.3
+	title = WorldNews.3.t
+	desc = WorldNews.3.d
+
+	picture = GFX_WWI
+
+	major = yes
+
+    is_triggered_only = yes
+
+	option = {
+			name = WorldNews.3.a	
+		}		
+}
+country_event = {
+	id = event.2
+	title = event.2.t
+	desc = event.2.d
+    hidden = yes
+
+	trigger = {
+		FRW = {
+			OR = {
+				has_war_with = ENL
+			}
+		}
+	}
+	fire_only_once = yes
+
+	immediate ={ news_event = { id= WorldNews.5}}
+
+	option = {
+			name = event.2.a
+		}
+}
+
+
+news_event = {
+	id = WorldNews.5
+	title = WorldNews.5.t
+	desc = WorldNews.5.d
+
+	picture = GFX_Anglo_French_war
+
+	major = yes
+
+    is_triggered_only = yes
+
+	option = {
+			name = WorldNews.5.a	
+		}		
+}
+
+news_event = {
+	id = WorldNews.6
+	title = WorldNews.6.t
+	desc = WorldNews.6.d
+
+	picture = GFX_WWI
+
+	major = yes
+
+	fire_only_once = yes
+
+    trigger = {
+		OR = {
+			original_tag = WWS
+			original_tag = DOM
+			original_tag = DMW
+			original_tag = WWS
+			original_tag = LSB
+			original_tag = DOH
+			original_tag = DOL
+			original_tag = DHD
+			original_tag = DOS
+			original_tag = DOF
+			original_tag = DOB
+			original_tag = DOA
+			original_tag = DON
+					}
+					controls_state = 763
+					controls_state = 188
+					controls_state = 5
+					controls_state = 85
+					controls_state = 807
+					controls_state = 63
+					controls_state = 62
+					controls_state = 86
+					controls_state = 68
+					controls_state = 64
+					controls_state = 66
+					controls_state = 67
+					controls_state = 762
+
+					controls_state = 65
+					controls_state = 60
+
+					controls_state = 61
+					controls_state = 59
+					controls_state = 926
+
+					controls_state = 57
+
+					controls_state = 51
+					controls_state = 55
+					controls_state = 42
+					controls_state = 925
+					controls_state = 50
+
+					controls_state = 54
+					controls_state = 53
+					controls_state = 52
+	}
+
+	option = {
+			name = WorldNews.6.a
+			set_global_flag = German_unification_ttt	
+		}		
+}
+news_event = {
+	id = NewEvents.7
+	title = NewEvents.7.t
+	desc = NewEvents.7.d
+
+	picture = GFX_London_stock_market_crash
+
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		play_song = "London_stock_market_crash"
+	}
+		option = {
+			name = NewEvents.7.a
+			ENL={add_ideas=London_stock_market_crash}
+			hidden_effect = {
+			every_country = {	
+				limit = {
+					NOT = {
+						tag = ENL
+						tag = FRW
+						tag = BHL
+					}
+				}
+				country_event = {id=Worldcountry.1 days=5}
+			}
+		}
+		}		
+}
+country_event = {
+	id = event.3
+	title = event.3.t
+	desc = event.3.d
+    hidden = yes
+
+	trigger = {
+		WWS = {
+			OR = {
+				has_war_with = AOX
+			}
+		}
+	}
+	fire_only_once = yes
+
+	immediate ={ news_event = { id= WorldNews.8}}
+
+	option = {
+			name = event.3.a
+		}
+}
+
+
+news_event = {
+	id = WorldNews.8
+	title = WorldNews.8.t
+	desc = WorldNews.8.d
+
+	picture = GFX_Battle_Germany
+
+	major = yes
+
+    is_triggered_only = yes
+
+	option = {
+			name = WorldNews.8.a	
+		}		
+}
+
+

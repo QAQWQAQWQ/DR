@@ -1,0 +1,17 @@
+characters={
+	BLS_Albert_I={
+		name=BLS_Albert_I
+		portraits={
+			civilian={
+				large="gfx/leaders/BLS/portrait_Albert_I.tga"
+			}
+		}
+		country_leader={
+			ideology= royalists
+			desc=BLS_Albert_I_desc
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
+	}

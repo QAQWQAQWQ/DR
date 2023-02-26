@@ -1,0 +1,30 @@
+characters={
+	SUC_Sun_ChuanFang={
+		name=SUC_Sun_ChuanFang
+		portraits={
+			civilian={
+				large="gfx/leaders/SUC/portrait_Sun_ChuanFang.tga"
+			}
+		}
+		country_leader={
+			ideology=authoritarian_type
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SUC_Sun_daoren={
+		name=SUC_Sun_daoren
+		portraits={
+			civilian={
+				large="gfx/leaders/SUC/portrait_Sun_daoren.tga"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

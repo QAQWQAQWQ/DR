@@ -1,0 +1,15 @@
+Scramble_for_the_Suez_Canal = {
+	icon = infiltration
+	
+	picture = GFX_decisions_fate_the_Suez_Canal
+
+	priority = 10
+	allowed = {
+		tag = TEQ
+	}
+	visible = {
+		has_completed_focus = ENL_fate_the_Suez_Canal
+	} 
+}
+
+

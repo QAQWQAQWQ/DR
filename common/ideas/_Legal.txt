@@ -1,0 +1,185 @@
+ideas = {
+
+	Legal = {
+		law = yes
+		use_list_view = yes
+
+		Syndicate_economy = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+
+			modifier = {
+				
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+
+					is_major = yes
+				}
+				modifier = {
+					has_war_support > 0.25
+					factor = 0 #don't even look at it if you could be taking partial mob
+				}
+   			}
+		}
+		Smallholder_economy = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+
+			modifier = {
+				
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+
+					is_major = yes
+				}
+				modifier = {
+					has_war_support > 0.25
+					factor = 0 #don't even look at it if you could be taking partial mob
+				}
+   			}
+		}
+		
+		Corporate_economy = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+					is_major = yes
+				}
+				modifier = {
+				
+				}
+   			}
+		}
+		Market_economy = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+					is_major = yes
+				}
+				modifier = {
+				
+				}
+   			}
+		}
+		Planned_economy = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+					is_major = yes
+				}
+				modifier = {
+				
+				}
+   			}
+		}
+		Mixed_economy = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+					is_major = yes
+				}
+				modifier = {
+				
+				}
+   			}
+		}
+	}
+}

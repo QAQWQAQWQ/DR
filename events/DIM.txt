@@ -1,0 +1,137 @@
+﻿###########################
+# AOX Events
+###########################
+add_namespace = min
+add_namespace = DIM
+country_event = {
+	id = min.1
+	title = min.1.t
+	desc = min.1.d
+	#picture = GFX_Spanish_Flu
+
+	major = yes
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = min.1.a
+		DIM={
+			transfer_state = 283
+			transfer_state = 287
+			transfer_state = 322
+			transfer_state = 325 
+			transfer_state = 326 
+			transfer_state = 328 
+			transfer_state = 434 
+			transfer_state = 441 		
+			transfer_state = 524
+			transfer_state = 591
+			transfer_state = 592
+			transfer_state = 593
+			transfer_state = 594
+			transfer_state = 595
+			transfer_state = 596 
+			transfer_state = 597
+			transfer_state = 598 
+			transfer_state = 598
+			transfer_state = 599
+			transfer_state = 600 
+			transfer_state = 601 
+			transfer_state = 602
+			transfer_state = 603
+			transfer_state = 604
+			transfer_state = 605 
+			transfer_state = 606
+			transfer_state = 607 
+			transfer_state = 608
+			transfer_state = 609 
+			transfer_state = 610
+			transfer_state = 611 
+			transfer_state = 612		
+			transfer_state = 613 
+			transfer_state = 614 
+			transfer_state = 615 
+			transfer_state = 616
+			transfer_state = 617
+			transfer_state = 618
+			transfer_state = 619 
+			transfer_state = 620
+			transfer_state = 621 
+			transfer_state = 622
+			transfer_state = 640 
+			transfer_state = 714 
+			transfer_state = 715
+			transfer_state = 716 
+			transfer_state = 717 
+			transfer_state = 728 
+			transfer_state = 729 
+			transfer_state = 743
+			transfer_state = 744
+			transfer_state = 745
+			transfer_state = 746
+			transfer_state = 747 
+			transfer_state = 748 
+			transfer_state = 749
+			transfer_state = 750
+			transfer_state = 751
+			transfer_state = 752
+			transfer_state = 753
+			transfer_state = 754
+			transfer_state = 755
+			transfer_state = 756
+			transfer_state = 757 
+			transfer_state = 758 
+			transfer_state = 759
+			transfer_state = 760	
+			transfer_state = 610
+			transfer_state = 787
+			transfer_state = 835
+			transfer_state = 836
+			transfer_state = 837
+			transfer_state = 838 
+			transfer_state = 839
+			transfer_state = 840
+			transfer_state = 841
+			transfer_state = 842
+			transfer_state = 843
+			transfer_state = 912
+			transfer_state = 913
+			transfer_state = 909
+			transfer_state = 910
+			transfer_state = 922
+			transfer_state = 329
+			transfer_state = 330
+			transfer_state = 817
+			transfer_state = 819
+			transfer_state = 818
+			transfer_state = 820
+			transfer_state = 761
+			#SHW
+			transfer_state = 408
+			transfer_state = 409
+			transfer_state = 657
+			transfer_state = 561
+			transfer_state = 560
+			transfer_state = 655
+			transfer_state = 537
+	}
+}
+}
+
+news_event = {
+	id = DIM.1
+	title = DIM.1.t
+	desc = DIM.1.d
+	picture = GFX_DAMINGGONG
+
+	major = yes
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = DIM.1.a
+		
+}
+}

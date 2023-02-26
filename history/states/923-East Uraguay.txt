@@ -1,0 +1,27 @@
+
+state={
+	id=923
+	name="STATE_923"
+	manpower = 300000
+	
+	state_category = rural
+	
+	resources={
+		oil=1 # was: 2
+	}
+	history={
+		owner = BRA
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 2
+			dockyard = 1
+		}
+		add_core_of = WLG
+	}
+
+	provinces={
+		1626 13259 1654 12481 1641 12336 10347
+	}
+
+	local_supplies=0.0 
+}

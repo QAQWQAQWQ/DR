@@ -1,0 +1,24 @@
+﻿###########################
+# AOX Events
+###########################
+
+add_namespace = SBY
+
+news_event = {
+	id = SBY.1
+	title = SBY.1.t
+	desc = SBY.1.d
+	picture = GFX_Spanish_Flu
+
+	major = yes
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = SBY.1.a
+		SBY={
+		remove_ideas = SBY_Spanish_Flu
+	}
+}
+}

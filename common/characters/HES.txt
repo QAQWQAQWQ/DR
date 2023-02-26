@@ -1,0 +1,48 @@
+characters={
+	HES_Nikola_I_Mirkov={
+		name=HES_Nikola_I_Mirkov
+		portraits={
+			civilian={
+				large="gfx/leaders/HES/Portrait_Nikola_I_Mirkov.tga"
+			}
+		}
+		country_leader={
+			ideology=royalists
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	HES_Gvozdenovic={
+		name=HES_Gvozdenovic
+		portraits={
+			civilian={
+				large="gfx/leaders/HES/Portrait_Gvozdenovic.tga"
+				small="gfx/interface/ideas/idea_Gvozdenovic.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = HES_Gvozdenovic_H
+			allowed = {
+				original_tag = HES
+			}
+			available = {
+			  }
+			traits = {
+				Minister_Affairs
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}		
+	}

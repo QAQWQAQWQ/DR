@@ -1,0 +1,425 @@
+characters={ #skilled_staffer #Lieutenant_general
+	SHW_NicholasII={
+		name=SHW_NicholasII
+		portraits={
+			civilian={
+				large="gfx/leaders/SHW/Portrait_NicholasII.tga"
+			}
+		}
+		country_leader={
+			ideology=royalists
+			desc=SHW_NicholasII_desc
+			traits={ autocratic_imperialist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SHW_Kerensky={
+		name=SHW_Kerensky
+		portraits={
+			civilian={
+				large="gfx/leaders/SHW/Portrait_Kerensky.tga"
+			}
+		}
+		country_leader={
+			ideology=social_democrat_type
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SHW_Viktor_Chernov={
+		name=SHW_Viktor_Chernov
+		portraits={
+			civilian={
+				large="gfx/leaders/SHW/Portrait_Viktor_Chernov.tga"
+			}
+		}
+		country_leader={
+			ideology=national_populist_type
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SHW_Martov={
+		name=SHW_Martov
+		portraits={
+			civilian={
+				large="gfx/leaders/SHW/Portrait_Martov.tga"
+			}
+		}
+		country_leader={
+			ideology=Reform_socialism_type
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SHW_Tseretori={
+		name=SHW_Tseretori
+		portraits={
+			civilian={
+				large="gfx/leaders/SHW/Portrait_Tseretori.tga"
+			}
+		}
+		country_leader={
+			ideology=social_democrat_type
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SHW_Pavel_Milyukov={
+		name=SHW_Pavel_Milyukov
+		portraits={
+			civilian={
+				large="gfx/leaders/SHW/Portrait_Pavel_Milyukov.tga"
+			}
+		}
+		country_leader={
+			ideology=social_democrat_type
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SHW_Alexander_Konovalov={
+		name=SHW_Alexander_Konovalov
+		portraits={
+			civilian={
+				large="gfx/leaders/SHW/Portrait_Alexander_Konovalov.tga"
+			}
+		}
+		country_leader={
+			ideology=Trade_doctrine
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SHW_Alexander_Guchkov={
+		name=SHW_Alexander_Guchkov
+		portraits={
+			civilian={
+				large="gfx/leaders/SHW/Portrait_Alexander_Guchkov.tga"
+			}
+		}
+		country_leader={
+			ideology=authoritarian_type
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SHW_Nikolayevich_Wrangel={
+		name=SHW_Nikolayevich_Wrangel
+		portraits={
+			army={
+				large="gfx/leaders/SHW/portrait_Nikolayevich_Wrangel.tga"
+				small="gfx/interface/ideas/portrait_Nikolayevich_Wrangel.dds"
+			}
+		}
+		corps_commander={
+			traits={ skilled_staffer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}	
+}
+    SHW_LavrKornilov={
+	    name=SHW_LavrKornilov
+	    portraits={
+		army={
+			large="gfx/leaders/SHW/Portrait_LavrKornilov.tga"
+			small="gfx/interface/ideas/portrait_LavrKornilov.dds"
+		}
+	}
+	    corps_commander={
+		traits={ skilled_staffer }
+		skill=2
+		attack_skill=2
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=2
+	}
+}
+SHW_Vladimir_Samsonov={
+	name=SHW_Vladimir_Samsonov
+	portraits={
+	army={
+		large="gfx/leaders/SHW/Portrait_Vladimir_Samsonov.tga"
+		small="gfx/interface/ideas/Portrait_Vladimir_Samsonov.dds"
+	}
+}
+	corps_commander={
+	traits={ Lieutenant_general }
+	skill=2
+	attack_skill=2
+	defense_skill=1
+	planning_skill=2
+	logistics_skill=1
+}
+}
+
+SHW_Yuri_Danilov={
+	name=SHW_Yuri_Danilov
+	portraits={
+	army={
+		large="gfx/leaders/SHW/Portrait_Yuri_Danilov.tga"
+		small="gfx/interface/ideas/Portrait_Yuri_Danilov.dds"
+	}
+}
+	corps_commander={
+	traits={ Lieutenant_general }
+	skill=2
+	attack_skill=2
+	defense_skill=1
+	planning_skill=2
+	logistics_skill=3
+}
+}
+
+SHW_Dmitry_Grigoryevich_Shcherbachev={
+	name=SHW_Dmitry_Grigoryevich_Shcherbachev
+	portraits={
+	army={
+		large="gfx/leaders/SHW/Portrait_Dmitry_Grigoryevich_Shcherbachev.tga"
+		small="gfx/interface/ideas/Portrait_Dmitry_Grigoryevich_Shcherbachev.dds"
+	}
+}
+	corps_commander={
+	traits={ skilled_staffer }
+	skill=2
+	attack_skill=2
+	defense_skill=1
+	planning_skill=2
+	logistics_skill=1
+}
+}
+
+SHW_Krasnov={
+	name=SHW_Krasnov
+	portraits={
+	army={
+		large="gfx/leaders/SHW/Portrait_Krasnov.tga"
+		small="gfx/interface/ideas/Portrait_Krasnov.dds"
+	}
+}
+	corps_commander={
+	traits={ skilled_staffer }
+	skill=2
+	attack_skill=2
+	defense_skill=1
+	planning_skill=2
+	logistics_skill=1
+}
+}
+
+
+SHW_aleksey_brusilov={
+	name=SHW_aleksey_brusilov
+	portraits={
+	army={
+		large="gfx/leaders/SHW/Portrait_aleksey_brusilov.tga"
+		small="gfx/interface/ideas/Portrait_aleksey_brusilov.dds"
+	}
+}
+	corps_commander={
+	traits={ Lieutenant_general }
+	skill=3
+	attack_skill=4
+	defense_skill=1
+	planning_skill=3
+	logistics_skill=3
+}
+}
+
+SHW_Alexei_Kuropatkin={
+	name=SHW_Alexei_Kuropatkin
+	portraits={
+	army={
+		large="gfx/leaders/SHW/Portrait_Alexei_Kuropatkin.tga"
+		small="gfx/interface/ideas/Portrait_Alexei_Kuropatkin.dds"
+	}
+}
+	corps_commander={
+	traits={ Lieutenant_general }
+	skill=1
+	attack_skill=1
+	defense_skill=1
+	planning_skill=1
+	logistics_skill=1
+}
+}
+
+SHW_Alexei_Eft={
+	name=SHW_Alexei_Eft
+	portraits={
+	army={
+		large="gfx/leaders/SHW/Portrait_Alexei_Eft.tga"
+		small="gfx/interface/ideas/Portrait_Alexei_Eft.dds"
+	}
+}
+	corps_commander={
+	traits={ Lieutenant_general }
+	skill=2
+	attack_skill=2
+	defense_skill=1
+	planning_skill=1
+	logistics_skill=1
+}
+}
+
+SHW_Nikolai_Romanov={
+	name=SHW_Nikolai_Romanov
+	portraits={
+	army={
+		large="gfx/leaders/SHW/Portrait_Nikolai_Romanov.tga"
+		small="gfx/interface/ideas/Portrait_Nikolai_Romanov.dds"
+	}
+}
+	corps_commander={
+	traits={ expert_delegator }
+	skill=3
+	attack_skill=2
+	defense_skill=1
+	planning_skill=1
+	logistics_skill=2
+}
+}
+
+SHW_Nikolai_Ruzsky={
+	name=SHW_Nikolai_Ruzsky
+	portraits={
+	army={
+		large="gfx/leaders/SHW/Portrait_Nikolai_Ruzsky.tga"
+		small="gfx/interface/ideas/Portrait_Nikolai_Ruzsky.dds"
+	}
+}
+	corps_commander={
+	traits={ Lieutenant_general }
+	skill=3
+	attack_skill=2
+	defense_skill=2
+	planning_skill=2
+	logistics_skill=2
+}
+}
+
+SHW_Paul_Lenningkamp={
+	name=SHW_Paul_Lenningkamp
+	portraits={
+	army={
+		large="gfx/leaders/SHW/Portrait_Paul_Lenningkamp.tga"
+		small="gfx/interface/ideas/Portrait_Paul_Lenningkamp.dds"
+	}
+}
+	corps_commander={
+	traits={ Lieutenant_general }
+	skill=3
+	attack_skill=3
+	defense_skill=2
+	planning_skill=1
+	logistics_skill=2
+}
+}
+
+SHW_Yakov_Grigorievich_Zhilinsky={
+	name=SHW_Yakov_Grigorievich_Zhilinsky
+	portraits={
+	army={
+		large="gfx/leaders/SHW/Portrait_Yakov_Grigorievich_Zhilinsky.tga"
+		small="gfx/interface/ideas/Portrait_Yakov_Grigorievich_Zhilinsky.dds"
+	}
+}
+	corps_commander={
+	traits={ Lieutenant_general }
+	skill=2
+	attack_skill=2
+	defense_skill=1
+	planning_skill=2
+	logistics_skill=1
+}
+}
+SHW_Denikin={
+	name=SHW_Denikin
+	portraits={
+	army={
+		large="gfx/leaders/SHW/Portrait_Denikin.tga"
+		small="gfx/interface/ideas/Portrait_Denikin.dds"
+	}
+}
+	corps_commander={
+	traits={ skilled_staffer }
+	skill=1
+	attack_skill=1
+	defense_skill=1
+	planning_skill=2
+	logistics_skill=1
+}
+}
+SHW_Yudenich={
+	name=SHW_Yudenich
+	portraits={
+	army={
+		large="gfx/leaders/SHW/Portrait_Yudenich.tga"
+		small="gfx/interface/ideas/Portrait_Yudenich.dds"
+	}
+}
+	corps_commander={
+	traits={ Lieutenant_general }
+	skill=2
+	attack_skill=2
+	defense_skill=2
+	planning_skill=2
+	logistics_skill=1
+}
+}
+SHW_Pyotr_Alexeyevich_Kropotkin={
+	name=SHW_Pyotr_Alexeyevich_Kropotkin
+	portraits={
+		civilian={
+			small= "GFX_idea_Pyotr_Alexeyevich_Kropotkin"
+		}
+	}
+	advisor={
+		slot = political_advisor
+		idea_token = SHW_Pyotr_Alexeyevich_Kropotkin_political_advisor
+		allowed = {
+			original_tag = SHW
+		}
+		available = {
+		  }
+		traits = {
+			anarchist_zeal
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 1.000
+		}
+	}		
+}
+#navy leader
+SHW_Kolchak={
+	name=SHW_Kolchak
+	portraits={
+		army={
+			large="gfx/leaders/SHW/portrait_Kolchak.tga"
+			small="gfx/interface/ideas/portrait_Kolchak.dds"
+		}
+	}
+	navy_leader={
+		traits={ }
+		skill=1
+		attack_skill=1
+		defense_skill=2
+		maneuvering_skill=1
+		coordination_skill=2
+		legacy_id=-1
+	}
+}
+
+}

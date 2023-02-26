@@ -1,0 +1,175 @@
+﻿###########################
+# CPC Events
+###########################
+
+add_namespace = CPC
+
+news_event = {
+	id = CPC.1
+	title = CPC.1.t
+	desc = CPC.1.d
+	picture = GFX_LiDaZhao
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+			name = CPC.1.a
+			retire_country_leader = yes	
+			clr_global_flag = CPC_HZGH
+		    set_global_flag = CPC_LiDaZhao
+			set_political_party = {
+				ideology = communism
+				popularity = 50
+			}
+			set_political_party = {
+				ideology = social_democrat
+				popularity = 10
+			}
+			set_political_party = {
+				ideology = Anarchopedia
+				popularity = 15
+			}
+			set_political_party = {
+				ideology = Left_nationalism
+				popularity = 15
+			}	
+			set_political_party = {
+				ideology = democratic
+				popularity = 10
+			}
+			ai_chance = {
+				base = 50
+				modifier = {
+					factor = 1
+			}
+		}	
+	}
+}
+news_event = {
+		id = CPC.2
+		title = CPC.2.t
+		desc = CPC.2.d
+		picture = GFX_ChenDuXiu
+		is_triggered_only = yes
+		fire_only_once = yes
+		trigger = {
+			}
+		option = {
+				name = CPC.2.a
+				set_political_party = {
+					ideology = communism
+					popularity = 10
+				}
+				set_political_party = {
+					ideology = social_democrat
+					popularity = 10
+				}
+				set_political_party = {
+					ideology = Anarchopedia
+					popularity = 15
+				}
+				set_political_party = {
+					ideology = Left_nationalism_type
+					popularity = 50
+				}	
+				set_political_party = {
+					ideology = democratic
+					popularity = 15
+				}
+				ai_chance = {
+					base = 10
+					modifier = {
+						factor = 0.25
+				}
+			}
+				}
+				
+		}
+news_event = {
+			id = CPC.3
+			title = CPC.3.t
+			desc = CPC.3.d
+			picture = GFX_ChenDuXiu
+			is_triggered_only = yes
+			fire_only_once = yes
+			trigger = {
+				}
+			option = {
+					name = CPC.3.a
+					name = CPC.3.a
+					set_political_party = {
+						ideology = communism
+						popularity = 10
+					}
+					set_political_party = {
+						ideology = social_democrat
+						popularity = 10
+					}
+					set_political_party = {
+						ideology = Anarchopedia
+						popularity = 50
+					}
+					set_political_party = {
+						ideology = Left_nationalism
+						popularity = 15
+					}	
+					set_political_party = {
+						ideology = democratic
+						popularity = 15
+					}
+					ai_chance = {
+						base = 20
+						modifier = {
+							factor = 0.15
+					}
+				}
+					}
+			}
+			country_event = {
+				id = CPC.6
+				title = CPC.6.t
+				desc = CPC.6.d
+				picture = GFX_GOV
+				is_triggered_only = yes
+				fire_only_once = yes
+				trigger = {
+					}
+				option = {
+						name = CPC.6.a
+					}
+			}
+			country_event = {
+				id = CPC.4
+				title = CPC.4.t
+				desc = CPC.4.d
+				picture = GFX_GOV
+				is_triggered_only = yes
+				fire_only_once = yes
+				trigger = {
+					}
+				option = {
+						name = CPC.4.a
+			   }
+			}
+			country_event = {
+				id = CPC.5
+				title = CPC.5.t
+				desc = CPC.5.d
+				picture = GFX_meeting
+				is_triggered_only = yes
+				fire_only_once = yes
+				trigger = {
+					}
+				option = {
+						name = CPC.5.a
+						complete_national_focus = CPC_communism
+			   }
+			   option = {
+				name = CPC.5.b
+				complete_national_focus = CPC_Left_nationalism
+	   }
+	           option = {
+		       name = CPC.5.c
+		       complete_national_focus = CPC_Anarchism
+}

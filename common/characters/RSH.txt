@@ -1,0 +1,30 @@
+characters={
+	RSH_Fritz_Platten={
+		name=RSH_Fritz_Platten
+		portraits={
+			civilian={
+				large="gfx/leaders/RSH/Portrait_Fritz_Platten.tga"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	RSH_switzerland={
+		name=RSH_switzerland
+		portraits={
+			civilian={
+				large="gfx/leaders/RSH/Portrait_switzerland.tga"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

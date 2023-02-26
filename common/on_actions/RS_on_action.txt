@@ -1,0 +1,228 @@
+on_actions = {
+
+	on_startup= {
+		effect = {
+		every_country = {
+			hidden_effect = {
+				BHL = {
+					add_ai_strategy = {
+						type = alliance
+						id = FRW
+						value = 200
+					}
+				}
+			}
+			country_event = {id = WorldNews.1 }
+set_variable = {
+    var = Prussian_support
+    value = 25
+}
+set_variable = {
+    var = Austria_support
+    value = 100
+}
+set_variable = { masses_popularity = 50 }
+
+set_variable = { assets_popularity = 50 }
+set_variable = { noble_popularity = 50 }
+set_variable = { elite_popularity = 50 }
+set_variable = { inflation = 2.5 }
+set_variable = { Unemployment = 2.5 }
+clamp_variable = { 
+	var = Prussian_support
+	min = 0 
+	max = 100 
+}
+clamp_variable = { 
+	var = Austria_support
+	min = 0 
+	max = 100
+}
+
+set_temp_variable = { grain_pp = max_manpower_k }
+		multiply_temp_variable = { grain_pp = 0.0017 }
+	    multiply_temp_variable = { grain_pp = 0.0017 }
+		subtract_from_temp_variable = { resource@grain = grain_pp }
+
+		set_variable = { grain_ppp = resource@grain }
+clamp_variable = { 
+	var = resource@grain
+	min = 0 
+	max = 10000 
+}
+
+set_variable = {
+	var = add_grain_pp
+	value = ROOT.num_of_civilian_factories
+}
+#subtract_from_temp_variable = { add_grain_pp = grain_pp }
+add_to_temp_variable = { add_grain_pp = num_owned_states }
+
+
+	}
+	}
+}
+on_startup= {
+	effect = {
+	KOH = {
+		if = {
+			limit = {
+				is_subject = yes
+			}
+		}
+		country_lock_all_division_template = yes
+}
+BXM = {
+	if = {
+		limit = {
+			is_subject = yes
+		}
+	}
+	country_lock_all_division_template = yes
+}
+DMT = {
+	if = {
+		limit = {
+			is_subject = yes
+		}
+	}
+	country_lock_all_division_template = yes
+}
+KLD = {
+	if = {
+		limit = {
+			is_subject = yes
+		}
+	}
+	country_lock_all_division_template = yes
+}
+KGL = {
+	if = {
+		limit = {
+			is_subject = yes
+		}
+	}
+	country_lock_all_division_template = yes
+}
+}
+}
+
+	on_daily = {
+		effect = {
+		  if = {
+			every_unit_leader = {
+						limit = {	
+						has_trait = Lieutenant_general
+					}
+					remove_unit_leader_trait = skilled_staffer
+					remove_unit_leader_trait = expert_delegator
+			}
+			every_unit_leader = {
+			limit = {	
+				has_trait = expert_delegator
+			}
+			remove_unit_leader_trait = Lieutenant_general
+			remove_unit_leader_trait = skilled_staffer
+	}
+	every_unit_leader = {
+		limit = {	
+			is_field_marshal = yes
+	}
+	remove_unit_leader_trait = expert_delegator
+	remove_unit_leader_trait = Lieutenant_general
+	remove_unit_leader_trait = skilled_staffer
+}
+	
+ }
+}
+}
+on_monthly = {
+	effect = {
+		every_country = {
+					limit = {	
+						check_variable = { masses_popularity < -25 }
+						check_variable = { assets_popularity < -25 }
+						check_variable = { noble_popularity < -25 }
+						check_variable = { elite_popularity < -25 }
+				}
+				add_stability = -0.0001
+		}
+		every_country = {
+			limit = {	
+				check_variable = { masses_popularity > 50 }
+				check_variable = { assets_popularity > 30 }
+				check_variable = { noble_popularity > 20 }
+				check_variable = { elite_popularity > 10 }
+		}
+		add_stability = 0.0001
+}
+}
+}
+on_monthly = {
+	effect = {
+		every_country = {
+					limit = {	
+						check_variable = { inflation > 80 }
+				}
+				add_stability = -0.1
+		}
+		every_country = {
+			limit = {	
+				check_variable = { inflation < 10 }
+		}
+		add_stability = 0.001
+}
+}
+}
+
+
+
+
+
+
+
+
+
+
+on_daily = {
+	effect = {
+		
+		if = {
+			limit = {
+				check_variable = { SHW_Loyalty = 50 compare = greater_than_or_equals}
+			}
+			set_variable = { SHW_Imperial_Russian_Army_paranoiameter = 1 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { SHW_Loyalty = 50 compare = equals}
+			}
+			set_variable = { SHW_Imperial_Russian_Army_paranoiameter = 2 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { SHW_Loyalty = 50 compare = less_than }
+			}
+			set_variable = { SHW_Imperial_Russian_Army_paranoiameter = 3 }
+		}
+
+}
+}
+on_daily = {
+	effect = {
+		if = {
+			WWS={
+			limit = {
+				has_completed_focus = WWS_Expansion_radar_stations
+				has_completed_focus = WWS_Siemens_AG
+				has_completed_focus = WWS_Hochtief
+			}
+			swap_ideas = {
+				remove_idea = low_industrialization
+				add_idea = Basic_industrialization
+			}
+		}
+	}
+		}
+	}
+}

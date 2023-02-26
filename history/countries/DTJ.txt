@@ -1,0 +1,52 @@
+﻿capital = 619
+
+oob = "DTJ_1920"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+recruit_character = DTJ_heni
+
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+
+		#electronics
+		
+		
+		
+		
+
+		#industry
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1919.11.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 100
+}

@@ -1,0 +1,69 @@
+﻿capital = 620
+
+oob = "SJR_1920"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	fuel_silos = 1
+}
+
+recruit_character = SJR_Song_JiaoRen
+recruit_character = SJR_JiangBaiLi
+recruit_character = SJR_SunKe
+recruit_character = SJR_SongQingLing
+recruit_character = SJR_ZhangXiaoHuang
+recruit_character = SJR_LiaoZhongKai
+recruit_character = SJR_TanYouRen
+recruit_character = SJR_ZhangZhiZhong
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+
+		#electronics
+		
+		
+		
+		
+		
+
+		#industry
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+set_politics = {
+	ruling_party = social_democrat
+	last_election = "1918.11.11"
+	election_frequency = 72
+	elections_allowed = yes
+}
+add_ideas = {
+	      SJR_TPP     
+	}
+set_popularities = {
+	national_populist = 10
+	social_democrat = 80
+	communism = 10
+}

@@ -1,0 +1,94 @@
+﻿###########################
+# HES Events
+###########################
+
+add_namespace = HES
+
+country_event = {
+	id = HES.1
+	title = HES.1.t
+	desc = HES.1.d
+   #picture = GFX_Suez_Canal_Crisis
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = HES.1.a
+		HES={declare_war_on = {
+			target = SIW
+		}}
+		}
+	}
+country_event = {
+	id = HES.2
+	title = HES.2.t
+	desc = HES.2.d
+   #picture = GFX_Suez_Canal_Crisis
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = HES.2.a
+		SIW={
+			complete_national_focus = SIW_Peaceful_reunification
+			annex_country = {
+				target = HES
+			}
+		}
+		}
+	}
+country_event = {
+	id = HES.3
+	title = HES.3.t
+	desc = HES.3.d
+	#picture = GFX_Suez_Canal_Crisis
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+
+
+	option = {
+		name = HES.3.a
+        set_country_flag = HES_Bow_to_Belgrade
+		hidden_effect = {
+			complete_national_focus = HES_Corfu_negotiations
+		}
+		
+		complete_national_focus = HES_Bow_to_Belgrade
+		}
+	option = {
+		name = HES.3.b
+		set_country_flag = HES_Hit_Serb_traitors
+		hidden_effect = {
+			complete_national_focus = HES_Corfu_negotiations
+		}
+		}
+	}
+country_event = {
+	id = HES.4
+	title = HES.4.t
+	desc = HES.4.d
+	#picture = GFX_Suez_Canal_Crisis
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = HES.4.a
+		send_equipment = {
+			type = infantry_equipment_0
+			amount = 1000
+			target = HES
+		}
+	}
+	option = {
+		name = HES.4.b
+		}
+	}	

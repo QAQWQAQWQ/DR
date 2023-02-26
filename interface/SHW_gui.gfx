@@ -1,0 +1,13 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_SHW_Imperial_Russian_Army_needle"
+		texturefile = "gfx/interface/GUI/SHW_Imperial_Russian_Army_needle.dds"
+		legacy_lazy_load = no
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_SHW_Imperial_Russian_Army_BG"
+		texturefile = "gfx/interface/GUI/SHW_Imperial_Russian_Army_BG.dds"
+		legacy_lazy_load = no
+	}
+	}

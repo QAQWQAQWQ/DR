@@ -1,0 +1,62 @@
+characters={
+	KPD_Karl_Liebknecht={
+		name=KPD_Karl_Liebknecht
+		portraits={
+			civilian={
+				large="gfx/leaders/KPD/portrait_Karl_Liebknecht.tga"
+			}
+		}
+		country_leader={
+			ideology=marxism
+            desc=KPD_Karl_Liebknecht_DESC
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	KPD_Ernst_Thalmann={
+		name=KPD_Ernst_Thalmann
+		portraits={
+			civilian={
+				large="gfx/leaders/KPD/portrait_Ernst_Thalmann.tga"
+			}
+		}
+		country_leader={
+			ideology=radical_socialist_type
+            desc=KPD_Ernst_Thalmann_DESC
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	KPD_Paul_Levi={
+		name=KPD_Paul_Levi
+		portraits={
+			civilian={
+				large="gfx/leaders/KPD/portrait_Paul_Levi.tga"
+			}
+		}
+		country_leader={
+			ideology=social_democrat_type
+            desc=KPD_Paul_Levi_DESC
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	KPD_Heinrich_Laufenberg={
+		name=KPD_Heinrich_Laufenberg
+		portraits={
+			civilian={
+				large="gfx/leaders/KPD/portrait_Heinrich_Laufenberg.tga"
+			}
+		}
+		country_leader={
+			ideology=Right_populism_type
+            desc=KPD_Heinrich_Laufenberg_DESC
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

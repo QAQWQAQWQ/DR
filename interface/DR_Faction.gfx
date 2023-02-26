@@ -1,0 +1,22 @@
+spriteTypes = {	
+	spriteType = {
+			name = "GFX_NO_Faction"
+			texturefile = "gfx/interface/Faction/.dds"
+			legacy_lazy_load = no
+		}
+	spriteType = {
+			name = "GFX_Habsburg_monarchy"
+			texturefile = "gfx/interface/Faction/Habsburg_monarchy.dds"
+			legacy_lazy_load = no
+		}
+	spriteType = {
+			name = "GFX_Second_International1"
+			texturefile = "gfx/interface/Faction/Second_International.dds"
+			legacy_lazy_load = no
+		}
+	spriteType = {
+			name = "GFX_North_German_Confederation"
+			texturefile = "gfx/interface/Faction/North_German_Confederation.dds"
+			legacy_lazy_load = no
+		}	
+	}

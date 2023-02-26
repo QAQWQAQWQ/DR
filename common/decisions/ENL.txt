@@ -1,0 +1,99 @@
+fate_the_Suez_Canal = {
+	
+	Transport_weapons_and_ammunition = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		
+		available = {
+			check_variable = {
+				var = British_influence
+				value = 50
+				compare = less_than
+			}
+		}
+		days_re_enable = 30
+		days_remove = 60
+		cost = 25
+		allowed = {
+			tag = ENL
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+				hidden_effect = {
+					set_temp_variable = { British_influence = British_influence }
+					add_to_variable = { British_influence = 5 }
+					add_to_variable = { British_influence = British_influence }
+				}
+			}
+		}
+	Increase_the_garrison = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		
+		available = {
+			check_variable = {
+				var = British_influence
+				value = 50
+				compare = less_than
+			}
+		}
+		days_re_enable = 30
+		days_remove = 60
+		cost = 25
+		allowed = {
+			tag = ENL
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect={
+				hidden_effect = {
+					set_temp_variable = { British_influence = British_influence }
+					add_to_variable = { British_influence = 5 }
+					add_to_variable = { British_influence = British_influence }
+				}
+			}
+		}
+	Ships_patrol_the_nearby_waters = {
+	icon = generic_ignite_civil_war
+	visible = {
+	}
+	
+	available = {
+		check_variable = {
+			var = British_influence
+			value = 50
+			compare = less_than
+		}
+	}
+	days_re_enable = 30
+	days_remove = 60
+	cost = 25
+	allowed = {
+		tag = ENL
+	}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+		complete_effect={
+			hidden_effect = {
+				set_temp_variable = { British_influence = British_influence }
+				add_to_variable = { British_influence = 5 }
+				add_to_variable = { British_influence = British_influence }
+			}
+		}
+	}
+}

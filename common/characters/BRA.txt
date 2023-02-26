@@ -1,0 +1,31 @@
+characters={
+	BRA_Delfim_Moreira={
+		name=BRA_Delfim_Moreira
+		portraits={
+			civilian={
+				large="gfx/leaders/BRA/portrait_Delfim_Moreira.tga"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	BRA_Isabel_do_Brasil={
+		name=BRA_Isabel_do_Brasil
+		portraits={
+			civilian={
+				large="gfx/leaders/BRA/portrait_Isabel_do_Brasil.tga"
+			}
+		}
+		country_leader={
+			ideology=royalists
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	}

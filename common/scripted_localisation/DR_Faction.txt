@@ -1,0 +1,41 @@
+defined_text = { 
+	name = GetFaction
+	text = {
+		 localization_key = GFX_NO_Faction
+trigger = {
+	ROOT={
+		is_in_faction = no
+	}
+}
+}
+text = {
+		 localization_key = GFX_Habsburg_monarchy
+
+		 trigger = {
+				OR = {
+					tag = AOX
+					is_in_faction_with = AOX
+				}
+	}
+}
+text = {
+	localization_key = GFX_Second_International1
+
+	trigger = {
+		   OR = {
+			   tag = FRW
+			   is_in_faction_with = FRW
+		   }
+}
+}
+text = {
+	localization_key = GFX_North_German_Confederation
+
+	trigger = {
+		   OR = {
+			   tag = WWS
+			   is_in_faction_with = WWS
+		   }
+}
+}
+}

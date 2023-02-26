@@ -1,0 +1,871 @@
+ideologies = {
+	
+	democratic = {
+	
+		types = {
+			liberalism = {
+			}
+			socialism = {
+			}
+            Trade_doctrine= {
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+		
+		color = { 0 0 255 }
+		
+		rules = {
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = no
+			can_puppet = no
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			generate_wargoal_tension = 1.00
+			join_faction_tension = 0.80
+			lend_lease_tension = 0.50
+			send_volunteers_tension = 0.50
+			guarantee_tension = 0.25
+			annex_cost_factor = 0.5
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		ai_democratic = yes # uses the democratic AI behaviour
+	}
+
+
+	communism = {
+		
+		types = {
+		
+			marxism = {
+			}
+            correct_type = {
+			}
+
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_COMMUNIST_1"
+			"FACTION_NAME_COMMUNIST_2"
+			"FACTION_NAME_COMMUNIST_3"
+			"FACTION_NAME_COMMUNIST_4"
+			"FACTION_NAME_COMMUNIST_5"
+		}
+		
+		color = { 255 0 0 }
+		
+		war_impact_on_world_tension = 0.75		#Commie less threatening
+		faction_impact_on_world_tension = 0.5
+		
+		ai_communist = no # uses the commie AI behaviour
+		
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+can_join_opposite_factions = yes
+		}
+		
+		can_collaborate = yes
+		
+		modifiers = {
+			puppet_cost_factor = -0.3
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 7.5
+			navy_intel_to_others = 12.5
+			airforce_intel_to_others = 7.5
+			hidden_modifier = { join_faction_tension = -0.1 }
+		}
+		
+		faction_modifiers = {
+			
+		}
+
+	}
+
+	neutrality = {
+	
+		types = {
+			despotism  = {
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_NONALIGNED_1"
+			"FACTION_NAME_NONALIGNED_2"
+			"FACTION_NAME_NONALIGNED_3"
+			"FACTION_NAME_NONALIGNED_4"
+			"FACTION_NAME_NONALIGNED_5"
+		}
+		
+		color = { 124 124 124 }
+		
+		
+		war_impact_on_world_tension = 0.25		#no major danger
+		faction_impact_on_world_tension = 0.1
+		
+		rules = {
+			can_force_government = no
+			can_puppet = yes
+			can_send_volunteers = no
+		}
+		
+		modifiers = {
+			#increased_influence_factor = 0.3 #30% easier to influence
+			generate_wargoal_tension = 0.5
+			join_faction_tension = 0.4
+			lend_lease_tension = 0.4
+			send_volunteers_tension = 0.4
+			guarantee_tension = 0.4
+			drift_defence_factor = -0.3	
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 10.0
+		}
+		
+		faction_modifiers = {
+		}
+
+		ai_neutral = yes # 
+	}
+    ###保皇
+    monarchy = {
+	
+		types = {
+			royalists = {
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_MON_1"
+		}
+		
+		color = { 88 6 79 }
+		
+		
+		war_impact_on_world_tension = 0.25		#no major danger
+		faction_impact_on_world_tension = 0.1
+		
+		rules = {
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = yes
+            can_force_government = yes
+		}
+		
+		modifiers = {
+			#increased_influence_factor = 0.3 #30% easier to influence
+			generate_wargoal_tension = 0.5
+			join_faction_tension = 0.4
+			lend_lease_tension = 0.4
+			send_volunteers_tension = 0.4
+			guarantee_tension = 0.4
+			drift_defence_factor = -0.3	
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 10.0
+		}
+		
+		faction_modifiers = {
+		}
+
+		ai_neutral = yes # 
+	}
+	########激社
+	radical_socialist = {
+		types = {
+			radical_socialist_type = {} #generic
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_RADICAL_SOCIALIST_1"
+			"FACTION_NAME_RADICAL_SOCIALIST_2"
+			"FACTION_NAME_RADICAL_SOCIALIST_3"
+			"FACTION_NAME_RADICAL_SOCIALIST_4"
+			"FACTION_NAME_RADICAL_SOCIALIST_5"
+			"FACTION_NAME_RADICAL_SOCIALIST_6"
+		}
+		color = { 233 58 58 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_create_factions = no
+			can_send_volunteers = yes
+		}
+		can_host_government_in_exile = yes
+		modifiers = {
+			generate_wargoal_tension = 0.5
+			guarantee_tension = 0.5
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5
+		}
+		ai_neutral = yes
+	}
+	###社民
+	social_democrat = {
+		types = {
+			social_democrat_type = {}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_SOCIAL_DEMOCRAT_1"
+			"FACTION_NAME_SOCIAL_DEMOCRAT_2"
+			"FACTION_NAME_SOCIAL_DEMOCRAT_3"
+			"FACTION_NAME_SOCIAL_DEMOCRAT_4"
+			"FACTION_NAME_SOCIAL_DEMOCRAT_5"
+			"FACTION_NAME_SOCIAL_DEMOCRAT_6"
+		}
+		color = { 194 30 86 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_create_factions = no
+			can_send_volunteers = yes
+		}
+		can_host_government_in_exile = yes
+		modifiers = {
+			generate_wargoal_tension = 0.75
+			guarantee_tension = 0.75
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+		}
+		ai_neutral = yes
+	}
+	###民社
+	democratic_socialism = {
+		types = {
+			democratic_socialism_type = {}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_SOCIAL_DEMOCRAT_1"
+			"FACTION_NAME_SOCIAL_DEMOCRAT_2"
+			"FACTION_NAME_SOCIAL_DEMOCRAT_3"
+			"FACTION_NAME_SOCIAL_DEMOCRAT_4"
+			"FACTION_NAME_SOCIAL_DEMOCRAT_5"
+			"FACTION_NAME_SOCIAL_DEMOCRAT_6"
+		}
+		color = { 203 39 39 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_create_factions = no
+			can_send_volunteers = yes
+		}
+		can_host_government_in_exile = yes
+		modifiers = {
+			generate_wargoal_tension = 0.75
+			guarantee_tension = 0.75
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+		}
+		ai_neutral = yes
+	}
+	####威权
+	authoritarian = {
+		types = {
+			authoritarian_type = {
+				
+			}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_authoritarian_1"
+			"FACTION_NAME_authoritarian_2"
+			"FACTION_NAME_authoritarian_3"
+			"FACTION_NAME_authoritarian_4"
+			"FACTION_NAME_authoritarian_5"
+			"FACTION_NAME_authoritarian_6"
+		}
+		color = { 57 45 49 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_create_factions = no
+			can_send_volunteers = yes
+		}
+		can_host_government_in_exile = yes
+		modifiers = {
+			generate_wargoal_tension = 0.75
+			guarantee_tension = 0.75
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+		}
+		ai_neutral = yes
+	}
+	####民族主义
+	national_populist = {
+		types = {
+			national_populist_type = {}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_NATIONAL_POPULIST_1"
+			"FACTION_NAME_NATIONAL_POPULIST_2"
+			"FACTION_NAME_NATIONAL_POPULIST_3"
+			"FACTION_NAME_NATIONAL_POPULIST_4"
+			"FACTION_NAME_NATIONAL_POPULIST_5"
+			"FACTION_NAME_NATIONAL_POPULIST_6"
+		}
+		color = { 142 57 0 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_create_factions = no
+			can_send_volunteers = yes
+		}
+		can_collaborate = yes
+		modifiers = {
+			generate_wargoal_tension = 0.5
+			guarantee_tension = 0.5
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 7.5
+			navy_intel_to_others = 12.5
+			airforce_intel_to_others = 7.5
+		}
+		ai_neutral = yes
+	}
+	####安那其
+	Anarchopedia = {
+		types = {
+			Anarchopedia_type = {} #generic
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_Anarchopedia_1"
+			"FACTION_NAME_Anarchopedia_2"
+			"FACTION_NAME_Anarchopedia_3"
+			"FACTION_NAME_Anarchopedia_4"
+			"FACTION_NAME_Anarchopedia_5"
+			"FACTION_NAME_Anarchopedia_6"
+		}
+		color = { 90 12 12 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_create_factions = no
+			can_send_volunteers = yes
+		}
+		can_host_government_in_exile = yes
+		modifiers = {
+			generate_wargoal_tension = 0.8
+			guarantee_tension = 0.8
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 8.0
+			navy_intel_to_others = 30.0
+			airforce_intel_to_others = 7
+		}
+		ai_neutral = yes
+	}
+			###伊斯兰主义
+			Islamic = {
+				types = {
+					Islamic_type = {}
+				}
+				dynamic_faction_names = {
+					"FACTION_NAME_Islamic_1"
+				}
+				color = { 50 108 21 }
+				rules = {
+					can_force_government = no
+			        can_puppet = no
+			        can_join_factions = no
+			        can_create_factions = yes
+			        can_send_volunteers = yes
+				}
+				modifiers = {
+					generate_wargoal_tension = 0.8
+				}
+			}
+####犹太主义
+	Israeliism = {
+		types = {
+			Israeliism_type = {} #generic
+		}
+		dynamic_faction_names = {
+
+		}
+		color =  { 241 241 241 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_create_factions = no
+			can_send_volunteers = yes
+		}
+		can_host_government_in_exile = yes
+		modifiers = {
+			generate_wargoal_tension = 0.8
+			guarantee_tension = 0.8
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 8.0
+			navy_intel_to_others = 30.0
+			airforce_intel_to_others = 7
+		}
+		ai_neutral = yes
+	}
+	####左翼民族主义
+	Left_nationalism = {
+		types = {
+			Left_nationalism_type = {} #generic
+		}
+		dynamic_faction_names = {
+
+		}
+		color =  { 220 91 46 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_create_factions = no
+			can_send_volunteers = yes
+		}
+		can_host_government_in_exile = yes
+		modifiers = {
+			generate_wargoal_tension = 0.8
+			guarantee_tension = 0.8
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 8.0
+			navy_intel_to_others = 30.0
+			airforce_intel_to_others = 7
+		}
+		ai_neutral = yes
+	}
+	#####君主立宪制
+	constitutional_monarchy = {
+		types = {
+			constitutional_monarchy_type = {} #generic
+		}
+		dynamic_faction_names = {
+
+		}
+		color =  { 191 131 196 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_create_factions = no
+			can_send_volunteers = yes
+		}
+		can_host_government_in_exile = yes
+		modifiers = {
+			generate_wargoal_tension = 0.8
+			guarantee_tension = 0.8
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 8.0
+			navy_intel_to_others = 30.0
+			airforce_intel_to_others = 7
+		}
+		ai_neutral = yes
+	}
+	#####二元君主制
+	Dual_monarchy = {
+		types = {
+			Dual_monarchy_type = {} #generic
+		}
+		dynamic_faction_names = {
+
+		}
+		color =  { 75 111 112 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_create_factions = no
+			can_send_volunteers = yes
+		}
+		can_host_government_in_exile = yes
+		modifiers = {
+			generate_wargoal_tension = 0.8
+			guarantee_tension = 0.8
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 8.0
+			navy_intel_to_others = 30.0
+			airforce_intel_to_others = 7
+		}
+		ai_neutral = yes
+	}
+	#####布尔什维克主义
+	Bolshevik = {
+		types = {
+			Bolshevik_type = {} #generic
+		}
+		dynamic_faction_names = {
+
+		}
+		color =  { 167 31 0 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_create_factions = no
+			can_send_volunteers = yes
+		}
+		can_host_government_in_exile = yes
+		modifiers = {
+			generate_wargoal_tension = 0.8
+			guarantee_tension = 0.8
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 8.0
+			navy_intel_to_others = 30.0
+			airforce_intel_to_others = 7
+		}
+		ai_neutral = yes
+	}
+		#####列宁主义
+		Leninism = {
+			types = {
+				Leninism_type = {} #generic
+			}
+			dynamic_faction_names = {
+	
+			}
+			color =  { 212 40 0 }
+			rules = {
+				can_force_government = no
+				can_puppet = no
+				can_join_factions = no
+				can_create_factions = no
+				can_send_volunteers = yes
+			}
+			can_host_government_in_exile = yes
+			modifiers = {
+				generate_wargoal_tension = 0.8
+				guarantee_tension = 0.8
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 8.0
+				navy_intel_to_others = 30.0
+				airforce_intel_to_others = 7
+			}
+			ai_neutral = yes
+		}
+		#####右翼民族主义
+		Right_nationalism = {
+			types = {
+				Right_nationalism_type = {} #generic
+			}
+			dynamic_faction_names = {
+	
+			}
+			color =  { 99 0 84 }
+			rules = {
+				can_force_government = no
+				can_puppet = no
+				can_join_factions = no
+				can_create_factions = no
+				can_send_volunteers = yes
+			}
+			can_host_government_in_exile = yes
+			modifiers = {
+				generate_wargoal_tension = 0.8
+				guarantee_tension = 0.8
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 8.0
+				navy_intel_to_others = 30.0
+				airforce_intel_to_others = 7
+			}
+			ai_neutral = yes
+		}
+		#####右翼民粹主义
+		Right_populism = {
+			types = {
+				Right_populism_type = {} #generic
+			}
+			dynamic_faction_names = {
+	
+			}
+			color =  { 88 48 17 }
+			rules = {
+				can_force_government = no
+				can_puppet = no
+				can_join_factions = no
+				can_create_factions = no
+				can_send_volunteers = yes
+			}
+			can_host_government_in_exile = yes
+			modifiers = {
+				generate_wargoal_tension = 0.8
+				guarantee_tension = 0.8
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 8.0
+				navy_intel_to_others = 30.0
+				airforce_intel_to_others = 7
+			}
+			ai_neutral = yes
+		}
+		#####左翼民粹主义
+		Left_populism = {
+			types = {
+				Left_populism_type = {} #generic
+			}
+			dynamic_faction_names = {
+	
+			}
+			color =  { 255 0 0 }
+			rules = {
+				can_force_government = no
+				can_puppet = no
+				can_join_factions = no
+				can_create_factions = no
+				can_send_volunteers = yes
+			}
+			can_host_government_in_exile = yes
+			modifiers = {
+				generate_wargoal_tension = 0.8
+				guarantee_tension = 0.8
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 8.0
+				navy_intel_to_others = 30.0
+				airforce_intel_to_others = 7
+			}
+			ai_neutral = yes
+		}
+		#####反动主义
+		Reactionary = {
+			types = {
+				Reactionary_type = {} #generic
+			}
+			dynamic_faction_names = {
+	
+			}
+			color =  { 0 0 0 }
+			rules = {
+				can_force_government = no
+				can_puppet = no
+				can_join_factions = no
+				can_create_factions = no
+				can_send_volunteers = yes
+			}
+			can_host_government_in_exile = yes
+			modifiers = {
+				generate_wargoal_tension = 0.8
+				guarantee_tension = 0.8
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 8.0
+				navy_intel_to_others = 30.0
+				airforce_intel_to_others = 7
+			}
+			ai_neutral = yes
+		}
+		#####军国主义
+		militarism = {
+			types = {
+				militarism_type = {} #generic
+			}
+			dynamic_faction_names = {
+	
+			}
+			color =  { 125 104 112 }
+			rules = {
+				can_force_government = no
+				can_puppet = no
+				can_join_factions = no
+				can_create_factions = no
+				can_send_volunteers = yes
+			}
+			can_host_government_in_exile = yes
+			modifiers = {
+				generate_wargoal_tension = 0.8
+				guarantee_tension = 0.8
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 8.0
+				navy_intel_to_others = 30.0
+				airforce_intel_to_others = 7
+			}
+			ai_neutral = yes
+		}
+		#####工团主义
+		Syndicalism = {
+			types = {
+				Syndicalism_type = {} #generic
+			}
+			dynamic_faction_names = {
+	
+			}
+			color =  { 180 26 26 }
+			rules = {
+				can_force_government = no
+				can_puppet = no
+				can_join_factions = no
+				can_create_factions = no
+				can_send_volunteers = yes
+			}
+			can_host_government_in_exile = yes
+			modifiers = {
+				generate_wargoal_tension = 0.8
+				guarantee_tension = 0.8
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 8.0
+				navy_intel_to_others = 30.0
+				airforce_intel_to_others = 7
+			}
+			ai_neutral = yes
+		}
+		#####军政府
+		military_government = {
+			types = {
+				military_government_type = {} #generic
+			}
+			dynamic_faction_names = {
+	
+			}
+			color =  { 104 111 101 }
+			rules = {
+				can_force_government = no
+				can_puppet = no
+				can_join_factions = no
+				can_create_factions = no
+				can_send_volunteers = yes
+			}
+			can_host_government_in_exile = yes
+			modifiers = {
+				generate_wargoal_tension = 0.8
+				guarantee_tension = 0.8
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 8.0
+				navy_intel_to_others = 30.0
+				airforce_intel_to_others = 7
+			}
+			ai_neutral = yes
+		}
+		###社会自由主义
+		Social_liberalism = {
+			types = {
+				Social_liberalism_type = {} #generic
+			}
+			dynamic_faction_names = {
+	
+			}
+			color =  { 48 62 130 }
+			rules = {
+				can_force_government = no
+				can_puppet = no
+				can_join_factions = no
+				can_create_factions = no
+				can_send_volunteers = yes
+			}
+			can_host_government_in_exile = yes
+			modifiers = {
+				generate_wargoal_tension = 0.8
+				guarantee_tension = 0.8
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 8.0
+				navy_intel_to_others = 30.0
+				airforce_intel_to_others = 7
+			}
+			ai_neutral = yes
+		}
+		###农业社会主义
+		Agrarian_socialism = {
+			types = {
+				Agrarian_socialism_type = {} #generic
+			}
+			dynamic_faction_names = {
+	
+			}
+			color =  { 184 127 80 }
+			rules = {
+				can_force_government = no
+				can_puppet = no
+				can_join_factions = no
+				can_create_factions = no
+				can_send_volunteers = yes
+			}
+			can_host_government_in_exile = yes
+			modifiers = {
+				generate_wargoal_tension = 0.8
+				guarantee_tension = 0.8
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 8.0
+				navy_intel_to_others = 30.0
+				airforce_intel_to_others = 7
+			}
+			ai_neutral = yes
+		}
+###改良
+		Reform_socialism = {
+			types = {
+				Reform_socialism_type = {} #generic
+			}
+			dynamic_faction_names = {
+	
+			}
+			color =  { 255 104 129 }
+			rules = {
+				can_force_government = no
+				can_puppet = no
+				can_join_factions = no
+				can_create_factions = no
+				can_send_volunteers = yes
+			}
+			can_host_government_in_exile = yes
+			modifiers = {
+				generate_wargoal_tension = 0.8
+				guarantee_tension = 0.8
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 8.0
+				navy_intel_to_others = 30.0
+				airforce_intel_to_others = 7
+			}
+			ai_neutral = yes
+		}
+
+###保守民主
+Conservative_democracy = {
+			types = {
+				Conservative_democracy_type = {} #generic
+			}
+			dynamic_faction_names = {
+	
+			}
+			color =  { 127 168 170 }
+			rules = {
+				can_force_government = no
+				can_puppet = no
+				can_join_factions = no
+				can_create_factions = no
+				can_send_volunteers = yes
+			}
+			can_host_government_in_exile = yes
+			modifiers = {
+				generate_wargoal_tension = 0.8
+				guarantee_tension = 0.8
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 8.0
+				navy_intel_to_others = 30.0
+				airforce_intel_to_others = 7
+			}
+			ai_neutral = yes
+		}
+	}
