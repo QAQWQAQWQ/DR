@@ -1,5 +1,5 @@
 characters={
-                                WWS_Adolf_Hitler={
+    WWS_Adolf_Hitler={
 		name=WWS_Adolf_Hitler
 		portraits={
 			civilian={
@@ -7,8 +7,8 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=
-                                                desc=WWS_Adolf_Hitler_DESC
+			ideology=Right_populism_type
+            desc=WWS_Adolf_Hitler_DESC
 			traits={ }
 			expire="1965.1.1.1"
 			id=-1

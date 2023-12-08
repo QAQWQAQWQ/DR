@@ -1,0 +1,376 @@
+add_namespace = ger_con
+add_namespace = sax_problem
+country_event = {
+	id = ger_con.1
+	title = ger_con.1.t
+	desc = ger_con.1.d
+	picture = GFX_ger_con_uni_pict
+	is_triggered_only = yes
+	option = {
+		name = ger_con.1.a
+		every_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_core_of = WWS
+		}
+		WWS = { annex_country = { target = ROOT transfer_troops = yes } }
+		ROOT = {
+			every_unit_leader = {
+				set_nationality = WWS
+			}
+		}
+	}
+	option = {
+		name = ger_con.1.b
+		trigger = {
+			check_variable = { ger_support < 40 }
+			OR = {
+				check_variable = { pre_support < 90 }
+				check_variable = { aus_support > 30 }
+			}
+			NOT = {
+				OR = {
+					tag = AGC
+					tag = WWS
+					tag = AOX
+				}
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_core_of = WWS
+		}
+		WWS = {  
+			create_wargoal = {
+				type = annex_everything
+				target = ROOT
+			}
+		}
+	}
+}
+country_event = {
+	id = ger_con.2
+	title = ger_con.2.t
+	desc = ger_con.2.d
+	picture = GFX_ger_con_uni_pict
+	is_triggered_only = yes
+	option = {
+		name = ger_con.2.a
+		every_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_core_of = AOX
+		}
+		AOX = { annex_country = { target = ROOT transfer_troops = yes } }
+		ROOT = {
+			every_unit_leader = {
+				set_nationality = AOX
+			}
+		}
+	}
+	option = {
+		name = ger_con.2.b
+		trigger = {
+			check_variable = { ger_support < 40 }
+			OR = {
+				check_variable = { aus_support < 90 }
+				check_variable = { pre_support > 30 }
+			}
+			NOT = {
+				OR = {
+					tag = AGC
+					tag = WWS
+					tag = AOX
+				}
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_core_of = AOX
+		}
+		AOX = {  
+			create_wargoal = {
+				type = annex_everything
+				target = ROOT
+			}
+		}
+	}
+}
+news_event = {
+	id = ger_con.3
+	title = ger_con.3.t
+	desc = ger_con.3.d
+	picture = GFX_Battle_Germany
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = ger_con.3.a
+		if = {
+			limit = {
+				OR = {
+					original_tag = AGC
+					original_tag = LSB
+					original_tag = DHD
+					original_tag = DON
+					original_tag = DOF
+					original_tag = DOB
+					original_tag = DOR
+					original_tag = DOL
+					original_tag = DOH
+					original_tag = DOA
+					original_tag = DOM
+					original_tag = DOS
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { pre_support > aus_support }
+				}
+				WWS = { add_to_faction = ROOT }
+			}
+			else = {
+				AOX = { add_to_faction = ROOT }
+			}
+		}
+	}
+}
+country_event = {
+	id = ger_con.6
+	title = ger_con.6.t
+	desc = ger_con.6.d
+	picture = GFX_ger_con_6_pict
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = ger_con.6.a
+	}
+}
+country_event = {
+	id = ger_con.7
+	title = ger_con.7.t
+	desc = ger_con.7.d
+	picture = GFX_ger_con_7_pict
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = ger_con.7.a
+		set_country_flag = ger_con_7
+	}
+}
+country_event = {
+	id = ger_con.8
+	title = ger_con.8.t
+	desc = ger_con.8.d
+	picture = GFX_ger_con_uni_pict
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = ger_con.8.a
+		FROM = { set_state_owner = 58 }
+        ai_chance = {
+            base = 100 
+        }
+	}
+	option = {
+		name = ger_con.8.b
+		FROM = {
+			declare_war_on = {
+				target = ROOT
+				type = annex_everything
+			}
+		}
+        ai_chance = {
+            base = 0        # Never pick this option.
+        }
+	}
+}
+news_event = {
+	id = ger_con.4
+	title = ger_con.4.t
+	desc = ger_con.4.d
+	picture = GFX_ger_con_4_pict
+	is_triggered_only = yes
+	option = {
+		name = ger_con.4.a
+		trigger = {
+			original_tag = AOX
+		}
+	}
+	option = {
+		name = ger_con.4.b
+		trigger = {
+			NOT = {
+				original_tag = AOX
+			}
+		}
+	}
+}
+news_event = {
+	id = ger_con.5
+	title = ger_con.5.t
+	desc = ger_con.5.d
+	picture = GFX_WWI
+	is_triggered_only = yes
+	option = {
+		name = ger_con.5.a
+		trigger = {
+			original_tag = WWS
+		}
+	}
+	option = {
+		name = ger_con.5.b
+		trigger = {
+			AND = {
+				NOT = {
+					original_tag = AOX
+				}
+				NOT = {
+					original_tag = WWS
+				}
+			}
+		}
+	}
+	option = {
+		name = ger_con.5.c
+		trigger = {
+			original_tag = AOX
+		}
+	}
+}
+country_event = {
+	id = sax_problem.1
+	title = sax_problem.1.t
+	desc = sax_problem.1.d
+	picture = GFX_sax_problem_1_pict
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = sax_problem.1.a
+	}
+}
+country_event = {
+	id = sax_problem.2
+	title = sax_problem.2.t
+	desc = sax_problem.2.d
+	picture = GFX_sax_problem_4_pict
+	trigger = {
+		original_tag = DOS
+		has_government = authoritarian
+		check_variable = {
+			global.sax_war = 1
+		}
+		check_variable = {
+			global.sax_war_end = 0
+		}
+		ROOT = {
+			has_full_control_of_state = 60
+		}
+		ROOT = {
+			has_full_control_of_state = 65
+		}
+	}
+	option = {
+		name = sax_problem.2.a
+        set_variable = {
+    	    global.sax_war_end = 1
+        }
+		DOS = { ger_con_pre_controlled = yes }
+		every_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_core_of = WWS
+		}
+		WWS = { annex_country = { target = ROOT transfer_troops = yes } }
+		WWS = { country_event = sax_problem.4 }
+		AOX = { country_event = sax_problem.4 }
+	}
+}
+
+country_event = {
+	id = sax_problem.3
+	title = sax_problem.3.t
+	desc = sax_problem.3.d
+	picture = GFX_sax_problem_5_pict
+	trigger = {
+		original_tag = DOS
+		has_government = monarchy
+		check_variable = {
+			global.sax_war = 1
+		}
+		check_variable = {
+			global.sax_war_end = 0
+		}
+		ROOT = {
+			has_full_control_of_state = 60
+		}
+		ROOT = {
+			has_full_control_of_state = 65
+		}
+	}
+	option = {
+		name = sax_problem.3.a
+        set_variable = {
+    	    global.sax_war_end = 1
+        }
+		AOX = { add_to_faction = DOS }
+		DOS = { ger_con_aus_controlled = yes }
+		WWS = { country_event = sax_problem.5 }
+		AOX = { country_event = sax_problem.5 }
+	}
+}
+
+country_event = {
+	id = sax_problem.4
+	title = sax_problem.4.t
+	desc = sax_problem.4.d
+	picture = GFX_sax_problem_4_pict
+	is_triggered_only = yes
+	option = {
+		name = sax_problem.4.a
+		trigger = {
+			original_tag = WWS
+		}
+	}
+	option = {
+		name = sax_problem.4.b
+		trigger = {
+			original_tag = AOX
+		}
+	}
+}
+country_event = {
+	id = sax_problem.5
+	title = sax_problem.5.t
+	desc = sax_problem.5.d
+	picture = GFX_sax_problem_5_pict
+	is_triggered_only = yes
+	option = {
+		name = sax_problem.5.a
+		trigger = {
+			original_tag = WWS
+		}
+	}
+	option = {
+		name = sax_problem.5.b
+		trigger = {
+			original_tag = AOX
+		}
+	}
+}
+country_event = {
+	id = sax_problem.6
+	title = sax_problem.6.t
+	desc = sax_problem.6.d
+	picture = GFX_sax_problem_6_pict
+	is_triggered_only = yes
+	option = {
+		name = sax_problem.6.a
+	}
+}

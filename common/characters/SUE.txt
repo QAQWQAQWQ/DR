@@ -28,12 +28,177 @@ characters={
 			id=-1
 		}
 	}
+	SUE_Kalinin={
+		name=SUE_Kalinin
+		portraits={
+			civilian={
+				large="gfx/leaders/SUE/portrait_Kalinin.tga"
+				small="gfx/interface/ideas/portrait_Kalinin.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = SUE_Kalinin_H
+			allowed = {
+				original_tag = SUE
+			}
+			available = {
+				has_completed_focus = SUE_Candidates_the_Central_Committee
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		country_leader={
+			ideology=Bolshevik_type
+			#desc=
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SUE_Leekov={
+		name=SUE_Leekov
+		portraits={
+			civilian={
+				large="gfx/leaders/SUE/portrait_Leekov.tga"
+				small="gfx/interface/ideas/portrait_Leekov.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = SUE_Leekov_H
+			allowed = {
+				original_tag = SUE
+			}
+			available = {
+				has_completed_focus = SUE_Candidates_the_Central_Committee
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SUE_Viktor_Nogin={
+		name=SUE_Viktor_Nogin
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/portrait_Viktor_Nogin.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SUE_Viktor_Nogin_P
+			allowed = {
+				original_tag = SUE
+			}
+			available = {
+				has_completed_focus = SUE_Candidates_the_Central_Committee
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SUE_Vladimir_Milyutin={
+		name=SUE_Vladimir_Milyutin
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/portrait_Vladimir_Milyutin.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SUE_Vladimir_Milyutin_P
+			allowed = {
+				original_tag = SUE
+			}
+			available = {
+				has_completed_focus = SUE_Candidates_the_Central_Committee
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SUE_Alexander_Shlyapnikov={
+		name=SUE_Alexander_Shlyapnikov
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/portrait_Alexander_Shlyapnikov.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SUE_Alexander_Shlyapnikov_P
+			allowed = {
+				original_tag = SUE
+			}
+			available = {
+				has_completed_focus = SUE_Candidates_the_Central_Committee
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SUE_Dzerzhinsky={
+		name=SUE_Dzerzhinsky
+		portraits={
+			civilian={
+				large="gfx/leaders/PBL/portrait_Dzerzhinsky.tga"
+				small="gfx/interface/ideas/Dzerzhinsky.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SUE_Dzerzhinsky_P
+			allowed = {
+				original_tag = SUE
+			}
+			available = {
+				has_completed_focus = SUE_Russian_Anti_Corruption_Committee
+			  }
+			traits = {
+				Chairman_Cheka
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
 	SUE_Stalin={
 		name=SUE_Stalin
 		portraits={
 			army={
 				large="gfx/leaders/SUE/portrait_Stalin.tga"
 				small="gfx/interface/ideas/portrait_Stalin.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SUE_Stalin_P
+			allowed = {
+				original_tag = SUE
+			}
+			available = {
+				has_completed_focus = SUE_Candidates_the_Central_Committee
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 		corps_commander={
@@ -45,12 +210,325 @@ characters={
 			logistics_skill=2
 		}
 	}
+	SUE_Anatoly_Lunacharsky={
+		name=SUE_Anatoly_Lunacharsky
+		portraits={
+			army={
+				small="gfx/interface/ideas/portrait_Anatoly_Lunacharsky.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SUE_Anatoly_Lunacharsky_P
+			allowed = {
+				original_tag = SUE
+			}
+			available = {
+				has_completed_focus = SUE_Candidates_the_Central_Committee
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SUE_Georgy_Oppokov={
+		name=SUE_Georgy_Oppokov
+		portraits={
+			army={
+				small="gfx/interface/ideas/portrait_Georgy_Oppokov.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SUE_Georgy_Oppokov_P
+			allowed = {
+				original_tag = SUE
+			}
+			available = {
+				has_completed_focus = SUE_Candidates_the_Central_Committee
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SUE_Nikolay_Glebov_Avilov={
+		name=SUE_Nikolay_Glebov_Avilov
+		portraits={
+			army={
+				small="gfx/interface/ideas/portrait_Nikolay_Glebov_Avilov.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SUE_Nikolay_Glebov_Avilov_P
+			allowed = {
+				original_tag = SUE
+			}
+			available = {
+				has_completed_focus = SUE_Candidates_the_Central_Committee
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SUE_Ivan_Teodorovich={
+		name=SUE_Ivan_Teodorovich
+		portraits={
+			army={
+				small="gfx/interface/ideas/portrait_Ivan_Teodorovich.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SUE_Ivan_Teodorovich_P
+			allowed = {
+				original_tag = SUE
+			}
+			available = {
+				has_completed_focus = SUE_Candidates_the_Central_Committee
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SUE_Alexandra_Kollontai={
+		name=SUE_Alexandra_Kollontai
+		portraits={
+			army={
+				small="gfx/interface/ideas/portrait_Alexandra_Kollontai.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SUE_Alexandra_Kollontai_P
+			allowed = {
+				original_tag = SUE
+			}
+			available = {
+				has_completed_focus = SUE_Candidates_the_Central_Committee
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SUE_Ivan_Stepanov={
+		name=SUE_Ivan_Stepanov
+		portraits={
+			army={
+				small="gfx/interface/ideas/portrait_Ivan_Stepanov.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SUE_Ivan_Stepanov_P
+			allowed = {
+				original_tag = SUE
+			}
+			available = {
+				has_completed_focus = SUE_Candidates_the_Central_Committee
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SUE_Georgi_Chicherin={
+		name=SUE_Georgi_Chicherin
+		portraits={
+			army={
+				small="gfx/interface/ideas/portrait_Georgi_Chicherin.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SUE_Georgi_Chicherin_P
+			allowed = {
+				original_tag = SUE
+			}
+			available = {
+				has_completed_focus = SUE_Candidates_the_Central_Committee
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	SUE_Vladimir_Smirnov={
+		name=SUE_Vladimir_Smirnov
+		portraits={
+			army={
+				small="gfx/interface/ideas/portrait_Vladimir_Smirnov.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SUE_Vladimir_Smirnov_P
+			allowed = {
+				original_tag = SUE
+			}
+			available = {
+				has_completed_focus = SUE_Candidates_the_Central_Committee
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SUE_Aleksandr_Tsyurupa={
+		name=SUE_Aleksandr_Tsyurupa
+		portraits={
+			army={
+				small="gfx/interface/ideas/portrait_Aleksandr_Tsyurupa.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SUE_Aleksandr_Tsyurupa_P
+			allowed = {
+				original_tag = SUE
+			}
+			available = {
+				has_completed_focus = SUE_Candidates_the_Central_Committee
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SUE_Vladimir_Karelin={
+		name=SUE_Vladimir_Karelin
+		portraits={
+			army={
+				small="gfx/interface/ideas/portrait_Vladimir_Karelin.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SUE_Vladimir_Karelin_P
+			allowed = {
+				original_tag = SUE
+			}
+			available = {
+				has_completed_focus = SUE_Candidates_the_Central_Committee
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SUE_Maxim_Gorky={
+		name=SUE_Maxim_Gorky
+		portraits={
+			army={
+				small="gfx/interface/ideas/portrait_Maxim_Gorky.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SUE_Maxim_Gorky_P
+			allowed = {
+				original_tag = SUE
+			}
+			available = {
+				has_completed_focus = SUE_Candidates_the_Central_Committee
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SUE_Bukharin={
+		name=SUE_Bukharin
+		portraits={
+			army={
+				small="gfx/interface/ideas/portrait_Bukharin.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SUE_Bukharin_P
+			allowed = {
+				original_tag = SUE
+			}
+			available = {
+				has_completed_focus = SUE_Candidates_the_Central_Committee
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}	
+	SUE_Lev_Kamenev={
+		name=SUE_Lev_Kamenev
+		portraits={
+			army={
+				small="gfx/interface/ideas/portrait_Lev_Kamenev.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = SUE_Lev_Kamenev_H
+			allowed = {
+				original_tag = SUE
+			}
+			available = {
+				has_completed_focus = SUE_Candidates_the_Central_Committee
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}	
 	SUE_Trotsky={
 		name=SUE_Trotsky
 		portraits={
 			army={
 				large="gfx/leaders/SUE/portrait_Trotsky.tga"
 				small="gfx/interface/ideas/portrait_Trotsky.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SUE_Trotsky_P
+			allowed = {
+				original_tag = SUE
+			}
+			available = {
+				has_completed_focus = SUE_Candidates_the_Central_Committee
+			  }
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 		corps_commander={

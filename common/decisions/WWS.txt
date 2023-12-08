@@ -79,63 +79,6 @@ complete_effect = {
 				}
 				}
 		}
-
-		WWS_Great_Deutsches_Project = {
-			WWS_Promote_sense_national_identity = {
-			  icon = generic_ignite_civil_war
-			  visible = {
-			  }
-			  
-			  available = { 
-				
-			  }
-			  days_remove = 2
-			  cost = 0
-			  allowed = {
-				  always = yes
-			  }
-				  ai_will_do = {
-				  factor = 1
-				  }
-				  complete_effect = {
-					
-					add_to_variable = {
-						var = Prussian_support
-						value = 5
-				  }
-				  custom_effect_tooltip = Prussian_support_5
-				}
-				  }
-			WWS_Woo_others_states = {
-					icon = generic_ignite_civil_war
-					visible = {
-						has_completed_focus = WWS_Secretly_wooing_state
-					}
-					days_remove = 2
-					cost = 0
-					allowed = {
-						always = yes
-					}
-						ai_will_do = {
-						factor = 1
-						}
-		complete_effect = {
-			add_to_variable = {
-				var = Prussian_support
-				value = 15
-		  }
-		  add_to_variable = {
-			var = Austria_support
-			value = -5
-	  }
-	  custom_effect_tooltip = Austria_support_5
-		  custom_effect_tooltip = Prussian_support_15
-						}
-						}
-				}
-
-
-
 				Germany_Imperial_Highway = {
 					WWS_Construction_roads_Berlin = {
 					  icon = generic_ignite_civil_war

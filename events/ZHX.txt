@@ -135,18 +135,52 @@ news_event = {
 					add_stability = -0.2
 					}
 			}
-news_event = {
+country_event = {
 	id = ZHX.4
 	title = ZHX.4.t
 	desc = ZHX.4.d
 	picture = GFX_BOOK
-
-	major = yes
 
 	is_triggered_only = yes
 
 
 	option = {
 		name = ZHX.4.a
+}
+}
+
+country_event = {
+	id = ZHX.5
+	title = ZHX.5.t
+	desc = ZHX.5.d
+	picture = GFX_aq
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = ZHX.5.a
+}
+}
+
+news_event = {
+	id = ZHX.6
+	title = ZHX.6.t
+	desc = ZHX.6.d
+	picture = GFX_ZHX_6
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = ZHX.6.a
+		ZHX={
+			retire_country_leader=yes
+		subtract_from_variable = {
+			var = DR_money_all
+			value = 13.5
+		}}
+		
+		custom_effect_tooltip = DR_money_all_ZHX_6
 }
 }

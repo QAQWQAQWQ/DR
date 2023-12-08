@@ -1,5 +1,41 @@
 ﻿###########################
-# Political Events
+# startevent Events
 ###########################
 
-add_namespace = political
+add_namespace = startevent
+country_event = {
+	id = startevent.1
+	title = startevent.1.t
+	desc = startevent.1.d
+	picture = GFX_Provincial_elections
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+			name =startevent.1.a
+			VCT={leave_faction = yes}
+KGL={leave_faction = yes}
+BXM={leave_faction = yes}
+KLD={leave_faction = yes}
+DMT={leave_faction = yes}
+KOH={leave_faction = yes}
+			ai_chance = {
+				base = 50
+				modifier = {
+					factor = 0.25
+			}
+		}
+	}
+}	
+country_event = {
+	id = Worldcountry.1
+	title = Worldcountry.1.t
+	desc = Worldcountry.1.d
+	picture = GFX_Provincial_elections
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+			name =Worldcountry.1.a
+			ROOT={add_ideas=London_stock_market_crash}
+			
+		}
+	}

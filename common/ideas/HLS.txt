@@ -1,0 +1,22 @@
+ideas = {
+    country = {
+		HLS_Middle_East_Road = {
+
+			allowed = {
+				always = yes
+			}
+			picture = Middle_East_Road
+
+			
+				targeted_modifier = {
+					tag = SHW
+					cic_to_target_factor = -0.7
+					mic_to_target_factor = -0.7
+					trade_cost_for_target_factor = -1
+					extra_trade_to_target_factor = 0.35
+
+				}
+
+        }
+		}
+}

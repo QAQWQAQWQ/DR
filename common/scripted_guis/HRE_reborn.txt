@@ -1,0 +1,14 @@
+scripted_gui = {
+	HRE_reborn_ui = {
+		context_type = decision_category
+		window_name = "HRE_reborn_ui_window"
+		effects = {
+		}
+		properties={
+		} 
+		
+		ai_enabled = {
+			always = yes
+		}
+	}
+}

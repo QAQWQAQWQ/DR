@@ -1072,7 +1072,7 @@ completion_reward={set_politics = { ruling_party = neutrality elections_allowed 
 		icon = GFX_focus_generic_royal_wedding
 		cost = 7.00
 		available = {
-			AOX={ has_government= Dual_monarchy }
+			AOX={ has_government= monarchy }
 		}
 		prerequisite = {
 			focus = ENL_Resists_red

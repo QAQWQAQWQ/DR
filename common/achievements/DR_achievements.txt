@@ -35,3 +35,35 @@ original_tag = DON
 		has_global_flag = German_unification_ttt
     }
 }
+
+National_resistance = {
+    possible = {
+        # classic triggers used in all vanilla achievements
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+    }
+ 
+    happened = {
+        custom_trigger_tooltip = {
+			tooltip = National_resistance_tt	
+		}
+        
+		has_global_flag = National_resistance_ttt
+    }
+}
+The_Promised_Land = {
+    possible = {
+        # classic triggers used in all vanilla achievements
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+    }
+ 
+    happened = {
+        custom_trigger_tooltip = {
+			tooltip = The_Promised_Land_tt	
+		}
+		has_global_flag = The_Promised_Land_ttt
+    }
+}

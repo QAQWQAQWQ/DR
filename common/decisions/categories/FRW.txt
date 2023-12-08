@@ -24,5 +24,35 @@ FRW_Export_the_revolution = {
 		has_completed_focus = FRW_Export_the_revolution
 	}
 }
+           
+FRW_army_revolution = {
+	icon = generic_prospect_for_resources      
+	
+	picture = GFX_decision_FRW_army_revolution
 
+	scripted_gui=FRW_ARMY_ui
 
+	priority = 4
+	allowed = {
+		tag = FRW
+	}
+	visible = {
+		has_completed_focus = FRW_focus22
+	}
+}  
+             
+FRW_Maginot_Line_plan = {
+	icon = generic_prospect_for_resources      
+	
+	picture = GFX_decision_Maginot_Line_plan 
+
+	scripted_gui=FRW_Maginot_Line
+
+	priority = 4
+	allowed = {                  
+		tag = FRW
+	}
+	visible = {
+		has_completed_focus = FRW_focus31
+	}
+}

@@ -1,0 +1,16 @@
+﻿###########################
+# LIF Events
+###########################
+
+add_namespace = LIF
+news_event = {
+	id = LIF.1
+	title = LIF.1.t
+	desc = LIF.1.d
+	picture = GFX_LIF_1
+	is_triggered_only = yes
+	option = {
+		name = LIF.1.a
+	    
+	    }
+	}

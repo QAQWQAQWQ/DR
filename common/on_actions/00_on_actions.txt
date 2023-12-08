@@ -1,6 +1,124 @@
 on_actions = {
 	#on_monthly 
 	
+
+	on_startup= { 
+		effect = {
+		every_country = { 
+			limit={
+				has_government = authoritarian
+			}
+			add_ideas=Special_police
+			add_ideas=No_investment
+			add_ideas=Patriarchy_supreme
+			add_ideas=Control_media
+			add_ideas=No_labor_laws
+			add_ideas=Smallholder_economy
+			add_ideas=Freedom_belief
+		} 
+		every_country = { 
+			limit={
+				has_government = monarchy
+			}
+			add_ideas=Autonomous_police
+			add_ideas=Weak_investments
+			add_ideas=Patriarchy_supreme
+			add_ideas=Control_media
+			add_ideas=No_labor_laws
+			add_ideas=Smallholder_economy
+			add_ideas=Theocratic_state
+		} 
+		every_country = { 
+			limit={
+				has_government = neutrality
+			}
+			add_ideas=Autonomous_police
+			add_ideas=Weak_investments
+			add_ideas=Patriarchy_supreme
+			add_ideas=Media_control
+			add_ideas=Deflection_employer
+			add_ideas=Smallholder_economy
+			add_ideas=Freedom_belief
+		} 
+		every_country = { 
+			limit={
+				has_government = national_populist
+			}
+			add_ideas=Autonomous_police
+			add_ideas=Weak_investments
+			add_ideas=Patriarchy_supreme
+			add_ideas=Media_control
+			add_ideas=Deflection_employer
+			add_ideas=Smallholder_economy
+			add_ideas=Freedom_belief
+		} 
+		
+		every_country = { 
+			limit={
+				has_government = democratic
+			}
+			add_ideas=Autonomous_police
+			add_ideas=Weak_investments
+			add_ideas=Traditional_conservatism
+			add_ideas=Freedom_press
+			add_ideas=Trade_union_neutrality
+			add_ideas=Market_economy
+			add_ideas=Freedom_belief
+		} 
+		every_country = { 
+			limit={
+				has_government = Agrarian_socialism
+			}
+			add_ideas=Local_police
+			add_ideas=Weak_investments
+			add_ideas=Local_trade_unions
+			add_ideas=Freedom_press
+			add_ideas=Affirmative_action
+			add_ideas=Planned_economy
+			add_ideas=Freedom_belief
+		} 
+		every_country = { 
+			limit={
+				has_government = communism
+			}
+			add_ideas=Local_police
+			add_ideas=Weak_investments
+			add_ideas=Local_trade_unions
+			add_ideas=Freedom_press
+			add_ideas=Affirmative_action
+			add_ideas=Planned_economy
+			add_ideas=Freedom_belief
+		} 
+	 } 
+	} 
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	on_weekly= { 
 		effect = {
 		 every_controlled_state = { 

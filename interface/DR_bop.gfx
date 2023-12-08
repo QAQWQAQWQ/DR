@@ -1,0 +1,25 @@
+
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_bop_League_no"
+		texturefile = "gfx/interface/bop/bop_League_no.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bop_League_yes"
+		texturefile = "gfx/interface/bop/bop_League_yes.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_NicholasII"
+		texturefile = "gfx/interface/bop/bop_NicholasII.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_Rasputin"
+		texturefile = "gfx/interface/bop/bop_Rasputin.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_Duma"
+		texturefile = "gfx/interface/bop/bop_Duma.dds"
+	}
+}

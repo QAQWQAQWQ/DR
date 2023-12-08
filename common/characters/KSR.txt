@@ -1,0 +1,17 @@
+characters={
+	KSR_Kronstadt_sailor={
+		name=KSR_Kronstadt_sailor
+		portraits={
+			civilian={
+				large="gfx/leaders/KSR/portrait_Kronstadt_Sailors_Committee.tga"
+			}
+		}
+		country_leader={
+			ideology = Anarchopedia_type
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	}

@@ -10,8 +10,8 @@ spriteTypes = {
 			legacy_lazy_load = no
 		}
 	spriteType = {
-			name = "GFX_Second_International1"
-			texturefile = "gfx/interface/Faction/Second_International.dds"
+			name = "GFX_Se_International"
+			texturefile = "gfx/interface/Faction/Se_International.dds"
 			legacy_lazy_load = no
 		}
 	spriteType = {
@@ -19,4 +19,29 @@ spriteTypes = {
 			texturefile = "gfx/interface/Faction/North_German_Confederation.dds"
 			legacy_lazy_load = no
 		}	
+	spriteType = {
+			name = "GFX_Rpublic_China"
+			texturefile = "gfx/interface/Faction/Rpublic_China.dds"
+			legacy_lazy_load = no
+		}
+	spriteType = {
+			name = "GFX_Commonwealth_of_Nations"
+			texturefile = "gfx/interface/Faction/Commonwealth_of_Nations.dds"
+			legacy_lazy_load = no
+		}
+	spriteType = {
+			name = "GFX_Empire_Japan"
+			texturefile = "gfx/interface/Faction/Empire_Japan.dds"
+			legacy_lazy_load = no
+		}
+	spriteType = {
+			name = "GFX_Bonaparte_family_alliance"
+			texturefile = "gfx/interface/Faction/Bonaparte_family_alliance.dds"
+			legacy_lazy_load = no
+		}
+	spriteType = {
+			name = "GFX_Russian_White_Army"
+			texturefile = "gfx/interface/Faction/Russian_White_Army.dds"
+			legacy_lazy_load = no
+		}			
 	}

@@ -4,6 +4,7 @@ ger_con_decisions = {
 	icon = generic_research
 	visible = {
 		check_variable = { global.ger_con_end = 0 }
+        check_variable = { global.ger_con_has_uni = 0 }
 		OR = {
 			original_tag = AOX
 			original_tag = WWS
@@ -24,29 +25,17 @@ ger_con_decisions = {
 	} 
 	visible_when_empty = yes
 }
-ger_con_bop = {
-	priority = 10
+ger_con_fra_def = {
+	priority = 8
 	icon = generic_research
 	visible = {
+		AOX = { has_completed_focus = AUS_ger_12 }
 		OR = {
 			original_tag = AOX
 			original_tag = WWS
-			original_tag = AGC
-			original_tag = LSB
-			original_tag = DHD
-			original_tag = DON
-			original_tag = DOF
-			original_tag = DOB
-			original_tag = DOR
-			original_tag = BXM
-			original_tag = DOL
-			original_tag = DOH
-			original_tag = DOA
-			original_tag = DOM
-			original_tag = DOS
 		}
 	} 
-	visible_when_empty = no
+	visible_when_empty = yes
 }
 
 

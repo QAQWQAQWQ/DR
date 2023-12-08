@@ -1,0 +1,16 @@
+ideas = {
+    country = {
+		ESI_Black_Cossacks = {
+
+			allowed = {
+				always = yes
+			}
+			picture = Black_Cossacks
+
+			modifier = {
+				experience_gain_infantry_combat_factor = 0.05
+				experience_gain_infantry_training_factor = 0.05
+			}
+        }
+		}
+}

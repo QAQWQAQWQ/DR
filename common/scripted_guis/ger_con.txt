@@ -185,5 +185,494 @@ scripted_gui = {
 				image = [DOS.GetFlag]
 			}
 		} 
+		
+		ai_enabled = {
+			always = yes
+		}
+		ai_weights = {
+			ger_con_aox_click = {
+				ai_will_do = { base = -1 }
+			}
+			ger_con_wws_click = {
+				ai_will_do = { base = -1 }
+			}
+			ger_con_agc_click = {
+				ai_will_do = { 
+					base = 0
+					modifier = { 
+        				tag = AGC
+        				add = 100 
+      				}
+				}
+			}
+			ger_con_lsb_click = {
+				ai_will_do = { 
+					base = 0
+					modifier = { 
+        				tag = LSB
+        				add = 100 
+      				}
+					modifier = { 
+						AND = {
+							OR = {
+								check_variable = { LSB.aus_support > LSB.pre_support }
+								check_variable = { LSB.aus_support = LSB.pre_support }
+							}
+        					tag = WWS
+						}
+        				add = LSB.aus_support 
+        				factor = -1
+						add = LSB.pre_support
+						add = 100
+					}
+					modifier = { 
+						AND = {
+							OR = {
+								check_variable = { LSB.aus_support < LSB.pre_support }
+								check_variable = { LSB.aus_support = LSB.pre_support }
+							}
+        					tag = AOX
+						}
+        				add = LSB.pre_support 
+        				factor = -1
+						add = LSB.aus_support
+						add = 100
+      				}
+					modifier = { 
+        				check_variable = { LSB.ger_con_cangetsupport = 0 }
+        				add = -1000 
+      				}
+				}
+			}
+			ger_con_dhd_click = {
+				ai_will_do = { 
+					base = 0
+					modifier = { 
+        				tag = DHD
+        				add = 100 
+      				}
+					modifier = { 
+						AND = {
+							OR = {
+								check_variable = { DHD.aus_support > DHD.pre_support }
+								check_variable = { DHD.aus_support = DHD.pre_support }
+							}
+        					tag = WWS
+						}
+        				add = DHD.aus_support 
+        				factor = -1
+						add = DHD.pre_support
+						add = 100
+					}
+					modifier = { 
+						AND = {
+							OR = {
+								check_variable = { DHD.aus_support < DHD.pre_support }
+								check_variable = { DHD.aus_support = DHD.pre_support }
+							}
+        					tag = AOX
+						}
+        				add = DHD.pre_support 
+        				factor = -1
+						add = DHD.aus_support
+						add = 100
+      				}
+					modifier = { 
+        				check_variable = { DHD.ger_con_cangetsupport = 0 }
+        				add = -1000 
+      				}
+				}
+			}
+			ger_con_don_click = {
+				ai_will_do = { 
+					base = 0
+					modifier = { 
+        				tag = DON
+        				add = 100 
+      				}
+					modifier = { 
+						AND = {
+							OR = {
+								check_variable = { DON.aus_support > DON.pre_support }
+								check_variable = { DON.aus_support = DON.pre_support }
+							}
+        					tag = WWS
+						}
+        				add = DON.aus_support 
+        				factor = -1
+						add = DON.pre_support
+						add = 100
+					}
+					modifier = { 
+						AND = {
+							OR = {
+								check_variable = { DON.aus_support < DON.pre_support }
+								check_variable = { DON.aus_support = DON.pre_support }
+							}
+        					tag = AOX
+						}
+        				add = DON.pre_support 
+        				factor = -1
+						add = DON.aus_support
+						add = 100
+      				}
+					modifier = { 
+        				check_variable = { DON.ger_con_cangetsupport = 0 }
+        				add = -1000 
+      				}
+				}
+			}
+			ger_con_dof_click = {
+				ai_will_do = { 
+					base = 0
+					modifier = { 
+        				tag = DOF
+        				add = 100 
+      				}
+					modifier = { 
+						AND = {
+							OR = {
+								check_variable = { DOF.aus_support > DOF.pre_support }
+								check_variable = { DOF.aus_support = DOF.pre_support }
+							}
+        					tag = WWS
+						}
+        				add = DOF.aus_support 
+        				factor = -1
+						add = DOF.pre_support
+						add = 100
+					}
+					modifier = { 
+						AND = {
+							OR = {
+								check_variable = { DOF.aus_support < DOF.pre_support }
+								check_variable = { DOF.aus_support = DOF.pre_support }
+							}
+        					tag = AOX
+						}
+        				add = DOF.pre_support 
+        				factor = -1
+						add = DOF.aus_support
+						add = 100
+      				}
+					modifier = { 
+        				check_variable = { DOF.ger_con_cangetsupport = 0 }
+        				add = -1000 
+      				}
+				}
+			}
+			ger_con_dob_click = {
+				ai_will_do = { 
+					base = 0
+					modifier = { 
+        				tag = DOB
+        				add = 100 
+      				}
+					modifier = { 
+						AND = {
+							OR = {
+								check_variable = { DOB.aus_support > DOB.pre_support }
+								check_variable = { DOB.aus_support = DOB.pre_support }
+							}
+        					tag = WWS
+						}
+        				add = DOB.aus_support 
+        				factor = -1
+						add = DOB.pre_support
+						add = 100
+					}
+					modifier = { 
+						AND = {
+							OR = {
+								check_variable = { DOB.aus_support < DOB.pre_support }
+								check_variable = { DOB.aus_support = DOB.pre_support }
+							}
+        					tag = AOX
+						}
+        				add = DOB.pre_support 
+        				factor = -1
+						add = DOB.aus_support
+						add = 100
+      				}
+					modifier = { 
+        				check_variable = { DOB.ger_con_cangetsupport = 0 }
+        				add = -1000 
+      				}
+				}
+			}
+			ger_con_dor_click = {
+				ai_will_do = { 
+					base = 0
+					modifier = { 
+        				tag = DOR
+        				add = 100 
+      				}
+					modifier = { 
+						AND = {
+							OR = {
+								check_variable = { DOR.aus_support > DOR.pre_support }
+								check_variable = { DOR.aus_support = DOR.pre_support }
+							}
+        					tag = WWS
+						}
+        				add = DOR.aus_support 
+        				factor = -1
+						add = DOR.pre_support
+						add = 100
+					}
+					modifier = { 
+						AND = {
+							OR = {
+								check_variable = { DOR.aus_support < DOR.pre_support }
+								check_variable = { DOR.aus_support = DOR.pre_support }
+							}
+        					tag = AOX
+						}
+        				add = DOR.pre_support 
+        				factor = -1
+						add = DOR.aus_support
+						add = 100
+      				}
+					modifier = { 
+        				check_variable = { DOR.ger_con_cangetsupport = 0 }
+        				add = -1000 
+      				}
+				}
+			}
+			ger_con_bxm_click = {
+				ai_will_do = { 
+					base = 0
+					modifier = { 
+        				tag = BXM
+        				add = 100 
+      				}
+					modifier = { 
+						AND = {
+							OR = {
+								check_variable = { BXM.aus_support > BXM.pre_support }
+								check_variable = { BXM.aus_support = BXM.pre_support }
+							}
+        					tag = WWS
+						}
+        				add = BXM.aus_support 
+        				factor = -1
+						add = BXM.pre_support
+						add = 100
+					}
+					modifier = { 
+						AND = {
+							OR = {
+								check_variable = { BXM.aus_support < BXM.pre_support }
+								check_variable = { BXM.aus_support = BXM.pre_support }
+							}
+        					tag = AOX
+						}
+        				add = BXM.pre_support 
+        				factor = -1
+						add = BXM.aus_support
+						add = 100
+      				}
+					modifier = { 
+        				check_variable = { BXM.ger_con_cangetsupport = 0 }
+        				add = -1000 
+      				}
+				}
+			}
+			ger_con_dol_click = {
+				ai_will_do = { 
+					base = 0
+					modifier = { 
+        				tag = DOL
+        				add = 100 
+      				}
+					modifier = { 
+						AND = {
+							OR = {
+								check_variable = { DOL.aus_support > DOL.pre_support }
+								check_variable = { DOL.aus_support = DOL.pre_support }
+							}
+        					tag = WWS
+						}
+        				add = DOL.aus_support 
+        				factor = -1
+						add = DOL.pre_support
+						add = 100
+					}
+					modifier = { 
+						AND = {
+							OR = {
+								check_variable = { DOL.aus_support < DOL.pre_support }
+								check_variable = { DOL.aus_support = DOL.pre_support }
+							}
+        					tag = AOX
+						}
+        				add = DOL.pre_support 
+        				factor = -1
+						add = DOL.aus_support
+						add = 100
+      				}
+					modifier = { 
+        				check_variable = { DOL.ger_con_cangetsupport = 0 }
+        				add = -1000 
+      				}
+				}
+			}
+			ger_con_doh_click = {
+				ai_will_do = { 
+					base = 0
+					modifier = { 
+        				tag = DOH
+        				add = 100 
+      				}
+					modifier = { 
+						AND = {
+							OR = {
+								check_variable = { DOH.aus_support > DOH.pre_support }
+								check_variable = { DOH.aus_support = DOH.pre_support }
+							}
+        					tag = WWS
+						}
+        				add = DOH.aus_support 
+        				factor = -1
+						add = DOH.pre_support
+						add = 100
+					}
+					modifier = { 
+						AND = {
+							OR = {
+								check_variable = { DOH.aus_support < DOH.pre_support }
+								check_variable = { DOH.aus_support = DOH.pre_support }
+							}
+        					tag = AOX
+						}
+        				add = DOH.pre_support 
+        				factor = -1
+						add = DOH.aus_support
+						add = 100
+      				}
+					modifier = { 
+        				check_variable = { DOH.ger_con_cangetsupport = 0 }
+        				add = -1000 
+      				}
+				}
+			}
+			ger_con_doa_click = {
+				ai_will_do = { 
+					base = 0
+					modifier = { 
+        				tag = DOA
+        				add = 100 
+      				}
+					modifier = { 
+						AND = {
+							OR = {
+								check_variable = { DOA.aus_support > DOA.pre_support }
+								check_variable = { DOA.aus_support = DOA.pre_support }
+							}
+        					tag = WWS
+						}
+        				add = DOA.aus_support 
+        				factor = -1
+						add = DOA.pre_support
+						add = 100
+					}
+					modifier = { 
+						AND = {
+							OR = {
+								check_variable = { DOA.aus_support < DOA.pre_support }
+								check_variable = { DOA.aus_support = DOA.pre_support }
+							}
+        					tag = AOX
+						}
+        				add = DOA.pre_support 
+        				factor = -1
+						add = DOA.aus_support
+						add = 100
+      				}
+					modifier = { 
+        				check_variable = { DOA.ger_con_cangetsupport = 0 }
+        				add = -1000 
+      				}
+				}
+			}
+			ger_con_dom_click = {
+				ai_will_do = { 
+					base = 0
+					modifier = { 
+        				tag = DOM
+        				add = 100 
+      				}
+					modifier = { 
+						AND = {
+							OR = {
+								check_variable = { DOM.aus_support > DOM.pre_support }
+								check_variable = { DOM.aus_support = DOM.pre_support }
+							}
+        					tag = WWS
+						}
+        				add = DOM.aus_support 
+        				factor = -1
+						add = DOM.pre_support
+						add = 100
+					}
+					modifier = { 
+						AND = {
+							OR = {
+								check_variable = { DOM.aus_support < DOM.pre_support }
+								check_variable = { DOM.aus_support = DOM.pre_support }
+							}
+        					tag = AOX
+						}
+        				add = DOM.pre_support 
+        				factor = -1
+						add = DOM.aus_support
+						add = 100
+      				}
+					modifier = { 
+        				check_variable = { DOM.ger_con_cangetsupport = 0 }
+        				add = -1000 
+      				}
+				}
+			}
+			ger_con_dos_click = {
+				ai_will_do = { 
+					base = 0
+					modifier = { 
+        				tag = DOS
+        				add = 100 
+      				}
+					modifier = { 
+						AND = {
+							OR = {
+								check_variable = { DOS.aus_support > DOS.pre_support }
+								check_variable = { DOS.aus_support = DOS.pre_support }
+							}
+        					tag = WWS
+						}
+        				add = DOS.aus_support 
+        				factor = -1
+						add = DOS.pre_support
+						add = 100
+					}
+					modifier = { 
+						AND = {
+							OR = {
+								check_variable = { DOS.aus_support < DOS.pre_support }
+								check_variable = { DOS.aus_support = DOS.pre_support }
+							}
+        					tag = AOX
+						}
+        				add = DOS.pre_support 
+        				factor = -1
+						add = DOS.aus_support
+						add = 100
+      				}
+					modifier = { 
+        				check_variable = { DOS.ger_con_cangetsupport = 0 }
+        				add = -1000 
+      				}
+				}
+			}
+		}
 	}
 }

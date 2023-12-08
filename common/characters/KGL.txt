@@ -12,5 +12,19 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}		
+	}	
+	KGL_Ignacy_Paderewski={
+		name=KGL_Ignacy_Paderewski
+		portraits={
+			civilian={
+				large="gfx/leaders/KGL/portrait_Ignacy_Paderewski.tga"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}			
 	}

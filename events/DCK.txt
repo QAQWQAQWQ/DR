@@ -12,6 +12,11 @@ news_event = {
 	is_triggered_only = yes
 	option = {
 		name = DCK.1.a
+		DCK = {
+			add_to_faction =SHW
+			DCK={declare_war_on = { target = SUE type = annex_everything }}
+		}
+		
 		hidden_effect = {
 			DCK= { 
 			transfer_state = 260

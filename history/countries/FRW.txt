@@ -2,7 +2,7 @@
 
 oob = "FRW_1920"
 set_research_slots = 3
-set_stability = 0.5
+set_stability = 0.51
 
 # Starting tech
 set_technology = {
@@ -28,7 +28,7 @@ set_technology = {
 	
 	basic_train = 1
 }
-create_faction = Second_International
+create_faction = Se_International
 add_to_faction = BHL
 set_convoys = 300
 
@@ -47,29 +47,18 @@ set_popularities = {
 	radical_socialist = 10
 	Anarchopedia = 15
 	democratic_socialism = 30
-	national_populist = 25
+	Reform_socialism = 25
 }
 
-add_ideas = {
-FRW_Chaotic_socialism
-FRW_The_shame_of_Alsace_Lorraine
-FRW_African_Royal_Families_in_exile
-
-
-#law
-atheism
-Affirmative_action
-Local_police
-Weak_investments
-State_media
-Trade_union_neutrality
-Basic_industrialization 
-secondary_school
-Staterun_economy
-	}
 
 
 
+
+
+recruit_character = FRW_Sebastian_Fuhr
+recruit_character = FRW_Paul_Brousse
+recruit_character = FRW_guesde
+recruit_character = FRW_Jean_Allemane
 recruit_character = FRW_Jean_Jaures
 recruit_character = FRW_LudovicOscar_Frossard
 recruit_character = FRW_Leon_Blum
@@ -83,9 +72,7 @@ recruit_character = FRW_Edouard_de_Castelnau
 recruit_character = FRW_Alexandre_Jacob
 recruit_character = FRW_Joffre
 recruit_character = FRW_Marie_Eugene_Debeney
-recruit_character = FRW_Georges_Catroux
 recruit_character = FRW_Maurice_Sarrell
-recruit_character = FRW_Charles_Delestraint
 recruit_character = FRW_Vincent_Auriol
 recruit_character = FRW_Marcel_Deat
 recruit_character = FRW_Benoit_Frachon
@@ -103,13 +90,47 @@ recruit_character = FRW_Monmousseau
 recruit_character = FRW_Paul_Maistre
 recruit_character = FRW_Berthelot_Metz
 recruit_character = FRW_Maurice_Pelle_Prague
+recruit_character = FRW_Gaston_Henri_Billotte
 
-
-
-recruit_character = FRW_Charles_de_Gaulle
 recruit_character = FRW_Jacques_Doriot
+
+
+recruit_character = FRW_Renaud_Jean
+recruit_character = FRW_Comite_communal
+
+recruit_character = FRW_Maurice_Gustave_Gamelin
+recruit_character = FRW_Gaston_Moch
+recruit_character = FRW_Charles_de_Gaulle
+recruit_character = FRW_Jacques_Sadoul
+recruit_character = FRW_Adolphe_Messimy
+recruit_character = FRW_georges_louis_humbert
+
 FRW_Jacques_Doriot = { set_nationality = NNN }
-FRW_Charles_de_Gaulle = { set_nationality = NNN }
+
+
+
+add_ideas = {
+	
+	FRW_Chaotic_socialism
+	FRW_The_shame_of_Alsace_Lorraine
+	FRW_African_Royal_Families_in_exile
+	FRW_Dissidents_army
+	FRW_Inefficient_industry
+	#law
+	
+	###
+	atheism
+	Affirmative_action
+	Local_police
+	Weak_investments
+	State_media
+	Local_trade_unions
+	low_industrialization
+	Mixed_economy
+	##ad
+	FRW_Comite_communal_H
+		}
+
 
 add_ai_strategy = {
 	type = alliance

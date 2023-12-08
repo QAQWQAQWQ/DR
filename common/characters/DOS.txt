@@ -13,4 +13,19 @@ characters={
 			id=-1
 		}
 	}
+	DOS_Carl_Eduard={
+		name=DOS_Carl_Eduard
+		portraits={
+			civilian={
+				large="gfx/leaders/DOS/portrait_Carl_Eduard.tga"
+			}
+		}
+		country_leader={
+			ideology=authoritarian_type
+			traits={ North_Germans }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
 	}

@@ -1,0 +1,276 @@
+upd_gdp = {
+				set_variable_to_random = {
+					var = rand_var_qwq
+					min = 995
+					max = 1010
+					integer = yes
+				}
+				divide_variable = { rand_var_qwq = 1000 }
+				multiply_variable = {var = factory_gdp_coefficient value = rand_var_qwq }
+				set_variable_to_random = {
+					var = rand_var_qwq
+					min = 995
+					max = 1010
+					integer = yes
+				}
+				divide_variable = { rand_var_qwq = 1000 }
+				multiply_variable = {var = resource_gdp_coefficient value = rand_var_qwq }
+				set_variable_to_random = {
+					var = rand_var_qwq
+					min = 995
+					max = 1010
+					integer = yes
+				}
+				divide_variable = { rand_var_qwq = 1000 }
+				multiply_variable = {var = population_gdp_coefficient value = rand_var_qwq }
+				
+                set_variable = { core_population = 0 }
+				set_variable = { not_core_population = 0 }
+				set_variable = { lastgdpmn = gdpmn }
+				set_variable = { gdpmn = 0}
+				set_variable = { factory_gdp = 0 }
+				set_variable = { core_population_gdp = 0 }
+				set_variable = { not_core_population_gdp = 0 }
+				set_variable = { resource_gdp = 0 }
+
+				# every_subject_country = {
+				#	every_controlled_state = {
+				#		add_to_variable = { var = PREV.PREV.factory_gdp value = industrial_complex_level }
+				#	}
+				# }
+
+				every_controlled_state = {
+					if = {
+						limit = {
+							is_core_of = PREV
+						}
+						add_to_variable = { var = PREV.core_population value = state_population_k } 
+					}
+					else = {
+						add_to_variable = { var = PREV.not_core_population value = state_population_k } 
+					}
+					# add_to_variable = { var = PREV.factory_gdp value = industrial_complex_level }
+				}
+
+				set_variable = { factory_gdp = num_of_civilian_factories}
+				if = {
+					limit = { 
+						check_variable = {
+							var = factory_gdp
+							value = 3
+							compare = less_than_or_equals
+						}							
+					}
+					multiply_variable = {var = factory_gdp value = 0.5} #<=3 -> *0.5
+				}
+				else_if = {
+					limit = {
+						AND = {
+                            check_variable = { factory_gdp > 3 }					
+							check_variable = {
+								var = factory_gdp
+								value = 8
+								compare = less_than_or_equals
+							}
+                        }							
+					}
+                    multiply_variable = {var = factory_gdp value = 0.6} #>3&&<=8 -> *0.6
+				}
+				else_if = {
+					limit = {
+						AND = {
+                            check_variable = { factory_gdp > 8 }					
+							check_variable = {
+								var = factory_gdp
+								value = 15
+								compare = less_than_or_equals
+							}
+                        }
+					}
+                    multiply_variable = {var = factory_gdp value = 0.7} #>8&&<=15 -> *0.7
+				}
+				else_if = {
+					limit = {
+						AND = {
+                            check_variable = { factory_gdp > 15 }					
+							check_variable = {
+								var = factory_gdp
+								value = 30
+								compare = less_than_or_equals
+							}
+                        }
+					} 
+                   multiply_variable = {var = factory_gdp value = 0.8} #>15&&<=30 -> *0.8
+				}
+				else_if = {
+					limit = {
+						AND = {
+                            check_variable = { factory_gdp > 30 }					
+							check_variable = {
+								var = factory_gdp
+								value = 60
+								compare = less_than_or_equals
+							}
+                        }
+					}
+                    multiply_variable = {var = factory_gdp value = 0.9} #>30&&<=60 -> *0.9
+				}
+				else_if = {
+					limit = {
+						AND = {
+                            check_variable = { factory_gdp > 60 }					
+							check_variable = {
+								var = factory_gdp
+								value = 100
+								compare = less_than_or_equals
+							}
+                        }			
+					}
+                    multiply_variable = {var = factory_gdp value = 1.0} #>60&&<=100 -> *1.0
+				}
+				else_if = {
+					limit = {
+						AND = {
+                            check_variable = { factory_gdp > 100 }					
+							check_variable = {
+								var = factory_gdp
+								value = 200
+								compare = less_than_or_equals
+							}
+                        }			
+					}
+                    multiply_variable = {var = factory_gdp value = 1.1} #>100&&<=200 -> *1.1
+				}
+				else_if = {
+					limit = {
+						check_variable = { factory_gdp > 200 } #200 the cap
+					}
+                    multiply_variable = {var = factory_gdp value = 1.2} #>200 -> *1.2
+				}
+
+				set_variable = { chromium_export = resource_exported@chromium}
+				multiply_variable = {var = chromium_export value = 0.0006}
+				
+				set_variable = { tungsten_export = resource_exported@tungsten}
+				multiply_variable = {var = tungsten_export value = 0.0004}
+				
+				set_variable = { rubber_export = resource_exported@rubber}
+				multiply_variable = {var = rubber_export value = 0.0004}
+				
+				set_variable = { aluminium_export = resource_exported@aluminium}
+				multiply_variable = {var = aluminium_export value = 0.0004}
+				
+				set_variable = { oil_export = resource_exported@oil}
+				multiply_variable = {var = oil_export value = 0.0008}
+				
+				set_variable = { steel_export = resource_exported@steel}
+				multiply_variable = {var = steel_export value = 0.0004}	
+
+				add_to_variable = { var = resource_gdp value = rubber_export}
+				add_to_variable = { var = resource_gdp value = chromium_export}
+				add_to_variable = { var = resource_gdp value = tungsten_export}
+				add_to_variable = { var = resource_gdp value = steel_export}
+				add_to_variable = { var = resource_gdp value = oil_export}
+				add_to_variable = { var = resource_gdp value = aluminium_export}
+				
+				set_variable = { core_population_gdp = core_population }
+				multiply_variable = {var = core_population_gdp value = 0.0001}	
+				multiply_variable = {var = core_population_gdp value = 0.0001}	
+
+				set_variable = { not_core_population_gdp = not_core_population }
+				multiply_variable = {var = not_core_population_gdp value = 0.0001}	
+				multiply_variable = {var = not_core_population_gdp value = 0.0005}	
+				
+				
+				multiply_variable = {var = factory_gdp value = factory_gdp_coefficient }	
+				multiply_variable = {var = core_population_gdp value = population_gdp_coefficient }	
+				multiply_variable = {var = not_core_population_gdp value = population_gdp_coefficient }	
+				multiply_variable = {var = resource_gdp value = resource_gdp_coefficient }	
+
+				add_to_variable = { var = gdpmn value = factory_gdp}
+				add_to_variable = { var = gdpmn value = core_population_gdp}
+				add_to_variable = { var = gdpmn value = not_core_population_gdp}
+				add_to_variable = { var = gdpmn value = resource_gdp}
+				
+				add_to_variable = { var = global.total_gdp value = gdpmn }
+				subtract_from_variable = { global.total_gdp = lastgdpmn }
+
+				set_variable = { gdp_growth = gdpmn }
+				if = {
+					limit = {
+						check_variable = {
+							lastgdpmn = 0
+						}
+					}
+					set_variable = { gdp_growth = 0 }
+				}
+				else = {
+					divide_variable = { gdp_growth = lastgdpmn }
+					multiply_variable = {var = gdp_growth value = 100 }
+					subtract_from_variable = { gdp_growth = 100 }
+				}
+
+				set_variable = { factory_gdp_tax = factory_gdp }
+				multiply_variable = {var = factory_gdp_tax value = factory_tax_rate }
+				set_variable = { core_population_gdp_tax = core_population_gdp }
+				multiply_variable = {var = core_population_gdp_tax value = population_tax_rate }
+				set_variable = { not_core_population_gdp_tax = not_core_population_gdp }
+				multiply_variable = {var = not_core_population_gdp_tax value = population_tax_rate }
+				set_variable = { resource_gdp_tax = resource_gdp }
+				multiply_variable = {var = resource_gdp_tax value = resource_tax_rate }
+
+				set_variable = { capital_reserves_change = 0 }
+
+				add_to_variable = { var = capital_reserves_change value = factory_gdp_tax }
+				add_to_variable = { var = capital_reserves_change value = core_population_gdp_tax }
+				
+	add_to_variable = { var = capital_reserves_change value = not_core_population_gdp_tax }
+	add_to_variable = { var = capital_reserves_change value = resource_gdp_tax }
+
+	set_variable = { armf = num_of_military_factories}
+	multiply_variable = {var = armf value = 0.02}
+				
+	set_variable = { navf = num_of_naval_factories}
+	multiply_variable = {var = navf value = 0.02}
+				
+	set_variable = { military_spend = num_battalions}
+	multiply_variable = {var = military_spend value = 0.0005}
+
+	subtract_from_variable = { var = capital_reserves_change value = armf }
+	subtract_from_variable = { var = capital_reserves_change value = navf }
+	subtract_from_variable = { var = capital_reserves_change value = military_spend }
+				
+	add_to_variable = { var = capital_reserves_qwq value = capital_reserves_change }
+}
+upd_gdp_proportion = {
+	set_variable ={ gdp_per_capita = gdpmn }
+	multiply_variable = { var = gdp_per_capita value = 1000 }
+	if = {
+		limit = {
+			check_variable = { max_manpower_k = 0 }					
+		}
+        set_variable ={ gdp_per_capita = 0 }
+	}
+	else = {
+		divide_variable = { var = gdp_per_capita value = max_manpower_k }
+		multiply_variable = { var = gdp_per_capita value = 1000 }				
+	}
+	set_variable ={ gdp_per_capita_core = gdpmn }
+	multiply_variable = { var = gdp_per_capita_core value = 1000 }
+	if = {
+		limit = {
+			check_variable = { core_population = 0 }					
+		}
+        set_variable ={ gdp_per_capita_core = 0 }
+	}
+	else = {
+		divide_variable = { var = gdp_per_capita_core value = core_population }
+		multiply_variable = { var = gdp_per_capita_core value = 1000 }			
+	}
+	
+	set_variable = { gdp_proportion = gdpmn }
+				
+	multiply_variable = { gdp_proportion = 100 }
+				
+	divide_variable = { var = gdp_proportion value = global.total_gdp }
+}

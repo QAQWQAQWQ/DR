@@ -35,12 +35,91 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Dual_monarchy_type
+			ideology=royalists
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	AOX_Michael_Mayr={
+		name=AOX_Michael_Mayr
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Michael_Mayr.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = AOX_Michael_Mayr_H
+			allowed = {
+				original_tag = AOX
+			}
+			available = {
+				
+			  }
+			traits = {
+				head_of_government
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		country_leader={
+			ideology=authoritarian_type
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
 		}
 	}
+
+	AOX_Friedrich_Hayek={
+		name=AOX_Friedrich_Hayek
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Friedrich_Hayek.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = AOX_Friedrich_Hayek_P
+			allowed = {
+				original_tag = AOX
+			}
+			available = {
+				
+			  }
+			traits = {
+				ecomonist_publicist
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	AOX_Franz_Graf_Conrad={
 		name=AOX_Franz_Graf_Conrad
 		portraits={
@@ -50,7 +129,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={  }
+			traits={ expert_delegator }
 			skill=4
 			attack_skill=3
 			defense_skill=3
@@ -67,14 +146,157 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={  }
+			traits={ Lieutenant_general }
 			skill=3
 			attack_skill=3
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=1
 		}
+	}
+
+
+
+	AOX_Joseph_Ferdinand={
+		name=AOX_Joseph_Ferdinand
+		portraits={
+			army={
+				large="gfx/leaders/AOX/Portrait_Joseph_Ferdinand.tga"
+				small="gfx/interface/ideas/Portrait_Joseph_Ferdinand.dds"
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+		}
 	}	
+
+	AOX_Victor_Dankel={
+		name=AOX_Victor_Dankel
+		portraits={
+			army={
+				large="gfx/leaders/AOX/Portrait_Victor_Dankel.tga"
+				small="gfx/interface/ideas/Portrait_Victor_Dankel.dds"
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2 
+		}
+	}	
+
+	AOX_Charles_I={
+		name=AOX_Charles_I
+		portraits={
+			army={
+				large="gfx/leaders/AOX/Portrait_Charles_I.tga"
+				small="gfx/interface/ideas/Portrait_Charles_I.dds"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	AOX_Eduard_Ermolli={
+		name=AOX_Eduard_Ermolli
+		portraits={
+			army={
+				large="gfx/leaders/AOX/Portrait_Eduard_Ermolli.tga"
+				small="gfx/interface/ideas/Portrait_Eduard_Ermolli.dds"
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}		
+	AOX_Alexander_Freiherr_von_Krobatin={
+		name=AOX_Alexander_Freiherr_von_Krobatin
+		portraits={
+			army={
+				large="gfx/leaders/AOX/Portrait_Alexander_Freiherr_von_Krobatin.tga"
+				small="gfx/interface/ideas/Portrait_Alexander_Freiherr_von_Krobatin.dds"
+			}
+		}
+		field_marshal = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	AOX_Franz_Rohr_von_Denta={
+		name=AOX_Franz_Rohr_von_Denta
+		portraits={
+			army={
+				large="gfx/leaders/AOX/Portrait_Franz_Rohr_von_Denta.tga"
+				small="gfx/interface/ideas/Portrait_Franz_Rohr_von_Denta.dds"
+			}
+		}
+		corps_commander={
+			traits={  Lieutenant_general}
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}		
+	AOX_Hermann_Kovess={
+		name=AOX_Hermann_Kovess
+		portraits={
+			army={
+				large="gfx/leaders/AOX/Portrait_Hermann_Kövess.tga"
+				small="gfx/interface/ideas/Portrait_Hermann_Kövess.dds"
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+		
+	}	
+	AOX_Wenzel_Freiherr_von_Wurm={
+		name=AOX_Wenzel_Freiherr_von_Wurm
+		portraits={
+			army={
+				large="gfx/leaders/AOX/Portrait_Wenzel_Freiherr_von_Wurm.tga"
+				small="gfx/interface/ideas/Portrait_Wenzel_Freiherr_von_Wurm.dds"
+			}
+		}
+		corps_commander={
+			traits={ skilled_staffer }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+		}
+	}	
+
+
 	AOX_Friedrich={
 		name=AOX_Friedrich
 		portraits={
@@ -84,7 +306,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={  }
+			traits={ expert_delegator }
 			skill=3
 			attack_skill=1
 			defense_skill=1
@@ -101,7 +323,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={  }
+			traits={Lieutenant_general }
 			skill=4
 			attack_skill=1
 			defense_skill=4
@@ -118,7 +340,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={  }
+			traits={ Lieutenant_general }
 			skill=3
 			attack_skill=1
 			defense_skill=1

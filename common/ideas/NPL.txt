@@ -7,5 +7,11 @@ ideas = {
 				ai_badass_factor = 0.3
 			}
         }
+		NPL_Desert_cavalry= {
+			picture = succession_uprisings
+			modifier = {
+				terrain_penalty_reduction= -0.05
+			}
+        }
 		}
 }

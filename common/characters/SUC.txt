@@ -1,4 +1,18 @@
 characters={
+	SUC_LiHouJi={
+		name=SUC_LiHouJi
+		portraits={
+			civilian={
+				large="gfx/leaders/SUC/portrait_LiHouJi.tga"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	SUC_Sun_ChuanFang={
 		name=SUC_Sun_ChuanFang
 		portraits={
@@ -7,7 +21,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=authoritarian_type
+			ideology=despotism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -21,7 +35,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=authoritarian_type
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1

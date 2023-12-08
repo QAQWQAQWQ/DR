@@ -3,8 +3,61 @@ ideas = {
 		FRW_Chaotic_socialism = {
 			picture = Chaotic_socialism
 			modifier = {
-				stability_weekly = -0.05
+				stability_weekly = -0.02
 				political_power_cost = 0.05
+			}
+        }
+		FRW_Inefficient_industry = {
+			picture = Inefficient_industry
+			modifier = {
+				consumer_goods_factor = 0.05
+				conversion_cost_civ_to_mil_factor = 0.15
+				conversion_cost_mil_to_civ_factor = 0.15
+				industrial_capacity_factory = -0.1
+                production_speed_industrial_complex_factor= -0.1
+                production_speed_arms_factory_factor= -0.1
+				civilian_factory_use = 2
+			}
+        }
+		FRW_Inefficient_industry1 = {
+			picture = Inefficient_industry
+			modifier = {
+				consumer_goods_factor = 0.03
+				conversion_cost_civ_to_mil_factor = 0.10
+				conversion_cost_mil_to_civ_factor = 0.10
+				industrial_capacity_factory = -0.05
+                production_speed_industrial_complex_factor= -0.05
+                production_speed_arms_factory_factor= -0.05
+				civilian_factory_use = 2
+			}
+        }
+		FRW_Inefficient_industry2 = {
+			picture = Inefficient_industry
+			modifier = {
+				consumer_goods_factor = 0.02
+				conversion_cost_civ_to_mil_factor = 0.05
+				conversion_cost_mil_to_civ_factor = 0.05
+				industrial_capacity_factory = -0.03
+                production_speed_industrial_complex_factor= -0.2
+                production_speed_arms_factory_factor= -0.2
+				civilian_factory_use = 1
+			}
+        }
+		FRW_Inefficient_industry3 = {
+			picture = Inefficient_industry
+			modifier = {
+				consumer_goods_factor = 0.01
+				conversion_cost_civ_to_mil_factor = -0.05
+				conversion_cost_mil_to_civ_factor = -0.05
+				industrial_capacity_factory = 0.05
+                production_speed_industrial_complex_factor= 0.05
+                production_speed_arms_factory_factor= 0.05
+			}
+        }
+		FRW_FranceAgriMer = {
+			picture = FranceAgriMer
+			modifier = {
+				production_speed_grain_farms_factor = 0.1
 			}
         }
 		####阿尔萨斯洛林
@@ -15,12 +68,21 @@ ideas = {
 				political_power_factor = 0.02
 			}
         }
+		FRW_Dissidents_army = {
+			picture = Dissidents_army
+			modifier = {
+				command_power_gain = -0.05
+				planning_speed = -0.1
+				pocket_penalty = 0.1
+			}
+        }
 		###流亡王室
 		FRW_African_Royal_Families_in_exile = {
 			picture = African_Royal_Families_in_exile
 			modifier = {
 				war_support_weekly = 0.005
 				political_power_factor = 0.02
+				
 			}
 			targeted_modifier = {
 				tag = NPL
@@ -163,5 +225,54 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.1
 			}
         }
+		FRW_Elway_Thought = {
+			picture = Elway_Thought
+			modifier = {
+				max_surrender_limit_offset = -0.3
+				war_support_weekly_factor = -0.02
+				offensive_war_stability_factor = -0.1
+				defensive_war_stability_factor = -0.1
+			}
+        }
+		FRW_Labor_spirit = {
+			picture = Labor_spirit
+			modifier = {
+				global_building_slots_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+        }
+		
+		
+
+
+	}
+
+
+
+#####
+####
+####
+industrial_concern = {
+		FRW_SNCF = {
+
+			picture = GFX_idea_FRW_SNCF
+			
+			allowed = {
+				original_tag = FRW
+			}
+			available = {
+				has_completed_focus = FRW_focus43
+			}
+			
+			cost = 80
+
+			research_bonus = {
+				train_tech = 0.1
+			}
+			
+			traits = { railway_company }
+		}
 }
+
 }

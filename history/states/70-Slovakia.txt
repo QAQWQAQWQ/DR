@@ -11,7 +11,7 @@ state={
 
 	history={
 		owner = KOH
-                                add_core_of = AOX
+        add_core_of = KOH
 		victory_points = {
 			9692 10
 		}
@@ -20,8 +20,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 3
-			arms_factory = 2
+			arms_factory = 1
+			industrial_complex = 1
 			air_base = 3
 		}
 	}

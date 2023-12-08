@@ -1,0 +1,76 @@
+guiTypes = {
+	containerWindowType = {
+		name = "aus_hun_decisons_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 510 height= 450 }
+		buttonType = {
+			name ="aus_hun_aus"
+			spriteType = "GFX_AUS_map"
+			position = { x=45 y=30 }
+			clicksound = clicksound
+		}
+		buttonType = {
+			name ="aus_hun_hun"
+			spriteType = "GFX_HUN_map"
+			position = { x=192 y=108 }
+			clicksound = clicksound
+		}
+		buttonType = {
+			name ="aus_hun_rom"
+			spriteType = "GFX_ROM_map"
+			position = { x=290 y=112 }
+			clicksound = clicksound
+		}
+		buttonType = {
+			name ="aus_hun_cze"
+			spriteType = "GFX_CZE_map"
+			position = { x=96 y=32 }
+			clicksound = clicksound
+		}
+		buttonType = {
+			name ="aus_hun_slo"
+			spriteType = "GFX_SLO_map"
+			position = { x=198 y=60 }
+			clicksound = clicksound
+		}
+		buttonType = {
+			name ="aus_hun_pol"
+			spriteType = "GFX_POL_map"
+			position = { x=233 y=26 }
+			clicksound = clicksound
+		}
+		buttonType = {
+			name ="aus_hun_ukr"
+			spriteType = "GFX_UKR_map"
+			position = { x=294 y=41 }
+			clicksound = clicksound
+		}
+		buttonType = {
+			name ="aus_hun_ita"
+			spriteType = "GFX_ITA_map"
+			position = { x=60 y=171 }
+			clicksound = clicksound
+		}
+		buttonType = {
+			name ="aus_hun_cro"
+			spriteType = "GFX_CRO_map"
+			position = { x=134 y=177 }
+			clicksound = clicksound
+		}
+		buttonType = {
+			name ="aus_hun_slv"
+			spriteType = "GFX_SLV_map"
+			position = { x=126 y=173 }
+			clicksound = clicksound
+		}
+		instantTextBoxType = { 
+			name ="aus_hun_text_qwq"
+			position = { x=5 y=350 } 
+			font = "hoi_36header"
+			text = "aus_hun_text"
+			format = center
+			maxWidth = 500
+			maxHeight = 100
+		}
+	}
+}

@@ -4,6 +4,7 @@ oob = "SUE_1920"
 
 recruit_character = SUE_Lenin
 recruit_character = SUE_Yakov_Sverdlov
+recruit_character = SUE_Kalinin
 recruit_character = SUE_Stalin
 recruit_character = SUE_Trotsky
 recruit_character = SUE_Frunze
@@ -18,6 +19,25 @@ recruit_character = SUE_Vasily_Ivanovich_Chapayev
 recruit_character = SUE_Sergey_Kamenev
 recruit_character = SUE_Ijeronim_Ubolevich
 recruit_character = SUE_Ivan_Belov
+recruit_character = SUE_Dzerzhinsky
+recruit_character = SUE_Leekov
+recruit_character = SUE_Vladimir_Milyutin
+recruit_character = SUE_Alexander_Shlyapnikov
+recruit_character = SUE_Viktor_Nogin
+recruit_character = SUE_Anatoly_Lunacharsky
+recruit_character = SUE_Ivan_Stepanov
+recruit_character = SUE_Alexandra_Kollontai
+recruit_character = SUE_Georgy_Oppokov
+recruit_character = SUE_Nikolay_Glebov_Avilov
+recruit_character = SUE_Lev_Kamenev
+recruit_character = SUE_Bukharin
+recruit_character = SUE_Maxim_Gorky
+recruit_character = SUE_Aleksandr_Tsyurupa
+recruit_character = SUE_Vladimir_Smirnov
+recruit_character = SUE_Vladimir_Karelin
+recruit_character = SUE_Georgi_Chicherin
+
+
 	set_political_power = 200
 	add_command_power = 10
 	set_technology = {
@@ -59,13 +79,19 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no
 }
-country_event = { days = 1 id = SUE.1 } 
+country_event = { days = 1 id = SUE.1 }
+country_event = { days = 3 id = SUE.4 }  
 add_ideas= {
 #law
-	extensive_conscription
-	low_industrialization 
-    secondary_school
-    Staterun_economy
+atheism
+Affirmative_action
+Local_police
+Weak_investments
+State_media
+Trade_union_neutrality
+Basic_industrialization 
+Staterun_economy
+Planned_economy
 }
 set_popularities = {
 	Bolshevik = 100

@@ -24,9 +24,9 @@ recruit_character = SCX_LaiXinHui
 recruit_character = SCX_LiuBoCheng
 recruit_character = SCX_YingCanHen
 recruit_character = SCX_Deng_XiHou
-
-
-
+recruit_character = SCX_YangSuKan
+recruit_character = SCX_ZhangLan
+recruit_character = SCX_WuYuZhang
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -66,9 +66,29 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no
 }
-
+set_variable={
+	var = SCX1
+	value = 63
+}	
+set_variable={
+	var = SCX2
+	value = 25
+}
+set_variable={
+	var = SCX3
+	value = 30
+}
+set_variable={
+	var = SCX4
+	value = 41
+}
+set_variable={
+	var = SCX5
+	value = 27
+}
 add_ideas = {
 	SCX_SiChuanNeiZhang
+	SCX_Dooka_Army
 }
 set_popularities = {
 	democratic = 5

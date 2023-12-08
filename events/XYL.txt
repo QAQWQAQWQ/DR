@@ -33,25 +33,39 @@ country_event = {
 		option = {
 			name = XYL.1.a
 			XYL = {
-					transfer_state = 154
-					transfer_state = 43
-					transfer_state = 84
+					
 					transfer_state = 76								transfer_state = 664
 					transfer_state = 73
-					transfer_state = 71							transfer_state = 155
-					transfer_state = 70
-					transfer_state = 664							add_state_core = 154
-					transfer_state = 155
-					transfer_state = 83							add_state_core = 43
-					transfer_state = 82													add_state_core = 664
-					transfer_state = 764
-					transfer_state = 45															add_state_core = 155
+					transfer_state = 84
+					transfer_state = 83															add_state_core = 155
 					load_oob = "XYL_1920"
 					load_oob = "XYL_1920NAVY"
 					country_event = {
 						id = XYL.1
 						hours = 5
 					}
+					declare_war_on = {
+						target = KOH
+						type = annex_everything
+					}
 				}
+
+			HUN = {
+				    transfer_state = 154
+					transfer_state = 43	
+					transfer_state = 155
+					transfer_state = 664
+					transfer_state = 920
+					transfer_state = 921
+					transfer_state = 70	
+					transfer_state = 71
+					transfer_state = 45	
+					transfer_state = 764
+					transfer_state = 82
+					declare_war_on = {
+						target = XYL
+						type = annex_everything
+					}
 				}
 		}
+	}

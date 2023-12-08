@@ -1,12 +1,23 @@
 ﻿division_template = {
-	name = "守备旅"				
+	name = "工人赤卫队"				
 	regiments = {
 		infantry = { x = 0 y = 0 }	
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
 	}
 	priority = 0
+}
+division_template = {
+	name = "骑兵旅"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+        cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
 }
 division_template = {
 	name = "步兵旅"			
@@ -17,6 +28,11 @@ division_template = {
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+	    recon = { x = 0 y = 0 }
+	    artillery = { x = 0 y = 1 }
 	}
 	priority = 1
 }
@@ -27,7 +43,55 @@ units = {
 		name = "步兵旅"
 		location = 3672
 		division_template = "步兵旅"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "工人赤卫队"
+		location = 3672
+		division_template = "工人赤卫队"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "骑兵旅"
+		location = 9355
+		division_template = "骑兵旅"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "骑兵旅"
+		location = 9288
+		division_template = "骑兵旅"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "骑兵旅"
+		location = 11241
+		division_template = "骑兵旅"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "骑兵旅"
+		location = 3672
+		division_template = "骑兵旅"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "骑兵旅"
+		location = 3672
+		division_template = "骑兵旅"
+		start_experience_factor = 0.6
 		start_equipment_factor = 0.8
 
 	}
@@ -35,7 +99,7 @@ units = {
 		name = "步兵旅"
 		location = 9647
 		division_template = "步兵旅"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.8
 		start_equipment_factor = 0.8
 
 	}
@@ -43,7 +107,7 @@ units = {
 		name = "步兵旅"
 		location = 9647
 		division_template = "步兵旅"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.8
 		start_equipment_factor = 0.8
 
 	}
@@ -68,7 +132,7 @@ units = {
 		location = 12320
 		division_template = "步兵旅"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
+		start_equipment_factor = 0.6
 
 	}
 	division = {
@@ -76,7 +140,7 @@ units = {
 		location = 12320
 		division_template = "步兵旅"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
+		start_equipment_factor = 0.6
 
 	}
 	division = {
@@ -84,7 +148,7 @@ units = {
 		location = 7661
 		division_template = "步兵旅"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
+		start_equipment_factor = 0.6
 
 	}
 	division = {
@@ -92,153 +156,244 @@ units = {
 		location = 2998
 		division_template = "步兵旅"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
+		start_equipment_factor = 0.6
 	}
 	division = {
 		name = "步兵旅"
 		location = 115
 		division_template = "步兵旅"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
+		start_equipment_factor = 0.6
 	}
 	division = {
 		name = "步兵旅"
 		location = 11094
 		division_template = "步兵旅"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
+		start_equipment_factor = 0.6
 	}
 	division = {
 		name = "步兵旅"
 		location = 214
 		division_template = "步兵旅"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
+		start_equipment_factor = 0.6
 	}
 	division = {
 		name = "步兵旅"
 		location = 3130
 		division_template = "步兵旅"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
+		start_equipment_factor = 0.6
 	}
 	division = {
 		name = "步兵旅"
 		location = 9142
 		division_template = "步兵旅"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
+		start_equipment_factor = 0.6
 	}
 	division = {
 		name = "步兵旅"
 		location = 7738
 		division_template = "步兵旅"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
+		start_equipment_factor = 0.6
 	}
 	division = {
 		name = "步兵旅"
 		location = 6105
 		division_template = "步兵旅"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
+		start_equipment_factor = 0.6
 	}
 	division = {
 		name = "步兵旅"
 		location = 3169
 		division_template = "步兵旅"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
+		start_equipment_factor = 0.6
 	}
 	division = {
 		name = "步兵旅"
 		location = 11298
 		division_template = "步兵旅"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "步兵旅"
 		location = 6386
 		division_template = "步兵旅"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "步兵旅"
 		location = 6411
 		division_template = "步兵旅"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "步兵旅"
 		location = 6305
 		division_template = "步兵旅"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "步兵旅"
 		location = 9274
 		division_template = "步兵旅"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
 	}
 	division = {
 		name = "步兵旅"
 		location = 3320
 		division_template = "步兵旅"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "步兵旅"
 		location = 358
 		division_template = "步兵旅"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "步兵旅"
 		location = 406
 		division_template = "步兵旅"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "步兵旅"
 		location = 11341
 		division_template = "步兵旅"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "步兵旅"
 		location = 345
 		division_template = "步兵旅"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "步兵旅"
-		location = 6338
+		location = 121
 		division_template = "步兵旅"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "步兵旅"
+		location = 386
+		division_template = "步兵旅"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "步兵旅"
+		location = 386
+		division_template = "步兵旅"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "步兵旅"
+		location = 3134
+		division_template = "步兵旅"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "步兵旅"
+		location = 3134
+		division_template = "步兵旅"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "步兵旅"
+		location = 728
+		division_template = "步兵旅"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "步兵旅"
+		location = 3281
+		division_template = "步兵旅"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "步兵旅"
+		location = 6748
+		division_template = "步兵旅"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "步兵旅"
+		location = 6692
+		division_template = "步兵旅"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "步兵旅"
+		location = 728
+		division_template = "步兵旅"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "步兵旅"
+		location = 121
+		division_template = "步兵旅"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "步兵旅"
+		location = 6278
+		division_template = "步兵旅"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "步兵旅"
+		location = 121
+		division_template = "步兵旅"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "步兵旅"
+		location = 392
+		division_template = "步兵旅"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "步兵旅"
 		location = 9391
 		division_template = "步兵旅"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "步兵旅"
 		location = 1684
 		division_template = "步兵旅"
-		start_experience_factor = 0.4
+		start_experience_factor = 0.6
 		start_equipment_factor = 0.5
 	}
 	division = {
@@ -246,6 +401,20 @@ units = {
 		location = 1684
 		division_template = "步兵旅"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.4
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "步兵旅"
+		location = 11241
+		division_template = "步兵旅"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "步兵旅"
+		location = 11241
+		division_template = "步兵旅"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
 	}
 }

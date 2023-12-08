@@ -1,22 +1,62 @@
 SHW_Imperial_Russian_Army = {
 	#icon = SHW_Imperial_Russian_Army
+	picture = GFX_decisions_Imperial_Russian_Army
 	scripted_gui = SHW_Imperial_Russian_Army_ui
 
-	priority = 9
-
-	allowed = {
+	priority = 9  
+   
+	allowed = {  
 		tag = SHW 
-	} 
-} 
+	}                   
+}        
+SHW_Progress_the_Russian_Civil_War = {
+	#icon = SHW_Imperial_Russian_Army
+	scripted_gui = SHW_Progress_the_Russian_Civil_War_ui
+
+	priority = 9  
+   
+		          
+	
+	allowed = {  
+		tag = SHW 
+	}                   
+}                                           
 SHW_Food_requisition_operations = {
 	#icon = SHW_Imperial_Russian_Army
 	picture = GFX_decisions_Food_requisition_operations
-	priority = 8
+	priority = 8 
  
-	allowed = {
-		tag = SHW    
-	}       
-}  
+	allowed = { 
+	OR = {      
+		AND = {                              
+			original_tag = SHW      
+			has_country_flag=Famine_in_Russia      
+		}    
+		AND = {     
+			original_tag = SUE    
+			has_completed_focus = SUE_Emergency
+		}
+	}
+	}
+}
+SHW_Suppression_other_parties = {
+	#icon = SHW_Imperial_Russian_Army
+	picture = GFX_decisions_Suppression_other_parties
+	priority = 4 
+ 
+	allowed = { 
+		original_tag = SHW  
+	}
+}
+SHW_Slavic_identity = {
+	#icon = SHW_Imperial_Russian_Army
+	picture = GFX_decisions_Slavic_identity
+	priority = 4 
+ 
+	allowed = { 
+		original_tag = SHW  
+	}
+}
 SHW_DUMA = {
 	#icon = SHW_Imperial_Russian_Army                 
 	#picture = GFX_decisions_Food_requisition_operations
@@ -27,4 +67,13 @@ SHW_DUMA = {
 	allowed = {
 		tag = SHW
 	} 
-}                              
+}  
+SHW_Court_struggles = {
+	#icon = SHW_Imperial_Russian_Army
+	picture = GFX_decisions_Court_struggles
+	priority = 4 
+ 
+	allowed = { 
+		original_tag = SHW  
+	}
+}                           

@@ -8,8 +8,9 @@ state=
 
 	history=
 	{
-		owner = DMT
-                                add_core_of = AOX
+		owner = KOH
+		add_core_of = DMT
+		add_claim_by = KOH
 		buildings = {
 			infrastructure = 1 #was: 5
 			industrial_complex = 1
@@ -18,7 +19,7 @@ state=
 	}
 
 	provinces={
-		3627 9595 6647 11577 11580
+		624 9611 3627 9595 6647 11577 11580 11594
 	}
 
 	local_supplies=0.0 

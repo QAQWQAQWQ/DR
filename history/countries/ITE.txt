@@ -46,6 +46,7 @@ recruit_character = ITE_Benito_Mussolini
 		
 		
 	}
+set_major=yes
 set_politics = {
 	ruling_party = monarchy
 	last_election = "1918.11.11"
@@ -55,7 +56,6 @@ set_politics = {
 add_ideas = {
 #law
 Basic_industrialization 
-secondary_school
 Private_economy
 }
 set_popularities = {

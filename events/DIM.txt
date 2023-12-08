@@ -115,6 +115,7 @@ country_event = {
 			transfer_state = 560
 			transfer_state = 655
 			transfer_state = 537
+			
 	}
 }
 }
@@ -132,6 +133,6 @@ news_event = {
 
 	option = {
 		name = DIM.1.a
-		
+		set_major = yes
 }
 }

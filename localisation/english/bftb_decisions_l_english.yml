@@ -723,6 +723,10 @@
  BUL_refuse_army_restrictions:0 "撕毁军备限制"
  BUL_refuse_army_restrictions_desc:0 "鉴于如今我们拥有[GetBulgarianFactionName]撑腰，我们不再需要看[ENL.GetNameDef]脸色便能进行军备重整事宜。"
  BUL_refuse_army_restrictions_faction_name:0 "[ROOT.GetFactionName]"
+
+###
+ country_faction_name2:0 "[ROOT.GetFactionName]"
+
  BUL_refuse_army_restrictions_no_faction:1 "我方盟友"
  BUL_rearmament_negotiations_ongoing_flag:0 "目前正在协商军备重整"
  BUL_purchase_equipment:0 "外国军备订购"

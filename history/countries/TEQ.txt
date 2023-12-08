@@ -58,7 +58,6 @@ set_politics = {
 add_ideas={
 #law
 Basic_industrialization 
-secondary_school
 Private_economy
 }
 set_popularities = {
@@ -67,3 +66,5 @@ set_popularities = {
 	monarchy = 89
 	communism = 5
 }
+
+set_autonomy = { target = HAZ autonomy_state = autonomy_reichsprotectorate }

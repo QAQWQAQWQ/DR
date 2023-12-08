@@ -12,5 +12,19 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}		
+	}	
+LXS_WangWenHua={
+		name=LXS_WangWenHua
+		portraits={
+			civilian={
+				large="gfx/leaders/LXS/portrait_WangWenHua.tga"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
 	}

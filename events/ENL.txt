@@ -3,6 +3,7 @@
 ###########################
 
 add_namespace = ENL
+add_namespace = ENL_Labour
 add_namespace = msl
 
 
@@ -124,7 +125,7 @@ country_event = {
 	option = {
 		name = ENL.6.a
 		hidden_effect = {
-		news_event = { id= NewEvents.7 days = 10}
+		
 	}	
 }
 }
@@ -228,6 +229,9 @@ option = {
 	name = ENL.11.a
 }
 }
+
+
+
 country_event = {
 	id = msl.2
 	title = msl.2.t
@@ -253,3 +257,26 @@ option = {
 	name = msl.3.a
 }
 }
+news_event = {
+	id = ENL_Labour.1
+	title = ENL_Labour.1.t
+	desc = ENL_Labour.1.d
+    major=yes
+    picture = GFX_ENL_Labour_1
+
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+option = {
+	name = ENL_Labour.1.a
+	set_politics = {
+		ruling_party = Reform_socialism
+	}
+	set_popularities = {
+		democratic = 25
+		neutrality = 30
+		Reform_socialism = 45
+	}
+}
+}
+ 

@@ -4,6 +4,23 @@ characters={ #skilled_staffer #Lieutenant_general
 		portraits={
 			civilian={
 				large="gfx/leaders/SHW/Portrait_NicholasII.tga"
+				small="gfx/interface/ideas/Portrait_NicholasII.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = SHW_NicholasII_H
+			allowed = {
+				original_tag = SHW
+			}
+			available = {
+				has_completed_focus = SHW_Embrace_change
+			  }
+			traits = {
+				autocratic_imperialist
+			}
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 		country_leader={
@@ -14,25 +31,199 @@ characters={ #skilled_staffer #Lieutenant_general
 			id=-1
 		}
 	}
-	SHW_Kerensky={
-		name=SHW_Kerensky
+	SHW_Kirill_Vladimirovich={
+		name=SHW_Kirill_Vladimirovich
 		portraits={
 			civilian={
-				large="gfx/leaders/SHW/Portrait_Kerensky.tga"
+				large="gfx/leaders/SHW/Portrait_Kirill_Vladimirovich.tga"
 			}
 		}
 		country_leader={
-			ideology=social_democrat_type
+			ideology=royalists
+			#desc=SHW_NicholasII_desc
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
 		}
 	}
+	
+	SHW_Kerensky={
+		name=SHW_Kerensky
+		portraits={
+			civilian={
+				large="gfx/leaders/SHW/Portrait_Kerensky.tga"
+				small="gfx/interface/ideas/portrait_Kerensky.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = SHW_Kerensky_H
+			allowed = {
+				original_tag = SHW
+			}
+			available = {
+				NOT={
+					has_country_leader = {
+					name = "克伦斯基"
+					ruling_only = yes
+				}
+			}
+			  }
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SHW_Kerensky_P
+			allowed = {
+				original_tag = SHW
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		country_leader={
+			ideology=national_populist_type
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	SHW_Nikolai_Semenovich_Tsikhze={
+		name=SHW_Nikolai_Semenovich_Tsikhze
+		portraits={
+			civilian={
+				large="gfx/leaders/SHW/Portrait_Nikolai_Semenovich_Tsikhze.tga"
+				small="gfx/interface/ideas/portrait_Nikolai_Semenovich_Tsikhze.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = SHW_Nikolai_Semenovich_Tsikhze_H
+			allowed = {
+				original_tag = SHW
+			}
+			available = {
+				NOT={
+					has_country_leader = {
+					name = "齐赫泽"
+					ruling_only = yes
+				}
+			}
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SHW_Nikolai_Semenovich_Tsikhze_P
+			allowed = {
+				original_tag = SHW
+			}
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		country_leader={
+			ideology=Reform_socialism_type
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	#
+	SHW_Vassili_Shulgin={
+		name=SHW_Vassili_Shulgin
+		portraits={
+			civilian={
+				large="gfx/leaders/SHW/Portrait_Vassili_Shulgin.tga"
+				small="gfx/interface/ideas/portrait_Vassili_Shulgin.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = SHW_Vassili_Shulgin_H
+			available = {
+				has_completed_focus = SHW_Focus_17
+			}
+			allowed = {
+				original_tag = SHW
+			}
+			available = {
+				NOT={
+					has_country_leader = {
+					name = "舒尔金"
+					ruling_only = yes
+				}
+			}
+			  }
+			traits = {
+				irredentist_academic
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SHW_Vassili_Shulgin_P
+			available = {
+				has_completed_focus = SHW_Focus_17
+			}
+			allowed = {
+				original_tag = SHW
+			}
+			traits = {
+				irredentist_academic
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		country_leader={
+			ideology=Right_populism_type
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	#
 	SHW_Viktor_Chernov={
 		name=SHW_Viktor_Chernov
 		portraits={
 			civilian={
 				large="gfx/leaders/SHW/Portrait_Viktor_Chernov.tga"
+				small="gfx/interface/ideas/portrait_Viktor_Chernov.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SHW_Viktor_Chernov_P
+			allowed = {
+				original_tag = SHW
+				has_completed_focus = SHW_Coalition_Cabinet_Government
+				NOT = {
+					has_completed_focus = SHW_Dissolution_Cabinet_Government
+				}
+			}
+			traits = {
+				defender_of_the_peasantry
+			}
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 		country_leader={
@@ -70,11 +261,80 @@ characters={ #skilled_staffer #Lieutenant_general
 			id=-1
 		}
 	}
+	SHW_Georgy_Lviv={
+		name=SHW_Georgy_Lviv
+		portraits={
+			civilian={
+				large="gfx/leaders/SHW/Portrait_Georgy_Lviv.tga"
+				small="gfx/interface/ideas/portrait_Georgy_Lviv.dds"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = SHW_Georgy_Lviv_H
+			allowed = {
+				original_tag = SHW
+			}
+			available = {
+				available = {
+					NOT={
+						has_country_leader = {
+						name = SHW_Kerensky
+						ruling_only = yes
+					}
+				}
+				  }
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
 	SHW_Pavel_Milyukov={
 		name=SHW_Pavel_Milyukov
 		portraits={
 			civilian={
 				large="gfx/leaders/SHW/Portrait_Pavel_Milyukov.tga"
+				small="gfx/interface/ideas/portrait_Pavel_Milyukov.dds"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SHW_Pavel_Milyukov_P
+			allowed = {
+				original_tag = SHW
+			}
+			available = {
+				
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	SHW_Alexander_Konovalov={
+		name=SHW_Alexander_Konovalov
+		portraits={
+			civilian={
+				large="gfx/leaders/SHW/Portrait_Alexander_Konovalov.tga"
+				small="gfx/interface/ideas/portrait_Alexander_Konovalov.dds"
 			}
 		}
 		country_leader={
@@ -83,19 +343,20 @@ characters={ #skilled_staffer #Lieutenant_general
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}
-	SHW_Alexander_Konovalov={
-		name=SHW_Alexander_Konovalov
-		portraits={
-			civilian={
-				large="gfx/leaders/SHW/Portrait_Alexander_Konovalov.tga"
+		advisor={
+			slot = political_advisor
+			idea_token = SHW_Alexander_Konovalov_P
+			allowed = {
+				original_tag = SHW
 			}
-		}
-		country_leader={
-			ideology=Trade_doctrine
-			traits={  }
-			expire="1965.1.1.1"
-			id=-1
+			available = {
+				
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 	SHW_Alexander_Guchkov={
@@ -106,12 +367,392 @@ characters={ #skilled_staffer #Lieutenant_general
 			}
 		}
 		country_leader={
-			ideology=authoritarian_type
+			ideology=despotism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
 		}
 	}
+###顾问
+SHW_Nikolaj_Dmitrievich_Golicyn={
+	name=SHW_Nikolaj_Dmitrievich_Golicyn
+	portraits={
+		civilian={
+			small="gfx/interface/ideas/portrait_Nikolaj_Dmitrievich_Golicyn.dds"
+		}
+	}
+	advisor={
+		slot = head_of_government
+		idea_token = SHW_Nikolaj_Dmitrievich_Golicyn_H
+		allowed = {
+			original_tag = SHW
+		}
+		available = {
+			available = {
+				NOT={
+					has_country_leader = {
+					name = SHW_Kerensky
+					ruling_only = yes
+				}
+			}
+			  }
+		  }
+		traits = {
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+}
+SHW_Nikolai_Pokrovsky={
+	name=SHW_Nikolai_Pokrovsky
+	portraits={
+		civilian={
+			small="gfx/interface/ideas/portrait_Nikolai_Pokrovsky.dds"
+		}
+	}
+	advisor={
+		slot = political_advisor
+		idea_token = SHW_Nikolai_Pokrovsky_P
+		allowed = {
+			original_tag = SHW
+		}
+		available = {
+			
+		  }
+		traits = {
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+}
+SHW_Ivan_Godnev={
+	name=SHW_Ivan_Godnev
+	portraits={
+		civilian={
+			small="gfx/interface/ideas/portrait_Ivan_Godnev.dds"
+		}
+	}
+	advisor={
+		slot = political_advisor
+		idea_token = SHW_Ivan_Godnev_P
+		allowed = {
+			original_tag = SHW
+		}
+		available = {
+			
+		  }
+		traits = {
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+}
+SHW_Alexander_Vladimirovich_Protopopov={
+	name=SHW_Alexander_Vladimirovich_Protopopov
+	portraits={
+		civilian={
+			small="gfx/interface/ideas/portrait_Alexander_Vladimirovich_Protopopov.dds"
+		}
+	}
+	advisor={
+		slot = political_advisor
+		idea_token = SHW_Alexander_Vladimirovich_Protopopov_P
+		allowed = {
+			original_tag = SHW
+		}
+		available = {
+			
+		  }
+		traits = {
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+}
+SHW_Grigori_Efimovich_Rasputin={
+	name=SHW_Grigori_Efimovich_Rasputin
+	portraits={
+		civilian={
+			small="gfx/interface/ideas/portrait_Grigori_Efimovich_Rasputin.dds"
+		}
+	}
+	advisor={
+		slot = political_advisor
+		idea_token = SHW_Grigori_Efimovich_Rasputin_P
+		allowed = {
+			original_tag = SHW
+		}
+		available = {
+			
+		  }
+		traits = {
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+}
+SHW_Kokovtsov={
+	name=SHW_Kokovtsov
+	portraits={
+		civilian={
+			small="gfx/interface/ideas/portrait_Kokovtsov.dds"
+		}
+	}
+	advisor={
+		slot = political_advisor
+		idea_token = SHW_Kokovtsov_P
+		allowed = {
+			original_tag = SHW
+		}
+		available = {
+			
+		  }
+		traits = {
+			Minister_Finance
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+}
+#
+SHW_Mikhail_Tereshchenko={
+	name=SHW_Mikhail_Tereshchenko
+	portraits={
+		civilian={
+			small="gfx/interface/ideas/portrait_Mikhail_Tereshchenko.dds"
+		}
+	}
+	advisor={
+		slot = political_advisor
+		idea_token = SHW_Mikhail_Tereshchenko_P
+		allowed = {
+			original_tag = SHW
+		}
+		available = {
+			has_completed_focus = SHW_Coalition_Cabinet_Government
+			NOT = {
+				has_completed_focus = SHW_Dissolution_Cabinet_Government
+			}
+		  }
+		traits = {
+			Minister_Affairs
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+}
+SHW_Andrey_Ivanovich_Shingarev={
+	name=SHW_Andrey_Ivanovich_Shingarev
+	portraits={
+		civilian={
+			small="gfx/interface/ideas/portrait_Andrey_Ivanovich_Shingarev.dds"
+		}
+	}
+	advisor={
+		slot = political_advisor
+		idea_token = SHW_Andrey_Ivanovich_Shingarev_P
+		allowed = {
+			original_tag = SHW
+		}
+		available = {
+			has_completed_focus = SHW_Coalition_Cabinet_Government
+			NOT = {
+				has_completed_focus = SHW_Dissolution_Cabinet_Government
+			}
+		  }
+		traits = {
+			Minister_Finance
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+}
+SHW_Alexander_Grigorievich_Khrushchov={
+	name=SHW_Alexander_Grigorievich_Khrushchov
+	portraits={
+		civilian={
+			small="gfx/interface/ideas/portrait_Alexander_Grigorievich_Khrushchov.dds"
+		}
+	}
+	advisor={
+		slot = political_advisor
+		idea_token = SHW_Alexander_Grigorievich_Khrushchov_P
+		allowed = {
+			original_tag = SHW
+		}
+		available = {
+			has_completed_focus = SHW_Coalition_Cabinet_Government
+			NOT = {
+				has_completed_focus = SHW_Dissolution_Cabinet_Government
+			}
+		  }
+		traits = {
+			financial_expert
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+}
+SHW_Nikolai_Vissarionovich_Nekrasov={
+	name=SHW_Nikolai_Vissarionovich_Nekrasov
+	portraits={
+		civilian={
+			small="gfx/interface/ideas/portrait_Nikolai_Vissarionovich_Nekrasov.dds"
+		}
+	}
+	advisor={
+		slot = political_advisor
+		idea_token = SHW_Nikolai_Vissarionovich_Nekrasov_P
+		allowed = {
+			original_tag = SHW
+		}
+		available = {
+			has_completed_focus = SHW_Coalition_Cabinet_Government
+			NOT = {
+				has_completed_focus = SHW_Dissolution_Cabinet_Government
+			}
+		  }
+		traits = {
+			Minister_Transport
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+}
+
+
+
+
+
+
+
+
+SHW_Alexander_Ivanovich_Dubrovin={
+	name=SHW_Alexander_Ivanovich_Dubrovin
+	portraits={
+		civilian={
+			small="gfx/interface/ideas/portrait_Alexander_Ivanovich_Dubrovin.dds"
+		}
+	}
+	advisor={
+		slot = political_advisor
+		idea_token = SHW_Alexander_Ivanovich_Dubrovin_P
+		allowed = {
+			original_tag = SHW
+		}
+		available = {
+			has_completed_focus = SHW_Focus_16
+		  }
+		traits = {
+			statism_adept
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+}
+SHW_Nikolai_Evgenievich_Markov={
+	name=SHW_Nikolai_Evgenievich_Markov
+	portraits={
+		civilian={
+			small="gfx/interface/ideas/portrait_Nikolai_Evgenievich_Markov.dds"
+		}
+	}
+	advisor={
+		slot = political_advisor
+		idea_token = SHW_Nikolai_Evgenievich_Markov_P
+		allowed = {
+			original_tag = SHW
+		}
+		available = {
+			has_completed_focus = SHW_Right_wing_revolutionaries
+		  }
+		traits = {
+			the_bloody_professor
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+}
+SHW_Vladimir_Mitrofanovich_Purishkevich={
+	name=SHW_Vladimir_Mitrofanovich_Purishkevich
+	portraits={
+		civilian={
+			small="gfx/interface/ideas/portrait_Vladimir_Mitrofanovich_Purishkevich.dds"
+		}
+	}
+	advisor={
+		slot = political_advisor
+		idea_token = SHW_Vladimir_Mitrofanovich_Purishkevich_P
+		allowed = {
+			original_tag = SHW
+		}
+		available = {
+			has_completed_focus = SHW_Focus_16
+		  }
+		traits = {
+			born_agitator
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+}
+
+
+SHW_Vladimir_Sukhomlinov={
+	name=SHW_Vladimir_Sukhomlinov
+	portraits={
+		army={
+			large="gfx/leaders/SHW/Portrait_Vladimir_Sukhomlinov.tga"
+			small="gfx/interface/ideas/portrait_Vladimir_Sukhomlinov.dds"
+		}
+	}
+	advisor = {
+		slot = high_command
+		idea_token = SHW_Vladimir_Sukhomlinov_Army_C
+		allowed = {
+			original_tag = SHW
+		}
+		available = {
+		}
+		traits = {
+			army_chief_drill_1
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+		cost = 30
+		
+	}
+	field_marshal = {
+		skill = 3
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 1
+	}
+}
+
+
+
+
+
+
+
+
+
 	SHW_Nikolayevich_Wrangel={
 		name=SHW_Nikolayevich_Wrangel
 		portraits={
@@ -136,6 +777,13 @@ characters={ #skilled_staffer #Lieutenant_general
 			large="gfx/leaders/SHW/Portrait_LavrKornilov.tga"
 			small="gfx/interface/ideas/portrait_LavrKornilov.dds"
 		}
+	}
+	country_leader={
+		ideology=military_government_type
+		desc=SHW_LavrKornilov_desc
+		traits={  }
+		expire="1965.1.1.1"
+		id=-1
 	}
 	    corps_commander={
 		traits={ skilled_staffer }
@@ -276,6 +924,9 @@ SHW_Alexei_Eft={
 SHW_Nikolai_Romanov={
 	name=SHW_Nikolai_Romanov
 	portraits={
+	civilian = {
+		large="gfx/leaders/SHW/Portrait_Nikolai_Romanov_C.tga"
+	}
 	army={
 		large="gfx/leaders/SHW/Portrait_Nikolai_Romanov.tga"
 		small="gfx/interface/ideas/Portrait_Nikolai_Romanov.dds"
@@ -288,6 +939,13 @@ SHW_Nikolai_Romanov={
 	defense_skill=1
 	planning_skill=1
 	logistics_skill=2
+}
+country_leader={
+	ideology=royalists
+	#desc=SHW_NicholasII_desc
+	traits={  }
+	expire="1965.1.1.1"
+	id=-1
 }
 }
 
@@ -378,6 +1036,56 @@ SHW_Yudenich={
 	logistics_skill=1
 }
 }
+SHW_Novitsky_Vasiliy_Fedorovich={
+	name=SHW_Novitsky_Vasiliy_Fedorovich
+	portraits={
+	army={
+		large="gfx/leaders/SHW/Portrait_Novitsky_Vasiliy_Fedorovich.tga"
+		small="gfx/interface/ideas/Portrait_Novitsky_Vasiliy_Fedorovich.dds"
+	}
+}
+advisor = {
+	slot = army_chief
+	idea_token = SHW_Novitsky_Vasiliy_Fedorovich_Army_F
+	allowed = {
+		original_tag = SHW
+	}
+	available = {
+	}
+	traits = {
+		army_chief_maneuver_1
+	}
+	ai_will_do = {
+		factor = 1.000
+	}
+	cost = 30
+	
+}
+	corps_commander={
+	traits={ skilled_staffer }
+	skill=3
+	attack_skill=2
+	defense_skill=2
+	planning_skill=3
+	logistics_skill=2
+}
+}
+SHW_Dmitry_Pavlovich_Parsky={
+	name=SHW_Dmitry_Pavlovich_Parsky
+	portraits={
+	army={
+		large="gfx/leaders/SHW/Portrait_Dmitry_Pavlovich_Parsky.tga"
+	}
+}
+	corps_commander={
+	traits={ skilled_staffer }
+	skill=1
+	attack_skill=1
+	defense_skill=2
+	planning_skill=1
+	logistics_skill=1
+}
+}
 SHW_Pyotr_Alexeyevich_Kropotkin={
 	name=SHW_Pyotr_Alexeyevich_Kropotkin
 	portraits={
@@ -392,6 +1100,7 @@ SHW_Pyotr_Alexeyevich_Kropotkin={
 			original_tag = SHW
 		}
 		available = {
+			has_government = Anarchopedia
 		  }
 		traits = {
 			anarchist_zeal
@@ -403,6 +1112,22 @@ SHW_Pyotr_Alexeyevich_Kropotkin={
 	}		
 }
 #navy leader
+SHW_Alexander_Vladimirovich_Razvotsov={
+	name=SHW_Alexander_Vladimirovich_Razvotsov
+	portraits={
+		army={
+			large="gfx/leaders/SHW/Portrait_Alexander_Vladimirovich_Razvotsov.tga"
+		}
+	}
+	navy_leader={
+		traits={ }
+		skill=2
+		attack_skill=2
+		defense_skill=2
+		maneuvering_skill=2
+		coordination_skill=2
+	}
+}
 SHW_Kolchak={
 	name=SHW_Kolchak
 	portraits={
@@ -413,12 +1138,11 @@ SHW_Kolchak={
 	}
 	navy_leader={
 		traits={ }
-		skill=1
-		attack_skill=1
+		skill=2
+		attack_skill=3
 		defense_skill=2
-		maneuvering_skill=1
+		maneuvering_skill=2
 		coordination_skill=2
-		legacy_id=-1
 	}
 }
 

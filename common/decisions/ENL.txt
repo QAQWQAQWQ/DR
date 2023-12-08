@@ -64,7 +64,7 @@ fate_the_Suez_Canal = {
 				}
 			}
 		}
-	Ships_patrol_the_nearby_waters = {
+Ships_patrol_the_nearby_waters = {
 	icon = generic_ignite_civil_war
 	visible = {
 	}
@@ -97,3 +97,141 @@ fate_the_Suez_Canal = {
 		}
 	}
 }
+
+
+League_balance_category = {
+	
+	League_Montenegro_War = {
+		icon = SWI_no_elected_president
+		visible = {
+			
+		} 
+		
+		available = {
+			
+		}
+		days_remove = 10
+		cost = 0
+		allowed = {
+			tag = ENL
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+			ai_will_do = {
+			factor = 1
+			}
+		remove_effect = {
+			SIW={
+					country_event = League.2
+				}
+			HES={
+					country_event = League.2
+				}	
+				}
+		}
+
+
+
+
+	Intervention_Russian_Civil_War = {
+		icon = SWI_no_elected_president
+		visible = {
+			has_global_flag = Russia_uprising
+		} 
+		
+		available = {
+			
+		}
+		days_remove = 10
+		cost = 0
+		allowed = {
+			tag = ENL
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+			ai_will_do = {
+			factor = 1
+			}
+		complete_effect = {
+				SBY={
+					country_event = League.1
+				}
+				PTY={
+					country_event = League.1
+				}
+				GLB={
+					country_event = League.1
+				}
+				EYJ={
+					country_event = League.1
+				}
+				ASI={
+					country_event = League.1
+				} 
+			}
+			remove_effect = {
+				set_power_balance = {
+					 id = League_balance
+					 set_value = 0
+				   }
+				set_country_flag = Intervention_Russian_Civil_War
+				}
+		}
+		League_Russian_Civil_War = {
+			icon = SWI_no_elected_president
+			visible = {
+				power_balance_value = {
+					id = League_balance
+					value > 0.5
+				}
+			} 
+			
+			available = {
+				
+			}
+			days_remove = 5
+			cost = 0
+			allowed = {
+				tag = ENL
+			}
+			fixed_random_seed = no
+			fire_only_once = yes
+				ai_will_do = {
+				factor = 1
+				}
+			remove_effect = {
+				send_equipment = {
+					equipment = infantry_equipment
+					amount = 20000
+					target = SHW
+				}
+				send_equipment = {
+					equipment = motorized_equipment
+					amount = 500
+					target = SHW
+				}
+				}
+			}
+		Embargo_Soviet = {
+			icon = SWI_no_elected_president
+			visible = {
+				has_country_flag = Intervention_Russian_Civil_War 
+			} 
+			available = { 
+				
+			}
+			days_remove = 5
+			cost = 0
+			allowed = {
+				tag = ENL
+			}
+			fixed_random_seed = no
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 1
+			}
+			remove_effect = {
+				send_embargo = SUE
+				}
+			}
+	}

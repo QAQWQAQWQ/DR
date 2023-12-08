@@ -22,11 +22,25 @@ characters={
 			id=-1
 		}
 	}
-	FEL_Nikolai_Vissarionovich_Nekrasov={
-		name=FEL_Nikolai_Vissarionovich_Nekrasov
+	FEL_Carl_Gustaf_Emil_Mannerheim={
+		name=FEL_Carl_Gustaf_Emil_Mannerheim
 		portraits={
 			civilian={
-				large="gfx/leaders/FEL/Portrait_Nikolai_Vissarionovich_Nekrasov.tga"
+				large="gfx/leaders/FEL/Portrait_Carl_Gustaf_Emil_Mannerheim.tga"
+			}
+		}
+		country_leader={
+			ideology=military_government_type
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	FEL_Franz_Albert_Seyn={
+		name=FEL_Franz_Albert_Seyn
+		portraits={
+			civilian={
+				large="gfx/leaders/FEL/Portrait_Franz_Albert_Seyn.tga"
 			}
 		}
 		country_leader={
@@ -35,5 +49,6 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}		
+	}
+		
 	}

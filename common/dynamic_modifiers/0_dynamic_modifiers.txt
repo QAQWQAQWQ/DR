@@ -13,6 +13,8 @@ Vanguard_Regiment = {
 	mobilization_speed = 0.1
 	war_support_weekly_factor = 0.05
 }
+
+
 Progressive_taxation1 = {
 	enable = { always = yes }
 	consumer_goods_factor=-0.02
@@ -54,5 +56,13 @@ Army_glory = {
 Armament_design = {
 	enable = { always = yes }
 	equipment_conversion_speed = 0.2 
+}
+RDN_amphibious_invasion = {
+	enable = { always = yes }
+	amphibious_invasion = -0.35
+	amphibious_invasion_defence = -0.3
+	invasion_preparation = -0.3
+	naval_invasion_penalty = -0.5
+	naval_hit_chance = 0.8
 }
 

@@ -32,7 +32,372 @@ country_event = {
 		}
 	option = {
 		load_oob = "SUE_1920"
-		add_ideas = FRW_People_Vanguard
 		name = SUE.1.a
+		}
+	}
+country_event = {
+	id = SUE.2
+	title = SUE.2.t
+	desc = SUE.2.d
+	picture = GFX_train
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = SUE.2.a
+		add_ideas=SUE_Centralized_political_parties
+		}
+	option = {
+		name = SUE.2.b
+		add_ideas=SUE_Democratize_political_parties
+		}
+	}
+country_event = {
+	id = SUE.3
+	title = SUE.3.t
+	desc = SUE.3.d
+	picture = GFX_train
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = SUE.3.a
+		retire_country_leader = yes
+		set_politics = {
+			ruling_party = Leninism
+		}
+		}
+	option = {
+		name = SUE.3.b
+		retire_country_leader = yes
+		}
+	option = {
+		name = SUE.3.c
+		}
+	}
+country_event = {
+	id = SUE.4
+	title = SUE.4.t
+	desc = SUE.4.d
+	picture = GFX_train
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = SUE.4.a
+		}
+	}
+country_event = {
+	id = SUE.5
+	title = SUE.5.t
+	desc = SUE.5.d
+	picture = GFX_train
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = SUE.5.a
+		}
+	}
+country_event = {
+	id = SUE.6
+	title = SUE.6.t
+	desc = SUE.6.d
+	picture = GFX_train
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = SUE.6.a
+		}
+	option = {
+		name = SUE.6.b
+		}
+	option = {
+		name = SUE.6.c
+		}
+	}
+country_event = {
+	id = SUE.7
+	title = SUE.7.t
+	desc = SUE.7.d
+	picture = GFX_train
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = SUE.7.a
+		}
+	option = {
+		name = SUE.7.b
+		}
+	option = {
+			name = SUE.7.c
+			}
+	}
+country_event = {
+	id = SUE.8
+	title = SUE.8.t
+	desc = SUE.8.d
+	picture = GFX_train
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = SUE.8.a
+		country_event = {id=SUE.9 days=1}
+		}
+	}
+country_event = {
+	id = SUE.9
+	title = SUE.9.t
+	desc = SUE.9.d
+	picture = GFX_train
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = SUE.9.a
+		add_trait = {
+			character = SUE_Leekov
+			slot = head_of_government
+			trait = People_Commissariat_Internal_Affairs
+	   }
+		SUE={add_ideas = SUE_Leekov_H}
+		country_event = {id=SUE.10 days=1}
+		}
+	option = {
+		name = SUE.9.b
+		add_trait = {
+			character = SUE_Lev_Kamenev
+			slot = head_of_government
+			trait = People_Commissariat_Internal_Affairs
+	   }
+		SUE={add_ideas = SUE_Lev_Kamenev_H}
+		country_event = {id=SUE.10 days=1}
+		}
+	option = {
+		name = SUE.9.c
+		add_trait = {
+			character = SUE_Kalinin
+			slot = head_of_government
+			trait = People_Commissariat_Internal_Affairs
+	   }
+		SUE={add_ideas = SUE_Kalinin_H}
+		country_event = {id=SUE.10 days=1}
+		}
+	}
+country_event = {
+	id = SUE.10
+	title = SUE.10.t
+	desc = SUE.10.d
+	picture = GFX_train
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = SUE.10.a
+		
+		add_trait = {
+			character = SUE_Vladimir_Milyutin
+			slot = political_advisor
+			trait = People_Commissar_Agriculture
+	   }
+		SUE={add_ideas = SUE_Vladimir_Milyutin_P}
+		country_event = {id=SUE.11 days=1}
+		}
+	option = {
+		name = SUE.10.b
+		add_trait = {
+			character = SUE_Georgy_Oppokov
+			slot = political_advisor
+			trait = People_Commissar_Agriculture
+	   }
+		SUE={add_ideas = SUE_Georgy_Oppokov_P}
+		country_event = {id=SUE.11 days=1}
+		}
+	option = {
+		name = SUE.10.c
+		add_trait = {
+			character = SUE_Aleksandr_Tsyurupa
+			slot = political_advisor
+			trait = People_Commissar_Agriculture
+	   }
+		SUE={add_ideas = SUE_Aleksandr_Tsyurupa_P}
+		country_event = {id=SUE.11 days=1}
+		}
+	}
+country_event = {
+	id = SUE.11
+	title = SUE.11.t
+	desc = SUE.11.d
+	picture = GFX_train
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = SUE.11.a
+		add_trait = {
+			character = SUE_Alexander_Shlyapnikov
+			slot = political_advisor
+			trait = Working_People_Commissar
+	   }
+		SUE={add_ideas = SUE_Alexander_Shlyapnikov_P}
+		country_event = {id=SUE.12 days=1}
+		}
+	option = {
+		name = SUE.11.b
+		add_trait = {
+			character = SUE_Viktor_Nogin
+			slot = political_advisor
+			trait = Working_People_Commissar
+	   }
+		SUE={add_ideas = SUE_Viktor_Nogin_P}
+		country_event = {id=SUE.12 days=1}
+		}
+	option = {
+		name = SUE.11.c
+		add_trait = {
+			character = SUE_Alexandra_Kollontai
+			slot = political_advisor
+			trait = Working_People_Commissar
+	   }
+		SUE={add_ideas = SUE_Alexandra_Kollontai_P}
+		country_event = {id=SUE.12 days=1}
+		}
+	}
+country_event = {
+	id = SUE.12
+	title = SUE.12.t
+	desc = SUE.12.d
+	picture = GFX_train
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = SUE.12.a
+		add_trait = {
+			character = SUE_Anatoly_Lunacharsky
+			slot = political_advisor
+			trait = Commissioner_Public_Education
+	   }
+		SUE={add_ideas = SUE_Anatoly_Lunacharsky_P}
+		country_event = {id=SUE.13 days=1}
+		}
+	option = {
+		name = SUE.12.b
+		add_trait = {
+			character = SUE_Nikolay_Glebov_Avilov
+			slot = political_advisor
+			trait = Commissioner_Public_Education
+	   }
+		SUE={add_ideas = SUE_Nikolay_Glebov_Avilov_P}
+		country_event = {id=SUE.13 days=1}
+		}
+	option = {
+		name = SUE.12.c
+		add_trait = {
+			character = SUE_Maxim_Gorky
+			slot = political_advisor
+			trait = Commissioner_Public_Education
+	   }
+		SUE={add_ideas = SUE_Maxim_Gorky_P}
+		country_event = {id=SUE.13 days=1}
+		}
+	}
+country_event = {
+	id = SUE.13
+	title = SUE.13.t
+	desc = SUE.13.d
+	picture = GFX_train
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = SUE.13.a
+		add_trait = {
+			character = SUE_Ivan_Stepanov
+			slot = political_advisor
+			trait = peoples_commissar_of_finance
+	   }
+		SUE={add_ideas = SUE_Ivan_Stepanov_P}
+		country_event = {id=SUE.14 days=1}
+		}
+	option = {
+		name = SUE.13.b
+		add_trait = {
+			character = SUE_Bukharin
+			slot = political_advisor
+			trait = peoples_commissar_of_finance
+	   }
+		SUE={add_ideas = SUE_Bukharin_P}
+		country_event = {id=SUE.14 days=1}
+		}
+	option = {
+		name = SUE.13.c
+		add_trait = {
+			character = SUE_Vladimir_Karelin
+			slot = political_advisor
+			trait = peoples_commissar_of_finance
+	   }
+		SUE={add_ideas = SUE_Vladimir_Karelin_P}
+		country_event = {id=SUE.14 days=1}
+		}
+	}
+country_event = {
+	id = SUE.14
+	title = SUE.14.t
+	desc = SUE.14.d
+	picture = GFX_train
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = SUE.14.a
+		add_trait = {
+			character = SUE_Trotsky
+			slot = political_advisor
+			trait = pc_for_foreign_affairs_molotov
+	   }
+		SUE={add_ideas = SUE_Trotsky_P}
+		}
+	option = {
+		name = SUE.14.b
+		add_trait = {
+			character = SUE_Georgi_Chicherin
+			slot = political_advisor
+			trait = pc_for_foreign_affairs_molotov
+	   }
+		SUE={add_ideas = SUE_Georgi_Chicherin_P}
+		}
+	option = {
+		name = SUE.14.c
+		add_trait = {
+			character = SUE_Vladimir_Smirnov
+			slot = political_advisor
+			trait = pc_for_foreign_affairs_molotov
+	   }
+		SUE={add_ideas = SUE_Vladimir_Smirnov_P}
 		}
 	}

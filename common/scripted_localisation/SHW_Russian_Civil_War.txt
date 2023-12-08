@@ -1,0 +1,46 @@
+
+defined_text = {
+	name = RussianCivilWar 
+	text = {
+		trigger = {
+			SHW={check_variable = { SHW_Progress_the_Russian_Civil_War_paranoiameter = 0 }}
+		}
+		localization_key = SHW_RussianCivilWar_0
+	}
+	text = {
+		trigger = {
+			SHW={check_variable = { SHW_Progress_the_Russian_Civil_War_paranoiameter = 1 }}
+		}
+		localization_key = SHW_RussianCivilWar_1
+	}
+	text = {
+		trigger = {
+			SHW={check_variable = { SHW_Progress_the_Russian_Civil_War_paranoiameter = 2 }}
+		}
+		localization_key = SHW_RussianCivilWar_2
+	}
+	text = {
+		trigger = {
+			SHW={check_variable = { SHW_Progress_the_Russian_Civil_War_paranoiameter = 3 }}
+		}
+		localization_key = SHW_RussianCivilWar_3
+	}
+	text = {
+		trigger = {
+			SHW={check_variable = { SHW_Progress_the_Russian_Civil_War_paranoiameter = 4 }}
+		}
+		localization_key = SHW_RussianCivilWar_4
+	}
+	text = {
+		trigger = {
+			SHW={check_variable = { SHW_Progress_the_Russian_Civil_War_paranoiameter = 5 }}
+		}
+		localization_key = SHW_RussianCivilWar_5
+	}
+	text = {
+		trigger = {
+			SHW={check_variable = { SHW_Progress_the_Russian_Civil_War_paranoiameter = 6 }}
+		}
+		localization_key = SHW_RussianCivilWar_6
+	}
+} 

@@ -22,7 +22,8 @@ guiTypes = {
 		size = { width = 100% height= 210 }
 		iconType = {
 			name = "faction_icon"
-			position = {x = 265 y = 305}
+            pdx_tooltip= "faction_numbers"
+			position = {x = 265 y = 303} 
 		}
    instantTextBoxType = {
 			name ="Party_Name_text"

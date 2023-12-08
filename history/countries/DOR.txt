@@ -58,11 +58,10 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no
 }
-
+minor = yes
 add_ideas = {
 #law
 Private_economy
-		completely_illiterate
 		low_industrialization
 		Freedom_belief
 		Autonomous_police

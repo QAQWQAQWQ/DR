@@ -63,6 +63,31 @@ country_event = {
 }
 }
 country_event = {
+	id = WUP.2
+	title = WUP.2.t
+	desc = WUP.2.d
+	picture = GFX_Provincial_elections
+	is_triggered_only = yes
+	option = {
+			name = WUP.2.a
+			ai_chance = {
+				base = 50
+				modifier = {
+					factor = 0.25
+			}
+		}	
+	}
+	option = {
+		name = WUP.2.b
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 0.75
+		}
+	}	
+}
+}
+country_event = {
 	id = ZJY.1
 	title = ZJY.1.t
 	desc = ZJY.1.d

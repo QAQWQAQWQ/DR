@@ -356,6 +356,32 @@ can_join_opposite_factions = yes
 		}
 		ai_neutral = yes
 	}
+	####雅利安密学
+	aryan_secretology = {
+		types = {
+			aryan_secretology_type = {}
+		}
+		dynamic_faction_names = {
+		}
+		color = { 99 44 135 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_create_factions = no
+			can_send_volunteers = yes
+		}
+		can_collaborate = yes
+		modifiers = {
+			generate_wargoal_tension = 0.5
+			guarantee_tension = 0.5
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 7.5
+			navy_intel_to_others = 12.5
+			airforce_intel_to_others = 7.5
+		}
+		ai_neutral = yes
+	}
 	####安那其
 	Anarchopedia = {
 		types = {
@@ -444,60 +470,6 @@ can_join_opposite_factions = yes
 
 		}
 		color =  { 220 91 46 }
-		rules = {
-			can_force_government = no
-			can_puppet = no
-			can_join_factions = no
-			can_create_factions = no
-			can_send_volunteers = yes
-		}
-		can_host_government_in_exile = yes
-		modifiers = {
-			generate_wargoal_tension = 0.8
-			guarantee_tension = 0.8
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 8.0
-			navy_intel_to_others = 30.0
-			airforce_intel_to_others = 7
-		}
-		ai_neutral = yes
-	}
-	#####君主立宪制
-	constitutional_monarchy = {
-		types = {
-			constitutional_monarchy_type = {} #generic
-		}
-		dynamic_faction_names = {
-
-		}
-		color =  { 191 131 196 }
-		rules = {
-			can_force_government = no
-			can_puppet = no
-			can_join_factions = no
-			can_create_factions = no
-			can_send_volunteers = yes
-		}
-		can_host_government_in_exile = yes
-		modifiers = {
-			generate_wargoal_tension = 0.8
-			guarantee_tension = 0.8
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 8.0
-			navy_intel_to_others = 30.0
-			airforce_intel_to_others = 7
-		}
-		ai_neutral = yes
-	}
-	#####二元君主制
-	Dual_monarchy = {
-		types = {
-			Dual_monarchy_type = {} #generic
-		}
-		dynamic_faction_names = {
-
-		}
-		color =  { 75 111 112 }
 		rules = {
 			can_force_government = no
 			can_puppet = no

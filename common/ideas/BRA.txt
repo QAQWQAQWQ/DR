@@ -1,0 +1,21 @@
+ideas = {
+    country = {
+		BRA_Coffee_bean_economy= {
+			picture = Coffee_bean_economy
+			modifier = {
+				political_power_factor = 0.05
+				trade_opinion_factor = 0.1
+			}
+          }
+		  BRA_Brazilian_Guard= {
+			picture = Brazilian_Guard
+			modifier = {
+				neutrality_drift = 0.01
+				monarchy_drift = 0.01
+				authoritarian_drift = 0.01
+				political_power_factor = -0.1
+				army_infantry_attack_factor = 0.1
+			}
+          }
+		}
+}

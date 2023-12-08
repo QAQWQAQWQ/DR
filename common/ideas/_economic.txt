@@ -95,9 +95,7 @@ ideas = {
 		low_economic_mobilisation = {
 
 			available = {
-				hidden_trigger = {
-					has_stability > 9 
-				  }
+				
 				has_war_support > 0.15
 				if = {
 					limit = {
@@ -177,9 +175,7 @@ ideas = {
 
 			available = {
 				has_war_support > 0.25
-				hidden_trigger = {
-					has_stability > 9 
-				  }
+				
 				if = {
 					limit = {
 						original_tag = HUN
@@ -250,9 +246,7 @@ ideas = {
 
 			available = {
 				has_war_support > 0.5
-				hidden_trigger = {
-					has_stability > 9 
-				  }
+				
 				OR = {
 					has_government = fascism
 					has_government = communism
@@ -356,9 +350,6 @@ ideas = {
 
 
 			available = {
-				hidden_trigger = {
-					has_stability > 9 
-				  }
 				has_war = yes
 				has_war_support > 0.8
 				any_enemy_country = {

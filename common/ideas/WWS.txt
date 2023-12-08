@@ -26,6 +26,68 @@ ideas = {
 		}
 
 }
+
+WWS_Bank_Prussia = {
+	picture = Bank_Prussia
+	modifier = {
+		government_investment_modifier=0.800
+		market_available_for_dumping_modifier=1.100
+		tax_from_company_modifier=0.900
+		tax_from_consumption_modifier=0.900
+		domestic_investment_modifier=0.900
+  }
+
+}
+WWS_Bank_Deutsche = {
+	picture = Bank_Deutsche
+	modifier = {
+		government_investment_modifier=1.100
+		market_available_for_dumping_modifier=2.100
+		tax_from_company_modifier=1.000
+		tax_from_consumption_modifier=1.000
+		domestic_investment_modifier=1.100
+  }
+
+}
+
+WWS_Prussian_railways = {
+	picture = Prussian_railways
+	modifier = {
+		land_reinforce_rate = 0.05
+		planning_speed = 0.05
+		local_supplies = 0.05
+		supply_consumption_factor = -0.02
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 WWS_Labor_pioneer = {
 	picture = Labor_pioneer
 	modifier = {
@@ -325,7 +387,7 @@ industrial_concern={
 	
 Hochtief={
 	available = {
-		has_completed_focus = WWS_Hochtief
+		has_completed_focus = WWS_Foucs21
 
 	}
 	allowed = {
@@ -340,7 +402,7 @@ Hochtief={
 }
 AEG={
 	available = {
-		has_completed_focus = WWS_Siemens_AG
+		has_completed_focus = WWS_Foucs21
 	}
 	allowed = {
 		original_tag = WWS
@@ -354,7 +416,7 @@ AEG={
 }
 Siemens1={
 	available = {
-		has_completed_focus = WWS_Expansion_radar_stations
+		has_completed_focus = WWS_Foucs21
 	}
 	allowed = {
 		original_tag = WWS

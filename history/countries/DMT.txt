@@ -13,6 +13,7 @@ set_technology = {
 }
 
 recruit_character = DMT_Josip_Smodlaka
+recruit_character = DMT_Svetozar_Pribicevie
 
 	set_technology = {
 		interwar_artillery = 1
@@ -57,9 +58,8 @@ add_ideas = {
 #law
 extensive_conscription
 low_industrialization 
-secondary_school
 Staterun_economy
-
+Part_of_Habsburgs
 }
 set_popularities = {
 	democratic = 25

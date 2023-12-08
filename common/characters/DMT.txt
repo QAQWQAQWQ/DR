@@ -12,5 +12,19 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+	}	
+	DMT_Svetozar_Pribicevie={
+		name=DMT_Svetozar_Pribicevie
+		portraits={
+			civilian={
+				large="gfx/leaders/DMT/Portrait_Svetozar_Pribicevie.tga"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
 	}		
 	}

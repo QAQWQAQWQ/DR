@@ -1,7 +1,7 @@
 ﻿capital = 117
 
 oob = "RDN_1920"
-
+set_naval_oob = "RDN_1920_naval"
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -11,8 +11,31 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-
+set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		transport = 1
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		coastal_defense_ships = 1
+		mtg_transport = 1
+	}
 recruit_character = RDN_Joachim
+recruit_character = RDN_Prince_Ferdinand_Pius
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -54,12 +77,17 @@ set_politics = {
 add_ideas={
 #law
 Basic_industrialization 
-secondary_school
 Private_economy
+RDN_Camorra
 }
 set_popularities = {
 	monarchy = 80
 	national_populist = 10
 	neutrality = 5
 	communism = 5
+}
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 1000
+    producer = RDN
 }

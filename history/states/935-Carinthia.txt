@@ -1,0 +1,29 @@
+
+state={
+	id=935
+	name="STATE_935"
+	manpower = 550999
+	resources={
+        steel=1
+	}
+	
+	state_category = large_town
+	
+	history={
+		owner = AOX
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+		victory_points = {
+			3673 3
+		}
+		add_core_of = AOX
+	}
+
+	provinces={
+        6673 668 671 3674 653 3673 11612
+	}
+
+	local_supplies=0.0 
+}

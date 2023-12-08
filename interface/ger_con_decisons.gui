@@ -6,7 +6,7 @@ guiTypes = {
 		background = {
 			name = "ger_con_background"
 			spriteType = "GFX_ger_con_bg"
-			position = { x = 10 y = 0 }
+			position = { x = 5 y = 0 }
 		}
 		iconType = {
 			name = "ger_power_balance_value"
@@ -30,43 +30,18 @@ guiTypes = {
 			spriteType = "GFX_pre_side"
 			position = { x = 433 y = 40 }
 		}
-		iconType = {
-			name = "gercon_che_aox"
-			spriteType = "GFX_ger_con_che"
-			position = { x = 10 y = 0 }
-		}
-		buttonType = {
-			name ="ger_con_aox"
-			quadTextureSprite = "GFX_flag_small2"
-			position = { x=20 y=10 }
-			clicksound = clicksound
-		}
-		iconType = {
-			name = "gercon_che_wws"
-			spriteType = "GFX_ger_con_che"
-			position = { x = 433 y = 0 }
-		}
-		buttonType = {
-			name ="ger_con_wws"
-			quadTextureSprite = "GFX_flag_small2"
-			position = { x=443 y=10 }
-			clicksound = clicksound
-		}
-		iconType = {
-			name = "gercon_che_agc"
-			spriteType = "GFX_ger_con_che"
-			position = { x = 224 y = 10 }
-		}
+		
 		buttonType = {
 			name ="ger_con_agc"
 			quadTextureSprite = "GFX_flag_small2"
-			position = { x=234 y=20 }
+			position = { x=234 y=240 }
 			clicksound = clicksound
 		}
-		iconType = {
-			name = "gercon_che_lsb"
+        iconType = {
+			name = "gercon_che_agc"
 			spriteType = "GFX_ger_con_che"
-			position = { x = 100 y = 110 }
+			position = { x = 224 y = 230 }
+            alwaystransparent=yes
 		}
 		buttonType = {
 			name ="ger_con_lsb"
@@ -75,75 +50,98 @@ guiTypes = {
 			clicksound = clicksound
 		}
 		iconType = {
-			name = "gercon_che_dhd"
+			name = "gercon_che_lsb"
 			spriteType = "GFX_ger_con_che"
-			position = { x = 150 y = 110 }
+			position = { x = 100 y = 110 }
+			alwaystransparent=yes
 		}
+		
+
+
 		buttonType = {
 			name ="ger_con_dhd"
 			quadTextureSprite = "GFX_flag_small2"
 			position = { x=160 y=120 }
 			clicksound = clicksound
 		}
-		iconType = {
-			name = "gercon_che_don"
+    	iconType = {
+			name = "gercon_che_dhd"
 			spriteType = "GFX_ger_con_che"
-			position = { x = 200 y = 110 }
+			position = { x = 150 y = 110 }
+			alwaystransparent=yes
 		}
+		
 		buttonType = {
 			name ="ger_con_don"
 			quadTextureSprite = "GFX_flag_small2"
 			position = { x=210 y=120 }
 			clicksound = clicksound
 		}
+
 		iconType = {
-			name = "gercon_che_dof"
+			name = "gercon_che_don"
 			spriteType = "GFX_ger_con_che"
-			position = { x = 250 y = 110 }
+			position = { x = 200 y = 110 }
+			alwaystransparent=yes
 		}
+		
 		buttonType = {
 			name ="ger_con_dof"
 			quadTextureSprite = "GFX_flag_small2"
 			position = { x=260 y=120 }
 			clicksound = clicksound
 		}
+
 		iconType = {
-			name = "gercon_che_dob"
+			name = "gercon_che_dof"
 			spriteType = "GFX_ger_con_che"
-			position = { x = 300 y = 110 }
+			position = { x = 250 y = 110 }
+			alwaystransparent=yes
 		}
+		
 		buttonType = {
 			name ="ger_con_dob"
 			quadTextureSprite = "GFX_flag_small2"
 			position = { x=310 y=120 }
 			clicksound = clicksound
 		}
+
 		iconType = {
-			name = "gercon_che_dor"
+			name = "gercon_che_dob"
 			spriteType = "GFX_ger_con_che"
-			position = { x = 350 y = 110 }
+			position = { x = 300 y = 110 }
+			alwaystransparent=yes
 		}
+		
 		buttonType = {
 			name ="ger_con_dor"
 			quadTextureSprite = "GFX_flag_small2"
 			position = { x=360 y=120 }
 			clicksound = clicksound
 		}
+
+
 		iconType = {
-			name = "gercon_che_bxm"
+			name = "gercon_che_dor"
 			spriteType = "GFX_ger_con_che"
-			position = { x = 100 y=170 }
+			position = { x = 350 y = 110 }
+			alwaystransparent=yes
 		}
+
+
 		buttonType = {
 			name ="ger_con_bxm"
 			quadTextureSprite = "GFX_flag_small2"
 			position = { x=110 y=180 }
 			clicksound = clicksound
 		}
+
+		
 		iconType = {
-			name = "gercon_che_dol"
+			name = "gercon_che_bxm"
 			spriteType = "GFX_ger_con_che"
-			position = { x = 150 y=170 }
+			position = { x = 100 y=170 }
+			alwaystransparent=yes
 		}
 		buttonType = {
 			name ="ger_con_dol"
@@ -151,10 +149,12 @@ guiTypes = {
 			position = { x=160 y=180 }
 			clicksound = clicksound
 		}
+
 		iconType = {
-			name = "gercon_che_doh"
+			name = "gercon_che_dol"
 			spriteType = "GFX_ger_con_che"
-			position = { x = 200 y=170 }
+			position = { x = 150 y=170 }
+			alwaystransparent=yes
 		}
 		buttonType = {
 			name ="ger_con_doh"
@@ -163,9 +163,10 @@ guiTypes = {
 			clicksound = clicksound
 		}
 		iconType = {
-			name = "gercon_che_doa"
+			name = "gercon_che_doh"
 			spriteType = "GFX_ger_con_che"
-			position = { x = 250 y=170 }
+			position = { x = 200 y=170 }
+			alwaystransparent=yes
 		}
 		buttonType = {
 			name ="ger_con_doa"
@@ -174,9 +175,10 @@ guiTypes = {
 			clicksound = clicksound
 		}
 		iconType = {
-			name = "gercon_che_dom"
+			name = "gercon_che_doa"
 			spriteType = "GFX_ger_con_che"
-			position = { x = 300 y=170 }
+			position = { x = 250 y=170 }
+			alwaystransparent=yes
 		}
 		buttonType = {
 			name ="ger_con_dom"
@@ -185,9 +187,10 @@ guiTypes = {
 			clicksound = clicksound
 		}
 		iconType = {
-			name = "gercon_che_dos"
+			name = "gercon_che_dom"
 			spriteType = "GFX_ger_con_che"
-			position = { x = 350 y=170 }
+			position = { x = 300 y=170 }
+			alwaystransparent=yes
 		}
 		buttonType = {
 			name ="ger_con_dos"
@@ -195,6 +198,13 @@ guiTypes = {
 			position = { x=360 y=180 }
 			clicksound = clicksound
 		}
+		iconType = {
+			name = "gercon_che_dos"
+			spriteType = "GFX_ger_con_che"
+			position = { x = 350 y=170 }
+			alwaystransparent=yes
+		}
+		
 	}
 }
 			

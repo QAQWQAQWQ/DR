@@ -1,6 +1,6 @@
 ﻿capital = 43
 
-#oob = "KOH_1920"
+oob = "KOH_1920"
 
 # Starting tech
 set_technology = {
@@ -13,7 +13,22 @@ set_technology = {
 }
 
 recruit_character = KOH_Joseph_Augusta
-
+recruit_character = KOH_Mihaly_Karolyi
+recruit_character = KOH_Horthy_Miklos
+recruit_character = KOH_Janky_Kocsard
+recruit_character = KOH_Samu_Baro_Hazai
+recruit_character = KOH_Shvoy_Istvan
+recruit_character = KOH_Pal_Nagy
+recruit_character = KOH_Sandor_Szurmay
+recruit_character = KOH_Istvan_Horthy 
+recruit_character = KOH_Vitez_Karpathy_Kamillo
+recruit_character = KOH_Willerding_Rezso
+recruit_character = KOH_Karoly_Badok
+recruit_character = KOH_Gyula_Gombos_Jakfai_Vitez
+recruit_character = KOH_Somkuthy_Jozsef
+recruit_character = KOH_Vitez_Karoly 
+recruit_character = KOH_Jeno_Ratz
+recruit_character = KOH_Vitez_nagybaczoni_Nagy
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -57,9 +72,8 @@ add_ideas = {
 #law
 extensive_conscription
 low_industrialization 
-secondary_school
 Staterun_economy
-
+Part_of_Habsburgs
 }
 set_popularities = {
 	democratic = 25

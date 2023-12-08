@@ -1,6 +1,6 @@
 ﻿capital = 282
 
-oob = "JPA_1936"
+oob = "JPN_1920"
 
 # Starting tech
 set_technology = {
@@ -58,16 +58,22 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no	
 }
+#create_faction = Empire_Japan
+##add_to_faction = RTW
+##add_to_faction = KON
+
+puppet = RTW
+puppet = KON
+
 add_ideas={
 	JPN_Restoration
 	JPN_estrangement
 
 
 ##MINISTERS##
-    JPN_Honorable_H
+JPN_Honorable_H
 #law
 Basic_industrialization 
-elementary_school
 Private_economy
 No_labor_laws
 Control_media

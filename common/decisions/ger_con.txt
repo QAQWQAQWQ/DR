@@ -1,5 +1,8 @@
 ger_con_decisions = {
   ger_con_get_ger_sporrt = {
+    ai_will_do = {
+      factor = 0
+    }
 		visible = {
         NOT = {
           OR = {
@@ -10,12 +13,16 @@ ger_con_decisions = {
         check_variable = { gercon_nat = ROOT}
 		}		
     available = {
+      check_variable = { global.ger_con_has_uni = 0 }
     }
     cost = 50
     fire_only_once = no
     days_remove = 50
     complete_effect = {
-      add_to_variable = { var = ROOT.ger_support value = 10 }  
+      ROOT = {
+        set_variable = { ger_con_det = 10 }
+        gercon_add_ger_sup = yes
+      }
       gercon_upd_pbv_var = yes
       gercon_clamp_vars = yes
     }
@@ -23,6 +30,9 @@ ger_con_decisions = {
     }
   }
   ger_con_suppress_ger = {
+    ai_will_do = {
+      factor = 100
+    }
 		visible = {
         NOT = {
           OR = {
@@ -33,12 +43,17 @@ ger_con_decisions = {
         check_variable = { gercon_nat = ROOT}
 		}		
     available = {
+		  check_variable = { global.ger_con_end = 0 }
+      check_variable = { ROOT.ger_support > 10 }
     }
     cost = 50
     fire_only_once = no
-    days_remove = 30
+    days_remove = 50
     complete_effect = {
-      add_to_variable = { var = ROOT.ger_support value = -10 }  
+      ROOT = {
+        set_variable = { ger_con_det = -10 }
+        gercon_del_ger_sup = yes
+      }
       gercon_upd_pbv_var = yes
       gercon_clamp_vars = yes
     }
@@ -56,6 +71,8 @@ ger_con_decisions = {
         check_variable = { gercon_nat = ROOT}
 		}		
     available = {
+      check_variable = { global.german_war = 0 }
+      check_variable = { ROOT.aus_support > 15 }
         var:gercon_nat = {
            check_variable = { ger_con_cangetsupport = 1 }
         }
@@ -64,7 +81,10 @@ ger_con_decisions = {
     fire_only_once = no
     days_remove = 50
     complete_effect = {
-      add_to_variable = { var = ROOT.aus_support value = -10 }  
+      ROOT = {
+        set_variable = { ger_con_det = -15 }
+        gercon_del_aus_sup = yes
+      }
       gercon_upd_pbv_var = yes
       gercon_clamp_vars = yes
     }
@@ -82,6 +102,8 @@ ger_con_decisions = {
       check_variable = { gercon_nat = ROOT}
 		}		
     available = {
+      check_variable = { global.german_war = 0 }
+      check_variable = { ROOT.pre_support > 15 }
         var:gercon_nat = {
            check_variable = { ger_con_cangetsupport = 1 }
         }
@@ -90,7 +112,10 @@ ger_con_decisions = {
     fire_only_once = no
     days_remove = 50
     complete_effect = {
-      add_to_variable = { var = ROOT.pre_support value = -10 }  
+      ROOT = {
+        set_variable = { ger_con_det = -15 }
+        gercon_del_pre_sup = yes
+      }
       gercon_upd_pbv_var = yes
       gercon_clamp_vars = yes
     }
@@ -98,6 +123,9 @@ ger_con_decisions = {
     }
   }
   ger_con_get_support = {
+    ai_will_do = {
+      factor = 110
+    }
 		visible = {
         OR ={
           original_tag = AOX
@@ -111,8 +139,10 @@ ger_con_decisions = {
         }
 		}		
     available = {
+      check_variable = { global.german_war = 0 }
         var:gercon_nat = {
            check_variable = { ger_con_cangetsupport = 1 }
+           exists = yes
         }
     }
     cost = 25
@@ -122,9 +152,11 @@ ger_con_decisions = {
       var:gercon_nat = {
           if = {
             limit = { ROOT = { original_tag = AOX} }
-            add_to_variable = { var = aus_support value = 5 }   
+            set_variable = { ger_con_det = 5 }
+            gercon_add_aus_sup = yes
             else = { 
-              add_to_variable = { var = pre_support value = 5 } 
+              set_variable = { ger_con_det = 5 }
+              gercon_add_pre_sup = yes
             }
           }
       }
@@ -135,6 +167,9 @@ ger_con_decisions = {
     }
   }
   ger_con_ind_inv = {
+    ai_will_do = {
+      factor = 120
+    }
 		visible = {
         OR ={
           original_tag = AOX
@@ -148,13 +183,15 @@ ger_con_decisions = {
         }
 		}		
     available = {
+      check_variable = { global.german_war = 0 }
         var:gercon_nat = {
+           exists = yes
            check_variable = { ger_con_cangetsupport = 1 }
         }
     }
     cost = 100
     fire_only_once = no
-    days_remove = 50
+    days_remove = 120
     complete_effect = {
       var:gercon_nat = {
           random_owned_state = {
@@ -165,11 +202,15 @@ ger_con_decisions = {
 									instant_build = yes
 							}
           }
+      }
+      var:gercon_nat = {
           if = {
             limit = { ROOT = { original_tag = AOX} }
-            add_to_variable = { var = aus_support value = 20 }   
+            set_variable = { ger_con_det = 20 }
+            gercon_add_aus_sup = yes
             else = { 
-              add_to_variable = { var = pre_support value = 20 } 
+              set_variable = { ger_con_det = 20 }
+              gercon_add_pre_sup = yes
             }
           }
       }
@@ -179,13 +220,147 @@ ger_con_decisions = {
     remove_effect = {
     }
   }
-
+  ger_con_armys = {
+    ai_will_do = {
+      factor = 130
+    }
+		visible = {
+        OR ={
+          original_tag = AOX
+          original_tag = WWS
+        }
+        NOT = {
+          OR = {
+            check_variable = { gercon_nat = AOX}
+            check_variable = { gercon_nat = WWS}
+          }
+        }
+		}		
+    available = {
+      check_variable = { global.german_war = 0 }
+        var:gercon_nat = {
+           exists = yes
+           check_variable = { ger_con_cangetsupport = 1 }
+        }
+    }
+    cost = 100
+    fire_only_once = no
+    days_remove = 70
+    complete_effect = {
+      var:gercon_nat = {
+        division_template = {
+          name = "Reichskreis Army"
+          division_names_group = GER_INF_01
+          priority = 1
+          regiments = {
+            infantry = { x = 0 y = 0 }
+            infantry = { x = 0 y = 1 }
+            infantry = { x = 0 y = 2 }
+          }
+          support = {
+            engineer = { x = 0 y = 0 }
+            artillery = { x = 0 y = 1 }
+          }
+        }
+        army_experience = 5
+        random_owned_state = {
+          create_unit = {
+            division = "name = \"Reichskreis Army\" division_template = \"Reichskreis Army\" start_experience_factor = 0.8 " 
+            owner = PREV
+          }
+        }	
+      }
+      var:gercon_nat = {
+          if = {
+            limit = { ROOT = { original_tag = AOX} }
+            set_variable = { ger_con_det = 15 }
+            gercon_add_aus_sup = yes
+            else = { 
+              set_variable = { ger_con_det = 15 }
+              gercon_add_pre_sup = yes
+            }
+          }
+      }
+      gercon_upd_pbv_var = yes
+      gercon_clamp_vars = yes
+    }
+    remove_effect = {
+    }
+  }
+  ger_con_suppress_aus_qwq = {
+    ai_will_do = {
+      factor = 100
+    }
+		visible = {
+        original_tag = WWS
+        NOT = {
+          OR = {
+            check_variable = { gercon_nat = AOX}
+            check_variable = { gercon_nat = WWS}
+          }
+        }
+		}		
+    available = {
+      check_variable = { global.german_war = 0 }
+        var:gercon_nat = {
+           check_variable = { ger_con_cangetsupport = 1 }
+           exists = yes
+        }
+    }
+    cost = 80
+    fire_only_once = no
+    days_remove = 30
+    complete_effect = {
+      var:gercon_nat = {
+        set_variable = { ger_con_det = -10 }
+        gercon_del_aus_sup = yes
+      }
+      gercon_upd_pbv_var = yes
+      gercon_clamp_vars = yes
+    }
+    remove_effect = {
+    }
+  }
+  ger_con_suppress_pre_qwq = {
+    ai_will_do = {
+      factor = 100
+    }
+		visible = {
+        original_tag = AOX
+        NOT = {
+          OR = {
+            check_variable = { gercon_nat = AOX}
+            check_variable = { gercon_nat = WWS}
+          }
+        }
+		}		
+    available = {
+      check_variable = { global.german_war = 0 }
+        var:gercon_nat = {
+           check_variable = { ger_con_cangetsupport = 1 }
+           exists = yes
+        }
+    }
+    cost = 80
+    fire_only_once = no
+    days_remove = 30
+    complete_effect = {
+      var:gercon_nat = {
+        set_variable = { ger_con_det = -10 }
+        gercon_del_pre_sup = yes
+      }
+      gercon_upd_pbv_var = yes
+      gercon_clamp_vars = yes
+    }
+    remove_effect = {
+    }
+  }
   great_ger_con = {
 		icon = generic_civil_support
 
 		available = {
-      always = no
-		}
+		  check_variable = { global.ger_con_has_uni = 1 }
+    }
 
 		days_mission_timeout = 50
 
@@ -232,12 +407,584 @@ ger_con_decisions = {
 		is_good = no
 
 		timeout_effect = {
-      add_to_variable = {
-        var = ger_support
-        value = 10
-      }   
+      set_variable = { ger_con_det = 10 }
+      gercon_add_ger_sup = yes
       gercon_clamp_vars = yes
 		}
 	}
-}
+  pre_ger_con_german_uni = {
+    ai_will_do = {
+      factor = 100
+    }
+		visible = {
+        check_variable = { global.ger_con_has_uni = 0 }
+        WWS = { has_completed_focus = WWS_Unfinished_business }
+        OR ={
+          original_tag = WWS
+        }
+		}		
+    available = {
+      OR = {
+        AOX = { has_completed_focus = AUS_ger_6 }
+        AND = {
+          WWS = { has_completed_focus = WWS_Unite_German_nation }
+          custom_trigger_tooltip = { 
+            tooltip = pre_win_german_war 
+            pre_has_win_german_war = yes
+          }
+        }
+        WWS = { has_completed_focus = WWS_future_Federation }
+      }
+      DOS = { ger_con_uni_tri_pre = yes }
+      DOH = { ger_con_uni_tri_pre = yes }
+      DOM = { ger_con_uni_tri_pre = yes }
+      DOA = { ger_con_uni_tri_pre = yes }
+      DOL = { ger_con_uni_tri_pre = yes }
+      DON = { ger_con_uni_tri_pre = yes }
+      DOR = { ger_con_uni_tri_pre = yes }
+      DOF = { ger_con_uni_tri_pre = yes }
+      DOB = { ger_con_uni_tri_pre = yes }
+      DHD = { ger_con_uni_tri_pre = yes }
+      AGC = { ger_con_uni_tri_pre = yes }
+      LSB = { ger_con_uni_tri_pre = yes }
+    }
+    cost = 0
+    days_remove = 0
+    complete_effect = {
+      AOX = {
+        remove_from_faction = DMW
+        remove_from_faction = WWS
+        remove_from_faction = AOX
+      }
+      set_variable = {
+        global.ger_con_has_uni = 1
+      }
+      every_state = {
+        limit = {
+          OR = {
+            is_core_of  = AGC
+            is_core_of  = LSB
+            is_core_of  = DHD
+            is_core_of  = DON
+            is_core_of  = DOF
+            is_core_of  = DOB
+            is_core_of  = DOR
+            is_core_of  = DOL
+            is_core_of  = DOH
+            is_core_of  = DOA
+            is_core_of  = DOM
+            is_core_of  = DOS
+          }
+        }
+        add_core_of = WWS
+      }
+      every_country = {
+        limit = {
+          OR = {
+            original_tag = AGC
+            original_tag = LSB
+            original_tag = DHD
+            original_tag = DON
+            original_tag = DOF
+            original_tag = DOB
+            original_tag = DOR
+            original_tag = DOL
+            original_tag = DOH
+            original_tag = DOA
+            original_tag = DOM
+            original_tag = DOS
+          }
+        }
+        ger_con_pre_controlled = yes
+        country_event = ger_con.1
+      }
+      hidden_effect={every_country = { news_event = ger_con.5 }}
+      
+      58 = { add_core_of = ROOT } 
+      DMW = { country_event = ger_con.8 }
+      WWS = { set_cosmetic_tag = WWS_German_Empire }
+    }
+    remove_effect = {
+    }
+  }
+  aus_ger_con_german_uni = {
+    ai_will_do = {
+      factor = 100
+    }
+		visible = {
+        AOX = { has_completed_focus = AUS_ger_3 }
+        check_variable = { global.ger_con_has_uni = 0 }
+        OR ={
+          original_tag = AOX
+        }
+		}		
+    available = {
+      AOX = { has_completed_focus = AUS_ger_3 }
+      aus_has_win_german_war = yes
+      custom_trigger_tooltip = { 
+        tooltip = aus_win_german_war 
+        aus_has_win_german_war = yes
+      }
 
+      DOS = { ger_con_uni_tri_aus = yes }
+      DOH = { ger_con_uni_tri_aus = yes }
+      DOM = { ger_con_uni_tri_aus = yes }
+      DOA = { ger_con_uni_tri_aus = yes }
+      DOL = { ger_con_uni_tri_aus = yes }
+      DON = { ger_con_uni_tri_aus = yes }
+      DOR = { ger_con_uni_tri_aus = yes }
+      DOF = { ger_con_uni_tri_aus = yes }
+      DOB = { ger_con_uni_tri_aus = yes }
+      DHD = { ger_con_uni_tri_aus = yes }
+      AGC = { ger_con_uni_tri_aus = yes }
+      LSB = { ger_con_uni_tri_aus = yes }
+    }
+    cost = 0
+    days_remove = 0
+    complete_effect = {
+      AOX = {
+        remove_from_faction = DMW
+        remove_from_faction = WWS
+        remove_from_faction = AOX
+      }
+      set_variable = {
+        global.ger_con_has_uni = 1
+      }
+      every_state = {
+        limit = {
+          OR = {
+            is_core_of = AGC
+            is_core_of = LSB
+            is_core_of = DHD
+            is_core_of = DON
+            is_core_of = DOF
+            is_core_of = DOB
+            is_core_of = DOR
+            is_core_of = DOL
+            is_core_of = DOH
+            is_core_of = DOA
+            is_core_of = DOM
+            is_core_of = DOS
+            is_core_of = WWS
+          }
+        }
+        add_core_of = AOX
+      }
+      every_country = {
+        limit = {
+          OR = {
+            original_tag = AGC
+            original_tag = LSB
+            original_tag = DHD
+            original_tag = DON
+            original_tag = DOF
+            original_tag = DOB
+            original_tag = DOR
+            original_tag = DOL
+            original_tag = DOH
+            original_tag = DOA
+            original_tag = DOM
+            original_tag = DOS
+            original_tag = WWS
+          }
+        }
+        ger_con_aus_controlled = yes
+        country_event = ger_con.2
+      }
+      hidden_effect={every_country = { news_event = ger_con.4 }}
+      
+      58 = { add_core_of = ROOT } 
+      DMW = { country_event = ger_con.8 }
+      hidden_effect = {
+        add_ideas = { remnants_of_the_old_state }
+        add_ideas = { inconsistent_command_system }
+        add_ideas = { disgruntled_german_nationalism }
+				add_to_variable = {
+					var = aus_ger_sup 
+					value = 60
+				}
+        AOX = { country_event = { id = austria.12 days = 10 } }
+      }
+    }
+    remove_effect = {
+    }
+  }
+  aus_start_german_war = {
+    ai_will_do = {
+      factor = 100
+    }
+		visible = {
+        AOX = { has_completed_focus = AUS_ger_7 }
+        check_variable = { global.ger_con_has_uni = 0 }
+        check_variable = { global.german_war = 0 }
+        OR ={
+          original_tag = AOX
+        }
+		}	
+    available = {
+      AOX = { has_completed_focus = AUS_ger_19 }
+      AOX = { has_completed_focus = AUS_ger_10 }
+      AOX = { has_completed_focus = AUS_ger_15 }
+      AOX = { has_completed_focus = AUS_ger_8 }
+      AOX = { has_completed_focus = AUS_ger_9 }
+      # WWS = { can_ROOT_get_wargoal_on_THIS = yes }
+    }	
+    cost = 0
+    days_remove = 7
+    complete_effect = {
+      AOX = {
+        remove_from_faction = DMW
+        remove_from_faction = WWS
+        remove_from_faction = AOX
+      }
+      set_variable = { global.german_war = 1 }
+      AOX = { create_faction = "南德意志派" }
+      WWS = { create_faction = "北德意志派" }
+    }
+    remove_effect = {
+      AOX = { declare_war_on = { target = WWS type = annex_everything } }
+      hidden_effect={every_country = {  NOT={
+        original_tag=AOX
+        original_tag=WWS
+      }news_event = ger_con.3 }}
+      
+    }
+  }
+  pre_start_german_war = {
+    ai_will_do = {
+	    factor = 100
+    }
+		visible = {
+        WWS = { has_completed_focus = WWS_Bismarck_last_policy }
+        check_variable = { global.ger_con_has_uni = 0 }
+        check_variable = { global.german_war = 0 }
+        OR ={
+          original_tag = WWS
+        }
+		}	
+    available = {
+      WWS = { has_completed_focus = WWS_Brotherly_wars }
+      # AOX = { can_ROOT_get_wargoal_on_THIS = yes }
+    }	
+    cost = 0
+    days_remove = 7
+    complete_effect = {
+      AOX = {
+        remove_from_faction = DMW
+        remove_from_faction = WWS
+        remove_from_faction = AOX
+      }
+      set_variable = { global.german_war = 1 }
+      AOX = { create_faction = "南德意志派" }
+      WWS = { create_faction = "北德意志派" }
+    }
+    remove_effect = {
+      WWS = { declare_war_on = { target = AOX type = annex_everything } }
+      hidden_effect={every_country = { 
+        NOT={
+          original_tag=AOX
+          original_tag=WWS
+        }
+        news_event = ger_con.3 }
+      }
+      
+    }
+  }
+  aus_start_sil_atk = {
+    ai_will_do = {
+      factor = 0
+      modifier = { 
+        has_war_with = WWS
+        factor = 100 
+      }
+    }
+		visible = {
+        original_tag = AOX
+        AOX = { has_completed_focus = AUS_ger_19 }
+        check_variable = { global.ger_con_has_uni = 0 }
+        NOT = { german_war_has_end = yes }
+		}		
+    available = {
+      german_war_has_boom = yes
+    }
+    cost = 0
+    fire_only_once = yes
+    days_remove = 40
+    complete_effect = {
+      69 = {
+        add_dynamic_modifier = { scope = AOX modifier = aus_sil_atk }
+      }
+      9 = {
+        add_dynamic_modifier = { scope = AOX modifier = aus_sil_atk }
+      }
+      74 = {
+        add_dynamic_modifier = { scope = AOX modifier = aus_sil_atk }
+      }
+      66 = {
+        add_dynamic_modifier = { scope = AOX modifier = aus_sil_atk }
+      }
+      67 = {
+        add_dynamic_modifier = { scope = AOX modifier = aus_sil_atk }
+      }
+      762 = {
+        add_dynamic_modifier = { scope = AOX modifier = aus_sil_atk }
+      }
+      72 = {
+        add_dynamic_modifier = { scope = AOX modifier = aus_sil_atk }
+      }
+    }
+    remove_effect = {
+      69 = {
+        remove_dynamic_modifier = { scope = AOX modifier = aus_sil_atk }
+      }
+      9 = {
+        remove_dynamic_modifier = { scope = AOX modifier = aus_sil_atk }
+      }
+      74 = {
+        remove_dynamic_modifier = { scope = AOX modifier = aus_sil_atk }
+      }
+      66 = {
+         remove_dynamic_modifier = { scope = AOX modifier = aus_sil_atk }
+      }
+      67 = {
+         remove_dynamic_modifier = { scope = AOX modifier = aus_sil_atk }
+      }
+      762 = {
+         remove_dynamic_modifier = { scope = AOX modifier = aus_sil_atk }
+      }
+      72 = {
+         remove_dynamic_modifier = { scope = AOX modifier = aus_sil_atk }
+      }
+    }
+  }
+  aus_ammunition_reserve = {
+    ai_will_do = {
+      factor = 0
+      modifier = { 
+        has_war_with = WWS
+        factor = 100 
+      }
+    }
+		visible = {
+        original_tag = AOX
+        AOX = { has_completed_focus = AUS_ger_19 }
+        check_variable = { global.ger_con_has_uni = 0 }
+        NOT = { german_war_has_end = yes }
+		}		
+    available = {
+      german_war_has_boom = yes
+    }
+    cost = 0
+    fire_only_once = yes
+    days_remove = 70
+    complete_effect = {
+      add_ideas = aus_ammunition_reserve_idea
+    }
+    remove_effect = {
+      remove_ideas = aus_ammunition_reserve_idea
+    }
+  }
+  pre_meg_sax = {
+    ai_will_do = {
+      factor = 100
+    }
+		visible = {
+        original_tag = WWS
+        AOX = { has_completed_focus = AUS_ger_11 }
+        DOS = { exists = yes }
+		}		
+    available = {
+    }
+    cost = 0
+    fire_only_once = yes
+    days_remove = 0
+    complete_effect = {
+      every_state = {
+        limit = {
+          is_core_of = DOS
+        }
+        add_core_of = WWS
+      }
+      WWS = { annex_country = { target = DOS transfer_troops = yes } }
+    }
+    remove_effect = {
+    }
+  }
+  ger_con_SAX_problem = {
+		icon = generic_civil_support
+		available = {
+      OR = {
+			  AOX = {
+			  	has_completed_focus = AUS_ger_11
+			  }
+			  AOX = {
+			  	has_completed_focus = AUS_ger_6
+			  }
+        DOS = { exists = no }
+        check_variable = { global.german_war = 1 }
+      }
+		}
+		# days_mission_timeout = 1
+	  days_mission_timeout = 50
+		activation = {
+        WWS = { has_completed_focus = WWS_Separate_alliances }
+				original_tag = AOX
+		}
+		visible = {
+				original_tag = AOX
+		}		
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		timeout_effect = {
+      set_variable = {
+        global.sax_war = 1 
+      }
+      hidden_effect = {
+        AOX = {
+          remove_from_faction = DOS
+        }
+        hidden_effect={every_country = { news_event = sax_problem.1 }}
+        
+        DOS = {
+          start_civil_war = {
+            ideology = authoritarian
+            size = 0.3
+            capital = 65
+            states = { 65 }
+          }
+          load_oob = "sax_war_aus"
+        }
+        random_other_country = {
+          limit = {
+            original_tag = DOS
+            has_government = authoritarian
+          }
+          load_oob = "sax_war_pre"
+        }
+		  }
+    }
+  }
+}
+ger_con_fra_def = {
+  ger_con_west_def = {
+    ai_will_do = {
+      factor = 60
+    }
+    visible = {
+        OR ={
+          original_tag = AOX
+          original_tag = WWS
+        }
+		}
+    available = {
+      OR = {
+        AOX = {
+          has_full_control_of_state = 28
+        }
+        WWS = {
+          has_full_control_of_state = 28
+        }
+        AGC = {
+          has_full_control_of_state = 28
+        }
+      }
+    }
+    cost = 100
+    fire_only_once = no
+    days_remove = 120
+    complete_effect = {
+    }
+    remove_effect = {
+      28 = {
+        add_building_construction = { 
+          type = bunker 
+          province = 9559
+          level = 1 
+          instant_build = yes 
+        } 
+        add_building_construction = { 
+          type = bunker 
+          province = 11502
+          level = 1 
+          instant_build = yes 
+        } 
+        add_building_construction = { 
+          type = bunker 
+          province = 3629
+          level = 1 
+          instant_build = yes 
+        } 
+        add_building_construction = { 
+          type = bunker 
+          province = 1346
+          level = 1 
+          instant_build = yes 
+        } 
+        add_building_construction = { 
+          type = bunker 
+          province = 6529
+          level = 1 
+          instant_build = yes 
+        } 
+        add_building_construction = { 
+          type = bunker 
+          province = 678
+          level = 1 
+          instant_build = yes 
+        } 
+      }
+    }
+  }
+  ger_con_lux_def = {
+    ai_will_do = {
+      factor = 50
+    }
+    visible = {
+        OR ={
+          original_tag = AOX
+          original_tag = WWS
+        }
+		}
+    available = {
+      OR = {
+        AOX = {
+          has_full_control_of_state = 8
+        }
+        WWS = {
+          has_full_control_of_state = 8
+        }
+        LSB = {
+          has_full_control_of_state = 8
+        }
+      }
+    }
+    cost = 60
+    fire_only_once = no
+    days_remove = 120
+    complete_effect = {
+    }
+    remove_effect = {
+      8 = {
+        add_building_construction = { 
+          type = bunker 
+          province = 6583
+          level = 1
+          instant_build = yes 
+        } 
+        add_building_construction = { 
+          type = bunker 
+          province = 9418
+          level = 1
+          instant_build = yes 
+        } 
+        add_building_construction = { 
+          type = bunker 
+          province = 11407
+          level = 1
+          instant_build = yes 
+        } 
+      }
+    }
+  }
+}

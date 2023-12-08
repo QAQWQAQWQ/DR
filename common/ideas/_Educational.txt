@@ -6,9 +6,9 @@ ideas = {
 
 		completely_illiterate = {
 			available = {
-				  hidden_trigger = {
+				 hidden_trigger = {
 					has_stability > 9 
-				  }
+				 }
 				}
 			on_add = {
 

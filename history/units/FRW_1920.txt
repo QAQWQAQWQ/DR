@@ -596,7 +596,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 27
 		}
-		location = 778
+		location = 6639
 		division_template = "Division d'Infanterie Alpine" 	# Frontline, best equipment
 		start_experience_factor = 0.3
 	}
@@ -605,7 +605,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 30
 		}
-		location = 9745
+		location = 6784
 		division_template = "Division d'Infanterie Alpine" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -616,7 +616,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 41
 		}
-		location = 3764
+		location = 3768
 		division_template = "Division Coloniale"	 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
@@ -630,7 +630,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 29
 		}
-		location = 6975
+		location = 3961
 		division_template = "Division d'Infanterie Alpine" 	# Frontline, best equipment
 		start_experience_factor = 0.3
 	}
@@ -660,7 +660,7 @@ units = {
 	# Division d'Inf. Forteresse -- Nice
 	division= {	
 		name = "Nice Div. d'Inf. de Forteresse"
-		location = 9909
+		location = 3928
 		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -756,6 +756,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.1
 		efficiency = 50
+		industrial_manufacturer = mio:FRW_beretta_organization
 	}
 
 	add_equipment_production = {
@@ -799,3 +800,4 @@ instant_effect = {
 	}
 
 ###################
+}

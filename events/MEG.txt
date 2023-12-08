@@ -5,6 +5,30 @@
 add_namespace = MEG
 
 news_event = {
+	id = MEG.0
+	title = MEG.0.t
+	desc = MEG.0.d
+	picture = GFX_VonEnchen
+	is_triggered_only = yes
+
+	option = {
+		name = MEG.0.a	
+		MEG={
+			start_civil_war = {
+				ruling_party = Reactionary
+				ideology = Reactionary
+				size = 0.8
+				only_own_territory = yes
+				capital = 392
+				states = { 
+					392 818
+				}
+			}
+	}
+}
+}
+
+news_event = {
 	id = MEG.1
 	title = MEG.1.t
 	desc = MEG.1.d

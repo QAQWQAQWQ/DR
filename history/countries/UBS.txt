@@ -32,7 +32,7 @@ recruit_character = UBS_Cannon
 recruit_character = UBS_George_Bolling_Lee
 recruit_character = UBS_Eugene_Debs
 
-
+recruit_character = UBS_Smedley_Darlington_Butler
 
 
 news_event={id = UBS.1 days=8}
@@ -77,6 +77,7 @@ country_event={id = MXG.1 days=95}
 add_ideas = {
 	UBS_Slavery
 	UBS_The_declining_north
+	UBS_Jim_Crow_laws
 }
 set_politics = {
 	ruling_party = democratic
@@ -87,7 +88,6 @@ set_politics = {
 add_ideas={
 #law
 Basic_industrialization 
-secondary_school
 Private_economy
 }
 set_popularities = {

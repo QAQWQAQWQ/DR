@@ -1,4 +1,34 @@
 characters={
+	FRW_Paul_Brousse={
+		name=FRW_Paul_Brousse
+		portraits={
+			civilian={
+				large="gfx/leaders/FRW/portrait_Paul_Brousse.tga"
+			}
+		}
+		country_leader={
+			ideology=Reform_socialism_type
+			desc = FRW_guesde_desc
+			traits={ } 
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	FRW_guesde={
+		name=FRW_guesde
+		portraits={
+			civilian={
+				large="gfx/leaders/FRW/portrait_guesde.tga"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			desc = FRW_guesde_desc
+			traits={ marxist_philosopher } 
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	FRW_Jean_Laurent={
 		name=FRW_Jean_Laurent
 		portraits={
@@ -9,7 +39,7 @@ characters={
 		country_leader={
 			ideology=marxism
 			desc = FRW_Jean_Laurent_desc
-			traits={ marxist_philosopher } 
+			traits={  } 
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -23,7 +53,7 @@ characters={
 		}
 		country_leader={
 			ideology=democratic_socialism_type
-			traits={ irredentist_academic }
+			traits={ }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -61,8 +91,29 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/FRW/Portrait_Leon_Blum.tga"
+				small="gfx/interface/ideas/idea_Leon_Blum.dds"
 			}
 		}
+
+		advisor={
+			slot = head_of_government
+			idea_token = FRW_Leon_Blum_H
+			allowed = {
+				original_tag = FRW
+			}
+			available = {
+				has_completed_focus = FRW_focus9
+			  }
+			traits = {
+				head_of_government
+				pragmatic_socialist
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
 		country_leader={
 			ideology=social_democrat_type
 			traits={ }
@@ -84,6 +135,20 @@ characters={
 			id=-1
 		}
 	}
+	FRW_Jean_Allemane={
+		name=FRW_Jean_Allemane
+		portraits={
+			civilian={
+				large="gfx/leaders/FRW/Portrait_Jean_Allemane.tga"
+			}
+		}
+		country_leader={
+			ideology=radical_socialist_type
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	FRW_Marcel_Cachin={
 		name=FRW_Marcel_Cachin
 		portraits={
@@ -94,6 +159,20 @@ characters={
 		country_leader={
 			ideology=radical_socialist_type
 			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	FRW_Sebastian_Fuhr={
+		name=FRW_Sebastian_Fuhr
+		portraits={
+			civilian={
+				large="gfx/leaders/FRW/Portrait_Sebastian_Fuhr.tga"
+			}
+		}
+		country_leader={
+			ideology=Anarchopedia_type
+			traits={ anarchist_zeal }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -117,10 +196,11 @@ characters={
 			idea_token = FRW_Alexandre_Jacob_head_of_government
 			allowed = {
 				original_tag = FRW
+				has_government = Anarchopedia
 			}
 			available = {
-				hidden_trigger = {
-				  has_stability > 9 
+				NOT={
+					has_country_flag = has_head_of_government
 				}
 			  }
 			traits = {
@@ -159,18 +239,33 @@ characters={
 		}
 		advisor={
 			slot = head_of_government
-			idea_token = FRW_Aristide_Briand_head_of_government
+			idea_token = FRW_Aristide_Briand_H
 			allowed = {
 				original_tag = FRW
 			}
 			available = {
-				hidden_trigger = {
-				  has_stability > 9 
-				}
+				has_completed_focus = FRW_focus5
 			  }
 			traits = {
 				head_of_government
 				tenacious_negotiator
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRW_Aristide_Briand_P
+			allowed = {
+				original_tag = FRW
+			}
+			available = {
+				has_completed_focus = FRW_focus17
+			  }
+			traits = {
+				udenrigsminister
 			}
 			cost = 50
 			ai_will_do = {
@@ -192,8 +287,8 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				hidden_trigger = {
-				  has_stability > 9 
+				NOT={
+					has_country_flag = has_head_of_government
 				}
 			  }
 			traits = {
@@ -421,12 +516,12 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = FRW_Boris_Souvarine_political_advisor
+			idea_token = FRW_Boris_Souvarine_P
 			allowed = {
 				original_tag = FRW
 			}
 			available = {
-				has_completed_focus = FRW_Second_Revolution
+has_completed_focus = FRW_focus14
 			  }
 			traits = {
 				revolutionary_author
@@ -446,7 +541,7 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = FRW_Edouard_Daladier_political_advisor
+			idea_token = FRW_Edouard_Daladier_P
 			allowed = {
 				original_tag = FRW
 			}
@@ -463,7 +558,7 @@ characters={
 		}
 		advisor={
 			slot = head_of_government
-			idea_token = FRW_Edouard_Daladier_head_of_government
+			idea_token = FRW_Edouard_Daladier_H
 			allowed = {
 				original_tag = FRW
 			}
@@ -491,12 +586,12 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = FRW_Andre_Le_Troquer_political_advisor
+			idea_token = FRW_Andre_Le_Troquer_P
 			allowed = {
 				original_tag = FRW
 			}
 			available = {
-				
+				has_completed_focus = FRW_focus15
 			  }
 			traits = {
 				economy_reformer
@@ -626,7 +721,83 @@ characters={
 				factor = 1.000
 			}
 		}		
+
+
 	}
+
+
+
+
+
+	FRW_Renaud_Jean={
+		name=FRW_Renaud_Jean
+		portraits={
+			civilian={
+				large="gfx/leaders/FRW/portrait_Renaud_Jean.tga"
+				small= "gfx/interface/ideas/idea_Renaud_Jean.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRW_Renaud_Jean_p
+			allowed = {
+				original_tag = FRW
+			}
+			available = {
+				has_completed_focus = FRW_focus13
+			  }
+			traits = {
+				protector_of_the_campesinos
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+
+	FRW_Comite_communal={
+		name=FRW_Comite_communal
+		portraits={
+			civilian={
+				large="gfx/leaders/FRW/portrait_Comite_communal.tga"
+				small= "gfx/interface/ideas/idea_Comite_communal.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = FRW_Comite_communal_H
+			allowed = {
+				original_tag = FRW
+			}
+			available = {
+				NOT={
+					has_country_flag = has_head_of_government
+				}
+			  }
+			traits = {
+				Comite_communal
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
 	FRW_Edouard_de_Castelnau={
 		name=FRW_Edouard_de_Castelnau
 		portraits={
@@ -661,6 +832,22 @@ characters={
 			logistics_skill=2
 		}
 	}
+	FRW_Gaston_Henri_Billotte={
+		name=FRW_Gaston_Henri_Billotte
+		portraits={
+			army={
+				large="gfx/leaders/FRW/Portrait_Gaston_Henri_Billotte.tga"
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
 	FRW_Marie_Eugene_Debeney={
 		name=FRW_Marie_Eugene_Debeney
 		portraits={
@@ -678,23 +865,151 @@ characters={
 			logistics_skill=2
 		}
 	}
-	FRW_Georges_Catroux={
-		name=FRW_Georges_Catroux
+
+
+
+
+
+
+
+
+
+
+	FRW_Maurice_Gustave_Gamelin={
+		name=FRW_Maurice_Gustave_Gamelin
 		portraits={
 			army={
-				large="gfx/leaders/FRW/Portrait_Georges_Catroux.tga"
-				small="gfx/interface/ideas/Portrait_Georges_Catroux.dds"
+				large="gfx/leaders/FRW/Portrait_Maurice_Gustave_Gamelin.tga"
+				small="gfx/interface/ideas/Portrait_Maurice_Gustave_Gamelin.dds"
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+
+
+	FRW_Gaston_Moch={
+		name=FRW_Gaston_Moch
+		portraits={
+			army={
+				large="gfx/leaders/FRW/Portrait_Gaston_Moch.tga"
+				small="gfx/interface/ideas/Portrait_Gaston_Moch.dds"
 			}
 		}
 		corps_commander={
 			traits={ skilled_staffer }
-			skill=2
-			attack_skill=2
+			skill=1
+			attack_skill=1
 			defense_skill=1
 			planning_skill=1
 			logistics_skill=2
 		}
 	}
+
+	FRW_Jacques_Sadoul={
+		name=FRW_Jacques_Sadoul
+		portraits={
+			army={
+				large="gfx/leaders/FRW/Portrait_Jacques_Sadoul.tga"
+				small="gfx/interface/ideas/Portrait_Jacques_Sadoul.dds"
+			}
+		}
+		corps_commander={
+			traits={ skilled_staffer }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	FRW_Adolphe_Messimy={
+		name=FRW_Adolphe_Messimy
+		portraits={
+			army={
+				large="gfx/leaders/FRW/Portrait_Adolphe_Messimy.tga"
+				small="gfx/interface/ideas/Portrait_Adolphe_Messimy.dds"
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+
+	FRW_Charles_de_Gaulle={
+		name=FRW_Charles_de_Gaulle
+		portraits={
+			army={
+				large="gfx/leaders/FRW/Portrait_Charles_de_Gaulle.tga"
+				small="gfx/interface/ideas/Portrait_Charles_de_Gaulle.dds"
+			}
+		}
+		corps_commander={
+			traits={ skilled_staffer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+
+
+	FRW_Adolphe_Messimy={
+		name=FRW_Adolphe_Messimy
+		portraits={
+			army={
+				large="gfx/leaders/FRW/Portrait_Adolphe_Messimy.tga"
+				small="gfx/interface/ideas/Portrait_Adolphe_Messimy.dds"
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+
+FRW_georges_louis_humbert={
+		name=FRW_georges_louis_humbert
+		portraits={
+			army={
+				large="gfx/leaders/FRW/Portrait_georges_louis_humbert.tga"
+				small="gfx/interface/ideas/Portrait_georges_louis_humbert.dds"
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
+
+
+
+
+
+
+
+
 	FRW_Maurice_Sarrell={
 		name=FRW_Maurice_Sarrell
 		portraits={
@@ -725,23 +1040,6 @@ characters={
 			skill=3
 			attack_skill=2
 			defense_skill=3
-			planning_skill=2
-			logistics_skill=2
-		}
-	}
-	FRW_Charles_Delestraint={
-		name=FRW_Charles_Delestraint
-		portraits={
-			army={
-				large="gfx/leaders/FRW/Portrait_Charles_Delestraint.tga"
-				small="gfx/interface/ideas/Portrait_Charles_Delestraint.dds"
-			}
-		}
-		corps_commander={
-			traits={ skilled_staffer }
-			skill=2
-			attack_skill=2
-			defense_skill=1
 			planning_skill=2
 			logistics_skill=2
 		}

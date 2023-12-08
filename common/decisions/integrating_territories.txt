@@ -1,0 +1,24 @@
+integrating_territories_decisions ={
+    meg_ters = {
+        state_target = yes
+        target_trigger = {
+               FROM = {
+                is_owned_by = ROOT
+                is_claimed_by = ROOT
+                NOT = {
+                    is_core_of = ROOT
+                }
+               }
+          }
+        cost = 150
+		days_remove = 300
+        fire_only_once = no
+        complete_effect = {
+        }
+		remove_effect = {
+            FROM = {
+                add_core_of = ROOT
+            }
+		}
+     }
+}

@@ -1,0 +1,186 @@
+#!gfx:interface\RS_icon.gfx
+#!gfx:interface\aus.gfx
+focus_tree = {
+	id = NPL
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NPL
+		}
+	}
+	default = no
+	focus = {
+		id = NPL_focus1
+		icon = GFX_goal_NPL_focus1
+		cost = 7.00
+		x = 10
+		y = 0
+		completion_reward={
+			add_to_variable = { gdp_inflation = 10 }
+	add_political_power = 150
+	add_war_support = 0.1
+		country_event = NPL.1
+}
+	}
+	focus = {
+		id = NPL_focus2
+		icon = GFX_goal_NPL_focus2
+		cost = 7.00
+		prerequisite = {
+			focus = NPL_focus1
+		}
+		x = 7
+		y = 1
+		completion_reward={
+			459={
+				add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = 1145
+			}
+			add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = 7132
+			}
+			}
+			460={add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = 12051
+			}}
+			
+			}
+	}
+	focus = {
+		id = NPL_focus3
+		icon = GFX_goal_NPL_focus3
+		cost = 7.00
+		prerequisite = {
+			focus = NPL_focus1
+		}
+		x = 10
+		y = 1
+completion_reward = {
+	RDN={
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 500
+			target = NPL
+		}
+		transfer_ship = {
+			prefer_name = "Krasni Kavkaz"
+			type = light_cruiser
+			target = NPL
+		}
+	}
+		add_ai_strategy = {
+		type = invade
+		id = NPL
+		value = 200
+	}
+	add_dynamic_modifier = {
+		modifier = RDN_amphibious_invasion
+	}
+	custom_effect_tooltip = RDN_amphibious_invasion1
+
+}
+	}
+	focus = {
+		id = NPL_focus4
+		icon = GFX_goal_NPL_focus4
+		cost = 7.00
+		prerequisite = {
+			focus = NPL_focus1
+		}
+		x = 13
+		y = 1
+completion_reward={
+	460 = {
+		create_unit = {
+		  division = "name = \"埃及远征旅\" division_template = \"法兰西当地卫队\" start_experience_factor = 0.4 " 
+			 owner = NPL
+			 prioritize_location = 7081
+		}
+  }
+}
+	}
+	focus = {
+		id = NPL_focus5
+		icon = GFX_goal_NPL_focus5
+		cost = 7.00
+		prerequisite = {
+			focus = NPL_focus2
+		}
+		prerequisite = {
+			focus = NPL_focus3
+		}
+		prerequisite = {
+			focus = NPL_focus4
+		}
+		x = 10
+		y = 2
+completion_reward={
+	create_wargoal = {
+		type = annex_everything
+		target = KOJ
+	}
+	create_wargoal = {
+		type = annex_everything
+		target = TRL
+	}
+	create_wargoal = {
+		type = annex_everything
+		target = TRT
+	}
+	}
+	}
+	focus = {
+		id = NPL_focus6
+		icon = GFX_goal_NPL_focus6
+		cost = 7.00
+		prerequisite = {
+			focus = NPL_focus5
+		}
+		available = {
+			KOJ={
+				exists = no
+			}
+			TRL={
+				exists = no
+			}
+			TRT={
+				exists = no
+			}
+		}
+		x = 10
+		y = 3
+completion_reward = {
+	country_event=NPL.2
+	
+	every_state = {
+		limit = {
+			is_core_of = KOJ
+		}
+		add_core_of = NPL
+	}
+	every_state = {
+		limit = {
+			is_core_of = TRL
+		}
+		add_core_of = NPL
+	}
+	every_state = {
+		limit = {
+			is_core_of = TRT
+		}
+		add_core_of = NPL
+	}
+	
+}
+	}
+}

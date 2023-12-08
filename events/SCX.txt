@@ -16,6 +16,182 @@ news_event = {
 		
 		}
 	option = {
+		SCX={
+			hidden_effect={every_controlled_state = { 
+				add_resource = {
+				type = grain
+				amount = -4
+			} 
+		 } }
+		}
 		name = SCX.1.a
+		605={
+			add_state_modifier = {
+				modifier = {
+					weekly_manpower = -1000 
+					days=30
+				}
 			}
+		}
+		753={
+			add_state_modifier = {
+				modifier = {
+					weekly_manpower = -1000
+					days=30
+				}
+			}
+		}
+		752={
+			add_state_modifier = {
+				modifier = {
+					weekly_manpower = -1000
+					days=30
+				}
+			}
+		}
+		751={
+			add_state_modifier = {
+				modifier = {
+					weekly_manpower = -1000
+					days=30
+				}
+			}
+		}
+			}
+	}
+
+	country_event= {
+		id = SCX.2
+		title = SCX.2.t
+		desc = SCX.2.d
+		picture = GFX_SCX_event2
+		is_triggered_only = yes
+		major = no
+		fire_only_once = yes
+		trigger = {
+			
+			}
+		option = {
+			name = SCX.2.a
+			leave_faction = BeiPing
+			WUP={start_border_war = {
+				change_state_after_war = yes
+				attacker = {
+					state = 750
+					num_provinces = 2
+					on_win = japan_border_conflict.2
+					on_lose = japan_border_conflict.3
+					on_cancel = japan_border_conflict.4
+				}
+					
+				defender = {
+					state = 620
+					num_provinces = 4
+					on_win = japan_border_conflict.3
+					on_lose = japan_border_conflict.2
+					on_cancel = japan_border_conflict.4
+				}
+			}
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 602
+					num_provinces = 2
+					on_win = japan_border_conflict.2
+					on_lose = japan_border_conflict.3
+					on_cancel = japan_border_conflict.4
+				}
+					
+				defender = {
+					state = 620
+					num_provinces = 4
+					on_win = japan_border_conflict.3
+					on_lose = japan_border_conflict.2
+					on_cancel = japan_border_conflict.4
+				}
+			}
+		}
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 605
+				num_provinces = 2
+				on_win = japan_border_conflict.2
+				on_lose = japan_border_conflict.3
+				on_cancel = japan_border_conflict.4
+			}
+				
+			defender = {
+				state = 620
+				num_provinces = 4
+				on_win = japan_border_conflict.3
+				on_lose = japan_border_conflict.2
+				on_cancel = japan_border_conflict.4
+			}
+		}	
+		}
+	}
+	country_event= {
+		id = SCX.3
+		title = SCX.3.t
+		desc = SCX.3.d
+		picture = GFX_SCX_event3
+		is_triggered_only = yes
+		major = no
+		fire_only_once = yes
+		trigger = {
+			
+			}
+		option = {
+			name = SCX.3.a
+			add_stability = 0.05
+			add_political_power = -50
+		}
+		option = {
+			name = SCX.3.b
+			add_stability = -0.1
+			add_political_power = 80
+		}
+	}
+	country_event= {
+		id = SCX.4
+		title = SCX.4.t
+		desc = SCX.4.d
+		picture = GFX_SCX_event4
+		is_triggered_only = yes
+		major = no
+		fire_only_once = yes
+		trigger = {
+			
+			}
+		option = {
+			name = SCX.4.a
+			605={create_unit = {
+				division = "name = \"四川边防旅\" division_template = \"混成旅\" start_experience_factor = 0.4"
+				owner = SCX
+				prioritize_location = 1395
+			}}
+			
+		}
+	}
+	country_event= {
+		id = SCX.5
+		title = SCX.5.t
+		desc = SCX.5.d
+		picture = GFX_SCX_event4
+		is_triggered_only = yes
+		major = no
+		fire_only_once = yes
+		trigger = {
+			
+			}
+		option = {
+			name = SCX.5.a
+			753={create_unit = {
+				division = "name = \"四川边防旅\" division_template = \"混成旅\" start_experience_factor = 0.4"
+				owner = SCX
+				prioritize_location = 4375
+			}}
+			
+		}
 	}

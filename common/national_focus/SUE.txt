@@ -1,0 +1,217 @@
+#!gfx:interface\RS_icon.gfx
+focus_tree = {
+	id = SUE
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SUE
+		}
+	}
+	default = no
+	focus = {
+		id = SUE_Instructions_Central_Committee
+		icon = GFX_goal_SUE_Instructions_Central_Committee
+		cost = 5.00
+		x = 16
+		y = 0
+completion_reward = {
+	add_ideas = SUE_Directive_Supreme_Council
+}
+	}
+	focus = {
+		id = SUE_Mobilization_urban_worker_militias
+		icon = GFX_goal_SUE_Mobilization_urban_worker_militias
+		cost = 5.00
+		prerequisite = {
+			focus = SUE_Instructions_Central_Committee
+		}
+		x = 13
+		y = 1
+ completion_reward = {
+	229={create_unit = {
+		division = "name = \"工人赤卫队\" division_template = \"守备旅\" start_experience_factor = 0.4"
+		owner = SUE
+		prioritize_location = 7661
+		}
+		create_unit = {
+			division = "name = \"工人赤卫队\" division_template = \"守备旅\" start_experience_factor = 0.4"
+			owner = SUE
+			prioritize_location = 7661
+			}
+	}
+	231={create_unit = {
+		division = "name = \"工人赤卫队\" division_template = \"守备旅\" start_experience_factor = 0.4"
+		owner = SUE
+		prioritize_location = 1599
+		}
+		create_unit = {
+			division = "name = \"工人赤卫队\" division_template = \"守备旅\" start_experience_factor = 0.4"
+			owner = SUE
+			prioritize_location = 1599
+			}
+	}
+	230={create_unit = {
+		division = "name = \"工人赤卫队\" division_template = \"守备旅\" start_experience_factor = 0.4"
+		owner = SUE
+		prioritize_location = 12450
+		}
+		create_unit = {
+			division = "name = \"工人赤卫队\" division_template = \"守备旅\" start_experience_factor = 0.4"
+			owner = SUE
+			prioritize_location = 12450
+			}
+		create_unit = {
+			division = "name = \"工人赤卫队\" division_template = \"守备旅\" start_experience_factor = 0.4"
+			owner = SUE
+			prioritize_location = 12450
+			}
+	}
+ }
+	}
+	focus = {
+		id = SUE_Emergency
+		icon = GFX_goal_SUE_Emergency
+		cost = 5.00
+		
+		prerequisite = {
+			focus = SUE_Instructions_Central_Committee
+		}
+		x = 16
+		y = 1
+completion_reward = { 
+	unlock_decision_category_tooltip = SHW_Food_requisition_operations
+}
+	}
+	focus = {
+		id = SUE_Gather_army_anyway
+		icon = GFX_goal_SUE_Gather_army_anyway
+		cost = 5.00
+		prerequisite = {
+			focus = SUE_Instructions_Central_Committee
+		}
+		x = 19
+		y = 1
+completion_reward = {
+	SHW={country_event = {id=SHW.9 days=1}}
+	custom_effect_tooltip = Gather_army_anyway
+}
+	}
+	focus = {
+		id = SUE_Wartime_communism
+		icon = GFX_goal_SUE_Wartime_communism
+		cost = 5.00
+		
+		prerequisite = {
+			focus = SUE_Mobilization_urban_worker_militias
+		}
+		prerequisite = {
+			focus = SUE_Emergency
+		}
+		prerequisite = {
+			focus = SUE_Gather_army_anyway
+		}
+		x = 16
+		y = 2
+completion_reward = {
+	add_ideas = SUE_Wartime_communism
+}
+	}
+	focus = {
+		id = SUE_Russian_Anti_Corruption_Committee
+		icon = GFX_goal_SUE_Russian_Anti_Corruption_Committee
+		cost = 5.00
+		prerequisite = {
+			focus = SUE_Wartime_communism
+		}
+		x = 16
+		y = 3
+completion_reward = {
+	create_intelligence_agency = yes
+	SUE={
+	add_ideas = SUE_Dzerzhinsky_P
+}
+}
+	}
+	focus = {
+		id = SUE_The_composition_the_party
+		icon = GFX_goal_SUE_The_composition_the_party
+		cost = 5.00
+		prerequisite = {
+			focus = SUE_Russian_Anti_Corruption_Committee
+		}
+		x = 16
+		y = 4
+completion_reward = {
+	country_event = {id=SUE.2}
+}
+	}
+	focus = {
+		id = SUE_The_Socialist_Revolutionary_Party_question
+		icon = GFX_goal_SUE_The_Socialist_Revolutionary_Party_question
+		cost = 5.00
+		prerequisite = {
+			focus = SUE_The_composition_the_party
+		}
+		x = 13
+		y = 5
+completion_reward = {
+	country_event = {id=SUE.6}
+}
+	}
+	focus = {
+		id = SUE_The_question_the_former_State_Duma
+		icon = GFX_goal_SUE_The_question_the_former_State_Duma
+		cost = 5.00
+		prerequisite = {
+			focus = SUE_The_composition_the_party
+		}
+		x = 19
+		y = 5
+completion_reward = {
+	country_event = {id=SUE.7}
+}
+	}
+	focus = {
+		id = SUE_Candidates_the_Central_Committee
+		icon = GFX_goal_SUE_Candidates_the_Central_Committee
+		cost = 5.00
+		prerequisite = {
+			focus = SUE_The_Socialist_Revolutionary_Party_question
+		}
+		prerequisite = {
+			focus = SUE_The_question_the_former_State_Duma
+		}
+		x = 16
+		y = 6
+completion_reward = {
+	country_event = {id=SUE.8 days=1}
+}
+	}
+	focus = {
+		id = SUE_Establishment_a_head_state
+		icon = GFX_goal_SUE_Establishment_a_head_state
+		cost = 5.00
+		prerequisite = {
+			focus = SUE_Candidates_the_Central_Committee
+		}
+		x = 16
+		y = 7
+completion_reward = {
+	country_event = {id=SUE.3}
+}
+	}
+	focus = {
+		id = SUE_Victory_the_workers
+		icon = GFX_goal_SUE_Victory_the_workers
+		cost = 5.00
+		prerequisite = {
+			focus = SUE_Establishment_a_head_state
+		}
+		x = 16
+		y = 8
+completion_reward = {
+	country_event = {id=SUE.5}
+}
+	}
+}

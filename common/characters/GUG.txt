@@ -19,9 +19,12 @@ characters={
 			civilian={
 				large="gfx/leaders/GUG/Portrait_ChenJiongMing.tga"
 			}
+			army={
+				large="gfx/leaders/GUG/Portrait_ChenJiongMing1.tga"
+			}
 		}
 		country_leader={
-			ideology=Right_nationalism_type
+			ideology=Left_populism_type
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1

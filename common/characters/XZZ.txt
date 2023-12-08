@@ -12,5 +12,53 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}		
+	}
+	XZZ_Tsarong_Dazang_Dradul={
+		name=XZZ_Tsarong_Dazang_Dradul
+		portraits={
+			civilian={
+				large="gfx/leaders/XZZ/portrait_Tsarong_Dazang_Dradül.tga"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+		}
+	}	
+	XZZ_khri_smon_nor_bu_dbang_rgyal={
+		name=XZZ_khri_smon_nor_bu_dbang_rgyal
+		portraits={
+			civilian={
+				large="gfx/leaders/XZZ/portrait_khri_smon_nor_bu_dbang_rgyal.tga"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}	
+	XZZ_byams_pa_bstan_dar={
+		name=XZZ_byams_pa_bstan_dar
+		portraits={
+			civilian={
+				large="gfx/leaders/XZZ/portrait_byams_pa_bstan_dar.tga"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+		}
+	}			
 	}

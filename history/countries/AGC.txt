@@ -52,7 +52,6 @@ recruit_character = AGC_Alsace_Geman_Condominium
 add_ideas={
 		#law
 		Private_economy
-		completely_illiterate
 		low_industrialization
 		Freedom_belief
 		Autonomous_police
@@ -63,6 +62,7 @@ add_ideas={
 
 Deutscher_Bund
 Deutscher_Zollverein
+AGC_Revolutionary_Front_Lorraine
 }
 set_politics = {
 	ruling_party = authoritarian

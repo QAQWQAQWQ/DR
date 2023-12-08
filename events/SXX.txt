@@ -1,0 +1,25 @@
+﻿###########################
+# SXX Events
+###########################
+
+add_namespace = SXX
+country_event = {
+	id = SXX.1
+	title = SXX.1.t
+	desc = SXX.1.d
+	picture = GFX_SCX_event2
+	is_triggered_only = yes
+	option = {
+		name = SXX.1.a
+	    set_politics = {
+			ruling_party = military_government
+		}
+		hidden_effect={set_popularities = {
+			military_government = 50
+			neutrality = 15
+			democratic= 30
+			communism = 5
+		}}
+		
+	    }
+	}

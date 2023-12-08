@@ -13,7 +13,9 @@ set_technology = {
 }
 
 recruit_character = XZZ_dalailama
-
+recruit_character = XZZ_Tsarong_Dazang_Dradul
+recruit_character = XZZ_khri_smon_nor_bu_dbang_rgyal
+recruit_character = XZZ_byams_pa_bstan_dar
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -53,7 +55,7 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no
 }
-
+add_ideas={TIB_Tibetan_Buddhism}
 set_popularities = {
 	democratic = 5
 	national_populist = 1

@@ -12,10 +12,16 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-
-recruit_character = SHW_Pavel_Milyukov
-recruit_character = SHW_NicholasII
 recruit_character = SHW_Kerensky
+recruit_character = SHW_Georgy_Lviv
+recruit_character = SHW_Pavel_Milyukov
+
+
+recruit_character = SHW_NicholasII
+recruit_character = SHW_Kirill_Vladimirovich
+recruit_character = SHW_Nikolai_Romanov
+
+
 recruit_character = SHW_Kolchak
 recruit_character = SHW_Nikolayevich_Wrangel
 recruit_character = SHW_LavrKornilov
@@ -26,7 +32,7 @@ recruit_character = SHW_Yuri_Danilov
 recruit_character = SHW_aleksey_brusilov
 recruit_character = SHW_Alexei_Kuropatkin
 recruit_character = SHW_Alexei_Eft
-recruit_character = SHW_Nikolai_Romanov
+
 recruit_character = SHW_Nikolai_Ruzsky
 recruit_character = SHW_Paul_Lenningkamp
 recruit_character = SHW_Denikin
@@ -38,6 +44,27 @@ recruit_character = SHW_Martov
 recruit_character = SHW_Tseretori
 recruit_character = SHW_Alexander_Konovalov
 recruit_character = SHW_Alexander_Guchkov
+recruit_character = SHW_Novitsky_Vasiliy_Fedorovich
+recruit_character = SHW_Alexander_Vladimirovich_Razvotsov
+recruit_character = SHW_Dmitry_Pavlovich_Parsky
+recruit_character = SHW_Nikolaj_Dmitrievich_Golicyn
+recruit_character = SHW_Grigori_Efimovich_Rasputin
+
+recruit_character = SHW_Kokovtsov
+recruit_character = SHW_Alexander_Vladimirovich_Protopopov
+recruit_character = SHW_Ivan_Godnev
+recruit_character = SHW_Nikolai_Pokrovsky
+recruit_character = SHW_Mikhail_Tereshchenko
+recruit_character = SHW_Andrey_Ivanovich_Shingarev
+recruit_character = SHW_Alexander_Grigorievich_Khrushchov
+recruit_character = SHW_Nikolai_Vissarionovich_Nekrasov
+recruit_character = SHW_Vassili_Shulgin
+recruit_character = SHW_Nikolai_Semenovich_Tsikhze
+recruit_character = SHW_Vladimir_Sukhomlinov
+recruit_character = SHW_Alexander_Ivanovich_Dubrovin
+recruit_character = SHW_Nikolai_Evgenievich_Markov
+recruit_character = SHW_Vladimir_Mitrofanovich_Purishkevich
+
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -70,7 +97,294 @@ recruit_character = SHW_Alexander_Guchkov
 		
 		
 	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		transport = 1
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		coastal_defense_ships = 1
+		mtg_transport = 1
+	}
+	add_dynamic_modifier = {
+		modifier = SHW_Corrupt_local_institutions
+	}
+set_variable = {
+	DY_SHW_temp_political_power=0.05
+}
+set_variable = {
+	DY_SHW_temp_production_speed_buildings_factor=-0.05
+}
+set_variable = {
+	DY_SHW_temp_line_change_production_efficiency_factor=-0.05
+}
+set_variable = {
+	DY_SHW_temp_local_intel_to_enemies=0.15
+}
+set_variable = {
+	DY_SHW_temp_local_resources_factor=-0.05
+}
 
+
+	create_equipment_variant = {			
+		name = "AG Class"
+		type = ship_hull_submarine_1
+		name_group = SOV_SS_SHCHUKA
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Series I Debakrist"			# represents Debakrist, B class, L-55 sub
+		type = ship_hull_submarine_1
+		name_group = SOV_SS_SHCHUKA
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Series II Leninets"				# represents Leninets series II, XI
+		type = ship_hull_submarine_2
+		name_group = SOV_SS_LENINETS
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_mine_layer_sub
+		}
+	}
+	create_equipment_variant = {
+		name = "Series V Shchuka"				# represents Shchuka series III, V, V-bis, V-bis-2
+		type = ship_hull_submarine_1
+		name_group = SOV_SS_SHCHUKA
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Series IX Srednyaya"				# 'Stalinets', series IX, IX-bis, IX-bis-2 and P-class
+		type = ship_hull_submarine_2
+		name_group = SOV_SS_STALINETS
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Series X Shchuka"				
+		type = ship_hull_submarine_1
+		name_group = SOV_SS_SHCHUKA
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = empty
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Orfey Class"						# represents Yakov Sverdlov, Frunze, and Orfey classes
+		type = ship_hull_light_1
+		name_group = SOV_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Fidonisi Class"						# represents Fidonisi and Izyaslav classes
+		type = ship_hull_light_1
+		name_group = SOV_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Leningrad & Minsk Class"				
+		type = ship_hull_light_2
+		name_group = SOV_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Bug Class"					# minelayer
+		type = ship_hull_light_1
+		name_group = SOV_MINELAYERS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_mine_layer_1
+		}
+	}
+	# Light Cruisers #
+	create_equipment_variant = {
+		name = "Komintern Class"
+		type = ship_hull_cruiser_1
+		name_group = SOV_MINELAYERS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			mid_1_custom_slot = ship_light_medium_battery_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_mine_layer_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Chervona Ukraina Class"
+		type = ship_hull_cruiser_1
+		name_group = SOV_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			mid_1_custom_slot = ship_light_medium_battery_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_mine_layer_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Marti Class"
+		type = ship_hull_cruiser_1				# minelayer
+		name_group = SOV_MINELAYERS_HISTORICAL
+		parent_version = 0
+		role_icon_index = 4
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_mine_layer_1
+		}
+	}
+	# Heavy Cruisers #
+		create_equipment_variant = {
+			name = "Kirov Class"
+			type = ship_hull_cruiser_2
+			name_group = SOV_CA_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_medium_battery_1
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_armor_slot = ship_armor_cruiser_1
+				mid_1_custom_slot = ship_airplane_launcher_1
+				mid_2_custom_slot = ship_anti_air_1
+				rear_1_custom_slot = ship_medium_battery_1
+			}
+		}
+	# Battleships #
+	create_equipment_variant = {
+		name = "Marat Class"					
+		type = ship_hull_heavy_1
+		name_group = SOV_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = ship_heavy_battery_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+create_intelligence_agency = {
+		name = "奥克瑞纳情报局"
+		icon = GFX_intelligence_agency_logo_SHW
+}
 set_politics = {
 	ruling_party = monarchy
 	last_election = "1918.11.11"
@@ -80,34 +394,66 @@ set_politics = {
 puppet = FEL
 puppet = AFH
 puppet = PBL
-news_event = { id = SHW.1 days = 425 }
+puppet = ESI
+puppet = HLS
+
+country_event = { id = SHW.27 days = 64 }
+
 set_popularities = {
 	national_populist = 6
 	monarchy = 59
-	Reform_socialism = 13
-	social_democrat = 5
+	Reform_socialism = 3
+	social_democrat = 6
 	democratic = 6
-	authoritarian = 11
+	neutrality = 20
 }
-set_variable = { SHW_Loyalty = 100 }
-clamp_variable = {
-	var = SHW_Loyalty
-	min = 0
-	max = 100
+set_variable = { SHW_Loyalty = 85 }
+
+
+
+set_power_balance = {
+    id = SHW_Court_struggles_balance
+    left_side = Court_struggles_left_side
+    right_side = Court_struggles_right_side
 }
+add_power_balance_value = {
+    id = SHW_Court_struggles_balance
+    value = -0.25
+}
+
+
+		set_variable = { parliament_seat_array^1 = Socialist_Revolutionary_Partyindependent_socialist }
+		set_variable = { parliament_seat_array^2 = October_Party }
+		set_variable = { parliament_seat_array^3 = Cadet_Democratic_Party }
+		set_variable = { parliament_seat_array^4 = Progressive_Party }
+		set_variable = { parliament_seat_array^5 = Social_Democratic_Labour_Party }
+
+
 
 add_ideas={
 SHW_Corrupt_army
 SHW_Backward_railways
 SHW_Russian_serfs
 SHW_Stolypin_legacy
+SHW_February_Revolution
+SHW_Corrupt_local_institutions
 #law
+Theocratic_state
+Smallholder_economy
 Deflection_employer
-Control_media
+State_media
 Patriarchy_supreme
 Weak_investments
 Private_economy
-State_control
+Special_police
 low_industrialization
 completely_illiterate
+#AD
+SHW_Nikolaj_Dmitrievich_Golicyn_H
+SHW_Grigori_Efimovich_Rasputin_P
+SHW_Alexander_Vladimirovich_Protopopov_P
+SHW_Pavel_Milyukov_P
+SHW_Kokovtsov_P
+SHW_Ivan_Godnev_P
+SHW_Nikolai_Pokrovsky_P
 }

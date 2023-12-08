@@ -1,0 +1,33 @@
+################ how the table made ###############
+on_actions = {
+    #################### initialition ##################
+	on_startup = {
+		effect = {
+			set_variable = { global.total_gdp = 0 }
+			every_country = {
+				set_variable = { capital_reserves_qwq = 0}
+				set_variable = { factory_tax_rate = 0.2 }
+				set_variable = { population_tax_rate = 0.1 }
+				set_variable = { resource_tax_rate = 0.25 }
+				set_variable = { factory_gdp_coefficient = 1 }
+				set_variable = { population_gdp_coefficient = 1 }
+				set_variable = { resource_gdp_coefficient = 1 }
+
+                upd_gdp = yes
+			}
+			every_country = {
+				upd_gdp_proportion = yes
+			}
+		}
+	}
+	on_monthly = {
+		effect = {
+            upd_gdp = yes
+		}
+	}
+	on_monthly = {
+		effect = {
+			upd_gdp_proportion = yes
+		}
+	}
+}

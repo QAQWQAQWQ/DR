@@ -52,7 +52,11 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no
 }
-
+add_ideas = {
+	MXG_Peasant_revolution
+	MXG_Radical_land_reform
+	MXG_Political_strife
+}
 set_popularities = {
 	democratic = 10
 	Anarchopedia = 10

@@ -163,6 +163,7 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
+			idea_token = ZHX_Kong_XiangXi_P
 			allowed = {
 				original_tag = ZHX
 			}
@@ -186,6 +187,7 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
+			idea_token = ZHX_CaoRuLin_P
 			allowed = {
 				original_tag = ZHX
 			}
@@ -209,6 +211,7 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
+			idea_token = ZHX_Zhang_Zongxiang_P
 			allowed = {
 				original_tag = ZHX
 			}
@@ -232,6 +235,7 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
+			idea_token = ZHX_LuZongyu_P
 			allowed = {
 				original_tag = ZHX
 			}
@@ -239,6 +243,142 @@ characters={
 			}
 			traits = {
 				the_banker
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.250
+			}
+		}
+	}
+	ZHX_WangYiTang={
+		name=ZHX_WangYiTang
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_WangYiTang.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ZHX_WangYiTang_P
+			allowed = {
+				original_tag = ZHX
+			}
+			available = {
+			}
+			traits = {
+				political_chameleon
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.250
+			}
+		}
+	}
+	ZHX_ZhangJian={
+		name=ZHX_ZhangJian
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_ZhangJian.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ZHX_ZhangJian_P
+			allowed = {
+				original_tag = ZHX
+			}
+			available = {
+			}
+			traits = {
+				industry_reformer
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.250
+			}
+		}
+	}
+	ZHX_CaiYuanPei={
+		name=ZHX_CaiYuanPei
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_CaiYuanPei.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ZHX_CaiYuanPei_P
+			allowed = {
+				original_tag = ZHX
+			}
+			available = {
+			}
+			traits = {
+				education_reformer
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.250
+			}
+		}
+	}
+	ZHX_GuWeiJun={
+		name=ZHX_GuWeiJun
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_GuWeiJun.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ZHX_GuWeiJun_P
+			allowed = {
+				original_tag = ZHX
+			}
+			available = {
+			}
+			traits = {
+				Minister_Affairs
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.250
+			}
+		}
+	}
+	ZHX_LiangQiChao={
+		name=ZHX_LiangQiChao
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_LiangQiChao.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = ZHX_LiangQiChao_H
+			allowed = {
+				original_tag = ZHX
+			}
+			available = {
+			}
+			traits = {
+				head_of_government
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 0.250
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ZHX_LiangQiChao_P
+			allowed = {
+				original_tag = ZHX
+			}
+			available = {
+			}
+			traits = {
+				democratic_reformer
 			}
 			cost = 100
 			ai_will_do = {
@@ -255,6 +395,37 @@ characters={
 			}
 		}
 		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = ZHX_CaoKung_H
+			allowed = {
+				original_tag = ZHX
+			}
+			available = {
+			}
+			traits = {
+				head_of_government
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 0.250
+			}
+		}
+	}
+	ZHX_DuanQiRui={
+		name=ZHX_DuanQiRui
+		portraits={
+			army={
+				large="gfx/leaders/ZHX/portrait_DuanQiRui.tga"
+				small="gfx/interface/ideas/idea_DuanQiRui.dds"
+			}
+		}
+		country_leader={
 			ideology=military_government
 			traits={  }
 			expire="1965.1.1.1"
@@ -262,6 +433,7 @@ characters={
 		}
 		advisor={
 			slot = head_of_government
+			idea_token = ZHX_DuanQiRui_H
 			allowed = {
 				original_tag = ZHX
 			}

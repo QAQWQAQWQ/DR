@@ -1,3 +1,4 @@
+#!gfx:interface\RS_icon.gfx
 focus_tree = {
 	id = WWS
 	country = {
@@ -15,7 +16,7 @@ focus_tree = {
 		x = 22
 		y = 0
 completion_reward = {
-	add_political_power = 200
+	add_political_power = 100
 	country_event={id=WWS.1 days=1}
 }
 	}
@@ -44,11 +45,10 @@ add_ideas = WWS_Songun_Policy
 		}
 		x = 19
 		y = 2
-completion_reward={
-	add_political_power =300
-	custom_effect_tooltip = Bismarck_last_policy
-	
-}
+		completion_reward={
+			add_political_power=100
+			add_war_support = 0.1
+		}
 	}
 	focus = {
 		id = WWS_Unite_German_nation
@@ -66,9 +66,47 @@ completion_reward={
 		}
 		x = 16
 		y = 5
-completion_reward={
-	unlock_decision_tooltip = WWS_Woo_other_states
-}
+		completion_reward={
+			add_political_power=50
+			add_war_support = 0.05
+        	add_stability = 0.05
+			add_opinion_modifier = {
+				target = DOM
+				modifier = Both_born_the_same_root
+			}
+			add_opinion_modifier = {
+				target = DOH
+				modifier = Both_born_the_same_root
+			}
+			add_opinion_modifier = {
+				target = DOL
+				modifier = Both_born_the_same_root
+			}
+			add_opinion_modifier = {
+				target = DHD
+				modifier = Both_born_the_same_root
+			}
+			add_opinion_modifier = {
+				target = DOS
+				modifier = Both_born_the_same_root
+			}
+			add_opinion_modifier = {
+				target = DOF
+				modifier = Both_born_the_same_root
+			}
+			add_opinion_modifier = {
+				target = DOB
+				modifier = Both_born_the_same_root
+			}
+			add_opinion_modifier = {
+				target = DOA
+				modifier = Both_born_the_same_root
+			}
+			add_opinion_modifier = {
+				target = DON
+				modifier = Both_born_the_same_root
+			}
+		}
 	}
 	focus = {
 		id = WWS_Reinstatement_anti_socialist_laws
@@ -80,6 +118,7 @@ completion_reward={
 		x = 20
 		y = 3
 completion_reward={
+			add_political_power=80
 	country_event={id=WWS.2 days=1}
 }
 	}
@@ -93,14 +132,33 @@ completion_reward={
 		}
 		x = 19
 		y = 4
-completion_reward={
-	add_political_power=100
-	add_popularity = {
-		ideology = national_populist
-		popularity = 0.1
-	}
-	custom_effect_tooltip=Incite_national_sentiment
-}
+		completion_reward={
+			add_political_power=80
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.1
+			}
+			every_country = {
+				limit = {
+				OR = {
+					original_tag = LSB
+					original_tag = DHD
+					original_tag = DON
+					original_tag = DOF
+					original_tag = DOB
+					original_tag = DOL
+					original_tag = DOH
+					original_tag = DOA
+					original_tag = DOM
+					original_tag = DOR
+					original_tag = DOS
+				}
+				}
+            	set_variable = { ger_con_det = 10 }
+				gercon_add_ger_sup = yes
+			}
+			custom_effect_tooltip=Incite_national_sentiment
+		}
 	}
 	focus = {
 		id = WWS_Wooing_German_state
@@ -112,44 +170,24 @@ completion_reward={
 		}
 		x = 16
 		y = 4
-completion_reward={
-	add_opinion_modifier = {
-		target = DOM
-		modifier = Both_born_the_same_root
-	}
-	add_opinion_modifier = {
-		target = DOH
-		modifier = Both_born_the_same_root
-	}
-	add_opinion_modifier = {
-		target = DOL
-		modifier = Both_born_the_same_root
-	}
-	add_opinion_modifier = {
-		target = DHD
-		modifier = Both_born_the_same_root
-	}
-	add_opinion_modifier = {
-		target = DOS
-		modifier = Both_born_the_same_root
-	}
-	add_opinion_modifier = {
-		target = DOF
-		modifier = Both_born_the_same_root
-	}
-	add_opinion_modifier = {
-		target = DOB
-		modifier = Both_born_the_same_root
-	}
-	add_opinion_modifier = {
-		target = DOA
-		modifier = Both_born_the_same_root
-	}
-	add_opinion_modifier = {
-		target = DON
-		modifier = Both_born_the_same_root
-	}
-}
+		completion_reward={
+			every_country = {
+				limit = {
+				OR = {
+					original_tag = LSB
+					original_tag = DHD
+					original_tag = DON
+					original_tag = DOB
+					original_tag = DOL
+					original_tag = DOH
+					original_tag = DOA
+					original_tag = DOM
+				}
+				}
+            	set_variable = { ger_con_det = 5 }
+				gercon_add_pre_sup = yes
+			}
+		}
 	}
 	focus = {
 		id = WWS_Bismarck_welfare_system
@@ -178,21 +216,23 @@ completion_reward={
 		}
 		x = 17
 		y = 3
-completion_reward={
-	leave_faction = yes 
-	create_faction = North_German_Confederation
-	remove_ideas = Deutscher_Bund
-	remove_ideas = Deutscher_Zollverein
-	DOM={country_event={id=WWS.4 days=1}}
-	DOH={country_event={id=WWS.4 days=1}}  
-	DOL={country_event={id=WWS.4 days=1}}
-	DHD={country_event={id=WWS.4 days=1}}
-	DOS={country_event={id=WWS.4 days=1}}
-	DOF={country_event={id=WWS.4 days=1}}
-	DOB={country_event={id=WWS.4 days=1}}
-	DOA={country_event={id=WWS.4 days=1}}
-	DON={country_event={id=WWS.4 days=1}}
-} 
+		completion_reward={
+			WWS = { country_event = sax_problem.6 }
+			every_country = {
+				limit = {
+				OR = {
+					original_tag = DOL
+					original_tag = DOH
+					original_tag = DOA
+					original_tag = DOM
+				}
+				}
+            	set_variable = { ger_con_det = 15 }
+				gercon_add_pre_sup = yes
+			}
+			gercon_upd_pbv_var = yes
+			gercon_clamp_vars = yes
+		} 
 	}
 	focus = {
 		id = WWS_Brotherly_wars
@@ -206,23 +246,17 @@ completion_reward={
 			has_army_manpower = {
 				size > 300000
 			}
-				num_faction_members > 1
+		}
+		bypass = {
+			german_war_has_end = yes
 		}
 		x = 16
 		y = 6
-completion_reward={
-	hidden_effect = {
-		WWS={
-			country_event = {id=WWS.11}
+		completion_reward={
+			WWS={
+				country_event = { id=WWS.11 }
+			}
 		}
-	}
-	WWS={
-		declare_war_on = {
-		target = AOX
-		type = annex_everything
-	}
-}
-}
 	}
 	focus = {
 		id = WWS_Master_Great_Germany
@@ -237,8 +271,8 @@ completion_reward={
 		x = 25
 		y = 2
 		completion_reward={
-	add_political_power=300
-	custom_effect_tooltip = Master_Great_Germany
+			add_political_power=200
+			# custom_effect_tooltip = Master_Great_Germany
 		}
 	}
 	focus = {
@@ -251,10 +285,26 @@ completion_reward={
 		x = 24
 		y = 3
 		completion_reward={
-	swap_ideas = {
-		remove_idea = Deutscher_Zollverein
-		add_idea = Deutscher_Zollverein1
-	}
+			swap_ideas = {
+				remove_idea = Deutscher_Zollverein
+				add_idea = Deutscher_Zollverein1
+			}
+			every_country = {
+				limit = {
+				OR = {
+					original_tag = LSB
+					original_tag = DHD
+					original_tag = DON
+					original_tag = DOB
+					original_tag = DOL
+					original_tag = DOH
+					original_tag = DOA
+					original_tag = DOM
+				}
+				}
+            	set_variable = { ger_con_det = 5 }
+				gercon_add_pre_sup = yes
+			}
 		}
 	}
 	focus = {
@@ -267,6 +317,7 @@ completion_reward={
 		x = 27
 		y = 3
 		completion_reward={
+			add_political_power=40
 			add_opinion_modifier = {
 				target = AOX
 				modifier = Love_like_brotherhood
@@ -284,7 +335,7 @@ completion_reward={
 		x = 25
 		y = 4
 		completion_reward={
-	      country_event={id=WWS.10}
+			country_event={id=WWS.10}
 		}
 	}
 	focus = {
@@ -298,7 +349,25 @@ completion_reward={
 		x = 28
 		y = 4
 		completion_reward={
-	unlock_decision_tooltip = WWS_Woo_others_states
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = LSB
+						original_tag = DHD
+						original_tag = DON
+						original_tag = DOB
+						original_tag = DOL
+						original_tag = DOH
+						original_tag = DOA
+						original_tag = DOF
+						original_tag = DON
+						original_tag = DOS
+						original_tag = DOM
+					}
+				}
+            	set_variable = { ger_con_det = 5 }
+				gercon_add_pre_sup = yes
+			}
 		}
 	}
 	focus = {
@@ -312,8 +381,29 @@ completion_reward={
 		x = 31
 		y = 4
 		completion_reward={
-	country_event={ id=WWS.8}
-	}
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = LSB
+						original_tag = DHD
+						original_tag = DON
+						original_tag = DOF
+						original_tag = DOB
+						original_tag = DOL
+						original_tag = DOH
+						original_tag = DOA
+						original_tag = DOM
+						original_tag = DOR
+						original_tag = DOS
+					}
+				}
+				country_event={ id=WWS.8}
+            	set_variable = { ger_con_det = 5 }
+				gercon_add_ger_sup = yes
+            	set_variable = { ger_con_det = 5 }
+				gercon_add_pre_sup = yes
+			}
+		}
 }
 	focus = {
 		id = WWS_future_Federation
@@ -329,32 +419,42 @@ completion_reward={
 			focus = WWS_Confederation_speak
 		}
 		available={
-			custom_trigger_tooltip = {
-				tooltip = Prussian_support_tt	
 			
+        custom_trigger_tooltip = { 
+            tooltip = AGC_pre_sup_tool
 			check_variable = {
-				var = Prussian_support
-				value = 90
-				compare = greater_than_or_equals
+				AGC.pre_support > 70
 			}
 		}
-		custom_trigger_tooltip = {
-			tooltip = Austria_support_tt	
-		
-			check_variable = {
-				var = Austria_support
-				value = 60
-				compare = less_than_or_equals
-			}
-	}
-			
-		
 		}
 		x = 28
 		y = 5
 		completion_reward={
-	         add_political_power=300
-			 country_event={id=WWS.9}
+	        add_political_power=100
+			country_event={id=WWS.9}
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = LSB
+						original_tag = DHD
+						original_tag = DON
+						original_tag = DOF
+						original_tag = DOB
+						original_tag = DOL
+						original_tag = DOH
+						original_tag = DOA
+						original_tag = DOM
+						original_tag = DOR
+						original_tag = DOS
+					}
+					custom_trigger_tooltip = { 
+						tooltip = we_get_more_sup 
+						check_variable = { pre_support > aus_support }
+					}
+				}
+            	set_variable = { ger_con_det = 10 }
+				gercon_add_pre_sup = yes
+			}
 		}
 	}
 	focus = {
@@ -367,32 +467,15 @@ completion_reward={
 		
 		x = 28
 		y = 6
+		available = {
+			custom_trigger_tooltip = { 
+				tooltip = ger_has_uni_tool 
+      			check_variable = { global.ger_con_has_uni = 1 }
+			}
+		}
 		completion_reward={
-			set_faction_name = Geater_GER
-			DMW={
-				leave_faction = yes
-			}
-			AOX={
-				leave_faction = yes
-			}
-			BXM={
-				leave_faction = yes
-			}
-			KGL={
-				leave_faction = yes
-			}
-			VCT={
-				leave_faction = yes
-			}
-			DMT={
-				leave_faction = yes
-			}
-			KLD={
-				leave_faction = yes
-			}
-			KOH={
-				leave_faction = yes
-			}
+        	add_stability = 0.2
+			add_war_support = 0.2
 		}
 	}
 	focus = {
@@ -490,604 +573,552 @@ completion_reward={
 		}
 	}
 	focus = {
-		id = WWS_Reichsbank
-		icon = GFX_goal_WWS_Reichsbank
+		id = WWS_Foucs1
+		icon = GFX_goal_WWS_Foucs1
 		cost = 7.00
+		prerequisite = {
+		}
 		
 		x = 41
 		y = 0
+		available = {
+		
+		}
 		completion_reward={
-			add_political_power=200
+			add_command_power = 100
 		}
 	}
 	focus = {
-		id = WWS_Central_Bank_Prussia
-		icon = GFX_goal_WWS_Central_Bank_Prussia
+		id = WWS_Foucs2
+		icon = GFX_goal_WWS_Foucs2
 		cost = 7.00
 		prerequisite = {
-			focus = WWS_Reichsbank
+			focus = WWS_Foucs1
 		}
+		
+		x = 37
+		y = 1
 		available = {
-			
-			OR={
-				WWS={
-					is_faction_leader = yes
-				}
-				WWS={
-					has_global_flag = German_unification_ttt
-				}
+		
+		}
+		completion_reward={
+			army_experience = 50
+			add_dynamic_modifier = {
+				modifier = WWS_Army_command
 			}
 		}
+	}
+	focus = {
+		id = WWS_Foucs3
+		icon = GFX_goal_WWS_Foucs3
+		cost = 7.00
+		prerequisite = {
+			focus = WWS_Foucs1
+		}
+		
 		x = 41
 		y = 1
+		available = {
+		
+		}
 		completion_reward={
-			custom_effect_tooltip = Bank_Prussia
+			navy_experience = 50
+			add_dynamic_modifier = {
+				modifier = WWS_Navel_command
+			}
 		}
 	}
 	focus = {
-		id = WWS_Military_weapon_design
-		icon = GFX_goal_WWS_Military_weapon_design
+		id = WWS_Foucs4
+		icon = GFX_goal_WWS_Foucs4
 		cost = 7.00
+		prerequisite = {
+			focus = WWS_Foucs1
+		}
+		
+		x = 45
+		y = 1
 		available = {
-			
-			OR={
-				WWS={
-					is_faction_leader = yes
-				}
-				WWS={
-					has_global_flag = German_unification_ttt
-				}
+		
+		}
+		completion_reward={
+			air_experience = 50
+			add_dynamic_modifier = {
+				modifier = WWS_Air_command
 			}
 		}
+	}
+	focus = {
+		id = WWS_Foucs5
+		icon = GFX_goal_WWS_Foucs5
+		cost = 7.00
 		prerequisite = {
-			focus = WWS_Reichsbank
+			focus = WWS_Foucs1
 		}
-		x = 36
-		y = 1
+		
+		x = 38
+		y = 2
+		available = {
+		
+		}
 		completion_reward={
 			add_dynamic_modifier = {
-				modifier = Armament_design
+				modifier = WWS_Young_Officer
 			}
 		}
 	}
 	focus = {
-		id = WWS_Mauser_weapons
-		icon = GFX_goal_WWS_Mauser_weapons
+		id = WWS_Foucs6
+		icon = GFX_goal_WWS_Foucs6
 		cost = 7.00
 		prerequisite = {
-			focus = WWS_Military_weapon_design
+			focus = WWS_Foucs1
 		}
-		x = 35
+		
+		x = 44
 		y = 2
+		available = {
+		
+		}
 		completion_reward={
-			add_ideas=Mauser_Company
+			add_dynamic_modifier = {
+				modifier = WWS_Career_officers
+			}
 		}
 	}
 	focus = {
-		id = WWS_Infantry_weapon_upgrades
-		icon = GFX_goal_WWS_Infantry_weapon_upgrades
-		cost = 7.00 
+		id = WWS_Foucs7
+		icon = GFX_goal_WWS_Foucs7
+		cost = 7.00
 		prerequisite = {
-			focus = WWS_Mauser_weapons
+			focus = WWS_Foucs3
+		}
+		
+		x = 40
+		y = 2
+		available = {
+		
+		}
+		completion_reward={
+			add_dynamic_modifier = {
+				modifier = WWS_Ocean_going_navy
+			}
+		}
+	}
+	focus = {
+		id = WWS_Foucs8
+		icon = GFX_goal_WWS_Foucs8
+		cost = 7.00
+		prerequisite = {
+			focus = WWS_Foucs3
+		}
+		
+		x = 42
+		y = 2
+		available = {
+		
+		}
+		completion_reward={
+			add_dynamic_modifier = {
+				modifier = WWS_Inshore_Navy
+			}
+		}
+	}
+	focus = {
+		id = WWS_Foucs9
+		icon = GFX_goal_WWS_Foucs9
+		cost = 7.00
+		prerequisite = {
+			focus = WWS_Foucs2
+		}
+		
+		x = 37
+		y = 3
+		available = {
+		
+		}
+		completion_reward={
+			add_dynamic_modifier = {
+				modifier = WWS_Infantry_tactics
+			}
+		}
+	}
+	focus = {
+		id = WWS_Foucs10
+		icon = GFX_goal_WWS_Foucs10
+		cost = 7.00
+		prerequisite = {
+			focus = WWS_Foucs4
+		}
+		
+		x = 45
+		y = 3
+		available = {
+		
+		}
+		completion_reward={
+			air_experience = 30
+			add_dynamic_modifier = {
+				modifier = WWS_Flying_Club
+			}
+		}
+	}
+	focus = {
+		id = WWS_Foucs11
+		icon = GFX_goal_WWS_Foucs11
+		cost = 7.00
+		prerequisite = {
+			focus = WWS_Foucs5
+		}
+		prerequisite = {
+			focus = WWS_Foucs6
+		}
+		x = 41
+		y = 4
+		available = {
+		
+		}
+		completion_reward={
+			army_experience = 100
+			navy_experience = 100
+			air_experience = 100
+			WWS_Hindenburg = {
+					promote_leader = yes
+			}
+			add_trait = {
+				character = WWS_Ludendorff
+				trait = field_of_gar
+		   }
+		}
+	}
+	focus = {
+		id = WWS_Foucs12
+		icon = GFX_goal_WWS_Foucs12
+		cost = 7.00
+		prerequisite = {
+			focus = WWS_Foucs9
 		}
 		x = 35
-		y = 3
+		y = 4
+		available = {
+		
+		}
+		completion_reward={
+			add_dynamic_modifier = {
+				modifier = WWS_Assault_tactics
+			}
+			
+		}
+	}
+	focus = {
+		id = WWS_Foucs13
+		icon = GFX_goal_WWS_Foucs13
+		cost = 7.00
+		prerequisite = {
+			focus = WWS_Foucs9
+		}
+		x = 39
+		y = 4
+		available = {
+		
+		}
 		completion_reward={
 			add_tech_bonus = {
 				bonus = 0.5
+				uses = 2
+				category = cat_mobile_warfare
+			}
+		}
+	}
+	focus = {
+		id = WWS_Foucs14
+		icon = GFX_goal_WWS_Foucs14
+		cost = 7.00
+		prerequisite = {
+			focus = WWS_Foucs10
+		}
+		x = 43
+		y = 4
+		available = {
+		
+		}
+		completion_reward={
+			add_tech_bonus = {
+				bonus = 0.8
 				uses = 1
-				category = infantry_weapons
+				category = light_air
 			}
 		}
 	}
 	focus = {
-		id = WWS_manufacturers
-		icon = GFX_goal_WWS_manufacturers
+		id = WWS_Foucs15
+		icon = GFX_goal_WWS_Foucs15
 		cost = 7.00
 		prerequisite = {
-			focus = WWS_Military_weapon_design
-		}
-		x = 37
-		y = 2
-		completion_reward={
-			country_event={id=WWS.12}
-		}
-	}
-	focus = {
-		id = WWS_Tank_factory
-		icon = GFX_goal_WWS_Tank_factory
-		cost = 7.00
-		prerequisite = {
-			focus = WWS_manufacturers
-		}
-		x = 37
-		y = 3
-		completion_reward={
-			country_event={id=WWS.14}
-		}
-	}
-	focus = {
-		id = WWS_Krupp
-		icon = GFX_goal_WWS_Krupp
-		cost = 7.00
-		prerequisite = {
-			focus = WWS_Tank_factory
-		}
-		mutually_exclusive = {
-			focus = WWS_Henschel
-		}
-		mutually_exclusive = {
-			focus = WWS_Porsche
-		}
-		x = 35
-		y = 4
-		completion_reward={
-			add_ideas = Krupp_Company
-		}
-	}
-	focus = {
-		id = WWS_Henschel
-		icon = GFX_goal_WWS_Henschel
-		cost = 7.00
-		prerequisite = {
-			focus = WWS_Tank_factory
-		}
-		mutually_exclusive = {
-			focus = WWS_Krupp
-		}
-		mutually_exclusive = {
-			focus = WWS_Porsche
-		}
-		x = 37
-		y = 4
-		completion_reward={
-			add_ideas = Henschel_Company
-		}
-	}
-	focus = {
-		id = WWS_Porsche
-		icon = GFX_goal_WWS_Porsche
-		cost = 7.00
-		prerequisite = {
-			focus = WWS_Tank_factory
-		}
-		mutually_exclusive = {
-			focus = WWS_Henschel
-		}
-		mutually_exclusive = {
-			focus = WWS_Krupp
-		}
-		
-		x = 39
-		y = 4
-		completion_reward={
-			add_ideas = Porsche_Company
-		}
-	}
-	focus = {
-		id = WWS_Investment_plan
-		icon = GFX_goal_WWS_Investment_plan
-		cost = 7.00
-		prerequisite = {
-			focus = WWS_Issuance_gold_marks
-		}
-		x = 41
-		y = 5
-		completion_reward={
-			add_political_power = 500
-			custom_effect_tooltip = Investment_plan
-		}
-	}
-	focus = {
-		id = WWS_Militarized_society
-		icon = GFX_goal_WWS_Reichsbank
-		cost = 7.00
-		prerequisite = {
-			focus = WWS_Issuance_gold_marks
-		}
-		x = 36
-		y = 5
-		completion_reward={
-			
-		}
-	}
-	focus = {
-		id = WWS_Militarized_society
-		icon = GFX_goal_WWS_Militarized_society
-		cost = 7.00
-		prerequisite = {
-			focus = WWS_Issuance_gold_marks
-		}
-		x = 36
-		y = 5
-		completion_reward={
-			add_war_support = 0.15
-			swap_ideas = {
-				remove_idea = volunteer_only
-				add_idea = service_by_requirement
-			}
-		}
-	}
-	focus = {
-		id = WWS_Fortified_cities
-		icon = GFX_goal_WWS_Fortified_cities
-		cost = 7.00
-		prerequisite = {
-			focus = WWS_Militarized_society
-		}
-		x = 37
-		y = 6
-		completion_reward={
-		28={
-			add_building_construction = {
-				type = bunker
-				level = 5
-				instant_build = yes
-			}
-		}
-		8={
-			add_building_construction = {
-				type = bunker
-				level = 5
-				instant_build = yes
-			}
-		}
-		51={
-			add_building_construction = {
-				type = bunker
-				level = 5
-				instant_build = yes
-			}
-		}
-		57={
-			add_building_construction = {
-				type = bunker
-				level = 5
-				instant_build = yes
-			}
-		}
-		56={
-			add_building_construction = {
-				type = bunker
-				level = 5
-				instant_build = yes
-			}
-		}
-		}
-	}
-	focus = {
-		id = WWS_Labor_Vanguard
-		icon = GFX_goal_WWS_Labor_Vanguard
-		cost = 7.00
-		prerequisite = {
-			focus = WWS_Militarized_society
-		}
-		x = 35
-		y = 6
-		completion_reward={
-			add_ideas = Labor_pioneer
-		}
-	}
-	focus = {
-		id = WWS_Siemens_AG
-		icon = GFX_goal_WWS_Siemens_AG
-		cost = 7.00
-		prerequisite = {
-			focus = WWS_Investment_plan
-		}
-		x = 41
-		y = 6
-		completion_reward={
-			custom_effect_tooltip = WWS_Siemens_AG1
-			custom_effect_tooltip = swap_infrastructure
-		}
-	}
-	focus = {
-		id = WWS_Hochtief
-		icon = GFX_goal_WWS_Hochtief
-		cost = 7.00
-		prerequisite = {
-			focus = WWS_Investment_plan
-		}
-		x = 43
-		y = 6
-		completion_reward={
-			custom_effect_tooltip = WWS_Hochtief1
-			custom_effect_tooltip = swap_infrastructure
-		}
-	}
-	focus = {
-		id = WWS_Expansion_radar_stations
-		icon = GFX_goal_WWS_Expansion_radar_stations
-		cost = 7.00
-		prerequisite = {
-			focus = WWS_Investment_plan
-		}
-		x = 39
-		y = 6
-		completion_reward={
-			custom_effect_tooltip = WWS_Expansion_radar_stations1
-			custom_effect_tooltip = swap_infrastructure
-		}
-	}
-	focus = {
-		id = WWS_Property_mortgage_mark
-		icon = GFX_goal_WWS_Property_mortgage_mark
-		cost = 7.00
-		prerequisite = {
-			focus = WWS_Give_up_gold_standard
-		}
-		x = 45
-		y = 6
-		completion_reward={
-			swap_ideas = {
-				remove_idea = WWS_thriving_market1
-				add_idea = WWS_thriving_market2
-			}
-		}
-	}
-	focus = {
-		id = WWS_Never_devalue_gold_mark
-		icon = GFX_goal_WWS_Never_devalue_gold_mark
-		cost = 7.00
-		prerequisite = {
-			focus = WWS_Property_mortgage_mark
-		}
-		x = 45
-		y = 7
-		completion_reward={
-			swap_ideas = {
-				remove_idea = WWS_thriving_market2
-				add_idea = WWS_thriving_market3
-			}
-		}
-	}
-	focus = {
-		id = WWS_Give_up_gold_standard
-		icon = GFX_goal_WWS_Give_up_gold_standard
-		cost = 7.00
-		prerequisite = {
-			focus = WWS_Issuance_gold_marks
-		}
-		x = 45
-		y = 5
-		completion_reward={
-			swap_ideas = {
-				remove_idea = WWS_thriving_market
-				add_idea = WWS_thriving_market1
-			}
-		}
-	}
-	focus = {
-		id = WWS_Currency_unification_works
-		icon = GFX_goal_WWS_Currency_unification_works
-		cost = 7.00
-		prerequisite = {
-			focus = WWS_Central_Bank_Prussia
-		}
-		x = 39
-		y = 2
-		completion_reward={
-			add_political_power = 200
-			custom_effect_tooltip = unification_works
-		}
-	}
-	focus = {
-		id = WWS_Banking_Law
-		icon = GFX_goal_WWS_Banking_Law
-		cost = 7.00
-		prerequisite = {
-			focus = WWS_Central_Bank_Prussia
-		}
-		x = 43
-		y = 2
-		completion_reward={
-			country_event = {id= WWS.16}
-		}
-	}
-	focus = {
-		id = WWS_Establishment_Reichsbank
-		icon = GFX_goal_WWS_Establishment_Reichsbank
-		cost = 7.00
-		prerequisite = {
-			focus = WWS_Banking_Law
-		}
-		prerequisite = {
-			focus = WWS_Currency_unification_works
-		}
-		
-		x = 41
-		y = 3
-		completion_reward={
-			country_event = {id= WWS.15}
-		}
-	}
-	focus = {
-		id = WWS_Issuance_gold_marks
-		icon = GFX_goal_WWS_Issuance_gold_marks
-		cost = 7.00
-		prerequisite = {
-			focus = WWS_Establishment_Reichsbank
-		}
-		
-		x = 41
-		y = 4
-		completion_reward={
-			add_ideas = WWS_thriving_market
-		}
-	}
-	focus = {
-		id = WWS_National_industry
-		icon = GFX_goal_WWS_National_industry
-		cost = 7.00
-		prerequisite = {
-			focus = WWS_Reichsbank
-		}
-		available = {
-			
-			OR={
-				WWS={
-					is_faction_leader = yes
-				}
-				WWS={
-					has_global_flag = German_unification_ttt
-				}
-			}
+			focus = WWS_Foucs10
 		}
 		x = 47
+		y = 4
+		available = {
+		
+		}
+		completion_reward={
+			add_tech_bonus = {
+				bonus = 0.8
+				uses = 1
+				category = medium_air
+			}
+		}
+	}
+	focus = {
+		id = WWS_Foucs16
+		icon = GFX_goal_WWS_Foucs16
+		cost = 7.00
+		available = {
+			has_country_flag = ger_con_7
+		}
+		prerequisite = {
+			focus = WWS_Foucs12
+		}
+		prerequisite = {
+			focus = WWS_Foucs13
+		}
+		prerequisite = {
+			focus = WWS_Foucs11
+		}
+		prerequisite = {
+			focus = WWS_Foucs14
+		}
+		prerequisite = {
+			focus = WWS_Foucs15
+		}
+		x = 41
+		y = 5
+		available = {
+		
+		}
+		completion_reward={
+		}
+	}
+	focus = {
+		id = WWS_Foucs17
+		icon = GFX_goal_WWS_Foucs17
+		cost = 7.00
+		prerequisite = {
+		}
+		
+		x = 56
+		y = 0
+		available = {
+		
+		}
+		completion_reward={
+			country_event =  WWS.16
+		}
+	}
+	
+	focus = {
+		id = WWS_Foucs18
+		icon = GFX_goal_WWS_Foucs18
+		cost = 7.00
+		prerequisite = {
+			focus = WWS_Foucs17
+		}
+		
+		x = 56
 		y = 1
-		completion_reward={
-			custom_effect_tooltip = National_industry
-		}
-	}
-	focus = {
-		id = WWS_Coal_industry
-		icon = GFX_goal_WWS_Coal_industry
-		cost = 7.00
-		prerequisite = {
-			focus = WWS_National_industry
-		}
 		available = {
-			57={
-				is_controlled_by = WWS
-			}
+		
 		}
-		x = 47
-		y = 2
 		completion_reward={
-			57 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
+			add_ideas = WWS_Bank_Prussia
 		}
 	}
 	focus = {
-		id = WWS_Juncker_firm
-		icon = GFX_goal_WWS_Juncker_firm
+		id = WWS_Foucs19
+		icon = GFX_goal_WWS_Foucs19
 		cost = 7.00
 		prerequisite = {
-			focus = WWS_National_industry
 		}
-		x = 45
-		y = 2
-		completion_reward={
-			add_ideas = WWS_Juncker_privileges
-		}
-	}
-	focus = {
-		id = WWS_Volkswagen
-		icon = GFX_goal_WWS_Volkswagen
-		cost = 7.00
-		prerequisite = {
-			focus = WWS_Juncker_firm
-		}
-		x = 45
-		y = 3
-		completion_reward={
-			custom_effect_tooltip = WWS_Volkswagen_Company1
-		}
-	}
-	focus = {
-		id = WWS_Rubber_colony
-		icon = GFX_goal_WWS_Rubber_colony
-		cost = 7.00
-		prerequisite = {
-			focus = WWS_National_industry
-		}
+		
+		x = 52
+		y = 0
 		available = {
-			773={
-				is_controlled_by = WWS
-			}
-			776={
-				is_controlled_by = WWS
-			}
-			777={
-				is_controlled_by = WWS
+		
+		}
+		completion_reward={
+			add_dynamic_modifier = {
+				modifier = WWS_Industrial_development
 			}
 		}
-
+	}
+	focus = {
+		id = WWS_Foucs20
+		icon = GFX_goal_WWS_Foucs20
+		cost = 7.00
+		prerequisite = {
+			focus = WWS_Foucs19
+		}
+		
+		x = 52
+		y = 1
+		available = {
+		
+		}
+		completion_reward={
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = WWS_Foucs21
+		icon = GFX_goal_WWS_Foucs21
+		cost = 7.00
+		prerequisite = {
+			focus = WWS_Foucs20
+		}
+		prerequisite = {
+			focus = WWS_Foucs18
+		}
+		x = 54
+		y = 2
+		available = {
+		
+		}
+		completion_reward={
+			custom_effect_tooltip = WWS_Foucs21_idea
+		}
+	}
+	focus = {
+		id = WWS_Foucs22
+		icon = GFX_goal_WWS_Foucs22
+		cost = 7.00
+		prerequisite = {
+			focus = WWS_Foucs20
+		}
+		prerequisite = {
+			focus = WWS_Foucs18
+		}
+		x = 51
+		y = 2
+		available = {
+		
+		}
+		completion_reward={
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = armor
+			}
+			unlock_military_industrial_organization_tooltip = "NSU公司"
+		}
+	}
+	focus = {
+		id = WWS_Foucs23
+		icon = GFX_goal_WWS_Foucs23
+		cost = 7.00
+		prerequisite = {
+			focus = WWS_Foucs20
+		}
+		prerequisite = {
+			focus = WWS_Foucs18
+		}
+		x = 57
+		y = 2
+		available = {
+		
+		}
+		completion_reward={
+		add_dynamic_modifier = {
+			modifier = WWS_Unified_currency
+		}
+		add_to_variable = { 
+			government_investment_modifier=2.000
+		}
+		add_to_variable = { 
+			market_available_for_dumping_modifier=2.000
+		}
+		add_to_variable = { 
+			tax_from_company_modifier=1.500
+		}
+		add_to_variable = { 
+			tax_from_consumption_modifier=1.500
+		}
+		add_to_variable = { 
+			domestic_investment_modifier=2.000
+		}
+		add_to_variable = { 
+			domestic_investment_modifier=2.000
+		}
+		add_to_variable = { 
+			market_available_for_dumping_modifier=2.000
+		}
+	
+		
+		}
+	}
+	focus = {
+		id = WWS_Foucs24
+		icon = GFX_goal_WWS_Foucs24
+		cost = 7.00
+		prerequisite = {
+			focus = WWS_Foucs19
+			focus = WWS_Foucs17
+		}
+		
+		x = 54
+		y = 1
+		available = {
+		
+		}
+		completion_reward={
+			add_ideas = WWS_Prussian_railways
+		}
+	}
+	focus = {
+		id = WWS_Foucs25
+		icon = GFX_goal_WWS_Foucs25
+		cost = 7.00
+		prerequisite = {
+			focus = WWS_Foucs20
+		}
+		prerequisite = {
+			focus = WWS_Foucs22
+		}
 		x = 49
-		y = 2
-		completion_reward={
-			773 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_resource = {
-					type = rubber
-					amount = 10
-				}
-			}
-			776 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_resource = {
-					type = rubber
-					amount = 10
-				}
-			}
-			777 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_resource = {
-					type = rubber
-					amount = 10
-				}
-			}
-			
-		}
-	}
-	focus = {
-		id = WWS_land_abundance
-		icon = GFX_goal_WWS_land_abundance
-		cost = 7.00
-		prerequisite = {
-			focus = WWS_Coal_industry
-		}
-		prerequisite = {
-			focus = WWS_Rubber_colony
-		}
-		available = {
-			64={
-				is_controlled_by = WWS
-			}
-		}
-		x = 48
 		y = 3
+		available = {
+		64={
+			is_core_of = WWS
+		}
+		67={
+			is_core_of = WWS
+		}
+		763={
+			is_core_of = WWS
+		}
+		}
 		completion_reward={
-			
-			64 = {
-				set_state_category = megalopolis
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
+			mio:WWS_NSU_organization = {
+				add_mio_size = 1
+				add_mio_funds_gain_factor = 0.10
+			}
+			64={
 				add_building_construction = {
 					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
 			}
-			random_owned_controlled_state = {
+			67={
 				add_building_construction = {
-					type = grain_farms
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			763={
+				add_building_construction = {
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
@@ -1095,19 +1126,85 @@ completion_reward={
 		}
 	}
 	focus = {
-		id = WWS_Imperial_Highway
-		icon = GFX_goal_WWS_Imperial_Highway
+		id = WWS_Foucs26
+		icon = GFX_goal_WWS_Foucs26
 		cost = 7.00
 		prerequisite = {
-			focus = WWS_Volkswagen
+			focus = WWS_Foucs18
 		}
 		prerequisite = {
-			focus = WWS_land_abundance
+			focus = WWS_Foucs23
 		}
-		x = 47
-		y = 4
+		x = 59
+		y = 3
+		available = {
+		
+		}
 		completion_reward={
-			custom_effect_tooltip = Imperial_Highway_plan
+			swap_ideas = {
+				remove_idea = WWS_Bank_Prussia
+				add_idea = WWS_Bank_Deutsche
+			}
+		}
+	}
+	focus = {
+		id = WWS_Foucs27
+		icon = GFX_goal_WWS_Foucs27
+		cost = 7.00
+		prerequisite = {
+			focus = WWS_Foucs21
+		}
+		x = 54
+		y = 3
+		available = {
+		
+		}
+		completion_reward={
+			add_tech_bonus = {
+				bonus = 0.7
+				uses = 2
+				category = support_tech
+			}
+		}
+	}
+	focus = {
+		id = WWS_Foucs28
+		icon = GFX_goal_WWS_Foucs28
+		cost = 7.00
+		prerequisite = {
+			focus = WWS_Foucs21
+		}
+		x = 52
+		y = 3
+		available = {
+		
+		}
+		completion_reward={
+			add_tech_bonus = {
+				bonus = 0.7
+				uses = 2
+				category = electronics
+			}
+		}
+	}
+	focus = {
+		id = WWS_Foucs29
+		icon = GFX_goal_WWS_Foucs29
+		cost = 7.00
+		prerequisite = {
+			focus = WWS_Foucs21
+		}
+		x = 56
+		y = 3
+		available = {
+		
+		}
+		completion_reward={
+			add_tech_bonus = {
+				bonus = 0.7
+				uses = 2
+				category = radar_tech
+			}
 		}
 	}
 }

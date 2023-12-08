@@ -1,13 +1,7 @@
 equipments = {
 
 	ship_hull_light = {
-		year = 1922
-
-		can_be_produced = {
-			NOT = {
-				has_idea = BUL_army_restrictions
-			}
-		}
+		year = 1900
 
 		is_archetype = yes
 		is_buildable = no
@@ -110,7 +104,7 @@ equipments = {
 
 		fuel_consumption = 0
 		
-		build_cost_ic = 400
+		build_cost_ic = 200
 		resources = {
 			steel = 2
 		}
@@ -119,8 +113,7 @@ equipments = {
 	}
 
 	ship_hull_light_1 = {
-		abbreviation = "hdb"
-		year = 1922
+		year = 1900
 
 		archetype = ship_hull_light
 		priority = 2000
@@ -130,8 +123,7 @@ equipments = {
 	}
 
 	ship_hull_light_2 = {
-		abbreviation = "hdc"
-		year = 1936
+		year = 1910
 
 		archetype = ship_hull_light
 		priority = 2000
@@ -170,7 +162,7 @@ equipments = {
 		reliability = 0.85
 		naval_range = 1800
 		max_strength = 40
-		build_cost_ic = 500
+		build_cost_ic = 250
 		resources = {
 			steel = 2
 		}
@@ -178,8 +170,7 @@ equipments = {
 	}
 
 	ship_hull_light_3 = {
-		abbreviation = "hdd"
-		year = 1940
+		year = 1916
 
 		archetype = ship_hull_light
 		priority = 2000
@@ -236,7 +227,7 @@ equipments = {
 		reliability = 0.90
 		naval_range = 2000
 		max_strength = 50
-		build_cost_ic = 550
+		build_cost_ic = 275
 		manpower = 400
 
 		default_modules = {
@@ -247,8 +238,7 @@ equipments = {
 	}
 
 	ship_hull_light_4 = {
-		abbreviation = "hde"
-		year = 1944
+		year = 1922
 
 		archetype = ship_hull_light
 		priority = 2000
@@ -300,7 +290,8 @@ equipments = {
 		reliability = 0.92
 		naval_range = 2500
 		max_strength = 60
-		build_cost_ic = 600
+		fuel_consumption = 7
+		build_cost_ic = 300
 		resources = {
 			steel = 4
 			chromium = 1
@@ -308,7 +299,7 @@ equipments = {
 		manpower = 500
 	}
 	destroyer_1 = {
-		year = 1922
+		year = 1900
 
 		archetype = ship_hull_light
 		priority = 2000
@@ -345,9 +336,9 @@ equipments = {
 		max_strength = 25
 		
 
-		fuel_consumption = 7
+		fuel_consumption = 0
 		
-		build_cost_ic = 400
+		build_cost_ic = 200
 		resources = {
 			#oil = 1
 			steel = 2
@@ -356,7 +347,7 @@ equipments = {
 		manpower = 250
 	}
 	destroyer_2 = {
-		year = 1936
+		year = 1910
 
 		archetype = ship_hull_light
 		priority = 2000
@@ -399,7 +390,7 @@ equipments = {
 			anti_air
 		}
 
-		build_cost_ic = 500
+		build_cost_ic = 250
 		resources = {
 			#oil = 1
 			steel = 3
@@ -408,7 +399,7 @@ equipments = {
 	}
 	
 	destroyer_3 = {
-		year = 1940
+		year = 1916
 
 		archetype = ship_hull_light
 		priority = 2000
@@ -450,7 +441,7 @@ equipments = {
 			screen_ship
 			anti_air
 		}
-		build_cost_ic = 500
+		build_cost_ic = 250
 		resources = {
 			#oil = 2
 			steel = 3
@@ -459,7 +450,7 @@ equipments = {
 	}
 	
 	destroyer_4 = {
-		year = 1944
+		year = 1900
 
 		archetype = ship_hull_light
 		priority = 2000
@@ -495,14 +486,14 @@ equipments = {
 		
 		max_strength = 60
 		
-
+		fuel_consumption = 7
 		
 		type = { 
 			screen_ship
 			anti_air
 		}
 
-		build_cost_ic = 500
+		build_cost_ic = 250
 		resources = {
 			#oil = 2
 			steel = 4

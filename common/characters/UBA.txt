@@ -1,9 +1,169 @@
 characters={
+	UBA_Melnik={
+		name=UBA_Melnik
+		portraits={
+			civilian={
+				large="gfx/leaders/UBA/portrait_Melnik.tga"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	UBA_Fedir_Shchus={
+		name=UBA_Fedir_Shchus
+		portraits={
+			civilian={
+				large="gfx/leaders/UBA/portrait_Fedir_Shchus.tga"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	UBA_Roma={
+		name=UBA_Roma
+		portraits={
+			civilian={
+				large="gfx/leaders/UBA/portrait_Roma.tga"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	UBA_Petro_Petrenko={
+		name=UBA_Petro_Petrenko
+		portraits={
+			civilian={
+				large="gfx/leaders/UBA/portrait_Petro_Petrenko.tga"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	UBA_Viktor_Bilash={
+		name=UBA_Viktor_Bilash
+		portraits={
+			civilian={
+				large="gfx/leaders/UBA/portrait_Viktor_Bilash.tga"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	UBA_Vasily_Kurilenko={
+		name=UBA_Vasily_Kurilenko
+		portraits={
+			civilian={
+				large="gfx/leaders/UBA/portrait_Vasily_Kurilenko.tga"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	UBA_Hryhory_Vasylivsky={
+		name=UBA_Hryhory_Vasylivsky
+		portraits={
+			civilian={
+				large="gfx/leaders/UBA/portrait_Hryhory_Vasylivsky.tga"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=3
+		}
+	}
+	UBA_Oleksiy_Marchenko={
+		name=UBA_Oleksiy_Marchenko
+		portraits={
+			civilian={
+				large="gfx/leaders/UBA/portrait_Oleksiy_Marchenko.tga"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
+	UBA_Semen_Karetnyk={
+		name=UBA_Semen_Karetnyk
+		portraits={
+			civilian={
+				large="gfx/leaders/UBA/portrait_Semen_Karetnyk.tga"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
 	UBA_Makhno={
 		name=UBA_Makhno
 		portraits={
 			civilian={
 				large="gfx/leaders/UBA/portrait_Makhno.tga"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	UBA_Black_Army_Committee={
+		name=UBA_Black_Army_Committee
+		portraits={
+			civilian={
+				large="gfx/leaders/UBA/portrait_Black_Army_Committee.tga"
 			}
 		}
 		country_leader={

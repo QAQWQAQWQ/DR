@@ -1,5 +1,53 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_goal_LEF_focus1"
+		texturefile = "gfx/interface/goals/LEF/LEF_focus1.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LEF_focus2"
+		texturefile = "gfx/interface/goals/LEF/LEF_focus2.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LEF_focus3"
+		texturefile = "gfx/interface/goals/LEF/LEF_focus3.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LEF_focus4"
+		texturefile = "gfx/interface/goals/LEF/LEF_focus4.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LEF_focus5"
+		texturefile = "gfx/interface/goals/LEF/LEF_focus_5.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LEF_focus6"
+		texturefile = "gfx/interface/goals/LEF/LEF_focus6.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_NPL_focus1"
+		texturefile = "gfx/interface/goals/NPL/NPL_focus1.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_NPL_focus2"
+		texturefile = "gfx/interface/goals/NPL/NPL_focus2.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_NPL_focus3"
+		texturefile = "gfx/interface/goals/NPL/NPL_focus3.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_NPL_focus4"
+		texturefile = "gfx/interface/goals/NPL/NPL_focus4.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_NPL_focus5"
+		texturefile = "gfx/interface/goals/NPL/NPL_focus5.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_NPL_focus6"
+		texturefile = "gfx/interface/goals/NPL/NPL_focus6.dds"
+	}
+	spriteType = {
 		name = "GFX_Port_Kotor_goal"
 		texturefile = "gfx/interface/goals/SIW/Port_Kotor_goal.dds"
 	}
@@ -206,105 +254,192 @@ spriteTypes = {
 		name = "GFX_Professional_army"
 		texturefile = "gfx/interface/goals/FTX/Professional_army.dds"
 	}
+
+
 	spriteType = {
-		name = "GFX_Commune_de_Paris"
-		texturefile = "gfx/interface/goals/FRW/Commune_de_Paris.dds"
+		name = "GFX_goal_FRW_focus1"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus1.dds"
 	}
 	spriteType = {
-		name = "GFX_Lenin"
-		texturefile = "gfx/interface/goals/FRW/Lenin.dds"
+		name = "GFX_goal_FRW_focus2"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus2.dds"
 	}
 	spriteType = {
-		name = "GFX_worker"
-		texturefile = "gfx/interface/goals/FRW/worker.dds"
+		name = "GFX_goal_FRW_focus3"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus3.dds"
 	}
 	spriteType = {
-		name = "GFX_freely"
-		texturefile = "gfx/interface/goals/FRW/freely.dds"
+		name = "GFX_goal_FRW_focus4"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus4.dds"
 	}
 	spriteType = {
-		name = "GFX_Syndicals"
-		texturefile = "gfx/interface/goals/FRW/Syndicals.dds"
+		name = "GFX_goal_FRW_focus5"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus5.dds"
 	}
 	spriteType = {
-		name = "GFX_Orthodox_Marxism"
-		texturefile = "gfx/interface/goals/FRW/Orthodox_Marxism.dds"
+		name = "GFX_goal_FRW_focus6"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus6.dds"
 	}
 	spriteType = {
-		name = "GFX_Conciliatory_faction"
-		texturefile = "gfx/interface/goals/FRW/Conciliatory_faction.dds"
+		name = "GFX_goal_FRW_focus7"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus7.dds"
 	}
 	spriteType = {
-		name = "GFX_Second_InternationaL"
-		texturefile = "gfx/interface/goals/FRW/Second_International.dds"
+		name = "GFX_goal_FRW_focus8"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus8.dds"
 	}
 	spriteType = {
-		name = "GFX_Marx_Institute"
-		texturefile = "gfx/interface/goals/FRW/Marx_Institute.dds"
+		name = "GFX_goal_FRW_focus9"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus9.dds"
 	}
 	spriteType = {
-		name = "GFX_International_Institute"
-		texturefile = "gfx/interface/goals/FRW/International_Institute.dds"
+		name = "GFX_goal_FRW_focus10"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus10.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_FRW_focus11"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus11.dds"
 	}
 	spriteType = {
-		name = "GFX_Intervention_Russia"
-		texturefile = "gfx/interface/goals/FRW/Intervention_Russia.dds"
+		name = "GFX_goal_FRW_focus12"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus12.dds"
 	}
 	spriteType = {
-		name = "GFX_Intervention_Magyarorszag"
-		texturefile = "gfx/interface/goals/FRW/Intervention_Magyarorszag.dds"
+		name = "GFX_goal_FRW_focus13"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus13.dds"
 	}
 	spriteType = {
-		name = "GFX_Italy"
-		texturefile = "gfx/interface/goals/FRW/Italy.dds"
+		name = "GFX_goal_FRW_focus14"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus14.dds"
 	}
 	spriteType = {
-		name = "GFX_Germany"
-		texturefile = "gfx/interface/goals/FRW/Germany.dds"
+		name = "GFX_goal_FRW_focus15"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus15.dds"
 	}
 	spriteType = {
-		name = "GFX_Export_the_revolution"
-		texturefile = "gfx/interface/goals/FRW/Export_the_revolution.dds"
+		name = "GFX_goal_FRW_focus16"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus16.dds"
 	}
 	spriteType = {
-		name = "GFX_Contact_iww"
-		texturefile = "gfx/interface/goals/FRW/Contact_iww.dds"
+		name = "GFX_goal_FRW_focus17"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus17.dds"
 	}
 	spriteType = {
-		name = "GFX_Asia"
-		texturefile = "gfx/interface/goals/FRW/Asia.dds"
+		name = "GFX_goal_FRW_focus18"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus18.dds"
 	}
 	spriteType = {
-		name = "GFX_Latin_America"
-		texturefile = "gfx/interface/goals/FRW/Latin_America.dds"
+		name = "GFX_goal_FRW_focus19"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus19.dds"
 	}
 	spriteType = {
-		name = "GFX_FRW_revenge"
-		texturefile = "gfx/interface/goals/FRW/FRW_revenge.dds"
+		name = "GFX_goal_FRW_focus20"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus20.dds"
 	}
 	spriteType = {
-		name = "GFX_Eternal_revolution"
-		texturefile = "gfx/interface/goals/FRW/Eternal_revolution.dds"
+		name = "GFX_goal_FRW_focus21"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus21.dds"
 	}
 	spriteType = {
-		name = "GFX_Revolutionary_blood"
-		texturefile = "gfx/interface/goals/FRW/Revolutionary_blood.dds"
+		name = "GFX_goal_FRW_focus22"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus22.dds"
 	}
 	spriteType = {
-		name = "GFX_Nationalization"
-		texturefile = "gfx/interface/goals/FRW/Nationalization.dds"
+		name = "GFX_goal_FRW_focus23"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus23.dds"
 	}
 	spriteType = {
-		name = "GFX_People_Voice"
-		texturefile = "gfx/interface/goals/FRW/People_Voice.dds"
+		name = "GFX_goal_FRW_focus24"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus24.dds"
 	}
 	spriteType = {
-		name = "GFX_Social_class"
-		texturefile = "gfx/interface/goals/FRW/Social_class.dds"
+		name = "GFX_goal_FRW_focus25"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus25.dds"
 	}
 	spriteType = {
-		name = "GFX_Emphasison_the_state"
-		texturefile = "gfx/interface/goals/FRW/Emphasison_the_state.dds"
+		name = "GFX_goal_FRW_focus26"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus26.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_FRW_focus27"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus27.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_FRW_focus28"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus28.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_FRW_focus29"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus29.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_FRW_focus30"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus30.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_FRW_focus31"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus31.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_FRW_focus32"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus32.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_FRW_focus33"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus33.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_FRW_focus34"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus34.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_FRW_focus35"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus35.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_FRW_focus36"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus36.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_FRW_focus37"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus37.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_FRW_focus38"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus38.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_FRW_focus39"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus39.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_FRW_focus40"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus40.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_FRW_focus41"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus41.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_FRW_focus42"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus42.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_FRW_focus43"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus43.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_FRW_focus44"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus44.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_FRW_focus45"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus45.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_FRW_focus46"
+		texturefile = "gfx/interface/goals/FRW/FRW_focus46.dds"
 	}
 	spriteType = {
 		name = "GFX_future_of_empire"
@@ -471,14 +606,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/FTX/Revitalize_industry.dds"
 	}
 	spriteType = {
-		name = "GFX_Long_live_the_commune"
-		texturefile = "gfx/interface/goals/FRW/Long_live_the_commune.dds"
-	}
-	spriteType = {
-		name = "GFX_women"
-		texturefile = "gfx/interface/goals/FRW/women.dds"
-	}
-	spriteType = {
 		name = "GFX_Taisho_democracy"
 		texturefile = "gfx/interface/goals/JPN/Taisho_democracy.dds"
 	}
@@ -591,83 +718,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Emperor_Renzheng"
 		texturefile = "gfx/interface/goals/JPN/Emperor_Renzheng.dds"
-	}
-	spriteType = {
-		name = "GFX_Second_Revolution"
-		texturefile = "gfx/interface/goals/FRW/Second_Revolution.dds"
-	}
-	spriteType = {
-		name = "GFX_All_are_equal"
-		texturefile = "gfx/interface/goals/FRW/All_are_equal.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_People_Council"
-		texturefile = "gfx/interface/goals/FRW/People_Council.dds"
-	}
-	spriteType = {
-		name = "GFX_Centralized_management"
-		texturefile = "gfx/interface/goals/FRW/Centralized_management.dds"
-	}
-	spriteType = {
-		name = "GFX_National_self_confidence"
-		texturefile = "gfx/interface/goals/FRW/National_self_confidence.dds"
-	}
-	spriteType = {
-		name = "GFX_planned_economy"
-		texturefile = "gfx/interface/goals/FRW/planned_economy.dds"
-	}
-	spriteType = {
-		name = "GFX_Party"
-		texturefile = "gfx/interface/goals/FRW/Party.dds"
-	}
-	spriteType = {
-		name = "GFX_Revolutionary_Legion"
-		texturefile = "gfx/interface/goals/FRW/Revolutionary_Legion.dds"
-	}
-	spriteType = {
-		name = "GFX_French_Marxism"
-		texturefile = "gfx/interface/goals/FRW/French_Marxism.dds"
-	}
-	spriteType = {
-		name = "GFX_patriotism"
-		texturefile = "gfx/interface/goals/FRW/patriotism.dds"
-	}
-	spriteType = {
-		name = "GFX_The_Jewish_question"
-		texturefile = "gfx/interface/goals/FRW/The_Jewish_question.dds"
-	}
-	spriteType = {
-		name = "GFX_Jacobin_cleaning"
-		texturefile = "gfx/interface/goals/FRW/Jacobin_cleaning.dds"
-	}
-	spriteType = {
-		name = "GFX_Work_with_anarchists"
-		texturefile = "gfx/interface/goals/FRW/Work_with_anarchists.dds"
-	}
-	spriteType = {
-		name = "GFX_Ensure_loyalty"
-		texturefile = "gfx/interface/goals/FRW/Ensure_loyalty.dds"
-	}
-	spriteType = {
-		name = "GFX_Supreme_Chairman"
-		texturefile = "gfx/interface/goals/FRW/Supreme_Chairman.dds"
-	}
-	spriteType = {
-		name = "GFX_Totalitarian_society"
-		texturefile = "gfx/interface/goals/FRW/Totalitarian_society.dds"
-	}
-	spriteType = {
-		name = "GFX_Revolutionary_nationalism"
-		texturefile = "gfx/interface/goals/FRW/Revolutionary_nationalism.dds"
-	}
-	spriteType = {
-		name = "GFX_People_Vanguard"
-		texturefile = "gfx/interface/goals/FRW/People_Vanguard.dds"
-	}
-	spriteType = {
-		name = "GFX_Workers_empire"
-		texturefile = "gfx/interface/goals/FRW/Workers_empire.dds"
 	}
 	##SIW
 	spriteType = {
@@ -1283,5 +1333,918 @@ spriteTypes = {
 		name = "GFX_goal_WWS_Imperial_Highway"
 		texturefile = "gfx/interface/goals/WWS/WWS_Imperial_Highway.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs1"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs1.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs2"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs2.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs3"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs3.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs4"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs4.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs5"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs5.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs6"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs6.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs7"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs7.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs8"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs8.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs9"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs9.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs10"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs10.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs11"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs11.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs12"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs12.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs13"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs13.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs14"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs14.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs15"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs15.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs16"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs16.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs17"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs17.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs18"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs18.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs19"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs19.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs20"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs20.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs21"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs21.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs22"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs22.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs23"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs23.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs24"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs24.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs25"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs25.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs26"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs26.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs27"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs27.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs28"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs28.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_WWS_Foucs29"
+		texturefile = "gfx/interface/goals/WWS/WWS_Foucs29.dds"
+	}
+####
+spriteType = {
+	name = "GFX_goal_SUE_Instructions_Central_Committee"
+	texturefile = "gfx/interface/goals/SUE/SUE_Instructions_Central_Committee.dds"
+}
+spriteType = {
+	name = "GFX_goal_SUE_Mobilization_urban_worker_militias"
+	texturefile = "gfx/interface/goals/SUE/SUE_Mobilization_urban_worker_militias.dds"
+}
+spriteType = {
+	name = "GFX_goal_SUE_Emergency"
+	texturefile = "gfx/interface/goals/SUE/SUE_Emergency.dds"
+}
+spriteType = {
+	name = "GFX_goal_SUE_Gather_army_anyway"
+	texturefile = "gfx/interface/goals/SUE/SUE_Gather_army_anyway.dds"
+}
+spriteType = {
+	name = "GFX_goal_SUE_Wartime_communism"
+	texturefile = "gfx/interface/goals/SUE/SUE_Wartime_communism.dds"
+}
+spriteType = {
+	name = "GFX_goal_SUE_Russian_Anti_Corruption_Committee"
+	texturefile = "gfx/interface/goals/SUE/SUE_Russian_Anti_Corruption_Committee.dds"
+}
+spriteType = {
+	name = "GFX_goal_SUE_The_composition_the_party"
+	texturefile = "gfx/interface/goals/SUE/SUE_The_composition_the_party.dds"
+}
+spriteType = {
+	name = "GFX_goal_SUE_The_Socialist_Revolutionary_Party_question"
+	texturefile = "gfx/interface/goals/SUE/SUE_The_Socialist_Revolutionary_Party_question.dds"
+}
+spriteType = {
+	name = "GFX_goal_SUE_The_question_the_former_State_Duma"
+	texturefile = "gfx/interface/goals/SUE/SUE_The_question_the_former_State_Duma.dds"
+}
+spriteType = {
+	name = "GFX_goal_SUE_Candidates_the_Central_Committee"
+	texturefile = "gfx/interface/goals/SUE/SUE_Candidates_the_Central_Committee.dds"
+}
+spriteType = {
+	name = "GFX_goal_SUE_Establishment_a_head_state"
+	texturefile = "gfx/interface/goals/SUE/SUE_Establishment_a_head_state.dds"
+}
+spriteType = {
+	name = "GFX_goal_SUE_Victory_the_workers"
+	texturefile = "gfx/interface/goals/SUE/SUE_Victory_the_workers.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_In_name_Slavism"
+	texturefile = "gfx/interface/goals/SHW/SHW_In_name_Slavism.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_2"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_2.dds"
+}  
+spriteType = {
+	name = "GFX_goal_SHW_Focus_3"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_3.dds"
+}  
+spriteType = {
+	name = "GFX_goal_SHW_Focus_4"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_4.dds"
+} 
+spriteType = {
+	name = "GFX_goal_SHW_Focus_5"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_5.dds"
+} 
+spriteType = {
+	name = "GFX_goal_SHW_Focus_6"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_6.dds"
+} 
+spriteType = {
+	name = "GFX_goal_SHW_Focus_7"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_7.dds"
+} 
+spriteType = {
+	name = "GFX_goal_SHW_Focus_8"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_8.dds"
+} 
+spriteType = {
+	name = "GFX_goal_SHW_Focus_9"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_9.dds"
+} 
+spriteType = {
+	name = "GFX_goal_SHW_Focus_10"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_10.dds"
+} 
+spriteType = {
+	name = "GFX_goal_SHW_Focus_11"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_11.dds"
+} 
+spriteType = {
+	name = "GFX_goal_SHW_Focus_12"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_12.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_13"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_13.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_14"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_14.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_15"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_15.dds"
+}  
+spriteType = {
+	name = "GFX_goal_SHW_Focus_16"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_16.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_17"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_17.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_18"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_18.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_19"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_19.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_20"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_20.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_21"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_21.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_22"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_22.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_23"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_23.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_24"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_24.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_25"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_25.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_26"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_26.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_27"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_27.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_28"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_28.dds"
+}
+
+spriteType = {
+	name = "GFX_goal_SHW_Focus_29"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_29.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_30"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_30.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_31"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_31.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_32"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_32.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_33"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_33.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_34"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_34.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_35"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_35.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_36"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_36.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_37"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_37.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_38"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_38.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_39"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_39.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_40"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_40.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_41"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_41.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_42"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_42.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_43"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_43.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_44"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_44.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_45"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_45.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_46"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_46.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_47"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_47.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_48"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_48.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_49"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_49.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_50"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_50.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Focus_51"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_51.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_The_head_army"
+	texturefile = "gfx/interface/goals/SHW/SHW_The_head_army.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Democracy_in_Russia"
+	texturefile = "gfx/interface/goals/SHW/SHW_Democracy_in_Russia.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Depose_Tsar"
+	texturefile = "gfx/interface/goals/SHW/SHW_Depose_Tsar.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_For_Your_Majesty"
+	texturefile = "gfx/interface/goals/SHW/SHW_For_Your_Majesty.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Restart_Black_Hundred"
+	texturefile = "gfx/interface/goals/SHW/SHW_Restart_Black_Hundred.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Embrace_change"
+	texturefile = "gfx/interface/goals/SHW/SHW_Embrace_change.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Coalition_Cabinet_Government"
+	texturefile = "gfx/interface/goals/SHW/SHW_Coalition_Cabinet_Government.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Struggle_overcome_differences"
+	texturefile = "gfx/interface/goals/SHW/SHW_Struggle_overcome_differences.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Strive_national_improvement"
+	texturefile = "gfx/interface/goals/SHW/SHW_Strive_national_improvement.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Unite_patriotic_generals"
+	texturefile = "gfx/interface/goals/SHW/SHW_Unite_patriotic_generals.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Centered_military"
+	texturefile = "gfx/interface/goals/SHW/SHW_Centered_military.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Convening_Moscow_State_Council"
+	texturefile = "gfx/interface/goals/SHW/SHW_Convening_Moscow_State_Council.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Repeal_Declaration_Rights_Soldiers"
+	texturefile = "gfx/interface/goals/SHW/SHW_Repeal_Declaration_Rights_Soldiers.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_democratic_government_without_all"
+	texturefile = "gfx/interface/goals/SHW/SHW_democratic_government_without_all.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_There_no_party_class"
+	texturefile = "gfx/interface/goals/SHW/SHW_There_no_party_class.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Reinstatement_death_penalty"
+	texturefile = "gfx/interface/goals/SHW/SHW_Reinstatement_death_penalty.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Isolate_dissidents"
+	texturefile = "gfx/interface/goals/SHW/SHW_Isolate_dissidents.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Dissolution_Cabinet_Government"
+	texturefile = "gfx/interface/goals/SHW/SHW_Dissolution_Cabinet_Government.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Expulsion_Kerensky"
+	texturefile = "gfx/interface/goals/SHW/SHW_Expulsion_Kerensky.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Rule_iron_fist"
+	texturefile = "gfx/interface/goals/SHW/SHW_Rule_iron_fist.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Call_on_the_army"
+	texturefile = "gfx/interface/goals/SHW/SHW_Call_on_the_army.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Worthless_democracy"
+	texturefile = "gfx/interface/goals/SHW/SHW_Worthless_democracy.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Protocol_Elders_Zion"
+	texturefile = "gfx/interface/goals/SHW/SHW_Protocol_Elders_Zion.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Traditional_village_community_system"
+	texturefile = "gfx/interface/goals/SHW/SHW_Traditional_village_community_system.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Orthodox_Church_emperor_Russian_Motherland"
+	texturefile = "gfx/interface/goals/SHW/SHW_Orthodox_Church_emperor_Russian_Motherland.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_United_Slavs"
+	texturefile = "gfx/interface/goals/SHW/SHW_United_Slavs.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Slavic_nationalism_culture"
+	texturefile = "gfx/interface/goals/SHW/SHW_Slavic_nationalism_culture.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Loyalty_motion"
+	texturefile = "gfx/interface/goals/SHW/SHW_Loyalty_motion.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Carry_patriotic_education"
+	texturefile = "gfx/interface/goals/SHW/SHW_Carry_patriotic_education.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Invite_worker_representatives"
+	texturefile = "gfx/interface/goals/SHW/SHW_Invite_worker_representatives.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Right_wing_revolutionaries"
+	texturefile = "gfx/interface/goals/SHW/SHW_Right_wing_revolutionaries.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_backbone_the_nation"
+	texturefile = "gfx/interface/goals/SHW/SHW_backbone_the_nation.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Guardians_the_Old_Order"
+	texturefile = "gfx/interface/goals/SHW/SHW_Guardians_the_Old_Order.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Education_all"
+	texturefile = "gfx/interface/goals/SHW/SHW_Education_all.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Brand_new_Russia"
+	texturefile = "gfx/interface/goals/SHW/SHW_Brand_new_Russia.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Establishment_national_insurance"
+	texturefile = "gfx/interface/goals/SHW/SHW_Establishment_national_insurance.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Improve_industrial_relations"
+	texturefile = "gfx/interface/goals/SHW/SHW_Improve_industrial_relations.dds"
+}
+spriteType = {
+	name = "GFX_goal_SHW_Offer_cheap_loans"
+	texturefile = "gfx/interface/goals/SHW/SHW_Offer_cheap_loans.dds"
+}
+spriteType = {
+	name = "GFX_goal_DOS_sword_without_handle"
+	texturefile = "gfx/interface/goals/DOS/DOS_sword_without_handle.dds"
+}
+spriteType = {
+	name = "GFX_goal_DOS_Son_the_chessboard"
+	texturefile = "gfx/interface/goals/DOS/DOS_Son_the_chessboard.dds"
+}
+spriteType = {
+	name = "GFX_goal_DOS_turn_austria"
+	texturefile = "gfx/interface/goals/DOS/DOS_turn_austria.dds"
+}
+spriteType = {
+	name = "GFX_goal_DOS_turn_prussia"
+	texturefile = "gfx/interface/goals/DOS/DOS_turn_prussia.dds"
+}
+spriteType = {
+	name = "GFX_goal_DOS_king_brother"
+	texturefile = "gfx/interface/goals/DOS/DOS_king_brother.dds"
+}
+spriteType = {
+	name = "GFX_goal_DOS_Nachfolgekrise"
+	texturefile = "gfx/interface/goals/DOS/DOS_Nachfolgekrise.dds"
+}
+spriteType = {
+	name = "GFX_goal_BRA_focus_1"
+	texturefile = "gfx/interface/goals/BRA/BRA_focus_1.dds"
+}
+spriteType = {
+	name = "GFX_goal_BRA_focus_2"
+	texturefile = "gfx/interface/goals/BRA/BRA_focus_2.dds"
+}
+spriteType = {
+	name = "GFX_goal_BRA_focus_3"
+	texturefile = "gfx/interface/goals/BRA/BRA_focus_3.dds"
+}
+spriteType = {
+	name = "GFX_goal_BRA_focus_4"
+	texturefile = "gfx/interface/goals/BRA/BRA_focus_4.dds"
+}
+spriteType = {
+	name = "GFX_goal_BRA_focus_5"
+	texturefile = "gfx/interface/goals/BRA/BRA_focus_5.dds"
+}
+spriteType = {
+	name = "GFX_goal_BRA_focus_6"
+	texturefile = "gfx/interface/goals/BRA/BRA_focus_6.dds"
+}
+spriteType = {
+	name = "GFX_goal_BRA_focus_7"
+	texturefile = "gfx/interface/goals/BRA/BRA_focus_7.dds"
+}
+spriteType = {
+	name = "GFX_goal_BRA_focus_8"
+	texturefile = "gfx/interface/goals/BRA/BRA_focus_8.dds"
+}
+spriteType = {
+	name = "GFX_goal_BRA_focus_9"
+	texturefile = "gfx/interface/goals/BRA/BRA_focus_9.dds"
+}
+spriteType = {
+	name = "GFX_goal_BRA_focus_10"
+	texturefile = "gfx/interface/goals/BRA/BRA_focus_10.dds"
+}
+spriteType = {
+	name = "GFX_goal_BRA_focus_12"
+	texturefile = "gfx/interface/goals/BRA/BRA_focus_12.dds"
+}
+spriteType = {
+	name = "GFX_goal_BRA_focus_13"
+	texturefile = "gfx/interface/goals/BRA/BRA_focus_13.dds"
+}
+spriteType = {
+	name = "GFX_goal_BRA_focus_14"
+	texturefile = "gfx/interface/goals/BRA/BRA_focus_14.dds"
+}
+spriteType = {
+	name = "GFX_goal_BRA_focus_15"
+	texturefile = "gfx/interface/goals/BRA/BRA_focus_15.dds"
+}
+
+
+spriteType = {
+	name = "GFX_goal_SCX_focus_1"
+	texturefile = "gfx/interface/goals/SCX/SCX_focus_1.dds"
+}
+spriteType = {
+	name = "GFX_goal_SCX_focus_2"
+	texturefile = "gfx/interface/goals/SCX/SCX_focus_2.dds"
+}
+spriteType = {
+	name = "GFX_goal_SCX_focus_3"
+	texturefile = "gfx/interface/goals/SCX/SCX_focus_3.dds"
+}
+spriteType = {
+	name = "GFX_goal_SCX_focus_4"
+	texturefile = "gfx/interface/goals/SCX/SCX_focus_4.dds"
+}
+spriteType = {
+	name = "GFX_goal_SCX_focus_5"
+	texturefile = "gfx/interface/goals/SCX/SCX_focus_5.dds"
+}
+spriteType = {
+	name = "GFX_goal_SCX_focus_6"
+	texturefile = "gfx/interface/goals/SCX/SCX_focus_6.dds"
+}
+spriteType = {
+	name = "GFX_goal_SCX_focus_7"
+	texturefile = "gfx/interface/goals/SCX/SCX_focus_7.dds"
+}
+spriteType = {
+	name = "GFX_goal_SCX_focus_8"
+	texturefile = "gfx/interface/goals/SCX/SCX_focus_8.dds"
+}
+spriteType = {
+	name = "GFX_goal_SCX_focus_9"
+	texturefile = "gfx/interface/goals/SCX/SCX_focus_9.dds"
+}
+spriteType = {
+	name = "GFX_goal_SCX_focus_10"
+	texturefile = "gfx/interface/goals/SCX/SCX_focus_10.dds"
+}
+spriteType = {
+	name = "GFX_goal_SCX_focus_11"
+	texturefile = "gfx/interface/goals/SCX/SCX_focus_11.dds"
+}
+spriteType = {
+	name = "GFX_goal_SCX_focus_12"
+	texturefile = "gfx/interface/goals/SCX/SCX_focus_12.dds"
+}
+spriteType = {
+	name = "GFX_goal_SCX_focus_13"
+	texturefile = "gfx/interface/goals/SCX/SCX_focus_13.dds"
+}
+spriteType = {
+	name = "GFX_goal_SCX_focus_14"
+	texturefile = "gfx/interface/goals/SCX/SCX_focus_14.dds"
+}
+spriteType = {
+	name = "GFX_goal_SCX_focus_15"
+	texturefile = "gfx/interface/goals/SCX/SCX_focus_15.dds"
+}
+spriteType = {
+	name = "GFX_goal_SCX_focus_16"
+	texturefile = "gfx/interface/goals/SCX/SCX_focus_16.dds"
+}
+spriteType = {
+	name = "GFX_goal_SCX_focus_17"
+	texturefile = "gfx/interface/goals/SCX/SCX_focus_17.dds"
+}
+spriteType = {
+	name = "GFX_goal_SCX_focus_18"
+	texturefile = "gfx/interface/goals/SCX/SCX_focus_18.dds"
+}
+spriteType = {
+	name = "GFX_goal_SCX_focus_19"
+	texturefile = "gfx/interface/goals/SCX/SCX_focus_19.dds"
+}
+spriteType = {
+	name = "GFX_goal_SCX_focus_20"
+	texturefile = "gfx/interface/goals/SCX/SCX_focus_20.dds"
+}
+spriteType = {
+	name = "GFX_goal_SCX_focus_21"
+	texturefile = "gfx/interface/goals/SCX/SCX_focus_21.dds"
+}
+spriteType = {
+	name = "GFX_goal_SCX_focus_22"
+	texturefile = "gfx/interface/goals/SCX/SCX_focus_22.dds"
+}
+spriteType = {
+	name = "GFX_goal_SCX_focus_23"
+	texturefile = "gfx/interface/goals/SCX/SCX_focus_23.dds"
+}
+spriteType = {
+	name = "GFX_goal_SCX_focus_24"
+	texturefile = "gfx/interface/goals/SCX/SCX_focus_24.dds"
+}
+spriteType = {
+	name = "GFX_goal_SCX_focus_25"
+	texturefile = "gfx/interface/goals/SCX/SCX_focus_25.dds"
+}
+
+
+
+spriteType = {
+	name = "GFX_goal_AUS_HRE_0"
+	texturefile = "gfx/interface/goals/AUS/AUS_HRE_0.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_german_0"
+	texturefile = "gfx/interface/goals/AUS/AUS_german_0.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_ethnic_construction_0"
+	texturefile = "gfx/interface/goals/AUS/AUS_ethnic_construction_0.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_german_1"
+	texturefile = "gfx/interface/goals/AUS/AUS_german_1.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_german_2"
+	texturefile = "gfx/interface/goals/AUS/AUS_german_2.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_german_3"
+	texturefile = "gfx/interface/goals/AUS/AUS_german_3.dds"
+}
+
+spriteType = {
+	name = "GFX_goal_AUS_HRE_1"
+	texturefile = "gfx/interface/goals/AUS/AUS_HRE_1.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_german_9"
+	texturefile = "gfx/interface/goals/AUS/AUS_german_9.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_german_6"
+	texturefile = "gfx/interface/goals/AUS/AUS_german_6.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_german_5"
+	texturefile = "gfx/interface/goals/AUS/AUS_german_5.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_german_4"
+	texturefile = "gfx/interface/goals/AUS/AUS_german_4.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_HRE_10"
+	texturefile = "gfx/interface/goals/AUS/AUS_HRE_10.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_HRE_11"
+	texturefile = "gfx/interface/goals/AUS/AUS_HRE_11.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_HRE_9"
+	texturefile = "gfx/interface/goals/AUS/AUS_HRE_9.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_HRE_6"
+	texturefile = "gfx/interface/goals/AUS/AUS_HRE_6.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_ethnic_construction_1"
+	texturefile = "gfx/interface/goals/AUS/AUS_ethnic_construction_1.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_HRE_3"
+	texturefile = "gfx/interface/goals/AUS/AUS_HRE_3.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_ethnic_construction_3"
+	texturefile = "gfx/interface/goals/AUS/AUS_ethnic_construction_3.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_ethnic_construction_5"
+	texturefile = "gfx/interface/goals/AUS/AUS_ethnic_construction_5.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_HRE_2"
+	texturefile = "gfx/interface/goals/AUS/AUS_HRE_2.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_HRE_5"
+	texturefile = "gfx/interface/goals/AUS/AUS_HRE_5.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_HRE_7"
+	texturefile = "gfx/interface/goals/AUS/AUS_HRE_7.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_ethnic_construction_4"
+	texturefile = "gfx/interface/goals/AUS/AUS_ethnic_construction_4.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_ethnic_construction_2"
+	texturefile = "gfx/interface/goals/AUS/AUS_ethnic_construction_2.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_HRE_4"
+	texturefile = "gfx/interface/goals/AUS/AUS_HRE_4.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_HRE_8"
+	texturefile = "gfx/interface/goals/AUS/AUS_HRE_8.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_german_15"
+	texturefile = "gfx/interface/goals/AUS/AUS_german_15.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_HRE_12"
+	texturefile = "gfx/interface/goals/AUS/AUS_HRE_12.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_HRE_14"
+	texturefile = "gfx/interface/goals/AUS/AUS_HRE_14.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_HRE_13"
+	texturefile = "gfx/interface/goals/AUS/AUS_HRE_13.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_reform_0"
+	texturefile = "gfx/interface/goals/AUS/AUS_reform_0.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_german_14"
+	texturefile = "gfx/interface/goals/AUS/AUS_german_14.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_german_13"
+	texturefile = "gfx/interface/goals/AUS/AUS_german_13.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_german_12"
+	texturefile = "gfx/interface/goals/AUS/AUS_german_12.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_german_7"
+	texturefile = "gfx/interface/goals/AUS/AUS_german_7.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_german_8"
+	texturefile = "gfx/interface/goals/AUS/AUS_german_8.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_reform_1"
+	texturefile = "gfx/interface/goals/AUS/AUS_reform_1.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_german_10"
+	texturefile = "gfx/interface/goals/AUS/AUS_german_10.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_german_11"
+	texturefile = "gfx/interface/goals/AUS/AUS_german_11.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_reform_3"
+	texturefile = "gfx/interface/goals/AUS/AUS_reform_3.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_reform_4"
+	texturefile = "gfx/interface/goals/AUS/AUS_reform_4.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_reform_5"
+	texturefile = "gfx/interface/goals/AUS/AUS_reform_5.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_reform_6"
+	texturefile = "gfx/interface/goals/AUS/AUS_reform_6.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_reform_7"
+	texturefile = "gfx/interface/goals/AUS/AUS_reform_7.dds"
+}
+spriteType = {
+	name = "GFX_goal_AUS_reform_2"
+	texturefile = "gfx/interface/goals/AUS/AUS_reform_2.dds"
+}
+##
+spriteType = {
+	name = "GFX_goal_KLD_focus0"
+	texturefile = "gfx/interface/goals/KLD/KLD_focus0.dds"
+}
+spriteType = {
+	name = "GFX_goal_KLD_focus1"
+	texturefile = "gfx/interface/goals/KLD/KLD_focus1.dds"
+}
+spriteType = {
+	name = "GFX_goal_KLD_focus2"
+	texturefile = "gfx/interface/goals/KLD/KLD_focus2.dds"
+}
+spriteType = {
+	name = "GFX_goal_KLD_focus3"
+	texturefile = "gfx/interface/goals/KLD/KLD_focus3.dds"
+}
+spriteType = {
+	name = "GFX_goal_KLD_focus4"
+	texturefile = "gfx/interface/goals/KLD/KLD_focus4.dds"
+}
+spriteType = {
+	name = "GFX_goal_KLD_focus5"
+	texturefile = "gfx/interface/goals/KLD/KLD_focus5.dds"
+}
+
 }

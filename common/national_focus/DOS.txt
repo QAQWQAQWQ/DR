@@ -1,0 +1,94 @@
+#!gfx:interface\RS_icon.gfx
+focus_tree = {
+	id = DOS
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = DOS
+		}
+	}
+	default = no
+	focus = {
+		id = DOS_sword_without_handle
+		icon = GFX_goal_DOS_sword_without_handle
+		cost = 0.00
+		x = 12
+		y = 0
+completion_reward = {
+	add_opinion_modifier = {
+		target = LMJ
+		modifier = Discord_Pope
+	}
+}
+	}
+	focus = {
+		id = DOS_Son_the_chessboard
+		icon = GFX_goal_DOS_Son_the_chessboard
+		cost = 0.00
+		prerequisite = {
+			focus = DOS_sword_without_handle
+		}
+		x = 12
+		y = 1
+
+	}
+	focus = {
+		id = DOS_Nachfolgekrise
+		icon = GFX_goal_DOS_Nachfolgekrise
+		cost = 0.00
+		prerequisite = {
+			focus = DOS_sword_without_handle
+		}
+		x = 12
+		y = 2
+completion_reward = {
+	country_event = DOS.1
+}
+	}
+	focus = {
+		id = DOS_turn_prussia
+		icon = GFX_goal_DOS_turn_prussia
+		cost = 0.00
+		prerequisite = {
+			focus = DOS_Nachfolgekrise
+		}
+		mutually_exclusive = {
+			focus = DOS_king_brother
+			focus = DOS_turn_austria
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = DOS_turn_austria
+		icon = GFX_goal_DOS_turn_austria
+		cost = 0.00
+		prerequisite = {
+			focus = DOS_Nachfolgekrise
+		}
+		mutually_exclusive = {
+			focus = DOS_king_brother
+			focus = DOS_turn_prussia
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = DOS_king_brother
+		icon = GFX_goal_DOS_king_brother
+		cost = 0.00
+		prerequisite = {
+			focus = DOS_Nachfolgekrise
+		}
+		mutually_exclusive = {
+			focus = DOS_turn_austria
+			focus = DOS_turn_prussia
+		}
+		x = 12
+		y = 3
+
+	}
+}

@@ -10,6 +10,23 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_Yomiuri_Shimbun"
+		texturefile = "gfx/interface/event_logo/Yomiuri_Shimbun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_L_Humanite"
+		texturefile = "gfx/interface/event_logo/L_Humanite.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_la_stampa"
+		texturefile = "gfx/interface/event_logo/la_stampa.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
 			name = "GFX_Getevent_logo"
 			texturefile = "gfx/interface/event_logo/The_times.dds"
 			legacy_lazy_load = no

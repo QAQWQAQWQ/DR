@@ -1,0 +1,11 @@
+ideas = {
+    country = {
+		RDN_Camorra = {
+			picture = Camorra
+			modifier = {
+				stability_weekly = -0.01
+				political_power_gain = 0.1
+			}
+          }
+		}
+}

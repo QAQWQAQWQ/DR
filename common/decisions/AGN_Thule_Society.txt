@@ -1,0 +1,158 @@
+AGN_thule_society_decisions = {
+    AGN_literature_review = {
+		visible = {
+			OR = {
+				original_tag = AGN
+			}
+		}		
+		available = {
+			OR = {
+				original_tag = AGN
+			}
+		}
+		cost = 50
+		fire_only_once = no
+		days_remove = 100
+		complete_effect = {
+		}
+		remove_effect = {
+            custom_effect_tooltip = AGN_literature_review_tool
+            if = { 
+                limit = { 
+                    check_variable = { random < 0.1 } 
+                }
+                add_to_variable = {
+                    var = AGN.thule_position
+                    value = 20
+                }
+	            else = {
+                    if = { 
+                        limit = { 
+                            check_variable = { random < 0.2 } 
+                        }
+                        add_to_variable = {
+                            var = AGN.thule_position
+                            value = 15
+                        }
+                        else = {
+                            limit = { 
+                                check_variable = { random < 0.4 } 
+                            }
+                            add_to_variable = {
+                                var = AGN.thule_position
+                                value = 10
+                            }
+                            else = {
+                                add_to_variable = {
+                                    var = AGN.thule_position
+                                    value = 5
+                                }
+                            }
+                        }
+                    }
+	            } 
+            }
+            clamp_variable = {
+                var = AGN.thule_position
+                min = 0
+                max = 100
+            }
+		}
+    }
+    AGN_search_party = {
+		visible = {
+			OR = {
+				original_tag = AGN
+			}
+		}		
+		available = {
+			OR = {
+				original_tag = AGN
+			}
+		}
+		cost = 120
+		fire_only_once = no
+		days_remove = 200
+		complete_effect = {
+		}
+		remove_effect = {
+            custom_effect_tooltip = AGN_search_party_tool
+            set_variable = {
+                AGN.search_progress_p = AGN.thule_position
+            }
+            divide_variable = {
+                var = AGN.search_progress_p 
+                value = 100
+            }
+            if = { 
+                limit = { 
+                    check_variable = { random < 0.2 } 
+                }
+                add_to_variable = {
+                    var = AGN.search_progress
+                    value = 20
+                }
+	            else = {
+                    if = { 
+                        limit = { 
+                            check_variable = { random < 0.2 } 
+                        }
+                        add_to_variable = {
+                            var = AGN.search_progress
+                            value = 15
+                        }
+                        else = {
+                            limit = { 
+                                check_variable = { random < 0.2 } 
+                            }
+                            add_to_variable = {
+                                var = AGN.search_progress
+                                value = 10
+                            }
+                            else = {
+                                add_to_variable = {
+                                    var = AGN.search_progress
+                                    value = 5
+                                }
+                            }
+                        }
+                    }
+	            } 
+            }
+            clamp_variable = {
+                var = AGN.search_progress
+                min = 0
+                max = 100
+            }
+            if = {
+                limit = {
+                    check_variable = {
+                        AGN.search_progress = 100
+                    }
+                }
+                if = {
+                    limit = {
+                        NOT = {
+                            check_variable = {
+                                AGN.search_progress_p < random
+                            }
+                        }
+                    }
+                    AGN_had_find_thule = yes
+                    else = {
+                        AGN = { country_event = thule.1 }
+                        add_to_variable = {
+                            var = AGN.thule_position
+                            value = 10
+                        }
+                        clamp_variable = {
+                            var = AGN.thule_position
+                            min = 0
+                            max = 100
+                        }
+                    }
+                }
+            }
+		}
+    }
+}

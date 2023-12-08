@@ -1,5 +1,13 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_TEQ_1"
+		texturefile = "gfx/event/TEQ/TEQ_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Balkan_War"
+		texturefile = "gfx/event/NEWS/Balkan_War.dds"
+	}
+	spriteType = {
 		name = "GFX_Brother_Eris_Wall"
 		texturefile = "gfx/event/WWS/Brother_Eris_Wall.dds"
 	}
@@ -19,6 +27,10 @@ spriteTypes = {
 		name = "GFX_Far_Eastern_Republics"
 		texturefile = "gfx/event/FER/Far_Eastern_Republics.tga"
 	}
+	spriteType = {
+		name = "GFX_Temple_Street_incident"
+		texturefile = "gfx/event/FER/Temple_Street_incident.tga"
+	}
 	
 	spriteType = {
 		name = "GFX_Independence_Ukraine"
@@ -28,6 +40,7 @@ spriteTypes = {
 		name = "GFX_Poland_independent"
 		texturefile = "gfx/event/PBL/Poland_independent.tga"
 	}
+	
 	spriteType = {
 		name = "GFX_Finland_Independence"
 		texturefile = "gfx/event/FEL/Finland_Independence.tga"
@@ -73,6 +86,55 @@ spriteTypes = {
 		name = "GFX_LJC"
 		texturefile = "gfx/event/FRW/LJC.tga"
 	}
+	spriteType = {
+		name = "GFX_FRW_18"
+		texturefile = "gfx/event/FRW/FRW_18.dds"
+	}
+	spriteType = {
+		name = "GFX_FRW_19"
+		texturefile = "gfx/event/FRW/FRW_19.dds"
+	}
+	spriteType = {
+		name = "GFX_FRW_20"
+		texturefile = "gfx/event/FRW/FRW_20.dds"
+	}
+	spriteType = {
+		name = "GFX_FRW_21"
+		texturefile = "gfx/event/FRW/FRW_21.dds"
+	}
+	spriteType = {
+		name = "GFX_FRW_28"
+		texturefile = "gfx/event/FRW/FRW_28.dds"
+	}
+	
+
+
+
+
+
+
+	spriteType = {
+		name = "GFX_CPC_1"
+		texturefile = "gfx/event/CPC/CPC_1.tga"
+	}
+
+
+	spriteType = {
+		name = "GFX_SHW_24"
+		texturefile = "gfx/event/SHW/SHW_24.DDS"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
 	spriteType = {
 		name = "GFX_Suez_Canal_Crisis"
 		texturefile = "gfx/event/TEQ/Suez_Canal_Crisis.tga"
@@ -122,6 +184,11 @@ spriteTypes = {
 		texturefile = "gfx/event/ENL/London_stock_market_crash.tga"
 	}
 	spriteType = {
+		name = "GFX_ENL_Labour_1"
+		texturefile = "gfx/event/ENL/ENL_Labour_1.tga"
+	}
+	
+	spriteType = {
 		name = "GFX_Hungarian_uprising"
 		texturefile = "gfx/event/AOX/Hungarian_uprising.tga"
 	}
@@ -132,6 +199,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_drought"
 		texturefile = "gfx/event/SCX/drought.tga"
+	}
+	spriteType = {
+		name = "GFX_SCX_event2"
+		texturefile = "gfx/event/SCX/SCX_event2.dds"
+	}
+	spriteType = {
+		name = "GFX_SCX_event3"
+		texturefile = "gfx/event/SCX/SCX_event3.dds"
+	}
+	spriteType = {
+		name = "GFX_SCX_event4"
+		texturefile = "gfx/event/SCX/SCX_event4.dds"
 	}
 	spriteType = {
 		name = "GFX_GOV"
@@ -181,9 +260,14 @@ spriteTypes = {
 		name = "GFX_train"
 		texturefile = "gfx/event/JS/train.dds"
 	}
+
 	spriteType = {
 		name = "GFX_Emperor_Meiji"
 		texturefile = "gfx/event/JPN/Emperor_Meiji.dds"
+	}
+	spriteType = {
+		name = "GFX_JPN_5"
+		texturefile = "gfx/event/JPN/JPN_5.dds"
 	}
 	spriteType = {
 		name = "GFX_illness"
@@ -266,6 +350,11 @@ spriteTypes = {
 		texturefile = "gfx/event/ENL/Ireland.dds"
 	}
 	spriteType = {
+		name = "GFX_countryevent_1"
+		texturefile = "gfx/event/NEWS/countryevent_1.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_White_Stadium"
 		texturefile = "gfx/event/ENL/White_Stadium.dds"
 	}
@@ -273,6 +362,7 @@ spriteTypes = {
 		name = "GFX_Stock_Exchange"
 		texturefile = "gfx/event/ENL/Stock_Exchange.dds"
 	}
+	
 	spriteType = {
 		name = "GFX_WWI"
 		texturefile = "gfx/event/NEWS/WWI.tga"
@@ -303,6 +393,14 @@ spriteTypes = {
 		texturefile = "gfx/event/ZHX/BOOK.tga"
 	}
 	spriteType = {
+		name = "GFX_aq"
+		texturefile = "gfx/event/ZHX/aq.dds"
+	}
+	spriteType = {
+		name = "GFX_ZHX_6"
+		texturefile = "gfx/event/ZHX/ZHX_6.dds"
+	}
+	spriteType = {
 		name = "GFX_Spanish_Flu"
 		texturefile = "gfx/event/SBY/Spanish_Flu.tga"
 	}
@@ -330,6 +428,112 @@ spriteTypes = {
 		name = "GFX_FUM"
 		texturefile = "gfx/event/ITE/FUM.tga"
 	}
+	spriteType = {
+		name = "GFX_Rasputin_died"
+		texturefile = "gfx/event/SHW/Rasputin_died.dds"
+	}
+	spriteType = {
+		name = "GFX_Restoration_Israel"
+		texturefile = "gfx/event/TSL/Restoration_Israel.tga"
+	}
+	spriteType = {
+		name = "GFX_BRA_9"
+		texturefile = "gfx/event/BRA/BRA_9.tga"
+	}
+	spriteType = {
+		name = "GFX_BRA_8"
+		texturefile = "gfx/event/BRA/BRA_8.tga"
+	}
+	spriteType = {
+		name = "GFX_BRA_7"
+		texturefile = "gfx/event/BRA/BRA_7.tga"
+	}
+	spriteType = {
+		name = "GFX_BRA_6"
+		texturefile = "gfx/event/BRA/BRA_6.tga"
+	}
+	spriteType = {
+		name = "GFX_BRA_5"
+		texturefile = "gfx/event/BRA/BRA_5.tga"
+	}
+	spriteType = {
+		name = "GFX_BRA_4"
+		texturefile = "gfx/event/BRA/BRA_4.tga"
+	}
+	spriteType = {
+		name = "GFX_BRA_3"
+		texturefile = "gfx/event/BRA/BRA_3.tga"
+	}
+	spriteType = {
+		name = "GFX_BRA_2"
+		texturefile = "gfx/event/BRA/BRA_2.tga"
+	}
+	spriteType = {
+		name = "GFX_BRA_1"
+		texturefile = "gfx/event/BRA/BRA_1.tga"
+	}
+	spriteType = {
+		name = "GFX_GUG_1"
+		texturefile = "gfx/event/GUG/GUG_1.dds"
+	}
+	spriteType = {
+		name = "GFX_LIF_1"
+		texturefile = "gfx/event/LEF/LEF_1.dds"
+	}
+	spriteType = {
+		name = "GFX_NPL_1"
+		texturefile = "gfx/event/NPL/NPL_1.dds"
+	}
+	spriteType = {
+		name = "GFX_NPL_2"
+		texturefile = "gfx/event/NPL/NPL_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Paris_Commune_1"
+		texturefile = "gfx/event/FRW/Paris_Commune_1.dds"
+	}
+	spriteType = {
+		name = "GFX_WorldNews_10"
+		texturefile = "gfx/event/NEWS/WorldNews_10.dds"
+	}
+	spriteType = {
+		name = "GFX_KLD_1"
+		texturefile = "gfx/event/KLD/KLD_1.dds"
+	}
+	spriteType = {
+		name = "GFX_KLD_2"
+		texturefile = "gfx/event/KLD/KLD_2.dds"
+	}
+	spriteType = {
+		name = "GFX_KLD_3"
+		texturefile = "gfx/event/KLD/KLD_3.dds"
+	}
+	spriteType = {
+		name = "GFX_KLD_4"
+		texturefile = "gfx/event/KLD/KLD_4.dds"
+	}
+	spriteType = {
+		name = "GFX_KLD_5"
+		texturefile = "gfx/event/KLD/KLD_5.dds"
+	}
+	spriteType = {
+		name = "GFX_KLD_6"
+		texturefile = "gfx/event/KLD/KLD_6.dds"
+	}
+	spriteType = {
+		name = "GFX_KLD_7"
+		texturefile = "gfx/event/KLD/KLD_7.dds"
+	}
+	spriteType = {
+		name = "GFX_KLD_8"
+		texturefile = "gfx/event/KLD/KLD_8.dds"
+	}
 	
-	
+	spriteType = {
+		name = "GFX_DSD_1"
+		texturefile = "gfx/event/DSD/DSD_1.dds"
+	}
+
+
+
 }

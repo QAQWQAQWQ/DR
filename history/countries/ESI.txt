@@ -13,7 +13,7 @@ set_technology = {
 }
 
 recruit_character = ESI_Mikhail_II
-
+recruit_character = ESI_Alexander_Bulatovich
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -48,15 +48,14 @@ recruit_character = ESI_Mikhail_II
 	}
 
 set_politics = {
-	ruling_party = monarchy
+	ruling_party = authoritarian
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
-
+add_ideas = {ESI_Black_Cossacks}
 set_popularities = {
-	democratic = 5
-	national_populist = 1
-	monarchy = 89
-	communism = 5
+	democratic = 10
+	national_populist = 12
+	authoritarian = 78
 }

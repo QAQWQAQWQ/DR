@@ -1,0 +1,169 @@
+﻿###########################
+# BRA Events
+###########################
+
+add_namespace = BRA
+
+country_event = {
+	id = BRA.1
+	title = BRA.1.t
+	desc = BRA.1.d
+	picture = GFX_BRA_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+			name = BRA.1.a
+	}
+}
+country_event = {
+	id = BRA.2
+	title = BRA.2.t
+	desc = BRA.2.d
+	picture = GFX_BRA_2
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+			name = BRA.2.a
+			
+	}
+}
+country_event = {
+	id = BRA.3
+	title = BRA.3.t
+	desc = BRA.3.d
+	picture = GFX_BRA_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+			name = BRA.3.a
+			country_event = {id=BRA.8 days=20}
+	}
+}
+country_event = {
+	id = BRA.4
+	title = BRA.4.t
+	desc = BRA.4.d
+	picture = GFX_BRA_4
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+			name = BRA.4.a
+			BRB= {
+				transfer_state = 687
+				add_state_core = 687
+				transfer_state = 309
+				add_state_core = 309
+				transfer_state = 310
+				add_state_core = 310
+	}
+	BRB={declare_war_on = { target = BRA type = annex_everything }}
+	}
+}
+country_event = {
+	id = BRA.5
+	title = BRA.5.t
+	desc = BRA.5.d
+	picture = GFX_BRA_5
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+			name = BRA.5.a
+			country_event = {id=BRA.4 days=11} 
+			BRG = {
+				transfer_state = 280
+				add_state_core = 280
+	}
+	BRG={declare_war_on = { target = BRA type = annex_everything }}
+}
+}
+country_event = {
+	id = BRA.6
+	title = BRA.6.t
+	desc = BRA.6.d
+	picture = GFX_BRA_6
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+			name = BRA.6.a
+			country_event = {id=BRA.5 days=11} 
+			BRY={
+				transfer_state = 499
+				add_state_core = 499
+			}
+			BRY={declare_war_on = { target = BRA type = annex_everything }}
+	}
+}
+country_event = {
+	id = BRA.7
+	title = BRA.7.t
+	desc = BRA.7.d
+	picture = GFX_BRA_7
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+			name = BRA.7.a
+			country_event = {id=BRA.6 days=11} 
+			
+	}
+}
+country_event = {
+	id = BRA.8
+	title = BRA.8.t
+	desc = BRA.8.d
+	picture = GFX_BRA_8
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+			name = BRA.8.a
+			country_event = {id=BRA.7 days=15}
+			country_event = {id=BRA.8 days=30}
+			BRC = {
+				transfer_state = 504
+				add_state_core = 504
+	} 
+	BRC={declare_war_on = { target = BRA type = annex_everything }}
+	}
+}
+country_event = {
+	id = BRA.9
+	title = BRA.9.t
+	desc = BRA.9.d
+	picture = GFX_BRA_9
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+			name = BRA.9.a
+	}
+}
+country_event = {
+	id = BRA.10
+	title = BRA.10.t
+	desc = BRA.10.d
+	picture = GFX_BRA_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+			name = BRA.10.a
+			add_to_variable = { var = BRA.Literacy value = 0.2 tooltip = add_Literacy_tt_up }  
+	}
+}

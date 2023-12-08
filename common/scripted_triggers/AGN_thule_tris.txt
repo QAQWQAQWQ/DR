@@ -1,0 +1,6 @@
+AGN_we_had_find_thule = {
+    tooltip = AGN_we_had_find_it
+    check_variable = {
+        AGN.we_had_find_it = 1
+    }
+}

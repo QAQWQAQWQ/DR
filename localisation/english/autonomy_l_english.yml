@@ -1,6 +1,7 @@
 ﻿l_english:
  autonomy_dominion:0 "自治领"
  autonomy_supervised_state:0 "监管国"
+ autonomy_Crown_Territory:0 "皇冠领地"
  autonomy_colony:0 "殖民领"
  autonomy_puppet:0 "傀儡国"
  autonomy_integrated_puppet:0 "半吞并傀儡国"
@@ -13,7 +14,7 @@
  autonomy_wtt_imperial_protectorate:0 "皇国保护国"
  autonomy_wtt_imperial_subject:1 "皇国臣属国"
  autonomy_collaboration_government:0 "合作国"
- autonomy_personal_union:0 "Personal Union"
+ autonomy_personal_union:0 "加盟国"
  AUTONOMY_CAN_TAKE_DESC:1 "$OWNER|UH$可以变为$NEXTLEVEL|H$"
  AUTONOMY_CANT_TAKE_DESC:1 "$OWNER|UH$还无法变为$NEXTLEVEL|H$"
  AUTONOMY_CAN_LOSE_DESC:1 "$OWNER|UH$可以降为$PREVLEVEL|H$"

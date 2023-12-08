@@ -1,13 +1,7 @@
 equipments = {
 
 	ship_hull_carrier = {
-		year = 1922
-
-		can_be_produced = {
-			NOT = {
-				has_idea = BUL_army_restrictions
-			}
-		}
+		year = 1900
 
 		is_archetype = yes
 		is_buildable = no
@@ -92,7 +86,7 @@ equipments = {
 		armor_value = 0
 
 		
-		surface_detection = 26
+		surface_detection = 20
 		sub_detection = 5
 		surface_visibility = 30
 		naval_speed = 26
@@ -103,7 +97,7 @@ equipments = {
 		max_strength = 250
 		
 
-		fuel_consumption = 87
+		fuel_consumption = 0
 
 		# (Describes combat behaviour - hidden stat)
 		offensive_weapons = no
@@ -118,8 +112,7 @@ equipments = {
 	}
 
 	ship_hull_carrier_1 = {
-		abbreviation = "haa"
-		year = 1936
+		year = 1910
 		visual_level = 1
 		visual_tech_level_addition = 2
 		archetype = ship_hull_carrier
@@ -133,8 +126,7 @@ equipments = {
 	}
 
 	ship_hull_carrier_2 = {
-		abbreviation = "hab"
-		year = 1940
+		year = 1916
 		visual_level = 1
 		archetype = ship_hull_carrier
 		priority = 1000
@@ -173,7 +165,7 @@ equipments = {
 		reliability = 0.75
 		max_strength = 325
 		
-
+		fuel_consumption = 0
 
 		build_cost_ic = 2600
 		resources = {
@@ -184,8 +176,7 @@ equipments = {
 	}
 
 	ship_hull_carrier_3 = {
-		abbreviation = "hac"
-		year = 1944
+		year = 1922
 		visual_level = 1
 		archetype = ship_hull_carrier
 		priority = 1000
@@ -232,7 +223,7 @@ equipments = {
 		reliability = 0.8
 		max_strength = 350
 		
-
+		fuel_consumption = 97
 
 		build_cost_ic = 3250
 		resources = {
@@ -243,8 +234,7 @@ equipments = {
 	}
 
 	ship_hull_carrier_conversion_bb = {
-		abbreviation = "had"
-		year = 1922
+		year = 1900
 		visual_level = 0
 		archetype = ship_hull_carrier
 		priority = 1100
@@ -288,8 +278,7 @@ equipments = {
 	}
 
 	ship_hull_carrier_conversion_ca = {
-		abbreviation = "hae"
-		year = 1922
+		year = 1900
 		visual_level = 0
 		archetype = ship_hull_carrier
 		priority = 1200
@@ -330,7 +319,7 @@ equipments = {
 ###Prescripted designs for people without MtG
 
 	carrier_1 = {
-		year = 1922
+		year = 1900
 		visual_level = 1
 		archetype = ship_hull_carrier		
 		priority = 1000
@@ -385,7 +374,7 @@ equipments = {
 		lg_attack = 0
 		
 		torpedo_attack = 0
-		carrier_size = 5
+		carrier_size = 0.5
 		
 		anti_air_attack = 0
 		
@@ -403,7 +392,7 @@ equipments = {
 		max_strength = 250
 		
 
-		fuel_consumption = 87
+		fuel_consumption = 0
 
 		# (Describes combat behaviour - hidden stat)
 		offensive_weapons = no
@@ -419,7 +408,7 @@ equipments = {
 	}
 
 	carrier_2 = {
-		year = 1936
+		year = 1910
 		visual_level = 1
 		archetype = ship_hull_carrier
 		priority = 1000
@@ -474,7 +463,7 @@ equipments = {
 		lg_armor_piercing = 0
 		lg_attack = 0
 		torpedo_attack = 0
-		carrier_size = 15
+		carrier_size = 0.8
 		
 		anti_air_attack = 2
 		
@@ -491,7 +480,7 @@ equipments = {
 		
 		max_strength = 325
 		
-
+		fuel_consumption = 0
 
 		build_cost_ic = 4500
 		resources = {
@@ -503,7 +492,7 @@ equipments = {
 	}
 
 	carrier_3 = {
-		year = 1940
+		year = 1916
 		visual_level = 1
 		archetype = ship_hull_carrier
 		priority = 1000
@@ -521,7 +510,7 @@ equipments = {
 		lg_armor_piercing = 0
 		lg_attack = 0
 		torpedo_attack = 0
-		carrier_size = 10
+		carrier_size = 0.10
 		
 		anti_air_attack = 8
 		
@@ -538,7 +527,7 @@ equipments = {
 		
 		max_strength = 350
 		
-
+		fuel_consumption = 0
 
 		build_cost_ic = 5250
 		resources = {
@@ -550,7 +539,7 @@ equipments = {
 	}
 
 	carrier_4 = {
-		year = 1944
+		year = 1922
 		visual_level = 1
 		archetype = ship_hull_carrier
 		priority = 1000
@@ -568,7 +557,7 @@ equipments = {
 		lg_armor_piercing = 0
 		lg_attack = 0
 		torpedo_attack = 0
-		carrier_size = 25
+		carrier_size = 0.15
 		
 		anti_air_attack = 10
 		
@@ -585,7 +574,7 @@ equipments = {
 		
 		max_strength = 400
 		
-
+		fuel_consumption = 97
 
 		build_cost_ic = 6000
 		resources = {

@@ -15,19 +15,22 @@ text = {
 				OR = {
 					tag = AOX
 					is_in_faction_with = AOX
+					is_puppet_of = AOX
 				}
 	}
 }
 text = {
-	localization_key = GFX_Second_International1
+	localization_key = GFX_Se_International
 
 	trigger = {
 		   OR = {
-			   tag = FRW
+			tag = FRW
 			   is_in_faction_with = FRW
+			   is_puppet_of = FRW
 		   }
 }
 }
+
 text = {
 	localization_key = GFX_North_German_Confederation
 
@@ -35,6 +38,62 @@ text = {
 		   OR = {
 			   tag = WWS
 			   is_in_faction_with = WWS
+			   is_puppet_of = WWS
+		   }
+}
+}
+
+text = {
+	localization_key = GFX_Rpublic_China
+
+	trigger = {
+		   OR = {
+			   tag = ZHX
+			   is_in_faction_with = ZHX
+			   is_puppet_of = ZHX
+		   }
+}
+}
+text = {
+	localization_key = GFX_Commonwealth_of_Nations
+
+	trigger = {
+		   OR = {
+			   tag = ENL
+			   is_in_faction_with = ENL
+			   is_puppet_of = ENL
+		   }
+}
+}
+text = {
+	localization_key = GFX_Empire_Japan
+
+	trigger = {
+		   OR = {
+			   tag = KON
+			   is_in_faction_with = KON
+			   is_puppet_of = KON
+		   }
+}
+}
+text = {
+	localization_key = GFX_Bonaparte_family_alliance
+
+	trigger = {
+		   OR = {
+			   tag = NPL
+			   is_in_faction_with = NPL
+			   is_puppet_of = NPL
+		   }
+}
+}
+text = {
+	localization_key = GFX_Russian_White_Army
+
+	trigger = {
+		   OR = {
+			   tag = SHW
+			   is_in_faction_with = SHW
 		   }
 }
 }

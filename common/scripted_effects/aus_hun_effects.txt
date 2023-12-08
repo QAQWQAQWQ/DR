@@ -1,0 +1,385 @@
+aushun_clamp_vars = {
+	hidden_effect = {
+		clamp_variable = {
+			var = AOX.aus_hun_gov_sup^0
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = AOX.aus_hun_egree^0
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = AOX.aus_hun_gov_sup^1
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = AOX.aus_hun_egree^1
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = AOX.aus_hun_gov_sup^2
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = AOX.aus_hun_egree^2
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = AOX.aus_hun_gov_sup^3
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = AOX.aus_hun_egree^3
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = AOX.aus_hun_gov_sup^4
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = AOX.aus_hun_egree^4
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = AOX.aus_hun_gov_sup^5
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = AOX.aus_hun_egree^5
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = AOX.aus_hun_gov_sup^6
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = AOX.aus_hun_egree^6
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = AOX.aus_hun_gov_sup^7
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = AOX.aus_hun_egree^7
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = AOX.aus_hun_gov_sup^8
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = AOX.aus_hun_egree^8
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = AOX.aus_hun_gov_sup^9
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = AOX.aus_hun_egree^9
+			min = 0
+			max = 100
+		}
+	}
+}
+get_more_aus_hun_sup_5 = {
+    custom_effect_tooltip = more_aus_hun_sup_5
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^aus_hun_nat
+        value = 5
+    }
+    aushun_clamp_vars = yes
+}
+get_less_aus_hun_sup_15 = {
+    custom_effect_tooltip = less_aus_hun_sup_15
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^aus_hun_nat
+        value = -15
+    }
+    aushun_clamp_vars = yes
+}
+get_less_aus_hun_aut_20 = {
+    custom_effect_tooltip = less_aus_hun_aut_20
+    add_to_variable = {
+        var = AOX.aus_hun_egree^aus_hun_nat
+        value = -20
+    }
+    aushun_clamp_vars = yes
+}
+get_more_aus_hun_sup_20 = {
+    custom_effect_tooltip = more_aus_hun_sup_20
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^aus_hun_nat
+        value = 20
+    }
+    aushun_clamp_vars = yes
+}
+get_more_aus_hun_aut_15 = {
+    custom_effect_tooltip = more_aus_hun_aut_15
+    add_to_variable = {
+        var = AOX.aus_hun_egree^aus_hun_nat
+        value = 15
+    }
+    aushun_clamp_vars = yes
+}
+get_less_aus_hun_every_sup_5 = {
+    custom_effect_tooltip = less_aus_hun_every_sup_5
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^1
+        value = -5
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^2
+        value = -5
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^3
+        value = -5
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^4
+        value = -5
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^5
+        value = -5
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^6
+        value = -5
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^7
+        value = -5
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^8
+        value = -5
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^9
+        value = -5
+    }
+    aushun_clamp_vars = yes
+}
+get_more_aus_hun_every_sup_5 = {
+    custom_effect_tooltip = more_aus_hun_every_sup_5
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^1
+        value = 5
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^2
+        value = 5
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^3
+        value = 5
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^4
+        value = 5
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^5
+        value = 5
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^6
+        value = 5
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^7
+        value = 5
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^8
+        value = 5
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^9
+        value = 5
+    }
+    aushun_clamp_vars = yes
+}
+get_more_aus_hun_every_sup_10 = {
+    custom_effect_tooltip = more_aus_hun_every_sup_10
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^1
+        value = 10
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^2
+        value = 10
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^3
+        value = 10
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^4
+        value = 10
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^5
+        value = 10
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^6
+        value = 10
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^7
+        value = 10
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^8
+        value = 10
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_gov_sup^9
+        value = 10
+    }
+    aushun_clamp_vars = yes
+}
+aus_hun_nat_eth_has_completed = {
+    custom_effect_tooltip = aus_hun_nat_eth_has_completed_tool
+    set_variable = {
+        aus_hun_nat_eth_completed = 1
+    }
+}
+bosnia_war_boom = {
+    if = {
+        limit = {
+            check_variable = {
+                global.bosnia_war_str = 0
+            }
+        }
+        AOX = {
+            end_puppet = KOH
+            end_puppet = DMT
+        }
+        # DMT = { annex_country = { target = KLD transfer_troops = yes } }
+        KOH = { declare_war_on = { target = DMT type = annex_everything } }
+    }
+    set_variable = {
+		global.bosnia_war_str = 1
+	}
+    AOX = {
+        country_event = aushun.2
+    }
+}
+bos_war_end_qwq = {
+    hidden_effect = {
+        DMT = {
+            remove_ideas = {
+                Austrian_Military_Advisor
+            }
+        }
+        if = {
+            limit = {
+                AOX = {
+                    OR = {
+                        has_completed_focus = AUS_bir_1
+                        has_completed_focus = AUS_bir_3
+                    }
+                }
+            }
+            AOX = { set_autonomy = { target = DMT autonomy_state = autonomy_Crown_Territory } }
+                DMT = {
+                    set_politics = {ruling_party = neutrality}
+                    set_popularities = {
+                        democratic = 25
+                        national_populist = 25
+                        neutrality = 40
+                        communism = 10
+                    }
+                }
+        }
+        else = {
+            # DMT = {
+            #    remove_ideas = {
+            #        Part_of_Habsburgs
+            #    }
+            # }
+            every_state = {
+                limit = {
+                    is_core_of = DMT
+                }
+                add_core_of = CRO
+            }
+            every_state = {
+                limit = {
+                    is_claimed_by = DMT
+                }
+                add_claim_by = CRO
+            }
+            CRO = {
+                annex_country = {
+                    target = DMT transfer_troops = yes
+                }
+            }
+        }
+        if = {
+            limit = {
+                AOX = {
+                    has_completed_focus = AUS_bir_2
+                }
+            }
+            AOX = { set_autonomy = { target = KOH autonomy_state = autonomy_Crown_Territory } }
+                KOH = {
+                    set_politics = {ruling_party = neutrality}
+                    set_popularities = {
+                        democratic = 25
+                        national_populist = 25
+                        neutrality = 40
+                        communism = 10
+                    }
+                }
+        }
+        else = {
+            # KOH = {
+            #    remove_ideas = {
+            #        Part_of_Habsburgs
+            #    }
+            # }
+            every_state = {
+                limit = {
+                    is_core_of = KOH
+                }
+                add_core_of = HUN
+            }
+            # every_state = {
+            #    limit = {
+            #        is_claimed_by = KOH
+            #    }
+            #    add_claim_by = HUN
+            # }
+            HUN = {
+                annex_country = {
+                    target = KOH transfer_troops = yes
+                }
+            }
+        }
+    }
+}

@@ -194,14 +194,14 @@ guiTypes = {
 					name = "continuous_focus_window"
 					position = { x=0 y=0 }
 					size = { width = 770 height = 380 }
-					margin = { top = 13 left = 0 bottom = 13 right = 13}
+					margin = { top = 13 left = -1110 bottom = 13 right = 13}
 					drag_scroll = { left middle }
 					clipping = no
-
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_window_thin_border2"
-					}
+					
+					#background = {
+						#name = "Background"
+						#quadTextureSprite ="GFX_tiled_window_thin_border2"
+					#}
 					
 					instantTextboxType = {
 						name = "continuous_focus_title"
@@ -368,6 +368,7 @@ guiTypes = {
 				background = {
 					name = "Background"
 					spriteType ="GFX_tiled_window_transparent"
+					alwaystransparent = yes
 				}
 			
 				containerWindowType = {
@@ -380,6 +381,7 @@ guiTypes = {
 					background = {
 						name = "Background"
 						spriteType ="GFX_tiled_window_transparent"
+						alwaystransparent = yes
 					}
 					
 					gridboxtype = {
@@ -510,6 +512,20 @@ guiTypes = {
 			maxHeight = 20
 			format = center
 			vertical_alignment = center 			
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "viewing_flag"
+			quadTextureSprite ="GFX_flag_small2"
+			position = {  x=110 y=30 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType ={
+			name ="viewing_flag_border"
+			quadTextureSprite = "GFX_diplo_countrylist_flag_frame"
+			position = { x= 105 y = 25 }
 			alwaystransparent = yes
 		}
 	}
@@ -939,7 +955,6 @@ guiTypes = {
 			buttonFont = "hoi_20b"
 			position = { x=390 y=53 }
 			clicksound = click_default
-			hide = yes
 		}
 		
 		instantTextboxType = {

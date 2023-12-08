@@ -10,6 +10,26 @@ set_technology = {
 	gw_artillery = 1
 	early_fighter = 1
 	fuel_silos = 1
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		transport = 1
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		coastal_defense_ships = 1
+		mtg_transport = 1
+
 }
 
 recruit_character = WWS_WilliamII
@@ -33,6 +53,8 @@ recruit_character = WWS_eduard_bernstein
 recruit_character = WWS_Gustav_Stresemann
 recruit_character = WWS_Wilhelm_Carl_Josef_Cuno
 recruit_character = WWS_Andreas_Hermes
+recruit_character = WWS_Ebert
+
 
 	set_technology = {
 		interwar_artillery = 1
@@ -66,10 +88,6 @@ recruit_character = WWS_Andreas_Hermes
 		
 		
 	}
-puppet =DSX
-puppet =DSD
-puppet =DSN
-puppet =DAS
 country_event = {id=WWS.7 days=110 }
 set_politics = {
 	ruling_party = monarchy
@@ -80,15 +98,14 @@ set_politics = {
 add_ideas = {
 	
 #law
-Private_economy
-		completely_illiterate
-		low_industrialization
-		Freedom_belief
-		Autonomous_police
-		Weak_investments
-		Patriarchy_supreme
-		Control_media
-		Deflection_employer
+    Market_economy
+	Freedom_belief
+	Traditional_conservatism
+	No_labor_laws
+	Media_control
+	Weak_investments
+	low_industrialization
+	Local_police
 
 Deutscher_Bund
 Deutscher_Zollverein

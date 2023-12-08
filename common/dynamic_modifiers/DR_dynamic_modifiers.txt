@@ -1,0 +1,247 @@
+FRW_still_attack = {
+	enable = { always = yes }
+	
+
+	ai_focus_aggressive_factor = 0.3
+	army_attack_factor = 0.05
+}
+FRW_still_defense = {
+	enable = { always = yes }
+
+	ai_focus_defense_factor = 0.3
+	army_defence_factor = 0.05
+}
+
+FRW_Maginot_Line= {
+	enable = { always = yes }
+	
+	production_speed_bunker_factor = 0.25 
+    repair_speed_bunker_factor = 0.25 
+	army_defence_factor = 0.05
+	ai_focus_defense_factor = 0.2
+}
+FRW_peace= {
+	enable = { always = yes }
+	
+	justify_war_goal_time = 0.9
+	opinion_gain_monthly_factor = 0.5
+	opinion_gain_monthly_same_ideology_factor = 0.5
+	enemy_declare_war_tension = 0.5
+	enemy_declare_war_tension = 0.5
+}
+FRW_Provence_Commune= {
+	enable = { always = yes }
+
+	icon = GFX_idea_Provence_Commune
+
+	weekly_manpower = 100 
+	disable_strategic_redeployment = 1
+}
+FRW_Artillery_design= {
+	enable = { always = yes }
+
+	army_artillery_attack_factor = 0.03
+	army_artillery_attack_factor = 0.03
+}
+FRW_Anti_militaristic_ideology= {
+	enable = { always = yes }
+
+    stability_weekly = 0.02
+	war_support_factor =-0.1
+	mobilization_laws_cost_factor =0.3
+}
+FRW_Defend_Motherland= {
+	enable = { always = yes }
+
+	army_core_attack_factor = 0.05
+	army_core_defence_factor = 0.05
+	army_morale_factor = 0.05
+}
+FRW_Defend_Motherland= {
+	enable = { always = yes }
+
+	army_core_attack_factor = 0.05
+	army_core_defence_factor = 0.05
+	army_morale_factor = 0.05
+}
+FRW_armf_modifier= {
+	enable = { always = yes }
+
+	military_spend_modifier=-0.15
+	armf_modifier=-0.05
+}
+FRW_focus41_modifier= {
+	enable = { always = yes }
+	government_investment_modifier=0.08
+	domestic_investment_modifier=0.05
+}
+FRW_focus42_modifier= {
+	enable = { always = yes }
+	government_investment_modifier=0.08
+	domestic_investment_modifier=0.05
+}
+FRW_focus38_modifier= {
+	enable = { always = yes }
+	tax_from_company_modifier=0.05
+	tax_from_consumption_modifier=0.05
+	government_investment_modifier=0.1
+}
+JPN_Great_Earthquake= {
+	enable = { always = yes }
+	icon = GFX_idea_Great_Earthquake
+
+	local_manpower = -0.05
+	industry_repair_factor = -0.05
+}
+SHW_Immigration_policy= {
+	enable = { always = yes }
+	icon = GFX_idea_Immigration_policy
+
+	local_manpower=0.03
+	local_supplies=0.01
+}
+SHW_Corrupt_local_institutions = {
+	enable = { always = yes }
+	icon = GFX_idea_Corrupt_local_institutions
+		political_power_cost=DY_SHW_temp_political_power
+		production_speed_buildings_factor=DY_SHW_temp_production_speed_buildings_factor
+		line_change_production_efficiency_factor=DY_SHW_temp_line_change_production_efficiency_factor
+		local_intel_to_enemies=DY_SHW_temp_local_intel_to_enemies
+		local_resources_factor=DY_SHW_temp_local_resources_factor
+}
+
+WWS_Young_Officer= {
+	enable = { always = yes }
+
+	army_org_regain = 0.05
+	experience_gain_army_unit_factor = 0.05
+}
+WWS_Career_officers= {
+	enable = { always = yes }
+	
+	max_planning_factor = 0.05
+	pocket_penalty = -0.02
+	experience_gain_infantry_training_factor = 0.03
+	special_forces_cap = 0.05
+	org_loss_at_low_org_factor = -0.02
+}
+WWS_Flying_Club= {
+	enable = { always = yes }
+	
+	air_training_xp_gain_factor = 0.05
+	air_mission_xp_gain_factor = 0.05
+}
+WWS_Ocean_going_navy= {
+	enable = { always = yes }
+	
+	navy_capital_ship_attack_factor = 0.03
+	navy_capital_ship_defence_factor = 0.03
+	naval_critical_score_chance_factor = 0.1
+}
+WWS_Inshore_Navy= {
+	enable = { always = yes }
+	
+	convoy_escort_efficiency = 0.05
+	naval_detection = 0.03
+	submarine_attack = 0.1
+	sub_retreat_speed = 0.04
+}
+WWS_Infantry_tactics= {
+	enable = { always = yes }
+	
+	experience_gain_army_factor = 0.02
+	land_reinforce_rate = 0.03
+}
+WWS_Assault_tactics= {
+	enable = { always = yes }
+	
+	recon_factor = 0.05
+	cat_mobile_warfare_cost_factor = -0.1
+	terrain_penalty_reduction = 0.03
+	special_forces_cap = 0.05
+	army_attack_speed_factor = 0.05
+
+}
+
+WWS_Army_command= {
+	enable = { always = yes }
+	
+	army_strength_factor = 0.05
+	dig_in_speed_factor = 0.05
+	max_planning_factor = 0.05
+	combat_width_factor = 0.03
+	army_org_regain = 0.03
+
+}
+
+WWS_Navel_command= {
+	enable = { always = yes }
+
+	experience_gain_navy_unit_factor = 0.03
+	convoy_raiding_efficiency_factor = 0.08
+	naval_damage_factor = 0.03
+	naval_invasion_prep_speed = 2
+	naval_invasion_penalty = -0.05
+}
+
+WWS_Air_command= {
+	enable = { always = yes }
+	
+	air_air_superiority_agility_factor = 0.05
+	air_interception_attack_factor = 0.05
+	air_interception_detect_factor = 0.05
+	air_cas_efficiency = 0.1
+	air_escort_efficiency = 0.1
+
+}
+WWS_Industrial_development= {
+	enable = { always = yes }
+	
+	production_speed_industrial_complex_factor = 0.05
+	production_speed_arms_factory_factor = 0.05
+	consumer_goods_factor = -0.02
+	global_building_slots_factor = 0.03
+	industrial_capacity_dockyard = 0.05
+	industrial_capacity_factory = 0.05
+
+}
+WWS_Unified_currency= {
+	enable = { always = yes }
+	
+	    government_investment_modifier=2.000
+		market_available_for_dumping_modifier=2.000
+		tax_from_company_modifier=1.500
+		tax_from_consumption_modifier=1.500
+		domestic_investment_modifier=1.500
+}
+AOX_dynamic_german_13= {
+	enable = { always = yes }
+	equipment_upgrade_xp_cost=-0.05
+	license_purchase_cost=-0.05
+	equipment_conversion_speed=0.05
+	license_production_speed=0.05
+}
+
+
+AOX_dynamic_austria_13= {
+	enable = { always = yes }
+	max_command_power_mult=-0.05
+}
+
+SHW_dynamic_Focus_8= {
+	enable = { always = yes }
+	civilian_intel_factor=0.1
+	intel_network_gain=0.1
+	boost_ideology_mission_factor=0.1
+}
+SHW_dynamic_Focus_19= {
+	enable = { always = yes }
+	party_popularity_stability_factor=0.02
+	research_speed_factor=-0.05
+}
+SHW_dynamic_Focus_45= {
+	enable = { always = yes }
+	government_investment_modifier=0.08
+	domestic_investment_modifier=0.05
+	market_available_for_dumping_modifier=0.15
+}

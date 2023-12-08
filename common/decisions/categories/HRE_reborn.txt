@@ -1,0 +1,17 @@
+HRE_reborn = {
+	picture = GFX_decisions_HRE_map
+	priority = 7
+	icon = generic_research
+	visible = {
+		OR = {
+			original_tag = AOX
+		}
+		has_completed_focus = AUS_HRE_0
+	} 
+	activation = {
+		OR = {
+			original_tag = AOX
+		}
+	}
+	visible_when_empty = yes
+}

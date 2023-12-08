@@ -1,0 +1,24 @@
+﻿###########################
+# IUI Events
+###########################
+
+add_namespace = IUI
+news_event = {
+	id = IUI.1
+	title = IUI.1.t
+	desc = IUI.1.d
+	#picture = 
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = IUI.1.a
+		hidden_effect = {
+			IUI= { 
+			transfer_state = 249
+			add_state_core = 249
+			
+	    }
+		}
+	}
+	}
+	

@@ -1,0 +1,25 @@
+scripted_gui = {
+
+	FRW_ARMY_ui = {
+		context_type = decision_category
+		window_name = "FRW_ARMY_ui"
+
+		properties = {
+			FRW_ARMY_ui_needle={
+                  frame=FRW_ARMY_VAR
+}
+		}
+	}
+	
+	FRW_Maginot_Line = {
+		context_type = decision_category
+		window_name = "FRW_Maginot_Line"
+
+		properties = {
+			FRW_Maginot_Line_needle={
+                  frame=FRW_Maginot_Line_needle_VAR
+}
+		}
+	}
+}
+

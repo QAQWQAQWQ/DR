@@ -1,0 +1,17 @@
+characters={
+	LEF_Abd_el_krim={
+		name=LEF_Abd_el_krim
+		portraits={
+			civilian={
+				large="gfx/leaders/LEF/portrait_Abd_el_krim.tga"
+			}
+		}
+		country_leader={
+			ideology = Conservative_democracy_type
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	}

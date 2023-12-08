@@ -8,6 +8,15 @@ leader_traits = {
 		ai_will_do = {
 			factor = 1
 		}
+}
+War_Heroes = {
+	random = no
+	stability_factor = 0.05
+	war_support_factor = 0.05
+	conscription_factor = 0.05
+	ai_will_do = {
+		factor = 1
+	}
 }	
 Minister_Affairs = {
 	random = no
@@ -17,6 +26,31 @@ Minister_Affairs = {
 		factor = 1
 	}
 }
+pragmatic_socialist = {
+	random = no
+	war_support_factor = -0.05
+	political_advisor_cost_factor = -0.01	
+}
+Pioneer_socialism = {
+	random = no
+	war_support_factor = -0.02
+	party_popularity_stability_factor = 0.1
+	political_advisor_cost_factor = -0.2	
+}
+Chairman_Cheka = {
+	random = no
+	agency_upgrade_time = -0.1
+	encryption_factor = 0.25
+	enemy_operative_detection_chance = 8
+	enemy_operative_capture_chance_factor = 0.15
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+
+
 	warrior_code = {
 		random = no
 		ai_call_ally_desire_factor = -40
@@ -110,7 +144,9 @@ Minister_Affairs = {
 			factor = 1
 		}
 	}
+
 	
+
 	stout_defender = { # This particular trait will make the AI heavily prioritize defensive warfare, rarely, if ever, attacking out of fortified locations
 		random = no
 		ai_focus_defense_factor = 0.5
@@ -150,7 +186,6 @@ Minister_Affairs = {
 			factor = 1
 		}
 	}
-
 	cabinet_crisis = {
 		random = no
 		political_power_factor = -0.5
@@ -1555,7 +1590,15 @@ Minister_Affairs = {
 		fascism_drift = -0.1
 		communism_drift = -0.1
 	}
-
+	Minister_Transport = {
+		random = no
+		sprite = 10
+		
+		production_speed_rail_way_factor = 0.1
+		production_speed_supply_node_factor = 0.1
+		production_speed_synthetic_refinery_factor = 0.1
+		trade_opinion_factor = 0.05
+	}
 	marxist_academic = {
 		random = no
 		sprite = 13
@@ -1940,7 +1983,49 @@ Minister_Affairs = {
 		political_power_factor = 0.1
 		research_speed_factor = 0.05
 	}
+	Commissioner_Public_Education = {
+		random = no
+		sprite = 13
+	
+		research_speed_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	North_Germans = {
+		random = no
+		sprite = 13
+		targeted_modifier = {
+			tag = WWS
+			guarantee_cost = -0.1
+			}
+		
 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Little_Napoleon = {
+		random = no
+		sprite = 13
+
+		war_stability_factor = -0.1
+		party_popularity_stability_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Comite_communal = {
+		random = no
+		sprite = 13
+
+		political_advisor_cost_factor = -0.03
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	statism_adept = {
 		random = no
 		sprite = 13
@@ -2160,7 +2245,21 @@ Minister_Affairs = {
 		civilian_intel_to_others = 15
 		industrial_capacity_factory = -0.05
 	}
+	
+	People_Commissar_Agriculture = {
+		random = no
+		political_power_factor = 0.1
+		stability_factor = 0.01
+		civilian_intel_to_others = 5
+		industrial_capacity_factory = -0.02
+		local_resources_grain = 0.1
+	}
 
+	People_Commissariat_Internal_Affairs = {
+		random = no
+		political_power_factor = 0.04
+		stability_factor = 0.01
+	}
 	#BUKHARIN -> Improved
 	hero_of_the_peasantry = {
 		random = no
@@ -2181,7 +2280,14 @@ Minister_Affairs = {
 		experience_gain_army_factor = 0.05
 		research_speed_factor = -0.03
 	}
-
+	Working_People_Commissar = {
+		random = no
+		sprite = 13
+		consumer_goods_factor = -0.02
+		army_core_defence_factor = 0.02
+		experience_gain_army_factor = 0.02
+		research_speed_factor = -0.03
+	}
 	#ZINOVYEV
 	born_agitator = {
 		random = no
@@ -2614,8 +2720,33 @@ Minister_Affairs = {
 		sprite = 13
 
 		party_popularity_stability_factor=0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
 	}
 
+
+
+
+
+
+
+
+
+
+	Butcher_the_revolution = {
+		random = no
+		sprite = 13
+		stability_factor = -0.1
+        political_power_cost = 0.05
+		party_popularity_stability_factor=-0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 
 	the_masses_opium = {
 		random = no
@@ -2900,8 +3031,14 @@ Minister_Affairs = {
 	armaments_organizer = {
 		sprite = 10
 		random = yes
+		
 		conversion_cost_civ_to_mil_factor = -0.2
-		# civ_to_mil_industry_conversion_rate = -1
+		civ_to_mil_industry_conversion_rate = -1
+		high_command_cost_factor = -0.1
+        air_chief_cost_factor =-0.1
+        navy_chief_cost_factor =-0.1
+        army_chief_cost_factor=-0.1
+
 		
 		ai_will_do = {
 			factor = 1
@@ -3218,7 +3355,7 @@ Minister_Affairs = {
 		random = no
 		sprite = 13
 
-		stability_weekly=0.1
+		stability_weekly=0.01
 		drift_defence_factor = 0.1
 
 		ai_will_do = {
@@ -3264,7 +3401,17 @@ Minister_Affairs = {
 			factor = 1
 		}
 	}
+    Leader_opposition = {
+		random = no
+		sprite = 13
 
+		political_power_factor = 0.1
+		stability_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	liberal_journalist = {
 		sprite = 13
 		random = no
@@ -3312,13 +3459,13 @@ Minister_Affairs = {
 
 	education_reformer = {
 		sprite = 13
-	
+		Literacy_modifier = 5
 		research_speed_factor = 0.05
 		ai_will_do = {
 			factor = 1
 		}
 	}
-
+	
 	voice_of_restraint = {
 		random = no
 		sprite = 13
@@ -6538,5 +6685,22 @@ Minister_Affairs = {
 		industrial_capacity_dockyard = 0.05
 		production_speed_buildings_factor = -0.05
 		industry_repair_factor = -0.05
+	}
+	military_naval_affairs = {
+		random = no
+		sprite = 13
+		resistance_growth = -0.1
+		army_org_factor = 0.1
+		experience_gain_army_factor = 0.1
+		experience_gain_navy_factor = 0.1
+		party_popularity_stability_factor = -0.1
+	}
+
+	Holy_Spirit_incarnates = {
+		random = no
+		compliance_growth = 0.2
+		compliance_gain = 0.01
+		stability_factor = 0.1
+		drift_defence_factor = 0.15
 	}
 }

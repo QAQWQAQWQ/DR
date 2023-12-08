@@ -4,7 +4,7 @@
 
 add_namespace = WorldNews
 add_namespace = Worldcountry
-
+add_namespace = League
 
 country_event = {
 	id = WorldNews.1
@@ -15,7 +15,6 @@ country_event = {
 	option = {
 		name = WorldNews.1.a
 		country_event = {id = WorldNews.2 }
-	
 }
 }
 
@@ -40,6 +39,61 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = Worldcountry.1.a
-        add_ideas=London_stock_market_crash
+        #add_ideas=London_stock_market_crash
+	}
+}
+country_event = {
+	id = League.1
+	title = League.1.t
+	desc = League.1.d
+	picture = GFX_JS
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = League.1.a
+		add_power_balance_value = {
+			id = League_balance
+			value = -1
+		}
+		ai_chance = { 
+            base = 20      
+        }
+	}
+	option = {
+		name = League.1.b
+		add_power_balance_value = {
+			id = League_balance
+			value = 1
+		}
+		ai_chance = { 
+            base = 80      
+        }
+	}
+}
+country_event = {
+	id = League.2
+	title = League.2.t
+	desc = League.2.d
+	picture = GFX_JS
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = League.2.a
+		
+		ai_chance = { 
+            base = 50      
+        }
+	}
+	option = {
+		name = League.2.b
+		SIW={
+			set_truce = {
+				target = HES
+				days = 30
+			}
+		}
+		ai_chance = { 
+            base = 50      
+        }
 	}
 }

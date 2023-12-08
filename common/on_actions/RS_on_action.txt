@@ -13,97 +13,17 @@ on_actions = {
 				}
 			}
 			country_event = {id = WorldNews.1 }
-set_variable = {
-    var = Prussian_support
-    value = 25
-}
-set_variable = {
-    var = Austria_support
-    value = 100
-}
-set_variable = { masses_popularity = 50 }
-
-set_variable = { assets_popularity = 50 }
-set_variable = { noble_popularity = 50 }
-set_variable = { elite_popularity = 50 }
-set_variable = { inflation = 2.5 }
-set_variable = { Unemployment = 2.5 }
-clamp_variable = { 
-	var = Prussian_support
-	min = 0 
-	max = 100 
-}
-clamp_variable = { 
-	var = Austria_support
-	min = 0 
-	max = 100
-}
-
-set_temp_variable = { grain_pp = max_manpower_k }
-		multiply_temp_variable = { grain_pp = 0.0017 }
-	    multiply_temp_variable = { grain_pp = 0.0017 }
-		subtract_from_temp_variable = { resource@grain = grain_pp }
-
-		set_variable = { grain_ppp = resource@grain }
-clamp_variable = { 
-	var = resource@grain
-	min = 0 
-	max = 10000 
-}
-
-set_variable = {
-	var = add_grain_pp
-	value = ROOT.num_of_civilian_factories
-}
-#subtract_from_temp_variable = { add_grain_pp = grain_pp }
-add_to_temp_variable = { add_grain_pp = num_owned_states }
-
-
 	}
 	}
 }
 on_startup= {
 	effect = {
-	KOH = {
-		if = {
-			limit = {
-				is_subject = yes
-			}
-		}
-		country_lock_all_division_template = yes
-}
-BXM = {
-	if = {
-		limit = {
-			is_subject = yes
-		}
-	}
-	country_lock_all_division_template = yes
-}
-DMT = {
-	if = {
-		limit = {
-			is_subject = yes
-		}
-	}
-	country_lock_all_division_template = yes
-}
-KLD = {
-	if = {
-		limit = {
-			is_subject = yes
-		}
-	}
-	country_lock_all_division_template = yes
-}
-KGL = {
-	if = {
-		limit = {
-			is_subject = yes
-		}
-	}
-	country_lock_all_division_template = yes
-}
+		VCT={leave_faction = yes}
+		KGL={leave_faction = yes}
+		KLD={leave_faction = yes}
+		DMT={leave_faction = yes}
+		KOH={leave_faction = yes}
+
 }
 }
 
@@ -208,21 +128,190 @@ on_daily = {
 
 }
 }
-on_daily = {
-	effect = {
-		if = {
-			WWS={
-			limit = {
-				has_completed_focus = WWS_Expansion_radar_stations
-				has_completed_focus = WWS_Siemens_AG
-				has_completed_focus = WWS_Hochtief
+
+####
+
+on_startup= {
+effect = {
+	every_country={
+		set_variable = { Literacy_power = 0}
+		if={
+		every_controlled_state= {
+				limit = {
+				has_state_category =town
 			}
-			swap_ideas = {
-				remove_idea = low_industrialization
-				add_idea = Basic_industrialization
+			add_to_variable = { PREV.Literacy_power = 15 } 
+		}
+		}
+		if={
+			every_controlled_state= {
+					limit = {
+					has_state_category =city
+				}
+				add_to_variable = { PREV.Literacy_power = 15 } 
 			}
-		}
-	}
-		}
-	}
+			}
+		if={
+			every_controlled_state= {
+					limit = {
+					has_state_category =large_town
+				}
+				add_to_variable = { PREV.Literacy_power = 3 } 
+			}
+			}
+		if={
+			every_controlled_state= {
+					limit = {
+					has_state_category =pastoral
+				}
+				add_to_variable = { PREV.Literacy_power = 10 } 
+			}
+			}
+		if={
+			every_controlled_state= {
+					limit = {
+					has_state_category =tiny_island
+				}
+				add_to_variable = { PREV.Literacy_power = 1 } 
+			}
+			}
+		if={
+			every_controlled_state= {
+					limit = {
+					has_state_category =small_island
+				}
+				add_to_variable = { PREV.Literacy_power = 1 } 
+			}
+			}
+		if={
+			every_controlled_state= {
+					limit = {
+					has_state_category =rural
+				}
+				add_to_variable = { PREV.Literacy_power = 2 } 
+			}
+			}
+		if={
+			every_controlled_state= {
+					limit = {
+					has_state_category =enclave
+				}
+				add_to_variable = { PREV.Literacy_power = 1 } 
+			}
+			}
+		if={
+			every_controlled_state= {
+					limit = {
+					has_state_category =wasteland
+				}
+				add_to_variable = { PREV.Literacy_power = 0 } 
+			}
+			}
+		if={
+			every_controlled_state= {
+					limit = {
+					has_state_category =megalopolis
+				}
+				add_to_variable = { PREV.Literacy_power = 350 } 
+			}
+			}
+		if={
+			every_controlled_state= {
+					limit = {
+					has_state_category =large_city
+				}
+				add_to_variable = { PREV.Literacy_power = 200 } 
+			}
+			}
+		if={
+			every_controlled_state= {
+					limit = {
+					has_state_category =metropolis
+				}
+				add_to_variable = { PREV.Literacy_power = 100 } 
+			}
+			}
+									
 }
+
+
+	}
+
+	
+
+	}
+	on_startup= {
+		effect = {
+			every_country={
+				NOT={tag = SHW}
+				NOT={tag = AOX}
+				NOT={tag = ENL}
+				NOT={tag = ZHX}
+				NOT={tag = UBS}
+				NOT={tag = BRA}
+					set_variable = { Literacy = 0} 
+	                add_to_variable = { Literacy = Literacy_power }
+	                divide_variable = { Literacy = 10 }
+			}
+			SHW={
+					set_variable = { Literacy = 0} 
+	                add_to_variable = { Literacy = Literacy_power }
+	                divide_variable = { Literacy = 100 }
+			}
+			AOX={
+				set_variable = { Literacy = 0} 
+				add_to_variable = { Literacy = Literacy_power }
+				divide_variable = { Literacy = 10 }
+				multiply_variable = { Literacy = 2 }
+		}
+		    UBS={
+				set_variable = { Literacy = 0} 
+				add_to_variable = { Literacy = Literacy_power }
+				divide_variable = { Literacy = 100 }
+		    }
+		    ENL={
+				set_variable = { Literacy = 0} 
+				add_to_variable = { Literacy = Literacy_power }
+				divide_variable = { Literacy = 20 }
+		}
+		    BRA={
+				set_variable = { Literacy = 0} 
+				add_to_variable = { Literacy = Literacy_power }
+				divide_variable = { Literacy = 20 }
+		}
+		    ZHX={
+			    set_variable = { Literacy = 0} 
+			    add_to_variable = { Literacy = Literacy_power }
+			    divide_variable = { Literacy = 90 }
+	}
+		}
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+
+	#on_daily = {
+	#effect = {
+		#if = {
+			#WWS={
+			#limit = {
+			#	has_completed_focus = WWS_Expansion_radar_stations
+			#	has_completed_focus = WWS_Siemens_AG
+			#	has_completed_focus = WWS_Hochtief
+			#}
+			# swap_ideas = {
+			# 	remove_idea = low_industrialization
+			#	add_idea = Basic_industrialization
+			#}
+		#}
+	#}
+		#}
+	#}

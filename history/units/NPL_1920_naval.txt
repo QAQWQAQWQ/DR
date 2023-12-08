@@ -1,0 +1,147 @@
+﻿
+units= {
+
+	##### NAVAL UNITS #####
+	### Northern Fleet -- Murmansk
+	fleet = {
+		name = "北非舰队"
+		naval_base = 7081 # Murmansk
+		task_force = {				
+			name = "北非舰队"
+			location = 7081 # Murmansk
+			# 1ya Flotiliya Esmintsev
+			ship = { name = "Dzerzhinskiy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NPL version_name = "Fidonisi Class" } } }
+			ship = { name = "Nezamozhnik" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NPL version_name = "Fidonisi Class" } } }
+			ship = { name = "Petrovskiy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NPL version_name = "Fidonisi Class" } } }
+			ship = { name = "Shaumyan" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NPL version_name = "Fidonisi Class" } } }
+			# 2ya Flotiliya Esmintsev
+			ship = { name = "Izyaslav" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NPL version_name = "Fidonisi Class" } } }
+			ship = { name = "Kalinin" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NPL version_name = "Fidonisi Class" } } }
+		}	
+	}
+
+	### Black Sea Fleet -- Sevastopol
+	fleet = {
+		name = "北非舰队"
+		naval_base = 1145 # Sevastopopl
+		task_force = {				
+			name = "北非舰队"
+			location = 1145 # Sevastopopl
+			ship = { name = "拿破仑号" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = NPL version_name = "拿破仑级" } } }
+			ship = { name = "贝尔纳多号" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = NPL version_name = "贝尔纳多级" } } }
+			ship = { name = "达武号" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = NPL version_name = "达武级" } } }
+			ship = { name = "拉纳号" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = NPL version_name = "拉纳级" } } }
+			ship = { name = "内伊号" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = NPL version_name = "内伊级" } } }
+			ship = { name = "约瑟芬号" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = NPL version_name = "约瑟芬级" } } }
+		}	
+		task_force = {	
+			name = "北非舰队"
+			location = 1145 # Sevastopopl
+			# 9iy Podvodniy Flot
+			ship = { name = "阿尔及尔号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NPL version_name = "Series V Shchuka" } } }			
+			ship = { name = "奥兰号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NPL version_name = "Series V Shchuka" } } }			
+			ship = { name = "康斯坦丁号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NPL version_name = "Series V Shchuka" } } }			
+			ship = { name = "奥纳巴号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NPL version_name = "Series V Shchuka" } } }			
+			
+		}	
+	}
+}
+
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+
+	### Ships Under Construction Notes ###
+	# DD: Leningrad & Minsk variant (x4) ("Leningrad" "Moskva" "Kharkov" "Minsk")
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "NPL"
+			version_name = "Leningrad & Minsk Class"
+		}
+		requested_factories = 1
+		progress = 0.70
+		amount = 2
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "NPL"
+			version_name = "Leningrad & Minsk Class"
+		}
+		requested_factories = 1
+		progress = 0.60
+		amount = 2
+	}
+	#CA Kirov Class (Kirov)
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "NPL"
+			version_name = "Kirov Class"
+		}
+		requested_factories = 1
+		progress = 0.10
+		amount = 1
+	}
+	#CA Kirov Class (Voroshilov)
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "NPL"
+			version_name = "Kirov Class"
+		}
+		requested_factories = 1
+		progress = 0.10
+		amount = 1
+	}
+	# SS: Shchuka class (x29) ("Shch-125" "Shch-205" "Shch-206" "Shch-207" "Shch-310" "Shch-311" "Shch-126" "Shch-127" "Shch-128" "Shch-129" "Shch-130" "Shch-131" "Shch-132" "Shch-133" 
+	#		"Shch-134" "Shch-208" "Shch-312" "Shch-313" "Shch-314" "Shch-315" "Shch-316" "Shch-317" "Shch-318" "Shch-319" "Shch-320" "Shch-321" "Shch-322" "Shch-323" "Shch-324")
+	# SS: Stalinets class (x5) ("P-1" "P-2" "P-3" "S-1" "S-2")
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_1
+			creator = "NPL"
+			version_name = "Series V Shchuka"
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 6
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_1
+			creator = "NPL"
+			version_name = "Series X Shchuka"
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 12
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_1
+			creator = "NPL"
+			version_name = "Series X Shchuka"
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 12
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "NPL"
+			version_name = "Series IX Srednyaya"
+		}
+		requested_factories = 1
+		progress = 0.70
+		amount = 5
+	}
+}
+
+#####################

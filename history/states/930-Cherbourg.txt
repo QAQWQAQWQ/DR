@@ -1,0 +1,31 @@
+
+state={
+	id=930
+	name="STATE_930"
+	manpower = 33321
+	resources={
+		steel=1 # was: 36
+	}
+	
+	state_category = city
+
+	history={
+		owner = ENL
+		
+		victory_points = {
+			6449 3
+		}
+		buildings = {
+			6449={naval_base = 3
+				coastal_bunker = 1}
+				
+		}
+		add_core_of = FRW
+	}
+
+	provinces={
+		6449
+	}
+
+	local_supplies=0.0 
+}

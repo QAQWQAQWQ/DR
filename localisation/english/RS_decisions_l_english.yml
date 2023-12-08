@@ -10,30 +10,63 @@ China_power_struggle_desc:0 "\n\n\n\n\n\n\n\n我们的军队已经控制了北�
 power_struggle:0 "一统中华"
 power_struggle_desc:0 "我们的军队已经控制了大部分的大型城市，混乱的时代已经终结，我们是华夏大地新的主人"
 SCX_Internal_power_struggle_in_Sichuan:0 "四川权力斗争"
-SCX_Internal_power_struggle_in_Sichuan_desc:0 "\n\n\n\n\n\n\n\n四川权力斗争"
+SCX_Internal_power_struggle_in_Sichuan_desc:0 "\n\n\n\n\n\n\n\n四川，曾经富饶的巴蜀之地，如今已经深陷战火之中，现在的四川政府表面统一，实则各路军阀都想登上四川的权利宝座，为了权利，他们可以不顾一切。\n\n\n\n\n\n"
 Support_Officer_Department:0 "支持军官系"
 Support_Military_equipment_department:0 "支持武备系"
 Support_Department_of_industry:0 "支持安业系"
 Support_Baoding_system:0 "支持保定系"
 Support_Rapid_system:0 "支持速成系"
-social_stratum:0 "经济状况"
-social_stratum_desc:0 "\n\n\n\n\n\n\n\n国家的经济状况是反映国家实力的象征，\n目前我们的通胀率：§H[?inflation|3]%§!\n目前我们的失业率：§H[?Unemployment|3]%§!"
-social_stratum_1:0 "。。。"
-popularity_T:0 "这会让平民阶层的支持度§R下降§!并且带来负面影响"
-social_stratum_2:0 "提高资产阶级税率"
-popularity1_T:0 "这会让资产阶层的支持度§R下降§!并且带来负面影响"
-social_stratum_3:0 "提高精英阶级税率"
-popularity2_T:0 "这会让精英阶层的支持度§R下降§!并且带来负面影响"
-social_stratum_4:0 "提高贵族阶级税率"
-popularity3_T:0 "这会让贵族阶层的支持度§R下降§!并且带来负面影响"
-social_stratum_5:0 "降低平民阶级税率"
-popularity4_T:0 "这会让平民阶层的支持度§G上升§!"
-social_stratum_6:0 "降低资产阶级税率"
-popularity5_T:0 "这会让资产阶层的支持度§G上升§!"
-social_stratum_7:0 "降低精英阶级税率"
-popularity6_T:0 "这会让精英阶层的支持度§G上升§!"
-social_stratum_8:0 "降低贵族阶级税率"
-popularity7_T:0 "这会让贵族阶层的支持度§G上升§!"
+SCX1_text:0 "武备系影响力:[?ROOT.SCX1]"
+SCX2_text:0 "军官系影响力:[?ROOT.SCX2]"
+SCX3_text:0 "同盟会影响力:[?ROOT.SCX3]"
+SCX4_text:0 "速成系影响力:[?ROOT.SCX4]"
+SCX5_text:0 "保定系影响力:[?ROOT.SCX5]"
+SCX_Factional1_TXT:0 "§Y武备系§!领袖:\n\n\n\n\n\n£YingCanHen\n\n\n\n\n\n\n\n尹昌衡"
+SCX_Factional2_TXT:0 "§Y军官系§!领袖:\n\n\n\n\n\n£luozezhou\n\n\n\n\n\n\n\n罗泽洲"
+SCX_Factional3_TXT:0 "§Y速成系§!领袖:\n\n\n\n\n\n£LiuXiang\n\n\n\n\n\n\n\n刘湘"
+SCX_Factional4_TXT:0 "§Y同盟会§!领袖:\n\n\n\n\n\n£DanXinHang\n\n\n\n\n\n\n\n但懋辛"
+SCX_Factional5_TXT:0 "§Y保定系§!领袖:\n\n\n\n\n\n£LiuWengHui\n\n\n\n\n\n\n\n刘文辉"
+
+
+
+social_stratum:0 "民生状况"
+social_stratum_desc:0 "\n\n\n\n\n\n\n\n国家的民生状况是反映国家实力的象征，工业化系数代表了当前的工业化水平，工业化系数越低代表工业化水平越高。\n我们的人口：§H[?ROOT.max_manpower_k]k§!\n我们的国库剩余：§H[?DR_money_all]§!\n工业化系数：§H[?ROOT.ind_upd]§!\n目前国内识字率：§H[?Literacy|1]%§!\n目前国内失业率：§H[?Unemployment|3]%§!\n"
+
+money_system_value_name_TT:0 "国内生产总值GDP是核算体系中一个重要的综合性统计指标，一个国家或地区的经济究竟处于增长抑或衰退阶段，从这个数字的变化便可以观察到。优秀的政府机构必须在其权力范围内通过实施一些措施来监管和控制国家经济。\n国内GDP总值：[?gdpmn|G3] B\n通货膨胀：[?gdp_inflation|R2]%\n国库：[?capital_reserves|G3] B\n每月盈余：[ROOT.capital_reserves_change_text] B\n总投资：[?all_investment|G3] B"
+capital_reserves_change_text_r:0 "[?capital_reserves_change|R3]"
+capital_reserves_change_text_g:0 "[?capital_reserves_change|G3]"
+
+
+
+
+
+
+ECO_icon_numbers:0 "[ROOT.GetFlag]§Y[ROOT.GetName]§!政府\n\n[ECO_icon_TT]"
+
+GetECOICON_NAME_A_UP:0 "§Y极好§!"
+ECO_iconA_UP_TT:0 "这个国家的政府信用评级为：§Y极好§!\n具有极高的信用程度和信用记录，资金实力雄厚，履约能力强。"
+
+GetECOICON_NAME_A_DOWN:0 "§H优良§!"
+ECO_iconA_DOWN_TT:0 "这个国家的政府信用评级为：§G优良§!\n具有良好的信用程度和信用记录，资金实力充足，履约能力强。"
+
+GetECOICON_NAME_B_UP:0 "§G尚可§!"
+ECO_iconB_UP_TT:0 "这个国家的政府信用评级为：§G尚可§!\n具有中等的信用程度和信用记录，资金实力尚可，履约能力中等。"
+
+GetECOICON_NAME_B_DOWN:0 "§G欠佳§!"
+ECO_iconB_DOWN_TT:0 "这个国家的政府信用评级为：§O欠佳§!\n具有欠佳的信用程度和信用记录，资金实力欠佳，履约能力欠佳。"
+
+GetECOICON_NAME_C_UP:0 "§O较差§!"
+ECO_iconC_UP_TT:0 "这个国家的政府信用评级为：§O较差§!\n具有较差的信用程度和信用记录，资金实力较差，履约能力较差。"
+
+GetECOICON_NAME_C_DOWN:0 "§O糟糕§!"
+ECO_iconC_DOWN_TT:0 "这个国家的政府信用评级为：§O糟糕§!\n具有糟糕的信用程度和信用记录，资金实力糟糕，履约能力糟糕。"
+
+GetECOICON_NAME_D:0 "§R破产§!"
+ECO_iconD_TT:0 "这个国家的政府毫无信用可言，他们不会在意信用程度和信用记录，国库一贫如洗，丧失履约能力。"
+
+
+
+
 
 
 FRW_Destructive_movement:0 "对德破坏行动"
@@ -125,9 +158,10 @@ Germany_Imperial_Highway_desc:0 "\n\n\n\n\n\n\n\n帝国的军队需要大量的�
 
 
 SHW_DUMA:0 "俄罗斯帝国杜马"
-SHW_DUMA_desc:0 "俄罗斯帝国国家杜马成立于1905年1905年俄国革命暴力和动荡之后，是俄罗斯第一个民选议会。沙皇规定未经国家杜马批准，任何法律都不得生效。\n\n\n\n"
+SHW_DUMA_desc:0 "俄罗斯帝国国家杜马成立于1905年，1905年俄国革命暴力和动荡之后，是俄罗斯第一个民选议会。沙皇规定未经国家杜马批准，任何法律都不得生效。"
 
-
+Dissolution_State_Duma:0 "解散国家杜马"
+State_Duma:0 "只有特殊情况才能解散杜马"
 
 
 SHW_Imperial_Russian_Army:0 "俄罗斯帝国陆军"
@@ -138,25 +172,6 @@ SHW_Promotion_loyal_officers:0 "提拔忠心军官"
 suspect_text:0 "猜疑"
 neutrality_text:0 "中立"
 loyal_text:0 "忠诚"
-
-Cadet_Democratic_Party:0 "立宪民主党 影响力：[?party_popularity@Reform_socialism|%G0]"
-Cadet_Democratic_Party_text:0 "\n立宪民主党\n§R党代表§! 帕维尔·米留科夫\n\n\n\n\n£Pavel_Milyukov\n\n\n\n\n\n立宪民主党是俄国资产阶级政党，自称人民自由党。以地方自治局立宪派分子同盟和解放社为核心，于莫斯科成立。成员少数是地主和资本家，大多数是资产阶级知识分子。主张俄国应该是立宪的和议会的君主国。反对没收地主土地，主张赎买地主部分土地。"
-
-October_Party:0 "十月党 影响力：[?party_popularity@authoritarian|%G0]"
-October_Party_text:0 "\n十月党\n§R党代表§! 亚历山大·古契科夫\n\n\n\n\n£Alexander_Guchkov\n\n\n\n\n\n与立场接近的左翼自由派宪政民主党不同，十月党人是坚定的君主立宪制的拥护者，他们强调需要有一个强大的议会和政府对其负责。十月党人与谢尔盖·维特、斯托雷平政府建立了合作关系，但他们也批评政府不受法律框架约束和对改革的拖延。在经济问题上，十月党人支持土地私有化和更进一步的土地改革方案，这一点与斯托雷平改革的方向基本一致。他们和政府一路不愿给予少数族裔地方自治的权利，但他们也普遍反对对少数族群、宗教实施压迫政策。"
-
-Progressive_Party:0 "进步党 影响力：[?party_popularity@democratic|%G0]"
-Progressive_Party_text:0 "\n进步党\n§R党代表§! 亚历山大·科诺瓦洛夫\n\n\n\n\n£Alexander_Konovalov\n\n\n\n\n\n进步主义作为一种意识形态趋势和政治运动起源于第一次俄国革命，它的结晶发生在两个渠道——大实业家和知识分子之间。建立工业家和企业家独立政党的失败尝试迫使最具远见和欧洲思想的莫斯科资本家寻求与能够产生想法的知识精英和解的方式。另一方面，作为各种自由党派成员的某些知识分子对他们的活动感到失望，这些政客离开十月党和立宪民主党后，创建了进步党。"
-
-Socialist_Revolutionary_Party:0 "社会革命党 影响力：[?party_popularity@national_populist|%G0]"
-Socialist_Revolutionary_Party_text:0 "\n社会革命党\n§R党代表§! 维克多·切尔诺夫\n\n\n\n\n£Viktor_Chernov\n\n\n\n\n\n早在19世纪70年代就有了社会革命党这一称呼，也有过小范围内的政党联合组织，但是成果以及影响完全可以忽略。后在1891以及1902饥荒的影响下，农民运动工人运动在逐年的增加，民粹主义也得到了极大地复兴。在若干的、分散的民粹主义社会革命党小组的基础上以及在切尔诺夫的推动下，格尔舒尼与柳谢克达成共识，在《革命的俄罗斯》上宣布北方社会革命党同盟将与南方社会革命党合并建成一个统一的社会革命党，同时成立了一个临时的中央委员会。但因为两党在意识形态、组织原则、斗争方式等问题上的分歧并没有确立正式的党纲领，直到在芬兰伊马特拉举办的1905年社会革命党第一次代表大会上之后才有了一个统一的选举机关、章程和入党准则，虽然绝大多数的地方委员会并未按照党统一的章程行事。社会革命党实际上由社会革命党中央委员会、社会革命党各地方委员会、社会革命党战斗组织三部分组成。由于在建党初期，社会革命党仅仅是一个以《革命的俄罗斯》为载体建立了一个目标统一的，但思想纲领都不一致的政党联合组织。"
-
-Social_Democratic_Labor_Mensheviks_Party:0 "社会民主工党（孟）影响力：[?party_popularity@Reform_socialism|%G0]"
-Social_Democratic_Labor_Mensheviks_Party_text:0 "\n社会民主工党（孟）\n§R党代表§! 尤里·马尔托夫\n\n\n\n\n£Martov\n\n\n\n\n\n1903年，俄国社会民主工党内部尤里·奥西波维奇·马尔托夫与弗拉基米尔·列宁出现分歧，两人逐步组建起相对的两派。该分歧源于俄国社会民主工党第二次代表大会，表面上是关于党的组织的小问题。马尔托夫的支持者事实上处于相对多数，但在分歧中关于党员资格的一次重要投票中处于少数，因而被讥为孟什维克，即俄语的“少数派”（меньшинство）"
-
-Social_Democratic_Labor_Bushwick_Party:0 "社会民主工党（布）影响力：[?party_popularity@Bolshevik|%G0]"
-Social_Democratic_Labor_Bushwick_Party_text:0 "\n社会民主工党（布）\n§R党代表§! 弗拉基米尔·列宁\n\n\n\n\n£Lenin\n\n\n\n\n\n1903年，在俄国社会民主工党第二次代表大会上，列宁提出实行民主集中制，导致党分裂出了两个派别——孟什维克和布尔什维克。两派的人员组成处于不稳定状态，经常有重要的成员转换派别。原本支持布尔什维克的“俄国马克思主义之父”普列汉诺夫，在1904年后转而支持孟什维克的观点。而早先拥护孟什维克的托洛斯基，则在1904年9月共同反对自由派时，与列宁和布尔什维克派达成和解并结盟。"
-
 
 
 
@@ -186,7 +201,7 @@ Requisition_grain_Vitebsk:0 "对维捷布斯克征粮"
 Requisition_grain_Bobruisk:0 "对博布鲁伊斯克征粮"
 Requisition_grain_Gomel:0 "对戈梅利征粮"
 Requisition_grain_Novgorod:0 "对诺夫哥罗德征粮"
-
+Requisition_grain_Grozny:0 "对格罗兹尼征粮"
 
 
 
@@ -209,3 +224,36 @@ IMRO_desc:0 "\n\n\n\n\n\n\n\n许多年以前，马其顿内部革命组织组利
 Key_members_wanted:0 "逮捕组织成员"
 Form_patrols:0 "加大搜查力度"
 Fatherland_Guard:0 "招募祖国军"
+
+SHW_Progress_the_Russian_Civil_War:0 "俄国内战"
+SHW_Progress_the_Russian_Civil_War_desc:0 "在广阔的俄罗斯土地上存在着俄国临时政府与工兵代表苏维埃并立、一个国家两个政府的奇怪局面，苏维埃政权正式在俄国建立了起来。然而，迎接苏维埃政府的并不是革命成功的喜悦，铺天盖地而来的各种敌人，叛乱此起彼伏，内战在全国范围爆发了，白军对红军的反抗开始于布尔什维克起义，出于对无产阶级革命的恐惧，使所有反对布尔什维克的人组成了一个松散的联盟。\n当前内战烈度：[RussianCivilWar]"
+SHW_RussianCivilWar_0:0 "§Y开始§!"
+SHW_RussianCivilWar_1:0 "§Y低§!"
+SHW_RussianCivilWar_2:0 "§Y中§!"
+SHW_RussianCivilWar_3:0 "§Y较高§!"
+SHW_RussianCivilWar_4:0 "§Y高§!"
+SHW_RussianCivilWar_5:0 "§Y极高§!"
+SHW_RussianCivilWar_6:0 "§Y全面战争§!"
+
+SHW_The_civil_war_begins:0 "内战§R开始§!了"
+SHW_The_civil_war_begins_desc:0 "§R击败§!布尔什维克和其他的反政府武装,否则战争将升级至下一阶段"
+
+SHW_The_civil_war_begins2:0 "内战的第二阶段"
+SHW_The_civil_war_begins2_desc:0 "目前的局势越发对我们不利了，芬兰和波兰的独立使得我们丧失了主动权，只有§R击退§!布尔什维克和其他的反政府武装,我们才能重新掌握主动权。"
+
+SHW_The_civil_war_begins3:0 "内战的第三阶段"
+SHW_The_civil_war_begins3_desc:0 "战局已经发展到不可收拾的地步了，我们需要团结更多的人民来加入这场内战之中。"
+
+SHW_The_civil_war_begins4:0 "内战的第四阶段"
+SHW_The_civil_war_begins4_desc:0 "胜利女神似乎不再眷顾我们的军队了，随着西伯利亚地区的独立，我们丧失了和远东的联系。"
+
+SHW_The_civil_war_begins5:0 "内战的第五阶段"
+SHW_The_civil_war_begins5_desc:0 "我们还在坚持的理由唯有忠诚....."
+
+Russian_Civil_War_I:0 "布尔什维克：§Y发动起义§!\n沙皇政府：§Y平叛起义§!\n芬兰大公国：§Y筹备独立§!\n波兰会议王国：§Y筹备独立§!"
+Russian_Civil_War_II:0 "芬兰大公国：§Y独立§!\n波兰会议王国：§Y独立§!\n摩尔多瓦：§Y筹备独立§!\n乌克兰：§Y筹备独立§!\n波罗的海三国：§Y筹备独立§!"
+Russian_Civil_War_III:0 "\n摩尔多瓦：§Y独立§!\n乌克兰：§Y独立§!\n波罗的海三国：§Y独立§!\n顿河共和国：§Y宣布脱离中央政府§!\n阿拉什汗国：§Y宣布脱离中央政府§!\n布哈拉酋长国：§Y宣布脱离中央政府§!\n希瓦汗国：§Y宣布脱离中央政府§!"
+Russian_Civil_War_IV:0 "西伯利亚临时自治政府：§Y宣布脱离中央政府§!\n伊里尔-乌拉尔国：§Y独立§!"
+Russian_Civil_War_V:0 "布尔什维克：§Y发动攻势§!\n远东共和国：§Y成立§!"
+Russian_Civil_War_VI:0 "普鲁士王国：§Y可以进行干涉§!\n奥地利帝国：§Y可以进行干涉§!"
+SHW_End_Civil_War:0 "结束内战"

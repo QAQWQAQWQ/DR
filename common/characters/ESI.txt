@@ -12,5 +12,21 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}		
+	}
+	ESI_Alexander_Bulatovich={
+		name=ESI_Alexander_Bulatovich
+		portraits={
+			civilian={
+				large="gfx/leaders/ESI/portrait_Alexander_Bulatovich.tga"
+			}
+		}
+		country_leader={
+			ideology=authoritarian_type
+			traits={ }
+			desc = ESI_Alexander_Bulatovich_desc
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+			
 	}

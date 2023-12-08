@@ -1,7 +1,7 @@
 ﻿capital = 126
 
 oob = "ENL_1920"
-
+#set_naval_oob = "ENL_1920_Naval"
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -11,31 +11,11 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-set_variable = { British_influence = 0 }
-set_variable = { Ottoman_influence = 0 }
-clamp_variable = { 
-	var = British_influence
-	min = 0 
-	max = 50 
-}
-clamp_variable = { 
-	var = Ottoman_influence
-	min = 0 
-	max = 50
-}
-
-
-
-
-
-
-
-
 country_event={id = ENL.1 days= 120}
 
-
-
-
+set_power_balance = {
+	id = League_balance
+}
 
 recruit_character = ENL_David_Lloyd_George
 recruit_character = ENL_George_V
@@ -86,31 +66,26 @@ recruit_character = ENL_Winston_Churchill
 		
 		
 	}
-	create_faction = Commonwealth
-	add_to_faction = ENL
+	create_faction = Commonwealth_of_Nations
+	add_to_faction = YDA
 	add_to_faction = ASZ
 	add_to_faction = CNA
 	add_to_faction = XXL
-                add_to_faction = ESG
-                add_to_faction = NAF
+	add_to_faction = NAF
+	add_to_faction = ESG
+
+
+
+give_guarantee = YEM
+give_guarantee = KAT
+give_guarantee = SLY
 set_politics = {
 	ruling_party = democratic
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
-puppet = YDA
-puppet = EYJ
-puppet = ASZ
-puppet = CNA
-puppet = XXL
-puppet = NAF
-puppet = ESG
 
-
-give_guarantee = YEM
-give_guarantee = KAT
-give_guarantee = SLY
 set_popularities = {
 	democratic = 89
 	national_populist = 1
@@ -121,15 +96,13 @@ add_ideas={
 England
 Ireland_uproar
 #law
-Basic_industrialization 
-secondary_school
-Smallholder_economy
-Deflection_employer
-Freedom_press
-Affirmative_action
-Weak_investments
-Local_police
-Freedom_belief
+    Market_economy
+	Freedom_belief
+	Traditional_conservatism
+	Deflection_employer
+	Media_control
+	Weak_investments
+	Local_police
 #
 ENL_George_V_H
 

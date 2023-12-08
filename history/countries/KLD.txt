@@ -11,9 +11,11 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-
+recruit_character = KLD_Oscar_Portiolec
 recruit_character = KLD_Stjepan_Radic
 recruit_character = KLD_Ivan_Palecek
+recruit_character = KLD_Safvet_beg_Basagic
+recruit_character = KLD_Lazar_Dimitrievich
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -53,17 +55,23 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no
 }
+
+
+country_event = {id=KLD.1 days=60}
+
+
+
+
+
 add_ideas = {
 #law
 extensive_conscription
 low_industrialization 
-secondary_school
 Staterun_economy
-
+Part_of_Habsburgs
 }
 set_popularities = {
-	democratic = 25
 	national_populist = 25
-	neutrality = 40
-	communism = 10
+	neutrality = 65
+	Islamic = 10
 }

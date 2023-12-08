@@ -3,6 +3,70 @@
 ###########################
 
 add_namespace = FRW
+add_namespace = Paris_Commune
+add_namespace = Assembly_Tours
+
+
+
+
+
+
+
+
+
+
+news_event = {
+	id = Assembly_Tours.1
+	title = Assembly_Tours.1.t
+	desc = Assembly_Tours.1.d
+	picture = GFX_Second_International
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = Assembly_Tours.1.a
+		}
+	}
+
+country_event = {
+	id = Assembly_Tours.2
+	title = Assembly_Tours.2.t
+	desc = Assembly_Tours.2.d
+	picture = GFX_Paris_Commune_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = Assembly_Tours.2.a
+		add_political_power = 100
+	    }
+	option = {
+		name = Assembly_Tours.2.b
+		add_political_power = 100
+		}
+	}
+
+
+
+
+
+country_event = {
+	id = Paris_Commune.1
+	title = Paris_Commune.1.t
+	desc = Paris_Commune.1.d
+	picture = GFX_Paris_Commune_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = Paris_Commune.1.a
+		add_political_power = 100
+	    }
+	}
+
 
 country_event = {
 	id = FRW.1
@@ -16,23 +80,11 @@ country_event = {
 		}
 	option = {
 		name = FRW.1.a
+		hidden_effect = {
+			country_event = countryevent.1
+		}
 	    }
 	}
-news_event = {
-		id = FRW.2
-		title = FRW.2.t
-		desc = FRW.2.d
-		picture = GFX_Second_International
-		is_triggered_only = yes
-		fire_only_once = yes
-		option = {
-			name = FRW.2.a
-			complete_national_focus = FRW_Second_International 
-			hidden_effect = {
-			country_event = { id = FRW.3 days = 15 }
-		}
-			}
-		}
 country_event = {
 			id = FRW.3
 			title = FRW.3.t
@@ -308,4 +360,234 @@ country_event = {
 			popularity = 0.03
 		}
 		}				
+}
+country_event = {
+	id = FRW.18
+	title = FRW.18.t
+	desc = FRW.18.d
+	picture = GFX_FRW_18
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.18.a
+		}		
+}
+country_event = {
+	id = FRW.19
+	title = FRW.19.t
+	desc = FRW.19.d
+	picture = GFX_FRW_19
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.19.a
+		}		
+}
+country_event = {
+	id = FRW.20
+	title = FRW.20.t
+	desc = FRW.20.d
+	picture = GFX_FRW_20
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.20.a
+		}		
+}
+country_event = {
+	id = FRW.21
+	title = FRW.21.t 
+	desc = FRW.21.d
+	picture = GFX_FRW_21
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.21.a
+		FRW={
+			country_event = {id=FRW.22 days=2}
+		}
+		
+		36={
+			add_building_construction = {
+				type = bunker
+				level = 8
+				instant_build = no
+				province = 11318
+			}
+			add_building_construction = {
+				type = bunker
+				level = 8 
+				instant_build = no
+				province = 9309
+			}
+			add_building_construction = {
+				type = bunker
+				level = 8
+				instant_build = no
+				province = 9403
+			}
+			add_building_construction = {
+				type = bunker
+				level = 8
+				instant_build = no
+				province = 9363
+			}
+		}
+		35={
+			add_building_construction = {
+				type = bunker
+				level = 8
+				instant_build = no
+				province = 11456
+			}
+			add_building_construction = {
+				type = bunker
+				level = 8
+				instant_build = no
+				province = 11562
+			}
+		}
+		}	
+	option = {
+			name = FRW.21.b
+			FRW={
+				country_event = {id=FRW.23 days=2}
+			}
+			
+		}			
+}
+country_event = {
+	id = FRW.22
+	title = FRW.22.t
+	desc = FRW.22.d
+	picture = GFX_FRW_21
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.22.a
+		}		
+}
+country_event = {
+	id = FRW.23
+	title = FRW.23.t
+	desc = FRW.23.d
+	picture = GFX_FRW_21
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.23.a
+		}		
+}
+country_event = {
+	id = FRW.24
+	title = FRW.24.t
+	desc = FRW.24.d
+	picture = GFX_FRW_21
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.24.a
+		}		
+}
+country_event = {
+	id = FRW.25
+	title = FRW.25.t
+	desc = FRW.25.d
+	picture = GFX_FRW_21
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.25.a
+		diplomatic_relation = {
+			country = FROM
+			relation = non_aggression_pact
+			active = yes
+		}
+		FRW={
+			country_event = {id=FRW.27 days=1}
+		}
+		
+		}		
+	option = {
+		name = FRW.25.b
+		FRW={
+			country_event = {id=FRW.26 days=1}
+		}
+		}
+}
+country_event = {
+	id = FRW.26
+	title = FRW.26.t
+	desc = FRW.26.d
+	picture = GFX_FRW_21
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.26.a
+		}		
+}
+country_event = {
+	id = FRW.28
+	title = FRW.28.t
+	desc = FRW.28.d
+	picture = GFX_FRW_28
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.28.a
+		}		
+}
+country_event = {
+	id = FRW.29
+	title = FRW.29.t
+	desc = FRW.29.d
+	picture = GFX_FRW_29
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.29.a
+		}		
+}
+country_event = {
+	id = FRW.30
+	title = FRW.30.t
+	desc = FRW.30.d
+	picture = GFX_FRW_30
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.30.a
+		country_event = {id=FRW.31 days=1}
+		}		
+}
+country_event = {
+	id = FRW.31
+	title = FRW.31.t
+	desc = FRW.31.d
+	picture = GFX_FRW_31
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.31.a
+		}		
 }

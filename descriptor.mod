@@ -1,4 +1,4 @@
-version="1.11.9"
+version="1.13.3"
 tags={
 	"Events"
 	"Fixes"
@@ -6,8 +6,13 @@ tags={
 	"Graphics"
 	"Military"
 }
+replace_path="history/countries"
 replace_path="history/states"
-replace_path="models/units"
+replace_path="history/units"
+replace_path="common/decisions"
+replace_path="map/strategicregions"
+replace_path="common/scripted_effects"
 name="R S"
-supported_version="1.12.10"
+picture="thumbnail.png"
+supported_version="1.13.5"
 remote_file_id="2794711297"

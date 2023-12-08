@@ -1,4 +1,127 @@
+SHW_Progress_the_Russian_Civil_War = {
+	
+	SHW_The_civil_war_begins = {
+	  icon = generic_ignite_civil_war
+	  available = {      
+		NOT={country_exists = SUE  }    
+          }
+	    activation = {                         
+		  has_war_with = SUE                     
+	    }
+          is_good = no                          
+          days_remove = 5
+		  fire_only_once = yes      
+          days_mission_timeout = 20             
+          timeout_effect = {    
+			set_variable = { SHW_Progress_the_Russian_Civil_War_paranoiameter = 1 }       
+          }
+          complete_effect = {                    
+               add_political_power = 50                
+          }
+		  }
+	SHW_The_civil_war_begins2 = {
+	  icon = generic_ignite_civil_war
+	      available = {      
+		   NOT={country_exists = SUE  }    
+          }
+		  activation={
+			SHW={check_variable = { SHW_Progress_the_Russian_Civil_War_paranoiameter = 1 }}
+		  }
+		  
+          is_good = no                          
+		  days_remove = 5 
+		  fire_only_once = yes
+          days_mission_timeout = 40             
+          timeout_effect = {                     
+			set_variable = { SHW_Progress_the_Russian_Civil_War_paranoiameter = 2 }  
+			hidden_effect = {
+				news_event = {id=SHW.7   days=1}
+			    news_event = {id=SHW.6   days=12} 
+			}        
+          }
+          complete_effect = {                    
+               add_political_power = 50                
+          }
+		  }
+	SHW_The_civil_war_begins3 = {
+	  icon = generic_ignite_civil_war
+	      available = {      
+		   NOT={country_exists = SUE  }    
+          }
+		  activation={
+			SHW={check_variable = { SHW_Progress_the_Russian_Civil_War_paranoiameter = 2 }}
+		  }          
+          is_good = no                          
+		  days_remove = 5     
+		  fire_only_once = yes        
+          days_mission_timeout = 60             
+          timeout_effect = {                     
+			set_variable = { SHW_Progress_the_Russian_Civil_War_paranoiameter = 3 }     
+			hidden_effect = {
+				country_event = SHW.22
+				news_event = {id=UKR.1   days=1}
+			    news_event = {id=DRM.1 days=6} 
+				news_event = {id=BLD.1 days=12} 
+				news_event = {id=DCK.1 days=19} 
+				news_event = {id=AKE.1 days=22}
+				news_event = {id=EOB.1 days=32} 
+				news_event = {id=KKE.1 days=41}
+			}     
+          }
+          complete_effect = {                    
+               add_political_power = 50                
+          }
+		  }
+	SHW_The_civil_war_begins4 = {
+	  icon = generic_ignite_civil_war
+	      available = {      
+		  NOT={country_exists = SUE  }    
+          }
+		  activation={
+			SHW={check_variable = { SHW_Progress_the_Russian_Civil_War_paranoiameter = 3 }}
+		  }  
+          is_good = no                          
+		  days_remove = 5   
+		  fire_only_once = yes         
+          days_mission_timeout = 70             
+          timeout_effect = {                     
+			set_variable = { SHW_Progress_the_Russian_Civil_War_paranoiameter = 4 } 
+			hidden_effect = {
+				news_event = {id=PSG.1   days=1}
+			    news_event = {id=IUI.1 days=18} 
+			}             
+          }
+          complete_effect = {                    
+               add_political_power = 50                
+          }
+		  }
+	SHW_The_civil_war_begins5 = {
+	  icon = generic_ignite_civil_war
+	      available = {      
+		  NOT={country_exists = SUE  }    
+          }
+		  activation={
+			SHW={check_variable = { SHW_Progress_the_Russian_Civil_War_paranoiameter = 4 }}
+		  }              
+          is_good = no                          
+		  days_remove = 5 
+		  fire_only_once = yes        
+          days_mission_timeout = 80             
+          timeout_effect = {                     
+			set_variable = { SHW_Progress_the_Russian_Civil_War_paranoiameter = 5 } 
+			hidden_effect = {
+				news_event = {id=FER.1   days=1}
+			}       
+          }
+          complete_effect = {                    
+               add_political_power = 50                
+          }
+		  }
+	}
+
+	
 SHW_Imperial_Russian_Army = {
+	
 	SHW_Education_army = {
 	  icon = generic_ignite_civil_war
 	  visible = {
@@ -73,13 +196,11 @@ SHW_Imperial_Russian_Army = {
 SHW_Food_requisition_operations = {
 	Requisition_grain_Tambov = {
 	  icon = GFX_decision_grain
+	  
 	  highlight_states = {
 		highlight_state_targets = {
 			state = 257
 		}
-	}
-	visible = {
-		controls_state = 537
 	}
 	  available = {
 		controls_state = 537
@@ -111,10 +232,6 @@ SHW_Food_requisition_operations = {
 			state = 246
 		}
 	}
-	  visible = {
-		controls_state = 246
-	  }
-	  
 	  available = {
 		controls_state = 246
 	  }
@@ -145,10 +262,6 @@ Requisition_grain_Luga = {
 			state = 208
 		}
 	}
-	  visible = {
-		controls_state = 208
-	  }
-	  
 	  available = {
 		controls_state = 208
 	  }
@@ -179,10 +292,6 @@ Requisition_grain_Samui = {
 			state = 225
 		}
 	}
-	  visible = {
-		controls_state = 225
-	  }
-	  
 	  available = {
 		controls_state = 225
 	  }
@@ -213,10 +322,6 @@ Requisition_grain_Mellerovo = {
 			state = 245
 		}
 	}
-	  visible = {
-		controls_state = 245
-	  }
-	  
 	  available = {
 		controls_state = 245
 	  }
@@ -247,10 +352,6 @@ Requisition_grain_Ryazan = {
 			state = 254
 		}
 	}
-	  visible = {
-		controls_state = 254
-	  }
-	  
 	  available = {
 		controls_state = 254
 	  }
@@ -281,10 +382,6 @@ Requisition_grain_Minsk = {
 			state = 206
 		}
 	}
-	  visible = {
-		controls_state = 206
-	  }
-	  
 	  available = {
 		controls_state = 206
 	  }
@@ -315,10 +412,6 @@ Requisition_grain_Poltava = {
 			state = 259
 		}
 	}
-	  visible = {
-		controls_state = 259
-	  }
-	  
 	  available = {
 		controls_state = 259
 	  }
@@ -349,10 +442,6 @@ Requisition_grain_Stavropol = {
 			state = 235
 		}
 	}
-	  visible = {
-		controls_state = 235
-	  }
-	  
 	  available = {
 		controls_state = 235
 	  }
@@ -383,10 +472,6 @@ Requisition_grain_Kaluga = {
 			state = 205
 		}
 	}
-	  visible = {
-		controls_state = 205
-	  }
-	  
 	  available = {
 		controls_state = 205
 	  }
@@ -417,10 +502,6 @@ Requisition_grain_Belgorod = {
 			state = 240
 		}
 	}
-	  visible = {
-		controls_state = 240
-	  }
-	  
 	  available = {
 		controls_state = 240
 	  }
@@ -451,10 +532,6 @@ Requisition_grain_Saratov = {
 			state = 239
 		}
 	}
-	  visible = {
-		controls_state = 239
-	  }
-	  
 	  available = {
 		controls_state = 239
 	  }
@@ -485,10 +562,6 @@ Requisition_grain_Vinnitsa = {
 			state = 198
 		}
 	}
-	  visible = {
-		controls_state = 198
-	  }
-	  
 	  available = {
 		controls_state = 198
 	  }
@@ -519,10 +592,6 @@ Requisition_grain_Vitebsk = {
 			state = 207
 		}
 	}
-	  visible = {
-		controls_state = 207
-	  }
-	  
 	  available = {
 		controls_state = 207
 	  }
@@ -553,10 +622,6 @@ Requisition_grain_Bobruisk = {
 			state = 204
 		}
 	}
-	  visible = {
-		controls_state = 204
-	  }
-	  
 	  available = {
 		controls_state = 204
 	  }
@@ -587,10 +652,6 @@ Requisition_grain_Gomel = {
 			state = 241
 		}
 	}
-	  visible = {
-		controls_state = 241
-	  }
-	  
 	  available = {
 		controls_state = 241
 	  }
@@ -621,10 +682,6 @@ Requisition_grain_Novgorod = {
 			state = 263
 		}
 	}
-	  visible = {
-		controls_state = 263
-	  }
-	  
 	  available = {
 		controls_state = 263
 	  }
@@ -648,18 +705,17 @@ Requisition_grain_Novgorod = {
 			}
 		  }
 		  }
-		}
-########杜马
-SHW_DUMA = {
-	SHW_DUMA1 = {
-	  icon = generic_ignite_civil_war
-	  visible = {
-	  }
-	  
+Requisition_grain_Grozny = {
+	  icon = GFX_decision_grain
+	  highlight_states = {
+		highlight_state_targets = {
+			state = 232
+		} 
+	}
 	  available = {
-	  
+		controls_state = 232
 	  }
-	  days_remove = 50
+	  days_remove = 30
 	  cost = 35
 	  allowed = {
 		  always = yes
@@ -670,6 +726,558 @@ SHW_DUMA = {
 		  factor = 1
 		  }
 		  complete_effect = {
+			add_stability = -0.01
+			232={
+				add_resource = {
+					type = grain
+					amount = 10
+				}	
+			}
 		  }
 		  }
+		}
+
+
+
+
+
+
+
+
+
+		  SHW_Suppression_other_parties = {
+	
+			SHW_Survey_Social_Revolutionary_Party = {
+			  icon = generic_political_discourse
+			  visible = {
+			  }
+			  
+			  available = {
+			  }
+			  days_remove = 50
+			  cost = 35
+			  allowed = {
+				  always = yes
+			  }
+			  fixed_random_seed = no
+			  fire_only_once = no
+				  ai_will_do = {
+				  factor = 1
+				  }
+				  complete_effect = {
+				  }
+				  }
+			SHW_Survey_Cadets_Party = {
+			  icon = generic_political_discourse
+			  visible = {
+			  }
+			  
+			  available = {
+			  }
+			  days_remove = 50
+			  cost = 35
+			  allowed = {
+				  always = yes
+			  }
+			  fixed_random_seed = no
+			  fire_only_once = no
+				  ai_will_do = {
+				  factor = 1
+				  }
+				  complete_effect = {
+				  }
+				  }
+			SHW_Survey_Social_Workersy_Party = {
+			  icon = generic_political_discourse
+			  visible = {
+			  }
+			  
+			  available = {
+			  }
+			  days_remove = 50
+			  cost = 35
+			  allowed = {
+				  always = yes
+			  }
+			  fixed_random_seed = no
+			  fire_only_once = no
+				  ai_will_do = {
+				  factor = 1
+				  }
+				  complete_effect = {
+				  }
+				  }
+			SHW_Survey_Progressive_Party = {
+			  icon = generic_political_discourse
+			  visible = {
+			  }
+			  
+			  available = {
+			  }
+			  days_remove = 50
+			  cost = 35
+			  allowed = {
+				  always = yes
+			  }
+			  fixed_random_seed = no
+			  fire_only_once = no
+				  ai_will_do = {
+				  factor = 1
+				  }
+				  complete_effect = {
+				  }
+				  }
+			SHW_Support_October_Party = {
+			  icon = generic_political_discourse
+			  visible = {
+			  }
+			  
+			  available = {
+			  }
+			  days_remove = 50
+			  cost = 35
+			  allowed = {
+				  always = yes
+			  }
+			  fixed_random_seed = no
+			  fire_only_once = no
+				  ai_will_do = {
+				  factor = 1
+				  }
+				  complete_effect = {
+				  }
+				  }
+			SHW_Investigate_opposition = {
+			  icon = generic_political_discourse
+			  visible = {
+			  }
+			  
+			  available = {
+			  }
+			  days_remove = 50
+			  cost = 35
+			  allowed = {
+				  always = yes
+			  }
+			  fixed_random_seed = no
+			  fire_only_once = no
+				  ai_will_do = {
+				  factor = 1
+				  }
+				  complete_effect = {
+				  }
+				  }
+		}
+
+
+		SHW_Slavic_identity = {
+	
+			SHW_Romanian_identity = {
+			  icon = SWI_dismiss_council
+			  visible = {
+			  }
+			  
+			  available = {
+			  }
+			  days_remove = 50
+			  cost = 35
+			  allowed = {
+				  always = yes
+			  }
+			  fixed_random_seed = no
+			  fire_only_once = yes
+				  ai_will_do = {
+				  factor = 1
+				  }
+				  complete_effect = {
+					LMN={
+						add_timed_idea = {
+						idea = SHW_idea_Slavic_identity
+						years = 1
+					}
+					}
+					set_country_flag = Romanian_identity
+				  }
+				  }
+		    SHW_Romanian_building = {
+			  icon = SWI_dismiss_council
+			  visible = {
+				has_country_flag = Romanian_identity
+			  }
+			  
+			  available = {
+			  }
+			  days_remove = 180
+			  cost = 35
+			  allowed = {
+				  always = yes
+			  }
+			  fixed_random_seed = no
+			  fire_only_once = yes
+				  ai_will_do = {
+				  factor = 1
+				  }
+				  complete_effect = {
+						46={
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+								province = 9617
+							}
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+								province = 9617
+							}
+						}
+					}
+					
+				  }
+			SHW_Bulgaria_identity = {
+			  icon = SWI_dismiss_council
+			  visible = {
+			  }
+			  
+			  available = {
+			  }
+			  days_remove = 50
+			  cost = 35
+			  allowed = {
+				  always = yes
+			  }
+			  fixed_random_seed = no
+			  fire_only_once = yes
+				  ai_will_do = {
+				  factor = 1
+				  }
+				  complete_effect = {
+					BOJ={
+						add_timed_idea = {
+						idea = SHW_idea_Slavic_identity
+						years = 1
+					}
+					}
+					set_country_flag = Bulgaria_identity
+				  }
+				  }
+			SHW_Bulgaria_building = {
+			  icon = SWI_dismiss_council
+			  visible = {
+				has_country_flag = Bulgaria_identity
+			  }
+			  
+			  available = {
+			  }
+			  days_remove = 180
+			  cost = 35
+			  allowed = {
+				  always = yes
+			  }
+			  fixed_random_seed = no
+			  fire_only_once = yes
+				  ai_will_do = {
+				  factor = 1
+				  }
+				  complete_effect = {
+						48={
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+								province = 949
+							}
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+								province = 949
+							}
+						}
+					}
+					
+				  }
+			SHW_Serbia_identity = {
+			  icon = SWI_dismiss_council
+			  visible = {
+			  }
+			  
+			  available = {
+			  }
+			  days_remove = 50
+			  cost = 35
+			  allowed = {
+				  always = yes
+			  }
+			  fixed_random_seed = no
+			  fire_only_once = yes
+				  ai_will_do = {
+				  factor = 1
+				  }
+				  complete_effect = {
+					SIW={
+						add_timed_idea = {
+						idea = SHW_idea_Slavic_identity
+						years = 1
+					}
+					}
+					set_country_flag = Serbia_identity
+				  }
+				  }
+			SHW_Serbia_building = {
+			  icon = SWI_dismiss_council
+			  visible = {
+				has_country_flag = Serbia_identity
+			  }
+			  
+			  available = {
+			  }
+			  days_remove = 180
+			  cost = 35
+			  allowed = {
+				  always = yes
+			  }
+			  fixed_random_seed = no
+			  fire_only_once = yes
+				  ai_will_do = {
+				  factor = 1
+				  }
+				  complete_effect = {
+						107={
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+								province = 11586
+							}
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+								province = 11586
+							}
+						}
+					}
+					
+				  }
+			SHW_Montenegro_identity = {
+			  icon = SWI_dismiss_council
+			  visible = {
+			  }
+			  
+			  available = {
+			  }
+			  days_remove = 50
+			  cost = 35
+			  allowed = {
+				  always = yes
+			  }
+			  fixed_random_seed = no
+			  fire_only_once = yes
+				  ai_will_do = {
+				  factor = 1
+				  }
+				  complete_effect = {
+					HES={
+						add_timed_idea = {
+						idea = SHW_idea_Slavic_identity
+						years = 1
+					}
+					}
+					set_country_flag = Montenegro_identity
+				  }
+				  }
+			SHW_Montenegro_building = {
+			  icon = SWI_dismiss_council
+			  visible = {
+				has_country_flag = Montenegro_identity
+			  }
+			  
+			  available = {
+			  }
+			  days_remove = 180
+			  cost = 35
+			  allowed = {
+				  always = yes
+			  }
+			  fixed_random_seed = no
+			  fire_only_once = yes
+				  ai_will_do = {
+				  factor = 1
+				  }
+				  complete_effect = {
+						105={
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+								province = 9809
+							}
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+								province = 9809
+							}
+						}
+					}
+					
+				  }
+			SHW_Albania_identity = {
+			  icon = SWI_dismiss_council
+			  visible = {
+			  }
+			  
+			  available = {
+			  }
+			  days_remove = 50
+			  cost = 35
+			  allowed = {
+				  always = yes
+			  }
+			  fixed_random_seed = no
+			  fire_only_once = yes
+				  ai_will_do = {
+				  factor = 1
+				  }
+				  complete_effect = {
+					LMN={
+						add_timed_idea = {
+						idea = SHW_idea_Slavic_identity
+						years = 1
+					}
+					}
+					set_country_flag = Albania_identity
+				  }
+				  }
+		SHW_Albania_building = {
+			  icon = SWI_dismiss_council
+			  visible = {
+				has_country_flag = Albania_identity
+			  }
+			  
+			  available = {
+			  }
+			  days_remove = 180
+			  cost = 35
+			  allowed = {
+				  always = yes
+			  }
+			  fixed_random_seed = no
+			  fire_only_once = yes
+				  ai_will_do = {
+				  factor = 1
+				  }
+				  complete_effect = {
+						44={
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+								province = 9914
+							}
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+								province = 9914
+							}
+						}
+					}
+					
+				  }
+		}
+		SHW_Court_struggles = {
+			SHW_Recruit_charlatans = {
+				icon = SWI_dismiss_council
+				visible = {
+				 
+				}
+				available = {
+				}
+				days_remove = 20
+				cost = 0
+				allowed = {
+					always = yes
+				}
+				fixed_random_seed = no
+				fire_only_once = no
+					ai_will_do = {
+					factor = 1
+					}
+					
+					remove_effect = {
+						add_political_power = 20
+					  }
+					}
+			SHW_Economic_negotiations = {
+				icon = SWI_dismiss_council
+				visible = {
+				 
+				}
+				available = {
+				}
+				days_remove = 20
+				cost = 0
+				allowed = {
+					always = yes
+				}
+				fixed_random_seed = no
+				fire_only_once = yes
+					ai_will_do = {
+					factor = 1
+					}
+					remove_effect = {
+						add_relation_modifier = { 
+							target = WWS
+							modifier = HUN_dynastic_ties_license
+						}
+						
+						
+						add_political_power = 20
+					  }
+					}
+			SHW_Suppression_church= {
+				icon = SWI_dismiss_council
+				visible = {
+				 
+				}
+				available = {
+				}
+				days_remove = 20
+				cost = 0
+				allowed = {
+					always = yes
+				}
+				fixed_random_seed = no
+				fire_only_once = no
+					ai_will_do = {
+					factor = 1
+					}
+					remove_effect = {
+						add_political_power = 20
+					  }
+					}
+			SHW_Mystical_rituals= {
+				icon = SWI_dismiss_council
+				visible = {
+				 
+				}
+				available = {
+				}
+				days_remove = 20
+				cost = 0
+				allowed = {
+					always = yes
+				}
+				fixed_random_seed = no
+				fire_only_once = no
+					ai_will_do = {
+					factor = 1
+					}
+					remove_effect = {
+						add_political_power = 20
+					  }
+					}
 		}

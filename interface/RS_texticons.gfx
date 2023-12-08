@@ -81,6 +81,72 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	spriteType = {
+		name = "GFX_Shulgin"
+		texturefile = "gfx/interface/textpicture/Portrait_Shulgin.tga"
+		legacy_lazy_load = no
+	}	
+
+	spriteType = {
+		name = "GFX_Jean_Jaures"
+		texturefile = "gfx/interface/textpicture/Portrait_Jean_Jaures.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Paul_Brousse"
+		texturefile = "gfx/interface/textpicture/Portrait_Paul_Brousse.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Jean_Allemane"
+		texturefile = "gfx/interface/textpicture/Portrait_Jean_Allemane.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_guesde"
+		texturefile = "gfx/interface/textpicture/portrait_guesde.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Sebastian_Fuhr"
+		texturefile = "gfx/interface/textpicture/Portrait_Sebastian_Fuhr.tga"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_YingCanHen"
+		texturefile = "gfx/interface/textpicture/Portrait_YingCanHen.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_LiuXiang"
+		texturefile = "gfx/interface/textpicture/Portrait_LiuXiang.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_luozezhou"
+		texturefile = "gfx/interface/textpicture/Portrait_luozezhou.tga"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_DanXinHang"
+		texturefile = "gfx/interface/textpicture/Portrait_DanXinHang.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_LiuWengHui"
+		texturefile = "gfx/interface/textpicture/Portrait_LiuWengHui.tga"
+		legacy_lazy_load = no
+	}
+	
+
+
+
+
+
+
+	spriteType = {
 		name = "GFX_country_map"
 		texturefile = "gfx/interface/textpicture/country_map.png"
 		legacy_lazy_load = no

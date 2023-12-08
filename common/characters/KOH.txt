@@ -12,5 +12,303 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+		field_marshal = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	KOH_Mihaly_Karolyi={
+		name=KOH_Mihaly_Karolyi
+		portraits={
+			civilian={
+				large="gfx/leaders/KOH/Portrait_Mihaly_Karolyi.tga"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
+	KOH_Horthy_Miklos={
+		name=KOH_Horthy_Miklos
+		portraits={
+			civilian={
+				large="gfx/leaders/KOH/Portrait_Horthy_Miklós.tga"
+			}
+		}
+		country_leader={
+			ideology=military_government_type
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		navy_leader = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+	}
+	KOH_Janky_Kocsard={
+		name=KOH_Janky_Kocsard
+		portraits={
+			army={
+				large="gfx/leaders/KOH/Portrait_Janky_Kocsárd.tga"
+			}
+		}
+		field_marshal = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	
+	KOH_Samu_Baro_Hazai={
+		name=KOH_Samu_Baro_Hazai
+		portraits={
+			army={
+				large="gfx/leaders/KOH/Portrait_Samu_Báró_Hazai.tga"
+			}
+		}
+		field_marshal = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		
+	}
+	KOH_Janky_Kocsard={
+		name=KOH_Janky_Kocsard
+		portraits={
+			army={
+				large="gfx/leaders/KOH/Portrait_Janky_Kocsárd.tga"
+			}
+		}
+		corps_commander = {
+			traits={ expert_delegator }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	KOH_Shvoy_Istvan={
+		name=KOH_Shvoy_Istvan
+		portraits={
+			army={
+				large="gfx/leaders/KOH/Portrait_Shvoy_István.tga"
+			}
+		}
+		corps_commander = {
+			traits={ Lieutenant_general }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	KOH_Pal_Nagy={
+		name=KOH_Pal_Nagy
+		portraits={
+			army={
+				large="gfx/leaders/KOH/Portrait_Pál_Nagy.tga"
+			}
+		}
+		corps_commander= {
+			traits={ expert_delegator }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	KOH_Sandor_Szurmay={
+		name=KOH_Sandor_Szurmay
+		portraits={
+			army={
+				large="gfx/leaders/KOH/Portrait_Sándor_Szurmay.tga"
+			}
+		}
+		corps_commander = {
+			traits={ Lieutenant_general }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	KOH_Istvan_Horthy={
+		name=KOH_Istvan_Horthy
+		portraits={
+			army={
+				large="gfx/leaders/KOH/Portrait_István_Horthy.tga"
+			}
+		}
+		corps_commander = {
+			traits={ Lieutenant_general }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	KOH_Vitez_Karpathy_Kamillo={
+		name=KOH_Vitez_Karpathy_Kamillo
+		portraits={
+			army={
+				large="gfx/leaders/KOH/Portrait_Vitéz_Kárpáthy_Kamilló.tga"
+			}
+		}
+		corps_commander = {
+			traits={ Lieutenant_general }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	KOH_Willerding_Rezso={
+		name=KOH_Willerding_Rezso
+		portraits={
+			army={
+				large="gfx/leaders/KOH/Portrait_Willerding_Rezso.tga"
+			}
+		}
+		corps_commander = {
+			traits={ Lieutenant_general }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	KOH_Karoly_Badok={
+		name=KOH_Karoly_Badok
+		portraits={
+			army={
+				large="gfx/leaders/KOH/Portrait_Károly_Bádok.tga"
+			}
+		}
+		corps_commander = {
+			traits={ Lieutenant_general }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	KOH_Gyula_Gombos_Jakfai_Vitez={
+		name=KOH_Gyula_Gombos_Jakfai_Vitez
+		portraits={
+			army={
+				large="gfx/leaders/KOH/Portrait_Gyula_Gömbös_Jákfai_Vitéz.tga"
+			}
+		}
+		corps_commander = {
+			traits={ skilled_staffer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	KOH_Roder_Vilmos={
+		name=KOH_Roder_Vilmos
+		portraits={
+			army={
+				large="gfx/leaders/KOH/Portrait_Rőder_Vilmos.tga"
+			}
+		}
+		corps_commander = {
+			traits={ skilled_staffer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	KOH_Somkuthy_Jozsef={
+		name=KOH_Somkuthy_Jozsef
+		portraits={
+			army={
+				large="gfx/leaders/KOH/Portrait_Somkuthy_József.tga"
+			}
+		}
+		corps_commander = {
+			traits={ skilled_staffer }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	KOH_Vitez_Karoly={
+		name=KOH_Vitez_Karoly
+		portraits={
+			army={
+				large="gfx/leaders/KOH/Portrait_Vitéz_Károly.tga"
+			}
+		}
+		corps_commander = {
+			traits={ skilled_staffer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	KOH_Jeno_Ratz={
+		name=KOH_Jeno_Ratz
+		portraits={
+			army={
+				large="gfx/leaders/KOH/Portrait_Jenő_Vitéz.tga"
+			}
+		}
+		corps_commander = {
+			traits={ skilled_staffer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	KOH_Vitez_nagybaczoni_Nagy={
+		name=KOH_Vitez_nagybaczoni_Nagy
+		portraits={
+			army={
+				large="gfx/leaders/KOH/Portrait_Vitéz_nagybaczoni_Nagy.tga"
+			}
+		}
+		corps_commander = {
+			traits={ skilled_staffer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
 	}
 	}

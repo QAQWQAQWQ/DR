@@ -29,4 +29,26 @@ characters={
 			logistics_skill=2
 		}
 	}	
+	SXX_Yang_huCheng={
+		name=SXX_Yang_huCheng
+		portraits={
+			civilian={
+				large="gfx/leaders/SXX/portrait_Yang_huCheng.tga"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=2
+		}
+		country_leader={
+			ideology=military_government_type
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	}

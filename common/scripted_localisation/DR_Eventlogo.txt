@@ -2,9 +2,9 @@ defined_text = {
 	name = GetNewsHeadline
 	text = {
 		localization_key = NOnewspaper 
-trigger = {
-	original_tag =UBS
-}
+		trigger = {
+			is_major = no
+		}
 }
 	text = {
 		 localization_key = Getevent_logo 
@@ -15,15 +15,51 @@ trigger = {
  text = {
 		 localization_key = Getevent_Petersburg_newspaper
 trigger = {
-	original_tag =SHW
+	AND = {
+		original_tag = SHW
+		has_government = monarchy
+	}
 	
 }
 }
 text = {
 	localization_key = DaMing
 trigger = {
-original_tag =DIM
 
+AND = {
+	original_tag =DIM
 }
 }
+}
+text = {
+	localization_key = Yomiuri_Shimbun
+trigger = {
+
+AND = {
+	original_tag =JPN
+	has_government = monarchy
+}
+}
+}
+text = {
+	localization_key = L_Humanite
+trigger = {
+
+AND = {
+	original_tag =FRW
+}
+}
+}
+
+
+text = {
+	localization_key = la_stampa
+trigger = {
+
+AND = {
+	original_tag =ITE
+}
+}
+}
+
 }

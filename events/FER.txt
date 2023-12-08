@@ -21,7 +21,20 @@ news_event = {
 			transfer_state = 657
 			add_state_core = 657
 	    }
+		FER={declare_war_on = { target = SHW type = annex_everything }}
 		}
+	}
+	}
+news_event = {
+	id = FER.2
+	title = FER.2.t
+	desc = FER.2.d
+	picture = GFX_Temple_Street_incident
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = FER.2.a
+		
 	}
 	}
 	

@@ -1,0 +1,12 @@
+guiTypes = {
+	containerWindowType = {
+		name = "HRE_reborn_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 510 height= 220 }
+        iconType = {
+            name = "HRE_reborn_pict"
+            position = { x = 20 y = 5}
+            spriteType = "GFX_HRE_map"
+        }
+	}
+}

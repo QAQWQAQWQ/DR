@@ -12,5 +12,19 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+	}	
+	BHL_Pieter_Jelles_Troelstra={
+		name=BHL_Pieter_Jelles_Troelstra
+		portraits={
+			civilian={
+				large="gfx/leaders/BHL/Portrait_Pieter_Jelles_Troelstra.tga"
+			}
+		}
+		country_leader={
+			ideology=social_democrat_type
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
 	}		
 	}

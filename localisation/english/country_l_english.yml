@@ -117,4 +117,4 @@
 
  NUM_OF_grain:0 "[?resource@grain|0Y]"
  grain_value_TOOLTIP:0 "§Y粮食储备§!\n目前可以出口:[?resource_exported@grain|0Y]单位\n目前进口:[?resource_imported@grain|0Y]单位\n目前部队规模:[?num_divisions|0Y]"
- grain_value_TT_TOOLTIP:0 "我们的粮仓目前有[?resource@grain|0Y]单位,目前控制了[?num_owned_controlled_states|0Y]块省份，每月可以提供粮食,每周都有§8粮食损耗§!，月末进行§8粮食结余§!。"
+ grain_value_TT_TOOLTIP:0 "我们的粮仓目前有[?resource@grain|0Y]单位,目前控制了[?num_owned_controlled_states|0Y]块省份，每月可以提供粮食,每周都有§8粮食损耗，§!月末进行§8粮食结余§!。"

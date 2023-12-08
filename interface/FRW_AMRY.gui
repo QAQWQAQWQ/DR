@@ -1,0 +1,27 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "FRW_ARMY_ui"
+		position = { x = 0 y = 0 }
+		size = { width = 300 height= 100 }
+        iconType = {
+			name ="FRW_ARMY_ui_needle"
+			spriteType = "GFX_FRW_ARMY_needle"
+			position = { x=2	 y=15 }
+			size = { width = 100% height= 100% }
+		}
+
+}
+containerWindowType = {
+	name = "FRW_Maginot_Line"
+	position = { x = 0 y = 0 }
+	size = { width = 300 height= 100 }
+	iconType = {
+		name ="FRW_Maginot_Line_needle"
+		spriteType = "GFX_FRW_Maginot_Line_needle"
+		position = { x=93	 y=-145 }
+		size = { width = 100 height= 100 }
+	}
+
+}
+}

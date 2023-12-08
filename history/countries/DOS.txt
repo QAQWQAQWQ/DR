@@ -14,6 +14,7 @@ set_technology = {
 
 
 recruit_character = DOS_Friedrich_August_III
+recruit_character = DOS_Carl_Eduard
 
 
 	set_technology = {
@@ -52,7 +53,6 @@ recruit_character = DOS_Friedrich_August_III
 add_ideas={
 		#law
 		Private_economy
-		completely_illiterate
 		low_industrialization
 		Freedom_belief
 		Autonomous_police
@@ -63,6 +63,7 @@ add_ideas={
 
 Deutscher_Bund
 Deutscher_Zollverein
+DOS_Discord_the_Pope
 }
 set_politics = {
 	ruling_party = monarchy

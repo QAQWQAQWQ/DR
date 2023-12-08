@@ -1,0 +1,57 @@
+aus_hun_decisions = {
+	scripted_gui = aus_hun_decisons_ui
+	priority = 8
+	icon = generic_research
+	visible = {
+		OR = {
+			original_tag = AOX
+			aus_hun_part_of_the_Empire = yes
+		}
+	} 
+	activation = {
+		OR = {
+			original_tag = AOX
+			# original_tag = BXM
+			# original_tag = KOH
+			# original_tag = KGL
+			# original_tag = KLD
+			# original_tag = DMT
+		}
+	}
+	visible_when_empty = yes
+}
+aus_german_nationalism_decisions = {
+	priority = 8
+	icon = generic_research
+	visible = {
+		OR = {
+			original_tag = AOX
+		}
+	} 
+	activation = {
+		OR = {
+			original_tag = AOX
+		}
+	}
+	visible_when_empty = yes
+}
+hun_red_army = {
+	priority = 9
+	icon = generic_research
+	visible = {
+		OR = {
+			original_tag = KOH
+			original_tag = HUN
+			original_tag = XYL
+		}
+	} 
+	activation = {
+		OR = {
+			original_tag = KOH
+			original_tag = HUN
+			original_tag = XYL
+		}
+	}
+	visible_when_empty = no
+}
+

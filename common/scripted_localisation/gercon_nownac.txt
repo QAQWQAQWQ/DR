@@ -91,3 +91,33 @@ defined_text = {
 		}
 	}
 }
+defined_text = { 
+	name = ger_pre_uni
+	text = {
+		localization_key = ger_pre_uni_pre
+		trigger = {
+			tag = WWS
+		}
+	}
+	text = {
+		localization_key = ger_pre_uni_oth
+		trigger = {
+			NOT = { tag = WWS }
+		}
+	}
+}
+defined_text = { 
+	name = ger_aus_uni
+	text = {
+		localization_key = ger_aus_uni_aus
+		trigger = {
+			tag = AOX
+		}
+	}
+	text = {
+		localization_key = ger_aus_uni_oth
+		trigger = {
+			NOT = { tag = AOX }
+		}
+	}
+}

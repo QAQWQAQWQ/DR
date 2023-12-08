@@ -1,6 +1,6 @@
 ﻿capital = 160
 
-#oob = "VCT_1920"
+oob = "VCT_1920"
 
 # Starting tech
 set_technology = {
@@ -13,6 +13,7 @@ set_technology = {
 }
 
 recruit_character = VCT_Erzherzog_Peter_Ferdinand
+recruit_character = VCT_Luigi_Luzzatti
 
 	set_technology = {
 		interwar_artillery = 1
@@ -57,9 +58,8 @@ add_ideas = {
 #law
 extensive_conscription
 low_industrialization 
-secondary_school
 Staterun_economy
-
+Part_of_Habsburgs
 }
 set_popularities = {
 	democratic = 25

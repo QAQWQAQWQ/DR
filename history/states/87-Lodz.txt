@@ -5,7 +5,7 @@ state={
 	
 	state_category = town
 	history={
-		owner = PBL
+		owner = WWS
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
@@ -13,11 +13,11 @@ state={
 		victory_points = {
 			9508 10
 		}
-		add_core_of = SHW
+		add_core_of = WWS
 	}
 
 	provinces={
-		493 584 9439 9508 9546 11428 11515 
+		3586 11532 493 584 9439 9508 9546 11428 11515 
 	}
 
 	local_supplies=0.0 

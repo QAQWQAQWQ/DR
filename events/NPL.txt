@@ -1,0 +1,53 @@
+﻿###########################
+#NPL Events
+###########################
+
+add_namespace =NPL
+
+country_event = {
+	id =NPL.1
+	title =NPL.1.t
+	desc =NPL.1.d
+	picture = GFX_NPL_1
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name =NPL.1.a
+		}
+	}
+news_event = {
+	id =NPL.2
+	title =NPL.2.t
+	desc =NPL.2.d
+	picture = GFX_NPL_2
+
+	major=yes
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name =NPL.2.a
+		}
+	}	
+country_event = {
+	id =NPL.3
+	title =NPL.3.t
+	desc =NPL.3.d
+	picture = GFX_NPL_1
+
+	trigger = {
+		has_war_with = TRL
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name =NPL.3.a
+		
+		}
+	}													

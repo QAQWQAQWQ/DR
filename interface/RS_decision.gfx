@@ -3,7 +3,10 @@ spriteTypes = {
 		name = "GFX_decisions_China_power_struggle"
 		texturefile = "gfx/interface/decisions/decisions_China_power_struggle.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_decisions_Duma"
+		texturefile = "gfx/interface/decisions/decisions_Duma.dds"
+	}
 	spriteType = {
 		name = "GFX_decisions_SCX_civil_war_decision"
 		texturefile = "gfx/interface/decisions/decisions_SCX_civil_war_decision.dds"
@@ -17,12 +20,34 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_Export_the_revolution.dds"
 	}
 	spriteType = {
-		name = "GFX_decisions_propaganda_efforts"
-		texturefile = "gfx/interface/decisions/decisions_propaganda_efforts.dds"
+		name = "GFX_decision_FRW_army_revolution"
+		texturefile = "gfx/interface/decisions/decision_FRW_army_revolution.dds"
 	}
 	spriteType = {
-		name = "GFX_decision_category_social_stratum"
-		texturefile = "gfx/interface/decisions/decision_category_social_stratum.dds"
+		name = "GFX_decision_Maginot_Line_plan"
+		texturefile = "gfx/interface/decisions/decision_Maginot_Line_plan.dds"
+	}
+	 
+
+
+
+
+	spriteType = {
+		name = "GFX_decisions_Literacy_level"
+		texturefile = "gfx/interface/decisions/decisions_Literacy_level.dds"
+	}
+
+
+
+
+
+
+
+
+
+	spriteType = {
+		name = "GFX_decisions_propaganda_efforts"
+		texturefile = "gfx/interface/decisions/decisions_propaganda_efforts.dds"
 	}
 	spriteType = {
 		name = "GFX_decisions_fate_the_Suez_Canal"
@@ -45,6 +70,19 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decisions_Food_requisition_operations.dds"
 	}
 	spriteType = {
+		name = "GFX_decisions_Imperial_Russian_Army"
+		texturefile = "gfx/interface/decisions/decisions_Imperial_Russian_Army.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decisions_Suppression_other_parties"
+		texturefile = "gfx/interface/decisions/decisions_Suppression_other_parties.dds"
+	}
+	spriteType = {
+		name = "GFX_decisions_Slavic_identity"
+		texturefile = "gfx/interface/decisions/decisions_Slavic_identity.dds"
+	}
+	spriteType = {
 		name = "GFX_decisions_Great_Deutsches_Project"
 		texturefile = "gfx/interface/decisions/decisions_Great_Deutsches_Project.dds"
 	}
@@ -56,5 +94,8 @@ spriteTypes = {
 		name = "GFX_decisions_economy"
 		texturefile = "gfx/interface/decisions/decisions_economy.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_decisions_HRE_map"
+		texturefile = "gfx/interface/decisions/HRE_map.dds"
+	}
 }

@@ -1,0 +1,29 @@
+
+state={
+	id=932
+	name="STATE_932"
+	manpower = 22321
+	
+	state_category = city
+
+	history={
+		owner = ENL
+		victory_points = {
+			11548 15
+		}
+		buildings = {
+			11548={
+				naval_base = 3
+				coastal_bunker = 1
+			}
+				
+		}
+		add_core_of = FRW
+	}
+
+	provinces={
+		11548
+	}
+
+	local_supplies=0.0 
+}

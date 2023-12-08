@@ -11,13 +11,17 @@ bookmarks = {
 			history = "FRW_GATHERING_STORM_DESC"
 			ideology = democratic_socialism
 			ideas = {
-				FRW_The_shame_of_Alsace_Lorraine
-                FRW_African_Royal_Families_in_exile
+				FRW_Chaotic_socialism
+				FRW_Inefficient_industry
+				FRW_Dissidents_army
 			}
 			focuses = {
-				FRW_election
-		        FRW_Second_International
-		        FRW_National_Trade_Union
+				FRW_focus1
+				FRW_focus2
+				FRW_focus3
+				FRW_focus4
+				FRW_focus5
+				FRW_focus6
 			}
 		}
 "ENL"={
@@ -25,7 +29,9 @@ bookmarks = {
 	
 	ideology = democratic
 	ideas = {
-		
+		sun_Empire
+England
+Colonial_ties
 	}
 	focuses = {
 		
@@ -36,6 +42,9 @@ bookmarks = {
 	
 	ideology = monarchy
 	ideas = {
+WWS_The_victor
+WWS_Songun_Policy
+WWS_Labor_pioneer
 	}
 	focuses = {
 	}
@@ -52,8 +61,11 @@ bookmarks = {
 "AOX"={
 	history = "AOX_GATHERING_STORM_DESC"
 	
-	ideology = Dual_monarchy
+	ideology = monarchy
 	ideas = {
+AOX_Hungarian_independence_movement
+Deutscher_Bund
+Deutscher_Zollverein
 	}
 	focuses = {
 	}
@@ -63,9 +75,19 @@ bookmarks = {
 	
 	ideology = monarchy
 	ideas = {
+SHW_Corrupt_army
+SHW_Stolypin_legacy
+SHW_Backward_railways
 	}
 	focuses = {
+SHW_In_name_Slavism
+SHW_Lick_wound
+SHW_Hunt_down_reactionaries
+SHW_Support_aristocratic_parties
+SHW_Moderates_Duma
+SHW_Diverse_Russia
 	}
+
 }
 "SBY"={
 	history = "SBY_GATHERING_STORM_DESC"
@@ -88,14 +110,59 @@ bookmarks = {
 
 
 
+
 "JPN"={
-	history = "UBS_GATHERING_STORM_DESC"
+	history = "JPN_GATHERING_STORM_DESC"
 	minor = yes
 	ideology = monarchy
 	
 }
 
+
+"BRA"={
+	history = "NPL_GATHERING_STORM_DESC"
+	minor = yes
+	ideology = monarchy
+	
+}
+"NPL"={
+	history = "NPL_GATHERING_STORM_DESC"
+	minor = yes
+	ideology = monarchy
+	
 }
 
+"DOR"={
+	history = "DOR_GATHERING_STORM_DESC"
+	minor = yes
+	ideology = monarchy
+	
 }
+"DMW"={
+	history = "NPL_GATHERING_STORM_DESC"
+	minor = yes
+	ideology = monarchy
+	
+}
+"NUW"={
+	history = "NPL_GATHERING_STORM_DESC"
+	minor = yes
+	ideology = monarchy
+	
+}
+"RUD"={
+	history = "NPL_GATHERING_STORM_DESC"
+	minor = yes
+	ideology = monarchy
+	
+}
+"YEL"={
+	history = "NPL_GATHERING_STORM_DESC"
+	minor = yes
+	ideology = monarchy
+	
+}
+}
+}
+
 

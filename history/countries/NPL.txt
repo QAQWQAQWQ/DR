@@ -1,7 +1,7 @@
 ﻿capital = 459
 
 oob = "NPL_1920"
-
+set_naval_oob = "NPL_1920_naval"
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -11,11 +11,37 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-
+set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		transport = 1
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		coastal_defense_ships = 1
+		mtg_transport = 1
+	}
 recruit_character = NPL_Napoleon_IV
 recruit_character = NPL_Petain
 recruit_character = NPL_FuXi
 recruit_character = NPL_Maxime_Weygand
+recruit_character = NPL_Charles_Mangjan
+recruit_character = NPL_Louis_d_Esperey
+recruit_character = NPL_Robert_Georges_Nivelle
+recruit_character = NPL_Louis_Hubert_Gonzalve_Lyautey
 
 
 
@@ -58,11 +84,12 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no
 }
-create_faction = Bonaparte_dynasty
-	add_to_faction = RDN
-    add_to_faction = HEL
-    puppet = HEL
-	puppet = RDN
+create_faction = Bonaparte_family_alliance
+
+
+puppet=RDN
+puppet=HEL
+
 add_ideas={
 NPL_Declining_trend
 }

@@ -4,15 +4,6 @@ debug_decisions = {
 		is_debug = yes
 	}
 }
-social_stratum = {
-	icon = social_stratum
-	picture = GFX_decisions_economy
-	priority = 1
-
-	visible = {
-				
-	}
-}
 propaganda_efforts = {
 	icon = generic_propaganda
 	picture = GFX_decisions_propaganda_efforts
@@ -20,6 +11,29 @@ propaganda_efforts = {
 
 	}
 }
+Literacy_level = {
+	icon = decision_category_gre_paying_ifc_debt
+	picture = GFX_decisions_Literacy_level
+	visible = {
+
+	}
+}   
+
+      
+  
+   
+
+  
+ 
+   
+
+
+
+ 
+
+
+
+
 MTG_naval_treaties = {
 	picture = GFX_decision_cat_picture_naval_treaties
 	allowed = {

@@ -12,7 +12,7 @@ set_technology = {
 	fuel_silos = 1
 }
 
-recruit_character = DSD_Carl_Peters
+recruit_character = DSD_Martin_Paul_Samba
 
 	set_technology = {
 		interwar_artillery = 1
@@ -46,19 +46,13 @@ recruit_character = DSD_Carl_Peters
 		
 		
 	}
-add_ideas={
-       WWS_African_colonial_Corporation
-}
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = national_populist
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 5
-	national_populist = 1
-	neutrality = 89
-	communism = 5
+	national_populist = 100
 }

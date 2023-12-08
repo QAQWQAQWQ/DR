@@ -9,6 +9,7 @@ characters={
 		country_leader={
 			ideology=despotism
 			traits={  }
+			desc = SCX_XiongKeWu_desc
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -200,5 +201,97 @@ characters={
 			logistics_skill=1
 		}
 	}
-					
+
+	#political_advisor
+	SCX_WuYuZhang ={
+		name=SCX_WuYuZhang
+		portraits={
+			civilian={
+				#large="gfx/leaders/SCX/portrait_WuYuZhang.tga"
+				small="gfx/interface/ideas/idea_WuYuZhang.dds"
+			}
+		}
+	advisor={
+		slot = political_advisor
+		idea_token = SCX_WuYuZhang_P
+		allowed = {
+			original_tag = SCX
+		}
+		available = {
+			has_completed_focus = SCX_focus_12
+		  }
+		traits = {
+			the_academic
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}	
+}	
+SCX_YangSuKan ={
+		name=SCX_YangSuKan
+		portraits={
+			civilian={
+				large="gfx/leaders/SCX/portrait_YangSuKan.tga"
+				small="gfx/interface/ideas/idea_YangSuKan.dds"
+			}
+		}
+	advisor={
+		slot = political_advisor
+		idea_token = SCX_YangSuKan_P
+		allowed = {
+			original_tag = SCX
+		}
+		available = {
+			has_completed_focus = SCX_focus_12
+		  }
+		traits = {
+			Minister_Finance
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}	
+}	
+SCX_ZhangLan ={
+	name=SCX_ZhangLan
+	portraits={
+		civilian={
+			large="gfx/leaders/SCX/portrait_ZhangLan.tga"
+			small="gfx/interface/ideas/idea_ZhangLan.dds"
+		}
+	}
+	advisor={
+		slot = head_of_government
+		idea_token = SCX_ZhangLan_H
+		allowed = {
+			original_tag = SCX
+		}
+		available = {
+			has_completed_focus = SCX_focus_12
+		  }
+		traits = {
+			democratic_reformer
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+advisor={
+	slot = political_advisor
+	idea_token = SCX_ZhangLan_P
+	allowed = {
+		original_tag = SCX
+	}
+	available = {
+		has_completed_focus = SCX_focus_12
+	  }
+	traits = {
+		democratic_reformer
+	}
+	ai_will_do = {
+		factor = 1.000
+	}
+}	
+}		
 	}

@@ -3,7 +3,7 @@
 ###########################
 
 add_namespace = WWS
-
+add_namespace = Weimar
 country_event = {
 	id = WWS.1
 	title = WWS.1.t
@@ -60,11 +60,22 @@ country_event = {
 	option = {
 		name = WWS.4.a
 		WWS={country_event = {id=WWS.6 days=2}}
-		
+		ai_chance = {
+			factor = 100
+		}
+	    trigger = {
+			ROOT={check_variable = { pre_support < 50 }}	
+			}
 	}
 
 	option = {
 		name = WWS.4.b
+		ai_chance = {
+			factor = 100
+		}
+	    trigger = {
+			ROOT={check_variable = { pre_support > 50 }}	
+			}
 		leave_faction = yes
 		WWS={add_to_faction = ROOT}
 		
@@ -80,7 +91,12 @@ country_event = {
 		option = {
 			name = WWS.5.a
 			WWS={country_event = {id=WWS.6 days=2}}
-			
+			ai_chance = {
+				factor = 100
+			}
+			trigger = {
+				ROOT={check_variable = { pre_support < 90 }}	
+				}
 		}
 		option = {
 			name = WWS.5.b
@@ -97,10 +113,12 @@ country_event = {
 				transfer_troops = yes
 			}
 		}
-		
-		
-		
-		
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			ROOT={check_variable = { pre_support > 90 }}	
+			}
 		}
 }
 country_event = {
@@ -171,16 +189,8 @@ country_event = {
 
 	option = {
 		name = WWS.10.a
-		add_to_variable = {
-			var = Prussian_support
-			value = 5
-	  }
-	  custom_effect_tooltip = Prussian_support_5
-		  add_to_variable = {
-			var = Austria_support
-			value = -15
-	  }
-	  custom_effect_tooltip = Austria_support_15
+		add_political_power=40
+        add_stability = 0.1
 	}
 }
 country_event = {
@@ -240,8 +250,6 @@ country_event = {
 
 	option = {
 		name = WWS.14.a
-		trigger={}
-		
 		complete_national_focus = WWS_Krupp
 	}
 	option = {
@@ -276,4 +284,28 @@ country_event = {
 	option = {
 		name = WWS.16.a
 	}
+}
+
+
+country_event = {
+	id = Weimar.1
+	title = Weimar.1.t
+	desc = Weimar.1.d
+	picture = GFX_Brother_Eris_Wall
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = Weimar.1.a
+		set_politics = { ruling_party = Reform_socialism elections_allowed = no }
+		hidden_effect={
+		set_popularities = {
+			Reform_socialism=54
+			Right_nationalism = 3
+			social_democrat = 22
+			monarchy = 0
+			communism = 15
+		}
+	}
+}
 }

@@ -1,0 +1,1355 @@
+aus_hun_decisions = {
+	bosnia_problem = {
+			icon = generic_civil_support
+			available = {
+				AOX = {
+					has_completed_focus = AUS_bir_1
+				}
+			}
+			days_mission_timeout = 50
+			activation = {
+				OR = {
+					original_tag = AOX
+					original_tag = KOH
+					original_tag = DMT
+				}
+				AOX = {
+					has_completed_focus = AUS_bir_0
+				}
+			}
+			visible = {
+				OR = {
+					original_tag = AOX
+					original_tag = KOH
+					original_tag = DMT
+				}
+			}		
+			fixed_random_seed = no
+			fire_only_once = yes
+			is_good = no
+			timeout_effect = {
+				AOX = {
+					complete_national_focus = AUS_bir_2
+				}
+				hidden_effect = {
+					set_variable = {
+						global.bosnia_contradictions = 1
+					}
+				}
+				custom_effect_tooltip = bosnia_contradictions_tool
+			}
+	}
+	bosnia_war_1 = {
+			icon = generic_civil_support
+			available = {
+				AOX = {
+					has_completed_focus = AUS_bir_8
+				}
+			}
+			days_mission_timeout = 70
+			activation = {
+				OR = {
+					original_tag = AOX
+					original_tag = KOH
+					original_tag = DMT
+				}
+				check_variable = {
+					global.bosnia_contradictions = 1
+				}
+				not_bosnia_war_tri = yes
+			}
+			visible = {
+				OR = {
+					original_tag = AOX
+					original_tag = KOH
+					original_tag = DMT
+				}
+			}		
+			fixed_random_seed = no
+			fire_only_once = yes
+			is_good = no
+			timeout_effect = {
+				bosnia_war_boom = yes
+			}
+	}
+	bosnia_war_2 = {
+			icon = generic_civil_support
+			available = {
+				always = no
+			}
+			days_mission_timeout = 70
+			activation = {
+				OR = {
+					original_tag = AOX
+					original_tag = KOH
+					original_tag = DMT
+				}
+				AOX = {
+					has_completed_focus = AUS_bir_8
+				}
+				not_bosnia_war_tri = yes
+			}
+			visible = {
+				OR = {
+					original_tag = AOX
+					original_tag = KOH
+					original_tag = DMT
+				}
+			}		
+			fixed_random_seed = no
+			fire_only_once = yes
+			is_good = no
+			timeout_effect = {
+				bosnia_war_boom = yes
+			}
+	}
+	pressure_from_austria = {
+		icon = generic_civil_support
+		available = {
+			bosnia_war_end = yes
+		}
+		days_mission_timeout = 120
+		activation = {
+			original_tag = KOH
+			bosnia_war_tri = yes
+		}
+		visible = {
+			original_tag = KOH
+		}		
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		timeout_effect = {
+			hidden_effect = {
+                set_variable = { global.bosnia_cro_win = 1 }
+                DMT = { white_peace = KOH }
+                KOH = { white_peace = DMT }
+                DMT = { transfer_state = 104 }
+                DMT = { transfer_state = 804 }
+                DMT = { transfer_state = 918 }
+                bos_war_end_qwq = yes
+                AOX = {
+                    country_event = aushun.3
+                }
+			}
+		}
+	}
+	aus_hun_more_every_sup = {
+		ai_will_do = {
+		  factor = 100
+		}
+		visible = {
+			OR = {
+				original_tag = AOX
+			}
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+		}
+		cost = 10
+		fire_only_once = no
+		days_remove = 60
+		complete_effect = {
+			get_more_aus_hun_every_sup_5 = yes
+		}
+		remove_effect = {
+		}
+	}
+	# aus_hun_granting_more_autonomy = {
+	#	visible = {
+	#		OR = {
+	#			original_tag = AOX
+	#		}
+	#	}		
+	#	available = {
+	#		OR = {
+	#			original_tag = AOX
+	#		}
+	#		aus_hun_occ_tri = yes
+	#	}
+	#	cost = 30
+	#	fire_only_once = no
+	#	days_remove = 35
+	#	complete_effect = {
+	#		get_more_aus_hun_sup_20 = yes
+	#		get_more_aus_hun_aut_15 = yes
+	#	}
+	#	remove_effect = {
+	#	}
+	# }
+	aus_hun_granting_more_autonomy_hun = {
+		visible = {
+			check_variable = { aus_hun_nat = 1 }
+			OR = {
+				original_tag = AOX
+			}
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+			aus_hun_occ_tri = yes
+		}
+		cost = 30
+		fire_only_once = no
+		days_remove = 35
+		complete_effect = {
+			get_more_aus_hun_sup_20 = yes
+			get_more_aus_hun_aut_15 = yes
+		}
+		remove_effect = {
+		}
+	}
+	aus_hun_granting_more_autonomy_ukr = {
+		visible = {
+			check_variable = { aus_hun_nat = 2 }
+			OR = {
+				original_tag = AOX
+			}
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+			aus_hun_occ_tri = yes
+		}
+		cost = 30
+		fire_only_once = no
+		days_remove = 35
+		complete_effect = {
+			get_more_aus_hun_sup_20 = yes
+			get_more_aus_hun_aut_15 = yes
+		}
+		remove_effect = {
+		}
+	}
+	aus_hun_granting_more_autonomy_cze = {
+		visible = {
+			check_variable = { aus_hun_nat = 3 }
+			OR = {
+				original_tag = AOX
+			}
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+			aus_hun_occ_tri = yes
+		}
+		cost = 30
+		fire_only_once = no
+		days_remove = 35
+		complete_effect = {
+			get_more_aus_hun_sup_20 = yes
+			get_more_aus_hun_aut_15 = yes
+		}
+		remove_effect = {
+		}
+	}
+	aus_hun_granting_more_autonomy_pol = {
+		visible = {
+			check_variable = { aus_hun_nat = 4 }
+			OR = {
+				original_tag = AOX
+			}
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+			aus_hun_occ_tri = yes
+		}
+		cost = 30
+		fire_only_once = no
+		days_remove = 35
+		complete_effect = {
+			get_more_aus_hun_sup_20 = yes
+			get_more_aus_hun_aut_15 = yes
+		}
+		remove_effect = {
+		}
+	}
+	aus_hun_granting_more_autonomy_slo = {
+		visible = {
+			check_variable = { aus_hun_nat = 5 }
+			OR = {
+				original_tag = AOX
+			}
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+			aus_hun_occ_tri = yes
+		}
+		cost = 30
+		fire_only_once = no
+		days_remove = 35
+		complete_effect = {
+			get_more_aus_hun_sup_20 = yes
+			get_more_aus_hun_aut_15 = yes
+		}
+		remove_effect = {
+		}
+	}
+	aus_hun_granting_more_autonomy_rom = {
+		visible = {
+			check_variable = { aus_hun_nat = 6 }
+			OR = {
+				original_tag = AOX
+			}
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+			aus_hun_occ_tri = yes
+		}
+		cost = 30
+		fire_only_once = no
+		days_remove = 35
+		complete_effect = {
+			get_more_aus_hun_sup_20 = yes
+			get_more_aus_hun_aut_15 = yes
+		}
+		remove_effect = {
+		}
+	}
+	aus_hun_granting_more_autonomy_ita = {
+		visible = {
+			check_variable = { aus_hun_nat = 7 }
+			OR = {
+				original_tag = AOX
+			}
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+			aus_hun_occ_tri = yes
+		}
+		cost = 30
+		fire_only_once = no
+		days_remove = 35
+		complete_effect = {
+			get_more_aus_hun_sup_20 = yes
+			get_more_aus_hun_aut_15 = yes
+		}
+		remove_effect = {
+		}
+	}
+	aus_hun_granting_more_autonomy_cro = {
+		visible = {
+			check_variable = { aus_hun_nat = 8 }
+			OR = {
+				original_tag = AOX
+			}
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+			aus_hun_occ_tri = yes
+		}
+		cost = 30
+		fire_only_once = no
+		days_remove = 35
+		complete_effect = {
+			get_more_aus_hun_sup_20 = yes
+			get_more_aus_hun_aut_15 = yes
+		}
+		remove_effect = {
+		}
+	}
+	aus_hun_granting_more_autonomy_slv = {
+		visible = {
+			check_variable = { aus_hun_nat = 9 }
+			OR = {
+				original_tag = AOX
+			}
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+			aus_hun_occ_tri = yes
+		}
+		cost = 30
+		fire_only_once = no
+		days_remove = 35
+		complete_effect = {
+			get_more_aus_hun_sup_20 = yes
+			get_more_aus_hun_aut_15 = yes
+		}
+		remove_effect = {
+		}
+	}
+	# aus_hun_less_autonomy = {
+	#	visible = {
+	#		OR = {
+	#			original_tag = AOX
+	#		}
+	#	}		
+	#	available = {
+	#		OR = {
+	#			original_tag = AOX
+	#		}
+	#		aus_hun_occ_tri = yes
+	#	}
+	#	cost = 40
+	#	fire_only_once = no
+	#	days_remove = 35
+	#	complete_effect = {
+	#		get_less_aus_hun_sup_15 = yes
+	#		get_less_aus_hun_aut_20 = yes
+	#	}
+	#	remove_effect = {
+	#	}
+	# }
+	aus_hun_less_autonomy_hun = {
+		visible = {
+			check_variable = { aus_hun_nat = 1 }
+			OR = {
+				original_tag = AOX
+			}
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+			aus_hun_occ_tri = yes
+		}
+		cost = 40
+		fire_only_once = no
+		days_remove = 35
+		complete_effect = {
+			get_less_aus_hun_sup_15 = yes
+			get_less_aus_hun_aut_20 = yes
+		}
+		remove_effect = {
+		}
+	}
+	aus_hun_less_autonomy_ukr = {
+		visible = {
+			check_variable = { aus_hun_nat = 2 }
+			OR = {
+				original_tag = AOX
+			}
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+			aus_hun_occ_tri = yes
+		}
+		cost = 40
+		fire_only_once = no
+		days_remove = 35
+		complete_effect = {
+			get_less_aus_hun_sup_15 = yes
+			get_less_aus_hun_aut_20 = yes
+		}
+		remove_effect = {
+		}
+	}
+	aus_hun_less_autonomy_cze = {
+		visible = {
+			check_variable = { aus_hun_nat = 3 }
+			OR = {
+				original_tag = AOX
+			}
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+			aus_hun_occ_tri = yes
+		}
+		cost = 40
+		fire_only_once = no
+		days_remove = 35
+		complete_effect = {
+			get_less_aus_hun_sup_15 = yes
+			get_less_aus_hun_aut_20 = yes
+		}
+		remove_effect = {
+		}
+	}
+	aus_hun_less_autonomy_pol = {
+		visible = {
+			check_variable = { aus_hun_nat = 4 }
+			OR = {
+				original_tag = AOX
+			}
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+			aus_hun_occ_tri = yes
+		}
+		cost = 40
+		fire_only_once = no
+		days_remove = 35
+		complete_effect = {
+			get_less_aus_hun_sup_15 = yes
+			get_less_aus_hun_aut_20 = yes
+		}
+		remove_effect = {
+		}
+	}
+	aus_hun_less_autonomy_slo = {
+		visible = {
+			check_variable = { aus_hun_nat = 5 }
+			OR = {
+				original_tag = AOX
+			}
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+			aus_hun_occ_tri = yes
+		}
+		cost = 40
+		fire_only_once = no
+		days_remove = 35
+		complete_effect = {
+			get_less_aus_hun_sup_15 = yes
+			get_less_aus_hun_aut_20 = yes
+		}
+		remove_effect = {
+		}
+	}
+	aus_hun_less_autonomy_rom = {
+		visible = {
+			check_variable = { aus_hun_nat = 6 }
+			OR = {
+				original_tag = AOX
+			}
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+			aus_hun_occ_tri = yes
+		}
+		cost = 40
+		fire_only_once = no
+		days_remove = 35
+		complete_effect = {
+			get_less_aus_hun_sup_15 = yes
+			get_less_aus_hun_aut_20 = yes
+		}
+		remove_effect = {
+		}
+	}
+	aus_hun_less_autonomy_ita = {
+		visible = {
+			check_variable = { aus_hun_nat = 7 }
+			OR = {
+				original_tag = AOX
+			}
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+			aus_hun_occ_tri = yes
+		}
+		cost = 40
+		fire_only_once = no
+		days_remove = 35
+		complete_effect = {
+			get_less_aus_hun_sup_15 = yes
+			get_less_aus_hun_aut_20 = yes
+		}
+		remove_effect = {
+		}
+	}
+	aus_hun_less_autonomy_cro = {
+		visible = {
+			check_variable = { aus_hun_nat = 8 }
+			OR = {
+				original_tag = AOX
+			}
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+			aus_hun_occ_tri = yes
+		}
+		cost = 40
+		fire_only_once = no
+		days_remove = 35
+		complete_effect = {
+			get_less_aus_hun_sup_15 = yes
+			get_less_aus_hun_aut_20 = yes
+		}
+		remove_effect = {
+		}
+	}
+	aus_hun_less_autonomy_slv = {
+		visible = {
+			check_variable = { aus_hun_nat = 9 }
+			OR = {
+				original_tag = AOX
+			}
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+			aus_hun_occ_tri = yes
+		}
+		cost = 40
+		fire_only_once = no
+		days_remove = 35
+		complete_effect = {
+			get_less_aus_hun_sup_15 = yes
+			get_less_aus_hun_aut_20 = yes
+		}
+		remove_effect = {
+		}
+	}
+	aus_hun_less_every_sup = {
+		icon = generic_civil_support
+
+		available = {
+			aus_hun_nat_eth_completed_tri = yes
+		}
+
+		days_mission_timeout = 80
+
+		activation = {
+			aus_hun_nat_eth_completed_tri = no
+			OR = {
+				original_tag = AOX
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = AOX
+			}
+		}		
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+			get_less_aus_hun_every_sup_5 = yes
+		}
+	}
+	aus_hun_meg_into_emp_hun = {
+		visible = {
+			check_variable = { aus_hun_nat = 1 }
+			check_variable = { aus_hun_has_meg^aus_hun_nat = 0 }
+			original_tag = AOX
+			OR = {
+				has_completed_focus = AUS_federation_0
+				has_completed_focus = AUS_HRE_0
+			}
+		}		
+		available = {
+			original_tag = AOX
+			aus_hun_nat_eth_completed_tri = yes
+			aus_hun_occ_tri = yes
+			aus_hun_aut_more_less_30 = yes
+			aus_hun_sup_more_than_70 = yes
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 40
+		complete_effect = {
+			set_variable = { aus_hun_has_meg^aus_hun_nat = 1 }
+		}
+		remove_effect = {
+			155 = {
+				add_claim_by = AOX
+			}
+			43 = {
+				add_claim_by = AOX
+			}
+			154 = {
+				add_claim_by = AOX
+			}
+			664 = {
+				add_claim_by = AOX
+			}
+			45 = {
+				add_claim_by = AOX
+			}
+			add_political_power = 120
+		}
+	}
+	aus_hun_meg_into_emp_ukr = {
+		visible = {
+			check_variable = { aus_hun_nat = 2 }
+			check_variable = { aus_hun_has_meg^aus_hun_nat = 0 }
+			original_tag = AOX
+			OR = {
+				has_completed_focus = AUS_federation_0
+				has_completed_focus = AUS_HRE_0
+			}
+		}		
+		available = {
+			original_tag = AOX
+			aus_hun_nat_eth_completed_tri = yes
+			aus_hun_occ_tri = yes
+			aus_hun_aut_more_less_30 = yes
+			aus_hun_sup_more_than_70 = yes
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 40
+		complete_effect = {
+			set_variable = { aus_hun_has_meg^aus_hun_nat = 1 }
+		}
+		remove_effect = {
+			91 = {
+				add_claim_by = AOX
+			}
+			89 = {
+				add_claim_by = AOX
+			}
+			73 = {
+				add_claim_by = AOX
+			}
+			add_political_power = 120
+		}
+	}
+	aus_hun_meg_into_emp_cze = {
+		visible = {
+			check_variable = { aus_hun_nat = 3 }
+			check_variable = { aus_hun_has_meg^aus_hun_nat = 0 }
+			original_tag = AOX
+			OR = {
+				has_completed_focus = AUS_federation_0
+				has_completed_focus = AUS_HRE_0
+			}
+		}		
+		available = {
+			original_tag = AOX
+			aus_hun_nat_eth_completed_tri = yes
+			aus_hun_occ_tri = yes
+			aus_hun_aut_more_less_30 = yes
+			aus_hun_sup_more_than_70 = yes
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 40
+		complete_effect = {
+			set_variable = { aus_hun_has_meg^aus_hun_nat = 1 }
+		}
+		remove_effect = {
+			9 = {
+				add_claim_by = AOX
+			}
+			75 = {
+				add_claim_by = AOX
+			}
+			74 = {
+				add_claim_by = AOX
+			}
+			69 = {
+				add_claim_by = AOX
+			}
+			add_political_power = 120
+		}
+	}
+	aus_hun_meg_into_emp_pol = {
+		visible = {
+			check_variable = { aus_hun_nat = 4 }
+			check_variable = { aus_hun_has_meg^aus_hun_nat = 0 }
+			original_tag = AOX
+			OR = {
+				has_completed_focus = AUS_federation_0
+				has_completed_focus = AUS_HRE_0
+			}
+		}		
+		available = {
+			original_tag = AOX
+			aus_hun_nat_eth_completed_tri = yes
+			aus_hun_occ_tri = yes
+			aus_hun_aut_more_less_30 = yes
+			aus_hun_sup_more_than_70 = yes
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 40
+		complete_effect = {
+			set_variable = { aus_hun_has_meg^aus_hun_nat = 1 }
+		}
+		remove_effect = {
+			72 = {
+				add_claim_by = AOX
+			}
+			88 = {
+				add_claim_by = AOX
+			}
+			90 = {
+				add_claim_by = AOX
+			}
+			92 = {
+				add_claim_by = AOX
+			}
+			936 = {
+				add_claim_by = AOX
+			}
+			87 = {
+				add_claim_by = AOX
+			}
+			98  = {
+				add_claim_by = AOX
+			}
+			10 = {
+				add_claim_by = AOX
+			}
+			97 = {
+				add_claim_by = AOX
+			}
+			814 = {
+				add_claim_by = AOX
+			}
+			86 = {
+				add_claim_by = AOX
+			}
+			807 = {
+				add_claim_by = AOX
+			}
+			add_political_power = 120
+		}
+	}
+	aus_hun_meg_into_emp_slo = {
+		visible = {
+			check_variable = { aus_hun_nat = 5 }
+			check_variable = { aus_hun_has_meg^aus_hun_nat = 0 }
+			original_tag = AOX
+			OR = {
+				has_completed_focus = AUS_federation_0
+				has_completed_focus = AUS_HRE_0
+			}
+		}		
+		available = {
+			original_tag = AOX
+			aus_hun_nat_eth_completed_tri = yes
+			aus_hun_occ_tri = yes
+			aus_hun_aut_more_less_30 = yes
+			aus_hun_sup_more_than_70 = yes
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 40
+		complete_effect = {
+			set_variable = { aus_hun_has_meg^aus_hun_nat = 1 }
+		}
+		remove_effect = {
+			70 = {
+				add_claim_by = AOX
+			}
+			71 = {
+				add_claim_by = AOX
+			}
+			add_political_power = 120
+		}
+	}
+	aus_hun_meg_into_emp_rom = {
+		visible = {
+			check_variable = { aus_hun_nat = 6 }
+			check_variable = { aus_hun_has_meg^aus_hun_nat = 0 }
+			original_tag = AOX
+			OR = {
+				has_completed_focus = AUS_federation_0
+				has_completed_focus = AUS_HRE_0
+			}
+		}		
+		available = {
+			original_tag = AOX
+			aus_hun_nat_eth_completed_tri = yes
+			aus_hun_occ_tri = yes
+			aus_hun_aut_more_less_30 = yes
+			aus_hun_sup_more_than_70 = yes
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 40
+		complete_effect = {
+			set_variable = { aus_hun_has_meg^aus_hun_nat = 1 }
+		}
+		remove_effect = {
+			82 = {
+				add_claim_by = AOX
+			}
+			83 = {
+				add_claim_by = AOX
+			}
+			84 = {
+				add_claim_by = AOX
+			}
+			76 = {
+				add_claim_by = AOX
+			}
+			add_political_power = 120
+		}
+	}
+	aus_hun_meg_into_emp_ita = {
+		visible = {
+			check_variable = { aus_hun_nat = 7 }
+			check_variable = { aus_hun_has_meg^aus_hun_nat = 0 }
+			original_tag = AOX
+			OR = {
+				has_completed_focus = AUS_federation_0
+				has_completed_focus = AUS_HRE_0
+			}
+		}		
+		available = {
+			original_tag = AOX
+			aus_hun_nat_eth_completed_tri = yes
+			aus_hun_occ_tri = yes
+			aus_hun_aut_more_less_30 = yes
+			aus_hun_sup_more_than_70 = yes
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 40
+		complete_effect = {
+			set_variable = { aus_hun_has_meg^aus_hun_nat = 1 }
+		}
+		remove_effect = {
+			160 = {
+				add_claim_by = AOX
+			}
+			add_political_power = 120
+		}
+	}
+	aus_hun_meg_into_emp_cro = {
+		visible = {
+			check_variable = { aus_hun_nat = 8 }
+			check_variable = { aus_hun_has_meg^aus_hun_nat = 0 }
+			original_tag = AOX
+			OR = {
+				has_completed_focus = AUS_federation_0
+				has_completed_focus = AUS_HRE_0
+			}
+		}		
+		available = {
+			original_tag = AOX
+			aus_hun_nat_eth_completed_tri = yes
+			aus_hun_occ_tri = yes
+			aus_hun_aut_more_less_30 = yes
+			aus_hun_sup_more_than_70 = yes
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 40
+		complete_effect = {
+			set_variable = { aus_hun_has_meg^aus_hun_nat = 1 }
+		}
+		remove_effect = {
+			109 = {
+				add_claim_by = AOX
+			}
+			917 = {
+				add_claim_by = AOX
+			}
+			918 = {
+				add_claim_by = AOX
+			}
+			764 = {
+				add_claim_by = AOX
+			}
+			163 = {
+				add_claim_by = AOX
+			}
+			103 = {
+				add_claim_by = AOX
+			}
+			104 = {
+				add_claim_by = AOX
+			}
+			804 = {
+				add_claim_by = AOX
+			}
+			add_political_power = 120
+		}
+	}
+	aus_hun_meg_into_emp_slv = {
+		visible = {
+			check_variable = { aus_hun_nat = 9 }
+			check_variable = { aus_hun_has_meg^aus_hun_nat = 0 }
+			original_tag = AOX
+			OR = {
+				has_completed_focus = AUS_federation_0
+				has_completed_focus = AUS_HRE_0
+			}
+		}		
+		available = {
+			original_tag = AOX
+			aus_hun_nat_eth_completed_tri = yes
+			aus_hun_occ_tri = yes
+			aus_hun_aut_more_less_30 = yes
+			aus_hun_sup_more_than_70 = yes
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 40
+		complete_effect = {
+			set_variable = { aus_hun_has_meg^aus_hun_nat = 1 }
+		}
+		remove_effect = {
+			102 = {
+				add_claim_by = AOX
+			}
+			736 = {
+				add_claim_by = AOX
+			}
+			853 = {
+				add_claim_by = AOX
+			}
+			add_political_power = 120
+		}
+	}
+	aus_hun_meg_emp = {
+		target_trigger = {
+               FROM = {
+					aus_hun_part_of_the_Empire=yes
+               }
+          }
+		visible = {
+			OR = {
+				original_tag = AOX
+			}
+			OR = {
+				has_completed_focus = AUS_federation_0
+				has_completed_focus = AUS_HRE_0
+			}
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+			aus_hun_nat_eth_completed_tri = yes
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 100
+		complete_effect = {
+		}
+		remove_effect = {
+			AOX = { annex_country = { target = FROM transfer_troops = yes } }
+		}
+	}
+}
+hun_red_army = {
+	hun_red_army_boom = {
+		icon = generic_civil_support
+		available = {
+			always = no
+		}
+		days_mission_timeout = 120
+		activation = {
+			OR = {
+				original_tag = HUN
+				original_tag = KOH
+			}
+			bosnia_war_end = yes
+			bosnia_war_tri = yes
+			check_variable = {
+				global.hungry_war = 0
+			}
+		}
+		visible = {
+			OR = {
+				original_tag = HUN
+				original_tag = KOH
+			}
+		}		
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		timeout_effect = {
+        	XYL = { declare_war_on = { target = ROOT type = annex_everything } }
+			hidden_effect = {
+				set_variable = {
+					global.hungry_war = 1
+				}
+				XYL = {
+					transfer_state = 154
+					transfer_state = 82
+					transfer_state = 76
+					transfer_state = 83
+					transfer_state = 764
+					transfer_state = 45
+				}
+				every_state = {
+					limit = {
+						is_core_of = KOH
+					}
+					add_core_of = XYL
+				}
+			}
+		}
+	}
+}
+aus_german_nationalism_decisions = {
+	aus_recruiting_nationalist_militias = {
+		visible = {
+			OR = {
+			original_tag = AOX
+			}
+		}		
+		available = {
+			NOT = {
+				has_completed_focus = AUS_HRE_3
+			}
+			check_variable = { AOX.aus_ger_sup_end = 0 }
+		}
+		cost = 20
+		fire_only_once = no
+		days_remove = 70
+		complete_effect = {
+			custom_effect_tooltip = more_ger_sup_1
+			add_to_variable = {
+				var = aus_ger_sup 
+				value = 10
+			}	
+		}
+		remove_effect = {
+			4 = {
+          		create_unit = {
+            		division = "name = \"Heimwehr\" division_template = \"Heimwehr\" start_experience_factor = 0.5 " 
+           			owner = AOX
+          		}
+        	}
+		}
+	}
+ 	aus_more_ger_sup = {
+		icon = generic_civil_support
+
+		available = {
+			check_variable = { AOX.aus_ger_sup_end = 1 }
+		}
+
+		days_mission_timeout = 70
+
+		activation = {
+			OR = {
+				original_tag = AOX
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = AOX
+			}
+		}		
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+			if = {
+				limit = {
+					check_variable = {
+						global.ger_con_has_uni = 1
+					}
+				}
+				custom_effect_tooltip = more_ger_sup_1
+				add_to_variable = {
+					var = aus_ger_sup 
+					value = 10
+				}
+			}
+			else = {
+				custom_effect_tooltip = more_ger_sup_2
+				add_to_variable = {
+					var = aus_ger_sup 
+					value = 5
+				}
+			}
+		}
+	}
+	aus_less_ger_sup = {
+		ai_will_do = {
+		  factor = 100
+		}
+		visible = {
+			OR = {
+			original_tag = AOX
+			}
+		}		
+		available = {
+			check_variable = { AOX.aus_ger_sup_end = 0 }
+		}
+		cost = 0
+		fire_only_once = no
+		days_remove = 70
+		complete_effect = {
+			custom_effect_tooltip = less_ger_sup
+			add_to_variable = {
+				var = aus_ger_sup 
+				value = -5
+			}
+		}
+		remove_effect = {
+		}
+	}
+	aus_zero_ger_sup = {
+		ai_will_do = {
+		  factor = 100
+		}
+		visible = {
+			has_completed_focus = AUS_HRE_1
+			OR = {
+				original_tag = AOX
+			}
+			check_variable = { AOX.aus_ger_sup_end = 0 }
+		}		
+		available = {
+			has_completed_focus = AUS_HRE_1
+			OR = {
+				original_tag = AOX
+			}
+			check_variable = { AOX.aus_ger_sup_end = 0 }
+			check_variable = { AOX.aus_ger_sup < 1 }
+			custom_trigger_tooltip = { 
+				tooltip = aus_zero_ger_sup_tri
+				check_variable = { AOX.aus_ger_sup < 1 }
+			}
+		}
+		cost = 0
+		fire_only_once = no
+		days_remove = 0
+		complete_effect = {
+			custom_effect_tooltip = aus_zero_ger_sup_eff
+			set_variable = { AOX.aus_ger_sup_end = 1 }
+			remove_ideas = { disgruntled_german_nationalism }
+		}
+		remove_effect = {
+		}
+	}
+	aus_ger_commit = {
+		icon = generic_civil_support
+
+		available = {
+			has_completed_focus = AUS_german_5
+			has_completed_focus = AUS_german_6
+			has_completed_focus = AUS_german_9
+			OR = {
+				has_completed_focus = AUS_german_7
+				has_completed_focus = AUS_german_8
+			}
+			OR = {
+				has_completed_focus = AUS_german_2
+				has_completed_focus = AUS_german_3
+				has_completed_focus = AUS_german_4
+			}
+		}
+
+		days_mission_timeout = 240
+
+		activation = {
+			OR = {
+				original_tag = AOX
+			}
+			has_completed_focus = AUS_german_1
+		}
+
+		visible = {
+			OR = {
+				original_tag = AOX
+			}
+			has_completed_focus = AUS_german_1
+		}		
+
+		fixed_random_seed = no
+
+		fire_only_once = yes
+
+		is_good = no
+
+		timeout_effect = {
+			custom_effect_tooltip = nationalist_power
+			hidden_effect = {country_event = austria.11}
+		}
+	}
+	
+	aus_disarmament_amry = {
+		icon = generic_civil_support
+
+		available = {
+			has_completed_focus = AUS_HRE_3
+		}
+		visible = {
+		}		
+
+		fixed_random_seed = no
+
+		fire_only_once = yes
+
+		days_remove = 5
+
+		complete_effect = {
+			country_event = austria.13
+		}
+	}
+
+	aus_nationalist_seizure_of_power = {
+		icon = generic_civil_support
+
+		available = {
+			custom_trigger_tooltip = { 
+				tooltip = ger_sup_less_then_90
+				check_variable = {
+					aus_ger_sup < 90
+				}
+			}
+			has_completed_focus = AUS_HRE_3
+		}
+
+		days_mission_timeout = 7
+
+		activation = {
+			original_tag = AOX
+			check_variable = {
+				aus_ger_sup > 99
+			}
+			aus_has_win_german_war = yes
+			check_variable = {
+				global.ger_con_has_uni = 1
+			}
+		}
+
+		visible = {
+			original_tag = AOX
+			check_variable = {
+				aus_ger_sup > 99
+			}
+			aus_has_win_german_war = yes
+			check_variable = {
+				global.ger_con_has_uni = 1
+			}
+		}		
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+			custom_effect_tooltip = nationalist_power
+			hidden_effect = {country_event = austria.11}
+		}
+	}
+}

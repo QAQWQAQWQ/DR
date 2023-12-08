@@ -29,6 +29,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/social_democrat.dds"
 	}
 	spriteType = { 
+		name = "GFX_ideology_Reactionary_group" 
+		texturefile = "gfx/interface/ideologies/Reactionary.dds"
+	}
+	spriteType = { 
 		name = "GFX_ideology_SJR_social_democrat_group" 
 		texturefile = "gfx/interface/ideologies/SJR_social_democrat.dds"
 	}
@@ -84,10 +88,6 @@ spriteTypes = {
 		name = "GFX_ideology_Left_populism_group" 
 		texturefile = "gfx/interface/ideologies/Left_populism_group.dds"
 	}
-	spriteType = { 
-		name = "GFX_ideology_constitutional_monarchy_group" 
-		texturefile = "gfx/interface/ideologies/constitutional_monarchy_group.dds"
-	}
 	
 	spriteType = { 
 		name = "GFX_ideology_LMJ_monarchy_group" 
@@ -99,19 +99,19 @@ spriteTypes = {
 	}
 	spriteType = { 
 		name = "GFX_ideology_Reform_socialism_group" 
-		texturefile = "gfx/interface/ideologies/Reform_socialism.dds"
+		texturefile = "gfx/interface/ideologies/Reform_socialism_group.dds"
 	}
 	spriteType = { 
 		name = "GFX_ideology_Islamic_group" 
 		texturefile = "gfx/interface/ideologies/Islamic_group.dds"
 	}
 	spriteType = { 
-		name = "GFX_ideology_AOX_Dual_monarchy_group" 
-		texturefile = "gfx/interface/ideologies/AOX_Dual_monarchy_group.dds"
+		name = "GFX_ideology_AOX_monarchy_group" 
+		texturefile = "gfx/interface/ideologies/AOX_monarchy_group.dds"
 	}
 	spriteType = { 
-		name = "GFX_ideology_XYL_Dual_monarchy_group" 
-		texturefile = "gfx/interface/ideologies/AOX_Dual_monarchy_group.dds"
+		name = "GFX_ideology_XYL_monarchy_group" 
+		texturefile = "gfx/interface/ideologies/AOX_monarchy_group.dds"
 	}
 	spriteType = { 
 		name = "GFX_ideology_Right_populism_group" 

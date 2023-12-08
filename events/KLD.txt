@@ -1,0 +1,132 @@
+﻿###########################
+# KLD Events
+###########################
+
+add_namespace = KLD
+
+country_event = {
+	id = KLD.1
+	title = KLD.1.t
+	desc = KLD.1.d
+	picture = GFX_KLD_1
+	fire_only_once = yes
+	trigger = {
+		has_completed_focus = KLD_focus_0
+		}
+	option = {
+		name = KLD.1.a
+		104={
+			damage_building = {
+				type = industrial_complex
+				damage = 0.5
+			}
+		}
+		hidden_effect = {
+			country_event = {id=KLD.2 days=25}
+		}
+		
+		}
+	}
+country_event = {
+	id = KLD.2
+	title = KLD.2.t
+	desc = KLD.2.d
+	picture = GFX_KLD_2
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = KLD.2.a
+		}
+	}
+country_event = {
+	id = KLD.3
+	title = KLD.3.t
+	desc = KLD.3.d
+	picture = GFX_KLD_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = KLD.3.a
+		}
+	}
+country_event = {
+	id = KLD.4
+	title = KLD.4.t
+	desc = KLD.4.d
+	picture = GFX_KLD_4
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = KLD.4.a
+		
+		}
+	}
+country_event = {
+	id = KLD.5
+	title = KLD.5.t
+	desc = KLD.5.d
+	picture = GFX_KLD_5
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = KLD.5.a
+		}
+	}
+country_event = {
+	id = KLD.6
+	title = KLD.6.t
+	desc = KLD.6.d
+	picture = GFX_KLD_6
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = KLD.6.a
+		KLD={
+			kill_country_leader = yes
+		}
+		country_event = {id=KLD.7 days=5}
+		}
+	}
+country_event = {
+	id = KLD.7
+	title = KLD.7.t
+	desc = KLD.7.d
+	picture = GFX_KLD_7
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = KLD.7.a
+		country_event = {id=KLD.8 days=5}
+		}
+	option = {
+		name = KLD.7.b
+		country_event = {id=KLD.8 days=5}
+		}
+	}
+country_event = {
+	id = KLD.8
+	title = KLD.8.t
+	desc = KLD.8.d
+	picture = GFX_KLD_8
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = KLD.8.a
+		country_event={id=aushun.7 days=8}
+		}
+	}

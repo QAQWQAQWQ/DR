@@ -3,7 +3,7 @@ ideas = {
 		AOX_Hungarian_independence_movement = {
 			picture = Hungarian_independence_movement
 			modifier = {
-				stability_weekly  = -0.03
+				# stability_weekly  = -0.03
 				party_popularity_stability_factor = -0.1
 			}
         }
@@ -15,5 +15,235 @@ ideas = {
 					custom_modifier_tooltip = Part_Habsburgs1
 				}
 			}
+		}
+		country = {
+			AOX_Before_Part_Habsburgs = {
+				picture = Part_Habsburgs
+				modifier = {
+				}
 			}
+		}
+		country = {
+			AOX_compensation_for_ethnic_minorities = {
+				picture = Part_Habsburgs
+				modifier = {
+					consumer_goods_factor = 0.25
+					production_speed_buildings_factor = -0.3
+				}
+			}
+			}
+	country = {
+		aus_ammunition_reserve_idea = {
+			picture = Part_Habsburgs
+			modifier = {
+				army_attack_factor = 0.10
+			}
+		}
+	}
+	country = {
+		aus_pre_armys = {
+			picture = pre_armys
+			modifier = {
+				training_time_army_factor = 0.10
+				army_org_Factor = 0.10	
+				breakthrough_factor = 0.05
+			}
+		}
+	}
+	country = {
+		aus_imperial_glory = {
+			picture = imperial_glory
+			modifier = {
+				stability_factor = 0.20
+				war_support_factor = 0.10 
+				army_morale_factor = 0.1
+			}
+		}
+	}
+	country = {
+		remnants_of_the_old_state = {
+			picture = Part_Habsburgs
+			modifier = {
+				political_power_cost = 1
+				production_speed_infrastructure_factor = -0.15
+				production_speed_arms_factory_factor = -0.15
+				production_speed_industrial_complex_factor = -0.15
+			}
+		}
+	}
+	country = {
+		inconsistent_command_system = {
+			picture = inconsistent_command_system
+			modifier = {
+				max_command_power = -50
+				command_power_gain_mult = -0.5
+				military_leader_cost_factor = 0.25
+				planning_speed = -0.25
+			}
+		}
+	}
+	country = {
+		disgruntled_german_nationalism = {
+			picture = disgruntled_german_nationalism
+			modifier = {
+				stability_factor = -0.4
+				production_factory_efficiency_gain_factor = -0.1
+				conscription_factor = -0.1
+			}
+		}
+	}
+	country = {
+		Part_of_Habsburgs = {
+			picture = Part_Habsburgs
+			modifier = {
+			}
+		}
+	}
+	country = {
+		Austrian_Military_Advisor = {
+			picture = Part_Habsburgs
+			modifier = {
+				dig_in_speed_factor = 0.5
+				planning_speed = 0.25
+				max_command_power = 20
+			}
+		}
+	}
+	country = {
+		AOX_Ethnic_construction = {
+			picture = ethnic_construction
+			modifier = {
+				state_resources_factor=0.02
+				local_building_slots_factor=0.02
+				industrial_capacity_factory=0.02
+				occupation_cost=-0.02
+				puppet_cost_factor=-0.02
+				subjects_autonomy_gain=5
+			}
+		}
+	}
+	country = {
+		AOX_Ethnic_construction1 = {
+			picture = ethnic_construction
+			modifier = {
+				state_resources_factor=0.02
+				local_building_slots_factor=0.02
+				industrial_capacity_factory=0.02
+				occupation_cost=-0.02
+				puppet_cost_factor=-0.02
+				subjects_autonomy_gain=10
+				justify_war_goal_time=-0.2
+				war_stability_factor=0.02
+			}
+		}
+	}
+	country = {
+		AOX_Ethnic_construction2 = {
+			picture = ethnic_construction
+			modifier = {
+				state_resources_factor=0.02
+				local_building_slots_factor=0.02
+				industrial_capacity_factory=0.02
+				occupation_cost=-0.02
+				puppet_cost_factor=-0.02
+				subjects_autonomy_gain=10
+				justify_war_goal_time=-0.2
+				war_stability_factor=0.02
+				party_popularity_stability_factor=0.05
+				recruitable_population=0.02
+			}
+		}
+	}
+	country = {
+		AOX_Ethnic_construction3 = {
+			picture = ethnic_construction
+			modifier = {
+				state_resources_factor=0.02
+				local_building_slots_factor=0.02
+				industrial_capacity_factory=0.02
+				occupation_cost=-0.02
+				puppet_cost_factor=-0.02
+				subjects_autonomy_gain=10
+				justify_war_goal_time=-0.2
+				war_stability_factor=0.02
+				party_popularity_stability_factor=0.05
+				recruitable_population=0.02
+				non_core_manpower=0.02
+				forced_surrender_limit=0.05
+			}
+		}
+	}
+	country = {
+		AOX_Ethnic_construction4 = {
+			picture = ethnic_construction
+			modifier = {
+				war_stability_factor=0.08
+				party_popularity_stability_factor=0.08
+				recruitable_population=0.1
+				non_core_manpower=0.1
+				forced_surrender_limit=0.15
+			}
+		}
+	}
+	country = {
+		AOX_Ethnic_construction5 = {
+			picture = ethnic_construction
+			modifier = {
+				war_stability_factor=0.08
+				party_popularity_stability_factor=0.08
+				recruitable_population=0.1
+				non_core_manpower=0.1
+				forced_surrender_limit=0.15
+				consumer_goods_factor=-0.05
+				faction_trade_opinion_factor=0.1
+				production_speed_buildings_factor=0.05
+				local_building_slots_factor=0.05
+			}
+		}
+	}
+	country = {
+		AOX_idea_german_12 = {
+			picture = german_12
+			modifier = {
+				faction_trade_opinion_factor=0.3
+				market_available_for_dumping_modifier=1.5
+		}
+		targeted_modifier = {
+			tag = AOX
+			trade_cost_for_target_factor=-0.3
+		}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+	#####
+	industrial_concern = {
+		AUS_OBB = {
+
+			picture = GFX_idea_AUS_OBB
+			
+			allowed = {
+				original_tag = AOX
+			}
+			available = {
+				has_completed_focus = AUS_german_14
+			}
+			
+			cost = 80
+
+			research_bonus = {
+				train_tech = 0.1
+			}
+			
+			traits = { railway_company }
+		}
+}
 }

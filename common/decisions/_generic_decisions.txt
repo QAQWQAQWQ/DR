@@ -1,94 +1,6 @@
-social_stratum = {
-	social_stratum_1 = {
-	  icon = generic_ignite_civil_war
-	  visible = {
-		
-	  }
-	  
-	  available = {
-	
-	  }
-	  days_remove = 10
-	  cost = 25
-	  allowed = { 
-		  always = yes
-	  }
-	  fixed_random_seed = no
-	  fire_only_once = no
-	  is_good = no
-		  ai_will_do = {
-		  factor = 1
-		  }
-		  complete_effect = {
-			add_political_power = 45
-			
-		  }
-	  }
-			}
-
-
 
 political_actions = {
 	
-	targeted_race_for_the_bomb = {
-
-		icon = generic_research
-		allowed = {
-			always = yes
-		}
-
-		available = {
-			#Target is FROM
-			has_tech = atomic_research
-			NOT = { has_global_flag = first_nuke_dropped }
-			NOT = { has_idea = race_for_the_bomb }
-		}
-
-		target_root_trigger = {
-            has_tech = atomic_research
-            NOT = { has_global_flag = first_nuke_dropped }
-            NOT = { has_idea = race_for_the_bomb }
-		}
-
-		#If this trigger matches a country.
-		target_trigger = {
-			#Target is FROM
-			FROM = {
-        		NOT = { is_in_faction_with = ROOT }
-				has_tech = nuclear_reactor
-				any_owned_state = {
-					nuclear_reactor > 0
-				}
-			}
-		}
-
-		visible = {
-            #Target is FROM
-            has_tech = atomic_research
-            NOT = { has_global_flag = first_nuke_dropped }
-            NOT = { has_idea = race_for_the_bomb }
-            FROM = {
-        		NOT = { is_in_faction_with = ROOT }
-				has_tech = nuclear_reactor
-				any_owned_state = {
-					nuclear_reactor > 0
-				}
-			}
-		}
-
-		complete_effect = {
-			set_country_flag = racing_for_the_bomb
-			add_ideas = race_for_the_bomb
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				any_other_country = { has_tech = nukes }
-			}
-		}
-	}
 
 	improved_worker_conditions = {
 
@@ -317,6 +229,71 @@ propaganda_efforts = {
 		modifier = {
 			production_factory_efficiency_gain_factor = 0.05
 			conversion_cost_civ_to_mil_factor = -0.2
+		}
+
+		complete_effect = {
+			#set_country_flag = war_propaganda_campaign_running
+		}
+		remove_effect = {
+			#clr_country_flag = war_propaganda_campaign_running
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_war_support < 0.4
+				has_war = yes
+			}
+		}
+	}
+}
+Literacy_level = {
+	New_teaching_materials = {
+		icon = SWI_dismiss_council
+		available = {
+		}
+		visible = {
+		}
+		fire_only_once = no
+		days_remove = 90
+		days_re_enable = 180
+		cost = 50
+		modifier = {
+			#war_support_weekly = 0.01
+		}
+		complete_effect = {
+			#set_country_flag = war_propaganda_campaign_running
+		}
+		remove_effect = {
+			#clr_country_flag = war_propaganda_campaign_running
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_war_support < 0.4
+				has_war = yes
+			}
+		}
+	}
+	Recruiting_teachers = {
+
+		icon = SWI_elect_confederation_president
+
+		available = {
+		}
+		visible = {
+			
+		}
+		fire_only_once = no
+
+		days_remove = 90
+
+		cost = 50
+
+		modifier = {
+			#weekly_manpower = 500
 		}
 
 		complete_effect = {

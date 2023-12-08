@@ -7,7 +7,7 @@ set_technology = {
 	infantry_weapons = 1
 }
 
-recruit_character = CPC_HZGH
+recruit_character = CPC_Committee_Communist_China
 recruit_character = CPC_LiDaZhao
 recruit_character = CPC_ChenDuXiu
 recruit_character = CPC_LiuShiFu
@@ -18,8 +18,8 @@ recruit_character = CPC_FangZhiMing
 recruit_character = CPC_DongBiWu
 recruit_character = CPC_Nikolsky
 
-	add_political_power = 1198
-	add_command_power = 100
+	add_political_power = 230
+	add_command_power = 10
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1

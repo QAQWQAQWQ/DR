@@ -1,0 +1,51 @@
+upds_inds_cnt = {
+    set_variable = {
+        ind_upd = max_manpower_k
+    }
+    divide_variable = {
+        var = ind_upd
+        value = num_of_factories
+    }
+    if = {
+        limit = {
+            OR = {
+                check_variable = { ind_upd > 3100 }
+                check_variable = { num_of_factories < 1 }
+            }
+        }
+        add_ideas = { Agricultural_economy }
+    }
+    else = {
+    if = {
+        limit = {
+            OR = {
+                check_variable = { ind_upd > 2300 }
+                check_variable = { num_of_factories < 5 }
+            }
+        }
+        add_ideas = { low_industrialization }
+    }
+    else = {
+    if = {
+        limit = {
+            OR = {
+                check_variable = { ind_upd > 1300 }
+                check_variable = { num_of_factories < 25 }
+            }
+        }
+        add_ideas = { Basic_industrialization }
+    }
+    else = {
+    if = {
+        limit = {
+            OR = {
+                check_variable = { ind_upd > 150 }
+                check_variable = { num_of_factories < 35 }
+            }
+        }
+        add_ideas = { Mature_industrialization }
+    }
+    else = {
+        add_ideas = { Developed_industrialization }
+    }}}}
+}

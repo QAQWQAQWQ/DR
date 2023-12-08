@@ -1,3 +1,5 @@
+#!gfx:interface\RS_icon.gfx
+#!gfx:interface\aus.gfx
 focus_tree = {
 	id = AUS
 	country = {
@@ -10,7 +12,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = AUS_0
-		icon = GFX_goal_unkown
+		icon = GFX_AUS_0_goal
 		cost = 5.00
 		prerequisite = {
 		}
@@ -21,14 +23,14 @@ focus_tree = {
 		completion_reward = {
 		}
 		available = {
-
+			always = no
 		}
 		bypass = {
 		}
 	}
 	focus = {
 		id = AUS_ger_1
-		icon = GFX_goal_unkown
+		icon = GFX_AUS_ger_1_goal
 		cost = 5.00
 		prerequisite = {
 			focus = AUS_0
@@ -42,6 +44,8 @@ focus_tree = {
 		x = 2
 		y = 1
 		completion_reward = {
+        	add_stability = 0.15
+			WWS = { country_event = austria.2 }
 		}
 		available = {
 
@@ -51,7 +55,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_ger_2
-		icon = GFX_goal_unkown
+		icon = GFX_AUS_ger_2_goal
 		cost = 5.00
 		prerequisite = {
 			focus = AUS_0
@@ -65,6 +69,8 @@ focus_tree = {
 		x = 6
 		y = 1
 		completion_reward = {
+			add_political_power = 150
+        	add_stability = 0.05
 		}
 		available = {
 
@@ -74,7 +80,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_ger_3
-		icon = GFX_goal_unkown
+		icon = GFX_AUS_ger_3_goal
 		cost = 5.00
 		prerequisite = {
 			focus = AUS_0
@@ -88,6 +94,8 @@ focus_tree = {
 		x = 10
 		y = 1
 		completion_reward = {
+			add_war_support = 0.1
+        	add_stability = 0.05
 		}
 		available = {
 
@@ -97,8 +105,8 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_ger_4
-		icon = GFX_goal_unkown
-		cost = 5.00
+		icon = GFX_AUS_ger_4_goal
+		cost = 10.00
 		prerequisite = {
 			focus = AUS_ger_2
 			focus = AUS_ger_3
@@ -106,7 +114,26 @@ focus_tree = {
 		x = 8
 		y = 2
 		completion_reward = {
-			add_political_power = 200
+			add_political_power = 100
+			every_country = {
+				limit = {
+				OR = {
+					original_tag = LSB
+					original_tag = DHD
+					original_tag = DON
+					original_tag = DOB
+					original_tag = DOL
+					original_tag = DOH
+					original_tag = DOA
+					original_tag = DOM
+					original_tag = DOR
+					original_tag = DOF
+					original_tag = DOS
+				}
+				}
+            	set_variable = { ger_con_det = 5 }
+				gercon_add_aus_sup = yes
+			}
 		}
 		available = {
 
@@ -116,8 +143,8 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_ger_8
-		icon = GFX_goal_unkown
-		cost = 5.00
+		icon = GFX_AUS_ger_8_goal
+		cost = 10.00
 		prerequisite = {
 			focus = AUS_ger_4
 		}
@@ -126,32 +153,34 @@ focus_tree = {
 		x = 7
 		y = 3
 		completion_reward = {
-      		add_to_variable = { var = DHD.aus_support value = 10 }  
-      		add_to_variable = { var = DOL.aus_support value = 10 }  
-      		add_to_variable = { var = DON.aus_support value = 10 }  
-      		add_to_variable = { var = LSB.aus_support value = 10 }  
+            set_variable = { ger_con_det = 10 }
+			DHD = { gercon_add_aus_sup = yes }
+			DOL = { gercon_add_aus_sup = yes }
+			DON = { gercon_add_aus_sup = yes }
+			LSB = { gercon_add_aus_sup = yes }
 			gercon_upd_pbv_var = yes
 			gercon_clamp_vars = yes
 		}
 		available = {
 
 		}
-		bypass = {
+		bypass = { 
 		}
 	}
 	focus = {
 		id = AUS_ger_9
-		icon = GFX_goal_unkown
-		cost = 5.00
+		icon = GFX_AUS_ger_9_goal
+		cost = 10.00
 		prerequisite = {
 			focus = AUS_ger_4
 		}
 		x = 9
 		y = 3
 		completion_reward = {
-      		add_to_variable = { var = DOR.aus_support value = 20 }  
-      		add_to_variable = { var = DOB.aus_support value = 20 }  
-      		add_to_variable = { var = DOF.aus_support value = 20 }  
+            set_variable = { ger_con_det = 20 }
+			DOR = { gercon_add_aus_sup = yes }
+			DOB = { gercon_add_aus_sup = yes }
+			DOF = { gercon_add_aus_sup = yes } 
 			gercon_upd_pbv_var = yes
 			gercon_clamp_vars = yes
 		}
@@ -162,19 +191,13 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_ger_10
-		icon = GFX_goal_unkown
+		icon = GFX_AUS_ger_10_goal
 		cost = 5.00
-		mutually_exclusive = {
-			focus = AUS_ger_13
-		}
 		prerequisite = {
-			focus = AUS_ger_8
+			focus = AUS_ger_7
 		}
-		prerequisite = {
-			focus = AUS_ger_9
-		}
-		x = 8
-		y = 4
+		x = 11
+		y = 3
 		completion_reward = {
 			add_political_power = -80
 			DOH = {
@@ -203,8 +226,12 @@ focus_tree = {
 					}
 				}
 			}
-			add_to_variable = { var = DOH.aus_support value = 15 } 
-			add_to_variable = { var = DOH.pre_support value = -15 }  
+			DOH = { 
+				set_variable = { ger_con_det = 15 }
+				gercon_add_aus_sup = yes 
+				set_variable = { ger_con_det = -15 }
+				DOH = { gercon_del_pre_sup = yes} 
+			}
 			gercon_upd_pbv_var = yes
 			gercon_clamp_vars = yes
 		}
@@ -212,31 +239,13 @@ focus_tree = {
 
 		}
 		bypass = {
-		}
-	}
-	focus = {
-		id = AUS_ger_15
-		icon = GFX_goal_unkown
-		cost = 5.00
-		prerequisite = {
-			focus = AUS_ger_10
-		}
-		mutually_exclusive = {
-		}
-		x = 8
-		y = 5
-		completion_reward = {
-		}
-		available = {
-			has_completed_focus = AUS_ger_2
-		}
-		bypass = {
+			german_war_has_boom = yes
 		}
 	}
 	focus = {
 		id = AUS_ger_5
-		icon = GFX_goal_unkown
-		cost = 5.00
+		icon = GFX_AUS_ger_5_goal
+		cost = 10.00
 		prerequisite = {
 			focus = AUS_ger_2
 			focus = AUS_ger_1
@@ -244,6 +253,10 @@ focus_tree = {
 		x = 4
 		y = 2
 		completion_reward = {
+			add_opinion_modifier = {
+				target = WWS
+				modifier = Love_like_brotherhood
+			}
 		}
 		available = {
 
@@ -253,7 +266,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_ger_11
-		icon = GFX_goal_unkown
+		icon = GFX_AUS_ger_11_goal
 		cost = 5.00
 		prerequisite = {
 			focus = AUS_ger_5
@@ -261,16 +274,25 @@ focus_tree = {
 		x = 5
 		y = 3
 		completion_reward = {
+			DOS = { ger_con_pre_controlled = yes }
 		}
 		available = {
-
+			AOX = {
+				has_completed_focus = AUS_ger_2
+			}
+			custom_trigger_tooltip = {
+				tooltip = sax_war_has_boom
+				check_variable = {
+					global.sax_war = 0
+				}
+			}
 		}
 		bypass = {
 		}
 	}
 	focus = {
 		id = AUS_ger_12
-		icon = GFX_goal_unkown
+		icon = GFX_AUS_ger_12_goal
 		cost = 5.00
 		prerequisite = {
 			focus = AUS_ger_5
@@ -280,6 +302,7 @@ focus_tree = {
 		x = 3
 		y = 3
 		completion_reward = {
+			custom_effect_tooltip = unlock_ger_con_fra_def
 		}
 		available = {
 
@@ -289,81 +312,27 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_ger_13
-		icon = GFX_goal_unkown
-		cost = 5.00
+		icon = GFX_AUS_ger_13_goal
+		cost = 10.00
 		prerequisite = {
 			focus = AUS_ger_11
 		}
 		prerequisite = {
 			focus = AUS_ger_12
 		}
+		prerequisite = {
+			focus = AUS_ger_8
+		}
+		prerequisite = {
+			focus = AUS_ger_9
+		}
 		mutually_exclusive = {
-			focus = AUS_ger_10
+			focus = AUS_ger_21
 		}
 		x = 4
 		y = 4
 		completion_reward = {
-			every_country = {
-                limit = {
-                    OR = {
-                        tag = AOX
-                        tag = WWS
-                        tag = AGC
-                        tag = LSB
-                        tag = DHD
-                        tag = DON
-                        tag = DOF
-                        tag = DOB
-                        tag = DOR
-                        tag = BXM
-                        tag = DOL
-                        tag = DOH
-                        tag = DOA
-                        tag = DOM
-                        tag = DOS
-                    }
-                }
-                set_variable = {
-                    var = ger_con_cangetsupport
-                    value = 0
-                }
-				if = {
-					limit = {
-           				check_variable = { aus_support > pre_support }
-					}
-					set_variable = {
-						var = aus_support
-						value = 100
-					}
-					set_variable = {
-						var = pre_support
-						value = 0
-					}
-				}
-				if = {
-					limit = {
-           				check_variable = { aus_support < pre_support }
-					}
-					set_variable = {
-						var = aus_support
-						value = 0
-					}
-					set_variable = {
-						var = pre_support
-						value = 100
-					}
-				}
-				if = {
-					limit = {
-           				check_variable = { aus_support = pre_support }
-					}
-					THIS = {	
-						country_event = { id = austria.1 }
-					}
-				}
-			}
-			gercon_upd_pbv_var = yes
-			gercon_clamp_vars = yes
+			WWS = { country_event = austria.4 }
 		}
 		available = {
 			has_completed_focus = AUS_ger_2
@@ -373,7 +342,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_ger_14
-		icon = GFX_goal_unkown
+		icon = GFX_AUS_ger_14_goal
 		cost = 5.00
 		prerequisite = {
 			focus = AUS_ger_13
@@ -384,76 +353,72 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			every_country = {
-                limit = {
-                    OR = {
-                        tag = AOX
-                        tag = WWS
-                        tag = AGC
-                        tag = LSB
-                        tag = DHD
-                        tag = DON
-                        tag = DOF
-                        tag = DOB
-                        tag = DOR
-                        tag = BXM
-                        tag = DOL
-                        tag = DOH
-                        tag = DOA
-                        tag = DOM
-                        tag = DOS
-                    }
-                }
-				if = {
-					limit = {
-           				check_variable = { aus_support > pre_support }
-					}
-					THIS = {	
-						country_event = { id = austria.2 }
-					}
+				limit = {
+				  OR = {
+					original_tag = AGC
+					original_tag = LSB
+					original_tag = DHD
+					original_tag = DON
+					original_tag = DOF
+					original_tag = DOB
+					original_tag = DOR
+					original_tag = DOL
+					original_tag = DOH
+					original_tag = DOA
+					original_tag = DOM
+					original_tag = DOS
+				  }
 				}
 				if = {
 					limit = {
-           				check_variable = { aus_support < pre_support }
+						check_variable = { aus_support < pre_support }
 					}
-					THIS = {	
-						country_event = { id = austria.3 }
-					}
+					country_event = ger_con.1
+				}
+				else = {
+					country_event = ger_con.2
 				}
 			}
+			
+			set_variable = { global.pre_win_german_war = 1 }
+			set_variable = { global.aus_win_german_war = 1 }
+			set_variable = { global.german_war = 1 }
 		}
 		available = {
-			has_completed_focus = AUS_ger_2
+			ger_con_pre_accpect_delineation = yes
 		}
 		bypass = {
 		}
 	}
 	focus = {
 		id = AUS_ger_6
-		icon = GFX_goal_unkown
-		cost = 5.00
+		icon = GFX_AUS_ger_6_goal
+		cost = 10.00
 		prerequisite = {
 			focus = AUS_ger_1
 		}
 		x = 1
 		y = 2
 		completion_reward = {
+			WWS = { country_event = austria.3 }
 		}
 		available = {
-
+			ger_con_pre_accpect_aus = yes
 		}
 		bypass = {
 		}
 	}
 	focus = {
 		id = AUS_ger_16
-		icon = GFX_goal_unkown
-		cost = 5.00
+		icon = GFX_AUS_ger_16_goal
+		cost = 10.00
 		prerequisite = {
 			focus = AUS_ger_6
 		}
 		x = 1
 		y = 3
 		completion_reward = {
+			add_ideas = { aus_pre_armys }
 		}
 		available = {
 
@@ -463,8 +428,8 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_ger_17
-		icon = GFX_goal_unkown
-		cost = 5.00
+		icon = GFX_AUS_ger_17_goal
+		cost = 10.00
 		prerequisite = {
 			focus = AUS_ger_16
 		}
@@ -480,7 +445,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_ger_18
-		icon = GFX_goal_unkown
+		icon = GFX_AUS_ger_18_goal
 		cost = 5.00
 		prerequisite = {
 			focus = AUS_ger_17
@@ -491,6 +456,21 @@ focus_tree = {
 		x = 2
 		y = 5
 		completion_reward = {
+      		WWS = { create_faction = "维也纳协约" }
+			WWS = { add_to_faction = AOX }
+			WWS = { country_event = austria.5 }
+			AOX = { country_event = austria.6 }
+			every_country = { 
+				limit = {
+					NOT = {
+						original_tag = AOX
+					}
+					NOT = {
+						original_tag = WWS
+					}
+				}
+				country_event = austria.7 
+			}
 		}
 		available = {
 
@@ -500,14 +480,15 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_ger_7
-		icon = GFX_goal_unkown
-		cost = 5.00
+		icon = GFX_AUS_ger_7_goal
+		cost = 10.00
 		prerequisite = {
 			focus = AUS_ger_3
 		}
 		x = 11
 		y = 2
 		completion_reward = {
+			add_war_support = 0.1
 		}
 		available = {
 
@@ -517,7 +498,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_ger_19
-		icon = GFX_goal_unkown
+		icon = GFX_AUS_ger_19_goal
 		cost = 5.00
 		prerequisite = {
 			focus = AUS_ger_7
@@ -525,33 +506,18 @@ focus_tree = {
 		x = 12
 		y = 4
 		completion_reward = {
+			custom_effect_tooltip = unlock_aus_sil_atk
 		}
 		available = {
 
 		}
 		bypass = {
+			german_war_has_end = yes
 		}
 	}
 	focus = {
-		id = AUS_ger_20
-		icon = GFX_goal_unkown
-		cost = 5.00
-		prerequisite = {
-			focus = AUS_ger_7
-		}
-		x = 11
-		y = 3
-		completion_reward = {
-		}
-		available = {
-
-		}
-		bypass = {
-		}
-	}
-	focus = {
-		id = AUS_ger_21
-		icon = GFX_goal_unkown
+		id = AUS_ger_15
+		icon = GFX_AUS_ger_15_goal
 		cost = 5.00
 		prerequisite = {
 			focus = AUS_ger_7
@@ -559,75 +525,221 @@ focus_tree = {
 		x = 10
 		y = 4
 		completion_reward = {
+			custom_effect_tooltip = unlock_aus_ammunition_reserve
 		}
 		available = {
 
+		}
+		bypass = {
+			german_war_has_end = yes
+		}
+	}
+	focus = {
+		id = AUS_ger_20
+		icon = GFX_AUS_ger_20_goal
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_ger_19
+		}
+		prerequisite = {
+			focus = AUS_ger_10
+		}
+		prerequisite = {
+			focus = AUS_ger_15
+		}
+		x = 11
+		y = 5
+		completion_reward = {
+			add_ideas = { aus_imperial_glory }
+			AOX = { country_event = austria.10 }
+		}
+		available = {
+			custom_trigger_tooltip = { 
+				tooltip = aus_win_german_war 
+				aus_has_win_german_war = yes
+			}
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_ger_21
+		icon = GFX_AUS_ger_21_goal
+		cost = 10.00
+		prerequisite = {
+			focus = AUS_ger_8
+		}
+		prerequisite = {
+			focus = AUS_ger_9
+		}
+		mutually_exclusive = {
+			focus = AUS_ger_13
+		}
+		x = 8
+		y = 4
+		completion_reward = {
+            set_variable = { ger_con_det = -15 }
+			DOS = { gercon_del_pre_sup = yes }
+			DOH = { gercon_del_pre_sup = yes }
+			DOM = { gercon_del_pre_sup = yes }
+			DOA = { gercon_del_pre_sup = yes }
+			DOL = { gercon_del_pre_sup = yes }
+			gercon_upd_pbv_var = yes
+			gercon_clamp_vars = yes
+		}
+		available = {
+			has_completed_focus = AUS_ger_2
 		}
 		bypass = {
 		}
 	}
 	focus = {
 		id = AUS_ger_22
-		icon = GFX_goal_unkown
+		icon = GFX_AUS_ger_22_goal
 		cost = 5.00
 		prerequisite = {
-			focus = AUS_ger_19
-			focus = AUS_ger_20
 			focus = AUS_ger_21
 		}
-		x = 11
+		x = 8
 		y = 5
 		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = AGC
+						tag = LSB
+						tag = DHD
+						tag = DON
+						tag = DOF
+						tag = DOB
+						tag = DOR
+						tag = BXM
+						tag = DOL
+						tag = DOH
+						tag = DOA
+						tag = DOM
+						tag = DOS
+					}
+				}
+				ger_con_aus_controlled = yes
+			}
 		}
 		available = {
-
+			DOS = { ger_con_uni_tri_aus = yes }
+			DOH = { ger_con_uni_tri_aus = yes }
+			DOM = { ger_con_uni_tri_aus = yes }
+			DOA = { ger_con_uni_tri_aus = yes }
+			DOL = { ger_con_uni_tri_aus = yes }
+			DON = { ger_con_uni_tri_aus = yes }
+			DOR = { ger_con_uni_tri_aus = yes }
+			DOF = { ger_con_uni_tri_aus = yes }
+			DOB = { ger_con_uni_tri_aus = yes }
+			DHD = { ger_con_uni_tri_aus = yes }
+			AGC = { ger_con_uni_tri_aus = yes }
+			LSB = { ger_con_uni_tri_aus = yes }
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_bir_0
+		icon = GFX_AUS_bir_0
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_0
+		}
+		x = 19
+		y = 1
+		completion_reward = {
+			
+			every_state = {
+				limit = {
+					is_core_of = DMT
+				}
+				add_claim_by = KOH
+			}
+		}
+		available = {
+			always = no
 		}
 		bypass = {
 		}
 	}
 	focus = {
 		id = AUS_bir_1
-		icon = GFX_goal_unkown
+		icon = GFX_AUS_bir_1
 		cost = 5.00
 		prerequisite = {
-			focus = AUS_0
+			focus = AUS_bir_0
 		}
 		mutually_exclusive = {
 			focus = AUS_bir_2
 		}
-		x = 16
-		y = 1
+		x = 17
+		y = 2
 		completion_reward = {
+			hidden_effect = {
+				set_variable = {
+					global.bosnia_contradictions = 1
+				}
+			}
+			custom_effect_tooltip = bosnia_contradictions_tool
+			# DMT = { annex_country = { target = KLD transfer_troops = yes } }
+			custom_effect_tooltip = AUS_bir_1_tool
+			custom_effect_tooltip = more_cze_aus_hun_sup_30
+			add_to_variable = {
+				var = AOX.aus_hun_gov_sup^3
+				value = 30
+			}
+			aushun_clamp_vars = yes	
+			custom_effect_tooltip = more_pol_aus_hun_sup_30
+			add_to_variable = {
+				var = AOX.aus_hun_gov_sup^4
+				value = 30
+			}
+			aushun_clamp_vars = yes
+			custom_effect_tooltip = more_cro_aus_hun_sup_30
+				add_to_variable = {
+					var = AOX.aus_hun_gov_sup^8
+					value = 30
+				}
+				aushun_clamp_vars = yes
+			custom_effect_tooltip = less_hun_aus_hun_sup_40
+				add_to_variable = {
+					var = AOX.aus_hun_gov_sup^1
+					value = -40
+				}
+				aushun_clamp_vars = yes	
 		}
 		available = {
-
+			not_bosnia_war_tri = yes
 		}
 		bypass = {
 		}
 	}
 	focus = {
 		id = AUS_bir_2
-		icon = GFX_goal_unkown
+		icon = GFX_AUS_bir_2
 		cost = 5.00
 		prerequisite = {
-			focus = AUS_0
+			focus = AUS_bir_0
 		}
 		mutually_exclusive = {
 			focus = AUS_bir_1
 		}
-		x = 20
-		y = 1
+		x = 21
+		y = 2
 		completion_reward = {
 		}
 		available = {
-
+			always = no
 		}
 		bypass = {
 		}
 	}
 	focus = {
 		id = AUS_bir_3
-		icon = GFX_goal_unkown
+		icon = GFX_AUS_bir_3
 		cost = 5.00
 		prerequisite = {
 			focus = AUS_bir_1
@@ -636,57 +748,95 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = AUS_bir_7
 		}
-		x = 18
-		y = 2
+		x = 19
+		y = 3
 		completion_reward = {
+			# DMT = { annex_country = { target = KLD transfer_troops = yes } }
+			custom_effect_tooltip = AUS_bir_1_tool
+			custom_effect_tooltip = more_cro_aus_hun_sup_30
+				add_to_variable = {
+					var = AOX.aus_hun_gov_sup^8
+					value = 30
+				}
+				aushun_clamp_vars = yes	
+			custom_effect_tooltip = less_hun_aus_hun_sup_40
+				add_to_variable = {
+					var = AOX.aus_hun_gov_sup^1
+					value = -40
+				}
+				aushun_clamp_vars = yes	
 		}
 		available = {
-
+			not_bosnia_war_tri = yes
 		}
 		bypass = {
+			has_completed_focus = AUS_bir_1
 		}
-	}
+	} 
 	focus = {
 		id = AUS_bir_4
-		icon = GFX_goal_unkown
+		icon = GFX_AUS_bir_4
 		cost = 5.00
 		prerequisite = {
 			focus = AUS_bir_3
 		}
 		mutually_exclusive = {
 		}
-		x = 17
-		y = 3
+		x = 18
+		y = 4
 		completion_reward = {
+			DMT = {
+				army_experience = 10
+				add_ideas = {
+					Austrian_Military_Advisor
+				}
+			}
 		}
 		available = {
-
+			bosnia_war_not_end = yes
 		}
 		bypass = {
 		}
 	}
 	focus = {
 		id = AUS_bir_5
-		icon = GFX_goal_unkown
+		icon = GFX_AUS_bir_5
 		cost = 5.00
 		prerequisite = {
 			focus = AUS_bir_3
 		}
 		mutually_exclusive = {
 		}
-		x = 19
-		y = 3
+		x = 20
+		y = 4
 		completion_reward = {
+			DMT = {
+				add_equipment_to_stockpile = {
+    				type = infantry_equipment_0
+					amount = 1000
+					producer = AOX
+				}
+				add_equipment_to_stockpile = {
+    				type = artillery_equipment_1
+					amount = 100
+					producer = AOX
+				}
+				add_equipment_to_stockpile = { 
+					type = fighter_equipment_0
+					amount = 20 
+					producer = AOX
+				}
+			}
 		}
 		available = {
-
+			bosnia_war_not_end = yes
 		}
 		bypass = {
 		}
 	}
 	focus = {
 		id = AUS_bir_6
-		icon = GFX_goal_unkown
+		icon = GFX_AUS_bir_6
 		cost = 5.00
 		prerequisite = {
 			focus = AUS_bir_4
@@ -696,19 +846,55 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 		}
-		x = 18
-		y = 4
+		x = 19
+		y = 5
 		completion_reward = {
+			DMT  = {
+				division_template = {
+				name = "Austrian Volunteer Army"
+				division_names_group = AOX_INF_01
+				priority = 1
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1 }
+				}
+				}
+				109 = {
+					create_unit = {
+						division = "name = \"1st Austrian Volunteer Army\" division_template = \"Austrian Volunteer Army\" start_experience_factor = 0.8 " 
+						owner = DMT
+					}
+					create_unit = {
+						division = "name = \"2nd Austrian Volunteer Army\" division_template = \"Austrian Volunteer Army\" start_experience_factor = 0.8 " 
+						owner = DMT
+					}
+					create_unit = {
+						division = "name = \"3rd Austrian Volunteer Army\" division_template = \"Austrian Volunteer Army\" start_experience_factor = 0.8 " 
+						owner = DMT
+					}
+					create_unit = {
+						division = "name = \"4th Austrian Volunteer Army\" division_template = \"Austrian Volunteer Army\" start_experience_factor = 0.8 " 
+						owner = DMT
+					}
+				}	
+			}
 		}
 		available = {
-
+			bosnia_war_not_end = yes
 		}
 		bypass = {
 		}
 	}
 	focus = {
 		id = AUS_bir_7
-		icon = GFX_goal_unkown
+		icon = GFX_AUS_bir_7
 		cost = 5.00
 		prerequisite = {
 			focus = AUS_bir_2
@@ -716,28 +902,60 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = AUS_bir_3
 		}
-		x = 22
-		y = 2
+		x = 23
+		y = 3
 		completion_reward = {
+			# KOH = { annex_country = { target = KLD transfer_troops = yes } }
+			custom_effect_tooltip = AUS_bir_7_tool
+			custom_effect_tooltip = less_cze_aus_hun_sup_10
+				add_to_variable = {
+					var = AOX.aus_hun_gov_sup^3
+					value = -10
+				}
+				aushun_clamp_vars = yes	
+			custom_effect_tooltip = less_pol_aus_hun_sup_10
+				add_to_variable = {
+					var = AOX.aus_hun_gov_sup^4
+					value = -10
+				}
+				aushun_clamp_vars = yes	
+			custom_effect_tooltip = less_cro_aus_hun_sup_50
+				add_to_variable = {
+					var = AOX.aus_hun_gov_sup^8
+					value = -50
+				}
+				aushun_clamp_vars = yes	
+			custom_effect_tooltip = more_hun_aus_hun_sup_60
+				add_to_variable = {
+					var = AOX.aus_hun_gov_sup^1
+					value = 60
+				}
+				aushun_clamp_vars = yes	
 		}
 		available = {
-
+			not_bosnia_war_tri = yes
 		}
-		bypass = {
+		bypass = { 
 		}
 	}
 	focus = {
 		id = AUS_bir_9
-		icon = GFX_goal_unkown
-		cost = 5.00
+		icon = GFX_AUS_bir_9
+		cost = 5.00 
 		prerequisite = {
 			focus = AUS_bir_7
 		}
 		mutually_exclusive = {
 		}
-		x = 21
-		y = 3
+		x = 22
+		y = 4
 		completion_reward = {
+			custom_effect_tooltip = less_pol_aus_hun_sup_10
+				add_to_variable = {
+					var = AOX.aus_hun_gov_sup^4
+					value = -10
+				}
+				aushun_clamp_vars = yes	
 		}
 		available = {
 
@@ -747,15 +965,15 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_bir_10
-		icon = GFX_goal_unkown
+		icon = GFX_AUS_bir_10
 		cost = 5.00
 		prerequisite = {
 			focus = AUS_bir_7
 		}
 		mutually_exclusive = {
 		}
-		x = 23
-		y = 3
+		x = 24
+		y = 4
 		completion_reward = {
 		}
 		available = {
@@ -766,7 +984,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_bir_11
-		icon = GFX_goal_unkown
+		icon = GFX_AUS_bir_11 
 		cost = 5.00
 		prerequisite = {
 			focus = AUS_bir_9
@@ -776,9 +994,10 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 		}
-		x = 22
-		y = 4
+		x = 23
+		y = 5
 		completion_reward = {
+			AOX = { set_cosmetic_tag = AOX_XYL }
 		}
 		available = {
 
@@ -788,45 +1007,46 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_bir_8
-		icon = GFX_goal_unkown
+		icon = GFX_AUS_bir_8
 		cost = 5.00
 		prerequisite = {
 			focus = AUS_bir_2
 		}
 		mutually_exclusive = {
 		}
-		x = 20
-		y = 4
+		x = 21
+		y = 5
 		completion_reward = {
+			custom_effect_tooltip = AUS_bir_8_tool
 		}
 		available = {
-
+			not_bosnia_war_tri = yes
 		}
 		bypass = {
 		}
 	}
 	focus = {
 		id = AUS_bir_12
-		icon = GFX_goal_unkown
+		icon = GFX_AUS_bir_12
 		cost = 5.00
 		prerequisite = {
 			focus = AUS_bir_1
 		}
 		mutually_exclusive = {
 		}
-		x = 14
-		y = 2
+		x = 15
+		y = 3
 		completion_reward = {
 		}
 		available = {
-
+			bosnia_war_end = yes
 		}
 		bypass = {
 		}
 	}
 	focus = {
 		id = AUS_bir_13
-		icon = GFX_goal_unkown
+		icon = GFX_AUS_bir_13
 		cost = 5.00
 		prerequisite = {
 			focus = AUS_bir_12
@@ -834,18 +1054,26 @@ focus_tree = {
 		mutually_exclusive = {
 		}
 		x = 14
-		y = 3
+		y = 4
 		completion_reward = {
 		}
 		available = {
-
+			KOH = {
+				exists = yes
+			}
+			XYL = {
+				exists = no
+			}
+			HUN = {
+				exists = no
+			}
 		}
 		bypass = {
 		}
 	}
 	focus = {
 		id = AUS_bir_14
-		icon = GFX_goal_unkown
+		icon = GFX_AUS_bir_14
 		cost = 5.00
 		prerequisite = {
 			focus = AUS_bir_12
@@ -855,6 +1083,24 @@ focus_tree = {
 		x = 16
 		y = 4
 		completion_reward = {
+			if = {
+				limit = {
+					XYL = {
+						exists = yes
+					}
+				}
+				AOX = { declare_war_on = { target = XYL type = annex_everything } }
+			}
+			
+			if = {
+				limit = {
+					HUN = {
+						exists = yes
+					}
+				}
+				AOX = { declare_war_on = { target = HUN type = annex_everything } }
+			}
+			
 		}
 		available = {
 
@@ -864,21 +1110,1034 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_bir_15
-		icon = GFX_goal_unkown
+		icon = GFX_AUS_bir_15
 		cost = 5.00
 		prerequisite = {
 			focus = AUS_bir_13
 		}
+		prerequisite = {
+			focus = AUS_bir_14
+		}
 		mutually_exclusive = {
 		}
-		x = 14
-		y = 4
+		x = 15
+		y = 5
 		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
 		}
 		available = {
 
 		}
 		bypass = {
+		}
+	}
+	focus = {
+		id = AUS_german_0
+		icon = GFX_goal_AUS_german_0
+		cost = 5.00
+		x = 8
+		y = 6
+		allow_branch={ 
+			has_completed_focus = AUS_ger_20
+		}
+		mutually_exclusive = {
+			focus = AUS_HRE_0
+		}
+		mutually_exclusive = {
+			focus = AUS_federation_0
+		}
+		completion_reward = {
+		}
+		available = {
+			has_completed_focus = AUS_ger_20
+			NOT = {
+				has_completed_focus = AUS_federation_0
+			}
+		}
+	}
+	focus = {
+		id = AUS_german_1
+		icon = GFX_goal_AUS_german_1
+		cost = 5.00
+		x = 5
+		y = 7
+		prerequisite = {
+			focus = AUS_german_0
+		}
+		completion_reward = {
+			custom_effect_tooltip = AUS_german_0_eff
+			remove_ideas = { disgruntled_german_nationalism }
+			set_variable = {
+				aus_ger_sup_end = 1
+			}
+		}
+	}
+	focus = {
+		id = AUS_german_2
+		icon = GFX_goal_AUS_german_2
+		cost = 5.00
+		x = 3
+		y = 9
+		prerequisite = {
+			focus = AUS_german_1
+		}
+		mutually_exclusive = {
+			focus = AUS_german_3
+		}
+		mutually_exclusive = {
+			focus = AUS_german_4
+		}
+		completion_reward = {
+			AOX={
+				transfer_state = 69
+				add_state_core = 69
+				transfer_state = 9
+				add_state_core = 9
+				transfer_state = 75
+				add_state_core = 75
+				transfer_state = 74
+				add_state_core = 74
+				transfer_state = 72
+				add_state_core = 72
+			}
+			
+		}
+	}
+	focus = {
+		id = AUS_german_3
+		icon = GFX_goal_AUS_german_3
+		cost = 5.00
+		x = 5
+		y = 9
+		mutually_exclusive = {
+			focus = AUS_german_2
+		}
+		mutually_exclusive = {
+			focus = AUS_german_4
+		}
+		prerequisite = {
+			focus = AUS_german_1
+		}
+		completion_reward = {
+			AOX={
+				transfer_state = 69
+				add_state_core = 69
+			}
+			BXM={
+				set_politics = {
+					ruling_party = democratic
+				}
+				remove_ideas = { Part_of_Habsburgs }
+				add_ideas = { AOX_Before_Part_Habsburgs }
+			}
+		}
+	}
+	focus = {
+		id = AUS_german_4
+		icon = GFX_goal_AUS_german_4
+		cost = 5.00
+		x = 7
+		y = 9
+		mutually_exclusive = {
+			focus = AUS_german_3
+		}
+		mutually_exclusive = {
+			focus = AUS_german_2
+		}
+		prerequisite = {
+			focus = AUS_german_1
+		}
+		completion_reward = {
+			BXM={
+				set_politics = {
+					ruling_party = democratic
+				}
+				remove_ideas = { Part_of_Habsburgs }
+				add_ideas = { AOX_Before_Part_Habsburgs }
+			}
+		}
+	}
+	focus = {
+		id = AUS_german_5
+		icon = GFX_goal_AUS_german_5
+		cost = 5.00
+		x = 7
+		y = 8
+		prerequisite = {
+			focus = AUS_german_1
+		}
+		completion_reward = {
+			KGL={
+				set_politics = {
+					ruling_party = democratic
+				}
+				remove_ideas = { Part_of_Habsburgs }
+				add_ideas = { AOX_Before_Part_Habsburgs }
+			}
+		}
+	}
+	focus = {
+		id = AUS_german_6
+		icon = GFX_goal_AUS_german_6
+		cost = 5.00
+		x = 3
+		y = 8
+		prerequisite = {
+			focus = AUS_german_1
+		}
+		completion_reward = {
+			DMT={
+				set_politics = {
+					ruling_party = democratic
+				}
+				remove_ideas = { Part_of_Habsburgs }
+				add_ideas = { AOX_Before_Part_Habsburgs }
+			}
+		}
+	}
+	focus = {
+		id = AUS_german_7
+		icon = GFX_goal_AUS_german_7
+		cost = 5.00
+		x = 6
+		y = 10
+		mutually_exclusive = {
+			focus = AUS_german_8
+		}
+		prerequisite = {
+			focus = AUS_german_1
+		}
+		available = {
+			NOT = {
+				AOX = {
+					has_completed_focus = AUS_bir_15
+				}
+			}
+		}
+		completion_reward = {
+			HUN={
+				set_politics = {
+					ruling_party = democratic
+				}
+				remove_ideas = { Part_of_Habsburgs }
+				add_ideas = { AOX_Before_Part_Habsburgs }
+			}
+		}
+	}
+	focus = {
+		id = AUS_german_8
+		icon = GFX_goal_AUS_german_8
+		cost = 5.00
+		x = 4
+		y = 10
+		mutually_exclusive = {
+			focus = AUS_german_7
+		}
+		prerequisite = {
+			focus = AUS_german_1
+		}
+		completion_reward = {
+			HUN={
+				set_politics = {
+					ruling_party = democratic
+				}
+				remove_ideas = { Part_of_Habsburgs }
+				add_ideas = { AOX_Before_Part_Habsburgs }
+			}
+			if = {
+				limit = {
+					NOT = {
+						AOX = {
+							has_completed_focus = AUS_bir_15
+						}
+					}
+				}
+			}
+			else = {
+
+			}
+		}
+	}
+	focus = {
+		id = AUS_german_9
+		icon = GFX_goal_AUS_german_9
+		cost = 5.00
+		x = 5
+		y = 8
+		prerequisite = {
+			focus = AUS_german_1
+		}
+		completion_reward = {
+			VCT={
+				set_politics = {
+					ruling_party = democratic
+				}
+				remove_ideas = { Part_of_Habsburgs }
+				add_ideas = { AOX_Before_Part_Habsburgs }
+			}
+		}
+	}
+	focus = {
+		id = AUS_german_10
+		icon = GFX_goal_AUS_german_10
+		cost = 5.00
+		x = 5
+		y = 11
+		prerequisite = {
+			focus = AUS_german_7
+			focus = AUS_german_8
+		}
+		prerequisite = {
+			focus = AUS_german_2
+			focus = AUS_german_3
+			focus = AUS_german_4
+		}
+		prerequisite = {
+			focus = AUS_german_5
+		}
+		prerequisite = {
+			focus = AUS_german_6
+		}
+		prerequisite = {
+			focus = AUS_german_9
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = AUS_german_11
+		icon = GFX_goal_AUS_german_11
+		cost = 5.00
+		x = 4
+		y = 12
+		prerequisite = {
+			focus = AUS_german_10
+		}
+		completion_reward = {
+			country_event = aushun.6
+		}
+	}
+	focus = {
+		id = AUS_german_12
+		icon = GFX_goal_AUS_german_12
+		cost = 5.00
+		x = 6
+		y = 12
+		prerequisite = {
+			focus = AUS_german_10
+		}
+		completion_reward = {
+			add_ideas = AOX_idea_german_12
+		}
+	}
+	focus = {
+		id = AUS_german_13
+		icon = GFX_goal_AUS_german_13
+		cost = 5.00
+		x = 4
+		y = 13
+		prerequisite = {
+			focus = AUS_german_11
+		}
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = AOX
+						has_idea = AOX_Before_Part_Habsburgs
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = AOX_dynamic_german_13
+				}
+			}
+		}
+	}
+	focus = {
+		id = AUS_german_14
+		icon = GFX_goal_AUS_german_14
+		cost = 5.00
+		x = 6
+		y = 13
+		prerequisite = {
+			focus = AUS_german_12
+		}
+		completion_reward = {
+			custom_effect_tooltip = AUS_german_14_train
+		}
+	}
+	focus = {
+		id = AUS_german_15
+		icon = GFX_goal_AUS_german_15
+		cost = 5.00
+		x = 5
+		y = 14
+		prerequisite = {
+			focus = AUS_german_13
+		}
+		prerequisite = {
+			focus = AUS_german_14
+		}
+		completion_reward = {
+			create_faction = Center_Europe_Alliance
+		}
+	}
+	focus = {
+		id = AUS_HRE_0
+		icon = GFX_goal_AUS_HRE_0
+		cost = 5.00
+		x = 14
+		y = 6
+		allow_branch={ 
+			has_completed_focus = AUS_ger_20
+		}
+		mutually_exclusive = {
+			focus = AUS_german_0
+		}
+		completion_reward = {
+		}
+		available = {
+			has_completed_focus = AUS_ger_20
+			NOT = {
+				has_completed_focus = AUS_federation_0
+			}
+			NOT = {
+				has_completed_focus = AUS_bir_11
+			}
+		}
+	}
+	focus = {
+		id = AUS_HRE_1
+		icon = GFX_goal_AUS_HRE_1
+		cost = 5.00
+		x = 17
+		y = 7
+		prerequisite = {
+			focus = AUS_HRE_0
+		}
+		completion_reward = {
+				custom_effect_tooltip = less_ger_sup_20
+				add_to_variable = {
+					var = aus_ger_sup 
+					value = -20
+				}
+		}
+	}
+	focus = {
+		id = AUS_HRE_2
+		icon = GFX_goal_AUS_HRE_2
+		cost = 5.00
+		x = 15
+		y = 8
+		prerequisite = {
+			focus = AUS_HRE_1
+		}
+		completion_reward = {
+			get_more_aus_hun_every_sup_5 = yes
+				custom_effect_tooltip = less_ger_sup
+				add_to_variable = {
+					var = aus_ger_sup 
+					value = -5
+				}
+		}
+	}
+	focus = {
+		id = AUS_HRE_3
+		icon = GFX_goal_AUS_HRE_3
+		cost = 5.00
+		x = 17
+		y = 8
+		prerequisite = {
+			focus = AUS_HRE_1
+		}
+		completion_reward = {
+			unlock_decision_tooltip = aus_disarmament_amry
+				custom_effect_tooltip = less_ger_sup_10
+				add_to_variable = {
+					var = aus_ger_sup 
+					value = -10
+				}
+		}
+	}
+	focus = {
+		id = AUS_HRE_4
+		icon = GFX_goal_AUS_HRE_4
+		cost = 5.00
+		x = 19
+		y = 8
+		prerequisite = {
+			focus = AUS_HRE_1
+		}
+		completion_reward = {
+			add_popularity = {
+ 				ideology = national_populist
+    			popularity = -0.1
+			}
+			custom_effect_tooltip = less_ger_sup
+			add_to_variable = {
+				var = aus_ger_sup 
+				value = -5
+			}
+		}
+	}
+	focus = {
+		id = AUS_HRE_5
+		icon = GFX_goal_AUS_HRE_5
+		cost = 5.00
+		x = 16
+		y = 9
+		prerequisite = {
+			focus = AUS_HRE_2
+		}
+		prerequisite = {
+			focus = AUS_HRE_3
+		}
+		completion_reward = {
+			add_political_power = 100
+			get_more_aus_hun_every_sup_5 = yes
+				custom_effect_tooltip = less_ger_sup_20
+				add_to_variable = {
+					var = aus_ger_sup 
+					value = -20
+				}
+		}
+	}
+	focus = {
+		id = AUS_HRE_6
+		icon = GFX_goal_AUS_HRE_6
+		cost = 5.00
+		x = 18
+		y = 9
+		prerequisite = {
+			focus = AUS_HRE_4
+		}
+		prerequisite = {
+			focus = AUS_HRE_3
+		}
+		completion_reward = {
+				add_stability = -0.05
+				add_popularity = {
+ 					ideology = national_populist
+    				popularity = -1
+				}
+				custom_effect_tooltip = less_ger_sup_20
+				add_to_variable = {
+					var = aus_ger_sup 
+					value = -20
+				}
+		}
+	}
+	focus = {
+		id = AUS_HRE_7
+		icon = GFX_goal_AUS_HRE_7
+		cost = 5.00
+		x = 16
+		y = 10
+		prerequisite = {
+			focus = AUS_HRE_5
+		}
+		prerequisite = {
+			focus = AUS_HRE_6
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = AUS_HRE_8
+		icon = GFX_goal_AUS_HRE_8
+		cost = 5.00
+		x = 18
+		y = 10
+		prerequisite = {
+			focus = AUS_HRE_5
+		}
+		prerequisite = {
+			focus = AUS_HRE_6
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = AUS_HRE_9
+		icon = GFX_goal_AUS_HRE_9
+		cost = 5.00
+		x = 17
+		y = 11
+		prerequisite = {
+			focus = AUS_HRE_7
+		}
+		prerequisite = {
+			focus = AUS_HRE_8
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = AUS_HRE_10
+		icon = GFX_goal_AUS_HRE_10
+		cost = 5.00
+		x = 16
+		y = 12
+		prerequisite = {
+			focus = AUS_HRE_9
+		}
+		completion_reward = {
+			unlock_decision_tooltip = HRE_lowland
+			6 = {
+				add_claim_by = AOX 
+			}
+			35 = {
+				add_claim_by = AOX 
+			}
+			36 = {
+				add_claim_by = AOX 
+			}
+			7 = {
+				add_claim_by = AOX 
+			}
+			34 = {
+				add_claim_by = AOX 
+			}
+		}
+	}
+	focus = {
+		id = AUS_HRE_11
+		icon = GFX_goal_AUS_HRE_11
+		cost = 5.00
+		x = 18
+		y = 12
+		prerequisite = {
+			focus = AUS_HRE_9
+		}
+		completion_reward = {
+			unlock_decision_tooltip = HRE_switzerland
+			3 = {
+				add_claim_by = AOX 
+			}
+			845 = {
+				add_claim_by = AOX 
+			}
+			846 = {
+				add_claim_by = AOX 
+			}
+			847 = {
+				add_claim_by = AOX 
+			}
+			151 = {
+				add_claim_by = AOX 
+			}
+		}
+	}
+	focus = {
+		id = AUS_HRE_12
+		icon = GFX_goal_AUS_HRE_12
+		cost = 5.00
+		x = 18
+		y = 13
+		prerequisite = {
+			focus = AUS_HRE_11
+		}
+		prerequisite = {
+			focus = AUS_HRE_10
+		}
+		completion_reward = {
+			unlock_decision_tooltip = HRE_italy
+			158 = {
+				add_claim_by = AOX 
+			}
+			159 = {
+				add_claim_by = AOX 
+			}
+			161 = {
+				add_claim_by = AOX 
+			}
+			162 = {
+				add_claim_by = AOX 
+			}
+			928 = {
+				add_claim_by = AOX 
+			}
+			2 = {
+				add_claim_by = AOX 
+			}
+			919 = {
+				add_claim_by = AOX 
+			}
+			1 = {
+				add_claim_by = AOX 
+			}
+		}
+	}
+	focus = {
+		id = AUS_HRE_13
+		icon = GFX_goal_AUS_HRE_13
+		cost = 5.00
+		x = 16
+		y = 13
+		prerequisite = {
+			focus = AUS_HRE_11
+		}
+		prerequisite = {
+			focus = AUS_HRE_10
+		}
+		completion_reward = {
+			unlock_decision_tooltip = HRE_burgundy
+			29 = {
+				add_claim_by = AOX 
+			}
+			932 = {
+				add_claim_by = AOX 
+			}
+			785 = {
+				add_claim_by = AOX 
+			}
+			17 = {
+				add_claim_by = AOX 
+			}
+			18 = {
+				add_claim_by = AOX 
+			}
+			27 = {
+				add_claim_by = AOX 
+			}
+			20 = {
+				add_claim_by = AOX 
+			}
+			32 = {
+				add_claim_by = AOX 
+			}
+			21 = {
+				add_claim_by = AOX 
+			}
+			851 = {
+				add_claim_by = AOX 
+			}
+			735 = {
+				add_claim_by = AOX 
+			}
+		}
+	}
+	focus = {
+		id = AUS_HRE_14
+		icon = GFX_goal_AUS_HRE_14
+		cost = 5.00
+		x = 17
+		y = 14
+		prerequisite = {
+			focus = AUS_HRE_12
+		}
+		prerequisite = {
+			focus = AUS_HRE_13
+		}
+		completion_reward = {
+			set_cosmetic_tag = AOX_HRE
+		}
+	}
+	focus = {
+		id = AUS_reform_0
+		icon = GFX_goal_AUS_reform_0
+		cost = 5.00
+		x = 11
+		y = 7
+		prerequisite = {
+			focus = AUS_german_0
+			focus = AUS_HRE_0
+		}
+		allow_branch={ 
+		}
+		mutually_exclusive = {
+		}
+		completion_reward = {
+			add_political_power = 400
+		}
+	}
+	focus = {
+		id = AUS_reform_1
+		icon = GFX_goal_AUS_reform_1
+		cost = 5.00
+		x = 10
+		y = 8
+		prerequisite = {
+			focus = AUS_reform_0
+		}
+		allow_branch={ 
+		}
+		mutually_exclusive = {
+		}
+		completion_reward = {
+			remove_ideas = inconsistent_command_system
+			add_timed_idea = { idea = inconsistent_command_system days = 365 }
+		}
+	}
+	focus = {
+		id = AUS_reform_2
+		icon = GFX_goal_AUS_reform_2
+		cost = 5.00
+		x = 12
+		y = 8
+		prerequisite = {
+			focus = AUS_reform_0
+		}
+		allow_branch={ 
+		}
+		mutually_exclusive = {
+		}
+		completion_reward = {
+			remove_ideas = remnants_of_the_old_state 
+			add_timed_idea = { idea = remnants_of_the_old_state days = 365 }
+		}
+	}
+	focus = {
+		id = AUS_reform_3
+		icon = GFX_goal_AUS_reform_3
+		cost = 5.00
+		x = 9
+		y = 9
+		prerequisite = {
+			focus = AUS_reform_1
+		}
+		allow_branch={ 
+		}
+		mutually_exclusive = {
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = AUS_reform_4
+		icon = GFX_goal_AUS_reform_4
+		cost = 5.00
+		x = 11
+		y = 9
+		prerequisite = {
+			focus = AUS_reform_1
+		}
+		prerequisite = {
+			focus = AUS_reform_2
+		}
+		allow_branch={ 
+		}
+		mutually_exclusive = {
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = authoritarian
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = AUS_reform_5
+		icon = GFX_goal_AUS_reform_5
+		cost = 5.00
+		x = 13
+		y = 9
+		prerequisite = {
+			focus = AUS_reform_2
+		}
+		allow_branch={ 
+		}
+		mutually_exclusive = {
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = No_labor_laws
+				add_idea = Deflection_workers
+			}
+		}
+	}
+	focus = {
+		id = AUS_reform_6
+		icon = GFX_goal_AUS_reform_6
+		cost = 5.00
+		x = 10
+		y = 10
+		prerequisite = {
+			focus = AUS_reform_3
+		}
+		prerequisite = {
+			focus = AUS_reform_4
+		}
+		allow_branch={ 
+		}
+		mutually_exclusive = {
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Deflection_employer
+				add_idea = Trade_union_neutrality
+			}
+		}
+	}
+	focus = {
+		id = AUS_reform_7
+		icon = GFX_goal_AUS_reform_7
+		cost = 5.00
+		x = 12
+		y = 10
+		prerequisite = {
+			focus = AUS_reform_4
+		}
+		prerequisite = {
+			focus = AUS_reform_5
+		}
+		allow_branch={ 
+		}
+		mutually_exclusive = {
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Control_media
+				add_idea = Media_control
+			}
+		}
+	}
+	focus = {
+		id = AUS_federation_0
+		icon = GFX_goal_unkown
+		cost = 5.00
+		x = 32
+		y = 6
+		allow_branch={ 
+			bosnia_war_end_tri_tool = yes
+			has_completed_focus = AUS_bir_15
+		}
+		available = {
+			has_completed_focus = AUS_bir_15
+		}
+		completion_reward = {
+		}
+		available = {
+			NOT = {
+				has_completed_focus = AUS_HRE_0
+				has_completed_focus = AUS_german_0
+			}
+			OR = {
+				NOT = {
+					has_completed_focus = AUS_ger_3
+				}
+				custom_trigger_tooltip = { 
+					tooltip = pre_win_german_war 
+					pre_has_win_german_war = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AUS_ethnic_construction_0
+		icon = GFX_goal_AUS_ethnic_construction_0
+		cost = 5.00
+		x = 24
+		y = 7
+		prerequisite = {
+			focus = AUS_HRE_0
+			focus = AUS_federation_0
+		}
+		completion_reward = {
+			get_more_aus_hun_every_sup_5 = yes
+			add_ideas = AOX_Ethnic_construction
+		}
+	}
+	focus = {
+		id = AUS_ethnic_construction_1
+		icon = GFX_goal_AUS_ethnic_construction_1
+		cost = 5.00
+		x = 23
+		y = 8
+		prerequisite = {
+			focus = AUS_ethnic_construction_0
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AOX_Ethnic_construction
+				add_idea = AOX_Ethnic_construction1
+			}
+		}
+	}
+	focus = {
+		id = AUS_ethnic_construction_2
+		icon = GFX_goal_AUS_ethnic_construction_2
+		cost = 5.00
+		x = 25
+		y = 8
+		prerequisite = {
+			focus = AUS_ethnic_construction_0
+		}
+		available = {
+			has_completed_focus = AUS_ethnic_construction_1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AOX_Ethnic_construction1
+				add_idea = AOX_Ethnic_construction2
+			}
+		}
+	}
+	focus = {
+		id = AUS_ethnic_construction_3
+		icon = GFX_goal_AUS_ethnic_construction_3
+		cost = 5.00
+		x = 23
+		y = 9
+		available = {
+			has_completed_focus = AUS_ethnic_construction_4
+		}
+		prerequisite = {
+			focus = AUS_ethnic_construction_1
+		}
+		prerequisite = {
+			focus = AUS_ethnic_construction_2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AOX_Ethnic_construction3
+				add_idea = AOX_Ethnic_construction4
+			}
+		}
+	}
+	focus = {
+		id = AUS_ethnic_construction_4
+		icon = GFX_goal_AUS_ethnic_construction_4
+		cost = 5.00
+		x = 25
+		y = 9
+		prerequisite = {
+			focus = AUS_ethnic_construction_1
+		}
+		prerequisite = {
+			focus = AUS_ethnic_construction_2
+		}
+		completion_reward = {
+			get_more_aus_hun_every_sup_10 = yes
+			add_timed_idea = { idea = AOX_compensation_for_ethnic_minorities days = 365}
+			swap_ideas = {
+				remove_idea = AOX_Ethnic_construction2
+				add_idea = AOX_Ethnic_construction3
+			}
+		}
+	}
+	focus = {
+		id = AUS_ethnic_construction_5
+		icon = GFX_goal_AUS_ethnic_construction_5
+		cost = 5.00
+		x = 24
+		y = 10
+		prerequisite = {
+			focus = AUS_ethnic_construction_3
+		}
+		prerequisite = {
+			focus = AUS_ethnic_construction_4
+		}
+		completion_reward = {
+			aus_hun_nat_eth_has_completed = yes
+			swap_ideas = {
+				remove_idea = AOX_Ethnic_construction4
+				add_idea = AOX_Ethnic_construction5
+			}
 		}
 	}
 }

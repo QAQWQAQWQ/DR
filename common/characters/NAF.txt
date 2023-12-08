@@ -1,9 +1,9 @@
 characters={
-	NAF_Jan_Christiaan_Smuts={
-		name=NAF_Jan_Christiaan_Smuts
+	NAF_Arthur_William_Patrick_Albert={
+		name=NAF_Arthur_William_Patrick_Albert
 		portraits={
 			civilian={
-				large="gfx/leaders/NAF/Portrait_Jan_Christiaan_Smuts.tga"
+				large="gfx/leaders/NAF/Portrait_Arthur_William_Patrick_Albert.tga"
 			}
 		}
 		country_leader={
@@ -12,11 +12,13 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-		country_leader={
-			ideology=liberalism
-			traits={  }
-			expire="1965.1.1.1"
-			id=-1
+	}
+	NAF_Jan_Christiaan_Smuts={
+		name=NAF_Jan_Christiaan_Smuts
+		portraits={
+			civilian={
+				large="gfx/leaders/NAF/Portrait_Jan_Christiaan_Smuts.tga"
+			}
 		}
 	}		
 	}
