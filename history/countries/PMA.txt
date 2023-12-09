@@ -1,4 +1,4 @@
-﻿capital = 158
+﻿capital = 161
 
 oob = "ITE_1920"
 
@@ -12,8 +12,7 @@ set_technology = {
 	fuel_silos = 1
 }
 
-recruit_character = ITE_Vitorioemanuel
-recruit_character = ITE_Benito_Mussolini
+recruit_character = PMA_Henry_I
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -46,11 +45,6 @@ recruit_character = ITE_Benito_Mussolini
 		
 		
 	}
-set_major=yes
-create_faction = United_Provinces_Northern_Italy
-add_to_faction = PMA
-add_to_faction = TCY
-add_to_faction = MIL
 set_politics = {
 	ruling_party = monarchy
 	last_election = "1918.11.11"

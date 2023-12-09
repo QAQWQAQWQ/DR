@@ -2,146 +2,185 @@
 # News.1 Events
 ###########################
 
-add_namespace = NewEvents
-add_namespace = countryevent
-add_namespace = WorldNews
+add_namespace = WorldNew
+add_namespace = Hidden_News
 
 news_event = {
-	id = NewEvents.1
-	title = NewEvents.1.t
-	desc = NewEvents.1.d
+	id = Hidden_News.1
+    hidden = yes
 
-	picture = GFX_ENL_Olympic_Games
-
-	major = yes
-
-	is_triggered_only = yes
-
+	fire_only_once = yes
+trigger = {
+	FRW={
+		has_war_with = WWS
+	}
+}
+immediate = {
+	news_event = WorldNew.1
+}
+mean_time_to_happen = {
+	days = 2
+}
 	option = {
-			name = NewEvents.1.a
-			hidden_effect ={
-				ENL={ country_event = { id= ENL.6 days = 20}}
-			}
+			name = Hidden_News.1.a
 		}		
 }
-
 news_event = {
-	id = WorldNews.4
-	title = WorldNews.4.t
-	desc = WorldNews.4.d
-
-	picture = GFX_Balkan_League
-
-	major = yes
-
-	is_triggered_only = yes
-
+	id = Hidden_News.2
+    hidden = yes
+	fire_only_once = yes
+   trigger = {
+	date = 1920.1.8
+    }
+   immediate = {
+	news_event = WorldNew.2
+    }
+    mean_time_to_happen = {
+	days = 2
+    }
 	option = {
-			name = WorldNews.4.a
-			BOJ = { create_faction = Balkan_League}
-			BOJ = { add_to_faction = SIW }
-			BOJ = { add_to_faction = YED }
-			BOJ = { add_to_faction = HES }
-			BOJ = { add_to_faction = ALB }
-		}		
+			name = Hidden_News.2.a
+	}		
 }
+news_event = {
+	id = Hidden_News.3
+    hidden = yes
+	fire_only_once = yes
+   trigger = {
+	SHW={
+		all_core_state = {
+			is_controlled_by = SUE
+		}
+	}
+    }
+   immediate = {
+	news_event = WorldNew.3
+    }
+    mean_time_to_happen = {
+	days = 2
+    }
+	option = {
+			name = Hidden_News.3.a
+	}		
+}
+news_event = {
+	id = Hidden_News.4
+    hidden = yes
+	fire_only_once = yes
+   trigger = {
+	HES={
+		all_core_state = {
+			is_controlled_by = SIW
+		}
+	}
+    }
+   immediate = {
+	news_event = WorldNew.4
+    }
+    mean_time_to_happen = {
+	days = 2
+    }
+	option = {
+			name = Hidden_News.4.a
+	}		
+}
+news_event = {
+	id = Hidden_News.5
+    hidden = yes
+	fire_only_once = yes
+   trigger = {
+	JBS={
+		all_core_state = {
+			is_controlled_by = NZS
+		}
+	}
+    }
+   immediate = {
+	news_event = WorldNew.5
+    }
+    mean_time_to_happen = {
+	days = 2
+    }
+	option = {
+			name = Hidden_News.5.a
+	}		
+}
+#######
 
 
 news_event = {
-	id = WorldNews.3
-	title = WorldNews.3.t
-	desc = WorldNews.3.d
+	id = WorldNew.1
+	title = WorldNew.1.t
+	desc = WorldNew.1.d
 
 	picture = GFX_WWI
 
 	major = yes
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
 	option = {
-			name = WorldNews.3.a	
+			name = WorldNew.1.a
 		}		
 }
-
 
 news_event = {
-	id = WorldNews.5
-	title = WorldNews.5.t
-	desc = WorldNews.5.d
+	id = WorldNew.2
+	title = WorldNew.2.t
+	desc = WorldNew.2.d
 
-	picture = GFX_Anglo_French_war
+	picture = GFX_Churchill
 
 	major = yes
-
-    is_triggered_only = yes
-
-	option = {
-			name = WorldNews.5.a	
-		}		
-}
-
-country_event = {
-	id = countryevent.1
-	title = countryevent.1.t
-	desc = countryevent.1.d
-
-	picture = GFX_countryevent_1
 
 	is_triggered_only = yes
-	fire_only_once = yes
-	major = yes
-
 
 	option = {
-			name = countryevent.1.a
-		}
-}
-
-news_event = {
-	id = WorldNews.8
-	title = WorldNews.8.t
-	desc = WorldNews.8.d
-
-	picture = GFX_Battle_Germany
-
-	major = yes
-
-    is_triggered_only = yes
-
-	option = {
-			name = WorldNews.8.a	
+			name = WorldNew.2.a
 		}		
 }
 news_event = {
-	id = WorldNews.9
-	title = WorldNews.9.t
-	desc = WorldNews.9.d
+	id = WorldNew.3
+	title = WorldNew.3.t
+	desc = WorldNew.3.d
 
-	picture = GFX_Balkan_War
+	picture = GFX_SUE_Win_War
 
 	major = yes
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
 	option = {
-			name = WorldNews.9.a	
+			name = WorldNew.3.a
 		}		
 }
 news_event = {
-	id = WorldNews.10
-	title = WorldNews.10.t
-	desc = WorldNews.10.d
+	id = WorldNew.4
+	title = WorldNew.4.t
+	desc = WorldNew.4.d
+
+	picture = GFX_SIW_Win_War
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+			name = WorldNew.4.a
+		}		
+}
+news_event = {
+	id = WorldNew.5
+	title = WorldNew.5.t
+	desc = WorldNew.5.d
 
 	picture = GFX_WorldNews_10
 
 	major = yes
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
 	option = {
-			name = WorldNews.10.a
-			JBS = { declare_war_on = { target = NZS type = annex_everything } }	
+			name = WorldNew.5.a
 		}		
 }
-
-

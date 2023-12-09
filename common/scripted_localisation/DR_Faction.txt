@@ -42,7 +42,17 @@ text = {
 		   }
 }
 }
+text = {
+	localization_key = GFX_United_Provinces_Northern_Italy
 
+	trigger = {
+		   OR = {
+			   tag = ITE
+			   is_in_faction_with = ITE
+			   is_puppet_of = ITE
+		   }
+}
+}
 text = {
 	localization_key = GFX_Rpublic_China
 

@@ -12,6 +12,17 @@ text = {
 	}
 }
 text = {
+	localization_key = United_Provinces_Northern_Italy_Desc
+
+	trigger = {
+		   OR = {
+			   tag = ITE
+			   is_in_faction_with =  ITE
+			   is_puppet_of =  ITE
+		   }
+}
+}
+text = {
 	localization_key = GER_Desc
 
 	trigger = {

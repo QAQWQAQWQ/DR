@@ -19,6 +19,12 @@ spriteTypes = {
 			texturefile = "gfx/interface/Faction/North_German_Confederation.dds"
 			legacy_lazy_load = no
 		}	
+    spriteType = {
+			name = "GFX_United_Provinces_Northern_Italy"
+			texturefile = "gfx/interface/Faction/United_Provinces_Northern_Italy.dds"
+			legacy_lazy_load = no
+		}
+		
 	spriteType = {
 			name = "GFX_Rpublic_China"
 			texturefile = "gfx/interface/Faction/Rpublic_China.dds"

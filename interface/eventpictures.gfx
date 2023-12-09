@@ -368,6 +368,21 @@ spriteTypes = {
 		texturefile = "gfx/event/NEWS/WWI.tga"
 	}
 	spriteType = {
+		name = "GFX_Churchill"
+		texturefile = "gfx/event/NEWS/Churchill.tga"
+	}
+	spriteType = {
+		name = "GFX_SUE_Win_War"
+		texturefile = "gfx/event/NEWS/SUE_Win_War.tga"
+	}
+
+	spriteType = {
+		name = "GFX_SIW_Win_War"
+		texturefile = "gfx/event/NEWS/SIW_Win_War.tga"
+	}
+	
+
+	spriteType = {
 		name = "GFX_Anglo_French_war"
 		texturefile = "gfx/event/NEWS/Anglo_French_war.tga"
 	}
