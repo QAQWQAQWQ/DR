@@ -1,0 +1,36 @@
+
+state = {
+	id = 938
+	name = "STATE_938"
+	manpower = 1202401
+	
+	state_category = city
+	
+	resources = {
+		aluminium=5 # was: 16
+	}
+
+	history = {
+		owner = LMJ
+		victory_points = { #Bologna
+			6606 5
+		}
+		victory_points = { #Ferrara
+			6793 3
+		}
+		buildings = {
+			infrastructure = 4 #was: 7
+			industrial_complex = 1
+			782 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = LMJ
+	}
+
+	provinces = {
+		782 6606 6793 9924 6985
+	}
+
+	local_supplies = 0.0 
+}

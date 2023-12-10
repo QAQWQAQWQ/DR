@@ -1,0 +1,29 @@
+
+state={
+	id=944
+	name="STATE_944"
+	manpower = 1138286
+	resources={
+		oil=1 # was: 4
+	}
+	
+	state_category = city
+
+	history={
+		owner = DOH
+		victory_points = {
+			6377 10 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+
+	}
+
+	provinces={
+        526 6377 3395 9375 11468 11402 11493 6513 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=950
+	name="STATE_950" 
+	manpower = 515600
+	
+	state_category = city
+	resources={
+		steel=50 # was: 236
+	}
+
+	history={
+		owner = AGC
+                                add_core_of = FRW
+                                add_core_of = AGC
+		buildings = {
+			infrastructure = 4
+
+		}
+		victory_points = { 9559 10 }
+	}
+
+	provinces={
+		9559 11502 3629
+	}
+
+	local_supplies=14.0 
+}

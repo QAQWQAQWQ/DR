@@ -501,6 +501,7 @@ ger_con_decisions = {
       hidden_effect={every_country = { news_event = ger_con.5 }}
       
       58 = { add_core_of = ROOT } 
+      952 = { add_core_of = ROOT } 
       DMW = { country_event = ger_con.8 }
       WWS = { set_cosmetic_tag = WWS_German_Empire }
     }
@@ -594,6 +595,7 @@ ger_con_decisions = {
       hidden_effect={every_country = { news_event = ger_con.4 }}
       
       58 = { add_core_of = ROOT } 
+      952 = { add_core_of = ROOT } 
       DMW = { country_event = ger_con.8 }
       hidden_effect = {
         add_ideas = { remnants_of_the_old_state }
@@ -850,8 +852,8 @@ ger_con_decisions = {
           start_civil_war = {
             ideology = authoritarian
             size = 0.3
-            capital = 65
-            states = { 65 }
+            capital = 946
+            states = { 65 946 }
           }
           load_oob = "sax_war_aus"
         }

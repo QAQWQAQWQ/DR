@@ -1,0 +1,33 @@
+state=
+{
+	id=942
+	name="STATE_942"
+	manpower = 830000
+	
+	state_category = town
+	
+	resources={
+		steel=2
+	}
+	
+	history={
+		owner = BXM
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			anti_air_building = 1
+
+			5283 =
+			{
+				bunker = 1
+			}
+		}
+		add_core_of = BXM
+	}
+	provinces=
+	{
+        7857 5283 543 11525
+ 	}
+
+	local_supplies=0.0 
+}

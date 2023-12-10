@@ -173,6 +173,7 @@ country_event = {
 	option = {
 		name = ger_con.8.a
 		FROM = { set_state_owner = 58 }
+		FROM = { set_state_owner = 952 }
         ai_chance = {
             base = 100 
         }
@@ -312,6 +313,9 @@ country_event = {
 		}
 		ROOT = {
 			has_full_control_of_state = 65
+		}
+		ROOT = {
+			has_full_control_of_state = 946
 		}
 	}
 	option = {

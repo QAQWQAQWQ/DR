@@ -1138,7 +1138,7 @@ focus_tree = {
 		x = 8
 		y = 6
 		allow_branch={ 
-			has_completed_focus = AUS_ger_20
+			# has_completed_focus = AUS_ger_20
 		}
 		mutually_exclusive = {
 			focus = AUS_HRE_0
@@ -1188,19 +1188,27 @@ focus_tree = {
 			focus = AUS_german_4
 		}
 		completion_reward = {
-			AOX={
-				transfer_state = 69
-				add_state_core = 69
-				transfer_state = 9
-				add_state_core = 9
-				transfer_state = 75
-				add_state_core = 75
-				transfer_state = 74
-				add_state_core = 74
-				transfer_state = 72
-				add_state_core = 72
+			every_state = {
+				limit = {
+					is_core_of = BXM
+				}
+				add_core_of = AOX
 			}
-			
+			AOX = { annex_country = { target = BXM transfer_troops = yes } }
+		}
+		available = {
+			custom_trigger_tooltip = { 
+				tooltip = aus_hun_sup_more_than_70_tool_cze
+				check_variable = {
+					aus_hun_gov_sup^3 > 69
+				}
+			}
+			custom_trigger_tooltip = { 
+				tooltip = aus_hun_aut_more_less_30_tool_cze
+				check_variable = {
+					aus_hun_egree^3 < 31
+				}
+			}
 		}
 	}
 	focus = {
