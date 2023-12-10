@@ -891,14 +891,25 @@ ger_con_fra_def = {
           has_full_control_of_state = 28
         }
       }
+      OR = {
+        AOX = {
+          has_full_control_of_state = 950
+        }
+        WWS = {
+          has_full_control_of_state = 950
+        }
+        AGC = {
+          has_full_control_of_state = 950
+        }
+      }
     }
-    cost = 100
+    cost = 120
     fire_only_once = no
-    days_remove = 120
+    days_remove = 70
     complete_effect = {
     }
     remove_effect = {
-      28 = {
+      950 = {
         add_building_construction = { 
           type = bunker 
           province = 9559
@@ -917,6 +928,8 @@ ger_con_fra_def = {
           level = 1 
           instant_build = yes 
         } 
+      }
+      28 = {
         add_building_construction = { 
           type = bunker 
           province = 1346
@@ -960,10 +973,21 @@ ger_con_fra_def = {
           has_full_control_of_state = 8
         }
       }
+      OR = {
+        AOX = {
+          has_full_control_of_state = 951
+        }
+        WWS = {
+          has_full_control_of_state = 951
+        }
+        LSB = {
+          has_full_control_of_state = 951
+        }
+      }
     }
     cost = 60
     fire_only_once = no
-    days_remove = 120
+    days_remove = 70
     complete_effect = {
     }
     remove_effect = {
@@ -974,6 +998,8 @@ ger_con_fra_def = {
           level = 1
           instant_build = yes 
         } 
+      }
+      951 = {
         add_building_construction = { 
           type = bunker 
           province = 9418
