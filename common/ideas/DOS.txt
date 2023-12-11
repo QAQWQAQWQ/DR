@@ -3,10 +3,18 @@ ideas = {
 		DOS_Discord_the_Pope = {
 			picture = Discord_the_Pope
 			modifier = {
-				stability_weekly_factor = -0.01
-				
+				# stability_weekly_factor = -0.01
+				stability_factor = -0.1
 			}
 			
         }
+		}
+		country = {
+			DOS_Saxony_Thuringia_United = {
+				modifier = {
+					war_support_factor = 0.10 
+					political_power_cost = 0.5
+				}
+			}
 		}
 }
