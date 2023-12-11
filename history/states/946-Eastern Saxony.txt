@@ -7,14 +7,14 @@ state={
 		steel=10 # was: 90
 	}
 
-	state_category = large_town
+	state_category = city
 
 
 	history={
 		owner = DOS
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 2
 		}
 		victory_points = {
 			514 5 
