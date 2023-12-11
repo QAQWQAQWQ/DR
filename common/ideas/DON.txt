@@ -1,9 +1,11 @@
 ideas = {
     country = {
         DON_Rhine_Shield = {
-			war_support_factor = 0.10 
-            training_time_army_factor = -0.20
-            army_core_defence_factor = 0.3
+			modifier = {
+			    war_support_factor = 0.10 
+                training_time_army_factor = -0.20
+                army_core_defence_factor = 0.3
+            }
         }
     }
 }
