@@ -1,0 +1,26 @@
+
+state={
+	id=953
+	name="STATE_953"
+	manpower = 505214
+	resources={
+		steel=1
+	}
+	
+	state_category = pastoral
+
+	history={
+		owner = SAA
+		add_core_of = SAA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+
+	provinces={
+		6421
+	}
+
+	local_supplies=0.0 
+}

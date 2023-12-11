@@ -1,0 +1,25 @@
+
+state={
+	id=955
+	name="STATE_955"
+	manpower = 405214
+	resources={
+		steel=1
+	}
+	
+	state_category = pastoral
+
+	history={
+		owner = SAC
+		add_core_of = SAC
+		buildings = {
+			infrastructure = 3
+		}
+	}
+
+	provinces={
+        6524
+	}
+
+	local_supplies=0.0 
+}

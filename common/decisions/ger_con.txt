@@ -474,6 +474,13 @@ ger_con_decisions = {
             is_core_of  = DOA
             is_core_of  = DOM
             is_core_of  = DOS
+            is_core_of = SAA
+            is_core_of = SAB
+            is_core_of = SAC
+            is_core_of = SAD
+            is_core_of = SAE
+            is_core_of = SAF
+            is_core_of = SAG
           }
         }
         add_core_of = WWS
@@ -493,6 +500,13 @@ ger_con_decisions = {
             original_tag = DOA
             original_tag = DOM
             original_tag = DOS
+            original_tag = SAA
+            original_tag = SAB
+            original_tag = SAC
+            original_tag = SAD
+            original_tag = SAE
+            original_tag = SAF
+            original_tag = SAG
           }
         }
         ger_con_pre_controlled = yes
@@ -567,6 +581,13 @@ ger_con_decisions = {
             is_core_of = DOM
             is_core_of = DOS
             is_core_of = WWS
+            is_core_of = SAA
+            is_core_of = SAB
+            is_core_of = SAC
+            is_core_of = SAD
+            is_core_of = SAE
+            is_core_of = SAF
+            is_core_of = SAG
           }
         }
         add_core_of = AOX
@@ -587,6 +608,13 @@ ger_con_decisions = {
             original_tag = DOM
             original_tag = DOS
             original_tag = WWS
+            original_tag = SAA
+            original_tag = SAB
+            original_tag = SAC
+            original_tag = SAD
+            original_tag = SAE
+            original_tag = SAF
+            original_tag = SAG
           }
         }
         ger_con_aus_controlled = yes
@@ -803,11 +831,27 @@ ger_con_decisions = {
     complete_effect = {
       every_state = {
         limit = {
-          is_core_of = DOS
+          OR = {
+            is_core_of = DOS
+            is_core_of = SAA
+            is_core_of = SAB
+            is_core_of = SAC
+            is_core_of = SAD
+            is_core_of = SAE
+            is_core_of = SAF
+            is_core_of = SAG
+          }
         }
         add_core_of = WWS
       }
       WWS = { annex_country = { target = DOS transfer_troops = yes } }
+      WWS = { annex_country = { target = SAA transfer_troops = yes } }
+      WWS = { annex_country = { target = SAB transfer_troops = yes } }
+      WWS = { annex_country = { target = SAC transfer_troops = yes } }
+      WWS = { annex_country = { target = SAD transfer_troops = yes } }
+      WWS = { annex_country = { target = SAE transfer_troops = yes } }
+      WWS = { annex_country = { target = SAF transfer_troops = yes } }
+      WWS = { annex_country = { target = SAG transfer_troops = yes } }
     }
     remove_effect = {
     }

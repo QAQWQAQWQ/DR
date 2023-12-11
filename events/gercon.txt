@@ -132,9 +132,33 @@ news_event = {
 				limit = {
 					check_variable = { pre_support > aus_support }
 				}
+				if = {
+					limit = {
+						original_tag = DOS
+					}
+					WWS = { add_to_faction = SAA}
+					WWS = { add_to_faction = SAB}
+					WWS = { add_to_faction = SAC}
+					WWS = { add_to_faction = SAD}
+					WWS = { add_to_faction = SAE}
+					WWS = { add_to_faction = SAF}
+					WWS = { add_to_faction = SAG}
+				}
 				WWS = { add_to_faction = ROOT }
 			}
 			else = {
+				if = {
+					limit = {
+						original_tag = DOS
+					}
+					AOX = { add_to_faction = SAA}
+					AOX = { add_to_faction = SAB}
+					AOX = { add_to_faction = SAC}
+					AOX = { add_to_faction = SAD}
+					AOX = { add_to_faction = SAE}
+					AOX = { add_to_faction = SAF}
+					AOX = { add_to_faction = SAG}
+				}
 				AOX = { add_to_faction = ROOT }
 			}
 		}
@@ -174,6 +198,8 @@ country_event = {
 		name = ger_con.8.a
 		FROM = { set_state_owner = 58 }
 		FROM = { set_state_owner = 952 }
+		FROM = { set_state_controller = 58 }
+		FROM = { set_state_controller = 952 }
         ai_chance = {
             base = 100 
         }
@@ -284,11 +310,27 @@ country_event = {
 		DOS = { ger_con_pre_controlled = yes }
 		every_state = {
 			limit = {
-				is_core_of = ROOT
+				OR = {
+					is_core_of = ROOT
+					is_core_of = SAA
+					is_core_of = SAB
+					is_core_of = SAC
+					is_core_of = SAD
+					is_core_of = SAE
+					is_core_of = SAF
+					is_core_of = SAG
+				}
 			}
 			add_core_of = WWS
 		}
 		WWS = { annex_country = { target = ROOT transfer_troops = yes } }
+		WWS = { annex_country = { target = SAA transfer_troops = yes } }
+		WWS = { annex_country = { target = SAB transfer_troops = yes } }
+		WWS = { annex_country = { target = SAC transfer_troops = yes } }
+		WWS = { annex_country = { target = SAD transfer_troops = yes } }
+		WWS = { annex_country = { target = SAE transfer_troops = yes } }
+		WWS = { annex_country = { target = SAF transfer_troops = yes } }
+		WWS = { annex_country = { target = SAG transfer_troops = yes } }
 		WWS = { country_event = sax_problem.4 }
 		AOX = { country_event = sax_problem.4 }
 	}

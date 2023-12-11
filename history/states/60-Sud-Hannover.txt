@@ -13,8 +13,8 @@ state={
 
 	history={
 		owner = DOS
+		add_core_of = DOS
 		victory_points = { 3561 5 }
-		victory_points = { 425 3 }
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -22,7 +22,7 @@ state={
 	}
 
 	provinces={
-		425 482 538 3500 3561 6501 6524 6582 9497 
+		425 482 3561 6582
 	}
 
 	local_supplies=0.0 

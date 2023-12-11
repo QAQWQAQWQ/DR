@@ -379,6 +379,28 @@ focus_tree = {
 					country_event = ger_con.2
 				}
 			}
+			every_country = {
+				limit = {
+				  OR = {
+					original_tag = SAA
+					original_tag = SAB
+					original_tag = SAC
+					original_tag = SAD
+					original_tag = SAE
+					original_tag = SAF
+					original_tag = SAG
+				  }
+				}
+				if = {
+					limit = {
+						check_variable = { DOS.aus_support < DOS.pre_support }
+					}
+					country_event = ger_con.1
+				}
+				else = {
+					country_event = ger_con.2
+				}
+			}
 			
 			set_variable = { global.pre_win_german_war = 1 }
 			set_variable = { global.aus_win_german_war = 1 }

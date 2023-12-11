@@ -39,6 +39,49 @@ ger_con_map_mode = {
 			   set_temp_variable = { green = 1.0 }
 			   set_temp_variable = { alpha = 1.0 }
 		   }
+			if = {
+			   limit = {
+				   FROM = {
+					   OR = {
+						   tag = SAA
+						   tag = SAB
+						   tag = SAC
+						   tag = SAD
+						   tag = SAE
+						   tag = SAF
+						   tag = SAG
+					   }
+				   }
+			   }
+			   if = {
+					limit = {
+						FROM = {
+							OR = {
+								tag = WWS
+								check_variable = { DOS.aus_support<DOS.pre_support }
+							}
+						}
+					}
+					set_temp_variable = { red = 0.01 }
+					set_temp_variable = { blue = 0.01 }
+					set_temp_variable = { green = 0.01 }
+					set_temp_variable = { alpha = 1.0 }
+				}
+				if = {
+					limit = {
+						FROM = {
+							OR = {
+								tag = AOX
+								check_variable = { DOS.aus_support>DOS.pre_support }
+							}
+						}
+					}
+					set_temp_variable = { red = 1.0 }
+					set_temp_variable = { blue = 1.0 }
+					set_temp_variable = { green = 1.0 }
+					set_temp_variable = { alpha = 1.0 }
+				}
+			}
 		}
 		
 		
