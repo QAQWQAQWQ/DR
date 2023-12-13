@@ -384,10 +384,11 @@ country_event = {
         ai_chance = {
             base = 100 
         }
+		AOX = { country_event = austria.17 }
 	}
 	option = {
 		name = austria.14.b
-		
+		AOX = { country_event = austria.18 }
 	}
 }
 country_event = {
@@ -403,10 +404,11 @@ country_event = {
         ai_chance = {
             base = 100 
         }
+		AOX = { country_event = austria.17 }
 	}
 	option = {
 		name = austria.15.b
-		
+		AOX = { country_event = austria.18 }
 	}
 }
 country_event = {
@@ -422,10 +424,33 @@ country_event = {
         ai_chance = {
             base = 100 
         }
+		AOX = { country_event = austria.17 }
 	}
 	option = {
 		name = austria.16.b
-		
+		AOX = { country_event = austria.18 }
+	}
+}
+country_event = {
+	id = austria.17
+	title = austria.17.t
+	desc = austria.17.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.17.a
+	}
+}
+country_event = {
+	id = austria.18
+	title = austria.18.t
+	desc = austria.18.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.18.a
 	}
 }
 country_event = {

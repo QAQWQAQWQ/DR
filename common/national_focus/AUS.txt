@@ -1275,7 +1275,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					check_variable = { global.cro_accpect_accpect = 1 }
+					check_variable = { global.cro_accpect = 1 }
 				}
 				DMT = {
 					transfer_state = 918
