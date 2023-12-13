@@ -1,6 +1,6 @@
-capital = 956
+﻿capital = 538
 
-oob = ""
+oob = "SAD_1920"
 
 # Starting tech
 set_technology = {
@@ -11,6 +11,9 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
+
+
+recruit_character = SAD_Wilhelm_Ernst
 
 
 	set_technology = {
@@ -59,6 +62,7 @@ add_ideas={
 
 Deutscher_Bund
 Deutscher_Zollverein
+
 }
 set_politics = {
 	ruling_party = monarchy
@@ -68,8 +72,5 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 5
-	national_populist = 15
-	monarchy = 75
-	communism = 5
+	monarchy = 100
 }
