@@ -22,6 +22,15 @@ on_actions = {
             set_variable = {
                 global.hungry_war_hun_win = 0
             }
+            set_variable = {
+                global.cze_accpect = 0
+            }
+            set_variable = {
+                global.pol_accpect = 0
+            }
+            set_variable = {
+                global.cro_accpect = 0
+            }
             AOX = {
                 country_event = austria.1
                 set_variable = {
