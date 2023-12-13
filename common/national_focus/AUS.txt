@@ -773,26 +773,27 @@ focus_tree = {
 		x = 19
 		y = 3
 		completion_reward = {
+			add_political_power = 150
 			# DMT = { annex_country = { target = KLD transfer_troops = yes } }
-			custom_effect_tooltip = AUS_bir_1_tool
+			# custom_effect_tooltip = AUS_bir_1_tool
 			custom_effect_tooltip = more_cro_aus_hun_sup_30
 				add_to_variable = {
 					var = AOX.aus_hun_gov_sup^8
 					value = 30
 				}
-				aushun_clamp_vars = yes	
-			custom_effect_tooltip = less_hun_aus_hun_sup_40
-				add_to_variable = {
-					var = AOX.aus_hun_gov_sup^1
-					value = -40
-				}
-				aushun_clamp_vars = yes	
+			aushun_clamp_vars = yes	
+			#custom_effect_tooltip = less_hun_aus_hun_sup_40
+			#	add_to_variable = {
+			#		var = AOX.aus_hun_gov_sup^1
+			#		value = -40
+			#	}
+			#	aushun_clamp_vars = yes	
 		}
 		available = {
 			not_bosnia_war_tri = yes
 		}
 		bypass = {
-			has_completed_focus = AUS_bir_1
+			# has_completed_focus = AUS_bir_1
 		}
 	} 
 	focus = {
@@ -2188,10 +2189,10 @@ focus_tree = {
 		}
 		available = {
 			has_completed_focus = AUS_bir_15
-		}
-		completion_reward = {
-		}
-		available = {
+			OR = {
+				has_completed_focus = AUS_ger_1
+				has_completed_focus = AUS_ger_2
+			}
 			NOT = {
 				has_completed_focus = AUS_HRE_0
 				has_completed_focus = AUS_german_0
@@ -2205,6 +2206,8 @@ focus_tree = {
 					pre_has_win_german_war = yes
 				}
 			}
+		}
+		completion_reward = {
 		}
 	}
 	focus = {
