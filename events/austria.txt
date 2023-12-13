@@ -201,11 +201,14 @@ country_event = {
 	option = {
 		name = austria.10.a
 		complete_national_focus = AUS_german_0
+		set_cosmetic_tag = AOX_German
+		mark_focus_tree_layout_dirty = yes
 	}
 	option = {
 		name = austria.10.b
 		complete_national_focus = AUS_HRE_0
-		
+		set_cosmetic_tag = AOX_HRE
+		mark_focus_tree_layout_dirty = yes
 	}
 }
 country_event = {
