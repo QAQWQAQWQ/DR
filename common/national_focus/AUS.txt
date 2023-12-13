@@ -670,7 +670,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AUS_0
 		}
-		x = 19
+		x = 17
 		y = 1
 		completion_reward = {
 			
@@ -695,7 +695,7 @@ focus_tree = {
 			focus = AUS_bir_0
 		}
 		mutually_exclusive = {
-			focus = AUS_bir_2
+			#focus = AUS_bir_2
 		}
 		x = 17
 		y = 2
@@ -739,36 +739,36 @@ focus_tree = {
 		bypass = {
 		}
 	}
-	focus = {
-		id = AUS_bir_2
-		icon = GFX_AUS_bir_2
-		cost = 5.00
-		prerequisite = {
-			focus = AUS_bir_0
-		}
-		mutually_exclusive = {
-			focus = AUS_bir_1
-		}
-		x = 21
-		y = 2
-		completion_reward = {
-		}
-		available = {
-			always = no
-		}
-		bypass = {
-		}
-	}
+	#focus = {
+	#	id = AUS_bir_2
+	#	icon = GFX_AUS_bir_2
+	#	cost = 5.00
+	#	prerequisite = {
+	#		focus = AUS_bir_0
+	#	}
+	#	mutually_exclusive = {
+	#		focus = AUS_bir_1
+	#	}
+	#	x = 21
+	#	y = 2
+	#	completion_reward = {
+	#	}
+	#	available = {
+	#		always = no
+	#	}
+	#	bypass = {
+	#	}
+	#}
 	focus = {
 		id = AUS_bir_3
 		icon = GFX_AUS_bir_3
 		cost = 5.00
 		prerequisite = {
 			focus = AUS_bir_1
-			focus = AUS_bir_2
+			# focus = AUS_bir_2
 		}
 		mutually_exclusive = {
-			focus = AUS_bir_7
+			#focus = AUS_bir_7
 		}
 		x = 19
 		y = 3
@@ -914,139 +914,140 @@ focus_tree = {
 		bypass = {
 		}
 	}
-	focus = {
-		id = AUS_bir_7
-		icon = GFX_AUS_bir_7
-		cost = 5.00
-		prerequisite = {
-			focus = AUS_bir_2
-		}
-		mutually_exclusive = {
-			focus = AUS_bir_3
-		}
-		x = 23
-		y = 3
-		completion_reward = {
+	#focus = {
+	#	id = AUS_bir_7
+	#	icon = GFX_AUS_bir_7
+	#	cost = 5.00
+	#	prerequisite = {
+	#		focus = AUS_bir_2
+	#	}
+	#	mutually_exclusive = {
+	#		focus = AUS_bir_3
+	#	}
+	#	x = 23
+	#	y = 3
+	#	completion_reward = {
 			# KOH = { annex_country = { target = KLD transfer_troops = yes } }
-			custom_effect_tooltip = AUS_bir_7_tool
-			custom_effect_tooltip = less_cze_aus_hun_sup_10
-				add_to_variable = {
-					var = AOX.aus_hun_gov_sup^3
-					value = -10
-				}
-				aushun_clamp_vars = yes	
-			custom_effect_tooltip = less_pol_aus_hun_sup_10
-				add_to_variable = {
-					var = AOX.aus_hun_gov_sup^4
-					value = -10
-				}
-				aushun_clamp_vars = yes	
-			custom_effect_tooltip = less_cro_aus_hun_sup_50
-				add_to_variable = {
-					var = AOX.aus_hun_gov_sup^8
-					value = -50
-				}
-				aushun_clamp_vars = yes	
-			custom_effect_tooltip = more_hun_aus_hun_sup_60
-				add_to_variable = {
-					var = AOX.aus_hun_gov_sup^1
-					value = 60
-				}
-				aushun_clamp_vars = yes	
-		}
-		available = {
-			not_bosnia_war_tri = yes
-		}
-		bypass = { 
-		}
-	}
-	focus = {
-		id = AUS_bir_9
-		icon = GFX_AUS_bir_9
-		cost = 5.00 
-		prerequisite = {
-			focus = AUS_bir_7
-		}
-		mutually_exclusive = {
-		}
-		x = 22
-		y = 4
-		completion_reward = {
-			custom_effect_tooltip = less_pol_aus_hun_sup_10
-				add_to_variable = {
-					var = AOX.aus_hun_gov_sup^4
-					value = -10
-				}
-				aushun_clamp_vars = yes	
-		}
-		available = {
-
-		}
-		bypass = {
-		}
-	}
-	focus = {
-		id = AUS_bir_10
-		icon = GFX_AUS_bir_10
-		cost = 5.00
-		prerequisite = {
-			focus = AUS_bir_7
-		}
-		mutually_exclusive = {
-		}
-		x = 24
-		y = 4
-		completion_reward = {
-		}
-		available = {
-
-		}
-		bypass = {
-		}
-	}
-	focus = {
-		id = AUS_bir_11
-		icon = GFX_AUS_bir_11 
-		cost = 5.00
-		prerequisite = {
-			focus = AUS_bir_9
-		}
-		prerequisite = {
-			focus = AUS_bir_10
-		}
-		mutually_exclusive = {
-		}
-		x = 23
-		y = 5
-		completion_reward = {
-			AOX = { set_cosmetic_tag = AOX_XYL }
-		}
-		available = {
-
-		}
-		bypass = {
-		}
-	}
-	focus = {
-		id = AUS_bir_8
-		icon = GFX_AUS_bir_8
-		cost = 5.00
-		prerequisite = {
-			focus = AUS_bir_2
-		}
-		mutually_exclusive = {
-		}
-		x = 21
-		y = 5
-		completion_reward = {
-			custom_effect_tooltip = AUS_bir_8_tool
-		}
-		available = {
-			not_bosnia_war_tri = yes
-		}
-		bypass = {
-		}
-	}
+	#		custom_effect_tooltip = AUS_bir_7_tool
+	#		custom_effect_tooltip = less_cze_aus_hun_sup_10
+	#			add_to_variable = {
+	#				var = AOX.aus_hun_gov_sup^3
+	#				value = -10
+	#			}
+	#			aushun_clamp_vars = yes	
+	#		custom_effect_tooltip = less_pol_aus_hun_sup_10
+	#			add_to_variable = {
+	#				var = AOX.aus_hun_gov_sup^4
+	#				value = -10
+	#			}
+	#			aushun_clamp_vars = yes	
+	#		custom_effect_tooltip = less_cro_aus_hun_sup_50
+	#			add_to_variable = {
+	#				var = AOX.aus_hun_gov_sup^8
+	#				value = -50
+	#			}
+	#			aushun_clamp_vars = yes	
+	#		custom_effect_tooltip = more_hun_aus_hun_sup_60
+	#			add_to_variable = {
+	#				var = AOX.aus_hun_gov_sup^1
+	#				value = 60
+	#			}
+	#			aushun_clamp_vars = yes	
+	#	}
+	#	available = {
+	#		always = no
+	#		not_bosnia_war_tri = yes
+	#	}
+	#	bypass = { 
+	#	}
+	#}
+	#focus = {
+	#	id = AUS_bir_9
+	#	icon = GFX_AUS_bir_9
+	#	cost = 5.00 
+	#	prerequisite = {
+	#		focus = AUS_bir_7
+	#	}
+	#	mutually_exclusive = {
+	#	}
+	#	x = 22
+	#	y = 4
+	#	completion_reward = {
+	#		custom_effect_tooltip = less_pol_aus_hun_sup_10
+	#			add_to_variable = {
+	#				var = AOX.aus_hun_gov_sup^4
+	#				value = -10
+	#			}
+	#			aushun_clamp_vars = yes	
+	#	}
+	#	available = {
+	#
+	#	}
+	#	bypass = {
+	#	}
+	#}
+	#focus = {
+	#	id = AUS_bir_10
+	#	icon = GFX_AUS_bir_10
+	#	cost = 5.00
+	#	prerequisite = {
+	#		focus = AUS_bir_7
+	#	}
+	#	mutually_exclusive = {
+	#	}
+	#	x = 24
+	#	y = 4
+	#	completion_reward = {
+	#	}
+	#	available = {
+	#
+	#	}
+	#	bypass = {
+	#	}
+	#}
+	# focus = {
+	#	id = AUS_bir_11
+	#	icon = GFX_AUS_bir_11 
+	#	cost = 5.00
+	#	prerequisite = {
+	#		focus = AUS_bir_9
+	#	}
+	#	prerequisite = {
+	#		focus = AUS_bir_10
+	#	}
+	#	mutually_exclusive = {
+	#	}
+	#	x = 23
+	#	y = 5
+	#	completion_reward = {
+	#		AOX = { set_cosmetic_tag = AOX_XYL }
+	#	}
+	#	available = {
+	#	
+	#	}
+	#	bypass = {
+	#	}
+	#}
+	#focus = {
+	#	id = AUS_bir_8
+	#	icon = GFX_AUS_bir_8
+	#	cost = 5.00
+	#	prerequisite = {
+	#		focus = AUS_bir_2
+	#	}
+	#	mutually_exclusive = {
+	#	}
+	#	x = 21
+	#	y = 5
+	#	completion_reward = {
+	#		custom_effect_tooltip = AUS_bir_8_tool
+	#	}
+	#	available = {
+	#		not_bosnia_war_tri = yes
+	#	}
+	#	bypass = {
+	#	}
+	#}
 	focus = {
 		id = AUS_bir_12
 		icon = GFX_AUS_bir_12
@@ -1078,19 +1079,44 @@ focus_tree = {
 		x = 14
 		y = 4
 		completion_reward = {
+			BXM = {
+				country_event = austria.14
+			}
+			KGL = {
+				country_event = austria.15
+			}
+			DMT = {
+				country_event = austria.16
+			}
 		}
 		available = {
 			KOH = {
-				exists = yes
-			}
-			XYL = {
 				exists = no
 			}
-			HUN = {
-				exists = no
+			OR = {
+				XYL = {
+					exists = yes
+				}
+				HUN = {
+					exists = yes
+				}
 			}
 		}
 		bypass = {
+			OR ={
+				AND = {
+					KOH = {
+						exists = yes
+					}
+					XYL = {
+						exists = no
+					}
+					HUN = {
+						exists = no
+					}
+				}
+				has_completed_focus = AUS_bir_14
+			}
 		}
 	}
 	focus = {
@@ -1112,6 +1138,42 @@ focus_tree = {
 					}
 				}
 				AOX = { declare_war_on = { target = XYL type = annex_everything } }
+				if = {
+					limit = {
+						check_variable = { global.cze_accpect = 1 }
+					}
+					BXM = {
+						add_to_war = {
+							targeted_alliance = AOX
+							enemy = XYL
+							hostility_reason = asked_to_join
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.cro_accpect = 1 }
+					}
+					DMT = {
+						add_to_war = {
+							targeted_alliance = AOX
+							enemy = XYL
+							hostility_reason = asked_to_join
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.pol_accpect = 1 }
+					}
+					KGL = {
+						add_to_war = {
+							targeted_alliance = AOX
+							enemy = XYL
+							hostility_reason = asked_to_join
+						}
+					}
+				}
 			}
 			
 			if = {
@@ -1121,11 +1183,57 @@ focus_tree = {
 					}
 				}
 				AOX = { declare_war_on = { target = HUN type = annex_everything } }
+				if = {
+					limit = {
+						check_variable = { global.cze_accpect = 1 }
+					}
+					BXM = {
+						add_to_war = {
+							targeted_alliance = AOX
+							enemy = HUN
+							hostility_reason = asked_to_join
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.cro_accpect = 1 }
+					}
+					DMT = {
+						add_to_war = {
+							targeted_alliance = AOX
+							enemy = HUN
+							hostility_reason = asked_to_join
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.pol_accpect = 1 }
+					}
+					KGL = {
+						add_to_war = {
+							targeted_alliance = AOX
+							enemy = HUN
+							hostility_reason = asked_to_join
+						}
+					}
+				}
 			}
 			
 		}
 		available = {
-
+			KOH = {
+				exists = no
+			}
+			OR = {
+				XYL = {
+					exists = yes
+				}
+				HUN = {
+					exists = yes
+				}
+			}
 		}
 		bypass = {
 		}
@@ -1145,10 +1253,48 @@ focus_tree = {
 		x = 15
 		y = 5
 		completion_reward = {
+			if = {
+				limit = {
+					check_variable = { global.cze_accpect = 1 }
+				}
+				BXM = {
+					transfer_state = 70
+					add_state_core = 70
+					transfer_state = 71
+					add_state_core = 71
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { global.pol_accpect = 1 }
+				}
+				KGL = {
+					transfer_state = 73
+					add_state_core = 73
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { global.cro_accpect_accpect = 1 }
+				}
+				DMT = {
+					transfer_state = 918
+					add_state_core = 918
+					transfer_state = 45
+					add_state_core = 45
+					transfer_state = 764
+					add_state_core = 764
+				}
+			}
 			mark_focus_tree_layout_dirty = yes
 		}
 		available = {
-
+			KOH = {
+				exists = yes
+			}
+			KOH = {
+           		has_idea = Part_of_Habsburgs
+			}
 		}
 		bypass = {
 		}
@@ -1252,6 +1398,8 @@ focus_tree = {
 			AOX={
 				transfer_state = 69
 				add_state_core = 69
+				transfer_state = 942
+				add_state_core = 942
 			}
 			BXM={
 				set_politics = {
@@ -1386,6 +1534,9 @@ focus_tree = {
 			else = {
 
 			}
+		}
+		bypass = {
+			has_completed_focus = AUS_bir_15
 		}
 	}
 	focus = {
@@ -1860,7 +2011,6 @@ focus_tree = {
 			focus = AUS_HRE_13
 		}
 		completion_reward = {
-			set_cosmetic_tag = AOX_HRE
 		}
 	}
 	focus = {

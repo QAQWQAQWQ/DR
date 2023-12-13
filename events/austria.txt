@@ -201,11 +201,14 @@ country_event = {
 	option = {
 		name = austria.10.a
 		complete_national_focus = AUS_german_0
+		set_cosmetic_tag = AOX_German
+		mark_focus_tree_layout_dirty = yes
 	}
 	option = {
 		name = austria.10.b
 		complete_national_focus = AUS_HRE_0
-		
+		set_cosmetic_tag = AOX_HRE
+		mark_focus_tree_layout_dirty = yes
 	}
 }
 country_event = {
@@ -365,6 +368,64 @@ country_event = {
 		add_dynamic_modifier = {
 			modifier = AOX_dynamic_austria_13_large
 		}
+	}
+}
+
+country_event = {
+	id = austria.14
+	title = austria.14.t
+	desc = austria.14.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.14.a
+		set_variable = { global.cze_accpect = 1 }
+        ai_chance = {
+            base = 100 
+        }
+	}
+	option = {
+		name = austria.14.b
+		
+	}
+}
+country_event = {
+	id = austria.15
+	title = austria.15.t
+	desc = austria.15.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.15.a
+		set_variable = { global.pol_accpect = 1 }
+        ai_chance = {
+            base = 100 
+        }
+	}
+	option = {
+		name = austria.15.b
+		
+	}
+}
+country_event = {
+	id = austria.16
+	title = austria.16.t
+	desc = austria.16.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.16.a
+		set_variable = { global.cro_accpect = 1 }
+        ai_chance = {
+            base = 100 
+        }
+	}
+	option = {
+		name = austria.16.b
+		
 	}
 }
 country_event = {

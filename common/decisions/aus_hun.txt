@@ -42,9 +42,10 @@ aus_hun_decisions = {
 	bosnia_war_1 = {
 			icon = generic_civil_support
 			available = {
-				AOX = {
-					has_completed_focus = AUS_bir_8
-				}
+				#AOX = {
+				#	has_completed_focus = AUS_bir_8
+				#}
+				always = no
 			}
 			days_mission_timeout = 70
 			activation = {
