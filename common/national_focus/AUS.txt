@@ -1265,6 +1265,22 @@ focus_tree = {
 					add_state_core = 71
 				}
 			}
+			else = {
+				SLO = {
+					add_ideas = {
+						Part_of_Habsburgs
+					}
+					transfer_state = 70
+					add_state_core = 70
+					transfer_state = 71
+					add_state_core = 71
+					transfer_state = 664
+					add_state_core = 664
+				}
+				AOX = {
+					set_autonomy = { target = SLO autonomy_state = autonomy_Crown_Territory }
+				}
+			}
 			if = {
 				limit = {
 					check_variable = { global.pol_accpect = 1 }
@@ -1286,6 +1302,26 @@ focus_tree = {
 					transfer_state = 764
 					add_state_core = 764
 				}
+			}
+				TRA = {
+					add_ideas = {
+						Part_of_Habsburgs
+					}
+					transfer_state = 76
+					add_state_core = 76
+					transfer_state = 82
+					add_state_core = 82
+					transfer_state = 83
+					add_state_core = 83
+					transfer_state = 84
+					add_state_core = 84
+				}
+				AOX = {
+					set_autonomy = { target = TRA autonomy_state = autonomy_Crown_Territory }
+				}
+			AOX = {
+				transfer_state = 920
+				transfer_state = 921
 			}
 			mark_focus_tree_layout_dirty = yes
 		}
