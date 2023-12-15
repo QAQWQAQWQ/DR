@@ -657,6 +657,10 @@ ger_con_decisions = {
       AOX = { has_completed_focus = AUS_ger_15 }
       AOX = { has_completed_focus = AUS_ger_8 }
       AOX = { has_completed_focus = AUS_ger_9 }
+      custom_trigger_tooltip = {
+        tooltip = aus_wait_bos_war_end
+        bosnia_war_end = yes
+      }
       # WWS = { can_ROOT_get_wargoal_on_THIS = yes }
     }	
     cost = 0
@@ -695,6 +699,10 @@ ger_con_decisions = {
     available = {
       WWS = { has_completed_focus = WWS_Brotherly_wars }
       # AOX = { can_ROOT_get_wargoal_on_THIS = yes }
+      custom_trigger_tooltip = {
+        tooltip = pre_wait_bos_war_end
+        bosnia_war_end = yes
+      }
     }	
     cost = 0
     days_remove = 7
