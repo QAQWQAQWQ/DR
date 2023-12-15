@@ -1567,13 +1567,57 @@ focus_tree = {
 						}
 					}
 				}
+				SLO = {
+					add_ideas = {
+						Part_of_Habsburgs
+					}
+					transfer_state = 70
+					add_state_core = 70
+					transfer_state = 71
+					add_state_core = 71
+					transfer_state = 664
+					add_state_core = 664
+				}
+				AOX = {
+					set_autonomy = { target = SLO autonomy_state = autonomy_Crown_Territory }
+				}
+				TRA = {
+					add_ideas = {
+						Part_of_Habsburgs
+					}
+					transfer_state = 76
+					add_state_core = 76
+					transfer_state = 82
+					add_state_core = 82
+					transfer_state = 83
+					add_state_core = 83
+					transfer_state = 84
+					add_state_core = 84
+				}
+				AOX = {
+					set_autonomy = { target = TRA autonomy_state = autonomy_Crown_Territory }
+				}
+				AOX = {
+					transfer_state = 920
+					transfer_state = 921
+				}
 			}
-			else = {
-
+			SLO = {
+				set_politics = {
+					ruling_party = democratic
+				}
+				remove_ideas = { Part_of_Habsburgs }
+				add_ideas = { AOX_Before_Part_Habsburgs }
+			}
+			TRA = {
+				set_politics = {
+					ruling_party = democratic
+				}
+				remove_ideas = { Part_of_Habsburgs }
+				add_ideas = { AOX_Before_Part_Habsburgs }
 			}
 		}
 		bypass = {
-			has_completed_focus = AUS_bir_15
 		}
 	}
 	focus = {
@@ -2217,11 +2261,28 @@ focus_tree = {
 		id = AUS_federation_0
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 32
+		x = 17
 		y = 6
 		allow_branch={ 
 			bosnia_war_end_tri_tool = yes
 			has_completed_focus = AUS_bir_15
+			OR = {
+				has_completed_focus = AUS_ger_1
+				has_completed_focus = AUS_ger_2
+			}
+			NOT = {
+				has_completed_focus = AUS_HRE_0
+				has_completed_focus = AUS_german_0
+			}
+			OR = {
+				NOT = {
+					has_completed_focus = AUS_ger_3
+				}
+				custom_trigger_tooltip = { 
+					tooltip = pre_win_german_war 
+					pre_has_win_german_war = yes
+				}
+			}
 		}
 		available = {
 			has_completed_focus = AUS_bir_15
@@ -2244,6 +2305,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+
 		}
 	}
 	focus = {
