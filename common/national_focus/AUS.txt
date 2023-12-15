@@ -680,6 +680,11 @@ focus_tree = {
 				}
 				add_claim_by = KOH
 			}
+				hidden_effect = {
+					set_variable = {
+						global.bosnia_contradictions = 1
+					}
+				}
 		}
 		available = {
 			always = no
@@ -1257,6 +1262,7 @@ focus_tree = {
 			if = {
 				limit = {
 					check_variable = { global.cze_accpect = 1 }
+					BXM = { exists = yes }
 				}
 				BXM = {
 					transfer_state = 70
@@ -1284,6 +1290,7 @@ focus_tree = {
 			if = {
 				limit = {
 					check_variable = { global.pol_accpect = 1 }
+					KGL = { exists = yes }
 				}
 				KGL = {
 					transfer_state = 73
@@ -1293,6 +1300,7 @@ focus_tree = {
 			if = {
 				limit = {
 					check_variable = { global.cro_accpect = 1 }
+					DMT = { exists = yes }
 				}
 				DMT = {
 					transfer_state = 918
@@ -1343,7 +1351,7 @@ focus_tree = {
 		x = 8
 		y = 6
 		allow_branch={ 
-			has_completed_focus = AUS_ger_20
+			# has_completed_focus = AUS_ger_20
 		}
 		mutually_exclusive = {
 			focus = AUS_HRE_0
@@ -1393,13 +1401,49 @@ focus_tree = {
 			focus = AUS_german_4
 		}
 		completion_reward = {
-			every_state = {
-				limit = {
-					is_core_of = BXM
-				}
+			# every_state = {
+			#	limit = {
+			#		is_core_of = BXM
+			#	}
+			#	add_core_of = AOX
+			# }
+			9 = {
+				add_core_of = AOX
+			}
+			75 = {
+				add_core_of = AOX
+			}
+			74 = {
+				add_core_of = AOX
+			}
+			69 = {
+				add_core_of = AOX
+			}
+			942 = {
 				add_core_of = AOX
 			}
 			AOX = { annex_country = { target = BXM transfer_troops = yes } }
+			if = {
+				limit = {
+					74 = {
+						is_core_of = BXM
+					}
+				}
+				SLO = {
+					add_ideas = {
+						Part_of_Habsburgs
+					}
+					transfer_state = 70
+					add_state_core = 70
+					transfer_state = 71
+					add_state_core = 71
+					transfer_state = 664
+					add_state_core = 664
+				}
+				AOX = {
+					set_autonomy = { target = SLO autonomy_state = autonomy_Crown_Territory }
+				}
+			}
 		}
 		available = {
 			custom_trigger_tooltip = { 
@@ -1413,6 +1457,10 @@ focus_tree = {
 				check_variable = {
 					aus_hun_egree^3 < 31
 				}
+			}
+			BXM = {
+				exists = yes
+				has_idea = { Part_of_Habsburgs }
 			}
 		}
 	}
@@ -1446,6 +1494,12 @@ focus_tree = {
 				add_ideas = { AOX_Before_Part_Habsburgs }
 			}
 		}
+		available = {
+			BXM = {
+				exists = yes
+				has_idea = { Part_of_Habsburgs }
+			}
+		}
 	}
 	focus = {
 		id = AUS_german_4
@@ -1471,6 +1525,12 @@ focus_tree = {
 				add_ideas = { AOX_Before_Part_Habsburgs }
 			}
 		}
+		available = {
+			BXM = {
+				exists = yes
+				has_idea = { Part_of_Habsburgs }
+			}
+		}
 	}
 	focus = {
 		id = AUS_german_5
@@ -1490,6 +1550,12 @@ focus_tree = {
 				add_ideas = { AOX_Before_Part_Habsburgs }
 			}
 		}
+		available = {
+			KGL = {
+				exists = yes
+				has_idea = { Part_of_Habsburgs }
+			}
+		}
 	}
 	focus = {
 		id = AUS_german_6
@@ -1507,6 +1573,12 @@ focus_tree = {
 				}
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
+			}
+		}
+		available = {
+			DMT = {
+				exists = yes
+				has_idea = { Part_of_Habsburgs }
 			}
 		}
 	}
@@ -1636,6 +1708,12 @@ focus_tree = {
 				}
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
+			}
+		}
+		available = {
+			VCT = {
+				exists = yes
+				has_idea = { Part_of_Habsburgs }
 			}
 		}
 	}

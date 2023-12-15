@@ -8,14 +8,15 @@ aus_hun_decisions = {
 			}
 			days_mission_timeout = 50
 			activation = {
-				OR = {
-					original_tag = AOX
-					original_tag = KOH
-					original_tag = DMT
-				}
-				AOX = {
-					has_completed_focus = AUS_bir_0
-				}
+				# OR = {
+				#	original_tag = AOX
+				#	original_tag = KOH
+				#	original_tag = DMT
+				# }
+				#AOX = {
+				#	has_completed_focus = AUS_bir_0
+				#}
+				always = no
 			}
 			visible = {
 				OR = {
@@ -47,7 +48,7 @@ aus_hun_decisions = {
 				#}
 				always = no
 			}
-			days_mission_timeout = 70
+			days_mission_timeout = 120
 			activation = {
 				OR = {
 					original_tag = AOX
@@ -757,6 +758,9 @@ aus_hun_decisions = {
 				add_claim_by = AOX
 			}
 			69 = {
+				add_claim_by = AOX
+			}
+			942 = {
 				add_claim_by = AOX
 			}
 			add_political_power = 120
