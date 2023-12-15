@@ -191,7 +191,7 @@ ger_con_decisions = {
     }
     cost = 100
     fire_only_once = no
-    days_remove = 120
+    days_remove = 50
     complete_effect = {
       var:gercon_nat = {
           random_owned_state = {
@@ -245,7 +245,7 @@ ger_con_decisions = {
     }
     cost = 100
     fire_only_once = no
-    days_remove = 70
+    days_remove = 40
     complete_effect = {
       var:gercon_nat = {
         division_template = {
