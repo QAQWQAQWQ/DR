@@ -132,107 +132,163 @@ on_daily = {
 ####
 
 on_startup= {
-effect = {
-	every_country={
-		set_variable = { Literacy_power = 0}
-		if={
-		every_controlled_state= {
+	effect = {
+		every_state = {
+			set_variable = { Literate_population = 0 }
+			if={
 				limit = {
-				has_state_category =town
-			}
-			add_to_variable = { PREV.Literacy_power = 15 } 
-		}
-		}
-		if={
-			every_controlled_state= {
-					limit = {
-					has_state_category =city
+					OR = {
+						has_state_category = wasteland
+						has_state_category = enclave
+						has_state_category = tiny_island
+					}
 				}
-				add_to_variable = { PREV.Literacy_power = 15 } 
+				set_variable = { Literate_population = 0 }
 			}
-			}
-		if={
-			every_controlled_state= {
-					limit = {
-					has_state_category =large_town
+			if={
+				limit = {
+					OR = {
+						has_state_category = small_island
+						has_state_category = pastoral
+					}
 				}
-				add_to_variable = { PREV.Literacy_power = 3 } 
+				set_variable = { Literate_population = 50 }
 			}
-			}
-		if={
-			every_controlled_state= {
-					limit = {
-					has_state_category =pastoral
-				}
-				add_to_variable = { PREV.Literacy_power = 10 } 
-			}
-			}
-		if={
-			every_controlled_state= {
-					limit = {
-					has_state_category =tiny_island
-				}
-				add_to_variable = { PREV.Literacy_power = 1 } 
-			}
-			}
-		if={
-			every_controlled_state= {
-					limit = {
-					has_state_category =small_island
-				}
-				add_to_variable = { PREV.Literacy_power = 1 } 
-			}
-			}
-		if={
-			every_controlled_state= {
-					limit = {
+			if={
+				limit = {
 					has_state_category =rural
 				}
-				add_to_variable = { PREV.Literacy_power = 2 } 
+				set_variable = { Literate_population = 100 }
 			}
-			}
-		if={
-			every_controlled_state= {
-					limit = {
-					has_state_category =enclave
+			if={
+				limit = {
+					has_state_category =town
 				}
-				add_to_variable = { PREV.Literacy_power = 1 } 
+				set_variable = { Literate_population = 200 }
 			}
-			}
-		if={
-			every_controlled_state= {
-					limit = {
-					has_state_category =wasteland
+			if={
+				limit = {
+					has_state_category = large_town
 				}
-				add_to_variable = { PREV.Literacy_power = 0 } 
+				set_variable = { Literate_population = 250 }
 			}
-			}
-		if={
-			every_controlled_state= {
-					limit = {
-					has_state_category =megalopolis
+			if={
+				limit = {
+					has_state_category = city
 				}
-				add_to_variable = { PREV.Literacy_power = 350 } 
+				set_variable = { Literate_population = 300 }
 			}
-			}
-		if={
-			every_controlled_state= {
-					limit = {
-					has_state_category =large_city
+			if={
+				limit = {
+					has_state_category = large_city
 				}
-				add_to_variable = { PREV.Literacy_power = 200 } 
+				set_variable = { Literate_population = 400 }
 			}
-			}
-		if={
-			every_controlled_state= {
-					limit = {
+			if={
+				limit = {
 					has_state_category =metropolis
 				}
-				add_to_variable = { PREV.Literacy_power = 100 } 
+				set_variable = { Literate_population = 500 }
 			}
+			if={
+				limit = {
+					has_state_category =megalopolis
+				}
+				set_variable = { Literate_population = 600 }
 			}
-									
-}
+			if={
+				limit = {
+					has_state_category =megalopolis
+				}
+			}
+			set_variable = { Literate_infra = infrastructure_level }
+			multiply_variable = { Literate_infra = 30 }
+			add_to_variable = { Literate_population = Literate_infra}
+			if = {
+				limit = {
+					is_on_continent = europe
+				}
+				multiply_variable = { Literate_population = 2 }
+			}
+			if = {
+				limit = {
+					OR = {
+						is_owned_by = WWS
+						is_owned_by = AOX
+						is_owned_by = BXM
+						is_owned_by = ENL
+						is_owned_by = JAP
+						is_owned_by = UBS
+						is_owned_by = AGC
+						is_owned_by = DOL
+						is_owned_by = DON
+						is_owned_by = DHD
+						is_owned_by = DOB
+						is_owned_by = DOR
+						is_owned_by = DOF
+						is_owned_by = DOS
+					}
+				}
+				multiply_variable = { Literate_population = 2 }
+			}
+			if = {
+				limit = {
+					OR = {
+						is_owned_by = JPN
+					}
+				}
+				multiply_variable = { Literate_population = 6 }
+			}
+			if = {
+				limit = {
+					OR = {
+						is_owned_by = UBS
+					}
+				}
+				multiply_variable = { Literate_population = 2 }
+			}
+			if = {
+				limit = {
+					OR = {
+						is_owned_by = BXM
+						is_owned_by = DOH
+					}
+				}
+				multiply_variable = { Literate_population = 1.5 }
+			}
+			if = {
+				limit = {
+					OR = {
+						is_owned_by = FRW
+					}
+				}
+				multiply_variable = { Literate_population = 1.7 }
+			}
+			if = {
+				limit = {
+					check_variable = {
+						Literate_population > state_population_k
+					}
+				}
+				set_variable = { Literate_population = state_population_k }
+			}
+		}
+		every_country={
+			set_variable = { Literacy_power = 0}
+			set_variable = { all_pop = 0}
+			every_controlled_state = {
+				#if = {
+					#limit = {
+					#	is_core_of = PREV
+					#}
+					add_to_variable = { var = PREV.all_pop value = state_population_k } 
+					add_to_variable = { var = PREV.Literacy_power value = Literate_population } 
+				#}
+			}
+			set_variable = { Literacy = Literacy_power }
+			divide_variable = { Literacy = all_pop }
+			multiply_variable = { Literacy = 100 }
+		}
 
 
 	}
@@ -240,52 +296,6 @@ effect = {
 	
 
 	}
-	on_startup= {
-		effect = {
-			every_country={
-				NOT={tag = SHW}
-				NOT={tag = AOX}
-				NOT={tag = ENL}
-				NOT={tag = ZHX}
-				NOT={tag = UBS}
-				NOT={tag = BRA}
-					set_variable = { Literacy = 0} 
-	                add_to_variable = { Literacy = Literacy_power }
-	                divide_variable = { Literacy = 10 }
-			}
-			SHW={
-					set_variable = { Literacy = 0} 
-	                add_to_variable = { Literacy = Literacy_power }
-	                divide_variable = { Literacy = 100 }
-			}
-			AOX={
-				set_variable = { Literacy = 0} 
-				add_to_variable = { Literacy = Literacy_power }
-				divide_variable = { Literacy = 10 }
-				multiply_variable = { Literacy = 2 }
-		}
-		    UBS={
-				set_variable = { Literacy = 0} 
-				add_to_variable = { Literacy = Literacy_power }
-				divide_variable = { Literacy = 100 }
-		    }
-		    ENL={
-				set_variable = { Literacy = 0} 
-				add_to_variable = { Literacy = Literacy_power }
-				divide_variable = { Literacy = 20 }
-		}
-		    BRA={
-				set_variable = { Literacy = 0} 
-				add_to_variable = { Literacy = Literacy_power }
-				divide_variable = { Literacy = 20 }
-		}
-		    ZHX={
-			    set_variable = { Literacy = 0} 
-			    add_to_variable = { Literacy = Literacy_power }
-			    divide_variable = { Literacy = 90 }
-	}
-		}
-		}
 
 	}
 
