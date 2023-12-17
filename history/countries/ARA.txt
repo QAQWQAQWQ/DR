@@ -1,6 +1,6 @@
-﻿capital = 959
+﻿capital = 231
 
-oob = "SAG_1920"
+oob = "ARA_1920"
 
 # Starting tech
 set_technology = {
@@ -13,8 +13,7 @@ set_technology = {
 }
 
 
-recruit_character = SAG_Furst_Heinrich
-
+recruit_character = ARA_avetis_aharonyan
 
 	set_technology = {
 		interwar_artillery = 1
@@ -49,28 +48,20 @@ recruit_character = SAG_Furst_Heinrich
 		
 	}
 
-add_ideas={
-		#law
-		Private_economy
-		low_industrialization
-		Freedom_belief
-		Autonomous_police
-		Weak_investments
-		Patriarchy_supreme
-		Control_media
-		Deflection_employer
-
-Deutscher_Bund
-Deutscher_Zollverein
-
-}
 set_politics = {
-	ruling_party = monarchy
+	ruling_party = Reform_socialism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
-
+add_ideas={
+#law
+Basic_industrialization 
+Private_economy
+}
 set_popularities = {
-	monarchy = 100
+	democratic = 5
+	national_populist = 10
+	Reform_socialism = 80
+	communism = 5
 }
