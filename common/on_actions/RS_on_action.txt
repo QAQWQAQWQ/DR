@@ -152,63 +152,99 @@ on_startup= {
 						has_state_category = pastoral
 					}
 				}
-				set_variable = { Literate_population = 50 }
+				set_variable = { Literate_population = 20 }
 			}
 			if={
 				limit = {
 					has_state_category =rural
 				}
-				set_variable = { Literate_population = 100 }
+				set_variable = { Literate_population = 40 }
 			}
 			if={
 				limit = {
 					has_state_category =town
 				}
-				set_variable = { Literate_population = 200 }
+				set_variable = { Literate_population = 120 }
 			}
 			if={
 				limit = {
 					has_state_category = large_town
 				}
-				set_variable = { Literate_population = 250 }
+				set_variable = { Literate_population = 150 }
 			}
 			if={
 				limit = {
 					has_state_category = city
 				}
-				set_variable = { Literate_population = 300 }
+				set_variable = { Literate_population = 240 }
 			}
 			if={
 				limit = {
 					has_state_category = large_city
 				}
-				set_variable = { Literate_population = 400 }
+				set_variable = { Literate_population = 320 }
 			}
 			if={
 				limit = {
 					has_state_category =metropolis
 				}
-				set_variable = { Literate_population = 500 }
+				set_variable = { Literate_population = 1000 }
 			}
 			if={
 				limit = {
 					has_state_category =megalopolis
 				}
-				set_variable = { Literate_population = 600 }
+				set_variable = { Literate_population = 1200 }
 			}
 			if={
 				limit = {
 					has_state_category =megalopolis
 				}
 			}
-			set_variable = { Literate_infra = infrastructure_level }
-			multiply_variable = { Literate_infra = 30 }
-			add_to_variable = { Literate_population = Literate_infra}
+			# set_variable = { Literate_infra = infrastructure_level }
+			# multiply_variable = { Literate_infra = 30 }
+			# add_to_variable = { Literate_population = Literate_infra}
 			if = {
 				limit = {
 					is_on_continent = europe
 				}
-				multiply_variable = { Literate_population = 2 }
+				multiply_variable = { Literate_population = 3 }
+			}
+			if = {
+				limit = {
+					is_on_continent = north_america
+				}
+				multiply_variable = { Literate_population = 1.5 }
+			}
+			if = {
+				limit = {
+					is_on_continent = south_america
+				}
+				multiply_variable = { Literate_population = 1.5 }
+			}
+			if = {
+				limit = {
+					is_on_continent = africa
+				}
+				multiply_variable = { Literate_population = 0.01 }
+			}
+			if = {
+				limit = {
+					is_on_continent = asia
+					NOT = {
+						is_core_of = JPN
+					}
+				}
+				multiply_variable = { Literate_population = 0.05 }
+			}
+			if = {
+				limit = {
+					OR = {
+						is_owned_by = KAT
+						is_owned_by = KWT
+					}
+				}
+				multiply_variable = { Literate_population = 0.01 }
 			}
 			if = {
 				limit = {
@@ -234,10 +270,10 @@ on_startup= {
 			if = {
 				limit = {
 					OR = {
-						is_owned_by = JPN
+						is_core_of = JPN
 					}
 				}
-				multiply_variable = { Literate_population = 6 }
+				multiply_variable = { Literate_population = 8 }
 			}
 			if = {
 				limit = {
@@ -251,7 +287,9 @@ on_startup= {
 				limit = {
 					OR = {
 						is_owned_by = BXM
-						is_owned_by = DOH
+						is_owned_by = DOL
+						is_owned_by = KGL
+						is_owned_by = VCT
 					}
 				}
 				multiply_variable = { Literate_population = 1.5 }
@@ -259,7 +297,21 @@ on_startup= {
 			if = {
 				limit = {
 					OR = {
-						is_owned_by = FRW
+						is_owned_by = SAA
+						is_owned_by = SAB
+						is_owned_by = SAC
+						is_owned_by = SAD
+						is_owned_by = SAE
+						is_owned_by = SAF
+						is_owned_by = SAG
+					}
+				}
+				multiply_variable = { Literate_population = 3 }
+			}
+			if = {
+				limit = {
+					OR = {
+						is_core_of = FRW
 					}
 				}
 				multiply_variable = { Literate_population = 1.7 }
@@ -272,6 +324,8 @@ on_startup= {
 				}
 				set_variable = { Literate_population = state_population_k }
 			}
+			set_variable = { state_literacy = Literate_population }
+			divide_variable = { state_literacy = state_population_k  }
 		}
 		every_country={
 			set_variable = { Literacy_power = 0}
