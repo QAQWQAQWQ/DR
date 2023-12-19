@@ -346,12 +346,28 @@ on_startup= {
 
 
 	}
-
-	
-
 	}
-
+	on_monthly = {
+		effect = {
+			every_country={
+			set_variable = { Literacy_power = 0}
+			set_variable = { all_pop = 0}
+			every_controlled_state = {
+				#if = {
+					#limit = {
+					#	is_core_of = PREV
+					#}
+					add_to_variable = { var = PREV.all_pop value = state_population_k } 
+					add_to_variable = { var = PREV.Literacy_power value = Literate_population } 
+				#}
+			}
+			set_variable = { Literacy = Literacy_power }
+			divide_variable = { Literacy = all_pop }
+			multiply_variable = { Literacy = 100 }
+			}
+		}
 	}
+}
 
 
 
