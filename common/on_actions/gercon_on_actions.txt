@@ -138,6 +138,12 @@ on_actions = {
                     value = 10
                 }
             }
+            DOL = {
+                set_variable = {
+                    var = pre_support
+                    value = 30
+                }
+            }
             DOA = {
                 set_variable = {
                     var = pre_support
