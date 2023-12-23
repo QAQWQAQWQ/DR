@@ -23,19 +23,12 @@ state={
 		#}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
+			arms_factory = 1
+			industrial_complex = 3
 			air_base = 6
 		}
 		add_core_of = WWS
 		add_core_of = SIL
-
-		1939.1.1 = {
-			buildings = {
-				air_base = 10
-				arms_factory = 3
-				industrial_complex = 3
-			}
-		}
 	}
 
 	provinces={
