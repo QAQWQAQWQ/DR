@@ -15,7 +15,7 @@ state={
 
 		buildings = {
 			infrastructure = 3 #was: 6
-			industrial_complex = 3
+			industrial_complex = 2
 			6332 = {
 				bunker = 1
 
@@ -28,6 +28,11 @@ state={
 			air_base = 6
 		}
 		add_core_of = WWS
+		1939.1.1 = {
+			buildings = {
+				anti_air_building = 5
+			}
+		}
 	}
 
 	provinces={

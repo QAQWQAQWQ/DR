@@ -1,6 +1,6 @@
-﻿capital = 49
+﻿capital = 835
 
-oob = "TEQ_1920"
+oob = "SML_1920"
 
 # Starting tech
 set_technology = {
@@ -12,9 +12,7 @@ set_technology = {
 	fuel_silos = 1
 }
 
-set_variable = { Ottoman_influence = 0 }
-
-recruit_character = TEQ_Mehmed_VI
+recruit_character = SML_Maxamed_Cabdille_Hasan
 
 	set_technology = {
 		interwar_artillery = 1
@@ -50,19 +48,11 @@ recruit_character = TEQ_Mehmed_VI
 	}
 
 set_politics = {
-	ruling_party = monarchy
+	ruling_party = national_populist
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
-add_ideas={
-#law
-Basic_industrialization 
-Private_economy
-}
 set_popularities = {
-	democratic = 5
-	national_populist = 1
-	monarchy = 89
-	communism = 5
+	national_populist = 100
 }
