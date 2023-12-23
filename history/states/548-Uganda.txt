@@ -7,12 +7,20 @@ state={
 		rubber=3 # was: 4
 	}
 	history={
+<<<<<<< Updated upstream
 		owner = ENL
+=======
+<<<<<<< HEAD
+		owner = DSX
+		add_core_of= DSX
+=======
+		owner = ENL
+>>>>>>> parent of c60d567 (Merge branch 'master' of https://github.com/QAQWQAQWQ/DR)
+>>>>>>> Stashed changes
 		buildings = {
 			infrastructure = 2
 
 		}
-		add_core_of = UGA
 		victory_points = {
 			12989 1
 		}

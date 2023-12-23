@@ -37,7 +37,15 @@ war_propaganda2:0 "战争动员"
 war_propaganda3:0 "总动员"
 
 Literacy_level:0 "教育水平"
+<<<<<<< Updated upstream
 Literacy_level_desc:0 "\n\n\n\n\n\n\n\n教育是国家的未来，民族的未来掌握在青年手中，如何提高识字率成为了当前的问题，当前我们的识字率占比为§Y[?Literacy]%§!"
+=======
+<<<<<<< HEAD
+Literacy_level_desc:0 "\n\n\n\n\n\n\n\n教育是国家的未来，民族的未来掌握在青年手中，如何提高识字率成为了当前的问题，当前我们的识字率占比为§Y[?Literacy]§!"
+=======
+Literacy_level_desc:0 "\n\n\n\n\n\n\n\n教育是国家的未来，民族的未来掌握在青年手中，如何提高识字率成为了当前的问题，当前我们的识字率占比为§Y[?Literacy]%§!"
+>>>>>>> parent of c60d567 (Merge branch 'master' of https://github.com/QAQWQAQWQ/DR)
+>>>>>>> Stashed changes
 New_teaching_materials:0 "翻新教科书"
 Recruiting_teachers:0 "招收教师"
 
@@ -45,11 +53,14 @@ Recruiting_teachers:0 "招收教师"
 
 
 
+Irish_crisis:0 "爱尔兰危机"
+Irish_crisis_desc:0 "\n\n\n\n\n\n\n\n武装的爱尔兰共和派一直谋求以武力发动起义，以此从英国获得独立。据我们的线人得知，爱尔兰的叛乱力量由法国方面资助，因此我们拥有绝对的理由将这群分裂帝国的叛军消灭\n当前局势：\n爱尔兰分离情绪：§Y[?Separation_emotions]§!\n皇家爱尔兰警队数量为§Y[?Black_Brown_Troops]§!"
+Fortify_line_defense:0 "构建防线"
+Strengthen_police_force:0 "增加警力"
+Strengthen_police_force_desc:0 "如果我们在爱尔兰投入的警力高于预期，高昂的维护费用会让国内不满。"
+Irish_crisis_tt:0 "警力不能过多"
 
-
-
-
-
+Stop_surge:0 "议会宣布停止增兵"
 
 
 
