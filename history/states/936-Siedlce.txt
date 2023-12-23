@@ -6,8 +6,7 @@ state={
 	state_category = city
 
 	history={
-		owner = PBL
-		add_core_of = PBL
+		owner = KGL
 		victory_points = {
 			402 1
 		}
@@ -16,6 +15,7 @@ state={
 			arms_factory = 1
 			industrial_complex = 2
 		}
+		add_core_of = KGL
 	}
 
 	provinces={

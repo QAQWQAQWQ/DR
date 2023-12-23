@@ -633,7 +633,7 @@ ger_con_decisions = {
 					var = aus_ger_sup 
 					value = 60
 				}
-        # AOX = { country_event = { id = austria.12 days = 10 } }
+        AOX = { country_event = { id = austria.12 days = 10 } }
       }
     }
     remove_effect = {

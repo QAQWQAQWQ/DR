@@ -132,28 +132,10 @@ on_actions = {
                     value = 40
                 }
             }
-            DHD = {
-                set_variable = {
-                    var = aus_support
-                    value = 30
-                }
-            }
-            DON = {
-                set_variable = {
-                    var = aus_support
-                    value = 30
-                }
-            }
             DOB = {
                 set_variable = {
                     var = pre_support
                     value = 10
-                }
-            }
-            DOL = {
-                set_variable = {
-                    var = pre_support
-                    value = 30
                 }
             }
             DOA = {
