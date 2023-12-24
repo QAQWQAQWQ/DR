@@ -53,5 +53,16 @@ division_template = {
 	priority = 0
 }
 units = {
-	
+	division= {	
+		name = "英军步兵师"
+		location = 6103
+		division_template = "英军步兵师"
+		start_experience_factor = 1.0
+	}
+	division= {	
+		name = "英军步兵师"
+		location = 6103
+		division_template = "英军步兵师"
+		start_experience_factor = 0.8
+	}
 }

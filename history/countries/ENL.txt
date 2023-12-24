@@ -1,7 +1,7 @@
 ﻿capital = 126
 
 oob = "ENL_1920"
-#set_naval_oob = "ENL_1920_Naval"
+set_naval_oob = "ENL_1920_Naval"
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -18,7 +18,10 @@ set_power_balance = {
 }
 
 set_variable = { Black_Brown_Troops = 0 }
+
+
 set_variable = { Separation_emotions = 25 }
+
 
 
 recruit_character = ENL_David_Lloyd_George
