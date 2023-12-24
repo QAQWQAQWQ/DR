@@ -6,7 +6,7 @@ state = {
 	state_category = metropolis
 
 	history = {
-		owner = MIL
+		owner = VCT
 		victory_points = { #Milano
 			3780 15 
 		}
@@ -21,12 +21,7 @@ state = {
 
 		}
 		add_core_of = MIL
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 7
-				industrial_complex = 4
-			}
-		}
+		add_core_of = VCT
 	}
 
 	provinces = {
