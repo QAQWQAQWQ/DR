@@ -17,10 +17,6 @@ set_power_balance = {
 	id = League_balance
 }
 
-set_variable = { Black_Brown_Troops = 0 }
-set_variable = { Separation_emotions = 25 }
-
-
 recruit_character = ENL_David_Lloyd_George
 recruit_character = ENL_George_V
 recruit_character = ENL_James_Ramsay_MacDonald
@@ -78,9 +74,8 @@ recruit_character = ENL_Winston_Churchill
 	add_to_faction = NAF
 	add_to_faction = ESG
 
-	set_autonomy = { target = IRL autonomy_state = autonomy_dominion }
 
-	
+
 give_guarantee = YEM
 give_guarantee = KAT
 give_guarantee = SLY

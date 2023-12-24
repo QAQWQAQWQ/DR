@@ -6,8 +6,7 @@ state={
 	state_category=rural
 
 	history={
-		owner = DSX
-		add_core_of= DSX
+		owner = ENL
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -16,6 +15,8 @@ state={
 		victory_points = {
 			1939 2 
 		}
+		
+		add_core_of = KEN
 
 	}
 

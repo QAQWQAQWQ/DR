@@ -13,23 +13,6 @@ characters={
 			id=-1
 		}
 	}
-
-	SUE_Soviet_CCCP={
-		name=SUE_Soviet_CCCP
-		portraits={
-			civilian={
-				large="gfx/leaders/SUE/portrait_Supreme_Soviet_CCCP.tga"
-			}
-		}
-		country_leader={
-			ideology=Bolshevik_type
-			#desc=SUE_Supreme_Soviet_CCCP_desc
-			traits={  }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
 	SUE_Yakov_Sverdlov={
 		name=SUE_Yakov_Sverdlov
 		portraits={
@@ -38,14 +21,13 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Leninism_type
+			ideology=Bolshevik_type
 			desc=SUE_Yakov_Sverdlov_desc
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
 		}
 	}
-	
 	SUE_Kalinin={
 		name=SUE_Kalinin
 		portraits={

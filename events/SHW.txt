@@ -38,8 +38,7 @@ news_event = {
 		id = SHW.2
 		title = SHW.2.t
 		desc = SHW.2.d
-
-		picture = GFX_Russian_Holodomor
+		#picture = GFX_illness
 
 	    fire_only_once = yes
 
@@ -67,10 +66,7 @@ news_event = {
 	is_triggered_only = yes
 
 immediate = {
-	hidden_effect={
-		play_song = Workers_Marseillaise
-	}
-	
+	play_song = Workers_Marseillaise
 }
 
 	option = {
@@ -90,8 +86,6 @@ immediate = {
 				  } 
 		 }
 SUE = {
-	    transfer_state = 219
-	    add_state_core = 219
 	    transfer_state = 232
 		add_state_core = 232
 		transfer_state = 213
@@ -150,8 +144,6 @@ SUE = {
         add_state_core = 399
 		transfer_state = 204
         add_state_core = 204
-		transfer_state = 255
-        add_state_core = 255
 		SHW={declare_war_on = { target = SUE type = annex_everything }}
 		
 		

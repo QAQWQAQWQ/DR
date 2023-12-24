@@ -14,7 +14,7 @@ set_technology = {
 
 recruit_character = YDA_Ganghi
 recruit_character = YDA_Gopal_Krishna_Gokar
-recruit_character = YDA_Frederic_John_Napier_Thesiger
+
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -49,15 +49,15 @@ recruit_character = YDA_Frederic_John_Napier_Thesiger
 	}
 add_ideas = {YDA_kingdoms_land }
 set_politics = {
-	ruling_party = authoritarian
+	ruling_party = national_populist
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	national_populist = 39
-	authoritarian = 41
+	democratic = 39
+	national_populist = 41
 	neutrality = 15
 	communism = 5
 }

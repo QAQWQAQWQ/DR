@@ -143,14 +143,21 @@
     AOX_XYL_DEF:0 "奥匈帝国"
     AOX_XYL_ADJ:0 "奥匈帝国"
 
+    MAPMODE_GER_CON_MAP_MODE:0 "德意志邦联"
     MAPMODE_GER_CON_MAP_MODE_NAME:0 "德意志邦联"
     MAPMODE_GER_CON_MAP_MODE_DESCRIPTION:0 "德意志邦联"
+    ger_con_map_mode_tooltip:0 "德意志邦联"
     
     DOS_Saxony_Thuringia_United:0 "萨克森-图林根联合"
     DOS_Saxony_Thuringia_United_desc:0 "在拿破仑退出莱茵河以东后，畏惧于普鲁士可能的扩张，图林根诸邦选择依附于萨克森。萨克森和图林根地区的各邦国建立了政治与军事上的紧密联系，图林根地区的各邦国在德意志事务上将与萨克森保持一致。"
 
     DON_Rhine_Shield:0 "莱茵之盾"
-    DON_Rhine_Shield_desc:0 "莱茵兰公国的成立最初是为了防御法国下一次的入侵，彻底击败法兰西后，普鲁士与奥地利计划将莱茵河西岸的德意志领土整合起来防御法国的军事威胁，因此莱茵兰公国被建立起来，其作为被黑森吞并的补偿交予拿骚大公。过去的近半个世纪，莱茵兰一直准备着应对法国的下一次入侵。"
+    DON_Rhine_Shield_desc:0 "莱茵兰公国的成立最初是为了防御法国下一次的入侵，彻底击败法兰西后，普鲁士与奥地利计划将莱茵河西岸的德意志领土整合起来防御法国的军事威胁，因此莱茵兰公国被建立起来。过去的近半个世纪，莱茵兰一直准备着应对法国的下一次入侵。"
 
     aus_wait_bos_war_end:0 "帝国内部尚未稳定，我们需要在克罗地亚与匈牙利对于波斯尼亚的争端结束后再考虑统一德意志...无论它以何种形式结束。"
     pre_wait_bos_war_end:0 "奥地利依旧过于强大，我们需要等待克罗地亚与匈牙利对于波斯尼亚的争端撕裂帝国后在考虑德意志的统一大业。"
+    
+    MAPMODE_STATE_LITERACY_POP_MAP_MODE:0 "地区识字率"
+    MAPMODE_STATE_LITERACY_POP_MAP_MODE_NAME:0 "地区识字率"
+    MAPMODE_STATE_LITERACY_POP_MAP_MODE_DESCRIPTION:0 "地区识字率"
+    state_literacy_pop_map_mode_tooltip:0 "地区识字率"

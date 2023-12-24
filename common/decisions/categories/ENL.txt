@@ -1,7 +1,7 @@
-Irish_crisis = {
+fate_the_Suez_Canal = {
 	icon = infiltration
 	
-	picture = GFX_decisions_Irish_crisis
+	picture = GFX_decisions_fate_the_Suez_Canal
 
 	priority = 8
 	allowed = {
@@ -9,10 +9,7 @@ Irish_crisis = {
 	} 
 
 	visible = {
-		NOT={
-			has_completed_focus = ENL_focus11
-		}
-		
+		has_completed_focus = ENL_fate_the_Suez_Canal
 	} 
 }
 League_balance_category = {  
