@@ -13,7 +13,7 @@ set_technology = {
 }
 
 recruit_character = IRL_Michael_Collins
-
+recruit_character = IRL_John_Dillon
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -48,13 +48,14 @@ recruit_character = IRL_Michael_Collins
 	}
 
 set_politics = {
-	ruling_party = authoritarian
+	ruling_party = democratic
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-                authoritarian = 75
+	democratic= 21
+    authoritarian = 54
 	communism = 25
 }

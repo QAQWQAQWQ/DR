@@ -1,4 +1,18 @@
 characters={
+	IRL_John_Dillon={
+		name=IRL_John_Dillon
+		portraits={
+			civilian={
+				large="gfx/leaders/IRL/Portrait_John_Dillon.tga"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
 	IRL_Michael_Collins={
 		name=IRL_Michael_Collins
 		portraits={

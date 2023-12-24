@@ -12,11 +12,20 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+	}	
+	EYJ_Abbas_II={
+		name=EYJ_Abbas_II
+		portraits={
+			civilian={
+				large="gfx/leaders/EYJ/portrait_Abbas_II.tga"
+			}
+		}
 		country_leader={
-			ideology=liberalism
+			ideology=royalists
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}		
+	}
+	
 	}

@@ -1,1543 +1,844 @@
-focus_tree = {
-	id = ENL
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = ENL
+focus_tree={
+	country={
+		factor=0
+		modifier={
+			add=10
+			tag=ENL
 		}
 	}
-	default = no
-	focus = {
-		id = ENL_Commonwealth_Nations
-		icon = GFX_focus_generic_monarchy_2
-		cost = 7.00
-		available = {
-			NOT = { 
-				has_government = radical_socialist
-				has_government = communism 
-				has_government = Left_nationalism
-			}
-			num_subjects > 0
-		} 
-		mutually_exclusive = {
-			focus = ENL_British_Empire
+	default=no
+	focus={
+		id=ENL_focus1
+		x=13
+		y=0
+		cost=10
+		icon = GFX_goal_ENL_focus1
+		ai_will_do={
+			factor=1
 		}
-		x = 23
-		y = 0
-    completion_reward = {
-	     add_stability = 0.05
-		 add_popularity = { ideology = democratic popularity = 0.05 }
-    }
-	}
-	focus = {
-		id = ENL_British_Empire
-		icon = GFX_focus_eng_the_sun_never_sets
-		cost = 7.00
-		available = {
-			NOT = { 
-				has_government = radical_socialist
-				has_government = communism 
-				has_government = Left_nationalism
-			}
-			num_subjects > 0
-		} 
-		mutually_exclusive = {
-			focus = ENL_Commonwealth_Nations
+		available_if_capitulated=yes
+		search_filters={
 		}
-		x = 33
-		y = 0
-completion_reward = {
-	add_stability = 0.05
-	add_popularity = { ideology = monarchy popularity = 0.05 }
-}
-	}
-	focus = {
-		id = ENL_Another_way
-		icon = GFX_focus_AST_never_gallipoli
-		cost = 7.00
-		x = 59
-		y = 0
-		completion_reward ={
-			add_popularity = { ideology = social_democrat popularity = 0.1 }
-			add_popularity = { ideology = neutrality popularity = 0.1 }
-			add_political_power = 100  }
-	}
-	focus = {
-		id = ENL_avalanche
-		icon = GFX_focus_rom_parties_end
-		cost = 7.00
-		x = 44
-		y = 0
-		available = {
-			has_idea = London_stock_market_crash
-		}
-		hidden_effect ={
-		completion_reward={set_political_power = -100}
-	}
-	}
-
-	focus = {
-		id = ENL_Colonial_policy
-		icon = GFX_focus_generic_military_dictatorship
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Commonwealth_Nations
-		}
-		x = 18
-		y = 1
-completion_reward = {
-	add_political_power = 100
-}
-	}
-	focus = {
-		id = ENL_Colonial_ties
-		icon = GFX_focus_generic_military_academy
-		cost = 7.00
-		available = {
+		completion_reward={
 			
 		}
-		prerequisite = {
-			focus = ENL_Commonwealth_Nations
+	}
+	focus={
+		id=ENL_focus2
+		x=13
+		y=1
+		icon = GFX_goal_ENL_focus2
+		prerequisite={focus=ENL_focus1}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 22
-		y = 1
-completion_reward = {
-	XXL={ add_ideas= Colonial_ties }
-	ESG={ add_ideas= Colonial_ties }
-	CNA={ add_ideas= Colonial_ties }
-	ASZ={ add_ideas= Colonial_ties }
-	EYJ={ add_ideas= Colonial_ties }
-	NAF={ add_ideas= Colonial_ties }
-	YDA={ add_ideas= Colonial_ties }
-}
-	}
-	focus = {
-		id = ENL_Colonial_elite
-		icon = GFX_focus_spa_save_the_alcazar
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Colonial_policy
+		available_if_capitulated=yes
+		search_filters={
 		}
-		prerequisite = {
-			focus = ENL_Colonial_ties
-		}
-		x = 16
-		y = 2
-completion_reward = {
-	set_autonomy = {
-		target = XXL
-		autonomy_state = autonomy_dominion
-	}
-	set_autonomy = {
-		target = ESG
-		autonomy_state = autonomy_dominion
-	}
-	set_autonomy = {
-		target = CNA
-		autonomy_state = autonomy_dominion
-	}
-	set_autonomy = {
-		target = EYJ
-		autonomy_state = autonomy_dominion
-	}
-	set_autonomy = {
-		target = ASZ
-		autonomy_state = autonomy_dominion
-	}
-	set_autonomy = {
-		target = NAF
-		autonomy_state = autonomy_dominion
-	}
-	set_autonomy = {
-		target = YDA
-		autonomy_state = autonomy_dominion
-	}
-	hidden_effect = {
-		EYJ={
-			set_popularities = {
-				democratic = 25
-				monarchy = 40
-				neutrality = 10
-				communism = 25
-			}
-			set_politics = {
-			ruling_party = monarchy
-		}
-	}
-	    NAF={
-			set_popularities = {
-				democratic = 25
-				monarchy = 10
-				neutrality = 40
-				communism = 25
-			}
-		set_politics = {
-		ruling_party = neutrality
-	}
-}
-ESG={
-	set_popularities = {
-		democratic = 25
-		monarchy = 10
-		neutrality = 40
-		communism = 25
-	}
-set_politics = {
-ruling_party = neutrality
-}
-}
-YDA={
-	set_popularities = {
-		democratic = 40
-		monarchy = 10
-		neutrality = 25
-		communism = 25
-	}
-set_politics = {
-ruling_party = democratic
-}
-}
-CNA={
-	set_popularities = {
-		democratic = 40
-		monarchy = 10
-		neutrality = 25
-		communism = 25
-	}
-}
-ASZ={
-	set_popularities = {
-		democratic = 40
-		monarchy = 10
-		neutrality = 25
-		communism = 25
-	}
-}
-XXL={
-	set_popularities = {
-		democratic = 40
-		monarchy = 10
-		neutrality = 25
-		communism = 25
-	}
-}
-	}
-}
-	}
-	focus = {
-		id = ENL_Reduce_trade_tariffs
-		icon = GFX_focus_hol_abandon_the_gold_standard
-		cost = 7.00
-		available = {
-				has_government = democratic
-		} 
-		prerequisite = {
-			focus = ENL_Colonial_ties
-		}
-		x = 20
-		y = 2
-completion_reward = {
-	add_opinion_modifier = {
-		target = CNA
-		modifier = Lower_trade_tariffs
-	}
-	add_opinion_modifier = {
-		target = XXL
-		modifier = Lower_trade_tariffs
-	}
-	add_opinion_modifier = {
-		target = YDA
-		modifier = Lower_trade_tariffs
-	}
-	add_opinion_modifier = {
-		target = ASZ
-		modifier = Lower_trade_tariffs
-	}
-	add_opinion_modifier = {
-		target = NAF
-		modifier = Lower_trade_tariffs
-	}
-	add_opinion_modifier = {
-		target = ESG
-		modifier = Lower_trade_tariffs
-	}
-	add_opinion_modifier = {
-		target = EYJ
-		modifier = Lower_trade_tariffs
-	}
-}
-	}
-	focus = {
-		id = ENL_Belfort_Declaration
-		icon = GFX_goal_generic_army_doctrines
-		cost = 7.00
-		available = {
-			has_global_flag = Ottoman_Empire_has_been_dismembered
-		} 
-		available = {
-			NOT = { 
-				has_government = monarchy
-			}
-		} 
-		prerequisite = {
-			focus = ENL_Colonial_elite
-		}
-		prerequisite = {
-			focus = ENL_Reduce_trade_tariffs
-		}
-		x = 18
-		y = 3
-
-	}
-	focus = {
-		id = ENL_Recognition_an_independent_constitution
-		icon = GFX_focus_generic_treaty
-		cost = 7.00
-		available = {
-			has_completed_focus = ENL_Decolonization
-			NOT = { 
-				has_government = monarchy
-			}
-		} 
-		prerequisite = {
-			focus = ENL_Belfort_Declaration
-		}
-		x = 16
-		y = 4
-		completion_reward = {
-			end_puppet = XXL
-			end_puppet = YDA
-			end_puppet = EYJ
-			end_puppet = ASZ
-			end_puppet = CNA
-			end_puppet = NAF
-			end_puppet = ESG
-		}
-	}
-	focus = {
-		id = ENL_Decolonization
-		icon = GFX_focus_generic_monarchy_1
-		cost = 7.00
-		available = {
-		XXL={ has_autonomy_state = autonomy_dominion }
-	    ESG={ has_autonomy_state = autonomy_dominion }
-	    CNA={ has_autonomy_state = autonomy_dominion }
-	    ASZ={ has_autonomy_state = autonomy_dominion }
-	    EYJ={ has_autonomy_state = autonomy_dominion }
-	    NAF={ has_autonomy_state = autonomy_dominion }
-	    YDA={ has_autonomy_state = autonomy_dominion }
-		}
-		prerequisite = {
-			focus = ENL_Belfort_Declaration
-		}
-		x = 20
-		y = 4
-completion_reward = {
-	XXL={ add_ideas= Decolonization }
-	ESG={ add_ideas= Decolonization }
-	CNA={ add_ideas= Decolonization }
-	ASZ={ add_ideas= Decolonization }
-	EYJ={ add_ideas= Decolonization }
-	NAF={ add_ideas= Decolonization }
-	YDA={ add_ideas= Decolonization }
-}
-	}
-	focus = {
-		id = ENL_British_Education
-		icon = GFX_focus_generic_home_defense
-		cost = 7.00
-		available = {
-		XXL={is_puppet_of = ENL}
-		YDA={is_puppet_of = ENL}
-		EYJ={is_puppet_of = ENL}
-		ASZ={is_puppet_of = ENL}
-		CNA={is_puppet_of = ENL}
-		NAF={is_puppet_of = ENL}
-		ESG={is_puppet_of = ENL}
-		}
-		prerequisite = {
-			focus = ENL_Commonwealth_Nations
-			focus = ENL_British_Empire
-		}
-		x = 28
-		y = 1 
-completion_reward = {
-	    XXL={add_ideas = British_Education}
-		YDA={add_ideas = British_Education}
-		EYJ={add_ideas = British_Education}
-		ASZ={add_ideas = British_Education}
-		CNA={add_ideas = British_Education}
-		NAF={add_ideas = British_Education}
-		ESG={add_ideas = British_Education}
-}
-	}
-	focus = {
-		id = ENL_Africa_Strategy
-		icon = GFX_focus_generic_africa_factory
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_British_Education
-		}
-		x = 23
-		y = 2
-completion_reward = {
-	add_political_power = 250
-}
-	}
-	focus = {
-		id = ENL_fate_the_Suez_Canal
-		icon = GFX_focus_GRE_byzantine_themata
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Africa_Strategy
-		}
-		x = 22
-		y = 3
-completion_reward={
-	custom_effect_tooltip = fate_the_Suez_Canal_T
-	hidden_effect={unlock_decision_tooltip = fate_the_Suez_Canal}
-	}
-}
-	focus = {
-		id = ENL_Wooing_Egypt
-		icon = GFX_focus_hol_prepare_the_inundation_lines
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Africa_Strategy
-		}
-		x = 24
-		y = 3
-completion_reward = {
-	add_political_power = 150
-}
-	}
-	focus = {
-		id = ENL_Blockade_Suez
-		icon = GFX_focus_hol_war_on_pacifism
-		cost = 7.00
-		available={
-		custom_trigger_tooltip = {
-			tooltip = British_influence_T
-			check_variable = {
-				British_influence > 45
-			}
-		}
-	}
-		prerequisite = {
-			focus = ENL_fate_the_Suez_Canal
-		}
-		prerequisite = {
-			focus = ENL_Wooing_Egypt
-		}
-		x = 23
-		y = 4
-completion_reward = {
-	add_threat = 10
-}
-
-	}
-	focus = {
-		id = ENL_Dismember_Ottoman_plan
-		icon = GFX_focus_TUR_turanist_ambition
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Blockade_Suez
-		}
-		x = 23
-		y = 5
-completion_reward = {
-	custom_effect_tooltip = fate_the_Suez_Canal_E
-	set_global_flag = Ottoman_Empire_has_been_dismembered
-}
-	}
-	
-	focus = {
-		id = ENL_Eastern_colonies
-		icon = GFX_focus_usa_focus_on_asia
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_British_Education
-		}
-		x = 28
-		y = 2
-		completion_reward = {
-			add_political_power = 250
-		}
-	}
-	focus = {
-		id = ENL_Build_Malaysia
-		icon = GFX_focus_POL_warsaw_main_station
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Eastern_colonies
-		}
-		x = 26
-		y = 3
-		completion_reward = {
-			SLY={add_ideas= UK_Investment}
-		}
-
-	}
-	focus = {
-		id = ENL_Malacca_Trade
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Build_Malaysia
-		}
-		x = 26
-		y = 4
-	completion_reward={
-		336={
-			add_building_construction = {
-			type = naval_base
-			level = 1
-			instant_build = yes
-			}
-		}
-		333={
-			add_building_construction = {
-			type = naval_base
-			level = 1
-			instant_build = yes
-			}
-		}
-			}
-	}
-	
-	focus = {
-		id = ENL_Balances_Japan
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Eastern_colonies
-		}
-		x = 28
-		y = 3
 		completion_reward={
-			add_opinion_modifier = {
-				target = JPN
-				modifier = Sanctioned
-			}
-			}
-	}
-	focus = {
-		id = ENL_Embargo_against_Japan
-		icon = GFX_focus_AST_war_japan
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Balances_Japan
-		}
-		x = 28
-		y = 4
-completion_reward={
-	add_opinion_modifier = {
-		target = JPN
-		modifier = Trade_embargo
-	}
-	}
-}
-	focus = {
-		id = ENL_Fighting_against_Japan
-		icon = GFX_focus_attack_japan
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Embargo_against_Japan
-		}
-		x = 28
-		y = 5
-completion_reward = {
-	create_wargoal = {
-		type = puppet_wargoal_focus
-		target = JPN
-	}
-}
-	}
-	focus = {
-		id = ENL_Build_Hong_Kong
-		icon = GFX_focus_POL_warsaw_main_station
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Eastern_colonies
-		}
-		x = 30
-		y = 3
-		completion_reward = {
-			ESG ={ add_ideas= UK_Investment }
 		}
 	}
-	focus = {
-		id = ENL_Open_concessions
-		icon = GFX_goal_generic_construct_civilian
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Build_Hong_Kong
+	focus={
+		id=ENL_focus3
+		x=10
+		y=2
+		icon = GFX_goal_ENL_focus3
+		prerequisite={focus=ENL_focus2}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 30
-		y = 4
-completion_reward={
-	326={
-		add_building_construction = {
-		type = industrial_complex
-		level = 1
-		instant_build = yes
-	}
-}
-	}
-}
-	focus = {
-		id = ENL_Mediterranean_approach
-		icon = GFX_goal_generic_major_war
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_British_Education
+		available_if_capitulated=yes
+		search_filters={
 		}
-		x = 32
-		y = 2
-		completion_reward = {
-			add_political_power = 250
-		}
-	}
-	focus = {
-		id = ENL_Right_way_Gibraltar
-		icon = GFX_focus_por_luso_tropicalism
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Mediterranean_approach
-		}
-		x = 32
-		y = 3
-completion_reward={
-	add_building_construction = {
-		type = bunker
-		level = 1
-		instant_build = yes
-		province = 4135
-	}
-}
-	}
-	focus = {
-		id = ENL_bridgehead
-		icon = GFX_goal_generic_construct_military
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Right_way_Gibraltar
-		}
-		x = 32
-		y = 4
 		completion_reward={
-			add_building_construction = {
-				type = bunker
-				level = 3
-				instant_build = yes
-				province = 4135
-			}
 		}
 	}
-	focus = {
-		id = ENL_Conflict_Gibraltar
-		icon = GFX_goal_generic_more_territorial_claims
-		cost = 7.00
-		available={controls_state = 118}
-		prerequisite = {
-			focus = ENL_bridgehead
+	focus={
+		id=ENL_focus4
+		x=16
+		y=2
+		icon = GFX_goal_ENL_focus4
+		prerequisite={focus=ENL_focus2}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 32
-		y = 5
-completion_reward={
-	118 = { set_border_war = yes }
-}
-	}
-	focus = {
-		id = ENL_Strengthen_sens_colonial_identity
-		icon = GFX_goal_generic_air_doctrine
-		cost = 7.00
-		available = {
-			XXL={is_puppet_of = ENL}
-			YDA={is_puppet_of = ENL}
-			EYJ={is_puppet_of = ENL}
-			ASZ={is_puppet_of = ENL}
-			CNA={is_puppet_of = ENL}
-			NAF={is_puppet_of = ENL}
-			ESG={is_puppet_of = ENL}
-			}
-		prerequisite = {
-			focus = ENL_British_Empire
+		available_if_capitulated=yes
+		search_filters={
 		}
-		x = 34
-		y = 1
-		completion_reward={custom_effect_tooltip = Strengthen_sens_colonial_identity_T}
-	}
-	focus = {
-		id = ENL_Assimilation_colonies
-		icon = GFX_goal_continuous_increase_nu
-		cost = 7.00
-		available = {
-			XXL={is_puppet_of = ENL}
-			YDA={is_puppet_of = ENL}
-			EYJ={is_puppet_of = ENL}
-			ASZ={is_puppet_of = ENL}
-			CNA={is_puppet_of = ENL}
-			NAF={is_puppet_of = ENL}
-			ESG={is_puppet_of = ENL}
-			}
-		prerequisite = {
-			focus = ENL_British_Empire
-		}
-		x = 38
-		y = 1
-completion_reward={custom_effect_tooltip = police_action_T}
-	}
-	focus = {
-		id = ENL_Maintain_colonial_loyalty
-		icon = GFX_focus_eng_unite_the_anglosphere
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Strengthen_sens_colonial_identity
-		}
-		prerequisite = {
-			focus = ENL_Assimilation_colonies
-		}
-		x = 36
-		y = 2
-completion_reward={
-add_stability = 0.15
-XXL={ add_stability = 0.15 }
-ESG={ add_stability = 0.15 }
-CNA={ add_stability = 0.15 }
-ASZ={ add_stability = 0.15 }
-EYJ={ add_stability = 0.15 }
-NAF={ add_stability = 0.15 }
-YDA={ add_stability = 0.15 }
-}
-	}
-	focus = {
-		id = ENL_A_proud_part
-		icon = GFX_focus_spr_torchbearers_of_tomorrow
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Maintain_colonial_loyalty
-		}
-		x = 36
-		y = 3
-completion_reward={
-	add_political_power=350
-	XXL={ add_political_power=150 }
-	ESG={ add_political_power=150 }
-	CNA={ add_political_power=150 }
-	ASZ={ add_political_power=150 }
-	EYJ={ add_political_power=150 }
-	NAF={ add_political_power=150 }
-	YDA={ add_political_power=150 }
-	
-}
-	}
-	focus = {
-		id = ENL_Served_United_Kingdom
-		icon = GFX_focus_generic_commonwealth_build_infantry
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_A_proud_part
-		}
-		x = 34
-		y = 4
-completion_reward = {
-	add_manpower = 150000
-}
-	}
-	focus = {
-		id = ENL_jewel_the_crown
-		icon = GFX_focus_RAJ_british_investors
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_A_proud_part
-		}
-		x = 38
-		y = 4
-completion_reward = {
-	add_state_core = 445
-	add_state_core = 442
-	add_state_core = 787
-	add_state_core = 441
-	add_state_core = 440
-	add_state_core = 443
-	add_state_core = 428
-	add_state_core = 433
-	add_state_core = 439
-	add_state_core = 437
-	add_state_core = 429
-	add_state_core = 427
-	add_state_core = 425
-	add_state_core = 423
-	add_state_core = 424
-	add_state_core = 426
-	add_state_core = 436
-	add_state_core = 438
-	add_state_core = 435
-	add_state_core = 431
-	add_state_core = 432
-	add_state_core = 430
-	add_state_core = 434
-}
-	}
-	focus = {
-		id = ENL_sun_Empire
-		icon = GFX_focus_hol_united_netherlands
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Served_United_Kingdom
-		}
-		prerequisite = {
-			focus = ENL_jewel_the_crown
-		}
-		x = 36
-		y = 5
-completion_reward={
-	add_ideas = sun_Empire
-	}
-}
-	focus = {
-		id = ENL_Bloodletting_therapy
-		icon = GFX_focus_generic_the_giant_wakes
-		cost = 7.00
-		mutually_exclusive = {
-			focus = ENL_Direct_intervention
-		}
-		prerequisite = {
-			focus = ENL_avalanche
-		}
-		x = 41
-		y = 1
 		completion_reward={
-			add_political_power = 100
-			add_stability = 0.05
 		}
 	}
-	focus = {
-		id = ENL_Appease_masses
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Bloodletting_therapy
+	focus={
+		id=ENL_focus5
+		x=8
+		y=3
+		icon = GFX_goal_ENL_focus5
+		prerequisite={focus=ENL_focus3}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 41
-		y = 2
-completion_reward={
-	add_political_power = -250
-	add_stability = 0.05
-}
-	}
-	focus = {
-		id = ENL_Turn_printing_machine
-		icon = GFX_focus_SOV_organize_wreckers
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Appease_masses
+		available_if_capitulated=yes
+		search_filters={
 		}
-		x = 41
-		y = 3
-completion_reward={
-	hidden_effect={
-		add_timed_idea = { idea = London_stock_market_crash_3 days = 450}
-		remove_ideas = London_stock_market_crash
-	}
-	custom_effect_tooltip = Turn_printing_machine_T
-	
-}
-	}
-	focus = {
-		id = ENL_Direct_intervention
-		icon = GFX_focus_generic_support_the_left_right
-		cost = 7.00
-		mutually_exclusive = {
-			focus = ENL_Bloodletting_therapy
-		}
-		prerequisite = {
-			focus = ENL_avalanche
-		}
-		x = 45
-		y = 1
 		completion_reward={
-			add_political_power = -300
 		}
 	}
-	focus = {
-		id = ENL_Securities_Regulations
-		icon = GFX_focus_generic_industry_3
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Direct_intervention
+	focus={
+		id=ENL_focus6
+		x=12
+		y=3
+		icon = GFX_goal_ENL_focus6
+		prerequisite={focus=ENL_focus3}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 43
-		y = 2
-completion_reward={
-swap_ideas = {
-	remove_idea = London_stock_market_crash
-	add_idea = London_stock_market_crash_1
-}
-}
-	}
-	focus = {
-		id = ENL_Establishment_regulatory_body
-		icon = GFX_focus_generic_diplomatic_treaty
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Direct_intervention
+		available_if_capitulated=yes
+		search_filters={
 		}
-		x = 47
-		y = 2
-completion_reward={
-	add_political_power=100
-	add_popularity = { ideology = democratic popularity = 0.1 }
-}
-	}
-	focus = {
-		id = ENL_Tackle_inflation
-		icon = GFX_focus_hol_the_foundations_of_defense
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Securities_Regulations
-		}
-		prerequisite = {
-			focus = ENL_Establishment_regulatory_body
-		}
-		x = 45
-		y = 3
 		completion_reward={
-			swap_ideas = {
-				remove_idea = London_stock_market_crash_1
-				add_idea = London_stock_market_crash_2
-			}
-			}
+		}
 	}
-	focus = {
-		id = ENL_Securities_Exchange_Commission
-		icon = GFX_goal_generic_forceful_treaty
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Tackle_inflation
+	focus={
+		id=ENL_focus7
+		x=10
+		y=4
+		icon = GFX_goal_ENL_focus7
+		prerequisite={focus=ENL_focus6}
+		prerequisite={focus=ENL_focus5}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 45
-		y = 4
-    completion_reward={remove_ideas =London_stock_market_crash_2}
-	}
-	focus = {
-		id = ENL_King_Party
-		icon = GFX_focus_eng_imperial_federation
-		cost = 7.00
-		available = {
-			neutrality > 0.35
+		available_if_capitulated=yes
+		search_filters={
 		}
-		prerequisite = {
-			focus = ENL_Another_way
-		}
-		mutually_exclusive = {
-			focus = ENL_Labour
-		}
-		x = 52
-		y = 1
-completion_reward={set_politics = { ruling_party = neutrality elections_allowed = yes }}
-	}
-	focus = {
-		id = ENL_Recruit_Royal_Party_supporters
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_King_Party
-		}
-		x = 50
-		y = 2
 		completion_reward={
-			add_political_power = 100
-			add_popularity = { ideology = neutrality popularity = 0.15 }
 		}
 	}
-	focus = {
-		id = ENL_Give_king_more_rights
-		icon = GFX_goal_continuous_def_against_influence
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_King_Party
+	focus={
+		id=ENL_focus8
+		x=14
+		y=3
+		icon = GFX_goal_ENL_focus8
+		prerequisite={focus=ENL_focus4}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 54
-		y = 2
+		available_if_capitulated=yes
+		search_filters={
+		}
 		completion_reward={
-			add_political_power = 100
-			add_popularity = { ideology = monarchy popularity = 0.15 }}
-		
+		}
 	}
-	focus = {
-		id = ENL_Resists_red
-		icon = GFX_goal_anti_comintern_pact
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Recruit_Royal_Party_supporters
+	focus={
+		id=ENL_focus9
+		x=18
+		y=3
+		icon = GFX_goal_ENL_focus9
+		prerequisite={focus=ENL_focus4}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		prerequisite = {
-			focus = ENL_Give_king_more_rights
+		available_if_capitulated=yes
+		search_filters={
 		}
-		x = 51
-		y = 3
 		completion_reward={
-		add_popularity = { ideology = communism popularity = -0.15 }
-		add_popularity = { ideology = radical_socialist popularity = -0.15 }
-	}
-	}
-	focus = {
-		id = ENL_Weakening_the_ower_the_House_Commons
-		icon = GFX_goal_continuous_suppression
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Recruit_Royal_Party_supporters
 		}
-		prerequisite = {
-			focus = ENL_Give_king_more_rights
+	}
+	focus={
+		id=ENL_focus10
+		x=16
+		y=4
+		icon = GFX_goal_ENL_focus10
+		prerequisite={focus=ENL_focus9}
+		prerequisite={focus=ENL_focus8}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 53
-		y = 3
+		available_if_capitulated=yes
+		search_filters={
+		}
 		completion_reward={
-			add_popularity = { ideology = democratic popularity = -0.15 }
-			add_popularity = { ideology = neutrality popularity = -0.15 }
 		}
 	}
-	focus = {
-		id = ENL_Show_goodwill_Russia
-		icon = GFX_focus_generic_royal_wedding
-		cost = 7.00
-		available = {
-			SHW={ has_government= monarchy }
+	focus={
+		id=ENL_focus11
+		x=24
+		y=1
+		icon = GFX_goal_ENL_focus11
+		prerequisite={focus=ENL_focus1}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		prerequisite = {
-			focus = ENL_Resists_red
+		available_if_capitulated=yes
+		search_filters={
 		}
-		prerequisite = {
-			focus = ENL_Weakening_the_ower_the_House_Commons
-		}
-		x = 51
-		y = 4
-		completion_reward = {
-			add_opinion_modifier = {
-				target = SHW
-				modifier = Show_us_kindness
-			}
-		}
-	}
-	focus = {
-		id = ENL_Show_goodwill_Germany
-		icon = GFX_focus_generic_royal_wedding
-		cost = 7.00
-		available = {
-			WWS={ has_government= monarchy }
-		}
-		prerequisite = {
-			focus = ENL_Resists_red
-		}
-		prerequisite = {
-			focus = ENL_Weakening_the_ower_the_House_Commons
-		}
-		x = 48
-		y = 4
-		completion_reward = {
-			add_opinion_modifier = {
-				target = WWS
-				modifier = Show_us_kindness
-			}
-		}
-	}
-	focus = {
-		id = ENL_Show_goodwill_Italy
-		icon = GFX_focus_generic_royal_wedding
-		cost = 7.00
-		available = {
-			ITE={ has_government= monarchy }
-		}
-		prerequisite = {
-			focus = ENL_Resists_red
-		}
-		prerequisite = {
-			focus = ENL_Weakening_the_ower_the_House_Commons
-		}
-		x = 53
-		y = 4
-		completion_reward = {
-			add_opinion_modifier = {
-				target = ITE
-				modifier = Show_us_kindness
-			}
-		}
-	}
-	focus = {
-		id = ENL_Showed_goodwill_Habsburgs
-		icon = GFX_focus_generic_royal_wedding
-		cost = 7.00
-		available = {
-			AOX={ has_government= monarchy }
-		}
-		prerequisite = {
-			focus = ENL_Resists_red
-		}
-		prerequisite = {
-			focus = ENL_Weakening_the_ower_the_House_Commons
-		}
-		x = 56
-		y = 4
-		completion_reward = {
-			add_opinion_modifier = {
-				target = AOX
-				modifier = Show_us_kindness
-			}
-		}
-	}
-	focus = {
-		id = ENL_End_constitutional_monarchy
-		icon = GFX_focus_generic_strike_at_democracy1
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Show_goodwill_Germany
-		}
-		prerequisite = {
-			focus = ENL_Show_goodwill_Russia
-		}
-		prerequisite = {
-			focus = ENL_Show_goodwill_Italy
-		}
-		prerequisite = {
-			focus = ENL_Showed_goodwill_Habsburgs
-		}
-		x = 52
-		y = 5
-completion_reward = {
-	set_politics = {
-		ruling_party = monarchy
-	}
-	hidden_effect = {
-		set_popularities = {
-			neutrality = 5
-			monarchy = 95
-		}
-	}
-}
-	}
-	focus = {
-		id = ENL_Long_live_the_King
-		icon = GFX_focus_eng_god_save_the_king
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_End_constitutional_monarchy
-		}
-		x = 52
-		y = 6
-
-	}
-	focus = {
-		id = ENL_Labour
-		icon = GFX_focus_generic_diplomatic_treaty
-		cost = 7.00
-		available = {
-			social_democrat > 0.35
-		}
-		prerequisite = {
-			focus = ENL_Another_way
-		}
-		mutually_exclusive = {
-			focus = ENL_King_Party
-		}
-		x = 67
-		y = 1
-		completion_reward={set_politics = { ruling_party = social_democrat elections_allowed = yes }}
-	}
-	focus = {
-		id = ENL_Parliamentary_struggle
-		icon = GFX_focus_por_workers_of_iberia
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Labour
-		}
-		mutually_exclusive = {
-			focus = ENL_The_red_flag_under_London
-		}
-		x = 62
-		y = 2
-completion_reward = {
-	add_political_power = 100
-	add_stability = 0.1
-}
-	}
-	focus = {
-		id = ENL_Fight_the_welfare_workers
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		cost = 7.00
-		
-		prerequisite = {
-			focus = ENL_Parliamentary_struggle
-		}
-		x = 62
-		y = 3
 		completion_reward={
-			swap_ideas = {
-				remove_idea = Deflection_employer
-				add_idea = Deflection_workers
-			}
-			}
-	}
-	focus = {
-		id = ENL_Gentle_struggle
-		icon = GFX_focus_spr_unify_the_london_bureau
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Fight_the_welfare_workers
+			unlock_decision_category_tooltip = Irish_crisis
 		}
-		x = 60
-		y = 4
+	}
+	focus={
+		id=ENL_focus12
+		x=22
+		y=2
+		icon = GFX_goal_ENL_focus12
+		prerequisite={focus=ENL_focus11}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
 		completion_reward={
-			hidden_effect = {
-				add_popularity = { ideology = monarchy popularity = -1 }
-			}
-			country_event = ENL.10
-			}
-	}
-	focus = {
-		id = ENL_Follow_Paris
-		icon = GFX_goal_generic_alliance
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Fight_the_welfare_workers
-		}
-		x = 64
-		y = 4
-completion_reward={
-	add_opinion_modifier = {
-		target = FRW
-		modifier = Show_us_kindness
-	}
-	}
-}
-	focus = {
-		id = ENL_Systemic_reforms
-		icon = GFX_focus_generic_soviet_politics
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Gentle_struggle
-		}
-		prerequisite = {
-			focus = ENL_Follow_Paris
-		}
-		x = 62
-		y = 5
-		completion_reward = {
-			add_political_power = 200
 		}
 	}
-	focus = {
-		id = ENL_Parliamentary_chairmanship
-		icon = GFX_focus_POL_complete_april_constitution
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Systemic_reforms
+	focus={
+		id=ENL_focus13
+		x=22
+		y=3
+		icon = GFX_goal_ENL_focus13
+		prerequisite={focus=ENL_focus12}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 60
-		y = 6
-completion_reward = {
-	add_ideas = The_shield_of_ideology
-}
-	}
-	focus = {
-		id = ENL_Welfare_Policy
-		icon = GFX_focus_generic_socialist_science
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Systemic_reforms
+		available_if_capitulated=yes
+		search_filters={
 		}
-		x = 64
-		y = 6
 		completion_reward={
-			swap_ideas = {
-				remove_idea = Deflection_workers
-				add_idea = State_trade_unions
-			}
-			}
-	}
-	focus = {
-		id = ENL_Genuine_socialism
-		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Parliamentary_chairmanship
-		}
-		prerequisite = {
-			focus = ENL_Welfare_Policy
-		}
-		x = 62
-		y = 7
-
-	}
-	focus = {
-		id = ENL_The_red_flag_under_London
-		icon = GFX_goal_tfv_burn_the_royal_portraits
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Labour
-		}
-		mutually_exclusive = {
-			focus = ENL_Parliamentary_struggle
-		}
-		x = 72
-		y = 2
-completion_reward = {
-	add_stability = -0.5
-	add_political_power = 100
-	custom_effect_tooltip = The_red_flag_under_London_T
-}
-	}
-	focus = {
-		id = ENL_Promote_decolonization
-		icon = GFX_focus_eng_decolonization
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Parliamentary_struggle
-			focus = ENL_The_red_flag_under_London
-		}
-		x = 65
-		y = 3
-completion_reward = {
-			end_puppet = XXL
-			end_puppet = YDA
-			end_puppet = EYJ
-			end_puppet = ASZ
-			end_puppet = CNA
-			end_puppet = NAF
-			end_puppet = ESG
-	XXL={ add_ideas= Decolonization }
-	ESG={ add_ideas= Decolonization }
-	CNA={ add_ideas= Decolonization }
-	ASZ={ add_ideas= Decolonization }
-	EYJ={ add_ideas= Decolonization }
-	NAF={ add_ideas= Decolonization }
-	YDA={ add_ideas= Decolonization }
 		}
 	}
-	focus = {
-		id = ENL_Mosley_Memorandum
-		icon = GFX_focus_hol_the_foundations_of_defense
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Parliamentary_struggle
-			focus = ENL_The_red_flag_under_London
+	focus={
+		id=ENL_focus14
+		x=22
+		y=4
+		icon = GFX_goal_ENL_focus14
+		prerequisite={focus=ENL_focus13}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 68
-		y = 3
-completion_reward={
-	country_event = msl.1
-	}
-}
-	focus = {
-		id = ENL_Tackle_unemployment
-		icon = GFX_goal_continuous_increase_nu
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Mosley_Memorandum
+		available_if_capitulated=yes
+		search_filters={
 		}
-		x = 67
-		y = 4
-completion_reward = {
-	country_event = msl.2
-}
-	}
-	focus = {
-		id = ENL_Clear_poor
-		icon = GFX_goal_generic_air_production
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Mosley_Memorandum
-		}
-		x = 69
-		y = 4
-completion_reward = {
-	add_ideas = Poverty_Eradication_Program
-}
-	}
-	focus = {
-		id = ENL_Eliminate_upper_class
-		icon = GFX_focus_spr_masters_of_our_own_fate
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_The_red_flag_under_London
-		}
-		x = 70
-		y = 3
-completion_reward = {
-	country_event = ENL.9
-}
-	}
-	focus = {
-		id = ENL_The_fate_royal_family
-		icon = GFX_focus_rom_abdicate
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_The_red_flag_under_London
-		}
-		x = 74
-		y = 3
-completion_reward = {
-	country_event = ENL.8
-}
-	}
-	focus = {
-		id = ENL_Violent_struggle
-		icon = GFX_focus_generic_strike_at_democracy2
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Eliminate_upper_class
-		}
-		prerequisite = {
-			focus = ENL_The_fate_royal_family
-		}
-		x = 72
-		y = 4
-completion_reward={
-	hidden_effect ={
-		swap_ideas = {
-			remove_idea = Smallholder_economy
-			add_idea = Staterun_economy
+		completion_reward={
 		}
 	}
-	}
-}
-	focus = {
-		id = ENL_Solve_reactionary
-		icon = GFX_focus_POL_sanation_right
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Violent_struggle
+	focus={
+		id=ENL_focus15
+		x=26
+		y=2
+		icon = GFX_goal_ENL_focus15
+		prerequisite={focus=ENL_focus11}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 70
-		y = 5
-completion_reward={
-	add_war_support = 0.1
-	}
-}
-	focus = {
-		id = ENL_The_European_battlefield
-		icon = GFX_focus_usa_focus_on_europe
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Solve_reactionary
+		available_if_capitulated=yes
+		search_filters={
 		}
-		x = 69
-		y = 6
-
-	}
-	focus = {
-		id = ENL_Target_Berlin
-		icon = GFX_focus_eng_liberate_the_home_of_marx
-		cost = 7.00
-		available = {
-			WWS={
-				NOT ={
-					has_government=communism
-				}
-				NOT ={
-					has_government=radical_socialist
-				}
-				
-			}
-		}
-		prerequisite = {
-			focus = ENL_The_European_battlefield
-		}
-		x = 67
-		y = 7
-		completion_reward = {
-			create_wargoal = {
-				type = liberate_wargoal
-				target = WWS
-			}
+		completion_reward={
 		}
 	}
-	focus = {
-		id = ENL_Sunset_plan
-		icon = GFX_focus_prc_infiltration
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_The_European_battlefield
+	focus={
+		id=ENL_focus16
+		x=26
+		y=3
+		icon = GFX_goal_ENL_focus16
+		prerequisite={focus=ENL_focus15}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 71
-		y = 7
-
-	}
-	focus = {
-		id = ENL_North_American_landing_sites
-		icon = GFX_focus_spa_the_war_of_vengeance
-		cost = 7.00
-		available = {
-			UBS={
-				NOT ={
-					has_government=communism
-				}
-				NOT ={
-					has_government=radical_socialist
-				}
-				
-			}
+		available_if_capitulated=yes
+		search_filters={
 		}
-		prerequisite = {
-			focus = ENL_Solve_reactionary
-		}
-		x = 72
-		y = 6
-		completion_reward = {
-			create_wargoal = {
-				type = liberate_wargoal
-				target = UBS
-			}
+		completion_reward={
 		}
 	}
-	focus = {
-		id = ENL_Mediterranean_tactics
-		icon = GFX_focus_GRE_byzantine_themata
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_The_European_battlefield
+	focus={
+		id=ENL_focus17
+		x=26
+		y=4
+		icon = GFX_goal_ENL_focus17
+		prerequisite={focus=ENL_focus16}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 69
-		y = 7
-
-	}
-	focus = {
-		id = ENL_Union_Movement
-		icon = GFX_focus_generic_military_mission
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Mosley_approach
+		available_if_capitulated=yes
+		search_filters={
 		}
-		x = 75
-		y = 6
-
-	}
-	focus = {
-		id = ENL_Europe_Nation
-		icon = GFX_focus_SOV_proclaim_soviet_hegemony
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Union_Movement
+		completion_reward={
 		}
-		x = 75
-		y = 7
-
 	}
-	focus = {
-		id = ENL_Mosley_approach
-		icon = GFX_focus_prc_agrarian_socialism
-		cost = 7.00
-		prerequisite = {
-			focus = ENL_Violent_struggle
+	focus={
+		id=ENL_focus18
+		x=24
+		y=5
+		icon = GFX_goal_ENL_focus18
+		prerequisite={focus=ENL_focus17}
+		prerequisite={focus=ENL_focus14}
+		cost=10
+		ai_will_do={
+			factor=1
 		}
-		x = 75
-		y = 5
-completion_reward={
-	add_ideas = ENL_Mosley_H
-	country_event = ENL.11
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
 	}
+	focus={
+		id=ENL_focus19
+		x=2
+		y=1
+		icon = GFX_goal_ENL_focus19
+		prerequisite={focus=ENL_focus1}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus20
+		x=0
+		y=2
+		icon = GFX_goal_ENL_focus20
+		prerequisite={focus=ENL_focus19}
+		mutually_exclusive={focus=ENL_focus24 }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus24
+		x=4
+		y=2
+		icon = GFX_goal_ENL_focus24
+		prerequisite={focus=ENL_focus19}
+		mutually_exclusive={focus=ENL_focus20 }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus21
+		x=0
+		y=3
+		icon = GFX_goal_ENL_focus21
+		prerequisite={focus=ENL_focus20}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus25
+		x=4
+		y=3
+		icon = GFX_goal_ENL_focus25
+		prerequisite={focus=ENL_focus24}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus22
+		x=0
+		y=4
+		icon = GFX_goal_ENL_focus22
+		prerequisite={focus=ENL_focus21}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus26
+		x=4
+		y=4
+		icon = GFX_goal_ENL_focus26
+		prerequisite={focus=ENL_focus25}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus23
+		x=0
+		y=5
+		icon = GFX_goal_ENL_focus23
+		prerequisite={focus=ENL_focus22}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus27
+		x=4
+		y=5
+		icon = GFX_goal_ENL_focus27
+		prerequisite={focus=ENL_focus26}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus28
+		x=13
+		y=7
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus29
+		x=13
+		y=8
+		prerequisite={focus=ENL_focus28}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus30
+		x=11
+		y=9
+		prerequisite={focus=ENL_focus29}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus31
+		x=13
+		y=9
+		prerequisite={focus=ENL_focus29}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus32
+		x=15
+		y=9
+		prerequisite={focus=ENL_focus29}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus34
+		x=13
+		y=10
+		prerequisite={focus=ENL_focus30}
+		prerequisite={focus=ENL_focus32}
+		prerequisite={focus=ENL_focus31}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus35
+		x=18
+		y=10
+		prerequisite={focus=ENL_focus32}
+		prerequisite={focus=ENL_focus31}
+		prerequisite={focus=ENL_focus30}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus33
+		x=8
+		y=10
+		prerequisite={focus=ENL_focus30}
+		prerequisite={focus=ENL_focus31}
+		prerequisite={focus=ENL_focus32}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus36
+		x=6
+		y=11
+		prerequisite={focus=ENL_focus33}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus38
+		x=6
+		y=12
+		prerequisite={focus=ENL_focus36}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus37
+		x=10
+		y=11
+		prerequisite={focus=ENL_focus33}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus39
+		x=10
+		y=12
+		prerequisite={focus=ENL_focus37}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus40
+		x=13
+		y=11
+		prerequisite={focus=ENL_focus34}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus41
+		x=13
+		y=12
+		prerequisite={focus=ENL_focus40}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus42
+		x=16
+		y=11
+		prerequisite={focus=ENL_focus35}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus43
+		x=16
+		y=12
+		prerequisite={focus=ENL_focus42}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus44
+		x=20
+		y=11
+		prerequisite={focus=ENL_focus35}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus45
+		x=20
+		y=12
+		prerequisite={focus=ENL_focus44}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus46
+		x=13
+		y=13
+		prerequisite={focus=ENL_focus38}
+		prerequisite={focus=ENL_focus39}
+		prerequisite={focus=ENL_focus41}
+		prerequisite={focus=ENL_focus43}
+		prerequisite={focus=ENL_focus45}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus47
+		x=10
+		y=14
+		prerequisite={focus=ENL_focus46}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus48
+		x=16
+		y=14
+		prerequisite={focus=ENL_focus46}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus49
+		x=14
+		y=5
+		icon = GFX_goal_ENL_focus49
+		prerequisite={focus=ENL_focus9}
+		prerequisite={focus=ENL_focus8}
+		prerequisite={focus=ENL_focus10}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus50
+		x=18
+		y=5
+		icon = GFX_goal_ENL_focus50
+		prerequisite={focus=ENL_focus9}
+		prerequisite={focus=ENL_focus8}
+		prerequisite={focus=ENL_focus10}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus51
+		x=8
+		y=5
+		icon = GFX_goal_ENL_focus51
+		prerequisite={focus=ENL_focus7}
+		prerequisite={focus=ENL_focus6}
+		prerequisite={focus=ENL_focus5}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus52
+		x=12
+		y=5
+		icon = GFX_goal_ENL_focus52
+		prerequisite={focus=ENL_focus7}
+		prerequisite={focus=ENL_focus6}
+		prerequisite={focus=ENL_focus5}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
 	}
 }
