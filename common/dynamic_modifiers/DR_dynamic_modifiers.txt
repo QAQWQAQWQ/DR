@@ -1,3 +1,7 @@
+
+
+
+
 FRW_still_attack = {
 	enable = { always = yes }
 	
@@ -37,6 +41,21 @@ FRW_Provence_Commune= {
 	weekly_manpower = 100 
 	disable_strategic_redeployment = 1
 }
+
+FRW_Lorraine_guerrillas= {
+	enable = { always = yes }
+
+	icon = GFX_idea_Lorraine_guerrillas
+
+    resistance_damage_to_garrison=0.03
+	resistance_activity=0.03
+
+	
+}
+
+
+
+
 FRW_Artillery_design= {
 	enable = { always = yes }
 
@@ -57,13 +76,7 @@ FRW_Defend_Motherland= {
 	army_core_defence_factor = 0.05
 	army_morale_factor = 0.05
 }
-FRW_Defend_Motherland= {
-	enable = { always = yes }
 
-	army_core_attack_factor = 0.05
-	army_core_defence_factor = 0.05
-	army_morale_factor = 0.05
-}
 FRW_armf_modifier= {
 	enable = { always = yes }
 
@@ -85,6 +98,12 @@ FRW_focus38_modifier= {
 	tax_from_company_modifier=0.05
 	tax_from_consumption_modifier=0.05
 	government_investment_modifier=0.1
+}
+FRW_focus52_modifier= {
+	enable = { always = yes }
+	government_investment_modifier=0.1
+	core_government_organs_modifier=-0.03
+	not_core_government_organs_modifier=-0.03
 }
 JPN_Great_Earthquake= {
 	enable = { always = yes }

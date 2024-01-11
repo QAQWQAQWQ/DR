@@ -1,4 +1,9 @@
 spriteTypes = {	
+	
+	spriteType = {
+		name = "GFX_decisions_election_movement"
+		texturefile = "gfx/interface/decisions/decisions_election_movement.dds"
+	}
 	spriteType = {
 		name = "GFX_decisions_China_power_struggle"
 		texturefile = "gfx/interface/decisions/decisions_China_power_struggle.dds"
@@ -39,9 +44,15 @@ spriteTypes = {
 		name = "GFX_decisions_Literacy_level"
 		texturefile = "gfx/interface/decisions/decisions_Literacy_level.dds"
 	}
-
-
-
+	spriteType = {
+		name = "GFX_decisions_Domestic_construction"
+		texturefile = "gfx/interface/decisions/decisions_Domestic_construction.dds"
+	}
+	spriteType = {
+		name = "GFX_decisions_political_actions"
+		texturefile = "gfx/interface/decisions/decisions_political_actions.dds"
+	}
+	
 
 
 

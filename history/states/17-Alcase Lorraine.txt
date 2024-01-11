@@ -9,7 +9,8 @@ state={
 	resources={
 		steel=28 # was: 48
 	}
-
+	
+	
 	history={
 		owner = FRW
 		victory_points = {
@@ -24,6 +25,7 @@ state={
 			air_base = 5
 		}
 		add_core_of = FRW
+		add_dynamic_modifier = {modifier=FRW_Lorraine_guerrillas}
 	}
 
 	provinces={

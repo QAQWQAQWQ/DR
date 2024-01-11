@@ -1,3 +1,26 @@
+FRW_election_movement = {
+	icon = infiltration
+	
+	picture = GFX_decisions_election_movement
+
+	priority = 9
+	allowed = {
+		tag = FRW
+	}
+	visible = {
+		
+	}
+	scripted_gui = FRW_movement_election
+
+
+}     
+
+
+
+
+
+ 
+
 FRW_Destructive_movement = {
 	icon = infiltration
 	

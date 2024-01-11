@@ -273,7 +273,10 @@ spriteTypes = {
 		name = "GFX_train"
 		texturefile = "gfx/event/JS/train.dds"
 	}
-
+	spriteType = {
+		name = "GFX_IRL_1"
+		texturefile = "gfx/event/NEWS/IRL_1.dds"
+	}
 	spriteType = {
 		name = "GFX_Emperor_Meiji"
 		texturefile = "gfx/event/JPN/Emperor_Meiji.dds"

@@ -20,8 +20,14 @@ Literacy_level = {
 }   
 
       
-  
-   
+Domestic_construction = {
+	icon = decision_category_gre_paying_ifc_debt
+	picture = GFX_decisions_Domestic_construction
+	visible = {
+
+	}
+}   
+
 
   
  
@@ -79,11 +85,11 @@ prestigious_projects = {
 
 foreign_politics = {
 	icon = generic_political_actions
-}
+}  
 
 political_actions = {
 	icon = generic_political_actions
-
+	picture =GFX_decisions_political_actions
 	allowed = {
 		always = yes
 	}

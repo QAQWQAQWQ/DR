@@ -440,6 +440,33 @@ FRW_army_revolution = {
 
 
 
+FRW_election_movement = {
+	FRW_election_movement1 = {
+	icon = generic_ignite_civil_war
+	visible = {
+	}
+	available = {
+	}
+	days_remove = 1
+	cost = 0
+	allowed = {
+		tag = FRW
+	}
+	complete_effect = {    
+		                                                                     
+		}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no 
+        ai_will_do = {
+		factor = 1
+		}
+	
+}
+}
+
+
+
 
 
 
@@ -478,7 +505,7 @@ FRW_Maginot_Line_plan = {
 	is_good = no
         ai_will_do = {
 		factor = 1
-		}
+		}                       
 	
 }
 FRW_Maginot_Line_plan2 = {
@@ -488,7 +515,7 @@ FRW_Maginot_Line_plan2 = {
 			state = 34
 		}
 	}
-	visible = {
+	visible = {                                                                                                              
 	}
 	available = {
 		34={

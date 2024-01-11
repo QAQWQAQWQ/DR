@@ -6703,4 +6703,10 @@ Chairman_Cheka = {
 		stability_factor = 0.1
 		drift_defence_factor = 0.15
 	}
+	Tiger_France = {
+		random = no
+		political_power_gain = 0.05
+		war_stability_factor = 0.05
+		industrial_capacity_factory = 0.05
+	}
 }

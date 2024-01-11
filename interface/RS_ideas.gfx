@@ -7,10 +7,13 @@ spriteTypes = {
 	    name = "GFX_idea_Immigration_policy"
 	    texturefile = "gfx/interface/ideas/Immigration_policy.dds"
     }
-	
 	spriteType = {
 	    name = "GFX_idea_Provence_Commune"
 	    texturefile = "gfx/interface/ideas/Provence_Commune.dds"
+    }
+	spriteType = {
+	    name = "GFX_idea_Lorraine_guerrillas"
+	    texturefile = "gfx/interface/ideas/Lorraine_guerrillas.dds"
     }
 	spriteType = {
 	    name = "GFX_idea_Inefficient_industry"
@@ -544,6 +547,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_No_investment"
 		texturefile = "gfx/interface/ideas/idea_No_investment.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_revanchism"
+		texturefile = "gfx/interface/ideas/revanchism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Entrepreneurial_spirit"
+		texturefile = "gfx/interface/ideas/Entrepreneurial_spirit.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_Chaotic_socialism"
@@ -1081,13 +1092,134 @@ spriteTypes = {
 	}
 	
 	
+ 
+ 
 
 
-
-
-
-
-
+	spriteType = {
+		name = "GFX_FRW_Wallonia_needle"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_Wallonia.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_FRW_Calais_needle"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_Calais.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_FRW_Picardy_needle" 
+		texturefile = "gfx/interface/GUI/frw_state/FRW_Picardy.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_FRW_Champagne_needle"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_Champagne.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_FRW_Comte_needle"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_Comte.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_FRW_Normandy_needle"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_Normandy.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_FRW_Burgundy_needle"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_Burgundy.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_FRW_De_France_needle"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_De_France.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_FRW_Central_Region_needle"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_Central_Region.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_FRW_Brittany_needle"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_Brittany.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_FRW_Loire_needle"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_Loire.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_FRW_Poitou_needle"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_Poitou.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_FRW_Aquitaine_needle"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_Aquitaine.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_FRW_Western_Pyrenees_needle"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_Western_Pyrenees.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_FRW_South_Central_Region_needle"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_South_Central_Region.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_FRW_Limousin_needle"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_Limousin.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_FRW_South_Pyrenees_needle"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_South_Pyrenees.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_FRW_Languedoc_needle"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_Languedoc.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_FRW_Provence_needle"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_Provence.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_FRW_Val_needle"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_Val.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_FRW_Alps_needle"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_Alps.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_FRW_Rhone_needle"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_Rhone.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_FRW_Auvergne_needle"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_Auvergne.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_FRW_state_back"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_state_back.dds"
+	}
+	spriteType = {
+		name = "GFX_FRW_flag_back"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_flag_back.dds"
+	}
+	
 }
 
 
@@ -1133,3 +1265,6 @@ spriteTypes = {
         horizontal = yes
     }
 }
+
+
+

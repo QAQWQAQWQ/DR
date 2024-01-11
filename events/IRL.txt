@@ -1,0 +1,48 @@
+﻿###########################
+# IRL Events
+###########################
+
+add_namespace = IRL
+news_event = {
+	id = IRL.1
+	title = IRL.1.t
+	desc = IRL.1.d
+	picture = GFX_IRL_1
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = IRL.1.a
+			IRL= { 
+				set_politics = {
+					ruling_party = authoritarian
+				}
+				set_cosmetic_tag = IRL_authoritarian_tag
+	    }
+		
+		113={
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 1
+			}
+		}
+		119={
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 1
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 1
+			}
+		}
+	}
+	}
+	

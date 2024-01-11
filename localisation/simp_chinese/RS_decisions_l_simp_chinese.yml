@@ -1,5 +1,58 @@
 ﻿l_simp_chinese:
 
+
+
+
+
+
+
+ FRW_movement_election_title:0 "[FRW.getflag]目前法国大选形式：\n\n 支持可能派的选区有：[?FRW_Liberals_needle_VAR]\n\n 支持改良派的选区有： \n\n     支持布朗基派的选区有：\n\n支持盖得派的选区有："
+ FRW_election_movement:0 "法国大选"
+ FRW_election_movement_desc:0"\n\n\n\n\n\n\n\n五年一届的法国大选正式开始，我们可以通过提升相关意识形态支持度来加强党派在各地区投射的力量，以此征求更多的选票来支持主席的选举。\n"
+
+
+
+
+
+ Ideologically_promoted:0 "鼓吹意识形态"
+ Ideologically_promoted_desc:0"任何一种极端的意识形态会严重影响我们的国家，只有我们将自己优秀的一面展示给民众才能缓解问题。"
+
+ Investment_research:0 "增加科研经费"
+ Investment_research_desc:0 "科学的进步推动着社会进步，我们理应加强对科技的投资。"
+
+ Investment_Arsenals:0 "投资军工"
+ Investment_Arsenals_desc:0 ""
+
+ Investment_Civilian_factories:0 "投资民工"
+ Investment_Civilian_factories_desc:0 ""
+
+ Infrastructure_investment:0 "投资基建"
+ Infrastructure_investment_desc:0 ""
+
+ Support_immigrants_abroad:0 "开放移民政策"
+ Support_immigrants_abroad_desc:0 ""
+
+ Investment_military_consultant:0 "聘请军事顾问"
+ Investment_military_consultant_desc:0 ""
+
+ hit_corrupt:0 "打击腐败"
+ hit_corrupt_desc:0 ""
+
+
+
+
+political_actions:0 "政治行动"
+political_actions_desc:0 "\n\n\n\n\n\n\n\n政治是以经济为基础的上层建筑，是经济的集中表现，政治行动决定了我们的立场。"
+
+
+
+
+
+
+
+
+
+
 League_balance:0 "国际联盟"
 League_mid_range:0 "尚未投票"
 League_left_side:0 "否决决议"
@@ -41,7 +94,8 @@ Literacy_level_desc:0 "\n\n\n\n\n\n\n\n教育是国家的未来，民族的未�
 New_teaching_materials:0 "翻新教科书"
 Recruiting_teachers:0 "招收教师"
 
-
+Domestic_construction:0 "国内建设"
+Domestic_construction_desc:0 "\n\n\n\n\n\n\n\n我们可以通过国库储备来投资一些企业，这不仅能刺激我们的经济，还能更好的建设我们的国家。"
 
 Irish_crisis:0 "爱尔兰危机"
 Irish_crisis_desc:0 "\n\n\n\n\n\n\n\n武装的爱尔兰共和派一直谋求以武力发动起义，以此从英国获得独立。据我们的线人得知，爱尔兰的叛乱力量由法国方面资助，因此我们拥有绝对的理由将这群分裂帝国的叛军消灭\n当前局势：\n爱尔兰分离情绪：§Y[?Separation_emotions]§!\n皇家爱尔兰警队数量为§Y[?Black_Brown_Troops]§!"

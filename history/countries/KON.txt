@@ -8,7 +8,6 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	gw_artillery = 1
-	early_fighter = 1
 	fuel_silos = 1
 }
 
@@ -56,11 +55,7 @@ set_politics = {
 add_ideas={
 #law
 low_industrialization 
-Private_economy
 }
 set_popularities = {
-	democratic = 5
-	national_populist = 1
-	monarchy = 89
-	communism = 5
+	monarchy = 100
 }

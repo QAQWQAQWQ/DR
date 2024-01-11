@@ -460,11 +460,11 @@ instantTextboxType = {
 			
 			containerWindowType = {
 				name = "national_spirit_container"
-				position = { x = 98 y = 16 }
+				position = { x = 105 y = 16 }
 				size = { width = 370 height = 70 }
 
 				verticalScrollbar = "right_vertical_slider" 
-			                margin = { top = 3 left = 10 bottom = 5 right = 10}
+			                margin = { top = 3 left = -5 bottom = 0 right = 10}
 			   
 				
 				background = {

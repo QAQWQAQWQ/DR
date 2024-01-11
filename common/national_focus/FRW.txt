@@ -26,6 +26,7 @@ focus_tree = {
 		x = 37
 		y = 0 
 completion_reward = {
+	
 	unlock_decision_category_tooltip  = FRW_army_revolution
 }
 	}
@@ -65,7 +66,7 @@ completion_reward = {
 		x = 14
 		y = 2
 completion_reward = {
-	add_ideas = FRW_Elway_Thought
+	country_event = FRW.32
 }
 	}
 	focus = {
@@ -85,7 +86,6 @@ completion_reward = {
 			
 			custom_effect_tooltip = available_political_advisor
 	        show_ideas_tooltip = FRW_Edouard_Daladier_H
-			country_event = {id=FRW.28 days=2}
 		}
 	}
 	focus = {
@@ -300,8 +300,11 @@ completion_reward={
 		x = 28
 		y = 1
 completion_reward = {
-	custom_effect_tooltip = available_political_advisor
-	        show_ideas_tooltip = FRW_Aristide_Briand_P
+	add_trait = {
+		character = FRW_Jean_Jaures
+		ideology = democratic_socialism_type
+		trait = SWI_socialist_pacifist
+   }
 }
 	}
 	focus = {
@@ -525,9 +528,9 @@ completion_reward = {
 		y = 4
 completion_reward = {
 	add_trait = {
-		character = FRW_Jean_Jaures 
-		ideology = democratic_socialism_type
-		trait = armaments_organizer
+		character = FRW_Georges_Clemenceau 
+		ideology = Reform_socialism_type
+		trait = Tiger_France
 	}
 	
 	
@@ -927,4 +930,604 @@ completion_reward = {
 	custom_effect_tooltip = FRW_focus43_train
 }
 	}
+
+
+
+
+
+
+
+
+	focus = {
+		id = FRW_focus47
+		icon = GFX_goal_FRW_focus47
+		cost = 7.00
+		prerequisite = {
+			 
+		}
+		x = 14
+		y = 9
+    completion_reward = { 
+remove_ideas = FRW_Chaotic_socialism
+    }
+	}
+	focus = {
+		id = FRW_focus48
+		icon = GFX_goal_FRW_focus48
+		cost = 7.00
+		prerequisite = {
+			focus=FRW_focus47
+		}
+		x = 15
+		y = 10
+    completion_reward = {
+		country_event = FRW.41
+    }
+	}
+	focus = {
+		id = FRW_focus49
+		icon = GFX_goal_FRW_focus49
+		cost = 7.00
+		prerequisite = {
+			focus=FRW_focus48
+		}
+		x = 15
+		y = 11
+    completion_reward = {
+		add_war_support = 0.1
+		add_ideas = FRW_revanchism
+    }
+	} 
+	focus = {
+		id = FRW_focus50
+		icon = GFX_goal_FRW_focus50
+		cost = 7.00
+		prerequisite = {
+			focus=FRW_focus47
+		}
+		x = 12
+		y = 10
+    completion_reward = { 
+		add_political_power = -50
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.1
+		}
+    }
+	}
+	focus = {
+		id = FRW_focus51
+		icon = GFX_goal_FRW_focus51
+		cost = 7.00
+		prerequisite = {
+			focus=FRW_focus47
+		}
+		x = 18
+		y = 10
+    completion_reward = {
+		add_trait = {
+			character = FRW_Jean_Jaures 
+			ideology = Social_liberalism_type
+			trait = Tiger_France
+		}
+    }
+	} 
+	focus = {
+		id = FRW_focus52
+		icon = GFX_goal_FRW_focus52
+		cost = 7.00
+		prerequisite = {
+			focus=FRW_focus51
+		}
+		x = 18
+		y = 11
+    completion_reward = {
+		add_dynamic_modifier = {
+			modifier = FRW_focus52_modifier
+		}
+    }
+	}
+	focus = {
+		id = FRW_focus53
+		icon = GFX_goal_FRW_focus53
+		cost = 7.00
+		prerequisite = {
+			focus=FRW_focus50
+		}
+		x = 12
+		y = 11
+    completion_reward = {
+		country_event = FRW.40
+    }  
+	}
+	focus = {
+		id = FRW_focus54
+		icon = GFX_goal_FRW_focus54
+		cost = 7.00
+		prerequisite = {
+			focus=FRW_focus53
+		}
+		x = 11
+		y = 12
+    completion_reward = { 
+    }
+	}
+	focus = {
+		id = FRW_focus55
+		icon = GFX_goal_FRW_focus55
+		cost = 7.00
+		prerequisite = {
+			focus=FRW_focus49
+		}
+		available = {
+			NPL={
+				exists = yes
+			}
+			has_completed_focus = FRW_focus54
+		}
+		x = 13
+		y = 12
+    completion_reward = {
+		create_wargoal = {
+			type = liberate_wargoal
+			target = NPL
+		}
+    }
+	} 
+	focus = {
+		id = FRW_focus56
+		icon = GFX_goal_FRW_focus56
+		cost = 7.00
+		prerequisite = {
+			focus=FRW_focus49
+		}
+		available = {
+			AGC={
+					exists = yes
+			}
+		}
+		x = 17
+		y = 12
+    completion_reward = {
+		create_wargoal = {
+			type = take_state_focus
+			target = AGC
+			generator = { 950 28 }
+			expire = 0
+		}
+    }
+	} 
+	focus = { 
+		id = FRW_focus57
+		icon = GFX_goal_FRW_focus57
+		cost = 7.00
+		prerequisite = {
+			focus=FRW_focus52
+		}
+		prerequisite = {
+			focus=FRW_focus61
+		}
+		x = 19
+		y = 12
+    completion_reward = {
+		swap_ideas = {
+			remove_idea = Mixed_economy
+			add_idea = Market_economy
+		}
+    }
+	}
+	focus = { 
+		id = FRW_focus58
+		icon = GFX_goal_FRW_focus58
+		cost = 7.00
+		prerequisite = {
+			focus=FRW_focus47
+		}
+		
+		x = 9
+		y = 10
+    completion_reward = {
+		custom_effect_tooltip = FRW_focus58_tool
+    } 
+	}
+	focus = { 
+		id = FRW_focus59
+		icon = GFX_goal_FRW_focus59
+		cost = 7.00
+		prerequisite = {
+			focus=FRW_focus58
+		}
+		x = 9
+		y = 11
+    completion_reward = {
+		add_opinion_modifier = {
+			target = ENL
+			modifier = Show_goodwill
+		}
+    }  
+	}
+	focus = { 
+		id = FRW_focus60
+		icon = GFX_goal_FRW_focus60
+		cost = 7.00
+		prerequisite = {
+			focus=FRW_focus59
+		}
+		x = 9
+		y = 12 
+    completion_reward = {
+		hidden_effect = {
+			FRW={
+			give_market_access = ENL
+		}
+		}
+		
+		diplomatic_relation = {
+			country = ENL
+			relation = docking_rights
+			active = yes
+		}
+		diplomatic_relation = {
+			country = ENL
+			relation = non_aggression_pact
+			active = yes
+		}
+		diplomatic_relation = {
+			country = ENL
+			relation = guarantee
+			active = yes
+		}
+    }
+	}
+	focus = { 
+		id = FRW_focus61
+		icon = GFX_goal_FRW_focus61
+		cost = 7.00
+		prerequisite = {
+			focus=FRW_focus47
+		}
+		x = 20
+		y = 11
+    completion_reward = {
+		swap_ideas = {
+			remove_idea = Local_trade_unions
+			add_idea = Trade_union_neutrality
+		}
+		add_ideas = FRW_Entrepreneurial_spirit
+    }
+	}
+	focus = { 
+		id = FRW_focus62
+		icon = GFX_goal_FRW_focus62
+		cost = 7.00
+		prerequisite = {
+			
+		}
+		x = 31
+		y = 8
+    completion_reward = {
+		remove_ideas = FRW_Chaotic_socialism
+    }
+	}
+	focus = { 
+		id = FRW_focus63
+		icon = GFX_goal_FRW_focus63
+		cost = 7.00
+		prerequisite = {
+			focus=FRW_focus62
+		}
+		x = 31 
+		y = 9
+    completion_reward = {
+		random_core_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			
+		}
+    }
+	}
+	focus = { 
+		id = FRW_focus64
+		icon = GFX_goal_FRW_focus64
+		cost = 7.00
+		prerequisite = {
+			focus=FRW_focus63
+		}
+		x = 29 
+		y = 10
+    completion_reward = {
+		custom_effect_tooltip = available_political_advisor
+	    show_ideas_tooltip = FRW_Benoit_Frachon_P
+    } 
+	}
+	focus = { 
+		id = FRW_focus65
+		icon = GFX_goal_FRW_focus65
+		cost = 7.00
+		prerequisite = {
+			focus=FRW_focus63
+		}
+		x = 33
+		y = 10
+    completion_reward = {
+    }
+	}
+	focus = { 
+		id = FRW_focus66
+		icon = GFX_goal_FRW_focus66
+		cost = 7.00
+		prerequisite = {
+			focus=FRW_focus64
+		} 
+		x = 29
+		y = 11
+    completion_reward = {
+		add_stability = 0.02
+			random_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_popularity = {
+				ideology = democratic_socialism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+    }
+	
+	}
+	focus = { 
+		id = FRW_focus67
+		icon = GFX_goal_FRW_focus67
+		cost = 7.00
+		prerequisite = {
+			focus=FRW_focus65
+		}
+		x = 33
+		y = 11
+    completion_reward = {
+		random_core_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+    } 
+}
+    focus = { 
+		id = FRW_focus68
+		icon = GFX_goal_FRW_focus68
+		cost = 7.00
+		prerequisite = {
+			focus=FRW_focus63
+		}
+		x = 35
+		y = 11
+    completion_reward = {
+		set_rule = {
+			can_guarantee_other_ideologies=no
+			can_force_government=no
+			can_puppet=no
+			can_send_volunteers=no
+			
+		}
+    }
+}
+focus = { 
+	id = FRW_focus69
+	icon = GFX_goal_FRW_focus69
+	cost = 7.00
+	prerequisite = {
+		focus=FRW_focus63
+	}
+	x = 31 
+	y = 11
+completion_reward = {
+}
+}
+focus = { 
+	id = FRW_focus70
+	icon = GFX_goal_FRW_focus70
+	cost = 7.00
+	prerequisite = {
+		focus=FRW_focus63
+	}
+	x = 27
+	y = 11
+completion_reward = {
+	random_core_state = {	
+		limit =	{
+			is_fully_controlled_by = ROOT
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+	add_stability = 0.05
+}
+}
+focus = { 
+	id = FRW_focus71
+	icon = GFX_goal_FRW_focus71
+	cost = 7.00
+	prerequisite = {
+		focus=FRW_focus69
+	}
+	x = 29
+	y = 12
+completion_reward = {
+	add_popularity = {
+		ideology = democratic_socialism
+		popularity = 0.01
+	}
+	add_popularity = {
+		ideology = communism
+		popularity = 0.01
+	}
+	add_stability = 0.03
+}
+}
+focus = {  
+	id = FRW_focus72
+	icon = GFX_goal_FRW_focus72
+	cost = 7.00
+	prerequisite = {
+		focus=FRW_focus69
+	}
+	x = 31
+	y = 12 
+completion_reward = {
+	24 = {
+		add_dynamic_modifier = { modifier = SWE_hygenic_housing_output_bonus }
+		add_dynamic_modifier = { modifier = SWE_hygenic_housing_resource_bonus }
+	}
+	random_core_state = {
+		prioritize = { 24 }
+		limit = {
+			is_fully_controlled_by = ROOT
+		}
+		add_extra_state_shared_building_slots = 2
+		add_building_construction = {
+			type = industrial_complex
+			level = 2
+			instant_build = yes
+		}
+	}
+	add_popularity = {
+		ideology = democratic_socialism
+		popularity = 0.05
+	}
+	add_popularity = {
+		ideology = communism
+		popularity = 0.05
+	}
+	add_stability = 0.03
+}
+}
+focus = { 
+	id = FRW_focus73
+	icon = GFX_goal_FRW_focus73
+	cost = 7.00
+	prerequisite = {
+		focus=FRW_focus69
+	}
+	x = 33
+	y = 12
+completion_reward = {
+	add_research_slot = 1
+}
+}
+focus = {  
+	id = FRW_focus74
+	icon = GFX_goal_FRW_focus74
+	cost = 7.00
+	prerequisite = {
+		focus=FRW_focus71
+	}
+	prerequisite = {
+		focus=FRW_focus72
+	}
+	prerequisite = {
+		focus=FRW_focus73
+	}
+	x = 31
+	y = 13
+completion_reward = {
+	add_political_power = 200
+}
+}
+focus = { 
+	id = FRW_focus75
+	icon = GFX_goal_FRW_focus75
+	cost = 7.00
+	prerequisite = {
+		focus=FRW_focus71
+	}
+	prerequisite = {
+		focus=FRW_focus72
+	}
+	prerequisite = {
+		focus=FRW_focus73
+	}
+	x = 28
+	y = 13
+completion_reward = {
+}
+}
+focus = { 
+	id = FRW_focus76
+	icon = GFX_goal_FRW_focus76
+	cost = 7.00
+	prerequisite = {
+		focus=FRW_focus71
+	}
+	prerequisite = {
+		focus=FRW_focus72
+	}
+	prerequisite = {
+		focus=FRW_focus73
+	}
+	x = 34
+	y = 13
+completion_reward = { 
+}
+}
+focus = { 
+	id = FRW_focus77
+	icon = GFX_goal_FRW_focus77
+	cost = 7.00
+	prerequisite = {
+		focus=FRW_focus75
+	}
+	prerequisite = { 
+		focus=FRW_focus74
+	}
+	prerequisite = {
+		focus=FRW_focus76
+	}
+	prerequisite = { 
+		focus=FRW_focus70
+	}
+	prerequisite = {
+		focus=FRW_focus68
+	}
+	x = 31
+	y = 14
+completion_reward = {
+}
+}
 }
