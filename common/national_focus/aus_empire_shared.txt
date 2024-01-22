@@ -1,0 +1,14 @@
+shared_focus = {
+	id = empire_modernization_of_the_imperial_army
+	dynamic = yes 
+	icon = GFX_goal_generic_army_doctrines
+	x = 40
+	y = 0
+	cost = 5
+	completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		army_experience = 25
+		add_command_power = 25		
+	}
+}
