@@ -8,7 +8,7 @@
  national_populist_desc:0 "极权政体"
  communism_desc:0 "集权政体"
  democratic_desc:0 "民主政体"
- monarchy:0 "绝对君主制"
+ monarchy:0 "君主专制"
  monarchy_noun:0 "君主制"
  monarchy_desc:0 "集权政体"
  conservatism:0 "保守主义"
@@ -37,7 +37,7 @@
  neutrality:0 "保守主义"
  neutrality_noun:0 "保守主义"
  neutrality_desc:0 "保守政体"
- royalists:0 "绝对君主制"
+ royalists:0 "君主专制"
  royalists_desc:0 "世袭制的君主政体"
  despotism:0 "专制政治"
  despotism_desc:0 "专制政治是一种个人拥有绝对权力的政府形式。"
@@ -57,6 +57,7 @@
  authoritarian_desc:0 "威权政体"
  authoritarian_type_desc:0 "威权主义要求人民服从其权威的原则，保留部分的个人的思想和行动自由。威权主义的权力掌握在单一领袖或一小撮精英手中。公民很少能自由选举来替换领导人。"
  Anarchopedia:0 "无政府主义"
+ Anarchopedia_noun:0 "无政府主义"
  Anarchopedia_desc:0 "无政府主义"
  Anarchopedia_type_desc:0 "安那其主义，是一系列政治哲学思想。其目的在于提升个人自由及废除政府当局与所有的政府管理机构。无政府主义力求废除政府形式，提倡个体之间的自助关系，关注个体的自由和平等。"
  Islamic:0 "伊斯兰主义"
@@ -178,12 +179,8 @@
  FRW_Social_liberalism_party:0 "社会党-可能派"
  FRW_Social_liberalism_party_long:0 "社会党-可能派"
 
-
-
-
-
-
-
+ FRW_radical_socialist:0 "法国共产党"
+ FRW_radical_socialist_long:0 "法国共产党"
 
  FRW_democratic_socialism_party:0 "社会党-民主派"
  FRW_democratic_socialism_party_long:0 "社会党-民主派"

@@ -758,3 +758,32 @@ country_event = {
 		add_threat = 15
 		}
 }
+country_event = {
+	id = FRW.42
+	title = FRW.42.t
+	desc = FRW.42.d
+	#picture = GFX_FRW_31
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.42.a
+		}
+}
+country_event = {
+	id = FRW.43
+	title = FRW.43.t
+	desc = FRW.43.d
+	#picture = GFX_FRW_31
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.43.a
+		add_to_variable = {
+			var = capital_reserves
+			value = 0.25
+			tooltip = add_to_variable_FRW_43
+		}
+		}
+}

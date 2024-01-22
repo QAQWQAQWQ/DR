@@ -660,16 +660,33 @@ has_completed_focus = FRW_focus14
 			}
 		}
 		advisor={
-			slot = political_advisor
-			idea_token = FRW_Monmousseau_political_advisor
+			slot = head_of_government
+			idea_token = FRW_Monmousseau_H
 			allowed = {
 				original_tag = FRW
 			}
 			available = {
-				has_completed_focus = FRW_Second_Revolution
+				has_completed_focus = FRW_focus88
 			  }
 			traits = {
 				stalin_servant_of_lenin
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRW_Monmousseau_P
+			allowed = {
+				original_tag = FRW
+			}
+			available = {
+				has_completed_focus = FRW_focus88
+			  }
+			traits = {
+				Minister_Affairs
 			}
 			cost = 50
 			ai_will_do = {

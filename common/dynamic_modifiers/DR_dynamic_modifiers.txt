@@ -33,6 +33,19 @@ FRW_peace= {
 	enemy_declare_war_tension = 0.5
 	enemy_declare_war_tension = 0.5
 }
+
+FRW_focus71_modifier= {
+	enable = { always = yes }
+	
+	research_speed_factor=0.05
+}
+FRW_focus75_modifier= {
+	enable = { always = yes }
+	army_org_regain=0.05
+	winter_attrition_factor=-0.05
+	heat_attrition_factor=-0.05
+	attrition_for_controller=-0.05
+}
 FRW_Provence_Commune= {
 	enable = { always = yes }
 
@@ -41,6 +54,20 @@ FRW_Provence_Commune= {
 	weekly_manpower = 100 
 	disable_strategic_redeployment = 1
 }
+
+
+
+FRW_Brittany_National_autonomy= {
+	enable = { always = yes }
+
+	icon = GFX_idea_Brittany_National_autonomy
+
+	local_resources=0.04
+	state_production_speed_buildings_factor=0.02
+}
+
+
+
 
 FRW_Lorraine_guerrillas= {
 	enable = { always = yes }

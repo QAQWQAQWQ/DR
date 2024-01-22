@@ -19,7 +19,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				stability_weekly = -0.01
+				stability_factor = -0.01
 				conscription_factor = 0.05
 				non_core_manpower = 0.01
 			}
@@ -42,7 +42,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				stability_weekly = 0.01
+				stability_factor = 0.01
 				conscription_factor = 0.08
 				non_core_manpower = 0.05
 			}
@@ -84,7 +84,7 @@ ideas = {
 			removal_cost = -1
 			cancel_if_invalid = no
 			modifier = {
-				stability_weekly = -0.01
+				stability_factor = -0.01
 				conscription_factor = -0.15
 				consumer_goods_factor = 0.05
 				}

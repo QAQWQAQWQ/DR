@@ -63,14 +63,15 @@ guiTypes = {
 			name = "icon"
 			quadTextureSprite ="GFX_idea_unknown"
 			orientation = "CENTER"
-			position = { x = -20 y = -25 }
-			scale = 0.55
+scale = 0.95
+			position = { x = -12 y = 2 }
+			centerPosition = yes
 		}
 	}
 
 	containerWindowType = {
 		name = "spirit_modifier_entry"
-		size = { width=60 height=66 }
+		size = { width=60 height=66 } 
 		clipping = no
 		
 		iconType = {

@@ -1,0 +1,17 @@
+characters={
+	MEK_Venustiano_Carranza={
+		name=MEK_Venustiano_Carranza
+		portraits={
+			civilian={
+				large="gfx/leaders/MEK/Portrait_Venustiano_Carranza.tga"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			desc = MEK_Venustiano_Carranza_desc
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

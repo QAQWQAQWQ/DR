@@ -2,7 +2,7 @@ on_actions = {
 
 	on_startup= {
 		effect = {
-		every_country = {
+	 	every_country = {
 			hidden_effect = {
 				BHL = {
 					add_ai_strategy = {
@@ -13,8 +13,8 @@ on_actions = {
 				}
 			}
 			country_event = {id = WorldNews.1 }
-	}
-	}
+	 }
+	 }
 }
 on_startup= {
 	effect = {
@@ -24,10 +24,137 @@ on_startup= {
 		DMT={leave_faction = yes}
 		KOH={leave_faction = yes}
 
+ }
+}
+
+####
+on_daily= {
+	effect = {
+			if={
+				limit={
+					check_variable = { Literacy < 20 }
+				}
+		
+		add_ideas = completely_illiterate
+		}
+		if={
+			
+				limit={
+					AND={
+						check_variable = { Literacy > 20 }
+					    check_variable = { Literacy < 50 }
+					}
+					
+				}
+		
+		add_ideas = elementary_school
+		}
+		if={
+			
+				limit={
+					AND={
+						check_variable = { Literacy > 50 }
+					check_variable = { Literacy < 70 }
+					}
+					
+				}
+		
+		add_ideas = secondary_school
+		}
+		if={
+			
+				limit={
+					AND={
+						check_variable = { Literacy > 70 }
+					check_variable = { Literacy < 80 }
+					}
+					
+				}
+		add_ideas = university_level
+		}
+		if={
+				limit={
+					check_variable = { Literacy > 90 }
+				}
+		add_ideas = compulsory_education
+		}
+ }
+}
+
+on_weekly= {
+	effect = {
+		if={
+			limit={
+			AND={
+			check_variable = { Literacy < 20 }
+			}
+		}
+		add_ideas=completely_illiterate
+		}
+		if={
+			limit={
+			AND={
+			check_variable = { Literacy > 20 }
+			check_variable = { Literacy < 50 }
+			}
+		}
+		swap_ideas = {
+			remove_idea = completely_illiterate
+			add_idea = elementary_school
+		}
+		}
+		if={
+			limit={
+			AND={
+			check_variable = { Literacy > 50 }
+			check_variable = { Literacy < 70 }
+			}
+		}
+		swap_ideas = {
+			remove_idea = elementary_school
+			add_idea = secondary_school
+		}
+		}
+		if={
+			limit={
+			AND={
+			check_variable = { Literacy > 70 }
+			check_variable = { Literacy < 80 }
+			}
+		}
+		swap_ideas = {
+			remove_idea = secondary_school
+			add_idea = university_level
+		}
+		}
+		if={
+			limit={
+			AND={
+			check_variable = { Literacy > 90 }
+			}
+		}
+		swap_ideas = {
+			remove_idea = university_level
+			add_idea = compulsory_education
+		}
+		}
 }
 }
 
-	on_daily = {
+####
+
+
+
+
+
+
+
+
+
+
+
+
+on_daily = {
 		effect = {
 		  if = {
 			every_unit_leader = {
@@ -43,41 +170,20 @@ on_startup= {
 			}
 			remove_unit_leader_trait = Lieutenant_general
 			remove_unit_leader_trait = skilled_staffer
-	}
-	every_unit_leader = {
-		limit = {	
+	        }
+	        every_unit_leader = {
+		    limit = {	
 			is_field_marshal = yes
-	}
-	remove_unit_leader_trait = expert_delegator
-	remove_unit_leader_trait = Lieutenant_general
-	remove_unit_leader_trait = skilled_staffer
-}
+	      }
+	    remove_unit_leader_trait = expert_delegator
+	  remove_unit_leader_trait = Lieutenant_general
+	    remove_unit_leader_trait = skilled_staffer
+      }
 	
- }
+     }
+     }
 }
-}
-on_monthly = {
-	effect = {
-		every_country = {
-					limit = {	
-						check_variable = { masses_popularity < -25 }
-						check_variable = { assets_popularity < -25 }
-						check_variable = { noble_popularity < -25 }
-						check_variable = { elite_popularity < -25 }
-				}
-				add_stability = -0.0001
-		}
-		every_country = {
-			limit = {	
-				check_variable = { masses_popularity > 50 }
-				check_variable = { assets_popularity > 30 }
-				check_variable = { noble_popularity > 20 }
-				check_variable = { elite_popularity > 10 }
-		}
-		add_stability = 0.0001
-}
-}
-}
+
 on_monthly = {
 	effect = {
 		every_country = {
@@ -91,19 +197,12 @@ on_monthly = {
 				check_variable = { inflation < 10 }
 		}
 		add_stability = 0.001
+ }
+ }
 }
-}
-}
 
 
-
-
-
-
-
-
-
-
+####俄罗斯
 on_daily = {
 	effect = {
 		
@@ -126,11 +225,59 @@ on_daily = {
 			set_variable = { SHW_Imperial_Russian_Army_paranoiameter = 3 }
 		}
 
-}
+ }
 }
 
-####
+##########法国大选
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					AND={
+						FRW={
+						check_variable = {
+						var = FRW_Wallonia_needle_VAR
+						value = 2
+					}
+					has_country_flag = FRW_Wallonia_flag
+					}
+					}
+					
+				}
+				FRW={
+				add_to_variable = {
+				var = FRW_Liberals_needle_VAR
+				value = 1
+			}
+			clr_country_flag = FRW_Wallonia_flag
+				}
+			
+		}
+        if = {
+			limit = {
+				AND={
+					FRW={
+					check_variable = {
+					var = FRW_Calais_needle_VAR
+					value = 2
+				}
+				has_country_flag = FRW_Calais_flag
+				}
+				}
+				
+			}
+			FRW={
+			add_to_variable = {
+			var = FRW_Liberals_needle_VAR
+			value = 1
+		}
+		clr_country_flag = FRW_Calais_flag
+			}
+     }
+     }
 
+}
+##########大选
 on_startup= {
 	effect = {
 		every_state = {
@@ -158,31 +305,31 @@ on_startup= {
 				limit = {
 					has_state_category =rural
 				}
-				set_variable = { Literate_population = 160 }
+				set_variable = { Literate_population = 460 }
 			}
 			if={
 				limit = {
 					has_state_category =town
 				}
-				set_variable = { Literate_population = 320 }
+				set_variable = { Literate_population = 620 }
 			}
 			if={
 				limit = {
 					has_state_category = large_town
 				}
-				set_variable = { Literate_population = 400 }
+				set_variable = { Literate_population = 700 }
 			}
 			if={
 				limit = {
 					has_state_category = city
 				}
-				set_variable = { Literate_population = 540 }
+				set_variable = { Literate_population = 840 }
 			}
 			if={
 				limit = {
 					has_state_category = large_city
 				}
-				set_variable = { Literate_population = 720 }
+				set_variable = { Literate_population = 920 }
 			}
 			if={
 				limit = {
@@ -196,9 +343,9 @@ on_startup= {
 				}
 				set_variable = { Literate_population = 2400 }
 			}
-			# set_variable = { Literate_infra = infrastructure_level }
-			# multiply_variable = { Literate_infra = 30 }
-			# add_to_variable = { Literate_population = Literate_infra}
+			 set_variable = { Literate_infra = infrastructure_level }
+			 multiply_variable = { Literate_infra = 70 }
+			 add_to_variable = { Literate_population = Literate_infra}
 			if = {
 				limit = {
 					is_on_continent = europe
@@ -245,7 +392,7 @@ on_startup= {
 						is_core_of = JPN
 					}
 				}
-				multiply_variable = { Literate_population = 0.05 }
+				multiply_variable = { Literate_population = 0.1 }
 			}
 			if = {
 				limit = {
@@ -346,23 +493,23 @@ on_startup= {
 		}
 		every_country={
 			set_variable = { Literacy_power = 0}
-			set_variable = { all_pop = 0}
+			set_variable = { all_pop = 1}
 			every_controlled_state = {
-				#if = {
-					#limit = {
-					#	is_core_of = PREV
-					#}
+				if = {
+					limit = {
+						is_core_of = PREV
+					}
 					add_to_variable = { var = PREV.all_pop value = state_population_k } 
 					add_to_variable = { var = PREV.Literacy_power value = Literate_population } 
-				#}
+				}
 			}
 			set_variable = { Literacy = Literacy_power }
 			divide_variable = { Literacy = all_pop }
-			multiply_variable = { Literacy = 100 }
-		}
+			multiply_variable = { Literacy = 85 }
+		  }
 
 
-	}
+	      }
 	}
 	on_monthly = {
 		effect = {
@@ -370,13 +517,13 @@ on_startup= {
 			set_variable = { Literacy_power = 0}
 			set_variable = { all_pop = 0}
 			every_controlled_state = {
-				#if = {
-					#limit = {
-					#	is_core_of = PREV
-					#}
+				if = {
+					limit = {
+						is_core_of = PREV
+					}
 					add_to_variable = { var = PREV.all_pop value = state_population_k } 
 					add_to_variable = { var = PREV.Literacy_power value = Literate_population } 
-				#}
+				}
 			}
 			set_variable = { Literacy = Literacy_power }
 			divide_variable = { Literacy = all_pop }
@@ -400,95 +547,6 @@ on_startup= {
 			}
 				}
 		}
-		}
-##########法国大选
-	on_daily = {
-		effect = {
-			if = {
-				limit = {
-					AND={
-						FRW={
-						check_variable = {
-						var = FRW_Wallonia_needle_VAR
-						value = 2
-					}
-					has_country_flag = FRW_Wallonia_flag
-					}
-					}
-					
-				}
-				FRW={
-				add_to_variable = {
-				var = FRW_Liberals_needle_VAR
-				value = 1
-			}
-			clr_country_flag = FRW_Wallonia_flag
-				}
-			
-		}
-        if = {
-			limit = {
-				AND={
-					FRW={
-					check_variable = {
-					var = FRW_Calais_needle_VAR
-					value = 2
-				}
-				has_country_flag = FRW_Calais_flag
-				}
-				}
-				
-			}
-			FRW={
-			add_to_variable = {
-			var = FRW_Liberals_needle_VAR
-			value = 1
-		}
-		clr_country_flag = FRW_Calais_flag
-			}
 	}
-
-##########大选
-
-
-
-
-
-
-
-
-
-
-
-
-		
-			}
-		}
+	
 }
-
-
-
-
-
-
-
-
-
-
-	#on_daily = {
-	#effect = {
-		#if = {
-			#WWS={
-			#limit = {
-			#	has_completed_focus = WWS_Expansion_radar_stations
-			#	has_completed_focus = WWS_Siemens_AG
-			#	has_completed_focus = WWS_Hochtief
-			#}
-			# swap_ideas = {
-			# 	remove_idea = low_industrialization
-			#	add_idea = Basic_industrialization
-			#}
-		#}
-	#}
-		#}
-	#}

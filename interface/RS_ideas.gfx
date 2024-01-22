@@ -4,6 +4,15 @@ spriteTypes = {
 	    texturefile = "gfx/interface/ideas/Great_Earthquake.dds"
     }
 	spriteType = {
+	    name = "GFX_idea_farming_society"
+	    texturefile = "gfx/interface/ideas/farming_society.dds"
+    }
+	
+	spriteType = {
+	    name = "GFX_idea_internationalism"
+	    texturefile = "gfx/interface/ideas/internationalism.dds"
+    }
+	spriteType = {
 	    name = "GFX_idea_Immigration_policy"
 	    texturefile = "gfx/interface/ideas/Immigration_policy.dds"
     }
@@ -11,6 +20,11 @@ spriteTypes = {
 	    name = "GFX_idea_Provence_Commune"
 	    texturefile = "gfx/interface/ideas/Provence_Commune.dds"
     }
+	spriteType = {
+	    name = "GFX_idea_Brittany_National_autonomy"
+	    texturefile = "gfx/interface/ideas/Brittany_National_autonomy.dds"
+    }
+	
 	spriteType = {
 	    name = "GFX_idea_Lorraine_guerrillas"
 	    texturefile = "gfx/interface/ideas/Lorraine_guerrillas.dds"
@@ -1036,8 +1050,20 @@ spriteTypes = {
 		name = "GFX_idea_german_12"
 		texturefile = "gfx/interface/ideas/german_12.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_idea_Decentralized_party_organizations"
+		texturefile = "gfx/interface/ideas/Decentralized_party_organizations.dds"
+	}
 
+	spriteType = {
+		name = "GFX_idea_Revolutionary_vanguard"
+		texturefile = "gfx/interface/ideas/Revolutionary_vanguard.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Working_women"
+		texturefile = "gfx/interface/ideas/Working_women.dds"
+	}
+	
 
 ######
 ######
@@ -1093,9 +1119,7 @@ spriteTypes = {
 	
 	
  
- 
-
-
+	
 	spriteType = {
 		name = "GFX_FRW_Wallonia_needle"
 		texturefile = "gfx/interface/GUI/frw_state/FRW_Wallonia.dds"

@@ -1,4 +1,20 @@
 characters={
+	
+	MXG_Zapata={
+		name=MXG_Zapata
+		portraits={
+			civilian={
+				large="gfx/leaders/MXG/Portrait_Zapata.tga"
+			}
+		}
+		country_leader={
+			ideology=Agrarian_socialism_type
+			desc = MXG_Zapata_desc
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
 	MXG_Alvaro_Obregon={
 		name=MXG_Alvaro_Obregon
 		portraits={

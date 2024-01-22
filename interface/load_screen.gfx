@@ -1,5 +1,10 @@
 spriteTypes = {	
-
+	
+	spriteType = {
+		name = "GFX_loadingscreen_back"
+		texturefile = "gfx/interface/loadingscreen_back.dds"
+	}
+	
 	 spriteType = {
 	 	name = "GFX_nullobject"
 	 	texturefile = "gfx//interface//thisisdog.dds"

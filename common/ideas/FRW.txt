@@ -1,5 +1,20 @@
 ideas = {
     country = {
+		farming_society= {
+			picture = farming_society
+			modifier = {
+				production_speed_grain_farms_factor=0.1
+				country_resource_grain=50
+			}
+        }
+		internationalism= {
+			picture = internationalism
+			modifier = {
+				send_volunteer_factor=0.5
+				send_volunteers_tension=-0.5
+				air_volunteer_cap=2
+			}
+        }
 		FRW_Entrepreneurial_spirit = {
 			picture = Entrepreneurial_spirit
 			modifier = {
@@ -10,9 +25,49 @@ ideas = {
 				production_factory_start_efficiency_factor = 0.05 
 			}
         }
+		
+		FRW_Working_women  = {
+			picture = Working_women
+			modifier = {
+				production_factory_efficiency_gain_factor=0.05
+				line_change_production_efficiency_factor=0.05
+			}
+        }
+
+		FRW_Revolutionary_vanguard = {
+			picture = Revolutionary_vanguard
+			modifier = {
+				production_speed_infrastructure_factor=0.05
+				industrial_capacity_factory=0.05
+				production_factory_efficiency_gain_factor=0.05
 
 
-
+			}
+        }
+		FRW_Decentralized_party_organizations = {
+			picture = Decentralized_party_organizations
+			modifier = {
+				stability_factor = 0.01
+				political_advisor_cost_factor = 0.1
+				political_power_cost = 0.1
+			}
+        }
+		FRW_Decentralized_party_organizations1 = {
+			picture = Decentralized_party_organizations
+			modifier = {
+				stability_factor = 0.03
+				political_advisor_cost_factor = 0.05
+				political_power_cost = 0.05
+			}
+        }
+		FRW_Decentralized_party_organizations2 = {
+			picture = Decentralized_party_organizations
+			modifier = {
+				stability_factor = 0.05
+				political_advisor_cost_factor = -0.05
+				political_power_cost = -0.05
+			}
+        }
 		FRW_revanchism = {
 			picture = revanchism
 			modifier = {
