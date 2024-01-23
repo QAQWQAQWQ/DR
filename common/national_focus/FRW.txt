@@ -1986,7 +1986,7 @@ focus = {
 	x = 34
 	y = 5
 	completion_reward = {
-		
+		navy_experience = 50
 	}
 } 
 focus = {
@@ -1999,7 +1999,7 @@ focus = {
 	x = 40
 	y = 5
 	completion_reward = {
-		
+		air_experience = 50
 	}
 }
 focus = {
@@ -2012,7 +2012,18 @@ focus = {
 	x = 34
 	y = 6
 	completion_reward = {
-		
+		add_advisor_role = {
+			character = FRW_Andre_Marty
+			activate = yes
+			advisor = {
+				slot = navy_chief
+				cost = 50
+				idea_token = FRW_Andre_Marty_air_chief
+				traits = {
+					air_naval_strike_1
+				}
+			}
+		}
 	}
 }
 focus = { 
@@ -2111,7 +2122,11 @@ focus = {
 	x = 40
 	y = 6
 	completion_reward = {
-		  
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.5
+			uses = 2
+			category = air_doctrine
+		}
 	}
 }
 focus = {
@@ -2136,12 +2151,14 @@ focus = {
 	}
 	x = 42
 	y = 6
-	completion_reward = {
+	completion_reward = { 
 		create_equipment_variant = {
-			name = ""								
-			type = tac_bomber_equipment
-			role_icon_index = 1
-			modules = {
+			name = "Amiot 351"
+			type = strat_bomber_equipment_1
+			obsolete = yes
+			upgrades = {
+				plane_gun_upgrade = 1
+				plane_range_upgrade = 1
 			}
 		}
 	}
@@ -2153,10 +2170,26 @@ focus = {
 	prerequisite = {
 		focus = FRW_focus107
 	}
+	available={
+		has_war = yes
+	}
 	x = 42 
 	y = 7
 	completion_reward = {
-		
+		add_ace = {
+			name = "保罗·丰克"
+			surname = "保罗·丰克"
+			callsign = "鹳鸟"
+			type = fighter_genius
+			is_female = no
+		}
+		add_ace = {
+			name = "乔治·居内梅"
+			surname = "乔治·居内梅"
+			callsign = "鹳鸟"
+			type = fighter_genius
+			is_female = no
+		}
 	}
 }
 focus = {
@@ -2227,7 +2260,19 @@ focus = {
 	x = 45
 	y = 4
 	completion_reward = {
-		
+		create_equipment_variant = {
+			name = "雷诺"
+			type = light_tank_chassis_1
+			parent_version = 1
+			modules = {
+				main_armament_slot = tank_heavy_machine_gun
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 2
+			}
+			icon = "GFX_FRA_basic_light_tank_medium"
+			model = FRA_light_armor_entity
+		}
 	}
 } 
 focus = { 
