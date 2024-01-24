@@ -74,3 +74,25 @@ FRW_Panhard_organization = {
 	available = {
 	}
 }
+FRW_SNCASE = {
+	include = generic_range_focused_aircraft_organization
+	icon = GFX_idea_SNCASE
+	
+	allowed = {	 
+			tag = FRW 
+	}
+
+	available = {
+	}
+}
+FRW_SNCASE_1 = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_SNCASE
+	
+	allowed = {	 
+			tag = FRW 
+	}
+
+	available = {
+	}
+}

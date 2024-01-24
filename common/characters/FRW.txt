@@ -2,8 +2,8 @@ characters={
 	FRW_Andre_Marty={
 		name=FRW_Andre_Marty
 		portraits={
-			civilian={
-				large="gfx/leaders/FRW/Portrait_Andre_Marty.tga"
+			army={
+				small= "gfx/interface/ideas/idea_Andre_Marty.dds"
 			}
 		}
 		navy_leader = {
@@ -290,6 +290,9 @@ characters={
 				NOT={
 					has_country_flag = has_head_of_government
 				}
+				hidden_trigger = {
+					has_stability > 9 
+				  }
 			  }
 			traits = {
 				head_of_government
@@ -837,11 +840,27 @@ has_completed_focus = FRW_focus14
 		portraits={
 			army={
 				large="gfx/leaders/FRW/Portrait_Joffre.tga"
-				small="gfx/interface/ideas/Portrait_Joffre.dds"
+				small="gfx/interface/ideas/idea_Joffre.dds"
+			}
+		}
+		advisor={	
+			slot = army_chief
+			allowed = {
+				original_tag = FRW
+			}
+			available = {
+				
+			}
+			traits = {
+				army_chief_offensive_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 		corps_commander={
-			traits={ Lieutenant_general }
+			traits={ Lieutenant_general offensive_doctrine }
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -897,7 +916,23 @@ has_completed_focus = FRW_focus14
 		portraits={
 			army={
 				large="gfx/leaders/FRW/Portrait_Maurice_Gustave_Gamelin.tga"
-				small="gfx/interface/ideas/Portrait_Maurice_Gustave_Gamelin.dds"
+				small="gfx/interface/ideas/idea_Maurice_Gustave_Gamelin.dds"
+			}
+		}
+		advisor={	
+			slot = army_chief
+			allowed = {
+				original_tag = FRW
+			}
+			available = {
+				
+			}
+			traits = {
+				army_chief_reform_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 		corps_commander={
@@ -1032,11 +1067,28 @@ FRW_georges_louis_humbert={
 		portraits={
 			army={
 				large="gfx/leaders/FRW/Portrait_Maurice_Sarrell.tga"
-				small="gfx/interface/ideas/Portrait_Maurice_Sarrell.dds"
+				small="gfx/interface/ideas/idea_Maurice_Sarrell.dds"
+			}
+		}
+		
+		advisor={	
+			slot = army_chief
+			allowed = {
+				original_tag = FRW
+			}
+			available = {
+				
+			}
+			traits = {
+				army_artillery_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 		corps_commander={
-			traits={ Lieutenant_general }
+			traits={ Lieutenant_general unyielding_defender}
 			skill=3
 			attack_skill=2
 			defense_skill=2

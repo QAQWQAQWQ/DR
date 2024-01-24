@@ -1071,6 +1071,11 @@ spriteTypes = {
 ######
 ######制造商
 ######
+
+    spriteType = {
+		name = "GFX_idea_SNCASE"
+		texturefile = "gfx/interface/ideas/organization/SNCASE.dds"
+	}
 	spriteType = {
 		name = "GFX_idea_Manufacture"
 		texturefile = "gfx/interface/ideas/organization/Manufacture.dds"
