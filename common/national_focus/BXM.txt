@@ -1,0 +1,11 @@
+focus_tree = {
+	id = BXM
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BXM
+		}
+	}
+	default = no
+	shared_focus = empire_modernization_of_the_imperial_army

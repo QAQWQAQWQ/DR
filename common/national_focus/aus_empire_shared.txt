@@ -5,10 +5,72 @@ shared_focus = {
 	x = 40
 	y = 0
 	cost = 5
+	available = {
+		original_tag = AOX
+	}
+	completion_reward = {
+		add_command_power = 25		
+		every_country = {
+			limit = {
+				OR = {
+					original_tag = KOH
+					original_tag = DMT
+					original_tag = BXM
+					original_tag = KGL
+				}
+			}
+			complete_national_focus = empire_modernization_of_the_imperial_army
+		}
+	}
+	bypass = {
+		# AOX = { has_completed_focus = empire_modernization_of_the_imperial_army }
+	}
+}
+joint_focus = {
+	id = empire_modernization_navy
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = { focus = empire_modernization_of_the_imperial_army }
+	x = -6
+	y = 1
+	relative_position_id = empire_modernization_of_the_imperial_army
+	cost = 5
+	available = {
+	}
+	joint_trigger = {
+	}
+	completion_reward = {
+		navy_experience = 25
+	}
+}
+joint_focus = {
+	id = empire_modernization_army
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = { focus = empire_modernization_of_the_imperial_army }
+	x = 0
+	y = 1
+	relative_position_id = empire_modernization_of_the_imperial_army
+	cost = 5
+	available = {
+	}
+	joint_trigger = {
+	}
+	completion_reward = {
+		army_experience = 25
+	}
+}
+joint_focus = {
+	id = empire_modernization_air
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = { focus = empire_modernization_of_the_imperial_army }
+	x = 6
+	y = 1
+	relative_position_id = empire_modernization_of_the_imperial_army
+	cost = 5
+	available = {
+	}
+	joint_trigger = {
+	}
 	completion_reward = {
 		air_experience = 25
-		navy_experience = 25
-		army_experience = 25
-		add_command_power = 25		
 	}
 }
