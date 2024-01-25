@@ -440,10 +440,7 @@ completion_reward = {
 		x = 35
 		y = 2
 completion_reward = {
-	mio:FRW_GIAT_organization = {
-		add_mio_size = 1
-		add_mio_funds_gain_factor = 0.10
-	}
+	
 	add_tech_bonus = {
 		bonus = 0.5
 		uses = 1
@@ -490,10 +487,7 @@ completion_reward = {
 		x = 39
 		y = 2
 completion_reward = {
-	mio:FRW_schneider_organization = {
-		add_mio_size = 1
-		add_mio_funds_gain_factor = 0.10
-	}
+	
 	
 	add_tech_bonus = {
 		bonus = 0.5
@@ -528,7 +522,7 @@ completion_reward = {
 		y = 4
 completion_reward = {
 	add_trait = {
-		character = FRW_Georges_Clemenceau 
+		character = FRW_Jean_Jaures
 		ideology = democratic_socialism_type
 		trait = Armaments_organizer
 	}
@@ -581,11 +575,7 @@ completion_reward = {
 	add_dynamic_modifier = {
 		modifier = FRW_Artillery_design
 	}
-	mio:FRW_schneider_organization = {
-		add_mio_funds_gain_factor = 0.1
-		add_mio_size = 1
-		add_mio_funds_gain_factor = 0.10
-	}
+	
 	
 }
 	}
@@ -1579,6 +1569,11 @@ focus = {
 	x = 31
 	y = 14
 completion_reward = {
+	add_trait = {
+		character = FRW_Leon_Blum
+		ideology = social_democrat_type
+		trait =  pragmatic_socialist
+	}
 }
 } 
 
@@ -2018,7 +2013,7 @@ focus = {
 			advisor = {
 				slot = navy_chief
 				cost = 50
-				idea_token = FRW_Andre_Marty_air_chief
+				idea_token = FRW_Andre_Marty_navy_chief
 				traits = {
 					air_naval_strike_1
 				}
@@ -2139,7 +2134,18 @@ focus = {
 	x = 40
 	y = 7
 	completion_reward = { 
-		
+		add_advisor_role = {
+			character = FRW_Joseph_Vuillemin
+			activate = yes
+			advisor = {
+				slot = air_chief
+				cost = 50
+				idea_token = FRW_Joseph_Vuillemin_air_chief
+				traits = {
+					air_air_combat_training_1
+				}
+			}
+		}
 	}
 }
 focus = {
@@ -2202,7 +2208,19 @@ focus = {
 	x = 46
 	y = 2
 	completion_reward = {
-		
+		mio:FRW_schneider_organization = {
+			add_mio_size = 1
+			add_mio_funds_gain_factor = 0.10
+		}
+		mio:FRW_GIAT_organization = {
+			add_mio_size = 1
+			add_mio_funds_gain_factor = 0.10
+		}
+		mio:FRW_schneider_organization = {
+			add_mio_funds_gain_factor = 0.1
+			add_mio_size = 1
+			add_mio_funds_gain_factor = 0.10
+		}
 	} 
 }
 focus = {
@@ -2218,7 +2236,11 @@ focus = {
 	x = 45
 	y = 3
 	completion_reward = {
-		
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = recon_tech
+		}
 	} 
 }
 focus = { 
@@ -2234,7 +2256,11 @@ focus = {
 	x = 43
 	y = 3
 	completion_reward = {
-		
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = cat_mechanized_equipment
+		}
 	}
 } 
 focus = {
@@ -2247,7 +2273,28 @@ focus = {
 	x = 43 
 	y = 4
 	completion_reward = {
-		
+		random_core_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+			}
+			
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_core_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+			}
+			
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
 	}
 }
 focus = {
@@ -2285,7 +2332,34 @@ focus = {
 	x = 52
 	y = 2
 	completion_reward = {
-		
+		785={
+			add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+			}
+		}
+		29={
+			add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+			}
+		}
+		14={
+			add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+			}
+		}
+		15={
+			add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+			}
+		}
 	}
 }
 focus = {
@@ -2298,7 +2372,11 @@ focus = {
 	x = 53
 	y = 3
 	completion_reward = {
-		
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = asw_tech
+		}
 	}
 }
 focus = {
@@ -2314,6 +2392,36 @@ focus = {
 	x = 55
 	y = 3
 	completion_reward = {
+		add_doctrine_cost_reduction = {
+			cost_reduction = 1
+			uses = 1
+			category = dd_tech
+		}
+		add_doctrine_cost_reduction = {
+			cost_reduction = 1
+			uses = 1
+			category = cl_tech
+		}
+		add_doctrine_cost_reduction = {
+			cost_reduction = 1
+			uses = 1
+			category = ca_tech
+		}
+		add_doctrine_cost_reduction = {
+			cost_reduction = 1
+			uses = 1
+			category = bc_tech
+		}
+		add_doctrine_cost_reduction = {
+			cost_reduction = 1
+			uses = 1
+			category = ss_tech
+		}
+		add_doctrine_cost_reduction = {
+			cost_reduction = 1
+			uses = 1
+			category = bb_tech
+		}
 		
 	}
 } 
@@ -2328,6 +2436,16 @@ focus = {
 	y = 4
 	completion_reward = {
 		
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = submarine_doctrine
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = asw_tech
+		}
 	}
 } 
 focus = {
@@ -2340,6 +2458,16 @@ focus = {
 	x = 55
 	y = 4
 	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = naval_bomber
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = convoy_defense_tree
+		}
 		
 	}
 }

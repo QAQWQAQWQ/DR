@@ -453,7 +453,104 @@ FRW_election_movement = {
 		tag = FRW
 	}
 	complete_effect = {    
-		                                                                     
+		  set_variable = {
+			FRW_Wallonia_needle_VAR=3
+		  }
+		  set_country_flag = FRW_Wallonia_Purple_flag
+		  set_variable = {
+			FRW_Calais_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Calais_flag
+		  set_variable = {
+			FRW_Picardy_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Picardy_flag
+		  set_variable = {
+			FRW_Champagne_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Champagne_flag
+		  set_variable = {
+			FRW_Comte_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Comte_flag
+		  set_variable = {
+			FRW_Normandy_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Normandy_flag
+		  set_variable = {
+			FRW_Burgundy_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Burgundy_flag
+		  set_variable = {
+			FRW_De_France_needle_VAR=2
+		  }
+		  set_country_flag=FRW_De_France_flag 
+		  set_variable = {
+			FRW_Central_Region_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Central_Region_flag
+		  set_variable = {
+			FRW_Brittany_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Brittany_flag
+		  set_variable = {
+			FRW_Loire_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Loire_flag
+		  set_variable = {
+			FRW_Poitou_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Poitou_flag
+		  
+		  
+		  set_variable = {
+			FRW_Aquitaine_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Aquitaine_flag  
+		  set_variable = {
+			FRW_Poitou_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Poitou_flag  
+		  set_variable = {
+			FRW_Western_Pyrenees_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Western_Pyrenees_flag  
+		  set_variable = {
+			FRW_South_Central_Region_needle_VAR=2
+		  }
+		  set_country_flag=FRW_South_Central_Region_flag  
+		  set_variable = {
+			FRW_Limousin_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Limousin_flag
+		  set_variable = {
+			FRW_South_Pyrenees_needle_VAR=2
+		  }
+		  set_country_flag=FRW_South_Pyrenees_flag
+		  set_variable = {
+			FRW_Languedoc_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Languedoc_flag
+		  set_variable = {
+			FRW_Provence_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Provence_flag
+		  set_variable = {
+			FRW_Val_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Val_flag
+		  set_variable = {
+			FRW_Alps_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Alps_flag
+		  set_variable = {
+			FRW_Rhone_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Rhone_flag
+		  set_variable = {
+			FRW_Auvergne_needle_VAR=5
+		  }
+		  set_country_flag=FRW_Orange_flag       
 		}
 	fixed_random_seed = no
 	fire_only_once = no
