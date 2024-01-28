@@ -51,8 +51,8 @@ completion_reward = {
 		y = 1
 completion_reward = {
 	add_popularity = {
-		ideology = Social_liberalism
-		popularity = 0.1
+		ideology = Reform_socialism
+		popularity = 0.05
 	}
 }
 	} 
@@ -80,8 +80,8 @@ completion_reward = {
 		y = 3
 		completion_reward = {
 			add_popularity = {
-				ideology = Social_liberalism
-				popularity = 0.02
+				ideology = Reform_socialism
+				popularity = 0.05
 			}
 			
 			custom_effect_tooltip = available_political_advisor
@@ -99,8 +99,8 @@ completion_reward = {
 		y = 3
 		completion_reward = {
 			add_popularity = {
-				ideology = Social_liberalism
-				popularity = 0.02
+				ideology = Reform_socialism
+				popularity = 0.05
 			}
 			country_event = FRW.24
 		}
@@ -118,19 +118,11 @@ completion_reward = {
 		x = 14
 		y = 4
 completion_reward = {
-	swap_ideas = {
-		remove_idea = Mixed_economy
-		add_idea = Market_economy
+	add_popularity = {
+		ideology = Reform_socialism
+		popularity = 0.1
 	}
-	set_political_party = {
-		ideology = Social_liberalism
-		popularity = 25
-	}
-	set_party_name = { 
-		ideology = Social_liberalism 
-		long_name =  FRW_Social_liberalism_party_long
-		name = FRW_Social_liberalism_party
-	}
+	
 }
 	} 
 	focus = {
@@ -935,6 +927,9 @@ completion_reward = {
 		prerequisite = {
 			 
 		}
+		allow_branch = {
+			has_country_flag = FRW_focus47_Flag1
+		}
 		x = 14
 		y = 9
     completion_reward = { 
@@ -1192,6 +1187,9 @@ remove_ideas = FRW_Chaotic_socialism
 		cost = 7.00
 		prerequisite = {
 			
+		}
+		allow_branch = {
+			has_country_flag = FRW_focus47_Flag2
 		}
 		x = 31
 		y = 8
@@ -1583,6 +1581,9 @@ focus = {
 	icon = GFX_goal_FRW_focus78
 	cost = 7.00
 	prerequisite = {
+	}
+	allow_branch = {
+		has_country_flag = FRW_focus47_Flag3
 	}
 	x = 48
 	y = 8

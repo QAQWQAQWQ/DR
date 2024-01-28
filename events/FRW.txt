@@ -640,12 +640,14 @@ country_event = {
 	picture = GFX_FRW_31
 	is_triggered_only = yes
 	trigger = {
-		}
+		
+	}
 	option = {
 		name = FRW.35.a
 		set_politics = {
-			ruling_party = Social_liberalism
+			ruling_party = Reform_socialism
 		}
+		set_country_flag = FRW_focus47_Flag1
 		}
 	option = {
 		name = FRW.35.b
@@ -658,20 +660,21 @@ country_event = {
 				traits = { }
 			}
 		}
+		set_country_flag = FRW_focus47_Flag2
 		}
 	option = {
 		name = FRW.35.c
 		set_politics = {
 			ruling_party = radical_socialist
 		}
-		
+		set_country_flag = FRW_focus47_Flag3
 		}
 	option = {
 		name = FRW.35.e
 		set_politics = {
 			ruling_party = communism
 		}
-		
+		custom_effect_tooltip = FRW_35.e
 		}	
 }
 country_event = {
