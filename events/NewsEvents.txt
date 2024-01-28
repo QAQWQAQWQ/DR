@@ -184,3 +184,56 @@ news_event = {
 			name = WorldNew.5.a
 		}		
 }
+news_event = {
+	id = WorldNew.6
+	title = WorldNew.6.t
+	desc = WorldNew.6.d
+
+	picture = GFX_Poland_independent
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+			name = WorldNew.6.a
+			SHW={
+				end_puppet = PBL
+			}
+			PBL={
+				white_peace = SUE
+			set_politics = {
+				ruling_party = military_government
+			}
+			}
+		}		
+}
+news_event = {
+	id = WorldNew.7
+	title = WorldNew.7.t
+	desc = WorldNew.7.d
+
+	picture = GFX_Finland_Independence
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+			name = WorldNew.7.a
+			SHW={
+				end_puppet = FEL
+			}
+			FEL={
+				remove_ideas = FEL_Nominal_independence
+				white_peace = SUE
+				set_politics = {
+					ruling_party = military_government
+				}
+			}
+		}		
+}

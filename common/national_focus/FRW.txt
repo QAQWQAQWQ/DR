@@ -926,7 +926,7 @@ completion_reward = {
 		cost = 7.00
 		prerequisite = {
 			 
-		}
+		} 
 		allow_branch = {
 			has_country_flag = FRW_focus47_Flag1
 		}
@@ -1035,6 +1035,7 @@ remove_ideas = FRW_Chaotic_socialism
 		x = 11
 		y = 12
     completion_reward = { 
+		unlock_decision_category_tooltip = FRW_Anti_imperialism
     }
 	}
 	focus = {

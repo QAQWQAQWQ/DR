@@ -147,41 +147,33 @@ Destructive_industrial_complex = {
 	
 }
 }
-FRW_Export_the_revolution = {
 
-	Export_the_revolution_XYL = {
+####
+FRW_Anti_imperialism = {
+
+Export_LEF = {
 	icon = generic_construction
 	visible = {
+		#has_completed_focus = FRW_focus54
+		country_exists = LEF
 	}
 	available = {
-		has_completed_focus = FRW_Intervention_Magyarorszag
-		country_exists = XYL
+		
 	}
 	days_re_enable = 30
 	days_remove = 60
 	cost = 35
 	allowed = {
 		tag = FRW
-	}
+	} 
 	target_trigger = {
 		FROM = {
-			original_tag = XYL
+			original_tag = LEF
 		}
 	}
 	complete_effect = { 
-		FROM = { 
-			 random_owned_state = { 
-				add_building_construction = { 
-					type = arms_factory 
-					level = 3 
-					instant_build = yes 
-				}
-				add_building_construction = { 
-					type = industrial_complex
-					level = 3 
-					instant_build = yes 
-				}
-			 } 
+		FRW = { 
+			send_equipment = { target = LEF type = infantry_equipment amount = 3500 }
 		 }
 		}
 	fixed_random_seed = no
@@ -192,217 +184,237 @@ FRW_Export_the_revolution = {
 		}
 	
 }
-Export_the_revolution_ITC = {
+Export_YDA = {
 	icon = generic_construction
 	visible = {
+		#has_completed_focus = FRW_focus54
+		country_exists = YDA
 	}
 	available = {
-		has_completed_focus = FRW_Italy
-		country_exists = ITC
+		
 	}
 	days_re_enable = 30
 	days_remove = 60
 	cost = 35
 	allowed = {
 		tag = FRW
-	}
+	} 
 	target_trigger = {
 		FROM = {
-			original_tag = ITC
+			original_tag = YDA
 		}
 	}
 	complete_effect = { 
-		FROM = { 
-			 random_owned_state = { 
-				add_building_construction = { 
-					type = arms_factory 
-					level = 3 
-					instant_build = yes 
-				}
-				add_building_construction = { 
-					type = industrial_complex
-					level = 3 
-					instant_build = yes 
-				}
-			 } 
-		 }
+		YDA={
+			add_popularity = {
+			ideology = Reform_socialism
+			popularity = 0.05
 		}
+		}
+		custom_effect_tooltip = Export_YDA_Reform_socialism
+	}
 	fixed_random_seed = no
 	fire_only_once = no
 	is_good = no
         ai_will_do = {
 		factor = 1
 		}
+	
 }
-Export_the_revolution_KPD = {
+Export_YDA1 = {
 	icon = generic_construction
 	visible = {
+		has_country_flag = YDA_Indian_independence
 	}
 	available = {
-		has_completed_focus = FRW_Germany
-		country_exists = KPD
+		
 	}
 	days_re_enable = 30
 	days_remove = 60
 	cost = 35
 	allowed = {
 		tag = FRW
-	}
+	} 
 	target_trigger = {
 		FROM = {
-			original_tag = KPD
+			original_tag = YDA
 		}
 	}
 	complete_effect = { 
-		FROM = { 
-			 random_owned_state = { 
-				add_building_construction = { 
-					type = arms_factory 
-					level = 3 
-					instant_build = yes 
-				}
-				add_building_construction = { 
-					type = industrial_complex
-					level = 3 
-					instant_build = yes 
-				}
-			 } 
-		 }
+		438={
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
 		}
+		439={
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		FRW={
+			add_opinion_modifier = {
+				target = YDA
+				modifier = ETH_closer_cooperation
+			}
+		}
+		
+	}
 	fixed_random_seed = no
 	fire_only_once = no
 	is_good = no
         ai_will_do = {
 		factor = 1
 		}
+	
 }
-Export_the_revolution_CPC = {
-	icon = generic_construction
-	visible = {
-	}
-	available = {
-		has_completed_focus = FRW_Asia
-		country_exists = CPC
-	}
-	days_re_enable = 30
-	days_remove = 60
-	cost = 35
-	allowed = {
-		tag = FRW
-	}
-	target_trigger = {
-		FROM = {
-			original_tag = CPC
-		}
-	}
-	complete_effect = { 
-		FROM = { 
-			 random_owned_state = { 
-				add_building_construction = { 
-					type = arms_factory 
-					level = 3 
-					instant_build = yes 
-				}
-				add_building_construction = { 
-					type = industrial_complex
-					level = 3 
-					instant_build = yes 
-				}
-			 } 
-		 }
-		}
-	fixed_random_seed = no
-	fire_only_once = no
-	is_good = no
-        ai_will_do = {
-		factor = 1
-		}
+
 }
-Export_the_revolution_JPC = {
-	icon = generic_construction
-	visible = {
-	}
-	available = {
-		has_completed_focus = FRW_Asia
-		country_exists = JPC
-	}
-	days_re_enable = 30
-	days_remove = 60
-	cost = 35
-	allowed = {
-		tag = FRW
-	}
-	target_trigger = {
-		FROM = {
-			original_tag = JPC
+
+####
+FRW_Export_the_revolution = {
+
+	Export_the_revolution_XYL = {
+		icon = generic_construction
+		visible = {
+			#has_completed_focus = FRW_focus54
+			#
 		}
-	}
-	complete_effect = { 
-		FROM = { 
-			 random_owned_state = { 
-				add_building_construction = { 
-					type = arms_factory 
-					level = 3 
-					instant_build = yes 
-				}
-				add_building_construction = { 
-					type = industrial_complex
-					level = 3 
-					instant_build = yes 
-				}
-			 } 
-		 }
+		available = {
+			country_exists = XYL
 		}
-	fixed_random_seed = no
-	fire_only_once = no
-	is_good = no
-        ai_will_do = {
-		factor = 1
-		}
-}
-Export_the_revolution_SUE = {
-	icon = generic_construction
-	visible = {
+		days_re_enable = 30
+		days_remove = 60 
+		cost = 35
+		allowed = {
+			tag = FRW
+		} 
+		complete_effect = { 
+			FRW = { 
+				send_equipment = { target = XYL type = infantry_equipment amount = 3500 }
+			 }
+			}
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
 	}
-	available = {
-		has_completed_focus = FRW_Intervention_Russia
-		country_exists = SUE
-	}
-	days_re_enable = 30
-	days_remove = 60
-	cost = 35
-	allowed = {
-		tag = FRW
-	}
-	target_trigger = {
-		FROM = {
-			original_tag = SUE
+	Export_the_revolution_ITC = {
+		icon = generic_construction
+		visible = {
+			#has_completed_focus = FRW_focus54
 		}
+		available = {
+			country_exists = ITC
+		}
+		days_re_enable = 30
+		days_remove = 60 
+		cost = 35
+		allowed = {
+			tag = FRW
+		} 
+		complete_effect = { 
+			FRW = { 
+				send_equipment = { target = ITC type = infantry_equipment amount = 3500 }
+			 }
+			}
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
 	}
-	complete_effect = { 
-		FROM = { 
-			 random_owned_state = { 
-				add_building_construction = { 
-					type = arms_factory 
-					level = 3 
-					instant_build = yes 
-				}
-				add_building_construction = { 
-					type = industrial_complex
-					level = 3 
-					instant_build = yes 
-				}
-			 } 
-		 }
+	Export_the_revolution_KPD = {
+		icon = generic_construction
+		visible = {
+			#has_completed_focus = FRW_focus54
 		}
-	fixed_random_seed = no
-	fire_only_once = no
-	is_good = no
-        ai_will_do = {
-		factor = 1
+		available = {
+			country_exists = KPD
 		}
-}
-}
+		days_re_enable = 30
+		days_remove = 60 
+		cost = 35
+		allowed = {
+			tag = FRW
+		} 
+		complete_effect = { 
+			FRW = { 
+				send_equipment = { target = KPD type = infantry_equipment amount = 3500 }
+			 }
+			}
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	Export_the_revolution_CPC = {
+		icon = generic_construction
+		visible = {
+			#has_completed_focus = FRW_focus54
+		}
+		available = {
+			country_exists = CPC
+		}
+		days_re_enable = 30
+		days_remove = 60 
+		cost = 35
+		allowed = {
+			tag = FRW
+		} 
+		complete_effect = { 
+			FRW = { 
+				send_equipment = { target = CPC type = infantry_equipment amount = 3500 }
+			 }
+			}
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	Export_the_revolution_SUE = {
+		icon = generic_construction
+		visible = {
+			#has_completed_focus = FRW_focus54
+		}
+		available = {
+			country_exists = SUE
+		}
+		days_re_enable = 30
+		days_remove = 60 
+		cost = 35
+		allowed = {
+			tag = FRW
+		} 
+		complete_effect = { 
+			FRW = { 
+				send_equipment = { target = SUE type = infantry_equipment amount = 3500 }
+			 }
+			}
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	}
+	
 FRW_army_revolution = {
 	FRW_army_revolution1 = {
 	icon = generic_ignite_civil_war

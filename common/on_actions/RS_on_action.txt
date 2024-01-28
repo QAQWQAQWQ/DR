@@ -16,6 +16,7 @@ on_actions = {
 	 }
 	 }
 }
+
 on_startup= {
 	effect = {
 		VCT={leave_faction = yes}
@@ -23,7 +24,6 @@ on_startup= {
 		KLD={leave_faction = yes}
 		DMT={leave_faction = yes}
 		KOH={leave_faction = yes}
-
  }
 }
 

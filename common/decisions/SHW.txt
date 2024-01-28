@@ -35,8 +35,8 @@ SHW_Progress_the_Russian_Civil_War = {
           timeout_effect = {                     
 			set_variable = { SHW_Progress_the_Russian_Civil_War_paranoiameter = 2 }  
 			hidden_effect = {
-				news_event = {id=SHW.7   days=1}
-			    news_event = {id=SHW.6   days=12} 
+				news_event = {id=WorldNew.7  days=1}
+			    #news_event = {id=WorldNew.6   days=12} 
 			}        
           }
           complete_effect = {                    
