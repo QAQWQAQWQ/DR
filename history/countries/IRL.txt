@@ -46,7 +46,18 @@ recruit_character = IRL_John_Dillon
 		
 		
 	}
-
+	add_ideas = {
+		#law
+		
+		###
+		Affirmative_action
+		Local_police
+		Weak_investments
+		State_media
+		Local_trade_unions
+		low_industrialization
+		secondary_school
+			}
 set_politics = {
 	ruling_party = democratic
 	last_election = "1918.11.11"
