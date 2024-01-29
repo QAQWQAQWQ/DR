@@ -121,7 +121,6 @@ SHW_Progress_the_Russian_Civil_War = {
 
 	
 SHW_Imperial_Russian_Army = {
-	
 	SHW_Education_army = {
 	  icon = generic_ignite_civil_war
 	  visible = {
@@ -192,6 +191,208 @@ SHW_Imperial_Russian_Army = {
 		  }
 		  }	  
 	  }
+
+
+
+####
+SHW_Second_Agrarian_Reform = {
+	
+	SHW_Encourage_town = {
+	  icon = generic_ignite_civil_war
+	  visible = {
+	  }
+	  
+	  available = {
+	  
+	  }
+	  days_remove = 50
+	  cost = 35
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  complete_effect = {
+		  }
+	}
+	SHW_Protect_landlords = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		
+		available = {
+		
+		}
+		days_remove = 50
+		cost = 35
+		allowed = {
+			always = yes
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+			}
+	  }  
+	SHW_Foster_kulaks= {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		
+		available = {
+		
+		}
+		days_remove = 50
+		cost = 35
+		allowed = {
+			always = yes
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+			}
+	}    
+	SHW_Sacrifice_weak= {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		
+		available = {
+		
+		}
+		days_remove = 50
+		cost = 35
+		allowed = {
+			always = yes
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+			}
+	}
+	SHW_Divide_countryside= {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		
+		available = {
+		
+		}
+		days_remove = 50
+		cost = 35
+		allowed = {
+			always = yes
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+			}
+	} 
+	SHW_Cultivating_government_forces= {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		
+		available = {
+		
+		}
+		days_remove = 50
+		cost = 35
+		allowed = {
+			always = yes
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+			}
+	}
+	SHW_Maintain_tsarist_rule= {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		
+		available = {
+		
+		}
+		days_remove = 50
+		cost = 35
+		allowed = {
+			always = yes
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+			}
+	} 
+	SHW_Nurturing_agricultural_capitalists= {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		
+		available = {
+		
+		}
+		days_remove = 50
+		cost = 35
+		allowed = {
+			always = yes
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+			}
+	}
+	SHW_Expand_proportion_kulaks= {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		
+		available = {
+		
+		}
+		days_remove = 50
+		cost = 35
+		allowed = {
+			always = yes
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+			}
+	}    
+}
+
+
+
+
+
+
 ###征粮
 SHW_Food_requisition_operations = {
 	Requisition_grain_Tambov = {

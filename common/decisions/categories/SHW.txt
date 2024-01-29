@@ -1,3 +1,27 @@
+SHW_Second_Agrarian_Reform = {
+	#icon = SHW_Imperial_Russian_Army
+	picture = GFX_decisions_Second_Agrarian_Reform
+
+	priority = 9  
+   
+	allowed = {  
+		tag = SHW 
+	}                   
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 SHW_Imperial_Russian_Army = {
 	#icon = SHW_Imperial_Russian_Army
 	picture = GFX_decisions_Imperial_Russian_Army

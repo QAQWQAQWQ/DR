@@ -87,7 +87,10 @@ spriteTypes = {
 		name = "GFX_decisions_Imperial_Russian_Army"
 		texturefile = "gfx/interface/decisions/decisions_Imperial_Russian_Army.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_decisions_Second_Agrarian_Reform"
+		texturefile = "gfx/interface/decisions/decisions_Second_Agrarian_Reform.dds"
+	}
 	spriteType = {
 		name = "GFX_decisions_Suppression_other_parties"
 		texturefile = "gfx/interface/decisions/decisions_Suppression_other_parties.dds"
