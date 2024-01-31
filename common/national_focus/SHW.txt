@@ -409,26 +409,6 @@ custom_effect_tooltip = SHW_Focus_11_tool
 				slot = political_advisor
 				trait = Holy_Spirit_incarnates
 			}
-			remove_advisor_role = {
-				character = SHW_Grigori_Efimovich_Rasputin
-				slot = political_advisor
-			  }
-			remove_advisor_role = {
-				character = SHW_Nikolaj_Dmitrievich_Golicyn
-				slot = head_of_government
-			  }
-			  add_advisor_role = {
-				character = SHW_Grigori_Efimovich_Rasputin
-				activate = yes
-				advisor = {
-					slot = head_of_government
-					cost = 50
-					idea_token = SHW_Grigori_Efimovich_Rasputin_H
-					traits = {
-						head_of_government
-					}
-				}
-			}
 		} 
 	}
 	focus = {
@@ -441,7 +421,6 @@ custom_effect_tooltip = SHW_Focus_11_tool
 		}
 		completion_reward={
 			unlock_decision_category_tooltip = SHW_Imperial_Russian_Army
-		
 		}
 	} 
 	focus = {
@@ -862,15 +841,13 @@ custom_effect_tooltip = SHW_Focus_11_tool
 		x = 46
 		y = 0
 		available = {
-			NOT={
-				has_completed_focus = SHW_Focus_21
-			}
-			
 			has_idea = SHW_Stolypin_legacy
 		}
 		prerequisite = {
 		}
 		completion_reward={
+			
+			unlock_decision_category_tooltip = SHW_Second_Agrarian_Reform
 			remove_advisor_role = {
 				character = SHW_Kokovtsov
 				slot = political_advisor

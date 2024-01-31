@@ -6,7 +6,11 @@ SHW_Second_Agrarian_Reform = {
    
 	allowed = {  
 		tag = SHW 
-	}                   
+	}
+	visible = {
+		has_completed_focus = SHW_Focus_41  
+	}
+		               
 } 
 
 

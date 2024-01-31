@@ -306,7 +306,7 @@ State_Duma:0 "只有特殊情况才能解散杜马"
 
 
 SHW_Second_Agrarian_Reform:0 "第二次土地改革"
-SHW_Second_Agrarian_Reform_desc:0 "\n\n\n\n\n\n\n\n尽管村社制度被斯托雷平削弱，但村社仍旧十分强大，尤其在俄罗斯地区，三分之二的俄罗斯族农民仍生活在传统的村社制度下，多于半数的农民还在固守传统的村社原则。斯托雷平改革加快了在农村已成燎原之势的村社解体进程，但并没有实现彻底摧毁村社制度。\n\n当前改革过程：§Y相对保守§!\n当前农民态度：§R较为不满§!"
+SHW_Second_Agrarian_Reform_desc:0 "\n\n\n\n\n\n\n\n尽管村社制度被斯托雷平削弱，但村社仍旧十分强大，尤其在俄罗斯地区，三分之二的俄罗斯族农民仍生活在传统的村社制度下，多于半数的农民还在固守传统的村社原则。斯托雷平改革加快了在农村已成燎原之势的村社解体进程，但并没有实现彻底摧毁村社制度。\n\n当前改革过程：§Y[SHWReformprocess]§!\n当前农民态度：§R[SHWPeasantattitudes]§!"
 
 SHW_Encourage_town:0 "鼓励进城"
 SHW_Encourage_town_desc:0 ""
@@ -327,6 +327,19 @@ SHW_Nurturing_agricultural_capitalists_desc:0 ""
 SHW_Expand_proportion_kulaks:0 "扩大富农比例"
 SHW_Expand_proportion_kulaks_desc:0 ""
 
+SHWReformprocess_0:0 "毫无进展"
+SHWReformprocess_1:0 "略有进展"
+SHWReformprocess_2:0 "相对平缓"
+SHWReformprocess_3:0 "过于激进"
+SHWReformprocess_4:0 "完全激进"
+SHWReformprocess1:0 "这个政策会逐渐§G开展§!"
+
+SHWPeasantattitudes_0:0 "漠视改革"
+SHWPeasantattitudes_1:0 "略有不满"
+SHWPeasantattitudes_2:0 "十分不满"
+SHWPeasantattitudes_3:0 "愤怒不已"
+SHWPeasantattitudes_4:0 "怒不可遏"
+SHWPeasantattitudes1:0 "农民对这个政策感到§R不安§!"
 
 
 

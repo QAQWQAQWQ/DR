@@ -106,9 +106,7 @@ characters={
 				original_tag = SIW
 			}
 			available = {
-				NOT={
-					has_idea = SIW_Dragutin_Dimitrijevic_H
-				}
+				
 				OR={
 					has_government = democratic
 					has_government = monarchy

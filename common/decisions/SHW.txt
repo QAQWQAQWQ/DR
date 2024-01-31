@@ -279,6 +279,16 @@ SHW_Second_Agrarian_Reform = {
 			factor = 1
 			}
 			complete_effect = {
+				add_to_variable = {
+					var = SHW_Reform_process
+					value = 1
+					tooltip = SHWReformprocess1
+				}
+				add_to_variable = {
+					var = SHW_Peasant_attitudes
+					value = 1
+					tooltip = SHWPeasantattitudes1
+				}
 			}
 	}
 	SHW_Divide_countryside= {
@@ -384,6 +394,7 @@ SHW_Second_Agrarian_Reform = {
 			factor = 1
 			}
 			complete_effect = {
+				
 			}
 	}    
 }

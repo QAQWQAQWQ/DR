@@ -216,7 +216,16 @@ ideas = {
 		}
 	}
 
-
+	country = {
+		AOX_Multi_ethnic_army = {
+			picture = Multi_ethnic_army
+			modifier = {
+				max_planning=-0.1
+				planning_speed=-0.1
+				autonomy_manpower_share=0.1
+		}
+		}
+	}
 
 
 

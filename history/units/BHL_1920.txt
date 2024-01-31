@@ -1,0 +1,53 @@
+﻿
+division_template = {
+	name = "Division d'Infanterie"		
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 	
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+##### OOB #####
+units = {
+	division= {	
+		 
+		location = 391
+		division_template = "Division d'Infanterie" 
+		start_experience_factor = 0.3
+	}
+	division= {	
+		 
+		location = 516
+		division_template = "Division d'Infanterie" 
+		start_experience_factor = 0.3
+	}
+	division= {	
+		 
+		location = 9498
+		division_template = "Division d'Infanterie" 
+		start_experience_factor = 0.3
+	}
+	division= {	
+		 
+		location = 9363
+		division_template = "Division d'Infanterie" 
+		start_experience_factor = 0.3
+	}
+	division= {	
+		 
+		location = 9335
+		division_template = "Division d'Infanterie" 
+		start_experience_factor = 0.3
+	}
+}

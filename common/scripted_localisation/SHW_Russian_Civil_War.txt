@@ -44,3 +44,69 @@ defined_text = {
 		localization_key = SHW_RussianCivilWar_6
 	}
 } 
+defined_text = {
+	name = SHWReformprocess
+	text = {
+		trigger = {
+			SHW={check_variable = { SHW_Reform_process = 0 }}
+		}
+		localization_key = SHWReformprocess_0
+	}
+	text = {
+		trigger = {
+			SHW={check_variable = { SHW_Reform_process = 1 }}
+		}
+		localization_key = SHWReformprocess_1
+	}
+	text = {
+		trigger = {
+			SHW={check_variable = { SHW_Reform_process = 2 }}
+		}
+		localization_key = SHWReformprocess_2
+	}
+	text = {
+		trigger = {
+			SHW={check_variable = { SHW_Reform_process = 3 }}
+		}
+		localization_key = SHWReformprocess_3
+	}
+	text = {
+		trigger = {
+			SHW={check_variable = { SHW_Reform_process = 4 }}
+		}
+		localization_key = SHWReformprocess_4
+	}
+}
+defined_text = {
+	name = SHWPeasantattitudes
+	text = {
+		trigger = {
+			SHW={check_variable = { SHW_Peasant_attitudes = 0 }}
+		}
+		localization_key = SHWPeasantattitudes_0
+	}
+	text = {
+		trigger = {
+			SHW={check_variable = { SHW_Peasant_attitudes = 1 }}
+		}
+		localization_key = SHWPeasantattitudes_1
+	}
+	text = {
+		trigger = {
+			SHW={check_variable = { SHW_Peasant_attitudes = 2 }}
+		}
+		localization_key = SHWPeasantattitudes_2
+	}
+	text = {
+		trigger = {
+			SHW={check_variable = { SHW_Peasant_attitudes = 3 }}
+		}
+		localization_key = SHWPeasantattitudes_3
+	}
+	text = {
+		trigger = {
+			SHW={check_variable = { SHW_Peasant_attitudes = 4 }}
+		}
+		localization_key = SHWPeasantattitudes_4
+	}
+}

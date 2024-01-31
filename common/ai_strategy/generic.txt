@@ -1,0 +1,20 @@
+no_invasions = {
+	allowed = {
+		NOT = {
+			tag = ENL
+			tag = UBS
+			tag = JPN
+			tag = ITE
+			tag = SHW
+		}
+	}
+	enable = {
+		always = yes
+	}
+	abort = { always = no }
+	ai_strategy = {
+        type = invasion_unit_request
+        country_trigger = { always = yes }
+        value = -200
+    }
+}

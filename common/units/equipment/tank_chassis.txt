@@ -6,9 +6,7 @@ equipments = {
 		is_buildable = no
 
 		can_be_produced = {
-			NOT = {
-				has_idea = FRA_land_army_restrictions
-			}
+			
 		}
 
 		picture = archetype_light_tank_equipment

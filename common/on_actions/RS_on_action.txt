@@ -154,52 +154,10 @@ on_weekly= {
 
 
 
-on_daily = {
-		effect = {
-		  if = {
-			every_unit_leader = {
-						limit = {	
-						has_trait = Lieutenant_general
-					}
-					remove_unit_leader_trait = skilled_staffer
-					remove_unit_leader_trait = expert_delegator
-			}
-			every_unit_leader = {
-			limit = {	
-				has_trait = expert_delegator
-			}
-			remove_unit_leader_trait = Lieutenant_general
-			remove_unit_leader_trait = skilled_staffer
-	        }
-	        every_unit_leader = {
-		    limit = {	
-			is_field_marshal = yes
-	      }
-	    remove_unit_leader_trait = expert_delegator
-	  remove_unit_leader_trait = Lieutenant_general
-	    remove_unit_leader_trait = skilled_staffer
-      }
-	
-     }
-     }
-}
 
-on_monthly = {
-	effect = {
-		every_country = {
-					limit = {	
-						check_variable = { inflation > 80 }
-				}
-				add_stability = -0.1
-		}
-		every_country = {
-			limit = {	
-				check_variable = { inflation < 10 }
-		}
-		add_stability = 0.001
- }
- }
-}
+
+
+
 
 
 ####俄罗斯
