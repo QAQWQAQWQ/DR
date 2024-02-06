@@ -12,19 +12,20 @@ shared_focus = {
 	}
 	completion_reward = {
 		add_command_power = 25		
-		every_country = {
-			limit = {
-				OR = {
-					original_tag = KOH
-					original_tag = DMT
-					original_tag = BXM
-					original_tag = KGL
-				}
-			}
-			complete_national_focus = empire_modernization_of_the_imperial_army
-		}
+		# every_country = {
+		#	limit = {
+		#		OR = {
+		#			original_tag = KOH
+		#			original_tag = DMT
+		#			original_tag = BXM
+		#			original_tag = KGL
+		#		}
+		#	}
+		#	complete_national_focus = empire_modernization_of_the_imperial_army
+		# }
 	}
 	bypass = {
+		AOX = { has_completed_focus = empire_modernization_of_the_imperial_army }
 	}
 }
 joint_focus = {
