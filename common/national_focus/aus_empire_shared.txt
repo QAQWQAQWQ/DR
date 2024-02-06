@@ -5,8 +5,10 @@ shared_focus = {
 	x = 30
 	y = 0
 	cost = 5
+	text_icon = NORDIC_focus_style
 	available = {
 		original_tag = AOX
+		is_subject = no 
 	}
 	completion_reward = {
 		add_command_power = 25		
@@ -23,7 +25,6 @@ shared_focus = {
 		}
 	}
 	bypass = {
-		# AOX = { has_completed_focus = empire_modernization_of_the_imperial_army }
 	}
 }
 joint_focus = {
@@ -35,8 +36,16 @@ joint_focus = {
 	relative_position_id = empire_modernization_of_the_imperial_army
 	cost = 5
 	available = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
 	}
 	joint_trigger = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
 	}
 	completion_reward = {
 		navy_experience = 25
@@ -51,8 +60,16 @@ joint_focus = {
 	relative_position_id = empire_modernization_of_the_imperial_army
 	cost = 5
 	available = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
 	}
 	joint_trigger = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
 	}
 	completion_reward = {
 		army_experience = 25
@@ -67,8 +84,16 @@ joint_focus = {
 	relative_position_id = empire_modernization_of_the_imperial_army
 	cost = 5
 	available = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
 	}
 	joint_trigger = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
 	}
 	completion_reward = {
 		air_experience = 25
