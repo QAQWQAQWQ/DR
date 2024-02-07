@@ -1,0 +1,20 @@
+defined_text = {
+	name = gj_jie_shao
+	text = { #法国国家介绍
+		trigger = { original_tag = FRW }
+		localization_key = "FRA_jie_shao"
+	}
+	text = { #通用国家介绍
+		localization_key = "tong_yong_jie_shao"
+	}
+}
+defined_text = {
+	name = lx_zhi_nan
+	text = { #法国路线指南
+		trigger = { original_tag = FRW }
+		localization_key = "FRA_lu_xian_zhi_nan"
+	}
+	text = { #通用路线指南
+		localization_key = "tong_yong_lu_xian_zhi_nan"
+	}
+}
