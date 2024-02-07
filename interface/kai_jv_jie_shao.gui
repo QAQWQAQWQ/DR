@@ -1,0 +1,161 @@
+guiTypes = {
+	containerWindowType = {
+		name = "da_kai_kai_jv_jie_shao"
+		position = { x=-4 y=-1 }	
+		size = { width=100%% height=100%% }
+		buttonType = {
+			name = "da_kai_kai_jv_jie_shao_an_niu" #打开国家介绍按钮
+			position = { x = -131 y = 62 }
+			quadTextureSprite ="GFX_achievements_button"
+			buttonText = ""
+			buttonFont = "Main_14_black"
+			clicksound = click_ok
+			oversound = ui_menu_over
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "da_kai_kai_jv_jie_shao_an_niu_tooltip" #按钮注释
+		}
+	}
+	containerWindowType = {
+		name = "kai_jv_jie_shao_win"
+		position = { x = 0 y = 0 }
+		size = { width = 720 height = 800 }
+		moveable = yes
+		orientation = CENTER
+		origo = center
+		clipping = no
+		background = {
+			name = "Background"
+			spriteType ="GFX_kai_jv_jie_shao_bian_kuang"
+		}
+		buttonType = {
+			name = "kai_jv_jie_shao_xuan_xiang1"
+			position = { x = 30 y = 125 }
+			quadTextureSprite ="GFX_kai_jv_jie_shao_xuan_xiang"
+			buttonFont = "hoi_24header"
+			Orientation = UPPER_LEFT
+			buttonText = "国家介绍"
+			clicksound = click_ok
+		}
+		buttonType = {
+			name = "kai_jv_jie_shao_xuan_xiang2"
+			position = { x = 30 y = 225 }
+			quadTextureSprite ="GFX_kai_jv_jie_shao_xuan_xiang"
+			buttonFont = "hoi_24header"
+			Orientation = UPPER_LEFT
+			buttonText = "路线指南"
+			clicksound = click_ok
+		}
+		buttonType = {
+			name = "kai_jv_jie_shao_xuan_xiang3"
+			position = { x = 30 y = 335 }
+			quadTextureSprite ="GFX_kai_jv_jie_shao_xuan_xiang"
+			buttonFont = "hoi_24header"
+			Orientation = UPPER_LEFT
+			buttonText = "模组介绍"
+			clicksound = click_ok
+		}
+		buttonType = {
+			name = "kai_jv_jie_shao_xuan_xiang4"
+			position = { x = 30 y = 435 }
+			quadTextureSprite ="GFX_kai_jv_jie_shao_xuan_xiang"
+			buttonFont = "hoi_24header"
+			Orientation = UPPER_LEFT
+			buttonText = "mod特色"
+			clicksound = click_ok
+		}
+		buttonType = {
+			name = "kai_jv_jie_shao_win_ok"
+			position = { x = 30 y = 630 }
+			quadTextureSprite ="GFX_kai_jv_jie_shao_xuan_xiang"
+			buttonFont = "hoi_24header"
+			Orientation = UPPER_LEFT
+			buttonText = "确认"
+			clicksound = click_ok
+			shortcut = "RETURN"
+		}
+	}
+	containerWindowType = {
+		name = "guo_jia_jie_shao_win"
+		position = { x = -300 y = 125 }
+		size = { width = 750 height = 600 }
+		orientation = UPPER_RIGHT
+		clipping = yes
+		moveable = no
+		verticalScrollbar = "right_vertical_slider"
+		background = { #文本内容框
+			name = "Background"
+			spriteType ="GFX_tiled_paper_w_frame_bg"
+		}
+		instantTextboxType = {
+			name = "国家介绍"
+			position = { x = 30 y = 50 }
+			font = "hoi_24header"
+			text = "[gj_jie_shao]"
+			maxWidth = 690
+			maxHeight = 420
+		}
+	}
+	containerWindowType = {
+		name = "lu_xian_jie_shao_win"
+		position = { x = -300 y = 125 }
+		size = { width = 750 height = 600 }
+		orientation = UPPER_RIGHT
+		clipping = yes
+		moveable = no
+		verticalScrollbar = "right_vertical_slider"
+		background = {
+			name = "Background"
+			spriteType ="GFX_tiled_paper_w_frame_bg"
+		}
+		instantTextboxType = {
+			name = "路线指南"
+			position = { x = 30 y = 50 }
+			font = "hoi_24header"
+			text = "[lx_zhi_nan]"
+			maxWidth = 690
+			maxHeight = 420
+		}
+	}
+	containerWindowType = {
+		name = "mod_jie_shao_win"
+		position = { x = -300 y = 125 }
+		size = { width = 750 height = 600 }
+		orientation = UPPER_RIGHT
+		clipping = yes
+		moveable = no
+		verticalScrollbar = "right_vertical_slider"
+		background = {
+			name = "Background"
+			spriteType ="GFX_tiled_paper_w_frame_bg"
+		}
+		instantTextboxType = {
+			name = "模组介绍"
+			position = { x = 30 y = 50 }
+			font = "hoi_24header"
+			text = "mod_jie_shao_wen_ben"
+			maxWidth = 690
+			maxHeight = 420
+		}
+	}
+	containerWindowType = {
+		name = "mod_te_se_win"
+		position = { x = -300 y = 125 }
+		size = { width = 750 height = 600 }
+		orientation = UPPER_RIGHT
+		clipping = yes
+		moveable = no
+		verticalScrollbar = "right_vertical_slider"
+		background = {
+			name = "Background"
+			spriteType ="GFX_tiled_paper_w_frame_bg"
+		}
+		instantTextboxType = {
+			name = "模组特色"
+			position = { x = 30 y = 50 }
+			font = "hoi_24header"
+			text = "mod_te_se_ben"
+			maxWidth = 690
+			maxHeight = 420
+		}
+	}
+}
