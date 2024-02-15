@@ -7,22 +7,22 @@ bookmarks = {
 		default_country = "FRW"
 		default = yes
 		
-		"FRW"={
-			history = "FRW_GATHERING_STORM_DESC"
-			ideology = democratic_socialism
-			ideas = {
-				FRW_Chaotic_socialism
-				FRW_Inefficient_industry
-				FRW_Dissidents_army
-			}
-			focuses = {
-				FRW_focus1
-				FRW_focus2
-				FRW_focus3
-				FRW_focus4
-				FRW_focus5
-				FRW_focus6
-			}
+"FRW"={
+	history = "FRW_GATHERING_STORM_DESC"
+	ideology = democratic_socialism
+	ideas = {
+		FRW_Chaotic_socialism
+		FRW_Inefficient_industry
+		FRW_Dissidents_army
+	}
+	focuses = {
+		FRW_focus1
+		FRW_focus2
+		FRW_focus3
+		FRW_focus4
+		FRW_focus5
+		FRW_focus6
+	}
 		}
 "ENL"={
 	history = "ENL_GATHERING_STORM_DESC"
@@ -49,7 +49,7 @@ WWS_Labor_pioneer
 	focuses = {
 	}
 }
-"ITE"={
+"JPN"={
 	history = "ITE_GATHERING_STORM_DESC"
 	
 	ideology = monarchy
@@ -111,11 +111,10 @@ SHW_Diverse_Russia
 
 
 
-"JPN"={
+"ZHX"={
 	history = "JPN_GATHERING_STORM_DESC"
 	minor = yes
-	ideology = monarchy
-	
+	ideology = neutrality
 }
 
 
@@ -161,6 +160,10 @@ SHW_Diverse_Russia
 	minor = yes
 	ideology = monarchy
 	
+}
+effect = {
+	randomize_weather = 22345 # <- Obligatory in every bookmark !
+	#123 = { rain_light = yes }
 }
 }
 }

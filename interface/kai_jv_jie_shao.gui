@@ -22,10 +22,15 @@ guiTypes = {
 		moveable = yes
 		orientation = CENTER
 		origo = center
-		clipping = no
+		clipping = no 
 		background = {
 			name = "Background"
 			spriteType ="GFX_kai_jv_jie_shao_bian_kuang"
+		}
+		iconType ={
+			name ="Country_Introduction_pic"
+			quadTextureSprite = "GFX_FRW_Country_Introduction"
+			position = { x=215 y = 32 }
 		}
 		buttonType = {
 			name = "kai_jv_jie_shao_xuan_xiang1"
@@ -38,7 +43,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "kai_jv_jie_shao_xuan_xiang2"
-			position = { x = 30 y = 225 }
+			position = { x = 30 y = 185 }
 			quadTextureSprite ="GFX_kai_jv_jie_shao_xuan_xiang"
 			buttonFont = "hoi_24header"
 			Orientation = UPPER_LEFT
@@ -47,7 +52,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "kai_jv_jie_shao_xuan_xiang3"
-			position = { x = 30 y = 335 }
+			position = { x = 30 y = 245 }
 			quadTextureSprite ="GFX_kai_jv_jie_shao_xuan_xiang"
 			buttonFont = "hoi_24header"
 			Orientation = UPPER_LEFT
@@ -56,7 +61,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "kai_jv_jie_shao_xuan_xiang4"
-			position = { x = 30 y = 435 }
+			position = { x = 30 y = 305 }
 			quadTextureSprite ="GFX_kai_jv_jie_shao_xuan_xiang"
 			buttonFont = "hoi_24header"
 			Orientation = UPPER_LEFT
@@ -65,18 +70,27 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "kai_jv_jie_shao_win_ok"
-			position = { x = 30 y = 630 }
+			position = { x = 30 y = 380 }
 			quadTextureSprite ="GFX_kai_jv_jie_shao_xuan_xiang"
 			buttonFont = "hoi_24header"
 			Orientation = UPPER_LEFT
-			buttonText = "确认"
+			buttonText = "返回"
 			clicksound = click_ok
 			shortcut = "RETURN"
 		}
+        instantTextboxType = {
+			name = "Country_Introduction"
+			position = { x = 30 y = 50 }
+			font = "hoi_24header"
+			text = "Country_Introduction_text"
+			maxWidth = 190
+			maxHeight = 160
+		}
+        
 	}
 	containerWindowType = {
 		name = "guo_jia_jie_shao_win"
-		position = { x = -300 y = 125 }
+		position = { x = -505 y = 135 }
 		size = { width = 750 height = 600 }
 		orientation = UPPER_RIGHT
 		clipping = yes
@@ -84,20 +98,21 @@ guiTypes = {
 		verticalScrollbar = "right_vertical_slider"
 		background = { #文本内容框
 			name = "Background"
-			spriteType ="GFX_tiled_paper_w_frame_bg"
+			spriteType ="GFX_Opening_Introduction_back"
 		}
 		instantTextboxType = {
 			name = "国家介绍"
-			position = { x = 30 y = 50 }
+			position = { x = 20 y = 20 }
 			font = "hoi_24header"
 			text = "[gj_jie_shao]"
 			maxWidth = 690
 			maxHeight = 420
 		}
+		
 	}
 	containerWindowType = {
 		name = "lu_xian_jie_shao_win"
-		position = { x = -300 y = 125 }
+		position = { x = -505 y = 135 }
 		size = { width = 750 height = 600 }
 		orientation = UPPER_RIGHT
 		clipping = yes
@@ -105,11 +120,11 @@ guiTypes = {
 		verticalScrollbar = "right_vertical_slider"
 		background = {
 			name = "Background"
-			spriteType ="GFX_tiled_paper_w_frame_bg"
+			spriteType ="GFX_Opening_Introduction_back"
 		}
 		instantTextboxType = {
 			name = "路线指南"
-			position = { x = 30 y = 50 }
+			position = { x = 20 y = 20 }
 			font = "hoi_24header"
 			text = "[lx_zhi_nan]"
 			maxWidth = 690
@@ -118,7 +133,7 @@ guiTypes = {
 	}
 	containerWindowType = {
 		name = "mod_jie_shao_win"
-		position = { x = -300 y = 125 }
+		position = { x = -505 y = 135 }
 		size = { width = 750 height = 600 }
 		orientation = UPPER_RIGHT
 		clipping = yes
@@ -126,11 +141,11 @@ guiTypes = {
 		verticalScrollbar = "right_vertical_slider"
 		background = {
 			name = "Background"
-			spriteType ="GFX_tiled_paper_w_frame_bg"
+			spriteType ="GFX_Opening_Introduction_back"
 		}
 		instantTextboxType = {
 			name = "模组介绍"
-			position = { x = 30 y = 50 }
+			position = { x = 20 y = 20 }
 			font = "hoi_24header"
 			text = "mod_jie_shao_wen_ben"
 			maxWidth = 690
@@ -139,7 +154,7 @@ guiTypes = {
 	}
 	containerWindowType = {
 		name = "mod_te_se_win"
-		position = { x = -300 y = 125 }
+		position = { x = -505 y = 135 }
 		size = { width = 750 height = 600 }
 		orientation = UPPER_RIGHT
 		clipping = yes
@@ -147,14 +162,14 @@ guiTypes = {
 		verticalScrollbar = "right_vertical_slider"
 		background = {
 			name = "Background"
-			spriteType ="GFX_tiled_paper_w_frame_bg"
+			spriteType ="GFX_Opening_Introduction_back"
 		}
 		instantTextboxType = {
 			name = "模组特色"
-			position = { x = 30 y = 50 }
+			position = { x = 20 y = 20 }
 			font = "hoi_24header"
 			text = "mod_te_se_ben"
-			maxWidth = 690
+			maxWidth = 560
 			maxHeight = 420
 		}
 	}
