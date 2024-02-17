@@ -18,7 +18,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "kai_jv_jie_shao_win"
 		position = { x = 0 y = 0 }
-		size = { width = 720 height = 800 }
+		size = { width = 720 height = 500 }
 		moveable = yes
 		orientation = CENTER
 		origo = center
@@ -27,13 +27,10 @@ guiTypes = {
 			name = "Background"
 			spriteType ="GFX_kai_jv_jie_shao_bian_kuang"
 		}
-		instantTextboxType = {
-			name = "国家介绍"
-			position = { x=215 y = 62 }
-			font = "hoi_24header"
-			text = "[CountryIntroductionpicture]"
-			maxWidth = 690
-			maxHeight = 420
+		iconType ={
+			name ="Country_Introduction_pic"
+			quadTextureSprite = "GFX_FRW_Country_Introduction"
+			position = { x=215 y = 32 }
 		}
 		buttonType = {
 			name = "kai_jv_jie_shao_xuan_xiang1"
@@ -94,11 +91,10 @@ guiTypes = {
 	containerWindowType = {
 		name = "guo_jia_jie_shao_win"
 		position = { x = -505 y = 135 }
-		size = { width = 750 height = 600 }
+		size = { width = 570 height = 260 }
 		orientation = UPPER_RIGHT
 		clipping = yes
 		moveable = no
-		verticalScrollbar = "right_vertical_slider"
 		background = { #文本内容框
 			name = "Background"
 			spriteType ="GFX_Opening_Introduction_back"
@@ -108,19 +104,19 @@ guiTypes = {
 			position = { x = 20 y = 20 }
 			font = "hoi_24header"
 			text = "[gj_jie_shao]"
-			maxWidth = 690
-			maxHeight = 420
+			maxWidth = 567
+			maxHeight = 260
+			scrollbartype = "standardtext_slider"
 		}
 		
 	}
 	containerWindowType = {
 		name = "lu_xian_jie_shao_win"
 		position = { x = -505 y = 135 }
-		size = { width = 750 height = 600 }
+		size = { width = 570 height = 260 }
 		orientation = UPPER_RIGHT
 		clipping = yes
 		moveable = no
-		verticalScrollbar = "right_vertical_slider"
 		background = {
 			name = "Background"
 			spriteType ="GFX_Opening_Introduction_back"
@@ -130,18 +126,18 @@ guiTypes = {
 			position = { x = 20 y = 20 }
 			font = "hoi_24header"
 			text = "[lx_zhi_nan]"
-			maxWidth = 690
-			maxHeight = 420
+			maxWidth = 567
+			maxHeight = 260
+			scrollbartype = "standardtext_slider" #滑轮
 		}
 	}
 	containerWindowType = {
 		name = "mod_jie_shao_win"
 		position = { x = -505 y = 135 }
-		size = { width = 750 height = 600 }
+		size = { width = 570 height = 260 }
 		orientation = UPPER_RIGHT
 		clipping = yes
 		moveable = no
-		verticalScrollbar = "right_vertical_slider"
 		background = {
 			name = "Background"
 			spriteType ="GFX_Opening_Introduction_back"
@@ -151,18 +147,18 @@ guiTypes = {
 			position = { x = 20 y = 20 }
 			font = "hoi_24header"
 			text = "mod_jie_shao_wen_ben"
-			maxWidth = 690
-			maxHeight = 420
+			maxWidth = 567
+			maxHeight = 260
+			scrollbartype = "standardtext_slider"
 		}
 	}
 	containerWindowType = {
 		name = "mod_te_se_win"
 		position = { x = -505 y = 135 }
-		size = { width = 750 height = 600 }
+		size = { width = 570 height = 260 }
 		orientation = UPPER_RIGHT
 		clipping = yes
 		moveable = no
-		verticalScrollbar = "right_vertical_slider"
 		background = {
 			name = "Background"
 			spriteType ="GFX_Opening_Introduction_back"
@@ -172,8 +168,9 @@ guiTypes = {
 			position = { x = 20 y = 20 }
 			font = "hoi_24header"
 			text = "mod_te_se_ben"
-			maxWidth = 560
-			maxHeight = 420
+			maxWidth = 567
+			maxHeight = 260
+			scrollbartype = "standardtext_slider"
 		}
 	}
 }
