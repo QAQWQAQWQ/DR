@@ -34,6 +34,14 @@ FRW_peace= {
 	enemy_declare_war_tension = 0.5
 }
 
+Is_expropriated= {
+	enable = { always = yes }
+
+	country_resource_grain = 5
+	state_resource_cost_grain = 5
+}
+
+
 FRW_focus71_modifier= {
 	enable = { always = yes }
 	

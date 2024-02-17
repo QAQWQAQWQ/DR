@@ -27,10 +27,13 @@ guiTypes = {
 			name = "Background"
 			spriteType ="GFX_kai_jv_jie_shao_bian_kuang"
 		}
-		iconType ={
-			name ="Country_Introduction_pic"
-			quadTextureSprite = "GFX_FRW_Country_Introduction"
-			position = { x=215 y = 32 }
+		instantTextboxType = {
+			name = "国家介绍"
+			position = { x=215 y = 62 }
+			font = "hoi_24header"
+			text = "[CountryIntroductionpicture]"
+			maxWidth = 690
+			maxHeight = 420
 		}
 		buttonType = {
 			name = "kai_jv_jie_shao_xuan_xiang1"

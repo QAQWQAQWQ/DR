@@ -1,8 +1,12 @@
 defined_text = { 
 	name = CountryIntroductionpicture
 	text = {
+		trigger = { NOT={original_tag = FRW} }
+		localization_key = Country_Introduction
+   }
+	text = {
 		 trigger = { original_tag = FRW }
-		 localization_key = GFX_FRW_Country_Introduction
-
-}
+		 localization_key = FRW_Country_Introduction
+    }
+	
 }

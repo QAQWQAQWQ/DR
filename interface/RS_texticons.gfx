@@ -182,8 +182,13 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_country_map_TEQ"
-		texturefile = "gfx/interface/textpicture/country_map_TEQ.png"
+		name = "GFX_FRW_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/FRW_Country_Introduction.png"
 		legacy_lazy_load = no
-	}														
+	}
+	spriteType = {
+		name = "GFX_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/Country_Introduction.png"
+		legacy_lazy_load = no
+	}													
 }
