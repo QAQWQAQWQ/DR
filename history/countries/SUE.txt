@@ -76,7 +76,7 @@ recruit_character = SUE_Georgi_Chicherin
 	}
 
 set_politics = {
-	ruling_party = Bolshevik
+	ruling_party = Revolutionism
 	last_election = "1919.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -96,5 +96,5 @@ Staterun_economy
 Planned_economy
 }
 set_popularities = {
-	Bolshevik = 100
+	Revolutionism = 100
 }

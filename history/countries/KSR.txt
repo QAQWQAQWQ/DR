@@ -31,7 +31,7 @@ recruit_character = KSR_Kronstadt_sailor
 	}
 
 set_politics = {
-	ruling_party = Anarchopedia
+	ruling_party = Anarchism
 	last_election = "1919.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -49,5 +49,5 @@ Staterun_economy
 Planned_economy
 }
 set_popularities = {
-	Anarchopedia = 100
+	Anarchism = 100
 }

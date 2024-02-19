@@ -584,7 +584,7 @@ completion_reward = {
 		x = 40
 		y = 2
 		completion_reward = {
-		set_politics = { ruling_party = neutrality elections_allowed = no }
+		set_politics = { ruling_party = Conservatism elections_allowed = no }
 	}
 }
 	focus = {
@@ -598,7 +598,7 @@ completion_reward = {
 		x = 37
 		y = 3
 		completion_reward={
-		add_popularity = { ideology = communism popularity = -0.1 }
+		add_popularity = { ideology = Revolutionism popularity = -0.1 }
 	}
 }
 	focus = {
@@ -611,7 +611,7 @@ completion_reward = {
 		x = 37
 		y = 4
 		completion_reward={
-			add_popularity = { ideology = democratic popularity = -0.1 }
+			add_popularity = { ideology = Liberalism popularity = -0.1 }
 		}
 	}
 	focus = {
@@ -823,7 +823,7 @@ completion_reward = {
 		x = 45
 		y = 3
 		completion_reward = {
-			set_politics = { ruling_party = social_democrat elections_allowed = yes }
+			set_politics = { ruling_party = Reformism elections_allowed = yes }
 		}
 	}
 	focus = {
@@ -850,7 +850,7 @@ completion_reward = {
 		x = 49
 		y = 3
 		completion_reward = {
-			set_politics = { ruling_party = democratic elections_allowed = yes }
+			set_politics = { ruling_party = Liberalism elections_allowed = yes }
 		}
 	}
 	focus = {
@@ -910,7 +910,7 @@ completion_reward = {
 		x = 55
 		y = 2
 		completion_reward = {
-			set_politics = { ruling_party = authoritarian elections_allowed = yes }
+			set_politics = { ruling_party = Conservatism elections_allowed = yes }
 		}
 		
 	}

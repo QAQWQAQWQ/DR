@@ -48,7 +48,7 @@ recruit_character = KGL_Ignacy_Paderewski
 	}
 
 set_politics = {
-	ruling_party = authoritarian
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -62,8 +62,8 @@ Staterun_economy
 Part_of_Habsburgs
 }
 set_popularities = {
-	democratic = 5
-	national_populist = 1
-	authoritarian = 89
-	communism = 5
+	Liberalism = 5
+	Reactionary = 1
+	Conservatism = 89
+	Revolutionism = 5
 }

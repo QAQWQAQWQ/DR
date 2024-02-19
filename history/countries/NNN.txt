@@ -42,14 +42,14 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = Revolutionism
 	last_election = "1920.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	communism = 100
+	Revolutionism = 100
 }
 create_country_leader = {
 	name = "无人地区"

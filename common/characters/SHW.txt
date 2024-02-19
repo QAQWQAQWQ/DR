@@ -24,7 +24,7 @@ characters={ #skilled_staffer #Lieutenant_general
 			}
 		}
 		country_leader={
-			ideology=royalists
+			ideology=Classicism_Conservatism
 			desc=SHW_NicholasII_desc
 			traits={ autocratic_imperialist }
 			expire="1965.1.1.1"
@@ -39,7 +39,7 @@ characters={ #skilled_staffer #Lieutenant_general
 			}
 		}
 		country_leader={
-			ideology=royalists
+			ideology=Classicism_Conservatism
 			#desc=SHW_NicholasII_desc
 			traits={  }
 			expire="1965.1.1.1"
@@ -90,7 +90,7 @@ characters={ #skilled_staffer #Lieutenant_general
 			}
 		}
 		country_leader={
-			ideology=national_populist_type
+			ideology=Nationalism_Conservatism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -138,7 +138,7 @@ characters={ #skilled_staffer #Lieutenant_general
 			}
 		}
 		country_leader={
-			ideology=Reform_socialism_type
+			ideology=Social_Reformism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -194,7 +194,7 @@ characters={ #skilled_staffer #Lieutenant_general
 			}
 		}
 		country_leader={
-			ideology=Right_populism_type
+			ideology=Populism_Reactionary
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -227,7 +227,7 @@ characters={ #skilled_staffer #Lieutenant_general
 			}
 		}
 		country_leader={
-			ideology=national_populist_type
+			ideology=Nationalism_Conservatism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -241,7 +241,7 @@ characters={ #skilled_staffer #Lieutenant_general
 			}
 		}
 		country_leader={
-			ideology=Reform_socialism_type
+			ideology=Social_Reformism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -255,7 +255,7 @@ characters={ #skilled_staffer #Lieutenant_general
 			}
 		}
 		country_leader={
-			ideology=social_democrat_type
+			ideology=Social_Reformism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -270,7 +270,7 @@ characters={ #skilled_staffer #Lieutenant_general
 			}
 		}
 		country_leader={
-			ideology=liberalism
+			ideology=Socialism_Liberalism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -307,7 +307,7 @@ characters={ #skilled_staffer #Lieutenant_general
 			}
 		}
 		country_leader={
-			ideology=liberalism
+			ideology=Socialism_Liberalism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -338,7 +338,7 @@ characters={ #skilled_staffer #Lieutenant_general
 			}
 		}
 		country_leader={
-			ideology=social_democrat_type
+			ideology=Social_Reformism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -367,7 +367,7 @@ characters={ #skilled_staffer #Lieutenant_general
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=Authoritarianism_Conservatism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -779,7 +779,7 @@ SHW_Vladimir_Sukhomlinov={
 		}
 	}
 	country_leader={
-		ideology=military_government_type
+		ideology=Authoritarianism_Conservatism
 		desc=SHW_LavrKornilov_desc
 		traits={  }
 		expire="1965.1.1.1"
@@ -941,7 +941,7 @@ SHW_Nikolai_Romanov={
 	logistics_skill=2
 }
 country_leader={
-	ideology=royalists
+	ideology=Classicism_Conservatism
 	#desc=SHW_NicholasII_desc
 	traits={  }
 	expire="1965.1.1.1"
@@ -1100,7 +1100,7 @@ SHW_Pyotr_Alexeyevich_Kropotkin={
 			original_tag = SHW
 		}
 		available = {
-			has_government = Anarchopedia
+			has_government = Anarchism
 		  }
 		traits = {
 			anarchist_zeal

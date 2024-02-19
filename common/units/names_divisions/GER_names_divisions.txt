@@ -947,8 +947,8 @@ GER_MONMOB_01 =
 
 	can_use = { 
 		OR = {
-			has_government = neutrality 
-			has_government = democratic 
+			has_government = Conservatism 
+			has_government = Liberalism 
 		}
 	}
 

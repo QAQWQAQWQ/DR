@@ -48,7 +48,7 @@ recruit_character = DRM_Ion_Inculet
 	}
 
 set_politics = {
-	ruling_party = Conservative_democracy
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -58,5 +58,5 @@ add_ideas = {
 
 }
 set_popularities = {
-	Conservative_democracy = 100
+	Conservatism = 100
 }

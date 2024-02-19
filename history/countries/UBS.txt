@@ -80,7 +80,7 @@ add_ideas = {
 	UBS_Jim_Crow_laws
 }
 set_politics = {
-	ruling_party = democratic
+	ruling_party = Liberalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -91,11 +91,7 @@ Basic_industrialization
 Private_economy
 }
 set_popularities = {
-	democratic = 45 
-	national_populist = 1
-	neutrality = 7
-	communism = 7
-	authoritarian = 30
-	social_democrat = 5
-	radical_socialist = 5
+	Liberalism = 85 
+	Conservatism = 15
+	Reformism = 0
 }

@@ -39,7 +39,7 @@ recruit_character = DCK_Kalekin
 	}
 
 set_politics = {
-	ruling_party = military_government
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -49,5 +49,5 @@ add_ideas = {
 
 }
 set_popularities = {
-	military_government = 100
+	Conservatism = 100
 }

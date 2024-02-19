@@ -30,11 +30,11 @@ completion_reward = {
 		y = 1
 completion_reward = {
 	add_popularity = {
-		ideology = Islamic
+		ideology = Conservatism
 		popularity = -0.05
 	}
 	add_popularity = {
-		ideology = national_populist
+		ideology = Reactionary
 		popularity = -0.05
 	}
 	country_event = KLD.3
@@ -64,7 +64,7 @@ completion_reward = {
 		y = 1
 completion_reward = {
 	add_popularity = {
-		ideology = neutrality
+		ideology = Conservatism
 		popularity = 0.1
 	}
 }
@@ -90,11 +90,11 @@ hidden_effect = {
 	country_event = {id=KLD.6 days=45}
 }
 		add_popularity = {
-			ideology = Islamic
+			ideology = Conservatism
 			popularity = 0.25
 		}
 		set_party_name = { 
-			ideology = Islamic
+			ideology = Conservatism
 			long_name = KLD_Islamic_new_long 
 			name = KLD_Islamic_new
 		}

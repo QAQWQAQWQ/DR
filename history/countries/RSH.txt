@@ -44,14 +44,14 @@ add_ideas = {
 	secondary_school
 }
 set_politics = {
-	ruling_party = democratic
+	ruling_party = Liberalism
 	last_election = "1921.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	national_populist = 15
-	democratic = 80
-	neutrality = 5
+	Reactionary = 15
+	Liberalism = 80
+	Conservatism = 5
 }

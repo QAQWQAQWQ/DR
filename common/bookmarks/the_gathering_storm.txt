@@ -9,7 +9,7 @@ bookmarks = {
 		
 "FRW"={
 	history = "FRW_GATHERING_STORM_DESC"
-	ideology = democratic_socialism
+	ideology = Reformism
 	ideas = {
 		FRW_Chaotic_socialism
 		FRW_Inefficient_industry
@@ -27,7 +27,7 @@ bookmarks = {
 "ENL"={
 	history = "ENL_GATHERING_STORM_DESC"
 	
-	ideology = democratic
+	ideology = Liberalism
 	ideas = {
 		sun_Empire
 England
@@ -40,7 +40,7 @@ Colonial_ties
 "WWS"={
 	history = "WWS_GATHERING_STORM_DESC"
 	
-	ideology = monarchy
+	ideology = Conservatism
 	ideas = {
 WWS_The_victor
 WWS_Songun_Policy
@@ -52,7 +52,7 @@ WWS_Labor_pioneer
 "JPN"={
 	history = "ITE_GATHERING_STORM_DESC"
 	
-	ideology = monarchy
+	ideology = Conservatism
 	ideas = {
 	}
 	focuses = {
@@ -61,7 +61,7 @@ WWS_Labor_pioneer
 "AOX"={
 	history = "AOX_GATHERING_STORM_DESC"
 	
-	ideology = monarchy
+	ideology = Conservatism
 	ideas = {
 AOX_Hungarian_independence_movement
 Deutscher_Bund
@@ -73,7 +73,7 @@ Deutscher_Zollverein
 "SHW"={
 	history = "SHW_GATHERING_STORM_DESC"
 	
-	ideology = monarchy
+	ideology = Conservatism
 	ideas = {
 SHW_Corrupt_army
 SHW_Stolypin_legacy
@@ -92,7 +92,7 @@ SHW_Diverse_Russia
 "SBY"={
 	history = "SBY_GATHERING_STORM_DESC"
 	
-	ideology = monarchy
+	ideology = Conservatism
 	ideas = {
 	}
 	focuses = {
@@ -101,7 +101,7 @@ SHW_Diverse_Russia
 "TEQ"={
 	history = "TEQ_GATHERING_STORM_DESC"
 	
-	ideology = monarchy
+	ideology = Conservatism
 	ideas = {
 	}
 	focuses = {
@@ -111,54 +111,54 @@ SHW_Diverse_Russia
 
 
 
-"ZHX"={
+"BXM"={
 	history = "JPN_GATHERING_STORM_DESC"
 	minor = yes
-	ideology = neutrality
+	ideology = Conservatism
 }
 
 
 "BRA"={
 	history = "NPL_GATHERING_STORM_DESC"
 	minor = yes
-	ideology = monarchy
+	ideology = Conservatism
 	
 }
 "NPL"={
 	history = "NPL_GATHERING_STORM_DESC"
 	minor = yes
-	ideology = monarchy
+	ideology = Conservatism
 	
 }
 
 "DOR"={
 	history = "DOR_GATHERING_STORM_DESC"
 	minor = yes
-	ideology = monarchy
+	ideology = Conservatism
 	
 }
 "DMW"={
 	history = "NPL_GATHERING_STORM_DESC"
 	minor = yes
-	ideology = monarchy
+	ideology = Conservatism
 	
 }
 "NUW"={
 	history = "NPL_GATHERING_STORM_DESC"
 	minor = yes
-	ideology = monarchy
+	ideology = Conservatism
 	
 }
 "RUD"={
 	history = "NPL_GATHERING_STORM_DESC"
 	minor = yes
-	ideology = monarchy
+	ideology = Conservatism
 	
 }
 "YEL"={
 	history = "NPL_GATHERING_STORM_DESC"
 	minor = yes
-	ideology = monarchy
+	ideology = Conservatism
 	
 }
 effect = {

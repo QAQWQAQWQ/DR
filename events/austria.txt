@@ -602,14 +602,14 @@ news_event = {
 		add_civil_war_target = KLD
 		hidden_effect = {
 		set_popularities = {
-			democratic = 50
-			neutrality = 15
-			national_populist = 30
+			Liberalism = 50
+			Conservatism = 15
+			Reactionary = 30
 		}
 		}
 		remove_ideas = Part_of_Habsburgs
 		set_politics = {
-			ruling_party = democratic
+			ruling_party = Liberalism
 			elections_allowed = no
 		}
 		    transfer_state = 76								

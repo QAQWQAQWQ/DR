@@ -42,7 +42,7 @@ set_technology = {
 	}
 	
 set_politics = {
-	ruling_party = authoritarian
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -60,9 +60,9 @@ add_ideas = {
 	Private_economy
 }
 set_popularities = {
-	social_democrat = 0
-	national_populist = 35
-	monarchy = 0
-	authoritarian = 40
-	aryan_secretology = 25
+	Reformism = 0
+	Reactionary = 35
+	Conservatism = 0
+	Conservatism = 40
+	Reactionary = 25
 }

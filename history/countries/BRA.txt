@@ -42,13 +42,13 @@ BRA_Coffee_bean_economy
 
 }
 	set_politics = {
-		ruling_party = monarchy
+		ruling_party = Conservatism
 		last_election = "1934.7.17"
 		election_frequency = 48
 		elections_allowed = no
 	}
 	set_popularities = {
-		monarchy = 100
+		Conservatism = 100
 	}
 
 

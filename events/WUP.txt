@@ -16,17 +16,17 @@ country_event = {
 			retire_country_leader = yes
 			remove_ideas=WUP_Tension_movement
 			set_politics = {
-				ruling_party = communism
+				ruling_party = Revolutionism
 				elections_allowed = yes
 				last_election = "1925.1.17"
 				election_frequency = 48
 			}
 			hidden_effect={
 			set_popularities = {
-               communism = 65
-			   social_democrat = 10
-			   Anarchopedia = 15
-			   democratic = 10
+               Revolutionism = 65
+			   Reformism = 10
+			   Anarchism = 15
+			   Liberalism = 10
 			}
 		}
 			ai_chance = {
@@ -42,16 +42,16 @@ country_event = {
 		retire_country_leader = yes	
 		remove_ideas=WUP_Tension_movement
 		set_politics = {
-			ruling_party = authoritarian
+			ruling_party = Conservatism
 			elections_allowed = no
 			election_frequency = 48
 		}
 		hidden_effect={
 		set_popularities = {
-			authoritarian = 45
-			social_democrat = 10
-			communism = 25
-			democratic = 20
+			Conservatism = 45
+			Reformism = 10
+			Revolutionism = 25
+			Liberalism = 20
 		 }
 		}
 		ai_chance = {

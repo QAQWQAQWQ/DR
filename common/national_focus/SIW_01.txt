@@ -41,12 +41,12 @@ completion_reward = {
 completion_reward = {
 	
 add_popularity = {
-	ideology = social_democrat
+	ideology = Reformism
 	popularity = 0.3
 }
 hidden_effect = {
 	add_popularity = {
-	ideology = monarchy
+	ideology = Conservatism
     popularity = -0.3
 }
 }
@@ -431,7 +431,7 @@ completion_reward = {
 		y = 3
 completion_reward = {
 	add_popularity = {
-		ideology = democratic
+		ideology = Liberalism
 		popularity = 0.1
 	}
 	country_event = {id=SIW.7}
@@ -525,7 +525,7 @@ completion_reward = {
 completion_reward = {
 	add_war_support = 0.05
 	set_party_name = { 
-		ideology = monarchy 
+		ideology = Conservatism 
 		long_name = SIW_monarchy_party2_long 
 		name = SIW_monarchy_party2
 	}
@@ -547,7 +547,7 @@ completion_reward = {
 	
 		add_trait = {
 		character = SIW_Peter_I
-		ideology = royalists
+		ideology = Classicism_Conservatism
 		trait = highly_respected_king
 	}
 		

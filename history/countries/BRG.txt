@@ -47,11 +47,11 @@ recruit_character = BRG_Marshal_Rondon
 	}
 
 set_politics = {
-	ruling_party = military_government
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 set_popularities = {
-	military_government  = 100
+	Conservatism  = 100
 }

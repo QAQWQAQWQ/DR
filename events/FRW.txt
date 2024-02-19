@@ -201,7 +201,7 @@ country_event = {
 		is_triggered_only = yes
 		fire_only_once = yes
 		trigger = {
-			Anarchopedia > 0.25
+			Anarchism > 0.25
 			}
 		option = {
 		name = FRW.10.a
@@ -244,7 +244,7 @@ country_event = {
 			name = FRW.12.b
 			country_event = { id = FRW.13 days = 12 }
 			add_popularity = {
-				ideology = Anarchopedia
+				ideology = Anarchism
 				popularity = 0.15
 			}
 		    }
@@ -261,7 +261,7 @@ country_event = {
 		option = {
 		    name = FRW.13.a
 			add_popularity = {
-				ideology = Anarchopedia
+				ideology = Anarchism
 				popularity = 0.55
 			}
 			}
@@ -342,21 +342,21 @@ country_event = {
 	option = {
 		name = FRW.17.b
 		add_popularity = {
-			ideology = national_populist
+			ideology = Reactionary
 			popularity = 0.03
 		}
 			}
 	option = {
 	    name = FRW.17.c
 		add_popularity = {
-			ideology = communism
+			ideology = Revolutionism
 			popularity = 0.03
 		}
 		}
 	option = {
 	    name = FRW.17.D
 		add_popularity = {
-			ideology = social_democrat
+			ideology = Reformism
 			popularity = 0.03
 		}
 		}				
@@ -645,7 +645,7 @@ country_event = {
 	option = {
 		name = FRW.35.a
 		set_politics = {
-			ruling_party = Reform_socialism
+			ruling_party = Reformism
 		}
 		set_country_flag = FRW_focus47_Flag1
 		mark_focus_tree_layout_dirty = yes
@@ -656,13 +656,13 @@ country_event = {
 			character = FRW_Leon_Blum
 			promote_leader = yes
 			country_leader = {
-				ideology = democratic_socialism_type
+				ideology = Democracy_Reformism
 				expire = "1965.1.1.1"
 				traits = { }
 			}
 		}
 		set_politics = {
-			ruling_party = democratic_socialism
+			ruling_party = Reformism
 		}
 		set_country_flag = FRW_focus47_Flag2
 		mark_focus_tree_layout_dirty = yes
@@ -678,7 +678,7 @@ country_event = {
 	option = {
 		name = FRW.35.e
 		set_politics = {
-			ruling_party = communism
+			ruling_party = Revolutionism
 		}
 		custom_effect_tooltip = FRW_35.e
 		mark_focus_tree_layout_dirty = yes

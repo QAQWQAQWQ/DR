@@ -288,7 +288,7 @@ country_event = {
 	picture = GFX_sax_problem_4_pict
 	trigger = {
 		original_tag = DOS
-		has_government = authoritarian
+		has_government = Conservatism
 		check_variable = {
 			global.sax_war = 1
 		}
@@ -343,7 +343,7 @@ country_event = {
 	picture = GFX_sax_problem_5_pict
 	trigger = {
 		original_tag = DOS
-		has_government = monarchy
+		has_government = Conservatism
 		check_variable = {
 			global.sax_war = 1
 		}

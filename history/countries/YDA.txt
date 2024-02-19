@@ -49,15 +49,15 @@ recruit_character = YDA_Frederic_John_Napier_Thesiger
 	}
 add_ideas = {YDA_kingdoms_land }
 set_politics = {
-	ruling_party = authoritarian
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	national_populist = 39
-	authoritarian = 41
-	neutrality = 15
-	communism = 5
+	Reactionary = 39
+	Conservatism = 41
+	Conservatism = 15
+	Revolutionism = 5
 }

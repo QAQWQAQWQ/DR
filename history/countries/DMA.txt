@@ -47,7 +47,7 @@ recruit_character = DMA_Francisco_Hilario_Henriquez_Carvajal
 	}
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -56,6 +56,6 @@ add_ideas={
 #law
 }
 set_popularities = {
-                democratic = 32
-	neutrality = 68
+                Liberalism = 32
+	Conservatism = 68
 }

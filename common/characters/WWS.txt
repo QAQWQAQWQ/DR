@@ -7,7 +7,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=royalists
+			ideology=Classicism_Conservatism
             desc=WWS_WilliamII_DESC
 			traits={ autocratic_imperialist }
 			expire="1965.1.1.1"
@@ -22,7 +22,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Reform_socialism_type
+			ideology=Social_Reformism
             desc=WWS_Ebert_DESC
 			traits={ }
 			expire="1965.1.1.1"
@@ -37,7 +37,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Right_populism_type
+			ideology=Populism_Reactionary
             desc=WWS_Wolfgang_Kapp_DESC
 			traits={ popular_figurehead2 }
 			expire="1965.1.1.1"
@@ -185,7 +185,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=national_populist_type
+			ideology=Nationalism_Conservatism
             desc=WWS_Gregor_Strasser_DESC
 			traits={ }
 			expire="1965.1.1.1"
@@ -200,7 +200,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Reform_socialism_type
+			ideology=Social_Reformism
             desc=WWS_eduard_bernstein_DESC
 			traits={ }
 			expire="1965.1.1.1"

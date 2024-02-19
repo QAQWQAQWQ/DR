@@ -12,16 +12,12 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
+recruit_character = SHW_NicholasII
 recruit_character = SHW_Kerensky
 recruit_character = SHW_Georgy_Lviv
 recruit_character = SHW_Pavel_Milyukov
-
-
-recruit_character = SHW_NicholasII
 recruit_character = SHW_Kirill_Vladimirovich
 recruit_character = SHW_Nikolai_Romanov
-
-
 recruit_character = SHW_Kolchak
 recruit_character = SHW_Nikolayevich_Wrangel
 recruit_character = SHW_LavrKornilov
@@ -386,7 +382,7 @@ create_intelligence_agency = {
 		icon = GFX_intelligence_agency_logo_SHW
 }
 set_politics = {
-	ruling_party = monarchy
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -400,12 +396,12 @@ puppet = HLS
 country_event = { id = SHW.27 days = 64 }
 
 set_popularities = {
-	national_populist = 6
-	monarchy = 59
-	Reform_socialism = 3
-	social_democrat = 6
-	democratic = 6
-	neutrality = 20
+	Reactionary = 6
+	Conservatism = 59
+	Reformism = 3
+	Reformism = 6
+	Liberalism = 6
+	Conservatism = 20
 }
 set_variable = { SHW_Loyalty = 85 }
 

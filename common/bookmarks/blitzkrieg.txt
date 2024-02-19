@@ -8,7 +8,7 @@ bookmarks = {
 	
 		FRW = {
 			history = FRA_BLITZKRIEG_DESC
-			ideology = democratic
+			ideology = Liberalism
 			ideas={
 				FRA_victors_of_wwi
 				FRA_disjointed_government
@@ -22,7 +22,7 @@ bookmarks = {
 		}
 		USA = {
 			history = USA_BLITZKRIEG_DESC
-			ideology = democratic
+			ideology = Liberalism
 			ideas = {
 				home_of_the_free
 				great_depression_3
@@ -38,7 +38,7 @@ bookmarks = {
 		}
 		ENL = {
 			history = ENG_BLITZKRIEG_DESC
-			ideology = democratic
+			ideology = Liberalism
 			ideas = {
 				stiff_upper_lip
 				ENG_the_war_to_end_all_wars
@@ -97,7 +97,7 @@ bookmarks = {
 		}
 		SHW = {
 			history = SOV_BLITZKRIEG_DESC
-			ideology = communism
+			ideology = Revolutionism
 			ideas = {
 				SOV_anti_soviet_military_thinking_banned_navy
 				SOV_second_five_year_plan_fake_1939_ns
@@ -118,7 +118,7 @@ bookmarks = {
 		"CNA"={
 			minor = yes
 			history = "CAN_BLITZKRIEG_DESC"
-			ideology = democratic
+			ideology = Liberalism
 			ideas = {
 				CAN_great_depression_1
 				CAN_conscription_crisis
@@ -132,7 +132,7 @@ bookmarks = {
 		"ASZ"={
 			minor = yes
 			history = "AST_BLITZKRIEG_DESC"
-			ideology = democratic
+			ideology = Liberalism
 			ideas = {
 				AST_great_depression_1
 			}
@@ -145,7 +145,7 @@ bookmarks = {
 		"NZL"={
 			minor = yes
 			history = "NZL_BLITZKRIEG_DESC"
-			ideology = democratic
+			ideology = Liberalism
 			ideas = {
 				
 			}
@@ -158,7 +158,7 @@ bookmarks = {
 		"DSN"={
 			minor = yes
 			history = "SAF_BLITZKRIEG_DESC"
-			ideology = democratic
+			ideology = Liberalism
 			ideas = {
 				SAF_ossewabrandwag
 				SAF_history_of_segregation
@@ -172,7 +172,7 @@ bookmarks = {
 		"RAJ"={
 			minor = yes
 			history = "RAJ_BLITZKRIEG_DESC"
-			ideology = neutrality
+			ideology = Conservatism
 			ideas = {
 				RAJ_agrarian_society
 				RAJ_princely_states
@@ -186,7 +186,7 @@ bookmarks = {
 		"HUN"={
 			minor = yes
 			history = "HUN_BLITZKRIEG_DESC"
-			ideology = neutrality
+			ideology = Conservatism
 			ideas = {
 				HUN_treaty_of_triannon_3
 				HUN_interventionism
@@ -202,7 +202,7 @@ bookmarks = {
 		"ROM"={
 			minor = yes
 			history = "ROM_BLITZKRIEG_DESC"
-			ideology = neutrality
+			ideology = Conservatism
 			ideas = {
 				ROM_king_carol_ii_hedonist
 				ROM_preserve_greater_romania
@@ -218,7 +218,7 @@ bookmarks = {
 		"YUG"={
 			minor = yes
 			history = "YUG_BLITZKRIEG_DESC"
-			ideology = neutrality
+			ideology = Conservatism
 			ideas = {
 				anti_german_military
 				YUG_idea_croatian_opposition
@@ -233,7 +233,7 @@ bookmarks = {
 		"CHI"={
 			minor = yes
 			history = "CHI_BLITZKRIEG_DESC"
-			ideology = neutrality
+			ideology = Conservatism
 			ideas = {
 				CHI_army_corruption_2
 				CHI_hyper_inflation_1
@@ -248,7 +248,7 @@ bookmarks = {
 		"PRC"={
 			minor = yes
 			history = "PRC_BLITZKRIEG_DESC"
-			ideology = communism
+			ideology = Revolutionism
 			ideas = {
 				PRC_the_long_march_1
 				PRC_low_popular_support_1
@@ -334,7 +334,7 @@ bookmarks = {
 		"MEX"={
 			minor = yes
 			history = "MEXICO_BLITZKRIEG_DESC"
-			ideology = neutrality
+			ideology = Conservatism
 			ideas = {
 				MEX_church_power_1
 				MEX_politicised_army
@@ -351,7 +351,7 @@ bookmarks = {
 		"HOL"={
 			minor = yes
 			history = "NETHERLANDS_BLITZKRIEG_DESC"
-			ideology = democratic
+			ideology = Liberalism
 			ideas = {
 				HOL_wilhelmina
 				HOL_shell_shocked_spectator_5
@@ -382,7 +382,7 @@ bookmarks = {
 		"PTY"={
 			minor = yes
 			history = "PORTUGAL_BLITZKRIEG_DESC"
-			ideology = democratic
+			ideology = Liberalism
 			ideas = {
 				POR_volunteers_in_the_war_nationalist
 				POR_colonial_assimilation_policy
@@ -397,7 +397,7 @@ bookmarks = {
 		"BUL"={
 			minor = yes
 			history = "BUL_BLITZKRIEG_DESC"
-			ideology = neutrality
+			ideology = Conservatism
 			ideas = {
 				BUL_bulgarian_irredentism
 				BUL_imro_01
@@ -413,7 +413,7 @@ bookmarks = {
 		"GRE"={
 			minor = yes
 			history = "GRE_BLITZKRIEG_DESC"
-			ideology = neutrality
+			ideology = Conservatism
 			ideas = {
 				GRE_metaxism_2
 				GRE_schachtplan
@@ -429,7 +429,7 @@ bookmarks = {
 		"TUR"={
 			minor = yes
 			history = "TUR_BLITZKRIEG_DESC"
-			ideology = neutrality
+			ideology = Conservatism
 			ideas = {
 				TUR_kemalist_army_officers_extended_power_neutral
 				TUR_sectarian_woes
@@ -444,7 +444,7 @@ bookmarks = {
 		"LIT"={
 			minor = yes
 			history = "LIT_BLITZKRIEG_DESC"
-			ideology = neutrality
+			ideology = Conservatism
 			ideas = {
 				LIT_victory_in_trust_idea
 				LIT_invested_in_farms_1
@@ -460,7 +460,7 @@ bookmarks = {
 		"SHW"={
 			minor = yes
 			history = "LAT_BLITZKRIEG_DESC"
-			ideology = neutrality
+			ideology = Conservatism
 			ideas = {
 				LAT_saeima_idea_military_1
 				LAT_the_sun_shines_equally_idea
@@ -476,7 +476,7 @@ bookmarks = {
 		"EST"={
 			minor = yes
 			history = "EST_BLITZKRIEG_DESC"
-			ideology = neutrality
+			ideology = Conservatism
 			ideas = {
 				EST_ismaaliit_idea
 				EST_national_council_idea
@@ -491,7 +491,7 @@ bookmarks = {
 		"POL"={
 			minor = yes
 			history = "POL_BLITZKRIEG_DESC"
-			ideology = neutrality
+			ideology = Conservatism
 			ideas = {
 				deterrence
 			}

@@ -25,11 +25,11 @@ completion_reward = {
         add_political_power = 300
 		add_trait = {
 			character = SHW_NicholasII
-			ideology = royalists
+			ideology = Classicism_Conservatism
 			trait = Butcher_the_revolution
 	   }
 		set_party_name = { 
-			ideology = monarchy 
+			ideology = Conservatism 
 			long_name = SHW_monarchy_party1_long 
 			name =  SHW_monarchy_party1
 		}
@@ -148,7 +148,7 @@ completion_reward = {
 		}
 		completion_reward={
 			add_popularity = {
-				ideology = communism
+				ideology = Revolutionism
 				popularity = -0.2
 			}
 		}
@@ -1197,12 +1197,12 @@ completion_reward={
 			
 			hidden_effect={
 				set_popularities = {
-					national_populist = 10
-					monarchy = 5
-					Reform_socialism = 10
-					social_democrat = 10
-					democratic = 55
-					neutrality = 10
+					Reactionary = 10
+					Conservatism = 5
+					Reformism = 10
+					Reformism = 10
+					Liberalism = 55
+					Conservatism = 10
 					}
 			}
 		}
@@ -1311,17 +1311,17 @@ completion_reward={
 		completion_reward={
 			add_ideas = SHW_Russian_style_democracy
 			set_politics = {
-				ruling_party = national_populist
+				ruling_party = Reactionary
 				elections_allowed =yes
 			}
 			hidden_effect={
 				set_popularities = {
-					national_populist = 55
-					monarchy = 5
-					Reform_socialism = 10
-					social_democrat = 10
-					democratic = 10
-					neutrality = 10
+					Reactionary = 55
+					Conservatism = 5
+					Reformism = 10
+					Reformism = 10
+					Liberalism = 10
+					Conservatism = 10
 					}
 			}
 		}
@@ -1474,7 +1474,7 @@ completion_reward={
 		prerequisite = { focus = SHW_Slavic_nationalism_culture }
 		completion_reward={
 			add_popularity = {
-				ideology = monarchy
+				ideology = Conservatism
 				popularity = 0.05
 			}
 		}
@@ -1524,11 +1524,11 @@ completion_reward={
 		completion_reward={
 			add_ideas = SHW_backbone_nation
 			add_popularity = {
-				ideology = neutrality
+				ideology = Conservatism
 				popularity = 0.05
 			}
 			add_popularity = {
-				ideology = Right_populism
+				ideology = Reactionary
 				popularity = 0.05
 			}
 		}  
@@ -1561,19 +1561,19 @@ completion_reward={
 				retire_country_leader = yes
 			}
 			set_politics = {
-				ruling_party = neutrality
+				ruling_party = Conservatism
 				elections_allowed =yes
 			}
 			hidden_effect={
 				remove_ideas= SHW_Nikolaj_Dmitrievich_Golicyn_H
 				add_ideas=SHW_NicholasII_H
 				set_popularities = {
-					national_populist = 0
-					monarchy = 42
-					Reform_socialism = 0
-					social_democrat = 0
-					democratic = 13
-					neutrality = 45
+					Reactionary = 0
+					Conservatism = 42
+					Reformism = 0
+					Reformism = 0
+					Liberalism = 13
+					Conservatism = 45
 					}
 			}
 			

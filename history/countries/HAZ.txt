@@ -47,7 +47,7 @@ recruit_character = HAZ_Sharif_Hussein_Ben_Ali
 	}
 
 set_politics = {
-	ruling_party = monarchy
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -56,8 +56,8 @@ add_ideas={
 #law
 }
 set_popularities = {
-	democratic = 5
-	national_populist = 1
-	monarchy = 89
-	communism = 5
+	Liberalism = 5
+	Reactionary = 1
+	Conservatism = 89
+	Revolutionism = 5
 }

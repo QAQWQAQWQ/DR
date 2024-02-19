@@ -53,7 +53,7 @@ recruit_character = DOR_Otto_Karl_Geßler
 		
 	}
 set_politics = {
-	ruling_party = monarchy
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -74,8 +74,8 @@ Deutscher_Bund
 Deutscher_Zollverein
 }
 set_popularities = {
-	monarchy = 80
-	national_populist = 10
-	neutrality = 5
-	communism = 5
+	Conservatism = 80
+	Reactionary = 10
+	Conservatism = 5
+	Revolutionism = 5
 }

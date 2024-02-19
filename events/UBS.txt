@@ -201,7 +201,7 @@ news_event = {
 			TAG = UBS
 		}
 		UBS={
-		add_popularity = { ideology = communism popularity = -0.1 }
+		add_popularity = { ideology = Revolutionism popularity = -0.1 }
 	}
 }
 	option = {
@@ -396,7 +396,7 @@ news_event = {
 		name = LEF.1.a
 		UBS={
 			set_politics = {
-			ruling_party = Reform_socialism
+			ruling_party = Reformism
 		}
 	}
 		

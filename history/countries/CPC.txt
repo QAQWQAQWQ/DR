@@ -52,7 +52,7 @@ recruit_character = CPC_Nikolsky
 	}
 set_global_flag = CPC_HZGH
 set_politics = {
-	ruling_party = communism
+	ruling_party = Revolutionism
 	last_election = "1919.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -66,5 +66,5 @@ Staterun_economy
 closed_economy
 }
 set_popularities = {
-	communism = 100
+	Revolutionism = 100
 }

@@ -273,57 +273,57 @@ on_actions = {
                 set_autonomy = { target = DMT autonomy_state = autonomy_Crown_Territory }
                 set_autonomy = { target = KOH autonomy_state = autonomy_Crown_Territory }
                 VCT = {
-                    set_politics = {ruling_party = neutrality}
+                    set_politics = {ruling_party = Conservatism}
                     set_popularities = {
-                        democratic = 25
-                        national_populist = 25
-                        neutrality = 40
-                        communism = 10
+                        Liberalism = 25
+                        Reactionary = 25
+                        Conservatism = 40
+                        Revolutionism = 10
                     }
                 }
                 KGL = {
-                    set_politics = {ruling_party = authoritarian}
+                    set_politics = {ruling_party = Conservatism}
                     set_popularities = {
-                        democratic = 5
-                        national_populist = 1
-                        authoritarian = 89
-                        communism = 5
+                        Liberalism = 5
+                        Reactionary = 1
+                        Conservatism = 89
+                        Revolutionism = 5
                     }
                 }
                 BXM = {
-                    set_politics = {ruling_party = authoritarian}
+                    set_politics = {ruling_party = Conservatism}
                     set_popularities = {
-                        democratic = 5
-                        national_populist = 1
-                        authoritarian = 89
-                        communism = 5
+                        Liberalism = 5
+                        Reactionary = 1
+                        Conservatism = 89
+                        Revolutionism = 5
                     }
                 }
                 KLD = {
-                    set_politics = {ruling_party = neutrality}
+                    set_politics = {ruling_party = Conservatism}
                     set_popularities = {
-                        democratic = 25
-                        national_populist = 25
-                        neutrality = 40
-                        communism = 10
+                        Liberalism = 25
+                        Reactionary = 25
+                        Conservatism = 40
+                        Revolutionism = 10
                     }
                 }
                 DMT = {
-                    set_politics = {ruling_party = neutrality}
+                    set_politics = {ruling_party = Conservatism}
                     set_popularities = {
-                        democratic = 25
-                        national_populist = 25
-                        neutrality = 40
-                        communism = 10
+                        Liberalism = 25
+                        Reactionary = 25
+                        Conservatism = 40
+                        Revolutionism = 10
                     }
                 }
                 KOH = {
-                    set_politics = {ruling_party = neutrality}
+                    set_politics = {ruling_party = Conservatism}
                     set_popularities = {
-                        democratic = 25
-                        national_populist = 25
-                        neutrality = 40
-                        communism = 10
+                        Liberalism = 25
+                        Reactionary = 25
+                        Conservatism = 40
+                        Revolutionism = 10
                     }
                 }
             }

@@ -46,7 +46,7 @@ recruit_character = YNG_ChenMaLiuJia
 		
 	}
 set_politics = {
-	ruling_party = communism
+	ruling_party = Revolutionism
 	last_election = "1919.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -55,5 +55,5 @@ add_ideas = {
 	
 }
 set_popularities = {
-	communism = 100
+	Revolutionism = 100
 }

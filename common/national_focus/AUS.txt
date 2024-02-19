@@ -1556,7 +1556,7 @@ bosnia_war_end = yes
 			}
 			BXM={
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = Liberalism
 				}
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
@@ -1587,7 +1587,7 @@ bosnia_war_end = yes
 		completion_reward = {
 			BXM={
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = Liberalism
 				}
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
@@ -1612,7 +1612,7 @@ bosnia_war_end = yes
 		completion_reward = {
 			KGL={
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = Liberalism
 				}
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
@@ -1637,7 +1637,7 @@ bosnia_war_end = yes
 		completion_reward = {
 			DMT={
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = Liberalism
 				}
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
@@ -1672,7 +1672,7 @@ bosnia_war_end = yes
 		completion_reward = {
 			HUN={
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = Liberalism
 				}
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
@@ -1694,7 +1694,7 @@ bosnia_war_end = yes
 		completion_reward = {
 			HUN={
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = Liberalism
 				}
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
@@ -1744,14 +1744,14 @@ bosnia_war_end = yes
 			}
 			SLO = {
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = Liberalism
 				}
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
 			}
 			TRA = {
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = Liberalism
 				}
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
@@ -1772,7 +1772,7 @@ bosnia_war_end = yes
 		completion_reward = {
 			VCT={
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = Liberalism
 				}
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
@@ -1978,7 +1978,7 @@ bosnia_war_end = yes
 		}
 		completion_reward = {
 			add_popularity = {
- 				ideology = national_populist
+ 				ideology = Reactionary
     			popularity = -0.1
 			}
 			custom_effect_tooltip = less_ger_sup
@@ -2025,7 +2025,7 @@ bosnia_war_end = yes
 		completion_reward = {
 				add_stability = -0.05
 				add_popularity = {
- 					ideology = national_populist
+ 					ideology = Reactionary
     				popularity = -1
 				}
 				custom_effect_tooltip = less_ger_sup_20
@@ -2309,7 +2309,7 @@ bosnia_war_end = yes
 		}
 		completion_reward = {
 			add_popularity = {
-				ideology = social_democrat
+				ideology = Reformism
 				popularity = 0.05
 			}
 		}
@@ -2332,7 +2332,7 @@ bosnia_war_end = yes
 		}
 		completion_reward = {
 			add_popularity = {
-				ideology = authoritarian
+				ideology = Conservatism
 				popularity = 0.15
 			}
 		}

@@ -250,12 +250,12 @@ intelligence_agency = {
 	
 	default = { 
 		tag = ETH 
-		NOT = { has_government = communism }
+		NOT = { has_government = Revolutionism }
 		NOT = { is_subject_of = ITA }
 	} 
 	available = { 
 		original_tag = ETH 
-		NOT = { has_government = communism }
+		NOT = { has_government = Revolutionism }
 		NOT = { is_subject_of = ITA }
 	}
 }
@@ -267,11 +267,11 @@ intelligence_agency = {
 	
 	default = { 
 		tag = ETH 
-		has_government = communism
+		has_government = Revolutionism
 	} 
 	available = { 
 		original_tag = ETH 
-		has_government = communism
+		has_government = Revolutionism
 	}
 }
 
@@ -426,7 +426,7 @@ intelligence_agency = {
 	names = { "Hammer and Sickle" }
 	
 	available = { 
-		has_government = communism
+		has_government = Revolutionism
 	}
 	
 	default = { always = yes } 

@@ -15,7 +15,7 @@ characters={
 			logistics_skill=2
 		}
 		country_leader={
-			ideology=royalists
+			ideology=Classicism_Conservatism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -29,7 +29,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=royalists
+			ideology=Classicism_Conservatism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -43,7 +43,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=royalists
+			ideology=Classicism_Conservatism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -86,7 +86,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=liberalism
+			ideology=Socialism_Liberalism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -108,8 +108,8 @@ characters={
 			available = {
 				
 				OR={
-					has_government = democratic
-					has_government = monarchy
+					has_government = Liberalism
+					has_government = Conservatism
 				}
 				has_completed_focus = Sword_slashing_fox
 			}
@@ -142,8 +142,8 @@ characters={
 					has_country_flag = Crackdown_mafia
 				}
 				OR={
-					has_government = democratic
-					has_government = monarchy
+					has_government = Liberalism
+					has_government = Conservatism
 				}
 			}
 			traits = {
@@ -169,7 +169,7 @@ characters={
 				original_tag = SIW
 			}
 			available = {
-				has_government = communism
+				has_government = Revolutionism
 			}
 			traits = {
 				communist_revolutionary
@@ -179,7 +179,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=marxism
+			ideology=Scientism_revolutionism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -389,7 +389,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=social_democrat_type
+			ideology=Social_Reformism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1

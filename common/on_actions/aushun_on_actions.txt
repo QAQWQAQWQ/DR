@@ -324,12 +324,12 @@ on_actions = {
                 }
 
                 KOH = {
-                    set_politics = {ruling_party = neutrality}
+                    set_politics = {ruling_party = Conservatism}
                     set_popularities = {
-                        democratic = 25
-                        national_populist = 25
-                        neutrality = 40
-                        communism = 10
+                        Liberalism = 25
+                        Reactionary = 25
+                        Conservatism = 40
+                        Revolutionism = 10
                     }
                 }
             }

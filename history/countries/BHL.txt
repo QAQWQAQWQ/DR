@@ -73,14 +73,14 @@ Mixed_economy
 secondary_school
 }
 set_politics = {
-	ruling_party = social_democrat
+	ruling_party = Reformism
 	last_election = "1927.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	Social_liberalism = 22
-	communism = 31
-	social_democrat = 47
+	Liberalism = 22
+	Revolutionism = 31
+	Reformism = 47
 }

@@ -57,15 +57,15 @@ recruit_character = GUG_ChenMingshu
 	}
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 5
-	national_populist = 30
-	neutrality = 60
-	communism = 5
+	Liberalism = 5
+	Reactionary = 30
+	Conservatism = 60
+	Revolutionism = 5
 }

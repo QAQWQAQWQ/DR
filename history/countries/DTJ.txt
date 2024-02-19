@@ -41,12 +41,12 @@ recruit_character = DTJ_heni
 	}
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = Conservatism
 	last_election = "1919.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	neutrality = 100
+	Conservatism = 100
 }

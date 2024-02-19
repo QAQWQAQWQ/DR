@@ -59,14 +59,14 @@ recruit_character = IRL_John_Dillon
 		secondary_school
 			}
 set_politics = {
-	ruling_party = democratic
+	ruling_party = Liberalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic= 21
-    authoritarian = 54
-	communism = 25
+	Liberalism= 21
+    Conservatism = 54
+	Revolutionism = 25
 }

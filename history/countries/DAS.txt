@@ -47,7 +47,7 @@ recruit_character = DAS_Albert_hahl
 	}
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -60,8 +60,8 @@ low_industrialization
 Staterun_economy
 }
 set_popularities = {
-	democratic = 25
-	national_populist = 25
-	neutrality = 40
-	communism = 10
+	Liberalism = 25
+	Reactionary = 25
+	Conservatism = 40
+	Revolutionism = 10
 }

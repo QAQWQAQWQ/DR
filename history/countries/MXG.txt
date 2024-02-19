@@ -47,7 +47,7 @@ recruit_character = MXG_Alvaro_Obregon
 	}
 
 set_politics = {
-	ruling_party = Agrarian_socialism
+	ruling_party = Revolutionism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -58,9 +58,9 @@ add_ideas = {
 	MXG_Political_strife
 }
 set_popularities = {
-	democratic = 10
-	Anarchopedia = 10
-	Left_nationalism = 20
-                Agrarian_socialism= 45
-	Syndicalism = 15
+	Liberalism = 10
+	Anarchism = 10
+	Revolutionism = 20
+                Revolutionism= 45
+	Revolutionism = 15
 }

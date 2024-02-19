@@ -48,14 +48,14 @@ recruit_character = ETA_Konstantin_Pats
 	}
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = Liberalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 100
+	Liberalism = 100
 }
 add_ideas={
 

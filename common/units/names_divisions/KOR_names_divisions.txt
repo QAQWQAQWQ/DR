@@ -37,7 +37,7 @@ KOR_INF_01 =
 
 	for_countries = { KOR }
 
-	can_use = {	has_government = democratic }
+	can_use = {	has_government = Liberalism }
 
 	division_types = { "infantry" }
 
@@ -113,7 +113,7 @@ KOR_INF_02 =
 
 	for_countries = { KOR }
 
-	can_use = {	NOT = { has_government = democratic } }
+	can_use = {	NOT = { has_government = Liberalism } }
 
 	division_types = { "infantry" }
 
@@ -264,7 +264,7 @@ KOR_MOT_01 =
 
 	for_countries = { KOR }
 
-	can_use = { has_government = democratic }
+	can_use = { has_government = Liberalism }
 
 	division_types = { "motorized" }
 
@@ -315,7 +315,7 @@ KOR_MOT_02 =
 
 	for_countries = { KOR }
 
-	can_use = {	NOT = { has_government = democratic } }
+	can_use = {	NOT = { has_government = Liberalism } }
 
 	division_types = { "motorized" }
 
@@ -515,7 +515,7 @@ KOR_MAR_01 =
 
 	for_countries = { KOR }
 
-	can_use = { has_government = democratic }
+	can_use = { has_government = Liberalism }
 
 	division_types = { "marine" }
 
@@ -548,7 +548,7 @@ KOR_MAR_02 =
 
 	for_countries = { KOR }
 
-	can_use = { NOT = { has_government = democratic } }
+	can_use = { NOT = { has_government = Liberalism } }
 
 	division_types = { "marine" }
 

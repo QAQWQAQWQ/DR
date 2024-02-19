@@ -47,14 +47,14 @@ recruit_character = TSL_Chaim_Azriel_Weizmann
 	}
 
 set_politics = {
-	ruling_party = national_populist
+	ruling_party = Reactionary
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 10
-	national_populist = 80
-	communism = 10
+	Liberalism = 10
+	Reactionary = 80
+	Revolutionism = 10
 }

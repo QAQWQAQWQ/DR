@@ -16,10 +16,11 @@ add_opinion_modifier = {
 	modifier = Confederate_pretenders
 }
 
+recruit_character = AOX_Archduke_Ferdinand
 recruit_character = AGN_Adolf_Hitler
 recruit_character = AGN_Arthur_Seyss_Inquart
 recruit_character = AGN_Engelbert_Dollfuss
-recruit_character = AOX_Archduke_Ferdinand
+
 recruit_character = AOX_Franz_Graf_Conrad
 recruit_character = AOX_Baro_Straussenburg
 recruit_character = AOX_Friedrich
@@ -77,13 +78,13 @@ recruit_character = AOX_Alexander_Freiherr_von_Krobatin
 	}
 	
 set_politics = {
-	ruling_party = monarchy
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
-                create_faction = GER
-                add_to_faction = DOR
+create_faction = GER
+add_to_faction = DOR
 add_to_faction = AGC
 add_to_faction = DOM
 add_to_faction = DMW
@@ -97,6 +98,14 @@ add_to_faction = DOF
 add_to_faction = DOB
 add_to_faction = DOA
 add_to_faction = DON
+
+
+
+add_to_faction = VCT
+add_to_faction = KGL
+add_to_faction = KLD
+add_to_faction = DMT
+add_to_faction = KOH
 
 set_autonomy = { target = VCT autonomy_state = autonomy_Crown_Territory }
 set_autonomy = { target = KGL autonomy_state = autonomy_Crown_Territory }
@@ -127,7 +136,7 @@ add_ideas = {
 	AOX_Multi_ethnic_army
 }
 set_popularities = {
-	social_democrat = 20
-	national_populist = 15
-	monarchy = 65
+	Reformism = 20
+	Reactionary = 15
+	Conservatism = 65
 }

@@ -48,15 +48,15 @@ recruit_character = NAF_Jan_Christiaan_Smuts
 	}
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 5
-	national_populist = 5
-	neutrality = 85
-	communism = 5
+	Liberalism = 5
+	Reactionary = 5
+	Conservatism = 85
+	Revolutionism = 5
 }

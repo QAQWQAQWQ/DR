@@ -41,23 +41,23 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = Revolutionism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	national_populist = 15
-	communism = 80
-	neutrality = 5
+	Reactionary = 15
+	Revolutionism = 80
+	Conservatism = 5
 }
 create_country_leader = {
 	name = "罗莎-卢森堡"
 	desc = ""
 	picture = "Portrait_Rosa_Luxemburg.tga"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = Scientism_revolutionism
 	traits = {
 		
 	}

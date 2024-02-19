@@ -49,7 +49,7 @@ recruit_character = LFR_Phoa_Keng_Hek_Sia
 	}
 
 set_politics = {
-	ruling_party = Conservative_democracy
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -58,8 +58,8 @@ set_politics = {
 add_ideas = {
 }
 set_popularities = {
-	democratic = 5
-	national_populist = 10
-	Conservative_democracy = 80
-	communism = 5
+	Liberalism = 5
+	Reactionary = 10
+	Conservatism = 80
+	Revolutionism = 5
 }

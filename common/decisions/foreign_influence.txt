@@ -19,7 +19,7 @@ foreign_influence = {
 				is_puppet_of = ROOT
 			}
 			FROM = {
-				democratic < 0.9
+				Liberalism < 0.9
 			}
 			OR = {
 				political_power_daily > 0.5
@@ -28,10 +28,10 @@ foreign_influence = {
 		}
 
 		visible = {
-			has_government = democratic
+			has_government = Liberalism
 			FROM = {
 				is_puppet_of = ROOT
-				democratic < 0.99
+				Liberalism < 0.99
 			}
 		}
 
@@ -67,7 +67,7 @@ foreign_influence = {
 				is_puppet_of = ROOT
 			}
 			FROM = {
-				communism < 0.9
+				Revolutionism < 0.9
 			}
 			OR = {
 				political_power_daily > 0.5
@@ -76,7 +76,7 @@ foreign_influence = {
 		}
 
 		visible = {
-			has_government = communism
+			has_government = Revolutionism
 			NOT = {
 				AND = {
 					tag = ENL
@@ -89,13 +89,13 @@ foreign_influence = {
 							tag = ASZ
 							tag = NZL
 						}
-						has_government = communism
+						has_government = Revolutionism
 					}
 				}
 			}
 			FROM = {
 				is_puppet_of = ROOT
-				communism < 0.99
+				Revolutionism < 0.99
 			}
 		}
 
@@ -196,7 +196,7 @@ foreign_influence = {
 		available = {
 			FROM = {
 				is_puppet_of = ROOT
-				neutrality < 0.9
+				Conservatism < 0.9
 			}
 			OR = {
 				political_power_daily > 0.5
@@ -205,10 +205,10 @@ foreign_influence = {
 		}
 
 		visible = {
-			has_government = neutrality
+			has_government = Conservatism
 			FROM = {
 				is_puppet_of = ROOT
-				neutrality < 0.99
+				Conservatism < 0.99
 			}
 		}
 
@@ -249,14 +249,14 @@ foreign_influence = {
 			}
 			
 			FROM = {
-				NOT = { has_government = democratic }
+				NOT = { has_government = Liberalism }
 			}
 		}
 
 		visible = {
 			FROM = {
 				is_puppet_of = ROOT
-				NOT = { has_government = democratic }
+				NOT = { has_government = Liberalism }
 			}
 		}
 
@@ -293,18 +293,18 @@ foreign_influence = {
 				is_puppet_of = ROOT
 			}
 			FROM = {
-				communism > 0.6
+				Revolutionism > 0.6
 			}
 			FROM = {
-				NOT = { has_government = communism }
+				NOT = { has_government = Revolutionism }
 			}
 		}
 
 		visible = {
-			has_government = communism
+			has_government = Revolutionism
 			FROM = {
 				is_puppet_of = ROOT
-				NOT = { has_government = communism }
+				NOT = { has_government = Revolutionism }
 			}
 			NOT = {
 				AND = {
@@ -341,7 +341,7 @@ foreign_influence = {
 			}
 			FROM = {
 				set_politics = {
-					ruling_party = communism
+					ruling_party = Revolutionism
 					elections_allowed = no
 				}
 			}
@@ -433,18 +433,18 @@ foreign_influence = {
 				is_puppet_of = ROOT
 			}
 			FROM = {
-				neutrality > 0.6
+				Conservatism > 0.6
 			}
 			FROM = {
-				NOT = { has_government = neutrality }
+				NOT = { has_government = Conservatism }
 			}
 		}
 
 		visible = {
-			has_government = neutrality
+			has_government = Conservatism
 			FROM = {
 				is_puppet_of = ROOT
-				NOT = { has_government = neutrality }
+				NOT = { has_government = Conservatism }
 			}
 		}
 
@@ -466,7 +466,7 @@ foreign_influence = {
 			}
 			FROM = {
 				set_politics = {
-					ruling_party = neutrality
+					ruling_party = Conservatism
 					elections_allowed = no
 				}
 			}
@@ -538,7 +538,7 @@ foreign_influence = {
 			modifier = {
 				# neutrals won't do collaboration until 1944 and they are at peace
 				
-				has_government = neutrality
+				has_government = Conservatism
 				# allow neutral GER
 				not = { tag = GER }
 				

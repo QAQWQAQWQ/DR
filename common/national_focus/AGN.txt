@@ -80,8 +80,8 @@ focus_tree = {
 		x = 7
 		y = 3
 		completion_reward = {
-			set_politics = { ruling_party = authoritarian elections_allowed = no }
-			add_popularity = { ideology = authoritarian popularity = 0.1 }
+			set_politics = { ruling_party = Conservatism elections_allowed = no }
+			add_popularity = { ideology = Conservatism popularity = 0.1 }
 		}
 		available = {
 		}
@@ -100,7 +100,7 @@ focus_tree = {
 		x = 5
 		y = 4
 		completion_reward = {
-			add_popularity = { ideology = aryan_secretology popularity = -0.1 }
+			add_popularity = { ideology = Reactionary popularity = -0.1 }
 			add_stability = 0.05
 		}
 		available = {
@@ -122,8 +122,8 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			add_stability = 0.05
-			add_popularity = { ideology = authoritarian popularity = 0.05 }
-			add_popularity = { ideology = national_populist popularity = 0.05 }
+			add_popularity = { ideology = Conservatism popularity = 0.05 }
+			add_popularity = { ideology = Reactionary popularity = 0.05 }
 		}
 		available = {
 		}
@@ -144,8 +144,8 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			add_stability = -0.05
-			add_popularity = { ideology = authoritarian popularity = 0.1 }
-			add_popularity = { ideology = national_populist popularity = -0.05 }
+			add_popularity = { ideology = Conservatism popularity = 0.1 }
+			add_popularity = { ideology = Reactionary popularity = -0.05 }
 		}
 		available = {
 		}
@@ -165,7 +165,7 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			add_stability = 0.1
-			add_popularity = { ideology = aryan_secretology popularity = -0.3 }
+			add_popularity = { ideology = Reactionary popularity = -0.3 }
 		}
 		available = {
 		}
@@ -186,7 +186,7 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			add_stability = 0.1
-			add_popularity = { ideology = authoritarian popularity = 0.2 }
+			add_popularity = { ideology = Conservatism popularity = 0.2 }
 		}
 		available = {
 		}
@@ -231,8 +231,8 @@ focus_tree = {
 		x = 13
 		y = 3
 		completion_reward = {
-			set_politics = { ruling_party = national_populist elections_allowed = no }
-			add_popularity = { ideology = national_populist popularity = 0.1 }
+			set_politics = { ruling_party = Reactionary elections_allowed = no }
+			add_popularity = { ideology = Reactionary popularity = 0.1 }
 		}
 		available = {
 		}
@@ -371,8 +371,8 @@ focus_tree = {
 		x = 19
 		y = 3
 		completion_reward = {
-			set_politics = { ruling_party = aryan_secretology elections_allowed = no }
-			add_popularity = { ideology = aryan_secretology popularity = 0.1 }
+			set_politics = { ruling_party = Reactionary elections_allowed = no }
+			add_popularity = { ideology = Reactionary popularity = 0.1 }
 		}
 		available = {
 		}

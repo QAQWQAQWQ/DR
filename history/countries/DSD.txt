@@ -47,12 +47,12 @@ recruit_character = DSD_Martin_Paul_Samba
 		
 	}
 set_politics = {
-	ruling_party = national_populist
+	ruling_party = Reactionary
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	national_populist = 100
+	Reactionary = 100
 }

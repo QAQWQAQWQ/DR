@@ -47,7 +47,7 @@ recruit_character = TPU_Alexander_Antonov
 	}
 
 set_politics = {
-	ruling_party = Left_populism
+	ruling_party = Revolutionism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -58,5 +58,5 @@ add_ideas = {
 #law
 }
 set_popularities = {
-	Left_populism = 100
+	Revolutionism = 100
 }

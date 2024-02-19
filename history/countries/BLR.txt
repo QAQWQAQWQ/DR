@@ -37,7 +37,7 @@ recruit_character = BLR_Jan_Sierada
 	}
 
 set_politics = {
-	ruling_party = authoritarian
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -47,5 +47,5 @@ add_ideas = {
 elementary_school
 }
 set_popularities = {
-	authoritarian = 100
+	Conservatism = 100
 }

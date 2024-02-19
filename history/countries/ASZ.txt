@@ -46,15 +46,15 @@ recruit_character = ASZ_William_Morris_Hughes
 	}
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = Liberalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 89
-	national_populist = 1
-	neutrality = 5
-	communism = 5
+	Liberalism = 89
+	Reactionary = 1
+	Conservatism = 5
+	Revolutionism = 5
 }

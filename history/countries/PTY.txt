@@ -48,15 +48,15 @@ recruit_character = PTY_Afonso_Augusto
 	}
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = Liberalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 45
-	national_populist = 5
-	neutrality = 25
-	communism = 25
+	Liberalism = 45
+	Reactionary = 5
+	Conservatism = 25
+	Revolutionism = 25
 }

@@ -24,15 +24,15 @@ recruit_character = MSE_Krishnaraja_Wadiyar_IV
 	}
 
 set_politics = {
-	ruling_party = monarchy
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 5
-	Islamic= 20
-	monarchy = 70
-	communism = 5
+	Liberalism = 5
+	Conservatism= 20
+	Conservatism = 70
+	Revolutionism = 5
 }

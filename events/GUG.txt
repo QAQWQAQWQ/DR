@@ -13,12 +13,12 @@ country_event = {
 	option = {
 		name = GUG.1.a
 		set_politics = {
-			ruling_party = Left_populism
+			ruling_party = Revolutionism
 		}
 		hidden_effect={set_popularities = {
-			democratic = 35
-			Left_populism = 55
-			communism = 10
+			Liberalism = 35
+			Revolutionism = 55
+			Revolutionism = 10
 		}}
 		
 			

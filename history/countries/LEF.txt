@@ -48,15 +48,15 @@ recruit_character = LEF_Abd_el_krim
 		
 	}
 set_politics = {
-	ruling_party = Conservative_democracy
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 set_popularities = {
-	Conservative_democracy = 45
-	national_populist = 30
-	neutrality = 25
+	Conservatism = 45
+	Reactionary = 30
+	Conservatism = 25
 }
 add_ideas={
 #law

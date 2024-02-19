@@ -48,7 +48,7 @@ recruit_character = SBY_AlfonsoXIII
 	} 
 news_event = {id= SBY.1 days=135}
 set_politics = {
-	ruling_party = monarchy
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -58,8 +58,8 @@ add_ideas = {
 	SBY_Spanish_Flu
 }
 set_popularities = {
-	democratic = 5
-	national_populist = 1
-	monarchy = 89
-	communism = 5
+	Liberalism = 5
+	Reactionary = 1
+	Conservatism = 89
+	Revolutionism = 5
 }

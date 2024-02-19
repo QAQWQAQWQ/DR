@@ -52,7 +52,7 @@ add_to_faction = PMA
 add_to_faction = TCY
 add_to_faction = MIL
 set_politics = {
-	ruling_party = monarchy
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -64,9 +64,9 @@ Private_economy
 secondary_school
 }
 set_popularities = {
-	democratic = 5
-	national_populist = 1
-	monarchy = 80
-	communism = 5
-                neutrality = 9
+	Liberalism = 5
+	Reactionary = 1
+	Conservatism = 80
+	Revolutionism = 5
+                Conservatism = 9
 }

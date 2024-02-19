@@ -7,7 +7,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=royalists
+			ideology=Classicism_Conservatism
 			traits={ }
 			expire="1965.1.1.1"
 			id=-1
@@ -21,7 +21,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=social_democrat_type
+			ideology=Social_Reformism
             desc=WWS_ebert_DESC
 			traits={ }
 			expire="1965.1.1.1"
@@ -36,7 +36,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=liberalism
+			ideology=Socialism_Liberalism
             desc=WWS_ebert_DESC
 			traits={ }
 			expire="1965.1.1.1"
@@ -52,7 +52,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Right_nationalism_type
+			ideology=Populism_Reactionary
             desc=WWS_Philipp_Scheidemann_DESC
 			traits={ }
 			expire="1965.1.1.1"

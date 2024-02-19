@@ -469,7 +469,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "EventWindow_News"
 		position = { x=-370 y=-350 }	
-		size = { width = 1040 height = 674 }
+		size = { width = 740 height = 674 }
 		moveable = yes
 		Orientation = CENTER
 		show_sound = world_news_effect

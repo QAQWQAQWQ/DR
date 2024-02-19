@@ -67,17 +67,17 @@ DOS_Discord_the_Pope
 DOS_Saxony_Thuringia_United
 }
 set_politics = {
-	ruling_party = monarchy
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 5
-	national_populist = 15
-	monarchy = 75
-	communism = 5
+	Liberalism = 5
+	Reactionary = 15
+	Conservatism = 75
+	Revolutionism = 5
 }
 puppet = SAA
 puppet = SAB

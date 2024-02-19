@@ -51,20 +51,20 @@ recruit_character = PBL_PiIsudski
 	}
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 5
-	national_populist = 10
-	neutrality = 64
-	communism = 6
+	Liberalism = 5
+	Reactionary = 10
+	Conservatism = 64
+	Revolutionism = 6
 	radical_socialist = 5
-	social_democrat = 7
-	authoritarian = 3
+	Reformism = 7
+	Conservatism = 3
 }
 add_ideas={
 PBL_Cultural_destruction

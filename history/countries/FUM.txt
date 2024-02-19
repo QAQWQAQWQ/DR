@@ -48,7 +48,7 @@ set_technology = {
 	}
 
 set_politics = {
-	ruling_party = national_populist
+	ruling_party = Reactionary
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -60,8 +60,8 @@ Basic_industrialization
 Private_economy
 }
 set_popularities = {
-	democratic = 5
-	national_populist = 65
+	Liberalism = 5
+	Reactionary = 65
 	radical_socialist = 29
-	communism = 1
+	Revolutionism = 1
 }

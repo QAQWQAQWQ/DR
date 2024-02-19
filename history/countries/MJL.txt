@@ -20,15 +20,15 @@ recruit_character = MJL_Bipin_Chandra_Pal
 	}
 
 set_politics = {
-	ruling_party = social_democrat
+	ruling_party = Reformism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 25
-	national_populist = 10
-	social_democrat = 60
-	communism = 5
+	Liberalism = 25
+	Reactionary = 10
+	Reformism = 60
+	Revolutionism = 5
 }

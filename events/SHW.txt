@@ -258,7 +258,7 @@ country_event = {
 		#picture = GFX_illness
         trigger={
         check_variable={SHW_Loyalty<25}
-		has_government=democratic
+		has_government=Liberalism
         }
 	    fire_only_once = yes
 		
@@ -320,18 +320,18 @@ country_event = {
 			name = SHW.14.a
 			hidden_effect = {
 				set_popularities = {
-	national_populist = 25
-	monarchy = 0
-	Reform_socialism = 13
-	social_democrat = 16
-	democratic = 36
-	neutrality = 10
+	Reactionary = 25
+	Conservatism = 0
+	Reformism = 13
+	Reformism = 16
+	Liberalism = 36
+	Conservatism = 10
 	}
 			}
 	retire_country_leader = yes
 	
 	set_politics = {
-		ruling_party = democratic
+		ruling_party = Liberalism
 		elections_allowed =yes
 	}
 	set_cosmetic_tag = SHW_Interim_Government

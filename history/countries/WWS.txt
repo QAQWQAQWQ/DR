@@ -90,7 +90,7 @@ recruit_character = WWS_Ebert
 	}
 country_event = {id=WWS.7 days=110 }
 set_politics = {
-	ruling_party = monarchy
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -111,7 +111,7 @@ Deutscher_Bund
 Deutscher_Zollverein
 }
 set_popularities = {
-	democratic = 15
-	monarchy = 65
-                social_democrat=20
+	Liberalism = 15
+	Conservatism = 65
+                Reformism=20
 }

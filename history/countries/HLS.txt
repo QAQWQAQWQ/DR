@@ -47,14 +47,14 @@ recruit_character = HLS_Dimitri_Leonidovitch_Horvath
 	}
 
 set_politics = {
-	ruling_party = authoritarian
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 add_ideas={HLS_Middle_East_Road}
 set_popularities = {
-	democratic = 10
-	national_populist = 12
-	authoritarian = 78
+	Liberalism = 10
+	Reactionary = 12
+	Conservatism = 78
 }

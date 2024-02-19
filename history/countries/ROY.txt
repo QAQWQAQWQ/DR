@@ -47,15 +47,15 @@ recruit_character = ROY_Yahya_Hamid_al_Din
 	}
 
 set_politics = {
-	ruling_party = monarchy
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 5
-	national_populist = 10
-	monarchy = 80
-	communism = 5
+	Liberalism = 5
+	Reactionary = 10
+	Conservatism = 80
+	Revolutionism = 5
 }

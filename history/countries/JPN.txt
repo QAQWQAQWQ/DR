@@ -53,7 +53,7 @@ recruit_character = JPN_Seienji_Konobu
 	}
 
 set_politics = {
-	ruling_party = monarchy
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no	
@@ -64,7 +64,7 @@ set_politics = {
 set_autonomy = { target = KON autonomy_state = autonomy_wtt_imperial_subject }
 KON={
 	set_popularities = {
-		monarchy = 100
+		Conservatism = 100
 	}
 }
 
@@ -89,5 +89,5 @@ Autonomous_police
 Theocratic_state
 }
 set_popularities = {
-	monarchy = 100
+	Conservatism = 100
 }

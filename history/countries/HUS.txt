@@ -33,14 +33,14 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = Liberalism
 	last_election = "1920.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	national_populist = 20
-	democratic = 80
+	Reactionary = 20
+	Liberalism = 80
 }
 
 create_country_leader = {
@@ -48,7 +48,7 @@ create_country_leader = {
 	desc = "_DESC"
 	picture = "portrait_Hu_Shi.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = Socialism_Liberalism
 	traits = {
 		#
 	}

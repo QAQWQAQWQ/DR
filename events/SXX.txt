@@ -12,13 +12,13 @@ country_event = {
 	option = {
 		name = SXX.1.a
 	    set_politics = {
-			ruling_party = military_government
+			ruling_party = Conservatism
 		}
 		hidden_effect={set_popularities = {
-			military_government = 50
-			neutrality = 15
-			democratic= 30
-			communism = 5
+			Conservatism = 50
+			Conservatism = 15
+			Liberalism= 30
+			Revolutionism = 5
 		}}
 		
 	    }

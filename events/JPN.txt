@@ -50,19 +50,19 @@ news_event = {####hidden
 			name = JPN.2.a
 			kill_country_leader = yes
 			set_political_party = {
-				ideology = monarchy
+				ideology = Conservatism
 				popularity = 60
 			}
 			set_political_party = {
-				ideology = democratic
+				ideology = Liberalism
 				popularity = 20
 			}
 			set_political_party = {
-				ideology = Anarchopedia
+				ideology = Anarchism
 				popularity = 20
 			}
 			set_political_party = {
-				ideology = communism
+				ideology = Revolutionism
 				popularity = 20
 			}
 		clr_global_flag = JPN_Emperor_Meiji

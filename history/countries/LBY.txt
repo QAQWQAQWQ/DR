@@ -48,15 +48,15 @@ recruit_character = LBY_Charles_King
 	}
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = Liberalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 80
-	national_populist = 9
-	neutrality = 10
-	communism = 1
+	Liberalism = 80
+	Reactionary = 9
+	Conservatism = 10
+	Revolutionism = 1
 }

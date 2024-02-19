@@ -48,15 +48,15 @@ recruit_character = CNA_Robert_Borden
 	}
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = Liberalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	neutrality = 5
-	national_populist = 1
-	democratic = 89
-	communism = 5
+	Conservatism = 5
+	Reactionary = 1
+	Liberalism = 89
+	Revolutionism = 5
 }

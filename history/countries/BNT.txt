@@ -47,15 +47,15 @@ recruit_character = BNT_Otto_Roth
 	}
 
 set_politics = {
-	ruling_party = social_democrat
+	ruling_party = Reformism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = yes
 }
 
 set_popularities = {
-	democratic = 10
-	national_populist = 15
-	social_democrat = 70
-	communism = 5
+	Liberalism = 10
+	Reactionary = 15
+	Reformism = 70
+	Revolutionism = 5
 }

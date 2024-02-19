@@ -307,12 +307,12 @@ bos_war_end_qwq = {
             }
             AOX = { set_autonomy = { target = DMT autonomy_state = autonomy_Crown_Territory } }
                 DMT = {
-                    set_politics = {ruling_party = neutrality}
+                    set_politics = {ruling_party = Conservatism}
                     set_popularities = {
-                        democratic = 25
-                        national_populist = 25
-                        neutrality = 40
-                        communism = 10
+                        Liberalism = 25
+                        Reactionary = 25
+                        Conservatism = 40
+                        Revolutionism = 10
                     }
                 }
         }
@@ -348,12 +348,12 @@ bos_war_end_qwq = {
             }
             AOX = { set_autonomy = { target = KOH autonomy_state = autonomy_Crown_Territory } }
                 KOH = {
-                    set_politics = {ruling_party = neutrality}
+                    set_politics = {ruling_party = Conservatism}
                     set_popularities = {
-                        democratic = 25
-                        national_populist = 25
-                        neutrality = 40
-                        communism = 10
+                        Liberalism = 25
+                        Reactionary = 25
+                        Conservatism = 40
+                        Revolutionism = 10
                     }
                 }
         }

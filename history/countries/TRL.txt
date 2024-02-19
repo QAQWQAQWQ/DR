@@ -46,7 +46,7 @@ recruit_character = TRL_Sulayman_al_Baruni
 		
 	}
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -57,8 +57,8 @@ Basic_industrialization
 Private_economy
 }
 set_popularities = {
-	monarchy = 9
-	national_populist = 16
-	neutrality = 70
-	communism = 5
+	Conservatism = 9
+	Reactionary = 16
+	Conservatism = 70
+	Revolutionism = 5
 }

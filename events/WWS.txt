@@ -28,7 +28,7 @@ country_event = {
 	option = {
 		name = WWS.2.a
 		add_popularity = {
-			ideology = social_democrat
+			ideology = Reformism
 			popularity = -0.15
 		}
 	}
@@ -45,7 +45,7 @@ country_event = {
 		name = WWS.3.a
 		add_stability = 0.1
 		add_popularity = {
-			ideology = monarchy
+			ideology = Conservatism
 			popularity = 0.1
 		}
 	}
@@ -297,14 +297,14 @@ country_event = {
 
 	option = {
 		name = Weimar.1.a
-		set_politics = { ruling_party = Reform_socialism elections_allowed = no }
+		set_politics = { ruling_party = Reformism elections_allowed = no }
 		hidden_effect={
 		set_popularities = {
-			Reform_socialism=54
-			Right_nationalism = 3
-			social_democrat = 22
-			monarchy = 0
-			communism = 15
+			Reformism=54
+			Reactionary = 3
+			Reformism = 22
+			Conservatism = 0
+			Revolutionism = 15
 		}
 	}
 }

@@ -54,7 +54,7 @@ recruit_character = SJR_ZhangZhiZhong
 	}
 
 set_politics = {
-	ruling_party = social_democrat
+	ruling_party = Reformism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = yes
@@ -63,7 +63,7 @@ add_ideas = {
 	      SJR_TPP     
 	}
 set_popularities = {
-	national_populist = 10
-	social_democrat = 80
-	communism = 10
+	Reactionary = 10
+	Reformism = 80
+	Revolutionism = 10
 }

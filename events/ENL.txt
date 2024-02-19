@@ -270,12 +270,12 @@ news_event = {
 option = {
 	name = ENL_Labour.1.a
 	set_politics = {
-		ruling_party = Reform_socialism
+		ruling_party = Reformism
 	}
 	set_popularities = {
-		democratic = 25
-		neutrality = 30
-		Reform_socialism = 45
+		Liberalism = 25
+		Conservatism = 30
+		Reformism = 45
 	}
 }
 }

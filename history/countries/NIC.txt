@@ -17,14 +17,14 @@ set_war_support = 0.1
 set_convoys = 10
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = Conservatism
 	last_election = "1934.11.8"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 15
-	national_populist = 5
-	communism = 10
-	neutrality = 70
+	Liberalism = 15
+	Reactionary = 5
+	Revolutionism = 10
+	Conservatism = 70
 }

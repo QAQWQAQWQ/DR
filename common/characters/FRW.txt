@@ -22,7 +22,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=marxism
+			ideology=Scientism_revolutionism
 			desc = FRW_guesde_desc
 			traits={ marxist_philosopher } 
 			expire="1965.1.1.1"
@@ -37,7 +37,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=marxism
+			ideology=Scientism_revolutionism
 			desc = FRW_Jean_Laurent_desc
 			traits={  } 
 			expire="1965.1.1.1"
@@ -52,7 +52,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=democratic_socialism_type
+			ideology=Democracy_Reformism
 			traits={ }
 			expire="1965.1.1.1"
 			id=-1
@@ -66,7 +66,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Left_populism_type
+			ideology=Nationalism_revolutionism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -80,7 +80,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology= Reform_socialism_type
+			ideology= Social_Reformism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -115,7 +115,7 @@ characters={
 		}
 
 		country_leader={
-			ideology=social_democrat_type
+			ideology=Social_Reformism
 			traits={ }
 			expire="1965.1.1.1"
 			id=-1
@@ -129,7 +129,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Syndicalism_type
+			ideology=Syndicalism_revolutionism
 			traits={ }
 			expire="1965.1.1.1"
 			id=-1
@@ -143,7 +143,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Syndicalism_type
+			ideology=Syndicalism_revolutionism
 			traits={ }
 			expire="1965.1.1.1"
 			id=-1
@@ -157,7 +157,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=radical_socialist_type
+			ideology=Authoritarianism_revolutionism
 			traits={ }
 			expire="1965.1.1.1"
 			id=-1
@@ -171,7 +171,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Anarchopedia_type
+			ideology=Autonomismism_Anarchism
 			traits={ anarchist_zeal }
 			expire="1965.1.1.1"
 			id=-1
@@ -186,7 +186,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Anarchopedia_type
+			ideology=Autonomismism_Anarchism
 			traits={ anarchist_zeal }
 			expire="1965.1.1.1"
 			id=-1
@@ -196,7 +196,7 @@ characters={
 			idea_token = FRW_Alexandre_Jacob_head_of_government
 			allowed = {
 				original_tag = FRW
-				has_government = Anarchopedia
+				has_government = Anarchism
 			}
 			available = {
 				NOT={

@@ -47,7 +47,7 @@ recruit_character = TOR_William_hobby
 	}
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = Liberalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -57,8 +57,8 @@ add_ideas = {
 	TOR_The_Promised_Land
 }
 set_popularities = {
-	democratic = 55
-	Anarchopedia = 10
-	Left_nationalism = 20
-	Syndicalism = 15
+	Liberalism = 55
+	Anarchism = 10
+	Revolutionism = 20
+	Revolutionism = 15
 }
