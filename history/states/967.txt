@@ -1,0 +1,33 @@
+
+state={
+	id=967
+	name="STATE_967"
+	manpower = 1020000
+	state_category = rural
+	resources={
+		steel=43
+		tungsten=60
+	}
+
+	history={
+		owner = KON
+		add_core_of = KON
+		buildings = {
+			industrial_complex = 1
+			arms_factory = 1
+			4052 = {
+				naval_base = 3
+			}
+		}	
+		victory_points = {
+			4052 20
+		}	
+	}
+
+	provinces={
+		912 6963 9795 9918 11775 11828 11835 11896
+		978 3912 4052 7171 9790 11770
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=968
+	name="STATE_968"
+	manpower = 2600000
+	state_category = large_town
+	resources={
+		steel=10
+		tungsten=5
+	}
+
+	history={
+		owner = KON
+		add_core_of = KON
+		buildings = {
+			infrastructure = 2
+		}		
+	}
+
+	provinces={
+		1003 4107 7070 7155 10065 11915
+	}
+
+	local_supplies=0.0 
+}
