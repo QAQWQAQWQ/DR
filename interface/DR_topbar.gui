@@ -25,7 +25,7 @@ containerWindowType = {
 		name ="grain_value"
 		position = { x= 20 y = 3 }
 		font = "hoi_18mbs"
-		text = "NUM_OF_grain"
+		text = "[?resource_grain|0]"
 		format = right
 		maxWidth = 75
 		maxHeight = 24

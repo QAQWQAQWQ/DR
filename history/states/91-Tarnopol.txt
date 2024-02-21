@@ -4,7 +4,10 @@ state={
 	manpower = 3227800
 	
 	state_category = city
-	
+	resources={
+		grain=21
+		
+	}
 	history={
 		owner = KGL
                                 add_core_of = KGL

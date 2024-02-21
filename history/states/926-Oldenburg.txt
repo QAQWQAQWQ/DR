@@ -4,7 +4,10 @@ state={
 	resources={
 		aluminium=1 # was: 10.000
 	}
-
+	resources={
+		grain=4
+		
+	}
 	state_category = city
 	history={
 		owner = DOA

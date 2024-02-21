@@ -9,7 +9,9 @@ state={
 		steel=42 # was: 112
 		aluminium=8 # was: 22
 	}
-
+	resources={
+		grain=13
+	}
 	history={
 		owner = FRW
 		victory_points = {

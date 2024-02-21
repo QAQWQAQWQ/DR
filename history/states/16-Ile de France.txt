@@ -6,7 +6,10 @@ state={
 	
 	state_category = metropolis
 	
-
+	resources={
+		grain=21
+		
+	}
 	history={
 		owner = FRW
 		victory_points = {

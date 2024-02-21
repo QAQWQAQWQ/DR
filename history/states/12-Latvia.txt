@@ -6,7 +6,10 @@ state={
 	resources={
 		steel=1 # was: 2
 	}
-	
+	resources={
+		grain=6
+		
+	}
 	state_category = rural
 	
 	history={

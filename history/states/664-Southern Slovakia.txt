@@ -6,7 +6,10 @@ state={
 		steel=13 # was: 20
 		chromium = 3 # was: 4
 	}
-	
+	resources={
+		grain=14
+		
+	}
 	state_category = town
 	
 	history={
@@ -15,6 +18,7 @@ state={
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 2
+			grain_farms = 1
 		}
 		victory_points = {
 			6573 1 

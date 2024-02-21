@@ -3,7 +3,10 @@ state = {
 	name = "STATE_735"
 
 	state_category = town
-
+	resources={
+		grain=10
+		
+	}
 	history = {
 		owner = ITE
 		add_core_of = ITE
@@ -12,6 +15,7 @@ state = {
 		}
 		buildings = {
 			infrastructure = 2
+			grain_farms = 1
 		}
 	}
 

@@ -4,7 +4,10 @@ state={
 	manpower = 3089000
 
 	state_category = large_city
-
+	resources={
+		grain=30
+		
+	}
 	history={
 		owner = SHW
 		add_core_of = PBL

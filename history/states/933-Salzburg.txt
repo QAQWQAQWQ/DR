@@ -10,7 +10,10 @@ state={
 		steel=2
 		aluminium=1 # was: 1
 	}
-
+	resources={
+		grain=5
+		
+	}
 	history={
 		owner = AOX
 		buildings = {

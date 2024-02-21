@@ -9,7 +9,10 @@ state = {
 	resources = {
 		aluminium = 14 # was: 22
 	}
-
+	resources={
+		grain=7
+		
+	}
 	history = {
 		victory_points = { #Bolzano
 			11598 1

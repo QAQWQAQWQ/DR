@@ -5,7 +5,10 @@ state={
 	resources={
 		steel=5 # was: 8
 	}
-	
+	resources={
+		grain=25
+		
+	}
 	state_category = metropolis
 	
 	history={

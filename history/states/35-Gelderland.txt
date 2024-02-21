@@ -1,7 +1,10 @@
 state={
 	id=35
 	name="STATE_35"
-
+	resources={
+		grain=8
+		
+	}
 	history={
 		owner = BHL
 		add_core_of = BHL

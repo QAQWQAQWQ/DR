@@ -67,7 +67,7 @@ on_actions = {
 		} 
 		every_country = { 
 			limit={
-				has_government = Revolutionism
+				has_government = Agrarian_socialism
 			}
 			add_ideas=Local_police
 			add_ideas=Weak_investments
@@ -94,100 +94,7 @@ on_actions = {
 } 
 
 
-	on_weekly= { 
-		effect = {
-		 every_controlled_state = { 
-			limit={
-				is_owned_by = ROOT
-				is_controlled_by = ROOT
-				check_variable = { 
-					var = num_of_factories
-					value = 0 
-					compare = greater_than_or_equals
-				}
-			}
-			add_resource = {
-			type = grain
-			amount = -1
-		} 
-	 } 
- every_controlled_state = { 
-	limit={
-		is_owned_by = ROOT
-		is_controlled_by = ROOT
-		check_variable = { 
-			var = num_of_factories
-			value = 30 
-			compare = greater_than_or_equals
-		}
-	}
-	add_resource = {
-	type = grain
-	amount = -2
-} 
 
-}
-every_controlled_state = { 
-	limit={
-		is_owned_by = ROOT
-		is_controlled_by = ROOT
-		check_variable = { 
-			var = num_of_factories
-			value = 60 
-			compare = greater_than_or_equals
-		}
-	}
-	add_resource = {
-	type = grain
-	amount = -3
-} 
-		}
-every_controlled_state = { 
-	limit={
-		is_owned_by = ROOT
-		is_controlled_by = ROOT
-		check_variable = { 
-			var = num_of_factories
-			value = 90 
-			compare = greater_than_or_equals
-		}
-	}
-	add_resource = {
-	type = grain
-	amount = -4
-} 
-		}
-every_controlled_state = { 
-	limit={
-		is_owned_by = ROOT
-		is_controlled_by = ROOT
-		check_variable = { 
-			var = num_of_factories
-			value = 130 
-			compare = greater_than_or_equals
-		}
-	}
-	add_resource = {
-	type = grain
-	amount = -5
-} 
-		}
-}
-}
-
-on_daily= { 
-	effect = {
-	 every_controlled_state = { 
-		limit={
-			num_divisions > 5
-		}
-		add_resource = {
-		type = grain
-		amount = -10
-	} 
- } 
-} 
-} 
 on_daily= { 
 	effect = {
 	 if={
@@ -259,48 +166,6 @@ on_daily= {
 } 
 
 
-
-
-
-
-
-on_monthly= { 
-		effect = { 
-			 
-			every_controlled_state = { 
-				limit={
-					is_owned_by = ROOT
-					is_controlled_by = ROOT
-				}
-				random_list={
-				25={
-					add_resource = {
-						type = grain
-						amount = 5
-				}
-			}
-			    25={
-				add_resource = {
-					type = grain
-					amount = 4
-			}
-		}
-		        25={
-				add_resource = {
-					type = grain
-					amount = 4
-			}
-		}
-		        25={
-			    add_resource = {
-				    type = grain
-				    amount = 3
-		}
-	}
-			} 
-		 } 
-		}
-	}
 
 
 	on_daily= { 

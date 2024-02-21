@@ -4,7 +4,10 @@ state={
 	name="STATE_57"
 	manpower = 5109333
 	state_category = large_city
-
+	resources={
+		grain=10
+		
+	}
 	history={
 		owner = WWS
 		add_core_of = WWS

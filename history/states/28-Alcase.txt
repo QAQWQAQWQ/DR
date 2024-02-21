@@ -8,7 +8,10 @@ state={
 	resources={
 		steel=60 # was: 236
 	}
-
+	resources={
+		grain=6
+		
+	}
 	history={
 		owner = AGC
                                 add_core_of = FRW

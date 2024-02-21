@@ -12,12 +12,14 @@ set_technology = {
 	fuel_silos = 1
 }
 country_event={id = ENL.1 days= 120}
-
+add_to_variable = { resource_grain = 150 }
 set_power_balance = {
 	id = League_balance
 }
-
+set_convoys = 500
 set_variable = { Black_Brown_Troops = 0 }
+
+
 
 
 set_variable = { Separation_emotions = 25 }

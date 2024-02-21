@@ -8,6 +8,7 @@ state= {
 	resources={
 		steel=31 # was: 56
 		aluminium=2 # was: 4
+		grain=14
 	}
 
 	history= {
@@ -25,6 +26,7 @@ state= {
 			industrial_complex = 1
 			dockyard = 3
 			air_base = 3
+			grain_farms=2
 			6384 = {
 				naval_base = 5
 			}

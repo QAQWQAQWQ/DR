@@ -8,6 +8,7 @@ state={
 	
 	resources={
 		steel=11 # was: 20
+		grain=17
 	}
 
 	history={
@@ -23,6 +24,7 @@ state={
 			arms_factory = 2
 			industrial_complex = 1
 			air_base = 5
+			grain_farm = 2
 		}
 		add_core_of = ENL
 		1939.1.1 = {

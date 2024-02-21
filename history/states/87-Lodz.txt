@@ -2,7 +2,10 @@ state={
 	id=87
 	name="STATE_87"
 	manpower = 2632000
-	
+	resources={
+		grain=15
+		
+	}
 	state_category = town
 	history={
 		owner = SHW

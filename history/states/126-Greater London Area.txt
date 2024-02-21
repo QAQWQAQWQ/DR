@@ -4,7 +4,10 @@ state={
 	manpower=9824296
 	
 	state_category = megalopolis
-
+	resources={
+		grain=32
+		
+	}
 	history={
 		owner = ENL
 		victory_points = {
@@ -16,6 +19,7 @@ state={
 			industrial_complex = 1
 			dockyard = 1
 			air_base = 4
+			grain_farms=2
 			11374 = {
 				naval_base = 4
 			}

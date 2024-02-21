@@ -7,7 +7,10 @@ state={
 		steel=23 # was: 36
 		aluminium=8 # was: 12
 	}
-	
+	resources={
+		grain=14
+		
+	}
 	state_category = town
 
 	history={
@@ -21,6 +24,7 @@ state={
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
+			grain_farms = 1
 			11372 = {
 				naval_base = 1
 			}

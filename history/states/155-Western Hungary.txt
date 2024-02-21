@@ -8,6 +8,10 @@ state={
 	resources={
 		oil = 1 # was: 1
 	}
+	resources={
+		grain=18
+		
+	}
 	history={
 		owner = KOH
         add_core_of = KOH
@@ -19,6 +23,7 @@ state={
 			industrial_complex = 3
 			arms_factory = 1
 			air_base = 3
+			grain_farms = 2
 		}
 	}
 

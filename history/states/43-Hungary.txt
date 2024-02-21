@@ -5,9 +5,12 @@ state={
 	manpower = 3750752
 	resources={
 		steel=3 # was: 4
-		aluminium=100 # was: 194
+		aluminium=80 # was: 194
 	}
-	
+	resources={
+		grain=14
+		
+	}
 	state_category = large_city
 
 	history={
@@ -18,6 +21,7 @@ state={
 			arms_factory = 2
 			industrial_complex = 2
 			air_base = 1
+			grain_farms = 2
 		}
 		victory_points = {
 			9660 20 

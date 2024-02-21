@@ -3,7 +3,10 @@ state={
 	id=111
 	name="STATE_111" # Uusimaa
 	manpower = 1670190
-	
+	resources={
+		grain=6
+		
+	}
 	state_category = city
 	
 	history={

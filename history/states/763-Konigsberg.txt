@@ -4,7 +4,10 @@ state={
 	name="STATE_763"
 	manpower = 2140234
 	state_category = city
-
+	resources={
+		grain=5
+		
+	}
 	history={
 		owner = WWS
 		controller = WWS
@@ -16,6 +19,7 @@ state={
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 3
+			grain_farms = 1
 			6332 = {
 				bunker = 1
 

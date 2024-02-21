@@ -5,7 +5,10 @@ state={
 	manpower = 3798235
 
 	state_category = large_city
-
+	resources={
+		grain=1
+		
+	}
 	history={
 		owner = DHD
 		buildings = {

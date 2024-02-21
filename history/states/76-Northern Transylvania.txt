@@ -5,7 +5,10 @@ state={
 	manpower=2352700
 	
 	state_category = town
-	
+	resources={
+		grain=10
+		
+	}
 	history={
 		owner = KOH
         add_core_of = KOH

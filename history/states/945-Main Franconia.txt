@@ -5,7 +5,10 @@ state={
 	manpower = 1508159
 
 	state_category = large_town
-
+	resources={
+		grain=10
+		
+	}
 	history={
 		owner = DOR
 		buildings = {

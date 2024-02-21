@@ -6,7 +6,11 @@ state={
 	resources={
 		aluminium=60 # was: 120
 	}
-                set_demilitarized_zone = yes
+	resources={
+		grain=15
+		
+	}
+    #set_demilitarized_zone = yes
 	state_category = city
 
 	history={
@@ -21,6 +25,7 @@ state={
 			arms_factory = 1
 			fuel_silo = 1
 			air_base = 10
+			grain_farms = 2
 			11834 = {
 				naval_base = 3
 				coastal_bunker = 1

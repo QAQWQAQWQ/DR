@@ -9,7 +9,9 @@ state={
 	resources={
 		aluminium=11 # was: 18
 	}
-
+	resources={
+		grain=12
+	}
 	history={
 		owner = FRW
 		victory_points = {

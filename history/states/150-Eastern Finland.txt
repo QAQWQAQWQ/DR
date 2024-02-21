@@ -3,7 +3,10 @@ state={
 	id=150
 	name="STATE_150" # Savo
 	manpower = 611100
-	
+	resources={
+		grain=10
+		
+	}
 	state_category = town
 	
 	resources={

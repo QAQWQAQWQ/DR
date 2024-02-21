@@ -10,7 +10,10 @@ state={
 	resources={
 		aluminium=7 # was: 10
 	}
-
+	resources={
+		grain=15
+		
+	}
 	history={
 		owner = KLD
 		victory_points = {

@@ -4,7 +4,10 @@ state= {
 	manpower = 1221013
 	
 	state_category = town
-
+	resources={
+		grain=13
+		
+	}
 	history= {
 		owner = ENL
 		victory_points = { 540 10 }

@@ -105,6 +105,8 @@
  RULES_TITLE: "§H规则汇总：§!"
  RULES_DESC: "国家的规则受控于你的意识形态、你的阵营的意识形态以及民族精神"
  DAILY_EXPERIENCE_GAIN_OFFICERS: "日增长："
- NUM_OF_grain:0 "[?resource@grain|0Y]"
- grain_value_TOOLTIP:0 "§Y粮食储备§!\n目前可以出口:[?resource_exported@grain|0Y]单位\n目前进口:[?resource_imported@grain|0Y]单位\n目前部队规模:[?num_divisions|0Y]"
- grain_value_TT_TOOLTIP:0 "我们的粮仓目前有[?resource@grain|0Y]单位,目前控制了[?num_owned_controlled_states|0Y]块省份，每月可以提供粮食,每周都有§8粮食损耗，§!月末进行§8粮食结余§!。"
+
+ #NUM_OF_grain:0 "[?resource_grain]"
+ grain_value_TOOLTIP:0 "§Y粮食储备§!\n--每月收益约:[?resource_grain_exp|0Y]单位\n--每周消耗约:[?grain_manpower|0Y]单位\n--目前进口:[?resource_imported@grain|0Y]单位\n--目前部队规模:[?num_divisions|0Y]\n\n最大值：§Y5000§!"
+
+ grain_value_TT_TOOLTIP:0 "我们的粮仓目前有[?resource_grain|0Y]单位,目前控制了[?num_owned_controlled_states|0Y]块省份，有些省份会提供额外粮食收入，每周会有粮食被消耗，每月会收获新一批粮食。"

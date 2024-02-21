@@ -6,6 +6,10 @@ state={
 	
 	state_category = city
 
+	resources={
+		steel=1 # was: 20
+		grain=28
+	}
 	history={
 		owner = ENL
 		victory_points = { 271 5 }
@@ -13,7 +17,7 @@ state={
 			infrastructure = 2 #was: 7
 			arms_factory = 1
 			industrial_complex = 3
-			
+			grain_farm = 3
 			air_base = 4
 			271 = {
 				naval_base = 2

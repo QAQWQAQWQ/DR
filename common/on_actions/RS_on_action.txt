@@ -18,19 +18,29 @@ on_actions = {
 
 on_startup= {
 	effect = {
-		VCT={set_rule = {
+		VCT={
+			leave_faction = yes
+	set_rule = {
 	can_join_factions=no
 }}
-		KGL={set_rule = {
+		KGL={
+			leave_faction = yes
+	set_rule = {
 	can_join_factions=no
 }}
-		KLD={set_rule = {
+		KLD={
+			leave_faction = yes
+	set_rule = {
 	can_join_factions=no
 }}
-		DMT={set_rule = {
+		DMT={
+			leave_faction = yes
+	set_rule = {
 	can_join_factions=no
 }}
-		KOH={set_rule = {
+		KOH={
+			leave_faction = yes
+	set_rule = {
 	can_join_factions=no
 }}
  }
