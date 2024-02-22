@@ -1,0 +1,116 @@
+#要添加新的阵营，只需要复制并改变tag
+#注意，每个tag的阵营图标无法改变
+defined_text = { 
+	name = GetFactionPicture
+	text = {
+		trigger = {
+			check_variable = {
+				ROOT.grid_faction_leader = ENL
+			}
+		}
+		localization_key = "GFX_Commonwealth_of_Nations"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ROOT.grid_faction_leader = FRW
+			}
+		}
+		localization_key = "GFX_Second_International"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ROOT.grid_faction_leader = ZHX
+			}
+		}
+		localization_key = "GFX_Rpublic_China"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ROOT.grid_faction_leader = NPL
+			}
+		}
+		localization_key = "GFX_Bonaparte_family_alliance"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ROOT.grid_faction_leader = JPN
+			}
+		}
+		localization_key = "GFX_Empire_Japan"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ROOT.grid_faction_leader = AOX
+			}
+		}
+		localization_key = "GFX_Habsburg_monarchy"
+	}
+}
+defined_text = { 
+	name = GetOtherFactionPicture
+	text = {
+		trigger = {
+			THIS = {
+				is_in_array = {
+					global.faction_menber_ENL = THIS
+				}
+			}
+		}
+		localization_key = "GFX_Commonwealth_of_Nations"
+	}
+	text = {
+		trigger = {
+			THIS = {
+				is_in_array = {
+					global.faction_menber_FRW = THIS
+				}
+			}
+		}
+		localization_key = "GFX_Second_International"
+	}
+	text = {
+		trigger = {
+			THIS = {
+				is_in_array = {
+					global.faction_menber_ZHX = THIS
+				}
+			}
+		}
+		localization_key = "GFX_Rpublic_China"
+	}
+	text = {
+		trigger = {
+			THIS = {
+				is_in_array = {
+					global.faction_menber_NPL = THIS
+				}
+			}
+		}
+		localization_key = "GFX_Bonaparte_family_alliance"
+	}
+	text = {
+		trigger = {
+			THIS = {
+				is_in_array = {
+					global.faction_menber_AOX = THIS
+				}
+			}
+		}
+		localization_key = "GFX_Habsburg_monarchy"
+	}
+	text = {
+		trigger = {
+			THIS = {
+				is_in_array = {
+					global.faction_menber_JPN = THIS
+				}
+			}
+		}
+		localization_key = "GFX_Empire_Japan"
+	}
+}
