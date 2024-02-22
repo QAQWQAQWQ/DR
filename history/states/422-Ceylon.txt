@@ -9,7 +9,9 @@ state=
 	resources={
 		rubber=60 # was: 116
 	}
-
+	resources={
+		grain=16
+	}
 	history={
 		add_core_of = SRL
 		owner = ENL

@@ -3,7 +3,9 @@ state={
 	id=659
 	name="STATE_659"
 	manpower=871202
-
+	resources={
+		grain=1
+	}
 	history={
 		owner = ENL
 		victory_points = {

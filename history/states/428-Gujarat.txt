@@ -9,7 +9,9 @@ state={
 	resources={
 		oil=3 # was: 4
 	}
-
+	resources={
+		grain=19
+	}
 	history={
 		owner = YDA
 		victory_points = {

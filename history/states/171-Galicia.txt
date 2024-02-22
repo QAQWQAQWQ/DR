@@ -5,7 +5,9 @@ state={
 	manpower = 2295085
 	
 	state_category = city
-
+	resources={
+		grain=8
+	}
 	history={
 		owner = SBY
 		add_core_of = GLC

@@ -3,7 +3,9 @@ state={
 	name="STATE_717"
 	
 	state_category = pastoral
-
+	resources={
+		grain=18
+	}
 	history={
 		owner = FTX
 		add_core_of = FTX

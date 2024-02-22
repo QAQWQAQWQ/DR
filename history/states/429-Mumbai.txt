@@ -8,7 +8,9 @@ state={
 	resources={
 		#tungsten=19 # was: 26
 	}
-
+	resources={
+		grain=15
+	}
 	history={
 		owner = YDA
 		buildings = {

@@ -1,7 +1,9 @@
 state = {
 	id = 404
 	name = "STATE_404" # Kyzyl Orda
-
+	resources={
+		grain=11
+	}
 	history = {
 		owner = SHW
 		victory_points = {

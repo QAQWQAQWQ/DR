@@ -5,7 +5,10 @@ state={
 	manpower = 2227520
 	
 	state_category = city
-	
+	resources={
+		grain=17
+		
+	}
 	resources={
 		steel=33 # was: 56
 	}

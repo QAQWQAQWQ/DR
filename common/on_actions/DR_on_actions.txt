@@ -8,13 +8,21 @@ on_actions = {
 				set_variable = { resource_grain = resource@grain }
 				set_variable = { resource_grain_exported = resource_exported@grain }
 				set_variable = { grain_temp_manpower = max_manpower_k }
+				add_to_variable = { resource_grain = 50 }
 				if={
 					limit={
 						tag=ENL
+						tag=NPL
 					}
-					add_to_variable = { resource_grain = 250 }
+					add_to_variable = { resource_grain = 150 }
 				}
-				add_to_variable = { resource_grain = 50 }
+				if={
+					limit={
+						tag=ZHX
+						tag=YDA
+					}
+					add_to_variable = { resource_grain = 450 }
+				}
 				clamp_variable = {
 					var = resource_grain
 					min = 0
@@ -89,6 +97,21 @@ on_actions = {
 					has_country_flag = Famine_Russia
 				}
 				set_variable = { grain_manpower = 1500 }
+			}
+		}
+	}
+	on_weekly = {
+		effect = {
+			if={
+				limit={
+					check_variable = {
+						resource_grain = 0
+					}
+				}
+				add_timed_idea = {
+					idea = Food_shortages
+					days = 30
+				}
 			}
 		}
 	}

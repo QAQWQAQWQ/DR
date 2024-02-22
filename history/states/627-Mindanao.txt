@@ -5,7 +5,9 @@ state={
 	manpower = 1496508
 	
 	state_category = rural
-
+	resources={
+		grain=17
+	}
 	history={
 		owner = PHL
 		buildings = {

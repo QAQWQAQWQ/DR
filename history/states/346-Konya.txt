@@ -5,7 +5,9 @@ state={
 	manpower = 849453
 	
 	state_category = rural
-
+	resources={
+		grain=23
+	}
 	history={
 		owner = TEQ
 		buildings = {

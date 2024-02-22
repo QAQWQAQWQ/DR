@@ -1,7 +1,9 @@
 state={
 	id=714
 	name="STATE_714"
-
+	resources={
+		grain=15
+	}
 	history={
 		owner = FTX
 		add_core_of = FTX

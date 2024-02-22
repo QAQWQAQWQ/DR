@@ -6,8 +6,14 @@ state={
 	
 	
 	state_category = town
-
-
+	resources={
+		grain=31
+		
+	}
+	resources={
+		grain=15
+		
+	}
 	history={
 		owner = SHW
 		buildings = {

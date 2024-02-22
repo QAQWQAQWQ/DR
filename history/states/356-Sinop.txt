@@ -4,7 +4,9 @@ state={
 	name="STATE_356" # Kastamonu
 	manpower = 860589
 	state_category = rural
-
+	resources={
+		grain=22
+	}
 	history={
 		owner = TEQ
 		victory_points = {

@@ -5,6 +5,9 @@ state = {
 	manpower = 1772000 # was 2966315 before Puglia was added
 	
 	state_category = town
+	resources={
+		grain=5
+	}
 	history = {
 		owner = RDN
 		victory_points = {

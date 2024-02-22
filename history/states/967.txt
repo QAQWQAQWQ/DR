@@ -8,7 +8,9 @@ state={
 		steel=43
 		tungsten=60
 	}
-
+	resources={
+		grain=10
+	}
 	history={
 		owner = KON
 		add_core_of = KON

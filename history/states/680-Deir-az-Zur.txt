@@ -4,7 +4,9 @@ state={
 	manpower = 324110
 	
 	state_category = wasteland
-
+	resources={
+		grain=11
+	}
 	history={
 		owner = TEQ
 		victory_points = {

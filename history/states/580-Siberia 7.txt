@@ -5,7 +5,9 @@ state = {
 	manpower = 88126
 	
 	state_category = pastoral
-
+	resources={
+		grain=3
+	}
 	history = {
 		victory_points = {
 			1659 1

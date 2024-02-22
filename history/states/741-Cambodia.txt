@@ -1,6 +1,9 @@
 state={
 	id=741
 	name="STATE_741"
+	resources={
+		grain=10
+	}
 	history = {
 		add_core_of = VAN
 		owner = VAN

@@ -12,7 +12,9 @@ state={
 		aluminium=50 # was: 96
 	}
 
-
+	resources={
+		grain=16
+	}
 	history={
 		owner = UBS
 		buildings = {

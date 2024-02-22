@@ -2,7 +2,9 @@
 state={
 	id=353
 	name="STATE_353"
-
+	resources={
+		grain=14
+	}
 	history={
 		owner = TEQ
 		victory_points = {

@@ -4,7 +4,9 @@ state={
 	name="STATE_395"
 	manpower = 7630651
 	state_category = megalopolis
-
+	resources={
+		grain=19
+	}
 	history={
 		owner = UBS
 		buildings = {

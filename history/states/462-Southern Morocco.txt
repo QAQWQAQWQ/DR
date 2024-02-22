@@ -5,7 +5,9 @@ state={
 	manpower = 1865552
 	
 	state_category = wasteland
-
+	resources={
+		grain=4
+	}
 	history={
 		owner = MOL
 add_core_of = MOL

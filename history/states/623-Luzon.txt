@@ -8,7 +8,9 @@ state= {
 	resources={
 		rubber=1 # was: 2
 	}
-
+	resources={
+		grain=16
+	}
 	history= {
 		owner = PHL
 		buildings = {

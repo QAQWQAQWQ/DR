@@ -9,7 +9,9 @@ state={
 		tungsten=17 # was: 26
 		oil=12 # was: 18
 	}
-
+	resources={
+		grain=25
+	}
 	history={
 		owner = SHW
 		victory_points = {

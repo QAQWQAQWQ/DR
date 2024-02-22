@@ -8,7 +8,9 @@ state={
 	resources={
 		chromium=6 # was: 8
 	}
-
+	resources={
+		grain=14
+	}
 	history={
 		owner = YDA
 		victory_points = {

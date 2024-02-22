@@ -1,7 +1,9 @@
 state={
 	id=566
 	name="STATE_566" #Irktusk
-	
+	resources={
+		grain=3
+	}
 	state_category = rural
 	resources={
 		steel=20 # was: 28.000

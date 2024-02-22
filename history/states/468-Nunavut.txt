@@ -9,7 +9,9 @@ state={
 	resources={
 		aluminium=3 # was: 4
 	}
-
+	resources={
+		grain=8
+	}
 	history={
 		owner = CNA
 		buildings = {

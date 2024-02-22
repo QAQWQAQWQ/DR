@@ -10,7 +10,9 @@ state={
 		oil=8
 		#steel=4 sent to Mexico City
 	}
-
+	resources={
+		grain=10
+	}
 	history={
 		owner = MEX
 		buildings = {

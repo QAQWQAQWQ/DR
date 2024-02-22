@@ -5,7 +5,9 @@ state={
 	manpower = 670800
 
 	state_category = pastoral
-
+	resources={
+		grain=2
+	}
 	history={
 		owner = XJC
 		add_core_of = XJC

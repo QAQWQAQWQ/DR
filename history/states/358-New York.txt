@@ -4,7 +4,9 @@ state={
 	resources={
 		steel=13 # was: 24.000
 	}
-	
+	resources={
+		grain=15
+	}
 	state_category = megalopolis
 
 	history={

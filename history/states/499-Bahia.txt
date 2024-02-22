@@ -5,7 +5,9 @@ state={
 	manpower = 4233900
 	
 	state_category = large_town
-
+	resources={
+		grain=23
+	}
 	history={
 		owner = BRA
 		buildings = {

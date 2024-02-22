@@ -5,7 +5,9 @@ state={
 	manpower = 40431
 	
 	state_category = wasteland
-
+	resources={
+		grain=1
+	}
 	history={
 		owner = SNX
 		buildings = {

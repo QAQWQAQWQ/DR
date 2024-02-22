@@ -4,7 +4,9 @@ state={
 	name="STATE_280"
 	
 	state_category = pastoral
-
+	resources={
+		grain=11
+	}
 	history={
 		owner = BRA
 		buildings = {

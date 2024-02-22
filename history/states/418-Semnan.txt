@@ -5,7 +5,9 @@ state={
 	manpower = 332362
 	
 	state_category = wasteland
-
+	resources={
+		grain=12
+	}
 	history={
 		owner = YEL
 		buildings = {

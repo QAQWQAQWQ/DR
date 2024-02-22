@@ -5,7 +5,9 @@ state={
 	manpower = 1470000
 	
 	state_category = pastoral
-
+	resources={
+		grain=12
+	}
 	history={
 		owner = ZHX
 		buildings = {

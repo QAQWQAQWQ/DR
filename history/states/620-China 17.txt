@@ -1,7 +1,9 @@
 state={
 	id=620
 	name="STATE_620"
-
+	resources={
+		grain=22
+	}
 	history={
 		owner = ZHX
 		buildings = {

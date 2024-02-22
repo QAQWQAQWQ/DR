@@ -4,7 +4,9 @@ state={
 	name="STATE_424" # Madras
 	manpower = 15791700
 	state_category = rural
-	
+	resources={
+		grain=16
+	}
 
 	history={
 		owner = YDA

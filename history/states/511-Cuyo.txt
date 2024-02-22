@@ -5,7 +5,9 @@ state={
 	manpower = 1090274
 	
 	state_category = rural
-
+	resources={
+		grain=14
+	}
 	history={
 		owner = ARG
 		buildings = {

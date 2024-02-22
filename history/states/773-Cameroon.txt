@@ -5,7 +5,9 @@ state={
 	manpower = 2945782
 	
 	state_category = rural
-
+	resources={
+		grain=2
+	}
 	history={
 		owner = DSX
 		victory_points = {

@@ -4,6 +4,9 @@ state = {
 	name = "STATE_849"
 	manpower = 2642000 
 	state_category = city
+	resources={
+		grain=7
+	}
 	history = {
 		owner = RDN
 		victory_points = { #Bari

@@ -7,7 +7,9 @@ state={
 		chromium=35 # was: 46
 	}
 	state_category = rural
-
+	resources={
+		grain=22
+	}
 	history={
 		owner = TEQ
 		victory_points = {

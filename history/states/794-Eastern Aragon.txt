@@ -1,7 +1,9 @@
 state={
 	id=794
 	name="STATE_794"
-
+	resources={
+		grain=5
+	}
 	history={
 		owner = SBY
 		victory_points = {

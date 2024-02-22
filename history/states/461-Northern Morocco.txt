@@ -5,7 +5,9 @@ state={
 	resources={
 		chromium=12.000
 	}
-
+	resources={
+		grain=10
+	}
 	history={
 		owner = MOL
 		add_core_of = MOL

@@ -4,6 +4,9 @@ state=
 	name="STATE_596"
 	manpower = 21230700
 	state_category = city
+	resources={
+		grain=31
+	}
 	history=
 	{
 		owner = ZHX
@@ -32,7 +35,7 @@ state=
 		
 		buildings = {
 			infrastructure = 2
-
+grain_farms = 1
 			7191 = {
 				naval_base = 1
 				coastal_bunker = 1

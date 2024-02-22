@@ -7,7 +7,9 @@ state={
 	}
 	
 	state_category = metropolis
-
+	resources={
+		grain=22
+	}
 	history={
 		owner = UBS
 		buildings = {

@@ -1,7 +1,9 @@
 state={
 	id=617
 	name="STATE_617"
-
+	resources={
+		grain=6
+	}
 	history={
 		owner = XJC
 		add_core_of = XJC

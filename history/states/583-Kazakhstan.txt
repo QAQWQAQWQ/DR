@@ -1,7 +1,9 @@
 state={
 	id=583
 	name="STATE_583"
-
+	resources={
+		grain=8
+	}
 	history={
 		owner = SHW
 		add_core_of = KAZ

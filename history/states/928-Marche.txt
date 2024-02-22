@@ -5,7 +5,9 @@ state = {
 	manpower = 1979335
 	
 	state_category = city
-
+	resources={
+		grain=10
+	}
 	history = {
 		owner = LMJ
 		victory_points = {

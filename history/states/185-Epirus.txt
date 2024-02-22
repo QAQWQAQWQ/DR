@@ -10,7 +10,9 @@ state={
 		chromium=14 # was: 20
 		steel = 14 # was: 20
 	}
-
+	resources={
+		grain=4
+	}
 	history={
 		victory_points = {
 			10203 1

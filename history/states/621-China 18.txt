@@ -1,7 +1,9 @@
 state={
 	id=621
 	name="STATE_621"
-
+	resources={
+		grain=25
+	}
 	history={
 		owner = ZHX
 		add_core_of = ZHX

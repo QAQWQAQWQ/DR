@@ -8,7 +8,9 @@ state= {
 		steel= 15 # was: 20
 		chromium = 3 # was: 4
 	}
-
+	resources={
+		grain=15
+	}
 	history= {
 		owner = GUG
 		buildings = {

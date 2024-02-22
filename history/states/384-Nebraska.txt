@@ -5,7 +5,9 @@ state={
 	manpower = 1377962
 	
 	state_category = large_town
-
+	resources={
+		grain=18
+	}
 	history={
 		owner = UBS
 		buildings = {

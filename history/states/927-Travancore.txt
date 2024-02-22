@@ -5,7 +5,9 @@ state={
 	manpower = 886410
 
 	state_category = enclave
-
+	resources={
+		grain=10
+	}
 	history={
 		owner = YDA
 		buildings = {

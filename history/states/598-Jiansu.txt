@@ -4,12 +4,14 @@ state={
 	name="STATE_598"
 	
 	state_category = town
-
+	resources={
+		grain=33
+	}
 	history={
 		owner = ZHX
 		buildings = {
 			infrastructure = 2
-
+grain_farms = 2
 		}
 	
         victory_points = {

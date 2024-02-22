@@ -4,7 +4,9 @@ state={
 	name="STATE_971"
 	manpower = 2300000
 	state_category = town
-
+	resources={
+		grain=5
+	}
 	history={
 		owner = KON
 		add_core_of = KON

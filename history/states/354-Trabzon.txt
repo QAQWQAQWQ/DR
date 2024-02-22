@@ -5,7 +5,9 @@ state={
 	manpower = 1031129
 	
 	state_category = town
-
+	resources={
+		grain=22
+	}
 	history={
 		owner = TEQ
 		

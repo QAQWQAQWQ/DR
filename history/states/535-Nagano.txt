@@ -9,7 +9,9 @@ state={
 		steel=27 # was: 35
 		tungsten=8 # was: 10
 	}
-
+	resources={
+		grain=15
+	}
 	history={
 		owner = JPN
 		add_core_of = JPN

@@ -9,7 +9,9 @@ state={
 	resources={
 		steel=3 # was: 4
 	}
-
+	resources={
+		grain=15
+	}
 	history={
 		owner = BRA
 		victory_points = {

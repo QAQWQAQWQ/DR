@@ -6,7 +6,9 @@ state={
 	resources={
 		steel=3 # was: 4
 	}
-	
+	resources={
+		grain=2
+	}
 	state_category = pastoral
 
 	history={

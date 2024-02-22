@@ -8,7 +8,9 @@ state = {
 	resources={
 		steel=18 # was: 24
 	}
-
+	resources={
+		grain=2
+	}
 	history={
 		owner = SHW
 		buildings = {

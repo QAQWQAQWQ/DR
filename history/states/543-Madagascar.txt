@@ -5,7 +5,9 @@ state={
 	manpower = 3694611
 	
 	state_category = rural
-	
+	resources={
+		grain=2
+	}
 	history={
 		owner = TRO
 		victory_points = {

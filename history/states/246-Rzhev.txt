@@ -8,7 +8,9 @@ state={
 	resources={
 		steel=16 # was: 24
 	}
-
+	resources={
+		grain=15
+	}
 	history={
 		owner = SHW
 		victory_points = {

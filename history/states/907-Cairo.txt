@@ -3,7 +3,9 @@ state={
 	name="STATE_907"
 	manpower = 6454865
 	state_category=town
-
+	resources={
+		grain=22
+	}
 	history={
 		owner = EYJ
 		buildings = {

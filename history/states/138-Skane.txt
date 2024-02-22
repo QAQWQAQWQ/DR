@@ -5,7 +5,9 @@ state={
 	manpower = 1047701
 	
 	state_category = city
-
+	resources={
+		grain=9
+	}
 	history={
 		owner = RUD
 		victory_points = {

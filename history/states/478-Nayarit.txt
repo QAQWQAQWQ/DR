@@ -9,7 +9,9 @@ state={
 	resources={
 		tungsten=8 # was: 10
 	}
-
+	resources={
+		grain=5
+	}
 	history={
 		owner = MEX
 		buildings = {

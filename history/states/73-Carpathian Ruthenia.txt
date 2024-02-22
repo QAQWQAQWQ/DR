@@ -4,7 +4,9 @@ state={
 	manpower = 854300
 	
 	state_category = rural
-	
+	resources={
+		grain=3
+	}
 	history={
 		victory_points = {
 			3548 1 

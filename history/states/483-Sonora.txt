@@ -5,7 +5,9 @@ state={
 	manpower = 303987
 	
 	state_category = rural
-
+	resources={
+		grain=15
+	}
 	history={
 		owner = MEK
 		buildings = {

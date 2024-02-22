@@ -7,7 +7,9 @@ state={
 	resources={
 		steel=6 # was: 8
 	}
-
+	resources={
+		grain=2
+	}
 	history={
 		owner = TRT
 		victory_points = {

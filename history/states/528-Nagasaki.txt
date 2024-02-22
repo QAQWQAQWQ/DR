@@ -7,7 +7,9 @@ state={
 	resources={
 		chromium=52 # was: 88
 	}
-
+	resources={
+		grain=15
+	}
 	history={
 		owner = JPN
 		add_core_of = JPN

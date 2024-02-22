@@ -4,7 +4,9 @@ state={
 	name="STATE_504"
 	
 	state_category = rural
-
+	resources={
+		grain=13
+	}
 	history={
 		owner = BRA
 		buildings = {

@@ -8,7 +8,9 @@ state={
 
 	state_category = rural
 
-
+	resources={
+		grain=5
+	}
 	history={
 		owner = XXL
 		buildings = {

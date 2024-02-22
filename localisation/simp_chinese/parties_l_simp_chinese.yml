@@ -13,54 +13,68 @@
  Anarchism_acceptance:0 "无政府主义外交接纳度"
 ###母意识形态
  Revolutionism:0 "革命主义"
- Revolutionism_noun:0 "民主集中制"
- Revolutionism_desc:0 "革命主义"
+ Revolutionism_noun:0 "革命主义"
+ Revolutionism_desc:0 "民主集中制"
  Reformism:0 "改良主义"
- Reformism_noun:0 "议会民主制"
- Reformism_desc:0 "改良主义"
+ Reformism_noun:0 "改良主义"
+ Reformism_desc:0 "议会民主制"
  Conservatism:0 "保守主义"
- Conservatism_noun:0 "家长制"
- Conservatism_desc:0 "保守主义"
+ Conservatism_noun:0 "保守主义"
+ Conservatism_desc:0 "家长制"
  Liberalism:0 "自由主义"
- Liberalism_noun:0 "开放民主制"
- Liberalism_desc:0 "自由主义"
+ Liberalism_noun:0 "自由主义"
+ Liberalism_desc:0 "开放民主制"
  Reactionary:0 "反动主义"
- Reactionary_noun:0 "集中制"
- Reactionary_desc:0 "反动主义"
+ Reactionary_noun:0 "反动主义"
+ Reactionary_desc:0 "集中制"
  Anarchism:0 "无政府主义"
- Anarchism_noun:0 "无政府"
- Anarchism_desc:0 "无政府主义"
+ Anarchism_noun:0 "无政府主义"
+ Anarchism_desc:0 "无政府"
+
+
 ###子意识形态
-##革命主义
+##革命主义 
  Authoritarianism_revolutionism:0 "专政革命主义"
- Authoritarianism_revolutionism_desc:0 "专政革命主义是一种主张由特定的阶级或人群领导，并由这类人群进行权力分配及执政的革命思想。专政革命者通常主张特定阶级执掌权力进行革命，并对其他不支持革命的人群进行镇压控制。部分专政革命者可能未接受过充足的理论指导和革命教育，他们的专政革命往往是粗糙且颇具偏颇的专政，不能代表大多数革命者。"
+ Authoritarianism_revolutionism_desc:0 "专政革命主义是一种主张由特定的阶级或人群领导，并由这类人群进行权力分配及执政的革命意识形态。通常来讲，专政革命主义一般出现在革命条件尚未成熟，却因为历史作用而不得不发生革命的国家或地区。这类革命通常尚未能够发展出符合现状的革命纲领。因此，为了维护稚嫩的革命果实不受反动派反攻倒算，必须通过专政的手段对一切阻碍革命的力量进行清理与制裁。因此，专政革命主义与其说是一种意识形态，不如说是一种为了保护革命的必要手段。尽管如此，出于各种各样的原因，比如未接受过充足的理论指导和革命教育，也有一部分人认为革命并不是一蹴而就的，而是要在很长段时间内维持专政革命的状态。这种情况下，如果无法适时发展出一种符合实际情况的革命主义理论，那么专政革命主义就有滑向革命反面的风险。"
+
  Nationalism_revolutionism:0 "民族革命主义"
  Nationalism_revolutionism_desc:0 "民族革命主义是一种带有显著本民族色彩的革命思想，这类革命者往往只主张在本民族或由本民族领导、占主体的国家和地区中进行革命，并且往往不打算将革命推及其他国家与民族，甚至可能刻意建立不同民族间的隔阂和地位差距。"
+
  Socialism_revolutionism:0 "革命社会主义"
  Socialism_revolutionism_desc:0 "革命社会主义主张通过一场革命来促进国家的权力变革，并通过这种变革改善社会环境和促进公众利益。这类革命者往往缺乏对较远未来的看法，仅希望借助革命的力量进行对国家和社会的‘改良’，因此他们也很难提出一个具有开创性的纲领来引导国家社会发展。"
+
+
  Scientism_revolutionism:0 "科学社会主义"
- Scientism_revolutionism:_desc0 "科学社会主义主张通过合理的、具有可靠性并且能因地制宜的方法来真正意义上地建成社会主义社会，并一次向更高级的社会形式过渡。这类革命者往往是学习过马克思与恩格斯理论的有识之士，并通常会对自己所属的国家与地区的发展方向具有不同的认识，但通常都主张通过革命的形式来尽可能合理地重新调整国家与社会的情况。"
+ Scientism_revolutionism_desc:0 "科学社会主义主张通过合理的、具有可靠性并且能因地制宜的方法来真正意义上地建成社会主义社会，并一次向更高级的社会形式过渡。这类革命者往往是学习过马克思与恩格斯#理论的有识之士，并通常会对自己所属的国家与地区的发展方向具有不同的认识，但通常都主张通过革命的形式来尽可能合理地重新调整国家与社会的情况。"
+
+
+
+
+
+
  Leninism_revolutionism:0 "列宁主义"
- Leninism_revolutionism_desc:0 "列宁主义是由俄国革命者列宁提出的一种结合了马克思革命理论的新兴革命思想，主张通过以工人、农民为代表的无产阶级群众为主的先锋队理论来建立由无产阶级进行专政的国家，并且强调由思想与方针统一的一党政府进行执政。"
+ Leninism_revolutionism_desc:0 "列宁主义，又称马克思列宁主义，是一种继承并发展了马克思、恩格斯有关阶级社会理念的意识形态，根据列宁主义者们对这一意识形态的阐述，可以将列宁主义看作是帝国主义和无产阶级革命时代的马克思主义。马克思列宁主义认为，“人类社会的一切历史，都是阶级斗争的历史”。只有通过暴力革命的形式才能推翻资产阶级，实现无产阶级专政。对于革命的领导权问题，列宁主义者认为，巴黎公社式的委员会制度固然有可取之处，但是俄国的革命现状不允许其在革命伊始就实现大规模的委员会民主。因此作为革命的基础,需要组建一个社会主义政党，并将其作为革命的核心，发动最广大的无产阶级群众进行无产阶级革命。"
+
  Commissionism_revolutionism:0 "委员会主义"
- Commissionism_revolutionism_desc:0 "委员会主义主张通过一个公正、广泛、能代表绝大多数人利益的议会形式的系统进行选拔一个代表广大人民群众的委员会，再由这个委员会代表人民进行执政。为了实现这个目标并清除资产阶级议会或封建君主的势力，则必须要进行革命以重建一个真正能代表无产阶级的选拔议会。"
+ Commissionism_revolutionism_desc:0 "委员会主义通常指沿袭了马克思、恩格斯阶级斗争学说，并且希望通过工人自发性组织和斗争以推翻封建阶级和资产阶级，从而实现社会主义革命的意识形态。委员会主义者们认为，革命组织在革命的过程当中，并不是起领导作用的，而是在阶级内部进行宣传、鼓动，进而激发工人阶级的斗争觉悟,并通过工人阶级控制的直接民主机关一工人委员会来进行斗争。因此，委员会主义对革命党夺取政权的主张相当排斥，认为这一举措将会导致政党的独裁。因其激进的民主主义和革命主义观点，委员会主义和师出同门的列宁主义在革命的领导权上出现了分歧，又在对待革命问题的态度上和改良主义者们分道扬镶。他们的观点更加接近于工团主义乃至无政府主义。委员会主义者们相信，必须激发工人的自主斗争意识，必须通过民主的工人委员会进行斗争和建设，才能推翻资本主义、远离官僚主义，进而实现马克思、恩格斯的夙愿。"
+
  Agrarianism_revolutionism:0 "农业社会主义"
- Agrarianism_revolutionism_desc:0 "农业社会主义是社会主义的一个分支流派，主张以农业为主，在农业公有化、集体化的基础上逐步改造市场和社会，自然而然形成并尤其在农村环境下形成一个收入分配均衡且生产生活资料丰富的社会。农业社会主义者并不排斥工业等其他生产形式，但在进行社会改造、进行革命时会更注重农业生产。"
- Syndicalism_revolutionism:0 "革命工团主义"
- Syndicalism_revolutionism_desc:0 "革命工团主义主张以无产工人组织成的工人团体来发动革命、领导社会、组织生产和掌握权力。这派革命者通常认为经过良好教育并且进行过实际生产的工人群众能有力地代表、领导无产阶级，并且能自发地做出相较其他阶级和无产阶级其他群体更理智、更符合全体无产阶级利益的决策。"
+ Agrarianism_revolutionism_desc:0 "现代资本主义和工业催生了无产阶级，并使其登上历史舞台。但是在繁荣的城市之外，尚有广袤的田野，以及几千年来供养着全人类的劳动者一一农民。因此，当革命的风吹向那些尚未迈入工业社会的古老国度时，农业社会主义便在古老的土壤里结出了新世界的果实。农业社会主义，正如同其名字一样，一般流行于那些尚未完成工业化，农业生产依然占主流的国家。在这些国家当中，城市无产阶级的力量往往不足以独立进行无产阶级革命，因此必须与农村的广大劳动者进行有机的结合，从而进行符合最广大人民群众利益的，打倒大资产阶级和封建地主阶级的革命，并彻底改变以往带来诸多苦难的土地私有制。尽管带有“农业”二字.并且植根于土地之上。但农业社会主义者不是什么要倒退回原始文明的卢德主义者。相反，他们深知现代工业是如何彻底改变农业这一人类沿袭上千年的职业。因此，农业社会主义者并不排斥工业化，相反，他们还鼓励工业化的成果往农业资源倾斜。毕竟锄头抡冒烟了都不可能比拖拉机快。"
+
 
 ##改良主义
  Social_Reformism:0 "社会民主主义"
  Social_Reformism_desc:0 ""
  Democracy_Reformism:0 "民主社会主义"
  Democracy_Reformism_noun:0 "民主社会主义"
- Democracy_Reformism_desc::0 ""
+ Democracy_Reformism_desc:0 ""
  Fabian_Reformism:0 "费边社会主义"
- Fabian_Reformism_desc::0 ""
+ Fabian_Reformism_desc:0 ""
  Trade_Reformism:0 "工联社会主义"
- Trade_Reformism_desc::0 ""
+ Trade_Reformism_desc:0 ""
  Bernstein_Reformism:0 "伯恩斯坦主义"
- Bernstein_Reformism_desc::0 ""
+ Bernstein_Reformism_desc:0 ""
+
 
 ##保守主义
  Classicism_Conservatism:0 "古典保守主义"
@@ -93,16 +107,12 @@
  Militarism_Reactionary_desc:0 ""
 
 ##无政府主义
- Syndicalism_Anarchism:0 "无政府工团主义"
- Syndicalism_Anarchism_desc:0 ""
+ Syndicalism_Anarchism:0 "革命工团主义"
+ Syndicalism_Anarchism_desc:0 "革命工团主义主张以无产工人组织成的工人团体来发动革命、领导社会、组织生产和掌握权力。这派革命者通常认为经过良好教育并且进行过实际生产的工人群众能有力地代表、领导无产阶级，并且能自发地做出相较其他阶级和无产阶级其他群体更理智、更符合全体无产阶级利益的决策。"
  Communist_Anarchism:0 "无政府共产主义"
  Communist_Anarchism_desc:0 ""
  Autonomismism_Anarchism:0 "社区无政府主义"
  Autonomismism_Anarchism_desc:0 ""
 
-
-
-
-###各国意识形态
- SHW_Left_populism_party:0 "左翼社会革命党"
- SHW_Left_populism_party_long:0 "左翼社会革命党"
+FRW_Reformism_party:0 "左翼人民联盟"
+FRW_Reformism_party_long:0 "法兰西左翼人民联盟"

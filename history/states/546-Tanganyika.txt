@@ -6,6 +6,9 @@ state={
 	resources={
 		rubber=2 # was: 2
 	}
+	resources={
+		grain=2
+	}
 	history={
 		owner = DSX
 		add_core_of = DSX

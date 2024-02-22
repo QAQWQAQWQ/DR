@@ -5,7 +5,9 @@ state={
 	manpower = 31136800
 	
 	state_category = city
-	
+	resources={
+		grain=21
+	}
 	history={
 		owner = YDA
 		buildings = {

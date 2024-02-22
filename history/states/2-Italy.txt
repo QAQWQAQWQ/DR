@@ -4,7 +4,9 @@ state = {
 	manpower = 2781971
 	
 	state_category = city
-
+	resources={
+		grain=8
+	}
 	history = {
 		owner = LMJ
 		victory_points = { 9904 40 } #Rome

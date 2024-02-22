@@ -1,7 +1,9 @@
 state = {
 	id = 585
 	name = "STATE_585" #Navoiy
-
+	resources={
+		grain=7
+	}
 	history = {
 		
 		owner = SHW

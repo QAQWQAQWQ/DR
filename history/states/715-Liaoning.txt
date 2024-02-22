@@ -4,7 +4,9 @@ state={
 	manpower = 3643373
 	
 	state_category = town
-
+	resources={
+		grain=27
+	}
 	history={
 		owner = FTX
 		add_core_of = FTX

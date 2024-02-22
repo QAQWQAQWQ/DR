@@ -4,7 +4,9 @@ state={
 	name="STATE_417" # Hamadan
 	manpower = 796396
 	state_category = rural
-
+	resources={
+		grain=7
+	}
 	history={
 		owner = YEL
 		victory_points = {

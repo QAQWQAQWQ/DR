@@ -6,7 +6,9 @@ state=
 	resources = {
 		# rubber=2 # was: 2
 	}
-	
+	resources={
+		grain=12
+	}
 	state_category = town
 
 	history = {

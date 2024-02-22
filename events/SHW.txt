@@ -17,8 +17,8 @@ news_event = {
 	option = {
 		name = SHW.1.a
 		#set_variable = { grain_manpower = 2000 }
-
-		remove_country_flag = Famine_in_Russia
+      
+		#remove_country_flag = Famine_in_Russia
 		set_country_flag = Famine_Russia
 		custom_effect_tooltip = Famine_in_Russia
 		add_political_power = -150
@@ -45,7 +45,6 @@ news_event = {
 		option = {
 			name = SHW.2.a
 			hidden_effect={
-				add_to_variable = { resource_grain = 1250 }
 				news_event = { id = SHW.3 days = 10}
 			}
 		}

@@ -7,7 +7,9 @@ state={
 		oil=12 # was: 14
 	}
 	state_category = rural
-	
+	resources={
+		grain=16
+	}
 
 	history={
 		owner = YEL

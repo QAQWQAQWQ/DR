@@ -10,7 +10,9 @@ state={
 		rubber=140 # was: 242
 		oil=10 # was: 16
 	}
-
+	resources={
+		grain=15
+	}
 	history={
 		owner = HEL
 		add_core_of = HEL

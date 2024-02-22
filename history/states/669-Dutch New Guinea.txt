@@ -4,7 +4,9 @@ state={
 	manpower = 314300
 
 	state_category = pastoral
-
+	resources={
+		grain=10
+	}
 	history= {
 		owner = HEL
 		add_core_of = HEL

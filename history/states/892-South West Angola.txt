@@ -3,7 +3,9 @@ state={
 	name="STATE_892"
 	manpower = 960000
 	state_category = pastoral
-
+	resources={
+		grain=2
+	}
 	history={
 		owner = PTY
 		buildings = {

@@ -6,7 +6,9 @@ state={
 	resources={
 		oil=15 # was: 20
 	}
-	
+	resources={
+		grain=12
+	}
 	state_category = town
 
 	history={

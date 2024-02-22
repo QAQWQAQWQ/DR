@@ -9,7 +9,9 @@ state={
 	resources={
 		oil=5 # was: 6
 	}
-
+	resources={
+		grain=8
+	}
 	history={
 		owner = ARG
 		buildings = {

@@ -8,7 +8,9 @@ state={
 	resources={
 		chromium=14 # was: 20
 	}
-
+	resources={
+		grain=35
+	}
 	history={
 		owner = SHW
 		buildings = {

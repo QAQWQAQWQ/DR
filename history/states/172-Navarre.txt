@@ -1,7 +1,9 @@
 state={
 	id=172
 	name="STATE_172"
-
+	resources={
+		grain=6
+	}
 	history={
 		owner = SBY
 		add_core_of = NAV

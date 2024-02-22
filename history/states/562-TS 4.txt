@@ -4,7 +4,9 @@ state = {
 	name = "STATE_562" # Okhotsk
 	manpower = 63480
 	state_category = pastoral
-
+	resources={
+		grain=8
+	}
 	history = {
 		owner = SHW
 		buildings = {

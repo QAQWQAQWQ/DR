@@ -12,7 +12,9 @@ state={
 		tungsten=189 # was: 308
 		aluminium = 15 # was: 25
 	}
-
+	resources={
+		grain=24
+	}
 	history={
 		owner = ENL
 		victory_points = {

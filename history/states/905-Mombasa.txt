@@ -3,7 +3,9 @@ state={
 	name="STATE_905"
 	manpower = 1017600
 	state_category = pastoral
-
+	resources={
+		grain=4
+	}
 	history={
 		owner = DSX
 		add_core_of = DSX

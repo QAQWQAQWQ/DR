@@ -5,7 +5,9 @@ state={
 	manpower = 805874
 	
 	state_category = rural
-
+	resources={
+		grain=14
+	}
 	history={
 		owner = MEX
 		buildings = {

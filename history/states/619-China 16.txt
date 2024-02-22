@@ -5,7 +5,9 @@ state={
 	manpower = 1430700
 	
 	state_category = pastoral
-	
+	resources={
+		grain=4
+	}
 	resources={
 		aluminium=2 # was: 2
 		chromium=2 # was: 3

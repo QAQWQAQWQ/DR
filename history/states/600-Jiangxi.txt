@@ -1,7 +1,9 @@
 state={
 	id=600
 	name="STATE_600"
-
+	resources={
+		grain=23
+	}
 	history={
 		owner = SUC
                                 add_core_of = SUC

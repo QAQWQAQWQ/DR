@@ -4,7 +4,9 @@ state={
 	resources={
 		rubber=55 # was: 94.000
 	}
-
+	resources={
+		grain=21
+	}
 	history={
 		add_core_of = VAN
 		owner = VAN

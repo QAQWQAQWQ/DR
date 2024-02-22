@@ -5,7 +5,9 @@ state={
 	manpower = 932000
 	
 	state_category = rural
-
+	resources={
+		grain=14
+	}
 	history={
 		owner = EYJ
 		add_core_of = EYJ
