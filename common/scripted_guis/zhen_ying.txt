@@ -1,0 +1,129 @@
+scripted_gui = {
+	zhen_ying_ye_mian = {
+		context_type = player_context
+		window_name = "zhen_ying_ye_mian"
+		visible = {
+			has_country_flag = zhen_ying_ye_mian_kai
+		}
+		dynamic_lists = {
+			zhen_ying_chuang_kou = {
+				array = grid_faction_array
+				index = idx
+				value = v
+				change_scope = yes
+				entry_container = faction_member_entry
+			}
+		}
+		effects = {
+			guan_bi_zhen_ying_click = {
+				clr_country_flag = zhen_ying_ye_mian_kai
+			}
+		}
+		triggers = {
+			major_member_flag_frame_visible = {
+				THIS = {
+					is_major = yes
+				}
+			}
+		}
+		properties = {
+			member_flag = {
+				image = [THIS.GetFlag]
+			}
+			zhen_ying_tu_xiang = {
+				image = "[GetFactionPicture]"
+			}
+			ling_xiu_qi_zhi = {
+				image = [?ROOT.grid_faction_leader.GetFlag]
+			}
+		}
+	}
+	zhen_ying_an_niu = {
+		context_type = player_context
+		window_name = "zhen_ying_an_niu"
+		parent_window_name = "countrypoliticsview"
+		triggers = {
+			zi_ji_da_kai_visible = {
+				THIS = {
+					is_in_faction = yes
+				}
+			}
+			wu_zhen_ying_an_niu_visible = {
+				THIS = {
+					is_in_faction = no
+				}
+			}
+		}
+		effects = {
+			zi_ji_da_kai_click = {
+				set_country_flag = zhen_ying_ye_mian_kai
+				Get_grid_Faction = yes
+			}
+			zi_ji_da_kai_right_click = {
+				clr_country_flag = zhen_ying_ye_mian_kai
+			}
+		}
+	}
+	zhen_ying_an_niu_other = {
+		context_type = selected_country_context
+		parent_window_token = selected_country_view_diplomacy
+		window_name = "zhen_ying_an_niu_other"
+		properties = {
+			zhen_ying_an_niu_other_btn = {
+				image = "[GetOtherFactionPicture]"
+			}
+		}
+		triggers = {
+			zhen_ying_an_niu_other_btn_visible = {
+				THIS = {
+					is_in_faction = yes
+				}
+			}
+		}
+		effects = {
+			zhen_ying_an_niu_other_btn_click = {
+				ROOT = {
+					set_country_flag = zhen_ying_ye_mian_kai
+				}
+				Get_grid_Faction = yes
+			}
+			zhen_ying_an_niu_other_btn_right_click = {
+				ROOT = {
+					clr_country_flag = zhen_ying_ye_mian_kai
+				}
+				Get_grid_Faction = yes
+			}
+		}
+	}
+	zhen_ying_ti_shi = {
+		context_type = player_context
+		window_name = "zhen_ying_window"
+		dirty = global.kaiserreich_alerts_dirty
+		ai_enabled = {
+			always = no
+		}
+		dynamic_lists = {
+			jia_ru_zhen_ying_ti_shi = {
+				array = global.faction_joining_alerts
+				change_scope = yes
+				country_scope_entry_container = zhen_ying_ti_shi_win
+			}
+		}
+		effects = {
+			que_ren_click = {
+				remove_from_array = { global.faction_joining_alerts = THIS }
+				set_variable_to_random = global.kaiserreich_alerts_dirty
+			}
+		}
+		properties = {
+			jia_ru_tag = {
+				image = "[THIS.GetFlag]"
+			}
+			jia_ru_faction = {
+				image = "[?faction_leader.GetFlag]"
+			}
+		}
+	}
+}
+
+
