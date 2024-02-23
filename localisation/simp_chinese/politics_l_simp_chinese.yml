@@ -1,16 +1,20 @@
 ﻿l_simp_chinese:
  #POLITICS_SUBGOAL_HEADER: "$NAME$ ($COLOR$$PROGRESS|%0$§!):"
  Party_Name_text:0 "[ROOT.GetRulingParty]"
+ government_text:0 "[GetGovernment]"
+
+ #Subideology_text:0 "[GetGovernment]"
+
  faction_numbers:0 "[ROOT.GetFlag]§Y[ROOT.GetName]§!目前是§Y[ROOT.GetFactionName]§!的成员 \n\n[GetFactionDesc]"
  POLITICS_SUBGOAL: "目标 #$NUMBER$"
  DRIFT_DIM_RETURN: "政党惰性：§R-$VAL$§!\n"
  POL_DAILY_CHANGE: "每日变化：$VAL$"
  POL_OTHERS_DRIFT: "因为其他党派变化：$VAL$"
- POLITICS_NOELECTIONS: "无选举"
+ POLITICS_NOELECTIONS: ""
  POLITICS_NEXTELECTION: "下一次大选"
  POLITICS_ELECTION_FREQUENCY: "每$MONTHS|H$年一次大选。"
  POLITICS_HOLD_ELECTION: "$COUNTRY$正在大选"
- POLITICS_NEXT_ELECTION: "下一次大选 $DATE$"
+ POLITICS_NEXT_ELECTION: ""
  POLITICS_ACTIVE_GOAL: "激活目标"
  POLITICS_PARTY_NAME: "§H$KEY$（$VAL$%）§!"
  POLITICS_IDEOLOGY: "§T政党意识形态：$IDEOLOGY|H$§!"

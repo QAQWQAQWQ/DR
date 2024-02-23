@@ -5,8 +5,14 @@ scripted_gui = {
 		visible = {
 			always = yes
 			grain > 10
+			
 		}
 		
+		triggers = {
+			scorched_grain_state_button_visible = {
+                is_controlled_by = ROOT
+            }
+        }
 		effects = {
 			scorched_grain_state_button_click = { 
 			ROOT={

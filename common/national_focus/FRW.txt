@@ -929,7 +929,10 @@ completion_reward = {
 			 
 		} 
 		allow_branch = {
-			has_country_flag = FRW_focus47_Flag1
+			has_country_leader = {
+				character = FRW_Georges_Clemenceau
+				ruling_only = yes
+			}
 		}
 		x = 14
 		y = 9
@@ -1191,7 +1194,10 @@ remove_ideas = FRW_Chaotic_socialism
 			
 		}
 		allow_branch = {
-			has_country_flag = FRW_focus47_Flag2
+			has_country_leader = {
+				character = FRW_Leon_Blum
+				ruling_only = yes
+			}
 		}
 		x = 31
 		y = 8
@@ -1585,7 +1591,10 @@ focus = {
 	prerequisite = {
 	}
 	allow_branch = {
-		has_country_flag = FRW_focus47_Flag3
+		has_country_leader = {
+			character = FRW_Marcel_Cachin
+			ruling_only = yes
+		}
 	}
 	x = 48
 	y = 8

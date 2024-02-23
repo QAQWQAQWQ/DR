@@ -635,6 +635,37 @@ technologies = {
 	}
 	
 	#####################################
+######
+	nuke_tech = {	
+		enable_building = {
+			building = nuclear_reactor
+			level = 1
+		}	
+		path = {
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1929
+		categories = {
+			industry
+			construction_tech
+		}	
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 2 }
+		}	
+		ai_will_do = {
+			factor = 40		
+			modifier = {
+				factor = 5
+				date > "1910.1.1"
+			}
+		}
+	}
+####
+
+
+
 	fortification1 = {	
 		enable_building = {
 			building = bunker

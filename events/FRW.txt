@@ -645,10 +645,11 @@ country_event = {
 	option = {
 		name = FRW.35.a
 		set_politics = {
-			ruling_party = Reformism
+			ruling_party = Liberalism
 		}
-		set_country_flag = FRW_focus47_Flag1
-		mark_focus_tree_layout_dirty = yes
+		ROOT={
+			mark_focus_tree_layout_dirty = yes
+		}
 		}
 	option = {
 		name = FRW.35.b
@@ -661,27 +662,20 @@ country_event = {
 				traits = { }
 			}
 		}
-		set_politics = {
-			ruling_party = Reformism
+		ROOT={
+			mark_focus_tree_layout_dirty = yes
 		}
-		set_country_flag = FRW_focus47_Flag2
-		mark_focus_tree_layout_dirty = yes
+		
 		}
 	option = {
 		name = FRW.35.c
 		set_politics = {
-			ruling_party = radical_socialist
-		}
-		set_country_flag = FRW_focus47_Flag3
-		mark_focus_tree_layout_dirty = yes
-		}
-	option = {
-		name = FRW.35.e
-		set_politics = {
 			ruling_party = Revolutionism
 		}
-		custom_effect_tooltip = FRW_35.e
-		mark_focus_tree_layout_dirty = yes
+		ROOT={
+			mark_focus_tree_layout_dirty = yes
+		}
+		
 		}	
 }
 country_event = {

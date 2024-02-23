@@ -9,26 +9,29 @@ on_actions = {
 				set_variable = { resource_grain_exported = resource_exported@grain }
 				set_variable = { grain_temp_manpower = max_manpower_k }
 				add_to_variable = { resource_grain = 50 }
-				if={
-					limit={
-						tag=ENL
-						tag=NPL
-					}
-					add_to_variable = { resource_grain = 150 }
-				}
-				if={
-					limit={
-						tag=ZHX
-						tag=YDA
-					}
-					add_to_variable = { resource_grain = 450 }
-				}
 				clamp_variable = {
 					var = resource_grain
 					min = 0
 					max = 5000
 				}
 				
+			} 
+
+		}
+	}
+	on_startup = {
+		
+		effect = {
+			every_country = {
+				if={
+					limit={
+						OR = {
+							original_tag = ZHX
+							original_tag = YDA
+						}
+					}
+					add_to_variable = { resource_grain = 1000 }
+				}
 			} 
 
 		}

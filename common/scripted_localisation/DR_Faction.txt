@@ -99,7 +99,6 @@ text = {
 }
 text = {
 	localization_key = GFX_Russian_White_Army
-
 	trigger = {
 		   OR = {
 			   tag = SHW
@@ -108,3 +107,47 @@ text = {
 }
 }
 }
+
+
+
+defined_text = { 
+	name = GetGovernment
+	text = {
+		 localization_key = Reformism_desc
+    trigger = {
+	 has_government = Reformism
+}
+}
+    text = {
+		 localization_key = Revolutionism_desc
+    trigger = {
+	 has_government = Revolutionism
+}
+}
+    text = {
+		 localization_key = Conservatism_desc
+    trigger = {
+	 has_government = Conservatism
+}
+} 
+    text = {
+		 localization_key = Liberalism_desc
+    trigger = {
+	 has_government = Liberalism
+}
+}
+    text = {
+		 localization_key = Reactionary_desc
+    trigger = {
+	 has_government = Reactionary
+}
+}
+    text = {
+		 localization_key = Anarchism_desc
+    trigger = {
+	 has_government = Anarchism
+}
+}
+}
+
+

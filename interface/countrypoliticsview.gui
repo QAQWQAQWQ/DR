@@ -172,7 +172,7 @@ guiTypes = {
 						maxHeight = 32
 						vertical_alignment = center
 					}
-instantTextboxType = {
+                    instantTextboxType = {
 					name = "faction_name"
 					position = { x = 275 y = 15 }
 					font = "hoi_18mbs"
@@ -181,7 +181,7 @@ instantTextboxType = {
 					maxHeight = 20
 					fixedsize = yes		
 					format = left
-				}	
+				                }	
 			
             buttonType = {
 				name = "dismantle_faction"
