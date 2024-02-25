@@ -19,7 +19,7 @@ news_event = {
 	id = Assembly_Tours.1
 	title = Assembly_Tours.1.t
 	desc = Assembly_Tours.1.d
-	picture = GFX_Second_International
+	picture = GFX_Second_International_1
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -688,6 +688,16 @@ country_event = {
 		}
 	option = {
 		name = FRW.36.a
+		kill_ideology_leader = Revolutionism
+		add_country_leader_role = {
+			character = FRW_Marcel_Cachin
+			promote_leader = yes
+			country_leader = {
+				ideology = Authoritarianism_revolutionism
+				expire = "1965.1.1.1"
+				#traits = { }
+			}
+		}
 		}
 }
 country_event = {

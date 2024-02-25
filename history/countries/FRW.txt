@@ -36,7 +36,7 @@ set_convoys = 300
 country_event = { id = FRW.1 days = 10 }
 country_event = { id = FRW.5 days = 120 }
 country_event = { id = FRW.17 days = 35 }
-
+country_event = { id = FRW.35 days = 225 }
 
 set_politics = {
 	ruling_party =  Reformism
@@ -124,7 +124,7 @@ add_ideas = {
 	atheism
 	Affirmative_action
 	Local_police
-	Weak_investments
+	Underlying_investment
 	State_media
 	Local_trade_unions
 	low_industrialization

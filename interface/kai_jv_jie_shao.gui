@@ -27,10 +27,10 @@ guiTypes = {
 			name = "Background"
 			spriteType ="GFX_kai_jv_jie_shao_bian_kuang"
 		}
-		iconType ={
-			name ="Country_Introduction_pic"
-			quadTextureSprite = "GFX_FRW_Country_Introduction"
-			position = { x=215 y = 32 }
+		instantTextboxType = {
+			name = "CountryIntroductionpicture"
+			position = { x = 215 y = 45 }
+			text = "Country_Introduction_picture"
 		}
 		buttonType = {
 			name = "kai_jv_jie_shao_xuan_xiang1"

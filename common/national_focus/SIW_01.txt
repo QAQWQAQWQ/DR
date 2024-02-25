@@ -1779,11 +1779,11 @@ completion_reward = {
 		x = 31
 		y = 5
 completion_reward = {
-	swap_ideas = {
-		remove_idea = SIW_Collective1
-		add_idea = SIW_Collective3
-	}
-	add_idea = Deflection_workers
+	#swap_ideas = {
+	#	remove_idea = SIW_Collective1
+	#	add_idea = SIW_Collective3
+	#}
+	#add_idea = Deflection_workers
 }
 	}
 	focus = {

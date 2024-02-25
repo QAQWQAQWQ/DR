@@ -74,27 +74,7 @@ ideas = {
 				}
    			}
 		}
-		Religion_prohibited = {
-
-			available = {
-				hidden_trigger = {
-					has_stability > 9 
-				  }
-				}
-			on_add = {
-
-			}
-
-			cost = 0
-			removal_cost = -1
-			cancel_if_invalid = no
-				modifier = {
-					stability_factor = -0.1
-					conscription_factor = -0.15
-					non_core_manpower = -0.15
-				}
-   			
-		}
+		
 		Theocratic_state = {
 
 			available = {

@@ -90,14 +90,14 @@ guiTypes = {
 			iconType = {
 				name = "chart"
 				spriteType = "GFX_political_chart"
-				position = { x = -175  y = 6 }
+				position = { x = -177  y = 8 }
 				size = { width=400 height=400 }
 			}
 
 			iconType ={
 				name ="pol_view_bg"
 				spriteType = "GFX_pol_piechart_overlay_63x63"
-				position = { x = -206 y = 0 }
+				position = { x = -220 y = 0 }
 				alwaystransparent = yes
 			}
 		}

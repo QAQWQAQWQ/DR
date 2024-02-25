@@ -2351,10 +2351,10 @@ bosnia_war_end = yes
 		mutually_exclusive = {
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = No_labor_laws
-				add_idea = Deflection_workers
-			}
+			#swap_ideas = {
+				#remove_idea = No_labor_laws
+				#add_idea = Deflection_workers
+			#}
 		}
 	}
 	focus = {
@@ -2374,10 +2374,7 @@ bosnia_war_end = yes
 		mutually_exclusive = {
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = Deflection_employer
-				add_idea = Trade_union_neutrality
-			}
+			
 		}
 	}
 	focus = {

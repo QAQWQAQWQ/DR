@@ -50,6 +50,14 @@ defined_text = {
 		}
 		localization_key = "GFX_Habsburg_monarchy"
 	}
+	text = {
+		trigger = {
+			check_variable = {
+				ROOT.grid_faction_leader = ITE
+			}
+		}
+		localization_key = "GFX_United_Provinces_Northern_Italy"
+	}
 }
 defined_text = { 
 	name = GetOtherFactionPicture
@@ -112,5 +120,15 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Empire_Japan"
+	}
+	text = {
+		trigger = {
+			THIS = {
+				is_in_array = {
+					global.faction_menber_ITE = THIS
+				}
+			}
+		}
+		localization_key = "GFX_United_Provinces_Northern_Italy"
 	}
 }
