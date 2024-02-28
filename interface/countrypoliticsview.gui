@@ -1,5 +1,5 @@
+#使关闭阵营按钮可见，修改188行
 guiTypes = {
-
 	containerWindowType = {
 		name = "countrypoliticsview"
 		position = { x=-606 y=78}	
@@ -9,7 +9,7 @@ guiTypes = {
 		hide_animation_type = accelerated
 		
 		animation_time = 300	
-		size = { width=550 height=1006 }
+		size = { width=550 height=820 }
 		
 		#hide_sound = menu_close_window
 		show_sound = menu_open_window
@@ -173,19 +173,19 @@ guiTypes = {
 						vertical_alignment = center
 					}
                     instantTextboxType = {
-					name = "faction_name"
-					position = { x = 275 y = 15 }
-					font = "hoi_18mbs"
-					text = "faction"
-					maxWidth = 173
-					maxHeight = 20
-					fixedsize = yes		
-					format = left
-				                }	
+						name = "faction_name"
+						position = { x = 269 y = 17 }
+						font = "hoi_18mbs"
+						text = "faction"
+						maxWidth = 160
+						maxHeight = 20
+						fixedsize = yes		
+						format = center
+				    }	
 			
             buttonType = {
 				name = "dismantle_faction"
-				position = { x = 335 y = 35 }
+				position = { x = 900 y = 35 } #按键显示 x改为335
 				quadTextureSprite = "GFX_dismantle_faction_button"
 				#buttonFont = "hoi_16mbs"
 				#buttonText = "DIPLOMACY_DISMANTLE_FACTION_TITLE"
@@ -458,7 +458,7 @@ guiTypes = {
 			
 			iconType = {
 				name = "goal_icon"
-				position = { x = 47 y = 48 }
+				position = { x = 49 y = 48 }
 				centerposition = yes			
 				spriteType = "GFX_goal_unknown"
 			}
@@ -523,7 +523,7 @@ guiTypes = {
 		
 			background = {
 				name = "Background"
-                position = { x = 2 y = 0 }
+                position = { x = 0 y = 0 }
 				#quadTextureSprite ="GFX_tiled_window_2b_border"
 				#quadTextureSprite ="GFX_tiled_window_1b_border"
 				quadTextureSprite ="GFX_tiled_paper_w_frame_bg"
