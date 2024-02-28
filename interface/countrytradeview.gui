@@ -1,5 +1,5 @@
+#添加新资源修改161行
 guiTypes = {
-
 	containerWindowType = {
 		name = "countrytradeview"
 		position = { x=-606 y=78}	
@@ -7,7 +7,7 @@ guiTypes = {
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300	
-		size = { width=630 height=100%% }
+		size = { width=635 height=100%% }
 		
 		#hide_sound = menu_close_window
 		show_sound = menu_open_window
@@ -15,31 +15,33 @@ guiTypes = {
 		background = {
 			name = "Background"
 			quadTextureSprite ="GFX_tiled_window_1b_border"
+			alwaystransparent = yes
 		}
 
 		iconType ={
 			name ="production_header_bg"
 			spriteType = "GFX_header_bg"
-			position = { x= 15 y = 07 }
+			position = { x= 1000 y = 07 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		instantTextboxType = {
 			name = "trade_title"
-			position = { x = 45 y = 8 }
+			position = { x = 15 y = 11 }
 			textureFile = ""
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
 			text = "TRADE_TRADE"
-			maxWidth = 240
+			maxWidth = 100
 			maxHeight = 20
-			format = left
+			format = CENTER
 		}
 
 		iconType = {
 			name = "trade_header"
-			position = { x = 12 y = 43 }
+			position = { x = 0 y = 43 }
 			quadTextureSprite = "GFX_trade_header"
+			
 		}
 
 		#iconType = {
@@ -99,7 +101,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "resources"
-			position = { x = 11 y = 75 }	
+			position = { x = 30 y = 75 }	
 			size = { width = 518 height = 156 }
 			verticalScrollbar = "right_vertical_slider"
 
@@ -158,7 +160,7 @@ guiTypes = {
 				position = { x = 110 y = 0 }
 				size = { width = 422 height = 100%% }
 				slotsize = { width = 68 height = 156 }
-				max_slots = { x = 6 y = 1 }
+				max_slots = { x = 7 y = 1 } #添加新资源修改这里
 				format = "UPPER_LEFT"
 			}
 		}
@@ -186,10 +188,10 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "name"
-			position = { x = 21 y = 407 }
+			position = { x = 17 y = 407 }
 			font = "hoi_16mbs"
 			text = "TRADE_SORT_COUNTRY"
-			maxWidth = 160
+			maxWidth = 170
 			maxHeight = 18
 			format = center		
 			fixedsize = yes
@@ -284,12 +286,12 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "trade"
-			position = { x = 35 y = 427 }	
+			position = { x = 15 y = 427 }	
 			size = { width = 535 height = 100%% }
 			verticalScrollbar = "right_vertical_slider"
 			scroll_wheel_factor = 45
 			smooth_scrolling = yes
-			margin = {top = 1 bottom = 13 }			
+					
 				
 			background = {
 				name = "Background"		
@@ -308,7 +310,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "close_button"
-			position = { x = -43 y = 9 }
+			position = { x = -55 y = 12 }
 			quadTextureSprite ="GFX_closebutton"
 			buttonFont = "Main_14_black"
 			shortcut = "ESCAPE"
