@@ -12,12 +12,9 @@ set_technology = {
 	fuel_silos = 1
 }
 
-country_event = { id = JPN.1 days = 15}
 recruit_character = JPN_Emperor_Meiji
 recruit_character = JPN_Emperor_Taisho
 recruit_character = JPN_Honorable
-recruit_character = JPN_Nogi_Maresuke
-set_global_flag = JPN_Emperor_Meiji
 recruit_character = JPN_Seienji_Konobu
 	set_technology = {
 		interwar_artillery = 1

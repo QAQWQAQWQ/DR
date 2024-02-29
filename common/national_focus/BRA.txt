@@ -53,9 +53,20 @@ completion_reward={
 		prerequisite = {
 			focus = BRA_focus_3
 		}
+		mutually_exclusive = {
+			focus = BRA_focus_5
+		}
+		available={
+			power_balance_value = {
+				id = BRA_Court_struggles_balance
+				value < -0.1
+			}
+		}
 		x = 16
 		y = 3
-
+		completion_reward={
+			country_event=BRA.14 
+		}
 	}
 	focus = {
 		id = BRA_focus_7
@@ -86,9 +97,20 @@ completion_reward={
 		prerequisite = {
 			focus = BRA_focus_3
 		}
+		mutually_exclusive = {
+			focus = BRA_focus_4
+		}
+		available={
+			power_balance_value = {
+				id = BRA_Court_struggles_balance
+				value > 0.05
+			}
+		}
 		x = 20
 		y = 3
-
+		completion_reward={
+			country_event=BRA.15 
+		}
 	}
 	focus = {
 		id = BRA_focus_6

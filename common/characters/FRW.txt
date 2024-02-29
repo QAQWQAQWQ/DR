@@ -86,6 +86,33 @@ characters={
 			id=-1
 		}
 	}
+	
+	FRW_Alexandre_Millerand={
+		name=FRW_Alexandre_Millerand
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Alexandre_Millerand.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = FRW_Alexandre_Millerand_H
+			allowed = {
+				original_tag = FRW
+			}
+			available = {
+				
+			  }
+			traits = {
+				head_of_government
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+	}
 	FRW_Leon_Blum={
 		name=FRW_Leon_Blum
 		portraits={

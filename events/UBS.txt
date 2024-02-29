@@ -381,24 +381,4 @@ country_event = {
 	name = MXG.7.a
 			}
 	}		
-news_event = {
-	id = LEF.1
-	title = LEF.1.t
-	desc = LEF.1.d
-	picture = GFX_LEF
-	is_triggered_only = yes
-	major = yes
-	fire_only_once = yes
-	trigger = {
-		
-		}
-	option = {
-		name = LEF.1.a
-		UBS={
-			set_politics = {
-			ruling_party = Reformism
-		}
-	}
-		
-			}
-	}
+

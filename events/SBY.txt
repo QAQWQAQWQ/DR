@@ -22,3 +22,18 @@ news_event = {
 	}
 }
 }
+country_event = {
+	id = SBY.2
+	title = SBY.2.t
+	desc = SBY.2.d
+	picture = GFX_Spanish_Flu
+
+	major = yes
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = SBY.2.a
+}
+}

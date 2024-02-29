@@ -15,10 +15,17 @@ set_technology = {
 	CAS1 = 1
 	
 }
-
+set_power_balance = {
+	id = BRA_Court_struggles_balance
+}
+add_power_balance_modifier = {
+    id = BRA_Court_struggles_balance
+    modifier = BRA_Court_struggles_balance_left_modifier
+}
 recruit_character = BRA_Epitacio_Pessoa
 recruit_character = BRA_Isabel_do_Brasil
 
+country_event = {id=BRA.1 days=47}
 country_event = {id=BRA.3 days=200}
 add_ideas = {
 	BRA_Epitacio_Pessoa_H

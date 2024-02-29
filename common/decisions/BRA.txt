@@ -1,0 +1,221 @@
+BRA_Court_struggles_category = {
+	BRA_Convince_Senate = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 70
+		days_remove = 25
+		cost = 50
+		allowed = {
+			tag = BRA
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+				add_power_balance_value = {
+					id = BRA_Court_struggles_balance
+					value = 0.05
+					tooltip_side = my_bop_side
+				}
+			}
+	}
+	BRA_Stop_extremist_ideas = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 70
+		days_remove = 25
+		cost = 50
+		allowed = {
+			tag = BRA
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+				add_power_balance_value = {
+					id = BRA_Court_struggles_balance
+					value = 0.05
+					tooltip_side = my_bop_side
+				}
+			}
+	}
+	BRA_Rectify_National_Guard = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 50
+		days_remove = 1
+		cost = 65
+		allowed = {
+			tag = BRA
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+				add_power_balance_value = {
+					id = BRA_Court_struggles_balance
+					value = 0.05
+					tooltip_side = my_bop_side
+				}
+				gain_xp = 25
+			}
+	}
+	BRA_Recruitment_National_Guard = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 130
+		days_remove = 25
+		cost = 50
+		allowed = {
+			tag = BRA
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+				add_power_balance_value = {
+					id = BRA_Court_struggles_balance
+					value = 0.1
+					tooltip_side = my_bop_side
+				}
+			}
+	}
+	BRA_Buying_Representatives = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 70
+		days_remove = 25
+		cost = 50
+		allowed = {
+			tag = BRA
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+				add_power_balance_value = {
+					id = BRA_Court_struggles_balance
+					value = 0.05
+					tooltip_side = my_bop_side
+				}
+			}
+	}
+	BRA_Hunt_lieutenants = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 70
+		days_remove = 25
+		cost = 50
+		allowed = {
+			tag = BRA
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -50
+					producer = BRA
+				}
+				add_power_balance_value = {
+					id = BRA_Court_struggles_balance
+					value = 0.05
+					tooltip_side = my_bop_side
+				}
+			}
+	}
+	BRA_Rectify_Army_Department = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 70
+		days_remove = 25
+		cost = 50
+		allowed = {
+			tag = BRA
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+				add_power_balance_value = {
+					id = BRA_Court_struggles_balance
+					value = 0.1
+					tooltip_side = my_bop_side
+				}
+			}
+	}
+	BRA_Arms_smuggling = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 120
+		days_remove = 30
+		cost = 50
+		allowed = {
+			tag = BRA
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -2000
+					producer = BRA
+				}
+				502={
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_power_balance_value = {
+					id = BRA_Court_struggles_balance
+					value = 0.1
+					tooltip_side = my_bop_side
+				}
+			}
+	}
+}

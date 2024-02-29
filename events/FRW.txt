@@ -23,7 +23,18 @@ news_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
+		trigger = {
+			NOT={
+				has_country_flag = FRW_Syndicalist_protests
+			}
+		}
 		name = Assembly_Tours.1.a
+		}
+	option = {
+		trigger = {
+			has_country_flag = FRW_Syndicalist_protests
+		}
+		name = Assembly_Tours.1.b
 		}
 	}
 
@@ -102,50 +113,52 @@ country_event = {
 					name = FRW.3.b
 					}
 			}
-country_event = {
+            country_event = {
 				id = FRW.4
 				title = FRW.4.t
 				desc = FRW.4.d
-				picture = GFX_ENS
+				picture = GFX_FRW_4
 				is_triggered_only = yes
 				fire_only_once = yes
 				trigger = {
-					
+					Revolutionism > 0.4
+					has_stability < 0.5
+
 					}
 				option = {
 					name = FRW.4.a
-					set_country_flag = Anarchism
 					}
-				option = {
-						name = FRW.4.b
-						}
 				}
 country_event = {
 		id = FRW.5
 		title = FRW.5.t
 		desc = FRW.5.d
-		picture = GFX_assassinate
+		picture = GFX_FRW_5
 		is_triggered_only = yes
 		fire_only_once = yes
 		trigger = {
 						}
 		option = {
 		name = FRW.5.a
-		set_country_flag = Millerland_dead
+		}
+		option = {
+		name = FRW.5.b
+		}
+		option = {
+		name = FRW.5.c
 		}
 	}
 country_event = {
 		id = FRW.6
 		title = FRW.6.t
 		desc = FRW.6.d
-		picture = GFX_Yhudim
+		picture = GFX_FRW_6
 		is_triggered_only = yes
 		fire_only_once = yes
 		trigger = {
 			}
 		option = {
 		name = FRW.6.a
-		country_event = { id = FRW.7 days = 10 }
 			}
 		option = {
 		name = FRW.6.b
@@ -155,7 +168,7 @@ country_event = {
 		id = FRW.7
 		title = FRW.7.t
 		desc = FRW.7.d
-		picture = GFX_French_parade
+		picture = GFX_FRW_6
 		is_triggered_only = yes
 		fire_only_once = yes
 		trigger = {
@@ -171,7 +184,7 @@ country_event = {
 		id = FRW.8
 		title = FRW.8.t
 		desc = FRW.8.d
-		picture = GFX_French_parade
+		picture = GFX_Eu_election
 		is_triggered_only = yes
 		fire_only_once = yes
 		trigger = {
@@ -335,31 +348,24 @@ country_event = {
 	option = {
 		name = FRW.17.a
 		add_popularity = {
-			ideology = radical_socialist
+			ideology = Reformism
 			popularity = 0.03
 		}
 		}
 	option = {
 		name = FRW.17.b
 		add_popularity = {
-			ideology = Reactionary
+			ideology = Revolutionism
 			popularity = 0.03
 		}
 			}
 	option = {
 	    name = FRW.17.c
 		add_popularity = {
-			ideology = Revolutionism
+			ideology = Anarchism
 			popularity = 0.03
 		}
-		}
-	option = {
-	    name = FRW.17.D
-		add_popularity = {
-			ideology = Reformism
-			popularity = 0.03
-		}
-		}				
+		}			
 }
 country_event = {
 	id = FRW.18

@@ -1,19 +1,5 @@
 characters={
-	JPN_Emperor_Meiji={
-		name=JPN_Emperor_Meiji
-		portraits={
-			civilian={
-				large="gfx/leaders/JPN/Portrait_Mingzhi.tga"
-			}
-		}
-		country_leader={
-			ideology=Classicism_Conservatism
-            desc=JPN_Emperor_Meiji_DESC
-			traits={  }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
+	
 	JPN_Emperor_Taisho={
 		name=JPN_Emperor_Taisho
 		portraits={
@@ -27,22 +13,6 @@ characters={
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
-		}
-	}
-	JPN_Nogi_Maresuke={
-		name=JPN_Nogi_Maresuke
-		portraits={
-			civilian={
-				large="gfx/leaders/JPN/portrait_Nogi_Maresuke.tga"
-			}
-		}
-		field_marshal={
-			traits={  }
-			skill=5
-			attack_skill=5
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=3
 		}
 	}
 	

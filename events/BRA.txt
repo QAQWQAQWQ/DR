@@ -164,6 +164,87 @@ country_event = {
 		}
 	option = {
 			name = BRA.10.a
-			add_to_variable = { var = BRA.Literacy value = 0.2 tooltip = add_Literacy_tt_up }  
+			country_event = {id=BRA.2 }
+			country_event = {id=BRA.11 days=2}
+			country_event = {id=BRA.12 days=2}
+			country_event = {id=BRA.13 days=2}
+	}
+}
+country_event = {
+	id = BRA.11
+	title = BRA.11.t
+	desc = BRA.11.d
+	picture = GFX_BRA_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+			name = BRA.11.a
+	}
+}
+country_event = {
+	id = BRA.12
+	title = BRA.12.t
+	desc = BRA.12.d
+	picture = GFX_BRA_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+			name = BRA.12.a
+	}
+}
+country_event = {
+	id = BRA.13
+	title = BRA.13.t
+	desc = BRA.13.d
+	picture = GFX_BRA_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+			name = BRA.13.a
+	}
+}
+country_event = {
+	id = BRA.14
+	title = BRA.14.t
+	desc = BRA.14.d
+	picture = GFX_BRA_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+			name = BRA.14.a
+	}
+}
+country_event = {
+	id = BRA.15
+	title = BRA.15.t
+	desc = BRA.15.d
+	picture = GFX_BRA_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+			name = BRA.15.a
+	}
+}
+country_event = {
+	id = BRA.16
+	title = BRA.16.t
+	desc = BRA.16.d
+	picture = GFX_BRA_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+			name = BRA.16.a
 	}
 }

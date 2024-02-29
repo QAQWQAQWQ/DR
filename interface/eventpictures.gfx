@@ -1,4 +1,9 @@
 spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_Eu_election"
+		texturefile = "gfx/event/FRW/Eu_election.dds"
+	}
 	spriteType = {
 		name = "GFX_TEQ_1"
 		texturefile = "gfx/event/TEQ/TEQ_1.dds"
@@ -565,6 +570,18 @@ spriteTypes = {
 		texturefile = "gfx/event/DSD/DSD_1.dds"
 	}
 
+	spriteType = {
+		name = "GFX_FRW_4"
+		texturefile = "gfx/event/FRW/FRW_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_FRW_5"
+		texturefile = "gfx/event/FRW/FRW_5.dds"
+	}
 
-
+	spriteType = {
+		name = "GFX_FRW_6"
+		texturefile = "gfx/event/FRW/FRW_6.dds"
+	}
 }
