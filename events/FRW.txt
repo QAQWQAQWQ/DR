@@ -807,3 +807,40 @@ country_event = {
 		}
 		}
 }
+country_event = {
+	id = FRW.44
+	title = FRW.44.t
+	desc = FRW.44.d
+	#picture = GFX_FRW_31
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.44.a
+		set_politics = {
+			ruling_party = Anarchism
+		}
+		promote_character = {
+			character = FRW_Leon_Jouhaux
+			ideology = Anarchism
+		}
+		set_popularities = {
+			Revolutionism = 15
+			Anarchism= 85
+		}
+		}
+	option = {
+		name = FRW.44.b
+		set_politics = {
+			ruling_party = Anarchism
+		}
+		promote_character = {
+			character = FRW_Pierre_Monatte
+			ideology = Anarchism
+		}
+		set_popularities = {
+			Revolutionism = 15
+			Anarchism= 85
+		}
+		}
+}

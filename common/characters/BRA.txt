@@ -36,5 +36,37 @@ characters={
 			id=-1
 		}
 	}
+	BRA_Pedro_de_Alcantara={
+		name=BRA_Pedro_de_Alcantara
+		portraits={
+			civilian={
+				large="gfx/leaders/BRA/portrait_Pedro_de_Alcantara1.tga"
+			}
+		}
+		country_leader={
+			ideology=Classicism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	BRA_Hermes_Fonseca={
+		name=BRA_Hermes_Fonseca
+		portraits={
+			army={
+				large="gfx/leaders/BRA/portrait_Hermes_Fonseca.tga"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			traits = {
+				Lieutenant_general
+			}
+		}
+	}
 	
 	}

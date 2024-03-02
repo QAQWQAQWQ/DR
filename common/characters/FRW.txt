@@ -1,4 +1,34 @@
 characters={
+	FRW_Pierre_Monatte={
+		name=FRW_Pierre_Monatte
+		portraits={
+			civilian={
+				large="gfx/leaders/FRW/Portrait_Pierre_Monatte.tga"
+			}
+		}
+		country_leader={
+			ideology=Syndicalism_Anarchism
+			desc = FRW_Pierre_Monatte_desc
+			traits={  } 
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	FRW_Leon_Jouhaux={
+		name=FRW_Leon_Jouhaux
+		portraits={
+			civilian={
+				large="gfx/leaders/FRW/Portrait_Leon_Jouhaux.tga"
+			}
+		}
+		country_leader={
+			ideology=Syndicalism_Anarchism
+			desc = FRW_Leon_Jouhaux_desc
+			traits={  } 
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	FRW_Andre_Marty={
 		name=FRW_Andre_Marty
 		portraits={
@@ -204,59 +234,7 @@ characters={
 			id=-1
 		}
 	}
-	FRW_Alexandre_Jacob={
-		name=FRW_Alexandre_Jacob
-		portraits={
-			civilian={
-				large="gfx/leaders/FRW/Portrait_Alexandre_Jacob.tga"
-				small= "GFX_idea_Alexandre_Jacob"
-			}
-		}
-		country_leader={
-			ideology=Autonomismism_Anarchism
-			traits={ anarchist_zeal }
-			expire="1965.1.1.1"
-			id=-1
-		}
-		advisor={
-			slot = head_of_government
-			idea_token = FRW_Alexandre_Jacob_head_of_government
-			allowed = {
-				original_tag = FRW
-				has_government = Anarchism
-			}
-			available = {
-				NOT={
-					has_country_flag = has_head_of_government
-				}
-			  }
-			traits = {
-				head_of_government
-				anarchist_zeal
-			}
-			cost = 50
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	advisor={
-		slot = political_advisor
-		idea_token = FRW_Alexandre_Jacob_political_advisor
-		allowed = {
-			original_tag = FRW
-		}
-		available = {
-			
-		  }
-		traits = {
-			anarchist_zeal
-		}
-		cost = 50
-		ai_will_do = {
-			factor = 1.000
-		}
-	}	
-	}
+	
 	FRW_Aristide_Briand={
 		name=FRW_Aristide_Briand
 		portraits={
@@ -289,10 +267,9 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				has_completed_focus = FRW_focus17
-			  }
+				#has_completed_focus = FRW_focus17
+			}
 			traits = {
-				udenrigsminister
 			}
 			cost = 50
 			ai_will_do = {
@@ -300,37 +277,7 @@ characters={
 			}
 		}
 	}
-	FRW_Louis_Dubreuil={
-		name=FRW_Louis_Dubreuil
-		portraits={
-			civilian={
-				small= "GFX_idea_Louis_Dubreuil"
-			}
-		}
-		advisor={
-			slot = head_of_government
-			idea_token = FRW_Louis_Dubreuil_head_of_government
-			allowed = {
-				original_tag = FRW
-			}
-			available = {
-				NOT={
-					has_country_flag = has_head_of_government
-				}
-				hidden_trigger = {
-					has_stability > 9 
-				  }
-			  }
-			traits = {
-				head_of_government
-				revolutionary_culture_minister
-			}
-			cost = 50
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
+	
 		FRW_Benoit_Frachon={
 			name=FRW_Benoit_Frachon
 			portraits={
@@ -451,7 +398,7 @@ characters={
 		}
 		advisor={
 			slot = head_of_government
-			idea_token = FRW_LudovicOscar_Frossard_head_of_government
+			idea_token = FRW_LudovicOscar_Frossard_H
 			allowed = {
 				original_tag = FRW
 			}
@@ -471,7 +418,7 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = FRW_LudovicOscar_Frossard_political_advisor
+			idea_token = FRW_LudovicOscar_Frossard_P
 			allowed = {
 				original_tag = FRW
 			}
@@ -521,7 +468,7 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = FRW_Fernand_Loriot_political_advisor
+			idea_token = FRW_Fernand_Loriot_P
 			allowed = {
 				original_tag = FRW
 			}
@@ -537,24 +484,25 @@ characters={
 			}
 		}		
 	}
-	FRW_Boris_Souvarine={
-		name=FRW_Boris_Souvarine
+
+    FRW_Adrien_Rene_Viviani={
+		name=FRW_Adrien_Rene_Viviani
 		portraits={
 			civilian={
-				small= "GFX_idea_Boris_Souvarine"
+				small="gfx/interface/ideas/idea_Adrien_Rene_Viviani.dds"
 			}
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = FRW_Boris_Souvarine_P
+			idea_token = FRW_Adrien_Rene_Viviani_P
 			allowed = {
 				original_tag = FRW
 			}
 			available = {
-has_completed_focus = FRW_focus14
+				
 			  }
 			traits = {
-				revolutionary_author
+				
 			}
 			cost = 50
 			ai_will_do = {
@@ -562,6 +510,149 @@ has_completed_focus = FRW_focus14
 			}
 		}		
 	}
+	FRW_Marcel_Sembat={
+		name=FRW_Marcel_Sembat
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Marcel_Sembat.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRW_Marcel_Sembat_P
+			allowed = {
+				original_tag = FRW
+			}
+			available = {
+				
+			  }
+			traits = {
+				
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+
+
+
+
+	FRW_Edouard_Berth={
+		name=FRW_Edouard_Berth
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Edouard_Berth.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRW_Edouard_Berth_P
+			allowed = {
+				original_tag = FRW
+			}
+			available = {
+				
+			  }
+			traits = {
+				Sorelists
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = FRW_Edouard_Berth_H
+			allowed = {
+				original_tag = FRW
+			}
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+			  }
+			traits = {
+				head_of_government
+				Sorelists
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+
+	FRW_Albert_Thomas={
+		name=FRW_Albert_Thomas
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Albert_Thomas.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRW_Albert_Thomas_P
+			allowed = {
+				original_tag = FRW
+			}
+			available = {
+				
+			  }
+			traits = {
+				Minister_of_Armaments
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+			
+	}
+
+	FRW_Alphonse_Merrheim={
+		name=FRW_Alphonse_Merrheim
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Alphonse_Merrheim.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRW_Alphonse_Merrheim_P
+			allowed = {
+				original_tag = FRW
+			}
+			available = {
+				
+			  }
+			traits = {
+				Anti_revisionists
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+			
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+	
 	FRW_Edouard_Daladier={
 		name=FRW_Edouard_Daladier
 		portraits={
@@ -666,7 +757,7 @@ has_completed_focus = FRW_focus14
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = FRW_Marx_Dormoy_political_advisor
+			idea_token = FRW_Marx_Dormoy_P
 			allowed = {
 				original_tag = FRW
 			}

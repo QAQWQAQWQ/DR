@@ -221,8 +221,6 @@ completion_reward = {
 		x = 21
 		y = 5
 completion_reward = {
-	custom_effect_tooltip = available_political_advisor
-	show_ideas_tooltip = FRW_Boris_Souvarine_P
 	add_ideas = FRW_Labor_spirit 
 
 }
@@ -1981,6 +1979,15 @@ focus = {
 	x = 52
 	y = 13
 completion_reward = {
+	set_faction_name = Revolution_International
+	create_wargoal = {
+		target = WWS
+		type = liberate_wargoal
+		generator = { 64 }
+	}
+	add_dynamic_modifier = {
+		modifier = FRW_focus98_modifier
+	}
 }
 }
 focus = {

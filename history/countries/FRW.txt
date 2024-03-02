@@ -71,7 +71,6 @@ recruit_character = FRW_Aristide_Briand
 recruit_character = FRW_Georges_Sorel
 recruit_character = FRW_Edouard_de_Castelnau
 recruit_character = FRW_Joseph_Vuillemin
-recruit_character = FRW_Alexandre_Jacob
 recruit_character = FRW_Joffre
 recruit_character = FRW_Marie_Eugene_Debeney
 recruit_character = FRW_Maurice_Sarrell
@@ -82,12 +81,10 @@ recruit_character = FRW_Andre_Le_Troquer
 recruit_character = FRW_Jean_Laurent
 recruit_character = FRW_Maurice_Thorez
 recruit_character = FRW_Fernand_Loriot
-recruit_character = FRW_Boris_Souvarine
 recruit_character = FRW_Edouard_Daladier
 recruit_character = FRW_Paul_Faure
 recruit_character = FRW_Marx_Dormoy
 recruit_character = FRW_Felix_Gouin
-recruit_character = FRW_Louis_Dubreuil
 recruit_character = FRW_Monmousseau
 recruit_character = FRW_Paul_Maistre
 recruit_character = FRW_Berthelot_Metz
@@ -96,6 +93,11 @@ recruit_character = FRW_Gaston_Henri_Billotte
 
 recruit_character = FRW_Jacques_Doriot
 
+recruit_character = FRW_Albert_Thomas
+
+recruit_character = FRW_Alphonse_Merrheim
+
+recruit_character = FRW_Edouard_Berth
 
 recruit_character = FRW_Renaud_Jean
 recruit_character = FRW_Comite_communal
@@ -106,6 +108,13 @@ recruit_character = FRW_Charles_de_Gaulle
 recruit_character = FRW_Jacques_Sadoul
 recruit_character = FRW_Adolphe_Messimy
 recruit_character = FRW_georges_louis_humbert
+
+recruit_character = FRW_Pierre_Monatte
+recruit_character = FRW_Leon_Jouhaux
+
+recruit_character = FRW_Adrien_Rene_Viviani
+recruit_character =	FRW_Marcel_Sembat
+
 
 FRW_Jacques_Doriot = { set_nationality = NNN }
 
@@ -132,6 +141,12 @@ add_ideas = {
 	secondary_school
 	##ad
 	FRW_Alexandre_Millerand_H
+	FRW_LudovicOscar_Frossard_P
+	FRW_Aristide_Briand_P
+	FRW_Marx_Dormoy_P
+	FRW_Fernand_Loriot_P
+	FRW_Adrien_Rene_Viviani_P
+	FRW_Marcel_Sembat_P
 		}
 
 

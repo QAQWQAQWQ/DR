@@ -52,11 +52,13 @@ BRA_Court_struggles_category = {
 	BRA_Rectify_National_Guard = {
 		icon = generic_ignite_civil_war
 		visible = {
+
 		}
 		available = {
+			has_completed_focus = BRA_focus_14
 		}
 		days_re_enable = 50
-		days_remove = 1
+		days_remove = 25
 		cost = 65
 		allowed = {
 			tag = BRA
@@ -96,7 +98,6 @@ BRA_Court_struggles_category = {
 				add_power_balance_value = {
 					id = BRA_Court_struggles_balance
 					value = 0.1
-					tooltip_side = my_bop_side
 				}
 			}
 	}
@@ -158,6 +159,7 @@ BRA_Court_struggles_category = {
 	BRA_Rectify_Army_Department = {
 		icon = generic_ignite_civil_war
 		visible = {
+			
 		}
 		available = {
 		}
@@ -173,11 +175,7 @@ BRA_Court_struggles_category = {
 			factor = 1
 			}
 			complete_effect = {
-				add_power_balance_value = {
-					id = BRA_Court_struggles_balance
-					value = 0.1
-					tooltip_side = my_bop_side
-				}
+				army_experience = 15
 			}
 	}
 	BRA_Arms_smuggling = {
@@ -185,7 +183,8 @@ BRA_Court_struggles_category = {
 		visible = {
 		}
 		available = {
-		}
+			has_completed_focus = BRA_focus_15
+		} 
 		days_re_enable = 120
 		days_remove = 30
 		cost = 50
@@ -216,6 +215,62 @@ BRA_Court_struggles_category = {
 					value = 0.1
 					tooltip_side = my_bop_side
 				}
+			}
+	}
+	BRA_New_emperor = {
+		icon = generic_ignite_civil_war
+		visible = {
+			power_balance_value = {
+				id = BRA_Court_struggles_balance
+				value = 1
+			}
+		}
+		available = {
+		}
+		days_re_enable = 120
+		days_remove = 30
+		cost = 50
+		allowed = {
+			tag = BRA
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+				remove_power_balance = {
+					id = BRA_Court_struggles_balance
+				}
+				news_event = {id=BRA.17 days=2} 
+			}
+	}
+	BRA_Lieutenant_coup = {
+		icon = generic_ignite_civil_war
+		visible = {
+			power_balance_value = {
+				id = BRA_Court_struggles_balance
+				value > 0.75
+			}
+		}
+		available = {
+		}
+		days_re_enable = 120
+		days_remove = 30
+		cost = 50
+		allowed = {
+			tag = BRA
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+				remove_power_balance = {
+					id = BRA_Court_struggles_balance
+				}
+				country_event = {id=BRA.16 days=2} 
 			}
 	}
 }

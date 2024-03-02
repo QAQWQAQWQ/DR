@@ -134,6 +134,12 @@ FRW_focus52_modifier= {
 	core_government_organs_modifier=-0.03
 	not_core_government_organs_modifier=-0.03
 }
+FRW_focus98_modifier= {
+	enable = { always = yes }
+	send_volunteer_divisions_required = -0.1
+	send_volunteer_size = 5
+	air_volunteer_cap = 50
+}
 JPN_Great_Earthquake= {
 	enable = { always = yes }
 	icon = GFX_idea_Great_Earthquake

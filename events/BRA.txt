@@ -42,7 +42,6 @@ country_event = {
 		}
 	option = {
 			name = BRA.3.a
-			country_event = {id=BRA.8 days=20}
 	}
 }
 country_event = {
@@ -132,7 +131,6 @@ country_event = {
 	option = {
 			name = BRA.8.a
 			country_event = {id=BRA.7 days=15}
-			country_event = {id=BRA.8 days=30}
 			BRC = {
 				transfer_state = 504
 				add_state_core = 504
@@ -243,8 +241,51 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
+		
 		}
 	option = {
 			name = BRA.16.a
+			hidden_effect = {
+				country_event = {id=BRA.8 days=10}
+			}
+			
+	}
+}
+news_event = {
+	id = BRA.17
+	title = BRA.17.t
+	desc = BRA.17.d
+	picture = GFX_BRA_17
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = BRA.17.a
+		country_event = {id=BRA.18 days=1}
+	}
+}
+country_event = {
+	id = BRA.18
+	title = BRA.18.t
+	desc = BRA.18.d
+	picture = GFX_BRA_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+			name = BRA.18.a
+			add_political_power = 150
+			add_stability = 0.03
+			add_war_support = 0.03
+			retire_country_leader = yes
+		promote_character = {
+			character = BRA_Pedro_de_Alcantara
+			ideology = Conservatism
+		}
 	}
 }

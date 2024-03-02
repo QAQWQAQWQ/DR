@@ -3,12 +3,48 @@
 @tier3 = 10
 
 leader_traits = {
-	head_of_government = {
-		random = no
-		ai_will_do = {
-			factor = 1
-		}
+head_of_government = {
+	random = no
+	ai_will_do = {
+	factor = 1
+	}
 }
+
+Sorelists = {
+	random = no
+	war_support_factor=0.05
+	offensive_war_stability_factor=0.1
+	Anarchism_drift=0.01
+	Anarchism_acceptance=25
+}
+
+
+Minister_of_Armaments = {
+	random = no
+	unit_upkeep_attrition_factor=0.03
+	land_reinforce_rate=0.03
+	army_morale_factor=0.1
+}
+
+Anti_revisionists = {
+	random = no
+	master_ideology_drift=0.03
+	party_popularity_stability_factor=0.05
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 War_Heroes = {
 	random = no
 	stability_factor = 0.05

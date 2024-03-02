@@ -77,7 +77,12 @@ completion_reward={
 		}
 		x = 14
 		y = 4
-
+completion_reward = {
+	add_power_balance_value = {
+		id = BRA_Court_struggles_balance
+		value = -0.1
+	}
+}
 	}
 	focus = {
 		id = BRA_focus_9
@@ -122,7 +127,9 @@ completion_reward={
 		}
 		x = 18
 		y = 4
-
+completion_reward = {
+	add_political_power = 150
+}
 	}
 	focus = {
 		id = BRA_focus_8
@@ -133,7 +140,12 @@ completion_reward={
 		}
 		x = 22
 		y = 4
-
+completion_reward = {
+	add_power_balance_value = {
+		id = BRA_Court_struggles_balance
+		value = 0.1
+	}
+}
 	}
 	focus = {
 		id = BRA_focus_12
@@ -144,7 +156,10 @@ completion_reward={
 		}
 		x = 20
 		y = 5
-
+		completion_reward = {
+			retire_character = BRA_Hermes_Fonseca
+			
+		}
 	}
 	focus = {
 		id = BRA_focus_10
@@ -182,6 +197,7 @@ completion_reward={
 		y = 6
 completion_reward = {
 	add_ideas = BRA_Brazilian_Guard
+	unlock_decision_tooltip = BRA_Rectify_National_Guard
 }
 	}
 	focus = {
@@ -196,6 +212,8 @@ completion_reward = {
 		}
 		x = 22
 		y = 6
-
+    completion_reward = {
+		unlock_decision_tooltip = BRA_Arms_smuggling
+	}
 	}
 }
