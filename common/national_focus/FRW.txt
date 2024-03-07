@@ -2490,4 +2490,227 @@ focus = {
 		
 	}
 }
+
+
+
+focus = {
+	id = FRW_focus119
+	icon = GFX_goal_FRW_focus119
+	cost = 7.00
+	
+	x = 55
+	y = 8
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = FRW_focus120
+	icon = GFX_goal_FRW_focus120 
+	cost = 7.00
+	prerequisite = { 
+		focus = FRW_focus121
+	}
+	prerequisite = { 
+		focus = FRW_focus122
+	}
+	prerequisite = {
+		focus = FRW_focus123
+	}
+	x = 54
+	y = 10
+	completion_reward = {
+		
+	}
+}
+focus = {
+	id = FRW_focus121
+	icon = GFX_goal_FRW_focus121
+	cost = 7.00
+	prerequisite = {
+		focus = FRW_focus119
+	}
+	x = 53
+	y = 9
+	completion_reward = {
+		
+	}
+}
+focus = {
+	id = FRW_focus122
+	icon = GFX_goal_FRW_focus122
+	cost = 7.00
+	prerequisite = {
+		focus = FRW_focus119
+	}
+	x = 55
+	y = 9
+	completion_reward = { 
+		
+	}
+}
+focus = {
+	id = FRW_focus123
+	icon = GFX_goal_FRW_focus123
+	cost = 7.00
+	prerequisite = {
+		focus = FRW_focus119
+	}
+	x = 57
+	y = 9
+	completion_reward = {
+		
+	}
+}
+focus = {
+	id = FRW_focus124
+	icon = GFX_goal_FRW_focus124
+	cost = 7.00
+	prerequisite = {
+		focus = FRW_focus121
+	}
+	prerequisite = {
+		focus = FRW_focus122
+	}
+	prerequisite = {
+		focus = FRW_focus123
+	}
+	
+	x = 56
+	y = 10
+	completion_reward = {
+		
+	}
+} 
+focus = {
+	id = FRW_focus125
+	icon = GFX_goal_FRW_focus125
+	cost = 7.00
+	prerequisite = {
+		focus = FRW_focus120
+	}
+	prerequisite = {
+		focus = FRW_focus124
+	}
+	x = 55
+	y = 11
+	completion_reward = {
+		
+	}
+} 
+focus = {
+	id = FRW_focus126
+	icon = GFX_goal_FRW_focus126
+	cost = 7.00
+	prerequisite = {
+		focus = FRW_focus125
+	}
+	x = 55
+	y = 12
+	completion_reward = {
+		
+	}
+}
+focus = {
+	id = FRW_focus127
+	icon = GFX_goal_FRW_focus127
+	cost = 7.00
+	prerequisite = {
+		focus = FRW_focus126
+	}
+	x = 55
+	y = 14
+	completion_reward = {
+		
+	}
+}
+focus = {
+	id = FRW_focus128
+	icon = GFX_goal_FRW_focus128
+	cost = 7.00
+	prerequisite = {
+		focus = FRW_focus126
+	}
+	mutually_exclusive = {
+		focus = FRW_focus129
+	}
+	x = 53
+	y = 13
+	completion_reward = {
+		
+	}
+}
+focus = {
+	id = FRW_focus129
+	icon = GFX_goal_FRW_focus129
+	cost = 7.00
+	prerequisite = {
+		focus = FRW_focus126
+	}
+	mutually_exclusive = {
+		focus = FRW_focus128
+	}
+	x = 57
+	y = 13
+	completion_reward = {
+		
+	}
+}
+focus = {
+	id = FRW_focus130
+	icon = GFX_goal_FRW_focus130
+	cost = 7.00
+	prerequisite = {
+		focus = FRW_focus125
+	}
+
+	x = 53
+	y = 11
+	completion_reward = {
+		 
+	}
+}
+focus = {
+	id = FRW_focus131
+	icon = GFX_goal_FRW_focus131
+	cost = 7.00
+	prerequisite = {
+		focus = FRW_focus130
+	}
+ 
+	x = 53
+	y = 12
+	completion_reward = {
+		
+	}
+}
+focus = {
+	id = FRW_focus132
+	icon = GFX_goal_FRW_focus132
+	cost = 7.00
+	prerequisite = {
+		focus = FRW_focus125
+	}
+ 
+	x = 57
+	y = 11
+	completion_reward = {
+		
+	}
+}
+focus = {
+	id = FRW_focus133
+	icon = GFX_goal_FRW_focus133
+	cost = 7.00
+	prerequisite = {
+		focus = FRW_focus132
+	}
+ 
+	x = 57
+	y = 12
+	completion_reward = {
+		
+	}
+}
 }

@@ -20,7 +20,7 @@ BRA_Court_struggles_category = {
 				add_power_balance_value = {
 					id = BRA_Court_struggles_balance
 					value = 0.05
-					tooltip_side = my_bop_side
+					
 				}
 			}
 	}
@@ -45,7 +45,7 @@ BRA_Court_struggles_category = {
 				add_power_balance_value = {
 					id = BRA_Court_struggles_balance
 					value = 0.05
-					tooltip_side = my_bop_side
+					
 				}
 			}
 	}
@@ -68,13 +68,17 @@ BRA_Court_struggles_category = {
 			ai_will_do = {
 			factor = 1
 			}
+			
 			complete_effect = {
 				add_power_balance_value = {
 					id = BRA_Court_struggles_balance
 					value = 0.05
-					tooltip_side = my_bop_side
 				}
-				gain_xp = 25
+				custom_effect_tooltip = BRA_Rectify_National_Guard_tt
+				hidden_effect = {
+					add_to_variable = { BRA_National_Guard = 2 }
+					set_division_template_cap = {  division_template = "巴西国民警卫队" division_cap = BRA_National_Guard }
+				}
 			}
 	}
 	BRA_Recruitment_National_Guard = {
@@ -82,6 +86,7 @@ BRA_Court_struggles_category = {
 		visible = {
 		}
 		available = {
+			has_completed_focus = BRA_focus_14
 		}
 		days_re_enable = 130
 		days_remove = 25
@@ -99,6 +104,7 @@ BRA_Court_struggles_category = {
 					id = BRA_Court_struggles_balance
 					value = 0.1
 				}
+				
 			}
 	}
 	BRA_Buying_Representatives = {
@@ -122,7 +128,7 @@ BRA_Court_struggles_category = {
 				add_power_balance_value = {
 					id = BRA_Court_struggles_balance
 					value = 0.05
-					tooltip_side = my_bop_side
+					
 				}
 			}
 	}
@@ -152,7 +158,7 @@ BRA_Court_struggles_category = {
 				add_power_balance_value = {
 					id = BRA_Court_struggles_balance
 					value = 0.05
-					tooltip_side = my_bop_side
+					
 				}
 			}
 	}
@@ -176,6 +182,7 @@ BRA_Court_struggles_category = {
 			}
 			complete_effect = {
 				army_experience = 15
+				add_command_power = -10
 			}
 	}
 	BRA_Arms_smuggling = {
@@ -213,7 +220,7 @@ BRA_Court_struggles_category = {
 				add_power_balance_value = {
 					id = BRA_Court_struggles_balance
 					value = 0.1
-					tooltip_side = my_bop_side
+					
 				}
 			}
 	}

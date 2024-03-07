@@ -4,9 +4,17 @@ defined_text = {
 		trigger = { original_tag = FRW }
 		localization_key = "FRA_jie_shao"
 	}
-	text = { #法国国家介绍
+	text = { #巴西国家介绍
 		trigger = { original_tag = BRA }
 		localization_key = "BRA_jie_shao"
+	}
+	text = { #拿破仑法国国家介绍
+		trigger = { original_tag =NPL}
+		localization_key = "NPL_jie_shao"
+	}
+	text = { #拿破仑法国国家介绍
+		trigger = { original_tag =LEF}
+		localization_key = "NPL_jie_shao"
 	}
 	text = { #通用国家介绍
 		localization_key = "tong_yong_jie_shao"

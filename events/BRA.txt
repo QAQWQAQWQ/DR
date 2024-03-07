@@ -28,7 +28,7 @@ country_event = {
 		}
 	option = {
 			name = BRA.2.a
-			
+			country_event = BRA.11
 	}
 }
 country_event = {
@@ -162,43 +162,41 @@ country_event = {
 		}
 	option = {
 			name = BRA.10.a
-			country_event = {id=BRA.2 }
-			country_event = {id=BRA.11 days=2}
-			country_event = {id=BRA.12 days=2}
-			country_event = {id=BRA.13 days=2}
 	}
 }
 country_event = {
 	id = BRA.11
 	title = BRA.11.t
 	desc = BRA.11.d
-	picture = GFX_BRA_1
+	picture = GFX_BRA_11
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
 		}
 	option = {
 			name = BRA.11.a
+			country_event = BRA.12
 	}
 }
 country_event = {
 	id = BRA.12
 	title = BRA.12.t
 	desc = BRA.12.d
-	picture = GFX_BRA_1
+	picture = GFX_BRA_12
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
 		}
 	option = {
 			name = BRA.12.a
+			country_event = BRA.13
 	}
 }
 country_event = {
 	id = BRA.13
 	title = BRA.13.t
 	desc = BRA.13.d
-	picture = GFX_BRA_1
+	picture = GFX_BRA_13
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
@@ -211,7 +209,7 @@ country_event = {
 	id = BRA.14
 	title = BRA.14.t
 	desc = BRA.14.d
-	picture = GFX_BRA_1
+	picture = GFX_BRA_14
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
@@ -224,7 +222,7 @@ country_event = {
 	id = BRA.15
 	title = BRA.15.t
 	desc = BRA.15.d
-	picture = GFX_BRA_1
+	picture = GFX_BRA_15
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
