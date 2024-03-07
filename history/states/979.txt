@@ -1,0 +1,23 @@
+state= {
+	id=979
+	name="柳江"
+	manpower = 2454131
+	state_category = rural
+	resources={
+		grain=11
+		chromium = 4
+	}
+	history= {
+		owner = GUG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	provinces={
+		1597 4134 7095 10039 10431 12436
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,25 @@
+state=
+{
+	id=916
+	name="STATE_916"
+	manpower = 758659
+	
+	state_category = town
+
+	history=
+	{
+		owner = EYJ
+		add_core_of = EYJ
+		buildings = {
+			infrastructure = 1 #was: 5
+			industrial_complex = 1
+		}
+
+	}
+
+	provinces={
+		1155
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,24 @@
+state={
+	id=994
+	name="金华"
+	manpower = 8430700
+	state_category = rural
+	resources={
+		grain=21
+	}
+	history={
+		owner = ZHX
+		add_core_of = ZHX
+		add_core_of = DUQ
+        victory_points = { 10086 3 }
+		buildings = {
+			infrastructure = 2
+			grain_farms = 1
+		}
+	}
+	provinces={
+		7174 9944 10086 11920 12059
+	}
+
+	local_supplies=0.0 
+}

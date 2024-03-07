@@ -1,0 +1,37 @@
+
+state={
+	id=940
+	name="STATE_940"
+	manpower = 4144743
+	resources={
+		steel=10 # was: 54
+	}
+	resources={
+		grain=4
+		
+	}
+
+	state_category = large_city
+	
+	history={
+		owner = WWS
+		add_core_of = WWS
+		victory_points = {
+			6469 10 
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 3
+
+		}
+	}
+
+	provinces={
+        6570 9482 529 3512 6469
+	}
+	
+
+	local_supplies=0.0 
+}

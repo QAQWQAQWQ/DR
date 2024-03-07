@@ -1,0 +1,34 @@
+
+state={
+	id=1004
+	name="开封"
+	manpower=14089800
+	
+	state_category = large_town
+	
+	buildings_max_level_factor=1.000
+	resources={
+		grain=61
+	}
+	history={
+		owner = ZHX
+		add_core_of = ZHX
+		victory_points = {
+			4010 3 
+		}
+		victory_points = {
+			9958 10 
+		}
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 2
+			grain_farms = 3
+		}
+	}
+
+	provinces={
+		4010 4066 7085 7129 7656 9958 9995 10098 10364
+	}
+
+	local_supplies=3.0 
+}

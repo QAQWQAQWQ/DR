@@ -1,0 +1,21 @@
+state={
+	id=982
+	name="岭南"
+	manpower = 2413120
+	state_category = rural
+	history={
+		owner = GUG
+		add_core_of = GUG
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		victory_points = { 1120 1 }
+	}
+	provinces={
+		1120 9970 9997 10080 12014
+	}
+
+	local_supplies=1.0 
+}
+

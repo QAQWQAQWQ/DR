@@ -1,0 +1,28 @@
+
+state={
+	id=999
+	name="徐海"
+	
+	state_category = town
+	resources={
+		grain=20
+	}
+	history={
+		owner = ZHX
+		add_core_of = ZHX
+		buildings = {
+			infrastructure = 2
+			grain_farms = 2
+		}
+		victory_points = {
+			7025 2
+		}
+     }
+	provinces={
+		1029 1076 7025 7200 9956 12055
+	}
+	manpower=13669300
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,21 @@
+
+state = {
+	id = 910
+	name = "STATE_910"
+	manpower = 183423
+	
+	state_category = rural
+
+	history = {
+		owner = DTJ
+		add_core_of = DTJ
+        buildings = {
+			infrastructure = 1 
+		}
+	}
+	provinces = {
+		5042
+	}
+
+	local_supplies = 0.0 
+}

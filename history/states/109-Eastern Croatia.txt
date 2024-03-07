@@ -1,0 +1,30 @@
+
+state={
+	id=109
+	name="STATE_109" # Croatia
+	manpower = 2224400
+	
+	state_category = large_town
+	resources={
+		grain=6
+		
+	}
+	history={
+		owner = DMT
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+		}
+		victory_points = {
+			11581 3 
+		}
+		add_core_of = DMT
+	}
+
+	provinces={
+		3592 3596 11581 6611 984 
+	}
+
+	local_supplies=0.0 
+}

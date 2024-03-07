@@ -1,0 +1,28 @@
+
+state={
+	id=973
+	name="克钦" 
+	manpower = 234100
+	state_category = pastoral
+	resources={
+		tungsten = 120 
+	}
+	history={
+		add_core_of = ENL
+		add_claim_by = CEX
+		owner = ENL
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			4425 1 
+		}
+
+	}
+	
+	provinces={
+		1197 1934 4318 4425 4996
+	}
+
+	local_supplies=0.0 
+}

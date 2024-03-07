@@ -1,0 +1,25 @@
+state=
+{
+	id=921
+	name="STATE_921"
+	manpower = 100000
+	
+	state_category = rural
+
+	history=
+	{
+		owner = KOH
+        add_core_of = KOH
+        add_core_of = AOX
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+
+	provinces={
+		6672
+	}
+
+	local_supplies=0.0 
+}

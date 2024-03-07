@@ -1,0 +1,29 @@
+state={
+	id=983
+	name="衡阳"
+	resources={
+		tungsten=6.000
+		grain=22
+	}
+	history={
+		owner = WUP
+		add_core_of = WUP
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			12483 3 
+		}
+	}
+
+	provinces={
+		4125 7502 7159 9982 10377 11918 12350 12378
+	}
+	manpower=9845510
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}

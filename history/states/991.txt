@@ -1,0 +1,22 @@
+state= {
+	id=991
+	name="汀漳"
+	manpower = 2355600
+	state_category = rural
+	history={
+		owner = SUC
+		add_core_of = SUC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = { 
+			1006 3 
+		}
+	}
+	provinces={
+		1006 4053 7099 10010 10054 10093 12084 10084 12057 
+	}
+
+	local_supplies=0.0 
+}

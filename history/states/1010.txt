@@ -1,0 +1,19 @@
+state={
+	id=1010
+	name="西套"
+	provinces={
+		4783 7727 7803 8055 8102 10770 10899 12750 12776
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+	history={
+		owner = NXS
+		add_core_of = NXS
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	local_supplies=0.0 
+}

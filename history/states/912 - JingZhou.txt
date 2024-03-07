@@ -1,0 +1,26 @@
+
+state = {
+	id = 912
+	name = "STATE_912"
+	manpower = 183420
+	resources={
+		grain=22
+	}
+	state_category = pastoral
+
+	history = {
+		owner = FTX
+		add_core_of = FTX
+                                buildings = {
+			infrastructure = 1 
+}
+                  victory_points = {
+			934 3 
+		}
+}
+	provinces = {
+		7575 7633 11855 934 3934 6852 3828 10426 9927 4514
+	}
+
+	local_supplies = 0.0 
+}

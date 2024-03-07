@@ -1,0 +1,30 @@
+state={
+	id=988
+	name="赣南"
+	resources={
+		grain=23
+	}
+	history={
+		owner = SUC
+        add_core_of = SUC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+		}
+		victory_points = {
+			11945 3 
+		}
+		victory_points = {
+			10112 3 
+		}
+	}
+
+	provinces={
+		1053 4081 7004 7199 9942 10112 11945 12030
+	}
+	manpower=3020400
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=3.0 
+}

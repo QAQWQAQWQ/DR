@@ -1,0 +1,24 @@
+
+state={
+	id=1011
+	name="口北"
+	manpower = 800000
+	
+	state_category = pastoral
+	history={
+		owner = ZHX
+		add_core_of = ZHX
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			1590 4
+		}
+	}
+
+	provinces={
+		952 1137 1590 6904 9776 10397
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,26 @@
+state={
+	id=995
+	name="瓯海"
+	manpower = 6830700
+	state_category = town
+	history={
+		owner = ZHX
+		add_core_of = ZHX
+		add_core_of = DUQ
+        victory_points = { 1195 3 }
+        victory_points = { 1055 3 }
+		buildings = {
+			infrastructure = 2
+			1055 = {
+				naval_base = 3
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+	}
+	provinces={
+		1055 1195 4099 7086 9972 11947
+	}
+
+	local_supplies=0.0 
+}

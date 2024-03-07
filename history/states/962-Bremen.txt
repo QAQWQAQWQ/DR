@@ -1,0 +1,31 @@
+
+state={
+	id=962
+	name="STATE_962"
+	manpower = 660990
+	resources={
+		oil=1
+	}
+	
+	state_category = city
+
+	history={
+		owner = AGC
+		add_core_of = AGC
+		victory_points = {
+			3326 5 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			dockyard = 1
+		}
+
+	}
+
+	provinces={
+		3326
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,27 @@
+state= {
+	id=992
+	name="厦门"
+	manpower = 1355600
+	state_category = town
+	history={
+		owner = SUC
+		add_core_of = SUC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			7071 = {
+				naval_base = 1
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+		victory_points = { 
+			7071 5 
+		}
+	}
+	provinces={
+		7071 7131 11986
+	}
+
+	local_supplies=0.0 
+}

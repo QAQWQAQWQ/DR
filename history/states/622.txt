@@ -1,0 +1,24 @@
+state={
+	id=622
+	name="榆林"
+	resources={
+		tungsten=3.000
+	}
+	history={
+		owner = SXX
+		add_core_of = SXX
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+		}
+	}
+
+	provinces={
+		1458 7314 7659 10880 12356 
+	}
+	manpower=3906200
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=0.0 
+}

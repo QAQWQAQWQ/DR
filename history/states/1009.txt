@@ -1,0 +1,27 @@
+
+state={
+	id=1009
+	name="保定"
+	manpower = 9834900
+	
+	state_category = town
+	history={
+		owner = ZHX
+		add_core_of = ZHX
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			4190 3
+		}
+		victory_points = {
+			12026 5 
+		}
+	}
+
+	provinces={
+		1134 4093 4140 4190 4208 6828 7000 7109 10022 10053 12026
+	}
+
+	local_supplies=0.0 
+}

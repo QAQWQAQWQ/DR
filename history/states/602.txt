@@ -1,0 +1,35 @@
+state={
+	id=602
+	name="湘江"
+	resources={
+		tungsten=6.000
+		grain=22
+	}
+	history={
+		owner = WUP
+		add_core_of = WUP
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 2
+			arms_factory = 2
+		}
+		victory_points = {
+			7097 10 
+		}
+		victory_points = {
+			12483 3 
+		}
+		victory_points = {
+			7101 10 
+		}
+	}
+
+	provinces={
+		1448 1640 7101 7097 7434 9999 10517 12017 12053 12310 12483 13140 13143 
+	}
+	manpower=13542160
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}

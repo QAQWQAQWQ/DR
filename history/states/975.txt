@@ -1,0 +1,23 @@
+state={
+	id=975
+	name="普洱"
+	resources={
+		tungsten=2.000
+	}
+	history={
+		owner = CEX
+		add_core_of = CEX
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		1383 1522 4501 10346 10413 10776 12262 12282
+	}
+	manpower=2321311
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+
+	local_supplies=3.0 
+}

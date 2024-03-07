@@ -1,0 +1,23 @@
+state= {
+	id=981
+	name="南宁"
+	manpower = 3513110
+	state_category = town
+	resources={
+		tungsten=15
+		steel= 10
+		grain=20
+	}
+	history= {
+		owner = GUG
+		add_core_of = GUG
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	provinces={
+		4028 7137 7650 10050 11926
+	}
+
+	local_supplies=0.0 
+}

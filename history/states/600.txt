@@ -1,0 +1,33 @@
+state={
+	id=600
+	name="豫章"
+	resources={
+		grain=33
+	}
+	history={
+		owner = SUC
+        add_core_of = SUC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+		}
+		victory_points = {
+			3992 5 
+		}
+		victory_points = {
+			7172 3 
+		}
+		victory_points = {
+			1066 3 
+		}
+	}
+
+	provinces={
+		1066 1110 3992 4038 4083 7054 7172 9984 11961
+	}
+	manpower=15820400
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=3.0 
+}

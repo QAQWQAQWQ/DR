@@ -1,0 +1,31 @@
+state={
+	id=917
+	name="STATE_917"
+	manpower = 258659
+	
+	state_category = town
+	resources={
+		grain=9
+	}
+	history={
+ 		victory_points = {
+			11564 15 
+		}
+		owner = DMT
+		add_core_of = DMT
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 1
+			11564 = {
+				naval_base = 2
+			}
+		}
+
+	}
+
+	provinces={
+		11564 591 11901  3601 13252
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,33 @@
+state= {
+	id=929
+	name="STATE_929"
+	manpower = 168600
+	resources={
+		rubber=25 # was: 138
+		oil=2 # was: 10
+	}
+	resources={
+		grain=4
+	}
+	state_category = rural
+
+	history= {
+		owner = LFR
+		add_core_of = LFR
+		victory_points = {
+			4279 5 
+		}
+
+		buildings = {
+			infrastructure = 1
+			4279 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces={
+		12129 4279 1304
+	}
+
+	local_supplies=0.0 
+}

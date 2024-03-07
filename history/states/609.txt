@@ -1,0 +1,32 @@
+
+state={
+	id=609
+	name="天津"
+	manpower = 6400000
+	resources={
+		grain=16
+	}
+	state_category = town
+
+	history={
+		owner = ZHX
+		add_core_of = ZHX
+		buildings = {
+			infrastructure = 3 #was: 5
+			arms_factory = 1
+			industrial_complex = 1
+			3900 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			10068 10 
+		}
+	}
+
+	provinces={
+		900 1052 3830 3900 6969 11822 12043 10068
+	}
+
+	local_supplies=0.0 
+}

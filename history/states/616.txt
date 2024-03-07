@@ -1,0 +1,23 @@
+state={
+	id=616
+	name="甘凉"
+	resources={
+		grain=3
+	}
+	history={
+		owner = NXS
+		add_core_of = NXS
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		3742 5031 5057 5100 7511 8081 8127 10724 12327 
+	}
+	manpower=2077600
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+
+	local_supplies=0.0 
+}
