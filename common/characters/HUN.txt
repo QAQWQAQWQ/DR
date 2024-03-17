@@ -1,4 +1,17 @@
 characters={
-	
+	HUN_Mihaly_Karolyi={
+		name=HUN_Mihaly_Karolyi
+		portraits={
+			civilian={
+				large="gfx/leaders/KOH/Portrait_Mihaly_Karolyi.tga"
+			}
+		}
+		country_leader={
+			ideology=Socialism_Liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
   	
 	}

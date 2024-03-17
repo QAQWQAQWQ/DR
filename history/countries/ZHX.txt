@@ -63,6 +63,11 @@ recruit_character = ZHX_GuWeiJun
 		
 		
 	}
+
+	set_power_balance = {
+		id = China_BeiYang_balance
+	}
+
 	create_faction = BeiPing
 	add_to_faction = SXS
     add_to_faction = SUC

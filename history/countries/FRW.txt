@@ -34,9 +34,12 @@ add_to_faction = BHL
 set_convoys = 300
 
 country_event = { id = FRW.1 days = 10 }
-country_event = { id = FRW.5 days = 120 }
 country_event = { id = FRW.17 days = 35 }
-country_event = { id = FRW.35 days = 225 }
+country_event = { id = FRW.45 days = 125 }
+country_event = { id = FRW.35 days = 400 }
+country_event = { id = FRW.36 days = 375 }
+
+country_event = { id = Assembly_Tours.1 days = 205 }
 
 set_politics = {
 	ruling_party =  Reformism
@@ -54,7 +57,7 @@ set_popularities = {
 
 
 recruit_character = FRW_Alexandre_Millerand
-
+recruit_character = FRW_Louis_Loucheur
 recruit_character = FRW_Andre_Marty
 recruit_character = FRW_Sebastian_Fuhr
 recruit_character = FRW_Paul_Brousse
@@ -147,6 +150,7 @@ add_ideas = {
 	FRW_Fernand_Loriot_P
 	FRW_Adrien_Rene_Viviani_P
 	FRW_Marcel_Sembat_P
+	FRW_Albert_Thomas_P
 		}
 
 

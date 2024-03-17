@@ -1,5 +1,37 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_goal_ROC_focus_0"
+		texturefile = "gfx/interface/goals/ROC/ROC_focus_0.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_ROC_focus_1"
+		texturefile = "gfx/interface/goals/ROC/ROC_focus_1.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_ROC_focus_2"
+		texturefile = "gfx/interface/goals/ROC/ROC_focus_2.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_ROC_focus_3"
+		texturefile = "gfx/interface/goals/ROC/ROC_focus_3.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_ROC_focus_4"
+		texturefile = "gfx/interface/goals/ROC/ROC_focus_4.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_ROC_focus_5"
+		texturefile = "gfx/interface/goals/ROC/ROC_focus_5.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_ROC_focus_6"
+		texturefile = "gfx/interface/goals/ROC/ROC_focus_6.dds"
+	}
+
+
+
+
+	spriteType = {
 		name = "GFX_goal_FUM_focus_1"
 		texturefile = "gfx/interface/goals/FUM/FUM_focus_1.dds"
 	}

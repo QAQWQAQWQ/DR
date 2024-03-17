@@ -135,6 +135,7 @@ characters={
 			  }
 			traits = {
 				head_of_government
+				unpopular_political_advisor
 			}
 			cost = 50
 			ai_will_do = {
@@ -199,12 +200,6 @@ characters={
 				large="gfx/leaders/FRW/Portrait_Jean_Allemane.tga"
 			}
 		}
-		country_leader={
-			ideology=Syndicalism_Anarchism
-			traits={ }
-			expire="1965.1.1.1"
-			id=-1
-		}
 	}
 	FRW_Marcel_Cachin={
 		name=FRW_Marcel_Cachin
@@ -224,14 +219,49 @@ characters={
 		name=FRW_Sebastian_Fuhr
 		portraits={
 			civilian={
-				large="gfx/leaders/FRW/Portrait_Sebastian_Fuhr.tga"
+				small="gfx/interface/ideas/idea_Sebastian_Fuhr.dds"
 			}
 		}
-		country_leader={
-			ideology=Autonomismism_Anarchism
-			traits={ anarchist_zeal }
-			expire="1965.1.1.1"
-			id=-1
+		advisor={
+			slot = political_advisor
+			idea_token = FRW_Sebastian_Fuhr_P
+			allowed = {
+				original_tag = FRW
+			}
+			available = {
+				hidden_trigger = {
+					has_country_flag = Sebastian_Fuhr_P
+				}
+				
+			  }
+			traits = {
+				compassionate_gentleman
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = FRW_Sebastian_Fuhr_H
+			allowed = {
+				original_tag = FRW
+			}
+			available = {
+				hidden_trigger = {
+					has_country_flag = Sebastian_Fuhr_P
+				}
+				
+			  }
+			traits = {
+				head_of_government
+				compassionate_gentleman
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 	
@@ -287,7 +317,7 @@ characters={
 			}
 			advisor={
 				slot = head_of_government
-				idea_token = FRW_Benoit_Frachon_head_of_government
+				idea_token = FRW_Benoit_Frachon_H
 				allowed = {
 					original_tag = FRW
 				}
@@ -310,7 +340,7 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				has_completed_focus = FRW_Parliamentary_revolution
+				has_country_flag = Benoit_Frachon_P
 			  }
 			traits = {
 				connected_citizen
@@ -330,11 +360,14 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = FRW_Vincent_Auriol_political_advisor
+			idea_token = FRW_Vincent_Auriol_P
 			allowed = {
 				original_tag = FRW
 			}
 			available = {
+				hidden_trigger = {
+					has_country_flag = Vincent_Auriol_P
+				}
 				
 			  }
 			traits = {
@@ -352,7 +385,10 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				has_completed_focus = FRW_Parliamentary_revolution
+				hidden_trigger = {
+					has_country_flag = Vincent_Auriol_P
+				}
+				
 			  }
 			traits = {
 				head_of_government
@@ -373,12 +409,12 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = FRW_Marcel_Deat_political_advisor
+			idea_token = FRW_Marcel_Deat_P
 			allowed = {
 				original_tag = FRW
 			}
 			available = {
-				
+				has_country_flag = Marcel_Deat_P
 			  }
 			traits = {
 				ideological_groupie
@@ -404,8 +440,9 @@ characters={
 			}
 			available = {
 				hidden_trigger = {
-					has_stability > 9 
-				  }
+					has_country_flag = LudovicOscar_Frossard_P
+				}
+				
 			  }
 			traits = {
 				head_of_government
@@ -423,6 +460,9 @@ characters={
 				original_tag = FRW
 			}
 			available = {
+				hidden_trigger = {
+					has_country_flag = LudovicOscar_Frossard_P
+				}
 				
 			  }
 			traits = {
@@ -554,7 +594,7 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				
+				has_country_flag = Edouard_Berth_P
 			  }
 			traits = {
 				Sorelists
@@ -645,7 +685,32 @@ characters={
 
 
 
-
+	FRW_Louis_Loucheur={
+		name=FRW_Louis_Loucheur
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Louis_Loucheur.dds"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = FRW_Louis_Loucheur_P
+			allowed = {
+				original_tag = FRW
+			}
+			available = {
+				
+			  }
+			traits = {
+				captain_of_industry
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+			
+	}
 
 
 
@@ -667,6 +732,9 @@ characters={
 				original_tag = FRW
 			}
 			available = {
+				hidden_trigger = {
+					has_country_flag = Edouard_Daladier_P
+				}
 				
 			  }
 			traits = {
@@ -685,8 +753,9 @@ characters={
 			}
 			available = {
 				hidden_trigger = {
-					has_stability > 9 
-				  }
+					has_country_flag = Edouard_Daladier_P
+				}
+				
 			  }
 			traits = {
 				head_of_government
@@ -732,12 +801,12 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = FRW_Paul_Faure_political_advisor
+			idea_token = FRW_Paul_Faure_P
 			allowed = {
 				original_tag = FRW
 			}
 			available = {
-				
+				has_country_flag = Paul_Faure_P
 			  }
 			traits = {
 				traditionalist_theorist

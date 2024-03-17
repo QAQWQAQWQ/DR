@@ -539,7 +539,7 @@ focus_tree = {
 		x = 2
 		y = 5
 		completion_reward = {
-      		WWS = { create_faction = "维也纳协约" }
+      		WWS = { create_faction = Vienna_Entent }
 			WWS = { add_to_faction = AOX }
 			WWS = { country_event = austria.5 }
 			AOX = { country_event = austria.6 }

@@ -466,17 +466,17 @@ SHW_End_Civil_War:0 "结束内战"
 
 
 BRA_Court_struggles_balance:0 "巴西宫廷斗争"
-BRA_Court_struggles_mid_range:0 "中立"
+BRA_Court_struggles_mid_range:0 "现状：平息"
 BRA_Court_struggles_left_side:0 "§Y太子党§!"
 BRA_Court_struggles_left_side_desc:0 "§Y太子党的愤怒§! \n\n随着女皇的健康日益恶化，要求女皇提前退位的妖言自上而下的传遍了朝野，保皇派认为急需一个新的强势的佩德罗皇帝来挽救巴西。"
-BRA_Court_struggles_left_side_range_Low:0 "太子党占据优势"
-BRA_Court_struggles_left_side_High:0 "太子党胜利"
+BRA_Court_struggles_left_side_range_Low:0 "太子党现状：安抚"
+BRA_Court_struggles_left_side_High:0 "太子党现状：愤怒"
 
 BRA_Court_struggles_right_side:0 "§Y尉官派§!"
 
 BRA_Court_struggles_right_side_desc:0 "§Y尉官派的骚动§! \n\n随着女皇的健康日益恶化，新一阵骚动在军队中如瘟疫般传播，年轻人们像打了鸡血一样在政府监管不到的农村，城市角落交谈、组织起来，谁知道呢？"
-BRA_Court_struggles_right_side_range_Low:0 "尉官派占据优势"
-BRA_Court_struggles_right_side_High:0 "尉官派胜利"
+BRA_Court_struggles_right_side_range_Low:0 "尉官派现状：骚动"
+BRA_Court_struggles_right_side_High:0 "尉官派现状：压抑"
 
 BRA_Convince_Senate:0 "说服参议院"
 BRA_Stop_extremist_ideas:0 "制止极端思想传播"
@@ -492,3 +492,15 @@ BRA_Lieutenant_coup:0 "尉官政变"
 
 BRA_Court_struggles_balance_left_modifier:0 "太子党的愤怒"
 BRA_Court_struggles_balance_left_modifier_desc:0"随着女皇的健康日益恶化，要求女皇提前退位的妖言自上而下的传遍了朝野，保皇派认为急需一个新的强势的佩德罗皇帝来挽救巴西。"
+
+
+China_BeiYang_balance:0 "北平政治斗争"
+China_BeiYang_mid_range:0 "无人得势"
+China_BeiYang_left_side:0 "§Y皖系§!"
+China_BeiYang_left_side_range_Low:0 "皖系占有优势"
+China_BeiYang_left_side_range_High:0 "皖系控制中央"
+
+China_BeiYang_right_side:0 "§Y直系§!"
+
+China_BeiYang_right_side_range_Low:0 "直系占有优势"
+China_BeiYang_right_side_range_High:0 "直系控制中央"

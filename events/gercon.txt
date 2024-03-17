@@ -244,6 +244,7 @@ news_event = {
 	desc = ger_con.5.d
 	picture = GFX_WWI
 	is_triggered_only = yes
+	
 	option = {
 		name = ger_con.5.a
 		trigger = {
@@ -262,6 +263,7 @@ news_event = {
 				}
 			}
 		}
+
 	}
 	option = {
 		name = ger_con.5.c

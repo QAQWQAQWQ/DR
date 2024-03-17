@@ -30,5 +30,20 @@ spriteTypes = {
 		name = "GFX_bop_BRA_Court_struggles_right"
 		texturefile = "gfx/interface/bop/BRA_Court_struggles_right.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_bop_BRA_Court_struggles_left"
+		texturefile = "gfx/interface/bop/BRA_Court_struggles_left.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_BRA_Court_struggles_right"
+		texturefile = "gfx/interface/bop/BRA_Court_struggles_right.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_China_BeiYang_left"
+		texturefile = "gfx/interface/bop/China_BeiYang_struggles_left.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_China_BeiYang_right"
+		texturefile = "gfx/interface/bop/China_BeiYang_struggles_right.dds"
+	}
 }

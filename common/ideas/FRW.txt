@@ -78,7 +78,7 @@ ideas = {
 		FRW_Chaotic_socialism = {
 			picture = Chaotic_socialism
 			modifier = {
-				stability_weekly = -0.02
+				stability_weekly_factor = -0.05
 				political_power_cost = 0.05
 			}
         }

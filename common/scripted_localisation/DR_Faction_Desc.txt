@@ -40,7 +40,17 @@ text = {
 		   OR = {
 			   tag = FRW
 			   is_in_faction_with =  FRW
-			   is_puppet_of =  FRW
+		   }
+}
+}
+text = {
+	localization_key = Vienna_Entent_Desc
+
+	trigger = {
+		   AND = {
+			   tag = AOX
+			   is_in_faction_with =  WWS
+			   has_country_flag = ger_con_7
 		   }
 }
 }

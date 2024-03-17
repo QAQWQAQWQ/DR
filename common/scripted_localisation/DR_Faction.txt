@@ -32,6 +32,20 @@ text = {
 }
 
 text = {
+	localization_key = GFX_Vienna_Entent
+
+	trigger = {
+		AND = {
+			tag = AOX
+			is_in_faction_with =  WWS
+			has_country_flag = ger_con_7
+		}
+}
+}
+
+
+
+text = {
 	localization_key = GFX_North_German_Confederation
 
 	trigger = {

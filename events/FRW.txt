@@ -32,9 +32,12 @@ news_event = {
 		}
 	option = {
 		trigger = {
-			has_country_flag = FRW_Syndicalist_protests
+			AND={
+				has_country_flag = FRW_Syndicalist_protests
+			}
 		}
 		name = Assembly_Tours.1.b
+		set_country_flag = Assembly_Tours_1
 		}
 	}
 
@@ -114,19 +117,29 @@ country_event = {
 					}
 			}
             country_event = {
-				id = FRW.4
+				id =FRW.4
 				title = FRW.4.t
 				desc = FRW.4.d
 				picture = GFX_FRW_4
 				is_triggered_only = yes
 				fire_only_once = yes
 				trigger = {
-					Revolutionism > 0.4
-					has_stability < 0.5
-
 					}
 				option = {
 					name = FRW.4.a
+					country_event = {id=FRW.5 days=5}
+					remove_advisor_role = {
+						character = "FRW_Alexandre_Millerand"
+						slot = head_of_government
+					  }
+					remove_advisor_role = {
+						character = "FRW_Aristide_Briand"
+						slot = political_advisor
+					  }
+					remove_advisor_role = {
+						character = "FRW_Adrien_Rene_Viviani"
+						slot = political_advisor
+					  }
 					}
 				}
 country_event = {
@@ -140,12 +153,35 @@ country_event = {
 						}
 		option = {
 		name = FRW.5.a
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = FRW_LudovicOscar_Frossard_P
+		show_ideas_tooltip = FRW_Paul_Faure_P
+		show_ideas_tooltip = FRW_Benoit_Frachon_P
+		set_country_flag = LudovicOscar_Frossard_P
+		set_country_flag = Paul_Faure_P
+		set_country_flag = Benoit_Frachon_P
 		}
 		option = {
 		name = FRW.5.b
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = FRW_Sebastian_Fuhr_P
+		show_ideas_tooltip = FRW_Edouard_Berth_P
+		show_ideas_tooltip = FRW_Marcel_Deat_P
+		set_country_flag = Sebastian_Fuhr_P
+		set_country_flag = Edouard_Berth_P
+		set_country_flag = Marcel_Deat_P
 		}
 		option = {
 		name = FRW.5.c
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = FRW_Edouard_Daladier_P
+		set_country_flag = Edouard_Daladier_P
+		}
+		option = {
+			name = FRW.5.e
+		custom_effect_tooltip = available_political_advisor	
+		show_ideas_tooltip = FRW_Vincent_Auriol_P
+		set_country_flag = Vincent_Auriol_P
 		}
 	}
 country_event = {
@@ -159,9 +195,16 @@ country_event = {
 			}
 		option = {
 		name = FRW.6.a
+		hidden_effect = {
+			country_event = {id=FRW.7 days=5}
+		}
 			}
 		option = {
 		name = FRW.6.b
+		hidden_effect = {
+			country_event = {id=FRW.4 days=3}
+		}
+		
 		}
 		}
 country_event = {
@@ -175,10 +218,10 @@ country_event = {
 		}
 		option = {
 		name = FRW.7.a
+		add_political_power = -100
+		add_stability = -0.05
+        set_country_flag = FRW_Syndicalist_protests
 			}
-		option = {
-		name = FRW.7.b
-		}
 		}
 country_event = {
 		id = FRW.8
@@ -653,6 +696,12 @@ country_event = {
 		set_politics = {
 			ruling_party = Liberalism
 		}
+		set_popularities = {
+			Liberalism=62
+			Reformism=18
+			Revolutionism=15
+			Anarchism=5
+		}
 		ROOT={
 			mark_focus_tree_layout_dirty = yes
 		}
@@ -668,6 +717,12 @@ country_event = {
 				traits = { }
 			}
 		}
+		set_popularities = {
+			Reformism=62
+			Liberalism=18
+			Revolutionism=15
+			Anarchism=5
+		}
 		ROOT={
 			mark_focus_tree_layout_dirty = yes
 		}
@@ -678,11 +733,35 @@ country_event = {
 		set_politics = {
 			ruling_party = Revolutionism
 		}
+		set_popularities = {
+			Revolutionism=62
+			Liberalism=18
+			Reformism=15
+			Anarchism=5
+		}
+		ROOT={
+			mark_focus_tree_layout_dirty = yes
+		}
+		}	
+	option = {
+		trigger = {
+			has_country_flag = Assembly_Tours_1
+		}
+		name = FRW.35.e
+		set_politics = {
+			ruling_party = Anarchism
+		}
+		set_popularities = {
+			Anarchism=70
+			Liberalism=10
+			Reformism=15
+			Revolutionism=5
+		}
 		ROOT={
 			mark_focus_tree_layout_dirty = yes
 		}
 		
-		}	
+		}
 }
 country_event = {
 	id = FRW.36
@@ -842,5 +921,28 @@ country_event = {
 			Revolutionism = 15
 			Anarchism= 85
 		}
+		}
+}
+country_event = {
+	id = FRW.45
+	title = FRW.45.t
+	desc = FRW.45.d
+	#picture = GFX_FRW_31
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.45.a
+		add_political_power = 200
+		add_stability = -0.1
+		hidden_effect = {
+		country_event={id=FRW.6 days=1} 
+		}
+		
+		}
+	option = {
+		name = FRW.45.b
+		add_political_power = 50
+		add_stability = 0.05
 		}
 }

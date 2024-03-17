@@ -31,6 +31,12 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_Vienna_Entent"
+		texturefile = "gfx/interface/Faction/Vienna_Entent.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
 		name = "GFX_North_German_Confederation"
 		texturefile = "gfx/interface/Faction/North_German_Confederation.dds"
 		legacy_lazy_load = no

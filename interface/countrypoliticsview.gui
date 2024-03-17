@@ -292,7 +292,7 @@ guiTypes = {
 				
 			instantTextboxType = {
 				name = "title"
-				position = { x = 138 y = 7 }
+				position = { x = 138 y = 7 } 
 				font = "hoi_18mbs"
 				text = "POLITICS_NATIONAL_SPIRIT"
 				maxWidth = 200
@@ -330,56 +330,12 @@ guiTypes = {
 					format = "UPPER_LEFT"
 				}
 			}
-			containerWindowType = {
-				name = "power_balance_button"
-				position = { x = 330 y = 95 }
-				clipping = no
-	
-				buttonType = {
-					name = "show_power_balance"
-					position = { x = 0 y = 0 }
-					quadTextureSprite = "GFX_show_power_balance_button"
-				}
-				
-				iconType = {
-					name = "show_power_balance_glow"
-					position = { x = 0 y = 0 }
-					quadTextureSprite = "GFX_bop_glow_effect"
-					alwaystransparent = yes
-				}
-	
-				instantTextboxType = {
-					name = "power_balance_percentage"
-					format = center
-					position = { x = 40 y = 10 }
-					font = "hoi_16mbs"
-					text = "90%"
-					fixedsize = yes
-					maxWidth = 100				
-					maxHeight = 20
-					alwaystransparent = yes
-				}	
-				
-				instantTextboxType = {
-					name = "power_balance_levels"
-					format = center
-					position = { x = 40 y = 25 }
-					font = "hoi_16mbs"
-					text = "3/5"
-					fixedsize = yes
-					maxWidth = 100				
-					maxHeight = 20
-					alwaystransparent = yes
-				}	
-				
-				iconType = {
-					name = "power_balance_ICON"
-					position = { x = 12 y = 4 }
-					quadTextureSprite = "GFX_placeholder_bordered"
-					alwaystransparent = yes				
-					scale = 0.55
-				}
-			}
+			################
+			################
+			#################
+			################
+			##############
+			
 		}
 		iconType = {
 			name = "leader"
@@ -535,7 +491,56 @@ guiTypes = {
 				format = "UPPER_LEFT"
 			}
 
-
+			containerWindowType = {
+				name = "power_balance_button"
+				position = { x = 400 y = 260 }
+				clipping = no
+	
+				buttonType = {
+					name = "show_power_balance"
+					position = { x = 0 y = 0 }
+					quadTextureSprite = "GFX_show_power_balance_button"
+				}
+				
+				iconType = {
+					name = "show_power_balance_glow"
+					position = { x = 0 y = 0 }
+					quadTextureSprite = "GFX_bop_glow_effect"
+					alwaystransparent = yes
+				}
+	
+				instantTextboxType = {
+					name = "power_balance_percentage"
+					format = center
+					position = { x = 40 y = 10 }
+					font = "hoi_16mbs"
+					text = "90%"
+					fixedsize = yes
+					maxWidth = 100				
+					maxHeight = 20
+					alwaystransparent = yes
+				}	
+				
+				instantTextboxType = {
+					name = "power_balance_levels"
+					format = center
+					position = { x = 40 y = 25 }
+					font = "hoi_16mbs"
+					text = "3/5"
+					fixedsize = yes
+					maxWidth = 100				
+					maxHeight = 20
+					alwaystransparent = yes
+				}	
+				
+				iconType = {
+					name = "power_balance_ICON"
+					position = { x = 12 y = 4 }
+					quadTextureSprite = "GFX_placeholder_bordered"
+					alwaystransparent = yes				
+					scale = 0.75
+				}
+			}
 		}
 
 		iconType ={

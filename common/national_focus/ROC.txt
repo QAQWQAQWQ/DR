@@ -1,0 +1,112 @@
+
+#!gfx:interface\RS_icon.gfx
+focus_tree = {
+	id = ROC
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ROC
+		}
+	}
+	default = no
+	focus = {
+	id = ROC_focus_0
+	icon = GFX_goal_ROC_focus_0
+	cost = 1.00
+	x = 9 
+	y = 0
+    completion_reward = {
+	add_political_power = 100
+    }
+	}
+	focus = {
+		id = ROC_focus_1 
+		icon = GFX_goal_ROC_focus_1 
+		cost = 1.00
+		x = 9 
+		y = 1
+		prerequisite = {
+			focus = ROC_focus_0
+		}
+		completion_reward = {
+		add_political_power = 100
+		}
+	}
+	focus = {
+		id = ROC_focus_2 
+		icon = GFX_goal_ROC_focus_2 
+		cost = 1.00
+		x = 8 
+		y = 2
+		prerequisite = {
+			focus = ROC_focus_1
+		}
+		completion_reward = {
+		add_political_power = 100
+		}
+	} 
+	focus = {
+		id = ROC_focus_3
+		icon = GFX_goal_ROC_focus_3 
+		cost = 1.00
+		x = 10 
+		y = 2
+		prerequisite = {
+			focus = ROC_focus_1
+		}
+		completion_reward = {
+		add_political_power = 100
+		}
+	}
+	focus = {
+		id = ROC_focus_4
+		icon = GFX_goal_ROC_focus_4
+		cost = 1.00
+		x = 16
+		y = 3
+		prerequisite = {
+			focus = ROC_focus_3
+		}
+		prerequisite = {
+			focus = ROC_focus_2
+		}
+		completion_reward = {
+		add_political_power = 100
+		}
+	}
+	focus = {
+		id = ROC_focus_5
+		icon = GFX_goal_ROC_focus_5
+		cost = 1.00
+		x = 9
+		y = 3
+		prerequisite = {
+			focus = ROC_focus_3
+		}
+		prerequisite = {
+			focus = ROC_focus_2
+		}
+		completion_reward = {
+		add_political_power = 100
+		}
+	}
+	focus = {
+		id = ROC_focus_6
+		icon = GFX_goal_ROC_focus_6
+		cost = 1.00
+		x = 3
+		y = 3
+		prerequisite = {
+			focus = ROC_focus_3
+		}
+		prerequisite = {
+			focus = ROC_focus_2
+		}
+		completion_reward = {
+		add_political_power = 100
+		}
+	}
+}
+
+

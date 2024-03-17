@@ -1,24 +1,24 @@
 characters={
-	SJR_Song_JiaoRen={
-		name=SJR_Song_JiaoRen
+	ROC_Song_JiaoRen={
+		name=ROC_Song_JiaoRen
 		portraits={
 			civilian={
-				large="gfx/leaders/SJR/portrait_Song_JiaoRen.tga"
+				large="gfx/leaders/ROC/portrait_Song_JiaoRen.tga"
 			}
 		}
 		country_leader={
 			ideology=Social_Reformism
-			desc=SJR_Song_JiaoRen_DESC
+			desc=ROC_Song_JiaoRen_DESC
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
 		}
 	}
-	SJR_LiaoZhongKai={
-		name=SJR_LiaoZhongKai
+	ROC_LiaoZhongKai={
+		name=ROC_LiaoZhongKai
 		portraits={
 			civilian={
-				large="gfx/leaders/SJR/portrait_LiaoZhongKai.tga"
+				large="gfx/leaders/ROC/portrait_LiaoZhongKai.tga"
 			}
 		}
 		country_leader={
@@ -28,11 +28,11 @@ characters={
 			id=-1
 		}
 	}
-	SJR_ZhangZhiZhong={
-		name=SJR_ZhangZhiZhong
+	ROC_ZhangZhiZhong={
+		name=ROC_ZhangZhiZhong
 		portraits={
 			army={
-				large="gfx/leaders/SJR/portrait_ZhangZhiZhong.tga"
+				large="gfx/leaders/ROC/portrait_ZhangZhiZhong.tga"
 				small="gfx/interface/ideas/portrait_ZhangZhiZhong.dds"
 			}
 		}
@@ -45,8 +45,8 @@ characters={
 			logistics_skill=2
 		}
 	}
-	SJR_JiangBaiLi={
-		name=SJR_JiangBaiLi
+	ROC_JiangBaiLi={
+		name=ROC_JiangBaiLi
 		portraits={
 			army={
 				small="GFX_idea_JiangBaiLi"
@@ -54,10 +54,10 @@ characters={
 		}
 		advisor={
 			slot = theorist
-			idea_token = SJR_JiangBaiLi
+			idea_token = ROC_JiangBaiLi
 			ledger = army
 			allowed = {
-				original_tag = SJR
+				original_tag = ROC
 			}
 			traits = {
 				military_theorist
@@ -68,8 +68,8 @@ characters={
 			}
 		}
 	}
-	SJR_SunKe={
-		name=SJR_SunKe
+	ROC_SunKe={
+		name=ROC_SunKe
 		portraits={
 			army={
 				small="GFX_idea_SunKe"
@@ -77,9 +77,9 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = SJR_SunKe
+			idea_token = ROC_SunKe
 			allowed = {
-				original_tag = SJR
+				original_tag = ROC
 			}
 			traits = {
 				resolute_social_democrat
@@ -90,8 +90,8 @@ characters={
 			}
 		}
 	}
-	SJR_SongQingLing={
-		name=SJR_SongQingLing
+	ROC_SongQingLing={
+		name=ROC_SongQingLing
 		portraits={
 			army={
 				small="GFX_idea_SongQingLing"
@@ -99,9 +99,9 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = SJR_SongQingLing
+			idea_token = ROC_SongQingLing
 			allowed = {
-				original_tag = SJR
+				original_tag = ROC
 			}
 			traits = {
 				first_lady
@@ -113,8 +113,8 @@ characters={
 			}
 		}
 	}
-	SJR_ZhangXiaoHuang={
-		name=SJR_ZhangXiaoHuang
+	ROC_ZhangXiaoHuang={
+		name=ROC_ZhangXiaoHuang
 		portraits={
 			army={
 				small="GFX_idea_ZhangXiaoHuang"
@@ -122,9 +122,9 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = SJR_ZhangXiaoHuang
+			idea_token = ROC_ZhangXiaoHuang
 			allowed = {
-				original_tag = SJR
+				original_tag = ROC
 			}
 			traits = {
 				financial_expert
@@ -135,8 +135,8 @@ characters={
 			}
 		}
 	}
-	SJR_TanYouRen={
-		name=SJR_TanYouRen
+	ROC_TanYouRen={
+		name=ROC_TanYouRen
 		portraits={
 			army={
 				small="GFX_idea_TanYouRen"
@@ -144,9 +144,9 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = SJR_TanYouRen
+			idea_token = ROC_TanYouRen
 			allowed = {
-				original_tag = SJR
+				original_tag = ROC
 			}
 			traits = {
 				smooth_talking_charmer

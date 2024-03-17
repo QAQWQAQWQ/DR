@@ -4,7 +4,7 @@
 # Political advisors
 #every_possible_country = {
 	#limit = {
-	#	NOT = { OR = { tag = WWS tag = ENL tag = SHW original_tag = FRW tag = ITE tag = JAN tag = UBS tag = ASZ tag = SJR  tag = ZHX tag = CPC } }
+	#	NOT = { OR = { tag = WWS tag = ENL tag = SHW original_tag = FRW tag = ITE tag = JAN tag = UBS tag = ASZ tag = ROC  tag = ZHX tag = CPC } }
 	#	# avoid generic advisors in temporary countries
 	#	is_dynamic_country = no
 	#	NOT = {
@@ -45,7 +45,7 @@
 
 #every_possible_country = {
 	#limit = {
-	#	NOT = { OR = { tag = WWS tag = ENL tag = SHW original_tag = FRW tag = ITE tag = JAN tag = UBS tag = ASZ tag = SJR  tag = ZHX tag = CPC } }
+	#	NOT = { OR = { tag = WWS tag = ENL tag = SHW original_tag = FRW tag = ITE tag = JAN tag = UBS tag = ASZ tag = ROC  tag = ZHX tag = CPC } }
 	#	is_dynamic_country = no
 	#	NOT = {
 	#		has_allowed_idea_with_traits = { idea = democratic_reformer characters = yes }
@@ -88,7 +88,7 @@
 
 #every_possible_country = {
 	#limit = {
-	#	NOT = { OR = { tag = WWS tag = ENL tag = SHW original_tag = FRW tag = ITE tag = JAN tag = UBS tag = ASZ tag = SJR  tag = ZHX tag = CPC } }
+	#	NOT = { OR = { tag = WWS tag = ENL tag = SHW original_tag = FRW tag = ITE tag = JAN tag = UBS tag = ASZ tag = ROC  tag = ZHX tag = CPC } }
 	#	is_dynamic_country = no
 	#	NOT = {
 	#		has_allowed_idea_with_traits = { idea = fascist_demagogue characters = yes }
@@ -141,7 +141,7 @@
 		#		tag = TUR
 		#	}
 		#}
-	#	NOT = { OR = { tag = WWS tag = ENL tag = SHW original_tag = FRW tag = ITE tag = JAN tag = UBS tag = ASZ tag = SJR  tag = ZHX tag = CPC } }
+	#	NOT = { OR = { tag = WWS tag = ENL tag = SHW original_tag = FRW tag = ITE tag = JAN tag = UBS tag = ASZ tag = ROC  tag = ZHX tag = CPC } }
 	#	NOT = {
 	#		has_allowed_idea_with_traits = { idea = head_of_intelligence characters = yes }
 	#	}
