@@ -86,8 +86,13 @@ completion_reward = {
 		y = 2
 completion_reward = {
 hidden_effect = {
-	country_event = {id=KLD.4 days=15}
-	country_event = {id=KLD.6 days=45}
+	country_event = {id=KLD.4 days=1}
+	AOX={
+		country_event = {id=KLD.6 days=6}
+	}
+	KLD={
+		country_event = {id=KLD.6 days=6}
+	}
 }
 		add_popularity = {
 			ideology = Conservatism
@@ -112,6 +117,9 @@ hidden_effect = {
 		}
 		prerequisite = {
 			focus = KLD_focus_3
+		}
+		available = {
+			has_country_flag = KLD_6
 		}
 		x = 9
 		y = 4

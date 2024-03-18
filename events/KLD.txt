@@ -87,15 +87,19 @@ country_event = {
 	desc = KLD.6.d
 	picture = GFX_KLD_6
 	is_triggered_only = yes
-	fire_only_once = yes
+	fire_only_once = no
+	immediate = {
+		hidden_effect = {
+		set_country_flag = KLD_6
+		KLD={
+			kill_country_leader = yes
+		}
+		}
+	}
 	trigger = {
 		}
 	option = {
 		name = KLD.6.a
-		KLD={
-			kill_country_leader = yes
-		}
-		country_event = {id=KLD.7 days=5}
 		}
 	}
 country_event = {
@@ -113,7 +117,6 @@ country_event = {
 		}
 	option = {
 		name = KLD.7.b
-		country_event = {id=KLD.8 days=5}
 		}
 	}
 country_event = {

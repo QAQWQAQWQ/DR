@@ -544,13 +544,15 @@ country_event = {
 			}
 			add_core_of = DMT
 		}
-		DMT = { annex_country = { target = KLD transfer_troops = yes } }
+		DMT = { annex_country = { target = KLD transfer_troops = yes } 
+	    set_cosmetic_tag = KLD_new_name
+	}
 		custom_effect_tooltip = more_cro_aus_hun_sup_30
 				add_to_variable = {
 					var = AOX.aus_hun_gov_sup^8
 					value = 30
-				}
-				aushun_clamp_vars = yes	
+		}
+		aushun_clamp_vars = yes	
 	}
 }
 country_event = {

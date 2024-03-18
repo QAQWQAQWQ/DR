@@ -16,6 +16,15 @@ add_opinion_modifier = {
 	modifier = Confederate_pretenders
 }
 
+
+recruit_character = AOX_Johann_Schober
+recruit_character = AOX_Karl_Johann_Kautsky
+
+
+
+
+
+
 recruit_character = AOX_Archduke_Ferdinand
 recruit_character = AGN_Adolf_Hitler
 recruit_character = AGN_Arthur_Seyss_Inquart
@@ -42,8 +51,11 @@ recruit_character = AOX_Franz_Rohr_von_Denta
 
 recruit_character = AOX_Alexander_Freiherr_von_Krobatin
 
-
-
+recruit_character = AOX_Ignaz_Seipel
+recruit_character = AOX_Otto_Bauer
+recruit_character = AOX_Ferdinand_Hanusch
+recruit_character = AOX_Rudolf_Ramek
+recruit_character = AOX_Rudolf_Hilferding
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
