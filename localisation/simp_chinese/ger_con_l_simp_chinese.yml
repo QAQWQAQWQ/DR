@@ -161,3 +161,11 @@
     MAPMODE_STATE_LITERACY_POP_MAP_MODE_NAME:0 "地区识字率"
     MAPMODE_STATE_LITERACY_POP_MAP_MODE_DESCRIPTION:0 "地区识字率"
     state_literacy_pop_map_mode_tooltip:0 "地区识字率"
+
+    MAPMODE_SPHERE_MAP_MODE:0 "势力范围·"
+    MAPMODE_SPHERE_MAP_MODE_NAME:0 "势力范围"
+    MAPMODE_SPHERE_MAP_MODE_DESCRIPTION:0 "势力范围"
+    sphere_map_mode_tooltip:0 "[FROM.controller.sphere_texts]"
+    sphere_texts_great_power:0 "[FROM.controller.GetNameWithFlag]是一个列强"
+    sphere_texts_in_sphere:0 "[FROM.controller.GetNameWithFlag]是一个列强的势力范围"
+    sphere_texts_no_sphere:0 "[FROM.controller.GetNameWithFlag]不是列强也不在任何人的势力范围中"

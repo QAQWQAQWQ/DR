@@ -1,0 +1,163 @@
+on_actions = {
+	on_startup = {
+		effect = {
+            every_country = {
+                set_variable = {
+                    is_a_gerat_power = 0
+                }
+                set_variable = {
+                    in_a_sphere = 0
+                }
+                set_variable = {
+                    sphere_country = AOX
+                }
+            }
+
+            AOX = {
+                set_variable = {
+                    is_a_gerat_power = 1
+                }
+                set_variable = {
+                    sphere_country = AOX
+                }
+            }
+            BXM = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = AOX
+                }
+            }
+            VCT = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = AOX
+                }
+            }
+            KLD = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = AOX
+                }
+            }
+            DMT = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = AOX
+                }
+            }
+            KOH = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = AOX
+                }
+            }
+            KGL = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = AOX
+                }
+            }
+            SIW = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = AOX
+                }
+            }
+            ALB = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = AOX
+                }
+            }
+            WWS = {
+                set_variable = {
+                    is_a_gerat_power = 1
+                }
+                set_variable = {
+                    sphere_country = WWS
+                }
+            }
+            DOL = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = WWS
+                }
+            }
+            SHW = {
+                set_variable = {
+                    is_a_gerat_power = 1
+                }
+                set_variable = {
+                    sphere_country = SHW
+                }
+            }
+            FEL = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = SHW
+                }
+            }
+            LMN = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = SHW
+                }
+            }
+            BOJ = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = SHW
+                }
+            }
+            FRW = {
+                set_variable = {
+                    is_a_gerat_power = 1
+                }
+                set_variable = {
+                    sphere_country = FRW
+                }
+            }
+            ENL = {
+                set_variable = {
+                    is_a_gerat_power = 1
+                }
+                set_variable = {
+                    sphere_country = ENL
+                }
+            }
+            UBS = {
+                set_variable = {
+                    is_a_gerat_power = 1
+                }
+                set_variable = {
+                    sphere_country = UBS
+                }
+            }
+
+        }            
+    }
+}
