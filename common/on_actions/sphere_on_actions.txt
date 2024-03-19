@@ -21,54 +21,6 @@ on_actions = {
                     sphere_country = AOX
                 }
             }
-            BXM = {
-                set_variable = {
-                    in_a_sphere = 1
-                }
-                set_variable = {
-                    sphere_country = AOX
-                }
-            }
-            VCT = {
-                set_variable = {
-                    in_a_sphere = 1
-                }
-                set_variable = {
-                    sphere_country = AOX
-                }
-            }
-            KLD = {
-                set_variable = {
-                    in_a_sphere = 1
-                }
-                set_variable = {
-                    sphere_country = AOX
-                }
-            }
-            DMT = {
-                set_variable = {
-                    in_a_sphere = 1
-                }
-                set_variable = {
-                    sphere_country = AOX
-                }
-            }
-            KOH = {
-                set_variable = {
-                    in_a_sphere = 1
-                }
-                set_variable = {
-                    sphere_country = AOX
-                }
-            }
-            KGL = {
-                set_variable = {
-                    in_a_sphere = 1
-                }
-                set_variable = {
-                    sphere_country = AOX
-                }
-            }
             SIW = {
                 set_variable = {
                     in_a_sphere = 1
@@ -78,6 +30,30 @@ on_actions = {
                 }
             }
             ALB = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = AOX
+                }
+            }
+            ITE = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = AOX
+                }
+            }
+            PMA = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = AOX
+                }
+            }
+            TCY = {
                 set_variable = {
                     in_a_sphere = 1
                 }
@@ -109,14 +85,6 @@ on_actions = {
                     sphere_country = SHW
                 }
             }
-            FEL = {
-                set_variable = {
-                    in_a_sphere = 1
-                }
-                set_variable = {
-                    sphere_country = SHW
-                }
-            }
             LMN = {
                 set_variable = {
                     in_a_sphere = 1
@@ -141,6 +109,14 @@ on_actions = {
                     sphere_country = FRW
                 }
             }
+            BHL = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = FRW
+                }
+            }
             ENL = {
                 set_variable = {
                     is_a_gerat_power = 1
@@ -158,6 +134,100 @@ on_actions = {
                 }
             }
 
+            every_country = {
+                limit = {
+                    check_variable = {
+                        is_a_gerat_power = 1
+                    }
+                }
+                every_subject_country = {
+                    set_variable = {
+                        in_a_sphere = 1
+                    }
+                    set_variable = {
+                        sphere_country = PREV
+                    }
+                }
+            }
+            
+            every_country = {
+                limit = {
+                    AND = {        
+                        check_variable = { is_a_gerat_power = 0 }
+                        OR = {
+                            original_tag = AGC
+                            original_tag = LSB
+                            original_tag = DHD
+                            original_tag = DON
+                            original_tag = DOF
+                            original_tag = DOB
+                            original_tag = DOR
+                            original_tag = BXM
+                            original_tag = DOL
+                            original_tag = DOH
+                            original_tag = DOA
+                            original_tag = DOM
+                            original_tag = DOS
+                        }
+                    }
+                }
+                if = {
+                    limit = {
+                        ger_con_uni_tri_pre = yes
+                    }
+                    set_variable = {
+                        in_a_sphere = 1
+                    }
+                    set_variable = {
+                        sphere_country = WWS
+                    }
+                }
+                if = {
+                    limit = {
+                        ger_con_uni_tri_aus = yes
+                    }
+                    set_variable = {
+                        in_a_sphere = 1
+                    }
+                    set_variable = {
+                        sphere_country = AOX
+                    }
+                }
+            }
+            every_country = {
+                limit = {
+                    OR = {
+						   tag = SAA
+						   tag = SAB
+						   tag = SAC
+						   tag = SAD
+						   tag = SAE
+						   tag = SAF
+						   tag = SAG
+                    }
+                }
+                if = {
+                    limit = {
+                        AND = {
+                            check_variable = { is_a_gerat_power = 0 }
+                            OR = {
+                                check_variable = {
+                                    DOS.in_a_sphere = 1
+                                }
+                                check_variable = {
+                                    DOS.is_a_gerat_power = 1
+                                }
+                            }
+                        }
+                    }
+                    set_variable = {
+                        in_a_sphere = 1
+                    }
+                    set_variable = {
+                        sphere_country = DOS.sphere_country
+                    }
+                }
+            }
         }            
     }
 }

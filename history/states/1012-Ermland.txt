@@ -1,0 +1,23 @@
+
+state={
+	id=1012
+	name="STATE_1012"
+	manpower = 138108
+	state_category = town
+
+	history={
+		owner = WWS
+		controller = WWS
+		
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = WWS
+	}
+
+	provinces={
+		3380 6402 9398 11245 
+	}
+
+	local_supplies=12.0 
+}
