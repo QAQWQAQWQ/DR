@@ -1,10 +1,26 @@
 #使关闭阵营按钮可见，修改188行
 #临时按钮在545行
 guiTypes = {
+
+	containerWindowType = {
+		name = "lin_shi_win_bg"
+		position = { x = -170 y = -170 }
+		size = { width = 500 height = 500 }
+		orientation = CENTER
+		origo = center
+		clipping = no
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_tiled_window2_1b_border"
+		}
+	}
+
+
+
 	containerWindowType = {
 		name = "countrypoliticsview"
 		position = { x=-606 y=78}	
-		show_position = { x=-6 y =78 }
+		show_position = { x=-2 y =78 }
 		
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
@@ -283,7 +299,7 @@ guiTypes = {
 #			quadTextureSprite = "GFX_subject_button"
 #		}
 		
-		
+
 		containerWindowType = {
 			name = "national_spirit"
 			position = { x = 81 y = 145 }
@@ -546,15 +562,28 @@ guiTypes = {
 				name = "lin_shi_win"
 				position = { x = 400 y = 260 }
 				clipping = no
-	
 				buttonType = {
 					name = "lin_shi_win_on"
 					position = { x = -290 y = 0 }
 					size = { width= 278 height=60 }
 					spriteType ="GFX_lin_shi_win_an_niu"
 					frame = 2
+					pdx_tooltip="National_Parliament_desc"
+				}
+				instantTextboxType = {
+					name = "lin_shi_win_name"
+					format = center
+					position = { x = -220 y = 25 }
+					font = "hoi_16mbs"  
+					text = "National_Parliament"
+					fixedsize = yes
+					maxWidth = 140				
+					maxHeight = 20
+					alwaystransparent = yes
 				}
 			}
+			####
+			
 		}
 
 		iconType ={
@@ -671,6 +700,9 @@ guiTypes = {
 			spriteType = "GFX_icon_occupied_territories"
 			position = { x = 116 y = 12 }
 		}
+
+
+		
 	}
 	
 	containerWindowType = {
@@ -793,7 +825,7 @@ guiTypes = {
 					format = "UPPER_LEFT"
 				}
 			}
-
+			
 		}
 		
 		buttonType = {
