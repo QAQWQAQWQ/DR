@@ -677,5 +677,15 @@ spriteTypes = {
 		alwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
 	}
-	
+
+	frameAnimatedSpriteType = {
+		name = "GFX_lin_shi_win_an_niu"
+		texturefile = "gfx/interface/GUI/按钮.png"
+		noOfFrames = 2
+		animation_rate_fps = 1
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
 }

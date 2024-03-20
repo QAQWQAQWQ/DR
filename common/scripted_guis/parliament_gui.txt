@@ -52,3 +52,39 @@ scripted_gui = {
 		}
 	}
 }
+scripted_gui = {
+	parliament_mian = {
+		context_type = player_context
+		window_name = "lin_shi_win_bg"
+		visible = {
+			has_country_flag = lin_shi_win_on
+		}
+		dynamic_lists = {
+			
+		}
+		effects = {
+			
+		}
+		triggers = {
+			
+		}
+		properties = {
+		
+		}
+	}
+	parliament_mian_button = {
+		context_type = player_context
+		window_name = "lin_shi_win"
+		#parent_window_name = "countrypoliticsview"
+		visible = {
+			
+		}
+		effects = {
+			lin_shi_win_on_click = {
+
+				add_political_power = 111
+				set_country_flag = lin_shi_win_on
+			}
+		}
+	}
+}
