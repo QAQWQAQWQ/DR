@@ -1,5 +1,5 @@
 #使关闭阵营按钮可见，修改188行
-#临时按钮在543行
+#临时按钮在545行
 guiTypes = {
 	containerWindowType = {
 		name = "countrypoliticsview"
@@ -541,6 +541,12 @@ guiTypes = {
 					alwaystransparent = yes				
 					scale = 0.75
 				}
+			}
+			containerWindowType = {
+				name = "lin_shi_win"
+				position = { x = 400 y = 260 }
+				clipping = no
+	
 				buttonType = {
 					name = "lin_shi_win_on"
 					position = { x = -290 y = 0 }
