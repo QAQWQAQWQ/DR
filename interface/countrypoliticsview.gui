@@ -540,6 +540,13 @@ guiTypes = {
 					alwaystransparent = yes				
 					scale = 0.75
 				}
+				buttonType = {
+					name = "lin_shi_win_on"
+					position = { x = -290 y = 0 }
+					size = { width= 278 height=60 }
+					spriteType ="GFX_lin_shi_win_an_niu"
+					frame = 2
+				}
 			}
 		}
 
