@@ -5,11 +5,19 @@ state={
 	manpower = 400000
 	
 	state_category = pastoral
+	resources={
+		aluminium=4
+	}
+	resources={
+		grain=7
+		
+	}
 
 	history={
 		owner = KLD
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 1
 		}
 		add_core_of = KLD
 	}

@@ -133,23 +133,14 @@ on_actions = {
                     sphere_country = UBS
                 }
             }
-
             every_country = {
                 limit = {
                     check_variable = {
                         is_a_gerat_power = 1
                     }
                 }
-                every_subject_country = {
-                    set_variable = {
-                        in_a_sphere = 1
-                    }
-                    set_variable = {
-                        sphere_country = PREV
-                    }
-                }
+                upd_subject_sphere = yes
             }
-            
             every_country = {
                 limit = {
                     AND = {        
@@ -174,23 +165,45 @@ on_actions = {
                 if = {
                     limit = {
                         ger_con_uni_tri_pre = yes
+                        AND = {
+                            check_variable = { is_a_gerat_power = 0 }
+                            OR = {
+                                check_variable = {
+                                    WWS.in_a_sphere = 1
+                                }
+                                check_variable = {
+                                    WWS.is_a_gerat_power = 1
+                                }
+                            }
+                        }
                     }
                     set_variable = {
                         in_a_sphere = 1
                     }
                     set_variable = {
-                        sphere_country = WWS
+                        sphere_country = WWS.sphere_country
                     }
                 }
                 if = {
                     limit = {
                         ger_con_uni_tri_aus = yes
+                        AND = {
+                            check_variable = { is_a_gerat_power = 0 }
+                            OR = {
+                                check_variable = {
+                                    AOX.in_a_sphere = 1
+                                }
+                                check_variable = {
+                                    AOX.is_a_gerat_power = 1
+                                }
+                            }
+                        }
                     }
                     set_variable = {
                         in_a_sphere = 1
                     }
                     set_variable = {
-                        sphere_country = AOX
+                        sphere_country = AOX.sphere_country
                     }
                 }
             }
@@ -228,6 +241,7 @@ on_actions = {
                     }
                 }
             }
+            
         }            
     }
 }

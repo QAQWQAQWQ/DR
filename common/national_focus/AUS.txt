@@ -161,6 +161,7 @@ focus_tree = {
 			LSB = { gercon_add_aus_sup = yes }
 			gercon_upd_pbv_var = yes
 			gercon_clamp_vars = yes
+      		upd_german_sphere = yes
 		}
 		available = {
 
@@ -184,6 +185,7 @@ focus_tree = {
 			DOF = { gercon_add_aus_sup = yes } 
 			gercon_upd_pbv_var = yes
 			gercon_clamp_vars = yes
+      		upd_german_sphere = yes
 		}
 		available = {
 		}
@@ -235,6 +237,7 @@ focus_tree = {
 			}
 			gercon_upd_pbv_var = yes
 			gercon_clamp_vars = yes
+     		upd_german_sphere = yes
 		}
 		available = {
 
@@ -669,6 +672,7 @@ focus_tree = {
 			DOL = { gercon_del_pre_sup = yes }
 			gercon_upd_pbv_var = yes
 			gercon_clamp_vars = yes
+			upd_german_sphere = yes
 		}
 		available = {
 			has_completed_focus = AUS_ger_2
@@ -766,7 +770,6 @@ focus_tree = {
 		x = 17
 		y = 2
 		completion_reward = {
-			country_event = {id=KLD.7 days=5}
 			hidden_effect = {
 				set_variable = {
 					global.bosnia_contradictions = 1

@@ -193,6 +193,7 @@ aus_hun_decisions = {
 				original_tag = AOX
 			}
 			aus_hun_occ_tri = yes
+			aus_hun_aut_tri = yes
 		}
 		cost = 30
 		fire_only_once = no
@@ -216,6 +217,7 @@ aus_hun_decisions = {
 				original_tag = AOX
 			}
 			aus_hun_occ_tri = yes
+			aus_hun_aut_tri = yes
 		}
 		cost = 30
 		fire_only_once = no
@@ -239,6 +241,7 @@ aus_hun_decisions = {
 				original_tag = AOX
 			}
 			aus_hun_occ_tri = yes
+			aus_hun_aut_tri = yes
 		}
 		cost = 30
 		fire_only_once = no
@@ -262,6 +265,7 @@ aus_hun_decisions = {
 				original_tag = AOX
 			}
 			aus_hun_occ_tri = yes
+			aus_hun_aut_tri = yes
 		}
 		cost = 30
 		fire_only_once = no
@@ -285,6 +289,7 @@ aus_hun_decisions = {
 				original_tag = AOX
 			}
 			aus_hun_occ_tri = yes
+			aus_hun_aut_tri = yes
 		}
 		cost = 30
 		fire_only_once = no
@@ -308,6 +313,7 @@ aus_hun_decisions = {
 				original_tag = AOX
 			}
 			aus_hun_occ_tri = yes
+			aus_hun_aut_tri = yes
 		}
 		cost = 30
 		fire_only_once = no
@@ -331,6 +337,7 @@ aus_hun_decisions = {
 				original_tag = AOX
 			}
 			aus_hun_occ_tri = yes
+			aus_hun_aut_tri = yes
 		}
 		cost = 30
 		fire_only_once = no
@@ -354,6 +361,7 @@ aus_hun_decisions = {
 				original_tag = AOX
 			}
 			aus_hun_occ_tri = yes
+			aus_hun_aut_tri = yes
 		}
 		cost = 30
 		fire_only_once = no
@@ -377,6 +385,7 @@ aus_hun_decisions = {
 				original_tag = AOX
 			}
 			aus_hun_occ_tri = yes
+			aus_hun_aut_tri = yes
 		}
 		cost = 30
 		fire_only_once = no
@@ -972,6 +981,21 @@ aus_hun_decisions = {
 				add_claim_by = AOX
 			}
 			804 = {
+				add_claim_by = AOX
+			}
+			1018 = {
+				add_claim_by = AOX
+			}
+			1014 = {
+				add_claim_by = AOX
+			}
+			1015 = {
+				add_claim_by = AOX
+			}
+			1016 = {
+				add_claim_by = AOX
+			}
+			1017 = {
 				add_claim_by = AOX
 			}
 			add_political_power = 120
