@@ -1735,6 +1735,10 @@ bosnia_war_end = yes
 					transfer_state = 84
 					add_state_core = 84
 				}
+				DMT={
+					transfer_state = 918
+					add_state_core = 918
+				}
 				AOX = {
 					set_autonomy = { target = TRA autonomy_state = autonomy_Crown_Territory }
 				}
@@ -1745,14 +1749,14 @@ bosnia_war_end = yes
 			}
 			SLO = {
 				set_politics = {
-					ruling_party = Liberalism
+					ruling_party = Conservatism
 				}
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
 			}
 			TRA = {
 				set_politics = {
-					ruling_party = Liberalism
+					ruling_party = Conservatism
 				}
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
