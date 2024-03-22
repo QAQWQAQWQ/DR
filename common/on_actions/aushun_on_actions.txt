@@ -214,6 +214,7 @@ on_actions = {
                 DMT = { transfer_state = 104 }
                 DMT = { transfer_state = 804 }
                 DMT = { transfer_state = 918 }
+                DMT = { transfer_state = 1018 }
                 bos_war_end_qwq = yes
                 AOX = {
                     country_event = aushun.3
@@ -313,6 +314,7 @@ on_actions = {
                 DMT = { transfer_state = 103 }
                 DMT = { transfer_state = 804 }
                 DMT = { transfer_state = 918 }
+                DMT = { transfer_state = 1018 }
                 
                 AOX = {
                     set_autonomy = { target = DMT autonomy_state = autonomy_Crown_Territory }

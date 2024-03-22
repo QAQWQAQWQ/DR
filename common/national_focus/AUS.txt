@@ -1375,6 +1375,8 @@ bosnia_war_end = yes
 					add_state_core = 45
 					transfer_state = 764
 					add_state_core = 764
+                	transfer_state = 1018
+					add_state_core = 1018
 				}
 			}
 				TRA = {
@@ -2415,11 +2417,12 @@ bosnia_war_end = yes
 		x = 17
 		y = 6
 		allow_branch={ 
-			bosnia_war_end_tri_tool = yes
 			has_completed_focus = AUS_bir_15
+			bosnia_war_end_tri_tool = yes
 			OR = {
 				has_completed_focus = AUS_ger_1
 				has_completed_focus = AUS_ger_2
+				has_completed_focus = AUS_ger_3
 			}
 			NOT = {
 				has_completed_focus = AUS_HRE_0
@@ -2637,7 +2640,20 @@ bosnia_war_end = yes
 		available = {
 		}
 		completion_reward = {
-
+			AOX = {
+				every_subject_country = {
+					limit = {
+						aus_hun_part_of_the_Empire = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = PREV
+						}
+						add_core_of = AOX
+					}
+					AOX = { annex_country = { target = PREV transfer_troops = yes }  }
+				}
+			}
 		}
 	}
 	focus = {
