@@ -1,4 +1,5 @@
 upd_subject_sphere = {
+	hidden_effect = {
     every_subject_country = {
         set_variable = {
             in_a_sphere = 1
@@ -7,8 +8,10 @@ upd_subject_sphere = {
             sphere_country = PREV
         }
     }
+    }
 }
 upd_german_sphere = {
+	hidden_effect = {
             every_country = {
                 limit = {
                     AND = {        
@@ -109,4 +112,5 @@ upd_german_sphere = {
                     }
                 }
             }
+    }
 }
