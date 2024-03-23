@@ -1,0 +1,229 @@
+ideas = {
+
+	Legal = {
+		law = yes
+		use_list_view = yes
+
+		Syndicate_economy = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+
+			modifier = {
+				government_investment_modifier=1.250
+				factory_produced_modifier=0.200
+				core_government_organs_modifier=-0.120
+				tax_from_company_modifier=-0.120
+				tax_from_consumption_modifier=-0.120
+				market_available_for_dumping_modifier=0.150
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+
+					is_major = yes
+				}
+				modifier = {
+					has_war_support > 0.25
+					factor = 0 #don't even look at it if you could be taking partial mob
+				}
+   			}
+		}
+		Smallholder_economy = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			cost = 0
+			removal_cost = -1
+
+			modifier = {
+				government_investment_modifier=2.550
+				factory_produced_modifier=-0.150
+				core_government_organs_modifier=0.220
+				tax_from_company_modifier=0.320
+				tax_from_consumption_modifier=0.320
+				market_available_for_dumping_modifier=0.100
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+
+					is_major = yes
+				}
+				modifier = {
+					has_war_support > 0.25
+					factor = 0 #don't even look at it if you could be taking partial mob
+				}
+   			}
+		}
+		
+		Corporate_economy = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+			modifier = {
+				government_investment_modifier=2.450
+				factory_produced_modifier=0.300
+				domestic_investment_modifier=1.250
+				core_government_organs_modifier=-0.150
+				market_available_for_dumping_modifier=0.450
+				market_available_for_dumping_modifier=0.250
+			}
+			cost = 0
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+					is_major = yes
+				}
+				modifier = {
+					has_war_support > 0.25
+					factor = 0
+				}
+   			}
+		}
+		Market_economy = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+			modifier = {
+				government_investment_modifier=2.150
+				factory_produced_modifier=0.300
+				tax_from_company_modifier=0.420
+				tax_from_consumption_modifier=0.420
+				market_available_for_dumping_modifier=0.450
+			}
+			cost = 0
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+					is_major = yes
+				}
+				modifier = {
+					has_war_support > 0.25
+					factor = 0
+				}
+   			}
+		}
+		Planned_economy = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+
+			modifier={
+				government_investment_modifier=0.230
+				factory_produced_modifier=0.200
+				not_core_government_organs_modifier=-0.120
+				core_government_organs_modifier=-0.250
+				factory_cost_modifier=-0.250
+				tax_from_company_modifier=-0.100
+				tax_from_consumption_modifier=-0.100
+				market_available_for_dumping_modifier=0.100
+			}
+			
+			cost = 0
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+					is_major = yes
+				}
+				modifier = {
+					has_war_support > 0.25
+					factor = 0
+				}
+   			}
+			
+		}
+		Mixed_economy = {
+
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+				}
+			on_add = {
+
+			}
+			modifier = {
+				government_investment_modifier=1.050
+				factory_produced_modifier=0.110
+				tax_from_company_modifier=0.110
+				tax_from_consumption_modifier=0.110
+				market_available_for_dumping_modifier=0.120
+			}
+			cost = 0
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+					is_major = yes
+					
+				}
+   			}
+			
+			  
+		}
+	}
+}

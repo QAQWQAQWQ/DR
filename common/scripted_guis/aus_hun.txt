@@ -1,0 +1,85 @@
+scripted_gui = {
+
+	aus_hun_decisons_ui = {
+		context_type = decision_category
+		window_name = "aus_hun_decisons_ui_window"
+		effects = {
+			aus_hun_aus_click = {
+				ROOT = {
+					set_variable = {
+						aus_hun_nat = 0
+					}
+				}
+			}
+			aus_hun_hun_click = {
+				ROOT = {
+					set_variable = {
+						aus_hun_nat = 1
+					}
+				}
+			}
+			aus_hun_ukr_click = {
+				ROOT = {
+					set_variable = {
+						aus_hun_nat = 2
+					}
+				}
+			}
+			aus_hun_cze_click = {
+				ROOT = {
+					set_variable = {
+						aus_hun_nat = 3
+					}
+				}
+			}
+			aus_hun_pol_click = {
+				ROOT = {
+					set_variable = {
+						aus_hun_nat = 4
+					}
+				}
+			}
+			aus_hun_slo_click = {
+				ROOT = {
+					set_variable = {
+						aus_hun_nat = 5
+					}
+				}
+			}
+			aus_hun_rom_click = {
+				ROOT = {
+					set_variable = {
+						aus_hun_nat = 6
+					}
+				}
+			}
+			aus_hun_ita_click = {
+				ROOT = {
+					set_variable = {
+						aus_hun_nat = 7
+					}
+				}
+			}
+			aus_hun_cro_click = {
+				ROOT = {
+					set_variable = {
+						aus_hun_nat = 8
+					}
+				}
+			}
+			aus_hun_slv_click = {
+				ROOT = {
+					set_variable = {
+						aus_hun_nat = 9
+					}
+				}
+			}
+		}
+		properties={
+		} 
+		
+		ai_enabled = {
+			always = yes
+		}
+	}
+}

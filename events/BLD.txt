@@ -1,0 +1,55 @@
+﻿###########################
+# BLD Events
+###########################
+
+add_namespace = BLD
+news_event = {
+	id = BLD.1
+	title = BLD.1.t
+	desc = BLD.1.d
+	#picture = 
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = BLD.1.a
+		hidden_effect = {
+			LTA= { 
+			transfer_state = 12
+			add_state_core = 12
+			transfer_state = 808
+			add_state_core = 808
+			transfer_state = 810
+			add_state_core = 810
+			transfer_state = 190
+			add_state_core = 190
+			transfer_state = 809
+			add_state_core = 809
+	    }
+		ETA= { 
+			transfer_state = 813
+			add_state_core = 813
+			transfer_state = 191
+			add_state_core = 191
+			transfer_state = 13
+			add_state_core = 13
+			transfer_state = 811
+			add_state_core = 811
+			transfer_state = 812
+			add_state_core = 812
+	    }
+		LHA= { 
+			transfer_state = 815
+			add_state_core = 815
+			transfer_state = 11
+			add_state_core = 11
+			transfer_state = 814
+			add_state_core = 814
+			transfer_state = 188
+			add_state_core = 188
+			transfer_state = 189
+			add_state_core = 189
+	    }
+		}
+	}
+	}
+	

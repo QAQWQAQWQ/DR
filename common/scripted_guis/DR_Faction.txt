@@ -1,0 +1,23 @@
+scripted_gui = {
+
+	DR_Faction_ui = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "DR_Faction_ui_window"
+
+		properties={
+			faction_icon = {
+                image = "[GetFaction]"
+		}
+	}
+}
+    DR_Faction_ui = {
+		context_type = player_context
+		parent_window_token = selected_country_view_diplomacy
+		window_name = "DR_deployment_window"
+		#properties={
+			
+	#}
+}
+
+}

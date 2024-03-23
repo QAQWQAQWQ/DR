@@ -1,0 +1,332 @@
+on_actions = {
+	on_startup= {
+		effect = {
+            set_variable = {
+                global.ger_con_end = 0
+            }
+            set_variable = {
+                global.sax_war = 0
+            }
+            set_variable = {
+                global.sax_war_end = 0
+            }
+            set_variable = {
+                global.ger_con_has_uni = 0
+            }
+            set_variable = {
+                global.aus_win_german_war = 0
+            }
+            set_variable = {
+                global.pre_win_german_war = 0
+            }
+            set_variable = {
+                global.german_war = 0
+            }
+            set_variable = {
+                global.pre_accpect_aus = 0
+            }
+            set_variable = {
+                global.pre_accpect_delineation = 0
+            }
+		    every_country = {
+                limit = {
+                    OR = {
+                        tag = AOX
+                        tag = WWS
+                        tag = AGC
+                        tag = LSB
+                        tag = DHD
+                        tag = DON
+                        tag = DOF
+                        tag = DOB
+                        tag = DOR
+                        tag = BXM
+                        tag = DOL
+                        tag = DOH
+                        tag = DOA
+                        tag = DOM
+                        tag = DOS
+                    }
+                }
+                set_variable = {
+                    ger_con_cangetsupport = 1
+                }
+                set_variable = {
+                    ger_con_det = 0
+                }
+                set_variable = {
+                    gercon_nat = AGC
+                }
+                set_variable = {
+                    var = aus_support
+                    value = 0
+                }
+                set_variable = {
+                    var = pre_support
+                    value = 0
+                }
+                set_variable = {
+                    var = ger_support
+                    value = 0
+                }
+                gercon_upd_pbv_var = yes
+                gercon_clamp_vars = yes
+            }
+            AOX = {
+                set_variable = {
+                    var = ger_con_cangetsupport
+                    value = 0
+                }
+                set_variable = {
+                    var = aus_support
+                    value = 100
+                }
+            }
+            WWS = {
+                set_variable = {
+                    var = ger_con_cangetsupport
+                    value = 0
+                }
+                set_variable = {
+                    var = pre_support
+                    value = 100
+                }
+            }
+            AGC = {
+                set_variable = {
+                    var = ger_con_cangetsupport
+                    value = 0
+                }
+            }
+            BXM = {
+                set_variable = {
+                    var = ger_con_cangetsupport
+                    value = 0
+                }
+                set_variable = {
+                    var = aus_support
+                    value = 100
+                }
+            }
+            DOM = {
+                set_variable = {
+                    var = pre_support
+                    value = 60
+                }
+            }
+            DOS = {
+                set_variable = {
+                    var = aus_support
+                    value = 60
+                }
+            }
+            DOR = {
+                set_variable = {
+                    var = aus_support
+                    value = 30
+                }
+            }
+            DOF = {
+                set_variable = {
+                    var = aus_support
+                    value = 40
+                }
+            }
+            DHD = {
+                set_variable = {
+                    var = aus_support
+                    value = 30
+                }
+            }
+            DON = {
+                set_variable = {
+                    var = aus_support
+                    value = 30
+                }
+            }
+            DOB = {
+                set_variable = {
+                    var = pre_support
+                    value = 10
+                }
+            }
+            DOL = {
+                set_variable = {
+                    var = pre_support
+                    value = 30
+                }
+            }
+            DOA = {
+                set_variable = {
+                    var = pre_support
+                    value = 20
+                }
+            }
+            DOH = {
+                set_variable = {
+                    var = pre_support
+                    value = 10
+                }
+            }
+            every_country = {
+                limit = {
+                    OR = {
+                        tag = AOX
+                        tag = WWS
+                        tag = AGC
+                        tag = LSB
+                        tag = DHD
+                        tag = DON
+                        tag = DOF
+                        tag = DOB
+                        tag = DOR
+                        tag = BXM
+                        tag = DOL
+                        tag = DOH
+                        tag = DOA
+                        tag = DOM
+                        tag = DOS
+                    }
+                }
+                gercon_upd_pbv_var = yes
+                gercon_clamp_vars = yes
+            }
+        }            
+    }
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = {
+                    ROOT = { tag = WWS }
+                    FROM = { tag = AOX }
+                    check_variable = { global.german_war = 1 }
+                    check_variable = { global.aus_has_win_german_war = 0 }
+                    check_variable = { global.pre_has_win_german_war = 0 }
+                }
+                set_variable = { global.aus_win_german_war = 1 }
+                every_country = { news_event = ger_con.6 }
+                AOX = { white_peace = WWS }
+                WWS = { white_peace = AOX }
+                AOX = {
+                    set_autonomy = { target = WWS autonomy_state = autonomy_puppet }
+                }
+                AOX = { add_to_faction = WWS }
+                every_country = {
+                    limit = {
+                        OR = {
+                            tag = AGC
+                            tag = LSB
+                            tag = DHD
+                            tag = DON
+                            tag = DOF
+                            tag = DOB
+                            tag = DOR
+                            tag = BXM
+                            tag = DOL
+                            tag = DOH
+                            tag = DOA
+                            tag = DOM
+                            tag = DOS
+                        }
+                    }
+                    AOX = { add_to_faction = PREV }
+                    ger_con_aus_controlled = yes
+                }
+            }
+            
+            if = {
+                limit = {
+                    ROOT = { tag = AOX }
+                    FROM = { tag = WWS }
+                    check_variable = { global.german_war = 1 }
+                    check_variable = { global.aus_win_german_war = 0 }
+                    check_variable = { global.pre_win_german_war = 0 }
+                }
+                set_variable = { global.pre_win_german_war = 1 }
+                every_country = { news_event = ger_con.7 }
+                AOX = { white_peace = WWS }
+                WWS = { white_peace = AOX }
+                every_country = {
+                    limit = {
+                        OR = {
+                            tag = AGC
+                            tag = LSB
+                            tag = DHD
+                            tag = DON
+                            tag = DOF
+                            tag = DOB
+                            tag = DOR
+                            tag = DOL
+                            tag = DOH
+                            tag = DOA
+                            tag = DOM
+                            tag = DOS
+                        }
+                    }
+                    WWS = { add_to_faction = PREV }
+                    ger_con_pre_controlled = yes
+                }
+                set_autonomy = { target = VCT autonomy_state = autonomy_Crown_Territory }
+                set_autonomy = { target = KGL autonomy_state = autonomy_Crown_Territory }
+                set_autonomy = { target = BXM autonomy_state = autonomy_Crown_Territory }
+                set_autonomy = { target = KLD autonomy_state = autonomy_Crown_Territory }
+                set_autonomy = { target = DMT autonomy_state = autonomy_Crown_Territory }
+                set_autonomy = { target = KOH autonomy_state = autonomy_Crown_Territory }
+                VCT = {
+                    set_politics = {ruling_party = Conservatism}
+                    set_popularities = {
+                        Liberalism = 25
+                        Reactionary = 25
+                        Conservatism = 40
+                        Revolutionism = 10
+                    }
+                }
+                KGL = {
+                    set_politics = {ruling_party = Conservatism}
+                    set_popularities = {
+                        Liberalism = 5
+                        Reactionary = 1
+                        Conservatism = 89
+                        Revolutionism = 5
+                    }
+                }
+                BXM = {
+                    set_politics = {ruling_party = Conservatism}
+                    set_popularities = {
+                        Liberalism = 5
+                        Reactionary = 1
+                        Conservatism = 89
+                        Revolutionism = 5
+                    }
+                }
+                KLD = {
+                    set_politics = {ruling_party = Conservatism}
+                    set_popularities = {
+                        Liberalism = 25
+                        Reactionary = 25
+                        Conservatism = 40
+                        Revolutionism = 10
+                    }
+                }
+                DMT = {
+                    set_politics = {ruling_party = Conservatism}
+                    set_popularities = {
+                        Liberalism = 25
+                        Reactionary = 25
+                        Conservatism = 40
+                        Revolutionism = 10
+                    }
+                }
+                KOH = {
+                    set_politics = {ruling_party = Conservatism}
+                    set_popularities = {
+                        Liberalism = 25
+                        Reactionary = 25
+                        Conservatism = 40
+                        Revolutionism = 10
+                    }
+                }
+            }
+        }
+    }
+}

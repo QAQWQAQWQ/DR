@@ -1,0 +1,49 @@
+﻿###########################
+# HDL Events
+###########################
+
+add_namespace = HDL
+news_event = {
+	id = HDL.1
+	title = HDL.1.t
+	desc = HDL.1.d
+	#picture = GFX_Fengtian_Civil_War
+	is_triggered_only = yes
+	option = {
+		name = HDL.1.a
+	    HDL= { 
+			transfer_state = 427
+			add_state_core = 427 
+			transfer_state = 436
+			add_state_core = 436
+	 }
+		PKT= { 
+		transfer_state = 428 
+		add_state_core = 428 
+		transfer_state = 429
+		add_state_core = 429 
+	}
+	MJL= { 
+		transfer_state = 430
+		add_state_core = 430
+	}
+	MSE= { 
+		transfer_state = 425
+		add_state_core = 425
+	}
+	MDS= { 
+		transfer_state = 423
+		add_state_core = 423
+		transfer_state = 320
+		add_state_core = 320
+		transfer_state = 424
+		add_state_core = 424
+		transfer_state = 426
+		add_state_core = 426
+	}
+	KOT= { 
+		transfer_state = 927
+		add_state_core = 927
+	}
+	    }
+	}

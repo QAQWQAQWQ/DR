@@ -1,0 +1,32 @@
+characters={
+	NXS_Ma_FuXiang={
+		name=NXS_Ma_FuXiang
+		portraits={
+			civilian={
+				large="gfx/leaders/NXS/portrait_Ma_FuXiang.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	NXS_Ma_HongKui={
+		name=NXS_Ma_HongKui
+		portraits={
+			civilian={
+				large="gfx/leaders/NXS/Portrait_Ma_HongKui.tga"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}		
+	}

@@ -1,0 +1,194 @@
+characters={
+	DOR_Ludwig_III={
+		name=DOR_Ludwig_III
+		portraits={
+			civilian={
+				large="gfx/leaders/DOR/Portrait_Ludwig_III.tga"
+			}
+		}
+		country_leader={
+			ideology=Classicism_Conservatism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	DOR_ebert={
+		name=DOR_ebert
+		portraits={
+			civilian={
+				large="gfx/leaders/DOR/Portrait_ebert.tga"
+			}
+		}
+		country_leader={
+			ideology=Social_Reformism
+            desc=WWS_ebert_DESC
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	DOR_Otto_Karl_Geßler={
+		name=DOR_Otto_Karl_GeBler
+		portraits={
+			civilian={
+				large="gfx/leaders/DOR/Portrait_Otto_Karl_Geßler.tga"
+			}
+		}
+		country_leader={
+			ideology=Socialism_Liberalism
+            desc=WWS_ebert_DESC
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	DOR_Philipp_Scheidemann={
+		name=DOR_Philipp_Scheidemann
+		portraits={
+			civilian={
+				large="gfx/leaders/DOR/Portrait_Philipp_Scheidemann.tga"
+				small="gfx/interface/ideas/idea_Philipp_Scheidemann.dds"
+			}
+		}
+		country_leader={
+			ideology=Populism_Reactionary
+            desc=WWS_Philipp_Scheidemann_DESC
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = DOR_Hermannmueller_H
+			allowed = {
+				original_tag = DOR
+			}
+			available = {
+				hidden_trigger = {
+					has_stability >100000
+				}
+			  }
+			traits = {
+				head_of_government
+				camarilla_leader
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	DOR_Hermannmueller={
+		name=DOR_Hermannmueller
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Hermannmueller.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = DOR_Hermannmueller_H
+			allowed = {
+				original_tag = DOR
+			}
+			available = {
+				hidden_trigger = {
+					has_stability >100000
+				}
+			  }
+			traits = {
+				head_of_government
+				chamberlain_appeaser
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = DOR_Hermannmueller_P
+			allowed = {
+				original_tag = DOR
+			}
+			available = {
+
+			  }
+			traits = {
+				Minister_Affairs
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	DOR_Karl_Eduard_Wilhelm_Groener={
+		name=DOR_Karl_Eduard_Wilhelm_Groener
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Karl_Eduard_Wilhelm_Groener.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = DOR_Max_von_Baden_H
+			allowed = {
+				original_tag = DOR
+			}
+			available = {
+				hidden_trigger = {
+					has_stability >100000
+				}
+			  }
+			traits = {
+				head_of_government
+				jefe
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	DOR_Max_von_Baden={
+		name=DOR_Max_von_Baden
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Max_von_Baden.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = DOR_Max_von_Baden_H
+			allowed = {
+				original_tag = DOR
+			}
+			available = {
+				hidden_trigger = {
+					has_stability >100000
+				}
+			  }
+			traits = {
+				head_of_government
+				emergency_powers
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	DOR_Rupprecht={
+		name=DOR_Rupprecht
+		portraits={
+		army={
+			large="gfx/leaders/DOR/Portrait_Rupprecht.tga"
+		}
+	}
+		corps_commander={
+		traits={ Lieutenant_general }
+		skill=3
+		attack_skill=3
+		defense_skill=3
+		planning_skill=3
+		logistics_skill=3
+	}
+	}
+	}

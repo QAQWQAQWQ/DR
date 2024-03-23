@@ -1,0 +1,37 @@
+
+state={
+	id=67
+	name="STATE_67"
+	manpower = 1402591
+	resources={
+		steel=19 # was: 60
+		aluminium=6 # was: 20
+	}
+	resources={
+		grain=3
+		
+	}
+	state_category = city
+
+	history={
+		victory_points = {
+			11467 5
+		}
+		victory_points = {
+			9511 3
+		}
+		owner = WWS
+		buildings = {
+			arms_factory = 1
+			industrial_complex = 2
+			infrastructure = 3
+		}
+		add_core_of = WWS
+	}
+
+	provinces={
+		479 6512 9457 9511 11467 
+	}
+
+	local_supplies=4.0 
+}

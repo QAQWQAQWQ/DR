@@ -1,0 +1,47 @@
+characters={
+	AGN_Adolf_Hitler={
+		name=AGN_Adolf_Hitler
+		portraits={
+			civilian={
+				large="gfx/leaders/AGN/AGN_Adolf_Hitler_pict_army.png"
+			}
+			army={
+				large="gfx/leaders/AGN/AGN_Adolf_Hitler_pict_army.png"
+			}
+		}
+		country_leader={
+			ideology = Authoritarianism_Conservatism
+			traits={ War_Heroes }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	AGN_Arthur_Seyss_Inquart = {
+		name=AGN_Arthur_Seyss_Inquart
+		portraits={
+			civilian={
+				large="gfx/leaders/AGN/AGN_Arthur_Seyss_Inquart_pict.jpg"
+			}
+		}
+		country_leader={
+			ideology = Populism_Reactionary
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	AGN_Engelbert_Dollfuss = {
+		name=AGN_Engelbert_Dollfuss
+		portraits={
+			civilian={
+				large="gfx/leaders/AGN/AGN_Engelbert_Dollfuss_pict.jpg"
+			}
+		}
+		country_leader={
+			ideology = Nationalism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

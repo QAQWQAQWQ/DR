@@ -1,0 +1,21 @@
+state= {
+	id=599
+	name="苍梧"
+	manpower = 3410000
+	state_category = rural
+	history= {
+		owner = GUG
+		add_core_of = GUG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = { 7210 3 }
+	}
+	provinces={
+		4152 7044 7192 7210 10105 10121 11983 12023 
+	}
+
+	local_supplies=0.0 
+}

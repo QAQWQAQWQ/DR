@@ -1,0 +1,30 @@
+characters={
+	BXM_Johann_II_Nepomuk_Adolf_Maria_Hubert_Maximin={
+		name=BXM_Johann_II_Nepomuk_Adolf_Maria_Hubert_Maximin
+		portraits={
+			civilian={
+				large="gfx/leaders/BXM/portrait_Johann_II_Nepomuk_Adolf_Maria_Hubert_Maximin.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	BXM_Tomas_Garrigue_Masaryk={
+		name=BXM_Tomas_Garrigue_Masaryk
+		portraits={
+			civilian={
+				large="gfx/leaders/BXM/portrait_Tomas_Garrigue_Masaryk.tga"
+			}
+		}
+		country_leader={
+			ideology=Socialism_Liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
+	}

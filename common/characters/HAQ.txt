@@ -1,0 +1,32 @@
+characters={
+	HAQ_TianZhongYu={
+		name=HAQ_TianZhongYu
+		portraits={
+			civilian={
+				large="gfx/leaders/HAQ/portrait_TianZhongYu.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+    HAQ_Hang_FuQu={
+		name=HAQ_Hang_FuQu
+		portraits={
+			army={
+				large="gfx/leaders/HAQ/portrait_Hang_FuQu.tga"
+			}
+		}
+		corps_commander={
+			traits={ career_officer }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}	
+	}

@@ -1,0 +1,51 @@
+ger_con_uni_tri_pre = {
+    OR = {
+        exists = no
+        custom_trigger_tooltip = { 
+            tooltip = we_get_more_sup 
+            check_variable = { pre_support > aus_support }
+        }
+    }
+}
+ger_con_uni_tri_aus = {
+    OR = {
+        exists = no
+        custom_trigger_tooltip = { 
+            tooltip = we_get_more_sup 
+            check_variable = { pre_support < aus_support }
+        }
+    }
+}
+aus_has_win_german_war = {
+    check_variable = { global.aus_win_german_war = 1 }
+}
+pre_has_win_german_war = {
+    check_variable = { global.pre_win_german_war = 1 }
+}
+german_war_has_end = {
+    custom_trigger_tooltip = { 
+        tooltip = german_war_has_end_tri 
+        OR = {
+            check_variable = { global.aus_win_german_war = 1 }
+            check_variable = { global.pre_win_german_war = 1 }
+        }
+    }
+}
+german_war_has_boom = {
+    custom_trigger_tooltip = { 
+        tooltip = german_war_has_boom_tri
+        check_variable = { global.german_war = 1 }
+    }
+}
+ger_con_pre_accpect_aus = {
+    custom_trigger_tooltip = { 
+        tooltip = pre_has_accpect_aus
+        check_variable = { global.pre_accpect_aus = 1 }
+    }
+}
+ger_con_pre_accpect_delineation = {
+    custom_trigger_tooltip = { 
+        tooltip = pre_has_accpect_delineation
+        check_variable = { global.pre_accpect_delineation = 1 }
+    }
+}

@@ -1,0 +1,22 @@
+state={
+	id=1000
+	name="东临"
+	manpower = 1163200
+	state_category = rural
+	
+	history={
+		owner = ZHX
+		add_core_of = ZHX
+		victory_points = {
+			11962 3 
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	provinces={
+		7160 9987 11962
+	}
+
+	local_supplies=4.0 
+}

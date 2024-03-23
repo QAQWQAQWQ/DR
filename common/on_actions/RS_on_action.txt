@@ -1,0 +1,2432 @@
+on_actions = {
+
+	on_startup= {
+		effect = {
+	 	every_country = {
+			hidden_effect = {
+				BHL = {
+					add_ai_strategy = {
+						type = alliance
+						id = FRW
+						value = 200
+					}
+				}
+			}
+	 }
+	 }
+}
+
+on_startup= {
+	effect = {
+		VCT={
+			leave_faction = yes
+	set_rule = {
+	can_join_factions=no
+}}
+		KGL={
+			leave_faction = yes
+	set_rule = {
+	can_join_factions=no
+}}
+		KLD={
+			leave_faction = yes
+	set_rule = {
+	can_join_factions=no
+}}
+		DMT={
+			leave_faction = yes
+	set_rule = {
+	can_join_factions=no
+}}
+		KOH={
+			leave_faction = yes
+	set_rule = {
+	can_join_factions=no
+}}
+ }
+}
+
+####
+on_daily= {
+	effect = {
+			if={
+				limit={
+					check_variable = { Literacy < 20 }
+				}
+		
+		add_ideas = completely_illiterate
+		}
+		if={
+			
+				limit={
+					AND={
+						check_variable = { Literacy > 20 }
+					    check_variable = { Literacy < 50 }
+					}
+					
+				}
+		
+		add_ideas = elementary_school
+		}
+		if={
+			
+				limit={
+					AND={
+						check_variable = { Literacy > 50 }
+					check_variable = { Literacy < 70 }
+					}
+					
+				}
+		
+		add_ideas = secondary_school
+		}
+		if={
+			
+				limit={
+					AND={
+						check_variable = { Literacy > 70 }
+					check_variable = { Literacy < 80 }
+					}
+					
+				}
+		add_ideas = university_level
+		}
+		if={
+				limit={
+					check_variable = { Literacy > 90 }
+				}
+		add_ideas = compulsory_education
+		}
+ }
+}
+
+on_weekly= {
+	effect = {
+		if={
+			limit={
+			AND={
+			check_variable = { Literacy < 20 }
+			}
+		}
+		add_ideas=completely_illiterate
+		}
+		if={
+			limit={
+			AND={
+			check_variable = { Literacy > 20 }
+			check_variable = { Literacy < 50 }
+			}
+		}
+		swap_ideas = {
+			remove_idea = completely_illiterate
+			add_idea = elementary_school
+		}
+		}
+		if={
+			limit={
+			AND={
+			check_variable = { Literacy > 50 }
+			check_variable = { Literacy < 70 }
+			}
+		}
+		swap_ideas = {
+			remove_idea = elementary_school
+			add_idea = secondary_school
+		}
+		}
+		if={
+			limit={
+			AND={
+			check_variable = { Literacy > 70 }
+			check_variable = { Literacy < 80 }
+			}
+		}
+		swap_ideas = {
+			remove_idea = secondary_school
+			add_idea = university_level
+		}
+		}
+		if={
+			limit={
+			AND={
+			check_variable = { Literacy > 90 }
+			}
+		}
+		swap_ideas = {
+			remove_idea = university_level
+			add_idea = compulsory_education
+		}
+		}
+}
+}
+
+####
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+####俄罗斯
+on_daily = {
+	effect = {
+		
+		if = {
+			limit = {
+				check_variable = { SHW_Loyalty = 50 compare = greater_than_or_equals}
+			}
+			set_variable = { SHW_Imperial_Russian_Army_paranoiameter = 1 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { SHW_Loyalty = 50 compare = equals}
+			}
+			set_variable = { SHW_Imperial_Russian_Army_paranoiameter = 2 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { SHW_Loyalty = 50 compare = less_than }
+			}
+			set_variable = { SHW_Imperial_Russian_Army_paranoiameter = 3 }
+		}
+
+ }
+}
+
+##########法国大选
+on_daily = {
+		effect = {
+	if = {
+				limit = {
+					AND={
+						FRW={
+						check_variable = {
+						var = FRW_Wallonia_needle_VAR
+						value = 2
+					}
+					has_country_flag = FRW_Wallonia_flag
+					}
+					}
+				}
+				FRW={
+				add_to_variable = {
+				var = FRW_Liberals_needle_VAR
+				value = 1
+			 }
+			 clr_country_flag = FRW_Wallonia_flag
+				}
+			
+	}
+    if = {
+			limit = {
+				AND={
+					FRW={
+					check_variable = {
+					var = FRW_Calais_needle_VAR
+					value = 2
+				}
+				has_country_flag = FRW_Calais_flag
+				}
+				}
+			}
+			FRW={
+			add_to_variable = {
+			var = FRW_Liberals_needle_VAR
+			value = 1
+		 }
+		 clr_country_flag = FRW_Calais_flag
+		 }
+    }
+	if = {
+			limit = {
+				AND={
+					FRW={
+					check_variable = {
+					var = FRW_Picardy_needle_VAR
+					value = 2
+				}
+				has_country_flag = FRW_Picardy_flag
+				}
+				}
+				
+			}
+			FRW={
+			add_to_variable = {
+			var = FRW_Liberals_needle_VAR
+			value = 1
+		}
+		clr_country_flag = FRW_Picardy_flag
+			}
+    }
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Champagne_needle_VAR
+				value = 2
+			}
+			has_country_flag = FRW_Champagne_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Liberals_needle_VAR
+		value = 1
+	  }
+	  clr_country_flag = FRW_Champagne_flag
+		}
+    }
+    if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Comte_needle_VAR
+				value = 2
+			}
+			has_country_flag = FRW_Comte_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Liberals_needle_VAR
+		value = 1
+	    }
+	    clr_country_flag = FRW_Comte_flag
+		}
+    }
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Normandy_needle_VAR
+				value = 2
+			}
+			has_country_flag = FRW_Normandy_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Liberals_needle_VAR
+		value = 1
+	    }
+	    clr_country_flag = FRW_Normandy_flag
+		}
+    }
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Burgundy_needle_VAR
+				value = 2
+			}
+			has_country_flag = FRW_Burgundy_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Liberals_needle_VAR
+		value = 1
+	    }
+	    clr_country_flag = FRW_Burgundy_flag
+		}
+    }
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_De_France_needle_VAR
+				value = 2
+			}
+			has_country_flag = FRW_De_France_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Liberals_needle_VAR
+		value = 1
+	    }
+	    clr_country_flag = FRW_De_France_flag
+		}
+    }
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Central_Region_needle_VAR
+				value = 2
+			}
+			has_country_flag = FRW_Central_Region_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Liberals_needle_VAR
+		value = 1
+	    }
+	    clr_country_flag = FRW_Central_Region_flag
+		}
+    }
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Brittany_needle_VAR
+				value = 2
+			}
+			has_country_flag = FRW_Brittany_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Liberals_needle_VAR
+		value = 1
+	    }
+	    clr_country_flag = FRW_Brittany_flag
+		}
+    }
+
+
+	
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Loire_needle_VAR
+				value = 2
+			}
+			has_country_flag = FRW_Loire_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Liberals_needle_VAR
+		value = 1
+	    }
+	    clr_country_flag = FRW_Loire_flag
+		}
+    }
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Poitou_needle_VAR
+				value = 2
+			}
+			has_country_flag = FRW_Poitou_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Liberals_needle_VAR
+		value = 1
+	    }
+	    clr_country_flag = FRW_Poitou_flag
+		}
+    }
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Aquitaine_needle_VAR
+				value = 2
+			}
+			has_country_flag = FRW_Aquitaine_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Liberals_needle_VAR
+		value = 1
+	    }
+	    clr_country_flag = FRW_Aquitaine_flag
+		}
+    }
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Western_Pyrenees_needle_VAR
+				value = 2
+			}
+			has_country_flag = FRW_Western_Pyrenees_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Liberals_needle_VAR
+		value = 1
+	    }
+	    clr_country_flag = FRW_Western_Pyrenees_flag
+		}
+    }
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_South_Central_Region_needle_VAR
+				value = 2
+			}
+			has_country_flag = FRW_South_Central_Region_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Liberals_needle_VAR
+		value = 1
+	    }
+	    clr_country_flag = FRW_South_Central_Region_flag
+		}
+    }
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Limousin_needle_VAR
+				value = 2
+			}
+			has_country_flag = FRW_Limousin_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Liberals_needle_VAR
+		value = 1
+	    }
+	    clr_country_flag = FRW_Limousin_flag
+		}
+    }
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_South_Pyrenees_needle_VAR
+				value = 2
+			}
+			has_country_flag = FRW_South_Pyrenees_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Liberals_needle_VAR
+		value = 1
+	    }
+	    clr_country_flag = FRW_South_Pyrenees_flag
+		}
+    }
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Languedoc_needle_VAR
+				value = 2
+			}
+			has_country_flag = FRW_Languedoc_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Liberals_needle_VAR
+		value = 1
+	    }
+	    clr_country_flag = FRW_Languedoc_flag
+		}
+    }
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Provence_needle_VAR
+				value = 2
+			}
+			has_country_flag = FRW_Provence_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Liberals_needle_VAR
+		value = 1
+	    }
+	    clr_country_flag = FRW_Provence_flag
+		}
+    }
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Val_needle_VAR
+				value = 2
+			}
+			has_country_flag = FRW_Val_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Liberals_needle_VAR
+		value = 1
+	    }
+	    clr_country_flag = FRW_Val_flag
+		}
+    }
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Alps_needle_VAR
+				value = 2
+			}
+			has_country_flag = FRW_Alps_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Liberals_needle_VAR
+		value = 1
+	    }
+	    clr_country_flag = FRW_Alps_flag
+		}
+    }
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Rhone_needle_VAR
+				value = 2
+			}
+			has_country_flag = FRW_Rhone_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Liberals_needle_VAR
+		value = 1
+	    }
+	    clr_country_flag = FRW_Rhone_flag
+		}
+    }
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Auvergne_needle_VAR
+				value = 2
+			}
+			has_country_flag = FRW_Auvergne_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Liberals_needle_VAR
+		value = 1
+	    }
+	    clr_country_flag = FRW_Auvergne_flag
+		}
+    }
+	
+     }
+}
+on_daily = { 
+ effect = {
+	if = {
+				limit = {
+					AND={
+						FRW={
+						check_variable = {
+						var = FRW_Wallonia_needle_VAR
+						value = 3
+					}
+					has_country_flag = FRW_Wallonia_Purple_flag
+					}
+					}
+				}
+				FRW={
+				add_to_variable = {
+				var = FRW_Reformism_needle_VAR
+				value = 1
+			}
+			clr_country_flag = FRW_Wallonia_Purple_flag
+				}
+			
+	}
+	if = {
+			limit = {
+				AND={
+					FRW={
+					check_variable = {
+					var = FRW_Calais_needle_VAR
+					value = 3
+				}
+				has_country_flag = FRW_Calais_Purple_flag
+				}
+				}
+			}
+			FRW={
+			add_to_variable = {
+			var = FRW_Reformism_needle_VAR
+			value = 1
+		}
+		clr_country_flag = FRW_Calais_Purple_flag
+		}
+	}
+	if = {
+			limit = {
+				AND={
+					FRW={
+					check_variable = {
+					var = FRW_Picardy_needle_VAR
+					value = 3
+				}
+				has_country_flag = FRW_Picardy_Purple_flag
+				}
+				}
+				
+			}
+			FRW={
+			add_to_variable = {
+			var = FRW_Reformism_needle_VAR
+			value = 1
+		}
+		clr_country_flag = FRW_Picardy_Purple_flag
+			}
+	}
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Champagne_needle_VAR
+				value = 3
+			}
+			has_country_flag = FRW_Champagne_Purple_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Reformism_needle_VAR
+		value = 1
+	}
+	clr_country_flag = FRW_Champagne_Purple_flag
+		}
+	}
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Comte_needle_VAR
+				value = 3
+			}
+			has_country_flag = FRW_Comte_Purple_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Reformism_needle_VAR
+		value = 1
+		}
+		clr_country_flag = FRW_Comte_Purple_flag
+		}
+	}
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Normandy_needle_VAR
+				value = 3
+			}
+			has_country_flag = FRW_Normandy_Purple_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Reformism_needle_VAR
+		value = 1
+		}
+		clr_country_flag = FRW_Normandy_Purple_flag
+		}
+	}
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Burgundy_needle_VAR
+				value = 3
+			}
+			has_country_flag = FRW_Burgundy_Purple_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Reformism_needle_VAR
+		value = 1
+		}
+		clr_country_flag = FRW_Burgundy_Purple_flag
+		}
+	}
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_De_France_needle_VAR
+				value = 3
+			}
+			has_country_flag = FRW_De_France_Purple_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Reformism_needle_VAR
+		value = 1
+		}
+		clr_country_flag = FRW_De_France_Purple_flag
+		}
+	}
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Central_Region_needle_VAR
+				value = 3
+			}
+			has_country_flag = FRW_Central_Region_Purple_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Reformism_needle_VAR
+		value = 1
+		}
+		clr_country_flag = FRW_Central_Region_Purple_flag
+		}
+	}
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Brittany_needle_VAR
+				value = 3
+			}
+			has_country_flag = FRW_Brittany_Purple_lag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Reformism_needle_VAR
+		value = 1
+		}
+		clr_country_flag = FRW_Brittany_Purple_flag
+		}
+	}
+
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Loire_needle_VAR
+				value = 3
+			}
+			has_country_flag = FRW_Loire_Purple_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Reformism_needle_VAR
+		value = 1
+		}
+		clr_country_flag = FRW_Loire_Purple_flag
+		}
+	}
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Poitou_needle_VAR
+				value = 3
+			}
+			has_country_flag = FRW_Poitou_Purple_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Reformism_needle_VAR
+		value = 1
+		}
+		clr_country_flag = FRW_Poitou_Purple_flag
+		}
+	}
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Aquitaine_needle_VAR
+				value = 3
+			}
+			has_country_flag = FRW_Aquitaine_Purple_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Reformism_needle_VAR
+		value = 1
+		}
+		clr_country_flag = FRW_Aquitaine_Purple_flag
+		}
+	}
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Western_Pyrenees_needle_VAR
+				value = 3
+			}
+			has_country_flag = FRW_Western_Pyrenees_Purple_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Reformism_needle_VAR
+		value = 1
+		}
+		clr_country_flag = FRW_Western_Pyrenees_Purple_flag
+		}
+	}
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_South_Central_Region_needle_VAR
+				value = 3
+			}
+			has_country_flag = FRW_South_Central_Region_Purple_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Reformism_needle_VAR
+		value = 1
+		}
+		clr_country_flag = FRW_South_Central_Region_Purple_flag
+		}
+	}
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Limousin_needle_VAR
+				value = 3
+			}
+			has_country_flag = FRW_Limousin_Purple_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Reformism_needle_VAR
+		value = 1
+		}
+		clr_country_flag = FRW_Limousin_Purple_flag
+		}
+	}
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_South_Pyrenees_needle_VAR
+				value = 3
+			}
+			has_country_flag = FRW_South_Pyrenees_Purple_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Reformism_needle_VAR
+		value = 1
+		}
+		clr_country_flag = FRW_South_Pyrenees_Purple_flag
+		}
+	}
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Languedoc_needle_VAR
+				value = 3
+			}
+			has_country_flag = FRW_Languedoc_Purple_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Reformism_needle_VAR
+		value = 1
+		}
+		clr_country_flag = FRW_Languedoc_Purple_flag
+		}
+	}
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Provence_needle_VAR
+				value = 3
+			}
+			has_country_flag = FRW_Provence_Purple_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Reformism_needle_VAR
+		value = 1
+		}
+		clr_country_flag = FRW_Provence_Purple_flag
+		}
+	}
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Val_needle_VAR
+				value = 3
+			}
+			has_country_flag = FRW_Val_Purple_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Reformism_needle_VAR
+		value = 1
+		}
+		clr_country_flag = FRW_Val_Purple_flag
+		}
+	}
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Alps_needle_VAR
+				value = 3
+			}
+			has_country_flag = FRW_Alps_Purple_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Reformism_needle_VAR
+		value = 1
+		}
+		clr_country_flag = FRW_Alps_Purple_flag
+		}
+	}
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Rhone_needle_VAR
+				value = 3
+			}
+			has_country_flag = FRW_Rhone_Purple_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Reformism_needle_VAR
+		value = 1
+		}
+		clr_country_flag = FRW_Rhone_Purple_flag
+		}
+	}
+	if = {
+		limit = {
+			AND={
+				FRW={
+				check_variable = {
+				var = FRW_Auvergne_needle_VAR
+				value = 3
+			}
+			has_country_flag = FRW_Auvergne_Purple_flag
+			}
+			}
+			
+		}
+		FRW={
+		add_to_variable = {
+		var = FRW_Reformism_needle_VAR
+		value = 1
+		}
+		clr_country_flag = FRW_Auvergne_Purple_flag
+		}
+	}
+ }
+}
+on_daily = { 
+	effect = {
+	   if = {
+				   limit = {
+					   AND={
+						   FRW={
+						   check_variable = {
+						   var = FRW_Wallonia_needle_VAR
+						   value = 4
+					   }
+					   has_country_flag = FRW_Wallonia_Red_flag
+					   }
+					   }
+				   }
+				   FRW={
+				   add_to_variable = {
+				   var = FRW_Radicalism_needle_VAR
+				   value = 1
+			   }
+			   clr_country_flag = FRW_Wallonia_Red_flag
+				   }
+			   
+	   }
+	   if = {
+			   limit = {
+				   AND={
+					   FRW={
+					   check_variable = {
+					   var = FRW_Calais_needle_VAR
+					   value = 4
+				   }
+				   has_country_flag = FRW_Calais_Red_flag
+				   }
+				   }
+			   }
+			   FRW={
+			   add_to_variable = {
+			   var = FRW_Radicalism_needle_VAR
+			   value = 1
+		   }
+		   clr_country_flag = FRW_Calais_Red_flag
+		   }
+	   }
+	   if = {
+			   limit = {
+				   AND={
+					   FRW={
+					   check_variable = {
+					   var = FRW_Picardy_needle_VAR
+					   value = 4
+				   }
+				   has_country_flag = FRW_Picardy_Red_flag
+				   }
+				   }
+				   
+			   }
+			   FRW={
+			   add_to_variable = {
+			   var = FRW_Radicalism_needle_VAR
+			   value = 1
+		   }
+		   clr_country_flag = FRW_Picardy_Red_flag
+			   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Champagne_needle_VAR
+				   value = 4
+			   }
+			   has_country_flag = FRW_Champagne_Red_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Radicalism_needle_VAR
+		   value = 1
+	   }
+	   clr_country_flag = FRW_Champagne_Red_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Comte_needle_VAR
+				   value = 4
+			   }
+			   has_country_flag = FRW_Comte_Red_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Radicalism_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Comte_Red_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Normandy_needle_VAR
+				   value = 4
+			   }
+			   has_country_flag = FRW_Normandy_Red_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Radicalism_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Normandy_Red_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Burgundy_needle_VAR
+				   value = 4
+			   }
+			   has_country_flag = FRW_Burgundy_Red_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Radicalism_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Burgundy_Red_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_De_France_needle_VAR
+				   value = 4
+			   }
+			   has_country_flag = FRW_De_France_Red_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Radicalism_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_De_France_Red_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Central_Region_needle_VAR
+				   value = 4
+			   }
+			   has_country_flag = FRW_Central_Region_Red_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Radicalism_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Central_Region_Red_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Brittany_needle_VAR
+				   value = 4
+			   }
+			   has_country_flag = FRW_Brittany_Red_lag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Radicalism_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Brittany_Red_flag
+		   }
+	   }
+   
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Loire_needle_VAR
+				   value = 4
+			   }
+			   has_country_flag = FRW_Loire_Red_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Radicalism_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Loire_Red_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Poitou_needle_VAR
+				   value = 4
+			   }
+			   has_country_flag = FRW_Poitou_Red_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Radicalism_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Poitou_Red_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Aquitaine_needle_VAR
+				   value = 4
+			   }
+			   has_country_flag = FRW_Aquitaine_Red_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Radicalism_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Aquitaine_Red_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Western_Pyrenees_needle_VAR
+				   value = 4
+			   }
+			   has_country_flag = FRW_Western_Pyrenees_Red_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Radicalism_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Western_Pyrenees_Red_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_South_Central_Region_needle_VAR
+				   value = 4
+			   }
+			   has_country_flag = FRW_South_Central_Region_Red_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Radicalism_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_South_Central_Region_Red_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Limousin_needle_VAR
+				   value = 4
+			   }
+			   has_country_flag = FRW_Limousin_Red_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Radicalism_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Limousin_Red_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_South_Pyrenees_needle_VAR
+				   value = 4
+			   }
+			   has_country_flag = FRW_South_Pyrenees_Red_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Radicalism_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_South_Pyrenees_Red_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Languedoc_needle_VAR
+				   value = 4
+			   }
+			   has_country_flag = FRW_Languedoc_Red_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Radicalism_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Languedoc_Red_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Provence_needle_VAR
+				   value = 4
+			   }
+			   has_country_flag = FRW_Provence_Red_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Radicalism_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Provence_Red_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Val_needle_VAR
+				   value = 4
+			   }
+			   has_country_flag = FRW_Val_Red_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Radicalism_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Val_Red_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Alps_needle_VAR
+				   value = 4
+			   }
+			   has_country_flag = FRW_Alps_Red_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Radicalism_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Alps_Red_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Rhone_needle_VAR
+				   value = 4
+			   }
+			   has_country_flag = FRW_Rhone_Red_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Radicalism_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Rhone_Red_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Auvergne_needle_VAR
+				   value = 4
+			   }
+			   has_country_flag = FRW_Auvergne_Red_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Radicalism_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Auvergne_Red_flag
+		   }
+	   }
+	}
+}
+on_daily = { 
+	effect = {
+	   if = {
+				   limit = {
+					   AND={
+						   FRW={
+						   check_variable = {
+						   var = FRW_Wallonia_needle_VAR
+						   value = 5
+					   }
+					   has_country_flag = FRW_Wallonia_Orange_flag
+					   }
+					   }
+				   }
+				   FRW={
+				   add_to_variable = {
+				   var = FRW_Communist_needle_VAR
+				   value = 1
+			   }
+			   clr_country_flag = FRW_Wallonia_Orange_flag
+				   }
+			   
+	   }
+	   if = {
+			   limit = {
+				   AND={
+					   FRW={
+					   check_variable = {
+					   var = FRW_Calais_needle_VAR
+					   value = 5
+				   }
+				   has_country_flag = FRW_Calais_Orange_flag
+				   }
+				   }
+			   }
+			   FRW={
+			   add_to_variable = {
+			   var = FRW_Communist_needle_VAR
+			   value = 1
+		   }
+		   clr_country_flag = FRW_Calais_Orange_flag
+		   }
+	   }
+	   if = {
+			   limit = {
+				   AND={
+					   FRW={
+					   check_variable = {
+					   var = FRW_Picardy_needle_VAR
+					   value = 5
+				   }
+				   has_country_flag = FRW_Picardy_Orange_flag
+				   }
+				   }
+				   
+			   }
+			   FRW={
+			   add_to_variable = {
+			   var = FRW_Communist_needle_VAR
+			   value = 1
+		   }
+		   clr_country_flag = FRW_Picardy_Orange_flag
+			   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Champagne_needle_VAR
+				   value = 5
+			   }
+			   has_country_flag = FRW_Champagne_Orange_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Communist_needle_VAR
+		   value = 1
+	   }
+	   clr_country_flag = FRW_Champagne_Orange_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Comte_needle_VAR
+				   value = 5
+			   }
+			   has_country_flag = FRW_Comte_Orange_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Communist_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Comte_Orange_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Normandy_needle_VAR
+				   value = 5
+			   }
+			   has_country_flag = FRW_Normandy_Orange_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Communist_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Normandy_Orange_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Burgundy_needle_VAR
+				   value = 5
+			   }
+			   has_country_flag = FRW_Burgundy_Orange_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Communist_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Burgundy_Orange_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_De_France_needle_VAR
+				   value = 5
+			   }
+			   has_country_flag = FRW_De_France_Orange_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Communist_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_De_France_Orange_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Central_Region_needle_VAR
+				   value = 5
+			   }
+			   has_country_flag = FRW_Central_Region_Orange_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Communist_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Central_Region_Orange_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Brittany_needle_VAR
+				   value = 5
+			   }
+			   has_country_flag = FRW_Brittany_Orange_lag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Communist_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Brittany_Orange_flag
+		   }
+	   }
+   
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Loire_needle_VAR
+				   value = 5
+			   }
+			   has_country_flag = FRW_Loire_Orange_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Communist_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Loire_Orange_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Poitou_needle_VAR
+				   value = 5
+			   }
+			   has_country_flag = FRW_Poitou_Orange_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Communist_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Poitou_Orange_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Aquitaine_needle_VAR
+				   value = 5
+			   }
+			   has_country_flag = FRW_Aquitaine_Orange_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Communist_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Aquitaine_Orange_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Western_Pyrenees_needle_VAR
+				   value = 5
+			   }
+			   has_country_flag = FRW_Western_Pyrenees_Orange_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Communist_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Western_Pyrenees_Orange_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_South_Central_Region_needle_VAR
+				   value = 5
+			   }
+			   has_country_flag = FRW_South_Central_Region_Orange_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Communist_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_South_Central_Region_Orange_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Limousin_needle_VAR
+				   value = 5
+			   }
+			   has_country_flag = FRW_Limousin_Orange_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Communist_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Limousin_Orange_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_South_Pyrenees_needle_VAR
+				   value = 5
+			   }
+			   has_country_flag = FRW_South_Pyrenees_Orange_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Communist_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_South_Pyrenees_Orange_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Languedoc_needle_VAR
+				   value = 5
+			   }
+			   has_country_flag = FRW_Languedoc_Orange_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Communist_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Languedoc_Orange_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Provence_needle_VAR
+				   value = 5
+			   }
+			   has_country_flag = FRW_Provence_Orange_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Communist_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Provence_Orange_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Val_needle_VAR
+				   value = 5
+			   }
+			   has_country_flag = FRW_Val_Orange_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Communist_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Val_Orange_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Alps_needle_VAR
+				   value = 5
+			   }
+			   has_country_flag = FRW_Alps_Orange_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Communist_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Alps_Orange_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Rhone_needle_VAR
+				   value = 5
+			   }
+			   has_country_flag = FRW_Rhone_Orange_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Communist_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Rhone_Orange_flag
+		   }
+	   }
+	   if = {
+		   limit = {
+			   AND={
+				   FRW={
+				   check_variable = {
+				   var = FRW_Auvergne_needle_VAR
+				   value = 5
+			   }
+			   has_country_flag = FRW_Auvergne_Orange_flag
+			   }
+			   }
+			   
+		   }
+		   FRW={
+		   add_to_variable = {
+		   var = FRW_Communist_needle_VAR
+		   value = 1
+		   }
+		   clr_country_flag = FRW_Auvergne_Orange_flag
+		   }
+	   }
+	}
+}
+##########大选
+on_startup= {
+	effect = {
+		every_state = {
+			set_variable = { Literate_population = 0 }
+			if={
+				limit = {
+					OR = {
+						has_state_category = wasteland
+						has_state_category = enclave
+						has_state_category = tiny_island
+					}
+				}
+				set_variable = { Literate_population = 0 }
+			}
+			if={
+				limit = {
+					OR = {
+						has_state_category = small_island
+						has_state_category = pastoral
+					}
+				}
+				set_variable = { Literate_population = 80 }
+			}
+			if={
+				limit = {
+					has_state_category =rural
+				}
+				set_variable = { Literate_population = 460 }
+			}
+			if={
+				limit = {
+					has_state_category =town
+				}
+				set_variable = { Literate_population = 620 }
+			}
+			if={
+				limit = {
+					has_state_category = large_town
+				}
+				set_variable = { Literate_population = 700 }
+			}
+			if={
+				limit = {
+					has_state_category = city
+				}
+				set_variable = { Literate_population = 840 }
+			}
+			if={
+				limit = {
+					has_state_category = large_city
+				}
+				set_variable = { Literate_population = 920 }
+			}
+			if={
+				limit = {
+					has_state_category =metropolis
+				}
+				set_variable = { Literate_population = 2000 }
+			}
+			if={
+				limit = {
+					has_state_category =megalopolis
+				}
+				set_variable = { Literate_population = 2400 }
+			}
+			 set_variable = { Literate_infra = infrastructure_level }
+			 multiply_variable = { Literate_infra = 70 }
+			 add_to_variable = { Literate_population = Literate_infra}
+			if = {
+				limit = {
+					is_on_continent = europe
+				}
+				multiply_variable = { Literate_population = 4 }
+			}
+			if = {
+				limit = {
+					is_on_continent = north_america
+				}
+				multiply_variable = { Literate_population = 1 }
+			}
+			if = {
+				limit = {
+					is_on_continent = south_america
+				}
+				multiply_variable = { Literate_population = 0.8 }
+			}
+			if = {
+				limit = {
+					is_on_continent = africa
+				}
+				multiply_variable = { Literate_population = 0.01 }
+			}
+			if = {
+				limit = {
+					is_on_continent = asia
+					NOT = {
+						is_core_of = JPN
+					}
+				}
+				multiply_variable = { Literate_population = 0.05 }
+			}
+			if = {
+				limit = {
+					is_on_continent = africa
+				}
+				multiply_variable = { Literate_population = 0.01 }
+			}
+			if = {
+				limit = {
+					is_on_continent = asia
+					NOT = {
+						is_core_of = JPN
+					}
+				}
+				multiply_variable = { Literate_population = 0.1 }
+			}
+			if = {
+				limit = {
+					OR = {
+						is_owned_by = KAT
+						is_owned_by = KWT
+					}
+				}
+				multiply_variable = { Literate_population = 0.01 }
+			}
+			if = {
+				limit = {
+					OR = {
+						is_owned_by = UBS
+						is_owned_by = AGC
+						is_owned_by = AOX
+						is_owned_by = BXM
+						is_owned_by = ENL
+						is_owned_by = DOH
+						is_owned_by = WWS
+					}
+				}
+				multiply_variable = { Literate_population = 2 }
+			}
+			if = {
+				limit = {
+					OR = {
+						is_owned_by = DHD
+						is_owned_by = DOB
+						is_owned_by = DOR
+						is_owned_by = DOF
+						is_owned_by = DOS
+						is_owned_by = DON
+						is_owned_by = DOA
+						is_owned_by = DOL
+					}
+				}
+				multiply_variable = { Literate_population = 3 }
+			}
+			if = {
+				limit = {
+					OR = {
+						is_core_of = JPN
+					}
+				}
+				multiply_variable = { Literate_population = 3 }
+			}
+			if = {
+				limit = {
+					OR = {
+						is_core_of = MEG
+					}
+				}
+				set_variable = { Literate_population = 0 }
+			}
+			if = {
+				limit = {
+					OR = {
+						is_owned_by = BXM
+						is_owned_by = KGL
+						is_owned_by = VCT
+					}
+				}
+				multiply_variable = { Literate_population = 1.5 }
+			}
+			if = {
+				limit = {
+					OR = {
+						is_owned_by = SAA
+						is_owned_by = SAB
+						is_owned_by = SAC
+						is_owned_by = SAD
+						is_owned_by = SAE
+						is_owned_by = SAF
+						is_owned_by = SAG
+					}
+				}
+				multiply_variable = { Literate_population = 2 }
+			}
+			if = {
+				limit = {
+					OR = {
+						is_core_of = FRW
+					}
+				}
+				multiply_variable = { Literate_population = 2 }
+			}
+			if = {
+				limit = {
+					check_variable = {
+						Literate_population > state_population_k
+					}
+				}
+				set_variable = { Literate_population = state_population_k }
+			}
+			set_variable = { state_literacy = Literate_population }
+			divide_variable = { state_literacy = state_population_k  }
+		}
+		every_country={
+			set_variable = { Literacy_power = 0}
+			set_variable = { all_pop = 0}
+			every_controlled_state = {
+				if = {
+					limit = {
+						is_core_of = PREV
+					}
+					add_to_variable = { var = PREV.all_pop value = state_population_k } 
+					add_to_variable = { var = PREV.Literacy_power value = Literate_population } 
+				}
+			}
+			set_variable = { Literacy = Literacy_power }
+			divide_variable = { Literacy = all_pop }
+			multiply_variable = { Literacy = 90 }
+		  }
+
+
+	      }
+	}
+	on_monthly = {
+		effect = {
+			every_country={
+			set_variable = { Literacy_power = 0}
+			set_variable = { all_pop = 0}
+			every_controlled_state = {
+				if = {
+					limit = {
+						is_core_of = PREV
+					}
+					add_to_variable = { var = PREV.all_pop value = state_population_k } 
+					add_to_variable = { var = PREV.Literacy_power value = Literate_population } 
+				}
+			}
+			set_variable = { Literacy = Literacy_power }
+			divide_variable = { Literacy = all_pop }
+			multiply_variable = { Literacy = 100 }
+			}
+		}
+	}
+	on_monthly = {
+		effect = {
+			if = {
+				limit = {
+					ENL={
+						has_idea=Ireland_uproar
+					}
+					}
+				}
+				ENL={
+				add_to_variable = {
+				var = Separation_emotions
+				value = 1
+			}
+				}
+		}
+	}
+	
+}

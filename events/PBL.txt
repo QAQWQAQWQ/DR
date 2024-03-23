@@ -1,0 +1,19 @@
+﻿###########################
+# PBL Events
+###########################
+
+add_namespace = PBL
+country_event = {
+	id = PBL.1
+	title = PBL.1.t
+	desc = PBL.1.d
+	picture = GFX_Hungarian_uprising
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = PBL.1.a
+			}
+	}

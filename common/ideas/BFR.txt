@@ -1,0 +1,14 @@
+ideas = {
+    country = {
+		BFR_thriving_free_market= {
+			picture = thriving_free_market
+			modifier = {
+				democratic_drift = 0.03
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				war_support_factor = -0.02
+				state_production_speed_industrial_complex_factor = 0.1
+			}
+          }
+		}
+}

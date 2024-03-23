@@ -1,0 +1,25 @@
+﻿###########################
+# DRM Events
+###########################
+
+add_namespace = DRM
+news_event = {
+	id = DRM.1
+	title = DRM.1.t
+	desc = DRM.1.d
+	#picture = 
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = DRM.1.a
+		hidden_effect = {
+			DRM= { 
+			transfer_state = 78
+			add_state_core = 78
+			transfer_state = 766
+			add_state_core = 766
+	    }
+		}
+	}
+	}
+	

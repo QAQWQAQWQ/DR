@@ -1,0 +1,108 @@
+@PARANOIA_PARANOIAMETER_MAIN_X = 190
+@PARANOIA_PARANOIAMETER_MAIN_Y = 70
+@PARANOIA_PARANOIAMETER_BG_X = 25 #Needs to be -25 relative to MAIN
+@PARANOIA_PARANOIAMETER_BG_Y = -3 #Needs to be -73 relative to MAIN
+@PARANOIA_TEXT_X = 50 #Needs to be -145(overlapping sword) / -130(evading sword) / -140(bottom) relative to MAIN
+@PARANOIA_TEXT_Y = 180 #Needs to be +80(overlapping sword) / +110(bottom) relative to MAIN
+@PHOTO_1_X = 25
+@PHOTO_1_Y = 105
+@PHOTO_2_X = 330
+@PHOTO_2_Y = 22
+@PHOTO_3_X = 440
+@PHOTO_3_Y = 3
+@PHOTO_4_X = 363
+@PHOTO_4_Y = 115
+@PHOTO_5_X = 75
+@PHOTO_5_Y = 5
+guiTypes = {
+
+	containerWindowType = {
+		name = "SCX_Factional_fighting_window"
+		position = { x = 10 y = 0 }
+		size = { width = 300 height= 210 }
+		
+		iconType = {
+			name ="SCX_Factional1"
+			spriteType = "GFX_SCX_Factional1"
+			pdx_tooltip= "SCX_Factional1_TXT"
+			position = { x=210	 y=15 }
+			size = { width = 100% height= 100% }
+		}
+		iconType = {
+			name ="SCX_Factional2"
+			spriteType = "GFX_SCX_Factional2"
+			pdx_tooltip= "SCX_Factional2_TXT"
+			position = { x=55	 y=-65 }
+			size = { width = 100% height= 100% }
+		}
+		iconType = {
+			name ="SCX_Factional3"
+			spriteType = "GFX_SCX_Factional3"
+			pdx_tooltip= "SCX_Factional3_TXT"
+			position = { x=350	 y=-65 }
+			size = { width = 100% height= 100% }
+		}
+		iconType = {
+			name ="SCX_Factional4"
+			spriteType = "GFX_SCX_Factional4"
+			position = { x=55	 y=105 }
+			
+			pdx_tooltip= "SCX_Factional4_TXT"
+			size = { width = 100% height= 100% }
+		}
+		iconType = {
+			name ="SCX_Factional5"
+			spriteType = "GFX_SCX_Factional5"
+			position = {  x=350	 y=105 }
+			pdx_tooltip= "SCX_Factional5_TXT"
+			size = { width = 100% height= 100% }
+		}
+		
+		instantTextBoxType = { 
+			name ="SCX1_text"
+			position = {x=190	 y=95 } 
+			font = "hoi_18mbs"
+			text = "SCX1_text"
+			format = left
+			maxWidth = 150
+			maxHeight = 10
+		}
+		instantTextBoxType = {
+			name ="SCX2_text"
+			position = { x=45	 y=15 } 
+			font = "hoi_18mbs"
+			text = "SCX2_text"
+			format = left
+			maxWidth = 150
+			maxHeight = 10
+		}
+        instantTextBoxType = {
+			name ="SCX3_text"
+			position = { x=40	 y=185 } 
+			font = "hoi_18mbs"
+			text = "SCX3_text"
+			format = left
+			maxWidth = 150
+			maxHeight = 10
+		}
+		instantTextBoxType = {
+			name ="SCX4_text"
+			position = { x=345	 y=15 } 
+			font = "hoi_18mbs"
+			text = "SCX4_text"
+			format = left
+			maxWidth = 150
+			maxHeight = 10
+		}
+		instantTextBoxType = {
+			name ="SCX5_text"
+			position = { x=345	 y=185 } 
+			font = "hoi_18mbs"
+			text = "SCX5_text"
+			format = left
+			maxWidth = 150
+			maxHeight = 10
+		}
+}
+
+}

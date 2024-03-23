@@ -1,0 +1,808 @@
+FRW_Destructive_movement = {
+	Destructive_movemen = {
+	icon = generic_ignite_civil_war
+	visible = {
+	}
+	available = {
+
+	}
+	days_re_enable = 30
+	days_remove = 60
+	cost = 35
+	allowed = {
+		tag = FRW
+	}
+	target_trigger = {
+		FROM = {
+			original_tag = WWS
+		}
+	}
+	complete_effect = { 
+		FROM = { 
+			 random_owned_state = { 
+				damage_building = {
+					type = infrastructure
+					damage = 2
+				}
+			 } 
+		 }
+		}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+	
+}
+Destructive_railway = {
+	icon = generic_ignite_civil_war
+	visible = {
+	}
+	
+	available = {
+
+	}
+	days_re_enable = 30
+	days_remove = 60
+	cost = 35
+	allowed = {
+		tag = FRW
+	}
+	target_trigger = {
+		FROM = {
+			original_tag = WWS
+		}
+	}
+	complete_effect = { 
+		FROM = { 
+			 random_owned_state = { 
+				damage_building = {
+					type = rail_way
+					damage = 2
+				}
+			 } 
+		 }
+		}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+	
+}
+Destructive_arms_factory = {
+	icon = generic_ignite_civil_war
+	visible = {
+	}
+	
+	available = {
+
+	}
+	days_re_enable = 30
+	days_remove = 60
+	cost = 35
+	allowed = {
+		tag = FRW
+	}
+	target_trigger = {
+		FROM = {
+			original_tag = WWS
+		}
+	}
+	complete_effect = { 
+		FROM = { 
+			 random_owned_state = { 
+				damage_building = {
+					type = arms_factory
+					damage = 2
+				}
+			 } 
+		 }
+		}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+	
+}
+Destructive_industrial_complex = {
+	icon = generic_ignite_civil_war
+	visible = {
+	}
+	
+	available = {
+
+	}
+	days_re_enable = 30
+	days_remove = 60
+	cost = 35
+	allowed = {
+		tag = FRW
+	}
+	target_trigger = {
+		FROM = {
+			original_tag = WWS
+		}
+	}
+	complete_effect = { 
+		FROM = { 
+			 random_owned_state = { 
+				damage_building = {
+					type = industrial_complex
+					damage = 2
+				}
+			 } 
+		 }
+		}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+	
+}
+}
+
+####
+FRW_Anti_imperialism = {
+
+Export_LEF = {
+	icon = generic_construction
+	visible = {
+		#has_completed_focus = FRW_focus54
+		country_exists = LEF
+	}
+	available = {
+		
+	}
+	days_re_enable = 30
+	days_remove = 60
+	cost = 35
+	allowed = {
+		tag = FRW
+	} 
+	target_trigger = {
+		FROM = {
+			original_tag = LEF
+		}
+	}
+	complete_effect = { 
+		FRW = { 
+			send_equipment = { target = LEF type = infantry_equipment amount = 3500 }
+		 }
+		}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+	
+}
+Export_YDA = {
+	icon = generic_construction
+	visible = {
+		#has_completed_focus = FRW_focus54
+		country_exists = YDA
+	}
+	available = {
+		
+	}
+	days_re_enable = 30
+	days_remove = 60
+	cost = 35
+	allowed = {
+		tag = FRW
+	} 
+	target_trigger = {
+		FROM = {
+			original_tag = YDA
+		}
+	}
+	complete_effect = { 
+		YDA={
+			add_popularity = {
+			ideology = Reformism
+			popularity = 0.05
+		}
+		}
+		custom_effect_tooltip = Export_YDA_Reform_socialism
+	}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+	
+}
+Export_YDA1 = {
+	icon = generic_construction
+	visible = {
+		has_country_flag = YDA_Indian_independence
+	}
+	available = {
+		
+	}
+	days_re_enable = 30
+	days_remove = 60
+	cost = 35
+	allowed = {
+		tag = FRW
+	} 
+	target_trigger = {
+		FROM = {
+			original_tag = YDA
+		}
+	}
+	complete_effect = { 
+		438={
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		439={
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		FRW={
+			add_opinion_modifier = {
+				target = YDA
+				modifier = ETH_closer_cooperation
+			}
+		}
+		
+	}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+	
+}
+
+}
+
+####
+FRW_Export_the_revolution = {
+
+	Export_the_revolution_XYL = {
+		icon = generic_construction
+		visible = {
+			#has_completed_focus = FRW_focus54
+			#
+		}
+		available = {
+			country_exists = XYL
+		}
+		days_re_enable = 30
+		days_remove = 60 
+		cost = 35
+		allowed = {
+			tag = FRW
+		} 
+		complete_effect = { 
+			FRW = { 
+				send_equipment = { target = XYL type = infantry_equipment amount = 3500 }
+			 }
+			 
+
+
+
+
+
+
+			}
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	Export_the_revolution_ITC = {
+		icon = generic_construction
+		visible = {
+			#has_completed_focus = FRW_focus54
+		}
+		available = {
+			country_exists = ITC
+		}
+		days_re_enable = 30
+		days_remove = 60 
+		cost = 35
+		allowed = {
+			tag = FRW
+		} 
+		complete_effect = { 
+			FRW = { 
+				send_equipment = { target = ITC type = infantry_equipment amount = 3500 }
+			 }
+			}
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	Export_the_revolution_KPD = {
+		icon = generic_construction
+		visible = {
+			#has_completed_focus = FRW_focus54
+		}
+		available = {
+			country_exists = KPD
+		}
+		days_re_enable = 30
+		days_remove = 60 
+		cost = 35
+		allowed = {
+			tag = FRW
+		} 
+		complete_effect = { 
+			FRW = { 
+				send_equipment = { target = KPD type = infantry_equipment amount = 3500 }
+			 }
+			}
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	Export_the_revolution_CPC = {
+		icon = generic_construction
+		visible = {
+			#has_completed_focus = FRW_focus54
+		}
+		available = {
+			country_exists = CPC
+		}
+		days_re_enable = 30
+		days_remove = 60 
+		cost = 35
+		allowed = {
+			tag = FRW
+		} 
+		complete_effect = { 
+			FRW = { 
+				send_equipment = { target = CPC type = infantry_equipment amount = 3500 }
+			 }
+			}
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	Export_the_revolution_SUE = {
+		icon = generic_construction
+		visible = {
+			#has_completed_focus = FRW_focus54
+		}
+		available = {
+			country_exists = SUE
+		}
+		days_re_enable = 30
+		days_remove = 60 
+		cost = 35
+		allowed = {
+			tag = FRW
+		} 
+		complete_effect = { 
+			FRW = { 
+				send_equipment = { target = SUE type = infantry_equipment amount = 3500 }
+			 }
+			}
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	}
+	
+FRW_army_revolution = {
+	FRW_army_revolution1 = {
+	icon = generic_ignite_civil_war
+	visible = {
+	}
+	available = {
+       has_completed_focus = FRW_focus27
+	}
+	days_remove = 1
+	cost = 35
+	allowed = {
+		tag = FRW
+	}
+	complete_effect = { 
+		add_to_variable = {
+			var = FRW_ARMY_VAR
+			value = 3
+		}
+		clamp_variable = {
+			var = FRW_ARMY_VAR
+			min = 0
+			max = 100
+		}
+		}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+	
+}
+}
+
+
+
+
+FRW_election_movement = {
+	FRW_election_movement1 = {
+	icon = generic_ignite_civil_war
+	visible = {
+	}
+	available = {
+	}
+	days_remove = 1
+	cost = 0
+	allowed = {
+		tag = FRW
+	}
+	complete_effect = {    
+		add_to_variable = {
+			var = FRW_Communist_needle_VAR
+			value = 1
+		}
+		  set_variable = {
+			FRW_Wallonia_needle_VAR=3
+		  }
+		  set_country_flag = FRW_Wallonia_Purple_flag
+		  set_variable = {
+			FRW_Calais_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Calais_flag
+		  set_variable = {
+			FRW_Picardy_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Picardy_flag
+		  set_variable = {
+			FRW_Champagne_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Champagne_flag
+		  set_variable = {
+			FRW_Comte_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Comte_flag
+		  set_variable = {
+			FRW_Normandy_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Normandy_flag
+		  set_variable = {
+			FRW_Burgundy_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Burgundy_flag
+		  set_variable = {
+			FRW_De_France_needle_VAR=2
+		  }
+		  set_country_flag=FRW_De_France_flag 
+		  set_variable = {
+			FRW_Central_Region_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Central_Region_flag
+		  set_variable = {
+			FRW_Brittany_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Brittany_flag
+		  set_variable = {
+			FRW_Loire_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Loire_flag
+		  set_variable = {
+			FRW_Poitou_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Poitou_flag
+		  
+		  
+		  set_variable = {
+			FRW_Aquitaine_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Aquitaine_flag  
+		  set_variable = {
+			FRW_Poitou_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Poitou_flag  
+		  set_variable = {
+			FRW_Western_Pyrenees_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Western_Pyrenees_flag  
+		  set_variable = {
+			FRW_South_Central_Region_needle_VAR=2
+		  }
+		  set_country_flag=FRW_South_Central_Region_flag  
+		  set_variable = {
+			FRW_Limousin_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Limousin_flag
+		  set_variable = {
+			FRW_South_Pyrenees_needle_VAR=2
+		  }
+		  set_country_flag=FRW_South_Pyrenees_flag
+		  set_variable = {
+			FRW_Languedoc_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Languedoc_flag
+		  set_variable = {
+			FRW_Provence_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Provence_flag
+		  set_variable = {
+			FRW_Val_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Val_flag
+		  set_variable = {
+			FRW_Alps_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Alps_flag
+		  set_variable = {
+			FRW_Rhone_needle_VAR=2
+		  }
+		  set_country_flag=FRW_Rhone_flag
+		  set_variable = {
+			FRW_Auvergne_needle_VAR=5
+		  }
+		  set_country_flag=FRW_Orange_flag       
+		}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no 
+        ai_will_do = {
+		factor = 1
+		}
+	
+}
+}
+
+
+
+
+
+
+FRW_Maginot_Line_plan = {
+	FRW_Maginot_Line_plan1 = {
+	icon = generic_political_address
+	visible = {
+	}
+	available = {
+		BHL={
+			is_in_faction_with = FRW
+		}
+	}
+	days_remove = 1
+	cost = 0
+	allowed = {
+		tag = FRW
+	}
+	complete_effect = { 
+		BHL={
+			country_event = {id=FRW.21 days=2}
+		}
+		
+		add_to_variable = {
+			var = FRW_Maginot_Line_needle_VAR
+			value = 3
+		}
+		clamp_variable = {
+			var = FRW_Maginot_Line_needle_VAR
+			min = 0
+			max = 100
+		}
+		}
+	fixed_random_seed = no
+	fire_only_once = yes
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}                       
+	
+}
+FRW_Maginot_Line_plan2 = {
+	icon = generic_fortification
+	highlight_states = {
+		highlight_state_targets = {
+			state = 34
+		}
+	}
+	visible = {                                                                                                              
+	}
+	available = {
+		34={
+          is_core_of = FRW
+		  is_controlled_by = FRW
+		}
+	}
+	days_remove = 720
+	cost = 200
+	allowed = {
+		tag = FRW
+	}
+	complete_effect = { 
+		34={
+			add_building_construction = {
+				type = bunker
+				level = 8
+				instant_build = yes
+				province = 3488
+			}
+			add_building_construction = {
+				type = bunker
+				level = 8
+				instant_build = yes
+				province = 11519
+			}
+			add_building_construction = {
+				type = bunker
+				level = 8
+				instant_build = yes
+				province = 6537
+			}
+			add_building_construction = {
+				type = bunker
+				level = 8
+				instant_build = yes
+				province = 9444
+			}
+		}
+		add_to_variable = {
+			var = FRW_Maginot_Line_needle_VAR
+			value = 15
+		}
+		clamp_variable = {
+			var = FRW_Maginot_Line_needle_VAR
+			min = 0
+			max = 100
+		}
+		}
+	fixed_random_seed = no
+	fire_only_once = yes
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+	
+}
+FRW_Maginot_Line_plan3 = {
+	icon = generic_fortification
+	highlight_states = {
+		highlight_state_targets = {
+			state = 18
+		}
+	}
+	visible = {
+	}
+	available = {
+		18={
+          is_core_of = FRW
+		  is_controlled_by = FRW
+		}
+	}
+	days_remove = 720
+	cost = 200
+	allowed = {
+		tag = FRW
+	}
+	complete_effect = { 
+		18={
+			add_building_construction = {
+				type = bunker
+				level = 8
+				instant_build = yes
+				province = 3560
+			}
+			add_building_construction = {
+				type = bunker
+				level = 8
+				instant_build = yes
+				province = 5291
+			}
+		}
+		add_to_variable = {
+			var = FRW_Maginot_Line_needle_VAR
+			value = 15
+		}
+		clamp_variable = {
+			var = FRW_Maginot_Line_needle_VAR
+			min = 0
+			max = 100
+		}
+		}
+	fixed_random_seed = no
+	fire_only_once = yes
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+	
+}
+FRW_Maginot_Line_plan4 = {
+	icon = generic_fortification
+	highlight_states = {
+		highlight_state_targets = {
+			state = 17
+		}
+	}
+	visible = {
+	}
+	available = {
+		17={
+          is_core_of = FRW
+		  is_controlled_by = FRW
+		}
+	}
+	days_remove = 720
+	cost = 200
+	allowed = {
+		tag = FRW
+	}
+	complete_effect = { 
+		17={
+			add_building_construction = {
+				type = bunker
+				level = 8
+				instant_build = yes
+				province = 11516
+			}
+			add_building_construction = {
+				type = bunker
+				level = 8
+				instant_build = yes
+				province = 521
+			}
+			add_building_construction = {
+				type = bunker
+				level = 8
+				instant_build = yes
+				province = 698
+			}
+		}
+		add_to_variable = {
+			var = FRW_Maginot_Line_needle_VAR
+			value = 15
+		}
+		clamp_variable = {
+			var = FRW_Maginot_Line_needle_VAR
+			min = 0
+			max = 100
+		}
+		}
+	fixed_random_seed = no
+	fire_only_once = yes
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+	
+}
+}

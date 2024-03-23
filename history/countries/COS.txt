@@ -1,0 +1,28 @@
+﻿capital = 316
+
+oob = "COS_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+recruit_character = COS_Juan_Bautista_Quiros_Segura
+
+
+set_country_flag = monroe_doctrine
+set_war_support = 0.1
+set_convoys = 10
+
+set_politics = {
+	ruling_party = Conservatism
+	last_election = "1934.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	Liberalism = 15
+	Reactionary = 5
+	Revolutionism = 10
+	Conservatism = 70
+}

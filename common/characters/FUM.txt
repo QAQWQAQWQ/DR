@@ -1,0 +1,17 @@
+characters={
+	FUM_Gabriele_d_Annunzio={
+		name=FUM_Gabriele_d_Annunzio
+		portraits={
+			civilian={
+				large="gfx/leaders/FUM/Portrait_Gabriele_d_Annunzio.tga"
+			}
+		}
+		country_leader={
+			ideology=DAnnunziaism_Reactionary
+            desc=FUM_Gabriele_d_Annunzio_DESC
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
+	}

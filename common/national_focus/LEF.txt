@@ -1,0 +1,83 @@
+#!gfx:interface\RS_icon.gfx
+focus_tree = {
+	id = LEF
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LEF
+		}  
+	}
+	default = no
+	focus = {
+		id = LEF_focus_1
+		icon = GFX_goal_LEF_focus1
+		cost = 0.00
+		x = 11
+		y = 0
+available = {
+	has_country_flag = LEF_war
+}
+	}
+	focus = {
+		id = LEF_focus_2
+		icon = GFX_goal_LEF_focus2
+		cost = 0.00
+		prerequisite = {
+			focus = LEF_focus_1
+		}
+		x = 11
+		y = 1
+
+	}
+	focus = {
+		id = LEF_focus_3
+		icon = GFX_goal_LEF_focus3
+		cost = 0.00
+		prerequisite = {
+			focus = LEF_focus_2
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = LEF_focus_4
+		icon = GFX_goal_LEF_focus4
+		cost = 0.00
+		prerequisite = {
+			focus = LEF_focus_2
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = LEF_focus_5
+		icon = GFX_goal_LEF_focus5
+		cost = 0.00
+		prerequisite = {
+			focus = LEF_focus_2
+		}
+		x = 14
+		y = 2
+
+	}
+	focus = {
+		id = LEF_focus_6
+		icon = GFX_goal_LEF_focus6
+		cost = 0.00
+		prerequisite = {
+			focus = LEF_focus_3
+		}
+		prerequisite = {
+			focus = LEF_focus_4
+		}
+		prerequisite = {
+			focus = LEF_focus_5
+		}
+		x = 11
+		y = 3
+
+	}
+}

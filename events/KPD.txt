@@ -1,0 +1,28 @@
+﻿###########################
+# KPD Events
+###########################
+
+add_namespace = KPD
+news_event = {
+	id = KPD.1
+	title = KPD.1.t
+	desc = KPD.1.d
+	picture = GFX_Hungarian_uprising
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = KPD.1.a
+		KPD = {
+				transfer_state = 56
+                add_state_core = 56
+				transfer_state = 57
+                add_state_core = 57
+				load_oob = "KPD_1920"
+				load_oob = "KPD_1920NAVY"
+			}
+			}
+	}

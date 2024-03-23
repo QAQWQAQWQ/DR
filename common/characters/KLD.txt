@@ -1,0 +1,79 @@
+characters={
+	KLD_Stjepan_Radic={
+		name=KLD_Stjepan_Radic
+		portraits={
+			civilian={
+				large="gfx/leaders/KLD/Portrait_Stjepan_Radic.tga"
+			}
+		}
+		country_leader={
+			ideology=Agrarianism_revolutionism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+    KLD_Ivan_Palecek={
+		name=KLD_Ivan_Palecek
+		portraits={
+			civilian={
+				large="gfx/leaders/KLD/Portrait_Ivan_Palecek.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
+	KLD_Oscar_Portiolec={
+		name=KLD_Oscar_Portiolec
+		portraits={
+			civilian={
+				large="gfx/leaders/KLD/Portrait_Oscar_Portiolec.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	KLD_Safvet_beg_Basagic={
+		name=KLD_Safvet_beg_Basagic
+		portraits={
+			civilian={
+				large="gfx/leaders/KLD/Portrait_Safvet_beg_Basagic.tga"
+			}
+		}
+		country_leader={
+			ideology=Religiousness_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	KLD_Lazar_Dimitrievich={
+		name=KLD_Lazar_Dimitrievich
+		portraits={
+			civilian={
+				large="gfx/leaders/KLD/Portrait_Lazar_Dimitrievich.tga"
+			}
+		}
+		country_leader={
+			ideology=Nationalism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}			
+	}

@@ -1,0 +1,25 @@
+﻿capital = 629
+
+oob = "XWY_1920"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+recruit_character = XWY_David_Kalakaua_Kawananakoa
+
+
+set_politics = {
+	ruling_party = Conservatism
+	last_election = "1918.11.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+set_popularities = {
+	Liberalism = 5
+	Reactionary = 1
+	Conservatism = 89
+	Revolutionism = 5
+}

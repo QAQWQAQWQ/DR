@@ -1,0 +1,27 @@
+state= {
+	id=595
+	name="闽海"
+	manpower = 4755600
+	state_category = city
+	history={
+		owner = SUC
+		add_core_of = SUC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			4196 = {
+				naval_base = 3
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+		victory_points = { 
+			4196 10 
+		}
+	}
+	provinces={
+		1094 1166 4169 4196 7027 10069
+	}
+
+	local_supplies=0.0 
+}

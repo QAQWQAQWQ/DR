@@ -1,0 +1,30 @@
+characters={
+	ITE_Benito_Mussolini={
+		name=ITE_Benito_Mussolini
+		portraits={
+			civilian={
+				large="gfx/leaders/ITE/Portrait_Benito_Mussolini.tga"
+			}
+		}
+		country_leader={
+			ideology=Scientism_revolutionism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
+                ITE_Vitorioemanuel={
+		name=ITE_Vitorioemanuel
+		portraits={
+			civilian={
+				large="gfx/leaders/ITE/Portrait_Vitorioemanuel.tga"
+			}
+		}
+		country_leader={
+			ideology=Classicism_Conservatism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

@@ -1,0 +1,12 @@
+ideas = {
+    country = {
+		SJR_TPP = {
+			picture = TPP
+			modifier = {
+				stability_weekly = 0.02
+				political_power_gain = 0.2
+				drift_defence_factor = 0.2
+			}
+          }
+		}
+}

@@ -1,0 +1,59 @@
+﻿division_template = {
+	name = "民兵旅"				
+	regiments = {
+		militia = { x = 0 y = 0 }	
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "混成旅"			
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "骑兵旅"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+        cavalry = { x = 1 y = 0 }
+	}
+}
+
+units = {
+	
+	division = {
+		name = "蒙古第一混成旅"
+		location = 4801
+		division_template = "混成旅"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+
+	}
+	division = {
+		name = "蒙古第二混成旅"
+		location = 4801
+		division_template = "混成旅"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+
+	}
+	division = {
+		name = "蒙古骑兵旅"
+		location = 4801
+		division_template = "骑兵旅"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+
+	}
+}

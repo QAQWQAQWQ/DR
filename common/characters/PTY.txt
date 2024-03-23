@@ -1,0 +1,31 @@
+characters={
+	PTY_Joao_de_Canto={
+		name=PTY_Joao_de_Canto
+		portraits={
+			civilian={
+				large="gfx/leaders/PTY/portrait_João_de_Canto.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	PTY_Afonso_Augusto={
+		name=PTY_Afonso_Augusto
+		portraits={
+			civilian={
+				large="gfx/leaders/PTY/portrait_Afonso_Augusto.tga"
+			}
+		}
+		country_leader={
+			ideology=Socialism_Liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+
+	}

@@ -1,0 +1,31 @@
+characters={
+	RDN_Prince_Ferdinand_Pius={
+		name=RDN_Prince_Ferdinand_Pius
+		portraits={
+			civilian={
+				large="gfx/leaders/RDN/Portrait_Prince_Ferdinand_Pius.tga"
+			}
+		}
+		country_leader={
+			ideology=Classicism_Conservatism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	RDN_Joachim={
+		name=RDN_Joachim
+		portraits={
+			civilian={
+				large="gfx/leaders/RDN/Portrait_Joachim.tga"
+			}
+		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	}

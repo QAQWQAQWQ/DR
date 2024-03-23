@@ -1,0 +1,196 @@
+ideas = {
+    country = {
+		SIW_Ban_the_mafia = {
+			picture = Ban_the_mafia
+			modifier = {
+				stability_weekly=-0.05
+                war_support_weekly=0.05
+              }
+		}
+		SIW_martial_law = {
+			picture = martial_law
+			modifier = {
+				stability_weekly=-0.05
+				political_power_factor = -0.05
+              }
+			}
+        SIW_day_offensive = {
+			picture = 30day_offensive
+			modifier = {
+				army_attack_factor = 0.10
+              }
+		}
+		SIW_Serbian_General_Trade_Union = {
+			picture = Serbian_General_Trade_Union
+			modifier = {
+				political_power_gain = 0.01
+				party_popularity_stability_factor = 0.01
+              }
+		}
+		SIW_Serbian_General_Trade_Union1 = {
+			picture = Serbian_General_Trade_Union1
+			modifier = {
+				political_power_gain = 0.03
+				party_popularity_stability_factor = 0.02
+              }
+		}
+		SIW_Land_value_added_tax = {
+			picture = Land_value_added_tax
+			modifier = {
+				consumer_goods_factor = -0.02
+              }
+		}
+		SIW_Tighten_control = {
+			picture = Tighten_control
+			modifier = {
+				stability_weekly=0.1
+				war_support_weekly=0.05
+              }
+		}
+		SIW_Tighten_control1 = {
+			picture = Tighten_control
+			modifier = {
+				stability_weekly=-0.1
+				war_support_weekly=-0.05
+              }
+		}
+		SIW_Collective = {
+			picture = Collective
+			modifier = {
+				global_building_slots_factor = 0.02
+				conversion_cost_mil_to_civ_factor = -0.02 
+              }
+		}
+		SIW_Collective1 = {
+			picture = Collective
+			modifier = {
+				global_building_slots_factor = 0.05
+				conversion_cost_mil_to_civ_factor = -0.05 
+              }
+		}
+		SIW_Collective2 = {
+			picture = Collective2
+			modifier = {
+				industrial_capacity_factory = 0.05  
+              }
+		}
+		SIW_Collective3 = {
+			picture = Collective
+			modifier = {
+				global_building_slots_factor = 0.1
+				conversion_cost_mil_to_civ_factor = -0.1 
+				production_factory_max_efficiency_factor = 0.05
+              }
+		}
+		SIW_Collective4 = {
+			picture = Collective
+			modifier = {
+				global_building_slots_factor = 0.15
+				conversion_cost_mil_to_civ_factor = -0.15 
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+              }
+		}
+		SIW_Brave_people_great_country = {
+			picture = Brave_people_great_country
+			modifier = {
+				defensive_war_stability_factor =0.15
+                offensive_war_stability_factor =0.15
+              }
+		}
+		SIW_Nationalized_foreign_enterprises = {
+			picture = Nationalized_foreign_enterprises
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.1
+                production_speed_dockyard_factor = 0.1
+                production_speed_air_base_factor = 0.1
+                production_speed_naval_base_factor = 0.1
+              }
+		}
+		SIW_State_Council_Modernized_Industry = {
+			picture = State_Council_Modernized_Industry
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.15
+                production_speed_dockyard_factor = 0.15
+                production_speed_air_base_factor = 0.15
+                production_speed_naval_base_factor = 0.15
+				conversion_cost_civ_to_mil_factor= -0.1
+                conversion_cost_mil_to_civ_factor = -0.1
+              }
+		}
+		SIW_State_railway_company = {
+			picture = State_railway_company
+			modifier = {
+				production_speed_rail_way_factor = 0.1
+              }
+		}
+		SIW_Foreign_consultant = {
+			picture = Foreign_consultant
+			modifier = {
+				air_chief_cost_factor = -0.25
+		army_chief_cost_factor = -0.25
+		navy_chief_cost_factor = -0.25
+              }
+		}
+	}	
+
+
+
+	    materiel_manufacturer = { 
+			
+		designer = yes
+		
+		Zastava = {
+			
+			available = {
+				has_completed_focus = Zastava_Company
+			}
+			allowed = {
+				original_tag = SIW
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+}
+
+		aircraft_manufacturer = { 
+			
+			designer = yes
+			
+			Air_Serbia = {
+				
+				allowed = {
+					original_tag = SIW
+				}
+				available = {
+					has_completed_focus = Find_aircraft_suppliers
+				}
+				research_bonus = {
+					air_equipment = 0.15
+				}
+				
+				traits = { light_aircraft_manufacturer }
+				
+				equipment_bonus = {
+					
+				}
+				
+				ai_will_do = {
+					factor = 1
+				}
+			}
+}
+
+}

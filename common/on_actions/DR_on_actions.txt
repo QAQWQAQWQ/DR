@@ -1,0 +1,121 @@
+on_actions = {
+
+
+	on_startup = {
+		
+		effect = {
+			every_country = {
+				set_variable = { resource_grain = resource@grain }
+				set_variable = { resource_grain_exported = resource_exported@grain }
+				set_variable = { grain_temp_manpower = max_manpower_k }
+				add_to_variable = { resource_grain = 50 }
+				clamp_variable = {
+					var = resource_grain
+					min = 0
+					max = 5000
+				}
+				
+			} 
+
+		}
+	}
+	on_startup = {
+		
+		effect = {
+			every_country = {
+				if={
+					limit={
+						OR = {
+							original_tag = ZHX
+							original_tag = YDA
+						}
+					}
+					add_to_variable = { resource_grain = 1000 }
+				}
+			} 
+
+		}
+	}
+	on_daily = {
+		
+		effect = {
+			every_country = {
+				set_temp_variable = { resource_grain = resource@grain }#_temp
+				clamp_variable = {
+					var = resource_grain
+					min = 0
+					max = 5000
+				}
+				#set_temp_variable = { resource_grain_exported = resource_exported@grain }
+			} 
+		} 
+	} #on_weekly
+	on_weekly = {
+		
+		effect = {
+			every_country = {
+				set_temp_variable = { grain_temp_manpower = max_manpower_k } #temp
+				divide_temp_variable = { grain_temp_manpower = 150000 }#temp
+				set_variable = { grain_manpower = grain_temp_manpower }
+				subtract_from_variable = { resource_grain = grain_manpower }
+				divide_variable = { grain_manpower = 0.01 }
+				clamp_variable = {
+					var = resource_grain
+					min = 0
+					max = 5000
+				}
+        }  
+    
+			} 
+		}
+	
+	on_monthly = {
+		
+		effect = {
+			every_country = {
+				set_temp_variable = { resource_grain_exported = resource_exported@grain } #temp
+				divide_temp_variable = { resource_grain_exported = 88 }#temp
+				set_variable = { resource_grain_exp = resource_grain_exported }
+				add_to_variable = { resource_grain = resource_grain_exp }
+				divide_variable = { resource_grain_exp = 0.01 }
+				clamp_variable = {
+					var = resource_grain
+					min = 0
+					max = 5000
+				}
+			} 
+		}
+	}
+	on_daily = {
+		
+		effect = {
+			if={
+				limit={
+					has_country_flag = Famine_in_Russia
+				}
+				set_variable = { grain_manpower = 2000 }
+			}
+			if={
+				limit={
+					has_country_flag = Famine_Russia
+				}
+				set_variable = { grain_manpower = 1500 }
+			}
+		}
+	}
+	on_weekly = {
+		effect = {
+			if={
+				limit={
+					check_variable = {
+						resource_grain = 0
+					}
+				}
+				add_timed_idea = {
+					idea = Food_shortages
+					days = 30
+				}
+			}
+		}
+	}
+}

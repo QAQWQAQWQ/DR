@@ -1,0 +1,13 @@
+Get_grid_Faction = {
+	clear_array = ROOT.grid_faction_array
+	set_variable = {
+		ROOT.grid_faction_leader = THIS.faction_leader
+	}
+	for_each_loop = {
+		array = global.faction_menber_@THIS.faction_leader
+		add_to_array = { ROOT.grid_faction_array = v }
+	}
+	ROOT = {
+		set_country_flag = faction_gui_open
+	}
+}

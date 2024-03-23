@@ -1,0 +1,34 @@
+China_power_struggle = {
+	icon = generic_construction
+	
+	picture = GFX_decisions_China_power_struggle
+
+	priority = 6
+
+visible = {
+		608 = {
+			is_controlled_by = ROOT
+		}
+}
+
+	allowed = {
+		
+		OR = {
+			TAG = ZHX
+			TAG = SCX
+			TAG = GUG
+			TAG = HAQ
+			TAG = WUP
+			TAG = DUQ
+			TAG = SUC
+			TAG = LXS
+			TAG = SXS
+			TAG = NXS
+			TAG = XJC
+		}
+	}
+	
+		
+}
+
+

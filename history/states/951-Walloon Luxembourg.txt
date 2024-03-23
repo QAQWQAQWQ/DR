@@ -1,0 +1,30 @@
+state=
+{
+	id=951
+	name="STATE_951"
+	
+	state_category = town
+	resources={
+		grain=1
+		
+	}
+	manpower = 104748
+	resources={
+		steel=1 # was: 8
+	}
+
+	history=
+	{
+		owner = LSB
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = LSB
+	}
+
+	provinces=
+	{
+9418 11407 	}
+
+	local_supplies=0.0 
+}

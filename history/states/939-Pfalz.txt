@@ -1,0 +1,30 @@
+
+state={
+	id=939
+	name="STATE_939"
+	manpower = 927739
+	resources={
+		steel=20 # was: 100
+		aluminium=5 # was: 24
+	}
+	
+	state_category = city
+
+	history={
+		owner = DOL
+		add_core_of = DOL
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+	}
+
+	provinces={
+		563 3558 11547 
+	}
+	
+	
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,441 @@
+focus_tree = {
+	id = FTX
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FTX
+		}
+	}
+	default = no
+	focus = {
+		id = FTX_Young_Marshal
+		icon = GFX_Revitalizing_the_Republic
+		cost = 7.00
+		x = 27
+		y = 0
+    completion_reward = {
+	add_political_power = 50
+}
+	}
+	focus = {
+		id = FTX_Lineal
+		icon = GFX_Lineal
+		cost = 7.00
+		available = {
+			country_exists = ZHX 
+		}
+		prerequisite = {
+			focus = FTX_Young_Marshal
+		}
+		mutually_exclusive = {
+			focus = FTX_Anhui_system
+		}
+		x = 24
+		y = 1
+completion_reward = {
+	custom_effect_tooltip = Lineal_system_T
+}
+	}
+	focus = {
+		id = FTX_Direct_Alliance
+		icon = GFX_Direct_Alliance
+		cost = 7.00
+		prerequisite = {
+			focus = FTX_Lineal
+		}
+		x = 19
+		y = 2
+completion_reward = {
+	ZHX = { add_to_faction = FTX }
+	give_military_access = ZHX
+	add_opinion_modifier = {
+		target = ZHX
+		modifier = factions
+	}
+}
+	}
+	focus = {
+		id = FTX_Anhui_system
+		icon = GFX_Anhui_system
+		cost = 7.00
+		available = {
+			country_exists = DUQ 
+		}
+		prerequisite = {
+			focus = FTX_Young_Marshal
+		}
+		mutually_exclusive = {
+			focus = FTX_Lineal
+		}
+		x = 30
+		y = 1
+completion_reward = {
+	custom_effect_tooltip = Anhui_system_T
+}
+	}
+	focus = {
+		id = FTX_suppress_bandits
+		icon = GFX_suppress_bandits
+		cost = 7.00
+		prerequisite = {
+			focus = FTX_Lineal
+			focus = FTX_Anhui_system
+		}
+		x = 25
+		y = 2
+completion_reward = {
+	remove_ideas = FTX_brigand
+}
+	}
+	focus = {
+		id = FTX_Recruit_bandits
+		icon = GFX_Recruit_bandits
+		cost = 7.00
+		prerequisite = {
+			focus = FTX_suppress_bandits
+		}
+		x = 23
+		y = 3
+completion_reward = {
+	add_manpower = 1500
+	show_unit_leaders_tooltip = FTX_XieWenDong
+	hidden_effect = {
+	FTX_XieWenDong = {
+		set_nationality = FTX
+	}
+}
+}
+	}
+	focus = {
+		id = FTX_logistics
+		icon = GFX_logistics
+		cost = 7.00
+		prerequisite = {
+			focus = FTX_Anhui_system
+			focus = FTX_Lineal
+		}
+		x = 29
+		y = 2
+completion_reward = {
+	add_equipment_to_stockpile = { 
+	type = motorized_equipment 
+	amount = 150 
+	producer = FTX }  
+}
+	}
+	focus = {
+		id = FTX_1920S
+		icon = GFX_1920S
+		cost = 7.00
+		prerequisite = {
+			focus = FTX_suppress_bandits
+			focus = FTX_logistics
+		}
+		x = 27
+		y = 3
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = FTX_military
+		icon = GFX_Fengtian_Army
+		cost = 7.00
+		prerequisite = {
+			focus = FTX_1920S
+		}
+		x = 20
+		y = 4
+		completion_reward = {
+			add_command_power = 20
+		}
+	}
+	focus = {
+		id = FTX_reorganization
+		icon = GFX_land_force
+		cost = 7.00
+		prerequisite = {
+			focus = FTX_military
+		}
+		x = 19
+		y = 5
+completion_reward = {
+	army_experience = 15
+}
+	}
+	focus = {
+		id = FTX_train
+		icon = GFX_Professional_army
+		cost = 7.00
+		prerequisite = {
+			focus = FTX_military
+		}
+		x = 21
+		y = 5
+completion_reward={
+	army_experience = 15
+}
+	}
+	focus = {
+		id = FTX_gifted_people
+		icon = GFX_gifted_people
+		cost = 7.00
+		prerequisite = {
+			focus = FTX_1920S
+		}
+		x = 25
+		y = 4
+completion_reward = {
+	add_ideas = FTX_gifted_people
+}
+	}
+	focus = {
+		id = FTX_Remove_bureaucrat
+		icon = GFX_Remove_bureaucrat
+		cost = 7.00
+		prerequisite = {
+			focus = FTX_1920S
+		}
+		x = 29
+		y = 4
+		completion_reward = {
+			add_ideas = FTX_Remove_bureaucrat
+		}
+	}
+	focus = {
+		id = FTX_People_livelihood
+		icon = GFX_People_livelihood
+		cost = 7.00
+		prerequisite = {
+			focus = FTX_gifted_people
+		}
+		prerequisite = {
+			focus = FTX_Remove_bureaucrat
+		}
+		x = 27
+		y = 5
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = No_investment
+				add_idea = Weak_investments
+			}
+		}
+
+	}
+	focus = {
+		id = FTX_Enable_talents
+		icon = GFX_Enable_talents
+		cost = 7.00
+		prerequisite = {
+			focus = FTX_Remove_bureaucrat
+		}
+		x = 31
+		y = 5
+		completion_reward ={
+			add_stability = 0.05
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = FTX_Livelihood_guarantee
+		icon = GFX_Livelihood_guarantee
+		cost = 7.00
+		prerequisite = {
+			focus = FTX_People_livelihood
+		}
+		prerequisite = {
+			focus = FTX_Enable_talents
+		}
+		x = 29
+		y = 6
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Weak_investments
+				add_idea = Underlying_investment
+			}
+		}
+	}
+	focus = {
+		id = FTX_Railway_improvement
+		icon = GFX_Railway_improvement
+		cost = 7.00
+		prerequisite = {
+			focus = FTX_logistics
+		}
+		x = 31
+		y = 3
+completion_reward = {
+	build_railway = {
+		level = 2
+		build_only_on_allied = no
+		controller_priority = {
+				base = 2
+				modifier = {
+						tag = FTX
+						add = 2
+					}
+			}
+		fallback = yes
+		start_state = 328
+		target_state = 838
+	}
+}
+	}
+	focus = {
+		id = FTX_economic_policy
+		icon = GFX_economic_policy
+		cost = 7.00
+		prerequisite = {
+			focus = FTX_1920S
+		}
+		x = 36
+		y = 4
+completion_reward = {
+	
+}
+	}
+	focus = {
+		id = FTX_Stabilizing_market
+		icon = GFX_Stabilizing_market
+		cost = 7.00
+		prerequisite = {
+			focus = FTX_economic_policy
+		}
+		x = 34
+		y = 5
+		completion_reward ={
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = FTX_Anhui_Alliance
+		icon = GFX_Anhui_Alliance
+		cost = 7.00
+		prerequisite = {
+			focus = FTX_Anhui_system
+		}
+		x = 35
+		y = 2
+		completion_reward = {
+			DUQ = { add_to_faction = FTX }
+			give_military_access = DUQ
+			add_opinion_modifier = {
+				target = DUQ
+				modifier = factions
+			}
+		}
+	}
+	focus = {
+		id = FTX_Building_financial_system
+		icon = GFX_Building_financial_system
+		cost = 7.00
+		prerequisite = {
+			focus = FTX_economic_policy
+		}
+		x = 36
+		y = 5
+completion_reward = {
+	add_political_power = 60
+}
+	}
+	focus = {
+		id = FTX_foreign_investment
+		icon = GFX_foreign_investment
+		cost = 7.00
+		prerequisite = {
+			focus = FTX_economic_policy
+		}
+		x = 38
+		y = 5
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = closed_economy
+				add_idea = export_focus
+			}
+		}
+	}
+	focus = {
+		id = FTX_Revitalize_industry
+		icon = GFX_Revitalize_industry
+		cost = 7.00
+		prerequisite = {
+			focus = FTX_Stabilizing_market
+		}
+		prerequisite = {
+			focus = FTX_foreign_investment
+		}
+		prerequisite = {
+			focus = FTX_Building_financial_system
+		}
+		x = 36
+		y = 6
+completion_reward={
+
+}
+	}
+	focus = {
+		id = FTX_military_academy
+		icon = GFX_military_academy
+		cost = 7.00
+		prerequisite = {
+			focus = FTX_reorganization
+		}
+		prerequisite = {
+			focus = FTX_train
+		}
+		x = 20
+		y = 6
+completion_reward = {
+	add_command_power = 120
+}
+	}
+	focus = {
+		id = FTX_Educational_program
+		icon = GFX_Educational_program
+		cost = 7.00
+		prerequisite = {
+			focus = FTX_gifted_people
+		}
+		x = 23
+		y = 5
+completion_reward = {
+	swap_ideas = {
+		remove_idea = completely_illiterate
+		add_idea = elementary_school
+	}
+}
+	}
+	focus = {
+		id = FTX_pragmatism
+		icon = GFX_pragmatism
+		cost = 7.00
+		prerequisite = {
+			focus = FTX_Educational_program
+		}
+		prerequisite = {
+			focus = FTX_People_livelihood
+		}
+		x = 25
+		y = 6
+completion_reward = {
+	add_ideas = FTX_pragmatism
+}
+	}
+	focus = {
+		id = FTX_Containment_opponents
+		icon = GFX_Containment_opponents
+		cost = 7.00
+		prerequisite = {
+			focus = FTX_pragmatism
+		}
+		prerequisite = {
+			focus = FTX_Livelihood_guarantee
+		}
+		x = 27
+		y = 7
+completion_reward ={
+	add_stability = -0.05
+}
+	}
+}

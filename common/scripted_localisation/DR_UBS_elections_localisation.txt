@@ -1,0 +1,68 @@
+defined_text = { 
+	name = GetDP
+	text = {
+		localization_key = GFX_Slider_bg
+    trigger={ 
+		check_variable={ DP_party = 0 }
+		check_variable={ GOP_party = 0 }
+	}
+	}
+	###DP
+	text = {
+		localization_key = GFX_DP_Narrow_victory1_bg
+    trigger={ 
+		check_variable={ DP_party = 283 }
+		check_variable={ GOP_party = 255 }
+	}
+	}
+	text = {
+		localization_key = GFX_DP_Narrow_victory2_bg
+    trigger={ 
+		check_variable={ DP_party = 277 }
+		check_variable={ GOP_party = 261 }
+	}
+	}
+	text = {
+		localization_key = GFX_DP_Victory_bg
+    trigger={ 
+		check_variable={ DP_party = 410 }
+		check_variable={ GOP_party = 128 }
+	}
+	}
+	text = {
+		localization_key = GFX_DP_Victory2_bg
+    trigger={ 
+		check_variable={ DP_party = 388 }
+		check_variable={ GOP_party = 150 }
+	}
+	}
+	###GOP
+	text = {
+		localization_key = GFX_GOP_Narrow_victory1_bg
+    trigger={ 
+		check_variable={ DP_party = 246 }
+		check_variable={ GOP_party = 292 }
+	}
+	}
+	text = {
+		localization_key = GFX_GOP_Narrow_victory2_bg
+    trigger={ 
+		check_variable={ DP_party = 237 }
+		check_variable={ GOP_party = 301 }
+	}
+	}
+	text = {
+		localization_key = GFX_GOP_Victory_bg
+    trigger={ 
+		check_variable={ DP_party = 167 }
+		check_variable={ GOP_party = 371 }
+	}
+	}
+	text = {
+		localization_key = GFX_GOP_Victory2_bg
+    trigger={ 
+		check_variable={ DP_party = 87 }
+		check_variable={ GOP_party = 451 }
+	}
+	}
+}

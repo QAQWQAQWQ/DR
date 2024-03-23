@@ -1,0 +1,64 @@
+﻿capital = 64
+oob = "DDE_1920"
+
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+	basic_light_tank = 1
+}
+
+1920.1.1 = {
+
+	add_political_power = 198
+                add_manpower = 1118
+	oob = "DDE_1920"
+	set_technology = {
+		early_fighter = 1
+		CAS1 = 1
+		gw_artillery = 1
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+		#electronics
+		
+		
+		
+		
+		#industry
+		
+		
+		
+		fuel_silos = 1
+		
+		
+		
+		
+	}
+}
+
+set_politics = {
+	ruling_party = Revolutionism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	Reactionary = 15
+	Revolutionism = 80
+	Conservatism = 5
+}
+create_country_leader = {
+	name = "卡尔·李卜克内西"
+	desc = ""
+	picture = "Portrait_Karl_Liebknecht.tga"
+	expire = "1965.1.1"
+	ideology = Scientism_revolutionism
+	traits = {
+		
+	}
+}

@@ -1,0 +1,49 @@
+defined_text = { 
+	name = GetShanghaiworker
+	text = {
+		 localization_key = GFX_Shanghai_MAP
+trigger = {
+     has_country_flag=DR_Shanghai1
+}
+}
+text = {
+	localization_key = GFX_Shanghai2
+trigger = {
+	 has_country_flag=DR_Shanghai2
+}
+}
+text = {
+	localization_key = GFX_Shanghai3
+trigger = {
+	has_country_flag=DR_Shanghai_3
+}
+}
+text = {
+	localization_key = GFX_Shanghai4
+trigger = {
+	has_country_flag=DR_Shanghai_4
+}
+}
+text = {
+	localization_key = GFX_Shanghai5
+trigger = {
+	has_country_flag=DR_Shanghai_5
+}
+}
+text = {
+	localization_key = GFX_Shanghai6
+trigger = {
+	has_country_flag=DR_Shanghai6
+}
+}
+
+
+
+    text = {
+		 localization_key = GFX_Shanghai1
+trigger = {
+	
+}
+}
+
+}

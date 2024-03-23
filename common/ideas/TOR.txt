@@ -1,0 +1,26 @@
+ideas = {
+    country = {
+		TOR_Lone_Star_Republic = {
+			picture = Lone_Star_Republic
+			modifier = {
+				army_core_attack_factor = 0.05
+                army_core_defence_factor = 0.05
+				political_power_factor = -0.02
+				stability_factor = 0.1
+				war_support_factor = -0.03
+				drift_defence_factor = 0.1
+				enemy_declare_war_tension = 0.2
+			}
+          }
+		  TOR_The_Promised_Land = {
+			picture = The_Promised_Land
+			modifier = {
+				political_power_factor = -0.01
+				local_resources_factor = 0.1
+				state_production_speed_industrial_complex_factor = 0.1
+				state_resource_oil = 5
+			}
+          }
+		 
+		}
+}

@@ -1,0 +1,82 @@
+#!gfx:interface\RS_icon.gfx
+focus_tree = {
+	id = FUM
+	country = {
+		factor = 0 
+		modifier = {
+			add = 10
+			tag = FUM
+		}
+	}
+	default = no
+	focus = {
+		id = FUM_focus_1
+		icon = GFX_goal_FUM_focus_1
+		cost = 7.00
+		x = 17
+		y = 0
+        completion_reward={
+	    add_political_power = 150
+        }
+	} 
+	focus = {
+		id = FUM_focus_2
+		icon = GFX_goal_FUM_focus_2
+		cost = 7.00
+		prerequisite={focus=FUM_focus_1}
+		x = 17
+		y = 1
+        completion_reward={
+        }
+    }
+	focus = {
+		id = FUM_focus_3
+		icon = GFX_goal_FUM_focus_3
+		cost = 7.00
+		prerequisite={focus=FUM_focus_2}
+		x = 16 
+		y = 2
+        completion_reward={
+        }
+	}
+	focus = {
+		id = FUM_focus_4
+		icon = GFX_goal_FUM_focus_4
+		cost = 7.00
+		prerequisite={focus=FUM_focus_2}
+		x = 18
+		y = 2
+        completion_reward={
+        }
+	}
+	focus = {
+		id = FUM_focus_5
+		icon = GFX_goal_FUM_focus_5
+		cost = 7.00
+		prerequisite={focus=FUM_focus_2}
+		x = 17
+		y = 3
+        completion_reward={
+        }
+	} 
+	focus = {
+		id = FUM_focus_6
+		icon = GFX_goal_FUM_focus_6
+		cost = 7.00
+		prerequisite={focus=FUM_focus_3}
+		x = 15
+		y = 3
+        completion_reward={
+        }
+	}
+	focus = {
+		id = FUM_focus_7
+		icon = GFX_goal_FUM_focus_7
+		cost = 7.00
+		prerequisite={focus=FUM_focus_4}
+		x = 19
+		y = 3
+        completion_reward={
+        }
+	}  
+}

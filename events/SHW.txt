@@ -1,0 +1,586 @@
+﻿###########################
+# SHW Events
+###########################
+
+add_namespace = SHW
+add_namespace = FEL
+news_event = {
+	id = SHW.1
+	title = SHW.1.t
+	desc = SHW.1.d
+	picture = GFX_Famine_in_Russia
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = SHW.1.a
+		#set_variable = { grain_manpower = 2000 }
+      
+		#remove_country_flag = Famine_in_Russia
+		set_country_flag = Famine_Russia
+		custom_effect_tooltip = Famine_in_Russia
+		add_political_power = -150
+	    add_stability = -0.5
+        add_ideas = SHW_famine
+		set_country_flag = Famine
+		hidden_effect={
+			news_event = { id = SHW.2 days = 15}
+		}
+	    }
+	}
+	country_event = {
+		id = SHW.2
+		title = SHW.2.t
+		desc = SHW.2.d
+
+		picture = GFX_Russian_Holodomor
+
+	    fire_only_once = yes
+
+	    is_triggered_only = yes
+		
+
+		option = {
+			name = SHW.2.a
+			hidden_effect={
+				news_event = { id = SHW.3 days = 10}
+			}
+		}
+	}
+	
+	news_event = {
+	id = SHW.3
+	title = SHW.3.t
+	desc = SHW.3.d
+	picture = GFX_Georgian_uprising
+
+	major = yes
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+immediate = {
+	hidden_effect={
+		play_song = Workers_Marseillaise
+	}
+	
+}
+
+	option = {
+         name = SHW.3.a
+		 hidden_effect = {
+			set_global_flag=Russia_uprising 
+		 SHW = {
+			    country_event= {id=SHW.5 days=3}
+				mark_focus_tree_layout_dirty = yes
+			delete_unit = { 
+				state = 231             
+				 disband = no
+				  }
+			  delete_unit = { 
+				state = 230             
+				 disband = no
+				  } 
+		 }
+SUE = {
+	    transfer_state = 219
+	    add_state_core = 219
+	    transfer_state = 232
+		add_state_core = 232
+		transfer_state = 213
+		add_state_core = 213
+		transfer_state = 96
+		add_state_core = 96
+		transfer_state = 95
+		add_state_core = 95
+		transfer_state = 224
+		add_state_core = 224
+		transfer_state = 214
+		add_state_core = 214
+		transfer_state = 579
+		add_state_core = 579
+		transfer_state = 215
+		add_state_core = 215
+	    transfer_state = 826
+		add_state_core = 826
+	    transfer_state = 821
+		add_state_core = 821
+	    transfer_state = 828
+		add_state_core = 828
+	    transfer_state = 827
+		add_state_core = 827
+	    transfer_state = 233
+		add_state_core = 233
+		transfer_state = 231
+		transfer_state = 229
+        transfer_state = 230
+        add_state_core = 231
+        add_state_core = 229
+        add_state_core = 230
+		transfer_state = 251
+        add_state_core = 251
+		transfer_state = 250
+        add_state_core = 250
+		transfer_state = 784
+        add_state_core = 784
+		transfer_state = 207
+        add_state_core = 207
+		transfer_state = 241
+        add_state_core = 241
+		transfer_state = 243
+        add_state_core = 243
+		transfer_state = 222
+        add_state_core = 222
+		transfer_state = 253
+        add_state_core = 253
+		transfer_state = 210
+        add_state_core = 210
+		transfer_state = 252
+        add_state_core = 252
+		transfer_state = 248
+        add_state_core = 248
+		transfer_state = 399
+        add_state_core = 399
+		transfer_state = 204
+        add_state_core = 204
+		transfer_state = 255
+        add_state_core = 255
+		SHW={declare_war_on = { target = SUE type = annex_everything }}
+		
+		
+		
+		
+		
+		
+		
+		
+			}
+	    }
+		
+	}
+}
+news_event = {
+			id = SHW.4
+			title = SHW.4.t
+			desc = SHW.4.d
+			picture = GFX_Kropotkin_funeral
+		
+			fire_only_once = yes
+		
+			is_triggered_only = yes
+		
+			option = {
+				 name = SHW.4.a
+				 SHW = {
+					retire_character = SHW_Pyotr_Alexeyevich_Kropotkin
+				}
+			}
+	}
+
+country_event = {
+		id = SHW.5
+		title = SHW.5.t
+		desc = SHW.5.d
+		#picture = GFX_illness
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		option = {
+			name = SHW.5.a
+		}
+		option = {
+			name = SHW.5.b
+			SUE={change_tag_from = ROOT}
+		}
+	}
+	
+	
+	country_event = {
+		id = SHW.8
+		title = SHW.8.t
+		desc = SHW.8.d
+		#picture = GFX_illness
+        trigger = {
+			has_country_flag = Famine_in_Russia
+	    
+		check_variable = {
+			resource@grain >350
+		}
+        }
+		fire_only_once = yes
+
+		option = {
+			name = SHW.8.a
+			remove_ideas = SHW_famine
+		}
+	}
+	country_event = {
+		id = SHW.9
+		title = SHW.9.t
+		desc = SHW.9.d
+		#picture = GFX_illness
+        is_triggered_only = yes
+		fire_only_once = yes
+
+		option = {
+			name = SHW.9.a
+			SHW={
+				set_temp_variable = { SHW_Loyalty = SHW_Loyalty }
+			    add_to_variable = { SHW_Loyalty = -35 }
+			SHW_aleksey_brusilov={
+				set_nationality = SUE
+			}
+			SHW_Novitsky_Vasiliy_Fedorovich={
+				set_nationality = SUE
+			}
+			SHW_Alexander_Vladimirovich_Razvotsov={
+				set_nationality = SUE
+			}
+			SHW_Dmitry_Pavlovich_Parsky={
+				set_nationality = SUE
+			}
+		}
+		}
+	}
+	country_event = {
+		id = SHW.10
+		title = SHW.10.t
+		desc = SHW.10.d
+		#picture = GFX_illness
+        trigger={
+        check_variable={SHW_Loyalty<25}
+		has_government=Liberalism
+        }
+	    fire_only_once = yes
+		
+		option = {
+			name = SHW.10.a
+			set_country_flag=Kornilov_rebellion
+			custom_effect_tooltip=Kornilov_Line
+		
+		}
+	}
+	country_event = {
+		id = SHW.11
+		title = SHW.11.t
+		desc = SHW.11.d
+		#picture = GFX_illness
+        is_triggered_only=yes
+	    fire_only_once = yes
+		
+		option = {
+			name = SHW.11.a
+			remove_ideas=SHW_February_Revolution
+		}
+	}
+	country_event = {
+		id = SHW.12
+		title = SHW.12.t
+		desc = SHW.12.d
+		#picture = GFX_illness
+        is_triggered_only=yes
+	    fire_only_once = yes
+		
+		option = {
+			name = SHW.12.a
+	        add_stability = 0.10
+		}
+	}
+	country_event = {
+		id = SHW.13
+		title = SHW.13.t
+		desc = SHW.13.d
+		#picture = GFX_illness
+        is_triggered_only=yes
+	    fire_only_once = yes
+		
+		option = {
+			name = SHW.13.a
+	        add_stability = 0.10
+		}
+	}
+	country_event = {
+		id = SHW.14
+		title = SHW.14.t
+		desc = SHW.14.d
+		#picture = GFX_illness
+        is_triggered_only=yes
+	    fire_only_once = yes
+		
+		option = {
+			name = SHW.14.a
+			hidden_effect = {
+				set_popularities = {
+	Reactionary = 25
+	Conservatism = 0
+	Reformism = 13
+	Reformism = 16
+	Liberalism = 36
+	Conservatism = 10
+	}
+			}
+	retire_country_leader = yes
+	
+	set_politics = {
+		ruling_party = Liberalism
+		elections_allowed =yes
+	}
+	set_cosmetic_tag = SHW_Interim_Government
+	set_country_flag = Tsar_abdicated
+		}
+	}
+	country_event = {
+		id = SHW.15
+		title = SHW.15.t
+		desc = SHW.15.d
+		#picture = GFX_illness
+        is_triggered_only=yes
+	    fire_only_once = yes
+		
+		option = {
+			name = SHW.15.a
+		}
+		option = {
+			name = SHW.15.b
+			
+		}
+	}
+	country_event = {
+		id = SHW.16
+		title = SHW.16.t
+		desc = SHW.16.d
+		#picture = GFX_illness
+        is_triggered_only=yes
+	    fire_only_once = yes
+		
+		option = {
+			name = SHW.16.a
+			random_list = {
+				65 = {
+					SHW_Kerensky = {
+						set_nationality=FRW
+					}
+				}
+				35 = {
+					SHW_Kerensky = {
+						set_nationality=ENL
+					}
+				}
+			}
+		}
+	}
+	country_event = {
+		id = SHW.17
+		title = SHW.17.t
+		desc = SHW.17.d
+		#picture = GFX_illness
+        is_triggered_only=yes
+	    fire_only_once = yes
+		
+		option = {
+			name = SHW.17.a
+		}
+	}
+	country_event = {
+		id = SHW.18
+		title = SHW.18.t
+		desc = SHW.18.d
+		picture = GFX_Rasputin_died
+        is_triggered_only=yes
+	    fire_only_once = yes
+		
+		option = {
+			name = SHW.18.a
+			retire_character=SHW_Grigori_Efimovich_Rasputin
+		}
+	}
+	country_event = {
+		id = SHW.19
+		title = SHW.19.t
+		desc = SHW.19.d
+		#picture = GFX_illness
+        is_triggered_only=yes
+	    fire_only_once = yes
+		
+		option = {
+			name = SHW.19.a
+			add_political_power=50
+		}
+	}
+	country_event = {
+		id = SHW.20
+		title = SHW.20.t
+		desc = SHW.20.d
+		#picture = GFX_illness
+        is_triggered_only=yes
+	    fire_only_once = yes
+		
+		option = {
+			name = SHW.20.a
+			add_political_power = -50
+			add_stability = 0.05
+		}
+	}
+	country_event = {
+		id = SHW.21
+		title = SHW.21.t
+		desc = SHW.21.d
+		#picture = GFX_illness
+        is_triggered_only=yes
+	    fire_only_once = yes
+		
+		option = {
+			name = SHW.21.a
+		}
+	}
+	country_event = {
+		id = SHW.22
+		title = SHW.22.t
+		desc = SHW.22.d
+		#picture = GFX_illness
+        is_triggered_only=yes
+	    fire_only_once = yes
+		
+		option = {
+			name = SHW.22.a
+			create_faction = SHW_Russian_White_Army
+		}
+	}
+	country_event = {
+		id = SHW.23
+		title = SHW.23.t
+		desc = SHW.23.d
+		#picture = GFX_illness
+        is_triggered_only=yes
+	    fire_only_once = yes
+		
+		option = {
+			name = SHW.23.a
+			set_country_flag = SHW_23_a
+			set_country_flag = SHW.23_tool
+			set_country_flag = SHW.23_tool_2
+		}
+		option = {
+			name = SHW.23.b
+			set_country_flag = SHW_23_b
+			set_country_flag = SHW.23_tool
+			set_country_flag = SHW.23_tool_3
+		}
+	}
+	news_event = {
+		id = SHW.24
+		title = SHW.24.t
+		desc = SHW.24.d
+		picture = GFX_SHW_24
+
+		major=yes
+
+	    fire_only_once=yes
+		
+		is_triggered_only = yes
+
+		option = {
+			name = SHW.24.a
+			
+		}
+	}
+	country_event = {
+		id = SHW.25
+		title = SHW.25.t
+		desc = SHW.25.d
+		#picture = GFX_SHW_25
+
+	    fire_only_once=yes
+		
+		is_triggered_only = yes
+
+		option = {
+			name = SHW.25.a
+			country_event = {id=SHW.26}
+		}
+	}
+	country_event = {
+		id = SHW.26
+		title = SHW.26.t
+		desc = SHW.26.d
+		#picture = GFX_SHW_25
+
+	    fire_only_once=yes
+		
+		is_triggered_only = yes
+
+		option = {
+			name = SHW.26.a
+			set_country_flag = event_SHW_26
+		}
+	}
+	country_event = {
+		id = SHW.27
+		title = SHW.27.t
+		desc = SHW.27.d
+		#picture = GFX_SHW_25
+
+
+	    fire_only_once=yes
+		
+		is_triggered_only = yes
+
+		option = {
+			name = SHW.27.a
+			country_event = {id=SHW.23 days=3}
+		}
+	}
+	country_event = {
+		id = SHW.28
+		title = SHW.28.t
+		desc = SHW.28.d
+		#picture = GFX_SHW_25
+
+
+	    fire_only_once=yes
+		
+		is_triggered_only = yes
+
+		option = {
+			name = SHW.28.a
+			custom_effect_tooltip = SHW_Kirill_Vladimirovich_flag
+			set_country_flag = SHW_Kirill_Vladimirovich_flag
+		}
+		option = {
+			name = SHW.28.b
+			custom_effect_tooltip = SHW_Nikolai_Romanov_flag
+			set_country_flag = SHW_Nikolai_Romanov_flag
+		}
+		option = {
+			name = SHW.28.c
+			custom_effect_tooltip = SHW_Mikhail_II_flag
+			set_country_flag = SHW_Mikhail_II_flag
+		}
+	}
+	country_event = {
+		id = SHW.29
+		title = SHW.29.t
+		desc = SHW.29.d
+		#picture = GFX_SHW_25
+
+
+	    fire_only_once=yes
+		
+		is_triggered_only = yes
+
+		option = {
+			name = SHW.29.a
+			SHW_Grigori_Efimovich_Rasputin = {
+				retire = yes
+			}
+			remove_power_balance = {
+				id = SHW_Court_struggles_balance
+			}
+		}
+	}
+	

@@ -1,0 +1,11 @@
+UBS_elections = {
+	icon = UBS_elections
+	scripted_gui = UBS_elections_ui
+	picture = GFX_decisions_UBS_elections
+
+	priority = 9
+
+	allowed = {
+		tag = UBS
+	}
+}

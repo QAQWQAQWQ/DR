@@ -1,0 +1,29 @@
+state=
+{
+	id=918
+	name="STATE_918"
+	manpower = 258659
+	
+	state_category = town
+	resources={
+		grain=16
+		
+	}
+	history=
+	{
+		owner = KOH
+		add_core_of = DMT
+		add_claim_by = KOH
+		buildings = {
+			infrastructure = 1 #was: 5
+			industrial_complex = 1
+		}
+
+	}
+
+	provinces={
+		624 9611 3627 9595 6647 11594
+	}
+
+	local_supplies=0.0 
+}

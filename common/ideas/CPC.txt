@@ -1,0 +1,31 @@
+ideas = {
+                            country = {
+		CPC_LuZaiHeFan = {
+			picture = LuZaiHeFan
+			modifier = {
+				opinion_gain_monthly_same_ideology_factor = 0.4 
+                                                                political_advisor_cost_factor = -0.2
+			}
+                                       }
+		}
+                            country = {
+		CPC_party_newspaper = {
+			picture = party_newspaper
+			modifier = {
+				operation_outcome = 0.15
+                                                                propaganda_mission_factor = 0.10
+                                                                boost_ideology_mission_factor = 0.10
+			}
+                                       }
+		}
+                              country = {
+		CPC_Ban_on_crows = {
+			picture = Ban_on_crows
+			modifier = {
+				conscription_factor = 0.05
+                                                                party_popularity_stability_factor = 0.05
+                                                                stability_weekly = 0.05
+			}
+                                       }
+		}
+}

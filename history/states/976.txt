@@ -1,0 +1,28 @@
+state={
+	id=976
+	name="贵西"
+	resources={
+		grain=12
+	}
+	history={
+		owner = LXS
+		add_core_of = LXS
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 2
+		}
+		victory_points = {
+			4504 3 
+		}
+	}
+
+	provinces={
+		1884 4504 10763 10819
+	}
+	manpower=3264100
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=3.0 
+}

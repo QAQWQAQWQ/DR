@@ -1,0 +1,574 @@
+add_namespace = austria
+add_namespace = aushun
+add_namespace = AGN
+country_event = {
+	id = austria.1
+	title = austria.1.t
+	desc = austria.1.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.1.a
+		complete_national_focus = AUS_0
+		
+	}
+}
+country_event = {
+	id = austria.2
+	title = austria.2.t
+	desc = austria.2.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.2.a
+		set_variable = {
+			global.pre_accpect_aus = 1
+		}
+		AOX = { country_event = austria.8 }
+	}
+	option = {
+		name = austria.2.b
+		AOX = { unlock_national_focus = AUS_ger_2 }
+		AOX = { country_event = austria.9 }
+	}
+}
+country_event = {
+	id = austria.3
+	title = austria.3.t
+	desc = austria.3.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.3.a
+		every_country = {
+			limit = {
+				OR = {
+					tag = AGC
+					tag = LSB
+					tag = DHD
+					tag = DON
+					tag = DOF
+					tag = DOB
+					tag = DOR
+					tag = DOL
+					tag = DOH
+					tag = DOA
+					tag = DOM
+					tag = DOS
+				}
+			}
+			ger_con_pre_controlled = yes
+		}
+		set_variable = { global.pre_win_german_war = 1 }
+		set_variable = { global.german_war = 1 }
+		diplomatic_relation = { country = AOX relation = non_aggression_pact }
+		AOX = { dismantle_faction = yes }
+	}
+}
+country_event = {
+	id = austria.4
+	title = austria.4.t
+	desc = austria.4.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.4.a
+		set_variable = {
+			global.pre_accpect_delineation = 1
+		}
+		DOS = {
+			if = {
+				limit = {
+					   check_variable = { aus_support < pre_support }
+				}
+				ger_con_pre_controlled = yes
+			}
+			else = {
+				ger_con_aus_controlled = yes
+			}
+		}
+		DHD = {
+			if = {
+				limit = {
+					   check_variable = { aus_support < pre_support }
+				}
+				ger_con_pre_controlled = yes
+			}
+			else = {
+				ger_con_aus_controlled = yes
+			}
+		}
+		DON = {
+			if = {
+				limit = {
+					   check_variable = { aus_support < pre_support }
+				}
+				ger_con_pre_controlled = yes
+			}
+			else = {
+				ger_con_aus_controlled = yes
+			}
+		}
+		LSB = {
+			if = {
+				limit = {
+					   check_variable = { aus_support < pre_support }
+				}
+				ger_con_pre_controlled = yes
+			}
+			else = {
+				ger_con_aus_controlled = yes
+			}
+		}
+		DOB = { ger_con_aus_controlled = yes }
+		DOR = { ger_con_aus_controlled = yes }
+		DOF = { ger_con_aus_controlled = yes }
+		DOM = { ger_con_pre_controlled = yes }
+		DOH = { ger_con_pre_controlled = yes }
+		DOA = { ger_con_pre_controlled = yes }
+		DOL = { ger_con_pre_controlled = yes }
+		gercon_upd_pbv_var = yes
+		gercon_clamp_vars = yes
+	}
+	option = {
+	 	name = austria.4.b
+		AOX = { unlock_national_focus = AUS_ger_21 }
+	}
+}
+country_event = {
+	id = austria.5
+	title = austria.5.t
+	desc = austria.5.d
+	picture = GFX_austria_5_pict
+	is_triggered_only = yes
+	option = {
+		name = austria.5.a
+	}
+}
+country_event = {
+	id = austria.6
+	title = austria.6.t
+	desc = austria.6.d
+	picture = GFX_austria_5_pict
+	is_triggered_only = yes
+	option = {
+		name = austria.6.a
+	}
+}
+country_event = {
+	id = austria.7
+	title = austria.7.t
+	desc = austria.7.d
+	picture = GFX_austria_7_pict
+	is_triggered_only = yes
+	option = {
+		name = austria.7.a
+	}
+}
+country_event = {
+	id = austria.8
+	title = austria.8.t
+	desc = austria.8.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.8.a
+	}
+}
+country_event = {
+	id = austria.9
+	title = austria.9.t
+	desc = austria.9.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.9.a
+	}
+}
+country_event = {
+	id = austria.10
+	title = austria.10.t
+	desc = austria.10.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.10.a
+		complete_national_focus = AUS_german_0
+		set_cosmetic_tag = AOX_German
+		mark_focus_tree_layout_dirty = yes
+	}
+	option = {
+		name = austria.10.b
+		complete_national_focus = AUS_HRE_0
+		set_cosmetic_tag = AOX_HRE
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+country_event = {
+	id = austria.11
+	title = austria.11.t
+	desc = austria.11.d
+	picture = GFX_ger_con_uni_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.11.a
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = AOX
+				}
+				add_core_of = AGN
+			}
+			
+			AGN = { transfer_state = 4}
+
+			AGN = { change_tag_from = AOX }
+
+			AOX = {
+				every_unit_leader = {
+					set_nationality = AGN
+				}
+				AGN_Adolf_Hitler = {
+					set_nationality = AGN
+				}
+				AGN_Arthur_Seyss_Inquart = {
+					set_nationality = AGN
+				}
+				AGN_Engelbert_Dollfuss = {
+					set_nationality = AGN
+				}
+			}
+			
+			add_corps_commander_role = {
+				Character = AGN_Adolf_Hitler
+				skill = 2
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 2
+			}
+			promote_character = AGN_Adolf_Hitler
+			promote_character = AGN_Arthur_Seyss_Inquart
+			promote_character = AGN_Engelbert_Dollfuss
+			AGN = { annex_country = { target = AOX transfer_troops = yes } }
+			AGN = {
+				add_stability = -0.7
+			}
+		}
+	}
+}
+country_event = {
+	id = austria.12
+	title = austria.12.t
+	desc = austria.12.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.12.a
+		custom_effect_tooltip = less_pol_aus_hun_sup_30
+		add_to_variable = {
+			var = AOX.aus_hun_gov_sup^4
+			value = -30
+		}
+		aushun_clamp_vars = yes	
+	}
+	option = {
+		name = austria.12.b
+		custom_effect_tooltip = more_pol_aus_hun_sup_30
+		add_to_variable = {
+			var = AOX.aus_hun_gov_sup^4
+			value = 30
+		}
+		aushun_clamp_vars = yes
+		custom_effect_tooltip = more_pol_aus_hun_aut_10
+		add_to_variable = {
+			var = AOX.aus_hun_egree^4
+			value = 10
+		}
+		aushun_clamp_vars = yes
+		AOX = {
+			remove_state_core = 87
+			remove_state_core = 98
+			remove_state_core = 10
+			remove_state_core = 97
+			remove_state_core = 814
+		}
+		KGL = {
+			add_state_core = 87
+			add_state_core = 98
+			add_state_core = 10
+			add_state_core = 97
+			add_state_core = 814
+		}
+		87 = { transfer_state_to = KGL }
+		98 = { transfer_state_to = KGL }
+		10 = { transfer_state_to = KGL }
+		97 = { transfer_state_to = KGL }
+		814 = { transfer_state_to = KGL }
+	}
+	option = {
+		name = austria.12.c
+		custom_effect_tooltip = more_pol_aus_hun_sup_50
+		add_to_variable = {
+			var = AOX.aus_hun_gov_sup^4
+			value = 50
+		}
+		aushun_clamp_vars = yes
+		custom_effect_tooltip = more_pol_aus_hun_aut_30
+		add_to_variable = {
+			var = AOX.aus_hun_egree^4
+			value = 30
+		}
+		aushun_clamp_vars = yes
+		AOX = {
+			remove_state_core = 87
+			remove_state_core = 98
+			remove_state_core = 10
+			remove_state_core = 97
+			remove_state_core = 814
+			remove_state_core = 86
+			remove_state_core = 807
+		}
+		KGL = {
+			add_state_core = 87
+			add_state_core = 98
+			add_state_core = 10
+			add_state_core = 97
+			add_state_core = 814
+			add_state_core = 86
+			add_state_core = 807
+		}
+		87 = { transfer_state_to = KGL }
+		98 = { transfer_state_to = KGL }
+		10 = { transfer_state_to = KGL }
+		97 = { transfer_state_to = KGL }
+		814 = { transfer_state_to = KGL }
+		86 = { transfer_state_to = KGL }
+		807 = { transfer_state_to = KGL }
+	}
+}
+country_event = {
+	id = austria.13
+	title = austria.13.t
+	desc = austria.13.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.13.a
+		add_dynamic_modifier = {
+			modifier = AOX_dynamic_austria_13_large
+		}
+	}
+}
+
+country_event = {
+	id = austria.14
+	title = austria.14.t
+	desc = austria.14.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.14.a
+		set_variable = { global.cze_accpect = 1 }
+        ai_chance = {
+            base = 100 
+        }
+		AOX = { country_event = austria.17 }
+	}
+	option = {
+		name = austria.14.b
+		AOX = { country_event = austria.18 }
+	}
+}
+country_event = {
+	id = austria.15
+	title = austria.15.t
+	desc = austria.15.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.15.a
+		set_variable = { global.pol_accpect = 1 }
+        ai_chance = {
+            base = 100 
+        }
+		AOX = { country_event = austria.17 }
+	}
+	option = {
+		name = austria.15.b
+		AOX = { country_event = austria.18 }
+	}
+}
+country_event = {
+	id = austria.16
+	title = austria.16.t
+	desc = austria.16.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.16.a
+		set_variable = { global.cro_accpect = 1 }
+        ai_chance = {
+            base = 100 
+        }
+		AOX = { country_event = austria.17 }
+	}
+	option = {
+		name = austria.16.b
+		AOX = { country_event = austria.18 }
+	}
+}
+country_event = {
+	id = austria.17
+	title = austria.17.t
+	desc = austria.17.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.17.a
+	}
+}
+country_event = {
+	id = austria.18
+	title = austria.18.t
+	desc = austria.18.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.18.a
+	}
+}
+country_event = {
+	id = AGN.1
+	title = AGN.1.t
+	desc = AGN.1.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = AGN.1.a
+		complete_national_focus = AGN_left_0
+		AGN = {
+			add_stability = 0.05
+		}
+	}
+	option = {
+		name = AGN.1.b
+		complete_national_focus = AGN_mid_0
+		AGN = {
+			add_stability = -0.05
+		}
+	}
+	option = {
+		name = AGN.1.c
+		complete_national_focus = AGN_right_0
+		AGN = {
+			add_stability = -0.1
+		}
+	}
+}
+country_event = {
+	id = aushun.1
+	title = aushun.1.t
+	desc = aushun.1.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = aushun.1.a
+		AOX = {
+			complete_national_focus = AUS_bir_0
+		}
+	}
+}
+country_event = {
+	id = aushun.2
+	title = aushun.2.t
+	desc = aushun.2.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = aushun.2.a
+	}
+}
+country_event = {
+	id = aushun.3
+	title = aushun.3.t
+	desc = aushun.3.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = aushun.3.a
+	}
+}
+country_event = {
+	id = aushun.4
+	title = aushun.4.t
+	desc = aushun.4.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = aushun.4.a
+	}
+}
+country_event = {
+	id = aushun.5
+	title = aushun.5.t
+	desc = aushun.5.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = aushun.5.a
+		every_state = {
+			limit = {
+				is_core_of = KLD
+			}
+			add_core_of = DMT
+		}
+		DMT = { annex_country = { target = KLD transfer_troops = yes } 
+	    set_cosmetic_tag = KLD_new_name
+	}
+		custom_effect_tooltip = more_cro_aus_hun_sup_30
+				add_to_variable = {
+					var = AOX.aus_hun_gov_sup^8
+					value = 30
+		}
+		aushun_clamp_vars = yes	
+	}
+}
+country_event = {
+	id = aushun.6
+	title = aushun.6.t
+	desc = aushun.6.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = aushun.6.a
+	ROOT={
+		army_experience = 20
+		air_experience = 20
+		navy_experience = 20
+		add_command_power = 30
+	}
+	}
+}

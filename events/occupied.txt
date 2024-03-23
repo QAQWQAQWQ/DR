@@ -1,0 +1,126 @@
+﻿###########################
+# News.1 Events
+###########################
+
+add_namespace = occupied
+
+news_event = {
+	id = occupied.1
+	title = occupied.1.t
+	desc = occupied.1.d
+
+	picture = GFX_fall_of_berlin
+
+	major = yes
+
+	trigger = {
+			WWS={ 
+				has_war = yes
+				NOT = {
+					has_global_flag = fall_of_berlin
+					controls_state = 64
+				}
+			}
+	}
+
+	immediate = {
+		set_global_flag = fall_of_berlin
+		FROM = {
+			save_global_event_target_as = fall_of_berlin_owner
+		}
+		ROOT = {
+			save_global_event_target_as = fall_of_berlin_controller
+		}
+	}
+	
+	option = {
+		name = occupied.1.a
+	}		
+}
+
+news_event = {
+	id = occupied.2
+	title = occupied.2.t
+	desc = occupied.2.d
+
+	picture = GFX_fall_of_Paris
+
+	major = yes
+
+	trigger = {
+			FRW={ 
+				has_war = yes
+				NOT = {
+					has_global_flag = fall_of_Paris
+					controls_state = 16
+				}
+			}
+	}
+
+	immediate = {
+		set_global_flag = fall_of_Paris
+	}
+	
+	option = {
+		name = occupied.2.a
+	}		
+}
+news_event = {
+	id = occupied.3
+	title = occupied.3.t
+	desc = occupied.3.d
+
+	picture = GFX_fall_of_Beijing
+
+	major = yes
+
+	trigger = {
+			ZHX={ 
+				has_war = yes
+				NOT = {
+					has_global_flag = fall_of_Beijing
+					controls_state = 608
+				}
+			}
+	}
+
+	immediate = {
+		set_global_flag = fall_of_Beijing
+	}
+	
+	option = {
+		name = occupied.3.a
+	}		
+}
+news_event = {
+	id = occupied.4
+	title = occupied.4.t
+	desc = occupied.4.d
+
+	picture = GFX_fall_of_Washington
+
+	major = yes
+
+	trigger = {
+			UBS={ 
+				has_war = yes
+				NOT = {
+					has_global_flag = fall_of_Washington
+					controls_state = 361
+				}
+			}
+	}
+
+	immediate = {
+		set_global_flag = fall_of_Washington
+	}
+	
+	option = {
+		name = occupied.4.a
+	}		
+}
+
+
+
+
+

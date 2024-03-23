@@ -1,0 +1,271 @@
+characters={
+	UBS_Woodrow_Wilson={
+		name=UBS_Woodrow_Wilson
+		portraits={
+			civilian={
+				large="gfx/leaders/UBS/Portrait_Woodrow_Wilson.tga"
+			}
+		}
+		country_leader={
+			ideology=Socialism_Liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	UBS_James_Middleton_Cox={
+		name=UBS_James_Middleton_Cox
+		portraits={
+			civilian={
+				large="gfx/leaders/UBS/Portrait_James_Middleton_Cox.tga"
+			}
+		}
+		country_leader={
+			ideology=Socialism_Liberalism
+			desc = James_Middleton_Cox_P
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	UBS_Browder={
+		name=UBS_Browder
+		portraits={
+			civilian={
+				large="gfx/leaders/UBS/portrait_Browder.tga"
+			}
+		}
+		country_leader={
+			ideology=Scientism_revolutionism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	UBS_Roosevelt={
+		name=UBS_Roosevelt
+		portraits={
+			civilian={
+				large="gfx/leaders/UBS/Portrait_Roosevelt.tga"
+			}
+		}
+		country_leader={
+			ideology=Social_Reformism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	UBS_Eugene_Debs={
+		name=UBS_Eugene_Debs
+		portraits={
+			civilian={
+				large="gfx/leaders/UBS/Portrait_Eugene_Debs.tga"
+			}
+		}
+		country_leader={
+			ideology=Scientism_revolutionism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	UBS_Calvin_Coolidge={
+		name=UBS_Calvin_Coolidge
+		portraits={
+			civilian={
+				large="gfx/leaders/UBS/Portrait_Calvin_Coolidge.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	UBS_Huey_Pierce_Long={
+		name=UBS_Huey_Pierce_Long
+		portraits={
+			civilian={
+				large="gfx/leaders/UBS/Portrait_UBS_Huey_Pierce_Long.tga"
+			}
+		}
+		country_leader={
+			ideology=Nationalism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	UBS_Warren_Gamaliel_Harding={
+		name=UBS_Warren_Gamaliel_Harding
+		portraits={
+			civilian={
+				large="gfx/leaders/UBS/Portrait_Warren_Gamaliel_Harding.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			desc = Warren_Gamaliel_Harding_P
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	UBS_Edgar_Hoover={
+		name=UBS_Edgar_Hoover
+		portraits={
+			civilian={
+				large="gfx/leaders/UBS/Portrait_Edgar_Hoover.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	UBS_William_Foster={
+		name=UBS_William_Foster
+		portraits={
+			civilian={
+				large="gfx/leaders/UBS/Portrait_William_Foster.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_revolutionism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	UBS_George_Bolling_Lee={
+		name=UBS_George_Bolling_Lee
+		portraits={
+			civilian={
+				large="gfx/leaders/UBS/Portrait_George_Bolling_Lee.tga"
+			}
+		}
+		country_leader={
+			ideology=Classicism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	UBS_Cannon={
+		name=UBS_Cannon
+		portraits={
+			civilian={
+				large="gfx/leaders/UBS/Portrait_Cannon.tga"
+			}
+		}
+		country_leader={
+			ideology=Autonomismism_Anarchism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	UBS_LiEngFu={
+		name=UBS_LiEngFu
+		portraits={
+			army={
+				large="gfx/leaders/UBS/Portrait_LiEngFu.tga"
+			}
+		}
+		country_leader={
+			ideology=Social_Reformism
+			traits={  }
+			desc=UBS_LiEngFu_DESC
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
+	UBS_Ulysses_G_McAlexander={
+		name=UBS_Ulysses_G_McAlexander
+		portraits={
+			army={
+				large="gfx/leaders/UBS/Portrait_Ulysses_G_McAlexander.tga"
+				small="gfx/interface/ideas/portrait_Ulysses_G_McAlexander.dds"
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=2
+		}
+}
+UBS_Pershing={
+	name=UBS_Pershing
+	portraits={
+		army={
+			large="gfx/leaders/UBS/Portrait_Pershing.tga"
+			small="gfx/interface/ideas/Portrait_Pershing.dds"
+		}
+	}
+	corps_commander={
+		traits={ expert_delegator }
+		skill=4
+		attack_skill=4
+		defense_skill=3
+		planning_skill=3
+		logistics_skill=2
+	}
+}
+UBS_Smedley_Darlington_Butler={
+	name=UBS_Smedley_Darlington_Butler
+	portraits={
+		army={
+			large="gfx/leaders/UBS/Portrait_Smedley_Darlington_Butler.tga"
+		}
+	}
+	corps_commander={
+		traits={ Marine_Corps }
+		skill=2
+		attack_skill=1
+		defense_skill=2
+		planning_skill=2
+		logistics_skill=1
+	}
+}
+UBS_Omar_Bondi={
+	name=UBS_Omar_Bondi
+	portraits={
+		army={
+			large="gfx/leaders/UBS/Portrait_Omar_Bondi.tga"
+			small="gfx/interface/ideas/Portrait_Omar_Bondi.dds"
+		}
+	}
+	corps_commander={
+		traits={ Lieutenant_general }
+		skill=4
+		attack_skill=3
+		defense_skill=2
+		planning_skill=2
+		logistics_skill=2
+	}
+}
+UBS_Douglas_MacArthur={
+	name=UBS_Douglas_MacArthur
+	portraits={
+		army={
+			large="gfx/leaders/UBS/Portrait_Douglas_MacArthur.tga"
+		}
+	}
+	corps_commander={
+		traits={ skilled_staffer }
+		skill=2
+		attack_skill=1
+		defense_skill=2
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+	
+	}

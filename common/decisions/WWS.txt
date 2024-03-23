@@ -1,0 +1,325 @@
+#set_variable = { WWS_Bavaria = 2 }
+#set_variable = { WWS_Wurttemberg = 2 }
+#set_variable = { WWS_Baden = 2 }
+#set_variable = { WWS_Nassau = 2 }
+#set_variable = { WWS_Hesse = 2 }
+#set_variable = { WWS_Westphalia = 2 }
+#set_variable = { WWS_Saxony = 2 }
+#set_variable = { WWS_Mecklenburg = 2 }
+#set_variable = { WWS_Hanover = 2 }
+#set_variable = { WWS_Oldenburg = 2 }
+#set_variable = { WWS_Hanover = 2 }
+WWS_Little_Deutsches_Project = {
+	WWS_Founding_German_Empire = {
+	  icon = generic_ignite_civil_war
+	  visible = {
+	  }
+	  
+	  available = { 
+		61={is_owned_by = WWS}
+		60={is_owned_by = WWS}
+		59={is_owned_by = WWS}
+		65={is_owned_by = WWS}
+		56={is_owned_by = WWS}
+		54={is_owned_by = WWS}
+		42={is_owned_by = WWS}
+		925={is_owned_by = WWS}
+		50={is_owned_by = WWS}
+		53={is_owned_by = WWS}
+		51={is_owned_by = WWS}
+		52={is_owned_by = WWS}
+		55={is_owned_by = WWS}
+		57={is_owned_by = WWS}
+		926={is_owned_by = WWS}
+	  }
+	  days_remove = 1
+	  cost = 0
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  complete_effect = {
+			set_cosmetic_tag = WWS_German_Empire
+			
+		  }
+		  }
+	WWS_Woo_other_states = {
+			icon = generic_ignite_civil_war
+			visible = {
+				has_completed_focus = WWS_Unite_German_nation
+			}
+			
+			available = { 
+				has_completed_focus = WWS_Wooing_German_state
+			}
+			days_remove = 15
+			cost = 50
+			allowed = {
+				always = yes
+			}
+			fixed_random_seed = no
+			fire_only_once = yes
+				ai_will_do = {
+				factor = 1
+				}
+complete_effect = {
+	DOM={country_event={id=WWS.5 days=1}}
+	DOH={country_event={id=WWS.5 days=1}}
+	DOL={country_event={id=WWS.5 days=1}}
+	DHD={country_event={id=WWS.5 days=1}}
+	DOS={country_event={id=WWS.5 days=1}}
+	DOF={country_event={id=WWS.5 days=1}}
+	DOB={country_event={id=WWS.5 days=1}}
+	DOA={country_event={id=WWS.5 days=1}}
+	DON={country_event={id=WWS.5 days=1}}
+				}
+				}
+		}
+				Germany_Imperial_Highway = {
+					WWS_Construction_roads_Berlin = {
+					  icon = generic_ignite_civil_war
+					  visible = {
+					  }
+					  
+					  available = { 
+						64={is_owned_by = WWS}
+					  }
+					  days_remove = 60
+					  cost = 0
+					  allowed = {
+						  always = yes
+					  }
+					  fixed_random_seed = no
+					  fire_only_once = no
+						  ai_will_do = {
+						  factor = 1
+						  }  
+						  complete_effect = {
+								build_railway = {
+									level = 2
+									build_only_on_allied = yes
+									controller_priority = {
+										base = 1
+										modifier = {
+											tag = WWS
+											add = 2
+										}
+									}
+									fallback = yes
+									path = { 6521 9428 11415 3572 3438 9470}
+									start_province = 6521
+									target_province = 9470
+								}
+						
+						  }
+						  }
+						  WWS_Construction_roads_Konigsberg = {
+							icon = generic_ignite_civil_war
+							visible = {
+							}
+							
+							available = { 
+							}
+							days_remove = 60
+							cost = 0
+							allowed = {
+								always = yes
+							}
+							fixed_random_seed = no
+							fire_only_once = no
+								ai_will_do = {
+								factor = 1
+								}
+								complete_effect = {
+									  build_railway = {
+										  level = 2
+										  build_only_on_allied = yes
+										  controller_priority = {
+											  base = 1
+											  modifier = {
+												  tag = WWS
+												  add = 2
+											  }
+										  }
+										  fallback = yes
+										  start_province = 6332
+										  target_province = 9372
+									  }
+							  
+								}
+								}
+			 WWS_Construction_roads_Frankfurt = {
+							icon = generic_ignite_civil_war
+							visible = {
+							}
+							
+							available = { 
+							}
+							days_remove = 60
+							cost = 0
+							allowed = {
+								always = yes
+							}
+							fixed_random_seed = no
+							fire_only_once = no
+								ai_will_do = {
+								factor = 1
+								}
+								complete_effect = {
+									  build_railway = {
+										  level = 2
+										  build_only_on_allied = yes
+										  controller_priority = {
+											  base = 1
+											  modifier = {
+												  tag = WWS
+												  add = 2
+											  }
+										  }
+										  fallback = yes
+										  start_province = 6488
+										  target_province = 6521
+									  }
+								}
+								}
+		WWS_Construction_roads_Dresden = {
+							icon = generic_ignite_civil_war
+							visible = {
+							}
+							
+							available = { 
+							}
+							days_remove = 60
+							cost = 0
+							allowed = {
+								always = yes
+							}
+							fixed_random_seed = no
+							fire_only_once = no
+								ai_will_do = {
+								factor = 1
+								}
+								complete_effect = {
+									  build_railway = {
+										  level = 2
+										  build_only_on_allied = yes
+										  controller_priority = {
+											  base = 1
+											  modifier = {
+												  tag = WWS
+												  add = 2
+											  }
+										  }
+										  fallback = yes
+										  start_province = 514
+										  target_province = 6521
+									  }
+								}
+								}
+			WWS_Construction_roads_Munich = {
+							icon = generic_ignite_civil_war
+							visible = {
+							}
+							
+							available = { 
+							}
+							days_remove = 60
+							cost = 0
+							allowed = {
+								always = yes
+							}
+							fixed_random_seed = no
+							fire_only_once = no
+								ai_will_do = {
+								factor = 1
+								}
+								complete_effect = {
+									  build_railway = {
+										  level = 2
+										  build_only_on_allied = yes
+										  controller_priority = {
+											  base = 1
+											  modifier = {
+												  tag = WWS
+												  add = 2
+											  }
+										  }
+										  fallback = yes
+										  start_province = 692
+										  target_province = 6521
+									  }
+								}
+								}
+				WWS_Construction_roads_Hanover = {
+							icon = generic_ignite_civil_war
+							visible = {
+							}
+							
+							available = { 
+							}
+							days_remove = 60
+							cost = 0
+							allowed = {
+								always = yes
+							}
+							fixed_random_seed = no
+							fire_only_once = no
+								ai_will_do = {
+								factor = 1
+								}
+								complete_effect = {
+									  build_railway = {
+										  level = 2
+										  build_only_on_allied = yes
+										  controller_priority = {
+											  base = 1
+											  modifier = {
+												  tag = WWS
+												  add = 2
+											  }
+										  }
+										  fallback = yes
+										  start_province = 6377
+										  target_province = 6521
+									  }
+								}
+								}
+			WWS_Construction_roads_Stuttgart = {
+							icon = generic_ignite_civil_war
+							visible = {
+							}
+							
+							available = { 
+							}
+							days_remove = 60
+							cost = 0
+							allowed = {
+								always = yes
+							}
+							fixed_random_seed = no
+							fire_only_once = no
+								ai_will_do = {
+								factor = 1
+								}
+								complete_effect = {
+									  build_railway = {
+										  level = 2
+										  build_only_on_allied = yes
+										  controller_priority = {
+											  base = 1
+											  modifier = {
+												  tag = WWS
+												  add = 2
+											  }
+										  }
+										  fallback = yes
+										  start_province = 9517
+										  target_province = 6521
+									  }
+								}
+								}
+						}

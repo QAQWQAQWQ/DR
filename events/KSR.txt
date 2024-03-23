@@ -1,0 +1,20 @@
+﻿###########################
+# KSR Events
+###########################
+
+add_namespace = KSR
+news_event = {
+	id = KSR.1
+	title = KSR.1.t
+	desc = KSR.1.d
+	picture = GFX_KSR_1
+	is_triggered_only = yes
+	option = {
+		name = KSR.1.a
+		KSR={
+			transfer_state = 208
+		add_state_core = 208
+		}
+	    
+	    }
+	}

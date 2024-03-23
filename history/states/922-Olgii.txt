@@ -1,0 +1,24 @@
+
+state = {
+	id = 922
+	name = "STATE_922" 
+	manpower = 65000 
+
+	state_category = town 
+
+
+	history = {
+		owner = XJC
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = XJC
+		add_core_of = MEG
+	}
+
+	provinces = {
+		4751 10539 1774 7870 7808 13260
+	}
+
+	local_supplies = 0.0 
+}

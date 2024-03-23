@@ -1,0 +1,162 @@
+
+defined_text = { 
+	name = aus_hun_egr_texts
+	text = {
+		localization_key = aus_hun_dont_occ_here
+		trigger = {
+			aus_hun_occ_tri = no
+		}
+	}
+	text = {
+		localization_key = aus_hun_egr_text_g
+		trigger = {
+			check_variable = {
+                AOX.aus_hun_egree^ROOT.aus_hun_nat < 31
+            }
+			aus_hun_occ_tri = yes
+		}
+	}
+	text = {
+		localization_key = aus_hun_egr_text_y
+		trigger = {
+			check_variable = {
+                AOX.aus_hun_egree^ROOT.aus_hun_nat > 30
+            }
+			check_variable = {
+                AOX.aus_hun_egree^ROOT.aus_hun_nat < 70
+            }
+			aus_hun_occ_tri = yes
+		}
+	}
+	text = {
+		localization_key = aus_hun_egr_text_r
+		trigger = {
+			check_variable = {
+                AOX.aus_hun_egree^ROOT.aus_hun_nat > 69
+            }
+			aus_hun_occ_tri = yes
+		}
+	}
+}
+defined_text = { 
+	name = aus_hun_var_texts
+	text = {
+		localization_key = aus_hun_dont_occ_here
+		trigger = {
+			aus_hun_occ_tri = no
+		}
+	}
+	text = {
+		localization_key = aus_hun_var_text_r
+		trigger = {
+			check_variable = {
+                AOX.aus_hun_gov_sup^ROOT.aus_hun_nat < 31
+            }
+			aus_hun_occ_tri = yes
+		}
+	}
+	text = {
+		localization_key = aus_hun_var_text_y
+		trigger = {
+			check_variable = {
+                AOX.aus_hun_gov_sup^ROOT.aus_hun_nat > 30
+            }
+			check_variable = {
+                AOX.aus_hun_gov_sup^ROOT.aus_hun_nat < 70
+            }
+			aus_hun_occ_tri = yes
+		}
+	}
+	text = {
+		localization_key = aus_hun_var_text_g
+		trigger = {
+			check_variable = {
+                AOX.aus_hun_gov_sup^ROOT.aus_hun_nat > 69
+            }
+			aus_hun_occ_tri = yes
+		}
+	}
+}
+defined_text = { 
+	name = aus_hun_texts
+	text = {
+		localization_key = aus_hun_text_aus
+		trigger = {
+			check_variable = {
+                aus_hun_nat = 0
+            }
+		}
+	}
+	text = {
+		localization_key = aus_hun_text_hun
+		trigger = {
+			check_variable = {
+                aus_hun_nat = 1
+            }
+		}
+	}
+	text = {
+		localization_key = aus_hun_text_ukr
+		trigger = {
+			check_variable = {
+                aus_hun_nat = 2
+            }
+		}
+	}
+	text = {
+		localization_key = aus_hun_text_cze
+		trigger = {
+			check_variable = {
+                aus_hun_nat = 3
+            }
+		}
+	}
+	text = {
+		localization_key = aus_hun_text_pol
+		trigger = {
+			check_variable = {
+                aus_hun_nat = 4
+            }
+		}
+	}
+	text = {
+		localization_key = aus_hun_text_slo
+		trigger = {
+			check_variable = {
+                aus_hun_nat = 5
+            }
+		}
+	}
+	text = {
+		localization_key = aus_hun_text_rom
+		trigger = {
+			check_variable = {
+                aus_hun_nat = 6
+            }
+		}
+	}
+	text = {
+		localization_key = aus_hun_text_ita
+		trigger = {
+			check_variable = {
+                aus_hun_nat = 7
+            }
+		}
+	}
+	text = {
+		localization_key = aus_hun_text_cro
+		trigger = {
+			check_variable = {
+                aus_hun_nat = 8
+            }
+		}
+	}
+	text = {
+		localization_key = aus_hun_text_slv
+		trigger = {
+			check_variable = {
+                aus_hun_nat = 9
+            }
+		}
+	}
+}

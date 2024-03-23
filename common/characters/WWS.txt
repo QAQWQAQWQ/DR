@@ -1,0 +1,456 @@
+characters={
+	WWS_WilliamII={
+		name=WWS_WilliamII
+		portraits={
+			civilian={
+				large="gfx/leaders/WWS/Portrait_Wilhelm_II.tga"
+			}
+		}
+		country_leader={
+			ideology=Classicism_Conservatism
+            desc=WWS_WilliamII_DESC
+			traits={ autocratic_imperialist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	WWS_Ebert={
+		name=WWS_Ebert
+		portraits={
+			civilian={
+				large="gfx/leaders/WWS/Portrait_ebert.tga"
+			}
+		}
+		country_leader={
+			ideology=Social_Reformism
+            desc=WWS_Ebert_DESC
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	WWS_Wolfgang_Kapp={
+		name=WWS_Wolfgang_Kapp
+		portraits={
+			civilian={
+				large="gfx/leaders/WWS/Portrait_Wolfgang_Kapp.tga"
+			}
+		}
+		country_leader={
+			ideology=Populism_Reactionary
+            desc=WWS_Wolfgang_Kapp_DESC
+			traits={ popular_figurehead2 }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	WWS_Wilhelm_Carl_Josef_Cuno={
+		name=WWS_Wilhelm_Carl_Josef_Cuno
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Wilhelm_Carl_Josef_Cuno.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = WWS_Wilhelm_Carl_Josef_Cuno_H
+			allowed = {
+				original_tag = WWS
+			}
+			available = {
+				hidden_trigger = {
+					has_stability >100000
+				}
+			  }
+			traits = {
+				head_of_government
+				the_banker
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = WWS_Wilhelm_Carl_Josef_Cuno_P
+			allowed = {
+				original_tag = WWS
+			}
+			available = {
+
+			  }
+			traits = {
+				german_technological_patron
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	WWS_Gustav_Stresemann={
+		name=WWS_Gustav_Stresemann
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Gustav_Stresemann.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = WWS_Gustav_Stresemann_H
+			allowed = {
+				original_tag = WWS
+			}
+			available = {
+				hidden_trigger = {
+					has_stability >100000
+				}
+			  }
+			traits = {
+				head_of_government
+				armaments_aficionado
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = WWS_Gustav_Stresemann_P
+			allowed = {
+				original_tag = WWS
+			}
+			available = {
+
+			  }
+			traits = {
+				Minister_Affairs
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}	
+	WWS_Albert_Grzesinski={
+		name=WWS_Albert_Grzesinski
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Albert_Grzesinski.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = WWS_Albert_Grzesinski_H
+			allowed = {
+				original_tag = WWS
+			}
+			available = {
+			  }
+			traits = {
+				Minister_of_Police
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	WWS_Andreas_Hermes={
+		name=WWS_Andreas_Hermes
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Andreas_Hermes.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = WWS_Andreas_Hermes_H
+			allowed = {
+				original_tag = WWS
+			}
+			available = {
+			  }
+			traits = {
+				Minister_Finance
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	WWS_Gregor_Strasser={
+		name=WWS_Gregor_Strasser
+		portraits={
+			civilian={
+				large="gfx/leaders/WWS/Portrait_Gregor_Strasser.tga"
+			}
+		}
+		country_leader={
+			ideology=Nationalism_Conservatism
+            desc=WWS_Gregor_Strasser_DESC
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	WWS_eduard_bernstein={
+		name=WWS_eduard_bernstein
+		portraits={
+			civilian={
+				large="gfx/leaders/WWS/Portrait_eduard_bernstein.tga"
+			}
+		}
+		country_leader={
+			ideology=Social_Reformism
+            desc=WWS_eduard_bernstein_DESC
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	WWS_Falkenhayn={
+		name=WWS_Falkenhayn
+		portraits={
+		army={
+			large="gfx/leaders/WWS/Portrait_Falkenhayn.tga"
+			small="gfx/interface/ideas/Portrait_Falkenhayn.dds"
+		}
+	}
+		corps_commander={
+		traits={ Lieutenant_general }
+		skill=3
+		attack_skill=2
+		defense_skill=2
+		planning_skill=2
+		logistics_skill=2
+	}
+	}
+	WWS_Max_Hoffmann={
+		name=WWS_Max_Hoffmann
+		portraits={
+		army={
+			large="gfx/leaders/WWS/Portrait_Max_Hoffmann.tga"
+			small="gfx/interface/ideas/Portrait_Max_Hoffmann.dds"
+		}
+	}
+		corps_commander={
+		traits={ Lieutenant_general }
+		skill=3
+		attack_skill=2
+		defense_skill=2
+		planning_skill=2
+		logistics_skill=2
+	}
+	}
+	WWS_August_von_Mackensen={
+		name=WWS_August_von_Mackensen
+		portraits={
+		army={
+			large="gfx/leaders/WWS/Portrait_August_von_Mackensen.tga"
+			small="gfx/interface/ideas/Portrait_August_von_Mackensen.dds"
+		}
+	}
+		corps_commander={
+		traits={ Lieutenant_general }
+		skill=3
+		attack_skill=3
+		defense_skill=3
+		planning_skill=2
+		logistics_skill=2
+	}
+	}
+	WWS_Hindenburg={
+		name=WWS_Hindenburg
+		portraits={
+		army={
+			large="gfx/leaders/WWS/Portrait_Hindenburg.tga"
+		}
+	}
+		corps_commander={
+		traits={ expert_delegator }
+		skill=3
+		attack_skill=3
+		defense_skill=2
+		planning_skill=2
+		logistics_skill=2
+	}
+	}
+	WWS_Feng_Almin={
+		name=WWS_Feng_Almin
+		portraits={
+		army={
+			large="gfx/leaders/WWS/Portrait_Feng_Almin.tga"
+			small="gfx/interface/ideas/Portrait_Feng_Almin.dds"
+		}
+	}
+		corps_commander={
+		traits={ Lieutenant_general }
+		skill=2
+		attack_skill=2
+		defense_skill=2
+		planning_skill=2
+		logistics_skill=2
+	}
+	}
+	WWS_Alexander_Feng_Crook={
+		name=WWS_Alexander_Feng_Crook
+		portraits={
+		army={
+			large="gfx/leaders/WWS/Portrait_Alexander_Feng_Crook.tga"
+			small="gfx/interface/ideas/Portrait_Alexander_Feng_Crook.dds"
+		}
+	}
+		corps_commander={
+		traits={ Lieutenant_general }
+		skill=3
+		attack_skill=2
+		defense_skill=3
+		planning_skill=2
+		logistics_skill=2
+	}
+	}
+	WWS_Wilhelm_von_PreuBen={
+		name=WWS_Wilhelm_von_PreuBen
+		portraits={
+		army={
+			large="gfx/leaders/WWS/Portrait_Wilhelm_von_PreuBen.tga"
+		}
+	}
+		corps_commander={
+		traits={ politically_connected }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+	}
+	WWS_Ludwig_von_Moltke={
+		name=WWS_Ludwig_von_Moltke
+		portraits={
+		army={
+			large="gfx/leaders/WWS/Portrait_Ludwig_von_Moltke.tga"
+		}
+	}
+	field_marshal={
+		traits={  }
+		skill=4
+		attack_skill=3
+		defense_skill=3
+		planning_skill=4
+		logistics_skill=2
+	}
+	}
+	WWS_von_Below={
+		name=WWS_von_Below
+		portraits={
+		army={
+			large="gfx/leaders/WWS/Portrait_von_Below.tga"
+		}
+	}
+		corps_commander={
+		traits={ Lieutenant_general }
+		skill=2
+		attack_skill=2
+		defense_skill=2
+		planning_skill=2
+		logistics_skill=1
+	}
+	}
+	WWS_von_Bottmer={
+		name=WWS_von_Bottmer
+		portraits={
+		army={
+			large="gfx/leaders/WWS/Portrait_von_Bottmer.tga"
+		}
+	}
+		corps_commander={
+		traits={ Lieutenant_general }
+		skill=3
+		attack_skill=3
+		defense_skill=2
+		planning_skill=2
+		logistics_skill=1
+	}
+	}
+	WWS_Hermann_von_Eichhorn={
+		name=WWS_Hermann_von_Eichhorn
+		portraits={
+		army={
+			large="gfx/leaders/WWS/Portrait_Hermann_von_Eichhorn.tga"
+		}
+	}
+		corps_commander={
+		traits={ Lieutenant_general }
+		skill=3
+		attack_skill=3
+		defense_skill=2
+		planning_skill=2
+		logistics_skill=2
+	}
+	}
+	WWS_Hermann_von_Eichhorn={
+		name=WWS_Hermann_von_Eichhorn
+		portraits={
+		army={
+			large="gfx/leaders/WWS/Portrait_Hermann_von_Eichhorn.tga"
+		}
+	}
+		corps_commander={
+		traits={ Lieutenant_general }
+		skill=3
+		attack_skill=3
+		defense_skill=2
+		planning_skill=2
+		logistics_skill=2
+	}
+	}
+	WWS_von_AlbertHart={
+		name=WWS_von_AlbertHart
+		portraits={
+		army={
+			large="gfx/leaders/WWS/Portrait_von_AlbertHart.tga"
+		}
+	}
+		corps_commander={
+		traits={ skilled_staffer }
+		skill=2
+		attack_skill=2
+		defense_skill=3
+		planning_skill=2
+		logistics_skill=2
+	}
+	}
+	WWS_Ludendorff={
+		name=WWS_Ludendorff
+		portraits={
+		army={
+			large="gfx/leaders/WWS/Portrait_Ludendorff.tga"
+			small="gfx/interface/ideas/Portrait_Ludendorff.dds"
+		}
+	}
+	corps_commander={
+		traits={ skilled_staffer }
+		skill=3
+		attack_skill=2
+		defense_skill=2
+		planning_skill=3
+		logistics_skill=2
+	}
+	advisor={	
+		slot = army_chief
+		allowed = {
+			original_tag = WWS
+		}
+		available = {
+			
+		}
+		traits = {
+			army_chief_maneuver_2
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+	}
+}

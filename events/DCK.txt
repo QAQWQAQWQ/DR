@@ -1,0 +1,38 @@
+﻿###########################
+# DCK Events
+###########################
+
+add_namespace = DCK
+news_event = {
+	id = DCK.1
+	title = DCK.1.t
+	desc = DCK.1.d
+	#picture = 
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = DCK.1.a
+		DCK = {
+			add_to_faction =SHW
+			DCK={declare_war_on = { target = SUE type = annex_everything }}
+		}
+		
+		hidden_effect = {
+			DCK= { 
+			transfer_state = 260
+			add_state_core = 260
+			transfer_state = 245
+			add_state_core = 245
+			transfer_state = 265
+			add_state_core = 265
+			transfer_state = 217
+			add_state_core = 217
+			transfer_state = 218
+			add_state_core = 218
+			transfer_state = 238
+			add_state_core = 238
+	 }
+		}
+	}
+	}
+	

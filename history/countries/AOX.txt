@@ -1,0 +1,154 @@
+﻿capital = 4
+
+oob = "AOX_1920"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	fuel_silos = 1
+}
+add_opinion_modifier = {
+	target = WWS
+	modifier = Confederate_pretenders
+}
+
+
+recruit_character = AOX_Johann_Schober
+recruit_character = AOX_Karl_Johann_Kautsky
+
+
+
+
+
+
+recruit_character = AOX_Archduke_Ferdinand
+recruit_character = AGN_Adolf_Hitler
+recruit_character = AGN_Arthur_Seyss_Inquart
+recruit_character = AGN_Engelbert_Dollfuss
+
+recruit_character = AOX_Franz_Graf_Conrad
+recruit_character = AOX_Baro_Straussenburg
+recruit_character = AOX_Friedrich
+recruit_character = AOX_Svetozar_Boroevic
+recruit_character = AOX_Oscar_Portiolec
+recruit_character = AOX_Michael_Mayr
+recruit_character = AOX_Friedrich_Hayek
+
+
+recruit_character = AOX_Franz_Rohr_von_Denta
+recruit_character = AOX_Alexander_Freiherr_von_Krobatin
+recruit_character = AOX_Joseph_Ferdinand
+recruit_character = AOX_Eduard_Ermolli
+recruit_character = AOX_Charles_I
+recruit_character = AOX_Victor_Dankel
+recruit_character = AOX_Wenzel_Freiherr_von_Wurm
+recruit_character = AOX_Hermann_Kovess
+recruit_character = AOX_Franz_Rohr_von_Denta
+
+recruit_character = AOX_Alexander_Freiherr_von_Krobatin
+
+recruit_character = AOX_Ignaz_Seipel
+recruit_character = AOX_Otto_Bauer
+recruit_character = AOX_Ferdinand_Hanusch
+recruit_character = AOX_Rudolf_Ramek
+recruit_character = AOX_Rudolf_Hilferding
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+
+		#electronics
+		
+		
+		
+		
+		
+
+		#industry
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+set_politics = {
+	ruling_party = Conservatism
+	last_election = "1918.11.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+create_faction = GER
+add_to_faction = DOR
+add_to_faction = AGC
+add_to_faction = DOM
+add_to_faction = DMW
+add_to_faction = WWS
+add_to_faction = LSB
+add_to_faction = DOH
+add_to_faction = DOL
+add_to_faction = DHD
+add_to_faction = DOS
+add_to_faction = DOF
+add_to_faction = DOB
+add_to_faction = DOA
+add_to_faction = DON
+
+
+
+add_to_faction = VCT
+add_to_faction = KGL
+add_to_faction = KLD
+add_to_faction = DMT
+add_to_faction = KOH
+
+set_autonomy = { target = VCT autonomy_state = autonomy_Crown_Territory }
+set_autonomy = { target = KGL autonomy_state = autonomy_Crown_Territory }
+set_autonomy = { target = BXM autonomy_state = autonomy_Crown_Territory }
+set_autonomy = { target = KLD autonomy_state = autonomy_Crown_Territory }
+set_autonomy = { target = DMT autonomy_state = autonomy_Crown_Territory }
+set_autonomy = { target = KOH autonomy_state = autonomy_Crown_Territory }
+
+add_manpower = 5250000
+
+
+add_ideas = {
+	AOX_Hungarian_independence_movement
+	Deutscher_Bund
+	Deutscher_Zollverein
+
+	#law
+	Market_economy
+	Freedom_belief
+	Traditional_conservatism
+	No_labor_laws
+	Media_control
+	Underlying_investment
+	low_industrialization
+	Local_police
+
+	AOX_Michael_Mayr_H
+	AOX_Multi_ethnic_army
+}
+set_popularities = {
+	Reformism = 20
+	Reactionary = 15
+	Conservatism = 65
+}

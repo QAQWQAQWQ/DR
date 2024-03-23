@@ -1,0 +1,83 @@
+characters={
+	
+	JPN_Emperor_Taisho={
+		name=JPN_Emperor_Taisho
+		portraits={
+			civilian={
+				large="gfx/leaders/JPN/portrait_DaZheng.tga"
+			}
+		}
+		country_leader={
+			ideology=Classicism_Conservatism
+            desc=JPN_Emperor_Taisho_DESC
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+
+
+
+
+
+
+
+
+
+
+	JPN_Seienji_Konobu={
+		name=JPN_Seienji_Konobu
+		portraits={
+			army={
+				small="GFX_idea_Seienji_Konobu"
+			}
+		}
+		advisor={
+			slot=head_of_government
+			idea_token=JPN_Seienji_Konobu_H
+			removal_cost = -1
+			allowed={
+				tag=JPN
+			}
+			traits={
+			}
+		}
+	}
+	JPN_Yuyuki_Hamaguchi={
+		name=JPN_Yuyuki_Hamaguchi
+		portraits={
+			army={
+				small="GFX_idea_Yuyuki_Hamaguchi"
+			}
+		}
+		advisor={
+			slot=head_of_government
+			idea_token=JPN_Yuyuki_Hamaguchi_H
+			removal_cost = -1
+			allowed={
+				tag=JPN
+			}
+			traits={
+			}
+		}
+	}
+	JPN_Honorable={
+		name=JPN_Honorable
+		portraits={
+			army={
+				small="GFX_idea_Honorable"
+			}
+		}
+		advisor={
+			slot=head_of_government
+			idea_token=JPN_Honorable_H
+			removal_cost = -1
+			allowed={
+				tag=JPN
+			}
+			traits={
+			}
+		}
+	}		
+	}

@@ -1,0 +1,62 @@
+﻿###########################
+# FTX Events
+###########################
+
+add_namespace = FTX
+add_namespace = QIN
+news_event = {
+	id = FTX.1
+	title = FTX.1.t
+	desc = FTX.1.d
+	picture = GFX_Fengtian_Civil_War
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = FTX.1.a
+		add_political_power = -50
+	    add_stability = -0.05
+		FTX={
+			FTX_Zhang_Zongchang = { set_nationality = GSL }
+			FTX_YangYuTing2 = { set_nationality = GSL }
+	}	
+	GSL= { transfer_state = 912 }
+	    }
+	option = {
+			name = FTX.1.b
+			FTX={
+				FTX_Zhang_Zongchang = { set_nationality = GSL }
+			    FTX_YangYuTing2 = { set_nationality = GSL }
+			}
+			GSL= { 
+				transfer_state = 912 
+			}
+			GSL={change_tag_from = ROOT}
+			}
+	}
+
+	news_event = {
+		id = QIN.2
+		title = QIN.2.t
+		desc = QIN.2.d
+		picture = GFX_PUyi
+		major = yes
+		is_triggered_only = yes
+		fire_only_once = yes
+	
+		immediate = {
+        play_song= ong_Jinou
+	}
+		
+		option = {
+			name = QIN.2.a	
+			FTX={
+			set_politics = {
+				ruling_party = Conservatism
+			}
+		}
+			
+	}
+}

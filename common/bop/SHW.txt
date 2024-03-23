@@ -1,0 +1,52 @@
+
+SHW_Court_struggles_balance = {
+	initial_value = 1
+	left_side = Court_struggles_left_side
+	right_side = Court_struggles_right_side
+	decision_category = SHW_Court_struggles
+	range = {
+		id = Court_struggles_mid_range
+		min = -0.25 
+		max = 0.25
+		modifier = {
+		}
+	} 
+	
+	side = { 
+		id = Court_struggles_left_side
+		icon = GFX_bop_Rasputin
+		range = {
+			id = Court_struggles_left_side_range_Low
+			min = -0.75 
+			max = -0.25
+			modifier = {
+			}
+		}
+		range = {
+			id = Court_struggles_left_side_range_High
+			min = -1
+			max = -0.75
+			modifier = {
+			}
+		}
+	}
+	side = {
+		id = Court_struggles_right_side
+		icon = GFX_bop_Duma 
+		range = {
+			id = Court_struggles_right_side_range_Low
+			min = 0.25
+			max = 0.75
+			modifier = {
+			}
+		}
+		range = {
+			id = Court_struggles_right_side_range_High
+			min = 0.75
+			max = 1
+			modifier = {
+			}
+		}
+	}
+}
+

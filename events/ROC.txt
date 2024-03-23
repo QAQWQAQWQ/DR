@@ -1,0 +1,46 @@
+﻿###########################
+# ROC Events
+###########################
+
+add_namespace = ROC
+news_event = {
+	id = ROC.1
+	title = ROC.1.t
+	desc = ROC.1.d
+	picture = GFX_ROC_1
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = ROC.1.a
+		every_state = {
+				limit = {
+					is_core_of = GUG
+				}
+				add_core_of = ROC
+	    }
+		hidden_effect = {
+			ROC={
+				transfer_state = 592
+				transfer_state = 593
+			}
+		}
+	}
+}
+news_event = {
+	id = ROC.2
+	title = ROC.2.t
+	desc = ROC.2.d
+	picture = GFX_ROC_2
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = ROC.2.a
+		ROC={
+			declare_war_on = {
+				target = ZHX
+				type = liberate_wargoal
+			}
+		}
+	}
+}
+	

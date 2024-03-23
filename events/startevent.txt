@@ -1,0 +1,27 @@
+﻿###########################
+# Political Events
+###########################
+
+add_namespace = political
+country_event = {
+	id = political.1
+	title = political.1.t
+	desc = political.1.d
+	picture = GFX_Provincial_elections
+	is_triggered_only = yes
+	option = {
+			name =political.1.a
+			VCT={leave_faction = yes}
+KGL={leave_faction = yes}
+BXM={leave_faction = yes}
+KLD={leave_faction = yes}
+DMT={leave_faction = yes}
+KOH={leave_faction = yes}
+			ai_chance = {
+				base = 50
+				modifier = {
+					factor = 0.25
+			}
+		}
+	}
+}	

@@ -1,0 +1,74 @@
+division_template = {
+	name = "巴西帝国步兵旅"			
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	priority = 1
+	support = {
+	}
+}
+
+
+units = {
+	division= {	
+		name = "巴西第一步兵旅"
+		location = 10531
+		division_template = "巴西帝国步兵旅"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "巴西第二步兵旅"
+		location = 10531
+		division_template = "巴西帝国步兵旅"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "巴西第三步兵旅"
+		location = 10980
+		division_template = "巴西帝国步兵旅"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "巴西第四步兵旅"
+		location = 10447
+		division_template = "巴西帝国步兵旅"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "巴西第五步兵旅"
+		location = 10946
+		division_template = "巴西帝国步兵旅"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "巴西第六步兵旅"
+		location = 2227
+		division_template = "巴西帝国步兵旅"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "巴西第七步兵旅"
+		location = 10959
+		division_template = "巴西帝国步兵旅"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "巴西第八步兵旅"
+		location = 7476
+		division_template = "巴西帝国步兵旅"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+}

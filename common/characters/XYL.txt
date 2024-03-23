@@ -1,0 +1,38 @@
+characters={
+	XYL_Kuhn_Bella={
+		name=XYL_Kuhn_Bella
+		portraits={
+			civilian={
+				large="gfx/leaders/XYL/Portrait_Kuhn_Bella.tga"
+			}
+		}
+		country_leader={
+			ideology=Scientism_revolutionism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+    XYL_Joseph_Augusta={
+		name=XYL_Joseph_Augusta
+		portraits={
+			civilian={
+				large="gfx/leaders/XYL/Portrait_Joseph_Augusta.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal={
+			traits={  }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
+	}		
+	}

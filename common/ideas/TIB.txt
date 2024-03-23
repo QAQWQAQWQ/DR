@@ -1,0 +1,17 @@
+ideas = {
+    country = {
+		TIB_Tibetan_Buddhism = {
+
+			allowed = {
+				always = yes
+			}
+			picture = Tibetan_Buddhism
+
+			modifier = {
+				stability_factor = 0.05
+				Literacy_modifier=2
+			}
+
+        }
+		}
+}

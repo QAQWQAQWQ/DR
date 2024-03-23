@@ -1,0 +1,83 @@
+WWS_NSU_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_NSU
+	
+	allowed = {	 
+			tag = WWS
+	}
+
+	available = {
+		
+	}
+}
+WWS_mauser_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_mauser
+	
+	allowed = {	 
+			tag = WWS
+	}
+
+	available = {
+	}
+}
+WWS_krupp_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_krupp
+	
+	allowed = {	 
+			tag = WWS
+	}
+
+	available = {
+		
+	}
+}
+WWS_ehrhardt_organization = {
+	include = generic_armored_car_organization
+	icon = GFX_idea_ehrhardt
+	
+	allowed = {	 
+			tag = WWS
+	}
+
+	available = {
+		
+	}
+}
+WWS_Kaiserliche_Werft_Wilhelmshaven_organization = {
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_Kaiserliche
+	
+	allowed = {	 
+			tag = WWS
+	}
+
+	available = {
+		
+	}
+}
+WWS_Kaiserliche_Werft_Wilhelmshaven_organization = {
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_Kaiserliche
+	
+	allowed = {	 
+			tag = WWS
+	}
+
+	available = {
+		
+	}
+}
+WWS_Albatross_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_Albatross
+	
+	allowed = {	 
+			tag = WWS
+	}
+
+	available = {
+		
+	}
+}

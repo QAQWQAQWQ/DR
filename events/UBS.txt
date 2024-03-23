@@ -1,0 +1,384 @@
+﻿###########################
+# BLF Events
+###########################
+add_namespace = MXG
+add_namespace = UBS
+add_namespace = DP
+add_namespace = GOP
+add_namespace = LEF
+
+country_event = {
+	id = DP.1
+	title = DP.1.t
+	desc = DP.1.d
+	picture = GFX_DP_1
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect={
+
+		random_list = {
+			#险胜
+			25={
+	         set_temp_variable = { DP_party = DP_party }
+	         add_to_variable = { DP_party = 283 }
+	         add_to_variable = { DP_party = DP_party }
+			 set_temp_variable = { GOP_party = GOP_party }
+	         add_to_variable = { GOP_party = 255 }
+	         add_to_variable = { GOP_party = GOP_party }
+
+			    set_temp_variable = { ALL_DP_party = ALL_DP_party }
+	            add_to_variable = { ALL_DP_party = 13.741 }
+	            add_to_variable = { ALL_DP_party = ALL_DP_party }
+			    set_temp_variable = { ALL_GOP_party = ALL_GOP_party }
+	            add_to_variable = { ALL_GOP_party = 11.542}
+	            add_to_variable = { ALL_GOP_party = ALL_GOP_party }
+			
+			
+		}
+		    #大胜
+		    25={
+	        set_temp_variable = { DP_party = DP_party }
+	         add_to_variable = { DP_party = 410 }
+	        add_to_variable = { DP_party = DP_party }
+			set_temp_variable = { GOP_party = GOP_party }
+	         add_to_variable = { GOP_party = 128 }
+	        add_to_variable = { GOP_party = GOP_party }
+
+			    set_temp_variable = { ALL_DP_party = ALL_DP_party }
+	            add_to_variable = { ALL_DP_party = 16.254 }
+	            add_to_variable = { ALL_DP_party = ALL_DP_party }
+			    set_temp_variable = { ALL_GOP_party = ALL_GOP_party }
+	            add_to_variable = { ALL_GOP_party = 9.029 }
+	            add_to_variable = { ALL_GOP_party = ALL_GOP_party }
+		}
+		    #险胜
+		    25={
+	        set_temp_variable = { DP_party = DP_party }
+	         add_to_variable = { DP_party = 277 }
+	        add_to_variable = { DP_party = DP_party }
+			set_temp_variable = { GOP_party = GOP_party }
+	         add_to_variable = { GOP_party = 261 }
+	        add_to_variable = { GOP_party = GOP_party }
+
+			    set_temp_variable = { ALL_DP_party = ALL_DP_party }
+	            add_to_variable = { ALL_DP_party = 13.254 }
+	            add_to_variable = { ALL_DP_party = ALL_DP_party }
+			    set_temp_variable = { ALL_GOP_party = ALL_GOP_party }
+	            add_to_variable = { ALL_GOP_party = 12.029 }
+	            add_to_variable = { ALL_GOP_party = ALL_GOP_party }
+		}
+		    #大胜
+		25={
+	        set_temp_variable = { DP_party = DP_party }
+	         add_to_variable = { DP_party = 388 }
+	        add_to_variable = { DP_party = DP_party }
+			set_temp_variable = { GOP_party = GOP_party }
+	         add_to_variable = { GOP_party = 150 }
+	        add_to_variable = { GOP_party = GOP_party }
+
+			    set_temp_variable = { ALL_DP_party = ALL_DP_party }
+	            add_to_variable = { ALL_DP_party = 15.247}
+	            add_to_variable = { ALL_DP_party = ALL_DP_party }
+			    set_temp_variable = { ALL_GOP_party = ALL_GOP_party }
+	            add_to_variable = { ALL_GOP_party = 10.035 }
+	            add_to_variable = { ALL_GOP_party = ALL_GOP_party }
+		}
+		}
+	}
+}
+	option = {
+		name = DP.1.a
+		
+	}
+}
+country_event = {
+	id = GOP.1
+	title = GOP.1.t
+	desc = GOP.1.d
+	picture = GFX_GOP_1
+
+	immediate = {
+		hidden_effect={
+			random_list = {
+				#大胜
+				25={
+				set_temp_variable = { DP_party = DP_party }
+				 add_to_variable = { DP_party = 167 }
+				add_to_variable = { DP_party = DP_party }
+				set_temp_variable = { GOP_party = GOP_party }
+				 add_to_variable = { GOP_party = 371 }
+				add_to_variable = { GOP_party = GOP_party }
+
+				set_temp_variable = { ALL_DP_party = ALL_DP_party }
+	            add_to_variable = { ALL_DP_party = 9.559}
+	            add_to_variable = { ALL_DP_party = ALL_DP_party }
+			    set_temp_variable = { ALL_GOP_party = ALL_GOP_party }
+	            add_to_variable = { ALL_GOP_party = 15.723 }
+	            add_to_variable = { ALL_GOP_party = ALL_GOP_party }
+			}
+				#大胜
+				25={
+				set_temp_variable = { DP_party = DP_party }
+				 add_to_variable = { DP_party = 87 }
+				add_to_variable = { DP_party = DP_party }
+				set_temp_variable = { GOP_party = GOP_party }
+				 add_to_variable = { GOP_party = 451 }
+				add_to_variable = { GOP_party = GOP_party }
+
+				set_temp_variable = { ALL_DP_party = ALL_DP_party }
+	            add_to_variable = { ALL_DP_party = 2.409}
+	            add_to_variable = { ALL_DP_party = ALL_DP_party }
+			    set_temp_variable = { ALL_GOP_party = ALL_GOP_party }
+	            add_to_variable = { ALL_GOP_party = 22.874}
+	            add_to_variable = { ALL_GOP_party = ALL_GOP_party }
+			}
+				#险胜
+				25={
+				set_temp_variable = { DP_party = DP_party }
+				 add_to_variable = { DP_party = 246 }
+				add_to_variable = { DP_party = DP_party }
+				set_temp_variable = { GOP_party = GOP_party }
+				 add_to_variable = { GOP_party = 292 }
+				add_to_variable = { GOP_party = GOP_party }
+
+				set_temp_variable = { ALL_DP_party = ALL_DP_party }
+	            add_to_variable = { ALL_DP_party = 11.365 }
+	            add_to_variable = { ALL_DP_party = ALL_DP_party }
+			    set_temp_variable = { ALL_GOP_party = ALL_GOP_party }
+	            add_to_variable = { ALL_GOP_party = 13.917 }
+	            add_to_variable = { ALL_GOP_party = ALL_GOP_party }
+			}
+				#险胜
+			25={
+				set_temp_variable = { DP_party = DP_party }
+				 add_to_variable = { DP_party = 237 }
+				add_to_variable = { DP_party = DP_party }
+				set_temp_variable = { GOP_party = GOP_party }
+				 add_to_variable = { GOP_party = 301 }
+				add_to_variable = { GOP_party = GOP_party }
+
+				set_temp_variable = { ALL_DP_party = ALL_DP_party }
+	            add_to_variable = { ALL_DP_party = 10.918}
+	            add_to_variable = { ALL_DP_party = ALL_DP_party }
+			    set_temp_variable = { ALL_GOP_party = ALL_GOP_party }
+	            add_to_variable = { ALL_GOP_party = 14.365 }
+	            add_to_variable = { ALL_GOP_party = ALL_GOP_party }
+			}
+			}
+	}
+	}
+	
+	is_triggered_only = yes
+
+	option = {
+		name = GOP.1.a
+		
+	}
+	}
+
+
+
+
+
+
+
+news_event = {
+	id = UBS.1
+	title = UBS.1.t
+	desc = UBS.1.d
+	picture = GFX_arrested_communists
+
+	major = yes
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = UBS.1.a
+		trigger = { 
+			TAG = UBS
+		}
+		UBS={
+		add_popularity = { ideology = Revolutionism popularity = -0.1 }
+	}
+}
+	option = {
+		name = UBS.1.b
+		trigger = { OR = {TAG = FRW }
+	}
+	}
+	option = {
+		name = UBS.1.c
+		trigger = { 
+			NOT = {
+			TAG = UBS
+			TAG = BHL	
+			TAG = FRW 
+		}
+	}
+}
+}
+country_event = {
+	id = UBS.2
+	title = UBS.2.t
+	desc = UBS.2.d
+	picture = GFX_Matterwan_town
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UBS.2.a
+		country_event={id=UBS.3 days=14}
+	}
+	}
+country_event = {
+	id = UBS.3
+	title = UBS.3.t
+	desc = UBS.3.d
+	picture = GFX_Matterwan_town
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UBS.3.a
+		country_event={id=UBS.4 days=24}
+	}
+	}
+country_event = {
+	id = UBS.4
+	title = UBS.4.t
+	desc = UBS.4.d
+	picture = GFX_Matterwan_town
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UBS.4.a
+		country_event={id=UBS.5 days=14}
+	}
+	}
+country_event = {
+	id = UBS.5
+	title = UBS.5.t
+	desc = UBS.5.d
+	picture = GFX_Matterwan_town
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UBS.5.a
+		country_event={id=UBS.6 days=14}
+	}
+	}
+country_event = {
+	id = UBS.6
+	title = UBS.6.t
+	desc = UBS.6.d
+	picture = GFX_Matterwan_town
+	
+	is_triggered_only = yes
+
+immediate={
+     MRA={
+		set_province_controller = 6971
+		set_province_controller = 4627
+		set_province_controller = 3975
+	}
+
+}
+	option = {
+		name = UBS.6.b
+	}
+	}
+country_event = {
+	id = MXG.1
+	title = MXG.1.t
+	desc = MXG.1.d
+	picture = GFX_Diplomatic_corps
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MXG.1.a
+		country_event={id=MXG.2 days=4}
+	}
+	}
+country_event = {
+	id = MXG.2
+	title = MXG.2.t
+	desc = MXG.2.d
+	picture = GFX_Diplomatic_corps
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MXG.2.a
+		country_event={id=MXG.3 days=4}
+	}
+	}
+country_event = {
+	id = MXG.3
+	title = MXG.3.t
+	desc = MXG.3.d
+	picture = GFX_Diplomatic_corps
+		
+	is_triggered_only = yes
+	
+	option = {
+	name = MXG.3.a
+	country_event={id=MXG.4 days=4}
+	}
+	}
+country_event = {
+    id = MXG.4
+    title = MXG.4.t
+	desc = MXG.4.d
+    picture = GFX_Diplomatic_corps
+			
+	is_triggered_only = yes
+		
+	option = {
+	name = MXG.4.a
+	country_event={id=MXG.5 days=4}
+			}
+			}			
+country_event = {
+	id = MXG.5
+	title = MXG.5.t
+    desc = MXG.5.d
+	picture = GFX_Diplomatic_corps
+						
+	is_triggered_only = yes
+					
+	option = {
+	name = MXG.5.a
+	country_event={id=MXG.6 days=4}
+			}
+	}	
+country_event = {
+	id = MXG.6
+	title = MXG.6.t
+    desc = MXG.6.d
+	picture = GFX_Diplomatic_corps
+						
+	is_triggered_only = yes
+					
+	option = {
+	name = MXG.6.a
+	}
+	}
+country_event = {
+	id = MXG.7
+	title = MXG.7.t
+    desc = MXG.7.d
+	picture = GFX_death_penalty
+						
+	is_triggered_only = yes
+					
+	option = {
+	name = MXG.7.a
+			}
+	}		
+

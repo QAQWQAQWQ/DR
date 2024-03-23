@@ -1,0 +1,948 @@
+﻿###########################
+# FRW Events
+###########################
+
+add_namespace = FRW
+add_namespace = Paris_Commune
+add_namespace = Assembly_Tours
+
+
+
+
+
+
+
+
+
+
+news_event = {
+	id = Assembly_Tours.1
+	title = Assembly_Tours.1.t
+	desc = Assembly_Tours.1.d
+	picture = GFX_Second_International_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		trigger = {
+			NOT={
+				has_country_flag = FRW_Syndicalist_protests
+			}
+		}
+		name = Assembly_Tours.1.a
+		}
+	option = {
+		trigger = {
+			AND={
+				has_country_flag = FRW_Syndicalist_protests
+			}
+		}
+		name = Assembly_Tours.1.b
+		set_country_flag = Assembly_Tours_1
+		}
+	}
+
+country_event = {
+	id = Assembly_Tours.2
+	title = Assembly_Tours.2.t
+	desc = Assembly_Tours.2.d
+	picture = GFX_Paris_Commune_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = Assembly_Tours.2.a
+		add_political_power = 100
+	    }
+	option = {
+		name = Assembly_Tours.2.b
+		add_political_power = 100
+		}
+	}
+
+
+
+
+
+country_event = {
+	id = Paris_Commune.1
+	title = Paris_Commune.1.t
+	desc = Paris_Commune.1.d
+	picture = GFX_Paris_Commune_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = Paris_Commune.1.a
+		add_political_power = 100
+	    }
+	}
+
+
+country_event = {
+	id = FRW.1
+	title = FRW.1.t
+	desc = FRW.1.d
+	picture = GFX_LENIN
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = FRW.1.a
+		hidden_effect = {
+			country_event = countryevent.1
+		}
+	    }
+	}
+country_event = {
+			id = FRW.3
+			title = FRW.3.t
+			desc = FRW.3.d
+			picture = GFX_China
+			is_triggered_only = yes
+			fire_only_once = yes
+			trigger = {
+				
+				}
+			option = {
+				name = FRW.3.a
+				}
+				option = {
+					name = FRW.3.b
+					}
+			}
+            country_event = {
+				id =FRW.4
+				title = FRW.4.t
+				desc = FRW.4.d
+				picture = GFX_FRW_4
+				is_triggered_only = yes
+				fire_only_once = yes
+				trigger = {
+					}
+				option = {
+					name = FRW.4.a
+					country_event = {id=FRW.5 days=5}
+					remove_advisor_role = {
+						character = "FRW_Alexandre_Millerand"
+						slot = head_of_government
+					  }
+					remove_advisor_role = {
+						character = "FRW_Aristide_Briand"
+						slot = political_advisor
+					  }
+					remove_advisor_role = {
+						character = "FRW_Adrien_Rene_Viviani"
+						slot = political_advisor
+					  }
+					}
+				}
+country_event = {
+		id = FRW.5
+		title = FRW.5.t
+		desc = FRW.5.d
+		picture = GFX_FRW_5
+		is_triggered_only = yes
+		fire_only_once = yes
+		trigger = {
+						}
+		option = {
+		name = FRW.5.a
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = FRW_LudovicOscar_Frossard_P
+		show_ideas_tooltip = FRW_Paul_Faure_P
+		show_ideas_tooltip = FRW_Benoit_Frachon_P
+		set_country_flag = LudovicOscar_Frossard_P
+		set_country_flag = Paul_Faure_P
+		set_country_flag = Benoit_Frachon_P
+		}
+		option = {
+		name = FRW.5.b
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = FRW_Sebastian_Fuhr_P
+		show_ideas_tooltip = FRW_Edouard_Berth_P
+		show_ideas_tooltip = FRW_Marcel_Deat_P
+		set_country_flag = Sebastian_Fuhr_P
+		set_country_flag = Edouard_Berth_P
+		set_country_flag = Marcel_Deat_P
+		}
+		option = {
+		name = FRW.5.c
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = FRW_Edouard_Daladier_P
+		set_country_flag = Edouard_Daladier_P
+		}
+		option = {
+			name = FRW.5.e
+		custom_effect_tooltip = available_political_advisor	
+		show_ideas_tooltip = FRW_Vincent_Auriol_P
+		set_country_flag = Vincent_Auriol_P
+		}
+	}
+country_event = {
+		id = FRW.6
+		title = FRW.6.t
+		desc = FRW.6.d
+		picture = GFX_FRW_6
+		is_triggered_only = yes
+		fire_only_once = yes
+		trigger = {
+			}
+		option = {
+		name = FRW.6.a
+		hidden_effect = {
+			country_event = {id=FRW.7 days=5}
+		}
+			}
+		option = {
+		name = FRW.6.b
+		hidden_effect = {
+			country_event = {id=FRW.4 days=3}
+		}
+		
+		}
+		}
+country_event = {
+		id = FRW.7
+		title = FRW.7.t
+		desc = FRW.7.d
+		picture = GFX_FRW_6
+		is_triggered_only = yes
+		fire_only_once = yes
+		trigger = {
+		}
+		option = {
+		name = FRW.7.a
+		add_political_power = -100
+		add_stability = -0.05
+        set_country_flag = FRW_Syndicalist_protests
+			}
+		}
+country_event = {
+		id = FRW.8
+		title = FRW.8.t
+		desc = FRW.8.d
+		picture = GFX_Eu_election
+		is_triggered_only = yes
+		fire_only_once = yes
+		trigger = {
+			}
+		option = {
+		name = FRW.8.a
+			}
+	}
+country_event = {
+		id = FRW.9
+		title = FRW.9.t
+		desc = FRW.9.d
+		picture = GFX_Georges_Valois
+		is_triggered_only = yes
+		fire_only_once = yes
+		trigger = {
+			}
+		option = {
+		name = FRW.9.a
+			}
+	}
+country_event = {
+		id = FRW.10
+		title = FRW.10.t
+		desc = FRW.10.d
+		picture = GFX_Georges_Valois
+		is_triggered_only = yes
+		fire_only_once = yes
+		trigger = {
+			Anarchism > 0.25
+			}
+		option = {
+		name = FRW.10.a
+			}
+		option = {
+			name = FRW.10.b
+			country_event = { id = FRW.11 days = 10 }
+			}
+	}
+country_event = {
+		id = FRW.11
+		title = FRW.11.t
+		desc = FRW.11.d
+		picture = GFX_Georges_Valois
+		is_triggered_only = yes
+		fire_only_once = yes
+		trigger = {
+			}
+		option = {
+		    name = FRW.11.a
+			}
+		option = {
+			name = FRW.11.b
+			country_event = { id = FRW.12 days = 10 }
+			}
+	}
+country_event = {
+		id = FRW.12
+		title = FRW.12.t
+		desc = FRW.12.d
+		picture = GFX_Georges_Valois
+		is_triggered_only = yes
+		fire_only_once = yes
+		trigger = {
+			}
+		option = {
+		    name = FRW.12.a
+			}
+		option = {
+			name = FRW.12.b
+			country_event = { id = FRW.13 days = 12 }
+			add_popularity = {
+				ideology = Anarchism
+				popularity = 0.15
+			}
+		    }
+}
+country_event = {
+		id = FRW.13
+		title = FRW.13.t
+		desc = FRW.13.d
+		picture = GFX_Georges_Valois
+		is_triggered_only = yes
+		fire_only_once = yes
+		trigger = {
+			}
+		option = {
+		    name = FRW.13.a
+			add_popularity = {
+				ideology = Anarchism
+				popularity = 0.55
+			}
+			}
+}
+country_event = {
+	id = FRW.14
+	title = FRW.14.t
+	desc = FRW.14.d
+	picture = GFX_Georges_Valois
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.14.a
+		custom_effect_tooltip = FRW_14_tt
+		}
+}	
+country_event = {
+	id = FRW.15
+	title = FRW.15.t
+	desc = FRW.15.d
+	picture = GFX_Georges_Valois
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.15.a
+        add_political_power = -20
+		add_stability = 0.05
+		}
+	option = {
+		name = FRW.15.b
+		add_stability = -0.05
+			}	
+}
+country_event = {
+	id = FRW.16
+	title = FRW.16.t
+	desc = FRW.16.d
+	picture = GFX_Georges_Valois
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.16.a
+        add_political_power = -50
+		add_stability = 0.05
+		}
+	option = {
+		name = FRW.16.b
+			}
+	option = {
+	    name = FRW.16.c
+		add_political_power = 100
+		add_stability = -0.15
+		custom_effect_tooltip = FRW_16_c_tt
+		}			
+}
+country_event = {
+	id = FRW.17
+	title = FRW.17.t
+	desc = FRW.17.d
+	picture = GFX_LJC
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.17.a
+		add_popularity = {
+			ideology = Reformism
+			popularity = 0.03
+		}
+		}
+	option = {
+		name = FRW.17.b
+		add_popularity = {
+			ideology = Revolutionism
+			popularity = 0.03
+		}
+			}
+	option = {
+	    name = FRW.17.c
+		add_popularity = {
+			ideology = Anarchism
+			popularity = 0.03
+		}
+		}			
+}
+country_event = {
+	id = FRW.18
+	title = FRW.18.t
+	desc = FRW.18.d
+	picture = GFX_FRW_18
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.18.a
+		}		
+}
+country_event = {
+	id = FRW.19
+	title = FRW.19.t
+	desc = FRW.19.d
+	picture = GFX_FRW_19
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.19.a
+		}		
+}
+country_event = {
+	id = FRW.20
+	title = FRW.20.t
+	desc = FRW.20.d
+	picture = GFX_FRW_20
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.20.a
+		}		
+}
+country_event = {
+	id = FRW.21
+	title = FRW.21.t 
+	desc = FRW.21.d
+	picture = GFX_FRW_21
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.21.a
+		FRW={
+			country_event = {id=FRW.22 days=2}
+		}
+		
+		36={
+			add_building_construction = {
+				type = bunker
+				level = 8
+				instant_build = no
+				province = 11318
+			}
+			add_building_construction = {
+				type = bunker
+				level = 8 
+				instant_build = no
+				province = 9309
+			}
+			add_building_construction = {
+				type = bunker
+				level = 8
+				instant_build = no
+				province = 9403
+			}
+			add_building_construction = {
+				type = bunker
+				level = 8
+				instant_build = no
+				province = 9363
+			}
+		}
+		35={
+			add_building_construction = {
+				type = bunker
+				level = 8
+				instant_build = no
+				province = 11456
+			}
+			add_building_construction = {
+				type = bunker
+				level = 8
+				instant_build = no
+				province = 11562
+			}
+		}
+		}	
+	option = {
+			name = FRW.21.b
+			FRW={
+				country_event = {id=FRW.23 days=2}
+			}
+			
+		}			
+}
+country_event = {
+	id = FRW.22
+	title = FRW.22.t
+	desc = FRW.22.d
+	picture = GFX_FRW_21
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.22.a
+		}		
+}
+country_event = {
+	id = FRW.23
+	title = FRW.23.t
+	desc = FRW.23.d
+	picture = GFX_FRW_21
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.23.a
+		}		
+}
+country_event = {
+	id = FRW.24
+	title = FRW.24.t
+	desc = FRW.24.d
+	picture = GFX_FRW_21
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.24.a
+		}		
+}
+country_event = {
+	id = FRW.25
+	title = FRW.25.t
+	desc = FRW.25.d
+	picture = GFX_FRW_21
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.25.a
+		diplomatic_relation = {
+			country = FROM
+			relation = non_aggression_pact
+			active = yes
+		}
+		FRW={
+			country_event = {id=FRW.27 days=1}
+		}
+		
+		}		
+	option = {
+		name = FRW.25.b
+		FRW={
+			country_event = {id=FRW.26 days=1}
+		}
+		}
+}
+country_event = {
+	id = FRW.26
+	title = FRW.26.t
+	desc = FRW.26.d
+	picture = GFX_FRW_21
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.26.a
+		}		
+}
+country_event = {
+	id = FRW.28
+	title = FRW.28.t
+	desc = FRW.28.d
+	picture = GFX_FRW_28
+	is_triggered_only = yes
+	trigger = {
+		date=1920.1.2
+		}
+	option = {
+		name = FRW.28.a
+		}		
+}
+country_event = {
+	id = FRW.29
+	title = FRW.29.t
+	desc = FRW.29.d
+	picture = GFX_FRW_29
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.29.a
+		}		
+}
+country_event = {
+	id = FRW.30
+	title = FRW.30.t
+	desc = FRW.30.d
+	picture = GFX_FRW_30
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.30.a
+		country_event = {id=FRW.31 days=1}
+		}		
+}
+country_event = {
+	id = FRW.31
+	title = FRW.31.t
+	desc = FRW.31.d
+	picture = GFX_FRW_31
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.31.a
+		}		
+}
+country_event = {
+	id = FRW.32
+	title = FRW.32.t
+	desc = FRW.32.d
+	picture = GFX_FRW_31
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.32.a
+		add_ideas = FRW_Elway_Thought
+		}	
+	option = {
+		name = FRW.32.b
+		}	
+}
+country_event = {
+	id = FRW.33
+	title = FRW.33.t
+	desc = FRW.33.d
+	picture = GFX_FRW_31
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.33.a
+		}	
+}
+country_event = {
+	id = FRW.34
+	title = FRW.34.t
+	desc = FRW.34.d
+	picture = GFX_FRW_31
+	is_triggered_only = yes
+	trigger = {
+		threat > 0.3
+		}
+	option = {
+		name = FRW.34.a
+		}	
+}
+country_event = {
+	id = FRW.35
+	title = FRW.35.t
+	desc = FRW.35.d
+	picture = GFX_FRW_31
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+	option = {
+		name = FRW.35.a
+		set_politics = {
+			ruling_party = Liberalism
+		}
+		set_popularities = {
+			Liberalism=62
+			Reformism=18
+			Revolutionism=15
+			Anarchism=5
+		}
+		ROOT={
+			mark_focus_tree_layout_dirty = yes
+		}
+		}
+	option = {
+		name = FRW.35.b
+		add_country_leader_role = {
+			character = FRW_Leon_Blum
+			promote_leader = yes
+			country_leader = {
+				ideology = Democracy_Reformism
+				expire = "1965.1.1.1"
+				traits = { }
+			}
+		}
+		set_popularities = {
+			Reformism=62
+			Liberalism=18
+			Revolutionism=15
+			Anarchism=5
+		}
+		ROOT={
+			mark_focus_tree_layout_dirty = yes
+		}
+		
+		}
+	option = {
+		name = FRW.35.c
+		set_politics = {
+			ruling_party = Revolutionism
+		}
+		set_popularities = {
+			Revolutionism=62
+			Liberalism=18
+			Reformism=15
+			Anarchism=5
+		}
+		ROOT={
+			mark_focus_tree_layout_dirty = yes
+		}
+		}	
+	option = {
+		trigger = {
+			has_country_flag = Assembly_Tours_1
+		}
+		name = FRW.35.e
+		set_politics = {
+			ruling_party = Anarchism
+		}
+		set_popularities = {
+			Anarchism=70
+			Liberalism=10
+			Reformism=15
+			Revolutionism=5
+		}
+		ROOT={
+			mark_focus_tree_layout_dirty = yes
+		}
+		
+		}
+}
+country_event = {
+	id = FRW.36
+	title = FRW.36.t
+	desc = FRW.36.d
+	picture = GFX_FRW_31
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.36.a
+		kill_ideology_leader = Revolutionism
+		add_country_leader_role = {
+			character = FRW_Marcel_Cachin
+			promote_leader = yes
+			country_leader = {
+				ideology = Authoritarianism_revolutionism
+				expire = "1965.1.1.1"
+				#traits = { }
+			}
+		}
+		}
+}
+country_event = {
+	id = FRW.37
+	title = FRW.37.t
+	desc = FRW.37.d
+	picture = GFX_FRW_31
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.37.a
+		country_event={id=FRW.38 days=5}
+		}
+}
+country_event = {
+	id = FRW.38
+	title = FRW.38.t
+	desc = FRW.38.d
+	picture = GFX_FRW_31
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.38.a
+		country_event={id=FRW.39 days=5}
+		}
+	option = {
+		name = FRW.38.b
+		}
+}
+country_event = {
+	id = FRW.39
+	title = FRW.39.t
+	desc = FRW.39.d
+	picture = GFX_FRW_31
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.39.a
+		FRW_Edouard_de_Castelnau={set_nationality = AGC}
+		}
+}
+country_event = {
+	id = FRW.40
+	title = FRW.40.t
+	desc = FRW.40.d
+	picture = GFX_FRW_31
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.40.a
+		add_to_variable = {
+			var = capital_reserves
+			value = 0.05
+			tooltip = add_FRW_focus53_capital_reserves
+		}
+		}
+}
+country_event = {
+	id = FRW.41
+	title = FRW.41.t
+	desc = FRW.41.d
+	picture = GFX_FRW_31
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.41.a
+		add_threat = 15
+		}
+}
+country_event = {
+	id = FRW.42
+	title = FRW.42.t
+	desc = FRW.42.d
+	#picture = GFX_FRW_31
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.42.a
+		}
+}
+country_event = {
+	id = FRW.43
+	title = FRW.43.t
+	desc = FRW.43.d
+	#picture = GFX_FRW_31
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.43.a
+		add_to_variable = {
+			var = capital_reserves
+			value = 0.25
+			tooltip = add_to_variable_FRW_43
+		}
+		}
+}
+country_event = {
+	id = FRW.44
+	title = FRW.44.t
+	desc = FRW.44.d
+	#picture = GFX_FRW_31
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.44.a
+		set_politics = {
+			ruling_party = Anarchism
+		}
+		promote_character = {
+			character = FRW_Leon_Jouhaux
+			ideology = Anarchism
+		}
+		set_popularities = {
+			Revolutionism = 15
+			Anarchism= 85
+		}
+		}
+	option = {
+		name = FRW.44.b
+		set_politics = {
+			ruling_party = Anarchism
+		}
+		promote_character = {
+			character = FRW_Pierre_Monatte
+			ideology = Anarchism
+		}
+		set_popularities = {
+			Revolutionism = 15
+			Anarchism= 85
+		}
+		}
+}
+country_event = {
+	id = FRW.45
+	title = FRW.45.t
+	desc = FRW.45.d
+	#picture = GFX_FRW_31
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.45.a
+		add_political_power = 200
+		add_stability = -0.1
+		hidden_effect = {
+		country_event={id=FRW.6 days=1} 
+		}
+		
+		}
+	option = {
+		name = FRW.45.b
+		add_political_power = 50
+		add_stability = 0.05
+		}
+}

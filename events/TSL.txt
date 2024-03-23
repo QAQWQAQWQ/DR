@@ -1,0 +1,19 @@
+﻿###########################
+# TSL Events
+###########################
+
+add_namespace = TSL
+news_event = {
+	id = TSL.1
+	title = TSL.1.t
+	desc = TSL.1.d
+	picture = GFX_Restoration_Israel
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = TSL.1.a
+		TSL={transfer_state = 454}
+			
+	}
+	}
+	

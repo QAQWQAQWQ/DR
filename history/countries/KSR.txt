@@ -1,0 +1,53 @@
+﻿capital = 208
+
+oob = "KSR_1920"
+
+recruit_character = KSR_Kronstadt_sailor
+
+
+	set_political_power = 200
+	add_command_power = 10
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+
+		#electronics
+		
+		
+		#industry
+		
+		
+	}
+
+set_politics = {
+	ruling_party = Anarchism
+	last_election = "1919.11.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+add_ideas= {
+#law
+atheism
+Affirmative_action
+Local_police
+Weak_investments
+State_media
+Trade_union_neutrality
+Basic_industrialization 
+Staterun_economy
+Planned_economy
+}
+set_popularities = {
+	Anarchism = 100
+}

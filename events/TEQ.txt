@@ -1,0 +1,71 @@
+﻿###########################
+# TEQ Events
+###########################
+
+add_namespace = TEQ
+
+news_event = {
+	id = TEQ.1
+	title = TEQ.1.t
+	desc = TEQ.1.d
+	picture = GFX_Suez_Canal_Crisis
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = TEQ.1.a
+		}
+	}
+
+country_event = {
+	id = TEQ.2
+	title = TEQ.2.t
+	desc = TEQ.2.d
+	#picture = GFX_Suez_Canal_Crisis
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = TEQ.2.a
+	 TKD= { 
+		transfer_state = 455
+		add_state_core = 455
+ }
+	 SYR= { 
+		transfer_state = 677
+		add_state_core = 677
+		transfer_state = 799
+		add_state_core = 799
+		transfer_state = 680
+		add_state_core = 680
+		transfer_state = 554
+		add_state_core = 554
+		transfer_state = 553
+		add_state_core = 553
+
+		transfer_state = 676
+		add_state_core = 676
+		transfer_state = 291
+		add_state_core = 291
+		transfer_state = 675
+		add_state_core = 675
+ }
+		}
+	}
+
+	news_event = {
+	id = TEQ.3
+	title = TEQ.3.t
+	desc = TEQ.3.d
+	picture = GFX_TEQ_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = TEQ.3.a
+		}
+	}

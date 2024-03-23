@@ -1,0 +1,30 @@
+characters={
+	ALB_Esad_Toptani={
+		name=ALB_Esad_Toptani
+		portraits={
+			civilian={
+				large="gfx/leaders/ALB/Portrait_Esad_Toptani.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ALB_SuoGu={
+		name=ALB_SuoGu
+		portraits={
+			civilian={
+				large="gfx/leaders/ALB/portrait_SuoGu.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

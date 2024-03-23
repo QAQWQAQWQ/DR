@@ -1,0 +1,35 @@
+can_be_affected = {
+    OR = {
+        exists = no
+        custom_trigger_tooltip = { 
+            tooltip = we_can_be_affected_tool
+            NOT = {
+                OR = {
+                    original_tag = AOX
+                    original_tag = WWS
+                    original_tag = AGC
+                    original_tag = LSB
+                    original_tag = DHD
+                    original_tag = DON
+                    original_tag = DOF
+                    original_tag = DOB
+                    original_tag = DOR
+                    original_tag = BXM
+                    original_tag = DOL
+                    original_tag = DOH
+                    original_tag = DOA
+                    original_tag = DOM
+                    original_tag = DOS
+						   tag = SAA
+						   tag = SAB
+						   tag = SAC
+						   tag = SAD
+						   tag = SAE
+						   tag = SAF
+						   tag = SAG
+                    is_puppet = yes
+                }
+            }
+        }
+    }
+}

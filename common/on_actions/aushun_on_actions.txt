@@ -1,0 +1,340 @@
+on_actions = {
+	on_startup= {
+		effect = {
+            set_variable = {
+                global.bosnia_contradictions = 0
+            }
+            set_variable = {
+                global.bosnia_hun_win = 0
+            }
+            set_variable = {
+                global.bosnia_cro_win = 0
+            }
+            set_variable = {
+                global.bosnia_war_str = 0
+            }
+            set_variable = {
+                global.hungry_war = 0
+            }
+            set_variable = {
+                global.hungry_war_red_win = 0
+            }
+            set_variable = {
+                global.hungry_war_hun_win = 0
+            }
+            set_variable = {
+                global.cze_accpect = 0
+            }
+            set_variable = {
+                global.pol_accpect = 0
+            }
+            set_variable = {
+                global.cro_accpect = 0
+            }
+            AOX = {
+                country_event = austria.1
+                set_variable = {
+                    aus_ger_sup = 15
+                }
+                set_variable = {
+                    aus_hun_nat_eth_completed = 0
+                }
+                set_variable = {
+                    aus_ger_sup_end = 0
+                }
+                set_variable = {
+                    aus_hun_nat = 0
+                }
+                add_to_array = {
+                    array = aus_hun_gov_sup
+                    value = 100
+                    index = 0
+                }
+                add_to_array = {
+                    array = aus_hun_egree
+                    value = 0
+                    index = 0
+                }
+                add_to_array = {
+                    array = aus_hun_has_meg
+                    value = 1
+                    index = 0
+                }
+                add_to_array = {
+                    array = aus_hun_gov_sup
+                    value = 60
+                    index = 1
+                }
+                add_to_array = {
+                    array = aus_hun_egree
+                    value = 70
+                    index = 1
+                }
+                add_to_array = {
+                    array = aus_hun_has_meg
+                    value = 0
+                    index = 1
+                }
+                add_to_array = {
+                    array = aus_hun_gov_sup
+                    value = 65
+                    index = 2
+                }
+                add_to_array = {
+                    array = aus_hun_egree
+                    value = 40
+                    index = 2
+                }
+                add_to_array = {
+                    array = aus_hun_has_meg
+                    value = 0
+                    index = 2
+                }
+                add_to_array = {
+                    array = aus_hun_gov_sup
+                    value = 70
+                    index = 3
+                }
+                add_to_array = {
+                    array = aus_hun_egree
+                    value = 50
+                    index = 3
+                }
+                add_to_array = {
+                    array = aus_hun_has_meg
+                    value = 0
+                    index = 3
+                }
+                add_to_array = {
+                    array = aus_hun_gov_sup
+                    value = 70
+                    index = 4
+                }
+                add_to_array = {
+                    array = aus_hun_egree
+                    value = 50
+                    index = 4
+                }
+                add_to_array = {
+                    array = aus_hun_has_meg
+                    value = 0
+                    index = 4
+                }
+                add_to_array = {
+                    array = aus_hun_gov_sup
+                    value = 60
+                    index = 5
+                }
+                add_to_array = {
+                    array = aus_hun_egree
+                    value = 35
+                    index = 5
+                }
+                add_to_array = {
+                    array = aus_hun_has_meg
+                    value = 0
+                    index = 5
+                }
+                add_to_array = {
+                    array = aus_hun_gov_sup
+                    value = 30
+                    index = 6
+                }
+                add_to_array = {
+                    array = aus_hun_egree
+                    value = 25
+                    index = 6
+                }
+                add_to_array = {
+                    array = aus_hun_has_meg
+                    value = 0
+                    index = 6
+                }
+                add_to_array = {
+                    array = aus_hun_gov_sup
+                    value = 65
+                    index = 7
+                }
+                add_to_array = {
+                    array = aus_hun_egree
+                    value = 40
+                    index = 7
+                }
+                add_to_array = {
+                    array = aus_hun_has_meg
+                    value = 0
+                    index = 7
+                }
+                add_to_array = {
+                    array = aus_hun_gov_sup
+                    value = 80
+                    index = 8
+                }
+                add_to_array = {
+                    array = aus_hun_egree
+                    value = 50
+                    index = 8
+                }
+                add_to_array = {
+                    array = aus_hun_has_meg
+                    value = 0
+                    index = 8
+                }
+                add_to_array = {
+                    array = aus_hun_gov_sup
+                    value = 100
+                    index = 9
+                }
+                add_to_array = {
+                    array = aus_hun_egree
+                    value = 0
+                    index = 9
+                }
+                add_to_array = {
+                    array = aus_hun_has_meg
+                    value = 1
+                    index = 9
+                }
+            }
+        }            
+    }
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = {
+                    ROOT = { tag = KOH }
+                    FROM = { tag = DMT }
+                    check_variable = { global.bosnia_war_str = 1 }
+                    check_variable = { global.bosnia_hun_win = 0 }
+                    check_variable = { global.bosnia_cro_win = 0 }
+                }
+                set_variable = { global.bosnia_cro_win = 1 }
+                DMT = { white_peace = KOH }
+                KOH = { white_peace = DMT }
+                DMT = { transfer_state = 104 }
+                DMT = { transfer_state = 804 }
+                DMT = { transfer_state = 918 }
+                DMT = { transfer_state = 1018 }
+                bos_war_end_qwq = yes
+                AOX = {
+                    country_event = aushun.3
+                }
+            }
+            if = {
+                limit = {
+                    ROOT = { tag = DMT }
+                    FROM = { tag = KOH }
+                    check_variable = { global.bosnia_war_str = 1 }
+                    check_variable = { global.bosnia_hun_win = 0 }
+                    check_variable = { global.bosnia_cro_win = 0 }
+                }
+                set_variable = { global.bosnia_hun_win = 1 }
+                DMT = { white_peace = KOH }
+                KOH = { white_peace = DMT }
+                KOH = {
+                    annex_country = {
+                        target = DMT transfer_troops = no
+                    }
+                }
+                bos_war_end_qwq = yes
+                AOX = {
+                    country_event = aushun.4
+                }
+            }
+            if = {
+                limit = {
+                    ROOT = { tag = XYL }
+                    OR = {
+                        FROM = { tag = HUN }
+                        FROM = { tag = KOH }
+                    }
+                    check_variable = { global.hungry_war = 1 }
+                    check_variable = { global.hungry_war_red_win = 0 }
+                    check_variable = { global.hungry_war_hun_win = 0 }
+                }
+                check_variable = { global.hungry_war_hun_win = 1 }
+                FROM = { white_peace = XYL }
+                XYL = { white_peace = FROM }
+                FROM = {
+                    annex_country = {
+                        target = XYL transfer_troops = no
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    OR = {
+                        ROOT = { tag = HUN }
+                        ROOT = { tag = KOH }
+                    }
+                    FROM = { tag = XYL }
+                    check_variable = { global.hungry_war = 1 }
+                    check_variable = { global.hungry_war_red_win = 0 }
+                    check_variable = { global.hungry_war_hun_win = 0 }
+                }
+                check_variable = { global.hungry_war_red_win = 1 }
+                ROOT = { white_peace = XYL }
+                XYL = { white_peace = ROOT }
+                XYL = {
+                    annex_country = {
+                        target = ROOT transfer_troops = no
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    OR = {
+                        ROOT = { tag = HUN }
+                        ROOT = { tag = XYL }
+                    }
+                    FROM = { tag = AOX }
+                    AOX = {
+                        has_completed_focus = AUS_bir_14
+                    }
+                }
+                ROOT = { white_peace = AOX }
+                AOX = { white_peace = ROOT }
+                KOH = {
+                    annex_country = {
+                        target = ROOT transfer_troops = no
+                    }
+                }
+                AOX = {
+                    set_autonomy = { target = KOH autonomy_state = autonomy_Crown_Territory }
+                }
+                KOH = {
+                    add_ideas = {
+                        Part_of_Habsburgs
+                    }
+                }
+                
+                DMT = { transfer_state = 109 }
+                DMT = { transfer_state = 917 }
+                DMT = { transfer_state = 163 }
+                DMT = { transfer_state = 103 }
+                DMT = { transfer_state = 804 }
+                DMT = { transfer_state = 918 }
+                DMT = { transfer_state = 1018 }
+                
+                AOX = {
+                    set_autonomy = { target = DMT autonomy_state = autonomy_Crown_Territory }
+                }
+                DMT = {
+                    add_ideas = {
+                        Part_of_Habsburgs
+                    }
+                }
+
+                KOH = {
+                    set_politics = {ruling_party = Conservatism}
+                    set_popularities = {
+                        Liberalism = 25
+                        Reactionary = 25
+                        Conservatism = 40
+                        Revolutionism = 10
+                    }
+                }
+            }
+        }
+    }
+}

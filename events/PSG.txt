@@ -1,0 +1,51 @@
+﻿###########################
+# PSG Events
+###########################
+
+add_namespace = PSG
+news_event = {
+	id = PSG.1
+	title = PSG.1.t
+	desc = PSG.1.d
+	#picture = 
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = PSG.1.a
+		hidden_effect = {
+			PSG= { 
+			transfer_state = 571
+			add_state_core = 571
+			transfer_state = 570
+			add_state_core = 570
+			transfer_state = 569
+			add_state_core = 569
+			transfer_state = 578
+			add_state_core = 578
+			transfer_state = 577
+			add_state_core = 577
+			transfer_state = 568
+			add_state_core = 568
+			transfer_state = 824
+			add_state_core = 824
+			transfer_state = 516
+			add_state_core = 516
+			transfer_state = 576
+			add_state_core = 576
+			transfer_state = 878
+			add_state_core = 878
+
+			transfer_state = 40
+			add_state_core = 40
+			transfer_state = 654
+			add_state_core = 654
+
+			transfer_state = 567
+			add_state_core = 567
+			transfer_state = 566
+			add_state_core = 566
+	    }
+		}
+	}
+	}
+	

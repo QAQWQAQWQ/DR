@@ -1,0 +1,26 @@
+Montenegrin_War = {
+	icon = infiltration
+	
+	picture = GFX_decisions_Montenegrin_War
+
+	priority = 8
+	allowed = {
+		tag = SIW
+	}
+
+}
+IMRO = {
+	icon = army_reform
+	
+	picture = GFX_decisions_IMRO
+
+	priority = 8
+	allowed = {
+		tag = SIW
+	}
+	visible={has_completed_focus = SIW_Coping_IMRO}
+	
+
+}
+
+

@@ -1,0 +1,27 @@
+﻿###########################
+# EOB Events
+###########################
+
+add_namespace = EOB
+news_event = {
+	id = EOB.1
+	title = EOB.1.t
+	desc = EOB.1.d
+	#picture = 
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = EOB.1.a
+		hidden_effect = {
+			EOB= { 
+			transfer_state = 823
+			add_state_core = 823
+			transfer_state = 585
+			add_state_core = 585
+			transfer_state = 405
+			add_state_core = 405
+	    }
+		}
+	}
+	}
+	

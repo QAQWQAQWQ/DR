@@ -1,0 +1,44 @@
+characters={
+	XJC_ShengShiCai={
+		name=XJC_ShengShiCai
+		portraits={
+			civilian={
+				large="gfx/leaders/XJC/portrait_ShengShiCai.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+XJC_YangZengXin={
+		name=XJC_YangZengXin
+		portraits={
+			civilian={
+				large="gfx/leaders/XJC/portrait_YangZengXin.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	XJC_jinshuren={
+		name=XJC_jinshuren
+		portraits={
+			civilian={
+				large="gfx/leaders/XJC/portrait_jinshuren.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

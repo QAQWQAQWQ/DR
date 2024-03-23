@@ -1,0 +1,80 @@
+###########################
+# MEG Events
+###########################
+
+add_namespace = MEG
+
+news_event = {
+	id = MEG.0
+	title = MEG.0.t
+	desc = MEG.0.d
+	picture = GFX_VonEnchen
+	is_triggered_only = yes
+
+	option = {
+		name = MEG.0.a	
+		MEG={
+			start_civil_war = {
+				ruling_party = Reactionary
+				ideology = Reactionary
+				size = 0.8
+				only_own_territory = yes
+				capital = 392
+				states = { 
+					392 818
+				}
+			}
+	}
+}
+}
+
+news_event = {
+	id = MEG.1
+	title = MEG.1.t
+	desc = MEG.1.d
+	picture = GFX_VonEnchen_entered_Mongolia
+	is_triggered_only = yes
+
+	option = {
+		name = MEG.1.a	
+		MEG={
+			leave_faction = yes
+			retire_country_leader = yes
+			set_politics = {
+			ruling_party = Reactionary
+		}
+	}
+}
+}
+news_event = {
+	id = MEG.2
+	title = MEG.2.t
+	desc = MEG.2.d
+	picture = GFX_VonEnchen
+	is_triggered_only = yes
+	major=yes
+
+	option = {
+		name = MEG.2.a	
+		MEG={
+			kill_country_leader=yes			
+		}
+}
+}
+news_event = {
+	id = MEG.3
+	title = MEG.3.t
+	desc = MEG.3.d
+	picture = GFX_Mongolian
+	is_triggered_only = yes
+	major=yes
+
+	option = {
+		name = MEG.3.a	
+		MEG={
+			set_politics = {
+			ruling_party = Revolutionism
+		}
+	}
+}
+}

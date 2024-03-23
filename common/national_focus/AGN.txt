@@ -1,0 +1,538 @@
+focus_tree = {
+	id = AGN
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AGN
+		} 
+	}
+	default = no 
+    focus = {
+		id = AGN_0
+		icon = GFX_AGN_0
+		cost = 5.00
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+		x = 13
+		y = 0
+		completion_reward = {
+		    add_stability = 0.15
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = AGN_1
+		icon = GFX_AGN_1
+		cost = 5.00
+		prerequisite = {
+            focus = AGN_0
+		}
+		mutually_exclusive = {
+		}
+		x = 13
+		y = 1
+		completion_reward = {
+		    add_stability = 0.1
+            add_war_support = 0.1
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = AGN_2
+		icon = GFX_AGN_2
+		cost = 5.00
+		prerequisite = {
+            focus = AGN_1
+		}
+		mutually_exclusive = {
+		}
+		x = 13
+		y = 2
+		completion_reward = {
+			remove_ideas = AGN_german_association_national_revival
+			AGN = { country_event = AGN.1 }
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = AGN_left_0
+		icon = GFX_miku_unkown
+		cost = 5.00
+		prerequisite = {
+            focus = AGN_2
+		}
+		mutually_exclusive = {
+            focus = AGN_mid_0
+            focus = AGN_right_0
+		}
+		x = 7
+		y = 3
+		completion_reward = {
+			set_politics = { ruling_party = Conservatism elections_allowed = no }
+			add_popularity = { ideology = Conservatism popularity = 0.1 }
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = AGN_left_1
+		icon = GFX_miku_unkown
+		cost = 5.00
+		prerequisite = {
+            focus = AGN_left_0
+		}
+		mutually_exclusive = {
+		}
+		x = 5
+		y = 4
+		completion_reward = {
+			add_popularity = { ideology = Reactionary popularity = -0.1 }
+			add_stability = 0.05
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = AGN_left_2
+		icon = GFX_miku_unkown
+		cost = 5.00
+		prerequisite = {
+            focus = AGN_left_0
+		}
+		mutually_exclusive = {
+			focus = AGN_left_3
+		}
+		x = 7
+		y = 4
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = { ideology = Conservatism popularity = 0.05 }
+			add_popularity = { ideology = Reactionary popularity = 0.05 }
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = AGN_left_3
+		icon = GFX_miku_unkown
+		cost = 5.00
+		prerequisite = {
+            focus = AGN_left_0
+		}
+		mutually_exclusive = {
+			focus = AGN_left_2
+		}
+		x = 9
+		y = 4
+		completion_reward = {
+			add_stability = -0.05
+			add_popularity = { ideology = Conservatism popularity = 0.1 }
+			add_popularity = { ideology = Reactionary popularity = -0.05 }
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = AGN_left_4
+		icon = GFX_miku_unkown
+		cost = 5.00
+		prerequisite = {
+            focus = AGN_left_1
+		}
+		mutually_exclusive = {
+		}
+		x = 6
+		y = 5
+		completion_reward = {
+			add_stability = 0.1
+			add_popularity = { ideology = Reactionary popularity = -0.3 }
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = AGN_left_5
+		icon = GFX_miku_unkown
+		cost = 5.00
+		prerequisite = {
+            focus = AGN_left_2
+            focus = AGN_left_3
+		}
+		mutually_exclusive = {
+		}
+		x = 8
+		y = 5
+		completion_reward = {
+			add_stability = 0.1
+			add_popularity = { ideology = Conservatism popularity = 0.2 }
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = AGN_left_6
+		icon = GFX_miku_unkown
+		cost = 5.00
+		prerequisite = {
+            focus = AGN_left_4
+		}
+		prerequisite = {
+            focus = AGN_left_5
+		}
+		mutually_exclusive = {
+		}
+		x = 7
+		y = 6
+		completion_reward = {
+			add_stability = 0.2
+            add_war_support = 0.1
+			load_focus_tree = AGN_L
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = AGN_mid_0
+		icon = GFX_miku_unkown
+		cost = 5.00
+		prerequisite = {
+            focus = AGN_2
+		}
+		mutually_exclusive = {
+            focus = AGN_left_0
+            focus = AGN_right_0
+		}
+		x = 13
+		y = 3
+		completion_reward = {
+			set_politics = { ruling_party = Reactionary elections_allowed = no }
+			add_popularity = { ideology = Reactionary popularity = 0.1 }
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = AGN_mid_1
+		icon = GFX_miku_unkown
+		cost = 5.00
+		prerequisite = {
+            focus = AGN_mid_0
+		}
+		mutually_exclusive = {
+		}
+		x = 12
+		y = 4
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = AGN_mid_2
+		icon = GFX_miku_unkown
+		cost = 5.00
+		prerequisite = {
+            focus = AGN_mid_0
+		}
+		mutually_exclusive = {
+		}
+		x = 14
+		y = 4
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = AGN_mid_3
+		icon = GFX_miku_unkown
+		cost = 5.00
+		prerequisite = {
+            focus = AGN_mid_1
+		}
+		mutually_exclusive = {
+		}
+		x = 11
+		y = 5
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = AGN_mid_4
+		icon = GFX_miku_unkown
+		cost = 5.00
+		prerequisite = {
+            focus = AGN_mid_1
+		}
+		prerequisite = {
+            focus = AGN_mid_2
+		}
+		mutually_exclusive = {
+		}
+		x = 13
+		y = 5
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = AGN_mid_5
+		icon = GFX_miku_unkown
+		cost = 5.00
+		prerequisite = {
+            focus = AGN_mid_2
+		}
+		mutually_exclusive = {
+		}
+		x = 15
+		y = 5
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = AGN_mid_6
+		icon = GFX_miku_unkown
+		cost = 5.00
+		prerequisite = {
+            focus = AGN_mid_3
+		}
+		prerequisite = {
+            focus = AGN_mid_4
+		}
+		prerequisite = {
+            focus = AGN_mid_5
+		}
+		mutually_exclusive = {
+		}
+		x = 13
+		y = 6
+		completion_reward = {
+			load_focus_tree = AGN_M
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = AGN_right_0
+		icon = GFX_miku_unkown
+		cost = 5.00
+		prerequisite = {
+            focus = AGN_2
+		}
+		mutually_exclusive = {
+            focus = AGN_mid_0
+            focus = AGN_left_0
+		}
+		x = 19
+		y = 3
+		completion_reward = {
+			set_politics = { ruling_party = Reactionary elections_allowed = no }
+			add_popularity = { ideology = Reactionary popularity = 0.1 }
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = AGN_right_1
+		icon = GFX_miku_unkown
+		cost = 5.00
+		prerequisite = {
+            focus = AGN_right_0
+		}
+		mutually_exclusive = {
+		}
+		x = 17
+		y = 4
+		completion_reward = {
+			
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = AGN_right_2
+		icon = GFX_miku_unkown
+		cost = 5.00
+		prerequisite = {
+            focus = AGN_right_0
+		}
+		mutually_exclusive = {
+		}
+		x = 19
+		y = 4
+		completion_reward = {
+			
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = AGN_right_3
+		icon = GFX_miku_unkown
+		cost = 5.00
+		prerequisite = {
+            focus = AGN_right_0
+		}
+		mutually_exclusive = {
+		}
+		x = 21
+		y = 4
+		completion_reward = {
+			
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = AGN_right_4
+		icon = GFX_miku_unkown
+		cost = 5.00
+		prerequisite = {
+            focus = AGN_right_1
+		}
+		mutually_exclusive = {
+		}
+		x = 17
+		y = 5
+		completion_reward = {
+			set_variable = {
+				AGN.we_had_find_it = 0
+			}
+			set_variable = {
+				AGN.thule_position = 5
+			}
+			set_variable = {
+				AGN.search_progress = 0
+			}
+			set_variable = {
+				AGN.search_progress_p = 0.05
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = AGN_right_5
+		icon = GFX_miku_unkown
+		cost = 5.00
+		prerequisite = {
+            focus = AGN_right_1
+		}
+		prerequisite = {
+            focus = AGN_right_2
+		}
+		prerequisite = {
+            focus = AGN_right_3
+		}
+		mutually_exclusive = {
+		}
+		x = 19
+		y = 5
+		completion_reward = {
+			
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = AGN_right_6
+		icon = GFX_miku_unkown
+		cost = 5.00
+		prerequisite = {
+            focus = AGN_right_3
+		}
+		mutually_exclusive = {
+		}
+		x = 21
+		y = 5
+		completion_reward = {
+			
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = AGN_right_7
+		icon = GFX_miku_unkown
+		cost = 5.00
+		prerequisite = {
+            focus = AGN_right_4
+		}
+		prerequisite = {
+            focus = AGN_right_5
+		}
+		prerequisite = {
+            focus = AGN_right_6
+		}
+		mutually_exclusive = {
+		}
+		x = 19
+		y = 6
+		completion_reward = {
+			load_focus_tree = AGN_R
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+}

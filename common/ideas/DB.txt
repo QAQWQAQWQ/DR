@@ -1,0 +1,24 @@
+ideas = {
+        country = {
+		Deutscher_Bund = {
+			picture = Deutscher_Bund
+			modifier = {
+				enemy_declare_war_tension = 0.35
+              }
+		}
+		Deutscher_Zollverein = {
+			picture = Deutscher_Zollverein
+			modifier = {
+				faction_trade_opinion_factor = 0.1
+				overlord_trade_cost_factor = -0.1
+              }
+		}
+		Deutscher_Zollverein1 = {
+			picture = Deutscher_Zollverein
+			modifier = {
+				faction_trade_opinion_factor = 0.15
+				overlord_trade_cost_factor = -0.2
+              }
+		}
+}
+}

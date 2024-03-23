@@ -1,0 +1,17 @@
+﻿###########################
+# DOS Events
+###########################
+
+add_namespace = DOS
+
+country_event = {
+	id = DOS.1
+	title = DOS.1.t
+	desc = DOS.1.d
+	#picture = GFX_Black_confrontation
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = DOS.1.a
+			}
+	}

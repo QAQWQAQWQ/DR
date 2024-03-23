@@ -1,0 +1,473 @@
+aus_hun_nat_eth_completed_tri = {
+    custom_trigger_tooltip = { 
+        tooltip = aus_hun_nat_has_completed
+        check_variable = {
+            aus_hun_nat_eth_completed = 1
+        }
+    }
+}
+aus_hun_sup_more_than_70 = {
+    custom_trigger_tooltip = { 
+        tooltip = aus_hun_sup_more_than_70_tool
+        check_variable = {
+            aus_hun_gov_sup^aus_hun_nat > 69
+        }
+    }
+}
+aus_hun_aut_more_less_30 = {
+    custom_trigger_tooltip = { 
+        tooltip = aus_hun_aut_more_less_30_tool
+		check_variable = {
+            aus_hun_egree^aus_hun_nat < 31
+        }
+    }
+}
+aus_hun_occ_aus = {
+    AND = {    
+        owns_state = 4
+        owns_state = 152
+        owns_state = 153
+    }
+}
+aus_hun_occ_hun = {
+    AND = {    
+        owns_state = 155
+        owns_state = 43
+        owns_state = 154
+    }
+}
+aus_hun_occ_ukr = {
+    AND = {    
+        owns_state = 91
+        owns_state = 89
+    }
+}
+aus_hun_occ_cze = {
+    AND = {    
+        owns_state = 9
+        owns_state = 75
+    }
+}
+aus_hun_occ_pol = {
+    AND = {    
+        owns_state = 88
+    }
+}
+aus_hun_occ_slo = {
+    AND = {    
+        owns_state = 70
+        owns_state = 71
+    }
+}
+aus_hun_occ_rom = {
+    AND = {    
+        owns_state = 82
+        owns_state = 83
+        owns_state = 84
+        owns_state = 76
+    }
+}
+aus_hun_occ_ita = {
+    AND = {    
+        owns_state = 160
+    }
+}
+aus_hun_occ_cro = {
+    AND = {    
+        owns_state = 109
+        # owns_state = 918
+        owns_state = 917
+    }
+}
+aus_hun_occ_slv = {
+    AND = {    
+        owns_state = 853
+        owns_state = 102
+    }
+}
+aus_hun_occ_ser = {
+    AND = {    
+        owns_state = 107
+        owns_state = 108
+    }
+}
+aus_hun_part_of_the_Empire = {
+    custom_trigger_tooltip = { 
+        tooltip = is_part_of_the_Empire
+        AND = {
+            has_idea = Part_of_Habsburgs
+        }
+    }
+}
+aus_hun_occ_tri = {
+    custom_trigger_tooltip = { 
+    tooltip = aus_hun_occ_tri_tool
+    OR = {
+        AND = {
+            check_variable = { aus_hun_nat = 0 }
+            OR = {
+                AOX = {
+                    aus_hun_occ_aus = yes
+                }
+                any_country = {
+                    AND = {
+                        aus_hun_part_of_the_Empire = yes
+                        aus_hun_occ_aus = yes
+                    }
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 1 }
+            OR = {
+                AOX = {
+                    aus_hun_occ_hun = yes
+                }
+                any_country = {
+                    AND = {
+                        aus_hun_part_of_the_Empire = yes
+                        aus_hun_occ_hun = yes
+                    }
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 2 }
+            OR = {
+                AOX = {
+                    aus_hun_occ_ukr = yes
+                }
+                any_country = {
+                    AND = {
+                        aus_hun_part_of_the_Empire = yes
+                        aus_hun_occ_ukr = yes
+                    }
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 3 }
+            OR = {
+                AOX = {
+                    aus_hun_occ_cze = yes
+                }
+                any_country = {
+                    AND = {
+                        aus_hun_part_of_the_Empire = yes
+                        aus_hun_occ_cze = yes
+                    }
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 4 }
+            OR = {
+                AOX = {
+                    aus_hun_occ_pol = yes
+                }
+                any_country = {
+                    AND = {
+                        aus_hun_part_of_the_Empire = yes
+                        aus_hun_occ_pol = yes
+                    }
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 5 }
+            OR = {
+                AOX = {
+                    aus_hun_occ_slo = yes
+                }
+                any_country = {
+                    AND = {
+                        aus_hun_part_of_the_Empire = yes
+                        aus_hun_occ_slo = yes
+                    }
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 6 }
+            OR = {
+                AOX = {
+                    aus_hun_occ_rom = yes
+                }
+                any_country = {
+                    AND = {
+                        aus_hun_part_of_the_Empire = yes
+                        aus_hun_occ_rom = yes
+                    }
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 7 }
+            OR = {
+                AOX = {
+                    aus_hun_occ_ita = yes
+                }
+                any_country = {
+                    AND = {
+                        aus_hun_part_of_the_Empire = yes
+                        aus_hun_occ_ita = yes
+                    }
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 8 }
+            OR = {
+                AOX = {
+                    aus_hun_occ_cro = yes
+                }
+                any_country = {
+                    AND = {
+                        aus_hun_part_of_the_Empire = yes
+                        aus_hun_occ_cro = yes
+                    }
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 9 }
+            OR = {
+                AOX = {
+                    aus_hun_occ_slv = yes
+                }
+                any_country = {
+                    AND = {
+                        aus_hun_part_of_the_Empire = yes
+                        aus_hun_occ_slv = yes
+                    }
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 10 }
+            OR = {
+                AOX = {
+                    aus_hun_occ_ser = yes
+                }
+                any_country = {
+                    AND = {
+                        aus_hun_part_of_the_Empire = yes
+                        aus_hun_occ_ser = yes
+                    }
+                }
+            }
+        }
+    }
+    }
+}
+aus_hun_aut_tri = {
+    custom_trigger_tooltip = { 
+    tooltip = aus_hun_aut_tri_tool
+    OR = {
+        AND = {
+            check_variable = { aus_hun_nat = 0 }
+            any_country = {
+                AND = {
+                    aus_hun_part_of_the_Empire = yes
+                    aus_hun_occ_aus = yes
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 1 }
+            any_country = {
+                AND = {
+                    aus_hun_part_of_the_Empire = yes
+                    aus_hun_occ_hun = yes
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 2 }
+            any_country = {
+                AND = {
+                    aus_hun_part_of_the_Empire = yes
+                    aus_hun_occ_ukr = yes
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 3 }
+            any_country = {
+                AND = {
+                    aus_hun_part_of_the_Empire = yes
+                    aus_hun_occ_cze = yes
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 4 }
+            any_country = {
+                AND = {
+                    aus_hun_part_of_the_Empire = yes
+                    aus_hun_occ_pol = yes
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 5 }
+            any_country = {
+                AND = {
+                    aus_hun_part_of_the_Empire = yes
+                    aus_hun_occ_slo = yes
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 6 }
+            any_country = {
+                AND = {
+                    aus_hun_part_of_the_Empire = yes
+                    aus_hun_occ_rom = yes
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 7 }
+            any_country = {
+                AND = {
+                    aus_hun_part_of_the_Empire = yes
+                    aus_hun_occ_ita = yes
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 8 }
+            any_country = {
+                AND = {
+                    aus_hun_part_of_the_Empire = yes
+                    aus_hun_occ_cro = yes
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 9 }
+            any_country = {
+                AND = {
+                    aus_hun_part_of_the_Empire = yes
+                    aus_hun_occ_slv = yes
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 10 }
+            any_country = {
+                AND = {
+                    aus_hun_part_of_the_Empire = yes
+                    aus_hun_occ_ser = yes
+                }
+            }
+        }
+    }
+    }
+}
+bosnia_war_tri = {
+    custom_trigger_tooltip = { 
+        tooltip = bosnia_war_tri_tool
+        check_variable  = {
+            global.bosnia_war_str = 1
+        }
+    }
+}
+not_bosnia_war_tri = {
+    custom_trigger_tooltip = { 
+        tooltip = not_bosnia_war_tri_tool
+        check_variable  = {
+            global.bosnia_war_str = 0
+        }
+    }
+}
+bosnia_war_end = {
+    custom_trigger_tooltip = { 
+        tooltip = bosnia_war_end_tri_tool
+        check_variable  = {
+            global.bosnia_war_str = 1
+        }
+        OR = {
+            check_variable  = {
+                global.bosnia_hun_win = 1
+            }
+            check_variable  = {
+                global.bosnia_cro_win = 1
+            }
+        }
+    }
+}
+bosnia_war_not_end = {
+    custom_trigger_tooltip = { 
+        tooltip = bosnia_war_not_end_tri_tool
+        AND = {
+            check_variable  = {
+                global.bosnia_hun_win = 0
+            }
+            check_variable  = {
+                global.bosnia_cro_win = 0
+            }
+        }
+    }
+}
+cro_win_bos_war = {
+    custom_trigger_tooltip = { 
+        tooltip = cro_win_bos_war_tool
+        check_variable  = {
+            global.bosnia_cro_win = 1
+        }
+    }
+}
+hun_win_bos_war = {
+    custom_trigger_tooltip = { 
+        tooltip = hun_win_bos_war_tool
+        check_variable  = {
+            global.bosnia_hun_win = 1
+        }
+    }
+}
+hungry_war_end = {
+    custom_trigger_tooltip = { 
+        tooltip = hungry_war_end_tool
+        check_variable = { global.hungry_war = 1 }
+        OR = {
+            check_variable = { global.hungry_war_red_win = 1 }
+            check_variable = { global.hungry_war_hun_win = 1 }
+        }
+    }
+}
+aus_hun_all_sup_more_than_90 = {
+    custom_trigger_tooltip = { 
+        tooltip = aus_hun_all_sup_more_than_90_tool
+        AND = {
+            check_variable = { aus_hun_gov_sup^0 > 89 }
+            check_variable = { aus_hun_gov_sup^1 > 89 }
+            check_variable = { aus_hun_gov_sup^2 > 89 }
+            check_variable = { aus_hun_gov_sup^3 > 89 }
+            check_variable = { aus_hun_gov_sup^4 > 89 }
+            check_variable = { aus_hun_gov_sup^5 > 89 }
+            check_variable = { aus_hun_gov_sup^6 > 89 }
+            check_variable = { aus_hun_gov_sup^7 > 89 }
+            check_variable = { aus_hun_gov_sup^8 > 89 }
+            check_variable = { aus_hun_gov_sup^9 > 89 }
+        }
+    }
+}
+aus_hun_all_aut_less_than_10 = {
+    custom_trigger_tooltip = { 
+        tooltip = aus_hun_all_aut_less_than_10_tool
+        AND = {
+            check_variable = { aus_hun_egree^0 < 11 }
+            check_variable = { aus_hun_egree^1 < 11 }
+            check_variable = { aus_hun_egree^2 < 11 }
+            check_variable = { aus_hun_egree^3 < 11 }
+            check_variable = { aus_hun_egree^4 < 11 }
+            check_variable = { aus_hun_egree^5 < 11 }
+            check_variable = { aus_hun_egree^6 < 11 }
+            check_variable = { aus_hun_egree^7 < 11 }
+            check_variable = { aus_hun_egree^8 < 11 }
+            check_variable = { aus_hun_egree^9 < 11 }
+        }
+    }
+}

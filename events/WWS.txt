@@ -1,0 +1,311 @@
+﻿###########################
+# WWS Events
+###########################
+
+add_namespace = WWS
+add_namespace = Weimar
+country_event = {
+	id = WWS.1
+	title = WWS.1.t
+	desc = WWS.1.d
+	picture = GFX_WilhelmII
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = WWS.1.a
+		
+	}
+}
+country_event = {
+	id = WWS.2
+	title = WWS.2.t
+	desc = WWS.2.d
+	picture = GFX_WilhelmII
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = WWS.2.a
+		add_popularity = {
+			ideology = Reformism
+			popularity = -0.15
+		}
+	}
+}
+country_event = {
+	id = WWS.3
+	title = WWS.3.t
+	desc = WWS.3.d
+	picture = GFX_WilhelmII
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = WWS.3.a
+		add_stability = 0.1
+		add_popularity = {
+			ideology = Conservatism
+			popularity = 0.1
+		}
+	}
+}
+country_event = {
+	id = WWS.4
+	title = WWS.4.t
+	desc = WWS.4.d
+	picture = GFX_WilhelmII
+	is_triggered_only = yes
+
+	option = {
+		name = WWS.4.a
+		WWS={country_event = {id=WWS.6 days=2}}
+		ai_chance = {
+			factor = 100
+		}
+	    trigger = {
+			ROOT={check_variable = { pre_support < 50 }}	
+			}
+	}
+
+	option = {
+		name = WWS.4.b
+		ai_chance = {
+			factor = 100
+		}
+	    trigger = {
+			ROOT={check_variable = { pre_support > 50 }}	
+			}
+		leave_faction = yes
+		WWS={add_to_faction = ROOT}
+		
+	}
+}	
+	country_event = {
+		id = WWS.5
+		title = WWS.5.t
+		desc = WWS.5.d
+		picture = GFX_WilhelmII
+		is_triggered_only = yes
+	
+		option = {
+			name = WWS.5.a
+			WWS={country_event = {id=WWS.6 days=2}}
+			ai_chance = {
+				factor = 100
+			}
+			trigger = {
+				ROOT={check_variable = { pre_support < 90 }}	
+				}
+		}
+		option = {
+			name = WWS.5.b
+			ROOT={
+				every_owned_state={
+				add_core_of = WWS
+				remove_core_of = ROOT
+	}
+}
+			WWS={
+				
+				annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			ROOT={check_variable = { pre_support > 90 }}	
+			}
+		}
+}
+country_event = {
+	id = WWS.6
+	title = WWS.6.t
+	desc = WWS.6.d
+	picture = GFX_WilhelmII
+	is_triggered_only = yes
+
+	option = {
+		name = WWS.6.a
+		ai_chance = {
+			base = 1
+		}
+		WWS={
+			add_opinion_modifier = {
+			target = ROOT
+			modifier = faction_traitor
+		}}
+		
+	}
+}
+country_event = {
+	id = WWS.7
+	title = WWS.7.t
+	desc = WWS.7.d
+	picture = GFX_Parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = WWS.7.a
+		add_stability=0.05
+		
+	}
+}
+country_event = {
+	id = WWS.8
+	title = WWS.8.t
+	desc = WWS.8.d
+	picture = GFX_Parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = WWS.8.a
+	}
+}
+country_event = {
+	id = WWS.9
+	title = WWS.9.t
+	desc = WWS.9.d
+	picture = GFX_Parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = WWS.9.a
+	}
+}
+country_event = {
+	id = WWS.10
+	title = WWS.10.t
+	desc = WWS.10.d
+	picture = GFX_Parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = WWS.10.a
+		add_political_power=40
+        add_stability = 0.1
+	}
+}
+country_event = {
+	id = WWS.11
+	title = WWS.11.t
+	desc = WWS.11.d
+	picture = GFX_Brother_Eris_Wall
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = WWS.11.a
+		add_war_support = 0.1
+	}
+}
+country_event = {
+	id = WWS.12
+	title = WWS.12.t
+	desc = WWS.12.d
+	picture = GFX_Brother_Eris_Wall
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = WWS.12.a
+		country_event={id=WWS.13 days=1}
+	}
+}
+country_event = {
+	id = WWS.13
+	title = WWS.13.t
+	desc = WWS.13.d
+	picture = GFX_Brother_Eris_Wall
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = WWS.13.a
+		add_ideas = Messerschmitt_AG
+	}
+	option = {
+		name = WWS.13.b
+		add_ideas = DORNIER_Corporation
+	}
+	option = {
+		name = WWS.13.c
+		add_ideas = Heinkel_Corporation
+	}
+}
+country_event = {
+	id = WWS.14
+	title = WWS.14.t
+	desc = WWS.14.d
+	picture = GFX_Brother_Eris_Wall
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = WWS.14.a
+		complete_national_focus = WWS_Krupp
+	}
+	option = {
+		name = WWS.14.b
+		complete_national_focus = WWS_Henschel
+	}
+	option = {
+		name = WWS.14.c
+		complete_national_focus = WWS_Porsche
+	}
+}
+country_event = {
+	id = WWS.15
+	title = WWS.15.t
+	desc = WWS.15.d
+	picture = GFX_Brother_Eris_Wall
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = WWS.15.a
+	}
+}
+country_event = {
+	id = WWS.16
+	title = WWS.16.t
+	desc = WWS.16.d
+	picture = GFX_Brother_Eris_Wall
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = WWS.16.a
+	}
+}
+
+
+country_event = {
+	id = Weimar.1
+	title = Weimar.1.t
+	desc = Weimar.1.d
+	picture = GFX_Brother_Eris_Wall
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = Weimar.1.a
+		set_politics = { ruling_party = Reformism elections_allowed = no }
+		hidden_effect={
+		set_popularities = {
+			Reformism=54
+			Reactionary = 3
+			Reformism = 22
+			Conservatism = 0
+			Revolutionism = 15
+		}
+	}
+}
+}

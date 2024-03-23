@@ -1,0 +1,17 @@
+characters={
+	TRO_RanavagnerIII={
+		name=TRO_RanavagnerIII
+		portraits={
+			civilian={
+				large="gfx/leaders/TRO/portrait_RanavagnerIII.tga"
+			}
+		}
+		country_leader={
+			ideology= Classicism_Conservatism
+			desc=TRO_RanavagnerIII_desc
+			traits={  popular_queen }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
+	}

@@ -1,0 +1,27 @@
+WWS_Little_Deutsches_Project = {
+	#icon = SHW_Imperial_Russian_Army
+	scripted_gui = WWS_Little_Deutsches_Project_ui
+
+	priority = 9 
+                  
+	visible = {
+		# has_completed_focus = WWS_Bismarck_last_policy
+		always = no
+	}
+	allowed = {
+		tag = WWS 
+	} 
+} 
+
+Germany_Imperial_Highway = {
+	#icon = SHW_Imperial_Russian_Army
+    picture = GFX_decisions_Imperial_Highway
+	priority = 6 
+                  
+	visible = { 
+		has_completed_focus = WWS_Imperial_Highway
+	} 
+	allowed = {
+		tag = WWS 
+	} 
+}                                            

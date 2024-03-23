@@ -1,0 +1,122 @@
+###########################
+# WUP Events
+###########################
+
+add_namespace = WUP
+add_namespace = ZJY
+country_event = {
+	id = WUP.1
+	title = WUP.1.t
+	desc = WUP.1.d
+	picture = GFX_Provincial_elections
+	is_triggered_only = yes
+	option = {
+			name = WUP.1.a
+			leave_faction = yes
+			retire_country_leader = yes
+			remove_ideas=WUP_Tension_movement
+			set_politics = {
+				ruling_party = Revolutionism
+				elections_allowed = yes
+				last_election = "1925.1.17"
+				election_frequency = 48
+			}
+			hidden_effect={
+			set_popularities = {
+               Revolutionism = 65
+			   Reformism = 10
+			   Anarchism = 15
+			   Liberalism = 10
+			}
+		}
+			ai_chance = {
+				base = 50
+				modifier = {
+					factor = 0.25
+			}
+		}	
+	}
+	option = {
+		name = WUP.1.b
+		leave_faction = yes
+		retire_country_leader = yes	
+		remove_ideas=WUP_Tension_movement
+		set_politics = {
+			ruling_party = Conservatism
+			elections_allowed = no
+			election_frequency = 48
+		}
+		hidden_effect={
+		set_popularities = {
+			Conservatism = 45
+			Reformism = 10
+			Revolutionism = 25
+			Liberalism = 20
+		 }
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 0.75
+		}
+	}	
+}
+}
+country_event = {
+	id = WUP.2
+	title = WUP.2.t
+	desc = WUP.2.d
+	picture = GFX_Provincial_elections
+	is_triggered_only = yes
+	option = {
+			name = WUP.2.a
+			ai_chance = {
+				base = 50
+				modifier = {
+					factor = 0.25
+			}
+		}	
+	}
+	option = {
+		name = WUP.2.b
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 0.75
+		}
+	}	
+}
+}
+country_event = {
+	id = ZJY.1
+	title = ZJY.1.t
+	desc = ZJY.1.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+	name = ZJY.1.a
+	country_event={id=ZJY.2 days=10}
+}
+}
+country_event = {
+	id = ZJY.2
+	title = ZJY.2.t
+	desc = ZJY.2.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+	name = ZJY.2.a
+	country_event={id=ZJY.3 days=15}
+}
+}
+country_event = {
+	id = ZJY.3
+	title = ZJY.3.t
+	desc = ZJY.3.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+	name = ZJY.3.a
+	country_event={id=WUP.1 days=30}
+}
+}

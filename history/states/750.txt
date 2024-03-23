@@ -1,0 +1,25 @@
+state={
+	id=750
+	name="荆南"
+	provinces={
+		1612 4130 5030 7596 10757 12086 12414  
+	}
+	resources={
+		grain=23
+	}
+	manpower=2413100
+	buildings_max_level_factor=1.000
+	state_category = town
+	history={
+		owner = WUP
+		add_core_of = WUP
+		victory_points = {
+			4130 3 
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	local_supplies=0.0 
+}

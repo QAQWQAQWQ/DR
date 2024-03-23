@@ -1,0 +1,98 @@
+FRW_Manufacture_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_Manufacture
+	
+	allowed = {	 
+			tag = FRW 
+	}
+
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = FRW } }
+			}
+			FROM = { NOT = { has_war_with = FRW } }
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+				FROM = {
+					has_country_flag = has_invited_FRW_Manufacture_organization_flag
+				}
+			}
+		}
+			
+
+	}
+}
+
+FRW_schneider_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_schneider
+	
+	allowed = {	 
+			tag = FRW 
+	}
+
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = FRW } }
+			}
+			FROM = { NOT = { has_war_with = FRW } }
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+				FROM = {
+					has_country_flag = has_invited_FRW_schneider_flag
+				}
+			}
+		}
+			
+
+	}
+}
+
+FRW_GIAT_organization = {
+	include = generic_mobile_tank_organization
+	icon = GFX_idea_GIAT
+	
+	allowed = {	 
+			tag = FRW 
+	}
+
+	available = {
+	}
+}
+FRW_Panhard_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_Panhard
+	
+	allowed = {	 
+			tag = FRW 
+	}
+
+	available = {
+	}
+}
+FRW_SNCASE = {
+	include = generic_range_focused_aircraft_organization
+	icon = GFX_idea_SNCASE
+	
+	allowed = {	 
+			tag = FRW 
+	}
+
+	available = {
+	}
+}
+FRW_SNCASE_1 = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_SNCASE
+	
+	allowed = {	 
+			tag = FRW 
+	}
+
+	available = {
+	}
+}

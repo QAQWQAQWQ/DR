@@ -1,0 +1,68 @@
+voice_progress = {
+	enable = { always = yes }
+	army_leader_cost_factor=-0.1
+	skill_bonus_factor=0.05
+}
+Popular_political_parties = {
+	enable = { always = yes }
+	party_popularity_stability_factor =0.02
+	conscription_factor =0.03
+}
+Vanguard_Regiment = {
+	enable = { always = yes }
+	mobilization_speed = 0.1
+	war_support_weekly_factor = 0.05
+}
+
+
+Progressive_taxation1 = {
+	enable = { always = yes }
+	consumer_goods_factor=-0.02
+}
+Proportional_representation = {
+	enable = { always = yes }
+	political_power_gain = 0.05
+}
+Majority_representation = {
+	enable = { always = yes }
+	political_power_cost = -0.05
+}
+Helping_local_industries = {
+	enable = { always = yes }
+	production_factory_start_efficiency_factor = 0.1
+}
+Integrating_smallholder_farmers1 = {
+	enable = { always = yes }
+	global_building_slots_factor = 0.1
+}
+Eagle_the_air = {
+	enable = { always = yes }
+	air_weather_penalty = -0.15
+	air_night_penalty = -0.1
+	experience_gain_air = 0.1
+}
+ship_hits_wave = {
+	enable = { always = yes }
+	navy_org_factor = 0.05
+	naval_accidents_chance = -0.05
+	naval_defense_factor = 0.1
+}
+Army_glory = {
+	enable = { always = yes }
+	terrain_penalty_reduction = -0.1
+	pocket_penalty = -0.05
+	planning_speed = 0.1
+}
+Armament_design = {
+	enable = { always = yes }
+	equipment_conversion_speed = 0.2 
+}
+RDN_amphibious_invasion = {
+	enable = { always = yes }
+	amphibious_invasion = -0.35
+	amphibious_invasion_defence = -0.3
+	invasion_preparation = -0.3
+	naval_invasion_penalty = -0.5
+	naval_hit_chance = 0.8
+}
+

@@ -1,0 +1,17 @@
+characters={
+	MEX_Francisco_Madero={
+		name=MEX_Francisco_Madero
+		portraits={
+			civilian={
+				large="gfx/leaders/MEX/Portrait_Francisco_Madero.tga"
+			}
+		}
+		country_leader={
+			ideology=Socialism_Liberalism
+			desc = MEX_Francisco_Madero_desc
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

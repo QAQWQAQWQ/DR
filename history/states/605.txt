@@ -1,0 +1,26 @@
+state={
+	id=605
+	name="嘉陵"
+	resources={
+		grain=16
+	}
+	history={
+		owner = SCX
+		add_core_of = SCX
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1		
+		}
+	}
+
+	provinces={
+		1367 2091 5048 7256 8026 10132 12274 12767 
+		 
+	}
+	manpower=12963300
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}

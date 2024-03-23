@@ -1,0 +1,20 @@
+state={
+	id=989
+	name="庐陵"
+	history={
+		owner = SUC
+        add_core_of = SUC
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		4156 4183 10057 10501 12495
+	}
+	manpower=2420400
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=3.0 
+}

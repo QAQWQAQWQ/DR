@@ -1,0 +1,164 @@
+on_actions = {
+	on_offer_join_faction = {
+		effect = {
+			FROM = {
+				if = {
+					limit = { NOT = { is_in_array = { global.faction_joining_alerts = THIS } } }
+					add_to_array = { global.faction_joining_alerts = THIS }
+					sound_effect = diplomatic_notification
+					set_variable_to_random = global.kaiserreich_alerts_dirty
+				}
+			}
+		}
+	}
+	on_monthly = {
+		effect = {
+			every_country = {
+				limit = {
+					THIS = {
+						is_faction_leader = yes
+					}
+				}
+				clear_array = global.faction_menber_@THIS
+			}
+			clear_array = global.grid_main_country
+			for_each_scope_loop = {
+				array = global.majors
+				if = {
+					limit = {
+						THIS = {
+							is_faction_leader = yes
+						}
+					}
+					add_to_array = {
+						global.grid_main_country = THIS
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = global.grid_main_country
+				add_to_array = {
+					global.faction_menber_@THIS = THIS
+				}
+				every_country = {
+					limit = {
+						is_major = yes
+						is_in_faction_with = PREV
+						NOT = {
+							tag = PREV
+						}
+					}
+					add_to_array = {
+						global.faction_menber_@PREV = THIS
+					}
+				}
+				every_country = {
+					limit = {
+						is_major = no
+						is_in_faction_with = PREV
+					}
+					add_to_array = {
+						global.faction_menber_@PREV = THIS
+					}
+				}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			for_each_scope_loop = {
+				array = global.majors
+				if = {
+					limit = {
+						THIS = {
+							is_faction_leader = yes
+						}
+					}
+					add_to_array = {
+						global.grid_main_country = THIS
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = global.grid_main_country
+				add_to_array = {
+					global.faction_menber_@THIS = THIS
+				}
+				every_country = {
+					limit = {
+						is_major = yes
+						is_in_faction_with = PREV
+						NOT = {
+							tag = PREV
+						}
+					}
+					add_to_array = {
+						global.faction_menber_@PREV = THIS
+					}
+				}
+				every_country = {
+					limit = {
+						is_major = no
+						is_in_faction_with = PREV
+					}
+					add_to_array = {
+						global.faction_menber_@PREV = THIS
+					}
+				}
+			}
+		}
+	}
+	on_weekly = {
+		effect = {
+			every_country = {
+				limit = {
+					THIS = {
+						is_faction_leader = yes
+					}
+				}
+				clear_array = global.faction_menber_@THIS
+			}
+			clear_array = global.grid_main_country
+			for_each_scope_loop = {
+				array = global.majors
+				if = {
+					limit = {
+						THIS = {
+							is_faction_leader = yes
+						}
+					}
+					add_to_array = {
+						global.grid_main_country = THIS
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = global.grid_main_country
+				add_to_array = {
+					global.faction_menber_@THIS = THIS
+				}
+				every_country = {
+					limit = {
+						is_major = yes
+						is_in_faction_with = PREV
+						NOT = {
+							tag = PREV
+						}
+					}
+					add_to_array = {
+						global.faction_menber_@PREV = THIS
+					}
+				}
+				every_country = {
+					limit = {
+						is_major = no
+						is_in_faction_with = PREV
+					}
+					add_to_array = {
+						global.faction_menber_@PREV = THIS
+					}
+				}
+			}
+		}
+	}
+}

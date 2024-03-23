@@ -1,0 +1,151 @@
+characters={
+	SHH_Shanghai_Federation_Trade_Unions={
+		name=SHH_Shanghai_Federation_Trade_Unions
+		portraits={
+			civilian={
+				large="gfx/leaders/SHH/Portrait_Shanghai_Federation_Trade_Unions.tga"
+			}
+		}
+		country_leader={
+			ideology=Scientism_revolutionism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SHH_Zhou_EngLai={
+		name=SHH_Zhou_EngLai
+		portraits={
+			civilian={
+				large="gfx/leaders/SHH/Portrait_Zhou_EngLai.tga"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	SHH_Lu_Yong_Xiang={
+		name=SHH_Lu_Yong_Xiang
+		portraits={
+			civilian={
+				large="gfx/leaders/SHH/Portrait_Lu_Yong_Xiang.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SHH_HuZhongNan={
+		name=SHH_HuZhongNan
+        portraits={
+		army={
+			small="GFX_idea_HuZhongNan"
+		}
+		army={
+			large="gfx/leaders/SHH/Portrait_HuZhongNan.tga"
+		}
+	}
+	advisor={
+		slot = army_chief
+		allowed = {
+			original_tag = SHH
+		}
+		available = {
+		}
+		traits = {
+			army_chief_maneuver_2
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+	
+	corps_commander={
+		traits={  }
+		skill=2
+		attack_skill=2
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=2
+	}
+	}
+	SHH_DaiLi={
+		name=SHH_DaiLi
+        portraits={
+		army={
+			small="gfx/interface/ideas/Portrait_DaiLi.dds"
+		}
+		army={
+			large="gfx/leaders/SHH/Portrait_DaiLi.tga"
+		}
+	}
+	advisor={
+		slot = army_chief
+		allowed = {
+			original_tag = SHH
+		}
+		available = {
+		}
+		traits = {
+			army_chief_maneuver_3
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+	
+	corps_commander={
+		traits={  }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+	}
+	SHH_WangYaQiao={
+		name=SHH_WangYaQiao
+        portraits={
+		army={
+			small="gfx/interface/ideas/Portrait_WangYaQiao.dds"
+		}
+		army={
+			large="gfx/leaders/SHH/Portrait_WangYaQiao.tga"
+		}
+	}
+	advisor={
+		slot = army_chief
+		allowed = {
+			original_tag = SHH
+		}
+		available = {
+		}
+		traits = {
+			army_chief_maneuver_1
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+	
+	corps_commander={
+		traits={  }
+		skill=2
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+	}			
+	}

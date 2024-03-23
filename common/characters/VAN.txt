@@ -1,0 +1,94 @@
+characters={
+	VAN_Nguyen_Nguyen_Phuc_Tuan={
+		name=VAN_Nguyen_Nguyen_Phuc_Tuan
+		portraits={
+			civilian={
+				large="gfx/leaders/VAN/portrait_Nguyễn_Nguyễn_Phúc_Tuấn.tga"
+			}
+		}
+		country_leader={
+			ideology=Classicism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
+	VAN_Nguyen_Phuc_Minh={
+		name=VAN_Nguyen_Phuc_Minh
+		portraits={
+			civilian={
+				large="gfx/leaders/VAN/portrait_Nguyen_Phuc_Minh.tga"
+			}
+			army={
+				large="gfx/leaders/VAN/portrait_Nguyen_Phuc_Minh.tga"
+			}
+		}
+		country_leader={
+			ideology=Classicism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal = {
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}	
+	VAN_Phan_Dinh_Phung={
+		name=VAN_Phan_Dinh_Phung
+		portraits={
+			army={
+				large="gfx/leaders/VAN/portrait_Phan_Đình_Phung.tga"
+			}
+		}
+		corps_commander = {
+			traits = {
+				expert_delegator
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	VAN_Nguyen_Phuc_Ung_Binh={
+		name=VAN_Nguyen_Phuc_Ung_Binh
+		portraits={
+			army={
+				large="gfx/leaders/VAN/portrait_Nguyen_Phuc_Ung_Binh.tga"
+			}
+		}
+		corps_commander = {
+			traits = {
+				Lieutenant_general
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	VAN_Le_Hoan={
+		name=VAN_Le_Hoan
+		portraits={
+			army={
+				large="gfx/leaders/VAN/portrait_Le_Hoan.tga"
+			}
+		}
+		corps_commander = {
+			traits = {
+				Lieutenant_general
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	}

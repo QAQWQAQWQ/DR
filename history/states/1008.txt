@@ -1,0 +1,30 @@
+
+state={
+	id=1008
+	name="大名"
+	manpower = 1534900
+	
+	state_category = rural
+	resources={
+		grain=33
+	}
+	history={
+		owner = ZHX
+		add_core_of = ZHX
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			1169 3
+		}
+		victory_points = {
+			11933 3 
+		}
+	}
+
+	provinces={
+		1169 1188 4032 7092 11933 12062
+	}
+
+	local_supplies=0.0 
+}

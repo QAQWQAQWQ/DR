@@ -1,0 +1,12 @@
+focus_tree = {
+	id = KGL
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KGL
+		}
+	}
+	default = no
+	shared_focus = empire_modernization_of_the_imperial_army
+}

@@ -1,0 +1,13 @@
+scripted_gui = {
+
+	SHW_Progress_the_Russian_Civil_War_ui = {
+		context_type = decision_category
+		window_name = "SHW_Progress_the_Russian_Civil_War_ui_window"
+
+		properties={
+			SHW_Progress_the_Russian_Civil_War_needle= {
+				frame = SHW_Progress_the_Russian_Civil_War_paranoiameter
+			}
+	} 
+}
+}

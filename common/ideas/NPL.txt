@@ -1,0 +1,17 @@
+ideas = {
+        country = {
+		NPL_Declining_trend = {
+			picture = Declining_trend
+			modifier = {
+				political_power_cost = 0.1
+				ai_badass_factor = 0.3
+			}
+        }
+		NPL_Desert_cavalry= {
+			picture = succession_uprisings
+			modifier = {
+				terrain_penalty_reduction= -0.05
+			}
+        }
+		}
+}

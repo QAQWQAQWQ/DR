@@ -1,0 +1,24 @@
+state=
+{
+	id=919
+	name="STATE_919"
+	manpower = 800
+	
+	state_category = town
+
+	history=
+	{
+		owner = LMJ
+                                add_core_of = LMJ
+		buildings = {
+			infrastructure = 1 
+		}
+
+	}
+
+	provinces={
+		13257
+	}
+
+	local_supplies=0.0 
+}

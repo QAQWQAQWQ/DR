@@ -1,0 +1,26 @@
+state={
+	id=996
+	name="钱塘"
+	manpower = 8830700
+	state_category = city
+	history={
+		owner = ZHX
+		add_core_of = ZHX
+		add_core_of = DUQ
+		victory_points = { 7191 10 }
+		victory_points = { 4042 3 }
+		buildings = {
+			infrastructure = 2
+			7191 = {
+				naval_base = 5
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+	}
+	provinces={
+		4042 7191 10014 10101 11991
+	}
+
+	local_supplies=0.0 
+}

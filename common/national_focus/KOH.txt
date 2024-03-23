@@ -1,0 +1,113 @@
+focus_tree = {
+	id = KOH
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KOH
+		}
+	}
+	default = no
+	shared_focus = empire_modernization_of_the_imperial_army
+	focus = {
+		id = KOH_0
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+		x = 10
+		y = 0
+		completion_reward = {
+            # hidden_effect = {
+                AOX = {
+                    #complete_national_focus = AUS_bir_0
+                    country_event = aushun.1
+                }
+            # }
+		}
+		available = {
+			104 = {
+				is_owned_by = DMT
+			}
+			804 = {
+				is_owned_by = DMT
+			}
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = KOH_1
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = KOH_0 
+		}
+		mutually_exclusive = {
+		}
+		x = 2
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = KOH_2
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = KOH_1
+		}
+		mutually_exclusive = {
+		}
+		x = 1
+		y = 2
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = KOH_3
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = KOH_2
+		}
+		mutually_exclusive = {
+		}
+		x = 1
+		y = 3
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+	focus = {
+		id = KOH_4
+		icon = GFX_goal_unkown
+		cost = 5.00
+		prerequisite = {
+			focus = KOH_1
+		}
+		mutually_exclusive = {
+		}
+		x = 3
+		y = 2
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+}

@@ -1,0 +1,179 @@
+on_actions = {
+	#on_monthly 
+	
+
+	on_startup= { 
+		effect = {
+		every_country = { 
+			limit={
+				has_government = Conservatism
+			}
+			add_ideas=Special_police
+			add_ideas=No_investment
+			add_ideas=Patriarchy_supreme
+			add_ideas=Control_media
+			add_ideas=No_labor_laws
+			add_ideas=Smallholder_economy
+			add_ideas=Freedom_belief
+		} 
+		every_country = { 
+			limit={
+				has_government = Conservatism
+			}
+			add_ideas=Autonomous_police
+			add_ideas=Weak_investments
+			add_ideas=Patriarchy_supreme
+			add_ideas=Control_media
+			add_ideas=No_labor_laws
+			add_ideas=Smallholder_economy
+			add_ideas=Theocratic_state
+		} 
+		every_country = { 
+			limit={
+				has_government = Conservatism
+			}
+			add_ideas=Autonomous_police
+			add_ideas=Weak_investments
+			add_ideas=Patriarchy_supreme
+			add_ideas=Media_control
+			add_ideas=Trade_union_neutrality
+			add_ideas=Smallholder_economy
+			add_ideas=Freedom_belief
+		} 
+		every_country = { 
+			limit={
+				has_government = Reactionary
+			}
+			add_ideas=Autonomous_police
+			add_ideas=Weak_investments
+			add_ideas=Patriarchy_supreme
+			add_ideas=Media_control
+			add_ideas=Trade_union_neutrality
+			add_ideas=Smallholder_economy
+			add_ideas=Freedom_belief
+		} 
+		
+		every_country = { 
+			limit={
+				has_government = Liberalism
+			}
+			add_ideas=Autonomous_police
+			add_ideas=Weak_investments
+			add_ideas=Traditional_conservatism
+			add_ideas=Freedom_press
+			add_ideas=Trade_union_neutrality
+			add_ideas=Market_economy
+			add_ideas=Freedom_belief
+		} 
+		every_country = { 
+			limit={
+				has_government = Agrarian_socialism
+			}
+			add_ideas=Local_police
+			add_ideas=Weak_investments
+			add_ideas=Local_trade_unions
+			add_ideas=Freedom_press
+			add_ideas=Affirmative_action
+			add_ideas=Planned_economy
+			add_ideas=Freedom_belief
+		} 
+		every_country = { 
+			limit={
+				has_government = Revolutionism
+			}
+			add_ideas=Local_police
+			add_ideas=Weak_investments
+			add_ideas=Local_trade_unions
+			add_ideas=Freedom_press
+			add_ideas=Affirmative_action
+			add_ideas=Planned_economy
+			add_ideas=Freedom_belief
+		} 
+	 } 
+	} 
+} 
+
+
+
+on_daily= { 
+	effect = {
+	 if={
+		limit={ 
+		61={is_owned_by = WWS}
+		}
+		set_variable = { WWS_Mecklenburg = 2 }
+	 }
+	 if={
+		limit={ 
+		60={is_owned_by = WWS}
+		65={is_owned_by = WWS}
+		}
+		set_variable = { WWS_Saxony = 2 }
+	 }
+	 if={
+		limit={ 
+		59={is_owned_by = WWS}
+		56={is_owned_by = WWS}
+		}
+		set_variable = { WWS_Hanover = 2 }
+	 }
+	 if={
+		limit={ 
+		926={is_owned_by = WWS}
+		}
+		set_variable = { WWS_Oldenburg = 2 }
+	 }
+	 if={
+		limit={ 
+		57={is_owned_by = WWS}
+		}
+		set_variable = { WWS_Westphalia = 2 }
+	 }
+	 if={
+		limit={ 
+		55={is_owned_by = WWS}
+		51={is_owned_by = WWS}
+		}
+		set_variable = { WWS_Hesse = 2 }
+	 }
+	 if={
+		limit={ 
+		42={is_owned_by = WWS}
+		}
+		set_variable = { WWS_Nassau = 2 }
+	 }
+	 if={
+		limit={ 
+		925={is_owned_by = WWS}
+		}
+		set_variable = { WWS_Baden = 2 }
+	 }
+	 if={
+		limit={ 
+		50={is_owned_by = WWS}
+		}
+		set_variable = { WWS_Wurttemberg = 2 }
+	 }
+	 if={
+		limit={ 
+		54={is_owned_by = WWS}
+		53={is_owned_by = WWS}
+		52={is_owned_by = WWS}
+		}
+		set_variable = { WWS_Bavaria = 2 }
+	 }
+ } 
+} 
+
+
+
+
+	on_daily= { 
+		effect = {
+					ENL={
+						has_idea=Separation_emotions
+					}
+	            add_to_variable = { ENL.Separation_emotions = 1 } 
+	}
+}
+

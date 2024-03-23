@@ -1,0 +1,283 @@
+BRA_Court_struggles_category = {
+	BRA_Convince_Senate = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 70
+		days_remove = 25
+		cost = 50
+		allowed = {
+			tag = BRA
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+				add_power_balance_value = {
+					id = BRA_Court_struggles_balance
+					value = 0.05
+					
+				}
+			}
+	}
+	BRA_Stop_extremist_ideas = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 70
+		days_remove = 25
+		cost = 50
+		allowed = {
+			tag = BRA
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+				add_power_balance_value = {
+					id = BRA_Court_struggles_balance
+					value = 0.05
+					
+				}
+			}
+	}
+	BRA_Rectify_National_Guard = {
+		icon = generic_ignite_civil_war
+		visible = {
+
+		}
+		available = {
+			has_completed_focus = BRA_focus_14
+		}
+		days_re_enable = 50
+		days_remove = 25
+		cost = 65
+		allowed = {
+			tag = BRA
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			
+			complete_effect = {
+				add_power_balance_value = {
+					id = BRA_Court_struggles_balance
+					value = 0.05
+				}
+				custom_effect_tooltip = BRA_Rectify_National_Guard_tt
+				hidden_effect = {
+					add_to_variable = { BRA_National_Guard = 2 }
+					set_division_template_cap = {  division_template = "巴西国民警卫队" division_cap = BRA_National_Guard }
+				}
+			}
+	}
+	BRA_Recruitment_National_Guard = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		available = {
+			has_completed_focus = BRA_focus_14
+		}
+		days_re_enable = 130
+		days_remove = 25
+		cost = 50
+		allowed = {
+			tag = BRA
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+				add_power_balance_value = {
+					id = BRA_Court_struggles_balance
+					value = 0.1
+				}
+				
+			}
+	}
+	BRA_Buying_Representatives = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 70
+		days_remove = 25
+		cost = 50
+		allowed = {
+			tag = BRA
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+				add_power_balance_value = {
+					id = BRA_Court_struggles_balance
+					value = 0.05
+					
+				}
+			}
+	}
+	BRA_Hunt_lieutenants = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 70
+		days_remove = 25
+		cost = 50
+		allowed = {
+			tag = BRA
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -50
+					producer = BRA
+				}
+				add_power_balance_value = {
+					id = BRA_Court_struggles_balance
+					value = 0.05
+					
+				}
+			}
+	}
+	BRA_Rectify_Army_Department = {
+		icon = generic_ignite_civil_war
+		visible = {
+			
+		}
+		available = {
+		}
+		days_re_enable = 70
+		days_remove = 25
+		cost = 50
+		allowed = {
+			tag = BRA
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+				army_experience = 15
+				add_command_power = -10
+			}
+	}
+	BRA_Arms_smuggling = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		available = {
+			has_completed_focus = BRA_focus_15
+		} 
+		days_re_enable = 120
+		days_remove = 30
+		cost = 50
+		allowed = {
+			tag = BRA
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -2000
+					producer = BRA
+				}
+				502={
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_power_balance_value = {
+					id = BRA_Court_struggles_balance
+					value = 0.1
+					
+				}
+			}
+	}
+	BRA_New_emperor = {
+		icon = generic_ignite_civil_war
+		visible = {
+			power_balance_value = {
+				id = BRA_Court_struggles_balance
+				value = 1
+			}
+		}
+		available = {
+		}
+		days_re_enable = 120
+		days_remove = 30
+		cost = 50
+		allowed = {
+			tag = BRA
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+				remove_power_balance = {
+					id = BRA_Court_struggles_balance
+				}
+				news_event = {id=BRA.17 days=2} 
+			}
+	}
+	BRA_Lieutenant_coup = {
+		icon = generic_ignite_civil_war
+		visible = {
+			power_balance_value = {
+				id = BRA_Court_struggles_balance
+				value > 0.75
+			}
+		}
+		available = {
+		}
+		days_re_enable = 120
+		days_remove = 30
+		cost = 50
+		allowed = {
+			tag = BRA
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+				remove_power_balance = {
+					id = BRA_Court_struggles_balance
+				}
+				country_event = {id=BRA.16 days=2} 
+			}
+	}
+}

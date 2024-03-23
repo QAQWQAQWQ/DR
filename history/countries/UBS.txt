@@ -1,0 +1,97 @@
+﻿capital = 361
+
+oob = "UBS_1920"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	fuel_silos = 1
+}
+
+recruit_character = UBS_Hugo_Black
+recruit_character = UBS_LiEngFu
+recruit_character = UBS_Woodrow_Wilson
+recruit_character = UBS_Ulysses_G_McAlexander
+recruit_character = UBS_Douglas_MacArthur
+recruit_character = UBS_Pershing
+recruit_character = UBS_Omar_Bondi
+recruit_character = UBS_John_Reed
+recruit_character = UBS_Calvin_Coolidge
+recruit_character = UBS_Browder
+recruit_character = UBS_James_Middleton_Cox
+recruit_character = UBS_Warren_Gamaliel_Harding
+recruit_character = UBS_Roosevelt
+recruit_character = UBS_Huey_Pierce_Long
+recruit_character = UBS_Edgar_Hoover
+recruit_character = UBS_William_Foster
+recruit_character = UBS_Cannon
+recruit_character = UBS_George_Bolling_Lee
+recruit_character = UBS_Eugene_Debs
+
+recruit_character = UBS_Smedley_Darlington_Butler
+
+
+news_event={id = UBS.1 days=8}
+country_event={id = MXG.1 days=95}
+
+
+
+
+
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+
+		#electronics
+		
+		
+		
+		
+		
+
+		#industry
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+add_ideas = {
+	UBS_Slavery
+	UBS_The_declining_north
+	UBS_Jim_Crow_laws
+}
+set_politics = {
+	ruling_party = Liberalism
+	last_election = "1918.11.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+add_ideas={
+#law
+Basic_industrialization 
+Private_economy
+}
+set_popularities = {
+	Liberalism = 85 
+	Conservatism = 15
+	Reformism = 0
+}

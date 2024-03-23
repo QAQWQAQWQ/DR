@@ -1,0 +1,500 @@
+characters={
+	SIW_Aleksandar_Obrenovic={
+		name=SIW_Aleksandar_Obrenovic
+		portraits={
+			civilian={
+				large="gfx/leaders/SIW/portrait_Aleksandar_Obrenovic.tga"
+			}
+		}
+		field_marshal={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+		country_leader={
+			ideology=Classicism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SIW_Peter_I={
+		name=SIW_Peter_I
+		portraits={
+			civilian={
+				large="gfx/leaders/SIW/portrait_Peter_I.tga"
+			}
+		}
+		country_leader={
+			ideology=Classicism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SIW_Alexander_I={
+		name=SIW_Alexander_I
+		portraits={
+			civilian={
+				large="gfx/leaders/SIW/portrait_Alexander_I.tga"
+			}
+		}
+		country_leader={
+			ideology=Classicism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SIW_Ljubomir_Davidović={
+		name=SIW_Ljubomir_Davidovic
+		portraits={
+			civilian={
+				large="gfx/leaders/SIW/portrait_Ljubomir_Davidović.tga"
+				small="gfx/interface/ideas/idea_Ljubomir_Davidović.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = SIW_Ljubomir_Davidovic_H
+			allowed = {
+				original_tag = SIW
+			}
+			available = {
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SIW_Ljubomir_Davidovic_P
+			allowed = {
+				original_tag = SIW
+			}
+			
+			traits = {
+				freedom_fighter
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		country_leader={
+			ideology=Socialism_Liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SIW_PetarZivkovic={
+		name=SIW_PetarZivkovic
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_PetarŽivković.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SIW_PetarZivkovic_H
+			allowed = {
+				original_tag = SIW
+			}
+			available = {
+				
+				OR={
+					has_government = Liberalism
+					has_government = Conservatism
+				}
+				has_completed_focus = Sword_slashing_fox
+			}
+			traits = {
+				White_hands
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIW_Dragutin_Dimitrijevic={
+		name=SIW_Dragutin_Dimitrijevic
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Dragutin_Dimitrijević.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SIW_Dragutin_Dimitrijevic_P
+			allowed = {
+				original_tag = SIW
+			}
+			available = {
+
+				NOT={
+					has_idea = SIW_PetarZivkovic_H
+                    has_idea = SIW_Ban_the_mafia
+					has_country_flag = Crackdown_mafia
+				}
+				OR={
+					has_government = Liberalism
+					has_government = Conservatism
+				}
+			}
+			traits = {
+				Black_hands
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIW_Filip_Filipovic={
+		name=SIW_Filip_Filipovic
+		portraits={
+			civilian={
+				large="gfx/leaders/SIW/portrait_Filip_Filipovic.tga"
+				small="gfx/interface/ideas/idea_Filip_Filipovic.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SIW_Filip_Filipovic_H
+			allowed = {
+				original_tag = SIW
+			}
+			available = {
+				has_government = Revolutionism
+			}
+			traits = {
+				communist_revolutionary
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		country_leader={
+			ideology=Scientism_revolutionism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+
+
+
+
+
+
+	SIW_Dragutin_Dimitrijević={
+		name=SIW_Dragutin_Dimitrijevic
+		portraits={
+			civilian={
+				large="gfx/leaders/SIW/portrait_Dragutin_Dimitrijević.tga"
+			}
+		}
+	}
+	SIW_Stojan_protic={
+		name=SIW_Stojan_protic
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Stojan_protic.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = SIW_Stojan_protic_H
+			allowed = {
+				original_tag = SIW
+			}
+			available = {
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SIW_Stojan_protic_P
+			allowed = {
+				original_tag = SIW
+			}
+			available = {
+			  }
+			traits = {
+				elected_monarchist_puppet
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIW_Woja_Marinkowitsch={
+		name=SIW_Woja_Marinkowitsch
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Woja_Marinkowitsch.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = SIW_Woja_Marinkowitsch_H
+			allowed = {
+				original_tag = SIW
+			}
+			available = {
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SIW_Woja_Marinkowitsch_P
+			allowed = {
+				original_tag = SIW
+			}
+			available = {
+			  }
+			traits = {
+				Minister_Affairs
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIW_NikolaPasic={
+		name=SIW_NikolaPasic
+		portraits={
+			civilian={
+				large="gfx/leaders/SIW/portrait_NikolaPasic.tga"
+				small="gfx/interface/ideas/idea_NikolaPasic.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = SIW_NikolaPasic_H
+			allowed = {
+				original_tag = SIW
+			}
+			available = {
+				SIW_Peter_I={is_country_leader=yes}
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SIW_NikolaPasic_P
+			allowed = {
+				original_tag = SIW
+			}
+			available = {
+				SIW_Peter_I={is_country_leader=yes}
+			  }
+			traits = {
+				liberal_democratic_paragon
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIW_Milenko_Radomar_Vesnic={
+		name=SIW_Milenko_Radomar_Vesnic
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Milenko_Radomar_Vesnic.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = SIW_Milenko_Radomar_Vesnic_H
+			allowed = {
+				original_tag = SIW
+			}
+			available = {
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SIW_Milenko_Radomar_Vesnic_P
+			allowed = {
+				original_tag = SIW
+			}
+			available = {
+			  }
+			traits = {
+				economic_organizer
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIW_Dragisa_Lapcevic={
+		name=SIW_Dragisa_Lapcevic
+		portraits={
+			civilian={
+				large="gfx/leaders/SIW/portrait_Dragisa_Lapcevic.tga"
+				small="gfx/interface/ideas/idea_Dragisa_Lapcevic.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = SIW_Dragisa_Lapcevic_H
+			allowed = {
+				original_tag = SIW
+			}
+			available = {
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SIW_Dragisa_Lapcevic_P
+			allowed = {
+				original_tag = SIW
+			}
+			available = {
+			  }
+			traits = {
+				resolute_social_democrat
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		country_leader={
+			ideology=Social_Reformism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SIW_Nicola_Uzun={
+		name=SIW_Nicola_Uzun
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Nicola_Uzun.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = SIW_Nicola_Uzun_H
+			allowed = {
+				original_tag = SIW
+			}
+			available = {
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIW_Arsenije_Karaaoraevic_Arsen={
+		name=SIW_Arsenije_Karaaoraevic_Arsen
+		portraits={
+			civilian={
+				large="gfx/leaders/SIW/portrait_Arsenije_Karađorđević_Arsen.tga"
+			}
+		}
+		corps_commander={
+			traits={ expert_delegator}
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=3
+		}
+	}
+	SIW_Krsta_Smiljanic={
+		name=SIW_Krsta_Smiljanic
+		portraits={
+			civilian={
+				large="gfx/leaders/SIW/portrait_Krsta_Smiljanić.tga"
+			}
+		}
+		corps_commander={
+			traits={ expert_delegator}
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+	SIW_Milos_Vasic_slika={
+		name=SIW_Milos_Vasic_slika
+		portraits={
+			civilian={
+				large="gfx/leaders/SIW/portrait_Milos_Vasic_slika.tga"
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general}
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	SIW_Vojvoda_Petar_Bojovic={
+		name=SIW_Vojvoda_Petar_Bojovic
+		portraits={
+			civilian={
+				large="gfx/leaders/SIW/portrait_Vojvoda_Petar_Bojovic.tga"
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general}
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	SIW_Mihailo_Rasic={
+		name=SIW_Mihailo_Rasic
+		portraits={
+			civilian={
+				large="gfx/leaders/SIW/portrait_Mihailo_Rašić.tga"
+			}
+		}
+		corps_commander={
+			traits={skilled_staffer}
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}			
+	}

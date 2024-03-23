@@ -1,0 +1,70 @@
+﻿capital = 595
+
+oob = "WUP_1920"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	fuel_silos = 1
+}
+
+recruit_character = WUP_tangshengzhi
+recruit_character = WUP_ZhaoHengXi
+recruit_character = WUP_ChenQiang
+recruit_character = WUP_Zhangjingyao
+recruit_character = MaoZeDong
+country_event={id=ZJY.1 days=10}
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+
+		#electronics
+		
+		
+		
+		
+		
+
+		#industry
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+set_politics = {
+	ruling_party = Conservatism
+	last_election = "1918.11.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+set_popularities = {
+	Liberalism = 5
+	Reactionary = 1
+	Conservatism = 89
+	Revolutionism = 5
+}
+add_ideas = {
+	#WUP_Buddhism
+                WUP_Tension_movement
+}

@@ -1,0 +1,41 @@
+characters={
+	BLF_Hugh_Mulzac={
+		name=BLF_Hugh_Mulzac
+		portraits={
+			civilian={
+				large="gfx/leaders/BLF/Portrait_Hugh_Mulzac.tga"
+			}
+		}
+	}
+	BLF_William_Edward_Burghardt_Du_Bois={
+		name=BLF_William_Edward_Burghardt_Du_Bois
+		portraits={
+			civilian={
+				large="gfx/leaders/BLF/Portrait_William_Edward_Burghardt_Du_Bois.tga"
+			}
+		}
+		country_leader={
+			ideology=Socialism_Liberalism
+            desc=BLF_William_Edward_Burghardt_Du_Bois_DESC
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	BLF_Asa_Philip_Randolph={
+		name=BLF_Asa_Philip_Randolph
+		portraits={
+			civilian={
+				large="gfx/leaders/BLF/Portrait_Asa_Philip_Randolph.tga"
+			}
+		}
+		country_leader={
+			ideology=Scientism_revolutionism
+            desc=BLF_Hugh_Mulzac_DESC
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+		
+	}

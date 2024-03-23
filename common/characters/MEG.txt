@@ -1,0 +1,44 @@
+characters={
+	MEG_Xu_ShuZheng={
+		name=MEG_Xu_ShuZheng
+		portraits={
+			civilian={
+				large="gfx/leaders/MEG/portrait_Xu_ShuZheng.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MEG_Ungern_Sternberg={
+		name=MEG_Ungern_Sternberg
+		portraits={
+			civilian={
+				large="gfx/leaders/MEG/Portrait_Ungern_Sternberg.tga"
+			}
+		}
+		country_leader={
+			ideology=Populism_Reactionary
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MEG_Sukhbaatar={
+		name=MEG_Sukhbaatar
+		portraits={
+			civilian={
+				large="gfx/leaders/MEG/portrait_Sukhbaatar.tga"
+			}
+		}
+		country_leader={
+			ideology=Nationalism_revolutionism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}			
+	}

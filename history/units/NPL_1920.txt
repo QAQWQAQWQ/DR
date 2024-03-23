@@ -1,0 +1,104 @@
+﻿division_template = {
+	name = "法兰西当地卫队"				
+	regiments = {
+		infantry = { x = 0 y = 0 }	
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "“老近卫”团"			
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	priority = 1
+	support = {
+        artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "法兰西步兵旅"			
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	priority = 1
+	support = {
+        artillery = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "“缪拉”骑兵旅"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+        cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+	    recon = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division= {	
+		name = "“缪拉”骑兵一旅"
+		location = 1145
+		division_template = "“缪拉”骑兵旅"
+		start_experience_factor = 0.9
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "第一“近卫”团"
+		location = 1145
+		division_template = "“老近卫”团"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "第二“近卫”团"
+		location = 2001
+		division_template = "“老近卫”团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "法兰西第一步兵旅"
+		location = 1145
+		division_template = "法兰西步兵旅"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "第二“近卫”团"
+		location = 7081
+		division_template = "“老近卫”团"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "法兰西第二步兵旅"
+		location = 7081
+		division_template = "法兰西步兵旅"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "法兰西第三步兵旅"
+		location = 2012
+		division_template = "法兰西步兵旅"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+}

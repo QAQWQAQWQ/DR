@@ -1,0 +1,16 @@
+﻿###########################
+# LEF Events
+###########################
+
+add_namespace = LEF
+country_event = {
+	id = LEF.1
+	title = LEF.1.t
+	desc = LEF.1.d
+	#picture = GFX_LIF_1
+	is_triggered_only = yes
+	option = {
+		name = LEF.1.a
+	    
+	    }
+	}

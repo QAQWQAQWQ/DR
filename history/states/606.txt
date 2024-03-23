@@ -1,0 +1,29 @@
+state={
+	id=606
+	name="淮泗"
+	resources={
+		steel=10
+	}
+	history={
+		owner =ZHX
+		add_core_of = ZHX
+		buildings = {
+			infrastructure = 2
+		}
+        victory_points = {
+			11916 3 
+		}
+		victory_points = {
+			1121 2
+		}
+	}
+
+	provinces={
+		1001 1121 1161 4005 4079 7094 9937 10040 10064 10079 11916 11973 12036 13144 
+	}
+	manpower=8265400
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=2.0 
+}

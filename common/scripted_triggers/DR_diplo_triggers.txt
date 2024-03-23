@@ -1,0 +1,24 @@
+is_diplomatic_action_valid_stage_coup = { #策划政变不可见
+	always = no 
+}
+is_diplomatic_action_valid_boost_party_popularity = { #提高党派支持率不可见
+	always = no 
+}
+is_diplomatic_action_valid_create_faction = { #创建阵营不可见
+	always = no 
+}
+is_diplomatic_action_valid_leave_faction = { #离开阵营不可见
+	always = no 
+}
+is_diplomatic_action_valid_kick_from_faction = { #踢出阵营不可见
+	always = no 
+}
+is_diplomatic_action_valid_OFFER_JOIN_FACTION = { #邀请阵营不可见
+	always = no 
+}
+is_diplomatic_action_valid_JOIN_FACTION = { #要求加入阵营不可见
+	always = no 
+}
+is_diplomatic_action_valid_ASSUME_FACTION_LEADERSHIP = { #接管阵营不可见
+	always = no 
+}

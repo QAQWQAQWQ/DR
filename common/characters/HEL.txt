@@ -1,0 +1,15 @@
+characters={
+	HEL_Victor_Napoleon={
+		name=HEL_Victor_Napoleon
+		portraits={
+			civilian={
+				large="gfx/leaders/HEL/portrait_Victor_Napoleon.tga"
+			}
+		}
+		country_leader={
+			ideology=Classicism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}

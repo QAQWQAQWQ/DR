@@ -1,0 +1,186 @@
+﻿###########################
+# ZHX Events
+###########################
+
+add_namespace = ZHX
+add_namespace = The_Zhiwan_War
+country_event = {
+	id = ZHX.2
+	title = ZHX.2.t
+	desc = ZHX.2.d
+	picture = GFX_suppress
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+			name = ZHX.2.a
+		    add_political_power = -50
+			add_stability = -0.3
+			}
+	}
+
+
+news_event = {
+	id = ZHX.1
+	title = ZHX.1.t
+	desc = ZHX.1.d
+	picture = GFX_Student_movement
+
+
+	fire_only_once = yes
+	trigger = {
+		tag = ZHX
+		date > 1920.1.18
+		date < 1920.1.10
+			}
+			option = {
+				name = ZHX.1.a
+				effect_tooltip = {
+					custom_effect_tooltip = ZHX.1.a.tt
+				}
+					random_list = {
+						90 = {
+							country_event = { id = ZHX.2 days = 2 }
+							add_political_power = -200
+						}
+						10 = {
+							news_event = { id = ZHX.3 days = 2 }
+							add_political_power = -100
+						}
+					}
+					ai_chance = { factor = 1 }
+			}
+		
+			option = {
+				name = ZHX.1.b
+					random_list = {
+						50 = {
+							country_event = { id = ZHX.2 }
+							add_political_power = -200
+						}
+						50 = {
+							news_event = { id = ZHX.3 }
+							add_political_power = -50
+						}
+					}
+				}
+		}
+		news_event = {
+			id = The_Zhiwan_War.1
+			title = The_Zhiwan_War.1.t
+			desc = The_Zhiwan_War.1.d
+			picture = GFX_The_Zhiwan_War
+
+			major = yes
+
+	        is_triggered_only = yes
+
+			option = {
+					name = The_Zhiwan_War.1.a
+					hidden_effect = {
+						DUQ={
+							create_faction = WangXi
+							add_to_faction = MEG
+							add_to_faction = WUP
+							add_to_faction = HAQ
+						}
+					}
+					HAQ={
+						transfer_state = 597
+                        add_state_core = 597
+						transfer_state = 743
+                        add_state_core = 743
+						transfer_state = 913
+                        add_state_core = 913
+					}
+					DUQ={
+						declare_war_on = {
+							target = ZHX
+							type = annex_everything
+						}
+						declare_war_on = {
+							target = FTX
+							type = annex_everything
+						}
+						transfer_state = 606
+                        add_state_core = 606
+						transfer_state = 598
+                        add_state_core = 598
+						transfer_state = 909
+                        add_state_core = 909
+						transfer_state = 613
+                        add_state_core = 613
+						transfer_state = 749
+                        add_state_core = 749
+						transfer_state = 596
+                        add_state_core = 596
+					}
+					}
+			}
+		news_event = {
+			id = ZHX.3
+			title = ZHX.3.t
+			desc = ZHX.3.d
+			picture = GFX_dissolution
+			is_triggered_only = yes
+			fire_only_once = yes
+			trigger = {
+				
+				}
+			option = {
+					name = ZHX.3.a
+					add_political_power = -20
+					add_stability = -0.2
+					}
+			}
+country_event = {
+	id = ZHX.4
+	title = ZHX.4.t
+	desc = ZHX.4.d
+	picture = GFX_BOOK
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = ZHX.4.a
+}
+}
+
+country_event = {
+	id = ZHX.5
+	title = ZHX.5.t
+	desc = ZHX.5.d
+	picture = GFX_aq
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = ZHX.5.a
+}
+}
+
+news_event = {
+	id = ZHX.6
+	title = ZHX.6.t
+	desc = ZHX.6.d
+	picture = GFX_ZHX_6
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = ZHX.6.a
+		ZHX={
+			retire_country_leader=yes
+		subtract_from_variable = {
+			var = DR_money_all
+			value = 13.5
+		}}
+		
+		custom_effect_tooltip = DR_money_all_ZHX_6
+}
+}

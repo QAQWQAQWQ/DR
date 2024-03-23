@@ -1,0 +1,81 @@
+DR_Shanghai_worker = {
+	DR_Shanghai_worker_1 = {
+	  icon = generic_ignite_civil_war
+	  visible = {
+	  }
+	  days_remove = 10
+	  cost = 35
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = yes
+	  is_good = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  remove_effect = {
+			set_country_flag=DR_Shanghai_worker_1
+			}
+		  }
+	DR_Shanghai_worker_2 = {
+	  icon = generic_ignite_civil_war
+	  visible = {
+	  }
+	  days_remove = 10
+	  cost = 25
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = yes
+	  is_good = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  remove_effect = {
+			set_country_flag=DR_Shanghai_worker_2
+			}
+		  }
+	DR_Shanghai_worker_3 = {
+	  icon = generic_ignite_civil_war
+	  visible = {
+		has_country_flag=DR_Shanghai_worker_2
+		has_country_flag=DR_Shanghai_worker_1
+	  }
+	  days_remove = 10
+	  cost = 25
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = yes
+	  is_good = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  remove_effect = {
+			set_country_flag=DR_Shanghai_worker_3
+			}
+		  }
+	 DR_Shanghai_worker_4 = {
+	  icon = generic_ignite_civil_war
+	  visible = {
+		has_country_flag=DR_Shanghai_worker_3
+	  }
+	  days_remove = 30
+	  cost = 120
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = yes
+	  is_good = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  complete_effect = {
+			country_event={id=QY.1 days=3}
+			}
+		  }
+	  }

@@ -1,0 +1,30 @@
+characters={
+	LXS_LiuXiangShi={
+		name=LXS_LiuXiangShi
+		portraits={
+			civilian={
+				large="gfx/leaders/LXS/portrait_LiuXiangShi.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
+LXS_WangWenHua={
+		name=LXS_WangWenHua
+		portraits={
+			civilian={
+				large="gfx/leaders/LXS/portrait_WangWenHua.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
+	}

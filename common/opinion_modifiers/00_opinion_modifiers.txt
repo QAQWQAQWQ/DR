@@ -1,0 +1,28 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+	communists_in_government = { value = 15 }
+    Kuomintang = { value = 30 }
+	progressive_thinking = { value = 30 }
+	factions= { value = 25 }
+	Lower_trade_tariffs= { value = 15 }
+	Show_us_kindness= { value = 20 }
+	Trade_embargo= { 
+		trade = no
+		value = -80 }
+	Sanctioned= { value = -20 }
+	Both_born_the_same_root= { value = 30 }
+	Slavic_cultural_circle= { value = 20 }
+	Love_like_brotherhood= { value = 40 }
+	Discord_Pope = {value = -30}
+	Confederate_pretenders = {value = -40}
+	Show_goodwill = {value = 30}
+}

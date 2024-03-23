@@ -1,0 +1,78 @@
+﻿capital = 9
+
+oob = "BXM_1920"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	fuel_silos = 1
+}
+
+recruit_character = BXM_Johann_II_Nepomuk_Adolf_Maria_Hubert_Maximin
+recruit_character = BXM_Tomas_Garrigue_Masaryk
+
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+
+		#electronics
+		
+		
+		
+		
+		
+
+		#industry
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+set_politics = {
+	ruling_party = Conservatism
+	last_election = "1918.11.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+add_ideas = {
+#law
+Private_economy
+		low_industrialization
+		Freedom_belief
+		Autonomous_police
+		Underlying_investment
+		Patriarchy_supreme
+		Control_media
+		Trade_union_neutrality
+		secondary_school
+
+Deutscher_Bund
+Deutscher_Zollverein
+Part_of_Habsburgs
+}
+set_popularities = {
+	Liberalism = 5
+	Reactionary = 1
+	Conservatism = 89
+	Revolutionism = 5
+}

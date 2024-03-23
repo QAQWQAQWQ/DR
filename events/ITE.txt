@@ -1,0 +1,50 @@
+﻿###########################
+# ITE Events
+###########################
+
+add_namespace = ITE
+
+news_event = {
+	id = ITE.1
+	title = ITE.1.t
+	desc = ITE.1.d
+	picture = GFX_Hungarian_uprising
+	is_triggered_only = yes
+	major = yes
+
+	trigger = {
+		
+		}
+	option = {
+		name = ITE.1.a
+		ITC = {
+				transfer_state = 158
+                add_state_core = 158
+				load_oob = "ITC_1920"
+				load_oob = "ITC_1920NAVY"
+			}
+			}
+	}
+	news_event = {
+		id = ITE.2
+		title = ITE.2.t
+		desc = ITE.2.d
+		picture = GFX_FUM
+
+		is_triggered_only = yes
+
+		major = yes
+		trigger = {
+			
+			}
+		option = {
+			name = ITE.2.a
+			FUM = {
+					transfer_state = 736
+					add_state_core = 736
+					load_oob = "FUM_1920"
+					load_oob = "FUM_1920NAVY"
+				}
+				}
+		}
+

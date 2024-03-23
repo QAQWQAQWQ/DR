@@ -1,0 +1,123 @@
+@PARANOIA_PARANOIAMETER_MAIN_X = 190
+@PARANOIA_PARANOIAMETER_MAIN_Y = 70
+@PARANOIA_PARANOIAMETER_BG_X = 25 #Needs to be -25 relative to MAIN
+@PARANOIA_PARANOIAMETER_BG_Y = -3 #Needs to be -73 relative to MAIN
+@PARANOIA_TEXT_X = 50 #Needs to be -145(overlapping sword) / -130(evading sword) / -140(bottom) relative to MAIN
+@PARANOIA_TEXT_Y = 180 #Needs to be +80(overlapping sword) / +110(bottom) relative to MAIN
+@PHOTO_1_X = 25
+@PHOTO_1_Y = 105
+@PHOTO_2_X = 330
+@PHOTO_2_Y = 22
+@PHOTO_3_X = 440
+@PHOTO_3_Y = 3
+@PHOTO_4_X = 363
+@PHOTO_4_Y = 115
+@PHOTO_5_X = 75
+@PHOTO_5_Y = 5
+guiTypes = {
+
+	containerWindowType = {
+		name = "UBS_elections_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 210 }
+		iconType = {  
+			name ="James_Middleton_Cox"
+			spriteType = "GFX_James_Middleton_Cox_bg"
+			position = { x=25	 y=-15 }
+			size = { width = 50% height= 50% }
+		} 
+		iconType = {  
+			name ="Warren_Gamaliel_Harding"
+			spriteType = "GFX_Warren_Gamaliel_Harding_bg"
+			position = { x=355	 y=-15 }
+			size = { width = 50% height= 50% }
+		}
+		iconType = {  
+			name ="elections"
+			spriteType = "GFX_elections_bg"
+			position = { x=150	 y=-25 }
+			size = { width = 100% height= 100% }
+		}
+		iconType = {  
+			name ="Slider"
+			position = { x=0	 y=130 }
+			size = { width = 100% height= 100% }
+		}  
+		instantTextBoxType = {
+			name ="Warren_Gamaliel_Harding_text"
+			position = { x=305	 y=-45 } 
+			font = "hoi_18mbs"
+			text = "Warren_Gamaliel_Harding_text"
+			format = center
+			maxWidth = 200
+		}
+		instantTextBoxType = {
+			name ="James_Middleton_Cox_text"
+			position = { x=-27	 y=-45 }
+			font = "hoi_18mbs"
+			text = "James_Middleton_Cox_text"
+			format = center
+			maxWidth = 200
+		}
+		
+		instantTextBoxType = {
+			name ="GOP_text"
+			position = { x=305	 y=-85 } 
+			font = "hoi_17mbs"
+			text = "GOP_text"
+			format = center
+			maxWidth = 200
+		}
+		instantTextBoxType = {
+			name ="DP_text"
+			position = { x=-27	 y=-85 }
+			font = "hoi_17mbs"
+			text = "DP_text"
+			format = center
+			maxWidth = 200
+		}
+		instantTextBoxType = {
+			name ="Warren_Gamaliel_Harding_All_vote_text"
+			position = { x=305	 y=155 } 
+			font = "hoi_18mbs"
+			text = "Warren_Gamaliel_Harding_All_vote_text"
+			format = center
+			maxWidth = 200
+		}
+		instantTextBoxType = {
+			name ="James_Middleton_Cox_All_vote_text"
+			position = { x=-22	 y=155 }
+			font = "hoi_18mbs"
+			text = "James_Middleton_Cox_All_vote_text"
+			format = center
+			maxWidth = 200
+		}
+
+
+
+		instantTextBoxType = {
+			name ="Warren_Gamaliel_Harding_vote_text"
+			position = { x=305	 y=125 } 
+			font = "hoi_18mbs"
+			text = "Warren_Gamaliel_Harding_vote_text"
+			format = center
+			maxWidth = 200
+		}
+		instantTextBoxType = {
+			name ="James_Middleton_Cox_vote_text"
+			position = { x=-22	 y=125 }
+			font = "hoi_18mbs"
+			text = "James_Middleton_Cox_vote_text"
+			format = center
+			maxWidth = 200
+		}
+		#Tooltip
+		instantTextBoxType = {
+			name ="UBS_elections_tooltip"
+			position = { x = @PARANOIA_PARANOIAMETER_BG_X y = @PARANOIA_PARANOIAMETER_BG_Y }
+			maxwidth = 230
+			maxHeight = 185
+			pdx_tooltip = UBS_elections_ui_bg_tooltip
+		}
+}
+}

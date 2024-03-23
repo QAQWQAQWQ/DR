@@ -1,0 +1,27 @@
+﻿###########################
+# TPU Events
+###########################
+
+add_namespace = TPU
+news_event = {
+	id = TPU.1
+	title = TPU.1.t
+	desc = TPU.1.d
+	#picture = 
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = TPU.1.a
+		hidden_effect = {
+			TPU= { 
+			transfer_state = 257
+			add_state_core = 257
+			transfer_state = 254
+			add_state_core = 254
+			transfer_state = 258
+			add_state_core = 258
+	    }
+		}
+	}
+	}
+	

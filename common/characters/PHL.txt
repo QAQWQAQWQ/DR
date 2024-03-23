@@ -1,0 +1,32 @@
+characters={
+	PHL_Miguel_Primo_de_Rivera={
+		name=PHL_Miguel_Primo_de_Rivera
+		portraits={
+			civilian={
+			large="gfx/leaders/PHL/portrait_Miguel_Primo_de_Rivera.tga"
+			}
+		}
+		country_leader={
+			ideology= Authoritarianism_Conservatism
+			desc=PHL_Miguel_Primo_de_Rivera_DESC
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
+	PHL_Quezon={
+		name=PHL_Quezon
+		portraits={
+			civilian={
+			large="gfx/leaders/PHL/portrait_Quezon.tga"
+			}
+		}
+		country_leader={
+			ideology=Socialism_Liberalism
+			desc=PHL_Quezon_DESC
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	}

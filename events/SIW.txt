@@ -1,0 +1,453 @@
+﻿###########################
+# SIW Events
+###########################
+
+add_namespace = SIW
+
+country_event = {
+	id = SIW.1
+	title = SIW.1.t
+	desc = SIW.1.d
+	#picture = GFX_Suez_Canal_Crisis
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = SIW.1.a
+		send_equipment = {
+			type = infantry_equipment_0
+			amount = 1000
+			target = SIW
+		}
+		}
+	option = {
+		name = SIW.1.b
+		}
+	}
+
+
+country_event = {
+	id = SIW.2
+	title = SIW.2.t
+	desc = SIW.2.d
+	#picture = GFX_Suez_Canal_Crisis
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = SIW.2.a
+		random_list = {
+			50 = {
+				add_stability = -0.05
+			}
+			50 = {
+				swap_ideas = {
+					remove_idea = SIW_Tighten_control
+					add_idea = SIW_Tighten_control1
+				}
+			}
+		}
+		}
+	}
+country_event = {
+	id = SIW.3
+	title = SIW.3.t
+	desc = SIW.3.d
+	#picture = GFX_Suez_Canal_Crisis
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = SIW.3.a
+		}
+	}
+country_event = {
+	id = SIW.4
+	title = SIW.4.t
+	desc = SIW.4.d
+	picture = GFX_Assassination
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = SIW.4.a
+		kill_country_leader = yes
+		clr_country_flag = SIW_Aleksandar_Obrenovic_1
+		country_event = {id=SIW.8}
+	}
+	}
+	
+country_event = {
+	id = SIW.5
+	title = SIW.5.t
+	desc = SIW.5.d
+	#picture = GFX_Suez_Canal_Crisis
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = SIW.5.a
+		set_country_flag = Greater_Yugoslavism
+		mark_focus_tree_layout_dirty = yes
+		custom_effect_tooltip = Greater_Yugoslavism1
+		}
+	option = {
+		name = SIW.5.b
+		set_country_flag = Greater_Serbia
+		mark_focus_tree_layout_dirty = yes
+		custom_effect_tooltip = Greater_Serbia2
+		}
+	}
+	country_event = {
+		id = SIW.6
+		title = SIW.6.t
+		desc = SIW.6.d
+		#picture = GFX_Suez_Canal_Crisis
+	
+		is_triggered_only = yes
+	
+		fire_only_once = yes
+	
+		option = {
+			name = SIW.6.a
+			set_country_flag = Crackdown_mafia
+			custom_effect_tooltip = Crackdown_mafia1
+			}
+		option = {
+			name = SIW.6.b
+			hidden_effect = {
+				random_list={
+				80={country_event={id= SIW.25 days=10}}
+				20={country_event={id= SIW.26 days=10}}
+			}
+			}
+			}
+		}
+	country_event = {
+		id = SIW.7
+		title = SIW.7.t
+		desc = SIW.7.d
+		#picture = GFX_Suez_Canal_Crisis
+	
+		is_triggered_only = yes
+	
+		fire_only_once = yes
+	
+		option = {
+			name = SIW.7.a
+			add_political_power = 120
+			}
+		}
+	country_event = {
+		id = SIW.8
+		title = SIW.8.t
+		desc = SIW.8.d
+		#picture = GFX_Assassination
+	
+		is_triggered_only = yes
+	
+		fire_only_once = yes
+	
+		option = {
+			name = SIW.8.a
+			custom_effect_tooltip = Balkan_order_T
+			hidden_effect={
+			load_focus_tree = SIW_1
+	        }
+			set_party_name = { 
+				ideology = Conservatism 
+				long_name = SIW_monarchy_party1_long 
+				name = SIW_monarchy_party1
+			}
+		}
+		}
+		country_event = {
+			id = SIW.9
+			title = SIW.9.t
+			desc = SIW.9.d
+			#picture = GFX_Assassination
+		
+			is_triggered_only = yes
+		
+			fire_only_once = yes
+		
+			option = {
+				name = SIW.9.a
+				add_stability = 0.02
+			}
+			}
+	country_event = {
+			id = SIW.10
+			title = SIW.10.t
+			desc = SIW.10.d
+			#picture = GFX_Assassination
+		
+			is_triggered_only = yes
+		
+			fire_only_once = yes
+		
+			option = {
+				name = SIW.10.a
+			}
+			}
+	country_event = {
+			id = SIW.11
+			title = SIW.11.t
+			desc = SIW.11.d
+			#picture = GFX_Assassination
+		
+			is_triggered_only = yes
+		
+			fire_only_once = yes
+		
+			option = {
+				name = SIW.11.a
+			}
+			}
+	country_event = {
+			id = SIW.12
+			title = SIW.12.t
+			desc = SIW.12.d
+			#picture = GFX_Assassination
+		
+			is_triggered_only = yes
+		
+			fire_only_once = yes
+		
+			option = {
+				name = SIW.12.a
+				set_country_flag = Red_flag_over
+				complete_national_focus = Red_flags_flying
+			}
+			}
+	country_event = {
+			id = SIW.13
+			title = SIW.13.t
+			desc = SIW.13.d
+			#picture = GFX_Assassination
+		
+			is_triggered_only = yes
+		
+			fire_only_once = yes
+		
+			option = {
+				name = SIW.13.a
+				add_stability = 0.05
+			}
+			}
+country_event = {
+			id = SIW.14
+			title = SIW.14.t
+			desc = SIW.14.d
+			#picture = GFX_Assassination
+		
+			is_triggered_only = yes
+		
+			fire_only_once = yes
+		
+			option = {
+				name = SIW.14.a
+			}
+			}
+country_event = {
+			id = SIW.15
+			title = SIW.15.t
+			desc = SIW.15.d
+			#picture = GFX_Assassination
+		
+			is_triggered_only = yes
+		
+			fire_only_once = yes
+		
+			option = {
+				name = SIW.15.a
+				add_political_power = 100
+			}
+			}
+	country_event = {
+			id = SIW.16
+			title = SIW.16.t
+			desc = SIW.16.d
+			#picture = GFX_Assassination
+		
+			is_triggered_only = yes
+		
+			fire_only_once = yes
+		
+			option = {
+				name = SIW.16.a
+				add_political_power = 100
+			}
+			}
+    country_event = {
+			id = SIW.17
+			title = SIW.17.t
+			desc = SIW.17.d
+			#picture = GFX_Assassination
+		
+			is_triggered_only = yes
+		
+			fire_only_once = yes
+		
+			option = {
+				name = SIW.17.a
+				BNT={
+					transfer_state = 82
+					transfer_state = 764
+				}
+				annex_country = {
+					target = BNT
+					transfer_troops = yes
+				}
+			}
+			}
+	country_event = {
+			id = SIW.18
+			title = SIW.18.t
+			desc = SIW.18.d
+			#picture = GFX_Assassination
+		
+			is_triggered_only = yes
+		
+			fire_only_once = yes
+		
+			option = {
+				name = SIW.18.a
+			}
+			}
+	country_event = {
+			id = SIW.19
+			title = SIW.19.t
+			desc = SIW.19.d
+			#picture = GFX_Assassination
+		
+			is_triggered_only = yes
+		
+			fire_only_once = yes
+		
+			option = {
+				name = SIW.19.a
+			}
+			}
+	country_event = {
+			id = SIW.20
+			title = SIW.20.t
+			desc = SIW.20.d
+			#picture = GFX_Assassination
+		
+			is_triggered_only = yes
+		
+			fire_only_once = yes
+		
+			option = {
+				name = SIW.20.a
+			}
+			}
+	country_event = {
+			id = SIW.21
+			title = SIW.21.t
+			desc = SIW.21.d
+			#picture = GFX_Assassination
+		
+			is_triggered_only = yes
+		
+			fire_only_once = yes
+		
+			option = {
+				name = SIW.21.a
+				
+			}
+			
+			}
+	country_event = {
+			id = SIW.22
+			title = SIW.22.t
+			desc = SIW.22.d
+			#picture = GFX_Assassination
+		
+			is_triggered_only = yes
+		
+			fire_only_once = yes
+		
+			option = {
+				name = SIW.22.a
+				add_political_power = -120
+			}
+			option = {
+				name = SIW.22.b
+				SIW={country_event = {id=SIW.23}}
+			}
+			}
+	country_event = {
+			id = SIW.23
+			title = SIW.23.t
+			desc = SIW.23.d
+			#picture = GFX_Assassination
+		
+			is_triggered_only = yes
+		
+			fire_only_once = yes
+		
+			option = {
+				name = SIW.23.a
+			}
+			}
+	country_event = {
+			id = SIW.24
+			title = SIW.24.t
+			desc = SIW.24.d
+			#picture = GFX_Assassination
+		
+			is_triggered_only = yes
+		
+			fire_only_once = yes
+		
+			option = {
+				name = SIW.24.a
+                add_political_power = -50
+			}
+			option = {
+				name = SIW.24.b
+				retire_character = SIW_NikolaPasic
+				add_ideas = SIW_Ljubomir_Davidovic_H
+			}
+			}
+	country_event = {
+			id = SIW.25
+			title = SIW.25.t
+			desc = SIW.25.d
+			#picture = GFX_Assassination
+		
+			is_triggered_only = yes
+		
+			fire_only_once = yes
+		
+			option = {
+				name = SIW.25.a
+			}
+			}		
+	country_event = {
+			id = SIW.26
+			title = SIW.26.t
+			desc = SIW.26.d
+			#picture = GFX_Assassination
+		
+			is_triggered_only = yes
+		
+			fire_only_once = yes
+		
+			option = {
+				name = SIW.26.a
+                add_political_power = -50
+			}
+			}					

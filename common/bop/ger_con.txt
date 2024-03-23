@@ -1,0 +1,51 @@
+
+ger_con_balance = {
+	initial_value = 0.0
+	left_side = ger_aus_side
+	right_side = ger_pre_side
+	decision_category = ger_con_bop
+	range = {
+		id = gercon_mid_range
+		min = -0.2
+		max = 0.2
+		modifier = {
+		}
+	}
+	side = {
+		id = ger_aus_side
+		icon = GFX_aus_side
+		range = {
+			id = aus_strong_range
+			min = -1
+			max = -0.6
+			modifier = {
+			}
+		}
+		range = {
+			id = aus_side_range
+			min = -0.6
+			max = -0.2
+			modifier = {
+			}
+		}
+	}
+	side = {
+		id = ger_pre_side
+		icon = GFX_pre_side
+		range = {
+			id = pre_side_range
+			min = 0.2
+			max = 0.6
+			modifier = {
+			}
+		}
+		range = {
+			id = pre_strong_range
+			min = 0.6
+			max = 1
+			modifier = {
+			}
+		}
+	}
+}
+

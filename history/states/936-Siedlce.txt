@@ -1,0 +1,26 @@
+state={
+	id=936
+	name="STATE_936"
+	manpower = 1589000
+
+	state_category = city
+
+	history={
+		owner = SHW
+		add_core_of = PBL
+		victory_points = {
+			402 1
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+		}
+	}
+
+	provinces={
+		402 467 6511 12562 
+	}
+
+	local_supplies=5.0 
+}

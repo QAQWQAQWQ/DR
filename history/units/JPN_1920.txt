@@ -1,0 +1,210 @@
+﻿division_template = {
+	name = "独立混成旅团"				
+	regiments = {
+		infantry = { x = 0 y = 0 }	
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "丁种师团"			
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "丙种师团"			
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "乙种师团"			
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+	}
+	priority = 1
+	support = {
+	artillery = { x = 0 y = 0 }
+}
+}
+division_template = {
+	name = "甲种师团"			
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+	}
+	priority = 1
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+	}
+}
+units = {
+	division = {
+		name = "甲种师团"
+		location = 1182
+		division_template = "甲种师团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		name = "丁种师团"
+		location = 1182
+		division_template = "丁种师团"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "甲种师团"
+		location = 11960
+		division_template = "甲种师团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		name = "乙种师团"
+		location = 11960
+		division_template = "乙种师团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		name = "甲种师团"
+		location = 1025
+		division_template = "甲种师团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		name = "乙种师团"
+		location = 1025
+		division_template = "乙种师团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		name = "甲种师团"
+		location = 10032
+		division_template = "甲种师团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		name = "甲种师团"
+		location = 10444
+		division_template = "甲种师团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		name = "甲种师团"
+		location = 6994
+		division_template = "甲种师团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		name = "丁种师团"
+		location = 6994
+		division_template = "丁种师团"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+
+	}
+	##台湾地区
+	division = {
+		name = "甲种师团"
+		location = 7186
+		division_template = "甲种师团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		name = "丁种师团"
+		location = 7186
+		division_template = "丁种师团"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "独立混成旅团"
+		location = 7186
+		division_template = "独立混成旅团"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.3
+
+	}
+	##朝鲜地区
+	division = {
+		name = "甲种师团"
+		location = 7125
+		division_template = "甲种师团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		name = "丁种师团"
+		location = 6928
+		division_template = "丁种师团"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "丁种师团"
+		location = 4052
+		division_template = "丁种师团"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "独立混成旅团"
+		location = 11977
+		division_template = "独立混成旅团"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.3
+
+	}
+}

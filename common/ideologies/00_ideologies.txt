@@ -1,0 +1,244 @@
+ideologies = {
+	
+	Revolutionism = {
+	
+		types = {
+			Authoritarianism_revolutionism={}
+			Nationalism_revolutionism={}
+			Socialism_revolutionism={}
+			Scientism_revolutionism={}
+			Leninism_revolutionism={}
+			Commissionism_revolutionism={}
+			Agrarianism_revolutionism={}
+			Revolutionary_populism={}
+		}
+		
+		dynamic_faction_names = {
+			
+		}
+		
+		color = { 226 0 9  }
+		
+		rules = {
+			can_create_collaboration_government =no
+			can_declare_war_on_same_ideology =yes
+			can_force_government=no
+			can_send_volunteers=yes
+			can_puppet=yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			
+		}
+		
+		faction_modifiers = {
+		
+		}
+	}
+	Reformism = {
+	
+		types = {
+			Social_Reformism={}
+			Democracy_Reformism={}
+			Fabian_Reformism={}
+			Trade_Reformism={}
+			Bernstein_Reformism={}
+		}
+		
+		dynamic_faction_names = {
+			
+		}
+		
+		color = { 178 82 107 }
+		
+		rules = {
+			can_create_collaboration_government =no
+			can_declare_war_on_same_ideology =yes
+			can_force_government=no
+			can_send_volunteers=yes
+			can_puppet=yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			
+		}
+		
+		faction_modifiers = {
+		
+		}
+	}
+	Conservatism = {
+	
+		types = {
+			Classicism_Conservatism={}
+			Authoritarianism_Conservatism={}
+			Religiousness_Conservatism={}
+			Nationalism_Conservatism={}
+			Conservative_populism={}
+		}
+		
+		dynamic_faction_names = {
+			
+		}
+		
+		color = { 101 85 86 }
+		
+		rules = {
+			can_create_collaboration_government =no
+			can_declare_war_on_same_ideology =yes
+			can_force_government=no
+			can_send_volunteers=yes
+			can_puppet=yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			
+		}
+		
+		faction_modifiers = {
+		
+		}
+	}
+	Liberalism = {
+	
+		types = {
+			Socialism_Liberalism={}
+			Classicism_Liberalism={}
+			Conservative_Liberalism={}
+			Progressivism_Liberalism={}
+		}
+		
+		dynamic_faction_names = {
+			
+		}
+		
+		color = { 0 107 190 }
+		
+		rules = {
+			can_create_collaboration_government =no
+			can_declare_war_on_same_ideology =yes
+			can_force_government=no
+			can_send_volunteers=yes
+			can_puppet=yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			
+		}
+		
+		faction_modifiers = {
+		
+		}
+	}
+	Reactionary = {
+	
+		types = {
+			DAnnunziaism_Reactionary={}
+			Populism_Reactionary={}
+			Syndicalism_Reactionary={}
+			Militarism_Reactionary={}
+		}
+		
+		dynamic_faction_names = {
+			
+		}
+		
+		color = { 153 126 0 }
+		
+		rules = {
+			can_create_collaboration_government =no
+			can_declare_war_on_same_ideology =yes
+			can_force_government=no
+			can_send_volunteers=yes
+			can_puppet=yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			
+		}
+		
+		faction_modifiers = {
+		
+		}
+	}
+	Anarchism = {
+	
+		types = {
+			Syndicalism_Anarchism={}
+			Communist_Anarchism={}
+			Autonomismism_Anarchism={}
+		}
+		
+		dynamic_faction_names = {
+			
+		}
+		
+		color = { 91 12 15 }
+		
+		rules = {
+			can_create_collaboration_government =no
+			can_declare_war_on_same_ideology =yes
+			can_force_government=no
+			can_send_volunteers=yes
+			can_puppet=yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			
+		}
+		
+		faction_modifiers = {
+		
+		}
+	}
+	###
+	
+}

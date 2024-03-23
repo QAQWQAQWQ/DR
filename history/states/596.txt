@@ -1,0 +1,31 @@
+state={
+	id=596
+	name="会稽"
+	manpower = 8230700
+	state_category = city
+	resources={
+		grain=11
+	}
+	history={
+		owner = ZHX
+		add_core_of = ZHX
+		add_core_of = DUQ
+		victory_points = { 9974 5 }
+        victory_points = { 1096 3 }
+		buildings = {
+			infrastructure = 2
+			grain_farms = 1
+
+			9974 = {
+				naval_base = 3
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+	}
+	provinces={
+		1096 1168 4013 7058 7146 9974 10058 
+	}
+
+	local_supplies=0.0 
+}

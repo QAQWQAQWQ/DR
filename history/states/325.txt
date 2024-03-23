@@ -1,0 +1,31 @@
+state={
+	id=325
+	name="滇中"
+	resources={
+		tungsten=2.000
+	}
+	resources={
+		grain=13
+	}
+	history={
+		owner = CEX
+		add_core_of = CEX
+		victory_points = {
+			1319 10 
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 3
+		}
+	}
+
+	provinces={
+		1319 7446 7606 4192 5072 12841 11972
+	}
+	manpower=10994500
+	buildings_max_level_factor=1.000
+	state_category=large_town
+
+	local_supplies=3.0 
+}

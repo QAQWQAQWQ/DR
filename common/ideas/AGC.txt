@@ -1,0 +1,12 @@
+ideas = {
+        country = {
+			AGC_Revolutionary_Front_Lorraine = {
+				picture = Revolutionary_Front_Lorraine
+				modifier = {
+					stability_weekly = -0.05
+					line_change_production_efficiency_factor = -0.1
+					resistance_activity = 0.5
+		}
+}
+}
+}

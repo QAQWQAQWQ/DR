@@ -1,0 +1,11 @@
+ideas = {
+    country = {
+        AGN_german_association_national_revival = {
+            picture = german_association_national_revival
+            modifier = {
+                stability_factor = 0.15
+                political_power_cost = 0.5
+            }
+        }
+    }
+}

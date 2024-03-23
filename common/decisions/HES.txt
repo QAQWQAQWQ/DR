@@ -1,0 +1,71 @@
+Arms_procurement = {
+
+
+	Purchase_infantry_weapons = {
+	icon =  generic_civil_support
+	
+	available = {
+	}
+	days_remove = 10
+	cost = 25
+	fixed_random_seed = no
+	fire_only_once = no
+        ai_will_do = {
+		factor = 1
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 }
+		}
+	}
+	Purchase_artillery = {
+		icon =  generic_civil_support
+		
+		available = {
+		}
+		days_remove = 10
+		cost = 50
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 50 }
+			}
+		}
+	Purchase_armored_vehicles = {
+		icon =  generic_civil_support
+		
+		available = {
+		}
+		days_remove = 10
+		cost = 50
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+				add_equipment_to_stockpile = { type = light_tank_chassis amount = 30 }
+			}
+		}
+	Purchase_aircraft = {
+		icon =  generic_civil_support
+		
+		available = {
+		}
+		days_remove = 10
+		cost = 100
+		fixed_random_seed = no
+		fire_only_once = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_0
+					amount = 10
+				}
+			}
+		}
+}

@@ -1,0 +1,215 @@
+gercon_clamp_vars = {
+	hidden_effect = {
+		var:gercon_nat = {
+			clamp_variable = {
+				var = aus_support
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = pre_support
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = ger_support
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = ger_power_balance_value_var
+				min = 0
+				max = 200
+			}
+		}
+	}
+}
+gercon_upd_pbv_var = {
+	hidden_effect = {
+    set_variable = {
+        AGC.aus_support = 20
+    }
+    set_variable = {
+        AGC.pre_support = 20
+    }
+    every_country = {
+        limit = {
+            OR = {
+                tag = LSB
+                tag = DHD
+                tag = DON
+                tag = DOF
+                tag = DOB
+                tag = DOR
+                tag = BXM
+                tag = DOL
+                tag = DOH
+                tag = DOA
+                tag = DOM
+                tag = DOS
+            }
+        }
+		if = {
+			limit = {
+           		check_variable = { aus_support > pre_support }
+			}
+			add_to_variable = {
+				var = AGC.aus_support
+				value = 5
+			}
+		}
+		if = {
+			limit = {
+           		check_variable = { aus_support < pre_support }
+			}
+			add_to_variable = {
+				var = AGC.pre_support
+				value = 5
+			}
+		}
+    }
+	if = {
+		limit = {
+       		check_variable = { DOR.aus_support > DOR.pre_support }	
+    	}
+	    add_to_variable = {
+			var = AGC.aus_support
+			value = 10
+		}
+	}
+	if = {
+		limit = {
+      		check_variable = { DOR.aus_support < DOR.pre_support }
+		}
+		add_to_variable = {
+			var = AGC.pre_support
+			value = 10
+		}
+	}
+	if = {
+		limit = {
+       		check_variable = { DOH.aus_support > DOH.pre_support }	
+    	}
+	    add_to_variable = {
+			var = AGC.aus_support
+			value = 5
+		}
+	}
+	if = {
+		limit = {
+      		check_variable = { DOH.aus_support < DOH.pre_support }
+		}
+		add_to_variable = {
+			var = AGC.pre_support
+			value = 5
+		}
+	}
+	if = {
+		limit = {
+       		check_variable = { DOS.aus_support > DOS.pre_support }	
+    	}
+	    add_to_variable = {
+			var = AGC.aus_support
+			value = 5
+		}
+	}
+	if = {
+		limit = {
+      		check_variable = { DOS.aus_support < DOS.pre_support }
+		}
+		add_to_variable = {
+			var = AGC.pre_support
+			value = 5
+		}
+	}
+	set_variable = {
+		ger_power_balance_value_var = 100
+	}
+	var:gercon_nat = {
+        clamp_variable = {
+            var = aus_support
+            min = 0
+            max = 100
+        }
+        clamp_variable = {
+            var = pre_support
+            min = 0
+            max = 100
+        }
+		add_to_variable = {
+			var = ROOT.ger_power_balance_value_var 
+			value = aus_support
+		}
+		subtract_from_variable = {
+			var = ROOT.ger_power_balance_value_var 
+			value = pre_support
+		}
+	}
+	}
+}
+ger_con_aus_controlled = {
+    set_variable = {
+        var = ger_con_cangetsupport
+        value = 0
+    }
+	set_variable = {
+		var = aus_support
+		value = 100
+	}
+	set_variable = {
+		var = pre_support
+		value = 0
+	}
+	custom_effect_tooltip = gercon_aus_controll
+}
+ger_con_pre_controlled = {
+    set_variable = {
+        var = ger_con_cangetsupport
+        value = 0
+    }
+	set_variable = {
+		var = aus_support
+		value = 0
+	}
+	set_variable = {
+		var = pre_support
+		value = 100
+	}
+	custom_effect_tooltip = gercon_pre_controll
+}
+gercon_add_ger_sup = {
+    add_to_variable = { var = ger_support value = ger_con_det }  
+	custom_effect_tooltip = gercon_add_ger_sup_eff
+}
+gercon_add_aus_sup = {
+	if = {
+        limit = { check_variable = { ger_con_cangetsupport = 1 } }
+    	add_to_variable = { var = aus_support value = ger_con_det }  
+		custom_effect_tooltip = gercon_add_aus_sup_eff
+	}
+}
+gercon_add_pre_sup = {
+	if = {
+        limit = { check_variable = { ger_con_cangetsupport = 1 } }
+		add_to_variable = { var = pre_support value = ger_con_det }  
+		custom_effect_tooltip = gercon_add_pre_sup_eff
+	}
+}
+gercon_del_ger_sup = {
+    add_to_variable = { var = ger_support value = ger_con_det }  
+	custom_effect_tooltip = gercon_del_ger_sup_eff
+}
+gercon_del_aus_sup = {
+	if = {
+        limit = { check_variable = { ger_con_cangetsupport = 1 } }
+		add_to_variable = { var = aus_support value = ger_con_det }  
+		custom_effect_tooltip = gercon_del_aus_sup_eff
+	}
+}
+gercon_del_pre_sup = {
+	if = {
+        limit = { check_variable = { ger_con_cangetsupport = 1 } }
+		add_to_variable = { var = pre_support value = ger_con_det }  
+		custom_effect_tooltip = gercon_del_pre_sup_eff
+	}
+}

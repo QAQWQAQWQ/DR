@@ -1,0 +1,23 @@
+﻿###########################
+# AOX Events
+###########################
+add_namespace = CMA
+news_event = {
+	id = CMA.1
+	title = CMA.1.t
+	desc = CMA.1.d
+	#picture = GFX_Spanish_Flu
+
+	major = yes
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = CMA.1.a
+		CMA={
+			transfer_state = 137
+			add_state_core = 137
+	    }
+}
+}

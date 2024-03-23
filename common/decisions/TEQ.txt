@@ -1,0 +1,64 @@
+Scramble_for_the_Suez_Canal = {
+	Dispatch_the_Sinai_militia = {
+	icon = generic_ignite_civil_war
+	visible = {
+	}
+	available = {
+		check_variable = {
+			var = Ottoman_influence
+			value = 50
+			compare = less_than
+		}
+	}
+	days_re_enable = 30
+	days_remove = 60
+	cost = 25
+	allowed = {
+		tag = TEQ
+	}
+	complete_effect = { 
+		hidden_effect = {
+			set_temp_variable = { Ottoman_influence = Ottoman_influence }
+			add_to_variable = { Ottoman_influence = 5 }
+			add_to_variable = { Ottoman_influence = Ottoman_influence }
+		}
+		}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+	}
+	Increase_arms = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		available = {
+			check_variable = {
+				var = Ottoman_influence
+				value = 50
+				compare = less_than
+			}
+		}
+		days_re_enable = 30
+		days_remove = 60
+		cost = 25
+		allowed = {
+			tag = TEQ
+		}
+		complete_effect = { 
+			hidden_effect = {
+				set_temp_variable = { Ottoman_influence = Ottoman_influence }
+				add_to_variable = { Ottoman_influence = 5 }
+				add_to_variable = { Ottoman_influence = Ottoman_influence }
+			}
+			}
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		}
+}

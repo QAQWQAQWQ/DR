@@ -1,0 +1,94 @@
+FRW_election_movement = {
+	icon = infiltration
+	
+	picture = GFX_decisions_election_movement
+
+	priority = 9
+	allowed = {
+		tag = FRW
+	}
+	visible = {
+		has_country_flag = FRW.35_flag
+	}
+	scripted_gui = FRW_movement_election
+
+
+}     
+
+
+FRW_Anti_imperialism= {
+	icon = infiltration
+	
+	picture = GFX_decision_Export_the_revolution
+
+	priority = 9
+	allowed = {
+		tag = FRW
+	}
+	visible = {
+		has_completed_focus = FRW_focus43
+	}
+
+}     
+
+
+ 
+
+FRW_Destructive_movement = {
+	icon = infiltration
+	
+	picture = GFX_decisions_Destructive_movement
+
+	priority = 9
+	allowed = {
+		tag = FRW
+	}
+	visible = {
+		has_completed_focus = FRW_Work_with_anarchists	
+	}
+}
+FRW_Export_the_revolution = {
+	icon = generic_prospect_for_resources
+	
+	picture = GFX_decision_Export_the_revolution
+
+	priority = 7
+	allowed = {
+		tag = FRW
+	}
+	visible = {
+		#has_completed_focus = FRW_focus98
+	}
+}
+           
+FRW_army_revolution = {
+	icon = generic_prospect_for_resources      
+	
+	picture = GFX_decision_FRW_army_revolution
+
+	scripted_gui=FRW_ARMY_ui
+
+	priority = 4
+	allowed = {
+		tag = FRW
+	}
+	visible = {
+		has_completed_focus = FRW_focus22
+	}
+}  
+             
+FRW_Maginot_Line_plan = {
+	icon = generic_prospect_for_resources      
+	
+	picture = GFX_decision_Maginot_Line_plan 
+
+	scripted_gui=FRW_Maginot_Line
+
+	priority = 4
+	allowed = {                  
+		tag = FRW
+	}
+	visible = {
+		has_completed_focus = FRW_focus31
+	}
+}

@@ -1,0 +1,12 @@
+ideas = {
+    country = {
+		SUC_Warlords_hilltops = {
+			picture = Warlords_hilltops
+			modifier = {
+				army_attack_factor = -0.05
+				army_speed_factor = -0.05
+				army_morale_factor = -0.05
+			}
+        }
+		}
+}

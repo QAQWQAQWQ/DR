@@ -1,0 +1,109 @@
+ideas = {
+    country = {
+		sun_Empire = {
+			picture = sun_Empire
+			modifier = {
+				offensive_war_stability_factor=0.15
+				defensive_war_stability_factor=0.15
+				war_support_weekly=0.1
+				non_core_manpower = 0.15
+			}
+        }
+		England = {
+			picture = England
+			modifier = {
+				stability_weekly = 0.01
+				army_core_defence_factor = 0.1
+			}
+        }
+		The_shield_of_ideology = {
+			picture = The_shield_of_ideology
+			modifier = {
+				drift_defence_factor = 0.15
+			}
+        }
+		Poverty_Eradication_Program = {
+			picture = Poverty_Eradication_Program
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+        }
+		
+		UK_Investment = {
+			picture = UK_Investment
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+        }
+        Ireland_uproar = {
+			picture = Ireland_uproar
+			modifier = {
+				custom_modifier_tooltip = Ireland_uproar_monthly
+			}
+        }
+		Decolonization = {
+			picture = Decolonization
+			modifier = { 
+				autonomy_gain = 0.1
+				enemy_declare_war_tension = 0.2
+			}
+        }
+		British_Education = {
+			picture = British_Education
+			modifier = { 
+				overlord_trade_cost_factor = -0.1
+				master_ideology_drift = 0.03
+				autonomy_gain = -0.1
+
+			}
+        }
+		Colonial_ties = {
+			picture = Colonial_ties
+			modifier = { 
+				autonomy_manpower_share = 0.1
+				extra_trade_to_target_factor = 0.25
+			}
+        }
+
+		London_stock_market_crash = {
+			picture = London_stock_market_crash
+			modifier = {
+				industrial_capacity_factory = -0.35
+				production_speed_buildings_factor = -0.35
+				production_factory_max_efficiency_factor = -0.25
+				industrial_capacity_factory = -0.35
+				production_factory_efficiency_gain_factor = -0.25
+			}
+        }
+		London_stock_market_crash_1 = {
+			picture = London_stock_market_crash
+			modifier = {
+				industrial_capacity_factory = -0.25
+				production_speed_buildings_factor = -0.25
+				production_factory_max_efficiency_factor = -0.15
+				industrial_capacity_factory = -0.25
+				production_factory_efficiency_gain_factor = -0.15
+			}
+        }
+		London_stock_market_crash_2 = {
+			picture = London_stock_market_crash
+			modifier = {
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.15
+				production_factory_max_efficiency_factor = -0.05
+				industrial_capacity_factory = -0.15
+				production_factory_efficiency_gain_factor = -0.05
+			}
+        }
+		London_stock_market_crash_3 = {
+			picture = London_stock_market_crash
+			modifier = {
+				industrial_capacity_factory = -0.30
+				production_speed_buildings_factor = -0.30
+				production_factory_max_efficiency_factor = -0.25
+				industrial_capacity_factory = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+			}
+        }
+		}
+}

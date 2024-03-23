@@ -1,0 +1,117 @@
+﻿capital = 64
+
+oob = "WWS_1920"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	fuel_silos = 1
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		transport = 1
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		coastal_defense_ships = 1
+		mtg_transport = 1
+
+}
+
+recruit_character = WWS_WilliamII
+recruit_character = WWS_Falkenhayn
+recruit_character = WWS_Max_Hoffmann
+recruit_character = WWS_Gregor_Strasser
+recruit_character = WWS_August_von_Mackensen
+recruit_character = WWS_Hindenburg
+recruit_character = WWS_Feng_Almin
+recruit_character = WWS_Alexander_Feng_Crook
+recruit_character = WWS_Wilhelm_von_PreuBen
+recruit_character = WWS_Ludwig_von_Moltke
+recruit_character = WWS_von_Below
+recruit_character = WWS_von_Bottmer
+recruit_character = WWS_Hermann_von_Eichhorn
+recruit_character = WWS_von_AlbertHart
+recruit_character = WWS_Ludendorff
+recruit_character = WWS_Albert_Grzesinski
+recruit_character = WWS_Wolfgang_Kapp
+recruit_character = WWS_eduard_bernstein
+recruit_character = WWS_Gustav_Stresemann
+recruit_character = WWS_Wilhelm_Carl_Josef_Cuno
+recruit_character = WWS_Andreas_Hermes
+recruit_character = WWS_Ebert
+
+
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+
+		#electronics
+		
+		
+		
+		
+		
+
+		#industry
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+country_event = {id=WWS.7 days=110 }
+set_politics = {
+	ruling_party = Conservatism
+	last_election = "1918.11.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+add_ideas = {
+	
+#law
+    Market_economy
+	Freedom_belief
+	Traditional_conservatism
+	No_labor_laws
+	Media_control
+	Underlying_investment
+	low_industrialization
+	Local_police
+
+Deutscher_Bund
+Deutscher_Zollverein
+}
+set_popularities = {
+	Liberalism = 15
+	Conservatism = 65
+                Reformism=20
+}

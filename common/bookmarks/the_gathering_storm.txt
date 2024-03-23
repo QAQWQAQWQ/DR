@@ -1,0 +1,171 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1920.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "FRW"
+		default = yes
+		
+"FRW"={
+	history = "FRW_GATHERING_STORM_DESC"
+	ideology = Reformism
+	ideas = {
+		FRW_Chaotic_socialism
+		FRW_Inefficient_industry
+		FRW_Dissidents_army
+	}
+	focuses = {
+		FRW_focus1
+		FRW_focus2
+		FRW_focus3
+		FRW_focus4
+		FRW_focus5
+		FRW_focus6
+	}
+		}
+"ENL"={
+	history = "ENL_GATHERING_STORM_DESC"
+	
+	ideology = Liberalism
+	ideas = {
+		sun_Empire
+England
+Colonial_ties
+	}
+	focuses = {
+		
+	}
+}
+"WWS"={
+	history = "WWS_GATHERING_STORM_DESC"
+	
+	ideology = Conservatism
+	ideas = {
+WWS_The_victor
+WWS_Songun_Policy
+WWS_Labor_pioneer
+	}
+	focuses = {
+	}
+}
+"JPN"={
+	history = "ITE_GATHERING_STORM_DESC"
+	
+	ideology = Conservatism
+	ideas = {
+	}
+	focuses = {
+	}
+}
+"AOX"={
+	history = "AOX_GATHERING_STORM_DESC"
+	
+	ideology = Conservatism
+	ideas = {
+AOX_Hungarian_independence_movement
+Deutscher_Bund
+Deutscher_Zollverein
+	}
+	focuses = {
+	}
+}
+"SHW"={
+	history = "SHW_GATHERING_STORM_DESC"
+	
+	ideology = Conservatism
+	ideas = {
+SHW_Corrupt_army
+SHW_Stolypin_legacy
+SHW_Backward_railways
+	}
+	focuses = {
+SHW_In_name_Slavism
+SHW_Lick_wound
+SHW_Hunt_down_reactionaries
+SHW_Support_aristocratic_parties
+SHW_Moderates_Duma
+SHW_Diverse_Russia
+	}
+
+}
+"SBY"={
+	history = "SBY_GATHERING_STORM_DESC"
+	
+	ideology = Conservatism
+	ideas = {
+	}
+	focuses = {
+	}
+}
+"TEQ"={
+	history = "TEQ_GATHERING_STORM_DESC"
+	
+	ideology = Conservatism
+	ideas = {
+	}
+	focuses = {
+	}
+}
+
+
+
+
+"BXM"={
+	history = "JPN_GATHERING_STORM_DESC"
+	minor = yes
+	ideology = Conservatism
+}
+
+
+"BRA"={
+	history = "NPL_GATHERING_STORM_DESC"
+	minor = yes
+	ideology = Conservatism
+	
+}
+"NPL"={
+	history = "NPL_GATHERING_STORM_DESC"
+	minor = yes
+	ideology = Conservatism
+	
+}
+
+"DOR"={
+	history = "DOR_GATHERING_STORM_DESC"
+	minor = yes
+	ideology = Conservatism
+	
+}
+"DMW"={
+	history = "NPL_GATHERING_STORM_DESC"
+	minor = yes
+	ideology = Conservatism
+	
+}
+"NUW"={
+	history = "NPL_GATHERING_STORM_DESC"
+	minor = yes
+	ideology = Conservatism
+	
+}
+"RUD"={
+	history = "NPL_GATHERING_STORM_DESC"
+	minor = yes
+	ideology = Conservatism
+	
+}
+"YEL"={
+	history = "NPL_GATHERING_STORM_DESC"
+	minor = yes
+	ideology = Conservatism
+	
+}
+effect = {
+	randomize_weather = 22345 # <- Obligatory in every bookmark !
+	#123 = { rain_light = yes }
+}
+}
+}
+
+

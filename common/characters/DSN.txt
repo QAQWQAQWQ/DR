@@ -1,0 +1,17 @@
+characters={
+	DSN_Lothar_von_Trotha={
+		name=DSN_Lothar_von_Trotha
+		portraits={
+			civilian={
+				large="gfx/leaders/DSN/Portrait_Lothar_von_Trotha.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+                                                desc=DSN_Lothar_von_Trotha_DESC
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

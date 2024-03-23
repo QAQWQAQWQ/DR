@@ -1,0 +1,356 @@
+
+	aus_hun_more_hun_sup = {
+		ai_will_do = {
+		  factor = 100
+		}
+		visible = {
+			OR = {
+				original_tag = AOX
+			}
+			check_variable = { AOX.aus_hun_nat = 1 }
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+		}
+		cost = 0
+		fire_only_once = no
+		days_remove = 40
+		complete_effect = {
+			get_more_aus_hun_sup_5 = yes
+		}
+		remove_effect = {
+		}
+	}
+	aus_hun_more_ukr_sup = {
+		ai_will_do = {
+		  factor = 100
+		}
+		visible = {
+			OR = {
+				original_tag = AOX
+			}
+			check_variable = { AOX.aus_hun_nat = 2 }
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+		}
+		cost = 0
+		fire_only_once = no
+		days_remove = 40
+		complete_effect = {
+			get_more_aus_hun_sup_5 = yes
+		}
+		remove_effect = {
+		}
+	}
+	aus_hun_more_cze_sup = {
+		ai_will_do = {
+		  factor = 100
+		}
+		visible = {
+			OR = {
+				original_tag = AOX
+			}
+			check_variable = { AOX.aus_hun_nat = 3 }
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+		}
+		cost = 0
+		fire_only_once = no
+		days_remove = 40
+		complete_effect = {
+			get_more_aus_hun_sup_5 = yes
+		}
+		remove_effect = {
+		}
+	}
+	aus_hun_more_pol_sup = {
+		ai_will_do = {
+		  factor = 100
+		}
+		visible = {
+			OR = {
+				original_tag = AOX
+			}
+			check_variable = { AOX.aus_hun_nat = 4 }
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+		}
+		cost = 0
+		fire_only_once = no
+		days_remove = 40
+		complete_effect = {
+			get_more_aus_hun_sup_5 = yes
+		}
+		remove_effect = {
+		}
+	}
+	aus_hun_more_slo_sup = {
+		ai_will_do = {
+		  factor = 100
+		}
+		visible = {
+			OR = {
+				original_tag = AOX
+			}
+			check_variable = { AOX.aus_hun_nat = 5 }
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+		}
+		cost = 0
+		fire_only_once = no
+		days_remove = 40
+		complete_effect = {
+			get_more_aus_hun_sup_5 = yes
+		}
+		remove_effect = {
+		}
+	}
+	aus_hun_more_rom_sup = {
+		ai_will_do = {
+		  factor = 100
+		}
+		visible = {
+			OR = {
+				original_tag = AOX
+			}
+			check_variable = { AOX.aus_hun_nat = 6 }
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+		}
+		cost = 0
+		fire_only_once = no
+		days_remove = 40
+		complete_effect = {
+			get_more_aus_hun_sup_5 = yes
+		}
+		remove_effect = {
+		}
+	}
+	aus_hun_more_ita_sup = {
+		ai_will_do = {
+		  factor = 100
+		}
+		visible = {
+			OR = {
+				original_tag = AOX
+			}
+			check_variable = { AOX.aus_hun_nat = 7 }
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+		}
+		cost = 0
+		fire_only_once = no
+		days_remove = 40
+		complete_effect = {
+			get_more_aus_hun_sup_5 = yes
+		}
+		remove_effect = {
+		}
+	}
+	aus_hun_more_cro_sup = {
+		ai_will_do = {
+		  factor = 100
+		}
+		visible = {
+			OR = {
+				original_tag = AOX
+			}
+			check_variable = { AOX.aus_hun_nat = 8 }
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+		}
+		cost = 0
+		fire_only_once = no
+		days_remove = 40
+		complete_effect = {
+			get_more_aus_hun_sup_5 = yes
+		}
+		remove_effect = {
+		}
+	}
+	aus_hun_more_slv_sup = {
+		ai_will_do = {
+		  factor = 100
+		}
+		visible = {
+			OR = {
+				original_tag = AOX
+			}
+			check_variable = { AOX.aus_hun_nat = 9 }
+		}		
+		available = {
+			OR = {
+				original_tag = AOX
+			}
+		}
+		cost = 0
+		fire_only_once = no
+		days_remove = 40
+		complete_effect = {
+			get_more_aus_hun_sup_5 = yes
+		}
+		remove_effect = {
+		}
+	}
+
+  will_aus_controll = {
+		icon = generic_civil_support
+
+		available = {
+      OR = {
+        check_variable = { ger_con_cangetsupport = 0 }
+        OR = {
+          check_variable = { ROOT.aus_support < 90 }
+          custom_effect_tooltip = will_aus_controll_qwq_1
+          check_variable = { ROOT.pre_support > 70 }
+          custom_effect_tooltip = will_aus_controll_qwq_2
+        }
+      }
+		}
+
+		days_mission_timeout = 50
+
+		activation = {
+      AND = {
+        check_variable = { ROOT.ger_con_cangetsupport = 1 }
+        check_variable = { ROOT.aus_support > 90 }
+        check_variable = { ROOT.pre_support < 70 }
+        OR = {
+          original_tag = AGC
+          original_tag = LSB
+          original_tag = DHD
+          original_tag = DON
+          original_tag = DOF
+          original_tag = DOB
+          original_tag = DOR
+          original_tag = BXM
+          original_tag = DOL
+          original_tag = DOH
+          original_tag = DOA
+          original_tag = DOM
+          original_tag = DOS
+        }
+      }
+		}
+
+		visible = {
+      AND = {
+        check_variable = { ROOT.ger_con_cangetsupport = 1 }
+        check_variable = { ROOT.aus_support > 90 }
+        check_variable = { ROOT.pre_support < 70 }
+        OR = {
+          original_tag = AGC
+          original_tag = LSB
+          original_tag = DHD
+          original_tag = DON
+          original_tag = DOF
+          original_tag = DOB
+          original_tag = DOR
+          original_tag = BXM
+          original_tag = DOL
+          original_tag = DOH
+          original_tag = DOA
+          original_tag = DOM
+          original_tag = DOS
+        }
+      }
+		}		
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+		timeout_effect = {
+      ger_con_aus_controlled = true
+		}
+	}
+  will_pre_controll = {
+		icon = generic_civil_support
+
+		available = {
+      OR = {
+        check_variable = { ger_con_cangetsupport = 0 }
+        OR = {
+          check_variable = { ROOT.pre_support < 90 }
+          custom_effect_tooltip = will_pre_controll_qwq_1
+          check_variable = { ROOT.aus_support > 70 }
+          custom_effect_tooltip = will_pre_controll_qwq_2
+        }
+      }
+		}
+
+		days_mission_timeout = 50
+
+		activation = {
+      AND = {
+        check_variable = { ROOT.ger_con_cangetsupport = 1 }
+        check_variable = { ROOT.pre_support > 90 }
+        check_variable = { ROOT.aus_support < 70 }
+        OR = {
+          original_tag = AGC
+          original_tag = LSB
+          original_tag = DHD
+          original_tag = DON
+          original_tag = DOF
+          original_tag = DOB
+          original_tag = DOR
+          original_tag = BXM
+          original_tag = DOL
+          original_tag = DOH
+          original_tag = DOA
+          original_tag = DOM
+          original_tag = DOS
+        }
+      }
+		}
+
+		visible = {
+      AND = {
+        check_variable = { ROOT.ger_con_cangetsupport = 1 }
+        check_variable = { ROOT.pre_support > 90 }
+        check_variable = { ROOT.aus_support < 70 }
+        OR = {
+          original_tag = AGC
+          original_tag = LSB
+          original_tag = DHD
+          original_tag = DON
+          original_tag = DOF
+          original_tag = DOB
+          original_tag = DOR
+          original_tag = BXM
+          original_tag = DOL
+          original_tag = DOH
+          original_tag = DOA
+          original_tag = DOM
+          original_tag = DOS
+        }
+      }
+		}		
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+		timeout_effect = {
+      ger_con_pre_controlled = true
+		}
+	}

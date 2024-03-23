@@ -1,0 +1,278 @@
+guiTypes = {
+	containerWindowType = {
+		name = "zhen_ying_window"
+		position = { x = 0 y = 0 }
+		size = { width = 0 height = 0 }
+		orientation = upper_left
+
+		gridboxtype = {
+			name = "jia_ru_zhen_ying_ti_shi"
+			position = { x = 0 y = 0 }
+			size = { width = 100% height = 100%% }
+			slotsize = { width = 0 height = 0 }
+		}
+	}
+	containerWindowType = {
+		name = "zhen_ying_ti_shi_win"
+		position = { x = -263 y = -157}
+		size = { width = 527 height = 400 }
+		orientation= center
+		moveable = yes
+		fade_time = 200
+		fade_type = linear
+		hide_sound = menu_close_window
+		click_to_front = yes
+
+		background = {
+			name = "Background"
+			spriteType ="GFX_diplo_action_invite_to_faction_bg"
+		}
+		instantTextboxType = {
+			name = "biao_ti"
+			position = { x = 115 y = 29 }
+			font = "hoi_24header"
+			text = "zhen_ying_ti_zhi_text"
+			maxWidth = 300
+			maxHeight = 20
+			format = center
+		}
+		instantTextboxType = {
+			name = "加入阵营"
+			position = { x = 135 y = 100 }
+			font = "hoi_24header"
+			text = "zhen_ying_ti_zhi_message"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "加入阵营描述"
+			position = { x = 60 y = 180 }
+			font = "hoi_24header"
+			text = "[jia_ru_faction_miao_shu]"
+			maxWidth = 400
+			maxHeight = 300
+			format = center
+		}
+		iconType = {
+			name = "加入国家旗帜"
+			quadTextureSprite ="GFX_zhen_ying_qi"
+			position = { x = 10 y = 80 }
+		}
+		iconType = {
+			name = "jia_ru_tag"
+			quadTextureSprite ="GFX_player_flag"
+			position = { x = 30 y = 93 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name = "加入阵营领袖旗帜"
+			quadTextureSprite ="GFX_zhen_ying_qi"
+			position = { x = 395 y = 80 }
+		}
+		iconType = {
+			name = "jia_ru_faction"
+			quadTextureSprite ="GFX_player_flag"
+			position = { x = 415 y = 93 }
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "que_ren"
+			position = { x = 210 y = -48 }
+			quadTextureSprite ="GFX_button_123x34"
+			buttonFont = "hoi_16mbs"
+			Orientation = "LOWER_LEFT"
+			buttonText = "确认"
+			clicksound = click_ok
+			shortcut = "RETURN"
+		}
+	}
+	containerWindowType = {
+		name = "zhen_ying_an_niu_other"
+		position = { x = 465 y = 535 }
+		size = { width = 200 height = 100 }
+		orientation = UPPER_LEFT
+		clipping = no
+		buttontype = {
+			name = "zhen_ying_an_niu_other_btn"
+			position = { x =-8 y = -415 }
+			spritetype = "GFX_ENG_zhen_ying"
+			orientation = UPPER_LEFT
+			clicksound = "click_close"
+			scale = 1
+			pdx_tooltip = "zhen_ying_ti_shi_tt"
+		}
+		instantTextboxType = {
+			name = "ideology"
+			position = { x = -202 y = -391 }
+			font = "hoi_16mbs"
+			text = [GetIdeologicalSubtype]
+			format = LEFT
+			maxWidth = 155
+			maxHeight = 20
+			pdx_tooltip = "ideology_sub_desc"
+		}
+	}
+	containerWindowType = {
+		name = "zhen_ying_an_niu"
+		position = { x = 475 y = 562 }
+		size = { width = 200 height = 100 }
+		orientation = UPPER_LEFT
+		clipping = no
+		buttontype = {
+			name = "zi_ji_da_kai"
+			position = { x = -215 y = -265 }
+			spritetype = "GFX_you_zhen_ying"
+			orientation = UPPER_LEFT
+			clicksound = "click_close"
+			scale = 0.6
+			pdx_tooltip = "zhen_ying_ti_shi_tt"
+		}
+		instantTextboxType = {
+			name = "ideology"
+			position = { x = -402 y = -178 }
+			font = "hoi_18mbs"
+			text = [GetIdeologicalSubtype]
+			format = center
+			maxWidth = 200
+			maxHeight = 20
+		}
+	}
+	containerWindowType = {
+		name = "zhen_ying_ye_mian"
+		position = { x = -200 y = -300 }
+		size = { width = 600 height = 730 }
+		orientation = center
+		clipping = no
+		moveable = yes
+		background = {
+			name = "阵营列表背景"
+			quadtexturesprite = "GFX_tiled_bg"
+		}
+		containerWindowType = {
+			name = "阵营列表"
+			position = { x = -267 y = -200 }
+			size = { width = 538 height = 530 }
+			orientation = center
+			clipping = yes
+			moveable = no
+			margin = {
+				top = 10
+				bottom= 10
+			}
+			verticalScrollbar = "right_vertical_slider"
+			background = {
+				name = "阵营背景"
+				quadtexturesprite = "GFX_tiled_window_1b_thin_border"
+			}
+			gridBoxType = {
+				name = "zhen_ying_chuang_kou"
+				position = { x = 10 y = 0 }
+				size = { width = 442 height = 100% }
+				slotsize = { width = 442 height = 1 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+		}
+		buttontype = {
+			name = "guan_bi_zhen_ying"
+			position = { x = -40 y = 14 }
+			spritetype = "GFX_closebutton_small"
+			orientation = UPPER_RIGHT
+			clicksound = "click_close"
+			shortcut = "ESCAPE"
+		}
+		iconType = {
+			name = "阵营名字底框"
+			quadTextureSprite ="GFX_zhen_ying_ming_zi"
+			position = { x = 202 y = 120 }
+		}
+		instantTextBoxType = {
+			name = "阵营名字"
+			text = "[?ROOT.grid_faction_leader.GetFactionName]"
+			font = "hoi_36header"
+			maxWidth = 200
+			format = center
+			position = { x = 202 y = 120 }
+		}
+		iconType = {
+			name = "ling_xiu_qi_zhi"
+			quadTextureSprite ="GFX_player_flag"
+			position = { x = 60 y = 45 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name = "阵营领袖旗帜"
+			quadTextureSprite ="GFX_zhen_ying_qi"
+			position = { x = 40 y = 31 }
+		}
+		iconType = {
+			name = "阵营图像底框"
+			quadTextureSprite ="GFX_zhen_ying_xiang_kuang"
+			position = { x = 235 y = 9 }
+		}
+		iconType = {
+			name = "zhen_ying_tu_xiang"
+			quadTextureSprite ="GFX_ENG_zhen_ying"
+			position = { x = 267 y = 31 }
+		}
+		instantTextBoxType = {
+			name = "阵营领导人"
+			orientation = UPPER_RIGHT
+			position = { x = -569 y = 120 }
+			text = "[?ROOT.grid_faction_leader.GetNameDef]"
+			font = "hoi_24header"
+			format = center
+			maxWidth = 140
+		}
+	}
+	containerWindowType = {
+		name = "faction_member_entry"
+		size = {
+			width = 500
+			height = 44
+		}
+		background = {
+			name = "entry_bg"
+			spriteType = "GFX_diplo_countrylist_entry"
+			clicksound = click_action
+		}
+		icontype = {
+			name = "member_flag"
+			quadTextureSprite = "GFX_flag_small2"
+			position = {
+				x = 9
+				y = 8
+			}
+			orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+		icontype = {
+			name = "member_flag_frame"
+			quadTextureSprite = "GFX_diplo_countrylist_flag_frame"
+			position = {
+				x = 5
+				y = 5
+			}
+			alwaystransparent = yes
+		}
+		icontype = {
+			name = "major_member_flag_frame"
+			quadTextureSprite = "GFX_major_country_flag_overlay"
+			position = {
+				x = 8
+				y = 8
+			}
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "member_name"
+			position = {x=56 y=6}
+			font = "hoi_16mbs"
+			text = "[?v.GetName]"
+			maxwidth = 110
+			maxheight = 40
+			fixedsize = yes
+		}
+	}
+}

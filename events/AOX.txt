@@ -1,0 +1,31 @@
+﻿###########################
+# AOX Events
+###########################
+
+add_namespace = AOX
+add_namespace = AOX_DIE
+
+news_event = {
+	id = AOX_DIE.1
+	title = AOX_DIE.1.t
+	desc = AOX_DIE.1.d
+	picture = GFX_aox_die
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = AOX_DIE.1.a
+		AOX={
+			leave_faction = yes
+			end_puppet = DMT
+		}
+		BNT={
+			transfer_state = 82
+			transfer_state = 764
+		}
+	
+		set_global_flag = AOX_DIE
+	}
+	}

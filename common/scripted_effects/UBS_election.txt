@@ -1,0 +1,18 @@
+UBS={
+set_variable = { var_name = DP_party }
+set_variable = { var_name = GOP_party }
+
+
+clamp_variable = {
+    var = ALL_DP_party
+    min = 0
+    max = 10000000000000000000
+}
+clamp_variable = {
+    var = ALL_GOP_party
+    min = 0
+    max = 10000000000000000000
+}
+set_variable = { var_name = ALL_DP_party }
+set_variable = { var_name = ALL_GOP_party }
+}

@@ -1,0 +1,173 @@
+characters={
+	NPL_Napoleon_IV={
+		name=NPL_Napoleon_IV
+		portraits={
+			civilian={
+				large="gfx/leaders/NPL/Portrait_Napoleon_IV.tga"
+			}
+		}
+		country_leader={
+			ideology=Classicism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	NPL_Petain={
+		name=NPL_Petain
+		portraits={
+			army={
+				large="gfx/leaders/NPL/Portrait_Petain.tga"
+				small="gfx/interface/ideas/Portrait_Petain.dds"
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	NPL_FuXi={
+		name=NPL_FuXi
+		portraits={
+			army={
+				large="gfx/leaders/NPL/Portrait_FuXi.tga"
+				small="gfx/interface/ideas/Portrait_FuXi.dds"
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=2
+		}
+}
+NPL_Maxime_Weygand={
+	name=NPL_Maxime_Weygand
+	portraits={
+		army={
+			large="gfx/leaders/NPL/Portrait_Maxime_Weygand.tga"
+			small="gfx/interface/ideas/Portrait_Maxime_Weygand.dds"
+		}
+	}
+	corps_commander={
+		traits={ skilled_staffer }
+		skill=2
+		attack_skill=2
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=2
+	}
+}
+NPL_Maurice_Gamelin={
+	name=NPL_Maurice_Gamelin
+	portraits={
+		army={
+			large="gfx/leaders/NPL/Portrait_Maurice_Gamelin.tga"
+			small="gfx/interface/ideas/Portrait_Maurice_Gamelin.dds"
+		}
+	}
+	corps_commander={
+		traits={ Lieutenant_general }
+		skill=2
+		attack_skill=2
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=2
+	}
+}
+
+
+NPL_Charles_Mangjan={
+	name=NPL_Charles_Mangjan
+	portraits={
+		army={
+			large="gfx/leaders/NPL/Portrait_Charles_Mangjan.tga"
+			small="gfx/interface/ideas/Portrait_Charles_Mangjan.dds"
+		}
+	}
+	corps_commander={
+		traits={ skilled_staffer }
+		skill=2
+		attack_skill=1
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=2
+	}
+}
+
+NPL_Charles_Mangjan={
+	name=NPL_Charles_Mangjan
+	portraits={
+		army={
+			large="gfx/leaders/NPL/Portrait_Maurice_Gamelin.tga"
+			small="gfx/interface/ideas/Portrait_Maurice_Gamelin.dds"
+		}
+	}
+	corps_commander={
+		traits={ skilled_staffer }
+		skill=2
+		attack_skill=1
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=2
+	}
+}
+
+NPL_Louis_d_Esperey={
+	name=NPL_Louis_d_Esperey
+	portraits={
+		army={
+			large="gfx/leaders/NPL/Portrait_Louis_d_Esperey.tga"
+			small="gfx/interface/ideas/Portrait_Louis_d_Esperey.dds"
+		}
+	}
+	corps_commander={
+		traits={ expert_delegator }
+		skill=2
+		attack_skill=2
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=2
+	}
+}	
+NPL_Robert_Georges_Nivelle={
+	name=NPL_Robert_Georges_Nivelle
+	portraits={
+		army={
+			large="gfx/leaders/NPL/Portrait_Robert_Georges_Nivelle.tga"
+			small="gfx/interface/ideas/Portrait_Robert_Georges_Nivelle.dds"
+		}
+	}
+	corps_commander={
+		traits={ expert_delegator }
+		skill=3
+		attack_skill=3
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}	
+NPL_Louis_Hubert_Gonzalve_Lyautey={
+	name=NPL_Louis_Hubert_Gonzalve_Lyautey
+	portraits={
+		army={
+			large="gfx/leaders/NPL/Portrait_Louis_Hubert_Gonzalve_Lyautey.tga"
+			small="gfx/interface/ideas/Portrait_Louis_Hubert_Gonzalve_Lyautey.dds"
+		}
+	}
+	field_marshal={
+		traits={  }
+		skill=2
+		attack_skill=2
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=2
+	}
+}	
+	}

@@ -1,0 +1,33 @@
+﻿###########################
+# KKE Events
+###########################
+
+add_namespace = KKE
+news_event = {
+	id = KKE.1
+	title = KKE.1.t
+	desc = KKE.1.d
+	#picture = 
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = KKE.1.a
+		hidden_effect = {
+			KKE= { 
+			transfer_state = 587
+			add_state_core = 587
+			transfer_state = 584
+			add_state_core = 584
+			transfer_state = 742
+			add_state_core = 742
+			transfer_state = 830
+			add_state_core = 830
+			transfer_state = 831
+			add_state_core = 831
+			transfer_state = 832
+			add_state_core = 832
+	    }
+		}
+	}
+	}
+	

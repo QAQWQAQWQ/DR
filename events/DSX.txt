@@ -1,0 +1,22 @@
+﻿###########################
+# DSX Events
+###########################
+
+add_namespace = DSX
+news_event = {
+	id = DSX.1
+	title = DSX.1.t
+	desc = DSX.1.d
+	picture = GFX_DSD_1
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = DSX.1.a
+			DSD= { 
+			transfer_state = 773
+			add_state_core = 773
+		}
+		DSD={declare_war_on = { target = DSX type = annex_everything }}
+	}
+	}
+	

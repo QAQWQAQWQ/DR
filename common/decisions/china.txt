@@ -1,0 +1,141 @@
+China_power_struggle = {
+	
+	power_struggle = {
+	icon =  generic_civil_support
+	
+	available = {
+		608 = {
+			is_controlled_by = ROOT
+		}
+		606 = {
+			 		is_controlled_by = ROOT
+			 	}
+			 	598 = {
+			 		is_controlled_by = ROOT
+			 	}
+			 	602 = {
+			 		is_controlled_by = ROOT
+			 	}
+			607 = {
+			 		is_controlled_by = ROOT
+			 	}
+				615 = {
+			 		is_controlled_by = ROOT
+				}
+				835 = {
+			 		is_controlled_by = ROOT
+			 	}
+				608 = {
+			 		is_controlled_by = ROOT
+		 	}
+			743 = {
+		 		is_controlled_by = ROOT
+			 	}
+				839 = {
+			 		is_controlled_by = ROOT
+			 	}
+			 	597 = {
+			 		is_controlled_by = ROOT
+			 	}
+			 	614 = {
+			 		is_controlled_by = ROOT
+			 	}
+				613 = {
+			 		is_controlled_by = ROOT
+			 	}
+	}
+	days_remove = 1
+	cost = 0
+	fixed_random_seed = no
+	fire_only_once = yes
+        ai_will_do = {
+		factor = 1
+		}
+		complete_effect = {
+			set_cosmetic_tag = CHINA_LEADER
+			hidden_effect = {
+				ROOT={
+					add_state_core = 283
+					add_state_core = 287
+					add_state_core = 322
+					add_state_core = 325 
+					add_state_core = 326 
+					add_state_core = 328 
+					add_state_core = 434 
+					add_state_core = 441 		
+					add_state_core = 524
+					add_state_core = 591
+					add_state_core = 592
+					add_state_core = 593
+					add_state_core = 594
+					add_state_core = 595
+					add_state_core = 596 
+					add_state_core = 597
+					add_state_core = 598 
+					add_state_core = 598
+					add_state_core = 599
+					add_state_core = 600 
+					add_state_core = 601 
+					add_state_core = 602
+					add_state_core = 603
+					add_state_core = 604
+					add_state_core = 605 
+					add_state_core = 606
+					add_state_core = 607 
+					add_state_core = 608
+					add_state_core = 609 
+					add_state_core = 610
+					add_state_core = 611 
+					add_state_core = 612		
+					add_state_core = 613 
+					add_state_core = 614 
+					add_state_core = 615 
+					add_state_core = 616
+					add_state_core = 617
+					add_state_core = 618
+					add_state_core = 619 
+					add_state_core = 620
+					add_state_core = 621 
+					add_state_core = 622
+					add_state_core = 640 
+					add_state_core = 714 
+					add_state_core = 715
+					add_state_core = 716 
+					add_state_core = 717 
+					add_state_core = 728 
+					add_state_core = 729 
+					add_state_core = 743
+					add_state_core = 744
+					add_state_core = 745
+					add_state_core = 746
+					add_state_core = 747 
+					add_state_core = 748 
+					add_state_core = 749
+					add_state_core = 750
+					add_state_core = 751
+					add_state_core = 752
+					add_state_core = 753
+					add_state_core = 754
+					add_state_core = 755
+					add_state_core = 756
+					add_state_core = 757 
+					add_state_core = 758 
+					add_state_core = 759
+					add_state_core = 760	
+					add_state_core = 610
+					add_state_core = 787
+					add_state_core = 835
+					add_state_core = 836
+					add_state_core = 837
+					add_state_core = 838 
+					add_state_core = 839
+					add_state_core = 840
+					add_state_core = 841
+					add_state_core = 842
+					add_state_core = 843
+			}
+			
+		}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+add_namespace = thule
+
+country_event = {
+	id = thule.1
+	title = thule.1.t
+	desc = thule.1.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = thule.1.a
+	}
+}

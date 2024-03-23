@@ -1,0 +1,90 @@
+﻿capital = 282
+
+oob = "JPN_1920"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	fuel_silos = 1
+}
+
+recruit_character = JPN_Emperor_Meiji
+recruit_character = JPN_Emperor_Taisho
+recruit_character = JPN_Honorable
+recruit_character = JPN_Seienji_Konobu
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+
+		#electronics
+		
+		
+		
+		
+		
+
+		#industry
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+set_politics = {
+	ruling_party = Conservatism
+	last_election = "1918.11.11"
+	election_frequency = 72
+	elections_allowed = no	
+}
+#create_faction = Empire_Japan
+##add_to_faction = RTW
+##add_to_faction = KON
+set_autonomy = { target = KON autonomy_state = autonomy_wtt_imperial_subject }
+KON={
+	set_popularities = {
+		Conservatism = 100
+	}
+}
+
+set_autonomy = { target = RTW autonomy_state = autonomy_wtt_imperial_subject }
+
+
+add_ideas={
+	JPN_Restoration
+	JPN_estrangement
+
+
+##MINISTERS##
+JPN_Honorable_H
+#law
+Basic_industrialization 
+Private_economy
+No_labor_laws
+Control_media
+Patriarchy_supreme
+Underlying_investment
+Autonomous_police
+Theocratic_state
+}
+set_popularities = {
+	Conservatism = 100
+}

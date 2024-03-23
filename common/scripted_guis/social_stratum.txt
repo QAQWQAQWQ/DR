@@ -1,0 +1,31 @@
+scripted_gui = {
+	scorched_grain_state = {
+		context_type = selected_state_context
+		window_name = "scorched_grain_state"
+		visible = {
+			always = yes
+			grain > 10
+			
+		}
+		
+		triggers = {
+			scorched_grain_state_button_visible = {
+                is_controlled_by = ROOT
+            }
+        }
+		effects = {
+			scorched_grain_state_button_click = { 
+			ROOT={
+				add_political_power = -10
+				add_to_variable = { resource_grain = 10 } #
+			}
+			add_state_modifier = {
+				modifier = {
+				state_resource_cost_grain = 5
+			}
+			} 
+			
+			}
+		}
+	}
+}

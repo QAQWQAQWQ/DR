@@ -1,0 +1,17 @@
+AGN_thule_society_decisions = {
+	priority = 8
+	icon = generic_research
+	visible = {
+		OR = {
+			original_tag = AGN
+		}
+        has_completed_focus = AGN_right_4
+	} 
+	activation = {
+		OR = {
+			original_tag = AGN
+		}
+        has_completed_focus = AGN_right_4
+	}
+	visible_when_empty = yes
+}

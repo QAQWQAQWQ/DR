@@ -1,0 +1,30 @@
+characters={
+	YED_Konstantinos_I={
+		name=YED_Konstantinos_I
+		portraits={
+			civilian={
+				large="gfx/leaders/YED/Portrait_Konstantínos_I.tga"
+			}
+		}
+		country_leader={
+			ideology=Classicism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	YED_Alexander_I={
+		name=YED_Alexander_I
+		portraits={
+			civilian={
+				large="gfx/leaders/YED/portrait_Alexander_I.tga"
+			}
+		}
+		country_leader={
+			ideology=Classicism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

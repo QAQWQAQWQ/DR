@@ -1,0 +1,44 @@
+characters={
+	SUC_LiHouJi={
+		name=SUC_LiHouJi
+		portraits={
+			civilian={
+				large="gfx/leaders/SUC/portrait_LiHouJi.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SUC_Sun_ChuanFang={
+		name=SUC_Sun_ChuanFang
+		portraits={
+			civilian={
+				large="gfx/leaders/SUC/portrait_Sun_ChuanFang.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SUC_Sun_daoren={
+		name=SUC_Sun_daoren
+		portraits={
+			civilian={
+				large="gfx/leaders/SUC/portrait_Sun_daoren.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

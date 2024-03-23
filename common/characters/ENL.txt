@@ -1,0 +1,410 @@
+characters={
+	ENL_David_Lloyd_George={
+		name=ENL_David_Lloyd_George
+		portraits={
+			civilian={
+				large="gfx/leaders/ENL/Portrait_David_Lloyd_George.tga"
+			}
+		}
+		country_leader={
+			ideology=Socialism_Liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+    }
+	ENL_Arthur_Neville_Chamberlain={
+		name=ENL_Arthur_Neville_Chamberlain
+		portraits={
+			civilian={
+				large="gfx/leaders/ENL/Portrait_Arthur_Chamberlain.tga"
+				small="GFX_idea_Arthur_Chamberlain"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = ENL_Arthur_Neville_Chamberlain_H
+			allowed = {
+				original_tag = ENL
+			}
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+			  }
+			traits = {
+				head_of_government
+				conservative_grandee
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+    }
+	ENL_Bonar_Law={
+		name=ENL_Bonar_Law
+		portraits={
+			civilian={
+				large="gfx/leaders/ENL/Portrait_Bonar_Law.tga"
+				small="GFX_idea_Bonar_Law"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = ENL_Bonar_Law_H
+			allowed = {
+				original_tag = ENL
+			}
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+			  }
+			traits = {
+				head_of_government
+				compassionate_commoner
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+    }
+	ENL_Winston_Churchill={
+		name=ENL_Winston_Churchill
+		portraits={
+			civilian={
+				large="gfx/leaders/ENL/Portrait_Winston_Churchill.tga"
+				small="GFX_idea_Churchill"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = ENL_Winston_Churchill_H
+			allowed = {
+				original_tag = ENL
+			}
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+			  }
+			traits = {
+				head_of_government
+				royalist_bulldog
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+    }
+	ENL_Harry_Pollitt={
+		name=ENL_Harry_Pollitt
+		portraits={
+			civilian={
+				large="gfx/leaders/ENL/Portrait_Harry_Pollitt.tga"
+				small="GFX_idea_Harry_Pollitt"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ENL_Harry_Pollitt_H
+			allowed = {
+				original_tag = ENL
+			}
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+			  }
+			traits = {
+				council_communist
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		country_leader={
+			ideology=Scientism_revolutionism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+    }
+	ENL_James_Ramsay_MacDonald={
+		name=ENL_James_Ramsay_MacDonald
+		portraits={
+			civilian={
+				large="gfx/leaders/ENL/Portrait_James_Ramsay_MacDonald.tga"
+				small="GFX_idea_James_Ramsay_MacDonald"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = ENL_James_Ramsay_MacDonald_H
+			allowed = {
+				original_tag = ENL
+			}
+			traits = {
+				head_of_government
+				ambitious_union_boss
+			}
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+			  }
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		country_leader={
+			ideology=Social_Reformism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+    }
+	ENL_Thomann={
+		name=ENL_Thomann
+		portraits={
+			civilian={
+				large="gfx/leaders/ENL/Portrait_Thomann.tga"
+				small="GFX_idea_Thomann"
+			}
+		}
+		country_leader={
+			ideology=Scientism_revolutionism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ENL_Thomann_H
+			allowed = {
+				original_tag = ENL
+			}
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+			  }
+			traits = {
+				communist_revolutionary
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+    }
+	ENL_Thomas_Mackinnon_Wood={
+		name=ENL_Thomas_Mackinnon_Wood
+		portraits={
+			civilian={
+				small="GFX_idea_Thomas_Mackinnon_Wood"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ENL_Thomas_Mackinnon_Wood_H
+			allowed = {
+				original_tag = ENL
+			}
+			traits = {
+				financial_expert
+			}
+			
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	ENL_chamberlain_compresse={
+		name=ENL_chamberlain_compresse
+		portraits={
+			civilian={
+				small="GFX_idea_chamberlain_compresse"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ENL_chamberlain_compresse_H
+			allowed = {
+				original_tag = ENL
+			}
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+			  }
+			traits = {
+				finance_graduate
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	ENL_Mosley={
+		name=ENL_Mosley
+		portraits={
+			civilian={
+				large="gfx/leaders/ENL/Portrait_Mosley.tga"
+				small="GFX_idea_Mosley"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ENL_Mosley_H
+			allowed = {
+				original_tag = ENL
+			}
+			available = {
+				hidden_trigger = {
+					has_stability > 9 
+				  }
+			  }
+			traits = {
+				militant_socialist
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_revolutionism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+    }
+	ENL_George_V={
+		name=ENL_George_V
+		portraits={
+			civilian={
+				large="gfx/leaders/ENL/Portrait_George_V.tga"
+				small= "GFX_idea_George_V"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = ENL_George_V_H
+			allowed = {
+				original_tag = ENL
+			}
+			
+			traits = {
+				head_of_government
+				the_legitimist
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		country_leader={
+			ideology=Classicism_Conservatism
+			traits={ autocratic_imperialist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ENL_Douglas_Haig={
+		name=ENL_Douglas_Haig
+		portraits={
+			civilian={
+				large="gfx/leaders/ENL/Portrait_Douglas_Haig.tga"
+			}
+		}
+		field_marshal={
+			traits={  }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
+    }
+	ENL_Rudolph_Lambart={
+		name=ENL_Rudolph_Lambart
+		portraits={
+			civilian={
+				large="gfx/leaders/ENL/Portrait_Rudolph_Lambart.tga"
+			}
+		}
+		field_marshal={
+			traits={  }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
+    }
+	ENL_Monteith_Hamilton={
+		name=ENL_Monteith_Hamilton
+		portraits={
+			army={
+				large="gfx/leaders/ENL/Portrait_Monteith_Hamilton.tga"
+				small="gfx/interface/ideas/Portrait_Monteith_Hamilton.dds"
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	ENL_Claud_Jacob={
+		name=ENL_Claud_Jacob
+		portraits={
+			army={
+				large="gfx/leaders/ENL/Portrait_Sir_Claud_Jacob.tga"
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	ENL_Edmund_Allenby={
+		name=ENL_Edmund_Allenby
+		portraits={
+			army={
+				large="gfx/leaders/ENL/Portrait_Edmund_Allenby.tga"
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=1
+		}
+	}		
+	}

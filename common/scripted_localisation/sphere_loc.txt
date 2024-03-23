@@ -1,0 +1,31 @@
+
+defined_text = { 
+	name = sphere_texts
+	text = {
+		localization_key = sphere_texts_great_power
+		trigger = {
+			AND = {
+				check_variable = { THIS.is_a_gerat_power = 1 }
+				check_variable = { THIS.in_a_sphere = 0 }
+			}
+		}
+	}
+	text = {
+		localization_key = sphere_texts_in_sphere
+		trigger = {
+			AND = {
+				check_variable = { THIS.is_a_gerat_power = 0 }
+				check_variable = { THIS.in_a_sphere = 1 }
+			}
+		}
+	}
+	text = {
+		localization_key = sphere_texts_no_sphere
+		trigger = {
+			AND = {
+				check_variable = { THIS.is_a_gerat_power = 0 }
+				check_variable = { THIS.in_a_sphere = 0 }
+			}
+		}
+	}
+}

@@ -1,0 +1,10 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			SHW = {
+				# You can put this in the country's history file alternatively too.
+				SHW_parliament_gui_initial = yes
+			}
+		}
+	}
+}

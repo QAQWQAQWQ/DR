@@ -1,0 +1,32 @@
+UBS_elections = {
+	UBS_elections_1 = {
+	  icon = generic_ignite_civil_war
+	  visible = {
+	  }
+	  
+	  available = {
+	  
+	  }
+	  days_remove = 90
+	  cost = 25
+	  allowed = {
+		  always = yes
+	  }
+	  fixed_random_seed = no
+	  fire_only_once = yes
+	  is_good = no
+		  ai_will_do = {
+		  factor = 1
+		  }
+		  remove_effect = {
+			random_list={
+				65 = {
+					country_event={id=DP.1}
+				}
+				35 = {
+					country_event={id=GOP.1}
+				}
+			}
+			}
+		  }
+	  }

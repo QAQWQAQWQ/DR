@@ -1,0 +1,20 @@
+state={
+	id=990
+	name="浔阳"
+	history={
+		owner = SUC
+        add_core_of = SUC
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		1628 4185 7653 10114 11988 13141 
+	}
+	manpower=2150400
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=3.0 
+}

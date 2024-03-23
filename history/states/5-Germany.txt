@@ -1,0 +1,29 @@
+
+state={
+	id=5
+	name="STATE_5"
+	manpower = 1100000
+	state_category = town
+
+	history={
+		victory_points = {
+			6375 3
+		}
+		#victory_points = {
+		#	11386 1
+		#}
+		owner = WWS
+		controller = WWS
+		
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = WWS
+	}
+
+	provinces={
+		266 3351 6375 9327 9346 9372 11386 
+	}
+
+	local_supplies=12.0 
+}

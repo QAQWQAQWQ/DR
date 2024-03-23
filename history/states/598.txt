@@ -1,0 +1,34 @@
+
+state={
+	id=598
+	name="淮扬"
+	
+	state_category = town
+	resources={
+		grain=33
+	}
+	history={
+		owner = ZHX
+		add_core_of = ZHX
+		buildings = {
+			infrastructure = 2
+			grain_farms = 2
+		}
+        victory_points = {
+			7181 2
+		}
+        victory_points = {
+			4082 2
+		}
+        victory_points = {
+			9953 2
+		}
+     }
+	provinces={
+		4001 4031 4082 4123 7142 7181 9953 10095 12067
+	}
+	manpower=15169300
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

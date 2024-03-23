@@ -1,0 +1,20 @@
+state={
+	id=1007
+	name="雁门"
+	manpower = 3101000
+	
+	state_category = town
+	history={
+		owner = SXS
+		add_core_of = SXS
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+	provinces={
+		1027 1203 1438 4469 10480 10507 12432
+	}
+
+	local_supplies=0.0 
+}

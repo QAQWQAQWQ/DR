@@ -1,0 +1,45 @@
+characters={
+	YDA_Frederic_John_Napier_Thesiger={
+		name=YDA_Frederic_John_Napier_Thesiger
+		portraits={
+			civilian={
+				large="gfx/leaders/YDA/portrait_Frederic_John_Napier_Thesiger.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}			
+
+	YDA_Ganghi={
+		name=YDA_Ganghi
+		portraits={
+			civilian={
+				large="gfx/leaders/YDA/portrait_Ganghi.tga"
+			}
+		}
+		country_leader={
+			ideology=Socialism_Liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	YDA_Gopal_Krishna_Gokar={
+		name=YDA_Gopal_Krishna_Gokar
+		portraits={
+			civilian={
+				large="gfx/leaders/YDA/portrait_Gopal_Krishna_Gokar.tga"
+			}
+		}
+		country_leader={
+			ideology=Nationalism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}			
+	}

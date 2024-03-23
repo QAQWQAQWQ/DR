@@ -1,0 +1,181 @@
+characters={
+	CPC_Committee_Communist_China={
+		name=CPC_Committee_Communist_China
+		portraits={
+			civilian={
+				large="gfx/leaders/CPC/Portrait_Committee_Communist_China.tga"
+			}
+		}
+		country_leader={
+			ideology=Scientism_revolutionism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CPC_ChenDuXiu={
+		name=CPC_ChenDuXiu
+		portraits={
+			civilian={
+				large="gfx/leaders/CPC/Portrait_ChenDuXiu.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_revolutionism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CPC_FangZhiMing={
+		name=CPC_FangZhiMing
+		portraits={
+			civilian={
+				large="gfx/leaders/CPC/Portrait_FangZhiMing.tga"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+		country_leader={
+			ideology=Nationalism_revolutionism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+    CPC_LiuShiFu={
+		name=CPC_LiuShiFu
+		portraits={
+			civilian={
+				large="gfx/leaders/CPC/Portrait_LiuShiFu.tga"
+			}
+		}
+		country_leader={
+			ideology=Autonomismism_Anarchism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CPC_LiDaZhao={
+		name=CPC_LiDaZhao
+		portraits={
+			civilian={
+				large="gfx/leaders/CPC/Portrait_LiDaZhao.tga"
+			}
+			army={
+				small="GFX_idea_LiDaZhao"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CPC_LiDaZhao
+			allowed = {
+				original_tag = CPC
+			}
+			traits = {
+				propaganda_expert
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		country_leader={
+			ideology=Scientism_revolutionism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}		
+	}
+	CPC_DongBiWu={
+		name=CPC_DongBiWu
+		portraits={
+			army={
+				small="GFX_idea_DongBiWu"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CPC_DongBiWu_political_advisor
+			available = {
+				has_completed_focus = CPC_own_efforts
+			}
+			allowed = {
+				original_tag = CPC
+			}
+			traits = {
+				chair_of_the_unions
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+		CPC_Nikolsky={
+			name=CPC_Nikolsky
+			portraits={
+				army={
+					small="GFX_idea_Nikolsky"
+				}
+			}
+			advisor={
+				slot = political_advisor
+				idea_token = CPC_Nikolsky_political_advisor
+				available = {
+					has_completed_focus = CPC_Follow_France
+				}
+				allowed = {
+					original_tag = CPC
+				}
+				traits = {
+					communist_theorist
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+		}
+	CPC_Wu-Hao={
+		name=CPC_Wu-Hao
+		portraits={
+			army={
+				large="gfx/leaders/CPC/Portrait_Wu-Hao.tga"
+				small="gfx/interface/ideas/Portrait_Wu-Hao.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	CPC_YeTing={
+		name=CPC_YeTing
+		portraits={
+			army={
+				large="gfx/leaders/CPC/Portrait_YeTing.tga"
+				small="gfx/interface/ideas/Portrait_YeTing.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+}

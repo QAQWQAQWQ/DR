@@ -1,0 +1,28 @@
+state = {
+	id = 941
+	name = "STATE_941"
+
+	state_category = town
+
+	history = {
+		owner = ITE
+		add_core_of = ITE
+		victory_points = {
+			9909 5 
+		}
+		buildings = {
+			infrastructure = 2
+			9909 = {
+				naval_base = 2
+			}		
+		}
+	}
+
+	provinces = {
+		9909
+	}
+	manpower = 87500
+	buildings_max_level_factor = 1.000
+
+	local_supplies = 0.0 
+}

@@ -1,0 +1,123 @@
+defined_text = { 
+	name = gercon_nownac
+	text = {
+		localization_key = DOH_gercon_nownac
+		trigger = {
+			check_variable = { gercon_nat = DOH }
+		}
+	}
+	text = {
+		localization_key = AOX_gercon_nownac
+		trigger = {
+			check_variable = { gercon_nat = AOX }
+		}
+	}
+	text = {
+		localization_key = WWS_gercon_nownac
+		trigger = {
+			check_variable = { gercon_nat = WWS }
+		}
+	}
+	text = {
+		localization_key = AGC_gercon_nownac
+		trigger = {
+			check_variable = { gercon_nat = AGC }
+		}
+	}
+	text = {
+		localization_key = LSB_gercon_nownac
+		trigger = {
+			check_variable = { gercon_nat = LSB }
+		}
+	}
+	text = {
+		localization_key = DHD_gercon_nownac
+		trigger = {
+			check_variable = { gercon_nat = DHD }
+		}
+	}
+	text = {
+		localization_key = DON_gercon_nownac
+		trigger = {
+			check_variable = { gercon_nat = DON }
+		}
+	}
+	text = {
+		localization_key = DOF_gercon_nownac
+		trigger = {
+			check_variable = { gercon_nat = DOF }
+		}
+	}
+	text = {
+		localization_key = DOB_gercon_nownac
+		trigger = {
+			check_variable = { gercon_nat = DOB }
+		}
+	}
+	text = {
+		localization_key = DOR_gercon_nownac
+		trigger = {
+			check_variable = { gercon_nat = DOR }
+		}
+	}
+	text = {
+		localization_key = BXM_gercon_nownac
+		trigger = {
+			check_variable = { gercon_nat = BXM }
+		}
+	}
+	text = {
+		localization_key = DOL_gercon_nownac
+		trigger = {
+			check_variable = { gercon_nat = DOL }
+		}
+	}
+	text = {
+		localization_key = DOA_gercon_nownac
+		trigger = {
+			check_variable = { gercon_nat = DOA }
+		}
+	}
+	text = {
+		localization_key = DOM_gercon_nownac
+		trigger = {
+			check_variable = { gercon_nat = DOM }
+		}
+	}
+	text = {
+		localization_key = DOS_gercon_nownac
+		trigger = {
+			check_variable = { gercon_nat = DOS }
+		}
+	}
+}
+defined_text = { 
+	name = ger_pre_uni
+	text = {
+		localization_key = ger_pre_uni_pre
+		trigger = {
+			tag = WWS
+		}
+	}
+	text = {
+		localization_key = ger_pre_uni_oth
+		trigger = {
+			NOT = { tag = WWS }
+		}
+	}
+}
+defined_text = { 
+	name = ger_aus_uni
+	text = {
+		localization_key = ger_aus_uni_aus
+		trigger = {
+			tag = AOX
+		}
+	}
+	text = {
+		localization_key = ger_aus_uni_oth
+		trigger = {
+			NOT = { tag = AOX }
+		}
+	}
+}

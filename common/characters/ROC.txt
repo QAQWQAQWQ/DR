@@ -1,0 +1,160 @@
+characters={
+	ROC_Song_JiaoRen={
+		name=ROC_Song_JiaoRen
+		portraits={
+			civilian={
+				large="gfx/leaders/ROC/portrait_Song_JiaoRen.tga"
+			}
+		}
+		country_leader={
+			ideology=Social_Reformism
+			desc=ROC_Song_JiaoRen_DESC
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ROC_LiaoZhongKai={
+		name=ROC_LiaoZhongKai
+		portraits={
+			civilian={
+				large="gfx/leaders/ROC/portrait_LiaoZhongKai.tga"
+			}
+		}
+		country_leader={
+			ideology=Scientism_revolutionism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ROC_ZhangZhiZhong={
+		name=ROC_ZhangZhiZhong
+		portraits={
+			army={
+				large="gfx/leaders/ROC/portrait_ZhangZhiZhong.tga"
+				small="gfx/interface/ideas/portrait_ZhangZhiZhong.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	ROC_JiangBaiLi={
+		name=ROC_JiangBaiLi
+		portraits={
+			army={
+				small="GFX_idea_JiangBaiLi"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = ROC_JiangBaiLi
+			ledger = army
+			allowed = {
+				original_tag = ROC
+			}
+			traits = {
+				military_theorist
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	ROC_SunKe={
+		name=ROC_SunKe
+		portraits={
+			army={
+				small="GFX_idea_SunKe"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ROC_SunKe
+			allowed = {
+				original_tag = ROC
+			}
+			traits = {
+				resolute_social_democrat
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	ROC_SongQingLing={
+		name=ROC_SongQingLing
+		portraits={
+			army={
+				small="GFX_idea_SongQingLing"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ROC_SongQingLing
+			allowed = {
+				original_tag = ROC
+			}
+			traits = {
+				first_lady
+				womens_rights_activist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	ROC_ZhangXiaoHuang={
+		name=ROC_ZhangXiaoHuang
+		portraits={
+			army={
+				small="GFX_idea_ZhangXiaoHuang"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ROC_ZhangXiaoHuang
+			allowed = {
+				original_tag = ROC
+			}
+			traits = {
+				financial_expert
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	ROC_TanYouRen={
+		name=ROC_TanYouRen
+		portraits={
+			army={
+				small="GFX_idea_TanYouRen"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ROC_TanYouRen
+			allowed = {
+				original_tag = ROC
+			}
+			traits = {
+				smooth_talking_charmer
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 0.500
+			}
+		}
+	}
+}

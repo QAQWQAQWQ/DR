@@ -1,0 +1,71 @@
+﻿###########################
+# XYL Events
+###########################
+
+add_namespace = XYL
+
+country_event = {
+	id = XYL.X
+	title = XYL.X.t
+	desc = XYL.X.d
+	picture = GFX_train
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	option = {
+		name = XYL.X.a
+		send_equipment = { target = XYL type = infantry_equipment amount = 3500 }
+		}
+	}
+	news_event = {
+		id = XYL.1
+		title = XYL.1.t
+		desc = XYL.1.d
+		picture = GFX_Hungarian_uprising
+		is_triggered_only = yes
+		major = yes
+		fire_only_once = yes
+		trigger = {
+			
+			}
+		option = {
+			name = XYL.1.a
+			XYL = {
+					
+					transfer_state = 76								transfer_state = 664
+					transfer_state = 73
+					transfer_state = 84
+					transfer_state = 83															add_state_core = 155
+					load_oob = "XYL_1920"
+					load_oob = "XYL_1920NAVY"
+					country_event = {
+						id = XYL.1
+						hours = 5
+					}
+					declare_war_on = {
+						target = KOH
+						type = annex_everything
+					}
+				}
+
+			HUN = {
+				    transfer_state = 154
+					transfer_state = 43	
+					transfer_state = 155
+					transfer_state = 664
+					transfer_state = 920
+					transfer_state = 921
+					transfer_state = 70	
+					transfer_state = 71
+					transfer_state = 45	
+					transfer_state = 764
+					transfer_state = 82
+					declare_war_on = {
+						target = XYL
+						type = annex_everything
+					}
+				}
+		}
+	}

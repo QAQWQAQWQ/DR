@@ -1,0 +1,23 @@
+state={
+	id=1013
+	name="STATE_1013"
+	resources={
+		aluminium=1
+	}
+	state_category = town
+	history={
+		owner = WWS
+		add_core_of = WWS
+		buildings = {
+			infrastructure = 3
+		}
+
+	}
+
+	provinces={
+		694 
+	}
+	manpower=386854
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,27 @@
+﻿###########################
+# GUG Events
+###########################
+
+add_namespace = GUG
+country_event = {
+	id = GUG.1
+	title = GUG.1.t
+	desc = GUG.1.d
+	picture = GFX_GUG_1
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = GUG.1.a
+		set_politics = {
+			ruling_party = Revolutionism
+		}
+		hidden_effect={set_popularities = {
+			Liberalism = 35
+			Revolutionism = 55
+			Revolutionism = 10
+		}}
+		
+			
+	}
+	}
+	

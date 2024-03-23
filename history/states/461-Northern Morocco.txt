@@ -1,0 +1,37 @@
+
+state={
+	id=461
+	name="STATE_461"
+	resources={
+		chromium=12.000
+	}
+	resources={
+		grain=10
+	}
+	history={
+		owner = MOL
+		add_core_of = MOL
+		victory_points = {
+			7069 10 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 4
+			7069 = {
+				naval_base = 4
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1194 1079 4084 4139 7069 10023 11943 12042 10070 11987 7100 10013  
+	}
+	manpower=3197719
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

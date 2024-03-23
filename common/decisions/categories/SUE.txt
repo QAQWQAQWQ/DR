@@ -1,0 +1,15 @@
+
+SUE_Food_requisition_operations = {
+	#icon = SHW_Imperial_Russian_Army
+	picture = GFX_decisions_Food_requisition_operations
+	priority = 8
+ 
+	allowed = {
+		
+		tag = SUE
+	}   
+	visible = {
+		#has_country_flag=Famine_in_Russia
+		has_country_flag=Food_requisition
+		}
+	}                           

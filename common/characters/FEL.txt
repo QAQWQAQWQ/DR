@@ -1,0 +1,54 @@
+characters={
+	FEL_Svinhufvud={
+		name=FEL_Svinhufvud
+		portraits={
+			civilian={
+				large="gfx/leaders/FEL/Portrait_Svinhufvud.tga"
+			}
+		}
+		
+	}
+	FEL_Kaarlo_Juho_Stahlberg={
+		name=FEL_Kaarlo_Juho_Stahlberg
+		portraits={
+			civilian={
+				large="gfx/leaders/FEL/Portrait_Kaarlo_Juho_Stahlberg.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	FEL_Carl_Gustaf_Emil_Mannerheim={
+		name=FEL_Carl_Gustaf_Emil_Mannerheim
+		portraits={
+			civilian={
+				large="gfx/leaders/FEL/Portrait_Carl_Gustaf_Emil_Mannerheim.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	FEL_Franz_Albert_Seyn={
+		name=FEL_Franz_Albert_Seyn
+		portraits={
+			civilian={
+				large="gfx/leaders/FEL/Portrait_Franz_Albert_Seyn.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+		
+	}

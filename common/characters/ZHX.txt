@@ -1,0 +1,451 @@
+characters={
+	ZHX_Fen_GuoZhang={
+		name=ZHX_Fen_GuoZhang
+		portraits={
+			civilian={
+				large="gfx/leaders/ZHX/Portrait_Fen_GuoZhang.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ZHX_LiangQiCao={
+		name=ZHX_LiangQiCao
+		portraits={
+			civilian={
+				large="gfx/leaders/ZHX/Portrait_LiangQiCao.tga"
+			}
+		}
+		country_leader={
+			ideology=Socialism_Liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ZHX_Li_HongYuan={
+		name=ZHX_Li_HongYuan
+		portraits={
+			civilian={
+				large="gfx/leaders/ZHX/portrait_Li_HongYuan.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}				
+	ZHX_Fen_YuXiang={
+		name=ZHX_Fen_YuXiang
+		portraits={
+			army={
+				large="gfx/leaders/ZHX/Portrait_Fen_YuXiang.tga"
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	ZHX_PengSouXing={
+		name=ZHX_PengSouXing
+		portraits={
+			army={
+				large="gfx/leaders/ZHX/Portrait_PengSouXing.tga"
+			}
+		}
+		corps_commander={
+			traits={ expert_delegator }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
+	ZHX_SunYue={
+		name=ZHX_SunYue
+		portraits={
+			army={
+				large="gfx/leaders/ZHX/portrait_SunYue.tga"
+			}
+		}
+		corps_commander={
+			traits={ expert_delegator }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
+	ZHX_WuPeiFu={
+		name=ZHX_WuPeiFu
+		portraits={
+			army={
+				large="gfx/leaders/ZHX/portrait_WuPeiFu.tga"
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+	ZHX_JingYunPeng={
+		name=ZHX_JingYunPeng
+		portraits={
+			army={
+				large="gfx/leaders/ZHX/portrait_JingYunPeng.tga"
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	ZHX_ChenWenYun={
+		name=ZHX_ChenWenYun
+		portraits={
+			army={
+				large="gfx/leaders/ZHX/portrait_ChenWenYun.tga"
+			}
+		}
+		corps_commander={
+			traits={ skilled_staffer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
+
+	ZHX_WangZhangYuan={
+		name=ZHX_WangZhangYuan
+		portraits={
+			army={
+				large="gfx/leaders/ZHX/portrait_WangZhangYuan.tga"
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	ZHX_Kong_XiangXi={
+		name=ZHX_Kong_XiangXi
+		portraits={
+			army={
+				small="GFX_idea_Kong_XiangXi"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ZHX_Kong_XiangXi_P
+			allowed = {
+				original_tag = ZHX
+			}
+			available = {
+			}
+			traits = {
+				finance_graduate
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	ZHX_CaoRuLin={
+		name=ZHX_CaoRuLin
+		portraits={
+			army={
+				small="GFX_idea_CaoRuLin"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ZHX_CaoRuLin_P
+			allowed = {
+				original_tag = ZHX
+			}
+			available = {
+			}
+			traits = {
+				Minister_Affairs
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.250
+			}
+		}
+	}
+	ZHX_Zhang_Zongxiang={
+		name=ZHX_Zhang_Zongxiang
+		portraits={
+			army={
+				small="GFX_idea_ZhangZongxiang"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ZHX_Zhang_Zongxiang_P
+			allowed = {
+				original_tag = ZHX
+			}
+			available = {
+			}
+			traits = {
+				eager_collaborator
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.250
+			}
+		}
+	}
+	ZHX_LuZongyu={
+		name=ZHX_LuZongyu
+		portraits={
+			army={
+				small="GFX_idea_LuZongyu"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ZHX_LuZongyu_P
+			allowed = {
+				original_tag = ZHX
+			}
+			available = {
+			}
+			traits = {
+				the_banker
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.250
+			}
+		}
+	}
+	ZHX_WangYiTang={
+		name=ZHX_WangYiTang
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_WangYiTang.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ZHX_WangYiTang_P
+			allowed = {
+				original_tag = ZHX
+			}
+			available = {
+			}
+			traits = {
+				political_chameleon
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.250
+			}
+		}
+	}
+	ZHX_ZhangJian={
+		name=ZHX_ZhangJian
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_ZhangJian.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ZHX_ZhangJian_P
+			allowed = {
+				original_tag = ZHX
+			}
+			available = {
+			}
+			traits = {
+				industry_reformer
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.250
+			}
+		}
+	}
+	ZHX_CaiYuanPei={
+		name=ZHX_CaiYuanPei
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_CaiYuanPei.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ZHX_CaiYuanPei_P
+			allowed = {
+				original_tag = ZHX
+			}
+			available = {
+			}
+			traits = {
+				education_reformer
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.250
+			}
+		}
+	}
+	ZHX_GuWeiJun={
+		name=ZHX_GuWeiJun
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_GuWeiJun.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ZHX_GuWeiJun_P
+			allowed = {
+				original_tag = ZHX
+			}
+			available = {
+			}
+			traits = {
+				Minister_Affairs
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.250
+			}
+		}
+	}
+	ZHX_LiangQiChao={
+		name=ZHX_LiangQiChao
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_LiangQiChao.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = ZHX_LiangQiChao_H
+			allowed = {
+				original_tag = ZHX
+			}
+			available = {
+			}
+			traits = {
+				head_of_government
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 0.250
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ZHX_LiangQiChao_P
+			allowed = {
+				original_tag = ZHX
+			}
+			available = {
+			}
+			traits = {
+				democratic_reformer
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.250
+			}
+		}
+	}
+	ZHX_CaoKung={
+		name=ZHX_CaoKung
+		portraits={
+			army={
+				large="gfx/leaders/ZHX/portrait_CaoKung.tga"
+				small="GFX_idea_CaoKung"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = ZHX_CaoKung_H
+			allowed = {
+				original_tag = ZHX
+			}
+			available = {
+			}
+			traits = {
+				head_of_government
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 0.250
+			}
+		}
+	}
+	ZHX_DuanQiRui={
+		name=ZHX_DuanQiRui
+		portraits={
+			army={
+				large="gfx/leaders/ZHX/portrait_DuanQiRui.tga"
+				small="gfx/interface/ideas/idea_DuanQiRui.dds"
+			}
+		}
+		country_leader={
+			ideology=Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = ZHX_DuanQiRui_H
+			allowed = {
+				original_tag = ZHX
+			}
+			available = {
+			}
+			traits = {
+				head_of_government
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 0.250
+			}
+		}
+	}
+	}
