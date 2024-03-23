@@ -25,6 +25,7 @@ ger_con_decisions = {
       }
       gercon_upd_pbv_var = yes
       gercon_clamp_vars = yes
+      upd_german_sphere = yes
     }
     remove_effect = {
     }
@@ -56,6 +57,7 @@ ger_con_decisions = {
       }
       gercon_upd_pbv_var = yes
       gercon_clamp_vars = yes
+      upd_german_sphere = yes
     }
     remove_effect = {
     }
@@ -87,6 +89,7 @@ ger_con_decisions = {
       }
       gercon_upd_pbv_var = yes
       gercon_clamp_vars = yes
+      upd_german_sphere = yes
     }
     remove_effect = {
     }
@@ -118,6 +121,7 @@ ger_con_decisions = {
       }
       gercon_upd_pbv_var = yes
       gercon_clamp_vars = yes
+      upd_german_sphere = yes
     }
     remove_effect = {
     }
@@ -162,6 +166,7 @@ ger_con_decisions = {
       }
       gercon_upd_pbv_var = yes
       gercon_clamp_vars = yes
+      upd_german_sphere = yes
     }
     remove_effect = {
     }
@@ -216,6 +221,7 @@ ger_con_decisions = {
       }
       gercon_upd_pbv_var = yes
       gercon_clamp_vars = yes
+      upd_german_sphere = yes
     }
     remove_effect = {
     }
@@ -283,6 +289,7 @@ ger_con_decisions = {
       }
       gercon_upd_pbv_var = yes
       gercon_clamp_vars = yes
+      upd_german_sphere = yes
     }
     remove_effect = {
     }
@@ -317,6 +324,7 @@ ger_con_decisions = {
       }
       gercon_upd_pbv_var = yes
       gercon_clamp_vars = yes
+      upd_german_sphere = yes
     }
     remove_effect = {
     }
@@ -351,6 +359,7 @@ ger_con_decisions = {
       }
       gercon_upd_pbv_var = yes
       gercon_clamp_vars = yes
+      upd_german_sphere = yes
     }
     remove_effect = {
     }
@@ -410,6 +419,7 @@ ger_con_decisions = {
       set_variable = { ger_con_det = 10 }
       gercon_add_ger_sup = yes
       gercon_clamp_vars = yes
+      upd_german_sphere = yes
 		}
 	}
   pre_ger_con_german_uni = {

@@ -99,7 +99,176 @@ aushun_clamp_vars = {
 			var = AOX.aus_hun_egree^9
 			min = 0
 			max = 100
-		}
+		}    if = {
+        limit = {
+            NOT = {
+                any_country = {
+                    AND = {
+                        aus_hun_part_of_the_Empire = yes
+                        aus_hun_occ_aus = yes
+                    }
+                }
+            }
+        }
+        clamp_variable = {
+            var = AOX.aus_hun_egree^0
+            min = 0
+            max = 0
+        }
+    }
+    if = {
+        limit = {
+            NOT = {
+                any_country = {
+                    AND = {
+                        aus_hun_part_of_the_Empire = yes
+                        aus_hun_occ_hun = yes
+                    }
+                }
+            }
+        }
+        clamp_variable = {
+            var = AOX.aus_hun_egree^1
+            min = 0
+            max = 0
+        }
+    }
+    if = {
+        limit = {
+            NOT = {
+                any_country = {
+                    AND = {
+                        aus_hun_part_of_the_Empire = yes
+                        aus_hun_occ_ukr = yes
+                    }
+                }
+            }
+        }
+        clamp_variable = {
+            var = AOX.aus_hun_egree^2
+            min = 0
+            max = 0
+        }
+    }
+    if = {
+        limit = {
+            NOT = {
+                any_country = {
+                    AND = {
+                        aus_hun_part_of_the_Empire = yes
+                        aus_hun_occ_cze = yes
+                    }
+                }
+            }
+        }
+        clamp_variable = {
+            var = AOX.aus_hun_egree^3
+            min = 0
+            max = 0
+        }
+    }
+    if = {
+        limit = {
+            NOT = {
+                any_country = {
+                    AND = {
+                        aus_hun_part_of_the_Empire = yes
+                        aus_hun_occ_pol = yes
+                    }
+                }
+            }
+        }
+        clamp_variable = {
+            var = AOX.aus_hun_egree^4
+            min = 0
+            max = 0
+        }
+    }
+    if = {
+        limit = {
+            NOT = {
+                any_country = {
+                    AND = {
+                        aus_hun_part_of_the_Empire = yes
+                        aus_hun_occ_slo = yes
+                    }
+                }
+            }
+        }
+        clamp_variable = {
+            var = AOX.aus_hun_egree^5
+            min = 0
+            max = 0
+        }
+    }
+    if = {
+        limit = {
+            NOT = {
+                any_country = {
+                    AND = {
+                        aus_hun_part_of_the_Empire = yes
+                        aus_hun_occ_rom = yes
+                    }
+                }
+            }
+        }
+        clamp_variable = {
+            var = AOX.aus_hun_egree^6
+            min = 0
+            max = 0
+        }
+    }
+    if = {
+        limit = {
+            NOT = {
+                any_country = {
+                    AND = {
+                        aus_hun_part_of_the_Empire = yes
+                        aus_hun_occ_ita = yes
+                    }
+                }
+            }
+        }
+        clamp_variable = {
+            var = AOX.aus_hun_egree^7
+            min = 0
+            max = 0
+        }
+    }
+    if = {
+        limit = {
+            NOT = {
+                any_country = {
+                    AND = {
+                        aus_hun_part_of_the_Empire = yes
+                        aus_hun_occ_cro = yes
+                    }
+                }
+            }
+        }
+        clamp_variable = {
+            var = AOX.aus_hun_egree^8
+            min = 0
+            max = 0
+        }
+    }
+    if = {
+        limit = {
+            NOT = {
+                any_country = {
+                    AND = {
+                        aus_hun_part_of_the_Empire = yes
+                        aus_hun_occ_slv = yes
+                    }
+                }
+            }
+        }
+        clamp_variable = {
+            var = AOX.aus_hun_egree^9
+            min = 0
+            max = 0
+        }
+    }
 	}
 }
 get_more_aus_hun_sup_5 = {

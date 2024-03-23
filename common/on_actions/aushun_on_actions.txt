@@ -182,12 +182,12 @@ on_actions = {
                 }
                 add_to_array = {
                     array = aus_hun_gov_sup
-                    value = 85
+                    value = 100
                     index = 9
                 }
                 add_to_array = {
                     array = aus_hun_egree
-                    value = 25
+                    value = 0
                     index = 9
                 }
                 add_to_array = {
@@ -214,6 +214,7 @@ on_actions = {
                 DMT = { transfer_state = 104 }
                 DMT = { transfer_state = 804 }
                 DMT = { transfer_state = 918 }
+                DMT = { transfer_state = 1018 }
                 bos_war_end_qwq = yes
                 AOX = {
                     country_event = aushun.3
@@ -313,6 +314,7 @@ on_actions = {
                 DMT = { transfer_state = 103 }
                 DMT = { transfer_state = 804 }
                 DMT = { transfer_state = 918 }
+                DMT = { transfer_state = 1018 }
                 
                 AOX = {
                     set_autonomy = { target = DMT autonomy_state = autonomy_Crown_Territory }

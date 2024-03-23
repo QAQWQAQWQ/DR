@@ -85,23 +85,17 @@ aus_hun_occ_slv = {
         owns_state = 102
     }
 }
+aus_hun_occ_ser = {
+    AND = {    
+        owns_state = 107
+        owns_state = 108
+    }
+}
 aus_hun_part_of_the_Empire = {
     custom_trigger_tooltip = { 
         tooltip = is_part_of_the_Empire
         AND = {
             has_idea = Part_of_Habsburgs
-            # OR = {
-            #    aus_hun_occ_aus = yes
-            #    aus_hun_occ_hun = yes
-            #    aus_hun_occ_ukr = yes
-            #    aus_hun_occ_cze = yes
-            #    aus_hun_occ_pol = yes
-            #    aus_hun_occ_slo = yes
-            #    aus_hun_occ_rom = yes
-            #    aus_hun_occ_ita = yes
-            #    aus_hun_occ_cro = yes
-            #    aus_hun_occ_slv = yes
-            # }
         }
     }
 }
@@ -246,6 +240,126 @@ aus_hun_occ_tri = {
                         aus_hun_part_of_the_Empire = yes
                         aus_hun_occ_slv = yes
                     }
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 10 }
+            OR = {
+                AOX = {
+                    aus_hun_occ_ser = yes
+                }
+                any_country = {
+                    AND = {
+                        aus_hun_part_of_the_Empire = yes
+                        aus_hun_occ_ser = yes
+                    }
+                }
+            }
+        }
+    }
+    }
+}
+aus_hun_aut_tri = {
+    custom_trigger_tooltip = { 
+    tooltip = aus_hun_aut_tri_tool
+    OR = {
+        AND = {
+            check_variable = { aus_hun_nat = 0 }
+            any_country = {
+                AND = {
+                    aus_hun_part_of_the_Empire = yes
+                    aus_hun_occ_aus = yes
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 1 }
+            any_country = {
+                AND = {
+                    aus_hun_part_of_the_Empire = yes
+                    aus_hun_occ_hun = yes
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 2 }
+            any_country = {
+                AND = {
+                    aus_hun_part_of_the_Empire = yes
+                    aus_hun_occ_ukr = yes
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 3 }
+            any_country = {
+                AND = {
+                    aus_hun_part_of_the_Empire = yes
+                    aus_hun_occ_cze = yes
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 4 }
+            any_country = {
+                AND = {
+                    aus_hun_part_of_the_Empire = yes
+                    aus_hun_occ_pol = yes
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 5 }
+            any_country = {
+                AND = {
+                    aus_hun_part_of_the_Empire = yes
+                    aus_hun_occ_slo = yes
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 6 }
+            any_country = {
+                AND = {
+                    aus_hun_part_of_the_Empire = yes
+                    aus_hun_occ_rom = yes
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 7 }
+            any_country = {
+                AND = {
+                    aus_hun_part_of_the_Empire = yes
+                    aus_hun_occ_ita = yes
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 8 }
+            any_country = {
+                AND = {
+                    aus_hun_part_of_the_Empire = yes
+                    aus_hun_occ_cro = yes
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 9 }
+            any_country = {
+                AND = {
+                    aus_hun_part_of_the_Empire = yes
+                    aus_hun_occ_slv = yes
+                }
+            }
+        }
+        AND = {
+            check_variable = { aus_hun_nat = 10 }
+            any_country = {
+                AND = {
+                    aus_hun_part_of_the_Empire = yes
+                    aus_hun_occ_ser = yes
                 }
             }
         }

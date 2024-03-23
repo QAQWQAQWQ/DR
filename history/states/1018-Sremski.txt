@@ -1,0 +1,24 @@
+state=
+{
+	id=1018
+	name="STATE_1018"
+	manpower = 58659
+	
+	state_category = pastoral
+	history=
+	{
+		owner = KOH
+		add_core_of = DMT
+		add_claim_by = KOH
+		buildings = {
+			infrastructure = 1 
+		}
+
+	}
+
+	provinces={
+        11577 11580 
+	}
+
+	local_supplies=0.0 
+}

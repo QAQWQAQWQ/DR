@@ -256,4 +256,14 @@ ideas = {
 			traits = { railway_company }
 		}
 }
+	
+	country = {
+		AOX_ideas_federation_1 = {
+			picture = Part_Habsburgs
+			modifier = {
+				industrial_capacity_factory = 0.10
+				production_speed_buildings_factor = 0.10
+			}
+		}
+	}
 }

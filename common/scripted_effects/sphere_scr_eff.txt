@@ -1,0 +1,116 @@
+upd_subject_sphere = {
+	hidden_effect = {
+    every_subject_country = {
+        set_variable = {
+            in_a_sphere = 1
+        }
+        set_variable = {
+            sphere_country = PREV
+        }
+    }
+    }
+}
+upd_german_sphere = {
+	hidden_effect = {
+            every_country = {
+                limit = {
+                    AND = {        
+                        check_variable = { is_a_gerat_power = 0 }
+                        OR = {
+                            original_tag = AGC
+                            original_tag = LSB
+                            original_tag = DHD
+                            original_tag = DON
+                            original_tag = DOF
+                            original_tag = DOB
+                            original_tag = DOR
+                            original_tag = BXM
+                            original_tag = DOL
+                            original_tag = DOH
+                            original_tag = DOA
+                            original_tag = DOM
+                            original_tag = DOS
+                        }
+                    }
+                }
+                if = {
+                    limit = {
+                        ger_con_uni_tri_pre = yes
+                        AND = {
+                            check_variable = { is_a_gerat_power = 0 }
+                            OR = {
+                                check_variable = {
+                                    WWS.in_a_sphere = 1
+                                }
+                                check_variable = {
+                                    WWS.is_a_gerat_power = 1
+                                }
+                            }
+                        }
+                    }
+                    set_variable = {
+                        in_a_sphere = 1
+                    }
+                    set_variable = {
+                        sphere_country = WWS.sphere_country
+                    }
+                }
+                if = {
+                    limit = {
+                        ger_con_uni_tri_aus = yes
+                        AND = {
+                            check_variable = { is_a_gerat_power = 0 }
+                            OR = {
+                                check_variable = {
+                                    AOX.in_a_sphere = 1
+                                }
+                                check_variable = {
+                                    AOX.is_a_gerat_power = 1
+                                }
+                            }
+                        }
+                    }
+                    set_variable = {
+                        in_a_sphere = 1
+                    }
+                    set_variable = {
+                        sphere_country = AOX.sphere_country
+                    }
+                }
+            }
+            every_country = {
+                limit = {
+                    OR = {
+						   tag = SAA
+						   tag = SAB
+						   tag = SAC
+						   tag = SAD
+						   tag = SAE
+						   tag = SAF
+						   tag = SAG
+                    }
+                }
+                if = {
+                    limit = {
+                        AND = {
+                            check_variable = { is_a_gerat_power = 0 }
+                            OR = {
+                                check_variable = {
+                                    DOS.in_a_sphere = 1
+                                }
+                                check_variable = {
+                                    DOS.is_a_gerat_power = 1
+                                }
+                            }
+                        }
+                    }
+                    set_variable = {
+                        in_a_sphere = 1
+                    }
+                    set_variable = {
+                        sphere_country = DOS.sphere_country
+                    }
+                }
+            }
+    }
+}
