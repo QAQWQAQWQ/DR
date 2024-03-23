@@ -766,7 +766,6 @@ focus_tree = {
 		x = 17
 		y = 2
 		completion_reward = {
-			country_event = {id=KLD.7 days=5}
 			hidden_effect = {
 				set_variable = {
 					global.bosnia_contradictions = 1

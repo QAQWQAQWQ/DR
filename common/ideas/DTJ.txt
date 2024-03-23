@@ -1,0 +1,13 @@
+ideas = {
+        country = {
+		DTJ_Unrecognized_secession_regimes = {
+			picture = Unrecognized_secession_regimes
+			modifier = {
+				join_faction_tension = 0.2
+				stability_factor = -0.1
+				party_popularity_stability_factor = -0.15
+				political_power_cost = 0.1
+			}
+        }
+		}
+}
