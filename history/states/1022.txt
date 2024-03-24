@@ -1,0 +1,23 @@
+state={
+	id=1022
+	name="STATE_1022"
+	resources={
+		grain=1
+	}
+	history={
+		owner = SHW
+		add_core_of = PBL
+		buildings = {
+			infrastructure = 3
+		}
+
+	}
+
+	provinces={
+        347 400 3254 11247 
+	}
+	manpower=457200
+	state_category=pastoral
+
+	local_supplies=5.0 
+}
