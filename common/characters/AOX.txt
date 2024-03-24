@@ -49,10 +49,8 @@ characters={
 				original_tag = AOX
 			}
 			available = {
-				is_country_leader = no
-			    is_political_advisor = no
-				has_government = Conservatism
-			}
+				
+			  }
 			traits = {
 				head_of_government
 			}
@@ -95,276 +93,6 @@ characters={
 
 
 #########顾问
-AOX_Theodor_Korner={
-	name=AOX_Theodor_Korner
-	portraits={
-		civilian={
-			large="gfx/leaders/AOX/Portrait_Theodor_Korner.tga"
-			small = "gfx/interface/ideas/idea_Theodor_Korner.dds"
-		}
-	}
-	advisor={
-		slot = political_advisor
-		idea_token = AOX_Theodor_Korner_P
-		allowed = {
-			original_tag = AOX
-		}
-		available = {
-			is_country_leader = no
-			not_already_hired_except_as = political_advisor
-			has_government = Reformism
-		  }
-		traits = {
-		}
-		ai_will_do = {
-			factor = 1.000
-		}
-	}
-}
-AOX_Karl_Renner={
-	name=AOX_Karl_Renner
-	portraits={
-		civilian={
-			large="gfx/leaders/AOX/Portrait_Karl_Renner.tga"
-			small = "gfx/interface/ideas/idea_Karl_Renner.dds"
-		}
-	}
-	country_leader={
-		ideology=Social_Reformism
-		traits={  }
-		expire="1965.1.1.1"
-		id=-1
-	}
-	advisor={
-		slot = head_of_government
-		idea_token = AOX_Karl_Renner_H
-		allowed = {
-			original_tag = AOX
-		}
-		available = {
-			is_country_leader = no
-			is_political_advisor = no
-		  }
-		traits = {
-			head_of_government
-		}
-		ai_will_do = {
-			factor = 1.000
-		}
-	}
-	advisor={
-		slot = political_advisor
-		idea_token = AOX_Karl_Renner_P
-		allowed = {
-			original_tag = AOX
-		}
-		available = {
-			is_country_leader = no
-			not_already_hired_except_as = political_advisor
-		  }
-		traits = {
-			
-		}
-		ai_will_do = {
-			factor = 1.000
-		}
-	}
-}
-AOX_Jodok_Fink={
-	name=AOX_Jodok_Fink
-	portraits={
-		civilian={
-			large="gfx/leaders/AOX/Portrait_Jodok_Fink.tga"
-			small = "gfx/interface/ideas/idea_Jodok_Fink.dds"
-		}
-	}
-	advisor={
-		slot = head_of_government
-		idea_token = AOX_Jodok_Fink_H
-		allowed = {
-			original_tag = AOX
-		}
-		available = {
-			is_country_leader = no
-			is_political_advisor = no
-		  }
-		traits = {
-			head_of_government
-		}
-		ai_will_do = {
-			factor = 1.000
-		}
-	}
-	advisor={
-		slot = political_advisor
-		idea_token = AOX_Jodok_Fink_P
-		allowed = {
-			original_tag = AOX
-		}
-		available = {
-			is_country_leader = no
-			not_already_hired_except_as = political_advisor
-		  }
-		traits = {
-			
-		}
-		ai_will_do = {
-			factor = 1.000
-		}
-	}
-}
-
-
-AOX_Walter_Breisky={
-	name=AOX_Walter_Breisky
-	portraits={
-		civilian={
-			large="gfx/leaders/AOX/Portrait_Walter_Breisky.tga"
-			small = "gfx/interface/ideas/idea_Walter_Breisky.dds"
-		}
-	}
-	advisor={
-		slot = head_of_government
-		idea_token = AOX_Walter_Breisky_H
-		allowed = {
-			original_tag = AOX
-		}
-		available = {
-			is_country_leader = no
-			is_political_advisor = no
-			has_government = Conservatism
-		  }
-		traits = {
-			head_of_government
-		}
-		ai_will_do = {
-			factor = 1.000
-		}
-	}
-	advisor={
-		slot = political_advisor
-		idea_token = AOX_Walter_Breisky_P
-		allowed = {
-			original_tag = AOX
-		}
-		available = {
-			is_country_leader = no
-			not_already_hired_except_as = political_advisor
-		  }
-		traits = {
-			
-		}
-		ai_will_do = {
-			factor = 1.000
-		}
-	}
-}
-
-AOX_Michael_Hainisch={
-	name=AOX_Michael_Hainisch
-	portraits={
-		civilian={
-			large="gfx/leaders/AOX/Portrait_Michael_Hainisch.tga"
-			small = "gfx/interface/ideas/idea_Michael_Hainisch.dds"
-		}
-	}
-	advisor={
-		slot = head_of_government
-		idea_token = AOX_Michael_Hainisch_H
-		allowed = {
-			original_tag = AOX
-		}
-		available = {
-			is_country_leader = no
-			is_political_advisor = no
-			has_government = Conservatism
-		  }
-		traits = {
-			head_of_government
-		}
-		ai_will_do = {
-			factor = 1.000
-		}
-	}
-	advisor={
-		slot = political_advisor
-		idea_token = AOX_Michael_Hainisch_P
-		allowed = {
-			original_tag = AOX
-		}
-		available = {
-			is_country_leader = no
-			not_already_hired_except_as = political_advisor
-		  }
-		traits = {
-			
-		}
-		ai_will_do = {
-			factor = 1.000
-		}
-	}
-}
-
-AOX_Ernst_Streeruwitz={
-	name=AOX_Ernst_Streeruwitz
-	portraits={
-		civilian={
-			large="gfx/leaders/AOX/Portrait_Ernst_Streeruwitz.tga"
-			small = "gfx/interface/ideas/idea_Ernst_Streeruwitz.dds"
-		}
-	}
-	advisor={
-		slot = head_of_government
-		idea_token = AOX_Ernst_Streeruwitz_H
-		allowed = {
-			original_tag = AOX
-		}
-		available = {
-			is_country_leader = no
-			is_political_advisor = no
-			has_government = Conservatism
-		  }
-		traits = {
-			head_of_government
-		}
-		ai_will_do = {
-			factor = 1.000
-		}
-	}
-	advisor={
-		slot = political_advisor
-		idea_token = AOX_Ernst_Streeruwitz_P
-		allowed = {
-			original_tag = AOX
-		}
-		available = {
-			is_country_leader = no
-			not_already_hired_except_as = political_advisor
-		  }
-		traits = {
-			
-		}
-		ai_will_do = {
-			factor = 1.000
-		}
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 AOX_Johann_Schober={
 	name=AOX_Johann_Schober
 	portraits={
@@ -382,7 +110,6 @@ AOX_Johann_Schober={
 		available = {
 			is_country_leader = no
 			is_political_advisor = no
-			has_government = Conservatism
 		  }
 		traits = {
 			head_of_government
@@ -433,7 +160,7 @@ AOX_Karl_Johann_Kautsky={
 		available = {
 			is_country_leader = no
 			is_political_advisor = no
-			has_government = Reformism
+			
 			
 		  }
 		traits = {
@@ -487,7 +214,6 @@ AOX_Ignaz_Seipel={
 		available = {
 			is_country_leader = no
 			is_political_advisor = no
-			has_government = Conservatism
 			
 			
 		  }
@@ -543,7 +269,7 @@ AOX_Otto_Bauer={
 		available = {
 			is_country_leader = no
 			is_political_advisor = no
-			has_government = Reformism
+			
 			
 		  }
 		traits = {
@@ -589,7 +315,7 @@ AOX_Ferdinand_Hanusch={
 		available = {
 			is_country_leader = no
 			is_political_advisor = no
-			has_government = Reformism
+			
 			
 		  }
 		traits = {
@@ -641,7 +367,7 @@ AOX_Rudolf_Ramek={
 		available = {
 			is_country_leader = no
 			is_political_advisor = no
-			has_government = Conservatism
+			
 			
 		  }
 		traits = {
@@ -695,7 +421,7 @@ AOX_Rudolf_Hilferding={
 		available = {
 			is_country_leader = no
 			is_political_advisor = no
-			has_government = Revolutionism
+			
 			
 		  }
 		traits = {

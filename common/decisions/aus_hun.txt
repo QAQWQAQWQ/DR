@@ -696,6 +696,9 @@ aus_hun_decisions = {
 			45 = {
 				add_claim_by = AOX
 			}
+			1019 = {
+				add_claim_by = AOX
+			}
 			add_political_power = 120
 		}
 	}
@@ -1103,6 +1106,7 @@ hun_red_army = {
 					transfer_state = 154
 					transfer_state = 82
 					transfer_state = 76
+					transfer_state = 1019
 					transfer_state = 83
 					transfer_state = 764
 					transfer_state = 45

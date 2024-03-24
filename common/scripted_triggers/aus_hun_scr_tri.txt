@@ -437,3 +437,37 @@ hungry_war_end = {
         }
     }
 }
+aus_hun_all_sup_more_than_90 = {
+    custom_trigger_tooltip = { 
+        tooltip = aus_hun_all_sup_more_than_90_tool
+        AND = {
+            check_variable = { aus_hun_gov_sup^0 > 89 }
+            check_variable = { aus_hun_gov_sup^1 > 89 }
+            check_variable = { aus_hun_gov_sup^2 > 89 }
+            check_variable = { aus_hun_gov_sup^3 > 89 }
+            check_variable = { aus_hun_gov_sup^4 > 89 }
+            check_variable = { aus_hun_gov_sup^5 > 89 }
+            check_variable = { aus_hun_gov_sup^6 > 89 }
+            check_variable = { aus_hun_gov_sup^7 > 89 }
+            check_variable = { aus_hun_gov_sup^8 > 89 }
+            check_variable = { aus_hun_gov_sup^9 > 89 }
+        }
+    }
+}
+aus_hun_all_aut_less_than_10 = {
+    custom_trigger_tooltip = { 
+        tooltip = aus_hun_all_aut_less_than_10_tool
+        AND = {
+            check_variable = { aus_hun_egree^0 < 11 }
+            check_variable = { aus_hun_egree^1 < 11 }
+            check_variable = { aus_hun_egree^2 < 11 }
+            check_variable = { aus_hun_egree^3 < 11 }
+            check_variable = { aus_hun_egree^4 < 11 }
+            check_variable = { aus_hun_egree^5 < 11 }
+            check_variable = { aus_hun_egree^6 < 11 }
+            check_variable = { aus_hun_egree^7 < 11 }
+            check_variable = { aus_hun_egree^8 < 11 }
+            check_variable = { aus_hun_egree^9 < 11 }
+        }
+    }
+}

@@ -1385,6 +1385,8 @@ bosnia_war_end = yes
 					}
 					transfer_state = 76
 					add_state_core = 76
+					transfer_state = 1019
+					add_state_core = 1019
 					transfer_state = 82
 					add_state_core = 82
 					transfer_state = 83
@@ -1733,6 +1735,8 @@ bosnia_war_end = yes
 					}
 					transfer_state = 76
 					add_state_core = 76
+					transfer_state = 1019
+					add_state_core = 1019
 					transfer_state = 82
 					add_state_core = 82
 					transfer_state = 83
@@ -2429,7 +2433,7 @@ bosnia_war_end = yes
 				has_completed_focus = AUS_german_0
 			}
 			OR = {
-				NOT = {
+			 	NOT = {
 					has_completed_focus = AUS_ger_3
 				}
 				custom_trigger_tooltip = { 
@@ -2437,6 +2441,7 @@ bosnia_war_end = yes
 					pre_has_win_german_war = yes
 				}
 			}
+
 		}
 		available = {
 			has_completed_focus = AUS_bir_15
@@ -2638,6 +2643,8 @@ bosnia_war_end = yes
 			focus = AUS_federation_16
 		}
 		available = {
+			aus_hun_all_sup_more_than_90 = yes
+			aus_hun_all_aut_less_than_10 = yes
 		}
 		completion_reward = {
 			AOX = {
@@ -2653,6 +2660,7 @@ bosnia_war_end = yes
 					}
 					AOX = { annex_country = { target = PREV transfer_troops = yes }  }
 				}
+				set_cosmetic_tag = AOX_DON
 			}
 		}
 	}

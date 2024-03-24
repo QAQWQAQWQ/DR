@@ -102,33 +102,3 @@ country_event = {
 		name = KLD.6.a
 		}
 	}
-country_event = {
-	id = KLD.7
-	title = KLD.7.t
-	desc = KLD.7.d
-	picture = GFX_KLD_7
-	is_triggered_only = yes
-	fire_only_once = yes
-	trigger = {
-		}
-	option = {
-		name = KLD.7.a
-		country_event = {id=KLD.8 days=5}
-		}
-	option = {
-		name = KLD.7.b
-		}
-	}
-country_event = {
-	id = KLD.8
-	title = KLD.8.t
-	desc = KLD.8.d
-	picture = GFX_KLD_8
-	is_triggered_only = yes
-	fire_only_once = yes
-	trigger = {
-		}
-	option = {
-		name = KLD.8.a
-		}
-	}

@@ -1,28 +1,23 @@
 
 state={
-	id=76
-	name="STATE_76"
-	manpower=2352700
+	id=1019
+	name="STATE_1019"
+	manpower=302700
 	
 	state_category = town
 	resources={
-		grain=10
-		
+		grain=1
 	}
 	history={
 		owner = KOH
         add_core_of = KOH
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
-		}
-		victory_points = {
-			6711 5 
 		}
 	}
 
 	provinces={
-		713 727 746 3696 3709 6711 6714 6731 9672 9687 9704 11676 
+        9670 9685 9668 711 3689 
 	}
 
 	local_supplies=9.0 
