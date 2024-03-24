@@ -1,0 +1,67 @@
+
+defined_text = { 
+	name = state_culture_name_texts
+	text = {
+		localization_key = state_culture_name_texts_0
+		trigger = {
+			check_variable = { state_culture = 0 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_1
+		trigger = {
+			check_variable = { state_culture = 1 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_2
+		trigger = {
+			check_variable = { state_culture = 2 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_3
+		trigger = {
+			check_variable = { state_culture = 3 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_4
+		trigger = {
+			check_variable = { state_culture = 4 }
+		}
+	}
+}
+defined_text = { 
+	name = state_culture_desc_texts
+	text = {
+		localization_key = state_culture_desc_texts_0
+		trigger = {
+			check_variable = { state_culture = 0 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_1
+		trigger = {
+			check_variable = { state_culture = 1 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_2
+		trigger = {
+			check_variable = { state_culture = 2 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_3
+		trigger = {
+			check_variable = { state_culture = 3 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_4
+		trigger = {
+			check_variable = { state_culture = 4 }
+		}
+	}
+}
