@@ -1,24 +1,22 @@
 # The following scripted effect sets-up the parliament at game start.
-SHW_parliament_gui_initial = {
+ZHX_parliament_gui_initial = {
 	#政党席位
-	add_to_array = { parliament_seat_array = 12 } # Party A
-	add_to_array = { parliament_seat_array = 84 } # Party B
-	add_to_array = { parliament_seat_array = 60 } # Party C
-	add_to_array = { parliament_seat_array = 33 } # Party D
-	add_to_array = { parliament_seat_array = 3 }# Party E
-	add_to_array = { parliament_seat_array = 8 }# Party F
+	add_to_array = { parliament_seat_array = 30 } # Party A
+	add_to_array = { parliament_seat_array = 13 } # Party B
+	add_to_array = { parliament_seat_array = 27} # Party C
+	add_to_array = { parliament_seat_array = 108 } # Party D
+	add_to_array = { parliament_seat_array = 22 }# Party E
 	#政党数量
 	add_to_array = { parliament_member_array = 1 } # Party A
 	add_to_array = { parliament_member_array = 2 } # Party B
 	add_to_array = { parliament_member_array = 3 } # Party C
 	add_to_array = { parliament_member_array = 4 }
 	add_to_array = { parliament_member_array = 5 } # Party D
-	add_to_array = { parliament_member_array = 6 } # Party D
 	# Set up the positions of the dots for the semicircle parliament
 	parliament_gui_positions = yes
 
 	# Modify what shows up in the gui
-	reload_parliament_gui = yes
+	reload_parliament_gui = yes 
 }
 
 # The following scripted effect does the main job of generating the gui, by adding the seats for each party in a grid.

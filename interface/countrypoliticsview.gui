@@ -1,18 +1,49 @@
 #使关闭阵营按钮可见，修改188行
 #临时按钮在545行
 guiTypes = {
-
 	containerWindowType = {
-		name = "lin_shi_win_bg"
-		position = { x = -170 y = -170 }
+		name = "lin_shi_win_button"
+		position = { x = -25 y = 140 }
 		size = { width = 500 height = 500 }
 		orientation = CENTER
 		origo = center
 		clipping = no
+		moveable = no
+		buttonType = {    
+			name = "lin_shi_win_on" 
+			position = { x = 0 y = 0 }
+			size = { width= 278 height=60 }
+			spriteType ="GFX_lin_shi_win_an_niu"
+			frame = 2
+			pdx_tooltip="National_Parliament_desc"
+		}
+		instantTextboxType = {
+			name = "lin_shi_win_name"
+			format = center
+			position = {x = -7 y = 20 }
+			font = "hoi_16mbs"  
+			text = "National_Parliament"
+			fixedsize = yes
+			maxWidth = 140				
+			maxHeight = 20
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "lin_shi_win_bg"
+		position = { x = 170 y = -170 }
+		size = { width = 600 height = 600 }
+		orientation = CENTER
+		origo = center
+		clipping = no
+		moveable = yes
 		background = {
 			name = "Background"		
-			quadTextureSprite ="GFX_tiled_window2_1b_border"
+			#quadTextureSprite ="GFX_tiled_window2_1b_border"
 		}
+    ########
+	
 	}
 
 
@@ -173,7 +204,7 @@ guiTypes = {
 						position = { x = 6 y = 22 }
 						font = "vic_18"
 						text = "ideology"
-						maxWidth = 155
+						maxWidth = 105
 						maxHeight = 20
 					}
 
@@ -182,7 +213,7 @@ guiTypes = {
 						position = { x = 6 y = 35 }
 						font = "vic_18"
 						text = "elections"
-						maxWidth = 155
+						maxWidth = 105
 						maxHeight = 32
 						vertical_alignment = center
 					}
@@ -377,6 +408,7 @@ guiTypes = {
 			format = center
 			vertical_alignment = center
 		}
+		
 		containerWindowType = {
 			name = "active_goal"
 			position = { x = 179 y = 48 }
@@ -508,80 +540,8 @@ guiTypes = {
 				format = "UPPER_LEFT"
 			}
 
-			containerWindowType = {
-				name = "power_balance_button"
-				position = { x = 400 y = 260 }
-				clipping = no
-	
-				buttonType = {
-					name = "show_power_balance"
-					position = { x = 0 y = 0 }
-					quadTextureSprite = "GFX_show_power_balance_button"
-				}
-				
-				iconType = {
-					name = "show_power_balance_glow"
-					position = { x = 0 y = 0 }
-					quadTextureSprite = "GFX_bop_glow_effect"
-					alwaystransparent = yes
-				}
-	
-				instantTextboxType = {
-					name = "power_balance_percentage"
-					format = center
-					position = { x = 40 y = 10 }
-					font = "hoi_16mbs"
-					text = "90%"
-					fixedsize = yes
-					maxWidth = 100				
-					maxHeight = 20
-					alwaystransparent = yes
-				}	
-				
-				instantTextboxType = {
-					name = "power_balance_levels"
-					format = center
-					position = { x = 40 y = 25 }
-					font = "hoi_16mbs"
-					text = "3/5"
-					fixedsize = yes
-					maxWidth = 100				
-					maxHeight = 20
-					alwaystransparent = yes
-				}	
-				
-				iconType = {
-					name = "power_balance_ICON"
-					position = { x = 12 y = 4 }
-					quadTextureSprite = "GFX_placeholder_bordered"
-					alwaystransparent = yes				
-					scale = 0.75
-				}
-			}
-			containerWindowType = {
-				name = "lin_shi_win"
-				position = { x = 400 y = 260 }
-				clipping = no
-				buttonType = {
-					name = "lin_shi_win_on"
-					position = { x = -290 y = 0 }
-					size = { width= 278 height=60 }
-					spriteType ="GFX_lin_shi_win_an_niu"
-					frame = 2
-					pdx_tooltip="National_Parliament_desc"
-				}
-				instantTextboxType = {
-					name = "lin_shi_win_name"
-					format = center
-					position = { x = -220 y = 25 }
-					font = "hoi_16mbs"  
-					text = "National_Parliament"
-					fixedsize = yes
-					maxWidth = 140				
-					maxHeight = 20
-					alwaystransparent = yes
-				}
-			}
+			
+		
 			####
 			
 		}
@@ -613,7 +573,59 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			scale = 1.02
 		}
+		containerWindowType = {
+			name = "power_balance_button"
+			position = { x = 423 y = 385 }
+			clipping = no
 
+			buttonType = {
+				name = "show_power_balance"
+				position = { x = 0 y = 0 }
+				quadTextureSprite = "GFX_show_power_balance_button"
+			}
+			
+			iconType = {
+				name = "show_power_balance_glow"
+				position = { x = 0 y = 0 }
+				quadTextureSprite = "GFX_bop_glow_effect"
+				alwaystransparent = yes
+			}
+
+			instantTextboxType = {
+				name = "power_balance_percentage"
+				format = center
+				position = { x = 40 y = 10 }
+				font = "hoi_16mbs"
+				text = "90%"
+				fixedsize = yes
+				maxWidth = 100				
+				maxHeight = 20
+				alwaystransparent = yes
+			}	
+			
+			instantTextboxType = {
+				name = "power_balance_levels"
+				format = center
+				position = { x = 40 y = 25 }
+				font = "hoi_16mbs"
+				text = "3/5"
+				fixedsize = yes
+				maxWidth = 100				
+				maxHeight = 20
+				alwaystransparent = yes
+			}	
+			
+			iconType = {
+				name = "power_balance_ICON"
+				position = { x = 12 y = 4 }
+				quadTextureSprite = "GFX_placeholder_bordered"
+				alwaystransparent = yes				
+				scale = 0.75
+			}
+
+			
+
+		}
 		iconType = {
 			name = "rules"
 			spriteType = "GFX_rules_sum_icon"
@@ -781,6 +793,8 @@ guiTypes = {
 			maxHeight = 20
 			format = center
 		}
+		
+		
 		containerWindowType = {
 			name = "ideas"
 			position = { x = 0 y = 50 }
@@ -913,6 +927,8 @@ guiTypes = {
 			alwaystransparent = yes
 			frame = 1
 		}
+
+		
 	}
 
 	containerWindowType = {
