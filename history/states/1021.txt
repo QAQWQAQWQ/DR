@@ -1,0 +1,32 @@
+state={
+	id=1021
+	name="STATE_1021"
+	resources={
+		grain=4
+	}
+	history={
+		owner = YED
+		add_core_of = YED
+		victory_points = {
+			11818 5 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			11818 = {
+				naval_base = 3
+			}
+
+		}
+
+	}
+
+	provinces={
+        895 3936 11818 
+	}
+	manpower=555700
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=0.0 
+}

@@ -244,4 +244,17 @@ on_actions = {
             
         }            
     }
+    
+    on_monthly = {
+		effect = {
+            every_country = {
+                limit = {
+                    check_variable = {
+                        is_a_gerat_power = 1
+                    }
+                }
+                upd_subject_sphere = yes
+            }
+        }            
+    }
 }
