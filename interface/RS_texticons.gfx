@@ -111,6 +111,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/textpicture/Portrait_Sebastian_Fuhr.tga"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_Georges_Clemenceau"
+		texturefile = "gfx/interface/textpicture/Portrait_Georges_Clemenceau.tga"
+		legacy_lazy_load = no
+	}
 	
 	spriteType = {
 		name = "GFX_YingCanHen"
@@ -140,6 +145,34 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	
+
+
+
+	spriteType = {
+		name = "GFX_Li_HongYuan"
+		texturefile = "gfx/interface/textpicture/portrait_Li_HongYuan.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Song_JiaoRen"
+		texturefile = "gfx/interface/textpicture/portrait_Song_JiaoRen.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_LiangQiCao"
+		texturefile = "gfx/interface/textpicture/portrait_LiangQiCao.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_WangJiTang"
+		texturefile = "gfx/interface/textpicture/Portrait_WangJiTang.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ZhangJian"
+		texturefile = "gfx/interface/textpicture/portrait_ZhangJian.tga"
+		legacy_lazy_load = no
+	}
 
 
 

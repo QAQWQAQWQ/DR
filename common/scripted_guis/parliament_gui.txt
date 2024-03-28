@@ -1,8 +1,10 @@
 scripted_gui = {
 	parliament_gui = {
-		context_type = decision_category
+		context_type = player_context
 		window_name = "parliament_gui_container"
-
+		visible = {
+			has_country_flag = lin_shi_win_on
+		}
 		dynamic_lists = {
 			parliament_main_grid = {
 				array = parliament_main_array
@@ -55,6 +57,7 @@ scripted_gui = {
 scripted_gui = {
 	parliament_mian = {
 		context_type = player_context
+		#parent_window_token = politics_tab
 		window_name = "lin_shi_win_bg"
 		visible = {
 			has_country_flag = lin_shi_win_on
@@ -72,18 +75,49 @@ scripted_gui = {
 		
 		}
 	}
+	###这里添加议会按钮显示，scripted_effects里面新建xxx_parliament_gui
+	###将第二行xxx_parliament_gui_initial，xxx改为tag
+	###到on_action里面的parliament里面启用xxx_parliament_gui_initial = yes
+	###修改名称就到动态文本里面parliament修改
 	parliament_mian_button = {
 		context_type = player_context
-		window_name = "lin_shi_win"
+		parent_window_token = politics_tab
+		window_name = "lin_shi_win_button"
 		#parent_window_name = "countrypoliticsview"
 		visible = {
-			
+			OR={
+				original_tag = FRW
+				original_tag = SHW
+				original_tag = ZHX
+			}
 		}
 		effects = {
 			lin_shi_win_on_click = {
-
-				add_political_power = 111
-				set_country_flag = lin_shi_win_on
+				if={
+					limit={
+						NOT = {
+							has_country_flag = lin_shi_win_on
+						}
+					}
+					set_country_flag=lin_shi_win_on
+				}
+				else={
+					clr_country_flag=lin_shi_win_on
+				}
+			}
+		}
+	}
+	parliament_mian_close_button = {
+		context_type = player_context
+		#parent_window_token = politics_tab
+		window_name = "parliament_gui_close"
+		#parent_window_name = "countrypoliticsview"
+		visible = { 
+				has_country_flag = lin_shi_win_on
+		}
+		effects = {
+			parliament_close_button_click = {
+				clr_country_flag=lin_shi_win_on
 			}
 		}
 	}

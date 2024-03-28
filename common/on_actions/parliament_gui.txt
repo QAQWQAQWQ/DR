@@ -1,0 +1,18 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			SHW = {
+				# You can put this in the country's history file alternatively too.
+				SHW_parliament_gui_initial = yes
+			}
+			FRW = {
+				# You can put this in the country's history file alternatively too.
+				FRW_parliament_gui_initial = yes
+			}
+			ZHX = {
+				# You can put this in the country's history file alternatively too.
+				ZHX_parliament_gui_initial = yes
+			}
+		}
+	}
+}

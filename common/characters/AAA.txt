@@ -1,0 +1,53 @@
+characters={
+	AAA_Emperor={
+		name=AAA_Emperor
+		portraits={
+			civilian={
+				large="gfx/leaders/AAA/Portrait_Emperor.tga"
+			}
+		}
+		country_leader={
+			ideology=Populism_Reactionary
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal = {
+			skill = 5
+			attack_skill = 10
+			defense_skill = 10
+			planning_skill = 10
+			logistics_skill = 10
+		}
+	}
+	AAA_Horus={
+		name=AAA_Horus
+		portraits={
+			civilian={
+				large="gfx/leaders/AAA/Portrait_Horus.tga"
+			}
+		}
+		field_marshal = {
+			skill = 5
+			attack_skill = 10
+			defense_skill = 10
+			planning_skill = 10
+			logistics_skill = 10
+		}
+	}
+	AAA_Vulcan={
+		name=AAA_Vulcan
+		portraits={
+			civilian={
+				large="gfx/leaders/AAA/Portrait_Vulcan.tga"
+			}
+		}
+		corps_commander = {
+			skill = 5
+			attack_skill = 10
+			defense_skill = 10
+			planning_skill = 10
+			logistics_skill = 10
+		} 
+	}				
+	}

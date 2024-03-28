@@ -1,0 +1,23 @@
+﻿###########################
+# AAA Events
+###########################
+
+add_namespace = AAA
+news_event = {
+	id = AAA.1
+	title = AAA.1.t
+	desc = AAA.1.d
+	#picture = 
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = AAA.1.a
+		hidden_effect = {
+		AAA= { 
+			transfer_state = 323
+			add_state_core = 323
+	    }
+		}
+	}
+	}
+	
