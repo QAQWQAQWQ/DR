@@ -627,6 +627,16 @@ on_actions = {
 				state_culture = 0
 			}
 		}
+	 	every_state = {
+            if = {
+                limit = {
+                    is_core_of = SHW
+                }
+                set_variable = {
+                    state_culture = 20
+                }
+            }
+		}
         4 = { set_variable = { state_culture = 1 } }
         152 = { set_variable = { state_culture = 1 } }
         934 = { set_variable = { state_culture = 1 } }
@@ -814,7 +824,7 @@ on_actions = {
         964 = { set_variable = { state_culture = 14 } }
         731 = { set_variable = { state_culture = 14 } }
         341 = { set_variable = { state_culture = 17 } }
-        184 = { set_variable = { state_culture = 14 } }
+        184 = { set_variable = { state_culture = 17 } }
         44 = { set_variable = { state_culture = 15 } }
         802 = { set_variable = { state_culture = 15 } }
         805 = { set_variable = { state_culture = 15 } }
