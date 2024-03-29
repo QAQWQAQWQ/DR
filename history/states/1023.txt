@@ -1,0 +1,33 @@
+
+state={
+	id=1023
+	name="STATE_1023" # Lappland
+	manpower = 215327
+	resources={
+		tungsten=20 # was: 70
+		steel= 25 # was: 80
+		chromium = 10
+	}
+	
+	state_category = rural
+
+	history={
+		owner = RUD
+		victory_points = {
+			9108 1 
+		}
+		buildings = {
+			infrastructure = 2
+			9108 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = RUD
+	}
+
+	provinces={
+        9108 3104 148 6074 3054 13119 3179 6024 6083 9211 3003 11 3138 3044 11190 3062 11067 11069 109 3100 3113 3173 6161 6200 11201 9220 9143 9093 182 118 145 6132
+    }
+
+	local_supplies=0.0 
+}
