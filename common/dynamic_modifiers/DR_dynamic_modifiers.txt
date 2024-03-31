@@ -299,3 +299,28 @@ SHW_dynamic_Focus_45= {
 	domestic_investment_modifier=0.05
 	market_available_for_dumping_modifier=0.15
 }
+
+FRW_dynamic_Focus_120= {
+	enable = { always = yes }
+	recruitable_population_factor=0.02
+	subversive_activites_upkeep=-0.05
+	resistance_damage_to_garrison_on_our_occupied_states=0.05
+	production_factory_efficiency_gain_factor=-0.05
+	production_factory_max_efficiency_factor=-0.05
+}
+FRW_dynamic_Focus_125= {
+	enable = { always = yes }
+	offensive_war_stability_factor=FRW_dynamic_Focus_125_offensive
+	surrender_limit=FRW_dynamic_Focus_125_surrender
+	repair_speed_infrastructure_factor=FRW_dynamic_Focus_125_repair_speed_infrastructure
+    repair_speed_industrial_complex_factor=FRW_dynamic_Focus_125_repair_speed_industrial
+    repair_speed_arms_factory_factor=FRW_dynamic_Focus_125_repair_speed_arms
+}
+FRW_dynamic_Focus_132= {
+	enable = { always = yes }
+	conversion_cost_civ_to_mil_factor=-0.1
+	conversion_cost_mil_to_civ_factor=-0.1
+	industrial_capacity_factory=0.05
+	production_factory_max_efficiency_factor=-0.02
+	production_factory_efficiency_gain_factor=-0.02
+}

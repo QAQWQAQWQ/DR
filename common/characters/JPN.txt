@@ -16,7 +16,21 @@ characters={
 		}
 	}
 	
-
+	JPN_Tokugawa_Ieda={
+		name=JPN_Tokugawa_Ieda
+		portraits={
+			civilian={
+				large="gfx/leaders/JPN/portrait_Tokugawa_Ieda.tga"
+			}
+		}
+		country_leader={
+			ideology=Nationalism_Conservatism
+           # desc=JPN_Emperor_Taisho_DESC
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 
 
 

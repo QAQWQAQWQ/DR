@@ -85,11 +85,7 @@ scripted_gui = {
 		window_name = "lin_shi_win_button"
 		#parent_window_name = "countrypoliticsview"
 		visible = {
-			OR={
-				original_tag = FRW
-				original_tag = SHW
-				original_tag = ZHX
-			}
+			has_country_flag = parliament_mian_button_yes
 		}
 		effects = {
 			lin_shi_win_on_click = {

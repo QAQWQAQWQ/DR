@@ -5,12 +5,80 @@
 add_namespace = FRW
 add_namespace = Paris_Commune
 add_namespace = Assembly_Tours
+add_namespace = FRW_Syndicates
 
-
-
-
-
-
+country_event = {
+	id = FRW_Syndicates.0
+	title = FRW_Syndicates.0.t
+	desc = FRW_Syndicates.0.d
+	picture = GFX_Paris_Commune_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Syndicates.0.a
+		add_political_power = -25
+		add_stability = -0.03
+		clr_country_flag = parliament_mian_button_yes
+		custom_effect_tooltip = FRW_Syndicates.0_tooltip
+	    }
+}
+country_event = {
+	id = FRW_Syndicates.1
+	title = FRW_Syndicates.1.t
+	desc = FRW_Syndicates.1.d
+	picture = GFX_Paris_Commune_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Syndicates.1.a
+		add_political_power = 100
+	    }
+}
+country_event = {
+	id = FRW_Syndicates.2
+	title = FRW_Syndicates.2.t
+	desc = FRW_Syndicates.2.d
+	picture = GFX_Paris_Commune_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Syndicates.2.a
+		add_political_power = 100
+	    }
+	}
+country_event = {
+	id = FRW_Syndicates.3
+	title = FRW_Syndicates.3.t
+	desc = FRW_Syndicates.3.d
+	picture = GFX_Paris_Commune_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Syndicates.3.a
+		add_political_power = 100
+	    }
+	}
+country_event = {
+	id = FRW_Syndicates.4
+	title = FRW_Syndicates.4.t
+	desc = FRW_Syndicates.4.d
+	picture = GFX_Paris_Commune_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Syndicates.4.a
+		kill_country_leader = yes
+		add_country_leader_role = {
+			character = FRW_Edouard_Berth
+			promote_leader = yes
+			country_leader = {
+				ideology = Syndicalism_Anarchism
+				expire = "1965.1.1.1"
+				traits = {  }
+			}
+		}
+	    }
+	}
 
 
 
@@ -620,7 +688,7 @@ country_event = {
 	id = FRW.30
 	title = FRW.30.t
 	desc = FRW.30.d
-	picture = GFX_FRW_30
+	picture = GFX_FRW_29
 	is_triggered_only = yes
 	trigger = {
 		}
@@ -645,7 +713,7 @@ country_event = {
 	id = FRW.32
 	title = FRW.32.t
 	desc = FRW.32.d
-	picture = GFX_FRW_31
+	picture = GFX_FRW_32
 	is_triggered_only = yes
 	trigger = {
 		}
@@ -773,6 +841,8 @@ country_event = {
 		}
 	option = {
 		name = FRW.36.a
+		custom_effect_tooltip = FRW.36_tooltip
+		set_country_flag = FRW_party_1_text_desc
 		kill_ideology_leader = Revolutionism
 		add_country_leader_role = {
 			character = FRW_Marcel_Cachin

@@ -228,6 +228,9 @@ text = {
 	text = {
 		trigger = {
 			AND={
+				NOT={
+					has_country_flag = FRW_party_1_text_desc
+				}
 				original_tag = FRW
 				check_variable = { v = 1 }
 			}
@@ -278,6 +281,16 @@ text = {
 			}
 		}
 		localization_key = FRW_party_6_text_desc
+	}
+	text = {
+		trigger = {
+			AND={
+				original_tag = FRW
+				has_country_flag = FRW_party_1_text_desc
+				check_variable = { v = 1 }
+			}
+		}
+		localization_key = FRW_party_7_text_desc
 	}
 ###
 ###CHI

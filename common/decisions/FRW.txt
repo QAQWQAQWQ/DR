@@ -149,6 +149,177 @@ Destructive_industrial_complex = {
 }
 
 ####
+FRW_United_States_Europe = {
+United_States_Europe_FRW = {
+		icon = generic_ignite_civil_war
+		visible = {
+			has_completed_focus=FRW_focus140
+		}
+		available = {
+			AND={
+				126={
+					is_fully_controlled_by = FRW
+				}
+				64={
+					is_fully_controlled_by = FRW
+				}
+				4={
+					is_fully_controlled_by = FRW
+				}
+				2={
+					is_fully_controlled_by = FRW
+				}
+			}
+			
+           # has_decision = United_States_Europe_ENL
+		} 
+		#days_re_enable = 30
+		days_remove = 30
+		cost = 60
+		allowed = {
+			tag = FRW
+		}
+		
+		complete_effect = { 
+			set_cosmetic_tag = FRW_United_States_Europe_name
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+	}
+
+
+}
+####
+FRW_European_Federation = {
+	European_Federation_ENL = {
+			icon = generic_ignite_civil_war
+			visible = {
+			}
+			available = {
+				ENL={
+					all_owned_state = { 
+						is_owned_by = FRW
+					}
+				}
+				
+			   # has_decision = United_States_Europe_ENL
+			} 
+			#days_re_enable = 30
+			days_remove = 30
+			cost = 60
+			allowed = {
+				tag = FRW
+			}
+			
+			complete_effect = { 
+				
+				every_state = {
+					limit = {
+					  OR = {
+						is_core_of = ENL
+					  }
+					}
+					transfer_state_to= ENL
+				  }
+				FRW={
+					puppet = ENL
+				}
+				 
+				ENL={
+					leave_faction = yes
+					set_cosmetic_tag = ENL_Revolutionism_name
+					promote_character = {
+						character = ENL_Robert_Peel_Glanville_Blatchford
+						ideology = Nationalism_revolutionism
+					}
+					set_politics = {
+						ruling_party = Revolutionism
+						long_name = ENL_Revolutionism_party_long
+						name = ENL_Revolutionism_party
+					}
+					set_popularities = {
+						Revolutionism = 100
+					}
+				}
+				FRW={add_to_faction = ENL }
+			}
+			fixed_random_seed = no
+			fire_only_once = yes
+			is_good = no
+				ai_will_do = {
+				factor = 1
+				}
+		}
+	European_Federation_WWS = {
+			icon = generic_ignite_civil_war
+			visible = {
+			}
+			available = {
+				WWS={
+					all_owned_state = { 
+						is_owned_by = FRW
+					}
+				}
+				
+			   # has_decision = United_States_Europe_ENL
+			} 
+			#days_re_enable = 30
+			days_remove = 30
+			cost = 60
+			allowed = {
+				tag = FRW
+			}
+			
+			complete_effect = { 
+
+				every_state = {
+					limit = {
+					  OR = {
+						is_core_of = WWS
+					  }
+					}
+					transfer_state_to= WWS
+				  }
+				FRW={
+					puppet = WWS
+				}  
+				WWS={
+					leave_faction = yes
+					set_cosmetic_tag = WWS_Revolutionism_name
+					add_country_leader_role = {
+						character = WWS_Otto_Ruhle
+						promote_leader = yes
+						country_leader = {
+							ideology = Nationalism_revolutionism
+							#expire = "1965.1.1.1"
+							#traits = { war_industrialist }
+						}
+					}
+					set_politics = {
+						ruling_party = Revolutionism
+						long_name = WWS_Revolutionism_party_long
+						name = WWS_Revolutionism_party
+					}
+					set_popularities = {
+						Revolutionism = 100
+					}
+				}
+				FRW = { add_to_faction = WWS}
+			}
+			fixed_random_seed = no
+			fire_only_once = yes
+			is_good = no
+				ai_will_do = {
+				factor = 1
+				}
+		}
+	
+	}
+###
 FRW_Anti_imperialism = {
 
 Export_LEF = {
