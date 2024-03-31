@@ -131,7 +131,8 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				
+				is_country_leader = no
+			    is_political_advisor = no
 			  }
 			traits = {
 				head_of_government
@@ -161,6 +162,8 @@ characters={
 			}
 			available = {
 				has_completed_focus = FRW_focus9
+				is_country_leader = no
+			    is_political_advisor = no
 			  }
 			traits = {
 				head_of_government
@@ -229,10 +232,8 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				hidden_trigger = {
-					has_country_flag = Sebastian_Fuhr_P
-				}
-				
+				is_country_leader = no
+			not_already_hired_except_as = political_advisor
 			  }
 			traits = {
 				compassionate_gentleman
@@ -249,10 +250,8 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				hidden_trigger = {
-					has_country_flag = Sebastian_Fuhr_P
-				}
-				
+				is_country_leader = no
+			    is_political_advisor = no
 			  }
 			traits = {
 				head_of_government
@@ -280,6 +279,8 @@ characters={
 			}
 			available = {
 				has_completed_focus = FRW_focus5
+				is_country_leader = no
+			is_political_advisor = no
 			  }
 			traits = {
 				head_of_government
@@ -298,6 +299,8 @@ characters={
 			}
 			available = {
 				#has_completed_focus = FRW_focus17
+				is_country_leader = no
+			not_already_hired_except_as = political_advisor
 			}
 			traits = {
 			}
@@ -323,6 +326,8 @@ characters={
 				}
 				available = {
 					has_completed_focus = FRW_focus64
+					is_country_leader = no
+			is_political_advisor = no
 				  }
 				traits = {
 					head_of_government
@@ -341,6 +346,8 @@ characters={
 			}
 			available = {
 				has_country_flag = Benoit_Frachon_P
+				is_country_leader = no
+			    not_already_hired_except_as = political_advisor
 			  }
 			traits = {
 				connected_citizen
@@ -365,10 +372,8 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				hidden_trigger = {
-					has_country_flag = Vincent_Auriol_P
-				}
-				
+				is_country_leader = no
+			not_already_hired_except_as = political_advisor
 			  }
 			traits = {
 				compassionate_gentleman
@@ -385,10 +390,8 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				hidden_trigger = {
-					has_country_flag = Vincent_Auriol_P
-				}
-				
+				is_country_leader = no
+			is_political_advisor = no
 			  }
 			traits = {
 				head_of_government
@@ -415,6 +418,8 @@ characters={
 			}
 			available = {
 				has_country_flag = Marcel_Deat_P
+				is_country_leader = no
+			not_already_hired_except_as = political_advisor
 			  }
 			traits = {
 				ideological_groupie
@@ -439,10 +444,8 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				hidden_trigger = {
-					has_country_flag = LudovicOscar_Frossard_P
-				}
-				
+				is_country_leader = no
+			is_political_advisor = no
 			  }
 			traits = {
 				head_of_government
@@ -460,10 +463,8 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				hidden_trigger = {
-					has_country_flag = LudovicOscar_Frossard_P
-				}
-				
+				is_country_leader = no
+			not_already_hired_except_as = political_advisor
 			  }
 			traits = {
 				left_trade_unionist
@@ -489,6 +490,8 @@ characters={
 			}
 			available = {
 				has_completed_focus = FRW_Second_Revolution
+				is_country_leader = no
+			not_already_hired_except_as = political_advisor
 			  }
 			traits = {
 				devoted_marxist
@@ -513,7 +516,8 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				
+				is_country_leader = no
+			not_already_hired_except_as = political_advisor
 			  }
 			traits = {
 				peoples_commissar_for_posts_and_telegraphs
@@ -539,7 +543,8 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				
+				is_country_leader = no
+			not_already_hired_except_as = political_advisor
 			  }
 			traits = {
 				
@@ -564,7 +569,8 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				
+				is_country_leader = no
+			not_already_hired_except_as = political_advisor
 			  }
 			traits = {
 				
@@ -584,6 +590,7 @@ characters={
 		name=FRW_Edouard_Berth
 		portraits={
 			civilian={
+				large ="gfx/leaders/FRW/Portrait_Edouard_Berth.tga"
 				small="gfx/interface/ideas/idea_Edouard_Berth.dds"
 			}
 		}
@@ -594,7 +601,8 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				has_country_flag = Edouard_Berth_P
+				is_country_leader = no
+			not_already_hired_except_as = political_advisor
 			  }
 			traits = {
 				Sorelists
@@ -611,9 +619,8 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				hidden_trigger = {
-					has_stability > 9 
-				  }
+				is_country_leader = no
+			is_political_advisor = no
 			  }
 			traits = {
 				head_of_government
@@ -641,7 +648,8 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				
+				is_country_leader = no
+			not_already_hired_except_as = political_advisor
 			  }
 			traits = {
 				Minister_of_Armaments
@@ -668,7 +676,8 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				
+				is_country_leader = no
+			not_already_hired_except_as = political_advisor
 			  }
 			traits = {
 				Anti_revisionists
@@ -732,10 +741,8 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				hidden_trigger = {
-					has_country_flag = Edouard_Daladier_P
-				}
-				
+				is_country_leader = no
+			not_already_hired_except_as = political_advisor
 			  }
 			traits = {
 				militant_socialist
@@ -752,10 +759,8 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				hidden_trigger = {
-					has_country_flag = Edouard_Daladier_P
-				}
-				
+				is_country_leader = no
+			is_political_advisor = no
 			  }
 			traits = {
 				head_of_government
@@ -782,6 +787,8 @@ characters={
 			}
 			available = {
 				has_completed_focus = FRW_focus15
+				is_country_leader = no
+			not_already_hired_except_as = political_advisor
 			  }
 			traits = {
 				economy_reformer
@@ -806,7 +813,8 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				has_country_flag = Paul_Faure_P
+				is_country_leader = no
+			not_already_hired_except_as = political_advisor
 			  }
 			traits = {
 				traditionalist_theorist
@@ -831,7 +839,8 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				
+				is_country_leader = no
+			    not_already_hired_except_as = political_advisor
 			  }
 			traits = {
 				hawk
@@ -857,6 +866,8 @@ characters={
 			}
 			available = {
 				has_completed_focus = FRW_focus88
+				is_country_leader = no
+			is_political_advisor = no
 			  }
 			traits = {
 				stalin_servant_of_lenin
@@ -874,6 +885,8 @@ characters={
 			}
 			available = {
 				has_completed_focus = FRW_focus88
+				is_country_leader = no
+			not_already_hired_except_as = political_advisor
 			  }
 			traits = {
 				Minister_Affairs
@@ -898,9 +911,8 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				hidden_trigger = {
-					has_stability > 9 
-				  }
+				is_country_leader = no
+			is_political_advisor = no
 			  }
 			traits = {
 				head_of_government
@@ -918,7 +930,8 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				
+				is_country_leader = no
+			not_already_hired_except_as = political_advisor
 			  }
 			traits = {
 				stalin_architect_of_communism
@@ -952,6 +965,8 @@ characters={
 			}
 			available = {
 				has_completed_focus = FRW_focus13
+				is_country_leader = no
+			not_already_hired_except_as = political_advisor
 			  }
 			traits = {
 				protector_of_the_campesinos
@@ -979,9 +994,9 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				NOT={
-					has_country_flag = has_head_of_government
-				}
+				is_country_leader = no
+			is_political_advisor = no
+
 			  }
 			traits = {
 				Comite_communal

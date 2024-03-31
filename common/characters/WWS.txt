@@ -1,4 +1,19 @@
 characters={
+	WWS_Otto_Ruhle={
+		name=WWS_Otto_Ruhle
+		portraits={
+			civilian={
+				large="gfx/leaders/WWS/Portrait_Otto_Ruhle.tga"
+			}
+		}
+		country_leader={
+			ideology=Nationalism_revolutionism
+            #desc=WWS_WilliamII_DESC
+			#traits={ autocratic_imperialist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	WWS_WilliamII={
 		name=WWS_WilliamII
 		portraits={
@@ -7,7 +22,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Classicism_Conservatism
+			ideology=Authoritarianism_Conservatism
             desc=WWS_WilliamII_DESC
 			traits={ autocratic_imperialist }
 			expire="1965.1.1.1"

@@ -14,6 +14,20 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = JPN.1.a
+		promote_character = {
+			character = JPN_Tokugawa_Ieda
+			ideology = Conservatism
+		}
+		add_country_leader_role = {
+			character = JPN_Tokugawa_Ieda
+			promote_leader = yes
+			country_leader = {
+				ideology = Nationalism_Conservatism
+				expire = "1965.1.1.1"
+				traits = { war_industrialist }
+			}
+		}
+		set_cosmetic_tag = JPN_shogunate
 		hidden_effect={
 			create_faction = Empire_Japan
 			news_event = { id = JPN.2 days = 30}

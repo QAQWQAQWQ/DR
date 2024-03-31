@@ -1,4 +1,21 @@
 characters={
+	ENL_Robert_Peel_Glanville_Blatchford={
+		name=ENL_Robert_Peel_Glanville_Blatchford
+		portraits={
+			civilian={
+				large="gfx/leaders/ENL/Portrait_Robert_Peel_Glanville_Blatchford.tga"
+			}
+		}
+		country_leader={
+			ideology=Nationalism_revolutionism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+    }
+
+
+
 	ENL_David_Lloyd_George={
 		name=ENL_David_Lloyd_George
 		portraits={

@@ -1,3 +1,39 @@
+FRW_United_States_Europe = {
+	icon = infiltration
+	
+	picture = GFX_decisions_election_movement
+
+	priority = 9
+	allowed = {
+		tag = FRW
+	}
+	visible = {
+		#has_country_flag = FRW.35_flag
+	}
+
+
+}   
+FRW_European_Federation = { 
+	icon = infiltration
+	
+	picture = GFX_decisions_election_movement
+
+	priority = 9
+	allowed = {
+		tag = FRW
+	}
+	visible = {
+		#has_country_flag = FRW.35_flag
+	}
+
+
+}   
+
+
+
+
+
+
 FRW_election_movement = {
 	icon = infiltration
 	
