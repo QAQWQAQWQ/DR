@@ -2,9 +2,9 @@
 state = {
 	id = 879
 	name = "STATE_879" # Kargopol
-	manpower = 210177
+	manpower = 410177
 	
-	state_category = rural
+	state_category = town
 
 	history = {
 		owner = SHW
@@ -16,15 +16,10 @@ state = {
 			
 		}
 		add_core_of = SHW
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 2
-			}
-		}
 	}
 
 	provinces = {
-		3 18 26 72 89 127 138 3031 3086 6034 6051 6075 6109 9187 11071 11137 11178
+		140 11038 312 3130  11171 3092 3080 3168 9248 6102 3 18 26 72 89 127 138 3031 3086 6034 6051 6075 6109 9187 11071 11137 11178
 	}
 
 	local_supplies = 0.0 

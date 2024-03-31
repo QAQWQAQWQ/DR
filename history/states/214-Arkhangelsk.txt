@@ -2,9 +2,9 @@
 state = {
 	id = 214
 	name = "STATE_214"
-	manpower = 577985
+	manpower = 377985
 	
-	state_category = town
+	state_category = rural
 
 	history = {
 		owner = SHW
@@ -20,15 +20,10 @@ state = {
 			}
 		}
 		add_core_of = SHW
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 2
-			}
-		}
 	}
 
 	provinces = {
-		      140 180 312 3075 3080 3092 3130 3168 3338 6102 6105 9041 9248 11038 11171  
+		      180 3075 3338 6105 9041  
 	}
 
 	local_supplies = 0.0 
