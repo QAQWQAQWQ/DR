@@ -64,9 +64,9 @@ defined_text = {
 	text = {
 		trigger = {
 			THIS = {
-				is_in_array = {
-					global.faction_menber_ENL = THIS
-				}
+				NOT = { ENL = { is_subject = yes }}
+				ENL = { is_faction_leader = yes}
+				is_in_faction_with = ENL
 			}
 		}
 		localization_key = "GFX_Commonwealth_of_Nations"
@@ -74,9 +74,9 @@ defined_text = {
 	text = {
 		trigger = {
 			THIS = {
-				is_in_array = {
-					global.faction_menber_FRW = THIS
-				}
+				NOT = { FRW = { is_subject = yes }}
+				FRW = { is_faction_leader = yes}
+				is_in_faction_with = FRW
 			}
 		}
 		localization_key = "GFX_Second_International"
@@ -84,9 +84,9 @@ defined_text = {
 	text = {
 		trigger = {
 			THIS = {
-				is_in_array = {
-					global.faction_menber_ZHX = THIS
-				}
+				NOT = { ZHX = { is_subject = yes }}
+				ZHX = { is_faction_leader = yes}
+				is_in_faction_with = ZHX
 			}
 		}
 		localization_key = "GFX_Rpublic_China"
@@ -94,9 +94,9 @@ defined_text = {
 	text = {
 		trigger = {
 			THIS = {
-				is_in_array = {
-					global.faction_menber_NPL = THIS
-				}
+				NOT = { NPL = { is_subject = yes }}
+				NPL = { is_faction_leader = yes}
+				is_in_faction_with = NPL
 			}
 		}
 		localization_key = "GFX_Bonaparte_family_alliance"
@@ -104,9 +104,9 @@ defined_text = {
 	text = {
 		trigger = {
 			THIS = {
-				is_in_array = {
-					global.faction_menber_AOX = THIS
-				}
+				NOT = { AOX = { is_subject = yes }}
+				AOX = { is_faction_leader = yes}
+				is_in_faction_with = AOX
 			}
 		}
 		localization_key = "GFX_Habsburg_monarchy"
@@ -114,9 +114,9 @@ defined_text = {
 	text = {
 		trigger = {
 			THIS = {
-				is_in_array = {
-					global.faction_menber_JPN = THIS
-				}
+				NOT = { JPN = { is_subject = yes }}
+				JPN = { is_faction_leader = yes}
+				is_in_faction_with = JPN
 			}
 		}
 		localization_key = "GFX_Empire_Japan"
@@ -124,9 +124,9 @@ defined_text = {
 	text = {
 		trigger = {
 			THIS = {
-				is_in_array = {
-					global.faction_menber_ITE = THIS
-				}
+				NOT = { ITE = { is_subject = yes }}
+				ITE = { is_faction_leader = yes}
+				is_in_faction_with = ITE
 			}
 		}
 		localization_key = "GFX_United_Provinces_Northern_Italy"
