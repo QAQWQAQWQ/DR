@@ -2421,9 +2421,9 @@ bosnia_war_end = yes
 		x = 17
 		y = 6
 		allow_branch={ 
-			OR = {
-			 always = yes
-				AND = {
+			# OR = {
+			# always = yes
+			#	AND = {
 			has_completed_focus = AUS_bir_15
 			bosnia_war_end_tri_tool = yes
 			OR = {
@@ -2444,8 +2444,8 @@ bosnia_war_end = yes
 					pre_has_win_german_war = yes
 				}
 			}
-				}
-			}	
+			#	}
+			#}	
 		}
 		available = {
 			has_completed_focus = AUS_bir_15
