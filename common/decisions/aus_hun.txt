@@ -1068,6 +1068,88 @@ aus_hun_decisions = {
 			AOX = { annex_country = { target = FROM transfer_troops = yes } }
 		}
 	}
+	aus_hun_aus_cze_into_one = {
+        state_target = yes
+		visible = {
+			ROOT = {
+				original_tag = AOX
+			}
+			AOX = {
+				has_completed_focus = AUS_federation_11
+			}
+		}
+        target_trigger = {
+            FROM = {
+				OR = {
+					is_core_of = AOX
+					is_core_of = BXM
+				}
+				OR = {
+					owner = AOX
+					AND = {
+						owner = BXM
+						BXM = {
+							has_idea = Part_of_Habsburgs
+						}
+					}
+					AND = {
+						owner = KOH
+						KOH = {
+							has_idea = Part_of_Habsburgs
+						}
+					}
+				}
+				OR = {
+                	check_variable = {
+						state_culture = 49
+					}
+                	check_variable = {
+						state_culture = 50
+					}
+				}
+            }
+        }
+        cost = 50
+		days_remove = 200
+        fire_only_once = no
+        complete_effect = {
+        }
+		remove_effect = {
+            FROM = {
+				change_culture_to_51 = yes
+            }
+		}
+     }
+	aus_hun_aus_cze_into_one_end = {
+		visible = {
+			original_tag = AOX
+			has_completed_focus = AUS_federation_11
+			check_variable = { aus_hun_has_meg^3 = 0 }
+		}		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = aus_hun_aus_cze_into_one_end_tool
+				NOT = {
+					any_state = {
+						OR = {
+							check_variable = {
+								state_culture = 49
+							}
+							check_variable = {
+								state_culture = 50
+							}
+						}
+					}
+				}
+			}
+		}
+        complete_effect = {
+			AOX = {
+				remove_idea = { AOX_ideas_the_undead_of_hus }
+			}
+			set_variable = { aus_hun_has_meg^3 = 1 }
+        }
+	 }
 }
 hun_red_army = {
 	hun_red_army_boom = {
