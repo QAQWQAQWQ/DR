@@ -1,12 +1,12 @@
 state={
-	id=676
-	name="STATE_676"
+	id=1025
+	name="STATE_1025"
 	manpower = 582741
 	
 	state_category = rural
 	
 	resources={
-		oil=4 # was: 10
+		oil=5 # was: 10
 		grain=11
 	}
 	history={
@@ -15,14 +15,17 @@ state={
 			infrastructure = 2
 		}
 		victory_points = {
-			10106 5 
+			3916 3 
+		}
+		victory_points = {
+			6826 1
 		}
 		add_core_of = TEQ
 
 	}
 	
 	provinces={
-		1600 1938 10106 10804 12372 12413
+        10811 3916 6826 5014 8123 10793
 	}
 
 	local_supplies=0.0 

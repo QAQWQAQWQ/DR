@@ -2421,12 +2421,15 @@ bosnia_war_end = yes
 		x = 17
 		y = 6
 		allow_branch={ 
+			# OR = {
+			# always = yes
+			#	AND = {
 			has_completed_focus = AUS_bir_15
 			bosnia_war_end_tri_tool = yes
 			OR = {
-				has_completed_focus = AUS_ger_1
-				has_completed_focus = AUS_ger_2
-				has_completed_focus = AUS_ger_3
+			 	has_completed_focus = AUS_ger_1
+			 	has_completed_focus = AUS_ger_2
+			 	has_completed_focus = AUS_ger_3
 			}
 			NOT = {
 				has_completed_focus = AUS_HRE_0
@@ -2441,7 +2444,8 @@ bosnia_war_end = yes
 					pre_has_win_german_war = yes
 				}
 			}
-
+			# 	}
+			# }	
 		}
 		available = {
 			has_completed_focus = AUS_bir_15
@@ -2510,7 +2514,19 @@ bosnia_war_end = yes
 		available = {
 		}
 		completion_reward = {
-
+			848 = { change_culture_to_50 = yes }
+			153 = { change_culture_to_50 = yes }
+			39 = { change_culture_to_50 = yes }
+			933 = { change_culture_to_50 = yes }
+			934 = { change_culture_to_50 = yes }
+			935 = { change_culture_to_50 = yes }
+			920 = { change_culture_to_50 = yes }
+			152 = { change_culture_to_50 = yes }
+			4 = { change_culture_to_50 = yes }
+			942 = { change_culture_to_50 = yes }
+			69 = { change_culture_to_50 = yes }
+			74 = { change_culture_to_50 = yes }
+        	add_stability = 0.1
 		}
 	}
 	focus = {
@@ -2525,7 +2541,6 @@ bosnia_war_end = yes
 		available = {
 		}
 		completion_reward = {
-
 		}
 	}
 	focus = {
@@ -2543,7 +2558,6 @@ bosnia_war_end = yes
 		available = {
 		}
 		completion_reward = {
-
 		}
 	}
 	focus = {

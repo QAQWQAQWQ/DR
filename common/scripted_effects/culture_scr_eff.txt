@@ -1,0 +1,18 @@
+change_culture_to_50 = {
+    custom_effect_tooltip = change_culture_to_50_tool
+    set_variable = {
+        state_culture = 50
+    }
+}
+change_culture_to_49 = {
+    custom_effect_tooltip = change_culture_to_49_tool
+    set_variable = {
+        state_culture = 49
+    }
+}
+change_culture_to_51 = {
+    custom_effect_tooltip = change_culture_to_51_tool
+    set_variable = {
+        state_culture = 51
+    }
+}
