@@ -1,88 +1,83 @@
 defined_text = { 
 	name = GetFactionDesc
-text = {
-		 localization_key = NPL_Bonaparte_family_alliance_Desc
-
-		 trigger = {
-				OR = {
-					tag = NPL
-					is_in_faction_with =  NPL
-					is_puppet_of =  NPL
-				}
+	text = { #法兰西同盟
+		localization_key = NPL_Bonaparte_family_alliance_Desc
+		trigger = {
+			THIS = {
+				NOT = { NPL = { is_subject = yes }}
+				NPL = { is_faction_leader = yes}
+				is_in_faction_with = NPL
+			}
+		}
 	}
-}
-text = {
-	localization_key = United_Provinces_Northern_Italy_Desc
-
-	trigger = {
-		   OR = {
-			   tag = ITE
-			   is_in_faction_with =  ITE
-			   is_puppet_of =  ITE
-		   }
-}
-}
-text = {
-	localization_key = GER_Desc
-
-	trigger = {
-		   OR = {
-			   tag = AOX
-			   is_in_faction_with =  AOX
-			   is_puppet_of =  AOX
-		   }
-}
-}
-text = {
-	localization_key = Se_International_Desc
-
-	trigger = {
-		   OR = {
-			   tag = FRW
-			   is_in_faction_with =  FRW
-		   }
-}
-}
-text = {
-	localization_key = Vienna_Entent_Desc
-
-	trigger = {
-		   AND = {
-			   tag = AOX
-			   is_in_faction_with =  WWS
-			   has_country_flag = ger_con_7
-		   }
-}
-}
-text = {
-	localization_key = North_German_Confederation_Desc
-
-	trigger = {
-		   OR = {
-			WWS={is_faction_leader = yes}
-			is_puppet_of = WWS
-		   }
-}
-}
-text = {
-	localization_key = CHI_BeiPing_Desc
-
-	trigger = {
-		   OR = {
-			tag = ZHX
-			   is_in_faction_with = ZHX
-			   is_puppet_of = ZHX
-		   }
-}
-}
-text = {
-	localization_key = SHW_Russian_White_Army_Desc
-
-	trigger = {
-		   OR = {
-			tag = SHW
-			   is_in_faction_with = SHW
-		   }
-}
-}
+	text = { #北意大利联合省
+		localization_key = United_Provinces_Northern_Italy_Desc
+		trigger = {
+			THIS = {
+				NOT = { ITE = { is_subject = yes }}
+				ITE = { is_faction_leader = yes}
+				is_in_faction_with = ITE
+			}
+		}
+	}
+	text = { #德意志邦联
+		localization_key = GER_Desc
+		trigger = {
+			THIS = {
+				NOT = { AOX = { is_subject = yes }}
+				AOX = { is_faction_leader = yes}
+				is_in_faction_with = AOX
+			}
+		}
+	}
+	text = { #第二国际
+		localization_key = Se_International_Desc
+		trigger = {
+			THIS = {
+				NOT = { FRW = { is_subject = yes }}
+				FRW = { is_faction_leader = yes}
+				is_in_faction_with = FRW
+			}
+		}
+	}
+	text = { #维也纳协约
+		localization_key = Vienna_Entent_Desc
+		trigger = {
+			AND = {
+				tag = AOX
+				is_in_faction_with =  WWS
+				has_country_flag = ger_con_7
+			}
+		}
+	}
+	text = {
+		localization_key = North_German_Confederation_Desc
+		trigger = {
+			THIS = {
+				NOT = { WWS = { is_subject = yes }}
+				WWS = { is_faction_leader = yes}
+				is_in_faction_with = WWS
+			}
+		}
+	}
+	text = { #中华民国
+		localization_key = CHI_BeiPing_Desc
+		trigger = {
+			THIS = {
+				NOT = { ZHX = { is_subject = yes }}
+				ZHX = { is_faction_leader = yes}
+				is_in_faction_with = ZHX
+			}
+		}
+	}
+	text = { #反布同盟
+		localization_key = SHW_Russian_White_Army_Desc
+		trigger = {
+			THIS = {
+				NOT = { SHW = { is_subject = yes }}
+				SHW = { is_faction_leader = yes}
+				is_in_faction_with = SHW
+			}
+		}
+	}
 }
