@@ -1,4 +1,35 @@
 characters={
+	
+	FRW_Comite_communal={
+		name=FRW_Comite_communal
+		portraits={
+			civilian={
+				large="gfx/leaders/FRW/portrait_Comite_communal.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_revolutionism
+			#desc = FRW_Pierre_Monatte_desc
+			traits={  } 
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	FRW_Gustave_Herve={
+		name=FRW_Gustave_Herve
+		portraits={
+			civilian={
+				large="gfx/leaders/FRW/Portrait_Gustave_Herve.tga"
+			}
+		}
+		country_leader={
+			ideology=Nationalism_revolutionism
+			#desc = FRW_Pierre_Monatte_desc
+			traits={  } 
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	FRW_Pierre_Monatte={
 		name=FRW_Pierre_Monatte
 		portraits={

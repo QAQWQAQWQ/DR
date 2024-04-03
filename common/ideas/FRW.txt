@@ -1,6 +1,13 @@
 ideas = {
     country = {
 		####HIDDEN
+		National_emergency= {
+			picture = National_emergency
+			modifier = {
+				stability_factor=0.15
+				political_power_factor=0.1
+			}
+        }
 		IDEA_125_0= {
 			#picture = farming_society
 			modifier = {

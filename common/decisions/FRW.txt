@@ -179,9 +179,11 @@ United_States_Europe_FRW = {
 		allowed = {
 			tag = FRW
 		}
-		
-		complete_effect = { 
+		remove_effect = {
 			set_cosmetic_tag = FRW_United_States_Europe_name
+		}
+		complete_effect = { 
+			
 		}
 		fixed_random_seed = no
 		fire_only_once = yes
@@ -200,11 +202,14 @@ FRW_European_Federation = {
 			visible = {
 			}
 			available = {
-				ENL={
+				NOT={
+                ENL={
 					all_owned_state = { 
 						is_owned_by = FRW
 					}
 				}
+				}
+				
 				
 			   # has_decision = United_States_Europe_ENL
 			} 
@@ -215,13 +220,20 @@ FRW_European_Federation = {
 				tag = FRW
 			}
 			
-			complete_effect = { 
+			remove_effect = { 
 				
+				#every_state = {
+				#	limit = {
+				#	  OR = {
+				#		is_core_of = ENL
+				#	  }
+				#	}
+				#	transfer_state_to= ENL
+				 # } 
 				every_state = {
 					limit = {
-					  OR = {
 						is_core_of = ENL
-					  }
+						#is_owned_by = ENL 
 					}
 					transfer_state_to= ENL
 				  }
@@ -238,8 +250,8 @@ FRW_European_Federation = {
 					}
 					set_politics = {
 						ruling_party = Revolutionism
-						long_name = ENL_Revolutionism_party_long
-						name = ENL_Revolutionism_party
+						long_name = ENL_Revolutionism_party_new_long
+						name = ENL_Revolutionism_new_party
 					}
 					set_popularities = {
 						Revolutionism = 100
@@ -259,11 +271,14 @@ FRW_European_Federation = {
 			visible = {
 			}
 			available = {
-				WWS={
+				NOT={
+                WWS={
 					all_owned_state = { 
 						is_owned_by = FRW
 					}
 				}
+				}
+				
 				
 			   # has_decision = United_States_Europe_ENL
 			} 
@@ -274,8 +289,33 @@ FRW_European_Federation = {
 				tag = FRW
 			}
 			
-			complete_effect = { 
-
+			remove_effect = { 
+				every_state = {
+					limit = {
+					  OR = {
+						is_core_of  = AGC
+						is_core_of  = LSB
+						is_core_of  = DHD
+						is_core_of  = DON
+						is_core_of  = DOF
+						is_core_of  = DOB
+						is_core_of  = DOR 
+						is_core_of  = DOL
+						is_core_of  = DOH
+						is_core_of  = DOA
+						is_core_of  = DOM
+						is_core_of  = DOS
+						is_core_of = SAA
+						is_core_of = SAB 
+						is_core_of = SAC
+						is_core_of = SAD
+						is_core_of = SAE
+						is_core_of = SAF
+						is_core_of = SAG
+					  }
+					}
+					add_core_of = WWS
+				  }
 				every_state = {
 					limit = {
 					  OR = {
@@ -301,14 +341,22 @@ FRW_European_Federation = {
 					}
 					set_politics = {
 						ruling_party = Revolutionism
-						long_name = WWS_Revolutionism_party_long
-						name = WWS_Revolutionism_party
+						long_name = WWS_Revolutionism_party_new_long
+						name = WWS_Revolutionism_new_party
 					}
 					set_popularities = {
 						Revolutionism = 100
 					}
 				}
 				FRW = { add_to_faction = WWS}
+				FRW={
+					950={
+						transfer_state_to = FRW
+					}
+					28={
+						transfer_state_to = FRW
+					}
+				  } 
 			}
 			fixed_random_seed = no
 			fire_only_once = yes
@@ -317,7 +365,309 @@ FRW_European_Federation = {
 				factor = 1
 				}
 		}
-	
+		European_Federation_ITE = {
+			icon = generic_ignite_civil_war
+			visible = {
+			}
+			available = {
+				NOT={
+                    ITE={
+						all_owned_state = { 
+							is_owned_by = FRW
+						}
+					}
+					PMA={
+						all_owned_state = { 
+							is_owned_by = FRW
+						}
+					}
+					VCT={
+						all_owned_state = { 
+							is_owned_by = FRW
+						}
+					}
+					LMJ={
+						all_owned_state = { 
+							is_owned_by = FRW
+						}
+					}
+					RDN={
+						all_owned_state = { 
+							is_owned_by = FRW
+						}
+					}
+					TCY={
+						all_owned_state = { 
+							is_owned_by = FRW
+						}
+					}
+				}
+					
+				
+			   # has_decision = United_States_Europe_ENL
+			} 
+			#days_re_enable = 30
+			days_remove = 30
+			cost = 60
+			allowed = {
+				tag = FRW
+			}
+			
+			remove_effect = { 
+				every_state = {
+					limit = {
+					  OR = {
+						is_core_of  = ITE
+						is_core_of  = VCT
+						is_core_of  = PMA
+					    is_core_of  = LMJ
+						is_core_of  = TCY
+						is_core_of  = RDN
+					  }
+					}
+					add_core_of = ITE
+				  }
+				every_state = {
+					limit = {
+					  OR = {
+						is_core_of = ITE
+					  }
+					}
+					transfer_state_to= ITE
+				  }
+				FRW={
+					puppet = ITE
+				}  
+				ITE={
+					leave_faction = yes
+					set_cosmetic_tag = ITE_Revolutionism_name
+					promote_character = {
+						character = ITE_Benito_Mussolini
+						ideology = Nationalism_revolutionism
+					}
+					set_politics = {
+						ruling_party = Revolutionism
+						long_name = ITE_Revolutionism_party_new_long
+						name = ITE_Revolutionism_party_new
+					}
+					set_popularities = {
+						Revolutionism = 100
+					}
+				}
+				FRW = { add_to_faction = ITE}
+			}
+			fixed_random_seed = no
+			fire_only_once = yes
+			is_good = no
+				ai_will_do = {
+				factor = 1
+				}
+		}
+		European_Federation_SIW = {
+			icon = generic_ignite_civil_war
+			visible = {
+			}
+			available = {
+				NOT={
+                    SIW={
+						all_owned_state = { 
+							is_owned_by = FRW
+						}
+					}
+					KLD={
+						all_owned_state = { 
+							is_owned_by = FRW
+						}
+					}
+					DMT={
+						all_owned_state = { 
+							is_owned_by = FRW
+						}
+					}
+					HES={
+						all_owned_state = { 
+							is_owned_by = FRW
+						}
+					}
+					ALB={
+						all_owned_state = { 
+							is_owned_by = FRW
+						}
+					}
+					BOJ={
+						all_owned_state = { 
+							is_owned_by = FRW
+						}
+					}
+					YED={
+						all_owned_state = { 
+							is_owned_by = FRW
+						}
+					}
+				}
+					
+				
+			} 
+			#days_re_enable = 30
+			days_remove = 30
+			cost = 60
+			allowed = {
+				tag = FRW
+			}
+			
+			remove_effect = { 
+				every_state = {
+					limit = {
+					  OR = {
+						is_core_of  = HES
+						is_core_of  = DMT
+					    is_core_of  = ALB
+						is_core_of  = KLD
+						is_core_of  = BOJ
+						is_core_of  = YED
+					  }
+					}
+					add_core_of = SIW
+				  }
+				every_state = {
+					limit = {
+					  OR = {
+						is_core_of = SIW
+					  }
+					}
+					transfer_state_to= SIW
+				  }
+				FRW={
+					puppet = SIW
+				}  
+				SIW={
+					leave_faction = yes
+					set_cosmetic_tag = SIW_Revolutionism_name
+					add_country_leader_role = {
+						character = SIW_Dragisa_Lapcevic
+						promote_leader = yes
+						country_leader = {
+							ideology = Nationalism_revolutionism
+							expire = "1965.1.1.1"
+							#traits = { war_industrialist }
+						}
+					}
+					promote_character = {
+						character = SIW_Dragisa_Lapcevic
+						ideology = Nationalism_revolutionism
+					} 
+					set_politics = {
+						ruling_party = Revolutionism
+						long_name = SIW_Revolutionism_party_new_long
+						name = SIW_Revolutionism_party_new
+					}
+					set_popularities = {
+						Revolutionism = 100
+					}
+				}
+				FRW = { add_to_faction = SIW}
+			}
+			fixed_random_seed = no
+			fire_only_once = yes
+			is_good = no
+				ai_will_do = {
+				factor = 1
+				}
+		}
+		European_Federation_XYL = {
+			icon = generic_ignite_civil_war
+			visible = {
+			}
+			available = {
+				NOT={
+                    KOH={
+						all_owned_state = { 
+							is_owned_by = FRW
+						}
+					}
+					AOX={
+						all_owned_state = { 
+							is_owned_by = FRW
+						}
+					}
+					BXM={
+						all_owned_state = { 
+							is_owned_by = FRW
+						}
+					}
+					KGL={
+						all_owned_state = { 
+							is_owned_by = FRW
+						}
+					}
+				}
+					
+					
+			} 
+			#days_re_enable = 30
+			days_remove = 1
+			cost = 60
+			allowed = {
+				tag = FRW
+			}
+			
+			remove_effect = { 
+				every_state = {
+					limit = {
+					  OR = {
+						is_core_of  = KOH
+						is_core_of  = AOX
+					    is_core_of  = BXM
+						is_core_of  = KGL
+					  }
+					}
+					add_core_of = XYL
+				  }
+				every_state = {
+					limit = {
+					  OR = {
+						is_core_of = XYL
+					  }
+					}
+					transfer_state_to= XYL
+				  }
+				FRW={
+					puppet = XYL
+				}  
+				XYL={
+					leave_faction = yes
+					set_cosmetic_tag = XYL_Revolutionism_name
+					add_country_leader_role = {
+						character = XYL_Oszkar_Jaszi
+						promote_leader = yes
+						country_leader = {
+							ideology = Nationalism_revolutionism
+							expire = "1965.1.1.1"
+							#traits = { war_industrialist }
+						}
+					}
+					promote_character = {
+						character = XYL_Oszkar_Jaszi
+						ideology = Nationalism_revolutionism
+					} 
+					set_politics = {
+						ruling_party = Revolutionism
+						long_name = XYL_Revolutionism_party_new_long
+						name = XYL_Revolutionism_party_new
+					}
+					set_popularities = {
+						Revolutionism = 100
+					}
+				}
+				FRW = { add_to_faction = XYL}
+			}
+			fixed_random_seed = no
+			fire_only_once = yes
+			is_good = no
+				ai_will_do = {
+				factor = 1
+				}
+		}
 	}
 ###
 FRW_Anti_imperialism = {

@@ -2851,15 +2851,44 @@ focus = {
 focus = {
 	id = FRW_focus134
 	icon = GFX_goal_FRW_focus134
-	cost = 7.00
+	cost = 5.00
 	prerequisite = {
 		focus = FRW_focus7
 	}
- 
+	available = {
+		has_country_flag = FRW_Far_left_1
+	}
+    bypass = {
+	   # has_country_flag = FRW_Far_left_1
+    }
 	x = 14
 	y = 5
 	completion_reward = {
+		remove_ideas = National_emergency
+		add_country_leader_role = {
+			character = FRW_Gustave_Herve
+			promote_leader = yes
+			country_leader = {
+				ideology = Nationalism_revolutionism
+				expire = "1965.1.1.1"
+				#traits = { war_industrialist }
+			}
+		}
+		hidden_effect = {
+			promote_character = {
+			character = FRW_Gustave_Herve
+			ideology = Nationalism_revolutionism
+		} 
+		}
 		
+		set_politics = {
+			ruling_party = Revolutionism
+			long_name = FRW_Revolutionism_party_new_long
+			name = FRW_Revolutionism_party_new
+		}
+		set_popularities = {
+			Revolutionism = 100
+		}
 	}
 }
 focus = {
@@ -2873,7 +2902,8 @@ focus = {
 	x = 12
 	y = 6
 	completion_reward = {
-		
+		add_war_support = 0.1
+		add_ideas = FRW_revanchism
 	}
 }
 focus = {
@@ -2901,7 +2931,8 @@ focus = {
 	x = 13
 	y = 7
 	completion_reward = {
-		
+		add_war_support = 0.05
+		add_political_power = 100
 	}
 }
 focus = {
@@ -2915,7 +2946,8 @@ focus = {
 	x = 15
 	y = 7
 	completion_reward = {
-		
+		add_war_support = 0.05
+		add_political_power = 100
 	}
 }
 focus = {
@@ -2943,7 +2975,7 @@ focus = {
 	x = 15
 	y = 8
 	completion_reward = {
-		unlock_decision_category_to7oltip=FRW_United_States_Europe
+		unlock_decision_category_tooltip=FRW_United_States_Europe
 		every_state = {
 			limit = {
 			  OR = {
@@ -2966,6 +2998,7 @@ focus = {
 	x = 18
 	y = 8
 	completion_reward = {
+		unlock_decision_category_tooltip=FRW_European_Federation
 		every_state = {
 			limit = {
 			  OR = {

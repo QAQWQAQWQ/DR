@@ -6,7 +6,53 @@ add_namespace = FRW
 add_namespace = Paris_Commune
 add_namespace = Assembly_Tours
 add_namespace = FRW_Syndicates
-
+add_namespace = FRW_Far_left
+country_event = {
+	id = FRW_Far_left.0
+	title = FRW_Far_left.0.t
+	desc = FRW_Far_left.0.d
+	picture = GFX_Far_left_0
+	trigger = {
+		has_country_leader = {
+				character = FRW_Jean_Jaures
+				ruling_only = yes
+		}
+		has_country_flag = FRW_17_b_tt
+		Revolutionism > 0.75
+	}
+	fire_only_once = yes
+	option = {
+		name = FRW_Far_left.0.a
+		kill_country_leader = yes
+		promote_character = {
+			character = FRW_Comite_communal
+			ideology = Authoritarianism_revolutionism
+		}
+		set_politics = {
+			ruling_party = Revolutionism
+			long_name = FRW_Comite_communal_new_long
+			name = FRW_Comite_communal_party_new
+		}
+		set_popularities = {
+			Revolutionism = 100
+		}
+		
+		add_ideas = National_emergency
+	    }
+}
+country_event = {
+	id = FRW_Far_left.1
+	title = FRW_Far_left.1.t
+	desc = FRW_Far_left.1.d
+	picture = GFX_Far_left_0
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Far_left.1.a
+		set_country_flag = FRW_Far_left_1
+		#complete_national_focus = FRW_focus134
+	    }
+}
 country_event = {
 	id = FRW_Syndicates.0
 	title = FRW_Syndicates.0.t
@@ -469,6 +515,7 @@ country_event = {
 			ideology = Revolutionism
 			popularity = 0.03
 		}
+		set_country_flag = FRW_17_b_tt
 			}
 	option = {
 	    name = FRW.17.c
