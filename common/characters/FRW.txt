@@ -1240,24 +1240,7 @@ characters={
 		}
 	}
 
-	FRW_Charles_de_Gaulle={
-		name=FRW_Charles_de_Gaulle
-		portraits={
-			army={
-				large="gfx/leaders/FRW/Portrait_Charles_de_Gaulle.tga"
-				small="gfx/interface/ideas/Portrait_Charles_de_Gaulle.dds"
-			}
-		}
-		corps_commander={
-			traits={ skilled_staffer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=1
-		}
-	}
-
+	
 
 	FRW_Adolphe_Messimy={
 		name=FRW_Adolphe_Messimy
@@ -1359,23 +1342,6 @@ FRW_georges_louis_humbert={
 			army={
 				large="gfx/leaders/FRW/Portrait_Jacques_Doriot.tga"
 				small="gfx/interface/ideas/Portrait_Jacques_Doriot.dds"
-			}
-		}
-		corps_commander={
-			traits={ Lieutenant_general }
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=2
-		}
-	}
-	FRW_Charles_de_Gaulle={
-		name=FRW_Charles_de_Gaulle
-		portraits={
-			army={
-				large="gfx/leaders/FRW/Portrait_Charles_de_Gaulle.tga"
-				small="gfx/interface/ideas/Portrait_Charles_de_Gaulle.dds"
 			}
 		}
 		corps_commander={

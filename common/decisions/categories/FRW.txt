@@ -8,7 +8,7 @@ FRW_United_States_Europe = {
 		tag = FRW
 	}
 	visible = {
-		#has_country_flag = FRW.35_flag
+		has_completed_focus=FRW_focus140
 	}
 
 
@@ -23,7 +23,7 @@ FRW_European_Federation = {
 		tag = FRW
 	}
 	visible = {
-		#has_country_flag = FRW.35_flag
+		has_completed_focus=FRW_focus141
 	}
 
 

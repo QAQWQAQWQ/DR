@@ -1,6 +1,16 @@
 ideas = {
     country = {
 		####HIDDEN
+		FRW_Eagle_spirit= {
+			picture = Eagle_spirit
+			modifier = {
+				army_core_attack_factor=0.05		
+                army_core_defence_factor=0.05
+				max_dig_in_factor=0.1
+				planning_speed=0.1
+				training_time_army_factor=-0.05
+			}
+        }
 		National_emergency= {
 			picture = National_emergency
 			modifier = {

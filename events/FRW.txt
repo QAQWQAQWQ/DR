@@ -36,7 +36,7 @@ country_event = {
 		set_popularities = {
 			Revolutionism = 100
 		}
-		
+		country_event = {id=FRW_Far_left.1 days=10}
 		add_ideas = National_emergency
 	    }
 }
@@ -50,6 +50,19 @@ country_event = {
 	option = {
 		name = FRW_Far_left.1.a
 		set_country_flag = FRW_Far_left_1
+		#complete_national_focus = FRW_focus134
+	    }
+}
+country_event = {
+	id = FRW_Far_left.2
+	title = FRW_Far_left.2.t
+	desc = FRW_Far_left.2.d
+	picture = GFX_Far_left_0
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Far_left.2.a
+		set_country_flag = FRW_Far_left_2
 		#complete_national_focus = FRW_focus134
 	    }
 }

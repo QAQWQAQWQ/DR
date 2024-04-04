@@ -152,9 +152,7 @@ Destructive_industrial_complex = {
 FRW_United_States_Europe = {
 United_States_Europe_FRW = {
 		icon = generic_ignite_civil_war
-		visible = {
-			has_completed_focus=FRW_focus140
-		}
+		
 		available = {
 			AND={
 				126={

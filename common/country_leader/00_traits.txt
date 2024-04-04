@@ -46,7 +46,17 @@ Anti_revisionists = {
 
 
 
-
+Ultra_socialist = {
+	random = no
+	war_support_factor = 0.03
+	stability_factor = 0.1
+	conscription_factor = 0.03
+	political_advisor_cost_factor = -0.03
+	consumer_goods_factor= -0.03
+	ai_will_do = {
+		factor = 1
+	}
+}
 
 
 

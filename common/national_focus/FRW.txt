@@ -165,17 +165,34 @@ completion_reward = {
 		}
 		available = {
 			has_government = Reformism
+			#check_variable = { parliament_seat_array^temp_seats^1 = 11 }
 		}
 		x = 21
 		y = 3
 		completion_reward = {
 			add_political_power = 200
 			custom_effect_tooltip = FRW_focus9_effect
-			custom_effect_tooltip = available_political_advisor
-	        show_ideas_tooltip = FRW_Leon_Blum_H
-			remove_ideas = FRW_Alexandre_Millerand_H
-			add_ideas = FRW_Leon_Blum_H
-			set_country_flag = has_head_of_government
+			FRW={
+			set_temp_variable = { temp_member = 3 }
+			set_temp_variable = { temp_seats = 15 }
+			modify_parliament_seat = yes
+			} 
+			FRW={
+				set_temp_variable = { temp_member = 2 }
+				set_temp_variable = { temp_seats = 5 }
+				modify_parliament_seat = yes
+			}  
+			FRW={
+				set_temp_variable = { temp_member = 4 }
+				set_temp_variable = { temp_seats = 0 }
+				modify_parliament_seat = yes
+				} 
+			custom_effect_tooltip = FRW_party_1_text_array
+			custom_effect_tooltip = FRW_party_2_text_array
+			custom_effect_tooltip = FRW_party_3_text_array
+			custom_effect_tooltip = FRW_party_4_text_array
+			custom_effect_tooltip = FRW_party_5_text_array
+			custom_effect_tooltip = FRW_party_6_text_array
 		}
 	}
 	focus = {
@@ -2917,7 +2934,9 @@ focus = {
 	x = 14
 	y = 6
 	completion_reward = {
-		
+		country_event = FRW_Far_left.2
+		clr_country_flag = parliament_mian_button_yes
+		custom_effect_tooltip = FRW_Syndicates.0_tooltip
 	}
 }
 focus = {
@@ -2933,6 +2952,7 @@ focus = {
 	completion_reward = {
 		add_war_support = 0.05
 		add_political_power = 100
+		add_ideas = FRW_Eagle_spirit
 	}
 }
 focus = {
@@ -2961,6 +2981,24 @@ focus = {
 	x = 17
 	y = 7
 	completion_reward = {
+		swap_ideas = {
+			remove_idea = Local_police
+			add_idea = Special_police
+		}
+		swap_ideas = {
+			remove_idea = State_media
+			add_idea = Media_control
+		}
+		add_trait = {
+			character = FRW_Gustave_Herve 
+			ideology = Nationalism_revolutionism
+			trait = propaganda_expert
+		}
+		add_trait = {
+			character = FRW_Gustave_Herve 
+			ideology = Nationalism_revolutionism
+			trait = Ultra_socialist
+		}
 		
 	}
 }
@@ -2971,7 +3009,9 @@ focus = {
 	prerequisite = {
 		focus = FRW_focus139
 	}
- 
+	mutually_exclusive = {
+		focus = FRW_focus141
+	}
 	x = 15
 	y = 8
 	completion_reward = {
@@ -2994,7 +3034,9 @@ focus = {
 	prerequisite = {
 		focus = FRW_focus139
 	}
- 
+	mutually_exclusive = {
+		focus = FRW_focus140
+	}
 	x = 18
 	y = 8
 	completion_reward = {
