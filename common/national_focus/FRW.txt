@@ -417,7 +417,7 @@ completion_reward = {
 		ideology = Democracy_Reformism
 		trait = Pioneer_socialism
 	}
-	country_event = { id = FRW.35 days = 15 }
+	
 }
 	}
 	focus = {
@@ -953,10 +953,10 @@ completion_reward = {
 			 
 		} 
 		allow_branch = {
-			#has_country_leader = {
-			#	character = FRW_Georges_Clemenceau
-			#	ruling_only = yes
-			#}
+			has_country_leader = {
+				character = FRW_Georges_Clemenceau
+				ruling_only = yes
+			}
 		}
 		x = 14
 		y = 9
@@ -2179,6 +2179,7 @@ focus = {
 	x = 40
 	y = 7
 	completion_reward = { 
+		air_experience = 50
 		add_advisor_role = {
 			character = FRW_Joseph_Vuillemin
 			activate = yes
@@ -2227,6 +2228,7 @@ focus = {
 	x = 42 
 	y = 7
 	completion_reward = {
+		air_experience = 50
 		add_ace = {
 			name = "保罗·丰克"
 			surname = "保罗·丰克"
