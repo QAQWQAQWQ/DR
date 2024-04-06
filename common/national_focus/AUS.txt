@@ -2422,7 +2422,7 @@ bosnia_war_end = yes
 		y = 6
 		allow_branch={ 
 			OR = {
-			# always = yes
+			 always = yes
 				AND = {
 			has_completed_focus = AUS_bir_15
 			bosnia_war_end_tri_tool = yes
@@ -2482,7 +2482,7 @@ bosnia_war_end = yes
 			focus = AUS_federation_0
 		}
 		available = {
-			has_completed_focus = AUS_ethnic_construction_5
+			aus_hun_nat_eth_completed_tri = yes
 		}
 		completion_reward = {
 		}
