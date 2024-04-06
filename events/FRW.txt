@@ -6,7 +6,68 @@ add_namespace = FRW
 add_namespace = Paris_Commune
 add_namespace = Assembly_Tours
 add_namespace = FRW_Syndicates
-
+add_namespace = FRW_Far_left
+country_event = {
+	id = FRW_Far_left.0
+	title = FRW_Far_left.0.t
+	desc = FRW_Far_left.0.d
+	picture = GFX_Far_left_0
+	trigger = {
+		has_country_leader = {
+				character = FRW_Jean_Jaures
+				ruling_only = yes
+		}
+		has_country_flag = FRW_17_b_tt
+		has_country_flag = EVENT_FRW_5_a
+		Revolutionism > 0.75
+	}
+	fire_only_once = yes
+	option = {
+		name = FRW_Far_left.0.a
+		
+		kill_country_leader = yes
+		promote_character = {
+			character = FRW_Comite_communal
+			ideology = Authoritarianism_revolutionism
+		}
+		set_politics = {
+			ruling_party = Revolutionism
+			long_name = FRW_Comite_communal_new_long
+			name = FRW_Comite_communal_party_new
+		}
+		set_popularities = {
+			Revolutionism = 100
+		}
+		country_event = {id=FRW_Far_left.1 days=10}
+		add_ideas = National_emergency
+	    }
+}
+country_event = {
+	id = FRW_Far_left.1
+	title = FRW_Far_left.1.t
+	desc = FRW_Far_left.1.d
+	picture = GFX_Far_left_0
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Far_left.1.a
+		set_country_flag = FRW_Far_left_1
+		#complete_national_focus = FRW_focus134
+	    }
+}
+country_event = {
+	id = FRW_Far_left.2
+	title = FRW_Far_left.2.t
+	desc = FRW_Far_left.2.d
+	picture = GFX_Far_left_0
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Far_left.2.a
+		set_country_flag = FRW_Far_left_2
+		#complete_national_focus = FRW_focus134
+	    }
+}
 country_event = {
 	id = FRW_Syndicates.0
 	title = FRW_Syndicates.0.t
@@ -102,6 +163,7 @@ news_event = {
 		trigger = {
 			AND={
 				has_country_flag = FRW_Syndicalist_protests
+				has_country_flag = EVENT_FRW_5_b
 			}
 		}
 		name = Assembly_Tours.1.b
@@ -196,6 +258,7 @@ country_event = {
 				option = {
 					name = FRW.4.a
 					country_event = {id=FRW.5 days=5}
+					set_country_flag = event_FRW_4
 					remove_advisor_role = {
 						character = "FRW_Alexandre_Millerand"
 						slot = head_of_government
@@ -221,6 +284,7 @@ country_event = {
 						}
 		option = {
 		name = FRW.5.a
+		set_country_flag = EVENT_FRW_5_a
 		custom_effect_tooltip = available_political_advisor
 		show_ideas_tooltip = FRW_LudovicOscar_Frossard_P
 		show_ideas_tooltip = FRW_Paul_Faure_P
@@ -231,6 +295,7 @@ country_event = {
 		}
 		option = {
 		name = FRW.5.b
+		set_country_flag = EVENT_FRW_5_b
 		custom_effect_tooltip = available_political_advisor
 		show_ideas_tooltip = FRW_Sebastian_Fuhr_P
 		show_ideas_tooltip = FRW_Edouard_Berth_P
@@ -289,7 +354,10 @@ country_event = {
 		add_political_power = -100
 		add_stability = -0.05
         set_country_flag = FRW_Syndicalist_protests
-			}
+		hidden_effect = {
+			country_event = {id=FRW.4 days=3}
+		}
+		}
 		}
 country_event = {
 		id = FRW.8
@@ -469,6 +537,7 @@ country_event = {
 			ideology = Revolutionism
 			popularity = 0.03
 		}
+		set_country_flag = FRW_17_b_tt
 			}
 	option = {
 	    name = FRW.17.c
@@ -694,8 +763,14 @@ country_event = {
 		}
 	option = {
 		name = FRW.30.a
-		country_event = {id=FRW.31 days=1}
-		}		
+		set_country_flag=event_FRW_30
+	}
+	option = {
+		name = FRW.30.b
+		trigger = {
+			has_country_flag = event_FRW_45
+		}
+	}			
 }
 country_event = {
 	id = FRW.31
@@ -754,10 +829,13 @@ country_event = {
 	id = FRW.35
 	title = FRW.35.t
 	desc = FRW.35.d
-	picture = GFX_FRW_31
+	picture = GFX_FRW_5
 	is_triggered_only = yes
 	trigger = {
-		
+		has_country_leader = {
+				character = FRW_Jean_Jaures
+				ruling_only = yes
+		}
 	}
 	option = {
 		name = FRW.35.a
@@ -771,7 +849,7 @@ country_event = {
 			Anarchism=5
 		}
 		ROOT={
-			mark_focus_tree_layout_dirty = yes
+			#mark_focus_tree_layout_dirty = yes
 		}
 		}
 	option = {
@@ -785,6 +863,10 @@ country_event = {
 				traits = { }
 			}
 		}
+		promote_character = {
+			character = FRW_Leon_Blum
+			ideology = Democracy_Reformism
+		}
 		set_popularities = {
 			Reformism=62
 			Liberalism=18
@@ -792,7 +874,7 @@ country_event = {
 			Anarchism=5
 		}
 		ROOT={
-			mark_focus_tree_layout_dirty = yes
+			#mark_focus_tree_layout_dirty = yes
 		}
 		
 		}
@@ -808,7 +890,7 @@ country_event = {
 			Anarchism=5
 		}
 		ROOT={
-			mark_focus_tree_layout_dirty = yes
+			#mark_focus_tree_layout_dirty = yes
 		}
 		}	
 	option = {
@@ -826,7 +908,7 @@ country_event = {
 			Revolutionism=5
 		}
 		ROOT={
-			mark_focus_tree_layout_dirty = yes
+			#mark_focus_tree_layout_dirty = yes
 		}
 		
 		}
@@ -1008,7 +1090,7 @@ country_event = {
 		hidden_effect = {
 		country_event={id=FRW.6 days=1} 
 		}
-		
+		set_country_flag=event_FRW_45
 		}
 	option = {
 		name = FRW.45.b

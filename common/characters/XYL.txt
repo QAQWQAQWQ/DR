@@ -1,4 +1,18 @@
 characters={
+	XYL_Oszkar_Jaszi={
+		name=XYL_Oszkar_Jaszi
+		portraits={
+			civilian={
+				large="gfx/leaders/XYL/Portrait_Oszkar_Jaszi.tga"
+			}
+		}
+		country_leader={
+			ideology=Nationalism_revolutionism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	XYL_Kuhn_Bella={
 		name=XYL_Kuhn_Bella
 		portraits={

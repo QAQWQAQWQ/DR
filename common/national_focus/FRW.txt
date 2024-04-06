@@ -165,17 +165,34 @@ completion_reward = {
 		}
 		available = {
 			has_government = Reformism
+			#check_variable = { parliament_seat_array^temp_seats^1 = 11 }
 		}
 		x = 21
 		y = 3
 		completion_reward = {
 			add_political_power = 200
 			custom_effect_tooltip = FRW_focus9_effect
-			custom_effect_tooltip = available_political_advisor
-	        show_ideas_tooltip = FRW_Leon_Blum_H
-			remove_ideas = FRW_Alexandre_Millerand_H
-			add_ideas = FRW_Leon_Blum_H
-			set_country_flag = has_head_of_government
+			FRW={
+			set_temp_variable = { temp_member = 3 }
+			set_temp_variable = { temp_seats = 15 }
+			modify_parliament_seat = yes
+			} 
+			FRW={
+				set_temp_variable = { temp_member = 2 }
+				set_temp_variable = { temp_seats = 5 }
+				modify_parliament_seat = yes
+			}  
+			FRW={
+				set_temp_variable = { temp_member = 4 }
+				set_temp_variable = { temp_seats = 0 }
+				modify_parliament_seat = yes
+				} 
+			custom_effect_tooltip = FRW_party_1_text_array
+			custom_effect_tooltip = FRW_party_2_text_array
+			custom_effect_tooltip = FRW_party_3_text_array
+			custom_effect_tooltip = FRW_party_4_text_array
+			custom_effect_tooltip = FRW_party_5_text_array
+			custom_effect_tooltip = FRW_party_6_text_array
 		}
 	}
 	focus = {
@@ -400,7 +417,7 @@ completion_reward = {
 		ideology = Democracy_Reformism
 		trait = Pioneer_socialism
 	}
-	country_event = { id = FRW.35 days = 15 }
+	
 }
 	}
 	focus = {
@@ -936,10 +953,10 @@ completion_reward = {
 			 
 		} 
 		allow_branch = {
-			#has_country_leader = {
-			#	character = FRW_Georges_Clemenceau
-			#	ruling_only = yes
-			#}
+			has_country_leader = {
+				character = FRW_Georges_Clemenceau
+				ruling_only = yes
+			}
 		}
 		x = 14
 		y = 9
@@ -2162,6 +2179,7 @@ focus = {
 	x = 40
 	y = 7
 	completion_reward = { 
+		air_experience = 50
 		add_advisor_role = {
 			character = FRW_Joseph_Vuillemin
 			activate = yes
@@ -2210,6 +2228,7 @@ focus = {
 	x = 42 
 	y = 7
 	completion_reward = {
+		air_experience = 50
 		add_ace = {
 			name = "保罗·丰克"
 			surname = "保罗·丰克"
@@ -2851,15 +2870,44 @@ focus = {
 focus = {
 	id = FRW_focus134
 	icon = GFX_goal_FRW_focus134
-	cost = 7.00
+	cost = 5.00
 	prerequisite = {
 		focus = FRW_focus7
 	}
- 
+	available = {
+		has_country_flag = FRW_Far_left_1
+	}
+    bypass = {
+	   # has_country_flag = FRW_Far_left_1
+    }
 	x = 14
 	y = 5
 	completion_reward = {
+		remove_ideas = National_emergency
+		add_country_leader_role = {
+			character = FRW_Gustave_Herve
+			promote_leader = yes
+			country_leader = {
+				ideology = Nationalism_revolutionism
+				expire = "1965.1.1.1"
+				#traits = { war_industrialist }
+			}
+		}
+		hidden_effect = {
+			promote_character = {
+			character = FRW_Gustave_Herve
+			ideology = Nationalism_revolutionism
+		} 
+		}
 		
+		set_politics = {
+			ruling_party = Revolutionism
+			long_name = FRW_Revolutionism_party_new_long
+			name = FRW_Revolutionism_party_new
+		}
+		set_popularities = {
+			Revolutionism = 100
+		}
 	}
 }
 focus = {
@@ -2873,7 +2921,8 @@ focus = {
 	x = 12
 	y = 6
 	completion_reward = {
-		
+		add_war_support = 0.1
+		add_ideas = FRW_revanchism
 	}
 }
 focus = {
@@ -2887,7 +2936,9 @@ focus = {
 	x = 14
 	y = 6
 	completion_reward = {
-		
+		country_event = FRW_Far_left.2
+		clr_country_flag = parliament_mian_button_yes
+		custom_effect_tooltip = FRW_Syndicates.0_tooltip
 	}
 }
 focus = {
@@ -2901,7 +2952,9 @@ focus = {
 	x = 13
 	y = 7
 	completion_reward = {
-		
+		add_war_support = 0.05
+		add_political_power = 100
+		add_ideas = FRW_Eagle_spirit
 	}
 }
 focus = {
@@ -2915,7 +2968,8 @@ focus = {
 	x = 15
 	y = 7
 	completion_reward = {
-		
+		add_war_support = 0.05
+		add_political_power = 100
 	}
 }
 focus = {
@@ -2929,6 +2983,24 @@ focus = {
 	x = 17
 	y = 7
 	completion_reward = {
+		swap_ideas = {
+			remove_idea = Local_police
+			add_idea = Special_police
+		}
+		swap_ideas = {
+			remove_idea = State_media
+			add_idea = Media_control
+		}
+		add_trait = {
+			character = FRW_Gustave_Herve 
+			ideology = Nationalism_revolutionism
+			trait = propaganda_expert
+		}
+		add_trait = {
+			character = FRW_Gustave_Herve 
+			ideology = Nationalism_revolutionism
+			trait = Ultra_socialist
+		}
 		
 	}
 }
@@ -2939,11 +3011,13 @@ focus = {
 	prerequisite = {
 		focus = FRW_focus139
 	}
- 
+	mutually_exclusive = {
+		focus = FRW_focus141
+	}
 	x = 15
 	y = 8
 	completion_reward = {
-		unlock_decision_category_to7oltip=FRW_United_States_Europe
+		unlock_decision_category_tooltip=FRW_United_States_Europe
 		every_state = {
 			limit = {
 			  OR = {
@@ -2962,10 +3036,13 @@ focus = {
 	prerequisite = {
 		focus = FRW_focus139
 	}
- 
+	mutually_exclusive = {
+		focus = FRW_focus140
+	}
 	x = 18
 	y = 8
 	completion_reward = {
+		unlock_decision_category_tooltip=FRW_European_Federation
 		every_state = {
 			limit = {
 			  OR = {

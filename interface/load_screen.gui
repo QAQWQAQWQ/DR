@@ -14,7 +14,7 @@ guiTypes = {
 		windowType = {
 			name = "status"
 			backGround = ""
-			position = { x = 0 y = -180 }
+			position = { x = 0 y = 20 }
 			size = { x = 1024 y = 768 }
 			moveable = 0
 			dontRender = ""
@@ -26,8 +26,8 @@ guiTypes = {
 			iconType = {
 				name = "progressbar"
 				spriteType = "GFX_loadingstatus_progress"
-				position = { x= -130 y = 360 }
-				scale = 0.85
+				position = { x= 570 y = 125 }
+				#scale = 0.85
 			}
 			
 			instantTextBoxType = {
@@ -61,11 +61,11 @@ guiTypes = {
 			#	spriteType = "GFX_loadingtip_bg"
 			#	position = { x= 300 y = -147 }
 			#}
-			iconType = {
-				name ="loadingscreen_back"
-				spriteType = "GFX_loadingscreen_back"
-				position = { x = 20 y = 120 }
-			}
+			#iconType = {
+			#	name ="loadingscreen_back"
+			#	spriteType = "GFX_loadingscreen_back"
+			#	position = { x = 20 y = 120 }
+			#}
 
 
 			instantTextBoxType = {

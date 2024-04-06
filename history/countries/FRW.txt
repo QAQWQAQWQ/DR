@@ -36,10 +36,10 @@ set_convoys = 300
 country_event = { id = FRW.1 days = 10 }
 country_event = { id = FRW.17 days = 35 }
 country_event = { id = FRW.45 days = 125 }
-country_event = { id = FRW.35 days = 400 }
+country_event = { id = FRW.35 days = 411 }
 country_event = { id = FRW.36 days = 375 }
 
-country_event = { id = Assembly_Tours.1 days = 205 }
+country_event = { id = Assembly_Tours.1 days = 200 }
 
 set_politics = {
 	ruling_party =  Reformism
@@ -107,7 +107,6 @@ recruit_character = FRW_Comite_communal
 
 recruit_character = FRW_Maurice_Gustave_Gamelin
 recruit_character = FRW_Gaston_Moch
-recruit_character = FRW_Charles_de_Gaulle
 recruit_character = FRW_Jacques_Sadoul
 recruit_character = FRW_Adolphe_Messimy
 recruit_character = FRW_georges_louis_humbert
@@ -118,7 +117,8 @@ recruit_character = FRW_Leon_Jouhaux
 recruit_character = FRW_Adrien_Rene_Viviani
 recruit_character =	FRW_Marcel_Sembat
 
-
+recruit_character =	FRW_Gustave_Herve
+recruit_character =	FRW_Comite_communal
 FRW_Jacques_Doriot = { set_nationality = NNN }
 
 
