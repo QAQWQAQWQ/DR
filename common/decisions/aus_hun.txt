@@ -1081,19 +1081,15 @@ aus_hun_decisions = {
         target_trigger = {
             FROM = {
 				OR = {
-					is_core_of = AOX
-					is_core_of = BXM
-				}
-				OR = {
-					owner = AOX
+					is_owned_by = AOX
 					AND = {
-						owner = BXM
+						is_owned_by = BXM
 						BXM = {
 							has_idea = Part_of_Habsburgs
 						}
 					}
 					AND = {
-						owner = KOH
+						is_owned_by = KOH
 						KOH = {
 							has_idea = Part_of_Habsburgs
 						}
@@ -1109,7 +1105,7 @@ aus_hun_decisions = {
 				}
             }
         }
-        cost = 50
+        cost = 30
 		days_remove = 200
 		# days_remove = 1
         fire_only_once = no
@@ -1145,7 +1141,7 @@ aus_hun_decisions = {
 			}
 		}
         complete_effect = {
-			remove_idea = AOX_ideas_the_undead_of_hus
+			remove_ideas = { AOX_ideas_the_undead_of_hus }
 			set_variable = { aus_hun_has_meg^3 = 1 }
         }
 	 }
