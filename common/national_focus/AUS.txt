@@ -2422,7 +2422,7 @@ bosnia_war_end = yes
 		y = 6
 		allow_branch={ 
 			OR = {
-			# always = yes
+				# always = yes
 				AND = {
 			has_completed_focus = AUS_bir_15
 			bosnia_war_end_tri_tool = yes
@@ -2482,7 +2482,7 @@ bosnia_war_end = yes
 			focus = AUS_federation_0
 		}
 		available = {
-			aus_hun_nat_eth_completed_tri = yes
+			# aus_hun_nat_eth_completed_tri = yes
 		}
 		completion_reward = {
 			add_political_power = 150
@@ -2653,7 +2653,7 @@ bosnia_war_end = yes
 		icon = GFX_goal_unkown
 		cost = 5.00
 		x = 17
-		y = 11
+		y = 12
 		prerequisite = {
 			focus = AUS_federation_14
 		}
@@ -2666,41 +2666,154 @@ bosnia_war_end = yes
 		available = {
 		}
 		completion_reward = {
+			remove_ideas = {
+				AOX_Hungarian_independence_movement
+			}
+		}
+	}
+	focus = {
+		id = AUS_democratization_0
+		icon = GFX_goal_unkown
+		cost = 5.00
+		x = 23
+		y = 7
+		prerequisite = {
+			focus = AUS_federation_0
+		}
+		available = {
+		}
+		completion_reward = {
 
 		}
 	}
 	focus = {
-		id = AUS_federation_17
+		id = AUS_democratization_1
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 17
-		y = 12
+		x = 22
+		y = 8
 		prerequisite = {
-			focus = AUS_federation_16
+			focus = AUS_democratization_0
 		}
 		available = {
-			NOT = {
-				has_idea = AOX_ideas_the_undead_of_hus
-			}
-			aus_hun_all_sup_more_than_90 = yes
-			aus_hun_all_aut_less_than_10 = yes
 		}
 		completion_reward = {
-			AOX = {
-				every_subject_country = {
-					limit = {
-						aus_hun_part_of_the_Empire = yes
-					}
-					every_state = {
-						limit = {
-							is_core_of = PREV
-						}
-						add_core_of = AOX
-					}
-					AOX = { annex_country = { target = PREV transfer_troops = yes }  }
-				}
-				set_cosmetic_tag = AOX_DON
-			}
+
+		}
+	}
+	focus = {
+		id = AUS_democratization_2
+		icon = GFX_goal_unkown
+		cost = 5.00
+		x = 22
+		y = 9
+		prerequisite = {
+			focus = AUS_democratization_1
+		}
+		available = {
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = AUS_democratization_3
+		icon = GFX_goal_unkown
+		cost = 5.00
+		x = 24
+		y = 8
+		prerequisite = {
+			focus = AUS_democratization_0
+		}
+		available = {
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = AUS_democratization_4
+		icon = GFX_goal_unkown
+		cost = 5.00
+		x = 24
+		y = 9
+		prerequisite = {
+			focus = AUS_democratization_3
+		}
+		available = {
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = AUS_democratization_5
+		icon = GFX_goal_unkown
+		cost = 5.00
+		x = 23
+		y = 10
+		prerequisite = {
+			focus = AUS_democratization_2
+		}
+		prerequisite = {
+			focus = AUS_democratization_4
+		}
+		available = {
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = AUS_democratization_6
+		icon = GFX_goal_unkown
+		cost = 5.00
+		x = 22
+		y = 11
+		prerequisite = {
+			focus = AUS_democratization_5
+		}
+		mutually_exclusive = {
+			focus = AUS_democratization_7
+		}
+		available = {
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = AUS_democratization_7
+		icon = GFX_goal_unkown
+		cost = 5.00
+		x = 24
+		y = 11
+		prerequisite = {
+			focus = AUS_democratization_5
+		}
+		mutually_exclusive = {
+			focus = AUS_democratization_6
+		}
+		available = {
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = AUS_democratization_8
+		icon = GFX_goal_unkown
+		cost = 5.00
+		x = 23
+		y = 12
+		prerequisite = {
+			focus = AUS_democratization_6
+			focus = AUS_democratization_7
+		}
+		available = {
+		}
+		completion_reward = {
+
 		}
 	}
 	focus = {
@@ -2961,6 +3074,175 @@ bosnia_war_end = yes
 		}
 	}
 	focus = {
+		id = AUS_federation_18
+		icon = GFX_goal_unkown
+		cost = 5.00
+		x = 11
+		y = 11
+		available = {
+		}
+		prerequisite = {
+			focus = AUS_federation_6
+		}
+		completion_reward = {
+			build_railway = {
+				level = 2
+				build_only_on_allied = no
+				controller_priority = {
+					base = 2
+					modifier = {
+						OR = {
+							tag = AOX
+							tag = BXM
+						}
+						add = 1
+					}
+				}
+				fallback = yes
+				start_province = 11666
+				target_province = 11542
+			}
+			build_railway = {
+				level = 2
+				build_only_on_allied = no
+				controller_priority = {
+					base = 2
+					modifier = {
+						OR = {
+							tag = AOX
+							tag = BXM
+						}
+						add = 1
+					}
+				}
+				fallback = yes
+				path = { 11666 6739 9692 541 3484 9551 9412 13205 9427 }
+				start_province = 11666
+				target_province = 9427
+			}
+			build_railway = {
+				level = 2
+				build_only_on_allied = no
+				controller_priority = {
+					base = 2
+					modifier = {
+						OR = {
+							tag = AOX
+							tag = BXM
+						}
+						add = 1
+					}
+				}
+				fallback = yes
+				start_province = 11666
+				target_province = 9660
+			}
+			build_railway = {
+				level = 2
+				build_only_on_allied = no
+				controller_priority = {
+					base = 2
+					modifier = {
+						OR = {
+							tag = AOX
+							tag = BXM
+						}
+						add = 1
+					}
+				}
+				fallback = yes
+				start_province = 11666
+				target_province = 11899
+			}
+			build_railway = {
+				level = 2
+				build_only_on_allied = no
+				controller_priority = {
+					base = 2
+					modifier = {
+						OR = {
+							tag = AOX
+							tag = BXM
+						}
+						add = 1
+					}
+				}
+				fallback = yes
+				start_province = 11666
+				target_province = 11584
+			}
+		}
+	}
+	focus = {
+		id = AUS_federation_19
+		icon = GFX_goal_unkown
+		cost = 5.00
+		x = 11
+		y = 12
+		prerequisite = {
+			focus = AUS_federation_18
+		}
+		available = {
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+			every_subject_country = {
+					limit = {
+						aus_hun_part_of_the_Empire = yes
+					}
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 1
+					category = industry
+				}
+			}
+		}
+	}
+	focus = {
+		id = AUS_federation_17
+		icon = GFX_goal_unkown
+		cost = 5.00
+		x = 17
+		y = 13
+		prerequisite = {
+			focus = AUS_federation_16
+		}
+		prerequisite = {
+			focus = AUS_federation_19
+		}
+		prerequisite = {
+			focus = AUS_democratization_8
+		}
+		available = {
+			NOT = {
+				has_idea = AOX_ideas_the_undead_of_hus
+			}
+			aus_hun_all_sup_more_than_90 = yes
+			aus_hun_all_aut_less_than_10 = yes
+		}
+		completion_reward = {
+			AOX = {
+				every_subject_country = {
+					limit = {
+						aus_hun_part_of_the_Empire = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = PREV
+						}
+						add_core_of = AOX
+					}
+					AOX = { annex_country = { target = PREV transfer_troops = yes }  }
+				}
+				set_cosmetic_tag = AOX_DON
+			}
+		}
+	}
+	focus = {
 		id = AUS_ethnic_construction_0
 		icon = GFX_goal_AUS_ethnic_construction_0
 		cost = 5.00
@@ -2968,7 +3250,6 @@ bosnia_war_end = yes
 		y = 7
 		prerequisite = {
 			focus = AUS_HRE_0
-			focus = AUS_federation_0
 		}
 		completion_reward = {
 			get_more_aus_hun_every_sup_5 = yes
