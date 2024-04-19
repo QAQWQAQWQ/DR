@@ -45,12 +45,32 @@ political_actions:0 "政治行动"
 political_actions_desc:0 "\n\n\n\n\n\n\n\n政治是以经济为基础的上层建筑，是经济的集中表现，政治行动决定了我们的立场。"
 
 
+NPL_Algiers_crisis:0 "阿尔及尔危机"
+NPL_Algiers_crisis_desc:0 "\n\n\n\n\n\n\n\n阿尔及尔作为北非之珠，它最初本就由阿马齐尔格人与阿拉伯人所建，四个世纪前被奥斯曼帝国吞并，直到18世纪20年代才易手法国，伴随着殖民、屠杀、开化三板斧，今天的阿尔及尔城才在这时被建立起来，建立在三分之一阿尔及利亚人的尸体之上，阿尔及利亚人也才在这时诞生。在60年代，拿破仑三世本想在北非演一出“阿拉伯王国”的好戏，但最终无果，得亏无果，不然四世可能就要转进科西嘉了。20世纪初，拿破仑四世的非洲大远征渐行渐远，一些埃米尔不再相信阿尔及尔政府的权威，而北非战争最终将这些酋长扫进了历史垃圾堆，但有的东西没有，更多的人，不管是阿拉伯人还是“柏柏尔人”还是阿尔及利亚人，他们被阿尔及尔小朝廷划为“少数派”但他们恰恰是多数人，更多的人仍不服务于阿尔及尔小朝廷，有什么东西仍在起作用，不管是土地也好民族也罢。而在“帝国”的外部，西边的里夫共和国与东边的赛努西教团仍是可能的威胁，前者需要筑起高墙提防无二，而后者则需要我们兑现承诺———新的征服。 \n\n当前局势：\n§Y法兰西人§!的分数：[?NPL_France_VAR]\n§Y黑脚人§!的分数：[?NPL_Blackfoot_VAR]\n§Y哈基人§!的分数：[?NPL_Harkie_VAR]\n§Y阿马齐尔格人§!的分数：[?NPL_Amazirg_VAR]"
 
+NPL_Establish_guerrilla_strongholds:0 "在奥兰地区建立游击据点"
+NPL_Sweep_colony_Establish:0 "捣毁在奥兰地区的游击据点"
 
+NPL_Constantine_guerrilla_strongholds:0 "在康斯坦丁地区建立游击据点"
+NPL_Sweep_colony_Constantine:0 "捣毁在康斯坦丁地区的游击据点"
 
+decision_cost_NPL_Harkie_VAR_5:0 "这将花费哈基人5点数"
+decision_cost_NPL_Amazirg_VAR_5:0 "这将花费阿马齐尔格人5点数"
 
+NPL_Formation_local_security_teams_trigger_tooltip1:0 "法兰西人至少有10点数"
+NPL_Formation_local_security_teams_trigger_tooltip2:0 "黑脚人至少有10点数"
+NPL_Powder_keg_erupts:0 "有预谋的袭击"
+NPL_Powder_keg_erupts_desc:0 ""
+NPL_Powder_keg_erupts_tooltip:0 "法兰西人的分数：§R-5§!\n黑脚人的分数：§R-2§!\n哈基人的分数：§G+5§!\n阿马齐尔格人的分数：§G+5§!"
+NPL_Investigation_Berbers:0 "针对哈基人的调查"
+NPL_Investigation_Berbers_desc:0 ""
 
+NPL_Investigation_Moors:0 "针对阿马齐尔格人的调查"
+NPL_Investigation_Moors_desc:0 ""
 
+NPL_Formation_local_security_teams:0 "组建当地保安队"
+NPL_Formation_local_security_teams_desc:0 "我们将组建一支完全由当地人的保安队，用于日常的巡逻与安保，但这会引起一些法兰西人的不安。"
+decision_cost_NPL_France_VAR_10:0 "这将花费法兰西人10点数\n这将花费黑脚人10点数"
 
 
 League_balance:0 "国际联盟"
@@ -72,15 +92,20 @@ Embargo_Soviet_desc:0 "我们将对苏俄进行贸易禁运和封锁。"
 League_Montenegro_War:0 "调停黑塞战争"
 
 
-SHW_Court_struggles_balance:0 "宫廷斗争"
+SHW_Court_struggles_balance:0 "内阁和杜马"
 Court_struggles_mid_range:0 "平衡"
-Court_struggles_left_side:0 "拉斯普京掌控"
-Court_struggles_right_side:0 "国家杜马掌控"
-Court_struggles_left_side_range_Low:0 "拉斯普京影响力低"
-Court_struggles_left_side_range_High:0 "拉斯普京影响力高"
-Court_struggles_right_side_range_Low:0 "国家杜马影响力低"
+Court_struggles_left_side:0 "古尔科政府"
+Court_struggles_right_side:0 "国家杜马"
+Court_struggles_left_side_range_Low:0 "古尔科政府保有优势"
+Court_struggles_left_side_range_High:0 "古尔科政府影响力高"
+Court_struggles_right_side_range_Low:0 "国家杜马保有优势"
 Court_struggles_right_side_range_High:0 "国家杜马影响力高"
-
+SHW_Investigate_assassination:0 "调查杜尔诺沃刺杀案"
+SHW_Economic_negotiations:0 "洽谈和普鲁士的合作"
+SHW_Ban_left:0 "取缔左翼团体"
+SHW_Ban_right:0 "取缔右翼团体"
+SHW_Support_Duma:0 "煽动杜马内部反对派"
+SHW_Maintenance_Law:0 "重新审视《秩序维持法》"
 
 Montenegrin_War:0 "黑塞战争"
 The_end_of_Montenegro:0 "黑山的结局"
@@ -229,7 +254,16 @@ FRW_army_revolution_desc:0 "\n\n\n\n\n\n\n\n在革命胜利之后，公社曾提
 
 FRW_army_revolution1:0 "改组地方民兵"
 FRW_army_revolution1_desc:0 ""
-
+FRW_army_revolution2:0 "向民兵普及军事知识"
+FRW_army_revolution2_desc:0 ""
+FRW_army_revolution3:0 "成立军队政治委员"
+FRW_army_revolution3_desc:0 ""
+FRW_army_revolution4:0 "军校扩招"
+FRW_army_revolution4_desc:0 ""
+FRW_army_revolution5:0 "政治审查"
+FRW_army_revolution5_desc:0 ""
+FRW_army_revolution_tooltip:0 "改革进度: §G+3§!"
+FRW_army_revolution1_tooltip:0 "改革进度: §G+10§!"
 
 FRW_Maginot_Line_plan:0 "建设马奇诺防线"
 FRW_Maginot_Line_plan_desc:0 "\n\n\n\n\n\n\n\n时局已无往日和平，欧洲东部的普鲁士王国怀揣着一颗统一德意志的野心，普鲁士和奥地利的摩擦不断，虽然莱茵地区可以看作我们的缓冲区，但我们不能忘却1871年惨败的教训，随时准备任何突发情况，当前我们的马奇诺部长设想了一种方案,一条从佛里兰斯延伸至孔泰的碉堡群出现在政府提案中，防线内部拥有各式大炮、壕沟、堡垒、厨房、发电站、医院、工厂等等，通道四通八达，较大的工事中还有有轨电车通道。\n\n当前的进展：§H[?FRW_Maginot_Line_needle_VAR]%§!\n\n\n\n\n\n\n\n"
@@ -310,22 +344,6 @@ Germany_Imperial_Highway_desc:0 "\n\n\n\n\n\n\n\n帝国的军队需要大量的�
 
 
 
-
-
-
-
-
-
-
-
-SHW_DUMA:0 "俄罗斯帝国杜马"
-SHW_DUMA_desc:0 "俄罗斯帝国国家杜马成立于1905年，1905年俄国革命暴力和动荡之后，是俄罗斯第一个民选议会。沙皇规定未经国家杜马批准，任何法律都不得生效。"
-
-Dissolution_State_Duma:0 "解散国家杜马"
-State_Duma:0 "只有特殊情况才能解散杜马"
-
-
-
 SHW_Second_Agrarian_Reform:0 "第二次土地改革"
 SHW_Second_Agrarian_Reform_desc:0 "\n\n\n\n\n\n\n\n尽管村社制度被斯托雷平削弱，但村社仍旧十分强大，尤其在俄罗斯地区，三分之二的俄罗斯族农民仍生活在传统的村社制度下，多于半数的农民还在固守传统的村社原则。斯托雷平改革加快了在农村已成燎原之势的村社解体进程，但并没有实现彻底摧毁村社制度。\n\n当前改革过程：§Y[SHWReformprocess]§!\n当前农民态度：§R[SHWPeasantattitudes]§!"
 
@@ -365,10 +383,13 @@ SHWPeasantattitudes1:0 "农民对这个政策感到§R不安§!"
 
 
 SHW_Imperial_Russian_Army:0 "俄罗斯帝国陆军"
-SHW_Imperial_Russian_Army_desc:0 "\n\n\n\n\n\n\n\n在拿破仑战争时，我们的军队将拿破仑赶出了俄国。但在之后的十二月党人起义中，已经证实了革命思想渗入了我们的军队之中，为此我们要保持军队的忠诚，以免重蹈覆辙。\n\n§Y忠诚度§!:§W[?SHW_Loyalty]§!"
+SHW_Imperial_Russian_Army_desc:0 "\n\n\n\n\n\n\n\n在过去的拿破仑战争中，沙皇的军队将法国人赶出了俄国的土地，但有的东西永远地留了下来，扎根下来，与17世纪在“西方”影响下诞生的那次宗教改革不同，这次的“遗物”只瞄准了一个东西，那就是沙皇本人。十二月党人已经证明，军队中的大部分军官（多半是贵族）已然摆脱了沙皇俄罗斯这套建立在以剥削农民为最终结果的国家机器，无论是事实上的还是法律上的乃至是思想上的，我们必须保证他们的忠诚，以免堕入万劫不复之境。\n\n§Y忠诚度§!:§W[?SHW_Loyalty]§!"
 SHW_Education_army:0 "在军中进行教育"
 SHW_Curb_liberals:0 "遏制自由派"
 SHW_Promotion_loyal_officers:0 "提拔忠心军官"
+SHW_Army_coup:0 "政变阴谋"
+SHW_Army_coup_desc:0 "与俄罗斯劳苦大众相反，一些俄罗斯社会上层人物及其政党，却不时地相互攻击，争权夺利，把广大民众之疾苦置于脑后；俄罗斯各财团势力以其产业、经济上的优势地位，残酷地剥削劳动群众，而且极力影响着政府的对内、对外政策，如今，是时候清算这些人了。"
+SHW_Army_coup_tooltip:0 "政变份子被逮捕"
 suspect_text:0 "猜疑"
 neutrality_text:0 "中立"
 loyal_text:0 "忠诚"
@@ -376,7 +397,7 @@ loyal_text:0 "忠诚"
 
 
 
-SHW_Suppression_other_parties:0 "打压杜马政党"
+SHW_Suppression_other_parties:0 "国内环境"
 SHW_Suppression_other_parties_desc:0 "\n\n\n\n\n\n\n\n1913年的革命迫使我们进行了一系列自由化改革，包括对体制的变更，赋予了杜马更多的权利去修订法律和政策，这对于尼古拉二世来说是可怕的，也是不可接受的。沙皇宣称：“正如已故的父皇所为，为了帝国的利益，朕也将不遗余力、坚定不移地维护专制统治。”"
 SHW_Survey_Social_Revolutionary_Party:0 "打压社会革命党"
 SHW_Survey_Cadets_Party:0 "打压立宪民主党"
@@ -398,11 +419,7 @@ SHW_Montenegro_building:0 "帮助黑山建设"
 SHW_Albania_identity:0 "于阿尔巴尼亚构建"
 SHW_Albania_building:0 "帮助阿尔巴尼亚建设"
 
-SHW_Court_struggles:0 "拉斯普京的宫廷"
-SHW_Recruit_charlatans:0 "招募江湖术士"
-SHW_Economic_negotiations:0 "洽谈和普鲁士的合作"
-SHW_Suppression_church:0 "打压教会"
-SHW_Mystical_rituals:0 "举行祭祀"
+
 
 
 SHW_Food_requisition_operations:0 "征粮行动"

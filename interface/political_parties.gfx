@@ -27,4 +27,31 @@ spriteTypes = {
 		name = "GFX_ideology_Democracy_Reformism" 
 		texturefile = "gfx/interface/ideologies/Democracy_Reformism.dds"
 	}
+	spriteType = { 
+		name = "GFX_ideology_Fabian_Reformism" 
+		texturefile = "gfx/interface/ideologies/Fabian_Reformism.dds"
+	}
+	
+
+
+	spriteType = { 
+		name = "GFX_ideology_FRW_Syndicalism_Anarchism" 
+		texturefile = "gfx/interface/ideologies/FRW_Syndicalism_Anarchism.dds" 
+	}
+	spriteType = { 
+		name = "GFX_ideology_WWS_Authoritarianism_Conservatism" 
+		texturefile = "gfx/interface/ideologies/WWS_Authoritarianism_Conservatism.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_SHW_Classicism_Conservatism" 
+		texturefile = "gfx/interface/ideologies/SHW_Classicism_Conservatism.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_AOX_Classicism_Conservatism" 
+		texturefile = "gfx/interface/ideologies/AOX_Classicism_Conservatism.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_JPN_Classicism_Conservatism" 
+		texturefile = "gfx/interface/ideologies/JPN_Classicism_Conservatism.dds"
+	}
 }

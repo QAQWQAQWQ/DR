@@ -3,6 +3,160 @@
 ###########################
 
 add_namespace =NPL
+add_namespace =NPL_event
+add_namespace =NPL_restoration
+
+country_event = {
+	id =NPL_restoration.1
+	title =NPL_restoration.1.t
+	desc =NPL_restoration.1.d
+	picture = GFX_NPL_restoration_1
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name =NPL_restoration.1.a
+		}
+}
+country_event = {
+	id =NPL_restoration.2
+	title =NPL_restoration.2.t
+	desc =NPL_restoration.2.d
+	picture = GFX_NPL_restoration_1
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name =NPL_restoration.2.a
+		}
+}
+country_event = {
+	id =NPL_restoration.3
+	title =NPL_restoration.3.t
+	desc =NPL_restoration.3.d
+	picture = GFX_NPL_restoration_1
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name =NPL_restoration.3.a
+		}
+}
+country_event = {
+	id =NPL_restoration.4
+	title =NPL_restoration.4.t
+	desc =NPL_restoration.4.d
+	picture = GFX_NPL_restoration_1
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name =NPL_restoration.4.a
+		}
+}
+country_event = {
+	id =NPL_restoration.5
+	title =NPL_restoration.5.t
+	desc =NPL_restoration.5.d
+	picture = GFX_NPL_restoration_1
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name =NPL_restoration.5.a
+		}
+}
+country_event = {
+	id =NPL_restoration.6
+	title =NPL_restoration.6.t
+	desc =NPL_restoration.6.d
+	picture = GFX_NPL_restoration_1
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name =NPL_restoration.6.a
+		}
+}
+
+
+country_event = {
+	id =NPL_event.1
+	title =NPL_event.1.t
+	desc =NPL_event.1.d
+	picture = GFX_NPL_1
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name =NPL_event.1.a
+		}
+}
+
+country_event = {
+	id =NPL_event.2
+	title =NPL_event.2.t
+	desc =NPL_event.2.d
+	picture = GFX_NPL_1
+
+	is_triggered_only = yes
+
+
+	option = {
+		name =NPL_event.2.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 200
+		}
+		NPL={
+			every_state = {
+				limit={
+                   has_dynamic_modifier = {
+					modifier = Guerrilla_strongholds
+				   }
+				}
+				remove_dynamic_modifier = {
+					modifier = Guerrilla_strongholds
+				}
+			}
+		}
+		
+		
+		}
+}
+country_event = {
+	id =NPL_event.3
+	title =NPL_event.3.t
+	desc =NPL_event.3.d
+	picture = GFX_NPL_1
+
+	is_triggered_only = yes
+
+
+	option = {
+		name =NPL_event.3.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -200
+		}
+		add_manpower = -50
+		}
+}
+
 
 country_event = {
 	id =NPL.1
@@ -16,6 +170,7 @@ country_event = {
 
 	option = {
 		name =NPL.1.a
+		add_political_power = -50
 		}
 	}
 news_event = {

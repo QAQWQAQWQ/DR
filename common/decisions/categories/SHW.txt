@@ -12,20 +12,6 @@ SHW_Second_Agrarian_Reform = {
 	}
 		               
 } 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 SHW_Imperial_Russian_Army = {
 	#icon = SHW_Imperial_Russian_Army
 	picture = GFX_decisions_Imperial_Russian_Army
@@ -85,17 +71,6 @@ SHW_Slavic_identity = {
 		original_tag = SHW  
 	}
 }
-SHW_DUMA = {
-	#icon = SHW_Imperial_Russian_Army                 
-	#picture = GFX_decisions_Food_requisition_operations
-	scripted_gui =SHW_DUMA_ui          
-
-	priority = 17               
-
-	allowed = {
-		tag = SHW
-	} 
-}  
 SHW_Court_struggles = {
 	#icon = SHW_Imperial_Russian_Army
 	picture = GFX_decisions_Court_struggles

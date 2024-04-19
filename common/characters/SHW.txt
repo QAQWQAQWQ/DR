@@ -47,6 +47,7 @@ characters={ #skilled_staffer #Lieutenant_general
 		}
 	}
 	
+	
 	SHW_Kerensky={
 		name=SHW_Kerensky
 		portraits={
@@ -473,29 +474,7 @@ SHW_Alexander_Vladimirovich_Protopopov={
 		}
 	}
 }
-SHW_Grigori_Efimovich_Rasputin={
-	name=SHW_Grigori_Efimovich_Rasputin
-	portraits={
-		civilian={
-			small="gfx/interface/ideas/portrait_Grigori_Efimovich_Rasputin.dds"
-		}
-	}
-	advisor={
-		slot = political_advisor
-		idea_token = SHW_Grigori_Efimovich_Rasputin_P
-		allowed = {
-			original_tag = SHW
-		}
-		available = {
-			
-		  }
-		traits = {
-		}
-		ai_will_do = {
-			factor = 1.000
-		}
-	}
-}
+
 SHW_Kokovtsov={
 	name=SHW_Kokovtsov
 	portraits={
@@ -630,8 +609,38 @@ SHW_Nikolai_Vissarionovich_Nekrasov={
 	}
 }
 
-
-
+##########################################
+##########################################
+###############################################################
+####################################################################################
+#########################################################################################################
+SHW_Vladimir_Gurko={
+	name=SHW_Vladimir_Gurko
+	portraits={
+		civilian={
+			#large="gfx/leaders/SHW/Portrait_Kerensky.tga"
+			small="gfx/interface/ideas/idea_Vladimir_Gurko.dds"
+		}
+	}
+	advisor={
+		slot = head_of_government
+		idea_token = SHW_Vladimir_Gurko_H
+		allowed = {
+			original_tag = AOX
+		}
+		available = {
+			is_country_leader = no
+			is_political_advisor = no
+		  }
+		traits = {
+			head_of_government
+			conservative_grandee
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+}
 
 
 

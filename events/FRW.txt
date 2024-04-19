@@ -233,18 +233,13 @@ country_event = {
 			id = FRW.3
 			title = FRW.3.t
 			desc = FRW.3.d
-			picture = GFX_China
+			picture = GFX_FRW_3
 			is_triggered_only = yes
 			fire_only_once = yes
-			trigger = {
-				
-				}
 			option = {
 				name = FRW.3.a
+				remove_ideas = FRW_Dissidents_army
 				}
-				option = {
-					name = FRW.3.b
-					}
 			}
             country_event = {
 				id =FRW.4

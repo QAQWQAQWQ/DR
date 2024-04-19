@@ -949,7 +949,40 @@ FRW_army_revolution = {
 	available = {
        has_completed_focus = FRW_focus27
 	}
-	days_remove = 1
+	days_remove = 60
+	cost = 35
+	allowed = {
+		tag = FRW
+	}
+	complete_effect = { 
+		add_to_variable = {
+			var = FRW_ARMY_VAR
+			value = 10
+		}
+		clamp_variable = {
+			var = FRW_ARMY_VAR
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = FRW_army_revolution1_tooltip
+		army_experience = 10
+		}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+	
+}
+FRW_army_revolution2 = {
+	icon = generic_ignite_civil_war
+	visible = {
+	}
+	available = {
+      # has_completed_focus = FRW_focus27
+	}
+	days_remove = 30
 	cost = 35
 	allowed = {
 		tag = FRW
@@ -964,6 +997,112 @@ FRW_army_revolution = {
 			min = 0
 			max = 100
 		}
+		custom_effect_tooltip = FRW_army_revolution_tooltip
+		army_experience = 10
+		}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+	
+}
+FRW_army_revolution3 = {
+	icon = generic_ignite_civil_war
+	visible = {
+	}
+	available = {
+      # has_completed_focus = FRW_focus27
+	}
+	days_remove = 30
+	cost = 35
+	fire_only_once = yes
+	allowed = {
+		tag = FRW
+	}
+	complete_effect = { 
+		add_stability = 0.01
+		add_to_variable = {
+			var = FRW_ARMY_VAR
+			value = 3
+		}
+		clamp_variable = {
+			var = FRW_ARMY_VAR
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = FRW_army_revolution_tooltip
+		army_experience = 10
+		}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+	
+}
+FRW_army_revolution4 = {
+	icon = generic_ignite_civil_war
+	visible = {
+	}
+	available = {
+      # has_completed_focus = FRW_focus27
+	}
+	days_remove = 30
+	cost = 35
+	allowed = {
+		tag = FRW
+	}
+	complete_effect = { 
+		add_manpower = 500
+		add_to_variable = {
+			var = FRW_ARMY_VAR
+			value = 3
+		}
+		clamp_variable = {
+			var = FRW_ARMY_VAR
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = FRW_army_revolution_tooltip
+		army_experience = 50
+		}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+	
+}
+FRW_army_revolution5 = {
+	icon = generic_ignite_civil_war
+	visible = {
+		has_decision = FRW_army_revolution3
+	}
+	available = {
+      # has_completed_focus = FRW_focus27
+	}
+	days_remove = 30
+	cost = 35
+	allowed = {
+		tag = FRW
+	}
+	complete_effect = { 
+		add_political_power = 100
+		add_to_variable = {
+			var = FRW_ARMY_VAR
+			value = 3
+		}
+		clamp_variable = {
+			var = FRW_ARMY_VAR
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = FRW_army_revolution_tooltip
+		#army_experience = 50
 		}
 	fixed_random_seed = no
 	fire_only_once = no

@@ -1,7 +1,20 @@
 on_actions = {
 	#on_monthly 
-	
-
+on_startup= { 
+		effect = {
+		every_country = { 
+			limit={
+				has_idea = NPL_National_contradictions
+			}
+			set_variable = {
+				NPL_France_VAR=50
+			}
+			set_variable = {
+				NPL_Blackfoot_VAR=20
+			}
+		}
+	}
+}
 	on_startup= { 
 		effect = {
 		every_country = { 

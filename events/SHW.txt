@@ -4,6 +4,189 @@
 
 add_namespace = SHW
 add_namespace = FEL
+add_namespace = SHW_event
+add_namespace = SHW_army_event
+######
+country_event = {
+	id = SHW_army_event.1
+	title = SHW_army_event.1.t
+	desc = SHW_army_event.1.d
+
+	#picture = GFX_Russian_Holodomor
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = SHW_army_event.1.a
+		set_country_flag = SHW_army_event_1
+	}
+}
+country_event = {
+	id = SHW_army_event.2
+	title = SHW_army_event.2.t
+	desc = SHW_army_event.2.d
+
+	#picture = GFX_Russian_Holodomor
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = SHW_army_event.2.a
+		set_country_flag = SHW_army_event_2
+	}
+}
+###
+country_event = {
+	id = SHW_event.1
+	title = SHW_event.1.t
+	desc = SHW_event.1.d
+
+	#picture = GFX_Russian_Holodomor
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = SHW_event.1.a
+		add_power_balance_value = {
+			id = SHW_Court_struggles_balance
+			value = 0.05
+		}
+		add_opinion_modifier = {
+			target = WWS
+			modifier = protest
+		}
+		set_country_flag = SHW_event_1
+	}
+}
+
+country_event = {
+	id = SHW_event.2
+	title = SHW_event.2.t
+	desc = SHW_event.2.d
+
+	#picture = GFX_Russian_Holodomor
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = SHW_event.2.a
+		country_event = SHW_event.3
+		set_country_flag = SHW_event_2
+	}
+}
+
+country_event = {
+	id = SHW_event.3
+	title = SHW_event.3.t
+	desc = SHW_event.3.d
+
+	#picture = GFX_Russian_Holodomor
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = SHW_event.3.a
+		add_stability = -0.1
+		add_power_balance_value = {
+			id = SHW_Court_struggles_balance
+			value = 0.04
+		}
+		country_event = {id=SHW_event.4 days=5}
+		set_country_flag = SHW_event_3
+	}
+}
+country_event = {
+	id = SHW_event.4
+	title = SHW_event.4.t
+	desc = SHW_event.4.d
+
+	#picture = GFX_Russian_Holodomor
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = SHW_event.4.a
+		add_political_power = -50
+		add_power_balance_value = {
+			id = SHW_Court_struggles_balance
+			value = 0.04
+		}
+		set_country_flag = SHW_event_4
+		activate_mission = SHW_Maintenance_Law
+	}
+}
+country_event = {
+	id = SHW_event.5
+	title = SHW_event.5.t
+	desc = SHW_event.5.d
+
+	#picture = GFX_Russian_Holodomor
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = SHW_event.5.a
+		add_political_power = -50
+	}
+}
+country_event = {
+	id = SHW_event.6
+	title = SHW_event.6.t
+	desc = SHW_event.6.d
+
+	#picture = GFX_Russian_Holodomor
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = SHW_event.6.a
+		add_political_power = -50
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#######
 news_event = {
 	id = SHW.1
 	title = SHW.1.t
@@ -396,7 +579,7 @@ country_event = {
 		
 		option = {
 			name = SHW.18.a
-			retire_character=SHW_Grigori_Efimovich_Rasputin
+			
 		}
 	}
 	country_event = {
@@ -451,6 +634,10 @@ country_event = {
 			create_faction = SHW_Russian_White_Army
 		}
 	}
+
+
+
+	
 	country_event = {
 		id = SHW.23
 		title = SHW.23.t
@@ -461,15 +648,9 @@ country_event = {
 		
 		option = {
 			name = SHW.23.a
-			set_country_flag = SHW_23_a
-			set_country_flag = SHW.23_tool
-			set_country_flag = SHW.23_tool_2
 		}
 		option = {
 			name = SHW.23.b
-			set_country_flag = SHW_23_b
-			set_country_flag = SHW.23_tool
-			set_country_flag = SHW.23_tool_3
 		}
 	}
 	news_event = {
@@ -501,7 +682,6 @@ country_event = {
 
 		option = {
 			name = SHW.25.a
-			country_event = {id=SHW.26}
 		}
 	}
 	country_event = {
@@ -516,7 +696,6 @@ country_event = {
 
 		option = {
 			name = SHW.26.a
-			set_country_flag = event_SHW_26
 		}
 	}
 	country_event = {
@@ -532,7 +711,6 @@ country_event = {
 
 		option = {
 			name = SHW.27.a
-			country_event = {id=SHW.23 days=3}
 		}
 	}
 	country_event = {
@@ -548,18 +726,12 @@ country_event = {
 
 		option = {
 			name = SHW.28.a
-			custom_effect_tooltip = SHW_Kirill_Vladimirovich_flag
-			set_country_flag = SHW_Kirill_Vladimirovich_flag
 		}
 		option = {
 			name = SHW.28.b
-			custom_effect_tooltip = SHW_Nikolai_Romanov_flag
-			set_country_flag = SHW_Nikolai_Romanov_flag
 		}
 		option = {
 			name = SHW.28.c
-			custom_effect_tooltip = SHW_Mikhail_II_flag
-			set_country_flag = SHW_Mikhail_II_flag
 		}
 	}
 	country_event = {
@@ -575,12 +747,6 @@ country_event = {
 
 		option = {
 			name = SHW.29.a
-			SHW_Grigori_Efimovich_Rasputin = {
-				retire = yes
-			}
-			remove_power_balance = {
-				id = SHW_Court_struggles_balance
-			}
 		}
 	}
 	

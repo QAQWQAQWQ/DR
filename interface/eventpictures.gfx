@@ -96,6 +96,10 @@ spriteTypes = {
 		texturefile = "gfx/event/FRW/LJC.tga"
 	}
 	spriteType = {
+		name = "GFX_FRW_3"
+		texturefile = "gfx/event/FRW/FRW_3.dds"
+	}
+	spriteType = {
 		name = "GFX_FRW_18"
 		texturefile = "gfx/event/FRW/FRW_18.dds"
 	}
@@ -562,6 +566,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_NPL_2"
 		texturefile = "gfx/event/NPL/NPL_2.dds"
+	}
+	spriteType = {
+		name = "GFX_NPL_restoration_1"
+		texturefile = "gfx/event/NPL/NPL_restoration_1.dds"
 	}
 	spriteType = {
 		name = "GFX_Paris_Commune_1"

@@ -65,4 +65,12 @@ RDN_amphibious_invasion = {
 	naval_invasion_penalty = -0.5
 	naval_hit_chance = 0.8
 }
-
+Guerrilla_strongholds = {
+	enable = { always = yes }
+	icon = GFX_idea_Guerrilla_strongholds
+	
+	industrial_capacity_factory = -0.1
+	land_bunker_effectiveness_factor = -0.1
+	army_defence_factor = -0.1
+	industry_repair_factor = -0.1
+}

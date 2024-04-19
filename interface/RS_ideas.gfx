@@ -37,6 +37,11 @@ spriteTypes = {
 	    texturefile = "gfx/interface/ideas/Provence_Commune.dds"
     }
 	spriteType = {
+	    name = "GFX_idea_Guerrilla_strongholds"
+	    texturefile = "gfx/interface/ideas/Guerrilla_strongholds.dds"
+    }
+	NPL_National_contradictions
+	spriteType = {
 	    name = "GFX_idea_Brittany_National_autonomy"
 	    texturefile = "gfx/interface/ideas/Brittany_National_autonomy.dds"
     }
@@ -88,6 +93,10 @@ spriteTypes = {
 	spriteType = {
 	    name = "GFX_idea_succession_uprisings"
 	    texturefile = "gfx/interface/ideas/succession_uprisings.dds"
+    }
+	spriteType = {
+	    name = "GFX_idea_Sharp_national_contradictions"
+	    texturefile = "gfx/interface/ideas/Sharp_national_contradictions.dds"
     }
 	spriteType = {
 	    name = "GFX_idea_Labor_pioneer"

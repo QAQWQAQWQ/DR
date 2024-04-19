@@ -56,7 +56,7 @@ scripted_gui = {
 		window_name = "guo_jia_jie_shao_win"
 		parent_window_name = "kai_jv_jie_shao_win"
 		visible = {
-			has_country_flag = guo_jia_jie_shao_kai
+			#has_country_flag = guo_jia_jie_shao_kai
 		}
 	}
 	lu_xian_jie_shao_win = { #路线指南

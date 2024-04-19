@@ -1,0 +1,318 @@
+NPL_Algiers_crisis = {
+	
+	NPL_Powder_keg_erupts = {
+		activation = {
+			AND={
+				original_tag = NPL
+				any_state = {
+					has_dynamic_modifier = {
+						modifier = Guerrilla_strongholds
+					}
+				}
+			}
+		}
+		available = {
+			NPL={
+				NOT={
+					any_state = {
+					has_dynamic_modifier = {
+						modifier = Guerrilla_strongholds
+					}
+				}
+				}
+			}
+			
+			
+		}
+		icon = mission_icon     # For GFX_decision_mission_icon
+		days_mission_timeout = 20
+		days_remove = 2
+		fire_only_once = no
+		selectable_mission = no
+		
+		cancel_effect = {
+		}
+		timeout_effect = {
+			custom_effect_tooltip = NPL_Powder_keg_erupts_tooltip
+			add_to_variable = {
+				NPL_Harkie_VAR=5
+			}
+			add_to_variable = {
+				NPL_Amazirg_VAR=5
+			}
+			add_to_variable = {
+				NPL_Blackfoot_VAR=-2
+			}
+			add_to_variable = {
+				NPL_France_VAR=-5
+			}
+			clamp_variable = {
+				var = NPL_Harkie_VAR
+				min = 0
+				max = 200
+			}
+			clamp_variable = {
+				var = NPL_Amazirg_VAR
+				min = 0
+				max = 200
+			}
+			clamp_variable = {
+				var = NPL_Blackfoot_VAR
+				min = 0
+				max = 200
+			}
+			clamp_variable = {
+				var = NPL_France_VAR
+				min = 0
+				max = 200
+			}
+			add_stability = -0.01
+		}
+	}
+	NPL_Investigation_Berbers= {
+		icon = SWI_dismiss_council
+		visible = {
+			original_tag = NPL
+		}
+		available = {
+			
+		}
+		days_remove = 20
+		cost = 10
+		allowed = {
+			always = yes
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			custom_effect_tooltip = decision_cost_NPL_Harkie_VAR_5
+			add_to_variable = {
+				NPL_Harkie_VAR=-5
+			}
+			clamp_variable = {
+				var = NPL_Harkie_VAR
+				min = 0
+				max = 200
+			}
+		}
+	}
+	NPL_Investigation_Moors= {
+		icon = SWI_dismiss_council
+		visible = {
+			original_tag = NPL
+		}
+		available = {
+		}
+		days_remove = 20
+		cost = 10
+		allowed = {
+			always = yes
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			custom_effect_tooltip = decision_cost_NPL_Amazirg_VAR_5
+			add_to_variable = {
+				NPL_Amazirg_VAR=-5
+			}
+			clamp_variable = {
+				var = NPL_Amazirg_VAR
+				min = 0
+				max = 200
+			}
+		}
+	}
+	NPL_Formation_local_security_teams= {
+		icon = SWI_dismiss_council
+		visible = {
+			original_tag = NPL
+		}
+		available = {
+			check_variable = {
+				NPL_France_VAR > 10
+			}
+			check_variable = {
+				NPL_Blackfoot_VAR > 10
+			}
+			custom_trigger_tooltip = {
+				tooltip = NPL_Formation_local_security_teams_trigger_tooltip1
+			}
+			custom_trigger_tooltip = {
+				tooltip = NPL_Formation_local_security_teams_trigger_tooltip2
+			}
+		}
+		days_remove = 20
+		cost = 10
+		allowed = {
+			always = yes
+		}
+		custom_cost_trigger = {
+			command_power > 15
+		}
+		custom_cost_text = decision_cost_CP_15
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			custom_effect_tooltip = decision_cost_NPL_France_VAR_10
+			add_to_variable = {
+				NPL_France_VAR=-10
+			}
+			add_to_variable = {
+				NPL_Blackfoot_VAR=-10
+			}
+			clamp_variable = {
+				var = NPL_Blackfoot_VAR
+				min = 0
+				max = 200
+			}
+			clamp_variable = {
+				var = NPL_France_VAR
+				min = 0
+				max = 200
+			}
+		}
+		remove_effect = {
+              
+		}
+	} 
+	
+	
+
+
+
+
+	NPL_Establish_guerrilla_strongholds= {
+		icon = SWI_dismiss_council
+		visible = {
+			NOT={
+				original_tag = NPL
+				original_tag = TRL
+				original_tag = TRT
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 459
+			}
+		}
+		available = {
+		}
+		days_remove = 45
+		cost = 50
+		allowed = {
+			always = yes
+		}
+		
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			add_manpower = -200
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+			}
+			459={
+				add_dynamic_modifier = {
+					modifier = Guerrilla_strongholds
+				}
+			}
+		}
+	}
+	NPL_Constantine_guerrilla_strongholds= {
+		icon = SWI_dismiss_council
+		visible = {
+			NOT={
+				original_tag = NPL
+				original_tag = TRL
+				original_tag = TRT
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 460
+			}
+		}
+		available = {
+		}
+		days_remove = 45
+		cost = 50
+		allowed = {
+			always = yes
+		}
+		
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			add_manpower = -200
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+			}
+			460={
+				add_dynamic_modifier = {
+					modifier = Guerrilla_strongholds
+				}
+			}
+		}
+	}
+	NPL_Sweep_colony_Constantine= {
+		icon = SWI_dismiss_council
+		visible = {
+			AND={
+				original_tag = NPL
+				460={
+					has_dynamic_modifier = {
+						modifier = Guerrilla_strongholds
+					}
+				}
+			}	
+		}
+		available = {
+			
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 459
+			}
+		}
+		available = {
+		}
+		days_remove = 30
+		cost = 20
+		allowed = {
+			always = yes
+		}
+		
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			random_list = {
+			20={
+				country_event = NPL_event.2
+			}
+			80={
+				country_event = NPL_event.3
+			}
+			}
+			
+		}
+	}
+}

@@ -28,11 +28,6 @@ completion_reward = {
 			ideology = Classicism_Conservatism
 			trait = Butcher_the_revolution
 	   }
-		set_party_name = { 
-			ideology = Conservatism 
-			long_name = SHW_monarchy_party1_long 
-			name =  SHW_monarchy_party1
-		}
 		set_temp_variable = { temp_member = 1 }
 		set_temp_variable = { temp_seats = 15 }
 	    modify_parliament_seat = yes
@@ -179,7 +174,7 @@ completion_reward = {
 		}
 		completion_reward={
 			hidden_effect = {
-				news_event = { id = SHW.1 days = 2 }
+				#news_event = { id = SHW.1 days = 2 }
 			}
 			custom_effect_tooltip = SHW_Focus_9_tool
 		}
@@ -401,14 +396,7 @@ custom_effect_tooltip = SHW_Focus_11_tool
 			focus = SHW_Focus_20
 		}
 		completion_reward={
-			remove_power_balance = {
-				id = SHW_Court_struggles_balance
-			}
-			add_trait = {
-				character = SHW_Grigori_Efimovich_Rasputin
-				slot = political_advisor
-				trait = Holy_Spirit_incarnates
-			}
+			
 		} 
 	}
 	focus = {
@@ -1175,7 +1163,7 @@ custom_effect_tooltip = SHW_Focus_11_tool
 		x = 19
 		y = 6
 completion_reward={
-	country_event={id=SHW.15 days=1}
+	#country_event={id=SHW.15 days=1}
 }
 	}
 	
@@ -1295,7 +1283,7 @@ completion_reward={
 			focus = SHW_Coalition_Cabinet_Government
 		}
 		completion_reward={
-			country_event = SHW.17
+			#country_event = SHW.17
 		}
 	}
 	focus = {

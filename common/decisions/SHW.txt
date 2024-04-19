@@ -1,5 +1,4 @@
 SHW_Progress_the_Russian_Civil_War = {
-	
 	SHW_The_civil_war_begins = {
 	  icon = generic_ignite_civil_war
 	  available = {      
@@ -117,7 +116,7 @@ SHW_Progress_the_Russian_Civil_War = {
                add_political_power = 50                
           }
 		  }
-	}
+}
 
 	
 SHW_Imperial_Russian_Army = {
@@ -143,7 +142,7 @@ SHW_Imperial_Russian_Army = {
 			set_temp_variable = { SHW_Loyalty = SHW_Loyalty }
 			add_to_variable = { SHW_Loyalty = 5 }
 		  }
-		  }
+	}
 	SHW_Curb_liberals = {
 	  icon = generic_ignite_civil_war
 	  visible = {
@@ -166,7 +165,7 @@ SHW_Imperial_Russian_Army = {
 			set_temp_variable = { SHW_Loyalty = SHW_Loyalty }
 			add_to_variable = { SHW_Loyalty = 5 }
 		  }
-		  }
+	}
 	SHW_Promotion_loyal_officers = {
 	  icon = generic_ignite_civil_war
 	  visible = {
@@ -189,8 +188,37 @@ SHW_Imperial_Russian_Army = {
 			set_temp_variable = { SHW_Loyalty = SHW_Loyalty }
 			add_to_variable = { SHW_Loyalty = 5 }
 		  }
-		  }	  
-	  }
+	}
+	SHW_Army_coup = {
+		activation = {
+			check_variable = {
+				SHW_Loyalty=0
+			}
+		}
+		available = {
+			hidden_trigger = {
+			}
+		}
+		cancel_trigger = {
+			#NOT={ 
+				has_country_flag = SHW_Army_coup_tooltip
+			#}
+		}
+		icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = yes
+		days_mission_timeout = 120
+		days_remove = 1
+		fire_only_once = yes
+		selectable_mission = no
+		
+		cancel_effect = {
+			country_event = SHW_army_event.2
+		}
+		timeout_effect = {
+			country_event = SHW_army_event.1
+		}
+	  }	  
+}
 
 
 
@@ -400,564 +428,7 @@ SHW_Second_Agrarian_Reform = {
 }
 
 
-
-
-
-
-###征粮
-SHW_Food_requisition_operations = {
-	Requisition_grain_Tambov = {
-	  icon = GFX_decision_grain
-	  
-	  highlight_states = {
-		highlight_state_targets = {
-			state = 257
-		}
-	}
-	  available = {
-		controls_state = 537
-	  }
-	  days_remove = 30
-	  cost = 35
-	  allowed = {
-		  always = yes
-	  }
-	  fixed_random_seed = no
-	  fire_only_once = no
-		  ai_will_do = {
-		  factor = 1
-		  }
-		  complete_effect = {
-			add_stability = -0.01
-			257={
-				add_resource = {
-					type = grain
-					amount = 10
-				}	
-			}
-		  }
-		  }
-	Requisition_grain_Rzhev = {
-	  icon = GFX_decision_grain
-	  highlight_states = {
-		highlight_state_targets = {
-			state = 246
-		}
-	}
-	  available = {
-		controls_state = 246
-	  }
-	  days_remove = 30
-	  cost = 35
-	  allowed = {
-		  always = yes
-	  }
-	  fixed_random_seed = no
-	  fire_only_once = no
-		  ai_will_do = {
-		  factor = 1
-		  }
-		  complete_effect = {
-			add_stability = -0.01
-			246={
-				add_resource = {
-					type = grain
-					amount = 10
-				}	
-			}
-		  }
-		  }
-Requisition_grain_Luga = {
-	  icon = GFX_decision_grain
-	  highlight_states = {
-		highlight_state_targets = {
-			state = 208
-		}
-	}
-	  available = {
-		controls_state = 208
-	  }
-	  days_remove = 30
-	  cost = 35
-	  allowed = {
-		  always = yes
-	  }
-	  fixed_random_seed = no
-	  fire_only_once = no
-		  ai_will_do = {
-		  factor = 1
-		  }
-		  complete_effect = {
-			add_stability = -0.01
-			208={
-				add_resource = {
-					type = grain
-					amount = 10
-				}	
-			}
-		  }
-		  }
-Requisition_grain_Samui = {
-	  icon = GFX_decision_grain
-	  highlight_states = {
-		highlight_state_targets = {
-			state = 225
-		}
-	}
-	  available = {
-		controls_state = 225
-	  }
-	  days_remove = 30
-	  cost = 35
-	  allowed = {
-		  always = yes
-	  }
-	  fixed_random_seed = no
-	  fire_only_once = no
-		  ai_will_do = {
-		  factor = 1
-		  }
-		  complete_effect = {
-			add_stability = -0.01
-			225={
-				add_resource = {
-					type = grain
-					amount = 10
-				}	
-			}
-		  }
-		  }
-Requisition_grain_Mellerovo = {
-	  icon = GFX_decision_grain
-	  highlight_states = {
-		highlight_state_targets = {
-			state = 245
-		}
-	}
-	  available = {
-		controls_state = 245
-	  }
-	  days_remove = 30
-	  cost = 35
-	  allowed = {
-		  always = yes
-	  }
-	  fixed_random_seed = no
-	  fire_only_once = no
-		  ai_will_do = {
-		  factor = 1
-		  }
-		  complete_effect = {
-			add_stability = -0.01
-			245={
-				add_resource = {
-					type = grain
-					amount = 10
-				}	
-			}
-		  }
-		  }
-Requisition_grain_Ryazan = {
-	  icon = GFX_decision_grain
-	  highlight_states = {
-		highlight_state_targets = {
-			state = 254
-		}
-	}
-	  available = {
-		controls_state = 254
-	  }
-	  days_remove = 30
-	  cost = 35
-	  allowed = {
-		  always = yes
-	  }
-	  fixed_random_seed = no
-	  fire_only_once = no
-		  ai_will_do = {
-		  factor = 1
-		  }
-		  complete_effect = {
-			add_stability = -0.01
-			254={
-				add_resource = {
-					type = grain
-					amount = 10
-				}	
-			}
-		  }
-		  }
-Requisition_grain_Minsk = {
-	  icon = GFX_decision_grain
-	  highlight_states = {
-		highlight_state_targets = {
-			state = 206
-		}
-	}
-	  available = {
-		controls_state = 206
-	  }
-	  days_remove = 30
-	  cost = 35
-	  allowed = {
-		  always = yes
-	  }
-	  fixed_random_seed = no
-	  fire_only_once = no
-		  ai_will_do = {
-		  factor = 1
-		  }
-		  complete_effect = {
-			add_stability = -0.01
-			206={
-				add_resource = {
-					type = grain
-					amount = 10
-				}	
-			}
-		  }
-		  }
-Requisition_grain_Poltava = {
-	  icon = GFX_decision_grain
-	  highlight_states = {
-		highlight_state_targets = {
-			state = 259
-		}
-	}
-	  available = {
-		controls_state = 259
-	  }
-	  days_remove = 30
-	  cost = 35
-	  allowed = {
-		  always = yes
-	  }
-	  fixed_random_seed = no
-	  fire_only_once = no
-		  ai_will_do = {
-		  factor = 1
-		  }
-		  complete_effect = {
-			add_stability = -0.01
-			259={
-				add_resource = {
-					type = grain
-					amount = 10
-				}	
-			}
-		  }
-		  }
-Requisition_grain_Stavropol = {
-	  icon = GFX_decision_grain
-	  highlight_states = {
-		highlight_state_targets = {
-			state = 235
-		}
-	}
-	  available = {
-		controls_state = 235
-	  }
-	  days_remove = 30
-	  cost = 35
-	  allowed = {
-		  always = yes
-	  }
-	  fixed_random_seed = no
-	  fire_only_once = no
-		  ai_will_do = {
-		  factor = 1
-		  }
-		  complete_effect = {
-			add_stability = -0.01
-			235={
-				add_resource = {
-					type = grain
-					amount = 10
-				}	
-			}
-		  }
-		  }
-Requisition_grain_Kaluga = {
-	  icon = GFX_decision_grain
-	  highlight_states = {
-		highlight_state_targets = {
-			state = 205
-		}
-	}
-	  available = {
-		controls_state = 205
-	  }
-	  days_remove = 30
-	  cost = 35
-	  allowed = {
-		  always = yes
-	  }
-	  fixed_random_seed = no
-	  fire_only_once = no
-		  ai_will_do = {
-		  factor = 1
-		  }
-		  complete_effect = {
-			add_stability = -0.01
-			205={
-				add_resource = {
-					type = grain
-					amount = 10
-				}	
-			}
-		  }
-		  }
-Requisition_grain_Belgorod = {
-	  icon = GFX_decision_grain
-	  highlight_states = {
-		highlight_state_targets = {
-			state = 240
-		}
-	}
-	  available = {
-		controls_state = 240
-	  }
-	  days_remove = 30
-	  cost = 35
-	  allowed = {
-		  always = yes
-	  }
-	  fixed_random_seed = no
-	  fire_only_once = no
-		  ai_will_do = {
-		  factor = 1
-		  }
-		  complete_effect = {
-			add_stability = -0.01
-			240={
-				add_resource = {
-					type = grain
-					amount = 10
-				}	
-			}
-		  }
-		  }
-Requisition_grain_Saratov = {
-	  icon = GFX_decision_grain
-	  highlight_states = {
-		highlight_state_targets = {
-			state = 239
-		}
-	}
-	  available = {
-		controls_state = 239
-	  }
-	  days_remove = 30
-	  cost = 35
-	  allowed = {
-		  always = yes
-	  }
-	  fixed_random_seed = no
-	  fire_only_once = no
-		  ai_will_do = {
-		  factor = 1
-		  }
-		  complete_effect = {
-			add_stability = -0.01
-			239={
-				add_resource = {
-					type = grain
-					amount = 10
-				}	
-			}
-		  }
-		  }
-Requisition_grain_Vinnitsa = {
-	  icon = GFX_decision_grain
-	  highlight_states = {
-		highlight_state_targets = {
-			state = 198
-		}
-	}
-	  available = {
-		controls_state = 198
-	  }
-	  days_remove = 30
-	  cost = 35
-	  allowed = {
-		  always = yes
-	  }
-	  fixed_random_seed = no
-	  fire_only_once = no
-		  ai_will_do = {
-		  factor = 1
-		  }
-		  complete_effect = {
-			add_stability = -0.01
-			198={
-				add_resource = {
-					type = grain
-					amount = 10
-				}	
-			}
-		  }
-		  }
-Requisition_grain_Vitebsk = {
-	  icon = GFX_decision_grain
-	  highlight_states = {
-		highlight_state_targets = {
-			state = 207
-		}
-	}
-	  available = {
-		controls_state = 207
-	  }
-	  days_remove = 30
-	  cost = 35
-	  allowed = {
-		  always = yes
-	  }
-	  fixed_random_seed = no
-	  fire_only_once = no
-		  ai_will_do = {
-		  factor = 1
-		  }
-		  complete_effect = {
-			add_stability = -0.01
-			207={
-				add_resource = {
-					type = grain
-					amount = 10
-				}	
-			}
-		  }
-		  }
-Requisition_grain_Bobruisk = {
-	  icon = GFX_decision_grain
-	  highlight_states = {
-		highlight_state_targets = {
-			state = 204
-		}
-	}
-	  available = {
-		controls_state = 204
-	  }
-	  days_remove = 30
-	  cost = 35
-	  allowed = {
-		  always = yes
-	  }
-	  fixed_random_seed = no
-	  fire_only_once = no
-		  ai_will_do = {
-		  factor = 1
-		  }
-		  complete_effect = {
-			add_stability = -0.01
-			204={
-				add_resource = {
-					type = grain
-					amount = 10
-				}	
-			}
-		  }
-		  }
-Requisition_grain_Gomel = {
-	  icon = GFX_decision_grain
-	  highlight_states = {
-		highlight_state_targets = {
-			state = 241
-		}
-	}
-	  available = {
-		controls_state = 241
-	  }
-	  days_remove = 30
-	  cost = 35
-	  allowed = {
-		  always = yes
-	  }
-	  fixed_random_seed = no
-	  fire_only_once = no
-		  ai_will_do = {
-		  factor = 1
-		  }
-		  complete_effect = {
-			add_stability = -0.01
-			241={
-				add_resource = {
-					type = grain
-					amount = 10
-				}	
-			}
-		  }
-		  }
-Requisition_grain_Novgorod = {
-	  icon = GFX_decision_grain
-	  highlight_states = {
-		highlight_state_targets = {
-			state = 263
-		}
-	}
-	  available = {
-		controls_state = 263
-	  }
-	  days_remove = 30
-	  cost = 35
-	  allowed = {
-		  always = yes
-	  }
-	  fixed_random_seed = no
-	  fire_only_once = no
-		  ai_will_do = {
-		  factor = 1
-		  }
-		  complete_effect = {
-			add_stability = -0.01
-			263={
-				add_resource = {
-					type = grain
-					amount = 10
-				}	
-			}
-		  }
-		  }
-Requisition_grain_Grozny = {
-	  icon = GFX_decision_grain
-	  highlight_states = {
-		highlight_state_targets = {
-			state = 232
-		} 
-	}
-	  available = {
-		controls_state = 232
-	  }
-	  days_remove = 30
-	  cost = 35
-	  allowed = {
-		  always = yes
-	  }
-	  fixed_random_seed = no
-	  fire_only_once = no
-		  ai_will_do = {
-		  factor = 1
-		  }
-		  complete_effect = {
-			add_stability = -0.01
-			232={
-				add_resource = {
-					type = grain
-					amount = 10
-				}	
-			}
-		  }
-		  }
-		}
-
-
-
-
-
-
-
-
-
-		  SHW_Suppression_other_parties = {
+SHW_Suppression_other_parties = {
 	
 			SHW_Survey_Social_Revolutionary_Party = {
 			  icon = generic_political_discourse
@@ -1079,10 +550,9 @@ Requisition_grain_Grozny = {
 				  complete_effect = {
 				  }
 				  }
-		}
+}
 
-
-		SHW_Slavic_identity = {
+SHW_Slavic_identity = {
 	
 			SHW_Romanian_identity = {
 			  icon = SWI_dismiss_council
@@ -1399,30 +869,39 @@ Requisition_grain_Grozny = {
 					}
 					
 				  }
-		}
-		SHW_Court_struggles = {
-			SHW_Recruit_charlatans = {
-				icon = SWI_dismiss_council
-				visible = {
-				 
+}
+SHW_Court_struggles = {
+			SHW_Investigate_assassination = {
+				#icon = SWI_dismiss_council
+				activation = {
+					has_country_flag = SHW_event_1
 				}
 				available = {
-				}
-				days_remove = 20
-				cost = 0
-				allowed = {
-					always = yes
-				}
-				fixed_random_seed = no
-				fire_only_once = no
-					ai_will_do = {
-					factor = 1
+					hidden_trigger = {
+						NOT={ 
+							has_country_flag = SHW_event_1
+						}
 					}
 					
-					remove_effect = {
-						add_political_power = 20
-					  }
+				}
+				cancel_trigger = {
+					#has_war = no
+				}
+				icon = mission_icon     # For GFX_decision_mission_icon
+				is_good = yes
+				days_mission_timeout = 20
+				days_remove = 2
+				fire_only_once = yes
+				selectable_mission = no
+				complete_effect = {
+
+				}
+				timeout_effect = {
+					hidden_effect = {
+						country_event = SHW_event.2
 					}
+				}
+			}
 			SHW_Economic_negotiations = {
 				icon = SWI_dismiss_council
 				visible = {
@@ -1447,13 +926,14 @@ Requisition_grain_Grozny = {
 						}
 						
 						
+						
 						add_political_power = 20
 					  }
-					}
-			SHW_Suppression_church= {
+			}
+			SHW_Ban_left= {
 				icon = SWI_dismiss_council
 				visible = {
-				 
+					has_country_flag = SHW_event_3
 				}
 				available = {
 				}
@@ -1463,18 +943,23 @@ Requisition_grain_Grozny = {
 					always = yes
 				}
 				fixed_random_seed = no
-				fire_only_once = no
+				fire_only_once = yes
 					ai_will_do = {
 					factor = 1
 					}
 					remove_effect = {
 						add_political_power = 20
+						add_stability = 0.02
+						add_power_balance_value = {
+							id = SHW_Court_struggles_balance
+							value = -0.02
+						}
 					  }
-					}
-			SHW_Mystical_rituals= {
+			}
+			SHW_Ban_right= {
 				icon = SWI_dismiss_council
 				visible = {
-				 
+					has_country_flag = SHW_event_3
 				}
 				available = {
 				}
@@ -1484,12 +969,71 @@ Requisition_grain_Grozny = {
 					always = yes
 				}
 				fixed_random_seed = no
-				fire_only_once = no
+				fire_only_once = yes
 					ai_will_do = {
 					factor = 1
 					}
 					remove_effect = {
 						add_political_power = 20
+						add_stability = 0.02
+						add_power_balance_value = {
+							id = SHW_Court_struggles_balance
+							value = -0.02
+						}
 					  }
+			} 
+			SHW_Support_Duma= {
+				icon = SWI_dismiss_council
+				visible = {
+					has_decision = SHW_Maintenance_Law
+				}
+				available = {
+				}
+				days_remove = 20
+				cost = 0
+				allowed = {
+					always = yes
+				}
+				fixed_random_seed = no
+				fire_only_once = yes
+					ai_will_do = {
+					factor = 1
 					}
-		}
+					remove_effect = {
+						add_power_balance_value = {
+							id = SHW_Court_struggles_balance
+							value = -0.02
+						}
+					  }
+			}   
+			SHW_Maintenance_Law= {
+				activation = {
+					has_country_flag = SHW_event_4
+				}
+				available = {
+					hidden_trigger = {
+						NOT={ 
+							has_country_flag = SHW_event_4
+						}
+					}
+				}
+				cancel_trigger = {
+					#NOT={ 
+						has_completed_focus = SHW_Focus_1
+					#}
+				}
+				icon = mission_icon     # For GFX_decision_mission_icon
+				is_good = yes
+				days_mission_timeout = 120
+				days_remove = 1
+				fire_only_once = yes
+				selectable_mission = no
+				
+				cancel_effect = {
+					country_event = SHW_event.5 #取消时，更新维持法
+				}
+				timeout_effect = {
+					country_event = SHW_event.6 #完成时，废除维持法
+				}
+			}
+}
