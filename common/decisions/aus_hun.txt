@@ -630,7 +630,10 @@ aus_hun_decisions = {
 		icon = generic_civil_support
 
 		available = {
-			aus_hun_nat_eth_completed_tri = yes
+			OR = {
+				aus_hun_nat_eth_completed_tri = yes
+				has_completed_focus = AUS_federation_16
+			}
 		}
 
 		days_mission_timeout = 80
