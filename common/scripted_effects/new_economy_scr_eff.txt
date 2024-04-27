@@ -254,6 +254,9 @@ remake_this_month_goods = {
         this_month_goods = mid_w
     }
     set_variable = {
+        private_goods_qwq = mid_w
+    }
+    set_variable = {
         surplus_month_goods = this_month_goods
     }
 }
@@ -773,6 +776,24 @@ industrial_expansion = {
         }
         add_to_variable = { private_goods_factory = -1 }
         add_to_variable = { private_capital = global.a_new_ind_cost }
+    }
+    while_loop_effect = {
+        break = temp_break
+        limit = {
+            check_variable = { private_worker_wage < 2 }
+        }
+        add_to_variable = { private_worker_wage = 1 }
+        remake_private_factory_tot_cost = yes
+        while_loop_effect = {
+            break = temp_break_1
+            limit = {
+                check_variable = { private_cost > private_capital }
+                check_variable = { private_goods_factory > 0 }
+            }
+            add_to_variable = { private_goods_factory = -1 }
+            add_to_variable = { private_capital = global.a_new_ind_cost }
+            remake_private_factory_tot_cost = yes
+        }
     }
     #bankruptcy!
     if = {
