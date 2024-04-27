@@ -95,6 +95,15 @@ units = {
 		location = 11666
 		division_template = "Heimwehr"
 		start_experience_factor = 1.0
+		officer = {
+            name = AGN_Adolf_Hitler
+            portraits = {
+                army = {
+                    large = "gfx/leaders/AGN/AGN_Adolf_Hitler_pict_army.png"
+                    small = "gfx/leaders/AGN/AGN_Adolf_Hitler_pict_army_small.png"
+                }
+            }
+        }
 	}
 	division= {	
 		division_name = {
