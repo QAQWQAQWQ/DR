@@ -44,7 +44,6 @@ recruit_character = SHW_Novitsky_Vasiliy_Fedorovich
 recruit_character = SHW_Alexander_Vladimirovich_Razvotsov
 recruit_character = SHW_Dmitry_Pavlovich_Parsky
 recruit_character = SHW_Nikolaj_Dmitrievich_Golicyn
-recruit_character = SHW_Grigori_Efimovich_Rasputin
 
 recruit_character = SHW_Kokovtsov
 recruit_character = SHW_Alexander_Vladimirovich_Protopopov
@@ -60,7 +59,7 @@ recruit_character = SHW_Vladimir_Sukhomlinov
 recruit_character = SHW_Alexander_Ivanovich_Dubrovin
 recruit_character = SHW_Nikolai_Evgenievich_Markov
 recruit_character = SHW_Vladimir_Mitrofanovich_Purishkevich
-
+recruit_character = SHW_Vladimir_Gurko
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -391,7 +390,7 @@ puppet = FEL
 puppet = AFH
 puppet = ESI
 
-country_event = { id = SHW.27 days = 64 }
+country_event = { id = SHW_event.1 days = 94 }
 
 set_popularities = {
 	Reactionary = 6
@@ -443,8 +442,7 @@ Special_police
 low_industrialization
 completely_illiterate
 #AD
-SHW_Nikolaj_Dmitrievich_Golicyn_H
-SHW_Grigori_Efimovich_Rasputin_P
+SHW_Vladimir_Gurko_H
 SHW_Alexander_Vladimirovich_Protopopov_P
 SHW_Pavel_Milyukov_P
 SHW_Kokovtsov_P

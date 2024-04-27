@@ -13,5 +13,11 @@ ideas = {
 				terrain_penalty_reduction= -0.05
 			}
         }
+		NPL_National_contradictions= {
+			picture = Sharp_national_contradictions
+			modifier = {
+				custom_modifier_tooltip = NPL_National_contradictions_tooltip
+			}
+        }
 		}
 }

@@ -44,7 +44,7 @@ recruit_character = NPL_Louis_d_Esperey
 recruit_character = NPL_Robert_Georges_Nivelle
 recruit_character = NPL_Louis_Hubert_Gonzalve_Lyautey
 
-
+create_faction = Bonaparte_family_alliance
 
 	set_technology = {
 		interwar_artillery = 1
@@ -85,7 +85,7 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no
 }
-create_faction = Bonaparte_family_alliance
+
 
 
 puppet=RDN
@@ -93,6 +93,7 @@ puppet=HEL
 
 add_ideas={
 NPL_Declining_trend
+NPL_National_contradictions
 }
 set_popularities = {
 	Liberalism = 5

@@ -1,0 +1,21 @@
+NPL_Algiers_crisis = {
+	icon = infiltration
+	
+	picture = GFX_decisions_election_movement
+
+	priority = 9 
+	allowed = {
+		OR={
+			tag = NPL
+			tag = TRT
+			tag = TRL
+			tag = LEF
+			tag = KOJ
+		}
+		
+	}
+	visible = {
+		
+	}
+
+}   

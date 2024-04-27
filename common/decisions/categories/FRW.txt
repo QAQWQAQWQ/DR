@@ -110,6 +110,12 @@ FRW_army_revolution = {
 	}
 	visible = {
 		has_completed_focus = FRW_focus22
+        NOT={
+			check_variable = {
+				var = FRW_ARMY_VAR
+				value = 100
+			}
+		}
 	}
 }  
              

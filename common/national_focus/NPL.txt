@@ -1,5 +1,4 @@
 #!gfx:interface\RS_icon.gfx
-#!gfx:interface\aus.gfx
 focus_tree = {
 	id = NPL
 	country = {
@@ -14,8 +13,8 @@ focus_tree = {
 		id = NPL_focus1
 		icon = GFX_goal_NPL_focus1
 		cost = 7.00
-		x = 10
-		y = 0
+		x = 23
+		y = 0 
 		completion_reward={
 			add_to_variable = { gdp_inflation = 10 }
 	add_political_power = 150
@@ -30,7 +29,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NPL_focus1
 		}
-		x = 7
+		x = 26
 		y = 1
 		completion_reward={
 			459={
@@ -63,7 +62,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NPL_focus1
 		}
-		x = 10
+		x = 20
 		y = 1
 completion_reward = {
 	RDN={
@@ -97,7 +96,7 @@ completion_reward = {
 		prerequisite = {
 			focus = NPL_focus1
 		}
-		x = 13
+		x = 23
 		y = 1
 completion_reward={
 	460 = {
@@ -122,9 +121,9 @@ completion_reward={
 		prerequisite = {
 			focus = NPL_focus4
 		}
-		x = 10
+		x = 23
 		y = 2
-completion_reward={
+    completion_reward={
 	create_wargoal = {
 		type = annex_everything
 		target = KOJ
@@ -156,21 +155,20 @@ completion_reward={
 			TRT={
 				exists = no
 			}
-		}
-		x = 10
+		} 
+		x = 23
 		y = 3
 completion_reward = {
-	country_event=NPL.2
-	
+	news_event = NPL.2
 	every_state = {
 		limit = {
 			is_core_of = KOJ
 		}
 		add_core_of = NPL
-	}
+	} 
 	every_state = {
 		limit = {
-			is_core_of = TRL
+			is_core_of = TRL 
 		}
 		add_core_of = NPL
 	}
@@ -183,4 +181,256 @@ completion_reward = {
 	
 }
 	}
+
+
+
+
+
+
+ 
+
+
+	focus = {
+		id = NPL_focus7
+		icon = GFX_goal_NPL_focus7
+		cost = 7.00
+		x = 6
+		y = 0
+    completion_reward={
+		country_event = NPL_event.1
+	}
+	}
+	focus = {
+		id = NPL_focus8
+		icon = GFX_goal_NPL_focus8
+		cost = 7.00
+		mutually_exclusive = {
+			focus = NPL_focus11
+		}
+		prerequisite = {
+			focus = NPL_focus7
+		}
+		prerequisite = {
+			focus = NPL_focus9
+		}
+		prerequisite = {
+			focus = NPL_focus10
+		}
+		x = 5
+		y = 2
+    completion_reward={
+	}
+	}
+	focus = {
+		id = NPL_focus9
+		icon = GFX_goal_NPL_focus9
+		cost = 7.00
+		prerequisite = {
+			focus = NPL_focus7
+		}
+		x = 3
+		y = 1
+    completion_reward={
+		add_stability = 0.05
+		add_political_power = 100
+	}
+	}
+	focus = {
+		id = NPL_focus10
+		icon = GFX_goal_NPL_focus10
+		cost = 7.00
+		prerequisite = { 
+			focus = NPL_focus7
+		}
+		x = 9
+		y = 1
+    completion_reward={
+		add_popularity = {
+			ideology = Liberalism
+			popularity = -0.1
+		}
+	}
+	}
+	focus = {
+		id = NPL_focus11
+		icon = GFX_goal_NPL_focus11
+		cost = 7.00
+		mutually_exclusive = {
+			focus = NPL_focus8
+		}
+		prerequisite = {
+			focus = NPL_focus7 
+		}
+		prerequisite = {
+			focus = NPL_focus9
+		}
+		prerequisite = {
+			focus = NPL_focus10
+		}
+		x = 7
+		y = 2
+    completion_reward={
+	}
+	}
+	focus = {
+		id = NPL_focus12
+		icon = GFX_goal_NPL_focus12
+		cost = 7.00
+		prerequisite = {
+			focus = NPL_focus7
+		}
+		x = 6
+		y = 1
+    completion_reward={
+		unlock_decision_category_tooltip = NPL_Algiers_crisis
+		custom_effect_tooltip = NPL_focus12_tooltip
+	} 
+	}
+	focus = {
+		id = NPL_focus13
+		icon = GFX_goal_NPL_focus13
+		cost = 7.00
+		prerequisite = {
+			focus = NPL_focus9 
+		}
+		x = 2
+		y = 2
+    completion_reward={
+	}
+	}
+	focus = { 
+		id = NPL_focus14 
+		icon = GFX_goal_NPL_focus14
+		cost = 7.00
+		prerequisite = { 
+			focus = NPL_focus9 
+		}
+		x = 0
+		y = 2
+    completion_reward={
+	}
+	}
+	focus = {  
+		id = NPL_focus15
+		icon = GFX_goal_NPL_focus15 
+		cost = 7.00
+		
+		prerequisite = { 
+			focus = NPL_focus8
+			focus = NPL_focus11
+		}
+		x = 6
+		y = 3
+    completion_reward={
+	}
+	}
+	focus = {  
+		id = NPL_focus16
+		icon = GFX_goal_NPL_focus16
+		cost = 7.00
+		prerequisite = { 
+			focus = NPL_focus8
+		}
+		x = 4
+		y = 3
+    completion_reward={
+	}
+	}  
+	focus = {   
+		id = NPL_focus17
+		icon = GFX_goal_NPL_focus17
+		cost = 7.00
+		prerequisite = { 
+			focus = NPL_focus11
+		}
+		x = 8
+		y = 3
+    completion_reward={
+	}
+	}
+	focus = {  
+		id = NPL_focus18
+		icon = GFX_goal_NPL_focus18
+		cost = 7.00
+		prerequisite = { 
+			focus = NPL_focus15
+		}
+		x = 6 
+		y = 4
+    completion_reward={
+	}
+	}
+	focus = {  
+		id = NPL_focus19
+		icon = GFX_goal_NPL_focus19
+		cost = 7.00
+		prerequisite = { 
+			focus = NPL_focus17
+		}
+		x = 10
+		y = 4
+    completion_reward={
+	}
+	}
+	focus = {  
+		id = NPL_focus20 
+		icon = GFX_goal_NPL_focus20
+		cost = 7.00
+		prerequisite = { 
+			focus = NPL_focus14
+		}
+		x = 0
+		y = 3
+    completion_reward={
+	}
+	}
+	focus = {   
+		id = NPL_focus21 
+		icon = GFX_goal_NPL_focus21
+		cost = 7.00
+		prerequisite = { 
+			focus = NPL_focus13
+		} 
+		x = 2
+		y = 3
+    completion_reward={
+	}
+	}    
+	focus = {   
+		id = NPL_focus22
+		icon = GFX_goal_NPL_focus22
+		cost = 7.00
+		prerequisite = { 
+			focus = NPL_focus16
+		} 
+		x = 2
+		y = 4
+    completion_reward={
+	}
+	}
+	focus = {  
+		id = NPL_focus23
+		icon = GFX_goal_NPL_focus23
+		cost = 7.00
+		prerequisite = { 
+			focus = NPL_focus17  
+		} 
+		x = 8
+		y = 4 
+    completion_reward={
+	} 
+	} 
+	focus = {  
+		id = NPL_focus24
+		icon = GFX_goal_NPL_focus24
+		cost = 7.00
+		prerequisite = { 
+			focus = NPL_focus17
+		} 
+		x = 4
+		y = 4
+    completion_reward={
+	} 
+	}   
 }
+
