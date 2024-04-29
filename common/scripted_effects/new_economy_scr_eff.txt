@@ -631,6 +631,9 @@ ai_tax_work = {
             add_to_variable = {
                 tax_qwq = 0.05
             }
+            add_to_variable = {
+                tax_qwq_qaq = 5
+            }
         }
         if = {
             limit = {
@@ -643,6 +646,9 @@ ai_tax_work = {
             }
             add_to_variable = {
                 people_tax = 0.05
+            }
+            add_to_variable = {
+                people_tax_qaq = 5
             }
         }
     }
@@ -789,6 +795,9 @@ distribute_profits = {
     multiply_variable = {
         mid_w = now_use_national_goods_factory
     }
+    set_variable = {
+        national_factory_tot_profits = mid_w
+    }
     add_to_variable = {
         new_nat_tre_det = mid_w
     }
@@ -826,6 +835,9 @@ payroll_qwq = {
     }
     set_variable = {
         new_nat_tre_profits_to_factory = new_nat_tre_det
+    }
+    set_variable = {
+        before_national_factory_tot_cost = national_factory_tot_cost
     }
     subtract_from_variable = {
         new_nat_tre_det = national_factory_tot_cost
