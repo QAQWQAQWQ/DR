@@ -1,0 +1,8 @@
+use_national_goods_factory = {
+	enable = { always = yes }
+    civilian_factory_use = now_use_national_goods_factory
+}
+photosynthesis_qwq = {
+	enable = { always = yes }
+    consumer_goods_factor = -1
+}

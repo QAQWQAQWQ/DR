@@ -28,6 +28,72 @@ guiTypes = {
 			fixedsize = yes
 		}
 	}
+	containerWindowType = {
+		name = "goods_factory_gui_window"
+		position = { x = 550 y = 83 }	
+		size = {width=550 height =380 }
+		moveable = no
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_paper_w_frame_bg"
+		}
+		instantTextBoxType = {
+			name ="goods_factory_gui_text"
+			position = { x= 20 y = 15 }
+			font = "hoi_18mbs"
+			text = goods_factory_gui_text_qwq
+			format = left
+			maxWidth = 550
+			maxHeight = 200
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="next_month_goods_factory_gui_text"
+			position = { x= 20 y = 220 }
+			font = "hoi_18mbs"
+			text = next_month_goods_factory_gui_text_qwq
+			format = left
+			maxWidth = 550
+			maxHeight = 50
+			fixedsize = yes
+		}
+		buttonType = { 
+			name = "goods_factory_add_button"
+			size = {width = 100 height = 20}
+			position = { x= 10 y = 250 }
+			spriteType = "GFX_ECO_BUTTON"
+			buttonFont = "hoi_18mbs"
+			buttonText = "增加分配给生活消费品的民用工厂"
+			pdx_tooltip = "money_system_ui_TT"
+		}
+		buttonType = { 
+			name = "goods_factory_del_button"
+			size = {width = 100 height = 20}
+			position = { x= 10 y = 290 }
+			spriteType = "GFX_ECO_BUTTON"
+			buttonFont = "hoi_18mbs"
+			buttonText = "减少分配给生活消费品的民用工厂"
+			pdx_tooltip = "money_system_ui_TT"
+		}
+		buttonType = { 
+			name = "wages_add_button"
+			size = {width = 100 height = 20}
+			position = { x= 10 y = 130 }
+			spriteType = "GFX_ECO_BUTTON"
+			buttonFont = "hoi_18mbs"
+			buttonText = "提高工资标准"
+			pdx_tooltip = "money_system_ui_TT"
+		}
+		buttonType = { 
+			name = "wages_del_button"
+			size = {width = 100 height = 20}
+			position = { x= 10 y = 170 }
+			spriteType = "GFX_ECO_BUTTON"
+			buttonFont = "hoi_18mbs"
+			buttonText = "降低工资标准"
+			pdx_tooltip = "money_system_ui_TT"
+		}
+	}
 	
 ############### table ############
 

@@ -181,7 +181,7 @@ SCX_Factional5_TXT:0 "§Y保定系§!领袖:\n\n\n\n\n\n£LiuWengHui\n\n\n\n\n\n
 
 
 
-money_system_value_name_TT:0 "国内生产总值GDP是核算体系中一个重要的综合性统计指标，一个国家或地区的经济究竟处于增长抑或衰退阶段，从这个数字的变化便可以观察到。优秀的政府机构必须在其权力范围内通过实施一些措施来监管和控制国家经济。\n国内GDP总值：[?gdpmn|G3] B\n通货膨胀：[?gdp_inflation|R2]%\n国库：[?capital_reserves|G3] B\n每月盈余：[ROOT.capital_reserves_change_text] B\n总投资：[?all_investment|G3] B"
+money_system_value_name_TT:0 "国库：[?new_nat_tre] B\n上月收入：[?new_nat_tre_det] B\n私人公司资本：[?private_capital] B\n市场大小：[?before_large_of_market] B\n对私有工厂的税率：[?tax_qwq_qaq]%\n对农业的税率：[?people_tax_qaq]%\n政府机构维护费比例：[?pop_rad_qaq]%"
 capital_reserves_change_text_r:0 "[?capital_reserves_change|R3]"
 capital_reserves_change_text_g:0 "[?capital_reserves_change|G3]"
 

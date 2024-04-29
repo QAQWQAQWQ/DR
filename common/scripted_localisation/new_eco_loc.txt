@@ -1,0 +1,86 @@
+defined_text = {
+	name = pr_wage_texts
+	text = {
+		localization_key = wage_1
+		trigger = {
+            check_variable = {
+                private_worker_wage = 1
+            }
+		}
+	}
+	text = {
+		localization_key = wage_2
+		trigger = {
+            check_variable = {
+                private_worker_wage = 2
+            }
+		}
+	}
+	text = {
+		localization_key = wage_3
+		trigger = {
+            check_variable = {
+                private_worker_wage = 3
+            }
+		}
+	}
+	text = {
+		localization_key = wage_4
+		trigger = {
+            check_variable = {
+                private_worker_wage = 4
+            }
+		}
+	}
+	text = {
+		localization_key = wage_5
+		trigger = {
+            check_variable = {
+                private_worker_wage = 5
+            }
+		}
+	}
+}
+defined_text = {
+	name = nat_wage_texts
+	text = {
+		localization_key = wage_1
+		trigger = {
+            check_variable = {
+                national_worker_wage = 1
+            }
+		}
+	}
+	text = {
+		localization_key = wage_2
+		trigger = {
+            check_variable = {
+                national_worker_wage = 2
+            }
+		}
+	}
+	text = {
+		localization_key = wage_3
+		trigger = {
+            check_variable = {
+                national_worker_wage = 3
+            }
+		}
+	}
+	text = {
+		localization_key = wage_4
+		trigger = {
+            check_variable = {
+                national_worker_wage = 4
+            }
+		}
+	}
+	text = {
+		localization_key = wage_5
+		trigger = {
+            check_variable = {
+                national_worker_wage = 5
+            }
+		}
+	}
+}

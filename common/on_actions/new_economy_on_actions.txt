@@ -1,0 +1,213 @@
+on_actions = {
+	on_startup= {
+		effect = {
+            set_variable = { global.autowork = 1 }
+            #1B = 1000000000
+            set_variable = { global.one_bil = 100000 }
+            #worker wages
+            #low 20%
+            set_variable = { global.low_wages = 0.25 }
+            set_variable = { global.low_wages_factor = 0.2 }
+            #low-mid 40%
+            set_variable = { global.low_mid_wages = 0.4 }
+            set_variable = { global.low_mid_wages_factor = 0.4 }
+            #mid 60%
+            set_variable = { global.mid_wages = 0.55 }
+            set_variable = { global.mid_wages_factor = 0.6 }
+            #high_mid 80%
+            set_variable = { global.high_mid_wages = 0.7 }
+            set_variable = { global.high_mid_wages_factor = 0.8 }
+            #high 100%
+            set_variable = { global.high_wages = 0.85 }
+            set_variable = { global.high_wages_factor = 1 }
+            #a new ind (we need 10 B to build a new factory )
+            set_variable = {
+                global.a_new_ind_cost = 10
+            }
+            #ind worker
+            set_variable = {
+                global.an_ind_goods = 80000
+            }
+            set_variable = {
+                global.ind_fac_worker = 39200
+            }
+            set_variable = {
+                global.ind_fac_raw_cost = 3920
+            }
+            #mil worker
+            set_variable = {
+                global.mil_fac_worker = 40000
+            }
+            set_variable = {
+                global.mil_fac_raw_cost = 4000
+            }
+            #dock worker
+            set_variable = {
+                global.docker_fac_worker = 40000
+            }
+            set_variable = {
+                global.docker_fac_raw_cost = 4000
+            }
+            #resource
+            every_country = {
+                set_variable = { new_nat_tre = 1 }
+                set_variable = { new_nat_tre_det = 0 }
+                set_variable = { resource_cnt = 0 }
+                set_variable = { tax_qwq = 0.4 }
+                set_variable = { tax_qwq_qaq = 40 }
+                set_variable = { people_tax = 0.3 }
+                set_variable = { people_tax_qaq = 30 }
+                set_variable = { pop_rad = 0.7 }
+                set_variable = { pop_rad_qaq = 70 }
+                set_variable = { ind_num = 0 }
+                set_variable = { mil_num = 0 }
+                set_variable = { docker_num = 0 }
+                set_variable = { private_capital = 0 }
+                set_variable = { private_worker_wage = 5 }
+                set_variable = { private_goods_factory = 0 }
+                set_variable = { private_cost = 0 }
+                set_variable = { national_worker_wage = 5 }
+                set_variable = { national_goods_factory = num_of_civilian_factories }
+                multiply_variable = { national_goods_factory = 0.1 }
+                round_variable = national_goods_factory
+                set_variable = { now_use_national_goods_factory = national_goods_factory }
+                set_variable = { this_month_goods = 0 }
+                set_variable = { large_of_market = 0 }
+                set_variable = { before_large_of_market = 0 }
+                set_variable = { num_of_people = 0 }
+                # set_variable = { exchange_rate = 1.0 }
+                remake_fac_nums = yes
+                force_update_dynamic_modifier = yes
+                set_variable = { national_factory_tot_cost = 0 }
+
+                remake_national_factory_tot_cost = yes
+                remake_this_month_goods = yes
+                # remake_market = yes
+            }
+            every_country = {
+                add_dynamic_modifier = {
+                    modifier = use_national_goods_factory
+                    scope = THIS
+                }
+                add_dynamic_modifier = {
+                    modifier = photosynthesis_qwq
+                    scope = THIS
+                }
+            }
+            every_country = {
+                set_variable = { private_capital = num_of_civilian_factories }
+                if = {
+                    limit = {
+                        OR = {
+                            check_variable = { ind_upd > 3000 }
+                            check_variable = { num_of_factories < 1 }
+                        }
+                    }
+                    multiply_variable = { private_capital = 0.5 }
+                }
+                else = {
+                if = {
+                    limit = {
+                        OR = {
+                            check_variable = { ind_upd > 2000 }
+                            check_variable = { num_of_factories < 5 }
+                        }
+                    }
+                    multiply_variable = { private_capital = 1 }
+                }
+                else = {
+                if = {
+                    limit = {
+                        OR = {
+                            check_variable = { ind_upd > 1000 }
+                            check_variable = { num_of_factories < 25 }
+                        }
+                    }
+                    multiply_variable = { private_capital = 2 }
+                }
+                else = {
+                if = {
+                    limit = {
+                        OR = {
+                            check_variable = { ind_upd > 500 }
+                            check_variable = { num_of_factories < 35 }
+                        }
+                    }
+                    multiply_variable = { private_capital = 4 }
+                }
+                else = {
+                if = {
+                    limit = {
+                        OR = {
+                            check_variable = { ind_upd > 150 }
+                            check_variable = { num_of_factories < 35 }
+                        }
+                    }
+                    multiply_variable = { private_capital = 8 }
+                }
+                else = {
+                    multiply_variable = { private_capital = 16 }
+                }}}}}
+                # set_variable = { new_nat_tre = private_capital }
+                # multiply_variable = { new_nat_tre = 0.01 }
+                # set_variable = { new_nat_tre_profits_tot = national_goods_factory }
+                # multiply_variable = { new_nat_tre_profits_tot = 0.8 }
+            }
+            every_country = {
+                remake_private_factory_tot_cost = yes
+                remake_national_factory_tot_cost = yes
+                industrial_expansion = yes
+            }
+            every_country = {
+                monthly_build_new_economy = yes
+            }
+            AOX = {
+                sell_goods = yes
+            }
+            every_country = {
+                distribute_profits = yes
+                payroll_qwq = yes
+                add_to_variable = {
+                    new_nat_tre = new_nat_tre_det
+                }
+                industrial_expansion = yes
+                ai_goods_factory_work = yes
+                set_variable = {
+                    now_use_national_goods_factory = national_goods_factory
+                }
+                remake_this_month_goods = yes
+                ai_tax_work = yes
+            }
+            set_variable = { global.autowork = 0 }
+        }
+    }
+    on_daily_AOX = {
+		effect = {
+            every_country = {
+                remake_national_factory_tot_cost = yes
+            }
+        }
+    }
+    on_monthly_AOX = {
+		effect = {
+            every_country = {
+                monthly_build_new_economy = yes
+            }
+            sell_goods = yes
+            every_country = {
+                distribute_profits = yes
+                payroll_qwq = yes
+                add_to_variable = {
+                    new_nat_tre = new_nat_tre_det
+                }
+                industrial_expansion = yes
+                ai_goods_factory_work = yes
+                set_variable = {
+                    now_use_national_goods_factory = national_goods_factory
+                }
+                remake_this_month_goods = yes
+                ai_tax_work = yes
+            }
+        }
+    }
+}

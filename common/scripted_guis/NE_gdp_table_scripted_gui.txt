@@ -7,8 +7,7 @@ scripted_gui = {
 		window_name = "gdp_container"
 		visible = {
 			has_country_flag = entry_money_system_ui_window
-		} 
-
+		}
 		
 		effects = {
 			
@@ -20,6 +19,53 @@ scripted_gui = {
 				}
 		   }		
 		}
+	}
+	goods_factory_gui = {
+		#ai_will_do = { factor = 0 }
+		context_type = player_context
+		# parent_window_token = politics_tab
+		window_name = "goods_factory_gui_window"
+		visible = {
+			has_country_flag = entry_money_system_ui_window
+		}
+		effects = {	
+			goods_factory_add_button_click = {
+				ROOT = {
+					add_to_variable = {
+						var = national_goods_factory
+						value = 1
+					}
+					clamp_new_economy_goods_factory = yes
+				}
+			}	
+			goods_factory_del_button_click = {
+				ROOT = {
+					add_to_variable = {
+						var = national_goods_factory
+						value = -1
+					}
+					clamp_new_economy_goods_factory = yes
+				}
+			}
+			wages_add_button_click = {
+				ROOT = {
+					add_to_variable = {
+						var = national_worker_wage
+						value = 1
+					}
+					clamp_worker_wage = yes
+				}
+			}	
+			wages_del_button_click = {
+				ROOT = {
+					add_to_variable = {
+						var = national_worker_wage
+						value = -1
+					}
+					clamp_worker_wage = yes
+				}
+			}	
+		}	
 	}
 
 	table_sg = {
