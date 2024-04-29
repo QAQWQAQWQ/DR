@@ -863,6 +863,9 @@ payroll_qwq = {
     divide_variable = {
         var = people_cost value = 10000
     }
+    multiply_variable = {
+        people_cost = pop_rad
+    }
     subtract_from_variable = {
         new_nat_tre_det = people_cost
     }
