@@ -16,7 +16,9 @@ focus_tree = {
 		x = 11
 		y = 0
 available = {
-	has_country_flag = LEF_war
+}
+completion_reward = {
+	country_event = LEF_Start.1 
 }
 	}
 	focus = {

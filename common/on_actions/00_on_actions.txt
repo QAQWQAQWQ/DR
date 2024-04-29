@@ -4,19 +4,52 @@ on_startup= {
 		effect = {
 		every_country = { 
 			limit={
-				has_idea = NPL_National_contradictions
+					has_idea = NPL_National_contradictions
 			}
-			set_variable = {
-				NPL_France_VAR=50
+            LEF={
+				set_variable = {
+					NPL_France_VAR=50
+				}
+				set_variable = {
+					NPL_Blackfoot_VAR=20
+				}
 			}
-			set_variable = {
-				NPL_Blackfoot_VAR=20
+			TRL={
+				set_variable = {
+					NPL_France_VAR=50
+				}
+				set_variable = {
+					NPL_Blackfoot_VAR=20
+				}
 			}
+			TRT={
+				set_variable = {
+					NPL_France_VAR=50
+				}
+				set_variable = {
+					NPL_Blackfoot_VAR=20
+				}
+			}
+			NPL={
+				set_variable = {
+					NPL_France_VAR=50
+				}
+				set_variable = {
+					NPL_Blackfoot_VAR=20
+				}
+			}
+			
 		}
 	}
 }
 	on_startup= { 
 		effect = {
+		every_state = {
+			limit = {
+				is_core_of = FRW
+			}
+			add_claim_by = NPL
+		}
 		every_country = { 
 			limit={
 				has_government = Conservatism

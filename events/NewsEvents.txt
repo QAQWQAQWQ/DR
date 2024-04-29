@@ -84,18 +84,21 @@ news_event = {
 			name = Hidden_News.4.a
 	}		
 }
-news_event = {
+country_event = {
 	id = Hidden_News.5
     hidden = yes
 	fire_only_once = yes
+	is_triggered_only = yes
    trigger = {
-	JBS={
-		all_core_state = {
-			is_controlled_by = NZS
-		}
-	}
+	
     }
    immediate = {
+	NZS={
+		declare_war_on = {
+			target = JBS
+			type = annex_everything
+		}
+	}
 	news_event = WorldNew.5
     }
     mean_time_to_happen = {
@@ -182,7 +185,7 @@ news_event = {
 
 	option = {
 			name = WorldNew.5.a
-		}		
+	}		
 }
 news_event = {
 	id = WorldNew.6

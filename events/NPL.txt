@@ -5,6 +5,35 @@
 add_namespace =NPL
 add_namespace =NPL_event
 add_namespace =NPL_restoration
+add_namespace =NPL_democracy
+
+
+
+country_event = {
+	id =NPL_democracy.1
+	title =NPL_democracy.1.t
+	desc =NPL_democracy.1.d
+	picture = GFX_NPL_restoration_1
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name =NPL_democracy.1.a
+		set_party_name = {
+			ideology = Conservatism
+			long_name = NPL_Conservatism_party1_long
+			name = NPL_Conservatism_party1
+		}
+		add_popularity = {
+			ideology = Liberalism
+			popularity = 0.1
+		}
+		add_political_power = 100
+	}
+}
+
 
 country_event = {
 	id =NPL_restoration.1

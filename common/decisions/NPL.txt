@@ -2,6 +2,9 @@ NPL_Algiers_crisis = {
 	
 	NPL_Powder_keg_erupts = {
 		activation = {
+			NOT={
+				has_completed_focus = NPL_focus5
+			}
 			AND={
 				original_tag = NPL
 				any_state = {
@@ -75,7 +78,12 @@ NPL_Algiers_crisis = {
 			original_tag = NPL
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				check_variable = {
+					NPL_Harkie_VAR > 5
+				}
+				tooltip = decision_NPL_Harkie_VAR_5
+			}
 		}
 		days_remove = 20
 		cost = 10
@@ -105,6 +113,12 @@ NPL_Algiers_crisis = {
 			original_tag = NPL
 		}
 		available = {
+			custom_trigger_tooltip = {
+				check_variable = {
+					NPL_Amazirg_VAR > 5
+				}
+				tooltip = decision_NPL_Amazirg_VAR_5
+			}
 		}
 		days_remove = 20
 		cost = 10
@@ -134,16 +148,16 @@ NPL_Algiers_crisis = {
 			original_tag = NPL
 		}
 		available = {
-			check_variable = {
-				NPL_France_VAR > 10
-			}
-			check_variable = {
-				NPL_Blackfoot_VAR > 10
-			}
 			custom_trigger_tooltip = {
+				check_variable = {
+					NPL_France_VAR > 10
+				}
 				tooltip = NPL_Formation_local_security_teams_trigger_tooltip1
 			}
 			custom_trigger_tooltip = {
+				check_variable = {
+					NPL_Blackfoot_VAR > 10
+				}
 				tooltip = NPL_Formation_local_security_teams_trigger_tooltip2
 			}
 		}
@@ -162,7 +176,8 @@ NPL_Algiers_crisis = {
 			factor = 1
 		}
 		complete_effect = {
-			custom_effect_tooltip = decision_cost_NPL_France_VAR_10
+			custom_effect_tooltip = decision_cost_NPL_France_VAR_5
+			custom_effect_tooltip = decision_cost_NPL_Blackfoot_VAR_5
 			add_to_variable = {
 				NPL_France_VAR=-10
 			}
@@ -197,6 +212,7 @@ NPL_Algiers_crisis = {
 				original_tag = NPL
 				original_tag = TRL
 				original_tag = TRT
+				original_tag = KOJ
 			}
 		}
 		highlight_states = {
@@ -205,6 +221,13 @@ NPL_Algiers_crisis = {
 			}
 		}
 		available = {
+			custom_trigger_tooltip = {
+				check_variable = {
+					NPL_Amazirg_VAR > 10
+					NPL_Harkie_VAR  > 10
+				}
+				tooltip = NPL_Establish_guerrilla_strongholds_trigger
+			}
 		}
 		days_remove = 45
 		cost = 50
@@ -218,6 +241,24 @@ NPL_Algiers_crisis = {
 			factor = 1
 		} 
 		complete_effect = {
+			custom_effect_tooltip = decision_cost_NPL_Harkie_VAR_5
+			custom_effect_tooltip = decision_cost_NPL_Amazirg_VAR_5
+			add_to_variable = {
+				NPL_Harkie_VAR=-5
+			}
+			add_to_variable = {
+				NPL_Amazirg_VAR=-5
+			}
+			clamp_variable = {
+				var = NPL_Harkie_VAR
+				min = 0
+				max = 200
+			}
+			clamp_variable = {
+				var = NPL_Amazirg_VAR
+				min = 0
+				max = 200
+			}
 			add_manpower = -200
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -237,6 +278,7 @@ NPL_Algiers_crisis = {
 				original_tag = NPL
 				original_tag = TRL
 				original_tag = TRT
+				original_tag = KOJ
 			}
 		}
 		highlight_states = {
@@ -245,6 +287,13 @@ NPL_Algiers_crisis = {
 			}
 		}
 		available = {
+			custom_trigger_tooltip = {
+				check_variable = {
+					NPL_Amazirg_VAR > 10
+					NPL_Harkie_VAR  > 10
+				}
+				tooltip = NPL_Establish_guerrilla_strongholds_trigger
+			}
 		}
 		days_remove = 45
 		cost = 50
@@ -258,6 +307,24 @@ NPL_Algiers_crisis = {
 			factor = 1
 		} 
 		complete_effect = {
+			custom_effect_tooltip = decision_cost_NPL_Harkie_VAR_5
+			custom_effect_tooltip = decision_cost_NPL_Amazirg_VAR_5
+			add_to_variable = {
+				NPL_Harkie_VAR=-5
+			}
+			add_to_variable = {
+				NPL_Amazirg_VAR=-5
+			}
+			clamp_variable = {
+				var = NPL_Harkie_VAR
+				min = 0
+				max = 200
+			}
+			clamp_variable = {
+				var = NPL_Amazirg_VAR
+				min = 0
+				max = 200
+			}
 			add_manpower = -200
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -287,10 +354,97 @@ NPL_Algiers_crisis = {
 		}
 		highlight_states = {
 			highlight_state_targets = {
+				state = 460
+			}
+		}
+		available = {
+		}
+		days_remove = 30
+		cost = 20
+		allowed = {  
+			always = yes
+		}
+		
+		fixed_random_seed = no
+		fire_only_once = no 
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			random_list = {
+			40={
+				country_event = NPL_event.2
+			} 
+			60={
+				country_event = NPL_event.3
+			}
+			}
+			
+		}
+	}
+	NPL_Sweep_colony_Establish= {
+		icon = SWI_dismiss_council
+		visible = {
+			AND={
+				original_tag = NPL
+				459={
+					has_dynamic_modifier = {
+						modifier = Guerrilla_strongholds
+					}
+				}
+			}	
+		}
+		available = {
+			
+		}
+		highlight_states = {
+			highlight_state_targets = {
 				state = 459
 			}
 		}
 		available = {
+		}
+		days_remove = 30
+		cost = 20
+		allowed = {  
+			always = yes
+		}
+		
+		fixed_random_seed = no
+		fire_only_once = no 
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			random_list = {
+			40={
+				country_event = NPL_event.2
+			} 
+			60={
+				country_event = NPL_event.3
+			}
+			}
+			
+		}
+	}
+	NPL_Cut_railway= {
+		icon = SWI_dismiss_council
+		visible = {
+			AND={
+				original_tag = LEF
+			}	
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 459
+			}
+		}
+		available = {
+			459={
+				has_dynamic_modifier = {
+					modifier = Guerrilla_strongholds
+				}
+			}
 		}
 		days_remove = 30
 		cost = 20
@@ -304,15 +458,190 @@ NPL_Algiers_crisis = {
 			factor = 1
 		} 
 		complete_effect = {
-			random_list = {
-			20={
-				country_event = NPL_event.2
+			459={
+				damage_building = {
+					type = rail_way
+					damage = 1
+				}
 			}
-			80={
-				country_event = NPL_event.3
+		}
+	}
+	NPL_Cut_railway1= {
+		icon = SWI_dismiss_council
+		visible = {
+			AND={
+				original_tag = LEF
+			}	
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 460
 			}
+		}
+		available = {
+			460={
+				has_dynamic_modifier = {
+					modifier = Guerrilla_strongholds
+				}
 			}
-			
+		}
+		days_remove = 30
+		cost = 20
+		allowed = {
+			always = yes
+		}
+		
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			460={
+				damage_building = {
+					type = rail_way
+					damage = 1
+				}
+			}
+		}
+	}
+	
+
+
+
+
+	NPL_Cut_factory= {
+		icon = SWI_dismiss_council
+		visible = {
+			AND={
+				original_tag = LEF
+			}	
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 459
+			}
+		}
+		available = {
+			459={
+				has_dynamic_modifier = {
+					modifier = Guerrilla_strongholds
+				}
+			}
+		}
+		days_remove = 30
+		cost = 20
+		allowed = {
+			always = yes
+		}
+		
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			459={
+				damage_building = {
+					type = arms_factory
+					damage = 1
+				}
+			}
+		}
+	}
+	NPL_Cut_factory1= {
+		icon = SWI_dismiss_council
+		visible = {
+			AND={
+				original_tag = LEF
+			}	
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 460
+			}
+		}
+		available = {
+			460={
+				has_dynamic_modifier = {
+					modifier = Guerrilla_strongholds
+				}
+			}
+		}
+		days_remove = 30
+		cost = 20
+		allowed = {
+			always = yes
+		}
+		
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			460={
+				damage_building = {
+					type = arms_factory
+					damage = 1
+				}
+			}
+		}
+	}
+	NPL_Assault_caravans= {
+		icon = SWI_dismiss_council
+		visible = {
+			AND={
+				original_tag = LEF
+			}	
+		}
+		days_remove = 30
+		cost = 20
+		allowed = {
+			always = yes
+		}
+		
+		fixed_random_seed = no
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 100
+			}
+			add_political_power = 50
+			add_to_variable = {
+				NPL_Harkie_VAR=15
+			}
+			add_to_variable = {
+				NPL_Amazirg_VAR=15
+			}
+		}
+	}
+	NPL_Work_tribal_leaders= {
+		icon = SWI_dismiss_council
+		visible = {
+			AND={
+				original_tag = LEF
+			}	
+		}
+		days_remove = 10
+		cost = 10
+		allowed = {
+			always = yes
+		}
+		
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			LEF_Mulai_Ahmed_er_Raisuni={
+				set_nationality = LEF
+			}
 		}
 	}
 }

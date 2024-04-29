@@ -3,14 +3,62 @@
 ###########################
 
 add_namespace = LEF
+add_namespace = LEF_Start
+country_event = {
+	id = LEF_Start.1 
+	title = LEF_Start.1.t
+	desc = LEF_Start.1.d
+	picture = GFX_LEF_Start_1
+	is_triggered_only = yes
+	option = {
+		name = LEF_Start.1.a
+	     country_event = LEF_Start.2
+	    }
+}
+country_event = {
+	id = LEF_Start.2
+	title = LEF_Start.2.t
+	desc = LEF_Start.2.d
+	picture = GFX_LEF_Start_1
+	is_triggered_only = yes
+	option = {
+		name = LEF_Start.1.a
+	    start_border_war = {
+			change_state_after_war = no
+				attacker = {
+					state = 937
+					num_provinces = 3
+					on_win = LEF.1
+					#on_lose = japan_border_conflict.3
+					#on_cancel = LEF.1
+					dig_in_factor = 0.5
+					terrain_factor = 0.5
+					terrain_penalty_reduction = 0.3
+					land_night_attack= 0.3
+					army_attack_factor= 0.3
+			}	
+			defender = {
+				state = 290
+				num_provinces = 3
+				#on_win = japan_border_conflict.3
+				on_lose = SBY.2
+				#on_cancel = SBY.2
+				dig_in_factor = -0.5
+				terrain_factor = -0.5
+				supply_consumption_factor = 0.6
+				
+			}
+		}
+	    }
+}
 country_event = {
 	id = LEF.1
 	title = LEF.1.t
 	desc = LEF.1.d
-	#picture = GFX_LIF_1
+	picture = GFX_LEF_Start_1
 	is_triggered_only = yes
 	option = {
 		name = LEF.1.a
 	    
 	    }
-	}
+}

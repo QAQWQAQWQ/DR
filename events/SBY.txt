@@ -14,7 +14,7 @@ news_event = {
 
 	is_triggered_only = yes
 
-
+fire_only_once = yes
 	option = {
 		name = SBY.1.a
 		SBY={
@@ -26,14 +26,19 @@ country_event = {
 	id = SBY.2
 	title = SBY.2.t
 	desc = SBY.2.d
-	picture = GFX_Spanish_Flu
+	picture = GFX_SBY_2
 
 	major = yes
 
 	is_triggered_only = yes
-
-
+    fire_only_once = yes
 	option = {
 		name = SBY.2.a
+		SBY_Manuel_Fernandez_Silvestre={
+			hidden_effect = {
+				remove_unit_leader_role = yes
+			}
+		    custom_effect_tooltip = EFFECT_KILL_UNIT_LEADER_ROLE
+		}
 }
 }

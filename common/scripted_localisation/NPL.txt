@@ -1,0 +1,15 @@
+defined_text = {
+	name = Algiers_crisis_desc
+	text = {
+		trigger = {
+			original_tag = LEF
+		}
+		localization_key = NPL_Algiers_crisis_desc1
+	}
+	text = {
+		trigger = {
+			original_tag = NPL
+		}
+		localization_key = NPL_Algiers_crisis_desc2
+	}
+}

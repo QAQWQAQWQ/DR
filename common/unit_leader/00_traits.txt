@@ -964,29 +964,7 @@ leader_traits = {
 		gui_row = 8
 	}
 
-	expert_delegator = { 
-		type = field_marshal
-		gain_xp = {
-			always = no # not gainable
-		}
-		cost = 1000
-		
-		field_marshal_modifier = {
-			max_army_group_size = 2
-		}
-		
-		slot = army_chief
-		specialist_advisor_trait = army_chief_drill_1
-		expert_advisor_trait = army_chief_drill_2
-		genius_advisor_trait = army_chief_drill_3
-		
-		ai_will_do = {
-			factor = 1
-		}
-		trait_type = assignable_trait
-		any_parent = { skilled_staffer }
-		gui_row = 16
-	}
+	
 
 
 ##################################
@@ -1081,12 +1059,12 @@ leader_traits = {
 				check_variable = { num_units > 99 }
 			}
 			else = {
-				check_variable = { num_units > 23 }
+				check_variable = { num_units > 12 }
 			}
 		}
 		custom_gain_xp_trigger_tooltip = fighting_with_enough_units
 		
-		cost = 2000
+		cost = 1000
 		
 		corps_commander_modifier = {
 			max_commander_army_size = 6
@@ -1097,8 +1075,9 @@ leader_traits = {
 		}
 		logistics_skill_factor = 2
 		
-		gui_row = 16
+		gui_row = 15
 		
+		trait_type = basic_trait
 		slot = high_command
 		specialist_advisor_trait = army_logistics_1
 		expert_advisor_trait = army_logistics_2
@@ -1106,13 +1085,21 @@ leader_traits = {
 	}
 	Lieutenant_general = { 
 		type = corps_commander
-		cost = 1000
-		gain_xp = {
-			check_variable = { num_units > 15 }
-		}
 		prerequisites = {
 			has_trait = skilled_staffer
 		}
+		cost = 2000
+		gain_xp_leader = {
+			if = {
+				limit = { is_leading_army_group = yes }
+				check_variable = { num_units > 99 }
+			}
+			else = {
+				check_variable = { num_units > 12 }
+			}
+		}
+		custom_gain_xp_trigger_tooltip = fighting_with_enough_units
+		
 		corps_commander_modifier = {
 			max_commander_army_size = 5
 		}
@@ -1123,9 +1110,49 @@ leader_traits = {
 		ai_will_do = {
 			factor = 1
 		}
-                                trait_type = basic_trait
+        trait_type = basic_trait
 		gui_row = 16
 	}
+
+
+
+	expert_delegator = { 
+		type = corps_commander
+		prerequisites = {
+			has_trait = Lieutenant_general
+		}
+		gain_xp_leader = {
+			if = {
+				limit = { is_leading_army_group = yes }
+				check_variable = { num_units > 99 }
+			}
+			else = {
+				check_variable = { num_units > 12 }
+			}
+		}
+		custom_gain_xp_trigger_tooltip = fighting_with_enough_units
+		cost = 3000
+		
+		field_marshal_modifier = {
+			max_commander_army_size = 8
+		}
+		
+		slot = army_chief
+		specialist_advisor_trait = army_chief_drill_1
+		expert_advisor_trait = army_chief_drill_2
+		genius_advisor_trait = army_chief_drill_3
+		
+		ai_will_do = {
+			factor = 1
+		}
+		trait_type = basic_trait
+		#any_parent = { skilled_staffer }
+		gui_row = 17
+	}
+
+
+
+
 	trickster = { 
 		type = corps_commander
 		gain_xp = {

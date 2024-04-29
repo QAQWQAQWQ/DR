@@ -99,6 +99,11 @@ completion_reward = {
 		x = 23
 		y = 1
 completion_reward={
+	add_equipment_subsidy = {
+		cic = 500
+		equipment_type = infantry_equipment_0
+		seller_tags = { EYJ }
+	}
 	460 = {
 		create_unit = {
 		  division = "name = \"埃及远征旅\" division_template = \"法兰西当地卫队\" start_experience_factor = 0.4 " 
@@ -106,6 +111,14 @@ completion_reward={
 			 prioritize_location = 7081
 		}
   }
+  add_equipment_to_stockpile = {
+	type = infantry_equipment
+	amount = 1000
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment
+	amount = 100
+}
 }
 	}
 	focus = {
@@ -121,9 +134,14 @@ completion_reward={
 		prerequisite = {
 			focus = NPL_focus4
 		}
+		available = {
+			num_of_military_factories > 14
+			has_manpower > 80000
+		}
 		x = 23
 		y = 2
     completion_reward={
+	custom_effect_tooltip = NPL_focus5_tooltip
 	create_wargoal = {
 		type = annex_everything
 		target = KOJ
@@ -219,6 +237,15 @@ completion_reward = {
 		x = 5
 		y = 2
     completion_reward={
+		set_popularities = {
+			Conservatism = 74
+			Liberalism= 16
+			Reactionary= 10
+		}
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip =NPL_Charles_Maurras_H
+		show_ideas_tooltip =NPL_Louis_Emile_Clement_Georges_Bernanos_P
+		show_ideas_tooltip =NPL_Jacques_Maritain_P
 	}
 	}
 	focus = {
@@ -233,6 +260,23 @@ completion_reward = {
     completion_reward={
 		add_stability = 0.05
 		add_political_power = 100
+		add_to_variable = {
+			NPL_France_VAR=-10
+		}
+		add_to_variable = {
+			NPL_Blackfoot_VAR=10
+		}
+		clamp_variable = {
+			var = NPL_Blackfoot_VAR
+			min = 0
+			max = 200
+		}
+		clamp_variable = {
+			var = NPL_France_VAR
+			min = 0
+			max = 200
+		}
+		custom_effect_tooltip = NPL_focus9_tooltip
 	}
 	}
 	focus = {
@@ -270,6 +314,14 @@ completion_reward = {
 		x = 7
 		y = 2
     completion_reward={
+		set_popularities = {
+			Liberalism = 74
+			Conservatism= 16
+			Reactionary= 10
+		}
+		custom_effect_tooltip = available_political_advisor
+	    show_ideas_tooltip =NPL_Paul_Painleve_H
+		show_ideas_tooltip =NPL_Andre_Tardieu_H
 	}
 	}
 	focus = {
@@ -296,6 +348,22 @@ completion_reward = {
 		x = 2
 		y = 2
     completion_reward={
+		add_popularity = {
+			ideology = Conservatism
+			popularity = 0.1
+		}
+		459={
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+		460={
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
 	}
 	}
 	focus = { 
@@ -308,6 +376,11 @@ completion_reward = {
 		x = 0
 		y = 2
     completion_reward={
+		add_resource = {
+			type = oil
+			amount = 20
+			state = 459
+		}
 	}
 	}
 	focus = {  
@@ -322,6 +395,38 @@ completion_reward = {
 		x = 6
 		y = 3
     completion_reward={
+		add_equipment_subsidy = {
+			cic = 500
+			equipment_type = infantry_equipment_0
+			seller_tags = { SBY }
+		}
+		create_purchase_contract = {
+			seller = SBY
+			buyer = NPL
+			civilian_factories = 1
+			equipment = {
+				type = artillery_equipment
+				amount = 50
+			}
+		}
+		create_purchase_contract = {
+			seller = SBY
+			buyer = NPL
+			civilian_factories = 1
+			equipment = {
+				type = infantry_equipment_0
+				amount = 1050
+			}
+		}
+		create_purchase_contract = {
+			seller = SBY
+			buyer = NPL
+			civilian_factories = 1
+			equipment = {
+				type = fighter_equipment_1
+				amount = 20
+			}
+		}
 	}
 	}
 	focus = {  
@@ -334,6 +439,12 @@ completion_reward = {
 		x = 4
 		y = 3
     completion_reward={
+		add_stability = -0.01
+		add_popularity = {
+			ideology = Liberalism
+			popularity = -0.2
+		}
+
 	}
 	}  
 	focus = {   
@@ -346,6 +457,8 @@ completion_reward = {
 		x = 8
 		y = 3
     completion_reward={
+		country_event = NPL_democracy.1
+		
 	}
 	}
 	focus = {  
@@ -358,6 +471,18 @@ completion_reward = {
 		x = 6 
 		y = 4
     completion_reward={
+		add_opinion_modifier = {
+			target = SBY
+			modifier = SOV_strengthened_relations_with_us
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 100
+		}
 	}
 	}
 	focus = {  
@@ -370,6 +495,14 @@ completion_reward = {
 		x = 10
 		y = 4
     completion_reward={
+		swap_ideas = {
+			remove_idea = Media_control
+			add_idea = State_media
+		}
+		add_popularity = {
+			ideology = Liberalism
+			popularity = 0.15
+		}
 	}
 	}
 	focus = {  
@@ -379,9 +512,59 @@ completion_reward = {
 		prerequisite = { 
 			focus = NPL_focus14
 		}
+		available = {
+			KOJ={
+				exists = no
+			}
+			TRL={
+				exists = no
+			}
+			TRT={
+				exists = no
+			}
+		}
 		x = 0
 		y = 3
     completion_reward={
+		459={
+			add_extra_state_shared_building_slots = 2
+		}
+		448={
+			add_extra_state_shared_building_slots = 2
+		}
+		458={
+			add_extra_state_shared_building_slots = 2
+		}
+		665={
+			add_extra_state_shared_building_slots = 2
+		}
+		448={
+			add_extra_state_shared_building_slots = 2
+		}
+		build_railway = {
+			level = 2
+			build_only_on_allied = no
+			fallback = yes
+			path = { 11969 7180 7077 1037 11935 10082 12000 1105 }
+			start_state = 458
+			target_state = 665
+		}
+		build_railway = {
+			level = 2
+			build_only_on_allied = yes
+			fallback = yes
+			path = { 1145 11939 7166 4046 10078 12051 }
+			start_state = 459
+			target_state = 460
+		}
+		build_railway = {
+			level = 2
+			build_only_on_allied = no
+			fallback = yes
+			path = { 1105 12039 1189 1149 }
+			start_state = 665
+			target_state = 448
+		}
 	}
 	}
 	focus = {   
@@ -394,6 +577,9 @@ completion_reward = {
 		x = 2
 		y = 3
     completion_reward={
+		add_dynamic_modifier = {
+			modifier = NPL_dynamic_focus21
+		}
 	}
 	}    
 	focus = {   
@@ -415,9 +601,39 @@ completion_reward = {
 		prerequisite = { 
 			focus = NPL_focus17  
 		} 
+		available = {
+			KOJ={
+				exists = no
+			}
+			TRL={
+				exists = no
+			}
+			TRT={
+				exists = no
+			}
+		}
 		x = 8
 		y = 4 
     completion_reward={
+		add_research_slot = 1
+		every_state = {
+			limit={
+				is_core_of = KOJ
+			}
+			add_compliance = 20
+		}
+		every_state = {
+			limit={
+				is_core_of = TRT
+			}
+			add_compliance = 20
+		}
+		every_state = {
+			limit={
+				is_core_of = TRL
+			}
+			add_compliance = 20
+		}
 	} 
 	} 
 	focus = {  
@@ -425,11 +641,46 @@ completion_reward = {
 		icon = GFX_goal_NPL_focus24
 		cost = 7.00
 		prerequisite = { 
-			focus = NPL_focus17
+			focus = NPL_focus16
 		} 
+		available = {
+			KOJ={
+				exists = no
+			}
+			TRL={
+				exists = no
+			}
+			TRT={
+				exists = no
+			}
+		}
 		x = 4
 		y = 4
     completion_reward={
+		add_popularity = {
+			ideology = Conservatism
+			popularity = 0.05
+		}
+		add_stability = 0.05
+		every_state = {
+			limit={
+				is_core_of = KOJ
+			}
+			add_resistance = 20
+		}
+		every_state = {
+			limit={
+				is_core_of = TRT
+			}
+			add_resistance = 20
+		}
+		every_state = {
+			limit={
+				is_core_of = TRL
+			}
+			add_resistance = 20
+		}
+		
 	} 
 	}   
 }

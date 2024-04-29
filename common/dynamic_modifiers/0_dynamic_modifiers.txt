@@ -59,8 +59,8 @@ Armament_design = {
 }
 RDN_amphibious_invasion = {
 	enable = { always = yes }
-	amphibious_invasion = -0.35
-	amphibious_invasion_defence = -0.3
+	amphibious_invasion = 0.35
+	amphibious_invasion_defence = 0.3
 	invasion_preparation = -0.3
 	naval_invasion_penalty = -0.5
 	naval_hit_chance = 0.8

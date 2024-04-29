@@ -1,7 +1,7 @@
 NPL_Algiers_crisis = {
 	icon = infiltration
 	
-	picture = GFX_decisions_election_movement
+	picture = GFX_decisions_Algiers_crisis
 
 	priority = 9 
 	allowed = {
@@ -15,7 +15,9 @@ NPL_Algiers_crisis = {
 		
 	}
 	visible = {
-		
+	NPL={
+		has_completed_focus = NPL_focus12
+	}
 	}
 
 }   

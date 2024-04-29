@@ -169,5 +169,250 @@ NPL_Louis_Hubert_Gonzalve_Lyautey={
 		planning_skill=1
 		logistics_skill=2
 	}
-}	
+}
+NPL_Paul_Doumer={
+	name=NPL_Paul_Doumer
+	portraits={
+		civilian={
+			large="gfx/leaders/NPL/Portrait_Paul_Doumer.tga"
+			small = "gfx/interface/ideas/idea_Paul_Doumer.dds"
+		}
 	}
+	country_leader={
+		ideology=Authoritarianism_Conservatism
+		traits={  }
+		expire="1965.1.1.1"
+		id=-1
+	}
+	advisor={
+		slot = head_of_government
+		idea_token = NPL_Paul_Doumer_H
+		allowed = {
+			original_tag = NPL
+		}
+		available = {
+			is_country_leader = no
+			is_political_advisor = no
+		  }
+		traits = {
+			head_of_government
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+	advisor={
+		slot = political_advisor
+		idea_token = NPL_Paul_Doumer_P
+		allowed = {
+			original_tag = NPL
+		}
+		available = {
+			is_country_leader = no
+			not_already_hired_except_as = political_advisor
+		  }
+		traits = {
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+}
+NPL_Andre_Tardieu={
+	name=NPL_Andre_Tardieu
+	portraits={
+		civilian={
+			large="gfx/leaders/NPL/Portrait_Andre_Tardieu.tga"
+			small = "gfx/interface/ideas/idea_Andre_Tardieu.dds"
+		}
+	}
+	country_leader={
+		ideology=Progressivism_Liberalism
+		traits={  }
+		expire="1965.1.1.1"
+		id=-1
+	}
+	advisor={
+		slot = head_of_government
+		idea_token = NPL_Andre_Tardieu_H
+		allowed = {
+			original_tag = NPL
+		}
+		available = {
+			is_country_leader = no
+			is_political_advisor = no
+		  }
+		traits = {
+			head_of_government
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+	advisor={
+		slot = political_advisor
+		idea_token = NPL_Andre_Tardieu_P
+		allowed = {
+			original_tag = NPL
+		}
+		available = {
+			is_country_leader = no
+			not_already_hired_except_as = political_advisor
+		  }
+		traits = {
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+}
+NPL_Paul_Painleve={
+	name=NPL_Paul_Painleve
+	portraits={
+		civilian={
+			large="gfx/leaders/NPL/Portrait_Paul_Painleve.tga"
+			small = "gfx/interface/ideas/idea_Paul_Painleve.dds"
+		}
+	}
+	country_leader={
+		ideology=Social_Reformism
+		traits={  }
+		expire="1965.1.1.1"
+		id=-1
+	}
+	advisor={
+		slot = head_of_government
+		idea_token = NPL_Paul_Painleve_H
+		allowed = {
+			original_tag = NPL
+		}
+		available = {
+			is_country_leader = no
+			is_political_advisor = no
+		  }
+		traits = {
+			head_of_government
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+	advisor={
+		slot = political_advisor
+		idea_token = NPL_Paul_Painleve_P
+		allowed = {
+			original_tag = NPL
+		}
+		available = {
+			is_country_leader = no
+			not_already_hired_except_as = political_advisor
+		  }
+		traits = {
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+}
+NPL_Charles_Maurras={
+	name=NPL_Charles_Maurras
+	portraits={
+		civilian={
+			large="gfx/leaders/NPL/Portrait_Charles_Maurras.tga"
+			small = "gfx/interface/ideas/idea_Charles_Maurras.dds"
+		}
+	}
+	country_leader={
+		ideology=Nationalism_Conservatism
+		traits={  }
+		expire="1965.1.1.1"
+		id=-1
+	}
+	advisor={
+		slot = head_of_government
+		idea_token = NPL_Charles_Maurras_H
+		allowed = {
+			original_tag = NPL
+		}
+		available = {
+			is_country_leader = no
+			is_political_advisor = no
+		  }
+		traits = {
+			head_of_government
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+	advisor={
+		slot = political_advisor
+		idea_token = NPL_Charles_Maurras_P
+		allowed = {
+			original_tag = NPL
+		}
+		available = {
+			is_country_leader = no
+			not_already_hired_except_as = political_advisor
+		  }
+		traits = {
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+}
+
+###顾问
+NPL_Louis_Emile_Clement_Georges_Bernanos={
+	name=NPL_Louis_Emile_Clement_Georges_Bernanos
+	portraits={
+		civilian={
+			large="gfx/leaders/NPL/Portrait_Louis_Emile_Clement_Georges_Bernanos.tga"
+			small = "gfx/interface/ideas/idea_Louis_Emile_Clement_Georges_Bernanos.dds"
+		}
+	}
+	advisor={
+		slot = political_advisor
+		idea_token = NPL_Louis_Emile_Clement_Georges_Bernanos_P
+		allowed = {
+			original_tag = NPL
+		}
+		available = {
+			is_country_leader = no
+			not_already_hired_except_as = political_advisor
+		  }
+		traits = {
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+}
+NPL_Jacques_Maritain={
+	name=NPL_Jacques_Maritain
+	portraits={
+		civilian={
+			large="gfx/leaders/NPL/Portrait_Jacques_Maritain.tga"
+			small = "gfx/interface/ideas/idea_Jacques_Maritain.dds"
+		}
+	}
+	advisor={
+		slot = political_advisor
+		idea_token = NPL_Jacques_Maritain_P
+		allowed = {
+			original_tag = NPL
+		}
+		available = {
+			is_country_leader = no
+			not_already_hired_except_as = political_advisor
+		  }
+		traits = {
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+}
+
+}

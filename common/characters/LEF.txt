@@ -12,6 +12,60 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+		field_marshal = {
+			traits = {
+				ranger hill_fighter
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill =2
+			logistics_skill = 2
+		}
 	}
-	
+	LEF_Mhamed_Abd_el_Krim={
+		name=LEF_Mhamed_Abd_el_Krim
+		portraits={
+			army={
+				large="gfx/leaders/LEF/portrait_Mhamed_Abd_el_Krim.tga"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	LEF_Mohamed_Ameziane={
+		name=LEF_Mohamed_Ameziane
+		portraits={
+			army={
+				large="gfx/leaders/LEF/portrait_Mohamed_Ameziane.tga"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	LEF_Mulai_Ahmed_er_Raisuni={
+		name=LEF_Mulai_Ahmed_er_Raisuni
+		portraits={
+			army={
+				large="gfx/leaders/LEF/portrait_Mulai_Ahmed_er_Raisuni.tga"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
 	}

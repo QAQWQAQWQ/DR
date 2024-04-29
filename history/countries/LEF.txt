@@ -11,10 +11,13 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-
-
+add_manpower=23440
 recruit_character = LEF_Abd_el_krim
+recruit_character = LEF_Mulai_Ahmed_er_Raisuni
 
+recruit_character = LEF_Mhamed_Abd_el_Krim
+
+recruit_character = LEF_Mohamed_Ameziane
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -47,6 +50,9 @@ recruit_character = LEF_Abd_el_krim
 		
 		
 	}
+LEF_Mulai_Ahmed_er_Raisuni={
+	set_nationality = NNN
+}
 set_politics = {
 	ruling_party = Conservatism
 	last_election = "1918.11.11"
@@ -60,4 +66,5 @@ set_popularities = {
 }
 add_ideas={
 #law
+
 }
