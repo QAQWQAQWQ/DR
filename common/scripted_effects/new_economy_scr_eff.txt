@@ -256,9 +256,6 @@ remake_this_month_goods = {
     set_variable = {
         private_goods_qwq = mid_w
     }
-    set_variable = {
-        surplus_month_goods = this_month_goods
-    }
 }
 remake_fac_nums = {
     set_variable = { ind_num = num_of_civilian_factories }
@@ -496,18 +493,18 @@ remake_market = {
     multiply_variable = { mid_w = people_tax }
     subtract_from_variable = { large_of_market = mid_w }
     set_variable = { our_tax_from_people = mid_w }
-    if = {
-        limit = {
-            is_subject = yes
-        }
-        set_variable = { to_overlord_tax = mid_w }
-        multiply_variable = { to_overlord_tax = 0.2 }
-        subtract_from_variable = { our_tax_from_people = to_overlord_tax }
-        overlord = {
-            add_to_variable = { new_nat_tre = PREV.to_overlord_tax }
-        }
-    }
-    add_to_variable = { new_nat_tre = our_tax_from_people }
+    # if = {
+    #    limit = {
+    #        is_subject = yes
+    #    }
+    #    set_variable = { to_overlord_tax = mid_w }
+    #    multiply_variable = { to_overlord_tax = 0.1 }
+    #    subtract_from_variable = { our_tax_from_people = to_overlord_tax }
+    #    overlord = {
+    #        add_to_variable = { new_nat_tre_det = PREV.to_overlord_tax }
+    #    }
+    # }
+    add_to_variable = { new_nat_tre_det = our_tax_from_people }
     
     set_variable = { mid_w = people_mark }
     multiply_variable = { mid_w = 0.5 }
@@ -552,7 +549,106 @@ clamp_worker_wage = {
     remake_national_factory_tot_cost = yes
     remake_this_month_goods = yes
 }
+ai_worker_wage_work = {
+    if = {
+        limit = {
+            OR = {
+                is_ai = yes
+                check_variable = { global.autowork = 1 }
+            }
+        }
+        remake_national_factory_tot_cost = yes
+        while_loop_effect = {
+            break = temp_break
+            limit = {
+                check_variable = { national_factory_tot_cost < new_nat_tre_profits_to_factory }
+                check_variable = { national_worker_wage < 5 }
+            }
+            add_to_variable = { national_worker_wage = 1 }
+            remake_national_factory_tot_cost = yes
+        }
+        while_loop_effect = {
+            break = temp_break
+            limit = {
+                check_variable = { national_factory_tot_cost > new_nat_tre_profits_to_factory }
+                check_variable = { national_worker_wage > 1 }
+            }
+            add_to_variable = { national_worker_wage = -1 }
+            remake_national_factory_tot_cost = yes
+        }
+    }
+}
+ai_goods_factory_work = {
+    if = {
+        limit = {
+            OR = {
+                is_ai = yes
+                check_variable = { global.autowork = 1 }
+            }
+        }
+        set_variable = { ind_goods_qwq = global.an_ind_goods }
+        divide_variable = { ind_goods_qwq = global.one_bil }
+        set_variable = { mid_w = 0 }
+        while_loop_effect = {
+            break = temp_break
+            limit = {
+                check_variable = { national_goods_factory > 0 }
+                check_variable = { surplus_month_goods > mid_w }
+            }
+            add_to_variable = { national_goods_factory = -1 }
+            add_to_variable = { mid_w = ind_goods_qwq }
+        }
+        set_variable = { mid_w = 0 }
+        while_loop_effect = {
+            break = temp_break
+            limit = {
+                check_variable = { national_goods_factory < ind_num }
+                check_variable = { new_nat_tre_det < mid_w }
+            }
+            add_to_variable = { national_goods_factory = 1 }
+            subtract_from_variable = { mid_w = ind_goods_qwq }
+        }
+        clamp_new_economy_goods_factory = yes
+    }
+}
+ai_tax_work = {
+    if = {
+        limit = {
+            OR = {
+                is_ai = yes
+                check_variable = { global.autowork = 1 }
+            }
+        }
+        if = {
+            limit = {
+                check_variable = {
+                    new_nat_tre_det < 0 
+                }
+                check_variable = {
+                    tax_qwq < 1 
+                }
+            }
+            add_to_variable = {
+                tax_qwq = 0.05
+            }
+        }
+        if = {
+            limit = {
+                check_variable = {
+                    new_nat_tre_det < 0 
+                }
+                check_variable = {
+                    people_tax < 0.45 
+                }
+            }
+            add_to_variable = {
+                people_tax = 0.05
+            }
+        }
+    }
+}
 monthly_build_new_economy = {
+    set_variable = { new_nat_tre_det = 0 }
     remake_private_factory_tot_cost = yes
     while_loop_effect = {
         break = temp_break
@@ -572,6 +668,7 @@ monthly_build_new_economy = {
         add_to_variable = { private_worker_wage = -1 }
         remake_private_factory_tot_cost = yes
     }
+    ai_worker_wage_work = yes
     clamp_worker_wage = yes
     clamp_new_economy_goods_factory = yes
     set_variable = {
@@ -581,12 +678,10 @@ monthly_build_new_economy = {
     force_update_dynamic_modifier = yes
     remake_national_factory_tot_cost = yes
     remake_this_month_goods = yes
-    remake_market = yes
-
     set_variable = {
-        now_use_national_goods_factory = national_goods_factory
+        surplus_month_goods = this_month_goods
     }
-    remake_this_month_goods = yes
+    remake_market = yes
 }
 sell_goods = {
     # our_nation_not_sphere
@@ -684,7 +779,7 @@ distribute_profits = {
         an_factory_profits = surplus_month_goods
     }
     set_variable = { mid_w = private_goods_factory }
-    add_to_variable = { mid_w = national_goods_factory }
+    add_to_variable = { mid_w = now_use_national_goods_factory }
     divide_variable = {
         an_factory_profits = mid_w
     }
@@ -692,10 +787,10 @@ distribute_profits = {
         mid_w = an_factory_profits
     }
     multiply_variable = {
-        mid_w = national_goods_factory
+        mid_w = now_use_national_goods_factory
     }
     add_to_variable = {
-        new_nat_tre = mid_w
+        new_nat_tre_det = mid_w
     }
     set_variable = {
         mid_w = an_factory_profits
@@ -719,15 +814,21 @@ distribute_profits = {
         private_capital = mid_w
     }
     add_to_variable = {
-        new_nat_tre = mid_w
+        new_nat_tre_det = mid_w
     }
     set_variable = { our_tax_from_factory = mid_w }
 }
 payroll_qwq = {
     remake_national_factory_tot_cost = yes
     remake_private_factory_tot_cost = yes
+    set_variable = {
+        new_nat_tre_profits_tot = new_nat_tre_det
+    }
+    set_variable = {
+        new_nat_tre_profits_to_factory = new_nat_tre_det
+    }
     subtract_from_variable = {
-        new_nat_tre = national_factory_tot_cost
+        new_nat_tre_det = national_factory_tot_cost
     }
     subtract_from_variable = {
         private_capital = private_cost
@@ -735,14 +836,26 @@ payroll_qwq = {
 	set_variable = { military_spend = num_battalions}
 	multiply_variable = {var = military_spend value = 0.005}
     subtract_from_variable = {
-        new_nat_tre = military_spend
+        new_nat_tre_det = military_spend
+    }
+    subtract_from_variable = {
+        new_nat_tre_profits_to_factory  = military_spend
+    }
+    set_variable = { num_of_people = 0 }
+    every_controlled_state = {
+        add_to_variable = { PREV.num_of_people = state_population_k }
     }
     set_variable = {
-        state_cost = num_owned_states
+        people_cost = num_of_people
     }
-	multiply_variable = { var = state_cost value = 0.2 }
+    divide_variable = {
+        var = people_cost value = 10000
+    }
     subtract_from_variable = {
-        new_nat_tre = state_cost
+        new_nat_tre_det = people_cost
+    }
+    subtract_from_variable = {
+        new_nat_tre_profits_to_factory = people_cost
     }
 }
 industrial_expansion = {

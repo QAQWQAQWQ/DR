@@ -1,23 +1,24 @@
 on_actions = {
 	on_startup= {
 		effect = {
+            set_variable = { global.autowork = 1 }
             #1B = 1000000000
             set_variable = { global.one_bil = 100000 }
             #worker wages
             #low 20%
-            set_variable = { global.low_wages = 0.45 }
-            set_variable = { global.low_wages_factor = 0.6 }
+            set_variable = { global.low_wages = 0.25 }
+            set_variable = { global.low_wages_factor = 0.2 }
             #low-mid 40%
-            set_variable = { global.low_mid_wages = 0.55 }
-            set_variable = { global.low_mid_wages_factor = 0.7 }
+            set_variable = { global.low_mid_wages = 0.4 }
+            set_variable = { global.low_mid_wages_factor = 0.4 }
             #mid 60%
-            set_variable = { global.mid_wages = 0.6 }
-            set_variable = { global.mid_wages_factor = 0.8 }
+            set_variable = { global.mid_wages = 0.55 }
+            set_variable = { global.mid_wages_factor = 0.6 }
             #high_mid 80%
-            set_variable = { global.high_mid_wages = 0.65 }
-            set_variable = { global.high_mid_wages_factor = 0.9 }
+            set_variable = { global.high_mid_wages = 0.7 }
+            set_variable = { global.high_mid_wages_factor = 0.8 }
             #high 100%
-            set_variable = { global.high_wages = 0.75 }
+            set_variable = { global.high_wages = 0.85 }
             set_variable = { global.high_wages_factor = 1 }
             #a new ind (we need 10 B to build a new factory )
             set_variable = {
@@ -49,7 +50,8 @@ on_actions = {
             }
             #resource
             every_country = {
-                set_variable = { new_nat_tre = 0 }
+                set_variable = { new_nat_tre = 1 }
+                set_variable = { new_nat_tre_det = 0 }
                 set_variable = { resource_cnt = 0 }
                 set_variable = { tax_qwq = 0.4 }
                 set_variable = { people_tax = 0.3 }
@@ -142,6 +144,10 @@ on_actions = {
                 else = {
                     multiply_variable = { private_capital = 16 }
                 }}}}}
+                # set_variable = { new_nat_tre = private_capital }
+                # multiply_variable = { new_nat_tre = 0.01 }
+                # set_variable = { new_nat_tre_profits_tot = national_goods_factory }
+                # multiply_variable = { new_nat_tre_profits_tot = 0.8 }
             }
             every_country = {
                 remake_private_factory_tot_cost = yes
@@ -157,8 +163,18 @@ on_actions = {
             every_country = {
                 distribute_profits = yes
                 payroll_qwq = yes
+                add_to_variable = {
+                    new_nat_tre = new_nat_tre_det
+                }
                 industrial_expansion = yes
+                ai_goods_factory_work = yes
+                set_variable = {
+                    now_use_national_goods_factory = national_goods_factory
+                }
+                remake_this_month_goods = yes
+                ai_tax_work = yes
             }
+            set_variable = { global.autowork = 0 }
         }
     }
     on_daily_AOX = {
@@ -177,7 +193,16 @@ on_actions = {
             every_country = {
                 distribute_profits = yes
                 payroll_qwq = yes
+                add_to_variable = {
+                    new_nat_tre = new_nat_tre_det
+                }
                 industrial_expansion = yes
+                ai_goods_factory_work = yes
+                set_variable = {
+                    now_use_national_goods_factory = national_goods_factory
+                }
+                remake_this_month_goods = yes
+                ai_tax_work = yes
             }
         }
     }
