@@ -207,8 +207,14 @@ on_actions = {
                 every_country = { news_event = ger_con.6 }
                 AOX = { white_peace = WWS }
                 WWS = { white_peace = AOX }
+                66 = { add_core_of = AOX }
+                67 = { add_core_of = AOX }
+                762 = { add_core_of = AOX }
                 AOX = {
-                    set_autonomy = { target = WWS autonomy_state = autonomy_puppet }
+                #    set_autonomy = { target = WWS autonomy_state = autonomy_puppet }
+                    transfer_state = 66
+                    transfer_state = 67
+                    transfer_state = 762
                 }
                 AOX = { add_to_faction = WWS }
                 every_country = {
