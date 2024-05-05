@@ -1427,7 +1427,10 @@ bosnia_war_end = yes
 		x = 8
 		y = 6
 		allow_branch={ 
-			has_completed_focus = AUS_ger_20
+			OR = {
+				has_completed_focus = AUS_ger_20
+				# always = yes
+			}
 		}
 		mutually_exclusive = {
 			focus = AUS_HRE_0

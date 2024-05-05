@@ -160,6 +160,23 @@ on_actions = {
             }
             every_country = {
                 monthly_build_new_economy = yes
+                set_variable = {
+                    shpere_market = 0
+                }
+            }
+            every_country = {
+                if = {
+                    limit = {
+                        check_variable = {
+                            in_a_sphere = 1
+                        }
+                    }
+                    var:sphere_country = {
+                        add_to_variable = {
+                            shpere_market = PREV.before_large_of_market
+                        }
+                    }
+                }
             }
             AOX = {
                 sell_goods = yes
@@ -192,6 +209,23 @@ on_actions = {
 		effect = {
             every_country = {
                 monthly_build_new_economy = yes
+                set_variable = {
+                    shpere_market = 0
+                }
+            }
+            every_country = {
+                if = {
+                    limit = {
+                        check_variable = {
+                            in_a_sphere = 1
+                        }
+                    }
+                    var:sphere_country = {
+                        add_to_variable = {
+                            shpere_market = PREV.before_large_of_market
+                        }
+                    }
+                }
             }
             sell_goods = yes
             every_country = {
