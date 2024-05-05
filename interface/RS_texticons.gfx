@@ -243,5 +243,45 @@ spriteTypes = {
 		name = "GFX_Country_Introduction"
 		texturefile = "gfx/interface/textpicture/Country_Introduction.png"
 		legacy_lazy_load = no
-	}													
+	}	
+	
+	
+
+
+
+
+
+
+
+	spriteType = {
+		name = "GFX_Taxation_private_factories"
+		texturefile = "gfx/interface/textpicture/Taxation_private_factories.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Taxation_private_Agricultural"
+		texturefile = "gfx/interface/textpicture/Taxation_private_Agricultural.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Factory_repairs"
+		texturefile = "gfx/interface/textpicture/Factory_repairs.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_factory_tot_profits"
+		texturefile = "gfx/interface/textpicture/factory_tot_profits.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_military_spend"
+		texturefile = "gfx/interface/textpicture/military_spend.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_people_cost"
+		texturefile = "gfx/interface/textpicture/people_cost.png"
+		legacy_lazy_load = no
+	}
+	
 }
