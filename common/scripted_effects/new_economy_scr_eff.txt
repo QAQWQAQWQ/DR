@@ -1,3 +1,62 @@
+remake_pop_mark_base = {
+    set_variable = { ind_upd = max_manpower_k }
+    divide_variable = {
+        var = ind_upd
+        value = num_of_factories
+    }
+    if = {
+        limit = {
+            OR = {
+                check_variable = { ind_upd > 3000 }
+                check_variable = { num_of_factories < 1 }
+            }
+        }
+        set_variable = { pop_base = 20 }
+    }
+    else = {
+    if = {
+        limit = {
+            OR = {
+                check_variable = { ind_upd > 2000 }
+                check_variable = { num_of_factories < 5 }
+            }
+        }
+        set_variable = { pop_base = 40 }
+    }
+    else = {
+    if = {
+        limit = {
+            OR = {
+                check_variable = { ind_upd > 1000 }
+                check_variable = { num_of_factories < 25 }
+            }
+        }
+        set_variable = { pop_base = 60 }
+    }
+    else = {
+    if = {
+        limit = {
+            OR = {
+                check_variable = { ind_upd > 500 }
+                check_variable = { num_of_factories < 35 }
+            }
+        }
+        set_variable = { pop_base = 80 }
+    }
+    else = {
+    if = {
+        limit = {
+            OR = {
+                check_variable = { ind_upd > 150 }
+                check_variable = { num_of_factories < 35 }
+            }
+        }
+        set_variable = { pop_base = 200 }
+    }
+    else = {
+        set_variable = { pop_base = 240 }
+    }}}}}
+}
 remake_national_factory_tot_cost = {
     set_variable = { national_factory_tot_cost = 0 }
     set_variable = { mil_cost = global.mil_fac_worker }
@@ -261,21 +320,8 @@ remake_fac_nums = {
     set_variable = { ind_num = num_of_civilian_factories }
     set_variable = { mil_num = num_of_military_factories }
     set_variable = { docker_num = num_of_naval_factories }
-    # set_variable = { ind_num = 0 }
-    # set_variable = { mil_num = 0 }
-    # set_variable = { docker_num = 0 }
-    # every_controlled_state = {
-	# 	add_to_variable = { var = PREV.ind_num value = industrial_complex_level }
-	#	add_to_variable = { var = PREV.mil_num value = arms_factory_level }
-	#	add_to_variable = { var = PREV.docker_num value = building_level@dockyard }
-	# }
 }
-remake_market = {
-    set_variable = { large_of_market = 0 }
-    set_variable = { num_of_people = 0 }
-    every_controlled_state = {
-        add_to_variable = { PREV.num_of_people = state_population_k }
-    }
+remake_market_from_worker = {
     set_variable = { mid_w = global.ind_fac_worker }
     if = {
         limit = {
@@ -309,7 +355,7 @@ remake_market = {
     }
     divide_variable = { mid_w = global.one_bil }
     multiply_variable = { mid_w = private_goods_factory }
-    add_to_variable = { large_of_market = mid_w }
+    set_variable = { market_from_pri_fac = mid_w }
 
     set_variable = { mid_w = global.ind_fac_worker }
     if = {
@@ -344,7 +390,7 @@ remake_market = {
     }
     divide_variable = { mid_w = global.one_bil }
     multiply_variable = { mid_w = ind_num }
-    add_to_variable = { large_of_market = mid_w }
+    set_variable = {  market_from_ind_fac = mid_w }
 
     set_variable = { mid_w = global.mil_fac_worker }
     if = {
@@ -380,7 +426,7 @@ remake_market = {
     divide_variable = { mid_w = global.one_bil }
     set_variable = { tot_goods_fac = 0 }
     multiply_variable = { mid_w = mil_num }
-    add_to_variable = { large_of_market = mid_w }
+    set_variable = { market_from_mil_fac = mid_w }
     set_variable = { mid_w = global.docker_fac_worker }
     if = {
         limit = {
@@ -415,105 +461,63 @@ remake_market = {
     divide_variable = { mid_w = global.one_bil }
     set_variable = { tot_goods_fac = 0 }
     multiply_variable = { mid_w = docker_num }
-    add_to_variable = { large_of_market = mid_w }
-
-    multiply_variable = { large_of_market = 0.4 }
-
-    set_variable = {
-        people_mark = num_of_people
-    }
-    divide_variable = {
-        people_mark = global.one_bil
+    set_variable = { market_from_doc_fac = mid_w }
+}
+remake_people_market = {
+    set_variable = { num_of_people = 0 }
+    every_controlled_state = {
+        add_to_variable = { PREV.num_of_people = state_population_k }
     }
     set_variable = {
-        ind_upd = max_manpower_k
+        people_mark_tot = num_of_people
     }
     divide_variable = {
-        var = ind_upd
-        value = num_of_factories
+        people_mark_tot = global.one_bil
     }
-    if = {
-        limit = {
-            OR = {
-                check_variable = { ind_upd > 3000 }
-                check_variable = { num_of_factories < 1 }
-            }
-        }
-         multiply_variable = { people_mark = 25 }
-    }
-    else = {
-    if = {
-        limit = {
-            OR = {
-                check_variable = { ind_upd > 2000 }
-                check_variable = { num_of_factories < 5 }
-            }
-        }
-         multiply_variable = { people_mark = 50 }
-    }
-    else = {
-    if = {
-        limit = {
-            OR = {
-                check_variable = { ind_upd > 1000 }
-                check_variable = { num_of_factories < 25 }
-            }
-        }
-         multiply_variable = { people_mark = 100 }
-    }
-    else = {
-    if = {
-        limit = {
-            OR = {
-                check_variable = { ind_upd > 500 }
-                check_variable = { num_of_factories < 35 }
-            }
-        }
-         multiply_variable = { people_mark = 200 }
-    }
-    else = {
-    if = {
-        limit = {
-            OR = {
-                check_variable = { ind_upd > 150 }
-                check_variable = { num_of_factories < 35 }
-            }
-        }
-         multiply_variable = { people_mark = 300 }
-    }
-    else = {
-         multiply_variable = { people_mark = 400 }
-    }}}}}
-    # multiply_variable = { people_mark = 10 }
-    add_to_variable = {
-        large_of_market = people_mark
-    }
-    
-    set_variable = { mid_w = people_mark }
-    multiply_variable = { mid_w = people_tax }
-    subtract_from_variable = { large_of_market = mid_w }
-    set_variable = { our_tax_from_people = mid_w }
-    # if = {
-    #    limit = {
-    #        is_subject = yes
-    #    }
-    #    set_variable = { to_overlord_tax = mid_w }
-    #    multiply_variable = { to_overlord_tax = 0.1 }
-    #    subtract_from_variable = { our_tax_from_people = to_overlord_tax }
-    #    overlord = {
-    #        add_to_variable = { new_nat_tre_det = PREV.to_overlord_tax }
-    #    }
-    # }
-    add_to_variable = { new_nat_tre_det = our_tax_from_people }
-    
-    set_variable = { mid_w = people_mark }
-    multiply_variable = { mid_w = 0.5 }
-    subtract_from_variable = { large_of_market = mid_w }
+    multiply_variable = { people_mark_tot = pop_base }
 
-    set_variable = { mid_w = people_mark }
-    multiply_variable = { mid_w = 0.05 }
-    subtract_from_variable = { large_of_market = mid_w }
-    add_to_variable = { private_capital = mid_w }
+    set_variable = {
+        pop_large_of_market = people_mark_tot
+    }
+    if = {
+        limit = {
+            check_variable = { people_tax < 0.5 }
+        }
+        set_variable = { mid_w = 0.5 }
+        subtract_from_variable = { mid_w = people_tax }
+        set_variable = { capital_upd = people_mark_tot }
+        multiply_variable = { capital_upd = mid_w }
+        subtract_from_variable = { pop_large_of_market = capital_upd }
+        add_to_variable = { private_capital = capital_upd }
+    }
+    if = {
+        limit = {
+            check_variable = { people_tax > 0.5 }
+        }
+        set_variable = { pay_for_food = 1 }
+        subtract_from_variable = { pay_for_food = people_tax }
+    }
+    else = { set_variable = { pay_for_food = 0.5 } }
+    set_variable = { pop_foods_cost = people_mark_tot }
+    multiply_variable = { pop_foods_cost = pay_for_food }
+    subtract_from_variable = { pop_large_of_market = pop_foods_cost }
+
+    set_variable = { our_tax_from_people = people_mark_tot }
+    multiply_variable = { our_tax_from_people = people_tax }
+    subtract_from_variable = { pop_large_of_market = our_tax_from_people }
+}
+remake_market = {
+    set_variable = { large_of_market = 0 }
+    remake_market_from_worker = yes 
+    remake_people_market = yes
+    add_to_variable = { large_of_market = market_from_pri_fac }
+    add_to_variable = { large_of_market = market_from_ind_fac }
+    add_to_variable = { large_of_market = market_from_mil_fac }
+    add_to_variable = { large_of_market = market_from_doc_fac }
+
+    multiply_variable = { large_of_market = 0.5 }
+
+    add_to_variable = { large_of_market = pop_large_of_market }
 
     set_variable = { before_large_of_market = large_of_market }
 }
@@ -535,7 +539,7 @@ clamp_worker_wage = {
     }
     clamp_variable = {
         var = private_worker_wage
-        min = 0
+        min = 1
     }
     clamp_variable = {
         var = national_worker_wage
@@ -548,110 +552,6 @@ clamp_worker_wage = {
     remake_fac_nums = yes
     remake_national_factory_tot_cost = yes
     remake_this_month_goods = yes
-}
-ai_worker_wage_work = {
-    if = {
-        limit = {
-            OR = {
-                is_ai = yes
-                check_variable = { global.autowork = 1 }
-            }
-        }
-        remake_national_factory_tot_cost = yes
-        while_loop_effect = {
-            break = temp_break
-            limit = {
-                check_variable = { national_factory_tot_cost < new_nat_tre_profits_to_factory }
-                check_variable = { national_worker_wage < 5 }
-            }
-            add_to_variable = { national_worker_wage = 1 }
-            remake_national_factory_tot_cost = yes
-        }
-        while_loop_effect = {
-            break = temp_break
-            limit = {
-                check_variable = { national_factory_tot_cost > new_nat_tre_profits_to_factory }
-                check_variable = { national_worker_wage > 1 }
-            }
-            add_to_variable = { national_worker_wage = -1 }
-            remake_national_factory_tot_cost = yes
-        }
-    }
-}
-ai_goods_factory_work = {
-    if = {
-        limit = {
-            OR = {
-                is_ai = yes
-                check_variable = { global.autowork = 1 }
-            }
-        }
-        set_variable = { ind_goods_qwq = global.an_ind_goods }
-        divide_variable = { ind_goods_qwq = global.one_bil }
-        set_variable = { mid_w = 0 }
-        while_loop_effect = {
-            break = temp_break
-            limit = {
-                check_variable = { national_goods_factory > 0 }
-                check_variable = { surplus_month_goods > mid_w }
-            }
-            add_to_variable = { national_goods_factory = -1 }
-            add_to_variable = { mid_w = ind_goods_qwq }
-        }
-        set_variable = { mid_w = 0 }
-        while_loop_effect = {
-            break = temp_break
-            limit = {
-                check_variable = { national_goods_factory < ind_num }
-                check_variable = { new_nat_tre_det < mid_w }
-            }
-            add_to_variable = { national_goods_factory = 1 }
-            subtract_from_variable = { mid_w = ind_goods_qwq }
-        }
-        clamp_new_economy_goods_factory = yes
-    }
-}
-ai_tax_work = {
-    if = {
-        limit = {
-            OR = {
-                is_ai = yes
-                check_variable = { global.autowork = 1 }
-            }
-        }
-        if = {
-            limit = {
-                check_variable = {
-                    new_nat_tre_det < 0 
-                }
-                check_variable = {
-                    tax_qwq < 1 
-                }
-            }
-            add_to_variable = {
-                tax_qwq = 0.05
-            }
-            add_to_variable = {
-                tax_qwq_qaq = 5
-            }
-        }
-        if = {
-            limit = {
-                check_variable = {
-                    new_nat_tre_det < 0 
-                }
-                check_variable = {
-                    people_tax < 0.45 
-                }
-            }
-            add_to_variable = {
-                people_tax = 0.05
-            }
-            add_to_variable = {
-                people_tax_qaq = 5
-            }
-        }
-    }
 }
 monthly_build_new_economy = {
     set_variable = { new_nat_tre_det = 0 }
@@ -790,88 +690,71 @@ distribute_profits = {
         an_factory_profits = mid_w
     }
     set_variable = {
-        mid_w = an_factory_profits
+        national_factory_tot_profits = an_factory_profits
     }
     multiply_variable = {
-        mid_w = now_use_national_goods_factory
+        national_factory_tot_profits = now_use_national_goods_factory
     }
+    # add_to_variable = { new_nat_tre_det = national_factory_tot_profits }
     set_variable = {
-        national_factory_tot_profits = mid_w
+        private_goods_cnts = an_factory_profits
+    }
+    multiply_variable = {
+        private_goods_cnts = private_goods_factory
     }
     add_to_variable = {
-        new_nat_tre_det = mid_w
+        private_capital = private_goods_cnts
     }
     set_variable = {
-        mid_w = an_factory_profits
+        our_tax_from_factory = private_goods_cnts
     }
     multiply_variable = {
-        mid_w = private_goods_factory
-    }
-    add_to_variable = {
-        private_capital = mid_w
-    }
-    set_variable = {
-        mid_w = an_factory_profits
-    }
-    multiply_variable = {
-        mid_w = private_goods_factory
-    }
-    multiply_variable = {
-        mid_w = tax_qwq
+        our_tax_from_factory = tax_qwq
     }
     subtract_from_variable = {
-        private_capital = mid_w
+        private_capital = our_tax_from_factory
     }
-    add_to_variable = {
-        new_nat_tre_det = mid_w
-    }
-    set_variable = { our_tax_from_factory = mid_w }
+    # add_to_variable = { new_nat_tre_det = our_tax_from_factory }
 }
-payroll_qwq = {
-    remake_national_factory_tot_cost = yes
-    remake_private_factory_tot_cost = yes
-    set_variable = {
-        new_nat_tre_profits_tot = new_nat_tre_det
-    }
-    set_variable = {
-        new_nat_tre_profits_to_factory = new_nat_tre_det
-    }
-    set_variable = {
-        before_national_factory_tot_cost = national_factory_tot_cost
-    }
-    subtract_from_variable = {
-        new_nat_tre_det = national_factory_tot_cost
-    }
-    subtract_from_variable = {
-        private_capital = private_cost
-    }
+remake_nat_tre_add = {
+    set_variable = { new_nat_tre_add = 0 }
+    add_to_variable = { new_nat_tre_add = our_tax_from_factory }
+    add_to_variable = { new_nat_tre_add = national_factory_tot_profits }
+    add_to_variable = { new_nat_tre_add = our_tax_from_people }
+}
+remake_mil_spend = {
 	set_variable = { military_spend = num_battalions}
 	multiply_variable = {var = military_spend value = 0.005}
-    subtract_from_variable = {
-        new_nat_tre_det = military_spend
-    }
-    subtract_from_variable = {
-        new_nat_tre_profits_to_factory  = military_spend
-    }
+}
+remake_pop_cost = {
     set_variable = { num_of_people = 0 }
     every_controlled_state = {
         add_to_variable = { PREV.num_of_people = state_population_k }
     }
-    set_variable = {
-        people_cost = num_of_people
-    }
-    divide_variable = {
-        var = people_cost value = 10000
-    }
-    multiply_variable = {
-        people_cost = pop_rad
-    }
-    subtract_from_variable = {
-        new_nat_tre_det = people_cost
-    }
-    subtract_from_variable = {
-        new_nat_tre_profits_to_factory = people_cost
-    }
+    set_variable = { people_cost = num_of_people }
+    divide_variable = { var = people_cost value = 10000 }
+}
+remake_nat_tre_del = {
+    set_variable = { new_nat_tre_del = 0 }
+    add_to_variable = { new_nat_tre_del = national_factory_tot_cost }
+    set_variable = { before_national_factory_tot_cost = national_factory_tot_cost }
+    add_to_variable = { new_nat_tre_del = military_spend }
+    add_to_variable = { new_nat_tre_del = people_cost }
+}
+payroll_qwq = {
+    remake_national_factory_tot_cost = yes
+    remake_private_factory_tot_cost = yes
+    remake_mil_spend = yes
+    remake_pop_cost = yes
+    remake_nat_tre_add = yes
+    remake_nat_tre_del = yes
+    set_variable = { new_nat_tre_det = new_nat_tre_add }
+    subtract_from_variable = { new_nat_tre_det = new_nat_tre_del }
+    set_variable = { new_nat_tre_profits_to_factory = new_nat_tre_det }
+    
+    add_to_variable = { new_nat_tre_profits_to_factory = national_factory_tot_cost }
+
+    subtract_from_variable = { private_capital = private_cost }
 }
 industrial_expansion = {
     set_variable = {
@@ -931,6 +814,110 @@ industrial_expansion = {
         }
         set_variable = {
             private_capital = 0
+        }
+    }
+}
+ai_worker_wage_work = {
+    if = {
+        limit = {
+            OR = {
+                is_ai = yes
+                check_variable = { global.autowork = 1 }
+            }
+        }
+        remake_national_factory_tot_cost = yes
+        while_loop_effect = {
+            break = temp_break
+            limit = {
+                check_variable = { national_factory_tot_cost < new_nat_tre_profits_to_factory }
+                check_variable = { national_worker_wage < 5 }
+            }
+            add_to_variable = { national_worker_wage = 1 }
+            remake_national_factory_tot_cost = yes
+        }
+        while_loop_effect = {
+            break = temp_break
+            limit = {
+                check_variable = { national_factory_tot_cost > new_nat_tre_profits_to_factory }
+                check_variable = { national_worker_wage > 1 }
+            }
+            add_to_variable = { national_worker_wage = -1 }
+            remake_national_factory_tot_cost = yes
+        }
+    }
+}
+ai_goods_factory_work = {
+    if = {
+        limit = {
+            OR = {
+                is_ai = yes
+                check_variable = { global.autowork = 1 }
+            }
+        }
+        set_variable = { ind_goods_qwq = global.an_ind_goods }
+        divide_variable = { ind_goods_qwq = global.one_bil }
+        set_variable = { mid_w = 0 }
+        while_loop_effect = {
+            break = temp_break
+            limit = {
+                check_variable = { national_goods_factory > 0 }
+                check_variable = { surplus_month_goods > mid_w }
+            }
+            add_to_variable = { national_goods_factory = -1 }
+            add_to_variable = { mid_w = ind_goods_qwq }
+        }
+        set_variable = { mid_w = 0 }
+        while_loop_effect = {
+            break = temp_break
+            limit = {
+                check_variable = { national_goods_factory < ind_num }
+                check_variable = { new_nat_tre_det < mid_w }
+            }
+            add_to_variable = { national_goods_factory = 1 }
+            subtract_from_variable = { mid_w = ind_goods_qwq }
+        }
+        clamp_new_economy_goods_factory = yes
+    }
+}
+ai_tax_work = {
+    if = {
+        limit = {
+            OR = {
+                is_ai = yes
+                check_variable = { global.autowork = 1 }
+            }
+        }
+        if = {
+            limit = {
+                check_variable = {
+                    new_nat_tre_det < 0 
+                }
+                check_variable = {
+                    tax_qwq < 1 
+                }
+            }
+            add_to_variable = {
+                tax_qwq = 0.05
+            }
+            add_to_variable = {
+                tax_qwq_qaq = 5
+            }
+        }
+        if = {
+            limit = {
+                check_variable = {
+                    new_nat_tre_det < 0 
+                }
+                check_variable = {
+                    people_tax < 1
+                }
+            }
+            add_to_variable = {
+                people_tax = 0.05
+            }
+            add_to_variable = {
+                people_tax_qaq = 5
+            }
         }
     }
 }

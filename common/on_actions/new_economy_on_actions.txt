@@ -52,13 +52,13 @@ on_actions = {
             every_country = {
                 set_variable = { new_nat_tre = 1 }
                 set_variable = { new_nat_tre_det = 0 }
+                set_variable = { new_nat_tre_del = 0 }
+                set_variable = { new_nat_tre_add = 0 }
                 set_variable = { resource_cnt = 0 }
                 set_variable = { tax_qwq = 0.4 }
                 set_variable = { tax_qwq_qaq = 40 }
-                set_variable = { people_tax = 0.3 }
-                set_variable = { people_tax_qaq = 30 }
-                set_variable = { pop_rad = 0.7 }
-                set_variable = { pop_rad_qaq = 70 }
+                set_variable = { people_tax = 0.4 }
+                set_variable = { people_tax_qaq = 40 }
                 set_variable = { ind_num = 0 }
                 set_variable = { mil_num = 0 }
                 set_variable = { docker_num = 0 }
@@ -75,6 +75,8 @@ on_actions = {
                 set_variable = { large_of_market = 0 }
                 set_variable = { before_large_of_market = 0 }
                 set_variable = { num_of_people = 0 }
+                remake_pop_mark_base = yes
+                
                 # set_variable = { exchange_rate = 1.0 }
                 remake_fac_nums = yes
                 force_update_dynamic_modifier = yes
@@ -148,10 +150,6 @@ on_actions = {
                 else = {
                     multiply_variable = { private_capital = 16 }
                 }}}}}
-                # set_variable = { new_nat_tre = private_capital }
-                # multiply_variable = { new_nat_tre = 0.01 }
-                # set_variable = { new_nat_tre_profits_tot = national_goods_factory }
-                # multiply_variable = { new_nat_tre_profits_tot = 0.8 }
             }
             every_country = {
                 remake_private_factory_tot_cost = yes
@@ -160,38 +158,28 @@ on_actions = {
             }
             every_country = {
                 monthly_build_new_economy = yes
-                set_variable = {
-                    shpere_market = 0
-                }
-            }
-            every_country = {
-                if = {
-                    limit = {
-                        check_variable = {
-                            in_a_sphere = 1
-                        }
-                    }
-                    var:sphere_country = {
-                        add_to_variable = {
-                            shpere_market = PREV.before_large_of_market
-                        }
-                    }
-                }
+                set_variable = { shpere_market = 0 }
             }
             AOX = {
+                every_country = {
+                    if = {
+                        limit = {
+                            check_variable = { in_a_sphere = 1 }
+                        }
+                        var:sphere_country = {
+                            add_to_variable = { shpere_market = PREV.before_large_of_market }
+                        }
+                    }
+                }
                 sell_goods = yes
             }
             every_country = {
                 distribute_profits = yes
                 payroll_qwq = yes
-                add_to_variable = {
-                    new_nat_tre = new_nat_tre_det
-                }
+                add_to_variable = { new_nat_tre = new_nat_tre_det }
                 industrial_expansion = yes
                 ai_goods_factory_work = yes
-                set_variable = {
-                    now_use_national_goods_factory = national_goods_factory
-                }
+                set_variable = { now_use_national_goods_factory = national_goods_factory }
                 remake_this_month_goods = yes
                 ai_tax_work = yes
             }
@@ -216,14 +204,10 @@ on_actions = {
             every_country = {
                 if = {
                     limit = {
-                        check_variable = {
-                            in_a_sphere = 1
-                        }
+                        check_variable = { in_a_sphere = 1 }
                     }
                     var:sphere_country = {
-                        add_to_variable = {
-                            shpere_market = PREV.before_large_of_market
-                        }
+                        add_to_variable = { shpere_market = PREV.before_large_of_market }
                     }
                 }
             }
@@ -231,14 +215,10 @@ on_actions = {
             every_country = {
                 distribute_profits = yes
                 payroll_qwq = yes
-                add_to_variable = {
-                    new_nat_tre = new_nat_tre_det
-                }
+                add_to_variable = { new_nat_tre = new_nat_tre_det }
                 industrial_expansion = yes
                 ai_goods_factory_work = yes
-                set_variable = {
-                    now_use_national_goods_factory = national_goods_factory
-                }
+                set_variable = { now_use_national_goods_factory = national_goods_factory }
                 remake_this_month_goods = yes
                 ai_tax_work = yes
             }
