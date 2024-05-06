@@ -28,7 +28,7 @@ remake_pop_mark_base = {
         limit = {
             OR = {
                 check_variable = { ind_upd > 1000 }
-                check_variable = { num_of_factories < 25 }
+                check_variable = { num_of_factories < 15 }
             }
         }
         set_variable = { pop_base = 60 }
@@ -38,10 +38,20 @@ remake_pop_mark_base = {
         limit = {
             OR = {
                 check_variable = { ind_upd > 500 }
-                check_variable = { num_of_factories < 35 }
+                check_variable = { num_of_factories < 25 }
             }
         }
         set_variable = { pop_base = 80 }
+    }
+    else = {
+    if = {
+        limit = {
+            OR = {
+                check_variable = { ind_upd > 300 }
+                check_variable = { num_of_factories < 35 }
+            }
+        }
+        set_variable = { pop_base = 100 }
     }
     else = {
     if = {
@@ -55,6 +65,7 @@ remake_pop_mark_base = {
     }
     else = {
         set_variable = { pop_base = 240 }
+    }
     }}}}}
 }
 remake_national_factory_tot_cost = {
@@ -475,36 +486,6 @@ remake_people_market = {
         people_mark_tot = global.one_bil
     }
     multiply_variable = { people_mark_tot = pop_base }
-
-    set_variable = {
-        pop_large_of_market = people_mark_tot
-    }
-    if = {
-        limit = {
-            check_variable = { people_tax < 0.5 }
-        }
-        set_variable = { mid_w = 0.5 }
-        subtract_from_variable = { mid_w = people_tax }
-        set_variable = { capital_upd = people_mark_tot }
-        multiply_variable = { capital_upd = mid_w }
-        subtract_from_variable = { pop_large_of_market = capital_upd }
-        add_to_variable = { private_capital = capital_upd }
-    }
-    if = {
-        limit = {
-            check_variable = { people_tax > 0.5 }
-        }
-        set_variable = { pay_for_food = 1 }
-        subtract_from_variable = { pay_for_food = people_tax }
-    }
-    else = { set_variable = { pay_for_food = 0.5 } }
-    set_variable = { pop_foods_cost = people_mark_tot }
-    multiply_variable = { pop_foods_cost = pay_for_food }
-    subtract_from_variable = { pop_large_of_market = pop_foods_cost }
-
-    set_variable = { our_tax_from_people = people_mark_tot }
-    multiply_variable = { our_tax_from_people = people_tax }
-    subtract_from_variable = { pop_large_of_market = our_tax_from_people }
 }
 remake_market = {
     set_variable = { large_of_market = 0 }
@@ -514,10 +495,36 @@ remake_market = {
     add_to_variable = { large_of_market = market_from_ind_fac }
     add_to_variable = { large_of_market = market_from_mil_fac }
     add_to_variable = { large_of_market = market_from_doc_fac }
+    add_to_variable = { large_of_market = people_mark_tot }
+    set_variable = { tot_large_of_market = large_of_market }
+    if = {
+        limit = {
+            check_variable = { people_tax < 0.45 }
+        }
+        set_variable = { capital_upd_qwq = 0.05 }
+    }
+    else = {
+        set_variable = { capital_upd_qwq = 0.5 }
+        subtract_from_variable = { capital_upd_qwq = people_tax }
+    }
+    set_variable = { capital_upd = tot_large_of_market }
+    multiply_variable = { capital_upd = capital_upd_qwq }
+    subtract_from_variable = { large_of_market = capital_upd }
+    if = {
+        limit = {
+            check_variable = { people_tax > 0.5 }
+        }
+        set_variable = { pay_for_food = 1 }
+        subtract_from_variable = { pay_for_food = people_tax }
+    }
+    else = { set_variable = { pay_for_food = 0.5 } }
+    set_variable = { pop_foods_cost = tot_large_of_market }
+    multiply_variable = { pop_foods_cost = pay_for_food }
+    subtract_from_variable = { large_of_market = pop_foods_cost }
 
-    multiply_variable = { large_of_market = 0.5 }
-
-    add_to_variable = { large_of_market = pop_large_of_market }
+    set_variable = { our_tax_from_people = tot_large_of_market }
+    multiply_variable = { our_tax_from_people = people_tax }
+    subtract_from_variable = { large_of_market = our_tax_from_people }
 
     set_variable = { before_large_of_market = large_of_market }
 }
@@ -754,6 +761,7 @@ payroll_qwq = {
     
     add_to_variable = { new_nat_tre_profits_to_factory = national_factory_tot_cost }
 
+    add_to_variable = { private_capital = capital_upd }
     subtract_from_variable = { private_capital = private_cost }
 }
 industrial_expansion = {
@@ -786,7 +794,7 @@ industrial_expansion = {
             check_variable = { private_goods_factory > 0 }
         }
         add_to_variable = { private_goods_factory = -1 }
-        add_to_variable = { private_capital = global.a_new_ind_cost }
+        add_to_variable = { private_capital = global.sell_a_ind }
     }
     while_loop_effect = {
         break = temp_break
@@ -887,37 +895,61 @@ ai_tax_work = {
                 check_variable = { global.autowork = 1 }
             }
         }
+        remake_market = yes
+        remake_national_factory_tot_cost = yes
+        remake_private_factory_tot_cost = yes
+        remake_mil_spend = yes
+        remake_pop_cost = yes
+        remake_nat_tre_add = yes
+        remake_nat_tre_del = yes
+        while_loop_effect = {
+            break = temp_break
+            limit = {
+                check_variable = { people_tax < 1 }
+                check_variable = { new_nat_tre_add < new_nat_tre_del }
+            }
+            add_to_variable = { people_tax = 0.05 }
+            add_to_variable = { people_tax_qaq = 5 }
+            remake_market = yes
+            remake_national_factory_tot_cost = yes
+            remake_private_factory_tot_cost = yes
+            remake_mil_spend = yes
+            remake_pop_cost = yes
+            remake_nat_tre_add = yes
+            remake_nat_tre_del = yes
+        }
+    }
+}
+monthly_we_do = {
+    every_country = {
+        monthly_build_new_economy = yes
+    }
+    every_country = {
+        set_variable = {
+            shpere_market = 0
+        }
+    }
+    every_country = {
         if = {
             limit = {
-                check_variable = {
-                    new_nat_tre_det < 0 
-                }
-                check_variable = {
-                    tax_qwq < 1 
-                }
+                check_variable = { in_a_sphere = 1 }
             }
-            add_to_variable = {
-                tax_qwq = 0.05
-            }
-            add_to_variable = {
-                tax_qwq_qaq = 5
+            var:sphere_country = {
+                add_to_variable = { shpere_market = PREV.before_large_of_market }
             }
         }
-        if = {
-            limit = {
-                check_variable = {
-                    new_nat_tre_det < 0 
-                }
-                check_variable = {
-                    people_tax < 1
-                }
-            }
-            add_to_variable = {
-                people_tax = 0.05
-            }
-            add_to_variable = {
-                people_tax_qaq = 5
-            }
-        }
+    }
+    sell_goods = yes
+    every_country = {
+        distribute_profits = yes
+        payroll_qwq = yes
+        add_to_variable = { new_nat_tre = new_nat_tre_det }
+        ai_tax_work = yes
+
+        industrial_expansion = yes
+        ai_goods_factory_work = yes
+        
+        set_variable = { now_use_national_goods_factory = national_goods_factory }
+        remake_this_month_goods = yes
     }
 }

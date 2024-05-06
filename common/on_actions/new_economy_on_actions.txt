@@ -1,6 +1,7 @@
 on_actions = {
 	on_startup= {
 		effect = {
+            set_variable = { global.month_num = 0 }
             set_variable = { global.autowork = 1 }
             #1B = 1000000000
             set_variable = { global.one_bil = 100000 }
@@ -24,9 +25,12 @@ on_actions = {
             set_variable = {
                 global.a_new_ind_cost = 10
             }
+            set_variable = {
+                global.sell_a_ind = 8
+            }
             #ind worker
             set_variable = {
-                global.an_ind_goods = 80000
+                global.an_ind_goods = 50000
             }
             set_variable = {
                 global.ind_fac_worker = 39200
@@ -55,10 +59,10 @@ on_actions = {
                 set_variable = { new_nat_tre_del = 0 }
                 set_variable = { new_nat_tre_add = 0 }
                 set_variable = { resource_cnt = 0 }
-                set_variable = { tax_qwq = 0.4 }
-                set_variable = { tax_qwq_qaq = 40 }
-                set_variable = { people_tax = 0.4 }
-                set_variable = { people_tax_qaq = 40 }
+                set_variable = { tax_qwq = 0.3 }
+                set_variable = { tax_qwq_qaq = 30 }
+                set_variable = { people_tax = 0 }
+                set_variable = { people_tax_qaq = 0 }
                 set_variable = { ind_num = 0 }
                 set_variable = { mil_num = 0 }
                 set_variable = { docker_num = 0 }
@@ -156,32 +160,12 @@ on_actions = {
                 remake_national_factory_tot_cost = yes
                 industrial_expansion = yes
             }
-            every_country = {
-                monthly_build_new_economy = yes
-                set_variable = { shpere_market = 0 }
-            }
             AOX = {
+                monthly_we_do = yes
                 every_country = {
-                    if = {
-                        limit = {
-                            check_variable = { in_a_sphere = 1 }
-                        }
-                        var:sphere_country = {
-                            add_to_variable = { shpere_market = PREV.before_large_of_market }
-                        }
-                    }
+                     subtract_from_variable = { new_nat_tre = new_nat_tre_det }
                 }
-                sell_goods = yes
-            }
-            every_country = {
-                distribute_profits = yes
-                payroll_qwq = yes
-                add_to_variable = { new_nat_tre = new_nat_tre_det }
-                industrial_expansion = yes
-                ai_goods_factory_work = yes
-                set_variable = { now_use_national_goods_factory = national_goods_factory }
-                remake_this_month_goods = yes
-                ai_tax_work = yes
+                monthly_we_do = yes
             }
             set_variable = { global.autowork = 0 }
         }
@@ -195,32 +179,13 @@ on_actions = {
     }
     on_monthly_AOX = {
 		effect = {
-            every_country = {
-                monthly_build_new_economy = yes
-                set_variable = {
-                    shpere_market = 0
+            add_to_variable = { global.month_num = 1 }
+            if = {
+                limit = {
+                    check_variable = { global.month_num = 3 }
                 }
-            }
-            every_country = {
-                if = {
-                    limit = {
-                        check_variable = { in_a_sphere = 1 }
-                    }
-                    var:sphere_country = {
-                        add_to_variable = { shpere_market = PREV.before_large_of_market }
-                    }
-                }
-            }
-            sell_goods = yes
-            every_country = {
-                distribute_profits = yes
-                payroll_qwq = yes
-                add_to_variable = { new_nat_tre = new_nat_tre_det }
-                industrial_expansion = yes
-                ai_goods_factory_work = yes
-                set_variable = { now_use_national_goods_factory = national_goods_factory }
-                remake_this_month_goods = yes
-                ai_tax_work = yes
+                set_variable = { global.month_num = 0 }
+                monthly_we_do = yes
             }
         }
     }
