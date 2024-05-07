@@ -18,52 +18,51 @@ guiTypes = {
 		name = "money_system_main_window"
 		position = { x = 2 y = 5 }
 		size = {width = 550 height = 380}
-
+		iconType = {
+			name = "ECO_icon1"
+                                                #spriteType ="GFX_economy_background"
+		 	position = {x = 25 y = 53} 
+		}
 		background = {
 				name = "money_system_main"
 				spriteType ="GFX_tiled_paper_w_frame_bg"
 		}
 		
 		
-		iconType = {
-			position = {x=340 y=270}
-			name = "money_system_policy_bg"
-			size = {width = 235 height = 35}
-			spriteType = "GFX_moneypolicy_bg"
-		}
-		iconType = {
-			position = {x=455 y=282}
-			name = "money_system_policy"
-			size = {width = 150 height = 5}
-			spriteType = "GFX_add_goal_button"
-		}
-		iconType = {
-			name = "ECO_icon"
-            pdx_tooltip= "ECO_icon_numbers"
-			position = {x = 465 y = 293} 
-		}
-		instantTextBoxType = {
-			name = "money_system_policy_name"
-			position = { x = 360 y = 285 }
-			font = "hoi_18mbs"
-			borderSize = {x = 0 y = 0}
-			text = "信用评级"	
-			maxWidth = 100
-			maxHeight = 32
-			fixedsize = yes
-			format = left			
-		} 
-		instantTextBoxType = {
-			name = "money_policy_name"
-			position = { x = 373 y = 310 }
-			font = "hoi_36header"
-			borderSize = {x = 0 y = 0}
-			text = "[GetECOICON_NAME]"	
-			maxWidth = 69
-			maxHeight = 32
-			fixedsize = yes
-			format = left			
-		} 
+		# iconType = {
+		# 	position = {x=340 y=270}
+		# 	name = "money_system_policy_bg"
+		# 	size = {width = 235 height = 35}
+		# 	spriteType = "GFX_moneypolicy_bg"
+		# }
+		
+		# iconType = {
+		# 	name = "ECO_icon"
+        #     pdx_tooltip= "ECO_icon_numbers"
+		# 	position = {x = 465 y = 293} 
+		# }
+		# instantTextBoxType = {
+		# 	name = "money_system_policy_name"
+		# 	position = { x = 360 y = 285 }
+		# 	font = "hoi_18mbs"
+		# 	borderSize = {x = 0 y = 0}
+		# 	text = "信用评级"	
+		# 	maxWidth = 100
+		# 	maxHeight = 32
+		# 	fixedsize = yes
+		# 	format = left			
+		# } 
+		# instantTextBoxType = {
+		# 	name = "money_policy_name"
+		# 	position = { x = 373 y = 310 }
+		# 	font = "hoi_36header"
+		# 	borderSize = {x = 0 y = 0}
+		# 	text = "[GetECOICON_NAME]"	
+		# 	maxWidth = 69
+		# 	maxHeight = 32
+		# 	fixedsize = yes
+		# 	format = left			
+		# } 
 		instantTextBoxType = {
 			name = "money_system_main_name"
 			position = { x = 25 y = 15 }
@@ -77,15 +76,15 @@ guiTypes = {
 		} 
 		instantTextBoxType = {
 			name = "money_system_value_name"
-			position = { x = 25 y = 55 }
+			position = { x = 29 y = 65 }
 			font = "hoi_18mbs"
 			text = "money_system_value_name_TT"	 
 			maxWidth = 500
 			maxHeight = 182
 			fixedsize = yes
 			format = left	
-                                                pdx_tooltip = "GDP_TOOLTIP" 		
+            pdx_tooltip = "GDP_TOOLTIP" 		
 		}
-
+        
 }
 }

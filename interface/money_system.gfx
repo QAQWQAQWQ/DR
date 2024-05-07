@@ -46,4 +46,16 @@ spriteTypes = {
 		name = "GFX_ECO_BUTTON"
 		texturefile = "gfx/interface/ECO_BUTTON.dds"
 	}
+	spriteType = {
+		name = "GFX_wages_add_button"
+		texturefile = "gfx/interface/wages_add_button.dds"
+	}
+	spriteType = {
+		name = "GFX_wages_del_button"
+		texturefile = "gfx/interface/wages_del_button.dds"
+	}
+	spriteType = {
+		name = "GFX_economy_background"
+		texturefile = "gfx/interface/economy_background.dds"
+	}
 }

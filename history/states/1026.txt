@@ -1,0 +1,28 @@
+state={
+	id=1026
+	name="STATE_1026"
+	manpower = 82741
+	
+	state_category = rural
+	
+	resources={
+		grain=10
+	}
+	history={
+		owner = SBY
+		add_core_of = MOL
+		victory_points = {
+			12100 2
+		}
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+	
+	provinces={
+         7215 12100
+	}
+
+	local_supplies=0.0 
+}

@@ -61,37 +61,37 @@ guiTypes = {
 			name = "goods_factory_add_button"
 			size = {width = 100 height = 20}
 			position = { x= 10 y = 250 }
-			spriteType = "GFX_ECO_BUTTON"
+			spriteType = "GFX_wages_add_button"
 			buttonFont = "hoi_18mbs"
-			buttonText = "增加分配给生活消费品的民用工厂"
-			pdx_tooltip = "money_system_ui_TT"
+			#buttonText = "增加分配给生活消费品的民用工厂"
+			pdx_tooltip = "goods_factory_add_tooltip"
 		}
 		buttonType = { 
 			name = "goods_factory_del_button"
 			size = {width = 100 height = 20}
 			position = { x= 10 y = 290 }
-			spriteType = "GFX_ECO_BUTTON"
+			spriteType = "GFX_wages_del_button"
 			buttonFont = "hoi_18mbs"
-			buttonText = "减少分配给生活消费品的民用工厂"
-			pdx_tooltip = "money_system_ui_TT"
+			#buttonText = "减少分配给生活消费品的民用工厂"
+			pdx_tooltip = "goods_factory_del_button_tooltip"
 		}
 		buttonType = { 
 			name = "wages_add_button"
 			size = {width = 100 height = 20}
 			position = { x= 10 y = 130 }
-			spriteType = "GFX_ECO_BUTTON"
+			spriteType = "GFX_wages_add_button"
 			buttonFont = "hoi_18mbs"
-			buttonText = "提高工资标准"
-			pdx_tooltip = "money_system_ui_TT"
+			#buttonText = "提高工资标准"
+			pdx_tooltip = "wages_add_button_tooltip"
 		}
 		buttonType = { 
 			name = "wages_del_button"
 			size = {width = 100 height = 20}
 			position = { x= 10 y = 170 }
-			spriteType = "GFX_ECO_BUTTON"
+			spriteType = "GFX_wages_del_button"
 			buttonFont = "hoi_18mbs"
-			buttonText = "降低工资标准"
-			pdx_tooltip = "money_system_ui_TT"
+			#buttonText = "降低工资标准"
+			pdx_tooltip = "wages_del_button_tooltip"
 		}
 	}
 	

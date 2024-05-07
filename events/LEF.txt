@@ -22,12 +22,12 @@ country_event = {
 	picture = GFX_LEF_Start_1
 	is_triggered_only = yes
 	option = {
-		name = LEF_Start.1.a
+		name = LEF_Start.2.a
 	    start_border_war = {
 			change_state_after_war = no
 				attacker = {
 					state = 937
-					num_provinces = 3
+					num_provinces = 2
 					on_win = LEF.1
 					#on_lose = japan_border_conflict.3
 					#on_cancel = LEF.1
@@ -38,8 +38,8 @@ country_event = {
 					army_attack_factor= 0.3
 			}	
 			defender = {
-				state = 290
-				num_provinces = 3
+				state = 1026
+				num_provinces = 2
 				#on_win = japan_border_conflict.3
 				on_lose = SBY.2
 				#on_cancel = SBY.2
@@ -59,6 +59,19 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = LEF.1.a
+	    LEF={
+			transfer_state = 1026
+		}
+	}
+}
+country_event = {
+	id = LEF.2
+	title = LEF.2.t
+	desc = LEF.2.d
+	picture = GFX_LEF_Start_1
+	is_triggered_only = yes
+	option = {
+		name = LEF.2.a
 	    
-	    }
+	}
 }
