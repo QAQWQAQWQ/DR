@@ -98,7 +98,39 @@ remake_state_cash_tot = {
                 is_core_of = WWS
             }
         }
-		multiply_variable = { state_cash_tot = 1.75 }
+		multiply_variable = { state_cash_tot = 1.5 }
+    }
+    if = {
+        limit = {
+            OR = {
+                check_variable = { state_population_k > 9000 }
+            }
+        }
+		multiply_variable = { state_cash_tot = 2 }
+    }
+    if = {
+        limit = {
+            OR = {
+                check_variable = { state_population_k > 15000 }
+            }
+        }
+		multiply_variable = { state_cash_tot = 1.5 }
+    }
+    if = {
+        limit = {
+            OR = {
+                check_variable = { state_population_k > 20000 }
+            }
+        }
+		multiply_variable = { state_cash_tot = 1.5 }
+    }
+    if = {
+        limit = {
+            OR = {
+                check_variable = { state_population_k > 30000 }
+            }
+        }
+		multiply_variable = { state_cash_tot = 1.5 }
     }
 	if = {
 		limit = {
@@ -558,12 +590,12 @@ remake_market = {
     subtract_from_variable = { large_of_market = capital_upd }
     if = {
         limit = {
-            check_variable = { people_tax > 0.7 }
+            check_variable = { people_tax > 0.5 }
         }
         set_variable = { pay_for_food = 1 }
         subtract_from_variable = { pay_for_food = people_tax }
     }
-    else = { set_variable = { pay_for_food = 0.3 } }
+    else = { set_variable = { pay_for_food = 0.5 } }
     set_variable = { pop_foods_cost = tot_large_of_market }
     multiply_variable = { pop_foods_cost = pay_for_food }
     subtract_from_variable = { large_of_market = pop_foods_cost }
@@ -1060,5 +1092,27 @@ monthly_we_do = {
         multiply_variable = { gdp_proportion = 100 }
                     
         divide_variable = { var = gdp_proportion value = global.total_gdp }
+    }
+}
+build_base_test = {
+    if = {
+        limit = {
+            check_variable = { people_tax > 0.99 }
+        }
+        every_controlled_state = {
+            multiply_variable = { state_cash_tot = 1.2 }
+        }
+        limit = {
+            check_variable = { people_tax > 0.95 }
+        }
+        every_controlled_state = {
+            multiply_variable = { state_cash_tot = 1.2 }
+        }
+        limit = {
+            check_variable = { people_tax > 0.7 }
+        }
+        every_controlled_state = {
+            multiply_variable = { state_cash_tot = 1.2 }
+        }
     }
 }

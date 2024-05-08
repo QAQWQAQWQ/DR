@@ -160,6 +160,17 @@ on_actions = {
                 else = {
                     multiply_variable = { private_capital = 16 }
                 }}}}}
+                if = {
+                    limit = {
+                        OR = {
+                            tag = AOX
+                            tag = WWS
+                            tag = FRW
+                            tag = ENL
+                        }
+                    }
+                    multiply_variable = { private_capital = 2 }
+                }
             }
             every_country = {
                 remake_private_factory_tot_cost = yes
@@ -169,11 +180,13 @@ on_actions = {
             AOX = {
                 monthly_we_do = yes
                 every_country = {
-                     subtract_from_variable = { new_nat_tre = new_nat_tre_det }
+                    build_base_test = yes
+                    subtract_from_variable = { new_nat_tre = new_nat_tre_det }
                 }
                 monthly_we_do = yes
                 every_country = {
-                     subtract_from_variable = { new_nat_tre = new_nat_tre_det }
+                    build_base_test = yes
+                    subtract_from_variable = { new_nat_tre = new_nat_tre_det }
                 }
                 monthly_we_do = yes
             }
