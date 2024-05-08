@@ -53,7 +53,9 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no
 }
-add_ideas = {ESI_Black_Cossacks}
+add_ideas = {
+	Smallholder_economy
+	ESI_Black_Cossacks}
 set_popularities = {
 	Liberalism = 10
 	Reactionary = 12

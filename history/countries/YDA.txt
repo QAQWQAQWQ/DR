@@ -47,7 +47,10 @@ recruit_character = YDA_Gopal_Krishna_Gokar
 		
 		
 	}
-add_ideas = {YDA_kingdoms_land }
+add_ideas = {
+	Smallholder_economy
+	YDA_kingdoms_land 
+}
 set_politics = {
 	ruling_party = Conservatism
 	last_election = "1918.11.11"
