@@ -1,0 +1,120 @@
+focus_tree = {
+	id = SBY
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SBY
+		}
+	}
+	default = no
+	focus = {
+		id = SBY_focus0
+		icon = GFX_Fire
+		cost = 8.00
+		x = 5
+		y = 0
+		available = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SBY_focus1
+		icon = GFX_Fire
+		cost = 8.00
+		x = 5
+		y = 1
+		prerequisite = {
+			focus = SBY_focus0
+		}
+		available = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = SBY_focus2
+		icon = GFX_Fire
+		cost = 8.00
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = SBY_focus0
+		}
+		available = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = SBY_focus3
+		icon = GFX_Fire
+		cost = 8.00
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = SBY_focus1
+		}
+		available = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SBY_focus4
+		icon = GFX_Fire
+		cost = 8.00
+		x = 4
+		y = 2
+		prerequisite = {
+			focus = SBY_focus1
+		}
+		available = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = SBY_focus5
+		icon = GFX_Fire
+		cost = 8.00
+		x = 6
+		y = 3
+		prerequisite = {
+			focus = SBY_focus1
+		}
+		available = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+
+	}
+}

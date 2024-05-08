@@ -29,9 +29,7 @@ bookmarks = {
 	
 	ideology = Liberalism
 	ideas = {
-		sun_Empire
-England
-Colonial_ties
+	
 	}
 	focuses = {
 		
@@ -134,9 +132,22 @@ SHW_Diverse_Russia
 	history = "NPL_GATHERING_STORM_DESC"
 	minor = yes
 	ideology = Conservatism
+	focuses = {
+		NPL_focus1
+		NPL_focus2
+		NPL_focus3
+		NPL_focus4
+		NPL_focus10
+		NPL_focus8
+		
+	}
+}
+"LEF"={
+	history = "LEF_GATHERING_STORM_DESC"
+	minor = yes
+	ideology = Conservatism
 	
 }
-
 "DOR"={
 	history = "DOR_GATHERING_STORM_DESC"
 	minor = yes
