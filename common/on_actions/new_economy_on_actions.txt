@@ -53,6 +53,9 @@ on_actions = {
                 global.docker_fac_raw_cost = 4000
             }
             #resource
+            every_state = {
+                remake_state_cash_tot = yes
+            }
             every_country = {
                 set_variable = { new_nat_tre = 1 }
                 set_variable = { new_nat_tre_det = 0 }
@@ -79,7 +82,6 @@ on_actions = {
                 set_variable = { large_of_market = 0 }
                 set_variable = { before_large_of_market = 0 }
                 set_variable = { num_of_people = 0 }
-                remake_pop_mark_base = yes
                 
                 # set_variable = { exchange_rate = 1.0 }
                 remake_fac_nums = yes
