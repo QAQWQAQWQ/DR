@@ -55,7 +55,10 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no
 }
-add_ideas={TIB_Tibetan_Buddhism}
+add_ideas={
+	Smallholder_economy
+	TIB_Tibetan_Buddhism
+}
 set_popularities = {
 	Liberalism = 5
 	Reactionary = 1

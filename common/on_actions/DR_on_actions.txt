@@ -1,6 +1,28 @@
 on_actions = {
 
-
+	on_daily = {
+		
+		effect = {
+			every_country = {
+				
+				limit={
+					AND={
+						check_variable = {
+							new_nat_tre < 0
+						}
+						NOT={
+							OR={
+								has_idea = Smallholder_economy
+								has_idea = Syndicate_economy
+							}
+						}
+					}
+					
+				}
+				add_ideas = Bankruptcy
+			} 
+		} 
+	} 
 	on_startup = {
 		
 		effect = {
@@ -55,7 +77,7 @@ on_actions = {
 		effect = {
 			every_country = {
 				set_temp_variable = { grain_temp_manpower = max_manpower_k } #temp
-				divide_temp_variable = { grain_temp_manpower = 150000 }#temp
+				divide_temp_variable = { grain_temp_manpower = 250000 }#temp
 				set_variable = { grain_manpower = grain_temp_manpower }
 				subtract_from_variable = { resource_grain = grain_manpower }
 				divide_variable = { grain_manpower = 0.01 }
@@ -74,7 +96,7 @@ on_actions = {
 		effect = {
 			every_country = {
 				set_temp_variable = { resource_grain_exported = resource_exported@grain } #temp
-				divide_temp_variable = { resource_grain_exported = 88 }#temp
+				divide_temp_variable = { resource_grain_exported = 85 }#temp
 				set_variable = { resource_grain_exp = resource_grain_exported }
 				add_to_variable = { resource_grain = resource_grain_exp }
 				divide_variable = { resource_grain_exp = 0.01 }

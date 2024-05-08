@@ -1,8 +1,17 @@
 spriteTypes = {
 	spriteType = {
+	    name = "GFX_idea_Food_shortages"
+	    texturefile = "gfx/interface/ideas/Food_shortages.dds"
+    }
+	spriteType = {
+	    name = "GFX_idea_Bankruptcy"
+	    texturefile = "gfx/interface/ideas/Bankruptcy.dds"
+    }
+	spriteType = {
 	    name = "GFX_idea_Desert_Guardian"
 	    texturefile = "gfx/interface/ideas/Desert_Guardian.dds"
     }
+	
 	spriteType = {
 	    name = "GFX_idea_Eagle_spirit"
 	    texturefile = "gfx/interface/ideas/Eagle_spirit.dds"

@@ -53,7 +53,10 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no
 }
-add_ideas={SUC_Warlords_hilltops}
+add_ideas={
+	Smallholder_economy
+	SUC_Warlords_hilltops
+}
 set_popularities = {
 	Liberalism = 5
 	Reactionary = 1
