@@ -971,6 +971,7 @@ ai_tax_work = {
     }
 }
 monthly_we_do = {
+    set_variable = { global.total_gdp = 0 }
     every_country = {
         monthly_build_new_economy = yes
     }
@@ -994,6 +995,31 @@ monthly_we_do = {
         distribute_profits = yes
         payroll_qwq = yes
         add_to_variable = { new_nat_tre = new_nat_tre_det }
+        
+        set_variable = { bef_gdpmn = gdpmn }
+        set_variable = { gdpmn = 0 }
+        add_to_variable = { gdpmn = tot_large_of_market }
+        add_to_variable = { gdpmn = this_month_goods }
+        subtract_from_variable = { gdpmn = surplus_month_goods }
+
+        add_to_variable = { global.total_gdp = gdpmn }
+
+        set_variable = { gdp_growth = gdpmn }
+        divide_variable = { gdp_growth = bef_gdpmn }
+        multiply_variable = { gdp_growth = 100 }
+        subtract_from_variable = { gdp_growth = 100 }
+
+        set_variable = { core_population = 0 }
+        every_controlled_state = {
+			if = {
+				limit = {
+					is_core_of = PREV
+				}
+				add_to_variable = { var = PREV.core_population value = state_population_k } 
+			}
+		}
+
+
         ai_tax_work = yes
 
         industrial_expansion = yes
@@ -1002,5 +1028,37 @@ monthly_we_do = {
 
         set_variable = { now_use_national_goods_factory = national_goods_factory }
         remake_this_month_goods = yes
+    }
+    every_country = {
+        set_variable ={ gdp_per_capita = gdpmn }
+        multiply_variable = { var = gdp_per_capita value = 1000 }
+        if = {
+            limit = {
+                check_variable = { max_manpower_k = 0 }					
+            }
+            set_variable ={ gdp_per_capita = 0 }
+        }
+        else = {
+            divide_variable = { var = gdp_per_capita value = max_manpower_k }
+            multiply_variable = { var = gdp_per_capita value = 1000 }				
+        }
+        set_variable ={ gdp_per_capita_core = gdpmn }
+        multiply_variable = { var = gdp_per_capita_core value = 1000 }
+        if = {
+            limit = {
+                check_variable = { core_population = 0 }					
+            }
+            set_variable ={ gdp_per_capita_core = 0 }
+        }
+        else = {
+            divide_variable = { var = gdp_per_capita_core value = core_population }
+            multiply_variable = { var = gdp_per_capita_core value = 1000 }			
+        }
+        
+        set_variable = { gdp_proportion = gdpmn }
+                    
+        multiply_variable = { gdp_proportion = 100 }
+                    
+        divide_variable = { var = gdp_proportion value = global.total_gdp }
     }
 }

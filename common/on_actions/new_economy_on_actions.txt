@@ -1,6 +1,7 @@
 on_actions = {
 	on_startup= {
 		effect = {
+			set_variable = { global.total_gdp = 0 }
             set_variable = { global.month_num = 0 }
             set_variable = { global.autowork = 1 }
             #1B = 1000000000
@@ -57,6 +58,9 @@ on_actions = {
                 remake_state_cash_tot = yes
             }
             every_country = {
+                set_variable = { gdpmn = 0 }
+                set_variable = { bef_gdpmn = 0 }
+
                 set_variable = { new_nat_tre = 1 }
                 set_variable = { new_nat_tre_det = 0 }
                 set_variable = { new_nat_tre_del = 0 }

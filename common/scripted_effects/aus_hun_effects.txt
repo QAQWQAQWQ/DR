@@ -509,46 +509,6 @@ bos_war_end_qwq = {
                 }
             }
         }
-        if = {
-            limit = {
-                AOX = {
-                    has_completed_focus = AUS_bir_2
-                }
-            }
-            AOX = { set_autonomy = { target = KOH autonomy_state = autonomy_Crown_Territory } }
-                KOH = {
-                    set_politics = {ruling_party = Conservatism}
-                    set_popularities = {
-                        Liberalism = 25
-                        Reactionary = 25
-                        Conservatism = 40
-                        Revolutionism = 10
-                    }
-                }
-        }
-        else = {
-            # KOH = {
-            #    remove_ideas = {
-            #        Part_of_Habsburgs
-            #    }
-            # }
-            every_state = {
-                limit = {
-                    is_core_of = KOH
-                }
-                add_core_of = HUN
-            }
-            # every_state = {
-            #    limit = {
-            #        is_claimed_by = KOH
-            #    }
-            #    add_claim_by = HUN
-            # }
-            HUN = {
-                annex_country = {
-                    target = KOH transfer_troops = yes
-                }
-            }
-        }
+        KOH = { country_event = aushun.9 }
     }
 }

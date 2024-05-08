@@ -572,3 +572,32 @@ country_event = {
 	}
 	}
 }
+country_event = {
+	id = aushun.9
+	title = aushun.9.t
+	desc = aushun.9.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = aushun.9.a
+        every_state = {
+            limit = {
+                is_core_of = KOH
+            }
+            add_core_of = HUN
+        }
+        every_state = {
+            limit = {
+                is_claimed_by = KOH
+            }
+            add_claimed_by = HUN
+        }
+		HUN = { change_tag_from = KOH }
+        HUN = {
+            annex_country = {
+                target = KOH transfer_troops = yes
+            }
+        }
+	}
+}
