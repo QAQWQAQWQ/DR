@@ -1,0 +1,26 @@
+focus_tree = {
+	id = TEQ
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TEQ
+		}
+	}
+	default = no
+	focus = {
+		id = TEQ_focus0
+		icon = GFX_TEQ_focus0
+		cost = 8.00
+		x = 5
+		y = 0
+		available = {
+			#always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+}
