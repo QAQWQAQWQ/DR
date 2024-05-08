@@ -999,8 +999,8 @@ monthly_we_do = {
         set_variable = { bef_gdpmn = gdpmn }
         set_variable = { gdpmn = 0 }
         add_to_variable = { gdpmn = tot_large_of_market }
-        add_to_variable = { gdpmn = this_month_goods }
-        subtract_from_variable = { gdpmn = surplus_month_goods }
+        # add_to_variable = { gdpmn = this_month_goods }
+        # subtract_from_variable = { gdpmn = surplus_month_goods }
 
         add_to_variable = { global.total_gdp = gdpmn }
 
