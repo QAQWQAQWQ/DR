@@ -710,6 +710,11 @@ monthly_build_new_economy = {
         surplus_month_goods = this_month_goods
     }
     remake_market = yes
+    set_variable = { cash_upd = tot_large_of_market }
+    
+    set_variable = { mid_w = tot_large_of_market }
+    multiply_variable = { mid_w = 0.3 }
+    subtract_from_variable = { cash_upd = mid_w }
 }
 sell_goods = {
     # our_nation_not_sphere
@@ -1060,6 +1065,16 @@ monthly_we_do = {
         }
     }
     sell_goods = yes
+    every_country = {
+        set_variable = { cash_upd_qwq = before_large_of_market }
+        subtract_from_variable = { cash_upd_qwq = large_of_market }
+        divide_variable = { cash_upd_qwq = cash_upd }
+        multiply_variable = { cash_upd_qwq = 0.1 }
+        add_to_variable = { cash_upd_qwq = 1 }
+        every_controlled_state = {
+            multiply_variable = { state_cash_tot = cash_upd_qwq }
+        }
+    }
     every_country = {
         distribute_profits = yes
         payroll_qwq = yes

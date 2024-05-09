@@ -198,6 +198,8 @@ on_actions = {
                     subtract_from_variable = { new_nat_tre = new_nat_tre_det }
                 }
                 monthly_we_do = yes
+                every_country = { subtract_from_variable = { new_nat_tre = new_nat_tre_det } }
+                monthly_we_do = yes
             }
             set_variable = { global.autowork = 0 }
         }
