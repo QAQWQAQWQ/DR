@@ -3,6 +3,7 @@ aus_hun_decisions = {
 	priority = 8
 	icon = generic_research
 	visible = {
+		check_variable = { global.aus_hun_avabile = 1 }
 		OR = {
 			original_tag = AOX
 			aus_hun_part_of_the_Empire = yes

@@ -5,3 +5,7 @@ aus_sil_atk = {
 	army_defence_factor = 0.1
     breakthrough_factor = 0.15
 }
+aus_hun_stab = {
+	enable = { check_variable = { global.aus_hun_avabile = 1 } }
+    stability_factor = aus_hun_stab_fac
+}
