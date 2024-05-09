@@ -1,5 +1,5 @@
 ﻿l_simp_chinese:
-GDP_TOOLTIP_BASE:0 "£GFX_factory_tot_profits  生产生活消费品贡献的收入：[?national_factory_tot_profits|G3] B\n£GFX_Taxation_private_factories  工业税：[?our_tax_from_factory|G3] B\n£GFX_Taxation_private_Agricultural  个人所得税：[?our_tax_from_people|G3] B\n£GFX_Factory_repairs  工厂维护费：[?before_national_factory_tot_cost|R3] B\n£GFX_military_spend  军队维护费：[?military_spend|R3] B\n£GFX_people_cost  政府机构维护费：[?people_cost|R3] B"
+GDP_TOOLTIP_BASE:0 "£GFX_factory_tot_profits  生产生活消费品贡献的收入：[?national_factory_tot_profits|G3] B\n£GFX_Taxation_private_factories  工业税：[?our_tax_from_factory|G3] B\n£GFX_Taxation_private_Agricultural  个人所得税：[?our_tax_from_people|G3] B\n£GFX_Factory_repairs  工厂维护费：[?before_national_factory_tot_cost|R3] B\n£GFX_military_spend  军队维护费：[?military_spend|R3] B\n£GFX_people_cost  政府机构维护费：[?people_cost|R3] B\n[?cash_upd_qwq]"
  GDP_MAIN:0 "[?gdpmn|3] B"
  GDP_TOOLTIP:0 "[Root.GetGDPTooltip]"
  GDP_TITLE_SL:0 "[Root.GetGDPTitle]"

@@ -1072,7 +1072,7 @@ monthly_we_do = {
         multiply_variable = { cash_upd_qwq = 0.1 }
         add_to_variable = { cash_upd_qwq = 1 }
         every_controlled_state = {
-            multiply_variable = { state_cash_tot = cash_upd_qwq }
+            multiply_variable = { state_cash_tot = PREV.cash_upd_qwq }
         }
     }
     every_country = {
