@@ -1,5 +1,7 @@
 ﻿l_simp_chinese:
   use_national_goods_factory:0 "用于生产生活消费品"
+  tax_rev_stab:0 "税收对稳定度的影响"
+  factory_wage_fac:0 "工资待遇对工厂产出的影响"
   goods_factory_gui_text_qwq:0 "民间企业提供的生活消费品工厂：[?private_goods_factory]\n民间企业的平均工资待遇：[ROOT.pr_wage_texts]\n国家分配的生活消费品工厂：[?now_use_national_goods_factory]\n国有工厂的平均工资待遇：[ROOT.nat_wage_texts]\n预计本季度国有工厂总支出：[?national_factory_tot_cost|R3] B\n预计生产消费品的价值：[?this_month_goods|G3] B"
   next_month_goods_factory_gui_text_qwq:0 "下个季度计划分配给生活消费品的民用工厂：[?national_goods_factory]（最小值：0，最大值：[?ind_num]）"
   wage_1:0 "§R低§!(效率 §R20§!%)"

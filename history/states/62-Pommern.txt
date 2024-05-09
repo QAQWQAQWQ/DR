@@ -15,18 +15,17 @@ state={
 		buildings = {
 			infrastructure = 3
 			fuel_silo = 1
-		}
-		add_core_of = WWS
 
-		1939.1.1 = {
-			buildings = {
-				air_base = 8
+			6282 = {
+				naval_base = 4
+
 			}
 		}
+		add_core_of = WWS
 	}
 
 	provinces={
-		349 3207 3258 3312 3340 9388 
+		6282 349 3207 3258 3312 3340 9388 
 	}
 
 	local_supplies=3.0 

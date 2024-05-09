@@ -6,3 +6,14 @@ photosynthesis_qwq = {
 	enable = { always = yes }
     consumer_goods_factor = -1
 }
+tax_rev_stab = {
+	enable = { always = yes }
+    stability_factor = tax_stab_fac
+}
+
+factory_wage_fac = {
+	enable = { always = yes }
+    industrial_capacity_dockyard = scrfac_wage_fac
+    industrial_capacity_factory = scrfac_wage_fac
+    production_speed_buildings_factor = scrfac_wage_fac
+}

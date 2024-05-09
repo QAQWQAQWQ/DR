@@ -2,7 +2,7 @@
 state={
 	id=53
 	name="STATE_53"
-	manpower = 1453365
+	manpower = 803365
 	
 	state_category = large_city
 	resources={
@@ -15,13 +15,10 @@ state={
 			infrastructure = 3
 		}
 		add_core_of = DOR
-		victory_points = {
-			9515 3
-		}
 	}
 
 	provinces={
-		532 571 586 3299 3541 3571 6725 9515 9681 11497 
+		532 571 586 3299 3541 3571 11497 
 	}
 
 	local_supplies=7.0 
