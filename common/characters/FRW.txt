@@ -1,5 +1,19 @@
 characters={
-	
+	FRW_Geoffrey_Trollope_Lee={
+		name=FRW_Geoffrey_Trollope_Lee
+		portraits={
+			civilian={
+				large="gfx/leaders/FRW/Portrait_Geoffrey_Trollope_Lee.tga"
+			}
+		}
+		country_leader={
+			ideology=Religiousness_Conservatism
+			#desc = FRW_Pierre_Monatte_desc
+			traits={  } 
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	FRW_Comite_communal={
 		name=FRW_Comite_communal
 		portraits={

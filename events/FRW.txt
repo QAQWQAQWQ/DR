@@ -1,12 +1,53 @@
 ﻿###########################
 # FRW Events
 ###########################
-
+add_namespace = Geoffrey
 add_namespace = FRW
 add_namespace = Paris_Commune
 add_namespace = Assembly_Tours
 add_namespace = FRW_Syndicates
 add_namespace = FRW_Far_left
+
+
+
+country_event = {
+	id = Geoffrey.1
+	title = Geoffrey.1.t
+	desc = Geoffrey.1.d
+	picture = GFX_Far_left_0
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = Geoffrey.1.a
+		#remove_ideas=
+		set_politics = {
+			ruling_party = Conservatism
+			#long_name = TAG_party_long
+			#name = TAG_party
+		}
+		add_country_leader_role = {
+			character = FRW_Geoffrey_Trollope_Lee
+			promote_leader = yes
+			country_leader = {
+				ideology = Religiousness_Conservatism
+				expire = "1965.1.1.1"
+				traits = {}
+			}
+		}
+		set_cosmetic_tag = Geoffrey_Country
+		
+	    }
+}
+
+
+
+
+
+
+
+
+
+
 country_event = {
 	id = FRW_Far_left.0
 	title = FRW_Far_left.0.t

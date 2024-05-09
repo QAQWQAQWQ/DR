@@ -42,6 +42,109 @@ on_startup= {
 		}
 	}
 }
+
+
+
+
+on_startup= { 
+	effect = {
+		every_country = { 
+			limit={
+				check_variable = {
+						gdp_per_capita > 0
+				}
+			}
+			add_ideas=No_investment
+		}
+	every_country = { 
+		limit={
+			AND={
+				check_variable = {
+					gdp_per_capita > 0
+				}
+				check_variable = {
+					gdp_per_capita < 200
+				}
+			}
+			
+		}
+		add_ideas=No_investment
+	}
+	every_country = { 
+		limit={
+			AND={
+				check_variable = {
+					gdp_per_capita > 200
+				}
+				check_variable = {
+					gdp_per_capita < 1000
+				}
+			}
+		}
+		add_ideas=Weak_investments
+	}
+	every_country = { 
+		limit={
+			AND={
+				check_variable = {
+					gdp_per_capita > 1000
+				}
+				check_variable = {
+					gdp_per_capita < 2000
+				}
+			}
+		}
+		add_ideas=Underlying_investment
+	}
+	every_country = { 
+		limit={
+			AND={
+				check_variable = {
+					gdp_per_capita > 2000
+				}
+				check_variable = {
+					gdp_per_capita < 3000
+				}
+			}
+		}
+		add_ideas=Medium_investment
+	} 
+	every_country = { 
+		limit={
+			AND={
+				check_variable = {
+					gdp_per_capita > 3000
+				}
+				check_variable = {
+					gdp_per_capita < 4000
+				}
+			}
+		}
+		add_ideas=Best_investment
+	}    
+    } 
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	on_startup= { 
 		effect = {
 		every_state = {
@@ -55,7 +158,7 @@ on_startup= {
 				has_government = Conservatism
 			}
 			add_ideas=Special_police
-			add_ideas=Weak_investments
+			#add_ideas=Weak_investments
 			add_ideas=Patriarchy_supreme
 			add_ideas=Control_media
 			add_ideas=No_labor_laws
@@ -68,7 +171,7 @@ on_startup= {
 				has_government = Reactionary
 			}
 			add_ideas=Autonomous_police
-			add_ideas=Weak_investments
+			#add_ideas=Weak_investments
 			add_ideas=Patriarchy_supreme
 			add_ideas=Media_control
 			add_ideas=Trade_union_neutrality
@@ -86,7 +189,7 @@ on_startup= {
 				has_government = Liberalism
 			}
 			add_ideas=Autonomous_police
-			add_ideas=Weak_investments
+			#add_ideas=Weak_investments
 			add_ideas=Traditional_conservatism
 			add_ideas=Freedom_press
 			add_ideas=Trade_union_neutrality
@@ -98,7 +201,7 @@ on_startup= {
 				has_government = Agrarian_socialism
 			}
 			add_ideas=Local_police
-			add_ideas=Weak_investments
+			#add_ideas=Weak_investments
 			add_ideas=Local_trade_unions
 			add_ideas=Freedom_press
 			add_ideas=Affirmative_action
@@ -110,7 +213,7 @@ on_startup= {
 				has_government = Revolutionism
 			}
 			add_ideas=Local_police
-			add_ideas=Weak_investments
+			#add_ideas=Weak_investments
 			add_ideas=Local_trade_unions
 			add_ideas=Freedom_press
 			add_ideas=Affirmative_action
