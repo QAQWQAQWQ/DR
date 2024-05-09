@@ -31,13 +31,13 @@ on_actions = {
             }
             #ind worker
             set_variable = {
-                global.an_ind_goods = 50000
+                global.an_ind_goods = 80000
             }
             set_variable = {
                 global.ind_fac_worker = 39200
             }
             set_variable = {
-                global.ind_fac_raw_cost = 3920
+                global.ind_fac_raw_cost = 20000
             }
             #mil worker
             set_variable = {
@@ -89,12 +89,13 @@ on_actions = {
                 
                 # set_variable = { exchange_rate = 1.0 }
                 remake_fac_nums = yes
-                force_update_dynamic_modifier = yes
                 set_variable = { national_factory_tot_cost = 0 }
 
                 remake_national_factory_tot_cost = yes
                 remake_this_month_goods = yes
                 # remake_market = yes
+                set_variable = { tax_stab_fac = 0 }
+                set_variable = { scrfac_wage_fac = 0 }
             }
             every_country = {
                 add_dynamic_modifier = {
@@ -103,6 +104,14 @@ on_actions = {
                 }
                 add_dynamic_modifier = {
                     modifier = photosynthesis_qwq
+                    scope = THIS
+                }
+                add_dynamic_modifier = {
+                    modifier = tax_rev_stab
+                    scope = THIS
+                }
+                add_dynamic_modifier = {
+                    modifier = factory_wage_fac
                     scope = THIS
                 }
             }
