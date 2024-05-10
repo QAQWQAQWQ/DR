@@ -1,47 +1,12 @@
 scripted_gui = {
+	modGUI_parliament_scripted_gui = {
+		window_name = "modGUI_parliament_window"
+		context_type = player_context
 
-	DR_money_system = {
-		window_name = "money_system_ui_window"
-		context_type =player_context
-		parent_window_token = politics_tab
-		
-		
 		visible = {
-			always = yes
+			#has_country_flag = parliament_gui_open
 		}
-		effects = {
-			money_system_button_click={ 
-				set_custom_slider = yes
-				if={
-					limit={
-						NOT = {
-							has_country_flag = entry_money_system_ui_window
-						}
-					}
-					set_country_flag=entry_money_system_ui_window
-				}
-				else={
-					clr_country_flag=entry_money_system_ui_window
-				}
-			}
-			
-		} 
-	}
-	DR_money_system_main = {
-		window_name = "money_system_main_window"
-		context_type =player_context
-		parent_window_token = politics_tab
 
-		properties={
-			
-	    }
-		visible = {
-			has_country_flag = entry_money_system_ui_window
-		} 
-		effects = {
-			
-			
-		}
 		dynamic_lists = {
 			custom_slider_grid = {
 				array = slider_buttons
@@ -50,7 +15,7 @@ scripted_gui = {
 				index = i
 				value = v
 			}
-
+ 
 			parliament_grid = {
 				array = parliament_seats
 				change_scope = no
@@ -111,4 +76,3 @@ scripted_gui = {
 		}
 	}
 }
-

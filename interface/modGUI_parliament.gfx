@@ -1,0 +1,25 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_slider_dot"
+		textureFile = "gfx/interface/parliament/econ_crt_slider_dot.dds"
+	}
+
+	spriteType = {
+		name = "GFX_set_slider"
+		textureFile = "gfx/interface/parliament/set_slider.png"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_econ_crt_slider_limit_left"
+		texturefile = "gfx/interface/parliament/econ_crt_slider_limit_left.dds"
+	}
+	spriteType = {
+		name = "GFX_econ_crt_slider_limit_right"
+		texturefile = "gfx/interface/parliament/econ_crt_slider_limit_right.dds"
+	}
+
+
+
+}
