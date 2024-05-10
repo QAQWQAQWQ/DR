@@ -2,6 +2,9 @@ on_actions = {
 	on_startup= {
 		effect = {
             set_variable = {
+                global.aus_hun_avabile = 1
+            }
+            set_variable = {
                 global.bosnia_contradictions = 0
             }
             set_variable = {
@@ -195,6 +198,14 @@ on_actions = {
                     value = 1
                     index = 9
                 }
+                set_variable = {
+                    aus_hun_stab_fac = 0
+                }
+                add_dynamic_modifier = {
+                    modifier = aus_hun_stab
+                    scope = THIS
+                }
+                remake_aus_hun_stab = yes
             }
         }            
     }
@@ -314,6 +325,10 @@ on_actions = {
                 DMT = { transfer_state = 103 }
                 DMT = { transfer_state = 804 }
                 DMT = { transfer_state = 918 }
+                DMT = { transfer_state = 104 }
+                DMT = { transfer_state = 1015 }
+                DMT = { transfer_state = 1016 }
+                DMT = { transfer_state = 1017 }
                 DMT = { transfer_state = 1018 }
                 
                 AOX = {
@@ -337,40 +352,43 @@ on_actions = {
             }
         }
     }
-    on_monthly = {
-        AOX = {
-            if = {
-                limit = {
-                    NOT = {
-                        AOX = { has_idea = AOX_ideas_the_undead_of_hus }
+    on_monthly_AOX = {
+        effect = {
+            AOX = {
+                if = {
+                    limit = {
+                        NOT = {
+                            AOX = { has_idea = AOX_ideas_the_undead_of_hus }
+                        }
+                        NOT = {
+                            check_variable = {
+                                AOX.aus_hun_has_meg^3 = 1
+                            }
+                        }
+                        BXM = { exists = yes }
+                        BXM = { is_puppet_of = AOX }
                     }
-                    NOT = {
+                    add_ideas = { AOX_ideas_the_undead_of_hus }
+                }
+                if = {
+                    limit = {
+                        AOX = { has_idea = AOX_ideas_the_undead_of_hus }
                         check_variable = {
                             AOX.aus_hun_has_meg^3 = 1
                         }
                     }
-                    BXM = { exists = yes }
-                    BXM = { is_puppet_of = AOX }
+                    remove_ideas = { AOX_ideas_the_undead_of_hus }
                 }
-                add_ideas = { AOX_ideas_the_undead_of_hus }
-            }
-            if = {
-                limit = {
-                    AOX = { has_idea = AOX_ideas_the_undead_of_hus }
-                    check_variable = {
-                        AOX.aus_hun_has_meg^3 = 1
+                if = {
+                    limit = {
+                        has_idea = AOX_ideas_the_undead_of_hus
+                    }
+                    add_to_variable = {
+                        var = AOX.aus_hun_gov_sup^3
+                        value = -10
                     }
                 }
-                remove_ideas = { AOX_ideas_the_undead_of_hus }
-            }
-            if = {
-                limit = {
-                    has_idea = AOX_ideas_the_undead_of_hus
-                }
-                add_to_variable = {
-                    var = AOX.aus_hun_gov_sup^3
-                    value = -10
-                }
+                remake_aus_hun_stab = yes
             }
         }
     }

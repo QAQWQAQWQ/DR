@@ -1539,7 +1539,7 @@ bosnia_war_end = yes
 			}
 			BXM = {
 				exists = yes
-				has_idea = { Part_of_Habsburgs }
+				has_idea = Part_of_Habsburgs
 			}
 		}
 	}
@@ -1562,6 +1562,8 @@ bosnia_war_end = yes
 			AOX={
 				transfer_state = 69
 				add_state_core = 69
+				transfer_state = 74
+				add_state_core = 74
 				transfer_state = 942
 				add_state_core = 942
 			}
@@ -1576,7 +1578,7 @@ bosnia_war_end = yes
 		available = {
 			BXM = {
 				exists = yes
-				has_idea = { Part_of_Habsburgs }
+				has_idea = Part_of_Habsburgs
 			}
 		}
 	}
@@ -1607,7 +1609,7 @@ bosnia_war_end = yes
 		available = {
 			BXM = {
 				exists = yes
-				has_idea = { Part_of_Habsburgs }
+				has_idea = Part_of_Habsburgs
 			}
 		}
 	}
@@ -1632,7 +1634,7 @@ bosnia_war_end = yes
 		available = {
 			KGL = {
 				exists = yes
-				has_idea = { Part_of_Habsburgs }
+				has_idea = Part_of_Habsburgs
 			}
 		}
 	}
@@ -1657,7 +1659,7 @@ bosnia_war_end = yes
 		available = {
 			DMT = {
 				exists = yes
-				has_idea = { Part_of_Habsburgs }
+				has_idea = Part_of_Habsburgs
 			}
 		}
 	}
@@ -1798,7 +1800,7 @@ bosnia_war_end = yes
 		available = {
 			VCT = {
 				exists = yes
-				has_idea = { Part_of_Habsburgs }
+				has_idea = Part_of_Habsburgs
 			}
 		}
 	}

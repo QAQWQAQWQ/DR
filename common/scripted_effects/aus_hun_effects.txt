@@ -512,3 +512,31 @@ bos_war_end_qwq = {
         KOH = { country_event = aushun.9 }
     }
 }
+remake_aus_hun_stab = {
+    set_variable = { now_i = 0 }
+    set_variable = { aus_hun_stab_fac = 0 }
+    while_loop_effect = {
+        break = temp_break
+        limit = {
+            check_variable = { now_i < 10 }
+        }
+        if = {
+            limit = {
+                check_variable = { aus_hun_gov_sup^now_i > 69 }
+            }
+            add_to_variable = { aus_hun_stab_fac = 0.05 }
+        }
+        else = {
+        if = {
+            limit = {
+                check_variable = { aus_hun_gov_sup^now_i > 30 }
+            }
+            add_to_variable = { aus_hun_stab_fac = 0 }
+        }
+        else = {
+            add_to_variable = { aus_hun_stab_fac = -0.05 }
+        }}
+        add_to_variable = { now_i = 1 }
+    }
+    force_update_dynamic_modifier = yes
+}
