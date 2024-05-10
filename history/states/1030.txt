@@ -1,12 +1,12 @@
 
 state={
-	id=947
-	name="STATE_947"
-	manpower = 798235
+	id=1030
+	name="STATE_1030"
+	manpower = 328235
 
-	state_category = large_town
+	state_category = town
 	resources={
-		grain=2
+		grain=1
 		
 	}
 	history={
@@ -16,15 +16,13 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = DHD
-		victory_points = {
-			564 3
-		}
 
 	}
 
 	provinces={
-        564 11533 9524
+		11560 
 	}
 
 	local_supplies=15.0 
 }
+
