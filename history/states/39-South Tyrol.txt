@@ -2,9 +2,9 @@
 state = {
 	id = 39
 	name = "STATE_39" # (South Tyrol) Alto Adige -> #TODO_Manu: Should change name to Südtirol when under Austrian/German control
-	manpower = 298290 # was 641650 before Trentino split
+	manpower = 398290 # was 641650 before Trentino split
 	
-	state_category = town
+	state_category = large_town
 	
 	resources = {
 		aluminium = 14 # was: 22
@@ -26,7 +26,7 @@ state = {
 	}
 
 	provinces = {
-		656 6675 9630 11598 11615
+		6675 9630 11598 11615
 	}
 
 	local_supplies = 0.0 
