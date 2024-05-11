@@ -114,7 +114,7 @@ scale = 0.95
 	
 	containerWindowType = {
 		name = "focus_entry"
-		size = { width=60 height=80}
+		size = { width=55 height=80}
 		clipping = no
 		
 		iconType = {
@@ -722,7 +722,7 @@ position = { x = 0 y = -72 }
 
 			instantTextBoxType = {
 				name = "leader_label"
-				position = { x = 0 y = -5 }
+				position = { x = 0 y = -10 }
 				font = "hoi_24header"
 				borderSize = {x = 0 y = 0}
 				text = "LEADER"
@@ -732,7 +732,7 @@ position = { x = 0 y = -72 }
 
 			instantTextBoxType = {
 				name = "leader"
-				position = { x = 0 y = 23 }
+				position = { x = 0 y = 15 }
 				textureFile = ""
 				font = "hoi4_typewriter16"
 				borderSize = {x = 0 y = 0}
@@ -743,7 +743,7 @@ position = { x = 0 y = -72 }
 
 			instantTextBoxType = {
 				name = "ideology_label"
-				position = { x = 0 y = 40 }
+				position = { x = 0 y = 35 }
 				textureFile = ""
 				font = "hoi_24header"
 				borderSize = {x = 0 y = 0}
@@ -754,7 +754,7 @@ position = { x = 0 y = -72 }
 
 			instantTextBoxType = {
 				name = "ideology"
-				position = { x = 0 y = 65 }
+				position = { x = 0 y = 57 }
 				font = "hoi4_typewriter16"
 				borderSize = {x = 0 y = 0}
 				maxWidth = 340
@@ -763,7 +763,7 @@ position = { x = 0 y = -72 }
 
 			instantTextBoxType = {
 				name = "government_label"
-				position = { x = 0 y = 80 }
+				position = { x = 0 y = 76 }
 				font = "hoi_24header"
 				borderSize = {x = 0 y = 0}
 				text = "GOVERNMENT"
@@ -773,7 +773,7 @@ position = { x = 0 y = -72 }
 
 			instantTextBoxType = {
 				name = "government"
-				position = { x = 0 y = 102 }
+				position = { x = 0 y = 97 }
 				font = "hoi4_typewriter16"
 				borderSize = {x = 0 y = 0}
 				text = "FE_INTERESTING_COUNTRIES"
@@ -793,7 +793,7 @@ position = { x = 0 y = -72 }
 
 			instantTextBoxType = {
 				name = "elections"
-				position = { x = 0 y = 140 }
+				position = { x = 0 y = 134 }
 				font = "hoi4_typewriter16"
 				borderSize = {x = 0 y = 0}
 				maxWidth = 340
@@ -802,7 +802,7 @@ position = { x = 0 y = -72 }
 
 			instantTextBoxType = {
 				name = "party_label"
-				position = { x = 0 y = 155 }
+				position = { x = 0 y = 150 }
 				font = "hoi_24header"
 				borderSize = {x = 0 y = 0}
 				text = "RULING_PARTY"
@@ -812,7 +812,7 @@ position = { x = 0 y = -72 }
 
 			instantTextBoxType = {
 				name = "party"
-				position = { x = 0 y = 177 }
+				position = { x = 0 y = 170 }
 				font = "hoi4_typewriter16"
 				borderSize = {x = 0 y = 0}
 				maxWidth = 340
