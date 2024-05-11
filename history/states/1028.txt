@@ -1,0 +1,28 @@
+
+state={
+	id=1028
+	name="STATE_1028"
+	manpower = 1002576
+	resources={
+		steel=10
+	}
+
+	state_category = city
+
+
+	history={
+		owner = WWS
+        add_core_of = WWS
+        add_claim_by = DOS
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+	}
+
+	provinces={
+        11545 478 6441 11415 9535 3572 
+	}
+
+	local_supplies=0.0 
+}

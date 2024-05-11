@@ -1,0 +1,28 @@
+
+state={
+	id=1030
+	name="STATE_1030"
+	manpower = 328235
+
+	state_category = town
+	resources={
+		grain=1
+		
+	}
+	history={
+		owner = DHD
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = DHD
+
+	}
+
+	provinces={
+		11560 
+	}
+
+	local_supplies=15.0 
+}
+
