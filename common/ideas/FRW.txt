@@ -352,10 +352,8 @@ ideas = {
 		FRW_Elway_Thought = {
 			picture = Elway_Thought
 			modifier = {
-				max_surrender_limit_offset = -0.3
-				war_support_weekly_factor = -0.02
-				offensive_war_stability_factor = -0.1
-				defensive_war_stability_factor = -0.1
+				max_surrender_limit_offset = 0.3
+				offensive_war_stability_factor = 0.1
 			}
         }
 		FRW_Labor_spirit = {

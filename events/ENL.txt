@@ -108,9 +108,6 @@ country_event = {
 	option = {
 		name = ENL.5.a
 		add_political_power = 50
-		hidden_effect = {
-		news_event = { id= NewEvents.1 days = 10}
-	}	
 }
 }
 country_event = {
@@ -170,7 +167,6 @@ immediate = {
 					tag = BHL
 				}
 			}
-			country_event = {id=Worldcountry.1 days=10}
 		}
 	}
 	}	

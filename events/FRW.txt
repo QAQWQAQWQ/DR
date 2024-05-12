@@ -54,6 +54,7 @@ country_event = {
 	desc = FRW_Far_left.0.d
 	picture = GFX_Far_left_0
 	trigger = {
+		has_idea = FRW_Elway_Thought
 		has_country_leader = {
 				character = FRW_Jean_Jaures
 				ruling_only = yes
@@ -1115,7 +1116,7 @@ country_event = {
 	id = FRW.45
 	title = FRW.45.t
 	desc = FRW.45.d
-	#picture = GFX_FRW_31
+	picture = GFX_Eu_election
 	is_triggered_only = yes
 	trigger = {
 		}
