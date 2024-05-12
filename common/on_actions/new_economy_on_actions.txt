@@ -73,10 +73,8 @@ on_actions = {
                 set_variable = { ind_num = 0 }
                 set_variable = { mil_num = 0 }
                 set_variable = { docker_num = 0 }
-                set_variable = { private_capital = 0 }
-                set_variable = { private_worker_wage = 5 }
-                set_variable = { private_goods_factory = 0 }
-                set_variable = { private_cost = 0 }
+                set_variable = { private_capital_tot = 0 }
+                set_variable = { private_goods_factory_tot = 0 }
                 set_variable = { national_worker_wage = 5 }
                 set_variable = { national_goods_factory = num_of_civilian_factories }
                 multiply_variable = { national_goods_factory = 0.1 }
@@ -116,12 +114,16 @@ on_actions = {
                 }
             }
             every_country = {
-                build_private_capital = yes
+                every_controlled_state = {
+                    build_private_capital = yes
+                }
             }
             every_country = {
                 remake_private_factory_tot_cost = yes
                 remake_national_factory_tot_cost = yes
-                industrial_expansion = yes
+                every_controlled_state = {
+                    industrial_expansion = yes
+                }
             }
             AOX = {
                 monthly_we_do = yes
