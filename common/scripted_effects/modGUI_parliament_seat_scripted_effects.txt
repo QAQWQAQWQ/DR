@@ -1,13 +1,5 @@
 
-set_custom_slider = {
-	set_variable = { slider_dot_x = 35 }
-	for_loop_effect = {
-		start = 0
-		end = 35
-		value = val
-		add_to_array = { slider_buttons = val }
-	}
-}
+
 
 change_parliament_seats = {
 	clear_array = array_f_array
@@ -28,9 +20,9 @@ change_parliament_seats = {
 	}
 
 	set_temp_variable = { dot_x = current_int }
-	multiply_temp_variable = { dot_x = 6 }
-	subtract_from_temp_variable = { dot_x = 3 }
-	add_to_temp_variable = { dot_x = 104 }
+	multiply_temp_variable = { dot_x = 4 }
+	subtract_from_temp_variable = { dot_x = 2 }
+	add_to_temp_variable = { dot_x = 313 }
 	set_variable = { slider_dot_x = dot_x }
 	
 
