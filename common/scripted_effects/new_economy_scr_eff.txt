@@ -1,10 +1,13 @@
 build_private_capital = {
+    set_variable = { private_worker_wage = 5 }
+    set_variable = { private_goods_factory = 0 }
+    set_variable = { private_cost = 0 }
     set_variable = { private_capital = num_of_civilian_factories }
     if = {
         limit = {
             OR = {
-                check_variable = { ind_upd > 3000 }
-                check_variable = { num_of_factories < 1 }
+                check_variable = { PREV.ind_upd > 3000 }
+                check_variable = { PREV.num_of_factories < 1 }
             }
         }
         multiply_variable = { private_capital = 0.5 }
@@ -13,8 +16,8 @@ build_private_capital = {
     if = {
         limit = {
             OR = {
-                check_variable = { ind_upd > 2000 }
-                check_variable = { num_of_factories < 5 }
+                check_variable = { PREV.ind_upd > 2000 }
+                check_variable = { PREV.num_of_factories < 5 }
             }
         }
         multiply_variable = { private_capital = 1 }
@@ -23,8 +26,8 @@ build_private_capital = {
     if = {
         limit = {
             OR = {
-                check_variable = { ind_upd > 1000 }
-                check_variable = { num_of_factories < 25 }
+                check_variable = { PREV.ind_upd > 1000 }
+                check_variable = { PREV.num_of_factories < 25 }
             }
         }
         multiply_variable = { private_capital = 2 }
@@ -33,8 +36,8 @@ build_private_capital = {
     if = {
         limit = {
             OR = {
-                check_variable = { ind_upd > 500 }
-                check_variable = { num_of_factories < 35 }
+                check_variable = { PREV.ind_upd > 500 }
+                check_variable = { PREV.num_of_factories < 35 }
             }
         }
         multiply_variable = { private_capital = 4 }
@@ -43,8 +46,8 @@ build_private_capital = {
     if = {
         limit = {
             OR = {
-                check_variable = { ind_upd > 150 }
-                check_variable = { num_of_factories < 35 }
+                check_variable = { PREV.ind_upd > 150 }
+                check_variable = { PREV.num_of_factories < 35 }
             }
         }
         multiply_variable = { private_capital = 8 }
@@ -55,10 +58,10 @@ build_private_capital = {
     if = {
         limit = {
             OR = {
-                tag = AOX
-                tag = WWS
-                tag = FRW
-                tag = ENL
+                owner = AOX
+                owner = WWS
+                owner = FRW
+                owner = ENL
             }
         }
         multiply_variable = { private_capital = 2 }
@@ -374,43 +377,48 @@ remake_national_factory_tot_cost = {
     }
 }
 remake_private_factory_tot_cost = {
-    set_variable = { private_cost = global.ind_fac_worker }
-    if = {
-        limit = {
-            check_variable = { private_worker_wage = 1 }
+    every_controlled_state = {
+        set_variable = { private_cost = global.ind_fac_worker }
+        if = {
+            limit = {
+                check_variable = { private_worker_wage = 1 }
+            }
+            multiply_variable = { private_cost = global.low_wages }
         }
-        multiply_variable = { private_cost = global.low_wages }
-    }
-    if = {
-        limit = {
-            check_variable = { private_worker_wage = 2 }
+        if = {
+            limit = {
+                check_variable = { private_worker_wage = 2 }
+            }
+            multiply_variable = { private_cost = global.low_mid_wages }
         }
-        multiply_variable = { private_cost = global.low_mid_wages }
-    }
-    if = {
-        limit = {
-            check_variable = { private_worker_wage = 3 }
+        if = {
+            limit = {
+                check_variable = { private_worker_wage = 3 }
+            }
+            multiply_variable = { private_cost = global.mid_wages }
         }
-        multiply_variable = { private_cost = global.mid_wages }
-    }
-    if = {
-        limit = {
-            check_variable = { private_worker_wage = 4 }
+        if = {
+            limit = {
+                check_variable = { private_worker_wage = 4 }
+            }
+            multiply_variable = { private_cost = global.high_mid_wages }
         }
-        multiply_variable = { private_cost = global.high_mid_wages }
-    }
-    if = {
-        limit = {
-            check_variable = { private_worker_wage = 5 }
+        if = {
+            limit = {
+                check_variable = { private_worker_wage = 5 }
+            }
+            multiply_variable = { private_cost = global.high_wages }
         }
-        multiply_variable = { private_cost = global.high_wages }
+        add_to_variable = { private_cost = global.ind_fac_raw_cost }
+        divide_variable = { private_cost = global.one_bil }
+        set_variable = { an_private_cost = private_cost }
+        multiply_variable = { private_cost = private_goods_factory }
     }
-    add_to_variable = { private_cost = global.ind_fac_raw_cost }
-    divide_variable = { private_cost = global.one_bil }
-    set_variable = { an_private_cost = private_cost }
-    multiply_variable = { private_cost = private_goods_factory }
 }
 remake_this_month_goods = {
+    set_variable = {
+        private_goods_qwq = 0
+    }
     set_variable = {
         this_month_goods = global.an_ind_goods
     }
@@ -460,60 +468,62 @@ remake_this_month_goods = {
             this_month_goods = global.high_wages_factor
         }
     }
-    set_variable = {
-        mid_w = global.an_ind_goods
-    }
-    divide_variable = {
-        mid_w = global.one_bil
-    }
-    multiply_variable = {
-        mid_w = private_goods_factory
-    }
-    if = {
-        limit = {
-            check_variable = { private_worker_wage = 1 }
+    every_controlled_state = {
+        set_variable = {
+            mid_w = global.an_ind_goods
+        }
+        divide_variable = {
+            mid_w = global.one_bil
         }
         multiply_variable = {
-            mid_w = global.low_wages_factor
+            mid_w = private_goods_factory
         }
-    }
-    if = {
-        limit = {
-            check_variable = { private_worker_wage = 2 }
+        if = {
+            limit = {
+                check_variable = { private_worker_wage = 1 }
+            }
+            multiply_variable = {
+                mid_w = global.low_wages_factor
+            }
         }
-        multiply_variable = {
-            mid_w = global.low_mid_wages_factor
+        if = {
+            limit = {
+                check_variable = { private_worker_wage = 2 }
+            }
+            multiply_variable = {
+                mid_w = global.low_mid_wages_factor
+            }
         }
-    }
-    if = {
-        limit = {
-            check_variable = { private_worker_wage = 3 }
+        if = {
+            limit = {
+                check_variable = { private_worker_wage = 3 }
+            }
+            multiply_variable = {
+                mid_w = global.mid_wages_factor
+            }
         }
-        multiply_variable = {
-            mid_w = global.mid_wages_factor
+        if = {
+            limit = {
+                check_variable = { private_worker_wage = 4 }
+            }
+            multiply_variable = {
+                mid_w = global.high_mid_wages_factor
+            }
         }
-    }
-    if = {
-        limit = {
-            check_variable = { private_worker_wage = 4 }
+        if = {
+            limit = {
+                check_variable = { private_worker_wage = 5 }
+            }
+            multiply_variable = {
+                mid_w = global.high_wages_factor
+            }
         }
-        multiply_variable = {
-            mid_w = global.high_mid_wages_factor
+        add_to_variable = {
+            PREV.this_month_goods = mid_w
         }
-    }
-    if = {
-        limit = {
-            check_variable = { private_worker_wage = 5 }
+        add_to_variable = {
+            PREV.private_goods_qwq = mid_w
         }
-        multiply_variable = {
-            mid_w = global.high_wages_factor
-        }
-    }
-    add_to_variable = {
-        this_month_goods = mid_w
-    }
-    set_variable = {
-        private_goods_qwq = mid_w
     }
 }
 remake_fac_nums = {
@@ -522,40 +532,43 @@ remake_fac_nums = {
     set_variable = { docker_num = num_of_naval_factories }
 }
 remake_market_from_worker = {
-    set_variable = { mid_w = global.ind_fac_worker }
-    if = {
-        limit = {
-            check_variable = { private_worker_wage = 1 }
+    set_variable = { market_from_pri_fac = 0 }
+    every_controlled_state = {
+        set_variable = { mid_w = global.ind_fac_worker }
+        if = {
+            limit = {
+                check_variable = { private_worker_wage = 1 }
+            }
+            multiply_variable = { mid_w = global.low_wages }
         }
-        multiply_variable = { mid_w = global.low_wages }
-    }
-    if = {
-        limit = {
-            check_variable = { private_worker_wage = 2 }
+        if = {
+            limit = {
+                check_variable = { private_worker_wage = 2 }
+            }
+            multiply_variable = { mid_w = global.low_mid_wages }
         }
-        multiply_variable = { mid_w = global.low_mid_wages }
-    }
-    if = {
-        limit = {
-            check_variable = { private_worker_wage = 3 }
+        if = {
+            limit = {
+                check_variable = { private_worker_wage = 3 }
+            }
+            multiply_variable = { mid_w = global.mid_wages }
         }
-        multiply_variable = { mid_w = global.mid_wages }
-    }
-    if = {
-        limit = {
-            check_variable = { private_worker_wage = 4 }
+        if = {
+            limit = {
+                check_variable = { private_worker_wage = 4 }
+            }
+            multiply_variable = { mid_w = global.high_mid_wages }
         }
-        multiply_variable = { mid_w = global.high_mid_wages }
-    }
-    if = {
-        limit = {
-            check_variable = { private_worker_wage = 5 }
+        if = {
+            limit = {
+                check_variable = { private_worker_wage = 5 }
+            }
+            multiply_variable = { mid_w = global.high_wages }
         }
-        multiply_variable = { mid_w = global.high_wages }
+        divide_variable = { mid_w = global.one_bil }
+        multiply_variable = { mid_w = private_goods_factory }
+        add_to_variable = { PREV.market_from_pri_fac = mid_w }
     }
-    divide_variable = { mid_w = global.one_bil }
-    multiply_variable = { mid_w = private_goods_factory }
-    set_variable = { market_from_pri_fac = mid_w }
 
     set_variable = { mid_w = global.ind_fac_worker }
     if = {
@@ -666,7 +679,10 @@ remake_market_from_worker = {
 remake_people_market = {
     set_variable = { people_mark_tot = 0 }
     every_controlled_state = {
+        set_variable = { capital_upd = state_cash_tot }
+        multiply_variable = { capital_upd = 0.01 }
         add_to_variable = { PREV.people_mark_tot = state_cash_tot }
+        subtract_from_variable = { PREV.people_mark_tot = capital_upd }
     }
 }
 remake_market = {
@@ -679,27 +695,6 @@ remake_market = {
     add_to_variable = { large_of_market = market_from_doc_fac }
     add_to_variable = { large_of_market = people_mark_tot }
     set_variable = { tot_large_of_market = large_of_market }
-    if = {
-        limit = {
-            check_variable = { people_tax < 0.45 }
-        }
-        set_variable = { capital_upd_qwq = 0.05 }
-    }
-    else = {
-        if = {
-            limit = {
-                check_variable = { people_tax < 0.5 }
-            }
-            set_variable = { capital_upd_qwq = 0.5 }
-            subtract_from_variable = { capital_upd_qwq = people_tax }
-        }
-        else = {           
-            set_variable = { capital_upd_qwq = 0 }
-        }
-    }
-    set_variable = { capital_upd = tot_large_of_market }
-    multiply_variable = { capital_upd = capital_upd_qwq }
-    subtract_from_variable = { large_of_market = capital_upd }
     if = {
         limit = {
             check_variable = { people_tax > 0.75 }
@@ -734,14 +729,6 @@ clamp_new_economy_goods_factory = {
 }
 clamp_worker_wage = {
     clamp_variable = {
-        var = private_worker_wage
-        max = 5
-    }
-    clamp_variable = {
-        var = private_worker_wage
-        min = 1
-    }
-    clamp_variable = {
         var = national_worker_wage
         max = 5
     }
@@ -756,23 +743,25 @@ clamp_worker_wage = {
 monthly_build_new_economy = {
     set_variable = { new_nat_tre_det = 0 }
     remake_private_factory_tot_cost = yes
-    while_loop_effect = {
-        break = temp_break
-        limit = {
-            check_variable = { private_cost < private_capital }
-            check_variable = { private_worker_wage < 5 }
+    every_controlled_state = {
+        while_loop_effect = {
+            break = temp_break
+            limit = {
+                check_variable = { private_cost < private_capital }
+                check_variable = { private_worker_wage < 5 }
+            }
+            add_to_variable = { private_worker_wage = 1 }
+            remake_private_factory_tot_cost = yes
         }
-        add_to_variable = { private_worker_wage = 1 }
-        remake_private_factory_tot_cost = yes
-    }
-    while_loop_effect = {
-        break = temp_break
-        limit = {
-            check_variable = { private_cost > private_capital }
-            check_variable = { private_worker_wage > 1 }
+        while_loop_effect = {
+            break = temp_break
+            limit = {
+                check_variable = { private_cost > private_capital }
+                check_variable = { private_worker_wage > 1 }
+            }
+            add_to_variable = { private_worker_wage = -1 }
+            remake_private_factory_tot_cost = yes
         }
-        add_to_variable = { private_worker_wage = -1 }
-        remake_private_factory_tot_cost = yes
     }
     # ai_worker_wage_work = yes
     clamp_worker_wage = yes
@@ -901,23 +890,27 @@ distribute_profits = {
         national_factory_tot_profits = now_use_national_goods_factory
     }
     # add_to_variable = { new_nat_tre_det = national_factory_tot_profits }
-    set_variable = {
-        private_goods_cnts = an_factory_profits
-    }
-    multiply_variable = {
-        private_goods_cnts = private_goods_factory
-    }
-    add_to_variable = {
-        private_capital = private_goods_cnts
-    }
-    set_variable = {
-        our_tax_from_factory = private_goods_cnts
-    }
-    multiply_variable = {
-        our_tax_from_factory = tax_qwq
-    }
-    subtract_from_variable = {
-        private_capital = our_tax_from_factory
+    set_variable = { our_tax_from_factory = 0 }
+    every_controlled_state = {
+        set_variable = {
+            private_goods_cnts = an_factory_profits
+        }
+        multiply_variable = {
+            private_goods_cnts = private_goods_factory
+        }
+        add_to_variable = {
+            private_capital = private_goods_cnts
+        }
+        set_variable = {
+            our_tax_from_factory_state = private_goods_cnts
+        }
+        multiply_variable = {
+            our_tax_from_factory_state = tax_qwq
+        }
+        subtract_from_variable = {
+            private_capital = our_tax_from_factory_state
+        }
+        add_to_variable = { PREV.our_tax_from_factory = our_tax_from_factory_state }
     }
     # add_to_variable = { new_nat_tre_det = our_tax_from_factory }
 }
@@ -969,9 +962,10 @@ payroll_qwq = {
     set_variable = { mid_w = tot_large_of_market }
     multiply_variable = { mid_w = 0.45 }
     add_to_variable = { new_nat_tre_profits_to_factory = mid_w }
-
-    add_to_variable = { private_capital = capital_upd }
-    subtract_from_variable = { private_capital = private_cost }
+    every_controlled_state = {
+        add_to_variable = { private_capital = capital_upd }
+        subtract_from_variable = { private_capital = private_cost }
+    }
 }
 industrial_expansion = {
     set_variable = {
@@ -1147,8 +1141,14 @@ monthly_we_do = {
         set_variable = { cash_upd_qwq = before_large_of_market }
         subtract_from_variable = { cash_upd_qwq = large_of_market }
         divide_variable = { cash_upd_qwq = cash_upd }
-        multiply_variable = { cash_upd_qwq = 0.1 }
+        multiply_variable = { cash_upd_qwq = 0.05 }
         add_to_variable = { cash_upd_qwq = 1 }
+        set_variable = { private_capital_tot = 0 }
+        set_variable = { private_goods_factory_tot = 0 }
+        every_controlled_state = {
+            add_to_variable = { private_capital_tot = private_capital }
+            add_to_variable = { private_goods_factory_tot = private_goods_factory }
+        }
         every_controlled_state = {
             multiply_variable = { state_cash_tot = PREV.cash_upd_qwq }
         }

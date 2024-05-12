@@ -525,6 +525,7 @@ ger_con_decisions = {
       hidden_effect={every_country = { news_event = ger_con.5 }}
       
       58 = { add_core_of = ROOT } 
+      1032 = { add_core_of = ROOT } 
       952 = { add_core_of = ROOT } 
       DMW = { country_event = ger_con.8 }
       WWS = { set_cosmetic_tag = WWS_German_Empire }
@@ -633,6 +634,7 @@ ger_con_decisions = {
       hidden_effect={every_country = { news_event = ger_con.4 }}
       
       58 = { add_core_of = ROOT } 
+      1032 = { add_core_of = ROOT } 
       952 = { add_core_of = ROOT } 
       DMW = { country_event = ger_con.8 }
       hidden_effect = {
