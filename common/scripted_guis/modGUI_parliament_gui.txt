@@ -4,6 +4,7 @@ scripted_gui = {
 		context_type = player_context
 
 		visible = {
+			always = no
 			#has_country_flag = parliament_gui_open
 		}
 

@@ -242,7 +242,11 @@ on_actions = {
             
             if = {
                 limit = {
-                    ROOT = { tag = AOX }
+                    OR = {
+                        ROOT = { tag = AOX }
+                        ROOT = { tag = BXM }
+                        ROOT = { tag = KGL }
+                    }
                     FROM = { tag = WWS }
                     check_variable = { global.german_war = 1 }
                     check_variable = { global.aus_win_german_war = 0 }

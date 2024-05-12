@@ -24,5 +24,16 @@ guiTypes = {
 			clicksound = "click_scroll"
 		}
 	}
+	containerWindowType = {
+		name = "custom_slider_container_fac"
+		position = { x = 0 y = 0 }
+
+		buttonType = { 
+			name = "custom_slider_icon"
+			quadTextureSprite = "GFX_set_slider"
+			frame = 1
+			clicksound = "click_scroll"
+		}
+	}
 
 }
