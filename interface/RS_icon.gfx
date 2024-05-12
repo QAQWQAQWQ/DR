@@ -33,9 +33,27 @@ spriteTypes = {
 		name = "GFX_SBY_focus0"
 		texturefile = "gfx/interface/goals/SBY/SBY_focus0.dds"
 	}
-
+	spriteType = {
+		name = "GFX_SBY_focus1"
+		texturefile = "gfx/interface/goals/SBY/SBY_focus1.dds"
+	}
+	spriteType = {
+		name = "GFX_SBY_focus2"
+		texturefile = "gfx/interface/goals/SBY/SBY_focus2.dds"
+	}
+	spriteType = {
+		name = "GFX_SBY_focus3"
+		texturefile = "gfx/interface/goals/SBY/SBY_focus3.dds"
+	}
+	spriteType = {
+		name = "GFX_SBY_focus4"
+		texturefile = "gfx/interface/goals/SBY/SBY_focus4.dds"
+	}
+	spriteType = {
+		name = "GFX_SBY_focus5"
+		texturefile = "gfx/interface/goals/SBY/SBY_focus5.dds"
+	}
 	
-
 	spriteType = {
 		name = "GFX_goal_FUM_focus_1"
 		texturefile = "gfx/interface/goals/FUM/FUM_focus_1.dds"
