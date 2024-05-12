@@ -1,24 +1,4 @@
 scripted_gui = {
-	main_surfff = {
-	    #ai_will_do = { factor = 0 }
-		context_type = player_context
-		parent_window_token = politics_tab
-		window_name = "gdp_container"
-		visible = {
-			has_country_flag = entry_money_system_ui_window
-		}
-		
-		effects = {
-			
-		   gdp_icon_click = {
-			
-				if = {
-					limit = { NOT = { has_variable = gdp_table_open } }
-					open_table = yes
-				}
-		   }		
-		}
-	}
 	goods_factory_gui = {
 		#ai_will_do = { factor = 0 }
 		context_type = player_context
@@ -37,11 +17,47 @@ scripted_gui = {
 					clamp_new_economy_goods_factory = yes
 				}
 			}	
+			goods_factory_add_button_5_click = {
+				ROOT = {
+					add_to_variable = {
+						var = national_goods_factory
+						value = 5
+					}
+					clamp_new_economy_goods_factory = yes
+				}
+			}	
+			goods_factory_add_button_10_click = {
+				ROOT = {
+					add_to_variable = {
+						var = national_goods_factory
+						value = 10
+					}
+					clamp_new_economy_goods_factory = yes
+				}
+			}	
 			goods_factory_del_button_click = {
 				ROOT = {
 					add_to_variable = {
 						var = national_goods_factory
 						value = -1
+					}
+					clamp_new_economy_goods_factory = yes
+				}
+			}
+			goods_factory_del_button_5_click = {
+				ROOT = {
+					add_to_variable = {
+						var = national_goods_factory
+						value = -5
+					}
+					clamp_new_economy_goods_factory = yes
+				}
+			}
+			goods_factory_del_button_10_click = {
+				ROOT = {
+					add_to_variable = {
+						var = national_goods_factory
+						value = -10
 					}
 					clamp_new_economy_goods_factory = yes
 				}

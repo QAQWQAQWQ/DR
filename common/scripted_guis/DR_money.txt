@@ -30,8 +30,7 @@ scripted_gui = {
 	DR_money_system_main = {
 		window_name = "money_system_main_window"
 		context_type =player_context
-		parent_window_token = politics_tab
-
+		# parent_window_token = politics_tab
 		properties={
 			
 	    }
@@ -68,29 +67,47 @@ scripted_gui = {
 			}
 		}
 		effects = {
+			gdp_icon_click = {
+				 if = {
+					 limit = { NOT = { has_variable = gdp_table_open } }
+					 open_table = yes
+				 }
+			}
 
 			custom_slider_icon_click = {
 				set_variable = { current_int = v }
 				change_parliament_seats = yes
+				set_variable = { people_tax_qaq = current_int }
+				multiply_variable = { people_tax_qaq = 2 }
+				set_variable = { people_tax = people_tax_qaq }
+				multiply_variable = { people_tax = 0.01 }
 			}
 
 			slider_limit_left_click = {
-				add_to_variable = { current_int = -1 }
+				add_to_variable = { current_int = -2 }
 				clamp_variable = {
 					var = current_int
 					min = 0
-					max = 100
+					max = 50
 				}
 				change_parliament_seats = yes
+				set_variable = { people_tax_qaq = current_int }
+				multiply_variable = { people_tax_qaq = 2 }
+				set_variable = { people_tax = people_tax_qaq }
+				multiply_variable = { people_tax = 0.01 }
 			}
 			slider_limit_right_click = {
-				add_to_variable = { current_int = 1 }
+				add_to_variable = { current_int = 2 }
 				clamp_variable = {
 					var = current_int
 					min = 0
-					max = 100
+					max = 50
 				}
 				change_parliament_seats = yes
+				set_variable = { people_tax_qaq = current_int }
+				multiply_variable = { people_tax_qaq = 2 }
+				set_variable = { people_tax = people_tax_qaq }
+				multiply_variable = { people_tax = 0.01 }
 			}
 
 		}

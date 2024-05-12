@@ -2,7 +2,7 @@ build_private_capital = {
     set_variable = { private_worker_wage = 5 }
     set_variable = { private_goods_factory = 0 }
     set_variable = { private_cost = 0 }
-    set_variable = { private_capital = num_of_civilian_factories }
+    set_variable = { private_capital = industrial_complex_level }
     if = {
         limit = {
             OR = {
@@ -377,7 +377,6 @@ remake_national_factory_tot_cost = {
     }
 }
 remake_private_factory_tot_cost = {
-    every_controlled_state = {
         set_variable = { private_cost = global.ind_fac_worker }
         if = {
             limit = {
@@ -413,7 +412,6 @@ remake_private_factory_tot_cost = {
         divide_variable = { private_cost = global.one_bil }
         set_variable = { an_private_cost = private_cost }
         multiply_variable = { private_cost = private_goods_factory }
-    }
 }
 remake_this_month_goods = {
     set_variable = {
@@ -742,7 +740,9 @@ clamp_worker_wage = {
 }
 monthly_build_new_economy = {
     set_variable = { new_nat_tre_det = 0 }
-    remake_private_factory_tot_cost = yes
+    every_controlled_state = {
+        remake_private_factory_tot_cost = yes
+    }
     every_controlled_state = {
         while_loop_effect = {
             break = temp_break
@@ -878,7 +878,7 @@ distribute_profits = {
     subtract_from_variable = {
         an_factory_profits = surplus_month_goods
     }
-    set_variable = { mid_w = private_goods_factory }
+    set_variable = { mid_w = private_goods_factory_tot }
     add_to_variable = { mid_w = now_use_national_goods_factory }
     divide_variable = {
         an_factory_profits = mid_w
@@ -893,7 +893,7 @@ distribute_profits = {
     set_variable = { our_tax_from_factory = 0 }
     every_controlled_state = {
         set_variable = {
-            private_goods_cnts = an_factory_profits
+            private_goods_cnts = PREV.an_factory_profits
         }
         multiply_variable = {
             private_goods_cnts = private_goods_factory
@@ -905,7 +905,7 @@ distribute_profits = {
             our_tax_from_factory_state = private_goods_cnts
         }
         multiply_variable = {
-            our_tax_from_factory_state = tax_qwq
+            our_tax_from_factory_state = PREV.tax_qwq
         }
         subtract_from_variable = {
             private_capital = our_tax_from_factory_state
@@ -941,7 +941,9 @@ remake_nat_tre_del = {
 }
 payroll_qwq = {
     remake_national_factory_tot_cost = yes
-    remake_private_factory_tot_cost = yes
+    every_controlled_state = {
+        remake_private_factory_tot_cost = yes
+    }
     remake_mil_spend = yes
     remake_pop_cost = yes
     remake_nat_tre_add = yes
@@ -1077,7 +1079,9 @@ ai_tax_work = {
         }
         remake_market = yes
         remake_national_factory_tot_cost = yes
-        remake_private_factory_tot_cost = yes
+        every_controlled_state = {
+            remake_private_factory_tot_cost = yes
+        }
         remake_mil_spend = yes
         remake_pop_cost = yes
         remake_nat_tre_add = yes
@@ -1088,11 +1092,13 @@ ai_tax_work = {
                 check_variable = { people_tax > 0 }
                 check_variable = { new_nat_tre_add > new_nat_tre_del }
             }
-            add_to_variable = { people_tax = -0.05 }
-            add_to_variable = { people_tax_qaq = -5 }
+            add_to_variable = { people_tax = -0.02 }
+            add_to_variable = { people_tax_qaq = -2 }
             remake_market = yes
             remake_national_factory_tot_cost = yes
-            remake_private_factory_tot_cost = yes
+            every_controlled_state = {
+                remake_private_factory_tot_cost = yes
+            }
             remake_mil_spend = yes
             remake_pop_cost = yes
             remake_nat_tre_add = yes
@@ -1104,11 +1110,13 @@ ai_tax_work = {
                 check_variable = { people_tax < 1 }
                 check_variable = { new_nat_tre_add < new_nat_tre_del }
             }
-            add_to_variable = { people_tax = 0.05 }
-            add_to_variable = { people_tax_qaq = 5 }
+            add_to_variable = { people_tax = 0.02 }
+            add_to_variable = { people_tax_qaq = 2 }
             remake_market = yes
             remake_national_factory_tot_cost = yes
-            remake_private_factory_tot_cost = yes
+            every_controlled_state = {
+                remake_private_factory_tot_cost = yes
+            }
             remake_mil_spend = yes
             remake_pop_cost = yes
             remake_nat_tre_add = yes
@@ -1143,12 +1151,6 @@ monthly_we_do = {
         divide_variable = { cash_upd_qwq = cash_upd }
         multiply_variable = { cash_upd_qwq = 0.05 }
         add_to_variable = { cash_upd_qwq = 1 }
-        set_variable = { private_capital_tot = 0 }
-        set_variable = { private_goods_factory_tot = 0 }
-        every_controlled_state = {
-            add_to_variable = { private_capital_tot = private_capital }
-            add_to_variable = { private_goods_factory_tot = private_goods_factory }
-        }
         every_controlled_state = {
             multiply_variable = { state_cash_tot = PREV.cash_upd_qwq }
         }
@@ -1194,8 +1196,9 @@ monthly_we_do = {
 
 
         ai_tax_work = yes
-
-        industrial_expansion = yes
+        every_controlled_state = {
+            industrial_expansion = yes
+        }
         ai_goods_factory_work = yes
         ai_worker_wage_work = yes
 
@@ -1204,6 +1207,13 @@ monthly_we_do = {
         force_update_dynamic_modifier = yes
     }
     every_country = {
+        set_variable = { private_capital_tot = 0 }
+        set_variable = { private_goods_factory_tot = 0 }
+        every_controlled_state = {
+            add_to_variable = { PREV.private_capital_tot = private_capital }
+            add_to_variable = { PREV.private_goods_factory_tot = private_goods_factory }
+        }
+
         set_variable ={ gdp_per_capita = gdpmn }
         multiply_variable = { var = gdp_per_capita value = 1000 }
         if = {
