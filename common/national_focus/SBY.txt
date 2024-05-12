@@ -25,7 +25,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SBY_focus1
-		icon = GFX_Fire
+		icon = GFX_SBY_focus1
 		cost = 8.00
 		x = 5
 		y = 1
@@ -44,9 +44,9 @@ focus_tree = {
 	}
 	focus = {
 		id = SBY_focus2
-		icon = GFX_Fire
+		icon = GFX_SBY_focus2
 		cost = 8.00
-		x = 2
+		x = 3
 		y = 1
 		prerequisite = {
 			focus = SBY_focus0
@@ -63,7 +63,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SBY_focus3
-		icon = GFX_Fire
+		icon = GFX_SBY_focus3
 		cost = 8.00
 		x = 2
 		y = 2
@@ -81,9 +81,9 @@ focus_tree = {
 	}
 	focus = {
 		id = SBY_focus4
-		icon = GFX_Fire
+		icon = GFX_SBY_focus4
 		cost = 8.00
-		x = 4
+		x = 5
 		y = 2
 		prerequisite = {
 			focus = SBY_focus1
@@ -100,15 +100,188 @@ focus_tree = {
 	}
 	focus = {
 		id = SBY_focus5
-		icon = GFX_Fire
+		icon = GFX_SBY_focus5
 		cost = 8.00
-		x = 6
+		x = 3
 		y = 3
 		prerequisite = {
-			focus = SBY_focus1
+			focus = SBY_focus4
 		}
 		available = {
 			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = SBY_focus6
+		icon = GFX_SBY_focus6
+		cost = 8.00
+		x = 5
+		y = 4
+		prerequisite = {
+			focus = SBY_focus4
+		}
+		available = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = SBY_focus7
+		icon = GFX_SBY_focus7
+		cost = 8.00
+		x = 11
+		y = 1
+		prerequisite = {
+			focus = SBY_focus0
+		}
+		available = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SBY_focus8
+		icon = GFX_SBY_focus8
+		cost = 8.00
+		x = 8
+		y = 2
+		prerequisite = {
+			focus = SBY_focus7
+		}
+		available = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = SBY_focus9
+		icon = GFX_SBY_focus9
+		cost = 8.00
+		x = 14
+		y = 2
+		prerequisite = {
+			focus = SBY_focus7
+		}
+		available = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = SBY_focus10
+		icon = GFX_SBY_focus10
+		cost = 8.00
+		x = 7
+		y = 3
+		prerequisite = {
+			focus = SBY_focus8
+		}
+		available = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = SBY_focus11
+		icon = GFX_SBY_focus11
+		cost = 8.00
+		x = 11
+		y = 3
+		prerequisite = {
+			focus = SBY_focus8
+		}
+		prerequisite = {
+			focus = SBY_focus9
+		}
+		available = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = SBY_focus12
+		icon = GFX_SBY_focus12
+		cost = 8.00
+		x = 15
+		y = 3
+		prerequisite = {
+			focus = SBY_focus9
+		}
+		available = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = SBY_focus13
+		icon = GFX_SBY_focus13
+		cost = 8.00
+		x = 9
+		y = 3
+		prerequisite = {
+			focus = SBY_focus8
+		}
+		available = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+
+	}
+	focus = {
+		id = SBY_focus14
+		icon = GFX_SBY_focus14
+		cost = 8.00
+		x = 13
+		y = 3
+		prerequisite = {
+			focus = SBY_focus9
+		}
+		available = {
+			always = no 
 		}
 		ai_will_do = {
 			factor = 1
