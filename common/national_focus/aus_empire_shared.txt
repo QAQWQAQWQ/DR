@@ -2,7 +2,7 @@ shared_focus = {
 	id = empire_modernization_of_the_imperial_army
 	dynamic = yes 
 	icon = GFX_goal_generic_army_doctrines
-	x = 30
+	x = 40
 	y = 0
 	cost = 5
 	text_icon = NORDIC_focus_style
@@ -32,7 +32,7 @@ joint_focus = {
 	id = empire_modernization_navy
 	icon = GFX_goal_generic_army_doctrines
 	prerequisite = { focus = empire_modernization_of_the_imperial_army }
-	x = -6
+	x = -12
 	y = 1
 	relative_position_id = empire_modernization_of_the_imperial_army
 	cost = 5
@@ -50,6 +50,437 @@ joint_focus = {
 	}
 	completion_reward = {
 		navy_experience = 25
+	}
+}
+joint_focus = {
+	id = empire_modernization_navy_0
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = { 
+		focus = empire_modernization_navy
+	}
+	x = -6
+	y = 1
+	relative_position_id = empire_modernization_navy
+	cost = 5
+	available = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	joint_trigger = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	completion_reward = {
+	}
+}
+joint_focus = {
+	id = empire_modernization_navy_1
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = {  focus = empire_modernization_navy_0 }
+	x = -1
+	y = 1
+	relative_position_id = empire_modernization_navy_0
+	cost = 5
+	available = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	joint_trigger = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	mutually_exclusive = { focus = empire_modernization_navy_2 }
+	completion_reward = {
+	}
+}
+joint_focus = {
+	id = empire_modernization_navy_3
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = {  focus = empire_modernization_navy_1 }
+	x = -2
+	y = 1
+	relative_position_id = empire_modernization_navy_1
+	cost = 5
+	available = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	joint_trigger = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	mutually_exclusive = { focus = empire_modernization_navy_4 }
+	completion_reward = {
+	}
+}
+joint_focus = {
+	id = empire_modernization_navy_4
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = {  focus = empire_modernization_navy_1 }
+	x = 0
+	y = 1
+	relative_position_id = empire_modernization_navy_1
+	cost = 5
+	available = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	joint_trigger = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	mutually_exclusive = { focus = empire_modernization_navy_3 }
+	completion_reward = {
+	}
+}
+joint_focus = {
+	id = empire_modernization_navy_2
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = { 
+		focus = empire_modernization_navy_0
+	}
+	x = 1
+	y = 1
+	relative_position_id = empire_modernization_navy_0
+	cost = 5
+	available = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	joint_trigger = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	mutually_exclusive = {
+		focus = empire_modernization_navy_1
+	}
+	completion_reward = {
+	}
+}
+joint_focus = {
+	id = empire_modernization_navy_5
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = {  focus = empire_modernization_navy_2 }
+	x = 0
+	y = 1
+	relative_position_id = empire_modernization_navy_2
+	cost = 5
+	available = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	joint_trigger = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	completion_reward = {
+	}
+}
+joint_focus = {
+	id = empire_modernization_navy_6
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = {  focus = empire_modernization_navy }
+	x = 0
+	y = 1
+	relative_position_id = empire_modernization_navy
+	cost = 5
+	available = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	joint_trigger = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	completion_reward = {
+	}
+}
+joint_focus = {
+	id = empire_modernization_navy_10
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = {  focus = empire_modernization_navy_6 }
+	x = -2
+	y = 1
+	relative_position_id = empire_modernization_navy_6
+	cost = 5
+	available = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	joint_trigger = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	completion_reward = {
+	}
+}
+joint_focus = {
+	id = empire_modernization_navy_11
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = {  focus = empire_modernization_navy_10 }
+	x = -1
+	y = 1
+	relative_position_id = empire_modernization_navy_10
+	cost = 5
+	available = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	joint_trigger = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	mutually_exclusive = { focus = empire_modernization_navy_12 }
+	completion_reward = {
+	}
+}
+joint_focus = {
+	id = empire_modernization_navy_12
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = {  focus = empire_modernization_navy_10 }
+	x = 1
+	y = 1
+	relative_position_id = empire_modernization_navy_10
+	cost = 5
+	available = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	joint_trigger = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	mutually_exclusive = { focus = empire_modernization_navy_11 }
+	completion_reward = {
+	}
+}
+joint_focus = {
+	id = empire_modernization_navy_13
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = {  focus = empire_modernization_navy_10 }
+	x = 0
+	y = 2
+	relative_position_id = empire_modernization_navy_10
+	cost = 5
+	available = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	joint_trigger = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	completion_reward = {
+	}
+}
+joint_focus = {
+	id = empire_modernization_navy_14
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = {  focus = empire_modernization_navy }
+	x = 5
+	y = 1
+	relative_position_id = empire_modernization_navy
+	cost = 5
+	available = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	joint_trigger = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	completion_reward = {
+	}
+}
+joint_focus = {
+	id = empire_modernization_navy_15
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = {  focus = empire_modernization_navy_14 }
+	x = -1
+	y = 1
+	relative_position_id = empire_modernization_navy_14
+	cost = 5
+	available = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	joint_trigger = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	completion_reward = {
+	}
+}
+joint_focus = {
+	id = empire_modernization_navy_16
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = {  focus = empire_modernization_navy_14 }
+	x = 1
+	y = 1
+	relative_position_id = empire_modernization_navy_14
+	cost = 5
+	available = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	joint_trigger = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	completion_reward = {
+	}
+}
+joint_focus = {
+	id = empire_modernization_navy_17
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = {  
+		focus = empire_modernization_navy_14 
+		focus = empire_modernization_navy_7
+	}
+	x = 0
+	y = 2
+	relative_position_id = empire_modernization_navy_14
+	cost = 5
+	available = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	joint_trigger = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	completion_reward = {
+	}
+}
+joint_focus = {
+	id = empire_modernization_navy_7
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = {  focus = empire_modernization_navy_6 }
+	x = 2
+	y = 1
+	relative_position_id = empire_modernization_navy_6
+	cost = 5
+	available = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	joint_trigger = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	completion_reward = {
+	}
+}
+joint_focus = {
+	id = empire_modernization_navy_8
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = {  focus = empire_modernization_navy_7 }
+	x = -1
+	y = 1
+	relative_position_id = empire_modernization_navy_7
+	cost = 5
+	available = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	joint_trigger = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	mutually_exclusive = { focus = empire_modernization_navy_9 }
+	completion_reward = {
+	}
+}
+joint_focus = {
+	id = empire_modernization_navy_9
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = {  focus = empire_modernization_navy_7 }
+	x = 1
+	y = 1
+	relative_position_id = empire_modernization_navy_7
+	cost = 5
+	available = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	joint_trigger = {
+		OR = {
+			original_tag = AOX
+			has_idea = Part_of_Habsburgs
+		}
+	}
+	mutually_exclusive = { focus = empire_modernization_navy_8 }
+	completion_reward = {
 	}
 }
 joint_focus = {
