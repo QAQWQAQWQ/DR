@@ -840,10 +840,18 @@ ger_con_decisions = {
     }
 		visible = {
         original_tag = WWS
-        AOX = { has_completed_focus = AUS_ger_11 }
-        DOS = { exists = yes }
+        WWS = { has_completed_focus = WWS_Separate_alliances }
 		}		
     available = {
+      OR = {
+        DOS = { ger_con_uni_tri_pre = yes }
+        DOS = {
+          has_country_leader = {
+            character = DOS_Carl_Eduard
+            ruling_only = yes
+          }
+        }
+      }
     }
     cost = 0
     fire_only_once = yes
@@ -864,7 +872,12 @@ ger_con_decisions = {
         }
         add_core_of = WWS
       }
-      WWS = { annex_country = { target = DOS transfer_troops = yes } }
+      WWS = { 
+        annex_country = { target = DOS transfer_troops = yes } 
+        transfer_state = 60
+        transfer_state = 65
+        transfer_state = 946
+      }
       WWS = { annex_country = { target = SAA transfer_troops = yes } }
       WWS = { annex_country = { target = SAB transfer_troops = yes } }
       WWS = { annex_country = { target = SAC transfer_troops = yes } }

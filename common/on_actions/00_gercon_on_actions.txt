@@ -221,6 +221,15 @@ on_actions = {
                     SAE = { transfer_state = 957 }
                     SAF = { transfer_state = 958 }
                     SAG = { transfer_state = 959 }
+                    DOS = {
+                        puppet = SAA
+                        puppet = SAB
+                        puppet = SAC
+                        puppet = SAD
+                        puppet = SAE
+                        puppet = SAF
+                        puppet = SAG
+                    }
                 }
                 AOX = { white_peace = WWS }
                 WWS = { white_peace = AOX }
