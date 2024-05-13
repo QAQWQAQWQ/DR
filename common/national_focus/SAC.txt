@@ -1,0 +1,12 @@
+focus_tree = {
+	id = SAC
+	country = {
+		factor = 0
+		modifier = {
+			add = 5
+			tag = SAC
+		}
+	}
+	default = no
+	shared_focus = Thuringian_0
+}

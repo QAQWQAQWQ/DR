@@ -1,0 +1,12 @@
+focus_tree = {
+	id = SAE
+	country = {
+		factor = 0
+		modifier = {
+			add = 5
+			tag = SAE
+		}
+	}
+	default = no
+	shared_focus = Thuringian_0
+}
