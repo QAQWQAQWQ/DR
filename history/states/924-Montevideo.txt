@@ -8,13 +8,13 @@ state={
 	
 	history={
 		owner = BRA
+			victory_points = {
+				13261 5
+			}
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 3
 			dockyard = 1
-			victory_points = {
-				13261 5
-			}
 			13261 = {
 				naval_base = 6
 				bunker = 1
