@@ -129,6 +129,7 @@ aus_hun_decisions = {
                 DMT = { transfer_state = 104 }
                 DMT = { transfer_state = 804 }
                 DMT = { transfer_state = 918 }
+                DMT = { transfer_state = 1018 }
                 bos_war_end_qwq = yes
                 AOX = {
                     country_event = aushun.3
@@ -1155,7 +1156,7 @@ hun_red_army = {
 		available = {
 			always = no
 		}
-		days_mission_timeout = 120
+		days_mission_timeout = 90
 # days_mission_timeout = 2
 		activation = {
 			OR = {
