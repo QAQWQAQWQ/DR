@@ -22,8 +22,18 @@ guiTypes = {
 		moveable = no
 		iconType = {
 			name = "ECO_icon1"
-            #spriteType ="GFX_economy_background"
+            spriteType ="GFX_economy_background"
+		 	position = {x = 18 y = 45} 
+		}
+		iconType = {
+			name = "ECO_icon2"
+            spriteType ="GFX_economy_background1"
 		 	position = {x = 25 y = 53} 
+		}
+		iconType = {
+			name = "ECO_icon3"
+            spriteType ="GFX_economy_background2"
+		 	position = {x = 282 y = 47} 
 		}
 		background = {
 				name = "money_system_main"
@@ -95,7 +105,7 @@ guiTypes = {
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
 			text = "经济"	
-			maxWidth = 300
+			maxWidth = 210
 			maxHeight = 32
 			fixedsize = yes
 			format = left			
@@ -112,12 +122,13 @@ guiTypes = {
             pdx_tooltip = "GDP_TOOLTIP" 		
 		}
 
+		
 
 		buttonType = {
 			name = "slider_limit_left"
 			spriteType = "GFX_econ_crt_slider_limit_left"
 			position = { x = 255 y = 90 }
-		}
+		} 
 		buttonType = {
 			name = "slider_limit_right"
 			spriteType = "GFX_econ_crt_slider_limit_right"
