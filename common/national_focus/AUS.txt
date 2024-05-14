@@ -710,6 +710,7 @@ focus_tree = {
 				}
 				ger_con_aus_controlled = yes
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
 		available = {
 			DOS = { ger_con_uni_tri_aus = yes }
@@ -2429,26 +2430,26 @@ bosnia_war_end = yes
 			OR = {
 				# always = yes
 				AND = {
-			has_completed_focus = AUS_bir_15
-			bosnia_war_end_tri_tool = yes
-			OR = {
-			 	has_completed_focus = AUS_ger_1
-			 	has_completed_focus = AUS_ger_2
-			 	has_completed_focus = AUS_ger_3
-			}
-			NOT = {
-				has_completed_focus = AUS_HRE_0
-				has_completed_focus = AUS_german_0
-			}
-			OR = {
-			 	NOT = {
-					has_completed_focus = AUS_ger_3
-				}
-				custom_trigger_tooltip = { 
-					tooltip = pre_win_german_war 
-					pre_has_win_german_war = yes
-				}
-			}
+					has_completed_focus = AUS_bir_15
+					bosnia_war_end_tri_tool = yes
+					OR = {
+						has_completed_focus = AUS_ger_1
+						has_completed_focus = AUS_ger_2
+						has_completed_focus = AUS_ger_3
+					}
+					NOT = {
+						has_completed_focus = AUS_HRE_0
+						has_completed_focus = AUS_german_0
+					}
+					OR = {
+						NOT = {
+							has_completed_focus = AUS_ger_3
+						}
+						custom_trigger_tooltip = { 
+							tooltip = pre_win_german_war 
+							pre_has_win_german_war = yes
+						}
+					}
 				}
 			}	
 		}
@@ -3357,6 +3358,29 @@ bosnia_war_end = yes
 				remove_idea = AOX_Ethnic_construction4
 				add_idea = AOX_Ethnic_construction5
 			}
+		}
+	}
+	focus = {
+		id = AUS_confederation_0
+		icon = GFX_goal_AUS_confederation_0
+		x = -2 
+		y = 5
+		relative_position_id = AUS_ger_2
+		cost = 1.00
+		allow_branch = {
+			OR = {
+				# always = yes
+				has_completed_focus = AUS_ger_22
+			}
+		}
+		available = {
+			custom_trigger_tooltip = { 
+				tooltip = aus_win_german_war 
+				aus_has_win_german_war = yes
+			}
+		}
+		completion_reward = {
+			add_political_power = 50
 		}
 	}
 }
