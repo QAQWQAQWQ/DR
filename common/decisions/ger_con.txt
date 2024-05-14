@@ -843,15 +843,7 @@ ger_con_decisions = {
         WWS = { has_completed_focus = WWS_Separate_alliances }
 		}		
     available = {
-      OR = {
-        DOS = { ger_con_uni_tri_pre = yes }
-        DOS = {
-          has_country_leader = {
-            character = DOS_Carl_Eduard
-            ruling_only = yes
-          }
-        }
-      }
+      DOS = { ger_con_uni_tri_pre = yes }
     }
     cost = 0
     fire_only_once = yes
@@ -927,17 +919,30 @@ ger_con_decisions = {
         
         DOS = {
           start_civil_war = {
-            ideology = Conservatism
+            ideology = Reactionary
             size = 0.3
             capital = 946
             states = { 65 946 }
           }
-          load_oob = "sax_war_aus"
         }
         random_other_country = {
           limit = {
             original_tag = DOS
             has_government = Conservatism
+          }
+          puppet = SAA
+          puppet = SAB
+          puppet = SAC
+          puppet = SAD
+          puppet = SAE
+          puppet = SAF
+          puppet = SAG
+          load_oob = "sax_war_aus"
+        }
+        random_other_country = {
+          limit = {
+            original_tag = DOS
+            has_government = Reactionary
           }
           promote_character = DOS_Carl_Eduard
           load_oob = "sax_war_pre"

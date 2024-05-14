@@ -7,6 +7,7 @@
 		available = {
 		}
 		completion_reward = {
+			add_war_support = 0.15
 		}
 	}
 	shared_focus  = {
@@ -20,6 +21,17 @@
 		available = {
 		}
 		completion_reward = {
+			add_political_power = -80
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment_0
+				amount = 500
+				producer = AOX
+			}
+			add_equipment_to_stockpile = {
+    			type = artillery_equipment_1
+				amount = 10
+				producer = AOX
+			}
 		}
 	}
 	shared_focus  = {
@@ -54,12 +66,13 @@
 		available = {
 		}
 		completion_reward = {
+			add_manpower = 20000
 		}
 	}
 	shared_focus  = {
 		id = Thuringian_4
 		icon = GFX_goal_unkown
-		cost = 5.00
+		cost = 10.00
 		x = -1
 		y = 2
 	    relative_position_id = Thuringian_3
@@ -68,6 +81,8 @@
 		available = {
 		}
 		completion_reward = {
+			remove_ideas = { SAX_Irregular_military_forces }
+			army_experience = 10
 		}
 	}
 	shared_focus  = {
