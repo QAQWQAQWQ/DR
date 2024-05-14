@@ -7,6 +7,7 @@
 		available = {
 		}
 		completion_reward = {
+			add_war_support = 0.15
 		}
 	}
 	shared_focus  = {
@@ -20,6 +21,17 @@
 		available = {
 		}
 		completion_reward = {
+			add_political_power = -80
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment_0
+				amount = 500
+				producer = AOX
+			}
+			add_equipment_to_stockpile = {
+    			type = artillery_equipment_1
+				amount = 10
+				producer = AOX
+			}
 		}
 	}
 	shared_focus  = {
@@ -33,6 +45,14 @@
 		available = {
 		}
 		completion_reward = {
+			capital_scope = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	shared_focus  = {
@@ -46,6 +66,7 @@
 		available = {
 		}
 		completion_reward = {
+			add_manpower = 20000
 		}
 	}
 	shared_focus  = {
@@ -60,6 +81,8 @@
 		available = {
 		}
 		completion_reward = {
+			remove_ideas = { SAX_Irregular_military_forces }
+			army_experience = 10
 		}
 	}
 	shared_focus  = {
@@ -73,6 +96,18 @@
 		available = {
 		}
 		completion_reward = {
+			capital_scope = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+						limit_to_victory_point > 1
+					}
+				}
+			}
 		}
 	}
 	shared_focus  = {
@@ -86,19 +121,39 @@
 		available = {
 		}
 		completion_reward = {
+			capital_scope = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+						limit_to_victory_point > 1
+					}
+				}
+			}
 		}
 	}
 	shared_focus  = {
 		id = Thuringian_12
 		icon = GFX_goal_Thuringian_12
 		cost = 5.00
-		x = 0
+		x = 1
 		y = 1
 	    relative_position_id = Thuringian_6
 	    prerequisite = { focus = Thuringian_6 }
+	    prerequisite = { focus = Thuringian_7 }
 		available = {
 		}
 		completion_reward = {
+			capital_scope = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	shared_focus  = {
@@ -112,6 +167,13 @@
 		available = {
 		}
 		completion_reward = {
+			capital_scope = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	shared_focus  = {
@@ -123,6 +185,8 @@
 		available = {
 		}
 		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
 		}
 	}
 	shared_focus  = {
@@ -137,6 +201,8 @@
 		available = {
 		}
 		completion_reward = {
+			add_command_power = 10	
+			army_experience = 10
 		}
 	}
 	shared_focus  = {
@@ -150,6 +216,10 @@
 		available = {
 		}
 		completion_reward = {
+			capital_scope = {
+				hidden_effect = { add_to_variable = { state_cash_tot = 1 } }
+				custom_effect_tooltip = Thuringian_10_eff
+			}
 		}
 	}
 	shared_focus  = {
@@ -163,5 +233,12 @@
 		available = {
 		}
 		completion_reward = {
+			capital_scope = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}

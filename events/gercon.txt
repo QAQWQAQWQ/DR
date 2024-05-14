@@ -292,7 +292,7 @@ country_event = {
 	picture = GFX_sax_problem_4_pict
 	trigger = {
 		original_tag = DOS
-		has_government = Conservatism
+		has_government = Reactionary
 		check_variable = {
 			global.sax_war = 1
 		}

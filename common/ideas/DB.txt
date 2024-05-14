@@ -20,5 +20,13 @@ ideas = {
 				overlord_trade_cost_factor = -0.2
               }
 		}
+		SAX_Irregular_military_forces = {
+			picture = Deutscher_Bund
+			modifier = {
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				army_morale_factor = -0.2
+            }
+		}
 }
 }
