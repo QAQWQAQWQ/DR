@@ -2424,7 +2424,7 @@ bosnia_war_end = yes
 		id = AUS_federation_0
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 17
+		x = 20
 		y = 6
 		allow_branch={ 
 			OR = {
@@ -2474,7 +2474,7 @@ bosnia_war_end = yes
 			}
 		}
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 150
         	add_stability = 0.1
 		}
 	}
@@ -2482,8 +2482,9 @@ bosnia_war_end = yes
 		id = AUS_federation_7
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 17
-		y = 7
+		x = 0
+		y = 1
+		relative_position_id = AUS_federation_0
 		prerequisite = {
 			focus = AUS_federation_0
 		}
@@ -2491,16 +2492,17 @@ bosnia_war_end = yes
 			# aus_hun_nat_eth_completed_tri = yes
 		}
 		completion_reward = {
-			add_political_power = 150
-			add_stability = 0.1
+			add_political_power = 50
+			get_more_aus_hun_every_sup_5 = yes
 		}
 	}
 	focus = {
 		id = AUS_federation_8
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 15
-		y = 8
+		x = -2
+		y = 1
+		relative_position_id = AUS_federation_7
 		prerequisite = {
 			focus = AUS_federation_7
 		}
@@ -2514,8 +2516,9 @@ bosnia_war_end = yes
 		id = AUS_federation_9
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 17
-		y = 8
+		x = 0
+		y = 1
+		relative_position_id = AUS_federation_7
 		prerequisite = {
 			focus = AUS_federation_7
 		}
@@ -2541,8 +2544,9 @@ bosnia_war_end = yes
 		id = AUS_federation_10
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 19
-		y = 8
+		x = 2
+		y = 1
+		relative_position_id = AUS_federation_7
 		prerequisite = {
 			focus = AUS_federation_7
 		}
@@ -2555,8 +2559,9 @@ bosnia_war_end = yes
 		id = AUS_federation_11
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 18
-		y = 9
+		x = 1
+		y = 1
+		relative_position_id = AUS_federation_9
 		prerequisite = {
 			focus = AUS_federation_10
 		}
@@ -2592,8 +2597,9 @@ bosnia_war_end = yes
 		id = AUS_federation_12
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 16
-		y = 9
+		x = -1
+		y = 1
+		relative_position_id = AUS_federation_9
 		prerequisite = {
 			focus = AUS_federation_8
 		}
@@ -2610,8 +2616,9 @@ bosnia_war_end = yes
 		id = AUS_federation_13
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 17
-		y = 10
+		x = -1
+		y = 1
+		relative_position_id = AUS_federation_11
 		prerequisite = {
 			focus = AUS_federation_11
 		}
@@ -2628,8 +2635,9 @@ bosnia_war_end = yes
 		id = AUS_federation_14
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 15
-		y = 10
+		x = -1
+		y = 1
+		relative_position_id = AUS_federation_12
 		prerequisite = {
 			focus = AUS_federation_12
 		}
@@ -2643,8 +2651,9 @@ bosnia_war_end = yes
 		id = AUS_federation_15
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 19
-		y = 10
+		x = 1
+		y = 1
+		relative_position_id = AUS_federation_11
 		prerequisite = {
 			focus = AUS_federation_11
 		}
@@ -2658,8 +2667,9 @@ bosnia_war_end = yes
 		id = AUS_federation_16
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 17
-		y = 12
+		x = 0
+		y = 2
+		relative_position_id = AUS_federation_13
 		prerequisite = {
 			focus = AUS_federation_14
 		}
@@ -2681,8 +2691,9 @@ bosnia_war_end = yes
 		id = AUS_democratization_0
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 23
-		y = 7
+		x = 6
+		y = 1
+		relative_position_id = AUS_federation_0
 		prerequisite = {
 			focus = AUS_federation_0
 		}
@@ -2696,8 +2707,9 @@ bosnia_war_end = yes
 		id = AUS_democratization_1
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 22
-		y = 8
+		x = -1
+		y = 1
+		relative_position_id = AUS_democratization_0
 		prerequisite = {
 			focus = AUS_democratization_0
 		}
@@ -2711,8 +2723,9 @@ bosnia_war_end = yes
 		id = AUS_democratization_2
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 22
-		y = 9
+		x = 0
+		y = 1
+		relative_position_id = AUS_democratization_1
 		prerequisite = {
 			focus = AUS_democratization_1
 		}
@@ -2726,8 +2739,9 @@ bosnia_war_end = yes
 		id = AUS_democratization_3
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 24
-		y = 8
+		x = 1
+		y = 1
+		relative_position_id = AUS_democratization_0
 		prerequisite = {
 			focus = AUS_democratization_0
 		}
@@ -2741,8 +2755,9 @@ bosnia_war_end = yes
 		id = AUS_democratization_4
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 24
-		y = 9
+		x = 0
+		y = 1
+		relative_position_id = AUS_democratization_3
 		prerequisite = {
 			focus = AUS_democratization_3
 		}
@@ -2756,8 +2771,9 @@ bosnia_war_end = yes
 		id = AUS_democratization_5
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 23
-		y = 10
+		x = 1
+		y = 1
+		relative_position_id = AUS_democratization_2
 		prerequisite = {
 			focus = AUS_democratization_2
 		}
@@ -2774,8 +2790,9 @@ bosnia_war_end = yes
 		id = AUS_democratization_6
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 22
-		y = 11
+		x = -1
+		y = 1
+		relative_position_id = AUS_democratization_5
 		prerequisite = {
 			focus = AUS_democratization_5
 		}
@@ -2792,8 +2809,9 @@ bosnia_war_end = yes
 		id = AUS_democratization_7
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 24
-		y = 11
+		x = 1
+		y = 1
+		relative_position_id = AUS_democratization_5
 		prerequisite = {
 			focus = AUS_democratization_5
 		}
@@ -2810,8 +2828,9 @@ bosnia_war_end = yes
 		id = AUS_democratization_8
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 23
-		y = 12
+		x = 1
+		y = 1
+		relative_position_id = AUS_democratization_6
 		prerequisite = {
 			focus = AUS_democratization_6
 			focus = AUS_democratization_7
@@ -2826,8 +2845,9 @@ bosnia_war_end = yes
 		id = AUS_federation_1
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 11
-		y = 7
+		x = -6
+		y = 1
+		relative_position_id = AUS_federation_0
 		prerequisite = {
 			focus = AUS_federation_0
 		}
@@ -2849,8 +2869,9 @@ bosnia_war_end = yes
 		id = AUS_federation_2
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 10
-		y = 8
+		x = -1
+		y = 1
+		relative_position_id = AUS_federation_1
 		prerequisite = {
 			focus = AUS_federation_1
 		}
@@ -2901,8 +2922,9 @@ bosnia_war_end = yes
 		id = AUS_federation_3
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 12
-		y = 8
+		x = 1
+		y = 1
+		relative_position_id = AUS_federation_1
 		prerequisite = {
 			focus = AUS_federation_1
 		}
@@ -2955,8 +2977,9 @@ bosnia_war_end = yes
 		id = AUS_federation_4
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 12
-		y = 9
+		x = 0
+		y = 1
+		relative_position_id = AUS_federation_3
 		prerequisite = {
 			focus = AUS_federation_3
 		}
@@ -3002,8 +3025,9 @@ bosnia_war_end = yes
 		id = AUS_federation_5
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 10
-		y = 9
+		x = 0
+		y = 1
+		relative_position_id = AUS_federation_2
 		prerequisite = {
 			focus = AUS_federation_2
 		}
@@ -3032,8 +3056,9 @@ bosnia_war_end = yes
 		id = AUS_federation_6
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 11
-		y = 10
+		x = 1
+		y = 1
+		relative_position_id = AUS_federation_5
 		prerequisite = {
 			focus = AUS_federation_4
 		}
@@ -3083,8 +3108,9 @@ bosnia_war_end = yes
 		id = AUS_federation_18
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 11
-		y = 11
+		x = 0
+		y = 1
+		relative_position_id = AUS_federation_6
 		available = {
 		}
 		prerequisite = {
@@ -3183,8 +3209,9 @@ bosnia_war_end = yes
 		id = AUS_federation_19
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 11
-		y = 12
+		x = 0
+		y = 1
+		relative_position_id = AUS_federation_18
 		prerequisite = {
 			focus = AUS_federation_18
 		}
@@ -3212,8 +3239,9 @@ bosnia_war_end = yes
 		id = AUS_federation_17
 		icon = GFX_goal_unkown
 		cost = 5.00
-		x = 17
-		y = 13
+		x = 0
+		y = 1
+		relative_position_id = AUS_federation_16
 		prerequisite = {
 			focus = AUS_federation_16
 		}
@@ -3363,7 +3391,7 @@ bosnia_war_end = yes
 	focus = {
 		id = AUS_confederation_0
 		icon = GFX_goal_AUS_confederation_0
-		x = -2 
+		x = 0 
 		y = 5
 		relative_position_id = AUS_ger_2
 		cost = 1.00
@@ -3381,6 +3409,161 @@ bosnia_war_end = yes
 		}
 		completion_reward = {
 			add_political_power = 50
+		}
+	}
+	focus = {
+		id = AUS_confederation_1
+		icon = GFX_goal_AUS_confederation_1
+		x = 3 
+		y = 1
+		relative_position_id = AUS_confederation_0
+		prerequisite = { focus = AUS_confederation_0 }
+		cost = 5.00
+		allow_branch = {
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = AUS_confederation_2
+		icon = GFX_goal_AUS_confederation_2
+		x = -2
+		y = 1
+		relative_position_id = AUS_confederation_1
+		prerequisite = { focus = AUS_confederation_1 }
+		cost = 5.00
+		allow_branch = {
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = AUS_confederation_3
+		icon = GFX_goal_AUS_confederation_3
+		x = 0
+		y = 1
+		relative_position_id = AUS_confederation_1
+		prerequisite = { focus = AUS_confederation_1 }
+		cost = 5.00
+		allow_branch = {
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = AUS_confederation_4
+		icon = GFX_goal_AUS_confederation_4
+		x = 2
+		y = 1
+		relative_position_id = AUS_confederation_1
+		prerequisite = { focus = AUS_confederation_1 }
+		cost = 5.00
+		allow_branch = {
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = AUS_confederation_5
+		icon = GFX_goal_AUS_confederation_5
+		x = 0
+		y = 1
+		relative_position_id = AUS_confederation_3
+		prerequisite = { focus = AUS_confederation_2 }
+		prerequisite = { focus = AUS_confederation_3 }
+		prerequisite = { focus = AUS_confederation_4 }
+		cost = 5.00
+		allow_branch = {
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = AUS_confederation_6
+		icon = GFX_goal_AUS_confederation_6
+		x = -2
+		y = 1
+		relative_position_id = AUS_confederation_5
+		prerequisite = { focus = AUS_confederation_5 }
+		cost = 5.00
+		allow_branch = {
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = AUS_confederation_7
+		icon = GFX_goal_AUS_confederation_7
+		x = -2
+		y = 1
+		relative_position_id = AUS_confederation_6
+		prerequisite = { focus = AUS_confederation_6 }
+		cost = 5.00
+		allow_branch = {
+		}
+		available = {
+		}
+		mutually_exclusive = {
+			focus = AUS_confederation_8
+		}
+		mutually_exclusive = {
+			focus = AUS_confederation_9
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = AUS_confederation_8
+		icon = GFX_goal_AUS_confederation_8
+		x = 0
+		y = 1
+		relative_position_id = AUS_confederation_6
+		prerequisite = { focus = AUS_confederation_6 }
+		cost = 5.00
+		allow_branch = {
+		}
+		available = {
+		}
+		mutually_exclusive = {
+			focus = AUS_confederation_7
+		}
+		mutually_exclusive = {
+			focus = AUS_confederation_9
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = AUS_confederation_9
+		icon = GFX_goal_AUS_confederation_9
+		x = 2
+		y = 1
+		relative_position_id = AUS_confederation_6
+		prerequisite = { focus = AUS_confederation_6 }
+		cost = 5.00
+		allow_branch = {
+		}
+		available = {
+		}
+		mutually_exclusive = {
+			focus = AUS_confederation_7
+		}
+		mutually_exclusive = {
+			focus = AUS_confederation_8
+		}
+		completion_reward = {
 		}
 	}
 }
