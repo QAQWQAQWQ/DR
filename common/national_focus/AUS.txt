@@ -792,11 +792,11 @@ focus_tree = {
 			}
 			aushun_clamp_vars = yes
 			custom_effect_tooltip = more_cro_aus_hun_sup_30
-				add_to_variable = {
-					var = AOX.aus_hun_gov_sup^8
-					value = 30
-				}
-				aushun_clamp_vars = yes
+			add_to_variable = {
+				var = AOX.aus_hun_gov_sup^8
+				value = 30
+			}
+			aushun_clamp_vars = yes
 			custom_effect_tooltip = less_hun_aus_hun_sup_40
 				add_to_variable = {
 					var = AOX.aus_hun_gov_sup^1
@@ -2428,7 +2428,7 @@ bosnia_war_end = yes
 		y = 6
 		allow_branch={ 
 			OR = {
-				# always = yes
+				always = yes
 				AND = {
 					has_completed_focus = AUS_bir_15
 					bosnia_war_end_tri_tool = yes
@@ -2553,6 +2553,25 @@ bosnia_war_end = yes
 		available = {
 		}
 		completion_reward = {
+			add_political_power = -60
+			custom_effect_tooltip = more_cze_aus_hun_sup_30
+			add_to_variable = {
+				var = AOX.aus_hun_gov_sup^3
+				value = 30
+			}
+			aushun_clamp_vars = yes	
+			custom_effect_tooltip = more_pol_aus_hun_sup_30
+			add_to_variable = {
+				var = AOX.aus_hun_gov_sup^4
+				value = 30
+			}
+			aushun_clamp_vars = yes
+			custom_effect_tooltip = more_cro_aus_hun_sup_30
+			add_to_variable = {
+				var = AOX.aus_hun_gov_sup^8
+				value = 30
+			}
+			aushun_clamp_vars = yes
 		}
 	}
 	focus = {
