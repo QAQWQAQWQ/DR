@@ -540,3 +540,43 @@ remake_aus_hun_stab = {
     }
     force_update_dynamic_modifier = yes
 }
+get_less_aus_hun_every_aut_20 = {
+    custom_effect_tooltip = less_aus_hun_every_aut_20
+    add_to_variable = {
+        var = AOX.aus_hun_egree^1
+        value = -20
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_egree^2
+        value = -20
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_egree^3
+        value = -20
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_egree^4
+        value = -20
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_egree^5
+        value = -20
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_egree^6
+        value = -20
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_egree^7
+        value = -20
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_egree^8
+        value = -20
+    }
+    add_to_variable = {
+        var = AOX.aus_hun_egree^9
+        value = -20
+    }
+    aushun_clamp_vars = yes
+}

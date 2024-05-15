@@ -1244,6 +1244,10 @@ monthly_we_do = {
         multiply_variable = { gdp_proportion = 100 }
                     
         divide_variable = { var = gdp_proportion value = global.total_gdp }
+
+        set_variable = { current_int = people_tax_qaq }
+        divide_variable = { current_int = 2 }
+        round_variable = current_int
     }
 }
 build_base_test = {
