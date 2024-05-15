@@ -40,6 +40,16 @@ ideas = {
 			}
 		}
 	}
+		country = {
+			AOX_HRE_9_idea = {
+				picture = Part_Habsburgs
+				modifier = {
+					army_attack_factor = 0.05
+					breakthrough_factor = 0.05
+					training_time_army_factor = -0.10
+				}
+			}
+		}
 	country = {
 		aus_pre_armys = {
 			picture = pre_armys
@@ -58,6 +68,29 @@ ideas = {
 				war_support_factor = 0.10 
 				army_morale_factor = 0.1
 				political_power_cost = -0.5
+			}
+		}
+	}
+	country = {
+		aus_constitutional_monarch_idea = {
+			picture = imperial_glory
+			modifier = {
+				stability_factor = 0.05
+				political_power_cost = -0.1
+			}
+		}
+	}
+	country = {
+		aus_imperial_glory_2 = {
+			picture = imperial_glory
+			modifier = {
+				stability_factor = 0.4
+				war_support_factor = 0.4 
+				army_morale_factor = 0.25
+				political_power_cost = -0.5
+				army_attack_factor = 0.1
+				breakthrough_factor = 0.1
+				training_time_army_factor = -0.10
 			}
 		}
 	}

@@ -798,11 +798,11 @@ focus_tree = {
 			}
 			aushun_clamp_vars = yes
 			custom_effect_tooltip = less_hun_aus_hun_sup_40
-				add_to_variable = {
-					var = AOX.aus_hun_gov_sup^1
-					value = -40
-				}
-				aushun_clamp_vars = yes	
+			add_to_variable = {
+				var = AOX.aus_hun_gov_sup^1
+				value = -40
+			}
+			aushun_clamp_vars = yes	
 		}
 		available = {
 			not_bosnia_war_tri = yes
@@ -1830,6 +1830,8 @@ bosnia_war_end = yes
 			focus = AUS_german_9
 		}
 		completion_reward = {
+			add_political_power = 60
+			add_stability = 0.1
 		}
 	}
 	focus = {
@@ -1917,7 +1919,10 @@ bosnia_war_end = yes
 		x = 14
 		y = 6
 		allow_branch={ 
-			has_completed_focus = AUS_ger_20
+			OR = {
+				# always = yes
+				has_completed_focus = AUS_ger_20
+			}
 		}
 		mutually_exclusive = {
 			focus = AUS_german_0
@@ -2068,6 +2073,7 @@ bosnia_war_end = yes
 			focus = AUS_HRE_6
 		}
 		completion_reward = {
+			add_war_support = 0.2
 		}
 	}
 	focus = {
@@ -2083,6 +2089,11 @@ bosnia_war_end = yes
 			focus = AUS_HRE_6
 		}
 		completion_reward = {
+			add_popularity = {
+				ideology = Conservatism
+				popularity = 0.1
+			}
+			add_stability = 0.1
 		}
 	}
 	focus = {
@@ -2098,6 +2109,11 @@ bosnia_war_end = yes
 			focus = AUS_HRE_8
 		}
 		completion_reward = {
+			add_war_support = 0.1
+			add_timed_idea = {
+				idea = AOX_HRE_9_idea
+				days = 365
+			}
 		}
 	}
 	focus = {
@@ -2258,6 +2274,11 @@ bosnia_war_end = yes
 			focus = AUS_HRE_13
 		}
 		completion_reward = {
+			add_political_power = 100
+			swap_ideas = {
+				remove_idea = aus_imperial_glory
+				add_idea = aus_imperial_glory_2
+			}
 		}
 	}
 	focus = {
@@ -2275,7 +2296,7 @@ bosnia_war_end = yes
 		mutually_exclusive = {
 		}
 		completion_reward = {
-			add_political_power = 400
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -2371,10 +2392,10 @@ bosnia_war_end = yes
 		mutually_exclusive = {
 		}
 		completion_reward = {
-			#swap_ideas = {
-				#remove_idea = No_labor_laws
-				#add_idea = Deflection_workers
-			#}
+			swap_ideas = {
+				remove_idea = No_labor_laws
+				add_idea = Trade_union_neutrality
+			}
 		}
 	}
 	focus = {
@@ -2389,12 +2410,19 @@ bosnia_war_end = yes
 		prerequisite = {
 			focus = AUS_reform_4
 		}
+		prerequisite = {
+			focus = AUS_reform_5
+		}
 		allow_branch={ 
 		}
 		mutually_exclusive = {
 		}
 		completion_reward = {
-			
+			add_political_power = -100
+			swap_ideas = {
+				remove_idea = Trade_union_neutrality
+				add_idea = Local_trade_unions
+			}
 		}
 	}
 	focus = {
@@ -2408,6 +2436,9 @@ bosnia_war_end = yes
 		}
 		prerequisite = {
 			focus = AUS_reform_5
+		}
+		prerequisite = {
+			focus = AUS_reform_3
 		}
 		allow_branch={ 
 		}
@@ -2428,7 +2459,7 @@ bosnia_war_end = yes
 		y = 6
 		allow_branch={ 
 			OR = {
-				always = yes
+				# always = yes
 				AND = {
 					has_completed_focus = AUS_bir_15
 					bosnia_war_end_tri_tool = yes
@@ -2499,7 +2530,7 @@ bosnia_war_end = yes
 	focus = {
 		id = AUS_federation_8
 		icon = GFX_goal_unkown
-		cost = 5.00
+		cost = 3.00
 		x = -2
 		y = 1
 		relative_position_id = AUS_federation_7
@@ -2509,13 +2540,37 @@ bosnia_war_end = yes
 		available = {
 		}
 		completion_reward = {
-
+			add_political_power = -30
+			custom_effect_tooltip = less_hun_aus_hun_sup_40
+			add_to_variable = {
+				var = AOX.aus_hun_gov_sup^1
+				value = -40
+			}
+			aushun_clamp_vars = yes	
+			custom_effect_tooltip = more_cro_aus_hun_sup_30
+			add_to_variable = {
+				var = AOX.aus_hun_gov_sup^8
+				value = 30
+			}
+			aushun_clamp_vars = yes
+			custom_effect_tooltip = more_slo_aus_hun_sup_30
+			add_to_variable = {
+				var = AOX.aus_hun_gov_sup^5
+				value = 30
+			}
+			aushun_clamp_vars = yes
+			custom_effect_tooltip = more_rom_aus_hun_sup_30
+			add_to_variable = {
+				var = AOX.aus_hun_gov_sup^6
+				value = 30
+			}
+			aushun_clamp_vars = yes
 		}
 	}
 	focus = {
 		id = AUS_federation_9
 		icon = GFX_goal_unkown
-		cost = 5.00
+		cost = 3.00
 		x = 0
 		y = 1
 		relative_position_id = AUS_federation_7
@@ -2543,7 +2598,7 @@ bosnia_war_end = yes
 	focus = {
 		id = AUS_federation_10
 		icon = GFX_goal_unkown
-		cost = 5.00
+		cost = 3.00
 		x = 2
 		y = 1
 		relative_position_id = AUS_federation_7
@@ -2572,6 +2627,7 @@ bosnia_war_end = yes
 				value = 30
 			}
 			aushun_clamp_vars = yes
+        	add_stability = 0.05
 		}
 	}
 	focus = {
@@ -2607,6 +2663,7 @@ bosnia_war_end = yes
 				var = AOX.aus_hun_egree^3
 				value = -30
 			}
+			aushun_clamp_vars = yes
 			9 = { change_culture_to_49 = yes }
 			75 = { change_culture_to_49 = yes }
 			custom_effect_tooltip = AUS_federation_11_tool
@@ -2628,13 +2685,35 @@ bosnia_war_end = yes
 		available = {
 		}
 		completion_reward = {
-
+        	add_stability = -0.05
+			custom_effect_tooltip = less_hun_aus_hun_sup_20
+			add_to_variable = {
+				var = AOX.aus_hun_gov_sup^1
+				value = -20
+			}
+			aushun_clamp_vars = yes	
+			custom_effect_tooltip = less_hun_aus_hun_aut_30
+			add_to_variable = {
+				var = AOX.aus_hun_egree^1
+				value = -30
+			}
+			custom_effect_tooltip = less_slo_aus_hun_aut_30
+			add_to_variable = {
+				var = AOX.aus_hun_egree^5
+				value = -30
+			}
+			custom_effect_tooltip = less_rom_aus_hun_aut_30
+			add_to_variable = {
+				var = AOX.aus_hun_egree^6
+				value = -30
+			}
+			aushun_clamp_vars = yes
 		}
 	}
 	focus = {
 		id = AUS_federation_13
 		icon = GFX_goal_unkown
-		cost = 5.00
+		cost = 2.00
 		x = -1
 		y = 1
 		relative_position_id = AUS_federation_11
@@ -2647,7 +2726,7 @@ bosnia_war_end = yes
 		available = {
 		}
 		completion_reward = {
-
+			get_less_aus_hun_every_aut_20 = yes
 		}
 	}
 	focus = {
@@ -2661,9 +2740,32 @@ bosnia_war_end = yes
 			focus = AUS_federation_12
 		}
 		available = {
+			 custom_trigger_tooltip = { 
+        		tooltip = more_than_10_cash_tool
+				check_variable = { new_nat_tre > 10 }
+			 }
 		}
 		completion_reward = {
-
+			custom_effect_tooltip = del_10_cash_eff
+			subtract_from_variable =  { new_nat_tre = 10 }
+			every_state = {
+				limit = {
+					var:owner = {
+						OR = {
+							tag = AOX
+							has_idea = Part_of_Habsburgs
+						}
+					}
+					OR = {
+						has_state_category = rural
+						has_state_category = town
+					}
+				}
+				custom_effect_tooltip = AUS_federation_14_eff
+				add_to_variable = {  
+					state_cash_tot = 0.5
+				}
+			}
 		}
 	}
 	focus = {
@@ -2677,9 +2779,35 @@ bosnia_war_end = yes
 			focus = AUS_federation_11
 		}
 		available = {
+			 custom_trigger_tooltip = { 
+        		tooltip = more_than_10_cash_tool
+				check_variable = { new_nat_tre > 10 }
+			 }
 		}
 		completion_reward = {
-
+			custom_effect_tooltip = del_10_cash_eff
+			subtract_from_variable =  { new_nat_tre = 10 }
+			every_state = {
+				limit = {
+					var:owner = {
+						OR = {
+							tag = AOX
+							has_idea = Part_of_Habsburgs
+						}
+					}
+					OR = {
+						has_state_category = city
+						has_state_category = large_city
+						has_state_category = metropolis
+						has_state_category = megalopolis
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				custom_effect_tooltip = AUS_federation_15_eff
+				add_to_variable = {  
+					state_cash_tot = 0.2
+				}
+			}
 		}
 	}
 	focus = {
@@ -2704,6 +2832,17 @@ bosnia_war_end = yes
 			remove_ideas = {
 				AOX_Hungarian_independence_movement
 			}
+			custom_effect_tooltip = less_hun_aus_hun_aut_20
+			add_to_variable = {
+				var = AOX.aus_hun_egree^1
+				value = -20
+			}
+			custom_effect_tooltip = more_hun_aus_hun_sup_20
+			add_to_variable = {
+				var = AOX.aus_hun_gov_sup^1
+				value = 20
+			}
+			aushun_clamp_vars = yes	
 		}
 	}
 	focus = {
@@ -2719,7 +2858,18 @@ bosnia_war_end = yes
 		available = {
 		}
 		completion_reward = {
-
+			add_popularity = {
+				ideology = Conservatism
+				popularity = -0.4
+			}
+			add_popularity = {
+				ideology = Reformism
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = Liberalism
+				popularity = 0.2
+			}
 		}
 	}
 	focus = {
@@ -2735,7 +2885,10 @@ bosnia_war_end = yes
 		available = {
 		}
 		completion_reward = {
-
+			swap_ideas = {
+				remove_idea = Control_media
+				add_idea = Media_control
+			}
 		}
 	}
 	focus = {
@@ -2751,7 +2904,11 @@ bosnia_war_end = yes
 		available = {
 		}
 		completion_reward = {
-
+			add_political_power = -100
+			swap_ideas = {
+				remove_idea = Media_control
+				add_idea = Freedom_press
+			}
 		}
 	}
 	focus = {
@@ -2767,7 +2924,9 @@ bosnia_war_end = yes
 		available = {
 		}
 		completion_reward = {
-
+			add_political_power = -50
+			add_stability = -0.2
+			get_more_aus_hun_every_sup_5 = yes
 		}
 	}
 	focus = {
@@ -2783,7 +2942,8 @@ bosnia_war_end = yes
 		available = {
 		}
 		completion_reward = {
-
+			add_political_power = -50
+			get_more_aus_hun_every_sup_5 = yes
 		}
 	}
 	focus = {
@@ -2802,7 +2962,7 @@ bosnia_war_end = yes
 		available = {
 		}
 		completion_reward = {
-
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -2821,7 +2981,10 @@ bosnia_war_end = yes
 		available = {
 		}
 		completion_reward = {
-
+			add_popularity = {
+				ideology = Reformism
+				popularity = 0.3
+			}
 		}
 	}
 	focus = {
@@ -2840,7 +3003,10 @@ bosnia_war_end = yes
 		available = {
 		}
 		completion_reward = {
-
+			add_popularity = {
+				ideology = Liberalism
+				popularity = 0.3
+			}
 		}
 	}
 	focus = {
@@ -2857,7 +3023,28 @@ bosnia_war_end = yes
 		available = {
 		}
 		completion_reward = {
-
+			add_ideas = aus_constitutional_monarch_idea
+			if = {
+				limit = {
+					check_variable = { 
+						party_popularity@Liberalism > party_popularity@Reformism
+					}
+				}
+				set_politics = {
+					ruling_party = Liberalism
+					last_election = "1918.11.11"
+					election_frequency = 72
+					elections_allowed = yes
+				}
+			}
+			else = {
+				set_politics = {
+					ruling_party = Reformism
+					last_election = "1918.11.11"
+					election_frequency = 72
+					elections_allowed = yes
+				}
+			}
 		}
 	}
 	focus = {
