@@ -1,5 +1,11 @@
 spriteTypes = {
 	spriteType = {
+	    name = "GFX_SBY_focus10_icon"
+	    texturefile = "gfx/interface/ideas/SBY_focus10_dy.dds"
+    }
+
+
+	spriteType = {
 	    name = "GFX_idea_Food_shortages"
 	    texturefile = "gfx/interface/ideas/Food_shortages.dds"
     }
@@ -53,7 +59,6 @@ spriteTypes = {
 	    name = "GFX_idea_Guerrilla_strongholds"
 	    texturefile = "gfx/interface/ideas/Guerrilla_strongholds.dds"
     }
-	NPL_National_contradictions
 	spriteType = {
 	    name = "GFX_idea_Brittany_National_autonomy"
 	    texturefile = "gfx/interface/ideas/Brittany_National_autonomy.dds"
@@ -206,6 +211,11 @@ spriteTypes = {
 	    name = "GFX_idea_Deutscher_Zollverein"
 	    texturefile = "gfx/interface/ideas/Deutscher_Zollverein.dds"
     }
+	spriteType = {
+	    name = "GFX_idea_Irregular_military_forces"
+	    texturefile = "gfx/interface/ideas/Irregular_military_forces.dds"
+    }
+	
 	spriteType = {
 	    name = "GFX_idea_Deutscher_Bund"
 	    texturefile = "gfx/interface/ideas/Deutscher_Bund.dds"
