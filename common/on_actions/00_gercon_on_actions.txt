@@ -2,6 +2,18 @@ on_actions = {
 	on_startup= {
 		effect = {
             set_variable = {
+                global.new_ger_con_enable_qwq = 0
+            }
+            set_variable = {
+                global.westphalia_end = 0
+            }
+            set_variable = {
+                DOH.westphalia_qwq = 0
+            }
+            set_variable = {
+                DOL.westphalia_qwq = 0
+            }
+            set_variable = {
                 global.ger_con_end = 0
             }
             set_variable = {

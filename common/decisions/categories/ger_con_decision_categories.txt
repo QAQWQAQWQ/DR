@@ -25,6 +25,46 @@ ger_con_decisions = {
 	} 
 	visible_when_empty = yes
 }
+new_ger_con_decisions = {
+	priority = 9
+	icon = generic_research
+	visible = {
+		check_variable = { global.new_ger_con_enable_qwq = 1 }
+		OR = {
+			original_tag = AOX
+			original_tag = WWS
+			original_tag = AGC
+			original_tag = LSB
+			original_tag = DHD
+			original_tag = DON
+			original_tag = DOF
+			original_tag = DOB
+			original_tag = DOR
+			original_tag = BXM
+			original_tag = DOL
+			original_tag = DOH
+			original_tag = DOA
+			original_tag = DOM
+			original_tag = DOS
+		}
+	} 
+	visible_when_empty = yes
+}
+westphalia_decisions = {
+	priority = 8
+	icon = generic_research
+	visible = {
+		check_variable = { global.new_ger_con_enable_qwq = 1 }
+		check_variable = { global.westphalia_end = 0 }
+		AOX = { has_completed_focus = AUS_confederation_2 }
+		OR = {
+			original_tag = AOX
+			original_tag = DOL
+			original_tag = DOH
+		}
+	} 
+	visible_when_empty = yes
+}
 ger_con_fra_def = {
 	priority = 8
 	icon = generic_research
