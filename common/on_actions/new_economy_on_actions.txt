@@ -22,12 +22,12 @@ on_actions = {
             #high 100%
             set_variable = { global.high_wages = 0.85 }
             set_variable = { global.high_wages_factor = 1 }
-            #a new ind (we need 10 B to build a new factory )
+            #a new ind (we need 6 B to build a new factory )
             set_variable = {
-                global.a_new_ind_cost = 10
+                global.a_new_ind_cost = 6
             }
             set_variable = {
-                global.sell_a_ind = 8
+                global.sell_a_ind = 2
             }
             #ind worker
             set_variable = {
