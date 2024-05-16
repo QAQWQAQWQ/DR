@@ -28,6 +28,7 @@ ger_con_decisions = {
 new_ger_con_decisions = {
 	priority = 9
 	icon = generic_research
+	scripted_gui = new_ger_con_decisons_ui
 	visible = {
 		check_variable = { global.new_ger_con_enable_qwq = 1 }
 		OR = {
@@ -46,6 +47,13 @@ new_ger_con_decisions = {
 			original_tag = DOA
 			original_tag = DOM
 			original_tag = DOS
+			original_tag = SAA
+			original_tag = SAB
+			original_tag = SAC
+			original_tag = SAD
+			original_tag = SAE
+			original_tag = SAF
+			original_tag = SAG
 		}
 	} 
 	visible_when_empty = yes
@@ -56,7 +64,6 @@ westphalia_decisions = {
 	visible = {
 		check_variable = { global.new_ger_con_enable_qwq = 1 }
 		check_variable = { global.westphalia_end = 0 }
-		AOX = { has_completed_focus = AUS_confederation_2 }
 		OR = {
 			original_tag = AOX
 			original_tag = DOL

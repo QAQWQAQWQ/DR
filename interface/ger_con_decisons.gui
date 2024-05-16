@@ -3,6 +3,11 @@ guiTypes = {
 		name = "new_ger_con_decisons_ui_window"
 		position = { x = 0 y = 0 }
 		size = { width = 510 height= 350 }
+		background = {
+			name = "ger_con_background"
+			spriteType = "GFX_ger_con_bg"
+			position = { x = 5 y = 0 }
+		}
 	}
 	containerWindowType = {
 		name = "ger_con_decisons_ui_window"

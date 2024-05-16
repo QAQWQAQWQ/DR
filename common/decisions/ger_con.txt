@@ -368,12 +368,16 @@ ger_con_decisions = {
 		icon = generic_civil_support
 
 		available = {
-		  check_variable = { global.ger_con_has_uni = 1 }
+      OR = {
+		    check_variable = { global.ger_con_has_uni = 1 }
+		    check_variable = { global.ger_con_end = 1 }
+      }
     }
 
 		days_mission_timeout = 50
-
 		activation = {
+      check_variable = { global.ger_con_has_uni = 0 }
+      check_variable = { global.ger_con_end = 0 }
       OR = {
         original_tag = AGC
         original_tag = LSB
@@ -392,6 +396,8 @@ ger_con_decisions = {
 		}
 
 		visible = {
+      check_variable = { global.ger_con_has_uni = 0 }
+      check_variable = { global.ger_con_end = 0 }
       OR = {
         original_tag = AGC
         original_tag = LSB
@@ -529,6 +535,8 @@ ger_con_decisions = {
       952 = { add_core_of = ROOT } 
       DMW = { country_event = ger_con.8 }
       WWS = { set_cosmetic_tag = WWS_German_Empire }
+
+      puppet = DSX
     }
     remove_effect = {
     }
@@ -647,6 +655,8 @@ ger_con_decisions = {
 				}
         # AOX = { country_event = { id = austria.12 days = 10 } }
       }
+      
+      puppet = DSX
     }
     remove_effect = {
     }
