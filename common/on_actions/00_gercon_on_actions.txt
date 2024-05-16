@@ -4,15 +4,23 @@ on_actions = {
             set_variable = {
                 global.new_ger_con_enable_qwq = 0
             }
-            set_variable = {
-                global.westphalia_end = 0
-            }
-            set_variable = {
-                DOH.westphalia_qwq = 0
-            }
-            set_variable = {
-                DOL.westphalia_qwq = 0
-            }
+            set_variable = { global.westphalia_end = 0 }
+            set_variable = { DOH.westphalia_qwq = 0 }
+            set_variable = { DOL.westphalia_qwq = 0 }
+            set_variable = { global.southern_germany_end = 0 }
+            set_variable = { AOX.southern_germany_qwq = 10 }
+            set_variable = { DOR.southern_germany_qwq = 0 }
+            set_variable = { DOB.southern_germany_qwq = 0 }
+            set_variable = { DOF.southern_germany_qwq = 0 }
+            set_variable = { global.sax_thu_end  = 0 }
+            set_variable = { SAA.sax_thu_qwq = 0 }
+            set_variable = { SAB.sax_thu_qwq = 0 }
+            set_variable = { SAC.sax_thu_qwq = 0 }
+            set_variable = { SAD.sax_thu_qwq = 0 }
+            set_variable = { SAE.sax_thu_qwq = 0 }
+            set_variable = { SAF.sax_thu_qwq = 0 }
+            set_variable = { SAG.sax_thu_qwq = 0 }
+            set_variable = { DOS.sax_thu_meg = 0 }
             set_variable = {
                 global.ger_con_end = 0
             }
@@ -252,6 +260,8 @@ on_actions = {
                 DOS = { transfer_state = 1028 }
                 85 = { add_core_of = AGC }
                 AGC = { transfer_state = 85 }
+                1013 = { add_core_of = DOF }
+                DOF = { transfer_state = 1013 }
                 AOX = {
                 #    set_autonomy = { target = WWS autonomy_state = autonomy_puppet }
                     transfer_state = 66

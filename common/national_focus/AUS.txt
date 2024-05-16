@@ -3614,7 +3614,7 @@ bosnia_war_end = yes
 			}
 		}
 		completion_reward = {
-			add_political_power = 50
+			custom_effect_tooltip = new_ger_con_eff
 			set_variable = { global.new_ger_con_enable_qwq = 1 }
 			set_variable = { global.ger_con_end = 1 }
 		}
@@ -3632,6 +3632,7 @@ bosnia_war_end = yes
 		available = {
 		}
 		completion_reward = {
+			add_political_power = 150
 		}
 	}
 	focus = {

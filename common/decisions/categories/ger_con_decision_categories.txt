@@ -65,6 +65,40 @@ westphalia_decisions = {
 	} 
 	visible_when_empty = yes
 }
+southern_germany_decisions = {
+	priority = 9
+	icon = generic_research
+	visible = {
+		check_variable = { global.new_ger_con_enable_qwq = 1 }
+		check_variable = { global.southern_germany_end = 0 }
+		OR = {
+			original_tag = AOX
+			original_tag = DOR
+			original_tag = DOB
+			original_tag = DOF
+		}
+	} 
+	visible_when_empty = yes
+}
+sax_thu_decisions = {
+	priority = 9
+	icon = generic_research
+	visible = {
+		check_variable = { global.new_ger_con_enable_qwq = 1 }
+		check_variable = { global.sax_thu_end = 0 }
+		OR = {
+			original_tag = AOX
+			original_tag = DOS
+			original_tag = SAA
+			original_tag = SAB
+			original_tag = SAC
+			original_tag = SAD
+			original_tag = SAF
+			original_tag = SAG
+		}
+	} 
+	visible_when_empty = yes
+}
 ger_con_fra_def = {
 	priority = 8
 	icon = generic_research
