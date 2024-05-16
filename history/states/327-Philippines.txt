@@ -9,7 +9,8 @@ state=
 	state_category = town
 	history=
 	{
-		owner = PHL
+		owner = SBY
+		add_core_of = PHL
 		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 1

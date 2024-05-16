@@ -1,5 +1,13 @@
 
 
+SBY_focus10_dy = {
+	enable = { always = yes }
+	icon = SBY_focus10_icon
+
+	local_non_core_manpower=0.01
+	production_speed_buildings_factor=0.1
+	
+}
 
 
 FRW_still_attack = {

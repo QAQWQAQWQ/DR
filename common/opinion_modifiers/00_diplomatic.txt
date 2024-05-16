@@ -8,7 +8,10 @@ opinion_modifiers = {
 		trade = yes
 		value = -40
 	}
-	
+	Trade_friend = {
+		trade = yes
+		value = 20
+	}
 	our_liberators = {
 		value = 40
 		months = 18
