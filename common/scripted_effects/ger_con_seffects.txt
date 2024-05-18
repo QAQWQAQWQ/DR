@@ -213,3 +213,45 @@ gercon_del_pre_sup = {
 		custom_effect_tooltip = gercon_del_pre_sup_eff
 	}
 }
+ger_con_clmap_array = {
+	clear_array = global.ger_con_new_array
+	every_country = {
+		limit = {
+			check_variable = { has_gercon_set = 1 }
+		}
+		add_to_array = { global.ger_con_new_array = THIS }
+	}
+}
+build_ger_con_seats = {
+	
+                set_variable = { AOX.ger_con_seat = 36 }# 2 is westphalia
+                set_variable = { AOX.has_gercon_set = 1 }
+                set_variable = { WWS.ger_con_seat = 12 }
+                set_variable = { WWS.has_gercon_set = 1 }
+                set_variable = { DHD.ger_con_seat = 5 }
+                set_variable = { DHD.has_gercon_set = 1 }
+                set_variable = { DON.ger_con_seat = 2 }
+                set_variable = { DON.has_gercon_set = 1 }
+                set_variable = { DOF.ger_con_seat = 3 }
+                set_variable = { DOF.has_gercon_set = 1 }
+                set_variable = { DOB.ger_con_seat = 3 }
+                set_variable = { DOB.has_gercon_set = 1 }
+                set_variable = { DOR.ger_con_seat = 10 }
+                set_variable = { DOR.has_gercon_set = 1 }
+                set_variable = { DOL.ger_con_seat = 6 }
+                set_variable = { DOL.has_gercon_set = 1 }
+                set_variable = { DOH.ger_con_seat = 6 }
+                set_variable = { DOH.has_gercon_set = 1 }
+                set_variable = { DOA.ger_con_seat = 1 }
+                set_variable = { DOA.has_gercon_set = 1 }
+                set_variable = { DOM.ger_con_seat = 1 }
+                set_variable = { DOM.has_gercon_set = 1 }
+                set_variable = { DOS.ger_con_seat = 9 }# 4 from thuringen
+                set_variable = { DOS.has_gercon_set = 1 }
+                set_variable = { LSB.ger_con_seat = 3 }
+                set_variable = { LSB.has_gercon_set = 1 }
+                set_variable = { DMW.ger_con_seat = 3 }# 2 holstein 1 schleswig
+                set_variable = { DMW.has_gercon_set = 1 }
+
+                AOX = { ger_con_clmap_array = yes }
+}

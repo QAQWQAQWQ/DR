@@ -678,5 +678,14 @@ scripted_gui = {
 	new_ger_con_decisons_ui = {
 		context_type = decision_category
 		window_name = "new_ger_con_decisons_ui_window"
+		dynamic_lists = {
+			gercon_grid = {
+				array = global.ger_con_new_array
+				index = i
+				value = v
+				change_scope = yes
+				entry_container = gercon_entry
+			}
+		}
 	}
 }

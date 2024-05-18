@@ -1,6 +1,9 @@
 on_actions = {
 	on_startup= {
 		effect = {
+            AOX = { 
+                build_ger_con_seats = yes
+            }
             set_variable = {
                 global.new_ger_con_enable_qwq = 0
             }

@@ -1569,6 +1569,7 @@ bosnia_war_end = yes
 				add_state_core = 942
 			}
 			BXM={
+				set_cosmetic_tag = CZE_color
 				set_politics = {
 					ruling_party = Liberalism
 				}
@@ -1600,6 +1601,7 @@ bosnia_war_end = yes
 		}
 		completion_reward = {
 			BXM={
+				set_cosmetic_tag = CZE_color
 				set_politics = {
 					ruling_party = Liberalism
 				}
@@ -1625,6 +1627,7 @@ bosnia_war_end = yes
 		}
 		completion_reward = {
 			KGL={
+				set_cosmetic_tag = POL_color
 				set_politics = {
 					ruling_party = Liberalism
 				}
@@ -1650,6 +1653,7 @@ bosnia_war_end = yes
 		}
 		completion_reward = {
 			DMT={
+				set_cosmetic_tag = CRO_color
 				set_politics = {
 					ruling_party = Liberalism
 				}
@@ -1684,7 +1688,8 @@ bosnia_war_end = yes
 			}
 		}
 		completion_reward = {
-			HUN={
+			KOH={
+				set_cosmetic_tag = KOH_color
 				set_politics = {
 					ruling_party = Liberalism
 				}
@@ -1706,7 +1711,8 @@ bosnia_war_end = yes
 			focus = AUS_german_1
 		}
 		completion_reward = {
-			HUN={
+			KOH={
+				set_cosmetic_tag = KOH_color
 				set_politics = {
 					ruling_party = Liberalism
 				}
@@ -1753,6 +1759,8 @@ bosnia_war_end = yes
 				DMT={
 					transfer_state = 918
 					add_state_core = 918
+					transfer_state = 1018
+					add_state_core = 1018
 				}
 				AOX = {
 					set_autonomy = { target = TRA autonomy_state = autonomy_Crown_Territory }
@@ -1763,6 +1771,7 @@ bosnia_war_end = yes
 				}
 			}
 			SLO = {
+				set_cosmetic_tag = SLO_color
 				set_politics = {
 					ruling_party = Conservatism
 				}
@@ -1770,6 +1779,7 @@ bosnia_war_end = yes
 				add_ideas = { AOX_Before_Part_Habsburgs }
 			}
 			TRA = {
+				set_cosmetic_tag = TRA_color
 				set_politics = {
 					ruling_party = Conservatism
 				}
@@ -1791,6 +1801,7 @@ bosnia_war_end = yes
 		}
 		completion_reward = {
 			VCT={
+				set_cosmetic_tag = VCT_color
 				set_politics = {
 					ruling_party = Liberalism
 				}

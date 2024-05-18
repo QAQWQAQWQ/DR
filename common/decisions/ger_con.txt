@@ -699,10 +699,16 @@ ger_con_decisions = {
     }
     remove_effect = {
       AOX = { declare_war_on = { target = WWS type = annex_everything } }
-      hidden_effect={every_country = {  NOT={
-        original_tag=AOX
-        original_tag=WWS
-      }news_event = ger_con.3 }}
+      hidden_effect={
+            every_country = {
+              limit = { 
+              NOT={
+                original_tag=AOX
+                original_tag=WWS
+              }}
+          news_event = ger_con.3 
+        }
+      }
       
     }
   }
@@ -740,12 +746,15 @@ ger_con_decisions = {
     }
     remove_effect = {
       WWS = { declare_war_on = { target = AOX type = annex_everything } }
-      hidden_effect={every_country = { 
-        NOT={
-          original_tag=AOX
-          original_tag=WWS
+      hidden_effect={
+            every_country = {
+              limit = { 
+              NOT={
+                original_tag=AOX
+                original_tag=WWS
+              }}
+          news_event = ger_con.3 
         }
-        news_event = ger_con.3 }
       }
       
     }
@@ -1112,8 +1121,285 @@ ger_con_fra_def = {
 new_ger_con_decisions = {
 }
 westphalia_decisions = {
+  meg_westphalia = {
+    ai_will_do = {
+      factor = 100
+    }
+    visible = {
+        OR ={
+          original_tag = DOL
+          original_tag = DOH
+        }
+        check_variable = { global.westphalia_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = ger_con_to_100_trigger
+        check_variable = { ROOT.westphalia_qwq > 99 }
+      }
+    }
+    cost = 0
+    fire_only_once = no
+    days_remove = 0
+    complete_effect = {
+      57 = { add_core_of = ROOT }
+      940 = { add_core_of = ROOT }
+      ROOT = { 
+        transfer_state = 57 
+        transfer_state = 940
+      }
+      custom_effect_tooltip = ger_con_meg_wes_tool
+      add_to_variable = { ROOT.ger_con_seat = 2 }
+      add_to_variable = { AOX.ger_con_seat = -2 }
+      set_variable = { global.westphalia_end = 1 }
+    }
+    remove_effect = {
+    }
+  }
+  aus_westphalia = {
+		icon = generic_civil_support
+		available = {
+      custom_trigger_tooltip = {
+        tooltip = westphalia_end_trigger
+        check_variable = { global.westphalia_end = 1 }
+      }
+		}
+	  days_mission_timeout = 320
+		activation = {
+      check_variable = { global.new_ger_con_enable_qwq = 1 }
+      check_variable = { global.westphalia_end = 0 }
+      OR = {
+        original_tag = AOX
+        original_tag = DOL
+        original_tag = DOH
+      }
+		}
+		visible = {
+      check_variable = { global.new_ger_con_enable_qwq = 1 }
+      check_variable = { global.westphalia_end = 0 }
+      OR = {
+        original_tag = AOX
+        original_tag = DOL
+        original_tag = DOH
+      }
+		}		
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+		timeout_effect = {
+      set_variable = { global.westphalia_end = 1 }
+      custom_effect_tooltip = aus_westphalia_eff
+      if = {
+        limit = {
+          tag = AOX
+        }
+        hidden_effect = {
+          57 = { add_core_of = DOH }
+          940 = { add_core_of = DOL }
+          DOH = { transfer_state = 57 }
+          DOL = { transfer_state = 940 }
+          # add_to_variable = { AOX.ger_con_seat = -2 }
+        }
+      }
+    }
+  }
 }
 southern_germany_decisions = {
+  southern_germany_uni = {
+    ai_will_do = {
+      factor = 100
+    }
+    visible = {
+        OR ={
+          original_tag = DOR
+          original_tag = DOF
+          original_tag = DOB
+        }
+        check_variable = { global.southern_germany_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = ger_con_to_100_trigger
+        check_variable = { ROOT.southern_germany_qwq > 99 }
+      }
+    }
+    cost = 0
+    fire_only_once = no
+    days_remove = 0
+    complete_effect = {
+      every_country = { 
+        limit = {
+          OR ={
+            original_tag = DOR
+            original_tag = DOF
+            original_tag = DOB
+          }
+          NOT = {
+            tag = ROOT
+          }
+        }
+        set_variable = { THIS.has_gercon_set = 0 }
+        add_to_variable = { ROOT.ger_con_seat = THIS.ger_con_seat }
+        ROOT = { annex_country = { target = PREV transfer_troops = yes } }
+      }
+      ger_con_clmap_array = yes
+      every_state = {
+        limit = {
+          OR = {
+            is_core_of = DOR
+            is_core_of = DOF
+            is_core_of = DOB
+          }
+        }
+        add_core_of = ROOT
+      }
+      set_cosmetic_tag = SGF
+      set_variable = { global.southern_germany_end = 1 }
+    }
+  }
+  aus_southern_germany_uni = {
+    ai_will_do = {
+      factor = 100
+    }
+    visible = {
+        OR ={
+          original_tag = AOX
+        }
+        check_variable = { global.southern_germany_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = ger_con_to_100_trigger
+        check_variable = { ROOT.southern_germany_qwq > 99 }
+      }
+    }
+    cost = 0
+    fire_only_once = no
+    days_remove = 0
+    complete_effect = {
+      AOX = {
+        country_event = austria.19
+      }
+      set_variable = { global.southern_germany_end = 1 }
+    }
+  }
 }
 sax_thu_decisions = {
+  sax_meg_thu = {
+    ai_will_do = {
+      factor = 100
+    }
+    visible = {
+        OR ={
+          original_tag = DOS
+        }
+        check_variable = { global.sax_thu_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = ger_con_meg_to_100_trigger
+        check_variable = { DOS.sax_thu_meg > 99 }
+      }
+    }
+    cost = 0
+    fire_only_once = no
+    days_remove = 0
+    complete_effect = {
+      every_country = { 
+        limit = {
+          OR ={
+            original_tag = SAA
+            original_tag = SAB
+            original_tag = SAC
+            original_tag = SAD
+            original_tag = SAE
+            original_tag = SAF
+            original_tag = SAG
+          }
+        }
+        DOS = { annex_country = { target = PREV transfer_troops = yes } }
+      }
+      every_state = {
+        limit = {
+          OR = {
+            is_core_of = SAA
+            is_core_of = SAB
+            is_core_of = SAC
+            is_core_of = SAD
+            is_core_of = SAE
+            is_core_of = SAF
+            is_core_of = SAG
+          }
+        }
+        add_core_of = DOS
+      }
+      set_variable = { global.sax_thu_end = 1 }
+    }
+  }
+  thu_uni = {
+    ai_will_do = {
+      factor = 100
+    }
+    visible = {
+        OR ={
+            original_tag = SAA
+            original_tag = SAB
+            original_tag = SAC
+            original_tag = SAD
+            original_tag = SAE
+            original_tag = SAF
+            original_tag = SAG
+        }
+        check_variable = { global.sax_thu_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = ger_con_to_100_trigger
+        check_variable = { ROOT.sax_thu_qwq > 99 }
+      }
+    }
+    cost = 0
+    fire_only_once = no
+    days_remove = 0
+    complete_effect = {
+      every_country = { 
+        limit = {
+          OR ={
+            original_tag = SAA
+            original_tag = SAB
+            original_tag = SAC
+            original_tag = SAD
+            original_tag = SAE
+            original_tag = SAF
+            original_tag = SAG
+          }
+          NOT = {
+            tag = ROOT
+          }
+        }
+        ROOT = { annex_country = { target = PREV transfer_troops = yes } }
+      }
+      custom_effect_tooltip = ger_con_thu_uni_tool
+      set_variable = { ROOT.has_gercon_set = 1 }
+      set_variable = { ROOT.ger_con_seat = 4 }
+      add_to_variable = { DOS.ger_con_seat = -4 }
+      ger_con_clmap_array = yes
+      every_state = {
+        limit = {
+          OR = {
+            is_core_of = SAA
+            is_core_of = SAB
+            is_core_of = SAC
+            is_core_of = SAD
+            is_core_of = SAE
+            is_core_of = SAF
+            is_core_of = SAG
+          }
+        }
+        add_core_of = ROOT
+      }
+      set_cosmetic_tag = thuringen
+      set_variable = { global.sax_thu_end = 1 }
+    }
+  }
 }

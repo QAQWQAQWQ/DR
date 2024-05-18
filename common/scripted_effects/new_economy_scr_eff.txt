@@ -1196,8 +1196,8 @@ monthly_we_do = {
         set_variable = { cash_upd_qwq = before_large_of_market }
         subtract_from_variable = { cash_upd_qwq = large_of_market }
         divide_variable = { cash_upd_qwq = cash_upd }
-        multiply_variable = { cash_upd_qwq = 0.1 }
-        add_to_variable = { cash_upd_qwq = 0.95 }
+        multiply_variable = { cash_upd_qwq = 0.05 }
+        add_to_variable = { cash_upd_qwq = 1 }
         every_controlled_state = {
             multiply_variable = { state_cash_tot = PREV.cash_upd_qwq }
         }
