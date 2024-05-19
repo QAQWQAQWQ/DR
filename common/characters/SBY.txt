@@ -12,7 +12,197 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}	
+	}
+	SBY_Manuel_Garcia_Prieto={
+		name=SBY_Manuel_Garcia_Prieto
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Manuel_Garcia_Prieto.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = SBY_Manuel_Garcia_Prieto_H
+			allowed = {
+				original_tag = SBY
+				
+			}
+			available = {
+				NOT={
+					has_completed_focus = SBY_focus6
+				}
+				is_country_leader = no
+			    is_political_advisor = no
+			}
+			traits = {
+				head_of_government
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SBY_Manuel_Garcia_Prieto_P
+			allowed = {
+				original_tag = SBY
+			}
+			available = {
+				is_country_leader = no
+			    not_already_hired_except_as = political_advisor
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+	SBY_Francisco_Cambo={
+		name=SBY_Francisco_Cambo
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Francisco_Cambo.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = SBY_Francisco_Cambo_H
+			allowed = {
+				original_tag = SBY
+				
+			}
+			available = {
+				is_country_leader = no
+			    is_political_advisor = no
+			}
+			traits = {
+				head_of_government
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SBY_Francisco_Cambo_P
+			allowed = {
+				original_tag = SBY
+			}
+			available = {
+				is_country_leader = no
+			    not_already_hired_except_as = political_advisor
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	SBY_Gabriel_Maura_Gamazo={
+		name=SBY_Gabriel_Maura_Gamazo
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Gabriel_Maura_Gamazo.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = SBY_Gabriel_Maura_Gamazo_H
+			allowed = {
+				original_tag = SBY
+				
+			}
+			available = {
+				is_country_leader = no
+			    is_political_advisor = no
+			}
+			traits = {
+				head_of_government
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SBY_Gabriel_Maura_Gamazo_P
+			allowed = {
+				original_tag = SBY
+			}
+			available = {
+				is_country_leader = no
+			    not_already_hired_except_as = political_advisor
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	SBY_Miguel_Primo_de_Rivera={
+		name=SBY_Miguel_Primo_de_Rivera
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Miguel_Primo_de_Rivera.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = SBY_Miguel_Primo_de_Rivera_H
+			allowed = {
+				original_tag = SBY
+				
+			}
+			available = {
+				is_country_leader = no
+			    is_political_advisor = no
+			}
+			traits = {
+				head_of_government
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SBY_Miguel_Primo_de_Rivera_P
+			allowed = {
+				original_tag = SBY
+			}
+			available = {
+				is_country_leader = no
+			    not_already_hired_except_as = political_advisor
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	SBY_Manuel_Fernandez_Silvestre={
 		name=SBY_Manuel_Fernandez_Silvestre
 		portraits={

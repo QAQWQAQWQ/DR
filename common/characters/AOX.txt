@@ -49,7 +49,8 @@ characters={
 				original_tag = AOX
 			}
 			available = {
-				
+				is_country_leader = no
+			is_political_advisor = no
 			  }
 			traits = {
 				head_of_government
@@ -80,7 +81,8 @@ characters={
 				original_tag = AOX
 			}
 			available = {
-				
+				is_country_leader = no
+			not_already_hired_except_as = political_advisor
 			  }
 			traits = {
 				ecomonist_publicist
