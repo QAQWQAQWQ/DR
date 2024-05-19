@@ -1253,6 +1253,7 @@ southern_germany_decisions = {
         }
         add_core_of = ROOT
       }
+      1031 = { add_core_of = ROOT }
       set_cosmetic_tag = SGF
       set_variable = { global.southern_germany_end = 1 }
     }
