@@ -23,7 +23,7 @@ guiTypes = {
 		iconType = {
 			name = "ECO_icon1"
             spriteType ="GFX_economy_background"
-		 	position = {x = 18 y = 45} 
+		 	position = {x = 18 y = 45}  
 		}
 		iconType = { 
 			name = "ECO_icon2"
@@ -70,9 +70,9 @@ guiTypes = {
                 position = { x=4 y=5 }
 				spriteType ="GFX_tiled_paper_w_frame_bg"
 		}
-		
+		 
 		iconType ={
-			name ="gdp_bg"
+		 	name ="gdp_bg"
 			spriteType = "GFX_generic_box"
 			position = { x=430 y=20 }
 		}
@@ -82,7 +82,7 @@ guiTypes = {
 			position = { x= 430 y = 20}
 			shortcut = "ctrl+e"
 			pdx_tooltip = "Table_OPEN"
-		}
+		} 
 		
 		instantTextBoxType = {
 			name ="gdp_text"
@@ -123,19 +123,19 @@ guiTypes = {
 		# 	name = "money_policy_name"
 		# 	position = { x = 373 y = 310 }
 		# 	font = "hoi_36header"
-		# 	borderSize = {x = 0 y = 0}
+		# 	borderSize = {x = 0 y = 0}  
 		# 	text = "[GetECOICON_NAME]"	
-		# 	maxWidth = 69
-		# 	maxHeight = 32
+		# 	maxWidth = 69   
+		# 	maxHeight = 32 
 		# 	fixedsize = yes
 		# 	format = left			
 		# } 
-		instantTextBoxType = {
+		instantTextBoxType = { 
 			name = "money_system_main_name"
 			position = { x = 25 y = 15 }
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
-			text = "经济"	
+			text = "国民经济"	 
 			maxWidth = 210
 			maxHeight = 32
 			fixedsize = yes
@@ -178,9 +178,19 @@ guiTypes = {
 			spriteType = "GFX_econ_crt_slider_limit_right"
 			position = { x = 520 y = 90 }
 		}
-		         
+		
+		buttonType = {
+			name = "slider_limit_left_1"
+			spriteType = "GFX_econ_crt_slider_limit_left"
+			position = { x = 255 y = 177 }
+		} 
+		buttonType = {
+			name = "slider_limit_right_1"
+			spriteType = "GFX_econ_crt_slider_limit_right"
+			position = { x = 520 y = 177 }
+		}     
 		gridboxtype = {
-			name = "custom_slider_grid"
+			name = "custom_slider_grid"     
 			position = { x = -450 y = 215 }
 			size = { width = 100% height = 100% }
 			slotsize = { width = 4 height = 60 }
@@ -188,24 +198,46 @@ guiTypes = {
 			max_slots_vertical = 1
 			add_horizontal = yes
 		}
-        iconType = { 
-			name = "slider_dot"
-			quadTextureSprite = "GFX_slider_dot"
-			position = { x = -450 y = 100 }
-			centerPosition = yes
-			alwaystransparent = yes
-		}
-}
-containerWindowType = {
+		gridboxtype = {
+			name = "custom_slider_grid_1"      
+			position = { x = -450 y = 215 }
+			size = { width = 100% height = 100% }
+			slotsize = { width = 4 height = 60 }
+			max_slots_horizontal = 51
+			max_slots_vertical = 1
+			add_horizontal = yes
+		}  
+        #iconType = {     
+		#	name = "slider_dot"
+		#	quadTextureSprite = "GFX_slider_dot"
+		#	position = { x = -450 y = 100 }
+		#	centerPosition = yes
+		#	alwaystransparent = yes  
+		#}    
+}      
+containerWindowType = {  
 	name = "custom_slider_container"
 	position = { x = 485 y = -145 }
-
+  
 	buttonType = { 
 		name = "custom_slider_icon"
 		quadTextureSprite = "GFX_set_slider"
 		frame = 1
 		clicksound = "click_scroll"
 	}
+	
+}
+containerWindowType = {  
+	name = "custom_slider_container_1"
+	position = { x = 485 y = -145 }
+  
+	buttonType = { 
+		name = "custom_slider_icon_1"
+		quadTextureSprite = "GFX_set_slider"
+		frame = 1
+		clicksound = "click_scroll"
+	}
+	
 }
 
 }

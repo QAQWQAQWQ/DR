@@ -28,3 +28,29 @@ change_parliament_seats = {
 
 }
 
+change_parliament_seats_1 = {
+	clear_array = array_f_array_1
+	set_temp_variable = { seat_size_1 = current_int_1 }
+	divide_temp_variable = { seat_size_1 = 100 }
+	multiply_temp_variable = { seat_size_1 = 64 }
+	round_temp_variable = seat_size_1
+
+	resize_array = {
+		array = array_f_array_1
+		value = 2
+		size = seat_size_1
+	}
+	resize_array = {
+		array = array_f_array_1
+		value = 1
+		size = 64
+	}
+
+	set_temp_variable = { dot_x_1 = current_int_1 }
+	multiply_temp_variable = { dot_x_1 = 4 }
+	subtract_from_temp_variable = { dot_x_1 = 2 }
+	add_to_temp_variable = { dot_x_1 = 313 }
+	set_variable = { slider_dot_x_1 = dot_x_1 }
+	
+
+}

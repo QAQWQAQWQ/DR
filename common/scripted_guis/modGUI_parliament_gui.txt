@@ -16,13 +16,6 @@ scripted_gui = {
 				index = i
 				value = v
 			}
- 
-			parliament_grid = {
-				array = parliament_seats
-				change_scope = no
-				entry_container = parliament_seat_container
-				index = idx
-			}
 		}
 
 		properties = {
@@ -40,6 +33,11 @@ scripted_gui = {
 				change_parliament_seats = yes
 			}
 
+			custom_slider_icon_click_1 = {
+				set_variable = { current_int_1 = v }
+				change_parliament_seats = yes
+			}
+			
 			slider_limit_left_click = {
 				add_to_variable = { current_int = -1 }
 				clamp_variable = {

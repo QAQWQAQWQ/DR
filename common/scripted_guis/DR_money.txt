@@ -49,12 +49,12 @@ scripted_gui = {
 				index = i
 				value = v
 			}
-
-			parliament_grid = {
-				array = parliament_seats
+			custom_slider_grid_1 = {
+				array = slider_buttons_1
 				change_scope = no
-				entry_container = parliament_seat_container
-				index = idx
+				entry_container = custom_slider_container_1
+				index = i
+				value = v
 			}
 		}
 
@@ -64,6 +64,13 @@ scripted_gui = {
 			}
 			custom_slider_icon = {
 				frame = button_frame
+			}
+			
+			slider_dot_1 = {
+				x = slider_dot_x_1
+			}
+			custom_slider_icon_1 = {
+				frame = button_frame_1
 			}
 		}
 		effects = {
@@ -123,6 +130,22 @@ scripted_gui = {
 				}
 				else = {
 					set_temp_variable = { button_frame =  1 }
+				}
+			}
+
+
+			#### 
+			custom_slider_icon_visible_1 = {
+				if = {
+					limit = {
+						check_variable = {
+							current_int_1 = v
+						}
+					}
+					set_temp_variable = { button_frame_1 =  2 }
+				}
+				else = {
+					set_temp_variable = { button_frame_1 =  1 }
 				}
 			}
 		}

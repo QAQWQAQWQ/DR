@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = SBY_focus0
 		icon = GFX_SBY_focus0
-		cost = 8.00
+		cost = 1.00
 		x = 5
 		y = 0
 		available = {
@@ -26,14 +26,14 @@ focus_tree = {
 	focus = {
 		id = SBY_focus1
 		icon = GFX_SBY_focus1
-		cost = 8.00
+		cost = 7.00
 		x = 5
 		y = 1
 		prerequisite = {
 			focus = SBY_focus0
 		}
 		available = {
-			
+			has_country_flag = SBY_event2
 		}
 		ai_will_do = {
 			factor = 1
@@ -45,7 +45,7 @@ focus_tree = {
 	focus = {
 		id = SBY_focus2
 		icon = GFX_SBY_focus2
-		cost = 8.00
+		cost = 7.00
 		x = 3
 		y = 1
 		prerequisite = {
@@ -68,7 +68,7 @@ focus_tree = {
 	focus = {
 		id = SBY_focus3
 		icon = GFX_SBY_focus3
-		cost = 8.00
+		cost = 7.00
 		x = 2
 		y = 2
 		prerequisite = {
@@ -86,7 +86,7 @@ focus_tree = {
 	focus = {
 		id = SBY_focus4
 		icon = GFX_SBY_focus4
-		cost = 8.00
+		cost = 7.00
 		x = 5
 		y = 2
 		prerequisite = {
@@ -99,13 +99,15 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			add_political_power = -100
+			add_stability = -0.01
 		}
 
 	}
 	focus = {
 		id = SBY_focus5
 		icon = GFX_SBY_focus5
-		cost = 8.00
+		cost = 7.00
 		x = 3
 		y = 3
 		prerequisite = {
@@ -124,7 +126,7 @@ focus_tree = {
 	focus = {
 		id = SBY_focus6
 		icon = GFX_SBY_focus6
-		cost = 8.00
+		cost = 7.00
 		x = 5
 		y = 4
 		prerequisite = {
@@ -137,13 +139,16 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			remove_ideas = SBY_Manuel_Garcia_Prieto_H
+			
+		    
 		}
 
 	}
 	focus = {
 		id = SBY_focus7
 		icon = GFX_SBY_focus7
-		cost = 8.00
+		cost = 7.00
 		x = 11
 		y = 1
 		prerequisite = {
@@ -162,7 +167,7 @@ focus_tree = {
 	focus = {
 		id = SBY_focus8
 		icon = GFX_SBY_focus8
-		cost = 8.00
+		cost = 7.00
 		x = 8
 		y = 2
 		prerequisite = {
@@ -187,7 +192,7 @@ focus_tree = {
 	focus = {
 		id = SBY_focus9
 		icon = GFX_SBY_focus9
-		cost = 8.00
+		cost = 7.00
 		x = 14
 		y = 2
 		prerequisite = {
@@ -212,7 +217,7 @@ focus_tree = {
 	focus = {
 		id = SBY_focus10
 		icon = GFX_SBY_focus10
-		cost = 8.00
+		cost = 7.00
 		x = 7
 		y = 3
 		prerequisite = {
@@ -230,8 +235,8 @@ focus_tree = {
 					modifier = SBY_focus10_dy
 					days = 200 
 				}
-				hidden_effect = { add_to_variable = { state_cash_tot = 1 } }
-				custom_effect_tooltip = Thuringian_10_eff
+				hidden_effect = { add_to_variable = { state_cash_tot = 0.01 } }
+				custom_effect_tooltip = state_cash_tot_0.01
 			}
 
 		}
@@ -240,7 +245,7 @@ focus_tree = {
 	focus = {
 		id = SBY_focus11
 		icon = GFX_SBY_focus11
-		cost = 8.00
+		cost = 7.00
 		x = 11
 		y = 3
 		prerequisite = {
@@ -284,7 +289,7 @@ focus_tree = {
 	focus = {
 		id = SBY_focus12
 		icon = GFX_SBY_focus12
-		cost = 8.00
+		cost = 7.00
 		x = 15
 		y = 3
 		prerequisite = {
@@ -314,7 +319,7 @@ focus_tree = {
 	focus = {
 		id = SBY_focus13
 		icon = GFX_SBY_focus13
-		cost = 8.00
+		cost = 7.00
 		x = 9
 		y = 3
 		prerequisite = {
@@ -342,7 +347,7 @@ focus_tree = {
 	focus = {
 		id = SBY_focus14
 		icon = GFX_SBY_focus14
-		cost = 8.00
+		cost = 7.00
 		x = 13
 		y = 3
 		prerequisite = {
@@ -370,4 +375,849 @@ focus_tree = {
 		}
 
 	}
-}
+
+	focus = {
+		id = SBY_focus15 
+		icon = GFX_SBY_focus15
+		cost = 7.00
+		x = 3
+		y = 5
+		available = {
+			has_idea = SBY_Gabriel_Maura_Gamazo_H
+		}
+		mutually_exclusive = {
+			focus = SBY_focus16
+		}
+		mutually_exclusive = {
+			focus = SBY_focus17
+		}
+		prerequisite = {
+			focus = SBY_focus6
+		}
+		prerequisite = {
+			focus = SBY_focus21
+		}
+		available = {
+			# has_idea = 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+	        show_ideas_tooltip = SBY_Gabriel_Maura_Gamazo_H
+		}
+	}
+	focus = { 
+		id = SBY_focus16
+		icon = GFX_SBY_focus16
+		cost = 7.00
+		x = 10
+		y = 5
+		available = {
+			has_idea = SBY_Miguel_Primo_de_Rivera_H
+		}
+		mutually_exclusive = {
+			focus = SBY_focus15
+		}
+		mutually_exclusive = {
+			focus = SBY_focus17
+		}
+		prerequisite = {
+			focus = SBY_focus6
+		}
+		prerequisite = {
+			focus = SBY_focus21
+		}
+		available = {
+			# has_idea = 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+	        show_ideas_tooltip = SBY_Miguel_Primo_de_Rivera_H
+		}
+	}
+	focus = {
+		id = SBY_focus17
+		icon = GFX_SBY_focus17
+		cost = 7.00
+		x = 16
+		y = 5
+		available = {
+			has_idea = SBY_Francisco_Cambo_H
+		}
+
+		mutually_exclusive = {
+			focus = SBY_focus16
+		}
+		mutually_exclusive = {
+			focus = SBY_focus15
+		}
+		prerequisite = {
+			focus = SBY_focus6
+		}
+		prerequisite = {
+			focus = SBY_focus21
+		}
+		available = {
+			# has_idea = 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+	        show_ideas_tooltip = SBY_Francisco_Cambo_H
+		}
+	}
+	focus = { 
+		id = SBY_focus18
+		icon = GFX_SBY_focus18
+		cost = 7.00
+		x = 10
+		y = 6
+		available = {
+			has_idea = SBY_Miguel_Primo_de_Rivera_H
+		}
+		prerequisite = {
+			focus = SBY_focus16
+		}
+		available = {
+			# has_idea = 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus19
+		icon = GFX_SBY_focus19
+		cost = 7.00
+		x = 1
+		y = 6
+		available = {
+			has_idea = SBY_Gabriel_Maura_Gamazo_H
+		}
+		prerequisite = {
+			focus = SBY_focus15
+		}
+		available = {
+			# has_idea = 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus20
+		icon = GFX_SBY_focus20
+		cost = 7.00
+		x = 17
+		y = 6
+		available = {
+			has_idea = SBY_Francisco_Cambo_H
+		}
+		prerequisite = {
+			focus = SBY_focus17
+		}
+		available = {
+			# has_idea = 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus21
+		icon = GFX_SBY_focus21
+		cost = 7.00
+		x = 10
+		y = 4
+		prerequisite = {
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = SBY_focus22
+		icon = GFX_SBY_focus22
+		cost = 7.00
+		x = 15
+		y = 7
+		available = {
+			has_idea = SBY_Francisco_Cambo_H
+		}
+		prerequisite = {
+			focus = SBY_focus17
+
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus23
+		icon = GFX_SBY_focus23
+		cost = 7.00
+		x = 19
+		y = 7
+		available = {
+			has_idea = SBY_Francisco_Cambo_H
+		}
+		prerequisite = {
+			focus = SBY_focus17
+
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus24
+		icon = GFX_SBY_focus24
+		cost = 7.00
+		x = 17
+		y = 8
+		available = {
+			has_idea = SBY_Francisco_Cambo_H
+		}
+		prerequisite = {
+			focus = SBY_focus20
+
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus25
+		icon = GFX_SBY_focus25
+		cost = 7.00
+		x = 20
+		y = 8
+		available = {
+			has_idea = SBY_Francisco_Cambo_H
+		}
+		prerequisite = {
+			focus = SBY_focus20
+
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus26
+		icon = GFX_SBY_focus26
+		cost = 7.00
+		x = 19
+		y = 9
+		available = {
+			has_idea = SBY_Francisco_Cambo_H
+		}
+		prerequisite = {
+			focus = SBY_focus25
+
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus27
+		icon = GFX_SBY_focus27
+		cost = 7.00
+		x = 21
+		y = 9
+		available = {
+			has_idea = SBY_Francisco_Cambo_H
+		}
+		prerequisite = {
+			focus = SBY_focus25
+
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus28
+		icon = GFX_SBY_focus28
+		cost = 7.00
+		x = 12
+		y = 7
+		available = {
+			has_idea = SBY_Miguel_Primo_de_Rivera_H
+		}
+		prerequisite = {
+			focus = SBY_focus18
+
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus29
+		icon = GFX_SBY_focus29
+		cost = 7.00
+		x = 8
+		y = 7
+		available = {
+			has_idea = SBY_Miguel_Primo_de_Rivera_H
+		}
+		prerequisite = {
+			focus = SBY_focus18
+
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		} 
+	}
+	focus = {
+		id = SBY_focus30
+		icon = GFX_SBY_focus30
+		cost = 7.00
+		x = 10
+		y = 8
+		available = {
+			has_idea = SBY_Miguel_Primo_de_Rivera_H
+		}
+		prerequisite = {
+			focus = SBY_focus18
+
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus31
+		icon = GFX_SBY_focus31
+		cost = 7.00
+		x = 13
+		y = 8 
+		available = {
+			has_idea = SBY_Miguel_Primo_de_Rivera_H
+		}
+		prerequisite = {
+			focus = SBY_focus28
+
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus32
+		icon = GFX_SBY_focus32
+		cost = 7.00
+		x = 7
+		y = 8
+		available = {
+			has_idea = SBY_Miguel_Primo_de_Rivera_H
+		}
+		prerequisite = {
+			focus = SBY_focus29
+
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus33
+		icon = GFX_SBY_focus33
+		cost = 7.00
+		x = 8
+		y = 9
+		available = {
+			has_idea = SBY_Miguel_Primo_de_Rivera_H
+		}
+		prerequisite = {
+			focus = SBY_focus30
+
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus34
+		icon = GFX_SBY_focus34
+		cost = 7.00
+		x = 12
+		y = 9
+		available = {
+			has_idea = SBY_Miguel_Primo_de_Rivera_H
+		}
+		prerequisite = {
+			focus = SBY_focus30
+
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus35
+		icon = GFX_SBY_focus35
+		cost = 7.00
+		x = 6
+		y = 6
+		prerequisite = {
+			focus = SBY_focus6
+
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus36
+		icon = GFX_SBY_focus36
+		cost = 7.00
+		x = 10
+		y = 9
+		available = {
+			has_idea = SBY_Miguel_Primo_de_Rivera_H
+		}
+		prerequisite = {
+			focus = SBY_focus30
+
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus37
+		icon = GFX_SBY_focus37
+		cost = 7.00
+		x = 7
+		y = 10
+		available = {
+			has_idea = SBY_Miguel_Primo_de_Rivera_H
+		}
+		prerequisite = {
+			focus = SBY_focus33
+		}
+		prerequisite = {
+			focus = SBY_focus36
+		}
+		prerequisite = {
+			focus = SBY_focus34
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus38
+		icon = GFX_SBY_focus38
+		cost = 7.00
+		x = 9
+		y = 10
+		available = {
+			has_idea = SBY_Miguel_Primo_de_Rivera_H
+		}
+		prerequisite = {
+			focus = SBY_focus33
+		}
+		prerequisite = {
+			focus = SBY_focus36
+		}
+		prerequisite = {
+			focus = SBY_focus34
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus39
+		icon = GFX_SBY_focus39
+		cost = 7.00
+		x = 11
+		y = 10
+		available = {
+			has_idea = SBY_Miguel_Primo_de_Rivera_H
+		}
+		prerequisite = {
+			focus = SBY_focus33
+		}
+		prerequisite = {
+			focus = SBY_focus36
+		}
+		prerequisite = {
+			focus = SBY_focus34
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus40
+		icon = GFX_SBY_focus40
+		cost = 7.00
+		x = 13
+		y = 10
+		available = {
+			has_idea = SBY_Miguel_Primo_de_Rivera_H
+		}
+		prerequisite = {
+			focus = SBY_focus33
+		}
+		prerequisite = {
+			focus = SBY_focus36
+		}
+		prerequisite = {
+			focus = SBY_focus34
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus41
+		icon = GFX_SBY_focus41
+		cost = 7.00
+		x = 10
+		y = 11
+		available = {
+			has_idea = SBY_Miguel_Primo_de_Rivera_H
+		}
+		prerequisite = {
+			focus = SBY_focus37
+		}
+		prerequisite = {
+			focus = SBY_focus38
+		}
+		prerequisite = {
+			focus = SBY_focus39
+		}
+		prerequisite = {
+			focus = SBY_focus40
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus42
+		icon = GFX_SBY_focus42
+		cost = 7.00
+		x = 4
+		y = 6
+		available = {
+			has_idea = SBY_Gabriel_Maura_Gamazo_H
+		}
+		prerequisite = {
+			focus = SBY_focus15
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus43
+		icon = GFX_SBY_focus43
+		cost = 7.00
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = SBY_focus21
+		}
+		available = {
+			custom_trigger_tooltip = {
+				check_variable = {
+					new_nat_tre > 0.05
+				}
+				tooltip = new_nat_tre005_trigger
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = { 
+				new_nat_tre = -0.05
+				tooltip = new_nat_tre_del005
+		    } 
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = SBY_focus44
+		icon = GFX_SBY_focus44
+		cost = 7.00
+		x = 5
+		y = 7
+		
+		available = {
+			
+			has_idea = SBY_Gabriel_Maura_Gamazo_H
+		}
+		prerequisite = {
+			focus = SBY_focus19
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus45
+		icon = GFX_SBY_focus45
+		cost = 7.00
+		x = 3
+		y = 7
+		available = {
+			has_idea = SBY_Gabriel_Maura_Gamazo_H
+		}
+		prerequisite = {
+			focus = SBY_focus19
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus46
+		icon = GFX_SBY_focus46
+		cost = 7.00
+		x = 1
+		y = 7
+		available = {
+			has_idea = SBY_Gabriel_Maura_Gamazo_H
+		}
+		prerequisite = {
+			focus = SBY_focus19
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus47
+		icon = GFX_SBY_focus47
+		cost = 7.00
+		x = 1
+		y = 8
+		available = {
+			has_idea = SBY_Gabriel_Maura_Gamazo_H
+		}
+		prerequisite = {
+			focus = SBY_focus47
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus48
+		icon = GFX_SBY_focus48
+		cost = 7.00
+		x = 4
+		y = 8
+		available = {
+			has_idea = SBY_Gabriel_Maura_Gamazo_H
+		}
+		prerequisite = {
+			focus = SBY_focus42
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus49
+		icon = GFX_SBY_focus49
+		cost = 7.00
+		x = 3
+		y = 9
+		available = {
+			has_idea = SBY_Gabriel_Maura_Gamazo_H
+		}
+		prerequisite = {
+			focus = SBY_focus42
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SBY_focus50
+		icon = GFX_SBY_focus50
+		cost = 7.00
+		x = 5
+		y = 9
+		available = {
+			has_idea = SBY_Gabriel_Maura_Gamazo_H
+		}
+		prerequisite = {
+			focus = SBY_focus42
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+} 

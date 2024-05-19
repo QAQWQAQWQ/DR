@@ -15,7 +15,11 @@ set_technology = {
 recruit_character = SBY_AlfonsoXIII
 recruit_character = SBY_Manuel_Fernandez_Silvestre
 recruit_character = SBY_Francisco_Franco
+recruit_character = SBY_Manuel_Garcia_Prieto
 recruit_character = SBY_Damaso_Berenguer_Fuste
+recruit_character = SBY_Gabriel_Maura_Gamazo
+recruit_character = SBY_Francisco_Cambo
+recruit_character = SBY_Miguel_Primo_de_Rivera
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -58,6 +62,7 @@ set_politics = {
 puppet =PHL
 add_ideas = {
 	SBY_Spanish_Flu
+	SBY_Manuel_Garcia_Prieto_H
 }
 set_popularities = {
 	Liberalism = 5
