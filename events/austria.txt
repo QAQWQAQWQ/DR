@@ -212,6 +212,46 @@ country_event = {
 	}
 }
 country_event = {
+	id = austria.19
+	title = austria.19.t
+	desc = austria.19.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.19.a
+		DOR = {
+			every_country = { 
+				limit = {
+				OR ={
+					original_tag = DOF
+					original_tag = DOB
+				}
+				}
+				set_variable = { THIS.has_gercon_set = 0 }
+				add_to_variable = { DOR.ger_con_seat = THIS.ger_con_seat }
+				DOR = { annex_country = { target = PREV transfer_troops = yes } }
+			}
+			ger_con_clmap_array = yes
+			every_state = {
+				limit = {
+				OR = {
+					is_core_of = DOR
+					is_core_of = DOF
+					is_core_of = DOB
+				}
+				}
+				add_core_of = DOR
+			}
+			set_cosmetic_tag = SGF
+		}
+		AOX = { puppet = DOR }
+	}
+	option = {
+		name = austria.19.b
+	}
+}
+country_event = {
 	id = austria.11
 	title = austria.11.t
 	desc = austria.11.d

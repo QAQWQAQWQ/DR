@@ -1,0 +1,12 @@
+focus_tree = {
+	id = VCT
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = VCT
+		}
+	}
+	default = no
+	shared_focus = empire_modernization_of_the_imperial_army
+}

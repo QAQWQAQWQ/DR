@@ -743,6 +743,20 @@ monthly_build_new_economy = {
     every_controlled_state = {
         remake_private_factory_tot_cost = yes
     }
+    set_variable = { minst_test_max_fac_goods = num_of_civilian_factories }
+    multiply_variable = { minst_test_max_fac_goods = 0.1 }
+    if = { 
+        limit = {
+            check_variable = { minst_test_max_fac_goods > now_use_national_goods_factory }
+            OR = {
+                is_ai = yes
+                check_variable = { global.autowork = 1 }
+            }
+        } 
+        set_variable = { now_use_national_goods_factory = num_of_civilian_factories }
+        multiply_variable = { now_use_national_goods_factory = 0.1 }
+        round_variable = now_use_national_goods_factory
+    }
     every_controlled_state = {
         while_loop_effect = {
             break = temp_break
@@ -1066,6 +1080,39 @@ ai_goods_factory_work = {
                 is_ai = yes
                 check_variable = { global.autowork = 1 }
             }
+        }
+        set_variable = { now_goods_test = national_goods_factory }
+        add_to_variable = { now_goods_test = private_goods_factory_tot }
+        set_variable = { rel_an_ind_goods = global.an_ind_goods }
+        divide_variable = { rel_an_ind_goods = global.one_bil }
+        multiply_variable = { now_goods_test = rel_an_ind_goods }
+        set_variable = { test_max_fac_goods = num_of_civilian_factories }
+        multiply_variable = { test_max_fac_goods = 0.8 }
+        set_variable = { minst_test_max_fac_goods = num_of_civilian_factories }
+        multiply_variable = { minst_test_max_fac_goods = 0.1 }
+        while_loop_effect = {
+            break = temp_break
+            limit = {
+                OR = {
+                    check_variable = { now_goods_test < before_large_of_market }
+                    check_variable = { national_goods_factory < minst_test_max_fac_goods }
+                }
+                check_variable = { national_goods_factory < test_max_fac_goods }
+            }
+            add_to_variable = { national_goods_factory = 1 }
+            add_to_variable = { now_goods_test = rel_an_ind_goods }
+        }
+        while_loop_effect = {
+            break = temp_break
+            limit = {
+                OR = {
+                    check_variable = { now_goods_test > before_large_of_market }
+                    check_variable = { national_goods_factory > test_max_fac_goods }
+                }
+                check_variable = { national_goods_factory > minst_test_max_fac_goods }
+            }
+            add_to_variable = { national_goods_factory = -1 }
+            subtract_from_variable = { now_goods_test = rel_an_ind_goods }
         }
     }
 }

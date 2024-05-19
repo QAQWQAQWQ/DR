@@ -1,5 +1,37 @@
 guiTypes = {
 	containerWindowType = {
+		name = "new_ger_con_decisons_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 510 height= 350 }
+		background = {
+			name = "ger_con_background"
+			spriteType = "GFX_ger_con_bg"
+			position = { x = 5 y = 0 }
+		}
+		gridboxtype = {
+			name = "gercon_grid"
+			position = { x = 280 y = 0 }
+			size = { width = 510 height= 350 }
+			slotsize = { width = 500  height = 20 }
+			max_slot_horizontal = 1
+			add_horizontal = no
+		}
+	}
+	containerWindowType = {
+		name = "gercon_entry"
+		size = { width = 500  height = 20 }
+		clipping = yes
+		instantTextboxType = {
+			name = "ger_con_entry_text"
+			position = { x = 5 y = 2 }
+			font = "hoi_16mbs"
+			text = "ger_con_entry_text"
+			maxWidth = 500
+			maxHeight = 20
+			fixedsize = yes
+		}
+	}
+	containerWindowType = {
 		name = "ger_con_decisons_ui_window"
 		position = { x = 0 y = 0 }
 		size = { width = 510 height= 350 }
