@@ -435,6 +435,19 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/Spanish_Flu.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_Somaten"
+		texturefile = "gfx/interface/ideas/Somaten.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Directorate_National_Security"
+		texturefile = "gfx/interface/ideas/Directorate_National_Security.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SBY_Patriotism"
+		texturefile = "gfx/interface/ideas/SBY_Patriotism.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_party_newspaper"
 		texturefile = "gfx/interface/ideas/party_newspaper.dds"
 	}

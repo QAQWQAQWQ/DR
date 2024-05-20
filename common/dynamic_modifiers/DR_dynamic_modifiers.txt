@@ -337,3 +337,13 @@ NPL_dynamic_focus21 = {
 	party_popularity_stability_factor=0.1
 	master_ideology_drift=0.1
 }
+
+
+SHW_dynamic_Focus_8= {
+	enable = { always = yes }
+	army_core_attack_factor=0.1		
+    army_core_defence_factor=0.1
+	max_surrender_limit_offset=0.1
+	conscription_factor=0.1	
+    recruitable_population_factor=0.1
+}

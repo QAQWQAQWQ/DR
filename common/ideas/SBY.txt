@@ -3,14 +3,41 @@ ideas = {
 		SBY_Spanish_Flu = {
 		  picture = Spanish_Flu
 		  modifier = {
-	  production_speed_industrial_complex_factor = -0.2
-	  production_speed_arms_factory_factor = -0.1
-	  production_speed_infrastructure_factor = -0.1
-	  production_speed_buildings_factor = -0.1
-	  consumer_goods_factor = 0.3
-	  industrial_capacity_factory = -0.1
+	              production_speed_industrial_complex_factor = -0.2
+	              production_speed_arms_factory_factor = -0.1
+	              production_speed_infrastructure_factor = -0.1
+	              production_speed_buildings_factor = -0.1
+	              consumer_goods_factor = 0.3
+	              industrial_capacity_factory = -0.1
                   local_manpower = -0.15
-   }
+        }
+	}
+	SBY_Somaten = {
+		picture = Somaten
+		modifier = {
+			experience_gain_infantry_training_factor=0.05
+			experience_gain_infantry_combat_factor=0.05
+			required_garrison_factor=-0.1
+        }
+    }
+	SBY_Directorate_National_Security = {
+		picture = Directorate_National_Security
+		modifier = {
+			encryption_factor=0.05
+			decryption_factor=0.05
+			operation_capture_cipher_outcome=0.1
+        }
+    }
+	SBY_Patriotism_I= {
+		picture = SBY_Patriotism
+		modifier = {
+		army_core_attack_factor=0.1		
+		army_core_defence_factor=0.1
+		max_surrender_limit_offset=0.1
+		conscription_factor=0.1	
+		recruitable_population_factor=0.1
+        }
+		
 	}
 }
 }
