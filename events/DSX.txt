@@ -3,6 +3,7 @@
 ###########################
 
 add_namespace = DSX
+add_namespace = DSX_diary
 news_event = {
 	id = DSX.1
 	title = DSX.1.t
@@ -18,5 +19,15 @@ news_event = {
 		}
 		DSD={declare_war_on = { target = DSX type = annex_everything }}
 	}
+}
+country_event = {
+	id = DSX_diary.1
+	title = DSX_diary.1.t
+	desc = DSX_diary.1.d
+	#picture = GFX_DSD_1
+	is_triggered_only = yes
+	option = {
+		name = DSX_diary.1.a
 	}
+}
 	
