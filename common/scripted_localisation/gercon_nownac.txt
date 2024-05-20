@@ -121,3 +121,12 @@ defined_text = {
 		}
 	}
 }
+defined_text = { 
+	name = ger_con_motion_scrl
+	text = {
+		localization_key = ger_con_motion_scrl_0
+		trigger = {
+			check_variable = { global.ger_con_now_motion_id = 0 }
+		}
+	}
+}
