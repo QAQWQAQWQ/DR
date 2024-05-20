@@ -77,6 +77,7 @@ characters={
 			available = {
 				is_country_leader = no
 			    is_political_advisor = no
+				has_completed_focus = SBY_focus17
 			}
 			traits = {
 				head_of_government
@@ -120,6 +121,7 @@ characters={
 			available = {
 				is_country_leader = no
 			    is_political_advisor = no
+				has_completed_focus = SBY_focus15
 			}
 			traits = {
 				head_of_government
@@ -163,6 +165,7 @@ characters={
 			available = {
 				is_country_leader = no
 			    is_political_advisor = no
+				has_completed_focus = SBY_focus16
 			}
 			traits = {
 				head_of_government
@@ -191,14 +194,157 @@ characters={
 	
 
 
+	SBY_Antonio_Goicoechea_Cosculluela={
+		name=SBY_Antonio_Goicoechea_Cosculluela
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Antonio_Goicoechea_Cosculluela.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SBY_Antonio_Goicoechea_Cosculluela_P
+			allowed = {
+				original_tag = SBY
+			}
+			available = {
+				is_country_leader = no
+			    not_already_hired_except_as = political_advisor
+			}
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SBY_Angel_Ossorio_Gallardo={
+		name=SBY_Angel_Ossorio_Gallardo
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Angel_Ossorio_Gallardo.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SBY_Angel_Ossorio_Gallardo_P
+			allowed = {
+				original_tag = SBY
+			}
+			available = {
+				is_country_leader = no
+			    not_already_hired_except_as = political_advisor
+			}
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SBY_Jose_Calvo_Sotelo={
+		name=SBY_Jose_Calvo_Sotelo
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Jose_Calvo_Sotelo.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SBY_Jose_Calvo_Sotelo_P
+			allowed = {
+				original_tag = SBY
+			}
+			available = {
+				is_country_leader = no
+			    not_already_hired_except_as = political_advisor
+			}
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
 
 
-
-
-
-
-
-
+###
+##军事顾问
+    SBY_Emilio_Mola_Vidal={
+		name=SBY_Emilio_Mola_Vidal
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Emilio_Mola_Vidal.dds"
+			}
+			army={
+				large="gfx/leaders/SBY/Portrait_Emilio_Mola_Vidal.tga"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = SBY_Emilio_Mola_Vidal_M
+			allowed = {
+				original_tag = SBY
+			}
+			available = {
+				is_country_leader = no
+			    not_already_hired_except_as = political_advisor
+			}
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	SBY_Jose_Sanjurjo_Sacanell={
+		name=SBY_Jose_Sanjurjo_Sacanell
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Jose_Sanjurjo_Sacanell.dds"
+			}
+			army={
+				large="gfx/leaders/SBY/Portrait_Jose_Sanjurjo_Sacanell.tga"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = SBY_Jose_Sanjurjo_Sacanell_M
+			allowed = {
+				original_tag = SBY
+			}
+			available = {
+				is_country_leader = no
+			    not_already_hired_except_as = political_advisor
+			}
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander = {
+			traits = {
+				Lieutenant_general
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	
+##军事顾问
 
 
 
