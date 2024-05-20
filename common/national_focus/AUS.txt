@@ -140,6 +140,7 @@ focus_tree = {
 
 		}
 		bypass = {
+			german_war_has_boom = yes
 		}
 	}
 	focus = {
@@ -166,7 +167,8 @@ focus_tree = {
 		available = {
 
 		}
-		bypass = { 
+		bypass = {
+			german_war_has_boom = yes
 		}
 	}
 	focus = {
@@ -190,6 +192,7 @@ focus_tree = {
 		available = {
 		}
 		bypass = {
+			german_war_has_boom = yes
 		}
 	}
 	focus = {
@@ -580,6 +583,7 @@ focus_tree = {
 
 		}
 		bypass = {
+			german_war_has_boom = yes
 		}
 	}
 	focus = {
@@ -678,6 +682,7 @@ focus_tree = {
 			has_completed_focus = AUS_ger_2
 		}
 		bypass = {
+			german_war_has_boom = yes
 		}
 	}
 	focus = {
@@ -727,6 +732,10 @@ focus_tree = {
 			LSB = { ger_con_uni_tri_aus = yes }
 		}
 		bypass = {
+			custom_trigger_tooltip = { 
+				tooltip = aus_win_german_war 
+				aus_has_win_german_war = yes
+			}
 		}
 	}
 	focus = {

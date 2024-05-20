@@ -16,6 +16,24 @@ guiTypes = {
 			max_slot_horizontal = 1
 			add_horizontal = no
 		}
+		instantTextboxType = {
+			name = "ger_con_authority"
+			position = { x = 50 y = 2 }
+			font = "hoi_16mbs"
+			text = "ger_con_authority_text"
+			maxWidth = 250
+			maxHeight = 40
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "ger_con_now_motion"
+			position = { x = 50 y = 100 }
+			font = "hoi_16mbs"
+			text = "ger_con_motion_text"
+			maxWidth = 250
+			maxHeight = 100
+			fixedsize = yes
+		}
 	}
 	containerWindowType = {
 		name = "gercon_entry"

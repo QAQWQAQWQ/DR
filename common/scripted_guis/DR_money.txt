@@ -116,6 +116,42 @@ scripted_gui = {
 				set_variable = { people_tax = people_tax_qaq }
 				multiply_variable = { people_tax = 0.01 }
 			}
+			
+			custom_slider_icon_1_click = {
+				set_variable = { current_int_1 = v }
+				change_parliament_seats_1 = yes
+				set_variable = { tax_qwq_qaq = current_int_1 }
+				multiply_variable = { tax_qwq_qaq = 2 }
+				set_variable = { tax_qwq = tax_qwq_qaq }
+				multiply_variable = { tax_qwq = 0.01 }
+			}
+
+			slider_limit_left_1_click = {
+				add_to_variable = { current_int_1 = -1 }
+				clamp_variable = {
+					var = current_int_1
+					min = 0
+					max = 50
+				}
+				change_parliament_seats_1 = yes
+				set_variable = { tax_qwq_qaq = current_int_1 }
+				multiply_variable = { tax_qwq_qaq = 2 }
+				set_variable = { tax_qwq = tax_qwq_qaq }
+				multiply_variable = { tax_qwq = 0.01 }
+			}
+			slider_limit_right_1_click = {
+				add_to_variable = { current_int_1 = 1 }
+				clamp_variable = {
+					var = current_int_1
+					min = 0
+					max = 50
+				}
+				change_parliament_seats_1 = yes
+				set_variable = { tax_qwq_qaq = current_int_1 }
+				multiply_variable = { tax_qwq_qaq = 2 }
+				set_variable = { tax_qwq = tax_qwq_qaq }
+				multiply_variable = { tax_qwq = 0.01 }
+			}
 
 		}
 		triggers = {

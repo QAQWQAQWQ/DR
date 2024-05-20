@@ -26,7 +26,7 @@ ger_con_decisions = {
 	visible_when_empty = yes
 }
 new_ger_con_decisions = {
-	priority = 9
+	priority = 12
 	icon = generic_research
 	scripted_gui = new_ger_con_decisons_ui
 	visible = {
@@ -59,7 +59,7 @@ new_ger_con_decisions = {
 	visible_when_empty = yes
 }
 westphalia_decisions = {
-	priority = 9
+	priority = 11
 	icon = generic_research
 	visible = {
 		check_variable = { global.new_ger_con_enable_qwq = 1 }
@@ -73,7 +73,7 @@ westphalia_decisions = {
 	visible_when_empty = yes
 }
 southern_germany_decisions = {
-	priority = 9
+	priority = 10
 	icon = generic_research
 	visible = {
 		check_variable = { global.new_ger_con_enable_qwq = 1 }

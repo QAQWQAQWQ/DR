@@ -7,6 +7,11 @@ on_actions = {
             set_variable = {
                 global.new_ger_con_enable_qwq = 0
             }
+            set_variable = { global.ger_con_president_authority = 3 }
+            set_variable = { global.ger_con_now_motion_id = 0 }
+            set_variable = { global.ger_con_now_motion_Y = 0 }
+            set_variable = { global.ger_con_now_motion_N = 0 }
+            set_variable = { global.ger_con_now_motion_M = 100 }
             set_variable = { global.westphalia_end = 0 }
             set_variable = { DOH.westphalia_qwq = 0 }
             set_variable = { DOL.westphalia_qwq = 0 }

@@ -255,3 +255,86 @@ build_ger_con_seats = {
 
                 AOX = { ger_con_clmap_array = yes }
 }
+clamp_south_ger_var = {
+	clamp_variable = {
+		var = AOX.southern_germany_qwq
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = DOR.southern_germany_qwq
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = DOB.southern_germany_qwq
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = DOF.southern_germany_qwq
+		min = 0
+		max = 100
+	}
+}
+clamp_westphalia_var = {
+	clamp_variable = {
+		var = DOH.westphalia_qwq
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = DOL.westphalia_qwq
+		min = 0
+		max = 100
+	}
+}
+clamp_sax_thu_var = {
+	clamp_variable = {
+		var = SAA.sax_thu_qwq
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = SAB.sax_thu_qwq
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = SAC.sax_thu_qwq
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = SAD.sax_thu_qwq
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = SAE.sax_thu_qwq
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = SAF.sax_thu_qwq
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = SAG.sax_thu_qwq
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = DOS.sax_thu_meg
+		min = 0
+		max = 100
+	}
+}
+clamp_president_authority = {
+	clamp_variable = {
+		var = global.ger_con_president_authority
+		min = 0
+		max = 5
+	}
+}

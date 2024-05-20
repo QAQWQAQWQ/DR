@@ -68,6 +68,9 @@ on_actions = {
                 set_variable = { resource_cnt = 0 }
                 set_variable = { tax_qwq = 0.3 }
                 set_variable = { tax_qwq_qaq = 30 }
+                set_variable = { current_int_1 = tax_qwq_qaq }
+                divide_variable = { current_int_1 = 2 }
+                round_variable = current_int_1
                 set_variable = { people_tax = 0 }
                 set_variable = { people_tax_qaq = 0 }
                 set_variable = { ind_num = 0 }
