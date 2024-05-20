@@ -20,6 +20,12 @@ recruit_character = SBY_Damaso_Berenguer_Fuste
 recruit_character = SBY_Gabriel_Maura_Gamazo
 recruit_character = SBY_Francisco_Cambo
 recruit_character = SBY_Miguel_Primo_de_Rivera
+
+recruit_character = SBY_Antonio_Goicoechea_Cosculluela
+recruit_character = SBY_Angel_Ossorio_Gallardo
+recruit_character = SBY_Jose_Calvo_Sotelo
+recruit_character = SBY_Emilio_Mola_Vidal
+recruit_character = SBY_Jose_Sanjurjo_Sacanell
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -63,6 +69,7 @@ puppet =PHL
 add_ideas = {
 	SBY_Spanish_Flu
 	SBY_Manuel_Garcia_Prieto_H
+	Media_control
 }
 set_popularities = {
 	Liberalism = 5

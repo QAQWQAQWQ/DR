@@ -1,12 +1,12 @@
 guiTypes = {
-
+  
 	containerWindowType = {
-		name = "money_system_ui_window"
-		position = { x = 0 y = 0 }
-		             
+		name = "money_system_ui_window" 
+		position = { x = 0 y = 0 } 
+		               
 		buttonType = { 
 			name = "money_system_button"
-			size = {width = 100 height = 20}
+			size = {width = 100 height = 20} 
 			spriteType = "GFX_ECO_BUTTON"
 			buttonFont = "hoi_18mbs"
 			buttonText = "经济状况"
@@ -60,10 +60,31 @@ guiTypes = {
             spriteType ="GFX_economy_background1"
 		 	position = {x = 25 y = 236} 
 		}
+		
 		iconType = {
 			name = "ECO_icon9"
             spriteType ="GFX_economy_background2"
-		 	position = {x = 282 y = 135} 
+		 	position = {x = 282 y = 135}              
+		}
+		iconType = { 
+			name = "ECO_icon10" 
+            spriteType ="GFX_economy_background1"
+		 	position = {x = 25 y = 271} 
+		}
+		iconType = { 
+			name = "ECO_icon11" 
+            spriteType ="GFX_economy_background1"
+		 	position = {x = 285 y = 228} 
+		}
+		iconType = { 
+			name = "ECO_icon12" 
+            spriteType ="GFX_economy_background1"
+		 	position = {x = 285 y = 265} 
+		}
+		iconType = { 
+			name = "ECO_icon13" 
+            spriteType ="GFX_economy_background1"
+		 	position = {x = 285 y = 300} 
 		}
 		background = {
 				name = "money_system_main"
