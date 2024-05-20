@@ -185,6 +185,12 @@ remake_state_cash_tot = {
             OR = {
                 is_core_of = AOX
                 is_core_of = WWS
+                is_core_of = DOF
+                is_core_of = DOA
+                is_core_of = DOR
+                is_core_of = DOB
+                is_core_of = DOL
+                is_core_of = DOH
             }
         }
 		multiply_variable = { state_cash_tot = 1.5 }
@@ -766,10 +772,16 @@ monthly_build_new_economy = {
         round_variable = now_use_national_goods_factory
     }
     every_controlled_state = {
+        set_variable = {
+            we_can_pay = private_capital
+        }
+        add_to_variable = {
+            we_can_pay = private_det
+        }
         while_loop_effect = {
             break = temp_break
             limit = {
-                check_variable = { private_cost < private_capital }
+                check_variable = { private_cost < we_can_pay }
                 check_variable = { private_worker_wage < 5 }
             }
             add_to_variable = { private_worker_wage = 1 }
@@ -778,7 +790,7 @@ monthly_build_new_economy = {
         while_loop_effect = {
             break = temp_break
             limit = {
-                check_variable = { private_cost > private_capital }
+                check_variable = { private_cost > we_can_pay }
                 check_variable = { private_worker_wage > 1 }
             }
             add_to_variable = { private_worker_wage = -1 }
@@ -801,18 +813,16 @@ monthly_build_new_economy = {
     remake_market = yes
     set_variable = { cash_upd = tot_large_of_market }
     
-    set_variable = { mid_w = tot_large_of_market }
-    multiply_variable = { mid_w = 0.3 }
-    subtract_from_variable = { cash_upd = mid_w }
+    multiply_variable = { cash_upd = 0.5 }
 }
 sell_goods = {
     # our_nation_not_sphere
     every_country = {
         limit = {
             check_variable = { surplus_month_goods > 0 }
-            OR = {
+            AND = {
                 check_variable = { in_a_sphere = 0 }
-                is_subject = yes
+                is_subject = no
             }
         }
         set_variable = { wanana_sell_goods = surplus_month_goods }
@@ -892,6 +902,9 @@ sell_goods = {
     #        subtract_from_variable = { PREV.surplus_month_goods = PREV.wanana_sell_goods }
     #    }
     # }
+    every_country = {
+        set_variable = { real_large_of_market = large_of_market }
+    }
 }
 distribute_profits = {
     set_variable = {
@@ -932,6 +945,12 @@ distribute_profits = {
         subtract_from_variable = {
             private_capital = our_tax_from_factory_state
         }
+        set_variable = {
+            private_det = private_goods_cnts
+        }
+        subtract_from_variable = {
+            private_det = our_tax_from_factory_state
+        }
         add_to_variable = { PREV.our_tax_from_factory = our_tax_from_factory_state }
     }
     # add_to_variable = { new_nat_tre_det = our_tax_from_factory }
@@ -960,6 +979,7 @@ remake_nat_tre_del = {
     set_variable = { before_national_factory_tot_cost = national_factory_tot_cost }
     add_to_variable = { new_nat_tre_del = military_spend }
     add_to_variable = { new_nat_tre_del = people_cost }
+    add_to_variable = { new_nat_tre_del = debt_interest }
 }
 payroll_qwq = {
     remake_national_factory_tot_cost = yes
@@ -968,6 +988,8 @@ payroll_qwq = {
     }
     remake_mil_spend = yes
     remake_pop_cost = yes
+    set_variable = { debt_interest = nat_debt }
+    multiply_variable = { debt_interest = 0.01 }
     remake_nat_tre_add = yes
     remake_nat_tre_del = yes
     set_variable = { bef_national_factory_tot_profits = national_factory_tot_profits }
@@ -1037,7 +1059,7 @@ industrial_expansion = {
                 check_variable = { private_goods_factory > 0 }
             }
             add_to_variable = { private_goods_factory = -1 }
-            add_to_variable = { private_capital = global.a_new_ind_cost }
+            add_to_variable = { private_capital = global.sell_a_ind }
             remake_private_factory_tot_cost = yes
         }
     }
@@ -1144,6 +1166,24 @@ ai_tax_work = {
         while_loop_effect = {
             break = temp_break
             limit = {
+                check_variable = { people_tax < 1 }
+                check_variable = { new_nat_tre_add < new_nat_tre_del }
+            }
+            add_to_variable = { people_tax = 0.02 }
+            add_to_variable = { people_tax_qaq = 2 }
+            remake_market = yes
+            remake_national_factory_tot_cost = yes
+            every_controlled_state = {
+                remake_private_factory_tot_cost = yes
+            }
+            remake_mil_spend = yes
+            remake_pop_cost = yes
+            remake_nat_tre_add = yes
+            remake_nat_tre_del = yes
+        }
+        while_loop_effect = {
+            break = temp_break
+            limit = {
                 check_variable = { people_tax > 0 }
                 check_variable = { new_nat_tre_add > new_nat_tre_del }
             }
@@ -1159,23 +1199,47 @@ ai_tax_work = {
             remake_nat_tre_add = yes
             remake_nat_tre_del = yes
         }
+    }
+}
+ai_debt_work = {
+    if = {
+        limit = {
+            OR = {
+                is_ai = yes
+                check_variable = { global.autowork = 1 }
+            }
+        }
         while_loop_effect = {
             break = temp_break
             limit = {
-                check_variable = { people_tax < 1 }
-                check_variable = { new_nat_tre_add < new_nat_tre_del }
+                check_variable = { nat_debt_qwq > 10 }
+                check_variable = { new_nat_tre > 1 }
             }
-            add_to_variable = { people_tax = 0.02 }
-            add_to_variable = { people_tax_qaq = 2 }
-            remake_market = yes
-            remake_national_factory_tot_cost = yes
-            every_controlled_state = {
-                remake_private_factory_tot_cost = yes
+            subtract_from_variable = { new_nat_tre = 1 }
+            subtract_from_variable = { nat_debt = 1 }
+            set_variable = { nat_debt_qwq = nat_debt }
+            divide_variable = { nat_debt_qwq = gdpmn }
+            multiply_variable = { nat_debt_qwq = 100 }
+        }
+    }
+}
+ai_inflation_work = {
+    if = {
+        limit = {
+            OR = {
+                is_ai = yes
+                check_variable = { global.autowork = 1 }
             }
-            remake_mil_spend = yes
-            remake_pop_cost = yes
-            remake_nat_tre_add = yes
-            remake_nat_tre_del = yes
+        }
+        set_variable = { my_cash_add = gdpmn }
+        multiply_variable = { my_cash_add = 0.05 }
+        while_loop_effect = {
+            break = temp_break
+            limit = {
+                check_variable = { gdp_inflation < 0 }
+            }
+            add_to_variable = { gdp_inflation = 5 }
+            add_to_variable = { new_nat_tre = my_cash_add }
         }
     }
 }
@@ -1223,9 +1287,13 @@ monthly_we_do = {
             subtract_from_variable = { tax_stab_fac = people_tax }
         }
         remake_wage_factor = yes
-
-        add_to_variable = { new_nat_tre = new_nat_tre_det }
-        
+        if = {
+            limit = { check_variable = { new_nat_tre_det > 0 } }
+            add_to_variable = { new_nat_tre = new_nat_tre_det }
+        }
+        else = {
+            subtract_from_variable = { nat_debt = new_nat_tre_det }
+        }
         set_variable = { bef_gdpmn = gdpmn }
         set_variable = { gdpmn = 0 }
         add_to_variable = { gdpmn = tot_large_of_market }
@@ -1238,7 +1306,15 @@ monthly_we_do = {
         divide_variable = { gdp_growth = bef_gdpmn }
         multiply_variable = { gdp_growth = 100 }
         subtract_from_variable = { gdp_growth = 100 }
-
+        
+        add_to_variable = { gdp_inflation = 1 }
+        subtract_from_variable = { gdp_inflation = gdp_growth }
+        
+        ai_inflation_work = yes
+        ai_debt_work = yes
+        set_variable = { nat_debt_qwq = nat_debt }
+        divide_variable = { nat_debt_qwq = gdpmn }
+        multiply_variable = { nat_debt_qwq = 100 }
         set_variable = { core_population = 0 }
         every_controlled_state = {
 			if = {

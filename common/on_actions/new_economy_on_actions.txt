@@ -66,8 +66,8 @@ on_actions = {
                 set_variable = { new_nat_tre_del = 0 }
                 set_variable = { new_nat_tre_add = 0 }
                 set_variable = { resource_cnt = 0 }
-                set_variable = { tax_qwq = 0.3 }
-                set_variable = { tax_qwq_qaq = 30 }
+                set_variable = { tax_qwq = 0.2 }
+                set_variable = { tax_qwq_qaq = 20 }
                 set_variable = { current_int_1 = tax_qwq_qaq }
                 divide_variable = { current_int_1 = 2 }
                 round_variable = current_int_1
@@ -88,7 +88,8 @@ on_actions = {
                 set_variable = { before_large_of_market = 0 }
                 set_variable = { num_of_people = 0 }
                 
-                # set_variable = { exchange_rate = 1.0 }
+                set_variable = { gdp_inflation = 0.0 }
+                set_variable = { nat_debt = 0.0 }
                 remake_fac_nums = yes
                 set_variable = { national_factory_tot_cost = 0 }
 
@@ -132,17 +133,23 @@ on_actions = {
                 monthly_we_do = yes
                 every_country = {
                     build_base_test = yes
-                    subtract_from_variable = { new_nat_tre = new_nat_tre_det }
                 }
                 monthly_we_do = yes
                 every_country = {
                     build_base_test = yes
-                    subtract_from_variable = { new_nat_tre = new_nat_tre_det }
+                    set_variable = { new_nat_tre = 0 }
+                    set_variable = { nat_debt = 0 }
+                    set_variable = { gdp_inflation = 0.0 }
                 }
                 monthly_we_do = yes
-                every_country = { subtract_from_variable = { new_nat_tre = new_nat_tre_det } }
                 monthly_we_do = yes
                 monthly_we_do = yes
+                monthly_we_do = yes
+                every_country = {
+                    set_variable = { new_nat_tre = 0 }
+                    set_variable = { nat_debt = 0 }
+                    set_variable = { gdp_inflation = 0.0 }
+                }
                 monthly_we_do = yes
                 monthly_we_do = yes
                 monthly_we_do = yes

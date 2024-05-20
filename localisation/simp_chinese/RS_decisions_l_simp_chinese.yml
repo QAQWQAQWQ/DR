@@ -181,11 +181,11 @@ SCX_Factional5_TXT:0 "§Y保定系§!领袖:\n\n\n\n\n\n£LiuWengHui\n\n\n\n\n\n
 
 
 
-money_system_value_name_TT:0 "国库：                                   [?new_nat_tre] B\n\n国内生产总值(GDP):      [?gdpmn] B\n\n上季度收入：                    [?new_nat_tre_det] B\n\n私人公司资本：                [?private_capital_tot] B\n\n市场大小：                          [?before_large_of_market] B\n\n势力范围市场大小：         [?shpere_market] B"
+money_system_value_name_TT:0 "国库：                                   [?new_nat_tre] B\n\n国内生产总值(GDP):      [?gdpmn] B\n\n上季度收入：                    [?new_nat_tre_det] B\n\n私人公司资本：                [?private_capital_tot] B\n\n市场大小：                          [?before_large_of_market] B\n\n势力范围市场大小：       [?shpere_market] B\n\n债务：[?nat_debt|R3] B"
 capital_reserves_change_text_r:0 "[?capital_reserves_change|R3]"
 capital_reserves_change_text_g:0 "[?capital_reserves_change|G3]"
 
-money_system_value_tax_TT:0 "个人所得税税率：     [?people_tax_qaq]%\n\n\n\n\n工业税税率：              [?tax_qwq_qaq]%"
+money_system_value_tax_TT:0 "个人所得税税率：     [?people_tax_qaq]%\n\n\n\n\n工业税税率：              [?tax_qwq_qaq]%\n\n\n\n\nGDP增长率：[?gdp_growth|G3]%\n\n负债率：[?nat_debt_qwq|R3]%\n\n通货紧缩/膨胀：[?gdp_inflation|Y3]%\n[?cash_upd_qwq] [?cash_upd] [?real_large_of_market] [?surplus_month_goods] [?this_month_goods]"
 
 
 ECO_icon_numbers:0 "[ROOT.GetFlag]§Y[ROOT.GetName]§!政府\n\n[ECO_icon_TT]"
