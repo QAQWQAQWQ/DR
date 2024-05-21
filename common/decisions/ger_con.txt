@@ -1142,6 +1142,8 @@ westphalia_decisions = {
     fire_only_once = no
     days_remove = 0
     complete_effect = {
+      custom_effect_tooltip = ger_con_pre_aut_less_1_tool
+      add_to_variable = { global.ger_con_president_authority = -1 }
       57 = { add_core_of = ROOT }
       940 = { add_core_of = ROOT }
       ROOT = { 
@@ -1189,11 +1191,13 @@ westphalia_decisions = {
 		timeout_effect = {
       set_variable = { global.westphalia_end = 1 }
       custom_effect_tooltip = aus_westphalia_eff
+      custom_effect_tooltip = ger_con_pre_aut_more_1_tool
       if = {
         limit = {
           tag = AOX
         }
         hidden_effect = {
+          add_to_variable = { global.ger_con_president_authority = 1 }
           57 = { add_core_of = DOH }
           940 = { add_core_of = DOL }
           DOH = { transfer_state = 57 }
@@ -1201,6 +1205,153 @@ westphalia_decisions = {
           # add_to_variable = { AOX.ger_con_seat = -2 }
         }
       }
+    }
+  }
+  wes_diplomatic_pressure = {
+    visible = {
+        OR ={
+          original_tag = DOL
+          original_tag = DOH
+        }
+        check_variable = { global.westphalia_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri
+        check_variable = { is_wes_now = 0 }
+      }
+    }
+    cost = 30
+    fire_only_once = no
+    days_remove = 14
+    complete_effect = {
+      set_variable = { is_wes_now = 1 }
+    }
+    remove_effect = {
+      custom_effect_tooltip = ger_con_qwq_more_5
+      add_to_variable = { ROOT.westphalia_qwq = 5 }
+      clamp_westphalia_var = yes
+      set_variable = { is_wes_now = 0 }
+    }
+  }
+  wes_aus_diplomatic_pressure = {
+    visible = {
+        OR ={
+          original_tag = DOL
+          original_tag = DOH
+        }
+        check_variable = { global.westphalia_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri
+        check_variable = { is_wes_now = 0 }
+      }
+    }
+    cost = 50
+    fire_only_once = no
+    days_remove = 21
+    complete_effect = {
+      set_variable = { is_wes_now = 1 }
+    }
+    remove_effect = {
+      custom_effect_tooltip = ger_con_qwq_more_10
+      add_to_variable = { ROOT.westphalia_qwq = 10 }
+      clamp_westphalia_var = yes
+      set_variable = { is_wes_now = 0 }
+			add_days_mission_timeout = {
+				mission = aus_westphalia
+				days = -20
+			}
+    }
+  }
+  wes_investment = {
+    visible = {
+        OR ={
+          original_tag = DOL
+          original_tag = DOH
+        }
+        check_variable = { global.westphalia_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri
+        check_variable = { is_wes_now = 0 }
+      }
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri_more_than_1_money
+        check_variable = { new_nat_tre > 1 }
+      }
+    }
+    cost = 0
+    fire_only_once = no
+    days_remove = 40
+    complete_effect = {
+      set_variable = { is_wes_now = 1 }
+    }
+    remove_effect = {
+      custom_effect_tooltip = ger_con_qwq_more_15
+      add_to_variable = { ROOT.westphalia_qwq = 15 }
+      clamp_westphalia_var = yes
+      set_variable = { is_wes_now = 0 }
+      custom_effect_tooltip = less_1_money_tool
+      add_to_variable = { new_nat_tre = -1 }
+      57 = {
+        custom_effect_tooltip = wes_custom_eff_money
+        add_to_variable = { state_cash_tot = 0.5 }
+      }
+      940 = {
+        custom_effect_tooltip = wes_custom_eff_money
+        add_to_variable = { state_cash_tot = 0.5 }
+      }
+    }
+  }
+  wes_go_army = {
+    visible = {
+        OR ={
+          original_tag = DOL
+          original_tag = DOH
+        }
+        check_variable = { global.westphalia_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri
+        check_variable = { is_wes_now = 0 }
+      }
+      has_equipment = { infantry_equipment > 149 }
+    }
+    cost = 0
+    fire_only_once = no
+    days_remove = 56
+    complete_effect = {
+      set_variable = { is_wes_now = 1 }
+    }
+    remove_effect = {
+      custom_effect_tooltip = ger_con_qwq_more_20
+      add_to_variable = { ROOT.westphalia_qwq = 20 }
+      clamp_westphalia_var = yes
+      set_variable = { is_wes_now = 0 }
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -150
+			}
+      57 = {
+        if = {
+					limit = { has_resistance = yes }
+					add_resistance = -5
+        }
+      }
+      940 = {
+        if = {
+					limit = { has_resistance = yes }
+					add_resistance = -5
+        }
+      }
+			add_days_mission_timeout = {
+				mission = aus_westphalia
+				days = -40
+			}
     }
   }
 }
@@ -1227,6 +1378,8 @@ southern_germany_decisions = {
     fire_only_once = no
     days_remove = 0
     complete_effect = {
+      custom_effect_tooltip = ger_con_pre_aut_less_1_tool
+      add_to_variable = { global.ger_con_president_authority = -1 }
       every_country = { 
         limit = {
           OR ={
@@ -1278,6 +1431,8 @@ southern_germany_decisions = {
     fire_only_once = no
     days_remove = 0
     complete_effect = {
+      custom_effect_tooltip = ger_con_pre_aut_more_1_tool
+      add_to_variable = { global.ger_con_president_authority = 1 }
       AOX = {
         country_event = austria.19
       }
@@ -1306,6 +1461,8 @@ sax_thu_decisions = {
     fire_only_once = no
     days_remove = 0
     complete_effect = {
+      custom_effect_tooltip = ger_con_pre_aut_less_1_tool
+      add_to_variable = { global.ger_con_president_authority = -1 }
       every_country = { 
         limit = {
           OR ={

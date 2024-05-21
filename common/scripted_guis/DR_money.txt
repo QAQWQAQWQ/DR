@@ -116,7 +116,6 @@ scripted_gui = {
 				set_variable = { people_tax = people_tax_qaq }
 				multiply_variable = { people_tax = 0.01 }
 			}
-			
 			custom_slider_icon_1_click = {
 				set_variable = { current_int_1 = v }
 				change_parliament_seats_1 = yes
