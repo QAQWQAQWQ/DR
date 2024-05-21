@@ -1263,6 +1263,24 @@ westphalia_decisions = {
 				mission = aus_westphalia
 				days = -20
 			}
+      hidden_effect = {
+        every_country = {
+          limit = {
+            OR = {
+              original_tag = AOX
+              original_tag = DOL
+              original_tag = DOH
+            }
+            NOT = {
+              tag = ROOT
+            }
+          }
+          add_days_mission_timeout = {
+            mission = aus_westphalia
+            days = -20
+          }
+        }
+      }
     }
   }
   wes_investment = {
@@ -1288,14 +1306,14 @@ westphalia_decisions = {
     days_remove = 40
     complete_effect = {
       set_variable = { is_wes_now = 1 }
+      custom_effect_tooltip = less_1_money_tool
+      add_to_variable = { new_nat_tre = -1 }
     }
     remove_effect = {
       custom_effect_tooltip = ger_con_qwq_more_15
       add_to_variable = { ROOT.westphalia_qwq = 15 }
       clamp_westphalia_var = yes
       set_variable = { is_wes_now = 0 }
-      custom_effect_tooltip = less_1_money_tool
-      add_to_variable = { new_nat_tre = -1 }
       57 = {
         custom_effect_tooltip = wes_custom_eff_money
         add_to_variable = { state_cash_tot = 0.5 }
@@ -1326,16 +1344,16 @@ westphalia_decisions = {
     days_remove = 56
     complete_effect = {
       set_variable = { is_wes_now = 1 }
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -150
+			}
     }
     remove_effect = {
       custom_effect_tooltip = ger_con_qwq_more_20
       add_to_variable = { ROOT.westphalia_qwq = 20 }
       clamp_westphalia_var = yes
       set_variable = { is_wes_now = 0 }
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -150
-			}
       57 = {
         if = {
 					limit = { has_resistance = yes }
@@ -1352,6 +1370,72 @@ westphalia_decisions = {
 				mission = aus_westphalia
 				days = -40
 			}
+      hidden_effect = {
+        every_country = {
+          limit = {
+            OR = {
+              original_tag = AOX
+              original_tag = DOL
+              original_tag = DOH
+            }
+            NOT = {
+              tag = ROOT
+            }
+          }
+          add_days_mission_timeout = {
+            mission = aus_westphalia
+            days = -40
+          }
+        }
+      }
+    }
+  }
+  aus_wes_diplomatic = {
+    visible = {
+        OR ={
+          original_tag = AOX
+        }
+        AOX = {
+          has_completed_focus = AUS_confederation_2
+        }
+        check_variable = { global.westphalia_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri
+        check_variable = { is_wes_now = 0 }
+      }
+    }
+    cost = 20
+    fire_only_once = no
+    days_remove = 60
+    complete_effect = {
+      set_variable = { is_wes_now = 1 }
+    }
+    remove_effect = {
+      set_variable = { is_wes_now = 0 }
+			add_days_mission_timeout = {
+				mission = aus_westphalia
+				days = -30
+			}
+      hidden_effect = {
+        every_country = {
+          limit = {
+            OR = {
+              original_tag = AOX
+              original_tag = DOL
+              original_tag = DOH
+            }
+            NOT = {
+              tag = ROOT
+            }
+          }
+          add_days_mission_timeout = {
+            mission = aus_westphalia
+            days = -30
+          }
+        }
+      }
     }
   }
 }
@@ -1416,9 +1500,10 @@ southern_germany_decisions = {
       factor = 100
     }
     visible = {
-        OR ={
-          original_tag = AOX
-        }
+          AND = {
+            original_tag = AOX
+            has_completed_focus = AUS_confederation_3
+          }
         check_variable = { global.southern_germany_end = 0 }
 		}
     available = {
@@ -1437,6 +1522,139 @@ southern_germany_decisions = {
         country_event = austria.19
       }
       set_variable = { global.southern_germany_end = 1 }
+    }
+  }
+  SGF_diplomatic_pressure = {
+    visible = {
+        OR ={
+          original_tag = DOR
+          original_tag = DOB
+          original_tag = DOF
+          AND = {
+            original_tag = AOX
+            has_completed_focus = AUS_confederation_3
+          }
+        }
+        check_variable = { global.southern_germany_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri
+        check_variable = { is_sgf_now = 0 }
+      }
+    }
+    cost = 30
+    fire_only_once = no
+    days_remove = 14
+    complete_effect = {
+      set_variable = { is_sgf_now= 1 }
+    }
+    remove_effect = {
+      custom_effect_tooltip = ger_con_qwq_more_5
+      add_to_variable = { ROOT.southern_germany_qwq = 5 }
+      clamp_south_ger_var = yes
+      set_variable = { is_sgf_now = 0 }
+    }
+  }
+  
+  SGF_investment = {
+    visible = {
+        OR ={
+          original_tag = DOR
+          original_tag = DOB
+          original_tag = DOF
+          AND = {
+            original_tag = AOX
+            has_completed_focus = AUS_confederation_3
+          }
+        }
+        check_variable = { global.southern_germany_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri
+        check_variable = { is_sgf_now = 0 }
+      }
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri_more_than_1_money
+        check_variable = { new_nat_tre > 1 }
+      }
+    }
+    cost = 0
+    fire_only_once = no
+    days_remove = 40
+    complete_effect = {
+      set_variable = { is_sgf_now = 1 }
+      custom_effect_tooltip = less_1_money_tool
+      add_to_variable = { new_nat_tre = -1 }
+    }
+    remove_effect = {
+      custom_effect_tooltip = ger_con_qwq_more_15
+      add_to_variable = { ROOT.southern_germany_qwq = 15 }
+      clamp_westphalia_var = yes
+      set_variable = { is_sgf_now = 0 }
+      random_state = {
+        limit = {
+          OR = {
+            is_core_of = DOR
+            is_core_of = DOB
+            is_core_of = DOF
+          }
+        }
+        custom_effect_tooltip = wes_custom_eff_money
+        add_to_variable = { state_cash_tot = 0.5 }
+      }
+      random_state = {
+        limit = {
+          OR = {
+            is_core_of = DOR
+            is_core_of = DOB
+            is_core_of = DOF
+          }
+        }
+        custom_effect_tooltip = wes_custom_eff_money
+        add_to_variable = { state_cash_tot = 0.5 }
+      }
+    }
+  }
+  SGF_army = {
+    visible = {
+        OR ={
+          original_tag = DOR
+          original_tag = DOB
+          original_tag = DOF
+          AND = {
+            original_tag = AOX
+            has_completed_focus = AUS_confederation_3
+          }
+        }
+        check_variable = { global.southern_germany_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri
+        check_variable = { is_sgf_now = 0 }
+      }
+      has_equipment = { infantry_equipment > 299 }
+    }
+    cost = 0
+    fire_only_once = no
+    days_remove = 40
+    complete_effect = {
+      set_variable = { is_sgf_now = 1 }
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -300
+			}
+    }
+    remove_effect = {
+      custom_effect_tooltip = ger_con_qwq_more_20
+      add_to_variable = { ROOT.southern_germany_qwq = 20 }
+      DOR = { army_experience = 5 }
+      DOF = { army_experience = 5 }
+      DOB = { army_experience = 5 }
+      clamp_westphalia_var = yes
+      set_variable = { is_sgf_now = 0 }
     }
   }
 }
@@ -1557,7 +1775,7 @@ sax_thu_decisions = {
         add_core_of = ROOT
       }
       set_cosmetic_tag = thuringen
-      60 = { add_core_of = 60 }
+      60 = { add_core_of = ROOT }
       set_variable = { global.sax_thu_end = 1 }
     }
   }
