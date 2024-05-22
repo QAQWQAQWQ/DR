@@ -243,6 +243,7 @@ country_event = {
 				}
 				add_core_of = DOR
 			}
+      		1031 = { add_core_of = PREV }
 			set_cosmetic_tag = SGF
 		}
 		AOX = { puppet = DOR }

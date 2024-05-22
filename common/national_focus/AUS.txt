@@ -3653,7 +3653,7 @@ bosnia_war_end = yes
 		cost = 1.00
 		allow_branch = {
 			OR = {
-				# always = yes
+				always = yes
 				has_completed_focus = AUS_ger_22
 			}
 		}
@@ -3700,6 +3700,7 @@ bosnia_war_end = yes
 		available = {
 		}
 		completion_reward = {
+			add_political_power = 50
 			custom_effect_tooltip = AOX_con_2_eff
 		}
 		bypass = {
@@ -3722,6 +3723,7 @@ bosnia_war_end = yes
 		available = {
 		}
 		completion_reward = {
+			add_political_power = 50
 			custom_effect_tooltip = AOX_con_3_eff
 		}
 		bypass = {
@@ -3744,6 +3746,7 @@ bosnia_war_end = yes
 		available = {
 		}
 		completion_reward = {
+			add_political_power = 50
 			custom_effect_tooltip = AOX_con_4_eff
 		}
 		bypass = {

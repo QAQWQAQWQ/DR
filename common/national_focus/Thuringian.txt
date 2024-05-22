@@ -242,3 +242,48 @@
 			}
 		}
 	}
+	shared_focus  = {
+		id = Thuringian_13
+		icon = GFX_goal_Thuringian_13
+		cost = 5.00
+		x = 5
+		y = 5
+		available = {
+			always = no
+		}
+		completion_reward = {
+		}
+		bypass = {
+			AOX = { has_completed_focus = AUS_confederation_0 }
+		}
+	}
+	shared_focus  = {
+		id = Thuringian_14
+		icon = GFX_goal_Thuringian_14
+		cost = 5.00
+	    relative_position_id = Thuringian_13
+	    prerequisite = { focus = Thuringian_13 }
+		x = -3
+		y = 1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = sax_thu_end_trigger
+				check_variable = { global.sax_thu_end = 1 }
+			}
+		}
+		completion_reward = {
+		}
+	}
+	shared_focus  = {
+		id = Thuringian_15
+		icon = GFX_goal_Thuringian_15
+		cost = 5.00
+	    relative_position_id = Thuringian_14
+	    prerequisite = { focus = Thuringian_14 }
+		x = 0
+		y = 1
+		available = {
+		}
+		completion_reward = {
+		}
+	}

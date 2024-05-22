@@ -10,4 +10,213 @@ focus_tree = {
 	default = no
 	shared_focus = Thuringian_0
 	shared_focus = Thuringian_8
+	shared_focus = Thuringian_13
+    focus = {
+		id = SAD_0
+		icon = GFX_SAD_0
+		cost = 5.00
+	    relative_position_id = Thuringian_13
+	    prerequisite = { focus = Thuringian_13 }
+		allow_branch = {
+			tag = SAD
+		}
+		mutually_exclusive = {
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAD_1
+		icon = GFX_SAD_1
+		cost = 5.00
+	    relative_position_id = SAD_0
+	    prerequisite = { focus = SAD_0 }
+		mutually_exclusive = {
+		}
+		x = -2
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAD_11
+		icon = GFX_SAD_11
+		cost = 5.00
+	    relative_position_id = SAD_1
+	    prerequisite = { focus = SAD_1 }
+		mutually_exclusive = {
+		}
+		x = -2
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAD_2
+		icon = GFX_SAD_2
+		cost = 5.00
+	    relative_position_id = SAD_1
+	    prerequisite = { focus = SAD_1 }
+		mutually_exclusive = {
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAD_3
+		icon = GFX_SAD_3
+		cost = 5.00
+	    relative_position_id = SAD_2
+	    prerequisite = { focus = SAD_2 }
+		mutually_exclusive = {
+		}
+		x = -2
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAD_4
+		icon = GFX_SAD_4
+		cost = 5.00
+	    relative_position_id = SAD_2
+	    prerequisite = { focus = SAD_2 }
+		mutually_exclusive = {
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAD_5
+		icon = GFX_SAD_5
+		cost = 5.00
+	    relative_position_id = SAD_2
+	    prerequisite = { focus = SAD_2 }
+		mutually_exclusive = {
+		}
+		x = 2
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAD_6
+		icon = GFX_SAD_6
+		cost = 5.00
+	    relative_position_id = SAD_0
+	    prerequisite = { focus = SAD_0 }
+		mutually_exclusive = {
+		}
+		x = 3
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAD_7
+		icon = GFX_SAD_7
+		cost = 5.00
+	    relative_position_id = SAD_6
+	    prerequisite = { focus = SAD_6 }
+		mutually_exclusive = {
+		}
+		x = -1
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAD_8
+		icon = GFX_SAD_8
+		cost = 5.00
+	    relative_position_id = SAD_6
+	    prerequisite = { focus = SAD_6 }
+		mutually_exclusive = {
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAD_9
+		icon = GFX_SAD_9
+		cost = 5.00
+	    relative_position_id = SAD_8
+	    prerequisite = { focus = SAD_7 }
+	    prerequisite = { focus = SAD_8 }
+		mutually_exclusive = {
+		}
+		x = -1
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAD_10
+		icon = GFX_SAD_10
+		cost = 5.00
+	    relative_position_id = SAD_0
+	    prerequisite = { focus = SAD_0 }
+		mutually_exclusive = {
+		}
+		x = 6
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
 }
