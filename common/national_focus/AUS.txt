@@ -1719,6 +1719,11 @@ bosnia_war_end = yes
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
 			}
+			AOX = {
+				remove_ideas = {
+					AOX_Hungarian_independence_movement
+				}
+			}
 		}
 	}
 	focus = {
@@ -1734,6 +1739,11 @@ bosnia_war_end = yes
 			focus = AUS_german_1
 		}
 		completion_reward = {
+			AOX = {
+				remove_ideas = {
+					AOX_Hungarian_independence_movement
+				}
+			}
 			KOH={
 				set_cosmetic_tag = KOH_color
 				set_politics = {
@@ -2241,7 +2251,13 @@ bosnia_war_end = yes
 			919 = {
 				add_claim_by = AOX 
 			}
-			1 = {
+			941 = {
+				add_claim_by = AOX 
+			}
+			938 = {
+				add_claim_by = AOX 
+			}
+			160 = {
 				add_claim_by = AOX 
 			}
 		}

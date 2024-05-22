@@ -367,14 +367,19 @@ on_actions = {
                         }
                         BXM = { exists = yes }
                         BXM = { is_puppet_of = AOX }
+                        BXM = { has_idea = Part_of_Habsburgs }
                     }
                     add_ideas = { AOX_ideas_the_undead_of_hus }
                 }
                 if = {
                     limit = {
                         AOX = { has_idea = AOX_ideas_the_undead_of_hus }
-                        check_variable = {
-                            AOX.aus_hun_has_meg^3 = 1
+                        OR = {
+                            check_variable = {
+                                AOX.aus_hun_has_meg^3 = 1
+                            }
+                            BXM = { exists = no }
+                            NOT = { BXM = { has_idea = Part_of_Habsburgs } }
                         }
                     }
                     remove_ideas = { AOX_ideas_the_undead_of_hus }
