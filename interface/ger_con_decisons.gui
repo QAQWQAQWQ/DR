@@ -5,12 +5,17 @@ guiTypes = {
 		size = { width = 510 height= 350 }
 		background = {
 			name = "ger_con_background"
-			spriteType = "GFX_ger_con_bg"
-			position = { x = 5 y = 0 }
+			spriteType = "GFX_ger_con_bg1"
+			position = { x = 285 y = 15 }
+		}
+		background = { 
+			name = "ger_con_background"
+			spriteType = "GFX_ger_con_bg2"
+			position = { x = 7 y = 0 }
 		}
 		gridboxtype = {
 			name = "gercon_grid"
-			position = { x = 280 y = 0 }
+			position = { x = 280 y = 55 }
 			size = { width = 510 height= 350 }
 			slotsize = { width = 500  height = 20 }
 			max_slot_horizontal = 1
@@ -18,7 +23,7 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "ger_con_authority"
-			position = { x = 50 y = 2 }
+			position = { x = 295 y = 20 }
 			font = "hoi_16mbs"
 			text = "ger_con_authority_text"
 			maxWidth = 250
@@ -27,7 +32,7 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "ger_con_now_motion"
-			position = { x = 50 y = 100 }
+			position = { x = 80 y = 260 }
 			font = "hoi_16mbs"
 			text = "ger_con_motion_text"
 			maxWidth = 250

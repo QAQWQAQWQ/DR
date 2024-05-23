@@ -788,6 +788,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/Part_Habsburgs.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_the_undead_of_hus"
+		texturefile = "gfx/interface/ideas/the_undead_of_hus.dds"
+	}
+	
+
+
+
+	spriteType = {
 		name = "GFX_idea_pre_armys"
 		texturefile = "gfx/interface/ideas/pre_armys.dds"
 	}
@@ -1133,7 +1141,15 @@ spriteTypes = {
 ######
 ######制造商
 ######
-
+   spriteType = {
+		name = "GFX_idea_Renfe"
+		texturefile = "gfx/interface/ideas/organization/Renfe.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_La_Electricidad_de_Caracas"
+		texturefile = "gfx/interface/ideas/organization/La_Electricidad_de_Caracas.dds"
+	}
+	
     spriteType = {
 		name = "GFX_idea_SNCASE"
 		texturefile = "gfx/interface/ideas/organization/SNCASE.dds"

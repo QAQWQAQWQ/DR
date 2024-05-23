@@ -1,3 +1,4 @@
+#!gfx:interface\RS_icon.gfx
 focus_tree = {
 	id = SBY
 	country = {
@@ -140,8 +141,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			remove_ideas = SBY_Manuel_Garcia_Prieto_H
-			
-		    
+			custom_effect_tooltip = available_political_advisor
+	        show_ideas_tooltip = SBY_Gabriel_Maura_Gamazo_H
+	        show_ideas_tooltip = SBY_Miguel_Primo_de_Rivera_H
+	        show_ideas_tooltip = SBY_Francisco_Cambo_H
 		}
 
 	}
@@ -404,8 +407,13 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			custom_effect_tooltip = available_political_advisor
-	        show_ideas_tooltip = SBY_Gabriel_Maura_Gamazo_H
+			set_popularities = {
+				Liberalism=67
+				Conservatism = 13
+				Anarchism = 10
+				Revolutionism = 10
+			}
+			
 			add_popularity = {
 				ideology = Liberalism
 				popularity = 0.05
@@ -440,8 +448,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			custom_effect_tooltip = available_political_advisor
-	        show_ideas_tooltip = SBY_Miguel_Primo_de_Rivera_H
+			set_popularities = {
+				Conservatism=67
+				Liberalism = 13
+				Anarchism = 10
+				Revolutionism = 10
+			}
 		}
 	}
 	focus = {
@@ -473,8 +485,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			custom_effect_tooltip = available_political_advisor
-	        show_ideas_tooltip = SBY_Francisco_Cambo_H
+			set_popularities = {
+				Conservatism=67
+				Liberalism = 13
+				Anarchism = 10
+				Revolutionism = 10
+			}
 		}
 	}
 	focus = { 
@@ -496,6 +512,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			set_party_name = {
+				ideology = Conservatism
+				long_name = SBY_Conservatism_party1_long
+				name = SBY_Conservatism_party1
+			}
 			
 		}
 	}
@@ -547,7 +568,13 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			set_party_name = {
+				ideology = Conservatism
+				long_name = SBY_Conservatism_party2_long
+				name = SBY_Conservatism_party2
+			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip =  SBY_Pedro_Rahola_Molinas_P
 		}
 	}
 	focus = {
@@ -609,7 +636,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = SBY_Eduardo_Aunos_Perez_P
+			show_ideas_tooltip = SBY_Juan_Ventosa_y_Calvell_P
 		}
 	}
 	focus = {
@@ -653,7 +682,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
 		}
 	}
 	focus = {
@@ -675,7 +707,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			show_ideas_tooltip = SBY_La_Electricidad_de_Caracas
 		}
 	}
 	focus = {
@@ -697,7 +729,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			show_ideas_tooltip = SBY_Renfe
 		}
 	}
 	focus = {
@@ -822,6 +854,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = Special_police
+				add_idea = State_control
+			}
 			add_ideas =  National_emergency
 		}
 	}
@@ -866,7 +902,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = SBY_Severiano_Martinez_Anido_M
 		}
 	}
 	focus = {
@@ -907,10 +944,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			add_war_support = 0.05
 			set_party_name = {
 				ideology = Conservatism
-				long_name = SBY_Conservatism_party_long
-				name = SBY_Conservatism_party
+				long_name = SBY_Conservatism_party0_long
+				name = SBY_Conservatism_party0
 			}
 		}
 	}
@@ -976,6 +1014,12 @@ focus_tree = {
 		y = 10
 		available = {
 			has_idea = SBY_Miguel_Primo_de_Rivera_H
+			custom_trigger_tooltip = {
+				check_variable = {
+					new_nat_tre > 1
+				}
+				tooltip = new_nat_tre01_trigger
+			}
 		}
 		prerequisite = {
 			focus = SBY_focus33
@@ -992,7 +1036,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			add_research_slot = 1
+			add_to_variable = {
+				new_nat_tre = -1
+				tooltip = new_nat_tre_del01
+			}
 		}
 	}
 	focus = {
@@ -1019,6 +1067,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			add_war_support = 0.05
 			add_ideas =SBY_Patriotism_I
 		}
 	}
@@ -1070,7 +1119,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = SBY_Jose_Calvo_Sotelo_P
+			show_ideas_tooltip = SBY_Angel_Ossorio_Gallardo_P
+			show_ideas_tooltip = SBY_Antonio_Goicoechea_Cosculluela_P
 		}
 	}
 	focus = {
@@ -1212,7 +1264,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			add_stability = 0.05
+			add_threat = -3
 		}
 	}
 	focus = {
