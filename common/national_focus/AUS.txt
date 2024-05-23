@@ -285,6 +285,9 @@ focus_tree = {
 			DOS = { ger_con_pre_controlled = yes }
 		}
 		available = {
+			NOT = {
+				german_war_has_boom = yes
+			}
 			AOX = {
 				has_completed_focus = AUS_ger_2
 			}
@@ -343,6 +346,9 @@ focus_tree = {
 			WWS = { country_event = austria.4 }
 		}
 		available = {
+			NOT = {
+				german_war_has_boom = yes
+			}
 			has_completed_focus = AUS_ger_2
 		}
 		bypass = {
@@ -716,6 +722,14 @@ focus_tree = {
 				ger_con_aus_controlled = yes
 			}
 			mark_focus_tree_layout_dirty = yes
+			hidden_effect = {
+				if = {
+					limit = {
+						aus_has_win_german_war = yes
+					}
+					complete_national_focus = AUS_confederation_0
+				}
+			}
 		}
 		available = {
 			DOS = { ger_con_uni_tri_aus = yes }
@@ -1705,6 +1719,11 @@ bosnia_war_end = yes
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
 			}
+			AOX = {
+				remove_ideas = {
+					AOX_Hungarian_independence_movement
+				}
+			}
 		}
 	}
 	focus = {
@@ -1720,6 +1739,11 @@ bosnia_war_end = yes
 			focus = AUS_german_1
 		}
 		completion_reward = {
+			AOX = {
+				remove_ideas = {
+					AOX_Hungarian_independence_movement
+				}
+			}
 			KOH={
 				set_cosmetic_tag = KOH_color
 				set_politics = {
@@ -2227,7 +2251,13 @@ bosnia_war_end = yes
 			919 = {
 				add_claim_by = AOX 
 			}
-			1 = {
+			941 = {
+				add_claim_by = AOX 
+			}
+			938 = {
+				add_claim_by = AOX 
+			}
+			160 = {
 				add_claim_by = AOX 
 			}
 		}
@@ -3623,7 +3653,7 @@ bosnia_war_end = yes
 		cost = 1.00
 		allow_branch = {
 			OR = {
-				# always = yes
+				always = yes
 				has_completed_focus = AUS_ger_22
 			}
 		}
@@ -3652,7 +3682,9 @@ bosnia_war_end = yes
 		available = {
 		}
 		completion_reward = {
-			add_political_power = 150
+      		custom_effect_tooltip = ger_con_pre_aut_more_1_tool
+			add_to_variable = { global.ger_con_president_authority = 1 }
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -3668,6 +3700,14 @@ bosnia_war_end = yes
 		available = {
 		}
 		completion_reward = {
+			add_political_power = 50
+			custom_effect_tooltip = AOX_con_2_eff
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = westphalia_end_trigger
+				check_variable = { global.westphalia_end = 1 }
+			}
 		}
 	}
 	focus = {
@@ -3683,6 +3723,14 @@ bosnia_war_end = yes
 		available = {
 		}
 		completion_reward = {
+			add_political_power = 50
+			custom_effect_tooltip = AOX_con_3_eff
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = southern_germany_end_trigger
+				check_variable = { global.southern_germany_end = 1 }
+			}
 		}
 	}
 	focus = {
@@ -3698,6 +3746,14 @@ bosnia_war_end = yes
 		available = {
 		}
 		completion_reward = {
+			add_political_power = 50
+			custom_effect_tooltip = AOX_con_4_eff
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = sax_thu_end_trigger
+				check_variable = { global.sax_thu_end = 1 }
+			}
 		}
 	}
 	focus = {
@@ -3713,8 +3769,48 @@ bosnia_war_end = yes
 		allow_branch = {
 		}
 		available = {
+			AND = {
+				custom_trigger_tooltip = {
+					tooltip = ger_con_authority_more_than_2
+					check_variable = { global.ger_con_president_authority > 2 }
+				}
+				custom_trigger_tooltip = {
+					tooltip = westphalia_end_trigger
+					check_variable = { global.westphalia_end = 1 }
+				}
+				custom_trigger_tooltip = {
+					tooltip = southern_germany_end_trigger
+					check_variable = { global.southern_germany_end = 1 }
+				}
+				custom_trigger_tooltip = {
+					tooltip = sax_thu_end_trigger
+					check_variable = { global.sax_thu_end = 1 }
+				}
+			}
 		}
 		completion_reward = {
+			custom_effect_tooltip = ger_con_pre_aut_more_1_tool
+			add_to_variable = { global.ger_con_president_authority = 1 }
+		}
+		bypass = {
+			AND = {
+				custom_trigger_tooltip = {
+					tooltip = ger_con_authority_less_than_3
+					check_variable = { global.ger_con_president_authority < 3 }
+				}
+				custom_trigger_tooltip = {
+					tooltip = westphalia_end_trigger
+					check_variable = { global.westphalia_end = 1 }
+				}
+				custom_trigger_tooltip = {
+					tooltip = southern_germany_end_trigger
+					check_variable = { global.southern_germany_end = 1 }
+				}
+				custom_trigger_tooltip = {
+					tooltip = sax_thu_end_trigger
+					check_variable = { global.sax_thu_end = 1 }
+				}
+			}
 		}
 	}
 	focus = {

@@ -1,0 +1,35 @@
+defined_text = {
+	name = core_claim_texts
+	text = {
+		localization_key = is_core_text
+		trigger = {
+			FROM = {
+				is_core_of = ROOT 
+			}
+		}
+	}
+	text = {
+		localization_key = is_claim_text
+		trigger = {
+			FROM = {
+				NOT = {
+					is_core_of = ROOT 
+				}
+                is_claimed_by = ROOT
+			}
+		}
+	}
+	text = {
+		localization_key = is_none_text
+		trigger = {
+			FROM = {
+				NOT = {
+					is_core_of = ROOT 
+				}
+				NOT = {
+                	is_claimed_by = ROOT
+				}
+			}
+		}
+	}
+}

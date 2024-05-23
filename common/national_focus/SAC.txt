@@ -10,4 +10,267 @@ focus_tree = {
 	default = no
 	shared_focus = Thuringian_0
 	shared_focus = Thuringian_8
+	shared_focus = Thuringian_13
+    focus = {
+		id = SAC_0
+		icon = GFX_SAC_0
+		cost = 5.00
+	    relative_position_id = Thuringian_13
+	    prerequisite = { focus = Thuringian_13 }
+		allow_branch = {
+			tag = SAC
+		}
+		mutually_exclusive = {
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAC_1
+		icon = GFX_SAC_1
+		cost = 5.00
+	    relative_position_id = SAC_0
+	    prerequisite = { focus = SAC_0 }
+		mutually_exclusive = {
+		}
+		x = -2
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAC_2
+		icon = GFX_SAC_2
+		cost = 5.00
+	    relative_position_id = SAC_1
+	    prerequisite = { focus = SAC_1 }
+		mutually_exclusive = {
+		}
+		x = -1
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAC_3
+		icon = GFX_SAC_3
+		cost = 5.00
+	    relative_position_id = SAC_1
+	    prerequisite = { focus = SAC_1 }
+		mutually_exclusive = {
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAC_4
+		icon = GFX_SAC_4
+		cost = 5.00
+	    relative_position_id = SAC_2
+	    prerequisite = { focus = SAC_2 }
+	    prerequisite = { focus = SAC_3 }
+		mutually_exclusive = {
+		}
+		x = 2
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAC_5
+		icon = GFX_SAC_5
+		cost = 5.00
+	    relative_position_id = SAC_2
+	    prerequisite = { focus = SAC_2 }
+	    prerequisite = { focus = SAC_3 }
+		mutually_exclusive = {
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAC_6
+		icon = GFX_SAC_6
+		cost = 5.00
+	    relative_position_id = SAC_0
+	    prerequisite = { focus = SAC_0 }
+		mutually_exclusive = {
+		}
+		x = 2
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAC_7
+		icon = GFX_SAC_7
+		cost = 5.00
+	    relative_position_id = SAC_6
+	    prerequisite = { focus = SAC_6 }
+		mutually_exclusive = {
+		}
+		x = -1
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAC_8
+		icon = GFX_SAC_8
+		cost = 2.00
+	    relative_position_id = SAC_6
+	    prerequisite = { focus = SAC_6 }
+		mutually_exclusive = {
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAC_9
+		icon = GFX_SAC_9
+		cost = 1.00
+	    relative_position_id = SAC_8
+	    prerequisite = { focus = SAC_8 }
+		mutually_exclusive = {
+		}
+		x = -2
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAC_10
+		icon = GFX_SAC_10
+		cost = 1.00
+	    relative_position_id = SAC_8
+	    prerequisite = { focus = SAC_8 }
+		mutually_exclusive = {
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAC_11
+		icon = GFX_SAC_11
+		cost = 1.00
+	    relative_position_id = SAC_8
+	    prerequisite = { focus = SAC_8 }
+		mutually_exclusive = {
+		}
+		x = 2
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAC_14
+		icon = GFX_SAC_14
+		cost = 5.00
+	    relative_position_id = SAC_0
+	    prerequisite = { focus = SAC_0 }
+		mutually_exclusive = {
+			focus = SAC_12
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAC_12
+		icon = GFX_SAC_12
+		cost = 5.00
+	    relative_position_id = SAC_0
+	    prerequisite = { focus = SAC_0 }
+		mutually_exclusive = {
+			focus = SAC_14
+		}
+		x = 6
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAC_13
+		icon = GFX_SAC_13
+		cost = 5.00
+	    relative_position_id = SAC_12
+	    prerequisite = { focus = SAC_12 }
+		mutually_exclusive = {
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
 }

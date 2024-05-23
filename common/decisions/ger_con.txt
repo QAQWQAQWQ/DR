@@ -1142,6 +1142,8 @@ westphalia_decisions = {
     fire_only_once = no
     days_remove = 0
     complete_effect = {
+      custom_effect_tooltip = ger_con_pre_aut_less_1_tool
+      add_to_variable = { global.ger_con_president_authority = -1 }
       57 = { add_core_of = ROOT }
       940 = { add_core_of = ROOT }
       ROOT = { 
@@ -1189,16 +1191,249 @@ westphalia_decisions = {
 		timeout_effect = {
       set_variable = { global.westphalia_end = 1 }
       custom_effect_tooltip = aus_westphalia_eff
+      custom_effect_tooltip = ger_con_pre_aut_more_1_tool
       if = {
         limit = {
           tag = AOX
         }
         hidden_effect = {
+          add_to_variable = { global.ger_con_president_authority = 1 }
           57 = { add_core_of = DOH }
           940 = { add_core_of = DOL }
           DOH = { transfer_state = 57 }
           DOL = { transfer_state = 940 }
           # add_to_variable = { AOX.ger_con_seat = -2 }
+        }
+      }
+    }
+  }
+  wes_diplomatic_pressure = {
+    visible = {
+        OR ={
+          original_tag = DOL
+          original_tag = DOH
+        }
+        check_variable = { global.westphalia_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri
+        check_variable = { is_wes_now = 0 }
+      }
+    }
+    cost = 30
+    fire_only_once = no
+    days_remove = 14
+    complete_effect = {
+      set_variable = { is_wes_now = 1 }
+    }
+    remove_effect = {
+      custom_effect_tooltip = ger_con_qwq_more_5
+      add_to_variable = { ROOT.westphalia_qwq = 5 }
+      clamp_westphalia_var = yes
+      set_variable = { is_wes_now = 0 }
+    }
+  }
+  wes_aus_diplomatic_pressure = {
+    visible = {
+        OR ={
+          original_tag = DOL
+          original_tag = DOH
+        }
+        check_variable = { global.westphalia_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri
+        check_variable = { is_wes_now = 0 }
+      }
+    }
+    cost = 50
+    fire_only_once = no
+    days_remove = 21
+    complete_effect = {
+      set_variable = { is_wes_now = 1 }
+    }
+    remove_effect = {
+      custom_effect_tooltip = ger_con_qwq_more_10
+      add_to_variable = { ROOT.westphalia_qwq = 10 }
+      clamp_westphalia_var = yes
+      set_variable = { is_wes_now = 0 }
+			add_days_mission_timeout = {
+				mission = aus_westphalia
+				days = -20
+			}
+      hidden_effect = {
+        every_country = {
+          limit = {
+            OR = {
+              original_tag = AOX
+              original_tag = DOL
+              original_tag = DOH
+            }
+            NOT = {
+              tag = ROOT
+            }
+          }
+          add_days_mission_timeout = {
+            mission = aus_westphalia
+            days = -20
+          }
+        }
+      }
+    }
+  }
+  wes_investment = {
+    visible = {
+        OR ={
+          original_tag = DOL
+          original_tag = DOH
+        }
+        check_variable = { global.westphalia_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri
+        check_variable = { is_wes_now = 0 }
+      }
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri_more_than_1_money
+        check_variable = { new_nat_tre > 1 }
+      }
+    }
+    cost = 0
+    fire_only_once = no
+    days_remove = 40
+    complete_effect = {
+      set_variable = { is_wes_now = 1 }
+      custom_effect_tooltip = less_1_money_tool
+      add_to_variable = { new_nat_tre = -1 }
+    }
+    remove_effect = {
+      custom_effect_tooltip = ger_con_qwq_more_15
+      add_to_variable = { ROOT.westphalia_qwq = 15 }
+      clamp_westphalia_var = yes
+      set_variable = { is_wes_now = 0 }
+      57 = {
+        custom_effect_tooltip = wes_custom_eff_money
+        add_to_variable = { state_cash_tot = 0.5 }
+      }
+      940 = {
+        custom_effect_tooltip = wes_custom_eff_money
+        add_to_variable = { state_cash_tot = 0.5 }
+      }
+    }
+  }
+  wes_go_army = {
+    visible = {
+        OR ={
+          original_tag = DOL
+          original_tag = DOH
+        }
+        check_variable = { global.westphalia_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri
+        check_variable = { is_wes_now = 0 }
+      }
+      has_equipment = { infantry_equipment > 149 }
+    }
+    cost = 0
+    fire_only_once = no
+    days_remove = 56
+    complete_effect = {
+      set_variable = { is_wes_now = 1 }
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -150
+			}
+    }
+    remove_effect = {
+      custom_effect_tooltip = ger_con_qwq_more_20
+      add_to_variable = { ROOT.westphalia_qwq = 20 }
+      clamp_westphalia_var = yes
+      set_variable = { is_wes_now = 0 }
+      57 = {
+        if = {
+					limit = { has_resistance = yes }
+					add_resistance = -5
+        }
+      }
+      940 = {
+        if = {
+					limit = { has_resistance = yes }
+					add_resistance = -5
+        }
+      }
+			add_days_mission_timeout = {
+				mission = aus_westphalia
+				days = -40
+			}
+      hidden_effect = {
+        every_country = {
+          limit = {
+            OR = {
+              original_tag = AOX
+              original_tag = DOL
+              original_tag = DOH
+            }
+            NOT = {
+              tag = ROOT
+            }
+          }
+          add_days_mission_timeout = {
+            mission = aus_westphalia
+            days = -40
+          }
+        }
+      }
+    }
+  }
+  aus_wes_diplomatic = {
+    visible = {
+        OR ={
+          original_tag = AOX
+        }
+        AOX = {
+          has_completed_focus = AUS_confederation_2
+        }
+        check_variable = { global.westphalia_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri
+        check_variable = { is_wes_now = 0 }
+      }
+    }
+    cost = 20
+    fire_only_once = no
+    days_remove = 60
+    complete_effect = {
+      set_variable = { is_wes_now = 1 }
+    }
+    remove_effect = {
+      set_variable = { is_wes_now = 0 }
+			add_days_mission_timeout = {
+				mission = aus_westphalia
+				days = -30
+			}
+      hidden_effect = {
+        every_country = {
+          limit = {
+            OR = {
+              original_tag = AOX
+              original_tag = DOL
+              original_tag = DOH
+            }
+            NOT = {
+              tag = ROOT
+            }
+          }
+          add_days_mission_timeout = {
+            mission = aus_westphalia
+            days = -30
+          }
         }
       }
     }
@@ -1227,6 +1462,8 @@ southern_germany_decisions = {
     fire_only_once = no
     days_remove = 0
     complete_effect = {
+      custom_effect_tooltip = ger_con_pre_aut_less_1_tool
+      add_to_variable = { global.ger_con_president_authority = -1 }
       every_country = { 
         limit = {
           OR ={
@@ -1263,9 +1500,10 @@ southern_germany_decisions = {
       factor = 100
     }
     visible = {
-        OR ={
-          original_tag = AOX
-        }
+          AND = {
+            original_tag = AOX
+            has_completed_focus = AUS_confederation_3
+          }
         check_variable = { global.southern_germany_end = 0 }
 		}
     available = {
@@ -1278,10 +1516,176 @@ southern_germany_decisions = {
     fire_only_once = no
     days_remove = 0
     complete_effect = {
+      custom_effect_tooltip = ger_con_pre_aut_more_1_tool
+      add_to_variable = { global.ger_con_president_authority = 1 }
       AOX = {
         country_event = austria.19
       }
       set_variable = { global.southern_germany_end = 1 }
+    }
+  }
+  SGF_diplomatic_pressure = {
+    visible = {
+        OR ={
+          original_tag = DOR
+          original_tag = DOB
+          original_tag = DOF
+          AND = {
+            original_tag = AOX
+            has_completed_focus = AUS_confederation_3
+          }
+        }
+        check_variable = { global.southern_germany_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri
+        check_variable = { is_sgf_now = 0 }
+      }
+    }
+    cost = 30
+    fire_only_once = no
+    days_remove = 14
+    complete_effect = {
+      set_variable = { is_sgf_now= 1 }
+    }
+    remove_effect = {
+      custom_effect_tooltip = ger_con_qwq_more_5
+      add_to_variable = { ROOT.southern_germany_qwq = 5 }
+      clamp_south_ger_var = yes
+      set_variable = { is_sgf_now = 0 }
+    }
+  }
+  SGF_aox_diplomatic_pressure = {
+    visible = {
+        OR ={
+          original_tag = DOR
+          original_tag = DOB
+          original_tag = DOF
+        }
+        check_variable = { global.southern_germany_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri
+        check_variable = { is_sgf_now = 0 }
+      }
+    }
+    cost = 50
+    fire_only_once = no
+    days_remove = 14
+    complete_effect = {
+      set_variable = { is_sgf_now= 1 }
+    }
+    remove_effect = {
+      custom_effect_tooltip = ger_con_qwq_more_10
+      add_to_variable = { ROOT.southern_germany_qwq = 10 }
+      AOX = {
+        custom_effect_tooltip = ger_con_qwq_more_5
+        add_to_variable = { ROOT.southern_germany_qwq = 5 }
+      }
+      clamp_south_ger_var = yes
+      set_variable = { is_sgf_now = 0 }
+    }
+  }
+  SGF_investment = {
+    visible = {
+        OR ={
+          original_tag = DOR
+          original_tag = DOB
+          original_tag = DOF
+          AND = {
+            original_tag = AOX
+            has_completed_focus = AUS_confederation_3
+          }
+        }
+        check_variable = { global.southern_germany_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri
+        check_variable = { is_sgf_now = 0 }
+      }
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri_more_than_1_money
+        check_variable = { new_nat_tre > 1 }
+      }
+    }
+    cost = 0
+    fire_only_once = no
+    days_remove = 40
+    complete_effect = {
+      set_variable = { is_sgf_now = 1 }
+      custom_effect_tooltip = less_1_money_tool
+      add_to_variable = { new_nat_tre = -1 }
+    }
+    remove_effect = {
+      custom_effect_tooltip = ger_con_qwq_more_15
+      add_to_variable = { ROOT.southern_germany_qwq = 15 }
+      clamp_westphalia_var = yes
+      set_variable = { is_sgf_now = 0 }
+      random_state = {
+        limit = {
+          OR = {
+            is_core_of = DOR
+            is_core_of = DOB
+            is_core_of = DOF
+          }
+        }
+        custom_effect_tooltip = wes_custom_eff_money
+        add_to_variable = { state_cash_tot = 0.5 }
+      }
+      random_state = {
+        limit = {
+          OR = {
+            is_core_of = DOR
+            is_core_of = DOB
+            is_core_of = DOF
+          }
+        }
+        custom_effect_tooltip = wes_custom_eff_money
+        add_to_variable = { state_cash_tot = 0.5 }
+      }
+    }
+  }
+  SGF_army = {
+    visible = {
+        OR ={
+          original_tag = DOR
+          original_tag = DOB
+          original_tag = DOF
+          AND = {
+            original_tag = AOX
+            has_completed_focus = AUS_confederation_3
+          }
+        }
+        check_variable = { global.southern_germany_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri
+        check_variable = { is_sgf_now = 0 }
+      }
+      has_equipment = { infantry_equipment > 299 }
+    }
+    cost = 0
+    fire_only_once = no
+    days_remove = 40
+    complete_effect = {
+      set_variable = { is_sgf_now = 1 }
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -300
+			}
+    }
+    remove_effect = {
+      custom_effect_tooltip = ger_con_qwq_more_20
+      add_to_variable = { ROOT.southern_germany_qwq = 20 }
+      DOR = { army_experience = 5 }
+      DOF = { army_experience = 5 }
+      DOB = { army_experience = 5 }
+      clamp_westphalia_var = yes
+      set_variable = { is_sgf_now = 0 }
     }
   }
 }
@@ -1306,6 +1710,8 @@ sax_thu_decisions = {
     fire_only_once = no
     days_remove = 0
     complete_effect = {
+      custom_effect_tooltip = ger_con_pre_aut_less_1_tool
+      add_to_variable = { global.ger_con_president_authority = -1 }
       every_country = { 
         limit = {
           OR ={
@@ -1400,8 +1806,301 @@ sax_thu_decisions = {
         add_core_of = ROOT
       }
       set_cosmetic_tag = thuringen
-      60 = { add_core_of = 60 }
+      60 = { add_core_of = ROOT }
       set_variable = { global.sax_thu_end = 1 }
+    }
+  }
+  thu_thu_diplomatic = {
+    visible = {
+        OR ={
+          original_tag = SAA
+          original_tag = SAB
+          original_tag = SAC
+          original_tag = SAD
+          original_tag = SAE
+          original_tag = SAF
+          original_tag = SAG
+        }
+        check_variable = { global.sax_thu_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri
+        check_variable = { is_sax_thu_now = 0 }
+      }
+    }
+    cost = 30
+    fire_only_once = no
+    days_remove = 14
+    complete_effect = {
+      set_variable = { is_sax_thu_now = 1 }
+    }
+    remove_effect = {
+      custom_effect_tooltip = ger_con_qwq_more_5
+      add_to_variable = { ROOT.sax_thu_qwq = 5 }
+      clamp_sax_thu_var = yes
+      set_variable = { is_sax_thu_now = 0 }
+    }
+  }
+  thu_army = {
+    visible = {
+        OR ={
+          original_tag = SAA
+          original_tag = SAB
+          original_tag = SAC
+          original_tag = SAD
+          original_tag = SAE
+          original_tag = SAF
+          original_tag = SAG
+        }
+        check_variable = { global.sax_thu_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri
+        check_variable = { is_sax_thu_now = 0 }
+      }
+      has_equipment = { infantry_equipment > 149 }
+    }
+    cost = 0
+    fire_only_once = no
+    days_remove = 42
+    complete_effect = {
+      set_variable = { is_sax_thu_now = 1 }
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -150
+			}
+    }
+    remove_effect = {
+      custom_effect_tooltip = ger_con_qwq_more_20
+      add_to_variable = { ROOT.sax_thu_qwq = 20 }
+      clamp_sax_thu_var = yes
+      set_variable = { is_sax_thu_now = 0 }
+      SAA = { army_experience = 1 }
+      SAB = { army_experience = 1 }
+      SAC = { army_experience = 1 }
+      SAD = { army_experience = 1 }
+      SAE = { army_experience = 1 }
+      SAF = { army_experience = 1 }
+      SAG = { army_experience = 1 }
+    }
+  }
+  thu_thu_meg_diplomatic = {
+    visible = {
+        OR ={
+          original_tag = SAA
+          original_tag = SAB
+          original_tag = SAC
+          original_tag = SAD
+          original_tag = SAE
+          original_tag = SAF
+          original_tag = SAG
+        }
+        check_variable = { global.sax_thu_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri
+        check_variable = { is_sax_thu_now = 0 }
+      }
+    }
+    cost = 30
+    fire_only_once = no
+    days_remove = 21
+    complete_effect = {
+      set_variable = { is_sax_thu_now = 1 }
+    }
+    remove_effect = {
+      custom_effect_tooltip = ger_con_qwq_more_5
+      add_to_variable = { ROOT.sax_thu_qwq = 5 }
+      SAA = {
+        custom_effect_tooltip = ger_con_qwq_more_5
+        add_to_variable = { ROOT.sax_thu_qwq = 5 }
+      }
+      SAB = {
+        custom_effect_tooltip = ger_con_qwq_more_5
+        add_to_variable = { ROOT.sax_thu_qwq = 5 }
+      }
+      SAC = {
+        custom_effect_tooltip = ger_con_qwq_more_5
+        add_to_variable = { ROOT.sax_thu_qwq = 5 }
+      }
+      SAD = {
+        custom_effect_tooltip = ger_con_qwq_more_5
+        add_to_variable = { ROOT.sax_thu_qwq = 5 }
+      }
+      SAE = {
+        custom_effect_tooltip = ger_con_qwq_more_5
+        add_to_variable = { ROOT.sax_thu_qwq = 5 }
+      }
+      SAF = {
+        custom_effect_tooltip = ger_con_qwq_more_5
+        add_to_variable = { ROOT.sax_thu_qwq = 5 }
+      }
+      SAG = {
+        custom_effect_tooltip = ger_con_qwq_more_5
+        add_to_variable = { ROOT.sax_thu_qwq = 5 }
+      }
+      clamp_sax_thu_var = yes
+      set_variable = { is_sax_thu_now = 0 }
+    }
+  }
+  sax_thu_diplomatic = {
+    visible = {
+        OR ={
+          original_tag = DOS
+        }
+        check_variable = { global.sax_thu_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri
+        check_variable = { is_sax_thu_now = 0 }
+      }
+    }
+    cost = 50
+    fire_only_once = no
+    days_remove = 21
+    complete_effect = {
+      set_variable = { is_sax_thu_now = 1 }
+    }
+    remove_effect = {
+      custom_effect_tooltip = ger_con_meg_more_10
+      add_to_variable = { ROOT.sax_thu_meg = 10 }
+      clamp_sax_thu_var = yes
+      set_variable = { is_sax_thu_now = 0 }
+    }
+  }
+  sax_thu_army = {
+    visible = {
+        OR ={
+          original_tag = DOS
+        }
+        check_variable = { global.sax_thu_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri
+        check_variable = { is_sax_thu_now = 0 }
+      }
+      has_equipment = { infantry_equipment > 149 }
+    }
+    cost = 0
+    fire_only_once = no
+    days_remove = 42
+    complete_effect = {
+      set_variable = { is_sax_thu_now = 1 }
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -150
+			}
+    }
+    remove_effect = {
+      custom_effect_tooltip = ger_con_meg_more_20
+      add_to_variable = { ROOT.sax_thu_meg = 20 }
+      clamp_sax_thu_var = yes
+      set_variable = { is_sax_thu_now = 0 }
+      SAA = { army_experience = 1 }
+      SAB = { army_experience = 1 }
+      SAC = { army_experience = 1 }
+      SAD = { army_experience = 1 }
+      SAE = { army_experience = 1 }
+      SAF = { army_experience = 1 }
+      SAG = { army_experience = 1 }
+    }
+  }
+  sax_thu_investment = {
+    visible = {
+        OR ={
+          original_tag = DOS
+        }
+        check_variable = { global.sax_thu_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri
+        check_variable = { is_sax_thu_now = 0 }
+      }
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri_more_than_1_money
+        check_variable = { new_nat_tre > 1 }
+      }
+    }
+    cost = 0
+    fire_only_once = no
+    days_remove = 42
+    complete_effect = {
+      set_variable = { is_sax_thu_now = 1 }
+      custom_effect_tooltip = less_1_money_tool
+      add_to_variable = { new_nat_tre = -1 }
+    }
+    remove_effect = {
+      custom_effect_tooltip = ger_con_meg_more_20
+      add_to_variable = { ROOT.sax_thu_meg = 20 }
+      clamp_sax_thu_var = yes
+      set_variable = { is_sax_thu_now = 0 }
+      random_state = {
+        limit = {
+          OR = {
+            is_core_of = SAA
+            is_core_of = SAB
+            is_core_of = SAC
+            is_core_of = SAD
+            is_core_of = SAE
+            is_core_of = SAF
+            is_core_of = SAG
+          }
+        }
+        custom_effect_tooltip = wes_custom_eff_money
+        add_to_variable = { state_cash_tot = 0.5 }
+      }
+      random_state = {
+        limit = {
+          OR = {
+            is_core_of = SAA
+            is_core_of = SAB
+            is_core_of = SAC
+            is_core_of = SAD
+            is_core_of = SAE
+            is_core_of = SAF
+            is_core_of = SAG
+          }
+        }
+        custom_effect_tooltip = wes_custom_eff_money
+        add_to_variable = { state_cash_tot = 0.5 }
+      }
+    }
+  }
+  aox_sax_diplomatic = {
+    visible = {
+        OR ={
+          AND = {
+            original_tag = AOX
+            has_completed_focus = AUS_confederation_4
+          }
+        }
+        check_variable = { global.sax_thu_end = 0 }
+		}
+    available = {
+      custom_trigger_tooltip = {
+        tooltip = wes_custom_tri
+        check_variable = { is_sax_thu_now = 0 }
+      }
+    }
+    cost = 40
+    fire_only_once = no
+    days_remove = 40
+    complete_effect = {
+      set_variable = { is_sax_thu_now = 1 }
+    }
+    remove_effect = {
+      DOS = {
+        custom_effect_tooltip = ger_con_meg_less_10
+        add_to_variable = { DOS.sax_thu_meg = -10 }
+      }
+      clamp_sax_thu_var = yes
+      set_variable = { is_sax_thu_now = 0 }
     }
   }
 }

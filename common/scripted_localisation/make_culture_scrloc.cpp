@@ -14,12 +14,13 @@ inline int read(){
 	}
 	return sum*fh;
 }
+int n=91; 
 int main(){
 //    freopen(".in","r",stdin);
     freopen("test.out","w",stdout);
     cout<<"defined_text = { "<<endl;
     cout<<"	name = state_culture_name_texts"<<endl;
-    for(int i=0;i<=51;i++){
+    for(int i=0;i<=n;i++){
 	cout<<"	text = {"<<endl;
 	cout<<"		localization_key = state_culture_name_texts_"<<i<<endl;
 	cout<<"		trigger = {"<<endl;
@@ -30,7 +31,7 @@ int main(){
     cout<<"}"<<endl;
     cout<<"defined_text = { "<<endl;
     cout<<"	name = state_culture_desc_texts"<<endl;
-    for(int i=0;i<=51;i++){
+    for(int i=0;i<=n;i++){
 	cout<<"	text = {"<<endl;
 	cout<<"		localization_key = state_culture_desc_texts_"<<i<<endl;
 	cout<<"		trigger = {"<<endl;

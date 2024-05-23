@@ -231,6 +231,16 @@ on_actions = {
                     check_variable = { global.aus_has_win_german_war = 0 }
                     check_variable = { global.pre_has_win_german_war = 0 }
                 }
+                hidden_effect = {
+                    if = {
+                        limit = {
+                            AOX = {
+                                has_completed_focus = AUS_ger_2
+                            }
+                        }
+                        complete_national_focus = AUS_confederation_0
+                    }
+                }
                 set_variable = { global.aus_win_german_war = 1 }
                 every_country = { news_event = ger_con.6 }
                 if = {

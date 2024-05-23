@@ -1,38 +1,3 @@
-defined_text = {
-	name = core_claim_texts
-	text = {
-		localization_key = is_core_text
-		trigger = {
-			FROM = {
-				is_core_of = ROOT 
-			}
-		}
-	}
-	text = {
-		localization_key = is_claim_text
-		trigger = {
-			FROM = {
-				NOT = {
-					is_core_of = ROOT 
-				}
-                is_claimed_by = ROOT
-			}
-		}
-	}
-	text = {
-		localization_key = is_none_text
-		trigger = {
-			FROM = {
-				NOT = {
-					is_core_of = ROOT 
-				}
-				NOT = {
-                	is_claimed_by = ROOT
-				}
-			}
-		}
-	}
-}
 defined_text = { 
 	name = state_culture_name_texts
 	text = {
@@ -345,6 +310,246 @@ defined_text = {
 		localization_key = state_culture_name_texts_51
 		trigger = {
 			check_variable = { state_culture = 51 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_52
+		trigger = {
+			check_variable = { state_culture = 52 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_53
+		trigger = {
+			check_variable = { state_culture = 53 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_54
+		trigger = {
+			check_variable = { state_culture = 54 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_55
+		trigger = {
+			check_variable = { state_culture = 55 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_56
+		trigger = {
+			check_variable = { state_culture = 56 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_57
+		trigger = {
+			check_variable = { state_culture = 57 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_58
+		trigger = {
+			check_variable = { state_culture = 58 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_59
+		trigger = {
+			check_variable = { state_culture = 59 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_60
+		trigger = {
+			check_variable = { state_culture = 60 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_61
+		trigger = {
+			check_variable = { state_culture = 61 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_62
+		trigger = {
+			check_variable = { state_culture = 62 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_63
+		trigger = {
+			check_variable = { state_culture = 63 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_64
+		trigger = {
+			check_variable = { state_culture = 64 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_65
+		trigger = {
+			check_variable = { state_culture = 65 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_66
+		trigger = {
+			check_variable = { state_culture = 66 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_67
+		trigger = {
+			check_variable = { state_culture = 67 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_68
+		trigger = {
+			check_variable = { state_culture = 68 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_69
+		trigger = {
+			check_variable = { state_culture = 69 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_70
+		trigger = {
+			check_variable = { state_culture = 70 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_71
+		trigger = {
+			check_variable = { state_culture = 71 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_72
+		trigger = {
+			check_variable = { state_culture = 72 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_73
+		trigger = {
+			check_variable = { state_culture = 73 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_74
+		trigger = {
+			check_variable = { state_culture = 74 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_75
+		trigger = {
+			check_variable = { state_culture = 75 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_76
+		trigger = {
+			check_variable = { state_culture = 76 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_77
+		trigger = {
+			check_variable = { state_culture = 77 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_78
+		trigger = {
+			check_variable = { state_culture = 78 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_79
+		trigger = {
+			check_variable = { state_culture = 79 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_80
+		trigger = {
+			check_variable = { state_culture = 80 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_81
+		trigger = {
+			check_variable = { state_culture = 81 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_82
+		trigger = {
+			check_variable = { state_culture = 82 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_83
+		trigger = {
+			check_variable = { state_culture = 83 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_84
+		trigger = {
+			check_variable = { state_culture = 84 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_85
+		trigger = {
+			check_variable = { state_culture = 85 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_86
+		trigger = {
+			check_variable = { state_culture = 86 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_87
+		trigger = {
+			check_variable = { state_culture = 87 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_88
+		trigger = {
+			check_variable = { state_culture = 88 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_89
+		trigger = {
+			check_variable = { state_culture = 89 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_90
+		trigger = {
+			check_variable = { state_culture = 90 }
+		}
+	}
+	text = {
+		localization_key = state_culture_name_texts_91
+		trigger = {
+			check_variable = { state_culture = 91 }
 		}
 	}
 }
@@ -660,6 +865,246 @@ defined_text = {
 		localization_key = state_culture_desc_texts_51
 		trigger = {
 			check_variable = { state_culture = 51 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_52
+		trigger = {
+			check_variable = { state_culture = 52 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_53
+		trigger = {
+			check_variable = { state_culture = 53 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_54
+		trigger = {
+			check_variable = { state_culture = 54 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_55
+		trigger = {
+			check_variable = { state_culture = 55 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_56
+		trigger = {
+			check_variable = { state_culture = 56 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_57
+		trigger = {
+			check_variable = { state_culture = 57 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_58
+		trigger = {
+			check_variable = { state_culture = 58 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_59
+		trigger = {
+			check_variable = { state_culture = 59 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_60
+		trigger = {
+			check_variable = { state_culture = 60 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_61
+		trigger = {
+			check_variable = { state_culture = 61 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_62
+		trigger = {
+			check_variable = { state_culture = 62 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_63
+		trigger = {
+			check_variable = { state_culture = 63 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_64
+		trigger = {
+			check_variable = { state_culture = 64 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_65
+		trigger = {
+			check_variable = { state_culture = 65 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_66
+		trigger = {
+			check_variable = { state_culture = 66 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_67
+		trigger = {
+			check_variable = { state_culture = 67 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_68
+		trigger = {
+			check_variable = { state_culture = 68 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_69
+		trigger = {
+			check_variable = { state_culture = 69 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_70
+		trigger = {
+			check_variable = { state_culture = 70 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_71
+		trigger = {
+			check_variable = { state_culture = 71 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_72
+		trigger = {
+			check_variable = { state_culture = 72 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_73
+		trigger = {
+			check_variable = { state_culture = 73 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_74
+		trigger = {
+			check_variable = { state_culture = 74 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_75
+		trigger = {
+			check_variable = { state_culture = 75 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_76
+		trigger = {
+			check_variable = { state_culture = 76 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_77
+		trigger = {
+			check_variable = { state_culture = 77 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_78
+		trigger = {
+			check_variable = { state_culture = 78 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_79
+		trigger = {
+			check_variable = { state_culture = 79 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_80
+		trigger = {
+			check_variable = { state_culture = 80 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_81
+		trigger = {
+			check_variable = { state_culture = 81 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_82
+		trigger = {
+			check_variable = { state_culture = 82 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_83
+		trigger = {
+			check_variable = { state_culture = 83 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_84
+		trigger = {
+			check_variable = { state_culture = 84 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_85
+		trigger = {
+			check_variable = { state_culture = 85 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_86
+		trigger = {
+			check_variable = { state_culture = 86 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_87
+		trigger = {
+			check_variable = { state_culture = 87 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_88
+		trigger = {
+			check_variable = { state_culture = 88 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_89
+		trigger = {
+			check_variable = { state_culture = 89 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_90
+		trigger = {
+			check_variable = { state_culture = 90 }
+		}
+	}
+	text = {
+		localization_key = state_culture_desc_texts_91
+		trigger = {
+			check_variable = { state_culture = 91 }
 		}
 	}
 }
