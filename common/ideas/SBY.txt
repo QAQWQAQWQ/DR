@@ -40,5 +40,46 @@ ideas = {
 		
 	}
 }
+
+industrial_concern = {
+		SBY_Renfe = {
+
+			picture = Renfe
+			
+			allowed = {
+				original_tag = SBY
+			}
+			available = {
+				has_completed_focus = SBY_focus27
+			}
+			
+			cost = 80
+
+			research_bonus = {
+				train_tech = 0.1
+			}
+			
+			traits = { railway_company }
+		}
+		SBY_La_Electricidad_de_Caracas = {
+
+			picture = La_Electricidad_de_Caracas
+			
+			allowed = {
+				original_tag = SBY
+			}
+			available = {
+				has_completed_focus = SBY_focus26
+			}
+			
+			cost = 80
+
+			research_bonus = {
+				electronics = 0.1
+			}
+			
+			traits = { electronics_concern }
+		}
+}
 }
 

@@ -26,6 +26,12 @@ recruit_character = SBY_Angel_Ossorio_Gallardo
 recruit_character = SBY_Jose_Calvo_Sotelo
 recruit_character = SBY_Emilio_Mola_Vidal
 recruit_character = SBY_Jose_Sanjurjo_Sacanell
+
+
+recruit_character = SBY_Severiano_Martinez_Anido
+recruit_character = SBY_Eduardo_Aunos_Perez
+recruit_character = SBY_Juan_Ventosa_y_Calvell
+recruit_character = SBY_Pedro_Rahola_Molinas
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -70,6 +76,10 @@ add_ideas = {
 	SBY_Spanish_Flu
 	SBY_Manuel_Garcia_Prieto_H
 	Media_control
+	export_focus
+	secondary_school
+	Market_economy
+	Weak_investments
 }
 set_popularities = {
 	Liberalism = 5

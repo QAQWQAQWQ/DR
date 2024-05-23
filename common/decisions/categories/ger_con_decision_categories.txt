@@ -26,7 +26,7 @@ ger_con_decisions = {
 	visible_when_empty = yes
 }
 new_ger_con_decisions = {
-	priority = 12
+	priority = 12                                         
 	icon = generic_research
 	scripted_gui = new_ger_con_decisons_ui
 	visible = {
