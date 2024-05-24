@@ -11,4 +11,145 @@ focus_tree = {
 	shared_focus = Thuringian_0
 	shared_focus = Thuringian_8
 	shared_focus = Thuringian_13
+    focus = {
+		id = SAE_0
+		icon = GFX_SAE_0
+		cost = 5.00
+	    relative_position_id = Thuringian_13
+	    prerequisite = { focus = Thuringian_13 }
+		allow_branch = {
+			tag = SAE
+		}
+		mutually_exclusive = {
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAE_1
+		icon = GFX_SAE_1
+		cost = 5.00
+	    relative_position_id = SAE_0
+	    prerequisite = { focus = SAE_0 }
+		mutually_exclusive = {
+		}
+		x = -2
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAE_2
+		icon = GFX_SAE_2
+		cost = 5.00
+	    relative_position_id = SAE_1
+	    prerequisite = { focus = SAE_1 }
+		mutually_exclusive = {
+		}
+		x = -1
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAE_3
+		icon = GFX_SAE_3
+		cost = 5.00
+	    relative_position_id = SAE_1
+	    prerequisite = { focus = SAE_1 }
+		mutually_exclusive = {
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAE_4
+		icon = GFX_SAE_4
+		cost = 5.00
+	    relative_position_id = SAE_0
+	    prerequisite = { focus = SAE_0 }
+		mutually_exclusive = {
+			focus = SAE_6
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAE_5
+		icon = GFX_SAE_5
+		cost = 5.00
+	    relative_position_id = SAE_4
+	    prerequisite = { focus = SAE_4 }
+		mutually_exclusive = {
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAE_6
+		icon = GFX_SAE_6
+		cost = 5.00
+	    relative_position_id = SAE_0
+	    prerequisite = { focus = SAE_0 }
+		mutually_exclusive = {
+			focus = SAE_4
+		}
+		x = 3
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAE_7
+		icon = GFX_SAE_7
+		cost = 5.00
+	    relative_position_id = SAE_0
+	    prerequisite = { focus = SAE_0 }
+		mutually_exclusive = {
+		}
+		x = 5
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
 }
