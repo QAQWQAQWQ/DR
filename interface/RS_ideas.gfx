@@ -3,7 +3,14 @@ spriteTypes = {
 	    name = "GFX_SBY_focus10_icon"
 	    texturefile = "gfx/interface/ideas/SBY_focus10_dy.dds"
     }
-
+	spriteType = {
+		name = "GFX_idea_SBY_Repeal_1878_Constitution"
+		texturefile = "gfx/interface/ideas/SBY_Repeal_1878_Constitution.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SBY_Bloated_bureaucracy"
+		texturefile = "gfx/interface/ideas/SBY_Bloated_bureaucracy.dds"
+	}
 
 	spriteType = {
 	    name = "GFX_idea_Food_shortages"
@@ -447,6 +454,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/SBY_Patriotism.dds"
 	}
 	
+	
+
 	spriteType = {
 		name = "GFX_idea_party_newspaper"
 		texturefile = "gfx/interface/ideas/party_newspaper.dds"

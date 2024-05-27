@@ -3,7 +3,7 @@
 ###########################
 
 add_namespace = SBY
-
+add_namespace = SBY_civil_war
 news_event = {
 	id = SBY.1
 	title = SBY.1.t
@@ -22,14 +22,60 @@ fire_only_once = yes
 	}
 }
 }
+news_event = {
+	id = SBY_civil_war.1
+	title = SBY_civil_war.1.t
+	desc = SBY_civil_war.1.d
+	picture = GFX_SBY_civil_war
+
+	major = yes
+
+	is_triggered_only = yes
+
+    fire_only_once = yes
+	option = {
+		name = SBY_civil_war.1.a
+		SPR={
+			limit = {
+				OR = {
+				  is_core_of  = SBY
+				}
+			  }
+			  add_claim_by = SPR
+			  transfer_state = 165
+			  add_core_of = 165
+			  transfer_state = 167
+			  add_core_of = 167
+			  transfer_state = 794
+			  add_core_of = 794
+			  transfer_state = 168
+			  add_core_of = 168
+			  transfer_state = 166
+			  add_core_of = 166
+		}
+		SBY={
+			limit = {
+				OR = {
+				  is_core_of  = SPR
+				}
+			}
+			delete_unit = {
+				state = 111
+				disband = yes #will refund equipment and manpower
+			}
+		}
+		BSK={
+			transfer_state = 792
+			add_core_of = 792
+		}
+		
+    }
+}
 country_event = {
 	id = SBY.2
 	title = SBY.2.t
 	desc = SBY.2.d
 	picture = GFX_SBY_2
-
-	major = yes
-
 	is_triggered_only = yes
     fire_only_once = yes
 	option = {
@@ -42,4 +88,77 @@ country_event = {
 		}
 		complete_national_focus = SBY_focus1
 }
+}
+country_event = {
+	id = SBY.3
+	title = SBY.3.t
+	desc = SBY.3.d
+	picture = GFX_SBY_2
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SBY.3.a
+		add_political_power = -100
+		add_stability = -0.1
+		add_war_support = -0.1
+}
+}
+country_event = {
+	id = SBY.4
+	title = SBY.4.t
+	desc = SBY.4.d
+	picture = GFX_SBY_2
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SBY.4.a
+		add_popularity = {
+			ideology = Conservatism
+			popularity = -0.03
+		}
+		add_war_support = -0.01
+}
+}
+country_event = {
+	id = SBY.5
+	title = SBY.5.t
+	desc = SBY.5.d
+	picture = GFX_SBY_2
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SBY.5.a
+    }
+	option = {
+		name = SBY.5.b
+		290 = {
+			create_unit = {
+			  division = "name = \"步兵旅\" division_template = \"步兵旅\" start_experience_factor = 0.8 " 
+				 owner = SBY
+				 prioritize_location = 9945
+			}
+			create_unit = {
+				division = "name = \"北非远征军\" division_template = \"北非远征军\" start_experience_factor = 0.8 " 
+				   owner = SBY
+				   prioritize_location = 9945
+			  }
+		}
+    }
+}
+country_event = {
+	id = SBY.6
+	title = SBY.6.t
+	desc = SBY.6.d
+	picture = GFX_SBY_2
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SBY.6.a
+		set_country_flag=SBYcountry_event.6
+		custom_effect_tooltip = remove_header_government
+			remove_ideas = SBY_Manuel_Garcia_Prieto_H
+			custom_effect_tooltip = available_header_government
+	        show_ideas_tooltip = SBY_Gabriel_Maura_Gamazo_H
+	        show_ideas_tooltip = SBY_Miguel_Primo_de_Rivera_H
+    }
 }

@@ -40,6 +40,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			add_ideas = DOS_Discord_the_Pope
+			add_ideas = TOR_Lone_Star_Republic
 		}
 
 	}
@@ -100,8 +102,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_political_power = -100
-			add_stability = -0.01
+			country_event = SBY.3
 		}
 
 	}
@@ -121,6 +122,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			country_event = SBY.5
 		}
 
 	}
@@ -140,11 +142,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			remove_ideas = SBY_Manuel_Garcia_Prieto_H
-			custom_effect_tooltip = available_political_advisor
-	        show_ideas_tooltip = SBY_Gabriel_Maura_Gamazo_H
-	        show_ideas_tooltip = SBY_Miguel_Primo_de_Rivera_H
-	        show_ideas_tooltip = SBY_Francisco_Cambo_H
+			country_event = {id=SBY.6 days=3}
 		}
 
 	}
@@ -165,6 +163,20 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 100
+			add_victory_points = {
+				province = 5139
+				value = 3
+			}
+			add_victory_points = {
+				province = 10265
+				value = 3
+			}
+			539={
+				add_extra_state_shared_building_slots = 2
+			}
+			327={
+				add_extra_state_shared_building_slots = 2
+			}
 		}
 	}
 	focus = {
@@ -424,7 +436,7 @@ focus_tree = {
 		id = SBY_focus16
 		icon = GFX_SBY_focus16
 		cost = 7.00
-		x = 10
+		x = 15
 		y = 5
 		available = {
 			has_idea = SBY_Miguel_Primo_de_Rivera_H
@@ -460,23 +472,14 @@ focus_tree = {
 		id = SBY_focus17
 		icon = GFX_SBY_focus17
 		cost = 7.00
-		x = 16
-		y = 5
+		x = 8
+		y = 8
 		available = {
-			has_idea = SBY_Francisco_Cambo_H
+			
 		}
 
-		mutually_exclusive = {
-			focus = SBY_focus16
-		}
-		mutually_exclusive = {
-			focus = SBY_focus15
-		}
 		prerequisite = {
-			focus = SBY_focus6
-		}
-		prerequisite = {
-			focus = SBY_focus21
+			focus = SBY_focus44
 		}
 		available = {
 			# has_idea = 
@@ -485,19 +488,15 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			set_popularities = {
-				Conservatism=67
-				Liberalism = 13
-				Anarchism = 10
-				Revolutionism = 10
-			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = SBY_Francisco_Cambo_H
 		}
 	}
 	focus = { 
 		id = SBY_focus18
 		icon = GFX_SBY_focus18
 		cost = 7.00
-		x = 10
+		x = 15
 		y = 6
 		available = {
 			has_idea = SBY_Miguel_Primo_de_Rivera_H
@@ -553,10 +552,10 @@ focus_tree = {
 		id = SBY_focus20
 		icon = GFX_SBY_focus20
 		cost = 7.00
-		x = 17
-		y = 6
+		x = 7
+		y = 9
 		available = {
-			has_idea = SBY_Francisco_Cambo_H
+			
 		}
 		prerequisite = {
 			focus = SBY_focus17
@@ -568,11 +567,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			set_party_name = {
-				ideology = Conservatism
-				long_name = SBY_Conservatism_party2_long
-				name = SBY_Conservatism_party2
-			}
+			
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip =  SBY_Pedro_Rahola_Molinas_P
 		}
@@ -593,16 +588,17 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 100
 			add_stability = 0.1
+			
 		}
 	}
 	focus = {
 		id = SBY_focus22
 		icon = GFX_SBY_focus22
 		cost = 7.00
-		x = 15
-		y = 7
+		x = 7
+		y = 10
 		available = {
-			has_idea = SBY_Francisco_Cambo_H
+			
 		}
 		prerequisite = {
 			focus = SBY_focus17
@@ -621,10 +617,10 @@ focus_tree = {
 		id = SBY_focus23
 		icon = GFX_SBY_focus23
 		cost = 7.00
-		x = 19
-		y = 7
+		x = 9
+		y = 9
 		available = {
-			has_idea = SBY_Francisco_Cambo_H
+			
 		}
 		prerequisite = {
 			focus = SBY_focus17
@@ -645,10 +641,10 @@ focus_tree = {
 		id = SBY_focus24
 		icon = GFX_SBY_focus24
 		cost = 7.00
-		x = 17
-		y = 8
+		x = 5
+		y = 10
 		available = {
-			has_idea = SBY_Francisco_Cambo_H
+			
 		}
 		prerequisite = {
 			focus = SBY_focus20
@@ -667,10 +663,10 @@ focus_tree = {
 		id = SBY_focus25
 		icon = GFX_SBY_focus25
 		cost = 7.00
-		x = 20
-		y = 8
+		x = 9
+		y = 10
 		available = {
-			has_idea = SBY_Francisco_Cambo_H
+			
 		}
 		prerequisite = {
 			focus = SBY_focus20
@@ -692,10 +688,10 @@ focus_tree = {
 		id = SBY_focus26
 		icon = GFX_SBY_focus26
 		cost = 7.00
-		x = 19
-		y = 9
+		x = 10
+		y = 11
 		available = {
-			has_idea = SBY_Francisco_Cambo_H
+			
 		}
 		prerequisite = {
 			focus = SBY_focus25
@@ -714,10 +710,10 @@ focus_tree = {
 		id = SBY_focus27
 		icon = GFX_SBY_focus27
 		cost = 7.00
-		x = 21
-		y = 9
+		x = 8
+		y = 11
 		available = {
-			has_idea = SBY_Francisco_Cambo_H
+			
 		}
 		prerequisite = {
 			focus = SBY_focus25
@@ -736,7 +732,7 @@ focus_tree = {
 		id = SBY_focus28
 		icon = GFX_SBY_focus28
 		cost = 7.00
-		x = 12
+		x = 17
 		y = 7
 		available = {
 			has_idea = SBY_Miguel_Primo_de_Rivera_H
@@ -758,7 +754,7 @@ focus_tree = {
 		id = SBY_focus29
 		icon = GFX_SBY_focus29
 		cost = 7.00
-		x = 8
+		x = 13
 		y = 7
 		available = {
 			has_idea = SBY_Miguel_Primo_de_Rivera_H
@@ -787,7 +783,7 @@ focus_tree = {
 		id = SBY_focus30
 		icon = GFX_SBY_focus30
 		cost = 7.00
-		x = 10
+		x = 15
 		y = 8
 		available = {
 			has_idea = SBY_Miguel_Primo_de_Rivera_H
@@ -812,7 +808,7 @@ focus_tree = {
 		id = SBY_focus31
 		icon = GFX_SBY_focus31
 		cost = 7.00
-		x = 13
+		x = 18
 		y = 8 
 		available = {
 			has_idea = SBY_Miguel_Primo_de_Rivera_H
@@ -827,6 +823,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			custom_effect_tooltip = SBY_focus31_tt
+			hidden_effect = {
+				add_to_variable = { SBY_focus31_Guard = 2 }
+				set_division_template_cap = {  division_template = "民兵" division_cap = SBY_focus31_Guard }
+			}
 			41 = {
 				create_unit = {
 				  division = "name = \"索马滕旅\" division_template = \"民兵\" start_experience_factor = 0.5 " 
@@ -839,7 +840,7 @@ focus_tree = {
 		id = SBY_focus32
 		icon = GFX_SBY_focus32
 		cost = 7.00
-		x = 7
+		x = 12
 		y = 8
 		available = {
 			has_idea = SBY_Miguel_Primo_de_Rivera_H
@@ -865,7 +866,7 @@ focus_tree = {
 		id = SBY_focus33
 		icon = GFX_SBY_focus33
 		cost = 7.00
-		x = 8
+		x = 13
 		y = 9
 		available = {
 			has_idea = SBY_Miguel_Primo_de_Rivera_H
@@ -880,14 +881,15 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			add_political_power = 200
+			add_ideas = SBY_Repeal_1878_Constitution
 		}
 	}
 	focus = {
 		id = SBY_focus34
 		icon = GFX_SBY_focus34
 		cost = 7.00
-		x = 12
+		x = 17
 		y = 9
 		available = {
 			has_idea = SBY_Miguel_Primo_de_Rivera_H
@@ -910,7 +912,7 @@ focus_tree = {
 		id = SBY_focus35
 		icon = GFX_SBY_focus35
 		cost = 7.00
-		x = 6
+		x = 7
 		y = 6
 		prerequisite = {
 			focus = SBY_focus6
@@ -929,7 +931,7 @@ focus_tree = {
 		id = SBY_focus36
 		icon = GFX_SBY_focus36
 		cost = 7.00
-		x = 10
+		x = 15
 		y = 9
 		available = {
 			has_idea = SBY_Miguel_Primo_de_Rivera_H
@@ -956,7 +958,7 @@ focus_tree = {
 		id = SBY_focus37
 		icon = GFX_SBY_focus37
 		cost = 7.00
-		x = 7
+		x = 12
 		y = 10
 		available = {
 			has_idea = SBY_Miguel_Primo_de_Rivera_H
@@ -976,14 +978,29 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = SBY_focus37_TT
+			add_to_variable = {
+				SBY_Bloated_bureaucracy1=-0.05
+			}
+			add_to_variable = {
+				SBY_Bloated_bureaucracy2=0.05
+			}
+			add_to_variable = {
+				SBY_Bloated_bureaucracy3=0.05
+			}
+			add_to_variable = {
+				SBY_Bloated_bureaucracy4=-0.1
+			}
+			add_to_variable = {
+				SBY_Bloated_bureaucracy5=0.05
+			}
 		}
 	}
 	focus = {
 		id = SBY_focus38
 		icon = GFX_SBY_focus38
 		cost = 7.00
-		x = 9
+		x = 14
 		y = 10
 		available = {
 			has_idea = SBY_Miguel_Primo_de_Rivera_H
@@ -1003,14 +1020,29 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = SBY_focus38_TT
+			add_to_variable = {
+				SBY_Bloated_bureaucracy1=-0.03
+			}
+			add_to_variable = {
+				SBY_Bloated_bureaucracy2=0.03
+			}
+			add_to_variable = {
+				SBY_Bloated_bureaucracy3=0.03
+			}
+			add_to_variable = {
+				SBY_Bloated_bureaucracy4=-0.03
+			}
+			add_to_variable = {
+				SBY_Bloated_bureaucracy5=0.03
+			}
 		}
 	}
 	focus = {
 		id = SBY_focus39
 		icon = GFX_SBY_focus39
 		cost = 7.00
-		x = 11
+		x = 16
 		y = 10
 		available = {
 			has_idea = SBY_Miguel_Primo_de_Rivera_H
@@ -1047,7 +1079,7 @@ focus_tree = {
 		id = SBY_focus40
 		icon = GFX_SBY_focus40
 		cost = 7.00
-		x = 13
+		x = 18
 		y = 10
 		available = {
 			has_idea = SBY_Miguel_Primo_de_Rivera_H
@@ -1075,10 +1107,11 @@ focus_tree = {
 		id = SBY_focus41
 		icon = GFX_SBY_focus41
 		cost = 7.00
-		x = 10
+		x = 15
 		y = 11
 		available = {
 			has_idea = SBY_Miguel_Primo_de_Rivera_H
+			has_completed_focus = SBY_focus32
 		}
 		prerequisite = {
 			focus = SBY_focus37
@@ -1129,7 +1162,7 @@ focus_tree = {
 		id = SBY_focus43
 		icon = GFX_SBY_focus43
 		cost = 7.00
-		x = 14
+		x = 10
 		y = 6
 		prerequisite = {
 			focus = SBY_focus21

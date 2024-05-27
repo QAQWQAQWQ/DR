@@ -81,6 +81,24 @@ add_ideas = {
 	Market_economy
 	Weak_investments
 }
+add_dynamic_modifier = {
+	modifier = SBY_Bloated_bureaucracy
+}
+set_variable = {
+	SBY_Bloated_bureaucracy1=0.1
+}
+set_variable = {
+	SBY_Bloated_bureaucracy2=-0.1
+}
+set_variable = {
+	SBY_Bloated_bureaucracy3=-0.1
+}
+set_variable = {
+	SBY_Bloated_bureaucracy4=0.15
+}
+set_variable = {
+	SBY_Bloated_bureaucracy5=-0.1
+}
 set_popularities = {
 	Liberalism = 5
 	Reactionary = 1

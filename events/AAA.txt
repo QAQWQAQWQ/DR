@@ -7,7 +7,7 @@ news_event = {
 	id = AAA.1
 	title = AAA.1.t
 	desc = AAA.1.d
-	#picture = 
+	picture = GFX_AAA_1
 	major = yes
 	is_triggered_only = yes
 	option = {
@@ -19,5 +19,30 @@ news_event = {
 	    }
 		}
 	}
+}
+country_event = {
+	id = AAA.2
+	title = AAA.2.t
+	desc = AAA.2.d
+	picture = GFX_AAA_2
+	is_triggered_only = yes
+	option = {
+		name = AAA.2.a
+		add_political_power = 9999
+		set_stability = 1
+		set_war_support = 1
+		add_manpower = 999999
+		country_event = AAA.3
 	}
-	
+}	
+country_event = {
+	id = AAA.3
+	title = AAA.3.t
+	desc = AAA.3.d
+	picture = GFX_AAA_2
+	is_triggered_only = yes
+	option = {
+		name = AAA.3.a
+		add_manpower = 999999
+	}
+}	
