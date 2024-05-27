@@ -11,4 +11,75 @@ focus_tree = {
 	shared_focus = Thuringian_0
 	shared_focus = Thuringian_8
 	shared_focus = Thuringian_13
+    focus = {
+		id = SAB_0
+		icon = GFX_SAB_0
+		cost = 5.00
+	    relative_position_id = Thuringian_13
+	    prerequisite = { focus = Thuringian_13 }
+		allow_branch = {
+			tag = SAB
+		}
+		mutually_exclusive = {
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAB_1
+		icon = GFX_SAB_1
+		cost = 5.00
+	    relative_position_id = SAB_0
+	    prerequisite = { focus = SAB_0 }
+		mutually_exclusive = {
+		}
+		x = -1
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAB_2
+		icon = GFX_SAB_2
+		cost = 5.00
+	    relative_position_id = SAB_1
+	    prerequisite = { focus = SAB_1 }
+		mutually_exclusive = {
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAB_3
+		icon = GFX_SAB_3
+		cost = 5.00
+	    relative_position_id = SAB_0
+	    prerequisite = { focus = SAB_0 }
+		mutually_exclusive = {
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
 }

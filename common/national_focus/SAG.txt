@@ -11,4 +11,145 @@ focus_tree = {
 	shared_focus = Thuringian_0
 	shared_focus = Thuringian_8
 	shared_focus = Thuringian_13
+    focus = {
+		id = SAG_0
+		icon = GFX_SAG_0
+		cost = 5.00
+	    relative_position_id = Thuringian_13
+	    prerequisite = { focus = Thuringian_13 }
+		allow_branch = {
+			tag = SAG
+		}
+		mutually_exclusive = {
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAG_1
+		icon = GFX_SAG_1
+		cost = 5.00
+	    relative_position_id = SAG_0
+	    prerequisite = { focus = SAG_0 }
+		mutually_exclusive = {
+		}
+		x = -3
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAG_2
+		icon = GFX_SAG_2
+		cost = 5.00
+	    relative_position_id = SAG_1
+	    prerequisite = { focus = SAG_1 }
+		mutually_exclusive = {
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAG_3
+		icon = GFX_SAG_3
+		cost = 5.00
+	    relative_position_id = SAG_0
+	    prerequisite = { focus = SAG_0 }
+		mutually_exclusive = {
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAG_4
+		icon = GFX_SAG_4
+		cost = 5.00
+	    relative_position_id = SAG_0
+	    prerequisite = { focus = SAG_0 }
+		mutually_exclusive = {
+			focus = SAG_6
+		}
+		x = 2
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAG_5
+		icon = GFX_SAG_5
+		cost = 5.00
+	    relative_position_id = SAG_4
+	    prerequisite = { focus = SAG_4 }
+		mutually_exclusive = {
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAG_6
+		icon = GFX_SAG_6
+		cost = 5.00
+	    relative_position_id = SAG_0
+	    prerequisite = { focus = SAG_0 }
+		mutually_exclusive = {
+			focus = SAG_4
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAG_7
+		icon = GFX_SAG_7
+		cost = 5.00
+	    relative_position_id = SAG_6
+	    prerequisite = { focus = SAG_6 }
+		mutually_exclusive = {
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
 }

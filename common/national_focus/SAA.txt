@@ -11,4 +11,179 @@ focus_tree = {
 	shared_focus = Thuringian_0
 	shared_focus = Thuringian_8
 	shared_focus = Thuringian_13
+    focus = {
+		id = SAA_0
+		icon = GFX_SAA_0
+		cost = 5.00
+	    relative_position_id = Thuringian_13
+	    prerequisite = { focus = Thuringian_13 }
+		allow_branch = {
+			tag = SAA
+		}
+		mutually_exclusive = {
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAA_1
+		icon = GFX_SAA_1
+		cost = 5.00
+	    relative_position_id = SAA_0
+	    prerequisite = { focus = SAA_0 }
+		mutually_exclusive = {
+		}
+		x = -3
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAA_2
+		icon = GFX_SAA_2
+		cost = 5.00
+	    relative_position_id = SAA_1
+	    prerequisite = { focus = SAA_1 }
+		mutually_exclusive = {
+		}
+		x = -1
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAA_3
+		icon = GFX_SAA_3
+		cost = 5.00
+	    relative_position_id = SAA_1
+	    prerequisite = { focus = SAA_1 }
+		mutually_exclusive = {
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAA_4
+		icon = GFX_SAA_4
+		cost = 5.00
+	    relative_position_id = SAA_0
+	    prerequisite = { focus = SAA_0 }
+		mutually_exclusive = {
+		}
+		x = 2
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAA_5
+		icon = GFX_SAA_5
+		cost = 5.00
+	    relative_position_id = SAA_4
+	    prerequisite = { focus = SAA_4 }
+		mutually_exclusive = {
+			focus = SAA_6
+		}
+		x = -1
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAA_7
+		icon = GFX_SAA_7
+		cost = 5.00
+	    relative_position_id = SAA_5
+	    prerequisite = { focus = SAA_5 }
+		mutually_exclusive = {
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAA_6
+		icon = GFX_SAA_6
+		cost = 5.00
+	    relative_position_id = SAA_4
+	    prerequisite = { focus = SAA_4 }
+		mutually_exclusive = {
+			focus = SAA_5
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAA_8
+		icon = GFX_SAA_8
+		cost = 5.00
+	    relative_position_id = SAA_6
+	    prerequisite = { focus = SAA_6 }
+		mutually_exclusive = {
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAA_9
+		icon = GFX_SAA_9
+		cost = 5.00
+	    relative_position_id = SAA_0
+	    prerequisite = { focus = SAA_0 }
+		mutually_exclusive = {
+		}
+		x = 5
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
 }

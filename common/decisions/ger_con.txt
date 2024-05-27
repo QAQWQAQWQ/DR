@@ -1740,6 +1740,9 @@ sax_thu_decisions = {
         }
         add_core_of = DOS
       }
+      DOS = { 
+        remove_ideas = DOS_Saxony_Thuringia_United
+      }
       set_variable = { global.sax_thu_end = 1 }
     }
   }

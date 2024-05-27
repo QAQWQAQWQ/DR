@@ -22,7 +22,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 		}
-		x = 4
+		x = 6
 		y = 1
 		completion_reward = {
 		}
@@ -39,7 +39,24 @@ focus_tree = {
 	    prerequisite = { focus = SAC_0 }
 		mutually_exclusive = {
 		}
-		x = -2
+		x = -4
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAC_15
+		icon = GFX_SAC_15
+		cost = 5.00
+	    relative_position_id = SAC_1
+	    prerequisite = { focus = SAC_1 }
+		mutually_exclusive = {
+		}
+		x = 3
 		y = 1
 		completion_reward = {
 		}

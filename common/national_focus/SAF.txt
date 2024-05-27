@@ -11,4 +11,188 @@ focus_tree = {
 	shared_focus = Thuringian_0
 	shared_focus = Thuringian_8
 	shared_focus = Thuringian_13
+    focus = {
+		id = SAF_0
+		icon = GFX_SAF_0
+		cost = 5.00
+	    relative_position_id = Thuringian_13
+	    prerequisite = { focus = Thuringian_13 }
+		allow_branch = {
+			tag = SAF
+		}
+		mutually_exclusive = {
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAF_1
+		icon = GFX_SAF_1
+		cost = 5.00
+	    relative_position_id = SAF_0
+	    prerequisite = { focus = SAF_0 }
+		mutually_exclusive = {
+		}
+		x = -3
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAF_2
+		icon = GFX_SAF_2
+		cost = 5.00
+	    relative_position_id = SAF_1
+	    prerequisite = { focus = SAF_1 }
+		mutually_exclusive = {
+		}
+		x = -1
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAF_3
+		icon = GFX_SAF_3
+		cost = 5.00
+	    relative_position_id = SAF_1
+	    prerequisite = { focus = SAF_1 }
+		mutually_exclusive = {
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAF_4
+		icon = GFX_SAF_4
+		cost = 5.00
+	    relative_position_id = SAF_3
+	    prerequisite = { focus = SAF_3 }
+		mutually_exclusive = {
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAF_5
+		icon = GFX_SAF_5
+		cost = 5.00
+	    relative_position_id = SAF_0
+	    prerequisite = { focus = SAF_0 }
+		mutually_exclusive = {
+			focus = SAF_6
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAF_7
+		icon = GFX_SAF_7
+		cost = 5.00
+	    relative_position_id = SAF_5
+	    prerequisite = { focus = SAF_5 }
+		x = 0
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAF_8
+		icon = GFX_SAF_8
+		cost = 5.00
+	    relative_position_id = SAF_7
+	    prerequisite = { focus = SAF_7 }
+		x = 0
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAF_6
+		icon = GFX_SAF_6
+		cost = 5.00
+	    relative_position_id = SAF_0
+	    prerequisite = { focus = SAF_0 }
+		mutually_exclusive = {
+			focus = SAF_5
+		}
+		x = 3
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAF_9
+		icon = GFX_SAF_9
+		cost = 5.00
+	    relative_position_id = SAF_6
+	    prerequisite = { focus = SAF_6 }
+		x = 0
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+    focus = {
+		id = SAF_10
+		icon = GFX_SAF_10
+		cost = 5.00
+	    relative_position_id = SAF_9
+	    prerequisite = { focus = SAF_9 }
+		x = 0
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
 }

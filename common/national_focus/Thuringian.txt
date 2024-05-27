@@ -246,8 +246,8 @@
 		id = Thuringian_13
 		icon = GFX_goal_Thuringian_13
 		cost = 5.00
-		x = 5
-		y = 5
+		x = 16
+		y = 0
 		available = {
 			always = no
 		}
@@ -264,7 +264,7 @@
 	    relative_position_id = Thuringian_13
 	    prerequisite = { focus = Thuringian_13 }
 		x = -3
-		y = 1
+		y = 2
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = sax_thu_end_trigger
@@ -285,5 +285,41 @@
 		available = {
 		}
 		completion_reward = {
+		}
+	}
+	shared_focus  = {
+		id = Thuringian_16
+		icon = GFX_goal_Thuringian_16
+		cost = 5.00
+	    relative_position_id = Thuringian_15
+	    prerequisite = { focus = Thuringian_15 }
+		mutually_exclusive = {
+			focus = Thuringian_17
+		}
+		x = -1
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+	}
+	shared_focus  = {
+		id = Thuringian_17
+		icon = GFX_goal_Thuringian_17
+		cost = 5.00
+	    relative_position_id = Thuringian_15
+	    prerequisite = { focus = Thuringian_15 }
+		mutually_exclusive = {
+			focus = Thuringian_16
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+		}
+		available = {
+		}
+		bypass = {
 		}
 	}
