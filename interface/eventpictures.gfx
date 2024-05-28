@@ -460,6 +460,10 @@ spriteTypes = {
 		texturefile = "gfx/event/SBY/Spanish_Flu.tga"
 	}
 	spriteType = {
+		name = "GFX_SBY_civil_war" 
+		texturefile = "gfx/event/SBY/SBY_civil_war.tga"
+	}
+	spriteType = {
 		name = "GFX_Balkan_League"
 		texturefile = "gfx/event/NEWS/Balkan_League.tga"
 	}
@@ -650,6 +654,13 @@ spriteTypes = {
 		texturefile = "gfx/event/ROC/ROC_2.dds"
 	}
 	
-
+	spriteType = {
+		name = "GFX_AAA_1"
+		texturefile = "gfx/event/AAA/AAA_1.tga"
+	}
+	spriteType = {
+		name = "GFX_AAA_2"
+		texturefile = "gfx/event/AAA/AAA_2.dds"
+	}
 	
 }

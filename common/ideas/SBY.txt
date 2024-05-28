@@ -37,7 +37,13 @@ ideas = {
 		conscription_factor=0.1	
 		recruitable_population_factor=0.1
         }
-		
+	}
+	SBY_Repeal_1878_Constitution= {
+		picture = SBY_Repeal_1878_Constitution
+		modifier = {
+		    political_power_gain=-0.05
+			stability_factor = -0.03
+        }
 	}
 }
 
