@@ -1,5 +1,6 @@
 add_namespace = ger_con
 add_namespace = sax_problem
+add_namespace = thuringian
 country_event = {
 	id = ger_con.1
 	title = ger_con.1.t
@@ -306,6 +307,7 @@ country_event = {
 			has_full_control_of_state = 65
 		}
 	}
+	is_triggered_only = yes
 	option = {
 		name = sax_problem.2.a
         set_variable = {
@@ -364,6 +366,7 @@ country_event = {
 			has_full_control_of_state = 946
 		}
 	}
+	is_triggered_only = yes
 	option = {
 		name = sax_problem.3.a
         set_variable = {
@@ -422,5 +425,166 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = sax_problem.6.a
+	}
+}
+country_event = {
+	id = thuringian.1
+	title = thuringian.1.t
+	desc = thuringian.1.d
+	picture = GFX_austria_1_pict
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = thuringian.1.a
+        remove_ideas = DOS_Saxony_Thuringia_United
+		FROM = { country_event = thuringian.2 }
+	}
+	option = {
+		name = thuringian.1.b
+		FROM = { country_event = thuringian.3 }
+	}
+	option = {
+		name = thuringian.1.c
+        remove_ideas = DOS_Saxony_Thuringia_United
+		every_state = {
+			limit = {
+				is_core_of = FROM
+			}
+			add_claim_by = DOS
+		}
+		custom_effect_tooltip = thuringian_war_eff_tool
+		hidden_effect = {
+			AOX = { country_event = thuringen.6 }
+		}
+	}
+}
+country_event = {
+	id = thuringian.2
+	title = thuringian.2.t
+	desc = thuringian.2.d
+	picture = GFX_austria_1_pict
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = thuringian.2.a
+	}
+}
+country_event = {
+	id = thuringian.3
+	title = thuringian.3.t
+	desc = thuringian.3.d
+	picture = GFX_austria_1_pict
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = thuringian.3.a
+		DOS = { country_event = thuringen.4 }
+	}
+	option = {
+		name = thuringian.3.b
+		DOS = { country_event = thuringen.5 }
+	}
+}
+country_event = {
+	id = thuringian.4
+	title = thuringian.4.t
+	desc = thuringian.4.d
+	picture = GFX_austria_1_pict
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = thuringian.4.a
+		DOS = { puppet = FROM }
+	}
+}
+country_event = {
+	id = thuringian.5
+	title = thuringian.5.t
+	desc = thuringian.5.d
+	picture = GFX_austria_1_pict
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = thuringian.5.a
+        remove_ideas = DOS_Saxony_Thuringia_United
+		every_state = {
+			limit = {
+				is_core_of = FROM
+			}
+			add_claim_by = DOS
+		}
+		custom_effect_tooltip = thuringian_war_eff_tool
+		hidden_effect = {
+			AOX = { country_event = thuringen.6 }
+		}
+	}
+}
+country_event = {
+	id = thuringian.6
+	title = thuringian.6.t
+	desc = thuringian.6.d
+	picture = GFX_austria_1_pict
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = thuringian.6.a
+		trigger = {
+			check_variable = { global.ger_con_president_authority > 4 }
+		}
+		add_political_power = -100
+		DOS = { country_event = thuringian.8 }
+		60 = {
+			var:owner = {
+				country_event = thuringian.8
+			}
+		}
+		DOS = {
+			add_ideas = DOS_Saxony_Thuringia_United
+		}
+		60 = {
+			var:owner = {
+				DOS = { puppet = PREV }
+			}
+		}
+	}
+	option = {
+		name = thuringian.6.b
+		custom_effect_tooltip = ger_con_pre_aut_less_2_tool
+		hidden_effect = {
+			add_to_variable = { global.ger_con_president_authority = -2 }
+			60 = {
+				var:owner = {
+					country_event = thuringian.7
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = thuringian.7
+	title = thuringian.7.t
+	desc = thuringian.7.d
+	picture = GFX_austria_1_pict
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = thuringian.7.a
+		DOS = {
+            declare_war_on = {
+                target = ROOT
+                type = annex_everything
+            }
+		}
+	}
+}
+country_event = {
+	id = thuringian.8
+	title = thuringian.8.t
+	desc = thuringian.8.d
+	picture = GFX_austria_1_pict
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = thuringian.8.a
 	}
 }

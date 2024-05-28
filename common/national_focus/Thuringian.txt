@@ -285,6 +285,11 @@
 		available = {
 		}
 		completion_reward = {
+			60 = { add_core_of = PREV } 
+			THIS = { set_state_owner = 60 }
+			THIS = { set_state_controller = 60 }
+			DOS = { end_puppet = PREV }
+			DOS = { country_event = thuringian.1 }
 		}
 	}
 	shared_focus  = {
@@ -301,6 +306,7 @@
 		completion_reward = {
 		}
 		available = {
+			is_subject_of = DOS
 		}
 		bypass = {
 		}
@@ -319,6 +325,8 @@
 		completion_reward = {
 		}
 		available = {
+			has_war = no
+			NOT = { is_subject_of = DOS }
 		}
 		bypass = {
 		}
