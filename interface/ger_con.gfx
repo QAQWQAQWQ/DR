@@ -59,4 +59,10 @@ spriteTypes = {
 		texturefile = "gfx/event/ger_con/sax_problem_6_pict.tga"
 		legacy_lazy_load = no
 	}
+
+	spriteType = {
+		name = "GFX_thuringian_1_pict"
+		texturefile = "gfx/event/ger_con/thuringian_1_pict.dds"
+		legacy_lazy_load = no
+	}
 }
