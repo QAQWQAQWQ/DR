@@ -1,0 +1,224 @@
+on_actions = {
+	on_startup= {
+		effect = {
+	 		every_country = {
+                set_variable = { research_level_progress = 0 }
+                capital_scope = {
+                    set_variable = { PREV.research_level = 1 }
+                    if = {
+                        limit = {
+                            is_on_continent = europe
+                        }
+                        set_variable = { PREV.research_level = 3 }
+                    }
+                    if = {
+                        limit = {
+                            OR = {
+                                is_on_continent = north_america
+                                is_on_continent = south_america
+                                is_on_continent = australia
+                            }
+                        }
+                        set_variable = { PREV.research_level = 2 }
+                    }
+                }
+                if = {
+                    limit = {
+                        OR = {
+                            tag = CNA
+                            tag = TEQ
+                            tag = NPL
+                        }
+                    }
+                    set_variable = { research_level = 3 }
+                }
+                if = {
+                    limit = {
+                        OR = {
+                            tag = NPL
+                            tag = CNA
+                        }
+                    }
+                    set_variable = { research_level_progress = 0.5 }
+                }
+                if = {
+                    limit = {
+                        OR = {
+                            tag = EYJ
+                        }
+                    }
+                    set_variable = { research_level = 2 }
+                    set_variable = { research_level_progress = 0.5 }
+                }
+                if = {
+                    limit = {
+                        OR = {
+                            tag = DSX
+                            tag = XXL
+                            tag = ASZ
+                            tag = HEL
+                        }
+                    }
+                    set_variable = { research_level = 3 }
+                    set_variable = { research_level_progress = 0 }
+                }
+                if = {
+                    limit = {
+                        OR = {
+                            tag = JPN
+                        }
+                    }
+                    set_variable = { research_level = 3 }
+                    set_variable = { research_level_progress = 0.7 }
+                }
+                if = {
+                    limit = {
+                        OR = {
+                            tag = SHW
+                        }
+                    }
+                    set_variable = { research_level = 3 }
+                    set_variable = { research_level_progress = 0.9 }
+                }
+                if = {
+                    limit = {
+                        OR = {
+                            tag = ENL
+                            tag = UBS
+                            tag = FRW
+                            tag = BHL
+                            tag = ITE
+                            tag = TCY
+                            tag = PMA
+                            tag = LMJ
+                            tag = RSH
+                            tag = VCT
+                            tag = RUD
+                            tag = NUW
+                            
+                            tag = AGC
+                            tag = LSB
+                            tag = DOL
+                            tag = DOB
+                            tag = DOF
+                            tag = DHD
+                            tag = DON
+                            tag = DOH
+                            tag = DOA
+                            tag = DOM
+                            tag = DOS
+                            tag = DOR
+                            tag = DMW
+                            tag = BXM
+                            
+                            tag = WWS
+                            tag = AOX
+
+                            tag = SAA
+                            tag = SAB
+                            tag = SAC
+                            tag = SAD
+                            tag = SAE
+                            tag = SAF
+                            tag = SAG
+                        }
+                    }
+                    set_variable = { research_level = 4 }
+                }
+                if = {
+                    limit = {
+                        OR = {
+                            tag = AGC
+                            tag = LSB
+                            tag = DOL
+                            tag = DOB
+                            tag = DOF
+                            tag = DHD
+                            tag = DON
+                            tag = DOH
+                            tag = DOA
+                            tag = DOM
+                            tag = DOS
+                            tag = DOR
+                            tag = DMW
+                            tag = BXM
+                            tag = RSH
+                            tag = SAA
+                            tag = SAB
+                            tag = SAC
+                            tag = SAD
+                            tag = SAE
+                            tag = SAF
+                            tag = SAG
+                        }
+                    }
+                    set_variable = { research_level_progress = 0.2 }
+                }
+                if = {
+                    limit = {
+                        OR = {
+                            tag = FRW
+                            tag = ENL
+                            tag = UBS
+                        }
+                    }
+                    set_variable = { research_level_progress = 0.35 }
+                }
+                if = {
+                    limit = {
+                        OR = {
+                            tag = WWS
+                            tag = AOX
+                        }
+                    }
+                    set_variable = { research_level_progress = 0.5 }
+                }
+			}
+		}
+	}
+    on_monthly_AOX = {
+        every_country = {
+            
+        if = {
+            limit = {
+                check_variable = { research_level = 0 }
+            }
+            set_variable = { research_level_progress = 0 }
+            capital_scope = {
+                set_variable = { PREV.research_level = 1 }
+                    if = {
+                        limit = {
+                            is_on_continent = europe
+                        }
+                        set_variable = { PREV.research_level = 3 }
+                    }
+                    if = {
+                        limit = {
+                            OR = {
+                                is_on_continent = north_america
+                                is_on_continent = south_america
+                                is_on_continent = australia
+                            }
+                        }
+                        set_variable = { PREV.research_level = 2 }
+                    }
+                    if = {
+                        limit = {
+                            OR = {
+                                check_variable = { state_culture = 1 }
+                            }
+                        }
+                        set_variable = { PREV.research_level = 4 }
+                    }
+                }
+            if = {
+                limit = {
+                    tag = AGN
+                }
+                set_variable = { research_level = AOX.research_level }
+                set_variable = { research_level_progress = AOX.research_level_progress }
+            }
+        }
+        }
+    }
+}
