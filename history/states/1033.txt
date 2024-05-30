@@ -1,0 +1,31 @@
+
+state= {
+	id=1033
+	name="STATE_1033"
+	manpower = 103947
+	resources={
+
+	}
+	
+	state_category = rural
+
+	history= {
+		owner = SHW
+		add_core_of = BOJ
+		buildings = {
+			infrastructure = 2
+			849 = {
+				naval_base = 3
+				coastal_bunker = 2
+			}
+		}
+
+		
+	}
+	provinces=
+	{
+		849 3879 6895
+	}
+
+	local_supplies=0.0 
+}

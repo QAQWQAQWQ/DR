@@ -2323,6 +2323,17 @@ bosnia_war_end = yes
 		prerequisite = {
 			focus = AUS_HRE_13
 		}
+		available = {
+			all_state = {
+				OR = {
+					AND = {
+						NOT = { is_core_of = AOX }
+						NOT = { is_claimed_by = AOX }
+					}
+					is_owned_by = AOX
+				}
+			}
+		}
 		completion_reward = {
 			add_political_power = 100
 			swap_ideas = {

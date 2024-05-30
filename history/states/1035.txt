@@ -1,0 +1,33 @@
+
+state={
+	id=1035
+	name="STATE_340"
+	manpower = 777853
+	resources={
+		chromium=24
+	}
+
+	state_category = town
+
+	history={
+		owner = SHW
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+		}
+		
+		victory_points = {
+			947 10
+		}
+		victory_points = {
+			11811 1 
+		}
+		add_core_of = TEQ
+	}
+
+	provinces={
+		11811 6864 947 6912 3851 11867 9887 
+	}
+
+	local_supplies=0.0 
+}

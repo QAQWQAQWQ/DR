@@ -28,10 +28,6 @@ state={
 		}
 		add_core_of = SHW
 		add_core_of = TEQ
-		if = {
-			limit = { has_dlc = "Battle for the Bosporus"}
-			set_demilitarized_zone = yes
-		}
 	}
 
 	local_supplies=0.0 
