@@ -162,3 +162,75 @@ country_event = {
 	        show_ideas_tooltip = SBY_Miguel_Primo_de_Rivera_H
     }
 }
+country_event = {
+	id = SBY.7
+	title = SBY.7.t
+	desc = SBY.7.d
+	picture = GFX_SBY_2
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SBY.7.a
+    }
+}
+country_event = {
+	id = SBY.8
+	title = SBY.8.t
+	desc = SBY.8.d
+	picture = GFX_SBY_2
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SBY.8.a
+    }
+}
+country_event = {
+	id = SBY.9
+	title = SBY.9.t
+	desc = SBY.9.d
+	picture = GFX_SBY_2
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SBY.9.a
+    }
+}
+country_event = {
+	id = SBY.10
+	title = SBY.10.t
+	desc = SBY.10.d
+	picture = GFX_SBY_2
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SBY.10.a
+    }
+}
+country_event = {
+	id = SBY.11
+	title = SBY.11.t
+	desc = SBY.11.d
+	picture = GFX_SBY_2
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SBY.11.a
+    }
+}
+country_event = {
+	id = SBY.12
+	title = SBY.12.t
+	desc = SBY.12.d
+	picture = GFX_SBY_2
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SBY.12.a
+		165={
+			damage_building = {
+				type = industrial_complex
+				damage = 1
+			}
+		}
+    }
+}

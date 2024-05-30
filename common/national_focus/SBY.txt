@@ -40,8 +40,6 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = DOS_Discord_the_Pope
-			add_ideas = TOR_Lone_Star_Republic
 		}
 
 	}
@@ -475,7 +473,7 @@ focus_tree = {
 		x = 8
 		y = 8
 		available = {
-			
+			has_idea = SBY_Gabriel_Maura_Gamazo_H
 		}
 
 		prerequisite = {
@@ -555,7 +553,7 @@ focus_tree = {
 		x = 7
 		y = 9
 		available = {
-			
+			has_idea = SBY_Francisco_Cambo_P
 		}
 		prerequisite = {
 			focus = SBY_focus17
@@ -588,7 +586,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 100
 			add_stability = 0.1
-			
+			country_event = SBY.7
 		}
 	}
 	focus = {
@@ -598,19 +596,17 @@ focus_tree = {
 		x = 7
 		y = 10
 		available = {
-			
+			has_idea = SBY_Francisco_Cambo_P
 		}
 		prerequisite = {
 			focus = SBY_focus17
 
 		}
-		available = {
-		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			country_event = SBY.10
 		}
 	}
 	focus = {
@@ -620,7 +616,7 @@ focus_tree = {
 		x = 9
 		y = 9
 		available = {
-			
+			has_idea = SBY_Francisco_Cambo_P
 		}
 		prerequisite = {
 			focus = SBY_focus17
@@ -1198,7 +1194,6 @@ focus_tree = {
 		y = 7
 		
 		available = {
-			
 			has_idea = SBY_Gabriel_Maura_Gamazo_H
 		}
 		prerequisite = {
@@ -1210,7 +1205,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			country_event = SBY.9
 		}
 	}
 	focus = {
@@ -1231,7 +1226,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			country_event = SBY.8
 		}
 	}
 	focus = {
@@ -1256,6 +1251,9 @@ focus_tree = {
 				remove_idea = Special_police
 				add_idea = State_control
 			}
+			hidden_effect = {
+				country_event = {id=SBY.12 days=10}
+			}
 		}
 	}
 	focus = {
@@ -1276,7 +1274,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			country_event = SBY.11
 		}
 	}
 	focus = {
@@ -1343,7 +1341,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_political_power = -50
+			add_political_power = 100
 			add_stability = -0.05
 		}
 	}
