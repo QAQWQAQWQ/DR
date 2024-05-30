@@ -33,3 +33,48 @@ defined_text = {
 		}
 	}
 }
+defined_text = {
+	name = Get_research_level_text
+	text = {
+		localization_key = Get_research_level_text_0
+		trigger = {
+			check_variable = { research_level = 0 }
+		}
+	}
+	text = {
+		localization_key = Get_research_level_text_1
+		trigger = {
+			check_variable = { research_level = 1 }
+		}
+	}
+	text = {
+		localization_key = Get_research_level_text_2
+		trigger = {
+			check_variable = { research_level = 2 }
+		}
+	}
+	text = {
+		localization_key = Get_research_level_text_3
+		trigger = {
+			check_variable = { research_level = 3 }
+		}
+	}
+	text = {
+		localization_key = Get_research_level_text_4
+		trigger = {
+			check_variable = { research_level = 4 }
+		}
+	}
+	text = {
+		localization_key = Get_research_level_text_5
+		trigger = {
+			check_variable = { research_level = 5 }
+		}
+	}
+	text = {
+		localization_key = Get_research_level_text_6
+		trigger = {
+			check_variable = { research_level = 6 }
+		}
+	}
+}

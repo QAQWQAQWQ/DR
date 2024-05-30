@@ -1,11 +1,53 @@
 scripted_map_modes = {
     state_literacy_pop_map_mode = {
         top = {
-            type = state
+            type = country
             color = {
                 set_temp_variable = { red = 0 }
                 set_temp_variable = { blue = 0 }
-                set_temp_variable = { green = FROM.state_literacy }
+                set_temp_variable = { green = 0 }
+                if = {
+                    limit = {
+                        check_variable = {
+                            FROM.research_level < 3
+                        }
+                    }
+                    set_temp_variable = { red = FROM.research_level }
+                    add_to_temp_variable = { red = FROM.research_level_progress }
+                    add_to_temp_variable = { red = 2 }
+                    divide_temp_variable = {
+                        red = 5
+                    }
+                }
+                else = {
+                    if = {
+                        limit = {
+                            check_variable = {
+                                FROM.research_level < 4
+                            }
+                        }
+                        set_temp_variable = { green = FROM.research_level }
+                        add_to_temp_variable = { green = FROM.research_level_progress }
+                        add_to_temp_variable = { green = 0 }
+                        divide_temp_variable = {
+                            green = 5
+                        }
+                        set_temp_variable = { red = FROM.research_level }
+                        add_to_temp_variable = { red = FROM.research_level_progress }
+                        add_to_temp_variable = { red = 0 }
+                        divide_temp_variable = {
+                            red = 5
+                        }
+                    }
+                    else = {
+                        set_temp_variable = { green = FROM.research_level }
+                        add_to_temp_variable = { green = FROM.research_level_progress }
+                        add_to_temp_variable = { green = -1 }
+                        divide_temp_variable = {
+                            green = 5
+                        }
+                    }
+                }
                 set_temp_variable = { alpha = 1.0 }
             }
             targets = {
