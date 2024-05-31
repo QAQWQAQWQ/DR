@@ -918,7 +918,11 @@ ger_con_decisions = {
 	  days_mission_timeout = 50
 		activation = {
         WWS = { has_completed_focus = WWS_Separate_alliances }
-				original_tag = AOX
+        OR = {
+          original_tag = WWS
+          original_tag = DOS
+          original_tag = AOX
+        }
 		}
 		visible = {
       OR = {
