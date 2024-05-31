@@ -15,11 +15,25 @@ aushun_clamp_vars = {
 			min = 0
 			max = 100
 		}
-		clamp_variable = {
-			var = AOX.aus_hun_egree^1
-			min = 0
-			max = 100
-		}
+        if = {
+            limit = {
+                AOX = {
+                    has_idea = AOX_Hungarian_independence_movement
+                }
+            }
+            clamp_variable = {
+                var = AOX.aus_hun_egree^1
+                min = 30
+                max = 100
+            }
+        }
+        else = {
+            clamp_variable = {
+                var = AOX.aus_hun_egree^1
+                min = 0
+                max = 100
+            }
+        }
 		clamp_variable = {
 			var = AOX.aus_hun_gov_sup^2
 			min = 0

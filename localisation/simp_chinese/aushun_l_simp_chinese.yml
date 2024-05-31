@@ -73,6 +73,8 @@
   aus_hun_all_aut_less_than_10_tool:0 "所有民族自治度小于等于§G10§!"
   more_than_10_cash_tool:0 "国库有大于 §G10§! B"
   del_10_cash_eff:0 "支出 §R10§! B"
+  more_than_3_cash_tool:0 "国库有大于 §G3§! B"
+  del_3_cash_eff:0 "支出 §R3§! B"
   AUS_federation_14_eff:0 "地区总产值增加 §G0.5§! B"
   AUS_federation_15_eff:0 "地区总产值增加 §G0.2§! B"
   aus_hun_less_every_sup:0 "民族主义运动"
@@ -177,7 +179,8 @@
 
   AOX_ideas_the_undead_of_hus:0 "胡斯的亡灵"
   AOX_ideas_the_undead_of_hus_desc:0 "尽管自扬·胡斯被处死已过去了五百多年，但他的亡灵依旧纠缠着我们。捷克民族主义者依旧在他的旗帜之下反抗着我们..."
-  AOX_ideas_the_undead_of_hus_tool:0 "捷克人的政府支持度每个月将会减少§R5§!"
+  AOX_ideas_the_undead_of_hus_tool:0 "捷克人的政府支持度每个月将会减少§R5§!" 
+  AOX_Hungarian_independence_movement_tool:0 "匈牙利人的自治度无法被降低到§G30§!或者更低"
   AUS_federation_11_tool:0 "我们将开始尝试在奥地利人与波西米亚人间构建一种新的民族认同。"
   aus_hun_aus_cze_into_one:0 "在[FROM.GetName]构建内莱塔尼亚认同"
   aus_hun_aus_cze_into_one_end:0 "完成内莱塔尼亚认同的构建"

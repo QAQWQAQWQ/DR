@@ -33,6 +33,33 @@ focus_tree = {
 		id = AUS_ger_1
 		icon = GFX_AUS_ger_1_goal
 		cost = 5.00
+		ai_will_do = {
+			factor = 10	
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { DOL = { is_ai = yes } }
+					NOT = { LSB = { is_ai = yes } }
+					NOT = { AGC = { is_ai = yes } }
+					NOT = { DON = { is_ai = yes } }
+					NOT = { DHD = { is_ai = yes } }
+					NOT = { DOA = { is_ai = yes } }
+					NOT = { DOB = { is_ai = yes } }
+					NOT = { DOF = { is_ai = yes } }
+					NOT = { DOR = { is_ai = yes } }
+					NOT = { DOH = { is_ai = yes } }
+					NOT = { DOM = { is_ai = yes } }
+					NOT = { DOS = { is_ai = yes } }
+					NOT = { SAA = { is_ai = yes } }
+					NOT = { SAB = { is_ai = yes } }
+					NOT = { SAC = { is_ai = yes } }
+					NOT = { SAD = { is_ai = yes } }
+					NOT = { SAE = { is_ai = yes } }
+					NOT = { SAF = { is_ai = yes } }
+					NOT = { SAG = { is_ai = yes } }
+				}
+			}
+		}	
 		prerequisite = {
 			focus = AUS_0
 		}
@@ -58,6 +85,9 @@ focus_tree = {
 		id = AUS_ger_2
 		icon = GFX_AUS_ger_2_goal
 		cost = 5.00
+		ai_will_do = {
+			factor = 10	
+		}	
 		prerequisite = {
 			focus = AUS_0
 		}
@@ -72,6 +102,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 150
         	add_stability = 0.05
+			custom_effect_tooltip = AUS_ger_2_eff
 		}
 		available = {
 
@@ -83,6 +114,33 @@ focus_tree = {
 		id = AUS_ger_3
 		icon = GFX_AUS_ger_3_goal
 		cost = 5.00
+		ai_will_do = {
+			factor = 10	
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { DOL = { is_ai = yes } }
+					NOT = { LSB = { is_ai = yes } }
+					NOT = { AGC = { is_ai = yes } }
+					NOT = { DON = { is_ai = yes } }
+					NOT = { DHD = { is_ai = yes } }
+					NOT = { DOA = { is_ai = yes } }
+					NOT = { DOB = { is_ai = yes } }
+					NOT = { DOF = { is_ai = yes } }
+					NOT = { DOR = { is_ai = yes } }
+					NOT = { DOH = { is_ai = yes } }
+					NOT = { DOM = { is_ai = yes } }
+					NOT = { DOS = { is_ai = yes } }
+					NOT = { SAA = { is_ai = yes } }
+					NOT = { SAB = { is_ai = yes } }
+					NOT = { SAC = { is_ai = yes } }
+					NOT = { SAD = { is_ai = yes } }
+					NOT = { SAE = { is_ai = yes } }
+					NOT = { SAF = { is_ai = yes } }
+					NOT = { SAG = { is_ai = yes } }
+				}
+			}
+		}	
 		prerequisite = {
 			focus = AUS_0
 		}
@@ -134,6 +192,28 @@ focus_tree = {
 				}
             	set_variable = { ger_con_det = 5 }
 				gercon_add_aus_sup = yes
+			}
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = LSB
+						original_tag = DHD
+						original_tag = DON
+						original_tag = DOB
+						original_tag = DOL
+						original_tag = DOH
+						original_tag = DOA
+						original_tag = DOM
+						original_tag = DOR
+						original_tag = DOF
+						original_tag = DOS
+						original_tag = WWS
+						original_tag = AOX
+						original_tag = DMW
+						original_tag = BXM
+					}
+				}
+				country_event = austria.20
 			}
 		}
 		available = {
@@ -2802,13 +2882,13 @@ bosnia_war_end = yes
 		}
 		available = {
 			 custom_trigger_tooltip = { 
-        		tooltip = more_than_10_cash_tool
-				check_variable = { new_nat_tre > 10 }
+        		tooltip = more_than_3_cash_tool
+				check_variable = { new_nat_tre > 3 }
 			 }
 		}
 		completion_reward = {
-			custom_effect_tooltip = del_10_cash_eff
-			subtract_from_variable =  { new_nat_tre = 10 }
+			custom_effect_tooltip = del_3_cash_eff
+			subtract_from_variable =  { new_nat_tre = 3 }
 			every_state = {
 				limit = {
 					var:owner = {
@@ -2822,9 +2902,10 @@ bosnia_war_end = yes
 						has_state_category = town
 					}
 				}
-				custom_effect_tooltip = AUS_federation_14_eff
+				add_extra_state_shared_building_slots = 1
+				custom_effect_tooltip = AUS_federation_15_eff
 				add_to_variable = {  
-					state_cash_tot = 0.5
+					state_cash_tot = 0.2
 				}
 			}
 		}
@@ -2841,13 +2922,13 @@ bosnia_war_end = yes
 		}
 		available = {
 			 custom_trigger_tooltip = { 
-        		tooltip = more_than_10_cash_tool
-				check_variable = { new_nat_tre > 10 }
+        		tooltip = more_than_3_cash_tool
+				check_variable = { new_nat_tre > 3 }
 			 }
 		}
 		completion_reward = {
-			custom_effect_tooltip = del_10_cash_eff
-			subtract_from_variable =  { new_nat_tre = 10 }
+			custom_effect_tooltip = del_3_cash_eff
+			subtract_from_variable =  { new_nat_tre = 3 }
 			every_state = {
 				limit = {
 					var:owner = {
@@ -2863,11 +2944,14 @@ bosnia_war_end = yes
 						has_state_category = megalopolis
 					}
 				}
-				add_extra_state_shared_building_slots = 1
 				custom_effect_tooltip = AUS_federation_15_eff
 				add_to_variable = {  
 					state_cash_tot = 0.2
 				}
+			}
+			swap_ideas = {
+				remove_idea = No_labor_laws
+				add_idea = Local_trade_unions
 			}
 		}
 	}
