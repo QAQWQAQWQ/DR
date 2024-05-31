@@ -979,6 +979,35 @@ ger_con_decisions = {
       }
     }
   }
+  DOS_def_qwq = {
+		icon = generic_civil_support
+		available = {
+      has_war = no
+		}
+		# days_mission_timeout = 1
+	  days_mission_timeout = 100
+		activation = {
+      check_variable = { global.sax_war = 1  }
+		}
+		visible = {
+      original_tag = DOS
+      has_government = Conservatism
+		}		
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = yes
+		timeout_effect = {
+      random_other_country = {
+        limit = {
+              original_tag = DOS
+              has_government = Reactionary
+        }
+        DOS = {
+           annex_country = { target = PREV transfer_troops = no }
+        }
+      }
+    }
+  }
 }
 ger_con_fra_def = {
   ger_con_west_def = {
