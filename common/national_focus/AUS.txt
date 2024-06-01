@@ -243,6 +243,19 @@ focus_tree = {
 			gercon_upd_pbv_var = yes
 			gercon_clamp_vars = yes
       		upd_german_sphere = yes
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = AOX
+						original_tag = DOL
+						original_tag = DON
+						original_tag = DHD
+						original_tag = LSB
+						original_tag = WWS
+					}
+				}
+				country_event = austria.22
+			}
 		}
 		available = {
 
@@ -268,6 +281,18 @@ focus_tree = {
 			gercon_upd_pbv_var = yes
 			gercon_clamp_vars = yes
       		upd_german_sphere = yes
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = AOX
+						original_tag = DOR
+						original_tag = DOB
+						original_tag = DOF
+						original_tag = WWS
+					}
+				}
+				country_event = austria.21
+			}
 		}
 		available = {
 		}

@@ -544,6 +544,50 @@ country_event = {
 	}
 }
 country_event = {
+	id = austria.21
+	title = austria.21.t
+	desc = austria.21.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.21.a
+		trigger = {
+			NOT = {
+				tag = WWS
+			}
+		}
+	}
+	option = {
+		name = austria.21.b
+		trigger = {
+			tag = WWS
+		}
+	}
+}
+country_event = {
+	id = austria.22
+	title = austria.22.t
+	desc = austria.22.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.22.a
+		trigger = {
+			NOT = {
+				tag = WWS
+			}
+		}
+	}
+	option = {
+		name = austria.22.b
+		trigger = {
+			tag = WWS
+		}
+	}
+}
+country_event = {
 	id = AGN.1
 	title = AGN.1.t
 	desc = AGN.1.d
