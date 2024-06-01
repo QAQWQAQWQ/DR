@@ -1261,6 +1261,24 @@ bosnia_war_end = yes
 		x = 15
 		y = 3
 		completion_reward = {
+			if = {
+				limit = {
+					HUN = { exists = yes }
+				}
+				HUN = {
+					add_stability = -0.1
+					add_war_support = -0.1
+				}
+			}
+			if = {
+				limit = {
+					XYL = { exists = yes }
+				}
+				XYL = {
+					add_stability = -0.1
+					add_war_support = -0.1
+				}
+			}
 		}
 		available = {
 			bosnia_war_end = yes
