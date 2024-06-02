@@ -12,6 +12,7 @@ scripted_gui = {
 		effects = {
 			money_system_button_click={ 
 				set_custom_slider = yes
+				set_custom_slider_1= yes
 				if={
 					limit={
 						NOT = {
@@ -39,7 +40,6 @@ scripted_gui = {
 		} 
 		effects = {
 			
-			
 		}
 		dynamic_lists = {
 			custom_slider_grid = {
@@ -59,15 +59,8 @@ scripted_gui = {
 		}
 
 		properties = {
-			slider_dot = {
-				x = slider_dot_x
-			}
 			custom_slider_icon = {
 				frame = button_frame
-			}
-			
-			slider_dot_1 = {
-				x = slider_dot_x_1
 			}
 			custom_slider_icon_1 = {
 				frame = button_frame_1
@@ -167,10 +160,7 @@ scripted_gui = {
 					set_temp_variable = { button_frame =  1 }
 				}
 			}
-
-
-			#### 
-			custom_slider_icon_visible_1 = {
+			custom_slider_icon_1_visible = {
 				if = {
 					limit = {
 						check_variable = {
@@ -184,6 +174,7 @@ scripted_gui = {
 				}
 			}
 		}
-	}
+		
 }
 
+}

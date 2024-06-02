@@ -10,7 +10,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/parliament/set_slider.png"
 		noOfFrames = 2
 	}
-
+	spriteType = {
+		name = "GFX_set_slider_1"
+		textureFile = "gfx/interface/parliament/set_slider_1.png"
+		noOfFrames = 2
+	}
 	spriteType = {
 		name = "GFX_econ_crt_slider_limit_left"
 		texturefile = "gfx/interface/parliament/econ_crt_slider_limit_left.dds"
