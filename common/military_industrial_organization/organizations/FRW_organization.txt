@@ -68,7 +68,7 @@ FRW_Panhard_organization = {
 	icon = GFX_idea_Panhard
 	
 	allowed = {	 
-			tag = FRW 
+		tag = FRW 
 	}
 
 	available = {
@@ -79,7 +79,7 @@ FRW_SNCASE = {
 	icon = GFX_idea_SNCASE
 	
 	allowed = {	 
-			tag = FRW 
+		tag = FRW 
 	}
 
 	available = {
@@ -90,9 +90,25 @@ FRW_SNCASE_1 = {
 	icon = GFX_idea_SNCASE
 	
 	allowed = {	 
-			tag = FRW 
+		tag = FRW 
 	}
 
 	available = {
+	}
+}
+
+
+FRW_Bretagne_navy = {
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_Bretagne_navy
+	
+	allowed = {	 
+		tag = FRW 
+	}
+
+	available = {
+		14={
+			is_controlled_by = FRW
+		}
 	}
 }

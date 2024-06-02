@@ -1,5 +1,9 @@
 spriteTypes = {
-spriteType = {
+	spriteType = {
+		name = "GFX_money_icon"
+		texturefile = "gfx//interface//money_icon.dds"
+	}
+    spriteType = {
 		name = "GFX_grain_icon"
 		texturefile = "gfx//interface//grain_icon.dds"
 	}

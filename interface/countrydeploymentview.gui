@@ -3,7 +3,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "countrydeploymentview"
 		position = { x=-606 y=78 }
-		show_position = { x=-6 y =78 }
+		show_position = { x=-6 y =100 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
@@ -94,7 +94,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "templatedeploymentwindow"
 		position = { x=-356 y=78 }
-		show_position = { x=538 y =78 }
+		show_position = { x=538 y =100 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300

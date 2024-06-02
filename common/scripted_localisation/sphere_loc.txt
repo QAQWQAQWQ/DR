@@ -29,3 +29,86 @@ defined_text = {
 		}
 	}
 }
+defined_text = { 
+	name = Global_power_texts
+	text = {
+		localization_key = Global_power_texts1
+		trigger = {
+			AND = {
+				is_major = yes
+				has_manpower > 200000
+			}
+		}
+	}
+	text = {
+		localization_key = Global_power_texts2
+		trigger = {
+			AND={
+				NOT = {
+					original_tag = SUE
+					original_tag = XJC
+					original_tag = XZZ
+					original_tag = NXS
+					original_tag = SCX
+					original_tag = CEX
+					original_tag = LXS
+					original_tag = WUP
+					original_tag = GUG
+					original_tag = SUC
+					original_tag = ZHX
+					original_tag = SXX
+					original_tag = SXS
+					original_tag = FTX
+					is_subject = yes
+				}
+			}
+			
+		}
+	}
+	text = {
+		localization_key = Global_power_texts3
+		trigger = {
+			OR = {
+				original_tag = DTJ
+			}
+		}
+	}
+	text = {
+		localization_key = Global_power_texts4
+		trigger = {
+			OR = {
+				original_tag = DSX
+				is_subject = yes
+			}
+		}
+	}
+	text = {
+		localization_key = Global_power_texts5
+		trigger = {
+			OR = {
+				original_tag = SUE
+				original_tag = XJC
+				original_tag = XZZ
+				original_tag = NXS
+				original_tag = SCX
+				original_tag = CEX
+				original_tag = LXS
+				original_tag = WUP
+				original_tag = GUG
+				original_tag = SUC
+				original_tag = ZHX
+				original_tag = SXX
+				original_tag = SXS
+				original_tag = FTX
+			}
+		}
+	}
+	text = {
+		localization_key = Global_power_texts6
+		trigger = {
+			AND = {
+				is_major = yes
+			}
+		}
+	}
+}

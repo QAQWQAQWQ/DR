@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "topbar"
-		position = { x=-4 y=-1 }	
+		position = { x=-2 y=-1 }	
 		size = { width=100%% height=100%% }
 		iconType = {
 			name ="background"
@@ -127,20 +127,20 @@ guiTypes = {
 		iconType ={
 			name ="manpower_value_bg"
 			spriteType = "GFX_generic_box_96"
-			position = { x = 319 y = 5 }
+			position = { x = 395 y = 5 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		iconType ={
 			name ="manpower_icon"
 			spriteType = "GFX_manpower_icon"
-			position = { x= 321 y = 3 }
+			position = { x= 395 y = 3 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		instantTextBoxType = {
 			name ="manpower"
-			position = { x= 352 y = 8 }
+			position = { x= 425 y = 8 }
 			font = "hoi_18mbs"
 			text = "9999"
 			format = center
@@ -201,7 +201,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "land"
-			position = { x= 816 y = 5}
+			position = { x= 500 y = 1}
 			clipping = no
 			size = { width=56 height=30 }
 			Orientation = UPPER_LEFT
@@ -234,7 +234,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "navy"
-			position = { x= 876 y = 5}
+			position = { x= 555 y = 1}
 			clipping = no
 			size = { width=56 height=30 }
 			Orientation = UPPER_LEFT
@@ -267,7 +267,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "air"
-			position = { x= 936 y = 5}
+			position = { x= 610 y = 1}
 			clipping = no
 			size = { width=56 height=30 }
 			Orientation = UPPER_LEFT
@@ -300,7 +300,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "cp"
-			position = { x= 996 y = 5}
+			position = { x= 550 y = 35}
 			clipping = no
 			size = { width=62 height=30 }
 			Orientation = UPPER_LEFT
@@ -334,20 +334,20 @@ guiTypes = {
 		iconType ={
 			name ="industrial_capacity_bg" 
 			spriteType = "GFX_generic_box_smallest"
-			position = { x=418 y = 5 } 
+			position = { x=100 y = 37 } 
 			Orientation = "UPPER_LEFT"
 		}
 		
 		iconType ={
 			name ="industrial_capacity_icon"
 			spriteType = "GFX_industrial_capacity_icon"
-			position = { x= 414 y = 3 } 
+			position = { x= 100 y = 37 } 
 			Orientation = "UPPER_LEFT"
 		}
         
 		instantTextBoxType = {
 			name ="industrial_capacity"
-			position = { x= 438 y = 8 } 
+			position = { x= 120 y = 40 } 
 			font = "hoi_18mbs"
 			text = "12/12/12"
 			format = center
@@ -361,20 +361,20 @@ guiTypes = {
 		iconType ={
 			name ="convoy_text_bg"
 			spriteType = "GFX_generic_box_smallest"
-			position = { x=637 y=5 }
+			position = { x=173 y=37 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		iconType ={
 			name ="convoys_icon"
 			spriteType = "GFX_topbar_convoys"
-			position = { x= 636 y = 9 }
+			position = { x= 176 y = 43 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		instantTextBoxType = {
 			name ="convoys_count"
-			position = { x= 662 y = 4 }
+			position = { x= 200 y = 38 }
 			font = "hoi_18mbs"
 			text = "0"
 			format = center
@@ -386,7 +386,7 @@ guiTypes = {
 		iconType = {
 			name ="convoys_ratio_bar"
 			spriteType = "GFX_topbar_fuel_bar"
-			position = { x= 660 y = 20 }
+			position = { x= 200 y = 55 }
 			frame = 50
 			alwaystransparent = yes
 		}
@@ -396,20 +396,20 @@ guiTypes = {
 		iconType ={
 			name ="fuel_value_bg"
 			spriteType = "GFX_generic_box_smallest"
-			position = { x=491 y=5 }
+			position = { x=246 y=37 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		iconType = {
 			name ="fuel_icon"
 			spriteType = "GFX_fuel_state"
-			position = { x= 490 y = 6 }
+			position = { x= 240 y = 40 }
 			Orientation = "UPPER_LEFT"
 		}		
 		
 		instantTextBoxType = {
 			name ="fuel_value"
-			position = { x= 513 y = 4 }
+			position = { x= 267 y = 37 }
 			font = "hoi_18mbs"
 			text = "999d"
 			format = center
@@ -421,7 +421,7 @@ guiTypes = {
 		iconType = {
 			name ="fuel_ratio_bar"
 			spriteType = "GFX_topbar_fuel_bar"
-			position = { x= 514 y = 20 }
+			position = { x= 270 y = 55 }
 			frame = 50
 			alwaystransparent = yes
 		}
@@ -431,20 +431,20 @@ guiTypes = {
 		iconType ={
 			name ="supply_value_bg"
 			spriteType = "GFX_generic_box_smallest"
-			position = { x=564 y=5 }
+			position = { x=320 y=37 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		iconType = {
 			name ="supply_icon"
 			spriteType = "GFX_equipment_icon"
-			position = { x= 565 y = 8 }
+			position = { x= 323 y = 43 }
 			Orientation = "UPPER_LEFT"
 		}		
 		
 		instantTextBoxType = {
 			name ="supply_value"
-			position = { x= 586 y = 4 }
+			position = { x= 345 y = 37 }
 			font = "hoi_18mbs"
 			text = "999d"
 			format = center
@@ -456,7 +456,7 @@ guiTypes = {
 		iconType = {
 			name ="supply_ratio_bar"
 			spriteType = "GFX_topbar_fuel_bar"
-			position = { x= 587 y = 20 }
+			position = { x= 345 y = 55}
 			frame = 50
 			alwaystransparent = yes
 		}
@@ -682,7 +682,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "country_menu_window"
-			position = { x=217 y=36 }
+			position = { x=217 y=66 } #36
 			size = { width=100%% height=30 }
 			
 			iconType = {
@@ -933,7 +933,7 @@ guiTypes = {
 			
 			buttonType = {
 				name = "army_button"
-				position = { x = -275 y = 8 }
+				position = { x = -275 y = -20 }
 				quadTextureSprite ="GFX_armyoverview_button"
 				Orientation = "UPPER_right"
 				shortcut = "o"
@@ -943,7 +943,7 @@ guiTypes = {
 			
 			buttonType = {
 				name = "navy_button"
-				position = { x = -226 y = 8 }
+				position = { x = -226 y = -20 }
 				quadTextureSprite ="GFX_navyoverview_button"
 				Orientation = "UPPER_right"
 				shortcut = "p"
@@ -953,7 +953,7 @@ guiTypes = {
 			
 			buttonType = {
 				name = "air_button"
-				position = { x = -180 y = 8 }
+				position = { x = -180 y = -20 }
 				quadTextureSprite ="GFX_airoverview_button"
 				Orientation = "UPPER_right"
 				shortcut = "l"

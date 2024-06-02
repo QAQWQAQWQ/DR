@@ -14,7 +14,8 @@ state={
 		grain=21
 	}
 	history={
-		owner = UBS
+		owner = BFR
+		add_core_of = BFR
 		buildings = {
 			infrastructure = 3 #was: 6
 			arms_factory = 2
@@ -34,7 +35,6 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = UBS
 		victory_points = {
 			9814 30
 		}
