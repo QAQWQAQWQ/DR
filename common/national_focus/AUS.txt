@@ -1722,6 +1722,11 @@ bosnia_war_end = yes
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
 			}
+			set_autonomy = {
+				target = BXM
+				autonomous_state = autonomy_dominion
+				freedom_level = 0
+			}
 		}
 		available = {
 			BXM = {
@@ -1754,6 +1759,11 @@ bosnia_war_end = yes
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
 			}
+			set_autonomy = {
+				target = BXM
+				autonomous_state = autonomy_dominion
+				freedom_level = 0
+			}
 		}
 		available = {
 			BXM = {
@@ -1780,6 +1790,11 @@ bosnia_war_end = yes
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
 			}
+			set_autonomy = {
+				target = KGL
+				autonomous_state = autonomy_dominion
+				freedom_level = 0
+			}
 		}
 		available = {
 			KGL = {
@@ -1805,6 +1820,11 @@ bosnia_war_end = yes
 				}
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
+			}
+			set_autonomy = {
+				target = DMT
+				autonomous_state = autonomy_dominion
+				freedom_level = 0
 			}
 		}
 		available = {
@@ -1842,6 +1862,11 @@ bosnia_war_end = yes
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
 			}
+			set_autonomy = {
+				target = KOH
+				autonomous_state = autonomy_dominion
+				freedom_level = 0
+			}
 			AOX = {
 				remove_ideas = {
 					AOX_Hungarian_independence_movement
@@ -1866,6 +1891,11 @@ bosnia_war_end = yes
 				remove_ideas = {
 					AOX_Hungarian_independence_movement
 				}
+			}
+			set_autonomy = {
+				target = KOH
+				autonomous_state = autonomy_dominion
+				freedom_level = 0
 			}
 			KOH={
 				set_cosmetic_tag = KOH_color
@@ -1934,6 +1964,11 @@ bosnia_war_end = yes
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
 			}
+			set_autonomy = {
+				target = SLO
+				autonomous_state = autonomy_dominion
+				freedom_level = 0
+			}
 			TRA = {
 				set_cosmetic_tag = TRA_color
 				set_politics = {
@@ -1941,6 +1976,11 @@ bosnia_war_end = yes
 				}
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
+			}
+			set_autonomy = {
+				target = TRA
+				autonomous_state = autonomy_dominion
+				freedom_level = 0
 			}
 		}
 		bypass = {
@@ -1963,6 +2003,11 @@ bosnia_war_end = yes
 				}
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
+			}
+			set_autonomy = {
+				target = VCT
+				autonomous_state = autonomy_dominion
+				freedom_level = 0
 			}
 		}
 		available = {
