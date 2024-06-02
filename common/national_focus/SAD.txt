@@ -25,6 +25,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		completion_reward = {
+			add_political_power = 100
 		}
 		available = {
 		}
@@ -144,6 +145,18 @@ focus_tree = {
 		x = 3
 		y = 1
 		completion_reward = {
+			add_popularity = {
+				ideology = Conservatism
+				popularity = -0.3
+			}
+			add_popularity = {
+				ideology = Reformism
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = Liberalism
+				popularity = 0.15
+			}
 		}
 		available = {
 		}
@@ -213,6 +226,11 @@ focus_tree = {
 		x = 6
 		y = 1
 		completion_reward = {
+			add_political_power = 50
+			add_opinion_modifier = {
+				target = SAA
+				modifier = our_friend
+			}
 		}
 		available = {
 		}

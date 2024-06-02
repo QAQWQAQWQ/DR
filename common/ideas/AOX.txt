@@ -3,8 +3,8 @@ ideas = {
 		AOX_Hungarian_independence_movement = {
 			picture = Hungarian_independence_movement
 			modifier = {
-				party_popularity_stability_factor = -0.1
 				stability_factor = -0.1
+				custom_modifier_tooltip = AOX_Hungarian_independence_movement_tool
 			}
         }
 		}

@@ -495,6 +495,99 @@ country_event = {
 	}
 }
 country_event = {
+	id = austria.20
+	title = austria.20.t
+	desc = austria.20.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.20.a
+		trigger = {
+			OR = {
+				tag = AOX
+				tag = BXM
+			}
+		}
+	}
+	option = {
+		name = austria.20.b
+		trigger = {
+			NOT = { tag = WWS }
+			NOT = { tag = AOX }
+			NOT = { tag = BXM }
+			NOT = { tag = DMW }
+			AOX = { has_completed_focus = AUS_ger_2 }
+		}
+	}
+	option = {
+		name = austria.20.c
+		trigger = {
+			NOT = { tag = WWS }
+			NOT = { tag = AOX }
+			NOT = { tag = BXM }
+			NOT = { tag = DMW }
+			AOX = { has_completed_focus = AUS_ger_3 }
+		}
+	}
+	option = {
+		name = austria.20.f
+		trigger = {
+			tag = WWS
+		}
+	}
+	option = {
+		name = austria.20.e
+		trigger = {
+			tag = DMW
+		}
+	}
+}
+country_event = {
+	id = austria.21
+	title = austria.21.t
+	desc = austria.21.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.21.a
+		trigger = {
+			NOT = {
+				tag = WWS
+			}
+		}
+	}
+	option = {
+		name = austria.21.b
+		trigger = {
+			tag = WWS
+		}
+	}
+}
+country_event = {
+	id = austria.22
+	title = austria.22.t
+	desc = austria.22.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = austria.22.a
+		trigger = {
+			NOT = {
+				tag = WWS
+			}
+		}
+	}
+	option = {
+		name = austria.22.b
+		trigger = {
+			tag = WWS
+		}
+	}
+}
+country_event = {
 	id = AGN.1
 	title = AGN.1.t
 	desc = AGN.1.d

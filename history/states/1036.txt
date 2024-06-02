@@ -1,0 +1,25 @@
+
+state={
+	id=1036
+	name="STATE_1036"
+	manpower = 173370
+	
+	state_category = rural
+	history={
+		owner = WWS
+		victory_points = {
+			279 1
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+		}
+        add_core_of = WWS
+	}
+
+	provinces={
+        3324 243 279 
+	}
+
+	local_supplies=0.0 
+}

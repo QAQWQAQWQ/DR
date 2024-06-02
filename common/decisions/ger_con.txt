@@ -918,55 +918,98 @@ ger_con_decisions = {
 	  days_mission_timeout = 50
 		activation = {
         WWS = { has_completed_focus = WWS_Separate_alliances }
-				original_tag = AOX
+        OR = {
+          original_tag = WWS
+          original_tag = DOS
+          original_tag = AOX
+        }
 		}
 		visible = {
+      OR = {
+				original_tag = WWS
+				original_tag = DOS
 				original_tag = AOX
+      }
 		}		
 		fixed_random_seed = no
 		fire_only_once = yes
 		is_good = no
 		timeout_effect = {
-      set_variable = {
-        global.sax_war = 1 
+      custom_effect_tooltip = ger_con_SAX_war_boom_eff_tool
+      if = {
+        limit = {
+				  original_tag = DOS
+        }
+        set_variable = {
+          global.sax_war = 1 
+        }
+        hidden_effect = {
+          AOX = {
+            remove_from_faction = DOS
+          }
+          hidden_effect={every_country = { news_event = sax_problem.1 }}
+          
+          DOS = {
+            start_civil_war = {
+              ideology = Reactionary
+              size = 0.3
+              capital = 946
+              states = { 65 946 }
+            }
+          }
+          random_other_country = {
+            limit = {
+              original_tag = DOS
+              has_government = Conservatism
+            }
+            puppet = SAA
+            puppet = SAB
+            puppet = SAC
+            puppet = SAD
+            puppet = SAE
+            puppet = SAF
+            puppet = SAG
+            load_oob = "sax_war_aus"
+          }
+          random_other_country = {
+            limit = {
+              original_tag = DOS
+              has_government = Reactionary
+            }
+            promote_character = DOS_Carl_Eduard
+            load_oob = "sax_war_pre"
+          }
+        }
       }
-      hidden_effect = {
-        AOX = {
-          remove_from_faction = DOS
+    }
+  }
+  DOS_def_qwq = {
+		icon = generic_civil_support
+		available = {
+      has_war = no
+		}
+		# days_mission_timeout = 1
+	  days_mission_timeout = 100
+		activation = {
+      check_variable = { global.sax_war = 1  }
+		}
+		visible = {
+      original_tag = DOS
+      has_government = Conservatism
+		}		
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = yes
+		timeout_effect = {
+      random_other_country = {
+        limit = {
+              original_tag = DOS
+              has_government = Reactionary
         }
-        hidden_effect={every_country = { news_event = sax_problem.1 }}
-        
         DOS = {
-          start_civil_war = {
-            ideology = Reactionary
-            size = 0.3
-            capital = 946
-            states = { 65 946 }
-          }
+           annex_country = { target = PREV transfer_troops = no }
         }
-        random_other_country = {
-          limit = {
-            original_tag = DOS
-            has_government = Conservatism
-          }
-          puppet = SAA
-          puppet = SAB
-          puppet = SAC
-          puppet = SAD
-          puppet = SAE
-          puppet = SAF
-          puppet = SAG
-          load_oob = "sax_war_aus"
-        }
-        random_other_country = {
-          limit = {
-            original_tag = DOS
-            has_government = Reactionary
-          }
-          promote_character = DOS_Carl_Eduard
-          load_oob = "sax_war_pre"
-        }
-		  }
+      }
     }
   }
 }

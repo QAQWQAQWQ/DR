@@ -1,0 +1,21 @@
+state={
+	id=1034
+	name="STATE_1034"
+	manpower = 74600
+	
+	state_category = rural
+	
+	history=
+	{
+		owner = KGL
+                                add_core_of = KGL
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces={
+		6761 11689
+	}
+
+	local_supplies=0.0 
+}
