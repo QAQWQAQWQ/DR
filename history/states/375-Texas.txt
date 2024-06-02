@@ -16,7 +16,8 @@ state={
 		grain=16
 	}
 	history={
-		owner = UBS
+		owner = TOR
+		add_core_of = TOR
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 9
@@ -28,9 +29,8 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = MXG
-add_core_of = MEX
-add_core_of = UBS
+        add_core_of = MEX
+        add_core_of = UBS
 		victory_points = {
 			10337 10
 		}

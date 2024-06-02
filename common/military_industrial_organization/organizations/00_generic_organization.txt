@@ -15,7 +15,7 @@ generic_tank_organization = {
 	icon = GFX_idea_generic_tank_manufacturer_1
 
 	allowed = {
-		NOT = { OR = { tag = FRW tag = ENG tag = SOV tag = WWS tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = ROM } }
+		always = no
 		NOT = {
 			AND = {
 				tag = POL

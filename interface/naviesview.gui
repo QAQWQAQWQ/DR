@@ -4,7 +4,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "action_bar_window"
 		position = {x=-300 y=0}
-		show_position = {x=-300 y=-230}
+		show_position = {x=-300 y=-220}
 		size = { width=435 height=60 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
@@ -261,7 +261,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "naviesview_window"
 		position = {x=-340 y=82}
-		show_position = {x=0 y=82}
+		show_position = {x=0 y=100}
 		size = { width=500 height=86%% }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
@@ -305,7 +305,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "tool_bar_window"
 			position = {x=0 y=0} # vertical position controlled by code
-			size = { width=492 height=44 }
+			size = { width=492 height=144 }
 			Orientation = upper_left
 
 			background = {

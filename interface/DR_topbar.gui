@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "grain_ui_window"
-		position = { x= 710 y = 3}
+		position = { x= 392 y = 36}
 		clipping = no
 		# size = { width=50 height=24 }
 		Orientation = UPPER_LEFT
@@ -19,15 +19,60 @@ guiTypes = {
 		}		
 		instantTextBoxType = {
 			name ="grain_value"
-			position = { x= 30 y = 5 }
+			position = { x= 25 y = 5 }
 			font = "hoi_18mbs"
 			text = "[?resource_grain|0]"
-			format = LEFT
+			format = RIGHT
 			maxWidth = 60
 			maxHeight = 24
 			fixedsize = yes
 			pdx_tooltip = "grain_value_TOOLTIP"
 			pdx_tooltip_delayed = "grain_value_TT_TOOLTIP"
 		}#NUM_OF_grain
+	}
+	
+}
+guiTypes = {
+	containerWindowType = {
+		name = "money_top_ui_window"
+		position = { x= 312 y = 4}
+		clipping = no
+		# size = { width=50 height=24 }
+		Orientation = UPPER_LEFT
+		background = { 
+			name = "bg"
+			spriteType = "GFX_generic_box_80"
+		}
+		iconType = {
+			name ="money_top_ui_icon" 
+			spriteType = "GFX_money_icon"  
+			position = { x= 0 y = 1 } 
+			Orientation = "UPPER_LEFT"  
+			pdx_tooltip = "GDP_TOOLTIP"
+		}		
+		instantTextBoxType = { 
+			name ="money_value"
+			position = { x= 18 y = 5 }
+			font = "hoi_18mbs"
+			text = "[?new_nat_tre]B"
+			format = RIGHT
+			maxWidth = 60  
+			maxHeight = 24
+			fixedsize = yes
+			pdx_tooltip = "GDP_TOOLTIP"
+		}
+		instantTextBoxType = {
+			name ="Global_power"
+			position = { x= -300 y = 78 }
+			font = "hoi_18mbs"
+			text = "[Global_power_texts]"
+			format = RIGHT
+			maxWidth = 65
+			maxHeight = 24
+			fixedsize = yes
+			pdx_tooltip = "money_value_TOOLTIP"
+			pdx_tooltip_delayed = "money_value_TT_TOOLTIP"
+		}
+		#NUM_OF_grain
 	}
 }

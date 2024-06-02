@@ -228,7 +228,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "armies_view"
-		position = {x=0 y=79}
+		position = {x=0 y=125}
 		size = { width=340 height=100%% }
 		Orientation = upper_left
 		clipping = no
@@ -309,7 +309,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "army_badge_view"
-		position = {x=0 y=0}
+		position = {x=0 y=10}
 		Orientation = upper_left
 		size = {width=437 height=100}
 		clipping = no

@@ -1,0 +1,128 @@
+﻿
+units= {
+
+	##### NAVAL UNITS #####
+	### Northern Fleet -- Murmansk
+	fleet = {
+		name = "大西洋舰队"
+		naval_base = 3552 # Murmansk
+		task_force = {				
+			name = "大西洋舰队"
+			location = 3552 # Murmansk
+			ship = { name = "诺曼底号" definition = battleship equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRW version_name = "诺曼底级" } } }
+			ship = { name = "布列塔尼号" definition = battleship equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRW version_name = "布列塔尼级" } } }
+			ship = { name = "普罗旺斯号" definition = battleship equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRW version_name = "布列塔尼级" } } }
+			# 1ya Flotiliya Esmintsev
+			ship = { name = "驱逐舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = FRW version_name = "驱逐舰" } } }
+			ship = { name = "驱逐舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = FRW version_name = "驱逐舰" } } }
+			ship = { name = "驱逐舰" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRW version_name = "驱逐舰" } } }
+			ship = { name = "驱逐舰" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRW version_name = "驱逐舰" } } }
+			# 2ya Flotiliya Esmintsev
+			ship = { name = "驱逐舰" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRW version_name = "驱逐舰" } } }
+			ship = { name = "驱逐舰" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRW version_name = "驱逐舰" } } }
+		}	
+	}
+
+	### Black Sea Fleet -- Sevastopol
+	fleet = {
+		name = "地中海舰队"
+		naval_base = 11834 # Sevastopopl
+		task_force = {				
+			name = "地中海舰队"
+			location = 11834 # Sevastopopl
+			ship = { name = "巴黎公社号" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRW version_name = "巴黎公社级" } } }
+			ship = { name = "朗格多克号" definition = battleship equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRW version_name = "诺曼底级" } } }
+			ship = { name = "洛林号" definition = battleship equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRW version_name = "布列塔尼级" } } }
+			
+		}	
+		task_force = {	
+			name = "地中海舰队"
+			location = 11834 # Sevastopopl
+			# 9iy Podvodniy Flot
+			ship = { name = "潜艇" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRW version_name = "潜艇" } } }			
+			ship = { name = "潜艇" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRW version_name = "潜艇" } } }			
+			ship = { name = "潜艇" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRW version_name = "潜艇" } } }			
+			ship = { name = "潜艇" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRW version_name = "潜艇" } } }			
+			
+		}	
+	}
+}
+
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+
+	### Ships Under Construction Notes ###
+	# DD: Leningrad & Minsk variant (x4) ("Leningrad" "Moskva" "Kharkov" "Minsk")
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "FRW"
+			version_name = "Leningrad & Minsk Class"
+		}
+		requested_factories = 1
+		progress = 0.70
+		amount = 2
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "FRW"
+			version_name = "Leningrad & Minsk Class"
+		}
+		requested_factories = 1
+		progress = 0.60
+		amount = 2
+	}
+	#CA Kirov Class (Kirov)
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "FRW"
+			version_name = "Kirov Class"
+		}
+		requested_factories = 1
+		progress = 0.10
+		amount = 1
+	}
+	#CA Kirov Class (Voroshilov)
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "FRW"
+			version_name = "Kirov Class"
+		}
+		requested_factories = 1
+		progress = 0.10
+		amount = 1
+	}
+	# SS: Shchuka class (x29) ("Shch-125" "Shch-205" "Shch-206" "Shch-207" "Shch-310" "Shch-311" "Shch-126" "Shch-127" "Shch-128" "Shch-129" "Shch-130" "Shch-131" "Shch-132" "Shch-133" 
+	#		"Shch-134" "Shch-208" "Shch-312" "Shch-313" "Shch-314" "Shch-315" "Shch-316" "Shch-317" "Shch-318" "Shch-319" "Shch-320" "Shch-321" "Shch-322" "Shch-323" "Shch-324")
+	# SS: Stalinets class (x5) ("P-1" "P-2" "P-3" "S-1" "S-2")
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_1
+			creator = "FRW"
+			version_name = "Series V Shchuka"
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 6
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_1
+			creator = "FRW"
+			version_name = "Series X Shchuka"
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 12
+	}
+}
+
+#####################

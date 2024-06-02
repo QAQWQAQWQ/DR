@@ -42,7 +42,8 @@ guiTypes = {
 				quadTextureSprite = "GFX_stateview_bg"
 				position = { x = 5 y = 5 }
 			}
-						
+
+
 			instantTextboxType = {
 				name = "state_name"
 				position = { x = 80 y = 5 }
@@ -198,6 +199,9 @@ guiTypes = {
 				maxHeight = 30
 				format = center	
 			}
+			#
+			
+			
 			containerWindowType = {
 				name = "resistance_container"
 				position = { x = 20 y = 196}	

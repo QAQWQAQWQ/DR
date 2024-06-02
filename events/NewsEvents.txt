@@ -108,9 +108,32 @@ country_event = {
 			name = Hidden_News.5.a
 	}		
 }
+news_event = {
+	id = Hidden_News.9
+    hidden = yes
+
+	fire_only_once = yes
+    trigger = {
+	    JPN={
+		    has_war_with = SBY
+	    }
+    }
+    immediate = {
+	    news_event = WorldNew.10
+    }
+    mean_time_to_happen = {
+	    days = 2
+    }
+	option = {
+		name = Hidden_News.9.a
+	}		
+}
 #######
-
-
+#######
+#######
+#######
+#######
+#######
 news_event = {
 	id = WorldNew.1
 	title = WorldNew.1.t
@@ -274,4 +297,19 @@ news_event = {
 				transfer_state = 194
 			}
 		}		
+}
+news_event = {
+	id = WorldNew.10
+	title = WorldNew.10.t
+	desc = WorldNew.10.d
+
+	picture = GFX_WorldNew_10
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+			name = WorldNew.10.a
+	}		
 }
