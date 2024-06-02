@@ -3,9 +3,7 @@ scripted_gui = {
 		context_type = selected_state_context
 		window_name = "scorched_grain_state"
 		visible = {
-			always = yes
-			grain > 10
-			
+			grain > 5
 		}
 		
 		triggers = {
@@ -26,6 +24,19 @@ scripted_gui = {
 			} 
 			
 			}
+		}
+	}
+}
+scripted_gui = {
+	State_Culture_window = { 
+		context_type = selected_state_context
+		window_name = "State_Culture_window"
+		visible = {
+		} 
+		
+		triggers = {
+        }
+		effects = {
 		}
 	}
 }

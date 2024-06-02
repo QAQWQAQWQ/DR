@@ -956,7 +956,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "mission_toolbar"
-			position = {x=2 y=5}
+			position = {x=2 y=30}
 			size = { width=36 height=52 }
 			Orientation = upper_left
 			clipping = no
@@ -1022,7 +1022,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "air_wing_toolbar"
-			position = {x=2 y=60}
+			position = {x=2 y=80}
 			size = { width=652 height=48 }
 			Orientation = upper_left
 			clipping = no

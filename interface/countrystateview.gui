@@ -3,7 +3,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "claim_entry"
 		
-		buttonType = {
+		buttonType = { 
 			name = "claim_flag"
 			position = { x = 0 y = 0 }
 			quadTextureSprite ="GFX_flag_small"
@@ -54,7 +54,6 @@ guiTypes = {
 				maxHeight = 30
 				format = center
 			}
-			
 			gridBoxType = {
 				name = "state_building_entries"
 				position = { x = 155 y = 45 }

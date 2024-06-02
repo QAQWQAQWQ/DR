@@ -3,7 +3,7 @@ guiTypes = {
 		name = "scorched_grain_state"
 		position = { x=0 y=0 }	
 		size = { width=100%% height=100%% }
-		buttonType = {
+		buttonType = { 
 			name = "scorched_grain_state_button"
 			position = { x = -1561 y = 665 }
 			quadTextureSprite ="GFX_scorched_earth"
@@ -12,4 +12,36 @@ guiTypes = {
 			pdx_tooltip = "scorched_grain_state_button_tooltip"
 		}
 	}
+	
+}
+guiTypes = {
+	containerWindowType = { 
+		name = "State_Culture_window"  
+		position = { x = 15 y =725 }
+		size = { width=100%% height=100%% }
+		instantTextBoxType = {
+			name ="State_Culture_value"
+			position = { x = 0 y = 0 }
+			font = "hoi_18mbs" 
+			text = "文化：[FROM.state_culture_name_texts]"
+			format = left
+			maxWidth = 125
+			maxHeight = 24
+			fixedsize = yes
+			pdx_tooltip = "grain_value_TOOLTIP"
+		}
+		instantTextBoxType = {
+			name ="State_Culture_value1"
+			position = { x = 0 y = 20 }
+			font = "hoi_18mbs" 
+			text = "地区产值:[?state_cash_tot]B"
+			format = left
+			maxWidth = 125
+			maxHeight = 24
+			fixedsize = yes
+			pdx_tooltip = "grain_value_TOOLTIP"
+			pdx_tooltip_delayed = "grain_value_TT_TOOLTIP"
+		}
+	}
+	
 }
