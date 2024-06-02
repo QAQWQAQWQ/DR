@@ -1,7 +1,8 @@
 scripted_gui = {
 	scorched_grain_state = {
+		window_name = "scorched_grain_state" 
 		context_type = selected_state_context
-		window_name = "scorched_grain_state"
+		#parent_window_name = state_info_window
 		visible = {
 			grain > 5
 		}
@@ -28,11 +29,10 @@ scripted_gui = {
 	}
 }
 scripted_gui = {
-	State_Culture_window = { 
+	State_Culture_window = {
+		window_name = "State_Culture_window" 
 		context_type = selected_state_context
-		window_name = "State_Culture_window"
-		visible = {
-		} 
+		#parent_window_name = state_info_window
 		
 		triggers = {
         }
