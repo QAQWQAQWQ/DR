@@ -310,6 +310,7 @@ on_actions = {
                     AOX = { add_to_faction = PREV }
                     ger_con_aus_controlled = yes
                 }
+                AOX = { mark_focus_tree_layout_dirty = yes }
             }
             
             if = {
@@ -408,6 +409,7 @@ on_actions = {
                         Revolutionism = 10
                     }
                 }
+                AOX = { mark_focus_tree_layout_dirty = yes }
             }
         }
     }
