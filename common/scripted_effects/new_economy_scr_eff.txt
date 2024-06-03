@@ -198,7 +198,7 @@ remake_state_cash_tot = {
     if = {
         limit = {
             OR = {
-                check_variable = { state_population_k > 9000 }
+                check_variable = { state_population_k > 10000 }
             }
         }
 		multiply_variable = { state_cash_tot = 2 }
