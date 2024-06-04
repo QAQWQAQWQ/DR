@@ -133,6 +133,14 @@ on_actions = {
                     sphere_country = UBS
                 }
             }
+            JPN = {
+                set_variable = {
+                    is_a_gerat_power = 1
+                }
+                set_variable = {
+                    sphere_country = JPN
+                }
+            }
             every_country = {
                 limit = {
                     check_variable = {

@@ -146,10 +146,10 @@
     AOX_XYL_DEF:0 "奥匈帝国"
     AOX_XYL_ADJ:0 "奥匈帝国"
 
-    MAPMODE_GER_CON_MAP_MODE:0 "德意志邦联"
-    MAPMODE_GER_CON_MAP_MODE_NAME:0 "德意志邦联"
-    MAPMODE_GER_CON_MAP_MODE_DESCRIPTION:0 "德意志邦联"
-    ger_con_map_mode_tooltip:0 "德意志邦联"
+    MAPMODE_GER_CON_MAP_MODE:0 "邦联"
+    MAPMODE_GER_CON_MAP_MODE_NAME:0 "邦联"
+    MAPMODE_GER_CON_MAP_MODE_DESCRIPTION:0 "邦联"
+    ger_con_map_mode_tooltip:0 "邦联"
     
     DOS_Saxony_Thuringia_United:0 "萨克森-图林根联合"
     DOS_Saxony_Thuringia_United_desc:0 "在拿破仑退出莱茵河以东后，畏惧于普鲁士可能的扩张，图林根诸邦选择依附于萨克森。萨克森和图林根地区的各邦国建立了政治与军事上的紧密联系，图林根地区的各邦国在德意志事务上将与萨克森保持一致。"
@@ -171,7 +171,8 @@
     Get_research_level_text_4:0 "§G4§!"
     Get_research_level_text_5:0 "§G5§!"
     Get_research_level_text_6:0 "§G6§!"
-
+    tech_level_title_text:0 "国家科研水平"
+    tech_level_title_desc_text:0 "我们国家的科研水平:[Get_research_level_text]\n发展进度:[?research_level_progress|G]"
     MAPMODE_SPHERE_MAP_MODE:0 "势力范围·"
     MAPMODE_SPHERE_MAP_MODE_NAME:0 "势力范围"
     MAPMODE_SPHERE_MAP_MODE_DESCRIPTION:0 "势力范围"

@@ -1,0 +1,30 @@
+guiTypes = {
+
+    containerWindowType = {
+        name = "tech_level_windows"
+        position = { x=-0 y=0}
+        size = { width=550 height=100%% }
+        instantTextboxType = {
+            name = "tech_level_title"
+            position = { x = 600 y = 50 }
+            textureFile = ""
+            font = "hoi_36header"
+            borderSize = {x = 0 y = 0}
+            text = "tech_level_title_text"
+            maxWidth = 440
+            maxHeight = 20
+            format = left	
+        }
+        instantTextboxType = {
+            name = "tech_level_desc"
+            position = { x = 600 y = 100 }
+            textureFile = ""
+            font = "hoi_36header"
+            borderSize = {x = 0 y = 0}
+            text = "tech_level_title_desc_text"
+            maxWidth = 440
+            maxHeight = 100
+            format = left	
+        }
+    }
+}
