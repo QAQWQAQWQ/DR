@@ -3,13 +3,20 @@ guiTypes = {
 		name = "scorched_grain_state"
 		position = { x=0 y=0 }	
 		size = { width=100%% height=100%% }
+	
+		
 		buttonType = { 
 			name = "scorched_grain_state_button"
-			position = { x = -1561 y = 665 }
+			position = { x = -1261 y = 665 }
 			quadTextureSprite ="GFX_scorched_earth"
 			buttonFont = "Main_14_black"
 			Orientation = "UPPER_RIGHT"
 			pdx_tooltip = "scorched_grain_state_button_tooltip"
+		}
+		background = {
+			name = "scorched_grain_state_Background"
+			quadTextureSprite = "GFX_event_pic_clip"
+			position = { x = 0 y = 0 }
 		}
 	}
 	
@@ -29,6 +36,14 @@ guiTypes = {
 			maxHeight = 24
 			fixedsize = yes
 			pdx_tooltip = "grain_value_TOOLTIP"
+		}
+		buttonType = { 
+			name = "scorched_grain_state_button"
+			position = { x = -1261 y = 665 }
+			quadTextureSprite ="GFX_scorched_earth"
+			buttonFont = "Main_14_black"
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "scorched_grain_state_button_tooltip"
 		}
 		instantTextBoxType = {
 			name ="State_Culture_value1"
