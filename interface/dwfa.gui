@@ -67,6 +67,18 @@ guiTypes = {
 			pdx_tooltip = "grain_value_TOOLTIP"
 			pdx_tooltip_delayed = "grain_value_TT_TOOLTIP"
 		}
+		instantTextBoxType = {
+			name ="State_fac_texts"
+			position = { x = 160 y = 60 }
+			font = "hoi_18mbs" 
+			text = "State_fac_texts_text"
+			format = left
+			maxWidth = 280
+			maxHeight = 80
+			fixedsize = yes
+			pdx_tooltip = "grain_value_TOOLTIP"
+			pdx_tooltip_delayed = "grain_value_TT_TOOLTIP"
+		}
 		background = {
 			name = "state_culture_Background"
 			quadTextureSprite = "GFX_stateview_new"

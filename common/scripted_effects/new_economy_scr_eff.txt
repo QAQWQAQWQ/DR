@@ -40,7 +40,7 @@ build_private_capital = {
                 check_variable = { PREV.num_of_factories < 35 }
             }
         }
-        multiply_variable = { private_capital = 4 }
+        multiply_variable = { private_capital = 6 }
     }
     else = {
     if = {
@@ -53,7 +53,7 @@ build_private_capital = {
         multiply_variable = { private_capital = 8 }
     }
     else = {
-        multiply_variable = { private_capital = 16 }
+        multiply_variable = { private_capital = 10 }
     }}}}}
     if = {
         limit = {
