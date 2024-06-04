@@ -1,4 +1,52 @@
 defined_text = { 
+	name = state_type
+	text = {
+		localization_key = state_type_Provincial_districts
+		trigger = {
+			NOT={
+				OR={
+					has_state_flag = state_flag_clave
+					has_state_flag = state_flag_autonomous_region
+					has_state_flag = state_flag_municipality
+					has_state_flag = state_flag_Autonomous_republic
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = state_type_clave
+		trigger = {
+			has_state_flag = state_flag_clave
+		}
+	}
+	text = {
+		localization_key = state_type_autonomous_region
+		trigger = {
+			has_state_flag = state_flag_autonomous_region
+		}
+	}
+	text = {
+		localization_key = state_type_municipality
+		trigger = {
+			has_state_flag = state_flag_municipality
+		}
+	}
+	text = {
+		localization_key = state_type_Autonomous_republic
+		trigger = {
+			has_state_flag = state_flag_Autonomous_republic
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+defined_text = { 
 	name = state_culture_name_texts
 	text = {
 		localization_key = state_culture_name_texts_0

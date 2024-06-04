@@ -38,7 +38,7 @@ guiTypes = {
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300	
-		size = { width=1100 height=100%% }
+		size = { width=560 height=100%% }
 		margin = { top = 0 bottom = -5 }
 		
 		#hide_sound = menu_close_window
@@ -121,7 +121,7 @@ guiTypes = {
 				font = "hoi_18mbs"
 				borderSize = {x = 0 y = 0}
 				text = "LIMITED_RESEARCH_BONUS"
-				maxWidth = 130
+				maxWidth = 150
 				maxHeight = 20
 				format = left
 				fixedsize = yes
