@@ -555,6 +555,10 @@ focus_tree = {
 				transfer_state = 28
 				1030 = { add_core_of = PREV }
 				transfer_state = 1030
+				950 = { add_core_of = PREV }
+				transfer_state = 950
+				1037 = { add_core_of = PREV }
+				transfer_state = 1037
 				set_cosmetic_tag = SGF
 			}
 			WWS = {
@@ -609,7 +613,9 @@ focus_tree = {
 				58 = { add_core_of = WWS } 
 				1032 = { add_core_of = WWS } 
 				952 = { add_core_of = WWS } 
-				DMW = { country_event = ger_con.8 }
+				transfer_state = 58
+				transfer_state = 1032
+				transfer_state = 952
 				set_cosmetic_tag = NGF
 			}
 			AOX = { puppet = DOR }
