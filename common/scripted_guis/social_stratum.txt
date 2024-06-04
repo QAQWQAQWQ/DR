@@ -2,7 +2,7 @@ scripted_gui = {
 	scorched_grain_state = {
 		window_name = "scorched_grain_state" 
 		context_type = selected_state_context
-		#parent_window_name = state_info_window
+		parent_window_name = countrystateview#显示
 		visible = {
 			grain > 5
 		}
@@ -35,8 +35,23 @@ scripted_gui = {
 		parent_window_name = countrystateview
 		
 		triggers = {
+			scorched_grain_state_button_visible = {
+                is_controlled_by = ROOT
+            }
         }
 		effects = {
+			scorched_grain_state_button_click = { 
+			ROOT={
+				add_political_power = -10
+				add_to_variable = { resource_grain = 10 } #
+			}
+			add_state_modifier = {
+				modifier = {
+				state_resource_cost_grain = 5
+			}
+			} 
+			
+			}
 		}
 	}
 }

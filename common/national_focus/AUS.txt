@@ -1341,7 +1341,7 @@ bosnia_war_end = yes
 	#		not_bosnia_war_tri = yes
 	#	}
 	#	bypass = {
-	#	}
+	#	} 
 	#}
 	focus = {
 		id = AUS_bir_12
@@ -1381,7 +1381,7 @@ bosnia_war_end = yes
 		}
 	}
 	focus = {
-		id = AUS_bir_13
+		id = AUS_bir_13 
 		icon = GFX_AUS_bir_13
 		cost = 5.00
 		prerequisite = {
