@@ -1,0 +1,11 @@
+spriteTypes = {	
+	progressBarType = {
+		name = "GFX_tech_level_upd_balance"
+		size = { x = 525 y = 30 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+		color = { 0.0 0.6 0.6 0.8}
+		colortwo = { 0.0 0.0 0.0 0.8}
+		steps = 100
+	}
+}

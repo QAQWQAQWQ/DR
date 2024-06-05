@@ -35,8 +35,9 @@ defined_text = {
 		localization_key = Global_power_texts1
 		trigger = {
 			AND = {
+				check_variable = { THIS.is_a_gerat_power = 1 }
 				is_major = yes
-				has_manpower > 200000
+				# has_manpower > 200000
 			}
 		}
 	}
