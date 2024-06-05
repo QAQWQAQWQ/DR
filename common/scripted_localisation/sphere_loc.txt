@@ -42,6 +42,14 @@ defined_text = {
 		}
 	}
 	text = {
+		localization_key = Global_power_texts6
+		trigger = {
+			AND = {
+				is_major = yes
+			}
+		}
+	}
+	text = {
 		localization_key = Global_power_texts2
 		trigger = {
 			AND={
@@ -101,14 +109,6 @@ defined_text = {
 				original_tag = SXX
 				original_tag = SXS
 				original_tag = FTX
-			}
-		}
-	}
-	text = {
-		localization_key = Global_power_texts6
-		trigger = {
-			AND = {
-				is_major = yes
 			}
 		}
 	}
