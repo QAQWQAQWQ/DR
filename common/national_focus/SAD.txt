@@ -43,6 +43,11 @@ focus_tree = {
 		x = -2
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = tech_level_title_more_5_tool
+			hidden_effect = {
+				add_to_variable = { research_level_progress = 0.05 }
+				tech_level_upd_gui_value = yes
+			}
 		}
 		available = {
 		}

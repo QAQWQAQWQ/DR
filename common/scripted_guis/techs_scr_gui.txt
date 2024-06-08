@@ -3,5 +3,10 @@ scripted_gui = {
 		context_type = player_context
 		window_name = "tech_level_windows"
         parent_window_name = countrytechnologyview
+		properties={
+			tech_level_upd_value = {
+				frame = tech_level_upd_value_var
+			}
+        }
     }
 }

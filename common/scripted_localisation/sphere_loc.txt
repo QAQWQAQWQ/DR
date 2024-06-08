@@ -35,8 +35,17 @@ defined_text = {
 		localization_key = Global_power_texts1
 		trigger = {
 			AND = {
+				check_variable = { THIS.is_a_gerat_power = 1 }
 				is_major = yes
-				has_manpower > 200000
+				# has_manpower > 200000
+			}
+		}
+	}
+	text = {
+		localization_key = Global_power_texts6
+		trigger = {
+			AND = {
+				is_major = yes
 			}
 		}
 	}
@@ -100,14 +109,6 @@ defined_text = {
 				original_tag = SXX
 				original_tag = SXS
 				original_tag = FTX
-			}
-		}
-	}
-	text = {
-		localization_key = Global_power_texts6
-		trigger = {
-			AND = {
-				is_major = yes
 			}
 		}
 	}

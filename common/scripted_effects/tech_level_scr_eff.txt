@@ -1,0 +1,17 @@
+tech_level_upd_gui_value = {
+    if = {
+        limit = {
+            check_variable = { research_level_progress > 0.99 }
+            check_variable = { research_level < 6 }
+        }
+        add_to_variable = { research_level = 1 }
+        subtract_from_variable = { research_level_progress = 1 }
+    }
+    set_research_slots = research_level
+    set_variable = {
+        tech_level_upd_value_var = research_level_progress
+    }
+    multiply_variable = {
+        tech_level_upd_value_var = 100
+    }
+}
