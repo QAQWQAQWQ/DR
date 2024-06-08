@@ -70,7 +70,9 @@ FRW_Provence_Commune= {
 
 	icon = GFX_idea_Provence_Commune
 
-	weekly_manpower = 100 
+	production_factory_start_efficiency_factor=0.03
+	state_production_speed_infrastructure_factor=0.03
+	local_resources_factor=0.03
 	disable_strategic_redeployment = 1
 }
 

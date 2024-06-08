@@ -2,13 +2,13 @@ guiTypes = {
 
     containerWindowType = {
         name = "tech_level_windows"
-        position = { x=-0 y=0}
+        position = { x=-575 y=0}
         size = { width=550 height=100%% }
         instantTextboxType = {
             name = "tech_level_title"
-            position = { x = 600 y = 50 }
+            position = { x = 600 y = 70 }
             textureFile = ""
-            font = "hoi_36header"
+            font = "hoi_18mbs"
             borderSize = {x = 0 y = 0}
             text = "tech_level_title_text"
             maxWidth = 440
@@ -19,7 +19,7 @@ guiTypes = {
             name = "tech_level_desc"
             position = { x = 600 y = 100 }
             textureFile = ""
-            font = "hoi_36header"
+            font = "hoi_18mbs"
             borderSize = {x = 0 y = 0}
             text = "tech_level_title_desc_text"
             maxWidth = 440

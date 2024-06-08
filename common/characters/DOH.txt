@@ -1,4 +1,18 @@
 characters={
+	DOH_Ernst_August_II={
+		name=DOH_Ernst_August_II
+		portraits={
+			civilian={
+				large="gfx/leaders/DOH/portrait_Ernst_August_II.tga"
+			}
+		}
+		country_leader={
+			ideology=Classicism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	DOH_Ernst_August_III={
 		name=DOH_Ernst_August_III
 		portraits={

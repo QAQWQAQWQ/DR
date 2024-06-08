@@ -1,3 +1,4 @@
+#!gfx:interface\RS_icon.gfx
 focus_tree={
 	country={
 		factor=0
@@ -10,7 +11,7 @@ focus_tree={
 	focus={
 		id=ENL_focus1
 		x=13
-		y=0
+		y=1
 		cost=10
 		icon = GFX_goal_ENL_focus1
 		ai_will_do={
@@ -20,15 +21,18 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			
+			  
 		}
 	}
 	focus={
 		id=ENL_focus2
-		x=13
-		y=1
+		x=7
+		y=6
 		icon = GFX_goal_ENL_focus2
-		prerequisite={focus=ENL_focus1}
+		prerequisite={focus=ENL_focus63}
+		prerequisite={focus=ENL_focus62}
+		prerequisite={focus=ENL_focus65}
+		prerequisite={focus=ENL_focus66}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -41,10 +45,10 @@ focus_tree={
 	}
 	focus={
 		id=ENL_focus3
-		x=10
+		x=30
 		y=2
 		icon = GFX_goal_ENL_focus3
-		prerequisite={focus=ENL_focus2}
+		prerequisite={focus=ENL_focus68}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -57,10 +61,10 @@ focus_tree={
 	}
 	focus={
 		id=ENL_focus4
-		x=16
+		x=17
 		y=2
 		icon = GFX_goal_ENL_focus4
-		prerequisite={focus=ENL_focus2}
+		prerequisite={focus=ENL_focus1}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -73,10 +77,10 @@ focus_tree={
 	}
 	focus={
 		id=ENL_focus5
-		x=8
-		y=3
+		x=39
+		y=1
 		icon = GFX_goal_ENL_focus5
-		prerequisite={focus=ENL_focus3}
+		prerequisite={focus=ENL_focus53}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -89,10 +93,10 @@ focus_tree={
 	}
 	focus={
 		id=ENL_focus6
-		x=12
-		y=3
+		x=34
+		y=2
 		icon = GFX_goal_ENL_focus6
-		prerequisite={focus=ENL_focus3}
+		prerequisite={focus=ENL_focus68}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -105,10 +109,9 @@ focus_tree={
 	}
 	focus={
 		id=ENL_focus7
-		x=10
-		y=4
+		x=39
+		y=3
 		icon = GFX_goal_ENL_focus7
-		prerequisite={focus=ENL_focus6}
 		prerequisite={focus=ENL_focus5}
 		cost=10
 		ai_will_do={
@@ -122,7 +125,7 @@ focus_tree={
 	}
 	focus={
 		id=ENL_focus8
-		x=14
+		x=15
 		y=3
 		icon = GFX_goal_ENL_focus8
 		prerequisite={focus=ENL_focus4}
@@ -138,7 +141,7 @@ focus_tree={
 	}
 	focus={
 		id=ENL_focus9
-		x=18
+		x=19
 		y=3
 		icon = GFX_goal_ENL_focus9
 		prerequisite={focus=ENL_focus4}
@@ -154,7 +157,7 @@ focus_tree={
 	}
 	focus={
 		id=ENL_focus10
-		x=16
+		x=17
 		y=4
 		icon = GFX_goal_ENL_focus10
 		prerequisite={focus=ENL_focus9}
@@ -174,7 +177,8 @@ focus_tree={
 		x=24
 		y=1
 		icon = GFX_goal_ENL_focus11
-		prerequisite={focus=ENL_focus1}
+		prerequisite={focus=ENL_focus53}
+		
 		cost=10
 		ai_will_do={
 			factor=1
@@ -188,7 +192,7 @@ focus_tree={
 	}
 	focus={
 		id=ENL_focus12
-		x=22
+		x=23
 		y=2
 		icon = GFX_goal_ENL_focus12
 		prerequisite={focus=ENL_focus11}
@@ -204,7 +208,7 @@ focus_tree={
 	}
 	focus={
 		id=ENL_focus13
-		x=22
+		x=23
 		y=3
 		icon = GFX_goal_ENL_focus13
 		prerequisite={focus=ENL_focus12}
@@ -236,7 +240,7 @@ focus_tree={
 	}
 	focus={
 		id=ENL_focus15
-		x=26
+		x=25
 		y=2
 		icon = GFX_goal_ENL_focus15
 		prerequisite={focus=ENL_focus11}
@@ -252,7 +256,7 @@ focus_tree={
 	}
 	focus={
 		id=ENL_focus16
-		x=26
+		x=25
 		y=3
 		icon = GFX_goal_ENL_focus16
 		prerequisite={focus=ENL_focus15}
@@ -301,10 +305,10 @@ focus_tree={
 	}
 	focus={
 		id=ENL_focus19
-		x=2
+		x=46
 		y=1
 		icon = GFX_goal_ENL_focus19
-		prerequisite={focus=ENL_focus1}
+		prerequisite={focus=ENL_focus53}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -317,7 +321,7 @@ focus_tree={
 	}
 	focus={
 		id=ENL_focus20
-		x=0
+		x=44
 		y=2
 		icon = GFX_goal_ENL_focus20
 		prerequisite={focus=ENL_focus19}
@@ -334,7 +338,7 @@ focus_tree={
 	}
 	focus={
 		id=ENL_focus24
-		x=4
+		x=48
 		y=2
 		icon = GFX_goal_ENL_focus24
 		prerequisite={focus=ENL_focus19}
@@ -351,7 +355,7 @@ focus_tree={
 	}
 	focus={
 		id=ENL_focus21
-		x=0
+		x=45
 		y=3
 		icon = GFX_goal_ENL_focus21
 		prerequisite={focus=ENL_focus20}
@@ -367,7 +371,7 @@ focus_tree={
 	}
 	focus={
 		id=ENL_focus25
-		x=4
+		x=47
 		y=3
 		icon = GFX_goal_ENL_focus25
 		prerequisite={focus=ENL_focus24}
@@ -383,7 +387,7 @@ focus_tree={
 	}
 	focus={
 		id=ENL_focus22
-		x=0
+		x=45
 		y=4
 		icon = GFX_goal_ENL_focus22
 		prerequisite={focus=ENL_focus21}
@@ -399,7 +403,7 @@ focus_tree={
 	}
 	focus={
 		id=ENL_focus26
-		x=4
+		x=47
 		y=4
 		icon = GFX_goal_ENL_focus26
 		prerequisite={focus=ENL_focus25}
@@ -415,7 +419,7 @@ focus_tree={
 	}
 	focus={
 		id=ENL_focus23
-		x=0
+		x=44
 		y=5
 		icon = GFX_goal_ENL_focus23
 		prerequisite={focus=ENL_focus22}
@@ -431,7 +435,7 @@ focus_tree={
 	}
 	focus={
 		id=ENL_focus27
-		x=4
+		x=48
 		y=5
 		icon = GFX_goal_ENL_focus27
 		prerequisite={focus=ENL_focus26}
@@ -774,7 +778,7 @@ focus_tree={
 	}
 	focus={
 		id=ENL_focus49
-		x=14
+		x=15
 		y=5
 		icon = GFX_goal_ENL_focus49
 		prerequisite={focus=ENL_focus9}
@@ -792,7 +796,7 @@ focus_tree={
 	}
 	focus={
 		id=ENL_focus50
-		x=18
+		x=19
 		y=5
 		icon = GFX_goal_ENL_focus50
 		prerequisite={focus=ENL_focus9}
@@ -810,11 +814,9 @@ focus_tree={
 	}
 	focus={
 		id=ENL_focus51
-		x=8
-		y=5
+		x=37
+		y=2
 		icon = GFX_goal_ENL_focus51
-		prerequisite={focus=ENL_focus7}
-		prerequisite={focus=ENL_focus6}
 		prerequisite={focus=ENL_focus5}
 		cost=10
 		ai_will_do={
@@ -828,12 +830,432 @@ focus_tree={
 	}
 	focus={
 		id=ENL_focus52
-		x=12
-		y=5
+		x=30
+		y=4
 		icon = GFX_goal_ENL_focus52
-		prerequisite={focus=ENL_focus7}
+		prerequisite={focus=ENL_focus3}
+		prerequisite={focus=ENL_focus69}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus53
+		x=37
+		y=0
+		icon = GFX_goal_ENL_focus53
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus54
+		x=8
+		y=2
+		icon = GFX_goal_ENL_focus54
+		prerequisite={focus=ENL_focus1}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus55
+		x=13
+		y=3
+		icon = GFX_goal_ENL_focus55
+		prerequisite={focus=ENL_focus54}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus56
+		x=6
+		y=3
+		icon = GFX_goal_ENL_focus56
+		prerequisite={focus=ENL_focus54}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus57
+		x=9
+		y=3
+		icon = GFX_goal_ENL_focus57
+		prerequisite={focus=ENL_focus54}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus58
+		x=3
+		y=3
+		icon = GFX_goal_ENL_focus58
+		prerequisite={focus=ENL_focus54}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		} 
+	}
+	focus={
+		id=ENL_focus59
+		x=9
+		y=4
+		icon = GFX_goal_ENL_focus59
+		prerequisite={focus=ENL_focus57}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus60
+		x=13
+		y=4
+		icon = GFX_goal_ENL_focus60
+		prerequisite={focus=ENL_focus55 }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus61
+		x=7
+		y=4
+		icon = GFX_goal_ENL_focus61
+		prerequisite={focus=ENL_focus57 }
+		prerequisite={focus=ENL_focus56 }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus62
+		x=5
+		y=5
+		icon = GFX_goal_ENL_focus62
+		prerequisite={focus=ENL_focus57 }
+		prerequisite={focus=ENL_focus56 }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus63
+		x=3
+		y=5
+		icon = GFX_goal_ENL_focus63
+		prerequisite={focus=ENL_focus57 }
+		prerequisite={focus=ENL_focus56 }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus64
+		x=11
+		y=3
+		icon = GFX_goal_ENL_focus64
+		prerequisite={focus=ENL_focus54}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus65
+		x=8
+		y=5
+		icon = GFX_goal_ENL_focus65
+		prerequisite={focus=ENL_focus59}
+		prerequisite={focus=ENL_focus61}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={  
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus66
+		x=11
+		y=5
+		icon = GFX_goal_ENL_focus66
+		prerequisite={focus=ENL_focus59}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus67
+		x=54
+		y=1
+		icon = GFX_goal_ENL_focus67
+		prerequisite={focus=ENL_focus53}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus68
+		x=32
+		y=1
+		icon = GFX_goal_ENL_focus68
+		prerequisite={focus=ENL_focus53}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus69
+		x=32
+		y=3
+		icon = GFX_goal_ENL_focus69
+		prerequisite={focus=ENL_focus3}
 		prerequisite={focus=ENL_focus6}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus70
+		x=34 
+		y=4
+		icon = GFX_goal_ENL_focus70
+		prerequisite={focus=ENL_focus6}
+		prerequisite={focus=ENL_focus69}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={ 
+		id=ENL_focus71
+		x=41
+		y=2
+		icon = GFX_goal_ENL_focus71
 		prerequisite={focus=ENL_focus5}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus72
+		x=41
+		y=4
+		icon = GFX_goal_ENL_focus72
+		prerequisite={focus=ENL_focus71}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus73
+		x=37
+		y=4
+		icon = GFX_goal_ENL_focus73
+		prerequisite={focus=ENL_focus51}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus74
+		x=52
+		y=2
+		icon = GFX_goal_ENL_focus74
+		prerequisite={focus=ENL_focus67}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus75
+		x=54
+		y=3
+		icon = GFX_goal_ENL_focus75
+		prerequisite={focus=ENL_focus67}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus76
+		x=56
+		y=2
+		icon = GFX_goal_ENL_focus76
+		prerequisite={focus=ENL_focus67}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus77
+		x=56
+		y=4
+		icon = GFX_goal_ENL_focus77
+		prerequisite={focus=ENL_focus76}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=ENL_focus78
+		x=52
+		y=4
+		icon = GFX_goal_ENL_focus78
+		prerequisite={focus=ENL_focus74}
 		cost=10
 		ai_will_do={
 			factor=1

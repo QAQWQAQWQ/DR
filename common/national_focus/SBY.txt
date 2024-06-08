@@ -141,6 +141,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = {id=SBY.6 days=3}
+			
 		}
 
 	}
@@ -607,6 +608,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = SBY.10
+			165={
+				set_state_flag = state_flag_autonomous_region
+				custom_effect_tooltip = state_type_autonomous_region_effect
+			}
 		}
 	}
 	focus = {
@@ -1192,7 +1197,6 @@ focus_tree = {
 		cost = 7.00
 		x = 5
 		y = 7
-		
 		available = {
 			has_idea = SBY_Gabriel_Maura_Gamazo_H
 		}
@@ -1202,10 +1206,14 @@ focus_tree = {
 		available = {
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 1 
 		}
 		completion_reward = {
 			country_event = SBY.9
+			167={
+				set_state_flag = state_flag_autonomous_region
+				custom_effect_tooltip = state_type_autonomous_region_effect
+			}
 		}
 	}
 	focus = {

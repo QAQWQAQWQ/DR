@@ -148,9 +148,9 @@ completion_reward = {
 		x = 21
 		y = 2
 completion_reward = {
-	custom_effect_tooltip = FRW_focus8_effect
 	21={
-		set_demilitarized_zone=yes
+		set_state_flag = state_flag_autonomous_region
+		custom_effect_tooltip = state_type_autonomous_region_effect
 		add_dynamic_modifier = { modifier = FRW_Provence_Commune }
 	}
 	add_stability = 0.05
