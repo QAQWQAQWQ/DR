@@ -28,5 +28,11 @@ ideas = {
 				army_morale_factor = -0.2
             }
 		}
+		SAX_SAA_2 = {
+			picture = Irregular_military_forces
+			modifier = {
+				research_speed_factor = 0.01
+            }
+		}
 }
 }
