@@ -38,7 +38,7 @@ void listfiles(const char *dir){
 			if(flg)str3+=cwd[i];
 		} 
 		cout<<str3<<"/";
-		cout<<str2<<".dds"<<"\""<<endl;
+		cout<<str1<<"\""<<endl;
 		cout<<"}"<<endl;
 	}while(_findnext(handle,&findata)==0);
 	_findclose(handle);
