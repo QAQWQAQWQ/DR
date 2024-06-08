@@ -28,22 +28,21 @@ guiTypes = {
 		size = { width=100% height=100% }
 		instantTextBoxType = {
 			name ="State_Culture_value"
-			position = { x = 70 y = 60 }
+			position = { x = 20 y = 65 }
 			font = "hoi_18mbs" 
 			text = "文化：[FROM.state_culture_name_texts]"
 			format = left
 			maxWidth = 125
 			maxHeight = 24
 			fixedsize = yes
-			pdx_tooltip = "grain_value_TOOLTIP"
 		}
 		instantTextBoxType = {
 			name ="state_type"
-			position = { x = 10 y = 15 }
+			position = { x = 15 y = 20 }
 			font = "hoi_18mbs" 
 			text = "[FROM.owner.GetNameWithFlag][FROM.state_type]"
 			format = left
-			maxWidth = 250
+			maxWidth = 350
 			maxHeight = 24
 			fixedsize = yes
 		}
@@ -57,27 +56,23 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name ="State_Culture_value1"
-			position = { x = 70 y = 120 }
+			position = { x = 20 y = 120 }
 			font = "hoi_18mbs" 
 			text = "地区产值:[?state_cash_tot]B"
 			format = left
 			maxWidth = 125
 			maxHeight = 24
 			fixedsize = yes
-			pdx_tooltip = "grain_value_TOOLTIP"
-			pdx_tooltip_delayed = "grain_value_TT_TOOLTIP"
 		}
 		instantTextBoxType = {
 			name ="State_fac_texts"
-			position = { x = 160 y = 60 }
+			position = { x = 160 y = 165 }
 			font = "hoi_18mbs" 
 			text = "State_fac_texts_text"
 			format = left
 			maxWidth = 280
-			maxHeight = 80
+			maxHeight = 100 
 			fixedsize = yes
-			pdx_tooltip = "grain_value_TOOLTIP"
-			pdx_tooltip_delayed = "grain_value_TT_TOOLTIP"
 		}
 		background = {
 			name = "state_culture_Background"
