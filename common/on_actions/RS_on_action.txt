@@ -2411,22 +2411,21 @@ on_startup= {
 			}
 		}
 	}
-	on_monthly = {
+	on_weekly_ENL = {
 		effect = {
-			if = {
-				limit = {
-					ENL={
-						has_idea=Ireland_uproar
-					}
-					}
-					ENL={
-						add_to_variable = {
-						var = Separation_emotions
-						value = 2
-					}
-					}	
+		if = {
+			limit = {
+				ENL={
+				  has_idea=Ireland_uproar
 				}
-				
+			}
+			    ENL={
+				  add_to_variable = {
+					var = Separation_emotions
+					value = 2
+				}
+			}	
+			}	
 		}
 	}
 	on_weekly = {

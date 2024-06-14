@@ -5,6 +5,81 @@
 add_namespace = ENL
 add_namespace = ENL_Labour
 add_namespace = msl
+add_namespace = ENL_The_Irish_crisis
+
+country_event = {
+	id = ENL_The_Irish_crisis.1
+	title = ENL_The_Irish_crisis.1.t
+	desc = ENL_The_Irish_crisis.1.d
+
+	picture = GFX_White_Stadium
+
+	is_triggered_only = yes
+
+	option = {
+		name = ENL_The_Irish_crisis.1.a
+		add_stability = -0.01
+		119={
+			damage_building = {
+				type = industrial_complex
+				damage = 0.5
+			}
+		}
+	}	
+}
+country_event = {
+	id = ENL_The_Irish_crisis.2
+	title = ENL_The_Irish_crisis.2.t
+	desc = ENL_The_Irish_crisis.2.d
+
+	picture = GFX_White_Stadium
+
+	is_triggered_only = yes
+
+	option = {
+		name = ENL_The_Irish_crisis.2.a
+		add_stability = -0.01
+		ENL={
+			add_to_variable = {
+				Sacrifice_soldiers = 15
+				tooltip = Sacrifice_soldiers_up
+			}
+		}
+		IRL={
+			add_to_variable = {
+				Sacrifice_soldiers = 15
+				tooltip = Sacrifice_soldiers_up
+			}
+		}
+	}	
+}
+country_event = {
+	id = ENL_The_Irish_crisis.3
+	title = ENL_The_Irish_crisis.3.t
+	desc = ENL_The_Irish_crisis.3.d
+
+	picture = GFX_White_Stadium
+
+	is_triggered_only = yes
+
+	option = {
+		name = ENL_The_Irish_crisis.3.a
+		126={
+			damage_building = {
+				type = infrastructure
+				damage = 0.9
+			}
+		}
+	}	
+}
+
+
+
+
+
+
+
+
 
 
 country_event = {

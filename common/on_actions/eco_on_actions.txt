@@ -1,25 +1,6 @@
 on_actions = {
-	on_startup= {
-		effect = {
-every_country = {
-set_variable = { Employment = 1 }
-set_variable = { Unemployment = gdpmn}
-multiply_variable = { Unemployment = 0.4 }
-}
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-		on_startup={
+	
+	on_startup={
 			effect = {
 				every_country={
 					limit = {
@@ -30,7 +11,6 @@ multiply_variable = { Unemployment = 0.4 }
 		}
 
 	}
-
 
 
 

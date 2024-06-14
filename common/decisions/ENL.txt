@@ -1,12 +1,45 @@
 Irish_crisis = {
-	Fortify_line_defense = {
+
+	##ENL
+	Embargo_Ireland = {
 		icon = generic_ignite_civil_war
 		visible = {
+			original_tag = ENL
+		}
+		available = {
+			has_completed_focus = ENL_focus17
+		}
+		days_re_enable = 30
+		days_remove = 20
+		cost = 25
+		allowed = {
+			tag = ENL 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = { 
+			factor = 1
+			}
+			complete_effect = {
+				hidden_effect = {
+					every_country = {
+						send_embargo=IRL
+						give_market_access=IRL
+					}
+				}
+				custom_effect_tooltip = Embargo_Ireland_tool
+			}
+		}
+	Appease_masses = {
+		icon = generic_ignite_civil_war
+		visible = {
+			original_tag = ENL
 		}
 		available = {
 		}
 		days_re_enable = 30
-		days_remove = 60
+		days_remove = 30
 		cost = 25
 		allowed = {
 			tag = ENL
@@ -18,7 +51,49 @@ Irish_crisis = {
 			factor = 1
 			}
 			complete_effect = {
-				add_to_variable = { Separation_emotions = 1 } 
+				ENL={
+					add_to_variable = {  
+						Separation_emotions = -10 
+						tooltip = Separation_emotions_10
+				} 
+				}
+				hidden_effect = {
+					IRL={
+						add_to_variable = { 
+							Separation_emotions = -10
+							tooltip = Separation_emotions_10
+					 } 
+					}
+				}
+				
+			}
+		}
+	Fortify_line_defense = {
+		icon = generic_ignite_civil_war
+		visible = {
+			original_tag = ENL
+		}
+		available = {
+		}
+		days_re_enable = 30
+		days_remove = 60
+		cost = 25
+		allowed = {
+			tag = ENL
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+			complete_effect = {
+				ENL={
+					add_to_variable = { Separation_emotions = 1 } 
+				}
+				IRL={
+					add_to_variable = { Separation_emotions = 1 } 
+				}
 			119={
 				add_building_construction = {
                 type = bunker
@@ -32,35 +107,389 @@ Irish_crisis = {
 			}
 			}
 		}
-	Strengthen_police_force = {
+	Search_IRA_dens = {
 		icon = generic_ignite_civil_war
 		visible = {
+			original_tag = ENL
 		}
 		available = {
-				has_country_flag=Stop_surge
 		}
-		days_re_enable = 10
-		days_remove = 20
+		days_re_enable = 30
+		days_remove = 60
 		cost = 25
 		allowed = {
 			tag = ENL
 		}
 		fixed_random_seed = no
-		fire_only_once = no
+		fire_only_once = yes
 		is_good = no
 			ai_will_do = {
 			factor = 1
 			}
 			complete_effect = {
-				add_to_variable = {
-					var = Black_Brown_Troops
-					value = 200
+				119={
+					add_compliance = 10
 				}
-				add_manpower=-200
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = -200
+				
+			}
+		}
+	Deploy_regular_troops = {
+		icon = generic_ignite_civil_war
+		visible = {
+			original_tag = ENL
+		}
+		available = {
+			has_equipment = {
+				gw_tank_equipment>99
+			}
+			119 = {
+		        is_controlled_by = ENL
+			}
+		} 
+		days_re_enable = 10
+		days_remove = 20
+		cost = 25
+		allowed = {
+			tag = ENL
+		} 
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no 
+		ai_will_do = { 
+		factor = 1
+		}
+		complete_effect = {
+			ENL={
+				add_to_variable = { 
+					Separation_emotions = 20 
+					tooltip = Separation_emotions_20 
+				}
+			}
+			IRL={
+				add_to_variable = { 
+					Separation_emotions = 20 
+					tooltip = Separation_emotions_20 
+				}
+			}
+			hidden_effect = {
+				119={
+					create_unit = {
+						division = "name = \"驻北爱尔兰坦克联队\" division_template = \"坦克联队\" start_experience_factor = 0.3 start_equipment_factor =0.5"
+						owner = ENL
+						prioritize_location = 3379
+					}
+				}
+			}
+			custom_effect_tooltip = Deploy_regular_troops_tank
+			 	
+		}
+	}
+	##IRL
+	Infiltrate_Northern_Ireland = { 
+		icon = generic_ignite_civil_war
+		visible = {
+			original_tag = IRL 
+		}
+		available = {
+		}  
+		highlight_states = {
+			highlight_state_targets = {
+				state = 119
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		days_re_enable = 10
+		days_remove = 30
+		cost = 25
+		allowed = {
+			tag = IRL
+		} 
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+		ai_will_do = { 
+		factor = 1  
+		}
+		complete_effect = {
+			119={
+				add_resistance = 20 
+			}
+		}
+	}
+	Inciting_national_sentiments = {
+		icon = generic_ignite_civil_war
+		visible = {
+			original_tag = IRL
+		}
+		available = {
+			
+		} 
+		days_re_enable = 10
+		days_remove = 20
+		cost = 25
+		allowed = {
+			tag = IRL
+		} 
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+		ai_will_do = { 
+		factor = 1 
+		}
+		complete_effect = {
+			ENL={
+				add_to_variable = { 
+					Separation_emotions = 5
+					tooltip = Separation_emotions_5 
+				}
+			}
+			IRL={
+				add_to_variable = { 
+					Separation_emotions = 5
+					tooltip = Separation_emotions_5 
+				}
+				
+			}
+			add_war_support = 0.1
+
+			
+			 	
+		}
+	}
+	Irish_national_identity = {
+		icon = generic_ignite_civil_war
+		visible = {
+			original_tag = IRL
+		}
+		available = {
+			
+		}  
+		days_re_enable = 10
+		days_remove = 20
+		cost = 25
+		allowed = {
+			tag = IRL
+		} 
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+		ai_will_do = { 
+		factor = 1 
+		}
+		complete_effect = {
+			ENL={
+				add_to_variable = { 
+					Separation_emotions = 5
+					tooltip = Separation_emotions_5 
+				}
+			}
+			IRL={
+				add_to_variable = { 
+					Separation_emotions = 5
+					tooltip = Separation_emotions_5 
 				}
 			}
 		}
+	}
+	Assault_barracks = { 
+		icon = generic_ignite_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 119
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		visible = {
+			original_tag = IRL  
+		}
+		available = {
+			
+		}  
+		
+		days_re_enable = 10
+		days_remove = 30
+		cost = 25
+		allowed = {
+			tag = IRL
+		} 
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+		ai_will_do = { 
+		factor = 1 
+		}
+		complete_effect = {
+			
+			ENL={
+				country_event = ENL_The_Irish_crisis.2
+			}
+			
+		}
+	}
+	Assault_factory = { 
+		icon = generic_ignite_civil_war
+		visible = {
+			original_tag = IRL 
+		}
+		available = {
+			
+		}  
+		highlight_states = {
+			highlight_state_targets = {
+				state = 119
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		days_re_enable = 10
+		days_remove = 30
+		cost = 25
+		allowed = {
+			tag = IRL
+		} 
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+		ai_will_do = { 
+		factor = 1 
+		}
+		complete_effect = {
+			ENL={
+                country_event = ENL_The_Irish_crisis.1
+			}
+			
+		}
+	}
+	Dublin_Patriotic_parade = { 
+		icon = generic_ignite_civil_war
+		visible = {
+			original_tag = IRL 
+		}
+		available = {
+			has_completed_focus = IRL
+		}  
+		highlight_states = {
+			highlight_state_targets = {
+				state = 113
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		days_re_enable = 10
+		days_remove = 20
+		cost = 25
+		allowed = {
+			tag = IRL
+		} 
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+		ai_will_do = { 
+		factor = 1 
+		}
+		complete_effect = {
+			
+			ENL={
+				add_to_variable = { 
+					Separation_emotions = 5
+					tooltip = Separation_emotions_5 
+				}
+			}
+			IRL={
+				add_to_variable = { 
+					Separation_emotions = 5
+					tooltip = Separation_emotions_5 
+				}
+			}
+		}
+	}
+	Connaught_Patriotic_parade = { 
+		icon = generic_ignite_civil_war
+		visible = {
+			original_tag = IRL 
+		}
+		available = {
+			has_completed_focus = IRL
+		}  
+		highlight_states = {
+			highlight_state_targets = {
+				state = 134
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		days_re_enable = 10
+		days_remove = 20
+		cost = 25
+		allowed = {
+			tag = IRL
+		} 
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+		ai_will_do = { 
+		factor = 1  
+		}
+		complete_effect = {
+			ENL={
+				add_to_variable = { 
+					Separation_emotions = 5
+					tooltip = Separation_emotions_5 
+				}
+			}
+			IRL={
+				add_to_variable = { 
+					Separation_emotions = 5
+					tooltip = Separation_emotions_5 
+				}
+			}
+		}
+	}
+	Munster_Patriotic_parade = { 
+		icon = generic_ignite_civil_war
+		visible = {
+			original_tag = IRL 
+		}
+		available = {
+			has_completed_focus = IRL
+		}  
+		highlight_states = {
+			highlight_state_targets = {
+				state = 135
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		days_re_enable = 10
+		days_remove = 20
+		cost = 25
+		allowed = {
+			tag = IRL
+		} 
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+		ai_will_do = { 
+		factor = 1 
+		}
+		complete_effect = {
+			ENL={
+				add_to_variable = { 
+					Separation_emotions = 5
+					tooltip = Separation_emotions_5 
+				}
+			}
+			IRL={
+				add_to_variable = { 
+					Separation_emotions = 5
+					tooltip = Separation_emotions_5 
+				}
+			}
+			
+		}
+	}
+	
+	##IRL
 }

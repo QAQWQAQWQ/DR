@@ -436,11 +436,13 @@ country_event = {
 		desc = SHW.10.d
 		#picture = GFX_illness
         trigger={
-        check_variable={SHW_Loyalty<25}
-		has_government=Liberalism
+			AND={
+				check_variable={SHW_Loyalty<25}
+				has_government=Liberalism
+			}
+        
         }
 	    fire_only_once = yes
-		
 		option = {
 			name = SHW.10.a
 			set_country_flag=Kornilov_rebellion

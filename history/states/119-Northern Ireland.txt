@@ -5,9 +5,11 @@ state={
 	resources={
 		grain=5
 	}
+	
 	history={
 		owner = ENL
-		
+		set_resistance = 20
+	    set_compliance = 0
 		victory_points = {
 			3379 5 
 		}
@@ -24,10 +26,9 @@ state={
 				naval_base = 4
 			}
 		}
-		add_core_of = ENL
 		add_core_of = IRL
 	}
-
+	
 	provinces={
 		276 385 3217 3242 3329 3379 11257 
 	}

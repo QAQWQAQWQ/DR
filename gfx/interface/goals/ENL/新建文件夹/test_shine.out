@@ -1,0 +1,362 @@
+spriteTypes = {
+spriteType = {
+name = "GFX_ENL_focus67_shine"
+texturefile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus67.dds"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus67.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus67.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_ENL_focus68_shine"
+texturefile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus68.dds"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus68.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus68.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_ENL_focus69_shine"
+texturefile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus69.dds"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus69.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus69.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_ENL_focus70_shine"
+texturefile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus70.dds"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus70.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus70.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_ENL_focus71_shine"
+texturefile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus71.dds"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus71.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus71.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_ENL_focus72_shine"
+texturefile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus72.dds"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus72.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus72.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_ENL_focus73_shine"
+texturefile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus73.dds"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus73.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus73.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_ENL_focus74_shine"
+texturefile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus74.dds"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus74.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus74.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_ENL_focus75_shine"
+texturefile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus75.dds"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus75.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus75.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_ENL_focus76_shine"
+texturefile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus76.dds"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus76.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus76.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_ENL_focus77_shine"
+texturefile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus77.dds"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus77.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus77.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_ENL_focus78_shine"
+texturefile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus78.dds"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus78.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goals\ENL\新建文件夹/ENL_focus78.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+}
