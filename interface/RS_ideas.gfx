@@ -1,4 +1,38 @@
 spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_Blind_Allowance_Act"
+		texturefile = "gfx\interface\ideas\ENL/Blind_Allowance_Act.dds"
+		}
+		spriteType = {
+		name = "GFX_idea_Family_allowance"
+		texturefile = "gfx\interface\ideas\ENL/Family_allowance.dds"
+		}
+		spriteType = {
+		name = "GFX_idea_Health_sector"
+		texturefile = "gfx\interface\ideas\ENL/Health_sector.dds"
+		}
+		spriteType = {
+		name = "GFX_idea_High_grain_prices"
+		texturefile = "gfx\interface\ideas\ENL/High_grain_prices.dds"
+		}
+		spriteType = {
+		name = "GFX_idea_Slightly_high_grain_prices"
+		texturefile = "gfx\interface\ideas\ENL/Slightly_high_grain_prices.dds"
+		}
+		spriteType = {
+		name = "GFX_idea_Unemployment_Benefits_Act"
+		texturefile = "gfx\interface\ideas\ENL/Unemployment_Benefits_Act.dds"
+		}
+		spriteType = {
+		name = "GFX_idea_Veteran_the_British_Army"
+		texturefile = "gfx\interface\ideas\ENL/Veteran_the_British_Army.dds"
+		}
+		spriteType = {
+			name = "GFX_idea_British_style_democracy"
+			texturefile = "gfx\interface\ideas\ENL/British_style_democracy.dds"
+			}
+
 	spriteType = {
 	    name = "GFX_SBY_focus10_icon"
 	    texturefile = "gfx/interface/ideas/SBY_focus10_dy.dds"

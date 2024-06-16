@@ -298,14 +298,3 @@ on_daily= {
 
 
 
-
-	on_daily= { 
-		effect = {
-					ENL={
-						has_idea=Separation_emotions
-					}
-	            add_to_variable = { ENL.Separation_emotions = 1 } 
-	}
-}
-
-

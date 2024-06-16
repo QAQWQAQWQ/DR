@@ -1827,7 +1827,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_Enlargement_Popular_Front"
+		name = "GFX_goal_ENLargement_Popular_Front"
 		texturefile = "gfx/interface/goals/SIW/Enlargement_Popular_Front.dds"
 	}
 	spriteType = {
@@ -3010,135 +3010,236 @@ spriteType = {
 	texturefile = "gfx/interface/goals/Thuringian/Thuringian_10.dds"
 }
 ##
-spriteType = {
+    spriteType = {
 	name = "GFX_goal_ENL_focus1"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus1.dds"
-}
-spriteType = {
-	name = "GFX_goal_ENL_focus2"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus2.dds"
-}
-spriteType = {
-	name = "GFX_goal_ENL_focus3"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus3.dds"
-}
-spriteType = {
-	name = "GFX_goal_ENL_focus4"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus4.dds"
-}
-spriteType = {
-	name = "GFX_goal_ENL_focus5"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus5.dds"
-}
-spriteType = {
-	name = "GFX_goal_ENL_focus6"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus6.dds"
-}
-spriteType = {
-	name = "GFX_goal_ENL_focus7"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus7.dds"
-}
-spriteType = {
-	name = "GFX_goal_ENL_focus8"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus8.dds"
-}
-spriteType = {
-	name = "GFX_goal_ENL_focus9"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus9.dds"
-}
-spriteType = {
+	texturefile = "gfx\interface\goals\ENL/ENL_focus1.dds"
+	}
+	spriteType = {
 	name = "GFX_goal_ENL_focus10"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus10.dds"
-}
-spriteType = {
+	texturefile = "gfx\interface\goals\ENL/ENL_focus10.dds"
+	}
+	spriteType = {
 	name = "GFX_goal_ENL_focus11"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus11.dds"
-}
-spriteType = {
+	texturefile = "gfx\interface\goals\ENL/ENL_focus11.dds"
+	}
+	spriteType = {
 	name = "GFX_goal_ENL_focus12"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus12.dds"
-}
-spriteType = {
+	texturefile = "gfx\interface\goals\ENL/ENL_focus12.dds"
+	}
+	spriteType = {
 	name = "GFX_goal_ENL_focus13"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus13.dds"
-}
-spriteType = {
+	texturefile = "gfx\interface\goals\ENL/ENL_focus13.dds"
+	}
+	spriteType = {
 	name = "GFX_goal_ENL_focus14"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus14.dds"
-}
-spriteType = {
+	texturefile = "gfx\interface\goals\ENL/ENL_focus14.dds"
+	}
+	spriteType = {
 	name = "GFX_goal_ENL_focus15"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus15.dds"
-}
-
-spriteType = {
+	texturefile = "gfx\interface\goals\ENL/ENL_focus15.dds"
+	}
+	spriteType = {
 	name = "GFX_goal_ENL_focus16"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus16.dds"
-}
-spriteType = {
+	texturefile = "gfx\interface\goals\ENL/ENL_focus16.dds"
+	}
+	spriteType = {
 	name = "GFX_goal_ENL_focus17"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus17.dds"
-}
-spriteType = {
+	texturefile = "gfx\interface\goals\ENL/ENL_focus17.dds"
+	}
+	spriteType = {
 	name = "GFX_goal_ENL_focus18"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus18.dds"
-}
-
-spriteType = {
+	texturefile = "gfx\interface\goals\ENL/ENL_focus18.dds"
+	}
+	spriteType = {
 	name = "GFX_goal_ENL_focus19"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus19.dds"
-}
-spriteType = {
+	texturefile = "gfx\interface\goals\ENL/ENL_focus19.dds"
+	}
+	spriteType = {
+	name = "GFX_goal_ENL_focus2"
+	texturefile = "gfx\interface\goals\ENL/ENL_focus2.dds"
+	}
+	spriteType = {
 	name = "GFX_goal_ENL_focus20"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus20.dds"
-}
-spriteType = {
+	texturefile = "gfx\interface\goals\ENL/ENL_focus20.dds"
+	}
+	spriteType = {
 	name = "GFX_goal_ENL_focus21"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus21.dds"
-}
-spriteType = {
+	texturefile = "gfx\interface\goals\ENL/ENL_focus21.dds"
+	}
+	spriteType = {
 	name = "GFX_goal_ENL_focus22"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus22.dds"
-}
-spriteType = {
+	texturefile = "gfx\interface\goals\ENL/ENL_focus22.dds"
+	}
+	spriteType = {
 	name = "GFX_goal_ENL_focus23"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus23.dds"
-}
-spriteType = {
+	texturefile = "gfx\interface\goals\ENL/ENL_focus23.dds"
+	}
+	spriteType = {
 	name = "GFX_goal_ENL_focus24"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus24.dds"
-}
-spriteType = {
+	texturefile = "gfx\interface\goals\ENL/ENL_focus24.dds"
+	}
+	spriteType = {
 	name = "GFX_goal_ENL_focus25"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus25.dds"
-}
-spriteType = {
+	texturefile = "gfx\interface\goals\ENL/ENL_focus25.dds"
+	}
+	spriteType = {
 	name = "GFX_goal_ENL_focus26"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus26.dds"
-}
-spriteType = {
+	texturefile = "gfx\interface\goals\ENL/ENL_focus26.dds"
+	}
+	spriteType = {
 	name = "GFX_goal_ENL_focus27"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus27.dds"
-}
-spriteType = {
+	texturefile = "gfx\interface\goals\ENL/ENL_focus27.dds"
+	}
+	spriteType = {
+	name = "GFX_goal_ENL_focus3"
+	texturefile = "gfx\interface\goals\ENL/ENL_focus3.dds"
+	}
+	spriteType = {
+	name = "GFX_goal_ENL_focus4"
+	texturefile = "gfx\interface\goals\ENL/ENL_focus4.dds"
+	}
+	spriteType = {
 	name = "GFX_goal_ENL_focus49"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus49.dds"
-}
-
-spriteType = {
+	texturefile = "gfx\interface\goals\ENL/ENL_focus49.dds"
+	}
+	spriteType = {
+	name = "GFX_goal_ENL_focus5"
+	texturefile = "gfx\interface\goals\ENL/ENL_focus5.dds"
+	}
+	spriteType = {
 	name = "GFX_goal_ENL_focus50"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus50.dds"
-}
-spriteType = {
+	texturefile = "gfx\interface\goals\ENL/ENL_focus50.dds"
+	}
+	spriteType = {
 	name = "GFX_goal_ENL_focus51"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus51.dds"
-}
+	texturefile = "gfx\interface\goals\ENL/ENL_focus51.dds"
+	}
+	spriteType = {
+	name = "GFX_goal_ENL_focus52"
+	texturefile = "gfx\interface\goals\ENL/ENL_focus52.dds"
+	}
+	spriteType = {
+	name = "GFX_goal_ENL_focus53"
+	texturefile = "gfx\interface\goals\ENL/ENL_focus53.dds"
+	}
+	spriteType = {
+	name = "GFX_goal_ENL_focus54"
+	texturefile = "gfx\interface\goals\ENL/ENL_focus54.dds"
+	}
+	spriteType = {
+	name = "GFX_goal_ENL_focus55"
+	texturefile = "gfx\interface\goals\ENL/ENL_focus55.dds"
+	}
+	spriteType = {
+	name = "GFX_goal_ENL_focus56"
+	texturefile = "gfx\interface\goals\ENL/ENL_focus56.dds"
+	}
+	spriteType = {
+	name = "GFX_goal_ENL_focus57"
+	texturefile = "gfx\interface\goals\ENL/ENL_focus57.dds"
+	}
+	spriteType = {
+	name = "GFX_goal_ENL_focus58"
+	texturefile = "gfx\interface\goals\ENL/ENL_focus58.dds"
+	}
+	spriteType = {
+	name = "GFX_goal_ENL_focus59"
+	texturefile = "gfx\interface\goals\ENL/ENL_focus59.dds"
+	}
+	spriteType = {
+	name = "GFX_goal_ENL_focus6"
+	texturefile = "gfx\interface\goals\ENL/ENL_focus6.dds"
+	}
+	spriteType = {
+	name = "GFX_goal_ENL_focus60"
+	texturefile = "gfx\interface\goals\ENL/ENL_focus60.dds"
+	}
+	spriteType = {
+	name = "GFX_goal_ENL_focus61"
+	texturefile = "gfx\interface\goals\ENL/ENL_focus61.dds"
+	}
+	spriteType = {
+	name = "GFX_goal_ENL_focus62"
+	texturefile = "gfx\interface\goals\ENL/ENL_focus62.dds"
+	}
+	spriteType = {
+	name = "GFX_goal_ENL_focus63"
+	texturefile = "gfx\interface\goals\ENL/ENL_focus63.dds"
+	}
+	spriteType = {
+	name = "GFX_goal_ENL_focus64"
+	texturefile = "gfx\interface\goals\ENL/ENL_focus64.dds"
+	}
+	spriteType = {
+	name = "GFX_goal_ENL_focus65"
+	texturefile = "gfx\interface\goals\ENL/ENL_focus65.dds"
+	}
+	spriteType = {
+	name = "GFX_goal_ENL_focus66"
+	texturefile = "gfx\interface\goals\ENL/ENL_focus66.dds"
+	}
+	spriteType = {
+	name = "GFX_goal_ENL_focus7"
+	texturefile = "gfx\interface\goals\ENL/ENL_focus7.dds"
+	}
+	spriteType = {
+	name = "GFX_goal_ENL_focus8"
+	texturefile = "gfx\interface\goals\ENL/ENL_focus8.dds"
+	}
+	spriteType = {
+	name = "GFX_goal_ENL_focus9"
+	texturefile = "gfx\interface\goals\ENL/ENL_focus9.dds"
+	}
 
 spriteType = {
-	name = "GFX_goal_ENL_focus52"
-	texturefile = "gfx/interface/goals/ENL/ENL_focus52.dds"
+name = "GFX_goal_ENL_focus67"
+texturefile = "gfx\interface\goals\ENL\ENL_focus67.dds"
 }
-
+spriteType = {
+name = "GFX_goal_ENL_focus68"
+texturefile = "gfx\interface\goals\ENL\ENL_focus68.dds"
+}
+spriteType = {
+name = "GFX_goal_ENL_focus69"
+texturefile = "gfx\interface\goals\ENL\ENL_focus69.dds"
+}
+spriteType = {
+name = "GFX_goal_ENL_focus70"
+texturefile = "gfx\interface\goals\ENL\ENL_focus70.dds"
+}
+spriteType = {
+name = "GFX_goal_ENL_focus71"
+texturefile = "gfx\interface\goals\ENL\ENL_focus71.dds"
+}
+spriteType = {
+name = "GFX_goal_ENL_focus72"
+texturefile = "gfx\interface\goals\ENL\ENL_focus72.dds"
+}
+spriteType = {
+name = "GFX_goal_ENL_focus73"
+texturefile = "gfx\interface\goals\ENL\ENL_focus73.dds"
+}
+spriteType = {
+name = "GFX_goal_ENL_focus74"
+texturefile = "gfx\interface\goals\ENL\ENL_focus74.dds"
+}
+spriteType = {
+name = "GFX_goal_ENL_focus75"
+texturefile = "gfx\interface\goals\ENL\ENL_focus75.dds"
+}
+spriteType = {
+name = "GFX_goal_ENL_focus76"
+texturefile = "gfx\interface\goals\ENL\ENL_focus76.dds"
+}
+spriteType = {
+name = "GFX_goal_ENL_focus77"
+texturefile = "gfx\interface\goals\ENL\ENL_focus77.dds"
+}
+spriteType = {
+name = "GFX_goal_ENL_focus78"
+texturefile = "gfx\interface\goals\ENL\ENL_focus78.dds"
+}	
+    
 spriteType = {
 	name = "GFX_TEQ_focus0"
 	texturefile = "gfx/interface/goals/TEQ/TEQ_focus0.dds"

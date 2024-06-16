@@ -140,22 +140,30 @@ Domestic_construction:0 "国内建设"
 Domestic_construction_desc:0 "\n\n\n\n\n\n\n\n我们可以通过国库储备来投资一些企业，这不仅能刺激我们的经济，还能更好的建设我们的国家。"
 
 Irish_crisis:0 "爱尔兰危机"
-Irish_crisis_desc:0 "\n\n\n\n\n\n\n\n武装的爱尔兰共和派一直谋求以武力发动起义，以此从英国获得独立。据我们的线人得知，爱尔兰的叛乱力量由法国方面资助，因此我们拥有绝对的理由将这群分裂帝国的叛军消灭\n当前局势：\n爱尔兰分离情绪：§Y[?Separation_emotions]§!\n皇家爱尔兰警队数量为§Y[?Black_Brown_Troops]§!"
+Irish_crisis_desc:0 "\n\n\n\n\n\n\n\n武装的爱尔兰共和派一直谋求以武力发动起义，以此从英国获得独立。据我们的线人得知，爱尔兰的叛乱力量由法国方面资助，因此我们拥有绝对的理由将这群分裂帝国的叛军消灭\n当前局势：\n爱尔兰分离情绪：§Y[?Separation_emotions]§!\n英国牺牲军人数量为:§Y[?Sacrifice_soldiers]§!"
 Fortify_line_defense:0 "构建防线"
-Strengthen_police_force:0 "增加警力"
-Strengthen_police_force_desc:0 "如果我们在爱尔兰投入的警力高于预期，高昂的维护费用会让国内不满。"
-Irish_crisis_tt:0 "警力不能过多"
+Deploy_regular_troops:0 "部署正规军队"
+Separation_emotions_5:0 "分离情绪：§Y+5§!"
+Separation_emotions_20:0 "分离情绪：§Y+20§!"
+Deploy_regular_troops_tank:0 "在贝尔法斯特部署一只§G坦克联队§!"
+Infiltrate_Northern_Ireland:0 "渗透北爱尔兰"
+
+Search_IRA_dens:0 "搜查共和军窝点"
 
 Stop_surge:0 "议会宣布停止增兵"
-
-
-
-
-
-
-
-
-
+Separation_emotions_10:0 "分离情绪：§Y-10§!"
+Inciting_national_sentiments:0 "煽动民族情绪"
+Irish_national_identity:0 "构建爱尔兰民族认同"
+Assault_barracks:0 "袭击英军军营"
+Sacrifice_soldiers_5:0 "英国牺牲军人数量：§Y+5§!"
+Assault_factory:0 "袭击北爱尔兰工厂"
+Dublin_Patriotic_parade:0 "在都柏林进行爱国游行"
+Connaught_Patriotic_parade:0 "在康诺特进行爱国游行"
+Munster_Patriotic_parade:0 "在芒斯特进行爱国游行"
+Sacrifice_soldiers_up:0 "有部分军人在袭击者丧生"
+Embargo_Ireland:0 "封锁爱尔兰"
+Embargo_Ireland_tool:0 "爱尔兰将§R无法§!和任何国家进行§Y贸易§!"
+Sacrifice_soldiers_1000:0 "牺牲军人数量少于1000"
 
 China_power_struggle:0 "结束军阀时代"
 China_power_struggle_desc:0 "\n\n\n\n\n\n\n\n我们的军队已经控制了北京，混乱的时代已经终结，我们是华夏大地新的主人"

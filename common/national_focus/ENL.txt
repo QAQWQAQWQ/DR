@@ -21,9 +21,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			  add_political_power = 300
 			  
 		}
-	}
+	} 
 	focus={
 		id=ENL_focus2
 		x=7
@@ -41,6 +42,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = British_style_democracy
 		}
 	}
 	focus={
@@ -137,6 +139,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_popularity = {
+				ideology = Revolutionism
+				popularity = -0.05
+			}
 		}
 	}
 	focus={
@@ -153,6 +159,11 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_popularity = {
+				ideology = Revolutionism
+				popularity = -0.05
+			}
+			add_stability = -0.05
 		}
 	}
 	focus={
@@ -163,12 +174,12 @@ focus_tree={
 		prerequisite={focus=ENL_focus9}
 		prerequisite={focus=ENL_focus8}
 		cost=10
-		ai_will_do={
+		ai_will_do={ 
 			factor=1
-		}
+		}  
 		available_if_capitulated=yes
 		search_filters={
-		}
+		} 
 		completion_reward={
 		}
 	}
@@ -188,6 +199,12 @@ focus_tree={
 		}
 		completion_reward={
 			unlock_decision_category_tooltip = Irish_crisis
+			ENL={
+				set_variable = { Separation_emotions = 25 }
+			}
+			IRL={
+				set_variable = { Separation_emotions = 25 }
+			}
 		}
 	}
 	focus={
@@ -284,6 +301,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			unlock_decision_tooltip = Embargo_Ireland
 		}
 	}
 	focus={
@@ -297,10 +315,23 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			country_exists = IRL
+			custom_trigger_tooltip = {
+				check_variable = {
+					Sacrifice_soldiers < 1000
+				}
+				tooltip = Sacrifice_soldiers_1000
+			}
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+			create_wargoal = {
+				target = IRL
+				type = annex_everything
+			}
 		}
 	}
 	focus={
@@ -328,10 +359,10 @@ focus_tree={
 		mutually_exclusive={focus=ENL_focus24 }
 		cost=10
 		ai_will_do={
-			factor=1
+			factor=1 
 		}
 		available_if_capitulated=yes
-		search_filters={
+		search_filters={  
 		}
 		completion_reward={
 		}
@@ -874,6 +905,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			
 		}
 	}
 	focus={
@@ -889,7 +921,11 @@ focus_tree={
 		available_if_capitulated=yes
 		search_filters={
 		}
-		completion_reward={
+		completion_reward={ 
+			add_to_variable = {
+					tech_level_upd_value_var = 5
+					tooltip = tech_level_title_more_5_tool
+			}
 		}
 	}
 	focus={
@@ -906,6 +942,38 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			capital_scope = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_core_state = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_core_state = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_core_state = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus={
@@ -922,6 +990,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = Unemployment_Benefits_Act
 		}
 	}
 	focus={
@@ -938,6 +1007,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = Traditional_conservatism
+				add_idea = Affirmative_action
+			}
 		} 
 	}
 	focus={
@@ -954,6 +1027,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = High_grain_prices
+				add_idea = Slightly_high_grain_prices
+			}
 		}
 	}
 	focus={
@@ -966,10 +1043,26 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			custom_trigger_tooltip = {
+				check_variable = {
+					new_nat_tre > 1
+				}
+				tooltip = new_nat_tre01_trigger
+			}
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
-		completion_reward={
+		completion_reward={ 
+			add_to_variable = {
+				new_nat_tre = 1
+				tooltip = new_nat_tre_del01
+			}
+			add_to_variable = {
+					tech_level_upd_value_var = 3
+					tooltip = tech_level_title_more_3_tool
+			}
 		}
 	}
 	focus={
@@ -987,6 +1080,26 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_popularity = {
+				ideology = Revolutionism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = Liberalism
+				popularity = 0.05
+			}
+			random_core_state = {	
+				add_extra_state_shared_building_slots =2
+			}
+			random_core_state = {	
+				add_extra_state_shared_building_slots =2
+			}
+			random_core_state = {	
+				add_extra_state_shared_building_slots =2
+			}
+			random_core_state = {	
+				add_extra_state_shared_building_slots =2
+			}
 		}
 	}
 	focus={
@@ -1004,6 +1117,8 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_stability = 0.03
+			add_ideas = Blind_Allowance_Act
 		}
 	}
 	focus={
@@ -1021,6 +1136,9 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_stability = 0.03
+			add_war_support = 0.05
+			add_ideas = Veteran_the_British_Army
 		}
 	}
 	focus={
@@ -1037,6 +1155,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = Health_sector
 		}
 	}
 	focus={
@@ -1048,12 +1167,14 @@ focus_tree={
 		prerequisite={focus=ENL_focus61}
 		cost=10
 		ai_will_do={
-			factor=1
+			factor=1 
 		}
 		available_if_capitulated=yes
 		search_filters={  
 		}
 		completion_reward={
+			remove_ideas = Slightly_high_grain_prices
+			
 		}
 	}
 	focus={
@@ -1070,6 +1191,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = Family_allowance
 		}
 	}
 	focus={
