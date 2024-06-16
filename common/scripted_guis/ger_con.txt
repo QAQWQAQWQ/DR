@@ -687,4 +687,19 @@ scripted_gui = {
 			}
 		}
 	}
+	ger_Africa_decisons_ui = {
+		context_type = decision_category
+		window_name = "ger_Africa_decisons_ui_window"
+		properties={
+			ger_Africa_stock_AOX_icon = {
+				frame = ger_Africa_stock_AOX_var
+			}
+			ger_Africa_stock_WWS_icon = {
+				frame = ger_Africa_stock_WWS_var
+			}
+			ger_Africa_stock_DOR_icon = {
+				frame = ger_Africa_stock_DOR_var
+			}
+		}
+	}
 }

@@ -7,6 +7,14 @@ on_actions = {
             set_variable = {
                 global.new_ger_con_enable_qwq = 0
             }
+            set_variable = {
+                global.ger_Africa_enable_qwq = 0
+            }
+            every_country = {
+                set_variable = { ger_Africa_stock_AOX_var = 30 }
+                set_variable = { ger_Africa_stock_WWS_var = 60 }
+                set_variable = { ger_Africa_stock_DOR_var = 70 }
+            }
             set_variable = { global.ger_con_president_authority = 3 }
             set_variable = { global.ger_con_now_motion_id = 0 }
             set_variable = { global.ger_con_now_motion_Y = 0 }

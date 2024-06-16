@@ -21,6 +21,42 @@ ger_con_decisions = {
 			original_tag = DOA
 			original_tag = DOM
 			original_tag = DOS
+			original_tag = DMW
+		}
+	} 
+	visible_when_empty = yes
+}
+ger_Africa_decisons = {
+	priority = 8                                         
+	icon = generic_research
+	scripted_gui = ger_Africa_decisons_ui
+	visible = {
+		check_variable = { global.ger_Africa_enable_qwq = 0 }
+		OR = {
+			original_tag = AOX
+			original_tag = WWS
+			original_tag = AGC
+			original_tag = LSB
+			original_tag = DHD
+			original_tag = DON
+			original_tag = DOF
+			original_tag = DOB
+			original_tag = DOR
+			original_tag = BXM
+			original_tag = DOL
+			original_tag = DOH
+			original_tag = DOA
+			original_tag = DOM
+			original_tag = DOS
+			original_tag = SAA
+			original_tag = SAB
+			original_tag = SAC
+			original_tag = SAD
+			original_tag = SAE
+			original_tag = SAF
+			original_tag = SAG
+			original_tag = DMW
+			original_tag = DSX
 		}
 	} 
 	visible_when_empty = yes
@@ -54,6 +90,7 @@ new_ger_con_decisions = {
 			original_tag = SAE
 			original_tag = SAF
 			original_tag = SAG
+			original_tag = DMW
 		}
 	} 
 	visible_when_empty = yes

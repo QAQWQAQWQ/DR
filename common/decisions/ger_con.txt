@@ -536,7 +536,7 @@ ger_con_decisions = {
       DMW = { country_event = ger_con.8 }
       WWS = { set_cosmetic_tag = WWS_German_Empire }
 
-      puppet = DSX
+      # puppet = DSX
     }
     remove_effect = {
     }
@@ -656,7 +656,7 @@ ger_con_decisions = {
         # AOX = { country_event = { id = austria.12 days = 10 } }
       }
       
-      puppet = DSX
+      # puppet = DSX
     }
     remove_effect = {
     }
@@ -2149,4 +2149,6 @@ sax_thu_decisions = {
       set_variable = { is_sax_thu_now = 0 }
     }
   }
+}
+ger_Africa_decisons = {
 }

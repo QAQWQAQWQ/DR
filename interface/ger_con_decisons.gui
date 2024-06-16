@@ -261,5 +261,25 @@ guiTypes = {
 		}
 		
 	}
+	containerWindowType = {
+		name = "ger_Africa_decisons_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 510 height= 350 }
+		iconType = {
+			name = "ger_Africa_stock_DOR_icon"
+			spriteType = "GFX_ger_Africa_stock_AOX"
+			position = { x = 80 y = 63 }
+		}
+		iconType = {
+			name = "ger_Africa_stock_WWS_icon"
+			spriteType = "GFX_ger_Africa_stock_AOX"
+			position = { x = 80 y = 63 }
+		}
+		iconType = {
+			name = "ger_Africa_stock_AOX_icon"
+			spriteType = "GFX_ger_Africa_stock_AOX"
+			position = { x = 80 y = 63 }
+		}
+	}
 }
 			
