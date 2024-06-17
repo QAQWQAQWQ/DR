@@ -10,10 +10,22 @@ on_actions = {
             set_variable = {
                 global.ger_Africa_enable_qwq = 0
             }
+            set_variable = { AOX.ger_Africa_stock_var = 15 }
+            set_variable = { WWS.ger_Africa_stock_var = 15 }
+            set_variable = { AGC.ger_Africa_stock_var = 5 }
+            set_variable = { LSB.ger_Africa_stock_var = 2 }
+            set_variable = { DHD.ger_Africa_stock_var = 3 }
+            set_variable = { DON.ger_Africa_stock_var = 2 }
+            set_variable = { DOF.ger_Africa_stock_var = 2 }
+            set_variable = { DOB.ger_Africa_stock_var = 2 }
+            set_variable = { DOR.ger_Africa_stock_var = 6 }
+            set_variable = { DOL.ger_Africa_stock_var = 6 }
+            set_variable = { DOH.ger_Africa_stock_var = 6 }
+            set_variable = { DOM.ger_Africa_stock_var = 1 }
+            set_variable = { DOS.ger_Africa_stock_var = 4 }
+            set_variable = { DMW.ger_Africa_stock_var = 8 }
             every_country = {
-                set_variable = { ger_Africa_stock_AOX_var = 30 }
-                set_variable = { ger_Africa_stock_WWS_var = 60 }
-                set_variable = { ger_Africa_stock_DOR_var = 70 }
+                ger_afr_stock_work_gui_vars = yes
             }
             set_variable = { global.ger_con_president_authority = 3 }
             set_variable = { global.ger_con_now_motion_id = 0 }
