@@ -1,3 +1,245 @@
+League_balance_category={
+	Act_Insurance_Unemployed = {
+		icon = decision_generic_decision
+		visible = {
+			has_completed_focus = ENL_focus57
+		}
+		available = {
+		}
+		days_re_enable = 4
+		days_remove = 45
+		cost = 25
+		allowed = {
+			tag = ENL 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = { 
+			factor = 1
+			} 
+			complete_effect = {
+				add_ideas = Unemployment_Benefits_Act
+			}
+	}
+	Blind_Allowance_Act_decision = {
+		icon = decision_generic_decision
+		visible = { 
+			has_completed_focus = ENL_focus62
+		}
+		available = {
+		}
+		days_re_enable = 4
+		days_remove = 45
+		cost = 25
+		allowed = {
+			tag = ENL 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = { 
+			factor = 1
+			}
+			complete_effect = {
+				add_ideas = Blind_Allowance_Act
+			}
+	}
+	Agricultural_Decree = {
+		icon = decision_generic_decision
+		visible = {
+			has_completed_focus = ENL_focus65
+		}
+		available = {
+		}
+		days_re_enable = 4
+		days_remove = 45
+		cost = 25
+		allowed = {
+			tag = ENL 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = { 
+			factor = 1
+			}
+			complete_effect = {
+				remove_ideas = Slightly_high_grain_prices
+			}
+	}
+	Allowance_unemployed_families = {
+		icon = decision_generic_decision
+		visible = {
+			has_completed_focus = ENL_focus66
+		}
+		available = {
+		}
+		days_re_enable = 4
+		days_remove = 45
+		cost = 25
+		allowed = {
+			tag = ENL 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = { 
+			factor = 1
+			}
+			complete_effect = {
+				add_ideas = Family_allowance
+			}
+	}
+	Rent_Decree = {
+		icon = decision_generic_decision
+		visible = {
+			has_completed_focus = ENL_focus61
+		}
+		available = {
+		}
+		days_re_enable = 4
+		days_remove = 45
+		cost = 25
+		allowed = {
+			tag = ENL 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = { 
+			factor = 1
+			}
+			complete_effect = {
+				
+			random_core_state = {	
+				add_extra_state_shared_building_slots =2
+			}
+			random_core_state = {	
+				add_extra_state_shared_building_slots =2
+			}
+			random_core_state = {	
+				add_extra_state_shared_building_slots =2
+			}
+			random_core_state = {	
+				add_extra_state_shared_building_slots =2
+			}
+			}
+	}
+	Residential_planning = {
+		icon = decision_generic_decision
+		visible = {
+			has_completed_focus = ENL_focus61
+		}
+		available = {
+		}
+		days_re_enable = 4
+		days_remove = 45
+		cost = 25
+		allowed = {
+			tag = ENL 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = { 
+			factor = 1
+			}
+			complete_effect = {
+				capital_scope = {
+					add_to_variable = { state_cash_tot = 0.5 }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+					custom_effect_tooltip = wes_custom_eff_money
+				}
+				random_core_state = {	
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_core_state = {	
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_core_state = {	
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+	}
+	Veterans_Benefits = {
+		icon = decision_generic_decision
+		visible = {
+			has_completed_focus = ENL_focus63
+		}
+		available = {
+		}
+		days_re_enable = 4
+		days_remove = 45
+		cost = 25
+		allowed = {
+			tag = ENL 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = { 
+			factor = 1
+			}
+			complete_effect = {
+				add_ideas = Veteran_the_British_Army
+			}
+	}
+	Gender_Disqualification_Decree = {
+		icon = decision_generic_decision
+		visible = {
+			has_completed_focus = ENL_focus58
+		}
+		available = {
+		}
+		days_re_enable = 4
+		days_remove = 45
+		cost = 25
+		allowed = {
+			tag = ENL 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = { 
+			factor = 1
+			}
+			complete_effect = {
+				swap_ideas = {
+					remove_idea = Traditional_conservatism
+					add_idea = Affirmative_action
+				}
+			}
+	}
+}
+
+
+
+
+
+
+
+
 Irish_crisis = {
 
 	##ENL

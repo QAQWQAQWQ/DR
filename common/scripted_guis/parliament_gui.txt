@@ -79,6 +79,7 @@ scripted_gui = {
 	###将第二行xxx_parliament_gui_initial，xxx改为tag
 	###到on_action里面的parliament里面启用xxx_parliament_gui_initial = yes
 	###修改名称就到动态文本里面parliament修改
+	###在每个国家内启用parliament_mian_button_yes
 	parliament_mian_button = {
 		context_type = player_context
 		parent_window_token = politics_tab

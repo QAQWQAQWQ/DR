@@ -1,4 +1,19 @@
 characters={
+	
+	IRL_Eamon_de_Valera={
+		name=IRL_Eamon_de_Valera
+		portraits={
+			civilian={
+				large="gfx/leaders/IRL/Portrait_Eamon_de_Valera.tga"
+			}
+		}
+		country_leader={
+			ideology=Socialism_Liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
 	IRL_John_Dillon={
 		name=IRL_John_Dillon
 		portraits={
@@ -13,6 +28,20 @@ characters={
 			id=-1
 		}
 	}	
+	IRL_John_Denton_Pinkstone={
+		name=IRL_John_Denton_Pinkstone
+		portraits={
+			civilian={
+				large="gfx/leaders/IRL/Portrait_John_Denton_Pinkstone.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
 	IRL_Michael_Collins={
 		name=IRL_Michael_Collins
 		portraits={

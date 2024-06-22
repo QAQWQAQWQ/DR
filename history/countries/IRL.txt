@@ -11,7 +11,8 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-
+recruit_character = IRL_John_Denton_Pinkstone
+recruit_character = IRL_Eamon_de_Valera
 recruit_character = IRL_Michael_Collins
 recruit_character = IRL_John_Dillon
 	set_technology = {
@@ -59,14 +60,12 @@ recruit_character = IRL_John_Dillon
 		secondary_school
 			}
 set_politics = {
-	ruling_party = Liberalism
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	Liberalism= 21
-    Conservatism = 54
-	Revolutionism = 25
+    Conservatism = 100
 }

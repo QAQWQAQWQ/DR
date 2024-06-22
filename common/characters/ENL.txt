@@ -15,6 +15,22 @@ characters={
     }
 
 
+	ENL_John_Robert_Clynes={
+		name=ENL_John_Robert_Clynes
+		portraits={
+			civilian={
+				large="gfx/leaders/ENL/Portrait_John_Robert_Clynes.tga"
+			}
+		}
+		country_leader={
+			ideology=Fabian_Reformism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+    }
+	
+
 
 	ENL_David_Lloyd_George={
 		name=ENL_David_Lloyd_George
@@ -92,7 +108,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Authoritarianism_Conservatism
+			ideology=Classicism_Conservatism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1

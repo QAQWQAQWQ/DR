@@ -19,7 +19,7 @@ set_power_balance = {
 set_convoys = 200
 set_variable = { Black_Brown_Troops = 0 }
 
-
+set_country_flag = parliament_mian_button_yes
 
 add_equipment_to_stockpile = {
 	type = gw_tank_equipment
@@ -27,6 +27,7 @@ add_equipment_to_stockpile = {
 }
 
 recruit_character = ENL_David_Lloyd_George
+recruit_character = ENL_John_Robert_Clynes
 recruit_character = ENL_George_V
 recruit_character = ENL_James_Ramsay_MacDonald
 recruit_character = ENL_Thomann
@@ -84,8 +85,10 @@ recruit_character = ENL_Robert_Peel_Glanville_Blatchford
 	add_to_faction = ESG
 
 	set_autonomy = { target = IRL autonomy_state = autonomy_dominion }
+	set_autonomy = { target = YDA autonomy_state = autonomy_colony }
+	set_autonomy = { target = NAF autonomy_state = autonomy_colony }
+	set_autonomy = { target = ESG autonomy_state = autonomy_colony }
 
-	
 give_guarantee = YEM
 give_guarantee = KAT
 give_guarantee = SLY

@@ -11,7 +11,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = SHW_Focus_1
-		icon = GFX_goal_SHW_In_name_Slavism
+		icon = GFX_goal_SHW_Focus_1
 		cost = 7.00
 		available={
 			#check_variable = { parliament_seat_array^temp_array^1 = 0 } 

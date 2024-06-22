@@ -6,7 +6,7 @@ guiTypes = {
         size = { width=550 height=100%% }
         instantTextboxType = {
             name = "tech_level_title"
-            position = { x = 600 y = 90 }
+            position = { x = 180 y = 145 }
             textureFile = ""
             font = "hoi_36header"
             borderSize = {x = 0 y = 0}
@@ -17,7 +17,7 @@ guiTypes = {
         }
         instantTextboxType = {
             name = "tech_level_desc"
-            position = { x = 600 y = 110 }
+            position = { x = 25 y = 200 }
             textureFile = ""
             font = "hoi_18mbs"
             borderSize = {x = 0 y = 0}
@@ -30,7 +30,7 @@ guiTypes = {
 		iconType = {
 			name = "tech_level_upd_value"
 			spriteType = "GFX_tech_level_upd_balance"
-			position = { x = 590 y = 55 }
+			position = { x = 15 y =255 }
 		}
     }
 }

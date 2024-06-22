@@ -90,15 +90,16 @@ NPL_Formation_local_security_teams_desc:0 "我们将组建一支完全由当地�
 decision_cost_NPL_France_VAR_10:0 "这将花费法兰西人10点数\n这将花费黑脚人10点数"
 
 
-League_balance:0 "国际联盟"
-League_mid_range:0 "尚未投票"
-League_left_side:0 "否决决议"
-League_left_side_range_Low:0 "支持度较低"
-League_left_side_High:0 "支持度低"
+League_balance:0 "上议院"
+League_mid_range:0 "上议院肩负司法职能"
+League_left_side:0 "上议院失去司法职能"
+League_left_side_range_Low:0 "上议院权力较低"
+League_left_side_High:0 "上议院权力低"
 
-League_right_side:0 "通过决议"
-League_right_side_range_Low:0 "支持度较高"
-League_right_side_High:0 "支持度高"
+League_right_side:0 "上议院架空司法职能"
+League_right_side_range_Low:0 "上议院权力较高"
+League_right_side_High:0 "上议院权力高"
+
 Intervention_Russian_Civil_War:0 "干涉俄国内战"
 Intervention_Russian_Civil_War_desc:0 "国际联盟将是否干涉俄国内战列上表决。"
 League_Russian_Civil_War:0 "向白军运送物资"
@@ -106,6 +107,15 @@ League_Russian_Civil_War_desc:0 "我们的物资将源源不断的运送至俄�
 Embargo_Soviet:0 "对苏俄禁运"
 Embargo_Soviet_desc:0 "我们将对苏俄进行贸易禁运和封锁。"
 
+
+Act_Insurance_Unemployed:0 "通过失业者保险法令"
+Residential_planning:0 "通过住宅规划法令"
+Veterans_Benefits:0 "通过退伍士兵补助法令"
+Gender_Disqualification_Decree:0 "通过妇女权利法令"
+Agricultural_Decree:0 "通过农业法令"
+Allowance_unemployed_families:0 "通过失业家庭补助法令"
+Rent_Decree:0 "通过租金法令"
+Blind_Allowance_Act_decision:0 "通过盲人救济法令"
 League_Montenegro_War:0 "调停黑塞战争"
 
 

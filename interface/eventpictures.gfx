@@ -354,6 +354,27 @@ spriteTypes = {
 		texturefile = "gfx/event/ENL/White_Stadium.dds"
 	}
 	spriteType = {
+		name = "GFX_ENL_election_1"
+		texturefile = "gfx/event/ENL/ENL_election_1.tga"
+	}
+	spriteType = {
+		name = "GFX_ENL_election_2"
+		texturefile = "gfx/event/ENL/ENL_election_2.tga"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	spriteType = {
 		name = "GFX_British_police"
 		texturefile = "gfx/event/ENL/British_police.dds"
 	}
@@ -401,6 +422,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Stock_Exchange"
 		texturefile = "gfx/event/ENL/Stock_Exchange.dds"
+	}
+	spriteType = {
+		name = "GFX_ENL_The_Irish_crisis_7"
+		texturefile = "gfx/event/IRL/ENL_The_Irish_crisis_7.dds"
 	}
 	
 	spriteType = {

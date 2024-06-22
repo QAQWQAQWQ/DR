@@ -1,0 +1,292 @@
+﻿capital = 16
+
+oob = "MOA_1920"
+set_naval_oob = "MOA_1920_naval"
+set_research_slots = 3
+set_stability = 0.51
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	CAS1 = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	fuel_silos = 1
+	
+	basic_train = 1
+}
+set_technology = {
+	basic_naval_mines = 1
+	early_ship_hull_light = 1
+	basic_ship_hull_light = 1
+	early_ship_hull_submarine = 1
+	basic_ship_hull_submarine = 1
+	early_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	basic_battery = 1
+	basic_cruiser_armor_scheme = 1
+	basic_torpedo = 1
+	basic_depth_charges = 1
+	coastal_defense_ships = 1
+	mtg_transport = 1
+}
+
+
+set_politics = {
+	ruling_party =  Conservatism
+	last_election = "1921.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	Conservatism= 100
+}
+
+
+recruit_character = MOA_Louis_Philippe_Robert_d_Orleans
+
+
+
+add_ideas = {
+
+	
+	###
+	atheism
+	Affirmative_action
+	Local_police
+	Underlying_investment
+	State_media
+	Local_trade_unions
+	low_industrialization
+	Mixed_economy
+	secondary_school
+	##ad
+	}
+
+
+
+
+create_equipment_variant = {			
+	name = "AG Class"
+	type = ship_hull_submarine_1
+	parent_version = 0
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = empty
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Series I Debakrist"			# represents Debakrist, B class, L-55 sub
+	type = ship_hull_submarine_1
+	parent_version = 0
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = ship_torpedo_sub_1
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Series II Leninets"				# represents Leninets series II, XI
+	type = ship_hull_submarine_2
+	parent_version = 0
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = ship_mine_layer_sub
+	}
+}
+create_equipment_variant = {
+	name = "Series V Shchuka"				# represents Shchuka series III, V, V-bis, V-bis-2
+	type = ship_hull_submarine_1
+	parent_version = 0
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_2
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = empty
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Series IX Srednyaya"				# 'Stalinets', series IX, IX-bis, IX-bis-2 and P-class
+	type = ship_hull_submarine_2
+	parent_version = 0
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_2
+		fixed_ship_engine_slot = sub_ship_engine_2
+		rear_1_custom_slot = empty
+	}
+}
+create_equipment_variant = {
+	name = "Series X Shchuka"				
+	type = ship_hull_submarine_1
+	parent_version = 0
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_2
+		fixed_ship_engine_slot = sub_ship_engine_2
+		rear_1_custom_slot = empty
+	}
+}
+# Destroyers #
+create_equipment_variant = {
+	name = "Orfey Class"						# represents Yakov Sverdlov, Frunze, and Orfey classes
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		mid_1_custom_slot = ship_torpedo_1
+		rear_1_custom_slot = empty
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Fidonisi Class"						# represents Fidonisi and Izyaslav classes
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		mid_1_custom_slot = ship_torpedo_1
+		rear_1_custom_slot = ship_depth_charge_1
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Leningrad & Minsk Class"				
+	type = ship_hull_light_2
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_2
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_2
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		mid_1_custom_slot = empty
+		rear_1_custom_slot = ship_depth_charge_1
+	}
+}
+create_equipment_variant = {
+	name = "Bug Class"					# minelayer
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_2
+		fixed_ship_torpedo_slot = empty
+		mid_1_custom_slot = ship_mine_layer_1
+		rear_1_custom_slot = ship_mine_layer_1
+	}
+}
+# Light Cruisers #
+create_equipment_variant = {
+	name = "Komintern Class"
+	type = ship_hull_cruiser_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_medium_battery_1
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		mid_1_custom_slot = ship_light_medium_battery_1
+		mid_2_custom_slot = empty
+		rear_1_custom_slot = ship_mine_layer_1
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Chervona Ukraina Class"
+	type = ship_hull_cruiser_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_medium_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		mid_1_custom_slot = ship_light_medium_battery_1
+		mid_2_custom_slot = ship_torpedo_1
+		rear_1_custom_slot = ship_mine_layer_1
+	}
+}
+create_equipment_variant = {
+	name = "Marti Class"
+	type = ship_hull_cruiser_1				
+	parent_version = 0
+	role_icon_index = 4
+	modules = {
+		fixed_ship_battery_slot = ship_light_medium_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		mid_1_custom_slot = empty
+		mid_2_custom_slot = empty
+		rear_1_custom_slot = ship_mine_layer_1
+	}
+}
+# Heavy Cruisers #
+	create_equipment_variant = {
+		name = "Kirov Class"
+		type = ship_hull_cruiser_2
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_medium_battery_1
+		}
+	}
+# Battleships #
+create_equipment_variant = {
+	name = "Marat Class"					
+	type = ship_hull_heavy_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_heavy_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = heavy_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_bb_1
+		front_1_custom_slot = ship_heavy_battery_1
+		mid_1_custom_slot = empty
+		mid_2_custom_slot = empty
+		rear_1_custom_slot = empty
+	}
+}

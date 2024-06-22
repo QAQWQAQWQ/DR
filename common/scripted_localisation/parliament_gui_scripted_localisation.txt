@@ -165,6 +165,53 @@ text = {
 	localization_key = ZHX_party_5_text
 }
 #######
+#######ENL
+text = {
+	trigger = {
+		AND={
+			original_tag = ENL
+			ENL={check_variable = { v = 1 }}
+		}
+	}
+	localization_key = ENL_party_1_text
+}
+text = {
+	trigger = {
+		AND={
+			original_tag = ENL
+			ENL={check_variable = { v = 2 }}
+		}
+	}
+	localization_key = ENL_party_2_text
+}
+text = {
+	trigger = {
+		AND={
+			original_tag = ENL
+			ENL={check_variable = { v = 3 }}
+		}
+	}
+	localization_key = ENL_party_3_text
+}
+text = {
+	trigger = {
+		AND={
+			original_tag = ENL
+			ENL={check_variable = { v = 4 }}
+		}
+	}
+	localization_key = ENL_party_4_text
+}
+text = {
+	trigger = {
+		AND={
+			original_tag = ENL
+			ENL={check_variable = { v = 5 }}
+		}
+	}
+	localization_key = ENL_party_5_text
+}
+#######
 } 
 
 
@@ -340,6 +387,52 @@ text = {
 	localization_key = ZHX_party_5_text_desc
 }
 ###
+###ENL
+text = {
+	trigger = {
+		AND={
+			original_tag = ENL
+			check_variable = { v = 1 }
+		}
+	}
+	localization_key = ENL_party_1_text_desc
+}
+text = {
+	trigger = {
+		AND={
+			original_tag = ENL
+			check_variable = { v = 2 }
+		}
+	}
+	localization_key = ENL_party_2_text_desc
+}
+text = {
+	trigger = {
+		AND={
+			original_tag = ENL
+			check_variable = { v = 3 }
+		}
+	}
+	localization_key = ENL_party_3_text_desc
+}
+text = {
+	trigger = {
+		AND={
+			original_tag = ENL
+			check_variable = { v = 4 }
+		}
+	}
+	localization_key = ENL_party_4_text_desc
+}
+text = {
+	trigger = {
+		AND={
+			original_tag = ENL
+			check_variable = { v = 5 }
+		}
+	}
+	localization_key = ENL_party_5_text_desc
+}
 }
 # Since index starts as 0, i can get the current seat number by jut adding it by one and then displaying it.
 defined_text = {

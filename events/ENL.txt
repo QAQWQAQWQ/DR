@@ -4,8 +4,68 @@
 
 add_namespace = ENL
 add_namespace = ENL_Labour
-add_namespace = msl
 add_namespace = ENL_The_Irish_crisis
+add_namespace = ENL_election
+
+news_event = {
+	id = ENL_election.1
+	title = ENL_election.1.t
+	desc = ENL_election.1.d
+
+	picture = GFX_ENL_election_1
+    major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ENL_election.1.a
+		promote_character = {
+			character = ENL_Bonar_Law
+			ideology = Conservatism
+		}
+		
+		set_politics = {
+			ruling_party =Conservatism
+		}
+		set_popularities = {
+			Conservatism=55
+			Reformism=10
+			Liberalism = 25
+			Revolutionism=10
+		}
+	}	
+}
+news_event = {
+	id = ENL_election.2
+	title = ENL_election.2.t
+	desc = ENL_election.2.d
+
+	picture = GFX_ENL_election_2
+    major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ENL_election.2.a
+		set_politics = {
+			ruling_party =Reformism
+		}
+		add_country_leader_role = {
+			character = ENL_John_Robert_Clynes
+			promote_leader = yes
+			country_leader = {
+				ideology = Fabian_Reformism
+				expire = "1965.1.1.1"
+				traits = { }
+			}
+		}
+		set_popularities = {
+			Reformism=45
+			Conservatism=34
+			Liberalism = 14
+			Revolutionism=7
+		}
+	}	
+}
+
 
 country_event = {
 	id = ENL_The_Irish_crisis.1
@@ -60,8 +120,14 @@ country_event = {
 
 	picture = GFX_White_Stadium
 
-	is_triggered_only = yes
-
+	trigger = {
+		ENL={
+			check_variable = {
+				Separation_emotions >75
+		}
+		}
+	}
+    fire_only_once = yes
 	option = {
 		name = ENL_The_Irish_crisis.3.a
 		126={
@@ -72,11 +138,115 @@ country_event = {
 		}
 	}	
 }
+country_event = {
+	id = ENL_The_Irish_crisis.4
+	title = ENL_The_Irish_crisis.4.t
+	desc = ENL_The_Irish_crisis.4.d
+
+	picture = GFX_White_Stadium
+
+	trigger = {
+		ENL={
+			check_variable = {
+				Sacrifice_soldiers > 50
+		}
+		}
+	}
+    fire_only_once = yes
+	option = {
+		name = ENL_The_Irish_crisis.4.a
+		134={
+			damage_building = {
+				type = infrastructure
+				damage = 0.2
+			}
+		}
+		113={
+			damage_building = {
+				type = infrastructure
+				damage = 0.2
+			}
+		}
+		135={
+			damage_building = {
+				type = infrastructure
+				damage = 0.2
+			}
+		}
+	}	
+}
+country_event = {
+	id = ENL_The_Irish_crisis.5
+	title = ENL_The_Irish_crisis.5.t
+	desc = ENL_The_Irish_crisis.5.d
+
+	picture = GFX_White_Stadium
+
+	trigger = {
+		ENL={
+			check_variable = {
+				Sacrifice_soldiers > 150
+		}
+		}
+	}
+    fire_only_once = yes
+	option = {
+		name = ENL_The_Irish_crisis.5.a
+		add_war_support = -0.15
+	}	
+}
+country_event = {
+	id = ENL_The_Irish_crisis.6
+	title = ENL_The_Irish_crisis.6.t
+	desc = ENL_The_Irish_crisis.6.d
+
+	picture = GFX_White_Stadium
+
+	trigger = {
+		ENL={
+			check_variable = {
+				Sacrifice_soldiers > 500
+		}
+		}
+	}
+    fire_only_once = yes
+	option = {
+		name = ENL_The_Irish_crisis.6.a
+		add_war_support = -0.15
+	}	
+}
 
 
+news_event = {
+	id = ENL_The_Irish_crisis.7
+	title = ENL_The_Irish_crisis.7.t
+	desc = ENL_The_Irish_crisis.7.d
 
+	picture = GFX_ENL_The_Irish_crisis_7
+    major = yes
+	is_triggered_only = yes
 
-
+	option = {
+		name = ENL_The_Irish_crisis.7.a
+		IRL={
+			set_politics = {
+				ruling_party = Liberalism
+			}
+			set_popularities = {
+				Liberalism = 60
+				Conservatism = 30
+				Revolutionism = 10
+			}
+			retire_character =  IRL_John_Denton_Pinkstone
+			set_cosmetic_tag = IRL_Liberalism_tag
+			leave_faction = yes
+		}
+		ENL={
+			end_puppet = IRL
+		}
+		
+	}	
+}
 
 
 

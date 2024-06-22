@@ -17523,11 +17523,11 @@ SpriteType = {
 }
 ###SHW
 SpriteType = {
-	name = "GFX_goal_SHW_In_name_Slavism_shine"
-	texturefile = "gfx/interface/goals/SHW/SHW_In_name_Slavism.dds"
+	name = "GFX_goal_SHW_Focus_1_shine"
+	texturefile = "gfx/interface/goals/SHW/SHW_Focus_1.dds"
 	effectFile = "gfx/FX/buttonstate.lua"
 	animation = {
-		animationmaskfile = "gfx/interface/goals/SHW/SHW_In_name_Slavism.dds"
+		animationmaskfile = "gfx/interface/goals/SHW/SHW_Focus_1.dds"
 		animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 		animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 		animationlooping = no			# yes or no ;)
@@ -17540,7 +17540,7 @@ SpriteType = {
 	}
 
 	animation = {
-		animationmaskfile = "gfx/interface/goals/SHW/SHW_In_name_Slavism.dds"
+		animationmaskfile = "gfx/interface/goals/SHW/SHW_Focus_1.dds"
 		animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 		animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 		animationlooping = no			# yes or no ;)

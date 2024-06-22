@@ -59,6 +59,19 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			every_state = {
+				limit = {
+					OR={
+						is_core_of = FRW
+						is_core_of = NPL
+					}
+				}
+				add_claim_by = MOA
+			}
+			MOA={
+				become_exiled_in = { target = ENL legitimacy = 50 }
+			}
+			
 		}
 	}
 	focus={
@@ -107,6 +120,24 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			930={
+			add_building_construction = {
+				type = bunker
+				level = 2
+			}
+			}
+			15={
+				add_building_construction = {
+					type = bunker
+					level = 2
+				}
+			}
+			932={
+				add_building_construction = {
+					type = bunker
+					level = 2
+				}
+			}
 		}
 	}
 	focus={
@@ -478,6 +509,9 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			YDA={
+				leave_faction = yes
+			}
 		}
 	}
 	focus={
@@ -857,6 +891,17 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			NAF={
+				add_stability = -0.1
+				add_popularity = {
+					ideology = Conservatism
+					popularity = 0.1
+				}
+				add_popularity = {
+					ideology = Liberalism
+					popularity = -0.1
+				}
+			}
 		}
 	}
 	focus={
@@ -874,6 +919,14 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			MOA={
+				add_legitimacy = 10
+			}
+			17={
+				add_dynamic_modifier = {
+					modifier = FRW_Lorraine_guerrillas
+				}
+			}
 		}
 	}
 	focus={
@@ -942,38 +995,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			capital_scope = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_core_state = {	
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_core_state = {	
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_core_state = {	
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
+			unlock_decision_tooltip = Residential_planning
 		}
 	}
 	focus={
@@ -990,7 +1012,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			add_ideas = Unemployment_Benefits_Act
+			unlock_decision_tooltip = Act_Insurance_Unemployed
 		}
 	}
 	focus={
@@ -1007,10 +1029,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			swap_ideas = {
-				remove_idea = Traditional_conservatism
-				add_idea = Affirmative_action
-			}
+			unlock_decision_tooltip = Gender_Disqualification_Decree
 		} 
 	}
 	focus={
@@ -1088,18 +1107,7 @@ focus_tree={
 				ideology = Liberalism
 				popularity = 0.05
 			}
-			random_core_state = {	
-				add_extra_state_shared_building_slots =2
-			}
-			random_core_state = {	
-				add_extra_state_shared_building_slots =2
-			}
-			random_core_state = {	
-				add_extra_state_shared_building_slots =2
-			}
-			random_core_state = {	
-				add_extra_state_shared_building_slots =2
-			}
+			unlock_decision_tooltip = Residential_planning
 		}
 	}
 	focus={
@@ -1113,12 +1121,12 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
-		available_if_capitulated=yes
+		available_if_capitulated=yes 
 		search_filters={
 		}
 		completion_reward={
 			add_stability = 0.03
-			add_ideas = Blind_Allowance_Act
+			unlock_decision_tooltip = Blind_Allowance_Act_decision
 		}
 	}
 	focus={
@@ -1138,7 +1146,7 @@ focus_tree={
 		completion_reward={
 			add_stability = 0.03
 			add_war_support = 0.05
-			add_ideas = Veteran_the_British_Army
+			unlock_decision_tooltip = Veterans_Benefits
 		}
 	}
 	focus={
@@ -1173,7 +1181,7 @@ focus_tree={
 		search_filters={  
 		}
 		completion_reward={
-			remove_ideas = Slightly_high_grain_prices
+			unlock_decision_tooltip = Agricultural_Decree
 			
 		}
 	}
@@ -1191,7 +1199,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
-			add_ideas = Family_allowance
+			unlock_decision_tooltip =Allowance_unemployed_families 
 		}
 	}
 	focus={
@@ -1241,6 +1249,15 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			944={
+				add_to_variable = { state_cash_tot = 0.5 }
+				add_extra_state_shared_building_slots = 1
+				custom_effect_tooltip = wes_custom_eff_money
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
 		}
 	}
 	focus={
@@ -1274,6 +1291,22 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			build_railway = {
+				level = 2
+				build_only_on_allied = no
+				controller_priority = {
+					base = 2
+					modifier = {
+						OR = {
+							tag = ENL
+						}
+						add = 1
+					}
+				}
+				fallback = yes
+				start_province = 3109
+				target_province = 191
+			}
 		}
 	}
 	focus={
@@ -1290,6 +1323,16 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			681={
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+				add_to_variable = { state_cash_tot = 0.5 }
+				add_extra_state_shared_building_slots = 1
+				custom_effect_tooltip = wes_custom_eff_money
+				
+			}
 		}
 	}
 	focus={
@@ -1322,6 +1365,23 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			326={
+				add_to_variable = { state_cash_tot = 0.5 }
+				add_extra_state_shared_building_slots = 1
+				custom_effect_tooltip = wes_custom_eff_money
+			}
+			613={
+				add_to_variable = { state_cash_tot = 0.5 }
+				custom_effect_tooltip = wes_custom_eff_money
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 3
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
 		}
 	}
 	focus={
@@ -1354,6 +1414,20 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			336={
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+				add_to_variable = { state_cash_tot = 0.5 }
+				add_extra_state_shared_building_slots = 1
+				custom_effect_tooltip = wes_custom_eff_money
+				add_resource = {
+					type = rubber
+					amount = 5
+				}
+				
+			}
 		}
 	}
 	focus={
