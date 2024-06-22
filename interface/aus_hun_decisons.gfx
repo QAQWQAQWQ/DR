@@ -3,50 +3,60 @@ spriteTypes = {
         name = "GFX_AUS_map"
         texturefile = "gfx/interface/GUI/aus_hun/AUS.png"
         legacy_lazy_load = no
+        transparencecheck = yes
     }
     spriteType = {
         name = "GFX_CZE_map"
         texturefile = "gfx/interface/GUI/aus_hun/CZE.png"
         legacy_lazy_load = no
+        transparencecheck = yes
     }
     spriteType = {
         name = "GFX_CRO_map"
         texturefile = "gfx/interface/GUI/aus_hun/CRO.png"
         legacy_lazy_load = no
+        transparencecheck = yes
     }
     spriteType = {
         name = "GFX_HUN_map"
         texturefile = "gfx/interface/GUI/aus_hun/HUN.png"
         legacy_lazy_load = no
+        transparencecheck = yes
     }
     spriteType = {
         name = "GFX_ITA_map"
         texturefile = "gfx/interface/GUI/aus_hun/ITA.png"
         legacy_lazy_load = no
+        transparencecheck = yes
     }
     spriteType = {
         name = "GFX_POL_map"
         texturefile = "gfx/interface/GUI/aus_hun/POL.png"
         legacy_lazy_load = no
+        transparencecheck = yes
     }
     spriteType = {
         name = "GFX_ROM_map"
         texturefile = "gfx/interface/GUI/aus_hun/ROM.png"
         legacy_lazy_load = no
+        transparencecheck = yes
     }
     spriteType = {
         name = "GFX_SLO_map"
         texturefile = "gfx/interface/GUI/aus_hun/SLO.png"
         legacy_lazy_load = no
+        transparencecheck = yes
     }
     spriteType = {
         name = "GFX_SLV_map"
         texturefile = "gfx/interface/GUI/aus_hun/SLV.png"
         legacy_lazy_load = no
+        transparencecheck = yes
     }
     spriteType = {
         name = "GFX_UKR_map"
         texturefile = "gfx/interface/GUI/aus_hun/UKR.png"
         legacy_lazy_load = no
+        transparencecheck = yes
     }
 }

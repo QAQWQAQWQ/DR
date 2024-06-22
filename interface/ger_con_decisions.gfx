@@ -10,6 +10,154 @@ spriteTypes = {
 		colortwo = { 0.0 0.19 0.33 1}
 		steps = 200
 	}
+	progressBarType = {
+		name = "GFX_ger_Africa_stock_AOX"
+		textureFile1 = "gfx/interface/GUI/ger_con/ger_Africa_stock_AOX.dds"
+		textureFile2 = "gfx/interface/GUI/ger_con/ger_Africa_stock_empty.dds"
+		effectFile = "gfx/FX/progress_radial.lua"
+		size = { x = 200 y = 200 }
+		steps = 100
+	}
+	progressBarType = {
+		name = "GFX_ger_Africa_stock_WWS"
+		textureFile1 = "gfx/interface/GUI/ger_con/ger_Africa_stock_WWS.dds"
+		textureFile2 = "gfx/interface/GUI/ger_con/ger_Africa_stock_empty.dds"
+		effectFile = "gfx/FX/progress_radial.lua"
+		size = { x = 200 y = 200 }
+		steps = 100
+	}
+	progressBarType = {
+		name = "GFX_ger_Africa_stock_AGC"
+		textureFile1 = "gfx/interface/GUI/ger_con/ger_Africa_stock_AGC.dds"
+		textureFile2 = "gfx/interface/GUI/ger_con/ger_Africa_stock_empty.dds"
+		effectFile = "gfx/FX/progress_radial.lua"
+		size = { x = 200 y = 200 }
+		steps = 100
+	}
+	progressBarType = {
+		name = "GFX_ger_Africa_stock_DOH"
+		textureFile1 = "gfx/interface/GUI/ger_con/ger_Africa_stock_DOH.dds"
+		textureFile2 = "gfx/interface/GUI/ger_con/ger_Africa_stock_empty.dds"
+		effectFile = "gfx/FX/progress_radial.lua"
+		size = { x = 200 y = 200 }
+		steps = 100
+	}
+	progressBarType = {
+		name = "GFX_ger_Africa_stock_DOR"
+		textureFile1 = "gfx/interface/GUI/ger_con/ger_Africa_stock_DOR.dds"
+		textureFile2 = "gfx/interface/GUI/ger_con/ger_Africa_stock_empty.dds"
+		effectFile = "gfx/FX/progress_radial.lua"
+		size = { x = 200 y = 200 }
+		steps = 100
+	}
+	progressBarType = {
+		name = "GFX_ger_Africa_stock_DOA"
+		textureFile1 = "gfx/interface/GUI/ger_con/ger_Africa_stock_DOA.dds"
+		textureFile2 = "gfx/interface/GUI/ger_con/ger_Africa_stock_empty.dds"
+		effectFile = "gfx/FX/progress_radial.lua"
+		size = { x = 200 y = 200 }
+		steps = 100
+	}
+	progressBarType = {
+		name = "GFX_ger_Africa_stock_DOB"
+		textureFile1 = "gfx/interface/GUI/ger_con/ger_Africa_stock_DOB.dds"
+		textureFile2 = "gfx/interface/GUI/ger_con/ger_Africa_stock_empty.dds"
+		effectFile = "gfx/FX/progress_radial.lua"
+		size = { x = 200 y = 200 }
+		steps = 100
+	}
+	progressBarType = {
+		name = "GFX_ger_Africa_stock_DOF"
+		textureFile1 = "gfx/interface/GUI/ger_con/ger_Africa_stock_DOF.dds"
+		textureFile2 = "gfx/interface/GUI/ger_con/ger_Africa_stock_empty.dds"
+		effectFile = "gfx/FX/progress_radial.lua"
+		size = { x = 200 y = 200 }
+		steps = 100
+	}
+	progressBarType = {
+		name = "GFX_ger_Africa_stock_DOL"
+		textureFile1 = "gfx/interface/GUI/ger_con/ger_Africa_stock_DOL.dds"
+		textureFile2 = "gfx/interface/GUI/ger_con/ger_Africa_stock_empty.dds"
+		effectFile = "gfx/FX/progress_radial.lua"
+		size = { x = 200 y = 200 }
+		steps = 100
+	}
+	progressBarType = {
+		name = "GFX_ger_Africa_stock_DOM"
+		textureFile1 = "gfx/interface/GUI/ger_con/ger_Africa_stock_DOM.dds"
+		textureFile2 = "gfx/interface/GUI/ger_con/ger_Africa_stock_empty.dds"
+		effectFile = "gfx/FX/progress_radial.lua"
+		size = { x = 200 y = 200 }
+		steps = 100
+	}
+	progressBarType = {
+		name = "GFX_ger_Africa_stock_DON"
+		textureFile1 = "gfx/interface/GUI/ger_con/ger_Africa_stock_DON.dds"
+		textureFile2 = "gfx/interface/GUI/ger_con/ger_Africa_stock_empty.dds"
+		effectFile = "gfx/FX/progress_radial.lua"
+		size = { x = 200 y = 200 }
+		steps = 100
+	}
+	progressBarType = {
+		name = "GFX_ger_Africa_stock_DOS"
+		textureFile1 = "gfx/interface/GUI/ger_con/ger_Africa_stock_DOS.dds"
+		textureFile2 = "gfx/interface/GUI/ger_con/ger_Africa_stock_empty.dds"
+		effectFile = "gfx/FX/progress_radial.lua"
+		size = { x = 200 y = 200 }
+		steps = 100
+	}
+	progressBarType = {
+		name = "GFX_ger_Africa_stock_DHD"
+		textureFile1 = "gfx/interface/GUI/ger_con/ger_Africa_stock_DHD.dds"
+		textureFile2 = "gfx/interface/GUI/ger_con/ger_Africa_stock_empty.dds"
+		effectFile = "gfx/FX/progress_radial.lua"
+		size = { x = 200 y = 200 }
+		steps = 100
+	}
+	progressBarType = {
+		name = "GFX_ger_Africa_stock_DMW"
+		textureFile1 = "gfx/interface/GUI/ger_con/ger_Africa_stock_DMW.dds"
+		textureFile2 = "gfx/interface/GUI/ger_con/ger_Africa_stock_empty.dds"
+		effectFile = "gfx/FX/progress_radial.lua"
+		size = { x = 200 y = 200 }
+		steps = 100
+	}
+	progressBarType = {
+		name = "GFX_ger_Africa_stock_HOS"
+		textureFile1 = "gfx/interface/GUI/ger_con/ger_Africa_stock_HOS.dds"
+		textureFile2 = "gfx/interface/GUI/ger_con/ger_Africa_stock_empty.dds"
+		effectFile = "gfx/FX/progress_radial.lua"
+		size = { x = 200 y = 200 }
+		steps = 100
+	}
+	progressBarType = {
+		name = "GFX_ger_Africa_stock_LSB"
+		textureFile1 = "gfx/interface/GUI/ger_con/ger_Africa_stock_LSB.dds"
+		textureFile2 = "gfx/interface/GUI/ger_con/ger_Africa_stock_empty.dds"
+		effectFile = "gfx/FX/progress_radial.lua"
+		size = { x = 200 y = 200 }
+		steps = 100
+	}
+	progressBarType = {
+		name = "GFX_ger_Africa_stock_SHL"
+		textureFile1 = "gfx/interface/GUI/ger_con/ger_Africa_stock_SHL.dds"
+		textureFile2 = "gfx/interface/GUI/ger_con/ger_Africa_stock_empty.dds"
+		effectFile = "gfx/FX/progress_radial.lua"
+		size = { x = 200 y = 200 }
+		steps = 100
+	}
+	progressBarType = {
+		name = "GFX_ger_Africa_stock_thuringen"
+		textureFile1 = "gfx/interface/GUI/ger_con/ger_Africa_stock_thuringen.dds"
+		textureFile2 = "gfx/interface/GUI/ger_con/ger_Africa_stock_empty.dds"
+		effectFile = "gfx/FX/progress_radial.lua"
+		size = { x = 200 y = 200 }
+		steps = 100
+	}
+	spriteType = {
+		name = "GFX_ger_Africa_stock_privice"
+		texturefile = "gfx/interface/GUI/ger_con/ger_Africa_stock_privice.dds"
+	}
 	spriteType = {
 		name = "GFX_ger_con_bg"
 		texturefile = "gfx/interface/GUI/ger_con/ger_con_bg.dds"

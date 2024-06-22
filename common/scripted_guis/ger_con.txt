@@ -687,4 +687,64 @@ scripted_gui = {
 			}
 		}
 	}
+	ger_Africa_decisons_ui = {
+		context_type = decision_category
+		window_name = "ger_Africa_decisons_ui_window"
+		properties={
+			ger_Africa_stock_AOX_icon = {
+				frame = ger_Africa_stock_AOX_var
+			}
+			ger_Africa_stock_WWS_icon = {
+				frame = ger_Africa_stock_WWS_var
+			}
+			ger_Africa_stock_AGC_icon = {
+				frame = ger_Africa_stock_AGC_var
+			}
+			ger_Africa_stock_LSB_icon = {
+				frame = ger_Africa_stock_LSB_var
+			}
+			ger_Africa_stock_DHD_icon = {
+				frame = ger_Africa_stock_DHD_var
+			}
+			ger_Africa_stock_DON_icon = {
+				frame = ger_Africa_stock_DON_var
+			}
+			ger_Africa_stock_DOF_icon = {
+				frame = ger_Africa_stock_DOF_var
+			}
+			ger_Africa_stock_DOB_icon = {
+				frame = ger_Africa_stock_DOB_var
+			}
+			ger_Africa_stock_DOR_icon = {
+				frame = ger_Africa_stock_DOR_var
+			}
+			ger_Africa_stock_DOL_icon = {
+				frame = ger_Africa_stock_DOL_var
+			}
+			ger_Africa_stock_DOH_icon = {
+				frame = ger_Africa_stock_DOH_var
+			}
+			ger_Africa_stock_DOA_icon = {
+				frame = ger_Africa_stock_DOA_var
+			}
+			ger_Africa_stock_DOM_icon = {
+				frame = ger_Africa_stock_DOM_var
+			}
+			ger_Africa_stock_DOS_icon = {
+				frame = ger_Africa_stock_DOS_var
+			}
+			ger_Africa_stock_thuringen_icon = {
+				frame = ger_Africa_stock_thuringen_var
+			}
+			ger_Africa_stock_DMW_icon = {
+				frame = ger_Africa_stock_DMW_var
+			}
+			ger_Africa_stock_SHL_icon = {
+				frame = ger_Africa_stock_SHL_var
+			}
+			ger_Africa_stock_HOS_icon = {
+				frame = ger_Africa_stock_HOS_var
+			}
+		}
+	}
 }
