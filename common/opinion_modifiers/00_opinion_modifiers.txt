@@ -17,7 +17,8 @@ opinion_modifiers = {
 	Show_us_kindness= { value = 20 }
 	Trade_embargo= { 
 		trade = no
-		value = -80 }
+		value = -80 
+	}
 	Sanctioned= { value = -20 }
 	Both_born_the_same_root= { value = 30 }
 	Slavic_cultural_circle= { value = 20 }
@@ -26,4 +27,6 @@ opinion_modifiers = {
 	Confederate_pretenders = {value = -40}
 	Show_goodwill = {value = 30}
 	protest = {value = -20}
+	Royal_friendly = {value = 25}
+	satisfied= {value = 10}
 }
