@@ -81,6 +81,10 @@ focus_tree={
 		icon = GFX_goal_ENL_focus4
 		prerequisite={focus=ENL_focus1}
 		cost=10
+		available = {
+			has_country_flag = ENL_focus4_flag
+			
+		}
 		ai_will_do={
 			factor=1
 		}
@@ -195,6 +199,7 @@ focus_tree={
 		search_filters={
 		} 
 		completion_reward={
+			country_event = ENL.5
 		}
 	}
 	focus={
@@ -514,7 +519,7 @@ focus_tree={
 		x=13
 		y=7
 		cost=10
-		ai_will_do={
+		ai_will_do={ 
 			factor=1
 		}
 		allow_branch = {
@@ -1401,6 +1406,10 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+			add_opinion_modifier = {
+				target = JPN
+				modifier = Royal_friendly
+			}
 		}
 	}
 	focus={

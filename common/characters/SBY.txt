@@ -193,6 +193,145 @@ characters={
 	}
 	
 
+	SBY_Santiago_Alba_y_Bonifaz={
+		name=SBY_Santiago_Alba_y_Bonifaz
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Santiago_Alba_y_Bonifaz.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = SBY_Santiago_Alba_y_Bonifaz_H
+			allowed = {
+				original_tag = SBY
+				
+			}
+			available = {
+				is_country_leader = no
+			    is_political_advisor = no
+			}
+			traits = {
+				head_of_government
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SBY_Santiago_Alba_y_Bonifaz_P
+			allowed = {
+				original_tag = SBY
+			}
+			available = {
+				is_country_leader = no
+			    not_already_hired_except_as = political_advisor
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	SBY_Alvaro_de_Figueroa={
+		name=SBY_Alvaro_de_Figueroa
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Alvaro_de_Figuero.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = SBY_Alvaro_de_Figueroa_H
+			allowed = {
+				original_tag = SBY
+				
+			}
+			available = {
+				is_country_leader = no
+			    is_political_advisor = no
+			}
+			traits = {
+				head_of_government
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SBY_Alvaro_de_Figueroa_P
+			allowed = {
+				original_tag = SBY
+			}
+			available = {
+				is_country_leader = no
+			    not_already_hired_except_as = political_advisor
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	SBY_Juan_de_la_Cierva_y_Penafiel={
+		name=SBY_Juan_de_la_Cierva_y_Penafiel
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Juan_de_la_Cierva_y_Penafiel.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SBY_Juan_de_la_Cierva_y_Penafiel_P
+			allowed = {
+				original_tag = SBY
+			}
+			available = {
+				is_country_leader = no
+			    not_already_hired_except_as = political_advisor
+			  }
+			traits = {
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	SBY_Antonio_Goicoechea_Cosculluela={
 		name=SBY_Antonio_Goicoechea_Cosculluela

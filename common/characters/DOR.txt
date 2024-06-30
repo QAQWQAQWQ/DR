@@ -6,6 +6,14 @@ characters={
 				large="gfx/leaders/DOR/Portrait_Ludwig_III.tga"
 			}
 		}
+		    
+	field_marshal = {
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
 		country_leader={
 			ideology=Classicism_Conservatism
 			traits={ }
@@ -182,6 +190,7 @@ characters={
 			large="gfx/leaders/DOR/Portrait_Rupprecht.tga"
 		}
 	}
+	    
 		corps_commander={
 		traits={ Lieutenant_general }
 		skill=3
@@ -191,4 +200,109 @@ characters={
 		logistics_skill=3
 	}
 	}
+
+
+
+
+
+
+
+
+	DOR_Maximilian_Max_Freiherr={
+		name=DOR_Maximilian_Max_Freiherr
+		portraits={
+		army={
+			large="gfx/leaders/DOR/Portrait_Maximilian_Max_Freiherr.tga"
+		}
 	}
+	    
+	field_marshal = {
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 1
+	}
+	}
+	DOR_Konrad_Krafft_von_Dellmensingen={
+		name=DOR_Konrad_Krafft_von_Dellmensingen
+		portraits={
+		army={
+			large="gfx/leaders/DOR/Portrait_Konrad_Krafft_von_Dellmensingen.tga"
+		}
+	}
+	    corps_commander = {
+			traits={ skilled_staffer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	DOR_Philipp_von_Hellingrath={
+		name=DOR_Philipp_von_Hellingrath
+		portraits={
+		army={
+			large="gfx/leaders/DOR/Portrait_Philipp_von_Hellingrath.tga"
+		}
+	}
+	    corps_commander = {
+			traits={ skilled_staffer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	DOR_Maximilian_Ritter_von_Hohn={
+		name=DOR_Maximilian_Ritter_von_Hohn
+		portraits={
+		army={
+			large="gfx/leaders/DOR/Portrait_Maximilian_Ritter_von_Hohn.tga"
+		}
+	}
+	    corps_commander = {
+			traits={ Lieutenant_general }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	DOR_Gustav_Scanzoni_von_Lichtenfels={
+		name=DOR_Gustav_Scanzoni_von_Lichtenfels
+		portraits={
+		army={
+			large="gfx/leaders/DOR/Portrait_Gustav_Scanzoni_von_Lichtenfels.tga"
+		}
+	}
+	    corps_commander = {
+			traits={ expert_delegator }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	DOR_KreB_von_Kressenstein={
+		name=DOR_KreB_von_Kressenstein
+		portraits={
+		army={
+			large="gfx/leaders/DOR/Portrait_KreB_von_Kressenstein.tga"
+		}
+	}
+	    corps_commander = {
+			traits={ Lieutenant_general }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+}

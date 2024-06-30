@@ -13,7 +13,7 @@ country_event = {
 	title = ENL.1.t
 	desc = ENL.1.d
 
-	picture = GFX_ENL_1
+	picture =GFX_White_Stadium
 
 	is_triggered_only = yes
 
@@ -52,7 +52,74 @@ country_event = {
 		}
 	}		
 }
+country_event = {
+	id = ENL.2
+	title = ENL.2.t
+	desc = ENL.2.d
 
+	picture = GFX_White_Stadium
+
+	is_triggered_only = yes
+
+	option = {
+		name = ENL.2.a
+		set_party_name = {
+			ideology = Revolutionism
+			long_name = ENL_Revolutionism_new_party_long
+			name = ENL_Revolutionism_new_party
+		}
+		set_country_flag = ENL_focus4_flag
+		custom_effect_tooltip=ENL_focus4_flag1
+	}		
+}
+country_event = {
+	id = ENL.3
+	title = ENL.3.t
+	desc = ENL.3.d
+
+	picture = GFX_White_Stadium
+
+	is_triggered_only = yes
+
+	option = {
+		name = ENL.3.a
+		
+	}
+	option = {
+		name = ENL.3.b
+		set_country_flag = ENL_focus28
+		mark_focus_tree_layout_dirty = yes
+		custom_effect_tooltip = ENL_focus29_tooltip
+	}			
+}
+country_event = {
+	id = ENL.4
+	title = ENL.4.t
+	desc = ENL.4.d
+
+	picture = GFX_White_Stadium
+
+	is_triggered_only = yes
+
+	option = {
+		name = ENL.4.a
+		
+	}		
+}
+country_event = {
+	id = ENL.5
+	title = ENL.5.t
+	desc = ENL.5.d
+
+	picture = GFX_White_Stadium
+
+	is_triggered_only = yes
+
+	option = {
+		name = ENL.5.a
+		
+	}		
+}
 news_event = {
 	id = ENL_election.1
 	title = ENL_election.1.t
