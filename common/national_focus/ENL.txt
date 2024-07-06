@@ -518,6 +518,7 @@ focus_tree={
 		id=ENL_focus28
 		x=13
 		y=7
+		icon = GFX_goal_ENL_focus28
 		cost=10
 		ai_will_do={ 
 			factor=1
@@ -535,6 +536,7 @@ focus_tree={
 		id=ENL_focus29
 		x=13
 		y=8
+		icon = GFX_goal_ENL_focus29
 		prerequisite={focus=ENL_focus28}
 		cost=10
 		ai_will_do={
@@ -550,6 +552,7 @@ focus_tree={
 		id=ENL_focus30
 		x=11
 		y=9
+		icon = GFX_goal_ENL_focus30
 		prerequisite={focus=ENL_focus29}
 		cost=10
 		ai_will_do={
@@ -565,6 +568,7 @@ focus_tree={
 		id=ENL_focus31
 		x=13
 		y=9
+		icon = GFX_goal_ENL_focus31
 		prerequisite={focus=ENL_focus29}
 		cost=10
 		ai_will_do={
@@ -580,6 +584,7 @@ focus_tree={
 		id=ENL_focus32
 		x=15
 		y=9
+		icon = GFX_goal_ENL_focus32
 		prerequisite={focus=ENL_focus29}
 		cost=10
 		ai_will_do={
@@ -595,6 +600,7 @@ focus_tree={
 		id=ENL_focus34
 		x=13
 		y=10
+		icon = GFX_goal_ENL_focus34
 		prerequisite={focus=ENL_focus30}
 		prerequisite={focus=ENL_focus32}
 		prerequisite={focus=ENL_focus31}
@@ -612,6 +618,7 @@ focus_tree={
 		id=ENL_focus35
 		x=18
 		y=10
+		icon = GFX_goal_ENL_focus35
 		prerequisite={focus=ENL_focus32}
 		prerequisite={focus=ENL_focus31}
 		prerequisite={focus=ENL_focus30}
@@ -629,6 +636,7 @@ focus_tree={
 		id=ENL_focus33
 		x=8
 		y=10
+		icon = GFX_goal_ENL_focus67
 		prerequisite={focus=ENL_focus30}
 		prerequisite={focus=ENL_focus31}
 		prerequisite={focus=ENL_focus32}
@@ -646,6 +654,7 @@ focus_tree={
 		id=ENL_focus36
 		x=6
 		y=11
+		icon = GFX_goal_ENL_focus36
 		prerequisite={focus=ENL_focus33}
 		cost=10
 		ai_will_do={
@@ -661,6 +670,7 @@ focus_tree={
 		id=ENL_focus38
 		x=6
 		y=12
+		icon = GFX_goal_ENL_focus38
 		prerequisite={focus=ENL_focus36}
 		cost=10
 		ai_will_do={
@@ -676,6 +686,7 @@ focus_tree={
 		id=ENL_focus37
 		x=10
 		y=11
+		icon = GFX_goal_ENL_focus37
 		prerequisite={focus=ENL_focus33}
 		cost=10
 		ai_will_do={
@@ -691,6 +702,7 @@ focus_tree={
 		id=ENL_focus39
 		x=10
 		y=12
+		icon = GFX_goal_ENL_focus39
 		prerequisite={focus=ENL_focus37}
 		cost=10
 		ai_will_do={
@@ -706,6 +718,7 @@ focus_tree={
 		id=ENL_focus40
 		x=13
 		y=11
+		icon = GFX_goal_ENL_focus40
 		prerequisite={focus=ENL_focus34}
 		cost=10
 		ai_will_do={
@@ -721,6 +734,7 @@ focus_tree={
 		id=ENL_focus41
 		x=13
 		y=12
+		icon = GFX_goal_ENL_focus41
 		prerequisite={focus=ENL_focus40}
 		cost=10
 		ai_will_do={
@@ -736,6 +750,7 @@ focus_tree={
 		id=ENL_focus42
 		x=16
 		y=11
+	    icon = GFX_goal_ENL_focus42
 		prerequisite={focus=ENL_focus35}
 		cost=10
 		ai_will_do={
@@ -751,6 +766,7 @@ focus_tree={
 		id=ENL_focus43
 		x=16
 		y=12
+		icon = GFX_goal_ENL_focus43
 		prerequisite={focus=ENL_focus42}
 		cost=10
 		ai_will_do={
@@ -766,6 +782,7 @@ focus_tree={
 		id=ENL_focus44
 		x=20
 		y=11
+		icon = GFX_goal_ENL_focus44
 		prerequisite={focus=ENL_focus35}
 		cost=10
 		ai_will_do={
@@ -781,6 +798,7 @@ focus_tree={
 		id=ENL_focus45
 		x=20
 		y=12
+		icon = GFX_goal_ENL_focus45
 		prerequisite={focus=ENL_focus44}
 		cost=10
 		ai_will_do={
@@ -796,6 +814,7 @@ focus_tree={
 		id=ENL_focus46
 		x=13
 		y=13
+		icon = GFX_goal_ENL_focus46
 		prerequisite={focus=ENL_focus38}
 		prerequisite={focus=ENL_focus39}
 		prerequisite={focus=ENL_focus41}
@@ -812,10 +831,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=ENL_focus47
+		#id=ENL_focus47
 		x=10
 		y=14
-		prerequisite={focus=ENL_focus46}
+		icon = GFX_goal_ENL_focus47
+		prerequisite={focus=ENL_focus46} 
 		cost=10
 		ai_will_do={
 			factor=1
@@ -827,9 +847,10 @@ focus_tree={
 		}
 	}
 	focus={
-		id=ENL_focus48
+		#id=ENL_focus48
 		x=16
 		y=14
+		icon = GFX_goal_ENL_focus48
 		prerequisite={focus=ENL_focus46}
 		cost=10
 		ai_will_do={

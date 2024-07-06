@@ -2,17 +2,16 @@
 state={
 	id=384
 	name="STATE_384"
-	manpower = 1377962
-	
-	state_category = large_town
 	resources={
-		grain=18
+		grain=18.000
 	}
+
 	history={
 		owner = ICD
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+
 		}
 		add_core_of = ICD
 		victory_points = {
@@ -22,8 +21,10 @@ state={
 	}
 
 	provinces={
-		1683 3613 3708 3855 4749 4760 4830 7840 7852 10606 10676 12516 12586 
+		1683 3613 3708 3855 4749 4757 4760 4830 7840 7852 10606 10676 12513 12516 12586 
 	}
-
-	local_supplies=0.0 
+	manpower=1377962
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
 }

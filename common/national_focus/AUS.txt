@@ -2788,33 +2788,33 @@ bosnia_war_end = yes
 		cost = 5.00
 		x = 20
 		y = 6
-		allow_branch={ 
-			OR = {
-				# always = yes
-				AND = {
-					has_completed_focus = AUS_bir_15
-					bosnia_war_end_tri_tool = yes
-					OR = {
-						has_completed_focus = AUS_ger_1
-						has_completed_focus = AUS_ger_2
-						has_completed_focus = AUS_ger_3
-					}
-					NOT = {
-						has_completed_focus = AUS_HRE_0
-						has_completed_focus = AUS_german_0
-					}
-					OR = {
-						NOT = {
-							has_completed_focus = AUS_ger_3
-						}
-						custom_trigger_tooltip = { 
-							tooltip = pre_win_german_war 
-							pre_has_win_german_war = yes
-						}
-					}
-				}
-			}	
-		}
+		#allow_branch={ 
+		#	OR = {
+		#		# always = yes
+		#		AND = {
+		#			has_completed_focus = AUS_bir_15
+		#			bosnia_war_end_tri_tool = yes
+		#			OR = {
+		#				has_completed_focus = AUS_ger_1
+		#				has_completed_focus = AUS_ger_2
+		#				has_completed_focus = AUS_ger_3
+		#			}
+		#			NOT = {
+		#				has_completed_focus = AUS_HRE_0
+		#				has_completed_focus = AUS_german_0
+		#			}
+		#			OR = {
+		#				NOT = {
+		#					has_completed_focus = AUS_ger_3
+		#				}
+		#				custom_trigger_tooltip = { 
+		#					tooltip = pre_win_german_war 
+		#					pre_has_win_german_war = yes
+		#				}
+		#			}
+		#		}
+		#	}	
+		#}
 		available = {
 			has_completed_focus = AUS_bir_15
 			OR = {
@@ -3928,20 +3928,20 @@ bosnia_war_end = yes
 				add_idea = AOX_Ethnic_construction5
 			}
 		}
-	}
+	} 
 	focus = {
 		id = AUS_confederation_0
-		icon = GFX_goal_AUS_confederation_0
+		icon = GFX_AUS_confederation_0
 		x = 0 
 		y = 5
 		relative_position_id = AUS_ger_2
 		cost = 1.00
-		allow_branch = {
-			OR = {
-				# always = yes
-				has_completed_focus = AUS_ger_22
-			}
-		}
+		#allow_branch = {
+		#	OR = {
+		#		# always = yes
+		#		has_completed_focus = AUS_ger_22
+		#	}
+		#}
 		available = {
 			custom_trigger_tooltip = { 
 				tooltip = aus_win_german_war 
@@ -3956,7 +3956,7 @@ bosnia_war_end = yes
 	}
 	focus = {
 		id = AUS_confederation_1
-		icon = GFX_goal_AUS_confederation_1
+		icon = GFX_AUS_confederation_1
 		x = 3 
 		y = 1
 		relative_position_id = AUS_confederation_0
@@ -3974,7 +3974,7 @@ bosnia_war_end = yes
 	}
 	focus = {
 		id = AUS_confederation_2
-		icon = GFX_goal_AUS_confederation_2
+		icon = GFX_AUS_confederation_2
 		x = -2
 		y = 1
 		relative_position_id = AUS_confederation_1
@@ -3997,7 +3997,7 @@ bosnia_war_end = yes
 	}
 	focus = {
 		id = AUS_confederation_3
-		icon = GFX_goal_AUS_confederation_3
+		icon = GFX_AUS_confederation_3
 		x = 0
 		y = 1
 		relative_position_id = AUS_confederation_1
@@ -4020,7 +4020,7 @@ bosnia_war_end = yes
 	}
 	focus = {
 		id = AUS_confederation_4
-		icon = GFX_goal_AUS_confederation_4
+		icon = GFX_AUS_confederation_4
 		x = 2
 		y = 1
 		relative_position_id = AUS_confederation_1
@@ -4043,7 +4043,7 @@ bosnia_war_end = yes
 	}
 	focus = {
 		id = AUS_confederation_5
-		icon = GFX_goal_AUS_confederation_5
+		icon = GFX_AUS_confederation_5
 		x = 0
 		y = 1
 		relative_position_id = AUS_confederation_3
