@@ -31,7 +31,7 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "CountryIntroductionpicture"
-			position = { x = 215 y = 45 }
+			position = { x = 215 y = 40 }
 			text = "Country_Introduction_picture"
 		}
 		buttonType = {
@@ -40,7 +40,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_kai_jv_jie_shao_xuan_xiang"
 			buttonFont = "hoi_24header"
 			Orientation = UPPER_LEFT
-			buttonText = "国家介绍"
+			buttonText = "Country_Profile"
 			clicksound = click_ok
 		}
 		buttonType = {
@@ -49,7 +49,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_kai_jv_jie_shao_xuan_xiang"
 			buttonFont = "hoi_24header"
 			Orientation = UPPER_LEFT
-			buttonText = "路线指南"
+			buttonText = "Route_Guide"
 			clicksound = click_ok
 		}
 		buttonType = {
@@ -58,7 +58,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_kai_jv_jie_shao_xuan_xiang"
 			buttonFont = "hoi_24header"
 			Orientation = UPPER_LEFT
-			buttonText = "开发人员"
+			buttonText = "Developer"
 			clicksound = click_ok
 		}
 		buttonType = {
@@ -67,7 +67,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_kai_jv_jie_shao_xuan_xiang"
 			buttonFont = "hoi_24header"
 			Orientation = UPPER_LEFT
-			buttonText = "mod特色"
+			buttonText = "Mod_Features"
 			clicksound = click_ok
 		}
 		buttonType = {
@@ -76,7 +76,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_kai_jv_jie_shao_xuan_xiang"
 			buttonFont = "hoi_24header"
 			Orientation = UPPER_LEFT
-			buttonText = "返回"
+			buttonText = "Return"
 			clicksound = click_ok
 			shortcut = "RETURN"
 		}

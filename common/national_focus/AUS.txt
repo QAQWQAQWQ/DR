@@ -2788,33 +2788,33 @@ bosnia_war_end = yes
 		cost = 5.00
 		x = 20
 		y = 6
-		#allow_branch={ 
-		#	OR = {
-		#		# always = yes
-		#		AND = {
-		#			has_completed_focus = AUS_bir_15
-		#			bosnia_war_end_tri_tool = yes
-		#			OR = {
-		#				has_completed_focus = AUS_ger_1
-		#				has_completed_focus = AUS_ger_2
-		#				has_completed_focus = AUS_ger_3
-		#			}
-		#			NOT = {
-		#				has_completed_focus = AUS_HRE_0
-		#				has_completed_focus = AUS_german_0
-		#			}
-		#			OR = {
-		#				NOT = {
-		#					has_completed_focus = AUS_ger_3
-		#				}
-		#				custom_trigger_tooltip = { 
-		#					tooltip = pre_win_german_war 
-		#					pre_has_win_german_war = yes
-		#				}
-		#			}
-		#		}
-		#	}	
-		#}
+		allow_branch={ 
+			OR = {
+				# always = yes
+				AND = {
+					has_completed_focus = AUS_bir_15
+					bosnia_war_end_tri_tool = yes
+					OR = {
+						has_completed_focus = AUS_ger_1
+						has_completed_focus = AUS_ger_2
+						has_completed_focus = AUS_ger_3
+					}
+					NOT = {
+						has_completed_focus = AUS_HRE_0
+						has_completed_focus = AUS_german_0
+					}
+					OR = {
+						NOT = {
+							has_completed_focus = AUS_ger_3
+						}
+						custom_trigger_tooltip = { 
+							tooltip = pre_win_german_war 
+							pre_has_win_german_war = yes
+						}
+					}
+				}
+			}	
+		}
 		available = {
 			has_completed_focus = AUS_bir_15
 			OR = {
@@ -3936,12 +3936,12 @@ bosnia_war_end = yes
 		y = 5
 		relative_position_id = AUS_ger_2
 		cost = 1.00
-		#allow_branch = {
-		#	OR = {
-		#		# always = yes
-		#		has_completed_focus = AUS_ger_22
-		#	}
-		#}
+		allow_branch = {
+			OR = {
+				# always = yes
+				has_completed_focus = AUS_ger_22
+			}
+		}
 		available = {
 			custom_trigger_tooltip = { 
 				tooltip = aus_win_german_war 

@@ -43,10 +43,10 @@ guiTypes = {
 			name = "bg"
 			spriteType = "GFX_generic_box_80"
 		}
-		iconType = {
-			name ="money_top_ui_icon" 
-			spriteType = "GFX_money_icon"  
-			position = { x= 0 y = 1 } 
+		iconType = { 
+			name ="money_top_ui_icon"  
+			spriteType = "GFX_money_icon"    
+			position = { x= 0 y = 1 }   
 			Orientation = "UPPER_LEFT"  
 			pdx_tooltip = "GDP_TOOLTIP"
 		}		
@@ -63,12 +63,12 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name ="Global_power"
-			position = { x= -300 y = 78 }
-			font = "hoi_18mbs"
-			text = "[Global_power_texts]"
-			format = RIGHT
-			maxWidth = 65
-			maxHeight = 24
+			position = { x= -300 y = 75 }
+			font = "hoi_16mbs"
+			text = "[Global_power_texts]" 
+			format = CENTER
+			maxWidth =70
+			maxHeight = 50
 			fixedsize = yes
 			pdx_tooltip = "money_value_TOOLTIP"
 			pdx_tooltip_delayed = "money_value_TT_TOOLTIP"
