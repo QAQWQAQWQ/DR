@@ -13,14 +13,22 @@ country_event = {
 	id =NPL_democracy.1
 	title =NPL_democracy.1.t
 	desc =NPL_democracy.1.d
-	picture = GFX_NPL_restoration_1
+	picture = GFX_NPL_democracy_1
 
-	is_triggered_only = yes
+	trigger={
+		AND={
+			NPL={
+				has_stability < 0.1
+				has_war_support < 0.2
+			}
+		}
+	}
 
 	fire_only_once = yes
 
 	option = {
 		name =NPL_democracy.1.a
+		news_event = {id=NPL.3 days=2}
 		set_party_name = {
 			ideology = Conservatism
 			long_name = NPL_Conservatism_party1_long
@@ -217,7 +225,26 @@ news_event = {
 	option = {
 		name =NPL.2.a
 		}
-	}	
+}	
+
+news_event = {
+	id =NPL.3
+	title =NPL.3.t
+	desc =NPL.3.d
+	picture = GFX_NPL_3
+
+	major=yes
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name =NPL.3.a
+		}
+}
+
+
 country_event = {
 	id =NPL.3
 	title =NPL.3.t
