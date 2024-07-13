@@ -40,4 +40,15 @@ ger_afr_stock_work_gui_vars = {
     add_to_variable = { ger_Africa_stock_SHL_var = SHL.ger_Africa_stock_var }
     set_variable = { ger_Africa_stock_HOS_var = ger_Africa_stock_SHL_var }
     add_to_variable = { ger_Africa_stock_HOS_var = HOS.ger_Africa_stock_var }
+    set_variable = { ger_afr_privice_stock = 100 }
+    subtract_from_variable = { ger_afr_privice_stock = ger_Africa_stock_HOS_var }
+}
+ger_afr_clmap_array = {
+	clear_array = global.ger_con_afr_array
+	every_country = {
+		limit = {
+			check_variable = { ger_Africa_stock_var > 0 }
+		}
+		add_to_array = { global.ger_con_afr_array = THIS }
+	}
 }

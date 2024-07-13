@@ -746,5 +746,14 @@ scripted_gui = {
 				frame = ger_Africa_stock_HOS_var
 			}
 		}
+		dynamic_lists = {
+			ger_Afr_grid = {
+				array = global.ger_con_afr_array
+				index = i
+				value = v
+				change_scope = yes
+				entry_container = ger_afr_entry
+			}
+		}
 	}
 }
