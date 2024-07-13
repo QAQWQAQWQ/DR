@@ -1,0 +1,45 @@
+bitmapfonts = {
+	bitmapfont = {
+		name = "newstitilefont_22b"
+		fontfiles = { 
+			"fonts/newstitilefont_22b"	
+		}
+		color = 0xffffffff
+	languages = { "l_simp_chinese" } 
+	}
+	bitmapfont = {
+		name = "newsfont_16b"
+		fontfiles = {
+			"fonts/newsfont_latin_16b"
+			"fonts/newsfont_16b"	
+		}
+		color = 0xffffffff
+	languages = { "l_simp_chinese" } 
+	}
+	bitmapfont = {
+		name = "congressfont_36"
+		fontfiles = {
+			"fonts/hoi_36header"
+			"fonts/congressfont_26s"
+		}
+		color = 0xffffffff
+	languages = { "l_simp_chinese" } 
+	}
+	bitmapfont = {
+		name = "congressfont_24"
+		fontfiles = {
+			"fonts/hoi_24header"
+			"fonts/congressfont_20s"
+		}
+		color = 0xffffffff
+	languages = { "l_simp_chinese" } 
+	}
+	bitmapfont = {
+		name = "congressfont_16"
+		fontfiles = {
+			"fonts/congressfont_16s"
+		}
+		color = 0xffffffff
+	languages = { "l_simp_chinese" } 
+	}
+}

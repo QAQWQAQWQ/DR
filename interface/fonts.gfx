@@ -15,4 +15,69 @@ bitmapfonts = {
 		path = "gfx/fonts/garamond_12"
 		color = 0xffffffff
 	}
+
+
+
+
+
+	bitmapfont = {
+		name = "newsfronttitle"
+		fontfiles = {
+			"gfx/fonts/newsfronttitle"
+		}
+		color = 0xffffffff
+	
+		textcolors = {
+			#G = { 86 172 91 }
+		}
+		languages = { "l_simp_chinese" } 
+	}
+	bitmapfont = {
+		name = "newsfronttitle_33s"
+		fontfiles = {
+			"gfx/fonts/newsfronttitle_33s"
+		}
+		color = 0xffffffff
+	
+		textcolors = {
+			#G = { 86 172 91 }
+		}
+		languages = { "l_simp_chinese" } 
+	}
+	bitmapfont = {
+		name = "newsfronttitle_black"
+		fontfiles = {
+			"gfx/fonts/newsfronttitle_black"
+		}
+		color = 0xffffffff
+	
+		textcolors = {
+			#G = { 86 172 91 }
+		}
+		languages = { "l_simp_chinese" } 
+	}
+	bitmapfont = {
+		name = "newsfronttitle_black16s"
+		fontfiles = {
+			"gfx/fonts/newsfronttitle_black16s"
+		}
+		color = 0xffffffff
+	
+		textcolors = {
+			#G = { 86 172 91 }
+		}
+		languages = { "l_simp_chinese" } 
+	}
+	bitmapfont = {
+		name = "newsfronttitle_black20s"
+		fontfiles = {
+			"gfx/fonts/newsfronttitle_black20s"
+		}
+		color = 0xffffffff
+	
+		textcolors = {
+			#G = { 86 172 91 }
+		}
+		languages = { "l_simp_chinese" } 
+	}
 }
