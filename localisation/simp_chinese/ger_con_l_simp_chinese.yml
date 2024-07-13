@@ -271,5 +271,7 @@
     sax_thu_investment:0 "投资图林根"
     aox_sax_diplomatic:0 "外交施压萨克森"
 
-    ger_Africa_decisons:0 "德意志殖民公司"
+    ger_Africa_decisons:0 "德意志殖民协会"
     ger_Africa_decisons_desc:0 ""
+    ger_afr_entry_text:0 "[THIS.GetNameWithFlag]的股份占比:[?THIS.ger_Africa_stock_var]%"
+    ger_afr_privice_stock_text:0 "私人投资者控股:[?THIS.ger_afr_privice_stock]%"

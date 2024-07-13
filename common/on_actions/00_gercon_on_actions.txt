@@ -1,9 +1,6 @@
 on_actions = {
 	on_startup= {
 		effect = {
-            AOX = { 
-                build_ger_con_seats = yes
-            }
             set_variable = {
                 global.new_ger_con_enable_qwq = 0
             }
@@ -26,6 +23,10 @@ on_actions = {
             set_variable = { DMW.ger_Africa_stock_var = 8 }
             every_country = {
                 ger_afr_stock_work_gui_vars = yes
+            }
+            AOX = {
+                ger_afr_clmap_array = yes
+                build_ger_con_seats = yes
             }
             set_variable = { global.ger_con_president_authority = 3 }
             set_variable = { global.ger_con_now_motion_id = 0 }

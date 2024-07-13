@@ -55,6 +55,20 @@ guiTypes = {
 		}
 	}
 	containerWindowType = {
+		name = "ger_afr_entry"
+		size = { width = 500  height = 20 }
+		clipping = yes
+		instantTextboxType = {
+			name = "ger_afr_entry_text"
+			position = { x = 5 y = 2 }
+			font = "hoi_16mbs"
+			text = "ger_afr_entry_text"
+			maxWidth = 500
+			maxHeight = 20
+			fixedsize = yes
+		}
+	}
+	containerWindowType = {
 		name = "ger_con_decisons_ui_window"
 		position = { x = 0 y = 0 }
 		size = { width = 510 height= 350 }
@@ -268,97 +282,114 @@ guiTypes = {
 		iconType = {
 			name = "ger_Africa_stock_privice_icon"
 			spriteType = "GFX_ger_Africa_stock_privice"
-			position = { x = 80 y = 63 }
+			position = { x = 10 y = 63 }
 		}
 		iconType = {
 			name = "ger_Africa_stock_HOS_icon"
 			spriteType = "GFX_ger_Africa_stock_HOS"
-			position = { x = 80 y = 63 }
+			position = { x = 10 y = 63 }
 		}
 		iconType = {
 			name = "ger_Africa_stock_SHL_icon"
 			spriteType = "GFX_ger_Africa_stock_SHL"
-			position = { x = 80 y = 63 }
+			position = { x = 10 y = 63 }
 		}
 		iconType = {
 			name = "ger_Africa_stock_DMW_icon"
 			spriteType = "GFX_ger_Africa_stock_DMW"
-			position = { x = 80 y = 63 }
+			position = { x = 10 y = 63 }
 		}
 		iconType = {
 			name = "ger_Africa_stock_thuringen_icon"
 			spriteType = "GFX_ger_Africa_stock_thuringen"
-			position = { x = 80 y = 63 }
+			position = { x = 10 y = 63 }
 		}
 		iconType = {
 			name = "ger_Africa_stock_DOS_icon"
 			spriteType = "GFX_ger_Africa_stock_DOS"
-			position = { x = 80 y = 63 }
+			position = { x = 10 y = 63 }
 		}
 		iconType = {
 			name = "ger_Africa_stock_DOM_icon"
 			spriteType = "GFX_ger_Africa_stock_DOM"
-			position = { x = 80 y = 63 }
+			position = { x = 10 y = 63 }
 		}
 		iconType = {
 			name = "ger_Africa_stock_DOA_icon"
 			spriteType = "GFX_ger_Africa_stock_DOA"
-			position = { x = 80 y = 63 }
+			position = { x = 10 y = 63 }
 		}
 		iconType = {
 			name = "ger_Africa_stock_DOH_icon"
 			spriteType = "GFX_ger_Africa_stock_DOH"
-			position = { x = 80 y = 63 }
+			position = { x = 10 y = 63 }
 		}
 		iconType = {
 			name = "ger_Africa_stock_DOL_icon"
 			spriteType = "GFX_ger_Africa_stock_DOL"
-			position = { x = 80 y = 63 }
+			position = { x = 10 y = 63 }
 		}
 		iconType = {
 			name = "ger_Africa_stock_DOR_icon"
 			spriteType = "GFX_ger_Africa_stock_DOR"
-			position = { x = 80 y = 63 }
+			position = { x = 10 y = 63 }
 		}
 		iconType = {
 			name = "ger_Africa_stock_DOB_icon"
 			spriteType = "GFX_ger_Africa_stock_DOB"
-			position = { x = 80 y = 63 }
+			position = { x = 10 y = 63 }
 		}
 		iconType = {
 			name = "ger_Africa_stock_DOF_icon"
 			spriteType = "GFX_ger_Africa_stock_DOF"
-			position = { x = 80 y = 63 }
+			position = { x = 10 y = 63 }
 		}
 		iconType = {
 			name = "ger_Africa_stock_DON_icon"
 			spriteType = "GFX_ger_Africa_stock_DON"
-			position = { x = 80 y = 63 }
+			position = { x = 10 y = 63 }
 		}
 		iconType = {
 			name = "ger_Africa_stock_DHD_icon"
 			spriteType = "GFX_ger_Africa_stock_DHD"
-			position = { x = 80 y = 63 }
+			position = { x = 10 y = 63 }
 		}
 		iconType = {
 			name = "ger_Africa_stock_LSB_icon"
 			spriteType = "GFX_ger_Africa_stock_LSB"
-			position = { x = 80 y = 63 }
+			position = { x = 10 y = 63 }
 		}
 		iconType = {
 			name = "ger_Africa_stock_AGC_icon"
 			spriteType = "GFX_ger_Africa_stock_AGC"
-			position = { x = 80 y = 63 }
+			position = { x = 10 y = 63 }
 		}
 		iconType = {
 			name = "ger_Africa_stock_WWS_icon"
 			spriteType = "GFX_ger_Africa_stock_WWS"
-			position = { x = 80 y = 63 }
+			position = { x = 10 y = 63 }
 		}
 		iconType = {
 			name = "ger_Africa_stock_AOX_icon"
 			spriteType = "GFX_ger_Africa_stock_AOX"
-			position = { x = 80 y = 63 }
+			position = { x = 10 y = 63 }
+		}
+		instantTextboxType = {
+			name = "ger_afr_privice_stocks"
+			position = { x = 262 y = 30 }
+			font = "hoi_16mbs"
+			text = "ger_afr_privice_stock_text"
+			maxWidth = 500
+			maxHeight = 20
+			fixedsize = yes
+		}
+		gridboxtype = {
+			name = "ger_Afr_grid"
+			position = { x = 240 y = 50 }
+			size = { width = 510 height= 350 }
+			slotsize = { width = 500  height = 20 }
+			max_slot_horizontal = 1
+			add_horizontal = no
 		}
 	}
 }
