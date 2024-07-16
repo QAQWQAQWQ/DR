@@ -444,6 +444,13 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_light_icon"
+		texturefile = "gfx\\interface\\light_icon.dds"
+	}
+
+
+
+	spriteType = {
 		name = "GFX_icon_exiled_governments"
 		texturefile = "gfx/interface/icon_exiled_governments.dds"
 	}

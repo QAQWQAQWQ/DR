@@ -51,9 +51,7 @@ bitmapfonts = {
 		name = "loadscreen_tip"
 #		path = "gfx/fonts/hoi_24header"
 		fontfiles = { 
-			"gfx/fonts/hoi_24header"		
-#			"gfx/fonts/hoi_20bs"
-#			"gfx/fonts/hoi_20bs_cryllic"
+			"gfx/fonts/newsfronttitle_33s"
 		}		
 		cursor_offset = { 0 4 }
 		color = 0xffffffff
@@ -71,8 +69,7 @@ bitmapfonts = {
 	bitmapfont_override = {
 		name = "loadscreen_tip"
 		fontfiles = { 
-			"gfx/fonts/hoi_20bs"
-			"gfx/fonts/hoi_20bs_cryllic"
+			"gfx/fonts/newsfronttitle_33s"
 		}
 		languages = { "l_russian" "l_polish" } 
 	}
@@ -80,7 +77,7 @@ bitmapfonts = {
 	bitmapfont_override = {
 		name = "loadscreen_tip"
 		fontfiles = {
-			"gfx/fonts/japanese/hoi_24header"
+			"gfx/fonts/newsfronttitle_33s"
 		}
 		languages = { "l_japanese" }
 	}
@@ -88,10 +85,7 @@ bitmapfonts = {
 	bitmapfont_override = {
 		name = "loadscreen_tip"
 		fontfiles = {
-			"gfx/fonts/chinese/hoi_24header_1of4"
-			"gfx/fonts/chinese/hoi_24header_2of4"
-			"gfx/fonts/chinese/hoi_24header_3of4"
-			"gfx/fonts/chinese/hoi_24header_4of4"
+			"gfx/fonts/newsfronttitle_33s"
 		}
 		languages = { "l_simp_chinese" }
 	}

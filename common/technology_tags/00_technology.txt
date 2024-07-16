@@ -15,6 +15,7 @@ technology_categories = {
 	naval_air
 	infantry_weapons
 	motorized_equipment
+	machine_equipment
 	cat_mechanized_equipment
 	naval_equipment
 	rocketry
@@ -108,7 +109,11 @@ technology_categories = {
 	cat_mountaineers_doctrine
 	cat_marines_doctrine
 	cat_paratroopers_doctrine
-
+	Stormtroopers_tech
+	Flame_Troops_tech
+	Free_sniper_tech
+	Hot_air_balloon_tech
+	
 	mio_cat_tech_all_armor_and_modules #Includes modules and chassis (DOES NOT INCLUDE ARMORED CARS)
 	mio_cat_tech_light_armor_and_modules #Includes modules and stand-alone Amphibious Chassis
 	mio_cat_tech_medium_armor_and_modules #Includes modules and Modern Tank
@@ -154,30 +159,32 @@ technology_folders = {
 		ledger = army
 	}
 	air_techs_folder = {
-		#available = { NOT = { has_dlc = "By Blood Alone" } }
+		available = { NOT = { has_dlc = "By Blood Alone" } }
 		ledger = air
 	}
 	bba_air_techs_folder = {
 		available = {
-			always = no
+			has_dlc = "By Blood Alone"
 		}
 		ledger = air
 	}
 	naval_folder = {
 		available = {
-			not = { has_dlc = "Man the Guns" }
+			#not = { has_dlc = "Man the Guns" }
+			always = no
 		}
 		ledger = navy
 	}
 	mtgnavalfolder = {
-		available = {
-			has_dlc = "Man the Guns"
-		}
+		#available = {
+			#has_dlc = "Man the Guns"
+		#}
 		ledger = navy
 	}
 	mtgnavalsupportfolder = {
 		available = {
-			has_dlc = "Man the Guns"
+			#has_dlc = "Man the Guns"
+			always = no
 		}
 		ledger = navy
 	}

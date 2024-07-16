@@ -9,6 +9,19 @@
    ##    ##     ## ##    ## ##    ##     ######   ##     ##  #######   #######  ##         ######  
 
 
+   
+mio_cat_eq_all_wheeled = { 
+   equipment_type = {
+		wheeled_chassis
+   }	
+}
+
+mio_cat_eq_all_super_light_tank = { 
+   equipment_type = {
+	   super_light_tank_chassis
+   }	
+}
+
 mio_cat_eq_all_light_tank = { #Includes (standalone) Amphibious Tank Chassis
 	equipment_type = {
 		light_tank_chassis
@@ -32,6 +45,8 @@ mio_cat_eq_all_heavy_tank = { #Includes Super Heavy Tank Chassis
 
 mio_cat_eq_all_tank_destroyers = { #Includes Super Heavy Tank Chassis
 	equipment_type = {
+		wheeled_destroyer_chassis
+		super_light_tank_destroyer_chassis
 		light_tank_destroyer_chassis 
 		medium_tank_destroyer_chassis
 		heavy_tank_destroyer_chassis
