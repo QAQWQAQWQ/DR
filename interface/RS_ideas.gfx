@@ -1,5 +1,28 @@
 spriteTypes = {
-
+    spriteType = {
+	    name = "GFX_idea_TEQ_humiliation_icon"
+	    texturefile = "gfx/interface/ideas/TEQ/humiliation.dds"
+    }
+	spriteType = {
+	    name = "GFX_idea_TEQ_paralysed_industry"
+	    texturefile = "gfx/interface/ideas/TEQ/paralysed_industry.dds"
+    }
+	spriteType = {
+	    name = "GFX_idea_TEQ_religious_conflict"
+	    texturefile = "gfx/interface/ideas/TEQ/religious_conflict.dds"
+    }
+	spriteType = {
+	    name = "GFX_idea_Taisho_period"
+	    texturefile = "gfx/interface/ideas/JPN/Taisho_period.dds"
+    }
+	spriteType = {
+	    name = "GFX_idea_noninterference"
+	    texturefile = "gfx/interface/ideas/JPN/noninterference.dds"
+    }
+	spriteType = {
+		name = "GFX_idea_estrangement"
+		texturefile = "gfx/interface/ideas/JPN/estrangement.dds"
+	}
 	spriteType = {
 		name = "GFX_idea_Blind_Allowance_Act"
 		texturefile = "gfx\interface\ideas\ENL/Blind_Allowance_Act.dds"
@@ -914,10 +937,7 @@ spriteTypes = {
 		name = "GFX_idea_gifted_people"
 		texturefile = "gfx/interface/ideas/gifted_people.dds"
 	}
-	spriteType = {
-		name = "GFX_idea_estrangement"
-		texturefile = "gfx/interface/ideas/estrangement.dds"
-	}
+	
 	
 	spriteType = {
 		name = "GFX_idea_Seienji_Konobu"

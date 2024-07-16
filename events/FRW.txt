@@ -563,6 +563,9 @@ country_event = {
 		}
 	option = {
 		name = FRW.17.a
+		add_to_variable = {
+			parliament_seat_array^2 = 5
+		}
 		add_popularity = {
 			ideology = Reformism
 			popularity = 0.03
@@ -570,6 +573,9 @@ country_event = {
 		}
 	option = {
 		name = FRW.17.b
+		add_to_variable = {
+			parliament_seat_array^0 = 5
+		}
 		add_popularity = {
 			ideology = Revolutionism
 			popularity = 0.03
@@ -578,6 +584,9 @@ country_event = {
 			}
 	option = {
 	    name = FRW.17.c
+		add_to_variable = {
+			parliament_seat_array^5 = 5
+		}
 		add_popularity = {
 			ideology = Anarchism
 			popularity = 0.03
@@ -876,6 +885,26 @@ country_event = {
 	}
 	option = {
 		name = FRW.35.a
+		trigger = {
+			AND={
+			check_variable = {
+					parliament_seat_array^3 > parliament_seat_array^1
+			}
+			check_variable = {
+					parliament_seat_array^3 > parliament_seat_array^2
+			}
+			check_variable = {
+					parliament_seat_array^3 > parliament_seat_array^4
+			}
+			check_variable = {
+					parliament_seat_array^3 > parliament_seat_array^5
+			}
+			check_variable = {
+					parliament_seat_array^3 > parliament_seat_array^6
+			}
+			}
+			
+		}
 		set_politics = {
 			ruling_party = Liberalism
 		}
@@ -886,11 +915,31 @@ country_event = {
 			Anarchism=5
 		}
 		ROOT={
-			#mark_focus_tree_layout_dirty = yes
+			mark_focus_tree_layout_dirty = yes
 		}
 		}
 	option = {
 		name = FRW.35.b
+		trigger = {
+			AND={
+			check_variable = {
+					parliament_seat_array^2 > parliament_seat_array^1
+			}
+			check_variable = {
+					parliament_seat_array^2 > parliament_seat_array^3
+			}
+			check_variable = {
+					parliament_seat_array^2 > parliament_seat_array^4
+			}
+			check_variable = {
+					parliament_seat_array^2 > parliament_seat_array^5
+			}
+			check_variable = {
+					parliament_seat_array^2 > parliament_seat_array^6
+			}
+			}
+			
+		}
 		add_country_leader_role = {
 			character = FRW_Leon_Blum
 			promote_leader = yes
@@ -911,12 +960,32 @@ country_event = {
 			Anarchism=5
 		}
 		ROOT={
-			#mark_focus_tree_layout_dirty = yes
+			mark_focus_tree_layout_dirty = yes
 		}
 		
 		}
 	option = {
 		name = FRW.35.c
+		trigger = {
+			AND={
+			check_variable = {
+					parliament_seat_array^4 > parliament_seat_array^1
+			}
+			check_variable = {
+					parliament_seat_array^4 > parliament_seat_array^2
+			}
+			check_variable = {
+					parliament_seat_array^4 > parliament_seat_array^3
+			}
+			check_variable = {
+					parliament_seat_array^4 > parliament_seat_array^5
+			}
+			check_variable = {
+					parliament_seat_array^4 > parliament_seat_array^6
+			}
+			}
+			
+		}
 		set_politics = {
 			ruling_party = Revolutionism
 		}
@@ -927,7 +996,7 @@ country_event = {
 			Anarchism=5
 		}
 		ROOT={
-			#mark_focus_tree_layout_dirty = yes
+			mark_focus_tree_layout_dirty = yes
 		}
 		}	
 	option = {
@@ -945,7 +1014,7 @@ country_event = {
 			Revolutionism=5
 		}
 		ROOT={
-			#mark_focus_tree_layout_dirty = yes
+			mark_focus_tree_layout_dirty = yes
 		}
 		
 		}

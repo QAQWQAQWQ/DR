@@ -30,7 +30,11 @@ news_event = {
     hidden = yes
 	fire_only_once = yes
    trigger = {
-	date = 1920.1.8
+	AND={
+		date > 1920.9.15
+		date < 1920.9.17
+	}
+	
     }
    immediate = {
 	news_event = WorldNew.2
@@ -108,7 +112,7 @@ country_event = {
 			name = Hidden_News.5.a
 	}		
 }
-news_event = {
+country_event = {
 	id = Hidden_News.9
     hidden = yes
 
@@ -128,6 +132,7 @@ news_event = {
 		name = Hidden_News.9.a
 	}		
 }
+
 #######
 #######
 #######
@@ -155,15 +160,15 @@ news_event = {
 	title = WorldNew.2.t
 	desc = WorldNew.2.d
 
-	picture = GFX_Churchill
+	picture = GFX_WorldNew_2
 
 	major = yes
 
 	is_triggered_only = yes
 
 	option = {
-			name = WorldNew.2.a
-		}		
+		name = WorldNew.2.a
+	}		
 }
 news_event = {
 	id = WorldNew.3

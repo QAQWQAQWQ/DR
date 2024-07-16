@@ -1,0 +1,28 @@
+ideas = {
+    country = {
+		TEQ_humiliation = {
+			picture = TEQ_humiliation_icon
+			modifier = {
+				party_popularity_stability_factor=-0.3
+				stability_factor=-0.1
+				war_support_factor=0.25
+			}
+        }
+		TEQ_paralysed_industry = {
+			picture = TEQ_paralysed_industry
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				civilian_factory_use = 5
+				custom_modifier_tooltip = TEQ_paralysed_industry_tooltip
+			}
+        }
+		TEQ_religious_conflict = {
+			picture = TEQ_religious_conflict
+			modifier = {
+				resistance_activity = 0.1
+				required_garrison_factor = 0.1
+			}
+        }
+		
+		}
+}

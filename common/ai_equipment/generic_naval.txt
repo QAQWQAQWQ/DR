@@ -233,9 +233,6 @@ generic_escorts = {
 				anti_submarine_strategy_required_trigger = yes
 			}
 		}
-		enable = {
-			has_tech = basic_depth_charges
-		}
 		role_icon_index = 2
 		
 		target_variant = {
@@ -712,7 +709,6 @@ naval_capital_battleship = {
 		priority = {
 			factor = 100
 			modifier = {
-				has_tech = basic_ship_hull_heavy
 				factor = 0
 			}
 		}
@@ -795,7 +791,6 @@ naval_capital_battleship = {
 			factor = 100
 			modifier = {
 				factor = 0
-				has_tech = improved_ship_hull_heavy
 			}
 		}
 
@@ -874,7 +869,6 @@ naval_capital_battleship = {
 			factor = 100
 			modifier = {
 				factor = 0
-				has_tech = advanced_ship_hull_heavy
 			}
 		}
 
@@ -1451,7 +1445,6 @@ naval_mine_sweeper = {
 				is_major = no
 			}
 		}
-		enable = { has_tech = basic_naval_mines }
 		role_icon_index = 5
 		
 		target_variant = {
@@ -1491,8 +1484,6 @@ naval_mine_sweeper = {
 		}
 
 		enable = {
-			has_tech = dp_secondary_battery
-			has_tech = improved_naval_mines
 		}
 		
 		role_icon_index = 5

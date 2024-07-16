@@ -4,24 +4,31 @@ ideas = {
 
 
     country = {
-		JPN_Restoration = {
-			picture = Restoration
-			modifier = {
-				production_speed_industrial_complex_factor = 0.1
-                production_speed_infrastructure_factor = 0.1
-                industry_repair_factor = 0.2
-				consumer_goods_factor = -0.20
-				production_speed_buildings_factor = 0.25
-				industrial_capacity_factory = 0.25
-            }
 		
-		}
 		JPN_estrangement = {
 			picture = estrangement
 			modifier = {
 				planning_speed = -0.15
             }
-		
+		}
+
+
+		JPN_Taisho_period = {
+			picture = Taisho_period
+			modifier = {
+				Liberalism_drift = 0.03
+				stability_factor = 0.1
+				war_support_factor = -0.1
+            }
+		}
+
+		JPN_noninterference = {
+			picture = noninterference
+			modifier = {
+				ai_badass_factor=-0.25
+				ai_focus_military_advancements_factor=-0.5
+				ai_focus_peaceful_factor=0.5
+            }
 		}
 	}
 }
