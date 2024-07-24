@@ -1,4 +1,17 @@
+technology_sharing_group = {
 
+	id = Saint_Simon_research
+	name = Saint_Simon_name
+	desc = Saint_Simon_desc
+	picture = GFX_Saint_Simon_research
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        is_in_faction_with = FRW
+    }
+
+}
  technology_sharing_group = {
 
 	id = commonwealth_research

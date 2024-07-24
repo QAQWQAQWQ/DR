@@ -427,10 +427,13 @@ spriteTypes = {
 		name = "GFX_ENL_The_Irish_crisis_7"
 		texturefile = "gfx/event/IRL/ENL_The_Irish_crisis_7.dds"
 	}
-	
 	spriteType = {
 		name = "GFX_WWI"
 		texturefile = "gfx/event/NEWS/WWI.tga"
+	}
+	spriteType = {
+		name = "GFX_ger_con_5"
+		texturefile = "gfx/event/ger_con/ger_con_5.dds"
 	}
 	spriteType = {
 		name = "GFX_WorldNew_2"
@@ -513,6 +516,11 @@ spriteTypes = {
 		name = "GFX_fall_of_Washington"
 		texturefile = "gfx/event/occupied/fall_of_Washington.tga"
 	}
+	spriteType = {
+		name = "GFX_fall_of_Vienna"
+		texturefile = "gfx/event/occupied/fall_of_Vienna.tga"
+	}
+	
 	spriteType = {
 		name = "GFX_FUM"
 		texturefile = "gfx/event/ITE/FUM.tga"

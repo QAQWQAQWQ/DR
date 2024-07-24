@@ -1,0 +1,61 @@
+###11111
+parliament1_add_5 = {
+	set_temp_variable = { temp_member = 1 }
+	set_temp_variable = { temp_seats = 5 }
+	modify_parliament_seat = yes
+	
+}
+parliament1_del_15 = {
+	set_temp_variable = { temp_member = 1 }
+	set_temp_variable = { temp_seats = -15 }
+	modify_parliament_seat = yes
+	
+}
+
+###1111
+parliament2_add_5 = {
+    set_temp_variable = { temp_member = 2 }
+	set_temp_variable = { temp_seats = 5 }
+	modify_parliament_seat = yes
+    
+}
+###3333
+
+parliament3_add_5 = {
+    set_temp_variable = { temp_member = 3 }
+	set_temp_variable = { temp_seats = 5 }
+	modify_parliament_seat = yes
+	
+}
+parliament3_add_20 = {
+    set_temp_variable = { temp_member = 3 }
+	set_temp_variable = { temp_seats = 20 }
+	modify_parliament_seat = yes
+	
+}
+parliament3_del_15 = {
+	set_temp_variable = { temp_member = 1 }
+	set_temp_variable = { temp_seats = -15 }
+	modify_parliament_seat = yes
+	
+}
+
+###3333
+parliament4_add_5 = {
+    set_temp_variable = { temp_member = 4 }
+	set_temp_variable = { temp_seats = 5 }
+	modify_parliament_seat = yes
+	
+}
+parliament5_add_5 = {
+    set_temp_variable = { temp_member = 5 }
+	set_temp_variable = { temp_seats = 5 }
+	modify_parliament_seat = yes
+	
+}
+parliament5_add_5 = {
+    set_temp_variable = { temp_member = 6 }
+	set_temp_variable = { temp_seats = 5 }
+	modify_parliament_seat = yes
+	
+}

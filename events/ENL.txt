@@ -120,6 +120,24 @@ country_event = {
 		
 	}		
 }
+country_event = {
+	id = ENL.6
+	title = ENL.6.t
+	desc = ENL.6.d
+
+	picture = GFX_White_Stadium
+
+	is_triggered_only = yes
+
+	option = {
+		name = ENL.6.a
+		country_event = {id=FRW.15 days=2}
+	}	
+	option = {
+		name = ENL.6.a
+		country_event = {id=FRW.14 days=2}
+	}	
+}
 news_event = {
 	id = ENL_election.1
 	title = ENL_election.1.t

@@ -1,3 +1,141 @@
+###end
+defined_text = {
+	name = PartyNO_1
+	text = {
+		trigger = {
+			AND={
+				    check_variable = { parliament_seat_array^0 > parliament_seat_array^1 }
+					check_variable = { parliament_seat_array^0 > parliament_seat_array^2 }
+					check_variable = { parliament_seat_array^0 > parliament_seat_array^3 }
+					check_variable = { parliament_seat_array^0 > parliament_seat_array^4 }
+					check_variable = { parliament_seat_array^0 > parliament_seat_array^5 }
+			}
+		}
+		localization_key = "winPartyNO_1"
+	}
+	text = {
+		trigger = {
+			OR={
+					check_variable = { parliament_seat_array^0 < parliament_seat_array^1 }
+					check_variable = { parliament_seat_array^0 < parliament_seat_array^2 }
+					check_variable = { parliament_seat_array^0 < parliament_seat_array^3 }
+					check_variable = { parliament_seat_array^0 < parliament_seat_array^4 }
+					check_variable = { parliament_seat_array^0 < parliament_seat_array^5 }
+			}
+		}
+		localization_key = "losePartyNO_1"
+	}
+}
+defined_text = {
+	name = PartyNO_2
+	text = {
+		trigger = {
+			AND={
+				    check_variable = { parliament_seat_array^1 > parliament_seat_array^0 }
+					check_variable = { parliament_seat_array^1 > parliament_seat_array^2 }
+					check_variable = { parliament_seat_array^1 > parliament_seat_array^3 }
+					check_variable = { parliament_seat_array^1 > parliament_seat_array^4 }
+					check_variable = { parliament_seat_array^1 > parliament_seat_array^5 }
+			}
+		}
+		localization_key = "winPartyNO_1"
+	}
+	text = {
+		trigger = {
+			OR={
+					check_variable = { parliament_seat_array^1 < parliament_seat_array^1 }
+					check_variable = { parliament_seat_array^1 < parliament_seat_array^2 }
+					check_variable = { parliament_seat_array^1 < parliament_seat_array^3 }
+					check_variable = { parliament_seat_array^1 < parliament_seat_array^4 }
+					check_variable = { parliament_seat_array^1 < parliament_seat_array^5 }
+			}
+		}
+		localization_key = "losePartyNO_1"
+	}
+}
+
+defined_text = {
+	name = PartyNO_3
+	text = {
+		trigger = {
+			AND={
+				    check_variable = { parliament_seat_array^2 > parliament_seat_array^0 }
+					check_variable = { parliament_seat_array^2 > parliament_seat_array^1 }
+					check_variable = { parliament_seat_array^2 > parliament_seat_array^3 }
+					check_variable = { parliament_seat_array^2 > parliament_seat_array^4 }
+					check_variable = { parliament_seat_array^2 > parliament_seat_array^5 }
+			}
+		}
+		localization_key = "winPartyNO_1"
+	}
+	text = {
+		trigger = {
+			OR={
+					check_variable = { parliament_seat_array^2 < parliament_seat_array^0 }
+					check_variable = { parliament_seat_array^2 < parliament_seat_array^1 }
+					check_variable = { parliament_seat_array^2 < parliament_seat_array^3 }
+					check_variable = { parliament_seat_array^2 < parliament_seat_array^4 }
+					check_variable = { parliament_seat_array^2 < parliament_seat_array^5 }
+			}
+		}
+		localization_key = "losePartyNO_1"
+	}
+}
+defined_text = {
+	name = PartyNO_4
+	text = {
+		trigger = {
+			AND={
+				    check_variable = { parliament_seat_array^3 > parliament_seat_array^0 }
+					check_variable = { parliament_seat_array^3 > parliament_seat_array^1 }
+					check_variable = { parliament_seat_array^3 > parliament_seat_array^2 }
+					check_variable = { parliament_seat_array^3 > parliament_seat_array^4 }
+					check_variable = { parliament_seat_array^3 > parliament_seat_array^5 }
+			}
+		}
+		localization_key = "winPartyNO_1"
+	}
+	text = {
+		trigger = {
+			OR={
+					check_variable = { parliament_seat_array^3 < parliament_seat_array^0 }
+					check_variable = { parliament_seat_array^3 < parliament_seat_array^1 }
+					check_variable = { parliament_seat_array^3 < parliament_seat_array^2 }
+					check_variable = { parliament_seat_array^3 < parliament_seat_array^4 }
+					check_variable = { parliament_seat_array^3 < parliament_seat_array^5 }
+			}
+		}
+		localization_key = "losePartyNO_1"
+	}
+}
+defined_text = {
+	name = PartyNO_5
+	text = {
+		trigger = {
+			AND={
+				    check_variable = { parliament_seat_array^4 > parliament_seat_array^0 }
+					check_variable = { parliament_seat_array^4 > parliament_seat_array^1 }
+					check_variable = { parliament_seat_array^4 > parliament_seat_array^2 }
+					check_variable = { parliament_seat_array^4 > parliament_seat_array^3 }
+					check_variable = { parliament_seat_array^4 > parliament_seat_array^5 }
+			}
+		}
+		localization_key = "winPartyNO_1"
+	}
+	text = {
+		trigger = {
+			OR={
+					check_variable = { parliament_seat_array^4 < parliament_seat_array^0 }
+					check_variable = { parliament_seat_array^4 < parliament_seat_array^1 }
+					check_variable = { parliament_seat_array^4 < parliament_seat_array^2 }
+					check_variable = { parliament_seat_array^4 < parliament_seat_array^3 }
+					check_variable = { parliament_seat_array^4 < parliament_seat_array^5 }
+			}
+		}
+		localization_key = "losePartyNO_1"
+	}
+}
+
 # Gets the loc to be displayed based on what the current v (value) of the element in the array is (the value corresponds to the party id set in the scripted effect).
 defined_text = {
 	name = GetParliamentPartyName

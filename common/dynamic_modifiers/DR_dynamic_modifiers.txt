@@ -1,3 +1,29 @@
+Se_International_dy = {
+	enable = { always = yes }
+	
+	Reformism_drift=0.01
+	Reformism_acceptance=20
+	propaganda_mission_factor=0.1 
+	ai_focus_peaceful_factor=0.1
+}
+
+Introduction_tractors_dy = {
+	enable = { always = yes }
+	
+	production_speed_grain_farms_factor=0.1
+}
+
+
+
+Spontaneous_army_dy = {
+	enable = { always = yes }
+	
+	training_time_army_factor=-0.2
+	army_core_attack_factor=0.1			
+    army_core_defence_factor=0.2
+	army_org_factor=0.1
+	army_morale_factor	=0.1
+}
 
 
 SBY_focus10_dy = {

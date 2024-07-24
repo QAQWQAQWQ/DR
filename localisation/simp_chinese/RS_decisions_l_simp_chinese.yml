@@ -3,16 +3,23 @@
 
 
 
-
+ 
 
 
  FRW_movement_election_title:0 "[FRW.getflag]目前法国大选形式：\n\n 支持可能派的选区有：[?FRW_Liberals_needle_VAR]\n\n 支持民主派的选区有：[?FRW_Reformism_needle_VAR] \n\n     支持布朗基派的选区有：[?FRW_Radicalism_needle_VAR]\n\n支持盖得派的选区有：[?FRW_Communist_needle_VAR]"
+
+
  FRW_election_movement:0 "法国大选"
- FRW_election_movement_desc:0"\n\n\n\n\n\n\n\n五年一届的法国大选正式开始，我们可以通过提升相关意识形态支持度来加强党派在各地区投射的力量，以此征求更多的选票来支持主席的选举。\n"
+ FRW_election_movement_desc:0"\n\n\n\n\n\n\n\n五年一届的法国大选正式开始，我们可以通过提升相关意识形态支持度来加强党派在各地区投射的力量，以此征求更多的选票来支持执政党的选举。\n\n目前党派席位：\n\n§Y革命社会主义工人党§!:[?parliament_seat_array^0]个席位\n\n§Y社会主义工人联合会§!:[?parliament_seat_array^1]个席位\n\n§Y独立社会党联盟§![?parliament_seat_array^2]个席位\n\n§Y社会主义共和同盟§!:[?parliament_seat_array^3]个席位\n\n§Y革命布朗基派§!:[?parliament_seat_array^4]个席位\n\n§Y无党派（独立人士）§!:[?parliament_seat_array^5]个席位\n\n预计大选结果：\n§Y革命社会主义工人党§!   [PartyNO_1]\n§Y社会主义工人联合会§!   [PartyNO_2]\n§Y独立社会党联盟§!   [PartyNO_3]\n§Y革命布朗基派§!   [PartyNO_4]\n§Y无党派（独立人士）§!   [PartyNO_5]"
+ FRW_election_movement1:0 "选举倒计时"
 
+ FRW_election_movement2:0 "与自由派辩论"
+ FRW_election_movement3:0 "诋毁自由派"
+ FRW_election_movement4:0 "拉拢自由派官员"
 
-
-
+ FRW_election_movement5:0 "与革命派辩论"
+ FRW_election_movement6:0 "诋毁革命派"
+ FRW_election_movement7:0 "拉拢革命派官员"
 
  Ideologically_promoted:0 "鼓吹意识形态"
  Ideologically_promoted_desc:0"任何一种极端的意识形态会严重影响我们的国家，只有我们将自己优秀的一面展示给民众才能缓解问题。"

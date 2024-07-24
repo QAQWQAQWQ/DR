@@ -50,9 +50,6 @@ set_convoys = 300
 
 country_event = { id = FRW.1 days = 10 }
 country_event = { id = FRW.17 days = 35 }
-country_event = { id = FRW.45 days = 125 }
-country_event = { id = FRW.35 days = 411 }
-country_event = { id = FRW.36 days = 375 }
 
 country_event = { id = Assembly_Tours.1 days = 200 }
 
@@ -70,7 +67,8 @@ set_popularities = {
 
 set_country_flag = parliament_mian_button_yes
 
-
+recruit_character = FRW_Lucien_Herr
+recruit_character = FRW_Emile_Driant
 recruit_character = FRW_Alexandre_Millerand
 recruit_character = FRW_Louis_Loucheur
 recruit_character = FRW_Andre_Marty

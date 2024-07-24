@@ -17,28 +17,28 @@ guiTypes = {
 
 		background = {
 			name = "background"
-			quadTextureSprite = "GFX_bookmark_entry_bg"
+			#quadTextureSprite = "GFX_bookmark_entry_bg"
 			clicksound = click_checkbox
 		}
 
 		iconType = {
 			name = "icon"
 			spriteType = "GFX_select_date_1936"
-			position = { x = 27 y = 28 }
+			position = { x = -165 y = -12 }
 			alwaystransparent = yes
 		}
 
-		instantTextBoxType = {
-			name = "date"
-			position = { x = 22 y = 147 }
-			font = "hoi_20b"
-			borderSize = {x = 0 y = 0}
-			text = "FE_BOOKMARK_DATE"
-			maxWidth = 185
-			maxHeight = 20
-			fixedsize = yes	
-			format = centre
-		}
+		#instantTextBoxType = {
+		#	name = "date"
+		#	position = { x = 22 y = 147 }
+		#	font = "hoi_20b"
+		#	borderSize = {x = 0 y = 0}
+		#	text = "FE_BOOKMARK_DATE"
+		#	maxWidth = 185
+		#	maxHeight = 20
+		#	fixedsize = yes	
+		#	format = centre
+		#}
 	}
 	
 	containerWindowType = {
@@ -516,9 +516,9 @@ position = { x = 0 y = -72 }
 
 		instantTextBoxType = {
 			name = "title"
-			position = { x = 120 y = 14 }
+			position = { x = 120 y = 20 }
 			textureFile = ""
-			font = "hoi_20b"
+			font = "newsfronttitle_black20s"
 			borderSize = {x = 0 y = 0}
 			text = "FE_SELECT_SCENARIO"
 			maxWidth = 340
@@ -549,8 +549,8 @@ position = { x = 0 y = -72 }
 
 		instantTextBoxType = {
 			name = "history_title"
-			position = { x = 121 y = 274 }
-			font = "hoi_20b"
+			position = { x = 121 y = 273 }
+			font = "newsfronttitle_black20s"
 			borderSize = {x = 0 y = 0}
 			text = "BM_HISTORY_TITLE"
 			maxWidth = 340
@@ -560,8 +560,8 @@ position = { x = 0 y = -72 }
 
 		instantTextBoxType = {
 			name = "bookmark_title"
-			position = { x = 25 y = 305 }
-			font = "hoi4_typewriter22"
+			position = { x = 25 y = 300 }
+			font = "newsfronttitle_black20s"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 340
 			maxHeight = 30
@@ -570,8 +570,8 @@ position = { x = 0 y = -72 }
 
 		instantTextBoxType = {
 			name = "bookmark_desc"
-			position = { x = 25 y = 330 }
-			font = "hoi4_typewriter16"
+			position = { x = 25 y = 320 }
+			font = "newsfronttitle_black20s"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 540
 			maxHeight = 30

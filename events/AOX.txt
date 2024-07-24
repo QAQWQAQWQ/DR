@@ -5,6 +5,34 @@
 add_namespace = AOX
 add_namespace = AOX_DIE
 
+
+country_event = {
+	id =AOX.1
+	title =AOX.1.t
+	desc =AOX.1.d
+	picture = GFX_AOX_1
+
+	trigger={
+			AOX={
+				is_faction_leader = yes
+			}
+	}
+    is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name =AOX.1.a
+		FRW={
+			country_event = {id=FRW.47 days=2}
+		}
+	}
+	option = {
+		name =AOX.1.b
+		FRW={
+			#country_event = {id=FRW.47 days=2}
+		}
+	}
+}
 news_event = {
 	id = AOX_DIE.1
 	title = AOX_DIE.1.t
@@ -28,4 +56,4 @@ news_event = {
 	
 		set_global_flag = AOX_DIE
 	}
-	}
+}

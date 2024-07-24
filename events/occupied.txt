@@ -121,6 +121,32 @@ news_event = {
 }
 
 
+news_event = {
+	id = occupied.5
+	title = occupied.5.t
+	desc = occupied.5.d
 
+	picture = GFX_fall_of_Vienna
+
+	major = yes
+
+	trigger = {
+			AOX={ 
+				has_war = yes
+				NOT = {
+					has_global_flag = fall_of_Vienna
+					controls_state = 4
+				}
+			}
+	}
+
+	immediate = {
+		set_global_flag = fall_of_Vienna
+	}
+	
+	option = {
+		name = occupied.4.a
+	}		
+}
 
 

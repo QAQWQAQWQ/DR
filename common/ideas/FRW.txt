@@ -1,6 +1,19 @@
 ideas = {
     country = {
 		####HIDDEN
+		Se_International_hidden= {
+			picture = Eagle_spirit
+			visible = {
+				always=no
+			}
+			modifier = {
+				Reformism_drift=0.01
+	            Reformism_acceptance=0.1
+	            propaganda_mission_factor=0.1
+	            ai_focus_peaceful_factor=0.1
+			}
+        }
+
 		FRW_Eagle_spirit= {
 			picture = Eagle_spirit
 			modifier = {

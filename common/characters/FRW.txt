@@ -767,10 +767,35 @@ characters={
 			
 	}
 
+ 
 
-
-
-
+	
+	FRW_Lucien_Herr={
+		name=FRW_Lucien_Herr
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_Lucien_Herr.dds"
+			}
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = FRW_Lucien_Herr_H
+			allowed = {
+				original_tag = FRW
+			}
+			available = {
+				is_country_leader = no
+			    is_political_advisor = no
+			  }
+			traits = {
+				head_of_government
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
 
 	
 	FRW_Edouard_Daladier={
@@ -1069,6 +1094,52 @@ characters={
 			}
 		}
 	}
+
+
+
+	FRW_Emile_Driant={
+		name=FRW_Emile_Driant
+		portraits={
+			army={
+				large="gfx/leaders/FRW/Portrait_Emile_Driant.tga"
+				small="gfx/interface/ideas/idea_Emile_Driant.dds"
+			}
+		}
+		advisor={	
+			slot = army_chief
+			idea_token = FRW_Emile_Driant_C
+			allowed = {
+				original_tag = FRW
+			}
+			available = {
+				has_completed_focus = FRW_focus_army2
+			}
+			traits = {
+				army_chief_reform_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general career_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+
+
+
+
+
+
+
+
 
 
 
