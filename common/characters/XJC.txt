@@ -1,4 +1,49 @@
 characters={
+	XJC_FengDaShu={
+		name=XJC_FengDaShu
+		portraits={
+			civilian={
+				large="gfx/leaders/XJC/portrait_FengDaShu.tga"
+			}
+		}
+		country_leader={
+			ideology=Conservative_Liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	XJC_FangYaoNan={
+		name=XJC_FangYaoNan
+		portraits={
+			civilian={
+				large="gfx/leaders/XJC/portrait_FangYaoNan.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	XJC_YangZangXu={
+		name=XJC_YangZangXu
+		portraits={
+			civilian={
+				large="gfx/leaders/XJC/portrait_YangZangXu.tga"
+			}
+		}
+		country_leader={
+			ideology=Nationalism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+
 	XJC_ShengShiCai={
 		name=XJC_ShengShiCai
 		portraits={

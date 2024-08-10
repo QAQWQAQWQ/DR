@@ -53,7 +53,8 @@ country_event = { id = FRW.17 days = 35 }
 
 country_event = { id = Assembly_Tours.1 days = 200 }
 
-set_politics = {
+
+set_politics = { 
 	ruling_party =  Reformism
 	last_election = "1921.1.1"
 	election_frequency = 48
@@ -61,12 +62,27 @@ set_politics = {
 }
 set_popularities = {
 	Anarchism = 10
-	Reformism = 65
-	Revolutionism= 25
+	Reformism = 52
+	Liberalism = 15
+	Revolutionism= 23
 }
 
-set_country_flag = parliament_mian_button_yes
 
+set_variable = {
+	Revolutionary_general_num=7
+}
+set_variable = {
+	Liberal_general_num=3
+}
+set_variable = {
+	Centrist_general_num=4
+}
+	
+	
+
+
+set_country_flag = parliament_mian_button_yes
+recruit_character = FRW_Georges_Catroux
 recruit_character = FRW_Lucien_Herr
 recruit_character = FRW_Emile_Driant
 recruit_character = FRW_Alexandre_Millerand

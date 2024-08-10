@@ -54,14 +54,18 @@ country_event = {
 	desc = FRW_Far_left.0.d
 	picture = GFX_Far_left_0
 	trigger = {
-		has_idea = FRW_Elway_Thought
+		check_variable = {
+			Revolutionary_general_num < 5
+			tooltip = Revolutionary_general_num
+		}
 		has_country_leader = {
 				character = FRW_Jean_Jaures
 				ruling_only = yes
 		}
 		has_country_flag = FRW_17_b_tt
 		has_country_flag = EVENT_FRW_5_a
-		Revolutionism > 0.75
+		has_country_flag = FRW_49_flag
+		Revolutionism > 0.5
 	}
 	fire_only_once = yes
 	option = {
@@ -82,7 +86,11 @@ country_event = {
 		}
 		country_event = {id=FRW_Far_left.1 days=10}
 		add_ideas = National_emergency
-	    }
+	}
+	option = {
+		name = FRW_Far_left.0.b
+
+	}
 }
 country_event = {
 	id = FRW_Far_left.1
@@ -95,8 +103,20 @@ country_event = {
 		name = FRW_Far_left.1.a
 		set_country_flag = FRW_Far_left_1
 		mark_focus_tree_layout_dirty = yes
+		promote_character = {
+			character = FRW_Gustave_Herve
+			ideology = Nationalism_revolutionism
+		}
+		set_politics = {
+			ruling_party = Revolutionism
+			long_name = FRW_Comite_communal_new_long
+			name = FRW_Comite_communal_party_new
+		}
+		set_popularities = {
+			Revolutionism = 100
+		}
 		#complete_national_focus = FRW_focus134
-	    }
+	}
 }
 country_event = {
 	id = FRW_Far_left.2
@@ -329,6 +349,7 @@ country_event = {
 		add_ideas = FRW_Lucien_Herr_H
 		add_ideas = FRW_LudovicOscar_Frossard_P
 		add_ideas = FRW_Paul_Faure_P
+		add_ideas = FRW_Marx_Dormoy_P
 		set_country_flag = LudovicOscar_Frossard_P
 		set_country_flag = Paul_Faure_P
 		}
@@ -366,8 +387,10 @@ country_event = {
 		name = FRW.6.a
 		hidden_effect = {
 			country_event = {id=FRW.7 days=5}
+			country_event = {id=FRW.49 days=2}
+			
 		}
-			}
+		}
 		option = {
 		name = FRW.6.b
 		hidden_effect = {
@@ -406,6 +429,7 @@ country_event = {
 			}
 		option = {
 		name = FRW.8.a
+		country_event = {id=FRW.9 days=10}
 			}
 	}
 country_event = {
@@ -418,8 +442,11 @@ country_event = {
 		trigger = {
 			}
 		option = {
-		name = FRW.9.a
+		    name = FRW.9.a
+			set_politics = {
+				ruling_party = Anarchism
 			}
+		}
 	}
 country_event = {
 		id = FRW.10
@@ -462,16 +489,91 @@ country_event = {
 		desc = FRW.12.d
 		picture = GFX_Georges_Valois
 		is_triggered_only = yes
-		fire_only_once = yes
-		trigger = {
-			}
+		fire_only_once = no
 		option = {
 		    name = FRW.12.a
+			if = {
+				random_army_leader = {
+					limit = { 
+						has_trait = Revolutionary_general
+				    }
+					remove_trait = {
+						trait = Revolutionary_general
+					}
+					add_trait = {
+						trait = Liberal_general
+					}
+				}
+				add_to_variable = {
+					Revolutionary_general_num = -1
+				}
+				add_to_variable = {
+					Liberal_general_num = 1
+				}
 			}
+		}
+
 		option = {
 			name = FRW.12.b
-			
-		    }
+			if = {
+				random_army_leader = {
+					limit = { 
+						has_trait = Liberal_general
+				    }
+					remove_trait = {
+						trait = Liberal_general
+					}
+					add_trait = {
+						trait = Revolutionary_general
+					}
+				}
+				add_to_variable = {
+					Revolutionary_general_num = 1
+				}
+				add_to_variable = {
+					Liberal_general_num = -1
+				}
+			}
+	  }
+
+		option = {
+			name = FRW.12.c
+			if = {
+				random_army_leader = {
+					limit = { 
+						has_trait = Revolutionary_general
+				    }
+					remove_trait = {
+						trait = Revolutionary_general
+					}
+				}
+				add_to_variable = {
+					Revolutionary_general_num = -1
+				}
+				add_to_variable = {
+					Centrist_general_num = 1
+				}
+			}
+		}
+		option = {
+			name = FRW.12.e
+			if = {
+				random_army_leader = {
+					limit = { 
+						has_trait = Liberal_general
+				    }
+					remove_trait = {
+						trait = Liberal_general
+					}
+				}
+				add_to_variable = {
+					Liberal_general_num = -1
+				}
+				add_to_variable = {
+					Centrist_general_num = 1
+				}
+			}
+		}
 }
 country_event = { 
 		id = FRW.13
@@ -559,7 +661,7 @@ country_event = {
 		}
 		add_popularity = {
 			ideology = Reformism
-			popularity = 0.03
+			popularity = 0.05
 		}
 		}
 	option = {
@@ -569,18 +671,18 @@ country_event = {
 		}
 		add_popularity = {
 			ideology = Revolutionism
-			popularity = 0.03
-		}
+			popularity = 0.05
+		} 
 		set_country_flag = FRW_17_b_tt
 			}
 	option = {
 	    name = FRW.17.c
 		add_to_variable = {
 			parliament_seat_array^5 = 5
-		}
+		} 
 		add_popularity = {
 			ideology = Anarchism
-			popularity = 0.03
+			popularity = 0.05
 		}
 		}			
 }
@@ -861,17 +963,19 @@ country_event = {
 		}
 	option = {
 		name = FRW.33.a
-		}	
+		set_country_flag = FRW_33_flag
+		unlock_decision_category_tooltip = FRW_Trade_unionist_propaganda
+	}	
 }
 country_event = {
 	id = FRW.34
 	title = FRW.34.t
 	desc = FRW.34.d
 	picture = GFX_FRW_31
-	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
 		threat > 0.3
-		}
+	}
 	option = {
 		name = FRW.34.a
 		}	
@@ -1257,5 +1361,26 @@ country_event = {
 		}
 	option = {
 		name = FRW.48.a
+	}
+}
+
+country_event = {
+	id = FRW.49
+	title = FRW.49.t
+	desc = FRW.49.d
+	picture = GFX_Eu_election
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.49.a
+		add_stability = -0.01
+		add_political_power = -5
+		set_country_flag =FRW_49_flag
+	}
+	option = {
+		name = FRW.49.b
+		add_stability = -0.03
+		add_political_power = -10
 	}
 }

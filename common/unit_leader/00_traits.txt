@@ -78,7 +78,61 @@ leader_traits = {
 		}
 		
 	}
-	
+	Radical_soldiers = { 
+		type = land
+		trait_type = personality_trait
+		
+		modifier = {
+			land_reinforce_rate = -0.01
+			breakthrough_factor= 0.03
+			army_speed_factor= 0.03
+		}
+		
+		non_shared_modifier = {
+			experience_gain_factor = 0.1
+		}
+
+		new_commander_weight = {
+			factor = 1
+
+		}
+		
+	}
+
+
+	Revolutionary_general = { 
+		type = land
+		trait_type = personality_trait
+		
+		modifier = {
+		}
+		
+		non_shared_modifier = {
+		}
+
+		new_commander_weight = {
+			factor = 1
+
+		}
+		
+	}
+
+	Liberal_general = { 
+		type = land
+		trait_type = personality_trait
+		
+		modifier = {
+		}
+		
+		non_shared_modifier = {
+		}
+
+		new_commander_weight = {
+			factor = 1
+
+		}
+		
+	}
 	
 	brilliant_strategist = { 
 		type = land

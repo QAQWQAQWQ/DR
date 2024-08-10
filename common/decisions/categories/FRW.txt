@@ -10,8 +10,6 @@ FRW_United_States_Europe = {
 	visible = {
 		has_completed_focus=FRW_focus140
 	}
-
-
 }   
 FRW_European_Federation = { 
 	icon = infiltration
@@ -29,7 +27,24 @@ FRW_European_Federation = {
  
 }      
  
-     
+ ###工团主义宣传
+ FRW_Trade_unionist_propaganda = {  
+	icon = infiltration  
+	
+	#picture = GFX_decisions_election_movement
+
+	priority = 9999
+	allowed = {
+		tag = FRW 
+	}
+	visible = {
+	    has_country_flag = FRW_33_flag
+	}
+	visible_when_empty = yes
+	scripted_gui = FRW_Trade_unionist_decision
+
+
+}    
    
     
   

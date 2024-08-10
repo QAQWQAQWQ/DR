@@ -1,4 +1,20 @@
 characters={
+	MEG_Bokda_Khan={
+		name=MEG_Bokda_Khan
+		portraits={
+			civilian={
+				large="gfx/leaders/MEG/portrait_Bokda_Khan.tga"
+			}
+		}
+		country_leader={
+			ideology=Religiousness_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+
 	MEG_Xu_ShuZheng={
 		name=MEG_Xu_ShuZheng
 		portraits={

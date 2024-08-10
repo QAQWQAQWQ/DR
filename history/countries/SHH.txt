@@ -11,7 +11,7 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-
+recruit_character = SHH_ChenQiMei
 recruit_character = SHH_Lu_Yong_Xiang
 recruit_character = SHH_HuZhongNan
 recruit_character = SHH_DaiLi
@@ -52,12 +52,12 @@ recruit_character = SHH_Zhou_EngLai
 	}
 
 set_politics = {
-	ruling_party = Revolutionism
+	ruling_party = Liberalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	Revolutionism = 100
+	Liberalism = 100
 }

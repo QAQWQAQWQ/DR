@@ -1,4 +1,18 @@
 characters={
+	SUC_XiaCao={
+		name=SUC_XiaCao
+		portraits={
+			civilian={
+				large="gfx/leaders/SUC/portrait_XiaCao.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	SUC_LiHouJi={
 		name=SUC_LiHouJi
 		portraits={

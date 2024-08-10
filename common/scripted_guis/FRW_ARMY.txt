@@ -7,7 +7,7 @@ scripted_gui = {
 		properties = {
 			FRW_ARMY_ui_needle={
                   frame=FRW_ARMY_VAR
-}
+            }
 		}
 	}
 	
@@ -22,92 +22,168 @@ scripted_gui = {
 		}
 	}
 
-
-	FRW_movement_election = {
+ 
+	FRW_Trade_unionist_decision = {
 		context_type = decision_category
-		window_name = "FRW_movement_election_window"
+		window_name = "FRW_Trade_unionist_window"
 
-		properties = { 
-			FRW_Wallonia_needle={
-                  frame=FRW_Wallonia_needle_VAR
+		properties = {
+			FRW_Postersfirst={
+                 frame = FRW_Posters1
             }
-			FRW_Calais_needle={
-				frame=FRW_Calais_needle_VAR
-		  }
-		    FRW_Picardy_needle={
-				frame=FRW_Picardy_needle_VAR
-		  }
-		  FRW_Champagne_needle={
-			frame=FRW_Champagne_needle_VAR
-	      }
-
-		  FRW_Comte_needle={
-			frame=FRW_Comte_needle_VAR
-	      }
-		  FRW_Normandy_needle={
-			frame=FRW_Normandy_needle_VAR
-	      }
-		  FRW_Burgundy_needle={
-			frame=FRW_Burgundy_needle_VAR
-	      }
-		  FRW_De_France_needle={
-			frame=FRW_De_France_needle_VAR
-	      }
-		  FRW_Central_Region_needle={
-			frame=FRW_Central_Region_needle_VAR
-	      }
-		  FRW_Brittany_needle={
-			frame=FRW_Brittany_needle_VAR
-	      }
-
-
-
-
-
-
-		  FRW_Loire_needle={
-			frame=FRW_Loire_needle_VAR
-	      }
-		  FRW_Poitou_needle={
-			frame=FRW_Poitou_needle_VAR
-	      }
-		  FRW_Aquitaine_needle={
-			frame=FRW_Aquitaine_needle_VAR
-	      }
-		  FRW_Western_Pyrenees_needle={
-			frame=FRW_Western_Pyrenees_needle_VAR
-	      }
-		  
-		  FRW_South_Central_Region_needle={
-			frame=FRW_South_Central_Region_needle_VAR
-	      }
-		  FRW_Limousin_needle={
-			frame=FRW_Limousin_needle_VAR
-	      }
-		  FRW_South_Pyrenees_needle={
-			frame=FRW_South_Pyrenees_needle_VAR
-	      }
-		  FRW_Languedoc_needle={
-			frame=FRW_Languedoc_needle_VAR
-	      }
-		  FRW_Provence_needle={
-			frame=FRW_Provence_needle_VAR
-	      }
-		  FRW_Val_needle={
-			frame=FRW_Val_needle_VAR
-	      }
-		  FRW_Alps_needle={
-			frame=FRW_Alps_needle_VAR
-	      }
-		  FRW_Rhone_needle={
-			frame=FRW_Rhone_needle_VAR
-	      }
-		  FRW_Auvergne_needle={
-			frame=FRW_Auvergne_needle_VAR
-	      }
-		  
+			FRW_Postersfirst2={
+				frame = FRW_Posters2
+		   }
+		   FRW_Postersfirst3={
+				frame = FRW_Posters3
+		   }
 		}
-	}
+
+		effects = {
+			Trade_unionist_map_button_Bordeaux_click = {
+				ROOT = {
+					set_country_flag = Trade_unionist_Bordeaux
+					clr_country_flag = Trade_unionist_Limore
+					clr_country_flag = Trade_unionist_Lyons
+					clr_country_flag = Trade_unionist_Toulouse
+					clr_country_flag = Trade_unionist_Tours
+					clr_country_flag = Trade_unionist_Nantes
+					clr_country_flag = Trade_unionist_Orleans
+					clr_country_flag = Trade_unionist_Paris
+					clr_country_flag = Trade_unionist_Dijon
+					clr_country_flag = Trade_unionist_Reims
+				}
+			}
+			Trade_unionist_map_button_Lyons_click = {
+				ROOT = {
+					set_country_flag = Trade_unionist_Lyons
+					clr_country_flag = Trade_unionist_Limore
+					clr_country_flag = Trade_unionist_Bordeaux
+					clr_country_flag = Trade_unionist_Toulouse
+					clr_country_flag = Trade_unionist_Tours
+					clr_country_flag = Trade_unionist_Nantes
+					clr_country_flag = Trade_unionist_Orleans
+					clr_country_flag = Trade_unionist_Paris
+					clr_country_flag = Trade_unionist_Dijon
+					clr_country_flag = Trade_unionist_Reims
+				}
+			}
+			Trade_unionist_map_button_Toulouse_click = {
+				ROOT = {
+					set_country_flag = Trade_unionist_Toulouse
+					clr_country_flag = Trade_unionist_Limore
+					clr_country_flag = Trade_unionist_Lyons
+					clr_country_flag = Trade_unionist_Bordeaux
+					clr_country_flag = Trade_unionist_Tours
+					clr_country_flag = Trade_unionist_Nantes
+					clr_country_flag = Trade_unionist_Orleans
+					clr_country_flag = Trade_unionist_Paris
+					clr_country_flag = Trade_unionist_Dijon
+					clr_country_flag = Trade_unionist_Reims
+				}
+			}
+			Trade_unionist_map_button_Limore_click = {
+				ROOT = {
+					set_country_flag = Trade_unionist_Limore
+					clr_country_flag = Trade_unionist_Toulouse
+					clr_country_flag = Trade_unionist_Lyons
+					clr_country_flag = Trade_unionist_Bordeaux
+					clr_country_flag = Trade_unionist_Tours
+					clr_country_flag = Trade_unionist_Nantes
+					clr_country_flag = Trade_unionist_Orleans
+					clr_country_flag = Trade_unionist_Paris
+					clr_country_flag = Trade_unionist_Dijon
+					clr_country_flag = Trade_unionist_Reims
+				}
+			}
+			Trade_unionist_map_button_Tours_click = {
+				ROOT = {
+					set_country_flag = Trade_unionist_Tours
+					clr_country_flag = Trade_unionist_Toulouse
+					clr_country_flag = Trade_unionist_Lyons
+					clr_country_flag = Trade_unionist_Bordeaux
+					clr_country_flag = Trade_unionist_Limore
+					clr_country_flag = Trade_unionist_Nantes
+					clr_country_flag = Trade_unionist_Orleans
+					clr_country_flag = Trade_unionist_Paris
+					clr_country_flag = Trade_unionist_Dijon
+					clr_country_flag = Trade_unionist_Reims
+				}
+			}
+			Trade_unionist_map_button_Nantes_click = {
+				ROOT = {
+					set_country_flag = Trade_unionist_Nantes
+					clr_country_flag = Trade_unionist_Tours
+					clr_country_flag = Trade_unionist_Toulouse
+					clr_country_flag = Trade_unionist_Lyons
+					clr_country_flag = Trade_unionist_Bordeaux
+					clr_country_flag = Trade_unionist_Limore
+					clr_country_flag = Trade_unionist_Orleans
+					clr_country_flag = Trade_unionist_Paris
+					clr_country_flag = Trade_unionist_Dijon
+					clr_country_flag = Trade_unionist_Reims
+				}
+			}
+			Trade_unionist_map_button_Orleans_click = {
+				ROOT = {
+					set_country_flag = Trade_unionist_Orleans
+					clr_country_flag = Trade_unionist_Tours
+					clr_country_flag = Trade_unionist_Toulouse
+					clr_country_flag = Trade_unionist_Lyons
+					clr_country_flag = Trade_unionist_Bordeaux
+					clr_country_flag = Trade_unionist_Limore
+					clr_country_flag = Trade_unionist_Nantes
+					clr_country_flag = Trade_unionist_Paris
+					clr_country_flag = Trade_unionist_Dijon
+					clr_country_flag = Trade_unionist_Reims
+				}
+			}
+			Trade_unionist_map_button_Paris_click = {
+				ROOT = {
+					set_country_flag = Trade_unionist_Paris
+					clr_country_flag = Trade_unionist_Tours
+					clr_country_flag = Trade_unionist_Toulouse
+					clr_country_flag = Trade_unionist_Lyons
+					clr_country_flag = Trade_unionist_Bordeaux
+					clr_country_flag = Trade_unionist_Limore
+					clr_country_flag = Trade_unionist_Nantes
+					clr_country_flag = Trade_unionist_Orleans
+					clr_country_flag = Trade_unionist_Dijon
+					clr_country_flag = Trade_unionist_Reims
+				}
+			}
+			Trade_unionist_map_button_Dijon_click = {
+				ROOT = {
+					set_country_flag = Trade_unionist_Dijon
+					clr_country_flag = Trade_unionist_Tours
+					clr_country_flag = Trade_unionist_Toulouse
+					clr_country_flag = Trade_unionist_Lyons
+					clr_country_flag = Trade_unionist_Bordeaux
+					clr_country_flag = Trade_unionist_Limore
+					clr_country_flag = Trade_unionist_Nantes
+					clr_country_flag = Trade_unionist_Orleans
+					clr_country_flag = Trade_unionist_Paris
+					clr_country_flag = Trade_unionist_Reims
+					
+				}
+			}
+			Trade_unionist_map_button_Reims_click = {
+				ROOT = {
+					set_country_flag = Trade_unionist_Reims
+					clr_country_flag = Trade_unionist_Tours
+					clr_country_flag = Trade_unionist_Toulouse
+					clr_country_flag = Trade_unionist_Lyons
+					clr_country_flag = Trade_unionist_Bordeaux
+					clr_country_flag = Trade_unionist_Limore
+					clr_country_flag = Trade_unionist_Nantes
+					clr_country_flag = Trade_unionist_Orleans
+					clr_country_flag = Trade_unionist_Paris
+					clr_country_flag = Trade_unionist_Dijon
+					
+				}
+			}
+			
+	    }
 
 }
-
+}

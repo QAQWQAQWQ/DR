@@ -1,8 +1,8 @@
 ﻿l_simp_chinese:
 
- GUG:0 "桂粤政府"
- GUG_DEF:0 "桂粤政府"
- GUG_ADJ:0 "桂粤政府"
+ GUG:0 "桂系军阀"
+ GUG_DEF:0 "桂系军阀"
+ GUG_ADJ:0 "桂系军阀"
 
  NPL:0 "法兰西帝国"
  NPL_DEF:0 "法兰西帝国"
@@ -333,9 +333,9 @@
  
 
  
- DUQ:0 "皖东军阀"
- DUQ_DEF:0 "皖东军阀"
- DUQ_ADJ:0 "皖东军阀"
+ DUQ:0 "皖系军阀"
+ DUQ_DEF:0 "皖系军阀"
+ DUQ_ADJ:0 "皖系军阀"
 
 
 
@@ -370,6 +370,15 @@
  SHW:0 "俄罗斯帝国"
  SHW_ADJ:0 "俄罗斯帝国"
  SHW_DEF:0 "俄罗斯帝国"
+
+ ZXN:0 "徐州督军团"
+ ZXN_ADJ:0 "徐州督军团"
+ ZXN_DEF:0 "徐州督军团"
+
+
+ MAQ:0 "青海马家军"
+ MAQ_ADJ:0 "青海马家军"
+ MAQ_DEF:0 "青海马家军"
 
  SHW_Interim_Government:0 "俄罗斯临时政府"
  SHW_Interim_Government_ADJ:0 "俄罗斯临时政府"
@@ -406,59 +415,85 @@
  AAA:0 "人类帝国"
  AAA_DEF:0 "人类帝国"
  AAA_ADJ:0 "人类帝国"
+
+ KEI:0 "喀什噶尔道"
+ KEI_DEF:0 "喀什噶尔道"
+ KEI_ADJ:0 "喀什噶尔道"
+
+ KEI_Russian:0 "东突厥斯坦军事总督区"
+
+ XJM:0 "新疆马家军"
+ XJM_DEF:0 "新疆马家军"
+ XJM_ADJ:0 "新疆马家军"
  
- ZHX:0 "北洋政府"
- ZHX_DEF:0 "北洋政府"
- ZHX_ADJ:0 "北洋政府"
+ XUH:0 "西域新疆统部"
+ XUH_DEF:0 "西域新疆统部"
+ XUH_ADJ:0 "西域新疆统部"
+
+ ZHX:0 "直系军阀"
+ ZHX_DEF:0 "直系军阀"
+ ZHX_ADJ:0 "直系军阀"
  
- FTX:0 "奉天政府"
- FTX_DEF:0 "奉天政府"
- FTX_ADj:0 "奉天政府"
+ HNZ:0 "河南督军团"
+ HNZ_DEF:0 "河南督军团"
+ HNZ_ADJ:0 "河南督军团"
+
+ WSP:0 "山东督军团"
+ WSP_DEF:0 "山东督军团"
+ WSP_ADJ:0 "山东督军团"
+
+ FTX:0 "东三省督军团"
+ FTX_DEF:0 "东三省督军团"
+ FTX_ADj:0 "东三省督军团"
  
- MEG:0 "蒙疆自治区"
- MEG_DEF:0 "蒙疆自治区"
- MEG_ADj:0 "蒙疆自治区"
+ MEG:0 "大蒙古国"
+ MEG_DEF:0 "大蒙古国"
+ MEG_ADj:0 "大蒙古国"
  
- WUP:0 "湘系军阀"
- WUP_DEF:0 "湘系军阀"
- WUP_ADJ:0 "湘系军阀"
+ WUP:0 "湖南势力"
+ WUP_DEF:0 "湖南势力"
+ WUP_ADJ:0 "湖南势力"
  
- SUC:0 "闽系军阀"
- SUC_DEF:0 "闽系军阀"
- SUC_ADJ:0 "闽系军阀"
+ SUC:0 "浙江势力"
+ SUC_DEF:0 "浙江势力"
+ SUC_ADJ:0 "浙江势力"
  
  HAQ:0 "鲁南政府"
  HAQ_DEF:0 "鲁南政府"
  HAQ_ADJ:0 "鲁南政府"
  
- ROC:0 "广州国民政府"
- ROC_DEF:0 "广州国民政府"
- ROC_ADJ:0 "广州国民政府"
+ ROC:0 "国民党势力"
+ ROC_DEF:0 "国民党势力"
+ ROC_ADJ:0 "国民党势力"
  
  
  DTJ:0 "东突厥斯坦伊斯兰共和国"
  DTJ_DEF:0 "东突厥斯坦伊斯兰共和国"
  DTJ_ADJ:0 "东突厥斯坦伊斯兰共和国"
  
- XJC:0 "新疆临时政府"
- XJC_DEF:0 "新疆临时政府"
- XJC_ADJ:0 "新疆临时政府"
+ XJC:0 "新疆省"
+ XJC_DEF:0 "新疆省"
+ XJC_ADJ:0 "新疆省"
+
+ HBR:0 "呼伦贝尔自治政府"
+ HBR_DEF:0 "呼伦贝尔自治政府"
+ HBR_ADJ:0 "呼伦贝尔自治政府"
  
- NXS:0 "西北军阀"
- NXS_DEF:0 "西北军阀"
- NXS_ADJ:0 "西北军阀"
+ NXS:0 "宁夏马家军"
+ NXS_DEF:0 "宁夏马家军"
+ NXS_ADJ:0 "宁夏马家军"
  
- XZZ:0 "藏区"
- XZZ_DEF:0 "藏区"
- XZZ_ADJ:0 "藏区"
+ XZZ:0 "西藏地方"
+ XZZ_DEF:0 "西藏地方"
+ XZZ_ADJ:0 "西藏地方"
  
- CEX:0 "昆明军政府"
- CEX_DEF:0 "昆明军政府"
- CEX_ADJ:0 "昆明军政府"
+ CEX:0 "昆明势力"
+ CEX_DEF:0 "昆明势力"
+ CEX_ADJ:0 "昆明势力"
  
- SCX:0 "四川临时政府"
- SCX_DEF:0 "四川临时政府"
- SCX_ADJ:0 "四川临时政府"
+ SCX:0 "四川势力"
+ SCX_DEF:0 "四川势力"
+ SCX_ADJ:0 "四川势力"
 
 
  SCX_DaHang:0 "大汉军政府"
@@ -470,9 +505,9 @@
 
 
 
- GUI:0 "黔南行省"
- GUI_DEF:0 "黔南行省"
- GUI_ADJ:0 "黔南行省"
+ GUI:0 "湖北势力"
+ GUI_DEF:0 "湖北势力"
+ GUI_ADJ:0 "湖北势力"
 
  FEL:0 "芬兰大公国"
  FEL_DEF:0 "芬兰大公国"
@@ -480,9 +515,9 @@
 
 
  
- QIX:0 "江南护督省"
- QIX_DEF:0 "江南护督省"
- QIX_ADJ:0 "江南护督省"
+ QIX:0 "江苏势力"
+ QIX_DEF:0 "江苏势力"
+ QIX_ADJ:0 "江苏势力"
  
  IRL:0 "爱尔兰自由邦"
  IRL_DEF:0 "爱尔兰自由邦"
@@ -491,9 +526,13 @@
 
 
  
- KON:0 "朝鲜王朝"
- KON_DEF:0 "朝鲜王朝"
- KON_ADJ:0 "朝鲜王朝"
+ KON:0 "朝鲜王国"
+ KON_DEF:0 "朝鲜王国"
+ KON_ADJ:0 "朝鲜王国"
+
+ SHH:0 "上海国民政府"
+ SHH_DEF:0 "上海国民政府"
+ SHH_ADJ:0 "上海国民政府"
  
  JPN:0 "日本帝国"
  JPN_DEF:0 "日本帝国"
@@ -929,3 +968,7 @@ SHL_ADJ:0 "石勒苏益格公国"
 HOS:0 "荷尔斯泰因公国"
 HOS_DEF:0 "荷尔斯泰因公国"
 HOS_ADJ:0 "荷尔斯泰因公国"
+
+QIN:0 "北满洲国"
+QIN_DEF:0 "北满洲国"
+QIN_ADJ:0 "北满洲国"

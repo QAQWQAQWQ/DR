@@ -11,8 +11,28 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+
+
+
+
+
 		#### Leader trait icons ####
 
+    ###DR
+	spriteType = {
+		name = "GFX_trait_Radical_soldiers"
+		texturefile = "gfx/interface/traits/trait_Radical_soldiers.dds"
+	}	
+	spriteType = {
+		name = "GFX_trait_Revolutionary_general"
+		texturefile = "gfx/interface/traits/trait_Revolutionary_general.dds"
+	}	
+	spriteType = {
+		name = "GFX_trait_Liberal_general"
+		texturefile = "gfx/interface/traits/trait_Liberal_general.dds"
+	}	
+
+	
 	spriteType = {
 		name = "GFX_trait_bearer_of_artillery"
 		texturefile = "gfx/interface/traits/trait_bearer_of_artillery.dds"

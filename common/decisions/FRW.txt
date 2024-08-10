@@ -136,29 +136,29 @@ Destructive_industrial_complex = {
 					damage = 2
 				}
 			 } 
-		 }
+		 } 
 		}
 	fixed_random_seed = no
 	fire_only_once = no
-	is_good = no
+	is_good = no 
         ai_will_do = {
 		factor = 1
 		}
 	
 }
 }
-
-####
+  
+####  
 FRW_United_States_Europe = {
 United_States_Europe_FRW = {
-		icon = generic_ignite_civil_war
+		icon = generic_ignite_civil_war 
 		
-		available = {
-			AND={
+		available = { 
+			AND={ 
 				126={
 					is_fully_controlled_by = FRW
-				}
-				64={
+				} 
+				64={ 
 					is_fully_controlled_by = FRW
 				}
 				4={
@@ -188,9 +188,9 @@ United_States_Europe_FRW = {
 		is_good = no
 			ai_will_do = {
 			factor = 1
-			}
+			} 
 	}
-
+     
 
 }
 ####
@@ -1115,18 +1115,44 @@ FRW_army_revolution5 = {
 		}
 	
 }
-}
+}   
 
-
-
+ 
+ 
 
 FRW_election_movement = {
+	FRW_election_movement0 = {
+		icon = generic_ignite_civil_war
+		visible = {
+			
+		}
+		available = {
+		   
+		}
+		days_remove = 30
+		cost = 30
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+		   country_event = FRW.12
+		  
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			
+		} 
+		 
+	} 
 	FRW_election_movement1 = {
 	icon = generic_ignite_civil_war
 	activation = {
-		
-		
-	}
+		 
+		 
+	}           
 	available = {
 		NOT={
 			has_government = Reformism
@@ -1155,7 +1181,7 @@ FRW_election_movement2 = {
 	available = {
       
 	}
-	days_remove = 50
+	days_remove = 30
 	cost = 30
 	allowed = {
 		tag = FRW
@@ -1173,8 +1199,7 @@ FRW_election_movement2 = {
         ai_will_do = {
 		factor = 1
 		
-	}
-	
+	} 
 }
 FRW_election_movement3 = {
 	icon = generic_ignite_civil_war
@@ -1184,7 +1209,7 @@ FRW_election_movement3 = {
 	available = {
       
 	}
-	days_remove = 50
+	days_remove = 30
 	cost = 30
 	allowed = {
 		tag = FRW
@@ -1214,13 +1239,17 @@ FRW_election_movement4 = {
 	available = {
       
 	}
-	days_remove = 50
+	days_remove = 30
 	cost = 30
 	allowed = {
 		tag = FRW
 	}
 	complete_effect = { 
-		}
+		parliament4_del_5=yes
+		parliament2_del_5=yes
+		custom_effect_tooltip = FRW_parliament4_del_5
+		custom_effect_tooltip = FRW_parliament2_del_5
+	}
 	fixed_random_seed = no
 	fire_only_once = no
 	is_good = no
@@ -1238,7 +1267,7 @@ FRW_election_movement5= {
 	available = {
       
 	}
-	days_remove = 50
+	days_remove = 30
 	cost = 30
 	allowed = {
 		tag = FRW
@@ -1267,7 +1296,7 @@ FRW_election_movement6= {
 	available = {
       
 	}
-	days_remove = 50
+	days_remove = 30
 	cost = 30
 	allowed = {
 		tag = FRW
@@ -1297,14 +1326,17 @@ FRW_election_movement7 = {
 	available = {
       
 	}
-	days_remove = 50
+	days_remove = 30
 	cost = 30
 	allowed = {
 		tag = FRW
 	}
 
 	complete_effect = { 
-
+		parliament5_del_5=yes
+		parliament1_del_5=yes
+		custom_effect_tooltip = FRW_parliament5_del_5
+		custom_effect_tooltip = FRW_parliament1_del_5
 	}
 	fixed_random_seed = no
 	fire_only_once = no
@@ -1537,4 +1569,911 @@ FRW_Maginot_Line_plan4 = {
 		}
 	
 }
+
+
+                                               
 }
+              
+FRW_Trade_unionist_propaganda={ 
+	FRW_Trade_unionist = {       
+		icon = generic_fortification
+		
+		available = {            
+			Anarchism > 0.5
+			custom_trigger_tooltip = {
+				check_variable = {
+					Number_unions =10
+				} 
+				tooltip = Number_unions10
+			}
+		}
+		days_remove = 5
+		cost = 20
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			country_event = FRW.8
+		} 
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	FRW_Trade_unionist_Posters1 = {       
+		icon = generic_fortification
+		
+		available = {            
+			
+		}
+		days_remove = 30
+		cost = 20
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			###海报
+			set_variable = { 
+				FRW_Posters1=2
+			}
+			add_to_variable = {
+				Number_posters = 1
+			}
+		} 
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	FRW_Trade_unionist_Posters2 = {       
+		icon = generic_fortification
+		
+		available = {            
+			custom_trigger_tooltip = {
+				check_variable = {
+					Number_unions =4
+				}
+				tooltip = Number_unions4
+			}
+		}
+		days_remove = 30
+		cost = 20
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			###海报
+			set_variable = {
+				FRW_Posters2=2
+			}
+			add_to_variable = {
+				Number_posters = 1
+			}
+		} 
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	FRW_Trade_unionist_Posters3 = {       
+		icon = generic_fortification
+		
+		available = {            
+			custom_trigger_tooltip = {
+				check_variable = {
+					Number_unions =8
+				}
+				tooltip = Number_unions8
+			}
+		}
+		days_remove = 30 
+		cost = 20
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			###海报 
+			set_variable = {       
+				FRW_Posters3=2 
+			}
+			add_to_variable = {
+				Number_posters = 1
+			}
+		} 
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	FRW_Trade_unionist_propaganda_Bordeaux = {
+		icon = generic_fortification
+		highlight_states = {
+			highlight_state_targets = {
+				state = 19
+			}
+		} 
+		visible = {
+			AND={
+				has_country_flag = Trade_unionist_Bordeaux
+			}
+			
+		}
+		available = {
+			19={
+			  is_core_of = FRW
+			  is_controlled_by = FRW
+			}
+		}
+		days_remove = 30
+		cost = 20
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			add_popularity = {
+				ideology = Anarchism
+				popularity = 0.02
+			}
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	FRW_Trade_unionist_propaganda_Bordeaux1 = {
+		icon = generic_fortification
+		highlight_states = {
+			highlight_state_targets = {
+				state = 19
+			}
+		} 
+		visible = {
+			AND={
+				has_country_flag = Trade_unionist_Bordeaux
+			}
+			
+		}
+		available = {
+			19={
+			  is_core_of = FRW
+			  is_controlled_by = FRW
+			}
+		}
+		days_remove = 30
+		cost = 20
+		allowed = { 
+			tag = FRW
+		}
+		complete_effect = { 
+			19={ 
+			custom_effect_tooltip = CGT_map_icon
+			set_province_name = {
+				id = 9737
+				name = CGT_Bordeaux
+			}	
+			}
+			add_to_variable = {
+				Number_unions=1
+			}
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+
+	FRW_Trade_unionist_propaganda_Lyons = {
+		icon = generic_fortification
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 20
+			}
+		} 
+		visible = {   
+			AND={
+				has_country_flag = Trade_unionist_Lyons
+			}
+			
+		}
+		available = {
+			20={
+			  is_core_of = FRW
+			  is_controlled_by = FRW
+			}
+		}
+		days_remove = 30
+		cost = 20
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			add_popularity = {
+				ideology = Anarchism
+				popularity = 0.02
+			}
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	FRW_Trade_unionist_propaganda_Lyons1 = {
+		icon = generic_fortification
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 20
+			}
+		} 
+		visible = {   
+			AND={
+				has_country_flag = Trade_unionist_Lyons
+			}
+			
+		}
+		available = {
+			20={
+			  is_core_of = FRW
+			  is_controlled_by = FRW
+			} 
+		}
+		days_remove = 30
+		cost = 20
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			20={ 
+			custom_effect_tooltip = CGT_map_icon
+			set_province_name = {
+				id = 6613
+				name = CGT_Lyons
+			}	
+			}
+			add_to_variable = {
+				Number_unions=1
+			}
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	FRW_Trade_unionist_propaganda_Toulouse = {
+		icon = generic_fortification
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 31
+			}
+		} 
+		visible = {   
+			AND={
+				has_country_flag = Trade_unionist_Toulouse
+			}
+			
+		}
+		available = {
+			31={
+			  is_core_of = FRW
+			  is_controlled_by = FRW
+			}
+		}
+		days_remove = 30
+		cost = 20
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			add_popularity = {
+				ideology = Anarchism
+				popularity = 0.02
+			}
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	FRW_Trade_unionist_propaganda_Toulouse1 = {
+		icon = generic_fortification
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 31
+			}
+		} 
+		visible = {   
+			AND={
+				has_country_flag = Trade_unionist_Toulouse
+			}
+			
+		}
+		available = {
+			31={
+			  is_core_of = FRW
+			  is_controlled_by = FRW
+			}
+		}
+		days_remove = 30
+		cost = 20
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			31={ 
+				custom_effect_tooltip = CGT_map_icon
+				set_province_name = {
+					id = 6766
+					name = CGT_Toulouse
+				}	
+				}
+			add_to_variable = {
+				Number_unions=1
+			}	
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	FRW_Trade_unionist_propaganda_Limore = {
+		icon = generic_fortification
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 25
+			} 
+		}      
+		visible = {   
+			AND={
+				has_country_flag = Trade_unionist_Limore
+			}
+			
+		}
+		available = {
+			25={
+			  is_core_of = FRW
+			  is_controlled_by = FRW
+			}
+		}
+		days_remove = 1  
+		cost = 20
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			add_popularity = {
+				ideology = Anarchism
+				popularity = 0.02
+			}
+		} 
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+
+	FRW_Trade_unionist_propaganda_Tours = {
+		icon = generic_fortification
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 24
+			} 
+		}  
+		visible = {   
+			AND={
+				has_country_flag = Trade_unionist_Tours
+			}
+			
+		}
+		available = {
+			24={
+			  is_core_of = FRW
+			  is_controlled_by = FRW
+			}
+		}
+		days_remove = 30
+		cost = 20
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			add_popularity = {
+				ideology = Anarchism
+				popularity = 0.02
+			}
+		} 
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	FRW_Trade_unionist_propaganda_Tours1 = {
+		icon = generic_fortification
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 24
+			} 
+		}  
+		visible = {   
+			AND={
+				has_country_flag = Trade_unionist_Tours
+			}
+			
+		}
+		available = {
+			24={
+			  is_core_of = FRW
+			  is_controlled_by = FRW
+			}
+		}
+		days_remove = 30
+		cost = 20
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			24={ 
+				custom_effect_tooltip = CGT_map_icon
+				set_province_name = {
+					id = 3671
+					name = CGT_Tours
+				}	
+				}
+				add_to_variable = {
+					Number_unions=1
+				}
+		} 
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	FRW_Trade_unionist_propaganda_Nantes = {
+		icon = generic_fortification
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 30
+			}  
+		}  
+		visible = {   
+			AND={
+				has_country_flag = Trade_unionist_Nantes
+			}
+			
+		}
+		available = {
+			30={
+			  is_core_of = FRW
+			  is_controlled_by = FRW
+			}
+		}
+		days_remove = 30
+		cost = 20
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			add_popularity = {
+				ideology = Anarchism
+				popularity = 0.02
+			}
+		} 
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	FRW_Trade_unionist_propaganda_Nantes1 = {
+		icon = generic_fortification
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 30
+			}  
+		}  
+		visible = {   
+			AND={
+				has_country_flag = Trade_unionist_Nantes
+			}
+			
+		}
+		available = {
+			30={
+			  is_core_of = FRW
+			  is_controlled_by = FRW
+			}
+		}
+		days_remove = 30
+		cost = 20
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			30={ 
+				custom_effect_tooltip = CGT_map_icon
+				set_province_name = {
+					id = 11465
+					name = CGT_Nantes
+				}	
+			}
+			add_to_variable = {
+				Number_unions=1
+			}
+		} 
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	FRW_Trade_unionist_propaganda_Orleans = {
+		icon = generic_fortification
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 24
+			}  
+		}  
+		visible = {   
+			AND={
+				has_country_flag = Trade_unionist_Orleans
+			}
+			
+		}
+		available = {            
+			24={
+			  is_core_of = FRW
+			  is_controlled_by = FRW
+			}
+		}
+		days_remove = 30
+		cost = 20
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			add_popularity = {
+				ideology = Anarchism
+				popularity = 0.02
+			}
+		} 
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	FRW_Trade_unionist_propaganda_Orleans1 = {
+		icon = generic_fortification
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 24
+			}  
+		}  
+		visible = {   
+			AND={
+				has_country_flag = Trade_unionist_Orleans
+			}
+			
+		}
+		available = {            
+			24={
+			  is_core_of = FRW
+			  is_controlled_by = FRW
+			}
+		}
+		days_remove = 30
+		cost = 20
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			24={ 
+				custom_effect_tooltip = CGT_map_icon
+				set_province_name = {
+					id = 512
+					name = CGT_Orleans
+				}	
+			}
+			add_to_variable = {
+				Number_unions=1
+			}
+		} 
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	FRW_Trade_unionist_propaganda_Paris = {
+		icon = generic_fortification
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 16
+			}  
+		}  
+		visible = {   
+			AND={
+				has_country_flag = Trade_unionist_Paris
+			}
+			
+		}
+		available = {
+			16={
+			  is_core_of = FRW
+			  is_controlled_by = FRW
+			}
+		}
+		days_remove = 30
+		cost = 20
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			add_popularity = {
+				ideology = Anarchism
+				popularity = 0.02
+			}
+		} 
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	FRW_Trade_unionist_propaganda_Paris1 = {
+		icon = generic_fortification
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 16
+			}  
+		}  
+		visible = {   
+			AND={
+				has_country_flag = Trade_unionist_Paris
+			}
+			
+		}
+		available = {
+			16={
+			  is_core_of = FRW
+			  is_controlled_by = FRW
+			}
+		}
+		days_remove = 30
+		cost = 20
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			16={ 
+				custom_effect_tooltip = CGT_map_icon
+				set_province_name = {
+					id = 11506
+					name = CGT_Paris
+				}	
+			}
+			add_to_variable = {
+				Number_unions=1
+			}
+		} 
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	FRW_Trade_unionist_propaganda_Dijon = {
+		icon = generic_fortification
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 27 
+			}  
+		}  
+		visible = {   
+			AND={
+				has_country_flag = Trade_unionist_Dijon
+			}
+			
+		}
+		available = {
+			27={
+			  is_core_of = FRW
+			  is_controlled_by = FRW
+			}
+		}
+		days_remove = 30
+		cost = 20
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			add_popularity = {
+				ideology = Anarchism
+				popularity = 0.02
+			}
+		} 
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	FRW_Trade_unionist_propaganda_Dijon1 = {
+		icon = generic_fortification
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 27 
+			}  
+		}  
+		visible = {   
+			AND={
+				has_country_flag = Trade_unionist_Dijon
+			}
+			
+		}
+		available = {
+			27={
+			  is_core_of = FRW
+			  is_controlled_by = FRW
+			}
+		}
+		days_remove = 30
+		cost = 20
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			27={ 
+				custom_effect_tooltip = CGT_map_icon
+				set_province_name = {
+					id = 3652
+					name = CGT_Dijon
+				}	
+			}
+			add_to_variable = {
+				Number_unions=1
+			}
+		} 
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	FRW_Trade_unionist_propaganda_Reims = {
+		icon = generic_fortification
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 18 
+			}  
+		}  
+		visible = {         
+			AND={
+				has_country_flag = Trade_unionist_Reims
+			}
+			
+		}
+		available = {
+			18={
+			  is_core_of = FRW
+			  is_controlled_by = FRW
+			}
+		}
+		days_remove = 30
+		cost = 20
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			add_popularity = {
+				ideology = Anarchism
+				popularity = 0.02
+			}
+		} 
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+	FRW_Trade_unionist_propaganda_Reims1 = {
+		icon = generic_fortification
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 18 
+			}  
+		}  
+		visible = {         
+			AND={
+				has_country_flag = Trade_unionist_Reims
+			}
+			
+		}
+		available = {
+			18={
+			  is_core_of = FRW
+			  is_controlled_by = FRW
+			}
+		}
+		days_remove = 30
+		cost = 20
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			18={ 
+				custom_effect_tooltip = CGT_map_icon
+				set_province_name = {
+					id = 13011
+					name = CGT_Dijon
+				}	
+			}
+			add_to_variable = {
+				Number_unions=1
+			}
+		} 
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+			ai_will_do = {
+			factor = 1
+			}
+		
+	}
+}
+

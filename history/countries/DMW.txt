@@ -44,7 +44,11 @@ recruit_character = DMW_Christian_X
 		
 		
 	}
-add_ideas = {secondary_school}
+add_ideas = {
+	Deutscher_Bund
+    Deutscher_Zollverein
+	secondary_school
+}
 set_politics = {
 	ruling_party = Conservatism
 	last_election = "1918.11.11"

@@ -11,9 +11,12 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
+recruit_character = XJC_FengDaShu
 recruit_character = XJC_YangZengXin
 recruit_character = XJC_ShengShiCai
 recruit_character = XJC_jinshuren
+recruit_character = XJC_FangYaoNan
+recruit_character = XJC_YangZangXu
 
 	set_technology = {
 		interwar_artillery = 1
@@ -47,9 +50,12 @@ recruit_character = XJC_jinshuren
 		
 		
 	}
-
+	set_power_balance = {
+		id = XJC_Court_struggles_balance
+	}
+	country_event = {id=XJC.1 days=185}
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Liberalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -58,8 +64,7 @@ add_ideas = {
 	Smallholder_economy
 }
 set_popularities = {
-	Liberalism = 5
-	Reactionary = 1
-	Conservatism = 89
-	Revolutionism = 5
+	Liberalism = 75
+	Conservatism = 15
+	Revolutionism = 10
 }

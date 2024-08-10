@@ -1,4 +1,20 @@
 characters={
+	SHH_ChenQiMei={
+		name=SHH_ChenQiMei
+		portraits={
+			civilian={
+				large="gfx/leaders/SHH/portrait_ChenQiMei.tga"
+			}
+		}
+		country_leader={
+			ideology=Progressivism_Liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+
 	SHH_Shanghai_Federation_Trade_Unions={
 		name=SHH_Shanghai_Federation_Trade_Unions
 		portraits={

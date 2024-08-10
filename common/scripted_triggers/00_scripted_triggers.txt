@@ -1,0 +1,9 @@
+is_diplomatic_action_valid_boost_party_popularity = { #提高党派支持率不可见
+	if={
+		limit = {
+			has_trait = Revolutionary_general
+		}
+		set_country_flag=Revolutionary_general_num
+	}
+	
+}

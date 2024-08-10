@@ -1,4 +1,18 @@
 characters={
+	QIX_ZhuangYunKuang={
+		name=QIX_ZhuangYunKuang
+		portraits={
+			civilian={
+				large="gfx/leaders/QIX/portrait_ZhuangYunKuang.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
 	QIX_qixieyuan={
 		name=QIX_qixieyuan
 		portraits={

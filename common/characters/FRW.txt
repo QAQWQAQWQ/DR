@@ -1123,7 +1123,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ Lieutenant_general career_officer }
+			traits={ Lieutenant_general career_officer Revolutionary_general}
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -1153,7 +1153,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ expert_delegator }
+			traits={ expert_delegator old_guard Liberal_general}
 			skill=4
 			attack_skill=2
 			defense_skill=2
@@ -1186,7 +1186,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ Lieutenant_general offensive_doctrine }
+			traits={ Lieutenant_general offensive_doctrine Liberal_general}
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -1262,7 +1262,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ Lieutenant_general }
+			traits={ Lieutenant_general Radical_soldiers }
 			skill=3
 			attack_skill=2
 			defense_skill=2
@@ -1281,7 +1281,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ skilled_staffer }
+			traits={ skilled_staffer Revolutionary_general }
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -1299,7 +1299,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ skilled_staffer }
+			traits={ skilled_staffer Revolutionary_general Radical_soldiers }
 			skill=2
 			attack_skill=1
 			defense_skill=1
@@ -1317,7 +1317,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ Lieutenant_general }
+			traits={ Lieutenant_general Revolutionary_general}
 			skill=2
 			attack_skill=1
 			defense_skill=1
@@ -1363,7 +1363,22 @@ FRW_georges_louis_humbert={
 			logistics_skill=3
 		}
 	}
-
+	FRW_Georges_Catroux={
+		name=FRW_Georges_Catroux
+		portraits={
+			army={
+				large="gfx/leaders/FRW/Portrait_Georges_Catroux.tga"
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general Revolutionary_general }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
 
 
 
@@ -1397,7 +1412,7 @@ FRW_georges_louis_humbert={
 			}
 		}
 		corps_commander={
-			traits={ Lieutenant_general unyielding_defender}
+			traits={ Lieutenant_general unyielding_defender Revolutionary_general}
 			skill=3
 			attack_skill=2
 			defense_skill=2
@@ -1414,7 +1429,7 @@ FRW_georges_louis_humbert={
 			}
 		}
 		corps_commander={
-			traits={ Lieutenant_general }
+			traits={ Lieutenant_general old_guard }
 			skill=3
 			attack_skill=2
 			defense_skill=3
@@ -1448,7 +1463,7 @@ FRW_georges_louis_humbert={
 			}
 		}
 		corps_commander={
-			traits={ Lieutenant_general }
+			traits={ Lieutenant_general Revolutionary_general}
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -1465,7 +1480,7 @@ FRW_georges_louis_humbert={
 			}
 		}
 		corps_commander={
-			traits={ Lieutenant_general }
+			traits={ Lieutenant_general old_guard}
 			skill=3
 			attack_skill=2
 			defense_skill=3
@@ -1482,7 +1497,7 @@ FRW_georges_louis_humbert={
 			}
 		}
 		corps_commander={
-			traits={ Lieutenant_general }
+			traits={ Lieutenant_general Liberal_general }
 			skill=3
 			attack_skill=2
 			defense_skill=1

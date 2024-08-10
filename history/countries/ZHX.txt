@@ -69,20 +69,9 @@ recruit_character = ZHX_GuWeiJun
 	}
 
 	create_faction = BeiPing
-	add_to_faction = SXS
-    add_to_faction = SUC
-add_to_faction = SXX
-add_to_faction = NXS
-add_to_faction = MEG
-add_to_faction = XJC
-add_to_faction = SCX
-add_to_faction = WUP
-add_to_faction = SUC
-add_to_faction = LXS
-add_to_faction = CEX
-add_to_faction = GUG
-add_to_faction = XZZ
-add_to_faction = FTX
+    add_to_faction = HNZ
+    puppet = HNZ
+	
 set_politics = {
 	ruling_party = Conservatism
 	last_election = "1918.11.11"

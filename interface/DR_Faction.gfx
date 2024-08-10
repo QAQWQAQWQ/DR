@@ -57,6 +57,16 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_Rpublic_China_Anhui"
+		texturefile = "gfx/interface/Faction/Rpublic_China_Anhui.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Rpublic_China_Kuomintang"
+		texturefile = "gfx/interface/Faction/Rpublic_China_Kuomintang.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_Commonwealth_of_Nations"
 		texturefile = "gfx/interface/Faction/Commonwealth_of_Nations.dds"
 		legacy_lazy_load = no

@@ -6,11 +6,14 @@
  
 
 
- FRW_movement_election_title:0 "[FRW.getflag]目前法国大选形式：\n\n 支持可能派的选区有：[?FRW_Liberals_needle_VAR]\n\n 支持民主派的选区有：[?FRW_Reformism_needle_VAR] \n\n     支持布朗基派的选区有：[?FRW_Radicalism_needle_VAR]\n\n支持盖得派的选区有：[?FRW_Communist_needle_VAR]"
-
-
+ FRW_Trade_unionist_title:0 "工团运动已然苏醒，我们需要团结全法国的工人来加入我们这伟大的理想之中\n\n在城市建立总工会：[?Number_unions]/10\n劳工海报宣传活动：[?Number_posters]/3"
+ Number_unions4:0 "已经在4座城市建立"
+ Number_unions8:0 "已经在8座城市建立"
+ Number_unions10:0 "已经在10座城市建立"
  FRW_election_movement:0 "法国大选"
- FRW_election_movement_desc:0"\n\n\n\n\n\n\n\n五年一届的法国大选正式开始，我们可以通过提升相关意识形态支持度来加强党派在各地区投射的力量，以此征求更多的选票来支持执政党的选举。\n\n目前党派席位：\n\n§Y革命社会主义工人党§!:[?parliament_seat_array^0]个席位\n\n§Y社会主义工人联合会§!:[?parliament_seat_array^1]个席位\n\n§Y独立社会党联盟§![?parliament_seat_array^2]个席位\n\n§Y社会主义共和同盟§!:[?parliament_seat_array^3]个席位\n\n§Y革命布朗基派§!:[?parliament_seat_array^4]个席位\n\n§Y无党派（独立人士）§!:[?parliament_seat_array^5]个席位\n\n预计大选结果：\n§Y革命社会主义工人党§!   [PartyNO_1]\n§Y社会主义工人联合会§!   [PartyNO_2]\n§Y独立社会党联盟§!   [PartyNO_3]\n§Y革命布朗基派§!   [PartyNO_4]\n§Y无党派（独立人士）§!   [PartyNO_5]"
+ FRW_election_movement_desc:0"\n\n\n\n\n\n\n\n五年一届的法国大选正式开始，我们可以通过提升相关意识形态支持度来加强党派在各地区投射的力量，以此征求更多的选票来支持执政党的选举。\n\n目前党派席位：\n\n§Y革命社会主义工人党§!:[?parliament_seat_array^0]个席位\n\n§Y社会主义工人联合会§!:[?parliament_seat_array^1]个席位\n\n§Y独立社会党联盟§![?parliament_seat_array^2]个席位\n\n§Y社会主义共和同盟§!:[?parliament_seat_array^3]个席位\n\n§Y革命布朗基派§!:[?parliament_seat_array^4]个席位\n\n§Y无党派（独立人士）§!:[?parliament_seat_array^5]个席位\n\n当前军队内部派系：\n革命派：§Y[?Revolutionary_general_num]§!人\n自由派：§Y[?Liberal_general_num]§!人\n中间派：§Y[?Centrist_general_num]§!人\n\n预计大选结果：\n§Y革命社会主义工人党§!   [PartyNO_1]\n§Y社会主义工人联合会§!   [PartyNO_2]\n§Y独立社会党联盟§!   [PartyNO_3]\n§Y社会主义共和同盟§!   [PartyNO_4]\n§Y革命布朗基派§!   [PartyNO_5]\n§Y无党派(独立人士)§! [PartyNO_6] "
+ FRW_election_movement0:0 "拉拢军队"
+
  FRW_election_movement1:0 "选举倒计时"
 
  FRW_election_movement2:0 "与自由派辩论"
@@ -316,7 +319,61 @@ FRW_Maginot_Line_plan3_desc:0 ""
 FRW_Maginot_Line_plan4:0 "在南锡地区构建碉堡"
 FRW_Maginot_Line_plan4_desc:0 ""
 
+FRW_Trade_unionist_propaganda:0 "工团春风吹遍地"
+FRW_Trade_unionist_propaganda_desc:0 "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 
+FRW_Trade_unionist_propaganda_Bordeaux:0 "在波尔多地区宣传"
+FRW_Trade_unionist_propaganda_Bordeaux_desc:0 ""
+FRW_Trade_unionist_propaganda_Bordeaux1:0 "波尔多总工会"
+FRW_Trade_unionist_propaganda_Bordeaux1_desc:0 ""
+FRW_Trade_unionist_propaganda_Lyons:0 "在里昂地区宣传"
+FRW_Trade_unionist_propaganda_Lyons_desc:0 ""
+FRW_Trade_unionist_propaganda_Lyons1:0 "里昂总工会"
+FRW_Trade_unionist_propaganda_Lyons1_desc:0 ""
+FRW_Trade_unionist_propaganda_Toulouse:0 "在图卢兹地区宣传"
+FRW_Trade_unionist_propaganda_Toulouse_desc:0 ""
+FRW_Trade_unionist_propaganda_Toulouse1:0 "图卢兹总工会"
+FRW_Trade_unionist_propaganda_Toulouse1_desc:0 ""
+
+FRW_Trade_unionist_propaganda_Limore:0 "在利摩日地区宣传"
+FRW_Trade_unionist_propaganda_Limore_desc:0 ""
+FRW_Trade_unionist_propaganda_Limore1:0 "利摩日总工会"
+FRW_Trade_unionist_propaganda_Limore1_desc:0 ""
+
+
+FRW_Trade_unionist_propaganda_Tours:0 "在图尔地区宣传"
+FRW_Trade_unionist_propaganda_Tours_desc:0 ""
+FRW_Trade_unionist_propaganda_Tours1:0 "图尔总工会"
+FRW_Trade_unionist_propaganda_Tours1_desc:0 ""
+FRW_Trade_unionist_propaganda_Nantes:0 "在南特地区宣传"
+FRW_Trade_unionist_propaganda_Nantes_desc:0 ""
+FRW_Trade_unionist_propaganda_Nantes1:0 "南特总工会"
+FRW_Trade_unionist_propaganda_Nantes1_desc:0 ""
+FRW_Trade_unionist_propaganda_Orleans:0 "在奥尔良地区宣传"
+FRW_Trade_unionist_propaganda_Orleans_desc:0 ""
+FRW_Trade_unionist_propaganda_Orleans1:0 "奥尔良总工会"
+FRW_Trade_unionist_propaganda_Orleans1_desc:0 ""
+FRW_Trade_unionist_propaganda_Paris:0 "在巴黎地区宣传"
+FRW_Trade_unionist_propaganda_Paris_desc:0 ""
+FRW_Trade_unionist_propaganda_Paris1:0 "巴黎总工会"
+FRW_Trade_unionist_propaganda_Paris1_desc:0 ""
+FRW_Trade_unionist_propaganda_Dijon:0 "在第戎地区宣传"
+FRW_Trade_unionist_propaganda_Dijon_desc:0 ""
+FRW_Trade_unionist_propaganda_Dijon1:0 "第戎总工会"
+FRW_Trade_unionist_propaganda_Dijon1_desc:0 ""
+FRW_Trade_unionist_propaganda_Reims:0 "在兰斯地区宣传"
+FRW_Trade_unionist_propaganda_Reims_desc:0 ""
+FRW_Trade_unionist_propaganda_Reims1:0 "兰斯总工会"
+FRW_Trade_unionist_propaganda_Reims1_desc:0 ""
+
+FRW_Trade_unionist:0 "举行全国总罢工"
+FRW_Trade_unionist_desc:0 ""
+FRW_Trade_unionist_Posters1:0 "张贴《为了更美好的生活》海报"
+FRW_Trade_unionist_Posters1_desc:0 "每有一张海报，每周无政府支持率§H+0.03%§!"
+FRW_Trade_unionist_Posters2:0 "张贴《团结在工会下》海报"
+FRW_Trade_unionist_Posters2_desc:0 "每有一张海报，每周无政府支持率§H+0.03%§!"
+FRW_Trade_unionist_Posters3:0 "张贴《抵御阶级敌人》海报"
+FRW_Trade_unionist_Posters3_desc:0 "每有一张海报，每周无政府支持率§H+0.03%§!"
 
 fate_the_Suez_Canal:0 "苏伊士运河的命运"
 fate_the_Suez_Canal_desc:0 "\n\n\n\n\n\n\n\n 苏伊士运河是我们最重要的一条战略要地，大部分的商船要进入地中海必须要经过这里，所以这里的战略价值一目了然，我们必须增加我们在这片地区的影响力\n\n[ENL.GetFlag]英国影响力：§H[?ENL.British_influence]§!\n[TEQ.GetFlag]奥斯曼影响力：§H[?TEQ.Ottoman_influence]§!\n"
@@ -554,6 +611,22 @@ BRA_Court_struggles_right_side:0 "§Y尉官派§!"
 BRA_Court_struggles_right_side_desc:0 "§Y尉官派的骚动§! \n\n随着女皇的健康日益恶化，新一阵骚动在军队中如瘟疫般传播，年轻人们像打了鸡血一样在政府监管不到的农村，城市角落交谈、组织起来，谁知道呢？"
 BRA_Court_struggles_right_side_range_Low:0 "尉官派现状：骚动"
 BRA_Court_struggles_right_side_High:0 "尉官派现状：压抑"
+
+
+XJC_Court_struggles_balance:0 "新疆权力斗争"
+XJC_Court_struggles_mid_range:0 "现状：均势"
+XJC_Court_struggles_left_side:0 "§Y自治派§!"
+XJC_Court_struggles_left_side_desc:0 "§Y自治派§! \n\n。"
+XJC_Court_struggles_left_side_range_Low:0 "自治派现状：缺乏支持"
+XJC_Court_struggles_left_side_High:0 "自治派现状：广泛支持"
+
+XJC_Court_struggles_right_side:0 "§Y哥老会§!"
+
+XJC_Court_struggles_right_side_desc:0 "§Y哥老会§! \n\n。"
+XJC_Court_struggles_right_side_range_Low:0 "哥老会现状：缺乏支持"
+XJC_Court_struggles_right_side_High:0 "哥老会现状：广泛支持"
+
+
 
 BRA_Convince_Senate:0 "说服参议院"
 BRA_Stop_extremist_ideas:0 "制止极端思想传播"

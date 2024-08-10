@@ -1,4 +1,44 @@
 on_actions = {
+	on_weekly_FRW = {
+		
+		effect = {
+			if={
+				limit = {
+					check_variable={
+						FRW_Posters1=2
+					}
+				}
+				add_popularity = {
+					ideology = Anarchism
+					popularity = 0.03
+				}
+				else_if = {
+					limit = { 
+						check_variable={
+							FRW_Posters2=2
+						}
+					}
+					add_popularity = {
+						ideology = Anarchism
+						popularity = 0.03
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable={
+							FRW_Posters3=2
+						}
+					}
+					add_popularity = {
+						ideology = Anarchism
+						popularity = 0.03
+					}
+				}
+			}
+			
+		} 
+	}
+
 	on_startup = {
 		effect = {
 			every_country = {

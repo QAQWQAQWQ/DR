@@ -29,6 +29,22 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
+				ROOT.grid_faction_leader = DUQ
+			}
+		}
+		localization_key = "GFX_Rpublic_China_Anhui"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ROOT.grid_faction_leader = ROC
+			}
+		}
+		localization_key = "GFX_Rpublic_China_Kuomintang"
+	}
+	text = {
+		trigger = {
+			check_variable = {
 				ROOT.grid_faction_leader = NPL
 			}
 		}
@@ -90,6 +106,26 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Rpublic_China"
+	}
+	text = {
+		trigger = {
+			THIS = {
+				is_in_array = {
+					global.faction_menber_DUQ = THIS
+				}
+			}
+		}
+		localization_key = "GFX_Rpublic_China_Anhui"
+	}
+	text = {
+		trigger = {
+			THIS = {
+				is_in_array = {
+					global.faction_menber_ROC = THIS
+				}
+			}
+		}
+		localization_key = "GFX_Rpublic_China_Kuomintang"
 	}
 	text = {
 		trigger = {

@@ -14,7 +14,7 @@ Talented_orator = {
 	random = no
 	sprite = 13
 	stability_factor = 0.01
-	Revolutionism_drift = 0.05
+	Revolutionism_drift = 0.02
 }
 
 unpopular_political_advisor = {
@@ -680,7 +680,7 @@ Chairman_Cheka = {
 		}
 	}		
 
-	revolutionary_general = { #Francisco José Mugica
+	revolutionary_hero = { #Francisco José Mugica
 		random = no
 		resistance_growth_on_our_occupied_states = 0.25 
 		mobilization_laws_cost_factor = -0.25
@@ -2626,7 +2626,7 @@ Chairman_Cheka = {
 		drift_defence_factor = 0.1
 		research_speed_factor = 0.1
 		min_export = -0.1
-		Revolutionism_drift = 0.05
+		Revolutionism_drift = 0.02
 	}
 
 	#Trotsky

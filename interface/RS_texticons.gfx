@@ -1,54 +1,10 @@
 spriteTypes = {	
-
 	spriteType = {
-		name = "GFX_country_view_map"
-		texturefile = "gfx/texticons/country_view_map.png"
+		name = "GFX_CGT_map_icon"
+		texturefile = "gfx/interface/textpicture/CGT_map_icon.dds"
 		legacy_lazy_load = no
-	}	
-	
-	spriteType = {
-		name = "GFX_country_view_map_EMP"
-		texturefile = "gfx/texticons/country_view_map_EMP.png"
-		legacy_lazy_load = no
-	}	
-	
-	spriteType = {
-		name = "GFX_country_view_map_REP"
-		texturefile = "gfx/texticons/country_view_map_REP.png"
-		legacy_lazy_load = no
-	}	
-	
-	spriteType = {
-		name = "GFX_country_view_map_LEG"
-		texturefile = "gfx/texticons/country_view_map_LEG.png"
-		legacy_lazy_load = no
-	}	
-	
-	spriteType = {
-		name = "GFX_country_view_map_ALK"
-		texturefile = "gfx/texticons/country_view_map_ALK.png"
-		legacy_lazy_load = no
-	}	
-	
-	spriteType = {
-		name = "GFX_country_view_map_DAC"
-		texturefile = "gfx/texticons/country_view_map_DAC.png"
-		legacy_lazy_load = no
-	}	
-	
-	spriteType = {
-		name = "GFX_country_view_map_RUS"
-		texturefile = "gfx/texticons/country_view_map_RUS.png"
-		legacy_lazy_load = no
-	}	
-	
-	spriteType = {
-		name = "GFX_country_view_map_ILD"
-		texturefile = "gfx/texticons/country_view_map_ILD.png"
-		legacy_lazy_load = no
-	}	
-
-
+	}
+ 
 
 	spriteType = {
 		name = "GFX_Pavel_Milyukov"

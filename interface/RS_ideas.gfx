@@ -1270,8 +1270,23 @@ spriteTypes = {
 		name = "GFX_idea_Multi_ethnic_army"
 		texturefile = "gfx/interface/ideas/Multi_ethnic_army.dds"
 	}
- 
 	
+	spriteType = {
+		name = "GFX_FRW_Postersfirst"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_Posters1.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_FRW_Postersfirst2"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_Posters2.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_FRW_Postersfirst3"
+		texturefile = "gfx/interface/GUI/frw_state/FRW_Posters3.dds"
+		noOfFrames = 2
+	}
+
 	spriteType = {
 		name = "GFX_FRW_Wallonia_needle"
 		texturefile = "gfx/interface/GUI/frw_state/FRW_Wallonia.dds"
@@ -1388,12 +1403,21 @@ spriteTypes = {
 		noOfFrames = 5
 	}
 	spriteType = {
-		name = "GFX_FRW_state_back"
-		texturefile = "gfx/interface/GUI/frw_state/FRW_state_back.dds"
+		name = "GFX_Trade_unionist_back"
+		texturefile = "gfx/interface/GUI/frw_state/Trade_unionist_back.dds"
 	}
 	spriteType = {
-		name = "GFX_FRW_flag_back"
-		texturefile = "gfx/interface/GUI/frw_state/FRW_flag_back.dds"
+		name = "GFX_Poster_boards"
+		texturefile = "gfx/interface/GUI/frw_state/Poster_boards.dds"
+	}
+	spriteType = {
+		name = "GFX_Trade_unionist_map_button"
+		texturefile = "gfx/interface/GUI/frw_state/Trade_unionist_map_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Trade_unionist_propaganda"
+		texturefile = "gfx/interface/GUI/frw_state/Trade_unionist_propaganda_back.dds"
 	}
 	
 }

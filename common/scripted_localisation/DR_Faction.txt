@@ -79,6 +79,28 @@ text = {
 }
 }
 text = {
+	localization_key = GFX_Rpublic_China_Anhui
+
+	trigger = {
+		   OR = {
+			   tag = DUQ
+			   is_in_faction_with = DUQ
+			   is_puppet_of = DUQ
+		   }
+}
+}
+text = {
+	localization_key = GFX_Rpublic_China_Kuomintang
+
+	trigger = {
+		   OR = {
+			   tag = ROC
+			   is_in_faction_with = ROC
+			   is_puppet_of = ROC
+		   }
+}
+}
+text = {
 	localization_key = GFX_Commonwealth_of_Nations
 
 	trigger = {

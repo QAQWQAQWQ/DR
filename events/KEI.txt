@@ -1,0 +1,57 @@
+﻿###########################
+# KEI Events
+###########################
+
+add_namespace = KEI
+country_event = {
+	id = KEI.1
+	title = KEI.1.t
+	desc = KEI.1.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = KEI.1.a
+		kill_country_leader = yes
+		hidden_effect={
+			country_event={id=KEI.2}
+		}
+	}
+}
+country_event = {
+	id = KEI.2
+	title = KEI.2.t
+	desc = KEI.2.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = KEI.2.a
+		set_cosmetic_tag = KEI_Russian
+		SHW={
+			puppet = KEI
+		}
+		KEI={
+			set_popularities = {
+				Conservatism = 100
+			}
+		}
+		hidden_effect={
+			country_event={id=KEI.3 days=4}
+		}
+	}
+}
+country_event = {
+	id = KEI.3
+	title = KEI.3.t
+	desc = KEI.3.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = KEI.3.a
+		KEI={
+			transfer_state = 1044
+		}
+	}
+}	

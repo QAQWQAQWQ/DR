@@ -1,24 +1,23 @@
 
-state = {
-	id = 922
-	name = "STATE_922" 
-	manpower = 65000 
+state={
+	id=922
+	name="STATE_922"
 
-	state_category = town 
-
-
-	history = {
-		owner = XJC
+	history={
+		owner = MEG
 		buildings = {
 			infrastructure = 1
+
 		}
-		add_core_of = XJC
 		add_core_of = MEG
+
 	}
 
-	provinces = {
-		4751 10539 1774 7870 7808 13260
+	provinces={
+		4751 10539 
 	}
-
-	local_supplies = 0.0 
+	manpower=65000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }
