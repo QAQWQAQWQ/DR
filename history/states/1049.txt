@@ -1,0 +1,23 @@
+
+state = {
+	id = 1049
+	name = "STATE_1049"
+	manpower = 183423
+	
+	state_category = wasteland
+
+	history = {
+		owner = KEI
+		add_core_of = KEI
+		add_core_of = XJC
+		add_core_of = ZHX
+        buildings = {
+			infrastructure = 1 
+		}
+	}
+	provinces = {
+        10821  
+	}
+
+	local_supplies = 0.0 
+}
