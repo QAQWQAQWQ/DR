@@ -1,0 +1,15 @@
+ideas = {
+        country = {
+		ITE_Prussian_military_adviser = {
+			picture = Prussian_military_adviser
+			modifier = {
+				army_attack_factor=0.05
+                army_defence_factor=0.05
+				experience_gain_factor=0.1
+				experience_gain_infantry_training_factor=0.15
+                experience_gain_infantry_combat_factor=0.15
+				custom_modifier_tooltip = Prussian_military_adviser
+			}
+        }
+		}
+}
