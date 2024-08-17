@@ -16,6 +16,14 @@ defined_text = {
 		trigger = { original_tag =LEF}
 		localization_key = "NPL_jie_shao"
 	}
+	text = { #两盆介绍
+		trigger = { original_tag =XJC}
+		localization_key = "XJC_jie_shao"
+	}
+	text = { #两盆介绍
+		trigger = { original_tag =KEI}
+		localization_key = "KEI_jie_shao"
+	}
 	text = { #通用国家介绍
 		localization_key = "tong_yong_jie_shao"
 	}

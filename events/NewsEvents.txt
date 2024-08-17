@@ -133,6 +133,28 @@ country_event = {
 	}		
 }
 
+
+news_event = {
+	id = Hidden_News.12
+    hidden = yes
+	fire_only_once = yes
+   trigger = {
+	AND={
+		date > 1925.12.5
+		date < 1925.12.7
+	}
+	
+    }
+   immediate = {
+	news_event = WorldNew.12
+    }
+    mean_time_to_happen = {
+	days = 2
+    }
+	option = {
+		name = Hidden_News.12.a
+	}		
+}
 #######
 #######
 #######
@@ -331,5 +353,21 @@ news_event = {
 
 	option = {
 		name = WorldNew.11.a
+	}		
+}
+
+news_event = {
+	id = WorldNew.12
+	title = WorldNew.12.t
+	desc = WorldNew.12.d
+
+	picture = GFX_WorldNew_12
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = WorldNew.12.a
 	}		
 }

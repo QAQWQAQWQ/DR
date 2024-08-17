@@ -15,6 +15,11 @@ focus_tree = {
 		cost = 1.00
 		x = 7
 		y = 0
+		available = {
+			WWS={
+				has_war_with = AOX
+			}
+		}
 		completion_reward={
 			ITE={
 				leave_faction = yes
@@ -133,6 +138,21 @@ focus_tree = {
 			162={
 				add_claim_by = ITE
 			}
+			PMA={
+				if={
+					limit = {
+						ITE={
+							has_war_with = TCY
+						}
+					}
+					add_to_war = {
+						targeted_alliance = ITE
+						enemy = TCY
+						hostility_reason = asked_to_join
+					}
+				}
+			}
+			
 		}
 	}
 	focus = {
@@ -167,18 +187,24 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = ITE_Focus6
-		}
-		prerequisite = {
 			focus = ITE_Focus7
 		}
 		available = {
+			OR={
+				161={
+					is_controlled_by = ITE
+				}
+				162={
+					is_controlled_by = ITE
+				}
+				159={
+					is_controlled_by = ITE
+				}
+			}
 		}
 		x = 10
 		y = 2
 		completion_reward = {
-			162={
-				add_claim_by = ITE
-			}
 			every_state = {
 				limit = {
 					is_claimed_by = ITE

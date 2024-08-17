@@ -1,4 +1,5 @@
 spriteTypes = {
+
 	spriteType = { 
 		name = "GFX_ideology_Revolutionism_group" 
 		texturefile = "gfx/interface/ideologies/Revolutionism.dds"
@@ -54,4 +55,18 @@ spriteTypes = {
 		name = "GFX_ideology_JPN_Classicism_Conservatism" 
 		texturefile = "gfx/interface/ideologies/JPN_Classicism_Conservatism.dds"
 	}
+
+	spriteType = { 
+		name = "GFX_ideology_Three_People_Principles_Reformism" 
+		texturefile = "gfx/interface/ideologies/Three_Principles_People.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_Three_Principles_People_Liberalism" 
+		texturefile = "gfx/interface/ideologies/Three_Principles_People.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_Three_People_Principles_Conservatism" 
+		texturefile = "gfx/interface/ideologies/Three_Principles_People.dds"
+	}
 }
+

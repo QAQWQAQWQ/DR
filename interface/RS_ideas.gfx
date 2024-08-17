@@ -1,4 +1,16 @@
 spriteTypes = {
+	spriteType = {
+	    name = "GFX_idea_Merchant_Republic"
+	    texturefile = "gfx/interface/ideas/LFR/Merchant_Republic.dds"
+    }
+	spriteType = {
+	    name = "GFX_idea_1925_Currency_crisis"
+	    texturefile = "gfx/interface/ideas/PTY/1925_Currency_crisis.dds"
+    }
+	spriteType = {
+	    name = "GFX_idea_Prussian_military_adviser"
+	    texturefile = "gfx/interface/ideas/ITE/Prussian_military_adviser.dds"
+    }
     spriteType = {
 	    name = "GFX_idea_TEQ_humiliation_icon"
 	    texturefile = "gfx/interface/ideas/TEQ/humiliation.dds"

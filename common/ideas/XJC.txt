@@ -3,7 +3,8 @@ ideas = {
 		XJC_Mainland_refugees = {
 			picture = Mainland_refugees
 			modifier = {
-                
+				monthly_population=0.05
+                people_cost_modifier=0.1
             }
 		}
 }

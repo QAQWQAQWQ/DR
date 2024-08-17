@@ -49,7 +49,7 @@ guiTypes = {
 		iconType ={
 			name ="production_header_bg"
 			spriteType = "GFX_header_bg"
-			position = { x= 0 y = 7 }
+			position = { x= 0 y = 11 }
 			Orientation = "UPPER_LEFT"
 			scale = 1.02
 			
@@ -70,7 +70,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "research_win_top"
-			position = { x = -5 y = 45 } 
+			position = { x = -5 y = 40 } 
 			size = { width = 100% height = 80% }
 
 			iconType = {
@@ -123,7 +123,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name ="research_slots"
-			position = { x=6 y=180 }
+			position = { x=6 y=177 }
 			size = { width=551 height=-1 }
 			verticalScrollbar = "right_vertical_slider"
 			scroll_wheel_factor = 40
@@ -174,7 +174,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "research_slot_entry"
-		position = { x=-5 y=-15 } 
+		position = { x=-5 y=55 } 
 		size = { width=500 height= 100 }
 		clipping = no
 		

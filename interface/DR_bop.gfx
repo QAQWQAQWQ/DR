@@ -1,6 +1,14 @@
 
 spriteTypes = {
+	spriteType = {
+		name = "GFX_bop_FRW_Power_struggles_right"
+		texturefile = "gfx/interface/bop/FRW_Communist_Party.dds"
+	}
 
+	spriteType = {
+		name = "GFX_bop_FRW_Power_struggles_left"
+		texturefile = "gfx/interface/bop/FRW_Social_Democracy.dds"
+	}
 	spriteType = {
 		name = "GFX_bop_League_no"
 		texturefile = "gfx/interface/bop/bop_League_no.dds"

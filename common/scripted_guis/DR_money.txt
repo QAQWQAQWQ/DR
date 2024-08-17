@@ -39,7 +39,21 @@ scripted_gui = {
 			has_country_flag = entry_money_system_ui_window
 		} 
 		effects = {
-			
+			close_money_system_name_click={ 
+				set_custom_slider = yes
+				set_custom_slider_1= yes
+				if={
+					limit={
+						NOT = {
+							has_country_flag = entry_money_system_ui_window
+						}
+					}
+					set_country_flag=entry_money_system_ui_window
+				}
+				else={
+					clr_country_flag=entry_money_system_ui_window
+				}
+			}
 		}
 		dynamic_lists = {
 			custom_slider_grid = {

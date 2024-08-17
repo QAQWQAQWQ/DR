@@ -47,7 +47,7 @@ recruit_character = LFR_Phoa_Keng_Hek_Sia
 		
 		
 	}
-
+ 
 set_politics = {
 	ruling_party = Conservatism
 	last_election = "1918.11.11"
@@ -56,6 +56,7 @@ set_politics = {
 }
 
 add_ideas = {
+	LFR_Merchant_Republic
 }
 set_popularities = {
 	Liberalism = 5

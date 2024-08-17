@@ -279,15 +279,6 @@ guiTypes = {
 					}
 
 					instantTextboxType = {
-						name = "ideology_name"
-						position = { x = 5 y = 10 }
-						font = "hoi_16mbs"
-						text = "ideology"
-						maxWidth = 245
-						maxHeight = 20
-					}
-                                                                               
-					instantTextboxType = {
 						name = "elections"
 						position = { x = 5 y = 25 }
 						font = "hoi_16mbs"
@@ -308,11 +299,11 @@ guiTypes = {
 						position = { x = 103 y = 7 }
 						spriteType = "GFX_diplo_goal_button"
 						clicksound = click_default
-					}
-
+					} 
+ 
 					iconType = {
 						name = "goal_icon"
-						position = { x = 48 y = 39 }
+						position = { x = 50 y =45 }
 						spriteType = "GFX_goal_unknown"
 						centerposition = yes
 						scale = 0.9

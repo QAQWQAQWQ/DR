@@ -1,0 +1,11 @@
+ideas = {
+    country = {
+		1925_Currency_crisis = {
+			picture = 1925_Currency_crisis
+			modifier = {
+				gdp_growth_modifier=-0.35
+				gdp_inflation_modifier=0.40
+			}
+        }
+	} 
+}
