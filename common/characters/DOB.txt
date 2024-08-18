@@ -12,5 +12,44 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	DOB_Friedrich_von_Friedeburg={
+		name=DOB_Friedrich_von_Friedeburg
+		portraits={
+			army ={
+				large="gfx/leaders/DOB/portrait_Friedrich_von_Friedeburg.tga"
+			}
+		}
+		corps_commander = {
+			traits={ skilled_staffer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	DOB_Berthold_von_Deimling={
+		name=DOB_Berthold_von_Deimling
+		portraits={
+			army ={
+				large="gfx/leaders/DOB/portrait_Berthold_von_Deimling.tga"
+			}
+		}
+		corps_commander = {
+			traits={ Lieutenant_general }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
 	}
 	}

@@ -6,11 +6,67 @@ characters={
 				large="gfx/leaders/DOF/portrait_Wilhelm_Karl_Paul_Heinrich_Friedrich.tga"
 			}
 		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
 		country_leader={
 			ideology=Classicism_Conservatism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
 		}
+	}
+	DOF_Paul_von_Schaefer={
+		name=DOF_Paul_von_Schaefer
+		portraits={
+			army ={
+				large="gfx/leaders/DOF/portrait_Paul_von_Schaefer.tga"
+			}
+		}
+		field_marshal = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	DOF_Otto_von_Hugel={
+		name=DOF_Otto_von_Hugel
+		portraits={
+			army ={
+				large="gfx/leaders/DOF/portrait_Otto_von_Hugel.tga"
+			}
+		}
+		corps_commander = {
+			traits={ Lieutenant_general }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+
+	}
+	DOF_Friedrich_von_Graevenitz={
+		name=DOF_Friedrich_von_Graevenitz
+		portraits={
+			army ={
+				large="gfx/leaders/DOF/portrait_Friedrich_von_Graevenitz.tga"
+			}
+		}
+		corps_commander = {
+			traits={ skilled_staffer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+
 	}
 	}
