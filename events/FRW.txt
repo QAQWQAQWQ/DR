@@ -992,6 +992,9 @@ country_event = {
 				ruling_only = yes
 		}
 	}
+	immediate = {
+		set_country_flag = FRW.35_flag
+	}
 	option = {
 		name = FRW.35.a
 		trigger = {

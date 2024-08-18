@@ -31,9 +31,23 @@
 #	category = country
 #}
 people_cost_modifier = {
-	color_type = good
-	value_type = number
+	color_type = bad
+	value_type = percentage
 	precision = 3
 	 
-	category = country
+	category = all
+}
+gdp_growth_modifier = {
+	color_type = good
+	value_type = percentage
+	precision = 3
+	 
+	category = all
+}
+gdp_inflation_modifier = {
+	color_type = bad
+	value_type = percentage
+	precision = 3
+	 
+	category = all
 }

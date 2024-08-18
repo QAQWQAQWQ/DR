@@ -218,26 +218,6 @@ money_system_value_tax_TT:0 "个人所得税税率：     [?people_tax_qaq]%\n\n
 
 ECO_icon_numbers:0 "[ROOT.GetFlag]§Y[ROOT.GetName]§!政府\n\n[ECO_icon_TT]"
 
-GetECOICON_NAME_A_UP:0 "§Y极好§!"
-ECO_iconA_UP_TT:0 "这个国家的政府信用评级为：§Y极好§!\n具有极高的信用程度和信用记录，资金实力雄厚，履约能力强。"
-
-GetECOICON_NAME_A_DOWN:0 "§H优良§!"
-ECO_iconA_DOWN_TT:0 "这个国家的政府信用评级为：§G优良§!\n具有良好的信用程度和信用记录，资金实力充足，履约能力强。"
-
-GetECOICON_NAME_B_UP:0 "§G尚可§!"
-ECO_iconB_UP_TT:0 "这个国家的政府信用评级为：§G尚可§!\n具有中等的信用程度和信用记录，资金实力尚可，履约能力中等。"
-
-GetECOICON_NAME_B_DOWN:0 "§G欠佳§!"
-ECO_iconB_DOWN_TT:0 "这个国家的政府信用评级为：§O欠佳§!\n具有欠佳的信用程度和信用记录，资金实力欠佳，履约能力欠佳。"
-
-GetECOICON_NAME_C_UP:0 "§O较差§!"
-ECO_iconC_UP_TT:0 "这个国家的政府信用评级为：§O较差§!\n具有较差的信用程度和信用记录，资金实力较差，履约能力较差。"
-
-GetECOICON_NAME_C_DOWN:0 "§O糟糕§!"
-ECO_iconC_DOWN_TT:0 "这个国家的政府信用评级为：§O糟糕§!\n具有糟糕的信用程度和信用记录，资金实力糟糕，履约能力糟糕。"
-
-GetECOICON_NAME_D:0 "§R破产§!"
-ECO_iconD_TT:0 "这个国家的政府毫无信用可言，他们不会在意信用程度和信用记录，国库一贫如洗，丧失履约能力。"
 
 
 FRW_United_States_Europe:0 "欧洲合众国"
@@ -626,6 +606,20 @@ XJC_Court_struggles_right_side_desc:0 "§Y哥老会§! \n\n。"
 XJC_Court_struggles_right_side_range_Low:0 "哥老会现状：缺乏支持"
 XJC_Court_struggles_right_side_High:0 "哥老会现状：广泛支持"
 
+
+
+FRW_Power_struggles_balance:0 "法国权力斗争"
+FRW_Power_struggles_mid_range:0 "现状：均势"
+FRW_Power_struggles_left_side:0 "§Y法国共产党§!"
+FRW_Power_struggles_left_side_desc:0 "§Y法国共产党§! \n\n。"
+FRW_Power_struggles_left_side_range_Low:0 "法国共产党现状：缺乏支持"
+FRW_Power_struggles_left_side_High:0 "法国共产党现状：广泛支持"
+
+FRW_Power_struggles_right_side:0 "§Y法国社会党§!"
+
+FRW_Power_struggles_right_side_desc:0 "§Y法国社会党§! \n\n。"
+FRW_Power_struggles_right_side_range_Low:0 "法国社会党现状：缺乏支持"
+FRW_Power_struggles_right_side_High:0 "法国社会党现状：广泛支持"
 
 
 BRA_Convince_Senate:0 "说服参议院"

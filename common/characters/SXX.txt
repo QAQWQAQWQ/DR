@@ -1,4 +1,18 @@
 characters={
+	SXX_ChenShuPang={
+		name=SXX_ChenShuPang
+		portraits={
+			civilian={
+				large="gfx/leaders/SXX/portrait_ChenShuPang.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	SXX_FengYuXiang={
 		name=SXX_FengYuXiang
 		portraits={

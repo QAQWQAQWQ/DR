@@ -2,11 +2,11 @@ guiTypes = {
 
     containerWindowType = {
         name = "tech_level_windows"
-        position = { x=0 y=0}
+        position = { x=-555 y=120}
         size = { width=550 height=100%% }
         instantTextboxType = {
             name = "tech_level_title"
-            position = { x = 580 y = 10 }
+            position = { x = 580 y = 30 }
             textureFile = ""
             font = "hoi_36header"
             borderSize = {x = 0 y = 0}
@@ -17,7 +17,7 @@ guiTypes = {
         }
         instantTextboxType = {
             name = "tech_level_desc"
-            position = { x = 580 y = 60 }
+            position = { x = 580 y = 80 }
             textureFile = ""
             font = "hoi_18mbs"
             borderSize = {x = 0 y = 0}
@@ -30,6 +30,11 @@ guiTypes = {
 		iconType = {
 			name = "tech_level_upd_value"
 			spriteType = "GFX_tech_level_upd_balance"
+			position = { x = 575 y = 120 }
+		}
+                                iconType = {
+			name = "tech_level_upd_value_back"
+			spriteType = "GFX_tech_level_upd_balance_back"
 			position = { x = 575 y = 120 }
 		}
     }

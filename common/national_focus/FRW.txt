@@ -7,7 +7,7 @@ focus_tree = {
 			add = 10
 			tag = FRW
 		}
-	}
+	} 
 	focus = {
 		id = FRW_focus1
 		icon = GFX_goal_FRW_focus1
@@ -1058,7 +1058,9 @@ completion_reward = {
 		x = 45
 		y = 7
     completion_reward = { 
-remove_ideas = FRW_Chaotic_socialism
+		set_power_balance = {
+			id = FRW_Power_struggles_balance
+		}
     }
 	}
 	focus = {
@@ -1331,7 +1333,9 @@ remove_ideas = FRW_Chaotic_socialism
 		x = 31
 		y = 7
     completion_reward = {
-		remove_ideas = FRW_Chaotic_socialism
+		set_power_balance = {
+			id = FRW_Power_struggles_balance
+		}
     }
 	}
 	focus = { 
@@ -1705,6 +1709,9 @@ focus = {
 completion_reward = {
 	remove_ideas = FRW_Chaotic_socialism
 	add_ideas = FRW_Decentralized_party_organizations
+	set_power_balance = {
+		id = FRW_Power_struggles_balance
+	}
 }
 } 
 focus = {  

@@ -13,7 +13,10 @@ Introduction_tractors_dy = {
 	production_speed_grain_farms_factor=0.1
 }
 
-
+Left_wing_tendencies = {
+	enable = { always = yes }
+	Reformism_acceptance=10
+}
 
 Spontaneous_army_dy = {
 	enable = { always = yes }

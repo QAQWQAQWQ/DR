@@ -309,7 +309,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "countryofficercorpview"
 		position = { x=-606 y=78 }
-		show_position = { x=-6 y =100 }
+		show_position = { x=-6 y =105 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
@@ -535,7 +535,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "preferred_tactic_container"
-		position = { x = 420 y = 28 }
+		position = { x = 400 y = 28 }
 		size = { width = 98% height = 270 }
 	
 		buttonType ={

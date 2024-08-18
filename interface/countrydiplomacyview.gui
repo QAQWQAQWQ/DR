@@ -258,7 +258,7 @@ guiTypes = {
 					iconType ={
 						name ="pol_view_bg"
 						spriteType = "GFX_pol_piechart_overlay"
-						position = { x= 9 y = -6 }
+						position = { x= 8 y = -5 }
 					}
 				}
 
@@ -278,15 +278,6 @@ guiTypes = {
 						fixedsize = yes
 					}
 
-					instantTextboxType = {
-						name = "ideology_name"
-						position = { x = 5 y = 10 }
-						font = "hoi_16mbs"
-						text = "ideology"
-						maxWidth = 245
-						maxHeight = 20
-					}
-                                                                               
 					instantTextboxType = {
 						name = "elections"
 						position = { x = 5 y = 25 }
@@ -308,11 +299,11 @@ guiTypes = {
 						position = { x = 103 y = 7 }
 						spriteType = "GFX_diplo_goal_button"
 						clicksound = click_default
-					}
-
+					} 
+ 
 					iconType = {
 						name = "goal_icon"
-						position = { x = 48 y = 39 }
+						position = { x = 50 y =45 }
 						spriteType = "GFX_goal_unknown"
 						centerposition = yes
 						scale = 0.9

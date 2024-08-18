@@ -104,9 +104,9 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "ideology"
-			position = { x = -202 y = -391 }
+			position = { x = -202 y = -390 }
 			font = "hoi_16mbs"
-			text = [GetIdeologicalSubtype]
+			text = [?country_leader.GetIdeologyGroup]
 			format = LEFT
 			maxWidth = 155
 			maxHeight = 20
@@ -119,9 +119,9 @@ guiTypes = {
 		size = { width = 200 height = 100 }
 		orientation = UPPER_LEFT
 		clipping = no
-		buttontype = {
+		buttontype = { 
 			name = "zi_ji_da_kai"
-			position = { x = -215 y = -265 }
+			position = { x = -215 y = -235 }
 			spritetype = "GFX_you_zhen_ying"
 			orientation = UPPER_LEFT
 			clicksound = "click_close"

@@ -1,3 +1,4 @@
+
 build_private_capital = {
     set_variable = { private_worker_wage = 5 }
     set_variable = { private_goods_factory = 0 }
@@ -972,6 +973,7 @@ remake_pop_cost = {
     }
     set_variable = { people_cost = num_of_people }
     divide_variable = { var = people_cost value = 4000 }
+    multiply_variable = { people_cost = modifier@people_cost_modifier }
 }
 remake_nat_tre_del = {
     set_variable = { new_nat_tre_del = 0 }
@@ -1012,6 +1014,7 @@ payroll_qwq = {
         add_to_variable = { private_capital = capital_upd }
         subtract_from_variable = { private_capital = private_cost }
     }
+    
 }
 industrial_expansion = {
     set_variable = {
@@ -1309,7 +1312,9 @@ monthly_we_do = {
         
         add_to_variable = { gdp_inflation = 1 }
         subtract_from_variable = { gdp_inflation = gdp_growth }
-        
+
+        multiply_variable = { gdp_growth = modifier@gdp_growth_modifier }
+        multiply_variable = { gdp_inflation = modifier@gdp_inflation_modifier }
         ai_inflation_work = yes
         ai_debt_work = yes
         set_variable = { nat_debt_qwq = nat_debt }

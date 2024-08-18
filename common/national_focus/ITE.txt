@@ -1,0 +1,255 @@
+#!gfx:interface\RS_icon.gfx 
+focus_tree = {
+	id = ITE 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ITE
+		}
+	}
+	default = no
+	focus = {
+		id = ITE_Focus1
+		icon = GFX_goal_ITE_Focus1
+		cost = 1.00
+		x = 7
+		y = 0
+		available = {
+			WWS={
+				has_war_with = AOX
+			}
+		}
+		completion_reward={
+			ITE={
+				leave_faction = yes
+			}
+			TCY={
+				leave_faction = yes
+			}
+			PMA={
+				leave_faction = yes
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = ITE_Focus2
+		icon = GFX_goal_ITE_Focus2
+		cost = 5.00
+		x = 7
+		y = 1
+		prerequisite = {
+			focus = ITE_Focus1
+		}
+        completion_reward = {
+	      
+		}
+	}
+	focus = {
+		id = ITE_Focus3
+		icon = GFX_goal_ITE_Focus3
+		cost = 5.00
+		prerequisite = {
+			focus = ITE_Focus1
+		}
+		mutually_exclusive = {
+			focus = SIW_Attack_Montenegro
+		}
+		available = {
+		}
+		x = 4
+		y = 1
+        completion_reward = {
+			add_dynamic_modifier = {
+				modifier = Left_wing_tendencies
+			}
+		}
+	}
+	focus = {
+		id = ITE_Focus4
+		icon = GFX_goal_ITE_Focus4
+		cost = 5.00
+		prerequisite = {
+			focus = ITE_Focus3
+		}
+		available = {
+		}
+		x = 4
+		y = 2
+		completion_reward = {
+	       add_opinion_modifier = {
+			target = FRW
+			modifier = Left_wing_tendencies
+		   }
+		   hidden_effect = {
+			 give_market_access = FRW
+		   }
+		   FRW={
+			custom_effect_tooltip = give_market
+		   }
+		   
+		}
+	}
+	focus = {
+		id = ITE_Focus5
+		icon = GFX_goal_ITE_Focus5
+		cost = 5.00
+		prerequisite = {
+			focus = ITE_Focus2
+		}
+		mutually_exclusive = {
+			
+		}
+		available = {
+		}
+		x = 7
+		y = 2
+		completion_reward = {
+	         add_ideas = ITE_Prussian_military_adviser
+			 WWS={
+				WWS_Alexander_Feng_Crook={
+					set_nationality = ITE
+				 }
+			 }
+			 
+		}
+	}
+	focus = {
+		id = ITE_Focus6
+		icon = GFX_goal_ITE_Focus6
+		cost = 5.00
+		prerequisite = {
+			focus = ITE_Focus1
+		}
+		prerequisite = {
+			focus = ITE_Focus9
+		}
+		mutually_exclusive = {
+			focus = ITE_Focus7
+		}
+		available = {
+		}
+		x = 9
+		y = 1
+		completion_reward = {
+			162={
+				add_claim_by = ITE
+			}
+			PMA={
+				if={
+					limit = {
+						ITE={
+							has_war_with = TCY
+						}
+					}
+					add_to_war = {
+						targeted_alliance = ITE
+						enemy = TCY
+						hostility_reason = asked_to_join
+					}
+				}
+			}
+			
+		}
+	}
+	focus = {
+		id = ITE_Focus7
+		icon = GFX_goal_ITE_Focus7
+		cost = 5.00
+		prerequisite = {
+			focus = ITE_Focus1
+		}
+		prerequisite = {
+			focus = ITE_Focus9
+		}
+		mutually_exclusive = {
+			focus = ITE_Focus6
+		}
+		available = {
+		}
+		x = 11
+		y = 1
+		completion_reward = {
+			161={
+				add_claim_by = ITE
+			}
+			162={
+				add_claim_by = ITE
+			}
+		}
+	}
+	focus = {
+		id = ITE_Focus8
+		icon = GFX_goal_ITE_Focus8
+		cost = 5.00
+		prerequisite = {
+			focus = ITE_Focus6
+			focus = ITE_Focus7
+		}
+		available = {
+			OR={
+				161={
+					is_controlled_by = ITE
+				}
+				162={
+					is_controlled_by = ITE
+				}
+				159={
+					is_controlled_by = ITE
+				}
+			}
+		}
+		x = 10
+		y = 2
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_claimed_by = ITE
+				}
+				add_core_of = ITE
+			}	
+			
+		}
+	}
+	
+	focus = {
+		id = ITE_Focus9
+		icon = GFX_goal_ITE_Focus9
+		cost = 5.00
+		prerequisite = {
+			
+		}
+		available = {
+		}
+		x = 12
+		y = 0
+		completion_reward = {
+	       159={
+			  add_claim_by = ITE
+		   }
+		}
+	}
+	focus = {
+		id = ITE_Focus10
+		icon = GFX_goal_ITE_Focus10
+		cost = 5.00
+		prerequisite = {
+			focus = ITE_Focus9
+		}
+		prerequisite = {
+			focus = ITE_Focus8
+		}
+		available = {
+		}
+		x = 12
+		y = 3
+		completion_reward = {
+			2={
+				add_claim_by = ITE
+			}
+		}
+	}
+}

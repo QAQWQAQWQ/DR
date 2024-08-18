@@ -217,6 +217,12 @@ SHW_Diverse_Russia
 	ideology = Conservatism
 	
 }
+"ITE"={
+	history = "ITE_GATHERING_STORM_DESC"
+	minor = yes
+	ideology = Conservatism
+	
+}
 effect = {
 	randomize_weather = 22345 # <- Obligatory in every bookmark !
 	#123 = { rain_light = yes }

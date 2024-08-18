@@ -13,6 +13,7 @@ guiTypes = {
 			position = { x = 112 y = 390 }
 			pdx_tooltip = "money_system_ui_TT"
 		}
+		
 }
     containerWindowType = {
 		name = "money_system_main_window"
@@ -20,6 +21,7 @@ guiTypes = {
 		#position = { x = 2 y = 5 }
 		size = {width = 550 height = 380}
 		moveable = no
+		
 		iconType = {
 			name = "ECO_icon1"
             spriteType ="GFX_economy_background"
@@ -95,19 +97,19 @@ guiTypes = {
 		iconType ={
 		 	name ="gdp_bg"
 			spriteType = "GFX_generic_box"
-			position = { x=430 y=20 }
+			position = { x=400 y=20 }
 		}
 		buttonType = {
 			name ="gdp_icon"
 			spriteType = "GFX_help_button" #72
-			position = { x= 430 y = 20}
+			position = { x= 400 y = 20}
 			shortcut = "ctrl+e"
 			pdx_tooltip = "Table_OPEN"
 		} 
 		
 		instantTextBoxType = {
 			name ="gdp_text"
-			position = { x= 460 y = 24 }
+			position = { x= 430 y = 24 }
 			font = "hoi_18mbs"
 			text = "查看排名"
 			format = left
@@ -151,6 +153,16 @@ guiTypes = {
 		# 	fixedsize = yes
 		# 	format = left			
 		# } 
+		
+		buttonType = { 
+			name = "close_money_system_name"
+			position = { x = 510 y = 15 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"		
+		}
+
 		instantTextBoxType = { 
 			name = "money_system_main_name"
 			position = { x = 25 y = 15 }
@@ -161,7 +173,8 @@ guiTypes = {
 			maxHeight = 32
 			fixedsize = yes
 			format = left			
-		}   
+		}     
+
 		instantTextBoxType = {
 			name = "money_system_value_name"
 			position = { x = 37 y = 65 }
