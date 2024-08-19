@@ -1,0 +1,20 @@
+
+state={
+	id=1060
+	name="STATE_1060"
+	manpower = 1157600
+	
+	state_category = rural
+	history={
+		owner = VAN
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={ 
+		1248 1328 1400 1605 4363 7271 7380 10180 12109 12150 12176
+	}
+
+	local_supplies=0.0 
+}
