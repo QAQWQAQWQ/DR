@@ -1,0 +1,20 @@
+
+state={
+	id=1053
+	name="STATE_1053"
+	manpower = 5937900
+	
+	state_category = town
+	history={
+		owner = YDA
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		1444 1637 10358 10471 12035 12307 12452
+	}
+
+	local_supplies=0.0 
+}

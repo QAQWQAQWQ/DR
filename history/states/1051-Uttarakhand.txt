@@ -1,0 +1,20 @@
+
+state={
+	id=1051
+	name="STATE_1051"
+	manpower = 1815500
+	
+	state_category = rural
+	history={
+		owner = YDA
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		1898 3989 5002 5157 10021
+	}
+
+	local_supplies=0.0 
+}
