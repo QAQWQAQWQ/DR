@@ -178,6 +178,70 @@ news_event = {
 		name = Hidden_News.13.a
 	}		
 }
+
+news_event = {
+	id = Hidden_News.14
+    hidden = yes
+	fire_only_once = yes
+   trigger = {
+	AND={
+		date > 1920.10.3
+		date < 1920.10.5
+	}
+	
+    }
+   immediate = {
+	news_event = WorldNew.14
+    }
+    mean_time_to_happen = {
+	days = 2
+    }
+	option = {
+		name = Hidden_News.14.a
+	}		
+}
+news_event = {
+	id = Hidden_News.15
+    hidden = yes
+	fire_only_once = yes
+   trigger = {
+	AND={
+		date > 1920.10.14
+		date < 1920.10.16
+	}
+	
+    }
+   immediate = {
+	news_event = WorldNew.15
+    }
+    mean_time_to_happen = {
+	days = 2
+    }
+	option = {
+		name = Hidden_News.15.a
+	}		
+}
+news_event = {
+	id = Hidden_News.16
+    hidden = yes
+	fire_only_once = yes
+   trigger = {
+	AND={
+		date > 1921.1.12
+		date < 1921.1.14
+	}
+	
+    }
+   immediate = {
+	news_event = WorldNew.16
+    }
+    mean_time_to_happen = {
+	days = 2
+    }
+	option = {
+		name = Hidden_News.16.a
+	}		
+}
 #######
 #######
 #######
@@ -407,5 +471,51 @@ news_event = {
 
 	option = {
 		name = WorldNew.13.a
+	}		
+}
+
+news_event = {
+	id = WorldNew.14
+	title = WorldNew.14.t
+	desc = WorldNew.14.d
+
+	picture = GFX_WorldNew_14
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = WorldNew.14.a
+	}		
+}
+news_event = {
+	id = WorldNew.15
+	title = WorldNew.15.t
+	desc = WorldNew.15.d
+
+	picture = GFX_WorldNew_15
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = WorldNew.15.a
+	}		
+}
+news_event = {
+	id = WorldNew.16
+	title = WorldNew.16.t
+	desc = WorldNew.16.d
+
+	picture = GFX_WorldNew_16
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = WorldNew.16.a
 	}		
 }
