@@ -177,7 +177,7 @@ guiTypes = {
 		iconType ={
 			name ="war_support_value_bg"
 			spriteType = "GFX_generic_box_smallest"
-			position = { x = 246 y = 5 }
+			position = { x = 243 y = 5 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -300,7 +300,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "cp"
-			position = { x= 550 y = 35}
+			position = { x= 610 y = 35}
 			clipping = no
 			size = { width=62 height=30 }
 			Orientation = UPPER_LEFT

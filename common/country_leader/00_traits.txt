@@ -6773,4 +6773,10 @@ Chairman_Cheka = {
 		war_stability_factor = 0.05
 		industrial_capacity_factory = 0.05
 	}
+	Master_Administration = {
+		random = no
+		state_production_speed_buildings_factor = 0.1
+		people_cost_modifier= -0.15
+		new_nat_tre_modifier= -0.05
+	}
 }

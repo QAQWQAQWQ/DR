@@ -148,6 +148,12 @@ spriteTypes = {
 	    name = "GFX_idea_Inefficient_industry"
 	    texturefile = "gfx/interface/ideas/FRW_Inefficient_industry.dds"
     }
+
+	spriteType = {
+		name = "GFX_idea_Angel_Plan"
+		texturefile = "gfx/interface/ideas/Angel_Plan.dds"
+	}
+
 	spriteType = {
 	    name = "GFX_idea_Dissidents_army"
 	    texturefile = "gfx/interface/ideas/Dissidents_army.dds"

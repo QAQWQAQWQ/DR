@@ -7,7 +7,7 @@ ideas = {
 		Syndicate_economy = {
 
 			available = {
-				hidden_trigger = {
+				hidden_trigger = { 
 					has_stability > 9 
 				  }
 				}
@@ -129,11 +129,9 @@ ideas = {
 
 			}
 			modifier = {
-				government_investment_modifier=2.150
-				factory_produced_modifier=0.300
-				tax_from_company_modifier=0.420
-				tax_from_consumption_modifier=0.420
-				market_available_for_dumping_modifier=0.450
+				people_cost_modifier=0.05
+				gdp_growth_modifier=0.02
+				new_nat_tre_modifier=0.05
 			}
 			cost = 0
 			removal_cost = -1

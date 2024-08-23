@@ -30,7 +30,40 @@ guiTypes = {
 			pdx_tooltip_delayed = "grain_value_TT_TOOLTIP"
 		}#NUM_OF_grain
 	}
-	
+
+}
+guiTypes = {
+containerWindowType = {
+	name = "jobless_window"
+	position = { x= 490 y = 36}
+	clipping = no
+	# size = { width=50 height=24 }
+	Orientation = UPPER_LEFT
+	background = {
+		name = "bg"
+		spriteType = "GFX_generic_box_96"
+	}
+	iconType = {
+		name ="jobless_icon"
+		spriteType = "GFX_jobless_icon"
+		position = { x= 2 y = 1 }
+		Orientation = "UPPER_LEFT"
+		pdx_tooltip = "jobless_value_TOOLTIP"
+		pdx_tooltip_delayed = "jobless_value_TT_TOOLTIP"
+	}		
+	instantTextBoxType = {
+		name ="jobless_value"
+		position = { x= 25 y = 5 }
+		font = "hoi_18mbs"
+		text = "[?Jobless_rate_value|2]%"
+		format = RIGHT
+		maxWidth = 60
+		maxHeight = 24
+		fixedsize = yes
+		pdx_tooltip = "jobless_value_TOOLTIP"
+		pdx_tooltip_delayed = "jobless_value_TT_TOOLTIP"
+	}#NUM_OF_grain
+}
 }
 guiTypes = {
 	containerWindowType = {
@@ -50,7 +83,7 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"  
 			pdx_tooltip = "GDP_TOOLTIP"
 		}		
-		instantTextBoxType = { 
+		instantTextBoxType = {  
 			name ="money_value"
 			position = { x= 18 y = 5 }
 			font = "hoi_18mbs"

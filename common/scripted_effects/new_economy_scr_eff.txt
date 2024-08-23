@@ -815,6 +815,9 @@ monthly_build_new_economy = {
     set_variable = { cash_upd = tot_large_of_market }
     
     multiply_variable = { cash_upd = 0.5 }
+    
+    multiply_variable = { new_nat_tre = modifier@new_nat_tre_modifier }
+    
 }
 sell_goods = {
     # our_nation_not_sphere
@@ -1309,12 +1312,16 @@ monthly_we_do = {
         divide_variable = { gdp_growth = bef_gdpmn }
         multiply_variable = { gdp_growth = 100 }
         subtract_from_variable = { gdp_growth = 100 }
+
         
+
         add_to_variable = { gdp_inflation = 1 }
         subtract_from_variable = { gdp_inflation = gdp_growth }
 
-        multiply_variable = { gdp_growth = modifier@gdp_growth_modifier }
+        
         multiply_variable = { gdp_inflation = modifier@gdp_inflation_modifier }
+
+        multiply_variable = { gdp_growth = modifier@gdp_growth_modifier }
         ai_inflation_work = yes
         ai_debt_work = yes
         set_variable = { nat_debt_qwq = nat_debt }
@@ -1410,5 +1417,63 @@ build_base_test = {
         every_controlled_state = {
             multiply_variable = { state_cash_tot = 1.2 }
         }
+    }
+}
+
+NEW_Literacy_rate = {
+	set_variable = { new_Literacy_rate = max_manpower_k }
+    set_variable = {
+        total_University = total_constructed_University
+    }
+    multiply_variable = {
+        total_University = 0.01
+    }
+	divide_variable = {
+        new_Literacy_rate = total_University
+    }
+    divide_variable = {
+        new_Literacy_rate = num_of_factories
+    }
+}
+
+Jobless_rate = {
+	set_variable = { Jobless_rate_value = max_manpower_k }
+	divide_variable = {
+        Jobless_rate_value = num_of_factories
+    }
+    set_variable = { working_population = Jobless_rate_value }
+    multiply_variable = {
+       Jobless_rate_value = 0.01
+    }
+    if={
+        limit={
+            AND={
+                num_of_factories < 20
+                has_manpower > 100000
+            }
+        }
+        multiply_variable = {
+            Jobless_rate_value = 0.1
+        }
+    }
+    set_variable = { Jobless_rate_stab_value = 0 }
+    subtract_from_variable = { Jobless_rate_stab_value = Jobless_rate_value }
+    multiply_variable = {
+        Jobless_rate_stab_value = 0.01
+    }
+
+    set_variable = { Jobless_rate_stab_value_0_02 = Jobless_rate_stab_value }
+    multiply_variable = {
+        Jobless_rate_stab_value_0_02 = 0.02
+    }
+
+
+    set_variable = { Jobless_rate_stab_tool = Jobless_rate_stab_value_0_02 }
+    divide_variable = {
+        Jobless_rate_stab_tool = 0.01
+    }
+    set_variable = { Jobless_rate_tool = Jobless_rate_stab_value }
+    divide_variable = {
+        Jobless_rate_tool = 0.01
     }
 }

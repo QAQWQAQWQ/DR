@@ -1,5 +1,11 @@
 ideas = {
     country = {
+		FRW_Angel_Plan= {
+			picture = Angel_Plan
+			modifier = {
+				monthly_population=0.04
+			}
+        }
 		####HIDDEN
 		Se_International_hidden= {
 			picture = Eagle_spirit

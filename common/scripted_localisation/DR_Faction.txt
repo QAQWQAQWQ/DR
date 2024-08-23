@@ -101,6 +101,29 @@ text = {
 }
 }
 text = {
+	localization_key = GFX_Warlord
+
+	trigger = {
+		   OR = {
+			   tag = ZXN
+			   is_in_faction_with = ZXN
+			   is_puppet_of = ZXN
+		   }
+}
+}
+
+text = {
+	localization_key = GFX_Progressive_Party
+
+	trigger = {
+		   OR = {
+			   tag = GUI
+			   is_in_faction_with = GUI
+			   is_puppet_of = GUI
+		   }
+}
+}
+text = {
 	localization_key = GFX_Commonwealth_of_Nations
 
 	trigger = {

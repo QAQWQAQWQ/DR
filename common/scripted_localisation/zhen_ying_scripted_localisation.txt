@@ -45,6 +45,22 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
+				ROOT.grid_faction_leader = ZXN
+			}
+		}
+		localization_key = "GFX_Warlord"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ROOT.grid_faction_leader = GUI
+			}
+		}
+		localization_key = "GFX_Progressive_Party"
+	}
+	text = {
+		trigger = {
+			check_variable = {
 				ROOT.grid_faction_leader = NPL
 			}
 		}
@@ -127,6 +143,28 @@ defined_text = {
 		}
 		localization_key = "GFX_Rpublic_China_Kuomintang"
 	}
+	text = {
+		trigger = {
+			THIS = {
+				is_in_array = {
+					global.faction_menber_ZXN = THIS
+				}
+			}
+		}
+		localization_key = "GFX_Warlord"
+	}
+	
+	text = {
+		trigger = {
+			THIS = {
+				is_in_array = {
+					global.faction_menber_GUI = THIS
+				}
+			}
+		}
+		localization_key = "GFX_Progressive_Party"
+	}
+	
 	text = {
 		trigger = {
 			THIS = {

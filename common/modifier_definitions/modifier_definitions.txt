@@ -51,3 +51,24 @@ gdp_inflation_modifier = {
 	 
 	category = all
 }
+new_nat_tre_modifier = {
+	color_type = good
+	value_type = percentage
+	precision = 3
+	 
+	category = all
+}
+University_building_modifier = {
+	color_type = good
+	value_type = percentage
+	precision = 3
+	 
+	category = all
+}
+tech_level_upd_value_var_modifier = {
+	color_type = good
+	value_type = percentage
+	precision = 3
+	 
+	category = all
+}

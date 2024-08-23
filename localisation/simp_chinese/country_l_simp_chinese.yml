@@ -113,6 +113,10 @@
 
  grain_value_TT_TOOLTIP:0 "我们的粮仓目前有[?resource_grain|0Y]单位,目前控制了[?num_owned_controlled_states|0Y]块省份，有些省份会提供额外粮食收入，每周会有粮食被消耗，每月会收获新一批粮食。"
 
+ jobless_value_TOOLTIP:0 "§Y失业率§!\n--目前失业人口:[?working_population|2Y]K\n\n当前失业率的影响：\n\n--GDP增长率：[?Jobless_rate_stab_tool|R]%\n--稳定度：[?Jobless_rate_tool|R]%\n--生产效率基础：[?Jobless_rate_tool|R]%\n--生产效率上限：[?Jobless_rate_tool|R]%\n--生产效率增长：[?Jobless_rate_tool|R]%\n--生产效率保持：[?Jobless_rate_tool|R]%"
+ jobless_value_TT_TOOLTIP:0 "失业率是反映劳动力市场供需情况的指标，是各国宏观调控的主要目标。高失业率会影响工厂的产出和建设，过高的失业率会导致经济增长动力减弱。"
+
+
  Global_power_texts1:0 "世界列强"
  Global_power_texts2:0 "独立国家"
  Global_power_texts3:0 "分离政权"

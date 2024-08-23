@@ -67,6 +67,18 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_Warlord"
+		texturefile = "gfx/interface/Faction/Warlord.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_Progressive_Party"
+		texturefile = "gfx/interface/Faction/Progressive_Party.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
 		name = "GFX_Commonwealth_of_Nations"
 		texturefile = "gfx/interface/Faction/Commonwealth_of_Nations.dds"
 		legacy_lazy_load = no

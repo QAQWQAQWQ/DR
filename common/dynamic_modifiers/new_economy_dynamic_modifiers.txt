@@ -17,3 +17,13 @@ factory_wage_fac = {
     industrial_capacity_factory = scrfac_wage_fac
     production_speed_buildings_factor = scrfac_wage_fac
 }
+
+Jobless_rate_stab = {
+	enable = { always = yes }
+    stability_factor = Jobless_rate_stab_value
+    gdp_growth_modifier= Jobless_rate_stab_value_0_02
+    production_factory_start_efficiency_factor= Jobless_rate_stab_value			
+    production_factory_max_efficiency_factor= Jobless_rate_stab_value			
+    production_factory_efficiency_gain_factor= Jobless_rate_stab_value						
+    line_change_production_efficiency_factor= Jobless_rate_stab_value
+}

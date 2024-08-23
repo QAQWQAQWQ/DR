@@ -1,4 +1,18 @@
 characters={
+	YED_Nikolai_Niklaevich={
+		name=YED_Nikolai_Niklaevich
+		portraits={
+			civilian={
+				large="gfx/leaders/YED/Portrait_Nikolai_Niklaevich.tga"
+			}
+		}
+		country_leader={
+			ideology=Classicism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	YED_Konstantinos_I={
 		name=YED_Konstantinos_I
 		portraits={

@@ -53,7 +53,9 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no
 }
-
+create_faction = China_Warlord
+add_to_faction = FTX
+add_to_faction = HNZ
 set_popularities = {
 	Liberalism = 5
 	Reactionary = 1

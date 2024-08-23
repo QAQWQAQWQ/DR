@@ -274,4 +274,13 @@ aluminium_factory = {
 		value = 5
 		infrastructure_construction_effect = yes
 	}
+	University = {
+		show_on_map = 1
+		base_cost = 18000
+		icon_frame = 22
+		damage_factor = 0.1
+		max_level = 2 # This is the max unlock level
+		value = 3
+		infrastructure_construction_effect = yes
+	}
 }

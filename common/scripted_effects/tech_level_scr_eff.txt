@@ -8,10 +8,14 @@ tech_level_upd_gui_value = {
         subtract_from_variable = { research_level_progress = 1 }
     }
     set_research_slots = research_level
+    
     set_variable = {
         tech_level_upd_value_var = research_level_progress
     }
     multiply_variable = {
         tech_level_upd_value_var = 100
+    }
+    add_to_variable = {
+        tech_level_upd_value_var = modifier@tech_level_upd_value_var_modifier
     }
 }

@@ -10,7 +10,7 @@ state={
 	state_category = town
 
 	history={
-		owner = BOJ
+		owner = YED
 		victory_points = { #Varna
 			9783 5
 		}
@@ -36,11 +36,11 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = BOJ
+		add_core_of = YED
 	}
 
 	provinces={
-		649 6967 9769 9783 9888 9902 9919
+		6967 9888 9902 9919
 	}
 
 	local_supplies=4.0 

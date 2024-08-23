@@ -782,7 +782,7 @@ focus = {
 	focus = {
 		id = FRW_focus36
 		icon = GFX_goal_FRW_focus36
-		cost = 4.00 
+		cost = 9.00 
 		x = 49
 		y = 0
 		available = {
@@ -795,7 +795,7 @@ focus = {
 	focus = {
 		id = FRW_focus37
 		icon = GFX_goal_FRW_focus37
-		cost = 4.00 
+		cost = 9.00 
 		prerequisite = {
 			focus = FRW_focus36
 		}
@@ -818,7 +818,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus40
 		icon = GFX_goal_FRW_focus40
-		cost = 4.00 
+		cost = 9.00 
 		prerequisite = {
 			focus = FRW_focus37
 		}
@@ -837,7 +837,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus38
 		icon = GFX_goal_FRW_focus38
-		cost = 4.00 
+		cost = 9.00 
 		prerequisite = {
 			focus = FRW_focus36
 		}
@@ -855,7 +855,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus39
 		icon = GFX_goal_FRW_focus39
-		cost = 4.00 
+		cost = 9.00 
 		prerequisite = {
 			focus = FRW_focus36
 		}
@@ -884,7 +884,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus41
 		icon = GFX_goal_FRW_focus41
-		cost = 4.00 
+		cost = 9.00 
 		prerequisite = {
 			focus = FRW_focus38
 		}
@@ -922,7 +922,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus43
 		icon = GFX_goal_FRW_focus43
-		cost = 4.00 
+		cost = 9.00 
 		prerequisite = {
 			focus = FRW_focus39
 		}
@@ -935,7 +935,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus44
 		icon = GFX_goal_FRW_focus44
-		cost = 4.00 
+		cost = 9.00 
 		prerequisite = {
 			focus = FRW_focus41
 		}
@@ -959,7 +959,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus42
 		icon = GFX_goal_FRW_focus42
-		cost = 4.00 
+		cost = 9.00  
 		prerequisite = {
 			focus = FRW_focus38
 		}
@@ -997,7 +997,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus45
 		icon = GFX_goal_FRW_focus45
-		cost = 4.00 
+		cost = 9.00 
 		prerequisite = {
 			focus = FRW_focus42
 		}
@@ -1021,7 +1021,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus46
 		icon = GFX_goal_FRW_focus46
-		cost = 4.00 
+		cost = 9.00 
 		prerequisite = {
 			focus = FRW_focus44
 		}
@@ -1045,7 +1045,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus47
 		icon = GFX_goal_FRW_focus47
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			 
 		} 
@@ -1066,7 +1066,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus48
 		icon = GFX_goal_FRW_focus48
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus63
 		}
@@ -1079,7 +1079,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus49
 		icon = GFX_goal_FRW_focus49
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus86
 		}
@@ -1093,7 +1093,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus50
 		icon = GFX_goal_FRW_focus50
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus79
 		}
@@ -1110,29 +1110,31 @@ completion_reward = {
 	focus = {
 		id = FRW_focus51
 		icon = GFX_goal_FRW_focus51
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus50
 		}
 		x = 20
 		y = 10
     completion_reward = {
-		add_trait = {
-			character = FRW_Jean_Jaures 
-			ideology = Socialism_Liberalism
-			trait = Tiger_France
-		}
+		
     }
 	} 
 	focus = {
 		id = FRW_focus52
 		icon = GFX_goal_FRW_focus52
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus62
 		}
 		prerequisite = {
 			focus = FRW_focus63
+		}
+		available = {
+			has_country_leader = {
+					character = FRW_Leon_Blum
+					ruling_only = yes
+			}
 		}
 		x = 31
 		y = 8
@@ -1145,41 +1147,53 @@ completion_reward = {
 	focus = {
 		id = FRW_focus53
 		icon = GFX_goal_FRW_focus53
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus62
+		}
+		available = {
+			has_country_leader = {
+					character = FRW_Leon_Blum
+					ruling_only = yes
+			}
 		}
 		x = 28
 		y = 8
     completion_reward = {
-		country_event = FRW.40
+	    add_popularity = {
+			ideology = Conservatism
+			popularity = -0.1
+		}
     }  
 	}
 	focus = {
 		id = FRW_focus54
 		icon = GFX_goal_FRW_focus54
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus63
 		}
 		x = 35
 		y = 8
     completion_reward = { 
-		unlock_decision_category_tooltip = FRW_Anti_imperialism
+		swap_ideas = {
+			remove_idea = Affirmative_action
+			add_idea = Radical_feminism
+		}
     }
 	}
 	focus = {
 		id = FRW_focus55
 		icon = GFX_goal_FRW_focus55
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus52
 		}
 		available = {
-			NPL={
-				exists = yes
+			has_country_leader = {
+					character = FRW_Leon_Blum
+					ruling_only = yes
 			}
-			has_completed_focus = FRW_focus54
 		}
 		x = 31
 		y = 9
@@ -1193,32 +1207,31 @@ completion_reward = {
 	focus = {
 		id = FRW_focus56
 		icon = GFX_goal_FRW_focus56
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus55
 		}
 		available = {
-			AGC={
-					exists = yes
+			has_country_leader = {
+					character = FRW_Leon_Blum
+					ruling_only = yes
 			}
 		}
 		x = 29
 		y = 10
     completion_reward = {
-		create_wargoal = {
-			type = take_state_focus
-			target = AGC
-			generator = { 950 28 }
-			expire = 0
-		}
+		add_ideas=FRW_Angel_Plan
     }
 	} 
 	focus = { 
 		id = FRW_focus57
 		icon = GFX_goal_FRW_focus57
-		cost = 7.00
-		prerequisite = {
-			focus = FRW_focus55
+		cost = 8.00
+		available = {
+			has_country_leader = {
+					character = FRW_Leon_Blum
+					ruling_only = yes
+			}
 		}
 		x = 33
 		y = 10
@@ -1232,14 +1245,19 @@ completion_reward = {
 	focus = { 
 		id = FRW_focus58
 		icon = GFX_goal_FRW_focus58
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus56
 		}
 		prerequisite = {
 			focus = FRW_focus57
 		}
-		
+		available = {
+			has_country_leader = {
+					character = FRW_Leon_Blum
+					ruling_only = yes
+			}
+		}
 		x = 31
 		y = 11
     completion_reward = {
@@ -1249,80 +1267,87 @@ completion_reward = {
 	focus = { 
 		id = FRW_focus59
 		icon = GFX_goal_FRW_focus59
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus47
 		}
 		prerequisite = {
 			focus = FRW_focus63
 		}
+		available = {
+			has_country_leader = {
+				character = FRW_Georges_Clemenceau
+				ruling_only = yes
+			}
+		}
 		x = 45
 		y = 8
     completion_reward = {
-		add_opinion_modifier = {
-			target = ENL
-			modifier = Show_goodwill
+		add_trait = {
+			character = FRW_Georges_Clemenceau
+			ideology = Progressivism_Liberalism
+			trait = Master_Administration
 		}
     }  
 	}
 	focus = { 
 		id = FRW_focus60
 		icon = GFX_goal_FRW_focus60
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus47
+		}
+		available = {
+			has_country_leader = {
+				character = FRW_Georges_Clemenceau
+				ruling_only = yes
+			}
 		}
 		x = 48
 		y = 8 
     completion_reward = {
-		hidden_effect = {
-			FRW={
-			give_market_access = ENL
-		}
-		}
-		
-		diplomatic_relation = {
-			country = ENL
-			relation = docking_rights
-			active = yes
-		}
-		diplomatic_relation = {
-			country = ENL
-			relation = non_aggression_pact
-			active = yes
-		}
-		diplomatic_relation = {
-			country = ENL
-			relation = guarantee
-			active = yes
-		}
+		add_political_power = 100
     }
 	}
 
 	focus = { 
 		id = FRW_focus61
 		icon = GFX_goal_FRW_focus61
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus60
+		}
+		available = {
+			has_country_leader = {
+				character = FRW_Georges_Clemenceau
+				ruling_only = yes
+			}
 		}
 		x = 50
 		y = 9
     completion_reward = {
-		swap_ideas = {
-			remove_idea = Local_trade_unions
-			add_idea = Trade_union_neutrality
-		}
-		add_ideas = FRW_Entrepreneurial_spirit
+		custom_effect_tooltip = FRW_focus61_tool
+		#random_core_state = {
+		#	limit = {
+		#		has_state_category = town
+		#	}
+		#	
+		#}
     }
 	} 
 
 	focus = { 
 		id = FRW_focus62
 		icon = GFX_goal_FRW_focus62
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			
+		}
+		available = {
+			has_country_leader = {
+					character = FRW_Leon_Blum
+					ruling_only = yes
+			}
 		}
 		allow_branch = {
 			#has_country_leader = {
@@ -1341,62 +1366,19 @@ completion_reward = {
 	focus = { 
 		id = FRW_focus63
 		icon = GFX_goal_FRW_focus63
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 		}
 		x = 38
 		y = 7
     completion_reward = {
-		random_core_state = {
-			limit = {
-				is_fully_controlled_by = ROOT
-			}
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-			
-		}
-		random_core_state = {
-			limit = {
-				is_fully_controlled_by = ROOT
-			}
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-			
-		}
+		set_cosmetic_tag = FRW_republic_country
     }
 	}
 	focus = { 
 		id = FRW_focus64
 		icon = GFX_goal_FRW_focus64
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus63
 		}
@@ -1410,56 +1392,44 @@ completion_reward = {
 	focus = { 
 		id = FRW_focus65
 		icon = GFX_goal_FRW_focus65
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus64
 		}
 		x = 36
 		y = 9
     completion_reward = {
-		swap_ideas = {
-			remove_idea = Mixed_economy
-			add_idea = Market_economy
+		add_popularity = {
+			ideology = Revolutionism
+			popularity = -0.05
 		}
     }
 	}
 	focus = { 
 		id = FRW_focus66
 		icon = GFX_goal_FRW_focus66
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus64
 		} 
 		x = 40
 		y = 9
     completion_reward = {
-		add_stability = 0.02
-			random_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			add_popularity = {
-				ideology = Reformism
-				popularity = 0.05
-			}
-			add_popularity = {
-				ideology = Revolutionism
-				popularity = 0.05
-			}
+		add_popularity = {
+			ideology = Reformism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = Liberalism
+			popularity = 0.05
+		}
     }
-	
+	 
 	}
 	focus = { 
 		id = FRW_focus67
 		icon = GFX_goal_FRW_focus67
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus65
 		}
@@ -1469,13 +1439,38 @@ completion_reward = {
 		x = 38
 		y = 10
     completion_reward = {
+		add_dynamic_modifier = {
+			modifier = FRW_dynamic_Focus_67
+		}
 		random_core_state = {
 			limit = {
 				is_fully_controlled_by = ROOT
 			}
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
-				type = arms_factory
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_core_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_core_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = infrastructure
 				level = 2
 				instant_build = yes
 			}
@@ -1485,101 +1480,132 @@ completion_reward = {
     focus = { 
 		id = FRW_focus68
 		icon = GFX_goal_FRW_focus68
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus67
 		}
 		x = 38
 		y = 11
     completion_reward = {
-		set_rule = {
-			can_guarantee_other_ideologies=no
-			can_force_government=no
-			can_puppet=no
-			can_send_volunteers=no
-			
+		random_core_state = {
+			add_extra_state_shared_building_slots = 3
+		}
+		random_core_state = {
+			add_extra_state_shared_building_slots = 3
+		}
+		random_core_state = {
+			add_extra_state_shared_building_slots = 3
+		}
+		random_core_state = {
+			add_extra_state_shared_building_slots = 3
+		}
+		random_core_state = {
+			add_extra_state_shared_building_slots = 3
+		}
+		random_core_state = {
+			add_extra_state_shared_building_slots = 3
 		}
     }
 }
 focus = { 
 	id = FRW_focus69
 	icon = GFX_goal_FRW_focus69
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 		focus = FRW_focus68
+	}
+	available = {
+		
 	}
 	x = 38
 	y = 12
 completion_reward = {
 	random_core_state = {
 		limit = {
-			is_fully_controlled_by = ROOT
+			infrastructure > 2
 		}
-		add_extra_state_shared_building_slots = 1
 		add_building_construction = {
-			type = infrastructure
-			level = 2
+			type = University
+			level = 1
 			instant_build = yes
 		}
-	} 
+	}
 	random_core_state = {
 		limit = {
-			is_fully_controlled_by = ROOT
+			infrastructure > 2
 		}
-		add_extra_state_shared_building_slots = 1
 		add_building_construction = {
-			type = infrastructure
-			level = 2
+			type = University
+			level = 1
 			instant_build = yes
 		}
+	}
+	random_core_state = {
+		limit = {
+			infrastructure > 3
+		}
+		add_building_construction = {
+			type = University
+			level = 1
+			instant_build = yes
+		} 
 	}
 }
 }
 focus = { 
 	id = FRW_focus70
 	icon = GFX_goal_FRW_focus70
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 		focus = FRW_focus53
+	}
+	available = {
+		has_country_leader = {
+				character = FRW_Leon_Blum
+				ruling_only = yes
+		}
 	}
 	x = 29
 	y = 9
 completion_reward = {
-	random_core_state = {	
-		limit =	{
-			is_fully_controlled_by = ROOT
-		}
-		add_extra_state_shared_building_slots = 1
-		add_building_construction = {
-			type = industrial_complex
-			level = 1
-			instant_build = yes
-		}
+	add_political_power = 100
+	add_popularity = {
+		ideology = Reformism
+		popularity = 0.1
 	}
-	add_stability = 0.05
 }
 }
 focus = { 
 	id = FRW_focus71
 	icon = GFX_goal_FRW_focus71
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 		focus = FRW_focus61
+	}
+	available = {
+		has_country_leader = {
+			character = FRW_Georges_Clemenceau
+			ruling_only = yes
+		}
 	}
 	x = 50
 	y = 10
 completion_reward = {
-	add_dynamic_modifier = {
-		modifier = FRW_focus71_modifier
-	}
+	custom_effect_tooltip = FRW_focus71_tool
 }
 }
 focus = {  
 	id = FRW_focus72
 	icon = GFX_goal_FRW_focus72
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 		focus = FRW_focus59
+	}
+	available = {
+		has_country_leader = {
+			character = FRW_Georges_Clemenceau
+			ruling_only = yes
+		}
 	}
 	x = 47
 	y = 9
@@ -1614,79 +1640,110 @@ completion_reward = {
 focus = { 
 	id = FRW_focus73
 	icon = GFX_goal_FRW_focus73
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 		focus = FRW_focus59
+	}
+	available = {
+		has_country_leader = {
+			character = FRW_Georges_Clemenceau
+			ruling_only = yes
+		}
 	}
 	x = 43
 	y = 9
 completion_reward = {
-	add_research_slot = 1
+	create_intelligence_agency = {
+		name = "法兰西国家安全局"
+		icon = GFX_intelligence_agency_logo_agency
+	}
 }
 }
 focus = {  
 	id = FRW_focus74
 	icon = GFX_goal_FRW_focus74
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 		focus = FRW_focus73
 	}
+
+	available = {
+			has_country_leader = {
+				character = FRW_Georges_Clemenceau
+				ruling_only = yes
+			}
+		}
 	x = 44
 	y = 10
 completion_reward = {
-	add_political_power = 200
-	add_popularity = {
-		ideology = Reformism
-		popularity = 0.1
-	}
+	
 }
 }
 focus = { 
 	id = FRW_focus75
 	icon = GFX_goal_FRW_focus75
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 		focus = FRW_focus53
+	}
+	available = {
+		has_country_leader = {
+				character = FRW_Leon_Blum
+				ruling_only = yes
+		}
 	}
 	x = 26
 	y = 9
 completion_reward = {
-	add_stability = 0.03
-	add_dynamic_modifier = {
-		modifier = FRW_focus75_modifier
+	add_popularity = {
+		ideology = Liberalism
+		popularity = 0.05
 	}
+	add_political_power = 100
 }
 }
 focus = { 
 	id = FRW_focus76
 	icon = GFX_goal_FRW_focus76
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 		focus = FRW_focus73
+	}
+	available = {
+		has_country_leader = {
+			character = FRW_Georges_Clemenceau
+			ruling_only = yes
+		}
 	}
 	x = 46
 	y = 10
 completion_reward = { 
-	add_ideas = FRW_Working_women
+	
 }
 }
 focus = { 
 	id = FRW_focus77
 	icon = GFX_goal_FRW_focus77
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 		focus = FRW_focus74
 	}
 	prerequisite = {
 		focus = FRW_focus76
 	}
+	available = {
+		has_country_leader = {
+			character = FRW_Georges_Clemenceau
+			ruling_only = yes
+		}
+	}
 	x = 45
 	y = 12
 completion_reward = {
-	add_trait = {
-		character = FRW_Leon_Blum
-		ideology = Social_Reformism
-		trait =  pragmatic_socialist
+	create_wargoal = {
+		target = AOX
+		type = take_state_focus
+		generator = { 950 28 }
 	}
 }
 } 
@@ -1695,7 +1752,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus78 
 	icon = GFX_goal_FRW_focus78
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 	}
 	allow_branch = {
@@ -1717,7 +1774,7 @@ completion_reward = {
 focus = {  
 	id = FRW_focus79
 	icon = GFX_goal_FRW_focus79
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 		focus = FRW_focus78
 	}
@@ -1734,7 +1791,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus80
 	icon = GFX_goal_FRW_focus80
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 		focus = FRW_focus79
 	}
@@ -1751,7 +1808,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus81
 	icon = GFX_goal_FRW_focus81
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 		focus = FRW_focus79
 	}
@@ -1767,7 +1824,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus82
 	icon = GFX_goal_FRW_focus82
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 		focus = FRW_focus79
 	}
@@ -1780,7 +1837,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus83
 	icon = GFX_goal_FRW_focus83
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 		focus = FRW_focus82
 	}
@@ -1793,7 +1850,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus84
 	icon = GFX_goal_FRW_focus84
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 		focus = FRW_focus80
 	}
@@ -1813,7 +1870,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus85
 	icon = GFX_goal_FRW_focus85
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 		focus = FRW_focus51
 	}
@@ -1825,12 +1882,15 @@ completion_reward = {
 		long_name = FRW_radical_socialist_long
 		name = FRW_radical_socialist
 	}
+	add_dynamic_modifier = {
+		modifier = Jobless_rate_stab
+	}
 }
 } 
 focus = { 
 	id = FRW_focus86
 	icon = GFX_goal_FRW_focus86
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 		focus = FRW_focus84
 	}
@@ -1851,7 +1911,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus87
 	icon = GFX_goal_FRW_focus87
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 		focus = FRW_focus84
 	}
@@ -1867,7 +1927,7 @@ completion_reward = {
 focus = {  
 	id = FRW_focus88
 	icon = GFX_goal_FRW_focus88
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 		focus = FRW_focus86
 	}
@@ -1884,7 +1944,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus89
 	icon = GFX_goal_FRW_focus89
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 		focus = FRW_focus49
 	}
@@ -1947,7 +2007,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus90
 	icon = GFX_goal_FRW_focus90
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 		focus = FRW_focus78
 	}
@@ -1970,7 +2030,7 @@ completion_reward = {
 focus = {   
 	id = FRW_focus91
 	icon = GFX_goal_FRW_focus91
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 		focus = FRW_focus90
 	}
@@ -1987,7 +2047,7 @@ completion_reward = {
 focus = {  
 	id = FRW_focus92
 	icon = GFX_goal_FRW_focus92
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 		focus = FRW_focus90
 	}
@@ -2003,7 +2063,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus93
 	icon = GFX_goal_FRW_focus93
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 		focus = FRW_focus90
 	}
@@ -2021,7 +2081,7 @@ completion_reward = {
 focus = {  
 	id = FRW_focus94
 	icon = GFX_goal_FRW_focus94
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 		focus = FRW_focus91
 	}
@@ -2043,7 +2103,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus95
 	icon = GFX_goal_FRW_focus95
-	cost = 7.00
+	cost = 8.00
 	prerequisite = {
 		focus = FRW_focus94
 	}
@@ -2068,7 +2128,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus109
 		icon = GFX_goal_FRW_focus109 
-		cost = 4.00 
+		cost = 9.00 
 		prerequisite = {
 			focus = FRW_focus38
 		}
@@ -2093,7 +2153,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus110
 		icon = GFX_goal_FRW_focus110
-		cost = 4.00 
+		cost = 9.00 
 		prerequisite = {
 			focus = FRW_focus109
 		}
@@ -2113,7 +2173,7 @@ completion_reward = {
 	focus = { 
 		id = FRW_focus111
 		icon = GFX_goal_FRW_focus111
-		cost = 4.00 
+		cost = 9.00 
 		prerequisite = {
 			focus = FRW_focus109
 		}
@@ -2133,7 +2193,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus112 
 		icon = GFX_goal_FRW_focus112
-		cost = 4.00  
+		cost = 9.00  
 		prerequisite = {
 			focus = FRW_focus111
 		}
@@ -2167,7 +2227,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus113
 		icon = GFX_goal_FRW_focus113
-		cost = 4.00 
+		cost = 9.00 
 		prerequisite = {
 			focus = FRW_focus110
 		}
@@ -2192,7 +2252,7 @@ completion_reward = {
 	focus = { 
 		id = FRW_focus114
 		icon = GFX_goal_FRW_focus114
-		cost = 4.00 
+		cost = 9.00 
 		prerequisite = {
 			focus = FRW_focus38
 		}
@@ -2232,7 +2292,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus115
 		icon = GFX_goal_FRW_focus115
-		cost = 4.00 
+		cost = 9.00 
 		prerequisite = {
 			focus = FRW_focus114
 		}
@@ -2249,7 +2309,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus116
 		icon = GFX_goal_FRW_focus116
-		cost = 4.00 
+		cost = 9.00 
 		prerequisite = {
 			focus = FRW_focus114
 		}
@@ -2295,7 +2355,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus117
 		icon = GFX_goal_FRW_focus117
-		cost = 4.00 
+		cost = 9.00 
 		prerequisite = {
 			focus = FRW_focus115
 		}
@@ -2318,7 +2378,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus118
 		icon = GFX_goal_FRW_focus118
-		cost = 4.00 
+		cost = 9.00 
 		prerequisite = {
 			focus = FRW_focus116
 		}
@@ -2342,7 +2402,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus119
 		icon = GFX_goal_FRW_focus119
-		cost = 7.00
+		cost = 8.00
 		allow_branch = {
 			#has_country_leader = {
 				#character = FRW_Georges_Sorel
@@ -2360,7 +2420,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus120
 		icon = GFX_goal_FRW_focus120 
-		cost = 7.00
+		cost = 8.00
 		prerequisite = { 
 			focus = FRW_focus121
 		}
@@ -2386,7 +2446,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus121
 		icon = GFX_goal_FRW_focus121
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus119
 		}
@@ -2403,7 +2463,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus122
 		icon = GFX_goal_FRW_focus122
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus119
 		}
@@ -2420,7 +2480,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus123
 		icon = GFX_goal_FRW_focus123
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus119
 		}
@@ -2437,7 +2497,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus124
 		icon = GFX_goal_FRW_focus124
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus121
 		}
@@ -2461,7 +2521,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus125
 		icon = GFX_goal_FRW_focus125
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus120
 		}
@@ -2491,7 +2551,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus126
 		icon = GFX_goal_FRW_focus126
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus125
 		}
@@ -2509,7 +2569,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus127
 		icon = GFX_goal_FRW_focus127
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus126
 		}
@@ -2526,7 +2586,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus128
 		icon = GFX_goal_FRW_focus128
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus126
 		}
@@ -2552,7 +2612,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus129
 		icon = GFX_goal_FRW_focus129
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus126
 		}
@@ -2578,7 +2638,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus130
 		icon = GFX_goal_FRW_focus130
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus125
 		} 
@@ -2615,7 +2675,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus131
 		icon = GFX_goal_FRW_focus131
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus130
 		}
@@ -2656,7 +2716,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus132
 		icon = GFX_goal_FRW_focus132
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus125
 		}
@@ -2672,7 +2732,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus133
 		icon = GFX_goal_FRW_focus133
-		cost = 7.00
+		cost = 8.00
 		prerequisite = {
 			focus = FRW_focus132
 		}

@@ -1,0 +1,75 @@
+﻿
+division_template = {
+	name = "教廷卫队"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	is_locked = yes
+}
+division_template = {
+	name = "教皇国步兵师"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+units = {
+	division= {	
+		name = "教皇国一师"
+		location = 6606
+		division_template = "教皇国步兵师"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "教皇国二师"
+		location = 925
+		division_template = "教皇国步兵师"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "教皇国三师"
+		location = 11751
+		division_template = "教皇国步兵师"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "教皇国四师"
+		location = 13257
+		division_template = "教皇国步兵师"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "教皇国五师"
+		location = 11846
+		division_template = "教皇国步兵师"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "教皇国六师"
+		location = 11882
+		division_template = "教皇国步兵师"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "教皇国七师"
+		location = 9838
+		division_template = "教皇国步兵师"
+		start_experience_factor = 0.7
+	}
+}

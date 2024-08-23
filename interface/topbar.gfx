@@ -8,6 +8,12 @@ spriteTypes = {
 		texturefile = "gfx//interface//grain_icon.dds"
 	}
 	spriteType = {
+		name = "GFX_jobless_icon"
+		texturefile = "gfx//interface//jobless_icon.dds"
+	}
+
+	
+	spriteType = {
 		name = "GFX_fuel_strip"
 		texturefile = "gfx/interface/unitcontrol/fuel_strip.dds"
 		effectFile = "gfx/FX/buttonstate.lua"

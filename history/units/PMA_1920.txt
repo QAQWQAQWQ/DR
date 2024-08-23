@@ -1,0 +1,29 @@
+﻿
+division_template = {
+	name = "帕尔马王国民兵旅"
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+	}
+	is_locked = yes
+}
+
+units = {
+	division= {	
+		name = "帕尔马王国民兵一旅"
+		location = 3773
+		division_template = "帕尔马王国民兵旅"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "帕尔马王国民兵二旅"
+		location = 3976
+		division_template = "帕尔马王国民兵旅"
+		start_experience_factor = 0.7
+	}
+}

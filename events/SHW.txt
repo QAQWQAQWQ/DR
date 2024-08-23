@@ -64,6 +64,7 @@ country_event = {
 			target = WWS
 			modifier = protest
 		}
+		
 		set_country_flag = SHW_event_1
 	}
 }
@@ -199,8 +200,8 @@ news_event = {
 		}
 	option = {
 		name = SHW.1.a
+		
 		#set_variable = { grain_manpower = 2000 }
-      
 		#remove_country_flag = Famine_in_Russia
 		set_country_flag = Famine_Russia
 		custom_effect_tooltip = Famine_in_Russia

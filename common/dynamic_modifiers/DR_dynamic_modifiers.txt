@@ -372,6 +372,23 @@ FRW_dynamic_Focus_132= {
 	production_factory_max_efficiency_factor=-0.02
 	production_factory_efficiency_gain_factor=-0.02
 }
+
+
+
+FRW_dynamic_Focus_67= {
+	enable = { always = yes }
+	production_speed_infrastructure_factor = 0.1
+}
+
+
+
+
+
+
+
+
+
+
 NPL_dynamic_focus21 = {
 	enable = { always = yes }
 	party_popularity_stability_factor=0.1
