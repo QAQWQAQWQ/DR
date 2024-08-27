@@ -1,0 +1,25 @@
+
+state={
+	id=1062
+	name="STATE_1062"
+	manpower = 314159
+	
+	state_category = rural
+	history={
+		owner = SHW
+		add_core_of = SHW
+		
+		victory_points = {
+			10472 5
+		}
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		789 6976 6991 7454 10403 10472 11853
+	}
+
+	local_supplies=0.0 
+}
