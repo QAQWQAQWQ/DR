@@ -2,40 +2,30 @@
 state={
 	id=340
 	name="STATE_340"
-	manpower = 1077853
+	manpower = 777853
 	resources={
-		chromium=39 # was: 54
+		chromium=15 # was: 54
 	}
 
-	state_category = town
+	state_category = rural
 
 	history={
-		owner = TEQ
+		owner = YED
+		add_core_of = TEQ
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-			dockyard = 1
 		}
-		
 		victory_points = {
 			947 10
 		}
 		victory_points = {
-			9799 5
-		}
-		add_core_of = TEQ
-		if = {
-			limit = { has_dlc = "Battle for the Bosporus" }
-			set_demilitarized_zone = yes
-		}
-		
-		1936.11.9 = {
-			set_demilitarized_zone = no
+			3951 1
 		}
 	}
 
 	provinces={
-		785 947 3786 3851 6864 6912 9799 9887 11778 11867 
+		785 856 947 981 3786 3851 3951 6808 6871 11778 11831
 	}
 
 	local_supplies=0.0 

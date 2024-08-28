@@ -4,9 +4,13 @@ state={
 	name="STATE_345"
 
 	history={
-		owner = TEQ
+		owner = YED
+		add_core_of = TEQ
 		victory_points = {
 			10056 1 
+		}
+		victory_points = {
+			11746 5 
 		}
 		victory_points = {
 			11810 5 
@@ -15,16 +19,15 @@ state={
 			infrastructure = 2
 
 		}
-		add_core_of = TEQ
 
 	}
 
 	provinces={
-		1122 4008 4124 4127 7026 7143 10056 11810 
+		806 4124 7143 10056 11746 11810
 	}
 	manpower=411798
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
 
 	local_supplies=0.0 
 }

@@ -9,7 +9,8 @@ state={
 		grain=16
 	}
 	history={
-		owner = TEQ
+		owner = YED
+		add_core_of = TEQ
 		victory_points = {
 			9893 15
 		}
@@ -19,9 +20,6 @@ state={
 		victory_points = {
 			6813 3
 		}
-		victory_points = {
-			11746 5 
-		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -29,11 +27,10 @@ state={
 				naval_base = 3
 			}
 		}
-		add_core_of = TEQ
 	}
 
 	provinces={
-		806 3889 6813 7620 9893 9912 11746 
+		3889 6813 7620 9893 9912
 	}
 
 

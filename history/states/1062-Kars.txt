@@ -1,26 +1,25 @@
 
 state={
-	id=355
-	name="STATE_355"
-	manpower = 1151863
+	id=1062
+	name="STATE_1062"
+	manpower = 314159
+	
 	state_category = rural
-
 	history={
-		owner = YED
+		owner = SHW
+		add_core_of = SHW
 		add_core_of = TEQ
+		
 		victory_points = {
-			11881 10
+			10472 5
 		}
 		buildings = {
 			infrastructure = 2
-			11881 = {
-				naval_base = 3
-			}
 		}
 	}
 
 	provinces={
-		933 3903 3935 6950 6978 9900 9915 11881 11897
+		789 6976 6991 7454 10403 10472 11853
 	}
 
 	local_supplies=0.0 
