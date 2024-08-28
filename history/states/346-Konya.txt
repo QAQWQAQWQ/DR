@@ -4,7 +4,7 @@ state={
 	name="STATE_346"
 	manpower = 849453
 	
-	state_category = rural
+	state_category = town
 	resources={
 		grain=23
 	}
@@ -17,10 +17,10 @@ state={
 		}
 		
 		victory_points = {
-			9861 5
+			9878 5
 		}
 		victory_points = {
-			6807 3
+			3856 3
 		}
 		victory_points = {
 			784 1
@@ -28,7 +28,7 @@ state={
 	}
 
 	provinces={
-		784 869 940 3788 3876 6807 6894 9755 9763 9811 9861 11792 11860 13122 
+		784 909 940 3788 3856 3876 3907 3983 6877 6894 6945 9811 9878 11860 11907 12016 13122
 	}
 
 	local_supplies=0.0 

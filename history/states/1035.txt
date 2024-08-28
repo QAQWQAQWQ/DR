@@ -2,12 +2,12 @@
 state={
 	id=1035
 	name="STATE_1035"
-	manpower = 777853
+	manpower = 300000
 	resources={
 		chromium=24
 	}
 
-	state_category = town
+	state_category = rural
 
 	history={
 		owner = YED
@@ -18,15 +18,12 @@ state={
 		}
 		
 		victory_points = {
-			947 10
-		}
-		victory_points = {
-			11811 1 
+			9799 5
 		}
 	}
 
 	provinces={
-		11811 6864 947 6912 3851 11867 9887 
+		6864 6912 9799 9887 11867
 	}
 
 	local_supplies=0.0 
