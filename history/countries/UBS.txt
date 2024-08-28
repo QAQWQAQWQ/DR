@@ -3,14 +3,6 @@
 oob = "UBS_1920"
 
 # Starting tech
-set_technology = {
-	infantry_weapons = 1
-	tech_support = 1		
-	tech_engineers = 1
-	gw_artillery = 1
-	early_fighter = 1
-	fuel_silos = 1
-}
 
 recruit_character = UBS_Hugo_Black
 recruit_character = UBS_LiEngFu
@@ -42,10 +34,17 @@ recruit_character = UBS_Smedley_Darlington_Butler
 
 
 	set_technology = {
-		interwar_artillery = 1
-		infantry_weapons1 = 1
-		
-		support_weapons = 1
+                  infantry_weapons = 1
+	  tech_support = 1		
+	  tech_engineers = 1
+	  gw_artillery = 1
+	  early_fighter = 1
+	  fuel_silos = 1
+                  tech_paijipao1 = 1
+                  machine_equipment_1 = 1
+                  interwar_artillery = 1
+                  infantry_weapons1 = 1
+                  support_weapons = 1
 
 		#doctrines
 		air_superiority = 1
@@ -54,7 +53,26 @@ recruit_character = UBS_Smedley_Darlington_Butler
 		fleet_in_being = 1
 		battlefleet_concentration = 1
 		convoy_sailing = 1
-
+		
+                                early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		transport = 1
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		coastal_defense_ships = 1
+		mtg_transport = 1
 
 		#electronics
 		

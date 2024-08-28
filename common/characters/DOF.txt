@@ -69,4 +69,22 @@ characters={
 		}
 
 	}
+
+	DOF_Friedrich_von_Gerok={
+		name=DOF_Friedrich_von_Gerok
+		portraits={
+			army ={
+				large="gfx/leaders/DOF/portrait_Friedrich_von_Gerok.tga"
+			}
+		}
+		corps_commander = {
+			traits={ expert_delegator }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+
+	}
 	}

@@ -27,5 +27,21 @@ characters={
 			id=-1
 		}
 	}
-	
+	DOS_Otto_Hermann_Theodor_von_der_Decken={
+		name=DOF_Otto_Hermann_Theodor_von_der_Decken
+		portraits={
+			army ={
+				large="gfx/leaders/DOS/portrait_Otto_Hermann_Theodor_von_der_Decken.tga"
+			}
+		}
+		corps_commander = {
+			traits={ Lieutenant_general }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+
+	}
 	}

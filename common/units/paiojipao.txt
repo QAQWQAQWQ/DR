@@ -10,7 +10,6 @@ sub_units = {
 		affects_speed = no
 
 		type = {
-			infantry
 			support
 		}
 		
@@ -18,7 +17,6 @@ sub_units = {
 		
 		categories = {
 			category_support_battalions
-			category_army
 		}
 
 
@@ -44,7 +42,7 @@ sub_units = {
 		}
 		
 		essential = {
-			support_equipment
+			infantry_equipment
 		}
 		
 		need = {

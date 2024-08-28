@@ -1387,3 +1387,21 @@ country_event = {
 		add_political_power = -10
 	}
 }
+country_event = {
+	id = FRW.50
+	title = FRW.50.t
+	desc = FRW.50.d
+	picture = GFX_Eu_election
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.50.a
+		set_country_flag =FRW_50_flag
+		unlock_decision_category_tooltip = FRW_flood
+	}
+	option = {
+		name = FRW.50.b
+		add_war_support = -0.02
+	}
+}

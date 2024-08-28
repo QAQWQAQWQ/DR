@@ -6,11 +6,97 @@ characters={
 				large="gfx/leaders/DHD/portrait_Ernst_Ludwig_Karl_Albrecht_Wilhelm.tga"
 			}
 		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
 		country_leader={
 			ideology=Classicism_Conservatism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
+		}
+	}
+	DHD_Friedrich_Karl_Fritz_von_LoBberg={
+		name=DHD_Friedrich_Karl_Fritz_von_LoBberg
+		portraits={
+			army ={
+				large="gfx/leaders/DHD/portrait_Friedrich_Karl_Fritz_von_LoBberg.tga"
+			}
+		}
+		corps_commander = {
+			traits={ skilled_staffer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	DHD_Friedrich_Sixt_von_Armin={
+		name=DHD_Friedrich_Sixt_von_Armin
+		portraits={
+			army ={
+				large="gfx/leaders/DHD/portrait_Friedrich_Sixt_von_Armin.tga"
+			}
+		}
+		corps_commander = {
+			traits={ expert_delegator }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	DHD_Ludwig_Wilhelm_Karl_von_Lauter={
+		name=DHD_Ludwig_Wilhelm_Karl_von_Lauter
+		portraits={
+			army ={
+				large="gfx/leaders/DHD/portrait_Ludwig_Wilhelm_Karl_von_Lauter.tga"
+			}
+		}
+		corps_commander = {
+			traits={ Liberal_general }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	DHD_MaxHoffmann={
+		name=DHD_MaxHoffmann
+		portraits={
+			army ={
+				large="gfx/leaders/DHD/portrait_MaxHoffmann.tga"
+			}
+		}
+		corps_commander = {
+			traits={ expert_delegator }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	DHD_Reinhard_von_Scheffer_Boyadel={
+		name=DHD_Reinhard_von_Scheffer_Boyadel
+		portraits={
+			army ={
+				large="gfx/leaders/DHD/portrait_Reinhard_von_Scheffer_Boyadel.tga"
+			}
+		}
+		field_marshal = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
 		}
 	}
 	}

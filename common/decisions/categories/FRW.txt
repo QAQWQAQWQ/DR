@@ -1,3 +1,14 @@
+FRW_Power_struggles_balance_category = {
+	
+	priority = 9
+	allowed = {
+		tag = FRW
+	}
+	visible = {
+	}
+} 
+
+
 FRW_United_States_Europe = {
 	icon = infiltration
 	
@@ -43,10 +54,24 @@ FRW_European_Federation = {
 	visible_when_empty = yes
 	scripted_gui = FRW_Trade_unionist_decision
 
-
 }    
    
-    
+FRW_flood = {  
+	icon = infiltration  
+	
+	picture = GFX_decisions_Operation_Flooding
+
+	priority = 9999
+	allowed = {
+		tag = FRW 
+	}
+	visible = {
+		country_exists = NPL
+	    has_country_flag =FRW_50_flag
+	}
+	visible_when_empty = yes
+
+}   
   
   
 FRW_election_movement = {  

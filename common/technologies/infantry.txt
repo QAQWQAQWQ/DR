@@ -882,7 +882,9 @@ machine_equipment_weapons = {
 	enable_equipments = {
 		machine_equipment_1
 	}	
-
+	enable_subunits = {
+		Machine_gun
+	}
 	path = {
 		leads_to_tech = machine_equipment_weapons1
 		research_cost_coeff = 1

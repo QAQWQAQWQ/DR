@@ -123,7 +123,7 @@ country_event = {
 	    }
     }
     immediate = {
-	    news_event = WorldNew.10
+	    news_event = WorldNew.9
     }
     mean_time_to_happen = {
 	    days = 2
@@ -132,7 +132,27 @@ country_event = {
 		name = Hidden_News.9.a
 	}		
 }
-
+news_event = {
+	id = Hidden_News.10
+    hidden = yes
+	fire_only_once = yes
+   trigger = {
+	AND={
+		date > 1920.2.8
+		date < 1920.2.10
+	}
+	
+    }
+   immediate = {
+	news_event = WorldNew.10
+    }
+    mean_time_to_happen = {
+	days = 2
+    }
+	option = {
+		name = Hidden_News.10.a
+	}		
+}
 
 news_event = {
 	id = Hidden_News.12
@@ -240,6 +260,89 @@ news_event = {
     }
 	option = {
 		name = Hidden_News.16.a
+	}		
+}
+news_event = {
+	id = Hidden_News.17
+    hidden = yes
+	fire_only_once = yes
+   trigger = {
+	AND={
+		date > 1921.4.14
+		date < 1921.4.16
+	}
+	
+    }
+   immediate = {
+	news_event = WorldNew.17
+    }
+    mean_time_to_happen = {
+	days = 2
+    }
+	option = {
+		name = Hidden_News.17.a
+	}		
+}
+news_event = {
+	id = Hidden_News.18
+    hidden = yes
+	fire_only_once = yes
+   trigger = {
+	AND={
+		date > 1921.5.23
+		date < 1921.4.25
+	}
+	
+    }
+   immediate = {
+	news_event = WorldNew.18
+    }
+    mean_time_to_happen = {
+	days = 2
+    }
+	option = {
+		name = Hidden_News.18.a
+	}		
+}
+news_event = {
+	id = Hidden_News.19
+    hidden = yes
+	fire_only_once = yes
+   trigger = {
+	AND={
+		date > 1920.3.27
+		date < 1920.3.29
+	}
+	
+    }
+   immediate = {
+	news_event = WorldNew.19
+    }
+    mean_time_to_happen = {
+	days = 2
+    }
+	option = {
+		name = Hidden_News.19.a
+	}		
+}
+news_event = {
+	id = Hidden_News.20
+    hidden = yes
+	fire_only_once = yes
+   trigger = {
+	UBS={
+		has_war_with = BNA
+	}
+	
+    }
+   immediate = {
+	news_event = WorldNew.20
+    }
+    mean_time_to_happen = {
+	days = 2
+    }
+	option = {
+		name = Hidden_News.20.a
 	}		
 }
 #######
@@ -413,6 +516,21 @@ news_event = {
 		}		
 }
 news_event = {
+	id = WorldNew.9
+	title = WorldNew.9.t
+	desc = WorldNew.9.d
+
+	picture = GFX_WorldNew_9
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = WorldNew.9.a
+	}		
+}
+news_event = {
 	id = WorldNew.10
 	title = WorldNew.10.t
 	desc = WorldNew.10.d
@@ -517,5 +635,66 @@ news_event = {
 
 	option = {
 		name = WorldNew.16.a
+	}		
+}
+news_event = {
+	id = WorldNew.17
+	title = WorldNew.17.t
+	desc = WorldNew.17.d
+
+	picture = GFX_WorldNew_17
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = WorldNew.17.a
+	}		
+}
+news_event = {
+	id = WorldNew.18
+	title = WorldNew.18.t
+	desc = WorldNew.18.d
+
+	picture = GFX_WorldNew_18
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = WorldNew.18.a
+	}		
+}
+
+news_event = {
+	id = WorldNew.19
+	title = WorldNew.19.t
+	desc = WorldNew.19.d
+
+	picture = GFX_WorldNew_19
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = WorldNew.19.a
+	}		
+}
+news_event = {
+	id = WorldNew.20
+	title = WorldNew.20.t
+	desc = WorldNew.20.d
+
+	picture = GFX_WorldNew_20
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = WorldNew.20.a
 	}		
 }

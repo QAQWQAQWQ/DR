@@ -1,9 +1,17 @@
 ﻿l_simp_chinese:
 
+ FRW_flood:0 "代号“洪水”"
+ FRW_flood_desc:0 "\n\n\n\n\n\n\n\n最高军事指挥部已经决定将在阿尔及尔港等地开展登陆行动，集中其一切力量攻占阿尔及尔西部－从米莉亚纳到卜利达－然后再以此为基地解放其余地区。这个计划容许最可能的兵力集中，形成强大的打击力量，在决定点上享有绝对的优势。\n\n部队动员：[?Flood_Force]/130000\n\n飞机已整顿：[?Flood_equipment]/300\n\n船只已整顿：[?Flood_boats]/750"
+ FRW_flood_Prepare_action:0 "完成登陆准备"
+ FRW_flood_Gather_forces:0 "动员部队"
+ FRW_flood_Straighten_equipment:0 "整顿飞机"
+ FRW_flood_Solicitation_civilian_vessels:0 "征集民用船只"
 
-
-
- 
+ FRW_Establish_insurance_association:0 "建立保险协会"
+ FRW_Cooperate_right:0 "与右翼合作"
+ FRW_Develop_rural_areas:0 "发展农村"
+ FRW_Develop_city_areas:0 "发展城市"
+ FRW_economic_committee:0 "建立基层委员会"
 
 
  FRW_Trade_unionist_title:0 "工团运动已然苏醒，我们需要团结全法国的工人来加入我们这伟大的理想之中\n\n在城市建立总工会：[?Number_unions]/10\n劳工海报宣传活动：[?Number_posters]/3"
@@ -610,16 +618,16 @@ XJC_Court_struggles_right_side_High:0 "哥老会现状：广泛支持"
 
 FRW_Power_struggles_balance:0 "法国权力斗争"
 FRW_Power_struggles_mid_range:0 "现状：均势"
-FRW_Power_struggles_left_side:0 "§Y法国共产党§!"
-FRW_Power_struggles_left_side_desc:0 "§Y法国共产党§! \n\n。"
-FRW_Power_struggles_left_side_range_Low:0 "法国共产党现状：缺乏支持"
-FRW_Power_struggles_left_side_High:0 "法国共产党现状：广泛支持"
 
-FRW_Power_struggles_right_side:0 "§Y法国社会党§!"
+FRW_Power_struggles_left_side:0 "§Y法国社会党§!"
+FRW_Power_struggles_left_side_desc:0 "§Y法国社会党§! \n\n。"
+FRW_Power_struggles_left_side_range_Low:0 "法国社会党现状：缺乏支持"
+FRW_Power_struggles_left_side_High:0 "法国社会党现状：广泛支持"
 
-FRW_Power_struggles_right_side_desc:0 "§Y法国社会党§! \n\n。"
-FRW_Power_struggles_right_side_range_Low:0 "法国社会党现状：缺乏支持"
-FRW_Power_struggles_right_side_High:0 "法国社会党现状：广泛支持"
+FRW_Power_struggles_right_side:0 "§Y法国共产党§!"
+FRW_Power_struggles_right_side_desc:0 "§Y法国共产党§! \n\n。"
+FRW_Power_struggles_right_side_range_Low:0 "法国共产党现状：缺乏支持"
+FRW_Power_struggles_right_side_High:0 "法国共产党现状：广泛支持"
 
 
 BRA_Convince_Senate:0 "说服参议院"

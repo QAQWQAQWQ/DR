@@ -1437,6 +1437,7 @@ NEW_Literacy_rate = {
 }
 
 Jobless_rate = {
+
 	set_variable = { Jobless_rate_value = max_manpower_k }
 	divide_variable = {
         Jobless_rate_value = num_of_factories
@@ -1445,30 +1446,43 @@ Jobless_rate = {
     multiply_variable = {
        Jobless_rate_value = 0.01
     }
+    
     if={
         limit={
             AND={
                 num_of_factories < 20
-                has_manpower > 100000
+                has_manpower > 1000
             }
         }
-        multiply_variable = {
-            Jobless_rate_value = 0.1
+        divide_variable = {
+            Jobless_rate_value = 10
+        }
+        divide_variable = {
+            working_population = 10
         }
     }
+    add_to_variable = { Jobless_rate_value = modifier@Jobless_rate_stab_modifier}
+    subtract_from_variable = { working_population = Jobless_rate_value}
+    
     set_variable = { Jobless_rate_stab_value = 0 }
     subtract_from_variable = { Jobless_rate_stab_value = Jobless_rate_value }
     multiply_variable = {
         Jobless_rate_stab_value = 0.01
     }
+    
+
+
 
     set_variable = { Jobless_rate_stab_value_0_02 = Jobless_rate_stab_value }
+    
     multiply_variable = {
         Jobless_rate_stab_value_0_02 = 0.02
     }
 
 
+
     set_variable = { Jobless_rate_stab_tool = Jobless_rate_stab_value_0_02 }
+    
     divide_variable = {
         Jobless_rate_stab_tool = 0.01
     }
@@ -1476,4 +1490,7 @@ Jobless_rate = {
     divide_variable = {
         Jobless_rate_tool = 0.01
     }
+
+    
+    
 }

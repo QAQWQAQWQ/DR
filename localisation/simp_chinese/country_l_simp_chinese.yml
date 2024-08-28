@@ -52,7 +52,7 @@
  CONSCRIPTION_TOTAL_FACTOR_EXTRA_DESC: "\n由于以下因素，有效的全部人力改变为$VAL|+%0$：\n"
  EQUIPMENT_DIVISION: "装备率"
  EQUIPMENT_DIVISION_DESC: "该师使用中装备与总需求量的百分比。"
- DIVISION_IN_TEMPLATE_TRANSFER: "这个师正在从$OLD|H$改编到$NEW|H$。当第一件新装备抵达驻地时会完成改编，不需要的装备将送回仓库。"
+ DIVISION_IN_TEMPLATE_TRANSFER: "这支部队正在从$OLD|H$改编到$NEW|H$。当第一件新装备抵达驻地时会完成改编，不需要的装备将送回仓库。"
  MANPOWER_MONTHLY_TOTAL: "每月可获得的人力：$VALUE|^+1$（$PERC|2%H$）\n全部人口增长：$MAX|^2H$（$FACTOR|2%H$ 全部人口）\n\n基础增长率：$RATIO|%H$"
  MANPOWER_MODIFIER_APPLIED: "被使用的修正：\n$MODIFIERS$"
  MANPOWER_MONTHLY_BASE: "基础：$VALUE|*Y0$"
@@ -113,7 +113,7 @@
 
  grain_value_TT_TOOLTIP:0 "我们的粮仓目前有[?resource_grain|0Y]单位,目前控制了[?num_owned_controlled_states|0Y]块省份，有些省份会提供额外粮食收入，每周会有粮食被消耗，每月会收获新一批粮食。"
 
- jobless_value_TOOLTIP:0 "§Y失业率§!\n--目前失业人口:[?working_population|2Y]K\n\n当前失业率的影响：\n\n--GDP增长率：[?Jobless_rate_stab_tool|R]%\n--稳定度：[?Jobless_rate_tool|R]%\n--生产效率基础：[?Jobless_rate_tool|R]%\n--生产效率上限：[?Jobless_rate_tool|R]%\n--生产效率增长：[?Jobless_rate_tool|R]%\n--生产效率保持：[?Jobless_rate_tool|R]%"
+ jobless_value_TOOLTIP:0 "§Y失业率§!\n--目前失业人口:[?working_population|2Y]K\n\n§Y当前失业率的影响：§!\n\n--GDP增长率：[?Jobless_rate_stab_tool|R]%\n--稳定度：[?Jobless_rate_tool|R]%\n--生产效率基础：[?Jobless_rate_tool|R]%\n--生产效率上限：[?Jobless_rate_tool|R]%\n--生产效率增长：[?Jobless_rate_tool|R]%\n--生产效率保持：[?Jobless_rate_tool|R]%"
  jobless_value_TT_TOOLTIP:0 "失业率是反映劳动力市场供需情况的指标，是各国宏观调控的主要目标。高失业率会影响工厂的产出和建设，过高的失业率会导致经济增长动力减弱。"
 
 

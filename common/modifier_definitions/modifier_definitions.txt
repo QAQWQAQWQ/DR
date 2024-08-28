@@ -72,3 +72,10 @@ tech_level_upd_value_var_modifier = {
 	 
 	category = all
 }
+Jobless_rate_stab_modifier = {
+	color_type = bad
+	value_type = percentage
+	precision = 3
+	 
+	category = all
+}

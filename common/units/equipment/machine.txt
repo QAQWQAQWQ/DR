@@ -1,6 +1,6 @@
 equipments = {
 
-	machine_equipment0 = {
+	machine_equipment = {
 		year = 1918
 
 		is_archetype = yes
@@ -29,19 +29,19 @@ equipments = {
 	machine_equipment_1 = {
 		year = 1918
 
-		archetype = machine_equipment0
+		archetype = machine_equipment
 		priority = 20	
 	}
 	machine_equipment_2 = {
 		year = 1918
 
-		archetype = machine_equipment0
+		archetype = machine_equipment
 		priority = 20	
 	}
 	machine_equipment_3 = {
 		year = 1918
 
-		archetype = machine_equipment0
+		archetype = machine_equipment
 		priority = 20	
 	}
 }

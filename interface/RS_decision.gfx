@@ -9,6 +9,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decisions_election_movement.dds"
 	}
 	spriteType = {
+		name = "GFX_decisions_Operation_Flooding"
+		texturefile = "gfx/interface/decisions/decisions_Operation_Flooding.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_decisions_China_power_struggle"
 		texturefile = "gfx/interface/decisions/decisions_China_power_struggle.dds"
 	}

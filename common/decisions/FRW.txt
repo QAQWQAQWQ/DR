@@ -1,3 +1,325 @@
+FRW_Power_struggles_balance_category = {
+	FRW_economic_committee = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		available = {
+			OR={
+				has_completed_focus = FRW_focus84
+			}
+			
+		}
+		days_re_enable = 3
+		days_remove = 30
+		cost = 25
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			add_power_balance_value = {
+				id = FRW_Power_struggles_balance
+				value = 0.05
+			}
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	FRW_Establish_insurance_association = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		available = {
+			has_completed_focus = FRW_focus61 
+		}
+		days_re_enable = 3
+		days_remove = 2
+		cost = 25
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			add_power_balance_value = {
+				id = FRW_Power_struggles_balance
+				value = -0.05
+			}
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	FRW_Cooperate_right = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		available = {
+			has_completed_focus = FRW_focus74 
+		}
+		days_re_enable = 3
+		days_remove = 2
+		cost = 25
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			add_power_balance_value = {
+				id = FRW_Power_struggles_balance
+				value = 0.05
+			}
+			add_war_support = 0.1
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	FRW_Develop_rural_areas = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		available = {
+			OR={
+				has_completed_focus = FRW_focus55
+				has_completed_focus = FRW_focus71
+				has_completed_focus = FRW_focus80
+			}
+			
+		}
+		days_re_enable = 3
+		days_remove = 30
+		cost = 25
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			
+			random_core_state = {
+				limit = {
+					has_state_category = town
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_core_state = {
+				limit = {
+					has_state_category = town
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_core_state = {
+				limit = {
+					has_state_category = town
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	FRW_Develop_city_areas = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		available = {
+			has_completed_focus = FRW_focus57
+		}
+		days_re_enable = 3
+		days_remove = 30
+		cost = 25
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			random_core_state = {
+				limit = {
+					has_state_category = town
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_core_state = {
+				limit = {
+					has_state_category = town
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_core_state = {
+				limit = {
+					has_state_category = town
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+FRW_flood = {
+FRW_Establish_insurance_association = {
+	icon = generic_ignite_civil_war
+	visible = {
+	}
+	available = { 
+        check_variable = {
+			Flood_Force = 130000
+			Flood_equipment= 300
+			Flood_boats= 750
+			tooltip = FRW_flood_Prepare_action 
+		}
+	}
+	days_re_enable = 3
+	days_remove = 2
+	cost = 25
+	allowed = {
+		tag = FRW
+	}
+	complete_effect = { 
+		create_wargoal = {
+            target = NPL
+            type = take_state_focus
+        }
+		add_dynamic_modifier = {
+			modifier = FRW_flood_modifier
+		}
+	}
+	fixed_random_seed = no
+	fire_only_once = yes
+	is_good = no
+    ai_will_do = {
+		factor = 1
+	}
+}
+FRW_flood_Gather_forces = {
+	icon = generic_ignite_civil_war
+	visible = {
+	}
+	available = {
+		
+	}
+	days_re_enable = 2
+	days_remove = 5
+	cost = 25
+	allowed = {
+		tag = FRW
+	}
+	complete_effect = { 
+		add_to_variable = {
+			Flood_Force=50000
+		}
+		clamp_variable = {
+			var = Flood_Force
+			min = 0
+			max = 130000
+		}
+	}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+    ai_will_do = {
+		factor = 1
+	}
+}
+FRW_flood_Straighten_equipment = {
+	icon = generic_ignite_civil_war
+	visible = {
+	}
+	available = {
+		has_equipment = {
+			fighter_equipment_0 > 299
+		}
+	}
+	days_re_enable = 2
+	days_remove = 3
+	cost = 25
+	allowed = {
+		tag = FRW
+	}
+	complete_effect = { 
+		add_to_variable = {
+			Flood_equipment=100
+		}
+		clamp_variable = {
+			var = Flood_equipment
+			min = 0
+			max = 300
+		}
+	}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+    ai_will_do = {
+		factor = 1
+	}
+}
+FRW_flood_Solicitation_civilian_vessels = {
+	icon = generic_ignite_civil_war
+	visible = {
+	}
+	available = {
+		has_equipment = {
+			convoy_1 > 749
+		}
+	}
+	days_re_enable = 2
+	days_remove = 3
+	cost = 25
+	allowed = {
+		tag = FRW
+	}
+	complete_effect = { 
+		add_to_variable = {
+			Flood_boats=250
+		}
+		clamp_variable = {
+			var = Flood_boats
+			min = 0
+			max = 750
+		}
+	}
+	fixed_random_seed = no
+	fire_only_once = no
+	is_good = no
+    ai_will_do = {
+		factor = 1
+	}
+}
+}
+
+
+
 FRW_Destructive_movement = {
 	Destructive_movemen = {
 	icon = generic_ignite_civil_war

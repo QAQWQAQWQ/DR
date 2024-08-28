@@ -13,4 +13,21 @@ characters={
 			id=-1
 		}
 	}
+	DOL_Friedrich_Ferdinand_Hans_Erdmann_von_Gontard={
+		name=DOL_Friedrich_Ferdinand_Hans_Erdmann_von_Gontard
+		portraits={
+			army ={
+				large="gfx/leaders/DOL/portrait_Friedrich_Ferdinand_Hans_Erdmann_von_Gontard.tga"
+			}
+		}
+		corps_commander = {
+			traits={ Lieutenant_general }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+
+	}
 	}

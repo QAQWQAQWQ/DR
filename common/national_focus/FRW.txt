@@ -1049,6 +1049,12 @@ completion_reward = {
 		prerequisite = {
 			 
 		} 
+		available = {
+			has_country_leader = {
+				character = FRW_Georges_Clemenceau
+				ruling_only = yes
+			}
+		}
 		allow_branch = {
 			#has_country_leader = {
 			#	character = FRW_Georges_Clemenceau
@@ -1073,7 +1079,7 @@ completion_reward = {
 		x = 41
 		y = 8
     completion_reward = {
-		country_event = FRW.41
+		add_ideas = FRW_Working_women
     }
 	}
 	focus = {
@@ -1086,8 +1092,10 @@ completion_reward = {
 		x = 15
 		y = 12
     completion_reward = {
-		add_war_support = 0.1
-		add_ideas = FRW_revanchism
+		swap_ideas = {
+			remove_idea = Mixed_economy
+			add_idea = Planned_economy
+		}
     }
 	} 
 	focus = {
@@ -1101,9 +1109,17 @@ completion_reward = {
 		y = 9
     completion_reward = { 
 		add_political_power = -50
+		add_power_balance_value = {
+			id = FRW_Power_struggles_balance
+			value = -0.05
+		}
 		add_popularity = {
 			ideology = Conservatism
 			popularity = -0.1
+		}
+		swap_ideas = {
+			remove_idea = FRW_Decentralized_party_organizations
+			add_idea = FRW_Decentralized_party_organizations1
 		}
     }
 	} 
@@ -1117,7 +1133,9 @@ completion_reward = {
 		x = 20
 		y = 10
     completion_reward = {
-		
+		add_political_power = 100
+		add_stability = 0.1
+		add_war_support = -0.1
     }
 	} 
 	focus = {
@@ -1139,8 +1157,9 @@ completion_reward = {
 		x = 31
 		y = 8
     completion_reward = {
-		add_dynamic_modifier = {
-			modifier = FRW_focus52_modifier
+		swap_ideas = {
+			remove_idea = Mixed_economy
+			add_idea = Market_economy
 		}
     }
 	}
@@ -1198,10 +1217,7 @@ completion_reward = {
 		x = 31
 		y = 9
     completion_reward = {
-		create_wargoal = {
-			type = liberate_wargoal
-			target = NPL
-		}
+	     unlock_decision_tooltip = FRW_Develop_rural_areas
     }
 	} 
 	focus = {
@@ -1227,6 +1243,9 @@ completion_reward = {
 		id = FRW_focus57
 		icon = GFX_goal_FRW_focus57
 		cost = 8.00
+		prerequisite = {
+			focus = FRW_focus55
+		}
 		available = {
 			has_country_leader = {
 					character = FRW_Leon_Blum
@@ -1236,10 +1255,7 @@ completion_reward = {
 		x = 33
 		y = 10
     completion_reward = {
-		swap_ideas = {
-			remove_idea = Mixed_economy
-			add_idea = Market_economy
-		}
+		unlock_decision_tooltip = FRW_Develop_city_areas
     }
 	}
 	focus = { 
@@ -1261,7 +1277,11 @@ completion_reward = {
 		x = 31
 		y = 11
     completion_reward = {
-		custom_effect_tooltip = FRW_focus58_tool
+		add_trait = {
+			character = FRW_Leon_Blum
+			ideology = Social_Reformism
+			trait = popular_figurehead2
+		}
     } 
 	}
 	focus = { 
@@ -1307,6 +1327,10 @@ completion_reward = {
 		y = 8 
     completion_reward = {
 		add_political_power = 100
+		parliament2_add_5=yes
+		custom_effect_tooltip = FRW_parliament2_add_5
+		parliament4_add_5=yes
+		custom_effect_tooltip = FRW_parliament4_add_5
     }
 	}
 
@@ -1326,7 +1350,8 @@ completion_reward = {
 		x = 50
 		y = 9
     completion_reward = {
-		custom_effect_tooltip = FRW_focus61_tool
+		#custom_effect_tooltip = FRW_focus61_tool
+		unlock_decision_tooltip = FRW_Establish_insurance_association
 		#random_core_state = {
 		#	limit = {
 		#		has_state_category = town
@@ -1343,6 +1368,7 @@ completion_reward = {
 		prerequisite = {
 			
 		}
+		
 		available = {
 			has_country_leader = {
 					character = FRW_Leon_Blum
@@ -1368,6 +1394,13 @@ completion_reward = {
 		icon = GFX_goal_FRW_focus63
 		cost = 8.00
 		prerequisite = {
+			
+		}
+		available = {
+			OR={
+				has_completed_focus = FRW_focus62
+				has_completed_focus = FRW_focus47
+			}
 		}
 		x = 38
 		y = 7
@@ -1385,8 +1418,9 @@ completion_reward = {
 		x = 38 
 		y = 8
     completion_reward = {
-		custom_effect_tooltip = available_political_advisor
-	    show_ideas_tooltip = FRW_Benoit_Frachon_P
+		add_dynamic_modifier = {
+			modifier = Reduce_unemployment
+		}
     } 
 	}
 	focus = { 
@@ -1399,9 +1433,9 @@ completion_reward = {
 		x = 36
 		y = 9
     completion_reward = {
-		add_popularity = {
-			ideology = Revolutionism
-			popularity = -0.05
+		add_power_balance_value = {
+			id = FRW_Power_struggles_balance
+			value = 0.05
 		}
     }
 	}
@@ -1415,13 +1449,9 @@ completion_reward = {
 		x = 40
 		y = 9
     completion_reward = {
-		add_popularity = {
-			ideology = Reformism
-			popularity = 0.05
-		}
-		add_popularity = {
-			ideology = Liberalism
-			popularity = 0.05
+		add_power_balance_value = {
+			id = FRW_Power_struggles_balance
+			value = 0.05
 		}
     }
 	 
@@ -1573,6 +1603,10 @@ completion_reward = {
 		ideology = Reformism
 		popularity = 0.1
 	}
+	add_power_balance_value = {
+		id = FRW_Power_struggles_balance
+		value = -0.05
+	}
 }
 }
 focus = { 
@@ -1591,7 +1625,7 @@ focus = {
 	x = 50
 	y = 10
 completion_reward = {
-	custom_effect_tooltip = FRW_focus71_tool
+	unlock_decision_tooltip = FRW_Develop_rural_areas
 }
 }
 focus = {  
@@ -1676,7 +1710,7 @@ focus = {
 	x = 44
 	y = 10
 completion_reward = {
-	
+	unlock_decision_tooltip = FRW_Cooperate_right
 }
 }
 focus = { 
@@ -1718,7 +1752,8 @@ focus = {
 	x = 46
 	y = 10
 completion_reward = { 
-	
+	country_event = FRW.41
+	add_war_support = 0.05
 }
 }
 focus = { 
@@ -1753,7 +1788,13 @@ focus = {
 	id = FRW_focus78 
 	icon = GFX_goal_FRW_focus78
 	cost = 8.00
-	prerequisite = {
+	prerequisite = { 
+	}
+	available = {
+		has_country_leader = {
+			character = FRW_guesde
+			ruling_only = yes
+	    }
 	}
 	allow_branch = {
 		#has_country_leader = {
@@ -1764,7 +1805,6 @@ focus = {
 	x = 17
 	y = 7
 completion_reward = {
-	remove_ideas = FRW_Chaotic_socialism
 	add_ideas = FRW_Decentralized_party_organizations
 	set_power_balance = {
 		id = FRW_Power_struggles_balance
@@ -1781,11 +1821,16 @@ focus = {
 	x = 17
 	y = 8
 completion_reward = {
-	add_political_power = 200
-	add_popularity = {
-		ideology = radical_socialist
-		popularity = 0.1
+	set_party_name = {
+		ideology = Revolutionism
+		long_name = FRW_Revolutionism_party_long_new
+		name = FRW_Revolutionism_party_new
 	}
+	parliament5_add_5=yes
+	custom_effect_tooltip = FRW_parliament5_add_5
+	parliament1_add_5=yes
+	custom_effect_tooltip = FRW_parliament1_add_5
+	set_country_flag = FRW_party_1_text_new
 }
 }
 focus = { 
@@ -1798,11 +1843,8 @@ focus = {
 	x = 15
 	y = 9
 completion_reward = {
-	add_political_power = 200
-	add_popularity = {
-		ideology = radical_socialist
-		popularity = 0.05
-	}
+	add_ideas = farming_society
+	unlock_decision_tooltip = FRW_Develop_rural_areas
 } 
 }
 focus = { 
@@ -1815,10 +1857,9 @@ focus = {
 	x = 18
 	y = 9
 completion_reward = {
-	hidden_effect = {
-		country_event = {id=FRW.43 days=30}
+	add_dynamic_modifier = {
+		modifier = Reduce_unemployment
 	}
-	custom_effect_tooltip = FRW.43_tool
 }
 } 
 focus = { 
@@ -1831,7 +1872,11 @@ focus = {
 	x = 13
 	y = 9
 completion_reward = {
-	add_ideas = farming_society
+	
+	add_power_balance_value = {
+		id = FRW_Power_struggles_balance
+		value = 0.05
+	}
 }
 } 
 focus = { 
@@ -1844,7 +1889,9 @@ focus = {
 	x = 13
 	y = 10
 completion_reward = {
-	country_event = FRW.42
+	add_political_power = 100
+	add_stability = 0.1
+	add_war_support = -0.1
 }
 } 
 focus = { 
@@ -1860,11 +1907,8 @@ focus = {
 	x = 17
 	y = 10
 completion_reward = {
-	14={
-		add_dynamic_modifier = {
-			modifier = FRW_Brittany_National_autonomy
-		}
-	}
+	add_stability = 0.05
+	unlock_decision_tooltip = FRW_economic_committee
 } 
 }
 focus = { 
@@ -1877,13 +1921,10 @@ focus = {
 	x = 21
 	y = 11
 completion_reward = {
-	set_party_name = {
-		ideology = radical_socialist
-		long_name = FRW_radical_socialist_long
-		name = FRW_radical_socialist
-	}
-	add_dynamic_modifier = {
-		modifier = Jobless_rate_stab
+	
+	swap_ideas = {
+		remove_idea = FRW_Decentralized_party_organizations1
+		add_idea = FRW_Decentralized_party_organizations2
 	}
 }
 } 
@@ -1898,13 +1939,9 @@ focus = {
 	y = 11
 completion_reward = {
 	add_trait = {
-		character = FRW_Marcel_Cachin
-		ideology = Authoritarianism_revolutionism
+		character = FRW_guesde
+		ideology = Scientism_revolutionism
 		trait = popular_figurehead2
-	}
-	swap_ideas = {
-		remove_idea = FRW_Decentralized_party_organizations
-		add_idea = FRW_Decentralized_party_organizations1
 	}
 }
 }
@@ -1918,10 +1955,7 @@ focus = {
 	x = 18
 	y = 11
 completion_reward = {
-	add_popularity = {
-		ideology = Anarchism
-		popularity = -0.1
-	}
+	add_stability = 0.05
 }
 }
 focus = {  
@@ -1937,6 +1971,10 @@ focus = {
 	x = 19
 	y = 12
 completion_reward = {
+	add_power_balance_value = {
+		id = FRW_Power_struggles_balance
+		value = -0.05
+	}
 	custom_effect_tooltip = available_political_advisor
 	show_ideas_tooltip = FRW_Monmousseau_H
 } 
@@ -1954,6 +1992,7 @@ focus = {
 	x = 17
 	y = 13
 completion_reward = {
+	add_ideas = FRW_Revolutionary_vanguard
 	random_core_state = {
 		limit = {
 			is_fully_controlled_by = ROOT
@@ -2012,18 +2051,14 @@ focus = {
 		focus = FRW_focus78
 	}
 	available = {
-		AGC={
-				exists = yes
-		}
+		
 	}
 	x = 9
 	y = 8 
 completion_reward = {
-	create_wargoal = {
-		type = take_state_focus
-		target = AGC
-		generator = { 950 28 }
-		expire = 0
+	add_popularity = {
+		ideology = Revolutionism
+		popularity = 0.1
 	}
 }
 } 
@@ -2037,10 +2072,9 @@ focus = {
 	x = 9
 	y = 9
 completion_reward = {
-	add_political_power = 50
 	add_popularity = {
-		ideology = radical_socialist
-		popularity = 0.05
+		ideology = Revolutionism
+		popularity = 0.1
 	}
 }
 }
@@ -2054,9 +2088,9 @@ focus = {
 	x = 7
 	y = 9
 completion_reward = {
-	swap_ideas = {
-		remove_idea = FRW_Decentralized_party_organizations
-		add_idea = FRW_Decentralized_party_organizations1
+	add_popularity = {
+		ideology = Revolutionism
+		popularity = 0.1
 	}
 }
 }
@@ -2070,11 +2104,25 @@ focus = {
 	x = 11
 	y = 9
 completion_reward = {
-	add_political_power = 50
-	add_war_support = 0.1
-	add_popularity = {
-		ideology = radical_socialist
-		popularity = 0.05
+	random_core_state = {
+		limit = {
+			infrastructure > 2
+		}
+		add_building_construction = {
+			type = University
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_core_state = {
+		limit = {
+			infrastructure > 2
+		}
+		add_building_construction = {
+			type = University
+			level = 1
+			instant_build = yes
+		}
 	}
 }
 } 
@@ -2095,8 +2143,8 @@ focus = {
 	y = 10
 completion_reward = {
 	add_popularity = {
-		ideology = Reformism
-		popularity = -0.1
+		ideology = Revolutionism
+		popularity = 0.1
 	}
 }
 }
@@ -2110,10 +2158,10 @@ focus = {
 	x = 9
 	y = 11
 completion_reward = {
-	swap_ideas = {
-		remove_idea = FRW_Decentralized_party_organizations1
-		add_idea = FRW_Decentralized_party_organizations2
-	}
+	add_to_variable = {
+		tech_level_upd_value_var = 5
+		tooltip = tech_level_title_more_5_tool
+}
 }
 }
 
@@ -2404,10 +2452,10 @@ completion_reward = {
 		icon = GFX_goal_FRW_focus119
 		cost = 8.00
 		allow_branch = {
-			#has_country_leader = {
-				#character = FRW_Georges_Sorel
-			#	ruling_only = yes
-			#}
+			has_country_leader = {
+				character = FRW_Georges_Sorel
+				ruling_only = yes
+			}
 		}
 		x = 55
 		y = 7
@@ -2754,6 +2802,9 @@ completion_reward = {
 			#focus = FRW_focus7
 		}
 		available = {
+			has_country_flag = FRW_Far_left_1
+		}
+		allow_branch = {
 			has_country_flag = FRW_Far_left_1
 		}
 		bypass = {

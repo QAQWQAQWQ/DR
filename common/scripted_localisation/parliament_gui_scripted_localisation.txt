@@ -232,9 +232,20 @@ defined_text = {
 			AND={
 				original_tag = FRW
 				FRW={check_variable = { v = 1 }}
+				NOT={has_country_flag = FRW_party_1_text_new}
 			}
 		}
 		localization_key = FRW_party_1_text
+	}
+	text = {
+		trigger = {
+			AND={
+				original_tag = FRW
+				FRW={check_variable = { v = 1 }}
+				has_country_flag = FRW_party_1_text_new
+			}
+		}
+		localization_key = FRW_party_1_text_new
 	}
 	text = {
 		trigger = {
@@ -440,13 +451,23 @@ text = {
 		trigger = {
 			AND={
 				NOT={
-					has_country_flag = FRW_party_1_text_desc
+					has_country_flag = FRW_party_1_text_new
 				}
 				original_tag = FRW
 				check_variable = { v = 1 }
 			}
 		}
 		localization_key = FRW_party_1_text_desc
+	}
+	text = {
+		trigger = {
+			AND={
+				has_country_flag = FRW_party_1_text_new
+				original_tag = FRW
+				check_variable = { v = 1 }
+			}
+		}
+		localization_key = FRW_party_1_text_new_desc
 	}
 	text = {
 		trigger = {
