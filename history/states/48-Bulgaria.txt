@@ -14,6 +14,8 @@ state={
 
 	history={
 		owner = YED
+		add_core_of = YED
+		add_core_of = BOJ
 		victory_points = { #Sofia
 			949 15 
 		}
@@ -25,7 +27,6 @@ state={
 			industrial_complex = 6
 			air_base = 3
 		}
-		add_core_of = YED
 	}
 
 	provinces={

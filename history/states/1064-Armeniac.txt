@@ -1,34 +1,30 @@
 
 state={
-	id=354
-	name="STATE_354"
-	manpower = 716970
-	
-	state_category = town
-	resources={
-		grain=22
-	}
+	id=1064
+	name="STATE_1064"
+	manpower = 851863
+	state_category = rural
+
 	history={
 		owner = YED
 		add_core_of = YED
 		add_core_of = TEQ
-		
 		victory_points = {
-			9932 15
+			11881 10
 		}
 		victory_points = {
-			3979 3 
+			6995 3 
 		}
 		buildings = {
 			infrastructure = 2
-			9932 = {
-				naval_base = 2
+			11881 = {
+				naval_base = 3
 			}
 		}
 	}
 
 	provinces={
-		960 975 3714 3965 3979 9886 9932 11753 11894
+		6978 6995 9900 9915 11881
 	}
 
 	local_supplies=0.0 
