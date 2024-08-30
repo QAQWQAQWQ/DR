@@ -49,7 +49,14 @@ FRW_European_Federation = {
 		tag = FRW 
 	}
 	visible = {
-	    has_country_flag = FRW_33_flag
+		AND={
+			has_country_flag = FRW_33_flag
+			NOT={
+				has_country_flag = FRW_35_flag
+			}
+		}
+	    
+		
 	}
 	visible_when_empty = yes
 	scripted_gui = FRW_Trade_unionist_decision
@@ -85,7 +92,7 @@ FRW_election_movement = {
 	}
 	visible = {
 		NOT={
-			has_country_flag = FRW.35_flag
+			has_country_flag = FRW_35_flag
 		}
 		
 	}

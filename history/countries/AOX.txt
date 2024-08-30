@@ -7,9 +7,23 @@ set_technology = {
 	infantry_weapons = 1
 	tech_support = 1		
 	tech_engineers = 1
-	gw_artillery = 1
-	early_fighter = 1
-	fuel_silos = 1
+	tech_paijipao1 = 1
+	interwar_artillery = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	air_superiority = 1
+	grand_battle_plan = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	battlefleet_concentration = 1
+	convoy_sailing = 1
+	Old_howitzers= 1
+	machine_equipment_weapons= 1
+	early_armor_car= 1
+	iw_small_airframe= 1
+	early_ship_hull_light = 1
+	early_ship_hull_submarine = 1
+	early_ship_hull_heavy = 1
 }
 add_opinion_modifier = {
 	target = WWS
@@ -56,38 +70,6 @@ recruit_character = AOX_Otto_Bauer
 recruit_character = AOX_Ferdinand_Hanusch
 recruit_character = AOX_Rudolf_Ramek
 recruit_character = AOX_Rudolf_Hilferding
-	set_technology = {
-		interwar_artillery = 1
-		infantry_weapons1 = 1
-		
-		support_weapons = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-
-		#electronics
-		
-		
-		
-		
-		
-
-		#industry
-		
-		
-		
-		
-		
-		
-		
-		
-	}
 	
 set_politics = {
 	ruling_party = Conservatism

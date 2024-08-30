@@ -1,0 +1,71 @@
+﻿add_namespace = Election_result
+news_event = {
+	id = Election_result.1
+	title = Election_result.1.t
+	desc = Election_result.1.d
+	picture = GFX_Election_result_1
+
+	major = yes
+
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+			name = Election_result.1.a
+	}		
+}
+news_event = {
+	id = Election_result.2
+	title = Election_result.2.t
+	desc = Election_result.2.d
+	picture = GFX_Election_result_2
+
+	major = yes
+	
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+			name = Election_result.2.a
+	}		
+}
+news_event = {
+	id = Election_result.3
+	title = Election_result.3.t
+	desc = Election_result.3.d
+	picture = GFX_Election_result_3
+
+	major = yes
+	
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+			name = Election_result.3.a
+	}		
+}
+news_event = {
+	id = Election_result.4
+	title = Election_result.4.t
+	desc = Election_result.4.d
+	picture = GFX_Election_result_4
+
+	major = yes
+	
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+			name = Election_result.4.a
+	}		
+}
+news_event = {
+	id = Election_result.5
+	title = Election_result.5.t
+	desc = Election_result.5.d
+	picture = GFX_Election_result_5
+
+	major = yes
+	
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+			name = Election_result.5.a
+	}		
+}

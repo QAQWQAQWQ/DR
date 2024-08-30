@@ -19,16 +19,16 @@
  Number_unions8:0 "已经在8座城市建立"
  Number_unions10:0 "已经在10座城市建立"
  FRW_election_movement:0 "法国大选"
- FRW_election_movement_desc:0"\n\n\n\n\n\n\n\n五年一届的法国大选正式开始，我们可以通过提升相关意识形态支持度来加强党派在各地区投射的力量，以此征求更多的选票来支持执政党的选举。\n\n目前党派席位：\n\n§Y革命社会主义工人党§!:[?parliament_seat_array^0]个席位\n\n§Y社会主义工人联合会§!:[?parliament_seat_array^1]个席位\n\n§Y独立社会党联盟§![?parliament_seat_array^2]个席位\n\n§Y社会主义共和同盟§!:[?parliament_seat_array^3]个席位\n\n§Y革命布朗基派§!:[?parliament_seat_array^4]个席位\n\n§Y无党派（独立人士）§!:[?parliament_seat_array^5]个席位\n\n当前军队内部派系：\n革命派：§Y[?Revolutionary_general_num]§!人\n自由派：§Y[?Liberal_general_num]§!人\n中间派：§Y[?Centrist_general_num]§!人\n\n预计大选结果：\n§Y革命社会主义工人党§!   [PartyNO_1]\n§Y社会主义工人联合会§!   [PartyNO_2]\n§Y独立社会党联盟§!   [PartyNO_3]\n§Y社会主义共和同盟§!   [PartyNO_4]\n§Y革命布朗基派§!   [PartyNO_5]\n§Y无党派(独立人士)§! [PartyNO_6] "
+ FRW_election_movement_desc:0"\n\n\n\n\n\n\n\n五年一届的法国大选正式开始，我们可以通过提升相关意识形态支持度来加强党派在各地区投射的力量，以此征求更多的选票来支持执政党的选举。\n\n目前党派席位：\n\n§Y革命社会主义工人党§!:[?parliament_seat_array^0]个席位\n\n§Y社会主义工人联合会§!:[?parliament_seat_array^1]个席位\n\n§Y独立社会党联盟§![?parliament_seat_array^2]个席位\n\n§Y社会主义共和同盟§!:[?parliament_seat_array^3]个席位\n\n§Y革命布朗基派§!:[?parliament_seat_array^4]个席位\n\n§Y无党派（独立人士）§!:[?parliament_seat_array^5]个席位\n\n当前军队内部派系：\n革命派：§Y[?Revolutionary_general_num]§!人\n自由派：§Y[?Liberal_general_num]§!人\n中间派：§Y[?Centrist_general_num]§!人\n\n预计大选结果：\n§Y革命社会主义工人党§!   [PartyNO_1]\n§Y社会主义工人联合会§!   [PartyNO_2]\n§Y独立社会党联盟§!：   [PartyNO_3]\n§Y社会主义共和同盟§!：   [PartyNO_4]\n§Y革命布朗基派§!   [PartyNO_5]\n§Y无党派(独立人士)§! [PartyNO_6] "
  FRW_election_movement0:0 "拉拢军队"
 
  FRW_election_movement1:0 "选举倒计时"
 
- FRW_election_movement2:0 "与自由派辩论"
+ FRW_election_movement2:0 "为自由派辩论"
  FRW_election_movement3:0 "诋毁自由派"
  FRW_election_movement4:0 "拉拢自由派官员"
 
- FRW_election_movement5:0 "与革命派辩论"
+ FRW_election_movement5:0 "为革命派辩论"
  FRW_election_movement6:0 "诋毁革命派"
  FRW_election_movement7:0 "拉拢革命派官员"
 
@@ -168,7 +168,10 @@ Domestic_construction:0 "国内建设"
 Domestic_construction_desc:0 "\n\n\n\n\n\n\n\n我们可以通过国库储备来投资一些企业，这不仅能刺激我们的经济，还能更好的建设我们的国家。"
 
 Irish_crisis:0 "爱尔兰危机"
-Irish_crisis_desc:0 "\n\n\n\n\n\n\n\n武装的爱尔兰共和派一直谋求以武力发动起义，以此从英国获得独立。据我们的线人得知，爱尔兰的叛乱力量由法国方面资助，因此我们拥有绝对的理由将这群分裂帝国的叛军消灭\n当前局势：\n爱尔兰分离情绪：§Y[?Separation_emotions]§!\n英国牺牲军人数量为:§Y[?Sacrifice_soldiers]§!"
+Announce_Irish_Uprising:0 "宣告爱尔兰独立"
+Separation_emotions_80:0 "分离情绪>80"
+Separation_emotions_150:0 "英国军人阵亡数>150人"
+Irish_crisis_desc:0 "\n\n\n\n\n\n\n\n武装的爱尔兰共和派一直谋求以武力发动起义，以此从英国获得独立。据我们的线人得知，爱尔兰的叛乱力量由法国方面资助，因此我们拥有绝对的理由将这群分裂帝国的叛军消灭\n当前局势：\n爱尔兰分离情绪：§Y[?ENL.Separation_emotions]§!\n英国牺牲军人数量为:§Y[?ENL.Sacrifice_soldiers]§!"
 Fortify_line_defense:0 "构建防线"
 Deploy_regular_troops:0 "部署正规军队"
 Separation_emotions_5:0 "分离情绪：§Y+5§!"
@@ -177,6 +180,8 @@ Deploy_regular_troops_tank:0 "在贝尔法斯特部署一只§G坦克联队§!"
 Infiltrate_Northern_Ireland:0 "渗透北爱尔兰"
 
 Search_IRA_dens:0 "搜查共和军窝点"
+
+
 
 Stop_surge:0 "议会宣布停止增兵"
 Separation_emotions_10:0 "分离情绪：§Y-10§!"
@@ -188,7 +193,9 @@ Assault_factory:0 "袭击北爱尔兰工厂"
 Dublin_Patriotic_parade:0 "在都柏林进行爱国游行"
 Connaught_Patriotic_parade:0 "在康诺特进行爱国游行"
 Munster_Patriotic_parade:0 "在芒斯特进行爱国游行"
-Sacrifice_soldiers_up:0 "有部分军人在袭击者丧生"
+Sacrifice_soldiers_up25:0 "造成小部分军人在袭击者丧生"
+Sacrifice_soldiers_up55:0 "造成大部分军人在袭击者丧生"
+Sacrifice_soldiers_up40:0 "造成一部分军人在袭击者丧生"
 Embargo_Ireland:0 "封锁爱尔兰"
 Embargo_Ireland_tool:0 "爱尔兰将§R无法§!和任何国家进行§Y贸易§!"
 Sacrifice_soldiers_1000:0 "牺牲军人数量少于1000"

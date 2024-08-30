@@ -87,10 +87,10 @@ country_event = {
 		country_event = {id=FRW_Far_left.1 days=10}
 		add_ideas = National_emergency
 	}
-	option = {
-		name = FRW_Far_left.0.b
+	#option = {
+	#	name = FRW_Far_left.0.b
 
-	}
+	#}
 }
 country_event = {
 	id = FRW_Far_left.1
@@ -101,6 +101,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = FRW_Far_left.1.a
+		news_event = Election_result.5
 		set_country_flag = FRW_Far_left_1
 		mark_focus_tree_layout_dirty = yes
 		promote_character = {
@@ -144,7 +145,7 @@ country_event = {
 		add_stability = -0.03
 		clr_country_flag = parliament_mian_button_yes
 		custom_effect_tooltip = FRW_Syndicates.0_tooltip
-	    }
+	}
 }
 country_event = {
 	id = FRW_Syndicates.1
@@ -993,10 +994,11 @@ country_event = {
 		}
 	}
 	immediate = {
-		set_country_flag = FRW.35_flag
+		set_country_flag = FRW_35_flag
 	}
 	option = {
 		name = FRW.35.a
+		news_event = {id=Election_result.1 days = 2}
 		trigger = {
 			AND={
 				NOT={has_country_flag = Assembly_Tours_1}
@@ -1033,6 +1035,7 @@ country_event = {
 		}
 	option = {
 		name = FRW.35.b
+		news_event = {id=Election_result.2 days = 2}
 		trigger = {
 			AND={
 				NOT={has_country_flag = Assembly_Tours_1}
@@ -1080,6 +1083,7 @@ country_event = {
 		}
 	option = {
 		name = FRW.35.c
+		news_event = {id=Election_result.3 days = 2}
 		trigger = {
 			AND={
 				NOT={has_country_flag = Assembly_Tours_1}
@@ -1115,6 +1119,7 @@ country_event = {
 		}
 		}	
 	option = {
+		news_event = Election_result.4
 		trigger = {
 			has_country_flag = Assembly_Tours_1
 		}
@@ -1134,6 +1139,9 @@ country_event = {
 		
 		}
 }
+
+
+
 country_event = {
 	id = FRW.36
 	title = FRW.36.t

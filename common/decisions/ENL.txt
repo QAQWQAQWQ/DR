@@ -298,6 +298,11 @@ Irish_crisis = {
 						Separation_emotions = -10 
 						tooltip = Separation_emotions_10
 				} 
+				clamp_variable = {
+					var = Separation_emotions
+					min = 0
+					max = 100
+				}
 				}
 				hidden_effect = {
 					IRL={
@@ -305,7 +310,13 @@ Irish_crisis = {
 							Separation_emotions = -10
 							tooltip = Separation_emotions_10
 					 } 
+					 clamp_variable = {
+						var = Separation_emotions
+						min = 0
+						max = 100
 					}
+					}
+					
 				}
 				
 			}
@@ -332,9 +343,19 @@ Irish_crisis = {
 			complete_effect = {
 				ENL={
 					add_to_variable = { Separation_emotions = 1 } 
+					clamp_variable = {
+						var = Separation_emotions
+						min = 0
+						max = 100
+					}
 				}
 				IRL={
 					add_to_variable = { Separation_emotions = 1 } 
+					clamp_variable = {
+						var = Separation_emotions
+						min = 0
+						max = 100
+					}
 				}
 			119={
 				add_building_construction = {
@@ -383,7 +404,7 @@ Irish_crisis = {
 		available = {
 			has_completed_focus = ENL_focus12
 			has_equipment = {
-				gw_tank_equipment>99
+				wheeled_chassis_0>99
 			}
 			119 = {
 		        is_controlled_by = ENL
@@ -406,12 +427,24 @@ Irish_crisis = {
 				add_to_variable = { 
 					Separation_emotions = 20 
 					tooltip = Separation_emotions_20 
+					
+				}
+				clamp_variable = {
+					var = Separation_emotions
+					min = 0
+					max = 100
 				}
 			}
 			IRL={
 				add_to_variable = { 
 					Separation_emotions = 20 
 					tooltip = Separation_emotions_20 
+					
+				}
+				clamp_variable = {
+					var = Separation_emotions
+					min = 0
+					max = 100
 				}
 			}
 			hidden_effect = {
@@ -428,6 +461,70 @@ Irish_crisis = {
 		}
 	}
 	##IRL
+	Announce_Irish_Uprising = {  
+		icon = generic_ignite_civil_war
+		visible = {
+			original_tag = IRL 
+		}
+		available = {
+			check_variable = {
+				ENL.Separation_emotions > 80
+				tooltip = Separation_emotions_80
+			}
+			check_variable = {
+				ENL.Sacrifice_soldiers > 150
+				tooltip = Separation_emotions_150
+			}
+		}  
+		days_re_enable = 3
+		days_remove = 10
+		cost = 25
+		allowed = {
+			tag = IRL
+		} 
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		ai_will_do = { 
+		factor = 1   
+		}
+		complete_effect = {
+			IRL={
+				hidden_effect = {
+					country_event = IRL.1
+					set_cosmetic_tag = IRL_Liberalism_tag
+				}
+				set_politics = {
+					ruling_party = Liberalism
+				}
+			}
+			
+		113={
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 1
+			}
+		}
+		119={
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 1
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 1
+			}
+		}
+		}
+	}
 	Infiltrate_Northern_Ireland = { 
 		icon = generic_ignite_civil_war
 		visible = {
@@ -485,6 +582,13 @@ Irish_crisis = {
 				add_to_variable = { 
 					Separation_emotions = 5
 					tooltip = Separation_emotions_5 
+					
+					
+				}
+				clamp_variable = {
+					var = Separation_emotions
+					min = 0
+					max = 100
 				}
 			}
 			IRL={
@@ -492,7 +596,11 @@ Irish_crisis = {
 					Separation_emotions = 5
 					tooltip = Separation_emotions_5 
 				}
-				
+				clamp_variable = {
+					var = Separation_emotions
+					min = 0
+					max = 100
+				}
 			}
 			add_war_support = 0.1
 
@@ -526,11 +634,21 @@ Irish_crisis = {
 					Separation_emotions = 5
 					tooltip = Separation_emotions_5 
 				}
+				clamp_variable = {
+					var = Separation_emotions
+					min = 0
+					max = 100
+				}
 			}
 			IRL={
 				add_to_variable = { 
 					Separation_emotions = 5
 					tooltip = Separation_emotions_5 
+				}
+				clamp_variable = {
+					var = Separation_emotions
+					min = 0
+					max = 100
 				}
 			}
 		}
@@ -639,11 +757,21 @@ Irish_crisis = {
 					Separation_emotions = 5
 					tooltip = Separation_emotions_5 
 				}
+				clamp_variable = {
+					var = Separation_emotions
+					min = 0
+					max = 100
+				}
 			}
 			IRL={
 				add_to_variable = { 
 					Separation_emotions = 5
 					tooltip = Separation_emotions_5 
+				}
+				clamp_variable = {
+					var = Separation_emotions
+					min = 0
+					max = 100
 				}
 			}
 		}
@@ -681,11 +809,21 @@ Irish_crisis = {
 					Separation_emotions = 5
 					tooltip = Separation_emotions_5 
 				}
+				clamp_variable = {
+					var = Separation_emotions
+					min = 0
+					max = 100
+				}
 			}
 			IRL={
 				add_to_variable = { 
 					Separation_emotions = 5
 					tooltip = Separation_emotions_5 
+				}
+				clamp_variable = {
+					var = Separation_emotions
+					min = 0
+					max = 100
 				}
 			}
 		}
@@ -723,11 +861,21 @@ Irish_crisis = {
 					Separation_emotions = 5
 					tooltip = Separation_emotions_5 
 				}
+				clamp_variable = {
+					var = Separation_emotions
+					min = 0
+					max = 100
+				}
 			}
 			IRL={
 				add_to_variable = { 
 					Separation_emotions = 5
 					tooltip = Separation_emotions_5 
+				}
+				clamp_variable = {
+					var = Separation_emotions
+					min = 0
+					max = 100
 				}
 			}
 			

@@ -249,19 +249,32 @@ country_event = {
 		name = ENL_The_Irish_crisis.2.a
 		add_stability = -0.01
 		ENL={
-			add_to_variable = {
-				Sacrifice_soldiers = 15
-				tooltip = Sacrifice_soldiers_up
+			random_list = {
+			50={
+				add_to_variable = {
+					Sacrifice_soldiers = 25
+					tooltip = Sacrifice_soldiers_up25
+				}
+			}
+			20={
+				add_to_variable = {
+					Sacrifice_soldiers = 55
+					tooltip = Sacrifice_soldiers_up55
+				}
+			}
+			30={
+				add_to_variable = {
+					Sacrifice_soldiers = 40
+					tooltip = Sacrifice_soldiers_up40
+				}
 			}
 		}
-		IRL={
-			add_to_variable = {
-				Sacrifice_soldiers = 15
-				tooltip = Sacrifice_soldiers_up
-			}
 		}
+		
+		}
+		
 	}	
-}
+
 country_event = {
 	id = ENL_The_Irish_crisis.3
 	title = ENL_The_Irish_crisis.3.t
@@ -269,13 +282,7 @@ country_event = {
 
 	picture = GFX_White_Stadium
 
-	trigger = {
-		ENL={
-			check_variable = {
-				Separation_emotions >75
-		}
-		}
-	}
+	is_triggered_only = yes
     fire_only_once = yes
 	option = {
 		name = ENL_The_Irish_crisis.3.a
@@ -284,6 +291,9 @@ country_event = {
 				type = infrastructure
 				damage = 0.9
 			}
+		}
+		ENL={
+			complete_national_focus = ENL_focus11
 		}
 	}	
 }

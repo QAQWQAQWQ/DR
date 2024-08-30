@@ -1,5 +1,17 @@
 ideas = {
     country = {
+
+		World_Sweatshops = {
+			picture = World_Sweatshops
+			modifier = {
+				Jobless_rate_stab_modifier=-0.15
+				production_factory_start_efficiency_factor= 0.1
+				production_factory_efficiency_gain_factor = 0.25
+				line_change_production_efficiency_factor= 0.1
+			}
+        }
+
+
 		sun_Empire = {
 			picture = sun_Empire
 			modifier = {

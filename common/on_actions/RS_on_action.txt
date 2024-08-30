@@ -2420,9 +2420,14 @@ on_startup= {
 				}
 			}
 			    ENL={
-				  add_to_variable = {
+				  add_to_variable = { 
 					var = Separation_emotions
 					value = 2
+				}
+				clamp_variable = {
+					var = Separation_emotions
+					min = 0
+					max = 100
 				}
 			}	
 			}	

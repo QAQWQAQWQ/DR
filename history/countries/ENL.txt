@@ -11,7 +11,7 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-country_event={id = ENL.1 days= 120}
+country_event={id = ENL_The_Irish_crisis.3 days= 25}
 add_to_variable = { resource_grain = 150 }
 set_power_balance = {
 	id = League_balance
@@ -44,38 +44,34 @@ recruit_character = ENL_Edmund_Allenby
 recruit_character = ENL_Bonar_Law
 recruit_character = ENL_Winston_Churchill
 recruit_character = ENL_Robert_Peel_Glanville_Blatchford
-	set_technology = {
-		interwar_artillery = 1
-		infantry_weapons1 = 1
-		
-		support_weapons = 1
+set_technology = {
+	infantry_weapons = 1
+tech_support = 1		
+tech_engineers = 1
+	tech_paijipao1 = 1
+	interwar_artillery = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+#doctrines
+air_superiority = 1
+grand_battle_plan = 1
+trench_warfare = 1
+fleet_in_being = 1
+battlefleet_concentration = 1
+convoy_sailing = 1
+Old_howitzers= 1
+machine_equipment_weapons= 1
+early_armor_car= 1
+iw_small_airframe= 1
+early_ship_hull_light = 1
+early_ship_hull_submarine = 1
+early_ship_hull_heavy = 1
+#electronics
 
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
+#industry
 
 
-		#electronics
-		
-		
-		
-		
-		
-
-		#industry
-		
-		
-		
-		
-		
-		
-		
-		
-	}
+}
 	create_faction = Commonwealth_of_Nations
 	add_to_faction = YDA
 	add_to_faction = ASZ
@@ -109,6 +105,7 @@ add_ideas={
 England
 Ireland_uproar
 High_grain_prices
+World_Sweatshops
 #law
     Market_economy
 	Freedom_belief
@@ -117,6 +114,8 @@ High_grain_prices
 	Media_control
 	Underlying_investment
 	Local_police
+	Developed_industrialization
+
 #
 ENL_George_V_H
 

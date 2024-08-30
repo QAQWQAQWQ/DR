@@ -220,9 +220,19 @@ focus_tree={
 			unlock_decision_category_tooltip = Irish_crisis
 			ENL={
 				set_variable = { Separation_emotions = 25 }
+				clamp_variable = {
+					var = Separation_emotions
+					min = 0
+					max = 100
+				}
 			}
 			IRL={
 				set_variable = { Separation_emotions = 25 }
+				clamp_variable = {
+					var = Separation_emotions
+					min = 0
+					max = 100
+				}
 			}
 		}
 	}

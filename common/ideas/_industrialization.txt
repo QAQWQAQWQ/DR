@@ -22,6 +22,7 @@ ideas = {
 				production_speed_industrial_complex_factor = -0.4
 				production_speed_arms_factory_factor = -0.4
 				fuel_gain_factor = -0.45
+				production_factory_efficiency_gain_factor = -0.15
 			}
 
 			cancel_if_invalid = no
@@ -64,6 +65,7 @@ ideas = {
 				production_speed_industrial_complex_factor = -0.35
 				production_speed_arms_factory_factor = -0.35
 				fuel_gain_factor = -0.35
+				production_factory_efficiency_gain_factor = -0.05
 			}
 
 			cancel_if_invalid = no
@@ -101,6 +103,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.05
 				production_speed_arms_factory_factor = 0.05
 				fuel_gain_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
 			}
 
 			cancel_if_invalid = no
@@ -138,6 +141,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.15
 				production_speed_arms_factory_factor = 0.15
 				fuel_gain_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.15
 			}
 
 			cancel_if_invalid = no
@@ -175,6 +179,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.35
 				production_speed_arms_factory_factor = 0.35
 				fuel_gain_factor = 0.35
+				production_factory_efficiency_gain_factor = 0.2
 			}
 
 			cancel_if_invalid = no

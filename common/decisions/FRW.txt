@@ -1446,7 +1446,7 @@ FRW_election_movement = {
 	FRW_election_movement0 = {
 		icon = generic_ignite_civil_war
 		visible = {
-			
+		
 		}
 		available = {
 		   
@@ -1485,6 +1485,7 @@ FRW_election_movement = {
     is_good = yes
     days_mission_timeout = 411
     selectable_mission = no 
+	fire_only_once = yes
     complete_effect = {
          
     }
@@ -1509,7 +1510,7 @@ FRW_election_movement2 = {
 	complete_effect = { 
        add_popularity = {
 		ideology = Liberalism
-		popularity = -0.02
+		popularity = 0.03
 	   }
 	   add_political_power = 50
 	}
@@ -1595,7 +1596,7 @@ FRW_election_movement5= {
 	complete_effect = { 
 		add_popularity = {
 			ideology = Revolutionism
-			popularity = -0.02
+			popularity = 0.03
 		   }
 		   add_political_power = 50
 	}

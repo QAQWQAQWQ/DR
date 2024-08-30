@@ -14,11 +14,47 @@ ENL_parliament_gui_initial = {
 	add_to_array = { parliament_member_array = 5 } # Party D
 	# Set up the positions of the dots for the semicircle parliament
 	parliament_gui_positions = yes
-
+	ENL_parliament_seat= yes
 	# Modify what shows up in the gui
-	reload_parliament_gui = yes 
+	reload_parliament_gui = yes
 }
-
+ENL_parliament_seat = {
+	clamp_variable = {
+		var = parliament_seat_array^0
+		min = 0
+		max = 200
+	}
+	clamp_variable = {
+		var = parliament_seat_array^1
+		min = 0
+		max = 200
+	}
+	clamp_variable = {
+		var = parliament_seat_array^2
+		min = 0
+		max = 200
+	}
+	clamp_variable = {
+		var = parliament_seat_array^3
+		min = 0
+		max = 200
+	}
+	clamp_variable = {
+		var = parliament_seat_array^4
+		min = 0
+		max = 200
+	}
+	clamp_variable = {
+		var = parliament_seat_array^5
+		min = 0
+		max = 200
+	}
+	clamp_variable = {
+		var = parliament_seat_array^6
+		min = 0
+		max = 200
+	}
+}
 # The following scripted effect does the main job of generating the gui, by adding the seats for each party in a grid.
 # This should be called every time you need to update the gui, when you add/subtract seats for example.
 # Read the comments if you're interested in how it works
