@@ -4,15 +4,16 @@ state={
 	name="STATE_803"
 
 	history={
+		owner = YED
+		add_core_of = YED
+		add_core_of = BOJ
 		victory_points = {
 			11857 1 
 		}
-		owner = BOJ
 		buildings = {
 			infrastructure = 2
 
 		}
-		add_core_of = BOJ
 
 	}
 

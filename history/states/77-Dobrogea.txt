@@ -7,20 +7,21 @@ state={
 	state_category = rural
 
 	history={
+		owner = YED
+		add_core_of = YED
+		add_core_of = BOJ
+		add_claim_by = LMN
 		victory_points = {
 			11597 1
 		}
-		owner = BOJ
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
 		}
-		add_core_of = BOJ
-		add_claim_by = LMN
 	}
 
 	provinces={
-		9614 11597 649 9769 9783
+		9614 11597
 	}
 
 	local_supplies=1.0 

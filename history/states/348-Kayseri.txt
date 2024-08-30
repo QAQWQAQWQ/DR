@@ -1,15 +1,15 @@
 
 state={
 	id=348
-	name="STATE_348" # Kayseri
+	name="STATE_348"  # Kayseri
 	manpower = 858452
 	resources = { chromium = 32 }
 	
 	state_category = rural
 
 	history={
-		owner = YED
-		add_core_of = YED
+		owner = TEQ
+		add_core_of = TEQ
 		victory_points = {
 			3870 5 
 		}
@@ -27,7 +27,7 @@ state={
 	}
 
 	provinces={
-		869 3870 6807 6925 9755 9763 9830 9861 9901 11792
+		869 940 961 3788 3870 6807 6894 7143 9755 9763 9830 9861 9811 11792 11860 13122
 	}
 
 	local_supplies=6.0 
