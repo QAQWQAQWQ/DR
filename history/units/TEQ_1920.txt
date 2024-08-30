@@ -1,5 +1,5 @@
 division_template = {
-	name = "奥斯曼步兵师"
+	name = "土耳其步兵师"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -18,7 +18,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "奥斯曼骑兵旅"
+	name = "土耳其骑兵旅"
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -31,7 +31,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "奥斯曼山地旅"
+	name = "土耳其山地旅"
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
@@ -41,7 +41,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "奥斯曼守备师"
+	name = "土耳其守备师"
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -55,79 +55,79 @@ division_template = {
 }
 units = {
 	division= {		
-		name = "奥斯曼第一步兵师"
+		name = "土耳其第一步兵师"
 		location = 3951
-		division_template = "奥斯曼步兵师"
+		division_template = "土耳其步兵师"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {		
-		name = "奥斯曼第二步兵师"
+		name = "土耳其第二步兵师"
 		location = 9878
-		division_template = "奥斯曼步兵师"
+		division_template = "土耳其步兵师"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {		
-		name = "奥斯曼第三步兵师"
+		name = "土耳其第三步兵师"
 		location = 6807
-		division_template = "奥斯曼步兵师"
+		division_template = "土耳其步兵师"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {		
-		name = "奥斯曼第四步兵师"
+		name = "土耳其第四步兵师"
 		location = 9777
-		division_template = "奥斯曼步兵师"
+		division_template = "土耳其步兵师"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {		
-		name = "奥斯曼第五步兵师"
+		name = "土耳其第五步兵师"
 		location = 11853
-		division_template = "奥斯曼步兵师"
+		division_template = "土耳其步兵师"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {		
-		name = "奥斯曼第六步兵师"
+		name = "土耳其第六步兵师"
 		location = 10106
-		division_template = "奥斯曼步兵师"
+		division_template = "土耳其步兵师"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {		
-		name = "奥斯曼守备一师"
+		name = "土耳其守备一师"
 		location = 2097
-		division_template = "奥斯曼守备师"
+		division_template = "土耳其守备师"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {		
-		name = "奥斯曼守备二师"
+		name = "土耳其守备二师"
 		location = 7620
-		division_template = "奥斯曼守备师"
+		division_template = "土耳其守备师"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {		
-		name = "奥斯曼第七步兵师"
+		name = "土耳其第七步兵师"
 		location = 2097
-		division_template = "奥斯曼步兵师"
+		division_template = "土耳其步兵师"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {		
-		name = "奥斯曼第八步兵师"
+		name = "土耳其第八步兵师"
 		location = 10472
-		division_template = "奥斯曼步兵师"
+		division_template = "土耳其步兵师"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {		
-		name = "奥斯曼第九步兵师"
+		name = "土耳其第九步兵师"
 		location = 7193
-		division_template = "奥斯曼步兵师"
+		division_template = "土耳其步兵师"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}

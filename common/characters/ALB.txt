@@ -1,4 +1,18 @@
 characters={
+	ALB_Wilhelm_Wied={
+		name=ALB_Wilhelm_Wied
+		portraits={
+			civilian={
+				large="gfx/leaders/ALB/Portrait_Wilhelm_Wied.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	ALB_Esad_Toptani={
 		name=ALB_Esad_Toptani
 		portraits={
