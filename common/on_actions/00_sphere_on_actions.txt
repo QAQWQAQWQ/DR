@@ -90,7 +90,15 @@ on_actions = {
                     in_a_sphere = 1
                 }
                 set_variable = {
-                    sphere_country = SHW
+                    sphere_country = AOX
+                }
+            }
+            HES = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = AOX
                 }
             }
             BOJ = {

@@ -91,6 +91,11 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
+			add_political_power = 25
+			add_opinion_modifier = {
+				target = SAE
+				modifier = our_friend
+			}
 		}
 		available = {
 		}

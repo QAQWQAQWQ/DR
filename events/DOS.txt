@@ -3,6 +3,12 @@
 ###########################
 
 add_namespace = DOS
+add_namespace = SAA
+add_namespace = SAB
+add_namespace = SAC
+add_namespace = SAD
+add_namespace = SAE
+add_namespace = SAF
 
 country_event = {
 	id = DOS.1
@@ -15,3 +21,19 @@ country_event = {
 		name = DOS.1.a
 			}
 	}
+country_event = {
+	id = SAA.1
+	title = SAA.1.t
+	desc = SAA.1.d
+	#picture = GFX_Black_confrontation
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = SAA.1.a
+		complete_national_focus = SAA_5
+	}
+	option = {
+		name = SAA.1.b
+		complete_national_focus = SAA_6
+	}
+}
