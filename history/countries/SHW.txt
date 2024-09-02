@@ -349,10 +349,26 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no
 }
-puppet = FEL
-puppet = AFH
-puppet = ESI
-
+set_autonomy = {
+	target = YED
+	autonomy_state = autonomy_puppet
+}
+set_autonomy = {
+	target = FEL
+	autonomy_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+	target = FEL
+	autonomy_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+	target = AFH
+	autonomy_state = autonomy_reichsprotectorate
+}
+set_autonomy = {
+	target = ESI
+	autonomy_state = autonomy_colony
+}
 country_event = { id = SHW_event.1 days = 94 }
 
 set_popularities = {

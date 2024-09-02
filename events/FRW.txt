@@ -1336,14 +1336,14 @@ country_event = {
 	option = {
 		name = FRW.46.a
 		add_opinion_modifier = {
-			target = WWS
+			target = AOX
 			modifier = protest
 		}
 	}
 	option = {
 		name = FRW.46.b
 		add_opinion_modifier = {
-			target = WWS
+			target = AOX
 			modifier = satisfied
 		}
 	}
@@ -1411,5 +1411,23 @@ country_event = {
 	option = {
 		name = FRW.50.b
 		add_war_support = -0.02
+	}
+}
+country_event = {
+	id = FRW.51
+	title = FRW.51.t
+	desc = FRW.51.d
+	picture = GFX_Eu_election
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.51.a
+	}
+	option = {
+		name = FRW.51.b
+		add_political_power = -100
+		army_experience = 20
+		add_command_power = 10
 	}
 }

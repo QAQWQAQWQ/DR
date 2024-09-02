@@ -1,0 +1,25 @@
+characters={
+	TGA_Alexei_Kuropatkin={
+		name=TGA_Alexei_Kuropatkin
+		portraits={
+		army={
+			large="gfx/leaders/TGA/Portrait_Alexei_Kuropatkin.tga"
+			small="gfx/interface/ideas/Portrait_Alexei_Kuropatkin.dds"
+		}
+	}
+	country_leader={
+		ideology=Authoritarianism_Conservatism
+		traits={  }
+		expire="1965.1.1.1"
+		id=-1
+	}
+	corps_commander={
+		traits={ Lieutenant_general }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+	}		
+	}
