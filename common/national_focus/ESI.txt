@@ -1,0 +1,377 @@
+#!gfx:interface\RS_goals.gfx 
+focus_tree = {
+	id = ESI 
+	country = {
+		factor = 0  
+		modifier = {
+			add = 10
+			tag = ESI 
+		}
+	}
+	default = no
+	focus = {
+		id = ESI_Focus0
+		icon = GFX_goal_ESI_Focus0
+		cost = 5.00
+		x = 14
+		y = 0
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = ESI_Focus7
+		icon = GFX_goal_ESI_Focus7
+		cost = 5.00
+		x = 10
+		y = 1
+		completion_reward = {
+			army_experience = 10
+		}
+	}
+	focus = {
+		id = ESI_Focus18
+		icon = GFX_goal_ESI_Focus18
+		cost = 5.00
+		x = 5
+		y = 0
+		completion_reward = {
+			966={
+				add_claim_by = ESI
+			}
+			set_rule = {
+				can_not_declare_war=no
+			}
+		}
+	}
+	focus = {
+		id = ESI_Focus11
+		icon = GFX_goal_ESI_Focus11
+		cost = 5.00
+		prerequisite = {
+			focus = ESI_Focus18
+		}
+		available = {
+			SHW={
+				has_war_with = EYJ
+			}
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+			add_to_war = {
+				targeted_alliance = SHW
+				enemy = EYJ
+			}
+		}
+	}
+	focus = {
+		id = ESI_Focus12
+		icon = GFX_goal_ESI_Focus12
+		cost = 5.00
+		prerequisite = {
+			focus = ESI_Focus18
+		}
+		available = {
+			SHW={
+				has_war_with = WWS
+			}
+		}
+		x = 6
+		y = 1
+        completion_reward = {
+			add_to_war = {
+				targeted_alliance = SHW
+				enemy = WWS
+			}
+		}
+	}
+	focus = {
+		id = ESI_Focus13
+		icon = GFX_goal_ESI_Focus13
+		cost = 5.00
+		prerequisite = {
+			focus = ESI_Focus12
+		}
+		prerequisite = {
+			focus = ESI_Focus11
+		}
+		x = 5
+		y = 3
+        completion_reward = {
+			add_opinion_modifier = {
+				target = ASI
+				modifier = Show_goodwill
+			}
+		}
+	}
+	focus = {
+		id = ESI_Focus8
+		icon = GFX_goal_ESI_Focus8
+		cost = 5.00
+		prerequisite = {
+			focus = ESI_Focus7
+		}
+		x = 7
+		y = 2
+    completion_reward = {
+		269={
+			create_unit = {
+				division = "name = \"哥萨克骑兵旅\" division_template = \"哥萨克骑兵旅\" start_experience_factor = 0.5"
+				owner = ESI
+				prioritize_location = 10833
+			}
+		}
+		
+	}
+	}
+	focus = {
+		id = ESI_Focus1
+		icon = GFX_goal_ESI_Focus1
+		cost = 5.00
+		prerequisite = {
+			focus = ESI_Focus0
+		}
+		x = 14
+		y = 1
+        completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = ESI_Focus9
+		icon = GFX_goal_ESI_Focus9
+		cost = 5.00
+		prerequisite = {
+			focus = ESI_Focus7
+		}
+		prerequisite = {
+			focus = ESI_Focus1
+		}
+		x = 11
+		y = 2
+        completion_reward = {
+			911={
+				create_unit = {
+					division = "name = \"当地护卫旅\" division_template = \"当地护卫旅\" start_experience_factor = 0.5"
+					owner = ESI
+					prioritize_location = 13236
+				}
+			}
+		}
+	}
+	focus = {
+		id = ESI_Focus10
+		icon = GFX_goal_ESI_Focus10
+		cost = 5.00
+		prerequisite = {
+			focus = ESI_Focus8
+		}
+		prerequisite = {
+			focus = ESI_Focus9
+		}
+		x = 9
+		y = 3
+		completion_reward = {
+			army_experience = 10
+		}
+	}
+	focus = {
+		id = ESI_Focus2
+		icon = GFX_goal_ESI_Focus2
+		cost = 5.00
+		prerequisite = {
+			focus = ESI_Focus1
+		}
+		x = 14
+		y = 2
+		completion_reward = {
+			capital_scope = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = ESI_Focus3
+		icon = GFX_goal_ESI_Focus3
+		cost = 5.00
+		prerequisite = {
+			focus = ESI_Focus2
+		}
+		x = 12
+		y = 3
+    completion_reward = {
+		SHW={
+			country_event = ESI.1
+		}
+	}
+	}
+	focus = {
+		id = ESI_Focus4
+		icon = GFX_goal_ESI_Focus4
+		cost = 5.00
+		prerequisite = { 
+			focus = ESI_Focus2
+		} 
+		x = 14
+		y = 3
+		completion_reward = {
+			908={
+				add_building_construction = {
+					type = grain_farms
+					level = 1
+				}
+				add_resource = {
+					type = grain
+					amount = 5
+				}
+			}
+			
+		}
+	}
+	focus = {
+		id = ESI_Focus5
+		icon = GFX_goal_ESI_Focus5
+		cost = 5.00
+		prerequisite = {
+			focus = ESI_Focus2
+		}
+		x = 16
+		y = 3
+        completion_reward = {
+			random_owned_controlled_state = {
+				add_dynamic_modifier = {
+					modifier = ESI_Focus5_dy
+				}
+			}
+			
+		}
+	}
+	focus = {
+		id = ESI_Focus14
+		icon = GFX_goal_ESI_Focus14
+		cost = 5.00
+		prerequisite = {
+			focus = ESI_Focus0
+		}
+		x = 17
+		y = 1
+		completion_reward = {
+			random_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ESI_Focus15
+		icon = GFX_goal_ESI_Focus15
+		cost = 5.00
+		prerequisite = {
+			focus = ESI_Focus14
+		}
+		x = 18
+		y = 3
+    completion_reward = {
+		add_resource = {
+			type = rubber
+			amount = 4
+			state = 269
+		}
+	}
+	}
+	focus = {
+		id = ESI_Focus16
+		icon = GFX_goal_ESI_Focus16
+		cost = 5.00
+		prerequisite = {
+			focus = ESI_Focus14
+		}
+		x = 19
+		y = 2
+    completion_reward = {
+		random_controlled_state={
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = grain_farms
+				level = 1
+			}
+			add_resource = {
+				type = grain
+				amount = 5
+			}
+		}
+		
+	}
+	}
+	focus = {
+		id = ESI_Focus6
+		icon = GFX_goal_ESI_Focus6
+		cost = 5.00
+		prerequisite = {
+			focus = ESI_Focus3
+		}
+		prerequisite = {
+			focus = ESI_Focus4
+		}
+		prerequisite = {
+			focus = ESI_Focus5
+		}
+		x = 14
+		y = 4
+    completion_reward = {
+		capital_scope = {
+			add_building_construction = {
+				type = University
+				level = 1
+			}
+		}
+	}
+	}
+	focus = {
+		id = ESI_Focus17
+		icon = GFX_goal_ESI_Focus17
+		cost = 5.00
+		prerequisite = {
+			focus = ESI_Focus16
+		}
+		x = 20
+		y = 3
+    completion_reward={
+		build_railway = {
+			level = 1
+			build_only_on_allied = yes
+			controller_priority = {
+				base = 1
+				modifier = {
+					tag = ESI
+					add = 2
+				}
+			}
+			fallback = no
+			start_province = 8124
+			target_province = 2072
+		}
+	}
+	}
+}

@@ -1,0 +1,16 @@
+ESI_Spread_Eastern_Orthodox_Christianity = {
+	icon = infiltration
+	
+	picture = GFX_decisions_fate_the_Suez_Canal
+
+	priority = 10
+	allowed = {
+		tag = ESI
+	}
+	visible = {
+		has_country_flag = ESI_1_flag
+		#has_completed_focus = ENL_fate_the_Suez_Canal
+	} 
+}
+
+

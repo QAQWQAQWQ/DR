@@ -3,11 +3,12 @@ scripted_gui = {
 		context_type = player_context
 		window_name = "da_kai_kai_jv_jie_shao"
 		visible = {
-			always = yes
+			has_country_flag = da_kai_kai_jv_jie_shao_flag
 		}
 		effects = {
 			da_kai_kai_jv_jie_shao_an_niu_click = { #打开国家介绍按钮效果
 				clr_country_flag = kai_jv_jie_shao_win_kai
+				set_country_flag = guo_jia_jie_shao_kai
 			}
 		}
 	}
@@ -20,6 +21,7 @@ scripted_gui = {
 		effects = {
 			kai_jv_jie_shao_win_ok_click = { #关闭页面
 				set_country_flag = kai_jv_jie_shao_win_kai
+				
 			}
 			kai_jv_jie_shao_xuan_xiang1_click = { #国家介绍
 				set_country_flag = guo_jia_jie_shao_kai

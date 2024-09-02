@@ -1,4 +1,4 @@
-﻿capital = 269
+﻿capital = 268
 
 oob = "ESI_1920"
 
@@ -46,7 +46,39 @@ recruit_character = ESI_Alexander_Bulatovich
 		
 		
 	}
+842 = { #ERITREA
+	start_resistance = yes
+	set_compliance = 10
+	set_resistance = 35
+	set_garrison_strength = 1.0
+}
 
+911 = { #SOMALILAND
+	start_resistance = yes
+	set_compliance = 10
+	set_resistance = 35
+	set_garrison_strength = 1.0
+}
+
+269 = { #JUBALAND
+	start_resistance = yes
+	set_compliance = 10
+	set_resistance = 35
+	set_garrison_strength = 1.0
+}
+559 = { #SOMALILAND
+	start_resistance = yes
+	set_compliance = 10
+	set_resistance = 35
+	set_garrison_strength = 1.0
+}
+
+844  = { #JUBALAND
+	start_resistance = yes
+	set_compliance = 10
+	set_resistance = 35
+	set_garrison_strength = 1.0
+}
 set_politics = {
 	ruling_party = Conservatism
 	last_election = "1918.11.11"

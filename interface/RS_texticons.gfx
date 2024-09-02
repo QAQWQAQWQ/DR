@@ -196,10 +196,40 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_Country_Introduction"
-		texturefile = "gfx/interface/textpicture/Country_Introduction.png"
+		name = "GFX_SHW_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/SHW_Country_Introduction.png" 
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_europe_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/europe_Country_Introduction.png"
 		legacy_lazy_load = no
 	}	
+	spriteType = {
+		name = "GFX_asia_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/asia_Country_Introduction.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_africa_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/africa_Country_Introduction.png" 
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_south_america_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/south_america_Country_Introduction.png" 
+		legacy_lazy_load = no
+	}	
+	spriteType = {
+		name = "GFX_australia_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/australia_Country_Introduction.png" 
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_middle_east_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/middle_east_Country_Introduction.png" 
+		legacy_lazy_load = no
+	}
 	
 	
 

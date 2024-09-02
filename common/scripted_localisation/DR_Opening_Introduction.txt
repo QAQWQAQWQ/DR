@@ -1,15 +1,58 @@
 defined_text = { 
 	name = CountryIntroductionpicture
 	text = {
-		trigger = { 
+	trigger = { 
+		all_core_state={
+			is_on_continent = europe
+		}
 		NOT={
 			original_tag = FRW
-			original_tag = ENL
 			original_tag = WWS
-	} 
-}
-		localization_key = Country_Introduction
-   }
+	    }
+    }
+		localization_key = europe_Country_Introduction
+	}
+	text = {
+		trigger = { 
+			all_core_state={
+				is_on_continent = africa
+			}
+		}
+		localization_key = africa_Country_Introduction
+    }
+	text = {
+		trigger = { 
+			all_core_state={
+				is_on_continent = asia
+			}
+		}
+		localization_key = asia_Country_Introduction
+    }
+	text = {
+		trigger = { 
+			all_core_state={
+				is_on_continent = south_america
+			}
+		}
+		localization_key = south_america_Country_Introduction
+    }
+	text = {
+		trigger = { 
+			all_core_state={
+				is_on_continent = australia
+			}
+		}
+		localization_key = australia_Country_Introduction
+    }
+	text = {
+		trigger = { 
+			all_core_state={
+				is_on_continent = middle_east
+			}
+		}
+		localization_key = middle_east_Country_Introduction
+    }
+	
 	text = {
 		 trigger = { original_tag = FRW }
 		 localization_key = FRW_Country_Introduction
@@ -21,5 +64,9 @@ defined_text = {
    text = {
 		trigger = { original_tag = WWS }
 		localization_key = WWS_Country_Introduction
+   }
+   text = {
+		trigger = { original_tag = SHW}
+		localization_key = SHW_Country_Introduction
    }
 }

@@ -1,10 +1,13 @@
 #失业率
 Reduce_unemployment = {
 	enable = { always = yes }
-	
 	Jobless_rate_stab_modifier=-0.2
 }
-
+ESI_Focus5_dy = {
+	enable = { always = yes }
+	local_supplies_for_controller=0.1
+	local_org_regain=0.1
+}
 Se_International_dy = {
 	enable = { always = yes }
 	

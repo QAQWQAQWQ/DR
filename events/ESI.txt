@@ -1,0 +1,28 @@
+﻿###########################
+# ESI Events
+###########################
+
+add_namespace = ESI
+
+country_event = {
+	id = ESI.1 
+	title = ESI.1.t
+	desc = ESI.1.d
+	picture = GFX_ESI_1
+	is_triggered_only = yes
+	option = {
+		name = ESI.1.a
+	}
+	option = {
+		name = ESI.1.b
+		ESI={
+			set_country_flag =  ESI_1_flag
+			add_to_variable = {
+				new_nat_tre = 0.8
+				tooltip = new_nat_tre_add
+			}
+			unlock_decision_category_tooltip = ESI_Spread_Eastern_Orthodox_Christianity
+		}
+		
+	}
+}

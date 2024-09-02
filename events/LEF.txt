@@ -4,6 +4,7 @@
 
 add_namespace = LEF
 add_namespace = LEF_Start
+
 country_event = {
 	id = LEF_Start.1 
 	title = LEF_Start.1.t
@@ -15,6 +16,7 @@ country_event = {
 	     country_event = LEF_Start.2
 	    }
 }
+
 country_event = {
 	id = LEF_Start.2
 	title = LEF_Start.2.t
@@ -51,6 +53,18 @@ country_event = {
 		}
 	    }
 }
+news_event = {
+	id = LEF_Start.3
+	title = LEF_Start.3.t
+	desc = LEF_Start.3.d
+	picture = GFX_LEF_Start_3
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = LEF_Start.3.a
+	}
+}
 country_event = {
 	id = LEF.1
 	title = LEF.1.t
@@ -59,6 +73,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = LEF.1.a
+        news_event = LEF_Start.3
 	    LEF={
 			transfer_state = 1026
 		}
