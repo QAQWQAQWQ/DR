@@ -1,0 +1,27 @@
+
+state={
+	id=406
+	name="STATE_406" # Gurev
+	manpower = 121494
+	resources={
+		grain=20
+	}
+	state_category = wasteland
+
+	history={
+		owner = GGA
+		add_core_of = GGA
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			3618 1
+		}
+	}
+
+	provinces={
+		464 475 554 642 3618 6523 6615 7322 9453 9469 10262 11442 11455 11469 11591 12163 13008
+	}
+
+	local_supplies=0.0 
+}

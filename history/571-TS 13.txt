@@ -1,0 +1,30 @@
+
+state={
+	id=571
+	name="STATE_571" # Omsk
+	manpower = 1317157
+	
+	state_category = town
+	history={
+		owner = GGA
+		add_core_of = GGA
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			10696 3 
+		}
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 2
+			}
+		}
+	}
+
+	provinces={
+		1709 1800 10568 10696 12546
+	}
+
+	local_supplies=8.0 
+}
