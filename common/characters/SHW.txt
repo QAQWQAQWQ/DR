@@ -720,39 +720,7 @@ SHW_Vladimir_Mitrofanovich_Purishkevich={
 }
 
 
-SHW_Vladimir_Sukhomlinov={
-	name=SHW_Vladimir_Sukhomlinov
-	portraits={
-		army={
-			large="gfx/leaders/SHW/Portrait_Vladimir_Sukhomlinov.tga"
-			small="gfx/interface/ideas/portrait_Vladimir_Sukhomlinov.dds"
-		}
-	}
-	advisor = {
-		slot = high_command
-		idea_token = SHW_Vladimir_Sukhomlinov_Army_C
-		allowed = {
-			original_tag = SHW
-		}
-		available = {
-		}
-		traits = {
-			army_chief_drill_1
-		}
-		ai_will_do = {
-			factor = 1.000
-		}
-		cost = 30
-		
-	}
-	field_marshal = {
-		skill = 3
-		attack_skill = 1
-		defense_skill = 1
-		planning_skill = 2
-		logistics_skill = 1
-	}
-}
+
 
 
 
@@ -894,23 +862,6 @@ SHW_aleksey_brusilov={
 }
 }
 
-SHW_Alexei_Kuropatkin={
-	name=SHW_Alexei_Kuropatkin
-	portraits={
-	army={
-		large="gfx/leaders/SHW/Portrait_Alexei_Kuropatkin.tga"
-		small="gfx/interface/ideas/Portrait_Alexei_Kuropatkin.dds"
-	}
-}
-	corps_commander={
-	traits={ Lieutenant_general }
-	skill=1
-	attack_skill=1
-	defense_skill=1
-	planning_skill=1
-	logistics_skill=1
-}
-}
 
 SHW_Alexei_Eft={
 	name=SHW_Alexei_Eft

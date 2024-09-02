@@ -1,0 +1,42 @@
+characters={
+	GGA_Vladimir_Sukhomlinov={
+		name=GGA_Vladimir_Sukhomlinov
+		portraits={
+			army={
+				large="gfx/leaders/GGA/Portrait_Vladimir_Sukhomlinov.tga"
+				small="gfx/interface/ideas/portrait_Vladimir_Sukhomlinov.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SHW_Vladimir_Sukhomlinov_Army_C
+			allowed = {
+				original_tag = SHW
+			}
+			available = {
+			}
+			traits = {
+				army_chief_drill_1
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			cost = 30
+			
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		corps_commander={
+			traits={ Lieutenant_general }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	}
