@@ -1,0 +1,23 @@
+
+state={
+	id=1066
+	name="STATE_1066"
+
+	history={
+		owner = XJC
+		add_core_of = XJC
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		4788 10674 12656
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=6.000
+}

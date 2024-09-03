@@ -1,0 +1,22 @@
+state=
+{
+	id=1067
+	name="STATE_1067"
+	manpower = 200000
+	state_category = rural
+
+	history=
+	{
+		owner = SLY
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SLY
+	}
+
+	provinces={
+		1306 1335 4282 4338 7358 10143 10199 10212 10240 12171 12186 12228 
+	}
+
+	local_supplies=0.0 
+}
