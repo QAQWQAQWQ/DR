@@ -904,17 +904,17 @@ on_actions = {
         }
         add_to_array = {
             array = global.culture_clr_R
-            value = 1
+            value = 0.5
             index = 45
         }
         add_to_array = {
             array = global.culture_clr_G
-            value = 1
+            value = 0.8
             index = 45
         }
         add_to_array = {
             array = global.culture_clr_B
-            value = 0.8
+            value = 0.25
             index = 45
         }
         add_to_array = {
@@ -3424,22 +3424,22 @@ on_actions = {
         }
         add_to_array = {
             array = global.culture_clr_R
-            value = 0.001
+            value = 0.4
             index = 171
         }
         add_to_array = {
             array = global.culture_clr_G
-            value = 0.001
+            value = 0.4
             index = 171
         }
         add_to_array = {
             array = global.culture_clr_B
-            value = 0.001
+            value = 0.75
             index = 171
         }
         add_to_array = {
             array = global.culture_clr_alpha
-            value = 0.001
+            value = 0.8
             index = 171
         }
         add_to_array = {
@@ -4383,6 +4383,8 @@ on_actions = {
         # 344 = { set_variable = { state_culture = 44 } }
         421 = { set_variable = { state_culture = 44 } }
         1025 = { set_variable = { state_culture = 44 } }
+
+        1066 = { set_variable = { state_culture = 45 } }
         
         266 = { set_variable = { state_culture = 46 } }
         411 = { set_variable = { state_culture = 46 } }
@@ -4584,6 +4586,8 @@ on_actions = {
         979 = { set_variable = { state_culture = 98 } }
         980 = { set_variable = { state_culture = 98 } }
 
+        603 = { set_variable = { state_culture = 99 } }
+
         328 = { set_variable = { state_culture = 101 } }
         714 = { set_variable = { state_culture = 101 } }
         716 = { set_variable = { state_culture = 101 } }
@@ -4623,7 +4627,6 @@ on_actions = {
         998 = { set_variable = { state_culture = 107 } }
 
         325 = { set_variable = { state_culture = 108 } }
-        603 = { set_variable = { state_culture = 108 } }
         605 = { set_variable = { state_culture = 108 } }
         744 = { set_variable = { state_culture = 108 } }
         748 = { set_variable = { state_culture = 108 } }
@@ -4675,6 +4678,7 @@ on_actions = {
         981 = { set_variable = { state_culture = 115 } }
 
         929 = { set_variable = { state_culture = 116 } }
+        1068 = { set_variable = { state_culture = 116 } }
 
         409 = { set_variable = { state_culture = 117 } }
 
@@ -4939,6 +4943,8 @@ on_actions = {
 
         733 = { set_variable = { state_culture = 170 } }
 
+        1069 = { set_variable = { state_culture = 171 } }
+
         1047 = { set_variable = { state_culture = 172 } }
 
         286 = { set_variable = { state_culture = 173 } }
@@ -4978,6 +4984,8 @@ on_actions = {
         667 = { set_variable = { state_culture = 186 } }
         668 = { set_variable = { state_culture = 186 } }
         738 = { set_variable = { state_culture = 186 } }
+
+        1067 = { set_variable = { state_culture = 187 } }
 
         623 = { set_variable = { state_culture = 188 } }
 
