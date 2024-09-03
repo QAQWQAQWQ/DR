@@ -2,7 +2,8 @@ state = {
 	id = 830
 	name = "STATE_830" #Bukhar
 	history = {
-		owner = SHW
+		owner = EOB
+		add_core_of = EOB
 		victory_points = {
 			1573 2 
 		}
@@ -11,11 +12,10 @@ state = {
 			industrial_complex = 1
 			air_base = 1
 		}
-		add_core_of = SHW
 	}
 
 	provinces={
-		1573 1623 7639 7775 10205 10470 10671 12161 12239 12722
+		756 1573 1623 1632 7639 9605 10470 12161 12722
 	}
 	manpower = 2189596
 	buildings_max_level_factor = 1.000

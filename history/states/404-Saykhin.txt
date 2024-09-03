@@ -6,6 +6,10 @@ state = {
 	}
 	history = {
 		owner = TGA
+		add_core_of = TGA
+		victory_points = {
+			1459 3 
+		}
 		victory_points = {
 			7597 1
 		}
@@ -13,12 +17,10 @@ state = {
 			infrastructure = 1
 
 		}
-		add_core_of = TGA
-
 	}
 
 	provinces = {
-		        4578 4636 4686 7392 7556 7597 7600 7657 7777 10148 10353 10366 10452 10506 10601 12329 12340 12397  
+		1459 4300 4374 4578 4581 4636 4638 4686 7243 7337 7354 7486 7556 7597 7600 7657 7777 10148 10353 10366 10452 10506 10601 12329 12340 12397
 	}
 	manpower = 447020
 	buildings_max_level_factor = 1.000
