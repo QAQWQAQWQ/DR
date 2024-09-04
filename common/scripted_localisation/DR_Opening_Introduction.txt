@@ -69,4 +69,12 @@ defined_text = {
 		trigger = { original_tag = SHW}
 		localization_key = SHW_Country_Introduction
    }
+   text = {
+	trigger = { original_tag = YED }
+	localization_key = YED_Country_Introduction
+   }
+   text = {
+	trigger = { original_tag = TEQ }
+	localization_key = TEQ_Country_Introduction
+   }
 }

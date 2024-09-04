@@ -293,6 +293,107 @@ defined_text = {
 		localization_key = FRW_party_6_text
 	}
 #######
+#######FRA
+text = {
+	trigger = {
+		AND={
+			original_tag = XJC
+			XJC={check_variable = { v = 1 }}
+		}
+	}
+	localization_key = XJC_party_1_text
+}
+text = {
+	trigger = {
+		AND={
+			original_tag = XJC
+			XJC={check_variable = { v = 2 }}
+		}
+	}
+	localization_key = XJC_party_2_text
+}
+text = {
+	trigger = {
+		AND={
+			original_tag = XJC
+			XJC={check_variable = { v = 3 }}
+		}
+	}
+	localization_key = XJC_party_3_text
+}
+text = {
+	trigger = {
+		AND={
+			original_tag = XJC
+			XJC={check_variable = { v = 4 }}
+		}
+	}
+	localization_key = XJC_party_4_text
+}
+text = {
+	trigger = {
+		AND={
+			original_tag = XJC
+			XJC={check_variable = { v = 5 }}
+		}
+	}
+	localization_key = XJC_party_5_text
+}
+text = {
+	trigger = {
+		AND={
+			original_tag = XJC
+			XJC={check_variable = { v = 6 }}
+		}
+	}
+	localization_key = XJC_party_6_text
+}
+text = {
+	trigger = {
+		AND={
+			original_tag = XJC
+			XJC={check_variable = { v = 7}}
+		}
+	}
+	localization_key = XJC_party_7_text
+}
+text = {
+	trigger = {
+		AND={
+			original_tag = XJC
+			XJC={check_variable = { v = 8 }}
+		}
+	}
+	localization_key = XJC_party_8_text
+}
+text = {
+	trigger = {
+		AND={
+			original_tag = XJC
+			XJC={check_variable = { v = 9 }}
+		}
+	}
+	localization_key = XJC_party_9_text
+}
+text = {
+	trigger = {
+		AND={
+			original_tag = XJC
+			XJC={check_variable = { v = 10 }}
+		}
+	}
+	localization_key = XJC_party_10_text
+}
+text = {
+	trigger = {
+		AND={
+			original_tag = XJC
+			XJC={check_variable = { v = 11 }}
+		}
+	}
+	localization_key = XJC_party_11_text
+}
+#######
 #######CHI
 text = {
 	trigger = {

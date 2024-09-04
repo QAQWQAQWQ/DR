@@ -201,6 +201,16 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_YED_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/YED_Country_Introduction.png" 
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TEQ_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/TEQ_Country_Introduction.png" 
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_europe_Country_Introduction"
 		texturefile = "gfx/interface/textpicture/europe_Country_Introduction.png"
 		legacy_lazy_load = no

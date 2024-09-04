@@ -1,5 +1,12 @@
 spriteTypes = {
-
+	spriteType = { 
+		name = "GFX_ideology_National_populism_group" 
+		texturefile = "gfx/interface/ideologies/National_populism.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_Authoritarian_dictatorship_group" 
+		texturefile = "gfx/interface/ideologies/Authoritarian_dictatorship.dds"
+	}
 	spriteType = { 
 		name = "GFX_ideology_Revolutionism_group" 
 		texturefile = "gfx/interface/ideologies/Revolutionism.dds"

@@ -40,10 +40,10 @@ guiTypes = {
 
 		gridboxtype = {
 			name = "parliament_member_grid"
-			position = { x = -120 y = 355 }
-			size = { width =  1300 height = 100%% }
-			slotsize = { width = 945 height = 18 }
-			max_slots_vertical = 6
+			position = { x = -110 y = 335 }
+			size = { width =  1300 height = 100 }
+			slotsize = { width = 945 height = 17 }
+			max_slots_vertical = 11
 			add_horizontal = no
 		}
 		containerWindowType = {

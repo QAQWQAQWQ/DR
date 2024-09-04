@@ -7,10 +7,14 @@
  Conservatism_acceptance:0 "保守主义外交接纳度"
  Liberalism_drift:0 "自由主义理念每日新增支持率"
  Liberalism_acceptance:0 "自由主义外交接纳度"
- Reactionary_drift:0 "反动主义理念每日新增支持率"
- Reactionary_acceptance:0 "反动主义外交接纳度"
+ Reactionary_drift:0 "混合民族主义理念每日新增支持率"
+ Reactionary_acceptance:0 "混合民族主义外交接纳度"
  Anarchism_drift:0 "无政府主义理念每日新增支持率"
  Anarchism_acceptance:0 "无政府主义外交接纳度"
+ National_populism_drift:0 "无政府主义理念每日新增支持率"
+ National_populism_acceptance:0 "无政府主义外交接纳度"
+ Authoritarian_dictatorship_drift:0 "专制主义理念每日新增支持率"
+ Authoritarian_dictatorship_acceptance:0 "专制主义外交接纳度"
 ###母意识形态
  Revolutionism:0 "革命主义"
  Revolutionism_noun:0 "革命主义"
@@ -24,13 +28,18 @@
  Liberalism:0 "自由主义"
  Liberalism_noun:0 "自由主义"
  Liberalism_desc:0 "开放民主制"
- Reactionary:0 "第三位置"
- Reactionary_noun:0 "第三位置"
- Reactionary_desc:0 "政府集权制"
+ Reactionary:0 "混合民族主义"
+ Reactionary_noun:0 "民族主义"
+ Reactionary_desc:0 "集权制政府"
  Anarchism:0 "无政府主义"
  Anarchism_noun:0 "无政府主义"
  Anarchism_desc:0 "无政府"
-
+ National_populism:0 "民族民粹主义"
+ National_populism_noun:0 "民粹主义"
+ National_populism_desc:0 "极权制政府"
+ Authoritarian_dictatorship:0 "专制独裁主义"
+ Authoritarian_dictatorship_noun:0 "专制主义"
+ Authoritarian_dictatorship_desc:0 "极权制政府"
 
 ###子意识形态
 ##革命主义 
@@ -132,6 +141,15 @@
 
  Three_People_Principles_Conservatism:0 "保守三民主义"
  Three_People_Principles_Conservatism_desc:0 ""
+
+####民族民粹
+ Mannerheimism:0 "曼纳海姆主义"
+ Mannerheimism_desc:0 ""
+
+####专制独裁
+ military_government:0 "军政府"
+ military_government_desc:0 ""
+
 ###各国政党
 
 FRW_Reformism_party:0 "独立社会党"
