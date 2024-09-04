@@ -2,15 +2,15 @@ state = {
 	id = 823
 	name = "STATE_823" #Karakalpakstan
 	history = {
+		owner = TGA
+		add_core_of = TGA
 		victory_points = {
 			1614 1
 		}
-		owner = EOB
 		buildings = {
 			infrastructure = 2
 
 		}
-		add_core_of = EOB
 	}
 
 	provinces = {

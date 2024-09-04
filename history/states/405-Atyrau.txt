@@ -4,23 +4,17 @@ state = {
 	name = "STATE_405" #Tashkent
 
 	history = {
-	
-		owner = EOB
-		
-		victory_points = {
-			1459 3 
-		}
+		owner = TGA
+		add_core_of = TGA
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 2
 			air_base = 1
 		}
-		
-		add_core_of = EOB
 	}
 
 	provinces = {
-		1459 4629 7682 10488 11687 
+		1919 4629 7682 7775 10187 10671 11687 12430
 	}
 	
 	manpower = 4137910 #Was 6275820 but was divided by 2 due to Bukhara (830) and then got 1M back

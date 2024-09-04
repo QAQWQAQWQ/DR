@@ -5,19 +5,18 @@ state={
 		grain=10
 	}
 	history={
-		owner = GGA
+		owner = TGA
+		add_core_of = TGA
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {
 			1517 1 
 		}
-		add_core_of = GGA
-
 	}
 
 	provinces={
-		475 642 1517 3593 4523 4620 7641 10262 11701 12163 12383 13008 12474   7541 12233 13207 10348 
+		1517 3593 4523 4620 7541 7641 10348 11701 12233 12383 12474 13207
 	}
 	manpower=245133
 	buildings_max_level_factor=1.000

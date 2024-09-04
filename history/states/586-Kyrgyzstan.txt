@@ -9,7 +9,8 @@ state={
 	}
 
 	history={
-		owner = SHW
+		owner = TGA
+		add_core_of = TGA
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 3
@@ -17,7 +18,6 @@ state={
 		victory_points = {
 			1591 3 
 		}
-		add_core_of = SHW
 	}
 
 	provinces={

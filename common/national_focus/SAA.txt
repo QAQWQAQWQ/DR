@@ -109,6 +109,8 @@ focus_tree = {
 		x = 2
 		y = 1
 		completion_reward = {
+			country_event = SAA.1
+			add_political_power = -10
 		}
 		available = {
 		}
@@ -127,6 +129,18 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			add_popularity = {
+				ideology = Conservatism
+				popularity = -0.15
+			}
+			add_popularity = {
+				ideology = Reformism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = Liberalism
+				popularity = 0.1
+			}
 		}
 		available = {
 		}
@@ -144,6 +158,20 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
+			add_popularity = {
+				ideology = Conservatism
+				popularity = -0.3
+			}
+			add_popularity = {
+				ideology = Liberalism
+				popularity = 0.3
+			}
+			set_politics = {
+				ruling_party = Liberalism
+				last_election = "1918.11.11"
+				election_frequency = 72
+				elections_allowed = no
+			}
 		}
 		available = {
 		}
@@ -162,6 +190,15 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = Conservatism
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = Liberalism
+				popularity = -0.2
+			}
 		}
 		available = {
 		}
@@ -179,6 +216,20 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
+			add_popularity = {
+				ideology = Conservatism
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = Liberalism
+				popularity = -0.2
+			}
+			set_politics = {
+				ruling_party = Conservatism
+				last_election = "1918.11.11"
+				election_frequency = 72
+				elections_allowed = no
+			}
 		}
 		available = {
 		}
@@ -196,6 +247,9 @@ focus_tree = {
 		x = 5
 		y = 1
 		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 60
+			add_war_support = 0.15
 		}
 		available = {
 		}
