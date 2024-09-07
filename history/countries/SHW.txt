@@ -350,6 +350,25 @@ set_politics = {
 	elections_allowed = no
 }
 set_autonomy = {
+	target = GGA
+	autonomy_state = autonomy_reichskommissariat
+}
+
+set_autonomy = {
+	target = TGA
+	autonomy_state = autonomy_reichskommissariat
+}
+
+set_autonomy = {
+	target = KKE
+	autonomy_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+	target = EOB
+	autonomy_state = autonomy_integrated_puppet
+}
+
+set_autonomy = {
 	target = YED
 	autonomy_state = autonomy_puppet
 }
@@ -393,12 +412,6 @@ add_power_balance_value = {
     value = -0.25
 }
 
-
-		set_variable = { parliament_seat_array^1 = Socialist_Revolutionary_Partyindependent_socialist }
-		set_variable = { parliament_seat_array^2 = October_Party }
-		set_variable = { parliament_seat_array^3 = Cadet_Democratic_Party }
-		set_variable = { parliament_seat_array^4 = Progressive_Party }
-		set_variable = { parliament_seat_array^5 = Social_Democratic_Labour_Party }
 
 
 

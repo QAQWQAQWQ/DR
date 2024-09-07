@@ -12,5 +12,19 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}		
+	}
+	ARA_Aram_Manukian={
+		name=ARA_Aram_Manukian
+		portraits={
+			civilian={
+				large="gfx/leaders/ARA/Portrait_Aram_Manukian.tga"
+			}
+		}
+		country_leader={
+			ideology=Nationalism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}			
 	}
