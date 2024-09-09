@@ -399,7 +399,11 @@ set_popularities = {
 	Conservatism = 20
 }
 set_variable = { SHW_Loyalty = 85 }
-
+clamp_variable = {
+	var = SHW_Loyalty
+	min = 0
+	max = 100
+}
 
 
 set_power_balance = {

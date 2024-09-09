@@ -155,11 +155,13 @@ Court_struggles_left_side_range_High:0 "古尔科政府影响力高"
 Court_struggles_right_side_range_Low:0 "国家杜马保有优势"
 Court_struggles_right_side_range_High:0 "国家杜马影响力高"
 SHW_Investigate_assassination:0 "调查杜尔诺沃刺杀案"
-SHW_Economic_negotiations:0 "洽谈和普鲁士的合作"
+SHW_Economic_negotiations:0 "深化普鲁士合作"
 SHW_Ban_left:0 "取缔左翼团体"
 SHW_Ban_right:0 "取缔右翼团体"
 SHW_Support_Duma:0 "煽动杜马内部反对派"
 SHW_Maintenance_Law:0 "重新审视《秩序维持法》"
+SHW_Abolish_Order_Maintenance_Law:0 "废除《秩序维持法》"
+SHW_Impeach_Gurko:0 "弹劾古尔科"
 
 Montenegrin_War:0 "黑塞战争"
 The_end_of_Montenegro:0 "黑山的结局"
@@ -483,7 +485,7 @@ SHWPeasantattitudes1:0 "农民对这个政策感到§R不安§!"
 
 
 SHW_Imperial_Russian_Army:0 "俄罗斯帝国陆军"
-SHW_Imperial_Russian_Army_desc:0 "\n\n\n\n\n\n\n\n在过去的拿破仑战争中，沙皇的军队将法国人赶出了俄国的土地，但有的东西永远地留了下来，扎根下来，与17世纪在“西方”影响下诞生的那次宗教改革不同，这次的“遗物”只瞄准了一个东西，那就是沙皇本人。十二月党人已经证明，军队中的大部分军官（多半是贵族）已然摆脱了沙皇俄罗斯这套建立在以剥削农民为最终结果的国家机器，无论是事实上的还是法律上的乃至是思想上的，我们必须保证他们的忠诚，以免堕入万劫不复之境。\n\n§Y忠诚度§!:§W[?SHW_Loyalty]§!"
+SHW_Imperial_Russian_Army_desc:0 "\n\n\n\n\n\n\n\n在过去的拿破仑战争中，沙皇的军队将法国人赶出了俄国的土地，但有的东西永远地留了下来，扎根下来，与17世纪在“西方”影响下诞生的那次宗教改革不同，这次的“遗物”只瞄准了一个东西，那就是沙皇本人。十二月党人已经证明，军队中的大部分军官（多半是贵族）已然摆脱了沙皇俄罗斯这套建立在以剥削农民为最终结果的国家机器，无论是事实上的还是法律上的乃至是思想上的，我们必须保证他们的忠诚，以免堕入万劫不复之境。\n\n§Y忠诚度§!:§W[?SHW_Loyalty]§!\n\n§Y军事改革进度§!:§W[?SHW_Military_reform_frame]§!%"
 SHW_Education_army:0 "在军中进行教育"
 SHW_Curb_liberals:0 "遏制自由派"
 SHW_Promotion_loyal_officers:0 "提拔忠心军官"
@@ -493,7 +495,7 @@ SHW_Army_coup_tooltip:0 "政变份子被逮捕"
 suspect_text:0 "猜疑"
 neutrality_text:0 "中立"
 loyal_text:0 "忠诚"
-
+Military_reform_text:0 "军事改革进度"
 
 
 
