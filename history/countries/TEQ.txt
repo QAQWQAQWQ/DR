@@ -12,9 +12,8 @@ set_technology = {
 	fuel_silos = 1
 }
 
+set_variable = { Ottoman_influence = 0 }
 
-
-recruit_character = TEQ_Loannis_Metaxas
 recruit_character = TEQ_Mehmed_VI
 
 	set_technology = {

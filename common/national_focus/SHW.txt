@@ -21,13 +21,10 @@ focus_tree = {
 		}
 		x = 22
 		y = 0
-    completion_reward = {
-	   TEQ={
-		country_event = SHW_event.7
-	   }
+completion_reward = {
        country_event = SHW_event.7
-    }
 }
+	}
 	
 
 	focus = {
@@ -205,7 +202,7 @@ focus_tree = {
 			
 		}
 		completion_reward={
-			country_event = SHW_event.14
+			
 		}
 	}
 	focus = { 
@@ -221,10 +218,9 @@ focus_tree = {
 			focus = SHW_Focus_13
 		}
 		completion_reward={
-			country_event = SHW_event.15
+			
 		}
 	}
-	
 	focus = {
 		id = SHW_Focus_15
 		icon = GFX_goal_SHW_Focus_15
@@ -345,17 +341,6 @@ focus_tree = {
 		cost = 8.00
 		x = 46
 		y = 2
-		available = {
-			NOT={
-				FRW={
-					has_government = Revolutionism
-				}
-			}
-			AOX={
-				has_country_flag = aus_win_german_war
-			}
-			
-		}
 		prerequisite = {
 			focus = SHW_Focus_20
 		}

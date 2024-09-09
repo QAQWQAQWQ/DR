@@ -899,7 +899,7 @@ SHW_Court_struggles = {
 				}
 				available = {
 				}
-				days_remove = 1
+				days_remove = 20
 				cost = 0
 				allowed = {
 					always = yes
@@ -914,6 +914,9 @@ SHW_Court_struggles = {
 							target = WWS
 							modifier = HUN_dynastic_ties_license
 						}
+						
+						
+						
 						add_political_power = 20
 					  }
 			}
@@ -924,7 +927,7 @@ SHW_Court_struggles = {
 				}
 				available = {
 				}
-				days_remove = 1
+				days_remove = 20
 				cost = 0
 				allowed = {
 					always = yes
@@ -950,7 +953,7 @@ SHW_Court_struggles = {
 				}
 				available = {
 				}
-				days_remove = 1
+				days_remove = 20
 				cost = 0
 				allowed = {
 					always = yes
@@ -976,7 +979,7 @@ SHW_Court_struggles = {
 				}
 				available = {
 				}
-				days_remove = 1
+				days_remove = 20
 				cost = 0
 				allowed = {
 					always = yes
@@ -1005,7 +1008,9 @@ SHW_Court_struggles = {
 					}
 				}
 				cancel_trigger = {
-					has_country_flag = SHW_Abolish_Order_Maintenance_Law
+					#NOT={ 
+						has_completed_focus = SHW_Focus_1
+					#}
 				}
 				icon = mission_icon     # For GFX_decision_mission_icon
 				is_good = yes
@@ -1015,59 +1020,10 @@ SHW_Court_struggles = {
 				selectable_mission = no
 				
 				cancel_effect = {
-					 #取消时，更新维持法
+					country_event = SHW_event.5 #取消时，更新维持法
 				}
-                remove_effect = {
-					country_event = SHW_event.5
-				}
-
-			}
-			SHW_Abolish_Order_Maintenance_Law= {
-				icon = SWI_dismiss_council
-				visible = {
-					has_country_flag = SHW_event_4
-				}
-				available = {
-					
-				}
-				days_remove = 1
-				cost = 0
-				allowed = {
-					always = yes
-				}
-				fixed_random_seed = no
-				fire_only_once = yes
-					ai_will_do = {
-					factor = 1
-					}
-				remove_effect = {
-					country_event = SHW_event.6
-					set_country_flag = SHW_Abolish_Order_Maintenance_Law
-				}
-			}   
-			SHW_Impeach_Gurko= {
-				icon = SWI_dismiss_council
-				visible = {
-				}
-				available = {
-					power_balance_value = {
-						id = SHW_Court_struggles_balance
-						value > 0.5
-					}
-				}
-				days_remove = 1
-				cost = 0
-				allowed = {
-					always = yes
-				}
-				fixed_random_seed = no
-				fire_only_once = yes
-					ai_will_do = {
-					factor = 1
-					}
-				complete_effect = {
-					country_event = SHW_event.16
-					
+				timeout_effect = {
+					country_event = SHW_event.6 #完成时，废除维持法
 				}
 			}
 }

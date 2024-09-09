@@ -243,6 +243,42 @@ ideologies = {
 		}
 	}
 	###
+	National_populism = {
+	
+		types = {
+			Mannerheimism={}
+		}
+		
+		dynamic_faction_names = {
+			
+		}
+		
+		color = {222 185 57 }
+		
+		rules = {
+			can_create_collaboration_government =no
+			can_declare_war_on_same_ideology =yes
+			can_force_government=no
+			can_send_volunteers=yes
+			can_puppet=yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			
+		}
+		
+		faction_modifiers = {
+		
+		}
+	}
 	Authoritarian_dictatorship = {
 	
 		types = {
@@ -254,78 +290,6 @@ ideologies = {
 		}
 		
 		color = { 43 55 49 }
-		
-		rules = {
-			can_create_collaboration_government =no
-			can_declare_war_on_same_ideology =yes
-			can_force_government=no
-			can_send_volunteers=yes
-			can_puppet=yes
-			can_lower_tension = yes
-			can_only_justify_war_on_threat_country = yes
-			can_guarantee_other_ideologies = yes
-		}
-		
-		can_host_government_in_exile = yes
-		
-		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
-		faction_impact_on_world_tension = 0.1
-		
-		modifiers = {
-			
-		}
-		
-		faction_modifiers = {
-		
-		}
-	}
-	Paternalism = {
-	
-		types = {
-			Paternalism_type={}
-		}
-		
-		dynamic_faction_names = {
-			
-		}
-		
-		color = { 49 49 49 }
-		
-		rules = {
-			can_create_collaboration_government =no
-			can_declare_war_on_same_ideology =yes
-			can_force_government=no
-			can_send_volunteers=yes
-			can_puppet=yes
-			can_lower_tension = yes
-			can_only_justify_war_on_threat_country = yes
-			can_guarantee_other_ideologies = yes
-		}
-		
-		can_host_government_in_exile = yes
-		
-		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
-		faction_impact_on_world_tension = 0.1
-		
-		modifiers = {
-			
-		}
-		
-		faction_modifiers = {
-		
-		}
-	}
-	Ultranationalism = {
-	
-		types = {
-			Ultranationalism_type={}
-		}
-		
-		dynamic_faction_names = {
-			
-		}
-		
-		color = { 81 64 85 }
 		
 		rules = {
 			can_create_collaboration_government =no

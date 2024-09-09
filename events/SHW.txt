@@ -84,7 +84,6 @@ country_event = {
 	option = {
 		name = SHW_event.2.a
 		country_event = SHW_event.3
-		country_event = {id=SHW_event.13 days=10}
 		set_country_flag = SHW_event_2
 	}
 }
@@ -157,7 +156,7 @@ country_event = {
 	title = SHW_event.6.t
 	desc = SHW_event.6.d
 
-	picture = GFX_SHW_event_6
+	#picture = GFX_Russian_Holodomor
 
 	fire_only_once = yes
 
@@ -167,7 +166,6 @@ country_event = {
 	option = {
 		name = SHW_event.6.a
 		add_political_power = -50
-		
 	}
 }
 
@@ -176,7 +174,7 @@ country_event = {
 	title = SHW_event.7.t
 	desc = SHW_event.7.d
 
-	picture = GFX_SHW_event_7
+	#picture = GFX_Russian_Holodomor
 
 	fire_only_once = yes
 
@@ -193,7 +191,7 @@ country_event = {
 	title = SHW_event.8.t
 	desc = SHW_event.8.d
 
-	picture = GFX_SHW_event_8
+	#picture = GFX_Russian_Holodomor
 
 	fire_only_once = yes
 
@@ -211,7 +209,7 @@ country_event = {
 	title = SHW_event.9.t
 	desc = SHW_event.9.d
 
-	picture = GFX_SHW_event_9
+	#picture = GFX_Russian_Holodomor
 
 	fire_only_once = yes
 
@@ -229,7 +227,7 @@ country_event = {
 	title = SHW_event.10.t
 	desc = SHW_event.10.d
 
-	picture = GFX_SHW_event_10
+	#picture = GFX_Russian_Holodomor
 
 	fire_only_once = yes
 
@@ -238,113 +236,18 @@ country_event = {
 
 	option = {
 		name = SHW_event.10.a
-		country_event = {id=SHW_event.11 days=10}
 	}
 }
 
 
-country_event = {
-	id = SHW_event.11
-	title = SHW_event.11.t
-	desc = SHW_event.11.d
 
-	picture = GFX_SHW_event_11
 
-	fire_only_once = yes
 
-	is_triggered_only = yes
-	
 
-	option = {
-		name = SHW_event.11.a
-		country_event = {id=SHW_event.12 days=5}
-	}
-}
 
-country_event = {
-	id = SHW_event.12
-	title = SHW_event.12.t
-	desc = SHW_event.12.d
 
-	picture = GFX_SHW_event_12
 
-	fire_only_once = yes
 
-	is_triggered_only = yes
-	
-
-	option = {
-		name = SHW_event.12.a
-	}
-}
-
-country_event = {
-	id = SHW_event.13
-	title = SHW_event.13.t
-	desc = SHW_event.13.d
-
-	picture = GFX_SHW_event_13
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-	
-
-	option = {
-		name = SHW_event.13.a
-	}
-}
-country_event = {
-	id = SHW_event.14
-	title = SHW_event.14.t
-	desc = SHW_event.14.d
-
-	picture = GFX_SHW_event_13
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-	
-
-	option = {
-		name = SHW_event.14.a
-	}
-}
-
-country_event = {
-	id = SHW_event.15
-	title = SHW_event.15.t
-	desc = SHW_event.15.d
-
-	picture = GFX_SHW_event_13
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-	
-
-	option = {
-		name = SHW_event.15.a
-	}
-}
-
-country_event = {
-	id = SHW_event.16
-	title = SHW_event.16.t
-	desc = SHW_event.16.d
-
-	picture = GFX_SHW_event_13
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-	
-
-	option = {
-		name = SHW_event.16.a
-		remove_ideas = SHW_Vladimir_Gurko_H
-	}
-}
 
 
 
