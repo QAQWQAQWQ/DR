@@ -206,6 +206,36 @@ defined_text = {
     trigger = {
 	 has_government = Anarchism
 }
+}    
+	text = {
+		 localization_key = Reactionary_desc
+    trigger = {
+	 has_government = Reactionary
+    }
+}
+	text = {
+		 localization_key = National_populism_desc
+    trigger = {
+	 has_government = National_populism
+    }
+}
+	text = {
+		 localization_key = Paternalism_desc
+    trigger = {
+	 has_government = Paternalism
+    }
+}
+	text = {
+		 localization_key = Ultranationalism_desc
+    trigger = {
+	 has_government = Ultranationalism
+    }
+}
+	text = {
+		 localization_key = Authoritarian_dictatorship_desc
+    trigger = {
+	 has_government = Authoritarian_dictatorship
+    }
 }
 }
 
