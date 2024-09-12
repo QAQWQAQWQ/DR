@@ -226,6 +226,24 @@ defined_text = {
 		}
 		localization_key = SHW_party_6_text
 	}
+	text = {
+		trigger = {
+			AND={
+				original_tag = SHW
+				SHW={check_variable = { v = 7 }}
+			}
+		}
+		localization_key = SHW_party_7_text
+	}
+	text = {
+		trigger = {
+			AND={
+				original_tag = SHW
+				SHW={check_variable = { v = 8 }}
+			}
+		}
+		localization_key = SHW_party_8_text
+	}
 #######FRA
     text = {
 		trigger = {
@@ -546,6 +564,24 @@ text = {
 			}
 		}
 		localization_key = SHW_party_6_text_desc
+	}
+	text = {
+		trigger = {
+			AND={
+				original_tag = SHW
+				check_variable = { v = 7 }
+			}
+		}
+		localization_key = SHW_party_7_text_desc
+	}
+	text = {
+		trigger = {
+			AND={
+				original_tag = SHW
+				check_variable = { v = 8 }
+			}
+		}
+		localization_key = SHW_party_8_text_desc
 	}
 ###FRA
 	text = {

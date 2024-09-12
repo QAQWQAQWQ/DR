@@ -163,6 +163,21 @@ SHW_Maintenance_Law:0 "重新审视《秩序维持法》"
 SHW_Abolish_Order_Maintenance_Law:0 "废除《秩序维持法》"
 SHW_Impeach_Gurko:0 "弹劾古尔科"
 
+
+
+
+Close_combat_training:0 "近战肉搏训练\n\n可以§R花费§!§Y35§!政治点数来为部队进行近战训练，45天内§G小幅度§!提升部队的§Y突破和进攻能力§!。"
+
+Shooting_training:0 "士兵射击训练\n\n可以§R花费§!§Y35§!政治点数来为部队进行近战训练，45天内§G小幅度§!提升部队的§Y堑壕和防守能力§!。"
+
+Physical_training:0 "士兵体能训练\n\n可以§R花费§!§Y35§!政治点数来为部队进行体能培训，45天内§G小幅度§!提升部队的§Y移动速度§!。"
+
+Medical_Logistics:0 "完善医疗后勤\n\n可以§R花费§!§Y35§!政治点数来为部队完善医疗后勤，45天内§G小幅度§!提升部队的§Y组织度§!。"
+
+War_pastor:0 "增加随军牧师\n\n可以§R花费§!§Y35§!政治点数来为部队派遣随军牧师，45天内§G小幅度§!提升部队的§Y忠诚度§!。"
+
+
+
 Montenegrin_War:0 "黑塞战争"
 The_end_of_Montenegro:0 "黑山的结局"
 Montenegrin_War_desc:0 "\n\n\n\n\n\n\n\n我们的军队已经做好充足的准备，势必要拿下波德戈里察"
@@ -482,10 +497,17 @@ SHWPeasantattitudes_3:0 "愤怒不已"
 SHWPeasantattitudes_4:0 "怒不可遏"
 SHWPeasantattitudes1:0 "农民对这个政策感到§R不安§!"
 
+SHW_Loyalty_effect:0 "小幅度§Y增加§!军队忠诚度"
+SHW_Military_reform_frame_effect:0 "小幅度§Y增加§!军事改革度"
 
+SHW_Strengthening_Navy_Force:0 "扩编舰队数量"
+SHW_Strengthening_Air_Force:0 "加强空军联队"
+SHW_Strengthen_artillery:0 "加强炮兵部队"
+SHW_Motor_vehicles:0 "研发机动车辆"
+SHW_Research_development_equipment:0 "研发新式武器"
 
 SHW_Imperial_Russian_Army:0 "俄罗斯帝国陆军"
-SHW_Imperial_Russian_Army_desc:0 "\n\n\n\n\n\n\n\n在过去的拿破仑战争中，沙皇的军队将法国人赶出了俄国的土地，但有的东西永远地留了下来，扎根下来，与17世纪在“西方”影响下诞生的那次宗教改革不同，这次的“遗物”只瞄准了一个东西，那就是沙皇本人。十二月党人已经证明，军队中的大部分军官（多半是贵族）已然摆脱了沙皇俄罗斯这套建立在以剥削农民为最终结果的国家机器，无论是事实上的还是法律上的乃至是思想上的，我们必须保证他们的忠诚，以免堕入万劫不复之境。\n\n§Y忠诚度§!:§W[?SHW_Loyalty]§!\n\n§Y军事改革进度§!:§W[?SHW_Military_reform_frame]§!%"
+SHW_Imperial_Russian_Army_desc:0 "\n\n\n\n\n\n\n\n在过去的拿破仑战争中，沙皇的军队将法国人赶出了俄国的土地，但有的东西永远地留了下来，扎根下来，与17世纪在“西方”影响下诞生的那次宗教改革不同，这次的“遗物”只瞄准了一个东西，那就是沙皇本人。\n十二月党人已经证明，军队中的大部分军官（多半是贵族）已然摆脱了沙皇俄罗斯这套建立在以剥削农民为最终结果的国家机器，无论是事实上的还是法律上的乃至是思想上的，我们必须保证他们的忠诚，以免堕入万劫不复之境。\n\n军队内部思潮：\n\n自由派点数：§Y[?SHW_liberty_num]§!\n革命派点数：§Y[?SHW_revolution_num]§!\n保守派点数：§Y[?SHW_conservatism_num]§!\n\n§Y忠诚度§!:§W[?SHW_Loyalty]§!\n\n§Y军事改革进度§!:§W[?SHW_Military_reform_frame]§!%"
 SHW_Education_army:0 "在军中进行教育"
 SHW_Curb_liberals:0 "遏制自由派"
 SHW_Promotion_loyal_officers:0 "提拔忠心军官"
@@ -496,7 +518,7 @@ suspect_text:0 "猜疑"
 neutrality_text:0 "中立"
 loyal_text:0 "忠诚"
 Military_reform_text:0 "军事改革进度"
-
+Training_system_text:0 "训练体系"
 
 
 SHW_Suppression_other_parties:0 "国内环境"

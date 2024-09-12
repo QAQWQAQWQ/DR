@@ -1,0 +1,18 @@
+SHW_Loyalty_effect = {
+	add_to_variable = { SHW_Loyalty = 5 }
+	clamp_variable = {
+		var = SHW_Loyalty
+		min = 0
+		max = 100
+	}
+	custom_effect_tooltip = SHW_Loyalty_effect
+}
+SHW_Military_reform_frame_effect = {
+	add_to_variable = { SHW_Military_reform_frame = 5 }
+	clamp_variable = {
+		var = SHW_Military_reform_frame
+		min = 0
+		max = 100
+	}
+	custom_effect_tooltip = SHW_Military_reform_frame_effect
+}

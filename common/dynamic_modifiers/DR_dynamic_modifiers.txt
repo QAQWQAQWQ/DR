@@ -1,8 +1,33 @@
 #失业率
+
 Reduce_unemployment = {
 	enable = { always = yes }
 	Jobless_rate_stab_modifier=-0.2
 }
+
+Close_combat_training = {
+	enable = { always = yes }
+	army_attack_factor = 0.05
+	experience_gain_army_unit = 0.02
+}
+Shooting_training = {
+	enable = { always = yes }
+	army_defence_factor = 0.05
+	experience_gain_army_unit = 0.02
+}
+Physical_training= {
+	enable = { always = yes }
+	army_speed_factor = 0.05
+	army_strength_factor = 0.05
+	experience_gain_army_unit = 0.02
+}
+Medical_Logistics= {
+	enable = { always = yes }
+	army_org_regain = 0.05
+	experience_loss_factor = -0.05
+}
+
+
 ESI_Focus5_dy = {
 	enable = { always = yes }
 	local_supplies_for_controller=0.1
