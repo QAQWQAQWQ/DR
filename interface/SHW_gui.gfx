@@ -1,5 +1,35 @@
 spriteTypes = {	
 	spriteType = {
+		name = "GFX_SHW_Skill_Tree_bg"
+		texturefile = "gfx/interface/GUI/Skill_Tree_bg.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Close_combat_training"
+		texturefile = "gfx/interface/GUI/Close_combat_training.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_War_pastor"
+		texturefile = "gfx/interface/GUI/War_pastor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Medical_Logistics"
+		texturefile = "gfx/interface/GUI/Medical_Logistics.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Physical_training"
+		texturefile = "gfx/interface/GUI/Physical_training.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Shooting_training"
+		texturefile = "gfx/interface/GUI/Shooting_training.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_SHW_Imperial_Russian_Army_needle"
 		texturefile = "gfx/interface/GUI/SHW_Imperial_Russian_Army_needle.dds"
 		legacy_lazy_load = no

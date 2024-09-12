@@ -20,22 +20,28 @@ guiTypes = {
 		name = "SHW_Imperial_Russian_Army_ui_window"
 		position = { x = 0 y = 0 }
 		size = { width = 300 height= 180 }
+		iconType = {
+			name ="SHW_Skill_Tree"
+			spriteType = "GFX_SHW_Skill_Tree_bg"
+			position = { x=160	 y=35 }
+			size = { width = 100% height= 100% }
+		}
 		
 		iconType = {
 			name ="SHW_Imperial_Russian_Army_needle"
 			spriteType = "GFX_SHW_Imperial_Russian_Army_needle"
-			position = { x=225	 y=35 }
+			position = { x=285	 y=35 }
 			size = { width = 100% height= 100% }
 		}
 		iconType = {
 			name ="SHW_Military_reform_needle"
 			spriteType = "GFX_SHW_Military_reform_needle"
-			position = { x=100	 y=11 }
+			position = { x=45	 y=11 }
 			size = { width = 100% height= 100% }
 		}
 		instantTextBoxType = { 
 			name ="suspect_text"
-			position = { x=395	 y=125 } 
+			position = { x=400	 y=155 } 
 			font = "newsfronttitle"
 			text = "suspect_text"
 			format = center
@@ -43,7 +49,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name ="neutrality_text"
-			position = { x=275	 y=30 } 
+			position = { x=335	 y=30 } 
 			font = "newsfronttitle"
 			text = "neutrality_text"
 			format = center
@@ -51,7 +57,7 @@ guiTypes = {
 		}
         instantTextBoxType = {
 			name ="loyal_text"
-			position = { x=155	 y=125 } 
+			position = { x=270	 y=155 } 
 			font = "newsfronttitle"
 			text = "loyal_text"
 			format = center
@@ -59,12 +65,66 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name ="Military_reform_text"
-			position = { x=70	y=-15 } 
+			position = { x=20	y=-15 } 
 			font = "newsfronttitle"
 			text = "Military_reform_text"
 			format = center
 			maxWidth = 10
 			maxHeight = 1
+		}
+		instantTextBoxType = {
+			name ="Training_system_text"
+			position = { x=125	y=10 } 
+			font = "newsfronttitle"
+			text = "Training_system_text"
+			format = center
+			maxWidth = 10
+			maxHeight = 1
+		}
+		buttonType = {
+			name = "Close_combat_training"
+			position = { x=191	 y=7 }
+			quadTextureSprite = "GFX_Close_combat_training"
+			pdx_tooltip = "Close_combat_training"
+			frame = 1
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		buttonType = { 
+			name = "Shooting_training" 
+			position = { x=152	 y=50 }
+			quadTextureSprite = "GFX_Shooting_training"
+			pdx_tooltip = "Shooting_training"
+			frame = 1
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		buttonType = {
+			name = "Physical_training"
+			position = { x=234	 y=50 }
+			quadTextureSprite = "GFX_Physical_training"
+			pdx_tooltip = "Physical_training"
+			frame = 1
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		buttonType = {
+			name = "Medical_Logistics"
+			position = { x=234	 y=120 }
+			quadTextureSprite = "GFX_Medical_Logistics"
+			pdx_tooltip = "Medical_Logistics"
+			frame = 1
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		buttonType = {
+			name = "War_pastor"
+			position = { x=152	 y=120 }
+			quadTextureSprite = "GFX_War_pastor"
+			pdx_tooltip = "War_pastor"
+			frame = 1
+			clicksound = click_default
+			oversound = ui_menu_over
 		}
 }
 

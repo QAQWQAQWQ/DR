@@ -7,12 +7,92 @@ scripted_gui = {
 		properties={
 			SHW_Imperial_Russian_Army_needle = {
 				frame = SHW_Imperial_Russian_Army_paranoiameter
-			}
-	    }
+			} 
+	    } 
+		
 		properties={
 			SHW_Military_reform_needle = {
 				frame = SHW_Military_reform_frame
-			}
+			} 
 	    }
+		effects = {
+			Close_combat_training_click={ 
+				if={
+					limit={
+						has_political_power > 0
+					}
+					add_political_power = -35
+					army_experience = 5
+					add_dynamic_modifier = {
+						modifier = Close_combat_training
+						days = 30
+					}
+				}
+			}
+			Shooting_training_click={ 
+				if={
+					limit={
+						has_political_power > 0
+					}
+					add_political_power = -35
+					army_experience = 5
+					add_dynamic_modifier = {
+						modifier = Shooting_training
+						days = 30
+					}
+				}
+			}
+			Physical_training_click={ 
+				if={
+					limit={
+						has_political_power > 0
+					}
+					add_political_power = -35
+					army_experience = 5
+					add_dynamic_modifier = {
+						modifier = Physical_training
+						days = 30
+					}
+				}
+			}
+			Medical_Logistics_click={ 
+				
+				if={
+					limit={
+						has_political_power > 0
+					}
+					add_political_power = -35
+					army_experience = 5
+					add_dynamic_modifier = {
+						modifier = Medical_Logistics
+						days = 30
+					}
+				}
+			}
+			War_pastor_click={
+				set_country_flag = {
+					flag = War_pastor_flag
+					days = 30
+					value = 1
+				}
+				if={
+					limit={
+						has_political_power > 0
+						check_variable = {
+							SHW_Loyalty < 101
+						}
+					}
+					
+					add_political_power = -35
+					add_to_variable = { SHW_Loyalty = 5 }
+					clamp_variable = {
+						var =  SHW_Loyalty
+						min = 0
+						max = 100
+					}
+				}
+				
+			}
+		} 
     }
 }

@@ -120,36 +120,37 @@ SHW_Progress_the_Russian_Civil_War = {
 
 	
 SHW_Imperial_Russian_Army = {
+	
 	SHW_Education_army = {
-	  icon = generic_ignite_civil_war
+	  icon = hol_radio_oranje
 	  visible = {
 	  }
-	  
+	   
 	  available = {
-	  
-	  }
+	    
+	  }   
 	  days_remove = 50
 	  cost = 35
 	  allowed = {
 		  always = yes
-	  }
+	  }     
 	  fixed_random_seed = no
 	  fire_only_once = no
 		  ai_will_do = {
 		  factor = 1
 		  }
 		  complete_effect = {
-			add_to_variable = { SHW_Loyalty = 5 }
+			SHW_Loyalty_effect=yes
 		  }
 	}
 	SHW_Curb_liberals = {
-	  icon = generic_ignite_civil_war
+	  icon = generic_political_rally
 	  visible = {
 	  }
 	  
 	  available = {
 	  
-	  }
+	  } 
 	  days_remove = 55
 	  cost = 35
 	  allowed = {
@@ -161,47 +162,188 @@ SHW_Imperial_Russian_Army = {
 		  factor = 1
 		  }
 		  complete_effect = {
-			add_to_variable = { SHW_Loyalty = 5 }
+			SHW_Loyalty_effect=yes
 		  }
 	}
 	SHW_Promotion_loyal_officers = {
-	  icon = generic_ignite_civil_war
+	  icon = generic_police_action
 	  visible = {
 	  }        
 	      
 	  available = {     
-	  
+	   
 	  }     
 	  days_remove = 60   
-	  cost = 35  
-	  allowed = {  
+	  cost = 35
+	  allowed = {   
 		  always = yes 
-	  }     
-	  fixed_random_seed = no 
-	  fire_only_once = no   
-		  ai_will_do = {    
-		  factor = 11  
-		  }       
-		  complete_effect = {   
-			add_to_variable = { SHW_Loyalty = 5 }
-			add_to_variable = { SHW_Military_reform_frame = 10 }
-		  }  
-	} 
+	  }         
+	  fixed_random_seed = no   
+	  fire_only_once = no     
+		  ai_will_do = {         
+		  factor = 11            
+		   }                    
+		  complete_effect = {    
+			SHW_Loyalty_effect=yes
+		  }      
+	}
+	SHW_Strengthening_Navy_Force = {
+		icon = generic_naval
+		visible = {
+		}        
+			
+		available = {     
+		 
+		}     
+		days_remove = 60   
+		cost = 50 
+		allowed = {   
+			always = yes 
+		}         
+		fixed_random_seed = no   
+		fire_only_once = no     
+		ai_will_do = {         
+			factor = 11            
+		}                    
+		complete_effect = {   
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = dd_tech
+			}   
+			
+			SHW_Military_reform_frame_effect=yes
+		}      
+	}
+	SHW_Strengthening_Air_Force = {
+		icon = generic_merge_plant_aircraft
+		visible = {
+		}        
+			
+		available = {     
+		 
+		}     
+		days_remove = 60   
+		cost = 50 
+		allowed = {   
+			always = yes 
+		}         
+		fixed_random_seed = no   
+		fire_only_once = no     
+		ai_will_do = {         
+			factor = 11            
+		}                    
+		complete_effect = {   
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = medium_air
+			}   
+			
+			SHW_Military_reform_frame_effect=yes
+		}      
+	}             
+	SHW_Strengthen_artillery = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}        
+			
+		available = {     
+		 
+		}     
+		days_remove = 60   
+		cost = 50 
+		allowed = {   
+			always = yes 
+		}         
+		fixed_random_seed = no   
+		fire_only_once = no     
+		ai_will_do = {         
+			factor = 11            
+		}                    
+		complete_effect = { 
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cat_anti_tank
+			}   
+			SHW_Military_reform_frame_effect=yes
+		}      
+	}  
+	SHW_Motor_vehicles = {
+		icon = generic_trucks
+		visible = {
+		}        
+			
+		available = {     
+		 
+		}     
+		days_remove = 60   
+		cost = 50  
+		allowed = {   
+			always = yes 
+		}         
+		fixed_random_seed = no   
+		fire_only_once = no     
+		ai_will_do = {         
+			factor = 11            
+		}                    
+		complete_effect = { 
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cat_armored_cars
+			}   
+			SHW_Military_reform_frame_effect=yes
+		}      
+	}  
+
+	SHW_Research_development_equipment= {
+		icon = generic_industry
+		visible = {
+		}         
+			
+		available = {     
+		 
+		}     
+		days_remove = 60   
+		cost = 50 
+		allowed = {   
+			always = yes 
+		}         
+		fixed_random_seed = no   
+		fire_only_once = no     
+		ai_will_do = {         
+			factor = 11            
+		}                     
+		complete_effect = {    
+			SHW_Military_reform_frame_effect=yes
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = infantry_tech
+			}
+		}      
+	}  
+
+
+
+
 	SHW_Army_coup = {   
 		activation = {
 			check_variable = {
 				SHW_Loyalty=0
 			}
-		}   
+		}     
 		available = {
 			hidden_trigger = {
 			}
-		}
+		}           
 		cancel_trigger = {
 			#NOT={ 
 				has_country_flag = SHW_Army_coup_tooltip
-			#}
-		}
+			#} 
+		}    
 		icon = mission_icon     # For GFX_decision_mission_icon
 		is_good = yes
 		days_mission_timeout = 120
