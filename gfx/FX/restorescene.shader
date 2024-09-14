@@ -108,9 +108,7 @@ PixelShader =
 			return color;
 		}
 		
-		static const float2 LevelValue0 = float2( 0.09f, 0.9f );
-		static const float2 LevelValue1 = float2( 0.09f, 0.9f );
-//		static const float2 LevelValue = float2( 0.09f, 0.9f );    // First: DARKNESS 0.0 Normal, the higher the darker   Second: Brightness, Lower = brighter
+		static const float2 LevelValue = float2( 0.04f, 0.8f );    // First: DARKNESS 0.0 Normal, the higher the darker   Second: Brightness, Lower = brighter
 		float4 RestoreScene( float3 inColor )
 		{
 		#ifdef COLOR_LUT
@@ -120,16 +118,9 @@ PixelShader =
 			HSV_.x += HSV.x;
 			HSV_.x = mod( HSV_.x, 6.0 );
 			color = HSVtoRGBPost( HSV_ );
-
+		
 			color = saturate( color * ColorBalance );
-//			color = Levels( color, LevelValue.x, LevelValue.y );
-
-			if ( cam_distance( GB_CAM_MIN, GB_CAM_MAX ) < 1.0f ) {
-				color = Levels( color, LevelValue0.x, LevelValue0.y );
-			}
-			else {
-				color = Levels( color, LevelValue1.x, LevelValue1.y );
-			}
+			color = Levels( color, LevelValue.x, LevelValue.y );
 		
 			return float4( color, 1.0f );
 		#else

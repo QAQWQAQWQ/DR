@@ -27,6 +27,22 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_Boris_Vasilchikov"
+		texturefile = "gfx/interface/textpicture/Portrait_Boris_Vasilchikov.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Alexei_Feodorovich_Aladjin"
+		texturefile = "gfx/interface/textpicture/portrait_Alexei_Feodorovich_Aladjin.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Raczkowski_Feliks"
+		texturefile = "gfx/interface/textpicture/portrait_Raczkowski_Feliks.tga"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
 		name = "GFX_Alexander_Konovalov"
 		texturefile = "gfx/interface/textpicture/Portrait_Alexander_Konovalov.tga"
 		legacy_lazy_load = no
@@ -228,6 +244,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_south_america_Country_Introduction"
 		texturefile = "gfx/interface/textpicture/south_america_Country_Introduction.png" 
+		legacy_lazy_load = no
+	}	
+	spriteType = {
+		name = "GFX_north_america_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/north_america_Country_Introduction.png" 
 		legacy_lazy_load = no
 	}	
 	spriteType = {

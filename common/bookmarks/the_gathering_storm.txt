@@ -127,19 +127,16 @@ SHW_Diverse_Russia
 		SBY_focus15
 	}
 }
-"TEQ"={
-	history = "TEQ_GATHERING_STORM_DESC"
+"UBS"={
+	history = "UBS_GATHERING_STORM_DESC"
 	
-	ideology = Conservatism
+	ideology = Liberalism
 	ideas = {
-		TEQ_humiliation
-		TEQ_paralysed_industry
-		TEQ_religious_conflict
 	}
 	focuses = {
-		TEQ_focus0
 	}
 }
+
 
 
 
@@ -221,7 +218,29 @@ SHW_Diverse_Russia
 	history = "ITE_GATHERING_STORM_DESC"
 	minor = yes
 	ideology = Conservatism
-	
+}
+"BNA"={
+	history = "BNA_GATHERING_STORM_DESC"
+	minor = yes
+	ideology = Liberalism
+}
+"TEQ"={
+	history = "TEQ_GATHERING_STORM_DESC"
+	minor = yes
+	ideology = Conservatism
+	ideas = {
+		TEQ_humiliation
+		TEQ_paralysed_industry
+		TEQ_religious_conflict
+	}
+	focuses = {
+		TEQ_focus0
+	}
+}
+"ESI"={
+	history = "ESI_GATHERING_STORM_DESC"
+	minor = yes
+	ideology = Conservatism
 }
 effect = {
 	randomize_weather = 22345 # <- Obligatory in every bookmark !

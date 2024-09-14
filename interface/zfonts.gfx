@@ -16,11 +16,9 @@ bitmapfonts = {
  	bitmapfont = {
 		name = "tahoma_60"   
 		fontfiles = {
-		    "gfx/fonts/mapdh_0"
-			"gfx/fonts/mapdh_1"
-			"gfx/fonts/mapdh_2"
-			"gfx/fonts/mapdh_3"
-			"gfx/fonts/mapdh_4"
+		    "gfx/fonts/mapfont_0"
+			"gfx/fonts/mapfont_1"
+			"gfx/fonts/mapfont_2"
         } 		
 		color = 0xff000000
 	}

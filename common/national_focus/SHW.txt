@@ -22,10 +22,12 @@ focus_tree = {
 		x = 22
 		y = 0
     completion_reward = {
+	   SHW={
+		country_event = SHW_event.7
+	   }
 	   TEQ={
 		country_event = SHW_event.7
 	   }
-       country_event = SHW_event.7
     }
 }
 	
