@@ -9,16 +9,17 @@ focus_tree = {
 		}  
 	}
 	default = no
-	focus = {
+	focus = { 
 		id = LEF_focus_1
 		icon = GFX_goal_LEF_focus1
-		cost = 0.00
+		cost = 2.00
 		x = 11
 		y = 0
 available = {
 }
 completion_reward = {
 	country_event = LEF_Start.1 
+	
 }
 	}
 	focus = {
