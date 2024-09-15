@@ -150,6 +150,11 @@ country_event = {
 	option = {
 		name = SHW_event.5.a
 		add_political_power = -50
+		set_country_flag = SHW_event.5
+		add_power_balance_value = {
+			id = SHW_Court_struggles_balance
+			value = 0.5
+		}
 	}
 }
 country_event = {
@@ -335,6 +340,7 @@ country_event = {
 	option = {
 		name = SHW_event.16.a
 		remove_ideas = SHW_Vladimir_Gurko_H
+		add_ideas = SHW_Boris_Alexandrovich_Vasilchikov_H
 	}
 }
 

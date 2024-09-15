@@ -1,0 +1,24 @@
+SHW_Tula_Arms = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_Tula_Arms
+	
+	allowed = {	 
+			tag = SHW
+	}
+
+	available = {
+
+	} 
+}
+SHW_ZiD = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_ZiD
+	
+	allowed = {	 
+			tag = SHW
+	}
+
+	available = {
+
+	}
+}

@@ -262,6 +262,32 @@ SHW_Corrupt_local_institutions = {
 		local_resources_factor=DY_SHW_temp_local_resources_factor
 }
 
+
+SHW_General_Staff= {
+	icon = GFX_idea_SHW_General_Staff
+	enable = { always = yes }
+	experience_gain_factor = SHW_experience_gain_dy
+	experience_gain_army_factor= SHW_experience_gain_army_dy
+	command_power_gain= SHW_command_power_dy
+	army_chief_cost_factor= SHW_army_chief_cost_dy
+	experience_gain_navy_factor= SHW_experience_gain_navy_dy
+	experience_gain_air_factor= SHW_experience_gain_air_dy
+	max_planning_factor= SHW_max_planning_dy
+	breakthrough_factor= SHW_breakthrough_dy
+	army_core_attack_factor= SHW_army_core_attack_dy
+	army_core_defence_factor= SHW_army_core_defence_dy
+	conscription_factor= SHW_conscription_factor_dy
+}
+
+
+
+
+
+
+
+
+
+
 WWS_Young_Officer= {
 	enable = { always = yes }
 

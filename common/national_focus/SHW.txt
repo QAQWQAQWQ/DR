@@ -241,6 +241,13 @@ focus_tree = {
 		}
 		completion_reward={
 			country_event = SHW_event.15
+			
+			add_dynamic_modifier = {
+				modifier = SHW_General_Staff
+			}
+			add_to_variable = {
+				SHW_army_chief_cost_dy=-0.05
+			}
 		}
 	}
 	
@@ -253,8 +260,11 @@ focus_tree = {
 		prerequisite = {
 			focus = SHW_Focus_14
 		}
-		completion_reward={
-			
+		completion_reward={ 
+			add_to_variable = {
+				SHW_command_power_dy=0.05
+			}
+			custom_effect_tooltip = SHW_General_Staff_effect
 		}
 	}
 	focus = {
@@ -267,7 +277,22 @@ focus_tree = {
 			focus = SHW_Focus_14
 		}
 		completion_reward={
-			
+			add_to_variable = {
+				SHW_experience_gain_dy=0.05
+			}
+			add_to_variable = {
+				SHW_experience_gain_army_dy=0.05
+			}
+			add_to_variable = {
+				SHW_max_planning_dy=0.05
+			}
+			add_to_variable = {
+				SHW_experience_gain_navy_dy=0.05
+			}
+			add_to_variable = {
+				SHW_experience_gain_air_dy=0.05
+			}
+			custom_effect_tooltip = SHW_General_Staff_effect
 		}
 	}
 	focus = {
@@ -283,7 +308,13 @@ focus_tree = {
 			focus = SHW_Focus_16
 		}
 		completion_reward={
-			
+			add_to_variable = {
+				SHW_army_core_attack_dy=0.05
+			}
+			add_to_variable = {
+				SHW_breakthrough_dy=0.05
+			}
+			custom_effect_tooltip = SHW_General_Staff_effect
 		}
 	}
 	focus = {
@@ -298,8 +329,11 @@ focus_tree = {
 		prerequisite = {
 			focus = SHW_Focus_16
 		}
-		completion_reward={
-			
+		completion_reward={ 
+			add_to_variable = {
+				SHW_army_core_defence_dy=0.05
+			}
+			custom_effect_tooltip = SHW_General_Staff_effect
 		}
 	}
 	focus = { 
@@ -315,8 +349,10 @@ focus_tree = {
 			focus = SHW_Focus_16
 		}
 		completion_reward={
-		
-			 
+			add_to_variable = {
+				SHW_conscription_factor_dy=0.03
+			}
+			custom_effect_tooltip = SHW_General_Staff_effect
 		}
 	}
 	focus = {
@@ -395,7 +431,21 @@ focus_tree = {
 			focus = SHW_Focus_21
 		}
 		completion_reward={
-			
+			88={
+				add_claim_by = SHW
+			}
+			1034={
+				add_claim_by = SHW
+			}
+			80={
+				add_claim_by = SHW
+			}
+			89={
+				add_claim_by = SHW
+			}
+			91={
+				add_claim_by = SHW
+			}
 		} 
 	}
 	focus = { 

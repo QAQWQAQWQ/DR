@@ -1190,10 +1190,7 @@ SHW_Court_struggles = {
 				visible = {
 				}
 				available = {
-					power_balance_value = {
-						id = SHW_Court_struggles_balance
-						value > 0.5
-					}
+					has_country_flag = SHW_event.5
 				}
 				days_remove = 1
 				cost = 0

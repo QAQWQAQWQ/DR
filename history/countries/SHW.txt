@@ -388,6 +388,10 @@ set_autonomy = {
 	target = ESI
 	autonomy_state = autonomy_colony
 }
+set_autonomy = {
+	target = ARA
+	autonomy_state = autonomy_personal_union
+}
 country_event = { id = SHW_event.1 days = 94 }
 
 set_popularities = {
@@ -425,7 +429,6 @@ SHW_Backward_railways
 SHW_Russian_serfs
 SHW_Stolypin_legacy
 SHW_February_Revolution
-SHW_Corrupt_local_institutions
 #law
 Theocratic_state
 Smallholder_economy

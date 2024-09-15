@@ -1,4 +1,13 @@
 spriteTypes = {
+	
+	spriteType = {
+	    name = "GFX_idea_ZiD"
+	    texturefile = "gfx/interface/ideas/organization/ZiD.dds"
+    } 
+	spriteType = { 
+	    name = "GFX_idea_Tula_Arms"
+	    texturefile = "gfx/interface/ideas/organization/Tula_Arms.dds"
+    }
 	spriteType = {
 	    name = "GFX_idea_Merchant_Republic"
 	    texturefile = "gfx/interface/ideas/LFR/Merchant_Republic.dds"
@@ -1105,7 +1114,10 @@ spriteTypes = {
 		name = "GFX_idea_Corrupt_local_institutions"
 		texturefile = "gfx/interface/ideas/Corrupt_local_institutions.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_idea_SHW_General_Staff"
+		texturefile = "gfx/interface/ideas/SHW_General_Staff.dds"
+	}
 
 	spriteType = {
 		name = "GFX_idea_Tulsky_Oruzheiny_Zavod"
