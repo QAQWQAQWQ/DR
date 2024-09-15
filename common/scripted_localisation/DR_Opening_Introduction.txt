@@ -39,6 +39,15 @@ defined_text = {
 	text = {
 		trigger = { 
 			all_core_state={
+				is_on_continent = north_america
+			}
+		}
+		localization_key = north_america_Country_Introduction
+    }
+	
+	text = {
+		trigger = { 
+			all_core_state={
 				is_on_continent = australia
 			}
 		}

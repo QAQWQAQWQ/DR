@@ -22,10 +22,12 @@ focus_tree = {
 		x = 22
 		y = 0
     completion_reward = {
+	   SHW={
+		country_event = SHW_event.7
+	   }
 	   TEQ={
 		country_event = SHW_event.7
 	   }
-       country_event = SHW_event.7
     }
 }
 	
@@ -48,7 +50,7 @@ focus_tree = {
 		completion_reward={
 			add_power_balance_value = {
 				id = SHW_Court_struggles_balance
-				value = 0.25
+				value = -0.1
 			}
 		}
 	} 
@@ -65,7 +67,10 @@ focus_tree = {
 		focus = SHW_Focus_1
 		}
 		completion_reward={
-			
+			add_popularity = {
+				ideology = Conservatism
+				popularity = 0.05
+			}
 		}
 	}
 	focus = {
@@ -123,7 +128,8 @@ focus_tree = {
 			focus = SHW_Focus_3
 		}
 		completion_reward={
-			
+			add_political_power = 100
+			add_stability = 0.05
 		}
 	} 
 	focus = {
@@ -136,6 +142,19 @@ focus_tree = {
 			focus = SHW_Focus_2
 		}
 		completion_reward={
+			every_state = {
+				limit = {
+					OR={
+						is_core_of = PBL
+						is_core_of = ETA
+						is_core_of = LTA
+						is_core_of = LHA
+					}
+				}
+				add_compliance = 10
+				add_resistance = 20
+			}
+			
 			
 		}
 	}
@@ -190,7 +209,7 @@ focus_tree = {
 			focus = SHW_Focus_6
 		}
 		completion_reward={
-			unlock_decision_category_tooltip = SHW_Slavic_identity
+			
 		}
 	}
 	focus = {
@@ -360,6 +379,9 @@ focus_tree = {
 			focus = SHW_Focus_20
 		}
 		completion_reward={
+			SHW={
+				add_to_faction = FRW
+			}
 			
 		} 
 	}
@@ -438,7 +460,48 @@ focus_tree = {
 			focus = SHW_Focus_22
 		}
 		completion_reward={
-			
+			561={
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 12543
+				}
+			}
+			564={
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 1762
+				}
+			}
+			build_railway = {
+				level = 1
+				build_only_on_allied = yes
+				controller_priority = {
+					base = 1
+					modifier = {
+						tag = SHW
+						add = 2
+					}
+				}
+				fallback = no
+				start_province = 12189
+				target_province = 10577
+			}
+			build_railway = {
+				level = 1
+				build_only_on_allied = yes
+				controller_priority = {
+					base = 1
+					modifier = {
+						tag = SHW
+						add = 2
+					}
+				}
+				fallback = no
+				start_province = 1813
+				target_province = 4675
+			}
 		} 
 	}
 	focus = { 
@@ -480,7 +543,7 @@ focus_tree = {
 			focus = SHW_Focus_31
 		}
 		completion_reward={
-			 
+			
 		} 
 	}
 	focus = {  
@@ -489,6 +552,9 @@ focus_tree = {
 		cost = 8.00 
 		x = 38
 		y = 2
+		available = {
+			
+		}
 		prerequisite = {
 			focus = SHW_Focus_20
 		}
