@@ -53,6 +53,7 @@ recruit_character = SHW_Alexander_Ivanovich_Dubrovin
 recruit_character = SHW_Nikolai_Evgenievich_Markov
 recruit_character = SHW_Vladimir_Mitrofanovich_Purishkevich
 recruit_character = SHW_Vladimir_Gurko
+recruit_character = SHW_Boris_Alexandrovich_Vasilchikov
 	set_technology = {
 		infantry_weapons = 1
 		tech_support = 1		
@@ -377,8 +378,8 @@ set_autonomy = {
 	autonomy_state = autonomy_integrated_puppet
 }
 set_autonomy = {
-	target = FEL
-	autonomy_state = autonomy_integrated_puppet
+	target = MEG
+	autonomy_state = autonomy_puppet
 }
 set_autonomy = {
 	target = AFH
@@ -442,9 +443,5 @@ low_industrialization
 completely_illiterate
 #AD
 SHW_Vladimir_Gurko_H
-SHW_Alexander_Vladimirovich_Protopopov_P
-SHW_Pavel_Milyukov_P
-SHW_Kokovtsov_P
-SHW_Ivan_Godnev_P
-SHW_Nikolai_Pokrovsky_P
+
 }

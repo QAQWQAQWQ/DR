@@ -1,0 +1,16 @@
+characters={
+	HLP_Xu_LangZhou={
+		name=HLP_Xu_LangZhou
+		portraits={ 
+			civilian={
+				large="gfx/leaders/HLP/Portrait_Xu_LangZhou.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}				
+	}
+}

@@ -210,6 +210,11 @@ country_event = {
 		set_cosmetic_tag = AOX_HRE
 		mark_focus_tree_layout_dirty = yes
 	}
+	#option = {
+	#	name = austria.10.c
+	#	set_cosmetic_tag = AOX_HRE
+	#	Austro_Prussian_win_war=yes
+	#}
 }
 country_event = {
 	id = austria.19

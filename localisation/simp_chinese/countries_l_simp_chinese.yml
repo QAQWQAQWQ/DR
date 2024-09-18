@@ -1,8 +1,8 @@
 ﻿l_simp_chinese:
 
- GUG:0 "桂系军阀"
- GUG_DEF:0 "桂系军阀"
- GUG_ADJ:0 "桂系军阀"
+ GUG:0 "广西省"
+ GUG_DEF:0 "广西省"
+ GUG_ADJ:0 "广西省"
 
  NPL:0 "法兰西帝国"
  NPL_DEF:0 "法兰西帝国"
@@ -142,9 +142,9 @@
  AGC_ADJ:0 "德意志邦联共管区"
 
 
- SXX:0 "陕系军阀"
- SXX_DEF:0 "陕系军阀"
- SXX_ADJ:0 "陕系军阀"
+ SXX:0 "陕西省"
+ SXX_DEF:0 "陕西省"
+ SXX_ADJ:0 "陕西省"
 
  PKT:0 "印度斯坦共和国"
  PKT_DEF:0 "印度斯坦共和国"
@@ -271,6 +271,11 @@
  FRW_United_States_Europe_name_DEF:0 "欧罗巴合众国"
  FRW_United_States_Europe_name_ADJ:0 "欧罗巴合众国"
 
+
+ FRD:0 "北非联邦"
+ FRD_DEF:0 "北非联邦"
+ FRD_ADJ:0 "北非联邦"
+
  KOH:0 "匈牙利王国"
  KOH_DEF:0 "匈牙利王国"
  KOH_ADJ:0 "匈牙利王国"
@@ -337,9 +342,9 @@
  
 
  
- DUQ:0 "皖系军阀"
- DUQ_DEF:0 "皖系军阀"
- DUQ_ADJ:0 "皖系军阀"
+ DUQ:0 "皖系"
+ DUQ_DEF:0 "皖系"
+ DUQ_ADJ:0 "皖系"
 
 
 
@@ -379,14 +384,14 @@
  SHW_ADJ:0 "俄罗斯帝国"
  SHW_DEF:0 "俄罗斯帝国"
 
- ZXN:0 "徐州督军团"
- ZXN_ADJ:0 "徐州督军团"
- ZXN_DEF:0 "徐州督军团"
+ ZXN:0 "兖州督军团"
+ ZXN_ADJ:0 "兖州督军团"
+ ZXN_DEF:0 "兖州督军团"
 
 
- MAQ:0 "青海马家军"
- MAQ_ADJ:0 "青海马家军"
- MAQ_DEF:0 "青海马家军"
+ MAQ:0 "甘边宁海镇守使"
+ MAQ_ADJ:0 "甘边宁海镇守使"
+ MAQ_DEF:0 "甘边宁海镇守使"
 
  SHW_Interim_Government:0 "俄罗斯临时政府"
  SHW_Interim_Government_ADJ:0 "俄罗斯临时政府"
@@ -446,70 +451,74 @@
  XUH_DEF:0 "西域新疆统部"
  XUH_ADJ:0 "西域新疆统部"
 
- ZHX:0 "直系军阀"
- ZHX_DEF:0 "直系军阀"
- ZHX_ADJ:0 "直系军阀"
+ ZHX:0 "直系"
+ ZHX_DEF:0 "直系"
+ ZHX_ADJ:0 "直系"
  
- HNZ:0 "河南督军团"
- HNZ_DEF:0 "河南督军团"
- HNZ_ADJ:0 "河南督军团"
+ HNZ:0 "河南省"
+ HNZ_DEF:0 "河南省"
+ HNZ_ADJ:0 "河南省"
 
- WSP:0 "山东督军团"
- WSP_DEF:0 "山东督军团"
- WSP_ADJ:0 "山东督军团"
+ WSP:0 "山东省"
+ WSP_DEF:0 "山东省"
+ WSP_ADJ:0 "山东省"
 
- FTX:0 "东三省军督军团"
- FTX_DEF:0 "东三省军督军团"
- FTX_ADj:0 "东三省军督军团"
+ FTX:0 "奉天督军"
+ FTX_DEF:0 "奉天督军"
+ FTX_ADj:0 "奉天督军"
+
+ JLP:0 "吉林督军"
+ JLP_DEF:0 "吉林督军"
+ JLP_ADj:0 "吉林督军"
  
  MEG:0 "大蒙古国"
  MEG_DEF:0 "大蒙古国"
  MEG_ADj:0 "大蒙古国"
  
- WUP:0 "湖南省军"
- WUP_DEF:0 "湖南省军"
- WUP_ADJ:0 "湖南省军"
+ WUP:0 "湖南省"
+ WUP_DEF:0 "湖南省"
+ WUP_ADJ:0 "湖南省"
  
- SUC:0 "浙江省军"
- SUC_DEF:0 "浙江省军"
- SUC_ADJ:0 "浙江省军"
+ SUC:0 "浙江省"
+ SUC_DEF:0 "浙江省"
+ SUC_ADJ:0 "浙江省"
  
  HAQ:0 "鲁南政府"
  HAQ_DEF:0 "鲁南政府"
  HAQ_ADJ:0 "鲁南政府"
  
- ROC:0 "国民党省军"
- ROC_DEF:0 "国民党省军"
- ROC_ADJ:0 "国民党省军"
+ ROC:0 "国民党势力"
+ ROC_DEF:0 "国民党势力"
+ ROC_ADJ:0 "国民党势力"
  
  
  DTJ:0 "东突厥斯坦伊斯兰共和国"
  DTJ_DEF:0 "东突厥斯坦伊斯兰共和国"
  DTJ_ADJ:0 "东突厥斯坦伊斯兰共和国"
  
- XJC:0 "两盆省军"
- XJC_DEF:0 "两盆省军"
- XJC_ADJ:0 "两盆省军"
+ XJC:0 "两盆省"
+ XJC_DEF:0 "两盆省"
+ XJC_ADJ:0 "两盆省"
 
  HBR:0 "呼伦贝尔自治政府"
  HBR_DEF:0 "呼伦贝尔自治政府"
  HBR_ADJ:0 "呼伦贝尔自治政府"
  
- NXS:0 "宁夏马家军"
- NXS_DEF:0 "宁夏马家军"
- NXS_ADJ:0 "宁夏马家军"
+ NXS:0 "宁夏将军"
+ NXS_DEF:0 "宁夏将军"
+ NXS_ADJ:0 "宁夏将军"
  
  XZZ:0 "西藏地方"
  XZZ_DEF:0 "西藏地方"
  XZZ_ADJ:0 "西藏地方"
  
- CEX:0 "昆明省军"
- CEX_DEF:0 "昆明省军"
- CEX_ADJ:0 "昆明省军"
+ CEX:0 "昆明省"
+ CEX_DEF:0 "昆明省"
+ CEX_ADJ:0 "昆明省"
  
- SCX:0 "四川省军"
- SCX_DEF:0 "四川省军"
- SCX_ADJ:0 "四川省军"
+ SCX:0 "四川省"
+ SCX_DEF:0 "四川省"
+ SCX_ADJ:0 "四川省"
 
 
  SCX_DaHang:0 "大汉军政府"
@@ -519,11 +528,13 @@
  SCX_ChongQing_DEF:0 "重庆政府"
  SCX_ChongQing_ADJ:0 "重庆政府"
 
+ HLP:0 "黑龙江督军"
+ HLP_DEF:0 "黑龙江督军"
+ HLP_ADJ:0 "黑龙江督军"
 
-
- GUI:0 "湖北省军"
- GUI_DEF:0 "湖北省军"
- GUI_ADJ:0 "湖北省军"
+ GUI:0 "湖北省"
+ GUI_DEF:0 "湖北省"
+ GUI_ADJ:0 "湖北省"
 
  FEL:0 "芬兰大公国"
  FEL_DEF:0 "芬兰大公国"
@@ -531,9 +542,9 @@
 
 
  
- QIX:0 "江苏省军"
- QIX_DEF:0 "江苏省军"
- QIX_ADJ:0 "江苏省军"
+ QIX:0 "江苏省"
+ QIX_DEF:0 "江苏省"
+ QIX_ADJ:0 "江苏省"
  
  IRL:0 "爱尔兰自由邦"
  IRL_DEF:0 "爱尔兰自由邦"
@@ -640,9 +651,9 @@ BNT_DEF:0 "巴纳特共和国"
  ALB_ADJ:0 "阿尔巴尼亚亲王国"
  
 
- LXS:0 "黔系军阀"
- LXS_DEF:0 "黔系军阀"
- LXS_ADJ:0 "黔系军阀"
+ LXS:0 "贵州省"
+ LXS_DEF:0 "贵州省"
+ LXS_ADJ:0 "贵州省"
 
  YDA:0 "英属印度"
  YDA_DEF:0 "英属印度"

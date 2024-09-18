@@ -145,6 +145,11 @@ spriteTypes = {
 	    texturefile = "gfx/interface/ideas/Guerrilla_strongholds.dds"
     }
 	spriteType = {
+	    name = "GFX_idea_Walkout_dynamic"
+	    texturefile = "gfx/interface/ideas/Walkout_dynamic.dds"
+    }
+	
+	spriteType = {
 	    name = "GFX_idea_Brittany_National_autonomy"
 	    texturefile = "gfx/interface/ideas/Brittany_National_autonomy.dds"
     }

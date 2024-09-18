@@ -1431,3 +1431,56 @@ country_event = {
 		add_command_power = 10
 	}
 }
+country_event = {
+	id = FRW.52
+	title = FRW.52.t
+	desc = FRW.52.d
+	picture = GFX_Eu_election
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.52.a
+		hidden_effect = {
+			1={
+				transfer_state_to = FRW
+			}
+			786={
+				transfer_state_to = FRD
+			}
+			782={
+				transfer_state_to = FRD
+			}
+			515={
+				transfer_state_to = FRD
+			}
+			557={
+				transfer_state_to = FRD
+			}
+			FRD={
+				every_state = {
+					if={
+						limit={
+							is_core_of =NPL
+						}
+						transfer_state_to = FRD
+						remove_core_of = NPL
+					}
+				}
+			}
+		}
+		
+		
+	}
+	option = {
+		name = FRW.52.b
+		every_controlled_state = {
+			if={
+				limit={
+					is_core_of = NPL
+				}
+				remove_core_of = NPL
+			}
+		}
+	}
+}

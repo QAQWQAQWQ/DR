@@ -1,0 +1,16 @@
+characters={
+	FRD_Maurice_Viollette={
+		name=FRD_Maurice_Viollette
+		portraits={ 
+			civilian={
+				large="gfx/leaders/FRD/Portrait_Maurice_Viollette.tga"
+			}
+		}
+		country_leader={
+			ideology=Social_Reformism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}				
+	}
+}

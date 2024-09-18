@@ -458,7 +458,10 @@ focus_tree = {
 			focus = SHW_Focus_24
 		}
 		completion_reward={
-			
+			swap_ideas = {
+				remove_idea = SHW_Backward_railways
+				add_idea = SHW_Backward_railways1
+			}
 		} 
 	}
 	focus = { 
@@ -589,6 +592,9 @@ focus_tree = {
 		cost = 8.00 
 		x = 51
 		y = 4 
+		available = {
+			has_country_flag = SHW_Focus_32_flag
+		}
 		prerequisite = {
 			focus = SHW_Focus_31
 		}
