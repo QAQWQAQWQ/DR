@@ -1,22 +1,22 @@
 state={
-	id=1006
-	name="STATE_1006"
-	manpower = 4501000
+	id=1073
+	name="STATE_1073"
+	manpower = 2144040
 	
 	state_category = rural
 	resources={
-		grain=12
+		grain=10
 	}
 	history={
 		owner = SXS
 		add_core_of = SXS
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
+
 		}
 	}
 	provinces={
-		1034 1575 4634 7571
+		1531 4074 4174 10367 12300
 	}
 
 	local_supplies=0.0 

@@ -1,22 +1,21 @@
 state={
-	id=622
-	name="STATE_622"
+	id=1077
+	name="STATE_1077"
 	resources={
-		tungsten=3.000
+		grain=2
 	}
 	history={
-		owner = SXX
-		add_core_of = SXX
+		owner = DUQ
+		add_core_of = DUQ
 		buildings = {
 			infrastructure = 1
-			arms_factory = 1
 		}
 	}
 
 	provinces={
-		1458 7208 7314 7659 8049 10880 12356
+		1985 3742 8081 8127 10724
 	}
-	manpower=3906200
+	manpower=1385100
 	buildings_max_level_factor=1.000
 	state_category=rural
 

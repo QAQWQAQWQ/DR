@@ -1,6 +1,6 @@
 state={
 	id=1005
-	name="关中"
+	name="STATE_1005"
 	resources={
 		steel=3.000
 	}
@@ -11,14 +11,14 @@ state={
 			8049 3 
 		}
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 2
 		}
 	}
 
 	provinces={
-		5007 7208 8049 10733 12156
+		1976 2006 5007 5092 7301 10733 12156 12713
 	}
 	manpower=3006200
 	buildings_max_level_factor=1.000

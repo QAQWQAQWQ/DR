@@ -1,11 +1,11 @@
 state= {
 	id=593
-	name="潮循"
-	manpower = 12700000
+	name="STATE_593"
+	manpower = 8430000
 	state_category = town
 	resources={
-		steel= 10
-		grain=15
+		steel=10
+		grain=10
 	}
 	history= {
 		owner = ROC
@@ -14,16 +14,12 @@ state= {
 			infrastructure = 2
 			industrial_complex = 1
 		}
-        
 		victory_points = { 7182 3 }
 		victory_points = { 9978 3 }
-		
-		victory_points = { 1078 3 }
 		victory_points = { 7067 3 }
-		
 	}
 	provinces={
-		1162 4050 4165 4207 7067 9978 1078 7141 7182 9938
+		7067 7182 9938 9978
 	}
 
 	local_supplies=1.0 

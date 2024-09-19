@@ -1,21 +1,21 @@
 state={
-	id=616
-	name="STATE_616"
+	id=1075
+	name="STATE_1075"
 	resources={
-		grain=4
+		tungsten=6.000
+		grain=15
 	}
 	history={
-		owner = DUQ
-		add_core_of = DUQ
+		owner = ROC
 		buildings = {
 			infrastructure = 2
 		}
 	}
 
 	provinces={
-		1630 2022 5057 5100 6638 7511 12327
+		4480 7502 10377 12017 12053 12310
 	}
-	manpower=1692500
+	manpower=6563710 
 	buildings_max_level_factor=1.000
 	state_category=town
 

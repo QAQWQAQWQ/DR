@@ -1,23 +1,23 @@
 state={
-	id=616
-	name="STATE_616"
+	id=1074
+	name="STATE_1074"
 	resources={
-		grain=4
+		grain=11
 	}
 	history={
-		owner = DUQ
-		add_core_of = DUQ
+		owner = GUI
+		add_core_of = GUI
 		buildings = {
 			infrastructure = 2
-		}
+		}	
 	}
 
 	provinces={
-		1630 2022 5057 5100 6638 7511 12327
+		7167 7637 9959 10462
 	}
-	manpower=1692500
+	manpower=5180500
 	buildings_max_level_factor=1.000
 	state_category=town
 
-	local_supplies=0.0 
+	local_supplies=2.0 
 }

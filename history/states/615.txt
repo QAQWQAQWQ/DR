@@ -1,11 +1,11 @@
 state={
 	id=615
-	name="冀宁"
-	manpower = 53601000
+	name="STATE_615"
+	manpower = 3216060
 	
 	state_category = town
 	resources={
-		grain=25
+		grain=15
 	}
 	history={
 		owner = SXS
@@ -20,7 +20,7 @@ state={
 		}
 	}
 	provinces={
-		1180 1519 4074 4174 4538 10367 10421 12078 12300 12344 
+		1180 1519 4538 10421 12078 12344
 	}
 
 	local_supplies=0.0 

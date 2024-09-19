@@ -1,6 +1,6 @@
 state={
 	id=602
-	name="湘江"
+	name="STATE_602"
 	resources={
 		tungsten=6.000
 		grain=22
@@ -18,13 +18,10 @@ state={
 		victory_points = {
 			12483 3 
 		}
-		victory_points = {
-			7101 10 
-		}
 	}
 
 	provinces={
-		1448 1640 7101 7097 7434 9999 10517 12017 12053 12310 12483 13140 13143 
+		1640 7097 9999 10517 12483 13140 13143
 	}
 	manpower=13542160
 	buildings_max_level_factor=1.000

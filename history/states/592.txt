@@ -1,6 +1,6 @@
 state={
 	id=592
-	name="粤海"
+	name="STATE_592"
 	manpower = 17835200
 	state_category = city
 	resources={
@@ -23,15 +23,14 @@ state={
 				bunker = 1
 			}
 		}
-		victory_points = { 1202 3 }
 		victory_points = { 1187 3 }
-		victory_points = { 1047 5}
-		victory_points = { 4092 3}
+		victory_points = { 1047 5 }
+		victory_points = { 4092 3 }
 		victory_points = { 1131 3 }
 	}
 
 	provinces={
-		1047 1087 1131 1187 1202 4092 7108 7152 9963 11938 11941 12077 12095
+		1047 1087 1131 1187 4092 7108 7152 9963 11938 11941 12077 12095
 	}
 
 	local_supplies=1.0 
