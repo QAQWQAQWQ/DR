@@ -1513,7 +1513,7 @@ on_actions = {
         }
         add_to_array = {
             array = global.culture_clr_B
-            value = 0.7
+            value = 0.75
             index = 75
         }
         add_to_array = {
@@ -5366,15 +5366,13 @@ on_actions = {
 
         874 = { set_variable = { state_culture = 81 } }
 
-        657 = { set_variable = { state_culture = 82 } }
         560 = { set_variable = { state_culture = 82 } }
         561 = { set_variable = { state_culture = 82 } }
         562 = { set_variable = { state_culture = 82 } }
         565 = { set_variable = { state_culture = 82 } }
         575 = { set_variable = { state_culture = 82 } }
         576 = { set_variable = { state_culture = 82 } }
-        409 = { set_variable = { state_culture = 82 } }
-        409 = { set_variable = { state_culture = 82 } }
+        657 = { set_variable = { state_culture = 82 } }
 
         655 = { set_variable = { state_culture = 83 } }
 
