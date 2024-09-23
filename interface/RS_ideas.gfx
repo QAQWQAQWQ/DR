@@ -148,6 +148,14 @@ spriteTypes = {
 	    name = "GFX_idea_Walkout_dynamic"
 	    texturefile = "gfx/interface/ideas/Walkout_dynamic.dds"
     }
+	spriteType = {
+	    name = "GFX_idea_Peasant_uprising"
+	    texturefile = "gfx/interface/ideas/Peasant_uprising.dds"
+    } 
+	spriteType = {
+	    name = "GFX_idea_Poison_gas_zone"
+	    texturefile = "gfx/interface/ideas/Poison_gas_zone.dds"
+    }
 	
 	spriteType = {
 	    name = "GFX_idea_Brittany_National_autonomy"
@@ -1247,6 +1255,22 @@ spriteTypes = {
 ######
 ######制造商
 ######
+	spriteType = {
+		name = "GFX_idea_Obukhov_State"
+		texturefile = "gfx/interface/ideas/organization/Obukhov_State.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Russo_Balt"
+		texturefile = "gfx/interface/ideas/organization/Russo_Balt.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Petersburg_Shipyard"
+		texturefile = "gfx/interface/ideas/organization/Petersburg_Shipyard.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Putilov_Factory"
+		texturefile = "gfx/interface/ideas/organization/Putilov_Factory.dds"
+	}
    spriteType = {
 		name = "GFX_idea_Renfe"
 		texturefile = "gfx/interface/ideas/organization/Renfe.dds"

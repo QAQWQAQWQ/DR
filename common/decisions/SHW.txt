@@ -206,6 +206,7 @@ SHW_Imperial_Russian_Army = {
 			factor = 11            
 		}                    
 		complete_effect = {   
+			
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
@@ -1158,7 +1159,8 @@ SHW_Court_struggles = {
 					 #取消时，更新维持法
 				}
                 remove_effect = {
-					country_event = SHW_event.5
+					country_event = SHW_event.25
+					set_country_flag = Abolish_Order_Maintenance_Law_flag
 				}
 
 			}
@@ -1166,6 +1168,9 @@ SHW_Court_struggles = {
 				icon = SWI_dismiss_council
 				visible = {
 					has_country_flag = SHW_event_4
+					NOT={
+						has_country_flag = Abolish_Order_Maintenance_Law_flag
+					}
 				}
 				available = {
 					

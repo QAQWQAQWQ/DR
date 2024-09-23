@@ -3,7 +3,26 @@
 ###########################
 
 add_namespace = WorldNew
+add_namespace = endNew
 add_namespace = Hidden_News
+
+news_event = {
+	id = endNew.1
+	title = endNew.1.t
+	desc = endNew.1.d
+
+	picture = GFX_endNew_1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = endNew.1.a
+	}		
+}
+
+
 
 news_event = {
 	id = Hidden_News.1

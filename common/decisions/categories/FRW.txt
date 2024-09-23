@@ -49,14 +49,10 @@ FRW_European_Federation = {
 		tag = FRW 
 	}
 	visible = {
-		AND={
-			has_country_flag = FRW_33_flag
-			NOT={
-				has_country_flag = FRW_35_flag
-			}
+		has_country_leader = {
+			name = FRW_Georges_Sorel
+			ruling_only = yes
 		}
-	    
-		
 	}
 	visible_when_empty = yes
 	scripted_gui = FRW_Trade_unionist_decision

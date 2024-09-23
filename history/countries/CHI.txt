@@ -1,6 +1,6 @@
-﻿capital = 603
+﻿capital = 608
 
-oob = "GUI_1920"
+oob = "CHI_1920"
 
 # Starting tech
 set_technology = {
@@ -12,7 +12,7 @@ set_technology = {
 	fuel_silos = 1
 }
 
-recruit_character = GUI_SuWu
+recruit_character = CHI_Li_YuanHong
 
 	set_technology = {
 		interwar_artillery = 1
@@ -46,10 +46,6 @@ recruit_character = GUI_SuWu
 		
 		
 	}
-	create_faction = Progressive_Party
-    add_to_faction = SCX
-	add_to_faction = QIX
-	add_to_faction = SUC
 set_politics = {
 	ruling_party = Conservatism
 	last_election = "1918.11.11"

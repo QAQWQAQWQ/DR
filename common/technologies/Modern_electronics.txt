@@ -416,7 +416,7 @@ technologies = {
 		}
 		
 		categories = {
-			electronics
+			Gas_bombs
 		}
 	}
 	Gas_Preparation1 = {
@@ -441,7 +441,7 @@ technologies = {
 		}
 		
 		categories = {
-			electronics
+			Gas_bombs
 		}
 	}
 	Gas_Preparation2 = {
@@ -466,7 +466,7 @@ technologies = {
 		}
 		
 		categories = {
-			electronics
+			Gas_bombs
 		}
 	}
 	Gas_Preparation3 = {
@@ -491,7 +491,7 @@ technologies = {
 		}
 		
 		categories = {
-			electronics
+			Gas_bombs
 		}
 	}
 	Gas_Preparation4 = {
@@ -513,7 +513,7 @@ technologies = {
 		}
 		
 		categories = {
-			electronics
+			Gas_bombs
 		}
 	}
 	Gas_Preparation5 = {
@@ -535,7 +535,7 @@ technologies = {
 		}
 		
 		categories = {
-			electronics
+			Gas_bombs
 		}
 	}
 	Gas_Preparation6 = {
@@ -557,8 +557,8 @@ technologies = {
 		}
 		
 		categories = {
-			electronics
-		}
+			Gas_bombs
+		} 
 	}
 
 
@@ -584,7 +584,7 @@ technologies = {
 		}
 		
 		categories = {
-			electronics
+			Gas_bombs
 		}
 	}
 	Gas_mask1 = {
@@ -602,10 +602,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 30
-		}
+		}  
 		
 		categories = {
-			electronics
+			Gas_bombs
 		}
 	}
 }

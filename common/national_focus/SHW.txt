@@ -67,6 +67,7 @@ focus_tree = {
 		focus = SHW_Focus_1
 		}
 		completion_reward={
+			unlock_decision_tooltip = SHW_Protect_landlords
 			add_popularity = {
 				ideology = Conservatism
 				popularity = 0.05
@@ -89,6 +90,8 @@ focus_tree = {
 		focus = SHW_Focus_5
 		}
 		completion_reward={
+			unlock_decision_tooltip = SHW_Cultivating_government_forces
+			unlock_decision_tooltip = SHW_Maintain_tsarist_rule
 		}
 	}
 	focus = {
@@ -101,7 +104,7 @@ focus_tree = {
 			focus = SHW_Focus_3
 		}
 		completion_reward={
-			
+			unlock_decision_tooltip = SHW_Encourage_town
 		}
 	}
 
@@ -115,7 +118,7 @@ focus_tree = {
 			focus = SHW_Focus_2
 		}
 		completion_reward={
-			
+			unlock_decision_tooltip = SHW_Divide_countryside
 		}
 	}
 	focus = {
@@ -128,6 +131,7 @@ focus_tree = {
 			focus = SHW_Focus_3
 		}
 		completion_reward={
+			unlock_decision_tooltip = SHW_Foster_kulaks
 			add_political_power = 100
 			add_stability = 0.05
 		}
@@ -184,7 +188,7 @@ focus_tree = {
 			focus = SHW_Focus_6
 		}
 		completion_reward={
-			
+			unlock_decision_tooltip = SHW_Sacrifice_weak
 		}
 	}
 	focus = {
@@ -209,7 +213,8 @@ focus_tree = {
 			focus = SHW_Focus_6
 		}
 		completion_reward={
-			
+			unlock_decision_tooltip = SHW_Expand_proportion_kulaks
+			unlock_decision_tooltip = SHW_Nurturing_agricultural_capitalists
 		}
 	}
 	focus = {
@@ -241,7 +246,7 @@ focus_tree = {
 		}
 		completion_reward={
 			country_event = SHW_event.15
-			
+			unlock_decision_category_tooltip = SHW_Imperial_Russian_Army
 			add_dynamic_modifier = {
 				modifier = SHW_General_Staff
 			}
@@ -615,7 +620,30 @@ focus_tree = {
 			focus = SHW_Focus_20
 		}
 		completion_reward={
-			
+			mio:SHW_Tula_Arms = {
+				add_mio_size = 1
+				add_mio_funds_gain_factor = 0.10
+			}
+			mio:SHW_ZiD = {
+				add_mio_size = 1
+				add_mio_funds_gain_factor = 0.10
+			}
+			mio:SHW_Putilov_Factory = {
+				add_mio_size = 1
+				add_mio_funds_gain_factor = 0.10
+			}
+			mio:SHW_Petersburg_Shipyard = {
+				add_mio_size = 1
+				add_mio_funds_gain_factor = 0.10
+			}
+			mio:SHW_Russo_Balt= {
+				add_mio_size = 1
+				add_mio_funds_gain_factor = 0.10
+			}
+			mio:SHW_Russo_Balt_Armored_Vehicles= {
+				add_mio_size = 1
+				add_mio_funds_gain_factor = 0.10
+			}
 		} 
 	}
 

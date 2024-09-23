@@ -224,14 +224,7 @@ news_event = {
 		name = Assembly_Tours.1.a
 		}
 	option = {
-		trigger = {
-			AND={
-				has_country_flag = FRW_Syndicalist_protests
-				has_country_flag = EVENT_FRW_5_b
-			}
-		}
 		name = Assembly_Tours.1.b
-		set_country_flag = Assembly_Tours_1
 		}
 	}
 
@@ -356,7 +349,7 @@ country_event = {
 		}
 		option = {
 		name = FRW.5.b
-		set_country_flag = EVENT_FRW_5_b
+		#set_country_flag = EVENT_FRW_5_b
 		custom_effect_tooltip = available_political_advisor
 		add_ideas = FRW_Lucien_Herr_H
 		add_ideas = FRW_Sebastian_Fuhr_P
@@ -431,6 +424,7 @@ country_event = {
 		option = {
 		name = FRW.8.a
 		country_event = {id=FRW.9 days=10}
+
 			}
 	}
 country_event = {
@@ -447,6 +441,9 @@ country_event = {
 			set_politics = {
 				ruling_party = Anarchism
 			}
+			ROOT={
+			mark_focus_tree_layout_dirty = yes
+		}
 		}
 	}
 country_event = {
@@ -873,7 +870,7 @@ country_event = {
 	title = FRW.28.t
 	desc = FRW.28.d
 	
-	picture = GFX_FRW_28
+	picture = GFX_FRW_29
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
@@ -958,7 +955,7 @@ country_event = {
 	id = FRW.33
 	title = FRW.33.t
 	desc = FRW.33.d
-	picture = GFX_FRW_31
+	picture = GFX_FRW_29
 	is_triggered_only = yes
 	trigger = {
 		}
@@ -972,7 +969,7 @@ country_event = {
 	id = FRW.34
 	title = FRW.34.t
 	desc = FRW.34.d
-	picture = GFX_FRW_31
+	picture = GFX_FRW_29
 	fire_only_once = yes
 	trigger = {
 		threat > 0.3
@@ -998,7 +995,18 @@ country_event = {
 	}
 	option = {
 		name = FRW.35.a
-		news_event = {id=Election_result.1 days = 2}
+		hidden_effect = {
+			every_country = {
+				news_event = {id=Election_result.3 days = 2}
+			}
+			set_popularities = {
+				Liberalism=62
+				Reformism=18
+				Revolutionism=15
+				Anarchism=5
+			}
+		}
+		
 		trigger = {
 			AND={
 				NOT={has_country_flag = Assembly_Tours_1}
@@ -1023,19 +1031,25 @@ country_event = {
 		set_politics = {
 			ruling_party = Liberalism
 		}
-		set_popularities = {
-			Liberalism=62
-			Reformism=18
-			Revolutionism=15
-			Anarchism=5
-		}
+		
 		ROOT={
 			mark_focus_tree_layout_dirty = yes
 		}
 		}
 	option = {
 		name = FRW.35.b
-		news_event = {id=Election_result.2 days = 2}
+		hidden_effect = {
+			every_country = {
+				news_event = {id=Election_result.1 days = 2}
+			}
+			
+		set_popularities = {
+			Reformism=62
+			Liberalism=18
+			Revolutionism=15
+			Anarchism=5
+		}
+		}
 		trigger = {
 			AND={
 				NOT={has_country_flag = Assembly_Tours_1}
@@ -1070,12 +1084,6 @@ country_event = {
 			character = FRW_Leon_Blum
 			ideology = Democracy_Reformism
 		}
-		set_popularities = {
-			Reformism=62
-			Liberalism=18
-			Revolutionism=15
-			Anarchism=5
-		}
 		ROOT={
 			mark_focus_tree_layout_dirty = yes
 		}
@@ -1083,7 +1091,6 @@ country_event = {
 		}
 	option = {
 		name = FRW.35.c
-		news_event = {id=Election_result.3 days = 2}
 		trigger = {
 			AND={
 				NOT={has_country_flag = Assembly_Tours_1}
@@ -1108,36 +1115,23 @@ country_event = {
 		set_politics = {
 			ruling_party = Revolutionism
 		}
-		set_popularities = {
-			Revolutionism=62
-			Liberalism=18
-			Reformism=15
-			Anarchism=5
+		hidden_effect = {
+			every_country = {
+				news_event = {id=Election_result.2 days = 2}
+			}
+			set_popularities = {
+				Revolutionism=62
+				Liberalism=18
+				Reformism=15
+				Anarchism=5
+			}
 		}
+		
 		ROOT={
 			mark_focus_tree_layout_dirty = yes
 		}
 		}	
-	option = {
-		news_event = Election_result.4
-		trigger = {
-			has_country_flag = Assembly_Tours_1
-		}
-		name = FRW.35.e
-		set_politics = {
-			ruling_party = Anarchism
-		}
-		set_popularities = {
-			Anarchism=70
-			Liberalism=10
-			Reformism=15
-			Revolutionism=5
-		}
-		ROOT={
-			mark_focus_tree_layout_dirty = yes
-		}
-		
-		}
+	
 }
 
 
@@ -1469,8 +1463,6 @@ country_event = {
 				}
 			}
 		}
-		
-		
 	}
 	option = {
 		name = FRW.52.b
@@ -1482,5 +1474,52 @@ country_event = {
 				remove_core_of = NPL
 			}
 		}
+	}
+}
+country_event = {
+	id = FRW.53
+	title = FRW.53.t
+	desc = FRW.53.d
+	picture = GFX_Eu_election
+	is_triggered_only = yes
+	trigger = {
+
+	}
+	option = {
+		name = FRW.53.a
+		country_event = {id=FRW.54 days=3}
+	}
+	option = {
+		name = FRW.53.b
+		country_event = {id=FRW.54 days=3}
+	}
+	option = {
+		name = FRW.53.c
+		country_event = {id=FRW.55 days=3}
+	}
+}
+country_event = {
+	id = FRW.54
+	title = FRW.54.t
+	desc = FRW.54.d
+	picture = GFX_Eu_election
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.54.a
+		
+	}
+}
+country_event = {
+	id = FRW.55
+	title = FRW.55.t
+	desc = FRW.55.d
+	picture = GFX_Eu_election
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.55.a
 	}
 }

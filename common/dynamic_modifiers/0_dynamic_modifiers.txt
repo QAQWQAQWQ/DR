@@ -91,3 +91,22 @@ Walkout_dynamic = {
 	local_factory_sabotage=0.05
 	local_supplies_for_controller=-0.05
 }
+
+Peasant_uprising = {
+	enable = { always = yes }
+	icon = GFX_idea_Peasant_uprising
+
+	production_speed_buildings_factor = -0.1 
+	state_resources_factor = -0.1
+	local_supplies = -0.1 
+}
+
+Poison_gas_zone = {
+	enable = { always = yes }
+	icon = GFX_idea_Poison_gas_zone
+
+    local_manpower = -0.1
+	production_speed_buildings_factor = -0.1 
+	state_resources_factor = -0.3
+	local_supplies = -0.2 
+}

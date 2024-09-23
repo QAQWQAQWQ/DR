@@ -241,8 +241,11 @@ spriteTypes = {
 	
 
 
-
-
+####
+	spriteType = {
+		name = "GFX_SHW_event_4"
+		texturefile = "gfx/event/SHW/SHW_event_4.dds"
+	}
 
 
 
@@ -543,6 +546,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_WorldNew_22"
 		texturefile = "gfx/event/NEWS/WorldNew_22.tga"
+	}
+	spriteType = {
+		name = "GFX_endNew_1"
+		texturefile = "gfx/event/NEWS/endNew_1.tga"
 	}
 	spriteType = {
 		name = "GFX_Anglo_French_war"
