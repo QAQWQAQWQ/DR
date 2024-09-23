@@ -1,6 +1,6 @@
 state={
 	id=1001
-	name="济南"
+	name="STATE_1001"
 	manpower = 18173200
 	state_category = city
 	
@@ -16,6 +16,9 @@ state={
 		victory_points = {
 			10102 3 
 		}
+		victory_points = {
+			12074 3 
+		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -23,7 +26,7 @@ state={
 		}
 	}
 	provinces={
-		1069 1084 4071 4089 7189 10102 12045 12093
+		1069 1084 4071 4089 7189 10102 12045 12074 12093
 	}
 
 	local_supplies=4.0 

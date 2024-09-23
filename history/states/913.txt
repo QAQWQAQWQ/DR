@@ -1,6 +1,6 @@
 state={
 	id=913
-	name="胶东"
+	name="STATE_913"
 	manpower = 2037300
 	state_category = town
 	
@@ -16,9 +16,6 @@ state={
 		victory_points = {
 			1104 5 
 		}
-		victory_points = {
-			12074 3 
-		}
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
@@ -30,7 +27,7 @@ state={
 		}
 	}
 	provinces={
-		1104 1200 1184 4157 4186 4205 7089 7105 10018 12074
+		1104 1200 1184 4157 4186 4205 7089 7105 10018
 	}
 
 	local_supplies=3.0 
