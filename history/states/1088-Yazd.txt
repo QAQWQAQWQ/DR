@@ -1,29 +1,29 @@
 
 state={
-	id=421
-	name="STATE_421"
-	manpower = 520186
+	id=1088
+	name="STATE_1088"
+	manpower = 295091
 	resources={
-		grain=5
+		oil=4
 	}
 	state_category = rural
+	resources={
+		grain=6
+	}
 
 	history={
 		owner = YEL
-		victory_points = {
-			4943 5
-		}
-		victory_points = {
-			5098 3
-		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
+		}
+		victory_points = {
+			8031 1 
 		}
 		add_core_of = YEL
 	}
 
 	provinces={
-		829 4943 5098 9816 12773
+		1963 8031 10828
 	}
 
 	local_supplies=0.0 
