@@ -150,3 +150,30 @@ news_event = {
 }
 
 
+news_event = {
+	id = occupied.6
+	title = occupied.6.t
+	desc = occupied.6.d
+
+	picture = GFX_fall_of_Budapest
+
+	major = yes
+
+	trigger = {
+			HUN={ 
+				has_war = yes
+				NOT = {
+					has_global_flag = fall_of_Budapest
+					controls_state = 43
+				}
+			}
+	}
+
+	immediate = {
+		set_global_flag = fall_of_Budapest
+	}
+	
+	option = {
+		name = occupied.6.a
+	}		
+}

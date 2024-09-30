@@ -626,7 +626,7 @@ SHW_Vladimir_Gurko={
 		slot = head_of_government
 		idea_token = SHW_Vladimir_Gurko_H
 		allowed = {
-			original_tag = AOX
+			original_tag = SHW
 		}
 		available = {
 			is_country_leader = no
@@ -634,7 +634,7 @@ SHW_Vladimir_Gurko={
 		  }
 		traits = {
 			head_of_government
-			conservative_grandee
+			unpopular_political_advisor
 		}
 		ai_will_do = {
 			factor = 1.000
@@ -643,7 +643,33 @@ SHW_Vladimir_Gurko={
 }
 
 
-
+SHW_Boris_Alexandrovich_Vasilchikov={
+	name=SHW_Boris_Alexandrovich_Vasilchikov
+	portraits={
+		civilian={
+			#large="gfx/leaders/SHW/Portrait_Kerensky.tga"
+			small="gfx/interface/ideas/idea_Boris_Alexandrovich_Vasilchikov.dds"
+		}
+	}
+	advisor={
+		slot = head_of_government
+		idea_token = SHW_Boris_Alexandrovich_Vasilchikov_H
+		allowed = {
+			original_tag = SHW
+		}
+		available = {
+			is_country_leader = no
+			is_political_advisor = no
+		  }
+		traits = {
+			head_of_government
+			unscrupulous_orchestrator
+		}
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+}
 
 
 SHW_Alexander_Ivanovich_Dubrovin={
@@ -685,7 +711,7 @@ SHW_Nikolai_Evgenievich_Markov={
 		}
 		available = {
 			has_completed_focus = SHW_Right_wing_revolutionaries
-		  }
+		}
 		traits = {
 			the_bloody_professor
 		}

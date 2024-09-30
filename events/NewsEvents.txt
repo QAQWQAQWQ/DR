@@ -3,7 +3,26 @@
 ###########################
 
 add_namespace = WorldNew
+add_namespace = endNew
 add_namespace = Hidden_News
+
+news_event = {
+	id = endNew.1
+	title = endNew.1.t
+	desc = endNew.1.d
+
+	picture = GFX_endNew_1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = endNew.1.a
+	}		
+}
+
+
 
 news_event = {
 	id = Hidden_News.1
@@ -343,6 +362,48 @@ news_event = {
     }
 	option = {
 		name = Hidden_News.20.a
+	}		
+}
+news_event = {
+	id = Hidden_News.21
+    hidden = yes
+	fire_only_once = yes
+   trigger = {
+	AND={
+		date > 1920.5.15
+		date < 1920.3.17
+	}
+	
+    }
+   immediate = {
+	news_event = WorldNew.21
+    }
+    mean_time_to_happen = {
+	days = 2
+    }
+	option = {
+		name = Hidden_News.21.a
+	}		
+}
+news_event = {
+	id = Hidden_News.22
+    hidden = yes
+	fire_only_once = yes
+   trigger = {
+	AND={
+		date > 1922.1.21
+		date < 1922.1.23
+	}
+	
+    }
+   immediate = {
+	news_event = WorldNew.22
+    }
+    mean_time_to_happen = {
+	days = 2
+    }
+	option = {
+		name = Hidden_News.22.a
 	}		
 }
 #######
@@ -696,5 +757,35 @@ news_event = {
 
 	option = {
 		name = WorldNew.20.a
+	}		
+}
+news_event = {
+	id = WorldNew.21
+	title = WorldNew.21.t
+	desc = WorldNew.21.d
+
+	picture = GFX_WorldNew_21
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = WorldNew.21.a
+	}		
+}
+news_event = {
+	id = WorldNew.22
+	title = WorldNew.22.t
+	desc = WorldNew.22.d
+
+	picture = GFX_WorldNew_22
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = WorldNew.22.a
 	}		
 }

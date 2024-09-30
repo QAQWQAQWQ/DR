@@ -1,19 +1,27 @@
 ideas = {
 	country = {
-		SHW_famine = {
-		  picture = famine
-		  modifier = {
-	  production_speed_industrial_complex_factor = -0.3
-	  production_speed_arms_factory_factor = -0.3
-	  production_speed_infrastructure_factor = -0.3
-	  production_speed_buildings_factor = -0.3
-	  local_factories = -0.3
-	  consumer_goods_factor = 0.2
-	  industrial_capacity_factory = -0.3
-	  monthly_population = -0.15
-	  army_attack_speed_factor = -0.2
-   }
+	
+	SHW_famine = {
+		picture = famine
+		modifier = {
+	  		production_speed_industrial_complex_factor = -0.3
+	  		production_speed_arms_factory_factor = -0.3
+	 		production_speed_infrastructure_factor = -0.3
+	 		production_speed_buildings_factor = -0.3
+	  		local_factories = -0.3
+	  		consumer_goods_factor = 0.2
+	  		industrial_capacity_factory = -0.3
+	  		monthly_population = -0.15
+	  		army_attack_speed_factor = -0.2
+   		}
 	}
+
+
+
+
+
+
+
 	SHW_Russian_serfs = {
 		picture = Russian_serfs
 		modifier = {
@@ -42,6 +50,14 @@ ideas = {
   }
 	SHW_Corrupt_army = {
 		picture = Corrupt_army
+		cancel = {
+			check_variable = {
+				SHW_Military_reform_frame=100
+			}
+			check_variable = {
+				SHW_Loyalty > 50
+			}
+		}
 		modifier = {
 			army_attack_factor = -0.1
 			army_defence_factor = -0.1
@@ -70,6 +86,7 @@ SHW_Backward_railways1 = {
 SHW_Stolypin_legacy = {
 	picture = Stolypin_legacy
 	modifier = {
+		stability_factor = -0.1
 		global_building_slots_factor = 0.15
 }
 }

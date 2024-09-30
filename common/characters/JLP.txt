@@ -1,0 +1,16 @@
+characters={
+	JLP_MengEngYuan={
+		name=JLP_MengEngYuan
+		portraits={ 
+			civilian={
+				large="gfx/leaders/JLP/portrait_MengEngYuan.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarianism_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}				
+	}
+}

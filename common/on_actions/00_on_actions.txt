@@ -198,5 +198,29 @@ on_daily= {
  } 
 } 
 
+on_capitulation = {
+	effect = {
+		if = {
+			limit = {
+				ROOT = { tag = NPL }
+				FROM = { tag = FRW }
+		    }
+			every_state = {
+				if={
+					limit={
+						OR={
+						    is_controlled_by = NPL
+						}
+					}
+					add_core_of = NPL
+				}
+			}
+	    }
+		#every_country = { news_event = ger_con.6 }
+		FRW={country_event = {id=FRW.52 days=10}}
+}
+}
+
+
 }
 

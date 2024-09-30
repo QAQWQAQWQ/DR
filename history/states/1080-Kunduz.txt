@@ -1,0 +1,27 @@
+
+state={
+	id=1080
+	name="STATE_1080"
+	manpower = 1391140
+	
+	state_category = rural
+	resources={
+		grain=6
+	}
+	history={
+		owner = AFH
+		add_core_of = AFH
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			12248 1
+		}
+	}
+
+	provinces={
+		7448 7584 10852 12248 12877 
+	}
+
+	local_supplies=0.0 
+}

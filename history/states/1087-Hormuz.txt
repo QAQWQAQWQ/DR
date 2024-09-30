@@ -1,0 +1,31 @@
+
+state={
+	id=1087
+	name="STATE_1087"
+	manpower = 306206
+	resources={
+		oil=2
+	}
+
+
+	state_category = rural
+	history={
+		owner = YEL
+		victory_points = {
+			7982 3 
+		}
+		buildings = {
+			infrastructure = 1
+			7982 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = YEL
+	}
+
+	provinces={
+		4959 7982
+	}
+
+	local_supplies=0.0 
+}

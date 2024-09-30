@@ -1,0 +1,84 @@
+SHW_Tula_Arms = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_Tula_Arms
+	
+	allowed = {	 
+			tag = SHW
+	}
+
+	available = {
+
+	} 
+}
+SHW_ZiD = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_ZiD
+	
+	allowed = {	 
+			tag = SHW
+	}
+
+	available = {
+
+	}
+}
+SHW_Petersburg_Shipyard = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_Petersburg_Shipyard
+	
+	allowed = {	 
+			tag = SHW
+	}
+
+	available = {
+
+	}
+}
+SHW_Putilov_Factory = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_Putilov_Factory
+	
+	allowed = {	 
+			tag = SHW
+	}
+
+	available = {
+
+	}
+}
+SHW_Russo_Balt= {
+	include = generic_multi_role_aircraft_organization
+	icon = GFX_idea_Russo_Balt
+	
+	allowed = {	 
+			tag = SHW
+	}
+
+	available = {
+
+	}
+}
+SHW_Russo_Balt_Armored_Vehicles= {
+	include = generic_armored_car_organization
+	icon = GFX_idea_Russo_Balt
+	
+	allowed = {	 
+			tag = SHW
+	}
+
+	available = {
+
+	}
+}
+SHW_Obukhov_State= {
+	include = generic_tank_organization
+	icon = GFX_idea_Obukhov_State
+	
+	allowed = {	 
+			tag = SHW
+	}
+
+	available = {
+
+	}
+}

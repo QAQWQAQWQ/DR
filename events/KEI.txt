@@ -15,6 +15,7 @@ country_event = {
 		kill_country_leader = yes
 		hidden_effect={
 			country_event={id=KEI.2}
+			SHW={country_event={id=SHW_event.27}}
 		}
 	}
 }

@@ -1,3 +1,7 @@
+
+
+
+
 voice_progress = {
 	enable = { always = yes }
 	army_leader_cost_factor=-0.1
@@ -73,4 +77,36 @@ Guerrilla_strongholds = {
 	land_bunker_effectiveness_factor = -0.1
 	army_defence_factor = -0.1
 	industry_repair_factor = -0.1
+}
+
+Walkout_dynamic = {
+	enable = { always = yes }
+	icon = GFX_idea_Walkout_dynamic
+
+	local_intel_to_enemies=0.05
+	line_change_production_efficiency_factor=-0.03
+	production_factory_efficiency_gain_factor=-0.03
+	production_factory_start_efficiency_factor=-0.03
+	state_production_speed_buildings_factor=-0.1
+	local_factory_sabotage=0.05
+	local_supplies_for_controller=-0.05
+}
+
+Peasant_uprising = {
+	enable = { always = yes }
+	icon = GFX_idea_Peasant_uprising
+
+	production_speed_buildings_factor = -0.1 
+	state_resources_factor = -0.1
+	local_supplies = -0.1 
+}
+
+Poison_gas_zone = {
+	enable = { always = yes }
+	icon = GFX_idea_Poison_gas_zone
+
+    local_manpower = -0.1
+	production_speed_buildings_factor = -0.1 
+	state_resources_factor = -0.3
+	local_supplies = -0.2 
 }

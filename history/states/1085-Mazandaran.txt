@@ -1,0 +1,24 @@
+
+state={
+	id=1085
+	name="STATE_1085"
+	manpower = 1378500
+	
+	state_category = rural
+	resources={
+		grain=4
+	}
+	history={
+		owner = YEL
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = YEL
+	}
+
+	provinces={
+		4580 7602 10385 10768
+	}
+
+	local_supplies=0.0 
+}

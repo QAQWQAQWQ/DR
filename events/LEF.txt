@@ -64,7 +64,7 @@ news_event = {
 	major = yes
 
 	trigger = {
-			LEF={ 
+			SBY={ 
 				NOT = {
 					has_global_flag = LEF_Start.3
 					controls_state = 1026

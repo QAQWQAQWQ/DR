@@ -1,0 +1,23 @@
+state={
+	id=1075
+	name="STATE_1075"
+	resources={
+		tungsten=6.000
+		grain=15
+	}
+	history={
+		owner = ROC
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		4480 7502 10377 12017 12053 12310
+	}
+	manpower=6563710 
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}

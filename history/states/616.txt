@@ -1,23 +1,23 @@
 state={
 	id=616
-	name="甘凉"
+	name="STATE_616"
 	resources={
-		grain=3
+		grain=4
 	}
 	history={
 		owner = DUQ
 		add_core_of = DUQ
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 		}
 	}
 
 	provinces={
-		3742 5057 5100 7511 8081 8127 10724 12327 
+		1630 2022 5057 5100 6638 7511 12327
 	}
-	manpower=2077600
+	manpower=1692500
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=town
 
 	local_supplies=0.0 
 }

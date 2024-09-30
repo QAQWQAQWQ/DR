@@ -3,6 +3,58 @@
 ###########################
 
 add_namespace = ROC
+add_namespace = ROC_Russian
+
+country_event = {
+	id = ROC_Russian.1
+	title = ROC_Russian.1.t
+	desc = ROC_Russian.1.d
+	picture = GFX_ROC_Russian_1
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+		SHW={
+			complete_national_focus = SHW_Focus_32
+		}
+		}
+		
+	}
+	option = {
+		name = ROC_Russian.1.a
+	}
+}
+country_event = {
+	id = ROC_Russian.2
+	title = ROC_Russian.2.t
+	desc = ROC_Russian.2.d
+	picture = GFX_ROC_Russian_1
+	is_triggered_only = yes
+	option = {
+		name = ROC_Russian.2.a
+	}
+}
+country_event = {
+	id = ROC_Russian.3
+	title = ROC_Russian.3.t
+	desc = ROC_Russian.3.d
+	picture = GFX_ROC_Russian_1
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			SHW={
+				declare_war_on = { target = ROC type = annex_everything } 
+				declare_war_on = { target = DUQ type = annex_everything } 
+				declare_war_on = { target = ZHX type = annex_everything } 
+				declare_war_on = { target = SCX type = annex_everything } 
+			}
+		}
+	}
+	option = {
+		name = ROC_Russian.3.a
+		news_event = {id=WorldNew.20 days=30}
+	}
+}
+
 news_event = {
 	id = ROC.1
 	title = ROC.1.t

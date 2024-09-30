@@ -1,0 +1,24 @@
+
+state={
+	id=1079
+	name="STATE_1079"
+	manpower = 927430
+	
+	state_category = rural
+	resources={
+		grain=4
+	}
+	history={
+		owner = AFH
+		add_core_of = AFH
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		7519 10781 12314 12653
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=1086
+	name="STATE_1086"
+	manpower = 260092
+	resources={
+		grain=2
+	}
+	state_category = rural
+
+	history={
+		owner = YEL
+		victory_points = {
+			4943 5
+		}
+		victory_points = {
+			5098 3
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = YEL
+	}
+
+	provinces={
+		1922 5050 10774
+	}
+
+	local_supplies=0.0 
+}

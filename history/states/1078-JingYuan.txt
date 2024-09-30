@@ -1,0 +1,24 @@
+state={
+	id=1078
+	name="STATE_1078"
+	resources={
+		grain=4
+	}
+	history={
+		owner = DUQ
+		add_core_of = DUQ
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+
+	provinces={
+		517 1647 3745 4939 5025 
+	}
+	manpower=901800
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=0.0 
+}

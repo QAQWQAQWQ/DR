@@ -241,8 +241,11 @@ spriteTypes = {
 	
 
 
-
-
+####
+	spriteType = {
+		name = "GFX_SHW_event_4"
+		texturefile = "gfx/event/SHW/SHW_event_4.dds"
+	}
 
 
 
@@ -536,8 +539,18 @@ spriteTypes = {
 		name = "GFX_WorldNew_20"
 		texturefile = "gfx/event/NEWS/WorldNew_20.tga"
 	}
-
-
+	spriteType = {
+		name = "GFX_WorldNew_21"
+		texturefile = "gfx/event/NEWS/WorldNew_21.tga"
+	}
+	spriteType = {
+		name = "GFX_WorldNew_22"
+		texturefile = "gfx/event/NEWS/WorldNew_22.tga"
+	}
+	spriteType = {
+		name = "GFX_endNew_1"
+		texturefile = "gfx/event/NEWS/endNew_1.tga"
+	}
 	spriteType = {
 		name = "GFX_Anglo_French_war"
 		texturefile = "gfx/event/NEWS/Anglo_French_war.tga"
@@ -779,7 +792,10 @@ spriteTypes = {
 		name = "GFX_FRW_6"
 		texturefile = "gfx/event/FRW/FRW_6.dds"
 	}
-
+	spriteType = {
+		name = "GFX_ROC_Russian_1"
+		texturefile = "gfx/event/ROC/ROC_Russian_1.dds"
+	}
 
 	spriteType = {
 		name = "GFX_ROC_1"
