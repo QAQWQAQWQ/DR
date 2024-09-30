@@ -1,0 +1,38 @@
+scripted_gui = {
+
+	Oil_crisis_ui_button = {
+		window_name = "Oil_crisis_ui_button"
+		context_type =player_context
+		parent_window_token = politics_tab
+
+		visible = {
+			always = yes
+		}
+		effects = {
+			Oil_crisis_ui_button_click={
+				if={
+					limit={
+						NOT = {
+							has_country_flag = Oil_crisis_ui_open
+						}
+					}
+					set_country_flag = Oil_crisis_ui_open
+				}
+				else={
+					clr_country_flag=Oil_crisis_ui_open
+				}
+				
+			}
+			
+		}
+	}
+	Oil_crisis_ui_window = {
+		window_name = "Oil_crisis_ui_window"
+		context_type =player_context
+		
+		visible = {
+			has_country_flag = Oil_crisis_ui_open
+		}
+	}
+}
+

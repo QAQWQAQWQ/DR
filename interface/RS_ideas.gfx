@@ -1,4 +1,6 @@
 spriteTypes = {
+
+	
 	
 	spriteType = {
 	    name = "GFX_idea_ZiD"
@@ -1247,7 +1249,10 @@ spriteTypes = {
 		name = "GFX_idea_Working_women"
 		texturefile = "gfx/interface/ideas/Working_women.dds"
 	}
-	
+	spriteType = {
+	    name = "GFX_idea_Roman_Orthodoxy"
+	    texturefile = "gfx/interface/ideas/Roman_Orthodoxy.dds"
+    } 
 
 ######
 ######
@@ -1275,6 +1280,7 @@ spriteTypes = {
 		name = "GFX_idea_Renfe"
 		texturefile = "gfx/interface/ideas/organization/Renfe.dds"
 	}
+	
 	spriteType = {
 		name = "GFX_idea_La_Electricidad_de_Caracas"
 		texturefile = "gfx/interface/ideas/organization/La_Electricidad_de_Caracas.dds"
