@@ -1,0 +1,26 @@
+
+state={
+	id=807
+	name="STATE_807"
+	manpower = 213370
+	
+	state_category = rural
+	history={
+		owner = WWS
+		victory_points = {
+			9263 5
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			9263 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces={
+		389 334 9263
+	}
+
+	local_supplies=0.0 
+}
