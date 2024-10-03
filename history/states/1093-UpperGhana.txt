@@ -1,22 +1,20 @@
 state={
-	id=1072
-	name="STATE_1072"
+	id=1093
+	name="STATE_1093"
+
 	history={
-		owner = FTX
-		add_core_of = FTX
+		owner = ENL
 		buildings = {
 			infrastructure = 1
 
 		}
-		victory_points = {
-			7848 5 
-		}
+
 	}
 
 	provinces={
-		4809 7848 7873 10541 10567 10675 12537
+		8039 8096
 	}
-	manpower=500000
+	manpower=1265440
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 

@@ -1,23 +1,24 @@
 state={
-	id=1075
-	name="STATE_1075"
+	id=1096
+	name="STATE_1096"
+
+	state_category = rural
 	resources={
-		tungsten=6.000
-		grain=15
+		rubber=2 # was: 4
 	}
 	history={
-		owner = ROC
+		owner = DSX
+		add_core_of = DSX
 		buildings = {
 			infrastructure = 2
 		}
 	}
 
 	provinces={
-		4480 7502 10377 12017 12053 12310
+		7133 8223 12929
 	}
-	manpower=6563710 
+	manpower=1406250
 	buildings_max_level_factor=1.000
-	state_category=town
 
 	local_supplies=0.0 
 }

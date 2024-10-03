@@ -1,0 +1,28 @@
+state={
+	id=1099
+	name="STATE_1099"
+	manpower = 1320719
+	resources={
+		chromium=24 # was: 116
+	}
+	
+	state_category = town
+	history={
+		owner = NAF
+		buildings = {
+			infrastructure = 3
+			4696 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			4696 1 
+		}
+	}
+
+	provinces={
+		1833 4584 4696 7576
+	}
+
+	local_supplies=0.0 
+}

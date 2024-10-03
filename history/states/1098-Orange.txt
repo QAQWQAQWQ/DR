@@ -1,0 +1,21 @@
+
+state={
+	id=1098
+	name="STATE_1098"
+	manpower = 736073
+	
+	state_category = rural
+	
+	history={
+		owner = NAF
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		5231 12064 12648
+	}
+
+	local_supplies=0.0 
+}

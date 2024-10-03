@@ -1,0 +1,20 @@
+
+state={
+	id=1092
+	name="STATE_1092" # Ivory Coast
+	manpower = 1540294
+	
+	state_category = pastoral
+	history={
+		owner = NPL
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		5013 8065
+	}
+
+	local_supplies=1.0 
+}

@@ -1,0 +1,27 @@
+
+state={
+	id=1095
+	name="STATE_1095"
+	manpower = 558733
+	
+	state_category = pastoral
+	resources={
+		rubber=3 # was: 4
+	}
+	history={
+		owner = DSX
+		victory_points = {
+			12830 1
+		}
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+
+	provinces={
+		2034 3165 11934 12719
+	}
+
+	local_supplies=2.0 
+}
