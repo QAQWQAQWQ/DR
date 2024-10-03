@@ -675,18 +675,13 @@ country_event = {
 
 	picture = GFX_SHW_event_4
 
-	#fire_only_once = yes
-
-	immediate = {
-		set_country_flag = SHW_event_34
-	}
+	fire_only_once = yes
 
 	is_triggered_only = yes
 	
 
 	option = {
 		name = SHW_event.34.a
-		clr_country_flag = SHW_event_34
 	}
 }
 #######

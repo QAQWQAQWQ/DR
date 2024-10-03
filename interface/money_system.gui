@@ -25,53 +25,53 @@ guiTypes = {
 		iconType = {
 			name = "ECO_icon1"
             spriteType ="GFX_economy_background"
-		 	position = {x = 16 y = 45}  
+		 	position = {x = 18 y = 45}  
 		}
 		iconType = { 
 			name = "ECO_icon2"
             spriteType ="GFX_economy_background1"
-		 	position = {x = 28 y = 70}                  
+		 	position = {x = 25 y = 55}                  
 		}
 		iconType = {
 			name = "ECO_icon3"
             spriteType ="GFX_economy_background2"
-		 	position = {x = 275 y = 47} 
+		 	position = {x = 282 y = 47} 
 		}
 		iconType = { 
 			name = "ECO_icon4"
             spriteType ="GFX_economy_background1"
-		 	position = {x = 28 y = 106} 
+		 	position = {x = 25 y = 91} 
 		}
 		iconType = { 
 			name = "ECO_icon5"
             spriteType ="GFX_economy_background1"
-		 	position = {x = 28 y = 142} 
+		 	position = {x = 25 y = 127} 
 		}
 		iconType = { 
 			name = "ECO_icon6"
             spriteType ="GFX_economy_background1"
-		 	position = {x = 28 y = 179} 
+		 	position = {x = 25 y = 164} 
 		}
 		iconType = { 
 			name = "ECO_icon7"
             spriteType ="GFX_economy_background1"
-		 	position = {x = 28 y = 215} 
+		 	position = {x = 25 y = 200} 
 		}
 		iconType = { 
 			name = "ECO_icon8" 
             spriteType ="GFX_economy_background1"
-		 	position = {x = 28 y = 251} 
+		 	position = {x = 25 y = 236} 
 		}
 		
 		iconType = {
 			name = "ECO_icon9"
             spriteType ="GFX_economy_background2"
-		 	position = {x = 275 y = 135}                   
+		 	position = {x = 282 y = 135}                   
 		}
 		iconType = { 
 			name = "ECO_icon10" 
             spriteType ="GFX_economy_background1"
-		 	position = {x = 28 y = 286} 
+		 	position = {x = 25 y = 271} 
 		}
 		iconType = { 
 			name = "ECO_icon11" 
@@ -165,7 +165,7 @@ guiTypes = {
 
 		instantTextBoxType = { 
 			name = "money_system_main_name"
-			position = { x = 28 y = 15 }
+			position = { x = 25 y = 15 }
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
 			text = "国民经济"	 
@@ -177,7 +177,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "money_system_value_name"
-			position = { x = 37 y = 80 }
+			position = { x = 37 y = 65 }
 			font = "hoi_18mbs"
 			text = "money_system_value_name_TT"	 
 			maxWidth = 500
@@ -189,7 +189,7 @@ guiTypes = {
   
 		instantTextBoxType = { 
 			name = "money_system_tax"
-			position = { x = 295 y = 58}
+			position = { x = 303 y = 57}
 			font = "hoi_18mbs"
 			text = "money_system_value_tax_TT"	 
 			maxWidth = 500
@@ -205,23 +205,23 @@ guiTypes = {
 		buttonType = {
 			name = "slider_limit_left"
 			spriteType = "GFX_econ_crt_slider_limit_left"
-			position = { x = 250 y = 90 }
+			position = { x = 255 y = 90 }
 		} 
 		buttonType = {
 			name = "slider_limit_right"
 			spriteType = "GFX_econ_crt_slider_limit_right"
-			position = { x = 512 y = 90 }
+			position = { x = 520 y = 90 }
 		}
 		
 		buttonType = {
 			name = "slider_limit_left_1"
 			spriteType = "GFX_econ_crt_slider_limit_left"
-			position = { x = 250 y = 177 }
+			position = { x = 255 y = 177 }
 		} 
 		buttonType = {
 			name = "slider_limit_right_1"
 			spriteType = "GFX_econ_crt_slider_limit_right"
-			position = { x = 512 y = 177 }
+			position = { x = 520 y = 177 }
 		}     
 		gridboxtype = {
 			name = "custom_slider_grid"     
@@ -251,7 +251,7 @@ guiTypes = {
 }      
 containerWindowType = {  
 	name = "custom_slider_container"
-	position = { x = 475 y = -145 }
+	position = { x = 485 y = -145 }
       
 	buttonType = { 
 		name = "custom_slider_icon"
@@ -263,7 +263,7 @@ containerWindowType = {
 }
 containerWindowType = {  
 	name = "custom_slider_container_1"
-	position = { x = 475 y = -145 }
+	position = { x = 485 y = -145 }
   
 	
 	buttonType = { 
