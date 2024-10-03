@@ -10,8 +10,8 @@ state={
 	}
 	history={
 		owner = HEL
-add_core_of = FRW
-add_core_of = HEL
+		add_core_of = HEL
+		add_core_of = FRW
 		victory_points = {
 			3516 5
 		}
@@ -28,7 +28,6 @@ add_core_of = HEL
 			air_base = 1
 
 		}
-		add_core_of = BHL
 	}
 
 	provinces={
