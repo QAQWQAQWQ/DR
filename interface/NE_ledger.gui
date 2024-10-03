@@ -17,16 +17,16 @@ guiTypes = {
                                 iconType = {      
 			name = "ECO_icon__2"
                                                 spriteType ="GFX_economy_background4"
-		 	position = {x = 30 y = 60} 
+		 	position = {x = 90 y = 60} 
 		}
                                 iconType = {
 			name = "ECO_icon__3"
                                                 spriteType ="GFX_economy_background5"
-		 	position = {x = 28 y = 230} 
+		 	position = {x = 90 y = 230} 
 		}
 		instantTextBoxType = {
 			name ="goods_factory_gui_text"
-			position = { x= 37 y = 73 }
+			position = { x= 100 y = 73 }
 			font = "hoi_18mbs"
 			text = goods_factory_gui_text_qwq
 			format = left
@@ -47,7 +47,7 @@ guiTypes = {
 		}   
 		instantTextBoxType = {
 			name ="next_month_goods_factory_gui_text"
-			position = { x= 35 y = 235 }
+			position = { x= 100 y = 235 }
 			font = "hoi_18mbs"
 			text = next_month_goods_factory_gui_text_qwq
 			format = left
@@ -58,7 +58,7 @@ guiTypes = {
 		buttonType = { 
 			name = "goods_factory_add_button"
 			size = {width = 100 height = 20}
-			position = { x= 231 y = 295 }
+			position = { x= 285 y = 295 }
 			spriteType = "GFX_wages_add_button"
 			buttonFont = "hoi_18mbs"
 			#buttonText = "增加分配给生活消费品的民用工厂"
@@ -83,7 +83,7 @@ guiTypes = {
 		buttonType = { 
 			name = "goods_factory_del_button"
 			size = {width = 100 height = 20}
-			position = { x= 370 y = 295 }
+			position = { x= 435 y = 295 }
 			spriteType = "GFX_wages_del_button"
 			buttonFont = "hoi_18mbs"
 			#buttonText = "减少分配给生活消费品的民用工厂"
@@ -108,7 +108,7 @@ guiTypes = {
 		buttonType = { 
 			name = "wages_add_button"
 			size = {width = 100 height = 20}
-			position = { x= 197 y = 97 }
+			position = { x= 258 y = 97 }
 			spriteType = "GFX_wages_add_button"
 			buttonFont = "hoi_18mbs"
 			#buttonText = "提高工资标准"
@@ -117,7 +117,7 @@ guiTypes = {
 		buttonType = { 
 			name = "wages_del_button"
 			size = {width = 100 height = 20}
-			position = { x= 363 y = 97 }
+			position = { x= 424 y = 97 }
 			spriteType = "GFX_wages_del_button"
 			buttonFont = "hoi_18mbs"
 			#buttonText = "降低工资标准"
