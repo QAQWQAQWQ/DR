@@ -1155,6 +1155,7 @@ on_actions = {
             array = global.culture_clr_B
             value = 0.6
             index = 57
+<<<<<<< Updated upstream
         }
         add_to_array = {
             array = global.culture_clr_alpha
@@ -1235,6 +1236,95 @@ on_actions = {
             array = global.culture_clr_B
             value = 0.95
             index = 61
+=======
+>>>>>>> Stashed changes
+        }
+        add_to_array = {
+            array = global.culture_clr_alpha
+            value = 0.8
+            index = 57
+        }
+        add_to_array = {
+            array = global.culture_clr_R
+<<<<<<< Updated upstream
+            value = 0.44
+            index = 62
+        }
+        add_to_array = {
+            array = global.culture_clr_G
+=======
+            value = 0.6
+            index = 58
+        }
+        add_to_array = {
+            array = global.culture_clr_G
+            value = 0.45
+            index = 58
+        }
+        add_to_array = {
+            array = global.culture_clr_B
+            value = 0.45
+            index = 58
+        }
+        add_to_array = {
+            array = global.culture_clr_alpha
+            value = 0.8
+            index = 58
+        }
+        add_to_array = {
+            array = global.culture_clr_R
+            value = 0.7
+            index = 59
+        }
+        add_to_array = {
+            array = global.culture_clr_G
+            value = 0.5
+            index = 59
+        }
+        add_to_array = {
+            array = global.culture_clr_B
+            value = 0.55
+            index = 59
+        }
+        add_to_array = {
+            array = global.culture_clr_alpha
+            value = 0.8
+            index = 59
+        }
+        add_to_array = {
+            array = global.culture_clr_R
+            value = 0.5
+            index = 60
+        }
+        add_to_array = {
+            array = global.culture_clr_G
+            value = 0.35
+            index = 60
+        }
+        add_to_array = {
+            array = global.culture_clr_B
+            value = 0.35
+            index = 60
+        }
+        add_to_array = {
+            array = global.culture_clr_alpha
+            value = 0.8
+            index = 60
+        }
+        add_to_array = {
+            array = global.culture_clr_R
+            value = 0.4
+            index = 61
+        }
+        add_to_array = {
+            array = global.culture_clr_G
+            value = 0
+            index = 61
+        }
+        add_to_array = {
+            array = global.culture_clr_B
+            value = 0.2
+            index = 61
         }
         add_to_array = {
             array = global.culture_clr_alpha
@@ -1248,6 +1338,7 @@ on_actions = {
         }
         add_to_array = {
             array = global.culture_clr_G
+>>>>>>> Stashed changes
             value = 0.56
             index = 62
         }
@@ -1663,17 +1754,17 @@ on_actions = {
         }
         add_to_array = {
             array = global.culture_clr_R
-            value = 0.45
+            value = 1
             index = 83
         }
         add_to_array = {
             array = global.culture_clr_G
-            value = 0.65
+            value = 1
             index = 83
         }
         add_to_array = {
             array = global.culture_clr_B
-            value = 0.85
+            value = 0
             index = 83
         }
         add_to_array = {
@@ -1723,17 +1814,17 @@ on_actions = {
         }
         add_to_array = {
             array = global.culture_clr_R
-            value = 0.8
+            value = 0.55
             index = 86
         }
         add_to_array = {
             array = global.culture_clr_G
-            value = 0.45
+            value = 0.85
             index = 86
         }
         add_to_array = {
             array = global.culture_clr_B
-            value = 0
+            value = 0.95
             index = 86
         }
         add_to_array = {
@@ -1743,17 +1834,17 @@ on_actions = {
         }
         add_to_array = {
             array = global.culture_clr_R
-            value = 0.85
+            value = 0.45
             index = 87
         }
         add_to_array = {
             array = global.culture_clr_G
-            value = 0.75
+            value = 0.65
             index = 87
         }
         add_to_array = {
             array = global.culture_clr_B
-            value = 0.15
+            value = 0.85
             index = 87
         }
         add_to_array = {
@@ -1783,6 +1874,20 @@ on_actions = {
         }
         add_to_array = {
             array = global.culture_clr_R
+<<<<<<< Updated upstream
+            value = 0.8
+            index = 88
+        }
+        add_to_array = {
+            array = global.culture_clr_G
+            value = 0.6
+            index = 88
+        }
+        add_to_array = {
+            array = global.culture_clr_B
+            value = 0.05
+            index = 88
+=======
             value = 0.95
             index = 89
         }
@@ -1790,6 +1895,57 @@ on_actions = {
             array = global.culture_clr_G
             value = 0.75
             index = 89
+        }
+        add_to_array = {
+            array = global.culture_clr_B
+            value = 0.55
+            index = 89
+>>>>>>> Stashed changes
+        }
+        add_to_array = {
+            array = global.culture_clr_alpha
+            value = 0.8
+            index = 89
+        }
+        add_to_array = {
+            array = global.culture_clr_R
+<<<<<<< Updated upstream
+            value = 0.95
+            index = 89
+        }
+        add_to_array = {
+            array = global.culture_clr_G
+            value = 0.75
+            index = 89
+=======
+            value = 0.85
+            index = 90
+        }
+        add_to_array = {
+            array = global.culture_clr_G
+            value = 0.55
+            index = 90
+        }
+        add_to_array = {
+            array = global.culture_clr_B
+            value = 0.4
+            index = 90
+        }
+        add_to_array = {
+            array = global.culture_clr_alpha
+            value = 0.8
+            index = 90
+        }
+        add_to_array = {
+            array = global.culture_clr_R
+            value = 1
+            index = 91
+        }
+        add_to_array = {
+            array = global.culture_clr_G
+            value = 0.9
+            index = 91
+>>>>>>> Stashed changes
         }
         add_to_array = {
             array = global.culture_clr_B
@@ -3543,17 +3699,17 @@ on_actions = {
         }
         add_to_array = {
             array = global.culture_clr_R
-            value = 0.6
+            value = 0.7
             index = 177
         }
         add_to_array = {
             array = global.culture_clr_G
-            value = 0.45
+            value = 0.5
             index = 177
         }
         add_to_array = {
             array = global.culture_clr_B
-            value = 0.45
+            value = 0.55
             index = 177
         }
         add_to_array = {
@@ -3563,17 +3719,21 @@ on_actions = {
         }
         add_to_array = {
             array = global.culture_clr_R
-            value = 0.7
+            value = 0.8
             index = 178
         }
         add_to_array = {
             array = global.culture_clr_G
+<<<<<<< Updated upstream
             value = 0.5
+=======
+            value = 0.7
+>>>>>>> Stashed changes
             index = 178
         }
         add_to_array = {
             array = global.culture_clr_B
-            value = 0.55
+            value = 0.2
             index = 178
         }
         add_to_array = {
@@ -3603,17 +3763,17 @@ on_actions = {
         }
         add_to_array = {
             array = global.culture_clr_R
-            value = 0.8
+            value = 0.55
             index = 180
         }
         add_to_array = {
             array = global.culture_clr_G
-            value = 0.7
+            value = 0.45
             index = 180
         }
         add_to_array = {
             array = global.culture_clr_B
-            value = 0.2
+            value = 0.15
             index = 180
         }
         add_to_array = {
@@ -4163,17 +4323,29 @@ on_actions = {
         }
         add_to_array = {
             array = global.culture_clr_R
+<<<<<<< Updated upstream
             value = 0.55
+=======
+            value = 0.75
+>>>>>>> Stashed changes
             index = 208
         }
         add_to_array = {
             array = global.culture_clr_G
+<<<<<<< Updated upstream
             value = 0.45
+=======
+            value = 0.05
+>>>>>>> Stashed changes
             index = 208
         }
         add_to_array = {
             array = global.culture_clr_B
+<<<<<<< Updated upstream
             value = 0.15
+=======
+            value = 0.2
+>>>>>>> Stashed changes
             index = 208
         }
         add_to_array = {
@@ -4183,7 +4355,11 @@ on_actions = {
         }
         add_to_array = {
             array = global.culture_clr_R
+<<<<<<< Updated upstream
             value = 0.75
+=======
+            value = 0.3
+>>>>>>> Stashed changes
             index = 209
         }
         add_to_array = {
@@ -4193,7 +4369,11 @@ on_actions = {
         }
         add_to_array = {
             array = global.culture_clr_B
+<<<<<<< Updated upstream
             value = 0.2
+=======
+            value = 0.7
+>>>>>>> Stashed changes
             index = 209
         }
         add_to_array = {
@@ -4283,6 +4463,7 @@ on_actions = {
         }
         add_to_array = {
             array = global.culture_clr_R
+<<<<<<< Updated upstream
             value = 0.3
             index = 214
         }
@@ -4305,15 +4486,46 @@ on_actions = {
             array = global.culture_clr_R
             value = 0.85
             index = 215
+=======
+            value = 0.85
+            index = 214
+>>>>>>> Stashed changes
         }
         add_to_array = {
             array = global.culture_clr_G
             value = 0.45
+<<<<<<< Updated upstream
             index = 215
+=======
+            index = 214
+>>>>>>> Stashed changes
         }
         add_to_array = {
             array = global.culture_clr_B
             value = 0.1
+<<<<<<< Updated upstream
+=======
+            index = 214
+        }
+        add_to_array = {
+            array = global.culture_clr_alpha
+            value = 0.8
+            index = 214
+        }
+        add_to_array = {
+            array = global.culture_clr_R
+            value = 0.8
+            index = 215
+        }
+        add_to_array = {
+            array = global.culture_clr_G
+            value = 0.6
+            index = 215
+        }
+        add_to_array = {
+            array = global.culture_clr_B
+            value = 0.4
+>>>>>>> Stashed changes
             index = 215
         }
         add_to_array = {
@@ -4323,17 +4535,29 @@ on_actions = {
         }
         add_to_array = {
             array = global.culture_clr_R
+<<<<<<< Updated upstream
             value = 0.8
+=======
+            value = 0.85
+>>>>>>> Stashed changes
             index = 216
         }
         add_to_array = {
             array = global.culture_clr_G
+<<<<<<< Updated upstream
             value = 0.6
+=======
+            value = 0.55
+>>>>>>> Stashed changes
             index = 216
         }
         add_to_array = {
             array = global.culture_clr_B
+<<<<<<< Updated upstream
             value = 0.4
+=======
+            value = 0.2
+>>>>>>> Stashed changes
             index = 216
         }
         add_to_array = {
@@ -4348,12 +4572,20 @@ on_actions = {
         }
         add_to_array = {
             array = global.culture_clr_G
+<<<<<<< Updated upstream
             value = 0.55
+=======
+            value = 0.65
+>>>>>>> Stashed changes
             index = 217
         }
         add_to_array = {
             array = global.culture_clr_B
+<<<<<<< Updated upstream
             value = 0.2
+=======
+            value = 0.45
+>>>>>>> Stashed changes
             index = 217
         }
         add_to_array = {
@@ -4368,12 +4600,20 @@ on_actions = {
         }
         add_to_array = {
             array = global.culture_clr_G
+<<<<<<< Updated upstream
             value = 0.5
+=======
+            value = 0.55
+>>>>>>> Stashed changes
             index = 218
         }
         add_to_array = {
             array = global.culture_clr_B
+<<<<<<< Updated upstream
             value = 0.05
+=======
+            value = 0.35
+>>>>>>> Stashed changes
             index = 218
         }
         add_to_array = {
@@ -4403,17 +4643,29 @@ on_actions = {
         }
         add_to_array = {
             array = global.culture_clr_R
+<<<<<<< Updated upstream
             value = 0.85
+=======
+            value = 0.8
+>>>>>>> Stashed changes
             index = 220
         }
         add_to_array = {
             array = global.culture_clr_G
+<<<<<<< Updated upstream
             value = 0.65
+=======
+            value = 0.5
+>>>>>>> Stashed changes
             index = 220
         }
         add_to_array = {
             array = global.culture_clr_B
+<<<<<<< Updated upstream
             value = 0.45
+=======
+            value = 0.05
+>>>>>>> Stashed changes
             index = 220
         }
         add_to_array = {
@@ -4783,17 +5035,29 @@ on_actions = {
         }
         add_to_array = {
             array = global.culture_clr_R
+<<<<<<< Updated upstream
             value = 0.8
+=======
+            value = 0.7
+>>>>>>> Stashed changes
             index = 239
         }
         add_to_array = {
             array = global.culture_clr_G
+<<<<<<< Updated upstream
             value = 0.6
+=======
+            value = 0.3
+>>>>>>> Stashed changes
             index = 239
         }
         add_to_array = {
             array = global.culture_clr_B
+<<<<<<< Updated upstream
             value = 0.75
+=======
+            value = 0.55
+>>>>>>> Stashed changes
             index = 239
         }
         add_to_array = {
@@ -4823,17 +5087,29 @@ on_actions = {
         }
         add_to_array = {
             array = global.culture_clr_R
+<<<<<<< Updated upstream
             value = 0.7
+=======
+            value = 0.8
+>>>>>>> Stashed changes
             index = 241
         }
         add_to_array = {
             array = global.culture_clr_G
+<<<<<<< Updated upstream
             value = 0.3
+=======
+            value = 0.6
+>>>>>>> Stashed changes
             index = 241
         }
         add_to_array = {
             array = global.culture_clr_B
+<<<<<<< Updated upstream
             value = 0.55
+=======
+            value = 0.75
+>>>>>>> Stashed changes
             index = 241
         }
         add_to_array = {
@@ -4883,17 +5159,29 @@ on_actions = {
         }
         add_to_array = {
             array = global.culture_clr_R
+<<<<<<< Updated upstream
             value = 0.05
+=======
+            value = 0.55
+>>>>>>> Stashed changes
             index = 244
         }
         add_to_array = {
             array = global.culture_clr_G
+<<<<<<< Updated upstream
             value = 0.75
+=======
+            value = 0
+>>>>>>> Stashed changes
             index = 244
         }
         add_to_array = {
             array = global.culture_clr_B
+<<<<<<< Updated upstream
             value = 0.6
+=======
+            value = 0.55
+>>>>>>> Stashed changes
             index = 244
         }
         add_to_array = {
@@ -4981,6 +5269,29 @@ on_actions = {
             value = 0.8
             index = 248
         }
+<<<<<<< Updated upstream
+=======
+        add_to_array = {
+            array = global.culture_clr_R
+            value = 0.05
+            index = 249
+        }
+        add_to_array = {
+            array = global.culture_clr_G
+            value = 0.75
+            index = 249
+        }
+        add_to_array = {
+            array = global.culture_clr_B
+            value = 0.6
+            index = 249
+        }
+        add_to_array = {
+            array = global.culture_clr_alpha
+            value = 0.8
+            index = 249
+        }
+>>>>>>> Stashed changes
 
 	every_state = {
 		set_variable = {
@@ -5078,7 +5389,10 @@ on_actions = {
         216 = { set_variable = { state_culture = 11 } }
         245 = { set_variable = { state_culture = 11 } }
         571 = { set_variable = { state_culture = 11 } }
+<<<<<<< Updated upstream
         709 = { set_variable = { state_culture = 11 } }
+=======
+>>>>>>> Stashed changes
 
         95 = { set_variable = { state_culture = 12 } }
         96 = { set_variable = { state_culture = 12 } }
@@ -5184,6 +5498,10 @@ on_actions = {
         519 = { set_variable = { state_culture = 21 } }
         521 = { set_variable = { state_culture = 21 } }
         522 = { set_variable = { state_culture = 21 } }
+<<<<<<< Updated upstream
+=======
+        709 = { set_variable = { state_culture = 21 } }
+>>>>>>> Stashed changes
         723 = { set_variable = { state_culture = 21 } }
 
         121 = { set_variable = { state_culture = 22 } }
@@ -5348,29 +5666,33 @@ on_actions = {
         757 = { set_variable = { state_culture = 56 } }
         758 = { set_variable = { state_culture = 56 } }
         1052 = { set_variable = { state_culture = 56 } }
+<<<<<<< Updated upstream
 
         973 = { set_variable = { state_culture = 57 } }
 
         747 = { set_variable = { state_culture = 59 } }
         751 = { set_variable = { state_culture = 59 } }
         975 = { set_variable = { state_culture = 59 } }
+=======
 
-        330 = { set_variable = { state_culture = 60 } }
-        611 = { set_variable = { state_culture = 60 } }
-        612 = { set_variable = { state_culture = 60 } }
-        621 = { set_variable = { state_culture = 60 } }
-        715 = { set_variable = { state_culture = 60 } }
-        755 = { set_variable = { state_culture = 60 } }
-        761 = { set_variable = { state_culture = 60 } }
-        817 = { set_variable = { state_culture = 60 } }
-        818 = { set_variable = { state_culture = 60 } }
-        819 = { set_variable = { state_culture = 60 } }
-        820 = { set_variable = { state_culture = 60 } }
-        1010 = { set_variable = { state_culture = 60 } }
-        1011 = { set_variable = { state_culture = 60 } }
+        973 = { set_variable = { state_culture = 57 } }
+>>>>>>> Stashed changes
 
+        288 = { set_variable = { state_culture = 58 } }
+        640 = { set_variable = { state_culture = 58 } }
+
+<<<<<<< Updated upstream
         536 = { set_variable = { state_culture = 61 } }
         537 = { set_variable = { state_culture = 61 } }
+=======
+        1056 = { set_variable = { state_culture = 59 } }
+
+        1055 = { set_variable = { state_culture = 60 } }
+
+        747 = { set_variable = { state_culture = 61 } }
+        751 = { set_variable = { state_culture = 61 } }
+        975 = { set_variable = { state_culture = 61 } }
+>>>>>>> Stashed changes
 
         233 = { set_variable = { state_culture = 62 } }
         826 = { set_variable = { state_culture = 62 } }
@@ -5459,12 +5781,49 @@ on_actions = {
         576 = { set_variable = { state_culture = 82 } }
         657 = { set_variable = { state_culture = 82 } }
 
-        655 = { set_variable = { state_culture = 83 } }
+        330 = { set_variable = { state_culture = 83 } }
+        611 = { set_variable = { state_culture = 83 } }
+        612 = { set_variable = { state_culture = 83 } }
+        621 = { set_variable = { state_culture = 83 } }
+        715 = { set_variable = { state_culture = 83 } }
+        755 = { set_variable = { state_culture = 83 } }
+        761 = { set_variable = { state_culture = 83 } }
+        817 = { set_variable = { state_culture = 83 } }
+        818 = { set_variable = { state_culture = 83 } }
+        819 = { set_variable = { state_culture = 83 } }
+        820 = { set_variable = { state_culture = 83 } }
+        1010 = { set_variable = { state_culture = 83 } }
+        1011 = { set_variable = { state_culture = 83 } }
 
         564 = { set_variable = { state_culture = 84 } }
         566 = { set_variable = { state_culture = 84 } }
 
         329 = { set_variable = { state_culture = 85 } }
+
+<<<<<<< Updated upstream
+        267 = { set_variable = { state_culture = 88 } }
+        415 = { set_variable = { state_culture = 88 } }
+        442 = { set_variable = { state_culture = 88 } }
+        445 = { set_variable = { state_culture = 88 } }
+        1082 = { set_variable = { state_culture = 88 } }
+
+        1086 = { set_variable = { state_culture = 89 } }
+
+        420 = { set_variable = { state_culture = 90 } }
+        1085 = { set_variable = { state_culture = 90 } }
+
+        410 = { set_variable = { state_culture = 91 } }
+        444 = { set_variable = { state_culture = 91 } }
+
+        1081 = { set_variable = { state_culture = 92 } }
+
+        868 = { set_variable = { state_culture = 93 } }
+
+=======
+        536 = { set_variable = { state_culture = 86 } }
+        537 = { set_variable = { state_culture = 86 } }
+
+        655 = { set_variable = { state_culture = 87 } }
 
         267 = { set_variable = { state_culture = 88 } }
         415 = { set_variable = { state_culture = 88 } }
@@ -5484,6 +5843,7 @@ on_actions = {
 
         868 = { set_variable = { state_culture = 93 } }
 
+>>>>>>> Stashed changes
         869 = { set_variable = { state_culture = 94 } }
 
         1058 = { set_variable = { state_culture = 95 } }
@@ -5673,13 +6033,35 @@ on_actions = {
         30 = { set_variable = { state_culture = 131 } }
         33 = { set_variable = { state_culture = 131 } }
         34 = { set_variable = { state_culture = 131 } }
+<<<<<<< Updated upstream
         713 = { set_variable = { state_culture = 131 } }
+=======
+>>>>>>> Stashed changes
         785 = { set_variable = { state_culture = 131 } }
         930 = { set_variable = { state_culture = 131 } }
         931 = { set_variable = { state_culture = 131 } }
         932 = { set_variable = { state_culture = 131 } }
         950 = { set_variable = { state_culture = 131 } }
         951 = { set_variable = { state_culture = 131 } }
+
+<<<<<<< Updated upstream
+        20 = { set_variable = { state_culture = 132 } }
+        32 = { set_variable = { state_culture = 132 } }
+        735 = { set_variable = { state_culture = 132 } }
+        845 = { set_variable = { state_culture = 132 } }
+
+        19 = { set_variable = { state_culture = 133 } }
+        21 = { set_variable = { state_culture = 133 } }
+        22 = { set_variable = { state_culture = 133 } }
+        25 = { set_variable = { state_culture = 133 } }
+        26 = { set_variable = { state_culture = 133 } }
+        31 = { set_variable = { state_culture = 133 } }
+        851 = { set_variable = { state_culture = 133 } }
+
+=======
+        706 = { set_variable = { state_culture = 131 } }
+        707 = { set_variable = { state_culture = 131 } }
+        713 = { set_variable = { state_culture = 131 } }
 
         20 = { set_variable = { state_culture = 132 } }
         32 = { set_variable = { state_culture = 132 } }
@@ -5694,6 +6076,7 @@ on_actions = {
         31 = { set_variable = { state_culture = 133 } }
         851 = { set_variable = { state_culture = 133 } }
 
+>>>>>>> Stashed changes
         46 = { set_variable = { state_culture = 134 } }
         76 = { set_variable = { state_culture = 134 } }
         78 = { set_variable = { state_culture = 134 } }
@@ -5861,17 +6244,12 @@ on_actions = {
 
         1057 = { set_variable = { state_culture = 175 } }
 
-        1055 = { set_variable = { state_culture = 176 } }
-
-        288 = { set_variable = { state_culture = 177 } }
-        640 = { set_variable = { state_culture = 177 } }
-
-        1056 = { set_variable = { state_culture = 178 } }
+        77 = { set_variable = { state_culture = 178 } }
+        211 = { set_variable = { state_culture = 178 } }
 
         137 = { set_variable = { state_culture = 179 } }
 
-        77 = { set_variable = { state_culture = 180 } }
-        211 = { set_variable = { state_culture = 180 } }
+        543 = { set_variable = { state_culture = 180 } }
 
         1053 = { set_variable = { state_culture = 181 } }
 
@@ -6024,12 +6402,19 @@ on_actions = {
         808 = { set_variable = { state_culture = 207 } }
         829 = { set_variable = { state_culture = 207 } }
 
+<<<<<<< Updated upstream
         543 = { set_variable = { state_culture = 208 } }
         706 = { set_variable = { state_culture = 208 } }
         707 = { set_variable = { state_culture = 208 } }
 
         901 = { set_variable = { state_culture = 209 } }
         902 = { set_variable = { state_culture = 209 } }
+=======
+        901 = { set_variable = { state_culture = 208 } }
+        902 = { set_variable = { state_culture = 208 } }
+
+        887 = { set_variable = { state_culture = 209 } }
+>>>>>>> Stashed changes
 
         781 = { set_variable = { state_culture = 210 } }
         898 = { set_variable = { state_culture = 210 } }
@@ -6041,6 +6426,7 @@ on_actions = {
         884 = { set_variable = { state_culture = 213 } }
         885 = { set_variable = { state_culture = 213 } }
         904 = { set_variable = { state_culture = 213 } }
+<<<<<<< Updated upstream
 
         887 = { set_variable = { state_culture = 214 } }
 
@@ -6063,11 +6449,43 @@ on_actions = {
         558 = { set_variable = { state_culture = 220 } }
         776 = { set_variable = { state_culture = 220 } }
         777 = { set_variable = { state_culture = 220 } }
+=======
+        1096 = { set_variable = { state_culture = 213 } }
+
+        556 = { set_variable = { state_culture = 214 } }
+        700 = { set_variable = { state_culture = 214 } }
+        899 = { set_variable = { state_culture = 214 } }
+        1091 = { set_variable = { state_culture = 214 } }
+
+        272 = { set_variable = { state_culture = 215 } }
+        296 = { set_variable = { state_culture = 215 } }
+        701 = { set_variable = { state_culture = 215 } }
+        780 = { set_variable = { state_culture = 215 } }
+        1094 = { set_variable = { state_culture = 215 } }
+
+        298 = { set_variable = { state_culture = 216 } }
+
+        274 = { set_variable = { state_culture = 217 } }
+        779 = { set_variable = { state_culture = 217 } }
+
+        1092 = { set_variable = { state_culture = 218 } }
+
+        777 = { set_variable = { state_culture = 219 } }
+        778 = { set_variable = { state_culture = 219 } }
+        1093 = { set_variable = { state_culture = 219 } }
+
+        558 = { set_variable = { state_culture = 220 } }
+        776 = { set_variable = { state_culture = 220 } }
+>>>>>>> Stashed changes
         900 = { set_variable = { state_culture = 220 } }
 
         660 = { set_variable = { state_culture = 221 } }
 
+<<<<<<< Updated upstream
         718 = { set_variable = { state_culture = 222 } }
+=======
+        1095 = { set_variable = { state_culture = 222 } }
+>>>>>>> Stashed changes
 
         297 = { set_variable = { state_culture = 223 } }
         539 = { set_variable = { state_culture = 223 } }
@@ -6082,6 +6500,10 @@ on_actions = {
         538 = { set_variable = { state_culture = 226 } }
 
         890 = { set_variable = { state_culture = 227 } }
+<<<<<<< Updated upstream
+=======
+        718 = { set_variable = { state_culture = 227 } }
+>>>>>>> Stashed changes
 
         768 = { set_variable = { state_culture = 228 } }
         769 = { set_variable = { state_culture = 228 } }
@@ -6091,9 +6513,15 @@ on_actions = {
         547 = { set_variable = { state_culture = 230 } }
 
         888 = { set_variable = { state_culture = 231 } }
+<<<<<<< Updated upstream
         889 = { set_variable = { state_culture = 231 } }
 
         771 = { set_variable = { state_culture = 232 } }
+=======
+
+        771 = { set_variable = { state_culture = 232 } }
+        889 = { set_variable = { state_culture = 232 } }
+>>>>>>> Stashed changes
 
         546 = { set_variable = { state_culture = 233 } }
 
@@ -6104,7 +6532,10 @@ on_actions = {
 
         891 = { set_variable = { state_culture = 236 } }
         892 = { set_variable = { state_culture = 236 } }
+<<<<<<< Updated upstream
         895 = { set_variable = { state_culture = 236 } }
+=======
+>>>>>>> Stashed changes
 
         545 = { set_variable = { state_culture = 237 } }
         896 = { set_variable = { state_culture = 237 } }
@@ -6112,6 +6543,7 @@ on_actions = {
         770 = { set_variable = { state_culture = 238 } }
 
         542 = { set_variable = { state_culture = 239 } }
+<<<<<<< Updated upstream
 
         544 = { set_variable = { state_culture = 240 } }
 
@@ -6122,6 +6554,21 @@ on_actions = {
         541 = { set_variable = { state_culture = 244 } }
         893 = { set_variable = { state_culture = 244 } }
         894 = { set_variable = { state_culture = 244 } }
+=======
+        275 = { set_variable = { state_culture = 239 } }
+
+        544 = { set_variable = { state_culture = 240 } }
+
+        1097 = { set_variable = { state_culture = 241 } }
+        1098 = { set_variable = { state_culture = 241 } }
+
+        719 = { set_variable = { state_culture = 242 } }
+
+        1099 = { set_variable = { state_culture = 243 } }
+
+        894 = { set_variable = { state_culture = 244 } }
+        895 = { set_variable = { state_culture = 244 } }
+>>>>>>> Stashed changes
 
         937 = { set_variable = { state_culture = 245 } }
         1026 = { set_variable = { state_culture = 245 } }
@@ -6134,5 +6581,11 @@ on_actions = {
 
         515 = { set_variable = { state_culture = 248 } }
         782 = { set_variable = { state_culture = 248 } }
+<<<<<<< Updated upstream
+=======
+
+        541 = { set_variable = { state_culture = 249 } }
+        893 = { set_variable = { state_culture = 249 } }
+>>>>>>> Stashed changes
 	}
 }
