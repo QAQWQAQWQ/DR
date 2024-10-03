@@ -5,14 +5,14 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = NAF
+		owner = ENL
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 		}
-		add_core_of = NAF
+		add_core_of = ENL
 	}
 	provinces={
-		10957 10978 12921 
+		1580 13217
 	}
 	
 	buildings_max_level_factor=1.000
