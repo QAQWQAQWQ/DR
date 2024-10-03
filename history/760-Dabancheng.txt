@@ -1,0 +1,23 @@
+state={
+	id=760
+	name="STATE_760"
+	resources={
+		grain=5
+	}
+	provinces={
+		4704 7732 10839 12524 7808 12671 4788 10674 10691
+	}
+	manpower=700000
+	buildings_max_level_factor=1.000
+	state_category = rural
+	history={
+		owner = XJC
+		add_core_of = XJC
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
+	}
+
+	local_supplies=0.0 
+}

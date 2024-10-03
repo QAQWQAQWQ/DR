@@ -1,0 +1,25 @@
+state={
+	id=728
+	name="高雷"
+	manpower = 200000
+	
+	state_category = pastoral
+	
+	history={
+		owner = ROC
+		add_core_of = ROC
+		buildings = {
+			infrastructure = 2
+			11981 = {
+				naval_base = 1
+			}
+		}
+		victory_points = { 11981 3 }
+	}
+	
+	provinces={
+		4160 7039 7135 11981  
+	}
+
+	local_supplies=0.0 
+}
