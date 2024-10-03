@@ -1,27 +1,33 @@
 state={
 	id=905
 	name="STATE_905"
-	manpower = 1017600
-	state_category = pastoral
+	manpower = 3667100
+	state_category = rural
 	resources={
-		grain=4
+		grain=8
 	}
 	history={
 		owner = DSX
 		add_core_of = DSX
-		buildings = {
-			infrastructure = 2
-			5210 = {
-				naval_base = 2
-			}
+		victory_points = {
+			2196 1
 		}
 		victory_points = {
 			5210 1 
 		}
+		buildings = {
+			infrastructure = 2
+			2196 = {
+				naval_base = 2
+			}
+			5210 = {
+				naval_base = 2
+			}
+		}
 	}
 
 	provinces={
-		5196 5210 6020 
+		2196 5210 8182 8183 12944
 	}
 
 	buildings_max_level_factor=1.000

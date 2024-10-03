@@ -3,6 +3,8 @@ state = {
 	name = "STATE_908"
 
 	history = {
+		owner = ASI
+		add_core_of = ASI
 		set_variable = {
 			908.ETH_state_development_production_speed = -0.3
 
@@ -21,9 +23,6 @@ state = {
 		victory_points = {
 			13240 2 
 		}
-		owner = ASI
-		add_core_of = ASI
-
 	}
 
 	provinces = {
