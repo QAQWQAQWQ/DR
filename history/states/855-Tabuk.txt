@@ -2,11 +2,12 @@ state={
 	id=855
 	name="STATE_855"
 	history = {
-		owner = HAZ
+		owner = EYJ
+		add_core_of = EYJ
 		add_core_of = HAZ
 	}
 	provinces={
-		1033 2027 2095 8092 12101 12455  
+		1033 2027 2095 8092 12101  
 	}
 	manpower=500000
 	state_category = pastoral

@@ -6,7 +6,8 @@ state={
 		grain=2
 	}
 	history={
-		owner = NZS
+		owner = JBS
+		add_core_of = JBS
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
@@ -15,12 +16,10 @@ state={
 		victory_points = {
 			12727 5 
 		}
-		add_core_of = NZS
-
 	}
 
 	provinces={
-		5024 5093 7995 8004 8060 12727 12813 12870 
+		2090 5024 5093 7995 8004 8060 10748 10786 12727 12813 12870
 	}
 	manpower=1000000
 	buildings_max_level_factor=1.000
