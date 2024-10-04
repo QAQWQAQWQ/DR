@@ -33,6 +33,12 @@ scripted_gui = {
 		window_name = "State_Culture_window" 
 		context_type = selected_state_context
 		parent_window_name = countrystateview
+
+		properties = {
+			State_icon={
+				image = "[Getbuilding]"
+			}
+		}
 		
 		triggers = {
 			scorched_grain_state_button_visible = {

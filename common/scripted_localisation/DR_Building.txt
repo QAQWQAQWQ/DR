@@ -1,0 +1,38 @@
+defined_text = { 
+	name = Getbuilding
+	text = { 
+		localization_key = GFX_state_0
+		trigger = {
+		state = FROM
+		NOT={
+			FROM={
+				state = 16
+			}
+			FROM={
+				state = 64
+			}
+		}	
+		}
+	}
+	text = { 
+		localization_key = GFX_state_64
+		trigger = {
+			state = 64
+		}
+	}
+	text = { 
+		localization_key = GFX_state_16
+		trigger = {
+			state = 16
+		}
+	}
+}
+defined_text = { 
+	name = Getbuildingdesc
+	text = { 
+		localization_key = state_16desc
+		trigger = {
+				state = 16
+		}
+	}
+}
