@@ -79,11 +79,30 @@ early_ship_hull_heavy = 1
 	add_to_faction = XXL
 	add_to_faction = NAF
 	add_to_faction = ESG
+	add_to_faction = BNA
 
 	set_autonomy = { target = IRL autonomy_state = autonomy_dominion }
 	set_autonomy = { target = YDA autonomy_state = autonomy_colony }
-	set_autonomy = { target = NAF autonomy_state = autonomy_colony }
+	set_autonomy = { target = NAF autonomy_state = autonomy_dominion }
 	set_autonomy = { target = ESG autonomy_state = autonomy_colony }
+	set_autonomy = {
+		target = CNA
+		autonomy_state = autonomy_dominion
+	}
+	set_autonomy = {
+		target = BNA
+		autonomy_state = autonomy_dominion
+	}
+
+	set_autonomy = {
+		target = ASZ
+		autonomy_state = autonomy_dominion
+	}
+
+	set_autonomy = {
+		target = XXL
+		autonomy_state = autonomy_dominion
+	}
 
 give_guarantee = YEM
 give_guarantee = KAT
