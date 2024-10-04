@@ -356,6 +356,16 @@ set_autonomy = {
 }
 
 set_autonomy = {
+	target = XUH
+	autonomy_state = autonomy_reichskommissariat
+}
+
+set_autonomy = {
+	target = KEI
+	autonomy_state = autonomy_reichskommissariat
+}
+
+set_autonomy = {
 	target = TGA
 	autonomy_state = autonomy_reichskommissariat
 }
@@ -371,20 +381,21 @@ set_autonomy = {
 
 set_autonomy = {
 	target = YED
-	autonomy_state = autonomy_puppet
+	autonomy_state = autonomy_personal_union
 }
 set_autonomy = {
 	target = FEL
-	autonomy_state = autonomy_integrated_puppet
+	autonomy_state = autonomy_personal_union
 }
 set_autonomy = {
 	target = MEG
-	autonomy_state = autonomy_puppet
-}
-set_autonomy = {
-	target = AFH
 	autonomy_state = autonomy_reichsprotectorate
 }
+set_autonomy = {
+	target = LMN
+	autonomy_state = autonomy_reichsprotectorate
+}
+
 set_autonomy = {
 	target = ESI
 	autonomy_state = autonomy_colony
