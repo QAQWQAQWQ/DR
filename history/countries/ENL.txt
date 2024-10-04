@@ -80,6 +80,9 @@ early_ship_hull_heavy = 1
 	add_to_faction = NAF
 	add_to_faction = ESG
 	add_to_faction = BNA
+	add_to_faction = TRO
+	add_to_faction = SLY
+	add_to_faction = YEM
 
 	set_autonomy = { target = IRL autonomy_state = autonomy_dominion }
 	set_autonomy = { target = YDA autonomy_state = autonomy_colony }
@@ -102,6 +105,21 @@ early_ship_hull_heavy = 1
 	set_autonomy = {
 		target = XXL
 		autonomy_state = autonomy_dominion
+	}
+
+	set_autonomy = {
+		target = TRO
+		autonomy_state = autonomy_reichsprotectorate
+	}
+	
+	set_autonomy = {
+		target = SLY
+		autonomy_state = autonomy_reichsprotectorate
+	}
+
+	set_autonomy = {
+		target = YEM
+		autonomy_state = autonomy_reichsprotectorate
 	}
 
 give_guarantee = YEM
