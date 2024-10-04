@@ -2,9 +2,9 @@
 state={
 	id=275
 	name="STATE_275" # Transvaal
-	manpower = 3680363
+	manpower = 2944290
 	
-	state_category = city
+	state_category = town
 	
 	resources={
 		steel=5 # was: 8
@@ -14,7 +14,7 @@ state={
 	history={
 		owner = NAF
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 2 #was: 5
 			arms_factory = 1
 			industrial_complex = 5
 			air_base = 3
@@ -25,7 +25,7 @@ state={
 	}
 
 	provinces={
-		1688 2171 2213 5106 5217 5231 10400 10566 10668 12064 12648 
+		1688 2171 2213 5106 5217 10400 10566 10668
 	}
 
 	local_supplies=0.0 

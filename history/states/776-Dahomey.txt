@@ -4,14 +4,20 @@ state={
 	name="STATE_776" # Benin/Dahomey
 	manpower = 1351563
 	
-	state_category = pastoral
+	state_category = rural
 	history={
 		owner = DSX
+		victory_points = {
+			1951 1
+		}
 		victory_points = {
 			10919 1
 		}
 		buildings = {
 			infrastructure = 2
+			1951 = {
+				naval_base = 1
+			}
 			10919 = {
 				naval_base = 1
 			}
@@ -19,7 +25,7 @@ state={
 	}
 
 	provinces={
-		10919 12874 12762
+		1951 10919
 	}
 
 	local_supplies=1.0 

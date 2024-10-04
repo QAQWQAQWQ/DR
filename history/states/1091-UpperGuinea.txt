@@ -1,0 +1,23 @@
+
+state={
+	id=1091
+	name="STATE_1091" # Guinea
+	manpower = 78016
+	
+	state_category = pastoral
+	history={
+		owner = NPL
+		victory_points = {
+			1909 1 
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		4957 5039 8008
+	}
+
+	local_supplies=1.0 
+}

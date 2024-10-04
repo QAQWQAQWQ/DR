@@ -6,12 +6,13 @@ state={
 	}
 	history={
 		owner = UBS
+		add_core_of = UBS
 		buildings = {
 			industrial_complex = 1
 		}
 	}
 	manpower=6908
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=pastoral
 	local_supplies=0.000
 }

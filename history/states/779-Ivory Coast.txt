@@ -2,9 +2,9 @@
 state={
 	id=779
 	name="STATE_779" # Ivory Coast
-	manpower = 3850734
+	manpower = 2310440
 	
-	state_category = pastoral
+	state_category = rural
 	history={
 		owner = NPL
 		victory_points = {
@@ -19,7 +19,7 @@ state={
 	}
 
 	provinces={
-		5013 5070 8065 8122 10762 10803
+		8122 10803
 	}
 
 	local_supplies=1.0 

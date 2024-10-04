@@ -1,0 +1,24 @@
+state={
+	id=1096
+	name="STATE_1096"
+
+	state_category = rural
+	resources={
+		rubber=2 # was: 4
+	}
+	history={
+		owner = DSX
+		add_core_of = DSX
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		7133 8223 12929
+	}
+	manpower=1406250
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

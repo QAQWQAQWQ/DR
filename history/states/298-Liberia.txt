@@ -13,22 +13,15 @@ state=
 	}
 
 	history= {
-		owner = ENL
-		add_core_of = LBY
+		owner = NPL
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			arms_factory = 1
 			industrial_complex = 1
-			7959 = {
-				naval_base = 2
-			}
-		}
-		victory_points = {
-			7959 3
 		}
 	}
 	provinces={
-		7959 8006
+		5070 8006 10762
 	}
 
 	local_supplies=0.0 

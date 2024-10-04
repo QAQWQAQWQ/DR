@@ -4,15 +4,15 @@ state = {
 	name = "STATE_911"
 	manpower = 18342
 	
-	state_category = large_city
+	state_category = pastoral
 
 	history = {
 		owner = ASI
-	    add_core_of = ASI
-     buildings = {
+		add_core_of = ASI
+		buildings = {
 			infrastructure = 1 
+		}
 	}
-}
 	provinces = {
 		13236
 	}
