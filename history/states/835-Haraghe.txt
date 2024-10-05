@@ -9,6 +9,9 @@ state = {
 	state_category = rural
 
 	history = {
+		owner = ASI
+		add_core_of = ASI
+		add_core_of = SML
 		buildings = {
 			industrial_complex = 1
 			air_base = 1
@@ -20,9 +23,6 @@ state = {
 		victory_points = { 
 			13249 3
 		}
-		
-		owner = ASI
-		add_core_of = ASI
 	}
 
 	provinces = {
