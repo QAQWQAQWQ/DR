@@ -25,19 +25,19 @@
 
  Reformism:0 "改良主义"
  Reformism_noun:0 "改良主义"
- Reformism_desc:0 "议会民主制"
+ Reformism_desc:0 "改良主义政府"
 
  Conservatism:0 "保守主义"
  Conservatism_noun:0 "保守主义"
- Conservatism_desc:0 "家长制政府"
+ Conservatism_desc:0 "保守主义政府"
 
  Liberalism:0 "自由主义"
  Liberalism_noun:0 "自由主义"
- Liberalism_desc:0 "开放民主制"
+ Liberalism_desc:0 "自由主义政府"
 
  Reactionary:0 "混合民族主义"
  Reactionary_noun:0 "民族主义"
- Reactionary_desc:0 "集权制政府"
+ Reactionary_desc:0 "民族主义政府"
 
  Anarchism:0 "无政府主义"
  Anarchism_noun:0 "无政府主义"
@@ -45,15 +45,15 @@
 
  Authoritarian_dictatorship:0 "专制独裁主义"
  Authoritarian_dictatorship_noun:0 "专制主义"
- Authoritarian_dictatorship_desc:0 "极权制政府"
+ Authoritarian_dictatorship_desc:0 "专制独裁政府"
 
- Paternalism:0 "家长主义"
- Paternalism_noun:0 "家长主义"
+ Paternalism:0 "家长制"
+ Paternalism_noun:0 "家长制"
  Paternalism_desc:0 "家长制政府"
 
  Ultranationalism:0 "极端民族主义"
  Ultranationalism_noun:0 "极端民族主义"
- Ultranationalism_desc:0 "极权制政府"
+ Ultranationalism_desc:0 "极端民族主义政府"
 
 ###子意识形态
 ##革命主义 
@@ -166,21 +166,21 @@
 
 ###各国政党
 
-FRW_Reformism_party:0 "独立社会党"
+FRW_Reformism_party:0 "法国社会主义党"
 FRW_Reformism_party_long:0 "独立社会党"
 FRW_Reformism_party_new:0 "共和-马克思同盟"
 FRW_Reformism_party_long_new:0 "共和-马克思同盟"
 
-FRW_Revolutionism_party:0 "革命社会工人党"
-FRW_Revolutionism_party_long:0 "革命社会工人党"
+FRW_Revolutionism_party:0 "社会主义国际法国支部"
+FRW_Revolutionism_party_long:0 "社会主义国际法国支部"
 FRW_Revolutionism_party_new:0 "法国共产党"
 FRW_Revolutionism_party_long_new:0 "法国共产党"
 
-FRW_Liberalism_party:0 "社会党（可能派）"
-FRW_Liberalism_party_long:0 "社会主义工人联合会"
+FRW_Liberalism_party:0 "共和联盟"
+FRW_Liberalism_party_long:0 "共和联盟"
 
-FRW_Anarchism_party:0 "工人自治联合会"
-FRW_Anarchism_party_long:0 "无政府自治联合会"
+FRW_Anarchism_party:0 "无政府共产主义联合会"
+FRW_Anarchism_party_long:0 "无政府共产主义联合会"
 
 FRW_Anarchism_party_new:0 "法兰西工人革命党"
 FRW_Anarchism_party_new_long:0 "法兰西工人革命党"
@@ -193,7 +193,7 @@ FRW_Revolutionism_party_new_long:0 "革命民族团结党"
 FRW_Comite_communal_new_long:0 "中央紧急委员会"
 FRW_Comite_communal_party_new:0 "中央紧急委员会"
 
-ENL_Conservatism_party:0 "保守统一党"
+ENL_Conservatism_party:0 "保守党"
 ENL_Conservatism_party_long:0 "英国保守党"
 ENL_Liberalism_party:0 "自由党"
 ENL_Liberalism_party_long:0 "英国自由党"
@@ -279,10 +279,10 @@ SBY_Conservatism_party2:0 "西班牙联邦党"
 SBY_Conservatism_party2_long:0 "西班牙联邦党"
 
 
-XJC_Liberalism_party:0 "两盆自治派"
-XJC_Liberalism_party_long:0 "两盆自治派"
-XJC_Conservatism_party:0 "两盆哥老派"
-XJC_Conservatism_party_long:0 "两盆哥老派"
+XJC_Liberalism_party:0 "国民党两盆支部"
+XJC_Liberalism_party_long:0 "国民党两盆支部"
+XJC_Conservatism_party:0 "国民党两盆支部保守派"
+XJC_Conservatism_party_long:0 "国民党两盆支部保守派"
 
 KEI_Conservatism_party:0 "大清官府"
 KEI_Conservatism_party_long:0 "大清官府"

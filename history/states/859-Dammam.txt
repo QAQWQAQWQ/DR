@@ -2,14 +2,15 @@ state={
 	id=859
 	name="STATE_859"
 	provinces={
-		1955 10791 10850 12702 
+		1955 10791 12702 
 	}
 	resources={
 		oil=3.000
 	}
 	history = {
-		owner = JBS
+		owner = EYJ
 		add_core_of = JBS
+		add_core_of = EYJ
 		buildings = {
 			infrastructure = 1
 			12702 = {

@@ -11,6 +11,8 @@ state={
 	}
 	history={
 		owner = DMT
+		add_core_of = DMT
+		add_claim_by = KOH
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 3
@@ -19,7 +21,6 @@ state={
 		victory_points = {
 			11581 3 
 		}
-		add_core_of = DMT
 	}
 
 	provinces={
