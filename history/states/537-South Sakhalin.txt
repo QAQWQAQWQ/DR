@@ -10,7 +10,9 @@ state= {
 
 	history= {
 		owner = SHW
-		
+		add_core_of = SHW
+		add_core_of = FER
+		add_claim_by = JPN
 		buildings = {
 			infrastructure = 2
 			12446 = {
@@ -23,9 +25,9 @@ state= {
 		}
 
 	}
-	provinces=
-	{
-1322 1820 12446 	}
+	provinces={
+		1322 1820 12446 
+	}
 
 	local_supplies=0.0 
 }
