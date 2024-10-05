@@ -1,5 +1,24 @@
 spriteTypes = {
-	
+	spriteType = {
+		name = "GFX_Oil_crisis_ENL_button"
+		texturefile = "gfx/interface/gui/oil/Oil_crisis_ENL_button.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_oil_country_color_back"
+		texturefile = "gfx/interface/gui/oil/oil_country_color_back.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_oil_state_back"
+		texturefile = "gfx/interface/gui/oil/state_back.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_oil_country_back"
+		texturefile = "gfx/interface/gui/oil/oil_country_back.dds"
+		legacy_lazy_load = no
+	}
 	spriteType = {
 		name = "GFX_oil_back"
 		texturefile = "gfx/interface/gui/oil/oil_back.dds"

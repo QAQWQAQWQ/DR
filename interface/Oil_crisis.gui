@@ -6,27 +6,190 @@ guiTypes = {
 		                
 		buttonType = { 
 			name = "Oil_crisis_ui_button"
-			size = {width = 100 height = 120} 
+			size = {width = 100 height = 120}  
 			spriteType = "GFX_Oil_crisis_ui_button"
 			buttonFont = "hoi_18mbs"
-			#buttonText = "经济状况"
 			position = { x = 112 y = 390 }
 			pdx_tooltip = "Oil_crisis_TT"
 		}
 		
 	}
-    containerWindowType = {
+    containerWindowType = { 
 		name = "Oil_crisis_ui_window"
-		position = { x = 545 y = 100 }	
-		#position = { x = 2 y = 5 } 
-		#size = {width = 100% height = 100%}
-		origo = left
-		moveable = no
+		position = { x = -420 y = -385 } 	
+		moveable = yes
+		orientation = CENTER
+		origo = center
+		clipping = no 
 		
-		iconType = {
+		background = { 
 			name = "oil_back"
             spriteType ="GFX_oil_back"
 		 	position = {x = 0 y = 0}  
+		} 
+		instantTextboxType = { 
+			name = "country_number"
+			position = {x=165 y=400}
+			text = "country_number" 
+			font = "hoi_18mbs"
+			maxWidth = 110
+			maxHeight = 20
+			format = centre
+		}
+		instantTextboxType = { 
+			name = "value_number"
+			position = {x=280 y=400}
+			text = "value_number" 
+			font = "hoi_18mbs" 
+			maxWidth = 110
+			maxHeight = 20
+			format = centre
+		} 
+		instantTextboxType = {  
+			name = "state_action"
+			position = {x=630 y=400}
+			text = "state_action" 
+			font = "hoi_18mbs" 
+			maxWidth = 110
+			maxHeight = 20
+			format = centre
+		}
+		instantTextboxType = { 
+			name = "oil_number"
+			position = {x=430 y=25}
+			text = "oil_number"
+			font = "hoi_30header"
+			maxWidth = 110
+			maxHeight = 20
+			format = centre
+		}
+		iconType = { 
+			name = "state_back"
+			spriteType ="GFX_oil_state_back"
+			position = {x = 445 y = 425}  
+		}
+		containerWindowType = {  
+			name = "Oil_crisis_country_window"
+			position = { x =90 y = 426 } 	
+			size = { width=350 height=111 }
+			
+			clipping = yes
+
+			verticalScrollbar = "right_vertical_slider"
+
+			margin = {
+				left=-15
+                right = -10
+				top= 5
+				bottom = -120 
+			}
+ 
+			background = { 
+				name = "oil_1back"
+				quadTextureSprite ="GFX_oil_country_back"
+				position = {x = -10 y = 0}  
+			}
+			iconType = { 
+				name = "oil_11back"
+				spriteType ="GFX_oil_country_color_back"
+				position = {x = 13 y = -10}  
+			}
+			buttonType = { 
+				name = "Oil_crisis_ENL_button"
+				size = {width = 100% height = 100%}  
+				spriteType = "GFX_Oil_crisis_ENL_button"
+				position = { x = 15 y = -8 }
+				pdx_tooltip = "Oil_crisis_TT" 
+			} 
+			buttonType = { 
+				name = "Oil_crisis_SHW_button"
+				size = {width = 100% height = 100%}  
+				spriteType = "GFX_Oil_crisis_ENL_button"
+				position = { x = 15 y = 41 }
+				pdx_tooltip = "Oil_crisis_TT" 
+			} 
+			buttonType = { 
+				name = "Oil_crisis_AOX_button"
+				size = {width = 100% height = 100%}  
+				spriteType = "GFX_Oil_crisis_ENL_button"
+				position = { x = 15 y = 89 }
+				pdx_tooltip = "Oil_crisis_TT" 
+			}
+			buttonType = { 
+				name = "Oil_crisis_UBS_button"
+				size = {width = 100% height = 100%}  
+				spriteType = "GFX_Oil_crisis_ENL_button"
+				position = { x = 15 y = 135 }
+				pdx_tooltip = "Oil_crisis_TT" 
+			}
+			buttonType = { 
+				name = "Oil_crisis_HEL_button"
+				size = {width = 100% height = 100%}  
+				spriteType = "GFX_Oil_crisis_ENL_button"
+				position = { x = 15 y = 183 }
+				pdx_tooltip = "Oil_crisis_TT" 
+			}
+			buttonType = { 
+				name = "Oil_crisis_BNA_button"
+				size = {width = 100% height = 100%}  
+				spriteType = "GFX_Oil_crisis_ENL_button"
+				position = { x = 15 y = 230 }
+				pdx_tooltip = "Oil_crisis_TT" 
+			}
+			instantTextboxType = {
+				name = "ENL_number"
+				position = {x=50 y=10}
+				text = "ENL_number"
+				font = "hoi_18mbs"
+				maxWidth = 280
+				maxHeight = 20
+				format = centre
+			}
+			instantTextboxType = {
+				name = "SHW_number"
+				position = {x=50 y=60}
+				text = "SHW_number"
+				font = "hoi_18mbs"
+				maxWidth = 280
+				maxHeight = 20
+				format = centre  
+			}
+			instantTextboxType = {
+				name = "AOX_number" 
+				position = {x=50 y=105}
+				text = "AOX_number"
+				font = "hoi_18mbs"
+				maxWidth = 280       
+				maxHeight = 20
+				format = centre
+			}
+			instantTextboxType = {
+				name = "UBS_number"
+				position = {x=50 y=150}
+				text = "UBS_number"
+				font = "hoi_18mbs"
+				maxWidth = 280 
+				maxHeight = 20 
+				format = centre
+			}
+			instantTextboxType = {
+				name = "HEL_number"
+				position = {x=50 y=195}
+				text = "HEL_number"
+				font = "hoi_18mbs"
+				maxWidth = 280
+				maxHeight = 20
+				format = centre     
+			}    
+			instantTextboxType = {
+				name = "BNA_number"
+				position = {x=50  y=245}
+				text = "BNA_number"
+				font = "hoi_18mbs"
+				maxWidth = 280
+				maxHeight = 20
+				format = centre
+			}
 		}
 	}
 }
