@@ -1,4 +1,4 @@
-﻿capital = 835
+﻿capital = 610
 
 oob = "DUQ_1920"
 
@@ -47,8 +47,10 @@ recruit_character = DUQ_Duan_QiRui
 		
 	}
 	create_faction = WangXi
-    puppet = SXX
-	puppet = WSP
+	add_to_faction = HNZ
+	add_to_faction = WSP
+	add_to_faction = FTX
+	add_to_faction = ZHX
 
 set_politics = {
 	ruling_party = Conservatism

@@ -97,3 +97,7 @@ set_popularities = {
 	Conservatism = 89
 	Revolutionism = 5
 }
+set_autonomy = {
+	target = KOT
+	autonomy_state = autonomy_integrated_puppet
+}

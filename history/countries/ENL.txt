@@ -122,13 +122,15 @@ early_ship_hull_heavy = 1
 		autonomy_state = autonomy_reichsprotectorate
 	}
 
-give_guarantee = YEM
+
 give_guarantee = KAT
-give_guarantee = SLY
 give_guarantee = MEX
 give_guarantee = EYJ
 give_guarantee = YEL
 give_guarantee = AFH
+give_guarantee = XIL
+give_guarantee = LWO
+give_guarantee = VAN
 set_politics = {
 	ruling_party = Liberalism
 	last_election = "1918.11.11"
