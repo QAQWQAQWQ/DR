@@ -88,6 +88,7 @@ early_ship_hull_heavy = 1
 	set_autonomy = { target = YDA autonomy_state = autonomy_colony }
 	set_autonomy = { target = NAF autonomy_state = autonomy_dominion }
 	set_autonomy = { target = ESG autonomy_state = autonomy_colony }
+	
 	set_autonomy = {
 		target = CNA
 		autonomy_state = autonomy_dominion
@@ -106,21 +107,15 @@ early_ship_hull_heavy = 1
 		target = XXL
 		autonomy_state = autonomy_dominion
 	}
-
-	set_autonomy = {
-		target = TRO
-		autonomy_state = autonomy_reichsprotectorate
-	}
 	
-	set_autonomy = {
-		target = SLY
-		autonomy_state = autonomy_reichsprotectorate
-	}
-
-	set_autonomy = {
-		target = YEM
-		autonomy_state = autonomy_reichsprotectorate
-	}
+	puppet = TRO
+	puppet = SLY
+	puppet = YEM
+	puppet = ICD
+	puppet = TOR
+	puppet = DAS
+	puppet = KOC
+	
 
 
 give_guarantee = KAT
@@ -131,6 +126,10 @@ give_guarantee = AFH
 give_guarantee = XIL
 give_guarantee = LWO
 give_guarantee = VAN
+give_guarantee = KWT
+give_guarantee = KAT
+give_guarantee = TSL
+give_guarantee = NIC
 set_politics = {
 	ruling_party = Liberalism
 	last_election = "1918.11.11"
