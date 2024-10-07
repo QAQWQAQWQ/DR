@@ -4,11 +4,27 @@ spriteTypes = {
 		texturefile = "gfx/building/state_0.dds"
 	}
 	spriteType = {
+		name = "GFX_state_2"
+		texturefile = "gfx/building/state_2.dds"
+	}
+	spriteType = {
+		name = "GFX_state_4"
+		texturefile = "gfx/building/state_4.dds"
+	}
+	spriteType = {
 		name = "GFX_state_16"
 		texturefile = "gfx/building/state_16.dds"
 	}
 	spriteType = {
 		name = "GFX_state_64"
 		texturefile = "gfx/building/state_64.dds"
+	}
+	spriteType = {
+		name = "GFX_state_126"
+		texturefile = "gfx/building/state_126.dds"
+	}
+	spriteType = {
+		name = "GFX_state_195"
+		texturefile = "gfx/building/state_195.dds"
 	}
 } 
