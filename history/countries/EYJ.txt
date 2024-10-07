@@ -62,32 +62,23 @@ set_popularities = {
 	Revolutionism = 5
 }
 
-set_autonomy = {
-	target = JBS
-	autonomy_state = autonomy_reichsprotectorate
-}
-
-set_autonomy = {
-	target = NZS
-	autonomy_state = autonomy_reichsprotectorate
-}
 
 set_autonomy = {
 	target = KWT
-	autonomy_state = autonomy_integrated_puppet
+	autonomy_state = autonomy_dominion
 }
-
-set_autonomy = {
-	target = KAT
-	autonomy_state = autonomy_integrated_puppet
-}
+puppet = JBS
+puppet = NZS
+puppet = KAT
+puppet = SNX
+puppet = TSL
 
 set_autonomy = {
 	target = ROY
-	autonomy_state = autonomy_integrated_puppet
+	autonomy_state = autonomy_dominion
 }
 
 set_autonomy = {
 	target = TRT
-	autonomy_state = autonomy_integrated_puppet
+	autonomy_state = autonomy_dominion
 }

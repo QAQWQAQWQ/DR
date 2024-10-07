@@ -2,7 +2,7 @@ state={
 	id=752
 	name="STATE_752"
 	provinces={
-		1918 7988 8104 10903 12724 12837 4999
+		1918 7988 10903 12724 12837 4999
 	}
 	resources={
 		grain=16
@@ -11,8 +11,8 @@ state={
 	buildings_max_level_factor=1.000
 	state_category = pastoral
 	history={
-		owner = SCX
-		add_core_of = SCX
+		owner = SSD
+		add_core_of = SSD
 		victory_points = {
 			4999 1
 		}

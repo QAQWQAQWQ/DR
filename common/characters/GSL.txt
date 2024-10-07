@@ -1,32 +1,16 @@
 characters={
-	FTX_YanYuTing={
-		name=FTX_YangYuTing
+	GSL_ZhangGuangJian={
+		name=GSL_ZhangGuangJian
 		portraits={
 			army={
-				large="gfx/leaders/FTX/portrait_YangYuTing.tga"
+				large="gfx/leaders/GSL/portrait_ZhangGuangJian.tga"
 			}
 		}
 		country_leader={
-			ideology=Nationalism_Conservatism
+			ideology=Authoritarianism_Conservatism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
-		}
-	}
-	FTX_YangYuTing2={
-		name=FTX_YangYuTing2
-		portraits={
-			army={
-				large="gfx/leaders/FTX/portrait_YangYuTing.tga"
-			}
-		}
-		corps_commander={
-			traits={ career_officer }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=2
 		}
 	}
 	}
