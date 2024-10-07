@@ -1,0 +1,34 @@
+
+state={
+	id=1103
+	name="STATE_1103"
+	manpower = 681390
+	
+	state_category = town
+	resources={
+		grain=3
+	}
+	resources={
+		oil=5
+	}
+
+	history={
+		owner = EYJ
+		add_core_of = EYJ
+		victory_points = {
+			2089 5 
+		}
+		buildings = {
+			infrastructure = 3
+			2089 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		78 2089 7977 12046 12726
+	}
+
+	local_supplies=6.0 
+}

@@ -2,9 +2,9 @@
 state={
 	id=454
 	name="STATE_454" #Palestine
-	manpower = 933142
+	manpower = 1399142
 	
-	state_category = rural
+	state_category = town
 	resources={
 		grain=12
 	}
@@ -20,18 +20,21 @@ state={
 			}
 		}
 		victory_points = {
+			1065 1 
+		}
+		victory_points = {
 			1086 1 
 		}
 		victory_points = {
 			4206 1 
 		}
 		victory_points = {
-			1065 1 
+			7151 1 
 		}
 	}
 
 	provinces={
-		1015 1065 1086 1201 4088 4206 7107 7176 11970 1
+		1065 1086 1201 4088 4206 7107 7151 7170
 	}
 
 	local_supplies=0.0 
