@@ -1,4 +1,4 @@
-﻿capital = 912
+﻿capital = 283
 
 oob = "GSL_1920"
 
@@ -13,18 +13,7 @@ set_technology = {
 }
 
 
-recruit_character = FTX_YanYuTing
-recruit_character = FTX_Zhang_Zongchang
-recruit_character = FTX_Chupufu
-recruit_character = FTX_Nieka
-recruit_character = FTX_XuYuanQuan
-recruit_character = FTX_BiSuCheng
-recruit_character = FTX_Chenguorui
-recruit_character = FTX_HeFu
-recruit_character = FTX_Mark_leniko
-recruit_character = FTX_Kostrov
-recruit_character = FTX_YangYuTing2
-
+recruit_character = GSL_ZhangGuangJian
 
 
 
@@ -61,13 +50,13 @@ recruit_character = FTX_YangYuTing2
 		
 	}
 set_politics = {
-	ruling_party = Reactionary
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 set_popularities = {
-	Reactionary = 100
+	Conservatism = 100
 }
 add_ideas={
 #law
