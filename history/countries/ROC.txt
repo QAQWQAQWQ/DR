@@ -1,4 +1,4 @@
-﻿capital = 592
+﻿capital = 909
 
 oob = "ROC_1920"
 
@@ -55,6 +55,7 @@ recruit_character = ROC_ZhangZhiZhong
 	create_faction = ROC_faction
     add_to_faction = WUP
 	add_to_faction = XJC
+	add_to_faction = SCX
 set_politics = {
 	ruling_party = Reformism
 	last_election = "1918.11.11"
