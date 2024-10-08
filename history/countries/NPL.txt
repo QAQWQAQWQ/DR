@@ -50,7 +50,7 @@ recruit_character = NPL_Charles_Maurras
 recruit_character = NPL_Louis_Emile_Clement_Georges_Bernanos
 recruit_character = NPL_Jacques_Maritain
 create_faction = Bonaparte_family_alliance
-
+add_to_faction = RDN
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -93,7 +93,6 @@ set_politics = {
 
 
 
-puppet=RDN
 
 add_ideas={
 NPL_Declining_trend

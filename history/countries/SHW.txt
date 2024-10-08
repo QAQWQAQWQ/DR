@@ -356,6 +356,11 @@ set_autonomy = {
 }
 
 set_autonomy = {
+	target = PBL
+	autonomy_state = autonomy_colony
+}
+
+set_autonomy = {
 	target = TGA
 	autonomy_state = autonomy_colony
 }
@@ -363,7 +368,6 @@ puppet = KKE
 puppet = EOB
 puppet = YED
 puppet = MEG
-puppet = LMN
 
 set_autonomy = {
 	target = FEL
@@ -436,3 +440,4 @@ SHW_Vladimir_Gurko_H
 }
 give_guarantee = YEL
 give_guarantee = AFH
+give_guarantee = LMN
