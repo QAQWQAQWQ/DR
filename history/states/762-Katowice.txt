@@ -11,15 +11,16 @@ state={
 	}
 	state_category = city
 	history={
+		owner = WWS
+		add_core_of = WWS
+		add_core_of = PBL
 		victory_points = {
 			6464 5
 		}
-		owner = WWS
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 1
 		}
-		add_core_of = WWS
 	}
 
 	local_supplies=0.0 

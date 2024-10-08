@@ -1,0 +1,23 @@
+
+state={
+	id=1102
+	name="STATE_1102"
+	manpower = 93200
+	
+	state_category = pastoral
+	history={
+		owner = AAA
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			11976 1 
+		}
+	}
+
+	provinces={
+		1544 4562 4574 4591 4603 7001 8101 11976 12455
+	}
+
+	local_supplies=0.0 
+}

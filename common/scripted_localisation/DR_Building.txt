@@ -5,12 +5,12 @@ defined_text = {
 		trigger = {
 		state = FROM
 		NOT={
-			FROM={
-				state = 16
-			}
-			FROM={
-				state = 64
-			}
+			FROM={state = 16}
+			FROM={state = 64}
+			FROM={state = 2}
+			FROM={state = 126}
+			FROM={state = 4}
+			FROM={state = 195}
 		}	
 		}
 	}
@@ -21,9 +21,33 @@ defined_text = {
 		}
 	}
 	text = { 
+		localization_key = GFX_state_2
+		trigger = {
+			state = 2
+		}
+	}
+	text = { 
+		localization_key = GFX_state_4
+		trigger = {
+			state = 4
+		}
+	}
+	text = { 
 		localization_key = GFX_state_16
 		trigger = {
 			state = 16
+		}
+	}
+	text = { 
+		localization_key = GFX_state_126
+		trigger = {
+			state = 126
+		}
+	}
+	text = { 
+		localization_key = GFX_state_195
+		trigger = {
+			state = 195
 		}
 	}
 }
@@ -33,6 +57,36 @@ defined_text = {
 		localization_key = state_16desc
 		trigger = {
 				state = 16
+		}
+	}
+	text = { 
+		localization_key = state_2desc
+		trigger = {
+				state = 2
+		}
+	}
+	text = { 
+		localization_key = state_4desc
+		trigger = {
+				state = 4
+		}
+	}
+	text = { 
+		localization_key = state_64desc
+		trigger = {
+				state = 64
+		}
+	}
+	text = { 
+		localization_key = state_126desc
+		trigger = {
+				state = 126
+		}
+	}
+	text = { 
+		localization_key = state_195desc
+		trigger = {
+				state = 195
 		}
 	}
 }

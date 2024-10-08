@@ -108,18 +108,10 @@ set_autonomy = { target = KLD autonomy_state = autonomy_Crown_Territory }
 set_autonomy = { target = DMT autonomy_state = autonomy_Crown_Territory }
 set_autonomy = { target = KOH autonomy_state = autonomy_Crown_Territory }
 
-set_autonomy = {
-	target = ALB
-	autonomy_state = autonomy_reichsprotectorate
-}
-set_autonomy = {
-	target = HES
-	autonomy_state = autonomy_reichsprotectorate
-}
-set_autonomy = {
-	target = SIW
-	autonomy_state = autonomy_reichsprotectorate
-}
+puppet = ALB
+puppet = HES
+puppet = SIW
+
 add_manpower = 5250000
 
 
@@ -148,3 +140,4 @@ set_popularities = {
 	Reactionary = 5
 	Conservatism = 65
 }
+give_guarantee = LMN

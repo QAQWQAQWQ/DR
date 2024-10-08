@@ -7,6 +7,8 @@ state={
 	state_category = rural
 	history={
 		owner = WWS
+		add_core_of = WWS
+		add_core_of = PBL
 		victory_points = {
 			279 1
 		}
@@ -14,7 +16,6 @@ state={
 			infrastructure = 3
 			arms_factory = 1
 		}
-        add_core_of = WWS
 	}
 
 	provinces={
