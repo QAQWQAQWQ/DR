@@ -356,6 +356,11 @@ set_autonomy = {
 }
 
 set_autonomy = {
+	target = PBL
+	autonomy_state = autonomy_colony
+}
+
+set_autonomy = {
 	target = TGA
 	autonomy_state = autonomy_colony
 }
