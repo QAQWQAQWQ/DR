@@ -6,11 +6,14 @@ state={
 		
 	}
 	history={
+		owner = PBL
+		add_core_of = PBL
+		victory_points = {
+			402 1
+		}
 		victory_points = {
 			11399 1 
 		}
-		owner = PBL
-		add_core_of = PBL
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -21,7 +24,7 @@ state={
 	}
 
 	provinces={
-		3521 3559 6484 6580 9452 9521 9544 11399 11466 
+		402 3521 3559 6484 9521 9544 11399
 	}
 	manpower=2464600
 	buildings_max_level_factor=1.000
