@@ -197,14 +197,14 @@ guiTypes = {
 			clipping = no
 					
 			
-					instantTextboxType = {
-						name = "ideology"
-						position = { x = 6 y = 22 }
-						font = "vic_18"
-						text = "ideology"
-						maxWidth = 105
-						maxHeight = 20
-					}
+					#instantTextboxType = {
+					#	name = "ideology"
+					#	position = { x = 6 y = 22 }
+					#	font = "vic_18"
+					#	text = "ideology"
+					#	maxWidth = 105
+					#	maxHeight = 20
+					#}
 
 					instantTextboxType = {
 						name = "elections"

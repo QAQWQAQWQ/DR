@@ -1,7 +1,6 @@
 ideologies = {
-	
+	####革命主义###
 	Revolutionism = {
-	
 		types = {
 			Authoritarianism_revolutionism={}
 			Nationalism_revolutionism={}
@@ -12,13 +11,9 @@ ideologies = {
 			Agrarianism_revolutionism={}
 			Revolutionary_populism={}
 		}
-		
 		dynamic_faction_names = {
-			
 		}
-		
 		color = { 226 0 9  }
-		
 		rules = {
 			can_create_collaboration_government =no
 			can_declare_war_on_same_ideology =yes
@@ -29,22 +24,16 @@ ideologies = {
 			can_only_justify_war_on_threat_country = yes
 			can_guarantee_other_ideologies = yes
 		}
-		
 		can_host_government_in_exile = yes
-		
 		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
 		faction_impact_on_world_tension = 0.1
-		
 		modifiers = {
-			
 		}
-		
 		faction_modifiers = {
-		
 		}
 	}
+	####改良主义###
 	Reformism = {
-	
 		types = {
 			Social_Reformism={}
 			Democracy_Reformism={}
@@ -53,13 +42,9 @@ ideologies = {
 			Bernstein_Reformism={}
 			Three_People_Principles_Reformism={color = { 36 56 154 }}
 		}
-		
 		dynamic_faction_names = {
-			
 		}
-		
 		color = { 178 82 107 }
-		
 		rules = {
 			can_create_collaboration_government =no
 			can_declare_war_on_same_ideology =yes
@@ -70,20 +55,15 @@ ideologies = {
 			can_only_justify_war_on_threat_country = yes
 			can_guarantee_other_ideologies = yes
 		}
-		
 		can_host_government_in_exile = yes
-		
 		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
 		faction_impact_on_world_tension = 0.1
-		
 		modifiers = {
-			
 		}
-		
 		faction_modifiers = {
-		
 		}
 	}
+	####保守主义###
 	Conservatism = {
 	
 		types = {
@@ -125,6 +105,7 @@ ideologies = {
 		
 		}
 	}
+	####自由主义###
 	Liberalism = {
 	
 		types = {
@@ -165,6 +146,7 @@ ideologies = {
 		
 		}
 	}
+	####反动主义###
 	Reactionary = {
 	
 		types = {
@@ -204,6 +186,7 @@ ideologies = {
 		
 		}
 	}
+	####无政府主义###
 	Anarchism = {
 	
 		types = {
@@ -242,11 +225,12 @@ ideologies = {
 		
 		}
 	}
-	###
+	###专制独裁##
 	Authoritarian_dictatorship = {
 	
 		types = {
 			military_government={}
+			Monarchy_government={}
 		}
 		
 		dynamic_faction_names = {
@@ -279,18 +263,15 @@ ideologies = {
 		
 		}
 	}
+	###家长制##
 	Paternalism = {
 	
 		types = {
 			Paternalism_type={}
 		}
-		
 		dynamic_faction_names = {
-			
 		}
-		
 		color = { 49 49 49 }
-		
 		rules = {
 			can_create_collaboration_government =no
 			can_declare_war_on_same_ideology =yes
@@ -301,32 +282,22 @@ ideologies = {
 			can_only_justify_war_on_threat_country = yes
 			can_guarantee_other_ideologies = yes
 		}
-		
 		can_host_government_in_exile = yes
-		
 		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
 		faction_impact_on_world_tension = 0.1
-		
 		modifiers = {
-			
 		}
-		
 		faction_modifiers = {
-		
 		}
 	}
+	###极端民族主义###
 	Ultranationalism = {
-	
 		types = {
 			Ultranationalism_type={}
 		}
-		
 		dynamic_faction_names = {
-			
 		}
-		
 		color = { 81 64 85 }
-		
 		rules = {
 			can_create_collaboration_government =no
 			can_declare_war_on_same_ideology =yes
@@ -337,18 +308,12 @@ ideologies = {
 			can_only_justify_war_on_threat_country = yes
 			can_guarantee_other_ideologies = yes
 		}
-		
 		can_host_government_in_exile = yes
-		
 		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
 		faction_impact_on_world_tension = 0.1
-		
 		modifiers = {
-			
 		}
-		
 		faction_modifiers = {
-		
 		}
 	}
 }
