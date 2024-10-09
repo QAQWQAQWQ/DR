@@ -89,3 +89,8 @@ set_autonomy = {
 	target = ROY
 	autonomy_state = autonomy_dominion
 }
+
+set_autonomy = {
+	target = KOC
+	autonomy_state = autonomy_puppet
+}

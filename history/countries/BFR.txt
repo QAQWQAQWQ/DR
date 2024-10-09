@@ -11,7 +11,7 @@ set_technology = {
 	fuel_silos = 1
 }
 
-recruit_character = BFR_William_Stephens
+recruit_character = NTS_Northern_Tribal_Alliance
 
 	set_technology = {
 		interwar_artillery = 1
@@ -47,14 +47,13 @@ recruit_character = BFR_William_Stephens
 	}
 
 set_politics = {
-	ruling_party = Liberalism
+	ruling_party = Authoritarian_dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
-add_ideas = {BFR_thriving_free_market}
+
 set_popularities = {
-	Liberalism = 55
-	Conservatism = 10
-	Reformism = 35
+	Authoritarian_dictatorship = 70
+	Paternalism = 30
 }
