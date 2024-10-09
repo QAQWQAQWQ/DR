@@ -66,10 +66,11 @@ set_popularities = {
 
 puppet = JBS
 puppet = NZS
-puppet = KWT
-puppet = KAT
-puppet = SNX
-puppet = TSL
+
+set_autonomy = {
+	target = SNX
+	autonomy_state = autonomy_dominion
+}
 
 set_autonomy = {
 	target = ROY

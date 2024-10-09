@@ -19,21 +19,18 @@ news_event = {
 		add_political_power = -50
 	    add_stability = -0.05
 		FTX={
-			FTX_Zhang_Zongchang = { set_nationality = GSL }
-			FTX_YangYuTing2 = { set_nationality = GSL }
+			FTX_Zhang_Zongchang = { set_nationality = FTX }
+			FTX_YangYuTing2 = { set_nationality = FTX }
 	}	
-	GSL= { transfer_state = 912 }
+	
 	    }
 	option = {
 			name = FTX.1.b
 			FTX={
-				FTX_Zhang_Zongchang = { set_nationality = GSL }
-			    FTX_YangYuTing2 = { set_nationality = GSL }
+				FTX_Zhang_Zongchang = { set_nationality = FTX }
+			    FTX_YangYuTing2 = { set_nationality = FTX }
 			}
-			GSL= { 
-				transfer_state = 912 
-			}
-			GSL={change_tag_from = ROOT}
+			
 			}
 	}
 

@@ -107,14 +107,27 @@ early_ship_hull_heavy = 1
 		target = XXL
 		autonomy_state = autonomy_dominion
 	}
-	
-	puppet = TRO
-	puppet = SLY
-	puppet = YEM
-	puppet = ICD
-	puppet = TOR
-	puppet = DAS
-	puppet = KOC
+
+	set_autonomy = {
+		target = TRO
+		autonomy_state = autonomy_reichsprotectorate
+	}
+
+	set_autonomy = {
+		target = SLY
+		autonomy_state = autonomy_reichsprotectorate
+	}
+
+	set_autonomy = {
+		target = YEM
+		autonomy_state = autonomy_reichsprotectorate
+	}
+
+	set_autonomy = {
+		target = KOC
+		autonomy_state = autonomy_reichsprotectorate
+	}
+
 	
 
 

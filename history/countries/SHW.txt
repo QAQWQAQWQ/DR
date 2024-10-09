@@ -352,21 +352,26 @@ set_politics = {
 }
 set_autonomy = {
 	target = GGA
-	autonomy_state = autonomy_colony
+	autonomy_state = autonomy_reichskommissariat
 }
 
 set_autonomy = {
 	target = PBL
-	autonomy_state = autonomy_colony
+	autonomy_state = autonomy_reichskommissariat
 }
 
 set_autonomy = {
 	target = TGA
-	autonomy_state = autonomy_colony
+	autonomy_state = autonomy_reichskommissariat
 }
+
+set_autonomy = {
+	target = YED
+	autonomy_state = autonomy_satellite
+}
+
 puppet = KKE
 puppet = EOB
-puppet = YED
 puppet = MEG
 
 set_autonomy = {
