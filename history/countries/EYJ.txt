@@ -76,6 +76,11 @@ set_autonomy = {
 }
 
 set_autonomy = {
+	target = NTS
+	autonomy_state = autonomy_puppet
+}
+
+set_autonomy = {
 	target = SNX
 	autonomy_state = autonomy_dominion
 }
