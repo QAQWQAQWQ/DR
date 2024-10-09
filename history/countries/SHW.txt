@@ -367,16 +367,27 @@ set_autonomy = {
 
 set_autonomy = {
 	target = YED
-	autonomy_state = autonomy_satellite
+	autonomy_state = autonomy_puppet
 }
-
-puppet = KKE
-puppet = EOB
-puppet = MEG
 
 set_autonomy = {
 	target = FEL
 	autonomy_state = autonomy_personal_union
+}
+
+set_autonomy = {
+	target = KKE
+	autonomy_state = autonomy_reichsprotectorate
+}
+
+set_autonomy = {
+	target = EOB
+	autonomy_state = autonomy_reichsprotectorate
+}
+
+set_autonomy = {
+	target = MEG
+	autonomy_state = autonomy_reichsprotectorate
 }
 
 set_autonomy = {
