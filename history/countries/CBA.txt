@@ -20,11 +20,11 @@ recruit_character = CBA_Sisowath
 set_politics = {
 	ruling_party = Authoritarian_dictatorship
 	#领导该国家的派系，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
-	last_election = 1936.1.1
+	last_election = 1919.1.1
 	#最后一次选举（"年.月.日" （p社sb代码，无法早于该日期））
 	election_frequency = 48
 	#选举间隔（48为默认）
-	elections_allowed = 
+	elections_allowed = yes
 	#是否允许公众选举（no或者yes）
 }
 set_popularities = {
