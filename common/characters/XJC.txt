@@ -22,7 +22,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Authoritarianism_Conservatism
+			ideology=Three_People_Principles_Reformism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -36,7 +36,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=National_Three_People_Principles
+			ideology=Nationalism_Conservatism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -58,7 +58,8 @@ characters={
 			id=-1
 		}
 	}
-XJC_YangZengXin={
+	
+    XJC_YangZengXin={
 		name=XJC_YangZengXin
 		portraits={
 			civilian={
@@ -72,6 +73,7 @@ XJC_YangZengXin={
 			id=-1
 		}
 	}
+	
 	XJC_jinshuren={
 		name=XJC_jinshuren
 		portraits={
@@ -86,4 +88,33 @@ XJC_YangZengXin={
 			id=-1
 		}
 	}		
+	XJC_FengTeMing={
+		name=XJC_FengTeMing
+		portraits={
+			civilian={
+				large="gfx/leaders/XJC/portrait_FengTeMing.tga"
+			}
+		}
+		country_leader={
+			ideology=Three_Principles_People_Liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	XJC_HaoKeQuan={
+		name=XJC_HaoKeQuan
+		portraits={
+			civilian={
+				large="gfx/leaders/XJC/portrait_HaoKeQuan.tga"
+			}
+		}
+		country_leader={
+			ideology=Three_Principles_People_Liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
 	}
