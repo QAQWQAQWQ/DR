@@ -14,8 +14,8 @@ set_stability = 0.7
 set_war_support = 0.7
 #设置战争支持度
 
-recruit_character = BEL_Leon_Delacroix
-#获取领导人，将领（在common\characters\你的国家tag）
+recruit_character = 
+# 获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {
 	ruling_party = Liberalism
@@ -35,6 +35,5 @@ set_popularities = {
 }
 
 add_ideas = {
-	BEL_Ruins_Belgium
 }
 #添加民族精神（在common\ideas\你的国家tag_country.txt）

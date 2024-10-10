@@ -1,22 +1,19 @@
 
 state={
 	id=446
-	name="STATE_446" # Suez
-	manpower = 131732
-	state_category = wasteland
+	name="STATE_446" # Manipur
+	manpower = 671000
+	state_category = rural
 
 	history={
+		owner = YDA
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 		}
-		
-		owner = EYJ
-		add_core_of = EYJ
-
 	}
 
 	provinces={
-		9947
+		1581
 	}
 
 	buildings_max_level_factor=1.000

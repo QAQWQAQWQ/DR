@@ -6,16 +6,12 @@ state={
 		
 	}
 	history={
-		owner = PBL
+		owner = SHW
+		add_core_of = SHW
 		add_core_of = PBL
+		add_core_of = BLR
 		victory_points = {
 			11301 3
-		}
-		victory_points = {
-			3393 3
-		}
-		victory_points = {
-			3254 1
 		}
 		buildings = {
 			infrastructure = 3
@@ -27,7 +23,7 @@ state={
 	}
 
 	provinces={
-		290 11274 11301 11329 11357 
+		290 347 11247 11301
 	}
 	manpower=757200
 	buildings_max_level_factor=1.000
