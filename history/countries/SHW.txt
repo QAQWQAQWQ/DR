@@ -356,11 +356,6 @@ set_autonomy = {
 }
 
 set_autonomy = {
-	target = PBL
-	autonomy_state = autonomy_reichskommissariat
-}
-
-set_autonomy = {
 	target = TGA
 	autonomy_state = autonomy_reichskommissariat
 }
@@ -457,3 +452,4 @@ SHW_Vladimir_Gurko_H
 give_guarantee = YEL
 give_guarantee = AFH
 give_guarantee = LMN
+give_guarantee = ASI

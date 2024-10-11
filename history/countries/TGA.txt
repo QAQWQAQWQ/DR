@@ -60,3 +60,8 @@ add_ideas = {
 set_popularities = {
 	Conservatism = 100
 }
+
+set_autonomy = {
+	target = KEI
+	autonomy_state = autonomy_reichskommissariat
+}

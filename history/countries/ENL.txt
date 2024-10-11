@@ -120,7 +120,7 @@ early_ship_hull_heavy = 1
 	}
 	
 	set_autonomy = {
-		target = BFR
+		target = MSS
 		autonomy_state = autonomy_reichsprotectorate
 	}
 	
@@ -138,7 +138,7 @@ give_guarantee = XIL
 give_guarantee = LWO
 give_guarantee = VAN
 give_guarantee = NIC
-give_guarantee = ICD
+give_guarantee = CBA
 set_politics = {
 	ruling_party = Liberalism
 	last_election = "1918.11.11"
