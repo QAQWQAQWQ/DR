@@ -73,6 +73,58 @@ ideologies = {
 		faction_modifiers = {
 		}
 	}
+	####温和社会主义###
+	Moderate_socialism = {
+		types = {
+			Moderate_socialism_type={}
+		}
+		dynamic_faction_names = {
+		}
+		color = { 170 0 44 }
+		rules = {
+			can_create_collaboration_government =no
+			can_declare_war_on_same_ideology =yes
+			can_force_government=no
+			can_send_volunteers=yes
+			can_puppet=yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		modifiers = {
+		}
+		faction_modifiers = {
+		}
+	}
+	####激进社会主义###
+	Radical_socialism = {
+		types = {
+			Radical_socialism_type={}
+		}
+		dynamic_faction_names = {
+		}
+		color = { 166 0 6 }
+		rules = {
+			can_create_collaboration_government =no
+			can_declare_war_on_same_ideology =yes
+			can_force_government=no
+			can_send_volunteers=yes
+			can_puppet=yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		modifiers = {
+		}
+		faction_modifiers = {
+		}
+	}
 	####改良主义###
 	Reformism = {
 		types = {
