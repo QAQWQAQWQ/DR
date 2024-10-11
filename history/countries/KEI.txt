@@ -13,7 +13,6 @@ set_technology = {
 }
 
 recruit_character = KEI_Carl_Gustaf_Emil_Mannerheim
-
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -44,10 +43,7 @@ set_politics = {
 	elections_allowed = no
 }
 add_ideas = {
-
-
 #law
-
 closed_economy
 atheism
 Traditional_conservatism
@@ -59,8 +55,7 @@ low_industrialization
 completely_illiterate
 Smallholder_economy
 }
+
 set_popularities = {
-	Paternalism = 70
-	Authoritarian_dictatorship = 20
-	Conservatism = 10
+	Paternalism = 100
 }
