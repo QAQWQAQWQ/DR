@@ -40,7 +40,7 @@ ideologies = {
 		}
 	}
 	
-	####革命主义###
+	####革命社会主义###
 	Revolutionism = {
 		types = {
 			Authoritarianism_revolutionism={}
@@ -76,7 +76,7 @@ ideologies = {
 	####温和社会主义###
 	Moderate_socialism = {
 		types = {
-			Moderate_socialism_type={}
+			Moderate_socialism={}
 		}
 		dynamic_faction_names = {
 		}
@@ -102,7 +102,7 @@ ideologies = {
 	####激进社会主义###
 	Radical_socialism = {
 		types = {
-			Radical_socialism_type={}
+			Radical_socialism={}
 		}
 		dynamic_faction_names = {
 		}
@@ -246,6 +246,7 @@ ideologies = {
 	Paternalism = {
 	
 		types = {
+			Paternalism={}
 			Edinogism = {}
 		}
 		dynamic_faction_names = {
@@ -271,12 +272,13 @@ ideologies = {
 	}
 	
 	###专制独裁主义#
-	Authoritarian_dictatorship = {
+	Dictatorship = {
 	
 		types = {
-			Authoritarian_dictatorship = {}
+			Dictatorship = {}
 			military_government={}
 			Monarchy_government={}
+			Edinogist_Colonial_Government = {}
 		}
 		
 		dynamic_faction_names = {
@@ -314,7 +316,7 @@ ideologies = {
 	Reactionary = {
 	
 		types = {
-			Mixed_Nationalism = {}
+			Hybrid_Nationalism = {}
 			DAnnunziaism_Reactionary={}
 			Populism_Reactionary={}
 			Syndicalism_Reactionary={}

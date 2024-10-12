@@ -1,6 +1,6 @@
 ﻿l_simp_chinese:
- Revolutionism_drift:0 "革命主义理念每日新增支持率"
- Revolutionism_acceptance:0 "革命主义外交接纳度"
+ Revolutionism_drift:0 "革命社会主义理念每日新增支持率"
+ Revolutionism_acceptance:0 "革命社会主义外交接纳度"
  Reformism_drift:0 "改良主义理念每日新增支持率"
  Reformism_acceptance:0 "改良主义外交接纳度"
  Conservatism_drift:0 "保守主义理念每日新增支持率"
@@ -12,24 +12,24 @@
  Anarchism_drift:0 "无政府主义理念每日新增支持率"
  Anarchism_acceptance:0 "无政府主义外交接纳度"
 
- Authoritarian_dictatorship_drift:0 "专制主义理念每日新增支持率"
- Authoritarian_dictatorship_acceptance:0 "专制主义外交接纳度"
+ Dictatorship_drift:0 "专制主义理念每日新增支持率"
+ Dictatorship_acceptance:0 "专制主义外交接纳度"
  Ultranationalism_drift:0 "极端民族主义理念每日新增支持率"
  Ultranationalism_acceptance:0 "极端民族主义外交接纳度"
  Paternalism_drift:0 "家长主义理念每日新增支持率"
  Paternalism_acceptance:0 "家长主义外交接纳度"
 ###母意识形态
- Revolutionism:0 "革命主义"
- Revolutionism_noun:0 "革命主义"
- Revolutionism_desc:0 "民主集中制"
+ Revolutionism:0 "革命社会主义"
+ Revolutionism_noun:0 "革命社会主义"
+ Revolutionism_desc:0 "革命社会主义政府"
 
- Radical_socialism:0 "革命主义"
- Radical_socialism_noun:0 "革命主义"
- Radical_socialism_desc:0 "民主集中制"
+ Radical_socialism:0 "激进社会主义"
+ Radical_socialism_noun:0 "激进社会主义"
+ Radical_socialism_desc:0 "激进社会主义政府"
 
- Moderate_socialism:0 "革命主义"
- Moderate_socialism_noun:0 "革命主义"
- Moderate_socialism_desc:0 "民主集中制"
+ Moderate_socialism:0 "温和社会主义"
+ Moderate_socialism_noun:0 "温和社会主义"
+ Moderate_socialism_desc:0 "温和社会主义政府"
 
  Reformism:0 "改良主义"
  Reformism_noun:0 "改良主义"
@@ -51,9 +51,9 @@
  Anarchism_noun:0 "无政府主义"
  Anarchism_desc:0 "无政府"
 
- Authoritarian_dictatorship:0 "专制独裁主义"
- Authoritarian_dictatorship_noun:0 "专制主义"
- Authoritarian_dictatorship_desc:0 "专制独裁政府"
+ Dictatorship:0 "专制独裁主义"
+ Dictatorship_noun:0 "专制独裁主义"
+ Dictatorship_desc:0 "专制独裁政府"
 
  Paternalism:0 "家长制"
  Paternalism_noun:0 "家长制"
@@ -73,7 +73,11 @@
  Autonomismism_Anarchism:0 "社区无政府主义"
  Autonomismism_Anarchism_desc:0 "§Y社区无政府主义§!\n国家及其国家机器的概念，在不同人眼里有不同的见解。而对于无政府主义者们来讲，国家机器意味着少数人对多数人的暴力专政，代表着等级制度和压迫，代表着旧秩序的延续。因此，这些站在时代风口浪尖的人们大胆提出了一种抛弃现有国家机器模式，以一种全新的方式塑造社会的，激进而浪漫的意识形态——无政府主义。无政府主义者们信奉一种“最完善的社会，乃是无政府而有秩序”的原则。他们从工人群众自发性震荡旧秩序的行为中看到了对未来社会的展望。而这些作为等级社会最底层的劳动阶级，则不能通过政党或是国家组织来代表其行使权力。必须让劳动阶级自发地团结起来，形成一个个新的自发性的社会组织体系，进而形成一种抛弃政党政治和国家机器的社会模式。在经济上，无政府主义者们提倡平等自治的去中心化经济模式，他们相信这种方式能够避免历史上发生过的一切不平等和剥削再次在新社会产生。因其大胆而激进的主张，无政府主义在这个时代难免会招来一些批评。老练的革命家们批评无政府主义是“小资产阶级的自发倾向”，而保守派们则嘲笑无政府主义是不切实际的狂想。但这又如何呢？当黑旗在旧世界的上空升起时，那些压迫者们将会感受到人民千百年来的怒火。而无政府主义者们则会带领他们，喊出那句发自肺腑的口号：“没有神，也没有主人。”"
 
-##革命主义 
+####激进社会主义
+ Radical_socialism:0 "激进社会主义"
+ Radical_socialism_desc:0 ""
+
+##革命社会主义 
  Authoritarianism_revolutionism:0 "专政革命主义"
  Authoritarianism_revolutionism_desc:0 "§Y专政革命主义§!\n专政革命主义是一种主张由特定的阶级或人群领导，并由这类人群进行权力分配及执政的革命意识形态。通常来讲，专政革命主义一般出现在革命条件尚未成熟，却因为历史作用而不得不发生革命的国家或地区。这类革命通常尚未能够发展出符合现状的革命纲领。因此，为了维护稚嫩的革命果实不受反动派反攻倒算，必须通过专政的手段对一切阻碍革命的力量进行清理与制裁。因此，专政革命主义与其说是一种意识形态，不如说是一种为了保护革命的必要手段。尽管如此，出于各种各样的原因，比如未接受过充足的理论指导和革命教育，也有一部分人认为革命并不是一蹴而就的，而是要在很长段时间内维持专政革命的状态。这种情况下，如果无法适时发展出一种符合实际情况的革命主义理论，那么专政革命主义就有滑向革命反面的风险。"
 
@@ -96,6 +100,10 @@
 
  Agrarianism_revolutionism:0 "农业社会主义"
  Agrarianism_revolutionism_desc:0 "§Y农业社会主义§!\n现代资本主义和工业催生了无产阶级，并使其登上历史舞台。但是在繁荣的城市之外，尚有广袤的田野，以及几千年来供养着全人类的劳动者一一农民。因此，当革命的风吹向那些尚未迈入工业社会的古老国度时，农业社会主义便在古老的土壤里结出了新世界的果实。农业社会主义，正如同其名字一样，一般流行于那些尚未完成工业化，农业生产依然占主流的国家。在这些国家当中，城市无产阶级的力量往往不足以独立进行无产阶级革命，因此必须与农村的广大劳动者进行有机的结合，从而进行符合最广大人民群众利益的，打倒大资产阶级和封建地主阶级的革命，并彻底改变以往带来诸多苦难的土地私有制。尽管带有“农业”二字.并且植根于土地之上。但农业社会主义者不是什么要倒退回原始文明的卢德主义者。相反，他们深知现代工业是如何彻底改变农业这一人类沿袭上千年的职业。因此，农业社会主义者并不排斥工业化，相反，他们还鼓励工业化的成果往农业资源倾斜。毕竟锄头抡冒烟了都不可能比拖拉机快。"
+
+####温和社会主义
+ Moderate_socialism:0 "温和社会主义"
+ Moderate_socialism_desc:0 ""
 
 
 ##改良主义
@@ -146,16 +154,18 @@
 
 
 ####专制独裁主义
- Authoritarian_dictatorship:0 "专制独裁主义"
- Authoritarian_dictatorship_desc:0 ""
+ Dictatorship:0 "专制独裁主义"
+ Dictatorship_desc:0 ""
  military_government:0 "军政独裁"
  military_government_desc:0 ""
  Monarchy_government:0 "绝对君主制"
  Monarchy_government_desc:0 ""
+ Edinogist_Colonial_Government:0 "归一主义殖民地"
+ Edinogist_Colonial_Government_desc:0 ""
 
 ##混合民族主义
- Mixed_Nationalism:0 "混合民族主义"
- Mixed_Nationalism_desc:0 ""
+ Hybrid_Nationalism:0 "混合民族主义"
+ Hybrid_Nationalism_desc:0 ""
  DAnnunziaism_Reactionary:0 "邓楠遮主义"
  DAnnunziaism_Reactionary_desc:0 ""
  Populism_Reactionary:0 "极端民粹主义"

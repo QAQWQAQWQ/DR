@@ -32,7 +32,7 @@ recruit_character = YED_Alexander_I
 	add_ideas = {secondary_school }
 	set_autonomy = {
 		target = TEQ
-		autonomy_state = autonomy_reichskommissariat
+		autonomy_state = autonomy_supervised_state
 	}
 set_politics = {
 	ruling_party = Conservatism

@@ -352,17 +352,12 @@ set_politics = {
 }
 set_autonomy = {
 	target = GGA
-	autonomy_state = autonomy_reichskommissariat
+	autonomy_state = autonomy_supervised_state
 }
 
 set_autonomy = {
 	target = TGA
-	autonomy_state = autonomy_reichskommissariat
-}
-
-set_autonomy = {
-	target = YED
-	autonomy_state = autonomy_puppet
+	autonomy_state = autonomy_supervised_state
 }
 
 set_autonomy = {
@@ -393,6 +388,12 @@ set_autonomy = {
 	target = ARA
 	autonomy_state = autonomy_personal_union
 }
+
+set_autonomy = {
+	target = KEI
+	autonomy_state = autonomy_supervised_state
+}
+
 country_event = { id = SHW_event.1 days = 94 }
 country_event = { id = SHW_event.34 days = 374 }
 country_event = { id = SHW_event.34 days = 674 }

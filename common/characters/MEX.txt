@@ -13,5 +13,20 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+	}
+	MEX_Venustiano_Carranza={
+		name=MEX_Venustiano_Carranza
+		portraits={
+			civilian={
+				large="gfx/leaders/MEK/Portrait_Venustiano_Carranza.tga"
+			}
+		}
+		country_leader={
+			ideology=Dictatorship
+			desc = MEX_Francisco_Madero_desc
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
 	}		
 	}

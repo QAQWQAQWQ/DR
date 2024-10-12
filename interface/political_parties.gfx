@@ -9,10 +9,10 @@ spriteTypes = {
 	}
 	spriteType = { 
 		name = "GFX_ideology_National_populism_group" 
-		texturefile = "gfx/interface/ideologies/Mixed_Nationalism.dds"
+		texturefile = "gfx/interface/ideologies/Hybrid_Nationalism.dds"
 	}
 	spriteType = { 
-		name = "GFX_ideology_Authoritarian_dictatorship_group" 
+		name = "GFX_ideology_Dictatorship_group" 
 		texturefile = "gfx/interface/ideologies/Autocratic_Dictatorship.dds"
 	}
 	spriteType = { 
@@ -33,7 +33,7 @@ spriteTypes = {
 	}
 	spriteType = { 
 		name = "GFX_ideology_Reactionary_group" 
-		texturefile = "gfx/interface/ideologies/national_populist_group.dds"
+		texturefile = "gfx/interface/ideologies/Hybrid_Nationalism.dds"
 	}
 	spriteType = { 
 		name = "GFX_ideology_Anarchism_group" 

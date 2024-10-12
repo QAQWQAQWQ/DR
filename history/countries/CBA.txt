@@ -18,7 +18,7 @@ recruit_character = CBA_Sisowath
 #获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {
-	ruling_party = Authoritarian_dictatorship
+	ruling_party = Dictatorship
 	#领导该国家的派系，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
 	last_election = 1919.1.1
 	#最后一次选举（"年.月.日" （p社sb代码，无法早于该日期））
@@ -28,7 +28,7 @@ set_politics = {
 	#是否允许公众选举（no或者yes）
 }
 set_popularities = {
-	Authoritarian_dictatorship = 100
+	Dictatorship = 100
 }
 
 add_ideas = {

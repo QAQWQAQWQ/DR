@@ -232,9 +232,9 @@ defined_text = {
     }
 }
 	text = {
-		 localization_key = Authoritarian_dictatorship_desc
+		 localization_key = Dictatorship_desc
     trigger = {
-	 has_government = Authoritarian_dictatorship
+	 has_government = Dictatorship
     }
 }
 }
