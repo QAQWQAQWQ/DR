@@ -2320,7 +2320,7 @@ bosnia_war_end = yes
 		}
 		completion_reward = {
 			add_popularity = {
- 				ideology = Reactionary
+ 				ideology = Nationalism
     			popularity = -0.1
 			}
 			custom_effect_tooltip = less_ger_sup
@@ -2367,7 +2367,7 @@ bosnia_war_end = yes
 		completion_reward = {
 				add_stability = -0.05
 				add_popularity = {
- 					ideology = Reactionary
+ 					ideology = Nationalism
     				popularity = -1
 				}
 				custom_effect_tooltip = less_ger_sup_20

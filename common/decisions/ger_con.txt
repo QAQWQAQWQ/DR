@@ -951,7 +951,7 @@ ger_con_decisions = {
           
           DOS = {
             start_civil_war = {
-              ideology = Reactionary
+              ideology = Nationalism
               size = 0.3
               capital = 946
               states = { 65 946 }
@@ -974,7 +974,7 @@ ger_con_decisions = {
           random_other_country = {
             limit = {
               original_tag = DOS
-              has_government = Reactionary
+              has_government = Nationalism
             }
             promote_character = DOS_Carl_Eduard
             load_oob = "sax_war_pre"
@@ -1004,7 +1004,7 @@ ger_con_decisions = {
       random_other_country = {
         limit = {
               original_tag = DOS
-              has_government = Reactionary
+              has_government = Nationalism
         }
         DOS = {
            annex_country = { target = PREV transfer_troops = no }

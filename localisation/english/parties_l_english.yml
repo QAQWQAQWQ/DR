@@ -7,8 +7,8 @@
  Conservatism_acceptance:0 "Conservatism diplomatic acceptance"
  Liberalism_drift:0 "Daily additions of support for liberal ideas"
  Liberalism_acceptance:0 "Liberalism diplomatic acceptance"
- Reactionary_drift:0 "Reactionary Ideas Add Daily Support"
- Reactionary_acceptance:0 "Reactionary diplomatic acceptance"
+ Nationalism_drift:0 "Nationalism Ideas Add Daily Support"
+ Nationalism_acceptance:0 "Nationalism diplomatic acceptance"
  Anarchism_drift:0 "Daily additions of support for anarchist ideas"
  Anarchism_acceptance:0 "Anarchist Diplomatic Acceptance"
 ##Mother Ideology
@@ -24,9 +24,9 @@
  Liberalism:0 "Liberalism"
  Liberalism_noun:0 "Liberalism"
  Liberalism_desc:0 "Open Democracy"
- Reactionary:0 "third position"
- Reactionary_noun:0 "third position"
- Reactionary_desc:0 "centralized government"
+ Nationalism:0 "third position"
+ Nationalism_noun:0 "third position"
+ Nationalism_desc:0 "centralized government"
  Anarchism:0 "Anarchism"
  Anarchism_noun:0 "Anarchism"
  Anarchism_desc:0 "Anarchy"
@@ -58,7 +58,7 @@
  Agrarianism_revolutionism_desc:0 "Modern capitalism and industry have given birth to the proletariat and brought it to the stage of history. But beyond the thriving cities lie the vast fields and the laborers who for thousands of years have fed all mankind, the peasants. Therefore, when the winds of revolution were blowing in those ancient countries that had not yet entered the industrial world, agrarian socialism produced the fruits of the new world in the ancient soil. Agrarian socialism, as its name suggests, was popular in countries where industrialization had not yet been completed and where agricultural production was still dominant. In these countries, the urban proletariat is often not strong enough to carry out a proletarian revolution on its own, and must therefore organically combine with the masses of workers in the countryside in order to carry out a revolution in the interests of the broadest possible masses of the people to defeat the big bourgeoisie and the feudal landlords and to completely change the system of private ownership of land, which has brought about so much misery in the past. Despite the word "agriculture". and rooted in the land. But agrarian socialists were not Luddites who wanted to regress to a primitive civilization. On the contrary, they understand how modern industry has revolutionized agriculture, a profession that has been practiced by mankind for thousands of years. Therefore, agrarian socialists do not reject industrialization; on the contrary, they encourage the fruits of industrialization to be tilted toward agricultural resources. After all, a hoe swung smoking can't be faster than a tractor."
 
 
-##Modernism
+##Reformism
  Social_Reformism:0 "Social Democracy"
  Social_Reformism_desc:0 "."
  Democracy_Reformism:0 "Democratic Socialism"
@@ -73,8 +73,10 @@
 
 
 ##Conservatism
- Classicism_Conservatism:0 "Classical Conservatism"
- Classicism_Conservatism:0 ""
+ Semi-Constitutional_Monarchy:0 "Semi-Constitutional Monarchy"
+ Semi-Constitutional_Monarchy_desc:0 ""
+ Classical_Conservatism:0 "Classical Conservatism"
+ Classical_Conservatism_desc:0 ""
  Authoritarianism_Conservatism:0 "Authoritarian Conservatism"
  Authoritarianism_Conservatism:0 ""
  Religiousness_Conservatism:0 "Religious Conservatism"
@@ -92,17 +94,17 @@
  Progressivism_Liberalism:0 "Progressive Liberalism"
  Progressivism_Liberalism_desc:0 ""
 
-##Reactionism ##
- Hybrid_Nationalism:0 "Hybrid Nationalism"
+##Hybrid_Nationalism ##
+ Hybrid_Nationalism:0 "Hybrid_Nationalism"
  Hybrid_Nationalism_desc:0 ""
- DAnnunziaism_Reactionary:0 "Dunnunziaism"
- DAnnunziaism_Reactionary_desc:0 ""
- Populism_Reactionary:0 "extreme populism"
- Populism_Reactionary_desc:0 ""
- Syndicalism_Reactionary:0 "National Labor Unionism"
- Syndicalism_Reactionary_desc:0 ""
- Militarism_Reactionary:0 "militarism"
- Militarism_Reactionary_desc:0 ""
+ DAnnunziaism:0 "Dunnunziaism"
+ DAnnunziaism_desc:0 ""
+ National_Populism:0 "extreme populism"
+ National_Populism_desc:0 ""
+ National_Syndicalism:0 "National Labor Unionism"
+ National_Syndicalism_desc:0 ""
+ National_Militarism:0 "militarism"
+ National_Militarism_desc:0 ""
 
 ##Anarchism
  Syndicalism_Anarchism:0 "Revolutionary Labor Unionism"
@@ -168,8 +170,8 @@ BRA_Reformism_party_long:0 "Brazilian Labor Party"
 BRA_Revolutionism_party:0 "Brazilian Communist Party"
 BRA_Revolutionism_party_long:0 "Communist Party of Brazil"
 
-BRA_Reactionary:0 "Pious Church"
-BRA_Reactionary_desc:0 "Brazilian Japanese "devotional church""
+BRA_Nationalism:0 "Pious Church"
+BRA_Nationalism_desc:0 "Brazilian Japanese "devotional church""
 
 ITE_Conservatism_party:0 "Savoy Dynasty"
 ITE_Conservatism_party_long:0 "Savoy Dynasty"

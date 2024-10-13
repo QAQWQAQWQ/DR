@@ -23,7 +23,7 @@ recruit_character = MDS_Raja_Sir_Panaganti_Ramarayaningar
 	}
 
 set_politics = {
-	ruling_party = Reactionary
+	ruling_party = Nationalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -32,6 +32,6 @@ set_politics = {
 set_popularities = {
 	Liberalism = 5
 	Conservatism= 10
-	Reactionary = 80
+	Nationalism = 80
 	Revolutionism = 5
 }

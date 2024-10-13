@@ -24,7 +24,7 @@ characters={ #skilled_staffer #Lieutenant_general
 			}
 		}
 		country_leader={
-			ideology=Classicism_Conservatism
+			ideology=Semi-Constitutional_Monarchy
 			desc=SHW_NicholasII_desc
 			traits={ autocratic_imperialist }
 			expire="1965.1.1.1"
@@ -39,7 +39,7 @@ characters={ #skilled_staffer #Lieutenant_general
 			}
 		}
 		country_leader={
-			ideology=Classicism_Conservatism
+			ideology=Semi-Constitutional_Monarchy
 			#desc=SHW_NicholasII_desc
 			traits={  }
 			expire="1965.1.1.1"
@@ -195,7 +195,7 @@ characters={ #skilled_staffer #Lieutenant_general
 			}
 		}
 		country_leader={
-			ideology=Populism_Reactionary
+			ideology=National_Populism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -927,7 +927,7 @@ SHW_Nikolai_Romanov={
 	logistics_skill=2
 }
 country_leader={
-	ideology=Classicism_Conservatism
+	ideology=Semi-Constitutional_Monarchy
 	#desc=SHW_NicholasII_desc
 	traits={  }
 	expire="1965.1.1.1"
