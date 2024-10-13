@@ -74,9 +74,9 @@ ideologies = {
 		}
 	}
 	####温和社会主义###
-	Moderate_socialism = {
+	Moderate_Socialism = {
 		types = {
-			Moderate_socialism={}
+			Moderate_Socialism={}
 		}
 		dynamic_faction_names = {
 		}
@@ -100,9 +100,9 @@ ideologies = {
 		}
 	}
 	####激进社会主义###
-	Radical_socialism = {
+	Radical_Socialism = {
 		types = {
-			Radical_socialism={}
+			Radical_Socialism={}
 		}
 		dynamic_faction_names = {
 		}
@@ -250,6 +250,7 @@ ideologies = {
 		types = {
 			Paternalism={}
 			Edinogism = {}
+			Edinogist_Colonial_Government = {}
 		}
 		dynamic_faction_names = {
 		}
@@ -280,7 +281,6 @@ ideologies = {
 			Dictatorship = {}
 			Military_Dictatorship={}
 			Absolute_Monarchy={}
-			Edinogist_Colonial_Government = {}
 		}
 		
 		dynamic_faction_names = {

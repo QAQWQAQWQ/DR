@@ -11,7 +11,7 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-recruit_character = HBR_GuiFu
+recruit_character = 
 
 	set_technology = {
 		interwar_artillery = 1
@@ -59,5 +59,7 @@ add_ideas = {
 	Smallholder_economy
 }
 set_popularities = {
-	Conservatism = 100
+	Conservatism = 40
+	Liberalism = 30
+	Revolutionism = 30
 }

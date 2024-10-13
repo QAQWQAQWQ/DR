@@ -37,7 +37,7 @@ recruit_character = KEI_Carl_Gustaf_Emil_Mannerheim
 	}
 	
 set_politics = {
-	ruling_party = Dictatorship
+	ruling_party = Paternalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -57,5 +57,5 @@ Smallholder_economy
 }
 
 set_popularities = {
-	Dictatorship = 100
+	Paternalism = 100
 }
