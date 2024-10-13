@@ -50,7 +50,7 @@ recruit_character = TEQ_Loannis_Metaxas
 	}
 
 set_politics = {
-	ruling_party = Dictatorship
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -64,6 +64,6 @@ Private_economy
 TEQ_religious_conflict
 }
 set_popularities = {
-	Dictatorship = 70
-	Paternalism = 30
+	Conservatism = 70
+	Liberalism = 30
 }
