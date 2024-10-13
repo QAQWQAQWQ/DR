@@ -4,9 +4,9 @@ ideologies = {
 	Anarchism = {
 	
 		types = {
-			Syndicalism_Anarchism={}
-			Communist_Anarchism={}
-			Autonomismism_Anarchism={}
+			Syndicalist_Anarchism={}
+			Anarchist_Communism={}
+			Community_Anarchism={}
 		}
 		
 		dynamic_faction_names = {
@@ -43,14 +43,14 @@ ideologies = {
 	####革命社会主义###
 	Revolutionism = {
 		types = {
-			Authoritarianism_revolutionism={}
-			Nationalism_revolutionism={}
-			Socialism_revolutionism={}
-			Scientism_revolutionism={}
-			Leninism_revolutionism={}
-			Commissionism_revolutionism={}
-			Agrarianism_revolutionism={}
-			Revolutionary_populism={}
+			Revolutionary_Socialism={}
+			Authoritarian_Socialism={}
+			National_Communism={}
+			Scientific_Socialism={}
+			Leninism={}
+			Council_Socialism={}
+			Agrarian_Socialism={}
+			Populist_Socialism={}
 		}
 		dynamic_faction_names = {
 		}
@@ -128,10 +128,10 @@ ideologies = {
 	####改良主义###
 	Reformism = {
 		types = {
-			Social_Reformism={}
-			Democracy_Reformism={}
-			Fabian_Reformism={}
-			Trade_Reformism={}
+			Social_Democracy={}
+			Democratic_Socialism={}
+			Fabian_Socialism={}
+			Union_Socialism={}
 			Bernstein_Reformism={}
 			Moderate_New_San-Min_Doctrine={color = { 36 56 154 }}
 		}
@@ -161,10 +161,10 @@ ideologies = {
 	Liberalism = {
 	
 		types = {
-			Socialism_Liberalism={}
-			Classicism_Liberalism={}
+			Social_Liberalism={}
+			Classical_Liberalism={}
 			Conservative_Liberalism={}
-			Progressivism_Liberalism={}
+			Progressive_Liberalism={}
 			Welfare_San-Min_Doctrine={color = { 36 56 154 }}
 		}
 		
@@ -205,9 +205,9 @@ ideologies = {
 		types = {
 			Semi-Constitutional_Monarchy={}
 			Classical_Conservatism={}
-			Authoritarianism_Conservatism={}
-			Religiousness_Conservatism={}
-			Nationalism_Conservatism={}
+			Authoritarian_Conservatism={}
+			Religious_Conservatism={}
+			National_Conservatism={}
 			Conservative_populism={}
 			Conservative_San-Min_Doctrine={color = { 36 56 154 }}
 		}
