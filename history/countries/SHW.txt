@@ -398,6 +398,7 @@ set_autonomy = {
 	target = HAQ
 	autonomy_state = autonomy_wtt_imperial_protectorate
 }
+puppet = YED
 
 country_event = { id = SHW_event.1 days = 94 }
 country_event = { id = SHW_event.34 days = 374 }
