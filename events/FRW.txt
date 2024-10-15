@@ -29,7 +29,7 @@ country_event = {
 			character = FRW_Geoffrey_Trollope_Lee
 			promote_leader = yes
 			country_leader = {
-				ideology = Religiousness_Conservatism
+				ideology = Religious_Conservatism
 				expire = "1965.1.1.1"
 				traits = {}
 			}
@@ -74,7 +74,7 @@ country_event = {
 		kill_country_leader = yes
 		promote_character = {
 			character = FRW_Comite_communal
-			ideology = Authoritarianism_revolutionism
+			ideology = Authoritarian_Socialism
 		}
 		set_politics = {
 			ruling_party = Revolutionism
@@ -106,7 +106,7 @@ country_event = {
 		mark_focus_tree_layout_dirty = yes
 		promote_character = {
 			character = FRW_Gustave_Herve
-			ideology = Nationalism_revolutionism
+			ideology = National_Communism
 		}
 		set_politics = {
 			ruling_party = Revolutionism
@@ -197,7 +197,7 @@ country_event = {
 			character = FRW_Edouard_Berth
 			promote_leader = yes
 			country_leader = {
-				ideology = Syndicalism_Anarchism
+				ideology = Syndicalist_Anarchism
 				expire = "1965.1.1.1"
 				traits = {  }
 			}
@@ -1075,14 +1075,14 @@ country_event = {
 			character = FRW_Leon_Blum
 			promote_leader = yes
 			country_leader = {
-				ideology = Democracy_Reformism
+				ideology = Democratic_Socialism
 				expire = "1965.1.1.1"
 				traits = { }
 			}
 		}
 		promote_character = {
 			character = FRW_Leon_Blum
-			ideology = Democracy_Reformism
+			ideology = Democratic_Socialism
 		}
 		ROOT={
 			mark_focus_tree_layout_dirty = yes
@@ -1153,7 +1153,7 @@ country_event = {
 			character = FRW_Marcel_Cachin
 			promote_leader = yes
 			country_leader = {
-				ideology = Authoritarianism_revolutionism
+				ideology = Authoritarian_Socialism
 				expire = "1965.1.1.1"
 				#traits = { }
 			}

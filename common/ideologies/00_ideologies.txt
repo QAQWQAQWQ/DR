@@ -4,9 +4,9 @@ ideologies = {
 	Anarchism = {
 	
 		types = {
-			Syndicalism_Anarchism={}
-			Communist_Anarchism={}
-			Autonomismism_Anarchism={}
+			Syndicalist_Anarchism={}
+			Anarchist_Communism={}
+			Community_Anarchism={}
 		}
 		
 		dynamic_faction_names = {
@@ -40,17 +40,17 @@ ideologies = {
 		}
 	}
 	
-	####革命主义###
+	####革命社会主义###
 	Revolutionism = {
 		types = {
-			Authoritarianism_revolutionism={}
-			Nationalism_revolutionism={}
-			Socialism_revolutionism={}
-			Scientism_revolutionism={}
-			Leninism_revolutionism={}
-			Commissionism_revolutionism={}
-			Agrarianism_revolutionism={}
-			Revolutionary_populism={}
+			Revolutionary_Socialism={}
+			Authoritarian_Socialism={}
+			National_Communism={}
+			Scientific_Socialism={}
+			Leninism={}
+			Council_Socialism={}
+			Agrarian_Socialism={}
+			Populist_Socialism={}
 		}
 		dynamic_faction_names = {
 		}
@@ -74,9 +74,9 @@ ideologies = {
 		}
 	}
 	####温和社会主义###
-	Moderate_socialism = {
+	Moderate_Socialism = {
 		types = {
-			Moderate_socialism_type={}
+			Moderate_Socialism={}
 		}
 		dynamic_faction_names = {
 		}
@@ -100,9 +100,9 @@ ideologies = {
 		}
 	}
 	####激进社会主义###
-	Radical_socialism = {
+	Radical_Socialism = {
 		types = {
-			Radical_socialism_type={}
+			Radical_Socialism={}
 		}
 		dynamic_faction_names = {
 		}
@@ -128,12 +128,12 @@ ideologies = {
 	####改良主义###
 	Reformism = {
 		types = {
-			Social_Reformism={}
-			Democracy_Reformism={}
-			Fabian_Reformism={}
-			Trade_Reformism={}
+			Social_Democracy={}
+			Democratic_Socialism={}
+			Fabian_Socialism={}
+			Union_Socialism={}
 			Bernstein_Reformism={}
-			Three_People_Principles_Reformism={color = { 36 56 154 }}
+			Moderate_New_San-Min_Doctrine={color = { 36 56 154 }}
 		}
 		dynamic_faction_names = {
 		}
@@ -161,11 +161,13 @@ ideologies = {
 	Liberalism = {
 	
 		types = {
-			Socialism_Liberalism={}
-			Classicism_Liberalism={}
+			Social_Liberalism={}
+			Classical_Liberalism={}
 			Conservative_Liberalism={}
-			Progressivism_Liberalism={}
-			Three_Principles_People_Liberalism={color = { 36 56 154 }}
+			Progressive_Liberalism={}
+			Progressive_Warlord = {}
+			Welfare_San-Min_Doctrine={color = { 36 56 154 }}
+			Constitutional_San-Min_Doctrine={color = { 36 56 154 }}
 		}
 		
 		dynamic_faction_names = {
@@ -203,12 +205,14 @@ ideologies = {
 	Conservatism = {
 	
 		types = {
-			Classicism_Conservatism={}
-			Authoritarianism_Conservatism={}
-			Religiousness_Conservatism={}
-			Nationalism_Conservatism={}
-			Conservative_populism={}
-			Three_People_Principles_Conservatism={color = { 36 56 154 }}
+			Semi-Constitutional_Monarchy={}
+			Classical_Conservatism={}
+			Authoritarian_Conservatism={}
+			Religious_Conservatism={}
+			National_Conservatism={}
+			Populist_Conservatism={}
+			Semi-Democratic_Colonization = {}
+			Conservative_San-Min_Doctrine={color = { 36 56 154 }}
 		}
 		
 		dynamic_faction_names = {
@@ -246,7 +250,11 @@ ideologies = {
 	Paternalism = {
 	
 		types = {
+			Paternalism={}
 			Edinogism = {}
+			Edinogist_Colonization = {}
+			Gelaohui_Order = {}
+			Paternalist_Civilian_Government = {}
 		}
 		dynamic_faction_names = {
 		}
@@ -270,13 +278,19 @@ ideologies = {
 		}
 	}
 	
-	###专制独裁主义#
-	Authoritarian_dictatorship = {
+	###专制主义#
+	Dictatorship = {
 	
 		types = {
-			Authoritarian_dictatorship = {}
-			military_government={}
-			Monarchy_government={}
+			Dictatorship = {}
+			Military_Dictatorship={}
+			Absolute_Monarchy={}
+			Warlord_Dictatorship = {}
+			Autocratic_Colonization = {}
+			Colonization_Assimilation = {}
+			Absolute_Theocracy = {}
+			Theocracy-Aristocracy_Dictatorship = {}
+			Civilian_Dictatorship = {}
 		}
 		
 		dynamic_faction_names = {
@@ -311,14 +325,14 @@ ideologies = {
 	}
 	
 	####混合民族主义###
-	Reactionary = {
+	Nationalism = {
 	
 		types = {
-			Mixed_Nationalism = {}
-			DAnnunziaism_Reactionary={}
-			Populism_Reactionary={}
-			Syndicalism_Reactionary={}
-			Militarism_Reactionary={}
+			Hybrid_Nationalism = {}
+			DAnnunziaism={}
+			National_Populism={}
+			National_Syndicalism={}
+			National_Militarism={}
 		}
 		
 		dynamic_faction_names = {
@@ -355,7 +369,7 @@ ideologies = {
 	###极端民族主义###
 	Ultranationalism = {
 		types = {
-			Ultranationalism_type={}
+			Ultranationalism={}
 		}
 		dynamic_faction_names = {
 		}

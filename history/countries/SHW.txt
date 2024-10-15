@@ -352,17 +352,12 @@ set_politics = {
 }
 set_autonomy = {
 	target = GGA
-	autonomy_state = autonomy_reichskommissariat
+	autonomy_state = autonomy_supervised_state
 }
 
 set_autonomy = {
 	target = TGA
-	autonomy_state = autonomy_reichskommissariat
-}
-
-set_autonomy = {
-	target = YED
-	autonomy_state = autonomy_puppet
+	autonomy_state = autonomy_supervised_state
 }
 
 set_autonomy = {
@@ -393,6 +388,18 @@ set_autonomy = {
 	target = ARA
 	autonomy_state = autonomy_personal_union
 }
+
+set_autonomy = {
+	target = KEI
+	autonomy_state = autonomy_supervised_state
+}
+
+set_autonomy = {
+	target = HAQ
+	autonomy_state = autonomy_reichsprotectorate
+}
+puppet = YED
+
 country_event = { id = SHW_event.1 days = 94 }
 country_event = { id = SHW_event.34 days = 374 }
 country_event = { id = SHW_event.34 days = 674 }
@@ -400,7 +407,7 @@ country_event = { id = SHW_event.34 days = 974 }
 country_event = { id = SHW_event.34 days = 1274 }
 country_event = { id = SHW_event.34 days = 1574 }
 set_popularities = {
-	Reactionary = 6
+	Nationalism = 6
 	Conservatism = 59
 	Reformism = 3
 	Reformism = 6

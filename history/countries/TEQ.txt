@@ -15,7 +15,6 @@ set_technology = {
 
 
 recruit_character = TEQ_Loannis_Metaxas
-recruit_character = TEQ_Mehmed_VI
 
 	set_technology = {
 		interwar_artillery = 1
@@ -65,8 +64,6 @@ Private_economy
 TEQ_religious_conflict
 }
 set_popularities = {
-	Liberalism = 5
-	Reactionary = 1
-	Conservatism = 89
-	Revolutionism = 5
+	Conservatism = 70
+	Liberalism = 30
 }

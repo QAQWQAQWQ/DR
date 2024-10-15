@@ -196,9 +196,9 @@ defined_text = {
 }
 }
     text = {
-		 localization_key = Reactionary_desc
+		 localization_key = Nationalism_desc
     trigger = {
-	 has_government = Reactionary
+	 has_government = Nationalism
 }
 }
     text = {
@@ -208,9 +208,9 @@ defined_text = {
 }
 }    
 	text = {
-		 localization_key = Reactionary_desc
+		 localization_key = Nationalism_desc
     trigger = {
-	 has_government = Reactionary
+	 has_government = Nationalism
     }
 }
 	text = {
@@ -232,9 +232,9 @@ defined_text = {
     }
 }
 	text = {
-		 localization_key = Authoritarian_dictatorship_desc
+		 localization_key = Dictatorship_desc
     trigger = {
-	 has_government = Authoritarian_dictatorship
+	 has_government = Dictatorship
     }
 }
 }

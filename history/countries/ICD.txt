@@ -46,7 +46,7 @@ add_ideas = {
 
 }
 set_politics = {
-	ruling_party = Authoritarian_dictatorship
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -57,6 +57,6 @@ Basic_industrialization
 Private_economy
 }
 set_popularities = {
-	Authoritarian_dictatorship = 70
+	Dictatorship = 70
 	Paternalism = 30
 }

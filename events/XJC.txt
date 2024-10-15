@@ -129,7 +129,7 @@ country_event  = {
 		name = XJC.4.a
 		promote_character = {
 			character = XJC_FangYaoNan
-			ideology = Authoritarianism_Conservatism
+			ideology = Authoritarian_Conservatism
 		}
 		set_politics = {
 			ruling_party = Conservatism
@@ -152,7 +152,7 @@ country_event  = {
 		name = XJC.5.a
 		promote_character = {
 			character = XJC_YangZangXu
-			ideology = Nationalism_Conservatism
+			ideology = National_Conservatism
 		}
 		set_politics = {
 			ruling_party = Conservatism

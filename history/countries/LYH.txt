@@ -48,7 +48,7 @@ set_politics = {
 }
 
 set_popularities = {
-	Reactionary = 15
+	Nationalism = 15
 	Revolutionism = 80
 	Conservatism = 5
 }
@@ -57,7 +57,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Rosa_Luxemburg.tga"
 	expire = "1965.1.1"
-	ideology = Scientism_revolutionism
+	ideology = Scientific_Socialism
 	traits = {
 		
 	}

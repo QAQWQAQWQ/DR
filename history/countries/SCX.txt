@@ -12,17 +12,17 @@ set_technology = {
 	fuel_silos = 1
 }
 
+recruit_character = SCX_YingCanHen
+recruit_character = SCX_LiuChunHou
 recruit_character = SCX_XiongKeWu
+recruit_character = SCX_LiuWengHui
 recruit_character = SCX_LiuXiang
 recruit_character = SCX_WangZhanXu
 recruit_character = SCX_WangLingJi
 recruit_character = SCX_YangSheng
 recruit_character = SCX_TianSongYao
-recruit_character = SCX_LiuChunHou
-recruit_character = SCX_LiuWengHui
 recruit_character = SCX_LaiXinHui
 recruit_character = SCX_LiuBoCheng
-recruit_character = SCX_YingCanHen
 recruit_character = SCX_Deng_XiHou
 recruit_character = SCX_YangSuKan
 recruit_character = SCX_ZhangLan
@@ -61,7 +61,7 @@ recruit_character = SCX_WuYuZhang
 	}
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Paternalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -92,10 +92,8 @@ add_ideas = {
 	SCX_Dooka_Army
 }
 set_popularities = {
-	Liberalism = 5
-	Reactionary = 1
-	Conservatism = 89
-	Revolutionism = 5
+	Paternalism = 80
+	Dictatorship = 20
 }
 set_autonomy = {
 	target = SSD

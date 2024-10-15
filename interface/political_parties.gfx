@@ -9,10 +9,10 @@ spriteTypes = {
 	}
 	spriteType = { 
 		name = "GFX_ideology_National_populism_group" 
-		texturefile = "gfx/interface/ideologies/Mixed_Nationalism.dds"
+		texturefile = "gfx/interface/ideologies/Hybrid_Nationalism.dds"
 	}
 	spriteType = { 
-		name = "GFX_ideology_Authoritarian_dictatorship_group" 
+		name = "GFX_ideology_Dictatorship_group" 
 		texturefile = "gfx/interface/ideologies/Autocratic_Dictatorship.dds"
 	}
 	spriteType = { 
@@ -32,55 +32,59 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/Liberalism.dds"
 	}
 	spriteType = { 
-		name = "GFX_ideology_Reactionary_group" 
-		texturefile = "gfx/interface/ideologies/national_populist_group.dds"
+		name = "GFX_ideology_Nationalism_group" 
+		texturefile = "gfx/interface/ideologies/Hybrid_Nationalism.dds"
 	}
 	spriteType = { 
 		name = "GFX_ideology_Anarchism_group" 
 		texturefile = "gfx/interface/ideologies/Anarchism.dds"
 	}
 	spriteType = { 
-		name = "GFX_ideology_Democracy_Reformism" 
-		texturefile = "gfx/interface/ideologies/Democracy_Reformism.dds"
+		name = "GFX_ideology_Democratic_Socialism" 
+		texturefile = "gfx/interface/ideologies/Democratic_Socialism.dds"
 	}
 	spriteType = { 
-		name = "GFX_ideology_Fabian_Reformism" 
-		texturefile = "gfx/interface/ideologies/Fabian_Reformism.dds"
+		name = "GFX_ideology_Fabian_Socialism" 
+		texturefile = "gfx/interface/ideologies/Fabian_Socialism.dds"
 	}
 	
 
 
 	spriteType = { 
-		name = "GFX_ideology_FRW_Syndicalism_Anarchism" 
-		texturefile = "gfx/interface/ideologies/FRW_Syndicalism_Anarchism.dds" 
+		name = "GFX_ideology_FRW_Syndicalist_Anarchism" 
+		texturefile = "gfx/interface/ideologies/FRW_Syndicalist_Anarchism.dds" 
 	}
 	spriteType = { 
-		name = "GFX_ideology_WWS_Authoritarianism_Conservatism" 
-		texturefile = "gfx/interface/ideologies/WWS_Authoritarianism_Conservatism.dds"
+		name = "GFX_ideology_WWS_Semi-Constitutional_Monarchy" 
+		texturefile = "gfx/interface/ideologies/WWS_Semi-Constitutional_Monarchy.dds"
 	}
 	spriteType = { 
-		name = "GFX_ideology_SHW_Classicism_Conservatism" 
-		texturefile = "gfx/interface/ideologies/SHW_Classicism_Conservatism.dds"
+		name = "GFX_ideology_SHW_Semi-Constitutional_Monarchy" 
+		texturefile = "gfx/interface/ideologies/SHW_Semi-Constitutional_Monarchy.dds"
 	}
 	spriteType = { 
-		name = "GFX_ideology_AOX_Classicism_Conservatism" 
-		texturefile = "gfx/interface/ideologies/AOX_Classicism_Conservatism.dds"
+		name = "GFX_ideology_AOX_Semi-Constitutional_Monarchy" 
+		texturefile = "gfx/interface/ideologies/AOX_Semi-Constitutional_Monarchy.dds"
 	}
 	spriteType = { 
-		name = "GFX_ideology_JPN_Classicism_Conservatism" 
-		texturefile = "gfx/interface/ideologies/JPN_Classicism_Conservatism.dds"
+		name = "GFX_ideology_JPN_Semi-Constitutional_Monarchy" 
+		texturefile = "gfx/interface/ideologies/JPN_Semi-Constitutional_Monarchy.dds"
 	}
 
 	spriteType = { 
-		name = "GFX_ideology_Three_People_Principles_Reformism" 
+		name = "GFX_ideology_Moderate_New_San-Min_Doctrine" 
 		texturefile = "gfx/interface/ideologies/Three_Principles_People.dds"
 	}
 	spriteType = { 
-		name = "GFX_ideology_Three_Principles_People_Liberalism" 
+		name = "GFX_ideology_Welfare_San-Min_Doctrine" 
 		texturefile = "gfx/interface/ideologies/Three_Principles_People.dds"
 	}
 	spriteType = { 
-		name = "GFX_ideology_Three_People_Principles_Conservatism" 
+		name = "GFX_ideology_Conservative_San-Min_Doctrine" 
+		texturefile = "gfx/interface/ideologies/Three_Principles_People.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_Constitutional_San-Min_Doctrine" 
 		texturefile = "gfx/interface/ideologies/Three_Principles_People.dds"
 	}
 }

@@ -12,8 +12,8 @@ set_technology = {
 	fuel_silos = 1
 }
 
-recruit_character = NXS_Ma_HongKui
 recruit_character = NXS_Ma_FuXiang
+recruit_character = NXS_Ma_HongKui
 
 	set_technology = {
 		interwar_artillery = 1
@@ -49,7 +49,7 @@ recruit_character = NXS_Ma_FuXiang
 	}
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -58,8 +58,6 @@ add_ideas = {
 	Smallholder_economy
 }
 set_popularities = {
-	Liberalism = 5
-	Reactionary = 1
-	Conservatism = 89
-	Revolutionism = 5
+	Dictatorship = 90
+	Paternalism = 10
 }

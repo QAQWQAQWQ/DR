@@ -566,7 +566,7 @@ FRW_European_Federation = {
 					set_cosmetic_tag = ENL_Revolutionism_name
 					promote_character = {
 						character = ENL_Robert_Peel_Glanville_Blatchford
-						ideology = Nationalism_revolutionism
+						ideology = National_Communism
 					}
 					set_politics = {
 						ruling_party = Revolutionism
@@ -654,7 +654,7 @@ FRW_European_Federation = {
 						character = WWS_Otto_Ruhle
 						promote_leader = yes
 						country_leader = {
-							ideology = Nationalism_revolutionism
+							ideology = National_Communism
 							#expire = "1965.1.1.1"
 							#traits = { war_industrialist }
 						}
@@ -763,7 +763,7 @@ FRW_European_Federation = {
 					set_cosmetic_tag = ITE_Revolutionism_name
 					promote_character = {
 						character = ITE_Benito_Mussolini
-						ideology = Nationalism_revolutionism
+						ideology = National_Communism
 					}
 					set_politics = {
 						ruling_party = Revolutionism
@@ -867,14 +867,14 @@ FRW_European_Federation = {
 						character = SIW_Dragisa_Lapcevic
 						promote_leader = yes
 						country_leader = {
-							ideology = Nationalism_revolutionism
+							ideology = National_Communism
 							expire = "1965.1.1.1"
 							#traits = { war_industrialist }
 						}
 					}
 					promote_character = {
 						character = SIW_Dragisa_Lapcevic
-						ideology = Nationalism_revolutionism
+						ideology = National_Communism
 					} 
 					set_politics = {
 						ruling_party = Revolutionism
@@ -961,14 +961,14 @@ FRW_European_Federation = {
 						character = XYL_Oszkar_Jaszi
 						promote_leader = yes
 						country_leader = {
-							ideology = Nationalism_revolutionism
+							ideology = National_Communism
 							expire = "1965.1.1.1"
 							#traits = { war_industrialist }
 						}
 					}
 					promote_character = {
 						character = XYL_Oszkar_Jaszi
-						ideology = Nationalism_revolutionism
+						ideology = National_Communism
 					} 
 					set_politics = {
 						ruling_party = Revolutionism
