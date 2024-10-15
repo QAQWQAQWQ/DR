@@ -1,0 +1,24 @@
+state={
+	id=1107
+	name="STATE_1107"
+	resources={
+		grain=4
+	}
+	history = {
+		owner = XIL
+		add_core_of = XIL
+		add_core_of = CBA
+		buildings = {
+			infrastructure = 1
+
+		}
+	}
+	provinces={
+		1244 1353 4251 4359 7292 10134 10293 10467
+	}
+	manpower=1748300
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=0.0 
+}

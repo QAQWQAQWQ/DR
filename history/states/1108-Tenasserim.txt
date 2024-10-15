@@ -1,20 +1,19 @@
 
 state={
-	id=1061
-	name="STATE_1061"
-	manpower = 1799400
+	id=1108
+	name="STATE_1108"
+	manpower = 695800
 	
 	state_category = rural
 	history={
-		owner = VAN
-		add_core_of = VAN
+		owner = YDA
 		buildings = {
 			infrastructure = 2
 		}
 	}
 
 	provinces={ 
-		1285 1300 4255 4334 4405 10137 10162 10309 12204
+		1296 1315 1385 4275 7295 10217 12292
 	}
 
 	local_supplies=0.0 
