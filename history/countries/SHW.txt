@@ -352,26 +352,32 @@ set_politics = {
 }
 set_autonomy = {
 	target = GGA
-	autonomy_state = autonomy_colony
-}
-
-set_autonomy = {
-	target = PBL
-	autonomy_state = autonomy_colony
+	autonomy_state = autonomy_supervised_state
 }
 
 set_autonomy = {
 	target = TGA
-	autonomy_state = autonomy_colony
+	autonomy_state = autonomy_supervised_state
 }
-puppet = KKE
-puppet = EOB
-puppet = YED
-puppet = MEG
 
 set_autonomy = {
 	target = FEL
 	autonomy_state = autonomy_personal_union
+}
+
+set_autonomy = {
+	target = KKE
+	autonomy_state = autonomy_reichsprotectorate
+}
+
+set_autonomy = {
+	target = EOB
+	autonomy_state = autonomy_reichsprotectorate
+}
+
+set_autonomy = {
+	target = MEG
+	autonomy_state = autonomy_reichsprotectorate
 }
 
 set_autonomy = {
@@ -382,6 +388,18 @@ set_autonomy = {
 	target = ARA
 	autonomy_state = autonomy_personal_union
 }
+
+set_autonomy = {
+	target = KEI
+	autonomy_state = autonomy_supervised_state
+}
+
+set_autonomy = {
+	target = HAQ
+	autonomy_state = autonomy_reichsprotectorate
+}
+puppet = YED
+
 country_event = { id = SHW_event.1 days = 94 }
 country_event = { id = SHW_event.34 days = 374 }
 country_event = { id = SHW_event.34 days = 674 }
@@ -389,7 +407,7 @@ country_event = { id = SHW_event.34 days = 974 }
 country_event = { id = SHW_event.34 days = 1274 }
 country_event = { id = SHW_event.34 days = 1574 }
 set_popularities = {
-	Reactionary = 6
+	Nationalism = 6
 	Conservatism = 59
 	Reformism = 3
 	Reformism = 6
@@ -441,3 +459,4 @@ SHW_Vladimir_Gurko_H
 give_guarantee = YEL
 give_guarantee = AFH
 give_guarantee = LMN
+give_guarantee = ASI

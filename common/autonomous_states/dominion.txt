@@ -7,7 +7,7 @@ autonomy_state = {
 	rule = {
 		desc = "RULE_DESC_IS_A_SUBJECT"
 	
-		can_not_declare_war = yes
+		can_not_declare_war = no
 		can_decline_call_to_war = no
 		can_be_spymaster = yes
 	}
@@ -33,10 +33,7 @@ autonomy_state = {
 	allowed = {
 		has_dlc = "Together for Victory"
 
-		if = {
-			limit = { has_dlc = "Death or Dishonor" }
-			NOT = { has_government = fascism }
-		}
+		
 	}
 	
 	can_take_level = {

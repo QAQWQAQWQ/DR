@@ -11,9 +11,8 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-recruit_character = KEI_YuanHongYou
-recruit_character = KEI_Carl_Gustaf_Emil_Mannerheim
 
+recruit_character = KEI_Carl_Gustaf_Emil_Mannerheim
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -36,18 +35,15 @@ recruit_character = KEI_Carl_Gustaf_Emil_Mannerheim
 		#industry
 		
 	}
-	country_event={id=KEI.1 days=203}
+	
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Paternalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 add_ideas = {
-
-
 #law
-
 closed_economy
 atheism
 Traditional_conservatism
@@ -59,6 +55,7 @@ low_industrialization
 completely_illiterate
 Smallholder_economy
 }
+
 set_popularities = {
-	Conservatism = 100
+	Paternalism = 100
 }

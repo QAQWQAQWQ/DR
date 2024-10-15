@@ -10,7 +10,6 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-recruit_character = MEX_Francisco_Madero
 recruit_character = MEX_Venustiano_Carranza
 
 	set_technology = {
@@ -47,7 +46,7 @@ recruit_character = MEX_Venustiano_Carranza
 	}
 
 set_politics = {
-	ruling_party = Liberalism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -56,5 +55,8 @@ add_ideas = {
 	Smallholder_economy
 }
 set_popularities = {
-	Liberalism = 100
+	Dictatorship = 40
+	COnservatism = 20
+	Liberalism = 20
+	Reformism = 20
 }

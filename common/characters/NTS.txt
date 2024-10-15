@@ -1,0 +1,19 @@
+characters={
+	NTS_Northern_Tribal_Alliance={
+		name=NTS_Northern_Tribal_Alliance
+		portraits={
+			#平民状态
+			civilian={
+				large="gfx/leaders/NTS/NTS_Northern_Tribal_Alliance.tga"
+			}
+
+		}
+		country_leader={
+			#意识形态
+			ideology=Absolute_Monarchy
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

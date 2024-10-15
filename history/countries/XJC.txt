@@ -11,12 +11,13 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
+recruit_character = XJC_FengTeMing
 recruit_character = XJC_FengDaShu
-recruit_character = XJC_YangZengXin
-recruit_character = XJC_ShengShiCai
-recruit_character = XJC_jinshuren
-recruit_character = XJC_FangYaoNan
+recruit_character = XJC_HaoKeQuan
 recruit_character = XJC_YangZangXu
+recruit_character = XJC_ShengShiCai
+recruit_character = XJC_FangYaoNan
+
 
 set_country_flag = parliament_mian_button_yes
 XJC_parliament_seat=yes
@@ -64,8 +65,10 @@ set_politics = {
 }
 add_ideas = {
 	Smallholder_economy
-	XJC_Mainland_refugees
 }
 set_popularities = {
-	Liberalism=100
+	Liberalism = 50
+	Conservatism = 26
+	Paternalism = 23
+	Ultranationalism = 1
 }

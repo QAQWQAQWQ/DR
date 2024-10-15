@@ -47,15 +47,14 @@ recruit_character = CHI_Li_YuanHong
 		
 	}
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Paternalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	Liberalism = 5
-	Reactionary = 1
-	Conservatism = 89
-	Revolutionism = 5
+	Paternalism = 21
+	Liberalism = 29
+	Dictatorship = 50
 }

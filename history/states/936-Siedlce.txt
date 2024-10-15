@@ -1,16 +1,15 @@
 state={
 	id=936
-	name="STATE_936"
+	name="STATE_936" #Kholm
 	manpower = 1589000
 
-	state_category = city
+	state_category = town
 
 	history={
 		owner = SHW
+		add_core_of = SHW
 		add_core_of = PBL
-		victory_points = {
-			402 1
-		}
+		add_core_of = UKR
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -19,7 +18,7 @@ state={
 	}
 
 	provinces={
-		402 467 6511 12562 
+		6580 9452 11466
 	}
 
 	local_supplies=5.0 

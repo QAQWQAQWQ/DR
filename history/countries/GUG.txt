@@ -9,6 +9,7 @@ set_technology = {
 	basic_light_tank = 1
 }
 
+recruit_character = GUG_LuRongTing
 recruit_character = GUG_HuHanMing
 recruit_character = GUG_BaiChongXi
 recruit_character = GUG_ChenJiongMing
@@ -17,7 +18,6 @@ recruit_character = GUG_DengYingDa
 recruit_character = GUG_XuChongZhi
 recruit_character = GUG_CaiTingKai
 recruit_character = GUG_ChenJiTang
-recruit_character = GUG_LuRongTing
 recruit_character = GUG_LuYuGuang
 recruit_character = GUG_LiZongRen
 recruit_character = GUG_DengZhongYuan
@@ -57,7 +57,7 @@ recruit_character = GUG_ChenMingshu
 	}
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -66,8 +66,6 @@ add_ideas={
 	Smallholder_economy
 }
 set_popularities = {
-	Liberalism = 5
-	Reactionary = 30
-	Conservatism = 60
-	Revolutionism = 5
+	Dictatorship = 90
+	Paternalism = 10
 }

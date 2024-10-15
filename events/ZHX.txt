@@ -84,17 +84,17 @@ news_event = {
 							create_faction = WangXi
 							add_to_faction = MEG
 							add_to_faction = WUP
-							add_to_faction = HAQ
+							######add_to_faction = HAQ
 						}
 					}
-					HAQ={
+					######HAQ={
 						transfer_state = 597
                         add_state_core = 597
 						transfer_state = 743
                         add_state_core = 743
 						transfer_state = 913
                         add_state_core = 913
-					}
+					######}
 					DUQ={
 						declare_war_on = {
 							target = ZHX

@@ -15,7 +15,7 @@ characters={
 		logistics_skill = 1
 	}
 		country_leader={
-			ideology=Classicism_Conservatism
+			ideology=Semi-Constitutional_Monarchy
 			traits={ }
 			expire="1965.1.1.1"
 			id=-1
@@ -29,7 +29,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Social_Reformism
+			ideology=Social_Democracy
             desc=WWS_ebert_DESC
 			traits={ }
 			expire="1965.1.1.1"
@@ -44,7 +44,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Socialism_Liberalism
+			ideology=Social_Liberalism
             desc=WWS_ebert_DESC
 			traits={ }
 			expire="1965.1.1.1"
@@ -60,7 +60,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Populism_Reactionary
+			ideology=National_Populism
             desc=WWS_Philipp_Scheidemann_DESC
 			traits={ }
 			expire="1965.1.1.1"

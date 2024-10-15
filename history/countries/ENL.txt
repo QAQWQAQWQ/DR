@@ -73,16 +73,7 @@ early_ship_hull_heavy = 1
 
 }
 	create_faction = Commonwealth_of_Nations
-	add_to_faction = YDA
-	add_to_faction = ASZ
-	add_to_faction = CNA
-	add_to_faction = XXL
-	add_to_faction = NAF
-	add_to_faction = ESG
-	add_to_faction = BNA
-	add_to_faction = TRO
-	add_to_faction = SLY
-	add_to_faction = YEM
+	
 
 	set_autonomy = { target = IRL autonomy_state = autonomy_dominion }
 	set_autonomy = { target = YDA autonomy_state = autonomy_colony }
@@ -107,18 +98,43 @@ early_ship_hull_heavy = 1
 		target = XXL
 		autonomy_state = autonomy_dominion
 	}
+
+	set_autonomy = {
+		target = TRO
+		autonomy_state = autonomy_reichsprotectorate
+	}
+
+	set_autonomy = {
+		target = SLY
+		autonomy_state = autonomy_reichsprotectorate
+	}
+
+	set_autonomy = {
+		target = YEM
+		autonomy_state = autonomy_reichsprotectorate
+	}
+
+	set_autonomy = {
+		target = FMS
+		autonomy_state = autonomy_reichsprotectorate
+	}
 	
-	puppet = TRO
-	puppet = SLY
-	puppet = YEM
-	puppet = ICD
-	puppet = TOR
-	puppet = DAS
-	puppet = KOC
+	set_autonomy = {
+		target = MSS
+		autonomy_state = autonomy_reichsprotectorate
+	}
+	
+	set_autonomy = {
+		target = CBA
+		autonomy_state = autonomy_reichsprotectorate
+	}
+	
+	
+
 	
 
 
-give_guarantee = KAT
+
 give_guarantee = MEX
 give_guarantee = EYJ
 give_guarantee = YEL
@@ -126,10 +142,8 @@ give_guarantee = AFH
 give_guarantee = XIL
 give_guarantee = LWO
 give_guarantee = VAN
-give_guarantee = KWT
-give_guarantee = KAT
-give_guarantee = TSL
 give_guarantee = NIC
+give_guarantee = CBA
 set_politics = {
 	ruling_party = Liberalism
 	last_election = "1918.11.11"
@@ -139,7 +153,7 @@ set_politics = {
 
 set_popularities = {
 	Liberalism = 89
-	Reactionary = 1
+	Nationalism = 1
 	Conservatism = 5
 	Revolutionism = 5
 }

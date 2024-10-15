@@ -1,0 +1,18 @@
+characters={
+	BEL_Leon_Delacroix={
+		name=BEL_Leon_Delacroix
+		portraits={
+			civilian={
+				large="gfx/leaders/BEL/Portrait_Leon_Delacroix.tga"
+			}
+		}
+		country_leader={
+			ideology=Progressive_Liberalism
+			#特质
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+	}
+}

@@ -1,18 +1,5 @@
 characters={
-	KEI_YuanHongYou={
-		name=KEI_YuanHongYou
-		portraits={
-			civilian={
-				large="gfx/leaders/KEI/portrait_YuanHongYou.tga"
-			}
-		}
-		country_leader={
-			ideology=Authoritarianism_Conservatism
-			traits={  }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}		
+	
 	KEI_Carl_Gustaf_Emil_Mannerheim={
 		name=KEI_Carl_Gustaf_Emil_Mannerheim
 		portraits={
@@ -21,10 +8,26 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Authoritarianism_Conservatism
+			ideology =Edinogist_Colonization
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
 		}
 	}		
+	
+	KEI_YuanHongYou={
+		name=KEI_YuanHongYou
+		portraits={
+			civilian={
+				large="gfx/leaders/KEI/portrait_YuanHongYou.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarian_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	
 	}

@@ -30,10 +30,7 @@ recruit_character = YED_Alexander_I
 		early_ship_hull_heavy = 1
 	}
 	add_ideas = {secondary_school }
-	set_autonomy = {
-		target = TEQ
-		autonomy_state = autonomy_reichskommissariat
-	}
+	
 set_politics = {
 	ruling_party = Conservatism
 	last_election = "1918.11.11"
@@ -43,7 +40,7 @@ set_politics = {
 add_ideas = {YED_Roman_Orthodoxy}
 set_popularities = {
 	Liberalism = 5
-	Reactionary = 1
+	Nationalism = 1
 	Conservatism = 89
 	Revolutionism = 5
 }

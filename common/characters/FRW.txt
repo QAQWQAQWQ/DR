@@ -7,7 +7,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Religiousness_Conservatism
+			ideology=Religious_Conservatism
 			#desc = FRW_Pierre_Monatte_desc
 			traits={  } 
 			expire="1965.1.1.1"
@@ -22,7 +22,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Authoritarianism_revolutionism
+			ideology=Authoritarian_Socialism
 			#desc = FRW_Pierre_Monatte_desc
 			traits={  } 
 			expire="1965.1.1.1"
@@ -37,7 +37,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Nationalism_revolutionism
+			ideology=National_Communism
 			#desc = FRW_Pierre_Monatte_desc
 			traits={  } 
 			expire="1965.1.1.1"
@@ -52,7 +52,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Syndicalism_Anarchism
+			ideology=Syndicalist_Anarchism
 			desc = FRW_Pierre_Monatte_desc
 			traits={  } 
 			expire="1965.1.1.1"
@@ -67,7 +67,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Syndicalism_Anarchism
+			ideology=Syndicalist_Anarchism
 			desc = FRW_Leon_Jouhaux_desc
 			traits={  } 
 			expire="1965.1.1.1"
@@ -98,7 +98,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Scientism_revolutionism
+			ideology=Scientific_Socialism
 			desc = FRW_guesde_desc
 			traits={ marxist_philosopher } 
 			expire="1965.1.1.1"
@@ -113,7 +113,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Scientism_revolutionism
+			ideology=Scientific_Socialism
 			desc = FRW_Jean_Laurent_desc
 			traits={  } 
 			expire="1965.1.1.1"
@@ -128,7 +128,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Democracy_Reformism
+			ideology=Democratic_Socialism
 			traits={ }
 			expire="1965.1.1.1"
 			id=-1
@@ -142,7 +142,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Syndicalism_Reactionary
+			ideology=National_Syndicalism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -156,7 +156,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology= Progressivism_Liberalism
+			ideology= Progressive_Liberalism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -222,7 +222,7 @@ characters={
 		}
 
 		country_leader={
-			ideology=Social_Reformism
+			ideology=Social_Democracy
 			traits={ }
 			expire="1965.1.1.1"
 			id=-1
@@ -236,7 +236,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Syndicalism_Anarchism
+			ideology=Syndicalist_Anarchism
 			traits={ }
 			expire="1965.1.1.1"
 			id=-1
@@ -258,7 +258,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Authoritarianism_revolutionism
+			ideology=Authoritarian_Socialism
 			traits={ }
 			expire="1965.1.1.1"
 			id=-1

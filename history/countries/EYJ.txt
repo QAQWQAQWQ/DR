@@ -57,21 +57,40 @@ set_politics = {
 
 set_popularities = {
 	Liberalism = 5
-	Reactionary = 1
+	Nationalism = 1
 	Conservatism = 89
 	Revolutionism = 5
 }
 
 
 
-puppet = JBS
-puppet = NZS
-puppet = KWT
-puppet = KAT
-puppet = SNX
-puppet = TSL
+
+set_autonomy = {
+	target = JBS
+	autonomy_state = autonomy_puppet
+}
+
+set_autonomy = {
+	target = NZS
+	autonomy_state = autonomy_puppet
+}
+
+set_autonomy = {
+	target = NTS
+	autonomy_state = autonomy_puppet
+}
+
+set_autonomy = {
+	target = SNX
+	autonomy_state = autonomy_dominion
+}
 
 set_autonomy = {
 	target = ROY
 	autonomy_state = autonomy_dominion
+}
+
+set_autonomy = {
+	target = NTB
+	autonomy_state = autonomy_puppet
 }

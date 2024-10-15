@@ -1,0 +1,17 @@
+ideas = {
+
+	country = {
+		BEL_Ruins_Belgium = {
+			name = BEL_Ruins_Belgium
+			picture = GFX_idea_BEL_Ruins_Belgium
+			allowed = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor=-0.15
+				industry_repair_factor=-0.15
+				tech_air_damage_factor=0.1
+			}
+		}
+	}
+}

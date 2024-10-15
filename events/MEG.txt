@@ -15,8 +15,8 @@ news_event = {
 		name = MEG.0.a	
 		MEG={
 			start_civil_war = {
-				ruling_party = Reactionary
-				ideology = Reactionary
+				ruling_party = Nationalism
+				ideology = Nationalism
 				size = 0.8
 				only_own_territory = yes
 				capital = 392
@@ -41,7 +41,7 @@ news_event = {
 			leave_faction = yes
 			retire_country_leader = yes
 			set_politics = {
-			ruling_party = Reactionary
+			ruling_party = Nationalism
 		}
 	}
 }

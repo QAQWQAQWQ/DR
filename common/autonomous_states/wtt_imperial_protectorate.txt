@@ -11,12 +11,12 @@ autonomy_state = {
 	rule = {
 		desc = "RULE_DESC_IS_A_SUBJECT"
 		
-		can_not_declare_war = yes
+		can_not_declare_war = no
 		can_decline_call_to_war = no
 		units_deployed_to_overlord = yes
-		can_be_spymaster = no
-		contributes_operatives = no
-		can_create_collaboration_government = no
+		can_be_spymaster = yes
+		contributes_operatives = yes
+		can_create_collaboration_government = yes
 	}
 	
 	modifier = {
@@ -43,19 +43,7 @@ autonomy_state = {
 
 	allowed = {
 		has_dlc = "Waking the Tiger"
-		OR = {
-			AND = {
-				has_government = fascism
-				OVERLORD = { original_tag = JAP }
-			}
-			AND = {
-				OR = {
-					has_government = fascism
-					has_government = Conservatism
-				}
-				OVERLORD = { original_tag = MAN }
-			}
-		}
+		has_government = fascism
 	}
 	
 	can_take_level = {

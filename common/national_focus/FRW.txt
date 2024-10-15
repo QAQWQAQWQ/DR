@@ -1279,7 +1279,7 @@ completion_reward = {
     completion_reward = {
 		add_trait = {
 			character = FRW_Leon_Blum
-			ideology = Social_Reformism
+			ideology = Social_Democracy
 			trait = popular_figurehead2
 		}
     } 
@@ -1305,7 +1305,7 @@ completion_reward = {
     completion_reward = {
 		add_trait = {
 			character = FRW_Georges_Clemenceau
-			ideology = Progressivism_Liberalism
+			ideology = Progressive_Liberalism
 			trait = Master_Administration
 		}
     }  
@@ -1940,7 +1940,7 @@ focus = {
 completion_reward = {
 	add_trait = {
 		character = FRW_guesde
-		ideology = Scientism_revolutionism
+		ideology = Scientific_Socialism
 		trait = popular_figurehead2
 	}
 }
@@ -2626,7 +2626,7 @@ completion_reward = {
 		completion_reward = {
 			add_trait = {
 				character = FRW_Edouard_Berth
-				ideology = Syndicalism_Anarchism
+				ideology = Syndicalist_Anarchism
 				trait = marxist_philosopher
 		   }
 		}
@@ -2818,7 +2818,7 @@ completion_reward = {
 				character = FRW_Gustave_Herve
 				promote_leader = yes
 				country_leader = {
-					ideology = Nationalism_revolutionism
+					ideology = National_Communism
 					expire = "1965.1.1.1"
 					#traits = { war_industrialist }
 				}
@@ -2826,7 +2826,7 @@ completion_reward = {
 			hidden_effect = {
 				promote_character = {
 				character = FRW_Gustave_Herve
-				ideology = Nationalism_revolutionism
+				ideology = National_Communism
 			} 
 			}
 			

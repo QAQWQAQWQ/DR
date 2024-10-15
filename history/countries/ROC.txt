@@ -13,11 +13,11 @@ set_technology = {
 }
 
 recruit_character = ROC_Song_JiaoRen
+recruit_character = ROC_LiaoZhongKai
 recruit_character = ROC_JiangBaiLi
 recruit_character = ROC_SunKe
 recruit_character = ROC_SongQingLing
 recruit_character = ROC_ZhangXiaoHuang
-recruit_character = ROC_LiaoZhongKai
 recruit_character = ROC_TanYouRen
 recruit_character = ROC_ZhangZhiZhong
 	set_technology = {
@@ -57,7 +57,7 @@ recruit_character = ROC_ZhangZhiZhong
 	add_to_faction = XJC
 	add_to_faction = SCX
 set_politics = {
-	ruling_party = Reformism
+	ruling_party = Liberalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = yes
@@ -66,6 +66,7 @@ add_ideas = {
 	      ROC_TPP     
 	}
 set_popularities = {
-	Reactionary = 10
-	Reformism = 90
+	Liberalism = 38
+	Reformism = 37
+	Revolutionism = 25
 }

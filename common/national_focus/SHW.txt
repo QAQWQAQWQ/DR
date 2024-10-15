@@ -687,7 +687,7 @@ completion_reward={
 			
 			hidden_effect={
 				set_popularities = {
-					Reactionary = 10
+					Nationalism = 10
 					Conservatism = 5
 					Reformism = 10
 					Reformism = 10
@@ -801,12 +801,12 @@ completion_reward={
 		completion_reward={
 			add_ideas = SHW_Russian_style_democracy
 			set_politics = {
-				ruling_party = Reactionary
+				ruling_party = Nationalism
 				elections_allowed =yes
 			}
 			hidden_effect={
 				set_popularities = {
-					Reactionary = 55
+					Nationalism = 55
 					Conservatism = 5
 					Reformism = 10
 					Reformism = 10
@@ -1018,7 +1018,7 @@ completion_reward={
 				popularity = 0.05
 			}
 			add_popularity = {
-				ideology = Reactionary
+				ideology = Nationalism
 				popularity = 0.05
 			}
 		}  
@@ -1058,7 +1058,7 @@ completion_reward={
 				remove_ideas= SHW_Nikolaj_Dmitrievich_Golicyn_H
 				add_ideas=SHW_NicholasII_H
 				set_popularities = {
-					Reactionary = 0
+					Nationalism = 0
 					Conservatism = 42
 					Reformism = 0
 					Reformism = 0

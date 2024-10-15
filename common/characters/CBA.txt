@@ -1,0 +1,33 @@
+characters={
+	CBA_Sisowath={
+		name=CBA_Sisowath
+		portraits={
+			civilian={
+				large="gfx/leaders/CBA/Portrait_Sisowath.tga"
+			}
+		}
+		#担任党派领导人时的数据
+		country_leader={
+			ideology=Absolute_Monarchy
+			#特质
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		#担任陆军将军时的数据
+		field_marshal={
+			traits={ }
+			#等级
+			skill=1
+			#攻击等级
+			attack_skill=1
+			#防御等级
+			defense_skill=1
+			#计划等级
+			planning_skill=1
+			后勤等级
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+}
