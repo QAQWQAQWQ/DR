@@ -14,18 +14,16 @@ news_event = {
 		name = FER.1.a
 		hidden_effect = {
 			FER= { 
-			transfer_state = 408
-			add_state_core = 408
-			transfer_state = 409
-			add_state_core = 409
+			transfer_state = 561
+			add_state_core = 561
 			transfer_state = 657
 			add_state_core = 657
 	    }
-		FER={declare_war_on = { target = SHW type = annex_everything }}
+		FER={declare_war_on = { target = SHW  }}
 		}
 	}
 	}
-news_event = {
+##news_event = {
 	id = FER.2
 	title = FER.2.t
 	desc = FER.2.d
@@ -36,5 +34,5 @@ news_event = {
 		name = FER.2.a
 		
 	}
-	}
+	##}
 	
