@@ -49,7 +49,7 @@ recruit_character = SSD_ChenXiaLing
 	}
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -58,8 +58,6 @@ set_politics = {
 add_ideas = {
 }
 set_popularities = {
-	Liberalism = 5
-	Nationalism = 1
-	Conservatism = 89
-	Revolutionism = 5
+	Dictatorship = 90
+	Paternalism = 10
 }
