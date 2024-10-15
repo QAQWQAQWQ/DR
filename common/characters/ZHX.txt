@@ -1,4 +1,35 @@
 characters={
+	ZHX_CaoKung={
+		name=ZHX_CaoKung
+		portraits={
+			army={
+				large="gfx/leaders/ZHX/portrait_CaoKung.tga"
+				small="GFX_idea_CaoKung"
+			}
+		}
+		country_leader={
+			ideology=Warlord_Dictatorship
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor={
+			slot = head_of_government
+			idea_token = ZHX_CaoKung_H
+			allowed = {
+				original_tag = ZHX
+			}
+			available = {
+			}
+			traits = {
+				head_of_government
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 0.250
+			}
+		}
+	}
 	ZHX_Fen_GuoZhang={
 		name=ZHX_Fen_GuoZhang
 		portraits={
@@ -381,37 +412,6 @@ characters={
 				democratic_reformer
 			}
 			cost = 100
-			ai_will_do = {
-				factor = 0.250
-			}
-		}
-	}
-	ZHX_CaoKung={
-		name=ZHX_CaoKung
-		portraits={
-			army={
-				large="gfx/leaders/ZHX/portrait_CaoKung.tga"
-				small="GFX_idea_CaoKung"
-			}
-		}
-		country_leader={
-			ideology=Authoritarian_Conservatism
-			traits={  }
-			expire="1965.1.1.1"
-			id=-1
-		}
-		advisor={
-			slot = head_of_government
-			idea_token = ZHX_CaoKung_H
-			allowed = {
-				original_tag = ZHX
-			}
-			available = {
-			}
-			traits = {
-				head_of_government
-			}
-			cost = 50
 			ai_will_do = {
 				factor = 0.250
 			}

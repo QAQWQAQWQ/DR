@@ -165,7 +165,9 @@ ideologies = {
 			Classical_Liberalism={}
 			Conservative_Liberalism={}
 			Progressive_Liberalism={}
+			Progressive_Warlord = {}
 			Welfare_San-Min_Doctrine={color = { 36 56 154 }}
+			Constitutional_San-Min_Doctrine={color = { 36 56 154 }}
 		}
 		
 		dynamic_faction_names = {
@@ -208,8 +210,8 @@ ideologies = {
 			Authoritarian_Conservatism={}
 			Religious_Conservatism={}
 			National_Conservatism={}
-			Conservative_populism={}
-			Semi-Democratic_Colonial_Government = {}
+			Populist_Conservatism={}
+			Semi-Democratic_Colonization = {}
 			Conservative_San-Min_Doctrine={color = { 36 56 154 }}
 		}
 		
@@ -250,7 +252,8 @@ ideologies = {
 		types = {
 			Paternalism={}
 			Edinogism = {}
-			Edinogist_Colonial_Government = {}
+			Edinogist_Colonization = {}
+			Gelaohui_Order = {}
 		}
 		dynamic_faction_names = {
 		}
@@ -281,6 +284,9 @@ ideologies = {
 			Dictatorship = {}
 			Military_Dictatorship={}
 			Absolute_Monarchy={}
+			Warlord_Dictatorship = {}
+			Autocratic_Colonization = {}
+			Colonization_Assimilation = {}
 		}
 		
 		dynamic_faction_names = {

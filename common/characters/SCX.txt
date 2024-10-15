@@ -1,19 +1,4 @@
 characters={
-	SCX_XiongKeWu={
-		name=SCX_XiongKeWu
-		portraits={
-			civilian={
-				large="gfx/leaders/SCX/portrait_XiongKeWu.tga"
-			}
-		}
-		country_leader={
-			ideology=Authoritarian_Conservatism
-			traits={  }
-			desc = SCX_XiongKeWu_desc
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
 	SCX_YingCanHen={
 		name=SCX_YingCanHen
 		portraits={
@@ -22,6 +7,13 @@ characters={
 				small="gfx/interface/ideas/portrait_YingCanHen.dds"
 			}
 		}
+		country_leader={
+			ideology=Gelaohui_Order
+			traits={  }
+			desc = SCX_XiongKeWu_desc
+			expire="1965.1.1.1"
+			id=-1
+		}
 		corps_commander={
 			traits={ Lieutenant_general }
 			skill=3
@@ -29,6 +21,70 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=2
+		}
+	}
+	SCX_LiuChunHou={
+		name=SCX_LiuChunHou
+		portraits={
+			civilian={
+				large="gfx/leaders/SCX/portrait_LiuChunHou.tga"
+				small="gfx/interface/ideas/portrait_LiuChunHou.dds"
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+		}
+		country_leader={
+			ideology=Warlord_Dictatorship
+			traits={  }
+			desc = SCX_XiongKeWu_desc
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SCX_XiongKeWu={
+		name=SCX_XiongKeWu
+		portraits={
+			civilian={
+				large="gfx/leaders/SCX/portrait_XiongKeWu.tga"
+			}
+		}
+		country_leader={
+			ideology=Progressive_Warlord
+			traits={  }
+			desc = SCX_XiongKeWu_desc
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	SCX_LiuWengHui={
+		name=SCX_LiuWengHui
+		portraits={
+			civilian={
+				large="gfx/leaders/SCX/portrait_LiuWengHui.tga"
+				small="gfx/interface/ideas/portrait_LiuWengHui.dds"
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+		}
+		country_leader={
+			ideology= Warlord_Dictatorship
+			traits={  }
+			desc = SCX_XiongKeWu_desc
+			expire="1965.1.1.1"
+			id=-1
 		}
 	}
 	SCX_LiuXiang={
@@ -150,40 +206,8 @@ characters={
 			logistics_skill=1
 		}
 	}
-	SCX_LiuChunHou={
-		name=SCX_LiuChunHou
-		portraits={
-			civilian={
-				large="gfx/leaders/SCX/portrait_LiuChunHou.tga"
-				small="gfx/interface/ideas/portrait_LiuChunHou.dds"
-			}
-		}
-		corps_commander={
-			traits={ Lieutenant_general }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=1
-		}
-	}
-	SCX_LiuWengHui={
-		name=SCX_LiuWengHui
-		portraits={
-			civilian={
-				large="gfx/leaders/SCX/portrait_LiuWengHui.tga"
-				small="gfx/interface/ideas/portrait_LiuWengHui.dds"
-			}
-		}
-		corps_commander={
-			traits={ Lieutenant_general }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=1
-		}
-	}
+	
+	
 	SCX_LaiXinHui={
 		name=SCX_LaiXinHui
 		portraits={

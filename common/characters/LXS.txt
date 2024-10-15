@@ -27,4 +27,28 @@ LXS_WangWenHua={
 			id=-1
 		}
 	}	
+	LXS_Tangjiyao={
+		name=LXS_Tangjiyao
+		portraits={
+			civilian={
+				large="gfx/leaders/CEX/portrait_tangjiyao.tga"
+				small="gfx/interface/ideas/Portrait_tangjiyao.dds"
+			}
+			
+		}
+		country_leader={
+			ideology=Warlord_Dictatorship
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		corps_commander={
+			traits={ }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+		}
+	}	
 	}

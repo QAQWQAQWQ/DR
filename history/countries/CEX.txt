@@ -54,7 +54,7 @@ recruit_character = CEX_TangHuaiYuan
 	}
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -64,10 +64,8 @@ add_ideas = {
 	CEX_YMA
 }
 set_popularities = {
-	Liberalism = 5
-	Nationalism = 1
-	Conservatism = 89
-	Revolutionism = 5
+	Dictatorship = 90
+	Paternalism = 10
 }
 set_autonomy = {
 	target = LXS

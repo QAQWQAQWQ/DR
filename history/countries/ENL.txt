@@ -124,6 +124,11 @@ early_ship_hull_heavy = 1
 		autonomy_state = autonomy_reichsprotectorate
 	}
 	
+	set_autonomy = {
+		target = CBA
+		autonomy_state = autonomy_reichsprotectorate
+	}
+	
 	
 
 	

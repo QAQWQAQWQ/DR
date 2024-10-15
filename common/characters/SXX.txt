@@ -65,4 +65,27 @@ characters={
 			id=-1
 		}
 	}
+	SXX_ZhangFenghui={
+		name=SXX_ZhangFenghui
+		portraits={
+			civilian={
+				large="gfx/leaders/SXX/portrait_ZhangFenghui.tga"
+			}
+			
+		}
+		country_leader={
+			ideology=Warlord_Dictatorship
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		corps_commander={
+			traits={ }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+		}
+	}	
 	}
