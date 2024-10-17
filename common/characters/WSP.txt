@@ -12,5 +12,19 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+	}	
+	WSP_ZhouZiQi={
+		name=WSP_ZhouZiQi
+		portraits={
+			civilian={
+				large="gfx/leaders/WSP/portrait_ZhouZiQi.tga"
+			}
+		}
+		country_leader={
+			ideology=Civilian_Dictatorship
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
 	}		
 	}

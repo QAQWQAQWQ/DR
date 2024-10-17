@@ -55,4 +55,18 @@ characters={
 			id=-1
 		}
 	}		
+	SUC_ZhuRui={
+		name=SUC_ZhuRui
+		portraits={
+			civilian={
+				large="gfx/leaders/SUC/portrait_ZhuRui.tga"
+			}
+		}
+		country_leader={
+			ideology=Warlord_Dictatorship
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
 	}
