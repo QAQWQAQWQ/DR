@@ -1,20 +1,19 @@
 
 state={
-	id=1070
-	name="STATE_1070"
-	manpower = 227700
+	id=1108
+	name="STATE_1108"
+	manpower = 695800
+	
 	state_category = rural
 	history={
-		owner = NIC
-		add_core_of = NIC
+		owner = YDA
 		buildings = {
 			infrastructure = 2
 		}
-
 	}
 
-	provinces={
-		1988 2075
+	provinces={ 
+		1296 1315 1385 4275 7295 10217 12292
 	}
 
 	local_supplies=0.0 

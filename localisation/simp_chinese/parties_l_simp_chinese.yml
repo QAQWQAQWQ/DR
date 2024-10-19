@@ -138,6 +138,8 @@
  Constitutional_San-Min_Doctrine_desc:0 ""
  Progressive_Warlord:0 "进步军阀"
  Progressive_Warlord_desc:0 ""
+ Hamiltonian_Liberalism:0 "汉密尔顿自由主义"
+ Hamiltonian_Liberalism_desc:0 ""
 
 ##保守主义
  Semi-Constitutional_Monarchy:0 "半君主立宪制"
@@ -157,6 +159,8 @@
  Conservative_San-Min_Doctrine_desc:0 ""
  Semi-Democratic_Colonization:0 "半民主殖民"
  Semi-Democratic_Colonization_desc:0 ""
+ Liberal_Conservatism:0 "自由保守主义"
+ Liberal_Conservatism_desc:0 ""
 
 ####家长制
  Paternalism:0 "家长制"
@@ -167,8 +171,8 @@
  Edinogist_Colonization_desc:0 ""
  Gelaohui_Order:0 "哥老会秩序"
  Gelaohui_Order_desc:0 ""
- Paternalist_Civilian_Government:0 "家长制文官政府"
- Paternalist_Civilian_Government_desc:0 ""
+ Authoritarian_Civilian_Government:0 "威权文官政府"
+ Authoritarian_Civilian_Government_desc:0 ""
 
 
 
@@ -350,10 +354,10 @@ KEI_Paternalism_party_long:0 "七河州总督府"
 XUH_Conservatism_party:0 "大清官府"
 XUH_Conservatism_party_long:0 "大清官府"
 
-SCX_Paternalism_party:0 "国民党四川分部"
-SCX_Paternalism_party_long:0 "国民党四川分部"
-SCX_Dictatorship_party:0 "国民党四川分部(武备系)"
-SCX_Dictatorship_party_long:0 "国民党四川分部(武备系)"
+SCX_Paternalism_party:0 "国民党四川支部"
+SCX_Paternalism_party_long:0 "国民党四川支部"
+SCX_Dictatorship_party:0 "国民党四川支部(武备系)"
+SCX_Dictatorship_party_long:0 "国民党四川支部(武备系)"
 
 LXS_Dictatorship_party:0 "贵州省长公署"
 LXS_Dictatorship_party_long:0 "贵州省长公署"
@@ -390,12 +394,16 @@ JLP_Dictatorship_party_long:0 "吉林省长公署"
 
 GUI_Dictatorship_party:0 "湖北省长公署"
 GUI_Dictatorship_party_long:0 "湖北省长公署"
+GUI_Liberalism_party:0 "国民党湖北支部"
+GUI_Liberalism_party_long:0 "国民党湖北支部"
 
 GUG_Dictatorship_party:0 "广西省长公署"
 GUG_Dictatorship_party_long:0 "广西省长公署"
 
 FPE_Dictatorship_party:0 "福建省长公署"
 FPE_Dictatorship_party_long:0 "福建省长公署"
+FPE_Liberalism_party:0 "国民党福建支部"
+FPE_Liberalism_party_long:0 "国民党福建支部"
 
 SXS_Dictatorship_party:0 "山西省长公署"
 SXS_Dictatorship_party_long:0 "山西省长公署"
@@ -415,3 +423,39 @@ SSD_Dictatorship_party_long:0 "川边镇守使公署"
 
 YED_Conservatism_party:0 "罗曼诺夫王朝"
 YED_Conservatism_party_long:0 "罗曼诺夫王朝-无党派"
+
+QIX_Dictatorship_party:0 "江苏省长公署"
+QIX_Dictatorship_party_long:0 "江苏省长公署"
+QIX_Liberalism_party:0 "国民党江苏支部"
+QIX_Liberalism_party_long:0 "国民党江苏支部"
+
+SUC_Dictatorship_party:0 "浙江省长公署"
+SUC_Dictatorship_party_long:0 "浙江省长公署"
+SUC_Liberalism_party:0 "国民党浙江支部"
+SUC_Liberalism_party_long:0 "国民党浙江支部"
+
+HLP_Dictatorship_party:0 "黑龙江省长公署"
+HLP_Dictatorship_party_long:0 "黑龙江省长公署"
+
+FTX_Dictatorship_party:0 "奉天省长公署"
+FTX_Dictatorship_party_long:0 "奉天省长公署"
+
+HNZ_Dictatorship_party:0 "河南省长公署"
+HNZ_Dictatorship_party_long:0 "河南省长公署"
+
+WSP_Dictatorship_party:0 "山东省长公署"
+WSP_Dictatorship_party_long:0 "山东省长公署"
+
+BNA_Liberalism_party:0 "自由党"
+BNA_Liberalism_party_long:0 "自由党"
+BNA_Conservatism_party:0 "保守党"
+BNA_Conservatism_party_long:0 "保守党"
+BNA_Reformism_party:0 "进步党"
+BNA_Reformism_party_long:0 "进步党"
+
+UBS_Liberalism_party:0 "共和党"
+UBS_Liberalism_party_long:0 "共和党"
+UBS_Conservatism_party:0 "民主党"
+UBS_Conservatism_party_long:0 "民主党"
+UBS_Reformism_party:0 "劳工党"
+UBS_Reformism_party_long:0 "劳工党"

@@ -21,7 +21,21 @@ FTX_Zhang_Zuolin={
 			}
 		}
 		country_leader={
-			ideology=Authoritarian_Conservatism
+			ideology=Warlord_Dictatorship
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	FTX_DuanZhiGui={
+		name=FTX_DuanZhiGui
+		portraits={
+			civilian={
+				large="gfx/leaders/FTX/Portrait_Duan_ZhiGui.tga"
+			}
+		}
+		country_leader={
+			ideology=Warlord_Dictatorship
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1

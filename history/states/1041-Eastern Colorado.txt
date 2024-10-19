@@ -1,19 +1,22 @@
 state={
 	id=1041
 	name="STATE_1041"
+	resources={
+		oil=18
+	}
 	provinces={
-		1738 1809 7780 10588 11772 12570 12642 
+		1643 4507 4535 12313 12398
 	}
 	history={
 		owner = UBS
 		add_core_of = UBS
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			industrial_complex = 1
 		}
 	}
-	manpower=39080
+	manpower=840637
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
 	local_supplies=0.000
 }

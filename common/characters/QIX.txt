@@ -26,5 +26,19 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}		
+	}
+	QIX_ChengDeQuan={
+		name=QIX_ChengDeQuan
+		portraits={
+			civilian={
+				large="gfx/leaders/QIX/portrait_ChengDeQuan.tga"
+			}
+		}
+		country_leader={
+			ideology=Civilian_Dictatorship
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}				
 	}
