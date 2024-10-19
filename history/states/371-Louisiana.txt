@@ -2,12 +2,12 @@
 state={
 	id=371
 	name="STATE_371"
-	manpower = 2101592
+	manpower = 1260955
 	
-	state_category = city
+	state_category = town
 	
 	resources={
-		oil=44 # was: 66
+		oil=26 # was: 66
 	}
 
 	history={
@@ -22,7 +22,7 @@ state={
 	}
 
 	provinces={
-		1528 1559 1643 4507 4522 4535 7555 7599 12313 12398 12401
+		1528 1559 4522 7555 7599 12401
 	}
 
 	local_supplies=0.0 
