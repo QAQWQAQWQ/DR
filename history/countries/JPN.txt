@@ -59,12 +59,12 @@ set_politics = {
 #create_faction = Empire_Japan
 ##add_to_faction = RTW
 ##add_to_faction = KON
-set_autonomy = { target = KON autonomy_state = autonomy_wtt_imperial_protectorate }
-KON={
-	set_popularities = {
-		Conservatism = 100
-	}
-}
+#set_autonomy = { target = KON autonomy_state = autonomy_wtt_imperial_protectorate }
+#KON={
+	#set_popularities = {
+		#Conservatism = 100
+	#}
+#
 
 set_autonomy = { target = RTW autonomy_state = autonomy_colony }
 
@@ -91,5 +91,7 @@ Theocratic_state
 
 }
 set_popularities = {
-	Conservatism = 100
+	Conservatism = 80
+	Liberalism = 20
 }
+give_guarantee = KON

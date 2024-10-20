@@ -3,10 +3,9 @@
 oob = "UBS_1920"
 
 # Starting tech
-
+recruit_character = UBS_Woodrow_Wilson
 recruit_character = UBS_Hugo_Black
 recruit_character = UBS_LiEngFu
-recruit_character = UBS_Woodrow_Wilson
 recruit_character = UBS_Ulysses_G_McAlexander
 recruit_character = UBS_Douglas_MacArthur
 recruit_character = UBS_Pershing
@@ -96,7 +95,7 @@ add_ideas = {
 	UBS_Jim_Crow_laws
 }
 set_politics = {
-	ruling_party = Liberalism
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -107,9 +106,9 @@ Basic_industrialization
 Private_economy
 }
 set_popularities = {
-	Liberalism = 85 
-	Conservatism = 15
-	Reformism = 0
+	Conservatism = 50
+	Liberalism = 45
+	Reformism = 5
 }
 give_guarantee = MEX
 give_guarantee = NIC

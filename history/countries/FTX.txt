@@ -11,7 +11,7 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-recruit_character = FTX_Zhang_XiLuan
+recruit_character = FTX_DuanZhiGui
 recruit_character = FTX_Zhang_Zuolin
 recruit_character = FTX_Zhang_XueLiang
 recruit_character = FTX_Zhang_Zongchang
@@ -20,7 +20,7 @@ recruit_character = FTX_FuZuoYi
 recruit_character = FTX_GuoSongLing
 recruit_character = FTX_WuJunSheng
 recruit_character = FTX_ZhangJingHui
-recruit_character = FTX_YangYuTing2
+recruit_character = FTX_YangYuTing
 recruit_character = FTX_MaZhangShang
 recruit_character = FTX_ZhuQingLang
 recruit_character = FTX_XieWenDong
@@ -62,7 +62,7 @@ FTX_XieWenDong= {set_nationality = NNN}
 	}
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -84,8 +84,6 @@ completely_illiterate
 Smallholder_economy
 }
 set_popularities = {
-	Liberalism = 5
-	Nationalism = 1
-	Conservatism = 89
-	Revolutionism = 5
+	Dictatorship = 90
+	Paternalism = 10
 }

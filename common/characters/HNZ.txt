@@ -12,5 +12,19 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}		
+	}
+	HNZ_ZhangZhenFang={
+		name=HNZ_ZhangZhenFang
+		portraits={
+			civilian={
+				large="gfx/leaders/HNZ/portrait_ZhangZhenFang.tga"
+			}
+		}
+		country_leader={
+			ideology=Civilian_Dictatorship
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}				
 	}

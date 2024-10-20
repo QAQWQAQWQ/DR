@@ -2,22 +2,19 @@
 state={
 	id=1070
 	name="STATE_1070"
-	manpower = 457898
+	manpower = 227700
 	state_category = rural
 	history={
-		owner = UBS
-		add_core_of = UBS
+		owner = NIC
+		add_core_of = NIC
 		buildings = {
 			infrastructure = 2
-		}
-		victory_points = {
-			1836 1 
 		}
 
 	}
 
 	provinces={
-		1836 1867 4772 4880 7862 10569 10595 10685 12577 12620 12667
+		1988 2075
 	}
 
 	local_supplies=0.0 
