@@ -2446,7 +2446,7 @@ completion_reward = {
 			
 		}
 	}
-
+########工团线
 	focus = {
 		id = FRW_focus119
 		icon = GFX_goal_FRW_focus119
@@ -2456,6 +2456,9 @@ completion_reward = {
 				character = FRW_Georges_Sorel
 				ruling_only = yes
 			}
+		}
+		available = {
+			
 		}
 		x = 55
 		y = 7
@@ -2794,13 +2797,17 @@ completion_reward = {
 			}
 		}
 	}
+
+
+
+
+
+
+	###民族革命政府
 	focus = {
 		id = FRW_focus134
 		icon = GFX_goal_FRW_focus134
 		cost = 5.00
-		prerequisite = {
-			#focus = FRW_focus7
-		}
 		available = {
 			has_country_flag = FRW_Far_left_1
 		}
@@ -2808,10 +2815,10 @@ completion_reward = {
 			has_country_flag = FRW_Far_left_1
 		}
 		bypass = {
-		   # has_country_flag = FRW_Far_left_1
+		    has_country_flag = FRW_Far_left_1
 		}
-		x = 12
-		y = 15
+		x = 25
+	    y = 13
 		completion_reward = {
 			remove_ideas = National_emergency
 			add_country_leader_role = {
@@ -2837,6 +2844,97 @@ completion_reward = {
 			}
 			set_popularities = {
 				Revolutionism = 100
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+######农业（友）线
+	focus = {
+		id = FRW_focus142
+		icon = GFX_goal_FRW_focus134
+		cost = 5.00
+		prerequisite = {
+			#focus = FRW_focus7
+		}
+		available = {
+			
+		}
+		bypass = {
+		}
+		x = 41
+	    y = 13
+		completion_reward = {
+			add_country_leader_role = {
+				character = FRW_Louis_Guillon
+				promote_leader = yes
+				country_leader = {
+					ideology = Populist_Conservatism
+					expire = "1965.1.1.1"
+					#traits = { war_industrialist }
+				}
+			} 
+			hidden_effect = { 
+				promote_character = { 
+				character = FRW_Louis_Guillon
+				ideology = Populist_Conservatism
+			} 
+			}
+			set_politics = {
+				ruling_party = Conservatism
+				long_name = FRW_Populist_Conservatism_party_new_long
+				name = FRW_Populist_Conservatism_party_new
+			}
+			set_popularities = {
+				Conservatism = 100
+			}
+		}
+	}
+	######农业（友）线
+	focus = {
+		id = FRW_focus143
+		icon = GFX_goal_FRW_focus134
+		cost = 5.00
+		prerequisite = {
+			#focus = FRW_focus7
+		}
+		available = {
+			
+		}
+		x = 43
+	    y = 13
+		completion_reward = {
+			add_country_leader_role = {
+				character = FRW_Pierre_Taittinger
+				promote_leader = yes
+				country_leader = {
+					ideology = Ultranationalism_type
+					expire = "1965.1.1.1"
+					#traits = { war_industrialist }
+				}
+			}  
+			hidden_effect = {  
+				promote_character = { 
+				character = FRW_Pierre_Taittinger
+				ideology = Ultranationalism_type
+			}  
+			}
+			set_politics = {
+				ruling_party = Ultranationalism
+				long_name = FRW_Ultranationalism_party_new_long
+				name = FRW_Ultranationalism_party_new
+			}
+			set_popularities = {
+				Ultranationalism = 100
 			}
 		}
 	}
