@@ -61,7 +61,7 @@ recruit_character = SCX_WuYuZhang
 	}
 
 set_politics = {
-	ruling_party = Paternalism
+	ruling_party = Anarchism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -92,8 +92,8 @@ add_ideas = {
 	SCX_Dooka_Army
 }
 set_popularities = {
-	Paternalism = 80
-	Dictatorship = 20
+	Anarchism = 50
+	Dictatorship = 50
 }
 set_autonomy = {
 	target = SSD
