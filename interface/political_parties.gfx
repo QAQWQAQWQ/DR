@@ -87,19 +87,23 @@ spriteTypes = {
 
 	
 	spriteType = { 
-		name = "GFX_ideology_Moderate_New_San-Min_Doctrine" 
+		name = "GFX_ideology_New_Sanmin_Doctrine" 
 		texturefile = "gfx/interface/ideologies/Three_Principles_People.dds"
 	}
 	spriteType = { 
-		name = "GFX_ideology_Welfare_San-Min_Doctrine" 
+		name = "GFX_ideology_Welfare_Sanmin_Doctrine" 
 		texturefile = "gfx/interface/ideologies/Three_Principles_People.dds"
 	}
 	spriteType = { 
-		name = "GFX_ideology_Conservative_San-Min_Doctrine" 
+		name = "GFX_ideology_Conservative_Sanmin_Doctrine" 
 		texturefile = "gfx/interface/ideologies/Three_Principles_People.dds"
 	}
 	spriteType = { 
-		name = "GFX_ideology_Constitutional_San-Min_Doctrine" 
+		name = "GFX_ideology_Paternalist_Constitutional_Sanmin_Doctrine" 
+		texturefile = "gfx/interface/ideologies/Three_Principles_People.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_Socialist_Popular_Revolution" 
 		texturefile = "gfx/interface/ideologies/Three_Principles_People.dds"
 	}
 }

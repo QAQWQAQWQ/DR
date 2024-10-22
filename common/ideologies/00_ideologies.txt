@@ -76,6 +76,7 @@ ideologies = {
 			Council_Socialism={}
 			Agrarian_Socialism={}
 			Populist_Socialism={}
+			Socialist_Popular_Revolution ={color = { 36 56 154 }}
 		}
 		dynamic_faction_names = {
 		}
@@ -133,7 +134,7 @@ ideologies = {
 			Fabian_Socialism={}
 			Union_Socialism={}
 			Bernstein_Reformism={}
-			Moderate_New_San-Min_Doctrine={color = { 36 56 154 }}
+			New_Sanmin_Doctrine={color = { 36 56 154 }}
 		}
 		dynamic_faction_names = {
 		}
@@ -167,8 +168,8 @@ ideologies = {
 			Progressive_Liberalism={}
 			Progressive_Warlord = {}
 			Hamiltonian_Liberalism = {}
-			Welfare_San-Min_Doctrine={color = { 36 56 154 }}
-			Constitutional_San-Min_Doctrine={color = { 36 56 154 }}
+			Welfare_Sanmin_Doctrine={color = { 36 56 154 }}
+			
 		}
 		
 		dynamic_faction_names = {
@@ -214,7 +215,7 @@ ideologies = {
 			Populist_Conservatism={}
 			Semi-Democratic_Colonization = {}
 			Liberal_Conservatism = {}
-			Conservative_San-Min_Doctrine={color = { 36 56 154 }}
+			Conservative_Sanmin_Doctrine={color = { 36 56 154 }}
 		}
 		
 		dynamic_faction_names = {
@@ -257,6 +258,7 @@ ideologies = {
 			Edinogist_Colonization = {}
 			Gelaohui_Order = {}
 			Authoritarian_Civilian_Government = {}
+			Paternalist_Constitutional_Sanmin_Doctrine={color = { 36 56 154 }}
 		}
 		dynamic_faction_names = {
 		}
@@ -293,6 +295,7 @@ ideologies = {
 			Absolute_Theocracy = {}
 			Theocracy-Aristocracy_Dictatorship = {}
 			Civilian_Dictatorship = {}
+			False-Revolutionary_Dictatorship_of_Reaction = {}
 		}
 		
 		dynamic_faction_names = {
@@ -371,7 +374,7 @@ ideologies = {
 	###极端民族主义###
 	Ultranationalism = {
 		types = {
-			Ultranationalism_type={}
+			Ultranationalism={}
 		}
 		dynamic_faction_names = {
 		}

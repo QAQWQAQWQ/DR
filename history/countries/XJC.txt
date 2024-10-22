@@ -58,7 +58,7 @@ XJC_parliament_seat=yes
 	}
 	country_event = {id=XJC.1 days=185}
 set_politics = {
-	ruling_party = Liberalism
+	ruling_party = Paternalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -67,8 +67,6 @@ add_ideas = {
 	Smallholder_economy
 }
 set_popularities = {
-	Liberalism = 50
-	Conservatism = 26
-	Paternalism = 23
-	Ultranationalism = 1
+	Paternalism = 50
+	Dictatorship = 50
 }
