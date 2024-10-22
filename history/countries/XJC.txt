@@ -12,11 +12,11 @@ set_technology = {
 	fuel_silos = 1
 }
 recruit_character = XJC_FengTeMing
+recruit_character = XJC_FangYaoNan
+recruit_character = XJC_YangZangXu
 recruit_character = XJC_FengDaShu
 recruit_character = XJC_HaoKeQuan
-recruit_character = XJC_YangZangXu
 recruit_character = XJC_ShengShiCai
-recruit_character = XJC_FangYaoNan
 
 
 set_country_flag = parliament_mian_button_yes
@@ -68,5 +68,6 @@ add_ideas = {
 }
 set_popularities = {
 	Paternalism = 50
-	Dictatorship = 50
+	Anarchism = 10
+	Dictatorship = 40
 }
