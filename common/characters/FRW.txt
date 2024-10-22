@@ -1,4 +1,35 @@
 characters={
+	FRW_Louis_Guillon={
+		name=FRW_Louis_Guillon
+		portraits={
+			civilian={
+				large="gfx/leaders/FRW/Portrait_Louis_Guillon.tga"
+			}
+		}
+		country_leader={
+			ideology=Populist_Conservatism
+			#desc = FRW_Pierre_Monatte_desc
+			traits={  } 
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	FRW_Pierre_Taittinger={
+		name=FRW_Pierre_Taittinger
+		portraits={
+			civilian={
+				large="gfx/leaders/FRW/Portrait_Pierre_Taittinger.tga"
+			}
+		}
+		country_leader={
+			ideology=Ultranationalism_type
+			#desc = FRW_Pierre_Monatte_desc
+			traits={  } 
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
 	FRW_Geoffrey_Trollope_Lee={
 		name=FRW_Geoffrey_Trollope_Lee
 		portraits={

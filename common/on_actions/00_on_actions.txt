@@ -215,6 +215,7 @@ on_capitulation = {
 					add_core_of = NPL
 				}
 			}
+			
 	    }
 		#every_country = { news_event = ger_con.6 }
 		FRW={country_event = {id=FRW.52 days=10}}
@@ -222,5 +223,31 @@ on_capitulation = {
 }
 
 
+
+
+on_capitulation = {
+	effect = {
+		if = {
+			limit = {
+				ROOT = { tag = FRW }
+				FROM = { tag = AOX }
+		    }
+	    }
+		#every_country = { news_event = ger_con.6 }
+		FRW={country_event = {id=FRW.56}}
+}
+}
+on_capitulation = {
+	effect = {
+		if = {
+			limit = {
+				ROOT = { tag = FRW }
+				FROM = { tag = WWS }
+		    }
+	    }
+		#every_country = { news_event = ger_con.6 }
+		FRW={country_event = {id=FRW.56}}
+}
+}
 }
 

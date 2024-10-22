@@ -7,7 +7,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Constitutional_San-Min_Doctrine
+			ideology=Paternalist_Constitutional_Sanmin_Doctrine
 			desc=ROC_Song_JiaoRen_DESC
 			traits={  }
 			expire="1965.1.1.1"
@@ -22,12 +22,27 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Moderate_Socialism
+			ideology=Socialist_Popular_Revolution
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
 		}
 	}
+	ROC_ChenQiMei={
+		name=ROC_ChenQiMei
+		portraits={
+			civilian={
+				large="gfx/leaders/ROC/portrait_ChenQiMei.tga"
+			}
+		}
+		country_leader={
+			ideology=False-Revolutionary_Dictatorship_of_Reaction
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
 	ROC_ZhangZhiZhong={
 		name=ROC_ZhangZhiZhong
 		portraits={

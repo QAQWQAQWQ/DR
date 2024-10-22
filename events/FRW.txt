@@ -8,8 +8,103 @@ add_namespace = Assembly_Tours
 add_namespace = FRW_Syndicates
 add_namespace = FRW_Far_left
 
-
-
+add_namespace = FRW_agriculture
+########农友
+country_event = {
+	id = FRW_agriculture.1
+	title = FRW_agriculture.1.t
+	desc = FRW_agriculture.1.d
+	picture = GFX_Far_left_0
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_agriculture.1.a
+		country_event = {id=FRW_agriculture.2 days=5}
+	}
+}
+country_event = {
+	id = FRW_agriculture.2
+	title = FRW_agriculture.2.t
+	desc = FRW_agriculture.2.d
+	picture = GFX_Far_left_0
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_agriculture.2.a
+		country_event = {id=FRW_agriculture.3 days=16}
+	}
+}
+country_event = {
+	id = FRW_agriculture.3
+	title = FRW_agriculture.3.t
+	desc = FRW_agriculture.3.d
+	picture = GFX_Far_left_0
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_agriculture.3.a
+		country_event = {id=FRW_agriculture.4 days=30}
+	}
+}
+country_event = {
+	id = FRW_agriculture.4
+	title = FRW_agriculture.4.t
+	desc = FRW_agriculture.4.d
+	picture = GFX_Far_left_0
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_agriculture.4.a
+		country_event = {id=FRW_agriculture.5 days=20}
+	}
+}
+country_event = {
+	id = FRW_agriculture.5
+	title = FRW_agriculture.5.t
+	desc = FRW_agriculture.5.d
+	picture = GFX_Far_left_0
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_agriculture.5.a
+		country_event = {id=FRW_agriculture.6 days=16}
+	}
+	option = {
+		name = FRW_agriculture.5.b
+		country_event = {id=FRW_agriculture.6 days=16}
+	}
+}
+country_event = {
+	id = FRW_agriculture.6
+	title = FRW_agriculture.6.t
+	desc = FRW_agriculture.6.d
+	picture = GFX_Far_left_0
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_agriculture.6.a
+		country_event = {id=FRW_agriculture.7 days=16}
+	}
+	option = {
+		name = FRW_agriculture.6.b
+	}
+}
+country_event = {
+	id = FRW_agriculture.7
+	title = FRW_agriculture.7.t
+	desc = FRW_agriculture.7.d
+	picture = GFX_Far_left_0
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_agriculture.7.a
+		complete_national_focus = FRW_focus142
+	}
+	option = {
+		name = FRW_agriculture.7.b
+	}
+}
+########农友
 country_event = {
 	id = Geoffrey.1
 	title = Geoffrey.1.t
@@ -1521,5 +1616,35 @@ country_event = {
 		}
 	option = {
 		name = FRW.55.a
+		
+		
+	}
+}
+
+country_event = {
+	id = FRW.56
+	title = FRW.56.t
+	desc = FRW.56.d
+	picture = GFX_Eu_election
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.56.a 
+		MOA={
+			change_tag_from = FRW
+			end_exile = yes
+		}
+		hidden_effect = {
+			every_core_state = {
+				if={
+					limit = {
+						is_core_of = FRW
+					}
+					add_core_of = MOA
+					transfer_state_to = MOA
+				}
+			}
+		} 
 	}
 }

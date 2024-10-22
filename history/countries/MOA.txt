@@ -47,14 +47,13 @@ set_technology = {
 
 
 set_politics = {
-	ruling_party =  Dictatorship
+	ruling_party =  Paternalism
 	last_election = "1921.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	Dictatorship= 70
-	Paternalism = 30
+	Paternalism= 100
 }
 
 
