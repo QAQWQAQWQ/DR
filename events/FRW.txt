@@ -1616,5 +1616,35 @@ country_event = {
 		}
 	option = {
 		name = FRW.55.a
+		
+		
+	}
+}
+
+country_event = {
+	id = FRW.56
+	title = FRW.56.t
+	desc = FRW.56.d
+	picture = GFX_Eu_election
+	is_triggered_only = yes
+	trigger = {
+		}
+	option = {
+		name = FRW.56.a 
+		MOA={
+			change_tag_from = FRW
+			end_exile = yes
+		}
+		hidden_effect = {
+			every_core_state = {
+				if={
+					limit = {
+						is_core_of = FRW
+					}
+					add_core_of = MOA
+					transfer_state_to = MOA
+				}
+			}
+		} 
 	}
 }
