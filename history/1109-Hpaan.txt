@@ -1,0 +1,20 @@
+
+state={
+	id=1109
+	name="STATE_1109"
+	manpower = 208800
+	
+	state_category = pastoral
+	history={
+		owner = YDA
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={ 
+		4293 4654 4408 7441 12238 12317
+	}
+
+	local_supplies=0.0 
+}
