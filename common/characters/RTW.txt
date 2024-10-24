@@ -1,4 +1,18 @@
 characters={
+	RTW_Den_Kenjiro={
+		name=RTW_Den_Kenjiro
+		portraits={
+			civilian={
+				large="gfx/leaders/RTW/portrait_Kenjiro.tga"
+			}
+		}
+		country_leader={
+			ideology=Colonization_Assimilation
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	RTW_Shinpei_Goto={
 		name=RTW_Shinpei_Goto
 		portraits={

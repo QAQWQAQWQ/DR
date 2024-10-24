@@ -12,7 +12,7 @@ set_technology = {
 	fuel_silos = 1
 }
 
-recruit_character = 
+recruit_character = HAQ_Kombu_Dorzhu
 
 
 	set_technology = {
@@ -56,8 +56,7 @@ set_politics = {
 }
 news_event = { id = HAQ.1 days = 425 }
 set_popularities = {
-	Liberalism = 5
-	Nationalism = 1
+	Paternalism = 10
 	Dictatorship = 89
-	Revolutionism = 5
+	Revolutionism = 1
 }

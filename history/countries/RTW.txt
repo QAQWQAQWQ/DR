@@ -12,7 +12,7 @@ set_technology = {
 	fuel_silos = 1
 }
 
-recruit_character = RTW_Shinpei_Goto
+recruit_character = RTW_Den_Kenjiro
 
 	set_technology = {
 		interwar_artillery = 1
@@ -48,7 +48,7 @@ recruit_character = RTW_Shinpei_Goto
 	}
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no	
@@ -57,5 +57,6 @@ add_ideas = {
 	Smallholder_economy
 }
 set_popularities = {
-	Conservatism = 100
+	Dictatorship = 97
+	Liberalism = 3
 }

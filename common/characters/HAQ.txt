@@ -1,4 +1,18 @@
 characters={
+	HAQ_Kombu_Dorzhu={
+		name=HAQ_Kombu_Dorzhu
+		portraits={
+			civilian={
+				large="gfx/leaders/HAQ/Portrait_Kombu_Dorzhu.tga"
+			}
+		}
+		country_leader={
+			ideology=Theocracy-Aristocracy_Dictatorship
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	HAQ_TianZhongYu={
 		name=HAQ_TianZhongYu
 		portraits={
