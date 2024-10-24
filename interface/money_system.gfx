@@ -1,5 +1,10 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_crisis_button_effect"
+		texturefile = "gfx/interface/gui/oil/crisis_button_effect.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_Oil_crisis_ENL_button"
 		texturefile = "gfx/interface/gui/oil/Oil_crisis_ENL_button.dds"
 		legacy_lazy_load = no
