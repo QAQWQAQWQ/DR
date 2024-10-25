@@ -9,7 +9,7 @@ state = {
 		grain=3
 	}
 	history = {
-		owner = RDN
+		owner = TSI
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 1
@@ -18,7 +18,7 @@ state = {
 				naval_base = 1
 			}
 		}
-		add_core_of = RDN
+		add_core_of = TSI
 	}
 
 	provinces = {
