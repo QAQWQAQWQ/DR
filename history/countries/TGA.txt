@@ -47,7 +47,7 @@ recruit_character = TGA_Alexei_Kuropatkin
 	}
 
 set_politics = {
-	ruling_party =Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -58,7 +58,7 @@ add_ideas = {
 #law
 }
 set_popularities = {
-	Conservatism = 100
+	Dictatorship = 100
 }
 
 
