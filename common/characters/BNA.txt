@@ -26,5 +26,19 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+	}	
+	BNA_Charles_Evans_Hughes={
+		name=BNA_Charles_Evans_Hughes
+		portraits={
+			civilian={
+				large="gfx/leaders/BNA/Portrait_Charles_Evans_Hughes.tga"
+			}
+		}
+		country_leader={
+			ideology=Hamiltonian_Liberalism
+			traits={  }
+			expire="1965.1.1.1" 
+			id=-1
+		}
 	}		
 	}
