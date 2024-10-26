@@ -2,9 +2,9 @@
 state = {
 	id = 161
 	name = "STATE_161"
-	manpower = 2002401
+	manpower = 1201441
 	
-	state_category = city
+	state_category = town
 	resources={
 		grain=5
 		
@@ -15,19 +15,22 @@ state = {
 
 	history = {
 		owner = PMA
+		add_core_of = PMA
 		victory_points = { #Parma
-			9752 1
+			9752 3
+		}
+		victory_points = {
+			6973 1 
 		}
 		buildings = {
 			infrastructure = 4 #was: 7
 			industrial_complex = 1
 			air_base = 2
 		}
-		add_core_of = PMA
 	}
 
 	provinces = {
-		3773 3976 6790 9752 
+		3976 6973 9752 11734
 	}
 
 	local_supplies = 0.0 

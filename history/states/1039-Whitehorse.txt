@@ -2,15 +2,16 @@ state={
 	id=1039
 	name="STATE_1039"
 	provinces={
-		7869 
+		3773 6790
 	}
 	history={
-		owner = UBS
+		owner = PMA
+		add_core_of = PMA
 		buildings = {
 			industrial_complex = 1
 		}
 	}
-	manpower=6908
+	manpower=800960
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000
