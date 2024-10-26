@@ -1,4 +1,4 @@
-﻿capital = 117
+﻿capital = 115
 
 oob = "RDN_1920"
 set_naval_oob = "RDN_1920_naval"
@@ -83,9 +83,7 @@ RDN_Camorra
 }
 set_popularities = {
 	Conservatism = 80
-	Nationalism = 10
-	Conservatism = 5
-	Revolutionism = 5
+	Liberalism = 20
 }
 add_equipment_to_stockpile = {
     type = infantry_equipment

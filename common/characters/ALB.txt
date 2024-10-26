@@ -1,4 +1,18 @@
 characters={
+	ALB_Friedrich_I={
+		name=ALB_Friedrich_I
+		portraits={
+			civilian={
+				large="gfx/leaders/AOX/Portrait_Friedrich.tga"
+			}
+		}
+		country_leader={
+			ideology=Semi-Constitutional_Monarchy
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
 	ALB_Wilhelm_Wied={
 		name=ALB_Wilhelm_Wied
 		portraits={
