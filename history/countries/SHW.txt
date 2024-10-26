@@ -345,7 +345,7 @@ create_intelligence_agency = {
 		icon = GFX_intelligence_agency_logo_SHW
 }
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Paternalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -407,12 +407,11 @@ country_event = { id = SHW_event.34 days = 974 }
 country_event = { id = SHW_event.34 days = 1274 }
 country_event = { id = SHW_event.34 days = 1574 }
 set_popularities = {
-	Nationalism = 6
-	Conservatism = 59
-	Reformism = 3
-	Reformism = 6
-	Liberalism = 6
+	Paternalism = 50
 	Conservatism = 20
+	Liberalism = 10
+	Reformism = 10
+	Nationalism = 10
 }
 set_variable = { SHW_Loyalty = 85 }
 clamp_variable = {
