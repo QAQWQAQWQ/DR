@@ -168,16 +168,14 @@
 ####家长制
  Paternalism:0 "家长制"
  Paternalism_desc:0 ""
- Edinogism:0 "归一主义"
- Edinogism_desc:0 ""
- Edinogist_Colonization:0 "归一主义殖民政府"
- Edinogist_Colonization_desc:0 ""
  Authoritarian_Civilian_Government:0 "威权文官政府"
  Authoritarian_Civilian_Government_desc:0 ""
  Paternalist_Constitutional_Sanmin_Doctrine:0 "家长制宪政三民主义"
  Paternalist_Constitutional_Sanmin_Doctrine_desc:0 ""
  Authoritarian_Monarchy:0 "威权君主制"
  Authoritarian_Monarchy_desc:0 ""
+ Semi-Constitutional-Monarchy:0 "半君主立宪制"
+ Semi-Constitutional-Monarchy_desc:0 ""
 
 
 
@@ -215,6 +213,10 @@
  National_Syndicalism_desc:0 ""
  National_Militarism:0 "民族军国主义"
  National_Militarism_desc:0 ""
+ Edinogism:0 "归一主义"
+ Edinogism_desc:0 ""
+ Edinogist_Colonization:0 "归一主义殖民政府"
+ Edinogist_Colonization_desc:0 ""
 
 ####极端民族主义
 
@@ -314,8 +316,8 @@ XYL_Revolutionism_party_new_long:0 "多瑙河联盟"
 
 
 
-SHW_Conservatism_party:0 "罗曼诺夫王朝"
-SHW_Conservatism_party_long:0 "罗曼诺夫王朝-无党派"
+SHW_Paternalism_party:0 "古尔科内阁"
+SHW_Paternalism_party_long:0 "古尔科内阁"
 
 
 NPL_Conservatism_party:0 "波拿巴王朝"
@@ -359,11 +361,32 @@ ROC_Dictatorship_party:0 "国民党(右派)"
 ROC_Dictatorship_party_long:0 "国民党(右派)"
 
 
-KEI_Paternalism_party:0 "七河州总督府"
-KEI_Paternalism_party_long:0 "七河州总督府"
+KEI_Nationalism_party:0 "七河州总督府"
+KEI_Nationalism_party_long:0 "七河州总督府"
+
+FEL_Paternalism_party:0 "芬兰总督府"
+FEL_Paternalism_party_long:0 "芬兰总督府"
+
+ARA_Paternalism_party:0 "亚美尼亚总督府"
+ARA_Paternalism_party_long:0 "亚美尼亚总督府"
+
+GGA_Dictatorship_party:0 "草原总督府"
+GGA_Dictatorship_party_long:0 "草原总督府"
+
+TGA_Dictatorship_party:0 "突厥斯坦总督府"
+TGA_Dictatorship_party_long:0 "突厥斯坦总督府"
+
+KKE_Dictatorship_party:0 "弘吉剌部"
+KKE_Dictatorship_party_long:0 "弘吉剌部"
+
+EOB_Dictatorship_party:0 "曼吉特部"
+EOB_Dictatorship_party_long:0 "曼吉特部"
 
 XUH_Conservatism_party:0 "大清官府"
 XUH_Conservatism_party_long:0 "大清官府"
+
+QIN_Dictatorship_party:0 "善耆内阁"
+QIN_Dictatorship_party_long:0 "善耆内阁"
 
 SCX_Anarchism_party:0 "国民党四川支部"
 SCX_Anarchism_party_long:0 "国民党四川支部"
@@ -434,8 +457,8 @@ MEG_Dictatorship_party_long:0 "第三次那木囊苏伦内阁"
 SSD_Dictatorship_party:0 "川边镇守使公署"
 SSD_Dictatorship_party_long:0 "川边镇守使公署"
 
-YED_Conservatism_party:0 "罗曼诺夫王朝"
-YED_Conservatism_party_long:0 "罗曼诺夫王朝-无党派"
+YED_Paternalism_party:0 "韦尼泽洛斯内阁"
+YED_Paternalism_party_long:0 "韦尼泽洛斯内阁"
 
 QIX_Dictatorship_party:0 "江苏省长公署"
 QIX_Dictatorship_party_long:0 "江苏省长公署"
