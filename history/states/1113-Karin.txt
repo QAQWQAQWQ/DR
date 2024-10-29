@@ -1,24 +1,23 @@
 
 state={
-	id=1062
-	name="STATE_1062"
-	manpower = 104720
+	id=1113
+	name="STATE_1113"
+	manpower = 209439
 	
 	state_category = rural
 	history={
 		owner = ARA
 		add_core_of = ARA
-		
 		victory_points = {
-			10472 5
-		}
+			11853 3
+		}		
 		buildings = {
 			infrastructure = 2
 		}
 	}
 
 	provinces={
-		6669 10403 10472
+		652 789 6976 6991 9886 9954 11853
 	}
 
 	local_supplies=0.0 
