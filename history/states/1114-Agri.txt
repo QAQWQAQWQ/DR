@@ -1,25 +1,23 @@
-
 state={
-	id=1062
-	name="STATE_1062"
-	manpower = 104720
-	
-	state_category = rural
+	id=1114
+	name="STATE_1114" #Van
+
 	history={
 		owner = ARA
 		add_core_of = ARA
-		
 		victory_points = {
-			10472 5
+			12376 1
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 		}
 	}
 
 	provinces={
-		6669 10403 10472
+		9858 10399 11880 12376
 	}
+	manpower = 146196
+	state_category = rural
 
 	local_supplies=0.0 
 }

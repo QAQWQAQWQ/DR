@@ -1,10 +1,16 @@
 state={
-	id=229
-	name="STATE_229"
+	id=1112
+	name="STATE_1112"
+	resources={
+		oil=35 # was: 126.000
+	}
+	resources={
+		grain=6
+	}
 	history={
 		owner = SHW
 		victory_points = {
-			7661 10 
+			11674 1 
 		}
 		buildings = {
 			infrastructure = 2
@@ -17,11 +23,11 @@ state={
 	}
 
 	provinces={
-		7661
+		1467 1539 1610 4660 6642 6763 9715 11645 11674 11708
 	}
-	manpower=360131
+	manpower=1440525
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
 
 	local_supplies=7.0 
 }
