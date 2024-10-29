@@ -1,8 +1,11 @@
 
 Hamilton_scandal_category = {  
 	icon = infiltration
+	allowed = {
+		original_tag = BNA
+	}
 	visible = {
-		tag=BNA
+		
 	}
 }
 

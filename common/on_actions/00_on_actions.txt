@@ -231,6 +231,7 @@ on_capitulation = {
 			limit = {
 				ROOT = { tag = FRW }
 				FROM = { tag = AOX }
+				has_war_with = AOX
 		    }
 	    }
 		#every_country = { news_event = ger_con.6 }
@@ -243,6 +244,7 @@ on_capitulation = {
 			limit = {
 				ROOT = { tag = FRW }
 				FROM = { tag = WWS }
+				has_war_with = WWS
 		    }
 	    }
 		#every_country = { news_event = ger_con.6 }
