@@ -1,4 +1,18 @@
 characters={
+	BXM_Franz_Ferdinand_I={
+		name=BXM_Franz_Ferdinand_I
+		portraits={
+			civilian={
+				large="gfx/leaders/AOX/Portrait_Archduke_Ferdinand4.tga"
+			}
+		}
+		country_leader={
+			ideology=Semi-Constitutional-Monarchy
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
 	BXM_Johann_II_Nepomuk_Adolf_Maria_Hubert_Maximin={
 		name=BXM_Johann_II_Nepomuk_Adolf_Maria_Hubert_Maximin
 		portraits={

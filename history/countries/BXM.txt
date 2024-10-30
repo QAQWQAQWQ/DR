@@ -11,7 +11,7 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-
+recruit_character = BXM_Franz_Ferdinand_I
 recruit_character = BXM_Johann_II_Nepomuk_Adolf_Maria_Hubert_Maximin
 recruit_character = BXM_Tomas_Garrigue_Masaryk
 
@@ -49,7 +49,7 @@ recruit_character = BXM_Tomas_Garrigue_Masaryk
 	}
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Paternalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -71,8 +71,5 @@ Deutscher_Zollverein
 Part_of_Habsburgs
 }
 set_popularities = {
-	Liberalism = 5
-	Nationalism = 1
-	Conservatism = 89
-	Revolutionism = 5
+	Paternalism = 100
 }
