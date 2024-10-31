@@ -22,8 +22,14 @@ state={
 		victory_points = { #Stara Zagora
 			6814 3
 		}
+		victory_points = { #Sliven
+			6967 3
+		}
 		victory_points = { #Haskovo
 			9862 1
+		}
+		victory_points = { #Yambol
+			9888 1
 		}
 		buildings = {
 			infrastructure = 2
@@ -34,7 +40,7 @@ state={
 	}
 
 	provinces={
-		878 893 3937 6814 6857 6923 6952 6982 9818 9862 11813 
+		878 893 3937 6814 6923 6967 6952 6982 9862 9888 11813
 	}
 
 	local_supplies=5.0 
