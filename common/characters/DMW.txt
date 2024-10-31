@@ -1,4 +1,20 @@
 characters={
+	DMW_Carl_Theodor_Zahle={
+		name=DMW_Carl_Theodor_Zahle
+		portraits={
+			civilian={
+				large="gfx/leaders/DMW/portrait_Carl_Theodor_Zahle.tga"
+			}
+		}
+		country_leader={
+			ideology= Progressive_Liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+
+	
 	DMW_Christian_X={
 		name=DMW_Christian_X
 		portraits={
