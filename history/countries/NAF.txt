@@ -11,8 +11,8 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-recruit_character = NAF_Arthur_William_Patrick_Albert
 recruit_character = NAF_Jan_Christiaan_Smuts
+recruit_character = NAF_Arthur_William_Patrick_Albert
 
 	set_technology = {
 		interwar_artillery = 1
@@ -48,15 +48,14 @@ recruit_character = NAF_Jan_Christiaan_Smuts
 	}
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Liberalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	Liberalism = 5
-	Nationalism = 5
-	Conservatism = 85
-	Revolutionism = 5
+	Liberalism = 51
+	Nationalism = 33.5
+	Reformism = 15.5
 }

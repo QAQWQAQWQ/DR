@@ -1,4 +1,4 @@
-﻿capital = 268
+﻿capital = 550
 
 oob = "ESI_1920"
 
@@ -11,9 +11,9 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-
-recruit_character = ESI_Mikhail_II
 recruit_character = ESI_Alexander_Bulatovich
+recruit_character = ESI_Mikhail_II
+
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -80,7 +80,7 @@ recruit_character = ESI_Alexander_Bulatovich
 	set_garrison_strength = 1.0
 }
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -89,7 +89,5 @@ add_ideas = {
 	Smallholder_economy
 	ESI_Black_Cossacks}
 set_popularities = {
-	Liberalism = 10
-	Nationalism = 12
-	Conservatism = 78
+	Dictatorship = 100
 }
