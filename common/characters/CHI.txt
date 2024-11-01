@@ -1,4 +1,5 @@
 characters={
+	
 	CHI_Li_YuanHong={
 		name=CHI_Li_YuanHong
 		portraits={
@@ -12,6 +13,21 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}		
+	}	
+	CHI_Song_JiaoRen={
+		name=ROC_Song_JiaoRen
+		portraits={
+			civilian={
+				large="gfx/leaders/ROC/portrait_Song_JiaoRen.tga"
+			}
+		}
+		country_leader={
+			ideology=Sanmin_Liberalism
+			desc=ROC_Song_JiaoRen_DESC
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
 
 	}

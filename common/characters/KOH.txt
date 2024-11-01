@@ -1,4 +1,47 @@
 characters={
+	KOH_Karoly_Huszar={
+		name=KOH_Karoly_Huszar
+		portraits={
+			civilian={
+				large="gfx/leaders/KOH/Portrait_Karoly_Huszar.tga"
+			}
+		}
+		country_leader={
+			ideology=Semi-Constitutional-Monarchy
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	KOH_Horthy_Miklos={
+		name=KOH_Horthy_Miklos
+		portraits={
+			civilian={
+				large="gfx/leaders/KOH/Portrait_Horthy_Miklós.tga"
+			}
+		}
+		country_leader={
+			ideology=Military_Dictatorship
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		navy_leader = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+	}
+	
 	KOH_Joseph_Augusta={
 		name=KOH_Joseph_Augusta
 		portraits={
@@ -34,27 +77,7 @@ characters={
 			id=-1
 		}
 	}	
-	KOH_Horthy_Miklos={
-		name=KOH_Horthy_Miklos
-		portraits={
-			civilian={
-				large="gfx/leaders/KOH/Portrait_Horthy_Miklós.tga"
-			}
-		}
-		country_leader={
-			ideology=Authoritarian_Conservatism
-			traits={  }
-			expire="1965.1.1.1"
-			id=-1
-		}
-		navy_leader = {
-			skill = 3
-			attack_skill = 2
-			defense_skill = 2
-			maneuvering_skill = 2
-			coordination_skill = 2
-		}
-	}
+	
 	KOH_Janky_Kocsard={
 		name=KOH_Janky_Kocsard
 		portraits={
