@@ -97,36 +97,36 @@ early_ship_hull_heavy = 1
 
 	set_autonomy = {
 		target = TRO
-		autonomy_state = autonomy_reichsprotectorate
+		autonomy_state = autonomy_supervised_state
 	}
 
 	set_autonomy = {
 		target = SLY
-		autonomy_state = autonomy_reichsprotectorate
+		autonomy_state = autonomy_supervised_state
 	}
 
 	set_autonomy = {
 		target = YEM
-		autonomy_state = autonomy_reichsprotectorate
+		autonomy_state = autonomy_supervised_state
 	}
 
 	set_autonomy = {
 		target = FMS
-		autonomy_state = autonomy_reichsprotectorate
+		autonomy_state = autonomy_supervised_state
 	}
 	
 	set_autonomy = {
 		target = MSS
-		autonomy_state = autonomy_reichsprotectorate
+		autonomy_state = autonomy_supervised_state
 	}
 	
 	set_autonomy = {
 		target = CBA
-		autonomy_state = autonomy_reichsprotectorate
+		autonomy_state = autonomy_supervised_state
 	}
 	set_autonomy = {
 		target = BUD
-		autonomy_state = autonomy_reichsprotectorate
+		autonomy_state = autonomy_supervised_state
 	}
 	
 
