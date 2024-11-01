@@ -54,7 +54,7 @@ set_technology = {
 }
 news_event = {id= SBY.1 days=135}
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Paternalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -88,8 +88,5 @@ set_variable = {
 	SBY_Bloated_bureaucracy5=-0.1
 }
 set_popularities = {
-	Liberalism = 5
-	Nationalism = 1
-	Conservatism = 89
-	Revolutionism = 5
+	Paternalism = 100
 }

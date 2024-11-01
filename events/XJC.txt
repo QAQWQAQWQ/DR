@@ -118,29 +118,29 @@ country_event  = {
 		country_event = {id=XJC.5 days=1}
 	}
 }	
-country_event  = {
-	id = XJC.4
-	title = XJC.4.t
-	desc = XJC.4.d
+#country_event  = {
+	#id = XJC.4
+	#title = XJC.4.t
+	#desc = XJC.4.d
 	#picture = 
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = XJC.4.a
-		promote_character = {
-			character = XJC_FangYaoNan
-			ideology = Authoritarian_Conservatism
-		}
-		set_politics = {
-			ruling_party = Conservatism
-			#long_name = XJC_Conservatism_party_new_long
-			#name = XJC_Conservatism_new_party
-		}
-		set_popularities = {
-			Conservatism = 100
-		}
-	}
-}
+	#is_triggered_only = yes
+	#fire_only_once = yes
+	#option = {
+	#	name = XJC.4.a
+	#	promote_character = {
+	#		character = XJC_FangYaoNan
+	#		ideology = Authoritarian_Conservatism
+	#	}
+	#	set_politics = {
+	#		ruling_party = Conservatism
+	#		#long_name = XJC_Conservatism_party_new_long
+	#		#name = XJC_Conservatism_new_party
+	#	}
+	#	set_popularities = {
+	#		Conservatism = 100
+	#	}
+	#}
+#}
 country_event  = {
 	id = XJC.5
 	title = XJC.5.t
