@@ -11,6 +11,7 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
+recruit_character = DMA_Thomas_Snowden
 recruit_character = DMA_Francisco_Hilario_Henriquez_Carvajal
 
 	set_technology = {
@@ -47,7 +48,7 @@ recruit_character = DMA_Francisco_Hilario_Henriquez_Carvajal
 	}
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Paternalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -57,6 +58,5 @@ add_ideas={
 Smallholder_economy
 }
 set_popularities = {
-    Liberalism = 32
-	Conservatism = 68
+    Paternalism = 100
 }
