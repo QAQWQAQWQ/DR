@@ -49,3 +49,13 @@ set_popularities = {
 	Conservatism = 39
 	Reformism = 10
 }
+set_autonomy = {
+	target = HAT
+	autonomy_state = autonomy_reichskommissariat
+}
+set_autonomy = {
+	target = DMA
+	autonomy_state = autonomy_reichskommissariat
+}
+give_guarantee = MEX
+give_guarantee = NIC

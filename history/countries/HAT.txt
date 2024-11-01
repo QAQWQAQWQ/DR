@@ -11,6 +11,7 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
+recruit_character = HAT_Smedley_Darlington_Butler
 recruit_character = HAT_Philippe_Sudre_Dartiguenave
 
 	set_technology = {
@@ -47,7 +48,7 @@ recruit_character = HAT_Philippe_Sudre_Dartiguenave
 	}
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Paternalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -57,5 +58,5 @@ add_ideas={
 Smallholder_economy
 }
 set_popularities = {
-	Conservatism = 100
+	Paternalism = 100
 }
