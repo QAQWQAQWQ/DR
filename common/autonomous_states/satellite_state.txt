@@ -1,32 +1,32 @@
 autonomy_state = {
-	id = autonomy_integrated_puppet
+	id = autonomy_satellite_state
 	
+	default = yes
 	is_puppet = yes
 	
-	min_freedom_level = 0.2
+	min_freedom_level = 0.5
 	
-	manpower_influence = 1.0
+	manpower_influence = 0.7
 	
 	rule = {
 		desc = "RULE_DESC_IS_A_SUBJECT"
 		
 		can_not_declare_war = no
 		can_decline_call_to_war = no
-		units_deployed_to_overlord = no
 		can_be_spymaster = yes
 		contributes_operatives = yes
 		can_create_collaboration_government = yes
 	}
 	
 	modifier = {
-		autonomy_manpower_share = 1.0
+		autonomy_manpower_share = 0.7
 		can_master_build_for_us = 1
-		extra_trade_to_overlord_factor = 1.0
-		overlord_trade_cost_factor = -0.9
+		conscription_factor = -0.25
+		extra_trade_to_overlord_factor = 0.6
+		overlord_trade_cost_factor = -0.6
 		cic_to_overlord_factor = 0.25
-		mic_to_overlord_factor = 0.75
-
-		research_sharing_per_country_bonus_factor = -0.5
+		license_subject_master_purchase_cost = -1
+		autonomy_gain_global_factor = -0.3
 	}
 	
 	ai_subject_wants_higher = {
@@ -38,15 +38,13 @@ autonomy_state = {
 	}
 
 	ai_overlord_wants_garrison = {
-		always = yes
+		always = no
 	}
 
 	allowed = {
-		has_dlc = "Together for Victory"
-
-		
+		has_dlc = "Death or Dishonor"
 	}
-	
+
 	can_take_level = {
 		#trigger here
 	}

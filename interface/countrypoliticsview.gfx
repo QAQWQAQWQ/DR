@@ -166,7 +166,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_autonomy_supervised_state_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_supervised_state.dds"
+		textureFile = "gfx/interface/autonomy/autonomy_collaboration_government.dds"
 	}
 
 	spriteType = {
@@ -185,6 +185,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_autonomy_occupation_zone_icon"
 		textureFile = "gfx/interface/autonomy/autonomy_annex_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_autonomy_general_governorate_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_supervised_state.dds"
+	}
+	spriteType = {
+		name = "GFX_autonomy_satellite_state_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_unknown_icon.dds"
 	}
 	#-------------
 
