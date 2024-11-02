@@ -13,15 +13,55 @@ state={
 			4464 1 
 		}
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			air_base = 3
+			infrastructure = 4
+			industrial_complex = 4
 			4464 = {
 				naval_base = 4
 			}
-			7552 = {
-				naval_base = 5
+			7464 = {
+				bunker = 10
+
 			}
+			4510 = {
+				bunker = 10
+
+			}
+			10410 = {
+				bunker = 10
+
+			}
+			12328 = {
+				bunker = 10
+
+			}
+			4565 = {
+				bunker = 10
+
+			}
+			8110 = {
+				bunker = 10
+
+			}
+			10449 = {
+				bunker = 10
+
+			}
+			1453 = {
+				bunker = 10
+
+			}
+			7552 = {
+				bunker = 10
+				naval_base = 5
+
+			}
+			7524 = {
+				bunker = 10
+
+			}
+			anti_air_building = 5
+			air_base = 5
+
 		}
 		victory_points = {
 			7552 10 
