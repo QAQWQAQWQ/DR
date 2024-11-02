@@ -1,4 +1,18 @@
 characters={
+	TCY_Leopoldo_III_Toscana={
+		name=TCY_Leopoldo_III_Toscana
+		portraits={
+			civilian={
+				large="gfx/leaders/TCY/Portrait_Leopoldo_III_Toscana.tga"
+			}
+		}
+		country_leader={
+			ideology=Semi-Constitutional-Monarchy
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
     TCY_Leopold_Salvator={
 		name=TCY_Leopold_Salvator
 		portraits={

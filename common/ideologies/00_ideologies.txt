@@ -167,8 +167,8 @@ ideologies = {
 			Classical_Liberalism={}
 			Conservative_Liberalism={}
 			Progressive_Liberalism={}
-			Progressive_Warlord = {}
 			Hamiltonian_Liberalism = {}
+			Sanmin_Liberalism = {}
 			Welfare_Sanmin_Doctrine={color = { 36 56 154 }}
 			
 		}
@@ -255,6 +255,7 @@ ideologies = {
 		types = {
 			Paternalism={}
 			Semi-Democratic_Colonization = {}
+			Authoritarian_Colonial_Government = {}
 			Authoritarian_Civilian_Government = {}
 			Authoritarian_Monarchy = {}
 			Semi-Constitutional-Monarchy = {}
@@ -295,7 +296,9 @@ ideologies = {
 			Absolute_Theocracy = {}
 			Theocracy-Aristocracy_Dictatorship = {}
 			Civilian_Dictatorship = {}
-			False-Revolutionary_Dictatorship_of_Reaction = {}
+			False-Revolutionary_Reactionist_Dictatorship = {}
+			Reactionist_Sanmin_Dictatorship = {}
+			Comprador_Government = {}
 		}
 		
 		dynamic_faction_names = {

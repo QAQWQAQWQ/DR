@@ -10,7 +10,6 @@ recruit_character = SHW_Kerensky
 recruit_character = SHW_Georgy_Lviv
 recruit_character = SHW_Pavel_Milyukov
 recruit_character = SHW_Kirill_Vladimirovich
-recruit_character = SHW_Nikolai_Romanov
 recruit_character = SHW_Kolchak
 recruit_character = SHW_Nikolayevich_Wrangel
 recruit_character = SHW_LavrKornilov
@@ -352,12 +351,12 @@ set_politics = {
 }
 set_autonomy = {
 	target = GGA
-	autonomy_state = autonomy_supervised_state
+	autonomy_state = autonomy_general_governorate
 }
 
 set_autonomy = {
 	target = TGA
-	autonomy_state = autonomy_supervised_state
+	autonomy_state = autonomy_general_governorate
 }
 
 set_autonomy = {
@@ -367,17 +366,17 @@ set_autonomy = {
 
 set_autonomy = {
 	target = KKE
-	autonomy_state = autonomy_reichsprotectorate
+	autonomy_state = autonomy_supervised_state
 }
 
 set_autonomy = {
 	target = EOB
-	autonomy_state = autonomy_reichsprotectorate
+	autonomy_state = autonomy_supervised_state
 }
 
 set_autonomy = {
 	target = MEG
-	autonomy_state = autonomy_reichsprotectorate
+	autonomy_state = autonomy_supervised_state
 }
 
 set_autonomy = {
@@ -391,14 +390,18 @@ set_autonomy = {
 
 set_autonomy = {
 	target = KEI
-	autonomy_state = autonomy_supervised_state
+	autonomy_state = autonomy_general_governorate
 }
 
 set_autonomy = {
 	target = HAQ
-	autonomy_state = autonomy_reichsprotectorate
+	autonomy_state = autonomy_supervised_state
 }
-puppet = YED
+set_autonomy = {
+	target = YED
+	autonomy_state = autonomy_puppet
+}
+
 
 country_event = { id = SHW_event.1 days = 94 }
 country_event = { id = SHW_event.34 days = 374 }

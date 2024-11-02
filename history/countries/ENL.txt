@@ -73,7 +73,7 @@ early_ship_hull_heavy = 1
 
 }
 	create_faction = Commonwealth_of_Nations
-	
+	add_to_faction = BNA
 
 	set_autonomy = { target = IRL autonomy_state = autonomy_dominion }
 	set_autonomy = { target = YDA autonomy_state = autonomy_colony }
@@ -82,10 +82,6 @@ early_ship_hull_heavy = 1
 	
 	set_autonomy = {
 		target = CNA
-		autonomy_state = autonomy_dominion
-	}
-	set_autonomy = {
-		target = BNA
 		autonomy_state = autonomy_dominion
 	}
 
@@ -101,34 +97,37 @@ early_ship_hull_heavy = 1
 
 	set_autonomy = {
 		target = TRO
-		autonomy_state = autonomy_reichsprotectorate
+		autonomy_state = autonomy_supervised_state
 	}
 
 	set_autonomy = {
 		target = SLY
-		autonomy_state = autonomy_reichsprotectorate
+		autonomy_state = autonomy_supervised_state
 	}
 
 	set_autonomy = {
 		target = YEM
-		autonomy_state = autonomy_reichsprotectorate
+		autonomy_state = autonomy_supervised_state
 	}
 
 	set_autonomy = {
 		target = FMS
-		autonomy_state = autonomy_reichsprotectorate
+		autonomy_state = autonomy_supervised_state
 	}
 	
 	set_autonomy = {
 		target = MSS
-		autonomy_state = autonomy_reichsprotectorate
+		autonomy_state = autonomy_supervised_state
 	}
 	
 	set_autonomy = {
 		target = CBA
-		autonomy_state = autonomy_reichsprotectorate
+		autonomy_state = autonomy_supervised_state
 	}
-	
+	set_autonomy = {
+		target = BUD
+		autonomy_state = autonomy_supervised_state
+	}
 	
 
 	
@@ -145,6 +144,9 @@ give_guarantee = VAN
 give_guarantee = NIC
 give_guarantee = CBA
 give_guarantee = KON
+give_guarantee = NBE
+give_guarantee = XZZ
+
 set_politics = {
 	ruling_party = Liberalism
 	last_election = "1918.11.11"

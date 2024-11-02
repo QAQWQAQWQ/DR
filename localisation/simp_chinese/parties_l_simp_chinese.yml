@@ -143,6 +143,8 @@
  Progressive_Warlord_desc:0 ""
  Hamiltonian_Liberalism:0 "汉密尔顿自由主义"
  Hamiltonian_Liberalism_desc:0 ""
+ Sanmin_Liberalism:0 "三民自由主义"
+ Sanmin_Liberalism_desc:0 ""
 
 ##保守主义
  Semi-Constitutional_Monarchy:0 "半君主立宪制"
@@ -176,6 +178,8 @@
  Authoritarian_Monarchy_desc:0 ""
  Semi-Constitutional-Monarchy:0 "半君主立宪制"
  Semi-Constitutional-Monarchy_desc:0 ""
+ Authoritarian_Colonial_Government:0 "威权殖民政府"
+ Authoritarian_Colonial_Government_desc:0 ""
 
 
 
@@ -199,8 +203,12 @@
  Absolute_Theocracy_desc:0 "绝对神权制"
  Theocracy-Aristocracy_Dictatorship:0 "神权-贵族专制"
  Theocracy-Aristocracy_Dictatorship_desc:0 "神权-贵族专制"
- False-Revolutionary_Dictatorship_of_Reaction:0 "伪革命反动统制"
- False-Revolutionary_Dictatorship_of_Reaction_desc:0 "伪革命反动统制"
+ False-Revolutionary_Reactionist_Dictatorship:0 "伪革命反动统制"
+ False-Revolutionary_Reactionist_Dictatorship_desc:0 "伪革命反动统制"
+ Reactionist_Sanmin_Dictatorship:0 "反动三民统制"
+ Reactionist_Sanmin_Dictatorship_desc:0 "反动三民统制"
+ Comprador_Government:0 "买办政府"
+ Comprador_Government_desc:0 "买办政府"
 
 ##混合民族主义
  Hybrid_Nationalism:0 "混合民族主义"
@@ -226,8 +234,8 @@
 
 ###各国政党
 
-FRW_Reformism_party:0 "法国社会主义党"
-FRW_Reformism_party_long:0 "法国社会主义党"
+FRW_Reformism_party:0 "法国社会党"
+FRW_Reformism_party_long:0 "法国社会党"
 FRW_Reformism_party_new:0 "共和-马克思同盟"
 FRW_Reformism_party_long_new:0 "共和-马克思同盟"
 
@@ -268,8 +276,8 @@ ENL_Reformism_party_long:0 "工党"
 ENL_Revolutionism_new_party:0 "英国共产党"
 ENL_Revolutionism_new_party_long:0 "英国共产党"
 
-ENL_Revolutionism_party:0 "英国社会主义党"
-ENL_Revolutionism_party_long:0 "英国社会主义党"
+ENL_Revolutionism_party:0 "英国社会党"
+ENL_Revolutionism_party_long:0 "英国社会党"
 
 BEL_Moderate_Socialism_party:0 "比利时工党(社会主义派)"
 BEL_Moderate_Socialism_party_long:0 "比利时工党(社会主义派)"
@@ -280,16 +288,23 @@ BEL_Liberalism_party_long:0 "自由党"
 BEL_Conservatism_party:0 "天主教党"
 BEL_Conservatism_party_long:0 "天主教党"
 
-WWS_Conservatism_party:0 "霍亨索伦王朝"
-WWS_Conservatism_party_long:0 "霍亨索伦王朝"
+WWS_Paternalism_party:0 "施特雷泽曼内阁"
+WWS_Paternalism_party_long:0 "施特雷泽曼内阁"
 WWS_Liberalism_party:0 "普鲁士自由党"
 WWS_Liberalism_party_long:0 "普鲁士自由党"
-WWS_Reformism_party:0 "德意志社民党"
-WWS_Reformism_party_long:0 "德意志社民党"
+WWS_Reformism_party:0 "德意志社会民主党"
+WWS_Reformism_party_long:0 "德意志社会民主党"
 WWS_Revolutionism_new_party:0 "德意志人民党"
 WWS_Revolutionism_new_party_long:0 "德意志人民党"
 
+HAT_Dictatorship_party:0 "海地新英军政当局"
+HAT_Dictatorship_party_long:0 "海地新英军政当局"
 
+DMA_Dictatorship_party:0 "军事总督府"
+DMA_Dictatorship_party_long:0 "圣多明各军事总督府"
+
+LMJ_Dictatorship_party:0 "圣座"
+LMJ_Dictatorship_party_long:0 "圣座"
 
 BRA_Conservatism_party:0 "佩德罗王朝"
 BRA_Conservatism_party_long:0 "佩德罗王朝"
@@ -331,8 +346,8 @@ NPL_Conservatism_party_long:0 "波拿巴王朝"
 NPL_Conservatism_party1:0 "保守党"
 NPL_Conservatism_party1_long:0 "保守党"
 
-RDN_Conservatism_party:0 "拿破仑·缪拉王朝"
-RDN_Conservatism_party_long:0 "拿破仑·缪拉王朝"
+RDN_Paternalism_party:0 "奥兰多内阁"
+RDN_Paternalism_party_long:0 "奥兰多内阁"
 
 TSI_Conservatism_party:0 "波旁-那不勒斯王朝"
 TSI_Conservatism_party_long:0 "波旁-那不勒斯王朝"
@@ -547,3 +562,33 @@ HEL_Conservatism_party:0 "AB-ARP-CHU"
 HEL_Conservatism_party_long:0 "天主教选举总联盟-反革命党-基督教历史联盟"
 HEL_Liberalism_party:0 "LU-VDB-BVL-EB"
 HEL_Liberalism_party_long:0 "LU-VDB-BVL-EB"
+
+ESI_Dictatorship_party:0 "东非总督府"
+ESI_Dictatorship_party_long:0 "东非总督府"
+
+NAF_Liberalism_party:0 "南非党-联合党"
+NAF_Liberalism_party_long:0 "南非党-联合党"
+NAF_Nationalism_party:0 "国民党"
+NAF_Nationalism_party_long:0 "国民党"
+NAF_Reformism_party:0 "南非工党"
+NAF_Reformism_party_long:0 "南非工党"
+
+TCY_Paternalism_party:0 "桑尼诺内阁"
+PMA_Paternalism_party:0 "波旁-帕尔马王朝"
+ITE_Paternalism_party:0 "焦利蒂内阁"
+AOX_Paternalism_party:0 "迈耶内阁"
+TSI_Paternalism_party:0 "萨兰德拉内阁"
+
+SBY_Paternalism_party:0 "普列托内阁"
+
+VCT_Paternalism_party:0 "伦巴第-威尼托总督府"
+DMT_Paternalism_party:0 "克罗地亚总督府"
+KOH_Paternalism_party:0 "匈牙利总督府"
+KOH_Dictatorship_party:0 "帝国皇家陆军"
+KGL_Paternalism_party:0 "加利西亚和洛多梅里亚总督府"
+KLD_Paternalism_party:0 "波斯尼亚和黑塞哥维那总督府"
+
+SIW_Paternalism_party:0 "达维多维奇内阁"
+HES_Paternalism_party:0 "普拉梅纳茨内阁"
+ALB_Paternalism_party:0 "佩梅蒂内阁"
+LMN_Paternalism_party:0 "瓦伊达-沃埃沃德内阁"

@@ -16,8 +16,39 @@ state={
 	history={
 		owner = BNA
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 4
 			industrial_complex = 3
+			7615 = {
+				bunker = 5
+
+			}
+			7797 = {
+				bunker = 5
+
+			}
+			1987 = {
+				bunker = 5
+
+			}
+			10615 = {
+				bunker = 5
+
+			}
+			12670 = {
+				bunker = 5
+
+			}
+			12501 = {
+				bunker = 5
+
+			}
+			10824 = {
+				bunker = 5
+
+			}
+			anti_air_building = 5
+			air_base = 5
+
 		}
 		add_core_of = BNA
 		victory_points = {

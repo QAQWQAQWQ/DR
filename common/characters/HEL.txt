@@ -1,4 +1,20 @@
 characters={
+	HEL_Charles_Beerenbrouck={
+		name=HEL_Charles_Beerenbrouck
+		portraits={
+			civilian={
+				large="gfx/leaders/HEL/portrait_Charles_Beerenbrouck.tga"
+			}
+		}
+		country_leader={
+			ideology=Religious_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	
 	HEL_Wilhelmina={
 		name=HEL_Wilhelmina
 		portraits={

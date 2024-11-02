@@ -11,8 +11,34 @@ state={
 		owner = UBS
 		add_core_of = UBS
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			infrastructure = 4
+			industrial_complex = 3
+			1643 = {
+				bunker = 5
+
+			}
+			4507 = {
+				bunker = 5
+
+			}
+			4535 = {
+				bunker = 8
+
+			}
+			12398 = {
+				bunker = 10
+
+			}
+			12313 = {
+				bunker = 5
+
+			}
+			
+			
+			
+			anti_air_building = 5
+			air_base = 5
+
 		}
 	}
 	manpower=840637

@@ -11,8 +11,40 @@ state={
 		owner = UBS
 		add_core_of = UBS
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 2
+			infrastructure = 4
+			industrial_complex = 3
+			4625 = {
+				bunker = 5
+
+			}
+			7586 = {
+				bunker = 5
+
+			}
+			4597 = {
+				bunker = 5
+
+			}
+			1646 = {
+				bunker = 5
+
+			}
+			10477 = {
+				bunker = 5
+
+			}
+			4444 = {
+				bunker = 5
+
+			}
+			10355 = {
+				bunker = 5
+
+			}
+			
+			
+			anti_air_building = 5
+			air_base = 5
 
 		}
 		victory_points = {

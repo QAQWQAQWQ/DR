@@ -11,7 +11,7 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-
+recruit_character = KGL_Witold_Korytowski
 recruit_character = KGL_Hermann_von_Colard
 recruit_character = KGL_Ignacy_Paderewski
 	set_technology = {
@@ -48,7 +48,7 @@ recruit_character = KGL_Ignacy_Paderewski
 	}
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Paternalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -62,8 +62,6 @@ Staterun_economy
 Part_of_Habsburgs
 }
 set_popularities = {
-	Liberalism = 5
-	Nationalism = 1
-	Conservatism = 89
-	Revolutionism = 5
+	Paternalism = 80
+	Conservatism = 20
 }

@@ -2859,7 +2859,7 @@ completion_reward = {
 
 
 ######农业（友）线
-	focus = {
+	#focus = {
 		id = FRW_focus142
 		icon = GFX_goal_FRW_focus134
 		cost = 5.00
@@ -2898,9 +2898,9 @@ completion_reward = {
 				Conservatism = 100
 			}
 		}
-	}
+	#}
 	######农业（友）线
-	focus = {
+	#focus = {
 		id = FRW_focus143
 		icon = GFX_goal_FRW_focus134
 		cost = 5.00
@@ -2937,5 +2937,5 @@ completion_reward = {
 				Ultranationalism = 100
 			}
 		}
-	}
+	#}
 }

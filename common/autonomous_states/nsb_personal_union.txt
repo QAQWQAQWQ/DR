@@ -3,8 +3,6 @@ autonomy_state = {
 	
 	is_puppet = yes
 	
-	use_overlord_color = yes
-	
 	min_freedom_level = 0.0
 	
 	manpower_influence = 1.0
@@ -27,10 +25,11 @@ autonomy_state = {
 		extra_trade_to_overlord_factor = 0.5
 		overlord_trade_cost_factor = -0.5
 		can_master_build_for_us = 1
+		autonomy_gain = 1
 	}
 	
 	ai_subject_wants_higher = {
-		factor = 10.0
+		factor = 0.0
 	}
 	
 	ai_overlord_wants_lower = {

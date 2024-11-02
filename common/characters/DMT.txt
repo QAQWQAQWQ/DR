@@ -1,4 +1,20 @@
 characters={
+	DMT_Matko_Laginja={
+		name=DMT_Matko_Laginja
+		portraits={
+			civilian={
+				large="gfx/leaders/DMT/Portrait_Matko_Laginja.tga"
+			}
+		}
+		country_leader={
+			ideology=Semi-Constitutional-Monarchy
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	
 	DMT_Josip_Smodlaka={
 		name=DMT_Josip_Smodlaka
 		portraits={
