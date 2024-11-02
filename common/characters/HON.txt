@@ -1,4 +1,19 @@
 characters={
+	HON_Rafael_Lopez_Gutierrez={
+		name=HON_Rafael_Lopez_Gutierrez
+		portraits={
+			civilian={
+				large="gfx/leaders/HON/Portrait_Rafael_Lopez_Gutierrez.tga"
+			}
+		}
+		country_leader={
+			ideology=caudillo-dictatorship
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+
 	HON_Francisco_Bogran={
 		name=HON_Francisco_Bogran
 		portraits={
@@ -7,7 +22,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Authoritarian_Conservatism
+			ideology=caudillo-dictatorship
 			traits={ }
 			expire="1965.1.1.1"
 			id=-1

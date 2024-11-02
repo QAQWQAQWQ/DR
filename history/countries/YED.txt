@@ -32,7 +32,7 @@ recruit_character = YED_Alexander_I
 	add_ideas = {secondary_school }
 	
 set_politics = {
-	ruling_party = Paternalism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -40,5 +40,5 @@ set_politics = {
 add_ideas = {YED_Roman_Orthodoxy}
 set_popularities = {
 	Liberalism = 5
-	Paternalism = 95
+	Dictatorship = 95
 }

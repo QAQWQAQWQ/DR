@@ -1,4 +1,18 @@
 characters={
+	PTY_Alfredo_de_Sa_Cardoso={
+		name=PTY_Alfredo_de_Sa_Cardoso
+		portraits={
+			civilian={
+				large="gfx/leaders/PTY/Portrait_Alfredo_de_Sa_Cardoso.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarian_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	PTY_Joao_de_Canto={
 		name=PTY_Joao_de_Canto
 		portraits={

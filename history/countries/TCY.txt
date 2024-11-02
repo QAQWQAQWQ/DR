@@ -46,7 +46,7 @@ recruit_character = TCY_Leopoldo_III_Toscana
 		
 	}
 set_politics = {
-	ruling_party = Paternalism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -58,6 +58,6 @@ Private_economy
 secondary_school
 }
 set_popularities = {
-	Paternalism = 90
-	Conservatism = 10
+	Paternalism = 10
+	Dictatorship = 90
 }

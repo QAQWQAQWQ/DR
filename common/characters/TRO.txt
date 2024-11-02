@@ -1,4 +1,20 @@
 characters={
+	TRO_Razafinandriamanitra={
+		name=TRO_Razafinandriamanitra
+		portraits={
+			civilian={
+				large="gfx/leaders/TRO/Portrait_Razafinandriamanitra.tga"
+			}
+		}
+		country_leader={
+			ideology= semi-constitutional_monarchy
+			desc=TRO_RanavagnerIII_desc
+			traits={  popular_queen }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
+
 	TRO_RanavagnerIII={
 		name=TRO_RanavagnerIII
 		portraits={

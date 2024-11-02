@@ -63,7 +63,7 @@ recruit_character = KOH_Vitez_nagybaczoni_Nagy
 	}
 
 set_politics = {
-	ruling_party = Paternalism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -77,6 +77,5 @@ Staterun_economy
 Part_of_Habsburgs
 }
 set_popularities = {
-	Paternalism = 50
-	Dictatorship = 50
+	Dictatorship = 100
 }

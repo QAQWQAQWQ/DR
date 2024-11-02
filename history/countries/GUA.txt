@@ -8,7 +8,7 @@ set_technology = {
 	gw_artillery = 1
 	early_fighter = 1
 }
-
+recruit_character = GUA_Manuel_Estrada_Cabrera
 recruit_character = GUA_Carlos_Herrera
 
 
@@ -17,12 +17,12 @@ set_war_support = 0.1
 set_convoys = 5
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1931.2.8"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	Liberalism = 30
-	Conservatism = 70
+	Dictatorship = 80
+	Paternalism = 20
 }

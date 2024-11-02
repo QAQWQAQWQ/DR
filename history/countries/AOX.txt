@@ -71,7 +71,7 @@ recruit_character = AOX_Rudolf_Ramek
 recruit_character = AOX_Rudolf_Hilferding
 	
 set_politics = {
-	ruling_party = Paternalism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -135,6 +135,6 @@ add_ideas = {
 	AOX_Multi_ethnic_army
 }
 set_popularities = {
-	Paternalism = 100
+	Dictatorship = 100
 }
 give_guarantee = LMN

@@ -99,7 +99,7 @@ recruit_character = WWS_Otto_Ruhle
 	}
 country_event = {id=WWS.7 days=110 }
 set_politics = {
-	ruling_party = Paternalism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -121,6 +121,6 @@ Deutscher_Zollverein
 }
 set_popularities = {
 
-	Paternalism = 95
+	Dictatorship = 95
                 Reformism=5
 }

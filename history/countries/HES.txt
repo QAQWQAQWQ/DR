@@ -65,13 +65,13 @@ HES_Gvozdenovic_H
 
 
 set_politics = {
-	ruling_party = Paternalism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	Paternalism = 80
-	Conservatism = 20
+	Paternalism = 20
+	Dictatorship = 80
 }

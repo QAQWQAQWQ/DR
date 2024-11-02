@@ -88,13 +88,13 @@ SIW_Milenko_Radomar_Vesnic_P
 set_country_flag =SIW_Aleksandar_Obrenovic_1
 
 set_politics = {
-	ruling_party = Paternalism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	Paternalism = 80
-	Conservatism = 20
+	Paternalism = 20
+	Dictatorship = 80
 }
