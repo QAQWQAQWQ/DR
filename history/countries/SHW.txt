@@ -352,12 +352,12 @@ set_politics = {
 }
 set_autonomy = {
 	target = GGA
-	autonomy_state = autonomy_reichsprotectorate
+	autonomy_state = autonomy_collaboration_government
 }
 
 set_autonomy = {
 	target = TGA
-	autonomy_state = autonomy_reichsprotectorate
+	autonomy_state = autonomy_collaboration_government
 }
 
 set_autonomy = {
@@ -391,7 +391,7 @@ set_autonomy = {
 
 set_autonomy = {
 	target = KEI
-	autonomy_state = autonomy_reichsprotectorate
+	autonomy_state = autonomy_collaboration_government
 }
 
 set_autonomy = {

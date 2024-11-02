@@ -51,11 +51,11 @@ set_popularities = {
 }
 set_autonomy = {
 	target = HAT
-	autonomy_state = autonomy_reichskommissariat
+	autonomy_state = autonomy_occupation_zone
 }
 set_autonomy = {
 	target = DMA
-	autonomy_state = autonomy_reichskommissariat
+	autonomy_state = autonomy_occupation_zone
 }
 give_guarantee = MEX
 give_guarantee = NIC

@@ -48,7 +48,7 @@ recruit_character = DMA_Francisco_Hilario_Henriquez_Carvajal
 	}
 
 set_politics = {
-	ruling_party = Paternalism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -58,5 +58,5 @@ add_ideas={
 Smallholder_economy
 }
 set_popularities = {
-    Paternalism = 100
+    Dictatorship = 100
 }
