@@ -53,7 +53,7 @@ recruit_character = JPN_Tokugawa_Ieda
 	}
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no	
@@ -92,7 +92,6 @@ Theocratic_state
 
 }
 set_popularities = {
-	Conservatism = 80
-	Liberalism = 20
+	Dictatorship = 100
 }
 give_guarantee = KON

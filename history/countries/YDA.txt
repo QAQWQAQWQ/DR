@@ -52,15 +52,12 @@ add_ideas = {
 	YDA_kingdoms_land 
 }
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	Nationalism = 39
-	Conservatism = 41
-	Conservatism = 15
-	Revolutionism = 5
+	Dictatorship = 100
 }

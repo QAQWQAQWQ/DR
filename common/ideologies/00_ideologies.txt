@@ -169,6 +169,7 @@ ideologies = {
 			Progressive_Liberalism={}
 			Hamiltonian_Liberalism = {}
 			Sanmin_Liberalism = {}
+			national-liberalism = {}
 			Welfare_Sanmin_Doctrine={color = { 36 56 154 }}
 			
 		}
@@ -215,6 +216,7 @@ ideologies = {
 			National_Conservatism={}
 			Populist_Conservatism={}
 			Liberal_Conservatism = {}
+			conservative-agarianism = {}
 			Conservative_Sanmin_Doctrine={color = { 36 56 154 }}
 		}
 		
@@ -258,6 +260,7 @@ ideologies = {
 			semi-democratic-constitutional-monarchy = {}
 			Nationalist_Paternalist_Democracy = {}
 			caudillo-paternalist-democracy = {}
+			tribalism = {}
 			Paternalist_Constitutional_Sanmin_Doctrine={color = { 36 56 154 }}
 		}
 		dynamic_faction_names = {
@@ -291,15 +294,15 @@ ideologies = {
 			autocratic-constitutional-monarchy = {}
 			Absolute_Monarchy={}
 			Warlord_Dictatorship = {}
-			Autocratic_Colonization = {}
-			Colonization_Assimilation = {}
+			ironfist-colonial-government = {}
+			ironfist-colonial-assimilation = {}
 			Absolute_Theocracy = {}
 			Theocracy-Aristocracy_Dictatorship = {}
 			Civilian_Dictatorship = {}
 			False-Revolutionary_Reactionist_Dictatorship = {}
 			Reactionist_Sanmin_Dictatorship = {}
 			Comprador_Dictatorship = {}
-			autocratic_colonial_government = {}
+			autocratic-colonial-government = {}
 			caudillo-dictatorship = {}
 			autocratic-democratic-colonial-government = {}
 			aristocratic-dictatorship = {}

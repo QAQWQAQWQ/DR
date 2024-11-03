@@ -72,15 +72,12 @@ Deutscher_Zollverein
 # AGC_Revolutionary_Front_Lorraine
 }
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	Liberalism = 5
-	Nationalism = 15
-	Conservatism = 75
-	Revolutionism = 5
+	Dictatorship = 100
 }

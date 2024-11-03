@@ -46,7 +46,7 @@ recruit_character = SNX_Ahmed_Sharif
 		
 	}
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -60,8 +60,6 @@ Private_economy
 SNX_Desert_Guardian
 }
 set_popularities = {
-	Conservatism = 80
-	Nationalism = 10
-	Conservatism = 5
-	Revolutionism = 5
+	Dictatorship = 50
+	Paternalism = 50
 }

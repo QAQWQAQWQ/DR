@@ -47,7 +47,7 @@ recruit_character = JBS_Saud_bin_Abdulaziz_Al_Rashid
 	}
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -56,8 +56,6 @@ add_ideas = {
 	Smallholder_economy
 }
 set_popularities = {
-	Liberalism = 5
-	Nationalism = 1
-	Conservatism = 89
-	Revolutionism = 5
+	Dictatorship = 50
+	Paternalism = 50
 }
