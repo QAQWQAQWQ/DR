@@ -85,7 +85,7 @@ add_to_faction = RDN
 	}
 
 set_politics = {
-	ruling_party = Paternalism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -101,7 +101,7 @@ elementary_school
 NPL_Paul_Doumer_H
 }
 set_popularities = {
-	Paternalism = 80
+	Dictatorship = 80
 	Conservatism = 10
 	Liberalism = 10
 	

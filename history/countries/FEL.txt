@@ -50,14 +50,14 @@ recruit_character = FEL_Carl_Gustaf_Emil_Mannerheim
 	}
 
 set_politics = {
-	ruling_party = Paternalism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 add_ideas={FEL_Nominal_independence}
 set_popularities = {
-	Paternalism = 60
+	Dictatorship = 60
 	Reformism = 20
 	Liberalism = 6
 	Conservatism = 14

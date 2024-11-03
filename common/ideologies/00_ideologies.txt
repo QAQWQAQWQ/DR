@@ -254,9 +254,10 @@ ideologies = {
 	
 		types = {
 			Paternalism={}
-			Semi-Democratic_Colonization = {}
 			Authoritarian_Civilian_Government = {}
-			semi-democratic_constitutional_monarchy = {}
+			semi-democratic-constitutional-monarchy = {}
+			Nationalist_Paternalist_Democracy = {}
+			caudillo-paternalist-democracy = {}
 			Paternalist_Constitutional_Sanmin_Doctrine={color = { 36 56 154 }}
 		}
 		dynamic_faction_names = {
@@ -287,7 +288,7 @@ ideologies = {
 		types = {
 			Dictatorship = {}
 			Military_Dictatorship={}
-			semi-constitutional_monarchy = {}
+			autocratic-constitutional-monarchy = {}
 			Absolute_Monarchy={}
 			Warlord_Dictatorship = {}
 			Autocratic_Colonization = {}
@@ -297,9 +298,12 @@ ideologies = {
 			Civilian_Dictatorship = {}
 			False-Revolutionary_Reactionist_Dictatorship = {}
 			Reactionist_Sanmin_Dictatorship = {}
-			Comprador_Government = {}
+			Comprador_Dictatorship = {}
 			autocratic_colonial_government = {}
 			caudillo-dictatorship = {}
+			autocratic-democratic-colonial-government = {}
+			aristocratic-dictatorship = {}
+			oligarchic-dictatorship = {}
 		}
 		
 		dynamic_faction_names = {

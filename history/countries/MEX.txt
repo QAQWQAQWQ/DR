@@ -46,7 +46,7 @@ recruit_character = MEX_Venustiano_Carranza
 	}
 
 set_politics = {
-	ruling_party = Dictatorship
+	ruling_party = Paternalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -55,8 +55,8 @@ add_ideas = {
 	Smallholder_economy
 }
 set_popularities = {
-	Dictatorship = 40
-	COnservatism = 20
+	Paternalism = 40
+	Conservatism = 20
 	Liberalism = 20
 	Reformism = 20
 }
