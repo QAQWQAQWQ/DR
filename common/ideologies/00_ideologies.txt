@@ -14,7 +14,7 @@ ideologies = {
 			
 		}
 		
-		color = { 91 12 15 }
+		color = { 72 0 0 }
 		
 		rules = {
 			can_create_collaboration_government =no
@@ -47,7 +47,7 @@ ideologies = {
 		}
 		dynamic_faction_names = {
 		}
-		color = { 166 0 6 }
+		color = { 133 0 0 }
 		rules = {
 			can_create_collaboration_government =no
 			can_declare_war_on_same_ideology =yes
@@ -77,11 +77,11 @@ ideologies = {
 			Council_Socialism={}
 			Agrarian_Socialism={}
 			Populist_Socialism={}
-			Socialist_Popular_Revolution ={color = { 36 56 154 }}
+			Socialist_Popular_Revolution ={}
 		}
 		dynamic_faction_names = {
 		}
-		color = { 226 0 9  }
+		color = { 194 0 0  }
 		rules = {
 			can_create_collaboration_government =no
 			can_declare_war_on_same_ideology =yes
@@ -107,7 +107,7 @@ ideologies = {
 		}
 		dynamic_faction_names = {
 		}
-		color = { 170 0 44 }
+		color = { 255 0 0 }
 		rules = {
 			can_create_collaboration_government =no
 			can_declare_war_on_same_ideology =yes
@@ -135,7 +135,7 @@ ideologies = {
 			Fabian_Socialism={}
 			Union_Socialism={}
 			Bernstein_Reformism={}
-			New_Sanmin_Doctrine={color = { 36 56 154 }}
+			New_Sanmin_Doctrine={}
 		}
 		dynamic_faction_names = {
 		}
@@ -170,7 +170,7 @@ ideologies = {
 			Hamiltonian_Liberalism = {}
 			Sanmin_Liberalism = {}
 			national-liberalism = {}
-			Welfare_Sanmin_Doctrine={color = { 36 56 154 }}
+			Welfare_Sanmin_Doctrine={}
 			
 		}
 		
@@ -217,7 +217,7 @@ ideologies = {
 			Populist_Conservatism={}
 			Liberal_Conservatism = {}
 			conservative-agarianism = {}
-			Conservative_Sanmin_Doctrine={color = { 36 56 154 }}
+			Conservative_Sanmin_Doctrine= {}
 		}
 		
 		dynamic_faction_names = {
@@ -261,7 +261,7 @@ ideologies = {
 			Nationalist_Paternalist_Democracy = {}
 			caudillo-paternalist-democracy = {}
 			tribalism = {}
-			Paternalist_Constitutional_Sanmin_Doctrine={color = { 36 56 154 }}
+			Paternalist_Constitutional_Sanmin_Doctrine={}
 		}
 		dynamic_faction_names = {
 		}
@@ -313,7 +313,7 @@ ideologies = {
 			
 		}
 		
-		color = { 43 55 49 }
+		color = { 83 49 121 }
 		
 		rules = {
 			can_create_collaboration_government =no
@@ -391,7 +391,7 @@ ideologies = {
 		}
 		dynamic_faction_names = {
 		}
-		color = { 81 64 85 }
+		color = { 135 94 22 }
 		rules = {
 			can_create_collaboration_government =no
 			can_declare_war_on_same_ideology =yes
