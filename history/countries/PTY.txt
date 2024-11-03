@@ -48,17 +48,16 @@ recruit_character = PTY_Afonso_Augusto
 	}
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Liberalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	Liberalism = 45
-	Nationalism = 5
-	Conservatism = 25
-	Revolutionism = 25
+	Liberalism = 59
+	Conservatism = 36
+	Reformism = 5
 }
 
 set_autonomy = { target = PSA autonomy_state = autonomy_colony }
