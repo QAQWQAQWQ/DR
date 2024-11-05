@@ -261,6 +261,7 @@ ideologies = {
 			Nationalist_Paternalist_Democracy = {}
 			caudillo-paternalist-democracy = {}
 			tribalism = {}
+			oligarchic-semi-democratic-liberalism = {}
 			Paternalist_Constitutional_Sanmin_Doctrine={}
 		}
 		dynamic_faction_names = {
@@ -297,7 +298,7 @@ ideologies = {
 			ironfist-colonial-government = {}
 			ironfist-colonial-assimilation = {}
 			Absolute_Theocracy = {}
-			Theocracy-Aristocracy_Dictatorship = {}
+			theocratic-aristocratic-autocracy = {}
 			Civilian_Dictatorship = {}
 			False-Revolutionary_Reactionist_Dictatorship = {}
 			Reactionist_Sanmin_Dictatorship = {}
@@ -313,7 +314,7 @@ ideologies = {
 			
 		}
 		
-		color = { 83 49 121 }
+		color = { 55 69 64 }
 		
 		rules = {
 			can_create_collaboration_government =no

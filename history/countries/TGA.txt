@@ -45,7 +45,23 @@ recruit_character = TGA_Alexei_Kuropatkin
 		
 		
 	}
-
+	set_autonomy = {
+		target = KEI
+		autonomy_state = autonomy_general_governorate
+	}
+	KEI = {
+		set_politics = {
+			ruling_party = Nationalism
+			last_election = "1918.11.11"
+			election_frequency = 72
+			elections_allowed = no
+		}
+		
+		set_popularities = {
+			Nationalism = 100
+		}
+	
+	}
 set_politics = {
 	ruling_party = Dictatorship
 	last_election = "1918.11.11"

@@ -46,13 +46,13 @@ recruit_character = BLW_Jose_Manuel_Justiniano
 		
 	}
 set_politics = {
-	ruling_party = Dictatorship
+	ruling_party = Paternalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	Dictatorship = 90
-	Paternalism = 10
+	Paternalism = 73
+	Conservatism = 27
 }

@@ -184,6 +184,8 @@
  caudillo-paternalist-democracy_desc:0 ""
  tribalism:0 "部落制"
  tribalism_desc:0 ""
+ oligarchic-semi-democratic-liberalism:0 "寡头半民主自由主义"
+ oligarchic-semi-democratic-liberalism_desc:0 ""
 
 
 
@@ -207,8 +209,8 @@
  ironfist-colonial-assimilation_desc:0 "铁腕同化殖民政府"
  Absolute_Theocracy:0 "绝对神权制"
  Absolute_Theocracy_desc:0 "绝对神权制"
- Theocracy-Aristocracy_Dictatorship:0 "神权-贵族专制"
- Theocracy-Aristocracy_Dictatorship_desc:0 "神权-贵族专制"
+ theocratic-aristocratic-autocracy:0 "神权-贵族专制"
+ theocratic-aristocratic-autocracy_desc:0 "神权-贵族专制"
  False-Revolutionary_Reactionist_Dictatorship:0 "伪革命独裁统制"
  False-Revolutionary_Reactionist_Dictatorship_desc:0 "伪革命独裁统制"
  Reactionist_Sanmin_Dictatorship:0 "反动三民独裁统制"
@@ -420,8 +422,8 @@ ARA_Dictatorship_party:0 "亚美尼亚总督府"
 ARA_Dictatorship_party_long:0 "亚美尼亚总督府"
 ARA_Liberalism_party:0 "亚美尼亚人民党-独立农民联盟"
 ARA_Liberalism_party_long:0 "亚美尼亚人民党-独立农民联盟"
-ARA_Reformism_party:0 "社会民主警钟党(改良派)-亚美尼亚革命联盟(改良派)-亚美尼亚社会民主工人组织(改良派)"
-ARA_Reformism_party_long:0 "社会民主警钟党(改良派)-亚美尼亚革命联盟(改良派)-亚美尼亚社会民主工人组织(改良派)"
+ARA_Reformism_party:0 "社会民主警钟党/亚美尼亚革命联盟/亚美尼亚社会民主工人组织(改良派)"
+ARA_Reformism_party_long:0 "社会民主警钟党/亚美尼亚革命联盟/亚美尼亚社会民主工人组织(改良派)"
 
 GGA_Dictatorship_party:0 "草原总督府"
 GGA_Dictatorship_party_long:0 "草原总督府"
@@ -517,8 +519,8 @@ SSD_Dictatorship_party_long:0 "川边镇守使公署"
 YED_Dictatorship_party:0 "韦尼泽洛斯内阁"
 YED_Dictatorship_party_long:0 "韦尼泽洛斯内阁"
 
-BXM_Dictatorship_party:0 "波西米亚议会"
-BXM_Dictatorship_party_long:0 "波西米亚议会/捷克临时瑟姆"
+BXM_Dictatorship_party:0 "哈布斯堡王朝"
+BXM_Dictatorship_party_long:0 "波西米亚王冠-摩拉维亚侯爵"
 
 QIX_Dictatorship_party:0 "江苏省长公署"
 QIX_Dictatorship_party_long:0 "江苏省长公署"
@@ -600,6 +602,26 @@ ITE_Dictatorship_party:0 "焦利蒂内阁"
 AOX_Dictatorship_party:0 "迈耶内阁"
 TSI_Dictatorship_party:0 "萨兰德拉内阁"
 
+
+AOX_Liberalism_party:0 "基督教社会党/奥地利社会民主党(自由派)"
+AOX_Conservatism_party:0 "基督教社会党-农业党"
+AOX_Reformism_party:0 "奥地利社会民主党(改良派)"
+AOX_Nationalism_party_long:0 "德意志激进党-德意志人民党-奥地利德意志工人党"
+
+LSB_Paternalism_party:0 "罗伊特内阁"
+LSB_Conservatism_party:0 "右翼党"
+LSB_Liberalism_party:0 "激进党"
+LSB_Reformism_party:0 "社会党"
+
+RSH_Liberalism_party:0 "自民党-瑞自民党"
+RSH_Liberalism_party_long:0 "自由民主党-瑞士自由民主党"
+RSH_Reformism_party:0 "社会民主党-格吕特利联盟"
+RSH_Conservatism_party:0 "保守人民党-BGBP"
+
+
+BXM_Paternalism_party:0 "波摩议会"
+BXM_Paternalism_party_long:0 "波西米亚议会-摩拉维亚议会"
+
 SBY_Paternalism_party:0 "普列托内阁"
 
 VCT_Dictatorship_party:0 "伦威总督府"
@@ -646,7 +668,7 @@ BLG_Dictatorship_party:0 "自由党"
 
 PTY_Liberalism_party:0 "民主党"
 
-PTY_Conservatism_party:0 "PRE-PUR-CCP"
+
 PTY_Conservatism_party_long:0 "共和发展党-共和联盟党-葡萄牙天主教中心党"
 PTY_Reformism_party:0 "葡萄牙社会党"
 
@@ -656,7 +678,6 @@ YED_Reformism_party:0 "罗马社会主义劳工联合会（改良派）"
 YED_Reformism_party_long:0 "罗马社会主义劳工联合会（改良派）"
 YED_Liberalism_party:0 "自由党"
 YED_Liberalism_party_long:0 "自由党"
-YED_Conservatism_party:0 "民族党-TK-NK-PK"
 YED_Conservatism_party_long:0 "民族党-西奥托基斯党-新罗马党-进步党"
 
 EYJ_Dictatorship_party:0 "瓦赫巴内阁"
@@ -685,3 +706,24 @@ ASZ_Revolutionism_party:0 "社会主义工党"
 XXL_Conservatism_party:0 "改革党"
 XXL_Liberalism_party:0 "新西兰自由党"
 XXL_Reformism_party:0 "新西兰工党"
+
+BLW_Paternalism_party:0 "自由党"
+BLW_Conservatism_party:0 "保守党"
+
+JPN_Dictatorship_party:0 "原敬内阁"
+DSX_Dictatorship_party:0 "德意志殖民协会"
+DOB_Paternalism_party:0 "杜施内阁"
+
+DOL_Dictatorship_party:0 "莱茵巴本内阁"
+DOH_Dictatorship_party:0 "文策尔内阁"
+DOA_Dictatorship_party:0 "鲁斯特拉特内阁"
+DOM_Dictatorship_party:0 "莱维佐夫内阁"
+DOS_Dictatorship_party:0 "贝克内阁"
+DOR_Dictatorship_party:0 "赫特林内阁"
+DHD_Dictatorship_party:0 "埃瓦尔德内阁"
+DON_Dictatorship_party:0 "亨斯滕伯格内阁"
+DOF_Dictatorship_party:0 "魏茨泽克内阁"
+
+SLO_Dictatorship_party:0 "斯洛伐克总督府"
+TRA_Dictatorship_party:0 "总督府"
+TRA_Dictatorship_party_long:0 "特兰西瓦尼亚总督府"

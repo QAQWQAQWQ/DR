@@ -65,13 +65,12 @@ Deutscher_Zollverein
 SAX_Irregular_military_forces
 }
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	Conservatism = 60
-	Liberalism = 40
+	Dictatorship = 100
 }
