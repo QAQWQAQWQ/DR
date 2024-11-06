@@ -12,13 +12,14 @@ state= {
 		victory_points = {
 			6389 10 
 		}
-		owner = DMW
+		owner = AGC
 		buildings = {
 			infrastructure = 3
 			grain_farms = 1
 		}
 
 		add_core_of = SHL
+		add_core_of = AGC
 	}
 
 	provinces= {

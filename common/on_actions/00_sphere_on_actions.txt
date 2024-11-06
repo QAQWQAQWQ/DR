@@ -162,7 +162,6 @@ on_actions = {
                     AND = {        
                         check_variable = { is_a_gerat_power = 0 }
                         OR = {
-                            original_tag = AGC
                             original_tag = LSB
                             original_tag = DHD
                             original_tag = DON

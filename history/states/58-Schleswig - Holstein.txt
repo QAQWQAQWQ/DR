@@ -12,7 +12,7 @@ state= {
 		victory_points = {
 			6389 10 
 		}
-		owner = DMW
+		owner = AGC
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
@@ -25,6 +25,7 @@ state= {
 		}
 
 		add_core_of = HOS
+		add_core_of = AGC
 	}
 
 	provinces= {
