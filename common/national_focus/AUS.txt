@@ -612,8 +612,10 @@ focus_tree = {
 				}
 				58 = { add_core_of = WWS } 
 				1032 = { add_core_of = WWS } 
+				952 = { add_core_of = WWS } 
 				transfer_state = 58
 				transfer_state = 1032
+				transfer_state = 952
 				set_cosmetic_tag = NGF
 			}
 			AOX = { puppet = DOR }
