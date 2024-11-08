@@ -673,7 +673,7 @@ guiTypes = {
 			iconType = {
 				name = "icon_manage_subjects"
 				spriteType = "GFX_icon_manage_subjects"
-				position = { x = -55 y = 1 }
+				position = { x = -58 y = 1 }
 				alwaystransparent = yes
 			}
 		}
@@ -702,13 +702,13 @@ guiTypes = {
 		iconType = {
 			name = "icon_exiled_collaborations_governments"
 			spriteType = "GFX_icon_exiled_governments"
-			position = { x = 212 y = 11 }
+			position = { x = 210 y = 11 }
 		}
 
 		iconType = {
 			name = "icon_occupied_territories"
 			spriteType = "GFX_icon_occupied_territories"
-			position = { x = 126 y = 12 }
+			position = { x = 123 y = 12 }
 		}
 
 
