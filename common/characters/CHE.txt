@@ -1,4 +1,19 @@
 characters={
+	CHE_Juan_Luis_Sanfuentes={
+		name=CHE_Juan_Luis_Sanfuentes
+		portraits={
+			civilian={
+				large="gfx/leaders/CHE/Portrait_Juan_Luis_Sanfuentes.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarian_Conservatism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+
 	CHE_Alessandri_Palma={
 		name=CHE_Alessandri_Palma
 		portraits={
@@ -7,7 +22,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Authoritarian_Conservatism
+			ideology=oligarchic-liberalism
 			traits={ }
 			expire="1965.1.1.1"
 			id=-1

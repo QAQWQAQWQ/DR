@@ -1,4 +1,6 @@
 characters={
+
+
 	BLG_Manuel_Gondra={
 		name=BLG_Manuel_Gondra
 		portraits={
@@ -8,6 +10,21 @@ characters={
 		}
 		country_leader={
 			ideology=Authoritarian_Conservatism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+
+	BLG_Jose_Pedro_Montero={
+		name=BLG_Jose_Pedro_Montero
+		portraits={
+			civilian={
+				large="gfx/leaders/BLG/Portrait_Jose_Pedro_Montero.tga"
+			}
+		}
+		country_leader={
+			ideology=oligarchic-semi-democratic-liberalism
 			traits={ }
 			expire="1965.1.1.1"
 			id=-1

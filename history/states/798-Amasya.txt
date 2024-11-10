@@ -2,7 +2,7 @@ state={
 	id=798
 	name="STATE_798"
 	provinces={
-		804 3807 3862 3964 11826 11839 11844 11897
+		 3807 3964 11844 921 6977 9861 3870 961 9830 9763 919
 	}
 	manpower = 531172
 	
@@ -12,8 +12,15 @@ state={
 		owner = YED
 		add_core_of = YED
 		victory_points = {
-			3862 3
+			3870 5 
 		}
+		victory_points = {
+			9861 5
+		}
+		victory_points = {
+			919 5
+		}
+		
 		buildings = {
 			infrastructure = 2
 		}

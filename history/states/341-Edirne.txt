@@ -18,6 +18,7 @@ state= {
 		victory_points = { #Burgas
 			9902 3
 		}
+		
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -26,7 +27,7 @@ state= {
 		
 	}
 	provinces={
-		922 3893 9902 11842
+		9902 11842
 	}
 
 	local_supplies=0.0 

@@ -46,15 +46,12 @@ recruit_character = GLB_Rafael_Uribe_Urib
 		
 	}
 set_politics = {
-	ruling_party = Liberalism
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	Liberalism = 67
-	Nationalism = 11
-	Conservatism = 17
-	Revolutionism = 5
+	Conservatism = 100
 }

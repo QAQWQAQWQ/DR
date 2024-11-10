@@ -54,15 +54,16 @@ recruit_character = RUD_Gustaf_V
 }
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Liberalism
 	last_election = "1917.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	Liberalism = 5
-	Nationalism = 1
-	Conservatism = 89
-	Revolutionism = 5
+	Liberalism = 28
+	Conservatism = 33
+	Reformism = 31
+	Moderate_Socialism = 4
+	Revolutionism = 4
 }

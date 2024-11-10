@@ -147,6 +147,8 @@
  Sanmin_Liberalism_desc:0 ""
  national-liberalism:0 "民族自由主义"
  national-liberalism_desc:0 ""
+ oligarchic-liberalism:0 "寡头自由主义"
+ oligarchic-liberalism_desc:0 ""
 
 ##保守主义
  Semi-Constitutional_Monarchy:0 "半君主立宪制"
@@ -168,6 +170,8 @@
  Liberal_Conservatism_desc:0 ""
  conservative-agarianism:0 "保守农业主义"
  conservative-agarianism_desc:0 ""
+ oligarchic-conservatism:0 "寡头保守主义"
+ oligarchic-conservatism_desc:0 ""
 
 ####家长制
  Paternalism:0 "家长制"
@@ -341,8 +345,8 @@ ITE_Conservatism_party:0 "萨伏伊王朝"
 ITE_Conservatism_party_long:0 "萨伏伊王朝"
 ITE_Liberalism_party:0 "撒丁自由党"
 ITE_Liberalism_party_long:0 "撒丁自由党"
-ITE_Reformism_party:0 "撒丁社民党"
-ITE_Reformism_party_long:0 "撒丁社民党"
+ITE_Reformism_party:0 "撒丁社会民主党"
+ITE_Reformism_party_long:0 "撒丁社会民主党"
 
 
 ITE_Revolutionism_party_new:0 "亚平宁联盟"
@@ -580,9 +584,9 @@ HEL_Moderate_Socialism_party_long:0 "荷兰社会党(温和派)"
 HEL_Reformism_party:0 "社会民主工党"
 HEL_Reformism_party_long:0 "社会民主工党"
 HEL_Conservatism_party:0 "AB-ARP-CHU"
-HEL_Conservatism_party_long:0 "天主教选举总联盟-反革命党-基督教历史联盟"
+HEL_Conservatism_party_long:0 "天主教选举组织总同盟-反革命党-基督教历史联盟"
 HEL_Liberalism_party:0 "LU-VDB-BVL-EB"
-HEL_Liberalism_party_long:0 "LU-VDB-BVL-EB"
+HEL_Liberalism_party_long:0 "自由联盟-自由思想民主同盟-自由派同盟-经济同盟"
 
 ESI_Dictatorship_party:0 "东非总督府"
 ESI_Dictatorship_party_long:0 "东非总督府"
@@ -755,3 +759,15 @@ WLG_Reformism_party:0 "乌拉圭社会党"
 ARG_Liberalism_party:0 "激进公民联盟"
 ARG_Conservatism_party:0 "保守党团"
 ARG_Moderate_Socialism_party:0 "社会党"
+
+NUW_Liberalism_party:0 "左翼党"
+NUW_Conservatism_party:0 "右翼党-自由思想左翼党-挪威农业协会"
+NUW_Reformism_party:0 "激进人民党-工党（改良派）"
+NUW_Moderate_Socialism_party:0 "工党（温和革命派）"
+NUW_Revolutionism_party:0 "工党（革命派）"
+
+RUD_Liberalism_party:0 "自由联盟党"
+RUD_Conservatism_party:0 "总选举同盟-农民同盟-国家农民联合会"
+RUD_Reformism_party:0 "瑞典社会民主党（改良派）"
+RUD_Moderate_Socialism_party:0 "瑞典社会民主党（温和革命派）"
+RUD_Revolutionism_party:0 "瑞典社会民主党（革命派）"
