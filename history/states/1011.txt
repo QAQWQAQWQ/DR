@@ -1,13 +1,13 @@
 
 state={
 	id=1011
-	name="口北"
+	name="STATE_1011"
 	manpower = 800000
 	
 	state_category = pastoral
 	history={
-		owner = ZHX
-		add_core_of = ZHX
+		owner = DUQ
+		add_core_of = DUQ
 		buildings = {
 			infrastructure = 1
 		}

@@ -1,4 +1,20 @@
 characters={
+	ELS_Jorge_Melendez={
+		name=ELS_Jorge_Melendez
+		portraits={
+			civilian={
+				large="gfx/leaders/ELS/Portrait_Jorge_Melendez.tga"
+			}
+		}
+		country_leader={
+			ideology=oligarchic-dictatorship
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+
+	
 	ELS_Alfonso_Quinonez_Molina={
 		name=ELS_Alfonso_Quinonez_Molina
 		portraits={

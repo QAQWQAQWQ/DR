@@ -1,4 +1,4 @@
-﻿capital = 70
+﻿capital = 76
 
 oob = "TRA_1920"
 
@@ -61,8 +61,5 @@ Staterun_economy
 Part_of_Habsburgs
 }
 set_popularities = {
-	Liberalism = 25
-	Nationalism = 25
-	Conservatism = 40
-	Revolutionism = 10
+	Dictatorship = 100
 }

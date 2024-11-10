@@ -10,7 +10,6 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-country_event = {id=Hidden_News.5 days=253}
 recruit_character = NZS_Ibn_Saud
 
 	set_technology = {
@@ -47,7 +46,7 @@ recruit_character = NZS_Ibn_Saud
 	}
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -56,8 +55,5 @@ add_ideas = {
 	Smallholder_economy
 }
 set_popularities = {
-	Liberalism = 5
-	Nationalism = 1
-	Conservatism = 89
-	Revolutionism = 5
+	Dictatorship = 100
 }

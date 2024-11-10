@@ -46,7 +46,6 @@ recruit_character = AGN_Engelbert_Dollfuss
 
 recruit_character = AOX_Franz_Graf_Conrad
 recruit_character = AOX_Baro_Straussenburg
-recruit_character = AOX_Friedrich
 recruit_character = AOX_Svetozar_Boroevic
 recruit_character = AOX_Oscar_Portiolec
 recruit_character = AOX_Michael_Mayr
@@ -72,7 +71,7 @@ recruit_character = AOX_Rudolf_Ramek
 recruit_character = AOX_Rudolf_Hilferding
 	
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -107,12 +106,9 @@ set_autonomy = { target = BXM autonomy_state = autonomy_Crown_Territory }
 set_autonomy = { target = KLD autonomy_state = autonomy_Crown_Territory }
 set_autonomy = { target = DMT autonomy_state = autonomy_Crown_Territory }
 set_autonomy = { target = KOH autonomy_state = autonomy_Crown_Territory }
-set_autonomy = { target = ALB autonomy_state = autonomy_reichsprotectorate }
-set_autonomy = { target = HES autonomy_state = autonomy_reichsprotectorate }
-set_autonomy = { target = SIW autonomy_state = autonomy_reichsprotectorate }
-set_autonomy = { target = ITE autonomy_state = autonomy_reichsprotectorate }
-set_autonomy = { target = PMA autonomy_state = autonomy_reichsprotectorate }
-set_autonomy = { target = TCY autonomy_state = autonomy_reichsprotectorate }
+set_autonomy = { target = ALB autonomy_state = autonomy_supervised_state }
+set_autonomy = { target = HES autonomy_state = autonomy_supervised_state }
+set_autonomy = { target = SIW autonomy_state = autonomy_supervised_state }
 
 
 
@@ -139,9 +135,10 @@ add_ideas = {
 	AOX_Multi_ethnic_army
 }
 set_popularities = {
-	Reformism = 20
-	Liberalism = 10
-	Nationalism = 5
-	Conservatism = 65
+	Dictatorship = 50
+	Liberalism = 13
+	Conservatism = 13
+	Nationalism = 19
+	Reformism = 5
 }
 give_guarantee = LMN

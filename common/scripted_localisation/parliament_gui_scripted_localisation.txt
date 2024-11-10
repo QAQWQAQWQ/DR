@@ -366,51 +366,7 @@ text = {
 	}
 	localization_key = XJC_party_6_text
 }
-text = {
-	trigger = {
-		AND={
-			original_tag = XJC
-			XJC={check_variable = { v = 7}}
-		}
-	}
-	localization_key = XJC_party_7_text
-}
-text = {
-	trigger = {
-		AND={
-			original_tag = XJC
-			XJC={check_variable = { v = 8 }}
-		}
-	}
-	localization_key = XJC_party_8_text
-}
-text = {
-	trigger = {
-		AND={
-			original_tag = XJC
-			XJC={check_variable = { v = 9 }}
-		}
-	}
-	localization_key = XJC_party_9_text
-}
-text = {
-	trigger = {
-		AND={
-			original_tag = XJC
-			XJC={check_variable = { v = 10 }}
-		}
-	}
-	localization_key = XJC_party_10_text
-}
-text = {
-	trigger = {
-		AND={
-			original_tag = XJC
-			XJC={check_variable = { v = 11 }}
-		}
-	}
-	localization_key = XJC_party_11_text
-}
+
 #######
 #######CHI
 text = {

@@ -8,26 +8,19 @@ state={
 	}
 	history={
 		owner = DSX
-
 		victory_points = {
 			2196 1
-		}
-		victory_points = {
-			5210 1 
 		}
 		buildings = {
 			infrastructure = 2
 			2196 = {
 				naval_base = 2
 			}
-			5210 = {
-				naval_base = 2
-			}
 		}
 	}
 
 	provinces={
-		2196 5210 8182 8183 12944
+		2196 8182 8183 12944
 	}
 
 	buildings_max_level_factor=1.000

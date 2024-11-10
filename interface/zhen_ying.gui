@@ -104,14 +104,25 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "ideology"
-			position = { x = -202 y = -390 }
-			font = "hoi_16mbs"
+			position = { x = -202 y = -370 }
+			font = "hoi_20bs"
 			text = [?country_leader.GetIdeologyGroup]
 			format = LEFT
 			maxWidth = 155
 			maxHeight = 20
 			pdx_tooltip = "ideology_sub_desc"
 		}
+		instantTextboxType = {
+			name = "PartyLong"
+			position = { x = -202 y = -410 }
+			font = "hoi_20bs"
+			text = [?FROM.GetRulingPartyLong]
+			format = LEFT
+			maxWidth = 255
+			maxHeight = 10
+			pdx_tooltip = "ideology_sub_desc"
+		}
+
 	}
 	containerWindowType = {
 		name = "zhen_ying_an_niu"

@@ -2,9 +2,9 @@
 state={
 	id=32
 	name="STATE_32" 
-	manpower = 1007500
+	manpower = 1517500
 	
-	state_category = town
+	state_category = city
 	
 	resources={
 		steel=30 # was: 56
@@ -16,17 +16,21 @@ state={
 	}
 	history={
 		owner = FRW
-		buildings = {
-			infrastructure = 2
+		victory_points = {
+			11516 5 
 		}
 		victory_points = {
-			3768 1 
+			3560 1
+		}
+		buildings = {
+			infrastructure = 4
 		}
 		add_core_of = FRW
+		add_dynamic_modifier = {modifier=FRW_Lorraine_guerrillas}
 	}
 
 	provinces={
-		762 780 3589 3768 6784 
+		521 3546 3560 5291 6545 9505 11488 11516 11642
 	}
 
 	local_supplies=9.0 

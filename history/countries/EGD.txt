@@ -11,7 +11,7 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-
+recruit_character = EGD_Alfredo_Baquerizo
 recruit_character = EGD_Ecuadorian_Military_Commission
 	set_technology = {
 		interwar_artillery = 1
@@ -46,15 +46,12 @@ recruit_character = EGD_Ecuadorian_Military_Commission
 		
 	}
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Paternalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	Liberalism = 5
-	Nationalism = 1
-	Conservatism = 89
-	Revolutionism = 5
+	Paternalism = 100
 }

@@ -1,4 +1,20 @@
 characters={
+	DSX_German_Colonial_Society={
+		name=DSX_German_Colonial_Society
+		portraits={
+			civilian={
+				large="gfx/leaders/DSX/Portrait_German_Colonial_Society.tga"
+			}
+		}
+		country_leader={
+			ideology=ironfist-colonial-assimilation
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
+
+	Portrait_German_Colonial_Society
 	DSX_Leto_falbeck={
 		name=DSX_Leto_falbeck
 		portraits={

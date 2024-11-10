@@ -49,17 +49,14 @@ recruit_character = EYJ_Fuad
 	}
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	Liberalism = 5
-	Nationalism = 1
-	Conservatism = 89
-	Revolutionism = 5
+	Dictatorship = 100
 }
 
 
@@ -82,12 +79,12 @@ set_autonomy = {
 
 set_autonomy = {
 	target = SNX
-	autonomy_state = autonomy_dominion
+	autonomy_state = autonomy_puppet
 }
 
 set_autonomy = {
 	target = ROY
-	autonomy_state = autonomy_dominion
+	autonomy_state = autonomy_puppet
 }
 
 set_autonomy = {

@@ -66,19 +66,19 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/FRW_Syndicalist_Anarchism.dds" 
 	}
 	spriteType = { 
-		name = "GFX_ideology_WWS_Semi-Constitutional_Monarchy" 
+		name = "GFX_ideology_WWS_autocratic-constitutional-monarchy" 
 		texturefile = "gfx/interface/ideologies/WWS_Semi-Constitutional_Monarchy.dds"
 	}
-	spriteType = { 
-		name = "GFX_ideology_SHW_Semi-Constitutional_Monarchy" 
+	#spriteType = { 
+		name = "GFX_ideology_SHW_autocratic-constitutional-monarchy" 
 		texturefile = "gfx/interface/ideologies/SHW_Semi-Constitutional_Monarchy.dds"
-	}
+	#}
 	spriteType = { 
-		name = "GFX_ideology_AOX_Semi-Constitutional_Monarchy" 
+		name = "GFX_ideology_AOX_autocratic-constitutional-monarchy" 
 		texturefile = "gfx/interface/ideologies/AOX_Semi-Constitutional_Monarchy.dds"
 	}
 	spriteType = { 
-		name = "GFX_ideology_JPN_Semi-Constitutional_Monarchy" 
+		name = "GFX_ideology_JPN_autocratic-constitutional-monarchy" 
 		texturefile = "gfx/interface/ideologies/JPN_Semi-Constitutional_Monarchy.dds"
 	}
 	
@@ -105,6 +105,10 @@ spriteTypes = {
 	spriteType = { 
 		name = "GFX_ideology_Socialist_Popular_Revolution" 
 		texturefile = "gfx/interface/ideologies/Three_Principles_People.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_Gelaohui_Order" 
+		texturefile = "gfx/interface/ideologies/Gelaohui_Order_new.dds"
 	}
 }
 

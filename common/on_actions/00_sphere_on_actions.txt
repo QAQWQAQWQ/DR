@@ -85,14 +85,14 @@ on_actions = {
                     sphere_country = SHW
                 }
             }
-            LMN = {
-                set_variable = {
-                    in_a_sphere = 1
-                }
-                set_variable = {
-                    sphere_country = AOX
-                }
-            }
+            #LMN = {
+            #    set_variable = {
+            #        in_a_sphere = 1
+            #    }
+            #    set_variable = {
+            #        sphere_country = AOX
+            #    }
+            #}
             HES = {
                 set_variable = {
                     in_a_sphere = 1

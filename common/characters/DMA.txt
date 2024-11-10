@@ -1,4 +1,19 @@
 characters={
+	DMA_Thomas_Snowden={
+		name=DMA_Thomas_Snowden
+		portraits={
+			civilian={
+				large="gfx/leaders/DMA/Portrait_Thomas_Snowden.tga"
+			}
+		}
+		country_leader={
+			ideology=ironfist-colonial-government
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
+
 	DMA_Francisco_Hilario_Henriquez_Carvajal={
 		name=DMA_Francisco_Hilario_Henriquez_Carvajal
 		portraits={

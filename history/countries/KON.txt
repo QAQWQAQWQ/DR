@@ -37,7 +37,7 @@ recruit_character = KON_Li_Tuo
 	}
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -48,5 +48,5 @@ Smallholder_economy
 low_industrialization 
 }
 set_popularities = {
-	Conservatism = 100
+	Dictatorship = 100
 }

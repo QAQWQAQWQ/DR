@@ -17,13 +17,13 @@ set_war_support = 0.7
 recruit_character = FMS_Edward_Lewis_Brockman
 
 set_politics = {
-	ruling_party = Liberalism
+	ruling_party = Dictatorship
 	last_election = 1936.1.1
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	Liberalism = 100
+	Dictatorship = 100
 }
 
 add_ideas = {

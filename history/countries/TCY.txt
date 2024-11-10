@@ -12,7 +12,7 @@ set_technology = {
 	fuel_silos = 1
 }
 
-recruit_character = TCY_Leopold_Salvator
+recruit_character = TCY_Leopoldo_III_Toscana
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -46,7 +46,7 @@ recruit_character = TCY_Leopold_Salvator
 		
 	}
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -58,9 +58,6 @@ Private_economy
 secondary_school
 }
 set_popularities = {
-	Liberalism = 5
-	Nationalism = 1
-	Conservatism = 80
-	Revolutionism = 5
-                Conservatism = 9
+	Paternalism = 10
+	Dictatorship = 90
 }

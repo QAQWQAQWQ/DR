@@ -1,4 +1,19 @@
 characters={
+	GUA_Manuel_Estrada_Cabrera={
+		name=GUA_Manuel_Estrada_Cabrera
+		portraits={
+			civilian={
+				large="gfx/leaders/GUA/Portrait_Manuel_Estrada_Cabrera.tga"
+			}
+		}
+		country_leader={
+			ideology=caudillo-dictatorship
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+
 	GUA_Carlos_Herrera={
 		name=GUA_Carlos_Herrera
 		portraits={

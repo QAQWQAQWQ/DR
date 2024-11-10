@@ -17,6 +17,13 @@ country_event = {
 	picture = GFX_Far_left_0
 	is_triggered_only = yes
 	fire_only_once = yes
+	trigger = {
+		
+			date > 2020.1.1
+			date < 2020.1.2
+		
+		
+		}
 	option = {
 		name = FRW_agriculture.1.a
 		country_event = {id=FRW_agriculture.2 days=5}
@@ -29,6 +36,13 @@ country_event = {
 	picture = GFX_Far_left_0
 	is_triggered_only = yes
 	fire_only_once = yes
+	trigger = {
+		
+			date > 2020.1.1
+			date < 2020.1.2
+		
+		
+		}
 	option = {
 		name = FRW_agriculture.2.a
 		country_event = {id=FRW_agriculture.3 days=16}
@@ -41,6 +55,13 @@ country_event = {
 	picture = GFX_Far_left_0
 	is_triggered_only = yes
 	fire_only_once = yes
+	trigger = {
+		
+			date > 2020.1.1
+			date < 2020.1.2
+		
+		
+		}
 	option = {
 		name = FRW_agriculture.3.a
 		country_event = {id=FRW_agriculture.4 days=30}
@@ -53,6 +74,13 @@ country_event = {
 	picture = GFX_Far_left_0
 	is_triggered_only = yes
 	fire_only_once = yes
+	trigger = {
+		
+			date > 2020.1.1
+			date < 2020.1.2
+		
+		
+		}
 	option = {
 		name = FRW_agriculture.4.a
 		country_event = {id=FRW_agriculture.5 days=20}
@@ -65,6 +93,13 @@ country_event = {
 	picture = GFX_Far_left_0
 	is_triggered_only = yes
 	fire_only_once = yes
+	trigger = {
+		
+			date > 2020.1.1
+			date < 2020.1.2
+		
+		
+		}
 	option = {
 		name = FRW_agriculture.5.a
 		country_event = {id=FRW_agriculture.6 days=16}
@@ -81,6 +116,13 @@ country_event = {
 	picture = GFX_Far_left_0
 	is_triggered_only = yes
 	fire_only_once = yes
+	trigger = {
+		
+			date > 2020.1.1
+			date < 2020.1.2
+		
+		
+		}
 	option = {
 		name = FRW_agriculture.6.a
 		country_event = {id=FRW_agriculture.7 days=16}
@@ -96,6 +138,13 @@ country_event = {
 	picture = GFX_Far_left_0
 	is_triggered_only = yes
 	fire_only_once = yes
+	trigger = {
+		
+			date > 2020.1.1
+			date < 2020.1.2
+		
+		
+		}
 	option = {
 		name = FRW_agriculture.7.a
 		complete_national_focus = FRW_focus142
@@ -112,6 +161,13 @@ country_event = {
 	picture = GFX_Far_left_0
 	is_triggered_only = yes
 	fire_only_once = yes
+	trigger = {
+		
+			date > 2020.1.1
+			date < 2020.1.2
+		
+		
+		}
 	option = {
 		name = Geoffrey.1.a
 		#remove_ideas=
@@ -1526,7 +1582,13 @@ country_event = {
 	desc = FRW.52.d
 	picture = GFX_Eu_election
 	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
+		
+			date > 2020.1.1
+			date < 2020.1.2
+		
+		
 		}
 	option = {
 		name = FRW.52.a
@@ -1627,8 +1689,13 @@ country_event = {
 	desc = FRW.56.d
 	picture = GFX_Eu_election
 	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
+			date > 2020.1.11
+			date < 2020.1.13
 		}
+		
+		
 	option = {
 		name = FRW.56.a 
 		MOA={

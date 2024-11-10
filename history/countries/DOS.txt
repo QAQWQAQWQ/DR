@@ -67,22 +67,42 @@ DOS_Discord_the_Pope
 DOS_Saxony_Thuringia_United
 }
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	Liberalism = 5
-	Nationalism = 15
-	Conservatism = 75
-	Revolutionism = 5
+	Dictatorship = 100
 }
-puppet = SAA
-puppet = SAB
-puppet = SAC
-puppet = SAD
-puppet = SAE
-puppet = SAF
-puppet = SAG
+
+
+set_autonomy = {
+	target = SAA
+	autonomy_state = autonomy_puppet
+}
+set_autonomy = {
+	target = SAB
+	autonomy_state = autonomy_puppet
+}
+set_autonomy = {
+	target = SAC
+	autonomy_state = autonomy_puppet
+}
+set_autonomy = {
+	target = SAD
+	autonomy_state = autonomy_puppet
+}
+set_autonomy = {
+	target = SAE
+	autonomy_state = autonomy_puppet
+}
+set_autonomy = {
+	target = SAF
+	autonomy_state = autonomy_puppet
+}
+set_autonomy = {
+	target = SAG
+	autonomy_state = autonomy_puppet
+}

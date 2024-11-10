@@ -12,6 +12,7 @@ set_technology = {
 	fuel_silos = 1
 }
 
+recruit_character = SIW_Peter_I
 recruit_character = SIW_Nicola_Uzun
 recruit_character = SIW_Milenko_Radomar_Vesnic
 recruit_character = SIW_Mihailo_Rasic
@@ -87,15 +88,14 @@ SIW_Milenko_Radomar_Vesnic_P
 set_country_flag =SIW_Aleksandar_Obrenovic_1
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Paternalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	Liberalism = 5
-	Nationalism = 10
-	Conservatism = 80
-	Revolutionism = 5
+	Paternalism = 50
+	Conservatism = 50
+
 }

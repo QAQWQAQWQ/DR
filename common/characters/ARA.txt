@@ -1,4 +1,19 @@
 characters={
+	ARA_Louis_Jerome_Bonaparte={
+		name=ARA_Louis_Jerome_Bonaparte
+		portraits={
+			civilian={
+				large="gfx/leaders/ARA/Portrait_Louis_Jerome_Bonaparte.tga"
+			}
+		}
+		country_leader={
+			ideology=autocratic-constitutional-monarchy
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
 	ARA_avetis_aharonyan={
 		name=ARA_avetis_aharonyan
 		portraits={

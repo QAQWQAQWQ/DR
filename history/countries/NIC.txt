@@ -17,14 +17,18 @@ set_war_support = 0.1
 set_convoys = 10
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1934.11.8"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	Liberalism = 15
-	Nationalism = 5
-	Revolutionism = 10
-	Conservatism = 70
+	Dictatorship = 90
+	Liberalism = 6
+	Conservatism = 1
+	Moderate_Socialism = 3
 }
+
+give_military_access = BNA
+give_military_access = UBS
+give_military_access = ENL

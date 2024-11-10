@@ -11,10 +11,10 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-
+recruit_character = KOH_Karoly_Huszar
+recruit_character = KOH_Horthy_Miklos
 recruit_character = KOH_Joseph_Augusta
 recruit_character = KOH_Mihaly_Karolyi
-recruit_character = KOH_Horthy_Miklos
 recruit_character = KOH_Janky_Kocsard
 recruit_character = KOH_Samu_Baro_Hazai
 recruit_character = KOH_Shvoy_Istvan
@@ -63,7 +63,7 @@ recruit_character = KOH_Vitez_nagybaczoni_Nagy
 	}
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -77,8 +77,5 @@ Staterun_economy
 Part_of_Habsburgs
 }
 set_popularities = {
-	Liberalism = 25
-	Nationalism = 25
-	Conservatism = 40
-	Revolutionism = 10
+	Dictatorship = 100
 }

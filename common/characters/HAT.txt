@@ -1,4 +1,29 @@
 characters={
+	HAT_Smedley_Darlington_Butler={
+		name=HAT_Smedley_Darlington_Butler
+		portraits={
+			civilian={
+				large="gfx/leaders/UBS/Portrait_Smedley_Darlington_Butler.tga"
+			}
+			army={
+				large="gfx/leaders/UBS/Portrait_Smedley_Darlington_Butler.tga"
+			}
+		}
+		country_leader={
+			ideology=ironfist-colonial-government
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		corps_commander={
+			traits={ Marine_Corps }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
 	 HAT_Philippe_Sudre_Dartiguenave={
 		name=HAT_Philippe_Sudre_Dartiguenave
 		portraits={

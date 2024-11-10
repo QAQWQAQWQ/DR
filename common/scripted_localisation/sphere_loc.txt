@@ -37,6 +37,11 @@ defined_text = {
 			AND = {
 				check_variable = { THIS.is_a_gerat_power = 1 }
 				is_major = yes
+				NOT = {
+					original_tag = JPN
+					original_tag = EYJ
+					original_tag = YED
+				}
 				# has_manpower > 200000
 			}
 		}
@@ -46,6 +51,12 @@ defined_text = {
 		trigger = {
 			AND = {
 				is_major = yes
+				OR={
+					original_tag = JPN
+					original_tag = EYJ
+					original_tag = YED
+				}
+				
 			}
 		}
 	}

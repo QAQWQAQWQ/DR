@@ -12,6 +12,8 @@ set_technology = {
 	fuel_silos = 1
 }
 
+
+
 #recruit_character = JPN_Emperor_Meiji
 recruit_character = JPN_Emperor_Taisho
 recruit_character = JPN_Honorable
@@ -51,7 +53,7 @@ recruit_character = JPN_Tokugawa_Ieda
 	}
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no	
@@ -67,7 +69,6 @@ set_politics = {
 #
 
 set_autonomy = { target = RTW autonomy_state = autonomy_colony }
-
 
 add_ideas={
 	JPN_Restoration
@@ -91,7 +92,6 @@ Theocratic_state
 
 }
 set_popularities = {
-	Conservatism = 80
-	Liberalism = 20
+	Dictatorship = 100
 }
 give_guarantee = KON

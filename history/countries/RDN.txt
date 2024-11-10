@@ -69,7 +69,7 @@ recruit_character = RDN_Prince_Ferdinand_Pius
 		
 	}
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -82,8 +82,8 @@ secondary_school
 RDN_Camorra
 }
 set_popularities = {
-	Conservatism = 80
-	Liberalism = 20
+	Paternalism = 10
+	Dictatorship = 90
 }
 add_equipment_to_stockpile = {
     type = infantry_equipment

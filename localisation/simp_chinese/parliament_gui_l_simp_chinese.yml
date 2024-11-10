@@ -41,17 +41,17 @@
 
 
 
-  FRW_party_2_text:0 "§W民主共和党§!"
-  FRW_party_2_text_desc:0 "\n民主共和党\n§R党代表§! 保罗·布鲁斯\n\n\n\n\n£Paul_Brousse\n\n\n\n\n\n这是占位符......................................"
+  FRW_party_2_text:0 "§W社会党(布鲁斯派)§!"
+  FRW_party_2_text_desc:0 "\n社会党(布鲁斯派)\n§R党代表§! 保罗·布鲁斯\n\n\n\n\n£Paul_Brousse\n\n\n\n\n\n这是占位符......................................"
 
-  FRW_party_3_text:0 "§W独立社会党§!"
-  FRW_party_3_text_desc:0 "\n法国独立社会党\n§R党代表§! 让·饶勒斯\n\n\n\n\n£Jean_Jaures\n\n\n\n\n\n这是占位符......................................"
+  FRW_party_3_text:0 "§W社会党(饶勒斯派)§!"
+  FRW_party_3_text_desc:0 "\n社会党(饶勒斯派)\n§R党代表§! 让·饶勒斯\n\n\n\n\n£Jean_Jaures\n\n\n\n\n\n这是占位符......................................"
 
-  FRW_party_4_text:0 "§W激进社会党§!"
-  FRW_party_4_text_desc:0 "\n激进社会党\n§R党代表§! 乔治·克里孟梭\n\n\n\n\n£Georges_Clemenceau\n\n\n\n\n\n这是占位符......................................"
+  FRW_party_4_text:0 "§W共和联盟§!"
+  FRW_party_4_text_desc:0 "\n共和联盟\n§R党代表§! 乔治·克里孟梭\n\n\n\n\n£Georges_Clemenceau\n\n\n\n\n\n这是占位符......................................"
 
-  FRW_party_5_text:0 "§W革命社会主义工人党§!"
-  FRW_party_5_text_desc:0 "\n革命布朗基派\n§R党代表§! 让·阿列曼\n\n\n\n\n£Jean_Allemane\n\n\n\n\n\n这是占位符......................................"
+  FRW_party_5_text:0 "§W社会党(阿勒曼派)§!"
+  FRW_party_5_text_desc:0 "\n社会党(阿勒曼派)\n§R党代表§! 让·阿勒曼\n\n\n\n\n£Jean_Allemane\n\n\n\n\n\n这是占位符......................................"
 
 
   FRW_party_6_text:0 "§W无党派（独立人士）§!"
@@ -59,7 +59,7 @@
 
 
 
-  FRW_party_7_text_desc:0 "\n革命社会主义工人党\n§R党代表§! 马塞尔·加香\n\n\n\n\n£Marcel_Cachin\n\n\n\n\n\n这是占位符......................................"
+  FRW_party_7_text_desc:0 "\n社会主义国际法国支部（加香派）\n§R党代表§! 马塞尔·加香\n\n\n\n\n£Marcel_Cachin\n\n\n\n\n\n这是占位符......................................"
 ####
   ZHX_party_1_text:0 "§W安福党§!"
   ZHX_party_1_text_desc:0 "\n安福党\n§R党代表§! 王揖唐\n\n\n\n\n£WangJiTang\n\n\n\n\n\n这是占位符......................................"
@@ -73,28 +73,19 @@
   ZHX_party_5_text_desc:0 "\n共和党\n§R党代表§! 黎元洪\n\n\n\n\n£Li_HongYuan\n\n\n\n\n\n这是占位符......................................"
 
 ####
-  XJC_party_1_text:0 "§W国民党新疆支部核心党员§!"
-  XJC_party_1_text_desc:0 "\n国民党新疆支部核心党员\n§R党代表§! \n\n\n\n\n这是占位符......................................"
-  XJC_party_2_text:0 "§W反俄扎吉德§!"
-  XJC_party_2_text_desc:0 "\n反俄扎吉德\n§R党代表§! \n\n\n\n\n这是占位符......................................"
-  XJC_party_3_text:0 "§W泛突扎吉德§!"
-  XJC_party_3_text_desc:0 "\n泛突扎吉德\n§R党代表§! \n\n\n\n\n这是占位符......................................"
-  XJC_party_4_text:0 "§W亲革命乡绅§!"
-  XJC_party_4_text_desc:0 "\n亲革命乡绅\n§R党代表§! \n\n\n\n\n这是占位符......................................"
-  XJC_party_5_text:0 "§W农会代表§!"
-  XJC_party_5_text_desc:0 "\n农会代表\n§R党代表§! \n\n\n\n\n这是占位符......................................"
-  XJC_party_6_text:0 "§W工会代表§!"
-  XJC_party_6_text_desc:0 "\n工会代表\n§R党代表§! \n\n\n\n\n这是占位符......................................"
-  XJC_party_7_text:0 "§W保守乡绅§!"
-  XJC_party_7_text_desc:0 "\n保守乡绅\n§R党代表§! \n\n\n\n\n这是占位符......................................"
-  XJC_party_8_text:0 "§W卡迪木§!"
-  XJC_party_8_text_desc:0 "\n卡迪木\n§R党代表§! \n\n\n\n\n这是占位符......................................"
-  XJC_party_9_text:0 "§W哥老系§!"
-  XJC_party_9_text_desc:0 "\n哥老系\n§R党代表§! \n\n\n\n\n这是占位符......................................"
-  XJC_party_10_text:0 "§W亲俄扎吉德§!"
-  XJC_party_10_text_desc:0 "\n亲俄扎吉德\n§R党代表§! \n\n\n\n\n这是占位符......................................"
-  XJC_party_11_text:0 "§W泛伊斯兰和原教旨§!"
-  XJC_party_11_text_desc:0 "\n泛伊斯兰和原教旨\n§R党代表§! \n\n\n\n\n这是占位符......................................"
+  XJC_party_1_text:0 "§W国民党两盆支部§!"
+  XJC_party_1_text_desc:0 "\n国民党两盆支部\n§R党代表§! \n\n\n\n\n这是占位符......................................"
+  XJC_party_2_text:0 "§W德政商榷会§!"
+  XJC_party_2_text_desc:0 "\n德政商榷会\n§R党代表§! \n\n\n\n\n这是占位符......................................"
+  XJC_party_3_text:0 "§W卡迪木党§!"
+  XJC_party_3_text_desc:0 "\n卡迪木党\n§R党代表§! \n\n\n\n\n这是占位符......................................"
+  XJC_party_4_text:0 "§W一月七日联盟§!"
+  XJC_party_4_text_desc:0 "\n一月七日联盟\n§R党代表§! \n\n\n\n\n这是占位符......................................"
+  XJC_party_5_text:0 "§W扎吉德党§!"
+  XJC_party_5_text_desc:0 "\n扎吉德党\n§R党代表§! \n\n\n\n\n这是占位符......................................"
+  XJC_party_6_text:0 "§W伊斯兰联合党§!"
+  XJC_party_6_text_desc:0 "\n伊斯兰联合党\n§R党代表§! \n\n\n\n\n这是占位符......................................"
+  
 ####
   ENL_party_1_text:0 "§W独立工党§!"
   ENL_party_1_text_desc:0 "\n安福党\n§R党代表§! \n\n\n\n\n£WangJiTang\n\n\n\n\n\n这是占位符......................................"

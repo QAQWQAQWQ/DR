@@ -1,17 +1,12 @@
 # The following scripted effect sets-up the parliament at game start.
 XJC_parliament_gui_initial = {
 	#政党席位
-	add_to_array = { parliament_seat_array = 43 } # Party A
-	add_to_array = { parliament_seat_array = 12 } # Party B
-	add_to_array = { parliament_seat_array = 6} # Party C
-	add_to_array = { parliament_seat_array = 5 } # Party D
-	add_to_array = { parliament_seat_array = 10 }# Party E
-	add_to_array = { parliament_seat_array = 5 } # Party F
-	add_to_array = { parliament_seat_array = 24} # Party G
-	add_to_array = { parliament_seat_array = 35 } # Party H
-	add_to_array = { parliament_seat_array = 23 }# Party I
-	add_to_array = { parliament_seat_array = 31 }# Party J
-	add_to_array = { parliament_seat_array = 6 }# Party J
+	add_to_array = { parliament_seat_array = 102 } # Party A
+	add_to_array = { parliament_seat_array = 31 } # Party B
+	add_to_array = { parliament_seat_array = 41} # Party C
+	add_to_array = { parliament_seat_array = 19 } # Party D
+	add_to_array = { parliament_seat_array = 6 }# Party E
+	add_to_array = { parliament_seat_array = 1 } # Party F
 	#政党数量
 	add_to_array = { parliament_member_array = 1 } # Party A
 	add_to_array = { parliament_member_array = 2 } # Party B

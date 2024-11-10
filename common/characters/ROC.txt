@@ -1,4 +1,19 @@
 characters={
+	ROC_HuangXing={
+		name=ROC_HuangXing
+		portraits={
+			civilian={
+				large="gfx/leaders/ROC/portrait_HuangXing.tga"
+			}
+		}
+		country_leader={
+			ideology=Paternalist_Constitutional_Sanmin_Doctrine
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
 	ROC_Song_JiaoRen={
 		name=ROC_Song_JiaoRen
 		portraits={
@@ -36,7 +51,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=False-Revolutionary_Dictatorship_of_Reaction
+			ideology=Reactionist_Sanmin_Dictatorship
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1

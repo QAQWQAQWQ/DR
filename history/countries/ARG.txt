@@ -56,16 +56,15 @@ set_country_flag = monroe_doctrine
 
 set_convoys = 120
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Liberalism
 	last_election = "1931.11.8"
 	election_frequency = 72
 	elections_allowed = yes
 }
 set_popularities = {
-	Liberalism = 5
-	Nationalism = 5
-	Revolutionism = 12
-	Conservatism = 78
+	Conservatism = 25
+	Moderate_Socialism = 16
+	Liberalism = 59
 }
 	#recruit_character = ARG_roberto_maria_ortiz
 	#promote_character = ARG_roberto_maria_ortiz

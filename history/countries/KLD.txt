@@ -50,7 +50,7 @@ recruit_character = KLD_Lazar_Dimitrievich
 	}
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -72,7 +72,6 @@ Staterun_economy
 Part_of_Habsburgs
 }
 set_popularities = {
-	Nationalism = 25
-	Conservatism = 65
-	Conservatism = 10
+	Paternalism = 20
+	Dictatorship = 80
 }

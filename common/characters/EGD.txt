@@ -1,4 +1,19 @@
 characters={
+	EGD_Alfredo_Baquerizo={
+		name=EGD_Alfredo_Baquerizo
+		portraits={
+			civilian={
+				large="gfx/leaders/EGD/Portrait_Alfredo_Baquerizo.tga"
+			}
+		}
+		country_leader={
+			ideology=oligarchic-semi-democratic-liberalism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
 	EGD_Ecuadorian_Military_Commission={
 		name=EGD_Ecuadorian_Military_Commission
 		portraits={

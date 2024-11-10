@@ -8,20 +8,23 @@ state={
 
 	history={
 		owner = QIX
-		add_core_of = QIX
+		add_core_of = ROC
 		buildings = {
 			infrastructure = 2
 			grain_farms = 2
 
 		}
 		victory_points = {
-			7025 2 
+			7025 10 
+		}
+		victory_points = {
+			1121 10 
 		}
 
 	}
 
 	provinces={
-		1029 1076 1121 1161 7025 7200 9956 11973 12055 
+		1029 1076 1121 7025 11973 12055 13144 4005
 	}
 	manpower=13669300
 	buildings_max_level_factor=1.000

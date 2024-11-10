@@ -6344,13 +6344,13 @@ on_actions = {
 
 			15 = { set_variable = { state_culture = 129 } }
 			16 = { set_variable = { state_culture = 129 } }
-			17 = { set_variable = { state_culture = 129 } }
 			18 = { set_variable = { state_culture = 129 } }
 			23 = { set_variable = { state_culture = 129 } }
 			24 = { set_variable = { state_culture = 129 } }
 			27 = { set_variable = { state_culture = 129 } }
 			29 = { set_variable = { state_culture = 129 } }
 			30 = { set_variable = { state_culture = 129 } }
+			32 = { set_variable = { state_culture = 129 } }
 			33 = { set_variable = { state_culture = 129 } }
 			34 = { set_variable = { state_culture = 129 } }
 			713 = { set_variable = { state_culture = 129 } }
@@ -6361,8 +6361,8 @@ on_actions = {
 			950 = { set_variable = { state_culture = 129 } }
 			951 = { set_variable = { state_culture = 129 } }
 
+			17 = { set_variable = { state_culture = 130 } }
 			20 = { set_variable = { state_culture = 130 } }
-			32 = { set_variable = { state_culture = 130 } }
 			735 = { set_variable = { state_culture = 130 } }
 			845 = { set_variable = { state_culture = 130 } }
 
@@ -6962,6 +6962,8 @@ on_actions = {
 			392 = { set_variable = { state_culture = 272 } }
 			816 = { set_variable = { state_culture = 272 } }
 			1071 = { set_variable = { state_culture = 272 } }
+			1042 = { set_variable = { state_culture = 272 } }
+			376 = { set_variable = { state_culture = 272 } }
 
 			377 = { set_variable = { state_culture = 273 } }
 			378 = { set_variable = { state_culture = 273 } }
@@ -7018,7 +7020,6 @@ on_actions = {
 			686 = { set_variable = { state_culture = 278 } }
 
 			277 = { set_variable = { state_culture = 279 } }
-			376 = { set_variable = { state_culture = 279 } }
 			475 = { set_variable = { state_culture = 279 } }
 			476 = { set_variable = { state_culture = 279 } }
 			477 = { set_variable = { state_culture = 279 } }
@@ -7031,7 +7032,6 @@ on_actions = {
 			484 = { set_variable = { state_culture = 279 } }
 			485 = { set_variable = { state_culture = 279 } }
 			965 = { set_variable = { state_culture = 279 } }
-			1042 = { set_variable = { state_culture = 279 } }
 
 			304 = { set_variable = { state_culture = 280 } }
 			311 = { set_variable = { state_culture = 280 } }

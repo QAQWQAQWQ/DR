@@ -99,13 +99,13 @@ recruit_character = WWS_Otto_Ruhle
 	}
 country_event = {id=WWS.7 days=110 }
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 add_ideas = {
-	
+	WWS_Gustav_Stresemann_H
 #law
     Market_economy
 	Freedom_belief
@@ -116,11 +116,13 @@ add_ideas = {
 	low_industrialization
 	Local_police
 
+	WWS_Gustav_Stresemann_H
+
 Deutscher_Bund
 Deutscher_Zollverein
 }
 set_popularities = {
-	Liberalism = 15
-	Conservatism = 65
-                Reformism=20
+
+	Dictatorship = 95
+                Reformism=5
 }

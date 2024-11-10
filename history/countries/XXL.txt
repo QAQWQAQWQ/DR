@@ -46,7 +46,7 @@ recruit_character = XXL_william_massey
 	}
 
 set_politics = {
-	ruling_party = Liberalism
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -58,8 +58,7 @@ Basic_industrialization
 Private_economy
 }
 set_popularities = {
-	Liberalism = 89
-	Nationalism = 1
-	Conservatism = 5
-	Revolutionism = 5
+	Conservatism = 38.5
+	Liberalism = 34
+	Reformism = 27.5
 }

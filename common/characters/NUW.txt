@@ -1,4 +1,19 @@
 characters={
+	NUW_Gunnar_Knudsen={
+		name=NUW_Gunnar_Knudsen
+		portraits={
+			civilian={
+				large="gfx/leaders/NUW/Portrait_Gunnar_Knudsen.tga"
+			}
+		}
+		country_leader={
+			ideology=Social_Liberalism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+
 	NUW_Haakon_VII={
 		name=NUW_Haakon_VII
 		portraits={
