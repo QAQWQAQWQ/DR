@@ -1,7 +1,7 @@
 
 state={
 	id=1011
-	name="口北"
+	name="STATE_1011"
 	manpower = 800000
 	
 	state_category = pastoral
@@ -17,7 +17,7 @@ state={
 	}
 
 	provinces={
-		952 1137 1590 6904 9776 10397
+		1137 1590 6904 9776 10397 828
 	}
 
 	local_supplies=0.0 

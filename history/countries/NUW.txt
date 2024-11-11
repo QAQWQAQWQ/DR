@@ -11,7 +11,7 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-
+recruit_character = NUW_Gunnar_Knudsen
 recruit_character = NUW_Haakon_VII
 
 
@@ -54,15 +54,17 @@ recruit_character = NUW_Haakon_VII
 }
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Liberalism
 	last_election = "1917.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	Liberalism = 5
-	Nationalism = 1
-	Conservatism = 89
-	Revolutionism = 5
+	Liberalism = 29
+	Conservatism = 35
+	Reformism = 13
+	Moderate_Socialism = 11.5
+	Revolutionism = 11.5
+	
 }

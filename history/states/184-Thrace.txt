@@ -13,20 +13,25 @@ state={
 	}
 
 	history={
-		victory_points = {
-			11905 1 
-		}
 		owner = YED
 		add_core_of = YED
+		victory_points = {
+			11774 4
+		}
+		
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
+			849 = {
+				naval_base = 3
+				coastal_bunker = 2
+			}
 
 		}
 	}
 
 	provinces={
-		9791 9930 11774 11905 
+		9791 11774 849
 	}
 
 	local_supplies=9.0 

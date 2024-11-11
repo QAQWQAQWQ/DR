@@ -13,4 +13,18 @@ characters={
 			id=-1
 		}
 	}		
+	RUD_Nils_Eden={
+		name=RUD_Nils_Eden
+		portraits={
+			civilian={
+				large="gfx/leaders/RUD/Portrait_Nils_Eden.tga"
+			}
+		}
+		country_leader={
+			ideology=Conservative_Liberalism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
 	}

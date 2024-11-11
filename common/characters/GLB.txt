@@ -1,5 +1,20 @@
 characters={
-	GLB_Pedro_Nel_Ospina={
+	GLB_Marco_Fidel_Suarez={
+		name=GLB_Marco_Fidel_Suarez
+		portraits={
+			civilian={
+				large="gfx/leaders/GLB/Portrait_Marco_Fidel_Suarez.tga"
+			}
+		}
+		country_leader={
+			ideology=oligarchic-conservatism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
+
+	GLB_Rafael_Uribe_Urib={
 		name=GLB_Rafael_Uribe_Urib
 		portraits={
 			civilian={
