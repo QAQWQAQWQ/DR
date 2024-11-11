@@ -9,6 +9,7 @@ state={
 	history={
 		owner = QIX
 		add_core_of = ROC
+		add_core_of = QIX
 		buildings = {
 			infrastructure = 2
 			grain_farms = 2
@@ -24,7 +25,7 @@ state={
 	}
 
 	provinces={
-		1029 1076 1121 7025 11973 12055 13144 4005
+		1029 1076 1121 7025 11973 12055
 	}
 	manpower=13669300
 	buildings_max_level_factor=1.000

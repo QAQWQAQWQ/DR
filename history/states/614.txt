@@ -1,7 +1,7 @@
 
 state={
 	id=614
-	name="津海"
+	name="STATE_614"
 	manpower = 8434900
 	
 	state_category = town
@@ -14,10 +14,20 @@ state={
 		victory_points = {
 			11944 3
 		}
+		
+		victory_points = {
+			4137 5
+		}
+		victory_points = {
+			10068 5
+		}
+		victory_points = {
+			9969 10
+		}
 	}
 
 	provinces={
-		4137 9969 10003 10119 11944 11980 11996
+		4137 9969 10003 11944 11980 11996 10022 10068 10119
 	}
 
 	local_supplies=0.0 

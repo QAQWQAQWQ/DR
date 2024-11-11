@@ -5,7 +5,7 @@ state={
 		grain=5
 	}
 	provinces={
-		4704 7732 10839 12524 7808 12671 4788 10674 10691
+		4704 7732 10839 12524 7808 12671 4788 10674 10691 4709
 	}
 	manpower=1700000
 	buildings_max_level_factor=1.000
@@ -13,6 +13,9 @@ state={
 	history={
 		owner = XJC
 		add_core_of = XJC
+		victory_points = {
+			4709 5 
+		}
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1

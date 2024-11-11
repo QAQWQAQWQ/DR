@@ -9,19 +9,20 @@ state={
 	history={
 		owner = XJC
 		add_core_of = XJC
+		victory_points = {
+			10545 4
+		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
 
 		}
-		victory_points = {
-			4709 5 
-		}
+		
 
 	}
 
 	provinces={
-		4709 4770 7702 7792 10545 10614 12864 12656
+		4770 7702 7792 10545 10614 12864 12656
 	}
 	manpower=1030500
 	buildings_max_level_factor=1.000
