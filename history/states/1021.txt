@@ -2,31 +2,43 @@ state={
 	id=1021
 	name="STATE_1021"
 	resources={
-		grain=4
+		steel=2 # was: 4
+		chromium=8 # was: 22
+		aluminium=17 # was: 58
+		tungsten = 7 # was: 20
+	}
+	resources={
+		grain=9
 	}
 	history={
 		owner = YED
 		add_core_of = YED
 		victory_points = {
-			11818 5 
+			3973 3
+		}
+		victory_points = {
+			3864 3
+		}
+		victory_points = {
+			863 1
+		}
+		victory_points = {
+			976 1
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			industrial_complex = 1
-			11818 = {
-				naval_base = 3
-			}
 
 		}
 
 	}
 
 	provinces={
-        11818 
+        	841 863 966 3844 3864 3973 3980 6930 11786 
 	}
-	manpower=555700
+	manpower=925000
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
 
 	local_supplies=0.0 
 }

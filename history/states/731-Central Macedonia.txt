@@ -8,6 +8,9 @@ state={
 	history={
 		owner = YED
 		add_core_of = YED
+		victory_points = {
+			11818 5 
+		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
@@ -18,7 +21,7 @@ state={
 	}
 
 	provinces={
-		936 3526 6990 10163 9837 3936 895 9930
+		895 3526 3936 6990 9930 10163 11818
 	}
 	manpower=655700
 	buildings_max_level_factor=1.000

@@ -2,15 +2,15 @@
 state={
 	id=47
 	name="STATE_47" # Thessaly
-	manpower=2312500
+	manpower=1387500
 	resources={
-		steel=3 # was: 4
-		chromium=12 # was: 22
-		aluminium=30 # was: 58
-		tungsten = 10 # was: 20
+		steel=1 # was: 4
+		chromium=4 # was: 22
+		aluminium=13 # was: 58
+		tungsten = 3 # was: 20
 	}
 	resources={
-		grain=9
+		grain=4
 	}
 	state_category = city
 
@@ -20,25 +20,10 @@ state={
 			4109 20 
 		}
 		victory_points = {
-			3973 3
-		}
-		victory_points = {
-			863 1
-		}
-		victory_points = {
-			3864 3
-		}
-		victory_points = {
-			976 1
-		}
-		victory_points = {
 			7127 3
 		}
 		victory_points = {
 			3988 1
-		}
-		victory_points = {
-			1205 1
 		}
 		buildings = {
 			infrastructure = 2
@@ -47,7 +32,9 @@ state={
 			air_base = 4
 			4109 = {
 				naval_base = 9
-
+			}
+			11818 = {
+				naval_base = 3
 			}
 
 		}
@@ -56,7 +43,7 @@ state={
 	}
 
 	provinces={
-		841 3980 966 3844 863 976 1109 3864 3973 3988 4109 6930 7127 11786 11895 1205
+		976 1109 3988 4109 7127
 	}
 
 	local_supplies=0.0 
