@@ -1118,7 +1118,17 @@ ger_con_fra_def = {
           has_full_control_of_state = 8
         }
       }
-      
+      OR = {
+        AOX = {
+          has_full_control_of_state = 951
+        }
+        WWS = {
+          has_full_control_of_state = 951
+        }
+        LSB = {
+          has_full_control_of_state = 951
+        }
+      }
     }
     cost = 60
     fire_only_once = no
@@ -1134,7 +1144,20 @@ ger_con_fra_def = {
           instant_build = yes 
         } 
       }
-      
+      951 = {
+        add_building_construction = { 
+          type = bunker 
+          province = 9418
+          level = 1
+          instant_build = yes 
+        } 
+        add_building_construction = { 
+          type = bunker 
+          province = 11407
+          level = 1
+          instant_build = yes 
+        } 
+      }
     }
   }
 }
