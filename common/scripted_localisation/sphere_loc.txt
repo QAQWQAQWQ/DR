@@ -106,6 +106,7 @@ defined_text = {
 		localization_key = Global_power_texts5
 		trigger = {
 			OR = {
+				original_tag = DUQ
 				original_tag = SUE
 				original_tag = XJC
 				original_tag = XZZ
@@ -130,6 +131,11 @@ defined_text = {
 				original_tag = MAQ
 				original_tag = KEI
 				original_tag = XUH
+				original_tag = GUI
+				original_tag = ROC
+				original_tag = FTX
+				original_tag = JLP
+				original_tag = HLP
 			}
 		}
 	}
