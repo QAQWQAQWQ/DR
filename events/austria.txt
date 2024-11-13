@@ -682,6 +682,9 @@ country_event = {
 	picture = GFX_austria_1_pict
 	fire_only_once = no
 	is_triggered_only = yes
+	immediate = {
+		news_event = WorldNew.28
+		}
 	option = {
 		name = aushun.5.a
 		every_state = {
@@ -692,6 +695,11 @@ country_event = {
 		}
 		DMT = { annex_country = { target = KLD transfer_troops = yes } 
 	    set_cosmetic_tag = KLD_new_name
+		set_party_name = {
+			ideology = Dictatorship
+			long_name = DMT_Dictatorship_party1
+			name = DMT_Dictatorship_party1
+		}
 	}
 		custom_effect_tooltip = more_cro_aus_hun_sup_30
 				add_to_variable = {

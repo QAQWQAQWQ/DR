@@ -5,12 +5,12 @@ state={
 	manpower = 1496508
 	
 	state_category = rural
-	impassable = yes
+	
 	resources={
 		grain=17
 	}
 	history={
-		owner = SBY
+		owner = PHL
 add_core_of = PHL
 		buildings = {
 			infrastructure = 2
@@ -21,6 +21,7 @@ add_core_of = PHL
 		victory_points = {
 			4241 3 
 		}
+
 
 	}
 

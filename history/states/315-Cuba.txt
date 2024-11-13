@@ -10,7 +10,7 @@ state= {
 		grain=5
 	}
 	state_category = town
-	impassable = yes
+
 
 	history= {
 		owner = SBY
@@ -33,6 +33,7 @@ state= {
 		victory_points = {
 			7590 1
 		}
+		set_demilitarized_zone = yes
 
 	}
 	provinces={

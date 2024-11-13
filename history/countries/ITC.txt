@@ -1,4 +1,4 @@
-﻿capital = 158
+﻿capital = 2
 
 oob = "ITC_1920"
 
@@ -11,7 +11,8 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-
+recruit_character = ITC_Filippo_Turati
+recruit_character = ITC_Giacomo_Matteotti
 recruit_character = ITC_Antonio_Gramsci
 
 set_technology = {
@@ -48,7 +49,7 @@ set_technology = {
 	}
 
 set_politics = {
-	ruling_party = Revolutionism
+	ruling_party = Reformism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -60,8 +61,7 @@ Basic_industrialization
 Private_economy
 }
 set_popularities = {
-	Liberalism = 5
-	Nationalism = 1
-	radical_socialist = 29
-	Revolutionism = 65
+	Liberalism = 33
+	Moderate_Socialism = 33
+	Reformism = 34
 }

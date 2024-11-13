@@ -406,6 +406,27 @@ news_event = {
 		name = Hidden_News.22.a
 	}		
 }
+news_event = {
+	id = Hidden_News.23
+    hidden = yes
+	fire_only_once = yes
+   trigger = {
+	AND={
+		date > 1920.1.2
+		date < 1920.1.4
+	}
+	
+    }
+   immediate = {
+	news_event = WorldNew.23
+    }
+    mean_time_to_happen = {
+	days = 2
+    }
+	option = {
+		name = Hidden_News.23.a
+	}		
+}
 #######
 #######
 #######
@@ -789,3 +810,122 @@ news_event = {
 		name = WorldNew.22.a
 	}		
 }
+
+news_event = {
+	id = WorldNew.23
+	title = WorldNew.23.t
+	desc = WorldNew.23.d
+	
+	major = yes
+	is_triggered_only = yes
+
+   
+
+	option = {
+		name = WorldNew.23.a
+	}		
+}
+news_event = {
+	id = WorldNew.24
+	title = WorldNew.24.t
+	desc = WorldNew.24.d
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = WorldNew.24.a
+		
+			}
+	}
+news_event = {
+	id = WorldNew.25
+	title = WorldNew.25.t
+	desc = WorldNew.25.d
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = WorldNew.25.a
+		
+			}
+	}
+news_event = {
+	id = WorldNew.26
+	title = WorldNew.26.t
+	desc = WorldNew.26.d
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = WorldNew.26.a
+		
+			}
+	}
+news_event = {
+	id = WorldNew.27
+	title = WorldNew.27.t
+	desc = WorldNew.27.d
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = WorldNew.27.a
+		
+			}
+	}
+news_event = {
+		id = WorldNew.28
+		title = WorldNew.28.t
+		desc = WorldNew.28.d
+		
+		major = yes
+		is_triggered_only = yes
+		
+		option = {
+			name = WorldNew.28.a
+			
+				}
+		}
+news_event = {
+			id = WorldNew.29
+			title = WorldNew.29.t
+			desc = WorldNew.29.d
+			
+			major = yes
+			is_triggered_only = yes
+			
+			option = {
+				name = WorldNew.29.a
+				
+					}
+			}
+			news_event = {
+				id = WorldNew.30
+				title = WorldNew.30.t
+				desc = WorldNew.30.d
+				
+				major = yes
+				is_triggered_only = yes
+				
+				option = {
+					name = WorldNew.30.a
+					
+						}
+				}
+news_event = {
+	id = WorldNew.31
+	title = WorldNew.31.t
+	desc = WorldNew.31.d
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = WorldNew.31.a
+		
+			}
+	}

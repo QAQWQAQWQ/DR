@@ -4,10 +4,10 @@ state=
 	name="STATE_624"
 	manpower = 1290672
 	state_category = town
-	impassable = yes
+	
 	history=
 	{
-		owner = SBY
+		owner = PHL
 		add_core_of = PHL
 		buildings = {
 			infrastructure = 2
@@ -17,9 +17,13 @@ state=
 		victory_points = {
 			4288 1 
 		}
+		victory_points = {
+			1221 10
+		}
+		
 	}
 	provinces={
-		1372 4228 4288 4377 7307 10272 10306 12279 
+		1372 4228 4288 4377 7307 10272 10306 12279 7275 10165 10236 12236 7323 7351 1221 1288
 	}
 
 	local_supplies=0.0 

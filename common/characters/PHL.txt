@@ -1,4 +1,18 @@
 characters={
+	PHL_Emilio_Aguinaldo={
+		name=PHL_Emilio_Aguinaldo
+		portraits={
+			civilian={
+			large="gfx/leaders/PHL/portrait_Emilio_Aguinaldo.tga"
+			}
+		}
+		country_leader={
+			ideology= guerrilla_movement
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
 	PHL_Miguel_Primo_de_Rivera={
 		name=PHL_Miguel_Primo_de_Rivera
 		portraits={

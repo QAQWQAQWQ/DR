@@ -16,20 +16,15 @@ focus_tree = {
 		x = 7
 		y = 0
 		available = {
-			WWS={
-				has_war_with = AOX
+			RDN={
+				has_war_with = TSI
 			}
 		}
 		completion_reward={
 			ITE={
-				leave_faction = yes
+				dismantle_faction = yes
 			}
-			TCY={
-				leave_faction = yes
-			}
-			PMA={
-				leave_faction = yes
-			}
+			
 		}
 		ai_will_do = {
 			factor = 5
