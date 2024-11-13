@@ -86,8 +86,9 @@ country_event = {
 	title = KLD.6.t
 	desc = KLD.6.d
 	picture = GFX_KLD_6
+	major = yes
 	is_triggered_only = yes
-	fire_only_once = no
+	fire_only_once = yes
 	immediate = {
 		hidden_effect = {
 		set_country_flag = KLD_6
@@ -100,5 +101,7 @@ country_event = {
 		}
 	option = {
 		name = KLD.6.a
-		}
+		
+		country_event = {id=aushun.5 days=4}
 	}
+}

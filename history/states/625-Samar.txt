@@ -7,6 +7,7 @@ state=
 		grain=3
 	}
 	state_category = rural
+	
 	history=
 	{
 		owner = SBY
@@ -14,6 +15,7 @@ state=
 		buildings = {
 			infrastructure = 2
 		}
+		set_demilitarized_zone = yes
 	}
 	provinces={
 		1224 1311 1340 4269 4373 

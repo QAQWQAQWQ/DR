@@ -4,28 +4,35 @@
 
 add_namespace = ITE
 
-news_event = {
+country_event = {
 	id = ITE.1
 	title = ITE.1.t
 	desc = ITE.1.d
-	picture = GFX_Hungarian_uprising
-	is_triggered_only = yes
-	major = yes
 
+	fire_only_once = yes
 	trigger = {
-		
+		AND={
+			date > 1920.1.4
+			date < 1920.1.6
 		}
+	}
+		immediate = {
+			news_event = WorldNew.24
+			}
+
 	option = {
 		name = ITE.1.a
-		ITC = {
-				transfer_state = 158
-                add_state_core = 158
-				load_oob = "ITC_1920"
-				load_oob = "ITC_1920NAVY"
-			}
-			}
+		
+		162 = {
+			set_demilitarized_zone = yes
+		}
+		
 	}
-	news_event = {
+}
+
+
+
+	country_event = {
 		id = ITE.2
 		title = ITE.2.t
 		desc = ITE.2.d
@@ -45,6 +52,311 @@ news_event = {
 					load_oob = "FUM_1920"
 					load_oob = "FUM_1920NAVY"
 				}
+				ITC = {
+					transfer_state = 158
+					add_state_core = 158
+					load_oob = "ITC_1920"
+					load_oob = "ITC_1920NAVY"
+				}
 				}
 		}
+		
+			country_event = {
+				id = ITE.3
+				title = ITE.3.t
+				desc = ITE.3.d
+			
+				fire_only_once = yes
+				trigger = {
+					AND={
+						date > 1920.1.8
+						date < 1920.1.10
+					}
+				}
+					immediate = {
+						news_event = WorldNew.25
+						}
+			
+				option = {
+					name = ITE.3.a
+					
+					938 = {
+						set_demilitarized_zone = yes
+					}
+					928 = {
+						set_demilitarized_zone = yes
+					}
+					2 = {
+						set_demilitarized_zone = yes
+					}
+					919 = {
+						set_demilitarized_zone = yes
+					}
+					157 = {
+						set_demilitarized_zone = yes
+					}
+					161 = {
+						set_demilitarized_zone = yes
+					}
+					1039 = {
+						set_demilitarized_zone = yes
+					}
+				}
+			}
+			country_event = {
+				id = ITE.4
+				title = ITE.4.t
+				desc = ITE.4.d
+			
+				fire_only_once = yes
+				trigger = {
+					AND={
+						date > 1920.1.12
+						date < 1920.1.14
+					}
+				}
+					immediate = {
+						news_event = WorldNew.26
+						}
+			
+				option = {
+					name = ITE.4.a
+					
+					RDN = {
+						declare_war_on = {
+							target = TSI
+							type = annex_everything
+						}
+						156 = {
+							add_core_of = RDN
+					}
+					849 = {
+						add_core_of = RDN
+				}
+				117 = {
+					add_core_of = RDN
+			}
+			157 = {
+				add_core_of = RDN
+		}
+					
+				}
+ITE = {
+	complete_national_focus = ITE_Focus1
+}
+			}
+		}
+country_event = {
+	id = ITE.5
+	title = ITE.5.t
+	desc = ITE.5.d
 
+	fire_only_once = yes
+	trigger = {
+		AND={
+			date > 1920.1.16
+			date < 1920.1.18
+		}
+	}
+		immediate = {
+			news_event = WorldNew.27
+			}
+
+	option = {
+		name = ITE.5.a
+		2 = {
+			transfer_state_to = ITC
+		}
+		ITC = {
+			annex_country = {
+				target = LMJ
+			}
+		}
+		928 = {
+			set_demilitarized_zone = no
+		}
+		2 = {
+			set_demilitarized_zone = no
+		}
+		919 = {
+			set_demilitarized_zone = no
+		}
+		938 = {
+			set_demilitarized_zone = no
+		}
+		
+	}
+}
+country_event = {
+	id = ITE.6
+	title = ITE.6.t
+	desc = ITE.6.d
+
+	fire_only_once = yes
+	trigger = {
+		AND={
+			date > 1920.1.16
+			date < 1920.1.18
+		}
+	}
+		immediate = {
+			news_event = WorldNew.27
+			}
+
+	option = {
+		name = ITE.6.a
+		
+		ITC = {
+			annex_country = {
+				target = LMJ
+			}
+		}
+		928 = {
+			set_demilitarized_zone = no
+		}
+		2 = {
+			set_demilitarized_zone = no
+		}
+		919 = {
+			set_demilitarized_zone = no
+		}
+		938 = {
+			set_demilitarized_zone = no
+		}
+		
+	}
+}
+country_event = {
+	id = ITE.7
+	title = ITE.7.t
+	desc = ITE.7.d
+
+	fire_only_once = yes
+	trigger = {
+		AND={
+			date > 1920.1.20
+			date < 1920.1.22
+		}
+	}
+		immediate = {
+			news_event = WorldNew.29
+			}
+
+	option = {
+		name = ITE.7.a
+		
+		ITE = {
+			annex_country = {
+				target = PMA
+			}
+		}
+		ITC = {
+			annex_country = {
+				target = TCY
+			}
+		}
+		
+		162 = {
+			set_demilitarized_zone = no
+		}
+		1039 = {
+			add_core_of = ITE
+	}
+		
+	}
+}
+country_event = {
+	id = ITE.8
+	title = ITE.8.t
+	desc = ITE.8.d
+
+	fire_only_once = yes
+	trigger = {
+		AND={
+			date > 1920.1.24
+			date < 1920.1.26
+		}
+	}
+		immediate = {
+			news_event = WorldNew.30
+			}
+
+	option = {
+		name = ITE.8.a
+
+		RDN = {
+			leave_faction = yes
+		}
+		ITC = {
+			give_military_access = ITE
+			give_military_access = RDN
+		}
+		ITE = {
+			give_military_access = ITC
+			give_military_access = RDN
+		}
+		RDN = {
+			give_military_access = ITE
+			give_military_access = ITC
+		}	
+		ITC = {
+			create_faction = Italian_Union
+			add_to_faction = ITE
+			add_to_faction = RDN
+		}
+		ITC = {
+			declare_war_on = {
+			target = VCT
+			type = annex_everything
+			
+		}
+	}
+	ITE = {
+		declare_war_on = {
+		target = VCT
+		type = annex_everything
+	}
+}
+RDN = {
+	declare_war_on = {
+	target = VCT
+	type = annex_everything
+}
+}
+
+		
+	}
+}
+
+country_event = {
+	id = ITE.9
+	title = ITE.9.t
+	desc = ITE.9.d
+
+	fire_only_once = yes
+	trigger = {
+		AOX = {controls_province = 3773}
+		AOX = {controls_province = 6606}
+		AOX = {controls_province = 9907}
+	}
+		immediate = {
+			news_event = WorldNew.31
+			}
+
+	option = {
+		name = ITE.9.a
+		
+		FRW = {
+			dismantle_faction = yes
+		}
+		ITC = {
+			add_to_faction = FRW
+		}
+		FRW = {
+			declare_war_on = {
+				target = VCT
+				type = annex_everything
+			}
+		}
+	}
+}

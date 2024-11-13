@@ -5,6 +5,7 @@ state=
 	manpower = 3525715
 	
 	state_category = rural
+	
 	resources={
 		grain=4
 	}
@@ -22,6 +23,10 @@ add_core_of = PHL
 		victory_points = {
 			12118 1 
 		}
+		victory_points = {
+			10302 10 
+		}
+		set_demilitarized_zone = yes
 	}
 
 	provinces={

@@ -6,6 +6,7 @@ state=
 	
 	state_category = rural
 	
+	
 	history=
 	{
 		owner = SBY
@@ -16,6 +17,7 @@ add_core_of = PHL
 				naval_base = 1
 			}
 		}
+		set_demilitarized_zone = yes
 	}
 	provinces={
 		4429 7419 10145 

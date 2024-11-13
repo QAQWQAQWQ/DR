@@ -31,6 +31,9 @@ state={
 		victory_points = { #Yambol
 			9888 1
 		}
+		victory_points = { #Yambol
+			9919 5
+		}
 		buildings = {
 			infrastructure = 2
 			arms_factory = 3
@@ -40,7 +43,7 @@ state={
 	}
 
 	provinces={
-		878 893 3937 6814 6923 6967 6952 6982 9862 9888 11813
+		878 893 3937 6814 6923 6967 6952 6982 9862 9888 9919 11813
 	}
 
 	local_supplies=5.0 

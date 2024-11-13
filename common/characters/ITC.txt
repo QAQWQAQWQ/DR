@@ -1,4 +1,37 @@
 characters={
+	ITC_Filippo_Turati={
+		name=ITC_Filippo_Turati
+		portraits={
+			civilian={
+				large="gfx/leaders/ITE/Portrait_Filippo_Turati.tga"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Socialism
+
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
+
+
+	
+	ITC_Giacomo_Matteotti={
+		name=ITC_Giacomo_Matteotti
+		portraits={
+			civilian={
+				large="gfx/leaders/ITE/Portrait_Giacomo_Matteotti.tga"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Socialism
+
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
 	ITC_Antonio_Gramsci={
 		name=ITC_Antonio_Gramsci
 		portraits={
