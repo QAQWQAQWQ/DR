@@ -341,11 +341,11 @@ on_actions = {
                 }
 
                 KOH = {
-                    set_politics = {ruling_party = Conservatism}
+                    set_politics = {ruling_party = Dictatorship}
                     set_popularities = {
                         Liberalism = 25
                         Nationalism = 25
-                        Conservatism = 40
+                        Dictatorship = 40
                         Revolutionism = 10
                     }
                 }

@@ -507,11 +507,11 @@ bos_war_end_qwq = {
             }
             AOX = { set_autonomy = { target = DMT autonomy_state = autonomy_Crown_Territory } }
                 DMT = {
-                    set_politics = {ruling_party = Conservatism}
+                    set_politics = {ruling_party = Dictatorship}
                     set_popularities = {
                         Liberalism = 25
                         Nationalism = 25
-                        Conservatism = 40
+                        Dictatorship = 40
                         Revolutionism = 10
                     }
                 }
