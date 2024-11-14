@@ -30,7 +30,6 @@ set_technology = {
 	early_ship_hull_heavy = 1
 }
 create_faction = Se_International
-add_to_faction = BHL
 set_convoys = 300
 
 country_event = { id = FRW.1 days = 10 }

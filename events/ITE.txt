@@ -6,6 +6,7 @@ add_namespace = ITE
 
 country_event = {
 	id = ITE.1
+	hidden = yes
 	title = ITE.1.t
 	desc = ITE.1.d
 
@@ -17,7 +18,7 @@ country_event = {
 		}
 	}
 		immediate = {
-			news_event = WorldNew.24
+			news_event = ITANews.1
 			}
 
 	option = {
@@ -34,6 +35,7 @@ country_event = {
 
 	country_event = {
 		id = ITE.2
+		hidden = yes
 		title = ITE.2.t
 		desc = ITE.2.d
 		picture = GFX_FUM
@@ -63,6 +65,7 @@ country_event = {
 		
 			country_event = {
 				id = ITE.3
+				hidden = yes
 				title = ITE.3.t
 				desc = ITE.3.d
 			
@@ -74,7 +77,7 @@ country_event = {
 					}
 				}
 					immediate = {
-						news_event = WorldNew.25
+						news_event = ITANews.2
 						}
 			
 				option = {
@@ -105,6 +108,7 @@ country_event = {
 			}
 			country_event = {
 				id = ITE.4
+				hidden = yes
 				title = ITE.4.t
 				desc = ITE.4.d
 			
@@ -116,7 +120,7 @@ country_event = {
 					}
 				}
 					immediate = {
-						news_event = WorldNew.26
+						news_event = ITANews.3
 						}
 			
 				option = {
@@ -127,18 +131,7 @@ country_event = {
 							target = TSI
 							type = annex_everything
 						}
-						156 = {
-							add_core_of = RDN
-					}
-					849 = {
-						add_core_of = RDN
-				}
-				117 = {
-					add_core_of = RDN
-			}
-			157 = {
-				add_core_of = RDN
-		}
+						
 					
 				}
 ITE = {
@@ -148,6 +141,7 @@ ITE = {
 		}
 country_event = {
 	id = ITE.5
+	hidden = yes
 	title = ITE.5.t
 	desc = ITE.5.d
 
@@ -159,7 +153,7 @@ country_event = {
 		}
 	}
 		immediate = {
-			news_event = WorldNew.27
+			news_event = ITANews.4
 			}
 
 	option = {
@@ -189,6 +183,7 @@ country_event = {
 }
 country_event = {
 	id = ITE.6
+	hidden = yes
 	title = ITE.6.t
 	desc = ITE.6.d
 
@@ -200,7 +195,7 @@ country_event = {
 		}
 	}
 		immediate = {
-			news_event = WorldNew.27
+			news_event = ITANews.4
 			}
 
 	option = {
@@ -228,6 +223,7 @@ country_event = {
 }
 country_event = {
 	id = ITE.7
+	hidden = yes
 	title = ITE.7.t
 	desc = ITE.7.d
 
@@ -239,7 +235,7 @@ country_event = {
 		}
 	}
 		immediate = {
-			news_event = WorldNew.29
+			news_event = ITANews.5
 			}
 
 	option = {
@@ -255,7 +251,9 @@ country_event = {
 				target = TCY
 			}
 		}
-		
+		VCT = {
+			retire_country_leader = yes
+		}
 		162 = {
 			set_demilitarized_zone = no
 		}
@@ -267,6 +265,7 @@ country_event = {
 }
 country_event = {
 	id = ITE.8
+	hidden = yes
 	title = ITE.8.t
 	desc = ITE.8.d
 
@@ -278,11 +277,14 @@ country_event = {
 		}
 	}
 		immediate = {
-			news_event = WorldNew.30
+			news_event = ITANews.6
 			}
 
 	option = {
 		name = ITE.8.a
+		AOX = {
+			leave_faction = yes
+		}
 
 		RDN = {
 			leave_faction = yes
@@ -311,11 +313,24 @@ country_event = {
 			
 		}
 	}
+	ITC = {
+		declare_war_on = {
+		target = TSI
+		type = annex_everything
+		
+	}
+}
 	ITE = {
 		declare_war_on = {
 		target = VCT
 		type = annex_everything
 	}
+}
+ITE = {
+	declare_war_on = {
+	target = TSI
+	type = annex_everything
+}
 }
 RDN = {
 	declare_war_on = {
@@ -330,6 +345,7 @@ RDN = {
 
 country_event = {
 	id = ITE.9
+	hidden = yes
 	title = ITE.9.t
 	desc = ITE.9.d
 
@@ -340,7 +356,7 @@ country_event = {
 		AOX = {controls_province = 9907}
 	}
 		immediate = {
-			news_event = WorldNew.31
+			news_event = ITANews.7
 			}
 
 	option = {
@@ -360,3 +376,206 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = ITE.10
+	hidden = yes
+	title = ITE.10.t
+	desc = ITE.10.d
+
+	fire_only_once = yes
+	trigger = {
+		FRW = {controls_province = 819}
+		
+	}
+		
+
+	option = {
+		name = ITE.10.a
+		
+		ITC = {
+			annex_country = {
+				target = TSI
+			}
+			transfer_state = 157
+			transfer_state = 117
+			transfer_state = 849
+			transfer_state = 156
+			156 = {
+				add_core_of = ITC
+		}
+		849 = {
+			add_core_of = ITC
+	}
+	117 = {
+		add_core_of = ITC
+}
+157 = {
+	add_core_of = ITC
+}
+		}
+	}
+}
+
+country_event = {
+	id = ITE.11
+	hidden = yes
+	title = ITE.11.t
+	desc = ITE.11.d
+
+	fire_only_once = yes
+	trigger = {
+		RDN = {controls_province = 819}
+		
+	}
+		
+
+	option = {
+		name = ITE.11.a
+		
+		RDN = {
+			annex_country = {
+				target = TSI
+			}
+			transfer_state = 157
+			transfer_state = 117
+			transfer_state = 849
+			transfer_state = 156
+			156 = {
+				add_core_of = RDN
+		}
+		849 = {
+			add_core_of = RDN
+	}
+	117 = {
+		add_core_of = RDN
+}
+157 = {
+	add_core_of = RDN
+}
+		}
+	}
+}
+country_event = {
+	id = ITE.12
+	hidden = yes
+	title = ITE.12.t
+	desc = ITE.12.d
+
+	fire_only_once = yes
+	trigger = {
+		OR = {
+		AOX = {
+			is_in_faction = yes
+			date > 1920.2.1
+		}
+		AOX = {
+			has_war_with = WWS
+		}
+		date > 1922.1.24
+	}
+}
+immediate = {
+	news_event = ITANews.8
+	}
+	option = {
+		name = ITE.12.a
+		AOX = {white_peace = ITC}
+		AOX = {white_peace = ITE}
+		AOX = {white_peace = RDN}
+		AOX = {white_peace = FRW}
+		KOH = {white_peace = ITC}
+		KOH = {white_peace = ITE}
+		KOH = {white_peace = RDN}
+		KOH = {white_peace = FRW}
+		DMT = {white_peace = ITC}
+		DMT = {white_peace = ITE}
+		DMT = {white_peace = RDN}
+		DMT = {white_peace = FRW}
+		ITC = {dismantle_faction = yes}
+		FRW = {create_faction = Se_International}
+		NPL = {add_to_faction = RDN}
+		
+		}
+		
+	}
+	country_event = {
+		id = ITE.13
+		hidden = yes
+		title = ITE.13.t
+		desc = ITE.13.d
+	
+		fire_only_once = yes
+		trigger = {
+			NOT = {VCT = {controls_province = 3780}	}
+			NOT = {VCT = {controls_province = 603}	}
+			NOT = {VCT = {controls_province = 11584}	}
+			NOT = {AOX = {controls_province = 3780}	}
+			NOT = {AOX = {controls_province = 603}	}
+			NOT = {AOX = {controls_province = 11584}	}
+			
+			
+			}
+			
+	
+	immediate = {
+		news_event = ITANews.9
+		}
+		option = {
+			name = ITE.13.a
+			country_event = {id=ITE.14 days = 2}
+			
+			}
+			
+		}
+		
+country_event = {
+	id = ITE.14
+	hidden = yes
+	title = ITE.14.t
+	desc = ITE.14.d
+	is_triggered_only = yes
+
+
+	
+immediate = {
+	news_event = ITANews.10
+	}
+	option = {
+		name = ITE.14.a
+		AOX = {white_peace = ITC}
+		AOX = {white_peace = ITE}
+		AOX = {white_peace = RDN}
+		AOX = {white_peace = FRW}
+		KOH = {white_peace = ITC}
+		KOH = {white_peace = ITE}
+		KOH = {white_peace = RDN}
+		KOH = {white_peace = FRW}
+		DMT = {white_peace = ITC}
+		DMT = {white_peace = ITE}
+		DMT = {white_peace = RDN}
+		DMT = {white_peace = FRW}
+		ITC = {dismantle_faction = yes}
+		ITC = {leave_faction = yes}
+		ITE = {leave_faction = yes}
+		FRW = {create_faction = Se_International}
+		NPL = {add_to_faction = RDN}
+		AOX = {
+			end_puppet = VCT
+		}
+		VCT = {
+			set_politics = {
+				ruling_party = Liberalism
+				last_election = "1918.11.11"
+				election_frequency = 72
+				elections_allowed = no
+			}
+			
+			set_popularities = {
+				Liberalism = 100
+			}
+			set_cosmetic_tag = VCT1
+		}
+		}
+		
+	}

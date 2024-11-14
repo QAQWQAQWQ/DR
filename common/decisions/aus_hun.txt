@@ -1217,6 +1217,7 @@ hun_red_army = {
 				}
 			}
         	XYL = { declare_war_on = { target = ROOT type = annex_everything } }
+			AOX = { declare_war_on = { target = XYL type = annex_everything } }
 		}
 	}
 }

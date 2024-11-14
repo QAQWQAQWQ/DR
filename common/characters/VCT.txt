@@ -22,14 +22,29 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Authoritarian_Conservatism
+			ideology=authoritarian_conservatism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
 		}
 	}
-	VCT_Luigi_Luzzatti={
-		name=VCT_Luigi_Luzzatti
+	VCT_Archduke_Karl={
+		name=VCT_Archduke_Karl
+		portraits={
+			civilian={
+				large="gfx/leaders/AOX/Portrait_Charles_I_News.tga"
+			}
+		}
+		country_leader={
+			ideology=autocratic-constitutional-monarchy
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	VCT_Luigi_Luzzatti2={
+		name=VCT_Luigi_Luzzatti2
 		portraits={
 			civilian={
 				large="gfx/leaders/VCT/Portrait_Luigi_Luzzatti.tga"
