@@ -17,20 +17,26 @@ state={
 		buildings = {
 			infrastructure = 2
 			dockyard = 1
+			10889 = {
+				naval_base = 2
+			}
 			12810 = {
 				naval_base = 3
 			}
 		}
 		
-add_core_of = MEX
+		add_core_of = MEX
 		victory_points = {
 			12810 5
+		}
+		victory_points = {
+			10889 1
 		}
 		
 	}
 
 	provinces={
-		8079  10732 12810 
+		8079 10732 10889 12810
 	}
 	
 

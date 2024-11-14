@@ -14,15 +14,18 @@ state={
 			infrastructure = 2
 		}
 		
-add_core_of = MEX
+		add_core_of = MEX
 
 		victory_points = {
 			1900 3
 		}
+		victory_points = {
+			2021 3
+		}
 	}
 
 	provinces={
-		1900 12753 12867 
+		1900 2021 12753 12867 
 	}
 	
 
