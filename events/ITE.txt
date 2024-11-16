@@ -447,18 +447,15 @@ immediate = {
 				ROOT = {controls_state = 159}
 			}
 			ROOT = {transfer_state = 159}
+			159 = {add_core_of = ROOT}
 		}
-		if = {
-			limit = {
-				ROOT = {controls_state = 160}
-			}
-			ROOT = {transfer_state = 160}
-		}
+		
 		if = {
 			limit = {
 				ROOT = {controls_province = 9752}
 			}
 			ROOT = {transfer_state = 161}
+			161 = {add_core_of = ROOT}
 		}
 		AOX = {white_peace = ITC}
 		AOX = {white_peace = ITE}
@@ -500,6 +497,7 @@ immediate = {
 					ROOT = {controls_province = 3780}
 				}
 				ROOT = {transfer_state = 159}
+				159 = {add_core_of = ROOT}
 			}
 			
 			if = {
@@ -507,8 +505,16 @@ immediate = {
 					ROOT = {controls_province = 9752}
 				}
 				ROOT = {transfer_state = 161}
+				161 = {add_core_of = ROOT}
 			}
-			country_event = {id=ITE.14 days = 2}
+			if = {
+				limit = {
+					ROOT = {controls_province = 9598}
+				}
+				ROOT = {transfer_state = 850}
+				850 = {add_core_of = ROOT}
+			}
+			country_event = {id=ITE.14 days = 1}
 			}
 			
 		}
@@ -532,6 +538,11 @@ immediate = {
 				ROOT = {controls_province = 11584}
 			}
 			ROOT = {transfer_state = 160}
+			160 = {add_core_of = ROOT}
+		}
+		HUS = {annex_country = {
+			target = VCT transfer_troops = yes
+		}
 		}
 		AOX = {white_peace = ITC}
 		AOX = {white_peace = ITE}
@@ -540,9 +551,7 @@ immediate = {
 		ITC = {leave_faction = yes}
 		ITE = {leave_faction = yes}
 		NPL = {add_to_faction = RDN}
-		AOX = {
-			end_puppet = VCT
-		}
+		
 		
 		}
 		
