@@ -4,7 +4,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "action_bar_window"
 		position = {x=-300 y=0}
-		show_position = {x=-300 y=-220}
+		show_position = {x=-300 y=-230}
 		size = { width=435 height=60 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
@@ -261,7 +261,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "naviesview_window"
 		position = {x=-340 y=82}
-		show_position = {x=0 y=100}
+		show_position = {x=0 y=82}
 		size = { width=500 height=86%% }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
@@ -305,7 +305,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "tool_bar_window"
 			position = {x=0 y=0} # vertical position controlled by code
-			size = { width=492 height=144 }
+			size = { width=492 height=44 }
 			Orientation = upper_left
 
 			background = {
@@ -375,6 +375,20 @@ guiTypes = {
 				position = {x=214 y=@nv_tb_btn_y}
 				spriteType = "GFX_NV_btn_taskforce_o_matic"
 				clicksound = click_default
+			}
+
+			buttonType = {
+				position = { x=244 y=@nv_tb_btn_y }
+				name = "btn_base_underway_replenishment"
+				spriteType = "GFX_NV_btn_base_partial_toggle"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "btn_underway_replenishment"
+				position = {x=244 y=@nv_tb_btn_y}
+				spriteType = "GFX_NV_btn_underway_replenishment"
+				alwaystransparent = yes
 			}
 
 			buttonType = {
@@ -957,7 +971,7 @@ guiTypes = {
 			position = { x=60 y=38 }
 			text = "I DO THAT"
 			font = "hoi_16mbs"
-			maxWidth = 299
+			maxWidth = 269
 			maxHeight = 40
 			format = left
 			fixedsize = yes
@@ -981,6 +995,13 @@ guiTypes = {
 			name = "current_activity"
 			position = { x=12 y=42 }
 			spriteType = "GFX_NV_all_activities"
+			frame = 1
+		}
+
+		iconType = {
+			name = "underway_replenishment_icon"
+			position = {x=330 y=43}
+			spriteType = "GFX_NV_btn_underway_replenishment"
 			frame = 1
 		}
 
