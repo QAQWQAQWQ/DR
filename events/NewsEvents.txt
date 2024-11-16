@@ -266,8 +266,8 @@ news_event = {
 	fire_only_once = yes
    trigger = {
 	AND={
-		date > 1921.1.12
-		date < 1921.1.14
+		date > 2021.1.12
+		date < 2021.1.14
 	}
 	
     }
@@ -426,7 +426,29 @@ news_event = {
 	option = {
 		name = Hidden_News.23.a
 	}		
+ }
+ news_event = {
+	id = Hidden_News.24
+    hidden = yes
+	fire_only_once = yes
+   trigger = {
+	AND={
+		date > 1920.1.1
+		date < 1920.1.3
+	}
+	
+    }
+   immediate = {
+	country_event = zaxiang.2
+    }
+    mean_time_to_happen = {
+	days = 2
+    }
+	option = {
+		name = Hidden_News.24.a
+	}		
 }
+
 #######
 #######
 #######
@@ -838,3 +860,18 @@ news_event = {
 		
 			}
 	}
+	news_event = {
+		id = WorldNew.25
+		title = WorldNew.25.t
+		desc = WorldNew.25.d
+		picture = GFX_LEF_Start_3
+		
+		major = yes
+		is_triggered_only = yes
+		
+		option = {
+			name = WorldNew.25.a
+			
+				}
+		}
+		

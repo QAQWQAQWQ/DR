@@ -243,7 +243,7 @@
 ##混合民族主义
  Hybrid_Nationalism:0 "混合民族主义"
  Hybrid_Nationalism_desc:0 ""
- DAnnunziaism:0 "邓楠遮主义"
+ DAnnunziaism:0 "邓南遮主义"
  DAnnunziaism_desc:0 ""
  National_Populism:0 "民族民粹主义"
  National_Populism_desc:0 ""
@@ -532,7 +532,9 @@ YED_Dictatorship_party:0 "韦尼泽洛斯内阁"
 YED_Dictatorship_party_long:0 "韦尼泽洛斯内阁"
 
 BXM_Dictatorship_party:0 "哈布斯堡王朝"
-BXM_Dictatorship_party_long:0 "波西米亚王冠-摩拉维亚侯爵"
+BXM_Dictatorship_party_long:0 "波希米亚王冠-摩拉维亚侯爵"
+BXM_Dictatorship_party_de:0 "哈布斯堡王朝"
+BXM_Dictatorship_party_de_long:0 "波美恩王冠-马赫恩侯爵"
 
 QIX_Dictatorship_party:0 "江苏省长公署"
 QIX_Dictatorship_party_long:0 "江苏省长公署"
@@ -632,25 +634,41 @@ RSH_Conservatism_party:0 "保守人民党-BGBP"
 
 
 BXM_Paternalism_party:0 "波摩议会"
-BXM_Paternalism_party_long:0 "波西米亚议会-摩拉维亚议会"
+BXM_Paternalism_party_long:0 "波希米亚议会-摩拉维亚议会"
 
 SBY_Paternalism_party:0 "波旁-西班牙王朝"
 
 VCT_Dictatorship_party:0 "伦威总督府"
 VCT_Dictatorship_party_long:0 "伦巴第-威尼托总督府"
+
+VCT_Dictatorship_party_de:0 "伦威总督府"
+VCT_Dictatorship_party_de_long:0 "伦巴多-威尼提恩总督府"
+
+VCT_Dictatorship_party1:0 "意大利总督府"
+VCT_Dictatorship_party1_long:0 "意大利总督府"
+VCT_Dictatorship_party_de1:0 "意塔利恩总督府"
+VCT_Dictatorship_party_de1_long:0 "意塔利恩总督府"
+
 VCT_Liberalism_party:0 "伦威临时政府"
 VCT_Liberalism_party_long:0 "伦巴第-威尼托临时政府"
 
 DMT_Dictatorship_party:0 "克罗地亚总督府"
+DMT_Dictatorship_party_de:0 "克罗阿提恩总督府"
 DMT_Dictatorship_party1:0 "伊利里亚总督府"
+DMT_Dictatorship_party_de1:0 "伊利里恩总督府"
 KOH_Dictatorship_party:0 "匈牙利总督府"
+KOH_Dictatorship_party_de:0 "翁加恩总督府"
 KOH_Dictatorship_party1:0 "帝国皇家陆军"
 
 KGL_Dictatorship_party:0 "加洛总督府"
 KGL_Dictatorship_party_long:0 "加利西亚和洛多梅里亚总督府"
+KGL_Dictatorship_party_de:0 "加洛总督府"
+KGL_Dictatorship_party_de_long:0 "加利西恩和洛多梅里恩总督府"
 
 KLD_Dictatorship_party:0 "波黑总督府"
 KLD_Dictatorship_party_long:0 "波斯尼亚和黑塞哥维那总督府"
+KLD_Dictatorship_party_de:0 "波黑总督府"
+KLD_Dictatorship_party_de_long:0 "波斯尼恩和黑塞哥维那总督府"
 
 SIW_Paternalism_party:0 "达维多维奇内阁"
 HES_Dictatorship_party:0 "普拉梅纳茨内阁"
@@ -737,8 +755,10 @@ DON_Dictatorship_party:0 "亨斯滕伯格内阁"
 DOF_Dictatorship_party:0 "魏茨泽克内阁"
 
 SLO_Dictatorship_party:0 "斯洛伐克总督府"
-TRA_Dictatorship_party:0 "总督府"
+TRA_Dictatorship_party:0 "七堡总督府"
 TRA_Dictatorship_party_long:0 "特兰西瓦尼亚总督府"
+TRA_Dictatorship_party_de:0 "七堡总督府"
+TRA_Dictatorship_party_de_long:0 "七堡总督府"
 
 KON_Dictatorship_party:0 "李完用内阁"
 MOL_Dictatorship_party:0 "阿拉维王朝"
@@ -796,6 +816,7 @@ BLG_Conservatism_party:0 "红党"
 ITC_Liberalism_party:0 "行动党"
 ITC_Reformism_party:0 "意大利社会党（改良派）"
 ITC_Moderate_Socialism_party:0 "意大利社会党（温和革命派）"
+ITC_Nationalism_party:0 "意大利民族主义协会"
 
 PHL_Dictatorship_party:0 "菲律宾革命政府"
 

@@ -54,14 +54,14 @@ country_event = {
 	    }
 }
 
-news_event = {
+country_event = {
 	id = LEF_Start.3
 	title = LEF_Start.3.t
 	desc = LEF_Start.3.d
 
 	picture = GFX_LEF_Start_3
+	fire_only_once = yes
 
-	major = yes
 
 	trigger = {
 			SBY={ 
@@ -73,6 +73,8 @@ news_event = {
 	}
 	immediate = {
 		set_global_flag = LEF_Start.3
+		news_event = WorldNew.25
+		
 	}
 	
 	option = {

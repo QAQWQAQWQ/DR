@@ -34,10 +34,7 @@ country_event = {
 			name = XYL.1.a
 			XYL = {
 					
-					transfer_state = 76								transfer_state = 664
-					transfer_state = 73
-					transfer_state = 84
-					transfer_state = 83															add_state_core = 155
+				transfer_state = 154														add_state_core = 155
 					load_oob = "XYL_1920"
 					load_oob = "XYL_1920NAVY"
 					country_event = {
@@ -52,7 +49,7 @@ country_event = {
 				}
 
 			HUN = {
-				    transfer_state = 154
+				    
 					transfer_state = 43	
 					transfer_state = 155
 					transfer_state = 664
@@ -68,9 +65,10 @@ country_event = {
 						type = annex_everything
 					}
 				}
-				AOX = {declare_war_on = {
-					target = XYL
-					type = annex_everything
-				}}
+				AOX = {complete_national_focus = AUS_bir_0
+				complete_national_focus = AUS_bir_1
+				complete_national_focus = AUS_bir_12
+				complete_national_focus = AUS_bir_13
+				complete_national_focus = AUS_bir_14}
 		}
 	}

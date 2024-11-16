@@ -14,6 +14,7 @@ set_technology = {
 recruit_character = ITC_Filippo_Turati
 recruit_character = ITC_Giacomo_Matteotti
 recruit_character = ITC_Antonio_Gramsci
+recruit_character = ITC_Gabriele_d_Annunzio
 
 set_technology = {
 		interwar_artillery = 1
@@ -61,7 +62,8 @@ Basic_industrialization
 Private_economy
 }
 set_popularities = {
-	Liberalism = 33
-	Moderate_Socialism = 33
-	Reformism = 34
+	Liberalism = 30
+	Moderate_Socialism = 20
+	Reformism = 30
+	Nationalism = 20
 }

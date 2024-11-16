@@ -15,8 +15,7 @@ focus_tree = {
 		id = AUS_0
 		icon = GFX_AUS_0_goal
 		cost = 5.00
-		prerequisite = {
-		}
+		
 		mutually_exclusive = {
 		}
 		x = 13
@@ -1460,6 +1459,7 @@ bosnia_war_end = yes
 					}
 				}
 				AOX = { declare_war_on = { target = XYL type = annex_everything } }
+				
 				if = {
 					limit = {
 						check_variable = { global.cze_accpect = 1 }
@@ -1505,6 +1505,7 @@ bosnia_war_end = yes
 					}
 				}
 				AOX = { declare_war_on = { target = HUN type = annex_everything } }
+				
 				if = {
 					limit = {
 						check_variable = { global.cze_accpect = 1 }
@@ -1621,14 +1622,10 @@ bosnia_war_end = yes
 					DMT = { exists = yes }
 				}
 				DMT = {
-					transfer_state = 918
-					add_state_core = 918
-					transfer_state = 45
-					add_state_core = 45
+					
 					transfer_state = 764
 					add_state_core = 764
-                	transfer_state = 1018
-					add_state_core = 1018
+                	
 				}
 			}
 				TRA = {

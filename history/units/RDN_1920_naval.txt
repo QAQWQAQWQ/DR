@@ -5,10 +5,10 @@ units= {
 	### Northern Fleet -- Murmansk
 	fleet = {
 		name = "地中海舰队"
-		naval_base = 819 # Murmansk
+		naval_base = 10074 # Murmansk
 		task_force = {				
 			name = "地中海舰队"
-			location = 819 # Murmansk
+			location = 10074 # Murmansk
 			# 1ya Flotiliya Esmintsev
 			ship = { name = "Dzerzhinskiy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RDN version_name = "Fidonisi Class" } } }
 			ship = { name = "Nezamozhnik" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RDN version_name = "Fidonisi Class" } } }
@@ -23,10 +23,10 @@ units= {
 	### Black Sea Fleet -- Sevastopol
 	fleet = {
 		name = "Chernomorskiy Flot"
-		naval_base = 819 # Sevastopopl
+		naval_base = 10074 # Sevastopopl
 		task_force = {				
 			name = "Chernomorskiy Flot"
-			location = 819 # Sevastopopl
+			location = 10074 # Sevastopopl
 			ship = { name = "Parizhskaya Kommuna" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = RDN version_name = "Marat Class" } } }
 			ship = { name = "Krasni Kavkaz" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RDN version_name = "Chervona Ukraina Class" } } }
 			ship = { name = "Krasny Krym" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RDN version_name = "Chervona Ukraina Class" } } }
@@ -36,7 +36,7 @@ units= {
 		}	
 		task_force = {	
 			name = "Chernomorskiy Podvodniy Flot"
-			location = 819 # Sevastopopl
+			location = 10074 # Sevastopopl
 			# 9iy Podvodniy Flot
 			ship = { name = "Shch-121" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = RDN version_name = "Series V Shchuka" } } }			
 			ship = { name = "Shch-122" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = RDN version_name = "Series V Shchuka" } } }			

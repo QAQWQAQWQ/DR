@@ -1,0 +1,79 @@
+add_namespace = zaxiang
+
+
+	country_event = {
+		id = zaxiang.2
+		title = zaxiang.2.t
+		desc = zaxiang.2.d
+		major = yes
+		is_triggered_only = yes
+		option = {
+			name = zaxiang.2.a
+				}
+		option = {
+			name = zaxiang.2.b
+			if = {
+				limit = {
+					is_ai = no
+				}
+				BXM = {
+					set_cosmetic_tag = BXM_de
+					set_party_name = {
+						ideology = Dictatorship
+						long_name = BXM_Dictatorship_party_de_long
+						name = BXM_Dictatorship_party_de
+					}
+				}
+				KGL = {
+					set_cosmetic_tag = KGL_de
+					set_party_name = {
+						ideology = Dictatorship
+						long_name = KGL_Dictatorship_party_de_long
+						name = KGL_Dictatorship_party_de
+					}
+				}
+				KOH = {
+					set_cosmetic_tag = KOH_de
+					set_party_name = {
+						ideology = Dictatorship
+						long_name = KOH_Dictatorship_party_de
+						name = KOH_Dictatorship_party_de
+					}
+				}
+				DMT = {
+					set_cosmetic_tag = DMT_de
+					set_party_name = {
+						ideology = Dictatorship
+						long_name = DMT_Dictatorship_party_de
+						name = DMT_Dictatorship_party_de
+					}
+				}
+				KLD = {
+					set_cosmetic_tag = KLD_de
+					set_party_name = {
+						ideology = Dictatorship
+						long_name = KLD_Dictatorship_party_de_long
+						name = KLD_Dictatorship_party_de
+					}
+				}
+				VCT = {
+					set_cosmetic_tag = VCT_de
+					set_party_name = {
+						ideology = Dictatorship
+						long_name = VCT_Dictatorship_party_de_long
+						name = VCT_Dictatorship_party_de
+					}
+				}
+				TRA = {
+					set_cosmetic_tag = TRA_de
+					set_party_name = {
+						ideology = Dictatorship
+						long_name = TRA_Dictatorship_party_de
+						name = TRA_Dictatorship_party_de
+					}
+				}
+				
+			}
+			
+				}
+		}
