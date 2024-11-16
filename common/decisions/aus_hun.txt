@@ -150,6 +150,9 @@ aus_hun_decisions = {
 					AOX = {
 						country_event = aushun.3
 					}
+					KOH = {
+						retire_country_leader = yes
+					}
 				}
 			}
 		}
@@ -1217,6 +1220,7 @@ hun_red_army = {
 				}
 			}
         	XYL = { declare_war_on = { target = ROOT type = annex_everything } }
+			AOX = { declare_war_on = { target = XYL type = annex_everything } }
 		}
 	}
 }

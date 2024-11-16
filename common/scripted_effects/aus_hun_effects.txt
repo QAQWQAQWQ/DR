@@ -471,6 +471,23 @@ bosnia_war_boom = {
     AOX = {
         country_event = aushun.2
     }
+    AOX = {
+        end_puppet = SIW
+    }
+    
+    if = {
+        limit = {
+            SIW = {has_war_with = ITC}
+        }
+        SIW = {white_peace = ITC}
+        ITC = {white_peace = SIW}
+        SIW = {white_peace = RDN}
+        SIW = {white_peace = ITE}
+        SIW = {white_peace = FRW}
+        
+        
+    }
+    
 }
 bos_war_end_qwq = {
     hidden_effect = {
@@ -490,11 +507,11 @@ bos_war_end_qwq = {
             }
             AOX = { set_autonomy = { target = DMT autonomy_state = autonomy_Crown_Territory } }
                 DMT = {
-                    set_politics = {ruling_party = Conservatism}
+                    set_politics = {ruling_party = Dictatorship}
                     set_popularities = {
                         Liberalism = 25
                         Nationalism = 25
-                        Conservatism = 40
+                        Dictatorship = 40
                         Revolutionism = 10
                     }
                 }

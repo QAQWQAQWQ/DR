@@ -683,7 +683,7 @@ country_event = {
 	fire_only_once = no
 	is_triggered_only = yes
 	immediate = {
-		news_event = WorldNew.28
+		news_event = WorldNew.24
 		}
 	option = {
 		name = aushun.5.a
@@ -694,7 +694,7 @@ country_event = {
 			add_core_of = DMT
 		}
 		DMT = { annex_country = { target = KLD transfer_troops = yes } 
-	    set_cosmetic_tag = KLD_new_name
+	    set_cosmetic_tag = DMT_new_name
 		set_party_name = {
 			ideology = Dictatorship
 			long_name = DMT_Dictatorship_party1

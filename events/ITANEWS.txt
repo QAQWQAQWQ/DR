@@ -1,0 +1,136 @@
+###########################
+# ITA News.1 Events
+###########################
+
+add_namespace = ITANews
+
+news_event = {
+	id = ITANews.1
+	title = ITANews.1.t
+	desc = ITANews.1.d
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ITANews.1.a
+		
+			}
+	}
+news_event = {
+	id = ITANews.2
+	title = ITANews.2.t
+	desc = ITANews.2.d
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ITANews.2.a
+		
+			}
+	}
+news_event = {
+	id = ITANews.3
+	title = ITANews.3.t
+	desc = ITANews.3.d
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ITANews.3.a
+		
+			}
+	}
+news_event = {
+	id = ITANews.4
+	title = ITANews.4.t
+	desc = ITANews.4.d
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ITANews.4.a
+		
+			}
+	}
+news_event = {
+			id = ITANews.5
+			title = ITANews.5.t
+			desc = ITANews.5.d
+			
+			major = yes
+			is_triggered_only = yes
+			
+			option = {
+				name = ITANews.5.a
+				
+					}
+			}
+			news_event = {
+				id = ITANews.6
+				title = ITANews.6.t
+				desc = ITANews.6.d
+				
+				major = yes
+				is_triggered_only = yes
+				
+				option = {
+					name = ITANews.6.a
+					
+						}
+				}
+news_event = {
+	id = ITANews.7
+	title = ITANews.7.t
+	desc = ITANews.7.d
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ITANews.7.a
+		
+			}
+	}
+	news_event = {
+		id = ITANews.8
+		title = ITANews.8.t
+		desc = ITANews.8.d
+		
+		major = yes
+		is_triggered_only = yes
+		
+		option = {
+			name = ITANews.8.a
+			
+				}
+		}
+		news_event = {
+			id = ITANews.9
+			title = ITANews.9.t
+			desc = ITANews.9.d
+			
+			major = yes
+			is_triggered_only = yes
+			
+			option = {
+				name = ITANews.9.a
+				
+					}
+			}
+			news_event = {
+				id = ITANews.10
+				title = ITANews.10.t
+				desc = ITANews.10.d
+				
+				major = yes
+				is_triggered_only = yes
+				
+				option = {
+					name = ITANews.10.a
+					
+						}
+				}
