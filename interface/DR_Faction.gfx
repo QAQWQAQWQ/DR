@@ -57,6 +57,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_Italian_Union"
+		texturefile = "gfx/interface/Faction/Italian_Union.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_Rpublic_China_Anhui"
 		texturefile = "gfx/interface/Faction/Progressive_Party.dds"
 		legacy_lazy_load = no

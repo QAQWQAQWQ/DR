@@ -249,8 +249,8 @@ on_actions = {
                     ROOT = { tag = WWS }
                     FROM = { tag = AOX }
                     check_variable = { global.german_war = 1 }
-                    check_variable = { global.aus_has_win_german_war = 0 }
-                    check_variable = { global.pre_has_win_german_war = 0 }
+                    check_variable = { global.aus_win_german_war = 0 }
+                    check_variable = { global.pre_win_german_war = 0 }
                 }
                 hidden_effect = {
                     if = {
@@ -347,7 +347,7 @@ on_actions = {
                     check_variable = { global.pre_win_german_war = 0 }
                 }
                 set_variable = { global.pre_win_german_war = 1 }
-                every_country = { news_event = ger_con.7 }
+                every_country = { country_event = ger_con.7 }
                 AOX = { white_peace = WWS }
                 WWS = { white_peace = AOX }
                 every_country = {
@@ -377,57 +377,45 @@ on_actions = {
                 set_autonomy = { target = DMT autonomy_state = autonomy_Crown_Territory }
                 set_autonomy = { target = KOH autonomy_state = autonomy_Crown_Territory }
                 VCT = {
-                    set_politics = {ruling_party = Conservatism}
+                    set_politics = {ruling_party = Dictatorship}
                     set_popularities = {
-                        Liberalism = 25
-                        Nationalism = 25
-                        Conservatism = 40
-                        Revolutionism = 10
+                        Paternalism = 10
+	                    Dictatorship = 90
                     }
                 }
                 KGL = {
-                    set_politics = {ruling_party = Conservatism}
+                    set_politics = {ruling_party = Dictatorship}
                     set_popularities = {
-                        Liberalism = 5
-                        Nationalism = 1
-                        Conservatism = 89
-                        Revolutionism = 5
+                        Paternalism = 20
+	                    Dictatorship = 80
                     }
                 }
                 BXM = {
-                    set_politics = {ruling_party = Conservatism}
+                    set_politics = {ruling_party = Dictatorship}
                     set_popularities = {
-                        Liberalism = 5
-                        Nationalism = 1
-                        Conservatism = 89
-                        Revolutionism = 5
+                        Paternalism = 50
+	                    Dictatorship = 50
                     }
                 }
                 KLD = {
-                    set_politics = {ruling_party = Conservatism}
+                    set_politics = {ruling_party = Dictatorship}
                     set_popularities = {
-                        Liberalism = 25
-                        Nationalism = 25
-                        Conservatism = 40
-                        Revolutionism = 10
+                        Paternalism = 20
+	                    Dictatorship = 80
                     }
                 }
                 DMT = {
-                    set_politics = {ruling_party = Conservatism}
+                    set_politics = {ruling_party = Dictatorship}
                     set_popularities = {
-                        Liberalism = 25
-                        Nationalism = 25
-                        Conservatism = 40
-                        Revolutionism = 10
+                        Paternalism = 20
+	                    Dictatorship = 80
                     }
                 }
                 KOH = {
-                    set_politics = {ruling_party = Conservatism}
+                    set_politics = {ruling_party = Dictatorship}
                     set_popularities = {
-                        Liberalism = 25
-                        Nationalism = 25
-                        Conservatism = 40
-                        Revolutionism = 10
+                        Dictatorship = 50
+                        Liberalism = 50
                     }
                 }
                 AOX = { mark_focus_tree_layout_dirty = yes }

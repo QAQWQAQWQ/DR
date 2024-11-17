@@ -1,7 +1,5 @@
 ﻿capital = 2
 
-oob = "ITC_1920"
-
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -62,8 +60,8 @@ Basic_industrialization
 Private_economy
 }
 set_popularities = {
-	Liberalism = 30
-	Moderate_Socialism = 20
-	Reformism = 30
-	Nationalism = 20
+	Liberalism = 25
+	Moderate_Socialism = 12
+	Reformism = 13
+	Nationalism = 50
 }

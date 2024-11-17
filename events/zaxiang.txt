@@ -47,6 +47,12 @@ add_namespace = zaxiang
 						long_name = DMT_Dictatorship_party_de
 						name = DMT_Dictatorship_party_de
 					}
+					set_party_name = {
+						ideology = Paternalism
+						long_name = DMT_Paternalism_party_de
+						name = DMT_Paternalism_party_de
+					}
+
 				}
 				KLD = {
 					set_cosmetic_tag = KLD_de

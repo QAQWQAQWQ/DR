@@ -1586,8 +1586,6 @@ bosnia_war_end = yes
 					add_state_core = 70
 					transfer_state = 71
 					add_state_core = 71
-					transfer_state = 664
-					add_state_core = 664
 				}
 			}
 			else = {
@@ -1599,8 +1597,6 @@ bosnia_war_end = yes
 					add_state_core = 70
 					transfer_state = 71
 					add_state_core = 71
-					transfer_state = 664
-					add_state_core = 664
 				}
 				AOX = {
 					set_autonomy = { target = SLO autonomy_state = autonomy_Crown_Territory }
@@ -1642,6 +1638,8 @@ bosnia_war_end = yes
 					add_state_core = 83
 					transfer_state = 84
 					add_state_core = 84
+					transfer_state = 1034
+					add_state_core = 1034
 				}
 				AOX = {
 					set_autonomy = { target = TRA autonomy_state = autonomy_Crown_Territory }
@@ -1765,8 +1763,6 @@ bosnia_war_end = yes
 					add_state_core = 70
 					transfer_state = 71
 					add_state_core = 71
-					transfer_state = 664
-					add_state_core = 664
 				}
 				AOX = {
 					set_autonomy = { target = SLO autonomy_state = autonomy_Crown_Territory }
@@ -1818,8 +1814,22 @@ bosnia_war_end = yes
 			}
 			BXM={
 				set_cosmetic_tag = CZE_color
+				set_party_name = {
+					ideology = Paternalism
+					long_name = BXM_Paternalism_party_1
+					name = BXM_Paternalism_party_1
+				}
 				set_politics = {
-					ruling_party = Liberalism
+					ruling_party = Paternalism
+					last_election = "1918.11.11"
+					election_frequency = 72
+					elections_allowed = no
+				}
+				
+				set_popularities = {
+					Liberalism = 34
+					Paternalism = 33
+					Dictatorship = 33
 				}
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
@@ -1855,8 +1865,22 @@ bosnia_war_end = yes
 		completion_reward = {
 			BXM={
 				set_cosmetic_tag = CZE_color
+				set_party_name = {
+					ideology = Paternalism
+					long_name = BXM_Paternalism_party_1
+					name = BXM_Paternalism_party_1
+				}
 				set_politics = {
-					ruling_party = Liberalism
+					ruling_party = Paternalism
+					last_election = "1918.11.11"
+					election_frequency = 72
+					elections_allowed = no
+				}
+				
+				set_popularities = {
+					Liberalism = 34
+					Paternalism = 33
+					Dictatorship = 33
 				}
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
@@ -1885,9 +1909,19 @@ bosnia_war_end = yes
 		}
 		completion_reward = {
 			KGL={
-				set_cosmetic_tag = POL_color
+				set_cosmetic_tag = KGL_color
+				
 				set_politics = {
-					ruling_party = Liberalism
+					ruling_party = Paternalism
+					last_election = "1918.11.11"
+					election_frequency = 72
+					elections_allowed = no
+				}
+				
+				set_popularities = {
+					Liberalism = 34
+					Paternalism = 33
+					Dictatorship = 33
 				}
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
@@ -1917,8 +1951,18 @@ bosnia_war_end = yes
 		completion_reward = {
 			DMT={
 				set_cosmetic_tag = CRO_color
+				
 				set_politics = {
-					ruling_party = Liberalism
+					ruling_party = Paternalism
+					last_election = "1918.11.11"
+					election_frequency = 72
+					elections_allowed = no
+				}
+				
+				set_popularities = {
+					Liberalism = 34
+					Paternalism = 33
+					Dictatorship = 33
 				}
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
@@ -1958,8 +2002,18 @@ bosnia_war_end = yes
 		completion_reward = {
 			KOH={
 				set_cosmetic_tag = KOH_color
+				
 				set_politics = {
-					ruling_party = Liberalism
+					ruling_party = Paternalism
+					last_election = "1918.11.11"
+					election_frequency = 72
+					elections_allowed = no
+				}
+				
+				set_popularities = {
+					Liberalism = 34
+					Paternalism = 33
+					Dictatorship = 33
 				}
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
@@ -2002,7 +2056,16 @@ bosnia_war_end = yes
 			KOH={
 				set_cosmetic_tag = KOH_color
 				set_politics = {
-					ruling_party = Liberalism
+					ruling_party = Paternalism
+					last_election = "1918.11.11"
+					election_frequency = 72
+					elections_allowed = no
+				}
+				
+				set_popularities = {
+					Liberalism = 34
+					Paternalism = 33
+					Dictatorship = 33
 				}
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
@@ -2023,8 +2086,6 @@ bosnia_war_end = yes
 					add_state_core = 70
 					transfer_state = 71
 					add_state_core = 71
-					transfer_state = 664
-					add_state_core = 664
 				}
 				AOX = {
 					set_autonomy = { target = SLO autonomy_state = autonomy_Crown_Territory }
@@ -2043,6 +2104,8 @@ bosnia_war_end = yes
 					add_state_core = 83
 					transfer_state = 84
 					add_state_core = 84
+					transfer_state = 1034
+					add_state_core = 1034
 				}
 				DMT={
 					transfer_state = 918
@@ -2061,7 +2124,16 @@ bosnia_war_end = yes
 			SLO = {
 				set_cosmetic_tag = SLO_color
 				set_politics = {
-					ruling_party = Dictatorship
+					ruling_party = Paternalism
+					last_election = "1918.11.11"
+					election_frequency = 72
+					elections_allowed = no
+				}
+				
+				set_popularities = {
+					Liberalism = 34
+					Paternalism = 33
+					Dictatorship = 33
 				}
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
@@ -2074,7 +2146,16 @@ bosnia_war_end = yes
 			TRA = {
 				set_cosmetic_tag = TRA_color
 				set_politics = {
-					ruling_party = Dictatorship
+					ruling_party = Paternalism
+					last_election = "1918.11.11"
+					election_frequency = 72
+					elections_allowed = no
+				}
+				
+				set_popularities = {
+					Liberalism = 34
+					Paternalism = 33
+					Dictatorship = 33
 				}
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
@@ -2101,7 +2182,16 @@ bosnia_war_end = yes
 			VCT={
 				set_cosmetic_tag = VCT_color
 				set_politics = {
-					ruling_party = Liberalism
+					ruling_party = Paternalism
+					last_election = "1918.11.11"
+					election_frequency = 72
+					elections_allowed = no
+				}
+				
+				set_popularities = {
+					Liberalism = 34
+					Paternalism = 33
+					Dictatorship = 33
 				}
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
@@ -3813,7 +3903,7 @@ bosnia_war_end = yes
 					}
 					AOX = { annex_country = { target = PREV transfer_troops = yes }  }
 				}
-				set_cosmetic_tag = AOX_DON
+				set_cosmetic_tag = AOX_DK
 			}
 		}
 	}

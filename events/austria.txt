@@ -201,7 +201,7 @@ country_event = {
 	option = {
 		name = austria.10.a
 		complete_national_focus = AUS_german_0
-		set_cosmetic_tag = AOX_German
+		set_cosmetic_tag = AOX_DR
 		mark_focus_tree_layout_dirty = yes
 	}
 	option = {
@@ -701,6 +701,11 @@ country_event = {
 			long_name = DMT_Dictatorship_party1
 			name = DMT_Dictatorship_party1
 		}
+		set_party_name = {
+			ideology = Paternalism
+			long_name = DMT_Paternalism_party1
+			name = DMT_Paternalism_party1
+		}
 	}
 	
 	if = {
@@ -715,6 +720,11 @@ country_event = {
 				ideology = Dictatorship
 				long_name = DMT_Dictatorship_party_de1
 				name = DMT_Dictatorship_party_de1
+			}
+			set_party_name = {
+				ideology = Paternalism
+				long_name = DMT_Paternalism_party_de1
+				name = DMT_Paternalism_party_de1
 			}
 		}
 	}

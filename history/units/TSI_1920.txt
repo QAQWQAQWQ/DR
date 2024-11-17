@@ -1,0 +1,76 @@
+division_template = {
+	name = "那不勒斯步兵师"
+
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "那不勒斯民兵旅"
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+	}
+	is_locked = yes
+}
+division_template = {
+	name = "那不勒斯骑兵旅" 	# Cavalry Division
+
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+	}
+
+}
+
+units = {
+	division= {	
+		name = "那不勒斯骑兵一旅"
+		location = 819
+		division_template = "那不勒斯骑兵旅"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "那不勒斯步兵一师"
+		location = 819
+		division_template = "那不勒斯步兵师"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "那不勒斯步兵二师"
+		location = 819
+		division_template = "那不勒斯步兵师"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "那不勒斯民兵一旅"
+		location = 819
+		division_template = "那不勒斯民兵旅"
+		start_experience_factor = 0.7
+	}
+}

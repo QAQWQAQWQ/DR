@@ -13,6 +13,27 @@ characters={
 			id=-1
 		}
 	}		
+	BXM_Maximilian_I={
+		name=BXM_Maximilian_I
+		portraits={
+			civilian={
+				large="gfx/leaders/AOX/Portrait_ernst_hohenberg.tga"
+			}
+		}
+		country_leader={
+			ideology=autocratic-constitutional-monarchy
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
 	BXM_Johann_II_Nepomuk_Adolf_Maria_Hubert_Maximin={
 		name=BXM_Johann_II_Nepomuk_Adolf_Maria_Hubert_Maximin
 		portraits={
@@ -35,7 +56,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Social_Liberalism
+			ideology=semidem-cm-liberalism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1

@@ -17,13 +17,13 @@ on_actions = {
                 global.bosnia_war_str = 0
             }
             set_variable = {
-                global.hungry_war = 0
+                global.hungarian_war = 0
             }
             set_variable = {
-                global.hungry_war_red_win = 0
+                global.hungarian_war_red_win = 0
             }
             set_variable = {
-                global.hungry_war_hun_win = 0
+                global.hungarian_war_hun_win = 0
             }
             set_variable = {
                 global.cze_accpect = 0
@@ -258,6 +258,7 @@ on_actions = {
                     check_variable = { global.bosnia_cro_win = 0 }
                 }
                 set_variable = { global.bosnia_hun_win = 1 }
+                KOH = {retire_country_leader = yes}
                 DMT = { white_peace = KOH }
                 KOH = { white_peace = DMT }
                 KOH = {
@@ -277,11 +278,11 @@ on_actions = {
                         FROM = { tag = HUN }
                         FROM = { tag = KOH }
                     }
-                    check_variable = { global.hungry_war = 1 }
-                    check_variable = { global.hungry_war_red_win = 0 }
-                    check_variable = { global.hungry_war_hun_win = 0 }
+                    check_variable = { global.hungarian_war = 1 }
+                    check_variable = { global.hungarian_war_red_win = 0 }
+                    check_variable = { global.hungarian_war_hun_win = 0 }
                 }
-                check_variable = { global.hungry_war_hun_win = 1 }
+                check_variable = { global.hungarian_war_hun_win = 1 }
                 FROM = { white_peace = XYL }
                 XYL = { white_peace = FROM }
                 FROM = {
@@ -297,11 +298,11 @@ on_actions = {
                         ROOT = { tag = KOH }
                     }
                     FROM = { tag = XYL }
-                    check_variable = { global.hungry_war = 1 }
-                    check_variable = { global.hungry_war_red_win = 0 }
-                    check_variable = { global.hungry_war_hun_win = 0 }
+                    check_variable = { global.hungarian_war = 1 }
+                    check_variable = { global.hungarian_war_red_win = 0 }
+                    check_variable = { global.hungarian_war_hun_win = 0 }
                 }
-                check_variable = { global.hungry_war_red_win = 1 }
+                check_variable = { global.hungarian_war_red_win = 1 }
                 ROOT = { white_peace = XYL }
                 XYL = { white_peace = ROOT }
                 XYL = {
@@ -338,17 +339,39 @@ on_actions = {
                 }
                 
                 DMT = { transfer_state = 109 }
-                DMT = { transfer_state = 917 }
-                DMT = { transfer_state = 163 }
+                if = {
+                    limit = {
+                        NOT = {
+                            ITE = {controls_state = 917}
+				ITC = {controls_state = 917}
+				RDN = {controls_state = 917}
+                FUM = {controls_state = 917}
+                        }
+                    }
+                    DMT = { transfer_state = 917 }
+                }
+                if = {
+                    limit = {
+                        NOT = {
+                            ITE = {controls_state = 163}
+				ITC = {controls_state = 163}
+				RDN = {controls_state = 163}
+                FUM = {controls_state = 163}
+                        }
+                    }
+                    DMT = { transfer_state = 163 }
+                }
+
                 DMT = { transfer_state = 103 }
                 DMT = { transfer_state = 804 }
                 DMT = { transfer_state = 918 }
                 DMT = { transfer_state = 104 }
+                DMT = { transfer_state = 1014 }
                 DMT = { transfer_state = 1015 }
                 DMT = { transfer_state = 1016 }
                 DMT = { transfer_state = 1017 }
                 DMT = { transfer_state = 1018 }
-                
+                set_variable = {global.hungarian_war = 2}
                 AOX = {
                     set_autonomy = { target = DMT autonomy_state = autonomy_Crown_Territory }
                 }
@@ -361,10 +384,9 @@ on_actions = {
                 KOH = {
                     set_politics = {ruling_party = Dictatorship}
                     set_popularities = {
-                        Liberalism = 25
-                        Nationalism = 25
-                        Dictatorship = 40
-                        Revolutionism = 10
+                        Liberalism = 2
+                        Dictatorship = 98
+
                     }
                 }
             }

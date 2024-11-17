@@ -1,5 +1,5 @@
 ﻿###########################
-# ITE Events
+# ITA Events
 ###########################
 
 add_namespace = ITE
@@ -33,35 +33,7 @@ country_event = {
 
 
 
-	country_event = {
-		id = ITE.2
-		hidden = yes
-		title = ITE.2.t
-		desc = ITE.2.d
-		picture = GFX_FUM
-
-		is_triggered_only = yes
-
-		major = yes
-		trigger = {
-			
-			}
-		option = {
-			name = ITE.2.a
-			FUM = {
-					transfer_state = 736
-					add_state_core = 736
-					load_oob = "FUM_1920"
-					load_oob = "FUM_1920NAVY"
-				}
-				ITC = {
-					transfer_state = 158
-					add_state_core = 158
-					load_oob = "ITC_1920"
-					load_oob = "ITC_1920NAVY"
-				}
-				}
-		}
+	
 		
 			country_event = {
 				id = ITE.3
@@ -125,26 +97,42 @@ country_event = {
 			
 				option = {
 					name = ITE.4.a
-					
+					ITE = {
+						complete_national_focus = ITE_Focus1
+					}
 					RDN = {
 						declare_war_on = {
 							target = TSI
 							type = annex_everything
 						}
-						units = {
-							division= {	
-								name = "意大利王国步兵一师"
-								location = 4159
-								division_template = "意大利王国步兵师"
-								start_experience_factor = 0.7
-							}
-						}
 				}
-ITE = {
-	complete_national_focus = ITE_Focus1
-}
+				
+				115 = {
+					create_unit = {
+					  division = "name = 加里波第军团步兵一师 division_template = 加里波第军团步兵师 start_experience_factor = 0.7 start_equipment_factor = 0.7" 
+					owner = RDN
+					prioritize_location = 4159
+					}
+					create_unit = {
+						division = "name = 加里波第军团步兵一师 division_template = 加里波第军团步兵师 start_experience_factor = 0.7 start_equipment_factor = 0.7" 
+					  owner = RDN
+					  prioritize_location = 4159
+					  }
+					  create_unit = {
+						division = "name = 加里波第军团步兵一师 division_template = 加里波第军团步兵师 start_experience_factor = 0.7 start_equipment_factor = 0.7" 
+					  owner = RDN
+					  prioritize_location = 4159
+					  }
+					  create_unit = {
+						division = "name = 加里波第军团步兵一师 division_template = 加里波第军团步兵师 start_experience_factor = 0.7 start_equipment_factor = 0.7" 
+					  owner = RDN
+					  prioritize_location = 4159
+					  }
+			  }
+				}
 			}
-		}
+			
+
 country_event = {
 	id = ITE.5
 	hidden = yes
@@ -172,6 +160,8 @@ country_event = {
 				target = LMJ
 				transfer_troops = yes
 			}
+			load_oob = "ITC_1920"
+			load_oob = "ITC_1920_naval"
 		}
 		928 = {
 			set_demilitarized_zone = no
@@ -336,6 +326,7 @@ RDN = {
 160 = {
 	add_core_of = RDN
 }
+set_variable = {global.4italian_war = 1}
 		
 	}
 }
@@ -373,7 +364,51 @@ RDN = {
 #		}
 #	}
 #}
+country_event = {
+	id = ITE.10
+	hidden = yes
+	title = ITE.10.t
+	desc = ITE.10.d
 
+	fire_only_once = yes
+	trigger = {
+		ITC = {controls_province = 819}
+		
+		check_variable = {global.4italian_war = 1}
+	
+	}
+	immediate = {
+		country_event = ITE.15
+		}
+
+	option = {
+		name = ITE.10.a
+		
+		ITC = {
+			annex_country = {
+				target = TSI
+				transfer_troops = yes
+			}
+			transfer_state = 157
+			transfer_state = 117
+			transfer_state = 849
+			transfer_state = 156
+			156 = {
+				add_core_of = ITC
+		}
+		849 = {
+			add_core_of = ITC
+	}
+	117 = {
+		add_core_of = ITC
+}
+157 = {
+	add_core_of = ITC
+}
+		}
+		
+	}
+}
 
 
 country_event = {
@@ -385,7 +420,9 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		RDN = {controls_province = 819}
-		
+		NOT = {
+		check_variable = {global.4italian_war = 2}
+	}
 	}
 		
 
@@ -435,7 +472,7 @@ country_event = {
 		}
 		date > 1922.1.24
 	}
-	
+		check_variable = {global.4italian_war = 1}
 }
 immediate = {
 	news_event = ITANews.8
@@ -444,25 +481,32 @@ immediate = {
 		name = ITE.12.a
 		if = {
 			limit = {
-				ROOT = {controls_state = 159}
-			}
-			ROOT = {transfer_state = 159}
-			159 = {add_core_of = ROOT}
+				OR = {
+				ITE = {controls_state = 159}
+				ITC = {controls_state = 159}
+				RDN = {controls_state = 159}
+			}}
+			HUS = {transfer_state = 159}
+			159 = {add_core_of = HUS}
 		}
 		
 		if = {
 			limit = {
-				ROOT = {controls_province = 9752}
-			}
-			ROOT = {transfer_state = 161}
-			161 = {add_core_of = ROOT}
+				OR = {
+				ITE = {controls_province = 9752}
+				ITC = {controls_province = 9752}
+				RDN = {controls_province = 9752}
+			}}
+			HUS = {transfer_state = 161}
+			161 = {add_core_of = HUS}
 		}
 		AOX = {white_peace = ITC}
 		AOX = {white_peace = ITE}
 		AOX = {white_peace = RDN}
 		ITC = {dismantle_faction = yes}
 		NPL = {add_to_faction = RDN}
-		
+		set_variable = {global.deadlock_4italian_war = 1}
+		set_variable = {global.4italian_war = 2}
 		
 		}
 		
@@ -481,8 +525,7 @@ immediate = {
 			NOT = {AOX = {controls_province = 3780}	}
 			NOT = {AOX = {controls_province = 603}	}
 			NOT = {AOX = {controls_province = 11584}	}
-			
-			
+			check_variable = {global.4italian_war = 1}
 			}
 			
 	
@@ -491,30 +534,8 @@ immediate = {
 		}
 		option = {
 			name = ITE.13.a
-			
-			if = {
-				limit = {
-					ROOT = {controls_province = 3780}
-				}
-				ROOT = {transfer_state = 159}
-				159 = {add_core_of = ROOT}
-			}
-			
-			if = {
-				limit = {
-					ROOT = {controls_province = 9752}
-				}
-				ROOT = {transfer_state = 161}
-				161 = {add_core_of = ROOT}
-			}
-			if = {
-				limit = {
-					ROOT = {controls_province = 9598}
-				}
-				ROOT = {transfer_state = 850}
-				850 = {add_core_of = ROOT}
-			}
-			country_event = {id=ITE.14 days = 1}
+			news_event = {id = ITANews.12 days = 57}
+			country_event = {id = ITE.14 days = 60}
 			}
 			
 		}
@@ -524,10 +545,8 @@ immediate = {
 	hidden = yes
 	title = ITE.14.t
 	desc = ITE.14.d
+	fire_only_once = yes
 	is_triggered_only = yes
-
-
-	
  immediate = {
 	news_event = ITANews.10
 	}
@@ -535,14 +554,93 @@ immediate = {
 		name = ITE.14.a
 		if = {
 			limit = {
-				ROOT = {controls_province = 11584}
+				OR = {
+				ITE = {controls_province = 3780}
+				ITC = {controls_province = 3780}
+				RDN = {controls_province = 3780}
+			}}
+			HUS = {transfer_state = 159}
+			159 = {add_core_of = HUS}
+		}
+		
+		if = {
+			limit = {
+				OR = {
+				ITE = {controls_province = 9752}
+				ITC = {controls_province = 9752}
+				RDN = {controls_province = 9752}
+			}}
+			HUS = {transfer_state = 161}
+			161 = {add_core_of = HUS}
+		}
+		if = {
+			limit = {
+				OR = {
+				ITE = {controls_province = 11584}
+				ITC = {controls_province = 11584}
+				RDN = {controls_province = 11584}
+			}}
+			HUS = {transfer_state = 160}
+			160 = {add_core_of = HUS}
+		}
+		if = {
+			limit = {
+				OR = {
+				ITE = {controls_province = 9598}
+				ITC = {controls_province = 9598}
+				RDN = {controls_province = 9598}
+			}}
+			HUS = {transfer_state = 850}
+			850 = {add_core_of = HUS}
+		}
+		if = {
+			limit = {
+				OR = {
+				ITE = {controls_state = 736}
+				ITC = {controls_state = 736}
+				RDN = {controls_state = 736}
+			}}
+			HUS = {transfer_state = 736}
+			736 = {add_core_of = HUS}
+		}
+		if = {
+			limit = {
+				OR = {
+				ITE = {controls_state = 852}
+				ITC = {controls_state = 852}
+				RDN = {controls_state = 852}
+			}}
+			HUS = {transfer_state = 852}
+			852 = {add_core_of = HUS}
+		}
+		
+		if = {
+			limit = {
+				OR = {
+				ITE = {controls_state = 163}
+				ITC = {controls_state = 163}
+				RDN = {controls_state = 163}
+			}}
+			HUS = {transfer_state = 163}
+			163 = {add_core_of = HUS}
+		}
+		HUS = {set_autonomy = {
+			target = FUM
+			autonomy_state = autonomy_dominion
+		}}
+		FUM = {
+			set_politics = {
+				ruling_party = Nationalism
+				last_election = "1918.11.11"
+				election_frequency = 72
+				elections_allowed = no
 			}
-			ROOT = {transfer_state = 160}
-			160 = {add_core_of = ROOT}
-		}
-		HUS = {annex_country = {
-			target = VCT transfer_troops = yes
-		}
+			
+			set_popularities = {
+				Nationalism = 80
+				Revolutionism = 20
+			}
+		
 		}
 		AOX = {white_peace = ITC}
 		AOX = {white_peace = ITE}
@@ -551,7 +649,8 @@ immediate = {
 		ITC = {leave_faction = yes}
 		ITE = {leave_faction = yes}
 		NPL = {add_to_faction = RDN}
-		
+		set_variable = {global.ita_win_4italian_war = 1}
+		set_variable = {global.4italian_war = 2}
 		
 		}
 		
@@ -562,19 +661,30 @@ immediate = {
 			hidden = yes
 			title = ITE.15.t
 			desc = ITE.15.d
-		
+			fire_only_once = yes
 			is_triggered_only = yes
-			
-				
-		
 			option = {
 				name = ITE.15.a
 				if = {
 					limit = {
 						
-							RDN = {controls_state = 157}
-							RDN = {controls_state = 117}
+						check_variable = {global.4italian_war = 1}
+						NOT = {
+							
+							AOX = {
+								controls_province = 9838
+							}
+							AOX = {
+								controls_province = 3910
+							}
+							AOX = {
+								controls_province = 11882
+							}
+							AOX = {
+								controls_province = 923
+							}
 						
+					}	
 					}
 					ITC = {
 					
@@ -594,12 +704,32 @@ immediate = {
 			157 = {
 				add_core_of = ITC
 			}
-				}
-				
+		}
+		117 = {
+		create_unit = {
+			division = "name = 加里波第军团步兵一师 division_template = 加里波第军团步兵师 start_experience_factor = 0.7 start_equipment_factor = 0.7" 
+		  owner = ITC
+		  prioritize_location = 819
+		  }
+		  create_unit = {
+			division = "name = 加里波第军团步兵一师 division_template = 加里波第军团步兵师 start_experience_factor = 0.7 start_equipment_factor = 0.7" 
+		  owner = ITC
+		  prioritize_location = 819
+		  }
+		  create_unit = {
+			division = "name = 加里波第军团步兵一师 division_template = 加里波第军团步兵师 start_experience_factor = 0.7 start_equipment_factor = 0.7" 
+		  owner = ITC
+		  prioritize_location = 819
+		  }
+		  create_unit = {
+			division = "name = 加里波第军团步兵一师 division_template = 加里波第军团步兵师 start_experience_factor = 0.7 start_equipment_factor = 0.7" 
+		  owner = ITC
+		  prioritize_location = 819
+		  }
+		}
 					news_event = {id = ITANews.7 days = 1}
 					
-				}
-				
+				}	
 		}
 	}
 
@@ -615,6 +745,7 @@ immediate = {
 			AOX = {controls_state = 158}
 			AOX = {controls_state = 941}
 			AOX = {controls_state = 735}
+			check_variable = {global.4italian_war = 1}
 		}
 			immediate = {
 				news_event = ITANews.11
@@ -670,6 +801,11 @@ immediate = {
 					long_name = VCT_Dictatorship_party1
 					name = VCT_Dictatorship_party1
 				}
+				set_party_name = {
+					ideology = Paternalism
+					long_name = VCT_Paternalism_party1
+					name = VCT_Paternalism_party1
+				}
 				transfer_state = 158
 				transfer_state = 735
 				transfer_state = 941
@@ -694,7 +830,77 @@ immediate = {
 					}
 				}
 			}
+			set_variable = {global.aus_win_4italian_war = 1}
+			set_variable = {global.4italian_war = 2}
+			
+		}
+	}
+
+	country_event = {
+		id = ITE.17
+		hidden = yes
+		title = ITE.17.t
+		desc = ITE.17.d
+	
+		fire_only_once = yes
+		trigger = {
+			check_variable = {global.4italian_war = 1}
+			check_variable = {global.hungarian_war = 1}
+		}
+			immediate = {
+				news_event = ITANews.13
+				}
+	
+		option = {
+			name = ITE.17.a
+			
 			
 			
 		}
 	}
+	country_event = {
+		id = ITE.18
+		hidden = yes
+		title = ITE.18.t
+		desc = ITE.18.d
+	
+		fire_only_once = yes
+		trigger = {
+			check_variable = {global.4italian_war = 1}
+			OR = {
+				ITE = {controls_state = 852}
+				ITC = {controls_state = 852}
+				RDN = {controls_state = 852}
+			}
+		}
+			immediate = {
+				country_event = ITANews.14
+				}
+				
+	
+		option = {
+			name = ITE.18.a
+			country_event = {id=ITE.19 days= 2}
+			
+			
+		}
+	}
+	country_event = {
+		id = ITE.19
+		hidden = yes
+		title = ITE.19.t
+		desc = ITE.19.d
+	
+		fire_only_once = yes
+			is_triggered_only = yes
+			immediate = {
+				country_event = ITANews.15
+				}
+				
+	
+		option = {
+			name = ITE.19.a
+			FUM = {transfer_state = 917}
+			917 = {add_core_of = FUM}
+	}
+}

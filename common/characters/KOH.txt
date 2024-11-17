@@ -63,6 +63,27 @@ characters={
 			logistics_skill = 2
 		}
 	}
+	KOH_Joseph_Augusta2={
+		name=KOH_Joseph_Augusta2
+		portraits={
+			civilian={
+				large="gfx/leaders/KOH/Portrait_Joseph_Augusta.tga"
+			}
+		}
+		country_leader={
+			ideology=semi-democratic-constitutional-monarchy
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
 	KOH_Mihaly_Karolyi={
 		name=KOH_Mihaly_Karolyi
 		portraits={

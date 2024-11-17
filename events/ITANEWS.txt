@@ -147,3 +147,55 @@ news_event = {
 						
 							}
 					}
+ news_event = {
+	id = ITANews.12
+	title = ITANews.12.t
+	desc = ITANews.12.d
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ITANews.12.a
+		
+			}
+	}
+	news_event = {
+		id = ITANews.13
+		title = ITANews.13.t
+		desc = ITANews.13.d
+		
+		major = yes
+		is_triggered_only = yes
+		
+		option = {
+			name = ITANews.13.a
+			
+				}
+		}
+		country_event = {
+			id = ITANews.14
+			title = ITANews.14.t
+			desc = ITANews.14.d
+			
+			major = yes
+			is_triggered_only = yes
+			
+			option = {
+				name = ITANews.14.a
+				
+					}
+			}
+			country_event = {
+	id = ITANews.15
+	title = ITANews.15.t
+	desc = ITANews.15.d
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ITANews.15.a
+		
+			}
+	}

@@ -1201,7 +1201,7 @@ hun_red_army = {
 			bosnia_war_end = yes
 			bosnia_war_tri = yes
 			check_variable = {
-				global.hungry_war = 0
+				global.hungarian_war = 0
 			}
 		}
 		visible = {
@@ -1216,11 +1216,11 @@ hun_red_army = {
 		timeout_effect = {
 			hidden_effect = {
 				set_variable = {
-					global.hungry_war = 1
+					global.hungarian_war = 1
 				}
 				XYL = {
 					transfer_state = 154
-					
+					load_oob = "XYL_1920"
 				}
 				every_state = {
 					limit = {
