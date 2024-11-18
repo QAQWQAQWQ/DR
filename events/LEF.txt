@@ -28,8 +28,8 @@ country_event = {
 	    start_border_war = {
 			change_state_after_war = no
 				attacker = {
-					state = 937
-					num_provinces = 2
+					state = 290
+					num_provinces = 1
 					on_win = LEF.1
 					#on_lose = japan_border_conflict.3
 					#on_cancel = LEF.1
@@ -41,7 +41,7 @@ country_event = {
 			}	
 			defender = {
 				state = 1026
-				num_provinces = 2
+				num_provinces = 1
 				#on_win = japan_border_conflict.3
 				on_lose = SBY.2
 				#on_cancel = SBY.2
@@ -64,10 +64,11 @@ country_event = {
 
 
 	trigger = {
+		has_global_flag = LEFwar_lefwin
 			SBY={ 
 				NOT = {
 					has_global_flag = LEF_Start.3
-					controls_state = 1026
+					
 				}
 			}
 	}
@@ -93,10 +94,8 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = LEF.1.a
-		
-	    LEF={
-			transfer_state = 1026
-		}
+		set_global_flag = LEFwar_lefwin
+	    
 	}
 }
 country_event = {

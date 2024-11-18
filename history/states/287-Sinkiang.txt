@@ -2,15 +2,27 @@
 state={
 	id=287
 	name="STATE_287"
+	manpower = 3597704
+	state_category = rural
 	resources={
-		grain=7.000
+		grain=20
 	}
 
 	history={
-		owner = XJC
-		add_core_of = XJC
+		owner = VCT
+		add_core_of = VCT
+		victory_points = { #Brescia
+			773 3
+		}
+		victory_points = { #Verona
+			603 15
+		}
+		
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4 #was: 8
+			arms_factory = 7
+			industrial_complex = 3
+			air_base = 10
 
 		}
 		
@@ -18,10 +30,9 @@ state={
 	}
 
 	provinces={
-		10885 10911
+		6661 969 773 11587 11568 3776 603 9582
 	}
-	manpower=308000
-	buildings_max_level_factor=1.000
-	state_category=wasteland
+
+
 	local_supplies=4.000
 }

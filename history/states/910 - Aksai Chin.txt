@@ -4,18 +4,25 @@ state = {
 	name = "STATE_910"
 	manpower = 183423
 	
-	state_category = rural
+	state_category = city
 
 	history = {
-		owner = XJC
-		add_core_of = XJC
+		owner = SBY
+		victory_points = {
+			9945 3
+		}
+		add_core_of = LEF
+		add_core_of = MOL
 
         buildings = {
 			infrastructure = 1 
+			9945 = {
+				naval_base = 3
+			}
 		}
 	}
 	provinces = {
-		7273 5042
+		9945
 	}
 
 	local_supplies = 0.0 

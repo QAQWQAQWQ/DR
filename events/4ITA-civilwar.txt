@@ -1,5 +1,5 @@
 ﻿###########################
-# ITA Events
+# 4ITA war and civil war Events
 ###########################
 
 add_namespace = ITE
@@ -308,6 +308,9 @@ RDN = {
 160 = {
 	add_core_of = ITC
 }
+287 = {
+	add_core_of = ITC
+}
 159 = {
 	add_core_of = ITE
 }
@@ -317,6 +320,9 @@ RDN = {
 160 = {
 	add_core_of = ITE
 }
+287 = {
+	add_core_of = ITE
+}
 159 = {
 	add_core_of = RDN
 }
@@ -324,6 +330,9 @@ RDN = {
 	add_core_of = RDN
 }
 160 = {
+	add_core_of = RDN
+}
+287 = {
 	add_core_of = RDN
 }
 set_variable = {global.4italian_war = 1}
@@ -482,12 +491,22 @@ immediate = {
 		if = {
 			limit = {
 				OR = {
-				ITE = {controls_state = 159}
-				ITC = {controls_state = 159}
-				RDN = {controls_state = 159}
+				ITE = {controls_province = 3780}
+				ITC = {controls_province = 3780}
+				RDN = {controls_province = 3780}
 			}}
 			HUS = {transfer_state = 159}
 			159 = {add_core_of = HUS}
+		}
+		if = {
+			limit = {
+				OR = {
+				ITE = {controls_province = 603}
+				ITC = {controls_province = 603}
+				RDN = {controls_province = 603}
+			}}
+			HUS = {transfer_state = 287}
+			287 = {add_core_of = HUS}
 		}
 		
 		if = {
@@ -500,9 +519,24 @@ immediate = {
 			HUS = {transfer_state = 161}
 			161 = {add_core_of = HUS}
 		}
+		if = {
+			limit = {
+				OR = {
+				ITE = {controls_province = 9598}
+				ITC = {controls_province = 9598}
+				RDN = {controls_province = 9598}
+			}}
+			HUS = {transfer_state = 850}
+			850 = {add_core_of = HUS}
+		}
 		AOX = {white_peace = ITC}
 		AOX = {white_peace = ITE}
 		AOX = {white_peace = RDN}
+		WWS = {white_peace = ITC}
+		WWS = {white_peace = ITE}
+		WWS = {white_peace = RDN}
+		ITE = {leave_faction = yes}
+		NPL = {leave_faction = yes}
 		ITC = {dismantle_faction = yes}
 		NPL = {add_to_faction = RDN}
 		set_variable = {global.deadlock_4italian_war = 1}
@@ -562,6 +596,16 @@ immediate = {
 			HUS = {transfer_state = 159}
 			159 = {add_core_of = HUS}
 		}
+		if = {
+			limit = {
+				OR = {
+				ITE = {controls_province = 603}
+				ITC = {controls_province = 603}
+				RDN = {controls_province = 603}
+			}}
+			HUS = {transfer_state = 287}
+			287 = {add_core_of = HUS}
+		}
 		
 		if = {
 			limit = {
@@ -593,16 +637,7 @@ immediate = {
 			HUS = {transfer_state = 850}
 			850 = {add_core_of = HUS}
 		}
-		if = {
-			limit = {
-				OR = {
-				ITE = {controls_state = 736}
-				ITC = {controls_state = 736}
-				RDN = {controls_state = 736}
-			}}
-			HUS = {transfer_state = 736}
-			736 = {add_core_of = HUS}
-		}
+		
 		if = {
 			limit = {
 				OR = {
@@ -645,9 +680,9 @@ immediate = {
 		AOX = {white_peace = ITC}
 		AOX = {white_peace = ITE}
 		AOX = {white_peace = RDN}
-		ITC = {dismantle_faction = yes}
-		ITC = {leave_faction = yes}
 		ITE = {leave_faction = yes}
+		NPL = {leave_faction = yes}
+		ITC = {dismantle_faction = yes}
 		NPL = {add_to_faction = RDN}
 		set_variable = {global.ita_win_4italian_war = 1}
 		set_variable = {global.4italian_war = 2}
@@ -727,7 +762,7 @@ immediate = {
 		  prioritize_location = 819
 		  }
 		}
-					news_event = {id = ITANews.7 days = 1}
+					news_event = ITANews.7 
 					
 				}	
 		}
@@ -756,6 +791,7 @@ immediate = {
 			AOX = {white_peace = RDN}
 			RDN = {transfer_state = 114
 			transfer_state = 115}
+			NPL = {leave_faction = yes}
 			NPL = {add_to_faction = RDN}
 			LMJ = {
 				transfer_state = 2
@@ -835,29 +871,7 @@ immediate = {
 			
 		}
 	}
-
-	country_event = {
-		id = ITE.17
-		hidden = yes
-		title = ITE.17.t
-		desc = ITE.17.d
-	
-		fire_only_once = yes
-		trigger = {
-			check_variable = {global.4italian_war = 1}
-			check_variable = {global.hungarian_war = 1}
-		}
-			immediate = {
-				news_event = ITANews.13
-				}
-	
-		option = {
-			name = ITE.17.a
-			
-			
-			
-		}
-	}
+	#ITE17
 	country_event = {
 		id = ITE.18
 		hidden = yes
@@ -900,7 +914,13 @@ immediate = {
 	
 		option = {
 			name = ITE.19.a
-			FUM = {transfer_state = 917}
+			if = {
+				limit = {
+					check_variable = {global.4italian_war = 1}
+				}
+				FUM = {transfer_state = 917}
 			917 = {add_core_of = FUM}
+				}
+			}
+			
 	}
-}

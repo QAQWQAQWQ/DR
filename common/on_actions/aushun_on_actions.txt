@@ -379,6 +379,12 @@ on_actions = {
                     add_ideas = {
                         Part_of_Habsburgs
                     }
+                    set_politics = {ruling_party = Dictatorship}
+                    set_popularities = {
+                        Paternalism = 20
+                        Dictatorship = 80
+
+                    }
                 }
 
                 KOH = {
