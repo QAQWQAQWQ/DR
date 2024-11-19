@@ -199,3 +199,29 @@ news_event = {
 		
 			}
 	}
+ news_event = {
+	id = ITANews.16
+	title = ITANews.16.t
+	desc = ITANews.16.d
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ITANews.16.a
+		
+			}
+	}
+	news_event = {
+		id = ITANews.17
+		title = ITANews.17.t
+		desc = ITANews.17.d
+		
+		major = yes
+		is_triggered_only = yes
+		
+		option = {
+			name = ITANews.17.a
+			
+				}
+		}

@@ -10,13 +10,13 @@ units= {
 			name = "地中海舰队"
 			location = 6788 # Murmansk
 			# 1ya Flotiliya Esmintsev
-			ship = { name = "Dzerzhinskiy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RDN version_name = "Fidonisi Class" } } }
-			ship = { name = "Nezamozhnik" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RDN version_name = "Fidonisi Class" } } }
-			ship = { name = "Petrovskiy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RDN version_name = "Fidonisi Class" } } }
-			ship = { name = "Shaumyan" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RDN version_name = "Fidonisi Class" } } }
+			ship = { name = "Dzerzhinskiy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITE version_name = "Fidonisi Class" } } }
+			ship = { name = "Nezamozhnik" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITE version_name = "Fidonisi Class" } } }
+			ship = { name = "Petrovskiy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITE version_name = "Fidonisi Class" } } }
+			ship = { name = "Shaumyan" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITE version_name = "Fidonisi Class" } } }
 			# 2ya Flotiliya Esmintsev
-			ship = { name = "Izyaslav" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RDN version_name = "Fidonisi Class" } } }
-			ship = { name = "Kalinin" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RDN version_name = "Fidonisi Class" } } }
+			ship = { name = "Izyaslav" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITE version_name = "Fidonisi Class" } } }
+			ship = { name = "Kalinin" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITE version_name = "Fidonisi Class" } } }
 		}	
 	}
 
@@ -27,21 +27,21 @@ units= {
 		task_force = {				
 			name = "Chernomorskiy Flot"
 			location = 6788 # Sevastopopl
-			ship = { name = "Parizhskaya Kommuna" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = RDN version_name = "Marat Class" } } }
-			ship = { name = "Krasni Kavkaz" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RDN version_name = "Chervona Ukraina Class" } } }
-			ship = { name = "Krasny Krym" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RDN version_name = "Chervona Ukraina Class" } } }
-			ship = { name = "Chervona Ukraina" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RDN version_name = "Chervona Ukraina Class" } } }
-			ship = { name = "Komintern" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RDN version_name = "Komintern Class" } } }
-			ship = { name = "Bug" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RDN version_name = "Bug Class" } } }
+			ship = { name = "Parizhskaya Kommuna" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITE version_name = "Marat Class" } } }
+			ship = { name = "Krasni Kavkaz" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITE version_name = "Chervona Ukraina Class" } } }
+			ship = { name = "Krasny Krym" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITE version_name = "Chervona Ukraina Class" } } }
+			ship = { name = "Chervona Ukraina" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITE version_name = "Chervona Ukraina Class" } } }
+			ship = { name = "Komintern" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITE version_name = "Komintern Class" } } }
+			ship = { name = "Bug" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITE version_name = "Bug Class" } } }
 		}	
 		task_force = {	
 			name = "Chernomorskiy Podvodniy Flot"
 			location = 6788 # Sevastopopl
 			# 9iy Podvodniy Flot
-			ship = { name = "Shch-121" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = RDN version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-122" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = RDN version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-123" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = RDN version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-124" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = RDN version_name = "Series V Shchuka" } } }			
+			ship = { name = "Shch-121" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITE version_name = "Series V Shchuka" } } }			
+			ship = { name = "Shch-122" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITE version_name = "Series V Shchuka" } } }			
+			ship = { name = "Shch-123" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITE version_name = "Series V Shchuka" } } }			
+			ship = { name = "Shch-124" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITE version_name = "Series V Shchuka" } } }			
 			
 		}	
 	}
@@ -60,7 +60,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_light_2
-			creator = "RDN"
+			creator = "ITE"
 			version_name = "Leningrad & Minsk Class"
 		}
 		requested_factories = 1
@@ -70,7 +70,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_light_2
-			creator = "RDN"
+			creator = "ITE"
 			version_name = "Leningrad & Minsk Class"
 		}
 		requested_factories = 1
@@ -81,7 +81,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_cruiser_2
-			creator = "RDN"
+			creator = "ITE"
 			version_name = "Kirov Class"
 		}
 		requested_factories = 1
@@ -92,7 +92,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_cruiser_2
-			creator = "RDN"
+			creator = "ITE"
 			version_name = "Kirov Class"
 		}
 		requested_factories = 1
@@ -105,7 +105,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_submarine_1
-			creator = "RDN"
+			creator = "ITE"
 			version_name = "Series V Shchuka"
 		}
 		requested_factories = 1
@@ -115,7 +115,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_submarine_1
-			creator = "RDN"
+			creator = "ITE"
 			version_name = "Series X Shchuka"
 		}
 		requested_factories = 1
@@ -125,7 +125,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_submarine_1
-			creator = "RDN"
+			creator = "ITE"
 			version_name = "Series X Shchuka"
 		}
 		requested_factories = 1
@@ -135,7 +135,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_submarine_2
-			creator = "RDN"
+			creator = "ITE"
 			version_name = "Series IX Srednyaya"
 		}
 		requested_factories = 1

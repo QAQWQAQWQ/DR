@@ -100,35 +100,30 @@ country_event = {
 					ITE = {
 						complete_national_focus = ITE_Focus1
 					}
-					RDN = {
-						declare_war_on = {
-							target = TSI
-							type = annex_everything
-						}
+					
+				ICD = {load_oob = "ICD_1920"
+			transfer_state = 1049}
+			RDN = {
+				declare_war_on = {
+					target = TSI
+					type = annex_everything
 				}
-				
-				115 = {
-					create_unit = {
-					  division = "name = 加里波第军团步兵一师 division_template = 加里波第军团步兵师 start_experience_factor = 0.7 start_equipment_factor = 0.7" 
-					owner = RDN
-					prioritize_location = 4159
-					}
-					create_unit = {
-						division = "name = 加里波第军团步兵一师 division_template = 加里波第军团步兵师 start_experience_factor = 0.7 start_equipment_factor = 0.7" 
-					  owner = RDN
-					  prioritize_location = 4159
-					  }
-					  create_unit = {
-						division = "name = 加里波第军团步兵一师 division_template = 加里波第军团步兵师 start_experience_factor = 0.7 start_equipment_factor = 0.7" 
-					  owner = RDN
-					  prioritize_location = 4159
-					  }
-					  create_unit = {
-						division = "name = 加里波第军团步兵一师 division_template = 加里波第军团步兵师 start_experience_factor = 0.7 start_equipment_factor = 0.7" 
-					  owner = RDN
-					  prioritize_location = 4159
-					  }
-			  }
+		}
+				156 = {
+					add_core_of = ICD
+			}
+			849 = {
+				add_core_of = ICD
+		}
+		117 = {
+			add_core_of = ICD
+	}
+	157 = {
+		add_core_of = ICD
+	}
+	1049 = {
+		add_core_of = ICD
+	}
 				}
 			}
 			
@@ -198,7 +193,7 @@ country_event = {
 
 	option = {
 		name = ITE.7.a
-		
+		AOX = {retire_character = AOX_Charles_I}
 		ITE = {
 			annex_country = {
 				target = PMA
@@ -382,43 +377,20 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		ITC = {controls_province = 819}
-		
+		TSI = {exists = yes}
 		check_variable = {global.4italian_war = 1}
 	
 	}
 	immediate = {
 		country_event = ITE.15
+		news_event = ITANews.16
 		}
 
 	option = {
 		name = ITE.10.a
-		
-		ITC = {
-			annex_country = {
-				target = TSI
-				transfer_troops = yes
-			}
-			transfer_state = 157
-			transfer_state = 117
-			transfer_state = 849
-			transfer_state = 156
-			156 = {
-				add_core_of = ITC
-		}
-		849 = {
-			add_core_of = ITC
-	}
-	117 = {
-		add_core_of = ITC
-}
-157 = {
-	add_core_of = ITC
-}
 		}
 		
 	}
-}
-
 
 country_event = {
 	id = ITE.11
@@ -428,17 +400,21 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
+		OR = {
+		NPL = {controls_province = 819}
 		RDN = {controls_province = 819}
+		ICD = {controls_province = 819}
+		}
 		NOT = {
 		check_variable = {global.4italian_war = 2}
 	}
 	}
-		
+		immediate = {news_event = ITANews.17}
 
 	option = {
 		name = ITE.11.a
 		
-		RDN = {
+		ICD = {
 			annex_country = {
 				target = TSI
 				transfer_troops = yes
@@ -447,17 +423,21 @@ country_event = {
 			transfer_state = 117
 			transfer_state = 849
 			transfer_state = 156
+			transfer_state = 1049
 			156 = {
-				add_core_of = RDN
+				add_core_of = ICD
 		}
 		849 = {
-			add_core_of = RDN
+			add_core_of = ICD
 	}
 	117 = {
-		add_core_of = RDN
+		add_core_of = ICD
 }
 157 = {
-	add_core_of = RDN
+	add_core_of = ICD
+}
+1049 = {
+	add_core_of = ICD
 }
 		}
 		country_event = {id=ITE.15 days = 180}
@@ -471,17 +451,28 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		OR = {
-		AOX = {
+		OR = {#在or里
+		AOX = {#第一个条件，若在阵营中必须和普开战
 			is_in_faction = yes
 			date > 1920.2.1
+			NOT = {
+				has_war_with = WWS
+				check_variable = { global.german_war = 1 }
+			}
 		}
-		AOX = {
-			has_war_with = WWS
+		AND = {#第二个条件，打了3年结果摩德纳丢了
+			date > 1923.7.6
+			OR = {
+				AOX = {controls_province = 9752}
+				VCT = {controls_province = 9752}
 		}
-		date > 1922.1.24
+		
 	}
+	aus_has_win_german_war = yes
+	#第三个条件，若奥赢德意志战争直接deadlock
+}
 		check_variable = {global.4italian_war = 1}
+		#必须正在打意大利战争
 }
 immediate = {
 	news_event = ITANews.8
@@ -536,7 +527,7 @@ immediate = {
 		WWS = {white_peace = ITE}
 		WWS = {white_peace = RDN}
 		ITE = {leave_faction = yes}
-		NPL = {leave_faction = yes}
+		RDN = {leave_faction = yes}
 		ITC = {dismantle_faction = yes}
 		NPL = {add_to_faction = RDN}
 		set_variable = {global.deadlock_4italian_war = 1}
@@ -648,6 +639,16 @@ immediate = {
 			HUS = {transfer_state = 852}
 			852 = {add_core_of = HUS}
 		}
+		if = {
+			limit = {
+				OR = {
+				ITE = {controls_state = 736}
+				ITC = {controls_state = 736}
+				RDN = {controls_state = 736}
+			}}
+			HUS = {transfer_state = 736}
+			736 = {add_core_of = HUS}
+		}
 		
 		if = {
 			limit = {
@@ -681,7 +682,7 @@ immediate = {
 		AOX = {white_peace = ITE}
 		AOX = {white_peace = RDN}
 		ITE = {leave_faction = yes}
-		NPL = {leave_faction = yes}
+		RDN = {leave_faction = yes}
 		ITC = {dismantle_faction = yes}
 		NPL = {add_to_faction = RDN}
 		set_variable = {global.ita_win_4italian_war = 1}
@@ -722,11 +723,20 @@ immediate = {
 					}	
 					}
 					ITC = {
-					
+						recruit_character = ITC_Garibaldi_II
+						annex_country = {
+							target = TSI
+							transfer_troops = yes
+						}
+						annex_country = {
+							target = ICD
+							transfer_troops = yes
+						}
 						transfer_state = 157
 						transfer_state = 117
 						transfer_state = 849
 						transfer_state = 156
+						transfer_state = 1049
 						156 = {
 							add_core_of = ITC
 					}
@@ -737,6 +747,9 @@ immediate = {
 					add_core_of = ITC
 			}
 			157 = {
+				add_core_of = ITC
+			}
+			1049 = {
 				add_core_of = ITC
 			}
 		}
@@ -780,6 +793,7 @@ immediate = {
 			AOX = {controls_state = 158}
 			AOX = {controls_state = 941}
 			AOX = {controls_state = 735}
+			AOX = {controls_state = 1049}
 			check_variable = {global.4italian_war = 1}
 		}
 			immediate = {
@@ -791,7 +805,7 @@ immediate = {
 			AOX = {white_peace = RDN}
 			RDN = {transfer_state = 114
 			transfer_state = 115}
-			NPL = {leave_faction = yes}
+			RDN = {leave_faction = yes}
 			NPL = {add_to_faction = RDN}
 			LMJ = {
 				transfer_state = 2
@@ -816,6 +830,7 @@ immediate = {
 				transfer_state = 117
 				transfer_state = 849
 				transfer_state = 156
+				transfer_state = 1049
 			}
 			AOX = {set_autonomy = { target = TSI autonomy_state = autonomy_occupation_zone }}
 			TSI = {

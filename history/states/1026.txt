@@ -3,7 +3,7 @@ state={
 	name="STATE_1026"
 	manpower = 82741
 	
-	state_category = large_city
+	state_category = city
 	
 	resources={
 		grain=10
@@ -21,7 +21,7 @@ state={
 	}
 	
 	provinces={
-         12100
+         12100 989
 	}
 
 	local_supplies=0.0 

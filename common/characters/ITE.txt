@@ -1,24 +1,18 @@
 characters={
-	ITE_Benito_Mussolini={
-		name=ITE_Benito_Mussolini
-		portraits={
-			civilian={
-				large="gfx/leaders/ITE/Portrait_Benito_Mussolini.tga"
-			}
-		}
-		country_leader={
-			ideology=National_Communism
-			traits={ }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}	
-                ITE_Vitorioemanuel={
+	
+ITE_Vitorioemanuel={
 		name=ITE_Vitorioemanuel
 		portraits={
 			civilian={
 				large="gfx/leaders/ITE/Portrait_Vitorioemanuel.tga"
 			}
+		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
 		}
 		country_leader={
 			ideology=autocratic-constitutional-monarchy

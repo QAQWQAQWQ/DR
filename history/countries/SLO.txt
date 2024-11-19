@@ -48,7 +48,7 @@ recruit_character = SLO_Franz_Graf_von_Clam_Gallas
 	}
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -62,5 +62,6 @@ Staterun_economy
 Part_of_Habsburgs
 }
 set_popularities = {
-	Dictatorship = 100
+	Dictatorship = 80
+	Paternalism = 20
 }

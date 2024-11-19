@@ -1644,6 +1644,20 @@ bosnia_war_end = yes
 				AOX = {
 					set_autonomy = { target = TRA autonomy_state = autonomy_Crown_Territory }
 				}
+				TRA = {
+					set_politics = {
+						ruling_party = Dictatorship
+						last_election = "1918.11.11"
+						election_frequency = 72
+						elections_allowed = no
+					}
+					
+					set_popularities = {
+						Dictatorship = 80
+						Paternalism = 20
+					}
+				
+				}
 			AOX = {
 				transfer_state = 920
 				transfer_state = 921
@@ -1766,6 +1780,20 @@ bosnia_war_end = yes
 				}
 				AOX = {
 					set_autonomy = { target = SLO autonomy_state = autonomy_Crown_Territory }
+				}
+				SLO = {
+					set_politics = {
+						ruling_party = Dictatorship
+						last_election = "1918.11.11"
+						election_frequency = 72
+						elections_allowed = no
+					}
+					
+					set_popularities = {
+						Dictatorship = 80
+						Paternalism = 20
+					}
+				
 				}
 			}
 		}

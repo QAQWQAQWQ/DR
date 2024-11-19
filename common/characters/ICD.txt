@@ -13,5 +13,26 @@ characters={
 			id=-1
 		}
 	}		
+	ICD_Garibaldi_II={
+		name=ICD_Garibaldi_II
+		portraits={
+			civilian={
+				large="gfx/leaders/ICD/Portrait_Garibaldi_II.tga"
+			}
+		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		country_leader={
+			ideology=national-liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
 
 	}
