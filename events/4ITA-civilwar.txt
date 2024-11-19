@@ -109,6 +109,45 @@ country_event = {
 					type = annex_everything
 				}
 		}
+		156 = {
+		create_unit = {
+			division = "name = 加里波第军团步兵一师 division_template = 加里波第军团步兵师 start_experience_factor = 1 start_equipment_factor = 1" 
+			allow_spawning_on_enemy_provs = yes
+		  owner = ITC
+		  prioritize_location = 9990
+		  }
+		  create_unit = {
+			division = "name = 加里波第军团步兵一师 division_template = 加里波第军团步兵师 start_experience_factor = 1 start_equipment_factor = 1" 
+			allow_spawning_on_enemy_provs = yes
+		  owner = ITC
+		  prioritize_location = 9990
+		  }
+		  create_unit = {
+			division = "name = 加里波第军团步兵一师 division_template = 加里波第军团步兵师 start_experience_factor = 1 start_equipment_factor = 1"
+			allow_spawning_on_enemy_provs = yes 
+		  owner = ITC
+		  prioritize_location = 9990
+		  }
+		  create_unit = {
+			division = "name = 加里波第军团步兵一师 division_template = 加里波第军团步兵师 start_experience_factor = 1 start_equipment_factor = 1" 
+			allow_spawning_on_enemy_provs = yes
+		  owner = ITC
+		  prioritize_location = 9990
+		  }
+		  create_unit = {
+			division = "name = 加里波第军团骑兵一旅 division_template = 加里波第军团骑兵旅 start_experience_factor = 1 start_equipment_factor = 1" 
+			allow_spawning_on_enemy_provs = yes
+		  owner = ITC
+		  prioritize_location = 9990
+		  }
+		  create_unit = {
+			division = "name = 加里波第军团骑兵一旅 division_template = 加里波第军团骑兵旅 start_experience_factor = 1 start_equipment_factor = 1" 
+			allow_spawning_on_enemy_provs = yes
+		  owner = ITC
+		  prioritize_location = 9990
+		  }
+		}
+		
 				156 = {
 					add_core_of = ICD
 			}
@@ -753,28 +792,7 @@ immediate = {
 				add_core_of = ITC
 			}
 		}
-		117 = {
-		create_unit = {
-			division = "name = 加里波第军团步兵一师 division_template = 加里波第军团步兵师 start_experience_factor = 0.7 start_equipment_factor = 0.7" 
-		  owner = ITC
-		  prioritize_location = 819
-		  }
-		  create_unit = {
-			division = "name = 加里波第军团步兵一师 division_template = 加里波第军团步兵师 start_experience_factor = 0.7 start_equipment_factor = 0.7" 
-		  owner = ITC
-		  prioritize_location = 819
-		  }
-		  create_unit = {
-			division = "name = 加里波第军团步兵一师 division_template = 加里波第军团步兵师 start_experience_factor = 0.7 start_equipment_factor = 0.7" 
-		  owner = ITC
-		  prioritize_location = 819
-		  }
-		  create_unit = {
-			division = "name = 加里波第军团步兵一师 division_template = 加里波第军团步兵师 start_experience_factor = 0.7 start_equipment_factor = 0.7" 
-		  owner = ITC
-		  prioritize_location = 819
-		  }
-		}
+		
 					news_event = ITANews.7 
 					
 				}	

@@ -18,12 +18,14 @@ units = {
 		name = "帕尔马王国民兵一旅"
 		location = 3773
 		division_template = "帕尔马王国民兵旅"
-		start_experience_factor = 0.7
+		start_experience_factor = 1
+		start_equipment_factor = 1
 	}
 	division= {	
 		name = "帕尔马王国民兵二旅"
 		location = 3773
 		division_template = "帕尔马王国民兵旅"
-		start_experience_factor = 0.7
+		start_experience_factor = 1
+		start_equipment_factor = 1
 	}
 }

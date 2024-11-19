@@ -38,24 +38,28 @@ units = {
 		name = "托斯卡纳民兵一旅"
 		location = 9907
 		division_template = "托斯卡纳民兵旅"
-		start_experience_factor = 0.7
+		start_experience_factor = 1
+		start_equipment_factor = 1
 	}
 	division= {	
 		name = "托斯卡纳民兵二旅"
 		location = 11833
 		division_template = "托斯卡纳民兵旅"
-		start_experience_factor = 0.7
+		start_experience_factor = 1
+		start_equipment_factor = 1
 	}
 	division= {	
 		name = "托斯卡纳一师"
 		location = 6946
 		division_template = "托斯卡纳步兵师"
-		start_experience_factor = 0.7
+		start_experience_factor = 1
+		start_equipment_factor = 1
 	}
 	division= {	
 		name = "托斯卡纳二师"
 		location = 6946
 		division_template = "托斯卡纳步兵师"
-		start_experience_factor = 0.7
+		start_experience_factor = 1
+		start_equipment_factor = 1
 	}
 }
