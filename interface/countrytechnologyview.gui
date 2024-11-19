@@ -6,7 +6,7 @@ guiTypes = {
 		clipping = no
 			
 		background = {
-			name = "Background"		
+			name = "Background"		 
 			spriteType = "GFX_tech_idea_bg"
 		}
 		
@@ -44,15 +44,18 @@ guiTypes = {
 		#hide_sound = menu_close_window
 		show_sound = menu_open_window
 
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_tiled_plain_bg"
+		}
+
 
 		#背景
 		iconType ={
 			name ="production_header_bg"
 			spriteType = "GFX_header_bg"
-			position = { x= 0 y = 11 }
+			position = { x= 5 y = 7 }
 			Orientation = "UPPER_LEFT"
-			scale = 1.02
-			
 		}		
 		
 		instantTextboxType = {
@@ -62,52 +65,146 @@ guiTypes = {
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
 			text = "RESEARCH_RESEARCH"
-			maxWidth = 240
+			maxWidth = 440
 			maxHeight = 20
 			format = left	
 		}
 		
-
 		containerWindowType = {
-			name = "research_win_top"
-			position = { x = -5 y = 40 } 
-			size = { width = 100% height = 80% }
+			name = "tabs"
+			position = { x=0 y=44 }
+			size = { width = 100%% height = 30 }
 
-			iconType = {
-				name = "Background"
-				spriteType ="GFX_research_top_win"
-				position = { x = 9 y = 5 }	
-			    scale = 1
+			buttonType = {
+				name = "research_slots_tab"
+				position = { x = -250 y = -15 }
+				quadTextureSprite = "GFX_tab_large"
+				text = "RESEARCH_TAB_SLOTS"
+				buttonFont = "hoi_20b"
+				frame = 1
+				clicksound = click_default
+				Orientation = "CENTER"
 			}
 
-			iconType = {
-				name = "focus_bonuses_bg"
-				position = { x = 264 y = 14 }
-				spriteType = "GFX_win_header_short_right"
+			buttonType = {
+				name = "facilities_tab"
+				position = { x = 0 y = -15 }
+				quadTextureSprite = "GFX_tab_large"
+				buttonFont = "hoi_20b"
+				frame = 2
+				text = "RESEARCH_TAB_FACILITIES"
+				clicksound = click_default
+				Orientation = "CENTER"
+			}
+		}
+
+		containerWindowType = {
+			name ="research_slots"
+			position = { x=0 y=80 }
+			size = { width=550 height=-5 }
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1"
+			}
+
+			containerWindowType = {
+				name ="slots_window"
+				position = { x = 0 y=140 }
+				size = { width=550 height=-1 }
+				verticalScrollbar = "right_vertical_slider"
+				scroll_wheel_factor = 40
+				smooth_scrolling = yes
+
+				background = {
+					name = "Background"
+					spriteType = "GFX_tiled_window_transparent"
+				}
+			
+				gridboxType = {
+					name = "research_slots_grid"
+					position = { x =15 y=0 }
+					size = { width = -20 height = 100%% }
+					slotsize = { width = 500 height = 100 }
+					format = "UPPER_LEFT"
+				}
+			}
+
+			containerWindowType = {
+				name = "research_win_top"
+				position = { x = 1 y = 0 }
+				size = { width = 100% height = 80% }
+
+				background = {
+					name = "Background"
+					spriteType ="GFX_research_top_win"
 			}
 			
 			iconType = {
 				name = "focus_bonuses"
-				position = { x = 308 y = 14 }
+					position = { x = 180 y = 108 }
 				spriteType = "GFX_focus_bonuses_icon"
 			}
 
+				instantTextboxType = {
+					name = "limited_research_bonus_text"
+					position = { x = 50 y = 110 }
+					textureFile = ""
+					font = "hoi_18mbs"
+					borderSize = {x = 0 y = 0}
+					text = "LIMITED_RESEARCH_BONUS"
+					maxWidth = 130
+					maxHeight = 20
+					format = left
+					fixedsize = yes
+				}
+
+				instantTextboxType = {
+					name = "limited_research_bonus_value"
+					position = { x = 215 y = 110 }
+					textureFile = ""
+					font = "hoi_18mbs"
+					borderSize = {x = 0 y = 0}
+					text = "999"
+					maxWidth = 50
+					maxHeight = 20
+					format = left
+				}
+
 			iconType = {
 				name = "research_speed_icon"
-				position = { x = 435 y = 13 }
+					position = { x = 422 y = 108 }
 				spriteType = "GFX_research_speed_icon"
 			}
 
+				instantTextboxType = {
+					name = "research_speed_text"
+					position = { x = 295 y = 110 }
+					textureFile = ""
+					font = "hoi_18mbs"
+					borderSize = {x = 0 y = 0}
+					text = "RESEARCH_SPEED"
+					maxWidth = 125
+					maxHeight = 20
+					format = left
+					fixedsize = yes
+				}
+
 			instantTextboxType = {
 				name = "research_speed_value"
-				position = { x = 424 y = 16 }
+					position = { x = 455 y = 110 }
 				textureFile = ""
 				font = "hoi_18mbs"
 				borderSize = {x = 0 y = 0}
 				text = "999"
-				maxWidth = 90
+					maxWidth = 50
 				maxHeight = 20
-				format = right
+					format = left
 			}
 			
 			gridboxType = {
@@ -118,33 +215,16 @@ guiTypes = {
 				format = "RIGHT"
 				max_slots_horizontal = 1
 				max_slots_vertical = 8
+				}
 			}
 		}				
 		
 		containerWindowType = {
-			name ="research_slots"
-			position = { x=6 y=177 }
-			size = { width=551 height=-1 }
-			verticalScrollbar = "right_vertical_slider"
-			scroll_wheel_factor = 40
-			smooth_scrolling = yes
-			margin = { top = 13 bottom = 13 }
-			
-		#背景	
-				background = {
-					name = "Background"
-					spriteType ="GFX_tiled_window_1b_border"
-					position = { x = -2 y=0 }
-					}
-			
-			gridboxType = {
-				name = "research_slots_grid"
-				position = { x = 15 y=30 }
-				size = { width = -20 height = 100%% }
-				slotsize = { width = 500 height = 100 }
-				format = "UPPER_LEFT"
-			}
-			
+			name ="facilities"
+			position = { x=0 y=80 }
+			size = { width=550 height=-5 }
+
+			# containerWindowType facilities_view (cf. facility_roster.gui) is embedded by code here
 		}		
 	
 		containerWindowType = {
@@ -174,7 +254,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "research_slot_entry"
-		position = { x=-5 y=55 } 
+		position = { x=0 y=0 }
 		size = { width=500 height= 100 }
 		clipping = no
 		
@@ -182,15 +262,12 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_research_line_bg"
 			clicksound = click_default
-
 		}
 
 		iconType = {
 			name = "empty_research_slot_glow"
-			position = { x=26 y=12 }
+			position = { x=12 y=10 }
 			spriteType = "GFX_empty_research_slot_glow"
-			scale = 0.96	
-
 		}
 		
 #		iconType = {
@@ -207,7 +284,13 @@ guiTypes = {
 			spriteType = "GFX_research_folder_strip"
 			centerposition = yes
 			alwaystransparent = yes
+		}
 			
+		iconType = {
+			name = "designer"
+			position = { x=450 y=49 }
+			spriteType = "GFX_research_folder_strip"
+			centerposition = yes
 		}
 		
 		iconType = {
@@ -227,7 +310,7 @@ guiTypes = {
 	
 		instantTextboxType = {
 			name = "title"
-			position = { x = 57 y = 18 }
+			position = { x = 57 y = 12 }
 			textureFile = ""
 			font = "hoi_18mbs"
 			borderSize = {x = 0 y = 0}
@@ -249,7 +332,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "eta"
-			position = { x = 320 y = 17 }
+			position = { x = 335 y = 12 }
 			textureFile = ""
 			font = "hoi_18mbs"
 			borderSize = {x = 0 y = 0}

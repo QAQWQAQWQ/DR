@@ -690,4 +690,23 @@ AOX_Rudolf_Hilferding={
 			logistics_skill=2
 		}
 	}	
+	############
+	###########
+	AOX_Erwin_Schrodinger={
+		name=AOX_Erwin_Schrodinger
+		portraits={
+			army={
+				large="gfx/leaders/AOX/Portrait_Erwin_Schrodinger.tga"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_rocketry_specialist scientist_trait_brilliant_theorist }
+			skills = {
+				specialization_air = 3
+			}
+		}
+	}
+	
+
+	#############
 	}

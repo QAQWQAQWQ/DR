@@ -3,7 +3,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "countryconstructionsview"
 		position = { x=-606 y=78 }
-		show_position = { x=-9 y =78 }
+		show_position = { x=-9 y =100 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
@@ -15,7 +15,7 @@ guiTypes = {
 
 		background = {
 			name = "Background"
-			quadTextureSprite ="GFX_tiled_window_thin_border"
+			spriteType ="GFX_tiled_bg"
 		}
 
 		iconType ={
@@ -27,7 +27,7 @@ guiTypes = {
 
 		iconType ={
 			name ="production_header_bg"
-			spriteType = "GFX_construction_header_bg"
+			#spriteType = "GFX_construction_header_bg"
 			position = { x= 10 y = 5 }
 			Orientation = "UPPER_LEFT"
 		}
@@ -59,7 +59,7 @@ guiTypes = {
 			iconType = {
 				name = "factories_used"
 				position = { x=3 y=2 }
-				spriteType = "GFX_factory_icon_with_wrench"
+				#spriteType = "GFX_factory_icon_with_wrench"
 				frame = 1
 				pdx_tooltip = "REPAIR_ASSIGNMENT_INFO_FACTORIES"
 			}
@@ -491,7 +491,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "minimize"
-			position = { x = 57 y = 10 }
+			position = { x = -100 y = 10 }
 			quadTextureSprite ="GFX_production_line_arrow_left"
 			buttonFont = "Main_14_black"
 			Orientation = "UPPER_RIGHT"
@@ -509,7 +509,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "close_button"
-			position = { x = 107 y = 9 }
+			position = { x = -57 y = 9 }
 			quadTextureSprite ="GFX_closebutton"
 			buttonFont = "Main_14_black"
 			shortcut = "ESCAPE"

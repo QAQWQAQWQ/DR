@@ -110,6 +110,11 @@ technology_categories = {
 	cat_mountaineers_doctrine
 	cat_marines_doctrine
 	cat_paratroopers_doctrine
+	naval_armor
+	naval_artillery
+	helicopter_tech
+	pykrete_tech
+	transport_planes_cat
 	Stormtroopers_tech
 	Flame_Troops_tech
 	Free_sniper_tech
@@ -132,7 +137,8 @@ technology_categories = {
 	mio_cat_tech_all_carrier_and_modules #Includes CV and all related modules
 	mio_cat_tech_all_cruiser_and_modules #Includes all CA (+ Coastal etc.), CL (Torpedo Cruiser) and all related modules
 	mio_cat_tech_all_destroyer_and_modules #Includes all DD and all related modules
-	mio_cat_tech_all_motorized_mechanized #Includes all Motorized (incl. Motorized Rocket Artillery) and Mechanized Equipment. (DOES NOT INCLUDE ARMORED CARS)
+	mio_cat_tech_all_motorized_mechanized
+	mio_cat_artillery #Includes all Motorized (incl. Motorized Rocket Artillery) and Mechanized Equipment. (DOES NOT INCLUDE ARMORED CARS)
 }
 
 technology_folders = {
