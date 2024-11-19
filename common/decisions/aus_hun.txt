@@ -149,6 +149,21 @@ aus_hun_decisions = {
 					bos_war_end_qwq = yes
 					AOX = {
 						country_event = aushun.3
+						set_autonomy = { target = DMT autonomy_state = autonomy_Crown_Territory }
+					}
+					DMT = {
+						set_politics = {
+							ruling_party = Dictatorship
+							last_election = "1918.11.11"
+							election_frequency = 72
+							elections_allowed = no
+						}
+						
+						set_popularities = {
+							Paternalism = 20
+							Dictatorship = 80
+						}
+					
 					}
 					KOH = {
 						retire_country_leader = yes
@@ -1186,7 +1201,7 @@ hun_red_army = {
 			bosnia_war_end = yes
 			bosnia_war_tri = yes
 			check_variable = {
-				global.hungry_war = 0
+				global.hungarian_war = 0
 			}
 		}
 		visible = {
@@ -1201,16 +1216,11 @@ hun_red_army = {
 		timeout_effect = {
 			hidden_effect = {
 				set_variable = {
-					global.hungry_war = 1
+					global.hungarian_war = 1
 				}
 				XYL = {
 					transfer_state = 154
-					transfer_state = 82
-					transfer_state = 76
-					transfer_state = 1019
-					transfer_state = 83
-					transfer_state = 764
-					transfer_state = 45
+					load_oob = "XYL_1920"
 				}
 				every_state = {
 					limit = {
@@ -1220,7 +1230,13 @@ hun_red_army = {
 				}
 			}
         	XYL = { declare_war_on = { target = ROOT type = annex_everything } }
-			AOX = { declare_war_on = { target = XYL type = annex_everything } }
+			AOX = {complete_national_focus = AUS_bir_0
+				complete_national_focus = AUS_bir_1
+				complete_national_focus = AUS_bir_12
+				complete_national_focus = AUS_bir_13
+				complete_national_focus = AUS_bir_14}
+				news_event = {id=ITANews.13 days= 1}
+				
 		}
 	}
 }

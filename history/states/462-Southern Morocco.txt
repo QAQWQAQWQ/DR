@@ -4,7 +4,7 @@ state={
 	name="STATE_462"
 	manpower = 1865552
 	
-	state_category = wasteland
+	state_category=pastoral
 	resources={
 		grain=4
 	}
@@ -13,15 +13,20 @@ state={
 add_core_of = MOL
 add_core_of = LEF
 		victory_points = {
-			4108 1 
+			4108 10
 		}
+		victory_points = {
+			11987 5 
+		}
+		
 		buildings = {
 			infrastructure = 1
+			air_base = 4
 		}
 	}
 
 	provinces={
-		1102 1152 1207 1989 4022 4108 4154 4933 5046 7203 7908 7958 8046 10107 
+		1102 1152 1207 1989 4022 4108 4933 7203 8046 10107 4097 7173 4084 12042 7100 11987 10013 5046 7908
 	}
 
 	local_supplies=0.0 

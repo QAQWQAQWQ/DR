@@ -14,6 +14,21 @@ characters={
 		}
 	}
 
+	DMT_Matko_Laginja2={
+		name=DMT_Matko_Laginja2
+		portraits={
+			civilian={
+				large="gfx/leaders/DMT/Portrait_Matko_Laginja.tga"
+			}
+		}
+		country_leader={
+			ideology=semidem-cm-liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
 	
 	DMT_Josip_Smodlaka={
 		name=DMT_Josip_Smodlaka
@@ -23,7 +38,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Authoritarian_Conservatism
+			ideology=liberal_conservatism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1

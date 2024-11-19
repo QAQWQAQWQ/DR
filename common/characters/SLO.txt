@@ -1,4 +1,5 @@
 characters={
+	
 	SLO_Franz_Graf_von_Clam_Gallas={
 		name=SLO_Franz_Graf_von_Clam_Gallas
 		portraits={
@@ -8,6 +9,34 @@ characters={
 		}
 		country_leader={
 			ideology = autocratic-constitutional-monarchy
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SLO_Theodor_Korner={
+		name=SLO_Theodor_Korner
+		portraits={
+			civilian={
+				large="gfx/leaders/AOX/Portrait_Theodor_Korner.tga"
+			}
+		}
+		country_leader={
+			ideology = autocratic-constitutional-monarchy
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SLO_Theodor_Korner2={
+		name=SLO_Theodor_Korner2
+		portraits={
+			civilian={
+				large="gfx/leaders/AOX/Portrait_Theodor_Korner.tga"
+			}
+		}
+		country_leader={
+			ideology = semi-democratic-constitutional-monarchy
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1

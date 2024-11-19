@@ -68,6 +68,24 @@ recruit_character = RDN_Prince_Ferdinand_Pius
 		
 		
 	}
+	set_autonomy = {
+		target = ICD
+		autonomy_state = autonomy_dominion
+	}
+	ICD = {
+		set_politics = {
+			ruling_party = Liberalism
+			last_election = "1918.11.11"
+			election_frequency = 72
+			elections_allowed = no
+		}
+		set_popularities = {
+			Dictatorship = 30
+			Liberalism = 40
+			Nationalism = 30
+		}
+	
+	}
 set_politics = {
 	ruling_party = Dictatorship
 	last_election = "1918.11.11"
@@ -79,7 +97,7 @@ add_ideas={
 Basic_industrialization 
 Private_economy
 secondary_school
-RDN_Camorra
+
 }
 set_popularities = {
 	Paternalism = 10

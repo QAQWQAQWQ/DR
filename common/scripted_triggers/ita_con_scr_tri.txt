@@ -1,0 +1,17 @@
+4italian_war_has_started = {
+    custom_trigger_tooltip = { 
+        tooltip = 4italian_war_has_started_tri
+        check_variable = { global.4italian_war = 1 }
+    }
+}
+4italian_war_has_ended = {
+    custom_trigger_tooltip = { 
+        tooltip = 4italian_war_has_ended_tri 
+        OR = {
+			check_variable = { global.aus_halfwin_4italian_war = 1 }
+            check_variable = { global.aus_win_4italian_war = 1 }
+            check_variable = { global.ita_win_4italian_war = 1 }
+            check_variable = { global.deadlock_4italian_war = 1 }
+        }
+    }
+}

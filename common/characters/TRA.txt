@@ -13,4 +13,32 @@ characters={
 			id=-1
 		}
 	}
+	TRA_Baro_Straussenburg={
+		name=TRA_Baro_Straussenburg
+		portraits={
+			civilian={
+				large="gfx/leaders/AOX/Portrait_Baro_Straussenburg.tga"
+			}
+		}
+		country_leader={
+			ideology=autocratic-constitutional-monarchy
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	TRA_Baro_Straussenburg2={
+		name=TRA_Baro_Straussenburg2
+		portraits={
+			civilian={
+				large="gfx/leaders/AOX/Portrait_Baro_Straussenburg.tga"
+			}
+		}
+		country_leader={
+			ideology=semi-democratic-constitutional-monarchy
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	}

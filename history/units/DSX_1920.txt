@@ -1,6 +1,6 @@
 ﻿
 division_template = {
-	name = "中央非洲步兵旅"			
+	name = "非洲步兵旅"			
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -14,7 +14,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "沙漠骑兵旅"
+	name = "非洲骑兵旅"
 	regiments = {
 		cavalry = { x = 0 y = 0 }
         cavalry = { x = 0 y = 1 }
@@ -28,16 +28,16 @@ division_template = {
 
 units = {
 	division= {	
-		name = "中央非洲一旅"
-		location = 1939
-		division_template = "中央非洲步兵旅"
+		name = "非洲一旅"
+		location = 1951
+		division_template = "非洲步兵旅"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 	}
 	division= {	
-		name = "沙漠骑兵旅"
-		location = 1939
-		division_template = "沙漠骑兵旅"
+		name = "非洲骑兵旅"
+		location = 6039
+		division_template = "非洲骑兵旅"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 	}

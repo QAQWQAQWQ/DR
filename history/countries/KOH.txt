@@ -13,6 +13,7 @@ set_technology = {
 }
 recruit_character = KOH_Karoly_Huszar
 recruit_character = KOH_Joseph_Augusta
+recruit_character = KOH_Joseph_Augusta2
 recruit_character = KOH_Horthy_Miklos
 recruit_character = KOH_Mihaly_Karolyi
 recruit_character = KOH_Janky_Kocsard
@@ -77,5 +78,6 @@ Staterun_economy
 Part_of_Habsburgs
 }
 set_popularities = {
-	Dictatorship = 100
+	Dictatorship = 50
+	Liberalism = 50
 }

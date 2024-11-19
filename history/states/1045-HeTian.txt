@@ -1,8 +1,11 @@
 state={
 	id=1045
 	name="STATE_1045"
+	resources={
+		grain=7.000
+	}
 	provinces={
-		4973 8042 8112 
+		4973 8042 8112 10885 10911 7273 5042
 	}
 	history={
 		owner = XJC
@@ -12,11 +15,12 @@ state={
 			4973 1 
 		}
 		buildings = {
+			infrastructure = 1
 
 		}
 
 	}
-	manpower=460500
+	manpower=760500
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=6.000

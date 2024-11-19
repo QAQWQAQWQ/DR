@@ -4,7 +4,7 @@
 
 add_namespace = HAQ
 
-######news_event = {
+news_event = {
 	id = HAQ.1
 	title = HAQ.1.t
 	desc = HAQ.1.d
@@ -28,7 +28,7 @@ add_namespace = HAQ
 	option = {
 		name = HAQ.1.b
 		hidden_effect = {
-		country_event = { id = HAQ.2 days=1}
+		country_event = { id = HAQ.2222222 days=1}
 	}
 		trigger = {
 				TAG = HAQ
@@ -37,14 +37,15 @@ add_namespace = HAQ
 	option = {
 		name = HAQ.1.b
 		hidden_effect = {
-			country_event = { id = HAQ.2 days=1}
+			country_event = { id = HAQ.22222222 days=1}
 		}
 		trigger = {
 				TAG = ZHX
 		}	
 	}
-######}
-######country_event = {
+	
+}
+country_event = {
 	id = HAQ.2
 	title = HAQ.2.t
 	desc = HAQ.2.d
@@ -61,8 +62,8 @@ add_namespace = HAQ
 		country_event = { id = HAQ.3 days=1}
 	}
 		}
-	######}
-######country_event = {
+	}
+country_event = {
 	id = HAQ.3
 	title = HAQ.3.t
 	desc = HAQ.3.d
@@ -83,8 +84,8 @@ add_namespace = HAQ
 			country_event = { id = HAQ.4 days=1}
 		}
 		}
-		######}
-######country_event = {
+		}
+country_event = {
 	id = HAQ.4
 	title = HAQ.4.t
 	desc = HAQ.4.d
@@ -102,8 +103,8 @@ add_namespace = HAQ
 		country_event = { id = HAQ.5 days=1}
 	   }
 	}	
-######}
-######country_event = {
+}
+country_event = {
 	id = HAQ.5
 	title = HAQ.5.t
 	desc = HAQ.5.d
@@ -121,8 +122,8 @@ add_namespace = HAQ
 		country_event = { id = HAQ.6 days=1}
 	  }
 	}	
-######}
-######country_event = {
+}
+country_event = {
 	id = HAQ.6
 	title = HAQ.6.t
 	desc = HAQ.6.d
@@ -139,8 +140,8 @@ add_namespace = HAQ
 		country_event = { id = HAQ.7 days=1}
 	}
 			}	
-######}		
-######country_event = {
+}		
+country_event = {
 	id = HAQ.7
 	title = HAQ.7.t
 	desc = HAQ.7.d
@@ -157,8 +158,8 @@ add_namespace = HAQ
 		country_event = { id = HAQ.8 days=1}
 	}
 			}	
-######}
-######country_event = {
+}
+country_event = {
 	id = HAQ.8
 	title = HAQ.8.t
 	desc = HAQ.8.d
@@ -172,4 +173,4 @@ add_namespace = HAQ
     option = {
 		name = HAQ.8.a
 			}	
-######}
+}

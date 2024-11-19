@@ -1,0 +1,21 @@
+on_actions = {
+	on_startup= {
+		effect = {
+			set_variable = {
+                global.4italian_war = 0
+            }
+            set_variable = {
+                global.aus_win_4italian_war = 0
+            }
+            set_variable = {
+                global.ita_win_4italian_war = 0
+            }
+            set_variable = {
+                global.deadlock_4italian_war = 0
+            }
+            set_variable = {
+                global.aus_halfwin_4italian_war = 0
+            }
+		}
+	}
+}

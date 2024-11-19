@@ -29,6 +29,15 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
+				ROOT.grid_faction_leader = ITC
+			}
+		}
+		localization_key = "GFX_Italian_Union"
+	}
+	
+	text = {
+		trigger = {
+			check_variable = {
 				ROOT.grid_faction_leader = DUQ
 			}
 		}
@@ -122,6 +131,16 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Rpublic_China"
+	}
+	text = {
+		trigger = {
+			THIS = {
+				is_in_array = {
+					global.faction_menber_ITC = THIS
+				}
+			}
+		}
+		localization_key = "GFX_Italian_Union"
 	}
 	text = {
 		trigger = {

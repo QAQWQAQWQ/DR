@@ -2,7 +2,7 @@ state = {
 	id = 736
 	name = "STATE_736" #Name was Istria before the Pola (Istria) split and merge with Fiume
 	
-	state_category = city
+	state_category = large_city
 
 	history = {
 		victory_points = {
@@ -23,7 +23,7 @@ state = {
 	}
 
 	provinces = {
-		599 6626 11595 
+		6626
 	}
 	manpower = 1038159 # was 1063159 before Istria was merged with Fiume (~25k pop added to new Istria state (Fiume + Pola)
 	buildings_max_level_factor = 1.000

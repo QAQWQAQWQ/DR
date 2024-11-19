@@ -4,7 +4,7 @@ oob = "YED_1920"
 
 # Starting tech
 
-recruit_character = YED_Nikolai_Niklaevich
+recruit_character = YED_Nikolaos_I
 recruit_character = YED_Konstantinos_I
 recruit_character = YED_Alexander_I
 	set_technology = {
@@ -32,14 +32,14 @@ recruit_character = YED_Alexander_I
 	add_ideas = {secondary_school }
 	
 set_politics = {
-	ruling_party = Dictatorship
+	ruling_party = Paternalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 add_ideas = {YED_Roman_Orthodoxy}
 set_popularities = {
-	Dictatorship = 50
+	Paternalism = 50
 	Liberalism = 30
 	Conservatism = 20
 

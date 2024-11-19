@@ -474,20 +474,21 @@ bosnia_war_boom = {
     AOX = {
         end_puppet = SIW
     }
-    
     if = {
         limit = {
-            SIW = {has_war_with = ITC}
+            4italian_war_has_started = yes
         }
         SIW = {white_peace = ITC}
-        ITC = {white_peace = SIW}
         SIW = {white_peace = RDN}
         SIW = {white_peace = ITE}
-        SIW = {white_peace = FRW}
-        
-        
+        KOH = {white_peace = ITC}
+		KOH = {white_peace = ITE}
+		KOH = {white_peace = RDN}
+		DMT = {white_peace = ITC}
+		DMT = {white_peace = ITE}
+		DMT = {white_peace = RDN} 
     }
-    
+        
 }
 bos_war_end_qwq = {
     hidden_effect = {

@@ -136,6 +136,7 @@ ideologies = {
 			Union_Socialism={}
 			Bernstein_Reformism={}
 			New_Sanmin_Doctrine={}
+			national-socdem = {}
 		}
 		dynamic_faction_names = {
 		}
@@ -209,7 +210,6 @@ ideologies = {
 	Conservatism = {
 	
 		types = {
-			Semi-Constitutional_Monarchy={}
 			Classical_Conservatism={}
 			Authoritarian_Conservatism={}
 			Religious_Conservatism={}
@@ -264,6 +264,7 @@ ideologies = {
 			tribalism = {}
 			oligarchic-semi-democratic-liberalism = {}
 			Paternalist_Constitutional_Sanmin_Doctrine={}
+			semidem-cm-liberalism = {}
 		}
 		dynamic_faction_names = {
 		}
@@ -306,7 +307,6 @@ ideologies = {
 			Comprador_Dictatorship = {}
 			autocratic-colonial-government = {}
 			caudillo-dictatorship = {}
-			autocratic-democratic-colonial-government = {}
 			aristocratic-dictatorship = {}
 			oligarchic-dictatorship = {}
 			zhongshi-rs-dirigisme = {}
@@ -353,10 +353,11 @@ ideologies = {
 			Hybrid_Nationalism = {}
 			Edinogism = {}
 			Edinogist_Colonization = {}
-			DAnnunziaism={}
+			DAnnunzionism={}
 			National_Populism={}
 			National_Syndicalism={}
 			National_Militarism={}
+			National_Corporatism = {}
 		}
 		
 		dynamic_faction_names = {

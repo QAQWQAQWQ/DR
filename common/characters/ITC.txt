@@ -6,14 +6,44 @@ characters={
 				large="gfx/leaders/ITE/Portrait_Filippo_Turati.tga"
 			}
 		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
 		country_leader={
-			ideology=Democratic_Socialism
+			ideology=national-socdem
 
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
 		}
 	}	
+	
+		ITC_Gabriele_d_Annunzio={
+			name=ITC_Gabriele_d_Annunzio
+			portraits={
+				civilian={
+					large="gfx/leaders/FUM/Portrait_Gabriele_d_Annunzio.tga"
+				}
+			}
+			field_marshal = {
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			country_leader={
+				ideology=DAnnunzionism
+	
+				traits={  }
+				expire="1965.1.1.1"
+				id=-1
+			}
+		}	
 
 
 	
@@ -24,8 +54,15 @@ characters={
 				large="gfx/leaders/ITE/Portrait_Giacomo_Matteotti.tga"
 			}
 		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
 		country_leader={
-			ideology=Democratic_Socialism
+			ideology=national-socdem
 
 			traits={  }
 			expire="1965.1.1.1"
@@ -39,6 +76,13 @@ characters={
 				large="gfx/leaders/ITC/portrait_Antonio_Gramsci.tga"
 			}
 		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
 		country_leader={
 			ideology=Scientific_Socialism
             desc=ITC_Antonio_Gramsci_DESC
@@ -47,4 +91,67 @@ characters={
 			id=-1
 		}
 	}	
+	ITC_Garibaldi_II={
+		name=ITC_Garibaldi_II
+		portraits={
+			civilian={
+				large="gfx/leaders/ICD/Portrait_Garibaldi_II.tga"
+			}
+		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		country_leader={
+			ideology=national-liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ITC_Benito_Mussolini={
+		name=ITC_Benito_Mussolini
+		portraits={
+			civilian={
+				large="gfx/leaders/ITE/Portrait_Benito_Mussolini.tga"
+			}
+		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		country_leader={
+			ideology=National_Corporatism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ITC_Italo_Balbo={
+		name=ITC_Italo_Balbo
+		portraits={
+			civilian={
+				large="gfx/leaders/ITE/Portrait_Italo_Balbo.tga"
+			}
+		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		country_leader={
+			ideology=national-liberalism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}				
 	}

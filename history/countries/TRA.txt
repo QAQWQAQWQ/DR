@@ -12,7 +12,8 @@ set_technology = {
 	fuel_silos = 1
 }
 
-recruit_character = TRA_Istvan_Horthy
+recruit_character = TRA_Baro_Straussenburg
+recruit_character = TRA_Baro_Straussenburg2
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -47,7 +48,7 @@ recruit_character = TRA_Istvan_Horthy
 	}
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -61,5 +62,6 @@ Staterun_economy
 Part_of_Habsburgs
 }
 set_popularities = {
-	Dictatorship = 100
+	Dictatorship = 80
+	Paternalism = 20
 }

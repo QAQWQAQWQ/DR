@@ -32,13 +32,13 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_Vienna_Entent"
-		texturefile = "gfx/interface/Faction/Vienna_Entent.dds"
+		texturefile = "gfx/interface/Faction/Habsburg_monarchy.dds"
 		legacy_lazy_load = no
 	}
 	
 	spriteType = {
 		name = "GFX_North_German_Confederation"
-		texturefile = "gfx/interface/Faction/North_German_Confederation.dds"
+		texturefile = "gfx/interface/Faction/Habsburg_monarchy.dds"
 		legacy_lazy_load = no
 	}	
    	spriteType = {
@@ -54,6 +54,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Rpublic_China"
 		texturefile = "gfx/interface/Faction/Progressive_Party.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Italian_Union"
+		texturefile = "gfx/interface/Faction/Italian_Union.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {

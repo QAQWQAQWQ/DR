@@ -1,6 +1,6 @@
 ﻿
 division_template = {
-	name = "教廷卫队"
+	name = "旧式教廷卫队"
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -10,7 +10,7 @@ division_template = {
 	is_locked = yes
 }
 division_template = {
-	name = "教皇国步兵师"
+	name = "步兵师"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -28,48 +28,46 @@ division_template = {
         engineer = { x = 0 y = 0 }
         artillery = { x = 0 y = 1 }
 	}
+	
+}
+division_template = {
+	name = "骑兵旅" 	# Cavalry Division
+
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+	}
+
 }
 units = {
 	division= {	
-		name = "教皇国一师"
+		name = "骑兵一旅"
 		location = 6606
-		division_template = "教皇国步兵师"
+		division_template = "骑兵旅"
 		start_experience_factor = 0.7
 	}
 	division= {	
-		name = "教皇国二师"
+		name = "一师"
+		location = 6606
+		division_template = "步兵师"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "二师"
 		location = 925
-		division_template = "教皇国步兵师"
+		division_template = "步兵师"
 		start_experience_factor = 0.7
 	}
 	division= {	
-		name = "教皇国三师"
+		name = "旧式教廷卫队一师"
 		location = 11751
-		division_template = "教皇国步兵师"
-		start_experience_factor = 0.7
-	}
-	division= {	
-		name = "教皇国四师"
-		location = 13257
-		division_template = "教皇国步兵师"
-		start_experience_factor = 0.7
-	}
-	division= {	
-		name = "教皇国五师"
-		location = 11846
-		division_template = "教皇国步兵师"
-		start_experience_factor = 0.7
-	}
-	division= {	
-		name = "教皇国六师"
-		location = 11882
-		division_template = "教皇国步兵师"
-		start_experience_factor = 0.7
-	}
-	division= {	
-		name = "教皇国七师"
-		location = 9838
-		division_template = "教皇国步兵师"
+		division_template = "旧式教廷卫队"
 		start_experience_factor = 0.7
 	}
 }

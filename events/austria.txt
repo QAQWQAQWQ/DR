@@ -201,7 +201,7 @@ country_event = {
 	option = {
 		name = austria.10.a
 		complete_national_focus = AUS_german_0
-		set_cosmetic_tag = AOX_German
+		set_cosmetic_tag = AOX_DR
 		mark_focus_tree_layout_dirty = yes
 	}
 	option = {
@@ -695,12 +695,41 @@ country_event = {
 		}
 		DMT = { annex_country = { target = KLD transfer_troops = yes } 
 	    set_cosmetic_tag = DMT_new_name
+		
 		set_party_name = {
 			ideology = Dictatorship
 			long_name = DMT_Dictatorship_party1
 			name = DMT_Dictatorship_party1
 		}
+		set_party_name = {
+			ideology = Paternalism
+			long_name = DMT_Paternalism_party1
+			name = DMT_Paternalism_party1
+		}
 	}
+	
+	if = {
+		limit = {
+			BXM = {
+				has_cosmetic_tag = BXM_de
+			}
+		}
+		DMT = {
+			set_cosmetic_tag = DMT_de1
+			set_party_name = {
+				ideology = Dictatorship
+				long_name = DMT_Dictatorship_party_de1
+				name = DMT_Dictatorship_party_de1
+			}
+			set_party_name = {
+				ideology = Paternalism
+				long_name = DMT_Paternalism_party_de1
+				name = DMT_Paternalism_party_de1
+			}
+		}
+	}
+
+	
 		custom_effect_tooltip = more_cro_aus_hun_sup_30
 				add_to_variable = {
 					var = AOX.aus_hun_gov_sup^8

@@ -79,6 +79,17 @@ text = {
 }
 }
 text = {
+	localization_key = GFX_Italian_Union
+
+	trigger = {
+		   OR = {
+			   tag = ITC
+			   is_in_faction_with = ITC
+			   is_puppet_of = ITC
+		   }
+}
+}
+text = {
 	localization_key = GFX_Rpublic_China_Anhui
 
 	trigger = {

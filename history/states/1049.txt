@@ -2,19 +2,25 @@
 state = {
 	id = 1049
 	name = "STATE_1049"
-	manpower = 183423
+	manpower = 177200
 	
-	state_category = wasteland
+	state_category = city
 
 	history = {
-		owner = XJC
-		add_core_of = XJC
+		owner = TSI
+		victory_points = {
+			9990 1 
+		}
+		add_core_of = TSI
         buildings = {
 			infrastructure = 1 
+			9990 = {
+				naval_base = 2
+			}
 		}
 	}
 	provinces = {
-        10821  
+        9990 
 	}
 
 	local_supplies = 0.0 

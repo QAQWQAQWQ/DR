@@ -32,8 +32,89 @@ division_template = {
 	}
 	is_locked = yes
 }
+division_template = {
+	name = "撒丁王国骑兵旅" 	# Cavalry Division
+
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+	}
+
+}
 
 units = {
+	division= {	
+		name = "撒丁王国骑兵一旅"
+		location = 611
+		division_template = "撒丁王国骑兵旅"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "撒丁王国骑兵一旅"
+		location = 611
+		division_template = "撒丁王国骑兵旅"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "撒丁王国骑兵一旅"
+		location = 611
+		division_template = "撒丁王国骑兵旅"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "撒丁王国步兵一师"
+		location = 611
+		division_template = "撒丁王国步兵师"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "撒丁王国步兵二师"
+		location = 6788
+		division_template = "撒丁王国步兵师"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "撒丁王国步兵三师"
+		location = 776
+		division_template = "撒丁王国步兵师"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "撒丁王国民兵一旅"
+		location = 776
+		division_template = "撒丁王国民兵旅"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "撒丁王国步兵一师"
+		location = 611
+		division_template = "撒丁王国步兵师"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "撒丁王国步兵二师"
+		location = 6788
+		division_template = "撒丁王国步兵师"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "撒丁王国步兵三师"
+		location = 776
+		division_template = "撒丁王国步兵师"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		name = "撒丁王国民兵一旅"
+		location = 776
+		division_template = "撒丁王国民兵旅"
+		start_experience_factor = 0.7
+	}
 	division= {	
 		name = "撒丁王国步兵一师"
 		location = 611
