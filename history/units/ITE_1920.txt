@@ -53,22 +53,50 @@ units = {
 		name = "皮埃蒙特骑兵一旅"
 		location = 611
 		division_template = "皮埃蒙特骑兵旅"
-		start_experience_factor = 1
+		start_experience_factor = 0.8
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "皮埃蒙特骑兵一旅"
 		location = 611
 		division_template = "皮埃蒙特骑兵旅"
-		start_experience_factor = 1
+		start_experience_factor = 0.5
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "皮埃蒙特骑兵一旅"
 		location = 611
 		division_template = "皮埃蒙特骑兵旅"
-		start_experience_factor = 1
+		start_experience_factor = 0.5
 		start_equipment_factor = 1
+	}
+	division= {	
+		name = "皮埃蒙特步兵一师"
+		location = 611
+		division_template = "皮埃蒙特步兵师"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "皮埃蒙特步兵二师"
+		location = 6788
+		division_template = "皮埃蒙特步兵师"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "皮埃蒙特步兵三师"
+		location = 776
+		division_template = "皮埃蒙特步兵师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "皮埃蒙特民兵一旅"
+		location = 776
+		division_template = "皮埃蒙特民兵旅"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
 	}
 	division= {	
 		name = "皮埃蒙特步兵一师"
@@ -81,77 +109,49 @@ units = {
 		name = "皮埃蒙特步兵二师"
 		location = 6788
 		division_template = "皮埃蒙特步兵师"
-		start_experience_factor = 1
+		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "皮埃蒙特步兵三师"
 		location = 776
 		division_template = "皮埃蒙特步兵师"
-		start_experience_factor = 1
+		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "皮埃蒙特民兵一旅"
 		location = 776
 		division_template = "皮埃蒙特民兵旅"
-		start_experience_factor = 1
-		start_equipment_factor = 1
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
 	}
 	division= {	
 		name = "皮埃蒙特步兵一师"
 		location = 611
 		division_template = "皮埃蒙特步兵师"
-		start_experience_factor = 1
+		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "皮埃蒙特步兵二师"
 		location = 6788
 		division_template = "皮埃蒙特步兵师"
-		start_experience_factor = 1
+		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "皮埃蒙特步兵三师"
 		location = 776
 		division_template = "皮埃蒙特步兵师"
-		start_experience_factor = 1
+		start_experience_factor = 0.4
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "皮埃蒙特民兵一旅"
 		location = 776
 		division_template = "皮埃蒙特民兵旅"
-		start_experience_factor = 1
-		start_equipment_factor = 1
-	}
-	division= {	
-		name = "皮埃蒙特步兵一师"
-		location = 611
-		division_template = "皮埃蒙特步兵师"
-		start_experience_factor = 1
-		start_equipment_factor = 1
-	}
-	division= {	
-		name = "皮埃蒙特步兵二师"
-		location = 6788
-		division_template = "皮埃蒙特步兵师"
-		start_experience_factor = 1
-		start_equipment_factor = 1
-	}
-	division= {	
-		name = "皮埃蒙特步兵三师"
-		location = 776
-		division_template = "皮埃蒙特步兵师"
-		start_experience_factor = 1
-		start_equipment_factor = 1
-	}
-	division= {	
-		name = "皮埃蒙特民兵一旅"
-		location = 776
-		division_template = "皮埃蒙特民兵旅"
-		start_experience_factor = 1
-		start_equipment_factor = 1
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
 	}
 }
