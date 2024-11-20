@@ -1,6 +1,6 @@
 state={
-	id=1116
-	name="STATE_1116"
+	id=1120
+	name="STATE_1120"
 	resources={
 		steel=2
 	}
@@ -14,16 +14,16 @@ state={
 		owner = BNA
 		buildings = {
 			infrastructure = 3 #was: 7
-			arms_factory = 1
-			industrial_complex = 2
+			arms_factory = 2
+			industrial_complex = 1
 		}
 		add_core_of = BNA
 	}
 
 	provinces={
-		733 3712 3715 10481
+		4445 9675 7629
 	}
-	manpower=443083
+	manpower=352428
 	buildings_max_level_factor=1.000
 
 	local_supplies=0.0 
