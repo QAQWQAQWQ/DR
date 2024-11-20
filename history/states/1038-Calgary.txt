@@ -9,9 +9,7 @@ state={
 		owner = EYJ
 		add_core_of = EYJ
 		add_core_of = SNX
-		victory_points = {
-			1060 2
-	   	}
+		
 		buildings = {
 			infrastructure = 1
 		}
@@ -19,7 +17,7 @@ state={
 	}
 
 	provinces={
-		1060 1062 1186 4060 4063 4133 7063 7139 7206 9977 10049 12025 12079 13078 10785 11951
+		 1062 1186 4063 4133 7063 7139 7206 9977 10049 12025 12079 13078 10785 11951 4060
 	}
 
 	buildings_max_level_factor=1.000
