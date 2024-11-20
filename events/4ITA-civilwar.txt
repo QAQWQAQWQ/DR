@@ -30,11 +30,33 @@ country_event = {
 		
 	}
 }
+country_event = {
+	id = ITE.2
+	hidden = yes
+	title = ITE.2.t
+	desc = ITE.2.d
 
+	fire_only_once = yes
+	trigger = {
+		AOX = {has_war_with = ITE}
+		check_variable = {global.4italian_war = 1}
+		OR = {
+			AOX = {controls_province = 6862}
+			VCT = {controls_province = 6862}
+			AOX = {controls_province = 9794}
+			VCT = {controls_province = 9794}
+		}
+	}
 
-
-	
-		
+	option = {
+		name = ITE.2.a
+		ITC = {dismantle_faction = yes}
+		ITE = {
+			create_faction = Italian_Union
+			add_to_faction = RDN
+		}
+	}
+}
 			country_event = {
 				id = ITE.3
 				hidden = yes
@@ -163,7 +185,109 @@ country_event = {
 		
 	}
 }
+country_event = {
+	id = ITE.6
+	hidden = yes
+	title = ITE.6.t
+	desc = ITE.6.d
 
+	fire_only_once = yes
+	trigger = {
+		NOT = {
+			AOX = {has_war_with = ITE}
+		}
+		AOX = {controls_state = 156}
+		AOX = {controls_state = 849}
+			AOX = {controls_state = 1049}
+			AOX = {controls_state = 759}
+			check_variable = {global.4italian_war = 1}
+	}
+
+	option = {
+		name = ITE.6.a
+		news_event = ITANews.20
+		AOX = {white_peace = RDN}
+		WWS = {white_peace = RDN}
+			RDN = {transfer_state = 114
+			transfer_state = 115}
+			RDN = {leave_faction = yes}
+			NPL = {add_to_faction = RDN}
+			LMJ = {
+				transfer_state = 2
+				transfer_state = 919
+			}
+			AOX = {set_autonomy = { target = LMJ autonomy_state = autonomy_occupation_zone }}
+			LMJ = {
+				set_politics = {
+					ruling_party = Dictatorship
+					last_election = "1918.11.11"
+					election_frequency = 72
+					elections_allowed = no
+				}
+			
+				
+				set_popularities = {
+					Dictatorship = 100
+				}
+			}
+			TSI = {
+				transfer_state = 157
+				transfer_state = 117
+				transfer_state = 849
+				transfer_state = 156
+				transfer_state = 1049
+				transfer_state = 759
+			}
+			AOX = {set_autonomy = { target = TSI autonomy_state = autonomy_occupation_zone }}
+			TSI = {
+				set_politics = {
+					ruling_party = Dictatorship
+					last_election = "1918.11.11"
+					election_frequency = 72
+					elections_allowed = no
+				}
+				set_popularities = {
+					Dictatorship = 100
+				}
+				
+			}
+			VCT = {
+				set_cosmetic_tag = VCT2
+				set_party_name = {
+					ideology = Dictatorship
+					long_name = VCT_Dictatorship_party1
+					name = VCT_Dictatorship_party1
+				}
+				set_party_name = {
+					ideology = Paternalism
+					long_name = VCT_Paternalism_party1
+					name = VCT_Paternalism_party1
+				}
+				transfer_state = 162
+				transfer_state = 938
+				transfer_state = 928
+			}
+
+			if = {
+				limit = {
+					BXM = {
+						has_cosmetic_tag = BXM_de
+					}
+				}
+				VCT = {
+					set_cosmetic_tag = VCT_de1
+					set_party_name = {
+						ideology = Dictatorship
+						long_name = VCT_Dictatorship_party_de1_long
+						name = VCT_Dictatorship_party_de1
+					}
+				}
+			}
+		set_variable = {global.aus_halfwin_4italian_war = 1}
+		set_variable = {global.4italian_war = 2}
+		
+	}
+}
 country_event = {
 	id = ITE.7
 	hidden = yes
@@ -445,6 +569,9 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
+		NOT = {
+			check_variable = {global.ita_tookvin_4italian_war = 1}
+		}
 		OR = {#在or里
 		AOX = {#第一个条件，若在阵营中必须和普开战
 			is_in_faction = yes
@@ -460,10 +587,11 @@ country_event = {
 				AOX = {controls_province = 9752}
 				VCT = {controls_province = 9752}
 		}
-		
 	}
 	aus_has_win_german_war = yes
 	#第三个条件，若奥赢德意志战争直接deadlock
+	check_variable = {global.geraus_alliance_4italian_war = 1}
+	#第三个条件，德奥结盟
 }
 		check_variable = {global.4italian_war = 1}
 		#必须正在打意大利战争
@@ -479,6 +607,7 @@ immediate = {
 				ITE = {controls_province = 3780}
 				ITC = {controls_province = 3780}
 				RDN = {controls_province = 3780}
+				FRW = {controls_province = 3780}
 			}}
 			HUS = {transfer_state = 159}
 			159 = {add_core_of = HUS}
@@ -489,6 +618,7 @@ immediate = {
 				ITE = {controls_province = 603}
 				ITC = {controls_province = 603}
 				RDN = {controls_province = 603}
+				FRW = {controls_province = 603}
 			}}
 			HUS = {transfer_state = 287}
 			287 = {add_core_of = HUS}
@@ -500,6 +630,7 @@ immediate = {
 				ITE = {controls_province = 9752}
 				ITC = {controls_province = 9752}
 				RDN = {controls_province = 9752}
+				FRW = {controls_province = 9752}
 			}}
 			HUS = {transfer_state = 161}
 			161 = {add_core_of = HUS}
@@ -510,9 +641,65 @@ immediate = {
 				ITE = {controls_province = 9598}
 				ITC = {controls_province = 9598}
 				RDN = {controls_province = 9598}
+				FRW = {controls_province = 9598}
 			}}
 			HUS = {transfer_state = 850}
 			850 = {add_core_of = HUS}
+		}
+		if = {
+			limit = {
+				OR = {
+				VCT = {controls_state = 1039}
+				AOX = {controls_state = 1039}
+			}}
+			VCT = {transfer_state = 1039}
+		}
+		if = {
+			limit = {
+				OR = {
+				VCT = {controls_state = 938}
+				AOX = {controls_state = 938}
+			}}
+			VCT = {transfer_state = 938}
+		}
+		if = {
+			limit = {
+				OR = {
+				VCT = {controls_state = 162}
+				AOX = {controls_state = 162}
+			}}
+			VCT = {transfer_state = 162}
+		}
+		if = {
+			limit = {
+				OR = {
+				VCT = {controls_state = 928}
+				AOX = {controls_state = 928}
+			}}
+			VCT = {transfer_state = 928}
+		}
+		if = {
+			limit = {
+				OR = {
+				VCT = {controls_state = 2}
+				AOX = {controls_state = 2}
+			}}
+			LMJ = {transfer_state = 2}
+			LMJ = {transfer_state = 919}
+			AOX = {set_autonomy = { target = LMJ autonomy_state = autonomy_occupation_zone }}
+			LMJ = {
+				set_politics = {
+					ruling_party = Dictatorship
+					last_election = "1918.11.11"
+					election_frequency = 72
+					elections_allowed = no
+				}
+			
+				
+				set_popularities = {
+					Dictatorship = 100
+				}
+			}
 		}
 		AOX = {white_peace = ITC}
 		AOX = {white_peace = ITE}
@@ -555,6 +742,8 @@ immediate = {
 			name = ITE.13.a
 			news_event = {id = ITANews.12 days = 57}
 			country_event = {id = ITE.14 days = 60}
+			set_variable = {global.ita_tookvin_4italian_war = 1}
+			
 			}
 			
 		}
@@ -577,6 +766,7 @@ immediate = {
 				ITE = {controls_province = 3780}
 				ITC = {controls_province = 3780}
 				RDN = {controls_province = 3780}
+				FRW = {controls_province = 3780}
 			}}
 			HUS = {transfer_state = 159}
 			159 = {add_core_of = HUS}
@@ -587,6 +777,7 @@ immediate = {
 				ITE = {controls_province = 603}
 				ITC = {controls_province = 603}
 				RDN = {controls_province = 603}
+				FRW = {controls_province = 603}
 			}}
 			HUS = {transfer_state = 287}
 			287 = {add_core_of = HUS}
@@ -598,6 +789,7 @@ immediate = {
 				ITE = {controls_province = 9752}
 				ITC = {controls_province = 9752}
 				RDN = {controls_province = 9752}
+				FRW = {controls_province = 9752}
 			}}
 			HUS = {transfer_state = 161}
 			161 = {add_core_of = HUS}
@@ -608,6 +800,7 @@ immediate = {
 				ITE = {controls_province = 11584}
 				ITC = {controls_province = 11584}
 				RDN = {controls_province = 11584}
+				FRW = {controls_province = 11584}
 			}}
 			HUS = {transfer_state = 160}
 			160 = {add_core_of = HUS}
@@ -618,6 +811,7 @@ immediate = {
 				ITE = {controls_province = 9598}
 				ITC = {controls_province = 9598}
 				RDN = {controls_province = 9598}
+				FRW = {controls_province = 9598}
 			}}
 			HUS = {transfer_state = 850}
 			850 = {add_core_of = HUS}
@@ -629,6 +823,7 @@ immediate = {
 				ITE = {controls_state = 852}
 				ITC = {controls_state = 852}
 				RDN = {controls_state = 852}
+				FRW = {controls_state = 852}
 			}}
 			HUS = {transfer_state = 852}
 			852 = {add_core_of = HUS}
@@ -639,6 +834,7 @@ immediate = {
 				ITE = {controls_state = 736}
 				ITC = {controls_state = 736}
 				RDN = {controls_state = 736}
+				FRW = {controls_state = 736}
 			}}
 			HUS = {transfer_state = 736}
 			736 = {add_core_of = HUS}
@@ -650,6 +846,7 @@ immediate = {
 				ITE = {controls_state = 163}
 				ITC = {controls_state = 163}
 				RDN = {controls_state = 163}
+				FRW = {controls_state = 163}
 			}}
 			HUS = {transfer_state = 163}
 			163 = {add_core_of = HUS}
@@ -684,6 +881,9 @@ immediate = {
 		AOX = {white_peace = ITC}
 		AOX = {white_peace = ITE}
 		AOX = {white_peace = RDN}
+		WWS = {white_peace = ITC}
+		WWS = {white_peace = ITE}
+		WWS = {white_peace = RDN}
 		ITE = {leave_faction = yes}
 		RDN = {leave_faction = yes}
 		ITC = {dismantle_faction = yes}
@@ -790,6 +990,9 @@ immediate = {
 		option = {
 			name = ITE.16.a
 			AOX = {white_peace = RDN}
+			AOX = {white_peace = FRW}
+		    WWS = {white_peace = RDN}
+			WWS = {white_peace = FRW}
 			RDN = {transfer_state = 114
 			transfer_state = 115}
 			RDN = {leave_faction = yes}
@@ -874,7 +1077,28 @@ immediate = {
 			
 		}
 	}
-	#ITE17
+	country_event = {
+		id = ITE.17
+		title = ITE.17.t
+		desc = ITE.17.d
+	
+		fire_only_once = yes
+		trigger = {
+			check_variable = {global.4italian_war = 1}
+		OR = {
+			AOX = {controls_province = 6788}
+			VCT = {controls_province = 6788}
+		}
+		}
+			
+	
+		option = {
+			name = ITE.17.a
+			
+			AOX = {country_event = aus4italian.1}
+			
+		}
+	}
 	country_event = {
 		id = ITE.18
 		hidden = yes
@@ -888,6 +1112,7 @@ immediate = {
 				ITE = {controls_state = 852}
 				ITC = {controls_state = 852}
 				RDN = {controls_state = 852}
+				FRW = {controls_state = 852}
 			}
 		}
 			immediate = {

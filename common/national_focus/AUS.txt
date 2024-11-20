@@ -757,6 +757,7 @@ focus_tree = {
 		completion_reward = {
       		WWS = { create_faction = Vienna_Entent }
 			WWS = { add_to_faction = AOX }
+			set_variable = {global.geraus_alliance_4italian_war = 1}
 			WWS = { country_event = austria.5 }
 			AOX = { country_event = austria.6 }
 			every_country = { 
