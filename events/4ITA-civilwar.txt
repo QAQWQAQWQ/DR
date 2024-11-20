@@ -100,68 +100,19 @@ country_event = {
 					ITE = {
 						complete_national_focus = ITE_Focus1
 					}
-					
-				ICD = {load_oob = "ICD_1920"
-			transfer_state = 1049}
+					ICD = {transfer_state = 759
+					load_oob = "ICD_1920"}
 			RDN = {
 				declare_war_on = {
 					target = TSI
 					type = annex_everything
 				}
 		}
-		156 = {
-		create_unit = {
-			division = "name = 加里波第军团步兵一师 division_template = 加里波第军团步兵师 start_experience_factor = 1 start_equipment_factor = 1" 
-			allow_spawning_on_enemy_provs = yes
-		  owner = ITC
-		  prioritize_location = 9990
-		  }
-		  create_unit = {
-			division = "name = 加里波第军团步兵一师 division_template = 加里波第军团步兵师 start_experience_factor = 1 start_equipment_factor = 1" 
-			allow_spawning_on_enemy_provs = yes
-		  owner = ITC
-		  prioritize_location = 9990
-		  }
-		  create_unit = {
-			division = "name = 加里波第军团步兵一师 division_template = 加里波第军团步兵师 start_experience_factor = 1 start_equipment_factor = 1"
-			allow_spawning_on_enemy_provs = yes 
-		  owner = ITC
-		  prioritize_location = 9990
-		  }
-		  create_unit = {
-			division = "name = 加里波第军团步兵一师 division_template = 加里波第军团步兵师 start_experience_factor = 1 start_equipment_factor = 1" 
-			allow_spawning_on_enemy_provs = yes
-		  owner = ITC
-		  prioritize_location = 9990
-		  }
-		  create_unit = {
-			division = "name = 加里波第军团骑兵一旅 division_template = 加里波第军团骑兵旅 start_experience_factor = 1 start_equipment_factor = 1" 
-			allow_spawning_on_enemy_provs = yes
-		  owner = ITC
-		  prioritize_location = 9990
-		  }
-		  create_unit = {
-			division = "name = 加里波第军团骑兵一旅 division_template = 加里波第军团骑兵旅 start_experience_factor = 1 start_equipment_factor = 1" 
-			allow_spawning_on_enemy_provs = yes
-		  owner = ITC
-		  prioritize_location = 9990
-		  }
-		}
-		
-				156 = {
-					add_core_of = ICD
+		ICD = {
+			declare_war_on = {
+				target = TSI
+				type = annex_everything
 			}
-			849 = {
-				add_core_of = ICD
-		}
-		117 = {
-			add_core_of = ICD
-	}
-	157 = {
-		add_core_of = ICD
-	}
-	1049 = {
-		add_core_of = ICD
 	}
 				}
 			}
@@ -463,6 +414,7 @@ country_event = {
 			transfer_state = 849
 			transfer_state = 156
 			transfer_state = 1049
+			transfer_state = 759
 			156 = {
 				add_core_of = ICD
 		}
@@ -476,6 +428,9 @@ country_event = {
 	add_core_of = ICD
 }
 1049 = {
+	add_core_of = ICD
+}
+759 = {
 	add_core_of = ICD
 }
 		}
@@ -699,24 +654,33 @@ immediate = {
 			HUS = {transfer_state = 163}
 			163 = {add_core_of = HUS}
 		}
-		HUS = {set_autonomy = {
-			target = FUM
-			autonomy_state = autonomy_dominion
-		}}
-		FUM = {
-			set_politics = {
-				ruling_party = Nationalism
-				last_election = "1918.11.11"
-				election_frequency = 72
-				elections_allowed = no
+		if = {
+			limit = {
+				917 = {is_core_of = FUM}
 			}
+			FUM = {transfer_state = 917}
+			FUM = {leave_faction = yes}
+			HUS = {set_autonomy = {
+				target = FUM
+				autonomy_state = autonomy_dominion
+			}}
+			FUM = {
+				set_politics = {
+					ruling_party = Nationalism
+					last_election = "1918.11.11"
+					election_frequency = 72
+					elections_allowed = no
+				}
+				
+				set_popularities = {
+					Nationalism = 77
+					Revolutionism = 20
+					Radical_Socialism = 3
+				}
 			
-			set_popularities = {
-				Nationalism = 80
-				Revolutionism = 20
 			}
-		
 		}
+		
 		AOX = {white_peace = ITC}
 		AOX = {white_peace = ITE}
 		AOX = {white_peace = RDN}
@@ -776,6 +740,7 @@ immediate = {
 						transfer_state = 849
 						transfer_state = 156
 						transfer_state = 1049
+						transfer_state = 759
 						156 = {
 							add_core_of = ITC
 					}
@@ -789,6 +754,9 @@ immediate = {
 				add_core_of = ITC
 			}
 			1049 = {
+				add_core_of = ITC
+			}
+			759 = {
 				add_core_of = ITC
 			}
 		}
@@ -812,6 +780,7 @@ immediate = {
 			AOX = {controls_state = 941}
 			AOX = {controls_state = 735}
 			AOX = {controls_state = 1049}
+			AOX = {controls_state = 759}
 			check_variable = {global.4italian_war = 1}
 		}
 			immediate = {
@@ -849,6 +818,7 @@ immediate = {
 				transfer_state = 849
 				transfer_state = 156
 				transfer_state = 1049
+				transfer_state = 759
 			}
 			AOX = {set_autonomy = { target = TSI autonomy_state = autonomy_occupation_zone }}
 			TSI = {
@@ -951,8 +921,16 @@ immediate = {
 				limit = {
 					check_variable = {global.4italian_war = 1}
 				}
-				FUM = {transfer_state = 917}
+				FUM = {transfer_state = 917
+			load_oob = "FUM_1920"}
 			917 = {add_core_of = FUM}
+			ITC = {add_to_faction = FUM}
+			FUM = {
+				declare_war_on = {
+					target = AOX
+					type = annex_everything
+				}
+		}
 				}
 			}
 			
