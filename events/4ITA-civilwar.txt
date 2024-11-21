@@ -445,7 +445,7 @@ RDN = {
 	add_core_of = RDN
 }
 set_variable = {global.4italian_war = 1}
-		
+AOX = {create_faction = austrian_empire}
 	}
 }
 
@@ -574,7 +574,8 @@ country_event = {
 		}
 		OR = {#在or里
 		AOX = {#第一个条件，若在阵营中必须和普开战
-			is_in_faction = yes
+			
+		is_in_faction_with = DOR
 			date > 1920.2.1
 			NOT = {
 				has_war_with = WWS
@@ -890,7 +891,6 @@ immediate = {
 		NPL = {add_to_faction = RDN}
 		set_variable = {global.ita_win_4italian_war = 1}
 		set_variable = {global.4italian_war = 2}
-		
 		}
 		
 	}
@@ -1159,4 +1159,27 @@ immediate = {
 				}
 			}
 			
+	}
+	country_event = {
+		id = ITE.20
+		hidden = yes
+		title = ITE.20.t
+		desc = ITE.20.d
+	
+		fire_only_once = yes
+		trigger = {
+			check_variable = {global.pre_win_german_war = 1 }
+		}
+			
+	
+		option = {
+			name = ITE.20.a
+			AOX = {
+				set_autonomy = { target = VCT autonomy_state = autonomy_Crown_Territory }
+set_autonomy = { target = KGL autonomy_state = autonomy_Crown_Territory }
+set_autonomy = { target = BXM autonomy_state = autonomy_Crown_Territory }
+set_autonomy = { target = DMT autonomy_state = autonomy_Crown_Territory }
+set_autonomy = { target = KOH autonomy_state = autonomy_Crown_Territory }
+			}
+		}
 	}

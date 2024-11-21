@@ -1,10 +1,22 @@
-﻿division_template = {
+division_template = {
 	name = "守备旅"				
 	regiments = {
 		infantry = { x = 0 y = 0 }	
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "民兵旅"				
+	regiments = {
+		militia = { x = 0 y = 0 }	
+		militia = { x = 0 y = 1 }
+		militia= { x = 1 y = 0 }
+		militia= { x = 1 y = 1 }
+		militia= { x = 2 y = 0 }
+		militia= { x = 2 y = 1 }
 	}
 	priority = 0
 }
@@ -37,53 +49,40 @@ division_template = {
 	}
 units = {
 	
-	division = {
-		name = "步兵旅"
-		location = 6940
-		division_template = "步兵旅"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
-	}
-division = {
-		name = "步兵旅"
-		location = 6940
-		division_template = "步兵旅"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
-	}
+	
 	division= {	
 		name = "步兵旅"
-		location = 6940
+		location = 9914
 		division_template = "步兵旅"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "步兵旅"
-		location = 6940
+		location = 9914
 		division_template = "步兵旅"
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.8
-	}
-	division = {
-		name = "步兵旅"
-		location = 6940
-		division_template = "步兵旅"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
-	}
-	division = {
-		name = "骑兵旅"
-		location = 6940
-		division_template = "骑兵旅"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.7
 	}
 	division= {	
 		name = "骑兵旅"
-		location = 6940
+		location = 9914
 		division_template = "骑兵旅"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "步兵旅"
+		location = 9914
+		division_template = "步兵旅"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "步兵旅"
+		location = 9914
+		division_template = "步兵旅"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
 	}
 }
