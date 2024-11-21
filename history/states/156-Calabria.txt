@@ -2,9 +2,9 @@
 state = {
 	id = 156
 	name = "STATE_156"
-	manpower = 1772000 # was 2966315 before Puglia was added
+	manpower = 5772000 # was 2966315 before Puglia was added
 	
-	state_category = town
+	state_category = rural
 	resources={
 		grain=5
 	}
@@ -16,14 +16,15 @@ state = {
 			dockyard = 1
 			arms_factory = 1
 			
+			
 		}
 
 		add_core_of = TSI
 	}
 
 	provinces = {
-		3901 10027 12066 12098 
+		3901 10027 12066 12098
 	}
 
-	local_supplies = 0.0 
+	local_supplies = 6.0 
 }

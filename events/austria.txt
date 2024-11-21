@@ -1,6 +1,7 @@
 add_namespace = austria
 add_namespace = aushun
 add_namespace = AGN
+add_namespace = aus4italian
 country_event = {
 	id = austria.1
 	title = austria.1.t
@@ -754,6 +755,84 @@ country_event = {
 		add_command_power = 30
 	}
 	}
+}
+country_event = {
+	id = aushun.6
+	title = aushun.6.t
+	desc = aushun.6.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = aushun.6.a
+	ROOT={
+		army_experience = 20
+		air_experience = 20
+		navy_experience = 20
+		add_command_power = 30
+	}
+	}
+}
+country_event = {
+	id = aus4italian.1
+	title = aus4italian.1.t
+	desc = aus4italian.1.d
+	fire_only_once = yes
+			is_triggered_only = yes
+
+	option = {
+		name = aus4italian.1.a
+		news_event = ITANews.18
+		ITE = {leave_faction = yes}
+		AOX = {white_peace = ITE}
+		WWS = {white_peace = ITE}
+		ai_chance = {
+            base = 80
+        }
+	}
+	option = {
+		name = aus4italian.1.b
+		news_event = ITANews.19
+		FRW = {
+			dismantle_faction = yes
+		}
+		if = {
+			limit = {
+				ITC = {is_faction_leader = yes}
+			}
+		
+		ITC = {
+			add_to_faction = FRW
+		}
+	}
+	else_if = {
+		limit = {
+			ITE = {is_faction_leader = yes}
+		}
+	
+	ITE = {
+		add_to_faction = FRW
+	}
+	}
+	else_if = {
+		limit = {
+			RDN = {is_faction_leader = yes}
+		}
+	
+	RDN = {
+		add_to_faction = FRW
+	}
+	}
+		FRW = {
+			declare_war_on = {
+				target = VCT
+				type = annex_everything
+			}
+		}
+		ai_chance = {
+            base = 20 
+        }
+}
 }
 country_event = {
 	id = aushun.9

@@ -225,3 +225,42 @@ news_event = {
 			
 				}
 		}
+		news_event = {
+			id = ITANews.18
+			title = ITANews.18.t
+			desc = ITANews.18.d
+			
+			major = yes
+			is_triggered_only = yes
+			
+			option = {
+				name = ITANews.18.a
+				
+					}
+			}
+			news_event = {
+				id = ITANews.19
+				title = ITANews.19.t
+				desc = ITANews.19.d
+				
+				major = yes
+				is_triggered_only = yes
+				
+				option = {
+					name = ITANews.19.a
+					
+						}
+				}
+news_event = {
+	id = ITANews.20
+	title = ITANews.20.t
+	desc = ITANews.20.d
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ITANews.20.a
+		
+			}
+	}

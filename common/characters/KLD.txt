@@ -6,6 +6,13 @@ characters={
 				large="gfx/leaders/KLD/Portrait_Stjepan_Radic.tga"
 			}
 		}
+		field_marshal = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
 		country_leader={
 			ideology=Agrarian_Socialism
 			traits={  }
@@ -19,6 +26,13 @@ characters={
 			civilian={
 				large="gfx/leaders/KLD/Portrait_Ivan_Palecek.tga"
 			}
+		}
+		field_marshal = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
 		}
 		country_leader={
 			ideology=Authoritarian_Conservatism
@@ -55,6 +69,13 @@ characters={
 				large="gfx/leaders/KLD/Portrait_Safvet_beg_Basagic.tga"
 			}
 		}
+		field_marshal = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
 		country_leader={
 			ideology=Religious_Conservatism
 			traits={  }
@@ -68,6 +89,13 @@ characters={
 			civilian={
 				large="gfx/leaders/KLD/Portrait_Lazar_Dimitrievich.tga"
 			}
+		}
+		field_marshal = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
 		}
 		country_leader={
 			ideology=National_Conservatism

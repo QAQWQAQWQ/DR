@@ -39,23 +39,24 @@ text = {
 			tag = AOX
 			is_in_faction_with =  WWS
 			has_country_flag = ger_con_7
+			check_variable = {geraus_alliance_4italian_war = 1}
 		}
 }
 }
 
 
 
-text = {
-	localization_key = GFX_North_German_Confederation
-
-	trigger = {
-		   OR = {
-			   tag = WWS
-			   is_in_faction_with = WWS
-			   is_puppet_of = WWS
-		   }
-}
-}
+#text = {
+#	localization_key = GFX_North_German_Confederation
+#
+#	trigger = {
+#		   OR = {
+#			   tag = WWS
+#			   is_in_faction_with = WWS
+#			   is_puppet_of = WWS
+#		   }
+#}
+#}
 text = {
 	localization_key = GFX_United_Provinces_Northern_Italy
 
@@ -86,6 +87,23 @@ text = {
 			   tag = ITC
 			   is_in_faction_with = ITC
 			   is_puppet_of = ITC
+		   }
+}
+}
+text = {
+	localization_key = GFX_austrian_empire
+
+	trigger = {
+		check_variable = {global.4italian_war = 1}
+		NOT = {
+			check_variable = {global.german_war = 1}
+			check_variable = {global.geraus_alliance_4italian_war = 1}
+		}
+		   OR = {
+			
+			   tag = AOX
+			   is_in_faction_with = AOX
+			   is_puppet_of = AOX
 		   }
 }
 }

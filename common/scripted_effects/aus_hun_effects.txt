@@ -461,7 +461,11 @@ bosnia_war_boom = {
         AOX = {
             end_puppet = KOH
             end_puppet = DMT
+            end_puppet = SIW
         }
+        KOH = {leave_faction = yes}
+        DMT = {leave_faction = yes}
+        SIW = {leave_faction = yes}
         # DMT = { annex_country = { target = KLD transfer_troops = yes } }
         KOH = { declare_war_on = { target = DMT type = annex_everything } }
     }
@@ -470,9 +474,6 @@ bosnia_war_boom = {
 	}
     AOX = {
         country_event = aushun.2
-    }
-    AOX = {
-        end_puppet = SIW
     }
     if = {
         limit = {
@@ -488,7 +489,19 @@ bosnia_war_boom = {
 		DMT = {white_peace = ITE}
 		DMT = {white_peace = RDN} 
     }
-        
+    AOX = {
+        give_military_access = KOH
+        give_military_access = DMT
+        give_military_access = SIW
+    }
+    VCT = {
+        give_military_access = KOH
+        give_military_access = DMT
+        give_military_access = SIW
+    }
+    DMT = {
+        give_military_access = SIW
+    }
 }
 bos_war_end_qwq = {
     hidden_effect = {

@@ -26,6 +26,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_austrian_empire"
+		texturefile = "gfx/interface/Faction/Habsburg_monarchy.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_Se_International"
 		texturefile = "gfx/interface/Faction/Se_International.dds"
 		legacy_lazy_load = no

@@ -2,25 +2,21 @@
 state = {
 	id = 1049
 	name = "STATE_1049"
-	manpower = 177200
+	manpower = 1772000
 	
-	state_category = city
+	state_category = rural
 
 	history = {
 		owner = TSI
-		victory_points = {
-			9990 1 
-		}
+		
 		add_core_of = TSI
         buildings = {
 			infrastructure = 1 
-			9990 = {
-				naval_base = 2
-			}
+			
 		}
 	}
 	provinces = {
-        9990 
+        3958 6972 9856 3968
 	}
 
 	local_supplies = 0.0 

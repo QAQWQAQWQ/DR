@@ -1,0 +1,30 @@
+state={
+	id=1116
+	name="STATE_1116"
+	resources={
+		steel=2
+	}
+
+	state_category = town
+
+	resources={
+		grain=1
+	}
+	history={
+		owner = BNA
+		buildings = {
+			infrastructure = 3 #was: 7
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		add_core_of = BNA
+	}
+
+	provinces={
+		733 3712 3715 10481
+	}
+	manpower=443083
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

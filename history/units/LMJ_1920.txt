@@ -50,24 +50,28 @@ units = {
 		name = "骑兵一旅"
 		location = 6606
 		division_template = "骑兵旅"
-		start_experience_factor = 0.7
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division= {	
 		name = "一师"
 		location = 6606
 		division_template = "步兵师"
-		start_experience_factor = 0.7
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
 	division= {	
 		name = "二师"
 		location = 925
 		division_template = "步兵师"
-		start_experience_factor = 0.7
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
 	division= {	
 		name = "旧式教廷卫队一师"
 		location = 11751
 		division_template = "旧式教廷卫队"
-		start_experience_factor = 0.7
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
 	}
 }

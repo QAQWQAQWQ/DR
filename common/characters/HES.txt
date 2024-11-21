@@ -12,6 +12,14 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+		corps_commander={
+			traits={ Lieutenant_general }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
 	}
 	HES_Gvozdenovic={
 		name=HES_Gvozdenovic
@@ -36,7 +44,7 @@ characters={
 				factor = 1.000
 			}
 		}
-		corps_commander={
+		field_marshal = {
 			traits={ Lieutenant_general }
 			skill=3
 			attack_skill=2

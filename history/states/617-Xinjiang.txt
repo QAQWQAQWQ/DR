@@ -3,7 +3,7 @@ state={
 	id=617
 	name="STATE_617"
 	resources={
-		grain=6.000
+		grain=9
 	}
 
 	history={
@@ -13,7 +13,7 @@ state={
 			10545 4
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			industrial_complex = 2
 
 		}
@@ -22,10 +22,10 @@ state={
 	}
 
 	provinces={
-		4770 7702 7792 10545 10614 12864 12656
+		4770 7702 7792 10545 10614 12864 12656 1943 2074 5736 10315
 	}
 	manpower=1030500
-	buildings_max_level_factor=1.000
+
 	state_category=rural
 	local_supplies=6.000
 }

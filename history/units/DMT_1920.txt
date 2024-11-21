@@ -27,26 +27,8 @@ division_template = {
 }
 
 units = {
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 11581
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 11581
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
+	
+	
 	division= {	
 		division_name = {
 			is_name_ordered = yes
@@ -80,19 +62,9 @@ units = {
 	division= {	
 		division_name = {
 			is_name_ordered = yes
-			name_order = 6
-		}
-		location = 6889
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 3943
+		location = 11581
 		division_template = "Kavallerie-Brigade"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
@@ -102,7 +74,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 3943
+		location = 11581
 		division_template = "Kavallerie-Brigade"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0

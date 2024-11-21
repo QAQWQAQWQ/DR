@@ -31,6 +31,7 @@ add_opinion_modifier = {
 }
 country_event = {id=AOX.1 days=210}
 
+recruit_character = AOX_Frederich_Ferdinand
 recruit_character = AOX_Johann_Schober
 recruit_character = AOX_Karl_Johann_Kautsky
 
@@ -143,3 +144,12 @@ set_popularities = {
 	Reformism = 5
 }
 give_guarantee = LMN
+give_military_access = KOH
+give_military_access = VCT
+give_military_access = DMT
+give_military_access = BXM
+give_military_access = KGL
+give_military_access = KLD
+give_military_access = HES
+give_military_access = SIW
+give_military_access = ALB

@@ -757,6 +757,7 @@ focus_tree = {
 		completion_reward = {
       		WWS = { create_faction = Vienna_Entent }
 			WWS = { add_to_faction = AOX }
+			set_variable = {global.geraus_alliance_4italian_war = 1}
 			WWS = { country_event = austria.5 }
 			AOX = { country_event = austria.6 }
 			every_country = { 
@@ -1610,6 +1611,8 @@ bosnia_war_end = yes
 				KGL = {
 					transfer_state = 73
 					add_state_core = 73
+					transfer_state = 72
+					add_state_core = 72
 				}
 			}
 			if = {
@@ -2082,6 +2085,7 @@ bosnia_war_end = yes
 				freedom_level = 0
 			}
 			KOH={
+				recruit_character = KOH_Joseph_Augusta2
 				set_cosmetic_tag = KOH_color
 				set_politics = {
 					ruling_party = Paternalism

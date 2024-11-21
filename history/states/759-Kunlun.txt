@@ -2,23 +2,29 @@ state={
 	id=759
 	name="STATE_759"
 	provinces={
-		1943 2074 5736 10315
+		9990
 	}
 	resources={
 		grain=3
 	}
 	manpower=700000
-	buildings_max_level_factor=1.000
-	state_category = wasteland
+
+	state_category = city
 	history={
-		owner = XJC
-		add_core_of = XJC
+		owner = TSI
+		victory_points = {
+			9990 1 
+		}
+		add_core_of = TSI
 		buildings = {
 			infrastructure = 1
+			9990 = {
+				naval_base = 2
+			}
 
 		}
 
 	}
 
-	local_supplies=0.0 
+	local_supplies=3
 }

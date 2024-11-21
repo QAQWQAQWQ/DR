@@ -1,6 +1,6 @@
 ﻿##### Division Templates #####
 division_template = {
-	name = "美利坚合众邦步兵师"  	# Standard formation for frontline divisions
+	name = "美军步兵师"  	# Standard formation for frontline divisions
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -20,7 +20,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "美利坚合众邦海军陆战队"  	# Standard formation for frontline divisions
+	name = "美军海军陆战队"  	# Standard formation for frontline divisions
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -41,7 +41,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "美利坚合众邦守备旅"  	# Standard formation for frontline divisions
+	name = "美军守备旅"  	# Standard formation for frontline divisions
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -55,7 +55,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "美利坚合众邦骑兵旅"  		# 1st Cavalry Division only
+	name = "美军骑兵旅"  		# 1st Cavalry Division only
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -80,153 +80,153 @@ units = {
 	####### CONUS Theater #######
 	### Carribean Forces ###			
 	division = {			
-		name = "美利坚合众邦第一步兵师"		
+		name = "美军第一步兵师"		
 		location = 1827
-		division_template = "美利坚合众邦步兵师"
+		division_template = "美军步兵师"
 		start_experience_factor = 0.6
 
 	}
 	division = {			
-		name = "美利坚合众邦第二步兵师"		
+		name = "美军第二步兵师"		
 		location = 12513
-		division_template = "美利坚合众邦步兵师"
+		division_template = "美军步兵师"
 		start_experience_factor = 0.6
 
 	}
 	division = {			
-		name = "美利坚合众邦第三步兵师"		
+		name = "美军第三步兵师"		
 		location = 4830
-		division_template = "美利坚合众邦步兵师"
+		division_template = "美军步兵师"
 		start_experience_factor = 0.6
 
 	}
 	division = {			
-		name = "美利坚合众邦第四步兵师"		
+		name = "美军第四步兵师"		
 		location = 9671
-		division_template = "美利坚合众邦步兵师"
+		division_template = "美军步兵师"
 		start_experience_factor = 0.6
 
 	}
 	division = {			
-		name = "美利坚合众邦第五步兵师"		
+		name = "美军第五步兵师"		
 		location = 7920
-		division_template = "美利坚合众邦步兵师"
+		division_template = "美军步兵师"
 		start_experience_factor = 0.6
 
 	}
 	division = {			
-		name = "美利坚合众邦第六步兵师"		
+		name = "美军第六步兵师"		
 		location = 1408
-		division_template = "美利坚合众邦步兵师"
+		division_template = "美军步兵师"
 		start_experience_factor = 0.6
 
 	}
 	division = {			
-		name = "美利坚合众邦第六步兵师"		
+		name = "美军第六步兵师"		
 		location = 10548
-		division_template = "美利坚合众邦步兵师"
+		division_template = "美军步兵师"
 		start_experience_factor = 0.6
 
 	}
 	division = {			
-		name = "美利坚合众邦第七步兵师"		
+		name = "美军第七步兵师"		
 		location = 9671
-		division_template = "美利坚合众邦步兵师"
+		division_template = "美军步兵师"
 		start_experience_factor = 0.6
 	}
 	division = {			
-		name = "美利坚合众邦第八步兵师"		
+		name = "美军第八步兵师"		
 		location = 5044
-		division_template = "美利坚合众邦步兵师"
+		division_template = "美军步兵师"
 		start_experience_factor = 0.6
 	}
 	division = {			
-		name = "美利坚合众邦第九步兵师"		
+		name = "美军第九步兵师"		
 		location = 868
-		division_template = "美利坚合众邦步兵师"
+		division_template = "美军步兵师"
 		start_experience_factor = 0.6
 
 	}
 	division = {			
-		name = "美利坚合众邦第十步兵师"		
+		name = "美军第十步兵师"		
 		location = 10569
-		division_template = "美利坚合众邦步兵师"
+		division_template = "美军步兵师"
 		start_experience_factor = 0.6
 
 	}
 	division = {			
-		name = "美利坚合众邦第十一步兵师"		
+		name = "美军第十一步兵师"		
 		location = 4860
-		division_template = "美利坚合众邦步兵师"
+		division_template = "美军步兵师"
 		start_experience_factor = 0.6
 
 	}
 	division = {			
-		name = "美利坚合众邦第十二步兵师"		
+		name = "美军第十二步兵师"		
 		location = 4865
-		division_template = "美利坚合众邦步兵师"
+		division_template = "美军步兵师"
 		start_experience_factor = 0.6
 
 	}
 	division = {			
-		name = "美利坚合众邦第十三步兵师"		
+		name = "美军第十三步兵师"		
 		location = 853
-		division_template = "美利坚合众邦步兵师"
+		division_template = "美军步兵师"
 		start_experience_factor = 0.6
 
 	}
 	
 	division = {			
-		name = "美利坚合众邦第一海军陆战队师"		
+		name = "美军第一海军陆战队师"		
 		location = 9671
-		division_template = "美利坚合众邦海军陆战队"
+		division_template = "美军海军陆战队"
 		start_experience_factor = 0.6
 
 	}
 	division = {			
-		name = "美利坚合众邦第二海军陆战队师"		
+		name = "美军第二海军陆战队师"		
 		location = 9814
-		division_template = "美利坚合众邦海军陆战队"
+		division_template = "美军海军陆战队"
 		start_experience_factor = 0.6
 
 	}
 	division = {			
-		name = "美利坚合众邦第三海军陆战队师"		
+		name = "美军第三海军陆战队师"		
 		location = 7315
-		division_template = "美利坚合众邦海军陆战队"
+		division_template = "美军海军陆战队"
 		start_experience_factor = 0.6
 
 	}
 	division = {			
-		name = "美利坚合众邦第一守备旅"		
+		name = "美军第一守备旅"		
 		location = 1408
-		division_template = "美利坚合众邦守备旅"
+		division_template = "美军守备旅"
 		start_experience_factor = 0.6
 
 	}
 	division = {			
-		name = "美利坚合众邦第二守备旅"		
+		name = "美军第二守备旅"		
 		location = 10548
-		division_template = "美利坚合众邦守备旅"
+		division_template = "美军守备旅"
 		start_experience_factor = 0.6
 
 	}
 	division = {			
-		name = "美利坚合众邦第三守备旅"		
+		name = "美军第三守备旅"		
 		location = 9671
-		division_template = "美利坚合众邦守备旅"
+		division_template = "美军守备旅"
 		start_experience_factor = 0.6
 	}
 	division = {			
-		name = "美利坚合众邦第四守备旅"		
+		name = "美军第四守备旅"		
 		location = 5044
-		division_template = "美利坚合众邦守备旅"
+		division_template = "美军守备旅"
 		start_experience_factor = 0.6
 	}
 	division = {			
-		name = "美利坚合众邦第五守备旅"		
+		name = "美军第五守备旅"		
 		location = 868
-		division_template = "美利坚合众邦守备旅"
+		division_template = "美军守备旅"
 		start_experience_factor = 0.6
 
 	}
@@ -237,22 +237,22 @@ units = {
 
 
 	division = {			
-		name = "美利坚合众邦第一骑兵旅"		
+		name = "美军第一骑兵旅"		
 		location = 12627
-		division_template = "美利坚合众邦骑兵旅"
+		division_template = "美军骑兵旅"
 		start_experience_factor = 0.6
 
 	}
 	division = {			
-		name = "美利坚合众邦第二骑兵旅"		
+		name = "美军第二骑兵旅"		
 		location = 5044
-		division_template = "美利坚合众邦骑兵旅"
+		division_template = "美军骑兵旅"
 		start_experience_factor = 0.6
 	}
 	division = {			
-		name = "美利坚合众邦第三骑兵旅"		
+		name = "美军第三骑兵旅"		
 		location = 10569
-		division_template = "美利坚合众邦骑兵旅"
+		division_template = "美军骑兵旅"
 		start_experience_factor = 0.6
 	}
 }
