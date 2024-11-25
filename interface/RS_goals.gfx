@@ -1,8 +1,37 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_goal_SIW_focus_0"
+		texturefile = "gfx\interface\goals\SIW/SIW_focus_0.dds"
+		}
+	spriteType = {
+		name = "GFX_goal_SIW_focus_1"
+		texturefile = "gfx\interface\goals\SIW\SIW_focus_1.dds"
+		}
+	spriteType = {
+		name = "GFX_goal_SIW_focus_3"
+		texturefile = "gfx\interface\goals\SIW/SIW_focus_3.dds"
+		}	
+	spriteType = {
+		name = "GFX_goal_SIW_focus_5"
+		texturefile = "gfx\interface\goals\SIW/SIW_focus_5.dds"
+		}
+	spriteType = {
+		name = "GFX_goal_SIW_focus_6"
+		texturefile = "gfx\interface\goals\SIW/SIW_focus_6.dds"
+		}	
+	spriteType = {
+		name = "GFX_goal_SIW_focus_8"
+		texturefile = "gfx\interface\goals\SIW/SIW_focus_8.dds"
+		}	
+	spriteType = {
+		name = "GFX_goal_SIW_focus_9"
+		texturefile = "gfx\interface\goals\SIW/SIW_focus_9.dds"
+		}
+
+	spriteType = {
 		name = "GFX_goal_ESI_Focus0"
 		texturefile = "gfx\interface\goals\ESI/ESI_Focus0.dds"
-		}
+		} 
 		spriteType = {
 		name = "GFX_goal_ESI_Focus1"
 		texturefile = "gfx\interface\goals\ESI/ESI_Focus1.dds"
