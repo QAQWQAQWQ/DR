@@ -366,64 +366,64 @@ aus_hun_aut_tri = {
     }
     }
 }
-bosnia_war_tri = {
+norvoj_war_tri = {
     custom_trigger_tooltip = { 
-        tooltip = bosnia_war_tri_tool
+        tooltip = norvoj_war_tri_tool
         check_variable  = {
-            global.bosnia_war_str = 1
+            global.norvoj_war_str = 1
         }
     }
 }
-not_bosnia_war_tri = {
+not_norvoj_war_tri = {
     custom_trigger_tooltip = { 
-        tooltip = not_bosnia_war_tri_tool
+        tooltip = not_norvoj_war_tri_tool
         check_variable  = {
-            global.bosnia_war_str = 0
+            global.norvoj_war_str = 0
         }
     }
 }
-bosnia_war_end = {
+norvoj_war_end = {
     custom_trigger_tooltip = { 
-        tooltip = bosnia_war_end_tri_tool
+        tooltip = norvoj_war_end_tri_tool
         check_variable  = {
-            global.bosnia_war_str = 1
+            global.norvoj_war_str = 1
         }
         OR = {
             check_variable  = {
-                global.bosnia_hun_win = 1
+                global.norvoj_hun_win = 1
             }
             check_variable  = {
-                global.bosnia_cro_win = 1
+                global.norvoj_cro_win = 1
             }
         }
     }
 }
-bosnia_war_not_end = {
+norvoj_war_not_end = {
     custom_trigger_tooltip = { 
-        tooltip = bosnia_war_not_end_tri_tool
+        tooltip = norvoj_war_not_end_tri_tool
         AND = {
             check_variable  = {
-                global.bosnia_hun_win = 0
+                global.norvoj_hun_win = 0
             }
             check_variable  = {
-                global.bosnia_cro_win = 0
+                global.norvoj_cro_win = 0
             }
         }
     }
 }
-cro_win_bos_war = {
+cro_win_norvoj_war = {
     custom_trigger_tooltip = { 
-        tooltip = cro_win_bos_war_tool
+        tooltip = cro_win_norvoj_war_tool
         check_variable  = {
-            global.bosnia_cro_win = 1
+            global.norvoj_cro_win = 1
         }
     }
 }
-hun_win_bos_war = {
+hun_win_norvoj_war = {
     custom_trigger_tooltip = { 
-        tooltip = hun_win_bos_war_tool
+        tooltip = hun_win_norvoj_war_tool
         check_variable  = {
-            global.bosnia_hun_win = 1
+            global.norvoj_hun_win = 1
         }
     }
 }

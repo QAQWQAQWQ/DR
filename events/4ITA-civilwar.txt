@@ -1088,6 +1088,8 @@ immediate = {
 		OR = {
 			AOX = {controls_province = 6788}
 			VCT = {controls_province = 6788}
+			AOX = {controls_province = 6780}
+			VCT = {controls_province = 6780}
 		}
 		}
 			
@@ -1180,6 +1182,8 @@ set_autonomy = { target = KGL autonomy_state = autonomy_Crown_Territory }
 set_autonomy = { target = BXM autonomy_state = autonomy_Crown_Territory }
 set_autonomy = { target = DMT autonomy_state = autonomy_Crown_Territory }
 set_autonomy = { target = KOH autonomy_state = autonomy_Crown_Territory }
+set_autonomy = { target = TRA autonomy_state = autonomy_Crown_Territory }
+set_autonomy = { target = SLO autonomy_state = autonomy_Crown_Territory }
 			}
 		}
 	}

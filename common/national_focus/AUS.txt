@@ -727,7 +727,7 @@ focus_tree = {
 			}
 		}
 		bypass = {
-			bosnia_war_end = yes
+			norvoj_war_end = yes
 			KOH = {
 				exists = yes
 			}
@@ -979,7 +979,7 @@ focus_tree = {
 			}
 				hidden_effect = {
 					set_variable = {
-						global.bosnia_contradictions = 1
+						global.norvoj_contradictions = 1
 					}
 				}
 		}
@@ -1004,10 +1004,10 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				set_variable = {
-					global.bosnia_contradictions = 1
+					global.norvoj_contradictions = 1
 				}
 			}
-			custom_effect_tooltip = bosnia_contradictions_tool
+			custom_effect_tooltip = norvoj_contradictions_tool
 			# DMT = { annex_country = { target = KLD transfer_troops = yes } }
 			custom_effect_tooltip = AUS_bir_1_tool
 			custom_effect_tooltip = more_cze_aus_hun_sup_30
@@ -1036,10 +1036,10 @@ focus_tree = {
 			aushun_clamp_vars = yes	
 		}
 		available = {
-			not_bosnia_war_tri = yes
+			not_norvoj_war_tri = yes
 		}
 		bypass = {
-bosnia_war_end = yes
+norvoj_war_end = yes
 		}
 	}
 	#focus = {
@@ -1093,7 +1093,7 @@ bosnia_war_end = yes
 			#	aushun_clamp_vars = yes	
 		}
 		available = {
-			not_bosnia_war_tri = yes
+			not_norvoj_war_tri = yes
 		}
 		bypass = {
 			# has_completed_focus = AUS_bir_1
@@ -1119,7 +1119,7 @@ bosnia_war_end = yes
 			}
 		}
 		available = {
-			bosnia_war_not_end = yes
+			norvoj_war_not_end = yes
 		}
 		bypass = {
 		}
@@ -1155,7 +1155,7 @@ bosnia_war_end = yes
 			}
 		}
 		available = {
-			bosnia_war_not_end = yes
+			norvoj_war_not_end = yes
 		}
 		bypass = {
 		}
@@ -1196,24 +1196,32 @@ bosnia_war_end = yes
 					create_unit = {
 						division = "name = \"1st Austrian Volunteer Army\" division_template = \"Austrian Volunteer Army\" start_experience_factor = 0.8 " 
 						owner = DMT
+						prioritize_location = 11581
+						allow_spawning_on_enemy_provs = yes
 					}
 					create_unit = {
 						division = "name = \"2nd Austrian Volunteer Army\" division_template = \"Austrian Volunteer Army\" start_experience_factor = 0.8 " 
 						owner = DMT
+						prioritize_location = 11581
+						allow_spawning_on_enemy_provs = yes
 					}
 					create_unit = {
 						division = "name = \"3rd Austrian Volunteer Army\" division_template = \"Austrian Volunteer Army\" start_experience_factor = 0.8 " 
 						owner = DMT
+						prioritize_location = 11581
+						allow_spawning_on_enemy_provs = yes
 					}
 					create_unit = {
 						division = "name = \"4th Austrian Volunteer Army\" division_template = \"Austrian Volunteer Army\" start_experience_factor = 0.8 " 
 						owner = DMT
+						prioritize_location = 11581
+						allow_spawning_on_enemy_provs = yes
 					}
 				}	
 			}
 		}
 		available = {
-			bosnia_war_not_end = yes
+			norvoj_war_not_end = yes
 		}
 		bypass = {
 		}
@@ -1260,7 +1268,7 @@ bosnia_war_end = yes
 	#	}
 	#	available = {
 	#		always = no
-	#		not_bosnia_war_tri = yes
+	#		not_norvoj_war_tri = yes
 	#	}
 	#	bypass = { 
 	#	}
@@ -1347,7 +1355,7 @@ bosnia_war_end = yes
 	#		custom_effect_tooltip = AUS_bir_8_tool
 	#	}
 	#	available = {
-	#		not_bosnia_war_tri = yes
+	#		not_norvoj_war_tri = yes
 	#	}
 	#	bypass = {
 	#	} 
@@ -1384,7 +1392,7 @@ bosnia_war_end = yes
 			}
 		}
 		available = {
-			bosnia_war_end = yes
+			norvoj_war_end = yes
 		}
 		bypass = {
 		}
@@ -1643,6 +1651,7 @@ bosnia_war_end = yes
 					add_state_core = 84
 					transfer_state = 1034
 					add_state_core = 1034
+					transfer_state = 1122
 				}
 				AOX = {
 					set_autonomy = { target = TRA autonomy_state = autonomy_Crown_Territory }
@@ -2138,6 +2147,7 @@ bosnia_war_end = yes
 					add_state_core = 84
 					transfer_state = 1034
 					add_state_core = 1034
+					transfer_state = 1122
 				}
 				DMT={
 					transfer_state = 918
@@ -2915,7 +2925,7 @@ bosnia_war_end = yes
 				# always = yes
 				AND = {
 					has_completed_focus = AUS_bir_15
-					bosnia_war_end_tri_tool = yes
+					norvoj_war_end_tri_tool = yes
 					OR = {
 						has_completed_focus = AUS_ger_1
 						has_completed_focus = AUS_ger_2

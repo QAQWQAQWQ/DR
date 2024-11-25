@@ -1,5 +1,5 @@
 aus_hun_decisions = {
-	bosnia_problem = {
+	norvoj_problem = {
 			icon = generic_civil_support
 			available = {
 				AOX = {
@@ -34,13 +34,13 @@ aus_hun_decisions = {
 				}
 				hidden_effect = {
 					set_variable = {
-						global.bosnia_contradictions = 1
+						global.norvoj_contradictions = 1
 					}
 				}
-				custom_effect_tooltip = bosnia_contradictions_tool
+				custom_effect_tooltip = norvoj_contradictions_tool
 			}
 	}
-	bosnia_war_1 = {
+	norvoj_war_1 = {
 			icon = generic_civil_support
 			available = {
 				#AOX = {
@@ -56,9 +56,9 @@ aus_hun_decisions = {
 					original_tag = DMT
 				}
 				check_variable = {
-					global.bosnia_contradictions = 1
+					global.norvoj_contradictions = 1
 				}
-				not_bosnia_war_tri = yes
+				not_norvoj_war_tri = yes
 			}
 			visible = {
 				OR = {
@@ -71,18 +71,18 @@ aus_hun_decisions = {
 			fire_only_once = yes
 			is_good = no
 			timeout_effect = {
-				custom_effect_tooltip = bos_war_boom_scr_tool
+				custom_effect_tooltip = norvoj_war_boom_scr_tool
 				hidden_effect = {
 					if = {
 						limit = {
 							tag = AOX
 						}
-						bosnia_war_boom = yes
+						norvoj_war_boom = yes
 					}
 				}
 			}
 	}
-	bosnia_war_2 = {
+	norvoj_war_2 = {
 			icon = generic_civil_support
 			available = {
 				always = no
@@ -97,7 +97,7 @@ aus_hun_decisions = {
 				AOX = {
 					has_completed_focus = AUS_bir_8
 				}
-				not_bosnia_war_tri = yes
+				not_norvoj_war_tri = yes
 			}
 			visible = {
 				OR = {
@@ -110,18 +110,18 @@ aus_hun_decisions = {
 			fire_only_once = yes
 			is_good = no
 			timeout_effect = {
-				bosnia_war_boom = yes
+				norvoj_war_boom = yes
 			}
 	}
 	pressure_from_austria = {
 		icon = generic_civil_support
 		available = {
-			bosnia_war_end = yes
+			norvoj_war_end = yes
 		}
 		days_mission_timeout = 120
 		activation = {
 			original_tag = KOH
-			bosnia_war_tri = yes
+			norvoj_war_tri = yes
 		}
 		visible = {
 			OR = {
@@ -139,14 +139,109 @@ aus_hun_decisions = {
 					limit = {
 						tag = KOH
 					}
-					set_variable = { global.bosnia_cro_win = 1 }
+					set_variable = { global.norvoj_cro_win = 1 }
+					if = {
+						limit = {
+							OR = {
+							KOH = {controls_state = 917}
+						}}
+						KOH = {transfer_state = 917}
+					}
+					if = {
+						limit = {
+							OR = {
+							KOH = {controls_state = 1015}
+						}}
+						KOH = {transfer_state = 1015}
+					}
+					if = {
+						limit = {
+							OR = {
+							KOH = {controls_state = 104}
+						}}
+						KOH = {transfer_state = 104}
+					}
+					if = {
+						limit = {
+							OR = {
+							KOH = {controls_state = 1017}
+						}}
+						KOH = {transfer_state = 1017}
+					}
+					if = {
+						limit = {
+							OR = {
+							KOH = {controls_state = 1016}
+						}}
+						KOH = {transfer_state = 1016}
+					}
+					if = {
+						limit = {
+							OR = {
+							KOH = {controls_state = 1014}
+						}}
+						KOH = {transfer_state = 1014}
+					}
+					if = {
+						limit = {
+							OR = {
+							KOH = {controls_state = 804}
+						}}
+						KOH = {transfer_state = 804}
+					}
+					if = {
+						limit = {
+							OR = {
+							KOH = {controls_state = 45}
+						}}
+						KOH = {transfer_state = 45}
+					}
+					if = {
+						limit = {
+							OR = {
+							KOH = {controls_state = 764}
+						}}
+						KOH = {transfer_state = 764}
+					}
+					if = {
+						limit = {
+							OR = {
+							KOH = {controls_state = 1018}
+						}}
+						KOH = {transfer_state = 1018}
+					}
+					if = {
+						limit = {
+							OR = {
+							KOH = {controls_state = 918}
+						}}
+						KOH = {transfer_state = 918}
+					}
+					if = {
+						limit = {
+							OR = {
+							KOH = {controls_state = 109}
+						}}
+						KOH = {transfer_state = 109}
+					}
+					if = {
+						limit = {
+							OR = {
+							KOH = {controls_state = 163}
+						}}
+						KOH = {transfer_state = 163}
+					}
+					if = {
+						limit = {
+							OR = {
+							KOH = {controls_state = 103}
+						}}
+						KOH = {transfer_state = 103}
+					}
 					DMT = { white_peace = KOH }
 					KOH = { white_peace = DMT }
-					DMT = { transfer_state = 104 }
-					DMT = { transfer_state = 804 }
-					DMT = { transfer_state = 918 }
-					DMT = { transfer_state = 1018 }
-					bos_war_end_qwq = yes
+					
+					norvoj_war_end_qwq = yes
 					AOX = {
 						country_event = aushun.3
 						set_autonomy = { target = DMT autonomy_state = autonomy_Crown_Territory }
@@ -1198,8 +1293,8 @@ hun_red_army = {
 				original_tag = HUN
 				original_tag = KOH
 			}
-			bosnia_war_end = yes
-			bosnia_war_tri = yes
+			norvoj_war_end = yes
+			norvoj_war_tri = yes
 			check_variable = {
 				global.hungarian_war = 0
 			}

@@ -4,17 +4,18 @@ state={
 
 	history={
 		victory_points = { 619 3 }
-		owner = AOX
 		buildings = {
 			infrastructure = 3
 
 		}
-		owner = KOH
-        add_core_of = KOH
+		owner = DMT
+		add_claim_by = KOH
+		add_core_of = KOH
+		add_core_of = DMT
 	}
 
 	provinces={
-		619 3617 3623 9608 9621
+		619 3617 3623 9621 6643
 	}
 	manpower=838621
 	buildings_max_level_factor=1.000

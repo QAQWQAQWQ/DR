@@ -376,6 +376,8 @@ on_actions = {
                 set_autonomy = { target = KLD autonomy_state = autonomy_Crown_Territory }
                 set_autonomy = { target = DMT autonomy_state = autonomy_Crown_Territory }
                 set_autonomy = { target = KOH autonomy_state = autonomy_Crown_Territory }
+                set_autonomy = { target = TRA autonomy_state = autonomy_Crown_Territory }
+                set_autonomy = { target = SLO autonomy_state = autonomy_Crown_Territory }
                 VCT = {
                     set_politics = {ruling_party = Dictatorship}
                     set_popularities = {
@@ -412,6 +414,20 @@ on_actions = {
                     }
                 }
                 KOH = {
+                    set_politics = {ruling_party = Dictatorship}
+                    set_popularities = {
+                        Dictatorship = 50
+                        Liberalism = 50
+                    }
+                }
+                TRA = {
+                    set_politics = {ruling_party = Dictatorship}
+                    set_popularities = {
+                        Dictatorship = 50
+                        Liberalism = 50
+                    }
+                }
+                SLO = {
                     set_politics = {ruling_party = Dictatorship}
                     set_popularities = {
                         Dictatorship = 50

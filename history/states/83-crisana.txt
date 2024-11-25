@@ -12,6 +12,7 @@ state={
 	history={
 		owner = KOH
         add_core_of = KOH
+		add_core_of = TRA
 		add_core_of = LMN
 		buildings = {
 			infrastructure = 3
@@ -24,7 +25,7 @@ state={
 	}
 
 	provinces={
-		696 6682 6697 9640 
+		696 6682 6697 9640 713 3696 3709
 	}
 
 	local_supplies=0.0 
