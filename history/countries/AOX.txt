@@ -32,6 +32,7 @@ add_opinion_modifier = {
 country_event = {id=AOX.1 days=210}
 
 recruit_character = AOX_Frederich_Ferdinand
+recruit_character = AOX_Frederich_Ferdinand2
 recruit_character = AOX_Johann_Schober
 recruit_character = AOX_Karl_Johann_Kautsky
 
@@ -47,7 +48,6 @@ recruit_character = AGN_Arthur_Seyss_Inquart
 recruit_character = AGN_Engelbert_Dollfuss
 
 recruit_character = AOX_Franz_Graf_Conrad
-recruit_character = AOX_Baro_Straussenburg
 recruit_character = AOX_Svetozar_Boroevic
 recruit_character = AOX_Oscar_Portiolec
 recruit_character = AOX_Michael_Mayr
@@ -101,6 +101,7 @@ add_to_faction = KGL
 add_to_faction = KLD
 add_to_faction = DMT
 add_to_faction = KOH
+add_to_faction = TRA
 
 set_autonomy = { target = VCT autonomy_state = autonomy_Crown_Territory }
 set_autonomy = { target = KGL autonomy_state = autonomy_Crown_Territory }
@@ -111,7 +112,7 @@ set_autonomy = { target = KOH autonomy_state = autonomy_Crown_Territory }
 set_autonomy = { target = ALB autonomy_state = autonomy_supervised_state }
 set_autonomy = { target = HES autonomy_state = autonomy_supervised_state }
 set_autonomy = { target = SIW autonomy_state = autonomy_supervised_state }
-
+set_autonomy = { target = TRA autonomy_state = autonomy_Crown_Territory }
 
 
 add_manpower = 5250000
@@ -153,3 +154,4 @@ give_military_access = KLD
 give_military_access = HES
 give_military_access = SIW
 give_military_access = ALB
+give_military_access = TRA

@@ -79,6 +79,8 @@ ideologies = {
 			Populist_Socialism={}
 			Socialist_Popular_Revolution ={}
 			Revolutionary_Syndicalism = {}
+			Revolutionary_Marxism = {}
+			Revolutionary_Massimalismo = {}
 		}
 		dynamic_faction_names = {
 		}
@@ -105,6 +107,7 @@ ideologies = {
 	Moderate_Socialism = {
 		types = {
 			Moderate_Socialism={}
+			Moderate_Massimalismo ={}
 		}
 		dynamic_faction_names = {
 		}
@@ -138,6 +141,8 @@ ideologies = {
 			Bernstein_Reformism={}
 			New_Sanmin_Doctrine={}
 			national-socdem = {}
+			revolutionary-corporatism = {}
+			Dannunzionism_Ref = {}
 		}
 		dynamic_faction_names = {
 		}
@@ -355,12 +360,11 @@ ideologies = {
 			Hybrid_Nationalism = {}
 			Edinogism = {}
 			Edinogist_Colonization = {}
-			DAnnunzionism={}
+			Dannunzionism_N={}
 			National_Populism={}
 			National_Syndicalism={}
 			National_Militarism={}
-			National_Corporatism = {}
-			revolutionary-corporatist-nationalism = {}
+			Reactionist_National_Corporatism = {}
 		}
 		
 		dynamic_faction_names = {

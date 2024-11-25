@@ -451,11 +451,11 @@ aus_hun_nat_eth_has_completed = {
         aus_hun_nat_eth_completed = 1
     }
 }
-bosnia_war_boom = {
+norvoj_war_boom = {
     if = {
         limit = {
             check_variable = {
-                global.bosnia_war_str = 0
+                global.norvoj_war_str = 0
             }
         }
         AOX = {
@@ -470,7 +470,7 @@ bosnia_war_boom = {
         KOH = { declare_war_on = { target = DMT type = annex_everything } }
     }
     set_variable = {
-		global.bosnia_war_str = 1
+		global.norvoj_war_str = 1
 	}
     AOX = {
         country_event = aushun.2
@@ -503,7 +503,7 @@ bosnia_war_boom = {
         give_military_access = SIW
     }
 }
-bos_war_end_qwq = {
+norvoj_war_end_qwq = {
     hidden_effect = {
         DMT = {
             remove_ideas = {

@@ -47,13 +47,22 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-		field_marshal = {
-			skill = 2
-			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+		
+	}
+	AOX_Frederich_Ferdinand2={
+		name=AOX_Frederich_Ferdinand2
+		portraits={
+			civilian={
+				large="gfx/leaders/AOX/Portrait_Archduke_Ferdinand.tga"
+			}
 		}
+		country_leader={
+			ideology=Social_Democracy
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
 	}
 	AOX_Maximilian_I={
 		name=AOX_Maximilian_I
