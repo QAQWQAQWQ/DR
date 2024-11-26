@@ -53,6 +53,9 @@ set_politics = {
 }
 add_ideas = {
 	Smallholder_economy
+	MEX_south_scorched
+	MEX_north_slaved
+	MEX_Carranza_the_winner
 }
 set_popularities = {
 	Dictatorship = 40
@@ -60,3 +63,4 @@ set_popularities = {
 	Liberalism = 20
 	Reformism = 20
 }
+give_military_access = UBS

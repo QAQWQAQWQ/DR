@@ -18,20 +18,31 @@ state={
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+			dockyard = 1
+			5021 = {
+				naval_base = 2
+			}
 		}
 		
 add_core_of = MEX
-		victory_points = {
-			4956 10
-		}
+		
 		victory_points = {
 			5015 5
+		}
+		victory_points = {
+			5021 10
+		}
+		victory_points = {
+			10769 5
+		}
+		victory_points = {
+			2060 5
 		}
 
 	}
 
 	provinces={
-		1952 2083 4956 5015 5021 12721 13088 
+		  5015 5021 13088 10769 2060
 	}
 	
 

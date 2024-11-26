@@ -1,0 +1,32 @@
+ideas = {
+
+	country = {
+		MEX_south_scorched = {
+			name = MEX_south_scorched
+			allowed = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				
+			}
+		}
+		MEX_north_slaved = {
+			name = MEX_north_slaved
+			allowed = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				
+			}
+		}
+		MEX_Carranza_the_winner = {
+			name = MEX_Carranza_the_winner
+			allowed = { always = yes }
+			removal_cost = -1
+
+			modifier = {
+				
+			}
+		}
+	}
+}

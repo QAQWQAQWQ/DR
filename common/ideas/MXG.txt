@@ -6,26 +6,21 @@ ideas = {
 				Agrarian_socialism_drift = 0.03
 				neutrality_drift = 0.02
 				stability_factor = 0.05
-				state_production_speed_industrial_complex_factor = -0.05
-				production_speed_infrastructure_factor = -0.05
-				production_speed_arms_factory_factor = -0.05
-				production_speed_air_base_factor = -0.05
-				production_speed_naval_base_factor = -0.05
 			}
           }
 		  MXG_Radical_land_reform= {
 			picture = Radical_land_reform
 			modifier = {
 				political_power_factor = 0.1
-				stability_weekly = -0.01
+				stability_weekly = 0.01
 				state_production_speed_industrial_complex_factor = 0.05
 			}
           }
 		  MXG_Political_strife= {
 			picture = Political_strife
 			modifier = {
-				political_power_factor = -0.05
-				stability_weekly = -0.03
+				political_power_factor = -0.01
+				stability_weekly = -0.01
 			}
           }
 		}
