@@ -1,15 +1,14 @@
-#!gfx:interface\RS_goals.gfx
 focus_tree = {
 	id = SIW_focus
 	country = {
-		factor = 1
+		factor = 0
 		modifier = {
 			add = 10
 			tag = SIW
-		}
+		}  
 	}
-	default = yes
-	focus = {
+	default = no  
+	focus = { 
 		id = SIW_focus_0
 		icon = GFX_goal_SIW_focus_0
 		cost = 10.00
@@ -18,12 +17,20 @@ focus_tree = {
 
 	}
 	focus = {
+		id = SIW_focus_17
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 23
+		y = 0
+
+	}
+	focus = {
 		id = SIW_focus_1
 		icon = GFX_goal_SIW_focus_1
-		cost = 10.00     
+		cost = 10.00
 		prerequisite = {
-			focus = SIW_focus_0  
-		} 
+			focus = SIW_focus_0
+		}
 		x = 10
 		y = 1
 
@@ -34,98 +41,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = SIW_focus_1
-		} 
+		}
 		x = 9
 		y = 2
-   
-	}
-	focus = {
-		id = SIW_focus_2
-		icon = GFX_goal_SIW_focus_2
-		cost = 10.00 
-		prerequisite = { 
-			focus = SIW_focus_0
-		}
-		x = 16
-		y = 1
-
-	}
-	focus = {
-		id = SIW_focus_4 
-		icon = GFX_goal_SIW_focus_4
-		cost = 10.00
-		prerequisite = {
-			focus = SIW_focus_2
-		}
-		x = 16
-		y = 2
-
-	}
-	focus = {
-		id = SIW_focus_10
-		icon = GFX_goal_SIW_focus_10
-		cost = 10.00
-		prerequisite = {
-			focus = SIW_focus_0
-		}
-		x = 19
-		y = 1
-
-	}
-	focus = {
-		id = SIW_focus_11
-		icon = GFX_goal_SIW_focus_11
-		cost = 10.00
-		prerequisite = {
-			focus = SIW_focus_10
-		}
-		x = 18
-		y = 2
- 
-	}
-	focus = {
-		id = SIW_focus_3
-		icon = GFX_goal_SIW_focus_3
-		cost = 10.00
-		prerequisite = {
-			focus = SIW_focus_0
-		}  
-		x = -2
-		y = 2 
-		relative_position_id = SIW_focus_0
-
-	} 
-	focus = {
-		id = SIW_focus_5
-		icon = GFX_goal_SIW_focus_5
-		cost = 10.00
-		prerequisite = {
-			focus = SIW_focus_3
-		} 
-		x = 11  
-		y = 3
-
-	}
-	focus = {
-		id = SIW_focus_6
-		icon = GFX_goal_SIW_focus_6
-		cost = 10.00
-		prerequisite = {
-			focus = SIW_focus_3
-		}
-		x = 14 
-		y = 3 
-
-	}
-	focus = {
-		id = SIW_focus_7
-		icon = GFX_goal_SIW_focus_7
-		cost = 10.00
-		prerequisite = {
-			focus = SIW_focus_4
-		}
-		x = 16
-		y = 3
 
 	}
 	focus = {
@@ -140,25 +58,190 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SIW_focus_12
-		icon = GFX_goal_SIW_focus_12
+		id = SIW_focus_3
+		icon = GFX_goal_SIW_focus_3
 		cost = 10.00
 		prerequisite = {
-			focus = SIW_focus_10 
+			focus = SIW_focus_0
+		}
+		x = -2
+		y = 2
+		relative_position_id = SIW_focus_0
+
+	}
+	focus = {
+		id = SIW_focus_5
+		icon = GFX_goal_SIW_focus_5
+		cost = 10.00
+		prerequisite = {
+			focus = SIW_focus_3
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = SIW_focus_6
+		icon = GFX_goal_SIW_focus_6
+		cost = 10.00
+		prerequisite = {
+			focus = SIW_focus_3
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = SIW_focus_2
+		icon = GFX_goal_SIW_focus_2
+		cost = 10.00
+		prerequisite = {
+			focus = SIW_focus_0
+		}
+		x = 16
+		y = 1
+
+	}
+	focus = {
+		id = SIW_focus_16
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIW_focus_17
+		}
+		x = 18
+		y = 1
+
+	}
+	focus = {
+		id = SIW_focus_4
+		icon = GFX_goal_SIW_focus_4
+		cost = 10.00
+		prerequisite = {
+			focus = SIW_focus_2
+		}
+		prerequisite = {
+			focus = SIW_focus_16
+		}
+		x = 16
+		y = 2
+
+	}
+	focus = {
+		id = SIW_focus_7
+		icon = GFX_goal_SIW_focus_7
+		cost = 10.00
+		prerequisite = {
+			focus = SIW_focus_4
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = SIW_focus_22
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIW_focus_16
+		}
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = SIW_focus_23
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIW_focus_16
+		}
+		x = 20
+		y = 2
+
+	}
+	focus = {
+		id = SIW_focus_27
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIW_focus_4
+		}
+		prerequisite = {
+			focus = SIW_focus_22
+		}
+		prerequisite = {
+			focus = SIW_focus_23
 		}
 		x = 19
 		y = 3
 
-	} 
+	}
 	focus = {
-		id = SIW_focus_13
-		icon = GFX_goal_SIW_focus_13
+		id = SIW_focus_29
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = SIW_focus_10
+			focus = SIW_focus_27
 		}
-		x = 21
-		y = 2
+		mutually_exclusive = {
+			focus = SIW_focus_28
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = SIW_focus_24
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIW_focus_17
+		}
+		x = 23
+		y = 1
+
+	}
+	focus = {
+		id = SIW_focus_25
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIW_focus_24
+		}
+		mutually_exclusive = {
+			focus = SIW_focus_26
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = SIW_focus_26
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = { 
+			focus = SIW_focus_24
+		}   
+		mutually_exclusive = {
+			focus = SIW_focus_25 
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = SIW_focus_30
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIW_focus_25
+		}
+		prerequisite = {
+			focus = SIW_focus_26
+		}
+		x = 23
+		y = 4
 
 	}
 	focus = {
@@ -166,10 +249,161 @@ focus_tree = {
 		icon = GFX_goal_SIW_focus_14
 		cost = 10.00
 		prerequisite = {
-			focus = SIW_focus_13
+			focus = SIW_focus_17
+		}
+		x = 28
+		y = 1
+
+	}
+	focus = {
+		id = SIW_focus_15
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIW_focus_14
+		}
+		x = 29
+		y = 2
+
+	}
+	focus = {
+		id = SIW_focus_20
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIW_focus_15
+		}
+		x = 29
+		y = 3
+
+	}
+	focus = {
+		id = SIW_focus_10
+		icon = GFX_goal_SIW_focus_10
+		cost = 10.00
+		prerequisite = {
+			focus = SIW_focus_17
+		}
+		x = 33
+		y = 1
+
+	}
+	focus = {
+		id = SIW_focus_11
+		icon = GFX_goal_SIW_focus_11
+		cost = 10.00
+		prerequisite = {
+			focus = SIW_focus_10
+		}
+		x = 32
+		y = 2
+
+	}
+	focus = {
+		id = SIW_focus_12
+		icon = GFX_goal_SIW_focus_12
+		cost = 10.00
+		prerequisite = {
+			focus = SIW_focus_10
+		}
+		x = 33
+		y = 3
+
+	}
+	focus = {
+		id = SIW_focus_33
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIW_focus_12
+		}
+		x = 33
+		y = 4
+
+	}
+	focus = {
+		id = SIW_focus_13
+		icon = GFX_goal_SIW_focus_13
+		cost = 10.00
+		prerequisite = {
+			focus = SIW_focus_10
+		}
+		x = 35
+		y = 2
+
+	}
+	focus = {
+		id = SIW_focus_18
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIW_focus_14
+		}
+		x = -1
+		y = 1
+		relative_position_id = SIW_focus_14
+
+	}
+	focus = {
+		id = SIW_focus_19
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIW_focus_18
+		}
+		x = 27
+		y = 3
+
+	}
+	focus = {
+		id = SIW_focus_21
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIW_focus_19
+		}
+		prerequisite = {
+			focus = SIW_focus_20
+		}
+		x = 28
+		y = 4
+
+	}
+	focus = {
+		id = SIW_focus_28
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIW_focus_27
+		}
+		mutually_exclusive = {
+			focus = SIW_focus_29
+		}
+		x = -2
+		y = 0
+		relative_position_id = SIW_focus_29
+
+	}
+	focus = {
+		id = SIW_focus_31
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIW_focus_30
 		}
 		x = 21
-		y = 3
+		y = 5
+
+	}
+	focus = {
+		id = SIW_focus_32
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIW_focus_30
+		}
+		x = 25
+		y = 5
 
 	}
 }
