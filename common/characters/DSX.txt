@@ -14,7 +14,7 @@ characters={
 		}
 	}	
 
-	Portrait_German_Colonial_Society
+
 	DSX_Leto_falbeck={
 		name=DSX_Leto_falbeck
 		portraits={
@@ -43,6 +43,13 @@ characters={
 			civilian={
 				large="gfx/leaders/DSX/Portrait_German_Colonial_Society.tga"
 			}
+		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
 		}
 		country_leader={
 			ideology=ironfist-colonial-assimilation

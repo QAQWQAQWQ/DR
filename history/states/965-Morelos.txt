@@ -13,15 +13,15 @@ state={
 	history={
 		owner = MEX
 		add_core_of = MEX
-		victory_points = { 8089 3 }
+		
 		buildings = {
 			infrastructure = 1
 		}
-		
+		set_demilitarized_zone = yes
 	}
 
 	provinces={
-        	8089 10773
+        	10773 7913
 	}
 
 	local_supplies=0.0 

@@ -1,0 +1,36 @@
+state={
+	id=1125
+	name="STATE_1125"
+
+	state_category = pastoral
+
+	resources={
+		grain=10
+	}
+	history={
+		
+		owner = MEX
+		victory_points = {
+			7973 5
+		}
+		victory_points = {
+			10800 1
+		}
+		victory_points = {
+			10746 5
+		}
+		buildings = {
+			infrastructure = 1
+			
+		}
+		add_core_of = MEX
+	}
+
+	provinces={
+		12811 2104 10800 10746 7973
+	}
+	manpower=655094
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

@@ -22,6 +22,20 @@ characters={
 			}
 		}
 		country_leader={
+			ideology=Bonapartism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MEX_Alvaro_Obregon={
+		name=MEX_Alvaro_Obregon
+		portraits={
+			civilian={
+				large="gfx/leaders/MXG/Portrait_Alvaro_Obregón.tga"
+			}
+		}
+		country_leader={
 			ideology=progressive-dictatorship
 			traits={  }
 			expire="1965.1.1.1"
