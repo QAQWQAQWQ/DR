@@ -7,12 +7,40 @@ characters={
 				large="gfx/leaders/MXG/Portrait_Zapata.tga"
 			}
 		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
 		country_leader={
-			ideology=Agrarian_Socialism
+			ideology=Agarian_Autonomism
 			desc = MXG_Zapata_desc
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}			
+	}		
+	MXG_Gildardo_Magana	={
+		name=MXG_Gildardo_Magana
+		portraits={
+			civilian={
+				large="gfx/leaders/MXG/Portrait_Gildardo_Magana.tga"
+			}
+		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		country_leader={
+			ideology=Agarian_Autonomism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
 	}

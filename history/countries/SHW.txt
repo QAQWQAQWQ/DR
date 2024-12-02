@@ -396,7 +396,7 @@ set_autonomy = {
 }
 set_autonomy = {
 	target = YED
-	autonomy_state = autonomy_puppet
+	autonomy_state = autonomy_satellite_state
 }
 
 
