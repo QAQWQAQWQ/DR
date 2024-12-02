@@ -264,3 +264,16 @@ news_event = {
 		
 			}
 	}
+	news_event = {
+		id = ITANews.21
+		title = ITANews.21.t
+		desc = ITANews.21.d
+		
+		major = yes
+		is_triggered_only = yes
+		
+		option = {
+			name = ITANews.21.a
+			
+				}
+		}

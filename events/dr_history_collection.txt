@@ -1,0 +1,57 @@
+add_namespace = dr_history_collection
+country_event = {
+	id = dr_history_collection.1
+	title = dr_history_collection.1.t
+	desc = dr_history_collection.1.d
+
+	is_triggered_only = yes
+	
+	option = {
+		name = dr_history_collection.1.o1
+                    country_event = { id = dr_history_collection.2 }
+	}
+	option = {
+		name = rw_history_collection.1.o13
+	}
+
+}
+
+
+country_event = {
+	id = dr_history_collection.102
+	title = dr_history_collection.2.t
+	desc = dr_history_collection.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = dr_history_collection.2.o1
+                    country_event = { id = dr_history_collection.2 }
+                    country_event = { id = hdecision_event.1 }
+	}	
+	
+	option = {
+		name = dr_history_collection.2.o43
+	}
+     }
+country_event = {
+	id = dr_history_collection.2
+	title = dr_history_collection.2.t
+	desc = dr_history_collection.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = dr_history_collection.2.o1
+                    country_event = { id = dr_history_collection.102 }
+                    country_event = { id = hdecision_event.1 }
+	}	
+	
+	option = {
+		name = dr_history_collection.2.o41
+                    country_event = { id = dr_history_collection.1 }
+	}
+	option = {
+		name = dr_history_collection.2.o43
+	}
+     }

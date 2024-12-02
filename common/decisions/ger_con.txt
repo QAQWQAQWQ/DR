@@ -1134,20 +1134,7 @@ ger_con_fra_def = {
           instant_build = yes 
         } 
       }
-      951 = {
-        add_building_construction = { 
-          type = bunker 
-          province = 9418
-          level = 1
-          instant_build = yes 
-        } 
-        add_building_construction = { 
-          type = bunker 
-          province = 11407
-          level = 1
-          instant_build = yes 
-        } 
-      }
+      
     }
   }
 }
