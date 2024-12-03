@@ -559,7 +559,12 @@ country_event = {
 	add_core_of = ICD
 }
 		}
-		country_event = {id=ITE.15 days = 180}
+		if = {
+			limit = {
+				ITC = {exists = yes}
+			}
+			country_event = {id=ITE.15 days = 180}
+		}
 	}
 }
 country_event = {
@@ -970,6 +975,7 @@ immediate = {
 					limit = {
 						
 						check_variable = {global.4italian_war = 1}
+						ITC = {exists = yes}
 						NOT = {
 							
 							AOX = {

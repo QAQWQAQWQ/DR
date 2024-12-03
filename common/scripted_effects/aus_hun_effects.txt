@@ -465,7 +465,8 @@ norvoj_war_boom = {
         }
         KOH = {leave_faction = yes}
         DMT = {leave_faction = yes}
-        SIW = {leave_faction = yes}
+        SIW = {leave_faction = yes
+    set_cosmetic_tag = SIW_ori}
         # DMT = { annex_country = { target = KLD transfer_troops = yes } }
         KOH = { declare_war_on = { target = DMT type = annex_everything } }
     }

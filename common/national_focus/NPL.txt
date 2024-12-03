@@ -237,7 +237,7 @@ completion_reward = {
 		y = 2
     completion_reward={
 		set_popularities = {
-			Conservatism = 74
+			Dictatorship = 74
 			Liberalism= 16
 			Nationalism= 10
 		}
@@ -315,7 +315,7 @@ completion_reward = {
     completion_reward={
 		set_popularities = {
 			Liberalism = 74
-			Conservatism= 16
+			Dictatorship= 16
 			Nationalism= 10
 		}
 		custom_effect_tooltip = available_political_advisor
