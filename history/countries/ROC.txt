@@ -15,6 +15,7 @@ recruit_character = ROC_HuangXing
 recruit_character = ROC_Song_JiaoRen
 recruit_character = ROC_LiaoZhongKai
 recruit_character = ROC_ChenQiMei
+recruit_character = ROC_HuHanMin
 recruit_character = ROC_JiangBaiLi
 recruit_character = ROC_SunKe
 recruit_character = ROC_SongQingLing
@@ -67,7 +68,9 @@ add_ideas = {
 	      ROC_TPP     
 	}
 set_popularities = {
-	Paternalism = 60
-	Dictatorship = 20
-	Reformism = 20
+	Paternalism = 29
+	Dictatorship = 30
+	Reformism = 16
+	Moderate_Socialism = 14
+	Revolutionism = 11
 }

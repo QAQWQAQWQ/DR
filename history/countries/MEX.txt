@@ -11,7 +11,7 @@ set_technology = {
 	fuel_silos = 1
 }
 recruit_character = MEX_Venustiano_Carranza
-
+recruit_character = MEX_Alvaro_Obregon
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -58,9 +58,10 @@ add_ideas = {
 	MEX_Carranza_the_winner
 }
 set_popularities = {
-	Dictatorship = 40
-	Conservatism = 20
-	Liberalism = 20
-	Reformism = 20
+	Dictatorship = 75
+	Conservatism = 5
+	Liberalism = 5
+	Reformism = 7
+	Paternalism = 8
 }
 give_military_access = UBS

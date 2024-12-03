@@ -15,4 +15,20 @@ characters={
 		}
 		
 	}
+	BEL_Jules_Destree={
+		name=BEL_Jules_Destree
+		portraits={
+			civilian={
+				large="gfx/leaders/BEL/Portrait_Jules_Destree.tga"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Socialism
+			#特质
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+	}
 }

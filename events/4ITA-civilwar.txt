@@ -24,9 +24,7 @@ country_event = {
 	option = {
 		name = ITE.1.a
 		
-		162 = {
-			set_demilitarized_zone = yes
-		}
+		
 		
 	}
 }
@@ -96,6 +94,9 @@ country_event = {
 						set_demilitarized_zone = yes
 					}
 					1039 = {
+						set_demilitarized_zone = yes
+					}
+					849 = {
 						set_demilitarized_zone = yes
 					}
 				}
@@ -558,7 +559,12 @@ country_event = {
 	add_core_of = ICD
 }
 		}
-		country_event = {id=ITE.15 days = 180}
+		if = {
+			limit = {
+				ITC = {exists = yes}
+			}
+			country_event = {id=ITE.15 days = 180}
+		}
 	}
 }
 country_event = {
@@ -871,9 +877,7 @@ immediate = {
 				}
 				
 				set_popularities = {
-					Nationalism = 77
-					Revolutionism = 20
-					Radical_Socialism = 3
+					Nationalism = 100
 				}
 			
 			}
@@ -894,7 +898,70 @@ immediate = {
 		}
 		
 	}
-
+	country_event = {
+		id = ITE.140
+		hidden = yes
+		title = ITE.140.t
+		desc = ITE.140.d
+	
+		fire_only_once = yes
+		is_triggered_only = yes
+ immediate = {
+	news_event = ITANews.21
+	}
+	
+		option = {
+			name = ITE.140.a
+			HUS = {transfer_state = 159}
+			159 = {add_core_of = HUS}
+			HUS = {transfer_state = 287}
+			287 = {add_core_of = HUS}
+			HUS = {transfer_state = 161}
+			161 = {add_core_of = HUS}
+			HUS = {transfer_state = 160}
+			160 = {add_core_of = HUS}
+			HUS = {transfer_state = 850}
+			850 = {add_core_of = HUS}
+			HUS = {transfer_state = 852}
+			852 = {add_core_of = HUS}
+			HUS = {transfer_state = 736}
+			736 = {add_core_of = HUS}
+			HUS = {transfer_state = 163}
+			163 = {add_core_of = HUS}
+			FUM = {transfer_state = 917}
+			FUM = {leave_faction = yes}
+			HUS = {set_autonomy = {
+				target = FUM
+				autonomy_state = autonomy_dominion
+			}}
+			FUM = {
+				set_politics = {
+					ruling_party = Nationalism
+					last_election = "1918.11.11"
+					election_frequency = 72
+					elections_allowed = no
+				}
+				
+				set_popularities = {
+					Nationalism = 100
+				}
+			
+			}
+			AOX = {white_peace = ITC}
+		AOX = {white_peace = ITE}
+		AOX = {white_peace = RDN}
+		WWS = {white_peace = ITC}
+		WWS = {white_peace = ITE}
+		WWS = {white_peace = RDN}
+		ITE = {leave_faction = yes}
+		RDN = {leave_faction = yes}
+		ITC = {dismantle_faction = yes}
+		NPL = {add_to_faction = RDN}
+		set_variable = {global.ita_tookwien_4italian_war = 1}
+		set_variable = {global.4italian_war = 2}
+			
+		}
+	}
 	country_event = {
 			id = ITE.15
 			hidden = yes
@@ -908,6 +975,7 @@ immediate = {
 					limit = {
 						
 						check_variable = {global.4italian_war = 1}
+						ITC = {exists = yes}
 						NOT = {
 							
 							AOX = {
@@ -1158,6 +1226,7 @@ immediate = {
 					type = annex_everything
 				}
 		}
+		ITC = {retire_character = ITC_Gabriele_d_Annunzio}
 				}
 			}
 			

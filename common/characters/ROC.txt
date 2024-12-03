@@ -43,6 +43,20 @@ characters={
 			id=-1
 		}
 	}
+	ROC_HuHanMin={
+		name=ROC_HuHanMin
+		portraits={
+			civilian={
+				large="gfx/leaders/ROC/portrait_Huhangming.tga"
+			}
+		}
+		country_leader={
+			ideology=Paternalist_Constitutional_Sanmin_Doctrine
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	ROC_ChenQiMei={
 		name=ROC_ChenQiMei
 		portraits={

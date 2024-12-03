@@ -21,8 +21,15 @@ characters={
 				large="gfx/leaders/MEK/Portrait_Venustiano_Carranza.tga"
 			}
 		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
 		country_leader={
-			ideology=Bonapartism
+			ideology=bonaparte-autocratism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -35,8 +42,15 @@ characters={
 				large="gfx/leaders/MXG/Portrait_Alvaro_Obregón.tga"
 			}
 		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
 		country_leader={
-			ideology=progressive-dictatorship
+			ideology=semidem-progressivism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
