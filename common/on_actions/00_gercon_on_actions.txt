@@ -332,6 +332,63 @@ on_actions = {
                     ger_con_aus_controlled = yes
                 }
                 AOX = { mark_focus_tree_layout_dirty = yes }
+                WWS = {
+                    transfer_state = 763
+transfer_state = 188
+transfer_state = 5
+transfer_state = 1012
+transfer_state = 1020
+transfer_state = 85
+                }
+if = {
+    limit = {
+        WWS = {controls_province = 807}}
+        WWS = {transfer_state = 807}
+}
+if = {
+    limit = {
+        WWS = {controls_province = 1036}}
+        WWS = {transfer_state = 1036}
+}
+if = {
+    limit = {
+        WWS = {controls_province = 63}}
+        WWS = {transfer_state = 63}
+}
+if = {
+    limit = {
+        WWS = {controls_province = 86}}
+        WWS = {transfer_state = 86}
+}
+if = {
+    limit = {
+        WWS = {controls_province = 762}}
+        WWS = {transfer_state = 762}
+}
+if = {
+    limit = {
+        WWS = {controls_province = 67}}
+        WWS = {transfer_state = 67}
+}
+if = {
+    limit = {
+        WWS = {controls_province = 66}}
+        WWS = {transfer_state = 66}
+}
+if = {
+    limit = {
+        WWS = {controls_province = 68}}
+        WWS = {transfer_state = 68}
+}
+if = {
+    limit = {
+        WWS = {controls_province = 62}}
+        WWS = {transfer_state = 62}
+}
+SHW = {set_autonomy = {
+	target = WWS
+	autonomy_state = autonomy_satellite_state
+}}
             }
             
             if = {
