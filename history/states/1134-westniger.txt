@@ -1,0 +1,22 @@
+
+state={
+	id=1134
+	name="STATE_1134" # wadi al hayaa
+	manpower = 42633
+	
+	state_category = pastoral
+
+
+	history={
+		owner = NPL
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		4913
+	}
+
+	local_supplies=0.0 
+}

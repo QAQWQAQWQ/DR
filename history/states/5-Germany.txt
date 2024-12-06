@@ -13,16 +13,16 @@ state={
 		#	11386 1
 		#}
 		owner = WWS
-		controller = WWS
 		
 		buildings = {
 			infrastructure = 3
 		}
 		add_core_of = WWS
+		add_core_of = PBL
 	}
 
 	provinces={
-		266 3351 6375 9327 9346 9372 11386 
+		 6375 9346 9372 11386 6347 
 	}
 
 	local_supplies=12.0 

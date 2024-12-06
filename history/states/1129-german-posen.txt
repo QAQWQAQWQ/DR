@@ -1,0 +1,34 @@
+state={
+	id=1129
+	name="STATE_1129"
+	manpower = 1106500
+	resources={
+		grain=15
+		
+	}
+	
+	state_category = city
+	history={
+		owner = WWS
+		add_core_of = WWS
+		victory_points = {
+			279 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			11232 = {
+				bunker = 1
+
+			}
+			
+			air_base = 1
+		}
+	}
+
+	provinces={
+		279 11232 388 3532
+	}
+
+	local_supplies=0.0 
+}

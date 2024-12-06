@@ -949,6 +949,9 @@ focus_tree = {
 			DHD = { ger_con_uni_tri_aus = yes }
 			AGC = { ger_con_uni_tri_aus = yes }
 			LSB = { ger_con_uni_tri_aus = yes }
+			NOT = {
+				has_completed_focus = AUS_ger_3
+			}
 		}
 		bypass = {
 			AND = {

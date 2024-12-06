@@ -15,15 +15,11 @@ state={
 
 	history={
 		
-		victory_points = {
-			9511 3
-		}
+		
 		victory_points = {
 			9570 10 
 		}
-		victory_points = {
-			3545 1
-		}
+		
 		owner = WWS
 		buildings = {
 			arms_factory = 1
@@ -31,11 +27,10 @@ state={
 			infrastructure = 3
 		}
 		add_core_of = WWS
-		add_core_of = PBL
 	}
 
 	provinces={
-		3485 9570 3545 6512 9457 9511 3283 6462
+		3485 9570 6512 3283 6462 3510
 	}
 
 	local_supplies=4.0 

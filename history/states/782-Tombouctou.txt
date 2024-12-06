@@ -3,20 +3,20 @@ state={
 	id=782
 	name="STATE_782" # Tombouctou
 	manpower = 79243
-	impassable = yes
-	state_category = wasteland
+	state_category = pastoral
 
 
 	history={
 		owner = NPL
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 		}
+		
 
 	}
 
 	provinces={
-		1115 2068 10725 10868 10788 2044 5101
+		10749 5095 10868
 	}
 
 	local_supplies=0.0 

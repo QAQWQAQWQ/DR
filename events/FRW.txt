@@ -1226,14 +1226,14 @@ country_event = {
 			character = FRW_Leon_Blum
 			promote_leader = yes
 			country_leader = {
-				ideology = Democratic_Socialism
+				ideology = Reformist_Socialism
 				expire = "1965.1.1.1"
 				traits = { }
 			}
 		}
 		promote_character = {
 			character = FRW_Leon_Blum
-			ideology = Democratic_Socialism
+			ideology = Reformist_Socialism
 		}
 		ROOT={
 			mark_focus_tree_layout_dirty = yes

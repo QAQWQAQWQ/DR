@@ -1,0 +1,25 @@
+
+state={
+	id=1128
+	name="STATE_1128"
+
+	history={
+		owner = CNA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		
+		add_core_of = CNA
+
+	}
+
+	provinces={
+		7858 7766 12534 7348
+	}
+	manpower=69080
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

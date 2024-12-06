@@ -1317,6 +1317,11 @@ hun_red_army = {
 					transfer_state = 154
 					load_oob = "XYL_1920"
 				}
+				HUN = {set_popularities = {
+					Reformism = 10
+					Liberalism = 25
+					Dictatorship = 65
+				}}
 				every_state = {
 					limit = {
 						is_core_of = KOH

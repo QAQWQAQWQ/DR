@@ -1153,12 +1153,23 @@ immediate = {
 		fire_only_once = yes
 		trigger = {
 			check_variable = {global.4italian_war = 1}
-		OR = {
-			AOX = {controls_province = 6788}
-			VCT = {controls_province = 6788}
-			AOX = {controls_province = 6780}
-			VCT = {controls_province = 6780}
-		}
+			OR = {
+				AND = {
+					OR = {
+						AOX = {controls_province = 6788}
+						VCT = {controls_province = 6788}
+					}
+					OR = {
+						AOX = {controls_province = 9909}
+						VCT = {controls_province = 9909}
+					}
+
+				}
+				OR = {
+					AOX = {controls_province = 6780}
+					VCT = {controls_province = 6780}
+				}
+			}
 		}
 			
 	
@@ -1256,3 +1267,37 @@ set_autonomy = { target = SLO autonomy_state = autonomy_Crown_Territory }
 			}
 		}
 	}
+	country_event = {
+		id = ITE.21
+		hidden = yes
+		title = ITE.21.t
+		desc = ITE.21.d
+		fire_only_once = yes
+		is_triggered_only = yes
+		option = {
+			name = ITE.21.a
+			WWS = {
+				transfer_state = 188
+transfer_state = 763
+transfer_state = 5
+transfer_state = 1012
+transfer_state = 77
+transfer_state = 1130
+transfer_state = 1036
+			}
+			
+SHW = {set_autonomy = {
+target = WWS
+autonomy_state = autonomy_satellite_state
+}}
+WWS = {
+	set_popularities = {
+
+		Dictatorship = 51
+		Conservatism = 16
+		Liberalism = 14
+		Reformism = 19
+	}
+}
+	}
+}

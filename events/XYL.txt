@@ -64,6 +64,11 @@ country_event = {
 						target = XYL
 						type = annex_everything
 					}
+					set_popularities = {
+						Reformism = 10
+						Liberalism = 25
+						Dictatorship = 65
+					}
 				}
 				AOX = {complete_national_focus = AUS_bir_0
 				complete_national_focus = AUS_bir_1

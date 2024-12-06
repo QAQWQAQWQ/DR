@@ -197,12 +197,9 @@ country_event = {
 	fire_only_once = no
 	option = {
 		name = ger_con.8.a
-		FROM = { set_state_owner = 58 }
-		FROM = { set_state_owner = 1032 }
-		FROM = { set_state_owner = 952 }
-		FROM = { set_state_controller = 58 }
-		FROM = { set_state_controller = 1032 }
-		FROM = { set_state_controller = 952 }
+		FROM = { transfer_state = 58 }
+		FROM = { transfer_state = 1032 }
+		FROM = { transfer_state = 952 }
         ai_chance = {
             base = 100 
         }

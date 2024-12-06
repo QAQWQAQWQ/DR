@@ -4,15 +4,12 @@ state={
 	name="STATE_77"
 	manpower = 378000
 	
-	state_category = rural
+	state_category = city
 
 	history={
-		owner = YED
-		add_core_of = YED
-		add_core_of = BOJ
-		victory_points = {
-			11597 1
-		}
+		owner = WWS
+		add_core_of = WWS
+		
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
@@ -20,7 +17,7 @@ state={
 	}
 
 	provinces={
-		11597
+		3351
 	}
 
 	local_supplies=1.0 
