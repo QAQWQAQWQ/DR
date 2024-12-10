@@ -1,0 +1,22 @@
+state = {
+	id = 1159
+	name = "STATE_1159"
+	manpower = 66110
+	state_category = pastoral
+	history = {
+		owner = EYJ
+		victory_points = {
+			12806 3 
+		}
+
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	provinces = {
+		12881 10784 10743 1914 12806
+	}
+	
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+}
