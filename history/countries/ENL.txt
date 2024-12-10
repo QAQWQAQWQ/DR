@@ -128,10 +128,7 @@ early_ship_hull_heavy = 1
 		target = BUD
 		autonomy_state = autonomy_supervised_state
 	}
-	set_autonomy = {
-		target = MOL
-		autonomy_state = autonomy_supervised_state
-	}
+	
 
 	
 

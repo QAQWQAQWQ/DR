@@ -1,5 +1,5 @@
 state = {
-	id = 838 
+	id = 838 # Illubabor-Kaffa
 	name = "STATE_838"
 	manpower = 600000
 	resources = {
@@ -9,7 +9,10 @@ state = {
 	state_category = pastoral
 
 	history = {
-		
+		# Gambeila
+		victory_points = { 
+			13244 2 
+		}
 		# Jiren (add VPs to this if creating the Jimma Sultanate)
 		victory_points = { 
 			7912 1  
@@ -20,7 +23,7 @@ state = {
 	}
 
 	provinces = {
- 		7912
+ 		7912 13244 13245
  	}
 
 	local_supplies = 0.0 

@@ -428,14 +428,6 @@ on_actions = {
                     set_autonomy = { target = KOH autonomy_state = autonomy_Crown_Territory }
                 }
                 KOH = {
-                    set_politics = {ruling_party = Dictatorship}
-                    set_popularities = {
-                        Liberalism = 2
-                        Dictatorship = 98
-
-                    }
-                }
-                KOH = {
                     add_ideas = {
                         Part_of_Habsburgs
                     }
@@ -488,6 +480,15 @@ on_actions = {
                     set_popularities = {
                         Paternalism = 20
                         Dictatorship = 80
+
+                    }
+                }
+
+                KOH = {
+                    set_politics = {ruling_party = Dictatorship}
+                    set_popularities = {
+                        Liberalism = 2
+                        Dictatorship = 98
 
                     }
                 }

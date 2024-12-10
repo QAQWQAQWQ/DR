@@ -417,11 +417,8 @@ on_actions = {
                 KOH = {
                     set_politics = {ruling_party = Dictatorship}
                     set_popularities = {
-                        Reformism = 4
-                        Moderate_Socialism = 3
-                        Revolutionism = 3
-                        Dictatorship = 11
-                        Liberalism = 79
+                        Dictatorship = 50
+                        Liberalism = 50
                     }
                 }
                 TRA = {
