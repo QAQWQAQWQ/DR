@@ -1593,11 +1593,30 @@ norvoj_war_end = yes
 					check_variable = { global.cze_accpect = 1 }
 					BXM = { exists = yes }
 				}
-				BXM = {
+				SLO = {
+					add_ideas = {
+						Part_of_Habsburgs
+					}
 					transfer_state = 70
 					add_state_core = 70
 					transfer_state = 71
 					add_state_core = 71
+					load_oob = SLO_1920
+				}
+				AOX = {
+					set_autonomy = { target = SLO autonomy_state = autonomy_Crown_Territory }
+				}
+				SLO = {
+					set_politics = {
+						ruling_party = Dictatorship
+						last_election = "1918.11.11"
+						election_frequency = 72
+						elections_allowed = no
+					}
+					set_popularities = {
+						Dictatorship = 80
+						Paternalism = 20
+					}
 				}
 			}
 			else = {
@@ -1609,10 +1628,22 @@ norvoj_war_end = yes
 					add_state_core = 70
 					transfer_state = 71
 					add_state_core = 71
+					load_oob = SLO_1920
 				}
 				AOX = {
 					set_autonomy = { target = SLO autonomy_state = autonomy_Crown_Territory }
 				}
+				SLO = {
+					set_politics = {
+						ruling_party = Dictatorship
+						last_election = "1918.11.11"
+						election_frequency = 72
+						elections_allowed = no
+					}
+				set_popularities = {
+					Dictatorship = 80
+					Paternalism = 20
+				}}
 			}
 			if = {
 				limit = {
@@ -1862,6 +1893,16 @@ norvoj_war_end = yes
 					long_name = BXM_Paternalism_party_1
 					name = BXM_Paternalism_party_1
 				}
+				
+				remove_ideas = { Part_of_Habsburgs }
+				add_ideas = { AOX_Before_Part_Habsburgs }
+			}
+			set_autonomy = {
+				target = BXM
+				autonomous_state = autonomy_dominion
+				freedom_level = 0
+			}
+			BXM = {
 				set_politics = {
 					ruling_party = Paternalism
 					last_election = "1918.11.11"
@@ -1874,13 +1915,6 @@ norvoj_war_end = yes
 					Paternalism = 33
 					Dictatorship = 33
 				}
-				remove_ideas = { Part_of_Habsburgs }
-				add_ideas = { AOX_Before_Part_Habsburgs }
-			}
-			set_autonomy = {
-				target = BXM
-				autonomous_state = autonomy_dominion
-				freedom_level = 0
 			}
 		}
 		available = {
@@ -1913,6 +1947,16 @@ norvoj_war_end = yes
 					long_name = BXM_Paternalism_party_1
 					name = BXM_Paternalism_party_1
 				}
+				
+				remove_ideas = { Part_of_Habsburgs }
+				add_ideas = { AOX_Before_Part_Habsburgs }
+			}
+			set_autonomy = {
+				target = BXM
+				autonomous_state = autonomy_dominion
+				freedom_level = 0
+			}
+			BXM = {
 				set_politics = {
 					ruling_party = Paternalism
 					last_election = "1918.11.11"
@@ -1925,13 +1969,6 @@ norvoj_war_end = yes
 					Paternalism = 33
 					Dictatorship = 33
 				}
-				remove_ideas = { Part_of_Habsburgs }
-				add_ideas = { AOX_Before_Part_Habsburgs }
-			}
-			set_autonomy = {
-				target = BXM
-				autonomous_state = autonomy_dominion
-				freedom_level = 0
 			}
 		}
 		available = {
@@ -1954,6 +1991,16 @@ norvoj_war_end = yes
 			KGL={
 				set_cosmetic_tag = KGL_color
 				
+				
+				remove_ideas = { Part_of_Habsburgs }
+				add_ideas = { AOX_Before_Part_Habsburgs }
+			}
+			set_autonomy = {
+				target = KGL
+				autonomous_state = autonomy_dominion
+				freedom_level = 0
+			}
+			KGL = {
 				set_politics = {
 					ruling_party = Paternalism
 					last_election = "1918.11.11"
@@ -1966,13 +2013,6 @@ norvoj_war_end = yes
 					Paternalism = 33
 					Dictatorship = 33
 				}
-				remove_ideas = { Part_of_Habsburgs }
-				add_ideas = { AOX_Before_Part_Habsburgs }
-			}
-			set_autonomy = {
-				target = KGL
-				autonomous_state = autonomy_dominion
-				freedom_level = 0
 			}
 		}
 		available = {
@@ -1995,6 +2035,16 @@ norvoj_war_end = yes
 			DMT={
 				set_cosmetic_tag = CRO_color
 				
+				
+				remove_ideas = { Part_of_Habsburgs }
+				add_ideas = { AOX_Before_Part_Habsburgs }
+			}
+			set_autonomy = {
+				target = DMT
+				autonomous_state = autonomy_dominion
+				freedom_level = 0
+			}
+			DMT = {
 				set_politics = {
 					ruling_party = Paternalism
 					last_election = "1918.11.11"
@@ -2007,13 +2057,6 @@ norvoj_war_end = yes
 					Paternalism = 33
 					Dictatorship = 33
 				}
-				remove_ideas = { Part_of_Habsburgs }
-				add_ideas = { AOX_Before_Part_Habsburgs }
-			}
-			set_autonomy = {
-				target = DMT
-				autonomous_state = autonomy_dominion
-				freedom_level = 0
 			}
 		}
 		available = {
@@ -2046,6 +2089,16 @@ norvoj_war_end = yes
 			KOH={
 				set_cosmetic_tag = KOH_color
 				
+				
+				remove_ideas = { Part_of_Habsburgs }
+				add_ideas = { AOX_Before_Part_Habsburgs }
+			}
+			set_autonomy = {
+				target = KOH
+				autonomous_state = autonomy_dominion
+				freedom_level = 0
+			}
+			KOH = {
 				set_politics = {
 					ruling_party = Paternalism
 					last_election = "1918.11.11"
@@ -2058,13 +2111,6 @@ norvoj_war_end = yes
 					Paternalism = 33
 					Dictatorship = 33
 				}
-				remove_ideas = { Part_of_Habsburgs }
-				add_ideas = { AOX_Before_Part_Habsburgs }
-			}
-			set_autonomy = {
-				target = KOH
-				autonomous_state = autonomy_dominion
-				freedom_level = 0
 			}
 			AOX = {
 				remove_ideas = {
@@ -2134,6 +2180,18 @@ norvoj_war_end = yes
 				AOX = {
 					set_autonomy = { target = SLO autonomy_state = autonomy_Crown_Territory }
 				}
+				SLO = {
+					set_politics = {
+						ruling_party = Dictatorship
+						last_election = "1918.11.11"
+						election_frequency = 72
+						elections_allowed = no
+					}
+					set_popularities = {
+						Dictatorship = 80
+						Paternalism = 20
+					}
+				}
 				TRA = {
 					add_ideas = {
 						Part_of_Habsburgs
@@ -2161,6 +2219,18 @@ norvoj_war_end = yes
 				AOX = {
 					set_autonomy = { target = TRA autonomy_state = autonomy_Crown_Territory }
 				}
+				TRA = {
+					set_politics = {
+						ruling_party = Dictatorship
+						last_election = "1918.11.11"
+						election_frequency = 72
+						elections_allowed = no
+					}
+					set_popularities = {
+						Dictatorship = 80
+						Paternalism = 20
+					}
+				}
 				AOX = {
 					transfer_state = 920
 					transfer_state = 921
@@ -2168,18 +2238,6 @@ norvoj_war_end = yes
 			}
 			SLO = {
 				set_cosmetic_tag = SLO_color
-				set_politics = {
-					ruling_party = Paternalism
-					last_election = "1918.11.11"
-					election_frequency = 72
-					elections_allowed = no
-				}
-				
-				set_popularities = {
-					Liberalism = 34
-					Paternalism = 33
-					Dictatorship = 33
-				}
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
 			}
@@ -2188,8 +2246,7 @@ norvoj_war_end = yes
 				autonomous_state = autonomy_dominion
 				freedom_level = 0
 			}
-			TRA = {
-				set_cosmetic_tag = TRA_color
+			SLO = {
 				set_politics = {
 					ruling_party = Paternalism
 					last_election = "1918.11.11"
@@ -2202,6 +2259,9 @@ norvoj_war_end = yes
 					Paternalism = 33
 					Dictatorship = 33
 				}
+			}
+			TRA = {
+				set_cosmetic_tag = TRA_color
 				remove_ideas = { Part_of_Habsburgs }
 				add_ideas = { AOX_Before_Part_Habsburgs }
 			}
@@ -2209,6 +2269,20 @@ norvoj_war_end = yes
 				target = TRA
 				autonomous_state = autonomy_dominion
 				freedom_level = 0
+			}
+			TRA = {
+				set_politics = {
+					ruling_party = Paternalism
+					last_election = "1918.11.11"
+					election_frequency = 72
+					elections_allowed = no
+				}
+				
+				set_popularities = {
+					Liberalism = 34
+					Paternalism = 33
+					Dictatorship = 33
+				}
 			}
 		}
 		bypass = {
@@ -2226,6 +2300,16 @@ norvoj_war_end = yes
 		completion_reward = {
 			VCT={
 				set_cosmetic_tag = VCT_color
+				
+				remove_ideas = { Part_of_Habsburgs }
+				add_ideas = { AOX_Before_Part_Habsburgs }
+			}
+			set_autonomy = {
+				target = VCT
+				autonomous_state = autonomy_dominion
+				freedom_level = 0
+			}
+			VCT = {
 				set_politics = {
 					ruling_party = Paternalism
 					last_election = "1918.11.11"
@@ -2238,13 +2322,6 @@ norvoj_war_end = yes
 					Paternalism = 33
 					Dictatorship = 33
 				}
-				remove_ideas = { Part_of_Habsburgs }
-				add_ideas = { AOX_Before_Part_Habsburgs }
-			}
-			set_autonomy = {
-				target = VCT
-				autonomous_state = autonomy_dominion
-				freedom_level = 0
 			}
 		}
 		available = {
