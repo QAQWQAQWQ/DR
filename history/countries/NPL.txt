@@ -83,6 +83,10 @@ add_to_faction = RDN
 		
 		
 	}
+	set_autonomy = {
+		target = MOL
+		autonomy_state = autonomy_supervised_state
+	}
 	
 
 set_politics = {
