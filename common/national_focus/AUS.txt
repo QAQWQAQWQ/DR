@@ -453,6 +453,9 @@ focus_tree = {
 			NOT = {
 				german_war_has_boom = yes
 			}
+			NOT = {
+				has_completed_focus = AUS_ger_18
+			}
 			has_completed_focus = AUS_ger_2
 		}
 		bypass = {
@@ -773,6 +776,9 @@ focus_tree = {
 			}
 		}
 		available = {
+			NOT = {
+				has_completed_focus = AUS_ger_13
+			}
 
 		}
 		bypass = {
