@@ -1,0 +1,47 @@
+
+state={
+	id=1156
+	name="STATE_1156"
+	manpower = 2009820
+	
+	state_category = city
+
+	history={
+		owner = BNA
+		add_core_of = BNA
+		victory_points = {
+			1453 10
+		}
+		victory_points = {
+			7552 10 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+			1453 = {
+				bunker = 10
+
+			}
+			7552 = {
+				bunker = 10
+				naval_base = 5
+
+			}
+			7524 = {
+				bunker = 5
+
+			}
+			anti_air_building = 5
+			air_base = 5
+
+		}
+
+	}
+
+	provinces={
+		7524 1453 7552
+	}
+	
+
+	local_supplies=0.0 
+}

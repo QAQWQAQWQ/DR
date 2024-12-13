@@ -1,0 +1,37 @@
+
+state={
+	id=1159
+	name="STATE_1159"
+	manpower = 576673
+	
+	state_category = metropolis
+	
+	resources={
+		grain=5
+	}
+	history={
+		owner = UBS
+		add_core_of = UBS
+		buildings = {
+			infrastructure = 3 #was: 6
+			arms_factory = 2
+			industrial_complex = 6
+			dockyard = 2
+			air_base = 10
+			
+			9814 = {
+				naval_base = 5
+			}
+			
+		}
+		victory_points = {
+			9814 30
+		}
+	}
+
+	provinces={
+		9814
+	}
+
+	local_supplies=0.0 
+}

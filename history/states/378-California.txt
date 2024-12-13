@@ -2,12 +2,12 @@
 state={
 	id=378
 	name="STATE_378"
-	manpower = 5677248
+	manpower = 1677248
 	
 	state_category = metropolis
 	
 	resources={
-		oil=180 # was: 350
+		oil=80 # was: 350
 		aluminium=8 # was: 14
 	}
 	resources={
@@ -17,35 +17,17 @@ state={
 		owner = UBS
 		add_core_of = UBS
 		buildings = {
-			infrastructure = 3 #was: 6
-			arms_factory = 2
-			industrial_complex = 6
-			dockyard = 2
-			air_base = 10
-			1562 = {
-				naval_base = 10
-			}
+			infrastructure = 1 #was: 6
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 3
 			9671 = {
 				naval_base = 4
 			}
-			9814 = {
-				naval_base = 5
-			}
-			610 = {
-				naval_base = 1
-			}
-		}
-		victory_points = {
-			9814 30
-		}
-		victory_points = {
-			1562 15 
 		}
 		victory_points = {
 			9671 25
-		}
-		victory_points = {
-			7986 5
 		}
 		victory_points = {
 			9713 1 
@@ -58,7 +40,7 @@ state={
 	}
 
 	provinces={
-		610 677 710 766 768 781 823 941 986 1432 1562 1601 1651 3588 3644 3677 3678 3784 3840 4331 4518 4657 4727 6482 6665 6681 6694 6699 6745 6757 6772 6861 6876 6881 7517 7667 7986 9637 9671 9697 9713 9730 9814 9855 9911 10159 10387 10483 11658 11698 11757 11763 11795 11859 11876 12303 12374 
+		6681 6745 11658 9713 710 677 3678 6699 1601 9671 3677 6694 1432 9637 6861 3840 4518 11763 7667 1651 6876
 	}
 
 	local_supplies=0.0 

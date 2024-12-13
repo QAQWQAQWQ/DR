@@ -5,17 +5,12 @@ state={
 		grain=5
 	}
 	provinces={
-		1954 2019 4955 5038 5061 6785 6987 10740 10894 12369 12728
+		1954 4955 5038 10740 10894 12728
 	}
 	history={
 		owner = UBS
 		add_core_of = UBS
-		victory_points = {
-			5061 5
-		}
-		victory_points = {
-			12369 5
-		}
+		
 		victory_points = {
 			10740 5
 		}
@@ -24,14 +19,6 @@ state={
 			industrial_complex = 3
 			
 			
-			6785 = {
-				coastal_bunker = 5
-
-			}
-			12369 = {
-				coastal_bunker = 5
-
-			}
 			
 			
 			anti_air_building = 5
@@ -40,7 +27,7 @@ state={
 		}
 
 	}
-	manpower=1217273
+	manpower=617273
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000
