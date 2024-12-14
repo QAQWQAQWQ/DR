@@ -1609,6 +1609,10 @@ norvoj_war_end = yes
 					add_state_core = 71
 					load_oob = SLO_1920
 				}
+				KOH = {
+					remove_state_core = 70
+					remove_state_core = 71
+				}
 				AOX = {
 					set_autonomy = { target = SLO autonomy_state = autonomy_Crown_Territory }
 				}
@@ -1636,6 +1640,10 @@ norvoj_war_end = yes
 					add_state_core = 71
 					load_oob = SLO_1920
 				}
+				KOH = {
+					remove_state_core = 70
+					remove_state_core = 71
+				}
 				AOX = {
 					set_autonomy = { target = SLO autonomy_state = autonomy_Crown_Territory }
 				}
@@ -1661,6 +1669,12 @@ norvoj_war_end = yes
 					add_state_core = 73
 					transfer_state = 72
 					add_state_core = 72
+				}
+				KOH = {
+					remove_state_core = 73
+				}
+				BXM = {
+					remove_state_core = 72
 				}
 			}
 			if = {
@@ -1693,6 +1707,10 @@ norvoj_war_end = yes
 					add_state_core = 1034
 					transfer_state = 1122
 				}
+				KOH = {
+					remove_state_core = 83
+					remove_state_core = 1122
+				}
 				AOX = {
 					set_autonomy = { target = TRA autonomy_state = autonomy_Crown_Territory }
 				}
@@ -1712,7 +1730,13 @@ norvoj_war_end = yes
 				}
 			AOX = {
 				transfer_state = 920
+				add_state_core = 920
 				transfer_state = 921
+				add_state_core = 921
+			}
+			KOH = {
+				remove_state_core = 920
+				remove_state_core = 921
 			}
 			mark_focus_tree_layout_dirty = yes
 		}
@@ -2215,6 +2239,12 @@ norvoj_war_end = yes
 					transfer_state = 1034
 					add_state_core = 1034
 					transfer_state = 1122
+				}
+				KOH = {
+					transfer_state = 43
+					transfer_state = 664
+					transfer_state = 155
+					transfer_state = 154
 				}
 				DMT={
 					transfer_state = 918

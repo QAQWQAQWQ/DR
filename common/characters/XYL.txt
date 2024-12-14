@@ -6,6 +6,14 @@ characters={
 				large="gfx/leaders/XYL/Portrait_Oszkar_Jaszi.tga"
 			}
 		}
+		field_marshal={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
 		country_leader={
 			ideology=National_Communism
 			traits={  }
@@ -19,6 +27,14 @@ characters={
 			civilian={
 				large="gfx/leaders/XYL/Portrait_Kuhn_Bella.tga"
 			}
+		}
+		field_marshal={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 		}
 		country_leader={
 			ideology=Revolutionary_Socialism

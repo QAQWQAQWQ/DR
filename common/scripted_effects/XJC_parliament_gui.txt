@@ -13,12 +13,7 @@ XJC_parliament_gui_initial = {
 	add_to_array = { parliament_member_array = 3 } # Party C
 	add_to_array = { parliament_member_array = 4 }
 	add_to_array = { parliament_member_array = 5 }
-	add_to_array = { parliament_member_array = 6 } # Party B
-	add_to_array = { parliament_member_array = 7 } # Party C
-	add_to_array = { parliament_member_array = 8 }
-	add_to_array = { parliament_member_array = 9 }
-	add_to_array = { parliament_member_array = 10 }
-	add_to_array = { parliament_member_array = 11 }  # Party D
+	add_to_array = { parliament_member_array = 6 } # Party B  # Party D
 	# Set up the positions of the dots for the semicircle parliament
 	parliament_gui_positions = yes
 	XJC_parliament_seat= yes
@@ -56,36 +51,7 @@ XJC_parliament_seat = {
 		min = 0
 		max = 200
 	}
-	clamp_variable = {
-		var = parliament_seat_array^6
-		min = 0
-		max = 200
-	}
-	clamp_variable = {
-		var = parliament_seat_array^7
-		min = 0
-		max = 200
-	}
-	clamp_variable = {
-		var = parliament_seat_array^8
-		min = 0
-		max = 200
-	}
-	clamp_variable = {
-		var = parliament_seat_array^9
-		min = 0
-		max = 200
-	}
-	clamp_variable = {
-		var = parliament_seat_array^10
-		min = 0
-		max = 200
-	}
-	clamp_variable = {
-		var = parliament_seat_array^11
-		min = 0
-		max = 200
-	}
+	
 }
 # The following scripted effect does the main job of generating the gui, by adding the seats for each party in a grid.
 # This should be called every time you need to update the gui, when you add/subtract seats for example.

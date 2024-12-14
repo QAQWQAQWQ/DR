@@ -28,6 +28,14 @@ characters={
 				large="gfx/leaders/SIW/portrait_Peter_I.tga"
 			}
 		}
+		field_marshal={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
 		country_leader={
 			ideology=semi-democratic-constitutional-monarchy
 			traits={  }

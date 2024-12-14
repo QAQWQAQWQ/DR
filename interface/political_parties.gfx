@@ -45,7 +45,7 @@ spriteTypes = {
 	}
 	spriteType = { 
 		name = "GFX_ideology_Ultranationalism_group" 
-		texturefile = "gfx/interface/ideologies/Ultranationalism.dds"
+		texturefile = "gfx/interface/ideologies/Reactionary.dds"
 	}
 
 	
@@ -109,6 +109,18 @@ spriteTypes = {
 	spriteType = { 
 		name = "GFX_ideology_Gelaohui_Order" 
 		texturefile = "gfx/interface/ideologies/Gelaohui_Order.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_Religious_Conservatism" 
+		texturefile = "gfx/interface/ideologies/religion_conservatism.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_oligarchic-conservatism" 
+		texturefile = "gfx/interface/ideologies/oligarchy_conservatism.dds"
+	}
+	spriteType = { 
+		name = "GFX_ideology_jacksonian-conservatism" 
+		texturefile = "gfx/interface/ideologies/Jackson_conservatism.dds"
 	}
 }
 
