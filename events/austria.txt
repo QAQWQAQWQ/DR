@@ -67,6 +67,12 @@ country_event = {
 		set_variable = { global.german_war = 1 }
 		diplomatic_relation = { country = AOX relation = non_aggression_pact }
 		AOX = { dismantle_faction = yes }
+		if = {
+			limit = {
+				check_variable = {global.4italian_war = 1}
+			}
+			AOX = {create_faction = austrian_empire}
+		}
 	}
 }
 country_event = {

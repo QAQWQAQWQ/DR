@@ -6,6 +6,13 @@ characters={
 				large="gfx/leaders/AOX/Portrait_Friedrich.tga"
 			}
 		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
 		country_leader={
 			ideology=autocratic-constitutional-monarchy
 			traits={  }
@@ -33,6 +40,13 @@ characters={
 			civilian={
 				large="gfx/leaders/ALB/Portrait_Esad_Toptani.tga"
 			}
+		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
 		}
 		country_leader={
 			ideology=Authoritarian_Conservatism
