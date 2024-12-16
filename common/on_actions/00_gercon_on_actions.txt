@@ -371,6 +371,55 @@ on_actions = {
                     WWS = { add_to_faction = PREV }
                     ger_con_pre_controlled = yes
                 }
+                WWS = {
+                    every_owned_state = {
+                    limit = {
+                        is_core_of = BXM
+                    }
+                    transfer_state_to = BXM
+                    }
+                }
+                WWS = {
+                    every_owned_state = {
+                    limit = {
+                        is_core_of = KGL
+                    }
+                    transfer_state_to = KGL
+                    }
+                }
+                WWS = {
+                    every_owned_state = {
+                    limit = {
+                        is_core_of = KOH
+                    }
+                    transfer_state_to = KOH
+                    }
+                }
+                WWS = {
+                    every_owned_state = {
+                    limit = {
+                        is_core_of = TRA
+                    }
+                    transfer_state_to = TRA
+                    }
+                }
+                WWS = {
+                    every_owned_state = {
+                    limit = {
+                        is_core_of = DMT
+                    }
+                    transfer_state_to = DMT
+                    }
+                }
+                WWS = {
+                    every_owned_state = {
+                    limit = {
+                        is_core_of = SLO
+                    }
+                    transfer_state_to = SLO
+                    }
+                }
+                
                 set_autonomy = { target = VCT autonomy_state = autonomy_Crown_Territory }
                 set_autonomy = { target = KGL autonomy_state = autonomy_Crown_Territory }
                 set_autonomy = { target = BXM autonomy_state = autonomy_Crown_Territory }

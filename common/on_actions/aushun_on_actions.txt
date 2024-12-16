@@ -423,6 +423,9 @@ on_actions = {
                     annex_country = {
                         target = ROOT transfer_troops = no
                     }
+                    retire_character = KOH_Karoly_Huszar
+                    retire_character = KOH_Horthy_Miklos
+                    retire_character = KOH_Mihaly_Karolyi
                 }
                 AOX = {
                     set_autonomy = { target = KOH autonomy_state = autonomy_Crown_Territory }
