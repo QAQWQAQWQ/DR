@@ -22,6 +22,19 @@ characters={
 				large="gfx/leaders/DSX/Portrait_Leto_falbeck.tga"
 			}
 		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		country_leader={
+			ideology=ironfist-colonial-assimilation
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
 	}
 	DSX_Theodor_Seitz={
 		name=DSX_Theodor_Seitz
@@ -30,8 +43,15 @@ characters={
 				large="gfx/leaders/DSX/Portrait_Theodor_Seitz.tga"
 			}
 		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
 		country_leader={
-			ideology=Authoritarian_Conservatism
+			ideology=ironfist-colonial-assimilation
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1

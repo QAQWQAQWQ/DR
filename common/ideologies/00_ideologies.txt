@@ -82,6 +82,7 @@ ideologies = {
 			Revolutionary_Syndicalism = {}
 			Revolutionary_Marxism = {}
 			Revolutionary_Massimalismo = {}
+			Revolutionary-front-rev = {}
 		}
 		dynamic_faction_names = {
 		}
@@ -108,7 +109,8 @@ ideologies = {
 	Moderate_Socialism = {
 		types = {
 			Moderate_Socialism={}
-			Moderate_Massimalismo ={}
+			Massimalismo ={}
+			Revolutionary-front = {}
 		}
 		dynamic_faction_names = {
 		}
@@ -144,6 +146,7 @@ ideologies = {
 			national-socdem = {}
 			revolutionary-corporatism = {}
 			Dannunzionism_Ref = {}
+			Ref-Big-tent = {}
 		}
 		dynamic_faction_names = {
 		}
@@ -180,6 +183,8 @@ ideologies = {
 			national-liberalism = {}
 			Welfare_Sanmin_Doctrine={}
 			oligarchic-liberalism={}
+			Lib-Big-tent = {}
+			comprador-liberalism = {}
 		}
 		
 		dynamic_faction_names = {
@@ -227,6 +232,8 @@ ideologies = {
 			Conservative_Sanmin_Doctrine= {}
 			oligarchic-conservatism = {}
 			jacksonian-conservatism = {}
+			Co-Big-tent = {}
+			comprador-conservatism = {}
 		}
 		
 		dynamic_faction_names = {
@@ -302,28 +309,28 @@ ideologies = {
 	
 		types = {
 			Dictatorship = {}
-			Military_Dictatorship={}
+			military-dictatorship={}
 			autocratic-constitutional-monarchy = {}
 			Absolute_Monarchy={}
-			Warlord_Dictatorship = {}
+			warlord-dictatorship = {}
 			ironfist-colonial-government = {}
 			ironfist-colonial-assimilation = {}
 			Absolute_Theocracy = {}
 			theocratic-aristocratic-autocracy = {}
-			Civilian_Dictatorship = {}
-			False-Revolutionary_Reactionist_Dictatorship = {}
-			Reactionist_Sanmin_Dictatorship = {}
-			Comprador_Dictatorship = {}
+			civilian-dictatorship = {}
+			pseudo-rev-rea-aut = {}
+			pseudo-sanmin-autocracy = {}
+			comprador-dictatorship = {}
 			autocratic-colonial-government = {}
 			caudillo-dictatorship = {}
-			aristocratic-dictatorship = {}
-			oligarchic-dictatorship = {}
+			aristocratic-autocracy = {}
+			oligarchic-autocracy = {}
 			zhongshi-rs-dirigisme = {}
 			qing-dirigisme = {}
-			progressive-dictatorship = {}
+			progressive-autocracy = {}
 			guerrilla_movement = {}
-			progressive-dictatorship-nationalism = {}
-			bonaparte-autocratism = {}
+			nationalist-autocracy = {}
+			bonaparte-autocracy = {}
 			bonaparte-auto-cm = {}
 		}
 		
@@ -370,6 +377,7 @@ ideologies = {
 			National_Syndicalism={}
 			National_Militarism={}
 			Reactionist_National_Corporatism = {}
+			Na-Big-tent = {}
 		}
 		
 		dynamic_faction_names = {

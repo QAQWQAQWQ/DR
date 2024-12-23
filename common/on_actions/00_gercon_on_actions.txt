@@ -263,6 +263,15 @@ on_actions = {
                     }
                 }
                 set_variable = { global.aus_win_german_war = 1 }
+                DAS = { annex_country = { target = DSX transfer_troops = yes } 
+                
+                    set_cosmetic_tag = DAS_TR
+                    set_party_name = {
+                        ideology = Dictatorship
+                        long_name = DAS_TR_Dictatorship_party
+                        name = DAS_TR_Dictatorship_party
+                    }
+            }
                 every_country = { country_event = ger_con.6 }
                 if = {
                     limit = {
@@ -348,6 +357,7 @@ on_actions = {
                     check_variable = { global.pre_win_german_war = 0 }
                 }
                 set_variable = { global.pre_win_german_war = 1 }
+                
                 every_country = { country_event = ger_con.7 }
                 AOX = { white_peace = WWS }
                 WWS = { white_peace = AOX }

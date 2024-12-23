@@ -1,0 +1,31 @@
+
+state={
+	id=1162
+	name="STATE_1162"
+	manpower = 292484
+	
+	state_category = city
+	
+
+	resources={
+		grain=5
+	}
+	history={
+		owner = ENL
+		add_core_of = FMS
+		
+		buildings = {
+			infrastructure = 2
+			7342 = {
+				naval_base = 2
+			}
+		}
+
+	}
+
+	provinces={
+		7342
+	}
+
+	local_supplies=0.0 
+}

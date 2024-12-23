@@ -406,27 +406,27 @@ news_event = {
 		name = Hidden_News.22.a
 	}		
 }
-news_event = {
-	id = Hidden_News.23
-    hidden = yes
-	fire_only_once = yes
-   trigger = {
-	AND={
-		date > 1920.1.2
-		date < 1920.1.4
-	}
+##news_event = {
+	##id = Hidden_News.23
+    ##hidden = yes
+	##fire_only_once = yes
+   ##trigger = {
+	##AND={
+	##	date > 1920.1.2
+	##	date < 1920.1.4
+	##}
 	
-    }
-   immediate = {
-	news_event = WorldNew.23
-    }
-    mean_time_to_happen = {
-	days = 2
-    }
-	option = {
-		name = Hidden_News.23.a
-	}		
- }
+    ##}
+   ##immediate = {
+	##news_event = WorldNew.23
+    ##}
+    ##mean_time_to_happen = {
+	##days = 2
+    ##}
+	##option = {
+	##	name = Hidden_News.23.a
+	##}		
+ ##}
  
  news_event = {
 	id = Hidden_News.24
@@ -855,20 +855,20 @@ news_event = {
 	}		
 }
 
-news_event = {
-	id = WorldNew.23
-	title = WorldNew.23.t
-	desc = WorldNew.23.d
+##news_event = {
+##	id = WorldNew.23
+##	title = WorldNew.23.t
+##	desc = WorldNew.23.d
 	
-	major = yes
-	is_triggered_only = yes
+##	major = yes
+##	is_triggered_only = yes
 
    
 
-	option = {
-		name = WorldNew.23.a
-	}		
-}
+##	option = {
+##		name = WorldNew.23.a
+##	}		
+##}
 news_event = {
 	id = WorldNew.24
 	title = WorldNew.24.t
@@ -910,4 +910,17 @@ news_event = {
 				
 					}
 			}
+			news_event = {
+				id = WorldNew.27
+				title = WorldNew.27.t
+				desc = WorldNew.27.d
+				picture = GFX_austria_1_pict
+				major = yes
+				is_triggered_only = yes
+				
+				option = {
+					name = WorldNew.27.a
+					
+						}
+				}
 		

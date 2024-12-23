@@ -72,6 +72,7 @@ recruit_character = AOX_Ferdinand_Hanusch
 recruit_character = AOX_Rudolf_Ramek
 recruit_character = AOX_Rudolf_Hilferding
 recruit_character = AOX_Erwin_Schrodinger	
+set_autonomy = { target = DAS autonomy_state = autonomy_colony }
 set_politics = {
 	ruling_party = Dictatorship
 	last_election = "1918.11.11"

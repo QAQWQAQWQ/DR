@@ -11,7 +11,7 @@ set_technology = {
 	fuel_silos = 1
 }
 
-recruit_character = GUB_Gerardo_Machado
+recruit_character = GUB_Mario_Garcia_Menocal
 
 	set_technology = {
 		interwar_artillery = 1
@@ -54,8 +54,8 @@ set_politics = {
 }
 
 set_popularities = {
-	Liberalism = 5
-	Nationalism = 1
-	Conservatism = 89
-	Revolutionism = 5
+	Conservatism = 67.5
+	Liberalism = 32.5
 }
+give_military_access = BNA
+give_military_access = UBS

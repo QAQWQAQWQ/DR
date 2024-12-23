@@ -1,0 +1,29 @@
+
+state={
+	id=1175
+	name="STATE_1175"
+	
+	resources={
+		grain=7
+	}
+	history={
+		victory_points = {
+			13290 3 
+		}
+		owner = YED
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = YED
+	}
+
+	provinces={
+		6953 9906 11887 9890 13290
+	}
+	manpower=707000
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=5.0 
+}

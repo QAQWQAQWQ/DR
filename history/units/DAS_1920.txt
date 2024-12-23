@@ -1,0 +1,73 @@
+
+division_template = {
+	name = "非洲步兵旅"			
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+	}
+	priority = 1
+	support = {
+        artillery = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "非洲骑兵旅"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+        cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+	    recon = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division= {	
+		name = "非洲一旅"
+		location = 2196
+		division_template = "非洲步兵旅"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "非洲骑兵旅"
+		location = 2196
+		division_template = "非洲骑兵旅"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "非洲一旅"
+		location = 4879
+		division_template = "非洲步兵旅"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "非洲骑兵旅"
+		location = 4879
+		division_template = "非洲骑兵旅"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "非洲一旅"
+		location = 2196
+		division_template = "非洲步兵旅"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "非洲骑兵旅"
+		location = 2196
+		division_template = "非洲骑兵旅"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	
+}

@@ -1,0 +1,31 @@
+
+state={
+	id=1173
+	name="STATE_1173"
+	manpower =243947
+	
+	
+	state_category = pastoral
+	
+	
+	resources={
+		grain=8
+		
+	}
+	history={
+		owner = KLD
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 2
+		}
+		add_core_of = KLD
+	}
+
+	provinces={
+		937 3922
+	}
+
+	local_supplies=7.0 
+}

@@ -384,16 +384,9 @@ norvoj_war_end = {
     custom_trigger_tooltip = { 
         tooltip = norvoj_war_end_tri_tool
         check_variable  = {
-            global.norvoj_war_str = 1
+            global.norvoj_war_str = 2
         }
-        OR = {
-            check_variable  = {
-                global.norvoj_hun_win = 1
-            }
-            check_variable  = {
-                global.norvoj_cro_win = 1
-            }
-        }
+        
     }
 }
 norvoj_war_not_end = {

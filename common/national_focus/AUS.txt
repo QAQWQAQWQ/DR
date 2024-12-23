@@ -623,6 +623,7 @@ focus_tree = {
 			AOX = { puppet = DOR }
 
 			set_variable = { global.pre_win_german_war = 1 }
+			
 			# set_variable = { global.aus_win_german_war = 1 }
 			set_variable = { global.german_war = 1 }
 			set_variable = { global.ger_con_end = 1 }
@@ -3039,7 +3040,9 @@ norvoj_war_end = yes
 				# always = yes
 				AND = {
 					has_completed_focus = AUS_bir_15
-					norvoj_war_end_tri_tool = yes
+					check_variable  = {
+						global.norvoj_war_str = 2
+					}
 					OR = {
 						has_completed_focus = AUS_ger_1
 						has_completed_focus = AUS_ger_2
@@ -4060,6 +4063,14 @@ norvoj_war_end = yes
 					AOX = { annex_country = { target = PREV transfer_troops = yes }  }
 				}
 				set_cosmetic_tag = AOX_DK
+				DAS = {
+					set_cosmetic_tag = DAS_DK
+					set_party_name = {
+						ideology = Dictatorship
+						long_name = DAS_DKA_Dictatorship_party
+						name = DAS_DKA_Dictatorship_party
+					}
+				}
 			}
 		}
 	}

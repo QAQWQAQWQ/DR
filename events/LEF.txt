@@ -95,7 +95,9 @@ country_event = {
 	option = {
 		name = LEF.1.a
 		set_global_flag = LEFwar_lefwin
-	    
+	    LEF = {
+			transfer_state = 1026
+		}
 	}
 }
 country_event = {

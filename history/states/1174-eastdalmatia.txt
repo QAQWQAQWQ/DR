@@ -1,0 +1,38 @@
+
+state={
+	id=1174
+	name="STATE_1174"
+	resources={
+		chromium=20.000
+		aluminium=70.000
+	}
+
+	history={
+		
+		owner = DMT
+		victory_points = {
+			13287 3 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			13287 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = DMT
+		add_core_of = HES
+
+	}
+
+	provinces={
+		13286 13287
+	}
+	manpower=895500
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=3.0 
+}
+
+give_military_access = ALB

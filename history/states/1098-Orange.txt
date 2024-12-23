@@ -10,12 +10,18 @@ state={
 		owner = NAF
 		add_core_of = NAF
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4 
+			arms_factory = 1
+			industrial_complex = 5
+			air_base = 3
+		}
+		victory_points = {
+			10400 10
 		}
 	}
 
 	provinces={
-		5231 12064 12648
+		5231 12064 12648 1688 2171 5106 5217 10400 10566
 	}
 
 	local_supplies=0.0 

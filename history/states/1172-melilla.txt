@@ -1,0 +1,29 @@
+
+state = {
+	id = 1172
+	name = "STATE_1172"
+	manpower = 38342
+	
+	state_category = city
+
+	history = {
+		owner = SBY
+		add_core_of = LEF
+		add_core_of = MOL
+		victory_points = {
+			13283 5
+		}
+
+        buildings = {
+			infrastructure = 1 
+			13283 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces = {
+		13283
+	}
+
+	local_supplies = 0.0 
+}

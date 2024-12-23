@@ -10,6 +10,14 @@ state={
 		add_core_of = ZHX
 		buildings = {
 			infrastructure = 2
+			10068 = {
+				naval_base = 4
+				coastal_bunker = 3
+			}
+			4137 = {
+				naval_base = 4
+				coastal_bunker = 3
+			}
 		}
 		victory_points = {
 			11944 3

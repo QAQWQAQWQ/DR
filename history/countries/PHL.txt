@@ -1,4 +1,4 @@
-﻿capital = 624
+﻿capital = 327
 oob = "PHL_1920"
 
 # Starting tech
@@ -11,7 +11,6 @@ set_technology = {
 	fuel_silos = 1
 }
 recruit_character = PHL_Emilio_Aguinaldo
-recruit_character = PHL_Miguel_Primo_de_Rivera
 recruit_character = PHL_Quezon
 	set_technology = {
 		interwar_artillery = 1
@@ -53,7 +52,9 @@ set_politics = {
 }
 
 set_popularities = {
-	Dictatorship = 100
+	Dictatorship = 95
+	Nationalism = 3
+	Reformism = 2
 }
 add_ideas = {
 	Smallholder_economy

@@ -6,6 +6,10 @@ state={
 	state_category = city
 	history={
 		owner = WWS
+		add_core_of = WWS
+		victory_points = {
+			13295 10
+		}
 
 		
 		buildings = {
@@ -13,14 +17,15 @@ state={
 			arms_factory = 2
 			industrial_complex = 1
 			dockyard = 3
-			362 = {
-				naval_base = 5
+			
+			13295 = {
+				naval_base = 10
 			}
 		}
 	}
 
 	provinces={
-		362
+		362 13295
 	}
 
 	local_supplies=0.0 
