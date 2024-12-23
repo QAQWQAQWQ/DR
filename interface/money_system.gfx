@@ -113,6 +113,39 @@ spriteTypes = {
 		name = "GFX_economy_background5"
 		texturefile = "gfx/interface/economy_background5.dds"
 	}
+	spriteType = {
+		name = "GFX_economy_background6"
+		texturefile = "gfx/interface/economy_background6.dds"
+	}
+	spriteType = {
+		name = "GFX_economy_background7"
+		texturefile = "gfx/interface/economy_background7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Worker_support" 
+		texturefile = "gfx/interface/Worker_support.dds"
+	}
+	spriteType = {
+		name = "GFX_Farmer_support" 
+		texturefile = "gfx/interface/Farmer_support.dds"
+	}
+	spriteType = {
+		name = "GFX_Army_support" 
+		texturefile = "gfx/interface/Army_support.dds"
+	}
+	spriteType = {
+		name = "GFX_Merchant_support" 
+		texturefile = "gfx/interface/Merchant_support.dds"
+	}
+	spriteType = {
+		name = "GFX_Scholar_support" 
+		texturefile = "gfx/interface/Scholar_support.dds"
+	}
+	spriteType = {
+		name = "GFX_Bureaucratic_support" 
+		texturefile = "gfx/interface/Bureaucratic_support.dds"
+	}
 
 
 	spriteType = {

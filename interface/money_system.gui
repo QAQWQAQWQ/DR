@@ -1,16 +1,16 @@
 guiTypes = {
-  
-	containerWindowType = {
+   
+	containerWindowType = {   
 		name = "money_system_ui_window" 
-		position = { x = 0 y = 0 } 
-		                
-		buttonType = { 
-			name = "money_system_button"
-			size = {width = 100 height = 20} 
+		position = { x = 0 y = 0 }   
+		                 
+		buttonType = {  
+			name = "money_system_button" 
+			size = {width = 100 height = 20}  
 			spriteType = "GFX_ECO_BUTTON"
-			buttonFont = "hoi_18mbs"
+			buttonFont = "hoi_18mbs"  
 			buttonText = "经济状况"
-			position = { x = 112 y = 390 }
+			position = { x = 112 y = 390 } 
 			pdx_tooltip = "money_system_ui_TT"
 		}
 		
@@ -27,66 +27,23 @@ guiTypes = {
             spriteType ="GFX_economy_background"
 		 	position = {x = 16 y = 45}  
 		}
-		iconType = { 
-			name = "ECO_icon2"
-            spriteType ="GFX_economy_background1"
-		 	position = {x = 28 y = 70}                  
-		}
 		iconType = {
 			name = "ECO_icon3"
             spriteType ="GFX_economy_background2"
-		 	position = {x = 275 y = 47} 
+		 	position = {x = 280 y = 227} 
 		}
-		iconType = { 
-			name = "ECO_icon4"
-            spriteType ="GFX_economy_background1"
-		 	position = {x = 28 y = 106} 
-		}
-		iconType = { 
-			name = "ECO_icon5"
-            spriteType ="GFX_economy_background1"
-		 	position = {x = 28 y = 142} 
-		}
-		iconType = { 
-			name = "ECO_icon6"
-            spriteType ="GFX_economy_background1"
-		 	position = {x = 28 y = 179} 
-		}
-		iconType = { 
-			name = "ECO_icon7"
-            spriteType ="GFX_economy_background1"
-		 	position = {x = 28 y = 215} 
-		}
-		iconType = { 
-			name = "ECO_icon8" 
-            spriteType ="GFX_economy_background1"
-		 	position = {x = 28 y = 251} 
-		}
+		
 		
 		iconType = {
 			name = "ECO_icon9"
-            spriteType ="GFX_economy_background2"
-		 	position = {x = 275 y = 135}                   
+            spriteType ="GFX_economy_background5"
+		 	position = {x = 25 y = 53}                   
 		}
+		
 		iconType = { 
-			name = "ECO_icon10" 
+			name = "ECO_icon10"  
             spriteType ="GFX_economy_background1"
-		 	position = {x = 28 y = 286} 
-		}
-		iconType = { 
-			name = "ECO_icon11" 
-            spriteType ="GFX_economy_background1"
-		 	position = {x = 285 y = 228} 
-		}
-		iconType = { 
-			name = "ECO_icon12" 
-            spriteType ="GFX_economy_background1"
-		 	position = {x = 285 y = 265} 
-		}
-		iconType = { 
-			name = "ECO_icon13" 
-            spriteType ="GFX_economy_background1"
-		 	position = {x = 285 y = 300} 
+		 	position = {x = 16 y = 10} 
 		}
 		background = {
 				name = "money_system_main"
@@ -177,7 +134,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "money_system_value_name"
-			position = { x = 37 y = 80 }
+			position = { x = 37 y = 65 }
 			font = "hoi_18mbs"
 			text = "money_system_value_name_TT"	 
 			maxWidth = 500
@@ -189,7 +146,7 @@ guiTypes = {
   
 		instantTextBoxType = { 
 			name = "money_system_tax"
-			position = { x = 295 y = 58}
+			position = { x = 295 y = 60}
 			font = "hoi_18mbs"
 			text = "money_system_value_tax_TT"	 
 			maxWidth = 500
