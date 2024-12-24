@@ -6,6 +6,13 @@ characters={
 				large="gfx/leaders/DMA/Portrait_Thomas_Snowden.tga"
 			}
 		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
 		country_leader={
 			ideology=ironfist-colonial-government
 			traits={  }
@@ -28,5 +35,20 @@ characters={
 			id=-1
 		}
 	}	
+	DMA_Horacio_Vasquez={
+		name=DMA_Horacio_Vasquez
+		portraits={
+			civilian={
+				large="gfx/leaders/DMA/Portrait_Horacio_Vasquez.tga"
+			}
+		}
+		country_leader={
+			ideology=comprador-conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
+	gfx/leaders/DMA/Portrait_Horacio_Vasquez.tga
 
 	}

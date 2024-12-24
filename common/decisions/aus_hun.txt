@@ -140,6 +140,7 @@ aus_hun_decisions = {
 						tag = KOH
 					}
 					set_variable = { global.norvoj_cro_win = 1 }
+					set_variable = {global.norvoj_war_str = 2}
 					if = {
 						limit = {
 							OR = {
@@ -237,6 +238,20 @@ aus_hun_decisions = {
 							KOH = {controls_state = 103}
 						}}
 						KOH = {transfer_state = 103}
+					}
+					if = {
+						limit = {
+							OR = {
+							KOH = {controls_state = 1173}
+						}}
+						KOH = {transfer_state = 1173}
+					}
+					if = {
+						limit = {
+							OR = {
+							KOH = {controls_state = 1174}
+						}}
+						KOH = {transfer_state = 1174}
 					}
 					DMT = { white_peace = KOH }
 					KOH = { white_peace = DMT }

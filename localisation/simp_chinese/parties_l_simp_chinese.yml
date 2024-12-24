@@ -123,11 +123,16 @@
  Revolutionary_Massimalismo:0 "革命最高纲领主义"
  Revolutionary_Massimalismo_desc:0 "革命最高纲领主义"
 
+ Revolutionary-front-rev:0 "革命阵线"
+ Revolutionary-front-rev_desc:0 "革命阵线"
+
 ####温和社会主义
  Moderate_Socialism:0 "温和社会主义"
  Moderate_Socialism_desc:0 ""
- Moderate_Massimalismo:0 "温和最高纲领主义"
- Moderate_Massimalismo_desc:0 "温和最高纲领主义"
+ Massimalismo:0 "最高纲领主义"
+ Massimalismo_desc:0 "最高纲领主义"
+ Revolutionary-front:0 "革命阵线"
+ Revolutionary-front_desc:0 "革命阵线"
 
 
 ##改良主义
@@ -145,12 +150,18 @@
  Bernstein_Reformism_desc:0 "§Y伯恩斯坦主义§!\n作为马克思和恩格斯的好学生，爱德华·伯恩斯坦在早期革命主义的圈子当中可谓是家喻户晓的人物。然而，随着法兰西民主邦联开始走向改良化，以及国际工人运动开始走向低潮。伯恩施坦的改良思想随着这一低潮开始高涨，并最终得出了一种“进化社会主义”，也就是“伯恩斯坦主义”。伯恩斯坦对经典马克思主义理论进行了一种延伸和“再质疑”。他认为马克思主义理论当中，对于资本主义经济危机的“预言”是“有失偏颇”的。并反对通过暴力来推翻资本主义政权，而是主张工人阶级通过和平的斗争方式来掌握政治权利和经济权利，并“民主而和平地改造国家”。很多情况下，伯恩斯坦都会因为他这些“离经叛道”的主张遭到保守的革命主义者们的斥责。但因为其在左翼圈子的地位以及和导师们的特殊关系，这位蜕化为改良主义者的“前革命家”在如今的泛左翼当中也并不缺乏支持者。而只有时间才能证明，他究竟有没有将马克思和恩格斯的遗产带往一个新的方向。"
  New_Sanmin_Doctrine:0 "新三民主义"
  New_Sanmin_Doctrine_desc:0 ""
+
  national-socdem:0 "民族社会民主主义"
  national-socdem_desc:0 ""
+
  revolutionary-corporatism:0 "革命法团主义"
  revolutionary-corporatism_desc:0 ""
+
  Dannunzionism_Ref:0 "邓南遮主义"
  Dannunzionism_Ref_desc:0 ""
+
+ Ref-Big-tent:0 "改良主义大帐篷"
+ Ref-Big-tent_desc:0 ""
 
 ##自由主义
  Social_Liberalism:0 "社会自由主义"
@@ -161,18 +172,30 @@
  Conservative_Liberalism_desc:0 "§Y保守自由主义§!\n作为一种处于光谱中间的意识形态，自由主义尝试在进步和反动两种倾向当中寻找一种平衡，而在这个过程当中，有这样一种自由主义思潮的变种，选择和现状相结合，最终形成了——保守自由主义。作为民主政体的双生子，自由主义和保守主义在相似的立场之下有了结合并非一件很稀奇的事情。但保守自由主义又和其他的自由主义/保守主义思潮又有着明显的不同。比如，他们支持古典自由主义的经济政策，却不支持其他任何形式的自由主义政策。在社会政策等方面，他们往往趋向保守主义，并将其视为维护自由市场的手段或是正道世界的必然选择。无论保守自由主义出于什么样的态度奉行这一理念，我们都可以用一句话概括这种思想：“除了市场是自由的，其他什么都不是自由的。”"
  Progressive_Liberalism:0 "进步自由主义"
  Progressive_Liberalism_desc:0 "§Y进步自由主义§!\n作为最具“现代性”的自由主义思想之一，进步自由主义实际上也是两种思想的杂糅产物——从名字我们就能看得出来，进步自由主义混合了自由主义的经济思想和进步主义的社会议题，这也使得这一意识形态成为正道世界当中一个独特的存在。然而，这一思想和其他更为进步的意识形态相比，最大的区别就在于反对国家干预经济，主张自由放任的经济政策。而与之相关的一系列社会政策，往往会让进步自由主义的党派内部吵得个不可开交，最后在各方利益的交换之下取得妥协。在不那么和经济系统相关的社会议题上，进步自由主义则提倡多元化和进步主义的政策。显然，进步自由主义之所以能够成为最具“现代性”的思想，归根结底是因为它站在了正道世界的过去(市场的自由主义)和未来(文化的进步主义)当中。但是它是否能保持这样的现代性，则要取决于这一思想的信奉者能否在这两者之中维系平衡，亦或者是投入其中一方的怀抱当中。"
+
  Welfare_Sanmin_Doctrine:0 "民生三民主义"
  Welfare_Sanmin_Doctrine_desc:0 ""
+
  Progressive_Warlord:0 "进步军阀"
  Progressive_Warlord_desc:0 ""
+
  Hamiltonian_Liberalism:0 "汉密尔顿自由主义"
  Hamiltonian_Liberalism_desc:0 ""
+
  Sanmin_Liberalism:0 "三民自由主义"
  Sanmin_Liberalism_desc:0 ""
+
  national-liberalism:0 "民族自由主义"
  national-liberalism_desc:0 ""
+
  oligarchic-liberalism:0 "寡头自由主义"
  oligarchic-liberalism_desc:0 ""
+
+ Lib-Big-tent:0 "自由主义大帐篷"
+ Lib-Big-tent_desc:0 ""
+
+ comprador-liberalism:0 "买办自由主义"
+ comprador-liberalism_desc:0 ""
 
 ##保守主义
  Classical_Conservatism:0 "古典保守主义"
@@ -196,9 +219,19 @@
  oligarchic-conservatism_desc:0 ""
  jacksonian-conservatism:0 "杰克逊保守主义"
  jacksonian-conservatism_desc:0 ""
+ 
+ Co-Big-tent:0 "保守主义大帐篷"
+ Co-Big-tent_desc:0 ""
+
+ comprador-conservatism:0 "买办保守主义"
+ comprador-conservatism_desc:0 ""
 
 ####家长制
- Authoritarian_Civilian_Government:0 "威权文官政府"
+ Paternalism:0 "家长制"
+ Paternalism_desc:0 ""
+ Paternalism_type:0 "家长制"
+ Paternalism_type_desc:0 ""
+ Authoritarian_Civilian_Government:0 "家长制文官政府"
  Authoritarian_Civilian_Government_desc:0 ""
  Paternalist_Constitutional_Sanmin_Doctrine:0 "家长制宪政三民主义"
  Paternalist_Constitutional_Sanmin_Doctrine_desc:0 ""
@@ -221,12 +254,16 @@
 
 
 ####专制主义
- Military_Dictatorship:0 "军政独裁"
- Military_Dictatorship_desc:0 ""
- Warlord_Dictatorship:0 "军阀独裁"
- Warlord_Dictatorship_desc:0 ""
- Civilian_Dictatorship:0 "文官独裁"
- Civilian_Dictatorship_desc:0 ""
+ Dictatorship:0 "专制主义"
+ Dictatorship_desc:0 ""
+ Dictatorship_type:0 "专制主义"
+ Dictatorship_type_desc:0 ""
+ military-dictatorship:0 "军政独裁"
+ military-dictatorship_desc:0 ""
+ warlord-dictatorship:0 "军阀独裁"
+ warlord-dictatorship_desc:0 ""
+ civilian-dictatorship:0 "文官独裁"
+ civilian-dictatorship_desc:0 ""
  Absolute_Monarchy:0 "绝对君主制"
  Absolute_Monarchy_desc:0 ""
  autocratic-constitutional-monarchy:0 "专制君宪制"
@@ -239,32 +276,32 @@
  Absolute_Theocracy_desc:0 "绝对神权制"
  theocratic-aristocratic-autocracy:0 "神权-贵族专制"
  theocratic-aristocratic-autocracy_desc:0 "神权-贵族专制"
- False-Revolutionary_Reactionist_Dictatorship:0 "伪革命独裁制"
- False-Revolutionary_Reactionist_Dictatorship_desc:0 "伪革命独裁制"
- Reactionist_Sanmin_Dictatorship:0 "反动三民独裁制"
- Reactionist_Sanmin_Dictatorship_desc:0 "反动三民独裁制"
- Comprador_Dictatorship:0 "买办独裁制"
- Comprador_Dictatorship_desc:0 "买办独裁制"
+ pseudo-rev-rea-aut:0 "伪革命专制"
+ pseudo-rev-rea-aut_desc:0 "伪革命专制"
+ pseudo-sanmin-autocracy:0 "伪三民专制"
+ pseudo-sanmin-autocracy_desc:0 "伪三民专制"
+ comprador-dictatorship:0 "买办独裁制"
+ comprador-dictatorship_desc:0 "买办独裁制"
  autocratic-colonial-government:0 "专制殖民政府"
  autocratic-colonial-government_desc:0 ""
  caudillo-dictatorship:0 "考迪罗独裁制"
  caudillo-dictatorship_desc:0 ""
- aristocratic-dictatorship:0 "贵族专制"
- aristocratic-dictatorship_desc:0 ""
- oligarchic-dictatorship:0 "寡头独裁制"
- oligarchic-dictatorship_desc:0 ""
+ aristocratic-autocracy:0 "贵族专制"
+ aristocratic-autocracy_desc:0 ""
+ oligarchic-autocracy:0 "寡头专制"
+ oligarchic-autocracy_desc:0 ""
  zhongshi-rs-dirigisme:0 "中式君权统制"
  zhongshi-rs-dirigisme_desc:0 ""
  qing-dirigisme:0 "大清统制"
  qing-dirigisme_desc:0 ""
- progressive-dictatorship:0 "进步专制"
- progressive-dictatorship_desc:0 ""
- progressive-dictatorship-nationalism:0 "进步专制民族主义"
- progressive-dictatorship-nationalism_desc:0 ""
+ progressive-autocracy:0 "进步专制"
+ progressive-autocracy_desc:0 ""
+ nationalist-autocracy:0 "民族主义专制"
+ nationalist-autocracy_desc:0 ""
  guerrilla_movement:0 "游击运动"
  guerrilla_movement_desc:0 ""
-bonaparte-autocratism:0 "专制波拿巴主义"
-bonaparte-autocratism_desc:0 ""
+bonaparte-autocracy:0 "专制波拿巴主义"
+bonaparte-autocracy_desc:0 ""
 bonaparte-auto-cm:0 "专制君宪波拿巴主义"
 bonaparte-auto-cm_desc:0 ""
 
@@ -358,11 +395,11 @@ WWS_Revolutionism_new_party:0 "德国社会民主党(拉左派)"
 WWS_Revolutionism_new_party_long:0 "德国社会民主党(拉左派)"
 WWS_Conservatism_party:0 "中间党-德国保守党-德国国家党-农民党"
 
-HAT_Dictatorship_party:0 "海地新英军政当局"
-HAT_Dictatorship_party_long:0 "海地新英军政当局"
+HAT_Liberalism_party:0 "自由党"
+HAT_Conservatism_party:0 "保守党"
 
-DMA_Dictatorship_party:0 "军事总督府"
-DMA_Dictatorship_party_long:0 "圣多明各军事总督府"
+DMA_Conservatism_party:0 "进步国民同盟"
+DMA_Liberalism_party:0 "公民爱国联盟"
 
 LMJ_Dictatorship_party:0 "圣座"
 LMJ_Dictatorship_party_long:0 "圣座"
@@ -591,8 +628,8 @@ HNZ_Dictatorship_party_long:0 "河南省长公署"
 WSP_Dictatorship_party:0 "山东省长公署"
 WSP_Dictatorship_party_long:0 "山东省长公署"
 
-BNA_Liberalism_party:0 "联盟党"
-BNA_Liberalism_party_long:0 "联盟党"
+BNA_Liberalism_party:0 "联合自由党"
+BNA_Liberalism_party_long:0 "联合自由党"
 BNA_Conservatism_party:0 "自由党"
 BNA_Conservatism_party_long:0 "自由党"
 BNA_Reformism_party:0 "进步党"
@@ -761,7 +798,7 @@ GUA_Conservatism_party:0 "联盟党"
 HON_Dictatorship_party:0 "洪都拉斯自由党"
 HON_Conservatism_party:0 "洪都拉斯国民党"
 ELS_Dictatorship_party:0 "国家民主党"
-NIC_Dictatorship_party:0 "中美洲保守共和党"
+NIC_Conservatism_party:0 "中美洲保守共和党"
 
 BRA_Paternalism_party:0 "佩索阿内阁"
 WNR_Dictatorship_party:0 "委内瑞拉军政府"
@@ -791,7 +828,7 @@ EYJ_Dictatorship_party:0 "瓦赫巴内阁"
 EYJ_Dictatorship_party_long:0 "尤塞夫·瓦赫巴内阁"
 
 TRO_Dictatorship_party:0 "霍瓦部"
-NTS_Paternalism_party:0 "北阿拉伯部落"
+NTS_Paternalism_party:0 "北阿拉伯诸部落"
 MSS_Dictatorship_party:0 "停战八国"
 NTB_Dictatorship_party:0 "伊斯玛仪苏莱曼尼派"
 PSA_Dictatorship_party:0 "澳门总督府"
@@ -818,7 +855,14 @@ BLW_Paternalism_party:0 "自由党"
 BLW_Conservatism_party:0 "保守党"
 
 JPN_Dictatorship_party:0 "原敬内阁"
-DSX_Dictatorship_party:0 "德意志殖民协会"
+
+DSX_Dictatorship_party:0 "德意志西非协会"
+DSX_DKV_Dictatorship_party:0 "帝国殖民厅"
+
+DAS_Dictatorship_party:0 "德意志殖民协会(南德派)"
+DAS_TR_Dictatorship_party:0 "德意志殖民协会"
+DAS_DKA_Dictatorship_party:0 "帝国殖民部"
+
 DOB_Paternalism_party:0 "杜施内阁"
 
 DOL_Dictatorship_party:0 "莱茵巴本内阁"
@@ -854,7 +898,8 @@ TRA_Dictatorship_party_de_long:0 "七堡总督府"
 
 KON_Dictatorship_party:0 "李完用内阁"
 MOL_Dictatorship_party:0 "阿拉维王朝"
-LEF_Paternalism_party:0 "里夫部落邦联"
+LEF_Paternalism_party:0 "里夫诸部落"
+LEF_Dictatorship_party:0 "克里姆派"
 SNX_Dictatorship_party:0 "塞努西王朝"
 ASI_Dictatorship_party:0 "乔治斯内阁"
 SML_Dictatorship_party:0 "德尔维希运动"
@@ -862,6 +907,7 @@ JBS_Dictatorship_party:0 "拉希德王朝"
 NZS_Dictatorship_party:0 "沙特王朝"
 ROY_Dictatorship_party:0 "拉希德王朝"
 YEM_Dictatorship_party:0 "布赛义德王朝"
+ZAN_Dictatorship_party:0 "布赛义德王朝"
 YEL_Dictatorship_party:0 "杜乌拉内阁"
 AFH_Dictatorship_party:0 "巴拉克宰王朝"
 NBE_Dictatorship_party:0 "沙姆舍尔内阁"
@@ -911,7 +957,9 @@ ITC_Moderate_Socialism_party:0 "意大利社会党(最高纲领派)"
 ITC_Revolutionism_party:0 "意大利社会党(最高纲领派-新秩序派)"
 ITC_Nationalism_party:0 "意大利民族主义协会"
 
-PHL_Dictatorship_party:0 "菲律宾革命政府"
+PHL_Dictatorship_party:0 "马格达洛委员会"
+PHL_Nationalism_party:0 "国民党"
+PHL_Reformism_party:0 "共和党"
 
 HUN_Liberalism_party:0 "独立党"
 HUN_Dictatorship_party:0 "匈牙利国民军"
@@ -921,3 +969,6 @@ HUN_Revolutionism_party:0 "匈牙利社会民主党(拉左派)"
 
 XYL_Moderate_Socialism_party:0 "匈牙利社会民主党(拉中派)"
 XYL_Revolutionism_party:0 "匈牙利社会民主党(拉左派)"
+
+GUB_Conservatism_party:0 "国家保守党"
+GUB_Liberalism_party:0 "古巴自由党-统一自由党-临时自由党"

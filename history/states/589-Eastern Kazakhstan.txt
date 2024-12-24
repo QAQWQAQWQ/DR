@@ -6,7 +6,7 @@ state={
 	}
 	history={
 		owner = KEI
-		add_core_of = KEI
+		
 		add_core_of = AKE
 		add_core_of = TGA
 		buildings = {
@@ -15,12 +15,12 @@ state={
 
 		}
 		victory_points = {
-			1668 1
+			1668 3
 		}
 	}
 
 	provinces={
-		1668 4651 4764 7711 7795 7856 10550 10619 10680 12529 13197
+		1668 4651 7711 7795 7856 10550 10619 10680 12529 13197 7784
 	}
 	manpower=535191
 	buildings_max_level_factor=1.000

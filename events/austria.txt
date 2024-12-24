@@ -64,6 +64,7 @@ country_event = {
 			ger_con_pre_controlled = yes
 		}
 		set_variable = { global.pre_win_german_war = 1 }
+			
 		set_variable = { global.german_war = 1 }
 		diplomatic_relation = { country = AOX relation = non_aggression_pact }
 		AOX = { dismantle_faction = yes }
@@ -209,12 +210,28 @@ country_event = {
 		name = austria.10.a
 		complete_national_focus = AUS_german_0
 		set_cosmetic_tag = AOX_DR
+		DAS = {
+			set_cosmetic_tag = DAS_DR
+			set_party_name = {
+				ideology = Dictatorship
+				long_name = DAS_DKA_Dictatorship_party
+				name = DAS_DKA_Dictatorship_party
+			}
+		}
 		mark_focus_tree_layout_dirty = yes
 	}
 	option = {
 		name = austria.10.b
 		complete_national_focus = AUS_HRE_0
 		set_cosmetic_tag = AOX_HRE
+		DAS = {
+			set_cosmetic_tag = DAS_HR
+			set_party_name = {
+				ideology = Dictatorship
+				long_name = DAS_DKA_Dictatorship_party
+				name = DAS_DKA_Dictatorship_party
+			}
+		}
 		mark_focus_tree_layout_dirty = yes
 	}
 	#option = {
@@ -655,6 +672,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = aushun.2.a
+		news_event = WorldNew.27
 	}
 }
 country_event = {
@@ -666,9 +684,9 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = aushun.3.a
-		hidden_effect = {
+		
 			news_event = WorldNew.11
-		}
+		
 	}
 }
 country_event = {
@@ -680,6 +698,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = aushun.4.a
+		news_event = WorldNew.11
 	}
 }
 country_event = {
@@ -689,9 +708,7 @@ country_event = {
 	picture = GFX_austria_1_pict
 	fire_only_once = no
 	is_triggered_only = yes
-	immediate = {
-		news_event = WorldNew.24
-		}
+	immediate = {news_event = WorldNew.24}
 	option = {
 		name = aushun.5.a
 		every_state = {

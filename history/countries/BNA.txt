@@ -33,43 +33,11 @@ recruit_character = BNA_Sir_Harry_Edward_Spiller_Cordeauxn_Khoyski
 add_ideas = {
 
 }
-set_autonomy = {
-	target = HAT
-	autonomy_state = autonomy_occupation_zone
-	
-}
-HAT = {
-	set_politics = {
-		ruling_party = Dictatorship
-		last_election = "1918.11.11"
-		election_frequency = 72
-		elections_allowed = no
-	}
-	
-	set_popularities = {
-		Dictatorship = 100
-	}
 
-}
-set_autonomy = {
-	target = DMA
-	autonomy_state = autonomy_occupation_zone
-}
-DMA = {
-	set_politics = {
-		ruling_party = Dictatorship
-		last_election = "1918.11.11"
-		election_frequency = 72
-		elections_allowed = no
-	}
-	
-	set_popularities = {
-		Dictatorship = 100
-	}
 
-}
 give_guarantee = MEX
 give_guarantee = NIC
+give_guarantee = GUB
 set_politics = {
 	ruling_party = Liberalism
 	last_election = "1918.11.11"
@@ -87,3 +55,5 @@ set_popularities = {
 	Conservatism = 39
 	Reformism = 10
 }
+give_military_access = UBS
+give_military_access = BNA

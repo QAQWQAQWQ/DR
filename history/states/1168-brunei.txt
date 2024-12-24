@@ -1,0 +1,33 @@
+state=
+{
+	id=1168
+	name="STATE_1168"
+	manpower = 68980
+	resources={
+		rubber=5
+	}
+	resources={
+		grain=3
+	}
+	state_category = rural
+
+	history=
+	{
+		owner = ENL
+		victory_points = {
+			13292 3
+		}
+		buildings = {
+			infrastructure = 2
+			7387 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		7387 13279 13292
+	}
+
+	local_supplies=0.0 
+}

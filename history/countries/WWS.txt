@@ -98,6 +98,7 @@ recruit_character = WWS_Otto_Ruhle
 		
 	}
 country_event = {id=WWS.7 days=110 }
+set_autonomy = { target = DSX autonomy_state = autonomy_colony }
 set_politics = {
 	ruling_party = Dictatorship
 	last_election = "1918.11.11"

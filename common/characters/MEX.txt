@@ -1,19 +1,5 @@
 characters={
-	MEX_Francisco_Madero={
-		name=MEX_Francisco_Madero
-		portraits={
-			civilian={
-				large="gfx/leaders/MEX/Portrait_Francisco_Madero.tga"
-			}
-		}
-		country_leader={
-			ideology=Social_Liberalism
-			desc = MEX_Francisco_Madero_desc
-			traits={  }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
+	
 	MEX_Venustiano_Carranza={
 		name=MEX_Venustiano_Carranza
 		portraits={
@@ -29,7 +15,7 @@ characters={
 			logistics_skill = 1
 		}
 		country_leader={
-			ideology=bonaparte-autocratism
+			ideology=bonaparte-autocracy
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1

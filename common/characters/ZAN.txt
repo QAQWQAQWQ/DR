@@ -1,0 +1,26 @@
+characters={
+	
+	ZAN_bin_harub_al_busaidi={
+		name=ZAN_bin_harub_al_busaidi
+		portraits={
+			civilian={
+				large="gfx/leaders/ZAN/Portrait_bin_harub_al_busaidi.tga"
+			}
+		}
+		country_leader={
+			ideology=Absolute_Monarchy
+			#特质
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+	}
+	field_marshal = {
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+		}

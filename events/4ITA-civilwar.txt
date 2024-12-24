@@ -450,39 +450,43 @@ AOX = {create_faction = austrian_empire}
 	}
 }
 
-#country_event = {
-#	id = ITE.9
-#	hidden = yes
-#	title = ITE.9.t
-#	desc = ITE.9.d
-#
-#	fire_only_once = yes
-#	trigger = {
-#		AOX = {controls_province = 3773}
-#		AOX = {controls_province = 6606}
-#		AOX = {controls_province = 9907}
-#	}
-#		immediate = {
-#			news_event = ITANews.7
-#			}
-#
-#	option = {
-#		name = ITE.9.a
-#		
-#		FRW = {
-#			dismantle_faction = yes
-#		}
-#		ITC = {
-#			add_to_faction = FRW
-#		}
-#		FRW = {
-#			declare_war_on = {
-#				target = VCT
-#				type = annex_everything
-#			}
-#		}
-#	}
-#}
+country_event = {
+	id = ITE.9
+	hidden = yes
+	title = ITE.9.t
+	desc = ITE.9.d
+
+	fire_only_once = yes
+	trigger = {
+		check_variable = {global.4italian_war = 1}
+		OR = {
+			ITE = {controls_province = 704}
+			ITC = {controls_province = 704}
+			RDN = {controls_province = 704}
+			FRW = {controls_province = 704}
+			ITE = {controls_province = 6690}
+			ITC = {controls_province = 6690}
+			RDN = {controls_province = 6690}
+			FRW = {controls_province = 6690}
+			ITE = {controls_province = 9661}
+			ITC = {controls_province = 9661}
+			RDN = {controls_province = 9661}
+			FRW = {controls_province = 9661}
+		}
+
+	}
+		immediate = {
+			country_event = ITE.140
+			}
+
+	option = {
+		name = ITE.9.a
+		
+		
+		
+	}
+}
+
 country_event = {
 	id = ITE.10
 	hidden = yes
@@ -847,17 +851,7 @@ immediate = {
 			736 = {add_core_of = HUS}
 		}
 		
-		if = {
-			limit = {
-				OR = {
-				ITE = {controls_state = 163}
-				ITC = {controls_state = 163}
-				RDN = {controls_state = 163}
-				FRW = {controls_state = 163}
-			}}
-			HUS = {transfer_state = 163}
-			163 = {add_core_of = HUS}
-		}
+		
 		if = {
 			limit = {
 				917 = {is_core_of = FUM}
@@ -926,8 +920,6 @@ immediate = {
 			852 = {add_core_of = HUS}
 			HUS = {transfer_state = 736}
 			736 = {add_core_of = HUS}
-			HUS = {transfer_state = 163}
-			163 = {add_core_of = HUS}
 			FUM = {transfer_state = 917}
 			FUM = {leave_faction = yes}
 			HUS = {set_autonomy = {

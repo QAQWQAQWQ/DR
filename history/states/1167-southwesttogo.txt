@@ -1,0 +1,22 @@
+
+state={
+	id=1167
+	name="STATE_1167" # Benin/Dahomey
+	manpower = 65156
+	
+	state_category = rural
+	history={
+		owner = DSX
+		
+		buildings = {
+			infrastructure = 1
+			
+		}
+	}
+
+	provinces={
+		13278
+	}
+
+	local_supplies=1.0 
+}

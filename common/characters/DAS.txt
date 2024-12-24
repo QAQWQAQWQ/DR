@@ -13,4 +13,25 @@ characters={
 			id=-1
 		}
 	}		
+	DAS_Erwin_von_Zach={
+		name=DAS_Erwin_von_Zach
+		portraits={
+			civilian={
+				large="gfx/leaders/DAS/Portrait_Erwin_von_Zach.tga"
+			}
+		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		country_leader={
+			ideology=ironfist-colonial-assimilation
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
 	}

@@ -1,0 +1,33 @@
+
+state={
+	id=1163
+	name="STATE_1163"
+	manpower = 102484
+	
+	state_category = city
+	
+
+	resources={
+		grain=5
+	}
+	history={
+		owner = ENL
+		add_core_of = FMS
+		victory_points = {
+			13274 5
+		}
+		buildings = {
+			infrastructure = 2
+			13274 = {
+				naval_base = 2
+			}
+		}
+
+	}
+
+	provinces={
+		13274
+	}
+
+	local_supplies=0.0 
+}

@@ -132,10 +132,14 @@ early_ship_hull_heavy = 1
 		target = MOL
 		autonomy_state = autonomy_supervised_state
 	}
-
-	
-
-
+	set_autonomy = {
+		target = NBE
+		autonomy_state = autonomy_supervised_state
+	}
+	set_autonomy = {
+		target = ZAN
+		autonomy_state = autonomy_supervised_state
+	}
 
 give_guarantee = MEX
 give_guarantee = YEL
@@ -148,6 +152,7 @@ give_guarantee = CBA
 give_guarantee = KON
 give_guarantee = NBE
 give_guarantee = XZZ
+give_guarantee = GUB
 
 set_politics = {
 	ruling_party = Liberalism

@@ -535,6 +535,22 @@ ger_con_decisions = {
       952 = { add_core_of = ROOT } 
       DMW = { country_event = ger_con.8 }
       WWS = { set_cosmetic_tag = WWS_German_Empire }
+      DSX = {
+				set_cosmetic_tag = DSX_DKV
+				set_party_name = {
+					ideology = Dictatorship
+					long_name = DSX_DKV_Dictatorship_party
+					name = DSX_DKV_Dictatorship_party
+				}
+			}
+			DAS = {
+				set_cosmetic_tag = DAS_DKL
+				set_party_name = {
+					ideology = Dictatorship
+					long_name = DAS_DKA_Dictatorship_party
+					name = DAS_DKA_Dictatorship_party
+				}
+			}
 
       # puppet = DSX
     }
