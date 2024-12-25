@@ -33,10 +33,9 @@ guiTypes = {
 			iconType = {
 				name = "diplo_country_flag"
 				quadTextureSprite ="GFX_shield_medium"
-				position = { x= 39 y = 1 }
+				position = { x= 39 y = 4 }
 				Orientation = "UPPER_LEFT"
 			}
-
 			iconType = {
 				name = "diplo_flag_frame"
 				position = { x = 14 y = -10 }
@@ -369,7 +368,7 @@ guiTypes = {
 
 				iconType = {
 					name = "win_header_short"
-					position = { x = 15 y= 16 }
+					position = { x = 10 y= 8 }
 					spriteType = "GFX_win_header_short"
 				}
 
