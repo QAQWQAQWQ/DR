@@ -1,0 +1,18 @@
+characters={
+	BRU_Muhammad_Jamalul_Alam_II={
+		name=BRU_Muhammad_Jamalul_Alam_II
+		portraits={
+			civilian={
+				large="gfx/leaders/BRU/Portrait_Muhammad_Jamalul_Alam_II.tga"
+			}
+		}
+		country_leader={
+			ideology=Absolute_Monarchy
+			#特质
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+	}
+}

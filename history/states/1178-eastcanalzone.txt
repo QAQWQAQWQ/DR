@@ -1,0 +1,38 @@
+state={
+	id=1178
+	name="STATE_1178"
+	resources={
+		chromium=1 # was: 1
+	}
+
+	state_category = rural
+	resources={
+		grain=4
+	}
+	history={
+		owner = NIC
+		buildings = {
+			infrastructure = 2
+			
+			13310 = {
+				naval_base = 5
+
+			}
+
+		}
+		add_core_of = NIC
+		
+		victory_points = {
+			13310 5 
+		}
+
+	}
+
+	provinces={
+		13310 13312
+	}
+	manpower=455300
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

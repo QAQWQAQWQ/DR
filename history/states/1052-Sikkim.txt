@@ -6,15 +6,18 @@ state={
 	
 	state_category = rural
 	history={
-		owner = YDA
-		add_core_of = YDA
+		owner = SKM
+		add_core_of = SKM
 		buildings = {
 			infrastructure = 1
+		}
+		victory_points = {
+			13309 3
 		}
 	}
 
 	provinces={
-		4435 
+		4435 13309
 	}
 
 	local_supplies=0.0 
