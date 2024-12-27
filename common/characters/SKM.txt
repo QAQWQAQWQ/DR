@@ -1,0 +1,20 @@
+characters={
+
+		SKM_Tashi_Namgyal={
+			name=SKM_Tashi_Namgyal
+			portraits={
+				civilian={
+					large="gfx/leaders/SKM/SKM_Tashi_Namgyal.tga"
+				}
+			}
+			country_leader={
+				ideology=Absolute_Monarchy
+				#特质
+				traits={ }
+				expire="1965.1.1.1"
+				id=-1
+			}
+			
+		}
+	
+}

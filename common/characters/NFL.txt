@@ -1,0 +1,19 @@
+characters={
+	NFL_Richard_Squires={
+		name=NFL_Richard_Squires
+		portraits={
+			civilian={
+				large="gfx/leaders/NFL/Portrait_Richard_Squires.tga"
+			}
+		}
+		country_leader={
+			ideology=agarian-liberalism
+			#特质
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+	}
+	
+}
