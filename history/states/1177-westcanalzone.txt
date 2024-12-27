@@ -10,16 +10,17 @@ state={
 		grain=4
 	}
 	history={
-		owner = NIC
+		owner = CAC
 		buildings = {
 			infrastructure = 2
 			
 			13313 = {
-				naval_base = 5
+				naval_base = 2
 
 			}
 
 		}
+		add_core_of = CAC
 		add_core_of = NIC
 		
 		victory_points = {

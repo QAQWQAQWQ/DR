@@ -1,7 +1,7 @@
 
 state={
-	id=277
-	name="STATE_277"
+	id=1190
+	name="STATE_1190"
 	manpower = 3424403
 	
 	state_category = city
@@ -22,20 +22,13 @@ state={
 		}
 		
 add_core_of = MEX
-		victory_points = {
-			1965 25
-		}
-		victory_points = {
-			2008 10
-		}
-		victory_points = {
-			2011 5
-		}
+		
+		
 		
 	}
 
 	provinces={
-		1965 2008 2011 12755 
+		12755 1965 10832
 	}
 	
 

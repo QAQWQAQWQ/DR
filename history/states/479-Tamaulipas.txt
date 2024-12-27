@@ -22,6 +22,9 @@ state={
 			5021 = {
 				naval_base = 2
 			}
+			13316 = {
+				naval_base = 5
+			}
 		}
 		
 add_core_of = MEX
@@ -30,19 +33,15 @@ add_core_of = MEX
 			5015 5
 		}
 		victory_points = {
-			5021 10
+			13316 10
 		}
-		victory_points = {
-			10769 5
-		}
-		victory_points = {
-			2060 5
-		}
+		
+		
 
 	}
 
 	provinces={
-		  5015 5021 13088 10769 2060
+		  5015 13088 13306 13316
 	}
 	
 

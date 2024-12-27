@@ -1,0 +1,17 @@
+characters={
+	SZC_George_Lloyd={
+		name=SZC_George_Lloyd
+		portraits={
+			civilian={
+				large="gfx/leaders/SZC/Portrait_George_Lloyd.tga"
+			}
+		}
+		country_leader={
+			ideology=civilian-dictatorship
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+
+}

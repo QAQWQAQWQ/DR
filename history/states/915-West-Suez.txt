@@ -8,19 +8,24 @@ state=
 
 	history=
 	{
-		owner = EYJ
+		owner = SZC
+		add_core_of = SZC
+		add_core_of = EYJ
 		buildings = {
 			infrastructure = 2 #was: 5
 			industrial_complex = 1
 			12049 = {
-				naval_base = 2
+				naval_base = 4
+			}
+			4073 = {
+				naval_base = 4
 			}
 		}
 		victory_points = {
-			12049 5
+			12049 7
 		}
 		victory_points = {
-			4073 3
+			4073 5
 		}
 
 	}

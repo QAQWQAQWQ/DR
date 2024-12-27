@@ -1,0 +1,32 @@
+
+state={
+	id=1188
+	name="STATE_1188"
+	manpower = 2118394
+	
+	state_category = city
+
+	history={
+		owner = BNA
+		
+		buildings = {
+			infrastructure = 2 
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 3
+			
+			9786 = {
+				naval_base = 1
+
+			}
+		}
+		add_core_of = BNA
+
+	}
+
+	provinces={
+		9786
+	}
+
+	local_supplies=0.0 
+}

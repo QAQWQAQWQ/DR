@@ -26,13 +26,11 @@ state={
 
 			}
 			10337 = {
-				naval_base = 3
+				naval_base = 6
 				coastal_bunker = 10
 
 			}
-			6785 = {
-				naval_base = 1
-			}
+			
 			12410 = {
 				coastal_bunker = 5
 
@@ -54,7 +52,7 @@ state={
 		}
 
 		victory_points = {
-			10337 10
+			10337 25
 		}
 		victory_points = {
 			3960 10 
