@@ -1,0 +1,30 @@
+state = {
+	id=1205
+	name="STATE_1205"
+	manpower = 108841
+	state_category = rural
+	resources={
+		grain=6
+	}
+	history={
+		owner = UBS
+		add_core_of = UBS
+		buildings = {
+			infrastructure = 2
+			air_base = 2
+			
+			13358 = {
+				naval_base = 3
+			}
+		}
+		
+		victory_points = {
+			13358 3
+		}
+		
+
+	}
+	provinces= { 1904 8119 12736 13358 }
+
+	local_supplies=0.0 
+}

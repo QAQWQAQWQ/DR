@@ -20,17 +20,17 @@ state={
 			dockyard = 1
 			industrial_complex = 3
 			3924 = {
-				naval_base = 3
+				naval_base = 5
 			}
 			6889 = {
-				naval_base = 1
+				naval_base = 5
 			}
 		}
 		add_core_of = DMT
 	}
 
 	provinces={
-		3868 3924 3974 6889 11816 
+		3868 3924 3974 6889 11816 11901 3943
 	}
 
 	local_supplies=4.0 

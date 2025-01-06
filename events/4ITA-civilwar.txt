@@ -501,7 +501,7 @@ country_event = {
 	
 	}
 	immediate = {
-		country_event = ITE.15
+		ITC = {country_event = ITE.15}
 		news_event = ITANews.16
 		}
 
@@ -567,7 +567,8 @@ country_event = {
 			limit = {
 				ITC = {exists = yes}
 			}
-			country_event = {id=ITE.15 days = 180}
+			ITC = {country_event = {id=ITE.15 days = 180}}
+
 		}
 	}
 }
@@ -595,8 +596,8 @@ country_event = {
 		AND = {#第二个条件，打了3年结果摩德纳丢了
 			date > 1923.7.6
 			OR = {
-				AOX = {controls_province = 9752}
-				VCT = {controls_province = 9752}
+				AOX = {controls_province = 3976}
+				VCT = {controls_province = 3976}
 		}
 	}
 	aus_has_win_german_war = yes
@@ -638,10 +639,10 @@ immediate = {
 		if = {
 			limit = {
 				OR = {
-				ITE = {controls_province = 9752}
-				ITC = {controls_province = 9752}
-				RDN = {controls_province = 9752}
-				FRW = {controls_province = 9752}
+				ITE = {controls_province = 13342}
+				ITC = {controls_province = 13342}
+				RDN = {controls_province = 13342}
+				FRW = {controls_province = 13342}
 			}}
 			HUS = {transfer_state = 161}
 			161 = {add_core_of = HUS}
@@ -649,10 +650,10 @@ immediate = {
 		if = {
 			limit = {
 				OR = {
-				ITE = {controls_province = 9598}
-				ITC = {controls_province = 9598}
-				RDN = {controls_province = 9598}
-				FRW = {controls_province = 9598}
+				ITE = {controls_province = 13345}
+				ITC = {controls_province = 13345}
+				RDN = {controls_province = 13345}
+				FRW = {controls_province = 13345}
 			}}
 			HUS = {transfer_state = 850}
 			850 = {add_core_of = HUS}
@@ -797,10 +798,10 @@ immediate = {
 		if = {
 			limit = {
 				OR = {
-				ITE = {controls_province = 9752}
-				ITC = {controls_province = 9752}
-				RDN = {controls_province = 9752}
-				FRW = {controls_province = 9752}
+					ITE = {controls_province = 13342}
+					ITC = {controls_province = 13342}
+					RDN = {controls_province = 13342}
+					FRW = {controls_province = 13342}
 			}}
 			HUS = {transfer_state = 161}
 			161 = {add_core_of = HUS}
@@ -985,7 +986,7 @@ immediate = {
 						
 					}	
 					}
-					ITC = {
+					
 						recruit_character = ITC_Garibaldi_II
 						annex_country = {
 							target = TSI
@@ -1019,7 +1020,7 @@ immediate = {
 			759 = {
 				add_core_of = ITC
 			}
-		}
+		
 		
 					news_event = ITANews.7 
 					

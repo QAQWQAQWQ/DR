@@ -1,0 +1,25 @@
+characters={
+	ASS_Mahammad_Yayyo={
+		name=ASS_Mahammad_Yayyo
+		portraits={
+			civilian={
+				large="gfx/leaders/ASS/Portrait_Mahammad_Yayyo.tga"
+			}
+		}
+		country_leader={
+			ideology=Absolute_Monarchy
+			#特质
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+}

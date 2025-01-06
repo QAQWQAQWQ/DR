@@ -2,16 +2,16 @@ state={
 	id=1039
 	name="STATE_1039"
 	provinces={
-		3773 6790
+		3773 6790 13344 13347
 	}
 	history={
 		owner = PMA
 		add_core_of = PMA
-		victory_points = {
-			6790 7
+		victory_points = {#parma
+		13344 7
 		}
-		victory_points = {
-			3773 3
+		victory_points = {#piacenza
+		13347 5
 		}
 		buildings = {
 			industrial_complex = 1

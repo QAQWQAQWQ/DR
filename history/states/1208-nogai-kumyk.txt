@@ -1,0 +1,30 @@
+
+state={
+	id = 1208
+	name = "STATE_1208" #nogai-kumyk
+	manpower = 735829
+	
+	state_category = rural
+	
+	resources = {
+		oil = 5 
+	}
+	resources={
+		grain=8
+	}
+	history = {
+		owner = SHW
+		buildings = {
+			infrastructure = 2
+		}
+		
+
+		add_core_of = IUI
+	}
+
+	provinces = {
+		13363 683
+	}
+
+	local_supplies = 0.0 
+}

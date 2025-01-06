@@ -11,14 +11,14 @@ state = {
 	}
 	history = {
 		owner = TCY
-		victory_points = {
-			9907 3 
+		victory_points = { #firenze
+			13339 7
 		}
-		victory_points = {
-			11833 1 
+		victory_points = {#livorno
+		13341 5
 		}
-		victory_points = {
-			6946 1 
+		victory_points = {#pisa
+		13340 5
 		}
 		buildings = {
 			infrastructure = 4 #was: 8
@@ -26,11 +26,11 @@ state = {
 			industrial_complex = 1
 			dockyard = 3
 			air_base = 2
-			6973 = {
-				naval_base = 10
-			}
 			11833 = {
-				naval_base = 4
+				naval_base = 1
+			}
+			13341 = {
+				naval_base = 3
 			}
 		}
 		add_core_of = TCY
@@ -45,7 +45,7 @@ state = {
 	}
 
 	provinces = {
-		910 1616 6875 6946 9750 9879 9907 11833 11889 
+		910 1616 6875 6946 9750 9879 9907 11833 11889 13339 13340 13341
 	}
 
 	local_supplies = 0.0 

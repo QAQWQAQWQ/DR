@@ -7,7 +7,10 @@ state={
 	
 	history={
 		victory_points = {
-			3581 3
+			3581 5
+		}
+		victory_points = {
+			6573 5
 		}
 		owner = KOH
         add_core_of = KOH
@@ -16,7 +19,7 @@ state={
 	}
 
 	provinces={
-		3550 3581 6586 6604 
+		3550 3581 6586 6573
 	}
 
 	local_supplies=0.0 

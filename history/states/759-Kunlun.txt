@@ -2,7 +2,7 @@ state={
 	id=759
 	name="STATE_759"
 	provinces={
-		9990
+		13327
 	}
 	resources={
 		grain=3
@@ -13,12 +13,12 @@ state={
 	history={
 		owner = TSI
 		victory_points = {
-			9990 1 
+			13327 3
 		}
 		add_core_of = TSI
 		buildings = {
 			infrastructure = 1
-			9990 = {
+			13327 = {
 				naval_base = 2
 			}
 

@@ -62,3 +62,12 @@ set_popularities = {
 add_ideas = {
 	
 }
+set_autonomy = { target = YDN autonomy_state = autonomy_colony }
+YDN = {
+	set_politics = {
+		ruling_party = Dictatorship
+	}
+	set_popularities = {
+		Dictatorship = 100
+	}
+}

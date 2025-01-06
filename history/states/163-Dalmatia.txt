@@ -1,7 +1,7 @@
 state = {
 	id = 163
 	name = "STATE_163"
-	manpower = 18000
+	manpower = 26241
 	
 	state_category = large_city
 	resources={
@@ -11,11 +11,11 @@ state = {
 	history = {
 		owner = DMT
 		victory_points = { #Zara/Zadar
-			3943 5 
+			13357 5 
 		}
 		buildings = {
 			infrastructure = 3 #was: 5
-			3943 = {
+			13357 = {
 				naval_base = 3
 			}
 		}
@@ -26,7 +26,7 @@ state = {
 		set_province_name = { id = 3943 name = VICTORY_POINTS_3943_ITA }
 	}
 	provinces = {	
-		3943 
+		13357
 	}
 
 	local_supplies = 0.0 

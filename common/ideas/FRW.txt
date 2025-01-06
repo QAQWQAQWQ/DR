@@ -73,7 +73,7 @@ ideas = {
 		farming_society= {
 			picture = farming_society
 			modifier = {
-				production_speed_grain_farms_factor=0.1
+				#production_speed_grain_farms_factor=0.1
 				country_resource_grain=50
 			}
         }
@@ -203,7 +203,7 @@ ideas = {
 		FRW_FranceAgriMer = {
 			picture = FranceAgriMer
 			modifier = {
-				production_speed_grain_farms_factor = 0.1
+				#production_speed_grain_farms_factor = 0.1
 			}
         }
 		####阿尔萨斯洛林
@@ -312,7 +312,7 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.1
 				theorist_cost_factor = -0.25
-				occupation_cost = -20
+				#occupation_cost = -20
 			}
         }
 		FRW_Nationalization = {
@@ -354,7 +354,7 @@ ideas = {
 		FRW_internationalism = {
 			picture = internationalism
 			modifier = {
-				can_send_volunteers = yes
+				#can_send_volunteers = yes
 				send_volunteer_size = 5
 			}
         }	

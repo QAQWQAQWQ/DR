@@ -65,39 +65,9 @@ SPD = {
 	has_country_flag = SPR_republican_spain_flag
 }
 
-VIC = {
-	original_tag = FRW
-	has_focus_tree = vichy_french_focus
-}
 
-BUZ = {
-	original_tag = BUL
-	has_country_flag = BUL_zveno_bulgaria_flag
-}
 
-BUF = {
-	original_tag = BUL
-	has_country_flag = BUL_fatherland_front_flag
-}
 
-SOS = {
-	original_tag = SHW
-	has_cosmetic_tag = stalinist_soviet_union
-}
-
-SOT = {
-	original_tag = SHW
-	has_cosmetic_tag = SOV_left_opposition
-}
-
-SOB = {
-	original_tag = SHW
-	has_cosmetic_tag = SOV_right_opposition
-}
-SOP = {
-	original_tag = SHW
-	has_cosmetic_tag = SOV_PROVISIONAL
-}
 SOU = { #Tag for Stalinist SHW with other options in case it doesn't exist. 
 	original_tag = SHW
 	country_score = {

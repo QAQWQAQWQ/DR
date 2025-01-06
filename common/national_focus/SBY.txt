@@ -162,19 +162,27 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 100
-			add_victory_points = {
-				province = 5139
-				value = 3
+			
+			623={
+				add_extra_state_shared_building_slots = 1
 			}
-			add_victory_points = {
-				province = 10265
-				value = 3
+			699={
+				add_extra_state_shared_building_slots = 1
 			}
-			539={
-				add_extra_state_shared_building_slots = 2
+			783={
+				add_extra_state_shared_building_slots = 1
 			}
-			327={
-				add_extra_state_shared_building_slots = 2
+			1171={
+				add_extra_state_shared_building_slots = 1
+			}
+			910={
+				add_extra_state_shared_building_slots = 1
+			}
+			686={
+				add_extra_state_shared_building_slots = 1
+			}
+			1172={
+				add_extra_state_shared_building_slots = 1
 			}
 		}
 	}
@@ -194,7 +202,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			539={
+			297={
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -244,7 +252,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			539 = {
+			297 = {
 				add_dynamic_modifier = {
 					modifier = SBY_focus10_dy
 					days = 200 
@@ -275,7 +283,7 @@ focus_tree = {
 				}
 				tooltip = new_nat_tre005_trigger
 			}
-			539={
+			297={
 				is_controlled_by = ROOT
 			}
 		}
@@ -290,12 +298,7 @@ focus_tree = {
 			add_resource = {
 				type = rubber
 				amount = 10
-				state = 539
-			}
-			add_resource = {
-				type = rubber
-				amount = 10
-				state = 623
+				state = 297
 			}
 		}
 
@@ -317,15 +320,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			SBY = { 
-				if={
-					every_state = {
-						limit={
-							is_core_of = PHL
-						 }
-						 add_resistance_target = -10
-						 set_garrison_strength = 0.5
-					}
-				}
+				910 = {add_resistance_target = -10
+				set_garrison_strength = 0.5}
+				1171 = {add_resistance_target = -10
+				set_garrison_strength = 0.5}
+				1172 = {add_resistance_target = -10
+				set_garrison_strength = 0.5}
+				
 			}
 		}
 
@@ -355,6 +356,15 @@ focus_tree = {
 				equipment_type = infantry_equipment_0
 				seller_tags = { DSX }
 			}
+			add_opinion_modifier = {
+				target = DAS
+				modifier = Trade_friend
+			}
+			add_equipment_subsidy = {
+				cic = 500
+				equipment_type = infantry_equipment_0
+				seller_tags = { DAS }
+			}
 		}
 
 	}
@@ -374,16 +384,22 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			327={
+			910={
 				add_building_construction = {
-					type = coastal_bunker
-					level = 1
+					type = bunker
+					level = 3
 				}
 			}
-			623={
+			1171={
 				add_building_construction = {
-					type = coastal_bunker
-					level = 1
+					type = bunker
+					level = 3
+				}
+			}
+			1172={
+				add_building_construction = {
+					type = bunker
+					level = 3
 				}
 			}
 		}
@@ -419,15 +435,17 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_popularities = {
-				Liberalism=67
-				Conservatism = 13
+				Liberalism=15.6
+				Conservatism = 28.4
+				Reformism = 6
 				Anarchism = 10
-				Revolutionism = 10
+				Paternalism = 40
 			}
 			
-			add_popularity = {
-				ideology = Liberalism
-				popularity = 0.05
+			set_party_name = {
+				ideology = Reformism
+				long_name = SBY_Reformism_party1
+				name = SBY_Reformism_party1
 			}
 		}
 	}
@@ -460,10 +478,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_popularities = {
-				Conservatism=67
-				Liberalism = 13
-				Anarchism = 10
-				Revolutionism = 10
+				Paternalism = 50
+				Dictatorship = 43
+				Conservatism = 3
+				Liberalism = 2
+				Reformism = 1
+				Anarchism = 1
 			}
 		}
 	}
@@ -489,6 +509,19 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SBY_Francisco_Cambo_H
+			retire_character = SBY_Gabriel_Maura_Gamazo
+			set_party_name = {
+				ideology = Conservatism
+				long_name = SBY_Conservatism_party_rg
+				name = SBY_Conservatism_party_rg
+			} 
+			set_popularities = {
+				Liberalism=21.7
+				Conservatism = 22.3
+				Reformism = 6
+				Anarchism = 10
+				Paternalism = 40
+			}
 		}
 	}
 	focus = { 
@@ -511,11 +544,18 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_party_name = {
-				ideology = Conservatism
-				long_name = SBY_Conservatism_party1_long
-				name = SBY_Conservatism_party1
+				ideology = Dictatorship
+				long_name = SBY_Dictatorship_party1
+				name = SBY_Dictatorship_party1
 			}
-			
+			set_politics = {ruling_party = Dictatorship}
+			set_popularities = {
+				Dictatorship = 93
+				Conservatism = 3
+				Liberalism = 2
+				Reformism = 1
+				Anarchism = 1
+			}
 		}
 	}
 	focus = {
@@ -539,11 +579,11 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = {
 				ideology = Conservatism
-				popularity = 0.05
+				popularity = 0.01
 			}
 			add_popularity = {
 				ideology = Liberalism
-				popularity = 0.05
+				popularity = 0.01
 			}
 		}
 	}
@@ -772,12 +812,9 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = {
 				ideology = Anarchism
-				popularity = -0.1
+				popularity = -0.01
 			}
-			add_popularity = {
-				ideology = Revolutionism
-				popularity = -0.1
-			}
+			
 		} 
 	}
 	focus = {
@@ -800,7 +837,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_popularity = {
-				ideology = Conservatism
+				ideology = Dictatorship
 				popularity = 0.03
 			}
 		}
@@ -949,9 +986,9 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.05
 			set_party_name = {
-				ideology = Conservatism
-				long_name = SBY_Conservatism_party0_long
-				name = SBY_Conservatism_party0
+				ideology = Dictatorship
+				long_name = SBY_Dictatorship_party2
+				name = SBY_Dictatorship_party2
 			}
 		}
 	}
@@ -1327,7 +1364,7 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = {
 				ideology = Conservatism
-				popularity = 0.03
+				popularity = 0.01
 			}
 		}
 	}

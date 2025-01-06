@@ -953,11 +953,11 @@ focus_tree={
 			MOA={
 				add_legitimacy = 10
 			}
-			17={
-				add_dynamic_modifier = {
-					modifier = FRW_Lorraine_guerrillas
-				}
-			}
+			#17={
+			#	add_dynamic_modifier = {
+			#		modifier = FRW_Lorraine_guerrillas
+			#	}
+			#}
 		}
 	}
 	focus={

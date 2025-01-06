@@ -1,0 +1,29 @@
+state=
+{
+	id=1202
+	name="STATE_1202"
+	manpower = 108659
+	
+	state_category = town
+	resources={
+		grain=6
+		
+	}
+	history=
+	{
+		owner = SHW
+		add_core_of = SHW
+		add_core_of = UKR
+		buildings = {
+			infrastructure = 1 #was: 5
+			industrial_complex = 1
+		}
+
+	}
+
+	provinces={
+		6783 9744 765 3765
+	}
+
+	local_supplies=0.0 
+}

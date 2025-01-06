@@ -1,0 +1,29 @@
+
+state={
+	id=1203
+	name="STATE_1203" 
+	manpower = 1024400
+	
+	state_category = large_town
+	resources={
+		grain=6
+		
+	}
+	history={
+		owner = DMT
+		add_core_of = DMT
+		add_core_of = SIW
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+		}
+		
+	}
+
+	provinces={
+		13353 13355 6611 984
+	}
+
+	local_supplies=0.0 
+}

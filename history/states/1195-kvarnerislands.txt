@@ -1,0 +1,28 @@
+
+state={
+	id=1195
+	name="STATE_1195" # Croatia
+	manpower = 222440
+	
+	state_category = town
+	resources={
+		grain=6
+		
+	}
+	history={
+		owner = AOX
+		add_core_of = AOX
+		add_claim_by = DMT
+		buildings = {
+			infrastructure = 2
+			
+		}
+		
+	}
+
+	provinces={
+		13330
+	}
+
+	local_supplies=0.0 
+}

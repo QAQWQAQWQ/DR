@@ -12,20 +12,26 @@ state={
 		buildings = {
 			infrastructure = 2
 			air_base = 2
-			8124 = {
-				naval_base = 2
+			13350 = {
+				naval_base = 3
+			}
+			4985 = {
+				naval_base = 1
 			}
 		}
 		victory_points = {
-			8124 10
+			13350 10
 		}
 		victory_points = {
-			4985 8
+			13333 1
+		}
+		victory_points = {
+			13332 1
 		}
 
 	}
 	provinces={
-		4985 8124
+		4985 8124 13332 13333 13350
  	}
 
 	local_supplies=0.0 

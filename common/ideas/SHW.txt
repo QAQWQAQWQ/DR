@@ -128,7 +128,7 @@ SHW_Russian_style_democracy = {
 	picture = Russian_style_democracy
 	modifier = {
 		political_advisor_cost_factor = -0.2
-		democratic_acceptance = 40
+		#democratic_acceptance = 40
 }
 }
 SHW_Disgruntled_army = {
@@ -157,15 +157,15 @@ SHW_Loans_rubles = {
 SHW_idea_Slavic_identity = {
 	picture = Slavic_identity
 	modifier = {
-		monarchy_drift=0.02
+		#monarchy_drift=0.02
 		political_power_gain = 0.03
 }
 }
 SHW_idea_Kokovtsov_reforms = {
 	picture = Kokovtsov_reforms
 	modifier = {
-		neutrality_drift = 0.03
-		neutrality_acceptance = 10
+		#neutrality_drift = 0.03
+		#neutrality_acceptance = 10
 		political_power_gain = 0.03
 		production_factory_efficiency_gain_factor= 0.03
 		production_factory_start_efficiency_factor= 0.03

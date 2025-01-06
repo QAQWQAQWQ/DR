@@ -2,10 +2,10 @@ state={
 	id=1112
 	name="STATE_1112"
 	resources={
-		oil=35 # was: 126.000
+		oil=10 # was: 126.000
 	}
 	resources={
-		grain=6
+		grain=3
 	}
 	history={
 		owner = SHW
@@ -23,9 +23,9 @@ state={
 	}
 
 	provinces={
-		1467 1539 1610 4660 6642 6763 9715 11645 11674 11708 4477 11704
+		 1539     11645 11674 
 	}
-	manpower=1440525
+	manpower=740525
 	buildings_max_level_factor=1.000
 	state_category=town
 

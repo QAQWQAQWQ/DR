@@ -14,13 +14,14 @@ state={
 	}
 	history={
 		owner = AGC
-                                add_claim_by = FRW
+                                add_core_of = FRW
                                 add_core_of = AGC
 		buildings = {
 			infrastructure = 4
 
 		}
 		victory_points = { 9559 10 }
+		add_dynamic_modifier = {modifier=FRW_Lorraine_guerrillas}
 	}
 
 	provinces={

@@ -111,6 +111,8 @@ ideologies = {
 			Moderate_Socialism={}
 			Massimalismo ={}
 			Revolutionary-front = {}
+			social_new_sanmin = {}
+			new_sanmin_socialism = {}
 		}
 		dynamic_faction_names = {
 		}
@@ -174,6 +176,7 @@ ideologies = {
 	Liberalism = {
 	
 		types = {
+			Liberalism = {}
 			Social_Liberalism={}
 			Classical_Liberalism={}
 			Conservative_Liberalism={}
@@ -224,6 +227,7 @@ ideologies = {
 	Conservatism = {
 	
 		types = {
+			Conservatism = {}
 			Classical_Conservatism={}
 			Authoritarian_Conservatism={}
 			Religious_Conservatism={}
@@ -319,6 +323,7 @@ ideologies = {
 			ironfist-colonial-assimilation = {}
 			Absolute_Theocracy = {}
 			theocratic-aristocratic-autocracy = {}
+			aristocratic-monarchy = {}
 			civilian-dictatorship = {}
 			pseudo-rev-rea-aut = {}
 			pseudo-sanmin-autocracy = {}
@@ -414,10 +419,10 @@ ideologies = {
 		}
 	}
 	
-	###极端民族主义###
-	Ultranationalism = {
+	###极端反动主义###
+	Ultrareactionism = {
 		types = {
-			Ultranationalism={}
+			Ultrareactionism={}
 		}
 		dynamic_faction_names = {
 		}

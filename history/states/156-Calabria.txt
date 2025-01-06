@@ -10,7 +10,7 @@ state = {
 	}
 	history = {
 		owner = TSI
-		
+		victory_points = {9990 1}
 		buildings = {
 			infrastructure = 2 #was: 5
 			dockyard = 1
@@ -23,7 +23,7 @@ state = {
 	}
 
 	provinces = {
-		3901 10027 12066 12098
+		3901 10027 12066 12098 9990
 	}
 
 	local_supplies = 6.0 

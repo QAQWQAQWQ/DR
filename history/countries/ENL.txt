@@ -21,10 +21,7 @@ set_variable = { Black_Brown_Troops = 0 }
 
 set_country_flag = parliament_mian_button_yes
 
-add_equipment_to_stockpile = {
-	type = gw_tank_equipment
-	amount = 150
-}
+
 
 recruit_character = ENL_David_Lloyd_George
 recruit_character = ENL_John_Robert_Clynes
@@ -156,7 +153,6 @@ early_ship_hull_heavy = 1
 give_guarantee = MEX
 give_guarantee = YEL
 give_guarantee = AFH
-give_guarantee = XIL
 give_guarantee = LWO
 give_guarantee = VAN
 give_guarantee = NIC
@@ -167,6 +163,7 @@ give_guarantee = XZZ
 give_guarantee = GUB
 give_guarantee = CAC
 give_guarantee = SZC
+give_guarantee = PHL
 
 set_politics = {
 	ruling_party = Liberalism
@@ -211,4 +208,9 @@ ENL_George_V_H
 }
 932={
 	set_state_flag = state_type_clave
+}
+add_equipment_to_stockpile = {
+	type = gw_tank_equipment
+	amount = 150
+	producer = ENL
 }

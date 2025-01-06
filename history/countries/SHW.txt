@@ -18,7 +18,7 @@ recruit_character = SHW_Vladimir_Samsonov
 recruit_character = SHW_Yakov_Grigorievich_Zhilinsky
 recruit_character = SHW_Yuri_Danilov
 recruit_character = SHW_aleksey_brusilov
-recruit_character = SHW_Alexei_Kuropatkin
+#recruit_character = SHW_Alexei_Kuropatkin
 recruit_character = SHW_Alexei_Eft
 
 recruit_character = SHW_Nikolai_Ruzsky
@@ -47,7 +47,7 @@ recruit_character = SHW_Alexander_Grigorievich_Khrushchov
 recruit_character = SHW_Nikolai_Vissarionovich_Nekrasov
 recruit_character = SHW_Vassili_Shulgin
 recruit_character = SHW_Nikolai_Semenovich_Tsikhze
-recruit_character = SHW_Vladimir_Sukhomlinov
+#recruit_character = SHW_Vladimir_Sukhomlinov
 recruit_character = SHW_Alexander_Ivanovich_Dubrovin
 recruit_character = SHW_Nikolai_Evgenievich_Markov
 recruit_character = SHW_Vladimir_Mitrofanovich_Purishkevich
@@ -380,6 +380,11 @@ set_autonomy = {
 }
 
 set_autonomy = {
+	target = ASS
+	autonomy_state = autonomy_supervised_state
+}
+
+set_autonomy = {
 	target = ESI
 	autonomy_state = autonomy_colony
 }
@@ -447,7 +452,7 @@ Trade_union_neutrality
 State_media
 Patriarchy_supreme
 Weak_investments
-Private_economy
+Corporate_economy
 Special_police
 low_industrialization
 completely_illiterate
