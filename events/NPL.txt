@@ -15,30 +15,28 @@ country_event = {
 	desc =NPL_democracy.1.d
 	picture = GFX_NPL_democracy_1
 
-	trigger={
-		AND={
-			NPL={
-				has_stability < 0.1
-				has_war_support < 0.2
-			}
-		}
-	}
-
 	fire_only_once = yes
+	is_triggered_only = yes
+
 
 	option = {
 		name =NPL_democracy.1.a
 		news_event = {id=NPL.3 days=2}
-		set_party_name = {
-			ideology = Conservatism
-			long_name = NPL_Conservatism_party1_long
-			name = NPL_Conservatism_party1
+		set_politics = {
+			ruling_party = Conservatism
+			last_election = "1918.11.11"
+			election_frequency = 72
+			elections_allowed = yes
 		}
 		add_popularity = {
-			ideology = Liberalism
-			popularity = 0.1
+			ideology = Conservatism
+			popularity = 0.02
 		}
 		add_political_power = 100
+		NPL = {
+			set_cosmetic_tag = NPL_dm
+			
+		}
 	}
 }
 

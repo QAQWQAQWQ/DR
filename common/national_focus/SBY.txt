@@ -509,19 +509,13 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SBY_Francisco_Cambo_H
-			retire_character = SBY_Gabriel_Maura_Gamazo
+			
 			set_party_name = {
 				ideology = Conservatism
 				long_name = SBY_Conservatism_party_rg
 				name = SBY_Conservatism_party_rg
 			} 
-			set_popularities = {
-				Liberalism=21.7
-				Conservatism = 22.3
-				Reformism = 6
-				Anarchism = 10
-				Paternalism = 40
-			}
+			
 		}
 	}
 	focus = { 

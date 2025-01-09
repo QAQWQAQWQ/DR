@@ -101,23 +101,7 @@ NPL_Charles_Mangjan={
 	}
 }
 
-NPL_Charles_Mangjan={
-	name=NPL_Charles_Mangjan
-	portraits={
-		army={
-			large="gfx/leaders/NPL/Portrait_Maurice_Gamelin.tga"
-			small="gfx/interface/ideas/Portrait_Maurice_Gamelin.dds"
-		}
-	}
-	corps_commander={
-		traits={ skilled_staffer }
-		skill=2
-		attack_skill=1
-		defense_skill=1
-		planning_skill=2
-		logistics_skill=2
-	}
-}
+
 
 NPL_Louis_d_Esperey={
 	name=NPL_Louis_d_Esperey
@@ -179,7 +163,7 @@ NPL_Paul_Doumer={
 		}
 	}
 	country_leader={
-		ideology=Authoritarian_Conservatism
+		ideology=social-radicalism
 		traits={  }
 		expire="1965.1.1.1"
 		id=-1
@@ -227,7 +211,7 @@ NPL_Andre_Tardieu={
 		}
 	}
 	country_leader={
-		ideology=Progressive_Liberalism
+		ideology=progressive-conservatism
 		traits={  }
 		expire="1965.1.1.1"
 		id=-1
@@ -275,7 +259,7 @@ NPL_Paul_Painleve={
 		}
 	}
 	country_leader={
-		ideology=Social_Democracy
+		ideology=social-radicalism
 		traits={  }
 		expire="1965.1.1.1"
 		id=-1

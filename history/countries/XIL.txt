@@ -48,9 +48,20 @@ recruit_character = XIL_Vajiravudh
 	}
 	set_autonomy = {
 		target = LWO
-		autonomy_state = autonomy_supervised_state
+		autonomy_state = autonomy_puppet
 	}
 	
+	LWO = {set_politics = {
+	ruling_party = Dictatorship
+	last_election = "1918.11.11"
+	election_frequency = 72
+	elections_allowed = no
+	}
+	set_popularities = {
+	Dictatorship = 100
+}
+}
+
 set_politics = {
 	ruling_party = Dictatorship
 	last_election = "1918.11.11"

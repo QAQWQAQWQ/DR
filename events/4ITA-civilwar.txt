@@ -832,6 +832,9 @@ immediate = {
 		if = {
 			limit = {
 				OR = {
+					AOX = {not = {controls_province = 11595
+					controls_province = 599
+					controls_province = 13273}}
 				ITE = {controls_state = 852}
 				ITC = {controls_state = 852}
 				RDN = {controls_state = 852}
@@ -843,6 +846,9 @@ immediate = {
 		if = {
 			limit = {
 				OR = {
+					AOX = {not = {controls_province = 11595
+					controls_province = 599
+					controls_province = 13273}}
 				ITE = {controls_state = 736}
 				ITC = {controls_state = 736}
 				RDN = {controls_state = 736}
