@@ -364,57 +364,57 @@ aus_hun_aut_tri = {
     }
     }
 }
-norvoj_war_tri = {
+illyrian_war_tri = {
     custom_trigger_tooltip = { 
-        tooltip = norvoj_war_tri_tool
+        tooltip = illyrian_war_tri_tool
         check_variable  = {
-            global.norvoj_war_str = 1
+            global.illyrian_war_str = 1
         }
     }
 }
-not_norvoj_war_tri = {
+not_illyrian_war_tri = {
     custom_trigger_tooltip = { 
-        tooltip = not_norvoj_war_tri_tool
+        tooltip = not_illyrian_war_tri_tool
         check_variable  = {
-            global.norvoj_war_str = 0
+            global.illyrian_war_str = 0
         }
     }
 }
-norvoj_war_end = {
+illyrian_war_end = {
     custom_trigger_tooltip = { 
-        tooltip = norvoj_war_end_tri_tool
+        tooltip = illyrian_war_end_tri_tool
         check_variable  = {
-            global.norvoj_war_str = 2
+            global.illyrian_war_str = 2
         }
         
     }
 }
-norvoj_war_not_end = {
+illyrian_war_not_end = {
     custom_trigger_tooltip = { 
-        tooltip = norvoj_war_not_end_tri_tool
+        tooltip = illyrian_war_not_end_tri_tool
         AND = {
             check_variable  = {
-                global.norvoj_hun_win = 0
+                global.illyrian_hun_win = 0
             }
             check_variable  = {
-                global.norvoj_cro_win = 0
+                global.illyrian_cro_win = 0
             }
         }
     }
 }
-cro_win_norvoj_war = {
+cro_win_illyrian_war = {
     custom_trigger_tooltip = { 
-        tooltip = cro_win_norvoj_war_tool
+        tooltip = cro_win_illyrian_war_tool
         check_variable  = {
-            global.norvoj_cro_win = 1
+            global.illyrian_cro_win = 1
         }
     }
 }
-hun_win_norvoj_war = {
+hun_win_illyrian_war = {
     custom_trigger_tooltip = { 
-        tooltip = hun_win_norvoj_war_tool
+        tooltip = hun_win_illyrian_war_tool
         check_variable  = {
-            global.norvoj_hun_win = 1
+            global.illyrian_hun_win = 1
         }
     }
 }

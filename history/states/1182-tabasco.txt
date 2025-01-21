@@ -1,0 +1,29 @@
+
+state={
+	id=1182
+	name="STATE_1182"
+	manpower = 405874
+	
+	state_category = rural
+	resources={
+		grain=7
+	}
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 2
+		}
+		
+		add_core_of = MEX
+
+		
+		
+	}
+
+	provinces={
+		12867 
+	}
+	
+
+	local_supplies=0.0 
+}

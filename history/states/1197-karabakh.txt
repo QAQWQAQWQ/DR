@@ -1,0 +1,33 @@
+state={
+	id=1197
+	name="STATE_1197"
+	resources={
+		oil=10 # was: 126.000
+	}
+	resources={
+		grain=3
+	}
+	history={
+		owner = ARA
+		add_core_of = ARA
+		add_core_of = ABA
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+			
+
+		}
+	}
+
+	provinces={
+		6642 1467 1610 4660 9715 11704
+	}
+	manpower=750082
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}

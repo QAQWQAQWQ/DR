@@ -16,14 +16,14 @@ state = {
 	history = {
 		owner = VCT
 		add_core_of = VCT
-		victory_points = { #Parma_Reggio_di_Lombardia
-			9752 10
+		victory_points = { #_Reggio_di_Lombardia
+		13343 5
 		}
-		victory_points = {
-			6973 8
+		victory_points = {#massa
+		13348 5
 		}
-		victory_points = {
-			3976 5
+		victory_points = {#Modena
+		13342 7
 		}
 		buildings = {
 			infrastructure = 4 #was: 7
@@ -33,7 +33,7 @@ state = {
 	}
 
 	provinces = {
-		3976 6973 9752 11734
+		3976 6973 9752 11734 13348 13343 13342
 	}
 
 	local_supplies = 0.0 

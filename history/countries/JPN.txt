@@ -71,16 +71,16 @@ set_politics = {
 set_autonomy = { target = RTW autonomy_state = autonomy_colony }
 
 add_ideas={
-	JPN_Restoration
+	#JPN_Restoration
 	JPN_estrangement
 
     JPN_Taisho_period
     JPN_noninterference
 ##MINISTERS##
-JPN_Honorable_H
+
 #law
 Basic_industrialization 
-Private_economy
+Corporate_economy
 No_labor_laws
 Control_media
 Patriarchy_supreme

@@ -1,0 +1,28 @@
+state={
+	id=1183
+	name="STATE_1183"
+
+	state_category = pastoral
+
+	resources={
+		grain=10
+	}
+	history={
+		
+		owner = MEX
+		
+		buildings = {
+			infrastructure = 1
+			
+		}
+		add_core_of = MEX
+	}
+
+	provinces={
+		13317
+	}
+	manpower=655094
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

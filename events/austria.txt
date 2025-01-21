@@ -275,7 +275,7 @@ country_event = {
       		1031 = { add_core_of = PREV }
 			set_cosmetic_tag = SGF
 		}
-		AOX = { puppet = DOR }
+		AOX = {set_autonomy = { target = DOR autonomy_state = autonomy_supervised_state }}
 	}
 	option = {
 		name = austria.19.b
@@ -876,7 +876,7 @@ country_event = {
             limit = {
                 is_claimed_by = KOH
             }
-            add_claimed_by = HUN
+            add_claim_by = HUN
         }
 		HUN = { change_tag_from = KOH }
         HUN = {

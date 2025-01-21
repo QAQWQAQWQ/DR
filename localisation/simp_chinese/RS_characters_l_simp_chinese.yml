@@ -129,8 +129,6 @@ DMT_Matko_Laginja:0 "马特科·拉金贾"
 
 DMT_Matko_Laginja2:0 "马特科·拉金贾"
 
-KOH_Karoly_Huszar:0 "胡萨尔·卡罗伊"
-
 KGL_Witold_Korytowski:0 "维托尔德·科里托夫斯基"
 
 KGL_Witold_Korytowski2:0 "维托尔德·科里托夫斯基"
@@ -428,7 +426,7 @@ DOS_Friedrich_August_III:0 "弗里德里希·奥古斯特三世"
 ###奥地利
 DOS_Carl_Eduard:0 "卡尔·爱德华"
 
-AGC_Alsace_Geman_Condominium:0 "德意志分治委员会"
+AGC_Alsace_Geman_Condominium:0 "德意志邦联共管区委员会"
 
 SXX_ZhangFenghui:0 "张凤翙"
 
@@ -530,6 +528,10 @@ DOR_ebert:0 "弗里德里希·艾伯特"
 
 YED_Alexander_I:0 "亚历山大一世"
 
+KOH_Mihaly_Karolyi:0 "米哈伊·卡罗伊"
+
+KOH_Karoly_Huszar:0 "胡萨尔·卡罗伊"
+
 KOH_Joseph_Augusta:0 "约瑟夫·奥古斯特"
 
 KOH_Joseph_Augusta2:0 "约瑟夫·奥古斯特"
@@ -546,24 +548,11 @@ KOH_Pal_Nagy:0 "帕尔·纳吉"
 
 KOH_Sandor_Szurmay:0 "桑多尔·苏尔梅"
 
-SLO_Franz_Graf_von_Clam_Gallas:0 "弗朗茨·冯·加拉斯"
-
-SLO_Theodor_Korner:0 "提奥多尔·科尔纳"
-
-SLO_Theodor_Korner2:0 "提奥多尔·科尔纳"
-
 KOH_Istvan_Horthy:0 "斯蒂芬·霍尔蒂"
-
-TRA_Istvan_Horthy:0 "斯蒂芬·霍尔蒂"
-
-TRA_Baro_Straussenburg:0 "阿瑟·冯·施特劳森堡"
-
-TRA_Baro_Straussenburg2:0 "阿瑟·冯·施特劳森堡"
 
 KOH_Vitez_Karpathy_Kamillo:0 "卡米洛·卡帕蒂"
 
 KOH_Willerding_Rezso:0 "威勒特·雷兹斯"
-
 
 KOH_Karoly_Badok:0 "卡罗伊·比博克"
 
@@ -577,7 +566,55 @@ KOH_Jeno_Ratz:0 "尤金·拉茨"
 
 KOH_Vitez_nagybaczoni_Nagy:0 "威廉·纳吉松"
 
+HUN_Mihaly_Karolyi:0 "米哈伊·卡罗伊"
 
+HUN_Karoly_Huszar:0 "胡萨尔·卡罗伊"
+
+HUN_Joseph_Augusta:0 "约瑟夫·奥古斯特"
+
+HUN_Joseph_Augusta2:0 "约瑟夫·奥古斯特"
+
+HUN_Horthy_Miklos:0 "霍尔蒂·米克洛什"
+
+HUN_Janky_Kocsard:0 "扬基·科克萨德"
+
+HUN_Samu_Baro_Hazai:0 "萨穆·哈扎伊"
+
+HUN_Shvoy_Istvan:0 "伊斯特万·什沃伊"
+
+HUN_Pal_Nagy:0 "帕尔·纳吉"
+
+HUN_Sandor_Szurmay:0 "桑多尔·苏尔梅"
+
+HUN_Istvan_Horthy:0 "斯蒂芬·霍尔蒂"
+
+HUN_Vitez_Karpathy_Kamillo:0 "卡米洛·卡帕蒂"
+
+HUN_Willerding_Rezso:0 "威勒特·雷兹斯"
+
+HUN_Karoly_Badok:0 "卡罗伊·比博克"
+
+HUN_Gyula_Gombos_Jakfai_Vitez:0 "久拉·贡博斯"
+
+HUN_Somkuthy_Jozsef:0 "约瑟夫·索姆西"
+
+HUN_Vitez_Karoly:0 "卡罗伊·莫尔纳"
+
+HUN_Jeno_Ratz:0 "尤金·拉茨"
+
+HUN_Vitez_nagybaczoni_Nagy:0 "威廉·纳吉松"
+
+SLO_Franz_Graf_von_Clam_Gallas:0 "弗朗茨·冯·加拉斯"
+
+SLO_Theodor_Korner:0 "提奥多尔·科尔纳"
+
+SLO_Theodor_Korner2:0 "提奥多尔·科尔纳"
+
+TRA_Istvan_Horthy:0 "斯蒂芬·霍尔蒂"
+
+TRA_Baro_Straussenburg:0 "阿瑟·冯·施特劳森堡"
+
+TRA_Baro_Straussenburg2:0 "阿瑟·冯·施特劳森堡"
 
 FPE_Sun_daoren:0 "孙道仁"
 
@@ -621,6 +658,8 @@ SHH_Lu_Yong_Xiang:0 "卢永祥"
 
 SBY_AlfonsoXIII:0 "阿方索十三世"
 
+SBY_AlfonsoXIII_Dic:0 "阿方索十三世"
+
 SBY_Manuel_Garcia_Prieto:0 "曼努埃尔·加西亚·普列托"
 
 SBY_Manuel_Fernandez_Silvestre:0 "曼努埃尔·西尔维斯特"
@@ -633,7 +672,7 @@ SBY_Francisco_Cambo:0 "弗朗西索科·坎博"
 
 SBY_Gabriel_Maura_Gamazo:0 "加布里埃尔·莫拉·加马佐"
 
-SBY_Miguel_Primo_de_Rivera:0 "米戈尔·普里·德里维拉"
+SBY_Miguel_Primo_de_Rivera:0 "米格尔·P·德·里维拉"
 
 SBY_Antonio_Goicoechea_Cosculluela:0 "安东尼奥·戈科切亚"
 
@@ -658,7 +697,7 @@ SBY_Santiago_Alba_y_Bonifaz:0 "圣地亚哥·阿尔巴·博尼法兹"
 
 SBY_Alvaro_de_Figueroa:0 "阿尔瓦罗·德·菲格罗亚"
 
-SBY_Juan_de_la_Cierva_y_Penafiel:0 "胡安·德拉西尔瓦·佩纳菲尔"
+SBY_Juan_de_la_Cierva_y_Penafiel:0 "胡安·德拉·西尔瓦"
 
 
 
@@ -1528,7 +1567,7 @@ MaoZeDong:0 "毛泽东"
 
 WUP_Zhangjingyao:0 "张敬尧"
 
-PHL_Miguel_Primo_de_Rivera:0 "米戈尔·普里·德里维拉"
+PHL_Miguel_Primo_de_Rivera:0 "米格尔·P·德·里维拉"
 
 PHL_Emilio_Aguinaldo:0 "埃米利奥·阿奎纳多"
 
@@ -1620,9 +1659,9 @@ NPL_Napoleon_IV:0 "拿破仑四世"
 
 MOA_Louis_Philippe_Robert_d_Orleans:0 "路易·菲利普·罗伯特·奥尔良"
 
-NPL_Charles_Mangjan:0 "查尔斯·曼金"
+NPL_Charles_Mangjan:0 "夏尔·芒然"
 
-NPL_Louis_d_Esperey:0 "路易·德埃斯佩雷"
+NPL_Louis_d_Esperey:0 "路易·F·德斯佩雷"
 
 NPL_Robert_Georges_Nivelle:0 "罗贝尔·尼维尔"
 
@@ -1664,8 +1703,6 @@ DAS_Albert_hahl:0 "阿尔伯特·哈尔"
 
 ENL_Winston_Churchill:0 "温斯顿·丘吉尔"
 
-KOH_Mihaly_Karolyi:0 "米哈伊·卡罗伊"
-
 HUN_Mihaly_Karolyi:0 "米哈伊·卡罗伊"
 
 BRC_Luis_Carlos_Prestes:0 "路易斯·普列斯特斯"
@@ -1697,6 +1734,8 @@ QIN_PuLun:0 "爱新觉罗·溥伦"
 
 ZAN_bin_harub_al_busaidi:0 "本·哈鲁卜"
 
+ASS_Mahammad_Yayyo:0 "穆罕默德·亚约"
+
 NFL_Richard_Squires:0 "理查德·斯奎尔斯"
 
 SKM_Tashi_Namgyal:0 "塔希·纳姆加尔"
@@ -1708,3 +1747,7 @@ GUB_Mario_Garcia_Menocal:0 "马里奥·G·梅诺卡尔"
 DMA_Horacio_Vasquez:0 "奥拉西奥·巴斯克斯"
 
 DAS_Erwin_von_Zach:0 "埃尔温·冯·查赫"
+
+CAC_Chester_Harding:0 "切斯特·哈丁"
+
+SZC_George_Lloyd:0 "乔治·劳埃德"

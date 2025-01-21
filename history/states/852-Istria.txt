@@ -9,19 +9,24 @@ state = {
 
 	history = {
 		owner = AOX
-		
+		victory_points = {
+			13356 5
+		}
 		buildings = {
 			infrastructure = 3
 			dockyard = 1
-			
+			13356 = {
+				naval_base = 10
+			}
 		}
 		add_core_of = AOX
+		add_claim_by = DMT
 
 		#CONTROLLED BY ITALY AT GAME START -> ITALIAN NAMES
 	}
 
 	provinces = {
-		 11735
+		 11735 13356
 	}
 
 	local_supplies = 0.0 

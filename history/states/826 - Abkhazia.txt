@@ -4,18 +4,22 @@ state = {
 	history = {
 		owner = SHW
 		victory_points = {
-			11617 1 
+			11617 5
 		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+			11617 = {
+				naval_base = 3
+			}
 		}
 
 		add_core_of = IUI
+
 	}
 
 	provinces = {
-		672 11599 11617 11647 
+		672 11599 11617
 	}
 	manpower = 491569
 	buildings_max_level_factor = 1.000

@@ -13,12 +13,32 @@ characters={
 			id=-1
 		}
 	}
+	SBY_AlfonsoXIII_Dic={
+		name=SBY_AlfonsoXIII_Dic
+		portraits={
+			civilian={
+				large="gfx/leaders/SBY/Portrait_AlfonsoXIII.tga"
+			}
+		}
+		country_leader={
+			ideology=military-dictatorship
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	SBY_Manuel_Garcia_Prieto={
 		name=SBY_Manuel_Garcia_Prieto
 		portraits={
 			civilian={
 				small="gfx/interface/ideas/idea_Manuel_Garcia_Prieto.dds"
 			}
+		}
+		country_leader={
+			ideology=lib-big-tent
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
 		}
 		advisor={
 			slot = head_of_government
@@ -67,6 +87,12 @@ characters={
 				small="gfx/interface/ideas/idea_Francisco_Cambo.dds"
 			}
 		}
+		country_leader={
+			ideology=Authoritarian_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
 		advisor={
 			slot = head_of_government
 			idea_token = SBY_Francisco_Cambo_H
@@ -111,6 +137,12 @@ characters={
 				small="gfx/interface/ideas/idea_Gabriel_Maura_Gamazo.dds"
 			}
 		}
+		country_leader={
+			ideology=Religious_Conservatism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
 		advisor={
 			slot = head_of_government
 			idea_token = SBY_Gabriel_Maura_Gamazo_H
@@ -154,6 +186,12 @@ characters={
 			civilian={
 				small="gfx/interface/ideas/idea_Miguel_Primo_de_Rivera.dds"
 			}
+		}
+		country_leader={
+			ideology=military-dictatorship
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
 		}
 		advisor={
 			slot = head_of_government

@@ -1,0 +1,28 @@
+
+state={
+	id=1194
+	name="STATE_1194"
+	manpower = 3381300
+	
+	state_category = town
+	resources={
+		grain=15
+	}
+	history={
+		owner = HEL
+		add_core_of = HEL
+		add_core_of = BEL
+		
+		buildings = {
+			infrastructure = 1
+			
+
+		}
+	}
+
+	provinces={
+		6537 9444
+	}
+
+	local_supplies=14.0 
+}

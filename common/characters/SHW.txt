@@ -271,7 +271,7 @@ characters={ #skilled_staffer #Lieutenant_general
 			}
 		}
 		country_leader={
-			ideology=Social_Liberalism
+			ideology=Liberalism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -283,14 +283,14 @@ characters={ #skilled_staffer #Lieutenant_general
 				original_tag = SHW
 			}
 			available = {
-				available = {
+				
 					NOT={
 						has_country_leader = {
 						name = SHW_Kerensky
 						ruling_only = yes
 					}
 				}
-				  }
+				  
 			  }
 			traits = {
 			}
@@ -308,7 +308,7 @@ characters={ #skilled_staffer #Lieutenant_general
 			}
 		}
 		country_leader={
-			ideology=Social_Liberalism
+			ideology=Liberalism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -389,14 +389,14 @@ SHW_Nikolaj_Dmitrievich_Golicyn={
 			original_tag = SHW
 		}
 		available = {
-			available = {
+			
 				NOT={
 					has_country_leader = {
 					name = SHW_Kerensky
 					ruling_only = yes
 				}
 			}
-			  }
+			  
 		  }
 		traits = {
 		}

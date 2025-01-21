@@ -731,7 +731,7 @@ focus_tree = {
 			}
 		}
 		bypass = {
-			norvoj_war_end = yes
+			illyrian_war_end = yes
 			KOH = {
 				exists = yes
 			}
@@ -987,7 +987,7 @@ focus_tree = {
 			}
 				hidden_effect = {
 					set_variable = {
-						global.norvoj_contradictions = 1
+						global.illyrian_contradictions = 1
 					}
 				}
 		}
@@ -1012,10 +1012,10 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				set_variable = {
-					global.norvoj_contradictions = 1
+					global.illyrian_contradictions = 1
 				}
 			}
-			custom_effect_tooltip = norvoj_contradictions_tool
+			custom_effect_tooltip = illyrian_contradictions_tool
 			# DMT = { annex_country = { target = KLD transfer_troops = yes } }
 			custom_effect_tooltip = AUS_bir_1_tool
 			custom_effect_tooltip = more_cze_aus_hun_sup_30
@@ -1044,10 +1044,10 @@ focus_tree = {
 			aushun_clamp_vars = yes	
 		}
 		available = {
-			not_norvoj_war_tri = yes
+			not_illyrian_war_tri = yes
 		}
 		bypass = {
-norvoj_war_end = yes
+illyrian_war_end = yes
 		}
 	}
 	#focus = {
@@ -1101,7 +1101,7 @@ norvoj_war_end = yes
 			#	aushun_clamp_vars = yes	
 		}
 		available = {
-			not_norvoj_war_tri = yes
+			not_illyrian_war_tri = yes
 		}
 		bypass = {
 			# has_completed_focus = AUS_bir_1
@@ -1127,7 +1127,7 @@ norvoj_war_end = yes
 			}
 		}
 		available = {
-			norvoj_war_not_end = yes
+			illyrian_war_not_end = yes
 		}
 		bypass = {
 		}
@@ -1163,7 +1163,7 @@ norvoj_war_end = yes
 			}
 		}
 		available = {
-			norvoj_war_not_end = yes
+			illyrian_war_not_end = yes
 		}
 		bypass = {
 		}
@@ -1229,7 +1229,7 @@ norvoj_war_end = yes
 			}
 		}
 		available = {
-			norvoj_war_not_end = yes
+			illyrian_war_not_end = yes
 		}
 		bypass = {
 		}
@@ -1276,7 +1276,7 @@ norvoj_war_end = yes
 	#	}
 	#	available = {
 	#		always = no
-	#		not_norvoj_war_tri = yes
+	#		not_illyrian_war_tri = yes
 	#	}
 	#	bypass = { 
 	#	}
@@ -1363,7 +1363,7 @@ norvoj_war_end = yes
 	#		custom_effect_tooltip = AUS_bir_8_tool
 	#	}
 	#	available = {
-	#		not_norvoj_war_tri = yes
+	#		not_illyrian_war_tri = yes
 	#	}
 	#	bypass = {
 	#	} 
@@ -1400,7 +1400,7 @@ norvoj_war_end = yes
 			}
 		}
 		available = {
-			norvoj_war_end = yes
+			illyrian_war_end = yes
 		}
 		bypass = {
 		}
@@ -1595,7 +1595,7 @@ norvoj_war_end = yes
 		completion_reward = {
 			if = {
 				limit = {
-					check_variable = { global.cze_accpect = 1 }
+					#check_variable = { global.cze_accpect = 1 }
 					BXM = { exists = yes }
 				}
 				SLO = {
@@ -1660,7 +1660,7 @@ norvoj_war_end = yes
 			}
 			if = {
 				limit = {
-					check_variable = { global.pol_accpect = 1 }
+					#check_variable = { global.pol_accpect = 1 }
 					KGL = { exists = yes }
 				}
 				KGL = {
@@ -1678,7 +1678,7 @@ norvoj_war_end = yes
 			}
 			if = {
 				limit = {
-					check_variable = { global.cro_accpect = 1 }
+					#check_variable = { global.cro_accpect = 1 }
 					DMT = { exists = yes }
 				}
 				DMT = {
@@ -3041,7 +3041,7 @@ norvoj_war_end = yes
 				AND = {
 					has_completed_focus = AUS_bir_15
 					check_variable  = {
-						global.norvoj_war_str = 2
+						global.illyrian_war_str = 2
 					}
 					OR = {
 						has_completed_focus = AUS_ger_1

@@ -12,9 +12,8 @@ set_technology = {
 	fuel_silos = 1
 }
 
-recruit_character = YDN_Hendrikus_Colijn
 recruit_character = YDN_Limburg_Stirum
-recruit_character = YDN_Charles_Beerenbrouck
+
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -48,20 +47,17 @@ recruit_character = YDN_Charles_Beerenbrouck
 		
 	}
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-	Conservatism = 80
-	Nationalism = 10
-	Conservatism = 5
-	Revolutionism = 5
+	Dictatorship = 100
 }
 add_ideas = {
 Basic_industrialization 
-Private_economy
-	YDN_exile
+Market_economy
+	#YDN_exile
 }

@@ -1,0 +1,37 @@
+
+state={
+	id=1193
+	name="STATE_1193"
+	manpower = 3424403
+	
+	state_category = city
+
+	resources={
+		steel=6 #was 2 before Mexican steel production was centralized to allow oil concessions
+	}
+	resources={
+		grain=14
+	}
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 3 #was: 5
+			arms_factory = 2
+			industrial_complex = 4
+			air_base = 3
+		}
+		
+add_core_of = MEX
+		
+		
+		
+		
+	}
+
+	provinces={
+		 2011 
+	}
+	
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,17 @@
+characters={
+	CAC_Chester_Harding={
+		name=CAC_Chester_Harding
+		portraits={
+			civilian={
+				large="gfx/leaders/CAC/Portrait_Chester_Harding.tga"
+			}
+		}
+		country_leader={
+			ideology=multinational-colony
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+
+}

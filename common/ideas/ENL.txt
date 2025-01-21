@@ -82,7 +82,7 @@ ideas = {
 		Blind_Allowance_Act = {
 			picture = Blind_Allowance_Act
 			modifier = { 
-				democratic_drift = 0.05
+				#democratic_drift = 0.05
 				political_power_factor = 0.1
 				stability_factor = 0.03
 			}  
@@ -90,7 +90,7 @@ ideas = {
 		Family_allowance = { 
 			picture = Family_allowance
 			modifier = {  
-				democratic_drift = 0.05
+				#democratic_drift = 0.05
 				political_power_factor = 0.1
 				stability_factor = 0.03
 			}
@@ -106,7 +106,7 @@ ideas = {
 		High_grain_prices = {
 			picture = High_grain_prices
 			modifier = { 
-				democratic_drift = -0.1
+				#democratic_drift = -0.1
 				political_power_factor = -0.1
 				stability_factor = -0.05
 			}
@@ -114,7 +114,7 @@ ideas = {
 		Slightly_high_grain_prices = {
 			picture = Slightly_high_grain_prices
 			modifier = { 
-				democratic_drift = -0.05
+				#democratic_drift = -0.05
 				political_power_factor = -0.05
 				stability_factor = -0.05
 			}

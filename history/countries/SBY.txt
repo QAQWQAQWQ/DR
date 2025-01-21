@@ -5,6 +5,7 @@ oob = "SBY_1920"
 # Starting tech
 
 recruit_character = SBY_AlfonsoXIII
+recruit_character = SBY_AlfonsoXIII_Dic
 recruit_character = SBY_Manuel_Fernandez_Silvestre
 recruit_character = SBY_Francisco_Franco
 recruit_character = SBY_Manuel_Garcia_Prieto
@@ -88,5 +89,9 @@ set_variable = {
 	SBY_Bloated_bureaucracy5=-0.1
 }
 set_popularities = {
-	Paternalism = 100
+	Anarchism = 10
+	Paternalism = 40
+	Conservatism = 18.2
+	Liberalism = 29.55
+	Reformism =2.25
 }

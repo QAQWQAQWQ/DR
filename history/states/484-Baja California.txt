@@ -4,26 +4,21 @@ state = {
 	manpower = 108841
 	state_category = rural
 	resources={
-		grain=12
+		grain=6
 	}
 	history={
-		owner = MEX
-		add_core_of = MEX
+		owner = UBS
+		add_core_of = UBS
 		buildings = {
 			infrastructure = 2
-			air_base = 3
+			air_base = 2
 			1892 = {
 				naval_base = 2
 			}
-			12736 = {
-				naval_base = 1
-			}
+			
 		}
 		victory_points = {
 			12461 10
-		}
-		victory_points = {
-			12736 3
 		}
 		victory_points = {
 			1892 3
@@ -33,7 +28,7 @@ state = {
 		}
 
 	}
-	provinces= { 1892 1904 7964 8119 12461 12736 12859 13215 13216 }
+	provinces= { 1892 7964 12461 12859 13215 13216 }
 
 	local_supplies=0.0 
 }

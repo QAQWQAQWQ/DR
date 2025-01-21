@@ -1,0 +1,38 @@
+state={
+	id=268
+	name="STATE_268"
+	manpower = 85232
+
+
+	state_category = rural
+
+	history={
+		owner = ESI
+
+		buildings = {
+			infrastructure = 2
+			air_base = 2
+			13350 = {
+				naval_base = 3
+			}
+			4985 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			13350 10
+		}
+		victory_points = {
+			13333 1
+		}
+		victory_points = {
+			13332 1
+		}
+
+	}
+	provinces={
+		4985 8124 13332 13333 13350
+ 	}
+
+	local_supplies=0.0 
+}

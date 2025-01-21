@@ -14,8 +14,8 @@
 
  Dictatorship_drift:0 "专制主义理念每日新增支持率"
  Dictatorship_acceptance:0 "专制主义外交接纳度"
- Ultranationalism_drift:0 "极端民族主义理念每日新增支持率"
- Ultranationalism_acceptance:0 "极端民族主义外交接纳度"
+ Ultrareactionism_drift:0 "极端反动主义理念每日新增支持率"
+ Ultrareactionism_acceptance:0 "极端反动主义外交接纳度"
  Paternalism_drift:0 "家长主义理念每日新增支持率"
  Paternalism_acceptance:0 "家长主义外交接纳度"
 ###母意识形态
@@ -59,9 +59,9 @@
  Paternalism_noun:0 "家长制"
  Paternalism_desc:0 "一党制政府"
 
- Ultranationalism:0 "极端民族主义"
- Ultranationalism_noun:0 "极端民族主义"
- Ultranationalism_desc:0 "一党制政府"
+ Ultrareactionism:0 "极端反动主义"
+ Ultrareactionism_noun:0 "极端反动主义"
+ Ultrareactionism_desc:0 "一党制政府"
 
 ###子意识形态
 
@@ -133,15 +133,19 @@
  Massimalismo_desc:0 "最高纲领主义"
  Revolutionary-front:0 "革命阵线"
  Revolutionary-front_desc:0 "革命阵线"
+ social_new_sanmin:0 "社会新三民主义"
+ social_new_sanmin_desc:0 "社会新三民主义"
+ new_sanmin_socialism:0 "新三民社会主义"
+ new_sanmin_socialism_desc:0 "新三民社会主义"
 
 
-##改良主义
+##社会改良主义
  Social_Democracy:0 "社会民主主义"
  Social_Democracy_desc:0 "§Y社会民主主义§!\n当社会民主主义第一次出现在世人眼前时，它无疑是革命的。从赫赫有名的《反社会党人非常法案》就能看出来，在当时的旧秩序的眼中，社会民主党人便是革命的代名词，要以最严苛的态度去镇压这群妄图带着泥腿子们企图掀翻王座的空想家们。然而，当我们把目光放到当今这样一个时代时，我们所谈论的社会民主主义，通常是指那些尝试通过民主议会改革资本主义制度，进而通过不流血的方式实现社会共同繁荣的一种意识形态。社会民主主义者们认为，普选权的推广让工人政党通过民主议会进行和平的斗争是可行的；而在那些已经完成了革命的国家，社会民主党人则主张“让市场经济发挥其余热”，放缓社会主义的改造进程，通过和平民主的方式进行缓慢的变革。社会民主主义通常支持对市场经济进行限制，以“有形的大手”保障社会公平。同时，社会民主主义还支持一种进步的多元文化观，对于“文化马克思主义”和“西方马克思主义”也是推崇有加。和这个世界一样，社会民主党人再也不在以原有的面目展示在世人面前了，保守派们一如既往地将他们视为危险的“社会主义分子”，而他们对于革命“无谓的流血”的态度也让革命家们和他们割席断交。但社会革命党人们进行社会变革的理想依然没有改变。他们相信，终有一天他们会向世界证明，社会民主主义的理念才是迈向社会主义的唯一正道。"
  Reformist_Socialism:0 "改良社会主义"
  Reformist_Socialism_noun:0 "改良社会主义"
  Reformist_Socialism_desc:0 ""
-#§Y民主社会主义§!\n民主社会主义是一种主张在民主框架之内，通过温和的手段实现社会主义变革的意识形态。尽管在终极目的上，他们和其同胞兄弟——革命主义有着很大的相似性，但民主社会主义者认为，通过民主的政治框架去推动社会变革，达到社会革命的目的是可行的。而暴力革命只会带来无谓的牺牲。因此，民主社会主义者反对通过暴力手段推翻资产阶级民主政权，并主张通过工人组织政党参与选举来进行“和平的斗争”。尽管在名字上，民主社会主义和“社会民主主义”看似是一样的，但是在实践过程中，民主社会主义者们相较已经建制化的社民党人们，更多地表现出了一种更为激进的进步主张——包括但不限于，国有化进程，对社会公平的坚定维护和对现政权的“温和改造”，当然，一切都是在民主框架之内的“合法议程”。很难说清这些主张究竟是民主社会主义者们为了争取选票而放出的噱头，还是其为了实现革命目标所采用的和平手段。无论是哪一边，民主社会主义者们都一再强调“无意推翻民主”。但是民主机制下更为保守的政党们对这些“议会里的革命党”还是抱有很强的戒心，毕竟他们都不希望来之不易的民主政权就这样悄悄地被革命者们打着民主的旗号偷走。
+ #§Y民主社会主义§!\n民主社会主义是一种主张在民主框架之内，通过温和的手段实现社会主义变革的意识形态。尽管在终极目的上，他们和其同胞兄弟——革命主义有着很大的相似性，但民主社会主义者认为，通过民主的政治框架去推动社会变革，达到社会革命的目的是可行的。而暴力革命只会带来无谓的牺牲。因此，民主社会主义者反对通过暴力手段推翻资产阶级民主政权，并主张通过工人组织政党参与选举来进行“和平的斗争”。尽管在名字上，民主社会主义和“社会民主主义”看似是一样的，但是在实践过程中，民主社会主义者们相较已经建制化的社民党人们，更多地表现出了一种更为激进的进步主张——包括但不限于，国有化进程，对社会公平的坚定维护和对现政权的“温和改造”，当然，一切都是在民主框架之内的“合法议程”。很难说清这些主张究竟是民主社会主义者们为了争取选票而放出的噱头，还是其为了实现革命目标所采用的和平手段。无论是哪一边，民主社会主义者们都一再强调“无意推翻民主”。但是民主机制下更为保守的政党们对这些“议会里的革命党”还是抱有很强的戒心，毕竟他们都不希望来之不易的民主政权就这样悄悄地被革命者们打着民主的旗号偷走。
  Fabian_Socialism:0 "费边社会主义"
  Fabian_Socialism_desc:0 "§Y费边社会主义§!\n就连最激进的革命主义者都不得不承认，不列颠是一个古老而保守的国度。血腥的英国内战最后换来的却是迎回君主制；轰轰烈烈的宪章运动没有迎来革命，而是妥协性地成立了工党。既然激烈的革命最终都会在走向温婉的改良，那我们不如大大方方地融入到这亘古不变的风潮当中。由此，一种符合英国“四千万总保守”的社会主义思想诞生了。这种意识形态的信奉者们用善用缓进待机战术取胜的古罗马统帅费边来为其命名，费边主义由此诞生。费边主义，又称费边社会主义。这一意识形态将费边的古老战术运用到了现代的政治策略上。费边主义认为社会是一个有机体，是在不间断地成长与发展的，任何时候都无需破坏社会组织的连续性或是对整个社会组织进行突然地改变。社会主义的到来是不可避免的，但是只能是民主主义的、渐进的、合乎道德的和合乎宪法的与和平的。和一般性的民主社会主义者高度类似，费边主义者们主张通过议会斗争来推动渐进的社会变革，反对暴力革命。但是，吸收了英国传统的费边主义者们也大胆地提出了自己的新主张——如激进的地方分权自治，以及在社会道德层面上的民主改造等。时至今日，费边主义者们仍然以工党激进派的身份活跃于英国的政坛之上，或许假以时日，他们能够给古老而走向衰朽的保守高堂吹来粉色的变革之风。"
  Union_Socialism:0 "工联社会主义"
@@ -160,10 +164,16 @@
  Dannunzionism_Ref:0 "邓南遮主义"
  Dannunzionism_Ref_desc:0 ""
 
- Ref-Big-tent:0 "改良主义大帐篷"
+ Ref-Big-tent:0 "社会改良大帐篷"
  Ref-Big-tent_desc:0 ""
 
+ social-radicalism:0 "社会激进主义"
+ social-radicalism_desc:0 ""
+
 ##自由主义
+ Liberalism:0 "自由主义"
+ Liberalism_desc:0 ""
+
  Social_Liberalism:0 "社会自由主义"
  Social_Liberalism_desc:0 "§Y社会自由主义§!\n如何在保障民主自由不被极权暴政吞噬的同时维护社会公平不被部分无良的权贵所侵害?如何在革命的烈火和保守的反扑当中走出一条迈向公平正义和自由开放的道路来?社会自由主义给出了自己的答案。社会自由主义，又称现代自由主义。被认为是自由主义发展到二十世纪的一个新的阶段。政治上，社会自由主义认为应当在维护民主的政治框架同时，保障人民的自由权利和发展。因此，和一般的自由主义者相比，他们主张一种政府干预的自由市场经济。通过有形的大手保障市场不会成为吃人的工具，而是全社会共同繁荣的聚宝盆。同时，社会自由主义还主张进一步拓展福利制度和文化上的多元化。这也使得社会自由主义实际上和进步主义者们走得更近，而非他们的自由主义前辈。"
  Classical_Liberalism:0 "古典自由主义"
@@ -200,7 +210,16 @@
  agarian-liberalism:0 "农业自由主义"
  agarian-liberalism_desc:0 ""
 
+ socialist-liberalism:0 "自由社会主义"
+ socialist-liberalism_desc:0 ""
+ 
+ liberal-radicalism:0 "自由激进主义"
+ liberal-radicalism_desc:0 ""
+
 ##保守主义
+ Conservatism:0 "保守主义"
+ Conservatism_desc:0 ""
+
  Classical_Conservatism:0 "古典保守主义"
  Classical_Conservatism_desc:0 "§Y古典保守主义§!\n变革是需要付出代价的，但这个代价又应该让来承担？自由主义的理想固然是好的，但这必然会造成社会的动荡，甚至倒向不可挽回的革命。因此，在自由的浪子们放荡不羁地追求所谓进步之时，需要一位家长来保障已经建立起来的秩序不会因为这些聒噪的言语而被动摇。这就是古典保守主义。古典保守主义认为，如今的人类秩序，是社会历史演变了千百年来的结果。而这一精妙而复杂的机器不应该在新兴思想的粗暴干涉之下像橡皮泥一般被塑造成各种样子，而是让其保留原样。作为控制人类“非理性”部分的重要力量。因此，古典保守主义认为现存的制度是“历史选择的结果”，应当予以保留。在已经构建世界霸权的帝国看来，古典保守主义是维持现存秩序的最佳方案，而在部分新兴国家看来，选择部分回归传统也是一种选择。无论如何，古典保守主义就在那里，偏安于历史长河当中的一隅。"
  Authoritarian_Conservatism:0 "威权保守主义"
@@ -228,6 +247,9 @@
 
  comprador-conservatism:0 "买办保守主义"
  comprador-conservatism_desc:0 ""
+
+ progressive-conservatism:0 "进步保守主义"
+ progressive-conservatism_desc:0 ""
 
 ####家长制
  Paternalism:0 "家长制"
@@ -261,11 +283,11 @@
  Dictatorship_desc:0 ""
  Dictatorship_type:0 "专制主义"
  Dictatorship_type_desc:0 ""
- military-dictatorship:0 "军政独裁"
+ military-dictatorship:0 "军政专制"
  military-dictatorship_desc:0 ""
- warlord-dictatorship:0 "军阀独裁"
+ warlord-dictatorship:0 "军阀专制"
  warlord-dictatorship_desc:0 ""
- civilian-dictatorship:0 "文官独裁"
+ civilian-dictatorship:0 "文官专制"
  civilian-dictatorship_desc:0 ""
  Absolute_Monarchy:0 "绝对君主制"
  Absolute_Monarchy_desc:0 ""
@@ -283,8 +305,8 @@
  pseudo-rev-rea-aut_desc:0 "伪革命专制"
  pseudo-sanmin-autocracy:0 "伪三民专制"
  pseudo-sanmin-autocracy_desc:0 "伪三民专制"
- comprador-dictatorship:0 "买办独裁制"
- comprador-dictatorship_desc:0 "买办独裁制"
+ comprador-dictatorship:0 "买办专制"
+ comprador-dictatorship_desc:0 "买办专制"
  autocratic-colonial-government:0 "专制殖民政府"
  autocratic-colonial-government_desc:0 ""
  caudillo-dictatorship:0 "考迪罗独裁制"
@@ -307,6 +329,10 @@ bonaparte-autocracy:0 "专制波拿巴主义"
 bonaparte-autocracy_desc:0 ""
 bonaparte-auto-cm:0 "专制君宪波拿巴主义"
 bonaparte-auto-cm_desc:0 ""
+multinational-colony:0 "多国殖民政府"
+multinational-colony_desc:0 ""
+aristocratic-monarchy:0 "贵族君主制"
+aristocratic-monarchy_desc:0 ""
 
 ##混合民族主义
  Hybrid_Nationalism:0 "混合民族主义"
@@ -326,7 +352,7 @@ bonaparte-auto-cm_desc:0 ""
  Reactionist_National_Corporatism:0 "反动民族法团主义"
  Reactionist_National_Corporatism_desc:0 ""
 
-####极端民族主义
+####极端反动主义
 
 
 ###各国政党
@@ -357,8 +383,8 @@ FRW_Revolutionism_party_new_long:0 "革命民族团结党"
 FRW_Populist_Conservatism_party_new:0 "法兰西农民党"
 FRW_Populist_Conservatism_party_new_long:0 "法兰西农民党"
 
-FRW_Ultranationalism_party_new_long:0 "绿杉军"
-FRW_Ultranationalism_party_new:0 "绿杉军"
+FRW_Ultrareactionism_party_new_long:0 "绿杉军"
+FRW_Ultrareactionism_party_new:0 "绿杉军"
 
 
 FRW_Comite_communal_new_long:0 "中央紧急委员会"
@@ -440,35 +466,31 @@ XYL_Revolutionism_party_new_long:0 "多瑙河联盟"
 SHW_Dictatorship_party:0 "古尔科内阁"
 SHW_Dictatorship_party_long:0 "古尔科内阁"
 
-
-NPL_Conservatism_party:0 "波拿巴王朝"
-NPL_Conservatism_party_long:0 "波拿巴王朝"
-
-NPL_Conservatism_party1:0 "保守党"
-NPL_Conservatism_party1_long:0 "保守党"
+NPL_Conservatism_party:0 "保守党"
+NPL_Liberalism_party:0 "自由党"
 
 RDN_Dictatorship_party:0 "奥兰多内阁"
 RDN_Dictatorship_party_long:0 "奥兰多内阁"
 
-AGC_Dictatorship_party:0 "德意志邦联共管委员会"
-AGC_Dictatorship_party_long:0 "德意志邦联共管委员会"
+AGC_Dictatorship_party:0 "德意志邦联共管区委员会"
+AGC_Dictatorship_party_long:0 "德意志邦联共管区委员会"
 
 TSI_Conservatism_party:0 "波旁-那不勒斯王朝"
 TSI_Conservatism_party_long:0 "波旁-那不勒斯王朝"
 
 
 
-SBY_Liberalism_party:0 "西班牙自由党"
-SBY_Liberalism_party_long:0 "西班牙自由党"
-SBY_Conservatism_party:0 "波旁-西班牙王朝"
-SBY_Conservatism_party_long:0 "波旁-西班牙王朝"
-SBY_Conservatism_party0:0 "西班牙爱国联盟"
-SBY_Conservatism_party0_long:0 "西班牙爱国联盟"
-SBY_Conservatism_party1:0 "军管临时政府"
-SBY_Conservatism_party1_long:0 "军管临时政府"
+SBY_Liberalism_party:0 "自由党-自由党左派"
+SBY_Conservatism_party:0 "自由保守党"
+SBY_Reformism_party:0 "共和-社会联盟"
+SBY_Anarchism_party:0 "全国劳工联盟"
 
-SBY_Conservatism_party2:0 "西班牙联邦党"
-SBY_Conservatism_party2_long:0 "西班牙联邦党"
+SBY_Reformism_party1:0 "改革党-激进共和党-西班牙工人社会党"
+SBY_Conservatism_party_rg:0 "自由保守党-加泰罗尼亚地区主义联盟"
+
+SBY_Dictatorship_party:0 "四边组织"
+SBY_Dictatorship_party1:0 "军政指导体制"
+SBY_Dictatorship_party2:0 "爱国联盟"
 
 XJC_Anarchism_party:0 "一月六日联盟"
 XJC_Anarchism_party_long:0 "一月六日联盟"
@@ -631,8 +653,8 @@ HNZ_Dictatorship_party_long:0 "河南省长公署"
 WSP_Dictatorship_party:0 "山东省长公署"
 WSP_Dictatorship_party_long:0 "山东省长公署"
 
-BNA_Liberalism_party:0 "联合自由党"
-BNA_Liberalism_party_long:0 "联合自由党"
+BNA_Liberalism_party:0 "联邦党"
+BNA_Liberalism_party_long:0 "联邦党"
 BNA_Conservatism_party:0 "宪政同盟党"
 BNA_Conservatism_party_long:0 "宪政同盟党"
 BNA_Reformism_party:0 "进步党"
@@ -645,8 +667,8 @@ UBS_Conservatism_party_long:0 "民主党"
 UBS_Reformism_party:0 "劳工党"
 UBS_Reformism_party_long:0 "劳工党"
 
-HAQ_Dictatorship_party:0 "呼拉尔"
-HAQ_Dictatorship_party_long:0 "呼拉尔"
+HAQ_Dictatorship_party:0 "安班诺颜政府"
+HAQ_Dictatorship_party_long:0 "安班诺颜政府"
 
 DMW_Liberalism_party:0 "V-RV"
 DMW_Liberalism_party_long:0 "左翼党-激进左翼党"
@@ -674,7 +696,7 @@ HEL_Liberalism_party_long:0 "自由联盟-自由思想民主同盟-自由派同�
 ESI_Dictatorship_party:0 "东非总督府"
 ESI_Dictatorship_party_long:0 "东非总督府"
 
-NPL_Dictatorship_party:0 "杜美内阁"
+NPL_Dictatorship_party:0 "波拿巴王朝"
 
 NAF_Liberalism_party:0 "南非党-联合党"
 NAF_Liberalism_party_long:0 "南非党-联合党"
@@ -801,7 +823,8 @@ GUA_Conservatism_party:0 "联盟党"
 HON_Dictatorship_party:0 "洪都拉斯自由党"
 HON_Conservatism_party:0 "洪都拉斯国民党"
 ELS_Dictatorship_party:0 "国家民主党"
-NIC_Conservatism_party:0 "中美洲保守共和党"
+NIC_Conservatism_party:0 "中美国家保守党"
+NIC_Liberalism_party:0 "中美自由党"
 
 BRA_Paternalism_party:0 "佩索阿内阁"
 WNR_Dictatorship_party:0 "委内瑞拉军政府"
@@ -857,7 +880,7 @@ XXL_Reformism_party:0 "新西兰工党"
 BLW_Paternalism_party:0 "自由党"
 BLW_Conservatism_party:0 "保守党"
 
-JPN_Dictatorship_party:0 "原敬内阁"
+JPN_Dictatorship_party:0 "山本权兵卫内阁"
 
 DSX_Dictatorship_party:0 "德意志西非协会"
 DSX_DKV_Dictatorship_party:0 "帝国殖民厅"
@@ -905,7 +928,8 @@ LEF_Paternalism_party:0 "里夫诸部落"
 LEF_Dictatorship_party:0 "克里姆派"
 SNX_Dictatorship_party:0 "塞努西王朝"
 ASI_Dictatorship_party:0 "乔治斯内阁"
-SML_Dictatorship_party:0 "德尔维希运动"
+SML_Dictatorship_party:0 "库苏西"
+SML_Paternalism_party:0 "索马里诸部落"
 JBS_Dictatorship_party:0 "拉希德王朝"
 NZS_Dictatorship_party:0 "沙特王朝"
 ROY_Dictatorship_party:0 "拉希德王朝"
@@ -919,6 +943,11 @@ XIL_Dictatorship_party:0 "扎克里王朝"
 LWO_Dictatorship_party:0 "坤洛王朝"
 VAN_Dictatorship_party:0 "阮朝"
 CBA_Dictatorship_party:0 "诺罗敦王朝"
+
+ASS_Dictatorship_party:0 "慕代托王朝"
+
+CAC_Dictatorship_party:0 "公董局董事会"
+SZC_Dictatorship_party:0 "管理局董事会"
 
 SKM_Dictatorship_party:0 "纳姆加尔王朝"
 BRU_Dictatorship_party:0 "博尔基亚王朝"
@@ -981,3 +1010,5 @@ XYL_Revolutionism_party:0 "匈牙利社会民主党(拉左派)"
 
 GUB_Conservatism_party:0 "国家保守党"
 GUB_Liberalism_party:0 "古巴自由党-统一自由党-临时自由党"
+
+YDN_Dictatorship_party:0 "东印度总督府"

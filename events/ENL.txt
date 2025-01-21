@@ -207,12 +207,12 @@ country_event = {
 
 	option = {
 		name = ENL_The_Irish_crisis.0.a
-		IRL={
-			add_opinion_modifier = {
-				target = ENL
-				modifier = SWI_rejected_our_request
-			}
-		}
+		#IRL={
+			#add_opinion_modifier = {
+			#	target = ENL
+			#	modifier = SWI_rejected_our_request
+			#}
+		#}
 	}	
 }
 

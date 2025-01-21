@@ -1,0 +1,28 @@
+
+state={
+	id=965
+	name="STATE_965" # Muntenia
+	manpower = 846140
+	resources={
+	}
+
+	state_category = rural
+	resources={
+		grain=2
+	}
+	history={
+		owner = MEX
+		add_core_of = MEX
+		
+		buildings = {
+			infrastructure = 1
+		}
+		
+	}
+
+	provinces={
+        	7913
+	}
+
+	local_supplies=0.0 
+}

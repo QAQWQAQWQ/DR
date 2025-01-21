@@ -1,0 +1,26 @@
+
+state={
+	id=1209
+	name="STATE_1209"
+	manpower = 13165
+	
+	state_category = rural
+	
+	resources={
+		grain=4
+	}
+	history={
+		owner = SHW
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = IUI
+		
+	}
+
+	provinces={
+		 13362
+	}
+
+	local_supplies=0.0 
+}

@@ -21,7 +21,10 @@ state={
 				naval_base = 2
 			}
 			12810 = {
-				naval_base = 3
+				naval_base = 5
+			}
+			8079 = {
+				naval_base = 2
 			}
 		}
 		
@@ -29,14 +32,11 @@ state={
 		victory_points = {
 			12810 10
 		}
-		victory_points = {
-			10889 1
-		}
 		
 	}
 
 	provinces={
-		8079 10732 10889 12810
+		8079 10732 10889 12810 2021
 	}
 	
 

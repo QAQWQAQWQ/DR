@@ -14,14 +14,17 @@ news_event = {
 	major = yes
 
 	trigger = {
-			WWS={ 
-				has_war = yes
+
+			WWS={ has_war = yes
+				
 				NOT = {
+					
 					has_global_flag = fall_of_berlin
 					controls_state = 64
-				}
+				
 			}
 	}
+}
 
 	immediate = {
 		set_global_flag = fall_of_berlin
@@ -35,8 +38,10 @@ news_event = {
 	
 	option = {
 		name = occupied.1.a
+		
 	}		
 }
+
 
 news_event = {
 	id = occupied.2
@@ -51,11 +56,13 @@ news_event = {
 			FRW={ 
 				has_war = yes
 				NOT = {
+					
 					has_global_flag = fall_of_Paris
 					controls_state = 16
-				}
+				
 			}
 	}
+}
 
 	immediate = {
 		set_global_flag = fall_of_Paris
@@ -78,8 +85,10 @@ news_event = {
 			ZHX={ 
 				has_war = yes
 				NOT = {
+					
 					has_global_flag = fall_of_Beijing
 					controls_state = 608
+					
 				}
 			}
 	}
@@ -92,6 +101,7 @@ news_event = {
 		name = occupied.3.a
 	}		
 }
+
 news_event = {
 	id = occupied.4
 	title = occupied.4.t
@@ -105,8 +115,10 @@ news_event = {
 			UBS={ 
 				has_war = yes
 				NOT = {
+					
 					has_global_flag = fall_of_Washington
 					controls_state = 361
+					
 				}
 			}
 	}
@@ -134,8 +146,10 @@ news_event = {
 			AOX={ 
 				has_war = yes
 				NOT = {
+					
 					has_global_flag = fall_of_Vienna
 					controls_state = 4
+					
 				}
 			}
 	}
@@ -163,8 +177,10 @@ news_event = {
 			HUN={ 
 				has_war = yes
 				NOT = {
+					
 					has_global_flag = fall_of_Budapest
 					controls_state = 43
+					
 				}
 			}
 	}

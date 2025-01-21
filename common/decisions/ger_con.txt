@@ -551,8 +551,6 @@ ger_con_decisions = {
 					name = DAS_DKA_Dictatorship_party
 				}
 			}
-
-      # puppet = DSX
     }
     remove_effect = {
     }
@@ -696,8 +694,8 @@ ger_con_decisions = {
       AOX = { has_completed_focus = AUS_ger_8 }
       AOX = { has_completed_focus = AUS_ger_9 }
       custom_trigger_tooltip = {
-        tooltip = aus_wait_norvoj_war_end
-        norvoj_war_end = yes
+        tooltip = aus_wait_illyrian_war_end
+        illyrian_war_end = yes
       }
       # WWS = { can_ROOT_get_wargoal_on_THIS = yes }
     }	
@@ -744,8 +742,8 @@ ger_con_decisions = {
       WWS = { has_completed_focus = WWS_Brotherly_wars }
       # AOX = { can_ROOT_get_wargoal_on_THIS = yes }
       custom_trigger_tooltip = {
-        tooltip = pre_wait_norvoj_war_end
-        norvoj_war_end = yes
+        tooltip = pre_wait_illyrian_war_end
+        illyrian_war_end = yes
       }
     }	
     cost = 0
@@ -1134,11 +1132,21 @@ ger_con_fra_def = {
           has_full_control_of_state = 8
         }
       }
-      
+      OR = {
+        AOX = {
+          has_full_control_of_state = 951
+        }
+        WWS = {
+          has_full_control_of_state = 951
+        }
+        LSB = {
+          has_full_control_of_state = 951
+        }
+      }
     }
     cost = 60
     fire_only_once = no
-    days_remove = 70
+    days_remove = 23
     complete_effect = {
     }
     remove_effect = {
@@ -1150,7 +1158,14 @@ ger_con_fra_def = {
           instant_build = yes 
         } 
       }
-      
+      951 = {
+        add_building_construction = { 
+          type = bunker 
+          province = 9418
+          level = 1
+          instant_build = yes 
+        } 
+      }
     }
   }
 }

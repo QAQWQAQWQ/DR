@@ -2917,7 +2917,7 @@ completion_reward = {
 				character = FRW_Pierre_Taittinger
 				promote_leader = yes
 				country_leader = {
-					ideology = Ultranationalism
+					ideology = Ultrareactionism
 					expire = "1965.1.1.1"
 					#traits = { war_industrialist }
 				}
@@ -2925,16 +2925,16 @@ completion_reward = {
 			hidden_effect = {  
 				promote_character = { 
 				character = FRW_Pierre_Taittinger
-				ideology = Ultranationalism
+				ideology = Ultrareactionism
 			}  
 			}
 			set_politics = {
-				ruling_party = Ultranationalism
-				long_name = FRW_Ultranationalism_party_new_long
-				name = FRW_Ultranationalism_party_new
+				ruling_party = Ultrareactionism
+				long_name = FRW_Ultrareactionism_party_new_long
+				name = FRW_Ultrareactionism_party_new
 			}
 			set_popularities = {
-				Ultranationalism = 100
+				Ultrareactionism = 100
 			}
 		}
 	#}

@@ -8,6 +8,7 @@ state={
 	history={
 		owner = HEL
 		add_core_of = HEL
+		add_core_of = BEL
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 5
@@ -19,14 +20,11 @@ state={
 		victory_points = {
 			6496 3 
 		}
-		victory_points = {
-			11562 1 
-		}
 
 	}
 
 	provinces={
-		480 3262 6496 6500 9431 11456 11562 
+		480 3262 6496 6500 11562 11456
 	}
 	manpower=1449000
 	buildings_max_level_factor=1.000

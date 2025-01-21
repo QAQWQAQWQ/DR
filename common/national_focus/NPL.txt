@@ -237,9 +237,9 @@ completion_reward = {
 		y = 2
     completion_reward={
 		set_popularities = {
-			Dictatorship = 74
-			Liberalism= 16
-			Nationalism= 10
+			Dictatorship = 75
+			Liberalism= 11
+			Conservatism= 14
 		}
 		custom_effect_tooltip = available_political_advisor
 		show_ideas_tooltip =NPL_Charles_Maurras_H
@@ -290,7 +290,7 @@ completion_reward = {
     completion_reward={
 		add_popularity = {
 			ideology = Liberalism
-			popularity = -0.1
+			popularity = -0.02
 		}
 	}
 	}
@@ -314,13 +314,13 @@ completion_reward = {
 		y = 2
     completion_reward={
 		set_popularities = {
-			Liberalism = 74
-			Dictatorship= 16
-			Nationalism= 10
+			Liberalism = 33
+			Dictatorship= 25
+			Conservatism= 42
 		}
 		custom_effect_tooltip = available_political_advisor
-	    show_ideas_tooltip =NPL_Paul_Painleve_H
-		show_ideas_tooltip =NPL_Andre_Tardieu_H
+	    #show_ideas_tooltip =NPL_Paul_Painleve_H
+		#show_ideas_tooltip =NPL_Andre_Tardieu_H
 	}
 	}
 	focus = {
@@ -348,8 +348,8 @@ completion_reward = {
 		y = 2
     completion_reward={
 		add_popularity = {
-			ideology = Conservatism
-			popularity = 0.1
+			ideology = Dictatorship
+			popularity = 0.02
 		}
 		459={
 			add_building_construction = {
@@ -441,7 +441,7 @@ completion_reward = {
 		add_stability = -0.01
 		add_popularity = {
 			ideology = Liberalism
-			popularity = -0.2
+			popularity = -0.04
 		}
 
 	}
@@ -500,7 +500,7 @@ completion_reward = {
 		}
 		add_popularity = {
 			ideology = Liberalism
-			popularity = 0.15
+			popularity = 0.03
 		}
 	}
 	}
@@ -528,41 +528,41 @@ completion_reward = {
 		459={
 			add_extra_state_shared_building_slots = 2
 		}
-		448={
+		460={
 			add_extra_state_shared_building_slots = 2
 		}
-		458={
+		1119={
 			add_extra_state_shared_building_slots = 2
 		}
-		665={
+		513={
 			add_extra_state_shared_building_slots = 2
 		}
-		448={
+		1040={
 			add_extra_state_shared_building_slots = 2
 		}
 		build_railway = {
 			level = 2
 			build_only_on_allied = no
 			fallback = yes
-			path = { 11969 7180 7077 1037 11935 10082 12000 1105 }
-			start_state = 458
-			target_state = 665
+			path = { 7132 4150 7008 12018 12842 10731 8088 1958 7979 8035 7992 5034 4948 }
+			start_state = 459
+			target_state = 272
 		}
 		build_railway = {
 			level = 2
 			build_only_on_allied = yes
 			fallback = yes
-			path = { 1145 11939 7166 4046 10078 12051 }
-			start_state = 459
-			target_state = 460
+			path = { 4948 7972 12834 12858 1909 }
+			start_state = 272
+			target_state = 780
 		}
 		build_railway = {
 			level = 2
 			build_only_on_allied = no
 			fallback = yes
-			path = { 1105 12039 1189 1149 }
-			start_state = 665
-			target_state = 448
+			path = { 1909 4957 5039 5070 10762 10803 }
+			start_state = 780
+			target_state = 779
 		}
 	}
 	}
@@ -657,7 +657,7 @@ completion_reward = {
 		y = 4
     completion_reward={
 		add_popularity = {
-			ideology = Conservatism
+			ideology = Dictatorship
 			popularity = 0.05
 		}
 		add_stability = 0.05

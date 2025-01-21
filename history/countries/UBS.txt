@@ -1,4 +1,4 @@
-﻿capital = 1167
+﻿capital = 1159
 
 oob = "UBS_1920"
 
@@ -102,7 +102,7 @@ set_politics = {
 add_ideas={
 #law
 Basic_industrialization 
-Private_economy
+Market_economy
 }
 set_popularities = {
 	Conservatism = 50
@@ -112,3 +112,4 @@ set_popularities = {
 give_guarantee = MEX
 give_guarantee = NIC
 give_guarantee = GUB
+give_guarantee = CAC

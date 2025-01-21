@@ -1,0 +1,31 @@
+
+state={
+	id=1185
+	name="STATE_1185" # Jalisco
+	manpower = 24708
+	
+	state_category = town
+	
+	
+	resources={
+		grain=1
+	}
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 2
+			
+		}
+		
+add_core_of = MEX
+		
+
+	}
+
+	provinces={
+		13319
+	}
+	
+
+	local_supplies=0.0 
+}

@@ -48,16 +48,16 @@ set_politics = {
 	elections_allowed = no
 }
 add_manpower = 5250000
-recruit_character = AGN_Adolf_Hitler
-recruit_character = AGN_Arthur_Seyss_Inquart
-recruit_character = AGN_Engelbert_Dollfuss
+#recruit_character = AGN_Adolf_Hitler
+#recruit_character = AGN_Arthur_Seyss_Inquart
+#recruit_character = AGN_Engelbert_Dollfuss
 
 
 add_ideas = {
 	AGN_german_association_national_revival
 
 	Basic_industrialization 
-	Private_economy
+	Corporate_economy
 }
 set_popularities = {
 	Reformism = 0

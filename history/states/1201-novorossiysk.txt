@@ -1,0 +1,30 @@
+state = {
+	id = 1201
+	name = "STATE_1201"
+
+	history = {
+		owner = SHW
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			air_base = 2
+			719 = {
+				naval_base = 3
+				coastal_bunker = 1
+			}
+		}
+		
+		add_core_of = SHW
+
+	}
+
+	provinces = {
+		719
+	}
+	manpower = 75021
+	buildings_max_level_factor = 1.000
+	state_category = town
+
+	local_supplies = 0.0 
+}

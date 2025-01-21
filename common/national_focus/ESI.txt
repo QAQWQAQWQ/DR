@@ -112,11 +112,11 @@ focus_tree = {
 		x = 7
 		y = 2
     completion_reward = {
-		269={
+		268={
 			create_unit = {
 				division = "name = \"哥萨克骑兵旅\" division_template = \"哥萨克骑兵旅\" start_experience_factor = 0.5"
 				owner = ESI
-				prioritize_location = 10833
+				prioritize_location = 13332
 			}
 		}
 		
@@ -149,11 +149,11 @@ focus_tree = {
 		x = 11
 		y = 2
         completion_reward = {
-			911={
+			268={
 				create_unit = {
 					division = "name = \"当地护卫旅\" division_template = \"当地护卫旅\" start_experience_factor = 0.5"
 					owner = ESI
-					prioritize_location = 13236
+					prioritize_location = 13332
 				}
 			}
 		}
@@ -221,7 +221,7 @@ focus_tree = {
 		x = 14
 		y = 3
 		completion_reward = {
-			908={
+			268={
 				add_building_construction = {
 					type = grain_farms
 					level = 1
@@ -293,7 +293,7 @@ focus_tree = {
 		add_resource = {
 			type = rubber
 			amount = 4
-			state = 269
+			state = 268
 		}
 	}
 	}
@@ -367,7 +367,7 @@ focus_tree = {
 			}
 			fallback = no
 			start_province = 8124
-			target_province = 2072
+			target_province = 13332
 		}
 	}
 	}

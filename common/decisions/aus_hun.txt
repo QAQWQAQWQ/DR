@@ -1,5 +1,5 @@
 aus_hun_decisions = {
-	norvoj_problem = {
+	illyrian_problem = {
 			icon = generic_civil_support
 			available = {
 				AOX = {
@@ -34,13 +34,13 @@ aus_hun_decisions = {
 				}
 				hidden_effect = {
 					set_variable = {
-						global.norvoj_contradictions = 1
+						global.illyrian_contradictions = 1
 					}
 				}
-				custom_effect_tooltip = norvoj_contradictions_tool
+				custom_effect_tooltip = illyrian_contradictions_tool
 			}
 	}
-	norvoj_war_1 = {
+	illyrian_war_1 = {
 			icon = generic_civil_support
 			available = {
 				#AOX = {
@@ -56,9 +56,9 @@ aus_hun_decisions = {
 					original_tag = DMT
 				}
 				check_variable = {
-					global.norvoj_contradictions = 1
+					global.illyrian_contradictions = 1
 				}
-				not_norvoj_war_tri = yes
+				not_illyrian_war_tri = yes
 			}
 			visible = {
 				OR = {
@@ -71,18 +71,18 @@ aus_hun_decisions = {
 			fire_only_once = yes
 			is_good = no
 			timeout_effect = {
-				custom_effect_tooltip = norvoj_war_boom_scr_tool
+				custom_effect_tooltip = illyrian_war_boom_scr_tool
 				hidden_effect = {
 					if = {
 						limit = {
 							tag = AOX
 						}
-						norvoj_war_boom = yes
+						illyrian_war_boom = yes
 					}
 				}
 			}
 	}
-	norvoj_war_2 = {
+	illyrian_war_2 = {
 			icon = generic_civil_support
 			available = {
 				always = no
@@ -97,7 +97,7 @@ aus_hun_decisions = {
 				AOX = {
 					has_completed_focus = AUS_bir_8
 				}
-				not_norvoj_war_tri = yes
+				not_illyrian_war_tri = yes
 			}
 			visible = {
 				OR = {
@@ -110,18 +110,18 @@ aus_hun_decisions = {
 			fire_only_once = yes
 			is_good = no
 			timeout_effect = {
-				norvoj_war_boom = yes
+				illyrian_war_boom = yes
 			}
 	}
 	pressure_from_austria = {
 		icon = generic_civil_support
 		available = {
-			norvoj_war_end = yes
+			illyrian_war_end = yes
 		}
 		days_mission_timeout = 120
 		activation = {
 			original_tag = KOH
-			norvoj_war_tri = yes
+			illyrian_war_tri = yes
 		}
 		visible = {
 			OR = {
@@ -139,8 +139,8 @@ aus_hun_decisions = {
 					limit = {
 						tag = KOH
 					}
-					set_variable = { global.norvoj_cro_win = 1 }
-					set_variable = {global.norvoj_war_str = 2}
+					set_variable = { global.illyrian_cro_win = 1 }
+					set_variable = {global.illyrian_war_str = 2}
 					if = {
 						limit = {
 							OR = {
@@ -221,6 +221,20 @@ aus_hun_decisions = {
 					if = {
 						limit = {
 							OR = {
+							KOH = {controls_state = 1203}
+						}}
+						KOH = {transfer_state = 1203}
+					}
+					if = {
+						limit = {
+							OR = {
+							KOH = {controls_state = 1204}
+						}}
+						KOH = {transfer_state = 1204}
+					}
+					if = {
+						limit = {
+							OR = {
 							KOH = {controls_state = 109}
 						}}
 						KOH = {transfer_state = 109}
@@ -256,7 +270,7 @@ aus_hun_decisions = {
 					DMT = { white_peace = KOH }
 					KOH = { white_peace = DMT }
 					
-					norvoj_war_end_qwq = yes
+					illyrian_war_end_qwq = yes
 					AOX = {
 						country_event = aushun.3
 						set_autonomy = { target = DMT autonomy_state = autonomy_Crown_Territory }
@@ -1308,8 +1322,8 @@ hun_red_army = {
 				original_tag = HUN
 				original_tag = KOH
 			}
-			norvoj_war_end = yes
-			norvoj_war_tri = yes
+			illyrian_war_end = yes
+			illyrian_war_tri = yes
 			check_variable = {
 				global.hungarian_war = 0
 			}
