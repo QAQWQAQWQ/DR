@@ -26,6 +26,9 @@ defined_text = {
 			all_core_state={
 				is_on_continent = asia
 			}
+			NOT={
+				original_tag = JPN
+			}
 		}
 		localization_key = asia_Country_Introduction
     }
@@ -74,6 +77,10 @@ defined_text = {
    text = {
 		trigger = { original_tag = WWS }
 		localization_key = WWS_Country_Introduction
+   }
+   text = {
+		trigger = { original_tag = JPN }
+		localization_key = JPN_Country_Introduction
    }
    text = {
 		trigger = { original_tag = SHW}

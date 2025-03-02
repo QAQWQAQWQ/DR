@@ -8,175 +8,192 @@ country_event = {
 	title = JPN.1.t
 	desc = JPN.1.d
 	picture = GFX_illness
-
 	is_triggered_only = yes
 
 	fire_only_once = yes
 	option = {
 		name = JPN.1.a
-		promote_character = {
-			character = JPN_Tokugawa_Ieda
-			ideology = Conservatism
-		}
-		add_country_leader_role = {
-			character = JPN_Tokugawa_Ieda
-			promote_leader = yes
-			country_leader = {
-				ideology = National_Conservatism
-				expire = "1965.1.1.1"
-				traits = { war_industrialist }
-			}
-		}
-		set_cosmetic_tag = JPN_shogunate
 		hidden_effect={
-			create_faction = Empire_Japan
-			news_event = { id = JPN.2 days = 30}
-			news_event = { id = JPN.3 days = 30}
-	}
+		}
 	}
 }
-news_event = {
+country_event = {
 	id = JPN.2
 	title = JPN.2.t
 	desc = JPN.2.d
-	picture = GFX_Emperor_Meiji
-
-	major = yes
-
+	picture = GFX_illness
 	is_triggered_only = yes
 
+	fire_only_once = yes
 	option = {
-			name = JPN.2.a
-			custom_effect_tooltip = JPN_2_tt
-		}		
+		name = JPN.2.a
+		hidden_effect={
+		}
+	}
 }
-news_event = {####hidden
+country_event = {
 	id = JPN.3
-	title = JPN.2.t
-	desc = JPN.2.d
-	picture = GFX_Emperor_Meiji
-
-	hidden = yes
-
+	title = JPN.3.t
+	desc = JPN.3.d
+	picture = GFX_illness
 	is_triggered_only = yes
 
+	fire_only_once = yes
 	option = {
-			name = JPN.2.a
-			kill_country_leader = yes
-			set_political_party = {
-				ideology = Conservatism
-				popularity = 60
-			}
-			set_political_party = {
-				ideology = Liberalism
-				popularity = 20
-			}
-			set_political_party = {
-				ideology = Anarchism
-				popularity = 20
-			}
-			set_political_party = {
-				ideology = Revolutionism
-				popularity = 20
-			}
-		clr_global_flag = JPN_Emperor_Meiji
-		set_global_flag = JPN_Emperor_Taisho
-		set_country_flag = Emperor_Meiji
-		custom_effect_tooltip = JPN_2_tt
-		hidden_effect={country_event = {id=JPN.4 days=1}}
-		
-		}		
+		name = JPN.3.a
+		hidden_effect={
+		}
+	}
 }
 country_event = {
 	id = JPN.4
 	title = JPN.4.t
 	desc = JPN.4.d
-	#picture = GFX_Emperor_Meiji
-
+	picture = GFX_illness
 	is_triggered_only = yes
+ 
 	fire_only_once = yes
-
 	option = {
-			name = JPN.4.a
-			retire_character = JPN_Nogi_Maresuke
-		}		
+		name = JPN.4.a
+		add_to_variable = {
+			nat_debt = -100
+			tooltip = nat_debt_40
+		}
+	}
 }
-news_event = {
+country_event = {
 	id = JPN.5
 	title = JPN.5.t
 	desc = JPN.5.d
-	picture = GFX_JPN_5
-	major = yes
-
+	picture = GFX_illness
 	is_triggered_only = yes
+
+	fire_only_once = yes
 	option = {
-			name = JPN.5.a
-			add_stability = -0.2
-			282={
-				damage_building = {
-					type = infrastructure
-					damage = 6
-				}
-				damage_building = {
-					type = rail_way
-					damage = 6
-				}
-				damage_building = {
-					type = industrial_complex
-					damage = 6
-				}
-				damage_building = {
-					type = air_base
-					damage = 6
-				}
-				damage_building = {
-					type = naval_base
-					damage = 6
-				}
-				damage_building = {
-					type = arms_factory
-					damage = 6
-				}
-				damage_building = {
-					type = grain_farms
-					damage = 6
-				}
-				damage_building = {
-					type = chromium_factory
-					damage = 6
-				}
-				damage_building = {
-					type = tungsten_factory
-					damage = 6
-				}
-				damage_building = {
-					type = aluminium_factory
-					damage = 6
-				}
-			}	
-			country_event = {id=JPN.6 days=2}
-		}	
-		
-		
+		name = JPN.5.a
+		hidden_effect={
+		}
+	}
 }
 country_event = {
 	id = JPN.6
 	title = JPN.6.t
 	desc = JPN.6.d
-	#picture = GFX_Emperor_Meiji
-
+	picture = GFX_illness
 	is_triggered_only = yes
-	fire_only_once = yes
 
+	fire_only_once = yes
 	option = {
-			name = JPN.6.a
-			add_stability = -0.05
-			282={
-				add_dynamic_modifier = { modifier = JPN_Great_Earthquake days=80}
-			}
-		}		
-	option = {
-			name = JPN.6.b
-			add_stability = 0.05
+		name = JPN.6.a
+		hidden_effect={
 		}
+	}
+} 
+country_event = {
+	id = JPN.7
+	title = JPN.7.t
+	desc = JPN.7.d
+	picture = GFX_illness
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.7.a
+		hidden_effect={
+		}
+	} 
+}
+
+country_event = {
+	id = JPN.8
+	title = JPN.8.t
+	desc = JPN.8.d
+	picture = GFX_illness
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.8.a
+		hidden_effect={
+		}
+	}
+}
+
+news_event = {
+	id = JPN.9
+	title = JPN.9.t
+	desc = JPN.9.d
+	#picture = GFX_illness
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+	option = {
+		name = JPN.9.a
+		retire_character = JPN_Shigenobu_Okuma
+	}
+}
+
+country_event = {
+	id = JPN.10
+	title = JPN.10.t
+	desc = JPN.10.d
+	picture = GFX_illness
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.10.a
+	}
+}
+
+country_event = {
+	id = JPN.11
+	title = JPN.11.t
+	desc = JPN.11.d
+	picture = GFX_illness
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.11.a
+	}
+}
+
+country_event = {
+	id = JPN.12
+	title = JPN.12.t
+	desc = JPN.12.d
+	picture = GFX_illness
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.12.a
+	}
+}
+
+country_event = {
+	id = JPN.13
+	title = JPN.13.t
+	desc = JPN.13.d
+	picture = GFX_illness
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.13.a
+	}
+}
+
+news_event = {
+	id = JPN.14
+	title = JPN.14.t
+	desc = JPN.14.d
+	#picture = GFX_illness
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+	option = {
+		name = JPN.14.a
+	}
 }

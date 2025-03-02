@@ -1,7 +1,11 @@
 ﻿l_simp_chinese:
-GDP_TOOLTIP_BASE:0 "§Y财政收入§!\n§Y当前受到以下影响:§!\n\n国库：[?new_nat_tre]B\n国内生产总值(GDP):[?gdpmn|Y]B\n上季度收入：[?new_nat_tre_det|+]B\n\n基本收入:\n生产生活消费品贡献的收入：[?national_factory_tot_profits|G3] B\n工业税：[?our_tax_from_factory|G3] B\n个人所得税：[?our_tax_from_people|G3] B\n\n政府开支:\n工厂维护费：[?before_national_factory_tot_cost|R3] B\n军队维护费：[?military_spend|R3] B\n政府机构维护费：[?people_cost|R3] B\n偿还债务利息：[?debt_interest|R3] B"
+GDP_TOOLTIP_BASE:0 "§Y财政收入§!\n§Y当前受到以下影响:§!\n\n国库：[?new_nat_tre]M\n国内生产总值(GDP):[?gdpmn|Y]M\n上季度收入：[?new_nat_tre_det|+]M\n\n基本收入:\n生产生活消费品贡献的收入：[?national_factory_tot_profits|G3] M\n工业税：[?our_tax_from_factory|G3] M\n个人所得税：[?our_tax_from_people|G3] M\n\n政府开支:\n工厂维护费：[?before_national_factory_tot_cost|R3] M\n军队维护费：[?military_spend|R3] M\n政府机构维护费：[?people_cost|R3] M\n偿还债务利息：[?debt_interest|R3] M"
 
- GDP_MAIN:0 "[?gdpmn|3] B"
+National_economy:0 "国民经济"
+Government_regulation:0 "政府调控"
+Government_Support:0 "政府支持度"
+
+ GDP_MAIN:0 "[?gdpmn|3] M"
  GDP_TOOLTIP:0 "[Root.GetGDPTooltip]"
  GDP_TITLE_SL:0 "[Root.GetGDPTitle]"
  GDP_TITLE:0 "世界各国GDP"
@@ -24,11 +28,11 @@ GDP_TOOLTIP_BASE:0 "§Y财政收入§!\n§Y当前受到以下影响:§!\n\n国�
  NE_economic_measures_decision:0 "经济手段"
  NE_economic_measures_decision_desc:0 "我们当前的 GDP，更准确地说是一种经济水平的类似定量衡量标准：[?gdpmn|G3]B。\n\n通货膨胀：[?gdp_inflation|R2]%\n\n优秀的政府必须在其权力范围内通过实施一些措施来监管和控制国家经济。"
  economy_invest_small:0 "小规模投资项目"
- economy_invest_small_desc:0 "受该项目的推动，我们的经济正在稳步增长：[?governmental_investment|G3]B"
+ economy_invest_small_desc:0 "受该项目的推动，我们的经济正在稳步增长：[?governmental_investment|G3]M"
  economy_invest_medium:0 "中等规模投资项目"
- economy_invest_medium_desc:0 "受该项目的推动，我们的经济正在稳步增长：[?governmental_investment|G3]B"
+ economy_invest_medium_desc:0 "受该项目的推动，我们的经济正在稳步增长：[?governmental_investment|G3]M"
  economy_invest_large:0 "大规模投资项目"
- economy_invest_large_desc:0 "受该项目的推动，我们的经济正在稳步增长：[?governmental_investment|G3]B"
+ economy_invest_large_desc:0 "受该项目的推动，我们的经济正在稳步增长：[?governmental_investment|G3]M"
  NE_print_money_small:0 "增加货币供应"
  NE_print_money_small_desc:0 "这将导致每月§R10%§!的通货膨胀增长"
  NE_print_money_medium:0 "开始提高货币发行量"
@@ -43,7 +47,7 @@ GDP_TOOLTIP_BASE:0 "§Y财政收入§!\n§Y当前受到以下影响:§!\n\n国�
  ARMOR_INFO: "装甲车辆菜单"
  AIR_INFO: "飞行器菜单"
  NAVAL_INFO: "战舰菜单"
- NE_SALE_TOTAL_COST:0 "总花费：[?econo_total_cost]B"
+ NE_SALE_TOTAL_COST:0 "总花费：[?econo_total_cost]M"
  ECONO_BUY:0 "购买"
  BUY_INFO:0 "提示：剩余的装备优先级较高，稀缺的装备优先级较低"
  ECONO_CART_NUM:0 "购买量"
@@ -116,3 +120,21 @@ GDP_TOOLTIP_BASE:0 "§Y财政收入§!\n§Y当前受到以下影响:§!\n\n国�
  freeze_lifted:0 "资产冻结被解除"
  freeze_criticism:0 "不平等贸易"
  freeze_static_modifier:0 "贸易禁运"
+
+  Worker_support_tooltip:0 "工人支持度 §Y[?ROOT.Worker_support]§!"
+  Worker_support_tooltip_delayed:0 "工人是工业化和现代化的重要推动者，通过生产商品和服务，促进经济增长。他们的劳动为基础设施建设、制造业和服务业提供了支持，是国家经济繁荣的基础。工人通过技术创新和生产效率提升，推动产业升级，增强国家竞争力。"
+
+  Farmer_support_tooltip:0 "农民支持度 §Y[?ROOT.Farmer_support]§!"
+  Farmer_support_tooltip_delayed:0 "农民是粮食和农产品的主要生产者，保障国家的粮食安全。农业是国民经济的基础，农民通过耕种、养殖等活动，为社会提供基本生活物资。农民不仅满足国内需求，还通过出口农产品为国家创汇，同时保护生态环境，促进可持续发展。"
+
+  Army_support_tooltip:0 "军队支持度 §Y[?ROOT.Army_support]§!"
+  Army_support_tooltip_delayed:0 "军人是国家安全的守护者，负责国防和领土完整。他们在战争时期保卫国家，在和平时期参与救灾等任务，维护社会稳定。军人通过训练和战备，确保国家在危机中能够有效应对，保障人民安全。"
+
+  Merchant_support_tooltip:0 "商人支持度 §Y[?ROOT.Merchant_support]§!"
+  Merchant_support_tooltip_delayed:0 "商人是市场经济的核心，通过商品流通和服务提供，促进资源优化配置。他们推动国内外贸易，活跃市场，促进经济繁荣。商人通过创新商业模式和拓展市场，推动经济增长，创造就业，提升国家经济活力。"
+
+  Bureaucratic_support_tooltip:0 "官僚支持度 §Y[?ROOT.Bureaucratic_support]§!"
+  Bureaucratic_support_tooltip_delayed:0 "官员是国家治理的执行者，负责政策制定和实施，确保国家机器正常运转。他们在各级政府中管理公共事务，维护社会秩序。官员通过高效管理和廉洁执政，推动国家发展，提升公共服务质量，保障社会稳定。"
+
+  Scholar_support_tooltip:0 "学者支持度 §Y[?ROOT.Scholar_support]§!"
+  Scholar_support_tooltip_delayed:0 "学者是知识和科技创新的主要力量，通过研究和教育推动社会进步。他们在各个领域的研究为国家政策制定和技术发展提供理论支持。学者通过科研成果推动技术进步，提升国家竞争力，同时培养人才，促进社会文化发展。"

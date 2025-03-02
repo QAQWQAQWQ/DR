@@ -16,7 +16,7 @@ guiTypes = {
 		}
         iconType = {      
 			name = "ECO_icon_2"
-        	spriteType ="GFX_economy_background4"
+        	spriteType ="GFX_economy_background1"
 		 	position = {x = 15 y = 10} 
 		}
 		iconType = {      
@@ -27,47 +27,57 @@ guiTypes = {
 		iconType = {      
 			name = "ECO_icon_4"
         	spriteType ="GFX_economy_background7"
-		 	position = {x = 353 y = 65} 
+		 	position = {x = 353 y = 65}  
 		}
-
+		iconType = {      
+			name = "ECO_icon_5"
+        	spriteType ="GFX_economy_background1"
+		 	position = {x = 20 y = 220} 
+		}
 
 		iconType = {      
 			name = "Worker_support"
         	spriteType ="GFX_Worker_support"
-		 	position = {x =30 y = 245} 
+		 	position = {x =30 y = 270} 
 			pdx_tooltip = "Worker_support_tooltip"
+			pdx_tooltip_delayed = "Worker_support_tooltip_delayed"
 		}
 		iconType = {      
 			name = "Farmer_support"
         	spriteType ="GFX_Farmer_support"
-		 	position = {x =115 y = 245} 
+		 	position = {x =115 y = 270} 
 			pdx_tooltip = "Farmer_support_tooltip"
+			pdx_tooltip_delayed = "Farmer_support_tooltip_delayed"
 		}
-
+   
 		iconType = {      
 			name = "Army_support"
         	spriteType ="GFX_Army_support"
-		 	position = {x =445 y = 245} 
+		 	position = {x =445 y = 270} 
 			pdx_tooltip = "Army_support_tooltip"
+			pdx_tooltip_delayed = "Army_support_tooltip_delayed"
 		}
-		iconType = {      
+		iconType = {       
 			name = "Bureaucratic_support"
         	spriteType ="GFX_Bureaucratic_support"
-		 	position = {x =362 y = 245} 
+		 	position = {x =362 y = 270} 
 			pdx_tooltip = "Bureaucratic_support_tooltip"
+			pdx_tooltip_delayed = "Bureaucratic_support_tooltip_delayed"
 		}
 
 		iconType = {      
 			name = "Merchant_support"
         	spriteType ="GFX_Merchant_support"
-		 	position = {x =197 y = 245} 
+		 	position = {x =197 y = 270} 
 			pdx_tooltip = "Merchant_support_tooltip"
+			pdx_tooltip_delayed = "Merchant_support_tooltip_delayed"
 		}
 		iconType = {      
 			name = "Scholar_support"
         	spriteType ="GFX_Scholar_support"
-		 	position = {x =280 y = 245} 
+		 	position = {x =280 y = 270} 
 			pdx_tooltip = "Scholar_support_tooltip"
+			pdx_tooltip_delayed = "Scholar_support_tooltip_delayed"
 		}
 
 
@@ -82,16 +92,31 @@ guiTypes = {
 			fixedsize = yes
 		}
         instantTextBoxType = {
-			name = "money_system_main_name1"
+			name = "money_system_main_name1" 
 			position = { x = 25 y = 15 }
 			font = "hoi_36header"
-			borderSize = {x = 0 y = 0}
-			text = "政府调控"	
-			maxWidth = 210
+			borderSize = {x = 0 y = 0} 
+			text = "Government_regulation"	
+			maxWidth = 360
 			maxHeight = 32
 			fixedsize = yes
 			format = left			
-		}   
+		}
+		
+		instantTextBoxType = {
+			name = "money_system_main_name2"
+			position = { x = 30 y = 225 }
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "Government_Support"	
+			maxWidth = 360
+			maxHeight = 32
+			fixedsize = yes
+			format = left			
+		} 
+
+
+
 		instantTextBoxType = {
 			name ="next_month_goods_factory_gui_text"
 			position = { x= 355 y = 72 }
