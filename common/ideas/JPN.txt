@@ -1,10 +1,17 @@
 ideas = {
-	
-
-
-
     country = {
-		
+
+		JPN_haze_Russo_Japanese_War = {
+			picture = haze_Russo_Japanese_War
+			modifier = {
+				experience_gain_army= -0.05
+				winter_attrition_factor= 0.05
+				conscription_factor= -0.05
+				stability_factor = -0.05
+				war_support_factor = -0.1
+            }
+		}
+
 		JPN_estrangement = {
 			picture = estrangement
 			modifier = {

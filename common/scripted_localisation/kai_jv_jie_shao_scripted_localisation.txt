@@ -22,8 +22,12 @@ defined_text = {
 	}
 	text = { #两盆介绍
 		trigger = { original_tag =KEI}
-		localization_key = "KEI_jie_shao"
-	}
+		localization_key = "KEI_jie_shao" 
+	} 
+	text = { #日本介绍
+		trigger = { original_tag =JPN}
+		localization_key = "JPN_jie_shao" 
+	} 
 	text = { #通用国家介绍
 		localization_key = "tong_yong_jie_shao"
 	}
@@ -33,6 +37,12 @@ defined_text = {
 	text = { #法国路线指南
 		trigger = { original_tag = FRW }
 		localization_key = "FRW_lu_xian_zhi_nan"
+	}
+
+
+	text = { #日本路线指南
+		trigger = { original_tag = JPN }
+		localization_key = "JPN_lu_xian_zhi_nan"
 	}
 	text = { #通用路线指南
 		localization_key = "tong_yong_lu_xian_zhi_nan"

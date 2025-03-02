@@ -15,6 +15,8 @@ set_technology = {
 
 
 #recruit_character = JPN_Emperor_Meiji
+recruit_character = JPN_Shigenobu_Okuma
+recruit_character = JPN_Yamagata_Aritomo
 recruit_character = JPN_Emperor_Taisho
 recruit_character = JPN_Honorable
 recruit_character = JPN_Seienji_Konobu
@@ -73,11 +75,11 @@ set_autonomy = { target = RTW autonomy_state = autonomy_colony }
 add_ideas={
 	#JPN_Restoration
 	JPN_estrangement
-
+	JPN_haze_Russo_Japanese_War
     JPN_Taisho_period
     JPN_noninterference
 ##MINISTERS##
-
+JPN_Emperor_Taisho_H
 #law
 Basic_industrialization 
 Corporate_economy

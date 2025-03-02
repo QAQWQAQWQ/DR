@@ -212,6 +212,12 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_JPN_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/JPN_Country_Introduction.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
 		name = "GFX_SHW_Country_Introduction"
 		texturefile = "gfx/interface/textpicture/SHW_Country_Introduction.png" 
 		legacy_lazy_load = no

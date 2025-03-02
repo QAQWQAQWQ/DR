@@ -9,19 +9,5 @@ ideas = {
 			party_popularity_stability_factor=-0.01
           }
         }	
-        Bankruptcy = {
-		  picture = Bankruptcy
-		  modifier = {
-			stability_factor = -0.25
-			party_popularity_stability_factor=-0.5
-			research_speed_factor=-0.25
-			production_speed_buildings_factor=-0.5
-			industrial_capacity_factory=-0.25
-			production_factory_start_efficiency_factor=-0.25		
-            production_factory_max_efficiency_factor=-0.25			
-            production_factory_efficiency_gain_factor=-0.25
-			line_change_production_efficiency_factor=-0.25
-          }
-        }
 }
 }

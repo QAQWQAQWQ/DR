@@ -5,17 +5,53 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/JPN/portrait_DaZheng.tga"
+				small = "gfx/interface/ideas/JPN/JPN_Emperor_Taisho.dds"
+			}
+		}
+		advisor={
+			slot=head_of_government
+			idea_token=JPN_Emperor_Taisho_H
+			removal_cost = -1
+			allowed={
+				tag=JPN
+			}
+			traits={
+			}
+		}
+	}
+
+	JPN_Yamagata_Aritomo={
+		name=JPN_Yamagata_Aritomo
+		portraits={
+			civilian={
+				large="gfx/leaders/JPN/portrait_Yamagata_Aritomo.tga"
 			}
 		}
 		country_leader={
 			ideology=autocratic-constitutional-monarchy
-            desc=JPN_Emperor_Taisho_DESC
+            desc=JPN_Yamagata_Aritomo_DESC
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
 		}
 	}
-	
+
+	JPN_Shigenobu_Okuma={
+		name=JPN_Shigenobu_Okuma
+		portraits={
+			civilian={
+				large="gfx/leaders/JPN/portrait_Shigenobu_Okuma.tga"
+			}
+		}
+		country_leader={
+			ideology=autocratic-constitutional-monarchy
+            desc=JPN_Shigenobu_Okuma_DESC
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
 	JPN_Tokugawa_Ieda={
 		name=JPN_Tokugawa_Ieda
 		portraits={
