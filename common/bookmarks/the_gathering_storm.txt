@@ -61,13 +61,16 @@ WWS_Labor_pioneer
 	} 
 }
 "JPN"={
-	history = "ITE_GATHERING_STORM_DESC"
+	history = "JPN_GATHERING_STORM_DESC"
 	
 	ideology = Conservatism
 	ideas = {
-		JPN_Taisho_period
-		JPN_noninterference
-		JPN_estrangement
+		JPN_focus_1
+		JPN_focus_3
+		JPN_focus_5
+		JPN_focus_6
+		JPN_focus_8
+		JPN_focus_11
 	}
 	focuses = {
 	}
@@ -224,8 +227,8 @@ SHW_Diverse_Russia
 	minor = yes
 	ideology = Liberalism
 }
-"TEQ"={
-	history = "TEQ_GATHERING_STORM_DESC"
+"YED"={
+	history = "YED_GATHERING_STORM_DESC"
 	minor = yes
 	ideology = Conservatism
 	ideas = {

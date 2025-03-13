@@ -19,7 +19,21 @@ characters={
 			}
 		}
 	}
-
+	JPN_Yamakawa_Hitoshi={
+		name=JPN_Yamakawa_Hitoshi
+		portraits={
+			civilian={
+				large="gfx/leaders/JPN/portrait_Yamakawa_Hitoshi.tga"
+			}
+		}
+		country_leader={
+			ideology=Revolutionary_Socialism
+            desc=JPN_Yamakawa_Hitoshi_DESC
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	JPN_Yamagata_Aritomo={
 		name=JPN_Yamagata_Aritomo
 		portraits={
@@ -68,24 +82,125 @@ characters={
 		}
 	}
 
-
-
-
-
-
-
-
-
-	JPN_Seienji_Konobu={
-		name=JPN_Seienji_Konobu
+	JPN_Giichi_Tanaka={
+		name=JPN_Tokugawa_Ieda
 		portraits={
-			army={
-				small="GFX_idea_Seienji_Konobu"
+			civilian={
+				large="gfx/leaders/JPN/portrait_Tokugawa_Ieda.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarian_Conservatism
+           # desc=JPN_Emperor_Taisho_DESC
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+
+
+	JPN_Korekiyo_Takahashi={
+		name=JPN_Korekiyo_Takahashi
+		portraits={
+			civilian={
+				large="gfx/leaders/JPN/portrait_Korekiyo_Takahashi.tga"
+				small="gfx/interface/ideas/JPN/JPN_Korekiyo_Takahashi.dds"
+			}
+		}
+		country_leader={
+			ideology=Social_Liberalism
+            desc=JPN_Korekiyo_Takahashi_DESC
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=JPN_Inuto_Yi_p
+			removal_cost = -1
+			allowed={
+				tag=JPN
+			}
+			available = {
+				JPN_Korekiyo_Takahashi={
+					is_country_leader = no
+				}
+			}
+			traits={
+			}
+		}
+	}
+
+	JPN_Inuto_Yi={
+		name=JPN_Inuto_Yi
+		portraits={
+			civilian={
+				large="gfx/leaders/JPN/portrait_Inuto_Yi.tga"
+				small="gfx/interface/ideas/JPN/JPN_Inuto_Yi.dds"
+			}
+		}
+		country_leader={
+			ideology=Social_Liberalism
+            desc=JPN_Inuto_Yi_DESC
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=JPN_Inuto_Yi_p
+			removal_cost = -1
+			allowed={
+				tag=JPN
+			}
+			available = {
+				JPN_Inuto_Yi={
+					is_country_leader = no
+				}
+			}
+			traits={
+			}
+		}
+	}
+
+	
+	JPN_Takashi_Hara={
+		name=JPN_Takashi_Hara
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/JPN/JPN_Takashi_Hara.dds"
 			}
 		}
 		advisor={
-			slot=head_of_government
-			idea_token=JPN_Seienji_Konobu_H
+			slot=political_advisor
+			idea_token=JPN_Takashi_Hara_p
+			removal_cost = -1
+			allowed={
+				tag=JPN
+			}
+			available = {
+				JPN_Takashi_Hara={
+					is_country_leader = no
+				}
+			}
+			traits={
+			}
+		}
+	}
+
+
+
+	JPN_Saionji_Kinmoch={
+		name=JPN_Saionji_Kinmoch
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/JPN/JPN_Saionji_Kinmoch.dds"
+			}
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=JPN_Saionji_Kinmoch_p
 			removal_cost = -1
 			allowed={
 				tag=JPN

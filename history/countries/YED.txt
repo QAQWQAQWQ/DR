@@ -54,7 +54,10 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no
 }
-add_ideas = {YED_Roman_Orthodoxy}
+add_ideas = {
+	YED_Roman_Orthodoxy
+	TEQ_religious_conflict
+}
 set_popularities = {
 	Paternalism = 50
 	Liberalism = 30
