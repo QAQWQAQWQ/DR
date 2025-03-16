@@ -434,6 +434,7 @@ news_event = {
 	fire_only_once = yes
    trigger = {
 	AND={
+		original_tag = AOX
 		date > 1920.1.1
 		date < 1920.1.3
 	}

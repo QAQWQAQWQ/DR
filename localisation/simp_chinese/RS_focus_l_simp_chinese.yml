@@ -5,7 +5,31 @@
  NATIONAL_FOCUS_EXCLUSIVE_INFO_ENTRY:0 "$FOCUS|Y$"
  generic_focus:0 "国策"
 
+ Army_support_tooltip:0 "当前：军队支持度§Y[?ROOT.Merchant_support]§!" 
+ Army_support_up_tooltip:0 "§R增加§!目前军队支持度" 
+ Army_support_down_tooltip:0 "§G减少§!目前军队支持度" 
 
+ Worker_support_tooltip:0 "当前：工人支持度§Y[?ROOT.Worker_support]§!" 
+ Worker_support_up_tooltip:0 "§G增加§!目前工人支持度" 
+ Worker_support_down_tooltip:0 "§R减少§!目前工人支持度" 
+
+ Farmer_support_tooltip:0 "当前：农民支持度§Y[?ROOT.Farmer_support]§!" 
+ Farmer_support_up_tooltip:0 "§G增加§!目前农民支持度" 
+ Farmer_support_down_tooltip:0 "§R减少§!目前农民支持度" 
+
+
+ Merchant_support_tooltip:0 "当前：商人支持度§Y[?ROOT.Merchant_support]§!" 
+ Merchant_support_up_tooltip:0 "§G增加§!目前商人支持度" 
+ Merchant_support_down_tooltip:0 "§R减少§!目前商人支持度" 
+
+
+ Bureaucratic_support_tooltip:0 "当前：官僚支持度§Y[?ROOT.Bureaucratic_support]§!" 
+ Bureaucratic_support_up_tooltip:0 "§G增加§!目前官僚支持度" 
+ Bureaucratic_support_down_tooltip:0 "§R减少§!目前官僚支持度"
+
+ Scholar_support_tooltip:0 "当前：学者支持度§Y[?ROOT.Scholar_support]§!" 
+ Scholar_support_up_tooltip:0 "§G增加§!目前学者支持度" 
+ Scholar_support_down_tooltip:0 "§R减少§!目前学者支持度" 
 
  FUM_focus_1:0 "自由者之港"
  FUM_focus_2:0 "唯一先知"
@@ -1471,8 +1495,9 @@ SIW_focus_32:0 "支援伊利里亚"
 SIW_focus_32_desc:0 ""
 SIW_focus_33:0 "最高参谋部"
 SIW_focus_33_desc:0 ""
-
+ 
 JPN_focus_0:0 "解决财政问题"
+nat_debt_5:0 "债务：§G-5§!M" 
 JPN_focus_1:0 "财政缩减法案"
 JPN_focus_2:0 "回收流通货币"
 JPN_focus_3:0 "拒绝僵尸企业贷款"
