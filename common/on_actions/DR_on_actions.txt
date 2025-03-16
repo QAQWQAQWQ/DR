@@ -162,7 +162,7 @@ on_actions = {
 				if={
 					limit={ 
 						check_variable = {
-							new_nat_tre = 0
+							new_nat_tre_det < -40
 						}
 					}
 					set_variable = {Bankruptcy_political_power_gain=-0.5}
@@ -185,7 +185,7 @@ on_actions = {
 				if={
 					limit={ 
 						check_variable = {
-							new_nat_tre > 0
+							new_nat_tre_det > -20
 						}
 					}
 					remove_dynamic_modifier = {

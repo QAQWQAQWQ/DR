@@ -8,19 +8,25 @@ focus_tree = {
 			tag = JPN
 		}
 	} 
-	default = no
+	default = no 
 	focus = {
 		id = JPN_focus_0
 		icon = GFX_JPN_Focus_0
-		cost = 10.00 
-		x = 20
-		y = 0  
-
+		cost = 10.00   
+		x = 20 
+		y = 0   
+		completion_reward = { 
+			custom_effect_tooltip = nat_debt_view
+			add_to_variable = {
+				nat_debt = -5
+				tooltip = nat_debt_5
+			}
+		}
 	}
 	focus = {
 		id = JPN_focus_7
 		icon = GFX_JPN_Focus_7
-		cost = 10.00
+		cost = 6.00
 		x = 28
 		y = 0
 
@@ -28,51 +34,75 @@ focus_tree = {
 	focus = {
 		id = JPN_focus_1
 		icon = GFX_JPN_Focus_1
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = JPN_focus_0
 		}
 		x = 20
 		y = 1 
-
+		completion_reward = {
+			custom_effect_tooltip = nat_debt_view
+			add_to_variable = {
+				nat_debt = -5
+				tooltip = nat_debt_5
+			}
+		}
 	}
 	focus = {
 		id = JPN_focus_2
 		icon = GFX_JPN_Focus_2
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = JPN_focus_1
 		}
 		x = 17
 		y = 2
-
+		completion_reward = {
+			custom_effect_tooltip = nat_debt_view
+			add_to_variable = {
+				nat_debt = -5
+				tooltip = nat_debt_5
+			}
+		}
 	}
 	focus = {
 		id = JPN_focus_3
 		icon = GFX_JPN_Focus_3
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = JPN_focus_1
 		}
 		x = 20
 		y = 2
-
+		completion_reward = {
+			custom_effect_tooltip = nat_debt_view
+			add_to_variable = {
+				nat_debt = -5
+				tooltip = nat_debt_5
+			}
+		}
 	}
 	focus = {
 		id = JPN_focus_4
 		icon = GFX_JPN_Focus_4
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = JPN_focus_1
 		}
 		x = 23
 		y = 2
-
+		completion_reward = {
+			custom_effect_tooltip = nat_debt_view
+			add_to_variable = {
+				nat_debt = -5
+				tooltip = nat_debt_5
+			}
+		}
 	}
 	focus = {
 		id = JPN_focus_5
 		icon = GFX_JPN_Focus_5
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = JPN_focus_2
 		}
@@ -84,12 +114,28 @@ focus_tree = {
 		}
 		x = 20
 		y = 3
-
+		completion_reward = {
+			custom_effect_tooltip = Worker_support_tooltip
+			add_to_variable = {
+				Worker_support = -5
+				tooltip = Worker_support_down_tooltip
+			}
+			custom_effect_tooltip = Farmer_support_tooltip
+			add_to_variable = {
+				Farmer_support = -5
+				tooltip = Farmer_support_down_tooltip
+			}
+			custom_effect_tooltip = Merchant_support_tooltip
+			add_to_variable = {
+				Merchant_support = -5
+				tooltip = Merchant_support_down_tooltip
+			}
+		}
 	}
 	focus = {
 		id = JPN_focus_6
 		icon = GFX_JPN_Focus_6
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = JPN_focus_5
 		}
@@ -100,32 +146,40 @@ focus_tree = {
 	focus = {
 		id = JPN_focus_8
 		icon = GFX_JPN_Focus_8
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = JPN_focus_7
 		}
-		x = 28
+		x = 28 
 		y = 1
 
-	}
+	} 
 	focus = {
 		id = JPN_focus_9
 		icon = GFX_JPN_Focus_9
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = JPN_focus_8
-		}
+		} 
 		mutually_exclusive = {
-			focus = JPN_focus_10
+			focus = JPN_focus_10 
 		}
 		x = 26
 		y = 2
-
+		completion_reward = {
+			army_experience = 15 
+			gain_xp = 10
+			add_to_variable = {
+				Army_support = 10
+				tooltip = Army_support_tooltip
+			}
+			custom_effect_tooltip = Army_support_up_tooltip
+		}
 	}
 	focus = {
 		id = JPN_focus_11
 		icon = GFX_JPN_Focus_11
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = JPN_focus_9
 		}
@@ -136,7 +190,7 @@ focus_tree = {
 	focus = {
 		id = JPN_focus_12
 		icon = GFX_JPN_Focus_12
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = JPN_focus_9
 		}
@@ -147,7 +201,7 @@ focus_tree = {
 	focus = {
 		id = JPN_focus_13
 		icon = GFX_JPN_Focus_13
-		cost = 10.00
+		cost = 6.00
 		prerequisite = { 
 			focus = JPN_focus_11
 		}
@@ -161,7 +215,7 @@ focus_tree = {
 	focus = {
 		id = JPN_focus_14
 		icon = GFX_JPN_Focus_14
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = JPN_focus_13
 		}
@@ -172,7 +226,7 @@ focus_tree = {
 	focus = {
 		id = JPN_focus_10
 		icon = GFX_JPN_Focus_10
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = JPN_focus_8
 		}
@@ -181,11 +235,20 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = JPN_focus_9
 		}
+		completion_reward = {
+			navy_experience = 10
+			gain_xp = 10
+			add_to_variable = {
+				Army_support = 10
+				tooltip = Army_support_tooltip
+			}
+			custom_effect_tooltip = Army_support_up_tooltip
+		}
 	} 
 	focus = {
 		id = JPN_focus_16 
 		icon = GFX_JPN_Focus_16
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = JPN_focus_10
 		}
@@ -196,7 +259,7 @@ focus_tree = {
 	focus = {
 		id = JPN_focus_18
 		icon = GFX_JPN_Focus_18
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = JPN_focus_16
 		}
@@ -207,7 +270,7 @@ focus_tree = {
 	focus = {
 		id = JPN_focus_20
 		icon = GFX_JPN_Focus_20
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = JPN_focus_18
 		}
@@ -218,7 +281,7 @@ focus_tree = {
 	focus = {
 		id = JPN_focus_19
 		icon = GFX_JPN_Focus_19
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = JPN_focus_18
 		}
@@ -229,7 +292,7 @@ focus_tree = {
 	focus = {
 		id = JPN_focus_21
 		icon = GFX_JPN_Focus_21
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = JPN_focus_20
 		}
@@ -243,7 +306,7 @@ focus_tree = {
 	focus = {
 		id = JPN_focus_15
 		icon = GFX_JPN_Focus_15
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = JPN_focus_14
 		}
@@ -257,7 +320,7 @@ focus_tree = {
 	focus = {
 		id = JPN_focus_17
 		icon = GFX_JPN_Focus_17
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = JPN_focus_16
 		}
