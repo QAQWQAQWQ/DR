@@ -1,0 +1,14 @@
+JPN_Twenty_fifth_Division = {
+	icon = infiltration
+	
+	picture = GFX_decisions_Twenty_fifth_Division
+	priority = 10
+	allowed = {
+		tag = JPN
+	}
+	visible = {
+		#has_completed_focus = JPN_focus_11
+	} 
+}
+
+

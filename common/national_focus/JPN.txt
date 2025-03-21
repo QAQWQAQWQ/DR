@@ -185,7 +185,9 @@ focus_tree = {
 		}
 		x = 25
 		y = 3
-
+		completion_reward = {
+			unlock_decision_category_tooltip = JPN_Twenty_fifth_Division
+		}
 	}
 	focus = {
 		id = JPN_focus_12
@@ -195,8 +197,20 @@ focus_tree = {
 			focus = JPN_focus_9
 		}
 		x = 27
-		y = 3
-
+		y = 3 
+		completion_reward = {
+			custom_effect_tooltip = JPN_focus_12_tt
+			add_units_to_division_template = {
+				template_name = "甲种师团"
+				regiments = {
+					infantry = 0
+					infantry = 1
+				}
+				support = {
+					recon = 0
+				}
+			}
+		}
 	}
 	focus = {
 		id = JPN_focus_13
@@ -210,7 +224,12 @@ focus_tree = {
 		}
 		x = 26
 		y = 4
-
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 200
+			}
+		}
 	}
 	focus = {
 		id = JPN_focus_14
@@ -221,7 +240,9 @@ focus_tree = {
 		}
 		x = 26
 		y = 5
-
+		completion_reward = {
+			remove_ideas = JPN_haze_Russo_Japanese_War
+		}
 	}
 	focus = {
 		id = JPN_focus_10
