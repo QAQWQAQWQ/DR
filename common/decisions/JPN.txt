@@ -1,0 +1,55 @@
+JPN_Twenty_fifth_Division = {
+	JPN_Add_intellectuals = {
+		icon = generic_ignite_civil_war
+			visible = {
+			}
+			available = {
+			}
+			days_re_enable = 5 
+			days_remove = 50
+			cost = 25
+			allowed = {
+				tag = JPN
+			}
+			complete_effect = { 
+				army_experience = 5
+			}
+			fixed_random_seed = no
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 1
+			}
+	}
+	JPN_Develop_operational_guidelines = {
+		icon = generic_ignite_civil_war
+			visible = {
+			}
+			available = {
+			}
+			days_re_enable = 5
+			days_remove = 50
+			cost = 25
+			allowed = {
+				tag = JPN
+			}
+			complete_effect = { 
+				JPN={
+					add_unit_bonus = {
+						infantry = {
+						  soft_attack = 0.02
+						}
+						cavalry = {
+						  soft_attack = 0.02
+						  hard_attack = 0.02
+						}
+					  }
+				}
+				
+			}
+			fixed_random_seed = no
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 1
+			}
+	}
+}

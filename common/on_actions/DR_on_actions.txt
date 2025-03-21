@@ -194,6 +194,17 @@ on_actions = {
 					country_lock_all_division_template = no
 				}
 			}
+			every_country = {
+				if={
+					limit={ 
+						AND = {
+							original_tag = JPN
+							has_idea = JPN_haze_Russo_Japanese_War
+						}
+					}
+					country_lock_all_division_template = yes
+				}
+			}
 		}
 	}
 
