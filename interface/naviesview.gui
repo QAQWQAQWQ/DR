@@ -304,7 +304,7 @@ guiTypes = {
 		# Tool/selection bar (visibility toggled by code)
 		containerWindowType = {
 			name = "tool_bar_window"
-			position = {x=0 y=0} # vertical position controlled by code
+			position = {x=0 y=27} # vertical position controlled by code
 			size = { width=492 height=44 }
 			Orientation = upper_left
 
@@ -503,7 +503,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "fleet_view_header"
 		#name = "naviesview_entry"
-		position = {x=0 y=0}
+		position = {x=0 y=20}
 		size = { width=492 height=166 }
 		Orientation = upper_left
 		clipping = no

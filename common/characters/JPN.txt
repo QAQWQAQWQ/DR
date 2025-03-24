@@ -41,6 +41,13 @@ characters={
 				large="gfx/leaders/JPN/portrait_Yamagata_Aritomo.tga"
 			}
 		}
+		field_marshal = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
 		country_leader={
 			ideology=autocratic-constitutional-monarchy
             desc=JPN_Yamagata_Aritomo_DESC
@@ -244,5 +251,195 @@ characters={
 			traits={
 			}
 		}
-	}		
+	}
+
+	###军队
+	JPN_Matsui_Iwane={
+		name=JPN_Matsui_Iwane
+		portraits={
+			civilian={
+				large="gfx/leaders/JPN/portrait_Matsui_Iwane.tga"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	JPN_Honjo_Shigeru={
+		name=JPN_Honjo_Shigeru
+		portraits={
+			civilian={
+				large="gfx/leaders/JPN/portrait_Honjo_Shigeru.tga"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	JPN_Terauchi_Hisaichi={
+		name=JPN_Terauchi_Hisaichi
+		portraits={
+			civilian={
+				large="gfx/leaders/JPN/portrait_Terauchi_Hisaichi.tga"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	JPN_Mazaki_Jinzaburo={
+		name=JPN_Mazaki_Jinzaburo
+		portraits={
+			civilian={
+				large="gfx/leaders/JPN/portrait_Mazaki_Jinzaburo.tga"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	JPN_Kazunari_Ugaki={
+		name=JPN_Kazunari_Ugaki
+		portraits={
+			civilian={
+				large="gfx/leaders/JPN/portrait_Kazunari_Ugaki.tga"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	JPN_Araki_Sadao={
+		name=JPN_Araki_Sadao
+		portraits={
+			civilian={
+				large="gfx/leaders/JPN/portrait_Araki_Sadao.tga"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+	JPN_Koiso_Kuniaki={
+		name=JPN_Koiso_Kuniaki
+		portraits={
+			civilian={
+				large="gfx/leaders/JPN/portrait_Koiso_Kuniaki.tga"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+	JPN_Hayashi_Senjuro={
+		name=JPN_Hayashi_Senjuro
+		portraits={
+			civilian={
+				large="gfx/leaders/JPN/portrait_Hayashi_Senjūro.tga"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+
+	JPN_Yoshimasa_Oshima={
+		name=JPN_Yoshimasa_Oshima
+		portraits={
+			civilian={
+				large="gfx/leaders/JPN/portrait_Yoshimasa_Oshima.tga"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+	JPN_Uehara_Yusaku={
+		name=JPN_Uehara_Yusaku
+		portraits={
+			civilian={
+				large="gfx/leaders/JPN/portrait_Uehara_Yusaku.tga"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	
+	###海军
+	JPN_Togo_Heihachiro={
+		name=JPN_Togo_Heihachiro
+		portraits={
+			civilian={
+				large="gfx/leaders/JPN/portrait_Togo_Heihachiro.tga"
+			}
+		}
+		navy_leader = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+	JPN_Count_Yamamoto={
+		name=JPN_Count_Yamamoto
+		portraits={
+			civilian={
+				large="gfx/leaders/JPN/portrait_Count_Yamamoto.tga"
+			}
+		}
+		navy_leader = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
 	}
