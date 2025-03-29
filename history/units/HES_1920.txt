@@ -1,100 +1,36 @@
-﻿division_template = {
-	name = "守备旅"				
+﻿###################################################################
+
+division_template = {
+	name = "Infantry Division"
+	division_names_group = SER_INF_02
 	regiments = {
-		infantry = { x = 0 y = 0 }	
+		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 	}
-	priority = 0
 }
-division_template = {
-	name = "民兵旅"				
-	regiments = {
-		infantry = { x = 0 y = 0 }	
-		infantry = { x = 0 y = 1 }
-		infantry= { x = 1 y = 0 }
-		infantry= { x = 1 y = 1 }
-		infantry= { x = 2 y = 0 }
-		infantry= { x = 2 y = 1 }
-	}
-	priority = 0
-}
-division_template = {
-		name = "步兵旅"
+###################################################################
 
-		regiments = {
-			infantry = { x = 0 y = 0 }
-			infantry = { x = 0 y = 1 }
-			infantry = { x = 0 y = 2 }
-			infantry = { x = 0 y = 3 }
-			infantry = { x = 0 y = 4 }
-		}
-		template_counter = 67
-	}
-	division_template = {
-		name = "骑兵旅" 	# Cavalry Division
-	
-	
-		regiments = {
-			cavalry = { x = 0 y = 0 }
-			cavalry = { x = 0 y = 1 }
-			cavalry = { x = 1 y = 0 }
-			cavalry = { x = 1 y = 1 }
-		}
-		support = {
-			engineer = { x = 0 y = 0 }
-		}
-	
-	}
 units = {
+	division= { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9809 # Cetinje
+		division_template="Infantry Division"
+		start_experience_factor=0.1
+	}
 	
-	division = {
-		name = "步兵旅"
-		location = 9809
-		division_template = "步兵旅"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
-army_history={
-history_queue={
-army_names="普鲁士王国"
-target_country="HES"
-location={
-6521 }
-date="1919.1.11.10"
-unique=9
-medal_count=yes
-inherit=yes
-}
-}
-
-	}
-	division= {	
-		name = "步兵旅"
-		location = 9809
-		division_template = "步兵旅"
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.8
-	}
-	division= {	
-		name = "步兵旅"
-		location = 9809
-		division_template = "步兵旅"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-	division= {	
-		name = "步兵旅"
-		location = 9809
-		division_template = "步兵旅"
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.8
-	}
-	division= {	
-		name = "骑兵旅"
-		location = 9809
-		division_template = "骑兵旅"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+	
+	division= { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9809 # Cetinje
+		division_template="Infantry Division"
+		start_experience_factor=0.1
 	}
 }

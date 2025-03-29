@@ -5,14 +5,15 @@ state={
 	history={
 		owner = ARA
 		add_core_of = ARA
+		
 		victory_points = {
-			12376 1
-		}
-		victory_points = {
-			9858 4
+			9858 10
 		}
 		victory_points = {
 			11880 4
+		}
+		victory_points = {
+			10497 5 
 		}
 		buildings = {
 			infrastructure = 1
@@ -20,7 +21,7 @@ state={
 	}
 
 	provinces={
-		9858 10399 11880 12376
+		9858 10399 11880 10497 11739 7470
 	}
 	manpower = 146196
 	state_category = rural

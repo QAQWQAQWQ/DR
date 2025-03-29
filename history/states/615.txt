@@ -10,17 +10,36 @@ state={
 	history={
 		owner = SXS
 		add_core_of = SXS
+		
+
 		victory_points = {
-			1519 3 
+			12344 15 
 		}
+		
+		
+		victory_points = {
+			4538 8 
+		}
+		victory_points = {
+			12078 8 
+		}
+		
+		victory_points = {
+			7074 8 
+		}
+
+		
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
 			industrial_complex = 1
+			12344 = {
+				bunker = 2
+			}
 		}
 	}
 	provinces={
-		1180 1519 4538 10421 12078 12344
+		1180 1519 4538 10421 12078 12344 4058 7074
 	}
 
 	local_supplies=0.0 

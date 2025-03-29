@@ -42,4 +42,291 @@ characters={
 			id=-1
 		}
 	}			
+	############################################################################generals
+	YDA_rajendra_prasad={
+		name="YDA_rajendra_prasad"
+		portraits={
+			army={
+				small="GFX_idea_generic_military_theorist_asian_2d"
+			}
+			army={
+				large="gfx/leaders/YDA/YDA_Rajendra_Prasad.png"
+			}
+		}
+		corps_commander={
+			traits={ politically_connected }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			
+			visible = {
+				NOT = { is_subject_of = ENL }
+			}
+		}		
+	}
+	YDA_john_nixon={
+		name="YDA_john_nixon"
+		advisor={
+			slot = high_command
+			idea_token = YDA_john_nixon
+			
+				ledger  = army 
+				traits  = {
+					army_infantry_2 
+				}
+				cost = 100
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits={
+			army={
+				large="gfx/leaders/YDA/YDA_john_eccles_nixon.png"
+				small="gfx/interface/ideas/YDA/idea_YDA_john_eccles_nixon.png"
+			}
+		}
+		field_marshal={
+			traits={ trait_royalist aggressive_assaulter }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			#legacy_id=403
+		}
+	}
+	YDA_sir_charles_townshend={
+		name="YDA_sir_charles_townshend"
+		portraits={
+            army={
+				small="GFX_idea_generic_army_europe_1"
+				large="gfx/leaders/YDA/YDA_Charles_Townshend.png"
+			}
+		}
+        corps_commander={
+			traits={ career_officer trait_reckless trait_royalist desert_fox }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			#legacy_id=402
+		}
+	}
+	YDA_keshav_baliram_hedgewar={
+		name="YDA_keshav_baliram_hedgewar"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_chief_off_asian_2d"
+				large="gfx/leaders/YDA/YDA_Keshav_Baliram_Hedgewar.png"
+			}
+		}
+		field_marshal={
+			traits={ old_guard politically_connected }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
+			visible = {
+				NOT = { is_subject_of = ENL }
+			}
+		}
+	}
+	YDA_abul_kalam_azad={
+		name="YDA_abul_kalam_azad"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_chief_def_asian_2d"
+			}
+			army={
+				large="gfx/leaders/YDA/YDA_Abul_Kalam_Azad.png"
+			}
+		}
+		corps_commander={
+			traits={ politically_connected }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			
+			visible = {
+				NOT = { is_subject_of = ENL }
+			}
+		}		
+	}
+	YDA_vallabhbhai_patel={
+		name="YDA_vallabhbhai_patel"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_art_asian_2d"
+			}
+			army={
+				large="gfx/leaders/YDA/YDA_Vallabhbhai_Patel.png"
+			}
+		}
+		corps_commander={
+			traits={ politically_connected }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			
+			visible = {
+				NOT = { is_subject_of = ENL }
+			}
+		}	
+	}
+	YDA_jawaharlal_nehru={
+		name="YDA_jawaharlal_nehru"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_art_asian_2d"
+			}
+			army={
+				large="gfx/leaders/YDA/YDA_jawaharlal_Nehru.png"
+			}
+		}
+		corps_commander={
+			traits={ politically_connected }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			
+			visible = {
+				NOT = { is_subject_of = ENL }
+			}
+		}	
+	}
+	YDA_james_willcocks={
+		name="YDA_james_willcocks"
+		portraits={
+			army={
+				small="GFX_idea_generic_military_theorist_asian_2d"
+			}
+			army={
+				large="gfx/leaders/YDA/YDA_james_wilcocks.png"
+			}
+		}
+		corps_commander={
+			traits={ politically_connected trait_royalist }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			#legacy_id=404
+			visible = {
+				NOT = { is_subject_of = ENL }
+			}
+		}
+	}
+	YDA_havelock_hudson={
+		name="YDA_havelock_hudson"
+		portraits={
+			army={
+				large="gfx/leaders/YDA/YDA_Havelock_Hudson.png"
+				small="gfx/interface/ideas/YDA/idea_YDA_Havelock_Hudson.png"
+			}
+		}
+		corps_commander={
+			traits={ old_guard brilliant_strategist cavalry_officer politically_connected trait_royalist }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			#legacy_id=405
+		}
+	}
+	YDA_walter_braithwaite={
+		name="YDA_walter_braithwaite"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_art_commonwealth_2d"
+			}
+			army={
+				large="gfx/leaders/YDA/YDA_walter_braithwaite.png"
+			}
+		}
+		corps_commander={
+			traits={ old_guard inflexible_strategist harsh_leader trait_royalist }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			#legacy_id=406
+		}
+	}
+	YDA_reginald_dyer={
+		name="YDA_reginald_dyer"
+		portraits={
+			army={
+				large="gfx/leaders/YDA/YDA_reginald_dyer.png"
+				small="gfx/interface/ideas/YDA/idea_YDA_reginald_dyer.png"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless harsh_leader trait_royalist }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			#legacy_id=407
+		}
+	}
+	YDA_wilfrid_malleson={
+		name=YDA_wilfrid_malleson
+		portraits={
+			army={			
+				large="gfx/leaders/YDA/YDA_Wilfrid_Malleson.png"
+				small="gfx/interface/ideas/YDA/idea_YDA_Wilfrid_Malleson.png" 
+			}
+		}
+		corps_commander={
+			traits={  trait_royalist organizer }
+			skill = 1
+			attack_skill = 2 
+			defense_skill = 1 
+			planning_skill = 1
+			logistics_skill = 1
+			
+		}
+	}
+	YDA_arthur_a_barrett={
+		advisor={
+			slot = army_chief
+			idea_token = YDA_arthur_a_barrett
+            traits  = {
+				army_chief_defensive_1 
+            }
+            ai_will_do  = {
+                factor  = 1.000
+            }
+		}
+		name="YDA_arthur_a_barrett"
+        portraits={
+			army={
+				large="gfx/leaders/YDA/YDA_arthur_barrett.png"
+				small="gfx/interface/ideas/YDA/idea_YDA_arthur_barrett.png" 
+			}
+		}
+		field_marshal={
+			traits={ trait_royalist trait_mountaineer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			#legacy_id=401
+		}
+	}
 	}

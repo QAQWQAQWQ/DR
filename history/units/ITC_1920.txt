@@ -1,32 +1,53 @@
 
 division_template = {
-	name = "旧式教廷卫队"
+	name = "Guardia Palatina d'Onore"
+	division_names_group = ITAL_INF_01
 	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 0 }
 		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
 	}
-	is_locked = yes
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Divisione Autotrasportabile"
+	division_names_group = ITAL_MOT_01
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Divisione Corazzata"
+	division_names_group = ITAL_ARM_01
+	regiments = {
+		super_light_armor = { x = 0 y = 0 }
+		super_light_armor = { x = 0 y = 1 }
+		super_light_armor = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
 }
 division_template = {
 	name = "革命民兵师"
 
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-        infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-        infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-	}
-	
-	support = {
-        engineer = { x = 0 y = 0 }
-        artillery = { x = 0 y = 1 }
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		militia = { x = 2 y = 2 }
 	}
 	
 }
@@ -34,20 +55,15 @@ division_template = {
 	name = "阿迪蒂民兵师"
 
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-        infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-        infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-	}
-	
-	support = {
-        engineer = { x = 0 y = 0 }
-        artillery = { x = 0 y = 1 }
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		militia = { x = 2 y = 2 }
 	}
 	
 }
@@ -58,47 +74,27 @@ division_template = {
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
 		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
-	}
-	support = {
-        engineer = { x = 0 y = 0 }
+		cavalry = { x = 1 y = 2 }
 	}
 
 }
 division_template = {
-	name = "加里波第军团步兵师"
-
-
+	name = "Divisione Garibaldi"
+	division_names_group = ITC_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
 	}
-	
-	support = {
-        engineer = { x = 0 y = 0 }
-        artillery = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "加里波第军团民兵旅"
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-	}
-	support = {
-        engineer = { x = 0 y = 0 }
-	}
-	is_locked = yes
 }
 division_template = {
 	name = "加里波第军团骑兵旅" 	# Cavalry Division
@@ -107,11 +103,10 @@ division_template = {
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
 		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
-	}
-	support = {
-        engineer = { x = 0 y = 0 }
+		cavalry = { x = 1 y = 2 }
 	}
 
 }
@@ -143,5 +138,37 @@ units = {
 		division_template = "革命民兵师"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.6
+	}
+}
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "ITC"
+		}
+		requested_factories = 10
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "ITC" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "ITC" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
 	}
 }

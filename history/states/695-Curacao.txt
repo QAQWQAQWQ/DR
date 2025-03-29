@@ -6,20 +6,17 @@ state={
 	state_category = rural
 
 	resources={
-		oil=35 # was: 126
+		oil=1 # was: 126
 	}
 
 	history={
 		owner = HEL
-		victory_points = {
-			153 1
-		}
+		
 		buildings = {
-			arms_factory = 1
+			
 			infrastructure = 2
 			153 = {
 				naval_base = 1
-				coastal_bunker = 2
 			}
 		}
 	}

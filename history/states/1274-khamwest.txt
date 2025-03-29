@@ -1,0 +1,31 @@
+state={
+	id=1274
+	name="STATE_1274"
+	resources={
+		oil=1.000
+	}
+
+	history={
+		owner = XZZ
+		add_core_of = XZZ
+		buildings = {
+			infrastructure = 1
+		}
+		
+
+		victory_points = {
+			10856 10
+		}
+		
+		
+	}
+
+	provinces={
+		10856 4407
+	}
+	manpower=108200
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=1.0 
+}

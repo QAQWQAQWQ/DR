@@ -1,0 +1,95 @@
+on_actions = {
+	on_startup= {
+		effect = {
+			set_variable = {
+                global.afgcivilwar = 1
+            }
+            set_variable = {
+                global.nas_win_afgcivilwar = 0
+            }
+            set_variable = {
+                global.aman_win_afgcivilwar = 0
+            }
+		}
+	}
+    on_capitulation = {
+        effect = {
+            #Nas投降
+            if = {
+                limit = {
+                    ROOT = { tag = AFG }
+                    FROM = { tag = AFH }
+                    check_variable = { global.afgcivilwar = 1 }
+                }
+                hidden_effect = {
+					set_variable = {global.afgcivilwar = 2}
+					set_variable = {global.aman_win_afgcivilwar = 1}
+					AFH = {
+						 annex_country = { target = AFG transfer_troops = yes} 
+						set_cosmetic_tag = AFH_new
+				set_party_name = {
+					ideology = Dictatorship
+					long_name = AFH_new_Dictatorship_party
+					name = AFH_new_Dictatorship_party
+				}
+					}
+                    SHW = {set_autonomy = {
+						target = AFH
+						autonomy_state = autonomy_supervised_state
+					}
+					AFH = {
+						set_politics = {
+							ruling_party = Dictatorship
+							last_election = "1918.11.11"
+							election_frequency = 72
+							elections_allowed = no
+						}
+						set_popularities = {
+							Dictatorship = 100
+						}
+					}
+            }
+        }
+	}
+	#Aman投降
+	if = {
+		limit = {
+			ROOT = { tag = AFH }
+			FROM = { tag = AFG }
+			check_variable = { global.afgcivilwar = 1 }
+		}
+		hidden_effect = {
+			set_variable = {global.afgcivilwar = 2}
+			set_variable = {global.nas_win_afgcivilwar = 1}
+			AFG = {
+				annex_country = { target = AFH transfer_troops = yes} 
+				set_cosmetic_tag = AFG_new
+		set_party_name = {
+			ideology = Dictatorship
+			long_name = AFG_new_Dictatorship_party
+			name = AFG_new_Dictatorship_party
+		}
+			}
+			ENL = {set_autonomy = {
+				target = AFG
+				autonomy_state = autonomy_supervised_state
+			}
+			AFG = {
+				set_politics = {
+					ruling_party = Dictatorship
+					last_election = "1918.11.11"
+					election_frequency = 72
+					elections_allowed = no
+				}
+				set_popularities = {
+					Dictatorship = 100
+				}
+			}
+	}
+}
+}
+		}
+	}
+
+}
+        

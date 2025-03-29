@@ -1,0 +1,638 @@
+division_template = {
+    name = "步兵师"
+    division_names_group = YED_INF_01
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        infantry = { x = 0 y = 3 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+        infantry = { x = 1 y = 2 }
+        infantry = { x = 1 y = 3 }
+        infantry = { x = 2 y = 0 }
+        infantry = { x = 2 y = 1 }
+        infantry = { x = 2 y = 2 }
+        infantry = { x = 2 y = 3 }
+        infantry = { x = 3 y = 0 }
+        artillery_brigade = { x = 3 y = 1 }
+    }
+    support = {
+        engineer = { x = 0 y = 0 }
+    }
+}
+
+division_template = {
+    name = "突击步兵师"
+    division_names_group = YED_INF_01
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        infantry = { x = 0 y = 3 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+        infantry = { x = 1 y = 2 }
+        infantry = { x = 1 y = 3 }
+        infantry = { x = 2 y = 0 }
+        infantry = { x = 2 y = 1 }
+        infantry = { x = 2 y = 2 }
+        infantry = { x = 2 y = 3 }
+        infantry = { x = 3 y = 0 }
+        infantry = { x = 3 y = 1 }
+        infantry = { x = 3 y = 2 }
+        infantry = { x = 3 y = 3 }
+        artillery_brigade = { x = 3 y = 4 }
+    }
+    support = {
+        engineer = { x = 0 y = 0 }
+    }
+    priority = 2
+}
+
+division_template = {
+    name = "步兵团"
+    division_names_group = YED_INF_01
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+    }
+    priority = 0
+}
+
+
+
+division_template = {
+    name = "骑炮合成旅" 
+    division_names_group = YED_CAV_01
+    regiments = {
+        cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+        cavalry = { x = 0 y = 2 }
+        cavalry = { x = 1 y = 0 }
+        cavalry = { x = 1 y = 1 }
+        cavalry = { x = 1 y = 2 }
+    }
+    support = {
+        artillery = { x = 0 y = 0 }
+    }
+}
+
+division_template = {
+    name = "骑兵旅" 
+    regiments = {
+        cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+        cavalry = { x = 0 y = 2 }
+    }
+    support = {
+        recon = { x = 0 y = 0 }
+    }
+}
+
+
+division_template = {
+	name = "山地步兵旅"
+	division_names_group = YED_MTN_01
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "超轻型装甲师"
+	division_names_group = YED_ARM_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		super_light_armor = { x = 2 y = 0 }
+	}
+}
+
+units = {
+    division = {
+		#name = "1. Dağci Firka"
+		division_name = {	# New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9833
+		division_template = "山地步兵旅"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+	}
+	division = {
+		#name = "2. Dağci Firka"
+		division_name = {	# New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9833
+		division_template = "山地步兵旅"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+	}
+	division = {
+		#name = "3. Dağci Firka"
+		division_name = {	# New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9833
+		division_template = "山地步兵旅"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+	}
+
+    #1. Europa
+
+    division = {
+        name = "1. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "2. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "3. 步兵师"
+        location = 9833
+        division_template = "突击步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "1. 步兵团"
+        location = 9833
+        division_template = "步兵团"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "1. 骑兵旅"
+        location = 9833
+        division_template = "骑兵旅"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "2. 骑兵旅"
+        location = 9833
+        division_template = "骑兵旅"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "4. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "5. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "6. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "2. 步兵团"
+        location = 9833
+        division_template = "步兵团"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "7. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "8. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "9. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "3. 步兵团"
+        location = 9833
+        division_template = "步兵团"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "3. 骑兵旅"
+        location = 9833
+        division_template = "骑兵旅"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "10. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "11. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "12. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "4. 步兵团"
+        location = 9833
+        division_template = "步兵团"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "4. 骑兵旅"
+        location = 9833
+        division_template = "骑兵旅"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "5. 骑兵旅"
+        location = 9833
+        division_template = "骑兵旅"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+
+    #2. Asia
+
+    division = {
+        name = "13. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "14. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "15. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "5. 步兵团"
+        location = 9833
+        division_template = "步兵团"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "6. 骑兵旅"
+        location = 9833
+        division_template = "骑兵旅"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "16. 步兵师"
+        location = 9833
+        division_template = "突击步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "17. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "18. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "6. 步兵团"
+        location = 9833
+        division_template = "步兵团"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "7. 骑兵旅"
+        location = 9833
+        division_template = "骑兵旅"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "19. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "20. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "21. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "7. 步兵团"
+        location = 9833
+        division_template = "步兵团"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "8. 骑兵旅"
+        location = 9833
+        division_template = "骑兵旅"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "22. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "23. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "24. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "25. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "26. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "27. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "8. 步兵团"
+        location = 9833
+        division_template = "步兵团"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "9. 骑兵旅"
+        location = 9833
+        division_template = "骑兵旅"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+
+    #3. Euphrates
+    
+    division = {
+        name = "28. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "29. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "9. 步兵团"
+        location = 9833
+        division_template = "步兵团"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "30. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "31. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "32. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "33. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "34. 步兵师"
+        location = 9833
+        division_template = "步兵师"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "1. 骑炮合成旅"
+        location = 9833
+        division_template = "骑炮合成旅"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "2. 骑炮合成旅"
+        location = 9833
+        division_template = "骑炮合成旅"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "3. 骑炮合成旅"
+        location = 9833
+        division_template = "骑炮合成旅"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    division = {
+        name = "4. 骑炮合成旅"
+        location = 9833
+        division_template = "骑炮合成旅"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+    
+}
+
+ #air squadrons formed before 1910
+air_wings = {  
+    553 = {
+        scout_plane_equipment_1 = {
+            owner = "YED"
+            amount = 7
+        }
+        scout_plane_equipment_1 = {
+            owner = "YED"
+            amount = 3
+        }
+        airship_equipment_1 = {
+            owner = "YED"
+            amount = 2
+        }
+    }
+    347 = {
+        scout_plane_equipment_1 = {
+            owner = "YED"
+            amount = 7
+        }
+        scout_plane_equipment_1 = {
+            owner = "YED"
+            amount = 7
+        }
+        airship_equipment_1 = {
+            owner = "YED"
+            amount = 4
+        }
+    }
+    448 = {
+        scout_plane_equipment_1 = {
+            owner = "YED"
+            amount = 2
+        }
+        scout_plane_equipment_1 = {
+            owner = "YED"
+            amount = 2
+        }
+    }
+}
+
+instant_effect = {
+	add_equipment_production = { 
+		equipment = { type = infantry_equipment_0 creator = "YED" } 
+		requested_factories = 4 progress = 0.2 efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "YED"
+		}
+		requested_factories = 10
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "YED" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "YED" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+}

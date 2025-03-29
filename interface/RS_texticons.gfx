@@ -33,7 +33,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_Alexei_Feodorovich_Aladjin"
-		texturefile = "gfx/interface/textpicture/portrait_Alexei_Feodorovich_Aladjin.tga"
+		texturefile = "gfx/interface/textpicture/Portrait_Alexei_Feodorovich_Aladjin.tga"
 		legacy_lazy_load = no
 	}
 	spriteType = {
@@ -55,6 +55,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Shulgin"
 		texturefile = "gfx/interface/textpicture/Portrait_Shulgin.tga"
+		legacy_lazy_load = no
+	}	
+	spriteType = {
+		name = "GFX_Dubrovin"
+		texturefile = "gfx/interface/textpicture/Portrait_Alexander_Ivanovich_Dubrovin.tga"
 		legacy_lazy_load = no
 	}	
 

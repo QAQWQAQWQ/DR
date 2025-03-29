@@ -28,6 +28,9 @@ set_technology = {
 	early_ship_hull_light = 1
 	early_ship_hull_submarine = 1
 	early_ship_hull_heavy = 1
+	tracked_suspension = 1
+	great_war_light_chassis = 1
+	super_light_chassis = 1
 }
 create_faction = Se_International
 set_convoys = 300

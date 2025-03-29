@@ -15,7 +15,6 @@ set_technology = {
 recruit_character = CEX_CaiEr
 recruit_character = CEX_HeLong
 recruit_character = CEX_ZhuDe
-recruit_character = CEX_tangjiyao
 recruit_character = CEX_LuHan
 recruit_character = CEX_LongYun
 recruit_character = CEX_TangHuaiYuan
@@ -64,10 +63,9 @@ add_ideas = {
 	CEX_YMA
 }
 set_popularities = {
-	Dictatorship = 90
-	Paternalism = 10
+	Dictatorship = 100
 }
 set_autonomy = {
 	target = LXS
-	autonomy_state =  autonomy_integrated_puppet
+	autonomy_state =  autonomy_supervised_state
 }

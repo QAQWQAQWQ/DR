@@ -6,7 +6,7 @@ state={
 	resources={
 		chromium=35 # was: 46
 	}
-	state_category = rural
+	state_category = town
 	resources={
 		grain=22
 	}
@@ -15,7 +15,7 @@ state={
 		add_core_of = YED
 		add_core_of = TEQ
 		victory_points = {
-			1005 5 
+			1005 13
 		}
 		buildings = {
 			infrastructure = 2

@@ -1,0 +1,27 @@
+state={
+	id=1257
+	name="STATE_1257"
+	manpower = 364330
+	
+	state_category = pastoral
+	resources={
+		grain=10
+	}
+	history={
+		owner = HLP
+		add_core_of = HLP
+		buildings = {
+			infrastructure = 1
+		}
+		
+		
+		
+	}
+
+	provinces={
+		13437 12485 4506 1645 7582
+		     
+	}
+
+	local_supplies=0.0 
+}

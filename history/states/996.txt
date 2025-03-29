@@ -7,8 +7,8 @@ state={
 		owner = SUC
 		add_core_of = ROC
 		add_core_of = SUC
-		victory_points = { 7191 10 }
-		victory_points = { 4042 3 }
+		victory_points = { 7191 20 }
+
 		buildings = {
 			infrastructure = 2
 			7191 = {
@@ -16,7 +16,31 @@ state={
 				coastal_bunker = 1
 				bunker = 1
 			}
+			10101 = {
+				bunker = 2
+
+			}
+			4042 = {
+				bunker = 3
+
+			}
+			7191 = {
+				bunker = 3
+			}
 		}
+		
+		
+		victory_points = {
+			4042 15 
+		}
+		
+		victory_points = {
+			10014 8 
+		}
+		victory_points = {
+			10101 8 
+		}
+		
 	}
 	provinces={
 		4042 7191 10014 10101 11991

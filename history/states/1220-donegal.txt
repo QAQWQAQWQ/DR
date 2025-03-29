@@ -1,0 +1,27 @@
+
+state=
+{
+	id=1220
+	name="STATE_1220"
+	manpower = 66710
+	
+	state_category = pastoral
+	resources={
+		grain=2
+	}
+	history= {
+		owner = IRL
+		
+		buildings = {
+			infrastructure = 1
+			
+		}
+		add_core_of = IRL
+	}
+
+	provinces=
+	{
+337 	}
+
+	local_supplies=13.0 
+}

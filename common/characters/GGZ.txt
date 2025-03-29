@@ -1,0 +1,16 @@
+characters={
+	GGZ_Stirling_Fessenden={
+		name=GGZ_Stirling_Fessenden
+		portraits={
+			civilian={
+				large="gfx/leaders/GGZ/Portrait_Stirling_Fessenden.tga"
+			}
+		}
+		country_leader={
+			ideology=civilian-dictatorship
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+}

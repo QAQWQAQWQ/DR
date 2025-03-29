@@ -26,7 +26,7 @@ set_technology = {
 	early_ship_hull_heavy = 1
 }
 
-recruit_character = BNA_Robert_Ray_Hamilton
+recruit_character = BNA_Theodore_Roosevelt
 recruit_character = BNA_Charles_Evans_Hughes
 recruit_character = BNA_Sir_Harry_Edward_Spiller_Cordeauxn_Khoyski
 
@@ -40,7 +40,7 @@ give_guarantee = NIC
 give_guarantee = GUB
 give_guarantee = CAC
 set_politics = {
-	ruling_party = Liberalism
+	ruling_party = Reformism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -52,9 +52,42 @@ Market_economy
 }
 
 set_popularities = {
-	Liberalism = 51
-	Conservatism = 39
-	Reformism = 10
+	Liberalism = 24
+	Conservatism = 48
+	Reformism = 28
 }
-give_military_access = UBS
-give_military_access = BNA
+
+set_autonomy = {
+	target = HAT
+	autonomy_state = autonomy_occupation_zone
+}
+HAT = {
+	set_politics = {
+		ruling_party = Dictatorship
+		last_election = "1918.11.11"
+		election_frequency = 72
+		elections_allowed = no
+	}
+	set_popularities = {
+		Dictatorship = 50
+		Liberalism = 46.5
+		Conservatism = 3.5
+	}
+}
+set_autonomy = {
+	target = DMA
+	autonomy_state = autonomy_occupation_zone
+}
+DMA = {
+	set_politics = {
+		ruling_party = Dictatorship
+		last_election = "1918.11.11"
+		election_frequency = 72
+		elections_allowed = no
+	}
+	set_popularities = {
+		Dictatorship = 50
+    Conservatism = 34.9
+	Liberalism = 15.1
+	}
+}

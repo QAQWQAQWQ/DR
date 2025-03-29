@@ -1,0 +1,32 @@
+
+state=
+{
+	id=134
+	name="STATE_134"
+	manpower = 367100
+	
+	state_category = town
+	resources={
+		grain=2
+	}
+	history= {
+		owner = IRL
+		victory_points = {
+			9303 2 #Galway
+		}
+		
+		buildings = {
+			infrastructure = 3 #was: 6
+			9303 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = IRL
+	}
+
+	provinces=
+	{
+3396 9303 9369 11287	}
+
+	local_supplies=13.0 
+}

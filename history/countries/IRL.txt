@@ -1,4 +1,4 @@
-﻿capital = 113
+﻿capital = 1217
 
 oob = "IRL_1920"
 
@@ -11,10 +11,11 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
+recruit_character = IRL_John_Dillon
+recruit_character = IRL_Ian_Macpherson
 recruit_character = IRL_John_Denton_Pinkstone
 recruit_character = IRL_Eamon_de_Valera
 recruit_character = IRL_Michael_Collins
-recruit_character = IRL_John_Dillon
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -60,12 +61,14 @@ recruit_character = IRL_John_Dillon
 		secondary_school
 			}
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Liberalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 
 set_popularities = {
-    Conservatism = 100
+    Liberalism = 67.8
+	Conservatism = 32.2
+
 }

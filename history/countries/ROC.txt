@@ -12,6 +12,9 @@ set_technology = {
 	fuel_silos = 1
 }
 recruit_character = ROC_HuangXing
+recruit_character = ROC_HuangXing_gen
+recruit_character = ROC_SunWen1
+recruit_character = ROC_SunWen3
 recruit_character = ROC_Song_JiaoRen
 recruit_character = ROC_LiaoZhongKai
 recruit_character = ROC_ChenQiMei
@@ -21,7 +24,11 @@ recruit_character = ROC_SunKe
 recruit_character = ROC_SongQingLing
 recruit_character = ROC_ZhangXiaoHuang
 recruit_character = ROC_TanYouRen
-recruit_character = ROC_ZhangZhiZhong
+recruit_character = ROC_JiangZhongZheng
+recruit_character = ROC_he_yingqin
+recruit_character = ROC_li_liejun
+recruit_character = ROC_zhang_jingjiang
+recruit_character = ROC_wangzhaoming
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -55,8 +62,6 @@ recruit_character = ROC_ZhangZhiZhong
 		
 	}
 	create_faction = ROC_faction
-	add_to_faction = XJC
-	add_to_faction = SCX
 
 set_politics = {
 	ruling_party = Paternalism

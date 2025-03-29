@@ -9,17 +9,24 @@ state={
 	resources={
 		grain=4
 	}
+	resources={
+		steel = 15
+	}
 	history={
 		owner = SHW
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = IUI
+		victory_points = {
+			9417 15
+		}
+		add_core_of = SHW
+		add_core_of = DCK
 		
 	}
 
 	provinces={
-		 13362
+		426 9417 11418 585 3587 11434 
 	}
 
 	local_supplies=0.0 

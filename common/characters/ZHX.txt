@@ -30,6 +30,25 @@ characters={
 			}
 		}
 	}
+	
+	ZHX_ZhangZiZhong={
+		name=ZHX_ZhangZiZhong
+		portraits={
+			army={
+				large="gfx/leaders/ROC/portrait_ZhangZhiZhong.tga"
+				small="gfx/interface/ideas/portrait_ZhangZhiZhong.dds"
+			}
+		}
+		corps_commander = {
+			
+			traits = { trait_reckless career_officer chinese_nationalist }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
 	ZHX_Fen_GuoZhang={
 		name=ZHX_Fen_GuoZhang
 		portraits={
@@ -72,11 +91,11 @@ characters={
 			id=-1
 		}
 	}				
-	ZHX_Fen_YuXiang={
-		name=ZHX_Fen_YuXiang
+	ZHX_Feng_YuXiang={
+		name=ZHX_Feng_YuXiang
 		portraits={
 			army={
-				large="gfx/leaders/ZHX/Portrait_Fen_YuXiang.tga"
+				large="gfx/leaders/SXX/portrait_FengYuXiang.tga"
 			}
 		}
 		corps_commander={
@@ -108,7 +127,7 @@ characters={
 		name=ZHX_SunYue
 		portraits={
 			army={
-				large="gfx/leaders/ZHX/portrait_SunYue.tga"
+				large="gfx/leaders/SXS/portrait_SunYue.tga"
 			}
 		}
 		corps_commander={
@@ -166,23 +185,6 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=3
-		}
-	}
-
-	ZHX_WangZhangYuan={
-		name=ZHX_WangZhangYuan
-		portraits={
-			army={
-				large="gfx/leaders/ZHX/portrait_WangZhangYuan.tga"
-			}
-		}
-		corps_commander={
-			traits={ Lieutenant_general }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=2
 		}
 	}
 	ZHX_Kong_XiangXi={

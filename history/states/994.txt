@@ -10,11 +10,18 @@ state={
 		owner = SUC
 		add_core_of = ROC
 		add_core_of = SUC
-        victory_points = { 10086 3 }
+
 		buildings = {
 			infrastructure = 2
 			grain_farms = 1
 		}
+		victory_points = {
+			11920 10 
+		}
+		victory_points = {
+			7174 10 
+		}
+		
 	}
 	provinces={
 		7174 9944 10086 11920 12059

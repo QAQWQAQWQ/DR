@@ -8,24 +8,13 @@ state={
 		
 		buildings = {
 			infrastructure = 1
-			10548 = {
-				naval_base = 1
-
-			}
-			13359 = {
-				naval_base = 3
-
-			}
-			
-
 		}
-		victory_points = {
-			13359 3 
-		}
+		
 	}
 
 	provinces={
-		917 1411 1799 1872 4678 10548 12508 12571 10644 13359
+		917 1411  1872 4678  12508   
+		    
 }
 manpower=27681
 	buildings_max_level_factor=1.000

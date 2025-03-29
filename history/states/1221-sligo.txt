@@ -1,0 +1,30 @@
+
+state=
+{
+	id=1221
+	name="STATE_1221"
+	manpower = 367100
+	
+	state_category = town
+	resources={
+		grain=2
+	}
+	history= {
+		owner = IRL
+		
+		victory_points = {
+			11371 1 #Sligo
+		}
+		buildings = {
+			infrastructure = 3 #was: 6
+			
+		}
+		add_core_of = IRL
+	}
+
+	provinces=
+	{
+		9321 9255 11371 11238 	}
+
+	local_supplies=13.0 
+}

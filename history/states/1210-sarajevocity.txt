@@ -1,0 +1,28 @@
+state = {
+	id = 1210
+	name = "STATE_1210"
+	manpower = 26241
+	
+	state_category = large_city
+	resources={
+		grain=3
+		
+	}
+	history = {
+		owner = KLD
+		victory_points = { #sarajevo
+			13366 5 
+		}
+		buildings = {
+			infrastructure = 3 #was: 5
+			
+		}
+		add_core_of = KLD
+
+	}
+	provinces = {	
+		13366
+	}
+
+	local_supplies = 0.0 
+}

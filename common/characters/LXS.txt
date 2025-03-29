@@ -7,10 +7,18 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Authoritarian_Conservatism
+			ideology=warlord-dictatorship
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
+		}
+		field_marshal={
+			traits={ }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
 		}
 	}	
 LXS_WangWenHua={
@@ -37,12 +45,12 @@ LXS_WangWenHua={
 			
 		}
 		country_leader={
-			ideology=warlord-dictatorship
+			ideology=warlord-poly
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
 		}
-		corps_commander={
+		field_marshal={
 			traits={ }
 			skill=4
 			attack_skill=3

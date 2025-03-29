@@ -167,6 +167,12 @@ country_event = {
 			annex_country = {
 				target = LMJ
 				transfer_troops = yes
+				
+			}
+			LMJ = {
+				every_unit_leader = {
+					set_nationality = ITC
+				}
 			}
 			load_oob = "ITC_1920"
 			load_oob = "ITC_1920_naval"
@@ -286,9 +292,25 @@ country_event = {
 			}
 		set_variable = {global.aus_halfwin_4italian_war = 1}
 		set_variable = {global.4italian_war = 2}
+		if = {
+			limit = {
+			  check_variable = {
+					global.crook-in-pied = 1
+				}
+			}
+			set_variable = {
+			  global.crook-in-pied = 2
+		  }
+		  ITE = {
+			WWS_Alexander_Feng_Crook={
+			  set_nationality = WWS
+			 }
+			}
+		  }
+		}
 		
 	}
-}
+
 country_event = {
 	id = ITE.7
 	hidden = yes
@@ -320,6 +342,11 @@ country_event = {
 			annex_country = {
 				target = TCY
 				transfer_troops = yes
+			}
+			TCY = {
+				every_unit_leader = {
+					set_nationality = ITC
+				}
 			}
 		}
 		VCT = {
@@ -377,6 +404,8 @@ country_event = {
 			add_to_faction = ITE
 			add_to_faction = RDN
 		}
+		ITE = {clear_variable = in_a_sphere
+		clear_variable = sphere_country}
 		ITC = {
 			declare_war_on = {
 			target = VCT
@@ -408,6 +437,12 @@ RDN = {
 	target = VCT
 	type = annex_everything
 }
+}
+if = {
+	limit = {
+		TSI = {exists = yes}
+	}
+	NPL = {white_peace = TSI}
 }
 159 = {
 	add_core_of = ITC
@@ -538,6 +573,11 @@ country_event = {
 				target = TSI
 				transfer_troops = yes
 			}
+			TSI = {
+				every_unit_leader = {
+					set_nationality = ICD
+				}
+			}
 			transfer_state = 157
 			transfer_state = 117
 			transfer_state = 849
@@ -584,25 +624,41 @@ country_event = {
 			check_variable = {global.ita_tookvin_4italian_war = 1}
 		}
 		OR = {#在or里
-		AOX = {#第一个条件，若在阵营中必须和普开战
-			
-		is_in_faction_with = DOR
-			date > 1920.2.1
-			NOT = {
-				has_war_with = WWS
-				check_variable = { global.german_war = 1 }
-			}
-		}
-		AND = {#第二个条件，打了3年结果摩德纳丢了
+		
+		AND = {#第一个条件，打了3年结果摩德纳丢了
 			date > 1923.7.6
 			OR = {
-				AOX = {controls_province = 3976}
-				VCT = {controls_province = 3976}
+				AOX = {controls_state = 161}
+				VCT = {controls_state = 161}
+		}
+		NOT = {
+			OR = {
+			AOX = {controls_province = 9904}
+			AOX = {controls_province = 6780}
+AOX = {controls_province = 13339}
+			}
 		}
 	}
-	aus_has_win_german_war = yes
-	#第三个条件，若奥赢德意志战争直接deadlock
+	AND = {
+		check_variable = {global.aus_win_german_war = 1}
+		NOT = {
+			OR = {
+			AOX = {controls_province = 9904}
+			AOX = {controls_province = 6780}
+AOX = {controls_province = 13339}
+			}
+		}
+	}
+	#第二个条件，若奥赢德意志战争直接deadlock
+	AND = {
 	check_variable = {global.geraus_alliance_4italian_war = 1}
+	NOT = {
+		OR = {
+		AOX = {controls_province = 9904}
+		AOX = {controls_province = 6780}
+		}
+	}
+	}
 	#第三个条件，德奥结盟
 }
 		check_variable = {global.4italian_war = 1}
@@ -658,6 +714,10 @@ immediate = {
 			HUS = {transfer_state = 850}
 			850 = {add_core_of = HUS}
 		}
+		HUS = {give_military_access = RDN
+		give_military_access = ITC
+		give_military_access = ITE
+		give_military_access = FRW}
 		if = {
 			limit = {
 				OR = {
@@ -713,6 +773,72 @@ immediate = {
 				}
 			}
 		}
+		if = {
+		limit = {
+			
+			AOX = {controls_state = 157}
+	}
+		TSI = {
+			transfer_state = 157
+			
+		}
+		AOX = {set_autonomy = { target = TSI autonomy_state = autonomy_occupation_zone }}
+		TSI = {
+			set_politics = {
+				ruling_party = Dictatorship
+				last_election = "1918.11.11"
+				election_frequency = 72
+				elections_allowed = no
+			}
+			set_popularities = {
+				Dictatorship = 100
+			}
+			
+		}
+	}
+	if = {
+		limit = {AOX = {controls_state = 117}}
+		TSI = {
+			transfer_state = 117
+		}
+		AOX = {set_autonomy = { target = TSI autonomy_state = autonomy_occupation_zone }}
+		TSI = {
+			set_politics = {
+				ruling_party = Dictatorship
+				last_election = "1918.11.11"
+				election_frequency = 72
+				elections_allowed = no
+			}
+			set_popularities = {
+				Dictatorship = 100
+			}
+			
+		}
+	}
+	if = {
+		limit = {AOX = {controls_state = 849}}
+		TSI = {
+			transfer_state = 849
+		}
+	}
+	if = {
+		limit = {AOX = {controls_state = 1049}}
+		TSI = {
+			transfer_state = 1049
+		}
+	}
+	if = {
+		limit = {AOX = {controls_state = 156}}
+		TSI = {
+			transfer_state = 156
+		}
+	}
+	if = {
+		limit = {AOX = {controls_state = 759}}
+		TSI = {
+			transfer_state = 759
+		}
+	}
 		AOX = {white_peace = ITC}
 		AOX = {white_peace = ITE}
 		AOX = {white_peace = RDN}
@@ -725,6 +851,21 @@ immediate = {
 		NPL = {add_to_faction = RDN}
 		set_variable = {global.deadlock_4italian_war = 1}
 		set_variable = {global.4italian_war = 2}
+		if = {
+			limit = {
+			  check_variable = {
+					global.crook-in-pied = 1
+				}
+			}
+			set_variable = {
+			  global.crook-in-pied = 2
+		  }
+		  ITE = {
+			WWS_Alexander_Feng_Crook={
+			  set_nationality = WWS
+			 }
+			}
+		  }
 		
 		}
 		
@@ -767,22 +908,57 @@ immediate = {
 	desc = ITE.14.d
 	fire_only_once = yes
 	is_triggered_only = yes
- immediate = {
-	news_event = ITANews.10
-	}
 	option = {
 		name = ITE.14.a
 		if = {
 			limit = {
-				OR = {
-				ITE = {controls_province = 3780}
-				ITC = {controls_province = 3780}
-				RDN = {controls_province = 3780}
-				FRW = {controls_province = 3780}
-			}}
-			HUS = {transfer_state = 159}
-			159 = {add_core_of = HUS}
-		}
+				NOT = {VCT = {controls_province = 3780}	}
+			NOT = {VCT = {controls_province = 603}	}
+			NOT = {VCT = {controls_province = 11584}	}
+			NOT = {AOX = {controls_province = 3780}	}
+			NOT = {AOX = {controls_province = 603}	}
+			NOT = {AOX = {controls_province = 11584}	}
+			check_variable = {global.4italian_war = 1}
+			}
+			news_event = ITANews.10
+			if = {
+				limit = {
+					OR = {
+						ITE = {controls_province = 13342}
+						ITC = {controls_province = 13342}
+						RDN = {controls_province = 13342}
+						FRW = {controls_province = 13342}
+				}}
+				HUS = {transfer_state = 161}
+				161 = {add_core_of = HUS}
+			}
+			if = {
+				limit = {
+					OR = {
+					ITE = {controls_province = 3780}
+					ITC = {controls_province = 3780}
+					RDN = {controls_province = 3780}
+					FRW = {controls_province = 3780}
+				}}
+				HUS = {transfer_state = 159}
+				159 = {add_core_of = HUS}
+			}
+			
+			if = {
+				limit = {VCT = {exists = yes}}
+				VCT = {
+					VCT_Erzherzog_Peter_Ferdinand= {
+						set_nationality = AOX
+					}
+					retire_character = VCT_Archduke_Karl
+				}
+				AOX = {recruit_character = AOX_Charles_I}
+				VCT = {
+					every_unit_leader = {
+						set_nationality = HUS
+					}
+				}
+			}
 		if = {
 			limit = {
 				OR = {
@@ -793,18 +969,6 @@ immediate = {
 			}}
 			HUS = {transfer_state = 287}
 			287 = {add_core_of = HUS}
-		}
-		
-		if = {
-			limit = {
-				OR = {
-					ITE = {controls_province = 13342}
-					ITC = {controls_province = 13342}
-					RDN = {controls_province = 13342}
-					FRW = {controls_province = 13342}
-			}}
-			HUS = {transfer_state = 161}
-			161 = {add_core_of = HUS}
 		}
 		if = {
 			limit = {
@@ -857,7 +1021,10 @@ immediate = {
 			HUS = {transfer_state = 736}
 			736 = {add_core_of = HUS}
 		}
-		
+		HUS = {give_military_access = RDN
+		give_military_access = ITC
+		give_military_access = ITE
+		give_military_access = FRW}
 		
 		if = {
 			limit = {
@@ -896,9 +1063,48 @@ immediate = {
 		NPL = {add_to_faction = RDN}
 		set_variable = {global.ita_win_4italian_war = 1}
 		set_variable = {global.4italian_war = 2}
+		AOX = {give_military_access = RDN
+		give_military_access = ITC
+		give_military_access = ITE}
+		if = {
+			limit = {
+			  check_variable = {
+					global.crook-in-pied = 1
+				}
+			}
+			set_variable = {
+			  global.crook-in-pied = 2
+		  }
+		  ITE = {
+			WWS_Alexander_Feng_Crook={
+			  set_nationality = WWS
+			 }
+			}
+		  }
+		if = {
+			limit = {ITC = {exists = no}}
+			AOX = {
+				every_owned_state = {
+					limit = {
+                        is_core_of = ITC
+                    }
+                    transfer_state_to = ITC
+                    }
+				}
+				every_owned_state = {
+					limit = {
+                        is_core_of = ICD
+                    }
+                    transfer_state_to = ICD
+                    }
+				}
+			}
 		}
+		}
+	
 		
-	}
+	
+
 	country_event = {
 		id = ITE.140
 		hidden = yes
@@ -913,12 +1119,31 @@ immediate = {
 	
 		option = {
 			name = ITE.140.a
+			HUS = {transfer_state = 161}
+			161 = {add_core_of = HUS}
+			HUS = {give_military_access = RDN
+		give_military_access = ITC
+		give_military_access = ITE
+		give_military_access = FRW}
+			if = {
+				limit = {VCT = {exists = yes}}
+				VCT = {
+					VCT_Erzherzog_Peter_Ferdinand= {
+						set_nationality = AOX
+					}
+					retire_character = VCT_Archduke_Karl
+				}
+				AOX = {recruit_character = AOX_Charles_I}
+				VCT = {
+					every_unit_leader = {
+						set_nationality = HUS
+					}
+				}
+			}
 			HUS = {transfer_state = 159}
 			159 = {add_core_of = HUS}
 			HUS = {transfer_state = 287}
 			287 = {add_core_of = HUS}
-			HUS = {transfer_state = 161}
-			161 = {add_core_of = HUS}
 			HUS = {transfer_state = 160}
 			160 = {add_core_of = HUS}
 			HUS = {transfer_state = 850}
@@ -929,6 +1154,10 @@ immediate = {
 			736 = {add_core_of = HUS}
 			FUM = {transfer_state = 917}
 			FUM = {leave_faction = yes}
+			HUS = {give_military_access = RDN
+		give_military_access = ITC
+		give_military_access = ITE
+		give_military_access = FRW}
 			HUS = {set_autonomy = {
 				target = FUM
 				autonomy_state = autonomy_dominion
@@ -958,6 +1187,24 @@ immediate = {
 		NPL = {add_to_faction = RDN}
 		set_variable = {global.ita_tookwien_4italian_war = 1}
 		set_variable = {global.4italian_war = 2}
+		AOX = {give_military_access = RDN
+		give_military_access = ITC
+		give_military_access = ITE}
+		if = {
+			limit = {
+			  check_variable = {
+					global.crook-in-pied = 1
+				}
+			}
+			set_variable = {
+			  global.crook-in-pied = 2
+		  }
+		  ITE = {
+			WWS_Alexander_Feng_Crook={
+			  set_nationality = WWS
+			 }
+			}
+		  }
 			
 		}
 	}
@@ -993,14 +1240,24 @@ immediate = {
 					}	
 					}
 					
-						recruit_character = ITC_Garibaldi_II
+
 						annex_country = {
 							target = TSI
 							transfer_troops = yes
 						}
+						TSI = {
+							every_unit_leader = {
+								set_nationality = ITC
+							}
+						}
 						annex_country = {
 							target = ICD
 							transfer_troops = yes
+						}
+						ICD = {
+							every_unit_leader = {
+								set_nationality = ITC
+							}
 						}
 						transfer_state = 157
 						transfer_state = 117
@@ -1141,6 +1398,21 @@ immediate = {
 			}
 			set_variable = {global.aus_win_4italian_war = 1}
 			set_variable = {global.4italian_war = 2}
+			if = {
+				limit = {
+				  check_variable = {
+						global.crook-in-pied = 1
+					}
+				}
+				set_variable = {
+				  global.crook-in-pied = 2
+			  }
+			  ITE = {
+				WWS_Alexander_Feng_Crook={
+				  set_nationality = WWS
+				 }
+				}
+			  }
 			
 		}
 	}
@@ -1188,11 +1460,9 @@ immediate = {
 		fire_only_once = yes
 		trigger = {
 			check_variable = {global.4italian_war = 1}
-			OR = {
-				ITE = {controls_state = 852}
-				ITC = {controls_state = 852}
-				RDN = {controls_state = 852}
-				FRW = {controls_state = 852}
+			NOT = {
+				AOX = {controls_state = 852}
+				HUN = {controls_state = 852}
 			}
 		}
 			immediate = {

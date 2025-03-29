@@ -1,6 +1,6 @@
 state={
 	id=985
-	name="东川"
+	name="STATE_985"
 	resources={
 		steel=14.000
 		grain=16
@@ -8,6 +8,23 @@ state={
 	history={
 		owner = SCX
 		add_core_of = SCX
+		
+
+		victory_points = {
+			6999 20 
+		}
+		victory_points = {
+			10822 8 
+		}
+		victory_points = {
+			1893 8 
+		}
+		victory_points = {
+			7948 8 
+		}
+		victory_points = {
+			10144 8 
+		}
 		buildings = {
 			infrastructure = 4
 			arms_factory = 2
@@ -17,7 +34,7 @@ state={
 	}
 
 	provinces={
-		1893 2030 4041 7948 10144 10304 10822 11865
+		1893 2030 4041 7948 10144 10304 10822 11865 6999 4431 4141
 	}
 	manpower=12963300
 	buildings_max_level_factor=1.000

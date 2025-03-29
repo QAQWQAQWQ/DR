@@ -2,20 +2,26 @@ state={
 	id=283
 	name="STATE_283"
 	resources={
-		grain=6
+		grain=3
 	}
 	history={
 		owner = GSL
 		add_core_of = GSL
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			industrial_complex = 1
+		}
+		victory_points = {
+			531 8 
+		}
+		victory_points = {
+			7911 15 
 		}
 	}
 
 
 	provinces={
-		531 556 1933 4313 7397 7911 12797 12882
+		531 1933 7911
 	}
 	manpower=1803600
 	buildings_max_level_factor=1.000

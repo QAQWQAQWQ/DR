@@ -1,0 +1,35 @@
+capital = 312
+#首都地块states(带#的均为注释，无效果，若想要效果，就删除#)
+
+
+#军队数据，若暂时没有，可以在oob前面加上#注释掉 
+
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+}
+#开始时的科技
+set_stability = 0.7
+#设置稳定度，例如70%稳定度，则填入0.7
+set_war_support = 0.7
+#设置战争支持度
+
+recruit_character = HOR_Tiburcio_Carias_Andino
+
+
+set_politics = {
+	ruling_party = Conservatism
+	last_election = 1919.1.1
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	Dictatorship = 31
+	Conservatism = 42
+	Liberalism = 27
+	#设置意识形态支持度，总数不超过100，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
+}
+
+add_ideas = {
+}
+#添加民族精神（在common\ideas\你的国家tag_country.txt）

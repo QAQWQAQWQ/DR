@@ -1,0 +1,25 @@
+state={
+	id=1226
+	name="STATE_1226"
+	manpower = 1180000
+	state_category = large_city
+	
+	history={
+		owner = GGZ
+		add_core_of = ROC
+		victory_points = {
+			13383 30
+		}
+		buildings = {
+			infrastructure = 4 
+			industrial_complex = 4
+			
+			
+		}
+	}
+	provinces={
+		13383
+	}
+
+	local_supplies=0.0 
+}

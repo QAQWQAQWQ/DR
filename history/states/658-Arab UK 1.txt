@@ -14,19 +14,19 @@ state={
 		owner = MSS
 		add_core_of = MSS
 		victory_points = {
-			7960 1 
+			13444 7
 		}
 		buildings = {
 			infrastructure = 1
-			7960 = {
-				naval_base = 3
+			13444= {
+				naval_base = 1
 			}
 		}
 
 	}
 
 	provinces={
-		2048 7960 8108 
+		2048 7960 8108 13444
 	}
 
 	local_supplies=4.0 

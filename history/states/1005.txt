@@ -8,13 +8,47 @@ state={
 		owner = SXX
 		add_core_of = SXX
 		victory_points = {
-			7301 10 
+			7301 15 
+		}
+
+		victory_points = {
+			10733 5 
+		}
+		victory_points = {
+			5007 5 
+		}
+
+		
+		victory_points = {
+			1976 13 
+		}
+		victory_points = {
+			12156 10 
+		}
+		victory_points = {
+			5092 8 
 		}
 		
+		victory_points = {
+			12713 8 
+		}
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 2
+			7301 = {
+				bunker = 3
+			}
+			
+			2006 = {
+				bunker = 2
+			}
+			12713 = {
+				bunker = 2
+			}
+			5092 = {
+				bunker = 2
+			}
 		}
 	}
 

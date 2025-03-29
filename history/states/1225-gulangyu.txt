@@ -1,0 +1,25 @@
+state={
+	id=1225
+	name="STATE_1225"
+	manpower = 20000
+	state_category = large_town
+	
+	history={
+		owner = GGZ
+		add_core_of = FPE
+		add_core_of = ROC
+		victory_points = {
+			13385 2
+		}
+		buildings = {
+			infrastructure = 1
+			
+			
+		}
+	}
+	provinces={
+		13385
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,25 @@
+state={
+	id=1255
+	name="STATE_1255"
+	manpower = 364330
+	
+	state_category = pastoral
+	resources={
+		grain=10
+	}
+	history={
+		owner = JLP
+		add_core_of = JLP
+		buildings = {
+			infrastructure = 1
+		}
+		
+	}
+
+	provinces={
+		4633 4503
+		     
+	}
+
+	local_supplies=0.0 
+}

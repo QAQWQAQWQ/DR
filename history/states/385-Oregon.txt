@@ -9,6 +9,7 @@ state={
 		grain=8
 	}
 	history={
+		add_dynamic_modifier = {modifier=UBS_Free_State}
 		owner = UBS
 		buildings = {
 			infrastructure = 3 #was: 5
@@ -20,7 +21,7 @@ state={
 		}
 		add_core_of = UBS
 		victory_points = {
-			3513 1 
+			3513 15
 		}
 
 	}

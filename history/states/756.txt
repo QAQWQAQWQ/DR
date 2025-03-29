@@ -2,7 +2,7 @@ state={
 	id=756
 	name="安肃"
 	provinces={
-		1778 2028 5076 7971 12596 12820
+		 2028 5076 7971 12596 12820
 	}
 	manpower=4500000
 	buildings_max_level_factor=1.000
@@ -13,7 +13,19 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-
+		victory_points = {
+			7971 5 
+		}
+		victory_points = {
+			12820 5 
+		}
+		victory_points = {
+			12596 8 
+		}
+		victory_points = {
+			2028 8 
+		}
+		
 	}
 
 	local_supplies=0.0 

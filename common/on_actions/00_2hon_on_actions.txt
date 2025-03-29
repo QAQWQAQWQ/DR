@@ -1,0 +1,70 @@
+on_actions = {
+	on_startup= {
+		effect = {
+			set_variable = {
+                global.honcivilwar = 0
+            }
+            set_variable = {
+                global.hon_win_honcivilwar = 0
+            }
+            set_variable = {
+                global.hor_win_honcivilwar = 0
+            }
+		}
+	}
+    on_capitulation = {
+        effect = {
+            #HOR投降
+            if = {
+                limit = {
+                    ROOT = { tag = HOR }
+                    FROM = { tag = HON }
+                    check_variable = { global.honcivilwar = 1 }
+                }
+                hidden_effect = {
+					set_variable = {global.honcivilwar = 2}
+					set_variable = {global.hon_win_honcivilwar = 1}
+					HON = {
+						 annex_country = { target = HOR transfer_troops = yes} 
+					}
+					UBS = {give_guarantee = HON}
+					HON = {
+				set_variable = {
+					in_a_sphere = 1
+				}
+				set_variable = {
+					sphere_country = UBS
+				}
+			}
+        }
+	}
+	#HON投降
+	if = {
+		limit = {
+			ROOT = { tag = HON }
+			FROM = { tag = HOR }
+			check_variable = { global.honcivilwar = 1 }
+		}
+		hidden_effect = {
+			set_variable = {global.honcivilwar = 2}
+			set_variable = {global.hor_win_honcivilwar = 1}
+			HOR = {
+				 annex_country = { target = HON transfer_troops = yes} 
+				 set_cosmetic_tag = HOR_new
+			}
+			BNA = {give_guarantee = HOR}
+			HOR = {
+						set_variable = {
+							in_a_sphere = 1
+						}
+						set_variable = {
+							sphere_country = ENL
+						}
+					}
+}
+}
+		}
+	}
+
+}
+        

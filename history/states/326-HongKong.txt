@@ -7,16 +7,15 @@ state=
 	history=
 	{
 		owner = ESG
-		add_core_of = CHI
 		add_core_of = ROC
 		victory_points = {
-			10062 15
+			10062 25
 		}
 		buildings = {
 			infrastructure = 3 #was: 5
 			air_base = 1
 			10062 = {
-				naval_base = 6
+				naval_base = 3
 				coastal_bunker = 1
 			}
 		}

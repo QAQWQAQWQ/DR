@@ -7,7 +7,7 @@ state= {
 
 	}
 	
-	state_category = rural
+	state_category = city
 
 	history= {
 		owner = YED
@@ -17,7 +17,12 @@ state= {
 			
 		}
 
-		
+		victory_points = {
+			6895 4
+		}
+		victory_points = {
+			3879 4
+		}
 	}
 	provinces=
 	{

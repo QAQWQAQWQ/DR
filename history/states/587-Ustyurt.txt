@@ -1,0 +1,23 @@
+state={
+	id=587
+	name="STATE_587"
+	resources={
+		grain=5
+	}
+	history={
+		owner = TGA
+		buildings = {
+			infrastructure = 1
+		}
+		
+	}
+
+	provinces={
+		12474 12233 7541 13207 12454 10348
+	}
+	manpower=5133
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=0.0 
+}

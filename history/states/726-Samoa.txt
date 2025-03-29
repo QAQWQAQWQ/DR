@@ -1,23 +1,22 @@
 state={
 	id=726
 	name="STATE_726"
-	manpower=123214
+	manpower=3214
 	state_category = small_island
 
 	history={
+		add_dynamic_modifier = {modifier=UBS_Slave_State}
 		owner = UBS
 		buildings = {
 			infrastructure = 2
-			7290 = {
+			13080 = {
 				naval_base = 1
 			}
 		}
-		victory_points = {
-			7290 1
-		}
+		
 	}
 	provinces={
-		7290 13080 
+		13080 
 	}
 
 	local_supplies=0.0 

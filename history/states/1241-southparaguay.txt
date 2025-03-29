@@ -1,0 +1,35 @@
+
+state={
+	id=1241
+	name="STATE_1241"
+	manpower = 390100
+	
+	state_category = town
+	resources={
+		grain=1
+	}
+	history={
+		owner = BLG
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+		}
+		add_core_of = BLG
+		victory_points = {
+			13400 12
+		}
+		victory_points = {
+			13401 10
+		}
+
+	}
+
+	provinces={
+		2152 2173 2194 13400 13401 13404
+	}
+	
+
+	local_supplies=0.0 
+}

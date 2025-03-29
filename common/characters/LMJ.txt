@@ -12,5 +12,19 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}		
+	}	
+	LMJ_Pope_Pius_XI={
+		name=LMJ_Pope_Pius_XI
+		portraits={
+			civilian={
+				large="gfx/leaders/LMJ/Portrait_PiusXI.tga"
+			}
+		}
+		country_leader={
+			ideology=Absolute_Theocracy
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}			
 	}

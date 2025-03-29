@@ -7,21 +7,18 @@ state={
 	
 	history={
 		owner = PSA
-		add_core_of = CHI
 		add_core_of = ROC
 		victory_points = {
-			4189 1 
+			13387 10
 		}
 		buildings = {
 			infrastructure = 2
-			4189 = {
-				naval_base = 1
-			}
+			
 		}
 	}
 	
 	provinces={
-		4189 
+		4189 13387
 	}
 
 	local_supplies=0.0 

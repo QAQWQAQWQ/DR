@@ -7,10 +7,28 @@ state={
 	history={
 		owner = ROC
 		add_core_of = ROC
+		victory_points = {
+			1018 8
+		}
+		victory_points = {
+			4023 10
+		}
+		victory_points = {
+			10004 5
+		}
+		victory_points = {
+			7192 5
+		}
+		buildings = {
+			1018 = {
+				naval_base = 1
+				coastal_bunker = 1
+			}
+		}
 	}
 
 	provinces={
-		1018 4023 10004
+		1018 4023 10004 11926 7192
 	}
 
 	local_supplies=1.0 

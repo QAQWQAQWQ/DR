@@ -1,10 +1,10 @@
 state={
 	id=1010
-	name="西套"
+	name="STATE_1010"
 	provinces={
-		4783 5031 7727 7803 8055 8102 10770 10899 12750 12776
+		 5031 7803 8055  10770 10899 12750 7511 8127
 	}
-	manpower=1000000
+	manpower= 50000
 	buildings_max_level_factor=1.000
 	state_category = pastoral
 	history={
@@ -12,6 +12,9 @@ state={
 		add_core_of = NXS
 		buildings = {
 			infrastructure = 1
+		}
+		victory_points = {
+			8127 3 
 		}
 	}
 

@@ -14,21 +14,36 @@ state={
 		owner = HNZ
 		add_core_of = HNZ
 		
+		
+		
+		
+
 		victory_points = {
-			9958 10 
+			9958 15 
+		}
+		
+		victory_points = {
+			7656 20
 		}
 		victory_points = {
-			7656 20 
+			4010 4
 		}
+		victory_points = {
+			4066 4
+		}
+		
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 2
 			grain_farms = 3
+			9958 = {
+				bunker = 3
+			}
 		}
 	}
 
 	provinces={
-		4066 7085 7656 9958 9995 10098 10364
+		4066 7085 7656 9958 10098 10364 7129 4010
 	}
 
 	local_supplies=3.0 

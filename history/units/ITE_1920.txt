@@ -1,36 +1,60 @@
 ﻿division_template = {
-	name = "皮埃蒙特步兵师"
-
-
+	name = "Divisione Fanteria"
+	division_names_group = ITAL_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
 	}
-	
 	support = {
-        engineer = { x = 0 y = 0 }
-        artillery = { x = 0 y = 1 }
+		artillery = { x = 0 y = 0 }
+	}
+	template_counter = 202
+}
+division_template = {
+	name = "Divisione Milizia"
+	division_names_group = ITAL_MIL_01
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		militia = { x = 2 y = 2 }
 	}
 }
 division_template = {
-	name = "皮埃蒙特民兵旅"
+	name = "Divisione Autotrasportabile"
+	division_names_group = ITAL_MOT_01
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
 	}
-	support = {
-        engineer = { x = 0 y = 0 }
+}
+division_template = {
+	name = "Divisione Corazzata"
+	division_names_group = ITAL_ARM_01
+	regiments = {
+		super_light_armor = { x = 0 y = 0 }
+		super_light_armor = { x = 0 y = 1 }
+		super_light_armor = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
 	}
-	is_locked = yes
 }
 division_template = {
 	name = "皮埃蒙特骑兵旅" 	# Cavalry Division
@@ -39,32 +63,53 @@ division_template = {
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
 		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
 	}
-	support = {
-        engineer = { x = 0 y = 0 }
-	}
+	
 
 }
 
 units = {
 	division= {	
-		name = "皮埃蒙特骑兵一旅"
+		name = "皮埃蒙特装甲旅"
 		location = 611
-		division_template = "皮埃蒙特骑兵旅"
+		division_template = "Divisione Autotrasportabile"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "皮埃蒙特骑兵一旅"
+		name = "皮埃蒙特装甲旅"
+		location = 611
+		division_template = "Divisione Autotrasportabile"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "皮埃蒙特装甲旅"
+		location = 611
+		division_template = "Divisione Autotrasportabile"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "皮埃蒙特装甲旅"
+		location = 611
+		division_template = "Divisione Autotrasportabile"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "皮埃蒙特骑兵旅"
 		location = 611
 		division_template = "皮埃蒙特骑兵旅"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "皮埃蒙特骑兵一旅"
+		name = "皮埃蒙特骑兵旅"
 		location = 611
 		division_template = "皮埃蒙特骑兵旅"
 		start_experience_factor = 0.5
@@ -73,85 +118,117 @@ units = {
 	division= {	
 		name = "皮埃蒙特步兵一师"
 		location = 611
-		division_template = "皮埃蒙特步兵师"
+		division_template = "Divisione Fanteria"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "皮埃蒙特步兵二师"
 		location = 6788
-		division_template = "皮埃蒙特步兵师"
+		division_template = "Divisione Fanteria"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "皮埃蒙特步兵三师"
 		location = 776
-		division_template = "皮埃蒙特步兵师"
+		division_template = "Divisione Fanteria"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "皮埃蒙特民兵一旅"
+		name = "皮埃蒙特步兵三师"
 		location = 776
-		division_template = "皮埃蒙特民兵旅"
+		division_template = "Divisione Fanteria"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
 	}
 	division= {	
 		name = "皮埃蒙特步兵一师"
 		location = 611
-		division_template = "皮埃蒙特步兵师"
+		division_template = "Divisione Fanteria"
 		start_experience_factor = 1
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "皮埃蒙特步兵二师"
 		location = 6788
-		division_template = "皮埃蒙特步兵师"
+		division_template = "Divisione Fanteria"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "皮埃蒙特步兵三师"
 		location = 776
-		division_template = "皮埃蒙特步兵师"
+		division_template = "Divisione Fanteria"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "皮埃蒙特民兵一旅"
+		name = "皮埃蒙特步兵三师"
 		location = 776
-		division_template = "皮埃蒙特民兵旅"
+		division_template = "Divisione Fanteria"
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.7
 	}
 	division= {	
 		name = "皮埃蒙特步兵一师"
 		location = 611
-		division_template = "皮埃蒙特步兵师"
+		division_template = "Divisione Fanteria"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "皮埃蒙特步兵二师"
 		location = 6788
-		division_template = "皮埃蒙特步兵师"
+		division_template = "Divisione Fanteria"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "皮埃蒙特步兵三师"
 		location = 776
-		division_template = "皮埃蒙特步兵师"
+		division_template = "Divisione Fanteria"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "皮埃蒙特民兵一旅"
+		name = "皮埃蒙特步兵三师"
 		location = 776
-		division_template = "皮埃蒙特民兵旅"
+		division_template = "Divisione Fanteria"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
+	}
+}
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "ITE"
+		}
+		requested_factories = 10
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "ITE" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "ITE" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
 	}
 }

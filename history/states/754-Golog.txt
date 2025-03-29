@@ -2,7 +2,7 @@ state={
 	id=754
 	name="STATE_754"
 	provinces={
-		1882 4536 4888 7270 10490 10817 11448 12815 12732
+		 4536 7270 10490 10817 11448 12815 2099 10750 12846 2053 13146
 	}
 	manpower=400000
 	buildings_max_level_factor=1.000
@@ -10,9 +10,7 @@ state={
 	history={
 		owner = MAQ
 		add_core_of = MAQ
-		victory_points = {
-			12732 5
-		}
+		
 		
 		buildings = {
 			infrastructure = 1
@@ -20,6 +18,13 @@ state={
 			arms_factory = 1
 
 		}
+		victory_points = {
+			11448 5 
+		}
+		victory_points = {
+			2053 5 
+		}
+		
 	}
 
 	local_supplies=0.0 

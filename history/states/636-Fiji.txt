@@ -7,6 +7,7 @@ state={
 	state_category = small_island
 
 	history={
+		add_dynamic_modifier = {modifier=UBS_Slave_State}
 		owner = UBS
 		buildings = {
 			infrastructure = 2
@@ -16,7 +17,7 @@ state={
 		}
 		
 		victory_points = {
-			4286 1 
+			4286 2 
 		}
 	}
 	

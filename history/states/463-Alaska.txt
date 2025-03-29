@@ -3,6 +3,7 @@ state={
 	name="STATE_463"
 
 	history={
+		add_dynamic_modifier = {modifier=UBS_Slave_State}
 		owner = UBS
 		buildings = {
 			infrastructure = 1

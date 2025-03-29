@@ -139,7 +139,6 @@ aus_hun_decisions = {
 					limit = {
 						tag = KOH
 					}
-					set_variable = { global.illyrian_cro_win = 1 }
 					set_variable = {global.illyrian_war_str = 2}
 					if = {
 						limit = {
@@ -273,25 +272,10 @@ aus_hun_decisions = {
 					illyrian_war_end_qwq = yes
 					AOX = {
 						country_event = aushun.3
-						set_autonomy = { target = DMT autonomy_state = autonomy_Crown_Territory }
-					}
-					DMT = {
-						set_politics = {
-							ruling_party = Dictatorship
-							last_election = "1918.11.11"
-							election_frequency = 72
-							elections_allowed = no
-						}
 						
-						set_popularities = {
-							Paternalism = 20
-							Dictatorship = 80
-						}
+					}
 					
-					}
-					KOH = {
-						retire_country_leader = yes
-					}
+					
 				}
 			}
 		}

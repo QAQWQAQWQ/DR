@@ -1,0 +1,44 @@
+state={
+	id=716
+	name="STATE_716"
+	resources={
+		steel=13.000
+	}
+
+	history={
+		owner = FTX
+		add_core_of = FTX
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 2
+			air_base = 2
+			
+
+		}
+		victory_points = {
+			11771 20
+		}
+		
+		
+
+		
+		victory_points = {
+			11808 10 
+		}
+		
+		victory_points = {
+			9835 8 
+		}
+
+	}
+
+	provinces={
+		3913 887 11808 11771 987 9781 892 11764 916 846 6893 6951 9788 11815 3934 9835 6837 11886
+	}
+	manpower=5264620
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=0.0 
+}

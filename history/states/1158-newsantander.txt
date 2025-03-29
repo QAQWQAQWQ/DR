@@ -8,13 +8,15 @@ state={
 		2019 5061 6785 12369
 	}
 	history={
+		add_dynamic_modifier = {modifier=UBS_Slave_State}
 		owner = UBS
 		add_core_of = UBS
+		add_core_of = MEX
 		victory_points = {
-			5061 5
+			5061 25
 		}
 		victory_points = {
-			12369 5
+			12369 25
 		}
 		
 		buildings = {
@@ -41,6 +43,6 @@ state={
 	}
 	manpower=617273
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=large_city
 	local_supplies=0.000
 }

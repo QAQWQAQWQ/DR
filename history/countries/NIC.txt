@@ -1,6 +1,6 @@
 ﻿capital = 317
 
-oob = "NIC_1936"
+oob = "NIC_1920"
 
 # Starting tech
 set_technology = {
@@ -11,6 +11,7 @@ set_technology = {
 }
 
 recruit_character = NIC_Emiliano_Chamorro_Vargas
+recruit_character = NIC_Diego_Manuel_Chamorro
 
 set_country_flag = monroe_doctrine
 set_war_support = 0.1
@@ -26,3 +27,6 @@ set_popularities = {
 	Conservatism = 75.1
 	Liberalism = 24.9
 }
+give_military_access = BNA
+give_military_access = UBS
+give_military_access = ENL

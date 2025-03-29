@@ -2,22 +2,22 @@
 state={
 	id=927
 	name="STATE_927"
-	manpower = 886410
+	manpower = 686410
 
 	state_category = rural
 	resources={
-		grain=10
+		grain=8
 	}
 	history={
 		owner = YDA
 		add_core_of = YDA
 		buildings = {
-			infrastructure = 1 #was: 5
+			infrastructure = 3 #was: 5
 		}
 	}
 
 	provinces={
-		1238 1321 7288 7391 7402 7447 10130 10190 10274 12275
+		1238 1321 7391 7447
 	}
 
 	local_supplies=0.0 

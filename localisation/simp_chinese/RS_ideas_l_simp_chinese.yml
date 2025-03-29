@@ -97,8 +97,8 @@
  SHW_The_Great_Exile:0 "大流放政策"
  SHW_February_Revolution:0 "来自革命的压力"
  SHW_February_Revolution_desc:0 "在布尔什维克和孟什维克分道扬镳后，其组织内的极端激进份子被开除出党，取消派重新回归了杜马当中的议会斗争中去，虽然列宁本人已经流亡海外，但其的党羽依旧在国内组织了无数的布尔什维克小组。"
- UBS_Slavery:0 "种植园农庄"
- UBS_Slavery_desc:0 "全美国大部分的底层劳动力由黑人和少数族裔组成，处于社会的最底层。黑人群体被强制工作于工厂或种植园之中，待遇微薄。"
+ UBS_Slavery:0 "“人民主权”"
+ UBS_Slavery_desc:0 "蓄奴州大部分的底层劳动力由黑奴、“黑鸟奴”、印第安奴隶和亚裔奴工组成，处于社会的最底层。"
  AOX_Part_Habsburgs:0 "哈布斯堡的一份子"
  AOX_Part_Habsburgs_desc:0 "作为哈布斯堡的仆从国，我们无法拥有一支§Y独立§!的军队，同时也不能§R编制§!我们的部队。"
  Part_Habsburgs1:0 "无法§R编制§!部队。"
@@ -180,7 +180,7 @@
  FRW_Labor_spirit:0 "劳动精神"
  FRW_Labor_spirit_desc:0 "。"
  UBS_The_declining_north:0 "萎靡的工业化"
- UBS_Jim_Crow_laws:0 "吉姆·克劳法案"
+ UBS_Jim_Crow_laws:0 "吉姆·克劳"
  NPL_Declining_trend:0 "帝国之殇"
  NPL_Declining_trend_desc:0 "在帝国分崩离析那刻，就已经决定了我们的命运，赤匪霸占了我们的国家，归乡之路似乎遥不可及。"
  NPL_Desert_cavalry:0 "沙漠骑兵"
@@ -390,7 +390,120 @@ MEX_south_scorched:0 "南方尽焦"
 MEX_south_scorched_desc:0 "普韦布拉和伊达尔戈正对着墨西哥第一大港——韦拉克鲁斯。无论是深南被联合果品收购的咖啡、剑麻种植园，还是湾区印着“PANGAS”的黑金钻井，墨西哥之血必须通过铁路才能被贱卖进休斯顿港。自从登陆韦拉克鲁斯后，美军便驱逐了民事官员，军事占领了中墨西哥大部分的铁路。至于乡间，他们则与还乡私军、护宪军和军头联合进行勘乱扫荡。失去萨帕塔后，南方解放军群龙无首，新领袖吉尔达多·马加纳无力团结内部。莫雷洛斯、普韦布拉的农庄早已化为荒地，满目疮痍。尽管南解仍然进行着零星的抵抗，南解内部已经开始讨论是否与温和军头合作，特别是与卡兰萨不和的奥夫雷贡。"
 
 MEX_north_slaved:0 "北方为奴"
-MEX_north_slaved_desc:0 "当美军以北方军合作者的名义在北方枪毙无数本地牧场主、佃农和中农时，农民最记恨的却不是他们，而是迪克西民兵们。100年前，迪克西们涌入了格兰德河北岸，将牧场主和佃农贬为奴隶，建立了格兰德牧场奴隶制。如今，奴隶制被新封建契约制取代。面对日渐萎靡的旱地牧场-庄园经济，格兰德牧场主们盯上了南岸。\n由于维拉劫掠过几次边境，这群迪克西完全有理由组成民兵南下“配合勘乱”。迪克西暴徒们强抢民宅，驱逐本地牧场主，并用一纸契约将佃农贬作农奴。他们甚至无法离开祖地，如此会被当作逃农，被德州的私人侦探、赏金猎人甚至骑警跨国通缉。在1917宪法的保护下，迪克西们行使着世界公民对土地的天然权利。\n一句民谣传遍了北方，从杜兰戈到华雷斯，奇瓦瓦沙漠的农民啊，看向远方的马德雷山脉吧，那是北方军的方向。土匪武装、社会主义武装、维拉的马戏团……无论北方军被冠以什么称号，如今，他已成了北方人唯一的希望。"
+MEX_north_slaved_desc:0 "当美军以北方军合作者的名义在北方枪毙无数本地牧场主、佃农和中农时，农民最记恨的却不是他们，而是迪克西民兵们。100年前，迪克西们涌入了格兰德河北岸，将牧场主和佃农贬为奴隶，建立了格兰德牧场奴隶制。如今，奴隶制被新封建契约制取代。面对日渐萎靡的旱地牧场-庄园经济，格兰德牧场主们盯上了南岸。\n由于维拉劫掠过几次边境，这群迪克西完全有理由组成民兵南下“配合勘乱”。迪克西暴徒们强抢民宅，驱逐本地牧场主，并用一纸契约将佃农贬作农奴。他们甚至无法离开祖地，如此会被当作逃农，被德州的私家侦探、赏金猎人甚至骑警跨国通缉。在1917宪法的保护下，迪克西们行使着世界公民对土地的天然权利。\n一句民谣传遍了北方，从杜兰戈到华雷斯，奇瓦瓦沙漠的农民啊，看向远方的马德雷山脉吧，那是北方军的方向。土匪武装、社会主义武装、维拉的马戏团……无论北方军被冠以什么称号，如今，她已成了北方人唯一的希望。"
 
 MEX_Carranza_the_winner:0 "胜者卡兰萨"
 MEX_Carranza_the_winner_desc:0 "请美军入境勘乱的反美主义者，施行独裁制的立宪主义者，把屁股卖给大资本的反动头子……无论卡兰萨的敌人如何咒骂他，卡兰萨能稳坐墨西哥权力并非奇迹。靠着一手妥协、一手权术，卡兰萨拉起了一支由科阿韦拉本地寡头和民族主义将领组成的护宪军。靠着南北起义的大势，他将军头奥夫雷贡和加尔萨名义上归入自己麾下，招揽了因痛恨农民军而组成的庄园主私兵，请来了入墨勘乱的美军。现在，卡兰萨稳坐墨西哥城，战胜了邪恶的无政府主义、社会主义、军阀主义叛乱。他通过无与伦比的口才、妥协性和权术控制了全墨西哥，而他的军头盟友们也不敢顶撞这位有美国作后盾的总统，是吧……"
+
+UBS_Slave_State:0 "蓄奴州"
+UBS_Slave_State_desc:0 "熟视无睹是最大的罪行。——亨利·克莱\n§R擦亮你的眼睛，这里是山巅之城的浩劫和奇迹§!"
+
+UBS_Free_State:0 "自由州"
+UBS_Free_State_desc:0 "我们的未来不由大庄园主控制！——暴动的圣路易斯群众"
+
+IRL_Furious_Alster:0 "愤怒的阿尔斯特"
+IRL_Furious_Alster_desc:0 "爱尔兰问题困扰了英国数十年。当1914年爱政府法案通过时，虽然首相阿斯奎斯看到了阿尔斯特问题可能产生的严重后果，爱尔兰双方的谈判以僵局不了了之。伦敦方面急于推行法案，9月18日法案生效后，阿尔斯特9郡中有6郡陷入动荡，险些酿成武装冲突。爱尔兰军团迅速下场，缴械了部分明目张胆的阿尔斯特志愿军和爱尔兰志愿军。6年以来，阿尔斯特人的愤怒并未消减。比起爱尔兰，他们更认同自己的祖国不列颠。\n§G此非无关紧要之事，这群匈人要夺走我们宝贵的自治。盯紧他们。§! \n§R阿尔斯特人和新阿尔比恩为一丘之貉，他们不是你的朋友。但为了遏制爱尔兰佬，你可适时利用他们。§!"
+
+add_to_variable_capital_reserves:0 "国库开销: §R+0.01B§!"
+
+add_to_variable_FRW_43:0 "查收资产: §G+0.25B§!"
+
+Left_wing_tendencies:0 "接纳左翼"
+
+SHW_General_Staff:0 "帝国总参谋部" 
+SHW_General_Staff_desc::0 "总参谋部"
+SHW_General_Staff_effect:0 "帝国总参谋部效果获得提升" 
+
+Food_shortages:0 "粮食短缺"
+Food_shortages_desc:0 "我们现在陷入了粮食短缺的情况，在这种情况下，人民会对现在的政府不满，军队也因粮食短缺陷入混乱状态。"
+
+Bankruptcy:0 "国家破产"
+Bankruptcy_desc:0 "国家现在陷入了破产的情况，失业率剧增，大量工人失业，国民的生活水平将严重降低，发行货币暴跌，股市几乎全军覆没。"
+
+FRW_still_attack:0 "霞飞计划"
+FRW_still_defense:0 "萨雷尔计划"
+FRW_Maginot_Line:0 "马奇诺计划"
+FRW_peace:0 "和平同盟"
+FRW_flood_modifier:0 "洪水行动"
+FRW_focus71_modifier:0 "公费教育"
+FRW_focus75_modifier:0 "良好的医疗系统"
+FRW_Provence_Commune:0 "普罗旺斯公社"
+FRW_Brittany_National_autonomy:0 "民族自治"
+FRW_Lorraine_guerrillas:0 "洛林游击队"
+FRW_Lorraine_guerrillas_desc:0 "由巴黎政府组织的反德义军在洛林地区活跃。"
+FRW_Artillery_design:0 "炮兵加成"
+FRW_Anti_militaristic_ideology:0 "反军国主义思想"
+FRW_Defend_Motherland:0 "保卫祖国"
+FRW_armf_modifier:0 "消减军费开支"
+FRW_focus41_modifier:0"南部获得投资"
+FRW_focus42_modifier:0"北部获得投资"
+FRW_focus38_modifier:0"集体化工厂"
+FRW_focus52_modifier:0"市政自治"
+FRW_focus71_modifier:0"公费教育"
+
+FRW_focus98_modifier:0"革命热情"
+
+
+FRW_dynamic_Focus_120:0"罢工热情"
+FRW_dynamic_Focus_125:0"工团神话准则"
+FRW_dynamic_Focus_125_tooltip:0"添加动态修正：§Y工团神话准则§!"
+IDEA_125_0:0"工团神话准则"
+IDEA_125_1:0"工团神话准则"
+IDEA_125_2:0"工团神话准则"
+FRW_dynamic_Focus_132:0"工商私营化"
+
+
+
+FRW_dynamic_Focus_67:0"住房规划"
+
+
+
+
+
+WWS_Young_Officer:0"青年军官体系"
+WWS_Career_officers:0"职业军官团"
+WWS_Flying_Club:0"飞行俱乐部"
+WWS_Ocean_going_navy:0"远洋海军"
+WWS_Inshore_Navy:0"近岸海军"
+WWS_Infantry_tactics:0"陆军战术"
+WWS_Assault_tactics:0"渗透战"
+WWS_Army_command:0"陆军司令部"
+WWS_Navel_command:0"海军司令部"
+WWS_Air_command:0"空军司令部"
+WWS_Industrial_development:0"工业化起步"
+WWS_Unified_currency:0"统一货币"
+
+SHW_FOCUS_Establishment_national_insurance:0"国家保险"
+SHW_FOCUS_Improve_industrial_relations:0"改善劳资关系"
+SHW_dynamic_Focus_8:0"情报局密探"
+SHW_Immigration_policy:0"流放者营地"
+SHW_dynamic_Focus_45:0"农民贷款"
+SHW_dynamic_Focus_19:0"国家神学院"
+
+SHW_Court_struggles_power:0"杜马日趋下降的威望"
+
+JPN_Great_Earthquake:0 "瘟疫蔓延"
+
+
+
+AOX_dynamic_german_13:0"联合军备开发"
+AOX_dynamic_austria_13:0"民族主义民兵失去靠山"
+
+
+NPL_dynamic_focus21:0"广播协会"
+
+
+
+SBY_focus10_dy:0"塞拉利昂劳工"
+SBY_Bloated_bureaucracy:0"臃肿的官僚体系"
+
+
+Se_International_dy:0 "永恒的第二国际"
+Se_International_dy_effect:0 "所有处在§Y第二国际§!阵营的国家："
+
+Introduction_tractors_dy:0 "引进拖拉机"
+Spontaneous_army_dy:0 "自发性军队"
+
+Reduce_unemployment:0 "失业率降低"
+
+ESI_Focus5_dy:0 "村镇医院"

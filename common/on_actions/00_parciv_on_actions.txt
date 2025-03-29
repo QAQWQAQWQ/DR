@@ -1,0 +1,52 @@
+on_actions = {
+	on_startup= {
+		effect = {
+			set_variable = {
+                global.parcivilwar = 0
+            }
+            set_variable = {
+                global.par_win_parcivilwar = 0
+            }
+            set_variable = {
+                global.blg_win_parcivilwar = 0
+            }
+		}
+	}
+    on_capitulation = {
+        effect = {
+            #PAR投降
+            if = {
+                limit = {
+                    ROOT = { tag = PAR }
+                    FROM = { tag = BLG }
+                    check_variable = { global.parcivilwar = 1 }
+                }
+                hidden_effect = {
+					set_variable = {global.parcivilwar = 2}
+					set_variable = {global.blg_win_parcivilwar = 1}
+					BLG = {
+						 annex_country = { target = PAR transfer_troops = yes} 
+					}
+        }
+	}
+	#BLG投降
+	if = {
+		limit = {
+			ROOT = { tag = BLG }
+			FROM = { tag = PAR }
+			check_variable = { global.parcivilwar = 1 }
+		}
+		hidden_effect = {
+			set_variable = {global.parcivilwar = 2}
+			set_variable = {global.par_win_parcivilwar = 1}
+			PAR = {
+				 annex_country = { target = BLG transfer_troops = yes} 
+				 set_cosmetic_tag = PAR_new
+			}
+}
+}
+		}
+	}
+
+}
+        

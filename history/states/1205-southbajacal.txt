@@ -7,8 +7,10 @@ state = {
 		grain=6
 	}
 	history={
+		add_dynamic_modifier = {modifier=UBS_Slave_State}
 		owner = UBS
 		add_core_of = UBS
+		add_core_of = MEX
 		buildings = {
 			infrastructure = 2
 			air_base = 2

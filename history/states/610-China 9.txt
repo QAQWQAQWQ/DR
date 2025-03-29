@@ -4,7 +4,7 @@ state={
 	name="STATE_610" # Jehol
 	manpower = 1975377
 	
-	state_category = pastoral
+	state_category = rural
 	resources={
 		grain=24
 	}
@@ -14,17 +14,17 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
+		
+		
 		victory_points = {
-			972 3 
-		}
-		victory_points = {
-			814 10 
+			11801 15
 		}
 
 	}
 
 	provinces={
-		814 881 972 3814 3881 6837 6898 6937 6988 9768 9873 10331 10499 11801 11886 3955
+		814 881     6937  9768  10331  11801 3955
+		      
 	}
 
 	local_supplies=0.0 

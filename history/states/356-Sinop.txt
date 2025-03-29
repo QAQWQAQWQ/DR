@@ -3,7 +3,7 @@ state={
 	id=356
 	name="STATE_356" # Kastamonu
 	manpower = 860589
-	state_category = rural
+	state_category = town
 	resources={
 		grain=22
 	}
@@ -12,8 +12,12 @@ state={
 		add_core_of = YED
 		add_core_of = TEQ
 		victory_points = {
-			6938 10
+			6938 8
 		}
+		victory_points = {
+			3919 5
+		}
+		
 		buildings = {
 			infrastructure = 2
 			

@@ -1,0 +1,25 @@
+state = {
+
+	id = 1259
+	name = "STATE_1259"
+
+	history = {
+		owner = TGA
+		buildings = {
+			infrastructure = 2 #was: 5
+			industrial_complex = 1
+			air_base = 1
+		}
+	}
+
+	provinces = {
+		10187 1919 12430 1216
+	}
+	
+	manpower = 41000 #Was 6275820 but was divided by 2 due to Bukhara (830) and then got 1M back
+	buildings_max_level_factor = 1.000
+	state_category = city
+
+	local_supplies = 2.0 
+	
+}

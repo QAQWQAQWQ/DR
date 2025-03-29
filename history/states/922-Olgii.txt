@@ -9,13 +9,19 @@ state={
 		add_core_of = AKE
 		buildings = {
 			infrastructure = 1
-
+			
+		}
+		victory_points = {
+			13377 10
+		}
+		victory_points = {
+			13378 1
 		}
 
 	}
 
 	provinces={
-		4751 10539
+		4751 10539 1774 13377 13378
 	}
 	manpower=65000
 	buildings_max_level_factor=1.000

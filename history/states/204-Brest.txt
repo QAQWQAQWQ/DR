@@ -6,15 +6,15 @@ state={
 	
 	state_category = rural
 	resources={
-		grain=14
+		grain=23
 		
 	}
 	history={
 		victory_points = {
-			3350 3
+			3350 5
 		}
 		victory_points = {
-			11313 1
+			11313 3
 		}
 		owner = SHW
 		buildings = {
@@ -25,7 +25,7 @@ state={
 	}
 
 	provinces={
-		304 331 360 386 3350 3759 6373 11313 
+		304 331 360 386 3350 3759 6373 11313 11285 215 3203 3293 3507  6319 9249
 	}
 
 	local_supplies=0.0 

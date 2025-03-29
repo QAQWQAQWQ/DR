@@ -6,6 +6,13 @@ characters={
 				large="gfx/leaders/NPL/Portrait_Napoleon_IV.tga"
 			}
 		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
 		country_leader={
 			ideology=bonaparte-auto-cm
 			traits={  }
@@ -55,7 +62,7 @@ NPL_Maxime_Weygand={
 			small="gfx/interface/ideas/Portrait_Maxime_Weygand.dds"
 		}
 	}
-	corps_commander={
+	field_marshal={
 		traits={ skilled_staffer }
 		skill=2
 		attack_skill=2
@@ -63,6 +70,7 @@ NPL_Maxime_Weygand={
 		planning_skill=2
 		logistics_skill=2
 	}
+	
 }
 NPL_Maurice_Gamelin={
 	name=NPL_Maurice_Gamelin

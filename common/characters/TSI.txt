@@ -32,4 +32,149 @@ characters={
 		#担任陆军将军时的数据
 		
 	}
+	###########################generals
+	TSI_alberto_pollio={
+		advisor={
+			slot = army_chief
+			idea_token = TSI_alberto_pollio
+			ledger  = army 
+			traits  = {
+				army_chief_reform_2 
+			}
+			# cost = 100
+			cost = 20
+			ai_will_do  = {
+				factor  = 10
+			}
+		}
+		name="TSI_alberto_pollio"
+		portraits={
+			army={
+				large="gfx/leaders/TSI/TSI_Alberto_Pollio.png"
+				small="gfx/interface/ideas/TSI/idea_TSI_Alberto_Pollio.png"
+			}
+		}
+		field_marshal={
+			traits={ old_guard career_officer organizer thorough_planner artillery_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+	TSI_armando_diaz={
+		name=TSI_armando_diaz
+		advisor={
+			slot = army_chief
+			idea_token = TSI_armando_diaz
+			ledger  = army 
+			traits  = {
+				army_chief_offensive_3
+			}
+			# cost = 200
+			cost = 150
+			ai_will_do  = {
+				factor  = 2
+			}
+		}
+		portraits={
+			army={
+				large="gfx/leaders/TSI/TSI_Armando_Diaz.png"
+				small="gfx/interface/ideas/TSI/idea_TSI_Armando_Diaz.png"
+			}
+		}
+		corps_commander={
+			traits={ war_hero artillery_officer career_officer brilliant_strategist }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			#legacy_id=55002
+		}
+	}
+	TSI_luca_montuori={
+		name=TSI_luca_montuori
+		advisor={
+			slot = high_command
+			idea_token = TSI_luca_montuori
+			traits  = {
+				army_artillery_2 
+			}
+			cost = 100
+			
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		portraits={
+			army={
+				large="gfx/leaders/TSI/TSI_Luca_Montuori.png"
+				small="gfx/interface/ideas/TSI/idea_TSI_Luca_Montuori.png"
+			}
+		}
+		corps_commander={
+			traits={ desert_fox artillery_officer career_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			
+		}
+	}
+	TSI_giulio_douhet={
+		advisor={
+			slot = high_command
+			idea_token = TSI_giulio_douhet
+			ledger  = air 
+			traits  = {
+				air_strategic_bombing_2
+			}
+			cost = 100
+			
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = TSI_giulio_douhet_theorist
+
+			
+			ledger  = air 
+			traits  = {
+				victory_through_airpower 
+			}
+			cost = 100
+			ai_will_do  = {
+				factor  = 1
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_aircraft_specialist scientist_trait_brilliant_theorist }
+			skills = {
+				specialization_air = 2
+			}
+		}
+		name="TSI_giulio_douhet"
+		portraits={
+			army={
+				large="gfx/leaders/TSI/TSI_Giulio_Douhet.png"
+				small="gfx/interface/ideas/TSI/idea_TSI_Giulio_Douhet.png"
+			}
+			civilian={
+				large="gfx/leaders/scientists/TSI_Giulio_Douhet.png"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious media_personality commando }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
 }

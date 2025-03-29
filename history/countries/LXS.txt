@@ -1,4 +1,4 @@
-﻿capital = 976
+﻿capital = 603
 
 oob = "LXS_1920"
 
@@ -12,8 +12,8 @@ set_technology = {
 	fuel_silos = 1
 }
 recruit_character = LXS_Tangjiyao
-recruit_character = LXS_WangWenHua
 recruit_character = LXS_LiuXiangShi
+recruit_character = LXS_WangWenHua
 
 	set_technology = {
 		interwar_artillery = 1
@@ -49,7 +49,7 @@ recruit_character = LXS_LiuXiangShi
 	}
 
 set_politics = {
-	ruling_party = Dictatorship
+	ruling_party = Paternalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -58,6 +58,6 @@ add_ideas = {
 	Smallholder_economy
 }
 set_popularities = {
-	Dictatorship = 90
-	Paternalism = 10
+	Paternalism = 48
+	Dictatorship = 52
 }

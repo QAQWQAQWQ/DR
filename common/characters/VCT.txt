@@ -21,6 +21,13 @@ characters={
 				large="gfx/leaders/VCT/Portrait_Erzherzog_Peter_Ferdinand.tga"
 			}
 		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
 		country_leader={
 			ideology=authoritarian_conservatism
 			traits={  }
@@ -30,6 +37,27 @@ characters={
 	}
 	VCT_Archduke_Karl={
 		name=VCT_Archduke_Karl
+		portraits={
+			civilian={
+				large="gfx/leaders/AOX/Portrait_Charles_I_News.tga"
+			}
+		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		country_leader={
+			ideology=autocratic-constitutional-monarchy
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	VCT_Archduke_Karl_backup={
+		name=VCT_Archduke_Karl_backup
 		portraits={
 			civilian={
 				large="gfx/leaders/AOX/Portrait_Charles_I_News.tga"
@@ -56,6 +84,156 @@ characters={
 			id=-1
 		}
 	}
-	
-	
+	#####################################generals
+	VCT_alberico_albricci={
+		name=VCT_alberico_albricci
+		advisor={
+			slot = high_command
+			idea_token = VCT_alberico_albricci
+			traits  = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		portraits={
+			army={
+				large="gfx/leaders/VCT/VCT_Alberico_Albricci.png"
+				small="gfx/interface/ideas/VCT/idea_VCT_alberico_albricci.png"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer trickster }
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	VCT_maurizio_ferrante_gonzaga={
+		name=VCT_maurizio_ferrante_gonzaga
+		portraits={
+			army={
+				large="gfx/leaders/VCT/VCT_Maurizio_Ferrante_Gonzaga.png"
+				small="gfx/interface/ideas/VCT/idea_VCT_Maurizio_Ferrante_Gonzaga.png"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless trait_royal war_hero infantry_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			#legacy_id=55006
+		}
+	}
+	VCT_roberto_brusati={
+		name=VCT_roberto_brusati
+		portraits={
+			army={
+				large="gfx/leaders/VCT/VCT_Roberto_Brusati.png"
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist old_guard media_personality }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=3
+		}
+	}
+	VCT_giorgio_emo_capodilista={
+		name=VCT_giorgio_emo_capodilista
+		portraits={
+			army={
+				small="GFX_idea_VCT_generic_land_1"
+			}
+			army={
+				large="gfx/leaders/VCT/VCT_giorgio_capodilista.png"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_leader hill_fighter politically_connected }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+			#legacy_id=55009
+		}
+	}
+	VCT_carlo_caneva={
+		name=VCT_carlo_caneva
+		portraits={
+			army={
+				small="GFX_idea_VCT_generic_land_4"
+			}
+			army={
+				large="gfx/leaders/VCT/VCT_Carlo_Caneva.png"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious old_guard media_personality politically_connected }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+			#legacy_id=55004
+		}
+	}
+	VCT_pietro_frugoni={
+		name=VCT_pietro_frugoni
+		portraits={
+			army={
+				large="gfx/leaders/VCT/VCT_pietro_frugoni.png"
+				small="GFX_idea_VCT_generic_land_1"
+			}
+		}
+		corps_commander={
+			traits = { old_guard } 
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			#legacy_id=55011
+		}
+	}
+	VCT_giuseppe_ettore_vigano={
+		name=VCT_giuseppe_ettore_vigano
+		portraits={
+			army={
+				large="gfx/leaders/VCT/VCT_Giuseppe_Ettore_Vigano.png"
+			}
+		}
+		corps_commander={
+			traits = { old_guard } 
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	VCT_arnaldo_azzi = {
+		name = VCT_arnaldo_azzi
+		portraits = {
+			army = {
+				large = "gfx/leaders/VCT/VCT_arnaldo_azzi.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
 	}

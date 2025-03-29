@@ -22,7 +22,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Ultrareactionism
+			ideology=Neoreactionism
 			#desc = FRW_Pierre_Monatte_desc
 			traits={  } 
 			expire="1965.1.1.1"
@@ -173,7 +173,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=National_Syndicalism
+			ideology=National_Corporatism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -1216,7 +1216,7 @@ characters={
 				factor = 1.000
 			}
 		}
-		corps_commander={
+		field_marshal={
 			traits={ Lieutenant_general offensive_doctrine Liberal_general}
 			skill=3
 			attack_skill=3
@@ -1292,7 +1292,7 @@ characters={
 				factor = 1.000
 			}
 		}
-		corps_commander={
+		field_marshal={
 			traits={ Lieutenant_general Radical_soldiers }
 			skill=3
 			attack_skill=2
@@ -1400,8 +1400,12 @@ FRW_georges_louis_humbert={
 			army={
 				large="gfx/leaders/FRW/Portrait_Georges_Catroux.tga"
 			}
+			civilian={
+				large="gfx/leaders/FRW/Portrait_Georges_Catroux.tga"
+			}
 		}
-		corps_commander={
+		
+		field_marshal={
 			traits={ Lieutenant_general Revolutionary_general }
 			skill=3
 			attack_skill=2

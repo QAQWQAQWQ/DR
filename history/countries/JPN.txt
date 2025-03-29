@@ -16,7 +16,7 @@ set_technology = {
 
 #recruit_character = JPN_Emperor_Meiji
 recruit_character = JPN_Emperor_Taisho
-recruit_character = JPN_Honorable
+recruit_character = JPN_Hara_Takashi
 recruit_character = JPN_Seienji_Konobu
 recruit_character = JPN_Tokugawa_Ieda
 	set_technology = {
@@ -51,29 +51,22 @@ recruit_character = JPN_Tokugawa_Ieda
 		
 		
 	}
-
+	give_guarantee = KON
 set_politics = {
-	ruling_party = Dictatorship
+	ruling_party = Paternalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no	
 }
-#create_faction = Empire_Japan
-##add_to_faction = RTW
-##add_to_faction = KON
-#set_autonomy = { target = KON autonomy_state = autonomy_wtt_imperial_protectorate }
-#KON={
-	#set_popularities = {
-		#Conservatism = 100
-	#}
-#
+create_faction = Empire_Japan
+
 
 set_autonomy = { target = RTW autonomy_state = autonomy_colony }
 
 add_ideas={
 	#JPN_Restoration
 	JPN_estrangement
-
+	JPN_Hara_Takashi_H
     JPN_Taisho_period
     JPN_noninterference
 ##MINISTERS##
@@ -92,7 +85,13 @@ Theocratic_state
 
 }
 set_popularities = {
-	Dictatorship = 100
+	Paternalism = 85
+	Dictatorship = 6
+	Liberalism = 3
+	Conservatism = 3
+	Reformism = 1
+	Moderate_Socialism = 1
+	Nationalism = 1
 }
-give_guarantee = KON
 give_guarantee = PHL
+give_guarantee = GGZ

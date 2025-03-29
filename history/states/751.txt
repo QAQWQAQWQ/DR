@@ -2,8 +2,7 @@ state={
 	id=751
 	name="建昌"
 	provinces={
-		2067 10841 12141
-		1999 10726 7294
+		2067 10726 7294
 	}
 	resources={
 		grain=21
@@ -17,11 +16,10 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
+		
+		
 		victory_points = {
-			12141 3
-		}
-		victory_points = {
-			7294 1
+			7294 5
 		}
 	}
 

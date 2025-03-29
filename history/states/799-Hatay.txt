@@ -2,21 +2,27 @@ state={
 	id=799
 	name="STATE_799"
 	provinces={
-		12029 
+		12029 13449
 	}
 	manpower = 234379
 	
-	state_category = rural
+	state_category = city
 
 	history= {
 		owner = EYJ
 		add_core_of = EYJ
 		
 		victory_points = {
-			12029 1
+			12029 13
+		}
+		victory_points = {
+			13449 11
 		}
 		buildings = {
 			infrastructure = 1
+			13449 = {
+				naval_base = 3
+			}
 		}
 	}
 

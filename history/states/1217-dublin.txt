@@ -1,0 +1,35 @@
+
+state={
+	id=1217
+	name="STATE_1217" 
+	manpower = 135760
+	
+	resources={
+		grain=3
+	}
+	state_category = large_city
+	
+	history={
+		owner = IRL
+		
+		victory_points = {
+			11293 25 #Dublin
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 5
+			air_base = 3
+			11293 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = IRL
+	}
+
+	provinces={
+		11293
+	}
+
+	local_supplies=0.0 
+}

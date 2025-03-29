@@ -1,0 +1,18 @@
+state=
+{
+	id=1252
+	name="STATE_1252"
+	manpower = 40
+	state_category = small_island
+	
+	history=
+	{add_dynamic_modifier = {modifier=UBS_Slave_State}
+		owner = UBS
+		
+	}
+	provinces={
+		 1280
+	}
+
+	local_supplies=0.0 
+}

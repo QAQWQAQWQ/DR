@@ -9,18 +9,19 @@ state={
 		grain=4
 	}
 	history={
-		owner = AFH
+		owner = AFG
+		add_core_of = AFG
 		add_core_of = AFH
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {
-			5064 1 
+			5064 10
 		}
 	}
 
 	provinces={
-		1948 2078 2101 4949 5020 5064 
+		2101 4949 5020 5064 
 	}
 
 	local_supplies=0.0 

@@ -9,25 +9,23 @@ state={
 	resources={
 		grain=2
 	}
-	state_category = rural
+	state_category = city
 
 	history={
 		owner = YED
 		add_core_of = YED
-		victory_points = { 657 3 }
+		victory_points = { 657 10 }
 		victory_points = {
-			11597 1
+			11597 5
 		}
 
 		buildings = {
 			infrastructure = 3
 			air_base = 3
 			657 = {
-				naval_base = 8
+				naval_base = 3
 			}
-			687 = {
-				naval_base = 1
-			}
+			
 			dockyard = 1
 		}
 	}

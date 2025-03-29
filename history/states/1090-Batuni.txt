@@ -1,16 +1,26 @@
 state = {
 	id = 1090
 	name = "STATE_1090"
+	resources = {
+		steel = 6
+	}
 
 	history = {
 		owner = SHW
 		victory_points = {
-			3653 3 
+			3653 5
 		}
+		victory_points = {
+			3714 1
+		}
+		victory_points = {
+			772 5
+		}
+		
 		buildings = {
 			infrastructure = 2
 			3653 = {
-				naval_base = 2
+				naval_base = 7
 				coastal_bunker = 1
 
 			}
@@ -22,7 +32,7 @@ state = {
 	}
 
 	provinces = {
-		654 772 3653 3658 7454 9626
+		654 772 3653 3658 7454 9626 10403 3714 11753 789 3656
 	}
 	manpower = 983138
 	buildings_max_level_factor = 1.000

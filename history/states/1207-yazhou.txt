@@ -1,0 +1,26 @@
+state={
+	id=1207
+	name="STATE_1207"
+	provinces={
+		10841
+	}
+	resources={
+		grain=1
+	}         
+	manpower=30000
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+	history={
+		owner = SCX
+		add_core_of = SCX
+		victory_points = {
+			10841 16 
+		}
+ 		
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	local_supplies=1.0 
+}

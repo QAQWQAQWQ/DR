@@ -11,15 +11,22 @@ state={
 		buildings = {
 			infrastructure = 1
 			12883 = {
-				naval_base = 5
+				naval_base = 4
+
+			}
+			8073 = {
+				naval_base = 1
 
 			}
 		}
 		victory_points = {
-			12883 3
+			12883 6
 		}
 		victory_points = {
-			5037 5
+			5037 8
+		}
+		victory_points = {
+			8073 5
 		}
 	}
 	manpower=500000

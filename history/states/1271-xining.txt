@@ -1,0 +1,29 @@
+state={
+	id=1271
+	name="STATE_1271"
+	resources={
+		grain=3
+	}
+	provinces={
+		12732 4888
+	}
+	manpower=30000
+	buildings_max_level_factor=1.000
+	state_category = rural
+	history={
+		owner = MAQ
+		add_core_of = MAQ
+		victory_points = {
+			12732 10 
+		}
+		
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+	}
+
+	local_supplies=0.0 
+}

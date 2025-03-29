@@ -2,12 +2,20 @@
 state={
 	id=802
 	name="STATE_802"
+	
 	resources={
-		grain=3
+		chromium=5.000
+		aluminium=2.000
+	}
+	resources={
+		grain=5
 	}
 	history={
 		victory_points = {
-			13289 3 
+			13289 5 
+		}
+		victory_points = {
+			9849 3 
 		}
 		owner = ALB
 		buildings = {
@@ -18,11 +26,11 @@ state={
 	}
 
 	provinces={
-		6940 9849 9874 6913 13289
+		6940 9849 9874 6913 13289 867
 	}
-	manpower=616000
+	manpower=816000
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=town
 
 	local_supplies=0.0 
 }

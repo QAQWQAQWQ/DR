@@ -31,7 +31,7 @@ focus_tree = {
 	focus = {
 		id = AUS_ger_1
 		icon = GFX_AUS_ger_1_goal
-		cost = 5.00
+		cost = 1.00
 		ai_will_do = {
 			factor = 10	
 			modifier = {
@@ -83,7 +83,7 @@ focus_tree = {
 	focus = {
 		id = AUS_ger_2
 		icon = GFX_AUS_ger_2_goal
-		cost = 5.00
+		cost = 1.00
 		ai_will_do = {
 			factor = 10	
 		}	
@@ -112,7 +112,7 @@ focus_tree = {
 	focus = {
 		id = AUS_ger_3
 		icon = GFX_AUS_ger_3_goal
-		cost = 5.00
+		cost = 1.00
 		ai_will_do = {
 			factor = 10	
 			modifier = {
@@ -164,7 +164,7 @@ focus_tree = {
 	focus = {
 		id = AUS_ger_4
 		icon = GFX_AUS_ger_4_goal
-		cost = 7.00
+		cost = 4.00
 		prerequisite = {
 			focus = AUS_ger_2
 			focus = AUS_ger_3
@@ -225,7 +225,7 @@ focus_tree = {
 	focus = {
 		id = AUS_ger_8
 		icon = GFX_AUS_ger_8_goal
-		cost = 7.00
+		cost = 4.00
 		prerequisite = {
 			focus = AUS_ger_4
 		}
@@ -266,7 +266,7 @@ focus_tree = {
 	focus = {
 		id = AUS_ger_9
 		icon = GFX_AUS_ger_9_goal
-		cost = 7.00
+		cost = 4.00
 		prerequisite = {
 			focus = AUS_ger_4
 		}
@@ -356,7 +356,7 @@ focus_tree = {
 	focus = {
 		id = AUS_ger_5
 		icon = GFX_AUS_ger_5_goal
-		cost = 7.00
+		cost = 4.00
 		prerequisite = {
 			focus = AUS_ger_2
 			focus = AUS_ger_1
@@ -379,7 +379,7 @@ focus_tree = {
 	focus = {
 		id = AUS_ger_11
 		icon = GFX_AUS_ger_11_goal
-		cost = 5.00
+		cost = 4.00
 		prerequisite = {
 			focus = AUS_ger_5
 		}
@@ -408,7 +408,7 @@ focus_tree = {
 	focus = {
 		id = AUS_ger_12
 		icon = GFX_AUS_ger_12_goal
-		cost = 5.00
+		cost = 4.00
 		prerequisite = {
 			focus = AUS_ger_5
 		}
@@ -428,7 +428,7 @@ focus_tree = {
 	focus = {
 		id = AUS_ger_13
 		icon = GFX_AUS_ger_13_goal
-		cost = 7.00
+		cost = 4.00
 		prerequisite = {
 			focus = AUS_ger_11
 		}
@@ -464,7 +464,7 @@ focus_tree = {
 	focus = {
 		id = AUS_ger_14
 		icon = GFX_AUS_ger_14_goal
-		cost = 5.00
+		cost = 4.00
 		prerequisite = {
 			focus = AUS_ger_13
 		}
@@ -620,12 +620,17 @@ focus_tree = {
 				transfer_state = 952
 				set_cosmetic_tag = NGF
 			}
-			AOX = { puppet = DOR }
-
+			AOX = { set_autonomy = { target = DOR autonomy_state = autonomy_supervised_state } }
+			DOR = {
+				set_popularities = {
+					Dictatorship = 100
+				}
+			}
+			DMW = {leave_faction = yes}
 			set_variable = { global.pre_win_german_war = 1 }
 			
 			# set_variable = { global.aus_win_german_war = 1 }
-			set_variable = { global.german_war = 1 }
+			set_variable = { global.german_war = 2 }
 			set_variable = { global.ger_con_end = 1 }
 		}
 		available = {
@@ -637,7 +642,7 @@ focus_tree = {
 	focus = {
 		id = AUS_ger_6
 		icon = GFX_AUS_ger_6_goal
-		cost = 7.00
+		cost = 4.00
 		prerequisite = {
 			focus = AUS_ger_1
 		}
@@ -655,7 +660,7 @@ focus_tree = {
 	focus = {
 		id = AUS_ger_16
 		icon = GFX_AUS_ger_16_goal
-		cost = 7.00
+		cost = 4.00
 		prerequisite = {
 			focus = AUS_ger_6
 		}
@@ -673,7 +678,7 @@ focus_tree = {
 	focus = {
 		id = AUS_ger_17
 		icon = GFX_AUS_ger_17_goal
-		cost = 7.00
+		cost = 4.00
 		prerequisite = {
 			focus = AUS_ger_16
 		}
@@ -749,7 +754,7 @@ focus_tree = {
 	focus = {
 		id = AUS_ger_18
 		icon = GFX_AUS_ger_18_goal
-		cost = 5.00
+		cost = 4.00
 		prerequisite = {
 			focus = AUS_ger_17
 		}
@@ -786,7 +791,7 @@ focus_tree = {
 	focus = {
 		id = AUS_ger_7
 		icon = GFX_AUS_ger_7_goal
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = AUS_ger_3
 		}
@@ -871,7 +876,7 @@ focus_tree = {
 	focus = {
 		id = AUS_ger_21
 		icon = GFX_AUS_ger_21_goal
-		cost = 7.00
+		cost = 4.00
 		prerequisite = {
 			focus = AUS_ger_8
 		}
@@ -904,7 +909,7 @@ focus_tree = {
 	focus = {
 		id = AUS_ger_22
 		icon = GFX_AUS_ger_22_goal
-		cost = 5.00
+		cost = 4.00
 		prerequisite = {
 			focus = AUS_ger_21
 		}
@@ -971,7 +976,7 @@ focus_tree = {
 	focus = {
 		id = AUS_bir_0
 		icon = GFX_AUS_bir_0
-		cost = 5.00
+		cost = 1.00
 		prerequisite = {
 			focus = AUS_0
 		}
@@ -1000,7 +1005,7 @@ focus_tree = {
 	focus = {
 		id = AUS_bir_1
 		icon = GFX_AUS_bir_1
-		cost = 5.00
+		cost = 1.00
 		prerequisite = {
 			focus = AUS_bir_0
 		}
@@ -1044,7 +1049,7 @@ focus_tree = {
 			aushun_clamp_vars = yes	
 		}
 		available = {
-			not_illyrian_war_tri = yes
+			illyrian_war_not_end = yes
 		}
 		bypass = {
 illyrian_war_end = yes
@@ -1073,7 +1078,7 @@ illyrian_war_end = yes
 	focus = {
 		id = AUS_bir_3
 		icon = GFX_AUS_bir_3
-		cost = 5.00
+		cost = 1.00
 		prerequisite = {
 			focus = AUS_bir_1
 			# focus = AUS_bir_2
@@ -1101,7 +1106,7 @@ illyrian_war_end = yes
 			#	aushun_clamp_vars = yes	
 		}
 		available = {
-			not_illyrian_war_tri = yes
+			illyrian_war_not_end = yes
 		}
 		bypass = {
 			# has_completed_focus = AUS_bir_1
@@ -1110,7 +1115,7 @@ illyrian_war_end = yes
 	focus = {
 		id = AUS_bir_4
 		icon = GFX_AUS_bir_4
-		cost = 5.00
+		cost = 1.00
 		prerequisite = {
 			focus = AUS_bir_3
 		}
@@ -1135,7 +1140,7 @@ illyrian_war_end = yes
 	focus = {
 		id = AUS_bir_5
 		icon = GFX_AUS_bir_5
-		cost = 5.00
+		cost = 1.00
 		prerequisite = {
 			focus = AUS_bir_3
 		}
@@ -1171,7 +1176,7 @@ illyrian_war_end = yes
 	focus = {
 		id = AUS_bir_6
 		icon = GFX_AUS_bir_6
-		cost = 5.00
+		cost = 1.00
 		prerequisite = {
 			focus = AUS_bir_4
 		}
@@ -1371,7 +1376,7 @@ illyrian_war_end = yes
 	focus = {
 		id = AUS_bir_12
 		icon = GFX_AUS_bir_12
-		cost = 5.00
+		cost = 3.00
 		prerequisite = {
 			focus = AUS_bir_1
 		}
@@ -1380,6 +1385,15 @@ illyrian_war_end = yes
 		x = 15
 		y = 3
 		completion_reward = {
+			if = {
+				limit = {
+					KOH = { exists = yes }
+				}
+				KOH = {
+					add_stability = -0.1
+					add_war_support = -0.1
+				}
+			}
 			if = {
 				limit = {
 					HUN = { exists = yes }
@@ -1400,7 +1414,7 @@ illyrian_war_end = yes
 			}
 		}
 		available = {
-			illyrian_war_end = yes
+			check_variable = {global.hungarian_war = 0}
 		}
 		bypass = {
 		}
@@ -1408,7 +1422,7 @@ illyrian_war_end = yes
 	focus = {
 		id = AUS_bir_13 
 		icon = GFX_AUS_bir_13
-		cost = 5.00
+		cost = 1.00
 		prerequisite = {
 			focus = AUS_bir_12
 		}
@@ -1428,17 +1442,7 @@ illyrian_war_end = yes
 			}
 		}
 		available = {
-			KOH = {
-				exists = no
-			}
-			OR = {
-				XYL = {
-					exists = yes
-				}
-				HUN = {
-					exists = yes
-				}
-			}
+			check_variable = {global.hungarian_war = 0}
 		}
 		bypass = {
 			OR ={
@@ -1460,9 +1464,10 @@ illyrian_war_end = yes
 	focus = {
 		id = AUS_bir_14
 		icon = GFX_AUS_bir_14
-		cost = 5.00
+		cost = 1.00
 		prerequisite = {
 			focus = AUS_bir_12
+			focus = AUS_bir_13
 		}
 		mutually_exclusive = {
 		}
@@ -1476,6 +1481,7 @@ illyrian_war_end = yes
 					}
 				}
 				AOX = { declare_war_on = { target = XYL type = annex_everything } }
+				set_variable = {global.hungarian_war = 1}
 				
 				if = {
 					limit = {
@@ -1522,6 +1528,7 @@ illyrian_war_end = yes
 					}
 				}
 				AOX = { declare_war_on = { target = HUN type = annex_everything } }
+				set_variable = {global.hungarian_war = 1}
 				
 				if = {
 					limit = {
@@ -1581,7 +1588,7 @@ illyrian_war_end = yes
 	focus = {
 		id = AUS_bir_15
 		icon = GFX_AUS_bir_15
-		cost = 5.00
+		cost = 1.00
 		prerequisite = {
 			focus = AUS_bir_13
 		}
@@ -1682,11 +1689,22 @@ illyrian_war_end = yes
 					DMT = { exists = yes }
 				}
 				DMT = {
-					
+					transfer_state = 918
+					add_state_core = 918
 					transfer_state = 764
 					add_state_core = 764
-                	
+                	transfer_state = 1018
+					add_state_core = 1018
+					transfer_state = 45
+					add_state_core = 45
 				}
+				KOH = {
+					remove_state_core = 918
+					remove_state_core = 764
+					remove_state_core = 1018
+					remove_state_core = 45
+				}
+				45 = {add_claim_by = KOH}
 			}
 				TRA = {
 					add_ideas = {
@@ -1705,9 +1723,15 @@ illyrian_war_end = yes
 					transfer_state = 1034
 					add_state_core = 1034
 					transfer_state = 1122
+					add_state_core = 1122
 				}
 				KOH = {
+					remove_state_core = 76
+					remove_state_core = 1019
+					remove_state_core = 82
 					remove_state_core = 83
+					remove_state_core = 84
+					remove_state_core = 1034
 					remove_state_core = 1122
 				}
 				AOX = {

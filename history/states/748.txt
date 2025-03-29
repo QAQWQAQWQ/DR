@@ -2,7 +2,7 @@ state={
 	id=748
 	name="黔中"
 	provinces={
-		1010 1474 4141 4325 4431 9939 
+		1010 1474 4325 9939
 	}
 	resources={
 		grain=12
@@ -13,9 +13,11 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
+		
 		victory_points = {
-			1010 3
+			4325 13
 		}
+		
 	}
 	manpower=5123410
 	state_category=pastoral

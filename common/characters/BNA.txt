@@ -40,5 +40,20 @@ characters={
 			expire="1965.1.1.1" 
 			id=-1
 		}
-	}		
+	}
+	BNA_Theodore_Roosevelt={
+		name=BNA_Theodore_Roosevelt
+		portraits={
+			civilian={
+				large="gfx/leaders/BNA/ted.tga"
+			}
+		}
+		country_leader={
+			ideology=new-nationalism
+			desc=BNA_Theodore_Roosevelt_DESC
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}			
 	}

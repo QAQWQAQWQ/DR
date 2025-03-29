@@ -1,0 +1,31 @@
+state=
+{
+	id=1235
+	name="STATE_1235"
+	manpower = 133000
+	
+	state_category = city
+	resources={
+		grain=1
+	}
+	history=
+	{
+		owner = HAT
+		add_core_of = HAT
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			13396 14
+		}
+		
+		set_demilitarized_zone = yes
+
+	}
+	provinces={
+		13391 13396
+	}
+
+	local_supplies=0.0 
+}

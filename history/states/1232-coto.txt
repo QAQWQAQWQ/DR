@@ -1,0 +1,29 @@
+
+state={
+	id=1232
+	name="STATE_1232"
+	manpower = 4674
+	resources={
+		grain=1 # was: 1
+	}
+	
+	state_category = town
+	
+	history={
+		owner = GLB
+		buildings = {
+			infrastructure = 1
+			
+		}
+		add_core_of = GLB
+		
+		
+
+	}
+
+	provinces={
+		13389
+	}
+
+	local_supplies=0.0 
+}

@@ -13,14 +13,13 @@ state={
 	history={
 		owner = YED
 		add_core_of = YED
+		
+		
 		victory_points = {
-			3973 3
+			863 13
 		}
 		victory_points = {
-			3864 3
-		}
-		victory_points = {
-			863 1
+			3973 12
 		}
 		buildings = {
 			infrastructure = 3
@@ -35,7 +34,7 @@ state={
 	}
 	manpower=925000
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=large_town
 
 	local_supplies=0.0 
 }

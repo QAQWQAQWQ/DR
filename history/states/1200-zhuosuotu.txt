@@ -1,0 +1,30 @@
+
+state = {
+	id = 1200
+	name = "STATE_1200"
+	manpower = 93420
+	resources={
+		grain=11
+	}
+	state_category = pastoral
+
+	history = {
+		owner = DUQ
+		add_core_of = DUQ
+        buildings = {
+			infrastructure = 1 
+		}
+		victory_points = {
+			972 3 
+		}
+		victory_points = {
+			6898 3 
+		}
+		
+}
+	provinces = {
+		972 7633 9873 3881 3814 6898 934 6852 9927
+	}
+
+	local_supplies = 0.0 
+}

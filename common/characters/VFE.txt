@@ -1,0 +1,24 @@
+characters={
+	VFE_Alexei_Kuropatkin={
+		name=VFE_Alexei_Kuropatkin
+		portraits={
+		army={
+			large="gfx/leaders/TGA/Portrait_Alexei_Kuropatkin.tga"
+		}
+	}
+	country_leader={
+		ideology=ironfist-colonial-assimilation
+		traits={  }
+		expire="1965.1.1.1"
+		id=-1
+	}
+	field_marshal={
+		traits={  }
+		skill=3
+		attack_skill=2
+		defense_skill=3
+		planning_skill=2
+		logistics_skill=2
+	}
+	}		
+	}

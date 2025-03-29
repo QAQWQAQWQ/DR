@@ -4,6 +4,7 @@ state={
 	state_category = tiny_island
 	manpower=42
 	history={
+		add_dynamic_modifier = {modifier=UBS_Slave_State}
 		owner = UBS
 		buildings = {
 			infrastructure = 2

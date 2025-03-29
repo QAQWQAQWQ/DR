@@ -10,18 +10,35 @@ state={
 	history={
 		owner = CEX
 		add_core_of = CEX
+		
 		victory_points = {
-			1319 10 
+			7446 13
 		}
+		
+		victory_points = {
+			5072 10 
+		}
+		victory_points = {
+			12841 8 
+		}
+		victory_points = {
+			7606 8 
+		}
+		
+		
+		
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
 			industrial_complex = 3
+			7446 = {
+				bunker = 2
+			}
 		}
 	}
 
 	provinces={
-		1319 7446 7606 4192 5072 12841 11972
+		1319 7446 7606 4192 5072 12841
 	}
 	manpower=10994500
 	buildings_max_level_factor=1.000

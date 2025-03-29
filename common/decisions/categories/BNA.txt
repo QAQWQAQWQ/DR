@@ -5,7 +5,8 @@ Hamilton_scandal_category = {
 		original_tag = BNA
 	}
 	visible = {
-		
+		date > 2020.1.4
+			date < 2020.1.6
 	}
 }
 

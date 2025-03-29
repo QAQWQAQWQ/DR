@@ -6,9 +6,13 @@ set_naval_oob = "SHW_1920_naval_mtg"
 # Starting tech
 
 recruit_character = SHW_NicholasII
+recruit_character = SHW_Pavel_Milyukov
+recruit_character = SHW_Alexander_Guchkov
+recruit_character = SHW_Aleksei_Aladin
+recruit_character = SHW_Martov
+recruit_character = SHW_Alexander_Konovalov
 recruit_character = SHW_Kerensky
 recruit_character = SHW_Georgy_Lviv
-recruit_character = SHW_Pavel_Milyukov
 recruit_character = SHW_Kirill_Vladimirovich
 recruit_character = SHW_Kolchak
 recruit_character = SHW_Nikolayevich_Wrangel
@@ -28,10 +32,7 @@ recruit_character = SHW_Yudenich
 recruit_character = SHW_Pyotr_Alexeyevich_Kropotkin
 recruit_character = SHW_Dmitry_Grigoryevich_Shcherbachev
 recruit_character = SHW_Krasnov
-recruit_character = SHW_Martov
 recruit_character = SHW_Tseretori
-recruit_character = SHW_Alexander_Konovalov
-recruit_character = SHW_Alexander_Guchkov
 recruit_character = SHW_Novitsky_Vasiliy_Fedorovich
 recruit_character = SHW_Alexander_Vladimirovich_Razvotsov
 recruit_character = SHW_Dmitry_Pavlovich_Parsky
@@ -343,6 +344,10 @@ create_intelligence_agency = {
 		name = "奥克瑞纳情报局"
 		icon = GFX_intelligence_agency_logo_SHW
 }
+give_guarantee = KON
+give_guarantee = HLP
+give_guarantee = JLP
+give_guarantee = FTX
 set_politics = {
 	ruling_party = Dictatorship
 	last_election = "1918.11.11"
@@ -353,6 +358,8 @@ set_autonomy = {
 	target = GGA
 	autonomy_state = autonomy_general_governorate
 }
+
+
 
 set_autonomy = {
 	target = TGA
@@ -393,7 +400,10 @@ set_autonomy = {
 	autonomy_state = autonomy_personal_union
 }
 
-
+set_autonomy = {
+	target = KEI
+	autonomy_state = autonomy_general_governorate
+}
 
 set_autonomy = {
 	target = HAQ
@@ -413,11 +423,14 @@ country_event = { id = SHW_event.34 days = 1274 }
 country_event = { id = SHW_event.34 days = 1574 }
 set_popularities = {
 	Dictatorship = 50
-	Conservatism = 20
-	Liberalism = 10
-	Reformism = 10
-	Nationalism = 10
+	Neoreactionism = 22
+	Conservatism = 11.5
+	Liberalism = 12.5
+	Reformism = 1
+	Moderate_Socialism = 3
+
 }
+
 set_variable = { SHW_Loyalty = 85 }
 clamp_variable = {
 	var = SHW_Loyalty
@@ -461,7 +474,7 @@ SHW_Vladimir_Gurko_H
 
 }
 give_guarantee = YEL
-give_guarantee = AFH
 give_guarantee = LMN
 give_guarantee = ASI
 give_guarantee = KON
+give_guarantee = GGZ

@@ -1,0 +1,42 @@
+
+state={
+	id=1222
+	name="STATE_1222"
+	resources={
+		grain=5
+	}
+	
+	history={
+		owner = IRL
+		add_dynamic_modifier = {modifier=IRL_Furious_Alster}
+		
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 1
+			dockyard = 2
+			13374 = {
+				naval_base = 4
+			}
+		}
+		victory_points = {
+			13374 20
+		}
+		add_core_of = IRL
+		add_claim_by = ENL
+	}
+	
+	provinces={
+		13373 13374
+	}
+	manpower=308537
+	buildings_max_level_factor=1
+	state_category="city"
+	
+	resources={
+		aluminium=2
+	}
+
+	local_supplies=0.0 
+}

@@ -782,7 +782,7 @@ focus = {
 	focus = {
 		id = FRW_focus36
 		icon = GFX_goal_FRW_focus36
-		cost = 9.00 
+		cost = 5.00 
 		x = 49
 		y = 0
 		available = {
@@ -795,7 +795,7 @@ focus = {
 	focus = {
 		id = FRW_focus37
 		icon = GFX_goal_FRW_focus37
-		cost = 9.00 
+		cost = 5.00 
 		prerequisite = {
 			focus = FRW_focus36
 		}
@@ -818,7 +818,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus40
 		icon = GFX_goal_FRW_focus40
-		cost = 9.00 
+		cost = 5.00 
 		prerequisite = {
 			focus = FRW_focus37
 		}
@@ -837,7 +837,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus38
 		icon = GFX_goal_FRW_focus38
-		cost = 9.00 
+		cost = 5.00 
 		prerequisite = {
 			focus = FRW_focus36
 		}
@@ -855,7 +855,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus39
 		icon = GFX_goal_FRW_focus39
-		cost = 9.00 
+		cost = 5.00 
 		prerequisite = {
 			focus = FRW_focus36
 		}
@@ -884,7 +884,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus41
 		icon = GFX_goal_FRW_focus41
-		cost = 9.00 
+		cost = 5.00 
 		prerequisite = {
 			focus = FRW_focus38
 		}
@@ -922,7 +922,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus43
 		icon = GFX_goal_FRW_focus43
-		cost = 9.00 
+		cost = 5.00 
 		prerequisite = {
 			focus = FRW_focus39
 		}
@@ -935,7 +935,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus44
 		icon = GFX_goal_FRW_focus44
-		cost = 9.00 
+		cost = 5.00 
 		prerequisite = {
 			focus = FRW_focus41
 		}
@@ -959,7 +959,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus42
 		icon = GFX_goal_FRW_focus42
-		cost = 9.00  
+		cost = 5.00  
 		prerequisite = {
 			focus = FRW_focus38
 		}
@@ -997,7 +997,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus45
 		icon = GFX_goal_FRW_focus45
-		cost = 9.00 
+		cost = 5.00 
 		prerequisite = {
 			focus = FRW_focus42
 		}
@@ -1021,7 +1021,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus46
 		icon = GFX_goal_FRW_focus46
-		cost = 9.00 
+		cost = 5.00 
 		prerequisite = {
 			focus = FRW_focus44
 		}
@@ -1045,7 +1045,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus47
 		icon = GFX_goal_FRW_focus47
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			 
 		} 
@@ -1072,7 +1072,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus48
 		icon = GFX_goal_FRW_focus48
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus63
 		}
@@ -1085,7 +1085,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus49
 		icon = GFX_goal_FRW_focus49
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus86
 		}
@@ -1101,7 +1101,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus50
 		icon = GFX_goal_FRW_focus50
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus79
 		}
@@ -1126,7 +1126,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus51
 		icon = GFX_goal_FRW_focus51
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus50
 		}
@@ -1141,7 +1141,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus52
 		icon = GFX_goal_FRW_focus52
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus62
 		}
@@ -1166,7 +1166,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus53
 		icon = GFX_goal_FRW_focus53
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus62
 		}
@@ -1188,7 +1188,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus54
 		icon = GFX_goal_FRW_focus54
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus63
 		}
@@ -1204,7 +1204,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus55
 		icon = GFX_goal_FRW_focus55
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus52
 		}
@@ -1223,7 +1223,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus56
 		icon = GFX_goal_FRW_focus56
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus55
 		}
@@ -1242,7 +1242,7 @@ completion_reward = {
 	focus = { 
 		id = FRW_focus57
 		icon = GFX_goal_FRW_focus57
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus55
 		}
@@ -1261,7 +1261,7 @@ completion_reward = {
 	focus = { 
 		id = FRW_focus58
 		icon = GFX_goal_FRW_focus58
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus56
 		}
@@ -1279,7 +1279,6 @@ completion_reward = {
     completion_reward = {
 		add_trait = {
 			character = FRW_Leon_Blum
-			##ideology = Social_Democracy
 			trait = popular_figurehead2
 		}
     } 
@@ -1287,7 +1286,7 @@ completion_reward = {
 	focus = { 
 		id = FRW_focus59
 		icon = GFX_goal_FRW_focus59
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus47
 		}
@@ -1313,7 +1312,7 @@ completion_reward = {
 	focus = { 
 		id = FRW_focus60
 		icon = GFX_goal_FRW_focus60
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus47
 		}
@@ -1337,7 +1336,7 @@ completion_reward = {
 	focus = { 
 		id = FRW_focus61
 		icon = GFX_goal_FRW_focus61
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus60
 		}
@@ -1364,7 +1363,7 @@ completion_reward = {
 	focus = { 
 		id = FRW_focus62
 		icon = GFX_goal_FRW_focus62
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			
 		}
@@ -1392,7 +1391,7 @@ completion_reward = {
 	focus = { 
 		id = FRW_focus63
 		icon = GFX_goal_FRW_focus63
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			
 		}
@@ -1405,13 +1404,13 @@ completion_reward = {
 		x = 38
 		y = 7
     completion_reward = {
-		set_cosmetic_tag = FRW_republic_country
+		add_stability = 0.03
     }
 	}
 	focus = { 
 		id = FRW_focus64
 		icon = GFX_goal_FRW_focus64
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus63
 		}
@@ -1426,7 +1425,7 @@ completion_reward = {
 	focus = { 
 		id = FRW_focus65
 		icon = GFX_goal_FRW_focus65
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus64
 		}
@@ -1442,7 +1441,7 @@ completion_reward = {
 	focus = { 
 		id = FRW_focus66
 		icon = GFX_goal_FRW_focus66
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus64
 		} 
@@ -1459,7 +1458,7 @@ completion_reward = {
 	focus = { 
 		id = FRW_focus67
 		icon = GFX_goal_FRW_focus67
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus65
 		}
@@ -1510,7 +1509,7 @@ completion_reward = {
     focus = { 
 		id = FRW_focus68
 		icon = GFX_goal_FRW_focus68
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus67
 		}
@@ -1540,7 +1539,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus69
 	icon = GFX_goal_FRW_focus69
-	cost = 8.00
+	cost = 4.00
 	prerequisite = {
 		focus = FRW_focus68
 	}
@@ -1585,7 +1584,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus70
 	icon = GFX_goal_FRW_focus70
-	cost = 8.00
+	cost = 4.00
 	prerequisite = {
 		focus = FRW_focus53
 	}
@@ -1612,7 +1611,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus71
 	icon = GFX_goal_FRW_focus71
-	cost = 8.00
+	cost = 4.00
 	prerequisite = {
 		focus = FRW_focus61
 	}
@@ -1631,7 +1630,7 @@ completion_reward = {
 focus = {  
 	id = FRW_focus72
 	icon = GFX_goal_FRW_focus72
-	cost = 8.00
+	cost = 4.00
 	prerequisite = {
 		focus = FRW_focus59
 	}
@@ -1674,7 +1673,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus73
 	icon = GFX_goal_FRW_focus73
-	cost = 8.00
+	cost = 4.00
 	prerequisite = {
 		focus = FRW_focus59
 	}
@@ -1696,7 +1695,7 @@ completion_reward = {
 focus = {  
 	id = FRW_focus74
 	icon = GFX_goal_FRW_focus74
-	cost = 8.00
+	cost = 4.00
 	prerequisite = {
 		focus = FRW_focus73
 	}
@@ -1716,7 +1715,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus75
 	icon = GFX_goal_FRW_focus75
-	cost = 8.00
+	cost = 4.00
 	prerequisite = {
 		focus = FRW_focus53
 	}
@@ -1739,7 +1738,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus76
 	icon = GFX_goal_FRW_focus76
-	cost = 8.00
+	cost = 4.00
 	prerequisite = {
 		focus = FRW_focus73
 	}
@@ -1759,7 +1758,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus77
 	icon = GFX_goal_FRW_focus77
-	cost = 8.00
+	cost = 4.00
 	prerequisite = {
 		focus = FRW_focus74
 	}
@@ -1787,7 +1786,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus78 
 	icon = GFX_goal_FRW_focus78
-	cost = 8.00
+	cost = 4.00
 	prerequisite = { 
 	}
 	available = {
@@ -1814,7 +1813,7 @@ completion_reward = {
 focus = {  
 	id = FRW_focus79
 	icon = GFX_goal_FRW_focus79
-	cost = 8.00
+	cost = 4.00
 	prerequisite = {
 		focus = FRW_focus78
 	}
@@ -1836,7 +1835,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus80
 	icon = GFX_goal_FRW_focus80
-	cost = 8.00
+	cost = 4.00
 	prerequisite = {
 		focus = FRW_focus79
 	}
@@ -1850,7 +1849,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus81
 	icon = GFX_goal_FRW_focus81
-	cost = 8.00
+	cost = 4.00
 	prerequisite = {
 		focus = FRW_focus79
 	}
@@ -1865,7 +1864,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus82
 	icon = GFX_goal_FRW_focus82
-	cost = 8.00
+	cost = 4.00
 	prerequisite = {
 		focus = FRW_focus79
 	}
@@ -1882,7 +1881,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus83
 	icon = GFX_goal_FRW_focus83
-	cost = 8.00
+	cost = 4.00
 	prerequisite = {
 		focus = FRW_focus82
 	}
@@ -1897,7 +1896,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus84
 	icon = GFX_goal_FRW_focus84
-	cost = 8.00
+	cost = 4.00
 	prerequisite = {
 		focus = FRW_focus80
 	}
@@ -1914,7 +1913,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus85
 	icon = GFX_goal_FRW_focus85
-	cost = 8.00
+	cost = 4.00
 	prerequisite = {
 		focus = FRW_focus51
 	}
@@ -1931,7 +1930,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus86
 	icon = GFX_goal_FRW_focus86
-	cost = 8.00
+	cost = 4.00
 	prerequisite = {
 		focus = FRW_focus84
 	}
@@ -1948,7 +1947,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus87
 	icon = GFX_goal_FRW_focus87
-	cost = 8.00
+	cost = 4.00
 	prerequisite = {
 		focus = FRW_focus84
 	}
@@ -1961,7 +1960,7 @@ completion_reward = {
 focus = {  
 	id = FRW_focus88
 	icon = GFX_goal_FRW_focus88
-	cost = 8.00
+	cost = 4.00
 	prerequisite = {
 		focus = FRW_focus86
 	}
@@ -1982,7 +1981,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus89
 	icon = GFX_goal_FRW_focus89
-	cost = 8.00
+	cost = 4.00
 	prerequisite = {
 		focus = FRW_focus49
 	}
@@ -2046,7 +2045,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus90
 	icon = GFX_goal_FRW_focus90
-	cost = 8.00
+	cost = 4.00
 	prerequisite = {
 		focus = FRW_focus78
 	}
@@ -2065,7 +2064,7 @@ completion_reward = {
 focus = {   
 	id = FRW_focus91
 	icon = GFX_goal_FRW_focus91
-	cost = 8.00
+	cost = 4.00
 	prerequisite = {
 		focus = FRW_focus90
 	}
@@ -2081,7 +2080,7 @@ completion_reward = {
 focus = {  
 	id = FRW_focus92
 	icon = GFX_goal_FRW_focus92
-	cost = 8.00
+	cost = 4.00
 	prerequisite = {
 		focus = FRW_focus90
 	}
@@ -2097,7 +2096,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus93
 	icon = GFX_goal_FRW_focus93
-	cost = 8.00
+	cost = 4.00
 	prerequisite = {
 		focus = FRW_focus90
 	}
@@ -2129,7 +2128,7 @@ completion_reward = {
 focus = {  
 	id = FRW_focus94
 	icon = GFX_goal_FRW_focus94
-	cost = 8.00
+	cost = 4.00
 	prerequisite = {
 		focus = FRW_focus91
 	}
@@ -2151,7 +2150,7 @@ completion_reward = {
 focus = { 
 	id = FRW_focus95
 	icon = GFX_goal_FRW_focus95
-	cost = 8.00
+	cost = 4.00
 	prerequisite = {
 		focus = FRW_focus94
 	}
@@ -2176,7 +2175,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus109
 		icon = GFX_goal_FRW_focus109 
-		cost = 9.00 
+		cost = 5.00 
 		prerequisite = {
 			focus = FRW_focus38
 		}
@@ -2201,7 +2200,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus110
 		icon = GFX_goal_FRW_focus110
-		cost = 9.00 
+		cost = 5.00 
 		prerequisite = {
 			focus = FRW_focus109
 		}
@@ -2221,7 +2220,7 @@ completion_reward = {
 	focus = { 
 		id = FRW_focus111
 		icon = GFX_goal_FRW_focus111
-		cost = 9.00 
+		cost = 5.00 
 		prerequisite = {
 			focus = FRW_focus109
 		}
@@ -2241,7 +2240,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus112 
 		icon = GFX_goal_FRW_focus112
-		cost = 9.00  
+		cost = 5.00  
 		prerequisite = {
 			focus = FRW_focus111
 		}
@@ -2275,7 +2274,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus113
 		icon = GFX_goal_FRW_focus113
-		cost = 9.00 
+		cost = 5.00 
 		prerequisite = {
 			focus = FRW_focus110
 		}
@@ -2300,7 +2299,7 @@ completion_reward = {
 	focus = { 
 		id = FRW_focus114
 		icon = GFX_goal_FRW_focus114
-		cost = 9.00 
+		cost = 5.00 
 		prerequisite = {
 			focus = FRW_focus38
 		}
@@ -2340,7 +2339,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus115
 		icon = GFX_goal_FRW_focus115
-		cost = 9.00 
+		cost = 5.00 
 		prerequisite = {
 			focus = FRW_focus114
 		}
@@ -2357,7 +2356,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus116
 		icon = GFX_goal_FRW_focus116
-		cost = 9.00 
+		cost = 5.00 
 		prerequisite = {
 			focus = FRW_focus114
 		}
@@ -2403,7 +2402,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus117
 		icon = GFX_goal_FRW_focus117
-		cost = 9.00 
+		cost = 5.00 
 		prerequisite = {
 			focus = FRW_focus115
 		}
@@ -2426,7 +2425,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus118
 		icon = GFX_goal_FRW_focus118
-		cost = 9.00 
+		cost = 5.00 
 		prerequisite = {
 			focus = FRW_focus116
 		}
@@ -2450,7 +2449,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus119
 		icon = GFX_goal_FRW_focus119
-		cost = 8.00
+		cost = 4.00
 		allow_branch = {
 			has_country_leader = {
 				character = FRW_Georges_Sorel
@@ -2471,7 +2470,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus120
 		icon = GFX_goal_FRW_focus120 
-		cost = 8.00
+		cost = 4.00
 		prerequisite = { 
 			focus = FRW_focus121
 		}
@@ -2497,7 +2496,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus121
 		icon = GFX_goal_FRW_focus121
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus119
 		}
@@ -2514,7 +2513,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus122
 		icon = GFX_goal_FRW_focus122
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus119
 		}
@@ -2531,7 +2530,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus123
 		icon = GFX_goal_FRW_focus123
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus119
 		}
@@ -2548,7 +2547,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus124
 		icon = GFX_goal_FRW_focus124
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus121
 		}
@@ -2572,7 +2571,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus125
 		icon = GFX_goal_FRW_focus125
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus120
 		}
@@ -2602,7 +2601,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus126
 		icon = GFX_goal_FRW_focus126
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus125
 		}
@@ -2620,7 +2619,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus127
 		icon = GFX_goal_FRW_focus127
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus126
 		}
@@ -2637,7 +2636,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus128
 		icon = GFX_goal_FRW_focus128
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus126
 		}
@@ -2663,7 +2662,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus129
 		icon = GFX_goal_FRW_focus129
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus126
 		}
@@ -2689,7 +2688,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus130
 		icon = GFX_goal_FRW_focus130
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus125
 		} 
@@ -2726,7 +2725,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus131
 		icon = GFX_goal_FRW_focus131
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus130
 		}
@@ -2767,7 +2766,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus132
 		icon = GFX_goal_FRW_focus132
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus125
 		}
@@ -2783,7 +2782,7 @@ completion_reward = {
 	focus = {
 		id = FRW_focus133
 		icon = GFX_goal_FRW_focus133
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus132
 		}
@@ -2917,7 +2916,7 @@ completion_reward = {
 				character = FRW_Pierre_Taittinger
 				promote_leader = yes
 				country_leader = {
-					ideology = Ultrareactionism
+					ideology = Neoreactionism
 					expire = "1965.1.1.1"
 					#traits = { war_industrialist }
 				}
@@ -2925,16 +2924,16 @@ completion_reward = {
 			hidden_effect = {  
 				promote_character = { 
 				character = FRW_Pierre_Taittinger
-				ideology = Ultrareactionism
+				ideology = Neoreactionism
 			}  
 			}
 			set_politics = {
-				ruling_party = Ultrareactionism
-				long_name = FRW_Ultrareactionism_party_new_long
-				name = FRW_Ultrareactionism_party_new
+				ruling_party = Neoreactionism
+				long_name = FRW_Neoreactionism_party_new_long
+				name = FRW_Neoreactionism_party_new
 			}
 			set_popularities = {
-				Ultrareactionism = 100
+				Neoreactionism = 100
 			}
 		}
 	#}

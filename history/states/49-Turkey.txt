@@ -8,20 +8,26 @@ state={
 		steel = 28
 	}
 	
-	state_category = town
+	state_category = city
 
 	history={
 		owner = YED
 		add_core_of = YED
 		add_core_of = TEQ
 		victory_points = {
-			11747 15
+			11747 12
 		}
 		victory_points = {
 			3862 3
 		}
 		victory_points = {
 			804 5 
+		}
+		victory_points = {
+			9844 4 
+		}
+		victory_points = {
+			11839 12
 		}
 		
 		buildings = {
@@ -33,7 +39,7 @@ state={
 	}
 
 	provinces={
-		3907 6808 6908 6925 9806 9844 9901 11747 11784 804 11839 11897 3862 11826 9811 11792 
+		3907 6808 6908 6925 9806 9844 9901 11747 11784 804 11839 11897 3862 11826 9811 11792 13122
 	}
 
 	local_supplies=7.0 

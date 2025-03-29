@@ -3,6 +3,8 @@ Hamilton_scandal_category = {
 	icon =  generic_civil_support
 	visible = {
 		original_tag = BNA
+		date > 2020.1.4
+			date < 2020.1.6
 	}
 	available = {
 		has_political_power = 810

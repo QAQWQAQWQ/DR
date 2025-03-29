@@ -7,13 +7,7 @@ ITE_Vitorioemanuel={
 				large="gfx/leaders/ITE/Portrait_Vitorioemanuel.tga"
 			}
 		}
-		field_marshal = {
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-		}
+		
 		country_leader={
 			ideology=autocratic-constitutional-monarchy
 			traits={ }
@@ -21,4 +15,278 @@ ITE_Vitorioemanuel={
 			id=-1
 		}
 	}		
+	##########################generals
+	ITE_luigi_cadorna={
+		name=ITE_luigi_cadorna
+		advisor={
+			slot = army_chief
+			idea_token = ITE_luigi_cadorna
+			ledger  = army 
+			traits  = {
+				army_chief_maneuver_1
+			}
+			cost = 10
+			ai_will_do  = {
+				factor  = 3
+			}
+		}
+		portraits={
+			army={
+				large="gfx/leaders/ITE/ITE_Luigi_Cadorna.png"
+				small="gfx/interface/ideas/ITE/idea_ITE_Luigi_Cadorna.png"
+			}
+		}
+		field_marshal={
+			traits={ old_guard harsh_leader politically_connected }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+			#legacy_id=55001
+		}
+	}
+	ITE_emanuele_filiberto={
+		name=ITE_emanuele_filiberto
+		portraits={
+			army={
+				large="gfx/leaders/ITE/ITE_Emanuele_Filiberto.png"
+				small="gfx/interface/ideas/ITE/idea_ITE_Emanuele_Filiberto.png"
+			}
+		}
+		corps_commander={
+			traits={ politically_connected trait_royal brilliant_strategist media_personality skilled_staffer }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			#legacy_id=55005		
+		}
+	}
+	ITE_gaetano_giardino={
+		name=ITE_Gaetano_Giardino
+		advisor={
+			slot = army_chief
+			idea_token = ITE_gaetano_ettore_giardino
+			traits  = {
+				army_chief_organizational_2 
+			}
+			cost = 100
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		portraits={
+			army={
+				large="gfx/leaders/ITE/ITE_Gaetano_Giardino.png"
+				small="gfx/interface/ideas/ITE/idea_ITE_Gaetano_Giardino.png"
+			}
+		}
+		corps_commander={
+			traits={ war_hero career_officer trickster infantry_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=4
+		}
+	}
+	ITE_pietro_badoglio={
+		name=ITE_pietro_badoglio
+		portraits={
+			army={
+				large="gfx/leaders/ITE/ITE_pietro_badoglio.png"
+				small="gfx/interface/ideas/ITE/idea_ITE_pietro_badoglio.png"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ITE_pietro_badoglio
+			ledger  = army 
+			traits  = {
+				army_regrouping_2 
+			}
+			cost = 100
+			ai_will_do  = {
+				factor  = 1
+			}
+		}
+		corps_commander={
+			traits={ war_hero hill_fighter career_officer inflexible_strategist }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			#legacy_id=55007
+		}
+	}
+	ITE_alberto_cavaciocchi={
+		name=ITE_alberto_cavaciocchi
+		portraits={
+			army={
+				large="gfx/leaders/ITE/ITE_alberto_cavaciocchi.png"
+				small="gfx/interface/ideas/ITE/idea_ITE_alberto_cavaciocchi.png"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = ITE_alberto_cavaciocchi_theorist
+			ledger  = army 
+			traits  = {
+				military_theorist 
+			}
+			cost = 100
+			ai_will_do  = {
+				factor  = 1
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ITE_alberto_cavaciocchi
+			ledger  = army 
+			traits  = {
+				army_commando_2 
+			}
+			cost = 100
+			ai_will_do  = {
+				factor  = 1
+			}
+		}
+		corps_commander={
+			traits={ harsh_leader brilliant_strategist trait_mountaineer }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			#legacy_id=55012
+		}
+	}
+	ITE_enrico_caviglia={
+		name=ITE_enrico_caviglia
+		portraits={
+			army={
+				large="gfx/leaders/ITE/ITE_Enrico_Caviglia.png"
+			}
+		}
+		corps_commander={
+			traits={ war_hero trait_reckless winter_specialist }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2	
+		}
+	}
+	ITE_mario_nicolis_di_robilant={
+		name=ITE_mario_nicolis_di_robilant
+		portraits={
+			army={
+				large="gfx/leaders/ITE/ITE_Mario_Nicolis_di_Robilant.png"
+				small="gfx/interface/ideas/ITE/idea_ITE_mario_nicolis_di_robilant.png"
+			}
+		}
+		corps_commander={
+			traits={ old_guard trait_cautious politically_connected trait_mountaineer }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=3
+		}
+	}
+	ITE_vittorio_camerana={
+		advisor={
+			slot = army_chief
+			idea_token = ITE_vittorio_camerana
+			ledger  = army 
+			traits  = {
+				army_chief_planning_1 
+			}
+			cost = 10
+			ai_will_do  = {
+				factor  = 2
+			}
+		}
+		name="ITE_vittorio_camerana"
+		portraits={
+			army={
+				large="gfx/leaders/ITE/ITE_Vittorio_Camerana.png"
+				small="gfx/interface/ideas/ITE/idea_ITE_Vittorio_Camerana.png"
+			}
+		}
+		corps_commander={
+			traits={ naval_invader career_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	ITE_giacinto_ferrero={
+		name=ITE_giacinto_ferrero
+		portraits={
+			army={
+				large="gfx/leaders/ITE/ITE_Giacinto_Ferrero.png"
+			}
+		}
+		corps_commander={
+			traits={ commando naval_invader hill_fighter }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=3
+		}
+	}
+	ITE_ugo_cavallero={
+		name=ITE_ugo_cavallero
+		portraits={
+			army={
+				large="gfx/leaders/ITE/ITE_Ugo_Cavallero.png"
+				small="gfx/interface/ideas/ITE/idea_ITE_ugo_cavallero.png"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ITE_ugo_cavallero
+			ledger  = army 
+			traits  = {
+				army_regrouping_3 
+			}
+			cost = 200
+			ai_will_do  = {
+				factor  = 1
+			}
+		}
+		corps_commander={
+			traits = { career_officer } 
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	ITE_luigi_nava={
+		name=ITE_luigi_nava
+		portraits={
+			army={
+				large="gfx/leaders/ITE/ITE_Luigi_Nava.png"
+				small="gfx/interface/ideas/ITE/idea_ITE_luigi_nava.png"
+			}
+		}
+		corps_commander={
+			traits = { old_guard trait_cautious skilled_staffer } 
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	
 	}

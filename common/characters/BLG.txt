@@ -9,7 +9,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Authoritarian_Conservatism
+			ideology=oligarchic-semi-democratic-liberalism
 			traits={ }
 			expire="1965.1.1.1"
 			id=-1
@@ -30,4 +30,19 @@ characters={
 			id=-1
 		}
 	}		
+
+	BLG_Eusebio_Ayala={
+		name=BLG_Eusebio_Ayala
+		portraits={
+			civilian={
+				large="gfx/leaders/BLG/BLG_Eusebio_Ayala.tga"
+			}
+		}
+		country_leader={
+			ideology=oligarchic-semi-democratic-liberalism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	}

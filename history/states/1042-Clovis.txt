@@ -8,11 +8,13 @@ state={
 		1954 4955 5038 10740 10894 12728
 	}
 	history={
+		add_dynamic_modifier = {modifier=UBS_Slave_State}
 		owner = UBS
 		add_core_of = UBS
+		add_core_of = MEX
 		
 		victory_points = {
-			10740 5
+			10740 25
 		}
 		buildings = {
 			infrastructure = 4
@@ -29,6 +31,6 @@ state={
 	}
 	manpower=617273
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=large_city
 	local_supplies=0.000
 }

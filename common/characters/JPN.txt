@@ -8,7 +8,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=autocratic-constitutional-monarchy
+			ideology=semi-democratic-constitutional-monarchy
             desc=JPN_Emperor_Taisho_DESC
 			traits={  }
 			expire="1965.1.1.1"
@@ -76,8 +76,8 @@ characters={
 			}
 		}
 	}
-	JPN_Honorable={
-		name=JPN_Honorable
+	JPN_Hara_Takashi={
+		name=JPN_Hara_Takashi
 		portraits={
 			army={
 				small="GFX_idea_Honorable"
@@ -85,7 +85,7 @@ characters={
 		}
 		advisor={
 			slot=head_of_government
-			idea_token=JPN_Honorable_H
+			idea_token=JPN_Hara_Takashi_H
 			removal_cost = -1
 			allowed={
 				tag=JPN

@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = WWS_Unfinished_business
 		icon = GFX_goal_WWS_Unfinished_business
-		cost = 7.00
+		cost = 1.00
 		x = 22
 		y = 0
 completion_reward = {
@@ -23,7 +23,7 @@ completion_reward = {
 	focus = {
 		id = WWS_Prussian_Songun_Policy
 		icon = GFX_goal_WWS_Prussian_Songun_Policy
-		cost = 7.00
+		cost = 1.00
 		prerequisite = {
 			focus = WWS_Unfinished_business
 		}
@@ -36,7 +36,7 @@ add_ideas = WWS_Songun_Policy
 	focus = {
 		id = WWS_Bismarck_last_policy
 		icon = GFX_goal_WWS_Bismarck_last_policy
-		cost = 7.00
+		cost = 1.00
 		prerequisite = {
 			focus = WWS_Prussian_Songun_Policy
 		}
@@ -53,7 +53,7 @@ add_ideas = WWS_Songun_Policy
 	focus = {
 		id = WWS_Unite_German_nation
 		icon = GFX_goal_WWS_Unite_German_nation
-		cost = 7.00
+		cost = 4.00
 		
 		prerequisite = {
 			focus = WWS_Incite_national_sentiment
@@ -111,7 +111,7 @@ add_ideas = WWS_Songun_Policy
 	focus = {
 		id = WWS_Reinstatement_anti_socialist_laws
 		icon = GFX_goal_WWS_Reinstatement_anti_socialist_laws
-		cost = 7.00
+		cost = 4.00
 		prerequisite = {
 			focus = WWS_Bismarck_last_policy
 		}
@@ -125,7 +125,7 @@ completion_reward={
 	focus = {
 		id = WWS_Incite_national_sentiment
 		icon = GFX_goal_WWS_Incite_national_sentiment
-		cost = 7.00
+		cost = 4.00
 		prerequisite = {
 			focus = WWS_Reinstatement_anti_socialist_laws
 			focus = WWS_Separate_alliances
@@ -163,7 +163,7 @@ completion_reward={
 	focus = {
 		id = WWS_Wooing_German_state
 		icon = GFX_goal_WWS_Wooing_German_state
-		cost = 7.00
+		cost = 4.00
 		prerequisite = {
 			focus = WWS_Reinstatement_anti_socialist_laws
 			focus = WWS_Separate_alliances
@@ -192,7 +192,7 @@ completion_reward={
 	focus = {
 		id = WWS_Bismarck_welfare_system
 		icon = GFX_goal_WWS_Bismarck_welfare_system
-		cost = 7.00
+		cost = 4.00
 		prerequisite = {
 			focus = WWS_Reinstatement_anti_socialist_laws
 			focus = WWS_Separate_alliances
@@ -210,7 +210,7 @@ completion_reward={
 	focus = {
 		id = WWS_Separate_alliances
 		icon = GFX_goal_WWS_Separate_alliances
-		cost = 7.00
+		cost = 4.00
 		prerequisite = {
 			focus = WWS_Bismarck_last_policy
 		}
@@ -238,7 +238,7 @@ completion_reward={
 	focus = {
 		id = WWS_Brotherly_wars
 		icon = GFX_goal_WWS_Brotherly_wars
-		cost = 7.00
+		cost = 1.00
 		prerequisite = {
 			focus = WWS_Unite_German_nation
 		}
@@ -262,7 +262,7 @@ completion_reward={
 	focus = {
 		id = WWS_Master_Great_Germany
 		icon = GFX_goal_WWS_Master_Great_Germany
-		cost = 7.00
+		cost = 1.00
 		prerequisite = {
 			focus = WWS_Prussian_Songun_Policy
 		}
@@ -279,7 +279,7 @@ completion_reward={
 	focus = {
 		id = WWS_Tariff_reductions
 		icon = GFX_goal_WWS_Tariff_reductions
-		cost = 7.00
+		cost = 4.00
 		prerequisite = {
 			focus = WWS_Master_Great_Germany
 		}
@@ -311,7 +311,7 @@ completion_reward={
 	focus = {
 		id = WWS_Brotherhood
 		icon = GFX_goal_WWS_Brotherhood
-		cost = 7.00
+		cost = 4.00
 		prerequisite = {
 			focus = WWS_Master_Great_Germany
 		}
@@ -328,7 +328,7 @@ completion_reward={
 	focus = {
 		id = WWS_Confederation_speak
 		icon = GFX_goal_WWS_Confederation_speak
-		cost = 7.00
+		cost = 4.00
 		prerequisite = {
 			focus = WWS_Tariff_reductions
 			focus = WWS_Brotherhood
@@ -342,7 +342,7 @@ completion_reward={
 	focus = {
 		id = WWS_Secretly_wooing_state
 		icon = GFX_goal_WWS_Secretly_wooing_state
-		cost = 7.00
+		cost = 4.00
 		prerequisite = {
 			focus = WWS_Tariff_reductions
 			focus = WWS_Brotherhood
@@ -374,7 +374,7 @@ completion_reward={
 	focus = {
 		id = WWS_Parliament_Frankfurt
 		icon = GFX_goal_WWS_Parliament_Frankfurt
-		cost = 7.00
+		cost = 4.00
 		prerequisite = {
 			focus = WWS_Tariff_reductions
 			focus = WWS_Brotherhood
@@ -409,7 +409,7 @@ completion_reward={
 	focus = {
 		id = WWS_future_Federation
 		icon = GFX_goal_WWS_future_Federation
-		cost = 7.00
+		cost = 4.00
 		prerequisite = {
 			focus = WWS_Parliament_Frankfurt
 		}
@@ -461,7 +461,7 @@ completion_reward={
 	focus = {
 		id = WWS_Greater_German_Confederation
 		icon = GFX_goal_WWS_Greater_German_Confederation
-		cost = 7.00
+		cost = 1.00
 		prerequisite = {
 			focus = WWS_future_Federation
 		}
@@ -482,7 +482,7 @@ completion_reward={
 	focus = {
 		id = WWS_Militaristic_cult
 		icon = GFX_goal_WWS_Militaristic_cult
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Prussian_Songun_Policy
 		}
@@ -495,7 +495,7 @@ completion_reward={
 	focus = {
 		id = WWS_Delay_military_service
 		icon = GFX_goal_WWS_Delay_military_service
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Militaristic_cult
 		}
@@ -511,7 +511,7 @@ completion_reward={
 	focus = {
 		id = WWS_Juncker_first
 		icon = GFX_goal_WWS_Juncker_first
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Militaristic_cult
 		}
@@ -526,7 +526,7 @@ completion_reward={
 	focus = {
 		id = WWS_Eagle_the_air
 		icon = GFX_goal_WWS_Eagle_the_air
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Juncker_first
 		}
@@ -543,7 +543,7 @@ completion_reward={
 	focus = {
 		id = WWS_ship_hits_wave
 		icon = GFX_goal_WWS_ship_hits_wave
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Juncker_first
 		}
@@ -559,7 +559,7 @@ completion_reward={
 	focus = {
 		id = WWS_Army_glory
 		icon = GFX_goal_WWS_Army_glory
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Juncker_first
 		}
@@ -576,7 +576,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs1
 		icon = GFX_goal_WWS_Foucs1
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 		}
 		
@@ -592,7 +592,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs2
 		icon = GFX_goal_WWS_Foucs2
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Foucs1
 		}
@@ -612,7 +612,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs3
 		icon = GFX_goal_WWS_Foucs3
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Foucs1
 		}
@@ -632,7 +632,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs4
 		icon = GFX_goal_WWS_Foucs4
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Foucs1
 		}
@@ -652,7 +652,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs5
 		icon = GFX_goal_WWS_Foucs5
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Foucs1
 		}
@@ -671,7 +671,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs6
 		icon = GFX_goal_WWS_Foucs6
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Foucs1
 		}
@@ -690,7 +690,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs7
 		icon = GFX_goal_WWS_Foucs7
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Foucs3
 		}
@@ -709,7 +709,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs8
 		icon = GFX_goal_WWS_Foucs8
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Foucs3
 		}
@@ -728,7 +728,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs9
 		icon = GFX_goal_WWS_Foucs9
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Foucs2
 		}
@@ -747,7 +747,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs10
 		icon = GFX_goal_WWS_Foucs10
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Foucs4
 		}
@@ -767,7 +767,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs11
 		icon = GFX_goal_WWS_Foucs11
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Foucs5
 		}
@@ -795,7 +795,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs12
 		icon = GFX_goal_WWS_Foucs12
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Foucs9
 		}
@@ -814,7 +814,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs13
 		icon = GFX_goal_WWS_Foucs13
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Foucs9
 		}
@@ -834,7 +834,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs14
 		icon = GFX_goal_WWS_Foucs14
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Foucs10
 		}
@@ -854,7 +854,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs15
 		icon = GFX_goal_WWS_Foucs15
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Foucs10
 		}
@@ -874,7 +874,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs16
 		icon = GFX_goal_WWS_Foucs16
-		cost = 7.00
+		cost = 5.00
 		available = {
 			has_country_flag = ger_con_7
 		}
@@ -904,7 +904,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs17
 		icon = GFX_goal_WWS_Foucs17
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 		}
 		
@@ -921,7 +921,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs18
 		icon = GFX_goal_WWS_Foucs18
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Foucs17
 		}
@@ -938,7 +938,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs19
 		icon = GFX_goal_WWS_Foucs19
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 		}
 		
@@ -956,7 +956,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs20
 		icon = GFX_goal_WWS_Foucs20
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Foucs19
 		}
@@ -973,7 +973,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs21
 		icon = GFX_goal_WWS_Foucs21
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Foucs20
 		}
@@ -992,7 +992,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs22
 		icon = GFX_goal_WWS_Foucs22
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Foucs20
 		}
@@ -1016,7 +1016,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs23
 		icon = GFX_goal_WWS_Foucs23
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Foucs20
 		}
@@ -1060,7 +1060,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs24
 		icon = GFX_goal_WWS_Foucs24
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Foucs19
 			focus = WWS_Foucs17
@@ -1078,7 +1078,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs25
 		icon = GFX_goal_WWS_Foucs25
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Foucs20
 		}
@@ -1129,7 +1129,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs26
 		icon = GFX_goal_WWS_Foucs26
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Foucs18
 		}
@@ -1151,7 +1151,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs27
 		icon = GFX_goal_WWS_Foucs27
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Foucs21
 		}
@@ -1171,7 +1171,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs28
 		icon = GFX_goal_WWS_Foucs28
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Foucs21
 		}
@@ -1191,7 +1191,7 @@ completion_reward={
 	focus = {
 		id = WWS_Foucs29
 		icon = GFX_goal_WWS_Foucs29
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = WWS_Foucs21
 		}

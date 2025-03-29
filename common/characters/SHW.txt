@@ -242,7 +242,7 @@ characters={ #skilled_staffer #Lieutenant_general
 			}
 		}
 		country_leader={
-			ideology=Social_Democracy
+			ideology=Moderate_Socialism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -328,6 +328,22 @@ characters={ #skilled_staffer #Lieutenant_general
 				factor = 1.000
 			}
 		}
+	}
+
+	SHW_Aleksei_Aladin={
+		name=SHW_Aleksei_Aladin
+		portraits={
+			civilian={
+				large="gfx/leaders/SHW/Portrait_Alexei_Feodorovich_Aladin.tga"
+			}
+		}
+		country_leader={
+			ideology=Social_Democracy
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
 	}
 	
 	SHW_Alexander_Konovalov={
@@ -676,8 +692,14 @@ SHW_Alexander_Ivanovich_Dubrovin={
 	name=SHW_Alexander_Ivanovich_Dubrovin
 	portraits={
 		civilian={
-			small="gfx/interface/ideas/portrait_Alexander_Ivanovich_Dubrovin.dds"
+			small="gfx/leaders/SHW/Portrait_Alexander_Ivanovich_Dubrovin.tga"
 		}
+	}
+	country_leader={
+		ideology=Neoreactionism
+		traits={  }
+		expire="1965.1.1.1"
+		id=-1
 	}
 	advisor={
 		slot = political_advisor

@@ -1,4 +1,26 @@
 characters={
+	FTX_DuanZhiGui={
+		name=FTX_DuanZhiGui
+		portraits={
+			civilian={
+				large="gfx/leaders/FTX/Portrait_Duan_ZhiGui.tga"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+		country_leader={
+			ideology=warlord-poly
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	FTX_Zhang_XiLuan={
 		name=FTX_Zhang_XiLuan
 		portraits={
@@ -21,21 +43,7 @@ FTX_Zhang_Zuolin={
 			}
 		}
 		country_leader={
-			ideology=warlord-dictatorship
-			traits={  }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-	FTX_DuanZhiGui={
-		name=FTX_DuanZhiGui
-		portraits={
-			civilian={
-				large="gfx/leaders/FTX/Portrait_Duan_ZhiGui.tga"
-			}
-		}
-		country_leader={
-			ideology=warlord-dictatorship
+			ideology=monarch-restorationism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -307,22 +315,6 @@ FTX_Zhang_Zuolin={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=2
-		}
-	}
-	FTX_ZhuQingLang={
-		name=FTX_ZhuQingLang
-		portraits={
-			army={
-				large="gfx/leaders/FTX/Portrait_ZhuQingLang.tga"
-			}
-		}
-		corps_commander={
-			traits={ }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
 		}
 	}
 	FTX_GuoSongLing={

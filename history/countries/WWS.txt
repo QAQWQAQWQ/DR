@@ -123,8 +123,14 @@ Deutscher_Zollverein
 }
 set_popularities = {
 
-	Dictatorship = 51
+	Dictatorship = 50
     Conservatism = 16
 	Liberalism = 14
-	Reformism = 19
+	Reformism = 20
+}
+give_guarantee = GGZ
+diplomatic_relation = {
+	country = DOA
+	relation = docking_rights
+	active = yes
 }

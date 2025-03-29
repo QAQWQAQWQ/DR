@@ -2,7 +2,7 @@ state={
 	id=820
 	name="STATE_820"
 	provinces={
-		1689 1791 1834 7676 7717 12579 12649 10597 13304
+		1689 1791 1834 7676 7717 12579 12649 13304 4882
 	}
 	resources={
 		grain=3
@@ -12,7 +12,12 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		
+		victory_points = {
+			1791 3 
+		}
+		victory_points = {
+			1834 3 
+		}
 		add_core_of = MEG
 	}
 	manpower=288200

@@ -20,13 +20,9 @@ news_event = {
 		hidden_effect = {
 			DCK= { 
 			transfer_state = 245
-			add_state_core = 245
-			transfer_state = 265
-			add_state_core = 265
-			transfer_state = 217
-			add_state_core = 217
+			transfer_state = 1208
 			transfer_state = 238
-			add_state_core = 238
+			transfer_state = 1209
 			transfer_state = 218
 	 }
 		}

@@ -1,0 +1,31 @@
+state=
+{
+	id=1236
+	name="STATE_1236"
+	manpower = 38000
+	
+	state_category = town
+	resources={
+		grain=1
+	}
+	resources={
+		chromium=1 # was: 3
+	}
+	history=
+	{
+		owner = HAT
+		add_core_of = HAT
+		buildings = {
+			infrastructure = 2
+		}
+
+		
+		set_demilitarized_zone = yes
+
+	}
+	provinces={
+		4641
+	}
+
+	local_supplies=0.0 
+}

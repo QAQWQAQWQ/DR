@@ -1,4 +1,4 @@
-﻿capital = 610
+﻿capital = 608
 
 oob = "DUQ_1920"
 
@@ -13,7 +13,6 @@ set_technology = {
 }
 
 recruit_character = DUQ_Duan_QiRui
-
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -49,9 +48,9 @@ recruit_character = DUQ_Duan_QiRui
 	create_faction = BeiyangXi
 	add_to_faction = HNZ
 	add_to_faction = WSP
-	add_to_faction = FTX
 	add_to_faction = ZHX
 	add_to_faction = GSL
+	add_to_faction = FTX
 
 set_politics = {
 	ruling_party = Dictatorship
@@ -61,6 +60,7 @@ set_politics = {
 }
 
 set_popularities = {
-	Dictatorship = 90
-	Paternalism = 10
+	Dictatorship = 92
+	Liberalism = 4
+	Revolutionism = 4
 }
