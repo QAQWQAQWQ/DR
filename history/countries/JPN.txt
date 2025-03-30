@@ -84,7 +84,7 @@ recruit_character = JPN_Matsui_Iwane
 	}
 	give_guarantee = KON
 set_politics = {
-	ruling_party = Paternalism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no	
@@ -123,8 +123,8 @@ Theocratic_state
 
 }
 set_popularities = {
-	Paternalism = 85
-	Dictatorship = 6
+	Paternalism = 6
+	Dictatorship = 85
 	Liberalism = 3
 	Conservatism = 3
 	Reformism = 1

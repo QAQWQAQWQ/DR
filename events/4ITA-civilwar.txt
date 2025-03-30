@@ -13,9 +13,8 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		AND={
-			has_country_flag = ITE_Victory
-			date > 1920.1.4
-			date < 1920.1.6
+			date > 2020.1.4
+			date < 2020.1.6
 		}
 	}
 		immediate = {
@@ -65,7 +64,6 @@ country_event = {
 				fire_only_once = yes
 				trigger = {
 					AND={
-						has_country_flag = ITE_Victory
 						date > 1920.1.8
 						date < 1920.1.10
 					}
@@ -112,7 +110,6 @@ country_event = {
 				fire_only_once = yes
 				trigger = {
 					AND={
-						has_country_flag = ITE_Victory
 						date > 1920.1.12
 						date < 1920.1.14
 					}
@@ -153,7 +150,6 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		AND={
-			has_country_flag = ITE_Victory
 			date > 1920.1.16
 			date < 1920.1.18
 		}
@@ -324,7 +320,6 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		AND={
-			has_country_flag = ITE_Victory
 			date > 1920.1.20
 			date < 1920.1.22
 		}
@@ -375,7 +370,6 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		AND={
-			has_country_flag = ITE_Victory
 			date > 1920.1.24
 			date < 1920.1.26
 		}

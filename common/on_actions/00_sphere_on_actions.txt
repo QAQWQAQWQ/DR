@@ -126,6 +126,14 @@ on_actions = {
                     sphere_country = SHW
                 }
             }
+            KON = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = SHW
+                }
+            }
            
             HLP = {
                 set_variable = {
