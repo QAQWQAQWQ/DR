@@ -5,15 +5,15 @@ China_power_struggle = {
 
 	priority = 6
 
-visible = {
+	visible = {
 		608 = {
 			is_controlled_by = ROOT
 		}
-}
+	}
 
 	allowed = {
-		
 		OR = {
+			TAG = CHI
 			TAG = ZHX
 			TAG = SCX
 			TAG = GUG

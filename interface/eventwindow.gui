@@ -488,14 +488,14 @@ guiTypes = {
 			{
 				name ="event_picture"
 				spriteType = "GFX_news_event_001"
-				position = { x = 339 y = 86 }
+				position = { x = 336 y = 85 }
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes
 			}			
 			
 			instantTextBoxType = {
 				name = "Title"
-				position = { x = -120 y =20 }
+				position = { x = -120 y =17 }
 				font = "newsfronttitle"
 				borderSize = {x = 0 y = 10}
 				text = "Title text here!"	
