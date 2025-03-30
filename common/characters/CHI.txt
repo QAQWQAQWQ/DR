@@ -14,6 +14,22 @@ characters={
 			id=-1
 		}
 	}	
+	CHI_YuanKeDing={
+		name=CHI_YuanKeDing
+		portraits={
+			civilian={
+				large="gfx/leaders/CHI/portrait_YuanKeDing.tga"
+			}
+		}
+		country_leader={
+			ideology=autocratic-constitutional-monarchy
+			desc=CHI_YuanKeDing_DESC
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
+	
 	CHI_Song_JiaoRen={
 		name=ROC_Song_JiaoRen
 		portraits={

@@ -22,18 +22,9 @@ China_power_struggle = {
 				615 = {
 			 		is_controlled_by = ROOT
 				}
-				835 = {
-			 		is_controlled_by = ROOT
-			 	}
 				608 = {
 			 		is_controlled_by = ROOT
 		 	}
-			743 = {
-		 		is_controlled_by = ROOT
-			 	}
-				839 = {
-			 		is_controlled_by = ROOT
-			 	}
 			 	597 = {
 			 		is_controlled_by = ROOT
 			 	}
@@ -52,9 +43,10 @@ China_power_struggle = {
 		factor = 1
 		}
 		complete_effect = {
-			set_cosmetic_tag = CHINA_LEADER
+			
 			hidden_effect = {
 				ROOT={
+					set_cosmetic_tag = CHINA_LEADER
 					add_state_core = 283
 					add_state_core = 287
 					add_state_core = 322
