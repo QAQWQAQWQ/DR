@@ -806,6 +806,42 @@ country_event = {
 	option = {
 		name = aushun.10.a
 		news_event = WorldNew.23
+		KOH = {
+			transfer_state = 918
+			transfer_state = 1018
+			transfer_state = 764
+			transfer_state = 45
+			transfer_state = 82
+			transfer_state = 84
+			transfer_state = 1019
+			transfer_state = 76
+			transfer_state = 83
+			transfer_state = 1122
+			transfer_state = 73
+			transfer_state = 70
+			transfer_state = 71
+			transfer_state = 664
+			transfer_state = 920
+			transfer_state = 921
+			transfer_state = 155
+			transfer_state = 43
+			transfer_state = 154
+			
+		}
+		AOX = {set_autonomy = { target = KOH autonomy_state = autonomy_Crown_Territory }}
+		KOH = {
+			set_politics = {
+				ruling_party = Dictatorship
+				last_election = "1918.11.11"
+				election_frequency = 72
+				elections_allowed = no
+			}
+			
+			set_popularities = {
+				Paternalism = 20
+				Dictatorship = 80
+			}
+		}
 	}
 }
 country_event = {

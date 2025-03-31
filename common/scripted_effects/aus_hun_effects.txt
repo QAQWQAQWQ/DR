@@ -507,9 +507,19 @@ illyrian_war_boom = {
     DMT = {
         give_military_access = SIW
     }
+    SIW = {
+        give_military_access = DMT
+    }
+    BXM = {
+        give_military_access = DMT
+    }
+    KGL = {
+        give_military_access = DMT
+    }
 }
 illyrian_war_end_qwq = {
     hidden_effect = {
+        
         DMT = {
             remove_ideas = {
                 Austrian_Military_Advisor

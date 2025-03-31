@@ -140,6 +140,19 @@ aus_hun_decisions = {
 						tag = KOH
 					}
 					set_variable = {global.illyrian_war_str = 2}
+					DMT = {diplomatic_relation = {
+						country = SIW
+						relation = military_access
+						active = no
+					}
+				}
+				SIW = {diplomatic_relation = {
+					country = DMT
+					relation = military_access
+					active = no
+				}
+			}
+					
 					if = {
 						limit = {
 							OR = {
