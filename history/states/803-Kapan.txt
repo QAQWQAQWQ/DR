@@ -1,0 +1,30 @@
+state={
+	id=803
+	name="STATE_803"
+	
+	resources={
+		grain=3
+	}
+	history={
+		owner = ARA
+		add_core_of = ARA
+		
+		buildings = {
+			infrastructure = 2
+			
+
+		}
+		victory_points = {
+			13452 3
+		}
+	}
+
+	provinces={
+		6642 4660 13452
+	}
+	manpower=250525
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}

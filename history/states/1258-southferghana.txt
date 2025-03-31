@@ -1,0 +1,26 @@
+state = {
+	id = 1258
+	name = "STATE_1258"
+
+	history = {
+		owner = TGA
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			10417 1 
+		}
+		
+	}
+
+	provinces = {
+		4467 4923 10417
+	}
+	manpower = 11000
+	buildings_max_level_factor = 1.000
+	state_category = rural
+
+	local_supplies = 4.0 
+	
+}

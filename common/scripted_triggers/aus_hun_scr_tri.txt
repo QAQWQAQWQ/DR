@@ -421,11 +421,11 @@ hun_win_illyrian_war = {
 hungry_war_end = {
     custom_trigger_tooltip = { 
         tooltip = hungry_war_end_tool
-        check_variable = { global.hungarian_war = 1 }
-        OR = {
-            check_variable = { global.hungarian_war_red_win = 1 }
-            check_variable = { global.hungarian_war_hun_win = 1 }
-        }
+        check_variable = { global.hungarian_war = 2 }
+        #OR = {
+        #    check_variable = { global.hungarian_war_red_win = 1 }
+         #   check_variable = { global.hungarian_war_hun_win = 1 }
+        #}
     }
 }
 aus_hun_all_sup_more_than_90 = {

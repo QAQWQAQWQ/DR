@@ -27,4 +27,35 @@ characters={
 			id=-1
 		}
 	}		
+
+	#################generals
+	TCY_pecori_giraldi={
+		name=TCY_pecori_giraldi
+		portraits={
+			army={
+				large="gfx/leaders/TCY/TCY_Pecori_Giraldi.png"
+				small="gfx/interface/ideas/TCY/idea_TCY_Pecori_Giraldi.png"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = TCY_pietro_badoglio
+			ledger  = army 
+			traits  = {
+				army_logistics_1 
+			}
+			ai_will_do  = {
+				factor  = 1
+			}
+		}
+		corps_commander={
+			traits={ old_guard politically_connected }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			#legacy_id=55003
+		}
+	}
 	}

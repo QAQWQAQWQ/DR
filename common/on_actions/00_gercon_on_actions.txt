@@ -217,6 +217,12 @@ on_actions = {
                     value = 10
                 }
             }
+            LSB = {
+                set_variable = {
+                    var = pre_support
+                    value = 40
+                }
+            }
             every_country = {
                 limit = {
                     OR = {
@@ -263,6 +269,7 @@ on_actions = {
                     }
                 }
                 set_variable = { global.aus_win_german_war = 1 }
+                set_variable = {global.german_war = 2}
                 DAS = { annex_country = { target = DSX transfer_troops = yes } 
                 
                     set_cosmetic_tag = DAS_TR
@@ -357,8 +364,66 @@ on_actions = {
                     check_variable = { global.pre_win_german_war = 0 }
                 }
                 set_variable = { global.pre_win_german_war = 1 }
+                set_variable = {global.german_war = 2}
+                
                 
                 every_country = { country_event = ger_con.7 }
+                if = {
+                    limit = {
+                        DSX = {controls_state = 768}
+                    }
+                    DSX = {transfer_state = 768}
+                }
+                if = {
+                    limit = {
+                        DSX = {controls_state = 769}
+                    }
+                    DSX = {transfer_state = 769}
+                }
+                if = {
+                    limit = {
+                        DSX = {controls_state = 546}
+                    }
+                    DSX = {transfer_state = 546}
+                }
+                if = {
+                    limit = {
+                        DSX = {controls_state = 905}
+                    }
+                    DSX = {transfer_state = 905}
+                }
+                if = {
+                    limit = {
+                        DSX = {controls_state = 895}
+                    }
+                    DSX = {transfer_state = 895}
+                }
+                if = {
+                    limit = {
+                        DSX = {controls_state = 541}
+                    }
+                    DSX = {transfer_state = 541}
+                }
+                if = {
+                    limit = {
+                        DSX = {controls_state = 893}
+                    }
+                    DSX = {transfer_state = 893}
+                }
+                if = {
+                    limit = {
+                        WWS = {controls_province = 11666}
+                    }
+                    AOX = {transfer_state = 4}
+                }
+                WWS = {
+                    every_owned_state = {
+                    limit = {
+                        is_core_of = AOX
+                    }
+                    transfer_state_to = AOX
+                    }
+                }
                 AOX = { white_peace = WWS }
                 WWS = { white_peace = AOX }
                 every_country = {
@@ -380,6 +445,14 @@ on_actions = {
                     }
                     WWS = { add_to_faction = PREV }
                     ger_con_pre_controlled = yes
+                }
+                WWS = {
+                    every_owned_state = {
+                    limit = {
+                        is_core_of = AOX
+                    }
+                    transfer_state_to = AOX
+                    }
                 }
                 WWS = {
                     every_owned_state = {
@@ -429,6 +502,7 @@ on_actions = {
                     transfer_state_to = SLO
                     }
                 }
+                
                 
                 set_autonomy = { target = VCT autonomy_state = autonomy_Crown_Territory }
                 set_autonomy = { target = KGL autonomy_state = autonomy_Crown_Territory }

@@ -13,14 +13,19 @@ state = {
 				naval_base = 3
 				coastal_bunker = 1
 			}
+			717 = {
+				naval_base = 1
+			}
 		}
+		victory_points = { 719 10 }
+		victory_points = { 717 5 }
 		
 		add_core_of = SHW
 
 	}
 
 	provinces = {
-		719
+		719 717
 	}
 	manpower = 75021
 	buildings_max_level_factor = 1.000

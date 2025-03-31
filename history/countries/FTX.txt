@@ -22,12 +22,11 @@ recruit_character = FTX_WuJunSheng
 recruit_character = FTX_ZhangJingHui
 recruit_character = FTX_YangYuTing
 recruit_character = FTX_MaZhangShang
-recruit_character = FTX_ZhuQingLang
 recruit_character = FTX_XieWenDong
 recruit_character = FTX_puyi
 
 
-FTX_XieWenDong= {set_nationality = NNN}
+
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -62,17 +61,17 @@ FTX_XieWenDong= {set_nationality = NNN}
 	}
 
 set_politics = {
-	ruling_party = Dictatorship
+	ruling_party = Paternalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 add_ideas = {
-	FTX_brigand
+	#FTX_brigand
 
 #law
 
-closed_economy
+export_focus
 atheism
 Traditional_conservatism
 Local_police
@@ -84,6 +83,8 @@ completely_illiterate
 Smallholder_economy
 }
 set_popularities = {
-	Dictatorship = 90
-	Paternalism = 10
+	Paternalism = 27.6
+	Neoreactionism = 32.4
+	Dictatorship = 40
 }
+give_military_access = SHW

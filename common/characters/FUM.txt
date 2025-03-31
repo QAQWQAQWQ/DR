@@ -21,4 +21,21 @@ characters={
 			logistics_skill = 1
 		}
 	}	
+	FUM_Giovanni_Giuriati={
+		name=FUM_Giovanni_Giuriati
+		portraits={
+			army={
+				large="gfx/leaders/FUM/FUM_Giovanni_Giuriati.png"
+				small="gfx/interface/ideas/FUM/idea_FUM_Giovanni_Giuriati.png"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			#legacy_id=55006
+		}
+	}
 	}

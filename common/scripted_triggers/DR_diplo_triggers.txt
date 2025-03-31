@@ -7,8 +7,14 @@ is_diplomatic_action_valid_boost_party_popularity = { #提高党派支持率不�
 is_diplomatic_action_valid_create_faction = { #创建阵营不可见
 	always = no 
 }
-is_diplomatic_action_valid_leave_faction = { #离开阵营不可见
-	always = no 
+DIPLOMACY_LEAVE_FACTION_ENABLE_TRIGGER = {
+	
+		
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_LEAVE_FACTION_BLOCKED_TOOLTIP
+			always = no
+		}
+	
 }
 is_diplomatic_action_valid_kick_from_faction = { #踢出阵营不可见
 	always = no 

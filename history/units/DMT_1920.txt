@@ -1,5 +1,8 @@
+### Templates
+### Territorial Army Infantry Division
 division_template = {
-	name = "Infanterie-Division"			
+	name = "Domobranska pješačka divizija"
+	division_names_group = DMT_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -8,75 +11,136 @@ division_template = {
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 	}
-	priority = 1
-	support = {
-        artillery = { x = 0 y = 0 }
+}
+### "Landsturm" militia
+division_template = {
+	name = "Pučki pješačka divizija"
+	division_names_group = DMT_MIL_01
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		militia = { x = 2 y = 2 }
 	}
 }
+### Territorial Army Cavalry
 division_template = {
-	name = "Kavallerie-Brigade"
+	name = "Domobranska konjička divizija"
+	division_names_group = DMT_CAV_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
-        cavalry = { x = 0 y = 1 }
-        cavalry = { x = 1 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
-	}
-	support = {
-	    recon = { x = 0 y = 0 }
+		cavalry = { x = 1 y = 2 }
 	}
 }
-
+### Land Units
 units = {
-	
-	
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location = 3592
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 4
-		}
-		location = 11564
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location = 3924
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division= {	
+### Landwehr Infantry
+### Zagreb
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
 		location = 11581
-		division_template = "Kavallerie-Brigade"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
+		division_template = "Domobranska pješačka divizija"
+		start_experience_factor = 0.2
 	}
-	division= {	
+	#Mostar
+	
+	#Split
+	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 3
 		}
-		location = 11581
-		division_template = "Kavallerie-Brigade"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
+		location = 3924
+		division_template = "Domobranska pješačka divizija"
+		start_experience_factor = 0.2
 	}
+
+	
+
+	#Karlovac
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3601
+		division_template = "Pučki pješačka divizija"
+		start_experience_factor = 0.1
+	}
+	
+
+	#Osijek
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 11564
+		division_template = "Pučki pješačka divizija"
+		start_experience_factor = 0.1
+	}
+	#Sremska Mitrovica
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 11564
+		division_template = "Pučki pješačka divizija"
+		start_experience_factor = 0.1
+	}
+	#Ujvidek
+	division = { #
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 11564
+		division_template = "Pučki pješačka divizija"
+		start_experience_factor = 0.2
+	}
+	#Fiume
+	division = { #
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 11564
+		division_template = "Domobranska pješačka divizija"
+		start_experience_factor = 0.2
+	}
+	#Zadar
+	division = { #
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 13357
+		division_template = "Pučki pješačka divizija"
+		start_experience_factor = 0.1
+	}
+	
 }
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.82
+		efficiency = 100
+	}
+}	

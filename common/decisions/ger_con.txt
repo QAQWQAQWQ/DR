@@ -708,6 +708,21 @@ ger_con_decisions = {
         remove_from_faction = AOX
       }
       set_variable = { global.german_war = 1 }
+      if = {
+        limit = {
+          check_variable = {
+                global.crook-in-pied = 1
+            }
+        }
+        set_variable = {
+          global.crook-in-pied = 2
+      }
+      ITE = {
+      WWS_Alexander_Feng_Crook={
+        set_nationality = WWS
+       }
+      }
+      }
       AOX = { create_faction = "南德意志派" }
       WWS = { create_faction = "北德意志派" }
     }
@@ -755,6 +770,21 @@ ger_con_decisions = {
         remove_from_faction = AOX
       }
       set_variable = { global.german_war = 1 }
+      if = {
+        limit = {
+          check_variable = {
+                global.crook-in-pied = 1
+            }
+        }
+        set_variable = {
+          global.crook-in-pied = 2
+      }
+      ITE = {
+        WWS_Alexander_Feng_Crook={
+          set_nationality = WWS
+         }
+        }
+      }
       AOX = { create_faction = "南德意志派" }
       WWS = { create_faction = "北德意志派" }
     }

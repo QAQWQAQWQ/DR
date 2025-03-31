@@ -21,11 +21,16 @@ characters={
 			}
 		}
 		field_marshal = {
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			traits = {
+				
+				media_personality
+				commando
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
 		}
 		country_leader={
 			ideology=national-liberalism

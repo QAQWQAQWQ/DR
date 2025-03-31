@@ -9,15 +9,18 @@ state={
 		owner = ARA
 		add_core_of = ARA
 		victory_points = {
-			11853 3
+			11853 10
 		}		
+		victory_points = {
+			12376 4
+		}
 		buildings = {
 			infrastructure = 2
 		}
 	}
 
 	provinces={
-		652 789 6976 6991 9886 9954 11853
+		652 6976 6991 9886 9954 11853 12376 4583
 	}
 
 	local_supplies=0.0 

@@ -1,0 +1,23 @@
+state={
+	id=1273
+	name="STATE_1273"
+	provinces={
+		8126
+	}
+	resources={
+		grain=1
+	}
+	manpower=7000
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+	history={
+		owner = CEX
+		add_core_of = CEX
+		
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	local_supplies=0.0 
+}

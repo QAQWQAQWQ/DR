@@ -72,7 +72,7 @@ early_ship_hull_heavy = 1
 	create_faction = Commonwealth_of_Nations
 	add_to_faction = BNA
 
-	set_autonomy = { target = IRL autonomy_state = autonomy_dominion }
+	set_autonomy = { target = IRL autonomy_state = autonomy_personal_union }
 	set_autonomy = { target = YDA autonomy_state = autonomy_colony }
 	set_autonomy = { target = NAF autonomy_state = autonomy_dominion }
 	set_autonomy = { target = ESG autonomy_state = autonomy_colony }
@@ -152,7 +152,6 @@ early_ship_hull_heavy = 1
 
 give_guarantee = MEX
 give_guarantee = YEL
-give_guarantee = AFH
 give_guarantee = LWO
 give_guarantee = VAN
 give_guarantee = NIC
@@ -162,6 +161,9 @@ give_guarantee = GUB
 give_guarantee = CAC
 give_guarantee = SZC
 give_guarantee = PHL
+give_guarantee = GGZ
+give_guarantee = MUH
+give_guarantee = KON
 
 set_politics = {
 	ruling_party = Liberalism
@@ -211,4 +213,9 @@ add_equipment_to_stockpile = {
 	type = gw_tank_equipment
 	amount = 150
 	producer = ENL
+}
+diplomatic_relation = {
+	country = VAN
+	relation = docking_rights
+	active = yes
 }

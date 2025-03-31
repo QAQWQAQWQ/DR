@@ -11,17 +11,15 @@ state={
 grain=15
 	}
 	
-	state_category = pastoral
-
+	state_category = rural
 	history= {
 		owner = YED
 		add_core_of = YED
-		add_core_of = ALB
 		victory_points = {
-			914 1
+			914 3
 		}
 		buildings = {
-grain_farms = 1
+			grain_farms = 1
 			infrastructure = 1
 		}
 	}

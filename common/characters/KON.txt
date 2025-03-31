@@ -7,10 +7,24 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=zhongshi-rs-dirigisme
+			ideology=autocratic-constitutional-monarchy
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}		
+	}
+	KON_Saito_Makoto={
+		name=KON_Saito_Makoto
+		portraits={
+			civilian={
+				large="gfx/leaders/KON/Portrait_Li_Tuo.tga"
+			}
+		}
+		country_leader={
+			ideology=ironfist-colonial-assimilation
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}			
 	}

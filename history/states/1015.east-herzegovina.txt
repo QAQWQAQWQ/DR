@@ -1,0 +1,23 @@
+
+state={
+	id=1015
+	name="STATE_1015"
+	manpower =47200
+	
+	state_category = pastoral
+
+	history={
+		owner = KLD
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = KLD
+		add_core_of = SIW
+	}
+
+	provinces={
+        	13371
+	}
+
+	local_supplies=0.0 
+}

@@ -4,7 +4,7 @@ state={
 	name="STATE_212"
 	manpower = 1814936
 	
-	state_category = large_town
+	state_category = city
 	resources={
 		grain=15
 	}
@@ -32,18 +32,22 @@ state={
 			9888 1
 		}
 		victory_points = { #Yambol
-			9919 5
+			9919 10
 		}
 		buildings = {
 			infrastructure = 2
 			arms_factory = 3
 			industrial_complex =2
 			air_base = 2
+			9919 = {
+				naval_base = 1
+			}
 		}
 	}
 
 	provinces={
-		878 893 3937 6814 6923 6967 6952 6982 9862 9888 9919 11813
+		  3937 6814 6923 6967 6952 6982 9862 9888 9919 
+		  
 	}
 
 	local_supplies=5.0 

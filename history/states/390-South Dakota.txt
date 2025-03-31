@@ -4,6 +4,7 @@ state={
 	name="STATE_390"
 
 	history={
+		add_dynamic_modifier = {modifier=UBS_Free_State}
 		owner = UBS
 		buildings = {
 			infrastructure = 2

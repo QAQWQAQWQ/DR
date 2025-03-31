@@ -2,15 +2,19 @@ state={
 	id=868
 	name="STATE_868"
 	provinces={
-		1535 1548 4511 7516 10384 10425 12360 12373 12388 12402
+		1535 1548 4511 7516 10384 10425 12360 12373 12388 12402 10438 12431 12417
 	}
 	resources={
 		grain=12
 	}
+	
 	history = {
 		owner = XIL
 		buildings = {
 			infrastructure = 1
+		}
+		victory_points = {
+			10438 5 
 		}
 		add_core_of = XIL
 	}

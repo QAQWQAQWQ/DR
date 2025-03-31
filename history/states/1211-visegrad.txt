@@ -1,0 +1,27 @@
+state = {
+	id = 1211
+	name = "STATE_1211"
+	manpower = 26241
+	
+	state_category = town
+	resources={
+		grain=3
+		
+	}
+	history = {
+		owner = KLD
+		
+		buildings = {
+			infrastructure = 1
+			
+		}
+		add_core_of = KLD
+		add_core_of = SIW
+
+	}
+	provinces = {	
+		13369
+	}
+
+	local_supplies = 0.0 
+}

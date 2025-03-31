@@ -8,15 +8,30 @@ state={
 		owner = GSL
 		add_core_of = GSL
 		victory_points = {
-			2022 10
+			2022 15
 		}
+		
+		
+		
+		victory_points = {
+			556 8 
+		}
+		
+		victory_points = {
+			5100 8 
+		}
+		victory_points = {
+			12327 8 
+		}
+		
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
+			industrial_complex = 1
 		}
 	}
 
 	provinces={
-		1630 2022 5057 5100 6638 7511 12327
+		1630 2022 5100 6638 12327 12776 12882 556 
 	}
 	manpower=1692500
 	buildings_max_level_factor=1.000

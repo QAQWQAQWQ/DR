@@ -219,141 +219,39 @@ on_actions = {
                     check_variable = { global.illyrian_hun_win = 0 }
                     check_variable = { global.illyrian_cro_win = 0 }
                 }
+                
                 set_variable = { global.illyrian_cro_win = 1 }
                 set_variable = {global.illyrian_war_str = 2}
-                if = {
-                    limit = {
-                        OR = {
-                        KOH = {controls_state = 917}
-                    }}
-                    KOH = {transfer_state = 917}
+                DMT = {diplomatic_relation = {
+                    country = SIW
+                    relation = military_access
+                    active = no
                 }
-                if = {
-                    limit = {
-                        OR = {
-                        KOH = {controls_state = 1015}
-                    }}
-                    KOH = {transfer_state = 1015}
-                }
-                if = {
-                    limit = {
-                        OR = {
-                        KOH = {controls_state = 104}
-                    }}
-                    KOH = {transfer_state = 104}
-                }
-                if = {
-                    limit = {
-                        OR = {
-                        KOH = {controls_state = 1017}
-                    }}
-                    KOH = {transfer_state = 1017}
-                }
-                if = {
-                    limit = {
-                        OR = {
-                        KOH = {controls_state = 1016}
-                    }}
-                    KOH = {transfer_state = 1016}
-                }
-                if = {
-                    limit = {
-                        OR = {
-                        KOH = {controls_state = 1014}
-                    }}
-                    KOH = {transfer_state = 1014}
-                }
-                if = {
-                    limit = {
-                        OR = {
-                        KOH = {controls_state = 804}
-                    }}
-                    KOH = {transfer_state = 804}
-                }
-                if = {
-                    limit = {
-                        OR = {
-                        KOH = {controls_state = 45}
-                    }}
-                    KOH = {transfer_state = 45}
-                }
-                if = {
-                    limit = {
-                        OR = {
-                        KOH = {controls_state = 764}
-                    }}
-                    KOH = {transfer_state = 764}
-                }
-                if = {
-                    limit = {
-                        OR = {
-                        KOH = {controls_state = 1018}
-                    }}
-                    KOH = {transfer_state = 1018}
-                }
-                if = {
-                    limit = {
-                        OR = {
-                        KOH = {controls_state = 918}
-                    }}
-                    KOH = {transfer_state = 918}
-                }
-                if = {
-                    limit = {
-                        OR = {
-                        KOH = {controls_state = 1203}
-                    }}
-                    KOH = {transfer_state = 1203}
-                }
-                if = {
-                    limit = {
-                        OR = {
-                        KOH = {controls_state = 1204}
-                    }}
-                    KOH = {transfer_state = 1204}
-                }
-                if = {
-                    limit = {
-                        OR = {
-                        KOH = {controls_state = 109}
-                    }}
-                    KOH = {transfer_state = 109}
-                }
-                if = {
-                    limit = {
-                        OR = {
-                        KOH = {controls_state = 163}
-                    }}
-                    KOH = {transfer_state = 163}
-                }
-                if = {
-                    limit = {
-                        OR = {
-                        KOH = {controls_state = 103}
-                    }}
-                    KOH = {transfer_state = 103}
-                }
-                if = {
-                    limit = {
-                        OR = {
-                        KOH = {controls_state = 1173}
-                    }}
-                    KOH = {transfer_state = 1173}
-                }
-                if = {
-                    limit = {
-                        OR = {
-                        KOH = {controls_state = 1174}
-                    }}
-                    KOH = {transfer_state = 1174}
-                }
+            }
+            SIW = {diplomatic_relation = {
+                country = DMT
+                relation = military_access
+                active = no
+            }
+        }
                 DMT = { white_peace = KOH }
                 KOH = { white_peace = DMT }
-                
                 illyrian_war_end_qwq = yes
+                
+                
+                
+                
                 AOX = {
-                    country_event = aushun.3
+                    country_event = aushun.10
+                }
+                AOX = {
                     set_autonomy = { target = DMT autonomy_state = autonomy_Crown_Territory }
+                    
+                    complete_national_focus = AUS_bir_0
+				complete_national_focus = AUS_bir_1
+				complete_national_focus = AUS_bir_12
+				complete_national_focus = AUS_bir_13
+				complete_national_focus = AUS_bir_14
                 }
                 DMT = {
                     set_politics = {
@@ -367,11 +265,22 @@ on_actions = {
                         Paternalism = 20
                         Dictatorship = 80
                     }
-                
+                }
+               
+                KOH = {
+                    set_politics = {ruling_party = Dictatorship}
+                    set_popularities = {
+                        Liberalism = 2
+                        Dictatorship = 98
+
+                    }
                 }
                 KOH = {
-                    retire_country_leader = yes
+                    add_ideas = {
+                        Part_of_Habsburgs
+                    }
                 }
+                
             }
             if = {
                 limit = {
@@ -383,7 +292,19 @@ on_actions = {
                 }
                 set_variable = { global.illyrian_hun_win = 1 }
                 set_variable = {global.illyrian_war_str = 2}
-                KOH = {retire_country_leader = yes}
+                DMT = {diplomatic_relation = {
+                    country = SIW
+                    relation = military_access
+                    active = no
+                }
+            }
+            SIW = {diplomatic_relation = {
+                country = DMT
+                relation = military_access
+                active = no
+            }
+        }
+                
                 DMT = { white_peace = KOH }
                 KOH = { white_peace = DMT }
                 KOH = {
@@ -432,7 +353,7 @@ on_actions = {
                 XYL = { white_peace = ROOT }
                 XYL = {
                     annex_country = {
-                        target = ROOT transfer_troops = no
+                        target = ROOT transfer_troops = yes
                     }
                 }
             }
@@ -442,7 +363,14 @@ on_actions = {
                         ROOT = { tag = HUN }
                         ROOT = { tag = XYL }
                     }
-                    FROM = { tag = AOX }
+                    OR = {
+                        FROM = { tag = AOX }
+                        FROM = { tag = DMT }
+                        FROM = { tag = BXM }
+                        FROM = { tag = KGL }
+                        FROM = { tag = TRA }
+                    }
+                    check_variable = {global.hungarian_war = 1}
                     AOX = {
                         has_completed_focus = AUS_bir_14
                     }
@@ -451,12 +379,13 @@ on_actions = {
                 AOX = { white_peace = ROOT }
                 KOH = {
                     annex_country = {
-                        target = ROOT transfer_troops = no
+                        target = ROOT transfer_troops = yes
                     }
                     retire_character = KOH_Karoly_Huszar
                     retire_character = KOH_Horthy_Miklos
                     retire_character = KOH_Mihaly_Karolyi
                 }
+                set_variable = {global.hungarian_war = 2}
                 AOX = {
                     set_autonomy = { target = KOH autonomy_state = autonomy_Crown_Territory }
                 }
@@ -474,45 +403,27 @@ on_actions = {
                     }
                 }
                 
-                DMT = { transfer_state = 109 }
-                if = {
-                    limit = {
-                        NOT = {
-                            ITE = {controls_state = 917}
-				ITC = {controls_state = 917}
-				RDN = {controls_state = 917}
-                FUM = {controls_state = 917}
-                        }
-                    }
-                    DMT = { transfer_state = 917 }
-                }
-                if = {
-                    limit = {
-                        NOT = {
-                            ITE = {controls_state = 163}
-				ITC = {controls_state = 163}
-				RDN = {controls_state = 163}
-                FUM = {controls_state = 163}
-                        }
-                    }
-                    DMT = { transfer_state = 163 }
-                }
+                
+                
+                
 
-                DMT = { transfer_state = 103 }
-                DMT = { transfer_state = 804 }
-                DMT = { transfer_state = 918 }
-                DMT = { transfer_state = 104 }
-                DMT = { transfer_state = 1014 }
-                DMT = { transfer_state = 1015 }
-                DMT = { transfer_state = 1016 }
-                DMT = { transfer_state = 1017 }
-                DMT = { transfer_state = 1018 }
-                DMT = { transfer_state = 764 }
-                DMT = { transfer_state = 45 }
-                DMT = { transfer_state = 1173 }
-                DMT = { transfer_state = 1174 }
-                DMT = { transfer_state = 1203 }
-                DMT = { transfer_state = 1204 }
+               
+                    KOH = {every_owned_state = {
+                    limit = {
+                        is_core_of = DMT
+                    }
+                    transfer_state_to = DMT
+                    }
+                }
+                    if = {
+                        limit = {
+                            917 = {is_core_of = FUM}
+                                
+                            
+                        }
+                        FUM = { transfer_state = 917 }
+                    }
+                
                 set_variable = {global.hungarian_war = 2}
                 AOX = {
                     set_autonomy = { target = DMT autonomy_state = autonomy_Crown_Territory }

@@ -2,7 +2,7 @@
 state={
 	id=344
 	name="STATE_344"
-	manpower = 1081781
+	manpower = 381781
 	
 	state_category = town
 	resources={
@@ -13,13 +13,10 @@ state={
 		add_core_of = YED
 		add_core_of = TEQ
 		victory_points = {
-			9893 15
+			9893 14
 		}
 		victory_points = {
-			7620 10
-		}
-		victory_points = {
-			6813 3
+			6813 13
 		}
 		buildings = {
 			infrastructure = 2
@@ -29,7 +26,7 @@ state={
 	}
 
 	provinces={
-		3889 6813 7620 9893 9912
+		3889 6813 9893 886 3921 3890 9761 6965
 	}
 
 

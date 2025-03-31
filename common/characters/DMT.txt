@@ -6,13 +6,6 @@ characters={
 				large="gfx/leaders/DMT/Portrait_Matko_Laginja.tga"
 			}
 		}
-		field_marshal = {
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-		}
 		country_leader={
 			ideology=autocratic-constitutional-monarchy
 			traits={  }
@@ -44,13 +37,7 @@ characters={
 				large="gfx/leaders/DMT/Portrait_Josip_Smodlaka.tga"
 			}
 		}
-		field_marshal = {
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-		}
+		
 		country_leader={
 			ideology=liberal_conservatism
 			traits={  }
@@ -64,13 +51,6 @@ characters={
 			civilian={
 				large="gfx/leaders/DMT/Portrait_Svetozar_Pribicevie.tga"
 			}
-		}
-		field_marshal = {
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
 		}
 		country_leader={
 			ideology=Liberalism

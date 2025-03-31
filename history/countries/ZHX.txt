@@ -1,4 +1,4 @@
-﻿capital = 614
+﻿capital = 1009
 
 oob = "ZHX_1920"
 
@@ -12,10 +12,9 @@ set_technology = {
 	fuel_silos = 1
 }
 recruit_character = ZHX_CaoKung
-recruit_character = ZHX_Fen_YuXiang
+recruit_character = ZHX_Feng_YuXiang
 recruit_character = ZHX_WuPeiFu
 recruit_character = ZHX_Kong_XiangXi 
-recruit_character = ZHX_WangZhangYuan
 recruit_character = ZHX_Li_HongYuan
 recruit_character = ZHX_CaoRuLin
 recruit_character = ZHX_Zhang_Zongxiang
@@ -28,8 +27,9 @@ recruit_character = ZHX_SunYue
 recruit_character = ZHX_WangYiTang
 recruit_character = ZHX_ZhangJian
 recruit_character = ZHX_CaiYuanPei
-recruit_character = ZHX_DuanQiRui
 recruit_character = ZHX_GuWeiJun
+recruit_character = ZHX_FengYuXiang
+recruit_character = ZHX_ZhangZiZhong
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -92,9 +92,8 @@ add_ideas = {
 	ZHX_GuWeiJun_P
 }
 set_popularities = {
-	Dictatorship = 90
-	Paternalism = 3
-	Conservatism = 3
-	Liberalism = 3
-	Moderate_Socialism = 1
+	Dictatorship = 92
+	Liberalism = 4
+	Revolutionism = 4
 }
+give_guarantee = SSD

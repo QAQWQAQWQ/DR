@@ -1,27 +1,30 @@
 
 state={
 	id=608
-	name="北京"
-	manpower = 9648400
+	name="京兆"
+	manpower = 964840
 	
 	state_category = large_city
 
 	history={
-		owner = CHI
-		add_core_of = CHI
+		owner = DUQ
+		add_core_of = DUQ
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 5 
 			industrial_complex = 2
 			air_base = 3
 		}
 		victory_points = {
-			9843 20
+			13388 30
 		}
 		
+		victory_points = {
+			11761 10 
+		}
 	}
 
 	provinces={
-		9843 11761 4140 1134
+		9843 11761 4140 13388 6969 11822 9776
 	}
 
 	local_supplies=1.0 

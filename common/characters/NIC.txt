@@ -12,5 +12,19 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}		
+	}	
+	NIC_Diego_Manuel_Chamorro={
+		name=NIC_Diego_Manuel_Chamorro
+		portraits={
+			civilian={
+				large="gfx/leaders/NIC/NIC_Diego_Manuel_Chamorro.tga"
+			}
+		}
+		country_leader={
+			ideology=comprador-conservatism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	}

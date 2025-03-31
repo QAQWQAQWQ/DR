@@ -4,20 +4,27 @@ state={
 	name="STATE_1011"
 	manpower = 800000
 	
-	state_category = pastoral
+	state_category = rural
 	history={
 		owner = ZHX
 		add_core_of = ZHX
 		buildings = {
 			infrastructure = 1
 		}
+		
 		victory_points = {
-			1590 4
+			1489 4 
+		}
+		victory_points = {
+			10397 12 
+		}
+		victory_points = {
+			828 10 
 		}
 	}
 
 	provinces={
-		1137 1590 6904 9776 10397 828
+		1137 1590 6904 10397 828 1489 952
 	}
 
 	local_supplies=0.0 

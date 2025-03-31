@@ -1,0 +1,146 @@
+on_actions = {
+	on_startup= {
+		effect = {
+			set_variable = {
+                global.4italian_war = 0
+            }
+            set_variable = {
+                global.aus_win_4italian_war = 0
+            }
+            set_variable = {
+                global.ita_win_4italian_war = 0
+            }
+            set_variable = {
+                global.deadlock_4italian_war = 0
+            }
+            set_variable = {
+                global.geraus_alliance_4italian_war = 0
+            }
+            set_variable = {
+                global.ita_tookvin_4italian_war = 0
+            }
+            set_variable = {
+                global.ita_tookwien_4italian_war = 0
+            }
+            set_variable = {
+                global.aus_halfwin_4italian_war = 0
+            }
+            set_variable = {
+                global.crook-in-pied = 0
+            }
+		}
+	}
+    on_capitulation = {
+        effect = {
+            #ICD投降
+            if = {
+                limit = {
+                    ROOT = { tag = ICD }
+                    FROM = { tag = AOX }
+                    check_variable = { global.4italian_war = 1 }
+                }
+                hidden_effect = {
+                    ICD = {
+                        every_unit_leader = {
+                            set_nationality = RDN
+                        }
+                    }
+            }
+        }
+        #ITC投降
+        if = {
+            limit = {
+                ROOT = { tag = ITC }
+                FROM = { tag = AOX }
+                check_variable = { global.4italian_war = 1 }
+            }
+            hidden_effect = {
+                ITC = {
+                    every_unit_leader = {
+                        set_nationality = RDN
+                    }
+                }
+        }
+    }
+    #ITE投降
+    if = {
+        limit = {
+            ROOT = { tag = ITE }
+            FROM = { tag = AOX }
+            check_variable = { global.4italian_war = 1 }
+        }
+        hidden_effect = {
+            ITE = {
+                every_unit_leader = {
+                    set_nationality = RDN
+                }
+            }
+    }
+}
+    #3种伦威投降
+    if = {
+        limit = {
+            ROOT = { tag = VCT }
+            FROM = { tag = ITE }
+            check_variable = { global.4italian_war = 1 }
+        }
+        hidden_effect = {
+            VCT = {
+                VCT_Erzherzog_Peter_Ferdinand= {
+                    set_nationality = AOX
+                }
+                retire_character = VCT_Archduke_Karl
+            }
+            AOX = {recruit_character = AOX_Charles_I}
+            VCT = {
+                every_unit_leader = {
+                    set_nationality = ITE
+                }
+            }
+    }
+}
+if = {
+    limit = {
+        ROOT = { tag = VCT }
+        FROM = { tag = RDN }
+        check_variable = { global.4italian_war = 1 }
+    }
+    hidden_effect = {
+        VCT = {
+            VCT_Erzherzog_Peter_Ferdinand= {
+                set_nationality = AOX
+            }
+            retire_character = VCT_Archduke_Karl
+        }
+        AOX = {recruit_character = AOX_Charles_I}
+        VCT = {
+            every_unit_leader = {
+                set_nationality = RDN
+            }
+        }
+}
+}
+if = {
+    limit = {
+        ROOT = { tag = VCT }
+        FROM = { tag = ITC }
+        check_variable = { global.4italian_war = 1 }
+    }
+    hidden_effect = {
+        VCT = {
+            VCT_Erzherzog_Peter_Ferdinand= {
+                set_nationality = AOX
+            }
+            retire_character = VCT_Archduke_Karl
+        }
+        AOX = {recruit_character = AOX_Charles_I}
+        VCT = {
+            every_unit_leader = {
+                set_nationality = ITC
+            }
+        }
+}
+}
+    }
+}
+}

@@ -13,13 +13,28 @@ state= {
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+			9938 = {
+				naval_base = 2
+				coastal_bunker = 3
+				bunker = 1
+			}
 		}
-		victory_points = { 7182 3 }
-		victory_points = { 9978 3 }
-		victory_points = { 7067 3 }
+
+
+
+
+		victory_points = {
+			9938 15 
+		}
+		victory_points = {
+			7182 10 
+		}
+		victory_points = {
+			7067 8 
+		}
 	}
 	provinces={
-		7067 7182 9938 9978
+		7067 7182 9938 9978 13441
 	}
 
 	local_supplies=1.0 

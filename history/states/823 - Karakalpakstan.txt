@@ -3,18 +3,21 @@ state = {
 	name = "STATE_823" #Karakalpakstan
 	history = {
 		owner = TGA
-		add_core_of = AKE
+
 		buildings = {
 			infrastructure = 2
 
 		}
+		victory_points = {
+			13416 6
+		}
 	}
 
 	provinces = {
-		1479 1576 1614 4488 4618 12471 10395
+		1479 1576 1614 4488 4618 13416 13419
 	}
 	
-	manpower = 258430 #Was 516860 but was divided by 2 due to Khiva (831) becoming a new state 
+	manpower = 18430 #Was 516860 but was divided by 2 due to Khiva (831) becoming a new state 
 	buildings_max_level_factor = 1.000
 	state_category = rural
 

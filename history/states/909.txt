@@ -6,7 +6,7 @@ state = {
 	
 	state_category = large_city
 	resources={
-		grain=25
+		grain=3
 	}
 	history = {
 		owner = ROC
@@ -19,12 +19,12 @@ state = {
 			}
         }
 		victory_points = {
-			11913 20 
+			11913 22
 		}
 	}
 
 	provinces = {
-		11913
+		11913 13446
 	}
 
 	local_supplies = 6.0 

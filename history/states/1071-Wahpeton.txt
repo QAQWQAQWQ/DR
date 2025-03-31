@@ -5,6 +5,7 @@ state={
 	manpower = 1600000
 	state_category = city
 	history={
+		add_dynamic_modifier = {modifier=UBS_Free_State}
 		owner = UBS
 		add_core_of = UBS
 		buildings = {
@@ -30,11 +31,14 @@ state={
 			air_base = 5
 
 		}
+		victory_points = {
+			13406 18
+		}
 
 	}
 
 	provinces={
-		1760 1849 3699 4029 7776 7829 9678 10341 10526
+		1760 1849 3699 4029 7776 7829 9678 10341 10526 13406
 	}
 
 	local_supplies=0.0 

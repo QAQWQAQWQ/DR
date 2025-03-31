@@ -7,7 +7,99 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Paternalist_Constitutional_Sanmin_Doctrine
+			ideology=sanmin-paternalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ROC_zhang_jingjiang={
+		name=ROC_HuangXing
+		portraits={
+			civilian={
+				large="gfx/leaders/ROC/portrait_ZhangJingJiang.tga"
+			}
+		}
+		country_leader={
+			ideology=sanmin-paternalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ROC_wangzhaoming={
+		name=ROC_wangzhaoming
+		portraits={
+			civilian={
+				large="gfx/leaders/ROC/portrait_WangJingWei.tga"
+			}
+		}
+		country_leader={
+			ideology=sanmin-reformism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ROC_HuangXing_gen={
+		name=ROC_HuangXing_gen
+		portraits={
+			civilian={
+				large="gfx/leaders/ROC/portrait_HuangXing_Army.tga"
+			}
+		}
+		field_marshal = {
+			traits = { chinese_nationalist politically_connected organisational_leader inspirational_leader }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			
+		}
+	}
+	ROC_li_liejun = {
+		name = ROC_li_liejun
+		portraits = {
+			
+			civilian = {
+				large = "gfx/leaders/ROC/portrait_Liliejun.tga"
+			}
+		}
+		corps_commander = {
+			desc = YUN_li_liejun_army_desc
+			traits = { war_hero career_officer artillery_officer organizer offensive_doctrine jiangxi_officer kmt_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	ROC_SunWen1 = {
+		name=ROC_SunWen1
+		portraits={
+			civilian={
+				large="gfx/leaders/ROC/portrait_SunZhongShang.tga"
+			}
+		}
+		country_leader={
+			ideology=sanmin-paternalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	ROC_SunWen3 = {
+		name=ROC_SunWen3
+		portraits={
+			civilian={
+				large="gfx/leaders/ROC/portrait_SunZhongShang.tga"
+			}
+		}
+		country_leader={
+			ideology=sunwen_sanmin
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -22,8 +114,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Paternalist_Constitutional_Sanmin_Doctrine
-			desc=ROC_Song_JiaoRen_DESC
+			ideology=sanmin-paternalism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -33,11 +124,11 @@ characters={
 		name=ROC_LiaoZhongKai
 		portraits={
 			civilian={
-				large="gfx/leaders/ROC/Portrait_LiaoZhongKai.tga"
+				large="gfx/leaders/ROC/portrait_LiaoZhongKai.tga"
 			}
 		}
 		country_leader={
-			ideology=social_new_sanmin
+			ideology=social_sanmin
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -51,7 +142,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Paternalist_Constitutional_Sanmin_Doctrine
+			ideology=sanmin-paternalism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -64,29 +155,58 @@ characters={
 				large="gfx/leaders/ROC/portrait_ChenQiMei.tga"
 			}
 		}
+		corps_commander={
+			traits = { career_officer trait_cautious artillery_officer skilled_staffer offensive_doctrine expert_delegator }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
 		country_leader={
-			ideology=pseudo-rev-rea-aut
+			ideology=warlord-poly
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
 		}
 	}
+	ROC_he_yingqin = {
+		name = ROC_he_yingqin
+		portraits = {
+			army = {
+				large = "gfx/leaders/ROC/portrait_HeYingQing.tga"
+			}
+		}
+		corps_commander = {
+			traits = { politically_connected }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
 	
-	ROC_ZhangZhiZhong={
-		name=ROC_ZhangZhiZhong
+	ROC_JiangZhongZheng={
+		name=ROC_JiangZhongZheng
 		portraits={
 			army={
-				large="gfx/leaders/ROC/portrait_ZhangZhiZhong.tga"
-				small="gfx/interface/ideas/portrait_ZhangZhiZhong.dds"
+				large="gfx/leaders/ROC/portrait_Chiang_Kai_shek.tga"
 			}
 		}
 		corps_commander={
-			traits={ }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
+			traits = { career_officer trait_cautious artillery_officer skilled_staffer offensive_doctrine expert_delegator }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		country_leader={
+			ideology=warlord-poly
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
 		}
 	}
 	ROC_JiangBaiLi={

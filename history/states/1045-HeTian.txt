@@ -2,17 +2,33 @@ state={
 	id=1045
 	name="STATE_1045"
 	resources={
+		aluminium=8
 		grain=7.000
 	}
 	provinces={
-		4973 8042 8112 10885 10911 5042
+		4973 8042 8112 10885 5042 13423
 	}
 	history={
 		owner = XJC
 
 		add_core_of = XJC
 		victory_points = {
-			4973 1 
+			13423 10 
+		}
+
+		
+		victory_points = {
+			8042 8 
+		}
+		victory_points = {
+			10885 3 
+		}
+		
+		victory_points = {
+			4973 3 
+		}
+		victory_points = {
+			5042 3 
 		}
 		buildings = {
 			infrastructure = 1

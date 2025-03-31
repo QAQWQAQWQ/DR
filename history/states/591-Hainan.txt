@@ -9,10 +9,19 @@ state={
 	history={
 		owner = ROC
 		add_core_of = ROC
-		victory_points = {
-			1070 1 
-		}
 		
+		victory_points = {
+			1070 9 
+		}
+		victory_points = {
+			994 8 
+		}
+		victory_points = {
+			1038 8 
+		}
+		victory_points = {
+			11990 8 
+		}
 		buildings = {
 			infrastructure = 1
 			air_base = 1
@@ -24,7 +33,7 @@ state={
 	}
 
 	provinces={
-		994 1038 1070 11963 11990 
+		994 1038 1070 11963 11990 13442
 	}
 
 	local_supplies=1.0 

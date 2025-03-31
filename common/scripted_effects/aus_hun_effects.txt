@@ -463,6 +463,10 @@ illyrian_war_boom = {
             end_puppet = DMT
             end_puppet = SIW
         }
+        KOH = {clear_variable = in_a_sphere
+		clear_variable = sphere_country}
+        SIW = {clear_variable = in_a_sphere
+		clear_variable = sphere_country}
         KOH = {leave_faction = yes}
         DMT = {leave_faction = yes}
         SIW = {leave_faction = yes
@@ -503,59 +507,83 @@ illyrian_war_boom = {
     DMT = {
         give_military_access = SIW
     }
+    SIW = {
+        give_military_access = DMT
+    }
+    BXM = {
+        give_military_access = DMT
+    }
+    KGL = {
+        give_military_access = DMT
+    }
 }
 illyrian_war_end_qwq = {
     hidden_effect = {
+        
         DMT = {
             remove_ideas = {
                 Austrian_Military_Advisor
             }
         }
-        if = {
-            limit = {
-                AOX = {
-                    OR = {
-                        has_completed_focus = AUS_bir_1
-                        has_completed_focus = AUS_bir_3
-                    }
-                }
-            }
+        #if = {
+           # limit = {
+          #      AOX = {
+          #          OR = {
+           #             has_completed_focus = AUS_bir_1
+          #              has_completed_focus = AUS_bir_3
+          #          }
+         #       }
+         #   }
             AOX = { set_autonomy = { target = DMT autonomy_state = autonomy_Crown_Territory } }
-                DMT = {
-                    set_politics = {ruling_party = Dictatorship}
-                    set_popularities = {
-                        Liberalism = 25
-                        Nationalism = 25
-                        Dictatorship = 40
-                        Revolutionism = 10
-                    }
+            DMT = {
+                set_politics = {
+                    ruling_party = Dictatorship
+                    last_election = "1918.11.11"
+                    election_frequency = 72
+                    elections_allowed = no
                 }
-        }
-        else = {
+                
+                set_popularities = {
+                    Paternalism = 20
+                    Dictatorship = 80
+                }
+            
+            }
+            KOH = {
+                retire_country_leader = yes
+            }
+                if = {
+                    limit = {
+                        check_variable = { global.illyrian_cro_win = 0 }
+                    }
+                    KOH = { country_event = aushun.9 }
+                }
+                
+       #}
+        #else = {
             # DMT = {
             #    remove_ideas = {
             #        Part_of_Habsburgs
             #    }
             # }
-            every_state = {
-                limit = {
-                    is_core_of = DMT
-                }
-                add_core_of = CRO
-            }
-            every_state = {
-                limit = {
-                    is_claimed_by = DMT
-                }
-                add_claim_by = CRO
-            }
-            CRO = {
-                annex_country = {
-                    target = DMT transfer_troops = yes
-                }
-            }
-        }
-        KOH = { country_event = aushun.9 }
+         #   every_state = {
+         #       limit = {
+        #            is_core_of = DMT
+        #        }
+        #        add_core_of = CRO
+        #    }
+        #    every_state = {
+        #        limit = {
+        #            is_claimed_by = DMT
+        #        }
+         #       add_claim_by = CRO
+        #    }
+          #  CRO = {
+         #       annex_country = {
+        #            target = DMT transfer_troops = yes
+        #        }
+        #    }
+       # }
     }
 }
 remake_aus_hun_stab = {

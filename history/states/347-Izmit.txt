@@ -8,20 +8,24 @@ state={
 		steel = 9
 	}
 	
-	state_category = rural
+	state_category = town
 
 	history={
 		owner = YED
 		add_core_of = YED
 		add_core_of = TEQ
 		victory_points = {
-			904 1 
+			904 15
+		}
+		victory_points = {
+			11866 11
+		}
+		victory_points = {
+			3905 4
 		}
 		buildings = {
 			infrastructure = 2
-			904 = {
-				naval_base = 2
-			}
+			
 		}
 	}
 

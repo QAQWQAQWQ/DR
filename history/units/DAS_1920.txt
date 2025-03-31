@@ -4,13 +4,13 @@ division_template = {
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
 		infantry = { x = 2 y = 0 }
-	}
-	priority = 1
-	support = {
-        artillery = { x = 0 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
 	}
 }
 division_template = {
@@ -43,14 +43,14 @@ units = {
 	}
 	division= {	
 		name = "非洲一旅"
-		location = 4879
+		location = 2196
 		division_template = "非洲步兵旅"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 	}
 	division= {	
 		name = "非洲骑兵旅"
-		location = 4879
+		location = 2196
 		division_template = "非洲骑兵旅"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0

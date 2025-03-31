@@ -2,7 +2,7 @@ state={
 	id=752
 	name="STATE_752"
 	provinces={
-		1918 7988 10903 12724 12837 4999
+		1918 7988 12724 12837 4999 8104 1999 13432
 	}
 	resources={
 		grain=16
@@ -13,10 +13,18 @@ state={
 	history={
 		owner = SSD
 		add_core_of = SSD
+		
 		victory_points = {
-			4999 1
+			4999 15 
 		}
- 		set_demilitarized_zone = yes
+		
+		victory_points = {
+			12837 8 
+		}
+		victory_points = {
+			7988 8 
+		}
+ 		
 		buildings = {
 			infrastructure = 1
 		}

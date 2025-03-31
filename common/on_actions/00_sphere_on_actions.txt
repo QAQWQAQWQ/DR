@@ -29,6 +29,22 @@ on_actions = {
                     sphere_country = AOX
                 }
             }
+            LMJ = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = AOX
+                }
+            }
+            TSI = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = AOX
+                }
+            }
             ALB = {
                 set_variable = {
                     in_a_sphere = 1
@@ -61,6 +77,14 @@ on_actions = {
                     sphere_country = AOX
                 }
             }
+            BEL = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = FRW
+                }
+            }
             WWS = {
                 set_variable = {
                     is_a_gerat_power = 1
@@ -85,14 +109,7 @@ on_actions = {
                     sphere_country = SHW
                 }
             }
-            #LMN = {
-            #    set_variable = {
-            #        in_a_sphere = 1
-            #    }
-            #    set_variable = {
-            #        sphere_country = AOX
-            #    }
-            #}
+            
             HES = {
                 set_variable = {
                     in_a_sphere = 1
@@ -102,6 +119,39 @@ on_actions = {
                 }
             }
             BOJ = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = SHW
+                }
+            }
+            KON = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = SHW
+                }
+            }
+           
+            HLP = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = SHW
+                }
+            }
+            JLP = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = SHW
+                }
+            }
+            FTX = {
                 set_variable = {
                     in_a_sphere = 1
                 }
@@ -133,12 +183,172 @@ on_actions = {
                     sphere_country = ENL
                 }
             }
+            MUH = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = ENL
+                }
+            }
+            AFG = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = ENL
+                }
+            }
+            AFH = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = SHW
+                }
+            }
+            BNA = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = ENL
+                }
+            }
+            BLG = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = ENL
+                }
+            }
+            SZC = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = ENL
+                }
+            }
+            PAR = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = ENL
+                }
+            }
+            WLG = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = ENL
+                }
+            }
+            ARG = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = ENL
+                }
+            }
             UBS = {
                 set_variable = {
                     is_a_gerat_power = 1
                 }
                 set_variable = {
                     sphere_country = UBS
+                }
+            }
+            MEX = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = UBS
+                }
+            }
+            BLW = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = UBS
+                }
+            }
+            MYL = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = UBS
+                }
+            }
+            CHE = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = ENL
+                }
+            }
+            VAN = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = ENL
+                }
+            }
+            EYJ = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = ENL
+                }
+            }
+            XZZ = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = ENL
+                }
+            }
+            YDN = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = ENL
+                }
+            }
+            NPL = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = ENL
+                }
+            }
+            ASI = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = SHW
+                }
+            }
+            LSB = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = WWS
                 }
             }
             JPN = {

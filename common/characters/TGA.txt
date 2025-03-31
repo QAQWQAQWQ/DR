@@ -4,7 +4,29 @@ characters={
 		portraits={
 		army={
 			large="gfx/leaders/TGA/Portrait_Alexei_Kuropatkin.tga"
-			small="gfx/interface/ideas/Portrait_Alexei_Kuropatkin.dds"
+		}
+	}
+	country_leader={
+		ideology=ironfist-colonial-assimilation
+		traits={  }
+		expire="1965.1.1.1"
+		id=-1
+	}
+	field_marshal={
+		traits={ old_guard inspirational_leader }
+		skill=2
+		attack_skill=1
+		defense_skill=2
+		planning_skill=1
+		logistics_skill=2
+		
+	}
+	}		
+	TGA_Alexander_Samsonov={
+		name=TGA_Alexander_Samsonov
+		portraits={
+		army={
+			large="gfx/leaders/TGA/TGA_Alexander_Samsonov.tga"
 		}
 	}
 	country_leader={
@@ -14,12 +36,13 @@ characters={
 		id=-1
 	}
 	corps_commander={
-		traits={ Lieutenant_general }
-		skill=1
-		attack_skill=1
-		defense_skill=1
+		traits={ career_officer trait_reckless harsh_leader skilled_staffer }
+		skill=2
+		attack_skill=2
+		defense_skill=2
 		planning_skill=1
 		logistics_skill=1
+		
 	}
 	}		
 	}

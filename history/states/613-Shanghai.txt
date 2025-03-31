@@ -1,0 +1,39 @@
+
+state={
+	id=613
+	name="STATE_613" # Shanghai
+	manpower = 1730510
+	
+	state_category = large_city
+	
+	history={
+		owner = ROC
+		add_core_of = ROC
+		buildings = {
+			infrastructure = 4 
+			industrial_complex = 4
+			arms_factory = 2
+			7014 = {
+				naval_base = 6
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+		victory_points = {
+			13386 25
+		}
+		victory_points = {
+			7014 5 
+		}
+		
+		victory_points = {
+			12076 10 
+		}			
+	}
+
+	provinces={
+		7014 12076 13386
+	}
+
+	local_supplies=0.0 
+}

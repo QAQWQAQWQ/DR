@@ -1,13 +1,17 @@
 state = {
 	id = 1083
-	name = "STATE_1083" # Kyzyl Orda
+	name = "STATE_1083"
 	resources={
 		grain=5
 	}
 	history = {
 		owner = TGA
 		victory_points = {
-			1459 10
+			1459 15
+		}
+		
+		victory_points = {
+			10488 8 
 		}
 		buildings = {
 			infrastructure = 3
@@ -16,9 +20,9 @@ state = {
 	}
 
 	provinces = {
-		1459
+		1459 10601 10488
 	}
-	manpower = 323000
+	manpower = 32300
 	buildings_max_level_factor = 1.000
 	state_category = rural
 

@@ -12,7 +12,18 @@ state={
 		add_core_of = SXS
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
+			arms_factory = 2
+			4634 = {
+				bunker = 2
+			}
+		}
+		
+
+		victory_points = {
+			1575 8 
+		}
+		victory_points = {
+			4634 10 
 		}
 	}
 	provinces={

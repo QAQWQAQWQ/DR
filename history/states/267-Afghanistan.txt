@@ -4,7 +4,7 @@ state={
 	name="STATE_267" # Kabul
 	manpower = 2318570
 	
-	state_category = town
+	state_category = city
 	resources={
 		grain=8
 	}
@@ -12,7 +12,8 @@ state={
 		tungsten=3 # was: 3
 	}
 	history={
-		owner = AFH
+		owner = AFG
+		add_core_of = AFG
 		add_core_of = AFH
 		buildings = {
 			infrastructure = 1
@@ -20,7 +21,7 @@ state={
 			industrial_complex = 2  
 		}
 		victory_points = {
-			10737 5 
+			10737 14
 		}
 	}
 

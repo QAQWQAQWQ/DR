@@ -2,7 +2,7 @@ state={
 	id=95
 	name="STATE_95"
 	resources={
-		grain=15
+		grain=26
 		
 	}
 	history={
@@ -10,10 +10,10 @@ state={
 		add_core_of = SHW
 		add_core_of = BLR
 		victory_points = {
-			3393 3
+			3393 5
 		}
 		victory_points = {
-			9304 1
+			9304 3
 		}
 		buildings = {
 			infrastructure = 3
@@ -24,7 +24,7 @@ state={
 	}
 
 	provinces={
-		318 3281 3309 3366 3393 3556 6280 6306 6359 6413 9236 9304 9359 11341 13206
+		318 3281 3309 3366 3393 3556 6280 6306 6359 6413 9236 9304 9359 11341 13206 3392 3256
 	}
 	manpower=1598900
 	buildings_max_level_factor=1.000

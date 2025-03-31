@@ -16,7 +16,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 185;6201;sea;1885;-1;-1;-1;-1;;Ösel-Dagö
 83;6201;sea;1660;-1;-1;-1;-1;;Dagö-Estonia
 6891;3838;sea;5579;-1;-1;-1;-1;;Sardinia-Corsica
-9990;4159;sea;5681;-1;-1;-1;-1;;Calabria-Sicily
 9793;9845;sea;8871;-1;-1;-1;-1;;Menorca-Mallorca
 12299;12113;sea;5539;-1;-1;-1;-1;;Singapore-Batam
 7396;1401;sea;5615;-1;-1;-1;-1;;Bangka Belitung-Sumatra
@@ -97,6 +96,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 379;13009;sea;5533;-1;-1;-1;-1;;St Vincent-St Lucia
 13009;177;sea;5533;-1;-1;-1;-1;;St Lucia-Martinique
 177;7123;sea;5533;-1;-1;-1;-1;;Martinique-Dominica
+9990;4159;sea;5681;-1;-1;-1;-1;;Calabria-Sicily
 7123;9377;sea;5533;-1;-1;-1;-1;;Dominica-Guadeloupe
 9377;4450;sea;2887;-1;-1;-1;-1;;Guadeloupe-Montserrat
 4450;13084;sea;2887;-1;-1;-1;-1;;Montserrat-Anguilla
@@ -110,7 +110,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 7003;9941;sea;7226;-1;-1;-1;-1;;Kos-Bodrum
 10007;10122;sea;7226;-1;-1;-1;-1;;Rhodes-Turkey
 9833;11829;sea;5412;-1;-1;-1;-1;;Bosphorus
-849;9887;sea;5412;-1;-1;-1;-1;;Dardanelles
+3879;6864;sea;7452;-1;-1;-1;-1;;Dardanelles
 9680;6741;sea;8282;-1;-1;-1;-1;;Kerch Strait
 9859;3962;sea;5946;-1;-1;-1;-1;;Tsugaru Strait
 10011;7110;sea;2708;4825;1219;-1;-1;;Tushima-Kyushu
@@ -134,68 +134,80 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10825;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
 10825;8029;impassable;-1;-1;-1;-1;-1;;Himalayas
 10910;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
-10910;12807;impassable;-1;-1;-1;-1;-1;;Himalayas
-12730;2098;impassable;-1;-1;-1;-1;-1;;Himalayas
-12730;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
-10810;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
+12892;4900;impassable;-1;-1;-1;-1;-1;;Himalayas
+12892;12807;impassable;-1;-1;-1;-1;-1;;Himalayas
+8010;2014;impassable;-1;-1;-1;-1;-1;;Himalayas
+12860;2014;impassable;-1;-1;-1;-1;-1;;Himalayas
+12860;2098;impassable;-1;-1;-1;-1;-1;;Himalayas
+12730;7455;impassable;-1;-1;-1;-1;-1;;Himalayas
+12730;1116;impassable;-1;-1;-1;-1;-1;;Himalayas
+7273;10802;impassable;-1;-1;-1;-1;-1;;Himalayas
+7273;5042;impassable;-1;-1;-1;-1;-1;;Himalayas
+10821;1970;impassable;-1;-1;-1;-1;-1;;Himalayas
+10821;5087;impassable;-1;-1;-1;-1;-1;;Himalayas
 1996;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
 1996;8041;impassable;-1;-1;-1;-1;-1;;Himalayas
 1996;5102;impassable;-1;-1;-1;-1;-1;;Himalayas
-4318;5102;impassable;-1;-1;-1;-1;-1;;Himalayas
 1898;8029;impassable;-1;-1;-1;-1;-1;;Himalayas
 1898;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
 3989;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
 1129;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
+4318;5102;impassable;-1;-1;-1;-1;-1;;Himalayas
+4318;12789;impassable;-1;-1;-1;-1;-1;;Himalayas
+4996;12789;impassable;-1;-1;-1;-1;-1;;Himalayas
+4996;12898;impassable;-1;-1;-1;-1;-1;;Himalayas
+4996;10863;impassable;-1;-1;-1;-1;-1;;Himalayas
+4425;10863;impassable;-1;-1;-1;-1;-1;;Himalayas
+12363;10863;impassable;-1;-1;-1;-1;-1;;Himalayas
+4210;10863;impassable;-1;-1;-1;-1;-1;;Himalayas
+4210;7976;impassable;-1;-1;-1;-1;-1;;Himalayas
+4210;5009;impassable;-1;-1;-1;-1;-1;;Himalayas
+
 4558;10826;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 4558;12653;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 4558;7519;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 12763;10826;impassable;-1;-1;-1;-1;-1;;peshawar mountains
-2084;7519;impassable;-1;-1;-1;-1;-1;;peshawar mountains
-10821;7519;impassable;-1;-1;-1;-1;-1;;peshawar mountains
+12717;10826;impassable;-1;-1;-1;-1;-1;;peshawar mountains
+
 4998;12831;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 4998;5082;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 1978;5082;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 1978;8090;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 7975;8090;impassable;-1;-1;-1;-1;-1;;peshawar mountains
-8044;8090;impassable;-1;-1;-1;-1;-1;;peshawar mountains
-8044;5064;impassable;-1;-1;-1;-1;-1;;peshawar mountains
-12805;7519;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
-12805;5087;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
-12805;1766;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
-10417;7519;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
-10417;12653;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
-8027;12653;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
-7224;12653;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
-7224;12314;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
-12218;12314;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
+12805;5087;impassable;-1;-1;-1;-1;-1;;dushanbe mountains
+12805;1766;impassable;-1;-1;-1;-1;-1;;dushanbe mountains
+10417;12653;impassable;-1;-1;-1;-1;-1;;dushanbe mountains
+12218;12314;impassable;-1;-1;-1;-1;-1;;dushanbe mountains
 12370;1766;impassable;-1;-1;-1;-1;-1;;pamir mountains
+5062;1766;impassable;-1;-1;-1;-1;-1;;pamir mountains
 12370;12119;impassable;-1;-1;-1;-1;-1;;pamir mountains
 5062;12119;impassable;-1;-1;-1;-1;-1;;pamir mountains
 5062;4828;impassable;-1;-1;-1;-1;-1;;pamir mountains
+5062;2015;impassable;-1;-1;-1;-1;-1;;pamir mountains
 4768;4828;impassable;-1;-1;-1;-1;-1;;pamir mountains
 4391;4828;impassable;-1;-1;-1;-1;-1;;pamir mountains
 4391;1703;impassable;-1;-1;-1;-1;-1;;pamir mountains
-4391;12526;impassable;-1;-1;-1;-1;-1;;pamir mountains
-611;3612;impassable;-1;-1;-1;-1;-1;;western alps
-11570;3612;impassable;-1;-1;-1;-1;-1;;western alps
-11570;9587;impassable;-1;-1;-1;-1;-1;;western alps
-6635;9587;impassable;-1;-1;-1;-1;-1;;western alps
-3641;11601;impassable;-1;-1;-1;-1;-1;;central alps
-3641;658;impassable;-1;-1;-1;-1;-1;;central alps
-6661;3662;impassable;-1;-1;-1;-1;-1;;eastern alps
-3662;11587;impassable;-1;-1;-1;-1;-1;;eastern alps
-11587;3660;impassable;-1;-1;-1;-1;-1;;eastern alps
-3660;6675;impassable;-1;-1;-1;-1;-1;;eastern alps
-6675;9633;impassable;-1;-1;-1;-1;-1;;eastern alps
-9633;9630;impassable;-1;-1;-1;-1;-1;;eastern alps
-9630;11618;impassable;-1;-1;-1;-1;-1;;eastern alps
-671;11634;impassable;-1;-1;-1;-1;-1;;austrian alps
-671;3675;impassable;-1;-1;-1;-1;-1;;austrian alps
-3675;668;impassable;-1;-1;-1;-1;-1;;austrian alps
-3674;3675;impassable;-1;-1;-1;-1;-1;;austrian alps
-3674;6691;impassable;-1;-1;-1;-1;-1;;austrian alps
-6691;6687;impassable;-1;-1;-1;-1;-1;;austrian alps
-6691;9650;impassable;-1;-1;-1;-1;-1;;austrian alps
-9650;3684;impassable;-1;-1;-1;-1;-1;;austrian alps
+10610;1708;impassable;-1;-1;-1;-1;-1;;pamir mountains
+13284;10713;impassable;-1;-1;-1;-1;-1;;altai mountains
+13284;4751;impassable;-1;-1;-1;-1;-1;;altai mountains
+4751;4849;impassable;-1;-1;-1;-1;-1;;altai mountains
+4849;10539;impassable;-1;-1;-1;-1;-1;;altai mountains
+4849;1774;impassable;-1;-1;-1;-1;-1;;altai mountains
+7737;1774;impassable;-1;-1;-1;-1;-1;;altai mountains
+13260;12671;impassable;-1;-1;-1;-1;-1;;altai mountains
+13260;12598;impassable;-1;-1;-1;-1;-1;;altai mountains
+1855;12598;impassable;-1;-1;-1;-1;-1;;altai mountains
+10560;12598;impassable;-1;-1;-1;-1;-1;;altai mountains
+1781;12598;impassable;-1;-1;-1;-1;-1;;altai mountains
+1781;4843;impassable;-1;-1;-1;-1;-1;;altai mountains
+1781;1778;impassable;-1;-1;-1;-1;-1;;altai mountains
+10560;1778;impassable;-1;-1;-1;-1;-1;;altai mountains
+7864;7727;impassable;-1;-1;-1;-1;-1;;altai mountains
+1781;7727;impassable;-1;-1;-1;-1;-1;;altai mountains
+4786;7727;impassable;-1;-1;-1;-1;-1;;altai mountains
+7803;10558;impassable;-1;-1;-1;-1;-1;;altai mountains
+10899;10558;impassable;-1;-1;-1;-1;-1;;altai mountains
+12671;7870;impassable;-1;-1;-1;-1;-1;;altai mountains
+
 3314;6336;sea;2752;2885;1578;2890;1581;;Afsluitdijk
 -1;-1;;-1;-1;-1;-1;-1;-1

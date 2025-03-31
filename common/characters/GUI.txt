@@ -7,11 +7,32 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=warlord-dictatorship
+			ideology=shishen-contdem
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
 		}
 	}		
-
+	GUI_WangZhangYuan={
+		name=GUI_WangZhangYuan
+		portraits={
+			army={
+				large="gfx/leaders/ZHX/portrait_WangZhangYuan.tga"
+			}
+		}
+		corps_commander={
+			traits={ Lieutenant_general }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+		country_leader={
+			ideology=warlord-dictatorship
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	}

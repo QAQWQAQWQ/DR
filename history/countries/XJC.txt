@@ -16,6 +16,14 @@ recruit_character = XJC_FangYaoNan
 recruit_character = XJC_YangZangXu
 recruit_character = XJC_FengDaShu
 recruit_character = XJC_HaoKeQuan
+recruit_character = XJC_Masud_Sabri
+recruit_character = XJC_MaShaoWu
+recruit_character = XJC_jinshuren
+recruit_character = XJC_Zhouwuxue
+recruit_character = XJC_zhang_peiyuan
+recruit_character = XJC_yang_feixia
+recruit_character = XJC_yulbars_khan
+recruit_character = XJC_liu_xizeng
 
 
 set_country_flag = parliament_mian_button_yes
@@ -66,7 +74,8 @@ add_ideas = {
 	Smallholder_economy
 }
 set_popularities = {
-	Paternalism = 50
+	Paternalism = 47
+	Moderate_Socialism = 3
 	Anarchism = 10
 	Dictatorship = 40
 }

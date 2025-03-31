@@ -1,11 +1,11 @@
 # The following scripted effect sets-up the parliament at game start.
 ENL_parliament_gui_initial = {
 	#政党席位
-	add_to_array = { parliament_seat_array = 2 } # Party A
-	add_to_array = { parliament_seat_array = 106 } # Party B
-	add_to_array = { parliament_seat_array = 3} # Party C
-	add_to_array = { parliament_seat_array = 81 } # Party D
-	add_to_array = { parliament_seat_array = 8 }# Party E
+	add_to_array = { parliament_seat_array = 82 } # Party A
+	add_to_array = { parliament_seat_array = 81 } # Party B
+	add_to_array = { parliament_seat_array = 13} # Party C
+	add_to_array = { parliament_seat_array = 22 } # Party D
+	add_to_array = { parliament_seat_array = 2 }# Party E
 	#政党数量
 	add_to_array = { parliament_member_array = 1 } # Party A
 	add_to_array = { parliament_member_array = 2 } # Party B

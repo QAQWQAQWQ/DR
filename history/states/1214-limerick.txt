@@ -1,0 +1,29 @@
+
+state={
+	id=1214
+	name="STATE_1214"
+	manpower =54720
+	
+	state_category = pastoral
+	resources={
+		grain=1
+	}
+
+	history={
+		owner = IRL
+		
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			9284 3 #Limerick
+		}
+		add_core_of = IRL
+	}
+
+	provinces={
+		6289 9284
+	}
+
+	local_supplies=0.0 
+}

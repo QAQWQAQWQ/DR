@@ -12,22 +12,36 @@ state={
 
 		}
 		victory_points = {
-			1588 5 
+			4592 5 
 		}
 		victory_points = {
-			7894 10 
+			1545 5 
+		}
+		
+		victory_points = {
+			1502 11
+		}
+		
+		victory_points = {
+			1847 5 
+		}
+
+		victory_points = {
+			10368 5 
 		}
 		victory_points = {
-			1732 5 
+			7832 10
 		}
+		
 	}
 
 	provinces={
-		1545 1588 1645 1693 1732 1847 4506 4592 4649 7526 7582 7613 7767 7832 7894 7897 10368 10379 10698 12485 12548 12618
+		1545 1588  1693 1732 1847  4592 4649 7526  7613 7767 7832 7894 7897 10368 10379 10698  12548 12618  4876 1502
+		    
 	}
 	manpower=3194191
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=town
 
 	local_supplies=0.0 
 }

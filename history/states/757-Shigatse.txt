@@ -2,7 +2,7 @@ state={
 	id=757
 	name="STATE_757"
 	provinces={
-		1991 2014 2098 4900 5033 8121 12807 
+		5011 10755 4994 10918 7926 5033 2098
 	}
 	manpower=1000000
 	buildings_max_level_factor=1.000
@@ -15,9 +15,15 @@ state={
 			industrial_complex = 1
 			arms_factory = 1
 		}
+		
+
 		victory_points = {
-			5033 5 
+			5033 10 
 		}
+		victory_points = {
+			7926 8 
+		}
+		
 
 	}
 

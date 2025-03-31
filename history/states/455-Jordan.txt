@@ -12,11 +12,23 @@ state={
 		owner = EYJ
 		add_core_of = EYJ
 		
-		
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+			4115 = {
+				naval_base = 1
+
+			}
+			
 		}
+		victory_points = {
+			4115 8
+		}
+		victory_points = {
+			1015 5
+		}
+		
+		
 		
 	}
 

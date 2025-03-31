@@ -1,14 +1,14 @@
 # The following scripted effect sets-up the parliament at game start.
 SHW_parliament_gui_initial = {
 	#政党席位
-	add_to_array = { parliament_seat_array = 15 } # Party A
-	add_to_array = { parliament_seat_array = 37 } # Party B
-	add_to_array = { parliament_seat_array = 25 } # Party C
-	add_to_array = { parliament_seat_array = 12 } # Party D
-	add_to_array = { parliament_seat_array = 15 }# Party E
-	add_to_array = { parliament_seat_array = 69 }# Party F
-	add_to_array = { parliament_seat_array = 6 }# Party F
-	add_to_array = { parliament_seat_array = 21 }# Party F
+	add_to_array = { parliament_seat_array = 5 } # Party A
+	add_to_array = { parliament_seat_array = 44 } # Party B
+	add_to_array = { parliament_seat_array = 27 } # Party C
+	add_to_array = { parliament_seat_array = 22 } # Party D
+	add_to_array = { parliament_seat_array = 6 }# Party E
+	add_to_array = { parliament_seat_array = 3 }# Party F
+	add_to_array = { parliament_seat_array = 10 }# Party F
+	add_to_array = { parliament_seat_array = 83 }# Party F
 	#政党数量
 	add_to_array = { parliament_member_array = 1 } # Party A
 	add_to_array = { parliament_member_array = 2 } # Party B

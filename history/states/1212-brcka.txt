@@ -1,0 +1,27 @@
+
+state={
+	id=1212
+	name="STATE_1212"
+	manpower =154720
+	
+	state_category = pastoral
+	resources={
+		grain=3
+	}
+
+	history={
+		owner = KLD
+		
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = KLD
+		add_core_of = DMT
+	}
+
+	provinces={
+		11574 13367 13368
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,37 @@
+add_namespace = honprewar
+add_namespace = honcivwar
+
+country_event = {
+	id = honcivwar.1
+	hidden = yes
+	title = honcivwar.1.t
+	desc = honcivwar.1.d
+
+	fire_only_once = yes
+	trigger = {
+		AND={
+			date > 1924.2.1
+			date < 1924.2.3
+		}
+	}
+		
+
+	option = {
+		name = honcivwar.1.a
+		HOR = {transfer_state = 1238
+	load_oob = HOR_1920}
+	1238 = {add_core_of = HOR}
+	312 = {add_core_of = HOR}
+		HOR = {declare_war_on = {target = HON type = annex_everything}}
+		set_variable = {global.honcivilwar = 1}
+		HOR = {
+			set_province_controller = 13395
+		set_province_controller = 13394
+		}
+		HON = {
+		set_popularities = {
+			Dictatorship = 100
+		}
+	}
+	}
+}

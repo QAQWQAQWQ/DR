@@ -6,12 +6,42 @@ characters={
 				large="gfx/leaders/HLP/Portrait_Xu_LangZhou.tga"
 			}
 		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
 		country_leader={
-			ideology=warlord-dictatorship
+			ideology=monarch-restorationism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
 		}				
+	}
+	HLP_ZhuQingLan={
+		name=HLP_ZhuQingLan
+		portraits={
+			army={
+				large="gfx/leaders/FTX/Portrait_ZhuQingLang.tga"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+		country_leader={
+			ideology=warlord-poly
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}	
 	}
 	HLP_BiGuiFang={
 		name=HLP_BiGuiFang
@@ -21,7 +51,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=civilian-dictatorship
+			ideology=warlord-poly
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1

@@ -13,20 +13,7 @@ characters={
 			id=-1
 		}
 	}
-	SXX_FengYuXiang={
-		name=SXX_FengYuXiang
-		portraits={
-			civilian={
-				large="gfx/leaders/SXX/portrait_FengYuXiang.tga"
-			}
-		}
-		country_leader={
-			ideology=Authoritarian_Conservatism
-			traits={  }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
+	
 	SXX_PangBingXun={
 		name=SXX_PangBingXun
 		portraits={
@@ -74,17 +61,40 @@ characters={
 			
 		}
 		country_leader={
+			ideology=warlord-poly
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal = {
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}	
+	SXX_LuJianZhang={
+		name=SXX_LuJianZhang
+		portraits={
+			civilian={
+				large="gfx/leaders/SXX/portrait_ZhangFenghui.tga"
+			}
+			
+		}
+		country_leader={
 			ideology=warlord-dictatorship
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
 		}
-		corps_commander={
+		field_marshal = {
 			traits={ }
-			skill=4
-			attack_skill=3
-			defense_skill=3
-			planning_skill=2
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
 			logistics_skill=1
 		}
 	}	

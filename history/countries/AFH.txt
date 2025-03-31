@@ -52,6 +52,7 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no
 }
+declare_war_on = {target = AFG type = annex_everything}
 add_ideas = {
 	Smallholder_economy
 }

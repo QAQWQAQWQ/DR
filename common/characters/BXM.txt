@@ -12,6 +12,20 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+	}
+	BXM_Franz_Ferdinand_I={
+		name=BXM_Franz_Ferdinand_I
+		portraits={
+			civilian={
+				large="gfx/leaders/AOX/Portrait_Archduke_Ferdinand4.tga"
+			}
+		}
+		country_leader={
+			ideology=autocratic-constitutional-monarchy
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
 	}		
 	BXM_Maximilian_I={
 		name=BXM_Maximilian_I
@@ -34,13 +48,7 @@ characters={
 				large="gfx/leaders/BXM/portrait_Johann_II_Nepomuk_Adolf_Maria_Hubert_Maximin.tga"
 			}
 		}
-		field_marshal = {
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-		}
+		
 		country_leader={
 			ideology=Authoritarian_Conservatism
 			traits={  }

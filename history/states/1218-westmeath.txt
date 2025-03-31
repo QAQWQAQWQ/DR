@@ -1,0 +1,35 @@
+
+state={
+	id=1218
+	name="STATE_1218" 
+	manpower = 327600
+	resources={
+		aluminium=1
+		steel=1 
+	}
+	resources={
+		grain=3
+	}
+	state_category = pastoral
+	
+	history={
+		owner = IRL
+		
+		victory_points = {
+			303 1 #Tullamore
+		}
+		
+		buildings = {
+			infrastructure = 2
+			
+			
+		}
+		add_core_of = IRL
+	}
+
+	provinces={
+		303 369 
+	}
+
+	local_supplies=0.0 
+}

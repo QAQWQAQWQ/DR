@@ -1,4 +1,4 @@
-﻿capital = 318
+﻿capital = 1234
 
 oob = "HAT_1920"
 
@@ -11,9 +11,8 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-
-recruit_character = HAT_Philippe_Sudre_Dartiguenave
 recruit_character = HAT_Smedley_Darlington_Butler
+recruit_character = HAT_Philippe_Sudre_Dartiguenave
 
 	set_technology = {
 		interwar_artillery = 1
@@ -49,7 +48,7 @@ recruit_character = HAT_Smedley_Darlington_Butler
 	}
 
 set_politics = {
-	ruling_party = Liberalism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -59,8 +58,8 @@ add_ideas={
 Smallholder_economy
 }
 set_popularities = {
-	Liberalism = 93
-	Conservatism = 7
+	Dictatorship = 95
+	Liberalism = 4.65
+	Conservatism = 0.35
 }
-give_military_access = UBS
 give_military_access = BNA

@@ -10,6 +10,9 @@ state={
 	history={
 		owner = WSP
 		add_core_of = WSP
+		
+
+
 		victory_points = {
 			9971 3 
 		}
@@ -19,8 +22,22 @@ state={
 		victory_points = {
 			7055 3 
 		}
+
 		victory_points = {
-			4010 3 
+			4037 12 
+		}
+		victory_points = {
+			10043 12 
+		}
+		victory_points = {
+			1124 5 
+		}
+		victory_points = {
+			12069 8 
+		}
+		
+		victory_points = {
+			12015 8 
 		}
 		buildings = {
 			infrastructure = 2
@@ -28,7 +45,7 @@ state={
 		}
 	}
 	provinces={
-		1124 1154 4037 4181 7055 9971 10043 10072 12015 12069 9956 7200 4010 7129
+		1124 1154 4037 4181 7055 9971 10043 10072 12015 12069 9956
 	}
 
 	local_supplies=4.0 

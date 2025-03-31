@@ -1,0 +1,25 @@
+state = {
+	id = 1264
+	name = "STATE_1264"
+	resources={
+		grain=1
+	}
+	history = {
+		owner = TGA
+
+		buildings = {
+			infrastructure = 1
+
+		}
+		
+	}
+
+	provinces = {
+		10395
+	}
+	manpower = 4230
+	buildings_max_level_factor = 1.000
+	state_category = rural
+
+	local_supplies = 0.0 
+}

@@ -16,7 +16,7 @@ state={
 	}
 	history={
 		owner = UBS
-		
+		add_dynamic_modifier = {modifier=UBS_Free_State}
 		buildings = {
 			infrastructure = 2
 		}
@@ -24,7 +24,7 @@ state={
 	}
 
 	provinces={
-		1862 4521 4607 4736 4799 4816 7756 7827 7879 10422 10591 12134 12399 12425 
+		1862 4521 4607 4736 4816 7756 7827 7879 10422 10591 12134 12399 12425 4799
 	}
 
 	local_supplies=0.0 

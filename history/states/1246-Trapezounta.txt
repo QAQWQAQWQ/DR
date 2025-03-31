@@ -1,0 +1,38 @@
+
+state={
+	id=1246
+	name="STATE_1246"
+	manpower = 71697
+	
+	state_category = city
+	resources={
+		grain=2
+	}
+	history={
+		owner = YED
+		add_core_of = YED
+		
+		victory_points = {
+			9932 13
+		}
+
+		victory_points = {
+			13448 1
+		}
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 2
+			9932 = {
+				naval_base = 4
+			}
+		}
+	}
+
+	provinces={
+		9932 13448
+	}
+
+	local_supplies=0.0 
+}

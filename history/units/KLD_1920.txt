@@ -1,5 +1,18 @@
+
+###################################################################
+
 division_template = {
-	name = "Infanterie-Division"			
+	name = "Infanterie Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Domobranska pješačka divizija"
+	division_names_group = KLD_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -8,75 +21,113 @@ division_template = {
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 	}
-	priority = 1
-	support = {
-        artillery = { x = 0 y = 0 }
+}
+### "Landsturm" militia
+division_template = {
+	name = "Pučki pješačka divizija"
+	division_names_group = KLD_MIL_01
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		militia = { x = 2 y = 2 }
 	}
 }
+### Territorial Army Cavalry
 division_template = {
-	name = "Kavallerie-Brigade"
+	name = "Domobranska konjička divizija"
+	division_names_group = KLD_CAV_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
-        cavalry = { x = 0 y = 1 }
-        cavalry = { x = 1 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
-	}
-	support = {
-	    recon = { x = 0 y = 0 }
+		cavalry = { x = 1 y = 2 }
 	}
 }
+###################################################################
 
 units = {
-	
-	
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location = 11741
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
+	division= {
+			name = "1. Schutzkorps"
+			location = 11741 #
+			division_template="Infanterie Division"
+			start_experience_factor = 0.2
 	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 4
-		}
-		location = 11741
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
+	division= { 
+			name = "1. Schutzkorps"
+			location = 6983 #
+			division_template="Infanterie Division"
+			start_experience_factor = 0.2
 	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location = 11741
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 11741
-		division_template = "Kavallerie-Brigade"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division= {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 11741
-		division_template = "Kavallerie-Brigade"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
+		location = 9894
+		division_template = "Domobranska pješačka divizija"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 11899
+		division_template = "Domobranska pješačka divizija"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6614
+		division_template = "Pučki pješačka divizija"
+		start_experience_factor = 0.1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 6983
+		division_template = "Pučki pješačka divizija"
+		start_experience_factor = 0.1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 6957
+		division_template = "Pučki pješačka divizija"
+		start_experience_factor = 0.1
+	}
+	#Banja Luka
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 6619
+		division_template = "Pučki pješačka divizija"
+		start_experience_factor = 0.1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 6799
+		division_template = "Pučki pješačka divizija"
+		start_experience_factor = 0.1
 	}
 }

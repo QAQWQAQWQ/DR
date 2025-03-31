@@ -4,7 +4,7 @@ state={
 	name="STATE_418"
 	manpower = 332362
 	
-	state_category = wasteland
+	state_category = town
 	resources={
 		grain=12
 	}
@@ -14,13 +14,13 @@ state={
 			infrastructure = 1
 		}
 		victory_points = {
-			8093 1 
+			8093 3
 		}
 		add_core_of = YEL
 	}
 
 	provinces={
-		8093 11671 12704 12748 12818 
+		8093 11671 12704 12748 12818
 	}
 
 	local_supplies=0.0 

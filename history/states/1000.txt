@@ -7,15 +7,17 @@ state={
 	history={
 		owner = WSP
 		add_core_of = WSP
-		victory_points = {
-			11962 3 
-		}
+		
 		buildings = {
 			infrastructure = 1
 		}
+		victory_points = {
+			7160 8 
+		}
+		
 	}
 	provinces={
-		7160 9987 11962
+		7160 9987
 	}
 
 	local_supplies=4.0 

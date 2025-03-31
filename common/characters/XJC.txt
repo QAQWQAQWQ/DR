@@ -5,9 +5,20 @@ characters={
 			civilian={
 				large="gfx/leaders/XJC/portrait_FengDaShu.tga"
 			}
+			army={
+				large="gfx/leaders/XJC/portrait_FengDaShu.tga"
+			}
+		}
+		corps_commander = {
+			traits = { adaptable }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
 		}
 		country_leader={
-			ideology=Paternalist_Constitutional_Sanmin_Doctrine
+			ideology=sanmin-paternalism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -22,7 +33,37 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Paternalist_Constitutional_Sanmin_Doctrine
+			ideology=sanmin-paternalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	XJC_zhang_peiyuan = {
+		name = XJC_zhang_peiyuan
+		portraits = {
+			army = {
+				large = "gfx/leaders/XJC/Portrait_Zhang_Peiyuan.tga"
+			}
+		}
+		corps_commander = {
+			traits = { brilliant_strategist trickster hill_fighter }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	XJC_Masud_Sabri={
+		name=XJC_Masud_Sabri
+		portraits={
+			civilian={
+				large="gfx/leaders/XJC/portrait_Meswud.tga"
+			}
+		}
+		country_leader={
+			ideology=jadidism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -34,6 +75,17 @@ characters={
 			civilian={
 				large="gfx/leaders/XJC/portrait_YangZangXu.tga"
 			}
+			army={
+				large="gfx/leaders/XJC/portrait_YangZangXu.tga"
+			}
+		}
+		field_marshal = {
+			traits = { adaptable  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
 		}
 		country_leader={
 			ideology=Gelaohui_Order
@@ -42,7 +94,39 @@ characters={
 			id=-1
 		}
 	}
-	
+	XJC_yulbars_khan = {
+		name = XJC_yulbars_khan
+		portraits = {
+			army = {
+				large = "gfx/leaders/XJC/Portrait_Kumul_Yulbars_Khan.tga"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_officer politically_connected desert_fox }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	XJC_liu_xizeng = {
+		name = XJC_liu_xizeng
+		portraits = {
+			army = {
+				
+				large = "gfx/leaders/XJC/Portrait_Kumul_Liu_Xiceng.tga"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless trickster }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
 
 	XJC_ShengShiCai={
 		name=XJC_ShengShiCai
@@ -50,24 +134,46 @@ characters={
 			civilian={
 				large="gfx/leaders/XJC/portrait_ShengShiCai.tga"
 			}
+			army={
+				large="gfx/leaders/XJC/portrait_ShengShiCai.tga"
+			}
+		}
+		corps_commander = {
+			traits = { adaptable}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
 		}
 		country_leader={
-			ideology=Authoritarian_Conservatism
+			ideology=Warlord-Dictatorship
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
 		}
 	}
-	
-    XJC_YangZengXin={
-		name=XJC_YangZengXin
+
+	XJC_MaShaoWu={
+		name=XJC_MaShaoWu
 		portraits={
 			civilian={
-				large="gfx/leaders/XJC/portrait_YangZengXin.tga"
+				large="gfx/leaders/XJC/portrait_MaShaoWu.tga"
+			}
+			army={
+				large="gfx/leaders/XJC/portrait_MaShaoWu.tga"
 			}
 		}
+		corps_commander = {
+			traits = { adaptable}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
 		country_leader={
-			ideology=Authoritarian_Conservatism
+			ideology=Warlord-Dictatorship
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -80,9 +186,20 @@ characters={
 			civilian={
 				large="gfx/leaders/XJC/portrait_jinshuren.tga"
 			}
+			army={
+				large="gfx/leaders/XJC/portrait_jinshuren.tga"
+			}
+		}
+		corps_commander = {
+			traits = { adaptable}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
 		}
 		country_leader={
-			ideology=Authoritarian_Conservatism
+			ideology=Warlord-Dictatorship
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -94,9 +211,20 @@ characters={
 			civilian={
 				large="gfx/leaders/XJC/portrait_FengTeMing.tga"
 			}
+			army={
+				large="gfx/leaders/XJC/portrait_FengTeMing.tga"
+			}
+		}
+		field_marshal = {
+			traits = { adaptable  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
 		}
 		country_leader={
-			ideology=Paternalist_Constitutional_Sanmin_Doctrine
+			ideology=sanmin-paternalism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -108,13 +236,82 @@ characters={
 			civilian={
 				large="gfx/leaders/XJC/portrait_HaoKeQuan.tga"
 			}
+			army={
+				large="gfx/leaders/XJC/portrait_HaoKeQuan.tga"
+			}
+		}
+		field_marshal = {
+			traits = { adaptable  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
 		}
 		country_leader={
-			ideology=Paternalist_Constitutional_Sanmin_Doctrine
+			ideology=sanmin-paternalism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
 		}
 	}
-	
+	XJC_Zhouwuxue={
+		name=XJC_Zhouwuxue
+		portraits={
+			civilian={
+				large="gfx/leaders/XJC/Portrait_ZhouWuXue.tga"
+			}
+			army={
+				large="gfx/leaders/XJC/Portrait_ZhouWuXue.tga"
+			}
+		}
+		field_marshal = {
+			traits = { adaptable  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		country_leader={
+			ideology=sanmin-paternalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	##############general
+	XJC_zhang_peiyuan = {
+		name = XJC_zhang_peiyuan
+		portraits = {
+			army = {
+				large = "gfx/leaders/XJC/Portrait_Zhang_Peiyuan.tga"
+			}
+		}
+		corps_commander = {
+			desc = XJC_zhang_peiyuan_desc
+			traits = { brilliant_strategist trickster hill_fighter }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	XJC_yang_feixia = {
+		name = XJC_yang_feixia
+		portraits = {
+			army = {
+				large = "gfx/leaders/XJC/portrait_YangFeiXia.tga"
+			}
+		}
+		corps_commander = {
+			traits = { adaptable }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
 	}

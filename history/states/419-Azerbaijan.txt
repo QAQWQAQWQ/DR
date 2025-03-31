@@ -8,19 +8,20 @@ state={
 	}
 	state_category = rural
 	history={
-		owner = YEL
+		owner = SHW
 		add_core_of = ABA
 		add_core_of = YEL
 		buildings = {
 			infrastructure = 2
 		}
 		victory_points = {
-			1896 3 
+			1896 15
 		}
+		
 	}
 
 	provinces={
-		1896 2071 4553 4755 4825 10454 10523 12793 12861
+		1896 4755 13120 1636 4901 2071  4825 10454  12793 12861
 	}
 
 	local_supplies=4.0 

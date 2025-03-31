@@ -16,6 +16,7 @@ state={
 		grain=11
 	}
 	history={
+		add_dynamic_modifier = {modifier=UBS_Slave_State}
 		owner = UBS
 		add_core_of = UBS
 		buildings = {
@@ -26,7 +27,7 @@ state={
 
 			}
 			10337 = {
-				naval_base = 6
+				naval_base = 10
 				coastal_bunker = 10
 
 			}
@@ -52,13 +53,13 @@ state={
 		}
 
 		victory_points = {
-			10337 25
+			10337 30
 		}
 		victory_points = {
-			3960 10 
+			3960 23
 		}
 		victory_points = {
-			12782 1 
+			12782 23 
 		}
 
 	}

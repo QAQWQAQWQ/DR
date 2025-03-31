@@ -1,0 +1,27 @@
+
+state={
+	id=1275
+	name="STATE_1275"
+	manpower = 559739
+	state_category = rural
+	resources={
+		grain=9
+	}
+	history={
+		owner = SHW
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			5029 10
+		}
+		add_core_of = YEL
+	}
+
+	provinces={
+		7602 10351 1521 5029 2000
+	}
+
+	local_supplies=5.0 
+}

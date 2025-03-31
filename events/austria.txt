@@ -65,7 +65,7 @@ country_event = {
 		}
 		set_variable = { global.pre_win_german_war = 1 }
 			
-		set_variable = { global.german_war = 1 }
+		set_variable = { global.german_war = 2 }
 		diplomatic_relation = { country = AOX relation = non_aggression_pact }
 		AOX = { dismantle_faction = yes }
 		if = {
@@ -797,6 +797,54 @@ country_event = {
 	}
 }
 country_event = {
+	id = aushun.10
+	title = aushun.10.t
+	desc = aushun.10.d
+	picture = GFX_austria_1_pict
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = aushun.10.a
+		news_event = WorldNew.23
+		KOH = {
+			transfer_state = 918
+			transfer_state = 1018
+			transfer_state = 764
+			transfer_state = 45
+			transfer_state = 82
+			transfer_state = 84
+			transfer_state = 1019
+			transfer_state = 76
+			transfer_state = 83
+			transfer_state = 1122
+			transfer_state = 73
+			transfer_state = 70
+			transfer_state = 71
+			transfer_state = 664
+			transfer_state = 920
+			transfer_state = 921
+			transfer_state = 155
+			transfer_state = 43
+			transfer_state = 154
+			
+		}
+		AOX = {set_autonomy = { target = KOH autonomy_state = autonomy_Crown_Territory }}
+		KOH = {
+			set_politics = {
+				ruling_party = Dictatorship
+				last_election = "1918.11.11"
+				election_frequency = 72
+				elections_allowed = no
+			}
+			
+			set_popularities = {
+				Paternalism = 20
+				Dictatorship = 80
+			}
+		}
+	}
+}
+country_event = {
 	id = aus4italian.1
 	title = aus4italian.1.t
 	desc = aus4italian.1.d
@@ -806,11 +854,41 @@ country_event = {
 	option = {
 		name = aus4italian.1.a
 		news_event = ITANews.18
+		if = {
+			limit = {AOX = {controls_state = 1039}}
+			1039 = {
+				transfer_state_to = PMA
+			}
+			AOX = {set_autonomy = { target = PMA autonomy_state = autonomy_occupation_zone }}
+			PMA = {
+				set_politics = {
+					ruling_party = Dictatorship
+					last_election = "1918.11.11"
+					election_frequency = 72
+					elections_allowed = no
+				}
+			
+				
+				set_popularities = {
+					Dictatorship = 100
+				}
+			}
+		}
 		ITE = {leave_faction = yes}
 		AOX = {white_peace = ITE}
 		WWS = {white_peace = ITE}
+		735 = {
+			transfer_state_to = ITE
+		}
+		158 = {
+			transfer_state_to = ITE
+		}
+		941 = {
+			transfer_state_to = ITE
+		}
+		
 		ai_chance = {
-            base = 80
+            base = 100
         }
 	}
 	option = {
@@ -853,7 +931,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-            base = 20 
+            base = 0
         }
 }
 }

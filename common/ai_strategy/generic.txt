@@ -4,8 +4,11 @@ no_invasions = {
 			tag = ENL
 			tag = UBS
 			tag = JPN
-			tag = ITE
+			tag = FRW
 			tag = SHW
+			tag = NPL
+			tag = YED
+			tag = EYJ
 		}
 	}
 	enable = {
@@ -52,19 +55,430 @@ GER_dont_join_wars = {
 	ai_strategy = {
 		type = dont_join_wars_with
 		id = AOX
-		value = -100
+		value = 0
 		target_country = KOH
 	}
 	ai_strategy = {
 		type = dont_join_wars_with
 		id = AOX
-		value = -100
+		value = 0
 		target_country = XYL
 	}
 	ai_strategy = {
 		type = dont_join_wars_with
 		id = AOX
-		value = -100
+		value = 0
 		target_country = HUN
+	}
+}
+
+4ITA_italian_helpers = {
+	allowed = {
+		OR={
+		original_tag = SHW
+		original_tag = NPL
+		original_tag = FRW
+		original_tag = YED
+		original_tag = ITE
+		}
+	}
+	enable = {
+		check_variable = {global.4italian_war = 1}
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ITC
+		value = 1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = RDN
+		value = 1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ITE
+		value = 1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ICD
+		value = 1000
+	}
+}
+4ITA_austrian_helpers = {
+	allowed = {
+		OR={
+		original_tag = ENL
+		}
+	}
+	enable = {
+		check_variable = {global.4italian_war = 1}
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = AOX
+		value = 1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = VCT
+		value = 1000
+	}
+}
+austrian_dislikers = {
+	allowed = {
+		OR={
+			original_tag = AGC
+			original_tag = LSB
+			original_tag = DHD
+			original_tag = DON
+			original_tag = DOF
+			original_tag = DOB
+			original_tag = DOR
+			original_tag = BXM
+			original_tag = DOL
+			original_tag = DOH
+			original_tag = DOA
+			original_tag = DOM
+			original_tag = DOS
+			original_tag = SAD
+			original_tag = SAA
+			original_tag = SAB
+			original_tag = SAC
+			original_tag = SAE
+			original_tag = SAF
+			original_tag = SAG
+			original_tag = DSX
+		}
+	}
+	enable = {
+		OR = {
+			check_variable = {global.4italian_war = 1}
+			check_variable = {global.illyrian_war_str = 1}
+		}
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = AOX
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = VCT
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = BXM
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = KGL
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = HES
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ALB
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = DMT
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = KOH
+		value = -1000
+	}
+}
+illyrian_war_helpers = {
+	allowed = {
+		OR={
+		original_tag = SIW
+		}
+	}
+	enable = {
+		check_variable = {global.illyrian_war_str = 1}
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = DMT
+		value = 1000
+	}
+}
+4ITA_prehelpita = {
+	allowed = {
+		OR={
+		original_tag = WWS
+		}
+	}
+	enable = {
+		check_variable = {global.4italian_war = 1}
+		NOT = {
+		check_variable = {global.pre_accpect_aus = 1}
+		}
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ITC
+		value = 1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = RDN
+		value = 1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ITE
+		value = 1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ICD
+		value = 1000
+	}
+}
+4ITA_prehelpaox = {
+	allowed = {
+		OR={
+		original_tag = WWS
+		}
+	}
+	enable = {
+		check_variable = {global.4italian_war = 1}
+		check_variable = {global.pre_accpect_aus = 1}
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = AOX
+		value = 1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = VCT
+		value = 1000
+	}
+}
+4ITA_itadefendnofra = {
+	allowed = {
+		OR={
+		original_tag = ITC
+		original_tag = RDN
+		original_tag = ITE
+		original_tag = ICD
+		}
+	}
+	enable = {
+		check_variable = {global.4italian_war = 1}
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = FRW
+		value = 1000
+	}
+}
+
+4ITA_fradefendita = {
+	allowed = {
+		OR={
+		original_tag = FRW
+		}
+	}
+	enable = {
+		check_variable = {global.4italian_war = 1}
+	}
+	ai_strategy = {
+		type = force_defend_ally_borders
+		id = ITC
+		value = 1000
+	}
+	ai_strategy = {
+		type = force_defend_ally_borders
+		id = RDN
+		value = 1000
+	}
+	ai_strategy = {
+		type = force_defend_ally_borders
+		id = ITE
+		value = 1000
+	}
+	ai_strategy = {
+		type = force_defend_ally_borders
+		id = ICD
+		value = 1000
+	}
+}
+gerwar_dontgotoafrica = {
+	allowed = {
+		OR={
+			original_tag = AGC
+			original_tag = LSB
+			original_tag = DHD
+			original_tag = DON
+			original_tag = DOF
+			original_tag = DOB
+			original_tag = DOR
+			original_tag = BXM
+			original_tag = DOL
+			original_tag = DOH
+			original_tag = DOA
+			original_tag = DOM
+			original_tag = DOS
+			original_tag = SAD
+			original_tag = SAA
+			original_tag = SAB
+			original_tag = SAC
+			original_tag = SAE
+			original_tag = SAF
+			original_tag = SAG
+			original_tag = WWS
+			original_tag = AOX
+			original_tag = VCT
+			original_tag = BXM
+			original_tag = KOH
+			original_tag = KGL
+			original_tag = TRA
+			original_tag = DMT
+			original_tag = HES
+			original_tag = ALB
+		}
+	}
+	enable = {
+		check_variable = {global.german_war = 1}
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = DSX
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = DAS
+		value = 1000
+	}
+}
+
+prussian_helpers = {
+	allowed = {
+		OR={
+		original_tag = SHW
+		original_tag = YED
+		original_tag = HEL
+		}
+	}
+	enable = {
+		check_variable = {global.german_war = 1}
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = WWS
+		value = 1000
+	}
+}
+
+austrian_helpers = {
+	allowed = {
+		OR={
+		original_tag = ENL
+		}
+	}
+	enable = {
+		check_variable = {global.german_war = 1}
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = AOX
+		value = 1000
+	}
+}
+
+prussian_helpers_help_italy = {
+	allowed = {
+		OR={
+		original_tag = HEL
+		}
+	}
+	enable = {
+		check_variable = {global.4italian_war = 1}
+		check_variable = {global.german_war = 1}
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ITC
+		value = 1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = RDN
+		value = 1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ITE
+		value = 1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ICD
+		value = 1000
+	}
+}
+AFG_helpers = {
+	allowed = {
+		OR={
+		original_tag = ENL
+		original_tag = YDA
+		original_tag = XJC
+		}
+	}
+	enable = {
+		check_variable = {global.afgcivilwar = 1}
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = AFG
+		value = 1000
+	}
+}
+
+AFG_helpers = {
+	allowed = {
+		OR={
+		original_tag = SHW
+		original_tag = YED
+		}
+	}
+	enable = {
+		check_variable = {global.afgcivilwar = 1}
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = AFH
+		value = 1000
+	}
+}
+
+after_illwar_nohelpers = {
+	allowed = {
+		OR={
+		original_tag = SIW
+		}
+	}
+	enable = {
+		check_variable = {global.illyrian_war_str = 2}
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = DMT
+		value = -1000
 	}
 }

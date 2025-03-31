@@ -32,7 +32,7 @@ recruit_character = JPN_Yamakawa_Hitoshi
 recruit_character = JPN_Shigenobu_Okuma
 recruit_character = JPN_Yamagata_Aritomo
 recruit_character = JPN_Emperor_Taisho 
-recruit_character = JPN_Honorable
+recruit_character = JPN_Hara_Takashi
 recruit_character = JPN_Saionji_Kinmoch
 recruit_character = JPN_Korekiyo_Takahashi
 recruit_character = JPN_Inuto_Yi
@@ -82,14 +82,14 @@ recruit_character = JPN_Matsui_Iwane
 		
 		
 	}
-
+	give_guarantee = KON
 set_politics = {
 	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no	
 }
-#create_faction = Empire_Japan
+create_faction = Empire_Japan
 ##add_to_faction = RTW
 ##add_to_faction = KON
 #set_autonomy = { target = KON autonomy_state = autonomy_wtt_imperial_protectorate }
@@ -123,8 +123,15 @@ Theocratic_state
 
 }
 set_popularities = {
-	Dictatorship = 100
+	Paternalism = 6
+	Dictatorship = 85
+	Liberalism = 3
+	Conservatism = 3
+	Reformism = 1
+	Moderate_Socialism = 1
+	Nationalism = 1
 }
 country_event = {id=JPN.1 days=15}
 give_guarantee = KON
 give_guarantee = PHL
+give_guarantee = GGZ

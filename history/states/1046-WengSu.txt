@@ -1,12 +1,24 @@
 state={
 	id=1046
 	name="STATE_1046"
+	resources = {
+
+	}
 	provinces={
-		1703 4682 4828 7949 12119  8086
+		1703 4682 4828 7949 8086 5016 13425
 	}
 	history={
 		owner = XJC
 		add_core_of = XJC
+		victory_points = {
+			13425 8
+		}
+		victory_points = {
+			4828 5 
+		}
+		victory_points = {
+			4682 5 
+		}
 		buildings = {
 
 		}
@@ -14,6 +26,6 @@ state={
 	}
 	manpower=917000
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=rural
 	local_supplies=0.000
 }

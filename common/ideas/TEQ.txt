@@ -19,8 +19,8 @@ ideas = {
 		TEQ_religious_conflict = {
 			picture = TEQ_religious_conflict
 			modifier = {
-				resistance_activity = 0.1
-				required_garrison_factor = 0.1
+				resistance_activity = 0.01
+				required_garrison_factor = 0.01
 			}
         }
 		

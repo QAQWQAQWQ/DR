@@ -7,9 +7,15 @@ state={
 	history={
 		owner =MAQ
 		add_core_of = MAQ
+		
 		victory_points = {
-			7940 2
+			4964 5
 		}
+
+		victory_points = {
+			7940 5
+		}
+		
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 2
@@ -18,7 +24,7 @@ state={
 	}
 
 	provinces={
-		4914 4964 7940 8018 8037 12899 
+		4914 4964 7940 8018 8037 12899 1882
 	}
 	manpower=1196100
 	buildings_max_level_factor=1.000

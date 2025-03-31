@@ -50,7 +50,7 @@ recruit_character = SXX_Yang_huCheng
 	}
 
 set_politics = {
-	ruling_party = Dictatorship
+	ruling_party = Paternalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -59,6 +59,7 @@ add_ideas = {
 	Smallholder_economy
 }
 set_popularities = {
-	Dictatorship = 80
-	Paternalism = 20
+	Paternalism = 80
+	Liberalism = 17
+	Revolutionism = 3
 }

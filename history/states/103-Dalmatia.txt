@@ -13,17 +13,20 @@ state={
 	history={
 		owner = DMT
 		victory_points = { #Split
-			3924 3
+			3924 10
+		}
+		victory_points = { #Dubrovnik
+			6889 5
 		}
 		buildings = {
 			infrastructure = 3
 			dockyard = 1
 			industrial_complex = 3
 			3924 = {
-				naval_base = 5
+				naval_base = 3
 			}
 			6889 = {
-				naval_base = 5
+				naval_base = 1
 			}
 		}
 		add_core_of = DMT

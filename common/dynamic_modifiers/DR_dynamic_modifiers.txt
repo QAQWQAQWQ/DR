@@ -171,7 +171,7 @@ FRW_Brittany_National_autonomy= {
 
 FRW_Lorraine_guerrillas= {
 	enable = { always = yes }
-
+	
 	icon = GFX_idea_Lorraine_guerrillas
 
     resistance_damage_to_garrison=0.03
@@ -479,4 +479,25 @@ SHW_dynamic_Focus_8= {
 	max_surrender_limit_offset=0.1
 	conscription_factor=0.1	
     recruitable_population_factor=0.1
+}
+
+UBS_Slave_State= {
+	enable = { always = yes }
+
+	icon = GFX_idea_Slavery
+	
+}
+
+UBS_Free_State= {
+	enable = { always = yes }
+
+	icon = GFX_idea_thriving_market
+	
+}
+
+IRL_Furious_Alster= {
+	enable = { always = yes }
+	stability_weekly = -0.002
+	icon = GFX_idea_England
+	
 }

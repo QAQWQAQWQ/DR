@@ -2,7 +2,7 @@ state={
 	id=1041
 	name="STATE_1041"
 	resources={
-		oil=18
+		oil=9
 	}
 	provinces={
 		1643 4507 4535 12313 12398
@@ -11,7 +11,7 @@ state={
 		owner = UBS
 		add_core_of = UBS
 		victory_points = {
-			12398 5
+			12398 10
 		}
 		buildings = {
 			infrastructure = 4
@@ -46,9 +46,10 @@ state={
 			air_base = 5
 
 		}
+		add_dynamic_modifier = {modifier=UBS_Slave_State}
 	}
 	manpower=840637
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=large_city
 	local_supplies=0.000
 }

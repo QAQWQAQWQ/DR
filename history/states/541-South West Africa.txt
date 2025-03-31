@@ -9,9 +9,15 @@ state={
 		owner = DAS
 		buildings = {
 			infrastructure = 2
+			10978 = {
+				naval_base = 1
+			}
 		}
 		victory_points = {
-			4879 1 
+			4879 6
+		}
+		victory_points = {
+			10978 5
 		}
 
 	}

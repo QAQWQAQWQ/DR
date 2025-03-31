@@ -1,0 +1,21 @@
+add_namespace = AFGci
+
+country_event = {
+	id = AFGci.1
+	hidden = yes
+	title = AFGci.1.t
+	desc = AFGci.1.d
+
+	fire_only_once = yes
+	trigger = {
+		ENL = {exists = no}
+	}
+		
+
+	option = {
+		name = ITE.1.a
+		
+		
+	}
+		
+	}

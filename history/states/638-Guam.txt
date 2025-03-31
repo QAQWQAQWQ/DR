@@ -6,6 +6,7 @@ state=
 	manpower=75153
 	history=
 	{
+		add_dynamic_modifier = {modifier=UBS_Slave_State}
 		owner = UBS
 
 		buildings = {

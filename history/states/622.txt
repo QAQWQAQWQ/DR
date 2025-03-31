@@ -7,13 +7,33 @@ state={
 	history={
 		owner = SXX
 		add_core_of = SXX
-		victory_points = {
-			8049 3 
-		}
+		
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
+			7314 = {
+				bunker = 3
+	        }
+            7659 = {
+				bunker = 2
+			}
+			1458 = {
+				bunker = 3
+			}
+			
+			
 		}
+
+		victory_points = {
+			12356 13 
+		}
+		victory_points = {
+			7314 8 
+		}
+		victory_points = {
+			1458 8 
+		}
+		
 	}
 
 	provinces={

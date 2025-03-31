@@ -55,4 +55,313 @@ characters={
 			id=-1
 		}
 	}		
+
+	#########################################################################################military
+	YED_panagiotis_danglis={
+		
+		name="YED_panagiotis_danglis"
+		portraits={
+			army={
+				large="gfx/leaders/YED/YED_panagiotis_danglis.png"
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist politically_connected artillery_specialist }
+				skill=3
+				attack_skill=2
+				defense_skill=3
+				planning_skill=2
+				logistics_skill=2
+				
+			}	
+	}
+	YED_nikolaos_trikoupis={
+		name="YED_nikolaos_trikoupis"
+		portraits={
+			army={
+				large="gfx/leaders/YED/YED_nikolaos_trikoupis.png"
+			}
+		}
+		corps_commander={
+			traits = { engineer_officer trait_cautious career_officer}
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			
+		}
+	}
+	YED_epameinondas_zymvrakakis={
+		name="YED_epameinondas_zymvrakakis"
+		
+		portraits={
+			army={
+				large="gfx/leaders/YED/YED_Epaminondas_Zymvrakakis.png"
+				
+			}
+		}
+		corps_commander={
+			traits = { career_officer politically_connected urban_assault_specialist trait_YED_venezelist_loyalist }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			
+		}
+	}
+	YED_konstantinos_kallaris={
+		name="YED_konstantinos_kallaris"
+		portraits={
+			army={
+				large="gfx/leaders/YED/YED_Konstantinos_Kallaris.png"
+			}
+		}
+		corps_commander={
+			traits = { cavalry_officer}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			
+		}
+	}
+	YED_georgios_polymenakos={
+		name="YED_georgios_polymenakos"
+		portraits={
+			army={
+				large="gfx/leaders/YED/YED_Georgios_Polymenakos.png"
+			}
+		}
+		corps_commander={
+			traits = { trait_royalist war_hero career_officer trait_reckless}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+				
+		}
+	}
+	YED_petros_soumilas={
+		name="YED_petros_soumilas"
+		portraits={
+			army={
+				large="gfx/leaders/YED/YED_petros_soumilas.png"
+			}
+		}
+		corps_commander={
+			traits = { trait_royalist war_hero career_officer trait_reckless inflexible_strategist trait_cautious }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			
+		}
+	}
+	YED_victor_dousmanis={
+		
+		name="YED_victor_dousmanis"
+		portraits={
+			army={
+				large="gfx/leaders/YED/YED_victor_dousmanis.png"
+				
+			}
+		}
+		corps_commander={
+			traits={ media_personality politically_connected trait_royalist skilled_staffer }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+				
+		}
+	}
+	YED_emmanouil_zymvrakakis={
+		
+		name="YED_emmanouil_zymvrakakis"
+		portraits={
+			army={
+				large="gfx/leaders/YED/YED_emmanouil_zymvrakakis.png"
+				
+			}
+		}
+		corps_commander={
+			traits = { politically_connected artillery_officer trait_YED_venezelist_loyalist }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			
+		}
+	}
+	YED_anastasios_papoulas={
+		name="YED_anastasios_papoulas"
+		portraits={
+			army={
+				large="gfx/leaders/YED/YED_Anastasios_Papoulas.png"
+				
+			}
+		}
+		
+		corps_commander={
+			traits={ old_guard trait_royalist harsh_leader} 
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			
+		}
+	}
+	YED_emmanouil_manousogiannakis={
+		name="YED_emmanouil_manousogiannakis"
+		portraits={
+			army={
+				large="gfx/leaders/YED/YED_manousogiannakis.png"
+			}
+		}
+		corps_commander={
+			traits={ old_guard war_hero brilliant_strategist infantry_officer } 
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	YED_ioannis_metaxas={
+		name="YED_ioannis_metaxas"
+		portraits={
+			army={
+				large="gfx/leaders/YED/Portrait_Loannis_Metaxas.tga"
+				
+			}
+			civilian={
+				large="gfx/leaders/YED/Portrait_Loannis_Metaxas.tga"
+				
+			}
+		}
+		corps_commander={
+			traits={ career_officer harsh_leader politically_connected trait_royalist }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3	
+			
+		}
+	}
+	YED_leonidas_paraskevopoulos={
+		
+		name="YED_leonidas_paraskevopoulos"
+		portraits={
+			army={
+				large="gfx/leaders/YED/YED_leonidas_paraskevopoulos.png"
+				
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist career_officer skilled_staffer trait_cautious }
+			skill=3
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			
+		}
+	}
+	YED_georgios_hatzianestis={
+		name="YED_georgios_hatzianestis"
+		portraits={
+			army={
+				large="gfx/leaders/YED/YED_Georgios_Hatzianestis.png"
+			}
+		}
+		corps_commander={
+			traits={ old_guard trait_royalist trait_reckless harsh_leader}
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			
+		}
+	}
+	YED_konstantinos_sapountzakis={
+		name="YED_konstantinos_sapountzakis"
+		portraits={
+			army={
+				large="gfx/leaders/YED/YED_Konstantinos_Sapountzakis.png"
+				
+			}
+		}
+		
+		field_marshal={
+			traits={ old_guard career_officer trait_cautious war_hero}
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	
+	YED_konstantinos_moschopoulos={
+		name="YED_konstantinos_moschopoulos"
+		portraits={
+			army={
+				large="gfx/leaders/YED/YED_Konstantinos_Moschopoulos.png"
+			}
+		}
+		corps_commander={
+			traits={ artillery_specialist war_hero  }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			
+		}
+	}
+	YED_dimitris_ioannou={
+		name="YED_dimitris_ioannou"
+		portraits={
+			army={
+				large="gfx/leaders/YED/YED_dimitris_ioannou.png"
+				
+			}
+		}
+		corps_commander={
+			traits={ career_officer infantry_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			
+		}
+	}
+	YED_georgios_kondylis={
+		name="YED_georgios_kondylis"
+		portraits={
+			army={
+				large="gfx/leaders/YED/YED_Georgios_Kondylis.png"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless trickster hill_fighter war_hero }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+			
+		}
+	}
 	}

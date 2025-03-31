@@ -7,7 +7,7 @@ state={
 		chromium=12
 	}
 
-	state_category = rural
+	state_category = city
 
 	history={
 		owner = YED
@@ -15,10 +15,22 @@ state={
 		buildings = {
 			infrastructure = 2
 			dockyard = 1
+			6864  = {
+				naval_base = 8
+			}
+			6912 = {
+				naval_base = 2
+			}
 		}
 		
 		victory_points = {
-			9799 5
+			785 13
+		}
+		victory_points = {
+			6864 4
+		}
+		victory_points = {
+			6912 4
 		}
 	}
 

@@ -9,11 +9,14 @@ state=
 	{
 		owner = KOH
 		add_core_of = KOH
+		add_core_of = SIW
 		add_claim_by = DMT
 		buildings = {
 			infrastructure = 1 
 		}
-		
+		victory_points = { 3617 5 }
+		victory_points = { 619 5 }
+		victory_points = { 11580 5 }
 
 	}
 

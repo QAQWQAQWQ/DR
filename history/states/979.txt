@@ -9,10 +9,17 @@ state= {
 	}
 	history= {
 		owner = GUG
+		add_core_of  =GUG
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 			arms_factory = 1
+		}
+		victory_points = {
+			10431 8
+		}
+		victory_points = {
+			7095 10
 		}
 	}
 	provinces={

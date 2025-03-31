@@ -1,18 +1,4 @@
 characters={
-	AOX_Charles_I={
-		name=AOX_Charles_I
-		portraits={
-			civilian={
-				large="gfx/leaders/AOX/Portrait_Charles_I.tga"
-			}
-		}
-		country_leader={
-			ideology=Classical_Conservatism
-			traits={ inexperienced_imperialist }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
 	AOX_Archduke_Ferdinand={
 		name=AOX_Archduke_Ferdinand
 		portraits={
@@ -20,19 +6,14 @@ characters={
 				large="gfx/leaders/AOX/Portrait_Archduke_Ferdinand.tga"
 			}
 		}
+		
 		country_leader={
 			ideology=autocratic-constitutional-monarchy
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
 		}
-		field_marshal = {
-			skill = 2
-			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-		}
+		
 	}
 	AOX_Frederich_Ferdinand={
 		name=AOX_Frederich_Ferdinand
@@ -77,13 +58,7 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-		field_marshal = {
-			skill = 2
-			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-		}
+		
 	}
 
 	AOX_Michael_Mayr={
@@ -593,6 +568,12 @@ AOX_Rudolf_Hilferding={
 				large="gfx/leaders/AOX/Portrait_Charles_I.tga"
 				small="gfx/interface/ideas/Portrait_Charles_I.dds"
 			}
+		}
+		country_leader={
+			ideology=Classical_Conservatism
+			traits={ inexperienced_imperialist }
+			expire="1965.1.1.1"
+			id=-1
 		}
 		corps_commander={
 			traits={  }

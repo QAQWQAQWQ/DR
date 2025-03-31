@@ -16,6 +16,10 @@ set_war_support = 0.7
 #设置战争支持度
 
 recruit_character = TSI_Alfonso_I
+recruit_character = TSI_alberto_pollio
+recruit_character = TSI_armando_diaz
+recruit_character = TSI_luca_montuori
+recruit_character = TSI_giulio_douhet
 #获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {
@@ -25,8 +29,8 @@ set_politics = {
 	#最后一次选举（"年.月.日" （p社sb代码，无法早于该日期））
 	election_frequency = 48
 	#选举间隔（48为默认）
-	elections_allowed = 
-	#是否允许公众选举（no或者yes）
+	elections_allowed = yes
+
 }
 set_popularities = {
 	Paternalism = 10

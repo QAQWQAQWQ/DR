@@ -54,9 +54,7 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no
 }
-news_event = { id = HAQ.1 days = 425 }
+#news_event = { id = HAQ.1 days = 425 }
 set_popularities = {
-	Paternalism = 10
-	Dictatorship = 89
-	Liberalism = 1
+	Dictatorship = 100
 }

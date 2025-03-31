@@ -404,6 +404,9 @@ news_event = {
     }
 	option = {
 		name = Hidden_News.22.a
+		LMJ = {
+			retire_country_leader = yes
+		}
 	}		
 }
 ##news_event = {
@@ -637,8 +640,6 @@ news_event = {
 				transfer_state = 96
 				transfer_state = 95
 				transfer_state = 204
-				transfer_state = 94
-				transfer_state = 194
 			}
 		}		
 }
@@ -856,20 +857,20 @@ news_event = {
 	}		
 }
 
-##news_event = {
-##	id = WorldNew.23
-##	title = WorldNew.23.t
-##	desc = WorldNew.23.d
+news_event = {
+	id = WorldNew.23
+	title = WorldNew.23.t
+	desc = WorldNew.23.d
 	
-##	major = yes
-##	is_triggered_only = yes
+	major = yes
+	is_triggered_only = yes
 
    
 
-##	option = {
-##		name = WorldNew.23.a
-##	}		
-##}
+	option = {
+		name = WorldNew.23.a
+	}		
+}
 news_event = {
 	id = WorldNew.24
 	title = WorldNew.24.t

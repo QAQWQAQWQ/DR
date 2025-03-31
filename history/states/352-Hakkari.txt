@@ -7,24 +7,21 @@ state={
 	state_category = rural
 
 	history={
-		owner = EYJ
+		owner = ARA
 		victory_points = {
-			12476 1 
+			12476 10
 		}
 		victory_points = {
-			7530 1 
-		}
-		victory_points = {
-			10497 1 
+			7530 5 
 		}
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = EYJ
+		add_claim_by = TEQ
 	}
 
 	provinces={
-		864 1463 7530 10497 11739 12318 12476
+		 1463 7530  12476
 	}
 
 	local_supplies=0.0 

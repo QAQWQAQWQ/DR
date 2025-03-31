@@ -1,538 +1,582 @@
 ﻿division_template = {
 	name = "Infanterie-Division"
-
-	division_names_group = GER_Inf_01
-
+	division_names_group = WWS_MONINF_02
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
-	}
-	
-	support = {
-        engineer = { x = 0 y = 0 }
-        artillery = { x = 0 y = 1 }
-	}
-}
-
-division_template = {
-	name = "Infanterie-Division (mot.)" 			# Used to be SS division -> New system for SS. Also messed up the civil war by refusing to move to the fascists, and immersion-breaking to have them around as Classical_Conservatism
-
-	division_names_group = GER_MOT_02
-
-	regiments = {
-		motorized = { x = 0 y = 0 }
-	    motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		
-		motorized = { x = 2 y = 0 }
-	    motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		artillery_brigade = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 3 }
+		cavalry = { x = 4 y = 0 }
 	}
 	support = {
-        mot_recon = { x = 0 y = 0 }
-	 	engineer = { x = 0 y = 1 }
-        artillery = { x = 0 y = 2 }
+		engineer = { x = 0 y = 0 }
 	}
 }
-division_template = {
-	name = "Gebirgs-Brigade"		# Gebirgsbrigade
-	#Note: precursor to Gebirgs-Divisions
-	division_names_group = GER_Mnt_01
 
+division_template = {
+	name = "Landwehr-Division"
+	division_names_group = WWS_MONINF_06
 	regiments = {
-		mountaineers = { x = 0 y = 0 }
-	    mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-		mountaineers = { x = 1 y = 0 }
-		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		cavalry = { x = 4 y = 0 }
 	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+	priority = 0
 }
 division_template = {
-	name = "Kavallerie-Brigade"
+	name = "Ersatz-Division"
+	division_names_group = WWS_MONINF_07
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		artillery_brigade = { x = 1 y = 3 }
+		artillery_brigade = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 3 }
+		cavalry = { x = 4 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+	priority = 0
+}
 
-	division_names_group = GER_Cav_01
-
+division_template = {
+	name = "Garde-Kavallerie-Division"
+	division_names_group = WWS_MONCAV_01
+	division_cap = 1
 	regiments = {
 		cavalry = { x = 0 y = 0 }
-        cavalry = { x = 0 y = 1 }
-        cavalry = { x = 1 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 3 y = 0 }
+		cavalry = { x = 3 y = 1 }
 	}
 	support = {
-	    recon = { x = 0 y = 0 }
-	    artillery = { x = 0 y = 1 }
+		artillery = { x = 0 y = 0 }
 	}
+	priority = 2
+}
+division_template = {
+	name = "Kavallerie-Division"
+	division_names_group = WWS_MONCAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Schutztruppe"
+	division_names_group = WWS_MONINF_11
+	override_model = WWS_infantry_0_entity
+	template_counter = 67
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Reserve-Division"
+	division_names_group = WWS_MONINF_05
+	override_model = WWS_infantry_0_entity
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	priority = 0
 }
 
 units = {
-
-	##### Oberkommando des Heeres #####
-	### 1. Armee (Wehrmacht-Gruppenkommando) ###
-	# II. Armeekorps
-	division= {	
+	### INFANTERIE ###
+	## Gardeinfanterie ##
+	#1. Infanterie-Division
+	division = {
+		#1. Preußische Gardeinfanterie-Division
 		division_name = {
-				is_name_ordered = yes
-				name_order = 2
+			is_name_ordered	= yes
+			name_order = 1
 		}
-		location = 6334
+		location = 6521
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 1
 	}
-	division= {	
+	#2. Gardeinfanterie-Division
+	division = {
+		#2. Preußische Gardeinfanterie-Division
 		division_name = {
-				is_name_ordered = yes
-				name_order = 12
+			is_name_ordered	= yes
+			name_order = 2
 		}
-		location = 537
+		location = 6521
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	# III. Armeekorps
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 3
-		}
-		location = 478
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 23
-		}
-		location = 478
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		location = 6583
-		division_template = "Infanterie-Division (mot.)"
-		start_experience_factor = 0.3
+		start_experience_factor = 1
 	}
 
-	### 3. Armee (Wehrmacht-Gruppenkommando) ###
-	# IV. Armeekorps
-	division= {	
+	## Linieninfanterie ##
+	#1. Infanterie-Division
+	division = {
+		#1. Preußische Infanterie-Division
 		division_name = {
-				is_name_ordered = yes
-				name_order = 4
+			is_name_ordered	= yes
+			name_order = 1
 		}
-		location = 9559
+		location = 6521
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	#2. Infanterie-Division (inkl. Königsregiment)
+	division = {
+		#2. Preußische Infanterie-Division
 		division_name = {
-				is_name_ordered = yes
-				name_order = 14
+			is_name_ordered	= yes
+			name_order = 2
 		}
-		location = 1346
+		location = 6521
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	#3. Infanterie-Division
+	division = {
+		#3. Preußische Infanterie-Division
 		division_name = {
-				is_name_ordered = yes
-				name_order = 24
+			is_name_ordered	= yes
+			name_order = 3
 		}
-		location = 678
+		location = 6521
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
-	# VIII. Armeekorps
-	division= {	
+	#4. Infanterie-Division
+	division = {
+		#4. Preußische Infanterie-Division
 		division_name = {
-				is_name_ordered = yes
-				name_order = 8
+			is_name_ordered	= yes
+			name_order = 4
 		}
-		location = 1346
+		location = 6521
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	#5. Infanterie-Division
+	division = {
+		#5. Preußische Infanterie-Division
 		division_name = {
-				is_name_ordered = yes
-				name_order = 18
+			is_name_ordered	= yes
+			name_order = 5
 		}
-		location = 11467
+		location = 6521
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	#6. Infanterie-Division
+	division = {
+		#6. Preußische Infanterie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 6
+		}
+		location = 6521
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	#7. Infanterie-Division
+	division = {
+		#7. Preußische Infanterie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 7
+		}
+		location = 6521
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	#8. Infanterie-Division (inkl. Leib-Infanterie-Regiment)
+	division = {
+		#8. Preußische Infanterie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 8
+		}
+		location = 6521
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.5
+	}
+	#9. Infanterie-Division (Colberg)
+	division = {
+		#9. Preußische Infanterie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 9
+		}
+		location = 6521
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	#10. Infanterie-Division
+	division = {
+		#10. Preußische Infanterie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 10
+		}
+		location = 6521
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	#11. Infanterie-Division
+	division = {
+		#11. Preußische Infanterie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 11
+		}
+		location = 6521
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	#12. Infanterie-Division
+	division = {
+		#12. Preußische Infanterie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 12
+		}
+		location = 6521
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	#13. Infanterie-Division
+	division = {
+		#13. Preußische Infanterie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 13
+		}
+		location = 6521
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	#14. Infanterie-Division
+	division = {
+		#14. Preußische Infanterie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 14
+		}
+		location = 6521
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	#15. Infanterie-Division
+	division = {
+		#15. Preußische Infanterie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 15
+		}
+		location = 6521
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	#16. Infanterie-Division
+	division = {
+		#16. Preußische Infanterie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 16
+		}
+		location = 6521
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	#17. Infanterie-Division
+	division = {
+		#17. Preußische Infanterie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 17
+		}
+		location = 6521
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	#18. Infanterie-Division
+	division = {
+		#18. Preußische Infanterie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 18
+		}
+		location = 6521
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	#19. Infanterie-Division
+	division = {
+		#19. Preußische Infanterie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 19
+		}
+		location = 6521
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	#20. Infanterie-Division
+	division = {
+		#20. Preußische Infanterie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 20
+		}
+		location = 6521
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	#21. Infanterie-Division
+	division = {
+		#21. Preußische Infanterie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 21
+		}
+		location = 6521
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	#22. Infanterie-Division
+	division = {
+		#22. Preußische Infanterie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 22
+		}
+		location = 6521
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
 
-	# I. Armeekorps
-	division= {	
+	## Landwehr ##
+	#1. Reserve-Division
+	division = {
+		#1. Preußisches Reserve-Division
 		division_name = {
-				is_name_ordered = yes
-				name_order = 1
+			is_name_ordered	= yes
+			name_order = 1
 		}
-		location = 6402
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		location = 6521
+		division_template = "Reserve-Division"
+		start_experience_factor = 0.1
 	}
-	division= {	
+	#2. Reserve-Division
+	division = {
+		#2. Preußisches Reserve-Division
 		division_name = {
-				is_name_ordered = yes
-				name_order = 11
+			is_name_ordered	= yes
+			name_order = 2
 		}
-		location = 266
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		location = 6521
+		division_template = "Reserve-Division"
+		start_experience_factor = 0.1
 	}
-	division= {	
+	#3. Reserve-Division
+	division = {
+		#3. Preußisches Reserve-Division
 		division_name = {
-				is_name_ordered = yes
-				name_order = 21
+			is_name_ordered	= yes
+			name_order = 3
 		}
-		location = 3384
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		location = 6521
+		division_template = "Reserve-Division"
+		start_experience_factor = 0.1
 	}
-	division= {	
-		name = "Kavallerie-Kommando Insterburg" 
-		location = 281
-		division_template = "Kavallerie-Brigade"
-		start_experience_factor = 0.3
-	}
-
-
-	### 2. Armee (Wehrmacht-Gruppenkommando) ###
-	division= {	
+	#4. Reserve-Division
+	division = {
+		#4. Preußisches Reserve-Division
 		division_name = {
-				is_name_ordered = yes
-				name_order = 13
+			is_name_ordered	= yes
+			name_order = 4
 		}
-		location = 3485
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		location = 6521
+		division_template = "Reserve-Division"
+		start_experience_factor = 0.1
 	}
-	# VI. Armeekorps
-	division= {	
+	#5. Reserve-Division
+	division = {
+		#5. Preußisches Reserve-Division
 		division_name = {
-				is_name_ordered = yes
-				name_order = 6
+			is_name_ordered	= yes
+			name_order = 5
 		}
-		location = 6309
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 16
-		}
-		location = 11359
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	# IX. Armeekorps
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 9
-		}
-		location = 9388
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 15
-		}
-		location = 11359
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	# X. Armeekorps
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 19
-		}
-		location = 6487
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 20
-		}
-		location = 3522
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 22
-		}
-		location = 3522
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		location = 6521
+		division_template = "Reserve-Division"
+		start_experience_factor = 0.1
 	}
 
-	# V. Armeekorps
-	division= {	
+	### KAVALLERIE ###
+	# 1. kavallerie-Division
+	division = {
+		#1. Preußische kavallerie-Division
 		division_name = {
-				is_name_ordered = yes
-				name_order = 5
+			is_name_ordered	= yes
+			name_order = 1
 		}
-		location = 11219
-		division_template = "Infanterie-Division"
+		location = 6521
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.5
+	}
+	# 2. kavallerie-Division
+	division = {
+		#2. Preußische kavallerie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 2
+		}
+		location = 6521
+		division_template = "Kavallerie-Division"
 		start_experience_factor = 0.3
 	}
-
-	# VII. Armeekorps
-	division= {	
+	# 3. kavallerie-Division
+	division = {
+		#3. Preußische kavallerie-Division
 		division_name = {
-				is_name_ordered = yes
-				name_order = 7
+			is_name_ordered	= yes
+			name_order = 3
 		}
-		location = 11219
-		division_template = "Infanterie-Division"
+		location = 6521
+		division_template = "Kavallerie-Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	# 4. kavallerie-Division
+	division = {
+		#4. Preußische kavallerie-Division
 		division_name = {
-				is_name_ordered = yes
-				name_order = 10
+			is_name_ordered	= yes
+			name_order = 1
 		}
-		location = 11517
-		division_template = "Infanterie-Division"
+		location = 6521
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.5
+	}
+	# 5. kavallerie-Division
+	division = {
+		#5. Preußische kavallerie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 2
+		}
+		location = 6521
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.5
+	}
+	# 6. kavallerie-Division
+	division = {
+		#6. Preußische kavallerie-Division
+		division_name = {
+			is_name_ordered	= yes
+			name_order = 3
+		}
+		location = 6521
+		division_template = "Kavallerie-Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	# 7. kavallerie-Division
+	division = {
+		#7. Preußische kavallerie-Division
 		division_name = {
-				is_name_ordered = yes
-				name_order = 17
+			is_name_ordered	= yes
+			name_order = 1
 		}
-		location = 6487
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}			
-	division= {	
-		name = "Gebirgs-Brigade" 
-		location = 6558
-		division_template = "Gebirgs-Brigade" 
-		start_experience_factor = 0.3
+		location = 6521
+		division_template = "Kavallerie-Division"
+		start_experience_factor = 0.5
 	}
 }
-
-### Air oob
-air_wings = {
-	### I. Luftkreiskommando -- Konigsberg ###
-	763 = { 
-		# Jagdgeschwader 232 	
-		fighter_equipment_0 =  {		# He 51
-			owner = "GER" 
-			amount = 40
-		}
-		name = "Jagdgeschwader 232"
-	}
-
-	### II. Luftkreiskommando -- Berlin ###
-	64 = { 
-		# Jagdgeschwader 132 'Richtofen'		
-		fighter_equipment_0 =  {		# Ar 68
-			owner = "GER" 
-			amount = 80
-		}
-		name = "Jagdgeschwader 132"
-		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
-			modifier="fighter_genius"
-			name="Erich"
-			surname="Hartmann"
-			callsign="Bubi"
-			portrait=1 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
-		}
-		# Kampfgeschwader 153		
-		tac_bomber_equipment_0 = {		# Do 23
-			owner = "GER" 
-			amount = 80
-		}
-		tac_bomber_equipment_0 = {		# Ju 86
-			owner = "GER" 
-			amount = 40
-			version_name = "Ju 86"
-		}
-		name = "Kampfgeschwader 153"
-		# TODO: REMOVE THIS LATER ???
-		transport_plane_equipment_1 = {
-			owner = "GER" 
-			amount = 4
-		}
-	}
-
-	### III. Luftkreiskommando -- Breslau ###
-	66 = { 
-		# Kampfgeschwader 253 'General Wever'		
-		tac_bomber_equipment_0 = {		# He 45 or Do 23 ?
-			owner = "GER" 
-			amount = 120
-		}
-		name = "Kampfgeschwader 253"
-		# Sturzkampfgeschwader 162		
-		CAS_equipment_1 =  {			# Hs 123
-			owner = "GER" 
-			amount = 80
-		}
-		name = "Sturzkampfgeschwader 162"	
-	}
-
-	### IV. Luftkreiskommando -- Kassel ###
-	57 = { 
-		# Jagdgeschwader 134 'Horst Wessel'		
-		fighter_equipment_0 =  {		# He 51 # Ar 68
-			owner = "GER" 
-			amount = 120
-		}
-		name = "Jagdgeschwader 134"
-		# Kampfgeschwader 152 'Hindenburg'	
-		tac_bomber_equipment_1 = {		# Do 23
-			owner = "GER" 
-			amount = 80
-		}
-		name = "Kampfgeschwader 152"
-		# Kampfgeschwader 155	
-		tac_bomber_equipment_0 = {		# He 45 or Do 23 ? (light bomber)
-			owner = "GER" 
-			amount = 80
-		}
-		name = "Kampfgeschwader 155"
-	}
-
-	### V. Luftkreiskommando -- Munich ###
-	52 = { 
-		# Jagdgeschwader 136		
-		fighter_equipment_0 =  {		# He 51
-			owner = "GER" 
-			amount = 40
-		}
-		name = "Jagdgeschwader 136"
-		# Kampfgeschwader 154	
-		tac_bomber_equipment_0 = {		# Do 23
-			owner = "GER" 
-			amount = 80
-		}
-		name = "Kampfgeschwader 154"
-	}
-
-	### VI. Luftkreiskommando -- Kiel ###
-	58 = { 
-		# Küstenfliegergruppe 106		
-		nav_bomber_equipment_1 =  {		# He 59, Do 18
-			owner = "GER" 
-			amount = 72
-		}
-		name = "Küstenfliegergruppe 106"
-		# Küstenfliegergruppe 206
-	}
-}
-
-#########################
-## STARTING PRODUCTION ##
-#########################
 
 instant_effect = {
-
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
-			creator = "GER"
-		}
-		requested_factories = 10
-		progress = 0.1
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = support_equipment_1
-			creator = "GER" 
+			creator = "WWS"
 		}
 		requested_factories = 2
-		progress = 0.3
-		efficiency = 50
+		progress = 0.5
+		efficiency = 30
 	}
-
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "WWS"
+		}
+		requested_factories = 2
+		progress = 0.5
+		efficiency = 30
+	}
+	add_equipment_production = {
+		equipment = {
+			type = gw_armored_car_equipment
+			creator = "WWS"
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 30
+	}
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_1
-			creator = "GER" 
+			creator = "WWS"
 		}
-		requested_factories = 1
+		requested_factories = 2
 		progress = 0.3
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_equipment_2
-			creator = "GER" 
-		}
-		requested_factories = 2
-		progress = 0.4
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = motorized_equipment_1
-			creator = "GER" 
-		}
-		requested_factories = 2
-		progress = 0.4
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_1
-			creator = "GER" 
-		}
-		requested_factories = 1
-		progress = 0.15
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = CAS_equipment_1
-			creator = "GER" 
-		}
-		requested_factories = 1
-		progress = 0.2
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = tac_bomber_equipment_1
-			creator = "GER" 
-		}
-		requested_factories = 1
-		progress = 0.1
-		efficiency = 50
+		efficiency = 15
 	}
 }
-
-#####################

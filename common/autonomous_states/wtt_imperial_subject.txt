@@ -42,7 +42,6 @@ autonomy_state = {
 
 	allowed = {
 		has_dlc = "Waking the Tiger"
-        has_government = fascism
 		
 	}
 	
@@ -51,6 +50,6 @@ autonomy_state = {
 	}
 
 	can_lose_level = {
-		#trigger here
+		always = no
 	}
 }

@@ -1,0 +1,30 @@
+state={
+	id=1260
+	name="STATE_1260"
+	manpower = 385000
+	state_category = city
+	
+	history={
+		owner = ENL
+		add_core_of = WSP
+		add_core_of = CHI
+		add_core_of = ROC
+		victory_points = {
+			13421 13
+		}
+		buildings = {
+			dockyard = 2
+			infrastructure = 2
+			13421 = {
+				naval_base = 3
+				bunker = 2
+				coastal_bunker = 2
+			}
+		}
+	}
+	provinces={
+		13421 13420
+	}
+
+	local_supplies=0.0 
+}

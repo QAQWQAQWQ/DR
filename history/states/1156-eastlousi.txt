@@ -3,17 +3,19 @@ state={
 	id=1156
 	name="STATE_1156"
 	manpower = 2009820
-	
+	resources={
+		oil=9
+	}
 	state_category = city
 
 	history={
 		owner = BNA
 		add_core_of = BNA
 		victory_points = {
-			1453 10
+			1453 22
 		}
 		victory_points = {
-			7552 10 
+			7552 25
 		}
 		buildings = {
 			infrastructure = 4
@@ -24,7 +26,7 @@ state={
 			}
 			7552 = {
 				bunker = 10
-				naval_base = 5
+				naval_base = 10
 
 			}
 			7524 = {

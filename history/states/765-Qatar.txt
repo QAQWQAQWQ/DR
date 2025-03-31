@@ -10,18 +10,24 @@ state={
 		add_core_of = EYJ
 		add_core_of = KAT
 		victory_points = {
-			8051 1
+			8051 8
+		}
+		victory_points = {
+			13447 10
 		}
 		buildings = {
 			infrastructure = 1
 			8051 = {
 				naval_base = 2
 			}
+			13447 = {
+				naval_base = 2
+			}
 		}
 	}
 
 	provinces={
-		8051
+		8051 13447
 	}
 
 	local_supplies=0.0 

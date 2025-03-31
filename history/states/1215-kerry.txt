@@ -1,0 +1,26 @@
+
+state={
+	id=1215
+	name="STATE_1215"
+	manpower =54720
+	
+	state_category = pastoral
+	resources={
+		grain=1
+	}
+
+	history={
+		owner = IRL
+		
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = IRL
+	}
+
+	provinces={
+		6405 9405
+	}
+
+	local_supplies=0.0 
+}

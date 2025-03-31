@@ -24,6 +24,9 @@ set_technology = {
 	early_ship_hull_light = 1
 	early_ship_hull_submarine = 1
 	early_ship_hull_heavy = 1
+	tracked_suspension = 1
+	great_war_light_chassis = 1
+	super_light_chassis = 1
 }
 add_opinion_modifier = {
 	target = WWS
@@ -155,3 +158,4 @@ give_military_access = HES
 give_military_access = SIW
 give_military_access = ALB
 give_military_access = TRA
+give_guarantee = GGZ

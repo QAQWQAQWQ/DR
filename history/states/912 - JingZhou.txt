@@ -2,24 +2,33 @@
 state = {
 	id = 912
 	name = "STATE_912"
-	manpower = 183420
+	manpower = 93420
 	resources={
-		grain=22
+		grain=11
 	}
 	state_category = pastoral
 
 	history = {
 		owner = DUQ
 		add_core_of = DUQ
-                                buildings = {
+        buildings = {
 			infrastructure = 1 
-}
-                  victory_points = {
-			934 3 
+		}
+        
+		victory_points = {
+			12469 5 
+		}
+
+		victory_points = {
+			7575 5 
+		}
+		victory_points = {
+			3877 5 
 		}
 }
 	provinces = {
-		7575 7633 11855 934 3934 6852 3828 10426 9927 4514
+		7575  11855   3828 10426  4514 10499 6988      3877 12478 12469 10429 1508 3978 13436
+		        
 	}
 
 	local_supplies = 0.0 

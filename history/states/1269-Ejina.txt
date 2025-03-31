@@ -1,0 +1,22 @@
+state={
+	id=1269
+	name="STATE_1269"
+	provinces={
+		1778 7727 4783 8102
+	}
+	manpower=50000
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+	history={
+		owner = NXS
+		add_core_of = NXS
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			7727 3 
+		}
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,32 @@
+
+state={
+	id=1245
+	name="STATE_1245"
+	manpower = 81781
+	
+	state_category = town
+	resources={
+		grain=7
+	}
+	history={
+		owner = YED
+		add_core_of = YED
+		add_claim_by = TEQ
+		
+		victory_points = {
+			7620 13
+		}
+		
+		buildings = {
+			infrastructure = 2
+			
+		}
+	}
+
+	provinces={
+		7620 9912
+	}
+
+
+	local_supplies=0.0 
+}

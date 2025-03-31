@@ -3,8 +3,6 @@ ideas = {
 		UBS_Slavery = {
 			picture = Slavery
 			modifier = {
-				propaganda_mission_factor = -0.1
-                stability_weekly = -0.02
                 conscription = 0.05
                 consumer_goods_factor = 0.02
                 production_factory_efficiency_gain_factor = 0.2
@@ -21,9 +19,7 @@ ideas = {
 		UBS_Jim_Crow_laws = {
 			picture = Jim_Crow_laws
 			modifier = {
-				political_power_cost = 0.05
-				political_power_factor = -0.1
-				stability_weekly_factor = -0.04
+				conscription = 0.05
 			}
         }
 		}

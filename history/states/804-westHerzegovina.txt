@@ -1,0 +1,30 @@
+
+state={
+	id=804
+	name="STATE_804"
+	manpower =547200
+	
+	state_category = pastoral
+	resources={
+		aluminium=7 # was: 10
+		grain=13
+	}
+
+	history={
+		owner = KLD
+		victory_points = {
+			6942 3
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = KLD
+		add_core_of = DMT
+	}
+
+	provinces={
+		6942 6957 9894 9922 11845 11872 13372
+	}
+
+	local_supplies=0.0 
+}

@@ -107,7 +107,7 @@ news_event = {
 	title = occupied.4.t
 	desc = occupied.4.d
 
-	picture = GFX_fall_of_Washington
+	picture = GFX_fall_of_LA
 
 	major = yes
 
@@ -116,15 +116,15 @@ news_event = {
 				has_war = yes
 				NOT = {
 					
-					has_global_flag = fall_of_Washington
-					controls_state = 361
+					has_global_flag = fall_of_LA
+					controls_state = 1159
 					
 				}
 			}
 	}
 
 	immediate = {
-		set_global_flag = fall_of_Washington
+		set_global_flag = fall_of_LA
 	}
 	
 	option = {

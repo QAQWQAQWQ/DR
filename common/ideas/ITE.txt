@@ -10,6 +10,10 @@ ideas = {
                 experience_gain_infantry_combat_factor=0.15
 				custom_modifier_tooltip = Prussian_military_adviser
 			}
+			visible = {
+				check_variable = {global.german_war = 0}
+				check_variable = {global.4italian_war = 1}
         }
 		}
+}
 }

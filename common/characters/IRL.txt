@@ -4,11 +4,11 @@ characters={
 		name=IRL_Eamon_de_Valera
 		portraits={
 			civilian={
-				large="gfx/leaders/IRL/Portrait_Eamon_de_Valera.tga"
+				large="gfx/leaders/IRL/Portrait_Eamon_De_Valera.tga"
 			}
 		}
 		country_leader={
-			ideology=nationalist-autocracy
+			ideology=National_Populism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -22,7 +22,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Lib-big-tent
+			ideology=agarian-liberalism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -35,8 +35,16 @@ characters={
 				large="gfx/leaders/IRL/Portrait_John_Denton_Pinkstone.tga"
 			}
 		}
+		field_marshal={
+			traits={  }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
 		country_leader={
-			ideology=Authoritarian_Conservatism
+			ideology=Military-Dictatorship
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -50,7 +58,21 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Authoritarian_Conservatism
+			ideology=national-liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	IRL_Ian_Macpherson={
+		name=IRL_Ian_Macpherson
+		portraits={
+			civilian={
+				large="gfx/leaders/IRL/IRL_Ian_Macpherson.tga"
+			}
+		}
+		country_leader={
+			ideology=civilian-dictatorship
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
