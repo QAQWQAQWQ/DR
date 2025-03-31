@@ -205,6 +205,19 @@ on_actions = {
 					country_lock_all_division_template = yes
 				}
 			}
+
+
+			every_country = {
+				if={
+					limit={ 
+						AND = {
+							original_tag = KON
+							has_idea = KON_Neutrality_North_Korea
+						}
+					}
+					country_lock_all_division_template = yes
+				}
+			}
 		}
 	}
 
