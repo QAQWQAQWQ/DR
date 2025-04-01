@@ -1,0 +1,29 @@
+state={
+	id=1277
+	name="STATE_1277"
+	
+	resources={
+		grain=3
+	}
+	history={
+		owner = YED
+		add_core_of = ARA
+		add_core_of = YED
+		
+		buildings = {
+			infrastructure = 1
+			
+
+		}
+		
+	}
+
+	provinces={
+		6919 
+	}
+	manpower=50525
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}
