@@ -223,13 +223,7 @@ aus_hun_decisions = {
 						}}
 						KOH = {transfer_state = 1018}
 					}
-					if = {
-						limit = {
-							OR = {
-							KOH = {controls_state = 918}
-						}}
-						KOH = {transfer_state = 918}
-					}
+					
 					if = {
 						limit = {
 							OR = {
