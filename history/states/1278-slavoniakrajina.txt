@@ -1,0 +1,28 @@
+state=
+{
+	id=1278
+	name="STATE_1278"
+	manpower = 58659
+	
+	state_category = town
+	resources={
+		grain=16
+		
+	}
+	history=
+	{
+		owner = KOH
+		add_core_of = KOH
+		add_core_of = SIW
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+
+	provinces={
+		9595
+	}
+
+	local_supplies=0.0 
+}

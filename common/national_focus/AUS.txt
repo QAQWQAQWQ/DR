@@ -1697,6 +1697,8 @@ illyrian_war_end = yes
 					add_state_core = 1018
 					transfer_state = 45
 					add_state_core = 45
+					transfer_state = 1278
+					add_state_core = 1278
 				}
 				KOH = {
 					remove_state_core = 918
@@ -2275,6 +2277,8 @@ illyrian_war_end = yes
 					add_state_core = 918
 					transfer_state = 1018
 					add_state_core = 1018
+					transfer_state = 1278
+					add_state_core = 1278
 				}
 				AOX = {
 					set_autonomy = { target = TRA autonomy_state = autonomy_Crown_Territory }
