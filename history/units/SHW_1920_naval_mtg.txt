@@ -1,165 +1,145 @@
 ﻿
 units= {
-
 	##### NAVAL UNITS #####
 	### Northern Fleet -- Murmansk
-	fleet = {
-		name = "Severnyy Flot"
-		naval_base = 3134 # Murmansk
-		task_force = {				
-			name = "Severnyy Flot"
-			location = 3134 # Murmansk
-			# 1ya Flotiliya Esmintsev
-			ship = { name = "Dzerzhinskiy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SHW version_name = "Fidonisi Class" } } }
-			ship = { name = "Nezamozhnik" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SHW version_name = "Fidonisi Class" } } }
-			ship = { name = "Petrovskiy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SHW version_name = "Fidonisi Class" } } }
-			ship = { name = "Shaumyan" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SHW version_name = "Fidonisi Class" } } }
-			# 2ya Flotiliya Esmintsev
-			ship = { name = "Izyaslav" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SHW version_name = "Fidonisi Class" } } }
-			ship = { name = "Kalinin" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SHW version_name = "Fidonisi Class" } } }
-		}	
-		task_force = {	
-			name = "Severnyy Podvodniy Flot"
-			location = 3134 # Murmansk
-			# 5iy Podvodniy Flot
-			ship = { name = "D-1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-5" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-6" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series I Debakrist" } } }			
-		}
-	}
-	
 	### Baltic Fleet -- Leningrad
 	fleet = {
-		name = "Baltiyskiy Flot"
+		name = "圣彼得堡舰队"
 		naval_base = 3151 # Leningrad
 		task_force = {				
-			name = "Baltiyskiy Flot"
+			name = "圣彼得堡舰队"
 			location = 3151 # Leningrad
-			ship = { name = "Marat" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SHW version_name = "Marat Class" } } }
-			ship = { name = "Oktyabrskaya Revolutsiya" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SHW version_name = "Marat Class" } } }
-			ship = { name = "Marti" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SHW version_name = "Marti Class" } } }
-			# 3ya Flotiliya Esmintsev
-			ship = { name = "Engels" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SHW version_name = "Orfey Class" } } }
-			ship = { name = "Artyom" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SHW version_name = "Orfey Class" } } }
-			ship = { name = "Volodarskiy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SHW version_name = "Orfey Class" } } }
-			ship = { name = "Yakov Sverdlov" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SHW version_name = "Orfey Class" } } }
-			ship = { name = "Frunze" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SHW version_name = "Orfey Class" } } }
-			# 4ya Flotiliya Esmintsev
-			ship = { name = "Lenin" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SHW version_name = "Orfey Class" } } }		
-			ship = { name = "Voykov" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SHW version_name = "Orfey Class" } } }		
-			ship = { name = "Rykov" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SHW version_name = "Orfey Class" } } }		
-			ship = { name = "Karl Libknekht" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SHW version_name = "Orfey Class" } } }		
-		}	
-		task_force = {	
-			name = "Baltiyskiy Podvodniy Flot"
-			location = 3151 # Leningrad
-			ship = { name = "B-2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series I Debakrist" } } }			
-			ship = { name = "L-55" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series I Debakrist" } } }			
-			# 1iy Podvodniy Flot
-			ship = { name = "Shch-301" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-302" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-303" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-304" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-305" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-306" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-307" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-308" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			# 2iy Podvodniy Flot
-			ship = { name = "Shch-113" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-114" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-115" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-116" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			# 6iy Podvodniy Flot
-			ship = { name = "Shch-117" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-118" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-119" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-120" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			# 7iy  Podvodniy Flot
-			ship = { name = "Shch-201" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-202" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-203" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-204" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-309" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			# 16iy  Podvodniy Flot
-			ship = { name = "L-1" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SHW version_name = "Series II Leninets" } } }			
-			ship = { name = "L-2" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SHW version_name = "Series II Leninets" } } }			
-			ship = { name = "L-3" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SHW version_name = "Series II Leninets" } } }			
+
+			###航空母舰
+			ship = { name = "英格利亚级" definition = carrier equipment = { carrier_1 = { amount = 1 owner = SHW version_name = "英格利亚级" } } 
+			}
+			###航空母舰
+
+			###战列舰
+			ship = { name = "米哈伊尔号" definition = battleship equipment = { battleship_1 = { amount = 1 owner = SHW version_name = "尼古拉一世级" } } }
+			ship = { name = "涅瓦号" definition = battleship equipment = { battleship_1 = { amount = 1 owner = SHW version_name = "波罗的海级" } } }
+			###战列舰
+
+			###战列巡洋舰
+			ship = { name = "锡诺普号" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = SHW version_name = "伊兹密尔级" } } }
+			ship = { name = "切什梅号" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = SHW version_name = "伊兹密尔级" } } }	
+			###战列巡洋舰	
+
+			###驱逐舰
+			ship = { name = "驱逐舰" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SHW version_name = "O/P/R 级" } } }	
+			###驱逐舰
+
+			###重巡洋舰
+			ship = { name = "乔尔卢号" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SHW version_name = "乔尔卢级" } } }
+			###重巡洋舰
+			
+			###轻巡洋舰
+			ship = { name = "乌沙科夫号" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SHW version_name = "波将金级"} } }
+			ship = { name = "纳希莫夫号" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SHW version_name = "波将金级"} } }
+			###轻巡洋舰		
+
+			###潜艇
+			ship = { name = "潜艇" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SHW version_name = "O/P/R 级" } } }
+			
+			###潜艇
 		}
 	}
 
-	### Black Sea Fleet -- Sevastopol
+
+
+
+
 	fleet = {
-		name = "Chernomorskiy Flot"
-		naval_base = 3686 # Sevastopopl
+		name = "黑海舰队"
+		naval_base = 3686 # Leningrad
 		task_force = {				
-			name = "Chernomorskiy Flot"
-			location = 3686 # Sevastopopl
-			ship = { name = "Parizhskaya Kommuna" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SHW version_name = "Marat Class" } } }
-			ship = { name = "Krasni Kavkaz" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SHW version_name = "Chervona Ukraina Class" } } }
-			ship = { name = "Krasny Krym" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SHW version_name = "Chervona Ukraina Class" } } }
-			ship = { name = "Chervona Ukraina" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SHW version_name = "Chervona Ukraina Class" } } }
-			ship = { name = "Komintern" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SHW version_name = "Komintern Class" } } }
-			ship = { name = "Bug" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SHW version_name = "Bug Class" } } }
-		}	
-		task_force = {	
-			name = "Chernomorskiy Podvodniy Flot"
-			location = 3686 # Sevastopopl
-			# 9iy Podvodniy Flot
-			ship = { name = "Shch-121" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-122" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-123" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-124" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			# 15iy Podvodniy Flot
-			ship = { name = "A-1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "AG Class" } } }
-			ship = { name = "A-2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "AG Class" } } }
-			ship = { name = "A-3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "AG Class" } } }
-			ship = { name = "A-4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "AG Class" } } }
-			ship = { name = "A-5" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "AG Class" } } }
-			# 17iy  Podvodniy Flot
-			ship = { name = "L-4" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SHW version_name = "Series II Leninets" } } }			
-			ship = { name = "L-5" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SHW version_name = "Series II Leninets" } } }			
-			ship = { name = "L-6" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SHW version_name = "Series II Leninets" } } }			
-		}	
+			name = "黑海舰队"
+			location = 3686 # Leningrad
+
+			###战列舰
+			ship = { name = "康斯坦丁号" definition = battleship equipment = { battleship_1 = { amount = 1 owner = SHW version_name = "尼古拉一世级" } } }
+			###战列舰
+
+			###战列巡洋舰
+			ship = { name = "罗斯号" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = SHW version_name = "色雷斯级" } } }
+			ship = { name = "斯基泰号" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = SHW version_name = "色雷斯级" } } }
+			ship = { name = "瓦良格号" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = SHW version_name = "色雷斯级" } } }
+			###战列巡洋舰	
+
+			###驱逐舰
+			ship = { name = "驱逐舰" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SHW version_name = "O/P/R级" } } }	
+			###驱逐舰
+
+			###重巡洋舰
+			ship = { name = "马卡罗夫号" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SHW version_name = "克雷洛夫级" } } }
+			ship = { name = "奥恰科夫号" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SHW version_name = "克雷洛夫级" } } }
+			###重巡洋舰
+			
+			###轻巡洋舰
+			ship = { name = "伊戈尔号" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SHW version_name = "留里克级"} } }
+			ship = { name = "斯维亚托斯拉夫号" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SHW version_name = "留里克级"} } }
+			ship = { name = "弗拉基米尔号" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SHW version_name = "留里克级"} } }
+			ship = { name = "波将金号" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SHW version_name = "波将金级"} } }
+			ship = { name = "库图佐夫号" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SHW version_name = "波将金级"} } }
+			###轻巡洋舰		
+
+			###潜艇
+			ship = { name = "潜艇" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SHW version_name = "O/P/R级" } } }
+			
+			###潜艇
+		}
 	}
 
-	### Pacific Fleet -- Vladivostok
+
+
+
+
+
+
+
 	fleet = {
-		name = "Tikhookeanskiy Flot"
-		naval_base = 957 # Vladivostok
+		name = "远东舰队"
+		naval_base = 957 # Leningrad
 		task_force = {				
-			name = "Tikhookeanskiy Flot"
-			location = 957 # Vladivostok
-			# 8ya Flotiliya Esmintsev
-			ship = { name = "Uritskiy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SHW version_name = "Orfey Class" } } }
-			ship = { name = "Stalin" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SHW version_name = "Orfey Class" } } }
-		}	
-		task_force = {	
-			name = "Tihookyeanskiy Podvodniy Flot"
-			location = 957 # Vladivostok
-			# 10iy Podvodniy Flot
-			ship = { name = "Shch-101" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-102" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-103" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-104" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-105" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-106" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			# 11iy Podvodniy Flot
-			ship = { name = "Shch-107" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-108" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-109" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-110" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-111" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-112" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SHW version_name = "Series V Shchuka" } } }			
-			# 18iy  Podvodniy Flot
-			ship = { name = "L-7" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SHW version_name = "Series II Leninets" } } }			
-			ship = { name = "L-8" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SHW version_name = "Series II Leninets" } } }			
-			ship = { name = "L-9" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SHW version_name = "Series II Leninets" } } }			
-		}		
+			name = "远东舰队"
+			location = 957 # Leningrad
+			###战列舰
+			ship = { name = "尼古拉一世号" definition = battleship equipment = { battleship_1 = { amount = 1 owner = SHW version_name = "尼古拉一世级" } } }
+			
+			ship = { name = "波罗的海号" definition = battleship equipment = { battleship_1 = { amount = 1 owner = SHW version_name = "波罗的海级" } } }
+			###战列舰
+
+			###战列巡洋舰
+			ship = { name = "伊兹密尔号" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = SHW version_name = "伊兹密尔级" } } }
+			ship = { name = "纳瓦里诺号" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = SHW version_name = "伊兹密尔级" } } }		# Hood variant			
+			ship = { name = "色雷斯号" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = SHW version_name = "色雷斯级" } } }
+			###战列巡洋舰	
+
+			###驱逐舰
+			ship = { name = "驱逐舰" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SHW version_name = "O/P/R 级" } } }	
+			###驱逐舰
+
+			###重巡洋舰
+			ship = { name = "克雷洛夫号" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SHW version_name = "克雷洛夫级" } } }
+			ship = { name = "特拉布宗号" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SHW version_name = "乔尔卢级" } } }
+			###重巡洋舰
+			
+			###轻巡洋舰
+			ship = { name = "留里克号" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SHW version_name = "留里克级"} } }
+			ship = { name = "奥列格号" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SHW version_name = "留里克级"} } }
+			ship = { name = "苏沃洛夫号" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SHW version_name = "波将金级"} } }
+			ship = { name = "拉扎列夫号" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SHW version_name = "波将金级"} } }
+			###轻巡洋舰		
+
+			###潜艇
+			ship = { name = "潜艇" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SHW version_name = "O/P/R 级" } } }
+			
+			###潜艇
+		}
 	}
-} 
+}
+
+
 
 
 
@@ -169,31 +149,31 @@ units= {
 instant_effect = {
 
 	### Ships Under Construction Notes ###
-	# DD: Leningrad & Minsk variant (x4) ("Leningrad" "Moskva" "Kharkov" "Minsk")
+	# DD: Leningrad & Minsk variant (x1) ("Leningrad" "Moskva" "Kharkov" "Minsk")
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_2
+			type = ship_hull_light_1
 			creator = "SHW"
 			version_name = "Leningrad & Minsk Class"
 		}
 		requested_factories = 1
 		progress = 0.70
-		amount = 2
+		amount = 1
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_2
+			type = ship_hull_light_1
 			creator = "SHW"
 			version_name = "Leningrad & Minsk Class"
 		}
 		requested_factories = 1
-		progress = 0.60
-		amount = 2
+		progress = 0.10
+		amount = 1
 	}
 	#CA Kirov Class (Kirov)
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_cruiser_2
+			type = ship_hull_cruiser_1
 			creator = "SHW"
 			version_name = "Kirov Class"
 		}
@@ -204,7 +184,7 @@ instant_effect = {
 	#CA Kirov Class (Voroshilov)
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_cruiser_2
+			type = ship_hull_cruiser_1
 			creator = "SHW"
 			version_name = "Kirov Class"
 		}
@@ -212,9 +192,9 @@ instant_effect = {
 		progress = 0.10
 		amount = 1
 	}
-	# SS: Shchuka class (x29) ("Shch-125" "Shch-205" "Shch-206" "Shch-207" "Shch-310" "Shch-311" "Shch-126" "Shch-127" "Shch-128" "Shch-129" "Shch-130" "Shch-131" "Shch-132" "Shch-133" 
-	#		"Shch-134" "Shch-208" "Shch-312" "Shch-313" "Shch-314" "Shch-315" "Shch-316" "Shch-317" "Shch-318" "Shch-319" "Shch-320" "Shch-321" "Shch-322" "Shch-323" "Shch-324")
-	# SS: Stalinets class (x5) ("P-1" "P-2" "P-3" "S-1" "S-2")
+	# SS: Shchuka class (x19) ("Shch-111" "Shch-101" "Shch-101" "Shch-107" "Shch-110" "Shch-111" "Shch-111" "Shch-117" "Shch-118" "Shch-119" "Shch-110" "Shch-111" "Shch-111" "Shch-111" 
+	#		"Shch-111" "Shch-108" "Shch-111" "Shch-111" "Shch-111" "Shch-111" "Shch-111" "Shch-117" "Shch-118" "Shch-119" "Shch-110" "Shch-111" "Shch-111" "Shch-111" "Shch-111")
+	# SS: Stalinets class (x1) ("P-1" "P-1" "P-1" "S-1" "S-1")
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_submarine_1
@@ -223,7 +203,7 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.80
-		amount = 6
+		amount = 1
 	}
 	add_equipment_production = {
 		equipment = {
@@ -233,7 +213,7 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.80
-		amount = 12
+		amount = 11
 	}
 	add_equipment_production = {
 		equipment = {
@@ -243,18 +223,16 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.80
-		amount = 12
+		amount = 11
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_submarine_2
+			type = ship_hull_submarine_1
 			creator = "SHW"
 			version_name = "Series IX Srednyaya"
 		}
 		requested_factories = 1
 		progress = 0.70
-		amount = 5
+		amount = 1
 	}
 }
-
-#####################

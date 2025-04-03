@@ -411,13 +411,13 @@ equipments = {
 		}
 		default_modules = {
 			fixed_ship_battery_slot = ship_medium_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_anti_air_slot = ship_anti_air_2
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			mid_1_custom_slot = ship_secondaries_1
-			mid_2_custom_slot = ship_anti_air_3
+			mid_2_custom_slot = ship_anti_air_2
 			rear_1_custom_slot = ship_medium_battery_1
 		}
 		lg_armor_piercing = 0
