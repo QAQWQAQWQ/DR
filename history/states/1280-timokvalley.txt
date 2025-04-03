@@ -1,0 +1,29 @@
+
+state={
+	id=1280
+	name="STATE_1280"
+	manpower =243947
+	
+	
+	state_category = town
+	
+	
+	resources={
+		grain=2
+		
+	}
+	history={
+		owner = SIW
+		add_core_of = SIW
+		add_core_of = LMN
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		 630
+	}
+
+	local_supplies=7.0 
+}
