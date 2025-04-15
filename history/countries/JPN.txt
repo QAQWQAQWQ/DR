@@ -36,6 +36,7 @@ recruit_character = JPN_Hara_Takashi
 recruit_character = JPN_Saionji_Kinmoch
 recruit_character = JPN_Korekiyo_Takahashi
 recruit_character = JPN_Inuto_Yi
+recruit_character = JPN_Yukio_Ozaki
 recruit_character = JPN_Takashi_Hara
 recruit_character = JPN_Tokugawa_Ieda
 recruit_character = JPN_Yoshimasa_Oshima
@@ -105,22 +106,19 @@ add_ideas={
 	#JPN_Restoration
 	JPN_estrangement
 	JPN_haze_Russo_Japanese_War
-    JPN_Taisho_period
     JPN_noninterference
 ##MINISTERS##
 JPN_Emperor_Taisho_H
 #law
-Basic_industrialization 
-Corporate_economy
+Basic_industrialization
 No_labor_laws
-Control_media
+Media_control
 Patriarchy_supreme
-Underlying_investment
-Autonomous_police
+Weak_investments
+Local_police
+elementary_school
 Theocratic_state
-
-
-
+Market_economy
 }
 set_popularities = {
 	Paternalism = 6

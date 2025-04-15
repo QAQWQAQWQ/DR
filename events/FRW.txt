@@ -1189,18 +1189,15 @@ country_event = {
 		}
 	option = {
 		name = FRW.35.b
-		hidden_effect = {
-			every_country = {
-				news_event = {id=Election_result.1 days = 2}
-			}
-			
+		#hidden_effect = {
+		news_event = {id=Election_result.1 }
 		set_popularities = {
 			Reformism=62
 			Liberalism=18
 			Revolutionism=15
 			Anarchism=5
 		}
-		}
+		#}
 		trigger = {
 			AND={
 				NOT={has_country_flag = Assembly_Tours_1}

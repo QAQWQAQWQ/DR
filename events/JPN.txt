@@ -141,7 +141,6 @@ news_event = {
 		name = JPN.9.a
 		hidden_effect={
 			retire_character = JPN_Shigenobu_Okuma
-			country_event = {id=JPN.10 days=65}
 			set_party_name = {
 				ideology = Dictatorship
 				long_name = Dictatorship_Yamagata_Aritomo
@@ -228,5 +227,140 @@ news_event = {
 	fire_only_once = yes
 	option = {
 		name = JPN.14.a
+	}
+}
+
+country_event = {
+	id = JPN.15
+	title = JPN.15.t
+	desc = JPN.15.d
+	picture = GFX_JPN_15
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+	option = {
+		name = JPN.15.a
+		set_politics = { 
+			ruling_party = Liberalism
+		}
+		promote_character = {
+			character = JPN_Korekiyo_Takahashi
+			ideology = Social_Liberalism
+		}
+	}
+	option = {
+		name = JPN.15.b
+		set_politics = {
+			ruling_party = Liberalism
+		}
+		promote_character = {
+			character = JPN_Inuto_Yi
+			ideology = Social_Liberalism
+		}
+	}
+	option = {
+		name = JPN.15.c
+		set_politics = {
+			ruling_party = Liberalism
+		}
+		promote_character = {
+			character = JPN_Yukio_Ozaki
+			ideology = Social_Liberalism
+		}
+	}
+}
+country_event = {
+	id = JPN.16
+	title = JPN.16.t
+	desc = JPN.16.d
+	picture = GFX_illness
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.16.a
+	}
+}
+country_event = {
+	id = JPN.17
+	title = JPN.17.t
+	desc = JPN.17.d
+	picture = GFX_illness
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.17.a
+	}
+}
+country_event = {
+	id = JPN.18
+	title = JPN.18.t
+	desc = JPN.18.d
+	picture = GFX_illness
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.18.a
+	}
+	option = {
+		name = JPN.18.b
+	}
+	option = {
+		name = JPN.18.c
+	}
+}
+
+news_event = {
+	id = JPN.19
+	title = JPN.19.t
+	desc = JPN.19.d
+	picture = GFX_JPN_19
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			969={
+				transfer_state_to = JPN
+			}
+			970={
+				transfer_state_to = JPN
+			}
+			971={
+				transfer_state_to = JPN
+			}
+			525={
+				transfer_state_to = JPN
+			}
+			972={
+				transfer_state_to = JPN
+			}
+		}
+	}
+	option = {
+		name = JPN.19.a
+	}
+}
+
+news_event = {
+	id = JPN.20
+	title = JPN.20.t
+	desc = JPN.20.d
+	picture = GFX_JPN_20
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+	immediate = {
+		JPN = {
+			declare_war_on = {
+				target = KON
+				type = annex_everything
+			}
+		}
+	}
+	option = {
+		name = JPN.20.a
 	}
 }

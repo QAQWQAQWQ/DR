@@ -512,7 +512,7 @@ position = { x = 0 y = -72 }
 		clipping = no
 		orientation = center
 		origo = center
-		moveable = yes
+		moveable = NO
 
 		instantTextBoxType = {
 			name = "title"
@@ -549,7 +549,7 @@ position = { x = 0 y = -72 }
 
 		instantTextBoxType = {
 			name = "history_title"
-			position = { x = 121 y = 273 }
+			position = { x = 121 y = 263 }
 			font = "newsfronttitle_black20s"
 			borderSize = {x = 0 y = 0}
 			text = "BM_HISTORY_TITLE"
@@ -617,7 +617,7 @@ position = { x = 0 y = -72 }
 			textureFile = ""
 			font = "hoi_24header"
 			borderSize = {x = 0 y = 0}
-			text = "FE_SELECT_COUNTRY"
+			#text = "FE_SELECT_COUNTRY"
 			maxWidth = 340
 			maxHeight = 30
 			format = centre

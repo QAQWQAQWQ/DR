@@ -107,7 +107,6 @@ characters={
 	}
 
 
-
 	JPN_Korekiyo_Takahashi={
 		name=JPN_Korekiyo_Takahashi
 		portraits={
@@ -139,7 +138,37 @@ characters={
 			}
 		}
 	}
-
+	JPN_Yukio_Ozaki={
+		name=JPN_Yukio_Ozaki
+		portraits={
+			civilian={
+				large="gfx/leaders/JPN/portrait_Yukio_Ozaki.tga"
+				small="gfx/interface/ideas/JPN/JPN_Yukio_Ozaki.dds"
+			}
+		}
+		country_leader={
+			ideology=Social_Liberalism
+            desc=JPN_Yukio_Ozaki_DESC
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=JPN_Yukio_Ozaki_p
+			removal_cost = -1
+			allowed={
+				tag=JPN
+			}
+			available = {
+				JPN_Yukio_Ozaki={
+					is_country_leader = no
+				}
+			}
+			traits={
+			}
+		}
+	}
 	JPN_Inuto_Yi={
 		name=JPN_Inuto_Yi
 		portraits={

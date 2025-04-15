@@ -44,6 +44,10 @@ Country_Bankruptcy_desc:0 "§Y禁止训练部队以及更改编制§! \n国家�
  JPN_haze_Russo_Japanese_War:0 "日俄战争的阴霾"
  JPN_haze_Russo_Japanese_War_desc:0 "旅顺战役的失利彻底打垮了军部的傲骨，大将乃木希典在谈判结束的一个周后，在家与妻子一同切腹谢罪。战争消耗了占当时日本GDP的85%，迫使政府发行高达14.6亿日元的战时国债，股市暴雷，天皇政府遭受前所未有的质疑，战争阴霾至今笼罩在整个日本本岛之上挥之不去。\n\n§Y禁止训练部队以及更改编制§! "
 
+
+JPN_Eighty_eight_naval_plan:0 "八八海军计划"
+JPN_Eighty_eight_naval_plan_desc:0 "该计划在战列舰长门级2艘、加贺级2艘，战列巡洋舰天城级4艘的基础上，再拨款建造4艘战列舰，4艘战列巡洋舰。八八舰队计划除主力舰的建造计划以外还包括巡洋舰等，辅助舰艇的建造计划。"
+
  KON_Neutrality_North_Korea:0 "朝鲜中立化"
  KON_Neutrality_North_Korea_desc:0 "朝鲜半岛的中立化并未能抚平战争的创伤。沙俄远东舰队仍盘踞在元山港，而日本商团则在釜山沿岸修筑起密如蛛网的货栈与铁路。双方军官在汉城街头相遇时，仍会按着佩刀互相致意——只是那皮革摩擦声里总带着三分紧绷。\n\n§Y禁止训练部队以及更改编制§! "
 
@@ -79,8 +83,12 @@ Country_Bankruptcy_desc:0 "§Y禁止训练部队以及更改编制§! \n国家�
  FTX_Handsome_legacy_desc:0 "自从张作霖去世后，其子张学良继承了张作霖的权力，张学良想要重新组建新内阁，奉军内部分成两派，念及大帅旧情支持少帅的少帅派，也有不服张学良的奉军元老，火药味逐渐蔓延在奉天的上空....."
  ZHX_TAOTC:0 "北京政变的余波"
  ZHX_TAOTC_desc:0 "随着袁世凯在狱中病逝，冯国璋真正夺取了北京的权力，但中国各地的分裂已然不可阻挡，冯国璋眼下最大的威胁并不是东北的奉系军阀，而是更多虎视眈眈北京之位的野心家。"
- CEX_YMA:0 "云南讲武堂"
- CEX_YMA_desc:0 "云南讲武堂是全中国第一所高等军事院校，我们拥有着最好的军事教学资源。"
+ CEX_Yunnan_Military_Academy:0 "云南讲武堂"
+ CEX_Yunnan_Military_Academy_desc:0 "云南讲武堂是全中国第一所高等军事院校，我们拥有着最好的军事教学资源。"
+
+ CEX_Military_civilian_system:0 "军国民体系"
+ CEX_Military_civilian_system_desc:0 "军国民主义，昔滥觞于希腊之斯巴达，汪洋于近世诸大强国。欧西人士，即妇孺之脑质中，亦莫不深受此义。盖其国家以此为全国国民之普通教育，国民以奉斯主义为终身莫大之义务。帝国主义，实由军国民主义胎化而出者也，盖内力既充，自不得不盈溢而外奔耳。"
+
  FRW_The_shame_of_Alsace_Lorraine:0 "阿尔萨斯-洛林之耻"
  FRW_The_shame_of_Alsace_Lorraine_desc:0 "自从阿尔萨斯-洛林被割让给了德国后，许多的民众离开阿尔萨斯-洛林搬往法国内陆，我们的群众对阿尔萨斯-洛林的呼声越来越强烈。"
  FRW_African_Royal_Families_in_exile:0 "非洲流亡王室"
@@ -380,9 +388,6 @@ BRA_Brazilian_Guard:0 "巴西国民警卫队"
 BRA_Brazilian_Guard_desc:0 "随着全国州代表大会的展开，帝国的实际统治者们：各州议会议员们齐聚首都里约热内卢，共商改革事宜。最终各州政府代表同意妥协，各州国民警卫队以佩德罗皇帝的名义进行改组，各路忠君、爱国思想逐渐传播开来。"
 
 
-HLS_Middle_East_Road:0 "中东铁路"
-HLS_Middle_East_Road_desc:0 "自日俄战争结束后，沙俄帝国成为了整个东北的掌控者，沙皇下令扩建地处东北的中东路铁路公司，随着铁路的不断扩建，俄国士兵接连不断的挑衅着中国守军，终于武装冲突爆发了，1917年冬，沙皇下令全面入侵东北，在俄军的猛烈攻势下，奉天政府不得不放弃了中东路以北的领土。"
-
 TIB_Tibetan_Buddhism:0 "藏传佛教"
 TIB_Tibetan_Buddhism_desc:0 ""
 
@@ -414,21 +419,32 @@ UBS_Free_State_desc:0 "我们的未来不由大庄园主控制！——暴动的
 IRL_Furious_Alster:0 "愤怒的阿尔斯特"
 IRL_Furious_Alster_desc:0 "爱尔兰问题困扰了英国数十年。当1914年爱政府法案通过时，虽然首相阿斯奎斯看到了阿尔斯特问题可能产生的严重后果，爱尔兰双方的谈判以僵局不了了之。伦敦方面急于推行法案，9月18日法案生效后，阿尔斯特9郡中有6郡陷入动荡，险些酿成武装冲突。爱尔兰军团迅速下场，缴械了部分明目张胆的阿尔斯特志愿军和爱尔兰志愿军。6年以来，阿尔斯特人的愤怒并未消减。比起爱尔兰，他们更认同自己的祖国不列颠。\n§G此非无关紧要之事，这群匈人要夺走我们宝贵的自治。盯紧他们。§! \n§R阿尔斯特人和新阿尔比恩为一丘之貉，他们不是你的朋友。但为了遏制爱尔兰佬，你可适时利用他们。§!"
 
-add_to_variable_capital_reserves:0 "国库开销: §R+0.01B§!"
 
-add_to_variable_FRW_43:0 "查收资产: §G+0.25B§!"
+
+
 
 Left_wing_tendencies:0 "接纳左翼"
 
+Colonization_railways:0 "铁路殖民化"
+Colonization_railways_desc:0 "沙俄入主东北的十五年间，东三省的铁路获得了极大的发展，庞大的铁路网成为了俄国在此的代名词。" 
+
 SHW_General_Staff:0 "帝国总参谋部" 
-SHW_General_Staff_desc::0 "总参谋部"
+
+SHW_General_Staff_desc:0 "总参谋部"
+
 SHW_General_Staff_effect:0 "帝国总参谋部效果获得提升" 
+
+
 
 Food_shortages:0 "粮食短缺"
 Food_shortages_desc:0 "我们现在陷入了粮食短缺的情况，在这种情况下，人民会对现在的政府不满，军队也因粮食短缺陷入混乱状态。"
 
+
+
 Bankruptcy:0 "国家破产"
 Bankruptcy_desc:0 "国家现在陷入了破产的情况，失业率剧增，大量工人失业，国民的生活水平将严重降低，发行货币暴跌，股市几乎全军覆没。"
+
+
 
 FRW_still_attack:0 "霞飞计划"
 FRW_still_defense:0 "萨雷尔计划"
@@ -517,3 +533,4 @@ Spontaneous_army_dy:0 "自发性军队"
 Reduce_unemployment:0 "失业率降低"
 
 ESI_Focus5_dy:0 "村镇医院"
+

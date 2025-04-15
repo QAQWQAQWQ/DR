@@ -1,5 +1,9 @@
 spriteTypes = {
-
+	
+	spriteType = {
+	    name = "GFX_idea_Colonization_railways"
+	    texturefile = "gfx/interface/ideas/JLP/Colonization_railways.dds"
+    } 
 	spriteType = {
 	    name = "GFX_idea_ZiD"
 	    texturefile = "gfx/interface/ideas/organization/ZiD.dds"
@@ -55,6 +59,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_haze_Russo_Japanese_War"
 		texturefile = "gfx/interface/ideas/JPN/haze_Russo_Japanese_War.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Eighty_eight_naval_plan"
+		texturefile = "gfx/interface/ideas/JPN/Eighty_eight_naval_plan.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_Blind_Allowance_Act"
@@ -500,7 +508,11 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_Yunnan_Military_Academy"
-		texturefile = "gfx/interface/ideas/Yunnan_Military_Academy.dds"
+		texturefile = "gfx/interface/ideas/CEX/Yunnan_Military_Academy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Military_civilian_system"
+		texturefile = "gfx/interface/ideas/CEX/Military_civilian_system.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_The_shame_of_Alsace_Lorraine"
