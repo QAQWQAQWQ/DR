@@ -274,6 +274,7 @@ buildings = {
 		}
 	}
 
+	
 	fuel_silo = {
 		show_on_map = 1
 		base_cost = 5000
@@ -618,6 +619,31 @@ buildings = {
 		show_modifier = yes
 		state_modifiers = {
 			
+		}
+	}
+
+	####DR
+	#####
+	Farm_building = {
+		show_on_map = 1
+		base_cost = 8500
+		icon_frame = 28
+		#local_resources_oil = 1 # May use local_resources_ + any resource name
+		local_resources_grain = 1 # May use local_resources_ + any resource name
+		refinery = yes
+		value = 5
+		infrastructure_construction_effect = yes
+		
+		show_modifier = yes
+
+		country_modifiers = {
+			modifiers = {
+			}
+		}
+
+		level_cap = {
+			shares_slots = yes
+			state_max = 5
 		}
 	}
 }

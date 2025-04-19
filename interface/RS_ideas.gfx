@@ -1338,7 +1338,54 @@ spriteTypes = {
 		name = "GFX_idea_Kaiserliche"
 		texturefile = "gfx/interface/ideas/organization/Kaiserliche.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_Nagoya"
+		texturefile = "gfx\interface\ideas\organization\Nagoya.dds"
+		}
+	spriteType = {
+name = "GFX_Kure_Harbor"
+texturefile = "gfx\interface\ideas\organization\Kure_Harbor.dds"
+}
+spriteType = {
+name = "GFX_Maizuru"
+texturefile = "gfx\interface\ideas\organization\Maizuru.dds"
+}
+spriteType = {
+name = "GFX_Sasebo"
+texturefile = "gfx\interface\ideas\organization\Sasebo.dds"
+}
+spriteType = {
+name = "GFX_Yokosuka"
+texturefile = "gfx\interface\ideas\organization\Yokosuka.dds"
+}
+	spriteType = {
+		name = "GFX_Tokyo_Hohei"
+		texturefile = "gfx\interface\ideas\organization\Tokyo_Hohei.dds"
+		}
+	spriteType = {
+		name = "GFX_Jinsen"
+		texturefile = "gfx\interface\ideas\organization\Jinsen.dds"
+		}
+	spriteType = {
+		name = "GFX_Kawasaki"
+		texturefile = "gfx\interface\ideas\organization\Kawasaki.dds"
+		}
+		spriteType = {
+		name = "GFX_Matsushita"
+		texturefile = "gfx\interface\ideas\organization\Matsushita.dds"
+		}
+		spriteType = {
+		name = "GFX_Mitsubishi"
+		texturefile = "gfx\interface\ideas\organization\Mitsubishi.dds"
+		}
+		spriteType = {
+		name = "GFX_Nakajima"
+		texturefile = "gfx\interface\ideas\organization\Nakajima.dds"
+		}
+		spriteType = {
+		name = "GFX_Toshiba"
+		texturefile = "gfx\interface\ideas\organization\Toshiba.dds"
+		}
 	spriteType = {
 		name = "GFX_idea_Albatross"
 		texturefile = "gfx/interface/ideas/organization/Albatross.dds"

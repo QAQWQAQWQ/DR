@@ -1,5 +1,5 @@
 ﻿l_simp_chinese:
- National_Parliament: "议 会 按 钮"
+ National_Parliament: "议 会"
  National_Parliament_desc: "你可以点击按钮查看当前议会"
  NATIONAL_UNITY: "国家凝聚力"
  STABILITY: "稳定度"
@@ -109,9 +109,15 @@
  DAILY_EXPERIENCE_GAIN_OFFICERS: "日增长："
 
  #NUM_OF_grain:0 "[?resource_grain]"
- grain_value_TOOLTIP:0 "§Y粮食储备§!\n--每月收益约:[?resource_grain_exp|0Y]单位\n--每周消耗约:[?grain_manpower|0Y]单位\n--目前进口:[?resource_imported@grain|0Y]单位\n--目前部队规模:[?num_divisions|0Y]\n\n最大值：§Y5000§!"
+ grain_value_TOOLTIP:0 "§Y粮食储备§!\n\n--目前进口:[?resource_imported@grain|0Y]单位\n--目前部队规模:[?num_divisions|0Y]\n\n"
 
- grain_value_TT_TOOLTIP:0 "我们的粮仓目前有[?resource_grain|0Y]单位,目前控制了[?num_owned_controlled_states|0Y]块省份，有些省份会提供额外粮食收入，每周会有粮食被消耗，每月会收获新一批粮食。"
+
+
+
+ grain_value_TT_TOOLTIP:0 "我们的粮仓目前有[?resource_grain|0Y]单位,目前控制了[?num_owned_controlled_states|0Y]块省份，粮食将会被用于制作军用罐头以供军队补给，缺少粮食将会导致无法征募更多军队，粮食可以通过农场来获取。"
+
+
+
 
  jobless_value_TOOLTIP:0 "§Y失业率§!\n--目前失业人口:[?working_population|2Y]K\n\n§Y当前失业率的影响：§!\n\n--GDP增长率：[?Jobless_rate_stab_tool|R]%\n--稳定度：[?Jobless_rate_tool|R]%\n--生产效率基础：[?Jobless_rate_tool|R]%\n--生产效率上限：[?Jobless_rate_tool|R]%\n--生产效率增长：[?Jobless_rate_tool|R]%\n--生产效率保持：[?Jobless_rate_tool|R]%"
  jobless_value_TT_TOOLTIP:0 "失业率是反映劳动力市场供需情况的指标，是各国宏观调控的主要目标。高失业率会影响工厂的产出和建设，过高的失业率会导致经济增长动力减弱。"

@@ -1136,10 +1136,7 @@ country_event = {
 	picture = GFX_FRW_5
 	is_triggered_only = yes
 	trigger = {
-		has_country_leader = {
-				character = FRW_Jean_Jaures
-				ruling_only = yes
-		}
+		
 	}
 	immediate = {
 		set_country_flag = FRW_35_flag

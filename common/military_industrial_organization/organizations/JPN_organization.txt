@@ -1,0 +1,153 @@
+JPN_Nakajima = {
+	include = generic_light_aircraft_organization
+	icon = GFX_Nakajima
+	
+	allowed = {	 
+			tag = JPN
+	}
+
+	available = {
+	}
+}
+JPN_Mitsubishi_plane = {
+	include = generic_light_aircraft_organization
+	icon = GFX_Mitsubishi
+	
+	allowed = {	 
+			tag = JPN
+	}
+
+	available = { 
+	}
+}
+JPN_Kawasaki_plane = {
+	include = generic_range_focused_aircraft_organization
+	icon = GFX_Kawasaki
+	
+	allowed = {	 
+			tag = JPN
+	}
+
+	available = {
+	}
+}
+JPN_Kawasaki= {
+	include = generic_tank_organization
+	icon = GFX_Kawasaki
+	
+	allowed = {	 
+			tag = JPN
+	}
+
+	available = {
+	}
+}
+JPN_Kawasaki_navy= {
+	include = generic_task_force_ship_organization
+	icon = GFX_Kawasaki
+	
+	allowed = {	 
+			tag = JPN
+	}
+
+	available = {
+	}
+}
+JPN_Mitsubishi= {
+	include = generic_armored_car_organization
+	icon = GFX_Mitsubishi
+	
+	allowed = {	 
+			tag = JPN
+	}
+
+	available = {
+	}
+}
+
+JPN_Tokyo_Hohei= {
+	include = generic_infantry_equipment_organization
+	icon = GFX_Tokyo_Hohei
+	
+	allowed = {	 
+			tag = JPN
+	}
+
+	available = {
+	}
+}
+JPN_Jinsen= {
+	include = generic_infantry_equipment_organization
+	icon = GFX_Jinsen
+	
+	allowed = {	 
+			tag = JPN
+	}
+
+	available = {
+		969={
+			is_controlled_by = JPN
+		} 
+	}
+}
+JPN_Nagoya= {
+	include = generic_support_equipment_organization
+	icon = GFX_Nagoya
+	
+	allowed = {	 
+			tag = JPN
+	}
+
+	available = {
+	}
+}
+
+
+
+JPN_Kure_Harbor= {
+	include = generic_battle_line_ship_organization
+	icon = GFX_Kure_Harbor
+	
+	allowed = {	 
+			tag = JPN
+	}
+
+	available = {
+	}
+}
+
+JPN_Maizuru= {
+	include = generic_escort_ship_organization
+	icon = GFX_Maizuru
+	
+	allowed = {	 
+			tag = JPN
+	}
+
+	available = { 
+	}
+}
+
+JPN_Sasebo= {
+	include = generic_submarine_organization
+	icon = GFX_Sasebo
+	
+	allowed = {	 
+			tag = JPN 
+	} 
+
+	available = {
+	}
+}
+
+JPN_Yokosuka= {
+	include = generic_raider_ship_organization 
+	icon = GFX_Yokosuka
+	
+	allowed = {	 
+			tag = JPN
+	}
+
+	available = {
+	}
+}

@@ -1488,9 +1488,7 @@ Jobless_rate = {
     }
     set_variable = { Jobless_rate_tool = Jobless_rate_stab_value }
     divide_variable = {
-        Jobless_rate_tool = 0.01
+        Jobless_rate_tool = 0.03
     }
-
-    
     
 }

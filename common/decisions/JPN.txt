@@ -77,3 +77,129 @@ JPN_Twenty_fifth_Division = {
 			}
 	}
 }
+
+
+
+#########第二次护宪运动
+JPN_The_Second_Movement_Protect_Constitution = {
+	JPN_Newspaper_publicity = {
+		icon = generic_ignite_civil_war 
+			visible = {
+			}     
+			available = { 
+			}
+			days_re_enable = 5  
+			days_remove = 50
+			cost = 25
+			allowed = {
+				tag = JPN
+			}
+			complete_effect = { 
+			}
+			fixed_random_seed = no
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 1
+			}
+	}
+	JPN_Mobilize_citizens_demonstrate = {
+		icon = generic_ignite_civil_war
+			visible = {
+			}
+			available = {
+			}
+			days_re_enable = 5 
+			days_remove = 50
+			cost = 25
+			allowed = {
+				tag = JPN
+			}
+			complete_effect = { 
+			}
+			fixed_random_seed = no
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 1
+			}
+	}
+	JPN_Parliamentary_negotiations = {
+		icon = generic_ignite_civil_war
+			visible = {
+			}
+			available = {
+			}
+			days_re_enable = 5 
+			days_remove = 50
+			cost = 25
+			allowed = {
+				tag = JPN
+			}
+			complete_effect = { 
+			}
+			fixed_random_seed = no
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 1
+			}
+	}
+	JPN_Storming_police = {
+		icon = generic_ignite_civil_war
+			visible = {
+			}
+			available = {
+			}
+			days_re_enable = 5 
+			days_remove = 50
+			cost = 25
+			allowed = {
+				tag = JPN
+			}
+			complete_effect = { 
+			}
+			fixed_random_seed = no
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 1
+			}
+	}
+	JPN_The_army_dispatched_maintain_stability = {
+		icon = generic_ignite_civil_war
+			visible = {
+			}
+			available = {
+			}
+			days_re_enable = 5 
+			days_remove = 50
+			cost = 25
+			allowed = {
+				tag = JPN
+			}
+			complete_effect = { 
+			}
+			fixed_random_seed = no
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 1
+			}
+	}
+	JPN_Wage_workers_strike = {
+		icon = generic_ignite_civil_war
+			visible = {
+			}
+			available = {
+			}
+			days_re_enable = 5 
+			days_remove = 50
+			cost = 25
+			allowed = {
+				tag = JPN
+			}
+			complete_effect = { 
+			}
+			fixed_random_seed = no
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 1
+			}
+	}
+}

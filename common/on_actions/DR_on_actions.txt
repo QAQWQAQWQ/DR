@@ -71,10 +71,11 @@ on_actions = {
 		}
 	}
 	on_daily = {
-		
 		effect = {
 			every_country = {
-				set_temp_variable = { resource_grain = resource@grain }#_temp
+				set_variable = {
+					resource_grain = resource@grain 
+				}
 				clamp_variable = {
 					var = resource_grain
 					min = 0
@@ -83,43 +84,8 @@ on_actions = {
 				#set_temp_variable = { resource_grain_exported = resource_exported@grain }
 			} 
 		} 
-	} #on_weekly
-	on_weekly = {
-		
-		effect = {
-			every_country = {
-				set_temp_variable = { grain_temp_manpower = max_manpower_k } #temp
-				divide_temp_variable = { grain_temp_manpower = 250000 }#temp
-				set_variable = { grain_manpower = grain_temp_manpower }
-				subtract_from_variable = { resource_grain = grain_manpower }
-				divide_variable = { grain_manpower = 0.01 }
-				clamp_variable = {
-					var = resource_grain
-					min = 0
-					max = 5000
-				}
-        }  
-    
-			} 
-		}
+	} 
 	
-	on_monthly = {
-		
-		effect = {
-			every_country = {
-				set_temp_variable = { resource_grain_exported = resource_exported@grain } #temp
-				divide_temp_variable = { resource_grain_exported = 85 }#temp
-				set_variable = { resource_grain_exp = resource_grain_exported }
-				add_to_variable = { resource_grain = resource_grain_exp }
-				divide_variable = { resource_grain_exp = 0.01 }
-				clamp_variable = {
-					var = resource_grain
-					min = 0
-					max = 5000
-				}
-			} 
-		}
-	}
 	on_daily = {
 		
 		effect = {
