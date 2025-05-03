@@ -1483,7 +1483,7 @@ FRW_election_movement = {
 	}
     icon = mission_icon     # For GFX_decision_mission_icon
     is_good = yes
-    days_mission_timeout = 11
+    days_mission_timeout = 460
     selectable_mission = no 
 	fire_only_once = yes
     complete_effect = {
@@ -1673,11 +1673,12 @@ FRW_Maginot_Line_plan = {
 	visible = {
 	}
 	available = {
-		BHL={
+		BEL={
 			is_in_faction_with = FRW
 		}
 	}
 	days_remove = 1
+
 	cost = 0
 	allowed = {
 		tag = FRW
@@ -1715,12 +1716,10 @@ FRW_Maginot_Line_plan2 = {
 	visible = {                                                                                                              
 	}
 	available = {
-		34={
-          is_core_of = FRW
-		  is_controlled_by = FRW
-		}
+			has_country_flag = BEL_agree
 	}
 	days_remove = 720
+	fire_only_once = yes
 	cost = 200
 	allowed = {
 		tag = FRW
@@ -1729,25 +1728,25 @@ FRW_Maginot_Line_plan2 = {
 		34={
 			add_building_construction = {
 				type = bunker
-				level = 8
+				level = 4
 				instant_build = yes
 				province = 3488
 			}
 			add_building_construction = {
 				type = bunker
-				level = 8
+				level = 4
 				instant_build = yes
 				province = 11519
 			}
 			add_building_construction = {
 				type = bunker
-				level = 8
+				level = 4
 				instant_build = yes
 				province = 6537
 			}
 			add_building_construction = {
 				type = bunker
-				level = 8
+				level = 4
 				instant_build = yes
 				province = 9444
 			}
@@ -1785,6 +1784,7 @@ FRW_Maginot_Line_plan3 = {
 		  is_controlled_by = FRW
 		}
 	}
+	fire_only_once = yes
 	days_remove = 720
 	cost = 200
 	allowed = {
@@ -1794,13 +1794,13 @@ FRW_Maginot_Line_plan3 = {
 		18={
 			add_building_construction = {
 				type = bunker
-				level = 8
+				level = 4
 				instant_build = yes
 				province = 3560
 			}
 			add_building_construction = {
 				type = bunker
-				level = 8
+				level = 4
 				instant_build = yes
 				province = 5291
 			}
@@ -1838,6 +1838,7 @@ FRW_Maginot_Line_plan4 = {
 		  is_controlled_by = FRW
 		}
 	}
+	fire_only_once = yes
 	days_remove = 720
 	cost = 200
 	allowed = {
@@ -1847,19 +1848,19 @@ FRW_Maginot_Line_plan4 = {
 		17={
 			add_building_construction = {
 				type = bunker
-				level = 8
+				level = 4
 				instant_build = yes
 				province = 11516
 			}
 			add_building_construction = {
 				type = bunker
-				level = 8
+				level = 4
 				instant_build = yes
 				province = 521
 			}
 			add_building_construction = {
 				type = bunker
-				level = 8
+				level = 4
 				instant_build = yes
 				province = 698
 			}
@@ -1883,7 +1884,72 @@ FRW_Maginot_Line_plan4 = {
 	
 }
 
-
+FRW_Maginot_Line_plan5 = {
+	icon = generic_fortification
+	highlight_states = {
+		highlight_state_targets = {
+			state = 32
+		}
+	}
+	visible = {
+	}
+	available = {
+		32={
+          is_core_of = FRW
+		  is_controlled_by = FRW
+		}
+	}
+	fire_only_once = yes
+	days_remove = 720
+	cost = 200
+	allowed = {
+		tag = FRW
+	}
+	complete_effect = { 
+		32={
+			add_building_construction = {
+				type = bunker
+				level = 4
+				instant_build = yes
+				province = 3560
+			}
+			add_building_construction = {
+				type = bunker
+				level = 4
+				instant_build = yes
+				province = 5291
+			}
+			add_building_construction = {
+				type = bunker
+				level = 4
+				instant_build = yes
+				province = 11516
+			}
+			add_building_construction = {
+				type = bunker
+				level = 4
+				instant_build = yes
+				province = 521
+			}
+		}
+		add_to_variable = {
+			var = FRW_Maginot_Line_needle_VAR
+			value = 15
+		}
+		clamp_variable = {
+			var = FRW_Maginot_Line_needle_VAR
+			min = 0
+			max = 100
+		}
+		}
+	fixed_random_seed = no
+	fire_only_once = yes
+	is_good = no
+        ai_will_do = {
+		factor = 1
+		}
+	
+}
                                                
 }
               
@@ -1921,10 +1987,10 @@ FRW_Trade_unionist_propaganda={
 		
 		available = {            
 			
-		}
+		}  
 		days_remove = 30
 		cost = 20
-		allowed = {
+		allowed = { 
 			tag = FRW
 		}
 		complete_effect = { 

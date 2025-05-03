@@ -27,7 +27,7 @@ set_technology = {
 	iw_small_airframe= 1
 	early_ship_hull_light = 1
 	early_ship_hull_submarine = 1
-	early_ship_hull_heavy = 1
+	early_ship_hull_heavy = 1 
 	tracked_suspension = 1
 	great_war_light_chassis = 1
 	super_light_chassis = 1
@@ -40,7 +40,7 @@ country_event = { id = FRW.17 days = 35 }
 
 country_event = { id = Paris_Commune.1 days = 453 }
 country_event = { id = FRW.46 days = 105 }
-
+country_event = { id = FRW.36 days = 425 }
 set_politics = { 
 	ruling_party =  Reformism
 	last_election = "1921.1.1"

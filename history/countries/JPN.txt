@@ -51,12 +51,12 @@ recruit_character = JPN_Mazaki_Jinzaburo
 recruit_character = JPN_Honjo_Shigeru
 recruit_character = JPN_Terauchi_Hisaichi
 recruit_character = JPN_Matsui_Iwane
+recruit_character = JPN_Hirohito
+recruit_character = JPN_Shuaki_Okawa
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
-		
 		support_weapons = 1
-
 		#doctrines
 		air_superiority = 1
 		grand_battle_plan = 1
@@ -64,23 +64,9 @@ recruit_character = JPN_Matsui_Iwane
 		fleet_in_being = 1
 		battlefleet_concentration = 1
 		convoy_sailing = 1
-
-
 		#electronics
-		
-		
-		
-		
-		
 
 		#industry
-		
-		
-		
-		
-		
-		
-		
 		
 	}
 	give_guarantee = KON
@@ -91,14 +77,6 @@ set_politics = {
 	elections_allowed = no	
 }
 create_faction = Empire_Japan
-##add_to_faction = RTW
-##add_to_faction = KON
-#set_autonomy = { target = KON autonomy_state = autonomy_wtt_imperial_protectorate }
-#KON={
-	#set_popularities = {
-		#Conservatism = 100
-	#}
-#
 set_country_flag = parliament_mian_button_yes
 set_autonomy = { target = RTW autonomy_state = autonomy_colony }
 

@@ -49,10 +49,7 @@ FRW_European_Federation = {
 		tag = FRW 
 	}
 	visible = {
-		has_country_leader = {
-			name = FRW_Georges_Sorel
-			ruling_only = yes
-		}
+		has_completed_focus = FRW_focus3
 	}
 	visible_when_empty = yes
 	scripted_gui = FRW_Trade_unionist_decision
@@ -170,13 +167,12 @@ FRW_Maginot_Line_plan = {
 	
 	picture = GFX_decision_Maginot_Line_plan 
 
-	scripted_gui=FRW_Maginot_Line
 
 	priority = 4
 	allowed = {                  
 		tag = FRW
 	}
 	visible = {
-		has_completed_focus = FRW_focus31
+		has_completed_focus = FRW_focus150
 	}
 }

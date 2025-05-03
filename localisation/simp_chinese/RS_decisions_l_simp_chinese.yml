@@ -33,14 +33,16 @@
 
 
  JPN_The_Second_Movement_Protect_Constitution:0 "第二次护宪运动"
- JPN_The_Second_Movement_Protect_Constitution_desc:0 "\n\n\n\n\n\n\n\n面对蕃阀元老们的蛮横无理、破坏宪法的行径，我们绝不能坐视不管。只有发动群众，冲击议会，逼迫山县有朋下野，我们才有获胜的可能!自由或死亡，是时候行动起来捍卫民主了!\n\n当前稳定度: [?JPN.stability|0%]   元老容忍度: [?JPN.Patriarchal_tolerance]"
+ JPN_The_Second_Movement_Protect_Constitution_desc:0 "\n\n\n\n\n\n\n\n面对蕃阀元老们的蛮横无理、破坏宪法的行径，我们绝不能坐视不管。只有发动群众，冲击议会，逼迫山县有朋下野，我们才有获胜的可能!自由或死亡，是时候行动起来捍卫民主了!\n\n当前稳定度: §G[?JPN.stability|0%]§!   元老容忍度: §G[?JPN.Patriarchal_tolerance]%§!"
+ JPN_Second_Constitution:0 "护宪运动升级"
+ JPN_Second_Constitution_trigger:0 "达成§Y护宪运动§!要求:\n稳定度 ≤ §G45%§!\n元老容忍度 ≥ §G60%§!"
  JPN_Newspaper_publicity:0 "报纸舆论宣传"
  JPN_Mobilize_citizens_demonstrate:0 "发动市民游行示威"
  JPN_Parliamentary_negotiations:0 "议会谈判"
  JPN_Storming_police:0 "冲击警察机关"
  JPN_The_army_dispatched_maintain_stability:0 "出动陆军维稳"
  JPN_Wage_workers_strike:0 "发动工人罢工"
-
+ 
 
 
 
@@ -67,7 +69,7 @@
  Number_unions8:0 "已经在8座城市建立"
  Number_unions10:0 "已经在10座城市建立"
  FRW_election_movement:0 "法国大选"
- FRW_election_movement_desc:0"\n\n\n\n\n\n\n\n五年一届的法国大选正式开始，我们可以通过提升相关意识形态支持度来加强党派在各地区投射的力量，以此征求更多的选票来支持执政党的选举。\n\n目前党派席位：\n\n§Y社会革命联合党§!:[?parliament_seat_array^0]个席位\n\n§Y社会党（布鲁斯派）§!:[?parliament_seat_array^1]个席位\n\n§Y社会党（饶勒斯派）§![?parliament_seat_array^2]个席位\n\n§Y共和联盟§!:[?parliament_seat_array^3]个席位\n\n§Y社会党（阿勒曼派）§!:[?parliament_seat_array^4]个席位\n\n§Y无党派（独立人士）§!:[?parliament_seat_array^5]个席位\n\n当前军队内部派系：\n革命派：§Y[?Revolutionary_general_num]§!人\n自由派：§Y[?Liberal_general_num]§!人\n中间派：§Y[?Centrist_general_num]§!人\n\n预计大选结果：\n§Y社会革命联合党§!   [PartyNO_1]\n§Y社会党（布鲁斯派）§!   [PartyNO_2]\n§Y社会党（饶勒斯派）§!：   [PartyNO_3]\n§Y共和联盟§!：   [PartyNO_4]\n§Y社会党（阿勒曼派）§!   [PartyNO_5]\n§Y无党派(独立人士)§! [PartyNO_6] "
+ FRW_election_movement_desc:0"\n\n\n\n\n\n\n\n五年一届的法国大选正式开始，我们可以通过提升相关意识形态支持度来加强党派在各地区投射的力量，以此征求更多的选票来支持执政党的选举。\n\n目前党派席位：\n\n§Y社会党（盖得派）§! :[?parliament_seat_array^0]个席位\n\n§Y社会党（布鲁斯派）§!:[?parliament_seat_array^1]个席位\n\n§Y社会党（饶勒斯派）§!:[?parliament_seat_array^2]个席位\n\n§Y共和联盟§! :[?parliament_seat_array^3]个席位\n\n§Y社会党（阿勒曼派）§!:[?parliament_seat_array^4]个席位\n\n§Y无党派（独立人士）§!:[?parliament_seat_array^5]个席位\n\n当前军队内部派系：\n革命派：§Y[?Revolutionary_general_num]§!人\n自由派：§Y[?Liberal_general_num]§!人\n中间派：§Y[?Centrist_general_num]§!人\n\n预计大选结果：\n§Y社会党（盖得派）§!: [PartyNO_1]\n§Y社会党（布鲁斯派）§!:[PartyNO_2]\n§Y社会党（饶勒斯派）§!：[PartyNO_3]\n§Y共和联盟§!： [PartyNO_4]\n§Y社会党（阿勒曼派）§!: [PartyNO_5]\n§Y无党派(独立人士)§!: [PartyNO_6] "
  FRW_election_movement0:0 "拉拢军队"
 
  FRW_election_movement1:0 "选举倒计时"
@@ -363,16 +365,19 @@ FRW_army_revolution_tooltip:0 "改革进度: §G+3§!"
 FRW_army_revolution1_tooltip:0 "改革进度: §G+10§!"
 
 FRW_Maginot_Line_plan:0 "建设马奇诺防线"
-FRW_Maginot_Line_plan_desc:0 "\n\n\n\n\n\n\n\n时局已无往日和平，欧洲东部的普鲁士王国怀揣着一颗统一德意志的野心，普鲁士和奥地利的摩擦不断，虽然莱茵地区可以看作我们的缓冲区，但我们不能忘却1871年惨败的教训，随时准备任何突发情况，当前我们的马奇诺部长设想了一种方案,一条从佛里兰斯延伸至孔泰的碉堡群出现在政府提案中，防线内部拥有各式大炮、壕沟、堡垒、厨房、发电站、医院、工厂等等，通道四通八达，较大的工事中还有有轨电车通道。\n\n当前的进展：§H[?FRW_Maginot_Line_needle_VAR]%§!\n\n\n\n\n\n\n\n"
+FRW_Maginot_Line_plan_desc:0 "\n\n\n\n\n\n\n\n时局已无往日和平，欧洲东部的普鲁士王国怀揣着一颗统一德意志的野心，普鲁士和奥地利的摩擦不断，虽然莱茵地区可以看作我们的缓冲区，但我们不能忘却1871年惨败的教训，随时准备任何突发情况，当前我们的马奇诺部长设想了一种方案,一条从佛里兰斯延伸至孔泰的碉堡群出现在政府提案中，防线内部拥有各式大炮、壕沟、堡垒、厨房、发电站、医院、工厂等等，通道四通八达，较大的工事中还有有轨电车通道。\n\n当前的进展：§H[?FRW_Maginot_Line_needle_VAR]%§!"
 
-FRW_Maginot_Line_plan1:0 "向巴达维亚发出请求"
+FRW_Maginot_Line_plan1:0 "向比利时发出请求"
 FRW_Maginot_Line_plan1_desc:0 ""
+BEL_agree:0 "比利时同意了"
 FRW_Maginot_Line_plan2:0 "在瓦隆地区构建碉堡"
 FRW_Maginot_Line_plan2_desc:0 ""
 FRW_Maginot_Line_plan3:0 "在香槟地区构建碉堡"
 FRW_Maginot_Line_plan3_desc:0 ""
 FRW_Maginot_Line_plan4:0 "在南锡地区构建碉堡"
 FRW_Maginot_Line_plan4_desc:0 ""
+FRW_Maginot_Line_plan5:0 "在上洛林地区构建碉堡"
+FRW_Maginot_Line_plan5_desc:0 ""
 
 FRW_Trade_unionist_propaganda:0 "工团春风吹遍地"
 FRW_Trade_unionist_propaganda_desc:0 "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
@@ -424,11 +429,11 @@ FRW_Trade_unionist_propaganda_Reims1_desc:0 ""
 FRW_Trade_unionist:0 "举行全国总罢工"
 FRW_Trade_unionist_desc:0 ""
 FRW_Trade_unionist_Posters1:0 "张贴《为了更美好的生活》海报"
-FRW_Trade_unionist_Posters1_desc:0 "每有一张海报，每周无政府支持率§H+0.03%§!"
+FRW_Trade_unionist_Posters1_desc:0 "每有一张海报，每周无政府支持率§H+0.01%§!"
 FRW_Trade_unionist_Posters2:0 "张贴《团结在工会下》海报"
-FRW_Trade_unionist_Posters2_desc:0 "每有一张海报，每周无政府支持率§H+0.03%§!"
+FRW_Trade_unionist_Posters2_desc:0 "每有一张海报，每周无政府支持率§H+0.01%§!"
 FRW_Trade_unionist_Posters3:0 "张贴《抵御阶级敌人》海报"
-FRW_Trade_unionist_Posters3_desc:0 "每有一张海报，每周无政府支持率§H+0.03%§!"
+FRW_Trade_unionist_Posters3_desc:0 "每有一张海报，每周无政府支持率§H+0.01%§!"
 
 fate_the_Suez_Canal:0 "苏伊士运河的命运"
 fate_the_Suez_Canal_desc:0 "\n\n\n\n\n\n\n\n 苏伊士运河是我们最重要的一条战略要地，大部分的商船要进入地中海必须要经过这里，所以这里的战略价值一目了然，我们必须增加我们在这片地区的影响力\n\n[ENL.GetFlag]英国影响力：§H[?ENL.British_influence]§!\n[TEQ.GetFlag]奥斯曼影响力：§H[?TEQ.Ottoman_influence]§!\n"

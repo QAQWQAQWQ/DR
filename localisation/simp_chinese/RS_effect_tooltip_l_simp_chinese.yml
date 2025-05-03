@@ -24,32 +24,28 @@ Anhui_system_T:0 "我们将与§G皖系§!结盟"
 Lineal_system_T:0 "我们将与§G直系§!结盟"
 
 
-FRW_parliament1_add_5:0 "社会革命联合党增加 :  §G+5§!个席位"
-FRW_parliament1_del_5:0 "社会革命联合党减少 :  §R-5§!个席位"
+FRW_parliament1_add:0 "社会党(盖得派)席位 : [?temp_old|0+]→[?temp_new|0+] 个席位"
+FRW_parliament2_add:0 "社会党(可能派)席位 : [?temp_old|0+]→[?temp_new|0+] 个席位"
+FRW_parliament3_add:0 "社会党(饶勒斯派)席位 : [?temp_old|0+]→[?temp_new|0+] 个席位"
+FRW_parliament4_add:0 "共和联盟席位 : [?temp_old|0+]→[?temp_new|0+] 个席位"
+FRW_parliament5_add:0 "社会党(工团派)席位 : [?temp_old|0+]→[?temp_new|0+] 个席位"
+FRW_parliament6_add:0 "独立人士席位 : [?temp_old|0+]→[?temp_new|0+] 个席位"
 
+Army_support_tip:0 "军队支持度：[?temp_old|0+]点→[?temp_new|0+]点" 
 
-FRW_parliament2_add_5:0 "社会党（布鲁斯派）增加 :  §G+5§!个席位"
-FRW_parliament2_del_5:0 "社会党（布鲁斯派）减少 :  §R-5§!个席位"
+Worker_support_tip:0"工人支持度：[?temp_old|0+]点→[?temp_new|0+]点" 
 
-FRW_parliament3_add_5:0 "社会党（饶勒斯派）增加 :  §G+5§!个席位"
-FRW_parliament3_add_20:0 "社会党（饶勒斯派）增加 :  §G+20§!个席位"
+Farmer_support_tip:0 "农民支持度：[?temp_old|0+]点→[?temp_new|0+]点" 
 
-FRW_parliament3_del_15:0 "社会党（饶勒斯派）减少 :  §R-15§!个席位"
+Merchant_support_tip:0 "商人支持度：[?temp_old|0+]点→[?temp_new|0+]点" 
 
-FRW_parliament4_add_5:0 "共和联盟增加 :  §G+5§!个席位"
+Bureaucratic_support_tip:0 "官僚支持度：[?temp_old|0+]点→[?temp_new|0+]点" 
 
-FRW_parliament4_del_5:0 "共和联盟减少 :  §R-5§!个席位"
+Scholar_support_tip:0 "学者支持度：[?temp_old|0+]点→[?temp_new|0+]点" 
 
-FRW_parliament5_add_5:0 "社会党（阿勒曼派）增加 :  §G+5§!个席位"
-FRW_parliament5_del_5:0 "社会党（阿勒曼派）减少 :  §R-5§!个席位"
+nat_debt_tip:0 "债务：[?temp_old|3+]M→[?temp_new|3+]M" 
 
-FRW_parliament6_add_5:0 "独立人士增加 :  §G+5§!个席位"
-
-
-
-
-
-
+new_nat_tre_tip:0 "国库：[?temp_old|3+]M→[?temp_new|3+]M" 
 
 land_equally:0 "农民的土地得到合理的§G分配§!"
 Sale_private_land:0 "私人土地开始进行拍卖"

@@ -1,91 +1,386 @@
+new_nat_tre_add = {
+	set_temp_variable = {
+		temp_old = new_nat_tre
+	}
+	#旧变量=旧席位数量X
+	add_to_variable = {
+		var =  new_nat_tre
+		value =  temp_new_nat_tre
+	}
+	#旧席位数量X（10）+要加的临时旧席位数量X（0）
+	set_temp_variable = {
+		temp_new = temp_old
+	}
+	#新=旧
+	add_to_temp_variable = {
+		temp_new = temp_new_nat_tre
+	}
+	#新变量+要加的临时旧席位数量X（5）
+	custom_effect_tooltip = new_nat_tre_tip
+
+	clamp_variable = {
+		var = new_nat_tre
+		min = 0
+		max = 10000000000
+	}
+}
 
 
 
+nat_debt_add = {
+	set_temp_variable = {
+		temp_old = nat_debt
+	}
+	#旧变量=旧席位数量X
+	add_to_variable = {
+		var =  nat_debt
+		value =  temp_nat_debt
+	}
+	#旧席位数量X（10）+要加的临时旧席位数量X（0）
+	set_temp_variable = {
+		temp_new = temp_old
+	}
+	#新=旧
+	add_to_temp_variable = {
+		temp_new = temp_nat_debt
+	}
+	#新变量+要加的临时旧席位数量X（5）
+	custom_effect_tooltip = nat_debt_tip
 
+	clamp_variable = {
+		var = nat_debt
+		min = 0
+		max = 100
+	}
+}
+
+
+Army_support_add = {
+	set_temp_variable = {
+		temp_old = Army_support
+	}
+	#旧变量=旧席位数量X
+	add_to_variable = {
+		var =  Army_support
+		value =  temp_Army_support
+	}
+	#旧席位数量X（10）+要加的临时旧席位数量X（0）
+	set_temp_variable = {
+		temp_new = temp_old
+	}
+	#新=旧
+	add_to_temp_variable = {
+		temp_new = temp_Army_support
+	}
+	#新变量+要加的临时旧席位数量X（5）
+	custom_effect_tooltip = Army_support_tip
+
+	clamp_variable = {
+		var = Army_support
+		min = 0
+		max = 100
+	}
+}
+
+Worker_support_add = {
+	set_temp_variable = {
+		temp_old = Worker_support
+	}
+	#旧变量=旧席位数量X
+	add_to_variable = {
+		var =  Worker_support
+		value =  temp_Worker_support
+	}
+	#旧席位数量X（10）+要加的临时旧席位数量X（0）
+	set_temp_variable = {
+		temp_new = temp_old
+	}
+	#新=旧
+	add_to_temp_variable = {
+		temp_new = temp_Worker_support
+	}
+	#新变量+要加的临时旧席位数量X（5）
+	custom_effect_tooltip = Worker_support_tip
+
+	clamp_variable = {
+		var = Worker_support
+		min = 0
+		max = 100
+	}
+}
+Farmer_support_add = {
+	set_temp_variable = {
+		temp_old = Farmer_support
+	}
+	#旧变量=旧席位数量X
+	add_to_variable = {
+		var =  Farmer_support
+		value =  temp_Farmer_support
+	}
+	#旧席位数量X（10）+要加的临时旧席位数量X（0）
+	set_temp_variable = {
+		temp_new = temp_old
+	}
+	#新=旧
+	add_to_temp_variable = {
+		temp_new = temp_Farmer_support
+	}
+	#新变量+要加的临时旧席位数量X（5）
+	custom_effect_tooltip = Farmer_support_tip
+
+	clamp_variable = {
+		var = Farmer_support
+		min = 0
+		max = 100
+	}
+}
+
+Merchant_support_add = {
+	set_temp_variable = {
+		temp_old = Merchant_support
+	}
+	#旧变量=旧席位数量X
+	add_to_variable = {
+		var =  Merchant_support
+		value =  temp_Merchant_support
+	}
+	#旧席位数量X（10）+要加的临时旧席位数量X（0）
+	set_temp_variable = {
+		temp_new = temp_old
+	}
+	#新=旧
+	add_to_temp_variable = {
+		temp_new = temp_Merchant_support
+	}
+	#新变量+要加的临时旧席位数量X（5）
+	custom_effect_tooltip = Merchant_support_tip
+
+	clamp_variable = {
+		var = Merchant_support
+		min = 0
+		max = 100
+	}
+}
+
+Bureaucratic_support_add = {
+	set_temp_variable = {
+		temp_old = Bureaucratic_support
+	}
+	#旧变量=旧席位数量X
+	add_to_variable = {
+		var =  Bureaucratic_support
+		value =  temp_Bureaucratic_support
+	}
+	#旧席位数量X（10）+要加的临时旧席位数量X（0）
+	set_temp_variable = {
+		temp_new = temp_old
+	}
+	#新=旧
+	add_to_temp_variable = {
+		temp_new = temp_Bureaucratic_support
+	}
+	#新变量+要加的临时旧席位数量X（5）
+	custom_effect_tooltip = Bureaucratic_support_tip
+
+	clamp_variable = {
+		var = Bureaucratic_support
+		min = 0
+		max = 100
+	}
+}
+
+
+Scholar_support_add = {
+	set_temp_variable = {
+		temp_old = Scholar_support
+	}
+	#旧变量=旧席位数量X
+	add_to_variable = {
+		var =  Scholar_support
+		value =  temp_Scholar_support
+	}
+	#旧席位数量X（10）+要加的临时旧席位数量X（0）
+	set_temp_variable = {
+		temp_new = temp_old
+	}
+	#新=旧
+	add_to_temp_variable = {
+		temp_new = temp_Scholar_support
+	}
+	#新变量+要加的临时旧席位数量X（5）
+	custom_effect_tooltip = Scholar_support_tip
+
+	clamp_variable = {
+		var = Scholar_support
+		min = 0
+		max = 100
+	}
+}
 ###11111
-parliament1_add_5 = {
-	set_temp_variable = { temp_member = 1 }
-	set_temp_variable = { temp_seats = 5 }
+parliament1_add = {
+
+	set_temp_variable = {
+		temp_old = parliament_seat_array^0
+	}
+	#旧变量=旧席位数量X
+	add_to_variable = {
+		var =  parliament_seat_array^0
+		value =  temp_seats
+	}
+	#旧席位数量X（10）+要加的临时旧席位数量X（0）
+	set_temp_variable = {
+		temp_new = temp_old
+	}
+	#新=旧
+	add_to_temp_variable = {
+		temp_new = temp_seats
+	}
+	#新变量+要加的临时旧席位数量X（5）
+	custom_effect_tooltip = FRW_parliament1_add
+
+	clamp_variable = {
+		var = parliament_seat_array^parliament_member_index
+		min = 0
+		max = 200
+	}
 	modify_parliament_seat = yes
-}
-parliament1_del_5 = {
-	set_temp_variable = { temp_member = 1 }
-	set_temp_variable = { temp_seats = -15 }
-	modify_parliament_seat = yes
-	
-}
-parliament1_del_15 = {
-	set_temp_variable = { temp_member = 1 }
-	set_temp_variable = { temp_seats = -15 }
-	modify_parliament_seat = yes
-	
 }
 
-###1111
-parliament2_add_5 = {
-    set_temp_variable = { temp_member = 2 }
-	set_temp_variable = { temp_seats = 5 }
-	modify_parliament_seat = yes
-    
-}
-parliament2_del_5 = {
-    set_temp_variable = { temp_member = 2 }
-	set_temp_variable = { temp_seats = -5 }
-	modify_parliament_seat = yes
-    
-}
-###3333
+parliament2_add = {
+	set_temp_variable = {
+		temp_old = parliament_seat_array^1
+	}
+	#旧变量=旧席位数量X
+	add_to_variable = {
+		var =  parliament_seat_array^1
+		value =  temp_seats
+	}
+	#旧席位数量X（10）+要加的临时旧席位数量X（0）
+	set_temp_variable = {
+		temp_new = temp_old
+	}
+	#新=旧
+	add_to_temp_variable = {
+		temp_new = temp_seats
+	}
+	#新变量+要加的临时旧席位数量X（5）
+	custom_effect_tooltip = FRW_parliament2_add
 
-parliament3_add_5 = {
-    set_temp_variable = { temp_member = 3 }
-	set_temp_variable = { temp_seats = 5 }
+	clamp_variable = {
+		var = parliament_seat_array^parliament_member_index
+		min = 0
+		max = 200
+	}
 	modify_parliament_seat = yes
-	
-}
-parliament3_add_20 = {
-    set_temp_variable = { temp_member = 3 }
-	set_temp_variable = { temp_seats = 20 }
-	modify_parliament_seat = yes
-	
-}
-parliament3_del_15 = {
-	set_temp_variable = { temp_member = 1 }
-	set_temp_variable = { temp_seats = -15 }
-	modify_parliament_seat = yes
-	
 }
 
-###3333
-###444
-parliament4_add_5 = {
-    set_temp_variable = { temp_member = 4 }
-	set_temp_variable = { temp_seats = 5 }
+parliament3_add = {
+	set_temp_variable = {
+		temp_old = parliament_seat_array^2
+	}
+	#旧变量=旧席位数量X
+	add_to_variable = {
+		var =  parliament_seat_array^2
+		value =  temp_seats
+	}
+	#旧席位数量X（10）+要加的临时旧席位数量X（0）
+	set_temp_variable = {
+		temp_new = temp_old
+	}
+	#新=旧
+	add_to_temp_variable = {
+		temp_new = temp_seats
+	}
+	#新变量+要加的临时旧席位数量X（5）
+	custom_effect_tooltip = FRW_parliament3_add
+
+	clamp_variable = {
+		var = parliament_seat_array^parliament_member_index
+		min = 0
+		max = 200
+	}
 	modify_parliament_seat = yes
-	
 }
-parliament4_del_5 = {
-    set_temp_variable = { temp_member = 4 }
-	set_temp_variable = { temp_seats = -5 }
+parliament4_add = {
+	set_temp_variable = {
+		temp_old = parliament_seat_array^3
+	}
+	#旧变量=旧席位数量X
+	add_to_variable = {
+		var =  parliament_seat_array^3
+		value =  temp_seats
+	}
+	#旧席位数量X（10）+要加的临时旧席位数量X（0）
+	set_temp_variable = {
+		temp_new = temp_old
+	}
+	#新=旧
+	add_to_temp_variable = {
+		temp_new = temp_seats
+	}
+	#新变量+要加的临时旧席位数量X（5）
+	custom_effect_tooltip = FRW_parliament4_add
+
+	clamp_variable = {
+		var = parliament_seat_array^parliament_member_index
+		min = 0
+		max = 200
+	}
 	modify_parliament_seat = yes
-	
-}
-###
-parliament5_add_5 = {
-    set_temp_variable = { temp_member = 5 }
-	set_temp_variable = { temp_seats = 5 }
-	modify_parliament_seat = yes
-	
-}
-parliament5_del_5 = {
-    set_temp_variable = { temp_member = 5 }
-	set_temp_variable = { temp_seats = -5 }
-	modify_parliament_seat = yes
-	
 }
 
-parliament6_add_5 = {
-    set_temp_variable = { temp_member = 6 }
-	set_temp_variable = { temp_seats = 5 }
+parliament5_add = {
+	set_temp_variable = {
+		temp_old = parliament_seat_array^4
+	}
+	#旧变量=旧席位数量X
+	add_to_variable = {
+		var =  parliament_seat_array^4
+		value =  temp_seats
+	}
+	#旧席位数量X（10）+要加的临时旧席位数量X（0）
+	set_temp_variable = {
+		temp_new = temp_old
+	}
+	#新=旧
+	add_to_temp_variable = {
+		temp_new = temp_seats
+	}
+	#新变量+要加的临时旧席位数量X（5）
+	custom_effect_tooltip = FRW_parliament5_add
+
+	clamp_variable = {
+		var = parliament_seat_array^parliament_member_index
+		min = 0
+		max = 200
+	}
 	modify_parliament_seat = yes
-	
+}
+
+parliament6_add = {
+	set_temp_variable = {
+		temp_old = parliament_seat_array^5
+	}
+	#旧变量=旧席位数量X
+	add_to_variable = {
+		var =  parliament_seat_array^5
+		value =  temp_seats
+	}
+	#旧席位数量X（10）+要加的临时旧席位数量X（0）
+	set_temp_variable = {
+		temp_new = temp_old
+	}
+	#新=旧
+	add_to_temp_variable = {
+		temp_new = temp_seats
+	}
+	#新变量+要加的临时旧席位数量X（5）
+	custom_effect_tooltip = FRW_parliament6_add
+
+	clamp_variable = {
+		var = parliament_seat_array^parliament_member_index
+		min = 0
+		max = 200
+	}
+	modify_parliament_seat = yes
 }

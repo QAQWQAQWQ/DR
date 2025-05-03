@@ -1602,20 +1602,4 @@ spriteTypes = {
         horizontal = yes
     }
 }
-spriteTypes = {
-    progressbartype = {
-        name = "GFX_FRW_Maginot_Line_needle"
-        textureFile1 = "gfx/interface/GUI/FRW_Maginot_Line1.dds"
-        textureFile2 = "gfx/interface/GUI/FRW_Maginot_Line.dds"
-        size = { 
-            x = 312
-            y = 253
-        }
-        effectFile = "gfx/FX/progress_radial.lua"
-        
-        horizontal = yes
-    }
-}
-
-
 

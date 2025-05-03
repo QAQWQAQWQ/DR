@@ -461,8 +461,6 @@ country_event = {
 				option = {
 					name = FRW.4.a
 					country_event = {id=FRW.5 days=5}
-					parliament3_del_15=yes
-					custom_effect_tooltip = FRW_parliament3_del_15
 					set_country_flag = event_FRW_4
 					remove_advisor_role = {
 						character = "FRW_Alexandre_Millerand"
@@ -486,7 +484,7 @@ country_event = {
 		is_triggered_only = yes
 		fire_only_once = yes
 		trigger = {
-						}
+		}
 		option = {
 		name = FRW.5.a
 		set_country_flag = EVENT_FRW_5_a
@@ -497,6 +495,14 @@ country_event = {
 		add_ideas = FRW_Marx_Dormoy_P
 		set_country_flag = LudovicOscar_Frossard_P
 		set_country_flag = Paul_Faure_P
+		set_temp_variable = {
+			temp_member = 1
+		}
+		set_temp_variable = {
+			temp_seats = 5
+		}
+		modify_parliament_seat = yes
+		parliament1_add = yes
 		}
 		option = {
 		name = FRW.5.b
@@ -508,8 +514,16 @@ country_event = {
 		
 		set_country_flag = Sebastian_Fuhr_P
 		set_country_flag = Edouard_Berth_P
+		set_temp_variable = {
+			temp_member = 5
 		}
-	
+		set_temp_variable = {
+			temp_seats = 5
+		}
+		modify_parliament_seat = yes
+		parliament5_add = yes
+		}
+		
 		option = {
 		name = FRW.5.c
 		custom_effect_tooltip = available_political_advisor	
@@ -517,6 +531,14 @@ country_event = {
 		add_ideas = FRW_Vincent_Auriol_P
 		add_ideas = FRW_Edouard_Daladier_P
 		set_country_flag = Vincent_Auriol_P
+		set_temp_variable = {
+			temp_member = 4
+		}
+		set_temp_variable = {
+			temp_seats = 5
+		}
+		modify_parliament_seat = yes
+		parliament4_add = yes
 		}
 	}
 country_event = {
@@ -533,8 +555,15 @@ country_event = {
 		hidden_effect = {
 			country_event = {id=FRW.7 days=5}
 			country_event = {id=FRW.49 days=2}
-			
 		}
+		set_temp_variable = {
+			temp_member = 1
+		}
+		set_temp_variable = {
+			temp_seats = 5
+		}
+		modify_parliament_seat = yes
+		parliament1_add = yes
 		}
 		option = {
 		name = FRW.6.b
@@ -561,6 +590,14 @@ country_event = {
 		hidden_effect = {
 			country_event = {id=FRW.4 days=3}
 		}
+		set_temp_variable = {
+			temp_member = 1
+		}
+		set_temp_variable = {
+			temp_seats = 10
+		}
+		modify_parliament_seat = yes
+		parliament1_add = yes
 		}
 		}
 country_event = {
@@ -812,6 +849,14 @@ country_event = {
 			ideology = Reformism
 			popularity = 0.05
 		}
+		set_temp_variable = {
+			temp_member = 3
+		}
+		set_temp_variable = {
+			temp_seats = 5
+		}
+		modify_parliament_seat = yes
+		parliament3_add = yes
 		}
 	option = {
 		name = FRW.17.b
@@ -823,7 +868,15 @@ country_event = {
 			popularity = 0.05
 		} 
 		set_country_flag = FRW_17_b_tt
-			}
+		set_temp_variable = {
+			temp_member = 1
+		}
+		set_temp_variable = {
+			temp_seats = 5
+		}
+		modify_parliament_seat = yes
+		parliament1_add = yes
+	}
 	option = {
 	    name = FRW.17.c
 		add_to_variable = {
@@ -833,6 +886,14 @@ country_event = {
 			ideology = Anarchism
 			popularity = 0.05
 		}
+		set_temp_variable = {
+			temp_member = 5
+		}
+		set_temp_variable = {
+			temp_seats = 5
+		}
+		modify_parliament_seat = yes
+		parliament5_add = yes
 		}			
 }
 country_event = {
@@ -887,48 +948,9 @@ country_event = {
 		name = FRW.21.a
 		FRW={
 			country_event = {id=FRW.22 days=2}
+			set_country_flag = BEL_agree
 		}
 		
-		36={
-			add_building_construction = {
-				type = bunker
-				level = 8
-				instant_build = no
-				province = 11318
-			}
-			add_building_construction = {
-				type = bunker
-				level = 8 
-				instant_build = no
-				province = 9309
-			}
-			add_building_construction = {
-				type = bunker
-				level = 8
-				instant_build = no
-				province = 9403
-			}
-			add_building_construction = {
-				type = bunker
-				level = 8
-				instant_build = no
-				province = 9363
-			}
-		}
-		35={
-			add_building_construction = {
-				type = bunker
-				level = 8
-				instant_build = no
-				province = 11456
-			}
-			add_building_construction = {
-				type = bunker
-				level = 8
-				instant_build = no
-				province = 11562
-			}
-		}
 		}	
 	option = {
 			name = FRW.21.b
@@ -1030,6 +1052,14 @@ country_event = {
 			ideology = Reformism
 			popularity = 0.1
 		}
+		set_temp_variable = {
+			temp_member = 1
+		}
+		set_temp_variable = {
+			temp_seats = 5
+		}
+		modify_parliament_seat = yes
+		parliament1_add = yes
 	}		
 }
 country_event = {
@@ -1154,32 +1184,38 @@ country_event = {
 				Anarchism=5
 			}
 		}
-		
 		trigger = {
 			AND={
 				NOT={has_country_flag = Assembly_Tours_1}
-			check_variable = {
-					parliament_seat_array^3 > parliament_seat_array^1
-			}
-			check_variable = {
-					parliament_seat_array^3 > parliament_seat_array^2
-			}
-			check_variable = {
-					parliament_seat_array^3 > parliament_seat_array^4
-			}
-			check_variable = {
-					parliament_seat_array^3 > parliament_seat_array^5
-			}
-			check_variable = {
-					parliament_seat_array^3 > parliament_seat_array^6
-			}
+			
 			}
 			
+			check_variable = {
+					parliament_seat_array^2 > parliament_seat_array^0
+			}
+			check_variable = {
+					parliament_seat_array^2 > parliament_seat_array^1
+			}
+			check_variable = {
+					parliament_seat_array^2 > parliament_seat_array^3
+			}
+			check_variable = {
+					parliament_seat_array^2 > parliament_seat_array^4
+			}
+			check_variable = {
+					parliament_seat_array^2 > parliament_seat_array^5
+			}
+			check_variable = {
+					parliament_seat_array^2 > parliament_seat_array^6
+			}
 		}
 		set_politics = {
 			ruling_party = Liberalism
 		}
-		
+		promote_character = {
+			character = FRW_Georges_Clemenceau
+			ideology = Liberalism
+		}
 		ROOT={
 			mark_focus_tree_layout_dirty = yes
 		}
@@ -1198,20 +1234,23 @@ country_event = {
 		trigger = {
 			AND={
 				NOT={has_country_flag = Assembly_Tours_1}
-			check_variable = {
-					parliament_seat_array^2 > parliament_seat_array^1
+				check_variable = {
+					parliament_seat_array^3 > parliament_seat_array^0
 			}
 			check_variable = {
-					parliament_seat_array^2 > parliament_seat_array^3
+					parliament_seat_array^3 > parliament_seat_array^1
 			}
 			check_variable = {
-					parliament_seat_array^2 > parliament_seat_array^4
+					parliament_seat_array^3 > parliament_seat_array^2
 			}
 			check_variable = {
-					parliament_seat_array^2 > parliament_seat_array^5
+					parliament_seat_array^3 > parliament_seat_array^4
 			}
 			check_variable = {
-					parliament_seat_array^2 > parliament_seat_array^6
+					parliament_seat_array^3 > parliament_seat_array^5
+			}
+			check_variable = {
+					parliament_seat_array^3 > parliament_seat_array^6
 			}
 			}
 			
@@ -1240,19 +1279,19 @@ country_event = {
 			AND={
 				NOT={has_country_flag = Assembly_Tours_1}
 			check_variable = {
-					parliament_seat_array^4 > parliament_seat_array^1
+					parliament_seat_array^0 > parliament_seat_array^1
 			}
 			check_variable = {
-					parliament_seat_array^4 > parliament_seat_array^2
+					parliament_seat_array^0 > parliament_seat_array^2
 			}
 			check_variable = {
-					parliament_seat_array^4 > parliament_seat_array^3
+					parliament_seat_array^0 > parliament_seat_array^3
 			}
 			check_variable = {
-					parliament_seat_array^4 > parliament_seat_array^5
+					parliament_seat_array^0 > parliament_seat_array^5
 			}
 			check_variable = {
-					parliament_seat_array^4 > parliament_seat_array^6
+					parliament_seat_array^0 > parliament_seat_array^6
 			}
 			}
 			
@@ -1448,20 +1487,23 @@ country_event = {
 	title = FRW.45.t
 	desc = FRW.45.d
 	picture = GFX_Eu_election
+	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
 		}
 	option = {
 		name = FRW.45.a
+		country_event = {id=FRW.45 days=20}
 		add_political_power = 200
 		add_stability = -0.1
 		set_country_flag=event_FRW_45
-		}
+		complete_national_focus = FRW_focus14
+	}
 	option = {
 		name = FRW.45.b
 		add_political_power = 50
 		add_stability = 0.05
-		}
+	}
 }
 
 country_event = {
@@ -1707,5 +1749,20 @@ country_event = {
 				}
 			}
 		} 
+	}
+}
+
+
+
+country_event = {
+	id = FRW.57
+	title = FRW.57.t
+	desc = FRW.57.d
+	picture = GFX_Eu_election
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW.57.a 
+		set_country_flag = FRW_party_1_text_new
 	}
 }

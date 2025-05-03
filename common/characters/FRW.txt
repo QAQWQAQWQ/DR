@@ -129,7 +129,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Revolutionary_Massimalismo
+			ideology=Revolutionary_Socialism
 			desc = FRW_guesde_desc
 			traits={ marxist_philosopher } 
 			expire="1965.1.1.1"
@@ -187,7 +187,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology= social-radicalism
+			ideology= Social_Liberalism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
@@ -1066,7 +1066,7 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				has_completed_focus = FRW_focus13
+				has_completed_focus = FRW_focus55
 				is_country_leader = no
 			not_already_hired_except_as = political_advisor
 			  }

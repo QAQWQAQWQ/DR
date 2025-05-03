@@ -9,7 +9,12 @@ head_of_government = {
 	factor = 1
 	}
 }
-
+head_of_parliament = {
+	random = no
+	ai_will_do = {
+	factor = 1
+	}
+}
 Talented_orator = {
 	random = no
 	sprite = 13

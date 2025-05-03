@@ -16,16 +16,8 @@ focus_tree = {
 		x = 20  
 		y = 0
 			completion_reward = {
-					custom_effect_tooltip = nat_debt_view
-					add_to_variable = {
-							nat_debt = -5
-							tooltip = nat_debt_5
-					}
-					clamp_variable = {
-						var = nat_debt
-						min = 0
-					}
-				}
+				add_political_power = 50
+			}
 
 	}
 	focus = { 
@@ -42,7 +34,15 @@ focus_tree = {
 		cost = 10.00
 		x = 40
 		y = 0
-
+		available = {
+			
+		}
+		completion_reward = {
+			set_variable = {
+				JPN.Patriarchal_tolerance = 100
+			}
+			unlock_decision_category_tooltip = JPN_The_Second_Movement_Protect_Constitution
+		}
 	}
 	focus = {
 		id = JPN_focus_1
@@ -54,15 +54,8 @@ focus_tree = {
 		x = 20
 		y = 1
 			completion_reward = {
-					custom_effect_tooltip = nat_debt_view
-					add_to_variable = {
-							nat_debt = -5
-							tooltip = nat_debt_5
-					}
-					clamp_variable = {
-						var = nat_debt
-						min = 0
-					}
+					set_temp_variable = { temp_nat_debt = -5 } 
+			nat_debt_add=yes
 				}
 
 	}
@@ -76,15 +69,8 @@ focus_tree = {
 		x = 17
 		y = 2
 			completion_reward = {
-					custom_effect_tooltip = nat_debt_view
-					add_to_variable = {
-							nat_debt = -5
-							tooltip = nat_debt_5
-					}
-					clamp_variable = {
-						var = nat_debt
-						min = 0
-					}
+					set_temp_variable = { temp_nat_debt = -5 } 
+			nat_debt_add=yes
 				}
 
 	}
@@ -98,34 +84,24 @@ focus_tree = {
 		x = 20
 		y = 2
 			completion_reward = {
-					custom_effect_tooltip = nat_debt_view
-					add_to_variable = {
-							nat_debt = -5
-							tooltip = nat_debt_5
-					}
-					clamp_variable = {
-						var = nat_debt
-						min = 0
-					}
-				}
+				set_temp_variable = { temp_nat_debt = -5 } 
+				nat_debt_add=yes
+			}
 
 	}
 	focus = {
 		id = JPN_focus_4
 		icon = GFX_JPN_Focus_4
-		cost = 6.00
+		cost = 6.00 
 		prerequisite = {
-			focus = JPN_focus_1
+			focus = JPN_focus_1 
 		}
 		x = 23
 		y = 2
-			completion_reward = {
-					custom_effect_tooltip = nat_debt_view
-					add_to_variable = {
-							nat_debt = -5
-							tooltip = nat_debt_5
-						}
-				}
+		completion_reward = {  
+			set_temp_variable = { temp_nat_debt = -5 } 
+			nat_debt_add=yes
+		}
 
 	}
 	focus = {
@@ -143,23 +119,16 @@ focus_tree = {
 		}
 		x = 20
 		y = 3
-			completion_reward = {
-					custom_effect_tooltip = Worker_support_tooltip
-					add_to_variable = {
-							Worker_support = -5
-							tooltip = Worker_support_down_tooltip
-						}
-					custom_effect_tooltip = Farmer_support_tooltip
-					add_to_variable = {
-							Farmer_support = -5
-							tooltip = Farmer_support_down_tooltip
-						}
-					custom_effect_tooltip = Merchant_support_tooltip
-					add_to_variable = {
-							Merchant_support = -5
-							tooltip = Merchant_support_down_tooltip
-						}
-				}
+		completion_reward = {
+			set_temp_variable = { temp_Worker_support = -10 }
+			Worker_support_add=yes
+			set_temp_variable = { temp_Farmer_support = -10 }
+			Farmer_support_add=yes
+			set_temp_variable = { temp_Merchant_support = -10 }
+			Merchant_support_add=yes
+			set_temp_variable = { temp_Scholar_support = -10 }
+			Scholar_support_add=yes
+		}
 
 	}
 	focus = {
@@ -184,18 +153,15 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = JPN_focus_10
-		}
+		}   
 		x = 26
 		y = 2
-			completion_reward = {
-					army_experience = 15
-					gain_xp = 10
-					add_to_variable = {
-							Army_support = 10
-							tooltip = Army_support_tooltip
-						}
-					custom_effect_tooltip = Army_support_up_tooltip
-				}
+		completion_reward = {    
+				army_experience = 20 
+				gain_xp = 10     
+				set_temp_variable = { temp_Army_support = 5 }
+				Army_support_add=yes
+			}
 
 	}
 	focus = {
@@ -249,11 +215,13 @@ focus_tree = {
 		x = 26
 		y = 4
 			completion_reward = {
-					add_equipment_to_stockpile = {
-							type = artillery_equipment
-							amount = 200
-						}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 200
 				}
+				set_temp_variable = { temp_new_nat_tre_add = -2 } 
+				new_nat_tre_add=yes
+			}
 
 	}
 	focus = {
@@ -265,9 +233,13 @@ focus_tree = {
 		}
 		x = 26
 		y = 6
-			completion_reward = {
-					remove_ideas = JPN_haze_Russo_Japanese_War
-				}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
 
 	}
 	focus = {
@@ -285,11 +257,8 @@ focus_tree = {
 			completion_reward = {
 					navy_experience = 10
 					gain_xp = 10
-					add_to_variable = {
-							Army_support = 10
-							tooltip = Army_support_tooltip
-						}
-					custom_effect_tooltip = Army_support_up_tooltip
+					set_temp_variable = { temp_Army_support = 5 }
+					Army_support_add=yes
 				}
 
 	}
@@ -302,7 +271,12 @@ focus_tree = {
 		}
 		x = 30
 		y = 3
-
+		completion_reward = {
+			set_temp_variable = { temp_Army_support = 5 }
+			Army_support_add=yes
+			set_temp_variable = { temp_new_nat_tre_add = -5 } 
+			new_nat_tre_add=yes
+		}
 	}
 	focus = {
 		id = JPN_focus_18
@@ -326,7 +300,13 @@ focus_tree = {
 		}
 		x = 29
 		y = 5
-
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = bb_tech
+			}
+		}
 	}
 	focus = {
 		id = JPN_focus_19
@@ -337,7 +317,13 @@ focus_tree = {
 		}
 		x = 31
 		y = 5
-
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = support_tech
+			}
+		}
 	}
 	focus = {
 		id = JPN_focus_21
@@ -357,7 +343,13 @@ focus_tree = {
 		}
 		x = 30
 		y = 6
-
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
+		}
 	}
 	focus = {
 		id = JPN_focus_15
@@ -371,7 +363,9 @@ focus_tree = {
 		}
 		x = 28
 		y = 7
-
+		completion_reward = {
+			remove_ideas = JPN_haze_Russo_Japanese_War
+		}
 	}
 	focus = {
 		id = JPN_focus_22
@@ -393,7 +387,13 @@ focus_tree = {
 		}
 		x = 32
 		y = 4
-
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = ss_tech
+			}
+		}
 	}
 	focus = {
 		id = JPN_focus_23
@@ -404,7 +404,11 @@ focus_tree = {
 		} 
 		x = 31 
 		y = 8
-  
+		completion_reward = {
+			unlock_military_industrial_organization_tooltip = mio:JPN_Mitsubishi
+			unlock_military_industrial_organization_tooltip = mio:JPN_Mitsubishi_plane
+			
+		}
 	}
 	focus = {
 		id = JPN_focus_30  
@@ -415,7 +419,14 @@ focus_tree = {
 		}
 		x = 31
 		y = 11
-
+		completion_reward = {
+			mio:JPN_Mitsubishi = {
+				add_mio_funds = 500
+				add_mio_task_capacity = 1
+				add_mio_research_bonus = 0.05
+			}
+			
+		}
 	}
 	focus = {
 		id = JPN_focus_33
@@ -426,7 +437,9 @@ focus_tree = {
 		}
 		x = 40
 		y = 1
-
+		completion_reward = {
+			unlock_decision_tooltip = JPN_The_army_dispatched_maintain_stability
+		}
 	}
 	focus = {
 		id = JPN_focus_34
@@ -510,7 +523,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = JPN_focus_40
 		}
-		x = 37
+		x = 36
 		y = 5
 		completion_reward = {
 			set_popularities = {
@@ -559,7 +572,24 @@ focus_tree = {
 				ideology = Reformism
 				popularity = -0.05
 			}
-			
+			set_temp_variable = { temp_Farmer_support = -5 }
+			Farmer_support_add=yes
+			set_temp_variable = { temp_Worker_support = -5 }
+			Worker_support_add=yes
+		}
+	}
+	focus = {
+		id = JPN_focus_61
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JPN_focus_40
+		}
+		x = 43
+		y = 6
+		completion_reward = {
+			set_temp_variable = { temp_Bureaucratic_support = 5 }
+			Bureaucratic_support_add=yes
 		}
 	}
 	focus = {
@@ -574,7 +604,10 @@ focus_tree = {
 		}
 		x = 40
 		y = 7
-
+		completion_reward = {
+			set_temp_variable = { temp_Army_support = 5 }
+			Army_support_add=yes
+		}
 	}
 	focus = {
 		id = JPN_focus_54
@@ -588,7 +621,10 @@ focus_tree = {
 		}
 		x = 42
 		y = 7
-
+		completion_reward = {
+			set_temp_variable = { temp_Merchant_support = 5 }
+			Merchant_support_add=yes
+		}
 	}
 	focus = {
 		id = JPN_focus_56
@@ -599,7 +635,10 @@ focus_tree = {
 		}
 		x = 42
 		y = 8
-
+		completion_reward = {
+			set_temp_variable = { temp_Bureaucratic_support = 5 }
+			Bureaucratic_support_add=yes
+		}
 	}
 	focus = {
 		id = JPN_focus_58
@@ -621,7 +660,10 @@ focus_tree = {
 		}
 		x = 45
 		y = 6
-
+		completion_reward = {
+			set_temp_variable = { temp_Bureaucratic_support = 5 }
+			Bureaucratic_support_add=yes
+		}
 	}
 	focus = {
 		id = JPN_focus_51
@@ -671,7 +713,14 @@ focus_tree = {
 		}
 		x = 28
 		y = 8
-
+		completion_reward = {
+			ENL={
+				add_opinion_modifier = {
+					target = JPN
+					modifier = Show_goodwill
+				}
+			}
+		}
 	}
 	focus = {
 		id = JPN_focus_25
@@ -685,7 +734,14 @@ focus_tree = {
 		}
 		x = 26
 		y = 9
-
+		completion_reward = {
+			DUQ={
+				add_opinion_modifier = {
+					target = JPN
+					modifier = Show_goodwill
+				}
+			}
+		}
 	}
 	focus = {
 		id = JPN_focus_26
@@ -732,7 +788,7 @@ focus_tree = {
 						has_idea = volunteer_only
 					}
 				}
-				add_ideas = all_adults_serve
+				add_ideas = tot_economic_mobilisation
 			}
 		}
 	}
@@ -784,7 +840,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JPN_focus_39
 		}
-		x = 37
+		x = 36
 		y = 6
 		completion_reward = {
 			add_popularity = {
@@ -800,12 +856,28 @@ focus_tree = {
 		prerequisite = {
 			focus = JPN_focus_41
 		}
-		x = 37
+		x = 36
 		y = 7
-
+		completion_reward = {
+			add_political_power = 30
+		}
 	}
 	focus = {
 		id = JPN_focus_43
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JPN_focus_42
+		}
+		x = 34
+		y = 8
+		completion_reward = {
+			set_temp_variable = { temp_Worker_support = 5 }
+			Worker_support_add=yes
+		}
+	}
+	focus = {
+		id = JPN_focus_62
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
@@ -850,7 +922,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JPN_focus_44
 		}
-		x = 37
+		x = 36
 		y = 9
 
 	}
@@ -861,7 +933,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JPN_focus_46
 		}
-		x = 37
+		x = 36
 		y = 10
 
 	}
@@ -885,7 +957,12 @@ focus_tree = {
 		}
 		x = 40
 		y = 8
-
+		completion_reward = {
+			set_temp_variable = { temp_Army_support = 5 }
+			Army_support_add=yes
+			set_temp_variable = { temp_new_nat_tre_add = -5 } 
+			new_nat_tre_add=yes
+		}
 	}
 	focus = {
 		id = JPN_focus_57
@@ -896,7 +973,10 @@ focus_tree = {
 		}
 		x = 40
 		y = 9
-
+		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = JPN_Giichi_Tanaka_p
+		}
 	}
 	focus = {
 		id = JPN_focus_59

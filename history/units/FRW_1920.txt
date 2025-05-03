@@ -33,41 +33,6 @@ division_template = {
 	template_counter = 202
 }
 division_template = {
-	name = "Milice Communale" #Line Infantry
-	division_names_group = FRW_INF_02
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-	}
-	template_counter = 202
-}
-
-division_template = {
-	name = "Division d'Infanterie Alpine"	# Division d'Infanterie Alpine
-	# Note: trimmed to 3x Rgts w/ arty bn added, 1939
-	division_names_group = FRW_MTN_01
-	regiments = {
-		mountaineers = { x = 0 y = 0 }	# Regular mountain infantry (Infanterie Alpine)
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-		mountaineers = { x = 1 y = 0 }
-		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
-	}
-	support = {
-		artillery = { x = 0 y = 0 }		# Heavy Arty Regiment had 2x 155mm battalions
-	}
-	priority = 2
-}
-
-division_template = {
 	name = "Division de Cavalerie Légère"	# Division de Cavalerie
 	division_names_group = FRW_CAV_01
 	regiments = {
@@ -78,28 +43,6 @@ division_template = {
 		cavalry = { x = 1 y = 1 }
 		cavalry = { x = 1 y = 2 }
 	}
-}
-division_template = {
-	name = "Brigade de Chars de Combat"
-	division_names_group = FRW_ARM_01
-	regiments = {
-		super_light_armor = { x = 0 y = 0 }
-		super_light_armor = { x = 0 y = 1 }
-		super_light_armor = { x = 0 y = 2 }
-		super_light_armor = { x = 1 y = 0 }
-		super_light_armor = { x = 1 y = 1 }
-		super_light_armor = { x = 1 y = 2 }
-		motorized = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
-		motorized = { x = 2 y = 3 }
-	}
-	support = {
-		mot_recon = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
-	}
-	priority = 2
 }
 division_template = {
 	name = "Division Motorisée"		# Division Légère Mécanique
@@ -113,17 +56,6 @@ division_template = {
 		motorized = { x = 1 y = 2 }
 		super_light_armor = { x = 2 y = 0 }
 	}
-}
-division_template = {
-	name = "Division d'Infanterie de Marine"
-	division_names_group = FRW_MAR_01
-	regiments = {
-		marine = { x = 0 y = 0 }
-		marine = { x = 0 y = 1 }
-		marine = { x = 1 y = 0 }
-		marine = { x = 1 y = 1 }
-	}
-	priority = 2
 }
 
 units = {
@@ -427,36 +359,7 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 11506
-		division_template = "Brigade de Chars de Combat"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 11506
-		division_template = "Brigade de Chars de Combat"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location = 11506
-		division_template = "Brigade de Chars de Combat"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
+	
 	division = {
 		division_name = {
 			is_name_ordered = yes
@@ -497,27 +400,7 @@ units = {
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
-	division = {
-		name = "5ème Division Légère Mécanique"
-		location = 667
-		division_template = "Brigade de Chars de Combat"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "6ème Division Légère Mécanique"
-		location = 667
-		division_template = "Brigade de Chars de Combat"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "9ème Division Légère Mécanique"
-		location = 667
-		division_template = "Brigade de Chars de Combat"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
+	
 	division = {
 		name = "3ème Division Légère Mécanisée"
 		location = 667

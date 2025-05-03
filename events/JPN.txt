@@ -214,6 +214,7 @@ country_event = {
 			news_event = {id=JPN.14 days=7}
 			complete_national_focus = JPN_focus_6
 		}
+		complete_national_focus = JPN_focus_32
 	}
 }
 
@@ -362,5 +363,119 @@ news_event = {
 	}
 	option = {
 		name = JPN.20.a
+	}
+}
+
+
+country_event = {
+	id = JPN.21
+	title = JPN.21.t
+	desc = JPN.21.d
+	picture = GFX_JPN_21
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.21.a
+	}
+}
+
+country_event = {
+	id = JPN.22
+	title = JPN.22.t
+	desc = JPN.22.d
+	picture = GFX_JPN_22
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.22.a
+	}
+}
+
+country_event = {
+	id = JPN.23
+	title = JPN.23.t
+	desc = JPN.23.d
+	picture = GFX_JPN_23
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.23.a
+	}
+}
+
+news_event = {
+	id = JPN.24
+	title = JPN.24.t
+	desc = JPN.24.d
+	picture = GFX_JPN_24
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			JPN={
+				country_event = {id=JPN.25 days=2}
+				damage_building = {
+					type = infrastructure
+					state = 282
+					damage = 3
+				}
+				damage_building = {
+					type = arms_factory
+					state = 282
+					damage = 3
+				}
+				damage_building = {
+					type = industrial_complex
+					state = 282
+					damage = 3
+				}
+				damage_building = {
+					type = air_base
+					state = 282
+					damage = 3
+				}
+				damage_building = {
+					type = anti_air_building
+					state = 282
+					damage = 3
+				}
+				damage_building = {
+					type = rail_way
+					state = 282
+					damage = 3
+				}
+				damage_building = {
+					type = naval_base
+					state = 282
+					damage = 3
+				}
+				damage_building = {
+					type = dockyard
+					state = 282
+					damage = 3
+				}
+			}
+		}
+	}
+	option = {
+		name = JPN.24.a
+	}
+}
+
+
+country_event = {
+	id = JPN.25
+	title = JPN.25.t
+	desc = JPN.25.d
+	picture = GFX_JPN_25
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.25.a
 	}
 }
