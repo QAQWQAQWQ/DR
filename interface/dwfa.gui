@@ -60,7 +60,7 @@ guiTypes = {
 			name ="State_Culture_value1"
 			position = { x = 20 y = 120 }
 			font = "hoi_18mbs" 
-			text = "地区产值:[?state_cash_tot]B"
+			text = "地区产值:[?state_cash_tot]M"
 			format = left
 			maxWidth = 125
 			maxHeight = 24

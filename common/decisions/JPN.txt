@@ -237,4 +237,32 @@ JPN_The_Second_Movement_Protect_Constitution = {
 				factor = 1
 			}
 	}
+
+}
+
+JPN_Death_Senator = {
+	JPN_Investigate_murderer = {
+		icon = generic_ignite_civil_war
+			activation={
+				#has_country_flag = SFZY
+			}  
+			available = {
+					has_country_flag = The_murderer_revealed
+			}
+			cancel_trigger = {
+				has_stability < 0.2
+			}
+			is_good = no                          
+			days_remove = 5  
+			fire_only_once = yes
+			days_mission_timeout = 140        
+			cancel_effect = {
+				country_event = {id=JPN.27 days=2}
+			}     
+			timeout_effect = { 
+				country_event = {id=JPN.27 days=2}
+			}
+			complete_effect = {      
+			}
+	}
 }

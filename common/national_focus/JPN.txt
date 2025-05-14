@@ -224,12 +224,61 @@ focus_tree = {
 			}
 
 	}
+	
+	focus = {
+		id = JPN_focus_63
+		icon = GFX_JPN_Focus_13
+		cost = 6.00
+		prerequisite = {
+			focus = JPN_focus_11
+		}
+		prerequisite = {
+			focus = JPN_focus_12
+		}
+		x = 24
+		y = 4
+			completion_reward = {
+				
+			}
+
+	}
+	focus = {
+		id = JPN_focus_64
+		icon = GFX_JPN_Focus_13
+		cost = 6.00
+		prerequisite = {
+			focus = JPN_focus_13
+		}
+		x = 25
+		y = 5
+			completion_reward = {
+				
+			}
+
+	}
+	focus = {
+		id = JPN_focus_65
+		icon = GFX_JPN_Focus_13
+		cost = 6.00
+		prerequisite = {
+			focus = JPN_focus_13
+		}
+		x = 27
+		y = 5
+			completion_reward = {
+				
+			}
+
+	}
 	focus = {
 		id = JPN_focus_14
 		icon = GFX_JPN_Focus_14
 		cost = 6.00
 		prerequisite = {
-			focus = JPN_focus_13
+			focus = JPN_focus_64
+		}
+		prerequisite = {
+			focus = JPN_focus_65
 		}
 		x = 26
 		y = 6

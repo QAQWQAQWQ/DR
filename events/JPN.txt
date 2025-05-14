@@ -377,6 +377,8 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = JPN.21.a
+		unlock_decision_category_tooltip = JPN_Death_Senator
+		country_event = {id=JPN.22 days=50}
 	}
 }
 
@@ -390,6 +392,10 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = JPN.22.a
+		add_days_mission_timeout = {
+			mission = JPN_Investigate_murderer
+			days = -20
+		}
 	}
 }
 
@@ -477,5 +483,31 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = JPN.25.a
+	}
+}
+
+country_event = {
+	id = JPN.26
+	title = JPN.26.t
+	desc = JPN.26.d
+	picture = GFX_JPN_26
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.26.a
+	}
+}
+
+country_event = {
+	id = JPN.27
+	title = JPN.27.t
+	desc = JPN.27.d
+	picture = GFX_JPN_27
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.27.a
 	}
 }

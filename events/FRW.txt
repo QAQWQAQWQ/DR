@@ -564,6 +564,10 @@ country_event = {
 		}
 		modify_parliament_seat = yes
 		parliament1_add = yes
+		add_trait = {
+			character = FRW_Alexandre_Millerand
+			trait = unpopular_political_advisor
+		}
 		}
 		option = {
 		name = FRW.6.b
@@ -1764,5 +1768,63 @@ country_event = {
 	option = {
 		name = FRW.57.a 
 		set_country_flag = FRW_party_1_text_new
+	}
+}
+
+country_event = {
+	id = FRW.58
+	title = FRW.58.t
+	desc = FRW.58.d
+	picture = GFX_Eu_election
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW.58.a 
+	}
+}
+country_event = {
+	id = FRW.59
+	title = FRW.59.t
+	desc = FRW.59.d
+	picture = GFX_Eu_election
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW.59.a 
+	}
+}
+country_event = {
+	id = FRW.60
+	title = FRW.60.t
+	desc = FRW.60.d
+	picture = GFX_Eu_election
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW.60.a 
+	}
+}
+
+country_event = {
+	id = FRW.61
+	title = FRW.61.t
+	desc = FRW.61.d
+	picture = GFX_Eu_election
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW.61.a 
+	}
+}
+
+country_event = {
+	id = FRW.62
+	title = FRW.62.t
+	desc = FRW.62.d
+	picture = GFX_Eu_election
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW.62.a 
 	}
 }

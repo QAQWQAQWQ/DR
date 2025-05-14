@@ -23,3 +23,14 @@ JPN_The_Second_Movement_Protect_Constitution = {
 		has_completed_focus = JPN_focus_32
 	} 
 }
+JPN_Death_Senator = {
+	icon = infiltration
+	
+	picture = GFX_decisions_The_Second_Movement_Protect_Constitution
+	priority = 10
+	allowed = {
+		tag = JPN
+	}
+	visible = {
+	} 
+}
