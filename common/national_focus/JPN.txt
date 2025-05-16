@@ -227,7 +227,7 @@ focus_tree = {
 	
 	focus = {
 		id = JPN_focus_63
-		icon = GFX_JPN_Focus_13
+		icon = GFX_JPN_Focus_63
 		cost = 6.00
 		prerequisite = {
 			focus = JPN_focus_11
@@ -244,7 +244,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JPN_focus_64
-		icon = GFX_JPN_Focus_13
+		icon = GFX_JPN_Focus_64
 		cost = 6.00
 		prerequisite = {
 			focus = JPN_focus_13
@@ -255,15 +255,15 @@ focus_tree = {
 				
 			}
 
-	}
+	} 
 	focus = {
 		id = JPN_focus_65
-		icon = GFX_JPN_Focus_13
+		icon = GFX_JPN_Focus_65
 		cost = 6.00
 		prerequisite = {
 			focus = JPN_focus_13
 		}
-		x = 27
+		x = 27 
 		y = 5
 			completion_reward = {
 				
@@ -338,6 +338,18 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			add_ideas = JPN_Eighty_eight_naval_plan
+		}
+	}
+	focus = {
+		id = JPN_focus_66
+		icon = GFX_JPN_Focus_66
+		cost = 6.00
+		prerequisite = {
+			focus = JPN_focus_16
+		}
+		x = 28
+		y = 4
+		completion_reward = {
 		}
 	}
 	focus = {
