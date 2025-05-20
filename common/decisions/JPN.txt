@@ -244,10 +244,10 @@ JPN_Death_Senator = {
 	JPN_Investigate_murderer = {
 		icon = generic_ignite_civil_war
 			activation={
-				#has_country_flag = SFZY
+				has_country_flag = JPN_Death_Senator
 			}  
 			available = {
-					has_country_flag = The_murderer_revealed
+				has_country_flag = The_murderer_revealed
 			}
 			cancel_trigger = {
 				has_stability < 0.2

@@ -27,6 +27,12 @@ set_technology = {
 	early_ship_hull_heavy = 1
 }
 
+add_to_variable = {
+	Jobless_rate_value = 2
+}
+add_to_variable = {
+	new_nat_tre = 2.34
+}
 
 recruit_character = JPN_Yamakawa_Hitoshi
 recruit_character = JPN_Shigenobu_Okuma

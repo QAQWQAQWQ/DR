@@ -26,7 +26,9 @@ focus_tree = {
 		cost = 6.00   
 		x = 28
 		y = 0 
-
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = JPN_focus_32 
@@ -69,7 +71,7 @@ focus_tree = {
 		x = 17
 		y = 2
 			completion_reward = {
-					set_temp_variable = { temp_nat_debt = -5 } 
+					set_temp_variable = { temp_nat_debt = 5 } 
 			nat_debt_add=yes
 				}
 
@@ -236,9 +238,13 @@ focus_tree = {
 			focus = JPN_focus_12
 		}
 		x = 24
-		y = 4
+		y = 4 
 			completion_reward = {
-				
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 1
+					category = infantry_weapons
+				}
 			}
 
 	}
@@ -252,7 +258,11 @@ focus_tree = {
 		x = 25
 		y = 5
 			completion_reward = {
-				
+				add_unit_bonus = {
+					category_special_forces = {
+					  soft_attack = 0.05
+					}
+				}
 			}
 
 	} 
@@ -265,9 +275,11 @@ focus_tree = {
 		}
 		x = 27 
 		y = 5
-			completion_reward = {
-				
+		completion_reward = {
+			set_technology = {
+				early_armor_car = 1
 			}
+		}
 
 	}
 	focus = {
@@ -349,7 +361,27 @@ focus_tree = {
 		}
 		x = 28
 		y = 4
-		completion_reward = {
+		completion_reward = { 
+			set_technology = {
+				marines = 1
+			}
+			custom_effect_tooltip = JPN_focus_66_tooltip
+			division_template = {
+				name = "海军特战团"
+				is_locked = yes
+				division_cap = 3 
+				priority = 0
+				template_counter = 0
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+				}
+				support = {
+					military_police = { x = 0 y = 0 }
+				}
+			}
 		}
 	}
 	focus = {

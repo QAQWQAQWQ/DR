@@ -1,5 +1,25 @@
 spriteTypes = {
-	
+	spriteType = {
+	    name = "GFX_culture_icon"
+	    texturefile = "gfx/interface/stateview/culture.dds"
+    } 
+	spriteType = {
+	    name = "GFX_pr_wage_icon"
+	    texturefile = "gfx/interface/stateview/pr_wage.dds"
+    } 
+	spriteType = {
+	    name = "GFX_private_capital_icon"
+	    texturefile = "gfx/interface/stateview/private_capital.dds"
+    } 
+	spriteType = {
+	    name = "GFX_private_goods_icon"
+	    texturefile = "gfx/interface/stateview/private_goods.dds"
+    } 
+	spriteType = {
+	    name = "GFX_State_fac_icon"
+	    texturefile = "gfx/interface/stateview/State_fac.dds"
+    } 
+
 	spriteType = {
 	    name = "GFX_idea_Colonization_railways"
 	    texturefile = "gfx/interface/ideas/JLP/Colonization_railways.dds"
@@ -60,6 +80,12 @@ spriteTypes = {
 		name = "GFX_idea_haze_Russo_Japanese_War"
 		texturefile = "gfx/interface/ideas/JPN/haze_Russo_Japanese_War.dds"
 	}
+
+	spriteType = {
+		name = "GFX_Socialist_Transformation_plan"
+		texturefile = "gfx/interface/ideas/FRW/Socialist_Transformation_plan.dds"
+	}
+
 	spriteType = {
 		name = "GFX_idea_Eighty_eight_naval_plan"
 		texturefile = "gfx/interface/ideas/JPN/Eighty_eight_naval_plan.dds"

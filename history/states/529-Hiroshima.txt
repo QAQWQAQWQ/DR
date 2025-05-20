@@ -12,25 +12,16 @@ state={
 		add_core_of = JPN
 		buildings = {
 			infrastructure = 4 #was: 7
-			air_base = 3
-			dockyard = 2
-			arms_factory = 2
-			industrial_complex = 2
+			air_base = 2
+			arms_factory = 3
+			industrial_complex = 3
 			1092 = {
-				naval_base = 10
-
+				naval_base = 3
 			}
 		}
 		
 		victory_points = {
 			1092 18
-		}
-		1939.1.1 = {
-			buildings = {
-				dockyard = 3
-				arms_factory = 3
-				industrial_complex = 3
-			}
 		}
 
 	}

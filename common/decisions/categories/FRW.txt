@@ -176,3 +176,19 @@ FRW_Maginot_Line_plan = {
 		has_completed_focus = FRW_focus150
 	}
 }
+
+
+FRW_Socialist_Transformation_Program = {
+	icon = decision_gre_paying_ifc_debt      
+	
+	picture = GFX_Socialist_Transformation_Program
+
+
+	priority = 4
+	allowed = {                  
+		tag = FRW
+	}  
+	visible = {
+		#has_completed_focus = FRW_focus150
+	}
+}

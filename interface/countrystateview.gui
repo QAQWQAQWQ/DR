@@ -45,7 +45,7 @@ guiTypes = {
 						
 			instantTextboxType = {
 				name = "state_name"
-				position = { x = 80 y = 5 }
+				position = { x = 80 y = 12 }
 				textureFile = ""
 				font = "hoi_36header"
 				text = "STATE_NAME_TEST"
@@ -208,24 +208,24 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "resistance_container"
-				position = { x = 20 y = 196}	
+				position = { x = 320 y = 400}	
 				size = { width = 519 height = 100 }
 				
 				iconType ={
 					name ="state_resistance_icon"
 					spriteType = "GFX_resistance_icon"
-					position = { x = 0 y = 0 }
+					position = { x = 0 y = 5 }
 				}
 				
 				positionType = {
 					name = "resistance_status_pos"
-					position = { x = 36 y = 6 }
+					position = { x = 36 y = 12 }
 				}
 				
 				iconType ={
 					name ="state_compliance_icon"
 					spriteType = "GFX_compliance_icon"
-					position = { x = 0 y = 37 }
+					position = { x = 0 y = 33 }
 				}
 				
 				positionType = {
@@ -428,7 +428,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "scorched_earth_state_button"
-			position = { x = -17 y = 413 }
+			position = { x = -17 y = 123 }
 			quadTextureSprite ="GFX_scorched_earth_state"
 			buttonFont = "Main_14_black"
 			Orientation = "UPPER_RIGHT"
@@ -627,7 +627,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "state_resource_entry"
-		position = { x=0 y=0 }
+		position = { x=0 y=25 }
 		size = { width=23 height= 27 }
 		clipping = no
 		

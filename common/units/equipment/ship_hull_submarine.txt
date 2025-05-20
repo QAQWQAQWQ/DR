@@ -370,45 +370,4 @@ equipments = {
 		}
 	}
 	
-	submarine_5 = {
-		year = 1919
-
-		archetype = ship_hull_submarine
-		priority = 2500
-		module_slots = inherit
-		
-		default_modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_2
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = ship_torpedo_sub_2
-		}
-		lg_armor_piercing = 0
-		lg_attack = 0
-		torpedo_attack = 20
-		
-		anti_air_attack = 0
-		
-		armor_value = 0
-
-		
-		surface_detection = 100
-		sub_detection = 0
-		surface_visibility = 1
-		sub_visibility = 20
-		naval_speed = 18
-		reliability = 0.80
-
-		naval_range = 8000
-		
-		max_strength = 60
-		
-
-		
-		build_cost_ic = 1600
-		resources = {
-			#oil = 2
-			steel = 3
-			chromium = 1
-		}
-	}
 }

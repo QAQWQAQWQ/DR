@@ -103,21 +103,6 @@ on_actions = {
 			}
 		}
 	}
-	on_weekly = {
-		effect = {
-			if={
-				limit={
-					check_variable = {
-						resource_grain = 0
-					}
-				}
-				add_timed_idea = {
-					idea = Food_shortages
-					days = 30
-				}
-			}
-		}
-	}
 
 
 

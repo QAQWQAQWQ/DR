@@ -1,4 +1,4 @@
-guiTypes = {
+··guiTypes = {
 	containerWindowType = {
 		name = "scorched_grain_state"
 		position = { x=0 y=0 }	
@@ -24,25 +24,25 @@ guiTypes = {
 guiTypes = {
 	containerWindowType = { 
 		name = "State_Culture_window"  
-		position = { x = 465 y = 6 }
+		position = { x = 8 y = 186 }
 		size = { width=100% height=100% }
 
 		
 		instantTextBoxType = {
 			name ="State_Culture_value"
-			position = { x = 20 y = 65 }
+			position = { x = 35 y = 10 }
 			font = "hoi_18mbs" 
-			text = "文化：[FROM.state_culture_name_texts]"
-			format = left
+			text = "[FROM.state_culture_name_texts]"
+			format = center
 			maxWidth = 125
 			maxHeight = 24
 			fixedsize = yes
 		}
 		instantTextBoxType = {
 			name ="state_type"
-			position = { x = 15 y = 20 }
+			position = { x = 70 y = 277 }
 			font = "hoi_18mbs" 
-			text = "[FROM.owner.GetNameWithFlag][FROM.state_type]"
+			text = "[FROM.owner.GetName][FROM.state_type]"
 			format = left
 			maxWidth = 350
 			maxHeight = 24
@@ -58,33 +58,81 @@ guiTypes = {
 		}          
 		instantTextBoxType = {  
 			name ="State_Culture_value1"
-			position = { x = 20 y = 120 }
+			position = { x = 35 y = 38 }
 			font = "hoi_18mbs" 
-			text = "地区产值:[?state_cash_tot]M"
-			format = left
+			text = "[?state_cash_tot]M"
+			format = center
 			maxWidth = 125
 			maxHeight = 24
 			fixedsize = yes
 		}
 		instantTextBoxType = {
 			name ="State_fac_texts"
-			position = { x = 160 y = 165 }
+			position = { x = 35 y = 63 }
 			font = "hoi_18mbs" 
-			text = "State_fac_texts_text"
-			format = left
-			maxWidth = 280
-			maxHeight = 100           
+			text = "State_fac_texts_text" 
+			format = center
+			maxWidth = 125
+			maxHeight = 24
 			fixedsize = yes
 		}        
-		      
+		instantTextBoxType = {
+			name ="private_goods_text"
+			position = { x = 92 y = 90 }
+			font = "hoi_18mbs" 
+			text = "private_goods_factory_text" 
+			maxWidth = 125
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="pr_wage"
+			position = { x = 32 y = 117 }
+			font = "hoi_18mbs" 
+			text = "pr_wage_texts" 
+			format = center
+			maxWidth = 125
+			maxHeight = 24
+			fixedsize = yes
+		}           
 		iconType = {                      
-			name = "State_icon"
-            pdx_tooltip= "State_icon_desc"
-			position = { x = 7 y = 150 }
-		}                 
+			name = "State_icon" 
+            			pdx_tooltip= "State_icon_desc"
+			position = { x = 307 y =280 }
+		}  
+		iconType = {                      
+			name = "culture_icon" 
+			quadTextureSprite ="GFX_culture_icon"
+            			pdx_tooltip= "culture_icon_desc"
+			position = { x = 12 y =5 }
+		}
+		iconType = {                      
+			name = "pr_wage_icon" 
+			quadTextureSprite ="GFX_pr_wage_icon"
+            			pdx_tooltip= "pr_wage_desc"
+			position = { x = 12 y =110 }
+		}
+		iconType = {                      
+			name = "private_goods_icon" 
+			quadTextureSprite ="GFX_private_goods_icon"
+            			pdx_tooltip= "private_goods_desc"
+			position = { x = 12 y =84 }
+		} 
+		iconType = {                      
+			name = "private_capital_icon" 
+			quadTextureSprite ="GFX_private_capital_icon"
+            			pdx_tooltip= "private_capital_desc"
+			position = { x = 12 y =57 }
+		} 
+		iconType = {                      
+			name = "State_fac_icon"  
+			quadTextureSprite ="GFX_State_fac_icon"
+            			pdx_tooltip= "State_fac_desc"
+			position = { x = 12 y =31 } 
+		}                            
 		background = {
 			name = "state_culture_Background"
-			quadTextureSprite = "GFX_stateview_new"
+			#quadTextureSprite = "GFX_stateview_new"
 			position = { x = 0 y = 0 }
 		}
 	}

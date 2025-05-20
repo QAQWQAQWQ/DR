@@ -2897,5 +2897,155 @@ FRW_Trade_unionist_propaganda={
 			}
 		
 	}
+
+
+
+
+	
 }
 
+
+
+
+FRW_Socialist_Transformation_Program = {
+	FRW_Exchange = {
+	icon = generic_ignite_civil_war
+	visible = {
+	}
+	available = {
+	}
+	days_re_enable = 30
+	days_remove = 60
+	cost = 35
+	allowed = {
+		tag = FRW
+	}
+	complete_effect = { 
+	}
+	fixed_random_seed = no
+	fire_only_once = yes
+    ai_will_do = {
+		factor = 1
+	}
+	}
+	FRW_Economic_Commission = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 30
+		days_remove = 60
+		cost = 35
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	FRW_Focus_technology_upgrades = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 30
+		days_remove = 60
+		cost = 35
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	FRW_Promotion_cooperatives= {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 30
+		days_remove = 60
+		cost = 35
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	FRW_Stimulate_consumer_industry= {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 30
+		days_remove = 60
+		cost = 35
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	FRW_Focus_public_welfare = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 30
+		days_remove = 60
+		cost = 35
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	FRW_Liberalization_cultural_policies = {
+		icon = generic_ignite_civil_war
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 30
+		days_remove = 60
+		cost = 35
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

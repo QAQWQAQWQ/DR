@@ -114,7 +114,7 @@ focus_tree = {
 					has_country_leader = {
 							character = FRW_Georges_Clemenceau
 							ruling_only = yes
-						}
+					}
 				}
 			allow_branch = {
 																																																																																																																								#has_country_leader = # character = # ruling_only = #}#has_country_leader = # character = # ruling_only = #has_country_leader = # character = # ruling_only = #}#has_country_leader = # character = # ruling_only = #has_country_leader = # character = # ruling_only = #}#has_country_leader = # character = # ruling_only = #has_country_leader = # character = # ruling_only = #}#has_country_leader = # character = # ruling_only = yes
@@ -497,6 +497,9 @@ focus_tree = {
 		prerequisite = {
 			focus = FRW_focus_army5
 		}
+		available = {
+			threat > 0.5 
+		}
 		x = 10
 		y = 2
 			completion_reward = {
@@ -796,6 +799,7 @@ focus_tree = {
 		x = 15
 		y = 2
 			completion_reward = {
+				add_war_support = 0.1
 					add_to_variable = {
 							var = FRW_ARMY_VAR
 							value = 10
@@ -2544,9 +2548,32 @@ focus_tree = {
 		}
 		x = 22
 		y = 12
-			completion_reward = {
-
-}
+		completion_reward = {
+		set_variable = {
+			So_civilian_factory_use=5
+		}
+		set_variable = {
+			So_production_speed_industrial_complex=0.1
+		}
+		set_variable = {
+			So_production_speed_arms_factory=0.1
+		}
+		set_variable = {
+			So_political_power=0.1
+		}
+		set_variable = {
+			So_industrial_capacity_dockyard=0.1
+		}
+		set_variable = {
+			So_industrial_capacity_factory=0.1
+		}
+		set_variable = {
+			So_stability=0.1
+		}
+		add_dynamic_modifier = {
+			modifier = FRW_Socialist_Transformation_plan
+		}
+		}
 
 	}
 	focus = {
@@ -2701,8 +2728,8 @@ focus_tree = {
 			completion_reward = {
 					promote_character = {
 							character = FRW_Daniel_Renoult
-							ideology = Revolutionary_Socialism
-						}
+							ideology = Authoritarian_Socialism
+					}
 					add_popularity = {
 							ideology = Revolutionism
 							popularity = 0.1
@@ -3052,7 +3079,12 @@ focus_tree = {
 		}
 		x = 21
 		y = 18
-
+		completion_reward = {
+			set_rule = {
+				can_send_volunteers = yes
+				can_occupy_non_war = yes
+			}
+		}
 	}
 	focus = {
 		id = FRW_focus152
