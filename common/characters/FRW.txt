@@ -150,7 +150,7 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}
+	} 
 	FRW_Jean_Laurent={
 		name=FRW_Jean_Laurent
 		portraits={
@@ -159,9 +159,9 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Revolutionary_Massimalismo
+			ideology=Scientific_Socialism
 			desc = FRW_Jean_Laurent_desc
-			traits={  } 
+			traits={ Son_of_revolution } 
 			expire="1965.1.1.1"
 			id=-1
 		}
