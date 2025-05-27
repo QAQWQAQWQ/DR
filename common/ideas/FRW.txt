@@ -156,7 +156,7 @@ ideas = {
 		FRW_Inefficient_industry = {
 			picture = Inefficient_industry
 			modifier = {
-				Jobless_rate_stab_modifier= 0.05
+				
 				consumer_goods_factor = 0.05
 				conversion_cost_civ_to_mil_factor = 0.15
 				conversion_cost_mil_to_civ_factor = 0.15
@@ -164,6 +164,13 @@ ideas = {
                 production_speed_industrial_complex_factor= -0.1
                 production_speed_arms_factory_factor= -0.1
 				civilian_factory_use = 2
+
+				people_cost_modifier= 0.1
+				new_nat_tre_modifier= -0.1
+				Jobless_rate_stab_modifier= 0.1
+				before_national_factory_tot_cost_modifier= 0.1
+				gdp_growth_modifier= -0.1
+				gdp_inflation_modifier= 0.1
 			}
         }
 		FRW_Inefficient_industry1 = {

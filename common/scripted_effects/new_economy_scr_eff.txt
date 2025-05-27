@@ -815,8 +815,10 @@ monthly_build_new_economy = {
     set_variable = { cash_upd = tot_large_of_market }
     
     multiply_variable = { cash_upd = 0.5 }
-    
-    multiply_variable = { new_nat_tre = modifier@new_nat_tre_modifier }
+
+    set_temp_variable = { temp_new_nat_tre = new_nat_tre }
+    multiply_temp_variable = { temp_new_nat_tre = modifier@new_nat_tre_modifier }
+    add_to_variable = { new_nat_tre = temp_new_nat_tre }
     
 }
 sell_goods = {
@@ -976,7 +978,10 @@ remake_pop_cost = {
     }
     set_variable = { people_cost = num_of_people }
     divide_variable = { var = people_cost value = 4000 }
-    multiply_variable = { people_cost = modifier@people_cost_modifier }
+
+    set_temp_variable = { temp_people_cost = people_cost }
+    multiply_temp_variable = { temp_people_cost = modifier@people_cost_modifier }
+    add_to_variable = { people_cost = temp_people_cost }
 }
 remake_nat_tre_del = {
     set_variable = { new_nat_tre_del = 0 }
@@ -985,6 +990,11 @@ remake_nat_tre_del = {
     add_to_variable = { new_nat_tre_del = military_spend }
     add_to_variable = { new_nat_tre_del = people_cost }
     add_to_variable = { new_nat_tre_del = debt_interest }
+
+    set_temp_variable = { temp_before_national_factory_tot_cost = before_national_factory_tot_cost }
+    multiply_temp_variable = { temp_before_national_factory_tot_cost = modifier@before_national_factory_tot_cost_modifier }
+    add_to_variable = { before_national_factory_tot_cost = temp_before_national_factory_tot_cost }
+    
 }
 payroll_qwq = {
     remake_national_factory_tot_cost = yes
@@ -1318,10 +1328,17 @@ monthly_we_do = {
         add_to_variable = { gdp_inflation = 1 }
         subtract_from_variable = { gdp_inflation = gdp_growth }
 
-        
-        multiply_variable = { gdp_inflation = modifier@gdp_inflation_modifier }
+        #通胀
+        set_temp_variable = { temp_gdp_inflation = gdp_inflation }
+        multiply_temp_variable = { temp_gdp_inflation = modifier@gdp_inflation_modifier}
+        add_to_variable = { gdp_inflation = temp_gdp_inflation }
 
-        multiply_variable = { gdp_growth = modifier@gdp_growth_modifier }
+        set_temp_variable = { temp_gdp_growth = gdp_growth }
+        multiply_temp_variable = { temp_gdp_growth = modifier@gdp_growth_modifier}
+        add_to_variable = { gdp_growth = temp_gdp_growth }
+
+
+
         ai_inflation_work = yes
         ai_debt_work = yes
         set_variable = { nat_debt_qwq = nat_debt }
@@ -1461,7 +1478,12 @@ Jobless_rate = {
             working_population = 10
         }
     }
-    add_to_variable = { Jobless_rate_value = modifier@Jobless_rate_stab_modifier}
+    
+    set_temp_variable = { temp_Jobless_rate_value = Jobless_rate_value }
+    multiply_temp_variable = { temp_Jobless_rate_value = modifier@Jobless_rate_stab_modifier}
+    add_to_variable = { Jobless_rate_value = temp_Jobless_rate_value }
+
+
     subtract_from_variable = { working_population = Jobless_rate_value}
     
     set_variable = { Jobless_rate_stab_value = 0 }
@@ -1490,5 +1512,5 @@ Jobless_rate = {
     divide_variable = {
         Jobless_rate_tool = 0.03
     }
-    
+   
 }

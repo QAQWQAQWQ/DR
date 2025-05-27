@@ -498,7 +498,14 @@ focus_tree = {
 			focus = FRW_focus_army5
 		}
 		available = {
-			threat > 0.5 
+			and={
+				threat > 0.5 
+				NOT={
+					has_government = Reformism
+				}
+				
+			}
+			
 		}
 		x = 10
 		y = 2
@@ -2549,30 +2556,34 @@ focus_tree = {
 		x = 22
 		y = 12
 		completion_reward = {
-		set_variable = {
-			So_civilian_factory_use=5
-		}
-		set_variable = {
-			So_production_speed_industrial_complex=0.1
-		}
-		set_variable = {
-			So_production_speed_arms_factory=0.1
-		}
-		set_variable = {
-			So_political_power=0.1
-		}
-		set_variable = {
-			So_industrial_capacity_dockyard=0.1
-		}
-		set_variable = {
-			So_industrial_capacity_factory=0.1
-		}
-		set_variable = {
-			So_stability=0.1
-		}
-		add_dynamic_modifier = {
-			modifier = FRW_Socialist_Transformation_plan
-		}
+			custom_effect_tooltip = FRW_focus84_effect
+			hidden_effect = {
+				set_variable = {
+					So_civilian_factory_use=5
+				}
+				set_variable = {
+					So_production_speed_industrial_complex=0.1
+				}
+				set_variable = {
+					So_production_speed_arms_factory=0.1
+				}
+				set_variable = {
+					So_political_power=0.1
+				}
+				set_variable = {
+					So_industrial_capacity_dockyard=0.1
+				}
+				set_variable = {
+					So_industrial_capacity_factory=0.1
+				}
+				set_variable = {
+					So_stability=0.1
+				}
+				add_dynamic_modifier = {
+					modifier = FRW_Socialist_Transformation_plan
+				}
+			}
+			unlock_decision_category_tooltip = FRW_Socialist_Transformation_Program
 		}
 
 	}
@@ -2750,6 +2761,7 @@ focus_tree = {
 		x = 26
 		y = 10
 			completion_reward = {
+				custom_effect_tooltip = FRW_focus50_effect
 					set_temp_variable = {
 							temp_member = 1
 						}
