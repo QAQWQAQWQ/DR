@@ -79,3 +79,11 @@ Jobless_rate_stab_modifier = {
 	 
 	category = all
 }
+
+before_national_factory_tot_cost_modifier = {
+	color_type = bad
+	value_type = percentage
+	precision = 3
+	 
+	category = all
+}
