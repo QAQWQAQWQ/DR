@@ -9,7 +9,12 @@ head_of_government = {
 	factor = 1
 	}
 }
-
+head_of_parliament = {
+	random = no
+	ai_will_do = {
+	factor = 1
+	}
+}
 Talented_orator = {
 	random = no
 	sprite = 13
@@ -6778,5 +6783,13 @@ Chairman_Cheka = {
 		state_production_speed_buildings_factor = 0.1
 		people_cost_modifier= -0.15
 		new_nat_tre_modifier= 0.05
+	}
+
+	Son_of_revolution = {
+		random = no
+
+		party_popularity_stability_factor = 0.1
+		political_power_gain= 0.05
+		drift_defence_factor= 0.1
 	}
 }

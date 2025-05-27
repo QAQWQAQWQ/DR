@@ -20,6 +20,25 @@ characters={
 			}
 		}
 	}
+	JPN_Hirohito={
+		name=JPN_Hirohito
+		portraits={
+			civilian={
+				large="gfx/leaders/JPN/JPN_Hirohito.tga"
+				small = "gfx\interface\ideas\JPN\JPN_Hirohito.dds"
+			}
+		}
+		advisor={
+			slot=head_of_government
+			idea_token=JPN_Hirohito_H
+			removal_cost = -1
+			allowed={
+				tag=JPN
+			}
+			traits={
+			}
+		}
+	}
 	JPN_Yamakawa_Hitoshi={
 		name=JPN_Yamakawa_Hitoshi
 		portraits={
@@ -91,10 +110,10 @@ characters={
 	}
 
 	JPN_Giichi_Tanaka={
-		name=JPN_Tokugawa_Ieda
+		name=JPN_Giichi_Tanaka
 		portraits={
 			civilian={
-				large="gfx/leaders/JPN/portrait_Tokugawa_Ieda.tga"
+				large="gfx/leaders/JPN/portrait_Giichi_Tanaka.tga"
 			}
 		}
 		country_leader={
@@ -104,8 +123,22 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+		advisor={
+			slot=political_advisor
+			idea_token=JPN_Giichi_Tanaka_p
+			removal_cost = -1
+			allowed={
+				tag=JPN
+			}
+			available = {
+				JPN_Giichi_Tanaka={
+					is_country_leader = no
+				}
+			}
+			traits={
+			}
+		}
 	}
-
 
 
 	JPN_Korekiyo_Takahashi={
@@ -139,7 +172,37 @@ characters={
 			}
 		}
 	}
-
+	JPN_Yukio_Ozaki={
+		name=JPN_Yukio_Ozaki
+		portraits={
+			civilian={
+				large="gfx/leaders/JPN/portrait_Yukio_Ozaki.tga"
+				small="gfx/interface/ideas/JPN/JPN_Yukio_Ozaki.dds"
+			}
+		}
+		country_leader={
+			ideology=Social_Liberalism
+            desc=JPN_Yukio_Ozaki_DESC
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=JPN_Yukio_Ozaki_p
+			removal_cost = -1
+			allowed={
+				tag=JPN
+			}
+			available = {
+				JPN_Yukio_Ozaki={
+					is_country_leader = no
+				}
+			}
+			traits={
+			}
+		}
+	}
 	JPN_Inuto_Yi={
 		name=JPN_Inuto_Yi
 		portraits={
@@ -197,7 +260,24 @@ characters={
 		}
 	}
 
-
+	JPN_Shuaki_Okawa={
+		name=JPN_Shuaki_Okawa
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/JPN/JPN_Shuaki_Okawa.dds"
+			}
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=JPN_Shuaki_Okawa_p
+			removal_cost = -1
+			allowed={
+				tag=JPN
+			}
+			traits={
+			}
+		}
+	}
 
 	JPN_Saionji_Kinmoch={
 		name=JPN_Saionji_Kinmoch
@@ -227,24 +307,6 @@ characters={
 		advisor={
 			slot=head_of_government
 			idea_token=JPN_Yuyuki_Hamaguchi_H
-			removal_cost = -1
-			allowed={
-				tag=JPN
-			}
-			traits={
-			}
-		}
-	}
-	JPN_Hara_Takashi={
-		name=JPN_Hara_Takashi
-		portraits={
-			army={
-				small="GFX_idea_Honorable"
-			}
-		}
-		advisor={
-			slot=head_of_government
-			idea_token=JPN_Hara_Takashi_H
 			removal_cost = -1
 			allowed={
 				tag=JPN
@@ -401,6 +463,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/JPN/portrait_Uehara_Yusaku.tga"
+				small = "gfx\interface\ideas\JPN\JPN_Uehara_Yusaku.dds"
 			}
 		}
 		corps_commander = {
@@ -409,6 +472,16 @@ characters={
 			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 1
+		}
+		advisor={
+			slot=army_chief
+			idea_token=JPN_Uehara_Yusaku_A
+			removal_cost = -1
+			allowed={
+				tag=JPN
+			}
+			traits={
+			}
 		}
 	}
 	
@@ -433,6 +506,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/JPN/portrait_Count_Yamamoto.tga"
+				small = "gfx\interface\ideas\JPN\JPN_Count_Yamamoto.tga"
 			}
 		}
 		navy_leader = {
@@ -441,6 +515,16 @@ characters={
 			defense_skill = 2
 			maneuvering_skill = 3
 			coordination_skill = 2
+		}
+		advisor={
+			slot=navy_chief
+			idea_token=JPN_Count_Yamamoto_N
+			removal_cost = -1
+			allowed={
+				tag=JPN
+			}
+			traits={
+			}
 		}
 	}
 	}

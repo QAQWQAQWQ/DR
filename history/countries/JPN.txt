@@ -27,6 +27,12 @@ set_technology = {
 	early_ship_hull_heavy = 1
 }
 
+add_to_variable = {
+	Jobless_rate_value = 2
+}
+add_to_variable = {
+	new_nat_tre = 2.34
+}
 
 recruit_character = JPN_Yamakawa_Hitoshi
 recruit_character = JPN_Shigenobu_Okuma
@@ -36,6 +42,7 @@ recruit_character = JPN_Hara_Takashi
 recruit_character = JPN_Saionji_Kinmoch
 recruit_character = JPN_Korekiyo_Takahashi
 recruit_character = JPN_Inuto_Yi
+recruit_character = JPN_Yukio_Ozaki
 recruit_character = JPN_Takashi_Hara
 recruit_character = JPN_Tokugawa_Ieda
 recruit_character = JPN_Yoshimasa_Oshima
@@ -50,12 +57,12 @@ recruit_character = JPN_Mazaki_Jinzaburo
 recruit_character = JPN_Honjo_Shigeru
 recruit_character = JPN_Terauchi_Hisaichi
 recruit_character = JPN_Matsui_Iwane
+recruit_character = JPN_Hirohito
+recruit_character = JPN_Shuaki_Okawa
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
-		
 		support_weapons = 1
-
 		#doctrines
 		air_superiority = 1
 		grand_battle_plan = 1
@@ -63,23 +70,9 @@ recruit_character = JPN_Matsui_Iwane
 		fleet_in_being = 1
 		battlefleet_concentration = 1
 		convoy_sailing = 1
-
-
 		#electronics
-		
-		
-		
-		
-		
 
 		#industry
-		
-		
-		
-		
-		
-		
-		
 		
 	}
 	give_guarantee = KON
@@ -90,14 +83,6 @@ set_politics = {
 	elections_allowed = no	
 }
 create_faction = Empire_Japan
-##add_to_faction = RTW
-##add_to_faction = KON
-#set_autonomy = { target = KON autonomy_state = autonomy_wtt_imperial_protectorate }
-#KON={
-	#set_popularities = {
-		#Conservatism = 100
-	#}
-#
 set_country_flag = parliament_mian_button_yes
 set_autonomy = { target = RTW autonomy_state = autonomy_colony }
 
@@ -105,22 +90,19 @@ add_ideas={
 	#JPN_Restoration
 	JPN_estrangement
 	JPN_haze_Russo_Japanese_War
-    JPN_Taisho_period
     JPN_noninterference
 ##MINISTERS##
 JPN_Emperor_Taisho_H
 #law
-Basic_industrialization 
-Corporate_economy
+Basic_industrialization
 No_labor_laws
-Control_media
+Media_control
 Patriarchy_supreme
-Underlying_investment
-Autonomous_police
+Weak_investments
+Local_police
+elementary_school
 Theocratic_state
-
-
-
+Market_economy
 }
 set_popularities = {
 	Paternalism = 6

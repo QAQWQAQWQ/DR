@@ -36,11 +36,11 @@ JPN_Twenty_fifth_Division = {
 				JPN={
 					add_unit_bonus = {
 						infantry = {
-						  soft_attack = 0.02
+						  soft_attack = 0.01
 						}
 						cavalry = {
-						  soft_attack = 0.02
-						  hard_attack = 0.02
+						  soft_attack = 0.01
+						  hard_attack = 0.01
 						}
 					  }
 				}
@@ -50,6 +50,219 @@ JPN_Twenty_fifth_Division = {
 			fire_only_once = yes
 			ai_will_do = {
 				factor = 1
+			}
+	}
+	JPN_Complete_reorganization = {
+		icon = generic_ignite_civil_war
+			visible = {
+			}
+			available = {
+				JPN={
+					num_divisions > 24
+				}
+			}
+			days_re_enable = 5
+			days_remove = 50
+			cost = 25
+			allowed = {
+				tag = JPN
+			}
+			complete_effect = { 
+				add_ideas = JPN_Imperial_Army
+			}
+			fixed_random_seed = no
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 1
+			}
+	}
+}
+
+
+
+#########第二次护宪运动
+JPN_The_Second_Movement_Protect_Constitution = {
+	JPN_Second_Constitution = {
+		icon = generic_ignite_civil_war
+			available = {
+				AND={ 
+					check_variable = {
+						var = JPN.stability
+						value = 45
+						tooltip = JPN_Second_Constitution_trigger
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = JPN.Patriarchal_tolerance
+						value = 60
+						compare = greater_than_or_equals
+					} 
+				} 
+			} 
+			activation={
+				has_completed_focus = JPN_focus_32
+			}  
+			
+			is_good = no                          
+			days_remove = 5 
+			fire_only_once = yes
+			days_mission_timeout = 140             
+			timeout_effect = { 
+				complete_national_focus = JPN_focus_38
+				complete_national_focus = JPN_focus_40    
+			}
+			complete_effect = {      
+				complete_national_focus = JPN_focus_38
+				complete_national_focus = JPN_focus_39
+			}
+	}
+	JPN_Newspaper_publicity = {
+		icon = generic_ignite_civil_war 
+			visible = {
+			}     
+			available = { 
+			}
+			days_re_enable = 5  
+			days_remove = 50
+			cost = 25
+			allowed = {
+				tag = JPN
+			}
+			complete_effect = { 
+			}
+			fixed_random_seed = no
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 1
+			}
+	}
+	JPN_Mobilize_citizens_demonstrate = {
+		icon = generic_ignite_civil_war
+			visible = {
+			}
+			available = {
+			}
+			days_re_enable = 5 
+			days_remove = 50
+			cost = 25
+			allowed = {
+				tag = JPN
+			}
+			complete_effect = { 
+			}
+			fixed_random_seed = no
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 1
+			}
+	}
+	JPN_Parliamentary_negotiations = {
+		icon = generic_ignite_civil_war
+			visible = {
+			}
+			available = {
+			}
+			days_re_enable = 5 
+			days_remove = 50
+			cost = 25
+			allowed = {
+				tag = JPN
+			}
+			complete_effect = { 
+			}
+			fixed_random_seed = no
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 1
+			}
+	}
+	JPN_Storming_police = {
+		icon = generic_ignite_civil_war
+			visible = {
+			}
+			available = {
+			}
+			days_re_enable = 5 
+			days_remove = 50
+			cost = 25
+			allowed = {
+				tag = JPN
+			}
+			complete_effect = { 
+			}
+			fixed_random_seed = no
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 1
+			}
+	}
+	JPN_The_army_dispatched_maintain_stability = {
+		icon = generic_ignite_civil_war
+			visible = {
+				has_completed_focus = JPN_focus_33
+			}
+			available = {
+			}
+			days_re_enable = 5 
+			days_remove = 50
+			cost = 25
+			allowed = {
+				tag = JPN
+			}
+			complete_effect = { 
+			}
+			fixed_random_seed = no
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 1
+			}
+	}
+	JPN_Wage_workers_strike = {
+		icon = generic_ignite_civil_war
+			visible = {
+			}
+			available = {
+			}
+			days_re_enable = 5 
+			days_remove = 50
+			cost = 25
+			allowed = {
+				tag = JPN
+			}
+			complete_effect = { 
+			}
+			fixed_random_seed = no
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 1
+			}
+	}
+
+}
+
+JPN_Death_Senator = {
+	JPN_Investigate_murderer = {
+		icon = generic_ignite_civil_war
+			activation={
+				has_country_flag = JPN_Death_Senator
+			}  
+			available = {
+				has_country_flag = The_murderer_revealed
+			}
+			cancel_trigger = {
+				has_stability < 0.2
+			}
+			is_good = no                          
+			days_remove = 5  
+			fire_only_once = yes
+			days_mission_timeout = 140        
+			cancel_effect = {
+				country_event = {id=JPN.27 days=2}
+			}     
+			timeout_effect = { 
+				country_event = {id=JPN.27 days=2}
+			}
+			complete_effect = {      
 			}
 	}
 }

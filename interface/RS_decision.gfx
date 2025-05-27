@@ -1,6 +1,10 @@
 spriteTypes = {	
 	
 	spriteType = {
+		name = "GFX_Socialist_Transformation_Program"
+		texturefile = "gfx/interface/decisions/decisions_Socialist_Transformation_Program.dds"
+	}
+	spriteType = {
 		name = "GFX_decisions_Algiers_crisis"
 		texturefile = "gfx/interface/decisions/decisions_Algiers_crisis.dds"
 	}
@@ -69,7 +73,10 @@ spriteTypes = {
 		name = "GFX_decisions_Twenty_fifth_Division"
 		texturefile = "gfx/interface/decisions/decisions_Twenty_fifth_Division.dds"
 	}
-
+	spriteType = {
+		name = "GFX_decisions_The_Second_Movement_Protect_Constitution"
+		texturefile = "gfx/interface/decisions/decisions_The_Second_Movement_Protect_Constitution.dds"
+	}
 
 	spriteType = {
 		name = "GFX_decisions_propaganda_efforts"

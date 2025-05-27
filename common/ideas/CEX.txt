@@ -1,17 +1,21 @@
 ideas = {
     country = {
-		CEX_YMA = {
+		CEX_Yunnan_Military_Academy = {
 			picture = Yunnan_Military_Academy
 			modifier = {
-				attrition = -0.02
-				experience_gain_army_unit_factor = 0.2
-				training_time_factor  = -0.1
-				special_forces_training_time_factor = -0.02
 				experience_gain_factor = 0.02
 				army_leader_cost_factor = -0.2
 				experience_gain_army = 0.1
 				command_power_gain_mult = 0.1
 			}
         }
-		}
+		CEX_Military_civilian_system = {
+			picture = Military_civilian_system
+			modifier = {
+				training_time_factor  = -0.1
+				war_support_factor = 0.1
+				stability_factor = 0.05
+			}
+        }
+	}
 }

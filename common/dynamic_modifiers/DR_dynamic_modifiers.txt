@@ -550,4 +550,20 @@ IRL_Furious_Alster= {
 	recruitable_population_factor = -0.05
 army_speed_factor_for_controller = -0.20
 disable_strategic_redeployment = 1
+} 
+
+
+
+FRW_Socialist_Transformation_plan= {
+	enable = { always = yes }
+	icon = GFX_Socialist_Transformation_plan
+
+	civilian_factory_use=So_civilian_factory_use
+	production_speed_industrial_complex_factor=So_production_speed_industrial_complex
+	production_speed_arms_factory_factor=So_production_speed_arms_factory
+	production_speed_infrastructure_factor=So_production_speed_infrastructure
+	political_power_gain=So_political_power
+	stability_factor=So_stability
+	industrial_capacity_dockyard=So_industrial_capacity_dockyard
+	industrial_capacity_factory=So_industrial_capacity_factory
 }

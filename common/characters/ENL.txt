@@ -14,6 +14,31 @@ characters={
 		}
     }
 
+	ENL_James_William_Lowther={
+		name=ENL_James_William_Lowther
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/ENL/ENL_James_William_Lowther.dds"
+			}
+		}
+		advisor={
+			slot = head_of_parliament
+			idea_token = ENL_James_William_Lowther_T
+			allowed = {
+				original_tag = ENL
+			}
+			available = {
+			  }
+			traits = {
+				head_of_parliament
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+    }
+
+
 
 	ENL_John_Robert_Clynes={
 		name=ENL_John_Robert_Clynes

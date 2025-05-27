@@ -34,11 +34,11 @@ guiTypes = {
 		}
    instantTextBoxType = {
 			name ="IdeologyGroup_text"
-			position = { x = 93 y = 330 }
+			position = { x =93 y = 330 }
 			font = "hoi_18mbs"
 			text = "[?country_leader.GetIdeologyGroup]"
 			format = left
-			maxWidth = 125
+			maxWidth = 225
 		}
         instantTextBoxType = {
 			name ="government_text"

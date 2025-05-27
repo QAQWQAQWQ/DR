@@ -1,6 +1,17 @@
 ideas = {
     country = {
-
+		JPN_Imperial_Army = {
+			picture = JPN_Imperial_Army
+			modifier = {
+				stability_factor = 0.05
+				army_attack_factor = 0.03
+				army_defence_factor = 0.03
+				army_org_factor = 0.03
+				army_speed_factor = 0.03
+				army_chief_cost_factor= -0.03
+				experience_gain_army_factor= 0.02
+            }
+		}
 		JPN_haze_Russo_Japanese_War = {
 			picture = haze_Russo_Japanese_War
 			modifier = {
@@ -9,6 +20,17 @@ ideas = {
 				conscription_factor= -0.05
 				stability_factor = -0.05
 				war_support_factor = -0.1
+            }
+		}
+
+		JPN_Eighty_eight_naval_plan = {
+			picture = Eighty_eight_naval_plan
+			modifier = {
+				production_speed_naval_base_factor=0.1
+				naval_equipment_upgrade_xp_cost=-0.1
+				license_naval_purchase_cost=-0.1
+				industrial_capacity_factory=0.1		
+				industrial_capacity_dockyard=0.15
             }
 		}
 

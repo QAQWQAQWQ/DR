@@ -129,13 +129,28 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Revolutionary_Massimalismo
+			ideology=Revolutionary_Socialism
 			desc = FRW_guesde_desc
 			traits={ marxist_philosopher } 
 			expire="1965.1.1.1"
 			id=-1
 		}
 	}
+	FRW_Daniel_Renoult={
+		name=FRW_Daniel_Renoult
+		portraits={
+			civilian={
+				large="gfx/leaders/FRW/Portrait_Daniel_Renoult.tga"
+			}
+		}
+		country_leader={
+			ideology=Authoritarian_Socialism
+			desc = FRW_Daniel_Renoult_desc
+			traits={ } 
+			expire="1965.1.1.1"
+			id=-1
+		}
+	} 
 	FRW_Jean_Laurent={
 		name=FRW_Jean_Laurent
 		portraits={
@@ -144,9 +159,9 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Revolutionary_Massimalismo
+			ideology=Scientific_Socialism
 			desc = FRW_Jean_Laurent_desc
-			traits={  } 
+			traits={ Son_of_revolution } 
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -187,13 +202,38 @@ characters={
 			}
 		}
 		country_leader={
-			ideology= social-radicalism
+			ideology= Social_Liberalism
 			traits={  }
 			expire="1965.1.1.1"
 			id=-1
 		}
 	}
-	
+	FRW_Jacques_Doriot={
+		name=FRW_Jacques_Doriot
+		portraits={
+			civilian={
+				large="gfx/leaders/FRW/Portrait_Jacques_Doriot.tga"
+				small="gfx/interface/ideas/Portrait_Jacques_Doriot.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRW_Jacques_Doriot_P
+			allowed = {
+				original_tag = FRW
+			}
+			available = {
+				has_completed_focus = FRW_focus85
+			}
+			traits = {
+				Ultra_socialist
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
 	FRW_Alexandre_Millerand={
 		name=FRW_Alexandre_Millerand
 		portraits={
@@ -213,7 +253,6 @@ characters={
 			  }
 			traits = {
 				head_of_government
-				unpopular_political_advisor
 			}
 			cost = 50
 			ai_will_do = {
@@ -253,7 +292,7 @@ characters={
 		}
 
 		country_leader={
-			ideology=Social_Democracy
+			ideology=Reformist_Socialism
 			traits={ }
 			expire="1965.1.1.1"
 			id=-1
@@ -513,6 +552,12 @@ characters={
 			civilian={
 				small= "GFX_idea_LudovicOscar_Frossard"
 			}
+		}
+		country_leader = {
+			ideology = Revolutionary_Socialism
+			traits={  } 
+			expire="1965.1.1.1"
+			id=-1
 		}
 		advisor={
 			slot = head_of_government
@@ -1066,7 +1111,7 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				has_completed_focus = FRW_focus13
+				has_completed_focus = FRW_focus55
 				is_country_leader = no
 			not_already_hired_except_as = political_advisor
 			  }
@@ -1472,23 +1517,7 @@ FRW_georges_louis_humbert={
 			logistics_skill=2
 		}
 	}
-	FRW_Jacques_Doriot={
-		name=FRW_Jacques_Doriot
-		portraits={
-			army={
-				large="gfx/leaders/FRW/Portrait_Jacques_Doriot.tga"
-				small="gfx/interface/ideas/Portrait_Jacques_Doriot.dds"
-			}
-		}
-		corps_commander={
-			traits={ Lieutenant_general }
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=2
-		}
-	}
+	
 	FRW_Paul_Maistre={
 		name=FRW_Paul_Maistre
 		portraits={

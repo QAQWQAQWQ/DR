@@ -7,7 +7,7 @@ country_event = {
 	id = JPN.1
 	title = JPN.1.t
 	desc = JPN.1.d
-	picture = GFX_illness
+	picture = GFX_JPN_1
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -22,7 +22,7 @@ country_event = {
 	id = JPN.2
 	title = JPN.2.t
 	desc = JPN.2.d
-	picture = GFX_illness
+	picture = GFX_JPN_2
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -37,7 +37,7 @@ country_event = {
 	id = JPN.3
 	title = JPN.3.t
 	desc = JPN.3.d
-	picture = GFX_illness
+	picture = GFX_JPN_2
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -52,7 +52,7 @@ country_event = {
 	id = JPN.4
 	title = JPN.4.t
 	desc = JPN.4.d
-	picture = GFX_illness
+	picture = GFX_JPN_3
 	is_triggered_only = yes
  
 	fire_only_once = yes
@@ -71,7 +71,7 @@ country_event = {
 	id = JPN.5
 	title = JPN.5.t
 	desc = JPN.5.d
-	picture = GFX_illness
+	picture = GFX_JPN_4
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -86,7 +86,7 @@ country_event = {
 	id = JPN.6
 	title = JPN.6.t
 	desc = JPN.6.d
-	picture = GFX_illness
+	picture = GFX_JPN_17
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -101,7 +101,7 @@ country_event = {
 	id = JPN.7
 	title = JPN.7.t
 	desc = JPN.7.d
-	picture = GFX_illness
+	picture = GFX_JPN_6
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -117,7 +117,7 @@ country_event = {
 	id = JPN.8
 	title = JPN.8.t
 	desc = JPN.8.d
-	picture = GFX_illness
+	picture = GFX_JPN_13
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -141,7 +141,6 @@ news_event = {
 		name = JPN.9.a
 		hidden_effect={
 			retire_character = JPN_Shigenobu_Okuma
-			country_event = {id=JPN.10 days=65}
 			set_party_name = {
 				ideology = Dictatorship
 				long_name = Dictatorship_Yamagata_Aritomo
@@ -155,7 +154,7 @@ country_event = {
 	id = JPN.10
 	title = JPN.10.t
 	desc = JPN.10.d
-	picture = GFX_illness
+	picture = GFX_JPN_7
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -172,7 +171,7 @@ country_event = {
 	id = JPN.11
 	title = JPN.11.t
 	desc = JPN.11.d
-	picture = GFX_illness
+	picture = GFX_JPN_8
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -188,7 +187,7 @@ country_event = {
 	id = JPN.12
 	title = JPN.12.t
 	desc = JPN.12.d
-	picture = GFX_illness
+	picture = GFX_JPN_15
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -205,7 +204,7 @@ country_event = {
 	id = JPN.13
 	title = JPN.13.t
 	desc = JPN.13.d
-	picture = GFX_illness
+	picture = GFX_JPN_16
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -215,6 +214,7 @@ country_event = {
 			news_event = {id=JPN.14 days=7}
 			complete_national_focus = JPN_focus_6
 		}
+		complete_national_focus = JPN_focus_32
 	}
 }
 
@@ -222,11 +222,292 @@ news_event = {
 	id = JPN.14
 	title = JPN.14.t
 	desc = JPN.14.d
-	picture = GFX_JPN_14
+	picture = GFX_JPN_6
 	is_triggered_only = yes
 	major = yes
 	fire_only_once = yes
 	option = {
 		name = JPN.14.a
+	}
+}
+
+country_event = {
+	id = JPN.15
+	title = JPN.15.t
+	desc = JPN.15.d
+	picture = GFX_JPN_15
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+	option = {
+		name = JPN.15.a
+		set_politics = { 
+			ruling_party = Liberalism
+		}
+		promote_character = {
+			character = JPN_Korekiyo_Takahashi
+			ideology = Social_Liberalism
+		}
+	}
+	option = {
+		name = JPN.15.b
+		set_politics = {
+			ruling_party = Liberalism
+		}
+		promote_character = {
+			character = JPN_Inuto_Yi
+			ideology = Social_Liberalism
+		}
+	}
+	option = {
+		name = JPN.15.c
+		set_politics = {
+			ruling_party = Liberalism
+		}
+		promote_character = {
+			character = JPN_Yukio_Ozaki
+			ideology = Social_Liberalism
+		}
+	}
+}
+country_event = {
+	id = JPN.16
+	title = JPN.16.t
+	desc = JPN.16.d
+	picture = GFX_JPN_10
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.16.a
+	}
+}
+country_event = {
+	id = JPN.17
+	title = JPN.17.t
+	desc = JPN.17.d
+	picture = GFX_JPN_12
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.17.a
+	}
+}
+country_event = {
+	id = JPN.18
+	title = JPN.18.t
+	desc = JPN.18.d
+	picture = GFX_JPN_11
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.18.a
+	}
+	option = {
+		name = JPN.18.b
+	}
+	option = {
+		name = JPN.18.c
+	}
+}
+
+news_event = {
+	id = JPN.19
+	title = JPN.19.t
+	desc = JPN.19.d
+	picture = GFX_JPN_19
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			969={
+				transfer_state_to = JPN
+			}
+			970={
+				transfer_state_to = JPN
+			}
+			971={
+				transfer_state_to = JPN
+			}
+			525={
+				transfer_state_to = JPN
+			}
+			972={
+				transfer_state_to = JPN
+			}
+		}
+	}
+	option = {
+		name = JPN.19.a
+	}
+}
+
+news_event = {
+	id = JPN.20
+	title = JPN.20.t
+	desc = JPN.20.d
+	picture = GFX_JPN_20
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+	immediate = {
+		JPN = {
+			declare_war_on = {
+				target = KON
+				type = annex_everything
+			}
+		}
+	}
+	option = {
+		name = JPN.20.a
+	}
+}
+
+
+country_event = {
+	id = JPN.21
+	title = JPN.21.t
+	desc = JPN.21.d
+	picture = GFX_JPN_21
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.21.a
+		unlock_decision_category_tooltip = JPN_Death_Senator
+		country_event = {id=JPN.22 days=50}
+	}
+}
+
+country_event = {
+	id = JPN.22
+	title = JPN.22.t
+	desc = JPN.22.d
+	picture = GFX_JPN_22
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.22.a
+		add_days_mission_timeout = {
+			mission = JPN_Investigate_murderer
+			days = -20
+		}
+	}
+}
+
+country_event = {
+	id = JPN.23
+	title = JPN.23.t
+	desc = JPN.23.d
+	picture = GFX_JPN_23
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.23.a
+	}
+}
+
+news_event = {
+	id = JPN.24
+	title = JPN.24.t
+	desc = JPN.24.d
+	picture = GFX_JPN_24
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			JPN={
+				country_event = {id=JPN.25 days=2}
+				damage_building = {
+					type = infrastructure
+					state = 282
+					damage = 3
+				}
+				damage_building = {
+					type = arms_factory
+					state = 282
+					damage = 3
+				}
+				damage_building = {
+					type = industrial_complex
+					state = 282
+					damage = 3
+				}
+				damage_building = {
+					type = air_base
+					state = 282
+					damage = 3
+				}
+				damage_building = {
+					type = anti_air_building
+					state = 282
+					damage = 3
+				}
+				damage_building = {
+					type = rail_way
+					state = 282
+					damage = 3
+				}
+				damage_building = {
+					type = naval_base
+					state = 282
+					damage = 3
+				}
+				damage_building = {
+					type = dockyard
+					state = 282
+					damage = 3
+				}
+			}
+		}
+	}
+	option = {
+		name = JPN.24.a
+	}
+}
+
+
+country_event = {
+	id = JPN.25
+	title = JPN.25.t
+	desc = JPN.25.d
+	picture = GFX_JPN_25
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.25.a
+	}
+}
+
+country_event = {
+	id = JPN.26
+	title = JPN.26.t
+	desc = JPN.26.d
+	picture = GFX_JPN_26
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.26.a
+	}
+}
+
+country_event = {
+	id = JPN.27
+	title = JPN.27.t
+	desc = JPN.27.d
+	picture = GFX_JPN_27
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.27.a
 	}
 }

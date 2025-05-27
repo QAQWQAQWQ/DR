@@ -832,31 +832,4 @@ technologies = {
 		}
 	}
 
-	cruiser_submarines = {
-
-		enable_equipments = {
-			#ship_hull_cruiser_submarine
-			submarine_5
-		}
-		#enable_equipment_modules = {
-		#	ship_extra_fuel_tank
-		#}
-		research_cost = 1
-		start_year = 1936
-
-		folder = {
-			name = mtgnavalfolder
-			position = {  x = 0 y = 2 }
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		categories = {
-			naval_equipment
-			ss_tech
-			mio_cat_tech_all_submarine_and_modules
-		}
-	}
 }

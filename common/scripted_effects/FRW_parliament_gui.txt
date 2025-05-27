@@ -1,11 +1,11 @@
 # The following scripted effect sets-up the parliament at game start.
 FRW_parliament_gui_initial = {
 	#政党席位
-	add_to_array = { parliament_seat_array = 22 } # Party A
-	add_to_array = { parliament_seat_array = 48 } # Party B
-	add_to_array = { parliament_seat_array = 87 } # Party C
-	add_to_array = { parliament_seat_array = 30 } # Party D
-	add_to_array = { parliament_seat_array = 3 }# Party E
+	add_to_array = { parliament_seat_array = 38 } # Party A
+	add_to_array = { parliament_seat_array = 20 } # Party B
+	add_to_array = { parliament_seat_array = 83 } # Party C
+	add_to_array = { parliament_seat_array = 42} # Party D
+	add_to_array = { parliament_seat_array = 7 }# Party E
 	add_to_array = { parliament_seat_array = 10 }# Party F
 	#政党数量
 	add_to_array = { parliament_member_array = 1 } # Party A

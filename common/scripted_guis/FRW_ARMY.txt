@@ -11,17 +11,6 @@ scripted_gui = {
 		}
 	}
 	
-	FRW_Maginot_Line = {
-		context_type = decision_category
-		window_name = "FRW_Maginot_Line"
-
-		properties = {
-			FRW_Maginot_Line_needle={
-                  frame=FRW_Maginot_Line_needle_VAR
-}
-		}
-	}
-
  
 	FRW_Trade_unionist_decision = {
 		context_type = decision_category

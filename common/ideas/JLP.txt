@@ -1,0 +1,13 @@
+ideas = {
+  country = {
+		Colonization_railways = {
+			picture = Colonization_railways
+			modifier = {
+        local_building_slots=3
+        local_supplies=0.15 
+        local_org_regain=0.1
+        local_factory_sabotage=0.1
+      }
+		}
+  }
+}

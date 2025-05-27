@@ -7,3 +7,14 @@ is_diplomatic_action_valid_boost_party_popularity = { #提高党派支持率不�
 	}
 	
 }
+is_core_or_compliance_60 = {
+	custom_trigger_tooltip = {
+		tooltip = is_core_or_compliance_60_tt
+		OR = {
+			controller = {
+				PREV = { is_core_of = PREV }
+			}
+			compliance > 60
+		}
+	}
+}
