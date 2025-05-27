@@ -1,0 +1,18 @@
+﻿###########################
+# NAL Events
+###########################
+
+add_namespace = NAL
+news_event = {
+	id = NAL.1
+	title = NAL.1.t
+	desc = NAL.1.d
+	#picture = 
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = NAL.1.a
+	}
+}
+	

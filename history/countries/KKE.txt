@@ -47,7 +47,7 @@ recruit_character = KKE_Asfandiyar_Khan
 	}
 
 set_politics = {
-	ruling_party = Dictatorship
+	ruling_party = Paternalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -58,6 +58,7 @@ add_ideas = {
 #law
 }
 set_popularities = {
-	Dictatorship = 90
-	Liberalism = 10
+	Dictatorship = 66
+	Paternalism = 26
+	Liberalism = 8
 }

@@ -5,16 +5,17 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = NPL	
+		owner = SSA
+		add_core_of = SSA
 		buildings = {
 			infrastructure = 2
 
 		}
-
+		add_dynamic_modifier = {modifier=Afr_Native_Chiefdoms}
 	}
 
 	provinces={
-		1115 10725
+		1115 10725 1897 10771
 	}
 	
 	buildings_max_level_factor=1.000

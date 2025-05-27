@@ -1,0 +1,17 @@
+characters={
+	TCH_Chadian_tribes={
+		name=TCH_Chadian_tribes
+		portraits={
+			civilian={
+				large="gfx/leaders/NTS/NTS_Northern_Tribal_Alliance.tga"
+			}
+		}
+		country_leader={
+			ideology=tribalism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
+	
+}

@@ -52,7 +52,7 @@ on_actions = {
 				 annex_country = { target = HON transfer_troops = yes} 
 				 set_cosmetic_tag = HOR_new
 			}
-			BNA = {give_guarantee = HOR}
+			NAL = {give_guarantee = HOR}
 			HOR = {
 						set_variable = {
 							in_a_sphere = 1

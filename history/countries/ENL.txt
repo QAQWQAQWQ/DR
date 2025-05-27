@@ -70,12 +70,24 @@ early_ship_hull_heavy = 1
 
 }
 	create_faction = Commonwealth_of_Nations
-	add_to_faction = BNA
+	add_to_faction = NAL
 
 	set_autonomy = { target = IRL autonomy_state = autonomy_personal_union }
 	set_autonomy = { target = YDA autonomy_state = autonomy_colony }
 	set_autonomy = { target = NAF autonomy_state = autonomy_dominion }
 	set_autonomy = { target = ESG autonomy_state = autonomy_colony }
+	
+	set_autonomy = { target = GAM autonomy_state = autonomy_colony }
+	set_autonomy = { target = GRC autonomy_state = autonomy_colony }
+	set_autonomy = { target = MUN autonomy_state = autonomy_colony }
+	set_autonomy = { target = SSA autonomy_state = autonomy_colony }
+	set_autonomy = { target = GOC autonomy_state = autonomy_colony }
+	set_autonomy = { target = NIG autonomy_state = autonomy_colony }
+	set_autonomy = { target = BEC autonomy_state = autonomy_colony }
+	set_autonomy = { target = RHO autonomy_state = autonomy_colony }
+	set_autonomy = { target = UGA autonomy_state = autonomy_colony }
+	set_autonomy = { target = EAF autonomy_state = autonomy_colony }
+	set_autonomy = { target = SOM autonomy_state = autonomy_colony }
 	
 	set_autonomy = {
 		target = CNA
@@ -107,7 +119,7 @@ early_ship_hull_heavy = 1
 	}
 
 	set_autonomy = {
-		target = YEM
+		target = OAM
 		autonomy_state = autonomy_supervised_state
 	}
 
@@ -147,7 +159,7 @@ early_ship_hull_heavy = 1
 	}
 	set_autonomy = {
 		target = SKM
-		autonomy_state = autonomy_supervised_state
+		autonomy_state = autonomy_semi_integrated_state
 	}
 
 give_guarantee = MEX
@@ -218,4 +230,8 @@ diplomatic_relation = {
 	country = VAN
 	relation = docking_rights
 	active = yes
+}
+add_opinion_modifier = {
+	target = SML
+	modifier = Quasi_War
 }

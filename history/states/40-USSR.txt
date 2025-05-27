@@ -2,24 +2,37 @@
 state={
 	id=40
 	name="STATE_40" # Barnaul
-	manpower = 2107451
+	manpower = 210751
 	
 	state_category = large_town
-
+resources={
+		grain=2
+	}
 	history={
 		owner = SHW
 		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
+			infrastructure = 3
+			industrial_complex = 2
 		}
 		add_core_of = SHW
 		victory_points = {
-			1794 1
+			1794 7
 		}
+		victory_points = {
+			7757 7
+		}
+		
+		victory_points = {
+			10580 8
+		}
+
+		
+		
 	}
 
 	provinces={
-		1297 1779 1794 1797 4803 7680 10537 10546 11410 12515 12528 12613
+		1297  1794 1797 4803 7680 10537 10546 11410 12515  12613 1369 1685  1816 4665 4789 4793 7757  7886 10580 10649 12631 12594 7890
+		   
 	}
 
 	local_supplies=5.0 

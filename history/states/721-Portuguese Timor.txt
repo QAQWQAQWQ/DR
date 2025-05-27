@@ -7,12 +7,15 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = PTY
+		owner = PUL
 		buildings = {
 			infrastructure = 2
 			12190 ={
 				naval_base = 1
 			}
+		}
+		victory_points = {
+			12190 3
 		}
 	}
 

@@ -1,0 +1,25 @@
+
+state={
+	id=1295
+	name="STATE_1295"
+	manpower = 18000
+	resources={
+		grain=2
+	}
+	state_category = pastoral
+
+	history={
+		owner = NPL
+		
+		buildings = {
+			infrastructure = 1
+			
+		}
+	}
+
+	provinces={
+		8015
+	}
+
+	local_supplies=1.0 
+}

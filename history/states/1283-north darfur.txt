@@ -1,0 +1,21 @@
+state = {
+	id = 1283
+	name = "STATE_1283"
+	manpower = 9102
+	state_category = pastoral
+	history = {
+		owner = DAF
+		add_core_of = DAF
+
+		buildings = {
+			infrastructure = 1
+		}
+		
+	}
+	provinces = {
+		13263 10739
+	}
+	
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+}

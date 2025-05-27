@@ -23,11 +23,13 @@ state={
 				bunker = 1
 			}
 		}
-		victory_points = { 1187 5 }
+
 		victory_points = { 1047 30 }
 		victory_points = { 4092 5 }
-		victory_points = { 1131 5 }
-
+		
+		victory_points = {
+			12095 8 
+		}
 		
 		
 		victory_points = {
@@ -42,19 +44,17 @@ state={
 		victory_points = {
 			1087 8 
 		}
-		victory_points = {
-			9963 5 
-		}
+		
 		victory_points = {
 			11941 5 
 		}
 		victory_points = {
 			1187 8 
 		}
-	}
+	}  
 
 	provinces={
-		1047 1087 1131 1187 4092 7108 7152 9963 11938 11941 12077 12095
+		1047 1087 1187 4092 7108 7152  11938 11941  12095
 	}
 
 	local_supplies=1.0 

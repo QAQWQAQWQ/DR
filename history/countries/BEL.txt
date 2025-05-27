@@ -24,7 +24,7 @@ set_politics = {
 	#最后一次选举（"年.月.日" （p社sb代码，无法早于该日期））
 	election_frequency = 48
 	#选举间隔（48为默认）
-	elections_allowed = yes
+	elections_allowed = no
 	#是否允许公众选举（no或者yes）
 }
 set_popularities = {
@@ -37,5 +37,77 @@ set_popularities = {
 
 add_ideas = {
 	BEL_Ruins_Belgium
+}
+add_opinion_modifier = {
+	target = FRW
+	modifier = revolutionary_friend
+}
+add_opinion_modifier = {
+	target = WWS
+	modifier = Counter-revolution
+}
+add_opinion_modifier = {
+	target = AOX
+	modifier = Counter-revolution
+}
+add_opinion_modifier = {
+	target = HEL
+	modifier = Counter-revolution
+}
+add_opinion_modifier = {
+	target = NPL
+	modifier = Counter-revolution
+}
+add_opinion_modifier = {
+	target = TCY
+	modifier = Counter-revolution
+}
+add_opinion_modifier = {
+	target = PMA
+	modifier = Counter-revolution
+}
+add_opinion_modifier = {
+	target = LMJ
+	modifier = Counter-revolution
+}
+add_opinion_modifier = {
+	target = TSI
+	modifier = Counter-revolution
+}
+add_opinion_modifier = {
+	target = RDN
+	modifier = Counter-revolution
+}
+add_opinion_modifier = {
+	target = SHW
+	modifier = Counter-revolution
+}
+add_opinion_modifier = {
+	target = FEL
+	modifier = Counter-revolution
+}
+add_opinion_modifier = {
+	target = ARA
+	modifier = Counter-revolution
+}
+add_opinion_modifier = {
+	target = GGA
+	modifier = Counter-revolution
+}
+add_opinion_modifier = {
+	target = TGA
+	modifier = Counter-revolution
+}
+add_opinion_modifier = {
+	target = KEI
+	modifier = Counter-revolution
+}
+add_opinion_modifier = {
+	target = RMA
+	modifier = Counter-revolution
+}
+add_opinion_modifier = {
+	target = DKO
+	modifier = Counter-revolution
 }
 #添加民族精神（在common\ideas\你的国家tag_country.txt）

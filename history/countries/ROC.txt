@@ -67,7 +67,7 @@ set_politics = {
 	ruling_party = Paternalism
 	last_election = "1918.11.11"
 	election_frequency = 72
-	elections_allowed = yes
+	elections_allowed = no
 }
 add_ideas = {
 	      ROC_TPP     
@@ -78,4 +78,8 @@ set_popularities = {
 	Reformism = 16
 	Moderate_Socialism = 14
 	Revolutionism = 11
+}
+add_opinion_modifier = {
+	target = FRW
+	modifier = revolutionary_friend
 }

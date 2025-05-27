@@ -2,16 +2,19 @@
 state={
 	id=772
 	name="STATE_772" # Middle Congo (Brazzaville)
-	manpower = 746415
+	manpower = 74641
 	
 	state_category = pastoral
 	resources={
-		rubber=1 # was: 1
+		rubber=2 
 	}
 	history={
-		owner = ENL
+		owner = DAS
 		victory_points = {
-			13302 3
+			13302 8
+		}
+		victory_points = {
+			12975 6
 		}
 		buildings = {
 			infrastructure = 2
@@ -23,7 +26,7 @@ state={
 	}
 
 	provinces={
-		2192 3109 6008 8193 12975 13302
+		2192 6008 8193 12975 13302 13474
 	}
 
 	local_supplies=0.0 

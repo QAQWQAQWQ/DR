@@ -96,3 +96,8 @@ set_popularities = {
 	Reformism =2.25
 }
 give_guarantee = GGZ
+set_autonomy = { target = SNA autonomy_state = autonomy_colony }
+add_opinion_modifier = {
+	target = LEF
+	modifier = Quasi_War
+}

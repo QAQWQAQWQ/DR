@@ -5,7 +5,8 @@ state={
 	state_category = small_island
 
 	history={
-		owner = ENL
+		owner = SOM
+		add_core_of = SOM
 		buildings = {
 			infrastructure = 1
 			
@@ -14,7 +15,7 @@ state={
 			}
 
 		}
-		add_core_of = EYJ
+		add_dynamic_modifier = {modifier=Asian_Native_States}
 	}
 
 	provinces={

@@ -1,10 +1,11 @@
 state= {
 	id=991
 	name="汀漳"
-	manpower = 2355600
+	manpower = 335500
 	state_category = rural
 	history={
 		owner = FPE
+		add_core_of = FPE
 		add_core_of = ROC
 		buildings = {
 			infrastructure = 2
@@ -23,7 +24,7 @@ state= {
 		
 	}
 	provinces={
-		1006 4053 7099 10010 10054 10093 12084 10084 12057 
+		1006 7099 10010 10054 10093 12084 10084 12057 
 	}
 
 	local_supplies=0.0 

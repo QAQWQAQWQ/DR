@@ -1,0 +1,35 @@
+
+state={
+	id=455
+	name="STATE_455"
+	manpower = 22800
+	
+	state_category = rural
+	resources={
+		grain=14
+	}
+	history={
+		owner = EYJ
+		add_core_of = EYJ
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			
+			
+		}
+		
+		victory_points = {
+			1015 5
+		}
+		
+		
+		
+	}
+
+	provinces={
+		1015 7176 11970
+	}
+
+	local_supplies=0.0 
+}

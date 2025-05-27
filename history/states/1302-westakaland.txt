@@ -1,0 +1,26 @@
+
+state={
+	id=1302
+	name="STATE_1302" # west akaland
+	manpower = 14641
+	
+	state_category = rural
+	resources={
+		rubber=1 # was: 1
+	}
+	history={
+		owner = SNA
+		
+		buildings = {
+			infrastructure = 2
+			
+		}
+
+	}
+
+	provinces={
+		3109
+	}
+
+	local_supplies=0.0 
+}

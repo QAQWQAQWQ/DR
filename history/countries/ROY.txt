@@ -1,4 +1,4 @@
-﻿capital =293
+﻿capital =1317
 oob = "ROY_1920"
 
 # Starting tech
@@ -57,4 +57,8 @@ add_ideas = {
 }
 set_popularities = {
 	Dictatorship = 100
+}
+add_opinion_modifier = {
+	target = JBS
+	modifier = Rassid_same_dynasty
 }

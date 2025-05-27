@@ -1,0 +1,21 @@
+
+state={
+	id=1294
+	name="STATE_1294" # Upper Volta
+	manpower = 16184
+	
+	state_category = pastoral
+	history={
+		owner = DAS
+		
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		8071 7983
+	}
+
+	local_supplies=1.0 
+}

@@ -485,6 +485,51 @@ UBS_Slave_State= {
 	enable = { always = yes }
 
 	icon = GFX_idea_Slavery
+	recruitable_population_factor = -0.15
+state_resources_factor = 0.15
+	
+}
+
+Afr_Native_Chiefdoms= {
+	enable = { always = yes }
+
+	icon = GFX_idea_Black_Cossacks
+
+		
+		
+
+	
+		recruitable_population_factor = -0.50
+		local_resources_factor = -0.20
+		local_factories = -0.2
+		disable_strategic_redeployment = 1
+	
+}
+
+Asian_Native_States= {
+	enable = { always = yes }
+
+	icon = GFX_idea_Immigration_policy
+
+		
+		
+
+	
+		recruitable_population_factor = -0.50
+		local_resources_factor = -0.20
+		local_factories = -0.2
+		disable_strategic_redeployment = 1
+	
+}
+
+Pal_Jewish_Settlements= {
+	enable = { always = yes }
+
+	icon = GFX_idea_The_Jewish_Question
+	monthly_population = 0.08
+				stability_factor = -0.01
+				political_power_factor = -0.01
+
 	
 }
 
@@ -492,12 +537,17 @@ UBS_Free_State= {
 	enable = { always = yes }
 
 	icon = GFX_idea_thriving_market
-	
+	recruitable_population_factor = 0.05
+industrial_capacity_factory = 0.05
+state_production_speed_industrial_complex_factor = 0.1
 }
 
 IRL_Furious_Alster= {
 	enable = { always = yes }
-	stability_weekly = -0.002
-	icon = GFX_idea_England
 	
+	icon = GFX_idea_England
+	stability_weekly = -0.002
+	recruitable_population_factor = -0.05
+army_speed_factor_for_controller = -0.20
+disable_strategic_redeployment = 1
 }

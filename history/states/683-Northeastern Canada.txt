@@ -9,14 +9,20 @@ state={
 		owner = CNA
 		buildings = {
 			infrastructure = 1
+			3691 = {
+				naval_base = 1
 
+			}
+		}
+		victory_points = {
+			7813 1
 		}
 		add_core_of = CNA
 
 	}
 
 	provinces={
-		2947 10721
+		2947 10721 13457 1712 3691 7813
 	}
 	manpower=46135
 	buildings_max_level_factor=1.000

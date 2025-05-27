@@ -125,6 +125,11 @@ country_event = {
 					}
 					ICD = {transfer_state = 759
 					load_oob = "ICD_2020"}
+					AOX = {diplomatic_relation = {
+						country = TSI
+						relation = guarantee
+						active = no
+					}}
 			RDN = {
 				declare_war_on = {
 					target = TSI

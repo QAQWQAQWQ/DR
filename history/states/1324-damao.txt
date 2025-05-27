@@ -1,0 +1,34 @@
+
+state={
+	id=1324
+	name="STATE_1324"
+	manpower = 	19500
+	
+	
+	state_category = town
+	resources={
+		oil=3 # was: 4
+	}
+	resources={
+		grain=19
+	}
+	history={
+		owner = PUL
+		add_core_of = YDA
+		victory_points = {
+			13495 12
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			
+		}
+
+	}
+
+	provinces={
+		13495
+	}
+
+	local_supplies=0.0 
+}

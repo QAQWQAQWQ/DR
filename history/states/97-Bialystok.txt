@@ -8,23 +8,22 @@ state={
 	history={
 		owner = SHW
 		add_core_of = PBL
-		add_core_of = BLR
 		victory_points = {
-			11301 3
+			11301 17
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1
 			industrial_complex = 1
-			air_base = 3
+			air_base = 1
 
 		}
 
 	}
 
 	provinces={
-		290 347 11247 11301
+		 11301
 	}
-	manpower=757200
+	manpower=257200
 	buildings_max_level_factor=1.000
 	state_category=rural
 

@@ -2,7 +2,7 @@ state={
 	id=856
 	name="STATE_856"
 	provinces={
-		1923 5006 5037 8073 12883
+		1923 5006 5037 8073 12883 10786
 	}
 	history = {
 		owner = EYJ
@@ -28,6 +28,7 @@ state={
 		victory_points = {
 			8073 5
 		}
+		add_dynamic_modifier = {modifier=Asian_Native_States}
 	}
 	manpower=500000
 	state_category=pastoral

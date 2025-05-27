@@ -2,7 +2,7 @@
 state={
 	id=552
 	name="STATE_552"
-	manpower = 18539
+	manpower = 5539
 	
 	state_category = wasteland
 
@@ -10,17 +10,20 @@ state={
 
 	history={
 		owner = SNX
-		add_claim_by = EYJ
+		add_core_of = EYJ
 		add_core_of = SNX
 		buildings = {
 			infrastructure = 0
 		}
-
+		victory_points = {
+			12764 2
+		}
 
 	}
 
 	provinces={
-		2064 10869 10907 12733 12816 12764
+		 10869  12733  12764 13461
+		  
 	}
 
 	local_supplies=0.0 

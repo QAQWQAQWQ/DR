@@ -4,7 +4,7 @@ state={
 	provinces={
 		 7997 10796 10834 10865 12890 
 	}
-	manpower=1000000
+	manpower=20000
 	buildings_max_level_factor=1.000
 	state_category = pastoral
 	history={
@@ -21,6 +21,7 @@ state={
 		victory_points = {
 			10796 5 
 		}
+		add_dynamic_modifier = {modifier=Asian_Native_States}
 		}
 
 

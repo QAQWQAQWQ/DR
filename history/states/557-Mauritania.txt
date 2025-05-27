@@ -2,12 +2,13 @@
 state={
 	id=557
 	name="STATE_557" # Mauritania
-	manpower = 225000
+	manpower = 15000
 	
 	state_category = pastoral
 
 	history={
-		owner = NPL
+		owner = SNA
+		add_core_of = SSA
 		victory_points = {
 			5034 1
 		}
@@ -18,7 +19,7 @@ state={
 	}
 
 	provinces={
-		5034 5077 7992 8058 10814
+		5034 5077 7992 10814
 	}
 
 	local_supplies=0.0 

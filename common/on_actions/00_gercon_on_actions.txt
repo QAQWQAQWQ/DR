@@ -370,45 +370,27 @@ on_actions = {
                 every_country = { country_event = ger_con.7 }
                 if = {
                     limit = {
-                        DSX = {controls_state = 768}
+                        DSX = {controls_state = 539}
                     }
-                    DSX = {transfer_state = 768}
+                    DSX = {transfer_state = 539}
                 }
                 if = {
                     limit = {
-                        DSX = {controls_state = 769}
+                        DSX = {controls_state = 772}
                     }
-                    DSX = {transfer_state = 769}
+                    DSX = {transfer_state = 772}
                 }
                 if = {
                     limit = {
-                        DSX = {controls_state = 546}
+                        DSX = {controls_state = 660}
                     }
-                    DSX = {transfer_state = 546}
+                    DSX = {transfer_state = 660}
                 }
                 if = {
                     limit = {
-                        DSX = {controls_state = 905}
+                        DSX = {controls_state = 1095}
                     }
-                    DSX = {transfer_state = 905}
-                }
-                if = {
-                    limit = {
-                        DSX = {controls_state = 895}
-                    }
-                    DSX = {transfer_state = 895}
-                }
-                if = {
-                    limit = {
-                        DSX = {controls_state = 541}
-                    }
-                    DSX = {transfer_state = 541}
-                }
-                if = {
-                    limit = {
-                        DSX = {controls_state = 893}
-                    }
-                    DSX = {transfer_state = 893}
+                    DSX = {transfer_state = 1095}
                 }
                 if = {
                     limit = {

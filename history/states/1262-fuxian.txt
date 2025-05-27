@@ -2,7 +2,7 @@ state={
 	id=1262
 	name="STATE_1262"
 	provinces={
-		964 9854 3783 6918 6851
+		964 9854 3783 6918
 	}
 	state_category = city
 	resources={
@@ -17,10 +17,7 @@ state={
 			infrastructure = 3 #was: 5
 			air_base = 1
 			industrial_complex = 1
-			964 = {
-				naval_base = 4
-
-			}
+			
 		}
 		victory_points = {
 			964 8 

@@ -1,0 +1,33 @@
+
+state={
+	id=1282
+	name="STATE_1282" # Southern Ontario
+	manpower = 152868	
+	
+	state_category = large_city
+	resources={
+		grain=1
+	}
+	history={
+		owner = CNA
+		buildings = {
+			infrastructure = 4 #was: 7
+			industrial_complex = 4
+		}
+		add_core_of = CNA
+		victory_points = {
+			3778 22
+		}
+		victory_points = {
+			4270 9
+		}
+		
+	}
+
+	provinces={
+		3778 4270 6625
+	}
+	
+
+	local_supplies=0.0 
+}

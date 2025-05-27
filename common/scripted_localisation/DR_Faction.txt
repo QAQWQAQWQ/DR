@@ -91,6 +91,17 @@ text = {
 }
 }
 text = {
+	localization_key = GFX_Ma_Clique
+
+	trigger = {
+		   OR = {
+			   tag = MAQ
+			   is_in_faction_with = MAQ
+			   is_puppet_of = MAQ
+		   }
+}
+}
+text = {
 	localization_key = GFX_austrian_empire
 
 	trigger = {

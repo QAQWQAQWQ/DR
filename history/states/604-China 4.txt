@@ -15,7 +15,7 @@ state={
 		victory_points = {
 			7940 5
 		}
-		
+		add_dynamic_modifier = {modifier=Asian_Native_States}
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 2
@@ -26,7 +26,7 @@ state={
 	provinces={
 		4914 4964 7940 8018 8037 12899 1882
 	}
-	manpower=1196100
+	manpower=31961
 	buildings_max_level_factor=1.000
 	state_category=rural
 

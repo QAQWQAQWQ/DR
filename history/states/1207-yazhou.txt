@@ -2,12 +2,12 @@ state={
 	id=1207
 	name="STATE_1207"
 	provinces={
-		10841
+		10841 12141 1395 12819
 	}
 	resources={
 		grain=1
 	}         
-	manpower=30000
+	manpower=150000
 	buildings_max_level_factor=1.000
 	state_category = pastoral
 	history={
@@ -15,6 +15,17 @@ state={
 		add_core_of = SCX
 		victory_points = {
 			10841 16 
+		}
+		
+		victory_points = {
+			1395 8 
+		}
+		
+		victory_points = {
+			12141 5 
+		}
+		victory_points = {
+			12819 5 
 		}
  		
 		buildings = {

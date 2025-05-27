@@ -1,0 +1,40 @@
+
+state={
+	id=1289
+	name="STATE_1289" #Jafa
+	manpower = 47799
+	
+	state_category = city
+	resources={
+		grain=1
+	}
+	history={
+		owner = EYJ
+		add_core_of = EYJ
+		
+		
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 1
+			4206 = {
+				naval_base = 3
+			}
+			
+		}
+		add_dynamic_modifier = {
+			modifier = Pal_Jewish_Settlements
+		}
+		
+		victory_points = {
+			4206 10 
+		}
+		
+	}
+
+	provinces={
+		4206    
+		    
+	}
+
+	local_supplies=0.0 
+}

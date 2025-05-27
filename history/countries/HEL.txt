@@ -65,10 +65,14 @@ add_ideas = {
 set_autonomy = { target = YDN autonomy_state = autonomy_colony }
 YDN = {
 	set_politics = {
-		ruling_party = Dictatorship
+		ruling_party = Paternalism
 	}
 	set_popularities = {
-		Dictatorship = 100
+		Paternalism = 50
+	Conservatism = 10.53
+	Liberalism = 15.78
+	Reformism = 13.16
+	Moderate_Socialism = 10.53
 	}
 }
 give_guarantee = GGZ

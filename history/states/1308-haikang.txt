@@ -1,0 +1,36 @@
+state={
+	id=1308
+	name="STATE_1308"
+	manpower = 20000
+	
+	state_category = rural
+	
+	history={
+		owner = ROC
+		add_core_of = ROC
+		buildings = {
+			infrastructure = 2
+			
+			11981 = {
+				naval_base = 1
+				bunker = 2
+				coastal_bunker = 2
+			}
+		}
+
+		victory_points = {
+			4160 8 
+		}
+		
+		victory_points = {
+			11981 10
+		}
+		
+	}
+	
+	provinces={
+		7135 11981 4160
+	}
+
+	local_supplies=0.0 
+}

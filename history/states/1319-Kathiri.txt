@@ -1,0 +1,29 @@
+
+state={
+	id=1319
+	name="STATE_1319"
+	manpower=17120
+	resources={
+		grain=1
+	}
+	history={
+		owner = EYJ
+		add_core_of = EYJ
+		
+		buildings = {
+			infrastructure = 1
+			
+			
+		}
+		add_dynamic_modifier = {modifier=Asian_Native_States}
+	}
+
+	provinces={
+		4976 2029
+		 
+	}
+	
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

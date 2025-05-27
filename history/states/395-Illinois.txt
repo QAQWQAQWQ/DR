@@ -8,12 +8,15 @@ state={
 		grain=19
 	}
 	history={
-		owner = BNA
+		owner = NAL
 		victory_points = {
-			10393 10
+			10393 14
 		}
 		victory_points = {
-			12305 10
+			12305 17
+		}
+		victory_points = {
+			12697 16
 		}
 		buildings = {
 			infrastructure = 4
@@ -76,9 +79,9 @@ state={
 			air_base = 5
 
 		}
-		add_core_of = BNA
+		add_core_of = NAL
 		victory_points = {
-			9450 30.0
+			9450 43
 		}
 
 	}

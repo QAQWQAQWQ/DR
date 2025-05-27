@@ -2,39 +2,33 @@ state={
 	id=302
 	name="STATE_302"
 	resources={
-		tungsten=60 # was: 102.000
-		steel=2 # was: 2.000
+		tungsten=30 # was: 102.000
+		steel=1 # was: 2.000
 	}
 	resources={
-		grain=16
+		grain=8
 	}
-	state_category = city
+	state_category = town
 
 	history={
 		owner = BLW
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			arms_factory = 1
-			industrial_complex = 5
-			air_base = 2
-			13296 = {
-				naval_base = 2
-			}
+			industrial_complex = 1
+			
 		}
 		add_core_of = BLW
-		victory_points = {
-			5230 10 
-		}
-		victory_points = {
-			13296 5
-		}
+		
+		
 
 	}
 
 	provinces={
-		2174 5179 5146 8231 5229 5230 8157 8225 10938 10952 10987 12930 12994 12979 13195 8217 13296
+		2174 5179   5229    10938  10987 12930  12979   
+		    
 	}
-	manpower=2044500
+	manpower=544500
 	buildings_max_level_factor=1.000
 
 	local_supplies=0.0 

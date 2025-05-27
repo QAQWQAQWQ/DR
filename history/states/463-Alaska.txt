@@ -5,6 +5,7 @@ state={
 	history={
 		add_dynamic_modifier = {modifier=UBS_Slave_State}
 		owner = UBS
+		add_core_of = UBS
 		buildings = {
 			infrastructure = 1
 			air_base = 1
@@ -18,8 +19,12 @@ state={
 			13090 1 
 		}
 		victory_points = {
-			13091 3 
+			13091 5
 		}
+		victory_points = {
+			13203 6
+		}
+		
 
 	}
 

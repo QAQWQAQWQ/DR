@@ -1,0 +1,33 @@
+state={
+	id=1314
+	name="STATE_1314"
+	provinces={
+		4375 9966 2045 10132 1367 4925
+	}
+	resources={
+		grain=13
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category = rural
+	history={
+		owner = SCX
+		add_core_of = SCX
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			1367 5 
+		}
+
+		victory_points = {
+			2045 8 
+		}
+		victory_points = {
+			4925 26 
+		}
+	}
+
+	local_supplies=1.0 
+}

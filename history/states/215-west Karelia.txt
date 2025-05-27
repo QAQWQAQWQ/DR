@@ -1,0 +1,27 @@
+state={
+	id=215
+	name="STATE_215"
+	resources={
+		steel=30 # was: 52.000
+	}
+
+	history={
+		owner = SHW
+		add_core_of = SHW
+		buildings = {
+			infrastructure = 2
+
+		}
+	}
+
+	provinces={
+		6070 9231 2998 80 11146 6098 11054 6175 9119 9074 3067 9198
+		11150 6172 9078 40 6094 3033 11092 157 3071 6096 11096 36 176 11181
+	}
+	manpower=94858
+	
+	state_category = rural
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

@@ -8,7 +8,7 @@ state={
 	}
 
 	history={
-		owner = BNA
+		owner = NAL
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 3
@@ -26,7 +26,7 @@ state={
 
 			}
 			12456 = {
-				bunker = 5
+				bunker = 8
 
 			}
 			1560 = {
@@ -38,9 +38,12 @@ state={
 			air_base = 5
 
 		}
-		add_core_of = BNA
+		add_core_of = NAL
 		victory_points = {
-			12357 10
+			12357 28
+		}
+		victory_points = {
+			12456 14
 		}
 
 	}

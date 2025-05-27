@@ -9,16 +9,30 @@ state={
 	}
 	
 	history={
-		owner = DSX
+		owner = DKO
 		buildings = {
 			infrastructure = 1
 
 		}
-
+		victory_points = {
+			2154 3
+		}
+		victory_points = {
+			12783 3
+		}
+		victory_points = {
+			6027 3
+		}
+		victory_points = {
+			1950 7
+		}
+		victory_points = {
+			4941 4
+		}
 	}
 	
 	provinces={
-		1181 4941 7161 10766 12783
+		1181 4941 7161 10766 12783 1950  2073 2154 6027  12808 12847 
 	}
 	
 	buildings_max_level_factor=1.000

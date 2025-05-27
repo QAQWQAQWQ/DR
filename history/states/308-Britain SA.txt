@@ -7,6 +7,9 @@ state={
 
 	history={
 		owner = ENL
+		victory_points = { # Charlotte Amalie
+			4155 1
+		}
 		buildings = {
 			infrastructure = 2
 			4450 = {
@@ -19,7 +22,7 @@ state={
 	}
 
 	provinces={
-		4450 7123 
+		4450 7123 4155
 	}
 
 	local_supplies=0.0 

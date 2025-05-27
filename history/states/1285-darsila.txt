@@ -1,0 +1,25 @@
+state={
+	id=1285
+	name="STATE_1285"
+
+	history={
+		owner = TCH
+		add_core_of = TCH
+		add_core_of = SNX
+		buildings = {
+			infrastructure = 1
+
+		}
+
+
+	}
+
+	provinces={
+		13271
+	}
+	manpower=4245
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+
+	local_supplies=3.0 
+}

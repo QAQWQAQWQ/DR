@@ -1,0 +1,41 @@
+characters={
+
+	TAB_Alexander_Yakovlevich_Miller={
+		name=TAB_Alexander_Yakovlevich_Miller
+		portraits={
+			civilian={
+				large="gfx/leaders/TAB/TAB_Alexander_Yakovlevich_Miller.tga"
+			}
+		}
+		country_leader={
+			ideology =ironfist-colonial-government
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		corps_commander={
+			
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=1
+			
+		}
+	}	
+	TAB_Samad_Shuja_al-Dawlah={
+		name=TAB_Samad_Shuja_al-Dawlah
+		portraits={
+			civilian={
+				large="gfx/leaders/TAB/TAB_Samad_Shuja_al-Dawlah.tga"
+			}
+		}
+		country_leader={
+			ideology =semipup-civilian
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+	}	
+}

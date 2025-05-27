@@ -2,7 +2,7 @@
 state={
 	id=1100
 	name="STATE_1100"
-	manpower = 497900
+	manpower = 49790
 	
 	state_category = rural
 
@@ -12,13 +12,12 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		victory_points = {
-			1973 3 
-		}
+		
+		
 	}
 
 	provinces={
-		1920 1973 4924
+		1920 4924 
 	}
 
 	local_supplies=0.0 

@@ -1,0 +1,29 @@
+#!gfx:interface\RS_icon.gfx
+focus_tree={
+	id = NAL
+	country={
+		factor=0
+		modifier={
+			add=10
+			tag=NAL
+		}
+	}
+	default=no
+	focus={
+		id=NAL_focus1
+		x=13
+		y=1
+		cost=10
+		icon = GFX_goal_NAL_focus1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			  add_political_power = 300
+			  
+		}
+	}
+} 

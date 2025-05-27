@@ -7,7 +7,7 @@ state={
 	history={
 		owner = SHW
 		victory_points = {
-			11159 1 
+			11159 5
 		}
 		buildings = {
 			infrastructure = 2
@@ -18,9 +18,10 @@ state={
 	}
 
 	provinces={
-		40 90 92 2994 3033 3084 3144 6057 6070 6094 6106 6172 9078 9118 9231 11092 11150 11153 11159
+		  86 94 134 155  170   3008   3078 3189 6021 6029 6090   6159  9045 9055   9195  11045  11094   11175  11212
+		 90 92 2994  3084 3144 6057   6106   9118    11153 11159	             
 	}
-	manpower=229564
+	manpower=109564
 	buildings_max_level_factor=1.000
 
 	local_supplies=0.0 

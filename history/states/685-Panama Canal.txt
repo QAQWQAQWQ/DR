@@ -6,9 +6,10 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = ENL
+		owner = BEC
+		add_core_of = BEC
 
-		
+		add_dynamic_modifier = {modifier=Afr_Native_Chiefdoms}
 		buildings = {
 			infrastructure = 1
 			

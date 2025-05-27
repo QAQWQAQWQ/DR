@@ -4,14 +4,14 @@ state={
 	name="STATE_450"
 	manpower = 82535
 	
-	state_category = wasteland
+	state_category = town
 	
 	history={
 		owner = EYJ
 		add_core_of = EYJ
 		add_core_of = SNX
 		victory_points = {
-			11954 3 
+			11954 10 
 		}
 		buildings = {
 			infrastructure = 2
@@ -20,6 +20,7 @@ state={
 				naval_base = 1
 			}
 		}
+		add_dynamic_modifier = {modifier=Afr_Native_Chiefdoms}
 	}
 
 	provinces={

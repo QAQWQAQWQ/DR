@@ -14,7 +14,7 @@ state={
 		grain=17
 	}
 	history={
-		owner = BNA
+		owner = NAL
 		buildings = {
 			infrastructure = 4 #was: 8
 			industrial_complex = 5
@@ -25,12 +25,15 @@ state={
 
 			}
 		}
-		add_core_of = BNA
+		add_core_of = NAL
 		victory_points = {
-			6845 20
+			6845 42
 		}
 		victory_points = {
-			11800 15
+			11785 18
+		}
+		victory_points = {
+			11789 31
 		}
 		1939.1.1 = {
 			buildings = {

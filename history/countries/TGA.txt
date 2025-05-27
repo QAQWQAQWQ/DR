@@ -11,7 +11,7 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-recruit_character = TGA_Alexei_Kuropatkin
+#recruit_character = TGA_Alexei_Kuropatkin
 recruit_character = TGA_Alexander_Samsonov
 
 	set_technology = {
@@ -59,7 +59,8 @@ add_ideas = {
 #law
 }
 set_popularities = {
-	Dictatorship = 100
+	Dictatorship = 95
+	Paternalism = 5
 }
 
 

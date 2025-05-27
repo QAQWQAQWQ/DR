@@ -1,11 +1,11 @@
 state={
 	id=974
-	name="蒙自"
+	name="STATE_974"
 	resources={
-		tungsten=2.000
+		tungsten=2
 	}
 	resources={
-		grain=10
+		grain=8
 	}
 	history={
 		owner = CEX
@@ -18,15 +18,17 @@ state={
 		victory_points = {
 			1196 5 
 		}
+		
 		victory_points = {
-			1172 5 
+			4501 8 
 		}
 	}
 
 	provinces={
-		1114 1172 1196 1653
+		1114 1196 1653 4501    12282  
+		    
 	}
-	manpower=2451311
+	manpower=451311
 	buildings_max_level_factor=1.000
 	state_category=rural
 

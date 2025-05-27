@@ -29,7 +29,7 @@ set_politics = {
 	#最后一次选举（"年.月.日" （p社sb代码，无法早于该日期））
 	election_frequency = 48
 	#选举间隔（48为默认）
-	elections_allowed = yes
+	elections_allowed = no
 
 }
 set_popularities = {

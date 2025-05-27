@@ -143,7 +143,7 @@ guiTypes = {
 				pdx_tooltip = "Oil_crisis_TT" 
 			}
 			buttonType = { 
-				name = "Oil_crisis_BNA_button"
+				name = "Oil_crisis_NAL_button"
 				size = {width = 100% height = 100%}  
 				spriteType = "GFX_Oil_crisis_ENL_button"
 				position = { x = 15 y = 230 }
@@ -203,9 +203,9 @@ guiTypes = {
 				format = centre     
 			}    
 			instantTextboxType = {
-				name = "BNA_number"
+				name = "NAL_number"
 				position = {x=50  y=245}
-				text = "BNA_number"
+				text = "NAL_number"
 				font = "hoi_18mbs"
 				maxWidth = 280
 				maxHeight = 20

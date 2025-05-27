@@ -8,10 +8,15 @@ state={
 
 
 	history={
-		owner = NPL
+		owner = SSA
+		add_core_of = SSA
 		buildings = {
 			infrastructure = 2
 		}
+		victory_points = { 
+			7939 3
+		}
+		add_dynamic_modifier = {modifier=Afr_Native_Chiefdoms}
 	}
 
 	provinces={

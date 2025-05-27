@@ -1,0 +1,38 @@
+state={
+	id=1290
+	name="STATE_1290"
+	resources={
+		tungsten=4 # was: 102.000
+		steel=1 # was: 2.000
+	}
+	resources={
+		grain=3
+	}
+	state_category = city
+
+	history={
+		owner = BLW
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			13296 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = BLW
+		
+		victory_points = {
+			13296 5
+		}
+
+	}
+
+	provinces={
+		8217 8231 12994 5146 13296
+	}
+	manpower=80440
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

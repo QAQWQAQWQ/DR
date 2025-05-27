@@ -38,7 +38,7 @@ recruit_character = QIN_PuLun
 	}
 
 set_politics = {
-	ruling_party = Conservatism
+	ruling_party = Dictatorship
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -60,5 +60,6 @@ completely_illiterate
 Smallholder_economy
 }
 set_popularities = {
-	Conservatism = 100
+	Dictatorship = 100
 }
+give_military_access = SHW

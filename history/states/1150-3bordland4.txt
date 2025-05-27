@@ -3,19 +3,19 @@ state={
 	name="STATE_1150"
 
 	history={
-		owner = ENL
-		
+		owner = DSX
+		add_core_of = SNX
+		add_core_of = TCH
 		buildings = {
 			infrastructure = 1
 
 		}
-
 	}
 
 	provinces={
 		13269 13272
 	}
-	manpower=144245
+	manpower=14245
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 

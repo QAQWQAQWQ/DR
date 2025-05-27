@@ -1,8 +1,8 @@
 autonomy_state = {
 	id = autonomy_wtt_imperial_associate 
 	
-	is_puppet = yes
-	
+
+	default = yes
 	min_freedom_level = 0.7
 	
 	manpower_influence = 0.7
@@ -15,16 +15,12 @@ autonomy_state = {
 		can_be_spymaster = yes
 		contributes_operatives = yes
 		can_create_collaboration_government = yes
+		can_join_opposite_factions = yes
 	}
 	
 	modifier = {
-		autonomy_manpower_share = 0.7
-		can_master_build_for_us = 1
-		extra_trade_to_overlord_factor = 0.6
-		overlord_trade_cost_factor = -0.6
-		cic_to_overlord_factor = 0.25
-		autonomy_gain_global_factor = -0.3
-		autonomy_gain = 1
+		extra_trade_to_overlord_factor = 1.0
+		overlord_trade_cost_factor = -0.9
 	}
 	
 	ai_subject_wants_higher = {

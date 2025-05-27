@@ -23,6 +23,47 @@ on_startup= {
  }
  }
 }
+on_startup = {
+	effect = {
+		every_country = {
+			if={
+				limit={
+					OR = {
+						is_in_faction_with = AOX
+						is_puppet_of = AOX
+						original_tag = HEL
+						original_tag = YDN
+						original_tag = NPL
+						original_tag = TCY
+						original_tag = PMA
+						original_tag = LMJ
+						original_tag = TSI
+						original_tag = RDN
+						original_tag = SHW
+						original_tag = FEL
+						original_tag = ARA
+						original_tag = GGA
+						original_tag = TGA
+						original_tag = KEI
+						original_tag = RMA
+						original_tag = DKO
+						
+					}
+				}
+				add_opinion_modifier = {
+					target = FRW
+					modifier = Counter-revolution
+				}
+				add_opinion_modifier = {
+					target = BEL
+					modifier = Counter-revolution
+				}
+			}
+			
+		} 
+
+	}
+}
 on_startup= {
 	effect = {
 	VCT={
@@ -73,12 +114,7 @@ on_startup= {
 		can_join_factions=no
 	    }
 	}
-	TRA={
-		leave_faction = yes
-	set_rule = {
-		can_join_factions=no
-	    }
-	}
+	
 	#####开局战争
 	
  }

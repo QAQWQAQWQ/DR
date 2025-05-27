@@ -7,9 +7,9 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = NPL
+		owner = MUN
 		victory_points = {
-			2056 1
+			2056 4
 		}
 		buildings = {
 			infrastructure = 2
@@ -17,7 +17,7 @@ state={
 	}
 
 	provinces={
-		12707 1975 2056
+		1975 2056 12707 
 	}
 
 	local_supplies=1.0 

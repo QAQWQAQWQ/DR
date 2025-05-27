@@ -10,13 +10,17 @@ state={
 		add_core_of = SHW
 		add_core_of = BLR
 		victory_points = {
-			3393 5
+			3393 8
 		}
 		victory_points = {
 			9304 3
 		}
+		victory_points = {
+			560 5
+		}
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 1
 			air_base = 3
 
 		}
@@ -24,7 +28,8 @@ state={
 	}
 
 	provinces={
-		318 3281 3309 3366 3393 3556 6280 6306 6359 6413 9236 9304 9359 11341 13206 3392 3256
+		318 3281 3309 3366 3393 3556 6280 6306 6359 6413 9236 9304 9359 11341 13206  3256  347 11247 560
+		 
 	}
 	manpower=1598900
 	buildings_max_level_factor=1.000

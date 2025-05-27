@@ -7,9 +7,11 @@ state={
 
 	history={
 		owner = SBY
+		add_core_of = SBY
 		victory_points = {
-			1440 1 
+			1440 17
 		}
+		
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -22,7 +24,7 @@ state={
 	}
 
 	provinces={
-		1440 4155 
+		1440 
 	}
 
 	local_supplies=0.0 

@@ -15,7 +15,10 @@ state= {
 		owner = YDN
 
 		victory_points = {
-			10237 1 
+			10237 5 
+		}
+		victory_points = {
+			1316 5 
 		}
 
 		buildings = {
@@ -26,6 +29,7 @@ state= {
 			1316 = {
 				naval_base = 1
 			}
+			
 			10325 = {
 				naval_base = 1
 			}

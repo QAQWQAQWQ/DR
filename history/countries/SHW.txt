@@ -399,7 +399,7 @@ set_autonomy = {
 
 set_autonomy = {
 	target = KKE
-	autonomy_state = autonomy_supervised_state
+	autonomy_state = autonomy_semi_integrated_state
 }
 
 set_autonomy = {
@@ -433,12 +433,18 @@ set_autonomy = {
 
 set_autonomy = {
 	target = HAQ
-	autonomy_state = autonomy_supervised_state
+	autonomy_state = autonomy_semi_integrated_state
 }
 set_autonomy = {
-	target = YED
-	autonomy_state = autonomy_satellite_state
+	target = TAB
+	autonomy_state = autonomy_occupation_zone
 }
+
+set_autonomy = {
+	target = MAS
+	autonomy_state = autonomy_occupation_zone
+}
+
 
 
 country_event = { id = SHW_event.1 days = 94 }
@@ -449,7 +455,8 @@ country_event = { id = SHW_event.34 days = 1274 }
 country_event = { id = SHW_event.34 days = 1574 }
 set_popularities = {
 	Dictatorship = 50
-	Neoreactionism = 22
+	Neoreactionism = 7.73
+	Nationalism = 14.27
 	Conservatism = 11.5
 	Liberalism = 12.5
 	Reformism = 1
@@ -504,3 +511,9 @@ give_guarantee = LMN
 give_guarantee = ASI
 give_guarantee = KON
 give_guarantee = GGZ
+give_guarantee = RMA
+give_military_access = RMA
+add_opinion_modifier = {
+	target = RMA
+	modifier = Romanov_same_dynasty
+}

@@ -6,10 +6,12 @@ state = {
 	state_category = pastoral
 	
 	history = {
-		owner = ENL
+		owner = SOM
+		add_core_of = SOM
 		victory_points = {
 		 	12941 1 
 		}
+		add_dynamic_modifier = {modifier=Afr_Native_Chiefdoms}
 		buildings = {
 			infrastructure = 2
 			12941 = {

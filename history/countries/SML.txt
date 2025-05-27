@@ -60,3 +60,11 @@ set_popularities = {
 	Dictatorship = 62
 	Paternalism = 38
 }
+add_opinion_modifier = {
+	target = ENL
+	modifier = Quasi_War
+}
+add_opinion_modifier = {
+	target = SOM
+	modifier = Quasi_War
+}

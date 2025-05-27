@@ -1,8 +1,8 @@
 state={
 	id=748
-	name="黔中"
+	name="黔中-北镇远"
 	provinces={
-		1010 1474 4325 9939
+		1010 1474 4325 9939 10616 7577 8095 4532
 	}
 	resources={
 		grain=12
@@ -17,7 +17,13 @@ state={
 		victory_points = {
 			4325 13
 		}
+		victory_points = {
+			10616 15 
+		}
 		
+		victory_points = {
+			7577 5
+		}
 	}
 	manpower=5123410
 	state_category=pastoral

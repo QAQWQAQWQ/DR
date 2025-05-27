@@ -2,24 +2,20 @@
 state={
 	id=780
 	name="STATE_780" # Guinea
-	manpower = 117025
+	manpower = 17025
 	
 	state_category = pastoral
 	history={
-		owner = NPL
-		victory_points = {
-			1909 1 
-		}
+		owner = GAM
+		
 		buildings = {
-			infrastructure = 2
-			1909 = {
-				naval_base = 1
-			}
+			infrastructure = 1
+			
 		}
 	}
 
 	provinces={
-		1909 12802 12858
+		2100
 	}
 
 	local_supplies=1.0 

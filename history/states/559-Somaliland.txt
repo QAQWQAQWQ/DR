@@ -10,7 +10,8 @@ state=
 	state_category = rural
 	
 	history={
-		owner = ENL
+		owner = SOM
+		add_core_of = SOM
 		victory_points = {
 			12991 3 
 		}
@@ -21,6 +22,7 @@ state=
 				naval_base = 2
 			}
 		}
+		add_dynamic_modifier = {modifier=Afr_Native_Chiefdoms}
 	}
 	provinces = {
 		1964 1966 2020 2063 4909 5065 8164 10818 10891 10928  12840  12991 	

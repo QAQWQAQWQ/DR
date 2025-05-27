@@ -1,0 +1,883 @@
+add_namespace = RUSCHI
+add_namespace = rocwin
+
+country_event = {
+	id = RUSCHI.1
+	hidden = yes
+	title = RUSCHI.1.t
+	desc = RUSCHI.1.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = RUSCHI.1.a
+		QIN = {transfer_state = 716}
+		QIN = {
+			annex_country = {
+				target = FTX
+			}
+			annex_country = {
+				target = JLP
+			}
+			annex_country = {
+				target = HLP
+			}
+			
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = SHW
+                }
+            
+		}
+		set_province_name = {
+			id = 11771
+			name = "奉天府"
+		}
+		SHW = {
+			set_autonomy = {
+				target = QIN
+				autonomy_state = autonomy_puppet
+			}
+		}
+	}
+}
+
+country_event = {
+	id = RUSCHI.2
+	hidden = yes
+	title = RUSCHI.2.t
+	desc = RUSCHI.2.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = RUSCHI.2.a
+		#满洲总督区
+		
+		add_victory_points = {
+			province = 10433
+			value = 2
+		}
+		
+		HLS = {transfer_state = 745
+		transfer_state = 912
+		transfer_state = 1200
+		transfer_state = 716
+		annex_country = {
+			target = QIN
+		}
+		set_variable = {
+			in_a_sphere = 1
+		}
+		set_variable = {
+			sphere_country = SHW
+		}}
+		SHW = {
+			set_autonomy = {
+				target = HLS
+				autonomy_state = autonomy_general_governorate
+			}
+		}
+		
+		
+		#海南和台湾
+		SHW = {transfer_state = 524
+		transfer_state = 591
+		transfer_state = 1308}
+		#大蒙古国
+		MEG = {transfer_state = 1269
+		transfer_state = 1010
+		transfer_state = 621
+		transfer_state = 746
+		transfer_state = 1244
+		transfer_state = 611
+		}
+		#西藏
+		XZZ = {set_cosmetic_tag = XZZ_rus
+		set_variable = {
+			in_a_sphere = 1
+		}
+		set_variable = {
+			sphere_country = SHW
+		}}
+		XZZ = {transfer_state = 755
+		transfer_state = 604
+		transfer_state = 754
+		transfer_state = 1272
+		transfer_state = 753
+		transfer_state = 752
+		transfer_state = 1273
+		transfer_state = 1270
+		}
+		SHW = {
+			set_autonomy = {
+				target = XZZ
+				autonomy_state = autonomy_supervised_state
+			}
+		}
+		#前“契丹”列国
+		add_victory_points = {
+			province = 7141
+			value = 2
+		}
+		FTX = {transfer_state = 610
+		transfer_state = 1011
+		transfer_state = 609
+		transfer_state = 608
+		transfer_state = 1228
+		transfer_state = 1229
+		transfer_state = 1009
+		transfer_state = 614
+		transfer_state = 1008
+		}
+		WSP = {transfer_state = 1000
+		transfer_state = 1001
+		transfer_state = 913
+		transfer_state = 597
+		}
+		HNZ = {transfer_state = 1003
+		transfer_state = 1004
+		transfer_state = 1002
+		transfer_state = 607
+		}
+		SXS = {transfer_state = 1007
+		transfer_state = 1073
+		transfer_state = 615
+		transfer_state = 1006
+		}
+		SXX = {transfer_state = 622
+		transfer_state = 1005
+		transfer_state = 744
+		}
+		GSL = {transfer_state = 1078
+		transfer_state = 283
+		transfer_state = 616
+		transfer_state = 756
+		transfer_state = 1271
+		transfer_state = 1077
+		}
+		QIX = {transfer_state = 999
+		transfer_state = 598
+		transfer_state = 909
+		transfer_state = 606
+		transfer_state = 998
+		}
+		SUC = {transfer_state = 996
+		transfer_state = 596
+		transfer_state = 994
+		transfer_state = 995
+		transfer_state = 749
+		transfer_state = 1312
+		transfer_state = 997
+		transfer_state = 613
+		}
+		
+		FPE = {transfer_state = 595
+		transfer_state = 992
+		transfer_state = 993
+		transfer_state = 991
+		transfer_state = 593
+		}
+		JLP = {transfer_state = 600
+		transfer_state = 990
+		transfer_state = 989
+		transfer_state = 1310
+		transfer_state = 1311
+		transfer_state = 1313
+		}
+		GUI = {transfer_state = 987
+		transfer_state = 1074
+		transfer_state = 620
+		transfer_state = 750
+		}
+		NXS = {transfer_state = 984
+		transfer_state = 1309
+		transfer_state = 602
+		transfer_state = 983
+		}
+		MAQ = {		
+		transfer_state = 592
+		transfer_state = 1306
+		transfer_state = 728
+		transfer_state = 594
+		transfer_state = 980
+		transfer_state = 599
+		}
+		GUG = {
+		transfer_state = 979
+		transfer_state = 981
+		transfer_state = 978
+		transfer_state = 977
+		transfer_state = 1303
+		transfer_state = 1304
+		transfer_state = 603
+		}
+		SCX = {transfer_state = 605
+		transfer_state = 986
+		transfer_state = 1207
+		transfer_state = 1322
+		transfer_state = 1314
+		}
+		SSD = {transfer_state = 985
+		}
+		CEX = {transfer_state = 747
+		transfer_state = 975
+		transfer_state = 974
+		transfer_state = 325
+		transfer_state = 751
+		transfer_state = 1305
+		transfer_state = 1315
+		transfer_state = 1316
+		}
+		LXS = {transfer_state = 748
+		transfer_state = 976
+		}
+		HAK = {transfer_state = 1076
+		transfer_state = 982
+		transfer_state = 1075
+		transfer_state = 988
+		transfer_state = 1307
+		}
+
+		FTX = {set_capital = { state = 1228 }}
+		JLP = {set_capital = { state = 600 }}
+		NXS = {set_capital = { state = 602 }}
+		MAQ = {set_capital = { state = 592 }}
+		SSD = {set_capital = { state = 985 }}
+		QIX = {set_capital = { state = 909 }}
+		SUC = {set_capital = { state = 997 }}
+
+		FTX = {set_cosmetic_tag = FTX_rus
+		set_variable = {
+			in_a_sphere = 1
+		}
+		set_variable = {
+			sphere_country = SHW
+		}}
+		WSP = {set_cosmetic_tag = WSP_rus
+		set_variable = {
+			in_a_sphere = 1
+		}
+		set_variable = {
+			sphere_country = SHW
+		}}
+		HNZ = {set_cosmetic_tag = HNZ_rus
+		set_variable = {
+			in_a_sphere = 1
+		}
+		set_variable = {
+			sphere_country = SHW
+		}}
+		SXS = {set_cosmetic_tag = SXS_rus
+		set_variable = {
+			in_a_sphere = 1
+		}
+		set_variable = {
+			sphere_country = SHW
+		}}
+		SXX = {set_cosmetic_tag = SXX_rus
+		set_variable = {
+			in_a_sphere = 1
+		}
+		set_variable = {
+			sphere_country = SHW
+		}}
+		GSL = {set_cosmetic_tag = GSL_rus
+		set_variable = {
+			in_a_sphere = 1
+		}
+		set_variable = {
+			sphere_country = SHW
+		}}
+		QIX = {set_cosmetic_tag = QIX_rus
+		set_variable = {
+			in_a_sphere = 1
+		}
+		set_variable = {
+			sphere_country = SHW
+		}}
+		SUC = {set_cosmetic_tag = SUC_rus
+		set_variable = {
+			in_a_sphere = 1
+		}
+		set_variable = {
+			sphere_country = SHW
+		}}
+		
+		FPE = {set_cosmetic_tag = FPE_rus
+		set_variable = {
+			in_a_sphere = 1
+		}
+		set_variable = {
+			sphere_country = SHW
+		}}
+		JLP = {set_cosmetic_tag = JLP_rus
+		set_variable = {
+			in_a_sphere = 1
+		}
+		set_variable = {
+			sphere_country = SHW
+		}}
+		GUI = {set_cosmetic_tag = GUI_rus
+		set_variable = {
+			in_a_sphere = 1
+		}
+		set_variable = {
+			sphere_country = SHW
+		}}
+		NXS = {set_cosmetic_tag = NXS_rus
+		set_variable = {
+			in_a_sphere = 1
+		}
+		set_variable = {
+			sphere_country = SHW
+		}}
+		MAQ = {set_cosmetic_tag = MAQ_rus
+		set_variable = {
+			in_a_sphere = 1
+		}
+		set_variable = {
+			sphere_country = SHW
+		}}
+		GUG = {set_cosmetic_tag = GUG_rus
+		set_variable = {
+			in_a_sphere = 1
+		}
+		set_variable = {
+			sphere_country = SHW
+		}}
+		SCX = {set_cosmetic_tag = SCX_rus
+		set_variable = {
+			in_a_sphere = 1
+		}
+		set_variable = {
+			sphere_country = SHW
+		}}
+		SSD = {set_cosmetic_tag = SSD_rus
+		set_variable = {
+			in_a_sphere = 1
+		}
+		set_variable = {
+			sphere_country = SHW
+		}}
+		CEX = {set_cosmetic_tag = CEX_rus
+		set_variable = {
+			in_a_sphere = 1
+		}
+		set_variable = {
+			sphere_country = SHW
+		}}
+		LXS = {set_cosmetic_tag = LXS_rus
+		set_variable = {
+			in_a_sphere = 1
+		}
+		set_variable = {
+			sphere_country = SHW
+		}}
+		HAK = {
+		set_variable = {
+			in_a_sphere = 1
+		}
+		set_variable = {
+			sphere_country = SHW
+		}}
+
+		
+		
+		SHW = {
+			set_autonomy = {
+				target = FTX
+				autonomy_state = autonomy_puppet
+			}
+		}
+		SHW = {
+			set_autonomy = {
+				target = WSP
+				autonomy_state = autonomy_puppet
+			}
+		}
+		SHW = {
+			set_autonomy = {
+				target = HNZ
+				autonomy_state = autonomy_puppet
+			}
+		}
+		SHW = {
+			set_autonomy = {
+				target = SXS
+				autonomy_state = autonomy_puppet
+			}
+		}
+		SHW = {
+			set_autonomy = {
+				target = SXX
+				autonomy_state = autonomy_puppet
+			}
+		}
+		SHW = {
+			set_autonomy = {
+				target = GSL
+				autonomy_state = autonomy_puppet
+			}
+		}
+		SHW = {
+			set_autonomy = {
+				target = QIX
+				autonomy_state = autonomy_puppet
+			}
+		}
+		SHW = {
+			set_autonomy = {
+				target = SUC
+				autonomy_state = autonomy_puppet
+			}
+		}
+		
+		SHW = {
+			set_autonomy = {
+				target = FPE
+				autonomy_state = autonomy_puppet
+			}
+		}
+		SHW = {
+			set_autonomy = {
+				target = JLP
+				autonomy_state = autonomy_puppet
+			}
+		}
+		SHW = {
+			set_autonomy = {
+				target = GUI
+				autonomy_state = autonomy_puppet
+			}
+		}
+		SHW = {
+			set_autonomy = {
+				target = NXS
+				autonomy_state = autonomy_puppet
+			}
+		}
+		SHW = {
+			set_autonomy = {
+				target = MAQ
+				autonomy_state = autonomy_puppet
+			}
+		}
+		SHW = {
+			set_autonomy = {
+				target = GUG
+				autonomy_state = autonomy_puppet
+			}
+		}
+		SHW = {
+			set_autonomy = {
+				target = SCX
+				autonomy_state = autonomy_puppet
+			}
+		}
+		SHW = {
+			set_autonomy = {
+				target = SSD
+				autonomy_state = autonomy_puppet
+			}
+		}
+		SHW = {
+			set_autonomy = {
+				target = CEX
+				autonomy_state = autonomy_puppet
+			}
+		}
+		SHW = {
+			set_autonomy = {
+				target = LXS
+				autonomy_state = autonomy_puppet
+			}
+		}
+		SHW = {
+			set_autonomy = {
+				target = HAK
+				autonomy_state = autonomy_puppet
+			}
+		}
+		#改名
+		set_province_name = {
+			id = 13379
+			name = "燕京西城"
+		}
+		set_province_name = {
+			id = 13381
+			name = "燕京东城"
+		}
+		set_province_name = {
+			id = 11913
+			name = "江宁"
+		}
+		set_province_name = {
+			id = 6999
+			name = "江州"
+		}
+		set_province_name = {
+			id = 4196
+			name = "治城"
+		}
+		set_province_name = {
+			id = 1096
+			name = "会稽"
+		}
+		set_province_name = {
+			id = 1047
+			name = "番禺"
+		}
+		set_province_name = {
+			id = 10034
+			name = "姑苏"
+		}
+		set_province_name = {
+			id = 7141
+			name = "梅州"
+		}
+		set_province_name = {
+			id = 10433
+			name = "哈尔滨"
+		}
+		608 = {
+			set_state_name = "通县"
+		}
+		1228 = {
+			set_state_name = "燕京西城"
+		}
+		1229 = {
+			set_state_name = "燕京东城"
+		}
+		909 = {
+			set_state_name = "金陵"
+		}
+		985 = {
+			set_state_name = "巴地"
+		}
+		613 = {
+			set_state_name = "沪海"
+		}
+		
+	}
+}
+country_event = {
+	id = rocwin.1
+	hidden = yes
+	title = rocwin.1.t
+	desc = rocwin.1.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = rocwin.1.a
+		ROC = {
+			annex_country = {
+				target = CHI
+			}
+			annex_country = {
+				target = GGZ
+			}
+			annex_country = {
+				target = ESG
+			}
+			annex_country = {
+				target = PSA
+			}
+			annex_country = {
+				target = QIX
+			}
+			annex_country = {
+				target = SUC
+			}
+			annex_country = {
+				target = FPE
+			}
+			annex_country = {
+				target = RTW
+			}
+			annex_country = {
+				target = GUG
+			}
+			annex_country = {
+				target = LXS
+			}
+			annex_country = {
+				target = CEX
+			}
+			annex_country = {
+				target = SSD
+			}
+			annex_country = {
+				target = XZZ
+			}
+			annex_country = {
+				target = SCX
+			}
+			annex_country = {
+				target = MAQ
+			}
+			annex_country = {
+				target = XJC
+			}
+			annex_country = {
+				target = GSL
+			}
+			annex_country = {
+				target = NXS
+			}
+			annex_country = {
+				target = MEG
+			}
+			annex_country = {
+				target = HAQ
+			}
+			annex_country = {
+				target = SXX
+			}
+			annex_country = {
+				target = ZHX
+			}
+			annex_country = {
+				target = SXS
+			}
+			annex_country = {
+				target = DUQ
+			}
+			annex_country = {
+				target = HNZ
+			}
+			annex_country = {
+				target = WSP
+			}
+			annex_country = {
+				target = GUI
+			}
+			annex_country = {
+				target = FTX
+			}
+			annex_country = {
+				target = JLP
+			}
+			annex_country = {
+				target = HLP
+			}
+		}
+		ROC = {transfer_state = 1247
+	transfer_state = 1048
+transfer_state = 1249
+transfer_state = 654
+transfer_state = 569
+transfer_state = 561
+transfer_state = 560
+transfer_state = 657
+transfer_state = 409
+transfer_state = 408
+transfer_state = 655
+transfer_state = 537
+
+transfer_state = 743
+transfer_state = 1260
+transfer_state = 745
+
+transfer_state = 973
+transfer_state = 1325}
+		YEL = {
+			annex_country = {
+				target = MAS
+			}
+		}
+		SHW = {transfer_state = 1176}
+		AKE = {transfer_state = 1065
+		
+		}
+		AKE = {annex_country = {
+				target = GGA
+			}}
+			AKE = {annex_country = {
+				target = KEI
+			}}
+AKE = {transfer_state = 1250
+		transfer_state = 404
+		transfer_state = 585
+		transfer_state = 405
+		}
+		MAS = {transfer_state = 584
+		transfer_state = 831
+		transfer_state = 1256
+		}
+		EOB = {annex_country = {
+				target = KKE
+			}}
+			EOB = {transfer_state = 587
+		transfer_state = 823
+		transfer_state = 1083
+		}
+		KKE = {transfer_state = 1261
+		transfer_state = 1264
+		}
+		TGA = {transfer_state = 1259
+		transfer_state = 742
+		}
+		GGA = {transfer_state = 1258
+		transfer_state = 832
+		transfer_state = 732
+		}
+
+		MAS = {set_capital = { state = 584 }}
+		KKE = {set_capital = { state = 1261 }}
+		TGA = {set_capital = { state = 742 }}
+		GGA = {set_capital = { state = 832 }}
+		ROC = {set_capital = { state = 1228 }}
+ROC = {set_cosmetic_tag = ROC_2}
+AKE = {set_cosmetic_tag = AKE_chi}
+MAS = {set_cosmetic_tag = MAS_chi}
+KKE = {set_cosmetic_tag = KKE_chi}
+EOB = {set_cosmetic_tag = EOB_chi}
+TGA = {set_cosmetic_tag = TGA_chi}
+GGA = {set_cosmetic_tag = GGA_chi}
+
+				every_state = {
+					if={
+						limit={
+							is_owned_by = ROC
+						}
+						add_core_of = ROC
+					}
+				}
+				every_state = {
+					if={
+						limit={
+							is_owned_by = AKE
+						}
+						add_core_of = AKE
+					}
+				}
+				every_state = {
+					if={
+						limit={
+							is_owned_by = MAS
+						}
+						add_core_of = MAS
+					}
+				}
+				every_state = {
+					if={
+						limit={
+							is_owned_by = KKE
+						}
+						add_core_of = KKE
+					}
+				}
+				every_state = {
+					if={
+						limit={
+							is_owned_by = EOB
+						}
+						add_core_of = EOB
+					}
+				}
+				every_state = {
+					if={
+						limit={
+							is_owned_by = TGA
+						}
+						add_core_of = TGA
+					}
+				}
+				every_state = {
+					if={
+						limit={
+							is_owned_by = GGA
+						}
+						add_core_of = GGA
+					}
+				}
+			
+		ROC = {
+			set_autonomy = {
+				target = AKE
+				autonomy_state = autonomy_satellite_state
+			}
+			set_autonomy = {
+				target = MAS
+				autonomy_state = autonomy_satellite_state
+			}
+			set_autonomy = {
+				target = KKE
+				autonomy_state = autonomy_satellite_state
+			}
+			set_autonomy = {
+				target = EOB
+				autonomy_state = autonomy_satellite_state
+			}
+			set_autonomy = {
+				target = TGA
+				autonomy_state = autonomy_satellite_state
+			}
+			set_autonomy = {
+				target = GGA
+				autonomy_state = autonomy_satellite_state
+			}
+		}
+		        AKE = {set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = ROC
+                }}
+				
+				MAS = {set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = ROC
+                }}
+				KKE = {set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = ROC
+                }}
+				EOB = {set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = ROC
+                }}
+				TGA = {
+					set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = ROC
+                }
+				}
+				GGA = {set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = ROC
+                }}
+		set_province_name = {
+			id = 10584
+			name = "阿拉什卡拉"
+		}
+		set_province_name = {
+			id = 13379
+			name = "北京西城"
+		}
+		set_province_name = {
+			id = 13381
+			name = "北京东城"
+		}
+	}
+}

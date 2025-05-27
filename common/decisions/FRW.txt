@@ -819,7 +819,7 @@ FRW_European_Federation = {
 							is_owned_by = FRW
 						}
 					}
-					YED={
+					RMA={
 						all_owned_state = { 
 							is_owned_by = FRW
 						}
@@ -844,7 +844,7 @@ FRW_European_Federation = {
 					    is_core_of  = ALB
 						is_core_of  = KLD
 						is_core_of  = BOJ
-						is_core_of  = YED
+						is_core_of  = RMA
 					  }
 					}
 					add_core_of = SIW

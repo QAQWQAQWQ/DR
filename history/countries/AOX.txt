@@ -104,7 +104,6 @@ add_to_faction = KGL
 add_to_faction = KLD
 add_to_faction = DMT
 add_to_faction = KOH
-add_to_faction = TRA
 
 set_autonomy = { target = VCT autonomy_state = autonomy_Crown_Territory }
 set_autonomy = { target = KGL autonomy_state = autonomy_Crown_Territory }
@@ -115,7 +114,6 @@ set_autonomy = { target = KOH autonomy_state = autonomy_Crown_Territory }
 set_autonomy = { target = ALB autonomy_state = autonomy_supervised_state }
 set_autonomy = { target = HES autonomy_state = autonomy_supervised_state }
 set_autonomy = { target = SIW autonomy_state = autonomy_supervised_state }
-set_autonomy = { target = TRA autonomy_state = autonomy_Crown_Territory }
 
 
 add_manpower = 5250000
@@ -157,5 +155,14 @@ give_military_access = KLD
 give_military_access = HES
 give_military_access = SIW
 give_military_access = ALB
-give_military_access = TRA
 give_guarantee = GGZ
+give_guarantee = ITE
+give_guarantee = PMA
+give_guarantee = TCY
+give_guarantee = LMJ
+give_guarantee = TSI
+
+add_opinion_modifier = {
+	target = TCY
+	modifier = Habsburg_same_dynasty
+}

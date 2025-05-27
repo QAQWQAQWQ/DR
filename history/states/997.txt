@@ -17,20 +17,9 @@ state = {
 			industrial_complex = 2
         }
 		
-		victory_points = {
-			4091 15 
-		}
-
-		
-		
-		
-		
-		
-		
-		
 		
 		victory_points = {
-			10034 18 
+			10034 20
 		}
 		victory_points = {
 			10076 15 
@@ -41,16 +30,15 @@ state = {
 		victory_points = {
 			7120 12 
 		}
-		victory_points = {
-			11982 15 
-		}
+		
 		victory_points = {
 			11928 10 
 		}
 	}
 
 	provinces = {
-		1089 4091 7120 10034 10076 12052 11928 996 11982 13142
+		  7120 10034 10076 12052 11928 996  13142 13487
+		  
 	}
 
 	local_supplies = 6.0 

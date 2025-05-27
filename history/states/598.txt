@@ -19,6 +19,9 @@ state={
 			4001 12 
 		}
 		victory_points = {
+			4091 15
+		}
+		victory_points = {
 			12067 5 
 		}
 		
@@ -26,7 +29,9 @@ state={
 			4123 8 
 		}
         
-        
+        victory_points = {
+			11982 15 
+		}
         victory_points = {
 			9953 2
 		}
@@ -35,7 +40,7 @@ state={
 		
      }
 	provinces={
-		4001 4031 4082 4123 7142 7181 9953 10095 12067 4005
+		4001 4031 4082 4123 7142 7181 9953 10095 12067 4005 11982 1089 4091
 	}
 	manpower=15169300
 	buildings_max_level_factor=1.000

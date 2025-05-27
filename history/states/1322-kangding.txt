@@ -1,0 +1,28 @@
+state={
+	id=1322
+	name="STATE_1322"
+	provinces={
+		13485
+	}
+	resources={
+		grain=1
+	}         
+	manpower=55000
+	buildings_max_level_factor=1.000
+	state_category = city
+	history={
+		owner = SSD
+		add_core_of = SSD
+		
+		victory_points = {
+			13485 15 
+		}
+		
+ 		
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	local_supplies=1.0 
+}

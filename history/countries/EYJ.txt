@@ -67,21 +67,21 @@ set_autonomy = {
 	autonomy_state = autonomy_puppet
 }
 
-set_autonomy = {
-	target = NZS
-	autonomy_state = autonomy_puppet
-}
+
 
 set_autonomy = {
 	target = NTS
-	autonomy_state = autonomy_puppet
+	autonomy_state = autonomy_integrated_puppet
 }
 
 set_autonomy = {
 	target = SNX
 	autonomy_state = autonomy_puppet
 }
-
+set_autonomy = {
+	target = SZC
+	autonomy_state = autonomy_integrated_puppet
+}
 set_autonomy = {
 	target = ROY
 	autonomy_state = autonomy_puppet
@@ -91,5 +91,12 @@ set_autonomy = {
 	target = NTB
 	autonomy_state = autonomy_puppet
 }
-give_guarantee = SZC
+set_autonomy = {
+	target = DAF
+	autonomy_state = autonomy_puppet
+}
+set_autonomy = {
+	target = TCH
+	autonomy_state = autonomy_puppet
+}
 give_guarantee = MUH

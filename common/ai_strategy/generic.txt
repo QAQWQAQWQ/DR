@@ -7,7 +7,7 @@ no_invasions = {
 			tag = FRW
 			tag = SHW
 			tag = NPL
-			tag = YED
+			tag = RMA
 			tag = EYJ
 		}
 	}
@@ -78,7 +78,7 @@ GER_dont_join_wars = {
 		original_tag = SHW
 		original_tag = NPL
 		original_tag = FRW
-		original_tag = YED
+		original_tag = RMA
 		original_tag = ITE
 		}
 	}
@@ -371,7 +371,7 @@ prussian_helpers = {
 	allowed = {
 		OR={
 		original_tag = SHW
-		original_tag = YED
+		original_tag = RMA
 		original_tag = HEL
 		}
 	}
@@ -454,7 +454,7 @@ AFG_helpers = {
 	allowed = {
 		OR={
 		original_tag = SHW
-		original_tag = YED
+		original_tag = RMA
 		}
 	}
 	enable = {

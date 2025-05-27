@@ -30,4 +30,13 @@ opinion_modifiers = {
 	Royal_friendly = {value = 25}
 	satisfied= {value = 10}
 	Left_wing_tendencies= {value = 5}
+	Romanov_same_dynasty= {value = 70}
+	Habsburg_same_dynasty= {value = 70}
+	Rassid_same_dynasty= {value = 30}
+	Al_Bu_Said_same_dynasty= {value = 40}
+	Americo_elites= {value = 20}
+	Ma_Clique= {value = 70}
+	Quasi_War= { value = -100 }
+	Counter-revolution= { value = -90 }
+	revolutionary_friend= { value = 70 }
 }

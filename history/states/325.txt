@@ -12,9 +12,11 @@ state={
 		add_core_of = CEX
 		
 		victory_points = {
-			7446 13
+			7446 17
 		}
-		
+		victory_points = {
+			8023 10 
+		}
 		victory_points = {
 			5072 10 
 		}
@@ -38,9 +40,9 @@ state={
 	}
 
 	provinces={
-		1319 7446 7606 4192 5072 12841
+		1319 7446 7606 4192 5072 12841 8023
 	}
-	manpower=10994500
+	manpower=1099450
 	buildings_max_level_factor=1.000
 	state_category=large_town
 

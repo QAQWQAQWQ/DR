@@ -10,16 +10,19 @@ state={
 	state_category = city
 
 	history={
-		owner = BNA
+		owner = NAL
 		buildings = {
 			infrastructure = 4 #was: 8
 			arms_factory = 5
 			industrial_complex = 6
 			air_base = 10
 		}
-		add_core_of = BNA
+		add_core_of = NAL
 		victory_points = {
-			11654 15
+			11654 30
+		}
+		victory_points = {
+			9693 21
 		}
 
 	}

@@ -1,20 +1,23 @@
 state={
 	id=899
 	name="STATE_899"
-	manpower = 1163674
+	manpower = 63674
 	state_category = pastoral
 
 	history={
-		owner = NPL
+		owner = MUN
 		buildings = {
 			infrastructure = 2
 
+		}
+		victory_points = {
+			4927 4 
 		}
 
 	}
 
 	provinces={
-		2012 10812 10829 10915 12751 12838
+		10812 12751 12838 4927 5045 8116
 	}
 	
 	buildings_max_level_factor=1.000

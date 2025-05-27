@@ -49,12 +49,13 @@ recruit_character = HAQ_Kombu_Dorzhu
 	}
 
 set_politics = {
-	ruling_party = Dictatorship
+	ruling_party = Paternalism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
 }
 #news_event = { id = HAQ.1 days = 425 }
 set_popularities = {
-	Dictatorship = 100
+	Dictatorship = 66
+	Paternalism = 34
 }

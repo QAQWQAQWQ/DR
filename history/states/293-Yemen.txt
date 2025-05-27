@@ -29,10 +29,14 @@ state={
 		victory_points = {
 			10840 10
 		}
+		victory_points = {
+			1973 5
+		}
+		add_dynamic_modifier = {modifier=Asian_Native_States}
 	}
 
 	provinces={
-		10752 10840
+		10752 10840 1973
 	}
 
 	local_supplies=0.0 

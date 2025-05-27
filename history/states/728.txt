@@ -3,7 +3,7 @@ state={
 	name="高雷"
 	manpower = 200000
 	
-	state_category = pastoral
+	state_category = rural
 	
 	history={
 		owner = ROC
@@ -11,26 +11,22 @@ state={
 		buildings = {
 			infrastructure = 2
 			
-			11981 = {
-				naval_base = 1
-				bunker = 2
-				coastal_bunker = 2
-			}
+			
 		}
 
-		victory_points = {
-			4160 8 
-		}
+		
 		victory_points = {
 			7039 8 
 		}
+		
+		victory_points = { 1131 5 }
 		victory_points = {
-			11981 10
+			9963 5 
 		}
 	}
 	
 	provinces={
-		4160 7039 7135 11981 10105
+		 7039   10105 1131 12077 9963
 	}
 
 	local_supplies=0.0 

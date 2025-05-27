@@ -24,7 +24,7 @@ set_politics = {
 	#最后一次选举（"年.月.日" （p社sb代码，无法早于该日期））
 	election_frequency = 48
 	#选举间隔（48为默认）
-	elections_allowed = yes
+	elections_allowed = no
 	#是否允许公众选举（no或者yes）
 }
 set_popularities = {
@@ -35,7 +35,7 @@ set_popularities = {
 add_ideas = {
 }
 #添加民族精神（在common\ideas\你的国家tag_country.txt）
-give_military_access = BNA
+give_military_access = NAL
 give_military_access = UBS
 give_military_access = ENL
 

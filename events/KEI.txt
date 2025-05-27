@@ -12,11 +12,15 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = KEI.1.a
-		set_province_name = { id = 12601 name = VICTORY_POINTS_12601_etr }
+		set_province_name = {
+			id = 13426
+			name = "库尔贾"
+		}
 		KEI = {set_capital = { state = 1044 }
 		TGA = {transfer_state = 589
 		transfer_state = 586
 		transfer_state = 732}
+		MEG = {transfer_state = 1224}
 		set_cosmetic_tag = KEI_etr
 		set_party_name = {
 			ideology = Dictatorship

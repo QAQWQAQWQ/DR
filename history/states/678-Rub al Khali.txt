@@ -3,8 +3,8 @@ state={
 	name="STATE_678"
 
 	history={
-		owner = NZS
-		add_core_of = NZS
+		owner = SAR
+		add_core_of = SAR
 		buildings = {
 			infrastructure = 0
 
@@ -12,9 +12,10 @@ state={
 	}
 
 	provinces={
-		2018 2059 4932 5049 5081 8118 12740 12768 12894
+		2018 2059 4932 5049 8118 12740 12768 12894 8108  
+		 
 	}
-	manpower=42
+	manpower=42000
 	buildings_max_level_factor=1.000
 	state_category=wasteland
 	local_supplies=0.000

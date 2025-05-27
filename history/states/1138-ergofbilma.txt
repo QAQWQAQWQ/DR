@@ -7,11 +7,14 @@ state={
 
 
 	history={
-		owner = NPL
+		owner = TCH
+		add_core_of = TCH
 		add_core_of = SNX
+		
 		buildings = {
 			infrastructure = 0
 		}
+
 	}
 
 	provinces={

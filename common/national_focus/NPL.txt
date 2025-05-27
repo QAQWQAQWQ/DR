@@ -149,10 +149,7 @@ add_equipment_to_stockpile = {
 		type = annex_everything
 		target = TRL
 	}
-	create_wargoal = {
-		type = annex_everything
-		target = TRT
-	}
+	
 	}
 	}
 	focus = {
@@ -169,9 +166,7 @@ add_equipment_to_stockpile = {
 			TRL={
 				exists = no
 			}
-			TRT={
-				exists = no
-			}
+			
 		} 
 		x = 23
 		y = 3
@@ -189,12 +184,7 @@ completion_reward = {
 		}
 		add_core_of = NPL
 	}
-	every_state = {
-		limit = {
-			is_core_of = TRT
-		}
-		add_core_of = NPL
-	}
+	
 	
 }
 	}
@@ -518,9 +508,7 @@ completion_reward = {
 			TRL={
 				exists = no
 			}
-			TRT={
-				exists = no
-			}
+			
 		}
 		x = 0
 		y = 3
@@ -531,12 +519,6 @@ completion_reward = {
 		460={
 			add_extra_state_shared_building_slots = 2
 		}
-		1119={
-			add_extra_state_shared_building_slots = 2
-		}
-		513={
-			add_extra_state_shared_building_slots = 2
-		}
 		1040={
 			add_extra_state_shared_building_slots = 2
 		}
@@ -544,25 +526,9 @@ completion_reward = {
 			level = 2
 			build_only_on_allied = no
 			fallback = yes
-			path = { 7132 4150 7008 12018 12842 10731 8088 1958 7979 8035 7992 5034 4948 }
+			path = { 4116 7132 11923 1013 9964 1145 11939 7166 4046 10078 12051 7081 1160 4163 9994 11969}
 			start_state = 459
-			target_state = 272
-		}
-		build_railway = {
-			level = 2
-			build_only_on_allied = yes
-			fallback = yes
-			path = { 4948 7972 12834 12858 1909 }
-			start_state = 272
-			target_state = 780
-		}
-		build_railway = {
-			level = 2
-			build_only_on_allied = no
-			fallback = yes
-			path = { 1909 4957 5039 5070 10762 10803 }
-			start_state = 780
-			target_state = 779
+			target_state = 458
 		}
 	}
 	}
@@ -607,9 +573,7 @@ completion_reward = {
 			TRL={
 				exists = no
 			}
-			TRT={
-				exists = no
-			}
+			
 		}
 		x = 8
 		y = 4 
@@ -621,12 +585,7 @@ completion_reward = {
 			}
 			add_compliance = 20
 		}
-		every_state = {
-			limit={
-				is_core_of = TRT
-			}
-			add_compliance = 20
-		}
+		
 		every_state = {
 			limit={
 				is_core_of = TRL
@@ -649,9 +608,7 @@ completion_reward = {
 			TRL={
 				exists = no
 			}
-			TRT={
-				exists = no
-			}
+			
 		}
 		x = 4
 		y = 4
@@ -667,12 +624,7 @@ completion_reward = {
 			}
 			add_resistance = 20
 		}
-		every_state = {
-			limit={
-				is_core_of = TRT
-			}
-			add_resistance = 20
-		}
+		
 		every_state = {
 			limit={
 				is_core_of = TRL

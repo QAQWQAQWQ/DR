@@ -8,8 +8,10 @@ state={
 
 
 	history={
-		owner = NPL
+		owner = SNX
 		add_core_of = SNX
+		add_claim_by = NPL
+		
 		buildings = {
 			infrastructure = 0
 		}

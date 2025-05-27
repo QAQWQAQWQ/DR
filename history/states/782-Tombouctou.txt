@@ -8,11 +8,13 @@ state={
 
 	history={
 		owner = NPL
+		add_core_of = KOJ
+		add_core_of = SSA
 		buildings = {
 			infrastructure = 1
 		}
-		
-
+	
+		add_dynamic_modifier = {modifier=Afr_Native_Chiefdoms}
 	}
 
 	provinces={

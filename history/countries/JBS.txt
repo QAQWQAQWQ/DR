@@ -59,3 +59,7 @@ set_popularities = {
 	Dictatorship = 50
 	Paternalism = 50
 }
+add_opinion_modifier = {
+	target = ROY
+	modifier = Rassid_same_dynasty
+}

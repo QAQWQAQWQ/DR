@@ -7,10 +7,12 @@ state={
 	state_category = rural
 	
 	history={
-		owner = ENL
+		owner = BEC
+		add_core_of = BEC
 		buildings = {
 			infrastructure = 2
 		}
+		add_dynamic_modifier = {modifier=Afr_Native_Chiefdoms}
 	}
 
 	provinces={

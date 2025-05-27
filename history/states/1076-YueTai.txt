@@ -11,27 +11,26 @@ state= {
 		add_core_of = ROC
 		buildings = {
 			infrastructure = 2
+			4050 = {
+				naval_base = 2
+				coastal_bunker = 3
+				bunker = 1
+			}
+		}
+		
+		
+		
+		victory_points = {
+			4050 22
 		}
 		victory_points = {
-			1078 3
+			7141 21
 		}
-		victory_points = {
-			1202 3
-		}
-
-		victory_points = {
-			4050 8 
-		}
-		victory_points = {
-			7141 8 
-		}
-		victory_points = {
-			1202 8 
-		}
+		
 		
 	}
 	provinces={
-		1078 1162 1202 4050 4165 4207 7141
+		1078 1162 1202 4050 4165 4207 7141 7182 
 	}
 
 	local_supplies=1.0 

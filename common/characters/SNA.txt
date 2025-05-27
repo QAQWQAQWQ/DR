@@ -1,0 +1,24 @@
+characters={
+
+	SNA_Angel_Barrera_y_Luyando={
+		name=SNA_Angel_Barrera_y_Luyando
+		portraits={
+			army={
+				large="gfx/leaders/SBY/Portrait_Angel_Barrera_y_Luyando.tga"
+			}
+		}
+		field_marshal = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+		country_leader={
+			ideology=autocratic-colonial-government
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

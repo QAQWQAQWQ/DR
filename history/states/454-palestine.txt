@@ -1,0 +1,42 @@
+
+state={
+	id=454
+	name="STATE_454" #Palestine
+	manpower = 399142
+	
+	state_category = city
+	resources={
+		grain=6
+	}
+	history={
+		owner = EYJ
+		add_core_of = EYJ
+		
+		
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 1
+			air_base = 2
+			
+			
+		}
+		victory_points = {
+			1065 5
+		}
+		victory_points = {
+			1086 20
+		}
+		victory_points = {
+			13498 8
+		}
+		
+		
+	}
+
+	provinces={
+		1065 1086 1201 4088 7107 13498
+		    
+	}
+
+	local_supplies=0.0 
+}

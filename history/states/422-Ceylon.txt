@@ -14,16 +14,18 @@ state=
 	}
 	history={
 		owner =ENL
-
 		victory_points = {
-			10201 3 
+			7260 10
+		}
+		victory_points = {
+			10229 3 
 		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 			air_base = 3
-			10201 = {
-				naval_base = 5
+			10229 = {
+				naval_base = 1
 			}
 			7260 = {
 				naval_base = 3

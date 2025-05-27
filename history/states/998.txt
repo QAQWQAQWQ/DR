@@ -1,6 +1,6 @@
 state={
 	id=998
-	name="安庆"
+	name="北安庆"
 	resources={
 		steel=11.000
 		grain=10
@@ -16,7 +16,7 @@ state={
         
 
 		victory_points = {
-			7222 15 
+			7222 13
 		}
 		
 		victory_points = {
@@ -25,13 +25,11 @@ state={
 		victory_points = {
 			10008 4
 		}
-		victory_points = {
-			1083 17
-		}
+		
 	}
 
 	provinces={
-		1083 1146 4148 4203 7035 7222 10008 10017 11994 12061 
+		 1146 4148 4203  7222 10008 10017 11994 12061 
 	}
 	manpower=10265400
 	buildings_max_level_factor=1.000

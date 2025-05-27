@@ -5,16 +5,16 @@ state={
 		grain=1
 	}
 	provinces={
-		13431 5057
+		4888
 	}
-	manpower=3000
+	manpower=30000
 	buildings_max_level_factor=1.000
 	state_category = rural
 	history={
-		owner = GSL
-		add_core_of = GSL
+		owner = MAQ
+		add_core_of = MAQ
 		
-		
+		add_dynamic_modifier = {modifier=Asian_Native_States}
 		buildings = {
 			infrastructure = 1
 

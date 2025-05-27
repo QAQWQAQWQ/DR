@@ -8,7 +8,7 @@
   SHW_number:0 "俄罗斯帝国                      [?Flood_equipment]"
   UBS_number:0 "美利坚合众国                 [?Flood_equipment]"
   AOX_number:0 "奥地利帝国                      [?Flood_equipment]"
-  BNA_number:0 "新阿尔比恩                           [?Flood_equipment]"
+  NAL_number:0 "新阿比恩                           [?Flood_equipment]"
   HEL_number:0 "尼德兰联合王国            [?Flood_equipment]"
  ESI_Spread_Eastern_Orthodox_Christianity:0 "传播科普特教"
  Spread_Tigre:0 "在提格雷传播"
@@ -44,7 +44,7 @@
  Number_unions8:0 "已经在8座城市建立"
  Number_unions10:0 "已经在10座城市建立"
  FRW_election_movement:0 "法国大选"
- FRW_election_movement_desc:0"\n\n\n\n\n\n\n\n五年一届的法国大选正式开始，我们可以通过提升相关意识形态支持度来加强党派在各地区投射的力量，以此征求更多的选票来支持执政党的选举。\n\n目前党派席位：\n\n§Y社会革命联合党§!:[?parliament_seat_array^0]个席位\n\n§Y社会党（布鲁斯派）§!:[?parliament_seat_array^1]个席位\n\n§Y社会党（饶勒斯派）§![?parliament_seat_array^2]个席位\n\n§Y共和联盟§!:[?parliament_seat_array^3]个席位\n\n§Y社会党（阿勒曼派）§!:[?parliament_seat_array^4]个席位\n\n§Y无党派（独立人士）§!:[?parliament_seat_array^5]个席位\n\n当前军队内部派系：\n革命派：§Y[?Revolutionary_general_num]§!人\n自由派：§Y[?Liberal_general_num]§!人\n中间派：§Y[?Centrist_general_num]§!人\n\n预计大选结果：\n§Y社会革命联合党§!   [PartyNO_1]\n§Y社会党（布鲁斯派）§!   [PartyNO_2]\n§Y社会党（饶勒斯派）§!：   [PartyNO_3]\n§Y共和联盟§!：   [PartyNO_4]\n§Y社会党（阿勒曼派）§!   [PartyNO_5]\n§Y无党派(独立人士)§! [PartyNO_6] "
+ FRW_election_movement_desc:0"\n\n\n\n\n\n\n\n五年一届的法国大选正式开始，我们可以通过提升相关意识形态支持度来加强党派在各地区投射的力量，以此征求更多的选票来支持执政党的选举。\n\n目前党派席位：\n\n§Y社会党(盖得派)§!:[?parliament_seat_array^0]个席位\n\n§Y社会党（布鲁斯派）§!:[?parliament_seat_array^1]个席位\n\n§Y社会党（饶勒斯派）§![?parliament_seat_array^2]个席位\n\n§Y共和联盟§!:[?parliament_seat_array^3]个席位\n\n§Y社会党（阿勒曼派）§!:[?parliament_seat_array^4]个席位\n\n§Y无党派（独立人士）§!:[?parliament_seat_array^5]个席位\n\n当前军队内部派系：\n革命派：§Y[?Revolutionary_general_num]§!人\n自由派：§Y[?Liberal_general_num]§!人\n中间派：§Y[?Centrist_general_num]§!人\n\n预计大选结果：\n§Y社会党(盖得派)§!   [PartyNO_1]\n§Y社会党（布鲁斯派）§!   [PartyNO_2]\n§Y社会党（饶勒斯派）§!：   [PartyNO_3]\n§Y共和联盟§!：   [PartyNO_4]\n§Y社会党（阿勒曼派）§!   [PartyNO_5]\n§Y无党派(独立人士)§! [PartyNO_6] "
  FRW_election_movement0:0 "拉拢军队"
 
  FRW_election_movement1:0 "选举倒计时"
@@ -710,5 +710,5 @@ China_BeiYang_right_side_range_High:0 "直系控制中央"
 
 
  Hamilton_scandal_category:0 "汉密尔顿总理"
- Hamilton_scandal_category_desc:0 "尽管作为新阿尔比恩总理，汉密尔顿深受伦敦方面器重，但其个人的品行德不配位，和情人众多丑闻一事使其成为反对党的众矢之的。"
+ Hamilton_scandal_category_desc:0 "尽管作为新阿比恩总理，汉密尔顿深受伦敦方面器重，但其个人的品行德不配位，和情人众多丑闻一事使其成为反对党的众矢之的。"
  Hamilton_scandal:0 "丑闻危机"

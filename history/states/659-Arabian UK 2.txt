@@ -2,7 +2,7 @@
 state={
 	id=659
 	name="STATE_659"
-	manpower=871202
+	manpower=171202
 	resources={
 		grain=1
 	}
@@ -21,11 +21,12 @@ state={
 			}
 			
 		}
-
+		add_dynamic_modifier = {modifier=Asian_Native_States}
 	}
 
 	provinces={
-		2029 4976 5074 12821 13079 
+		  5074 12821 
+		 
 	}
 	
 	buildings_max_level_factor=1.000

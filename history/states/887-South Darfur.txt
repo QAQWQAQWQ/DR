@@ -2,20 +2,24 @@ state={
 	id=887
 	name="STATE_887"
 
-	manpower = 302020
+	manpower = 32020
 	state_category = pastoral
 	
 	history = {
-		owner = EYJ
+		owner = DAF
+		add_core_of = DAF
 
 		buildings = {
 			infrastructure = 1
+		}
+		victory_points = {
+			5060 5
 		}
 
 	}
 
 	provinces={
-		1960 5060 13264
+		1960 5060
 	}
 	
 	buildings_max_level_factor = 1.000

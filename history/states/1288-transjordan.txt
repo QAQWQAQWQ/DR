@@ -1,0 +1,39 @@
+
+state={
+	id=1288
+	name="STATE_1288" #Transjordan
+	manpower = 399142
+	
+	state_category = town
+	resources={
+		grain=6
+	}
+	history={
+		owner = EYJ
+		add_core_of = EYJ
+		
+		
+		buildings = {
+			infrastructure = 1 #was: 5
+			industrial_complex = 1
+			
+			4115 = {
+				naval_base = 1
+
+			}
+		}
+		
+		victory_points = {
+			7151 10 
+		}
+		victory_points = {
+			4115 8
+		}
+	}
+
+	provinces={
+		7170 7151 10089 4017 4115
+	}
+
+	local_supplies=0.0 
+}

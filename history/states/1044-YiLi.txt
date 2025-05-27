@@ -2,13 +2,12 @@ state={
 	id=1044
 	name="STATE_1044"
 	provinces={
-		 12601 7850 7866 12526 13426
+		 12601 7850 7866 12526 13426 13467
 	}
 	
 	history={
 		owner = XJC
 		add_core_of = XJC
-		add_core_of = AKE
 		victory_points = {
 			13426 15
 		}
@@ -19,7 +18,7 @@ state={
 		}
 
 	}
-	manpower=1304000
+	manpower=174000
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

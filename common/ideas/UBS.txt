@@ -3,9 +3,7 @@ ideas = {
 		UBS_Slavery = {
 			picture = Slavery
 			modifier = {
-                conscription = 0.05
-                consumer_goods_factor = 0.02
-                production_factory_efficiency_gain_factor = 0.2
+                
 			}
         }
 		UBS_The_declining_north = {
@@ -19,8 +17,14 @@ ideas = {
 		UBS_Jim_Crow_laws = {
 			picture = Jim_Crow_laws
 			modifier = {
-				conscription = 0.05
+				conscription = -0.05
 			}
         }
+		UBS_prohibition = {
+			modifier = {
+				consumer_goods_factor = -0.22				
+				political_power_cost = 0.5				
+			}
+		}
 		}
 }

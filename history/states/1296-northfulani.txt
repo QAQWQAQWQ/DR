@@ -1,0 +1,23 @@
+
+state={
+	id=1296
+	name="STATE_1296"
+	manpower = 5000
+	
+	state_category = pastoral
+
+	history={
+		owner = SNA
+		add_core_of = SSA
+		buildings = {
+			infrastructure = 1
+		}
+		add_dynamic_modifier = {modifier=Afr_Native_Chiefdoms}
+	}
+
+	provinces={
+		8058 
+	}
+
+	local_supplies=0.0 
+}

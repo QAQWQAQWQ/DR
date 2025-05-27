@@ -11,7 +11,15 @@ state={
 	history={
 		owner = WWS
 		add_core_of = WWS
-		
+		victory_points = {
+			3380 15
+		}
+		victory_points = {
+			13499 13
+		}
+		victory_points = {
+			13500 11
+		}
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
@@ -20,7 +28,7 @@ state={
 	}
 
 	provinces={
-		3380
+		3380 13499 13500
 	}
 
 	local_supplies=0.0 

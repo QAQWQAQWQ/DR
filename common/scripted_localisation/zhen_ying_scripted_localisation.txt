@@ -46,6 +46,14 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
+				ROOT.grid_faction_leader = MAQ
+			}
+		}
+		localization_key = "GFX_Ma_Clique"
+	}
+	text = {
+		trigger = {
+			check_variable = {
 				ROOT.grid_faction_leader = ROC
 			}
 		}
@@ -141,6 +149,16 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Italian_Union"
+	}
+	text = {
+		trigger = {
+			THIS = {
+				is_in_array = {
+					global.faction_menber_MAQ = THIS
+				}
+			}
+		}
+		localization_key = "GFX_Ma_Clique"
 	}
 	text = {
 		trigger = {

@@ -1,0 +1,23 @@
+state= {
+	id=1307
+	name="STATE_1307"
+	manpower = 235560
+	state_category = rural
+	history={
+		owner = FPE
+		add_core_of = FPE
+		add_core_of = ROC
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+
+		
+		
+	}
+	provinces={
+		4053
+	}
+
+	local_supplies=0.0 
+}

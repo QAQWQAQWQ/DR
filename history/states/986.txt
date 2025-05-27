@@ -1,6 +1,6 @@
 state={
 	id=986
-	name="永宁"
+	name="STATE_986"
 	resources={
 		steel=10
 		grain=8
@@ -15,29 +15,19 @@ state={
 			air_base = 2
 		}
 		
-		victory_points = {
-			4925 15 
-		}
+		
 		victory_points = {
 			12705 10 
 		}
-		victory_points = {
-			1395 8 
-		}
 		
-		victory_points = {
-			12141 5 
-		}
-		victory_points = {
-			12819 5 
-		}
 		
 	}
 
 	provinces={
-		1395 4925 7240 12705 12819 11972 12141
+		 12705  11972  4431
+		
 	}
-	manpower=32963300
+	manpower=329633
 	buildings_max_level_factor=1.000
 	state_category=city
 

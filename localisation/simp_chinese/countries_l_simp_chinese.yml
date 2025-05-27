@@ -4,6 +4,14 @@
  GUG_DEF:0 "中华民国广西省"
  GUG_ADJ:0 "广西省"
 
+ DAF:0 "达尔富尔苏丹国"
+ DAF_DEF:0 "达尔富尔苏丹国"
+ DAF_ADJ:0 "达尔富尔苏丹国"
+
+ TCH:0 "提贝斯提诸部落"
+ TCH_DEF:0 "提贝斯提诸部落"
+ TCH_ADJ:0 "提贝斯提诸部落"
+
  NPL:0 "法兰西帝国"
  NPL_DEF:0 "法兰西帝国"
  NPL_ADJ:0 "法兰西帝国"
@@ -11,6 +19,10 @@
  NPL_dm:0 "法兰西共和国临时政府"
  NPL_dm_DEF:0 "法兰西共和国临时政府"
  NPL_dm_ADJ:0 "法兰西共和国临时政府"
+
+ NPL_sen:0 "塞内加尔共和国"
+ NPL_sen_DEF:0 "塞内加尔共和国"
+ NPL_sen_ADJ:0 "塞内加尔共和国"
 
  Geoffrey_Country:0 "法兰克帝国"
  Geoffrey_Country_DEF:0 "法兰克帝国"
@@ -22,9 +34,9 @@
  MOA_ADJ:0 "法兰西王国"
 
 
- VFE:0 "满洲总督区"
- VFE_DEF:0 "满洲总督区"
- VFE_ADJ:0 "满洲总督区"
+ DKO:0 "刚果管区"
+ DKO_DEF:0 "罗马帝国刚果管区"
+ DKO_ADJ:0 "刚果管区"
 
  TSL:0 "以色列国"
  TSL_DEF:0 "以色列国"
@@ -56,12 +68,24 @@
  GRA_ADJ:0 "格鲁吉亚民主共和国"
 
  ARA:0 "亚美尼亚王国"
- ARA_DEF:0 "亚美尼亚王国"
+ ARA_DEF:0 "俄罗斯帝国亚美尼亚王国"
  ARA_ADJ:0 "亚美尼亚王国"
 
- ABA:0 "巴库公社"
- ABA_DEF:0 "巴库公社"
- ABA_ADJ:0 "巴库公社"
+ ARA_1:0 "亚美尼亚临时政府"
+ ARA_1_DEF:0 "亚美尼亚临时政府"
+ ARA_1_ADJ:0 "亚美尼亚临时政府"
+
+ ARA_rep:0 "亚美尼亚共和国"
+ ARA_rep_DEF:0 "亚美尼亚共和国"
+ ARA_rep_ADJ:0 "亚美尼亚共和国"
+
+ ARA_rma:0 "亚美尼亚王国"
+ ARA_rma_DEF:0 "亚美尼亚王国"
+ ARA_rma_ADJ:0 "亚美尼亚王国"
+
+ ABA:0 "阿塞拜疆民主共和国"
+ ABA_DEF:0 "阿塞拜疆民主共和国"
+ ABA_ADJ:0 "阿塞拜疆民主共和国"
 
  KSR:0 "喀琅施塔得水兵起义"
  KSR_DEF:0 "喀琅施塔得水兵起义"
@@ -78,6 +102,14 @@
  USR:0 "苏维埃乌克兰人民共和国"
  USR_DEF:0 "苏维埃乌克兰人民共和国"
  USR_ADJ:0 "苏维埃乌克兰人民共和国"
+
+ USR_1:0 "乌克兰苏维埃共和国"
+ USR_1_DEF:0 "乌克兰苏维埃共和国"
+ USR_1_ADJ:0 "乌克兰苏维埃共和国"
+
+ USR_2:0 "乌克兰苏维埃社会主义共和国"
+ USR_2_DEF:0 "乌克兰苏维埃社会主义共和国"
+ USR_2_ADJ:0 "乌克兰苏维埃社会主义共和国"
 
  AKE:0 "阿拉什奥尔达"
  AKE_DEF:0 "阿拉什奥尔达"
@@ -132,25 +164,37 @@
  DCK_DEF:0 "顿河哥萨克军团"
  DCK_ADJ:0 "顿河哥萨克军团"
 
- FER:0 "阿穆尔社会主义苏维埃共和国"
- FER_DEF:0 "阿穆尔社会主义苏维埃共和国"
- FER_ADJ:0 "阿穆尔社会主义苏维埃共和国"
+ DCK_1:0 "顿河共和国"
+ DCK_1_DEF:0 "顿河共和国"
+ DCK_1_ADJ:0 "顿河共和国"
+
+ DCK_2:0 "南俄罗斯武装力量"
+ DCK_2_DEF:0 "南俄罗斯武装力量"
+ DCK_2_ADJ:0 "南俄罗斯武装力量"
+
+ FER:0 "阿穆尔-乌苏里托管领"
+ FER_DEF:0 "阿穆尔-乌苏里托管领"
+ FER_ADJ:0 "阿穆尔-乌苏里托管领"
 
  TPU:0 "坦波夫农民联盟"
  TPU_DEF:0 "坦波夫农民联盟"
  TPU_ADJ:0 "坦波夫农民联盟"
 
- IUI:0 "北高加索人民联合共和国"
- IUI_DEF:0 "北高加索人民联合共和国"
- IUI_ADJ:0 "北高加索人民联合共和国"
+ IUI:0 "山地政府"
+ IUI_DEF:0 "山地政府"
+ IUI_ADJ:0 "山地政府"
+
+ IUI_1:0 "北高加索山地人联盟共和国"
+ IUI_1_DEF:0 "北高加索山地人联盟共和国"
+ IUI_1_ADJ:0 "北高加索山地人联盟共和国"
 
  UKR:0 "乌克兰人民共和国"
  UKR_DEF:0 "乌克兰人民共和国"
  UKR_ADJ:0 "乌克兰人民共和国"
 
- UBA:0 "马赫诺运动"
- UBA_DEF:0 "马赫诺运动"
- UBA_ADJ:0 "马赫诺运动"
+ UBA:0 "乌克兰自由地区"
+ UBA_DEF:0 "乌克兰自由地区"
+ UBA_ADJ:0 "乌克兰自由地区"
 
  DON:0 "拿骚公国"
  DON_DEF:0 "拿骚公国"
@@ -190,32 +234,32 @@
  DSX_ADJ:0 "德意志西非协会"
 
  DSX_DKV:0 "德属中央非洲"
- DSX_DKV_DEF:0 "德属中央非洲"
+ DSX_DKV_DEF:0 "德意志帝国属中央非洲"
  DSX_DKV_ADJ:0 "德属中央非洲"
 
  DAS:0 "德意志殖民协会(南德)"
- DAS_DEF:0 "德意志殖民协会(南德派殖民地)"
+ DAS_DEF:0 "德意志殖民协会(南德系殖民地)"
  DAS_ADJ:0 "德意志殖民协会(南德)"
 
  DAS_TR:0 "德意志殖民协会"
  DAS_TR_DEF:0 "德意志殖民协会"
  DAS_TR_ADJ:0 "德意志殖民协会"
 
- DAS_DKL:0 "奥属非洲"
- DAS_DKL_DEF:0 "奥属非洲"
- DAS_DKL_ADJ:0 "奥属非洲"
+ DAS_DKL:0 "奥属非洲殖民地"
+ DAS_DKL_DEF:0 "奥地利帝国属非洲殖民地"
+ DAS_DKL_ADJ:0 "奥属非洲殖民地"
 
- DAS_DR:0 "德属非洲"
- DAS_DR_DEF:0 "德属非洲"
- DAS_DR_ADJ:0 "德属非洲"
+ DAS_DR:0 "德属非洲殖民地"
+ DAS_DR_DEF:0 "德意志帝国属非洲殖民地"
+ DAS_DR_ADJ:0 "德属非洲殖民地"
 
- DAS_HR:0 "神罗属非洲"
- DAS_HR_DEF:0 "神罗属非洲"
- DAS_HR_ADJ:0 "神罗属非洲"
+ DAS_HR:0 "神罗属非洲殖民地"
+ DAS_HR_DEF:0 "神圣罗马帝国属非洲殖民地"
+ DAS_HR_ADJ:0 "神罗属非洲殖民地"
 
- DAS_DK:0 "多瑙属非洲"
- DAS_DK:0 "多瑙属非洲"
- DAS_DK_ADJ:0 "多瑙属非洲"
+ DAS_DK:0 "多瑙属非洲殖民地"
+ DAS_DK:0 "多瑙联邦帝国属非洲殖民地"
+ DAS_DK_ADJ:0 "多瑙属非洲殖民地"
 
  DOR:0 "巴伐利亚王国"
  DOR_DEF:0 "巴伐利亚王国"
@@ -270,22 +314,33 @@
  LSB_DEF:0 "卢森堡大公国"
  LSB_ADJ:0 "卢森堡大公国"
 
- TRT:0 "中意大利联合省"
- TRT_DEF:0 "中意大利联合省"
- TRT_ADJ:0 "中意大利联合省"
+ TRT:0 "突尼斯摄政国"
+ TRT_DEF:0 "突尼斯摄政国"
+ TRT_ADJ:0 "突尼斯摄政国"
+
+ TRT_rep:0 "突尼斯共和国"
+ TRT_rep_DEF:0 "突尼斯共和国"
+ TRT_rep_ADJ:0 "突尼斯共和国"
  
- KOJ:0 "贾扎伊尔国"
- KOJ_DEF:0 "贾扎伊尔国"
- KOJ_ADJ:0 "贾扎伊尔国"
- 
+ KOJ:0 "青年阿尔及利亚"
+ KOJ_DEF:0 "青年阿尔及利亚"
+ KOJ_ADJ:0 "青年阿尔及利亚"
+
+ KOJ_rep:0 "阿尔及利亚共和国"
+ KOJ_rep_DEF:0 "阿尔及利亚共和国"
+ KOJ_rep_ADJ:0 "阿尔及利亚共和国"
  
  JBS:0 "舍迈尔山酋长国"
  JBS_DEF:0 "舍迈尔山酋长国"
  JBS_ADJ:0 "舍迈尔山酋长国"
  
- YEM:0 "马斯喀特和阿曼苏丹国"
- YEM_DEF:0 "马斯喀特和阿曼苏丹国"
- YEM_ADJ:0 "马斯喀特和阿曼苏丹国"
+ OAM:0 "马斯喀特和阿曼苏丹国"
+ OAM_DEF:0 "马斯喀特和阿曼苏丹国"
+ OAM_ADJ:0 "马斯喀特和阿曼苏丹国"
+
+ OMA:0 "阿曼伊玛目国"
+ OMA_DEF:0 "阿曼伊玛目国"
+ OMA_ADJ:0 "阿曼伊玛目国"
  
  KWT:0 "科威特谢赫国"
  KWT_DEF:0 "科威特谢赫国"
@@ -305,10 +360,13 @@
  TOR_ADJ:0 "中意大利临时政府"
 
 
+ PBL:0 "波兰王国"
+ PBL_DEF:0 "波兰王国"
+ PBL_ADJ:0 "波兰王国"
+ 
  PBL:0 "波兰共和国"
  PBL_DEF:0 "波兰共和国"
  PBL_ADJ:0 "波兰共和国"
- 
 
  BEL:0 "比利时共和国"
  BEL_DEF:0 "比利时共和国"
@@ -330,9 +388,9 @@
  FRW_United_States_Europe_name_ADJ:0 "欧罗巴合众国"
 
 
- FRD:0 "北非联邦"
- FRD_DEF:0 "北非联邦"
- FRD_ADJ:0 "北非联邦"
+ FRD:0 "法兰西联盟海外领地"
+ FRD_DEF:0 "法兰西联盟海外领地"
+ FRD_ADJ:0 "法兰西联盟海外领地"
 
  KOH:0 "匈牙利王国"
  KOH_DEF:0 "匈牙利王国"
@@ -440,13 +498,13 @@
  UBS_DEF:0 "美利坚合众国"
  UBS_ADJ:0 "美利坚合众国"
 
- BNA:0 "新阿尔比恩联邦"
- BNA_DEF:0 "新阿尔比恩联邦"
- BNA_ADJ:0 "新阿尔比恩联邦"
+ NAL:0 "新阿比恩联邦"
+ NAL_DEF:0 "新阿比恩联邦"
+ NAL_ADJ:0 "新阿比恩联邦"
 
- NED:0 "新阿尔比恩"
- NED_DEF:0 "新阿尔比恩"
- NED_ADJ:0 "新阿尔比恩"
+ NED:0 "新阿比恩"
+ NED_DEF:0 "新阿比恩"
+ NED_ADJ:0 "新阿比恩"
 
  ICD:0 "那不勒斯独裁政府"
  ICD_DEF:0 "那不勒斯独裁政府"
@@ -480,6 +538,30 @@
  SHW_Interim_Government:0 "俄罗斯临时政府"
  SHW_Interim_Government_ADJ:0 "俄罗斯临时政府"
  SHW_Interim_Government_DEF:0 "俄罗斯临时政府"
+
+ SHW_rep:0 "俄罗斯共和国"
+ SHW_rep_ADJ:0 "俄罗斯共和国"
+ SHW_rep_DEF:0 "俄罗斯共和国"
+
+ SHW_est:0 "东线白军"
+ SHW_est_ADJ:0 "俄罗斯东线白军"
+ SHW_est_DEF:0 "东线白军"
+
+ SHW_prosib:0 "西伯利亚临时政府"
+ SHW_prosib_ADJ:0 "西伯利亚临时政府"
+ SHW_prosib_DEF:0 "西伯利亚临时政府"
+
+ SHW_sib:0 "西伯利亚共和国"
+ SHW_sib_ADJ:0 "西伯利亚共和国"
+ SHW_sib_DEF:0 "西伯利亚共和国"
+
+ SHW_ufa:0 "临时全俄罗斯政府"
+ SHW_ufa_ADJ:0 "临时全俄罗斯政府"
+ SHW_ufa_DEF:0 "临时全俄罗斯政府"
+
+ SHW_sta:0 "俄罗斯国"
+ SHW_sta_ADJ:0 "俄罗斯国"
+ SHW_sta_DEF:0 "俄罗斯国"
  
  SBY:0 "西班牙王国"
  SBY_ADJ:0 "西班牙王国"
@@ -584,17 +666,17 @@
  ROC_ADJ:0 "国民党势力"
  
  
- DTJ:0 "东突厥斯坦总督区"
- DTJ_DEF:0 "东突厥斯坦总督区"
- DTJ_ADJ:0 "东突厥斯坦总督区"
+ DTJ:0 "和阗临时政府"
+ DTJ_DEF:0 "和阗临时政府"
+ DTJ_ADJ:0 "和阗临时政府"
  
  XJC:0 "两盆省"
  XJC_DEF:0 "中华民国两盆省"
  XJC_ADJ:0 "两盆省"
 
- HBR:0 "喀喇昆仑阿尔泰区"
- HBR_DEF:0 "喀喇昆仑阿尔泰区"
- HBR_ADJ:0 "喀喇昆仑阿尔泰区"
+ HBR:0 "呼伦贝尔省"
+ HBR_DEF:0 "大蒙古国呼伦贝尔省"
+ HBR_ADJ:0 "呼伦贝尔省"
  
  NXS:0 "宁夏护军使"
  NXS_DEF:0 "中华民国宁夏护军使"
@@ -629,7 +711,7 @@
  GUI_ADJ:0 "湖北省"
 
  FEL:0 "芬兰大公国"
- FEL_DEF:0 "芬兰大公国"
+ FEL_DEF:0 "俄罗斯帝国芬兰大公国"
  FEL_ADJ:0 "芬兰大公国"
 
 
@@ -658,7 +740,7 @@
  JPN_shogunate:0 "日本幕府"
  
  ESI:0 "俄属东非"
- ESI_DEF:0 "俄属东非"
+ ESI_DEF:0 "俄罗斯帝国属东非"
  ESI_ADJ:0 "俄属东非"
  
  VAN:0 "大南国"
@@ -693,9 +775,9 @@
  TEQ_DEF:0 "土耳其革命政府"
  TEQ_ADJ:0 "土耳其革命政府"
  
- YED:0 "罗马帝国"
- YED_DEF:0 "罗马帝国"
- YED_ADJ:0 "罗马帝国"
+ RMA:0 "罗马帝国"
+ RMA_DEF:0 "罗马帝国"
+ RMA_ADJ:0 "罗马帝国"
  
  LMJ:0 "教皇国"
  LMJ_DEF:0 "教皇国"
@@ -855,6 +937,7 @@ ALB_ADJ:0 "阿尔巴尼亚亲王国"
  
  YNG_communism:0 "印尼共游击队"
  YNG_communism_DEF:0 "印尼共游击队"
+ YNG_communism_ADJ:0 "印尼共游击队"
  
  CHE:0 "智利共和国"
  CHE_DEF:0 "智利共和国"
@@ -913,11 +996,11 @@ ALB_ADJ:0 "阿尔巴尼亚亲王国"
  RTW_ADJ:0 "日属台湾"
 
  PSA:0 "葡属澳门"
- PSA_DEF:0 "葡属澳门"
+ PSA_DEF:0 "葡属澳门省"
  PSA_ADJ:0 "葡属澳门"
  
  ESG:0 "英属香港"
- ESG_DEF:0 "英属香港"
+ ESG_DEF:0 "英属香港皇家殖民地"
  ESG_ADJ:0 "英属香港"
  
  SXS:0 "山西省"
@@ -931,6 +1014,14 @@ ALB_ADJ:0 "阿尔巴尼亚亲王国"
  SUE_1:0 "俄罗斯苏维埃共和国"
  SUE_1_DEF:0 "俄罗斯苏维埃共和国"
  SUE_1_ADJ:0 "俄罗斯苏维埃共和国"
+
+ SUE_2:0 "俄罗斯苏维埃联邦社会主义共和国"
+ SUE_2_DEF:0 "俄罗斯苏维埃联邦社会主义共和国"
+ SUE_2_ADJ:0 "俄罗斯苏维埃联邦社会主义共和国"
+
+ SUE_3:0 "苏维埃社会主义共和国联盟"
+ SUE_3_DEF:0 "苏维埃社会主义共和国联盟"
+ SUE_3_ADJ:0 "苏维埃社会主义共和国联盟"
  
  LBY:0 "利比里亚共和国"
  LBY_DEF:0 "利比里亚共和国"
@@ -960,9 +1051,9 @@ ALB_ADJ:0 "阿尔巴尼亚亲王国"
  BLF_DEF:0 "黑人解放阵线"
  BLF_ADJ:0 "黑人解放阵线"
 
- HLS:0 "满洲利亚国"
- HLS_DEF:0 "满洲利亚国"
- HLS_ADJ:0 "满洲利亚国"
+ HLS:0 "满洲总督区"
+ HLS_DEF:0 "满洲总督区"
+ HLS_ADJ:0 "满洲总督区"
 
  SML:0 "德尔维希国"
  SML_DEF:0 "德尔维希国"
@@ -1088,9 +1179,9 @@ SAE_ADJ:0 "施瓦茨堡-鲁多尔施塔特侯国"
 SAF:0 "萨克森-阿尔滕堡公爵领"
 SAF_DEF:0 "萨克森-阿尔滕堡公爵领"
 SAF_ADJ:0 "萨克森-阿尔滕堡公爵领"
-SAG:0 "罗伊斯亲王国"
-SAG_DEF:0 "罗伊斯亲王国"
-SAG_ADJ:0 "罗伊斯亲王国"
+SAG:0 "罗伊斯-格拉亲王国"
+SAG_DEF:0 "罗伊斯-格拉亲王国"
+SAG_ADJ:0 "罗伊斯-格拉亲王国"
 
 SLO:0 "斯洛伐克王国"
 SLO_DEF:0 "斯洛伐克王国"
@@ -1111,6 +1202,10 @@ HOS_ADJ:0 "荷尔斯泰因公国"
 QIN:0 "大清帝国"
 QIN_DEF:0 "大清帝国"
 QIN_ADJ:0 "大清帝国"
+
+QIN_rus:0 "满洲总督区"
+QIN_rus_DEF:0 "满洲总督区"
+QIN_rus_ADJ:0 "满洲总督区"
 
 BEL:0 "比利时共和国"
 BEL_DEF:0 "比利时共和国"
@@ -1148,6 +1243,58 @@ GGZ:0 "公共租界"
 GGZ_DEF:0 "中华民国公共租界"
 GGZ_ADJ:0 "公共租界"
 
+SNA:0 "西属西非"
+SNA_DEF:0 "西班牙王国属西非"
+SNA_ADJ:0 "西属西非"
+
+PUL:0 "葡萄牙海外省"
+PUL_DEF:0 "葡萄牙共和国海外省"
+PUL_ADJ:0 "葡萄牙海外省"
+
+GAM:0 "冈比亚殖民地和保护国"
+GAM_DEF:0 "冈比亚殖民地和保护国"
+GAM_ADJ:0 "冈比亚殖民地和保护国"
+
+MUN:0 "马里-上尼日尔保护国"
+MUN_DEF:0 "马里-上尼日尔保护国"
+MUN_ADJ:0 "马里-上尼日尔保护国"
+
+SSA:0 "南撒哈拉高级专员领地"
+SSA_DEF:0 "南撒哈拉高级专员领地"
+SSA_ADJ:0 "南撒哈拉高级专员领地"
+
+GOC:0 "黄金海岸殖民地"
+GOC_DEF:0 "黄金海岸殖民地"
+GOC_ADJ:0 "黄金海岸殖民地"
+
+NIG:0 "尼日利亚殖民地和保护国"
+NIG_DEF:0 "尼日利亚殖民地和保护国"
+NIG_ADJ:0 "尼日利亚殖民地和保护国"
+
+BEC:0 "南部非洲高级专员领地"
+BEC_DEF:0 "南部非洲高级专员领地"
+BEC_ADJ:0 "南部非洲高级专员领地"
+
+RHO:0 "英国南非公司"
+RHO_DEF:0 "不列颠南非公司"
+RHO_ADJ:0 "英国南非公司"
+
+UGA:0 "乌干达保护国"
+UGA_DEF:0 "乌干达保护国"
+UGA_ADJ:0 "乌干达保护国"
+
+EAF:0 "东非保护国"
+EAF_DEF:0 "东非保护国"
+EAF_ADJ:0 "东非保护国"
+
+SOM:0 "索马里兰保护国"
+SOM_DEF:0 "索马里兰保护国"
+SOM_ADJ:0 "索马里兰保护国"
+
+GRC:0 "谷物海岸殖民地和保护国"
+GRC_DEF:0 "谷物海岸殖民地和保护国"
+GRC_ADJ:0 "谷物海岸殖民地和保护国"
+
 MUH:0 "穆罕马拉酋长国"
  MUH_DEF:0 "穆罕马拉酋长国"
  MUH_ADJ:0 "穆罕马拉酋长国"
@@ -1175,3 +1322,151 @@ AFG_new:0 "阿富汗酋长国"
 PAR_new:0 "巴拉圭共和国"
  PAR_new_DEF:0 "巴拉圭共和国"
  PAR_new_ADJ:0 "巴拉圭共和国"
+
+ HAK:0 "客家国"
+ HAK_DEF:0 "客家国"
+ HAK_ADJ:0 "客家国"
+
+ SAR:0 "南阿拉伯诸部落"
+ SAR_DEF:0 "南阿拉伯诸部落"
+ SAR_ADJ:0 "南阿拉伯诸部落"
+
+ TAB:0 "阿塞拜疆省"
+ TAB_DEF:0 "伊朗守护领-阿塞拜疆省"
+ TAB_ADJ:0 "阿塞拜疆省"
+
+ MAS:0 "北呼罗珊"
+ MAS_DEF:0 "伊朗守护领-北呼罗珊"
+ MAS_ADJ:0 "北呼罗珊"
+
+ KAO:0 "喀喇昆仑-阿尔泰区"
+ KAO_DEF:0 "喀喇昆仑-阿尔泰区"
+ KAO_ADJ:0 "喀喇昆仑-阿尔泰区"
+
+ TUK:0 "突厥斯坦自治临时政府"
+ TUK_DEF:0 "突厥斯坦自治临时政府"
+ TUK_ADJ:0 "突厥斯坦自治临时政府"
+
+ TUK_bas:0 "科尔巴希运动"
+ TUK_bas_DEF:0 "科尔巴希运动"
+ TUK_bas_ADJ:0 "科尔巴希运动"
+
+XZZ_rus:0 "蕃地"
+XZZ_rus_DEF:0 "蕃地"
+XZZ_rus_ADJ:0 "蕃地"
+
+FTX_rus:0 "燕国"
+FTX_rus_DEF:0 "燕国"
+FTX_rus_ADJ:0 "燕国"
+
+WSP_rus:0 "齐国"
+WSP_rus_DEF:0 "齐国"
+WSP_rus_ADJ:0 "齐国"
+
+HNZ_rus:0 "河南国"
+HNZ_rus_DEF:0 "河南国"
+HNZ_rus_ADJ:0 "河南国"
+
+SXS_rus:0 "晋国"
+SXS_rus_DEF:0 "晋国"
+SXS_rus_ADJ:0 "晋国"
+
+SXX_rus:0 "雍国"
+SXX_rus_DEF:0 "雍国"
+SXX_rus_ADJ:0 "雍国"
+
+GSL_rus:0 "凉国"
+GSL_rus_DEF:0 "凉国"
+GSL_rus_ADJ:0 "凉国"
+
+QIX_rus:0 "淮国"
+QIX_rus_DEF:0 "淮国"
+QIX_rus_ADJ:0 "淮国"
+
+SUC_rus:0 "吴越国"
+SUC_rus_DEF:0 "吴越国"
+SUC_rus_ADJ:0 "吴越国"
+
+FPE_rus:0 "闽国"
+FPE_rus_DEF:0 "闽国"
+FPE_rus_ADJ:0 "闽国"
+
+JLP_rus:0 "赣国"
+JLP_rus_DEF:0 "赣国"
+JLP_rus_ADJ:0 "赣国"
+
+GUI_rus:0 "荆楚国"
+GUI_rus_DEF:0 "荆楚国"
+GUI_rus_ADJ:0 "荆楚国"
+
+NXS_rus:0 "湘楚国"
+NXS_rus_DEF:0 "湘楚国"
+NXS_rus_ADJ:0 "湘楚国"
+
+MAQ_rus:0 "南越国"
+MAQ_rus_DEF:0 "南越国"
+MAQ_rus_ADJ:0 "南越国"
+
+GUG_rus:0 "僚国"
+GUG_rus_DEF:0 "僚国"
+GUG_rus_ADJ:0 "僚国"
+
+SCX_rus:0 "蜀国"
+SCX_rus_DEF:0 "蜀国"
+SCX_rus_ADJ:0 "蜀国"
+
+SSD_rus:0 "巴国"
+SSD_rus_DEF:0 "巴国"
+SSD_rus_ADJ:0 "巴国"
+
+CEX_rus:0 "滇国"
+CEX_rus_DEF:0 "滇国"
+CEX_rus_ADJ:0 "滇国"
+
+LXS_rus:0 "黔国"
+LXS_rus_DEF:0 "黔国"
+LXS_rus_ADJ:0 "黔国"
+
+ROC_1:0 "中华民国护法军政府"
+ROC_1_DEF:0 "中华民国护法军政府"
+ROC_1_ADJ:0 "中华民国护法军政府"
+
+ROC_2:0 "中华民国"
+ROC_2_DEF:0 "中华民国"
+ROC_2_ADJ:0 "中华民国"
+
+KKE_rep:0 "花剌子模共和国"
+KKE_rep_DEF:0 "花剌子模共和国"
+KKE_rep_ADJ:0 "花剌子模共和国"
+
+EOB_rep:0 "布哈拉共和国"
+EOB_rep_DEF:0 "布哈拉共和国"
+EOB_rep_ADJ:0 "布哈拉共和国"
+
+MAS_mad:0 "外里海托管领"
+MAS_mad_DEF:0 "外里海托管领"
+MAS_mad_ADJ:0 "外里海托管领"
+
+MAS_chi:0 "土库曼斯坦共和国"
+MAS_chi_DEF:0 "土库曼斯坦共和国"
+MAS_chi_ADJ:0 "土库曼斯坦共和国"
+
+KKE_chi:0 "卡拉卡尔帕克斯坦共和国"
+KKE_chi_DEF:0 "卡拉卡尔帕克斯坦共和国"
+KKE_chi_ADJ:0 "卡拉卡尔帕克斯坦共和国"
+
+EOB_chi:0 "乌孜别克斯坦共和国"
+EOB_chi_DEF:0 "乌孜别克斯坦共和国"
+EOB_chi_ADJ:0 "乌孜别克斯坦共和国"
+
+TGA_uni:0 "突厥斯坦共和国"
+TGA_uni_DEF:0 "突厥斯坦共和国"
+TGA_uni_ADJ:0 "突厥斯坦共和国"
+
+TGA_chi:0 "塔吉克斯坦共和国"
+TGA_chi_DEF:0 "塔吉克斯坦共和国"
+TGA_chi_ADJ:0 "塔吉克斯坦共和国"
+
+GGA_chi:0 "柯尔克孜斯坦共和国"
+GGA_chi_DEF:0 "柯尔克孜斯坦共和国"
+GGA_chi_ADJ:0 "柯尔克孜斯坦共和国"

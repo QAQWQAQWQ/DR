@@ -23,6 +23,7 @@ state={
 			infrastructure = 4
 			industrial_complex = 9
 			1500 = {
+				naval_base = 1
 				coastal_bunker = 5
 
 			}
@@ -53,15 +54,23 @@ state={
 		}
 
 		victory_points = {
-			10337 30
+			10337 25
 		}
 		victory_points = {
-			3960 23
+			3960 22
 		}
 		victory_points = {
 			12782 23 
 		}
-
+		victory_points = {
+			5022 13
+		}
+		victory_points = {
+			2042 16
+		}
+		victory_points = {
+			1500 16
+		}
 	}
 
 	provinces={

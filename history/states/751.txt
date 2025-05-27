@@ -1,13 +1,13 @@
 state={
 	id=751
-	name="建昌"
+	name="STATE_751"
 	provinces={
-		2067 10726 7294
+		2067 
 	}
 	resources={
-		grain=21
+		grain=13
 	}
-	manpower=300000
+	manpower=60000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	history={
@@ -18,9 +18,7 @@ state={
 		}
 		
 		
-		victory_points = {
-			7294 5
-		}
+		
 	}
 
 	local_supplies=1.0 

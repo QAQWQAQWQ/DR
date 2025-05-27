@@ -1,0 +1,28 @@
+
+state = {
+	id = 1325
+	name = "STATE_1325" # Khakassia
+	manpower = 56322
+	
+	state_category = pastoral
+	resources={
+		grain=2
+	}
+	history = {
+		owner = SHW
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SHW
+		victory_points = {
+			4800 5 #Oyrot-Tura/Gorno-Altaysk
+		}
+	}
+
+	provinces = {
+		1779 12528 4800 10531 10713
+	}
+
+	local_supplies = 0.0 
+}

@@ -3,8 +3,8 @@ state={
 	name="STATE_1142"
 
 	history={
-		owner = NPL
-		add_core_of = SNX
+		owner = DSX
+		add_core_of = TCH
 		
 		buildings = {
 			infrastructure = 1
@@ -14,7 +14,7 @@ state={
 	}
 
 	provinces={
-		3123
+		3123 4897 4978
 	}
 	manpower=12456
 	buildings_max_level_factor=1.000

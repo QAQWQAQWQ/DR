@@ -1,0 +1,27 @@
+state={
+	id=1305
+	name="STATE_1305"
+	resources={
+		tungsten=1
+	}
+	history={
+		owner = CEX
+		add_core_of = CEX
+		buildings = {
+			infrastructure = 1
+			
+		}
+		victory_points = {
+			10346 5 
+		}
+	}
+
+	provinces={
+		 10346
+	}
+	manpower=14320
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=3.0 
+}

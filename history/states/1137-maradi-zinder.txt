@@ -8,14 +8,17 @@ state={
 
 
 	history={
-		owner = NPL
+		owner = NIG
 		buildings = {
 			infrastructure = 0
+		}
+		victory_points = {
+			10758 5
 		}
 	}
 
 	provinces={
-		8028 10758
+		8028 10758 10780 10805
 	}
 
 	local_supplies=0.0 

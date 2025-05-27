@@ -1,0 +1,30 @@
+
+state={
+	id=1281
+	name="STATE_1281"
+	manpower = 88615
+	
+	state_category = rural
+
+	history={
+		owner = NAL
+		victory_points = {
+			4360 3
+		}
+		buildings = {
+			infrastructure = 1
+			
+		}
+		add_core_of = NAL
+		victory_points = {
+			4360 11
+		}
+	}
+
+	provinces={
+		4360
+	}
+	
+
+	local_supplies=11.0 
+}

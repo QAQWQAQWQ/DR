@@ -6,15 +6,16 @@ state={
 
 
 	history={
-		owner = NPL
+		owner = SNA
+		add_core_of = SSA
 		buildings = {
 			infrastructure = 0
 		}
-
+		add_dynamic_modifier = {modifier=Afr_Native_Chiefdoms}
 	}
 
 	provinces={
-		1897 1962 7943 8035 10771 10779 7979
+		 1962 7943 8035 10779 7979
 	}
 
 	local_supplies=0.0 

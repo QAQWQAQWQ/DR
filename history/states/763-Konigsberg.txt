@@ -12,22 +12,21 @@ state={
 		owner = WWS
 		
 		victory_points = {
-			6332 19
+			6332 24
 		}
-
+		victory_points = {
+			281 14
+		}
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 3
 			grain_farms = 1
 			6332 = {
 				bunker = 1
-
+				naval_base = 5
 			}
 			anti_air_building = 2
-			6332 = {
-				naval_base = 5
-
-			}
+			
 			air_base = 6
 		}
 		add_core_of = WWS

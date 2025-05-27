@@ -1,0 +1,33 @@
+
+state={
+	id=1321
+	name="STATE_1321"
+	manpower = 66700
+	resources={
+		grain=1
+	}
+	state_category = rural
+	
+	
+
+	history={
+		owner = OMA
+		add_core_of = OMA
+		buildings = {
+			infrastructure = 1
+			
+			industrial_complex = 1 
+			
+		}
+		victory_points = {
+			13490 3
+		}
+		set_demilitarized_zone = yes
+	}
+
+	provinces={
+		13475 13490
+	}
+
+	local_supplies=0.0 
+}

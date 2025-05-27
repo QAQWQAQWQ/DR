@@ -1,0 +1,25 @@
+state = {
+	id = 1284
+	name = "STATE_1284"
+	manpower = 6102
+	state_category = pastoral
+	history = {
+		owner = TCH
+		add_core_of = TCH
+		add_core_of = SNX
+
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			13264 5
+		}
+
+	}
+	provinces = {
+		13264
+	}
+	
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+}

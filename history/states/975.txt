@@ -1,6 +1,6 @@
 state={
 	id=975
-	name="普洱"
+	name="STATE_975"
 	resources={
 		tungsten=2.000
 	}
@@ -10,25 +10,16 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		victory_points = {
-			10413 8 
-		}
-		victory_points = {
-			10776 8 
-		}
-		victory_points = {
-			4501 8 
-		}
 		
-		victory_points = {
-			10346 5 
-		}
+		
+		
 	}
 
 	provinces={
-		1383 1522 4501 10346 10413 10776 12262 12282 12319
+		
+		1383 1522 12319 13483
 	}
-	manpower=2321311
+	manpower=21311
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 

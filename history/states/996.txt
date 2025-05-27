@@ -7,14 +7,14 @@ state={
 		owner = SUC
 		add_core_of = ROC
 		add_core_of = SUC
-		victory_points = { 7191 20 }
+		victory_points = { 7191 28 }
 
 		buildings = {
 			infrastructure = 2
 			7191 = {
 				naval_base = 5
 				coastal_bunker = 1
-				bunker = 1
+				bunker = 3
 			}
 			10101 = {
 				bunker = 2
@@ -24,9 +24,7 @@ state={
 				bunker = 3
 
 			}
-			7191 = {
-				bunker = 3
-			}
+			
 		}
 		
 		

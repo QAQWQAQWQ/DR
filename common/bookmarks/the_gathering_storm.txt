@@ -45,7 +45,7 @@ bookmarks = {
 "WWS"={
 	history = "WWS_GATHERING_STORM_DESC"
 	
-	ideology = Conservatism
+	ideology = Dictatorship
 	ideas = {
 WWS_The_victor
 WWS_Songun_Policy
@@ -78,7 +78,7 @@ WWS_Labor_pioneer
 "AOX"={
 	history = "AOX_GATHERING_STORM_DESC"
 	
-	ideology = Conservatism
+	ideology = Dictatorship
 	ideas = {
 AOX_Hungarian_independence_movement
 AOX_ideas_the_undead_of_hus
@@ -96,7 +96,7 @@ AOX_Multi_ethnic_army
 "SHW"={
 	history = "SHW_GATHERING_STORM_DESC"
 	
-	ideology = Conservatism
+	ideology = Dictatorship
 	ideas = {
 SHW_Corrupt_army
 SHW_Stolypin_legacy
@@ -115,7 +115,7 @@ SHW_Diverse_Russia
 "SBY"={
 	history = "SBY_GATHERING_STORM_DESC"
 	
-	ideology = Conservatism
+	ideology = Paternalism
 	ideas = {
 		SBY_Spanish_Flu
 		SBY_Somaten
@@ -133,7 +133,7 @@ SHW_Diverse_Russia
 "UBS"={
 	history = "UBS_GATHERING_STORM_DESC"
 	
-	ideology = Liberalism
+	ideology = Conservatism
 	ideas = {
 	}
 	focuses = {
@@ -144,23 +144,23 @@ SHW_Diverse_Russia
 
 
 
-"BXM"={
-	history = "JPN_GATHERING_STORM_DESC"
+"LMJ"={
+	history = "LMJ_GATHERING_STORM_DESC"
 	minor = yes
-	ideology = Conservatism
+	ideology = Dictatorship
 }
 
 
 "BRA"={
 	history = "NPL_GATHERING_STORM_DESC"
 	minor = yes
-	ideology = Conservatism
+	ideology = Paternalism
 	
 }
 "NPL"={
 	history = "NPL_GATHERING_STORM_DESC"
 	minor = yes
-	ideology = Conservatism
+	ideology = Dictatorship
 	ideas={
 		NPL_Declining_trend
 		NPL_National_contradictions
@@ -175,75 +175,72 @@ SHW_Diverse_Russia
 		
 	}
 }
-"LEF"={
-	history = "LEF_GATHERING_STORM_DESC"
+"ROC"={
+	history = "ROC_GATHERING_STORM_DESC"
 	minor = yes
-	ideology = Conservatism
+	ideology = Paternalism
 	
 }
 "DOR"={
 	history = "DOR_GATHERING_STORM_DESC"
 	minor = yes
-	ideology = Conservatism
+	ideology = Dictatorship
 	
 }
-"DMW"={
-	history = "NPL_GATHERING_STORM_DESC"
+"XJC"={
+	history = "XJC_GATHERING_STORM_DESC"
 	minor = yes
-	ideology = Conservatism
+	ideology = Paternalism
 	
 }
-"NUW"={
-	history = "NPL_GATHERING_STORM_DESC"
+"KEI"={
+	history = "KEI_GATHERING_STORM_DESC"
 	minor = yes
-	ideology = Conservatism
+	ideology = Dictatorship
 	
 }
-"RUD"={
-	history = "NPL_GATHERING_STORM_DESC"
+"MEX"={
+	history = "MEX_GATHERING_STORM_DESC"
 	minor = yes
-	ideology = Conservatism
+	ideology = Dictatorship
 	
 }
 "YEL"={
 	history = "NPL_GATHERING_STORM_DESC"
 	minor = yes
-	ideology = Conservatism
+	ideology = Dictatorship
 	
 }
 "ZHX"={
 	history = "NPL_GATHERING_STORM_DESC"
 	minor = yes
-	ideology = Conservatism
+	ideology = Dictatorship
 	
 }
 "ITE"={
 	history = "ITE_GATHERING_STORM_DESC"
 	minor = yes
-	ideology = Conservatism
+	ideology = Dictatorship
 }
-"BNA"={
-	history = "BNA_GATHERING_STORM_DESC"
+"NAL"={
+	history = "NAL_GATHERING_STORM_DESC"
 	minor = yes
-	ideology = Liberalism
+	ideology = Reformism
 }
-"YED"={
-	history = "YED_GATHERING_STORM_DESC"
+"RMA"={
+	history = "RMA_GATHERING_STORM_DESC"
 	minor = yes
-	ideology = Conservatism
+	ideology = Paternalism
 	ideas = {
-		TEQ_humiliation
-		TEQ_paralysed_industry
-		TEQ_religious_conflict
+		RMA_Roman_Orthodoxy
+	    TEQ_religious_conflict
 	}
-	focuses = {
-		TEQ_focus0
-	}
+	
 }
 "ESI"={
 	history = "ESI_GATHERING_STORM_DESC"
 	minor = yes
-	ideology = Conservatism
+	ideology = Dictatorship
 }
 effect = {
 	randomize_weather = 22345 # <- Obligatory in every bookmark !

@@ -1,0 +1,41 @@
+state={
+	id=1309
+	name="STATE_1309"
+	resources={
+		grain=5
+	}
+	history={
+		owner = ROC
+		add_core_of = ROC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		
+		
+
+		victory_points = {
+			7101 13 
+		}
+		
+		
+		
+		victory_points = {
+			4896 4
+		}
+		
+		victory_points = {
+			7434 4
+		}
+		
+	}
+
+	provinces={
+		7201 7434 4896 7279 7101
+	}
+	manpower=846510
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}

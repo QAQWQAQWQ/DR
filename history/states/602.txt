@@ -16,26 +16,35 @@ state={
 				bunker = 2
 			}
 		}
+		victory_points = {
+			7159 8
+		}
 		
+		
+		victory_points = {
+			10377 4
+		}
+		victory_points = {
+			12310 8
+		}
 		victory_points = {
 			12483 3 
 		}
 
 		victory_points = {
-			7097 15 
+			7097 20
 		}
 		
 		victory_points = {
-			9999 8
+			9999 10
 		}
-		victory_points = {
-			1640 8
-		}
+		
 		
 	}
 
 	provinces={
-		1640 7097 9999 10517 12483 13143 13140
+		 7097 9999 10517 12483 13143 13140  7159 12350 7502 10377  12053 12310
+		 
 	}
 	manpower=13542160
 	buildings_max_level_factor=1.000

@@ -9,7 +9,7 @@ state={
 	state_category = metropolis
 
 	history={
-		owner = BNA
+		owner = NAL
 		buildings = {
 			infrastructure = 3 #was: 6
 			arms_factory = 1
@@ -21,9 +21,12 @@ state={
 			}
 
 		}
-		add_core_of = BNA
+		add_core_of = NAL
 		victory_points = {
-			6710 20 
+			6710 40
+		}
+		victory_points = {
+			6769 16
 		}
 		1939.1.1 = {
 			buildings = {

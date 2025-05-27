@@ -1,0 +1,26 @@
+
+state={
+	id=1317
+	name="STATE_1317"
+	manpower = 4979
+	
+	state_category = rural
+
+	history={
+		owner = ROY
+		add_core_of = ROY
+		buildings = {
+			infrastructure = 1
+		}
+		
+		victory_points = {
+			13488 3
+		}
+	}
+
+	provinces={
+		13488
+	}
+
+	local_supplies=0.0 
+}

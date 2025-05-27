@@ -1,0 +1,30 @@
+
+state={
+	id=1293
+	name="STATE_1293"
+	manpower = 5100
+	state_category = pastoral
+
+	history={
+		owner = NAF
+		buildings = {
+			infrastructure = 2
+			13463 = {
+				naval_base = 1
+			}
+		}
+		
+		victory_points = {
+			13463 5
+		}
+
+	}
+
+	provinces={
+		13463
+	}
+	
+	buildings_max_level_factor=1.000
+	
+	local_supplies=0.000
+}

@@ -1,0 +1,24 @@
+characters={
+	DKO_Aristeidis_Stergiadis={
+		name=DKO_Aristeidis_Stergiadis
+		portraits={
+		army={
+			large="gfx/leaders/DKO/DKO_Aristeidis_Stergiadis_new.tga"
+		}
+	}
+	country_leader={
+		ideology=autocratic-colonial-government
+		traits={  }
+		expire="1965.1.1.1"
+		id=-1
+	}
+	field_marshal={
+		traits={  }
+		skill=3
+		attack_skill=2
+		defense_skill=3
+		planning_skill=2
+		logistics_skill=2
+	}
+	}		
+	}

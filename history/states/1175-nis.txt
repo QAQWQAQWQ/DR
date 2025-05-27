@@ -8,7 +8,10 @@ state={
 	}
 	history={
 		victory_points = {
-			13290 10
+			11887 13
+		}
+		victory_points = {
+			9906 10
 		}
 		victory_points = {
 			11857 3 
@@ -16,12 +19,15 @@ state={
 		victory_points = {
 			11868 3
 		}
-		owner = YED
+		victory_points = {
+			9890 8
+		}
+		owner = RMA
 		buildings = {
 			infrastructure = 2
 
 		}
-		add_core_of = YED
+		add_core_of = RMA
 	}
 
 	provinces={

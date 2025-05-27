@@ -126,6 +126,14 @@ on_actions = {
                     sphere_country = SHW
                 }
             }
+            RMA = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = SHW
+                }
+            }
             KON = {
                 set_variable = {
                     in_a_sphere = 1
@@ -175,6 +183,46 @@ on_actions = {
                     sphere_country = FRW
                 }
             }
+            ROC = {
+                set_variable = {
+                    is_a_gerat_power = 1
+                }
+                set_variable = {
+                    sphere_country = ROC
+                }
+            }
+            XJC = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = ROC
+                }
+            }
+            QIX = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = ROC
+                }
+            }
+            SUC = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = ROC
+                }
+            }
+            FPE = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = ROC
+                }
+            }
             ENL = {
                 set_variable = {
                     is_a_gerat_power = 1
@@ -199,6 +247,22 @@ on_actions = {
                     sphere_country = ENL
                 }
             }
+            HAT = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = ENL
+                }
+            }
+            DMA = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = ENL
+                }
+            }
             AFH = {
                 set_variable = {
                     in_a_sphere = 1
@@ -207,7 +271,7 @@ on_actions = {
                     sphere_country = SHW
                 }
             }
-            BNA = {
+            NAL = {
                 set_variable = {
                     in_a_sphere = 1
                 }
@@ -336,6 +400,14 @@ on_actions = {
                 }
             }
             ASI = {
+                set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = SHW
+                }
+            }
+            DKO = {
                 set_variable = {
                     in_a_sphere = 1
                 }

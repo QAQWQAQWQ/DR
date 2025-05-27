@@ -1,0 +1,38 @@
+
+state={
+	id=1298
+	name="STATE_1298"
+	manpower = 77522
+	state_category = rural
+	resources={
+		grain=2
+	}
+	history={
+		owner = DKO
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			10968 = {
+				naval_base = 1
+
+			}
+
+		}
+		
+		
+		victory_points = {
+			10968 10
+		}
+		victory_points = {
+			12925 5
+		}
+
+	}
+
+	provinces={
+		10968 12925 
+	}
+	
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+}

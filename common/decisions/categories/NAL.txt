@@ -1,0 +1,12 @@
+
+Hamilton_scandal_category = {  
+	icon = infiltration
+	allowed = {
+		original_tag = NAL
+	}
+	visible = {
+		date > 2020.1.4
+			date < 2020.1.6
+	}
+}
+

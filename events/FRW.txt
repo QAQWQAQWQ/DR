@@ -1595,32 +1595,86 @@ country_event = {
 		hidden_effect = {
 			1={
 				transfer_state_to = FRW
+				add_core_of = FRW
 			}
-			786={
-				transfer_state_to = FRD
+			FRD = {
+				annex_country = {
+					target = NPL
+				}
 			}
-			782={
-				transfer_state_to = FRD
-			}
-			515={
-				transfer_state_to = FRD
-			}
-			557={
-				transfer_state_to = FRD
-			}
-			FRD={
+			KOJ = {transfer_state = 459
+		transfer_state = 1040
+	transfer_state = 460
+transfer_state = 1119
+transfer_state = 513
+transfer_state = 514
+transfer_state = 782}
+NPL = {transfer_state = 272
+transfer_state = 1295}
+KOJ = {set_cosmetic_tag = KOJ_rep}
+TRT = {set_cosmetic_tag = TRT_rep}
+NPL = {set_cosmetic_tag = NPL_sen}
+NPL = {set_capital = { state = 272 }}
+every_state = {
+					if={
+						limit={
+							is_owned_by = FRD
+						}
+						add_core_of = FRD
+					}
+				}
 				every_state = {
 					if={
 						limit={
-							is_core_of =NPL
+							is_owned_by = NPL
 						}
-						transfer_state_to = FRD
-						remove_core_of = NPL
+						add_core_of = NPL
 					}
 				}
+FRW = {
+			set_autonomy = {
+				target = KOJ
+				autonomy_state = autonomy_satellite_state
 			}
+			set_autonomy = {
+				target = TRT
+				autonomy_state = autonomy_satellite_state
+			}
+			set_autonomy = {
+				target = NPL
+				autonomy_state = autonomy_satellite_state
+			}
+			set_autonomy = {
+				target = FRD
+				autonomy_state = autonomy_integrated_puppet
+			}
+			
+		}
+		KOJ = {set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = FRW
+                }}
+				
+				TRT = {set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = FRW
+                }}
+				NPL = {set_variable = {
+                    in_a_sphere = 1
+                }
+                set_variable = {
+                    sphere_country = FRW
+                }}
+				FRD = {set_variable = {
+                    in_a_sphere = 1
+                }
 		}
 	}
+}
 	option = {
 		name = FRW.52.b
 		every_controlled_state = {

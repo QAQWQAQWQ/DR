@@ -11,13 +11,19 @@ state={
 		grain=1
 	}
 	history={
-		owner = BNA
+		owner = NAL
 		buildings = {
 			infrastructure = 3 #was: 7
 			arms_factory = 2
 			industrial_complex = 1
 		}
-		add_core_of = BNA
+		add_core_of = NAL
+		victory_points = {
+			4445 9
+		}
+		victory_points = {
+			7629 12
+		}
 	}
 
 	provinces={

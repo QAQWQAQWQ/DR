@@ -1,0 +1,59 @@
+characters={
+	NAL_Sir_Harry_Edward_Spiller_Cordeauxn_Khoyski={
+		name=NAL_Sir_Harry_Edward_Spiller_Cordeauxn_Khoyski
+		portraits={
+			civilian={
+				large="gfx/leaders/NAL/Portrait_Sir_Harry_Edward_Spiller_Cordeaux.tga"
+			}
+		}
+		country_leader={
+			ideology=military-dictatorship
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
+	NAL_Robert_Ray_Hamilton={
+		name=NAL_Robert_Ray_Hamilton
+		portraits={
+			civilian={
+				large="gfx/leaders/NAL/Portrait_Robert_Ray_Hamilton.tga"
+			}
+		}
+		country_leader={
+			ideology=Hamiltonian_Liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
+	NAL_Charles_Evans_Hughes={
+		name=NAL_Charles_Evans_Hughes
+		portraits={
+			civilian={
+				large="gfx/leaders/NAL/Portrait_Charles_Evans_Hughes.tga"
+			}
+		}
+		country_leader={
+			ideology=Hamiltonian_Liberalism
+			traits={  }
+			expire="1965.1.1.1" 
+			id=-1
+		}
+	}
+	NAL_Theodore_Roosevelt={
+		name=NAL_Theodore_Roosevelt
+		portraits={
+			civilian={
+				large="gfx/leaders/NAL/ted.tga"
+			}
+		}
+		country_leader={
+			ideology=new-nationalism
+			desc=NAL_Theodore_Roosevelt_DESC
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}			
+	}

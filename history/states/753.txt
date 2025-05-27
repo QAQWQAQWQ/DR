@@ -2,12 +2,13 @@ state={
 	id=753
 	name="STATE_753"
 	provinces={
-		1257 4375 4403 5193 9966 10787 10903
+		1257  4403 5193  10787 10903
+		 
 	}
 	resources={
-		grain=23
+		grain=10
 	}
-	manpower=3000000
+	manpower=200000
 	buildings_max_level_factor=1.000
 	state_category = rural
 	history={

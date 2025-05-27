@@ -109,3 +109,7 @@ set_popularities = {
 	
 }
 give_guarantee = GGZ
+set_autonomy = {
+	target = TRT
+	autonomy_state = autonomy_supervised_state
+}
