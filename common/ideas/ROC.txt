@@ -1,0 +1,11 @@
+ideas = {
+    country = {
+		ROC_Part_company = {
+			picture = Part_company
+			modifier = {
+				stability_factor = -0.02
+				political_power_cost = 0.05
+            }
+		}
+}
+}

@@ -187,8 +187,14 @@ FRW_Socialist_Transformation_Program = {
 	priority = 4
 	allowed = {                  
 		tag = FRW
+		
 	}  
 	visible = {
+		OR={
+			has_completed_focus = FRW_focus60
+			has_completed_focus = FRW_focus86
+			has_completed_focus = FRW_focus52
+		} 
 		#has_completed_focus = FRW_focus150
 	}
 }

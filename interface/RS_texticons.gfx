@@ -253,6 +253,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_ROC_Country_Introduction"
+		texturefile = "gfx/interface/textpicture/ROC_Country_Introduction.png" 
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_south_america_Country_Introduction"
 		texturefile = "gfx/interface/textpicture/south_america_Country_Introduction.png" 
 		legacy_lazy_load = no

@@ -223,7 +223,6 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				has_completed_focus = FRW_focus85
 			}
 			traits = {
 				Ultra_socialist
@@ -248,9 +247,13 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				is_country_leader = no
-			    is_political_advisor = no
-			  }
+				custom_trigger_tooltip = {
+					hidden_trigger = {
+						has_stability = 100
+					}
+					tooltip = no_advisor
+				}
+			}
 			traits = {
 				head_of_government
 			}
@@ -277,10 +280,14 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				has_completed_focus = FRW_focus9
-				is_country_leader = no
-			    is_political_advisor = no
-			  }
+				custom_trigger_tooltip = {
+					hidden_trigger = {
+						has_stability = 100
+					}
+					tooltip = no_advisor
+				}
+				
+			}
 			traits = {
 				head_of_government
 				pragmatic_socialist
@@ -348,9 +355,13 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				is_country_leader = no
-			not_already_hired_except_as = political_advisor
-			  }
+				custom_trigger_tooltip = {
+					hidden_trigger = {
+						has_stability = 100
+					}
+					tooltip = no_advisor
+				}
+			}
 			traits = {
 				compassionate_gentleman
 			}
@@ -366,8 +377,12 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				is_country_leader = no
-			    is_political_advisor = no
+				custom_trigger_tooltip = {
+					hidden_trigger = {
+						has_stability = 100
+					}
+					tooltip = no_advisor
+				}
 			  }
 			traits = {
 				head_of_government
@@ -394,9 +409,12 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				has_completed_focus = FRW_focus5
-				is_country_leader = no
-			is_political_advisor = no
+				custom_trigger_tooltip = {
+					hidden_trigger = {
+						has_stability = 100
+					}
+					tooltip = no_advisor
+				}
 			  }
 			traits = {
 				head_of_government
@@ -415,8 +433,7 @@ characters={
 			}
 			available = {
 				#has_completed_focus = FRW_focus17
-				is_country_leader = no
-			not_already_hired_except_as = political_advisor
+				
 			}
 			traits = {
 			}
@@ -441,9 +458,12 @@ characters={
 					original_tag = FRW
 				}
 				available = {
-					has_completed_focus = FRW_focus64
-					is_country_leader = no
-			is_political_advisor = no
+					custom_trigger_tooltip = {
+						hidden_trigger = {
+							has_stability = 100
+						}
+						tooltip = no_advisor
+					}
 				  }
 				traits = {
 					head_of_government
@@ -461,9 +481,12 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				has_country_flag = Benoit_Frachon_P
-				is_country_leader = no
-			    not_already_hired_except_as = political_advisor
+				custom_trigger_tooltip = {
+					hidden_trigger = {
+						has_stability = 100
+					}
+					tooltip = no_advisor
+				}
 			  }
 			traits = {
 				connected_citizen
@@ -488,8 +511,12 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				is_country_leader = no
-			not_already_hired_except_as = political_advisor
+				custom_trigger_tooltip = {
+					hidden_trigger = {
+						has_stability = 100
+					}
+					tooltip = no_advisor
+				}
 			  }
 			traits = {
 				compassionate_gentleman
@@ -506,8 +533,12 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				is_country_leader = no
-			is_political_advisor = no
+				custom_trigger_tooltip = {
+					hidden_trigger = {
+						has_stability = 100
+					}
+					tooltip = no_advisor
+				}
 			  }
 			traits = {
 				head_of_government
@@ -533,9 +564,7 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				has_country_flag = Marcel_Deat_P
-				is_country_leader = no
-			not_already_hired_except_as = political_advisor
+				has_completed_focus = FRW_focus85
 			  }
 			traits = {
 				ideological_groupie
@@ -566,8 +595,12 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				is_country_leader = no
-			is_political_advisor = no
+				custom_trigger_tooltip = {
+					hidden_trigger = {
+						has_stability = 100
+					}
+					tooltip = no_advisor
+				}
 			  }
 			traits = {
 				head_of_government
@@ -585,8 +618,7 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				is_country_leader = no
-			not_already_hired_except_as = political_advisor
+				
 			  }
 			traits = {
 				left_trade_unionist
@@ -611,9 +643,12 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				has_completed_focus = FRW_Second_Revolution
-				is_country_leader = no
-			not_already_hired_except_as = political_advisor
+				custom_trigger_tooltip = {
+					hidden_trigger = {
+						has_stability = 100
+					}
+					tooltip = no_advisor
+				}
 			  }
 			traits = {
 				devoted_marxist
@@ -638,8 +673,7 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				is_country_leader = no
-			not_already_hired_except_as = political_advisor
+				
 			  }
 			traits = {
 				peoples_commissar_for_posts_and_telegraphs
@@ -665,8 +699,7 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				is_country_leader = no
-			not_already_hired_except_as = political_advisor
+				
 			  }
 			traits = {
 				
@@ -691,8 +724,7 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				is_country_leader = no
-			not_already_hired_except_as = political_advisor
+				
 			  }
 			traits = {
 				Talented_orator
@@ -723,8 +755,12 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				is_country_leader = no
-			not_already_hired_except_as = political_advisor
+				custom_trigger_tooltip = {
+					hidden_trigger = {
+						has_stability = 100
+					}
+					tooltip = no_advisor
+				}
 			  }
 			traits = {
 				Sorelists
@@ -741,8 +777,12 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				is_country_leader = no
-			is_political_advisor = no
+				custom_trigger_tooltip = {
+					hidden_trigger = {
+						has_stability = 100
+					}
+					tooltip = no_advisor
+				}
 			  }
 			traits = {
 				head_of_government
@@ -770,8 +810,7 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				is_country_leader = no
-			not_already_hired_except_as = political_advisor
+				
 			  }
 			traits = {
 				Minister_of_Armaments
@@ -798,8 +837,12 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				is_country_leader = no
-			not_already_hired_except_as = political_advisor
+				custom_trigger_tooltip = {
+					hidden_trigger = {
+						has_stability = 100
+					}
+					tooltip = no_advisor
+				}
 			  }
 			traits = {
 				Anti_revisionists
@@ -860,8 +903,12 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				is_country_leader = no
-			    is_political_advisor = no
+				custom_trigger_tooltip = {
+					hidden_trigger = {
+						has_stability = 100
+					}
+					tooltip = no_advisor
+				}
 			  }
 			traits = {
 				head_of_government
@@ -888,8 +935,12 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				is_country_leader = no
-			not_already_hired_except_as = political_advisor
+				custom_trigger_tooltip = {
+					hidden_trigger = {
+						has_stability = 100
+					}
+					tooltip = no_advisor
+				}
 			  }
 			traits = {
 				militant_socialist
@@ -906,8 +957,12 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				is_country_leader = no
-			is_political_advisor = no
+				custom_trigger_tooltip = {
+					hidden_trigger = {
+						has_stability = 100
+					}
+					tooltip = no_advisor
+				}
 			  }
 			traits = {
 				head_of_government
@@ -933,9 +988,12 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				has_completed_focus = FRW_focus15
-				is_country_leader = no
-			not_already_hired_except_as = political_advisor
+				custom_trigger_tooltip = {
+					hidden_trigger = {
+						has_stability = 100
+					}
+					tooltip = no_advisor
+				}
 			  }
 			traits = {
 				economy_reformer
@@ -960,8 +1018,12 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				is_country_leader = no
-			not_already_hired_except_as = political_advisor
+				custom_trigger_tooltip = {
+					hidden_trigger = {
+						has_stability = 100
+					}
+					tooltip = no_advisor
+				}
 			  }
 			traits = {
 				traditionalist_theorist
@@ -986,8 +1048,12 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				is_country_leader = no
-			    not_already_hired_except_as = political_advisor
+				custom_trigger_tooltip = {
+					hidden_trigger = {
+						has_stability = 100
+					}
+					tooltip = no_advisor
+				}
 			  }
 			traits = {
 				hawk
@@ -1006,34 +1072,18 @@ characters={
 			}
 		}
 		advisor={
-			slot = head_of_government
-			idea_token = FRW_Monmousseau_H
-			allowed = {
-				original_tag = FRW
-			}
-			available = {
-				has_completed_focus = FRW_focus88
-				is_country_leader = no
-			is_political_advisor = no
-			  }
-			traits = {
-				stalin_servant_of_lenin
-			}
-			cost = 50
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-		advisor={
 			slot = political_advisor
 			idea_token = FRW_Monmousseau_P
 			allowed = {
 				original_tag = FRW
 			}
 			available = {
-				has_completed_focus = FRW_focus88
-				is_country_leader = no
-			not_already_hired_except_as = political_advisor
+				custom_trigger_tooltip = {
+					hidden_trigger = {
+						has_stability = 100
+					}
+					tooltip = no_advisor
+				}
 			  }
 			traits = {
 				Minister_Affairs
@@ -1058,8 +1108,12 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				is_country_leader = no
-			is_political_advisor = no
+				custom_trigger_tooltip = {
+					hidden_trigger = {
+						has_stability = 100
+					}
+					tooltip = no_advisor
+				}
 			  }
 			traits = {
 				head_of_government
@@ -1077,8 +1131,12 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				is_country_leader = no
-			not_already_hired_except_as = political_advisor
+				custom_trigger_tooltip = {
+					hidden_trigger = {
+						has_stability = 100
+					}
+					tooltip = no_advisor
+				}
 			  }
 			traits = {
 				stalin_architect_of_communism
@@ -1111,9 +1169,12 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				has_completed_focus = FRW_focus55
-				is_country_leader = no
-			not_already_hired_except_as = political_advisor
+				custom_trigger_tooltip = {
+					hidden_trigger = {
+						has_stability = 100
+					}
+					tooltip = no_advisor
+				}
 			  }
 			traits = {
 				protector_of_the_campesinos
@@ -1141,9 +1202,13 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				is_country_leader = no
-			is_political_advisor = no
-
+				
+				custom_trigger_tooltip = {
+					hidden_trigger = {
+						has_stability = 100
+					}
+					tooltip = no_advisor
+				}
 			  }
 			traits = {
 				Comite_communal
@@ -1188,7 +1253,6 @@ characters={
 				original_tag = FRW
 			}
 			available = {
-				has_completed_focus = FRW_focus_army2
 			}
 			traits = {
 				army_chief_reform_1

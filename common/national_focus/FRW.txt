@@ -2051,7 +2051,9 @@ has_country_leader = {
 						}
 				}
 			completion_reward = {
-
+				BEL={
+					country_event = FRW.65
+				}
 }
 
 	}
@@ -2258,7 +2260,8 @@ has_country_leader = {
 						}
 				}
 			completion_reward = {
-					add_political_power = 100
+				unlock_decision_category_tooltip = FRW_Socialist_Transformation_Program
+				add_political_power = 100
 				}
 
 	}
@@ -2407,7 +2410,17 @@ has_country_leader = {
 		}
 		x = 52
 		y = 1
-
+		available = {
+			OR={
+				has_government = Reformism
+				has_government = Revolutionism
+			}
+			
+		}
+		completion_reward = {
+			add_political_power = 50
+			custom_effect_tooltip = FRW_focus144_effect
+		}
 	}
 	focus = {
 		id = FRW_focus147
@@ -2586,7 +2599,14 @@ has_country_leader = {
 		}
 		x = 54
 		y = 2
-
+		completion_reward = {
+			ROC = {
+				add_opinion_modifier = {
+					target = FRW
+					modifier = satisfied
+				}
+			}
+		}
 	}
 	focus = {
 		id = FRW_focus148

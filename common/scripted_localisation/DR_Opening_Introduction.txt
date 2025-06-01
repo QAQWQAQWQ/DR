@@ -28,6 +28,7 @@ defined_text = {
 			}
 			NOT={
 				original_tag = JPN
+				original_tag = ROC
 			}
 		}
 		localization_key = asia_Country_Introduction
@@ -89,6 +90,10 @@ defined_text = {
    text = {
 	trigger = { original_tag = RMA }
 	localization_key = RMA_Country_Introduction
+   }
+   text = {
+	trigger = { original_tag = ROC }
+	localization_key = ROC_Country_Introduction
    }
    text = {
 	trigger = { original_tag = TEQ }
