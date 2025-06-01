@@ -1,4 +1,16 @@
 characters={
-
-	
-}
+	PUL_Joao_Antonio_Sequeira={
+		name=PUL_Joao_Antonio_Sequeira
+		portraits={
+			civilian={
+				large="gfx/leaders/PUL/portrait_Joao_Antonio_Sequeira.tga"
+			}
+		}
+		country_leader={
+			ideology=autocratic-colonial-government
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

@@ -1088,21 +1088,24 @@ country_event = {
 		}
 	option = {
 		name = FRW.30.a
-		add_dynamic_modifier = {
-			modifier = Introduction_tractors_dy
+		31={
+			add_extra_state_shared_building_slots = 1
+		}
+		22={
+			add_extra_state_shared_building_slots = 1
 		}
 	}
 	option = {
 		name = FRW.30.b
 		31={
 			add_building_construction = {
-				type = grain_farms
+				type = Farm_building
 				level = 1
 			}
 		}
 		22={
 			add_building_construction = {
-				type = grain_farms
+				type = Farm_building
 				level = 1
 			}
 		}
@@ -1880,5 +1883,32 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = FRW.62.a 
+	}
+}
+
+country_event = {
+	id = FRW.63
+	title = FRW.63.t
+	desc = FRW.63.d
+	picture = GFX_Eu_election
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW.63.a 
+	}
+}
+country_event = {
+	id = FRW.64
+	title = FRW.64.t
+	desc = FRW.64.d
+	picture = GFX_Eu_election
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW.64.a 
+		swap_ideas = {
+			remove_idea = secondary_school
+			add_idea = secondary_school
+		}
 	}
 }

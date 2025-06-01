@@ -2,7 +2,7 @@
 #Templates
 ########
 division_template = {
-	name = "Milice Populaire" #Militias
+	name = "法国本土防卫军" #Militias
 	division_names_group = FRW_MIL_01
 	regiments = {
 		militia = { x = 0 y = 0 }
@@ -14,7 +14,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Division d'Infanterie Fédérale" #Line Infantry w/ Artillery
+	name = "法国国民军" #Line Infantry w/ Artillery
 	division_names_group = FRW_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -33,7 +33,7 @@ division_template = {
 	template_counter = 202
 }
 division_template = {
-	name = "Division de Cavalerie Légère"	# Division de Cavalerie
+	name = "骑兵师"	# Division de Cavalerie
 	division_names_group = FRW_CAV_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -45,7 +45,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Division Motorisée"		# Division Légère Mécanique
+	name = "摩托化师"		# Division Légère Mécanique
 	division_names_group = FRW_MOT_01
 	regiments = {
 		motorized = { x = 0 y = 0 }		# Bn. of Hotchkiss, then Souma (Med.) tanks
@@ -65,7 +65,7 @@ units = {
 			name_order = 14
 		}
 		location = 3536
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
@@ -75,7 +75,7 @@ units = {
 			name_order = 15
 		}
 		location = 3536
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
@@ -85,7 +85,7 @@ units = {
 			name_order = 13
 		}
 		location = 11548
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
@@ -95,7 +95,7 @@ units = {
 			name_order = 1
 		}
 		location = 454
-		division_template = "Division de Cavalerie Légère"
+		division_template = "骑兵师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
@@ -105,7 +105,7 @@ units = {
 			name_order = 2
 		}
 		location = 454
-		division_template = "Division de Cavalerie Légère"
+		division_template = "骑兵师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
@@ -115,7 +115,7 @@ units = {
 			name_order = 3
 		}
 		location = 454
-		division_template = "Division de Cavalerie Légère"
+		division_template = "骑兵师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
@@ -125,7 +125,7 @@ units = {
 			name_order = 28
 		}
 		location = 11483
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
@@ -135,7 +135,7 @@ units = {
 			name_order = 29
 		}
 		location = 11483
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
@@ -155,7 +155,7 @@ units = {
 			name_order = 7
 		}
 		location = 3402
-		division_template = "Division de Cavalerie Légère"
+		division_template = "骑兵师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
@@ -165,7 +165,7 @@ units = {
 			name_order = 8
 		}
 		location = 3402
-		division_template = "Division de Cavalerie Légère"
+		division_template = "骑兵师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
@@ -175,7 +175,7 @@ units = {
 			name_order = 10
 		}
 		location = 3402
-		division_template = "Division de Cavalerie Légère"
+		division_template = "骑兵师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
@@ -195,7 +195,7 @@ units = {
 			name_order = 17
 		}
 		location = 11606
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
@@ -205,7 +205,7 @@ units = {
 			name_order = 18
 		}
 		location = 11606
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
@@ -215,7 +215,7 @@ units = {
 			name_order = 19
 		}
 		location = 9472
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
@@ -225,7 +225,7 @@ units = {
 			name_order = 20
 		}
 		location = 9472
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
@@ -235,7 +235,7 @@ units = {
 			name_order = 21
 		}
 		location = 9472
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
@@ -285,7 +285,7 @@ units = {
 			name_order = 23
 		}
 		location = 9505
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
@@ -295,7 +295,7 @@ units = {
 			name_order = 24
 		}
 		location = 9505
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
@@ -305,7 +305,7 @@ units = {
 			name_order = 7
 		}
 		location = 11642
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
@@ -315,7 +315,7 @@ units = {
 			name_order = 8
 		}
 		location = 11642
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
@@ -325,7 +325,7 @@ units = {
 			name_order = 9
 		}
 		location = 11642
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
@@ -335,7 +335,7 @@ units = {
 			name_order = 1
 		}
 		location = 9642
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
@@ -345,7 +345,7 @@ units = {
 			name_order = 2
 		}
 		location = 9642
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
@@ -386,7 +386,7 @@ units = {
 			name_order = 12
 		}
 		location = 11506
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
@@ -396,7 +396,7 @@ units = {
 			name_order = 13
 		}
 		location = 11506
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
@@ -404,28 +404,28 @@ units = {
 	division = {
 		name = "3ème Division Légère Mécanisée"
 		location = 667
-		division_template = "Division de Cavalerie Légère"
+		division_template = "骑兵师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "4ème Division Légère Mécanisée"
 		location = 667
-		division_template = "Division de Cavalerie Légère"
+		division_template = "骑兵师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "5ème Division Légère Mécanisée"
 		location = 667
-		division_template = "Division de Cavalerie Légère"
+		division_template = "骑兵师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "7ème Division Légère Mécanisée"
 		location = 667
-		division_template = "Division de Cavalerie Légère"
+		division_template = "骑兵师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
@@ -465,7 +465,7 @@ units = {
 			name_order = 4
 		}
 		location = 3650
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
@@ -475,7 +475,7 @@ units = {
 			name_order = 5
 		}
 		location = 3650
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
@@ -485,7 +485,7 @@ units = {
 			name_order = 6
 		}
 		location = 3650
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
@@ -543,7 +543,7 @@ units = {
 	division = {
 		name = "1ère Division d'Infanterie-Artilleurs"
 		location = 6613
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
@@ -573,7 +573,7 @@ units = {
 			name_order = 25
 		}
 		location = 3768
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
@@ -583,7 +583,7 @@ units = {
 			name_order = 26
 		}
 		location = 3768
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
@@ -600,14 +600,14 @@ units = {
 	division = {
 		name = "2ème Division d'Infanterie-Artilleurs"
 		location = 11834
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "3ème Division d'Infanterie-Artilleurs"
 		location = 11834
-		division_template = "Division d'Infanterie Fédérale"
+		division_template = "法国国民军"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}

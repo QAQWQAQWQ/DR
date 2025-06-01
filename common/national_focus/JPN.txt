@@ -1017,7 +1017,9 @@ focus_tree = {
 		}
 		x = 36
 		y = 9
-
+		completion_reward = {
+			country_event = JPN.28
+		}
 	}
 	focus = {
 		id = JPN_focus_47

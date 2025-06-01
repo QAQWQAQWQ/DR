@@ -1443,32 +1443,7 @@ FRW_army_revolution5 = {
  
 
 FRW_election_movement = {
-	FRW_election_movement0 = {
-		icon = generic_ignite_civil_war
-		visible = {
-		
-		}
-		available = {
-		   
-		}
-		days_remove = 30
-		cost = 30
-		allowed = {
-			tag = FRW
-		}
-		complete_effect = { 
-		   country_event = FRW.12
-		  
-		}
-		fixed_random_seed = no
-		fire_only_once = no
-		is_good = no
-			ai_will_do = {
-			factor = 1
-			
-		} 
-		 
-	} 
+	
 	FRW_election_movement1 = {
 	icon = generic_ignite_civil_war
 	activation = {
@@ -1494,172 +1469,6 @@ FRW_election_movement = {
 	}
 }
 
-FRW_election_movement2 = {
-	icon = generic_ignite_civil_war
-	visible = {
-		
-	}
-	available = {
-      
-	}
-	days_remove = 30
-	cost = 30
-	allowed = {
-		tag = FRW
-	}
-	complete_effect = { 
-       add_popularity = {
-		ideology = Liberalism
-		popularity = 0.03
-	   }
-	   add_political_power = 50
-	}
-	fixed_random_seed = no
-	fire_only_once = no
-	is_good = no
-        ai_will_do = {
-		factor = 1
-		
-	} 
-}
-FRW_election_movement3 = {
-	icon = generic_ignite_civil_war
-	visible = {
-		
-	}
-	available = {
-      
-	}
-	days_remove = 30
-	cost = 30
-	allowed = {
-		tag = FRW
-	}
-	complete_effect = { 
-		add_popularity = {
-			ideology = Liberalism
-			popularity = -0.05
-		}
-		add_stability = -0.01
-		add_political_power = 100
-	}
-	fixed_random_seed = no
-	fire_only_once = no
-	is_good = no
-        ai_will_do = {
-		factor = 1
-		
-	}
-	
-}
-FRW_election_movement4 = {
-	icon = generic_ignite_civil_war
-	visible = {
-		
-	}
-	available = {
-      
-	}
-	days_remove = 30
-	cost = 30
-	allowed = {
-		tag = FRW
-	}
-	complete_effect = { 
-	}
-	fixed_random_seed = no
-	fire_only_once = no
-	is_good = no
-        ai_will_do = {
-		factor = 1
-		
-	}
-	
-}
-FRW_election_movement5= {
-	icon = generic_ignite_civil_war
-	visible = {
-		
-	}
-	available = {
-      
-	}
-	days_remove = 30
-	cost = 30
-	allowed = {
-		tag = FRW
-	}
-	complete_effect = { 
-		add_popularity = {
-			ideology = Revolutionism
-			popularity = 0.03
-		   }
-		   add_political_power = 50
-	}
-	fixed_random_seed = no
-	fire_only_once = no
-	is_good = no
-        ai_will_do = {
-		factor = 1
-		
-	}
-	
-}
-FRW_election_movement6= {
-	icon = generic_ignite_civil_war
-	visible = {
-		
-	}
-	available = {
-      
-	}
-	days_remove = 30
-	cost = 30
-	allowed = {
-		tag = FRW
-	}
-	complete_effect = { 
-		add_popularity = {
-			ideology = Revolutionism
-			popularity = -0.05
-		}
-		add_stability = -0.01
-		add_political_power = 100
-	}
-	fixed_random_seed = no
-	fire_only_once = no
-	is_good = no
-        ai_will_do = {
-		factor = 1
-		
-	}
-	
-}
-FRW_election_movement7 = {
-	icon = generic_ignite_civil_war
-	visible = {
-		
-	}
-	available = {
-      
-	}
-	days_remove = 30
-	cost = 30
-	allowed = {
-		tag = FRW
-	}
-
-	complete_effect = { 
-	}
-	fixed_random_seed = no
-	fire_only_once = no
-	is_good = no
-        ai_will_do = {
-		factor = 1
-		
-	}
-	
-}
 }
 
 
@@ -2921,6 +2730,10 @@ FRW_Socialist_Transformation_Program = {
 		tag = FRW
 	}
 	complete_effect = { 
+		swap_ideas = {
+			remove_idea = export_focus
+			add_idea = limited_exports
+		}
 	}
 	fixed_random_seed = no
 	fire_only_once = yes
@@ -2933,6 +2746,10 @@ FRW_Socialist_Transformation_Program = {
 		visible = {
 		}
 		available = {
+			OR={
+				has_government = Reformism
+				has_government = Revolutionism
+			}
 		}
 		days_re_enable = 30
 		days_remove = 60
@@ -2960,7 +2777,12 @@ FRW_Socialist_Transformation_Program = {
 		allowed = {
 			tag = FRW
 		}
+		modifier = {
+			research_speed_factor = 0.1
+			before_national_factory_tot_cost_modifier=0.1
+		}
 		complete_effect = { 
+
 		}
 		fixed_random_seed = no
 		fire_only_once = yes
@@ -2973,14 +2795,32 @@ FRW_Socialist_Transformation_Program = {
 		visible = {
 		}
 		available = {
+			OR={
+				has_government = Reformism
+				has_government = Revolutionism
+			}
 		}
 		days_re_enable = 30
-		days_remove = 60
+		days_remove = 180
 		cost = 35
 		allowed = {
 			tag = FRW
 		}
 		complete_effect = { 
+			random_core_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_core_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 		fixed_random_seed = no
 		fire_only_once = yes
@@ -2995,12 +2835,16 @@ FRW_Socialist_Transformation_Program = {
 		available = {
 		}
 		days_re_enable = 30
-		days_remove = 60
+		days_remove = 100
 		cost = 35
 		allowed = {
 			tag = FRW
 		}
+		modifier = {
+			new_nat_tre_modifier = 0.1 
+		}
 		complete_effect = { 
+			add_political_power = 50
 		}
 		fixed_random_seed = no
 		fire_only_once = yes
@@ -3020,7 +2864,12 @@ FRW_Socialist_Transformation_Program = {
 		allowed = {
 			tag = FRW
 		}
+		modifier = {
+			people_cost_modifier=0.15
+		}
 		complete_effect = { 
+			add_political_power = 30
+			add_stability = 0.05
 		}
 		fixed_random_seed = no
 		fire_only_once = yes
@@ -3041,6 +2890,8 @@ FRW_Socialist_Transformation_Program = {
 			tag = FRW
 		}
 		complete_effect = { 
+			add_political_power = 30
+			add_stability = 0.05
 		}
 		fixed_random_seed = no
 		fire_only_once = yes

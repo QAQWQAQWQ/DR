@@ -322,10 +322,10 @@ focus_tree = {
 		x = 23
 		y = 8
 			available = {
-					#has_country_leader = {
-					#		character = FRW_guesde
-					#		ruling_only = yes
-					#	}
+					has_country_leader = {
+							character = FRW_guesde
+							ruling_only = yes
+						}
 				}
 			allow_branch = {
 																																																																																																																								#has_country_leader = #character = # ruling_only = #}#has_country_leader = #character = # ruling_only = #has_country_leader = #character = # ruling_only = #}#has_country_leader = #character = # ruling_only = #has_country_leader = #character = # ruling_only = #}#has_country_leader = #character = # ruling_only = #has_country_leader = #character = # ruling_only = #}#has_country_leader = #character = # ruling_only = yes
@@ -425,11 +425,10 @@ focus_tree = {
 		x = 14
 		y = 5
 			allow_branch = {
-																																																												#has_country_leader = #  character = #  ruling_only = # #has_country_leader = #  character = #  ruling_only = yes
-#has_country_leader = #  character = #  ruling_only = # }
-#has_country_leader = {
-#  character = FRW_Georges_Sorel
-#  ruling_only = yes
+has_country_leader = {
+  character = FRW_Georges_Sorel
+  ruling_only = yes
+}
 #has_country_leader = #  character = #  ruling_only = # #has_country_leader = #  character = #  ruling_only = yes
 #has_country_leader = #  character = #  ruling_only = # }
 #has_country_leader = {
@@ -446,27 +445,6 @@ focus_tree = {
 #  character = FRW_Georges_Sorel
 #  ruling_only = yes
 }
-			#has_country_leader = #  character = #  ruling_only = # #has_country_leader = #  character = #  ruling_only = yes
-			#has_country_leader = #  character = #  ruling_only = # }
-			#has_country_leader = {
-			#  character = FRW_Georges_Sorel
-			#  ruling_only = yes
-			#has_country_leader = #  character = #  ruling_only = # #has_country_leader = #  character = #  ruling_only = yes
-			#has_country_leader = #  character = #  ruling_only = # }
-			#has_country_leader = {
-			#  character = FRW_Georges_Sorel
-			#  ruling_only = yes
-			#has_country_leader = #  character = #  ruling_only = # #has_country_leader = #  character = #  ruling_only = yes
-			#has_country_leader = #  character = #  ruling_only = # }
-			#has_country_leader = {
-			#  character = FRW_Georges_Sorel
-			#  ruling_only = yes
-			#has_country_leader = #  character = #  ruling_only = # #has_country_leader = #  character = #  ruling_only = yes
-			#has_country_leader = #  character = #  ruling_only = # }
-			#has_country_leader = {
-			#  character = FRW_Georges_Sorel
-			#  ruling_only = yes
-			# }
 			available = {
 
 }
@@ -1064,6 +1042,10 @@ focus_tree = {
 		x = 21
 		y = 10
 			completion_reward = {
+				add_power_balance_value = {
+					id = FRW_Power_struggles_balance
+					value = 0.05
+				}
 					set_temp_variable = {
 							temp_member = 1
 						}
@@ -1088,6 +1070,10 @@ focus_tree = {
 		x = 24
 		y = 10
 			completion_reward = {
+				add_power_balance_value = {
+					id = FRW_Power_struggles_balance
+					value = 0.05
+				}
 					country_event = {
 							id = FRW.59
 							days = 5
@@ -1171,7 +1157,7 @@ focus_tree = {
 				}
 			#check_variable = { parliament_seat_array^temp_seats^1 = 11 }
 			completion_reward = {
-					add_political_power = 200
+					add_political_power = 50
 				}
 
 	}
@@ -1276,7 +1262,7 @@ focus_tree = {
 				}
 			#check_variable = { parliament_seat_array^temp_seats^1 = 11 }
 			completion_reward = {
-					add_political_power = 200
+					add_political_power = 100
 				}
 
 	}
@@ -1434,10 +1420,8 @@ focus_tree = {
 							temp_Scholar_support = 5
 						}
 					Scholar_support_add = yes
-					swap_ideas = {
-							remove_idea = secondary_school
-							add_idea = university_level
-						}
+					country_event = {id=FRW.64 days=365}
+					custom_effect_tooltip = FRW_focus69_effect
 				}
 
 	}
@@ -1457,6 +1441,7 @@ focus_tree = {
 						}
 				}
 			completion_reward = {
+				add_political_power = 40
 					add_popularity = {
 							ideology = Conservatism
 							popularity = -0.1
@@ -1621,6 +1606,10 @@ focus_tree = {
 		x = 31
 		y = 13
 			completion_reward = {
+				add_power_balance_value = {
+					id = FRW_Power_struggles_balance
+					value = -0.05
+				}
 					swap_ideas = {
 							remove_idea = Affirmative_action
 							add_idea = Radical_feminism
@@ -1666,7 +1655,7 @@ focus_tree = {
 			completion_reward = {
 					add_power_balance_value = {
 							id = FRW_Power_struggles_balance
-							value = 0.05
+							value = -0.05
 						}
 					set_temp_variable = {
 							temp_Bureaucratic_support = 5
@@ -1802,6 +1791,10 @@ focus_tree = {
 		x = 37
 		y = 13
 			completion_reward = {
+				add_power_balance_value = {
+					id = FRW_Power_struggles_balance
+					value = -0.05
+				}
 					add_ideas = FRW_Working_women
 				}
 
@@ -1853,6 +1846,7 @@ focus_tree = {
 							remove_idea = Mixed_economy
 							add_idea = Market_economy
 						}
+						unlock_decision_category_tooltip = FRW_Socialist_Transformation_Program
 				}
 
 	}
@@ -1872,6 +1866,10 @@ focus_tree = {
 						}
 				}
 			completion_reward = {
+				set_temp_variable = {
+					temp_Farmer_support = 5
+				}
+			Farmer_support_add = yes
 					unlock_decision_tooltip = FRW_Develop_rural_areas
 				}
 
@@ -1968,10 +1966,10 @@ focus_tree = {
 		x = 39
 		y = 14
 			completion_reward = {
-					add_power_balance_value = {
-							id = FRW_Power_struggles_balance
-							value = 0.05
-						}
+				add_power_balance_value = {
+					id = FRW_Power_struggles_balance
+					value = -0.05
+				}
 					set_temp_variable = {
 							temp_Bureaucratic_support = 5
 						}
@@ -2099,12 +2097,22 @@ focus_tree = {
 							ruling_only = yes
 						}
 				}
-			completion_reward = {
-					create_intelligence_agency = {
-							name = "法兰西国家安全局"
-							icon = GFX_intelligence_agency_logo_agency
-						}
+		completion_reward = {
+			16 = {
+				create_unit = {
+				  division = "division_template = \"法国国民军\" start_experience_factor = 0.5 " 
+					 owner = FRW
 				}
+				create_unit = {
+					division = "division_template = \"法国国民军\" start_experience_factor = 0.5 " 
+					   owner = FRW
+				  }
+				  create_unit = {
+					division = "division_template = \"法国国民军\" start_experience_factor = 0.5 " 
+					   owner = FRW
+				  }
+		  }
+		}
 
 	}
 	focus = {
@@ -2144,6 +2152,7 @@ focus_tree = {
 						}
 				}
 			completion_reward = {
+					add_ideas = service_by_requirement
 					unlock_decision_tooltip = FRW_Cooperate_right
 				}
 
@@ -2167,6 +2176,7 @@ focus_tree = {
 						}
 				}
 			completion_reward = {
+				add_war_support = 0.2
 					create_wargoal = {
 							target = AOX
 							type = take_state_focus
@@ -2225,6 +2235,9 @@ focus_tree = {
 		prerequisite = {
 			focus = FRW_focus22
 		}
+		available = {
+			has_country_flag = win_ww1
+		}
 		x = 47
 		y = 3
 
@@ -2265,6 +2278,11 @@ focus_tree = {
 						}
 				}
 			completion_reward = {
+				unlock_decision_tooltip = FRW_Develop_rural_areas
+				set_temp_variable = {
+					temp_Farmer_support = 5
+				}
+				Farmer_support_add = yes
 					24 = {
 							add_dynamic_modifier = {
 									modifier = SWE_hygenic_housing_output_bonus
@@ -2286,11 +2304,7 @@ focus_tree = {
 								}
 						}
 					add_popularity = {
-							ideology = Reformism
-							popularity = 0.05
-						}
-					add_popularity = {
-							ideology = Revolutionism
+							ideology = Conservatism
 							popularity = 0.05
 						}
 					add_stability = 0.03
@@ -2306,7 +2320,16 @@ focus_tree = {
 		}
 		x = 48
 		y = 11
-
+		completion_reward = {
+			set_temp_variable = {
+				temp_Worker_support = -5
+			}
+			Worker_support_add = yes
+			swap_ideas = {
+				remove_idea = Local_trade_unions
+				add_idea = Trade_union_neutrality
+			}
+		}
 	}
 	focus = {
 		id = FRW_focus163
@@ -2318,8 +2341,9 @@ focus_tree = {
 		x = 47
 		y = 12
 		completion_reward = {
+			add_political_power = 20
 			set_temp_variable = {
-				temp_Worker_support = 5
+				temp_Worker_support = 10
 			}
 			Worker_support_add = yes
 		}
@@ -2354,7 +2378,9 @@ focus_tree = {
 		}
 		x = 49
 		y = 12
-
+		completion_reward = {
+			add_political_power = 50
+		}
 	}
 	focus = {
 		id = FRW_focus169
@@ -2365,7 +2391,12 @@ focus_tree = {
 		}
 		x = 48
 		y = 13
-
+		completion_reward = {
+			add_popularity = {
+				ideology = Reformism
+				popularity = -0.1
+			}
+		}
 	}
 	focus = {
 		id = FRW_focus144
@@ -2387,7 +2418,20 @@ focus_tree = {
 		}
 		x = 50
 		y = 2
-
+		completion_reward = {
+			AOX={
+				add_opinion_modifier = {
+					target = WWS
+					modifier = protest
+				}
+			}
+			WWS={
+				add_opinion_modifier = {
+					target = AOX
+					modifier = protest
+				}
+			}
+		}
 	}
 	focus = {
 		id = FRW_focus61
@@ -2425,8 +2469,23 @@ focus_tree = {
 						}
 				}
 			completion_reward = {
-					unlock_decision_tooltip = FRW_Develop_rural_areas
-				}
+				24={
+					build_railway = {
+						level = 1
+						controller_priority = {
+							base = 1
+							modifier = {
+								tag = FRW
+								add = 2
+							}
+						}
+						fallback = yes
+						start_province = 11631
+						target_province = 6518
+					}
+				} 
+				
+			}
 
 	}
 	focus = {
@@ -2438,7 +2497,9 @@ focus_tree = {
 		}
 		x = 51
 		y = 12
-
+		completion_reward = {
+			create_intelligence_agency = yes
+		}
 	}
 	focus = {
 		id = FRW_focus166
@@ -2449,7 +2510,13 @@ focus_tree = {
 		}
 		x = 52
 		y = 13
-
+		completion_reward = {
+			set_temp_variable = {
+				temp_Farmer_support = -10
+			}
+			Farmer_support_add = yes
+			add_political_power = 50
+		}
 	}
 	focus = {
 		id = FRW_focus168
@@ -2465,6 +2532,7 @@ focus_tree = {
 				temp_Worker_support = 5
 			}
 			Worker_support_add = yes
+			add_political_power = 30
 		}
 	}
 	focus = { 
@@ -2479,7 +2547,16 @@ focus_tree = {
 		}
 		x = 49
 		y = 14
-
+		completion_reward = {
+			add_popularity = {
+				ideology = Revolutionism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = Anarchism
+				popularity = -0.1
+			}
+		}
 	}
 	focus = {
 		id = FRW_focus146
@@ -2490,7 +2567,15 @@ focus_tree = {
 		}
 		x = 52
 		y = 2
-
+		completion_reward = {
+			custom_effect_tooltip = FRW_focus146_effect
+			ITE = {
+				add_opinion_modifier = {
+					target = FRW
+					modifier = protest
+				}
+			}
+		}
 	}
 	focus = {
 		id = FRW_focus145
@@ -2521,7 +2606,9 @@ focus_tree = {
 		}
 		x = 52
 		y = 3
-
+		available = {
+			has_country_flag = win_ww1
+		}
 	}
 	focus = {
 		id = FRW_focus84
@@ -2556,6 +2643,10 @@ focus_tree = {
 		x = 22
 		y = 12
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = Mixed_economy
+				add_idea = Planned_economy
+			}
 			custom_effect_tooltip = FRW_focus84_effect
 			hidden_effect = {
 				set_variable = {
@@ -2597,6 +2688,7 @@ focus_tree = {
 		x = 21
 		y = 13
 			completion_reward = {
+				add_war_support = 0.1
 					set_temp_variable = {
 							temp_Army_support = 5
 						}
@@ -2618,6 +2710,10 @@ focus_tree = {
 		x = 24
 		y = 12
 			completion_reward = {
+				add_power_balance_value = {
+					id = FRW_Power_struggles_balance
+					value = 0.05
+				}
 					set_temp_variable = {
 							temp_member = 1
 						}
@@ -2632,6 +2728,10 @@ focus_tree = {
 						}
 					Worker_support_add = yes
 					country_event = FRW.61
+					swap_ideas = {
+						remove_idea = Local_trade_unions
+						add_idea = State_trade_unions
+					}
 				}
 
 	}
@@ -2731,11 +2831,20 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = FRW_focus153
 		}
+		available = {
+			
+		}
+		allow_branch = {
+			has_country_leader = {
+				character = FRW_Daniel_Renoult
+				ruling_only = yes
+		}
+		}
 		x = 19
 		y = 15
-			available = {
+		available = {
 
-}
+		}
 			completion_reward = {
 					promote_character = {
 							character = FRW_Daniel_Renoult
@@ -2811,6 +2920,15 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = FRW_focus90
 		}
+		available = {
+			
+		}
+		allow_branch = {
+			has_country_leader = {
+				character = FRW_Jean_Laurent
+				ruling_only = yes
+			}
+		}
 		x = 26
 		y = 15
 		completion_reward = {
@@ -2862,6 +2980,10 @@ focus_tree = {
 		x = 19
 		y = 16
 			completion_reward = {
+				add_power_balance_value = {
+					id = FRW_Power_struggles_balance
+					value = -0.05
+				}
 					add_popularity = {
 							ideology = Revolutionism
 							popularity = 0.1
