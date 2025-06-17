@@ -111,8 +111,6 @@ ideas = {
 				production_speed_infrastructure_factor=0.05
 				industrial_capacity_factory=0.05
 				production_factory_efficiency_gain_factor=0.05
-
-
 			}
         }
 		FRW_Decentralized_party_organizations = {
@@ -257,126 +255,11 @@ ideas = {
 				production_factory_start_efficiency_factor = 0.1
 			}
         }
-		FRW_patriotism = {
-			picture = patriotism
-			modifier = {
-				army_core_attack_factor = 0.10
-                army_core_defence_factor = 0.10
-			}
-        }
-		FRW_Revolutionary_Legion = {
-			picture = patriotism
-			modifier = {
-				army_attack_factor = 0.25
-                army_defence_factor = 0.25
-			}
-        }
 		FRW_People_Vanguard= {
 			picture = People_Vanguard
 			modifier = {
 				army_attack_factor = 0.15
                 army_defence_factor = 0.15
-			}
-        }
-		FRW_Anti_German = {
-			picture = patriotism
-			modifier = {
-				stability_weekly = -0.01
-				production_speed_arms_factory_factor = 0.15 
-			}
-        }
-		FRW_authority_1 = {
-			picture = authority
-			modifier = {
-				stability_weekly = 0.05
-				drift_defence_factor = 0.2
-				foreign_subversive_activites = -0.30
-			}
-        }
-		FRW_authority_2 = {
-			picture = authority
-			modifier = {
-				stability_weekly = 0.05
-				drift_defence_factor = 0.5
-				foreign_subversive_activites = -0.50
-			}
-        }
-		FRW_woman_1 = {
-			picture = women
-			modifier = {
-				production_factory_max_efficiency_factor = 0.20
-			}
-        }
-		FRW_woman_2 = {
-			picture = women
-			modifier = {
-				industrial_capacity_factory = 0.10
-				line_change_production_efficiency_factor = 0.30
-				production_factory_max_efficiency_factor = 0.20
-			}
-        }
-		FRW_People_Voice = {
-			picture = People_Voice
-			modifier = {
-				political_power_factor = 0.1
-				theorist_cost_factor = -0.25
-				#occupation_cost = -20
-			}
-        }
-		FRW_Nationalization = {
-			picture = Nationalization
-			modifier = {
-				consumer_goods_factor = -0.05
-			}
-        }
-		FRW_science = {
-			picture = science
-			modifier = {
-
-        }
-	}
-		FRW_Incense_reform = {
-			picture = Incense_reform
-			modifier = {
-				consumer_goods_factor = -0.05
-				production_speed_industrial_complex_factor = 0.1
-				production_speed_infrastructure_factor = 0.1
-			}
-        }
-		FRW_Trade_union = {
-			picture = Trade_union
-			modifier = {
-				license_purchase_cost = -0.05
-				production_speed_industrial_complex_factor = 0.05
-				production_speed_infrastructure_factor = 0.05
-			}
-        }
-		FRW_Trade_union2 = {
-			picture = Trade_union
-			modifier = {
-				license_purchase_cost = -0.1
-				production_speed_industrial_complex_factor = 0.1
-				production_speed_infrastructure_factor = 0.1
-			}
-        }
-		FRW_internationalism = {
-			picture = internationalism
-			modifier = {
-				#can_send_volunteers = yes
-				send_volunteer_size = 5
-			}
-        }	
-		FRW_Revolutionary_parliament = {
-			picture = Revolutionary_parliament
-			modifier = {
-				political_power_cost = -0.05
-				political_power_gain = 0.15
-			}
-        }
-		FRW_Three_Year = {
-			picture = Three_Year
-			modifier = {
-				production_factory_max_efficiency_factor = 0.1
 			}
         }
 		FRW_Elway_Thought = {
@@ -394,10 +277,107 @@ ideas = {
 				industrial_capacity_dockyard = 0.1
 			}
         }
-		
-		
+		####共产党路线
+		FRW_One_party_dictatorship = {
+			picture = One_party_dictatorship
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.10
+				political_power_factor = -0.20
+				recruitable_population_factor = 0.05
+			}
+        }
+		FRW_majority_parliament = {
+			picture = majority_parliament
+			modifier = {
+				political_power_factor = 0.10
+				stability_factor = -0.05
+				master_ideology_drift = 10
+			}
+        }
+		####社民路线
+		FRW_Rose_Country = {
+			picture = Rose_Country
+			modifier = {
+				consumer_goods_factor = 0.10
+				stability_factor = 0.20
 
-
+				industrial_capacity_factory = 0.05
+				army_org_factor = -0.05
+			}
+        }
+		FRW_Cultural_diversity = {
+			picture = Cultural_diversity
+			modifier = {
+				research_speed_factor = 0.10
+				operative_slot = 1
+				resistance_target = 0.05
+			}
+        }
+		FRW_Overhead_unions = {
+			picture = Overhead_unions
+			modifier = {
+				political_power_gain= -0.10
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				stability_factor = -0.10
+			}
+        }
+		FRW_State_pension = {
+			picture = State_pension
+			modifier = {
+				consumer_goods_factor = 0.08
+				stability_factor = 0.1
+				war_support_factor = -0.05
+			}
+        }
+		####激进共和党
+		FRW_New_Trade_Union_Law = {
+			picture = New_Trade_Union_Law
+			modifier = {
+				industrial_capacity_factory = 0.08
+				industrial_capacity_dockyard = 0.08
+				production_speed_buildings_factor = -0.05
+				stability_factor = -0.05
+				before_national_factory_tot_cost_modifier= 0.1
+			}
+        }
+		FRW_New_Trade_Union_Law1 = {
+			picture = New_Trade_Union_Law
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_speed_buildings_factor = -0.05
+				before_national_factory_tot_cost_modifier= 0.2
+			}
+        }
+		FRW_Income_tax_reform = {
+			picture = Income_tax_reform
+			modifier = {
+				consumer_goods_factor = -0.10
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.03
+				new_nat_tre_modifier= 0.1
+			}
+        }
+		FRW_Emergency_rotation_shifts = {
+			picture = Emergency_rotation_shifts
+			modifier = {
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.10
+				stability_factor = -0.15
+				war_support_factor = -0.10
+			}
+        }
+		FRW_Long_live_France = {
+			picture = Long_live_France
+			modifier = {
+				war_support_factor = 0.1
+				army_core_attack_factor = 0.10
+				army_defence_factor = 0.10
+			}
+        }
 	}
 
 

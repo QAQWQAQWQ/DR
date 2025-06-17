@@ -1,4 +1,17 @@
 characters={
-
+	EAF_Sir_Hugh_Charles_Clifford={
+		name=EAF_Sir_Hugh_Charles_Clifford
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/Portrait_Sir_Hugh_Charles_Clifford.tga"
+			}
+		}
+		country_leader={
+			ideology=autocratic-colonial-government
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	
 }

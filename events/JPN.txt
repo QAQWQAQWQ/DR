@@ -3,6 +3,83 @@
 ###########################
 
 add_namespace = JPN
+add_namespace = JPA_RUS
+
+
+
+
+
+news_event = {
+	id = JPA_RUS.1
+	title =JPA_RUS.1.t
+	desc =JPA_RUS.1.d
+	picture = GFX_JPA_RUS_1
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+	option = {
+		name =JPA_RUS.1.a
+		news_event = {id=JPA_RUS.3 days=12}
+	}
+}
+
+news_event = {
+	id = JPA_RUS.2
+	title =JPA_RUS.2.t
+	desc =JPA_RUS.2.d
+	picture = GFX_JPA_RUS_2
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+	option = {
+		name =JPA_RUS.2.a
+	}
+}
+
+
+news_event = {
+	id = JPA_RUS.3
+	title =JPA_RUS.3.t
+	desc =JPA_RUS.3.d
+	picture = GFX_JPA_RUS_3
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			655={
+				transfer_state_to = JPN
+			}
+			537={
+				transfer_state_to = JPN
+			}
+			1262={
+				set_demilitarized_zone = no
+			}
+			JPN={
+				puppet = {
+					target = KON
+				}
+			}
+			FTX={
+				annex_country = {
+					target = HLP
+				}
+				annex_country = {
+					target = JLP
+				}
+				set_cosmetic_tag = FTX_JPN
+			}
+		}
+	}
+	option = {
+		name =JPA_RUS.3.a
+	}
+}
+
+
+
+
 country_event = {
 	id = JPN.1
 	title = JPN.1.t
@@ -522,5 +599,31 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = JPN.28.a
+	}
+}
+
+country_event = {
+	id = JPN.29
+	title = JPN.29.t
+	desc = JPN.29.desc
+	picture = GFX_JPN_29
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.29.a
+	}
+}
+
+country_event = {
+	id = JPN.30
+	title = JPN.30.t
+	desc = JPN.30.d
+	picture = GFX_JPN_30
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.30.a
 	}
 }

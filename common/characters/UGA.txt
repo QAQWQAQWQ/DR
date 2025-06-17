@@ -1,4 +1,17 @@
 characters={
-
+	UGA_Daudi_Cwa_II={
+		name=UGA_Daudi_Cwa_II
+		portraits={
+			civilian={
+				large="gfx/leaders/UGA/Portrait_Daudi_Cwa_II.tga"
+			}
+		}
+		country_leader={
+			ideology=ironfist-colonial-assimilation
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	
 }

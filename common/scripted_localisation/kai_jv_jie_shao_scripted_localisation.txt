@@ -27,7 +27,11 @@ defined_text = {
 	text = { #日本介绍
 		trigger = { original_tag =JPN}
 		localization_key = "JPN_jie_shao" 
-	} 
+	}
+	text = { #日本介绍
+		trigger = { original_tag =ROC}
+		localization_key = "ROC_jie_shao" 
+	}  
 	text = { #通用国家介绍
 		localization_key = "tong_yong_jie_shao"
 	}

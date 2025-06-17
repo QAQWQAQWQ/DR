@@ -321,4 +321,35 @@ characters={
 			}
 		}
 	}
+
+
+	ROC_MaoZeDong={
+		name=ROC_MaoZeDong
+		portraits={
+			army={
+				small="gfx\interface\ideas\ROC\ROC_MaoZeDong.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ROC_SunKe
+			allowed = {
+				original_tag = ROC
+			}
+			available = {
+				OR={
+					has_government = Revolutionism
+					has_government = Reformism
+				}
+				
+			}
+			traits = {
+				propaganda_expert
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
 }

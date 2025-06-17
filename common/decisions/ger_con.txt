@@ -680,12 +680,7 @@ ger_con_decisions = {
       factor = 100
     }
 		visible = {
-        AOX = { has_completed_focus = AUS_ger_7 }
-        check_variable = { global.ger_con_has_uni = 0 }
-        check_variable = { global.german_war = 0 }
-        OR ={
-          original_tag = AOX
-        }
+        
 		}	
     available = {
       AOX = { has_completed_focus = AUS_ger_19 }
@@ -694,10 +689,10 @@ ger_con_decisions = {
       AOX = { has_completed_focus = AUS_ger_8 }
       AOX = { has_completed_focus = AUS_ger_9 }
       custom_trigger_tooltip = {
-        tooltip = aus_wait_illyrian_war_end
+       tooltip = aus_wait_illyrian_war_end
         illyrian_war_end = yes
       }
-      # WWS = { can_ROOT_get_wargoal_on_THIS = yes }
+       WWS = { can_ROOT_get_wargoal_on_THIS = yes }
     }	
     cost = 0
     days_remove = 7
