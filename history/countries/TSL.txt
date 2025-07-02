@@ -47,7 +47,7 @@ recruit_character = TSL_Chaim_Azriel_Weizmann
 	}
 
 set_politics = {
-	ruling_party = Nationalism
+	ruling_party = Conservatism
 	last_election = "1918.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -55,6 +55,6 @@ set_politics = {
 
 set_popularities = {
 	Liberalism = 10
-	Nationalism = 80
-	Revolutionism = 10
+	Conservatism = 80
+	Reformism = 10
 }

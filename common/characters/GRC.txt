@@ -1,4 +1,17 @@
 characters={
-
+	GRC_Sir_Alexander_Ransford_Slater={
+		name=GRC_Sir_Alexander_Ransford_Slater
+		portraits={
+			civilian={
+				large="gfx/leaders/GRC/Portrait_Sir_Alexander_Ransford_Slater.tga"
+			}
+		}
+		country_leader={
+			ideology=autocratic-colonial-government
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	
 }

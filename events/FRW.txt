@@ -8,7 +8,9 @@ add_namespace = Assembly_Tours
 add_namespace = FRW_Syndicates
 add_namespace = FRW_Far_left
 add_namespace = FRW_Revolutionism
+add_namespace = FRW_authoritarian
 add_namespace = FRW_agriculture
+add_namespace = FRW_Reform
 ########农友
 country_event = {
 	id = FRW_agriculture.1
@@ -630,6 +632,7 @@ country_event = {
 			}
 		option = {
 		    name = FRW.9.a
+			news_event = Election_result.4
 			set_politics = {
 				ruling_party = Anarchism
 			}
@@ -1331,16 +1334,11 @@ country_event = {
 	option = {
 		name = FRW.36.a
 		custom_effect_tooltip = FRW.36_tooltip
-		set_country_flag = FRW_party_1_text_desc
+		set_country_flag = FRW_party_7_text_desc
 		kill_ideology_leader = Revolutionism
-		add_country_leader_role = {
+		promote_character = {
 			character = FRW_Marcel_Cachin
-			promote_leader = yes
-			country_leader = {
-				ideology = Authoritarian_Socialism
-				expire = "1965.1.1.1"
-				#traits = { }
-			}
+			ideology = Authoritarian_Socialism
 		}
 		}
 }
@@ -1817,7 +1815,6 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = FRW.57.a 
-		set_country_flag = FRW_party_1_text_new
 	}
 }
 
@@ -2476,5 +2473,593 @@ country_event = {
 			ideology = Nationalism
 			popularity = 0.05
 		}
+	}
+}
+
+
+country_event = {
+	id = FRW_Reform.1
+	title = FRW_Reform.1.t
+	desc = FRW_Reform.1.d
+	picture = GFX_FRW_Reform_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Reform.1.a 
+		hidden_effect = { 
+			country_event = { id = FRW_Reform.2 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_Reform.2
+	title = FRW_Reform.2.t
+	desc = FRW_Reform.2.d
+	picture = GFX_FRW_Reform_2
+	is_triggered_only = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Reform.2.a 
+		hidden_effect = { 
+			country_event = { id = FRW_Reform.3 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_Reform.3
+	title = FRW_Reform.3.t
+	desc = FRW_Reform.3.d
+	picture = GFX_FRW_Reform_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Reform.3.a 
+		hidden_effect = { 
+			country_event = { id = FRW_Reform.4 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_Reform.4
+	title = FRW_Reform.4.t
+	desc = FRW_Reform.4.d
+	picture = GFX_FRW_Reform_4
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Reform.4.a 
+		hidden_effect = { 
+			country_event = { id = FRW_Reform.5 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_Reform.5
+	title = FRW_Reform.5.t
+	desc = FRW_Reform.5.d
+	picture = GFX_FRW_Reform_5
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Reform.5.a 
+		hidden_effect = { 
+			country_event = { id = FRW_Reform.6 days = 40 } 
+		}  
+	}
+	option = {
+		name = FRW_Reform.5.b
+		hidden_effect = { 
+			country_event = { id = FRW_Reform.6 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_Reform.6
+	title = FRW_Reform.6.t
+	desc = FRW_Reform.6.d
+	picture = GFX_FRW_Reform_6
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Reform.6.a 
+		hidden_effect = { 
+			country_event = { id = FRW_Reform.7 days = 40 } 
+		}  
+	}
+	option = {
+		name = FRW_Reform.6.b 
+		hidden_effect = { 
+			country_event = { id = FRW_Reform.7 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_Reform.7
+	title = FRW_Reform.7.t
+	desc = FRW_Reform.7.d
+	picture = GFX_FRW_Reform_7
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Reform.7.a 
+		hidden_effect = { 
+			country_event = { id = FRW_Reform.8 days = 40 } 
+		}  
+	}
+	option = {
+		name = FRW_Reform.7.b
+		hidden_effect = { 
+			country_event = { id = FRW_Reform.7 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_Reform.8
+	title = FRW_Reform.8.t
+	desc = FRW_Reform.8.d
+	picture = GFX_FRW_Reform_8
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Reform.8.a 
+		hidden_effect = { 
+			country_event = { id = FRW_Reform.9 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_Reform.9
+	title = FRW_Reform.9.t
+	desc = FRW_Reform.9.d
+	picture = GFX_FRW_Reform_9
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Reform.9.a 
+		hidden_effect = { 
+			country_event = { id = FRW_Reform.10 days = 40 } 
+		}  
+	}
+	
+}
+
+country_event = {
+	id = FRW_Reform.10
+	title = FRW_Reform.10.t
+	desc = FRW_Reform.10.d
+	picture = GFX_FRW_Reform_10
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Reform.10.a 
+		hidden_effect = { 
+			country_event = { id = FRW_Reform.11 days = 40 } 
+		}  
+	}
+	option = {
+		name = FRW_Reform.10.b 
+		hidden_effect = { 
+			country_event = { id = FRW_Reform.10 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_Reform.11
+	title = FRW_Reform.11.t
+	desc = FRW_Reform.11.d
+	picture = GFX_FRW_Reform_11
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Reform.11.a 
+		hidden_effect = { 
+			country_event = { id = FRW_Reform.12 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_Reform.12
+	title = FRW_Reform.12.t
+	desc = FRW_Reform.12.d
+	picture = GFX_FRW_Reform_12
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Reform.12.a 
+		hidden_effect = { 
+			country_event = { id = FRW_Reform.13 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_Reform.13
+	title = FRW_Reform.13.t
+	desc = FRW_Reform.13.d
+	picture = GFX_FRW_Reform_13
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Reform.13.a 
+		hidden_effect = { 
+			country_event = { id = FRW_Reform.14 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_Reform.14
+	title = FRW_Reform.14.t
+	desc = FRW_Reform.14.d
+	picture = GFX_FRW_Reform_14
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Reform.14.a 
+		hidden_effect = { 
+			country_event = { id = FRW_Reform.15 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_Reform.15
+	title = FRW_Reform.15.t
+	desc = FRW_Reform.15.d
+	picture = GFX_FRW_Reform_15
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Reform.15.a 
+		hidden_effect = { 
+			country_event = { id = FRW_Reform.17 days = 40 } 
+		}  
+	}
+	option = {
+		name = FRW_Reform.15.b 
+		hidden_effect = { 
+			country_event = { id = FRW_Reform.16 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_Reform.16
+	title = FRW_Reform.16.t
+	desc = FRW_Reform.16.d
+	picture = GFX_FRW_Reform_16
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Reform.16.a 
+		hidden_effect = { 
+			country_event = { id = FRW_Reform.17 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_Reform.17
+	title = FRW_Reform.17.t
+	desc = FRW_Reform.17.d
+	picture = GFX_FRW_Reform_17
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Reform.17.a 
+		hidden_effect = { 
+			country_event = { id = FRW_Reform.18 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_Reform.18
+	title = FRW_Reform.18.t
+	desc = FRW_Reform.18.d
+	picture = GFX_FRW_Reform_18
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRW_Reform.18.a 
+	}
+}
+
+
+
+country_event = {
+	id = FRW_authoritarian.1
+	title = FRW_authoritarian.1.t
+	desc = FRW_authoritarian.1.d
+	picture = GFX_FRW_authoritarian_1
+	trigger = {
+	}
+	fire_only_once = yes
+	option = {
+		name = FRW_authoritarian.1.a 
+		hidden_effect = { 
+			country_event = { id = FRW_authoritarian.2 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_authoritarian.2
+	title = FRW_authoritarian.2.t
+	desc = FRW_authoritarian.2.d
+	picture = GFX_FRW_authoritarian_2
+	trigger = {
+	}
+	fire_only_once = yes
+	option = {
+		name = FRW_authoritarian.2.a 
+		hidden_effect = { 
+			country_event = { id = FRW_authoritarian.3 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_authoritarian.3
+	title = FRW_authoritarian.3.t
+	desc = FRW_authoritarian.3.d
+	picture = GFX_FRW_authoritarian_3
+	trigger = {
+	}
+	fire_only_once = yes
+	option = {
+		name = FRW_authoritarian.3.a 
+		hidden_effect = { 
+			country_event = { id = FRW_authoritarian.4 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_authoritarian.4
+	title = FRW_authoritarian.4.t
+	desc = FRW_authoritarian.4.d
+	picture = GFX_FRW_authoritarian_4
+	trigger = {
+	}
+	fire_only_once = yes
+	option = {
+		name = FRW_authoritarian.4.a 
+		hidden_effect = { 
+			country_event = { id = FRW_authoritarian.5 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_authoritarian.5
+	title = FRW_authoritarian.5.t
+	desc = FRW_authoritarian.5.d
+	picture = GFX_FRW_authoritarian_5
+	trigger = {
+	}
+	fire_only_once = yes
+	option = {
+		name = FRW_authoritarian.5.a 
+		hidden_effect = { 
+			country_event = { id = FRW_authoritarian.6 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_authoritarian.6
+	title = FRW_authoritarian.6.t
+	desc = FRW_authoritarian.6.d
+	picture = GFX_FRW_authoritarian_6
+	trigger = {
+	}
+	fire_only_once = yes
+	option = {
+		name = FRW_authoritarian.6.a 
+		hidden_effect = { 
+			country_event = { id = FRW_authoritarian.7 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_authoritarian.7
+	title = FRW_authoritarian.7.t
+	desc = FRW_authoritarian.7.d
+	picture = GFX_FRW_authoritarian_7
+	trigger = {
+	}
+	fire_only_once = yes
+	option = {
+		name = FRW_authoritarian.7.a 
+		hidden_effect = { 
+			country_event = { id = FRW_authoritarian.8 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_authoritarian.8
+	title = FRW_authoritarian.8.t
+	desc = FRW_authoritarian.8.d
+	picture = GFX_FRW_authoritarian_8
+	trigger = {
+	}
+	fire_only_once = yes
+	option = {
+		name = FRW_authoritarian.8.a 
+		hidden_effect = { 
+			country_event = { id = FRW_authoritarian.9 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_authoritarian.9
+	title = FRW_authoritarian.9.t
+	desc = FRW_authoritarian.9.d
+	picture = GFX_FRW_authoritarian_9
+	trigger = {
+	}
+	fire_only_once = yes
+	option = {
+		name = FRW_authoritarian.9.a 
+		hidden_effect = { 
+			country_event = { id = FRW_authoritarian.10 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_authoritarian.10
+	title = FRW_authoritarian.10.t
+	desc = FRW_authoritarian.10.d
+	picture = GFX_FRW_authoritarian_10
+	trigger = {
+	}
+	fire_only_once = yes
+	option = {
+		name = FRW_authoritarian.10.a 
+		hidden_effect = { 
+			country_event = { id = FRW_authoritarian.11 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_authoritarian.11
+	title = FRW_authoritarian.11.t
+	desc = FRW_authoritarian.11.d
+	picture = GFX_FRW_authoritarian_11
+	trigger = {
+	}
+	fire_only_once = yes
+	option = {
+		name = FRW_authoritarian.11.a 
+		hidden_effect = { 
+			country_event = { id = FRW_authoritarian.12 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_authoritarian.12
+	title = FRW_authoritarian.12.t
+	desc = FRW_authoritarian.12.d
+	picture = GFX_FRW_authoritarian_12
+	trigger = {
+	}
+	fire_only_once = yes
+	option = {
+		name = FRW_authoritarian.12.a 
+		hidden_effect = { 
+			country_event = { id = FRW_authoritarian.13 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_authoritarian.13
+	title = FRW_authoritarian.13.t
+	desc = FRW_authoritarian.13.d
+	picture = GFX_FRW_authoritarian_13
+	trigger = {
+	}
+	fire_only_once = yes
+	option = {
+		name = FRW_authoritarian.13.a 
+		hidden_effect = { 
+			country_event = { id = FRW_authoritarian.14 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_authoritarian.14
+	title = FRW_authoritarian.14.t
+	desc = FRW_authoritarian.14.d
+	picture = GFX_FRW_authoritarian_14
+	trigger = {
+	}
+	fire_only_once = yes
+	option = {
+		name = FRW_authoritarian.14.a 
+		hidden_effect = { 
+			country_event = { id = FRW_authoritarian.15 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_authoritarian.15
+	title = FRW_authoritarian.15.t
+	desc = FRW_authoritarian.15.d
+	picture = GFX_FRW_authoritarian_15
+	trigger = {
+	}
+	fire_only_once = yes
+	option = {
+		name = FRW_authoritarian.15.a 
+		hidden_effect = { 
+			country_event = { id = FRW_authoritarian.16 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_authoritarian.16
+	title = FRW_authoritarian.16.t
+	desc = FRW_authoritarian.16.d
+	picture = GFX_FRW_authoritarian_16
+	trigger = {
+	}
+	fire_only_once = yes
+	option = {
+		name = FRW_authoritarian.16.a 
+		hidden_effect = { 
+			country_event = { id = FRW_authoritarian.17 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_authoritarian.17
+	title = FRW_authoritarian.17.t
+	desc = FRW_authoritarian.17.d
+	picture = GFX_FRW_authoritarian_17
+	trigger = {
+	}
+	fire_only_once = yes
+	option = {
+		name = FRW_authoritarian.17.a 
+		hidden_effect = { 
+			country_event = { id = FRW_authoritarian.18 days = 40 } 
+		}  
+	}
+}
+
+country_event = {
+	id = FRW_authoritarian.18
+	title = FRW_authoritarian.18.t
+	desc = FRW_authoritarian.18.d
+	picture = GFX_FRW_authoritarian_18
+	trigger = {
+	}
+	fire_only_once = yes
+	option = {
+		name = FRW_authoritarian.18.a 
+		retire_character = FRW_Georges_Clemenceau
 	}
 }

@@ -84,6 +84,7 @@ recruit_character = FRW_LudovicOscar_Frossard
 recruit_character = FRW_Leon_Blum
 #recruit_character = FRW_emile_Armand
 recruit_character = FRW_Georges_Clemenceau
+recruit_character = FRW_Andre_Tardieu
 recruit_character = FRW_Georges_Valois
 recruit_character = FRW_Marcel_Cachin
 recruit_character = FRW_Aristide_Briand
@@ -139,6 +140,8 @@ recruit_character =	FRW_Pierre_Taittinger
 
 recruit_character = FRW_Geoffrey_Trollope_Lee
 recruit_character = FRW_Pierre_Taittinger
+recruit_character = FRW_Raoul_Peret
+recruit_character = FRW_UNKOWN
 FRW_Jacques_Doriot = { set_nationality = NNN }
 
 give_guarantee = BEL
@@ -171,6 +174,8 @@ add_ideas = {
 	FRW_Adrien_Rene_Viviani_P
 	FRW_Marcel_Sembat_P
 	FRW_Albert_Thomas_P
+
+	FRW_Raoul_Peret_T
 		}
 
 

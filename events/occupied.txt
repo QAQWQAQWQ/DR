@@ -82,13 +82,11 @@ news_event = {
 	major = yes
 
 	trigger = {
-			ZHX={ 
+			DUQ={ 
 				has_war = yes
 				NOT = {
-					
 					has_global_flag = fall_of_Beijing
 					controls_state = 608
-					
 				}
 			}
 	}

@@ -208,6 +208,68 @@ characters={
 			id=-1
 		}
 	}
+	FRW_Andre_Tardieu={
+		name=FRW_Andre_Tardieu
+		portraits={
+			civilian={
+				large="gfx/leaders/FRW/Portrait_Andre_Tardieu.tga"
+			}
+		}
+		country_leader={
+			ideology= Social_Liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	FRW_UNKOWN={
+		name=FRW_UNKOWN
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/UNKOWN.dds"
+			}
+		}
+		advisor={
+			slot = head_of_parliament
+			idea_token = FRW_UNKOWN_T
+			allowed = {
+				always = yes
+			}
+			available = {
+			}
+			traits = {
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	FRW_Raoul_Peret={
+		name=FRW_Raoul_Peret
+		portraits={
+			civilian={
+				large="gfx/leaders/FRW/Portrait_Raoul_Peret.tga"
+				small="gfx/interface/ideas/Portrait_Raoul_Peret.dds"
+			}
+		}
+		advisor={
+			slot = head_of_parliament
+			idea_token = FRW_Raoul_Peret_T
+			allowed = {
+				original_tag = FRW
+			}
+			available = {
+			}
+			traits = {
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
 	FRW_Jacques_Doriot={
 		name=FRW_Jacques_Doriot
 		portraits={

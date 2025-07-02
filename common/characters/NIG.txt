@@ -1,4 +1,17 @@
 characters={
-
+	NIG_Frederick_Lugard={
+		name=NIG_Frederick_Lugard
+		portraits={
+			civilian={
+				large="gfx/leaders/NIG/Portrait_Frederick_Lugard.tga"
+			}
+		}
+		country_leader={
+			ideology=autocratic-colonial-government
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	
 }

@@ -6,15 +6,15 @@ add_namespace = ITE
 
 country_event = {
 	id = ITE.1
-	hidden = yes
+	hidden = no
 	title = ITE.1.t
 	desc = ITE.1.d
 
 	fire_only_once = yes
 	trigger = {
 		AND={
-			date > 2020.1.4
-			date < 2020.1.6
+			date > 1920.2.4
+			date < 1920.2.6
 		}
 	}
 		immediate = {
@@ -30,7 +30,7 @@ country_event = {
 }
 country_event = {
 	id = ITE.2
-	hidden = yes
+	hidden = no
 	title = ITE.2.t
 	desc = ITE.2.d
 
@@ -57,15 +57,15 @@ country_event = {
 }
 			country_event = {
 				id = ITE.3
-				hidden = yes
+				hidden = no
 				title = ITE.3.t
 				desc = ITE.3.d
 			
 				fire_only_once = yes
 				trigger = {
 					AND={
-						date > 2020.1.8
-						date < 2020.1.10
+						date > 1920.3.1
+						date < 1920.3.3
 					}
 				}
 					immediate = {
@@ -103,15 +103,15 @@ country_event = {
 			}
 			country_event = {
 				id = ITE.4
-				hidden = yes
+				hidden = no
 				title = ITE.4.t
 				desc = ITE.4.d
 			
 				fire_only_once = yes
 				trigger = {
 					AND={
-						date > 2020.1.12
-						date < 2020.1.14
+						date > 1920.5.12
+						date < 1920.5.14
 					}
 				}
 					immediate = {
@@ -148,15 +148,15 @@ country_event = {
 
 country_event = {
 	id = ITE.5
-	hidden = yes
+	hidden = no
 	title = ITE.5.t
 	desc = ITE.5.d
 
 	fire_only_once = yes
 	trigger = {
 		AND={
-			date > 2020.1.16
-			date < 2020.1.18
+			date > 1920.6.10
+			date < 1920.6.12
 		}
 	}
 		immediate = {
@@ -199,7 +199,7 @@ country_event = {
 }
 country_event = {
 	id = ITE.6
-	hidden = yes
+	hidden = no
 	title = ITE.6.t
 	desc = ITE.6.d
 
@@ -318,15 +318,15 @@ country_event = {
 
 country_event = {
 	id = ITE.7
-	hidden = yes
+	hidden = no
 	title = ITE.7.t
 	desc = ITE.7.d
 
 	fire_only_once = yes
 	trigger = {
 		AND={
-			date > 2020.1.20
-			date < 2020.1.22
+			date > 1920.7.5
+			date < 1920.7.7
 		}
 	}
 		immediate = {
@@ -368,15 +368,15 @@ country_event = {
 }
 country_event = {
 	id = ITE.8
-	hidden = yes
+	hidden = no
 	title = ITE.8.t
 	desc = ITE.8.d
 
 	fire_only_once = yes
 	trigger = {
 		AND={
-			date > 2020.1.24
-			date < 2020.1.26
+			date > 1920.7.27
+			date < 1920.7.29
 		}
 	}
 		immediate = {
@@ -492,7 +492,7 @@ AOX = {create_faction = austrian_empire}
 
 country_event = {
 	id = ITE.9
-	hidden = yes
+	hidden = no
 	title = ITE.9.t
 	desc = ITE.9.d
 
@@ -529,7 +529,7 @@ country_event = {
 
 country_event = {
 	id = ITE.10
-	hidden = yes
+	hidden = no
 	title = ITE.10.t
 	desc = ITE.10.d
 
@@ -553,7 +553,7 @@ country_event = {
 
 country_event = {
 	id = ITE.11
-	hidden = yes
+	hidden = no
 	title = ITE.11.t
 	desc = ITE.11.d
 
@@ -619,7 +619,7 @@ country_event = {
 }
 country_event = {
 	id = ITE.12
-	hidden = yes
+	hidden = no
 	title = ITE.12.t
 	desc = ITE.12.d
 
@@ -877,7 +877,7 @@ immediate = {
 	}
 	country_event = {
 		id = ITE.13
-		hidden = yes
+		hidden = no
 		title = ITE.13.t
 		desc = ITE.13.d
 	
@@ -908,7 +908,7 @@ immediate = {
 		
  country_event = {
 	id = ITE.14
-	hidden = yes
+	hidden = no
 	title = ITE.14.t
 	desc = ITE.14.d
 	fire_only_once = yes
@@ -1112,7 +1112,7 @@ immediate = {
 
 	country_event = {
 		id = ITE.140
-		hidden = yes
+		hidden = no
 		title = ITE.140.t
 		desc = ITE.140.d
 	
@@ -1215,7 +1215,7 @@ immediate = {
 	}
 	country_event = {
 			id = ITE.15
-			hidden = yes
+			hidden = no
 			title = ITE.15.t
 			desc = ITE.15.d
 			fire_only_once = yes
@@ -1298,7 +1298,7 @@ immediate = {
 
 	country_event = {
 		id = ITE.16
-		hidden = yes
+		hidden = no
 		title = ITE.16.t
 		desc = ITE.16.d
 	
@@ -1458,7 +1458,7 @@ immediate = {
 	}
 	country_event = {
 		id = ITE.18
-		hidden = yes
+		hidden = no
 		title = ITE.18.t
 		desc = ITE.18.d
 	
@@ -1484,7 +1484,7 @@ immediate = {
 	}
 	country_event = {
 		id = ITE.19
-		hidden = yes
+		hidden = no
 		title = ITE.19.t
 		desc = ITE.19.d
 	
@@ -1518,7 +1518,7 @@ immediate = {
 	}
 	country_event = {
 		id = ITE.20
-		hidden = yes
+		hidden = no
 		title = ITE.20.t
 		desc = ITE.20.d
 	
@@ -1543,7 +1543,7 @@ set_autonomy = { target = SLO autonomy_state = autonomy_Crown_Territory }
 	}
 	country_event = {
 		id = ITE.21
-		hidden = yes
+		hidden = no
 		title = ITE.21.t
 		desc = ITE.21.d
 		fire_only_once = yes

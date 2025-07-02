@@ -259,16 +259,6 @@ defined_text = {
 		trigger = {
 			AND={
 				original_tag = FRW
-				FRW={check_variable = { v = 1 }}
-				has_country_flag = FRW_party_1_text_new
-			}
-		}
-		localization_key = FRW_party_1_text_new
-	}
-	text = {
-		trigger = {
-			AND={
-				original_tag = FRW
 				FRW={check_variable = { v = 2 }}
 			}
 		}
@@ -609,23 +599,13 @@ text = {
 		trigger = {
 			AND={
 				NOT={
-					has_country_flag = FRW_party_1_text_new
+					has_country_flag = FRW_party_7_text_desc
 				}
 				original_tag = FRW
 				check_variable = { v = 1 }
 			}
 		}
 		localization_key = FRW_party_1_text_desc
-	}
-	text = {
-		trigger = {
-			AND={
-				has_country_flag = FRW_party_1_text_new
-				original_tag = FRW
-				check_variable = { v = 1 }
-			}
-		}
-		localization_key = FRW_party_1_text_new_desc
 	}
 	text = {
 		trigger = {
@@ -672,11 +652,13 @@ text = {
 		}
 		localization_key = FRW_party_6_text_desc
 	}
+
+
 	text = {
 		trigger = {
 			AND={
 				original_tag = FRW
-				has_country_flag = FRW_party_1_text_desc
+				has_country_flag = FRW_party_7_text_desc
 				check_variable = { v = 1 }
 			}
 		}

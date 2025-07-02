@@ -527,4 +527,32 @@ characters={
 			}
 		}
 	}
+
+	JPN_Tokugawa_Ieyasu={
+		name=JPN_Tokugawa_Ieyasu
+		portraits={
+			civilian={
+				large="gfx/leaders/JPN/portrait_Tokugawa_Ieyasu.tga"
+				small = "gfx\interface\ideas\JPN\JPN_Tokugawa_Ieyasu.tga"
+			}
+		}
+		navy_leader = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+		advisor={
+			slot=head_of_parliament
+			idea_token=JPN_Tokugawa_Ieyasu_T
+			removal_cost = -1
+			allowed={
+				tag=JPN
+			}
+			traits={
+				Speaker_House_Nobles
+			}
+		}
+	}
 	}

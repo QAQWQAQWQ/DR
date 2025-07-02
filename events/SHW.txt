@@ -6,6 +6,99 @@ add_namespace = SHW
 add_namespace = FEL
 add_namespace = SHW_event
 add_namespace = SHW_army_event
+add_namespace = SHW_dip_event
+ 
+country_event = {
+	id = SHW_dip_event.0
+	title = SHW_dip_event.0.t
+	desc = SHW_dip_event.0.d
+
+	picture = GFX_SHW_event_4
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = SHW_dip_event.0.a
+	}
+}
+country_event = {
+	id = SHW_dip_event.1
+	title = SHW_dip_event.1.t
+	desc = SHW_dip_event.1.d
+
+	picture = GFX_SHW_event_4
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = SHW_dip_event.1.a
+	}
+}
+country_event = {
+	id = SHW_dip_event.2
+	title = SHW_dip_event.2.t
+	desc = SHW_dip_event.2.d
+
+	picture = GFX_SHW_event_4
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = SHW_dip_event.2.a
+	}
+}
+country_event = {
+	id = SHW_dip_event.3
+	title = SHW_dip_event.3.t
+	desc = SHW_dip_event.3.d
+
+	picture = GFX_SHW_event_4
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = SHW_dip_event.3.a
+	}
+}
+country_event = {
+	id = SHW_dip_event.4
+	title = SHW_dip_event.4.t
+	desc = SHW_dip_event.4.d
+
+	picture = GFX_SHW_event_4
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = SHW_dip_event.4.a
+	}
+}
+
+news_event = {
+	id = SHW_dip_event.5
+	title = SHW_dip_event.5.t
+	desc = SHW_dip_event.5.d
+
+	picture = GFX_SHW_dip_event_5
+
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			TSL={transfer_state = 453}
+		}
+		
+	}
+
+	is_triggered_only = yes
+	option = {
+		name = SHW_dip_event.5.a
+	}
+}
 ######
 country_event = {
 	id = SHW_army_event.1

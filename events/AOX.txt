@@ -42,17 +42,29 @@ news_event = {
 	is_triggered_only = yes
 
 	fire_only_once = yes
-
+	immediate = {
+		hidden_effect = {
+			AOX={
+				leave_faction = yes
+				end_puppet = DMT
+				remove_ideas = {}
+				set_cosmetic_tag = AOX_Reformism_name
+					promote_character = {
+						character = AOX_Karl_Johann_Kautsky
+						ideology = Social_Democracy
+					}
+					set_politics = {
+						ruling_party = Reformism
+					}
+				set_popularities = {
+					Reformism = 100
+				}
+			}
+		}
+	}
 	option = {
 		name = AOX_DIE.1.a
-		AOX={
-			leave_faction = yes
-			end_puppet = DMT
-		}
-		BNT={
-			transfer_state = 82
-			transfer_state = 764
-		}
+		
 	
 		set_global_flag = AOX_DIE
 	}

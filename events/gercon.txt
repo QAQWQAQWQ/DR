@@ -223,6 +223,9 @@ news_event = {
 	desc = ger_con.4.d
 	picture = GFX_ger_con_4_pict
 	is_triggered_only = yes
+	immediate = {
+		set_global_flag = ger_con_4
+	}
 	option = {
 		name = ger_con.4.a
 		trigger = {

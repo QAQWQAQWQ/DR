@@ -1,4 +1,17 @@
 characters={
-
+	GAM_Sir_Stephen_Cecil_Armitage={
+		name=GAM_Sir_Stephen_Cecil_Armitage
+		portraits={
+			civilian={
+				large="gfx/leaders/GAM/Portrait_Sir_Stephen_Cecil_Armitage.tga"
+			}
+		}
+		country_leader={
+			ideology=autocratic-colonial-government
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	
 }

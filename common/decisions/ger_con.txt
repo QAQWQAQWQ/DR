@@ -696,6 +696,7 @@ ger_con_decisions = {
     }	
     cost = 0
     days_remove = 7
+    fire_only_once = yes
     complete_effect = {
       AOX = {
         remove_from_faction = DMW
@@ -723,13 +724,22 @@ ger_con_decisions = {
     }
     remove_effect = {
       AOX = { declare_war_on = { target = WWS type = annex_everything } }
+      BXM = { 
+        add_to_war = {
+          targeted_alliance = AOX
+          enemy = WWS
+          hostility_reason = asked_to_join
+        }
+      }
+      DOR = { 
+        add_to_war = {
+          targeted_alliance = AOX
+          enemy = WWS
+          hostility_reason = asked_to_join
+        }
+      }
       hidden_effect={
-            every_country = {
-              limit = { 
-              NOT={
-                original_tag=AOX
-                original_tag=WWS
-              }}
+        AOX={
           news_event = ger_con.3 
         }
       }
@@ -785,13 +795,22 @@ ger_con_decisions = {
     }
     remove_effect = {
       WWS = { declare_war_on = { target = AOX type = annex_everything } }
+      BXM = { 
+        add_to_war = {
+          targeted_alliance = AOX
+          enemy = WWS
+          hostility_reason = asked_to_join
+        }
+      }
+      DOR = { 
+        add_to_war = {
+          targeted_alliance = AOX
+          enemy = WWS
+          hostility_reason = asked_to_join
+        }
+      }
       hidden_effect={
-            every_country = {
-              limit = { 
-              NOT={
-                original_tag=AOX
-                original_tag=WWS
-              }}
+        WWS={
           news_event = ger_con.3 
         }
       }

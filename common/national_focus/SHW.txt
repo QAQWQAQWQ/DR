@@ -1,4 +1,3 @@
-#!gfx:interface\RS_goals.gfx
 focus_tree = {
 	id = SHW
 	country = {
@@ -6,216 +5,31 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = SHW
-		} 
+		}
 	}
 	default = no
 	focus = {
 		id = SHW_Focus_1
 		icon = GFX_goal_SHW_Focus_1
 		cost = 8.00
-		available={
-			#check_variable = { parliament_seat_array^temp_array^1 = 0 } 
-	}
-		completion_reward = {
-			
-		}
 		x = 22
 		y = 0
-    completion_reward = {
-	   SHW={
-		country_event = SHW_event.7
-	   }
-	   TEQ={
-		country_event = SHW_event.7
-	   }
-    }
+			available = {
+			#check_variable = { parliament_seat_array^temp_array^1 = 0 } 
 }
-	
+			#check_variable = { parliament_seat_array^temp_array^1 = 0 } 
+			completion_reward = {
 
-	focus = {
-		id = SHW_Focus_2
-		icon = GFX_goal_SHW_Focus_2
-		cost = 8.00
-		x = 21
-		y = 1
-		available = {
-			
-		}
-		prerequisite = {
-			focus = SHW_Focus_1
-		}
-		bypass = {
-			
-		}
-		completion_reward={
-			add_power_balance_value = {
-				id = SHW_Court_struggles_balance
-				value = -0.1
-			}
-		}
-	} 
-	focus = { 
-		id = SHW_Focus_3
-		icon = GFX_goal_SHW_Focus_3
-		cost = 8.00
-		x = 23
-		y = 1
-		available = {
-			
-		}
-		prerequisite = {
-		focus = SHW_Focus_1
-		}
-		completion_reward={
-			unlock_decision_tooltip = SHW_Protect_landlords
-			add_popularity = {
-				ideology = Conservatism
-				popularity = 0.05
-			}
-		}
-	}
-	focus = {
-		id = SHW_Focus_4
-		icon = GFX_goal_SHW_Focus_4
-		cost = 8.00
-		x = 25
-		y = 4
-		available = {
-			
-		}
-		prerequisite = {
-		focus = SHW_Focus_7
-		}
-		prerequisite = {
-		focus = SHW_Focus_5
-		}
-		completion_reward={
-			unlock_decision_tooltip = SHW_Cultivating_government_forces
-			unlock_decision_tooltip = SHW_Maintain_tsarist_rule
-		}
-	}
-	focus = {
-		id = SHW_Focus_5
-		icon = GFX_goal_SHW_Focus_5
-		cost = 8.00 
-		x = 26
-		y = 2
-		prerequisite = {
-			focus = SHW_Focus_3
-		}
-		completion_reward={
-			unlock_decision_tooltip = SHW_Encourage_town
-		}
-	}
-
-	focus = {
-		id = SHW_Focus_6
-		icon = GFX_goal_SHW_Focus_6
-		cost = 8.00
-		x = 22
-		y = 2
-		prerequisite = {
-			focus = SHW_Focus_2
-		}
-		completion_reward={
-			unlock_decision_tooltip = SHW_Divide_countryside
-		}
-	}
-	focus = {
-		id = SHW_Focus_7
-		icon = GFX_goal_SHW_Focus_7 
-		cost = 8.00
-		x = 24
-		y = 3
-		prerequisite = {
-			focus = SHW_Focus_3
-		}
-		completion_reward={
-			unlock_decision_tooltip = SHW_Foster_kulaks
-			add_political_power = 100
-			add_stability = 0.05
-		}
-	} 
-	focus = {
-		id = SHW_Focus_8
-		icon = GFX_goal_SHW_Focus_8
-		cost = 8.00
-		x = 18
-		y = 2
-		prerequisite = { 
-			focus = SHW_Focus_2
-		}
-		completion_reward={
-			every_state = {
-				limit = {
-					OR={
-						is_core_of = PBL
-						is_core_of = ETA
-						is_core_of = LTA
-						is_core_of = LHA
-					}
+}
+			completion_reward = {
+					SHW = {
+							country_event = SHW_event.7
+						}
+					TEQ = {
+							country_event = SHW_event.7
+						}
 				}
-				add_compliance = 10
-				add_resistance = 20
-			}
-			
-			
-		}
-	}
-	focus = {
-		id = SHW_Focus_9
-		icon = GFX_goal_SHW_Focus_9 
-		cost = 8.00
-		x = 18
-		y = 4
-		prerequisite = {
-			focus = SHW_Focus_8
-		}
-		prerequisite = {
-			focus = SHW_Focus_10
-		}
-		completion_reward={
-			
-		}
-	}
-	focus = {
-		id = SHW_Focus_10
-		icon = GFX_goal_SHW_Focus_10 
-		cost = 8.00
-		x = 20
-		y = 3
-		prerequisite = {
-			focus = SHW_Focus_6
-		}
-		completion_reward={
-			unlock_decision_tooltip = SHW_Sacrifice_weak
-		}
-	}
-	focus = {
-		id = SHW_Focus_11
-		icon = GFX_goal_SHW_Focus_11
-		cost = 8.00
-		x = 27
-		y = 4
-		prerequisite = {
-			focus = SHW_Focus_5
-		}
-		completion_reward={
-		}
-	}
-	focus = {
-		id = SHW_Focus_12
-		icon = GFX_goal_SHW_Focus_12
-		cost = 8.00
-		x = 22
-		y = 4
-		prerequisite = {
-			focus = SHW_Focus_6
-		}
-		completion_reward={
-			unlock_decision_tooltip = SHW_Expand_proportion_kulaks
-			unlock_decision_tooltip = SHW_Nurturing_agricultural_capitalists
-		}
+
 	}
 	focus = {
 		id = SHW_Focus_13
@@ -223,606 +37,1374 @@ focus_tree = {
 		cost = 8.00
 		x = 34
 		y = 0
-		bypass = {
+			bypass = {
+
+}
+			completion_reward = {
+					country_event = SHW_event.14
+				}
+
+	}
+	focus = {
+		id = SHW_Focus_20
+		icon = GFX_goal_SHW_Focus_20
+		cost = 8.00
+		x = 46
+		y = 0
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = SHW_Depose_Tsar
+		icon = GFX_goal_SHW_Depose_Tsar
+		cost = 8.00
+		mutually_exclusive = {
+			focus = SHW_For_Your_Majesty
 		}
-		prerequisite = {
-			
+		x = 19
+		y = 6
+			allow_branch = {
+					has_country_flag = Russia_uprising
+				}
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = SHW_For_Your_Majesty
+		icon = GFX_goal_SHW_For_Your_Majesty
+		cost = 8.00
+		mutually_exclusive = {
+			focus = SHW_Depose_Tsar 
 		}
-		completion_reward={
-			country_event = SHW_event.14
+		x = 25
+		y = 6
+			allow_branch = {
+					has_country_flag = Russia_uprising
+				}
+			completion_reward = {
+					add_political_power = 200
+					add_war_support = 0.2
+				}
+
+	}
+	focus = {
+		id = SHW_dip_0
+		icon = GFX_SHW_dip_0
+		cost = 10.00
+		x = 9
+		y = 0
+		completion_reward = {
+			country_event = SHW_dip_event.0
 		}
 	}
-	focus = { 
+	focus = {
+		id = SHW_dip_1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SHW_dip_0
+		}
+		x = 9
+		y = 1
+		completion_reward = {
+			WWS={
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 2000
+					producer = SHW
+				}
+				add_equipment_to_stockpile = {
+					type = machine_equipment_1
+					amount = 300
+					producer = SHW
+				}
+				add_equipment_to_stockpile = {
+					type = armored_vehicles_1
+					amount = 50
+					producer = SHW
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment_1
+					amount = 100
+					producer = SHW
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 50
+					producer = SHW
+				}
+			}
+		}
+	}
+	focus = {
+		id = SHW_dip_2
+		icon = GFX_SHW_dip_2
+		cost = 10.00
+		prerequisite = {
+			focus = SHW_dip_1
+		}
+		available = {
+			WWS={
+				has_war_with = AOX
+			}
+		}
+		x = 9
+		y = 2
+		completion_reward = {
+			country_event = SHW_dip_event.1
+		}
+	}
+	focus = {
+		id = SHW_dip_3
+		icon = GFX_SHW_dip_3
+		cost = 10.00
+		prerequisite = {
+			focus = SHW_dip_2
+		}
+		available = {
+			has_global_flag = ger_con_4
+		}
+		mutually_exclusive = {
+			focus = SHW_dip_5
+		}
+		x = 5
+		y = 3
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SHW_dip_5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SHW_dip_2
+		}
+		available = {
+			has_global_flag = ger_con_7
+		}
+		mutually_exclusive = {
+			focus = SHW_dip_3
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = SHW_dip_6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SHW_dip_5
+		}
+		x = 13
+		y = 4
+		completion_reward = {
+			SHW={
+				create_faction = St_Petersburg_Entente
+			}
+			WWS={
+				leave_faction = GER
+				leave_faction = North_German_Confederation
+				add_to_faction = St_Petersburg_Entente
+			}
+		}
+	}
+	focus = {
+		id = SHW_dip_15
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SHW_dip_6
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = SHW_dip_16
+		icon = GFX_SHW_dip_16
+		cost = 10.00
+		prerequisite = {
+			focus = SHW_dip_15
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = SHW_dip_17
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SHW_dip_15
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = SHW_dip_18
+		icon = GFX_SHW_dip_18
+		cost = 10.00
+		prerequisite = {
+			focus = SHW_dip_15
+		}
+		x = 15
+		y = 6
+
+	}
+	focus = {
+		id = SHW_dip_19
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SHW_dip_16
+		}
+		prerequisite = {
+			focus = SHW_dip_17
+		}
+		prerequisite = {
+			focus = SHW_dip_18
+		}
+		x = 13
+		y = 7
+
+	}
+	focus = {
+		id = SHW_dip_20
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SHW_dip_19
+		}
+		x = 13
+		y = 8
+		completion_reward = {
+			SHW={
+				declare_war_on = {
+					target = EYJ
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
+	focus = {
+		id = SHW_Democracy_in_Russia
+		icon = GFX_goal_SHW_Democracy_in_Russia
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Depose_Tsar
+		}
+		x = 19
+		y = 7
+			completion_reward = {
+					hidden_effect = {
+							set_popularities = {
+									Nationalism = 10
+									Conservatism = 5
+									Reformism = 10
+									Reformism = 10
+									Liberalism = 55
+									Conservatism = 10
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = SHW_Struggle_overcome_differences
+		icon = GFX_goal_SHW_Struggle_overcome_differences
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Democracy_in_Russia
+		}
+		x = 16
+		y = 8
+			completion_reward = {
+					add_trait = {
+							character = SHW_Kerensky
+							slot = head_of_government
+							trait = Little_Napoleon
+						}
+				}
+
+	}
+	focus = {
+		id = SHW_Isolate_dissidents
+		icon = GFX_goal_SHW_Isolate_dissidents
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Struggle_overcome_differences
+		}
+		x = 16
+		y = 9
+			completion_reward = {
+					add_trait = {
+							character = SHW_Viktor_Chernov
+							slot = head_of_government
+							trait = Leader_opposition
+						}
+				}
+
+	}
+	focus = {
+		id = SHW_Reinstatement_death_penalty
+		icon = GFX_goal_SHW_Reinstatement_death_penalty
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Isolate_dissidents
+		}
+		x = 16
+		y = 10
+			completion_reward = {
+					add_stability = 0.05
+				}
+
+	}
+	focus = {
+		id = SHW_Focus_2
+		icon = GFX_goal_SHW_Focus_2
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Focus_1
+		}
+		x = 21
+		y = 1
+			available = {
+
+}
+			bypass = {
+
+}
+			completion_reward = {
+					add_power_balance_value = {
+							id = SHW_Court_struggles_balance
+							value = -0.1
+						}
+				}
+
+	}
+	focus = {
+		id = SHW_Focus_8
+		icon = GFX_goal_SHW_Focus_8
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Focus_2
+		}
+		x = 18
+		y = 2
+			completion_reward = {
+					every_state = {
+							limit = {
+									OR = {
+											is_core_of = PBL
+											is_core_of = ETA
+											is_core_of = LTA
+											is_core_of = LHA
+										}
+								}
+							add_compliance = 10
+							add_resistance = 20
+						}
+				}
+
+	}
+	focus = {
+		id = SHW_Coalition_Cabinet_Government
+		icon = GFX_goal_SHW_Coalition_Cabinet_Government
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Democracy_in_Russia
+		}
+		x = 19
+		y = 8
+			completion_reward = {
+					custom_effect_tooltip = PFA
+					hidden_effect = {
+							remove_ideas = SHW_Nikolaj_Dmitrievich_Golicyn_H
+							add_ideas = SHW_Georgy_Lviv_H
+						}
+					custom_effect_tooltip = available_political_advisor
+					show_ideas_tooltip = SHW_Viktor_Chernov_P
+					show_ideas_tooltip = SHW_Nikolai_Vissarionovich_Nekrasov_P
+					show_ideas_tooltip = SHW_Mikhail_Tereshchenko_P
+					show_ideas_tooltip = SHW_Andrey_Ivanovich_Shingarev_P
+					show_ideas_tooltip = SHW_Alexander_Grigorievich_Khrushchov_P
+				}
+
+	}
+	focus = {
+		id = SHW_There_no_party_class
+		icon = GFX_goal_SHW_There_no_party_class
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Coalition_Cabinet_Government
+		}
+		x = 19
+		y = 9
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = SHW_democratic_government_without_all
+		icon = GFX_goal_SHW_democratic_government_without_all
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_There_no_party_class
+		}
+		x = 19
+		y = 10
+			completion_reward = {
+					add_ideas = SHW_Russian_style_democracy
+					set_politics = {
+							ruling_party = Nationalism
+							elections_allowed = yes
+						}
+					hidden_effect = {
+							set_popularities = {
+									Nationalism = 55
+									Conservatism = 5
+									Reformism = 10
+									Reformism = 10
+									Liberalism = 10
+									Conservatism = 10
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = SHW_Focus_6
+		icon = GFX_goal_SHW_Focus_6
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Focus_2
+		}
+		x = 22
+		y = 2
+			completion_reward = {
+					unlock_decision_tooltip = SHW_Divide_countryside
+				}
+
+	}
+	focus = {
+		id = SHW_Focus_10
+		icon = GFX_goal_SHW_Focus_10
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Focus_6
+		}
+		x = 20
+		y = 3
+			completion_reward = {
+					unlock_decision_tooltip = SHW_Sacrifice_weak
+				}
+
+	}
+	focus = {
+		id = SHW_Focus_9
+		icon = GFX_goal_SHW_Focus_9
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Focus_8
+		}
+		prerequisite = {
+			focus = SHW_Focus_10
+		}
+		x = 18
+		y = 4
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = SHW_Focus_12
+		icon = GFX_goal_SHW_Focus_12
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Focus_6
+		}
+		x = 22
+		y = 4
+			completion_reward = {
+					unlock_decision_tooltip = SHW_Expand_proportion_kulaks
+					unlock_decision_tooltip = SHW_Nurturing_agricultural_capitalists
+				}
+
+	}
+	focus = {
+		id = SHW_Strive_national_improvement
+		icon = GFX_goal_SHW_Strive_national_improvement
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Democracy_in_Russia
+		}
+		x = 22
+		y = 8
+			completion_reward = {
+					add_political_power = 200
+				}
+
+	}
+	focus = {
+		id = SHW_Centered_military
+		icon = GFX_goal_SHW_Centered_military
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Strive_national_improvement
+		}
+		x = 22
+		y = 9
+			completion_reward = {
+					army_experience = 40
+					navy_experience = 40
+					add_trait = {
+							character = SHW_Kerensky
+							slot = head_of_government
+							trait = military_naval_affairs
+						}
+				}
+
+	}
+	focus = {
+		id = SHW_Repeal_Declaration_Rights_Soldiers
+		icon = GFX_goal_SHW_Repeal_Declaration_Rights_Soldiers
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Centered_military
+		}
+		x = 22
+		y = 10
+			completion_reward = {
+					add_ideas = SHW_Disgruntled_army
+				}
+
+	}
+	focus = {
+		id = SHW_Focus_3
+		icon = GFX_goal_SHW_Focus_3
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Focus_1
+		}
+		x = 23
+		y = 1
+			available = {
+
+}
+			completion_reward = {
+					unlock_decision_tooltip = SHW_Protect_landlords
+					add_popularity = {
+							ideology = Conservatism
+							popularity = 0.05
+						}
+				}
+
+	}
+	focus = {
+		id = SHW_Focus_7
+		icon = GFX_goal_SHW_Focus_7
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Focus_3
+		}
+		x = 24
+		y = 3
+			completion_reward = {
+					unlock_decision_tooltip = SHW_Foster_kulaks
+					add_political_power = 100
+					add_stability = 0.05
+				}
+
+	}
+	focus = {
+		id = SHW_Restart_Black_Hundred
+		icon = GFX_goal_SHW_Restart_Black_Hundred
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_For_Your_Majesty
+		}
+		mutually_exclusive = {
+			focus = SHW_Embrace_change
+		}
+		x = 25
+		y = 7
+			completion_reward = {
+					add_ideas = SHW_Black_Hundred_Regiment
+				}
+
+	}
+	focus = {
+		id = SHW_Worthless_democracy
+		icon = GFX_goal_SHW_Worthless_democracy
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Restart_Black_Hundred
+		}
+		x = 24
+		y = 8
+			completion_reward = {
+					add_political_power = 100
+					swap_ideas = {
+							remove_idea = State_media
+							add_idea = Control_media
+						}
+					swap_ideas = {
+							remove_idea = Special_police
+							add_idea = State_control
+						}
+				}
+
+	}
+	focus = {
+		id = SHW_Protocol_Elders_Zion
+		icon = GFX_goal_SHW_Protocol_Elders_Zion
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Worthless_democracy
+		}
+		x = 24
+		y = 9
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = SHW_Traditional_village_community_system
+		icon = GFX_goal_SHW_Traditional_village_community_system
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Protocol_Elders_Zion
+		}
+		x = 24
+		y = 10
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = SHW_Stolypin_legacy
+							add_idea = SHW_Stolypin_legacy1
+						}
+				}
+
+	}
+	focus = {
+		id = SHW_Focus_5
+		icon = GFX_goal_SHW_Focus_5
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Focus_3
+		}
+		x = 26
+		y = 2
+			completion_reward = {
+					unlock_decision_tooltip = SHW_Encourage_town
+				}
+
+	}
+	focus = {
+		id = SHW_Focus_4
+		icon = GFX_goal_SHW_Focus_4
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Focus_7
+		}
+		prerequisite = {
+			focus = SHW_Focus_5
+		}
+		x = 25
+		y = 4
+			available = {
+
+}
+			completion_reward = {
+					unlock_decision_tooltip = SHW_Cultivating_government_forces
+					unlock_decision_tooltip = SHW_Maintain_tsarist_rule
+				}
+
+	}
+	focus = {
+		id = SHW_Slavic_nationalism_culture
+		icon = GFX_goal_SHW_Slavic_nationalism_culture
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Restart_Black_Hundred
+		}
+		x = 26
+		y = 8
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = SHW_Loyalty_motion
+		icon = GFX_goal_SHW_Loyalty_motion
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Slavic_nationalism_culture
+		}
+		x = 26
+		y = 9
+			completion_reward = {
+					add_popularity = {
+							ideology = Conservatism
+							popularity = 0.05
+						}
+				}
+
+	}
+	focus = {
+		id = SHW_Carry_patriotic_education
+		icon = GFX_goal_SHW_Carry_patriotic_education
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Loyalty_motion
+		}
+		x = 26
+		y = 10
+			completion_reward = {
+					add_ideas = SHW_Patriotic_education
+				}
+
+	}
+	focus = {
+		id = SHW_Focus_11
+		icon = GFX_goal_SHW_Focus_11
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Focus_5
+		}
+		x = 27
+		y = 4
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = SHW_Right_wing_revolutionaries
+		icon = GFX_goal_SHW_Right_wing_revolutionaries
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Restart_Black_Hundred
+		}
+		x = 28
+		y = 8
+			completion_reward = {
+					custom_effect_tooltip = available_political_advisor
+					show_ideas_tooltip = SHW_Nikolai_Evgenievich_Markov_P
+				}
+
+	}
+	focus = {
+		id = SHW_backbone_the_nation
+		icon = GFX_goal_SHW_backbone_the_nation
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Right_wing_revolutionaries
+		}
+		x = 28
+		y = 9
+			completion_reward = {
+					add_ideas = SHW_backbone_nation
+					add_popularity = {
+							ideology = Conservatism
+							popularity = 0.05
+						}
+					add_popularity = {
+							ideology = Nationalism
+							popularity = 0.05
+						}
+				}
+
+	}
+	focus = {
+		id = SHW_Guardians_the_Old_Order
+		icon = GFX_goal_SHW_Guardians_the_Old_Order
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_backbone_the_nation
+		}
+		x = 28
+		y = 10
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = SHW_Embrace_change
+		icon = GFX_goal_SHW_Embrace_change
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_For_Your_Majesty
+		}
+		mutually_exclusive = {
+			focus = SHW_Restart_Black_Hundred
+		}
+		x = 31
+		y = 7
+			completion_reward = {
+					custom_effect_tooltip = Embrace_change
+					hidden_effect = {
+							retire_country_leader = yes
+						}
+					set_politics = {
+							ruling_party = Conservatism
+							elections_allowed = yes
+						}
+					hidden_effect = {
+							remove_ideas = SHW_Nikolaj_Dmitrievich_Golicyn_H
+							add_ideas = SHW_NicholasII_H
+							set_popularities = {
+									Nationalism = 0
+									Conservatism = 42
+									Reformism = 0
+									Reformism = 0
+									Liberalism = 13
+									Conservatism = 45
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = SHW_United_Slavs
+		icon = GFX_goal_SHW_United_Slavs
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Embrace_change
+		}
+		x = 30
+		y = 8
+			completion_reward = {
+					add_opinion_modifier = {
+							target = LMN
+							modifier = Slavic_cultural_circle
+						}
+					add_opinion_modifier = {
+							target = BOJ
+							modifier = Slavic_cultural_circle
+						}
+					add_opinion_modifier = {
+							target = SIW
+							modifier = Slavic_cultural_circle
+						}
+					add_opinion_modifier = {
+							target = ALB
+							modifier = Slavic_cultural_circle
+						}
+				}
+
+	}
+	focus = {
+		id = SHW_Establishment_national_insurance
+		icon = GFX_goal_SHW_Establishment_national_insurance
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_United_Slavs
+		}
+		x = 30
+		y = 9
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = SHW_Education_all
+		icon = GFX_goal_SHW_Education_all
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Establishment_national_insurance
+		}
+		x = 30
+		y = 10
+			completion_reward = {
+
+}
+
+	}
+	focus = {
 		id = SHW_Focus_14
 		icon = GFX_goal_SHW_Focus_14
 		cost = 8.00
-		x = 34
-		y = 1
 		prerequisite = {
 			focus = SHW_Focus_20
 		}
 		prerequisite = {
 			focus = SHW_Focus_13
 		}
-		completion_reward={
-			country_event = SHW_event.15
-			unlock_decision_category_tooltip = SHW_Imperial_Russian_Army
-			add_dynamic_modifier = {
-				modifier = SHW_General_Staff
-			}
-			add_to_variable = {
-				SHW_army_chief_cost_dy=-0.05
-			}
-		}
+		x = 34
+		y = 1
+			completion_reward = {
+					country_event = SHW_event.15
+					unlock_decision_category_tooltip = SHW_Imperial_Russian_Army
+					add_dynamic_modifier = {
+							modifier = SHW_General_Staff
+						}
+					add_to_variable = {
+							SHW_army_chief_cost_dy = -0.05
+						}
+				}
+
 	}
-	
 	focus = {
 		id = SHW_Focus_15
 		icon = GFX_goal_SHW_Focus_15
 		cost = 8.00
-		x = 32
-		y = 2
 		prerequisite = {
 			focus = SHW_Focus_14
 		}
-		completion_reward={ 
-			add_to_variable = {
-				SHW_command_power_dy=0.05
-			}
-			custom_effect_tooltip = SHW_General_Staff_effect
-		}
+		x = 32
+		y = 2
+			completion_reward = {
+					add_to_variable = {
+							SHW_command_power_dy = 0.05
+						}
+					custom_effect_tooltip = SHW_General_Staff_effect
+				}
+
 	}
 	focus = {
 		id = SHW_Focus_16
 		icon = GFX_goal_SHW_Focus_16
 		cost = 8.00
-		x = 36
-		y = 2
 		prerequisite = {
 			focus = SHW_Focus_14
 		}
-		completion_reward={
-			add_to_variable = {
-				SHW_experience_gain_dy=0.05
-			}
-			add_to_variable = {
-				SHW_experience_gain_army_dy=0.05
-			}
-			add_to_variable = {
-				SHW_max_planning_dy=0.05
-			}
-			add_to_variable = {
-				SHW_experience_gain_navy_dy=0.05
-			}
-			add_to_variable = {
-				SHW_experience_gain_air_dy=0.05
-			}
-			custom_effect_tooltip = SHW_General_Staff_effect
-		}
+		x = 36
+		y = 2
+			completion_reward = {
+					add_to_variable = {
+							SHW_experience_gain_dy = 0.05
+						}
+					add_to_variable = {
+							SHW_experience_gain_army_dy = 0.05
+						}
+					add_to_variable = {
+							SHW_max_planning_dy = 0.05
+						}
+					add_to_variable = {
+							SHW_experience_gain_navy_dy = 0.05
+						}
+					add_to_variable = {
+							SHW_experience_gain_air_dy = 0.05
+						}
+					custom_effect_tooltip = SHW_General_Staff_effect
+				}
+
 	}
 	focus = {
 		id = SHW_Focus_17
 		icon = GFX_goal_SHW_Focus_17
 		cost = 8.00
-		x = 32
-		y = 3
 		prerequisite = {
 			focus = SHW_Focus_15
 		}
 		prerequisite = {
 			focus = SHW_Focus_16
 		}
-		completion_reward={
-			add_to_variable = {
-				SHW_army_core_attack_dy=0.05
-			}
-			add_to_variable = {
-				SHW_breakthrough_dy=0.05
-			}
-			custom_effect_tooltip = SHW_General_Staff_effect
+		x = 32
+		y = 3
+			completion_reward = {
+					add_to_variable = {
+							SHW_army_core_attack_dy = 0.05
+						}
+					add_to_variable = {
+							SHW_breakthrough_dy = 0.05
+						}
+					custom_effect_tooltip = SHW_General_Staff_effect
+				}
+
+	}
+	focus = {
+		id = SHW_Invite_worker_representatives
+		icon = GFX_goal_SHW_Invite_worker_representatives
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Embrace_change
 		}
+		x = 32
+		y = 8
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = SHW_Improve_industrial_relations
+		icon = GFX_goal_SHW_Improve_industrial_relations
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Embrace_change
+		}
+		x = 32
+		y = 9
+			completion_reward = {
+					custom_effect_tooltip = Unemployment_rate_modifier_down
+					set_temp_variable = {
+							Unemployment = Unemployment
+						}
+					add_to_variable = {
+							Unemployment = -0.03
+						}
+					add_to_variable = {
+							Unemployment = Unemployment
+						}
+				}
+
+	}
+	focus = {
+		id = SHW_Offer_cheap_loans
+		icon = GFX_goal_SHW_Offer_cheap_loans
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Improve_industrial_relations
+		}
+		x = 32
+		y = 10
+			completion_reward = {
+					add_ideas = SHW_Loans_rubles
+				}
+
 	}
 	focus = {
 		id = SHW_Focus_18
 		icon = GFX_goal_SHW_Focus_18
 		cost = 8.00
-		x = 34
-		y = 3
 		prerequisite = {
 			focus = SHW_Focus_15
 		}
 		prerequisite = {
 			focus = SHW_Focus_16
 		}
-		completion_reward={ 
-			add_to_variable = {
-				SHW_army_core_defence_dy=0.05
-			}
-			custom_effect_tooltip = SHW_General_Staff_effect
-		}
+		x = 34
+		y = 3
+			completion_reward = {
+					add_to_variable = {
+							SHW_army_core_defence_dy = 0.05
+						}
+					custom_effect_tooltip = SHW_General_Staff_effect
+				}
+
 	}
-	focus = { 
+	focus = {
 		id = SHW_Focus_19
 		icon = GFX_goal_SHW_Focus_19
 		cost = 8.00
-		x = 36
-		y = 3
 		prerequisite = {
 			focus = SHW_Focus_15
 		}
 		prerequisite = {
 			focus = SHW_Focus_16
 		}
-		completion_reward={
-			add_to_variable = {
-				SHW_conscription_factor_dy=0.03
-			}
-			custom_effect_tooltip = SHW_General_Staff_effect
-		}
+		x = 36
+		y = 3
+			completion_reward = {
+					add_to_variable = {
+							SHW_conscription_factor_dy = 0.03
+						}
+					custom_effect_tooltip = SHW_General_Staff_effect
+				}
+
 	}
 	focus = {
-		id = SHW_Focus_20
-		icon = GFX_goal_SHW_Focus_20 
+		id = SHW_Focus_33
+		icon = GFX_goal_SHW_Focus_33
 		cost = 8.00
-		x = 46
-		y = 0
-		prerequisite = {
-			
-		}
-		completion_reward={
-			
-		}
-	}
-	focus = { 
-		id = SHW_Focus_21
-		icon = GFX_goal_SHW_Focus_21 
-		cost = 8.00
-		x = 41
-		y = 1
 		prerequisite = {
 			focus = SHW_Focus_20
 		}
-		completion_reward={
-			
-		} 
-	}
-	focus = { 
-		id = SHW_Focus_22
-		icon = GFX_goal_SHW_Focus_22 
-		cost = 8.00
-		x = 51
-		y = 1
-		prerequisite = {
-			focus = SHW_Focus_20
-		}
-		completion_reward={
-			
-		} 
-	}
-	focus = { 
-		id = SHW_Focus_23
-		icon = GFX_goal_SHW_Focus_23 
-		cost = 8.00
-		x = 46
+		x = 38
 		y = 2
-		available = {
-			NOT={
-				FRW={
-					has_government = Revolutionism
+			available = {
+
+}
+			completion_reward = {
+					mio:SHW_Tula_Arms = {
+							add_mio_size = 1
+							add_mio_funds_gain_factor = 0.10
+						}
+					mio:SHW_ZiD = {
+							add_mio_size = 1
+							add_mio_funds_gain_factor = 0.10
+						}
+					mio:SHW_Putilov_Factory = {
+							add_mio_size = 1
+							add_mio_funds_gain_factor = 0.10
+						}
+					mio:SHW_Petersburg_Shipyard = {
+							add_mio_size = 1
+							add_mio_funds_gain_factor = 0.10
+						}
+					mio:SHW_Russo_Balt = {
+							add_mio_size = 1
+							add_mio_funds_gain_factor = 0.10
+						}
+					mio:SHW_Russo_Balt_Armored_Vehicles = {
+							add_mio_size = 1
+							add_mio_funds_gain_factor = 0.10
+						}
 				}
-			}
-			AOX={
-				has_country_flag = aus_win_german_war
-			}
-			
-		}
+
+	}
+	focus = {
+		id = SHW_Focus_21
+		icon = GFX_goal_SHW_Focus_21
+		cost = 8.00
 		prerequisite = {
 			focus = SHW_Focus_20
 		}
-		completion_reward={
-			SHW={
-				add_to_faction = FRW
-			}
-			
-		} 
-	}
-	focus = { 
-		id = SHW_Focus_24
-		icon = GFX_goal_SHW_Focus_24 
-		cost = 8.00
 		x = 41
-		y = 2
+		y = 1
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = SHW_Focus_24
+		icon = GFX_goal_SHW_Focus_24
+		cost = 8.00
 		prerequisite = {
 			focus = SHW_Focus_21
 		}
-		completion_reward={
-			88={
-				add_claim_by = SHW
-			}
-			1034={
-				add_claim_by = SHW
-			}
-			80={
-				add_claim_by = SHW
-			}
-			89={
-				add_claim_by = SHW
-			}
-			91={
-				add_claim_by = SHW
-			}
-		} 
+		x = 41
+		y = 2
+			completion_reward = {
+					88 = {
+							add_claim_by = SHW
+						}
+					1034 = {
+							add_claim_by = SHW
+						}
+					80 = {
+							add_claim_by = SHW
+						}
+					89 = {
+							add_claim_by = SHW
+						}
+					91 = {
+							add_claim_by = SHW
+						}
+				}
+
 	}
-	focus = { 
+	focus = {
 		id = SHW_Focus_25
 		icon = GFX_goal_SHW_Focus_25
 		cost = 8.00
-		x = 40
-		y = 3
 		prerequisite = {
 			focus = SHW_Focus_24
 		}
-		completion_reward={
-			swap_ideas = {
-				remove_idea = SHW_Backward_railways
-				add_idea = SHW_Backward_railways1
-			}
-		} 
+		x = 40
+		y = 3
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = SHW_Backward_railways
+							add_idea = SHW_Backward_railways1
+						}
+				}
+
 	}
-	focus = { 
+	focus = {
 		id = SHW_Focus_26
 		icon = GFX_goal_SHW_Focus_26
 		cost = 8.00
-		x = 43
-		y = 3
 		prerequisite = {
 			focus = SHW_Focus_24
 		}
-		completion_reward={
-			
-		} 
+		x = 43
+		y = 3
+			completion_reward = {
+
+}
+
 	}
-	focus = { 
+	focus = {
 		id = SHW_Focus_27
 		icon = GFX_goal_SHW_Focus_27
 		cost = 8.00
-		x = 41
-		y = 4
 		prerequisite = {
 			focus = SHW_Focus_26
 		}
-		completion_reward={
-			
-		} 
+		x = 41
+		y = 4
+			completion_reward = {
+
+}
+
 	}
-	focus = { 
+	focus = {
 		id = SHW_Focus_28
 		icon = GFX_goal_SHW_Focus_28
 		cost = 8.00
-		x = 45
-		y = 4
 		prerequisite = {
 			focus = SHW_Focus_26
 		}
-		completion_reward={
-			
-		} 
+		x = 45
+		y = 4
+			completion_reward = {
+
+}
+
 	}
-	focus = { 
+	focus = {
+		id = SHW_Focus_23
+		icon = GFX_goal_SHW_Focus_23
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Focus_20
+		}
+		x = 46
+		y = 2
+			available = {
+					NOT = {
+							FRW = {
+									has_government = Revolutionism
+								}
+						}
+					AOX = {
+							has_country_flag = aus_win_german_war
+						}
+				}
+			completion_reward = {
+					SHW = {
+							add_to_faction = FRW
+						}
+				}
+
+	}
+	focus = {
+		id = SHW_Focus_22
+		icon = GFX_goal_SHW_Focus_22
+		cost = 8.00
+		prerequisite = {
+			focus = SHW_Focus_20
+		}
+		x = 51
+		y = 1
+			completion_reward = {
+
+}
+
+	}
+	focus = {
 		id = SHW_Focus_29
 		icon = GFX_goal_SHW_Focus_29
 		cost = 8.00
-		x = 49
-		y = 2
 		prerequisite = {
 			focus = SHW_Focus_22
 		}
-		completion_reward={
-			561={
-				add_building_construction = {
-					type = supply_node
-					level = 1
-					province = 12543
+		x = 49
+		y = 2
+			completion_reward = {
+					561 = {
+							add_building_construction = {
+									type = supply_node
+									level = 1
+									province = 12543
+								}
+						}
+					564 = {
+							add_building_construction = {
+									type = supply_node
+									level = 1
+									province = 1762
+								}
+						}
+					build_railway = {
+							level = 1
+							build_only_on_allied = yes
+							controller_priority = {
+									base = 1
+									modifier = {
+											tag = SHW
+											add = 2
+										}
+								}
+							fallback = no
+							start_province = 12189
+							target_province = 10577
+						}
+					build_railway = {
+							level = 1
+							build_only_on_allied = yes
+							controller_priority = {
+									base = 1
+									modifier = {
+											tag = SHW
+											add = 2
+										}
+								}
+							fallback = no
+							start_province = 1813
+							target_province = 4675
+						}
 				}
-			}
-			564={
-				add_building_construction = {
-					type = supply_node
-					level = 1
-					province = 1762
-				}
-			}
-			build_railway = {
-				level = 1
-				build_only_on_allied = yes
-				controller_priority = {
-					base = 1
-					modifier = {
-						tag = SHW
-						add = 2
-					}
-				}
-				fallback = no
-				start_province = 12189
-				target_province = 10577
-			}
-			build_railway = {
-				level = 1
-				build_only_on_allied = yes
-				controller_priority = {
-					base = 1
-					modifier = {
-						tag = SHW
-						add = 2
-					}
-				}
-				fallback = no
-				start_province = 1813
-				target_province = 4675
-			}
-		} 
+
 	}
-	focus = { 
+	focus = {
 		id = SHW_Focus_30
 		icon = GFX_goal_SHW_Focus_30
 		cost = 8.00
-		x = 53
-		y = 2
 		prerequisite = {
 			focus = SHW_Focus_22
 		}
-		completion_reward={
-			
-		} 
+		x = 53
+		y = 2
+			completion_reward = {
+
+}
+
 	}
-	focus = { 
+	focus = {
 		id = SHW_Focus_31
 		icon = GFX_goal_SHW_Focus_31
 		cost = 8.00
-		x = 51
-		y = 3
 		prerequisite = {
 			focus = SHW_Focus_29
 		}
 		prerequisite = {
 			focus = SHW_Focus_30
 		}
-		completion_reward={
-			
-		} 
+		x = 51
+		y = 3
+			completion_reward = {
+
+}
+
 	}
-	focus = { 
+	focus = {
 		id = SHW_Focus_32
 		icon = GFX_goal_SHW_Focus_32
-		cost = 8.00 
-		x = 51
-		y = 4 
-		available = {
-			has_country_flag = SHW_Focus_32_flag
-		}
+		cost = 8.00
 		prerequisite = {
 			focus = SHW_Focus_31
 		}
-		completion_reward={
-			
-		} 
-	}
-	focus = {  
-		id = SHW_Focus_33
-		icon = GFX_goal_SHW_Focus_33
-		cost = 8.00 
-		x = 38
-		y = 2
-		available = {
-			
-		}
-		prerequisite = {
-			focus = SHW_Focus_20
-		}
-		completion_reward={
-			mio:SHW_Tula_Arms = {
-				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.10
-			}
-			mio:SHW_ZiD = {
-				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.10
-			}
-			mio:SHW_Putilov_Factory = {
-				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.10
-			}
-			mio:SHW_Petersburg_Shipyard = {
-				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.10
-			}
-			mio:SHW_Russo_Balt= {
-				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.10
-			}
-			mio:SHW_Russo_Balt_Armored_Vehicles= {
-				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.10
-			}
-		} 
-	}
+		x = 51
+		y = 4
+			available = {
+					has_country_flag = SHW_Focus_32_flag
+				}
+			completion_reward = {
 
-
-
-
-
-
-	focus = {
-		id = SHW_Depose_Tsar
-		icon = GFX_goal_SHW_Depose_Tsar
-		cost = 8.00
-		allow_branch={
-			has_country_flag=Russia_uprising
-		}
-		mutually_exclusive = {
-			focus = SHW_For_Your_Majesty
-		}
-		x = 19
-		y = 6
-completion_reward={
-	#country_event={id=SHW.15 days=1}
 }
-	}
-	
 
-
-	focus = {
-		id = SHW_Democracy_in_Russia
-		icon = GFX_goal_SHW_Democracy_in_Russia
-		cost = 8.00
-		x = 19
-		y = 7
-		mutually_exclusive = {
-			focus = SHW_The_head_army
-		}
-		prerequisite = {
-			focus = SHW_Depose_Tsar
-		}
-		completion_reward={
-			
-			hidden_effect={
-				set_popularities = {
-					Nationalism = 10
-					Conservatism = 5
-					Reformism = 10
-					Reformism = 10
-					Liberalism = 55
-					Conservatism = 10
-					}
-			}
-		}
-	}
-	focus = {
-		id = SHW_Coalition_Cabinet_Government
-		icon = GFX_goal_SHW_Coalition_Cabinet_Government
-		cost = 8.00
-		x = 19
-		y = 8
-		
-		prerequisite = {
-			focus = SHW_Democracy_in_Russia
-		}
-		completion_reward={
-			custom_effect_tooltip=PFA
-	hidden_effect={
-	        remove_ideas= SHW_Nikolaj_Dmitrievich_Golicyn_H
-	        add_ideas=SHW_Georgy_Lviv_H
-		}
-		custom_effect_tooltip = available_political_advisor
-		    show_ideas_tooltip = SHW_Viktor_Chernov_P
-		    show_ideas_tooltip = SHW_Nikolai_Vissarionovich_Nekrasov_P
-			show_ideas_tooltip = SHW_Mikhail_Tereshchenko_P
-			show_ideas_tooltip = SHW_Andrey_Ivanovich_Shingarev_P
-			show_ideas_tooltip = SHW_Alexander_Grigorievich_Khrushchov_P
-	}
-	}
-	focus = {
-		id = SHW_Struggle_overcome_differences
-		icon = GFX_goal_SHW_Struggle_overcome_differences
-		cost = 8.00
-		x = 16
-		y = 8
-		
-		prerequisite = {
-			focus = SHW_Democracy_in_Russia
-		}
-		completion_reward={
-			
-			add_trait = {
-				character = SHW_Kerensky
-			    slot = head_of_government
-			    trait = Little_Napoleon
-			}
-			
-		}
-	}
-	focus = {
-		id = SHW_Isolate_dissidents
-		icon = GFX_goal_SHW_Isolate_dissidents
-		cost = 8.00
-		x = 16
-		y = 9
-		
-		prerequisite = {
-			focus = SHW_Struggle_overcome_differences
-		}
-		completion_reward={
-			add_trait = {
-				character = SHW_Viktor_Chernov
-			    slot = head_of_government
-			    trait = Leader_opposition
-			}
-			
-		}
-	}
-	focus = {
-		id = SHW_Reinstatement_death_penalty
-		icon = GFX_goal_SHW_Reinstatement_death_penalty
-		cost = 8.00
-		x = 16
-		y = 10
-		
-		prerequisite = {
-			focus = SHW_Isolate_dissidents
-		}
-		completion_reward={
-			add_stability=0.05
-		}
-	}
-	focus = {
-		id = SHW_There_no_party_class
-		icon = GFX_goal_SHW_There_no_party_class
-		cost = 8.00
-		x = 19
-		y = 9
-		
-		prerequisite = {
-			focus = SHW_Coalition_Cabinet_Government
-		}
-		completion_reward={
-			#country_event = SHW.17
-		}
-	}
-	focus = {
-		id = SHW_democratic_government_without_all
-		icon = GFX_goal_SHW_democratic_government_without_all
-		cost = 8.00
-		x = 19
-		y = 10
-		
-		prerequisite = {
-			focus = SHW_There_no_party_class
-		}
-		completion_reward={
-			add_ideas = SHW_Russian_style_democracy
-			set_politics = {
-				ruling_party = Nationalism
-				elections_allowed =yes
-			}
-			hidden_effect={
-				set_popularities = {
-					Nationalism = 55
-					Conservatism = 5
-					Reformism = 10
-					Reformism = 10
-					Liberalism = 10
-					Conservatism = 10
-					}
-			}
-		}
 	}
 	focus = {
 		id = SHW_Convening_Moscow_State_Council
 		icon = GFX_goal_SHW_Convening_Moscow_State_Council
 		cost = 8.00
-		x = 19
-		y = 11
-		
 		prerequisite = {
 			focus = SHW_democratic_government_without_all
 		}
@@ -832,355 +1414,143 @@ completion_reward={
 		prerequisite = {
 			focus = SHW_Repeal_Declaration_Rights_Soldiers
 		}
-		completion_reward={
-			
-		}
-	}
-	focus = {
-		id = SHW_Centered_military
-		icon = GFX_goal_SHW_Centered_military
-		cost = 8.00
-		x = 22
-		y = 9
-		
-		prerequisite = {
-			focus = SHW_Strive_national_improvement
-		}
-		completion_reward={
-			army_experience = 40
-			navy_experience = 40
-			add_trait = {
-				character = SHW_Kerensky
-			    slot = head_of_government
-			    trait = military_naval_affairs
-			}
-		}
-	}
-	focus = {
-		id = SHW_Repeal_Declaration_Rights_Soldiers
-		icon = GFX_goal_SHW_Repeal_Declaration_Rights_Soldiers
-		cost = 8.00
-		x = 22
-		y = 10
-		
-		prerequisite = {
-			focus = SHW_Centered_military
-		}
-		completion_reward={
-			add_ideas = SHW_Disgruntled_army
-		}
-	}
-	focus = {
-		id = SHW_Strive_national_improvement
-		icon = GFX_goal_SHW_Strive_national_improvement
-		cost = 8.00
-		x = 22
-		y = 8
-		
-		prerequisite = {
-			focus = SHW_Democracy_in_Russia
-		}
-		completion_reward={
-			add_political_power=200
-		}
-	}
-	focus = {
-		id = SHW_Restart_Black_Hundred
-		icon = GFX_goal_SHW_Restart_Black_Hundred
-		cost = 8.00
-		x = 25
-		y = 7
-		mutually_exclusive = {
-			focus = SHW_Embrace_change
-		}
-		prerequisite = {
-			focus = SHW_For_Your_Majesty
-		}
-		completion_reward={
-			add_ideas = SHW_Black_Hundred_Regiment
-			
-		}
-	}
-	focus = {
-		id = SHW_Worthless_democracy
-		icon = GFX_goal_SHW_Worthless_democracy
-		cost = 8.00
-		x = 24
-		y = 8
-		prerequisite = { focus = SHW_Restart_Black_Hundred }
-		completion_reward={
-			add_political_power = 100
-			swap_ideas = {
-				remove_idea = State_media
-				add_idea = Control_media
-			}
-			swap_ideas = {
-				remove_idea = Special_police
-				add_idea = State_control
-			}
-		}
-	}
-	focus = {
-		id = SHW_Protocol_Elders_Zion
-		icon = GFX_goal_SHW_Protocol_Elders_Zion
-		cost = 8.00
-		x = 24
-		y = 9
-		prerequisite = { focus = SHW_Worthless_democracy }
-		completion_reward={
-		}
-	}
-	focus = {
-		id = SHW_Traditional_village_community_system
-		icon = GFX_goal_SHW_Traditional_village_community_system
-		cost = 8.00
-		x = 24
-		y = 10
-		prerequisite = { focus = SHW_Protocol_Elders_Zion }
-		completion_reward={
-			swap_ideas = {
-				remove_idea = SHW_Stolypin_legacy
-				add_idea = SHW_Stolypin_legacy1
-			}
-		}
-	}
-	focus = {
-		id = SHW_Slavic_nationalism_culture
-		icon = GFX_goal_SHW_Slavic_nationalism_culture
-		cost = 8.00
-		x = 26
-		y = 8
-		prerequisite = { focus = SHW_Restart_Black_Hundred }
-		completion_reward={
-			
-		}
-	}
-	focus = {
-		id = SHW_Loyalty_motion
-		icon = GFX_goal_SHW_Loyalty_motion
-		cost = 8.00
-		x = 26
-		y = 9
-		prerequisite = { focus = SHW_Slavic_nationalism_culture }
-		completion_reward={
-			add_popularity = {
-				ideology = Conservatism
-				popularity = 0.05
-			}
-		}
-	}
-	focus = {
-		id = SHW_Carry_patriotic_education
-		icon = GFX_goal_SHW_Carry_patriotic_education
-		cost = 8.00
-		x = 26
-		y = 10
-		prerequisite = { focus = SHW_Loyalty_motion }
-		completion_reward={
-		    add_ideas = SHW_Patriotic_education
-		}
+		x = 19
+		y = 11
+			completion_reward = {
+
+}
+
 	}
 	focus = {
 		id = SHW_Orthodox_Church_emperor_Russian_Motherland
 		icon = GFX_goal_SHW_Orthodox_Church_emperor_Russian_Motherland
 		cost = 8.00
-		x = 25
-		y = 11
-		prerequisite = { focus = SHW_Carry_patriotic_education }
-		prerequisite = { focus = SHW_Traditional_village_community_system }
-		completion_reward={
-		}
-	}
-	focus = {
-		id = SHW_Right_wing_revolutionaries
-		icon = GFX_goal_SHW_Right_wing_revolutionaries
-		cost = 8.00
-		x = 28
-		y = 8
-		prerequisite = { focus = SHW_Restart_Black_Hundred OR = SHW_Embrace_change }
-		completion_reward={
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = SHW_Nikolai_Evgenievich_Markov_P
-			
-		}
-	}
-	focus = {
-		id = SHW_backbone_the_nation
-		icon = GFX_goal_SHW_backbone_the_nation
-		cost = 8.00
-		x = 28
-		y = 9
-		prerequisite = { focus = SHW_Right_wing_revolutionaries }
-		completion_reward={
-			add_ideas = SHW_backbone_nation
-			add_popularity = {
-				ideology = Conservatism
-				popularity = 0.05
-			}
-			add_popularity = {
-				ideology = Nationalism
-				popularity = 0.05
-			}
-		}  
-	} 
-	focus = { 
-		id = SHW_Guardians_the_Old_Order
-		icon = GFX_goal_SHW_Guardians_the_Old_Order
-		cost = 8.00
-		x = 28
-		y = 10
-		prerequisite = { focus = SHW_backbone_the_nation }
-		completion_reward={
-		}
-	}
-	focus = {
-		id = SHW_Embrace_change
-		icon = GFX_goal_SHW_Embrace_change
-		cost = 8.00
-		x = 31
-		y = 7
-		mutually_exclusive = {
-			focus = SHW_Restart_Black_Hundred
+		prerequisite = {
+			focus = SHW_Carry_patriotic_education
 		}
 		prerequisite = {
-			focus = SHW_For_Your_Majesty
+			focus = SHW_Traditional_village_community_system
 		}
-		completion_reward={
-			custom_effect_tooltip = Embrace_change
-			hidden_effect = {
-				retire_country_leader = yes
-			}
-			set_politics = {
-				ruling_party = Conservatism
-				elections_allowed =yes
-			}
-			hidden_effect={
-				remove_ideas= SHW_Nikolaj_Dmitrievich_Golicyn_H
-				add_ideas=SHW_NicholasII_H
-				set_popularities = {
-					Nationalism = 0
-					Conservatism = 42
-					Reformism = 0
-					Reformism = 0
-					Liberalism = 13
-					Conservatism = 45
-					}
-			}
-			
-		}
-	}
+		x = 25
+		y = 11
+			completion_reward = {
 
-	focus = {
-		id = SHW_United_Slavs
-		icon = GFX_goal_SHW_United_Slavs
-		cost = 8.00
-		x = 30
-		y = 8
-		prerequisite = { focus = SHW_Embrace_change }
-		completion_reward={
-			add_opinion_modifier = {
-				target = LMN
-				modifier = Slavic_cultural_circle
-			}
-			add_opinion_modifier = {
-				target = BOJ
-				modifier = Slavic_cultural_circle
-			}
-			add_opinion_modifier = {
-				target = SIW
-				modifier = Slavic_cultural_circle
-			}
-			add_opinion_modifier = {
-				target = ALB
-				modifier = Slavic_cultural_circle
-			}
-		}
-	}
-	focus = {
-		id = SHW_Invite_worker_representatives
-		icon = GFX_goal_SHW_Invite_worker_representatives
-		cost = 8.00
-		x = 32
-		y = 8
-		prerequisite = { focus = SHW_Embrace_change }
-		completion_reward={
-		}
-	}
-	focus = {
-		id = SHW_Establishment_national_insurance
-		icon = GFX_goal_SHW_Establishment_national_insurance
-		cost = 8.00
-		x = 30
-		y = 9
-		prerequisite = { focus = SHW_United_Slavs }
-		completion_reward={
-		}
-	}
+}
 
-	focus = {
-		id = SHW_Improve_industrial_relations
-		icon = GFX_goal_SHW_Improve_industrial_relations
-		cost = 8.00
-		x = 32
-		y = 9
-		prerequisite = { focus = SHW_Embrace_change }
-		completion_reward={
-			    custom_effect_tooltip = Unemployment_rate_modifier_down
-			    set_temp_variable = { Unemployment = Unemployment }
-				add_to_variable = { Unemployment = -0.03 }
-				add_to_variable = { Unemployment = Unemployment }
-		}
 	}
-	focus = {
-		id = SHW_Offer_cheap_loans
-		icon = GFX_goal_SHW_Offer_cheap_loans
-		cost = 8.00
-		x = 32
-		y = 10
-		prerequisite = { focus = SHW_Improve_industrial_relations }
-		completion_reward={
-			add_ideas = SHW_Loans_rubles
-		}
-	}
-	focus = {
-		id = SHW_Education_all
-		icon = GFX_goal_SHW_Education_all
-		cost = 8.00
-		x = 30
-		y = 10
-		prerequisite = { focus = SHW_Establishment_national_insurance }
-		completion_reward={
-		}
-	}
-
 	focus = {
 		id = SHW_Brand_new_Russia
 		icon = GFX_goal_SHW_Brand_new_Russia
 		cost = 8.00
+		prerequisite = {
+			focus = SHW_Education_all
+		}
+		prerequisite = {
+			focus = SHW_Offer_cheap_loans
+		}
 		x = 31
 		y = 11
-		prerequisite = { focus = SHW_Education_all }
-		prerequisite = { focus = SHW_Offer_cheap_loans }
-		completion_reward={
-		}
-	}
-
-	focus = {
-		id = SHW_For_Your_Majesty
-		icon = GFX_goal_SHW_For_Your_Majesty
-		cost = 8.00
-		allow_branch={
-			has_country_flag=Russia_uprising
-		}
-		mutually_exclusive = {
-			focus = SHW_Depose_Tsar
-		}
-		x = 25
-		y = 6
-completion_reward={
-	add_political_power = 200
-	add_war_support = 0.2
+			completion_reward = {
 
 }
+
+	}
+	focus = {
+		id = SHW_dip_4
+		icon = GFX_SHW_dip_4
+		cost = 10.00
+		prerequisite = {
+			focus = SHW_dip_3
+		}
+		x = 5
+		y = 4
+		completion_reward = {
+			country_event = SHW_dip_event.2
+		}
+	}
+	focus = {
+		id = SHW_dip_7
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SHW_dip_4
+		}
+		x = 5
+		y = 5
+
+	}
+	focus = {
+		id = SHW_dip_8
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SHW_dip_7
+		}
+		x = 3
+		y = 6
+ 
+	}
+	focus = {
+		id = SHW_dip_9
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = { 
+			focus = SHW_dip_7
+		}
+		x = 5
+		y = 6
+
+	}
+	focus = {
+		id = SHW_dip_10
+		icon = GFX_goal_unknown
+		cost = 10.00
+		mutually_exclusive = {
+			focus = SHW_dip_8
+		}
+		prerequisite = {
+			focus = SHW_dip_7
+		}
+		x = 7
+		y = 6
+
+	}
+	focus = {
+		id = SHW_dip_11
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SHW_dip_9
+		}
+		prerequisite = {
+			focus = SHW_dip_8
+			focus = SHW_dip_10
+		}
+		x = 5
+		y = 7
+
+	}
+	focus = {
+		id = SHW_dip_12
+		icon = GFX_SHW_dip_12 
+		cost = 10.00
+		prerequisite = {
+			focus = SHW_dip_11
+		}
+		x = 5
+		y = 8
+
+	}
+	focus = {
+		id = SHW_dip_14
+		icon = GFX_SHW_dip_14
+		cost = 10.00
+		prerequisite = {
+			focus = SHW_dip_11
+			focus = SHW_dip_19
+		}
+		x = 9
+		y = 8
+
 	}
 }

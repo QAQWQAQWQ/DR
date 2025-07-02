@@ -38,7 +38,7 @@ recruit_character = JPN_Yamakawa_Hitoshi
 recruit_character = JPN_Shigenobu_Okuma
 recruit_character = JPN_Yamagata_Aritomo
 recruit_character = JPN_Emperor_Taisho 
-recruit_character = JPN_Hara_Takashi
+recruit_character = JPN_Tokugawa_Ieyasu
 recruit_character = JPN_Saionji_Kinmoch
 recruit_character = JPN_Korekiyo_Takahashi
 recruit_character = JPN_Inuto_Yi
@@ -59,6 +59,7 @@ recruit_character = JPN_Terauchi_Hisaichi
 recruit_character = JPN_Matsui_Iwane
 recruit_character = JPN_Hirohito
 recruit_character = JPN_Shuaki_Okawa
+
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -92,7 +93,6 @@ add_ideas={
 	JPN_haze_Russo_Japanese_War
     JPN_noninterference
 
-	JPN_Eight_Hong_Yiyu
 ##MINISTERS##
 JPN_Emperor_Taisho_H
 #law
