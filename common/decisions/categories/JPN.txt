@@ -45,6 +45,17 @@ JPN_National_railway_construction= {
 	visible = {
 	} 
 }
+JPN_Expansion_University = {
+	icon = infiltration
+	
+	picture = GFX_decisions_JPN_National_railway_construction
+	priority = 10
+	allowed = {
+		tag = JPN
+	}
+	visible = {
+	} 
+}
 JPN_The_88_Fleet_Plan= {
 	icon = infiltration
 	

@@ -489,6 +489,314 @@ JPN_National_railway_construction = {
 		}
 	}
 }
+JPN_Expansion_University = {
+	JPN_Mito_University = {
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+		}
+		available = {
+		}  
+		#available = {
+		#	check_variable = {
+		#		new_nat_tre > 1
+		#		tooltip = new_nat_tre_1
+		#	}
+		#} 
+		#custom_cost_trigger = {
+		#	always=yes
+		#}
+		#custom_cost_text = The_88_Fleet_Plan_text
+		days_re_enable = 5
+		days_remove = 70
+		cost = 45
+		allowed = {
+			tag = JPN
+		}
+		complete_effect = { 
+			#add_to_temp_variable = {
+			#	temp_new_nat_tre = -1
+			#}
+			#new_nat_tre_add = yes
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	JPN_Tokyo_University_of_Commerce = {
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+		}
+		available = {
+		}  
+		#available = {
+		#	check_variable = {
+		#		new_nat_tre > 1
+		#		tooltip = new_nat_tre_1
+		#	}
+		#} 
+		#custom_cost_trigger = {
+		#	always=yes
+		#}
+		#custom_cost_text = The_88_Fleet_Plan_text
+		days_re_enable = 5
+		days_remove = 60
+		cost = 40
+		allowed = {
+			tag = JPN
+		}
+		complete_effect = { 
+			#add_to_temp_variable = {
+			#	temp_new_nat_tre = -1
+			#}
+			#new_nat_tre_add = yes
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	JPN_Yamagata_University = {
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+		}
+		available = {
+		}  
+		#available = {
+		#	check_variable = {
+		#		new_nat_tre > 1
+		#		tooltip = new_nat_tre_1
+		#	}
+		#} 
+		#custom_cost_trigger = {
+		#	always=yes
+		#}
+		#custom_cost_text = The_88_Fleet_Plan_text
+		days_re_enable = 5
+		days_remove = 60
+		cost = 40
+		allowed = {
+			tag = JPN
+		}
+		complete_effect = { 
+			#add_to_temp_variable = {
+			#	temp_new_nat_tre = -1
+			#}
+			#new_nat_tre_add = yes
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	JPN_Saga_University = {
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+		}
+		available = {
+		}  
+		#available = {
+		#	check_variable = {
+		#		new_nat_tre > 1
+		#		tooltip = new_nat_tre_1
+		#	}
+		#} 
+		#custom_cost_trigger = {
+		#	always=yes
+		#}
+		#custom_cost_text = The_88_Fleet_Plan_text
+		days_re_enable = 5
+		days_remove = 70
+		cost = 45
+		allowed = {
+			tag = JPN
+		}
+		complete_effect = { 
+			#add_to_temp_variable = {
+			#	temp_new_nat_tre = -1
+			#}
+			#new_nat_tre_add = yes
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	JPN_Hirosaki_University = {
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+		}
+		available = {
+		}  
+		#available = {
+		#	check_variable = {
+		#		new_nat_tre > 1
+		#		tooltip = new_nat_tre_1
+		#	}
+		#} 
+		#custom_cost_trigger = {
+		#	always=yes
+		#}
+		#custom_cost_text = The_88_Fleet_Plan_text
+		days_re_enable = 5
+		days_remove = 60
+		cost = 40
+		allowed = {
+			tag = JPN
+		}
+		complete_effect = { 
+			#add_to_temp_variable = {
+			#	temp_new_nat_tre = -1
+			#}
+			#new_nat_tre_add = yes
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	JPN_Matsue_University = {
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+		}
+		available = {
+		}  
+		#available = {
+		#	check_variable = {
+		#		new_nat_tre > 1
+		#		tooltip = new_nat_tre_1
+		#	}
+		#} 
+		#custom_cost_trigger = {
+		#	always=yes
+		#}
+		#custom_cost_text = The_88_Fleet_Plan_text
+		days_re_enable = 5
+		days_remove = 70
+		cost = 45
+		allowed = {
+			tag = JPN
+		}
+		complete_effect = { 
+			#add_to_temp_variable = {
+			#	temp_new_nat_tre = -1
+			#}
+			#new_nat_tre_add = yes
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	JPN_Niigata_Medical_University = {
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+		}
+		available = {
+		}  
+		#available = {
+		#	check_variable = {
+		#		new_nat_tre > 1
+		#		tooltip = new_nat_tre_1
+		#	}
+		#} 
+		#custom_cost_trigger = {
+		#	always=yes
+		#}
+		#custom_cost_text = The_88_Fleet_Plan_text
+		days_re_enable = 5
+		days_remove = 60
+		cost = 40
+		allowed = {
+			tag = JPN
+		}
+		complete_effect = { 
+			#add_to_temp_variable = {
+			#	temp_new_nat_tre = -1
+			#}
+			#new_nat_tre_add = yes
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	JPN_Okayama_Medical_University = {
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+		}
+		available = {
+		}  
+		#available = {
+		#	check_variable = {
+		#		new_nat_tre > 1
+		#		tooltip = new_nat_tre_1
+		#	}
+		#} 
+		#custom_cost_trigger = {
+		#	always=yes
+		#}
+		#custom_cost_text = The_88_Fleet_Plan_text
+		days_re_enable = 5
+		days_remove = 60
+		cost = 40
+		allowed = {
+			tag = JPN
+		}
+		complete_effect = { 
+			#add_to_temp_variable = {
+			#	temp_new_nat_tre = -1
+			#}
+			#new_nat_tre_add = yes
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	JPN_Chiba_Medical_University = {
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+		}
+		available = {
+		}  
+		#available = {
+		#	check_variable = {
+		#		new_nat_tre > 1
+		#		tooltip = new_nat_tre_1
+		#	}
+		#} 
+		#custom_cost_trigger = {
+		#	always=yes
+		#}
+		#custom_cost_text = The_88_Fleet_Plan_text
+		days_re_enable = 5
+		days_remove = 70
+		cost = 45
+		allowed = {
+			tag = JPN
+		}
+		complete_effect = { 
+			#add_to_temp_variable = {
+			#	temp_new_nat_tre = -1
+			#}
+			#new_nat_tre_add = yes
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
 JPN_The_88_Fleet_Plan = {
 	build_nagato_class = {
 		icon = GFX_decision_generic_merge_plant_ship
