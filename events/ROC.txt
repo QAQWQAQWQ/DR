@@ -88,18 +88,6 @@ news_event = {
 	is_triggered_only = yes
 	option = {
 		name = ROC.1.a
-		every_state = {
-				limit = {
-					is_core_of = GUG
-				}
-				add_core_of = ROC
-	    }
-		hidden_effect = {
-			ROC={
-				transfer_state = 592
-				transfer_state = 593
-			}
-		}
 	}
 }
 news_event = {
@@ -111,12 +99,6 @@ news_event = {
 	is_triggered_only = yes
 	option = {
 		name = ROC.2.a
-		ROC={
-			declare_war_on = {
-				target = ZHX
-				type = liberate_wargoal
-			}
-		}
 	}
 }
 	

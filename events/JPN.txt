@@ -138,10 +138,10 @@ country_event = {
 		hidden_effect={
 			country_event = {id=JPN.5 days=35}
 		}
-		add_to_variable = {
-			nat_debt = -40
-			tooltip = nat_debt_40
+		set_temp_variable = {
+			temp_nat_debt = 40
 		}
+		nat_debt_add = yes
 	}
 }
 country_event = {

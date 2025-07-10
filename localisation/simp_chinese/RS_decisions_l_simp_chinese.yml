@@ -50,7 +50,32 @@
  JPN_Investigate_murderer:0 "调查凶手"
  The_murderer_revealed:0 "凶手被逮捕"
 
+ JPN_National_railway_construction:0 "全国通勤电铁修建计划"
+ JPN_National_railway_construction_desc:0 "\n\n\n\n\n\n\n\n通勤电铁，乃是吾帝国产业兴国之道的核心内容之一，通勤电铁不仅能助力改善我们的运输，更是政党争取选票和政府拉拢三井-三菱系财阀的重要筹码，所以我们一定要重视修建通勤电铁。"
+ JPN_Tokyo_Nagoya_Line:0 "修建东京-静冈双轨铁路"
+ JPN_Tokyo_Kobe_Line:0 "修建东京-名古屋段铁路"
+ JPN_Mito_Sendai_Line:0 "修建福岛-盛冈段铁路"
+ JPN_Mito_Morioka_Line:0 "修建东京-青森段铁路"
+ JPN_Osaka_Nagoya_Line:0 "修建盛冈-秋田段铁路"
+ JPN_Morioka_Akita_Line:0 "上野-赤羽段铁路电气化"
+ JPN_Tokyo_Line:0 "修建山手线通勤铁路"
+ JPN_railway_construction_cost:0 "£GFX_private_capital_icon  §Y0.5M§!"
+ new_nat_tre_1:0 "国库：至少拥有1M"
 
+ The_88_Fleet_Plan_text:0 "£GFX_private_capital_icon  §Y1M§!"
+  JPN_The_88_Fleet_Plan:"八八舰队计划"
+  JPN_The_88_Fleet_Plan_desc:0 "\n\n\n\n\n\n\n\n吾帝国自神武天皇开元以来，便统治着本州四岛，一个毫无疑问的海权帝国。吾帝国生于强敌围绕之环境，不仅有俄国太平洋舰队虎视眈眈，更有英国太平洋舰队如芒在背。为了打破饿狼围绕之局面，我们必须建设一支强大的舰队。"
+  build_nagato_class:0 "建造「长门号」战舰"
+  build_mutsu_class:0 "建造「陆奥号」战舰"
+  build_akagi_class:0 "建造「赤城号」战舰"
+  build_tosa_class:0 "建造「土佐号」战舰"
+  build_kii_class:0 "建造「记伊号」战舰"
+  build_osa_class:0 "建造「尾佐号」战舰"
+  build_amagi_class:0 "建造「天城号」战舰"
+  build_atago_class:0 "建造「爱宕号」战舰"
+  build_hata_class:0 "建造「波田号」战舰"
+  build_ozaki_class:0 "建造「尾崎号」战舰"
+  build_takao_class:0 "建造「高雄号」战舰"
 
  FRW_flood:0 "代号“洪水”"
  FRW_flood_desc:0 "\n\n\n\n\n\n\n\n最高军事指挥部已经决定将在阿尔及尔港等地开展登陆行动，集中其一切力量攻占阿尔及尔西部－从米莉亚纳到卜利达－然后再以此为基地解放其余地区。这个计划容许最可能的兵力集中，形成强大的打击力量，在决定点上享有绝对的优势。\n\n部队动员：[?Flood_Force]/130000\n\n飞机已整顿：[?Flood_equipment]/300\n\n船只已整顿：[?Flood_boats]/750"
@@ -64,6 +89,19 @@
  FRW_Develop_rural_areas:0 "发展农村"
  FRW_Develop_city_areas:0 "发展城市"
  FRW_economic_committee:0 "建立基层委员会"
+
+ FRW_Constructing_underdeveloped_areas:0 "发展落后地区"
+ FRW_Constructing_underdeveloped_areas_desc:0 "\n\n\n\n\n\n\n\n工业化的代价是明显的，随着工业实力的提升，带来了一系列的贫富差距，巴黎售卖的一瓶昂贵香槟足以抵得上一位普通农民半年的收入。"
+  Promote_development_Champagne_region:0 "促进香槟地区发展"
+  Promote_development_Lorraine:0 "促进洛林地区发展"
+  Promote_development_Franche_Comte:0 "促进弗朗什-孔泰地区发展"
+  Promote_development_Burgundy:0 "促进勃艮第地区发展"
+  Promote_development_Rhone_Alpes:0 "促进罗纳-阿尔卑斯地区发展"
+  Promote_development_Provence:0 "促进普罗旺斯地区发展"
+  Promote_development_Var:0 "促进瓦尔地区发展"
+
+
+
 
 
  FRW_Trade_unionist_title:0 "工团运动已然苏醒，我们需要团结全法国的工人来加入我们这伟大的理想之中\n\n在城市建立总工会：[?Number_unions]/10\n劳工海报宣传活动：[?Number_posters]/3"

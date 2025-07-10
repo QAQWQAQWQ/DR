@@ -95,11 +95,11 @@ guiTypes = {
 			maxHeight = 24
 			fixedsize = yes
 		}           
-		iconType = {                      
-			name = "State_icon" 
-            			pdx_tooltip= "State_icon_desc"
-			position = { x = 307 y =340 }
-		}  
+		#iconType = {                      
+			#name = "State_icon" 
+            			#pdx_tooltip= "State_icon_desc"
+			#position = { x = 307 y =340 }
+		#}  
 		iconType = {                      
 			name = "culture_icon" 
 			quadTextureSprite ="GFX_culture_icon"

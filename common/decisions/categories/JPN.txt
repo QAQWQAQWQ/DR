@@ -34,3 +34,25 @@ JPN_Death_Senator = {
 	visible = {
 	} 
 }
+JPN_National_railway_construction= {
+	icon = infiltration
+	
+	picture = GFX_decisions_JPN_National_railway_construction
+	priority = 10
+	allowed = {
+		tag = JPN
+	}
+	visible = {
+	} 
+}
+JPN_The_88_Fleet_Plan= {
+	icon = infiltration
+	
+	picture = GFX_decisions_JPN_The_88_Fleet_Plan
+	priority = 10
+	allowed = {
+		tag = JPN 
+	}
+	visible = {
+	} 
+}

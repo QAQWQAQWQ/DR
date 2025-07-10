@@ -155,6 +155,26 @@ FRW_Provence_Commune= {
 	disable_strategic_redeployment = 1
 }
 
+FRW_Areas_imbalanced_development= {
+	enable = { always = yes }
+
+	icon = GFX_idea_Areas_imbalanced_development
+
+	local_resources=-0.02
+	local_resources_factor=-0.02
+	state_resources_factor=-0.02
+	state_production_speed_arms_factory_factor=-0.02
+	state_production_speed_industrial_complex_factor=-0.02
+}
+
+FRW_Strong_Catholic_atmosphere= {
+	enable = { always = yes }
+
+	icon = GFX_idea_Strong_Catholic_atmosphere
+
+	local_non_core_manpower=0.05
+	local_intel_to_enemies=0.1
+}
 
 
 FRW_Brittany_National_autonomy= {

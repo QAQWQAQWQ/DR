@@ -1,3 +1,227 @@
+FRW_Constructing_underdeveloped_areas = {
+	Promote_development_Champagne_region = {
+		icon = generic_construction
+		highlight_states = {
+			highlight_state_targets = {
+				state = 18
+			}
+			highlight_color_while_active = 1
+			highlight_color_before_active = 3
+		}
+		visible = {                                                                                                              
+		}
+		available = {
+		}
+		days_remove = 320
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			remove_dynamic_modifier = {
+				modifier = FRW_Areas_imbalanced_development
+			}
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Promote_development_Lorraine = {
+		icon = generic_construction
+		highlight_states = {
+			highlight_state_targets = {
+				state = 32
+			}
+		}
+		visible = {                                                                                                              
+		}
+		available = {
+		}
+		days_remove = 320
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			remove_dynamic_modifier = {
+				modifier = FRW_Areas_imbalanced_development
+			}
+		}
+		fixed_random_seed = no
+		is_good = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	Promote_development_Franche_Comte = {
+		icon = generic_construction
+		highlight_states = {
+			highlight_state_targets = {
+				state = 17
+			}
+		}
+		visible = {                                                                                                              
+		}
+		available = {
+		}
+		days_remove = 320
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			remove_dynamic_modifier = {
+				modifier = FRW_Areas_imbalanced_development
+			}
+		}
+		fixed_random_seed = no
+		is_good = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	Promote_development_Burgundy = {
+		icon = generic_construction
+		highlight_states = {
+			highlight_state_targets = {
+				state = 27
+			}
+		}
+		visible = {                                                                                                              
+		}
+		available = {
+		}
+		days_remove = 320
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			remove_dynamic_modifier = {
+				modifier = FRW_Areas_imbalanced_development
+			}
+		}
+		fixed_random_seed = no
+		is_good = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	Promote_development_Rhone_Alpes = {
+		icon = generic_construction
+		highlight_states = {
+			highlight_state_targets = {
+				state = 20
+			}
+		}
+		visible = {                                                                                                              
+		}
+		available = {
+		}
+		days_remove = 320
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			remove_dynamic_modifier = {
+				modifier = FRW_Areas_imbalanced_development
+			}
+		}
+		fixed_random_seed = no
+		is_good = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	Promote_development_Provence = {
+		icon = generic_construction
+		highlight_states = {
+			highlight_state_targets = {
+				state = 21
+			}
+		}
+		visible = {                                                                                                              
+		}
+		available = {
+		}
+		days_remove = 320
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			remove_dynamic_modifier = {
+				modifier = FRW_Areas_imbalanced_development
+			}
+		}
+		fixed_random_seed = no
+		is_good = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	Promote_development_Var = {
+		icon = generic_construction
+		highlight_states = {
+			highlight_state_targets = {
+				state = 851
+			}
+		}
+		visible = {                                                                                                              
+		}
+		available = {
+		}
+		days_remove = 320
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			tag = FRW
+		}
+		complete_effect = { 
+			remove_dynamic_modifier = {
+				modifier = FRW_Areas_imbalanced_development
+			}
+		}
+		fixed_random_seed = no
+		is_good = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 FRW_Power_struggles_balance_category = {
 	FRW_economic_committee = {
 		icon = generic_ignite_civil_war
@@ -1307,9 +1531,9 @@ FRW_army_revolution2 = {
 	}
 	days_remove = 30
 	cost = 35
-	allowed = {
+	allowed = { 
 		tag = FRW
-	}
+	} 
 	complete_effect = { 
 		add_to_variable = {
 			var = FRW_ARMY_VAR

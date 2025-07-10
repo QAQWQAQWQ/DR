@@ -1,10 +1,18 @@
 JPN_Twenty_fifth_Division = {
 	JPN_Add_intellectuals = {
-		icon = generic_ignite_civil_war
+		icon = decision_ger_mefo_bills
 			visible = {
 			}
 			available = {
+				check_variable = {
+					new_nat_tre > 1
+					tooltip = new_nat_tre_1
+				}
+			} 
+			custom_cost_trigger = {
+				always = yes
 			}
+			custom_cost_text = JPN_railway_construction_cost
 			days_re_enable = 5 
 			days_remove = 50
 			cost = 25
@@ -21,11 +29,19 @@ JPN_Twenty_fifth_Division = {
 			}
 	}
 	JPN_Develop_operational_guidelines = {
-		icon = generic_ignite_civil_war
+		icon = decision_ger_mefo_bills
 			visible = {
 			}
 			available = {
+				check_variable = {
+					new_nat_tre > 1
+					tooltip = new_nat_tre_1
+				}
+			} 
+			custom_cost_trigger = {
+				always = yes
 			}
+			custom_cost_text = JPN_railway_construction_cost
 			days_re_enable = 5
 			days_remove = 50
 			cost = 25
@@ -53,7 +69,7 @@ JPN_Twenty_fifth_Division = {
 			}
 	}
 	JPN_Complete_reorganization = {
-		icon = generic_ignite_civil_war
+		icon = decision_ger_mefo_bills
 			visible = {
 			}
 			available = {
@@ -83,7 +99,7 @@ JPN_Twenty_fifth_Division = {
 #########第二次护宪运动
 JPN_The_Second_Movement_Protect_Constitution = {
 	JPN_Second_Constitution = {
-		icon = generic_ignite_civil_war
+		icon = decision_ger_mefo_bills
 			available = {
 				AND={ 
 					check_variable = {
@@ -117,7 +133,7 @@ JPN_The_Second_Movement_Protect_Constitution = {
 			}
 	}
 	JPN_Newspaper_publicity = {
-		icon = generic_ignite_civil_war 
+		icon = decision_ger_mefo_bills 
 			visible = {
 			}     
 			available = { 
@@ -137,7 +153,7 @@ JPN_The_Second_Movement_Protect_Constitution = {
 			}
 	}
 	JPN_Mobilize_citizens_demonstrate = {
-		icon = generic_ignite_civil_war
+		icon = decision_ger_mefo_bills
 			visible = {
 			}
 			available = {
@@ -157,7 +173,7 @@ JPN_The_Second_Movement_Protect_Constitution = {
 			}
 	}
 	JPN_Parliamentary_negotiations = {
-		icon = generic_ignite_civil_war
+		icon = decision_ger_mefo_bills
 			visible = {
 			}
 			available = {
@@ -177,7 +193,7 @@ JPN_The_Second_Movement_Protect_Constitution = {
 			}
 	}
 	JPN_Storming_police = {
-		icon = generic_ignite_civil_war
+		icon = decision_ger_mefo_bills
 			visible = {
 			}
 			available = {
@@ -197,7 +213,7 @@ JPN_The_Second_Movement_Protect_Constitution = {
 			}
 	}
 	JPN_The_army_dispatched_maintain_stability = {
-		icon = generic_ignite_civil_war
+		icon = decision_ger_mefo_bills
 			visible = {
 				has_completed_focus = JPN_focus_33
 			}
@@ -218,7 +234,7 @@ JPN_The_Second_Movement_Protect_Constitution = {
 			}
 	}
 	JPN_Wage_workers_strike = {
-		icon = generic_ignite_civil_war
+		icon = decision_ger_mefo_bills
 			visible = {
 			}
 			available = {
@@ -242,7 +258,7 @@ JPN_The_Second_Movement_Protect_Constitution = {
 
 JPN_Death_Senator = {
 	JPN_Investigate_murderer = {
-		icon = generic_ignite_civil_war
+		icon = decision_ger_mefo_bills
 			activation={
 				has_country_flag = JPN_Death_Senator
 			}  
@@ -264,5 +280,546 @@ JPN_Death_Senator = {
 			}
 			complete_effect = {      
 			}
+	}
+}
+
+
+JPN_National_railway_construction = {
+	JPN_Tokyo_Nagoya_Line = {
+		icon = GFX_decision_generic_construction
+			visible = {
+			}
+			available = {
+				check_variable = {
+					new_nat_tre > 1
+					tooltip = new_nat_tre_1
+				}
+			} 
+			custom_cost_trigger = {
+				always = yes
+			}
+			custom_cost_text = JPN_railway_construction_cost
+			days_re_enable = 5
+			days_remove = 50 
+			cost = 25
+			
+			allowed = {
+				tag = JPN
+			} 
+			complete_effect = { 
+				add_to_temp_variable = {
+					temp_new_nat_tre = -0.5
+				}
+				new_nat_tre_add = yes
+			} 
+			fixed_random_seed = no
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 1
+			}
+	}
+	JPN_Tokyo_Kobe_Line = {
+		icon = GFX_decision_generic_construction
+			visible = {
+			}
+			available = {
+				check_variable = {
+					new_nat_tre > 1
+					tooltip = new_nat_tre_1
+				}
+			} 
+			custom_cost_trigger = {
+				always = yes
+			}
+			custom_cost_text = JPN_railway_construction_cost
+			days_re_enable = 5
+			days_remove = 50
+			cost = 25
+			allowed = {
+				tag = JPN
+			}
+			complete_effect = { 
+			}
+			fixed_random_seed = no
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 1
+			}
+	}
+	JPN_Mito_Sendai_Line = {
+		icon = GFX_decision_generic_construction
+			visible = {
+			}
+			available = {
+				check_variable = {
+					new_nat_tre > 1
+					tooltip = new_nat_tre_1
+				}
+			} 
+			custom_cost_trigger = {
+				always = yes
+			}
+			custom_cost_text = JPN_railway_construction_cost
+			days_re_enable = 5
+			days_remove = 50
+			cost = 25
+			allowed = {
+				tag = JPN
+			}
+			complete_effect = { 
+			}
+			fixed_random_seed = no
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 1
+			}
+	}
+	JPN_Mito_Morioka_Line = {
+		icon = GFX_decision_generic_construction
+		visible = {
+		}
+		available = {
+			check_variable = {
+				new_nat_tre > 1
+				tooltip = new_nat_tre_1
+			}
+		} 
+		custom_cost_trigger = {
+			always = yes
+		}
+		custom_cost_text = JPN_railway_construction_cost
+		days_re_enable = 5
+		days_remove = 50
+		cost = 25
+		allowed = {
+			tag = JPN
+		}
+		complete_effect = { 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	JPN_Osaka_Nagoya_Line = {
+		icon = GFX_decision_generic_construction
+		visible = {
+		}
+		available = {
+			check_variable = {
+				new_nat_tre > 1
+				tooltip = new_nat_tre_1
+			}
+		} 
+		custom_cost_trigger = {
+			always = yes
+		}
+		custom_cost_text = JPN_railway_construction_cost
+		days_re_enable = 5
+		days_remove = 50
+		cost = 25
+		allowed = {
+			tag = JPN 
+		} 
+		complete_effect = { 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	JPN_Morioka_Akita_Line = {
+		icon = GFX_decision_generic_construction
+		visible = { 
+		} 
+		available = {
+			check_variable = {
+				new_nat_tre > 1
+				tooltip = new_nat_tre_1
+			}
+		} 
+		custom_cost_trigger = {
+			always = yes
+		}
+		custom_cost_text = JPN_railway_construction_cost
+		days_re_enable = 5
+		days_remove = 50
+		cost = 25
+		allowed = {
+			tag = JPN
+		}
+		complete_effect = { 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	JPN_Tokyo_Line = {
+		icon = GFX_decision_generic_construction
+		visible = { 
+		} 
+		available = {
+			check_variable = {
+				new_nat_tre > 1
+				tooltip = new_nat_tre_1
+			}
+		} 
+		custom_cost_trigger = {
+			always = yes
+		}
+		custom_cost_text = JPN_railway_construction_cost
+		days_re_enable = 5
+		days_remove = 50
+		cost = 25 
+		allowed = {
+			tag = JPN
+		}
+		complete_effect = { 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+JPN_The_88_Fleet_Plan = {
+	build_nagato_class = {
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+		}
+		available = {
+		}  
+		available = {
+			check_variable = {
+				new_nat_tre > 1
+				tooltip = new_nat_tre_1
+			}
+		} 
+		custom_cost_trigger = {
+			always=yes
+		}
+		custom_cost_text = The_88_Fleet_Plan_text
+		days_re_enable = 5
+		days_remove = 50
+		cost = 0
+		allowed = {
+			tag = JPN
+		}
+		complete_effect = { 
+			add_to_temp_variable = {
+				temp_new_nat_tre = -1
+			}
+			new_nat_tre_add = yes
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	build_mutsu_class = {
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+		}
+		available = {
+			check_variable = {
+				new_nat_tre > 1
+				tooltip = new_nat_tre_1
+			}
+		} 
+		custom_cost_trigger = {
+			always=yes
+		}
+		custom_cost_text = The_88_Fleet_Plan_text
+		days_re_enable = 5
+		days_remove = 50
+		allowed = {
+			tag = JPN
+		}
+		complete_effect = { 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	build_akagi_class = {
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 5
+		days_remove = 50
+		available = {
+			check_variable = {
+				new_nat_tre > 1
+				tooltip = new_nat_tre_1
+			}
+		} 
+		custom_cost_trigger = {
+			always=yes
+		}
+		custom_cost_text = The_88_Fleet_Plan_text
+		allowed = {
+			tag = JPN
+		}
+		complete_effect = { 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	build_tosa_class = {
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 5
+		days_remove = 50
+		available = {
+			check_variable = {
+				new_nat_tre > 1
+				tooltip = new_nat_tre_1
+			}
+		} 
+		custom_cost_trigger = {
+			always=yes
+		}
+		custom_cost_text = The_88_Fleet_Plan_text
+		allowed = {
+			tag = JPN
+		}
+		complete_effect = { 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	build_kii_class = {
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 5
+		days_remove = 50
+		available = {
+			check_variable = {
+				new_nat_tre > 1
+				tooltip = new_nat_tre_1
+			}
+		} 
+		custom_cost_trigger = {
+			always=yes
+		}
+		custom_cost_text = The_88_Fleet_Plan_text
+		allowed = {
+			tag = JPN
+		}
+		complete_effect = { 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	build_osa_class = {
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 5
+		days_remove = 50
+		available = {
+			check_variable = {
+				new_nat_tre > 1
+				tooltip = new_nat_tre_1
+			}
+		} 
+		custom_cost_trigger = {
+			always=yes
+		}
+		custom_cost_text = The_88_Fleet_Plan_text
+		allowed = {
+			tag = JPN
+		}
+		complete_effect = { 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	build_amagi_class = {
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 5
+		days_remove = 50
+		available = {
+			check_variable = {
+				new_nat_tre > 1
+				tooltip = new_nat_tre_1
+			}
+		} 
+		custom_cost_trigger = {
+			always=yes
+		}
+		custom_cost_text = The_88_Fleet_Plan_text
+		allowed = {
+			tag = JPN
+		}
+		complete_effect = { 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	build_atago_class = {
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 5
+		days_remove = 50
+		available = {
+			check_variable = {
+				new_nat_tre > 1
+				tooltip = new_nat_tre_1
+			}
+		} 
+		custom_cost_trigger = {
+			always=yes
+		}
+		custom_cost_text = The_88_Fleet_Plan_text
+		allowed = {
+			tag = JPN
+		}
+		complete_effect = { 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	build_hata_class = {
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 5
+		days_remove = 50
+		available = {
+			check_variable = {
+				new_nat_tre > 1
+				tooltip = new_nat_tre_1
+			}
+		} 
+		custom_cost_trigger = {
+			always=yes
+		}
+		custom_cost_text = The_88_Fleet_Plan_text
+		allowed = {
+			tag = JPN
+		}
+		complete_effect = { 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	build_ozaki_class = {
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 5
+		days_remove = 50
+		available = {
+			check_variable = {
+				new_nat_tre > 1
+				tooltip = new_nat_tre_1
+			}
+		} 
+		custom_cost_trigger = {
+			always=yes
+		}
+		custom_cost_text = The_88_Fleet_Plan_text
+		allowed = {
+			tag = JPN
+		}
+		complete_effect = { 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	build_takao_class = {
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+		}
+		available = {
+		}
+		days_re_enable = 5
+		days_remove = 50
+		available = {
+			check_variable = {
+				new_nat_tre > 1
+				tooltip = new_nat_tre_1
+			}
+		} 
+		custom_cost_trigger = {
+			always=yes
+		}
+		custom_cost_text = The_88_Fleet_Plan_text
+		allowed = {
+			tag = JPN
+		}
+		complete_effect = { 
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
 	}
 }

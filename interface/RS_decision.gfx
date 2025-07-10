@@ -1,5 +1,8 @@
 spriteTypes = {	
-	
+	spriteType = {
+		name = "GFX_decisions_Constructing_underdeveloped_areas"
+		texturefile = "gfx/interface/decisions/decisions_Constructing_underdeveloped_areas.dds"
+	}
 	spriteType = {
 		name = "GFX_Socialist_Transformation_Program"
 		texturefile = "gfx/interface/decisions/decisions_Socialist_Transformation_Program.dds"
@@ -65,10 +68,16 @@ spriteTypes = {
 		name = "GFX_decisions_political_actions"
 		texturefile = "gfx/interface/decisions/decisions_political_actions.dds"
 	}
-	
+	 
 
-
-
+	spriteType = {
+		name = "GFX_decisions_JPN_The_88_Fleet_Plan"
+		texturefile = "gfx/interface/decisions/decisions_The_88_Fleet_Plan.dds"
+	}
+	spriteType = {
+		name = "GFX_decisions_JPN_National_railway_construction"
+		texturefile = "gfx/interface/decisions/decisions_National_railway_construction.dds"
+	}
 	spriteType = {
 		name = "GFX_decisions_Twenty_fifth_Division"
 		texturefile = "gfx/interface/decisions/decisions_Twenty_fifth_Division.dds"

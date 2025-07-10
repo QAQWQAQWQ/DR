@@ -196,6 +196,15 @@ spriteTypes = {
 	    texturefile = "gfx/interface/ideas/Provence_Commune.dds"
     }
 	spriteType = {
+	    name = "GFX_idea_Areas_imbalanced_development"
+	    texturefile = "gfx/interface/ideas/Areas_imbalanced_development.dds"
+    }
+	spriteType = {
+	    name = "GFX_idea_Strong_Catholic_atmosphere"
+	    texturefile = "gfx/interface/ideas/Strong_Catholic_atmosphere.dds"
+    }
+	
+	spriteType = {
 	    name = "GFX_idea_Guerrilla_strongholds"
 	    texturefile = "gfx/interface/ideas/Guerrilla_strongholds.dds"
     }

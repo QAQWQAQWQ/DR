@@ -7,7 +7,15 @@ FRW_Power_struggles_balance_category = {
 	visible = {
 	}
 } 
-
+FRW_Constructing_underdeveloped_areas = {
+	picture = GFX_decisions_Constructing_underdeveloped_areas
+	priority = 9
+	allowed = {
+		tag = FRW
+	}
+	visible = {
+	}
+} 
 
 FRW_United_States_Europe = {
 	icon = infiltration
