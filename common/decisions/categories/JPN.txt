@@ -67,3 +67,14 @@ JPN_The_88_Fleet_Plan= {
 	visible = {
 	} 
 }
+JPN_Korean_Gambling = {
+	icon = infiltration
+	
+	picture = JPN_Korean_Gambling
+	priority = 10
+	allowed = {
+		tag = JPN 
+	}
+	visible = {
+	} 
+}

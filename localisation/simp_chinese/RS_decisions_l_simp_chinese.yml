@@ -88,6 +88,12 @@
   build_hata_class:0 "建造「波田号」战舰"
   build_ozaki_class:0 "建造「尾崎号」战舰"
   build_takao_class:0 "建造「高雄号」战舰"
+ 
+ JPN_Korean_Gambling: "日俄朝鲜博弈"
+ JPN_Korean_Gambling_desc: "朝鲜，吾帝国入局东北亚的铺路石，吾帝国阻挡俄国的最后屏障。早在山县有朋内阁时代制定的“大陆政策”中，就已经明确指出了拿下朝鲜的重要性，现如今我们要重回东北亚的博弈场上，要干到第一件事便是拿下朝鲜。\n\n日本帝国对朝鲜的控制力:[?KON.JPN_influence]\n俄罗斯帝国对朝鲜的控制力:[?KON.SHW_influence]\n大韩帝国独立度:[?KON.independence|%%]"
+ JPN_gotcha: "拿下朝鲜"
+ KON_influence_greater_than_159: "我方在朝鲜的控制力达到160"
+ KON_independence_lower_than_56: "朝鲜的独立度不大于55%"
 
  FRW_flood:0 "代号“洪水”"
  FRW_flood_desc:0 "\n\n\n\n\n\n\n\n最高军事指挥部已经决定将在阿尔及尔港等地开展登陆行动，集中其一切力量攻占阿尔及尔西部－从米莉亚纳到卜利达－然后再以此为基地解放其余地区。这个计划容许最可能的兵力集中，形成强大的打击力量，在决定点上享有绝对的优势。\n\n部队动员：[?Flood_Force]/130000\n\n飞机已整顿：[?Flood_equipment]/300\n\n船只已整顿：[?Flood_boats]/750"
@@ -677,7 +683,9 @@ Requisition_grain_Gomel:0 "对戈梅利征粮"
 Requisition_grain_Novgorod:0 "对诺夫哥罗德征粮"
 Requisition_grain_Grozny:0 "对格罗兹尼征粮"
 
-
+ SHW_Korean_Gambling: "日俄朝鲜博弈"
+ SHW_Korean_Gambling_desc: "自那场1904年的远东战争以来，我国就已经维持了在远东的绝对优势地位十余年，如今，我们在远东的最大对手——日本帝国已经觉醒，将黑手伸向朝鲜，妄图挑战我们在远东的霸权了，我们必须做出回击，保卫我们在远东的霸权。\n\n日本帝国对朝鲜的控制力:[?KON.JPN_influence]\n俄罗斯帝国对朝鲜的控制力:[?KON.SHW_influence]\n大韩帝国独立度:[?KON.independence|%%]"
+ SHW_gotcha: "拿下朝鲜"
 
 
 UBS_elections:0 "1920年美国大选"

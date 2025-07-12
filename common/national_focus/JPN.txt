@@ -345,9 +345,6 @@ focus_tree = {
 		prerequisite = {
 			focus = JPN_focus_8
 		}
-		mutually_exclusive = {
-			focus = JPN_focus_10
-		}
 		x = 26
 		y = 2
 			completion_reward = {
@@ -508,9 +505,6 @@ focus_tree = {
 		cost = 6.00
 		prerequisite = {
 			focus = JPN_focus_8
-		}
-		mutually_exclusive = {
-			focus = JPN_focus_9
 		}
 		x = 30
 		y = 2
@@ -800,14 +794,18 @@ focus_tree = {
 		}
 		x = 40
 		y = 4
-			available = {
-
-}
 			completion_reward = {
 					set_variable = {
 							JPN.Patriarchal_tolerance = 100
 						}
 					unlock_decision_category_tooltip = JPN_The_Second_Movement_Protect_Constitution
+					hidden_effect = {
+						#load_focus_tree = {
+						#	tree = JPN
+						#	keep_completed = yes
+						#}
+						mark_focus_tree_layout_dirty = yes
+					}
 				}
 
 	}
@@ -817,6 +815,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = JPN_focus_32
+		}
+		allow_branch = {
+			has_completed_focus = JPN_focus_32
 		}
 		x = 40
 		y = 5

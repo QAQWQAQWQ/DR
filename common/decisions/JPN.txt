@@ -1131,3 +1131,59 @@ JPN_The_88_Fleet_Plan = {
 		}
 	}
 }
+JPN_Korean_Gambling = {
+	JPN_Gambling_debug_initialize = {
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+		allowed = {
+			tag = JPN
+		}
+		complete_effect = { 
+			set_variable = {
+				KON.JPN_influence = 60
+			}
+			set_variable = {
+				KON.SHW_influence = 40
+			}
+			set_variable = {
+				KON.independence = 75
+			}
+		}
+		fixed_random_seed = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	JPN_gotcha = {
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+		}
+		allowed = {
+			tag = JPN
+		}
+		available = {
+			custom_override_tooltip = {
+				tooltip = KON_influence_greater_than_159
+				check_variable = { KON.JPN_influence > 159 }
+			}
+			custom_override_tooltip = {
+				tooltip = KON_independence_lower_than_56
+				check_variable = { KON.independence < 56 }
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			annex_country = {
+			    target = KON
+			    transfer_troops = yes
+			}
+		}
+		fixed_random_seed = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
