@@ -32,9 +32,9 @@ focus_tree = {
 	} 
 	focus = { 
 		id = JPN_focus_15 
-		icon = GFX_JPN_Focus_15
+		icon = GFX_goal_JPN_Focus_15
 		cost = 6.00  
-		x = 16
+		x = 16 
 		y = 0
 			completion_reward = {
 					remove_ideas = JPN_haze_Russo_Japanese_War
