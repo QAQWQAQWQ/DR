@@ -84,3 +84,14 @@ SHW_Court_struggles = {
 		original_tag = SHW  
 	}
 }                           
+SHW_Korean_Gambling = {
+	icon = infiltration
+	
+	picture = SHW_Korean_Gambling
+	priority = 10
+	allowed = {
+		tag = SHW 
+	}
+	visible = {
+	} 
+}
