@@ -474,6 +474,29 @@ news_event = {
 		name = Hidden_News.26.a
 	}		
  }
+ news_event = { #日俄朝鲜博弈临时触发器，记得删
+	id = Hidden_News.27
+    hidden = yes
+	is_triggered_only = yes
+    immediate = {
+		set_global_flag = Korean_Gambling_start
+		set_variable = {
+			KON.JPN_influence = 45
+		}
+		set_variable = {
+			KON.SHW_influence = 65
+		}
+		set_variable = {
+			KON.independence = 75
+		}
+		SHW = { activate_mission = SHW_gambling_in_progress }
+		JPN = { activate_mission = JPN_gambling_in_progress }
+		news_event = WorldNew.28
+    }
+	option = {
+		name = Hidden_News.27.a
+	}		
+ }
 
 #######
 #######
@@ -925,4 +948,105 @@ news_event = {
 					
 						}
 				}
-		
+news_event = {
+	id = WorldNew.28 #日韩博弈
+	title = WorldNew.28.t
+	desc = WorldNew.28.d
+	#picture = GFX_austria_1_pict
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = WorldNew.28.a
+		trigger = { 
+			tag = SHW
+		}
+		KON = {
+			give_military_access = SHW
+		}
+		unlock_decision_category_tooltip = SHW_Korean_Gambling
+		effect_tooltip = { activate_mission = SHW_gambling_in_progress }
+	}
+	option = {
+		name = WorldNew.28.b
+		trigger = { 
+			tag = JPN
+		}
+		KON = {
+			give_military_access = JPN
+		}
+		unlock_decision_category_tooltip = JPN_Korean_Gambling
+		effect_tooltip = { activate_mission = JPN_gambling_in_progress }
+	}
+	option = {
+		name = WorldNew.28.c
+		trigger = {
+			NOT={
+				tag = SHW
+				tag = JPN
+			}
+		}
+	}
+}
+				
+news_event = {
+	id = WorldNew.29 #日俄博弈-日本胜出
+	title = WorldNew.29.t
+	desc = WorldNew.29.d
+	#picture = GFX_austria_1_pict
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = WorldNew.29.a
+		trigger = { 
+			tag = SHW
+		}
+	}
+	option = {
+		name = WorldNew.29.b
+		trigger = { 
+			tag = JPN
+		}
+	}
+	option = {
+		name = WorldNew.29.c
+		trigger = {
+			NOT={
+				tag = SHW
+				tag = JPN
+			}
+		}
+	}
+}
+	
+news_event = {
+	id = WorldNew.30 #日俄博弈-俄罗斯胜出
+	title = WorldNew.30.t
+	desc = WorldNew.30.d
+	#picture = GFX_austria_1_pict
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = WorldNew.30.a
+		trigger = { 
+			tag = SHW
+		}
+	}
+	option = {
+		name = WorldNew.30.b
+		trigger = { 
+			tag = JPN
+		}
+	}
+	option = {
+		name = WorldNew.30.c
+		trigger = {
+			NOT={
+				tag = SHW
+				tag = JPN
+			}
+		}
+	}
+}

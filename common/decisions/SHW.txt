@@ -1214,56 +1214,337 @@ SHW_Court_struggles = {
 			}
 }
 SHW_Korean_Gambling = {
-	SHW_Gambling_debug_initialize = {
+	SHW_gambling_in_progress = {
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+    	}
+		fire_only_once = yes
+		is_good = yes
+		days_mission_timeout = 200
+		timeout_effect = {
+			custom_effect_tooltip = SHW_gambling_in_progress_tt
+			effect_tooltip = { #实际计算在JPN处完成
+				if = {
+					limit = { #日本取胜
+						check_variable = { KON.JPN_influence > 159 }
+						check_variable = { KON.JPN_influence > KON.SHW_influence }
+						check_variable = { KON.independence < 56 }
+					}
+					JPN = {
+						annex_country = {
+						    target = KON
+						    transfer_troops = no
+						}
+					}
+					news_event = WorldNew.29
+				}else_if = {
+					limit = { #俄罗斯取胜
+						check_variable = { KON.SHW_influence > 159 }
+						NOT = { check_variable = { KON.JPN_influence > KON.SHW_influence } }
+						check_variable = { KON.independence < 56 }
+					}
+					set_autonomy = {
+					    target = KON
+					    autonomous_state = autonomy_supervised_state
+					}
+					news_event = WorldNew.30
+				}else = {
+
+				}
+				clr_global_flag = Korean_Gambling_start
+			}
+		}
+	}
+	#SHW_gotcha = {
+	#	icon = GFX_decision_generic_merge_plant_ship
+	#	visible = {
+	#	}
+	#	allowed = {
+	#		tag = SHW
+	#	}
+	#	available = {
+	#		custom_override_tooltip = {
+	#			tooltip = KON_influence_greater_than_159
+	#			check_variable = { KON.SHW_influence > 159 }
+	#		}
+	#		custom_override_tooltip = {
+	#			tooltip = KON_independence_lower_than_56
+	#			check_variable = { KON.independence < 56 }
+	#		}
+	#	}
+	#	fire_only_once = yes
+	#	complete_effect = {
+	#		annex_country = {
+	#		    target = KON
+	#		    transfer_troops = yes
+	#		}
+	#	}
+	#	fixed_random_seed = no
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#}	
+	SHW_gambling_1 = { #派遣特工暗杀亲日派高层
 		icon = GFX_decision_generic_merge_plant_ship
 		visible = {
-			is_debug = yes
-			is_ai = no
+			has_global_flag = Korean_Gambling_start
+		}
+		available = {
+			has_active_mission = SHW_gambling_in_progress
 		}
 		allowed = {
 			tag = SHW
 		}
-		complete_effect = { 
-			set_variable = {
-				KON.JPN_influence = 60
+		#days_remove = 70
+		complete_effect = {
+			set_temp_variable = {
+				temp_SHW_influence = 5
 			}
-			set_variable = {
-				KON.SHW_influence = 40
+			SHW_influence_add = yes
+			set_temp_variable = {
+				temp_independence = -7
 			}
-			set_variable = {
-				KON.independence = 75
-			}
+			independence_add = yes
 		}
-		fixed_random_seed = no
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	SHW_gotcha = {
+	SHW_gambling_2 = { #向大韩帝国提供军事援助
 		icon = GFX_decision_generic_merge_plant_ship
 		visible = {
+			has_global_flag = Korean_Gambling_start
+		}
+		available = {
+			has_active_mission = SHW_gambling_in_progress
 		}
 		allowed = {
 			tag = SHW
 		}
-		available = {
-			custom_override_tooltip = {
-				tooltip = KON_influence_greater_than_159
-				check_variable = { KON.SHW_influence > 159 }
-			}
-			custom_override_tooltip = {
-				tooltip = KON_independence_lower_than_56
-				check_variable = { KON.independence < 56 }
-			}
-		}
-		fire_only_once = yes
+		#days_remove = 100
 		complete_effect = {
-			annex_country = {
-			    target = KON
-			    transfer_troops = yes
+			set_temp_variable = {
+				temp_SHW_influence = 13
 			}
+			SHW_influence_add = yes
+			set_temp_variable = {
+				temp_independence = 10
+			}
+			independence_add = yes
 		}
-		fixed_random_seed = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SHW_gambling_3 = { #加强文化交流
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+			has_global_flag = Korean_Gambling_start
+		}
+		available = {
+			has_active_mission = SHW_gambling_in_progress
+		}
+		allowed = {
+			tag = SHW
+		}
+		#days_remove = 45
+		complete_effect = {
+			set_temp_variable = {
+				temp_SHW_influence = 9
+			}
+			SHW_influence_add = yes
+			set_temp_variable = {
+				temp_independence = 3
+			}
+			independence_add = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SHW_gambling_4 = { #向仁川增派军舰
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+			has_global_flag = Korean_Gambling_start
+		}
+		available = {
+			has_active_mission = SHW_gambling_in_progress
+		}
+		allowed = {
+			tag = SHW
+		}
+		#days_remove = 28
+		complete_effect = {
+			set_temp_variable = {
+				temp_SHW_influence = 23
+			}
+			SHW_influence_add = yes
+			set_temp_variable = {
+				temp_independence = -10
+			}
+			independence_add = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SHW_gambling_5 = { #派遣军事顾问
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+			has_global_flag = Korean_Gambling_start
+		}
+		available = {
+			has_active_mission = SHW_gambling_in_progress
+		}
+		allowed = {
+			tag = SHW
+		}
+		#days_remove = 40
+		complete_effect = {
+			set_temp_variable = {
+				temp_SHW_influence = 13
+			}
+			SHW_influence_add = yes
+			set_temp_variable = {
+				temp_independence = -13
+			}
+			independence_add = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SHW_gambling_6 = { #提供道胜银行贷款
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+			has_global_flag = Korean_Gambling_start
+		}
+		available = {
+			has_active_mission = SHW_gambling_in_progress
+		}
+		allowed = {
+			tag = SHW
+		}
+		#days_remove = 15
+		complete_effect = {
+			set_temp_variable = {
+				temp_SHW_influence = 9
+			}
+			SHW_influence_add = yes
+			set_temp_variable = {
+				temp_independence = -5
+			}
+			independence_add = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SHW_gambling_7 = { #支持独立派暴民引起混乱
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+			has_global_flag = Korean_Gambling_start
+		}
+		available = {
+			has_active_mission = SHW_gambling_in_progress
+		}
+		allowed = {
+			tag = SHW
+		}
+		#days_remove = 100
+		complete_effect = {
+			set_temp_variable = {
+				temp_SHW_influence = 5
+			}
+			SHW_influence_add = yes
+			set_temp_variable = {
+				temp_independence = 10
+			}
+			independence_add = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SHW_gambling_8 = { #让远东总督府负责走私“军械”
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+			has_global_flag = Korean_Gambling_start
+		}
+		available = {
+			has_active_mission = SHW_gambling_in_progress
+		}
+		allowed = {
+			tag = SHW
+		}
+		#days_remove = 5
+		complete_effect = {
+			set_temp_variable = {
+				temp_SHW_influence = 18
+			}
+			SHW_influence_add = yes
+			set_temp_variable = {
+				temp_independence = -10
+			}
+			independence_add = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SHW_gambling_9 = { #派遣第三局特工暗杀独立派高层
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+			has_global_flag = Korean_Gambling_start
+		}
+		available = {
+			has_active_mission = SHW_gambling_in_progress
+		}
+		allowed = {
+			tag = SHW
+		}
+		days_remove = 45
+		complete_effect = {
+			set_temp_variable = {
+				temp_SHW_influence = 10
+			}
+			SHW_influence_add = yes
+			set_temp_variable = {
+				temp_independence = -10
+			}
+			independence_add = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SHW_gambling_10 = { #鼓动暴民恐怖袭击独立派
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+			has_global_flag = Korean_Gambling_start
+		}
+		available = {
+			has_active_mission = SHW_gambling_in_progress
+		}
+		allowed = {
+			tag = SHW
+		}
+		#days_remove = 40
+		complete_effect = {
+			set_temp_variable = {
+				temp_SHW_influence = 10
+			}
+			SHW_influence_add = yes
+			set_temp_variable = {
+				temp_independence = -5
+			}
+			independence_add = yes
+		}
 		ai_will_do = {
 			factor = 1
 		}

@@ -1132,56 +1132,335 @@ JPN_The_88_Fleet_Plan = {
 	}
 }
 JPN_Korean_Gambling = {
-	JPN_Gambling_debug_initialize = {
+	JPN_gambling_in_progress = {
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+    	}
+		fire_only_once = yes
+		is_good = yes
+		days_mission_timeout = 200
+		timeout_effect = {
+			custom_effect_tooltip = JPN_gambling_in_progress_tt
+			if = {
+				limit = { #日本取胜
+					check_variable = { KON.JPN_influence > 159 }
+					check_variable = { KON.JPN_influence > KON.SHW_influence }
+					check_variable = { KON.independence < 56 }
+				}
+				annex_country = {
+				    target = KON
+				    transfer_troops = no
+				}
+				news_event = WorldNew.29
+			}else_if = {
+				limit = { #俄罗斯取胜
+					check_variable = { KON.SHW_influence > 159 }
+					NOT = { check_variable = { KON.JPN_influence > KON.SHW_influence } }
+					check_variable = { KON.independence < 56 }
+				}
+				SHW = {
+					set_autonomy = {
+					    target = KON
+					    autonomous_state = autonomy_supervised_state
+					}
+				}
+				news_event = WorldNew.30
+			}else = {
+
+			}
+			clr_global_flag = Korean_Gambling_start
+		}
+	}
+	#JPN_gotcha = {
+	#	icon = GFX_decision_generic_merge_plant_ship
+	#	visible = {
+	#	}
+	#	allowed = {
+	#		tag = JPN
+	#	}
+	#	available = {
+	#		custom_override_tooltip = {
+	#			tooltip = KON_influence_greater_than_159
+	#			check_variable = { KON.JPN_influence > 159 }
+	#		}
+	#		custom_override_tooltip = {
+	#			tooltip = KON_independence_lower_than_56
+	#			check_variable = { KON.independence < 56 }
+	#		}
+	#	}
+	#	fire_only_once = yes
+	#	complete_effect = {
+	#		annex_country = {
+	#		    target = KON
+	#		    transfer_troops = yes
+	#		}
+	#	}
+	#	fixed_random_seed = no
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#}
+	JPN_gambling_1 = { #在仁川-釜山等地驻扎陆战团
 		icon = GFX_decision_generic_merge_plant_ship
 		visible = {
-			is_debug = yes
-			is_ai = no
+			has_global_flag = Korean_Gambling_start
+		}
+		available = {
+			has_active_mission = JPN_gambling_in_progress
 		}
 		allowed = {
 			tag = JPN
 		}
-		complete_effect = { 
-			set_variable = {
-				KON.JPN_influence = 60
+		days_remove = 70
+		complete_effect = {
+			set_temp_variable = {
+				temp_JPN_influence = 25
 			}
-			set_variable = {
-				KON.SHW_influence = 40
+			JPN_influence_add = yes
+			set_temp_variable = {
+				temp_independence = -10
 			}
-			set_variable = {
-				KON.independence = 75
-			}
+			independence_add = yes
 		}
-		fixed_random_seed = no
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	JPN_gotcha = {
+	JPN_gambling_2 = { #派遣陆军上岸
 		icon = GFX_decision_generic_merge_plant_ship
 		visible = {
+			has_global_flag = Korean_Gambling_start
+		}
+		available = {
+			has_active_mission = JPN_gambling_in_progress
 		}
 		allowed = {
 			tag = JPN
 		}
-		available = {
-			custom_override_tooltip = {
-				tooltip = KON_influence_greater_than_159
-				check_variable = { KON.JPN_influence > 159 }
-			}
-			custom_override_tooltip = {
-				tooltip = KON_independence_lower_than_56
-				check_variable = { KON.independence < 56 }
-			}
-		}
-		fire_only_once = yes
+		days_remove = 100
 		complete_effect = {
-			annex_country = {
-			    target = KON
-			    transfer_troops = yes
+			set_temp_variable = {
+				temp_JPN_influence = 30
 			}
+			JPN_influence_add = yes
+			set_temp_variable = {
+				temp_independence = -13
+			}
+			independence_add = yes
 		}
-		fixed_random_seed = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	JPN_gambling_3 = { #扩大在朝鲜投资
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+			has_global_flag = Korean_Gambling_start
+		}
+		available = {
+			has_active_mission = JPN_gambling_in_progress
+		}
+		allowed = {
+			tag = JPN
+		}
+		days_remove = 45
+		complete_effect = {
+			set_temp_variable = {
+				temp_JPN_influence = 10
+			}
+			JPN_influence_add = yes
+			set_temp_variable = {
+				temp_independence = 5
+			}
+			independence_add = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	JPN_gambling_4 = { #派遣特工暗杀亲俄派高层
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+			has_global_flag = Korean_Gambling_start
+		}
+		available = {
+			has_active_mission = JPN_gambling_in_progress
+		}
+		allowed = {
+			tag = JPN
+		}
+		days_remove = 28
+		complete_effect = {
+			set_temp_variable = {
+				temp_JPN_influence = 5
+			}
+			JPN_influence_add = yes
+			set_temp_variable = {
+				temp_independence = -7
+			}
+			independence_add = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	JPN_gambling_5 = { #套取朝鲜储备金银
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+			has_global_flag = Korean_Gambling_start
+		}
+		available = {
+			has_active_mission = JPN_gambling_in_progress
+		}
+		allowed = {
+			tag = JPN
+		}
+		days_remove = 40
+		complete_effect = {
+			set_temp_variable = {
+				temp_JPN_influence = 13
+			}
+			JPN_influence_add = yes
+			set_temp_variable = {
+				temp_independence = -8
+			}
+			independence_add = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	JPN_gambling_6 = { #支持独立派暴民引起混乱
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+			has_global_flag = Korean_Gambling_start
+		}
+		available = {
+			has_active_mission = JPN_gambling_in_progress
+		}
+		allowed = {
+			tag = JPN
+		}
+		days_remove = 15
+		complete_effect = {
+			set_temp_variable = {
+				temp_JPN_influence = 5
+			}
+			JPN_influence_add = yes
+			set_temp_variable = {
+				temp_independence = 10
+			}
+			independence_add = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	JPN_gambling_7 = { #指示驻军引起骚乱
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+			has_global_flag = Korean_Gambling_start
+		}
+		available = {
+			has_active_mission = JPN_gambling_in_progress
+		}
+		allowed = {
+			tag = JPN
+		}
+		days_remove = 100
+		complete_effect = {
+			set_temp_variable = {
+				temp_JPN_influence = 5
+			}
+			JPN_influence_add = yes
+			set_temp_variable = {
+				temp_independence = -5
+			}
+			independence_add = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	JPN_gambling_8 = { #对朝鲜外交施压
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+			has_global_flag = Korean_Gambling_start
+		}
+		available = {
+			has_active_mission = JPN_gambling_in_progress
+		}
+		allowed = {
+			tag = JPN
+		}
+		days_remove = 5
+		complete_effect = {
+			set_temp_variable = {
+				temp_JPN_influence = 3
+			}
+			JPN_influence_add = yes
+			set_temp_variable = {
+				temp_independence = -3
+			}
+			independence_add = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	JPN_gambling_9 = { #向朝鲜移民日本贫农
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+			has_global_flag = Korean_Gambling_start
+		}
+		available = {
+			has_active_mission = JPN_gambling_in_progress
+		}
+		allowed = {
+			tag = JPN
+		}
+		days_remove = 45
+		complete_effect = {
+			set_temp_variable = {
+				temp_JPN_influence = 25
+			}
+			JPN_influence_add = yes
+			set_temp_variable = {
+				temp_independence = -8
+			}
+			independence_add = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	JPN_gambling_10 = { #拉拢英法财团介入
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+			has_global_flag = Korean_Gambling_start
+		}
+		available = {
+			has_active_mission = JPN_gambling_in_progress
+		}
+		allowed = {
+			tag = JPN
+		}
+		days_remove = 15
+		complete_effect = {
+			set_temp_variable = {
+				temp_JPN_influence = 3
+			}
+			JPN_influence_add = yes
+			set_temp_variable = {
+				temp_independence = -15
+			}
+			independence_add = yes
+		}
 		ai_will_do = {
 			factor = 1
 		}
