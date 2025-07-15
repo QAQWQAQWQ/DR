@@ -1,10 +1,10 @@
-
+spriteTypes = {
 spriteType = {
-name = "GFX_JPN_focus_63_shine"
-texturefile = "gfx\interface\goals\JPN\JPN_focus_63.dds"
+name = "GFX_JPN_focus_67_shine"
+texturefile = "gfx\interface\goals\JPN\新建文件夹/JPN_focus_67.dds"
 effectFile = "gfx/FX/buttonstate.lua"
 animation = {
-	animationmaskfile = "gfx\interface\goals\JPN\JPN_focus_63.dds"
+	animationmaskfile = "gfx\interface\goals\JPN\新建文件夹/JPN_focus_67.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -16,7 +16,7 @@ animation = {
 	animationtexturescale = { x = 1.0 y = 1.0 } 
 }
 animation = {
-	animationmaskfile = "gfx\interface\goals\JPN\JPN_focus_63.dds"
+	animationmaskfile = "gfx\interface\goals\JPN\新建文件夹/JPN_focus_67.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -30,11 +30,11 @@ animation = {
 legacy_lazy_load = no
 }
 spriteType = {
-name = "GFX_JPN_focus_64_shine"
-texturefile = "gfx\interface\goals\JPN\JPN_focus_64.dds"
+name = "GFX_JPN_focus_68_shine"
+texturefile = "gfx\interface\goals\JPN\新建文件夹/JPN_focus_68.dds"
 effectFile = "gfx/FX/buttonstate.lua"
 animation = {
-	animationmaskfile = "gfx\interface\goals\JPN\JPN_focus_64.dds"
+	animationmaskfile = "gfx\interface\goals\JPN\新建文件夹/JPN_focus_68.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -46,7 +46,7 @@ animation = {
 	animationtexturescale = { x = 1.0 y = 1.0 } 
 }
 animation = {
-	animationmaskfile = "gfx\interface\goals\JPN\JPN_focus_64.dds"
+	animationmaskfile = "gfx\interface\goals\JPN\新建文件夹/JPN_focus_68.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -60,11 +60,11 @@ animation = {
 legacy_lazy_load = no
 }
 spriteType = {
-name = "GFX_JPN_focus_65_shine"
-texturefile = "gfx\interface\goals\JPN\JPN_focus_65.dds"
+name = "GFX_JPN_focus_69_shine"
+texturefile = "gfx\interface\goals\JPN\新建文件夹/JPN_focus_69.dds"
 effectFile = "gfx/FX/buttonstate.lua"
 animation = {
-	animationmaskfile = "gfx\interface\goals\JPN\JPN_focus_65.dds"
+	animationmaskfile = "gfx\interface\goals\JPN\新建文件夹/JPN_focus_69.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -76,7 +76,7 @@ animation = {
 	animationtexturescale = { x = 1.0 y = 1.0 } 
 }
 animation = {
-	animationmaskfile = "gfx\interface\goals\JPN\JPN_focus_65.dds"
+	animationmaskfile = "gfx\interface\goals\JPN\新建文件夹/JPN_focus_69.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -90,11 +90,11 @@ animation = {
 legacy_lazy_load = no
 }
 spriteType = {
-name = "GFX_JPN_Focus_66_shine"
-texturefile = "gfx\interface\goals\JPN\JPN_Focus_66.dds"
+name = "GFX_JPN_focus_70_shine"
+texturefile = "gfx\interface\goals\JPN\新建文件夹/JPN_focus_70.dds"
 effectFile = "gfx/FX/buttonstate.lua"
 animation = {
-	animationmaskfile = "gfx\interface\goals\JPN\JPN_Focus_66.dds"
+	animationmaskfile = "gfx\interface\goals\JPN\新建文件夹/JPN_focus_70.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -106,7 +106,7 @@ animation = {
 	animationtexturescale = { x = 1.0 y = 1.0 } 
 }
 animation = {
-	animationmaskfile = "gfx\interface\goals\JPN\JPN_Focus_66.dds"
+	animationmaskfile = "gfx\interface\goals\JPN\新建文件夹/JPN_focus_70.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -119,4 +119,124 @@ animation = {
 }
 legacy_lazy_load = no
 }
-
+spriteType = {
+name = "GFX_JPN_focus_71_shine"
+texturefile = "gfx\interface\goals\JPN\新建文件夹/JPN_focus_71.dds"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goals\JPN\新建文件夹/JPN_focus_71.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goals\JPN\新建文件夹/JPN_focus_71.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_JPN_Focus_72_shine"
+texturefile = "gfx\interface\goals\JPN\新建文件夹/JPN_Focus_72.dds"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goals\JPN\新建文件夹/JPN_Focus_72.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goals\JPN\新建文件夹/JPN_Focus_72.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_JPN_focus_73_shine"
+texturefile = "gfx\interface\goals\JPN\新建文件夹/JPN_focus_73.dds"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goals\JPN\新建文件夹/JPN_focus_73.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goals\JPN\新建文件夹/JPN_focus_73.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+spriteType = {
+name = "GFX_JPN_focus_74_shine"
+texturefile = "gfx\interface\goals\JPN\新建文件夹/JPN_focus_74.dds"
+effectFile = "gfx/FX/buttonstate.lua"
+animation = {
+	animationmaskfile = "gfx\interface\goals\JPN\新建文件夹/JPN_focus_74.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+animation = {
+	animationmaskfile = "gfx\interface\goals\JPN\新建文件夹/JPN_focus_74.dds"
+	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	animationlooping = no			# yes or no ;)
+	animationtime = 0.75				# in seconds
+	animationdelay = 0			# in seconds
+	animationblendmode = "add"       #add, multiply, overlay
+	animationtype = "scrolling"      #scrolling, rotating, pulsing
+	animationrotationoffset = { x = 0.0 y = 0.0 }
+	animationtexturescale = { x = 1.0 y = 1.0 } 
+}
+legacy_lazy_load = no
+}
+}
