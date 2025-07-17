@@ -1050,3 +1050,124 @@ news_event = {
 		}
 	}
 }
+
+	
+news_event = {
+	id = WorldNew.31 #日俄博弈-平局
+	title = WorldNew.31.t
+	desc = WorldNew.31.d
+	#picture = GFX_austria_1_pict
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = WorldNew.31.a
+	}
+}
+	
+news_event = {
+	id = WorldNew.32 #东亚战争(中日vs俄)
+	title = WorldNew.32.t
+	desc = WorldNew.32.d
+	#picture = GFX_austria_1_pict
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = WorldNew.32.a
+		trigger = { 
+			tag = CHI
+		}
+	}
+	option = {
+		name = WorldNew.32.b
+		trigger = { 
+			tag = JPN
+		}
+	}
+	option = {
+		name = WorldNew.32.c
+		trigger = { 
+			tag = SHW
+		}
+	}
+	option = {
+		name = WorldNew.32.d
+		trigger = {
+			NOT={
+				tag = CHI
+				tag = JPN
+				tag = SHW
+			}
+		}
+	}
+}
+	
+news_event = {
+	id = WorldNew.33 #北京协定
+	title = WorldNew.33.t
+	desc = WorldNew.33.d
+	#picture = GFX_austria_1_pict
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = WorldNew.33.a
+		trigger = { 
+			OR = {
+				tag = CHI
+				tag = JPN
+				tag = EHL
+			}
+		}
+	}
+	option = {
+		name = WorldNew.33.b
+		trigger = { 
+			tag = SHW
+		}
+	}
+	option = {
+		name = WorldNew.33.c
+		trigger = {
+			NOT={
+				tag = CHI
+				tag = JPN
+				tag = ENL
+				tag = SHW
+			}
+		}
+	}
+}
+	
+news_event = {
+	id = WorldNew.34 #第二次中日战争
+	title = WorldNew.34.t
+	desc = WorldNew.34.d
+	#picture = GFX_austria_1_pict
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = WorldNew.34.a
+		trigger = { 
+			tag = JPN
+		}
+	}
+	option = {
+		name = WorldNew.34.b
+		trigger = { 
+			tag = CHI
+		}
+	}
+	option = {
+		name = WorldNew.34.c
+		trigger = {
+			NOT={
+				tag = CHI
+				tag = JPN
+			}
+		}
+	}
+}
+

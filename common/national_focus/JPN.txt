@@ -37,6 +37,7 @@ focus_tree = {
 		x = 16 
 		y = 0
 			completion_reward = {
+			country_event = JPN.33
 					remove_ideas = JPN_haze_Russo_Japanese_War
 				}
 
@@ -243,6 +244,7 @@ focus_tree = {
 									modifier = Show_goodwill
 								}
 						}
+						news_event = WorldNew.33
 				}
 
 	}
