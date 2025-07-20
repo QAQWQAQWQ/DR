@@ -449,3 +449,24 @@ independence_add = {
 	#新变量+要加的临时旧席位数量X（5）
 	custom_effect_tooltip = independence_add
 }
+
+survey_progress_add = {
+	set_temp_variable = {
+		temp_old = survey_progress
+	}
+	#旧变量=旧席位数量X
+	add_to_variable = {
+		var =  survey_progress
+		value =  temp_survey_progress
+	}
+	#旧席位数量X（10）+要加的临时旧席位数量X（0）
+	set_temp_variable = {
+		temp_new = temp_old
+	}
+	#新=旧
+	add_to_temp_variable = {
+		temp_new = temp_survey_progress
+	}
+	#新变量+要加的临时旧席位数量X（5）
+	custom_effect_tooltip = survey_progress_add
+}

@@ -25,6 +25,9 @@ focus_tree = {
 		cost = 6.00
 		x = 28
 		y = 0
+		available = {
+		    has_completed_focus = JPN_focus_38
+		}
 			completion_reward = {
 
 }
@@ -36,6 +39,9 @@ focus_tree = {
 		cost = 6.00  
 		x = 16 
 		y = 0
+		available = {
+		    has_completed_focus = JPN_focus_38
+		}
 			completion_reward = {
 			country_event = JPN.33
 					remove_ideas = JPN_haze_Russo_Japanese_War
@@ -171,7 +177,24 @@ focus_tree = {
 		}
 		x = 12
 		y = 4
-
+		complete_effect = {
+			unlock_decision_category_tooltip = JPN_Korean_Gambling
+			hidden_effect = {
+				set_global_flag = Korean_Gambling_start
+				set_variable = {
+					KON.JPN_influence = 45
+				}
+				set_variable = {
+					KON.SHW_influence = 65
+				}
+				set_variable = {
+					KON.independence = 75
+				}
+				SHW = { activate_mission = SHW_gambling_in_progress }
+				JPN = { activate_mission = JPN_gambling_in_progress }
+			}
+			news_event = WorldNew.28
+		}
 	}
 	focus = {
 		id = JPN_focus_67
@@ -600,6 +623,7 @@ focus_tree = {
 		y = 4
 			completion_reward = {
 					add_ideas = JPN_Eighty_eight_naval_plan
+					unlock_decision_category_tooltip = JPN_The_88_Fleet_Plan
 				}
 
 	}
