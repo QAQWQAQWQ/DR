@@ -51,6 +51,8 @@ JPN_influence_add: "日本控制力：[?temp_old|0]→[?temp_new|0]"
 SHW_influence_add: "俄国控制力：[?temp_old|0]→[?temp_new|0]"
 independence_add: "朝鲜独立度：[?temp_old|%%]→[?temp_new|%%]"
 
+survey_progress_add: "调查进度：[?temp_old|%%]→[?temp_new|%%]"
+
 land_equally:0 "农民的土地得到合理的§G分配§!"
 Sale_private_land:0 "私人土地开始进行拍卖"
 PFA:0 "旧总理宣布§G退出§!内阁，由新总理接过他的职务"

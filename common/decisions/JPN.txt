@@ -101,19 +101,24 @@ JPN_The_Second_Movement_Protect_Constitution = {
 	JPN_Second_Constitution = {
 		icon = decision_ger_mefo_bills
 			available = {
-				AND={ 
-					check_variable = {
-						var = JPN.stability
-						value = 45
-						tooltip = JPN_Second_Constitution_trigger
-						compare = greater_than_or_equals
-					}
-					check_variable = {
-						var = JPN.Patriarchal_tolerance
-						value = 60
-						compare = greater_than_or_equals
-					} 
-				} 
+				#AND={ 
+				#	check_variable = {
+				#		var = JPN.stability
+				#		value = 0.45
+				#		tooltip = JPN_Second_Constitution_trigger
+				#		compare = greater_than_or_equals
+				#	}
+				#	check_variable = {
+				#		var = JPN.Patriarchal_tolerance
+				#		value = 60
+				#		compare = greater_than_or_equals
+				#	} 
+				#} 
+				
+				custom_trigger_tooltip = {
+					tooltip = JPN_Second_Constitution_trigger
+					always = no
+				}
 			} 
 			activation={
 				has_completed_focus = JPN_focus_32
@@ -122,14 +127,27 @@ JPN_The_Second_Movement_Protect_Constitution = {
 			is_good = no                          
 			days_remove = 5 
 			fire_only_once = yes
-			days_mission_timeout = 140             
+			days_mission_timeout = 75             
 			timeout_effect = { 
-				complete_national_focus = JPN_focus_38
-				complete_national_focus = JPN_focus_40    
-			}
-			complete_effect = {      
-				complete_national_focus = JPN_focus_38
-				complete_national_focus = JPN_focus_39
+				if = {
+					limit = {
+						check_variable = {
+							var = JPN.stability
+							value = 0.45
+							compare = less_than_or_equals
+						}
+						check_variable = {
+							var = JPN.Patriarchal_tolerance
+							value = 60
+							compare = greater_than_or_equals
+						} 
+					}
+					complete_national_focus = JPN_focus_38
+					complete_national_focus = JPN_focus_39  
+				}else = {
+					complete_national_focus = JPN_focus_38
+					complete_national_focus = JPN_focus_40  
+				}  
 			}
 	}
 	JPN_Newspaper_publicity = {
@@ -256,31 +274,159 @@ JPN_The_Second_Movement_Protect_Constitution = {
 
 }
 
-JPN_Death_Senator = {
-	JPN_Investigate_murderer = {
+#JPN_Death_Senator = {
+#	JPN_Investigate_murderer = {
+#		icon = decision_ger_mefo_bills
+#			activation={
+#				has_country_flag = JPN_Death_Senator
+#			}  
+#			available = {
+#				has_country_flag = The_murderer_revealed
+#			}
+#			cancel_trigger = {
+#				has_stability < 0.2
+#			}
+#			is_good = no                          
+#			days_remove = 5  
+#			fire_only_once = yes
+#			days_mission_timeout = 140        
+#			cancel_effect = {
+#				country_event = {id=JPN.27 days=2}
+#			}     
+#			timeout_effect = { 
+#				country_event = {id=JPN.27 days=2}
+#			}
+#			complete_effect = {      
+#			}
+#	}
+#}
+
+JPN_Handling_assassination = {
+ 	JPN_Interrogate_the_murderer = { #审问凶手
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+			has_country_flag = JPN_Death_Senator
+		}
+		allowed = {
+			tag = JPN
+		}
+		days_remove = 15
+		fire_only_once = yes
+		complete_effect = {
+			set_temp_variable = {
+				temp_survey_progress = 18
+			}
+			survey_progress_add = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	JPN_Inventory_illegal_organizations = { #盘查非法组织
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+			has_country_flag = JPN_Death_Senator
+		}
+		allowed = {
+			tag = JPN
+		}
+		days_remove = 20
+		fire_only_once = yes
+		complete_effect = {
+			set_temp_variable = {
+				temp_survey_progress = 19
+			}
+			survey_progress_add = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	JPN_Dispatch_special_high_class = { #派遣特高课筛查嫌疑人
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+			has_country_flag = JPN_Death_Senator
+		}
+		allowed = {
+			tag = JPN
+		}
+		days_remove = 25
+		fire_only_once = yes
+		complete_effect = {
+			set_temp_variable = {
+				temp_survey_progress = 23
+			}
+			survey_progress_add = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	JPN_Collect_mass_records = { #采集群众笔录
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+			has_country_flag = JPN_Death_Senator
+		}
+		allowed = {
+			tag = JPN
+		}
+		days_remove = 10
+		fire_only_once = yes
+		complete_effect = {
+			set_temp_variable = {
+				temp_survey_progress = 12
+			}
+			survey_progress_add = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	JPN_Imprison_the_suspect = { #预防性监禁嫌疑人
+		icon = GFX_decision_generic_merge_plant_ship
+		visible = {
+			has_country_flag = JPN_Death_Senator
+		}
+		allowed = {
+			tag = JPN
+		}
+		days_remove = 7
+		fire_only_once = yes
+		complete_effect = {
+			set_temp_variable = {
+				temp_survey_progress = 10
+			}
+			survey_progress_add = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	JPN_Complete_the_investigation = {
 		icon = decision_ger_mefo_bills
 			activation={
 				has_country_flag = JPN_Death_Senator
 			}  
 			available = {
-				has_country_flag = The_murderer_revealed
-			}
-			cancel_trigger = {
-				has_stability < 0.2
+				custom_trigger_tooltip = {
+					tooltip = survey_progress_greater_than_74
+					check_variable = { survey_progress > 74	}
+				}
 			}
 			is_good = no                          
 			days_remove = 5  
 			fire_only_once = yes
-			days_mission_timeout = 140        
-			cancel_effect = {
-				country_event = {id=JPN.27 days=2}
-			}     
+			selectable_mission = yes
+			days_mission_timeout = 90      
 			timeout_effect = { 
 				country_event = {id=JPN.27 days=2}
+				clr_country_flag = JPN_Death_Senator
 			}
-			complete_effect = {      
+			complete_effect = {  
+				clr_country_flag = JPN_Death_Senator
 			}
 	}
+	
 }
 
 
@@ -1171,7 +1317,7 @@ JPN_Korean_Gambling = {
 				}
 				news_event = WorldNew.30
 			}else = {
-
+				news_event = WorldNew.31
 			}
 			clr_global_flag = Korean_Gambling_start
 		}

@@ -21,6 +21,20 @@ JPN_The_Second_Movement_Protect_Constitution = {
 	}
 	visible = {
 		has_completed_focus = JPN_focus_32
+		NOT = {
+			has_completed_focus = JPN_focus_38
+		}
+	} 
+}
+JPN_Handling_assassination = {
+	icon = infiltration
+	
+	picture = GFX_decisions_The_Second_Movement_Protect_Constitution
+	priority = 10
+	allowed = {
+		tag = JPN
+	}
+	visible = {
 	} 
 }
 JPN_Death_Senator = {
@@ -65,6 +79,7 @@ JPN_The_88_Fleet_Plan= {
 		tag = JPN 
 	}
 	visible = {
+		has_completed_focus = JPN_focus_18
 	} 
 }
 JPN_Korean_Gambling = {

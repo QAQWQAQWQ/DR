@@ -651,3 +651,32 @@ country_event = {
 		name = JPN.32.a
 	}
 }
+country_event = {
+	id = JPN.33
+	title = JPN.33.t
+	desc = JPN.33.d
+	picture = GFX_JPN_33
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.33.a
+	}
+}
+country_event = {
+	id = JPN.34
+	title = JPN.34.t
+	desc = JPN.34.d
+	picture = GFX_JPN_34
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.34.a
+		declare_war_on = {
+			target = CHI
+			type = puppet_wargoal_focus
+		}
+		news_event = WorldNew.34
+	}
+}
