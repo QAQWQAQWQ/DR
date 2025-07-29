@@ -36,7 +36,9 @@ focus_tree = {
 		}
 		x = 9
 		y = 2
-
+		completion_reward = {
+			add_political_power = 100
+		}
 	}
 	focus = {
 		id = ROCfocus_5
@@ -133,7 +135,24 @@ focus_tree = {
 		}
 		x = 9
 		y = 6
-
+		completion_reward = {
+			set_temp_variable = {
+					temp_Worker_support = 5
+				}
+			Worker_support_add = yes
+			set_temp_variable = {
+					temp_Farmer_support = 5
+				}
+			Farmer_support_add = yes
+			set_temp_variable = {
+					temp_Merchant_support = 5
+				}
+			Merchant_support_add = yes
+			set_temp_variable = {
+					temp_Scholar_support = 5
+				}
+			Scholar_support_add = yes
+		}
 	}
 	focus = {
 		id = ROCfocus_11
