@@ -587,3 +587,9 @@ FRW_Socialist_Transformation_plan= {
 	industrial_capacity_dockyard=So_industrial_capacity_dockyard
 	industrial_capacity_factory=So_industrial_capacity_factory
 }
+
+JPN_Chronic_depression_dyn = {
+	enable = { always = yes }
+
+ 	industrial_capacity_factory = JPN_Chronic_depression_var
+}

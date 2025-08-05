@@ -1,6 +1,6 @@
 ﻿capital = 282
 
-oob = "JPN_1920"
+oob = "JPN_1920_new"
 set_naval_oob = "JPN_1920_naval"
 # Starting tech
 set_technology = {
@@ -89,9 +89,12 @@ set_autonomy = { target = RTW autonomy_state = autonomy_colony }
 
 add_ideas={
 	#JPN_Restoration
+	JPN_Taisho_period
+	JPN_Chronic_depression
+	JPN_Poor_rural_areas
 	JPN_estrangement
 	JPN_haze_Russo_Japanese_War
-    JPN_noninterference
+    #JPN_noninterference
 
 ##MINISTERS##
 JPN_Emperor_Taisho_H
@@ -106,6 +109,9 @@ elementary_school
 Theocratic_state
 Market_economy
 }
+add_dynamic_modifier = {
+	modifier = JPN_Chronic_depression_dyn
+}
 set_popularities = {
 	Paternalism = 6
 	Dictatorship = 85
@@ -116,6 +122,7 @@ set_popularities = {
 	Nationalism = 1
 }
 country_event = {id=JPN.1 days=15}
+country_event = {id=JPN.36 days=29}
 give_guarantee = KON
 give_guarantee = PHL
 give_guarantee = GGZ
