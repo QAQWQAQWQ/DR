@@ -17,7 +17,7 @@ guiTypes = {
 			pdx_tooltip = "da_kai_kai_jv_jie_shao_an_niu_tooltip" #按钮注释
 		}
 	} 
-	containerWindowType = {
+	containerWindowType = { 
 		name = "kai_jv_jie_shao_win"
 		position = { x = -122 y = -110 }
 		size = { width = 720 height = 500 }
@@ -80,6 +80,17 @@ guiTypes = {
 			clicksound = click_ok
 			shortcut = "RETURN"
 		}
+		buttonType = {
+			name = "kai_jv_jie_shao_WIKI"
+			position = { x = 695 y = 675 }
+			quadTextureSprite ="GFX_kai_jv_jie_shao_xuan_xiang"
+			buttonFont = "hoi_24header"
+			Orientation = UPPER_LEFT
+			buttonText = "WiKi"
+			clicksound = click_ok
+web_link = "https://github.com/wohsd/DR-wiki/blob/main/%E7%BC%96%E5%B9%B4%E5%8F%B2.md"
+			shortcut = "RETURN"
+		}
         instantTextboxType = {
 			name = "Country_Introduction"
 			position = { x = 440 y = 15 } 
@@ -93,7 +104,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "guo_jia_jie_shao_win"
 		position = { x = -292 y = 3 }
-		size = { width = 710 height = 660 }
+		size = { width = 110 height = 660 }
 		orientation = UPPER_RIGHT
 		clipping = yes
 		moveable = no

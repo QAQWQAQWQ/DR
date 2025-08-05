@@ -1,5 +1,3 @@
-
-#!gfx:interface\RS_goals.gfx
 focus_tree = {
 	id = ROC
 	country = {
@@ -11,102 +9,196 @@ focus_tree = {
 	}
 	default = no
 	focus = {
-	id = ROC_focus_0
-	icon = GFX_goal_ROC_focus_0
-	cost = 1.00
-	x = 9 
-	y = 0
-    completion_reward = {
-	add_political_power = 100
-    }
+		id = ROCfocus_0 
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 11
+		y = 0
+
 	}
 	focus = {
-		id = ROC_focus_1 
-		icon = GFX_goal_ROC_focus_1 
-		cost = 1.00
-		x = 9 
+		id = ROCfocus_1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROCfocus_0
+		}
+		x = 9
 		y = 1
-		prerequisite = {
-			focus = ROC_focus_0
-		}
-		completion_reward = {
-		add_political_power = 100
-		}
+
 	}
 	focus = {
-		id = ROC_focus_2 
-		icon = GFX_goal_ROC_focus_2 
-		cost = 1.00
-		x = 8 
+		id = ROCfocus_3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROCfocus_1
+		}
+		x = 9
 		y = 2
-		prerequisite = {
-			focus = ROC_focus_1
-		}
 		completion_reward = {
-		add_political_power = 100
-		}
-	} 
-	focus = {
-		id = ROC_focus_3
-		icon = GFX_goal_ROC_focus_3 
-		cost = 1.00
-		x = 10 
-		y = 2
-		prerequisite = {
-			focus = ROC_focus_1
-		}
-		completion_reward = {
-		add_political_power = 100
+			add_political_power = 100
 		}
 	}
 	focus = {
-		id = ROC_focus_4
-		icon = GFX_goal_ROC_focus_4
-		cost = 1.00
-		x = 16
-		y = 3
+		id = ROCfocus_5
+		icon = GFX_goal_unknown
+		cost = 10.00
 		prerequisite = {
-			focus = ROC_focus_3
+			focus = ROCfocus_3
 		}
-		prerequisite = {
-			focus = ROC_focus_2
-		}
-		completion_reward = {
-		add_political_power = 100
-		}
-	}
-	focus = {
-		id = ROC_focus_5
-		icon = GFX_goal_ROC_focus_5
-		cost = 1.00
 		x = 9
 		y = 3
+
+	}
+	focus = {
+		id = ROCfocus_2
+		icon = GFX_goal_unknown
+		cost = 10.00
 		prerequisite = {
-			focus = ROC_focus_3
+			focus = ROCfocus_0
+		}
+		x = 13
+		y = 1
+
+	}
+	focus = {
+		id = ROCfocus_4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROCfocus_2
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = ROCfocus_6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROCfocus_4
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = ROCfocus_7
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROCfocus_5
 		}
 		prerequisite = {
-			focus = ROC_focus_2
+			focus = ROCfocus_6
 		}
+		x = 11
+		y = 4
+
+	}
+	focus = {
+		id = ROCfocus_8
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROCfocus_7
+		}
+		mutually_exclusive = {
+			focus = ROCfocus_9
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = ROCfocus_9
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROCfocus_7
+		}
+		mutually_exclusive = {
+			focus = ROCfocus_8
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = ROCfocus_10
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROCfocus_8
+		}
+		x = 9
+		y = 6
 		completion_reward = {
-		add_political_power = 100
+			set_temp_variable = {
+					temp_Worker_support = 5
+				}
+			Worker_support_add = yes
+			set_temp_variable = {
+					temp_Farmer_support = 5
+				}
+			Farmer_support_add = yes
+			set_temp_variable = {
+					temp_Merchant_support = 5
+				}
+			Merchant_support_add = yes
+			set_temp_variable = {
+					temp_Scholar_support = 5
+				}
+			Scholar_support_add = yes
 		}
 	}
 	focus = {
-		id = ROC_focus_6
-		icon = GFX_goal_ROC_focus_6
-		cost = 1.00
-		x = 3
-		y = 3
+		id = ROCfocus_11
+		icon = GFX_goal_unknown
+		cost = 10.00
 		prerequisite = {
-			focus = ROC_focus_3
+			focus = ROCfocus_9
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = ROCfocus_12
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROCfocus_10
+		}
+		x = 9
+		y = 7
+
+	}
+	focus = {
+		id = ROCfocus_13
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROCfocus_11
+		}
+		x = 13
+		y = 7
+
+	}
+	focus = {
+		id = ROCfocus_14
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROCfocus_12
 		}
 		prerequisite = {
-			focus = ROC_focus_2
+			focus = ROCfocus_13
 		}
-		completion_reward = {
-		add_political_power = 100
-		}
+		x = 11
+		y = 8
+
 	}
 }
-
-
