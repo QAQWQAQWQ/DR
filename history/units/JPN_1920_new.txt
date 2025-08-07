@@ -1,0 +1,158 @@
+﻿division_template = {
+	name = "骑兵旅团"			
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "常设师团"			
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 1
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+units = {
+	division = {
+		name = "第1师团"
+		location = 1182
+		division_template = "常设师团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		name = "第2师团"
+		location = 1182
+		division_template = "常设师团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		name = "第3师团"
+		location = 1182
+		division_template = "常设师团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		name = "第4师团"
+		location = 1182
+		division_template = "常设师团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		name = "第5师团"
+		location = 1182
+		division_template = "常设师团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		name = "第6师团"
+		location = 1182
+		division_template = "常设师团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		name = "第7师团"
+		location = 1182
+		division_template = "常设师团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		name = "第8师团"
+		location = 1182
+		division_template = "常设师团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		name = "第9师团"
+		location = 1182
+		division_template = "常设师团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		name = "第10师团"
+		location = 1182
+		division_template = "常设师团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		name = "第11师团"
+		location = 1182
+		division_template = "常设师团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		name = "第12师团"
+		location = 1182
+		division_template = "常设师团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		name = "第14师团"
+		location = 1182
+		division_template = "常设师团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		name = "第16师团"
+		location = 1182
+		division_template = "常设师团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		name = "第13师团"
+		location = 1182
+		division_template = "骑兵旅团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		name = "第15师团"
+		location = 1182
+		division_template = "骑兵旅团"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+
+	}
+}

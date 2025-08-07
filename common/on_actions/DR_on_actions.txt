@@ -172,7 +172,22 @@ on_actions = {
 		}
 	}
 
-
+	on_monthly_JPN = {
+		effect = {
+			if = {
+				limit = { has_idea = JPN_Taisho_period}
+				add_political_power = 15
+			}
+			if = {
+				limit = { has_idea = JPN_Chronic_depression}
+				add_to_variable = { JPN_Chronic_depression_var = -0.1}
+			}
+			if = {
+				limit = { has_idea = JPN_Poor_rural_areas}
+				add_political_power = -10
+			}
+		}
+	}
 
 
 }

@@ -680,3 +680,27 @@ country_event = {
 		news_event = WorldNew.34
 	}
 }
+country_event = {
+	id = JPN.35 #对俄硬派同盟形成
+	title = JPN.35.t
+	desc = JPN.35.d
+	picture = GFX_JPN_35
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.35.a
+	}
+}
+country_event = {
+	id = JPN.36 #新国会政事堂开工
+	title = JPN.36.t
+	desc = JPN.36.d
+	picture = GFX_JPN_36
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = {
+		name = JPN.36.a
+	}
+}

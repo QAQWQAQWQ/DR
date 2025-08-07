@@ -28,12 +28,25 @@ ideas = {
 		}
 		JPN_haze_Russo_Japanese_War = {
 			picture = haze_Russo_Japanese_War
+			on_add = {
+				country_lock_all_division_template = yes
+			}
+			on_remove = {
+				country_lock_all_division_template = no
+			}
+			rule = {
+			    can_send_volunteers = no
+			}
 			modifier = {
-				experience_gain_army= -0.05
-				winter_attrition_factor= 0.05
-				conscription_factor= -0.05
-				stability_factor = -0.05
-				war_support_factor = -0.1
+				#experience_gain_army= -0.05
+				#winter_attrition_factor= 0.05
+				#conscription_factor= -0.05
+				#stability_factor = -0.05
+				#war_support_factor = -0.1
+				land_doctrine_cost_factor = 0.15
+				naval_doctrine_cost_factor = 0.15
+				training_time_factor = 0.75
+				industrial_capacity_dockyard = -0.75
             }
 		}
 
@@ -59,18 +72,40 @@ ideas = {
 		JPN_Taisho_period = {
 			picture = Taisho_period
 			modifier = {
-				Liberalism_drift = 0.03
-				stability_factor = 0.1
-				war_support_factor = -0.1
+				Liberalism_drift = 0.1
+				stability_factor = -0.1
+				custom_modifier_tooltip = JPN_Taisho_period_tt
             }
+		}
+
+		JPN_Chronic_depression = {
+			picture = Chronic_depression
+			modifier = {
+				stability_factor = -0.05
+				production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.05
+				custom_modifier_tooltip = JPN_Chronic_depression_tt
+			}
+		}
+
+		JPN_Poor_rural_areas = {
+			picture = Poor_rural_areas
+			modifier = {
+				weekly_manpower = -250
+				stability_factor = -0.05
+				custom_modifier_tooltip = JPN_Poor_rural_areas_tt
+			}
 		}
 
 		JPN_noninterference = { 
 			picture = noninterference
 			modifier = {
-				ai_badass_factor=-0.25
-				ai_focus_military_advancements_factor=-0.5
-				ai_focus_peaceful_factor=0.5
+
+				land_doctrine_cost_factor = 0.1
+				naval_doctrine_cost_factor = 0.1
+				industrial_capacity_dockyard = -0.1
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
             }
 		}
 	}
