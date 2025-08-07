@@ -3,9 +3,30 @@ ideas = {
 		ROC_Part_company = {
 			picture = Part_company
 			modifier = {
-				stability_factor = -0.02
-				political_power_cost = 0.05
+				stability_factor = -0.05
+				political_power_cost = 0.1
             }
 		}
-}
+		ROC_Low_Prestige = {
+			picture = ROC_Low_Prestige
+			modifier = {
+				war_support_factor= -0.05
+				party_popularity_stability_factor= -0.05
+				assign_army_leader_cp_cost= 10
+				max_command_power= -10
+            }
+		}
+		ROC_Scattered_party_organizations = {
+			picture = Scattered_party_organizations
+			modifier = {
+				people_cost_modifier=0.1
+				global_building_slots_factor=-0.05
+				production_speed_buildings_factor=-0.05
+				production_factory_start_efficiency_factor=-0.05
+				industrial_capacity_factory=-0.05
+				industrial_capacity_dockyard=-0.05
+				cic_construction_boost_factor=-0.05
+            }
+		}
+	}
 }

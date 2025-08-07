@@ -974,8 +974,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ROC/Part_company.dds"
 	}
 	
-
-
+	spriteType = {
+		name = "GFX_idea_ROC_Low_Prestige"
+		texturefile = "gfx/interface/ideas/ROC/ROC_Low_Prestige.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Scattered_party_organizations"
+		texturefile = "gfx/interface/ideas/ROC/Scattered_party_organizations.dds"
+	}
 	spriteType = {
 		name = "GFX_idea_pre_armys"
 		texturefile = "gfx/interface/ideas/pre_armys.dds"

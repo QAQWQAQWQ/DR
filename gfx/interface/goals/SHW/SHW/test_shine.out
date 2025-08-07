@@ -1,10 +1,10 @@
 spriteTypes = {
 spriteType = {
-name = "GFX_SHW_dip_0_shine"
-texturefile = "gfx\interface\goals\SHW\SHW_dip_0.dds"
+name = "GFX_SHW_dip_21_shine"
+texturefile = "gfx\interface\goals\SHW\SHW/SHW_dip_21.dds"
 effectFile = "gfx/FX/buttonstate.lua"
 animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_0.dds"
+	animationmaskfile = "gfx\interface\goals\SHW\SHW/SHW_dip_21.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -16,7 +16,7 @@ animation = {
 	animationtexturescale = { x = 1.0 y = 1.0 } 
 }
 animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_0.dds"
+	animationmaskfile = "gfx\interface\goals\SHW\SHW/SHW_dip_21.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -30,11 +30,11 @@ animation = {
 legacy_lazy_load = no
 }
 spriteType = {
-name = "GFX_SHW_dip_1_shine"
-texturefile = "gfx\interface\goals\SHW\SHW_dip_1.dds"
+name = "GFX_SHW_dip_22_shine"
+texturefile = "gfx\interface\goals\SHW\SHW/SHW_dip_22.dds"
 effectFile = "gfx/FX/buttonstate.lua"
 animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_1.dds"
+	animationmaskfile = "gfx\interface\goals\SHW\SHW/SHW_dip_22.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -46,7 +46,7 @@ animation = {
 	animationtexturescale = { x = 1.0 y = 1.0 } 
 }
 animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_1.dds"
+	animationmaskfile = "gfx\interface\goals\SHW\SHW/SHW_dip_22.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -60,11 +60,11 @@ animation = {
 legacy_lazy_load = no
 }
 spriteType = {
-name = "GFX_SHW_dip_10_shine"
-texturefile = "gfx\interface\goals\SHW\SHW_dip_10.dds"
+name = "GFX_SHW_dip_23_shine"
+texturefile = "gfx\interface\goals\SHW\SHW/SHW_dip_23.dds"
 effectFile = "gfx/FX/buttonstate.lua"
 animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_10.dds"
+	animationmaskfile = "gfx\interface\goals\SHW\SHW/SHW_dip_23.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -76,7 +76,7 @@ animation = {
 	animationtexturescale = { x = 1.0 y = 1.0 } 
 }
 animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_10.dds"
+	animationmaskfile = "gfx\interface\goals\SHW\SHW/SHW_dip_23.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -90,11 +90,11 @@ animation = {
 legacy_lazy_load = no
 }
 spriteType = {
-name = "GFX_SHW_dip_11_shine"
-texturefile = "gfx\interface\goals\SHW\SHW_dip_11.dds"
+name = "GFX_SHW_dip_24_shine"
+texturefile = "gfx\interface\goals\SHW\SHW/SHW_dip_24.dds"
 effectFile = "gfx/FX/buttonstate.lua"
 animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_11.dds"
+	animationmaskfile = "gfx\interface\goals\SHW\SHW/SHW_dip_24.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -106,7 +106,7 @@ animation = {
 	animationtexturescale = { x = 1.0 y = 1.0 } 
 }
 animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_11.dds"
+	animationmaskfile = "gfx\interface\goals\SHW\SHW/SHW_dip_24.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -120,11 +120,11 @@ animation = {
 legacy_lazy_load = no
 }
 spriteType = {
-name = "GFX_SHW_dip_14_shine"
-texturefile = "gfx\interface\goals\SHW\SHW_dip_14.dds"
+name = "GFX_SHW_dip_25_shine"
+texturefile = "gfx\interface\goals\SHW\SHW/SHW_dip_25.dds"
 effectFile = "gfx/FX/buttonstate.lua"
 animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_14.dds"
+	animationmaskfile = "gfx\interface\goals\SHW\SHW/SHW_dip_25.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -136,7 +136,7 @@ animation = {
 	animationtexturescale = { x = 1.0 y = 1.0 } 
 }
 animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_14.dds"
+	animationmaskfile = "gfx\interface\goals\SHW\SHW/SHW_dip_25.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -150,11 +150,11 @@ animation = {
 legacy_lazy_load = no
 }
 spriteType = {
-name = "GFX_SHW_dip_15_shine"
-texturefile = "gfx\interface\goals\SHW\SHW_dip_15.dds"
+name = "GFX_SHW_dip_26_shine"
+texturefile = "gfx\interface\goals\SHW\SHW/SHW_dip_26.dds"
 effectFile = "gfx/FX/buttonstate.lua"
 animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_15.dds"
+	animationmaskfile = "gfx\interface\goals\SHW\SHW/SHW_dip_26.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -166,7 +166,7 @@ animation = {
 	animationtexturescale = { x = 1.0 y = 1.0 } 
 }
 animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_15.dds"
+	animationmaskfile = "gfx\interface\goals\SHW\SHW/SHW_dip_26.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -180,11 +180,11 @@ animation = {
 legacy_lazy_load = no
 }
 spriteType = {
-name = "GFX_SHW_dip_16_shine"
-texturefile = "gfx\interface\goals\SHW\SHW_dip_16.dds"
+name = "GFX_SHW_dip_27_shine"
+texturefile = "gfx\interface\goals\SHW\SHW/SHW_dip_27.dds"
 effectFile = "gfx/FX/buttonstate.lua"
 animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_16.dds"
+	animationmaskfile = "gfx\interface\goals\SHW\SHW/SHW_dip_27.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -196,7 +196,7 @@ animation = {
 	animationtexturescale = { x = 1.0 y = 1.0 } 
 }
 animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_16.dds"
+	animationmaskfile = "gfx\interface\goals\SHW\SHW/SHW_dip_27.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -210,11 +210,11 @@ animation = {
 legacy_lazy_load = no
 }
 spriteType = {
-name = "GFX_SHW_dip_17_shine"
-texturefile = "gfx\interface\goals\SHW\SHW_dip_17.dds"
+name = "GFX_SHW_dip_28_shine"
+texturefile = "gfx\interface\goals\SHW\SHW/SHW_dip_28.dds"
 effectFile = "gfx/FX/buttonstate.lua"
 animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_17.dds"
+	animationmaskfile = "gfx\interface\goals\SHW\SHW/SHW_dip_28.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -226,7 +226,7 @@ animation = {
 	animationtexturescale = { x = 1.0 y = 1.0 } 
 }
 animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_17.dds"
+	animationmaskfile = "gfx\interface\goals\SHW\SHW/SHW_dip_28.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -240,11 +240,11 @@ animation = {
 legacy_lazy_load = no
 }
 spriteType = {
-name = "GFX_SHW_dip_18_shine"
-texturefile = "gfx\interface\goals\SHW\SHW_dip_18.dds"
+name = "GFX_SHW_dip_29_shine"
+texturefile = "gfx\interface\goals\SHW\SHW/SHW_dip_29.dds"
 effectFile = "gfx/FX/buttonstate.lua"
 animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_18.dds"
+	animationmaskfile = "gfx\interface\goals\SHW\SHW/SHW_dip_29.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -256,7 +256,7 @@ animation = {
 	animationtexturescale = { x = 1.0 y = 1.0 } 
 }
 animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_18.dds"
+	animationmaskfile = "gfx\interface\goals\SHW\SHW/SHW_dip_29.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -270,11 +270,11 @@ animation = {
 legacy_lazy_load = no
 }
 spriteType = {
-name = "GFX_SHW_dip_19_shine"
-texturefile = "gfx\interface\goals\SHW\SHW_dip_19.dds"
+name = "GFX_SHW_dip_30_shine"
+texturefile = "gfx\interface\goals\SHW\SHW/SHW_dip_30.dds"
 effectFile = "gfx/FX/buttonstate.lua"
 animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_19.dds"
+	animationmaskfile = "gfx\interface\goals\SHW\SHW/SHW_dip_30.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -286,7 +286,7 @@ animation = {
 	animationtexturescale = { x = 1.0 y = 1.0 } 
 }
 animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_19.dds"
+	animationmaskfile = "gfx\interface\goals\SHW\SHW/SHW_dip_30.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -300,11 +300,11 @@ animation = {
 legacy_lazy_load = no
 }
 spriteType = {
-name = "GFX_SHW_dip_2_shine"
-texturefile = "gfx\interface\goals\SHW\SHW_dip_2.dds"
+name = "GFX_SHW_dip_31_shine"
+texturefile = "gfx\interface\goals\SHW\SHW/SHW_dip_31.dds"
 effectFile = "gfx/FX/buttonstate.lua"
 animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_2.dds"
+	animationmaskfile = "gfx\interface\goals\SHW\SHW/SHW_dip_31.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -316,7 +316,7 @@ animation = {
 	animationtexturescale = { x = 1.0 y = 1.0 } 
 }
 animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_2.dds"
+	animationmaskfile = "gfx\interface\goals\SHW\SHW/SHW_dip_31.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -330,11 +330,11 @@ animation = {
 legacy_lazy_load = no
 }
 spriteType = {
-name = "GFX_SHW_dip_20_shine"
-texturefile = "gfx\interface\goals\SHW\SHW_dip_20.dds"
+name = "GFX_SHW_dip_32_shine"
+texturefile = "gfx\interface\goals\SHW\SHW/SHW_dip_32.dds"
 effectFile = "gfx/FX/buttonstate.lua"
 animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_20.dds"
+	animationmaskfile = "gfx\interface\goals\SHW\SHW/SHW_dip_32.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -346,217 +346,7 @@ animation = {
 	animationtexturescale = { x = 1.0 y = 1.0 } 
 }
 animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_20.dds"
-	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-	animationlooping = no			# yes or no ;)
-	animationtime = 0.75				# in seconds
-	animationdelay = 0			# in seconds
-	animationblendmode = "add"       #add, multiply, overlay
-	animationtype = "scrolling"      #scrolling, rotating, pulsing
-	animationrotationoffset = { x = 0.0 y = 0.0 }
-	animationtexturescale = { x = 1.0 y = 1.0 } 
-}
-legacy_lazy_load = no
-}
-spriteType = {
-name = "GFX_SHW_dip_3_shine"
-texturefile = "gfx\interface\goals\SHW\SHW_dip_3.dds"
-effectFile = "gfx/FX/buttonstate.lua"
-animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_3.dds"
-	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-	animationlooping = no			# yes or no ;)
-	animationtime = 0.75				# in seconds
-	animationdelay = 0			# in seconds
-	animationblendmode = "add"       #add, multiply, overlay
-	animationtype = "scrolling"      #scrolling, rotating, pulsing
-	animationrotationoffset = { x = 0.0 y = 0.0 }
-	animationtexturescale = { x = 1.0 y = 1.0 } 
-}
-animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_3.dds"
-	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-	animationlooping = no			# yes or no ;)
-	animationtime = 0.75				# in seconds
-	animationdelay = 0			# in seconds
-	animationblendmode = "add"       #add, multiply, overlay
-	animationtype = "scrolling"      #scrolling, rotating, pulsing
-	animationrotationoffset = { x = 0.0 y = 0.0 }
-	animationtexturescale = { x = 1.0 y = 1.0 } 
-}
-legacy_lazy_load = no
-}
-spriteType = {
-name = "GFX_SHW_dip_4_shine"
-texturefile = "gfx\interface\goals\SHW\SHW_dip_4.dds"
-effectFile = "gfx/FX/buttonstate.lua"
-animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_4.dds"
-	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-	animationlooping = no			# yes or no ;)
-	animationtime = 0.75				# in seconds
-	animationdelay = 0			# in seconds
-	animationblendmode = "add"       #add, multiply, overlay
-	animationtype = "scrolling"      #scrolling, rotating, pulsing
-	animationrotationoffset = { x = 0.0 y = 0.0 }
-	animationtexturescale = { x = 1.0 y = 1.0 } 
-}
-animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_4.dds"
-	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-	animationlooping = no			# yes or no ;)
-	animationtime = 0.75				# in seconds
-	animationdelay = 0			# in seconds
-	animationblendmode = "add"       #add, multiply, overlay
-	animationtype = "scrolling"      #scrolling, rotating, pulsing
-	animationrotationoffset = { x = 0.0 y = 0.0 }
-	animationtexturescale = { x = 1.0 y = 1.0 } 
-}
-legacy_lazy_load = no
-}
-spriteType = {
-name = "GFX_SHW_dip_5_shine"
-texturefile = "gfx\interface\goals\SHW\SHW_dip_5.dds"
-effectFile = "gfx/FX/buttonstate.lua"
-animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_5.dds"
-	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-	animationlooping = no			# yes or no ;)
-	animationtime = 0.75				# in seconds
-	animationdelay = 0			# in seconds
-	animationblendmode = "add"       #add, multiply, overlay
-	animationtype = "scrolling"      #scrolling, rotating, pulsing
-	animationrotationoffset = { x = 0.0 y = 0.0 }
-	animationtexturescale = { x = 1.0 y = 1.0 } 
-}
-animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_5.dds"
-	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-	animationlooping = no			# yes or no ;)
-	animationtime = 0.75				# in seconds
-	animationdelay = 0			# in seconds
-	animationblendmode = "add"       #add, multiply, overlay
-	animationtype = "scrolling"      #scrolling, rotating, pulsing
-	animationrotationoffset = { x = 0.0 y = 0.0 }
-	animationtexturescale = { x = 1.0 y = 1.0 } 
-}
-legacy_lazy_load = no
-}
-spriteType = {
-name = "GFX_SHW_dip_6_shine"
-texturefile = "gfx\interface\goals\SHW\SHW_dip_6.dds"
-effectFile = "gfx/FX/buttonstate.lua"
-animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_6.dds"
-	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-	animationlooping = no			# yes or no ;)
-	animationtime = 0.75				# in seconds
-	animationdelay = 0			# in seconds
-	animationblendmode = "add"       #add, multiply, overlay
-	animationtype = "scrolling"      #scrolling, rotating, pulsing
-	animationrotationoffset = { x = 0.0 y = 0.0 }
-	animationtexturescale = { x = 1.0 y = 1.0 } 
-}
-animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_6.dds"
-	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-	animationlooping = no			# yes or no ;)
-	animationtime = 0.75				# in seconds
-	animationdelay = 0			# in seconds
-	animationblendmode = "add"       #add, multiply, overlay
-	animationtype = "scrolling"      #scrolling, rotating, pulsing
-	animationrotationoffset = { x = 0.0 y = 0.0 }
-	animationtexturescale = { x = 1.0 y = 1.0 } 
-}
-legacy_lazy_load = no
-}
-spriteType = {
-name = "GFX_SHW_dip_7_shine"
-texturefile = "gfx\interface\goals\SHW\SHW_dip_7.dds"
-effectFile = "gfx/FX/buttonstate.lua"
-animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_7.dds"
-	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-	animationlooping = no			# yes or no ;)
-	animationtime = 0.75				# in seconds
-	animationdelay = 0			# in seconds
-	animationblendmode = "add"       #add, multiply, overlay
-	animationtype = "scrolling"      #scrolling, rotating, pulsing
-	animationrotationoffset = { x = 0.0 y = 0.0 }
-	animationtexturescale = { x = 1.0 y = 1.0 } 
-}
-animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_7.dds"
-	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-	animationlooping = no			# yes or no ;)
-	animationtime = 0.75				# in seconds
-	animationdelay = 0			# in seconds
-	animationblendmode = "add"       #add, multiply, overlay
-	animationtype = "scrolling"      #scrolling, rotating, pulsing
-	animationrotationoffset = { x = 0.0 y = 0.0 }
-	animationtexturescale = { x = 1.0 y = 1.0 } 
-}
-legacy_lazy_load = no
-}
-spriteType = {
-name = "GFX_SHW_dip_8_shine"
-texturefile = "gfx\interface\goals\SHW\SHW_dip_8.dds"
-effectFile = "gfx/FX/buttonstate.lua"
-animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_8.dds"
-	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-	animationlooping = no			# yes or no ;)
-	animationtime = 0.75				# in seconds
-	animationdelay = 0			# in seconds
-	animationblendmode = "add"       #add, multiply, overlay
-	animationtype = "scrolling"      #scrolling, rotating, pulsing
-	animationrotationoffset = { x = 0.0 y = 0.0 }
-	animationtexturescale = { x = 1.0 y = 1.0 } 
-}
-animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_8.dds"
-	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-	animationlooping = no			# yes or no ;)
-	animationtime = 0.75				# in seconds
-	animationdelay = 0			# in seconds
-	animationblendmode = "add"       #add, multiply, overlay
-	animationtype = "scrolling"      #scrolling, rotating, pulsing
-	animationrotationoffset = { x = 0.0 y = 0.0 }
-	animationtexturescale = { x = 1.0 y = 1.0 } 
-}
-legacy_lazy_load = no
-}
-spriteType = {
-name = "GFX_SHW_dip_9_shine"
-texturefile = "gfx\interface\goals\SHW\SHW_dip_9.dds"
-effectFile = "gfx/FX/buttonstate.lua"
-animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_9.dds"
-	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-	animationlooping = no			# yes or no ;)
-	animationtime = 0.75				# in seconds
-	animationdelay = 0			# in seconds
-	animationblendmode = "add"       #add, multiply, overlay
-	animationtype = "scrolling"      #scrolling, rotating, pulsing
-	animationrotationoffset = { x = 0.0 y = 0.0 }
-	animationtexturescale = { x = 1.0 y = 1.0 } 
-}
-animation = {
-	animationmaskfile = "gfx\interface\goals\SHW\SHW_dip_9.dds"
+	animationmaskfile = "gfx\interface\goals\SHW\SHW/SHW_dip_32.dds"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)

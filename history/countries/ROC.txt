@@ -71,7 +71,9 @@ set_politics = {
 	elections_allowed = no
 }
 add_ideas = {
-	ROC_Part_company     
+	ROC_Part_company   
+	ROC_Low_Prestige  
+	ROC_Scattered_party_organizations
 	}
 set_popularities = {
 	Paternalism = 29
@@ -84,3 +86,5 @@ add_opinion_modifier = {
 	target = FRW
 	modifier = revolutionary_friend
 }
+
+set_country_flag = parliament_mian_button_yes

@@ -156,9 +156,43 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-
-
-
+	spriteType = {
+		name = "GFX_JiangKangHu"
+		texturefile = "gfx/interface/textpicture/portrait_JiangKangHu.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_LiDaZhao"
+		texturefile = "gfx/interface/textpicture/portrait_LiDaZhao.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Huhangming"
+		texturefile = "gfx/interface/textpicture/portrait_Huhangming.tga"
+		legacy_lazy_load = no
+	}     
+	spriteType = {
+		name = "GFX_HuangXing"
+		texturefile = "gfx/interface/textpicture/portrait_HuangXing.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_LiaoZhongKai"
+		texturefile = "gfx/interface/textpicture/portrait_LiaoZhongKai.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_YuYouReng"
+		texturefile = "gfx/interface/textpicture/portrait_YuYouReng.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CaiYuanPei"
+		texturefile = "gfx/interface/textpicture/portrait_CaiYuanPei.tga"
+		legacy_lazy_load = no
+	}
+	
+ 
 
 
 	spriteType = {
