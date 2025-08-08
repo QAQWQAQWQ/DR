@@ -15,7 +15,7 @@ characters={
 		}
 	}
 	ROC_zhang_jingjiang={
-		name=ROC_HuangXing
+		name=ROC_zhang_jingjiang
 		portraits={
 			civilian={
 				large="gfx/leaders/ROC/portrait_ZhangJingJiang.tga"
@@ -351,6 +351,134 @@ characters={
 			ai_will_do = {
 				factor = 1.000
 			}
+		}
+	}
+	ROC_Cheng_Qiang = {#壳子，填完之后删掉注释
+		name = ROC_Cheng_Qiang
+		portraits = {
+			
+			civilian = {
+				large = "gfx/leaders/ROC/portrait_ChengQiang.tga"
+			}
+		}
+		corps_commander = { #壳子，填完之后删掉注释
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ROC_Chen_Ke_Yu = {#壳子，填完之后删掉注释
+		name = ROC_Chen_Ke_Yu
+		portraits = {
+			
+			civilian = {
+				large = "gfx/leaders/ROC/portrait_ChenKeYu.tga"
+			}
+		}
+		corps_commander = { #壳子，填完之后删掉注释
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ROC_Li_Fu_Ling = {#壳子，填完之后删掉注释
+		name = ROC_Li_Fu_Ling
+		portraits = {
+			
+			civilian = {
+				large = "gfx/leaders/ROC/portrait_LiFuLing.tga"
+			}
+		}
+		corps_commander = { #壳子，填完之后删掉注释
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ROC_Li_Ji_Sheng = {#壳子，填完之后删掉注释
+		name = ROC_Li_Ji_Sheng
+		portraits = {
+			
+			civilian = {
+				large = "gfx/leaders/ROC/portrait_LiJiSheng.tga"
+			}
+		}
+		corps_commander = { #壳子，填完之后删掉注释
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ROC_Li_Zong_Ren = {#壳子，填完之后删掉注释
+		name = ROC_Li_Zong_Ren
+		portraits = {
+			
+			civilian = {
+				large = "gfx/leaders/ROC/portrait_LiZongRen.tga"
+			}
+		}
+		corps_commander = { #壳子，填完之后删掉注释
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ROC_Lu_Ti_Ping = {#壳子，填完之后删掉注释
+		name = ROC_Lu_Ti_Ping
+		portraits = {
+			
+			civilian = {
+				large = "gfx/leaders/ROC/portrait_LuTiPing.tga"
+			}
+		}
+		corps_commander = { #壳子，填完之后删掉注释
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ROC_Tang_Sheng_Zhi = {#壳子，填完之后删掉注释
+		name = ROC_Tang_Sheng_Zhi
+		portraits = {
+			
+			civilian = {
+				large = "gfx/leaders/ROC/portrait_TangShengZhi.tga"
+			}
+		}
+		corps_commander = { #壳子，填完之后删掉注释
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ROC_Zhu_Pei_De = {#壳子，填完之后删掉注释
+		name = ROC_Zhu_Pei_De
+		portraits = {
+			
+			civilian = {
+				large = "gfx/leaders/ROC/portrait_ZhuPeiDe.tga"
+			}
+		}
+		corps_commander = { #壳子，填完之后删掉注释
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
 		}
 	}
 }
