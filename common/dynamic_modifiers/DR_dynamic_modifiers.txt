@@ -590,6 +590,6 @@ FRW_Socialist_Transformation_plan= {
 
 JPN_Chronic_depression_dyn = {
 	enable = { always = yes }
-
+	#icon = GFX_Chronic_depression_dyn
  	industrial_capacity_factory = JPN_Chronic_depression_var
 }

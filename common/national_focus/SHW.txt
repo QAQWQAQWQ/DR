@@ -63,22 +63,27 @@ focus_tree = {
 		cost = 10.00
 		x = 20
 		y = 6
+		prerequisite = {
+			focus = SHW_dip_33
+		}
 			completion_reward = {
 					country_event = SHW_dip_event.0
 				}
 
 	}
-	focus = {
+	focus = { 
 		id = SHW_dip_21
-		icon = GFX_goal_unknown
+		icon = GFX_SHW_dip_21
 		cost = 10.00
 		x = 9
 		y = 6
-
+		prerequisite = {
+			focus = SHW_dip_33
+		}
 	}
 	focus = {
 		id = SHW_dip_22
-		icon = GFX_goal_unknown
+		icon = GFX_SHW_dip_22
 		cost = 10.00
 		prerequisite = {
 			focus = SHW_dip_21
@@ -1119,6 +1124,14 @@ focus_tree = {
 		}
 		x = 20
 		y = 14
+
+	}
+	focus = {
+		id = SHW_dip_33
+		icon = GFX_SHW_dip_33
+		cost = 10.00
+		x = 16
+		y = 5
 
 	}
 }

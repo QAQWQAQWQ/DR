@@ -117,7 +117,10 @@ focus_tree = {
 				}	
 			}
 			allow_branch = {
-									
+				has_country_leader = {
+					character = FRW_Georges_Clemenceau
+					ruling_only = yes
+				}					
 			}
 			
 			completion_reward = {
@@ -143,9 +146,12 @@ focus_tree = {
 					character = FRW_Leon_Blum
 					ruling_only = yes
 				}
-				}
+			}
 			allow_branch = {
-						
+				has_country_leader = {
+					character = FRW_Leon_Blum
+					ruling_only = yes
+				}	
 			}
 			
 			completion_reward = {
@@ -163,6 +169,12 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = FRW_focus62
 		}
+		allow_branch = {
+			has_country_leader = {
+				character = FRW_Marcel_Cachin
+				ruling_only = yes
+			}
+		} 
 		x = 23
 		y = 8
 			available = {
@@ -761,6 +773,7 @@ has_country_leader = {
 		mutually_exclusive = {
 			focus = FRW_focus128
 		}
+		
 		x = 18
 		y = 10
 			completion_reward = {
@@ -784,6 +797,9 @@ has_country_leader = {
 		cost = 4.00
 		prerequisite = {
 			focus = FRW_focus78
+		}
+		allow_branch = {
+			
 		}
 		x = 23
 		y = 9
@@ -2610,7 +2626,7 @@ has_country_leader = {
 			has_country_leader = {
 				character = FRW_Daniel_Renoult
 				ruling_only = yes
-		}
+			}
 		}
 		x = 19
 		y = 15
