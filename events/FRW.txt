@@ -1898,7 +1898,7 @@ country_event = {
 		name = FRW.64.a 
 		swap_ideas = {
 			remove_idea = secondary_school
-			add_idea = secondary_school
+			add_idea = university_level
 		}
 	}
 }
@@ -1912,12 +1912,18 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = FRW.65.a 
-		BEL={
-			add_to_faction = FRW
+		FRW={
+			add_to_faction = BEL
+		}
+		ai_chance = {
+			factor = 100
 		}
 	}
 	option = {
 		name = FRW.65.b
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 

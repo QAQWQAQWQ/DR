@@ -1,4 +1,20 @@
 characters={
+	BEC_Sydney_Buxton_1st_Earl_Buxton={
+		name=BEC_Sydney_Buxton_1st_Earl_Buxton
+		portraits={
+			#平民状态
+			civilian={
+				large="gfx/leaders/BEC/portrait_Sydney_Buxton_1st_Earl_Buxton.tga"
+			}
 
+		}
+		country_leader={
+			#意识形态
+			ideology=autocratic-colonial-government
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	
 }

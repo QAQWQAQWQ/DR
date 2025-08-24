@@ -74,6 +74,12 @@ spriteTypes = {
 	    texturefile = "gfx/interface/ideas/JPN/noninterference.dds"
     }
 	spriteType = {
+	    name = "GFX_idea_Strategies_resist_Russia"
+	    texturefile = "gfx/interface/ideas/JPN/JPN_Strategies_resist_Russia.dds"
+    }
+	
+
+	spriteType = {
 		name = "GFX_idea_estrangement"
 		texturefile = "gfx/interface/ideas/JPN/estrangement.dds"
 	}
@@ -776,10 +782,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_Affirmative_action"
 		texturefile = "gfx/interface/ideas/idea_Affirmative_action.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_London_stock_market_crash"
-		texturefile = "gfx/interface/ideas/London_stock_market_crash.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_Radical_feminism"

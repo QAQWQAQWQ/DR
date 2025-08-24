@@ -1,0 +1,170 @@
+﻿
+units= {
+
+	##### NAVAL UNITS #####
+	### Northern Fleet -- Murmansk
+	fleet = {
+		name = "大西洋舰队"
+		naval_base = 3501 # 
+		task_force = {				
+			name = "大西洋舰队"
+			location = 3501 # 
+			ship = { name = "铁公爵号" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENL version_name = "铁公爵级" } } }
+			ship = { name = "本鲍号" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENL version_name = "铁公爵级" } } }
+			ship = { name = "马尔伯罗号" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENL version_name = "铁公爵级" } } }
+			ship = { name = "印度皇帝号" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENL version_name = "铁公爵级" } } }
+
+			ship = { name = "加拿大号" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENL version_name = "加拿大级" } } }
+			ship = { name = "伊丽莎白号" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENL version_name = "伊丽莎白女王级" } } }
+			ship = { name = "厌战号" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENL version_name = "伊丽莎白女王级" } } }
+			ship = { name = "巴勒姆号" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENL version_name = "伊丽莎白女王级" } } }
+			ship = { name = "勇士号" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENL version_name = "伊丽莎白女王级" } } }
+			ship = { name = "马来亚号" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENL version_name = "伊丽莎白女王级" } } }
+
+			ship = { name = "复仇号" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENL version_name = "复仇级" } } }
+			ship = { name = "决心号" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENL version_name = "复仇级" } } }
+			ship = { name = "拉米利斯号" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENL version_name = "复仇级" } } }
+			ship = { name = "君权号" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENL version_name = "复仇级" } } }
+			ship = { name = "皇家橡树号" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENL version_name = "复仇级" } } }
+
+
+			ship = { name = "声望号" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENL version_name = "声望级" } } }
+			ship = { name = "反击号" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENL version_name = "声望级" } } }
+			ship = { name = "无敌号" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENL version_name = "无敌级" } } }
+			ship = { name = "不屈号" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENL version_name = "无敌级" } } }
+			ship = { name = "不挠号" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENL version_name = "无敌级" } } }
+			ship = { name = "圣乔治号" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENL version_name = "圣乔治级" } } }
+			ship = { name = "圣马可号" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENL version_name = "圣乔治级" } } }
+			ship = { name = "新阿尔比恩号" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENL version_name = "圣乔治级" } } }
+
+			ship = { name = "航空母舰" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = ENL version_name = "勇敢级" } } }
+			ship = { name = "航空母舰" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = ENL version_name = "勇敢级" } } }
+			ship = { name = "航空母舰" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = ENL version_name = "鹰级" } } }
+			ship = { name = "航空母舰" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = ENL version_name = "百眼巨人级" } } }
+
+			# 1ya Flotiliya Esmintsev
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "D级" } } }
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "D级" } } }
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "D级" } } }
+			
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "D级" } } }
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "D级" } } }
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "D级" } } }
+			
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "C级" } } }
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "C级" } } }
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "C级" } } }
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "C级" } } }
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "C级" } } }
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "C级" } } }
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "C级" } } }
+			
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "C级" } } }
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "C级" } } }
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "C级" } } }
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "C级" } } }
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "C级" } } }
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "C级" } } }
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "C级" } } }
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "C级" } } }
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "C级" } } }
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "C级" } } }
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "C级" } } }
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "C级" } } }
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "C级" } } }
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "C级" } } }
+			
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "C级" } } }
+			ship = { name = "轻巡洋舰" definition = light_cruiser equipment = { ship_hull_light_1 = { amount = 1 owner = ENL version_name = "C级" } } }
+			
+
+			ship = { name = "潜艇" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENL version_name = "潜艇" } } }			
+			ship = { name = "潜艇" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENL version_name = "潜艇" } } }	
+
+			ship = { name = "霍金斯号" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENL version_name = "霍金斯级" } } }
+			ship = { name = "巡洋舰" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENL version_name = "霍金斯级" } } }
+			ship = { name = "征服号" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENL version_name = "征服级" } } }
+		}	
+	}
+
+	
+}
+
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+
+	### Ships Under Construction Notes ###
+	# DD: Leningrad & Minsk variant (x4) ("Leningrad" "Moskva" "Kharkov" "Minsk")
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "ENL"
+			version_name = "Leningrad & Minsk Class"
+		}
+		requested_factories = 1
+		progress = 0.70
+		amount = 2
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "ENL"
+			version_name = "Leningrad & Minsk Class"
+		}
+		requested_factories = 1
+		progress = 0.60
+		amount = 2
+	}
+	#CA Kirov Class (Kirov)
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "ENL"
+			version_name = "Kirov Class"
+		}
+		requested_factories = 1
+		progress = 0.10
+		amount = 1
+	}
+	#CA Kirov Class (Voroshilov)
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "ENL"
+			version_name = "Kirov Class"
+		}
+		requested_factories = 1
+		progress = 0.10
+		amount = 1
+	}
+	# SS: Shchuka class (x29) ("Shch-125" "Shch-205" "Shch-206" "Shch-207" "Shch-310" "Shch-311" "Shch-126" "Shch-127" "Shch-128" "Shch-129" "Shch-130" "Shch-131" "Shch-132" "Shch-133" 
+	#		"Shch-134" "Shch-208" "Shch-312" "Shch-313" "Shch-314" "Shch-315" "Shch-316" "Shch-317" "Shch-318" "Shch-319" "Shch-320" "Shch-321" "Shch-322" "Shch-323" "Shch-324")
+	# SS: Stalinets class (x5) ("P-1" "P-2" "P-3" "S-1" "S-2")
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_1
+			creator = "ENL"
+			version_name = "Series V Shchuka"
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 6
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_1
+			creator = "ENL"
+			version_name = "Series X Shchuka"
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 12
+	}
+}
+
+#####################

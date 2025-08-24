@@ -957,7 +957,7 @@ immediate = {
 					}
 					retire_character = VCT_Archduke_Karl
 				}
-				AOX = {recruit_character = AOX_Charles_I}
+				#AOX = {recruit_character = AOX_Charles_I}
 				VCT = {
 					every_unit_leader = {
 						set_nationality = HUS
@@ -1138,7 +1138,7 @@ immediate = {
 					}
 					retire_character = VCT_Archduke_Karl
 				}
-				AOX = {recruit_character = AOX_Charles_I}
+				#AOX = {recruit_character = AOX_Charles_I}
 				VCT = {
 					every_unit_leader = {
 						set_nationality = HUS

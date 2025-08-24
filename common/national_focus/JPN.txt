@@ -1,3 +1,4 @@
+#!gfx:interface\RS_goals.gfx
 focus_tree = {
 	id = JPN
 	country = {
@@ -14,9 +15,9 @@ focus_tree = {
 		cost = 10.00
 		x = 40
 		y = 0
-			completion_reward = {
-					add_political_power = 50
-				}
+		completion_reward = {
+			add_political_power = 50
+		}
 
 	}
 	focus = {
@@ -69,10 +70,7 @@ focus_tree = {
 		x = 9
 		y = 2
 			completion_reward = {
-					create_wargoal = {
-							target = KON
-							type = puppet_wargoal_focus
-						}
+					
 				}
 
 	}
@@ -96,7 +94,12 @@ focus_tree = {
 		}
 		x = 9
 		y = 3
-
+		completion_reward = {
+			create_wargoal = {
+				target = WWS
+				type = puppet_wargoal_focus
+			}
+		}
 	}   
 	focus = { 
 		id = JPN_focus_22
@@ -107,7 +110,34 @@ focus_tree = {
 		}
 		x = 11
 		y = 3
-
+		completion_reward = {
+			custom_effect_tooltip = JPN_focus_22_tt
+			division_template = {
+				name = "关东军"
+				is_locked = yes
+				division_cap = 7 
+				priority = 1
+				template_counter = 0
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 } 
+					Machine_gun = { x = 0 y = 1 } 
+					light_tank_recon = { x = 0 y = 2 } 
+				}
+			}
+		}
 	}
 	focus = {
 		id = JPN_focus_73
@@ -124,7 +154,12 @@ focus_tree = {
 		}
 		x = 9
 		y = 4
-
+		completion_reward = {
+			create_wargoal = {
+				target = PHL
+				type = puppet_wargoal_focus
+			}
+		}
 	}
 	focus = {
 		id = JPN_focus_23
@@ -177,8 +212,12 @@ focus_tree = {
 		}
 		x = 12
 		y = 4
-		complete_effect = {
+		completion_reward = {
 			unlock_decision_category_tooltip = JPN_Korean_Gambling
+			create_wargoal = {
+				target = KON
+				type = puppet_wargoal_focus
+			}
 			hidden_effect = {
 				set_global_flag = Korean_Gambling_start
 				set_variable = {
@@ -190,9 +229,9 @@ focus_tree = {
 				set_variable = {
 					KON.independence = 75
 				}
-				SHW = { activate_mission = SHW_gambling_in_progress }
-				JPN = { activate_mission = JPN_gambling_in_progress }
 			}
+			SHW = { activate_mission = SHW_gambling_in_progress }
+			JPN = { activate_mission = JPN_gambling_in_progress }
 			news_event = WorldNew.28
 		}
 	}
@@ -205,7 +244,19 @@ focus_tree = {
 		}
 		x = 15 
 		y = 2
-
+		completion_reward = {
+			custom_effect_tooltip = JPN_focus_12_tt
+			add_units_to_division_template = {
+				template_name = "常设师团"
+				regiments = {
+					infantry = 0
+					infantry = 1
+				}
+				support = {
+					recon = 0
+				}
+			}
+		}
 	}
 	focus = {
 		id = JPN_focus_68
@@ -230,9 +281,28 @@ focus_tree = {
 		}
 		x = 14
 		y = 4
-
+		completion_reward = {
+			custom_effect_tooltip = JPN_focus_69_tt
+			if = {
+				limit = { 
+					NOT = {
+						has_tech = grand_assault
+					}
+				}
+				set_technology = {
+					grand_assault = 1
+				}
+				else = {
+					add_tech_bonus = {
+						bonus = 0.5
+						uses = 1
+						category = infantry_tech
+					}
+				}  
+			}
+		}
 	}
-	focus = {
+	focus = {  
 		id = JPN_focus_24
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -241,14 +311,9 @@ focus_tree = {
 		}
 		x = 19
 		y = 1
-			completion_reward = {
-					ENL = {
-							add_opinion_modifier = {
-									target = JPN
-									modifier = Show_goodwill
-								}
-						}
-				}
+		completion_reward = {
+			
+		}
 
 	}
 	focus = {
@@ -261,14 +326,15 @@ focus_tree = {
 		x = 17
 		y = 3
 			completion_reward = {
-					DUQ = {
-							add_opinion_modifier = {
-									target = JPN
-									modifier = Show_goodwill
-								}
-						}
-						news_event = WorldNew.33
+				DUQ = {
+					add_opinion_modifier = {
+						target = JPN
+						modifier = Show_goodwill
+					}
+					add_ideas = JPN_Strategies_resist_Russia
 				}
+				news_event = WorldNew.33
+			}
 
 	}
 	focus = {
@@ -291,7 +357,15 @@ focus_tree = {
 		}
 		x = 21
 		y = 3
-
+		completion_reward = {
+			ENL = {
+				add_opinion_modifier = {
+					target = JPN
+					modifier = Show_goodwill
+				}
+				add_ideas = JPN_Strategies_resist_Russia
+			}
+		}
 	}
 	focus = { 
 		id = JPN_focus_28
@@ -302,20 +376,9 @@ focus_tree = {
 		}
 		x = 21
 		y = 4
-			completion_reward = {
-					if = {
-							limit = {
-									OR = {
-											has_idea = disarmed_nation
-											has_idea = limited_conscription
-											has_idea = extensive_conscription
-											has_idea = service_by_requirement
-											has_idea = volunteer_only
-										}
-								}
-							add_ideas = tot_economic_mobilisation
-						}
-				}
+		completion_reward = {
+			
+		}
 
 	}
 	focus = {
@@ -373,7 +436,7 @@ focus_tree = {
 		x = 26
 		y = 2
 			completion_reward = {
-					army_experience = 20
+					army_experience = 30
 					gain_xp = 10
 					set_temp_variable = {
 							temp_Army_support = 5
@@ -390,7 +453,7 @@ focus_tree = {
 			focus = JPN_focus_9
 		}
 		x = 25
-		y = 3
+		y = 3 
 			completion_reward = {
 					unlock_decision_category_tooltip = JPN_Twenty_fifth_Division
 				}
@@ -406,18 +469,18 @@ focus_tree = {
 		x = 27
 		y = 3
 			completion_reward = {
-					custom_effect_tooltip = JPN_focus_12_tt
-					add_units_to_division_template = {
-							template_name = "甲种师团"
-							regiments = {
-									infantry = 0
-									infantry = 1
-								}
-							support = {
-									recon = 0
-								}
-						}
+				custom_effect_tooltip = JPN_focus_12_tt
+				add_units_to_division_template = {
+					template_name = "常设师团"
+					regiments = {
+						infantry = 0
+						infantry = 1
+					}
+					support = {
+						recon = 0
+					}
 				}
+			}
 
 	}
 	focus = {
@@ -434,12 +497,12 @@ focus_tree = {
 		y = 4
 			completion_reward = {
 					add_equipment_to_stockpile = {
-							type = artillery_equipment
-							amount = 200
-						}
-					set_temp_variable = {
-							temp_new_nat_tre_add = -2
-						}
+						type = artillery_equipment
+						amount = 200
+					}
+					add_to_temp_variable = {
+						temp_new_nat_tre = -1
+					}
 					new_nat_tre_add = yes
 				}
 
@@ -474,13 +537,23 @@ focus_tree = {
 		}
 		x = 25
 		y = 5
-			completion_reward = {
-					add_unit_bonus = {
-							category_special_forces = {
-									soft_attack = 0.05
-								}
-						}
-				}
+		completion_reward = {
+			add_unit_bonus = {
+				category_special_forces = {
+					soft_attack = 0.05
+					}
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = marine_tech
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = mountaineers_tech
+			}
+		}
 
 	}
 	focus = {
@@ -492,11 +565,18 @@ focus_tree = {
 		}
 		x = 27
 		y = 5
-			completion_reward = {
-					set_technology = {
-							early_armor_car = 1
-						}
-				}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = cat_light_armor
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = cat_medium_armor
+			}
+		}
 
 	}
 	focus = {
@@ -511,17 +591,22 @@ focus_tree = {
 		}
 		x = 26
 		y = 6
-			completion_reward = {
-					country_event = {
-							id = JPN.17
-							days = 10
-						}
-					add_doctrine_cost_reduction = {
-							cost_reduction = 0.5
-							uses = 2
-							category = land_doctrine
-						}
+		completion_reward = {
+				country_event = {
+					id = JPN.17
+					days = 10
 				}
+				add_doctrine_cost_reduction = {
+					cost_reduction = 1
+					uses = 2
+					category = land_doctrine
+				}	
+				JPN={
+					every_unit_leader = {
+						add_skill_level = 1
+					}
+				}
+		}
 
 	}
 	focus = {
@@ -534,7 +619,7 @@ focus_tree = {
 		x = 30
 		y = 2
 			completion_reward = {
-					navy_experience = 10
+					navy_experience = 30
 					gain_xp = 10
 					set_temp_variable = {
 							temp_Army_support = 5
@@ -552,16 +637,18 @@ focus_tree = {
 		}
 		x = 30
 		y = 3
-			completion_reward = {
-					set_temp_variable = {
-							temp_Army_support = 5
-						}
-					Army_support_add = yes
-					set_temp_variable = {
-							temp_new_nat_tre_add = -5
-						}
-					new_nat_tre_add = yes
-				}
+		completion_reward = {
+			
+			set_temp_variable = {
+				temp_Army_support = 5
+			}
+			Army_support_add = yes
+
+			add_to_temp_variable = {
+				temp_new_nat_tre = -1
+			}
+			new_nat_tre_add = yes
+		}
 
 	}
 	focus = {
@@ -576,7 +663,12 @@ focus_tree = {
 			completion_reward = {
 					set_technology = {
 							marines = 1
-						}
+					}
+					add_tech_bonus = {
+						bonus = 1
+						uses = 2
+						category = marine_tech
+					}
 					custom_effect_tooltip = JPN_focus_66_tooltip
 					division_template = {
 							name = "海军特战团"
@@ -636,13 +728,28 @@ focus_tree = {
 		}
 		x = 29
 		y = 5
-			completion_reward = {
-					add_tech_bonus = {
-							bonus = 0.5
-							uses = 1
-							category = bb_tech
-						}
-				}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = bb_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = ca_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = bc_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = shbb_tech
+			}
+		}
 
 	}
 	focus = {
@@ -654,13 +761,23 @@ focus_tree = {
 		}
 		x = 31
 		y = 5
-			completion_reward = {
-					add_doctrine_cost_reduction = {
-							cost_reduction = 0.5
-							uses = 2
-							category = support_tech
-						}
-				}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 1
+				uses = 2
+				category = support_tech
+			}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 1
+				uses = 2
+				category = engineers_tech
+			}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 1
+				uses = 2
+				category = signal_company_tech
+			}
+		}
 
 	}
 	focus = {
@@ -675,19 +792,46 @@ focus_tree = {
 		}
 		x = 30
 		y = 6
-			available = {
-					naval_strength_ratio = {
-							tag = SHW
-							ratio > 0.9
-						}
+		available = {
+				naval_strength_ratio = {
+					tag = SHW
+					ratio > 0.9
 				}
-			completion_reward = {
-					add_doctrine_cost_reduction = {
-							cost_reduction = 0.5
-							uses = 2
-							category = naval_doctrine
-						}
+		}
+		completion_reward = {
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.5
+					uses = 2
+					category = base_strike_main
 				}
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.5
+					uses = 2
+					category = cat_battlefield_support
+				}
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 2
+					category = bb_tech
+				}
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 2
+					category = ca_tech
+				}
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 2
+					category = bc_tech
+				}
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 2
+					category = shbb_tech
+				}
+
+				
+		}
 
 	}
 	focus = {
@@ -700,12 +844,18 @@ focus_tree = {
 		x = 32
 		y = 4
 			completion_reward = {
-					add_tech_bonus = {
-							bonus = 0.5
-							uses = 1
-							category = ss_tech
-						}
+				add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = ss_tech
 				}
+				add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = cat_trade_interdiction
+				}
+				
+			}
 
 	}
 	focus = {
@@ -843,7 +993,7 @@ focus_tree = {
 			focus = JPN_focus_32
 		}
 		allow_branch = {
-			has_completed_focus = JPN_focus_32
+			#has_completed_focus = JPN_focus_32
 		}
 		x = 40
 		y = 5
@@ -1271,7 +1421,10 @@ focus_tree = {
 		}
 		x = 48
 		y = 11
-
+		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = JPN_Defu_Sufeng_p
+		}
 	}
 	focus = {
 		id = JPN_focus_55

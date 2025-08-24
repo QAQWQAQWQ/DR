@@ -425,9 +425,42 @@ JPN_Handling_assassination = {
 			complete_effect = {  
 				clr_country_flag = JPN_Death_Senator
 			}
-	}
+	} 
 	
 }
+JPN_The_alliance_against_Russia = {
+	JPN_Aided_construction_DUQ = {
+		icon = GFX_decision_generic_construction
+			visible = {
+			}
+			available = {
+			} 
+			days_re_enable = 5
+			days_remove = 50 
+			cost = 35 
+			
+			allowed = {
+				tag = JPN
+			} 
+			complete_effect = { 
+				DUQ={
+					random_state = {
+						limit = { 
+								is_controlled_by = DUQ
+							}
+						add_extra_state_shared_building_slots = 1
+					}
+					add_offsite_building = { type = arms_factory level = 1 }
+				}
+			} 
+			fixed_random_seed = no
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 1
+			}
+	}
+}
+
 
 
 JPN_National_railway_construction = {

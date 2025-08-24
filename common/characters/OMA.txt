@@ -1,4 +1,20 @@
 characters={
+	OMA_Tribes={
+		name=OMA_Tribes
+		portraits={
+			#平民状态
+			civilian={
+				large="gfx/leaders/NTS/NTS_Northern_Tribal_Alliance.tga"
+			}
 
+		}
+		country_leader={
+			#意识形态
+			ideology=tribalism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	
 }
