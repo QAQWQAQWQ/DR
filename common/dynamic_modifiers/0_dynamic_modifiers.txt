@@ -125,3 +125,50 @@ Country_Bankruptcy = {
 	line_change_production_efficiency_factor= Bankruptcy_line_change_production_efficiency_factor
 	army_org_factor= Bankruptcy_army_org_factor
 }
+
+
+
+BaiWengWei = {
+	enable = { always = yes }
+	icon = GFX_idea_BaiWengWei
+
+	production_speed_buildings_factor = 0.05 
+	state_resources_factor = 0.02
+	local_supplies = 0.01 
+}
+
+chenjiongming = {
+	enable = { always = yes }
+	icon = GFX_idea_chenjiongming
+
+	production_speed_buildings_factor = 0.05 
+	state_resources_factor = 0.02
+	local_supplies = 0.01 
+}
+
+huangxing = {
+	enable = { always = yes }
+	icon = GFX_idea_huangxing
+
+	production_speed_buildings_factor = 0.05 
+	state_resources_factor = 0.02
+	local_supplies = 0.01 
+}
+
+liliejun = {
+	enable = { always = yes }
+	icon = GFX_idea_liliejun
+
+	production_speed_buildings_factor = 0.05 
+	state_resources_factor = 0.02
+	local_supplies = 0.01 
+}
+
+tanyankai = {
+	enable = { always = yes }
+	icon = GFX_idea_tanyankai
+
+	production_speed_buildings_factor = 0.05 
+	state_resources_factor = 0.02
+	local_supplies = 0.01 
+}

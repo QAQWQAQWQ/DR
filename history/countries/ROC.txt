@@ -64,6 +64,76 @@ recruit_character = ROC_MaoZeDong
 	}
 	create_faction = ROC_faction
 
+982 = {
+	add_dynamic_modifier = {
+		modifier = chenjiongming
+	}
+}
+1076= {
+	add_dynamic_modifier = {
+		modifier = chenjiongming
+	}
+}
+593= {
+	add_dynamic_modifier = {
+		modifier = chenjiongming
+	}
+}
+592= {
+	add_dynamic_modifier = {
+		modifier = chenjiongming
+	}
+}
+728= {
+	add_dynamic_modifier = {
+		modifier = chenjiongming
+	}
+}
+1308= {
+	add_dynamic_modifier = {
+		modifier = chenjiongming
+	}
+}
+591= {
+	add_dynamic_modifier = {
+		modifier = chenjiongming
+	}
+}
+594= {
+	add_dynamic_modifier = {
+		modifier = chenjiongming
+	}
+}
+
+1306= {
+	add_dynamic_modifier = {
+		modifier = chenjiongming
+	}
+}
+
+
+
+
+983= {add_dynamic_modifier = {modifier = tanyankai}}
+602= {add_dynamic_modifier = {modifier = tanyankai}}
+1075= {add_dynamic_modifier = {modifier = tanyankai}}
+1310= {add_dynamic_modifier = {modifier = tanyankai}}
+984= {add_dynamic_modifier = {modifier = tanyankai}}
+1309= {add_dynamic_modifier = {modifier = tanyankai}}
+
+988= {add_dynamic_modifier = {modifier = liliejun}}
+989= {add_dynamic_modifier = {modifier = liliejun}}
+990= {add_dynamic_modifier = {modifier = liliejun}}
+600= {add_dynamic_modifier = {modifier = liliejun}}
+1312= {add_dynamic_modifier = {modifier = liliejun}}
+
+909= {add_dynamic_modifier = {modifier = huangxing}}
+
+1313= {add_dynamic_modifier = {modifier = BaiWengWei}}
+749= {add_dynamic_modifier = {modifier = BaiWengWei}}
+998= {add_dynamic_modifier = {modifier = BaiWengWei}}
+606= {add_dynamic_modifier = {modifier = BaiWengWei}}
+
 set_politics = {
 	ruling_party = Paternalism
 	last_election = "1918.11.11"
