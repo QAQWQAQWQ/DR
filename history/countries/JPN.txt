@@ -59,7 +59,7 @@ recruit_character = JPN_Terauchi_Hisaichi
 recruit_character = JPN_Matsui_Iwane
 recruit_character = JPN_Hirohito
 recruit_character = JPN_Shuaki_Okawa
-
+recruit_character = JPN_Defu_Sufeng
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -98,6 +98,7 @@ add_ideas={
 
 ##MINISTERS##
 JPN_Emperor_Taisho_H
+JPN_Tokugawa_Ieyasu_T
 #law
 Basic_industrialization
 No_labor_laws

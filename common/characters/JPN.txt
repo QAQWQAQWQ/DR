@@ -32,6 +32,11 @@ characters={
 			slot=head_of_government
 			idea_token=JPN_Hirohito_H
 			removal_cost = -1
+			available = {
+				NOT = {
+					has_idea = JPN_Emperor_Taisho_H
+				}
+			}
 			allowed={
 				tag=JPN
 			}
@@ -152,7 +157,9 @@ characters={
 		country_leader={
 			ideology=Social_Liberalism
             desc=JPN_Korekiyo_Takahashi_DESC
-			traits={  }
+			traits={  
+				economist
+			}
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -200,6 +207,7 @@ characters={
 				}
 			}
 			traits={
+				democratic_reformer
 			}
 		}
 	}
@@ -231,6 +239,7 @@ characters={
 				}
 			}
 			traits={
+				popular_figurehead
 			}
 		}
 	}
@@ -256,6 +265,7 @@ characters={
 				}
 			}
 			traits={
+				old_figurehead
 			}
 		}
 	}
@@ -275,6 +285,7 @@ characters={
 				tag=JPN
 			}
 			traits={
+				statism_adept
 			}
 		}
 	}
@@ -294,6 +305,7 @@ characters={
 				tag=JPN
 			}
 			traits={
+				royalist_bulldog
 			}
 		}
 	}
@@ -555,4 +567,41 @@ characters={
 			}
 		}
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	JPN_Defu_Sufeng={
+		name=JPN_Defu_Sufeng
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/JPN/JPN_Defu_Sufeng.dds"
+			}
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=JPN_Defu_Sufeng_p
+			removal_cost = -1
+			allowed={
+				tag=JPN
+			}
+			available = {
+				has_completed_focus = JPN_focus_49
+			}
+			traits={
+				royalist_bulldog
+			}
+		}
+	}
+
 	}

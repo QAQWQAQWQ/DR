@@ -19,7 +19,6 @@ set_technology = {
 	convoy_sailing = 1
 	Old_howitzers= 1
 	machine_equipment_weapons= 1
-	early_armor_car= 1
 	iw_small_airframe= 1
 	early_ship_hull_light = 1
 	early_ship_hull_submarine = 1
@@ -27,6 +26,7 @@ set_technology = {
 	tracked_suspension = 1
 	great_war_light_chassis = 1
 	super_light_chassis = 1
+	early_armor_car=1
 }
 add_opinion_modifier = {
 	target = WWS

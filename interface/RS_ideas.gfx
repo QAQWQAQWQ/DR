@@ -74,6 +74,12 @@ spriteTypes = {
 	    texturefile = "gfx/interface/ideas/JPN/noninterference.dds"
     }
 	spriteType = {
+	    name = "GFX_idea_Strategies_resist_Russia"
+	    texturefile = "gfx/interface/ideas/JPN/JPN_Strategies_resist_Russia.dds"
+    }
+	
+
+	spriteType = {
 		name = "GFX_idea_estrangement"
 		texturefile = "gfx/interface/ideas/JPN/estrangement.dds"
 	}
@@ -778,10 +784,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_Affirmative_action.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_London_stock_market_crash"
-		texturefile = "gfx/interface/ideas/London_stock_market_crash.dds"
-	}
-	spriteType = {
 		name = "GFX_idea_Radical_feminism"
 		texturefile = "gfx/interface/ideas/idea_Radical_feminism.dds"
 	}
@@ -986,6 +988,40 @@ spriteTypes = {
 		name = "GFX_idea_ROC_Low_Prestige"
 		texturefile = "gfx/interface/ideas/ROC/ROC_Low_Prestige.dds"
 	}
+
+
+	spriteType = {
+		name = "GFX_idea_BaiWengWei"
+		texturefile = "gfx/interface/ideas/ROC/BaiWengWei.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_chenjiongming"
+		texturefile = "gfx/interface/ideas/ROC/chenjiongming.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_huangxing"
+		texturefile = "gfx/interface/ideas/ROC/huangxing.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_idea_liliejun"
+		texturefile = "gfx/interface/ideas/ROC/liliejun.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_tanyankai"
+		texturefile = "gfx/interface/ideas/ROC/tanyankai.dds"
+	}
+
+
+
+
+
+
+
 	spriteType = {
 		name = "GFX_idea_Scattered_party_organizations"
 		texturefile = "gfx/interface/ideas/ROC/Scattered_party_organizations.dds"

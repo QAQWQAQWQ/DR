@@ -9,6 +9,7 @@ defined_text = {
 		NOT={
 			original_tag = FRW
 			original_tag = WWS
+			original_tag = AOX
 	    }
     }
 		localization_key = europe_Country_Introduction
@@ -98,5 +99,9 @@ defined_text = {
    text = {
 	trigger = { original_tag = TEQ }
 	localization_key = TEQ_Country_Introduction
+   }
+   text = {
+	trigger = { original_tag = AOX }
+	localization_key = AOX_Country_Introduction
    }
 }

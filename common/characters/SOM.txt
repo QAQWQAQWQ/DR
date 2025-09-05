@@ -1,4 +1,20 @@
 characters={
+	SOM_Geoffrey_Francis_Archer={
+		name=SOM_Geoffrey_Francis_Archer
+		portraits={
+			#平民状态
+			civilian={
+				large="gfx/leaders/SOM/portrait_Geoffrey_Francis_Archer.tga"
+			}
 
+		}
+		country_leader={
+			#意识形态
+			ideology=autocratic-colonial-government
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	
 }

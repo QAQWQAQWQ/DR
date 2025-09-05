@@ -767,7 +767,8 @@ country_event = {
 	title = aushun.6.t
 	desc = aushun.6.d
 	picture = GFX_austria_1_pict
-	fire_only_once = no
+
+	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
 		name = aushun.6.a

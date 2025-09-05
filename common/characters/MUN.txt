@@ -1,4 +1,17 @@
 characters={
-
+	MUN_William_George_Ormsby_Gore={
+		name=MUN_William_George_Ormsby_Gore
+		portraits={
+			civilian={
+				large="gfx/leaders/MUN/portrait_William_George_Ormsby_Gore.tga"
+			}
+		}
+		country_leader={
+			ideology=autocratic-colonial-government
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	
 }

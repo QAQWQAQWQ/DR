@@ -1,4 +1,20 @@
 characters={
+	RHO_Sir_Francis_James_Newton={
+		name=RHO_Sir_Francis_James_Newton
+		portraits={
+			#平民状态
+			civilian={
+				large="gfx/leaders/RHO/portrait_Sir_Francis_James_Newton.tga"
+			}
 
+		}
+		country_leader={
+			#意识形态
+			ideology=autocratic-colonial-government
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	
 }

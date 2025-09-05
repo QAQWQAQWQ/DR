@@ -349,12 +349,9 @@ news_event = {
     hidden = yes
 	fire_only_once = yes
    trigger = {
-	UBS={
-		has_war_with = NAL
-	}
-	
+		date > 1926.6.1
     }
-   immediate = {
+   	immediate = {
 	news_event = WorldNew.20
     }
     mean_time_to_happen = {

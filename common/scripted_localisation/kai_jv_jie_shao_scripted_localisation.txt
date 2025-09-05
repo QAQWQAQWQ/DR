@@ -36,6 +36,10 @@ defined_text = {
 		trigger = { original_tag =SHW}
 		localization_key = "SHW_jie_shao" 
 	}   
+	text = { #奥地利介绍
+		trigger = { original_tag =AOX}
+		localization_key = "AOX_jie_shao" 
+	} 
 	text = { #通用国家介绍
 		localization_key = "tong_yong_jie_shao"
 	}

@@ -1033,9 +1033,29 @@ focus_tree = {
 		}
 		x = 16
 		y = 10
-			completion_reward = {
-					country_event = SHW_dip_event.2
+		completion_reward = {
+			country_event = SHW_dip_event.2
+			SHW={
+				puppet = WWS
+			}
+			WWS = {
+				set_capital = {
+					state = 763
 				}
+				transfer_state = 86
+				transfer_state = 1129
+				transfer_state = 807
+				transfer_state = 1131
+				transfer_state = 85
+				transfer_state = 1130
+				transfer_state = 1036
+				transfer_state = 77
+				transfer_state = 5
+				transfer_state = 1012
+				transfer_state = 763
+				transfer_state = 188
+			}
+		}
 
 	}
 	focus = {

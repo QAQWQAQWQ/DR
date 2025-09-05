@@ -108,5 +108,17 @@ ideas = {
 				army_defence_factor = -0.05
             }
 		}
+ 
+
+
+		JPN_Strategies_resist_Russia = { 
+			picture = Strategies_resist_Russia
+			modifier = {
+				consumer_goods_factor = -0.05
+				improve_relations_maintain_cost_factor= -0.05
+            }
+		}
+
+
 	}
 }

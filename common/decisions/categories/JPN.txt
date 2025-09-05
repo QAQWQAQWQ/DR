@@ -94,3 +94,19 @@ JPN_Korean_Gambling = {
 		has_global_flag = Korean_Gambling_start
 	} 
 }
+
+
+
+
+
+JPN_The_alliance_against_Russia= { 
+	icon = infiltration
+	
+	picture = GFX_decisions_JPN_The_alliance_against_Russia
+	priority = 10
+	allowed = {
+		tag = JPN
+	}
+	visible = {
+	} 
+}

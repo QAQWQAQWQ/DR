@@ -6,10 +6,15 @@ ideas = {
 
 		completely_illiterate = {
 			available = {
-				 hidden_trigger = {
-					has_stability > 9 
-				 }
+				NOT={
+					OR=[
+						has_idea = elementary_school
+						has_idea = secondary_school
+						has_idea = university_level
+						has_idea = compulsory_education
+					]
 				}
+			}
 			on_add = {
 
 			}
@@ -41,10 +46,15 @@ ideas = {
 		elementary_school = {
 
 			available = {
-				hidden_trigger = {
-					has_stability > 9 
-				  }
+				NOT={
+					OR=[
+						has_idea = completely_illiterate
+						has_idea = secondary_school
+						has_idea = university_level
+						has_idea = compulsory_education
+					]
 				}
+			}
 			on_add = {
 
 			}
@@ -76,10 +86,15 @@ ideas = {
 		secondary_school = {
 
 			available = {
-				hidden_trigger = {
-					has_stability > 9 
-				  }
+				NOT={
+					OR=[
+						has_idea = completely_illiterate
+						has_idea = elementary_school
+						has_idea = university_level
+						has_idea = compulsory_education
+					]
 				}
+			}
 			on_add = {
 
 			}
@@ -111,9 +126,14 @@ ideas = {
 		university_level = {
 
 			available = {
-				hidden_trigger = {
-					has_stability > 9 
-				  }
+				NOT={
+					OR=[
+						has_idea = completely_illiterate
+						has_idea = elementary_school
+						has_idea = secondary_school
+						has_idea = compulsory_education
+					]
+				}
 				}
 			on_add = {
 
@@ -146,10 +166,15 @@ ideas = {
 		compulsory_education = {
 
 			available = {
-				hidden_trigger = {
-					has_stability > 9 
-				  }
+				NOT={
+					OR=[
+						has_idea = completely_illiterate
+						has_idea = elementary_school
+						has_idea = secondary_school
+						has_idea = university_level
+					]
 				}
+			}
 			on_add = {
 
 			}
